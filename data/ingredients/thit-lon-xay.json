@@ -1,0 +1,53 @@
+{
+  "slug": "thit-lon-xay",
+  "name_vi": "Thịt lợn xay (84% nạc)",
+  "name_en": "Pork, ground, 84% lean",
+  "category": "thit",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "168372",
+    "source_url": "https://fdc.nal.usda.gov/food-details/168372/nutrients",
+    "scientific_name": null,
+    "kcal_per_100g": 218,
+    "kcal_min": 121,
+    "kcal_max": 263,
+    "protein_g": 18.0,
+    "fat_g": 16.0,
+    "carb_g": 0.44,
+    "fiber_g": 0.0,
+    "water_g": 64.7,
+    "sodium_mg": 68,
+    "mapping_confidence": "medium",
+    "mapping_note": "CHỌN MỨC 84% NẠC / 16% MỠ vì thịt xay ở VN phần lớn xay từ nạc vai / nạc dăm — có mỡ giắt nhưng không phải ba chỉ. Mức này được XÁC NHẬN ĐỘC LẬP bởi bản Foundation 2514745 (đo giải tích, béo 17,5 g, Atwater 228 kcal) — hai dòng khác bộ dữ liệu mà lệch chỉ 10 kcal, nên đây là vùng đáng tin. ⚠️ TOÀN DẢI của USDA cho 'thịt lợn xay' là 121–263 kcal (CHÊNH 142 kcal/100g). BẮT BUỘC ghi rõ mức % nạc vào dữ liệu, đừng để mỗi chữ 'thịt lợn xay'.",
+    "alternatives": [
+      {
+        "external_id": "2514745",
+        "name": "Pork, ground, raw (Foundation)",
+        "kcal_per_100g": 228,
+        "why_not": "Đối chứng tốt (béo 17,5 Analytical) nhưng KHÔNG có nutrient 1008; chỉ có 2047=228 và 2048=233"
+      },
+      {
+        "external_id": "167902",
+        "name": "Pork, fresh, ground, raw",
+        "kcal_per_100g": 263,
+        "why_not": "Béo 21,2 g (khoảng 79% nạc) — béo hơn thịt xay thông dụng ở VN, không ghi rõ % nạc"
+      },
+      {
+        "external_id": "169190",
+        "name": "Pork, ground, 96% lean / 4% fat, raw",
+        "kcal_per_100g": 121,
+        "why_not": "Quá nạc, là sản phẩm siêu thị phương Tây, hiếm gặp ở chợ VN"
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "medium",
+  "needs_review": true
+}

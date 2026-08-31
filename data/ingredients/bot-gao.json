@@ -1,0 +1,54 @@
+{
+  "slug": "bot-gao",
+  "name_vi": "Bột gạo (gạo tẻ)",
+  "name_en": "Rice flour, white",
+  "category": "tinh-bot",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "169714",
+    "source_url": "https://fdc.nal.usda.gov/food-details/169714/nutrients",
+    "scientific_name": null,
+    "kcal_per_100g": 366,
+    "kcal_min": 359,
+    "kcal_max": 369,
+    "protein_g": 5.95,
+    "fat_g": 1.42,
+    "carb_g": 80.1,
+    "fiber_g": 2.4,
+    "water_g": 11.9,
+    "sodium_mg": 0,
+    "mapping_confidence": "high",
+    "mapping_note": "⚠️ Bản Foundation 790214 (cùng ndbNumber 20061) không có nutrient 1008, và XƠ CHỈ 0,5 g so với 2,4 g ở SR Legacy — CHÊNH 4,8 LẦN. Chọn SR Legacy; khoảng lấy từ dải Foundation. LƯU Ý: đây là bột gạo TẺ. BỘT NẾP là bản ghi khác (1104867 'Flour, rice, glutinous'), chưa tra.",
+    "alternatives": [
+      {
+        "external_id": "790214",
+        "name": "Flour, rice, white, unenriched (Foundation)",
+        "kcal_per_100g": 359,
+        "why_not": "Không có 1008; xơ 0,5 g khác xa SR Legacy 2,4 g"
+      },
+      {
+        "external_id": "1104867",
+        "name": "Flour, rice, glutinous (Foundation)",
+        "kcal_per_100g": null,
+        "why_not": "BỘT NẾP, không phải bột gạo tẻ — cần tra riêng nếu dự án dùng"
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": 0.668,
+  "density_note": "SUY RA, MỘT ĐIỂM: cup 158/236,588 = 0,668. Không có measure thứ hai để kiểm chứng chéo. Bột gạo nén chặt có thể lên 0,75+, nên chỉ dùng cho ước lượng thô.",
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "cup",
+      "grams": 158,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "source": "FDC 169714 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

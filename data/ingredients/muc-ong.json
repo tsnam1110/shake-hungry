@@ -1,0 +1,37 @@
+{
+  "slug": "muc-ong",
+  "name_vi": "Mực ống (sống)",
+  "name_en": "Squid, raw",
+  "category": "thuy-san",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "174223",
+    "source_url": "https://fdc.nal.usda.gov/food-details/174223/nutrients",
+    "scientific_name": "Loligoidae và Ommastrephidae",
+    "kcal_per_100g": 92,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 15.6,
+    "fat_g": 1.38,
+    "carb_g": 3.08,
+    "fiber_g": 0,
+    "water_g": null,
+    "mapping_confidence": "high",
+    "mapping_note": "scientificName của FDC ghi 'Loligoidae and Ommastrephidae' — mực ống VN (Loligo/Uroteuthis spp.) nằm đúng trong nhóm này. Lưu ý carb 3,08 g là glycogen, USDA tính 'by difference' nên có thể bị thổi lên; Ciqual 10001 'Squid, raw' cho 77 kcal / 14,4 P / 1,19 F / 2,17 carb — thấp hơn USDA khoảng 16%.",
+    "alternatives": []
+  },
+  "density_g_per_ml": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "units": [
+    {
+      "unit_name": "oz",
+      "grams": 28.35,
+      "note": "không xương",
+      "source": "FDC 174223 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

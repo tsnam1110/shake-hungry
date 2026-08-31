@@ -1,0 +1,69 @@
+{
+  "slug": "sua-dac",
+  "name_vi": "Sữa đặc có đường",
+  "name_en": "Sweetened condensed milk",
+  "category": "khac",
+  "reference_food": {
+    "fct_source": "off",
+    "external_id": "8934673208369",
+    "source_url": "https://world.openfoodfacts.org/api/v2/product/8934673208369",
+    "scientific_name": null,
+    "kcal_per_100g": 341,
+    "kcal_min": 334,
+    "kcal_max": 341,
+    "protein_g": 4.8,
+    "fat_g": 11.3,
+    "carb_g": 55.2,
+    "fiber_g": null,
+    "water_g": null,
+    "sodium_mg": null,
+    "mapping_confidence": "medium",
+    "mapping_note": "LỆCH HỆ THỐNG VỚI DÒNG USDA — đã chọn nhãn Việt Nam làm nguồn chính, không dùng USDA. Dòng USDA 171275 là sữa đặc SỮA THẬT (protein 7,91). Phần lớn 'sữa đặc có đường' bán tại VN thực chất là SỮA ĐẶC PHA DẦU THỰC VẬT (filled milk / creamer): Ông Thọ 4,8 g protein, Ngôi Sao Phương Nam 2,7 g — chỉ bằng 34–61% dòng USDA, trong khi kcal lại CAO hơn (334–341 so với 321) do nhiều béo và đường hơn. Với cà phê sữa đá, bánh flan, sữa chua — những món dùng sữa đặc nhiều — sai lệch protein này là đáng kể.",
+    "alternatives": [
+      {
+        "external_id": "171275",
+        "name": "USDA — Milk, canned, condensed, sweetened",
+        "kcal_per_100g": 321,
+        "why_not": "Sữa đặc sữa thật (protein 7,91); không đại diện sản phẩm bán tại VN"
+      }
+    ]
+  },
+  "secondary_sources": [
+    {
+      "kind": "off",
+      "brand": "Vinamilk Ngôi Sao Phương Nam",
+      "external_id": "8934673218368",
+      "source_url": "https://world.openfoodfacts.org/api/v2/product/8934673218368",
+      "kcal_per_100g": 334,
+      "protein_g": 2.7,
+      "fat_g": 10.8,
+      "carb_g": 56.7,
+      "sodium_mg": null,
+      "confidence": "medium",
+      "license_note": "Dữ liệu Open Food Facts, giấy phép ODbL 1.0 — bắt buộc ghi công. PHỤ THUỘC QUYẾT ĐỊNH LEGAL-002: nếu dự án không chấp nhận ràng buộc share-alike của ODbL thì phải thay bằng ảnh nhãn tự chụp trước khi phát hành.",
+      "note": "Bản ghi ghi thị trường Việt Nam, hộp 380 g. Protein 2,7 g xác nhận đây là dòng creamer pha dầu thực vật."
+    }
+  ],
+  "density_g_per_ml": 1.29,
+  "density_note": "SUY RA từ USDA foodMeasures 171275, kiểm chứng chéo 2 điểm rất nhất quán: fl oz 38,2/29,5735 = 1,292; cup 306/236,588 = 1,293.",
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "cup",
+      "grams": 306.0,
+      "note": null,
+      "source": "FDC 171275 foodMeasures"
+    },
+    {
+      "unit_name": "muỗng canh VN",
+      "grams": 19.4,
+      "note": "muỗng canh VN 15 ml — không phải số USDA gốc",
+      "source": "SUY RA từ density 1,29 g/ml"
+    }
+  ],
+  "source": "curated",
+  "confidence": "medium",
+  "needs_review": true
+}

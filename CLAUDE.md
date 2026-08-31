@@ -1,0 +1,277 @@
+# CLAUDE.md — Lắc Đói (shake-hungry)
+
+File hướng dẫn bắt buộc cho Claude Code và mọi AI agent làm việc trên repo này.
+
+**AI PHẢI đọc hết file này trước khi thực hiện bất kỳ yêu cầu nào.** Nếu một yêu cầu mâu thuẫn với
+quy tắc ở đây, phải nói ra chỗ mâu thuẫn trước khi làm, không âm thầm làm khác.
+
+**Ngày tạo:** 2026-08-31
+**Cập nhật lần cuối:** 2026-08-31 — soát lại toàn bộ tài liệu, sửa 9 lỗi; biên soạn **150 nguyên liệu**
+qua 10 mẻ tra cứu; thêm [RESEARCH-PROTOCOL](docs/09-standards/RESEARCH-PROTOCOL.md) với 19 bẫy đúc kết
+
+---
+
+## 0. TRẠNG THÁI HIỆN TẠI — ĐỌC TRƯỚC TIÊN
+
+> ## ⚠️ Đính chính 2026-08-31 — đoạn mô tả trạng thái cũ đã SAI
+>
+> Bản đầu của file này ghi *"repo này CHỈ CÓ TÀI LIỆU. Chưa có code, chưa có database, chưa có dữ
+> liệu."* Câu đó **đúng lúc viết, sai ngay trong cùng ngày** — sau đó 150 nguyên liệu đã được biên
+> soạn thành file dữ liệu. Đây chính là loại lỗi tài liệu mà [docs/README.md](docs/README.md) §5
+> cảnh báo, và nó xuất hiện ngay ở dòng quan trọng nhất của repo.
+
+**Trạng thái thực tế, kiểm ngày 2026-08-31:**
+
+| Hạng mục | Thực tế | Kiểm bằng |
+|---|---|---|
+| Tài liệu | ✅ 19 tài liệu trong `docs/` + 47 task file | `find docs -name "*.md" -not -path "*/tasks/*" \| wc -l` |
+| **Dữ liệu nguyên liệu** | ✅ **150 file** trong `data/ingredients/` (14 trong đó là bản ghi "không tra được", cố ý giữ để không tra lại) | `ls data/ingredients \| wc -l` |
+| Dữ liệu món ăn | ⬜ 0 file — `data/dishes/` còn trống | `ls data/dishes` |
+| Bảng tham chiếu | ⬜ 0 file — `data/reference/` còn trống | `ls data/reference` |
+| **Code** | ⬜ **0 dòng.** Chưa có Laravel, chưa có migration, chưa có database | `find . -name "*.php" \| wc -l` |
+
+> **Hệ quả quan trọng:** mọi lệnh ở mục 1 bên dưới **chưa chạy được**, kể cả `migrate:fresh --seed`.
+> 150 file nguyên liệu hiện **chưa từng được nạp vào database nào** và **chưa từng qua kiểm tra tự
+> động** — vì công cụ kiểm tra chưa tồn tại. Đừng báo cáo là đã chạy chúng.
+>
+> Việc tiếp theo: xem [ROADMAP](docs/05-tasks/ROADMAP.md) → [SETUP-001](docs/05-tasks/tasks/SETUP-001.md)
+> và [SETUP-003](docs/05-tasks/tasks/SETUP-003.md), để dữ liệu đã biên soạn có chỗ chạy.
+
+Bảng trạng thái tổng quan — **bắt buộc cập nhật mỗi khi đóng một giai đoạn**:
+
+| Giai đoạn | Nội dung | Trạng thái | Ngày đóng |
+|---|---|---|---|
+| GĐ0 | Thủ tục pháp lý + chốt định nghĩa + khởi tạo repo | 🔵 IN PROGRESS | — |
+| GĐ1 | Xương sống dữ liệu: schema + bảng nguyên liệu + engine calo | 🔵 IN PROGRESS — 150/250 nguyên liệu | — |
+| GĐ2 | Trình nhập liệu nội bộ (mục tiêu: 5 phút/món) | ⬜ TODO | — |
+| GĐ3 | Sản xuất dữ liệu: 150 → 500 món | ⬜ TODO | — |
+| GĐ4 | Engine gợi ý + nút Lắc bản chính thức | ⬜ TODO | — |
+| GĐ5 | Hồ sơ người dùng + TDEE + lịch sử bữa ăn | ⬜ TODO | — |
+| GĐ6 | Đóng góp cộng đồng + lớp ngũ hành (tuỳ chọn) | ⬜ TODO | — |
+
+---
+
+## 1. COMMANDS — LỆNH THƯỜNG DÙNG
+
+> Môi trường dev là **Laragon trên Windows (PHP/Node native trên host), KHÔNG dùng Docker.**
+> Chạy `php`, `composer`, `npm` trực tiếp trên host qua PowerShell.
+> Shell mặc định của Claude Code trong repo này là PowerShell — `&&` không dùng được, dùng `;` hoặc
+> `if ($?) { }`.
+
+```bash
+php artisan migrate                     # chạy migration
+php artisan migrate:fresh --seed        # reset DB + nạp lại toàn bộ dữ liệu từ data/ (XOÁ DATA)
+php artisan db:seed --class=IngredientSeeder
+php artisan lacdoi:import-usda          # nạp USDA FoodData Central vào bảng tham chiếu
+php artisan lacdoi:recompute-calories   # tính lại calo toàn bộ món sau khi sửa nguyên liệu
+php artisan lacdoi:export-data          # xuất DB ngược ra data/*.json (xem mục 4)
+php artisan lacdoi:validate-data        # kiểm tra tính toàn vẹn dữ liệu, chạy trước mỗi commit dữ liệu
+vendor\bin\pest --no-coverage           # chạy test
+```
+
+> ⚠️ Các lệnh `lacdoi:*` **chưa tồn tại**. Chúng là đặc tả cần hiện thực ở GĐ1–GĐ2. Task tương ứng:
+> [DATA-006](docs/05-tasks/tasks/DATA-006.md), [DATA-007](docs/05-tasks/tasks/DATA-007.md).
+
+---
+
+## 2. DỰ ÁN NÀY LÀ GÌ
+
+**Lắc Đói** là ứng dụng gợi ý món ăn. Người dùng bấm một nút, hệ thống gợi ý món nên ăn, có tính đến:
+quốc gia/vùng miền, ăn ngoài hay tự nấu, bữa trong ngày, món đã ăn bữa trước, và hồ sơ thể trạng
+của người dùng.
+
+**Nhưng về bản chất kỹ thuật, đây KHÔNG phải một dự án web app. Đây là một dự án biên soạn cơ sở dữ
+liệu, có kèm một web app ở đầu ra.**
+
+Hiểu sai điều này là cách chắc chắn nhất để dự án chết. Cụ thể:
+
+- Nút Lắc và engine gợi ý là **khoảng 60–200 dòng code**. Nó không phải phần khó, và không phải lợi
+  thế cạnh tranh. Khảo sát mã nguồn mở (2026-08-31) cho thấy toàn bộ danh mục "meal recommender" là
+  đồ án đã chết; bản triển khai nghiêm túc duy nhất (trong Mealie) chỉ là vài chục dòng luật + query
+  random có seed.
+- Thứ duy nhất tạo ra giá trị là **dữ liệu món ăn và nguyên liệu do chính dự án biên soạn**, cùng
+  **engine tính calo** dựa trên dữ liệu đó.
+- Vì vậy thứ tự ưu tiên là: **nguyên liệu → engine calo → công cụ nhập liệu → dữ liệu món → nút Lắc.**
+  Không được đảo thứ tự này để "làm cái vui trước".
+
+Chi tiết: [PRD](docs/01-prd/PRD.md).
+
+---
+
+## 3. BẢY QUY TẮC TUYỆT ĐỐI
+
+Vi phạm bất kỳ quy tắc nào dưới đây là lỗi nghiêm trọng, không phải "khác biệt về phong cách".
+
+### QT-1 — Không bao giờ để LLM sinh ra con số dinh dưỡng
+
+LLM **được phép** làm đúng ba việc: (a) đề xuất ánh xạ nguyên liệu sang mã trong bảng tham chiếu,
+(b) đề xuất định lượng gram cho nguyên liệu trong công thức, (c) dịch và chuẩn hoá tên món.
+
+LLM **bị cấm** sinh ra giá trị kcal, protein, lipid, glucid, hay bất kỳ con số dinh dưỡng nào. Những
+con số đó **chỉ được tính bằng hàm thuần tuý** từ bảng thành phần thực phẩm đã nhập. Nếu một nguyên
+liệu chưa ánh xạ được, món đó **không có calo** và hiển thị "chưa đủ dữ liệu" — tuyệt đối không lấp
+chỗ trống bằng phỏng đoán.
+
+Mọi bản ghi do LLM đề xuất phải mang `source = 'llm_suggested'` và `needs_review = true`, và phải
+được người duyệt trước khi hiển thị ra ngoài. Chi tiết: [DATA-PIPELINE](docs/04-data-sources/DATA-PIPELINE.md).
+
+### QT-2 — Không đưa dữ liệu có license bẩn vào dự án
+
+Trước khi nhập bất kỳ nguồn dữ liệu mới nào, **bắt buộc** đối chiếu
+[LICENSE-COMPLIANCE](docs/04-data-sources/LICENSE-COMPLIANCE.md).
+
+Danh sách cấm tuyệt đối (đã xác minh 2026-08-31): **RecipeNLG, Recipe1M/Recipe1M+, mọi bản dump
+Food.com và Epicurious trên Kaggle, Web Data Commons schema.org Recipe, các bảng FAO/INFOODS (NC),
+30VNFoods.** Không nhập, kể cả "chỉ để tham khảo nội bộ", vì một khi đã nằm trong repo thì đã là phân
+phối lại.
+
+Không fork **Tandoor** (AGPL + Commons Clause — không phải mã nguồn mở), **Mealie / KitchenOwl /
+Nextcloud Cookbook** (AGPL-3.0, copyleft mạng), **RecipeSage** (phi thương mại + CLA).
+
+### QT-3 — Mọi tài nguyên phải nằm trong repo
+
+Dữ liệu món ăn, nguyên liệu, bảng tham chiếu, ảnh — **tất cả phải được version trong thư mục `data/`
+dưới dạng file**. Database chỉ là bản dựng lại từ file, **không phải nguồn sự thật**.
+
+Tiêu chí nghiệm thu: clone repo trên một máy trắng, chạy `php artisan migrate:fresh --seed`, phải ra
+đúng y hệt dữ liệu của máy gốc, không thiếu một món, một ảnh, một nguyên liệu nào. Chi tiết và lý do:
+[DATA-REPOSITORY](docs/04-data-sources/DATA-REPOSITORY.md).
+
+### QT-4 — Một bảng thành phần thực phẩm duy nhất cho mỗi phép tính
+
+Không trộn USDA với bảng Việt Nam với Open Food Facts trong cùng một món. Phân tích tổng hợp 14
+nghiên cứu cho thấy sai số của app dinh dưỡng sụt từ **−202 kcal/ngày xuống −57 kcal/ngày và độ phân
+tán về 0** khi dùng cùng một bảng tham chiếu. Phần lớn sai số nằm ở **ánh xạ sai bảng**, không phải ở
+phép tính. Mỗi món ghi rõ `fct_source` mình dùng. Chi tiết: [CALORIE-ENGINE](docs/06-nutrition/CALORIE-ENGINE.md).
+
+### QT-5 — Không hiển thị con số chính xác giả
+
+Calo món ăn ngoài hiển thị dạng **khoảng** kèm độ tin cậy ("≈ 400–500 kcal · tin cậy: thấp"), không
+bao giờ hiển thị "437 kcal". Nhu cầu năng lượng của người dùng cũng hiển thị dạng khoảng — công thức
+Mifflin–St Jeor chỉ đúng trong ±10% ở 82% người không béo phì và ~70% người béo phì.
+
+Mọi giá trị dinh dưỡng bắt buộc đi kèm ba trường: `value_min`, `value_max`, `confidence`.
+
+### QT-6 — Ngũ hành / âm dương là lớp phụ, gán ở tầng nguyên liệu
+
+Không gán nhãn tính vị trực tiếp vào món. Gán ở **nguyên liệu**, rồi tổng hợp lên món theo trọng số
+khối lượng cộng hệ số chế biến. Mỗi nhãn bắt buộc có `source` và `confidence` vì phân loại này
+**không được chuẩn hoá** cho thực phẩm thông thường.
+
+Diễn đạt ở khung **văn hoá ẩm thực**, không phải khung **tư vấn sức khoẻ**. Cấm mọi câu dạng "thể
+trạng bạn mất cân bằng, nên tránh món này". Chi tiết và lý do pháp lý:
+[NGU-HANH-AM-DUONG](docs/08-cultural/NGU-HANH-AM-DUONG.md).
+
+### QT-7 — Cập nhật tài liệu trong cùng commit với code
+
+Đổi schema mà không sửa [DATA-MODEL](docs/03-data-model/DATA-MODEL.md) là lỗi. Đóng task mà không
+cập nhật [ROADMAP](docs/05-tasks/ROADMAP.md) là lỗi. Phát hiện tài liệu cũ ghi sai thì **không xoá
+lặng lẽ** — chèn khối `> ⚠️ **Đính chính YYYY-MM-DD**` giải thích chỗ sai và vì sao, theo đúng cách
+`edu-crm-v2` đang làm. Người kế nhiệm cần biết dự án đã từng hiểu sai chỗ nào.
+
+---
+
+## 4. KIẾN TRÚC TỔNG QUAN
+
+### Stack đã chốt
+
+| Lớp | Công nghệ | Lý do |
+|---|---|---|
+| Backend | **Laravel 12+ (PHP 8.3+)** | Hợp môi trường Laragon sẵn có |
+| Database | **PostgreSQL 16+** (KHÔNG dùng MySQL) | Cần `pg_trgm` (khớp mờ tên món tiếng Việt) và `pgvector` (gợi ý món tương tự) |
+| Admin / nhập liệu | **Filament 3+** | Đây là công cụ sản xuất dữ liệu chính, không phải phần phụ |
+| Frontend người dùng | Blade + Livewire (v1) | Giữ đơn giản; tách SPA chỉ khi thực sự cần |
+| Trợ lý nhập liệu | Claude API | Chỉ đóng vai trò ở QT-1 |
+
+> **Không cần Python.** Đã cân nhắc và loại bỏ ở 2026-08-31: `ingredient-parser-nlp` và
+> `recipe-scrapers` đều **chỉ hỗ trợ tiếng Anh** và không có site Việt Nam, nên lợi thế hệ sinh thái
+> Python biến mất với phạm vi v1 (món Việt, tự biên soạn). Nhập USDA chỉ là đọc CSV. Lý do đầy đủ:
+> [ARCHITECTURE §3](docs/02-architecture/ARCHITECTURE.md).
+
+### Cấu trúc thư mục
+
+```
+shake-hungry/
+├── CLAUDE.md              File này — quy tắc bắt buộc
+├── AGENTS.md              Trỏ về CLAUDE.md (cho agent không đọc CLAUDE.md)
+├── README.md              Giới thiệu dự án
+├── app/                   Laravel application code
+├── database/
+│   ├── migrations/
+│   └── seeders/           Seeder ĐỌC TỪ data/, không hardcode dữ liệu
+├── data/                  ⭐ NGUỒN SỰ THẬT CỦA DỮ LIỆU (xem QT-3)
+│   ├── reference/         Bảng tham chiếu nhập từ nguồn ngoài (USDA, Wikidata...)
+│   ├── ingredients/       Nguyên liệu do dự án biên soạn
+│   ├── dishes/            Món ăn do dự án biên soạn
+│   └── media/             Ảnh món ăn
+└── docs/                  Tài liệu — nguồn sự thật về thiết kế
+```
+
+---
+
+## 5. BẢN ĐỒ TÀI LIỆU
+
+Đọc theo thứ tự này khi tiếp nhận dự án:
+
+| # | Tài liệu | Trả lời câu hỏi |
+|---|---|---|
+| 1 | [docs/01-prd/PRD.md](docs/01-prd/PRD.md) | Dự án làm gì, cho ai, phạm vi tới đâu |
+| 2 | [docs/02-architecture/ARCHITECTURE.md](docs/02-architecture/ARCHITECTURE.md) | Hệ thống ghép từ những khối nào, vì sao chọn vậy |
+| 3 | [docs/03-data-model/DATA-MODEL.md](docs/03-data-model/DATA-MODEL.md) | Bảng nào, cột nào, quan hệ ra sao |
+| 4 | [docs/04-data-sources/DATA-SOURCES.md](docs/04-data-sources/DATA-SOURCES.md) | Dữ liệu lấy từ đâu |
+| 5 | [docs/04-data-sources/LICENSE-COMPLIANCE.md](docs/04-data-sources/LICENSE-COMPLIANCE.md) | Được dùng nguồn nào, cấm nguồn nào |
+| 6 | [docs/04-data-sources/DATA-REPOSITORY.md](docs/04-data-sources/DATA-REPOSITORY.md) | Dữ liệu lưu ở đâu trong repo, định dạng gì |
+| 7 | [docs/04-data-sources/DATA-PIPELINE.md](docs/04-data-sources/DATA-PIPELINE.md) | Quy trình nhập một món từ đầu đến cuối |
+| 8 | [docs/06-nutrition/CALORIE-ENGINE.md](docs/06-nutrition/CALORIE-ENGINE.md) | Calo được tính bằng công thức nào |
+| 9 | [docs/06-nutrition/ACCURACY-SPEC.md](docs/06-nutrition/ACCURACY-SPEC.md) | "Chính xác >80%" nghĩa là gì, đo thế nào |
+| 10 | [docs/07-recommendation/RECOMMENDATION-ENGINE.md](docs/07-recommendation/RECOMMENDATION-ENGINE.md) | Nút Lắc chọn món theo logic nào |
+| 11 | [docs/08-cultural/NGU-HANH-AM-DUONG.md](docs/08-cultural/NGU-HANH-AM-DUONG.md) | Lớp âm dương/ngũ hành thiết kế ra sao |
+| 12 | [docs/05-tasks/ROADMAP.md](docs/05-tasks/ROADMAP.md) | Đã làm gì, đang làm gì, làm gì tiếp |
+| 13 | [docs/05-tasks/DEFINITION-OF-DONE.md](docs/05-tasks/DEFINITION-OF-DONE.md) | Thế nào là xong |
+| 14 | [docs/09-standards/RESEARCH-PROTOCOL.md](docs/09-standards/RESEARCH-PROTOCOL.md) | **Tra cứu dữ liệu ở đâu, thế nào** — chính sách nền, thứ tự nguồn, endpoint, bẫy kỹ thuật |
+| 15 | [docs/09-standards/EDITORIAL-GUIDE.md](docs/09-standards/EDITORIAL-GUIDE.md) | Chuẩn biên soạn dữ liệu: đặt tên món, phân biệt biến thể, định lượng |
+| 16 | [docs/09-standards/CODING-STANDARDS.md](docs/09-standards/CODING-STANDARDS.md) | Quy ước đặt tên, cấu trúc code |
+| 17 | [docs/10-deployment/DEPLOYMENT.md](docs/10-deployment/DEPLOYMENT.md) | Dựng lại dự án trên máy mới |
+
+---
+
+## 6. QUY TRÌNH LÀM VIỆC
+
+### Khi nhận một task
+
+1. Đọc [ROADMAP](docs/05-tasks/ROADMAP.md), tìm mã task.
+2. Mở file task tại `docs/05-tasks/tasks/<MÃ>.md`. Nếu chưa có, copy
+   [TASK-TEMPLATE](docs/05-tasks/TASK-TEMPLATE.md).
+3. Kiểm tra cột **Phụ thuộc** — task phụ thuộc chưa DONE thì không được bắt đầu.
+4. Làm. Đối chiếu [DEFINITION-OF-DONE](docs/05-tasks/DEFINITION-OF-DONE.md).
+5. Cập nhật status trong **cả** file task **và** bảng ở ROADMAP. Ghi ngày hoàn thành.
+6. Nếu phát sinh quyết định thiết kế → ghi vào mục "Ghi chú" của task **và** vào tài liệu tương ứng.
+
+### Khi thêm dữ liệu
+
+1. Sửa file trong `data/`, **không sửa thẳng vào database**.
+2. Chạy `php artisan lacdoi:validate-data`.
+3. Chạy `php artisan migrate:fresh --seed` để xác nhận dựng lại được từ file.
+4. Commit file `data/` cùng commit.
+
+### Khi bí / thiếu thông tin
+
+Không đoán. Ghi câu hỏi vào mục "Ghi chú" của task và vào [ROADMAP](docs/05-tasks/ROADMAP.md) mục
+"Câu hỏi mở", rồi làm phần không phụ thuộc câu trả lời đó trước.
+
+---
+
+## 7. NHỮNG SAI LẦM ĐÃ ĐƯỢC CẢNH BÁO TRƯỚC
+
+Ghi lại để người kế nhiệm không lặp lại. Đây là kết luận từ khảo sát ngày 2026-08-31, không phải suy đoán.
+
+| Sai lầm | Vì sao chết | Làm đúng |
+|---|---|---|
+| Làm nút Lắc trước, dữ liệu sau | DB rỗng → app vô dụng → không ai dùng → mất động lực → dự án chết | Nguyên liệu → engine calo → công cụ nhập → dữ liệu → nút Lắc |
+| Nhập dữ liệu theo **món** | Tra dinh dưỡng lại từ đầu 400 lần, số liệu mâu thuẫn nhau | Biên soạn ~250 **nguyên liệu** trước; món sau đó tự tính được |
+| Bỏ qua công cụ nhập liệu, "nhập tay cho nhanh" | 15 phút/món × 500 món = 125 giờ → bỏ cuộc ở món thứ 80 | Đầu tư GĐ2 tới khi đạt **≤5 phút/món** rồi mới sản xuất hàng loạt |
+| Fork Tandoor/Mealie cho nhanh | Tandoor có Commons Clause (không phải OSS); Mealie AGPL kéo theo cả app | Đọc thiết kế, tự viết lại. Chỉ dùng thư viện MIT/Apache/CC0 |
+| Dùng RecipeNLG vì có 2,2 triệu công thức | Điều khoản phi thương mại, **ràng buộc cả công ty của người dùng** | Xem [LICENSE-COMPLIANCE](docs/04-data-sources/LICENSE-COMPLIANCE.md) |
+| Tải PDF bảng thành phần thực phẩm VN về nhập luôn | Sách có bản quyền của Viện Dinh dưỡng; tải được ≠ được phép dùng | Xin phép chính thức (task [LEGAL-001](docs/05-tasks/tasks/LEGAL-001.md)) |
+| Để LLM điền calo cho nhanh | Phá thẳng mục tiêu chính của dự án, và không phát hiện được về sau | QT-1 |
+| Lưu dữ liệu chỉ trong database | Máy khác clone về là mất sạch | QT-3 |

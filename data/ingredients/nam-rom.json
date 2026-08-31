@@ -1,0 +1,47 @@
+{
+  "slug": "nam-rom",
+  "name_vi": "Nấm rơm",
+  "name_en": "Straw mushroom",
+  "category": "rau-cu",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "168582",
+    "source_url": "https://fdc.nal.usda.gov/food-details/168582/nutrients",
+    "scientific_name": "Volvariella volvacea",
+    "kcal_per_100g": 32,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 3.83,
+    "fat_g": 0.68,
+    "carb_g": 4.64,
+    "fiber_g": 2.5,
+    "water_g": 89.9,
+    "sodium_mg": null,
+    "mapping_confidence": "low",
+    "mapping_note": "⚠️ ĐÂY LÀ NẤM RƠM ĐÓNG HỘP, KHÔNG PHẢI TƯƠI. Giá trị cho nấm rơm TƯƠI = KHÔNG TRA ĐƯỢC. USDA CHỈ CÓ MỘT dòng nấm rơm duy nhất và đó là bản đóng hộp chắt ráo nước (đã tìm 'Volvariella' → 1 kết quả; 'mushroom straw canned' → cùng dòng). Nấm rơm đóng hộp đã qua chần và ngâm nước muối → mất chất tan, natri tăng vọt, nước thay đổi. KHÔNG dùng thay nấm rơm tươi mà không ghi chú. USDA ghi thiếu chữ trong tên khoa học ('Volvariella volvace'). Dữ liệu đo thật nhưng chỉ dataPoints=2.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "cây nấm",
+      "grams": 5.5,
+      "note": null,
+      "source": "FDC 168582 foodMeasures"
+    },
+    {
+      "unit_name": "cup",
+      "grams": 182,
+      "note": null,
+      "source": "FDC 168582 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "low",
+  "needs_review": true
+}

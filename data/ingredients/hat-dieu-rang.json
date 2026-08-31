@@ -1,0 +1,60 @@
+{
+  "slug": "hat-dieu-rang",
+  "name_vi": "Hạt điều rang (không muối)",
+  "name_en": "Cashew nuts, dry roasted, unsalted",
+  "category": "khac",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "170571",
+    "source_url": "https://fdc.nal.usda.gov/food-details/170571/nutrients",
+    "scientific_name": "Anacardium occidentale",
+    "kcal_per_100g": 574,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 15.3,
+    "fat_g": 46.4,
+    "carb_g": 32.7,
+    "fiber_g": 3.0,
+    "water_g": 1.7,
+    "sodium_mg": 16,
+    "mapping_confidence": "high",
+    "mapping_note": "⚠️ Nếu công thức dùng 'hạt điều rang MUỐI' thì PHẢI dùng bản ghi riêng 169421 — macro y hệt nhưng natri 640 mg/100g thay vì 16 mg, GẤP 40 LẦN. Đừng dùng chung một nguyên liệu cho cả hai.",
+    "alternatives": [
+      {
+        "external_id": "169421",
+        "name": "Nuts, cashew nuts, dry roasted, with salt added",
+        "kcal_per_100g": 574,
+        "why_not": "Cùng năng lượng nhưng natri 640 mg — nên tách thành nguyên liệu riêng 'hạt điều rang muối'"
+      },
+      {
+        "external_id": "170572",
+        "name": "Nuts, cashew nuts, oil roasted",
+        "kcal_per_100g": null,
+        "why_not": "Rang dầu — hạt điều VN chủ yếu rang khô/rang muối"
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": 0.58,
+  "density_note": "SUY RA, kiểm chứng chéo 2 điểm khớp: cup 137/236,588 = 0,579; muỗng canh 8,6/14,787 = 0,582.",
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "cup",
+      "grams": 137,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "source": "FDC 170571 foodMeasures"
+    },
+    {
+      "unit_name": "muỗng canh",
+      "grams": 8.6,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "source": "FDC 170571 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

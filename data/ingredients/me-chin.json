@@ -1,0 +1,47 @@
+{
+  "slug": "me-chin",
+  "name_vi": "Me chín",
+  "name_en": "Tamarind, raw",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "167763",
+    "source_url": "https://fdc.nal.usda.gov/food-details/167763/nutrients",
+    "scientific_name": "Tamarindus indica",
+    "kcal_per_100g": 239,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 2.8,
+    "fat_g": 0.6,
+    "carb_g": 62.5,
+    "fiber_g": 5.1,
+    "water_g": 31.4,
+    "sodium_mg": 28,
+    "mapping_confidence": "medium",
+    "mapping_note": "Loài khớp NHƯNG đây là me CHÍN (nước chỉ 31,4 g, carb 62,5 g → chủ yếu là đường). ⚠️ 'ME CHUA' nấu canh chua Việt Nam thường là me XANH/me non, hoặc me vắt lấy nước — nhiều nước, ít đường hơn hẳn. Dùng 239 kcal cho me vắt canh chua sẽ SAI LỚN. Tên nguyên liệu đã đặt là 'me chín' để tránh nhầm; me xanh/nước me là nguyên liệu KHÁC, chưa tra. dataPoints = 0 trên mọi chất.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "cup thịt me",
+      "grams": 120,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "source": "FDC 167763 foodMeasures"
+    },
+    {
+      "unit_name": "quả",
+      "grams": 2,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "source": "FDC 167763 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "medium",
+  "needs_review": true
+}

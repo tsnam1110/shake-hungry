@@ -1,0 +1,54 @@
+{
+  "slug": "lac-song",
+  "name_vi": "Lạc sống (đậu phộng chưa rang)",
+  "name_en": "Peanuts, raw",
+  "category": "khac",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "172430",
+    "source_url": "https://fdc.nal.usda.gov/food-details/172430/nutrients",
+    "scientific_name": null,
+    "kcal_per_100g": 567,
+    "kcal_min": 551,
+    "kcal_max": 588,
+    "protein_g": 25.8,
+    "fat_g": 49.2,
+    "carb_g": 16.1,
+    "fiber_g": 8.5,
+    "water_g": 6.5,
+    "sodium_mg": 18,
+    "mapping_confidence": "high",
+    "mapping_note": "⚠️ Bản Foundation 2515376 (cùng ndbNumber 16087) KHÁC ĐÁNG KỂ: béo 43,3 so với 49,2; carb 26,5 so với 16,1; và không có nutrient 1008 (chỉ 2047=588 / 2048=551). Chọn SR Legacy vì có 1008 và macro hợp lý hơn với lạc VN. Khoảng 551–588 lấy từ dải Foundation để phản ánh độ bất định thật. Lạc RANG là nguyên liệu riêng (`lac-rang`, 587 kcal).",
+    "alternatives": [
+      {
+        "external_id": "2515376",
+        "name": "Peanuts, raw (Foundation)",
+        "kcal_per_100g": 588,
+        "why_not": "Không có 1008; hai giá trị Atwater lệch nhau 37 kcal (551 so với 588) — bất định cao"
+      },
+      {
+        "external_id": "174263",
+        "name": "Peanuts, spanish, raw",
+        "kcal_per_100g": null,
+        "why_not": "Giống Spanish riêng; 'all types' tổng quát hơn, hợp lạc VN không xác định giống"
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": 0.62,
+  "density_note": "SUY RA từ foodMeasures: cup 146/236,588 = 0,617. Một điểm. Bulk density hạt rời.",
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "cup",
+      "grams": 146,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "source": "FDC 172430 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

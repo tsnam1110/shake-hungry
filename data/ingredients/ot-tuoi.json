@@ -1,0 +1,47 @@
+{
+  "slug": "ot-tuoi",
+  "name_vi": "Ớt tươi (ớt đỏ)",
+  "name_en": "Hot chili pepper, red, raw",
+  "category": "gia-vi",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "170106",
+    "source_url": "https://fdc.nal.usda.gov/food-details/170106/nutrients",
+    "scientific_name": null,
+    "kcal_per_100g": 40,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 1.87,
+    "fat_g": 0.44,
+    "carb_g": 8.81,
+    "fiber_g": 1.5,
+    "water_g": null,
+    "sodium_mg": 9,
+    "mapping_confidence": "medium",
+    "mapping_note": "BẪY QUY ĐỔI NGHIÊM TRỌNG: portion USDA '1 quả = 45 g' ứng với ớt sừng/jalapeño cỡ lớn. Ớt hiểm / ớt chỉ thiên Việt Nam chỉ khoảng 1–3 g/quả — LỆCH 15 ĐẾN 45 LẦN. TUYỆT ĐỐI không dùng portion 45 g để quy đổi 'x quả ớt' trong công thức món Việt; phải định lượng bằng gram. Ớt xanh (170497) có kcal giống hệt 40 nên không cần tách bản ghi theo màu.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "quả cỡ Âu Mỹ",
+      "grams": 45.0,
+      "note": "KHÔNG áp dụng cho ớt hiểm VN (1–3 g/quả)",
+      "source": "FDC 170106 foodMeasures"
+    },
+    {
+      "unit_name": "nửa cup thái",
+      "grams": 75.0,
+      "note": null,
+      "source": "FDC 170106 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "medium",
+  "needs_review": true
+}

@@ -1,0 +1,41 @@
+{
+  "slug": "tim-lon",
+  "name_vi": "Tim lợn (sống)",
+  "name_en": "Pork heart, raw",
+  "category": "thit",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "168267",
+    "source_url": "https://fdc.nal.usda.gov/food-details/168267/nutrients",
+    "scientific_name": null,
+    "kcal_per_100g": 118,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 17.3,
+    "fat_g": 4.36,
+    "carb_g": 1.33,
+    "fiber_g": 0.0,
+    "water_g": 76.2,
+    "sodium_mg": 56,
+    "mapping_confidence": "high",
+    "mapping_note": "Tim là cơ vân đồng nhất, ít biến thiên. Không có dòng cạnh tranh trong SR Legacy.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "quả tim",
+      "grams": 226,
+      "note": "lợn Mỹ; tim lợn ở chợ VN thường 150–250 g — khoảng này chấp nhận được",
+      "source": "FDC 168267 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

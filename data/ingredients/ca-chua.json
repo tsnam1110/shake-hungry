@@ -1,0 +1,61 @@
+{
+  "slug": "ca-chua",
+  "name_vi": "Cà chua (chín, sống)",
+  "name_en": "Tomato, red, ripe, raw",
+  "category": "rau-cu",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "170457",
+    "source_url": "https://fdc.nal.usda.gov/food-details/170457/nutrients",
+    "scientific_name": "Solanum lycopersicum",
+    "kcal_per_100g": 18,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 0.88,
+    "fat_g": 0.2,
+    "carb_g": 3.89,
+    "fiber_g": 1.2,
+    "water_g": null,
+    "mapping_confidence": "high",
+    "mapping_note": "scientificName = 'Solanum lycopersicum'. Bản ghi 'year round average' là trung bình cả năm, phù hợp làm giá trị nền.",
+    "alternatives": []
+  },
+  "density_g_per_ml": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "units": [
+    {
+      "unit_name": "quả vừa",
+      "grams": 123,
+      "note": "đường kính 2-3/5 inch",
+      "source": "FDC 170457 foodMeasures"
+    },
+    {
+      "unit_name": "quả nhỏ",
+      "grams": 91,
+      "note": null,
+      "source": "FDC 170457 foodMeasures"
+    },
+    {
+      "unit_name": "quả lớn",
+      "grams": 182,
+      "note": "đường kính 3 inch",
+      "source": "FDC 170457 foodMeasures"
+    },
+    {
+      "unit_name": "quả cà chua bi",
+      "grams": 17,
+      "note": null,
+      "source": "FDC 170457 foodMeasures"
+    },
+    {
+      "unit_name": "cup thái",
+      "grams": 180,
+      "note": null,
+      "source": "FDC 170457 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

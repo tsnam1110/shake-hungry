@@ -1,0 +1,39 @@
+{
+  "slug": "bun-kho",
+  "name_vi": "Bún khô (và bánh phở khô)",
+  "name_en": "Rice noodles, dry",
+  "category": "tinh-bot",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "169742",
+    "source_url": "https://fdc.nal.usda.gov/food-details/169742/nutrients",
+    "scientific_name": null,
+    "kcal_per_100g": 364,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 5.95,
+    "fat_g": 0.56,
+    "carb_g": 80.2,
+    "fiber_g": 1.6,
+    "water_g": 11.9,
+    "mapping_confidence": "medium",
+    "mapping_note": "Dòng USDA là 'rice noodles' chung, không phân biệt sợi bún với sợi phở — dùng chung được cho cả hai ở dạng KHÔ. Ciqual 9900 'Vermicelles de riz sèches, crues' khớp chủng loại chính xác hơn và cho số gần trùng khít: 365 kcal, carb 80,5, nhưng protein 7,44 so với 5,95 (lệch 25%). Vì USDA 169742 KHÔNG ghi dataPoints cho protein (n=0, tức là giá trị gán chứ không đo), protein 7,44 của Ciqual đáng tin hơn. ĐÂY LÀ DÒNG NÊN DÙNG cho món phở/bún thay vì dòng sợi tươi — tính từ khối lượng khô rồi nhân hệ số hút nước.",
+    "alternatives": []
+  },
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "oz",
+      "grams": 57,
+      "note": null,
+      "source": "FDC 169742 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "medium",
+  "needs_review": true
+}

@@ -1,0 +1,47 @@
+{
+  "slug": "bot-nghe",
+  "name_vi": "Bột nghệ",
+  "name_en": "Turmeric, ground",
+  "category": "gia-vi",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "172231",
+    "source_url": "https://fdc.nal.usda.gov/food-details/172231/nutrients",
+    "scientific_name": "Curcuma longa",
+    "kcal_per_100g": 312,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 9.68,
+    "fat_g": 3.25,
+    "carb_g": 67.1,
+    "fiber_g": 22.7,
+    "water_g": 12.8,
+    "sodium_mg": 27,
+    "mapping_confidence": "high",
+    "mapping_note": "Nguyên liệu BỔ SUNG ngoài danh sách yêu cầu — tách ra khi phát hiện nghệ TƯƠI không tra được. Đây là nghệ BỘT KHÔ (nước 12,8 g), KHÔNG dùng thay nghệ tươi: độ ẩm chênh khoảng 6,5 lần. Nghệ tươi xem nguyên liệu `nghe-tuoi` (đang null).",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": 0.62,
+  "density_note": "SUY RA từ foodMeasures: muỗng cà phê 3,0 g / 4,929 ml = 0,61; muỗng canh 9,4 / 14,787 = 0,64. Hai điểm khớp nhau. Bulk density dạng bột.",
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "muỗng cà phê",
+      "grams": 3.0,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "source": "FDC 172231 foodMeasures"
+    },
+    {
+      "unit_name": "muỗng canh",
+      "grams": 9.4,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "source": "FDC 172231 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

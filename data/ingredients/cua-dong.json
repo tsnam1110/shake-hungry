@@ -1,0 +1,41 @@
+{
+  "slug": "cua-dong",
+  "name_vi": "Cua đồng",
+  "name_en": "Rice field crab",
+  "category": "thuy-san",
+  "reference_food": {
+    "fct_source": null,
+    "external_id": null,
+    "source_url": null,
+    "scientific_name": "Somanniathelphusa spp.",
+    "kcal_per_100g": null,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": null,
+    "fat_g": null,
+    "carb_g": null,
+    "fiber_g": null,
+    "water_g": null,
+    "sodium_mg": null,
+    "mapping_confidence": "low",
+    "mapping_note": "KHÔNG TRA ĐƯỢC — để null theo QT-1. Đã quét: USDA 'crab raw' (4 dòng, toàn cua biển); USDA mở rộng sang Survey/FNDDS 'crab' (18 dòng, toàn cua biển hoặc món chế biến); Ciqual 'crabe' (7 dòng, toàn cua biển/surimi); bảng Nhật MEXT duyệt trọn mục cua 10332–10341 (không có さわがに cua nước ngọt). NGOÀI CHUYỆN THIẾU LOÀI CÒN MỘT VẤN ĐỀ KHÔNG BẢNG NÀO GIẢI ĐƯỢC: cua đồng được xay CẢ VỎ rồi lọc lấy nước, nên 'phần ăn được' không tương ứng với 'crab meat' của bất kỳ bảng nào. VIỆC CẦN LÀM: xử lý riêng — nhiều khả năng phải tự đo.",
+    "alternatives": [
+      {
+        "external_id": "174204",
+        "name": "Crustaceans, crab, blue, raw (Callinectes sapidus)",
+        "kcal_per_100g": 87,
+        "why_not": "Cua biển, khác họ hoàn toàn với cua đồng nước ngọt; lại là thịt đã tách vỏ — sai cả loài lẫn phần ăn được"
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "unknown",
+  "needs_review": true
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "gao-nep",
+  "name_vi": "Gạo nếp (sống)",
+  "name_en": "Rice, white, glutinous, uncooked",
+  "category": "tinh-bot",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "168883",
+    "source_url": "https://fdc.nal.usda.gov/food-details/168883/nutrients",
+    "scientific_name": null,
+    "kcal_per_100g": 370,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 6.81,
+    "fat_g": 0.55,
+    "carb_g": 81.7,
+    "fiber_g": 2.8,
+    "water_g": 10.5,
+    "mapping_confidence": "high",
+    "mapping_note": "Khớp trực tiếp. LƯU Ý số mẫu rất thấp (dataPoints = 3 cho nước/protein/lipid), USDA không công bố min/max. Ciqual KHÔNG có gạo nếp (đã tìm 'riz gluant', 'glutinous sticky rice' → 0 kết quả khớp).",
+    "alternatives": []
+  },
+  "density_g_per_ml": 0.782,
+  "density_note": "SUY RA: 185 g/cup (FDC 168883 foodMeasures) chia 236,588 ml. Bulk density.",
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "cup",
+      "grams": 185,
+      "note": "US cup, gạo nếp sống",
+      "source": "FDC 168883 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

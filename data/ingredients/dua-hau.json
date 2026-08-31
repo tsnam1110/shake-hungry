@@ -1,0 +1,54 @@
+{
+  "slug": "dua-hau",
+  "name_vi": "Dưa hấu",
+  "name_en": "Watermelon, raw",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "167765",
+    "source_url": "https://fdc.nal.usda.gov/food-details/167765/nutrients",
+    "scientific_name": "Citrullus lanatus",
+    "kcal_per_100g": 30,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 0.61,
+    "fat_g": 0.15,
+    "carb_g": 7.55,
+    "fiber_g": 0.4,
+    "water_g": 91.4,
+    "sodium_mg": null,
+    "mapping_confidence": "high",
+    "mapping_note": "Không có bản giống nào khác CÓ NĂNG LƯỢNG để lập khoảng — kcal_min/max để null (chưa tra được biến thiên).",
+    "alternatives": [
+      {
+        "external_id": "2747675",
+        "name": "Watermelon, seedless, flesh only, raw (Foundation)",
+        "kcal_per_100g": null,
+        "why_not": "BẢN NÀY KHÔNG CÓ GIÁ TRỊ NĂNG LƯỢNG NÀO — không 1008, không 2047, không 2048, chỉ có protein. Không dùng được. Đây là ca cực đoan của bẫy 'Foundation có thể thiếu năng lượng'"
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "cup thái hạt lựu",
+      "grams": 152,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "source": "FDC 167765 foodMeasures"
+    },
+    {
+      "unit_name": "miếng",
+      "grams": 286,
+      "note": "khoảng 1/16 quả",
+      "source": "FDC 167765 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

@@ -1,0 +1,66 @@
+{
+  "slug": "ngo-ngot",
+  "name_vi": "Ngô ngọt (hạt, sống)",
+  "name_en": "Sweet corn, yellow, raw",
+  "category": "rau-cu",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "169998",
+    "source_url": "https://fdc.nal.usda.gov/food-details/169998/nutrients",
+    "scientific_name": "Zea mays",
+    "kcal_per_100g": 86,
+    "kcal_min": 73,
+    "kcal_max": 86,
+    "protein_g": 3.27,
+    "fat_g": 1.35,
+    "carb_g": 18.7,
+    "fiber_g": 2.0,
+    "water_g": 76.0,
+    "sodium_mg": null,
+    "mapping_confidence": "high",
+    "mapping_note": "Giá trị là cho HẠT NGÔ SỐNG đã tách khỏi lõi, KHÔNG phải cả bắp — nhớ áp hệ số thu hồi khi công thức ghi 'nửa bắp ngô'. Dữ liệu dày (nước dataPoints=103). Khoảng mở rộng xuống 73 theo Atwater riêng của dòng Foundation 2710826.",
+    "alternatives": [
+      {
+        "external_id": "2710826",
+        "name": "Corn, sweet, yellow and white kernels, fresh, raw (Foundation)",
+        "kcal_per_100g": 73,
+        "why_not": "Hỗn hợp vàng+trắng, không có 1008 (2047=85, 2048=73). Dùng làm cận dưới"
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "cup hạt",
+      "grams": 145,
+      "note": null,
+      "source": "FDC 169998 foodMeasures"
+    },
+    {
+      "unit_name": "bắp vừa",
+      "grams": 102,
+      "note": "hạt thu được từ bắp 17–19 cm",
+      "source": "FDC 169998 foodMeasures"
+    },
+    {
+      "unit_name": "bắp nhỏ",
+      "grams": 73,
+      "note": null,
+      "source": "FDC 169998 foodMeasures"
+    },
+    {
+      "unit_name": "bắp to",
+      "grams": 143,
+      "note": null,
+      "source": "FDC 169998 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

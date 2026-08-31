@@ -1,0 +1,47 @@
+{
+  "slug": "cui-dua-nao",
+  "name_vi": "Cùi dừa nạo (dừa già)",
+  "name_en": "Coconut meat, raw",
+  "category": "khac",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "170169",
+    "source_url": "https://fdc.nal.usda.gov/food-details/170169/nutrients",
+    "scientific_name": "Cocos nucifera",
+    "kcal_per_100g": 354,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 3.33,
+    "fat_g": 33.5,
+    "carb_g": 15.2,
+    "fiber_g": 9.0,
+    "water_g": 47.0,
+    "sodium_mg": null,
+    "mapping_confidence": "high",
+    "mapping_note": "Nền mẫu tốt nhất trong nhóm dừa (dataPoints 12–15). Đây là cùi DỪA GIÀ (nước 47%, béo 33,5%). CÙI DỪA NON / dừa nước (mềm, trong, nhiều nước, ăn tráng miệng) KHÔNG dùng được con số này — USDA không có bản riêng, cần tra bổ sung.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "cup nạo sợi",
+      "grams": 80,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "source": "FDC 170169 foodMeasures"
+    },
+    {
+      "unit_name": "quả dừa vừa",
+      "grams": 397,
+      "note": "phần cùi",
+      "source": "FDC 170169 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

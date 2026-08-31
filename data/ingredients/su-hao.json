@@ -1,0 +1,47 @@
+{
+  "slug": "su-hao",
+  "name_vi": "Su hào (sống)",
+  "name_en": "Kohlrabi, raw",
+  "category": "rau-cu",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "168424",
+    "source_url": "https://fdc.nal.usda.gov/food-details/168424/nutrients",
+    "scientific_name": "Brassica oleracea (Gongylodes Group)",
+    "kcal_per_100g": 27,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 1.7,
+    "fat_g": 0.1,
+    "carb_g": 6.2,
+    "fiber_g": 3.6,
+    "water_g": 91.0,
+    "sodium_mg": null,
+    "mapping_confidence": "high",
+    "mapping_note": "Tên và tên khoa học khớp tuyệt đối. Lưu ý chất lượng số: năng lượng dataPoints=0 (tính bằng Atwater, không đo); đạm/béo chỉ dataPoints=1 (một mẫu).",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "lát",
+      "grams": 16,
+      "note": null,
+      "source": "FDC 168424 foodMeasures"
+    },
+    {
+      "unit_name": "cup",
+      "grams": 135,
+      "note": null,
+      "source": "FDC 168424 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

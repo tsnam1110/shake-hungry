@@ -1,0 +1,66 @@
+{
+  "slug": "sua-tuoi",
+  "name_vi": "Sữa tươi nguyên kem (không đường)",
+  "name_en": "Milk, whole, 3.25% milkfat",
+  "category": "khac",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "171265",
+    "source_url": "https://fdc.nal.usda.gov/food-details/171265/nutrients",
+    "scientific_name": null,
+    "kcal_per_100g": 61,
+    "kcal_min": 60,
+    "kcal_max": 61,
+    "protein_g": 3.15,
+    "fat_g": 3.25,
+    "carb_g": 4.8,
+    "fiber_g": 0.0,
+    "water_g": 88.1,
+    "sodium_mg": 43,
+    "mapping_confidence": "high",
+    "mapping_note": "Bản Foundation 746782 cùng ndbNumber 1077 cho 60–61 kcal nhưng KHÔNG có nutrient 1008; giữ SR Legacy theo QT-4. Khoảng 60–61 phản ánh chênh lệch giữa hai bản.",
+    "alternatives": [
+      {
+        "external_id": "746782",
+        "name": "Milk, whole, 3.25% milkfat (Foundation)",
+        "kcal_per_100g": 60,
+        "why_not": "Không có nutrient 1008; chỉ có 2047=61 / 2048=60"
+      },
+      {
+        "external_id": "171266",
+        "name": "Milk, producer, fluid, 3.7% milkfat",
+        "kcal_per_100g": null,
+        "why_not": "Sữa thô tại trại, không phải sữa tiệt trùng bán lẻ"
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": 1.031,
+  "density_note": "SUY RA từ foodMeasures 171265, KIỂM CHỨNG CHÉO 3 điểm khớp chính xác: cup 244/236,588 = 1,0313; fl oz 30,5/29,5735 = 1,0313; quart 976/946,353 = 1,0313. Khớp dải 1,030–1,035 của sữa nguyên kem.",
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "cup",
+      "grams": 244,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "source": "FDC 171265 foodMeasures"
+    },
+    {
+      "unit_name": "hộp 180 ml",
+      "grams": 186,
+      "note": "quy đổi của dự án, không phải số USDA",
+      "source": "suy từ density 1,031"
+    },
+    {
+      "unit_name": "hộp 220 ml",
+      "grams": 227,
+      "note": "quy đổi của dự án",
+      "source": "suy từ density 1,031"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

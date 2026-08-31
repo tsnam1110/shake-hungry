@@ -1,0 +1,66 @@
+{
+  "slug": "chuoi",
+  "name_vi": "Chuối tiêu",
+  "name_en": "Banana, raw",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "173944",
+    "source_url": "https://fdc.nal.usda.gov/food-details/173944/nutrients",
+    "scientific_name": "Musa acuminata",
+    "kcal_per_100g": 89,
+    "kcal_min": 85,
+    "kcal_max": 97,
+    "protein_g": 1.09,
+    "fat_g": 0.33,
+    "carb_g": 22.8,
+    "fiber_g": 2.6,
+    "water_g": 74.9,
+    "sodium_mg": null,
+    "mapping_confidence": "high",
+    "mapping_note": "USDA lấy mẫu chuối Cavendish; chuối tiêu VN cùng nhóm Cavendish (Musa acuminata, AAA) nên khác biệt nhỏ. Khoảng 85–97 là BIẾN THIÊN THẬT theo độ chín (hai bản Foundation), không phải sai số đo — chuối chín kỹ cho kcal thấp hơn chuối vừa chín.",
+    "alternatives": [
+      {
+        "external_id": "1105073",
+        "name": "Bananas, overripe, raw (Foundation)",
+        "kcal_per_100g": 85,
+        "why_not": "Một trạng thái chín; dùng làm cận dưới, không làm bản ghi chính"
+      },
+      {
+        "external_id": "1105314",
+        "name": "Bananas, ripe and slightly ripe, raw (Foundation)",
+        "kcal_per_100g": 97,
+        "why_not": "Trạng thái chín; cận trên. Trộn Foundation làm bản chính sẽ phá QT-4"
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "quả vừa",
+      "grams": 118,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "source": "FDC 173944 foodMeasures"
+    },
+    {
+      "unit_name": "quả nhỏ",
+      "grams": 101,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "source": "FDC 173944 foodMeasures"
+    },
+    {
+      "unit_name": "cup thái lát",
+      "grams": 150,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "source": "FDC 173944 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

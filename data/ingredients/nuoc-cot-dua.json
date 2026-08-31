@@ -1,0 +1,66 @@
+{
+  "slug": "nuoc-cot-dua",
+  "name_vi": "Nước cốt dừa",
+  "name_en": "Coconut milk, raw",
+  "category": "khac",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "170172",
+    "source_url": "https://fdc.nal.usda.gov/food-details/170172/nutrients",
+    "scientific_name": "Cocos nucifera",
+    "kcal_per_100g": 230,
+    "kcal_min": 197,
+    "kcal_max": 330,
+    "protein_g": 2.29,
+    "fat_g": 23.8,
+    "carb_g": 5.54,
+    "fiber_g": 2.2,
+    "water_g": 67.6,
+    "sodium_mg": null,
+    "mapping_confidence": "medium",
+    "mapping_note": "⚠️ PHẢI ĐỌC KỸ — USDA có 4 dạng khác nhau, chênh tới 68%. Đã chọn 170172 = vắt từ cùi tươi nạo CÓ THÊM NƯỚC, tươi (không đóng hộp), vì đúng cách làm nước cốt dừa VN. Nhưng độ đặc thay đổi theo lần vắt: 'nước cốt nhất' (vắt lần đầu, không pha nước) gần coconut cream 330 kcal; 'nước dão' (vắt lần 2–3) loãng hơn 230 nhiều. Khoảng 197–330 phủ từ loại đóng hộp tới nước cốt nhất. THEO QT-5: món dùng nước cốt dừa BẮT BUỘC hiển thị dạng khoảng — đây là nguồn sai số lớn nhất trong nhóm trái cây. Nền mẫu mỏng (dataPoints 2–3).",
+    "alternatives": [
+      {
+        "external_id": "170580",
+        "name": "Nuts, coconut cream, raw",
+        "kcal_per_100g": 330,
+        "why_not": "Không pha nước — tương ứng 'nước cốt nhất' VN. Cận trên; là ứng viên ĐÚNG nếu công thức ghi rõ nước cốt đặc"
+      },
+      {
+        "external_id": "170173",
+        "name": "Nuts, coconut milk, canned",
+        "kcal_per_100g": 197,
+        "why_not": "Đóng hộp, pha loãng công nghiệp. Cận dưới; ứng viên đúng nếu công thức dùng lon"
+      },
+      {
+        "external_id": "174116",
+        "name": "Beverages, coconut milk, sweetened, fortified",
+        "kcal_per_100g": null,
+        "why_not": "BẪY TÊN GỌI — đây là ĐỒ UỐNG 'sữa dừa' pha loãng có đường bổ sung vi chất, hoàn toàn khác nước cốt dừa nấu ăn"
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "muỗng canh",
+      "grams": 15,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "source": "FDC 170172 foodMeasures"
+    },
+    {
+      "unit_name": "cup",
+      "grams": 240,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "source": "FDC 170172 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "medium",
+  "needs_review": true
+}

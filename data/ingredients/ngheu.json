@@ -1,0 +1,55 @@
+{
+  "slug": "ngheu",
+  "name_vi": "Nghêu (thịt, sống)",
+  "name_en": "Clam meat, raw",
+  "category": "thuy-san",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "174214",
+    "source_url": "https://fdc.nal.usda.gov/food-details/174214/nutrients",
+    "scientific_name": "Lamellibranchia (Bivalvia)",
+    "kcal_per_100g": 86,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 14.7,
+    "fat_g": 0.96,
+    "carb_g": 3.57,
+    "fiber_g": 0,
+    "water_g": null,
+    "mapping_confidence": "medium",
+    "mapping_note": "scientificName của FDC chỉ định danh tới lớp 'Lamellibranchia' (= Bivalvia), rất rộng. Nghêu VN chủ yếu là Meretrix lyrata (họ Veneridae) — nằm trong lớp này nhưng USDA lấy mẫu chủ yếu từ nghêu Bắc Mỹ (hard/soft clam). Ciqual 10017 'Clam, raw' cho 80,5 kcal / 11,5 P / 2,65 F — lipid lệch gần 3 lần (0,96 so với 2,65). Giá trị này là THỊT đã tách vỏ, không phải cả con.",
+    "alternatives": []
+  },
+  "density_g_per_ml": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "units": [
+    {
+      "unit_name": "con nhỏ",
+      "grams": 9,
+      "note": null,
+      "source": "FDC 174214 foodMeasures"
+    },
+    {
+      "unit_name": "con vừa",
+      "grams": 14.5,
+      "note": null,
+      "source": "FDC 174214 foodMeasures"
+    },
+    {
+      "unit_name": "con lớn",
+      "grams": 20,
+      "note": null,
+      "source": "FDC 174214 foodMeasures"
+    },
+    {
+      "unit_name": "lb cả vỏ",
+      "grams": 68,
+      "note": "1 lb cả vỏ cho ra 68 g thịt, tỷ lệ ăn được khoảng 15,0%",
+      "source": "FDC 174214 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "medium",
+  "needs_review": true
+}

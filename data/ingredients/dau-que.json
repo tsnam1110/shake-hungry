@@ -1,0 +1,54 @@
+{
+  "slug": "dau-que",
+  "name_vi": "Đậu que (đậu cove, sống)",
+  "name_en": "Snap green beans, raw",
+  "category": "rau-cu",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "169961",
+    "source_url": "https://fdc.nal.usda.gov/food-details/169961/nutrients",
+    "scientific_name": "Phaseolus vulgaris",
+    "kcal_per_100g": 31,
+    "kcal_min": 31,
+    "kcal_max": 40,
+    "protein_g": 1.83,
+    "fat_g": 0.22,
+    "carb_g": 6.97,
+    "fiber_g": 2.7,
+    "water_g": 90.3,
+    "sodium_mg": null,
+    "mapping_confidence": "high",
+    "mapping_note": "Ánh xạ chắc chắn. Dữ liệu tốt nhất trong cả lô: nước dataPoints=165, đạm=104. Khoảng rộng ra vì dòng Foundation trùng tên (2346400) dùng hệ Atwater: 2047 = 40 kcal, 2048 = 34 kcal, so với 1008 = 31 kcal của SR Legacy.",
+    "alternatives": [
+      {
+        "external_id": "2346400",
+        "name": "Beans, snap, green, raw (Foundation)",
+        "kcal_per_100g": 34,
+        "why_not": "Foundation KHÔNG có nutrient 1008; chỉ có 2047=40 và 2048=34. Giữ làm cận trên của khoảng theo QT-4"
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "quả",
+      "grams": 5.5,
+      "note": "suy từ 10 quả dài 10 cm = 55 g",
+      "source": "FDC 169961 foodMeasures"
+    },
+    {
+      "unit_name": "cup cắt khúc",
+      "grams": 100,
+      "note": null,
+      "source": "FDC 169961 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

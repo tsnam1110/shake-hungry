@@ -1,0 +1,32 @@
+{
+  "slug": "thit-lon-than-noi",
+  "name_vi": "Thịt lợn thăn nội (phi lê, sống)",
+  "name_en": "Pork, loin, tenderloin, boneless, raw",
+  "category": "thit",
+  "reference_food": {
+    "fct_source": "usda_foundation",
+    "external_id": "2646169",
+    "source_url": "https://fdc.nal.usda.gov/food-details/2646169/nutrients",
+    "scientific_name": null,
+    "kcal_per_100g": 119,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 21.6,
+    "fat_g": 3.9,
+    "carb_g": null,
+    "fiber_g": null,
+    "water_g": null,
+    "mapping_confidence": "medium",
+    "mapping_note": "TÁCH RIÊNG khỏi thăn ngoại. Tiếng Việt gọi 'thăn' cho cả thăn ngoại (166 kcal) lẫn thăn nội/phi lê (119 kcal) — chênh 47 kcal/100g, đủ để làm sai calo món. Người nhập liệu PHẢI chọn tường minh. Dòng Foundation không đo carb và xơ nên để null. CẢNH BÁO QT-4: dòng Foundation lẫn trong nhóm thịt lợn dùng SR Legacy.",
+    "alternatives": []
+  },
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "medium",
+  "needs_review": true
+}

@@ -1,0 +1,47 @@
+{
+  "slug": "mat-ong",
+  "name_vi": "Mật ong",
+  "name_en": "Honey",
+  "category": "gia-vi",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "169640",
+    "source_url": "https://fdc.nal.usda.gov/food-details/169640/nutrients",
+    "scientific_name": null,
+    "kcal_per_100g": 304,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 0.3,
+    "fat_g": 0.0,
+    "carb_g": 82.4,
+    "fiber_g": 0.2,
+    "water_g": 17.1,
+    "sodium_mg": 4,
+    "mapping_confidence": "high",
+    "mapping_note": "Dữ liệu đầy đủ, không có bản cạnh tranh.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": 1.42,
+  "density_note": "SUY RA, kiểm chứng chéo 2 điểm: cup 339/236,588 = 1,4328; muỗng canh 21/14,787 = 1,4202. Lấy 1,42 (thận trọng hơn). Mật ong đặc/loãng theo độ ẩm nên 1,40–1,45 là dải thực tế.",
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "cup",
+      "grams": 339,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "source": "FDC 169640 foodMeasures"
+    },
+    {
+      "unit_name": "muỗng canh",
+      "grams": 21,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "source": "FDC 169640 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

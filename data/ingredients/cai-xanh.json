@@ -1,0 +1,37 @@
+{
+  "slug": "cai-xanh",
+  "name_vi": "Cải xanh (cải bẹ xanh, sống)",
+  "name_en": "Mustard greens, raw",
+  "category": "rau-cu",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "169256",
+    "source_url": "https://fdc.nal.usda.gov/food-details/169256/nutrients",
+    "scientific_name": "Brassica juncea",
+    "kcal_per_100g": 27,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 2.86,
+    "fat_g": 0.42,
+    "carb_g": 4.67,
+    "fiber_g": 3.2,
+    "water_g": null,
+    "mapping_confidence": "high",
+    "mapping_note": "scientificName = 'Brassica juncea', trùng loài với cải xanh/cải cay VN. Khác biệt còn lại chỉ ở giống trồng (USDA lấy mẫu giống lá xoăn Mỹ, VN dùng giống lá bẹ) — không đủ để hạ độ tin cậy. CẨN THẬN: không nhầm với 168438 'Mustard spinach (tendergreen)' (Brassica rapa var. perviridis) là loài khác.",
+    "alternatives": []
+  },
+  "density_g_per_ml": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "units": [
+    {
+      "unit_name": "cup thái nhỏ",
+      "grams": 56,
+      "note": null,
+      "source": "FDC 169256 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

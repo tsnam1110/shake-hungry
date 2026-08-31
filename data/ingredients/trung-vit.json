@@ -1,0 +1,39 @@
+{
+  "slug": "trung-vit",
+  "name_vi": "Trứng vịt (nguyên quả, sống)",
+  "name_en": "Egg, duck, whole, fresh, raw",
+  "category": "thit",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "172189",
+    "source_url": "https://fdc.nal.usda.gov/food-details/172189/nutrients",
+    "scientific_name": null,
+    "kcal_per_100g": 185,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 12.8,
+    "fat_g": 13.8,
+    "carb_g": 1.45,
+    "fiber_g": 0.0,
+    "water_g": null,
+    "mapping_confidence": "high",
+    "mapping_note": "Phần ăn được, đã bỏ vỏ. Trứng vịt đậm hơn trứng gà rõ rệt (185 so với 143 kcal/100g) VÀ quả to hơn (70 g so với 50 g) → một quả trứng vịt khoảng 130 kcal so với khoảng 72 kcal của một quả trứng gà large. Dòng này KHÔNG dùng được cho trứng vịt lộn — đó là nguyên liệu riêng, USDA không có, chưa tra.",
+    "alternatives": []
+  },
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "quả",
+      "grams": 70,
+      "note": "phần ăn được",
+      "source": "FDC 172189 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

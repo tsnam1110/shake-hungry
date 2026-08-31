@@ -1,0 +1,47 @@
+{
+  "slug": "hat-sen-kho",
+  "name_vi": "Hạt sen khô",
+  "name_en": "Lotus seeds, dried",
+  "category": "khac",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "170149",
+    "source_url": "https://fdc.nal.usda.gov/food-details/170149/nutrients",
+    "scientific_name": null,
+    "kcal_per_100g": 332,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 15.4,
+    "fat_g": 1.97,
+    "carb_g": 64.5,
+    "fiber_g": null,
+    "water_g": 14.2,
+    "sodium_mg": 5,
+    "mapping_confidence": "high",
+    "mapping_note": "Bản ghi KHÔNG có nutrient 1079 (chất xơ) — đã kiểm bằng cách liệt kê toàn bộ 67 nutrient id, xác nhận THIẾU THẬT chứ không phải lỗi parse. fiber_g = null, KHÔNG mượn từ bảng khác (QT-4). scientificName trống ở bản khô nhưng bản tươi 168591 ghi Nelumbo spp. KIỂM CHÉO KHÔ/TƯƠI: 332/89 = 3,73 lần, khớp chính xác tỉ lệ chất khô (85,8%/23,0% = 3,73) — hai bản ghi cùng gốc.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "hạt",
+      "grams": 0.675,
+      "note": null,
+      "source": "suy từ FDC 170149: 1 oz = 28,35 g khoảng 42 hạt vừa"
+    },
+    {
+      "unit_name": "cup",
+      "grams": 32,
+      "note": "hạt rời rất xốp — chỉ dùng ước lượng",
+      "source": "FDC 170149 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

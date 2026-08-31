@@ -1,0 +1,48 @@
+{
+  "slug": "chao",
+  "name_vi": "Chao (đậu phụ lên men)",
+  "name_en": "Fermented bean curd (fuyu)",
+  "category": "gia-vi",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "174280",
+    "source_url": "https://fdc.nal.usda.gov/food-details/174280/nutrients",
+    "scientific_name": null,
+    "kcal_per_100g": 116,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 8.92,
+    "fat_g": 8.0,
+    "carb_g": 4.38,
+    "fiber_g": null,
+    "water_g": 70.0,
+    "sodium_mg": 2870,
+    "mapping_confidence": "medium",
+    "mapping_note": "Fuyu (腐乳) và chao là CÙNG một họ sản phẩm (đậu phụ ướp muối lên men trong nước muối/rượu). Nhưng chao đỏ Việt Nam thường có men gạo đỏ và đường; chao trắng bán theo hũ có nhiều nước muối. Toàn bộ dinh dưỡng của bản ghi này dựa trên dataPoints = 1 (MỘT mẫu duy nhất) — độ tin cậy nội tại của chính USDA đã thấp.",
+    "alternatives": [
+      {
+        "external_id": "174305",
+        "name": "Tofu, salted and fermented (fuyu), prepared with calcium sulfate",
+        "kcal_per_100g": null,
+        "why_not": "Bản đặc tả chất đông tụ calcium sulfate; chao Việt không nêu chất đông tụ nên chọn bản tổng quát"
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "miếng chao",
+      "grams": 11,
+      "note": null,
+      "source": "FDC 174280 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "medium",
+  "needs_review": true
+}

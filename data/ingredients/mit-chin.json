@@ -1,0 +1,41 @@
+{
+  "slug": "mit-chin",
+  "name_vi": "Mít chín",
+  "name_en": "Jackfruit, raw",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "174687",
+    "source_url": "https://fdc.nal.usda.gov/food-details/174687/nutrients",
+    "scientific_name": "Artocarpus heterophyllus",
+    "kcal_per_100g": 95,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 1.72,
+    "fat_g": 0.64,
+    "carb_g": 23.2,
+    "fiber_g": 1.5,
+    "water_g": 73.5,
+    "sodium_mg": null,
+    "mapping_confidence": "medium",
+    "mapping_note": "Đúng loài nhưng dataPoints = 2 (nền mẫu mỏng). QUAN TRỌNG: đây là MÍT CHÍN ăn tráng miệng. 'MÍT NON' dùng làm rau (mít non kho, gỏi mít) là nguyên liệu HOÀN TOÀN KHÁC — KHÔNG được dùng con số này cho mít non. Mít VN có mít tố nữ, mít Thái, mít mật khác nhau; USDA không phân giống.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "cup miếng",
+      "grams": 151,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "source": "FDC 174687 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "medium",
+  "needs_review": true
+}

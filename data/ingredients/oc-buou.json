@@ -1,0 +1,48 @@
+{
+  "slug": "oc-buou",
+  "name_vi": "Ốc bươu (ốc nhồi)",
+  "name_en": "Snail, raw",
+  "category": "thuy-san",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "167744",
+    "source_url": "https://fdc.nal.usda.gov/food-details/167744/nutrients",
+    "scientific_name": null,
+    "kcal_per_100g": 90,
+    "kcal_min": 78,
+    "kcal_max": 90,
+    "protein_g": 16.1,
+    "fat_g": 1.4,
+    "carb_g": 2.0,
+    "fiber_g": 0.0,
+    "water_g": 79.2,
+    "sodium_mg": null,
+    "mapping_confidence": "low",
+    "mapping_note": "HAI VẤN ĐỀ CỘNG DỒN. (1) SAI NHÓM LOÀI: ốc bươu/ốc nhồi VN là ốc táo nước ngọt Pila polita (họ Ampullariidae); dòng USDA không ghi scientificName nhưng đối chiếu Ciqual 'escargot' cho thấy đây là ốc sên CẠN Helix — khác nhóm sinh thái hoàn toàn. (2) SỐ LIỆU YẾU: TOÀN BỘ chất dinh dưỡng có dataPoints = 0, không phép đo nào. Khoảng 78–90 là giữa hai giá trị đã tra thật (Ciqual 77,9 và USDA 90). Hiển thị 'chưa đủ dữ liệu' nếu ốc chiếm tỉ trọng lớn trong món.",
+    "alternatives": [
+      {
+        "external_id": "ciqual-10008",
+        "name": "Escargot, cru (Helix)",
+        "kcal_per_100g": 77.9,
+        "why_not": "Cùng vấn đề sai nhóm loài, nhưng chất lượng đo TỐT HƠN (nước/tro/béo độ tin cậy A). Không chọn để giữ trong bảng USDA"
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "oz",
+      "grams": 85,
+      "note": "Không có quy đổi theo 'con' — phải tự đo cho ốc VN",
+      "source": "FDC 167744 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "low",
+  "needs_review": true
+}

@@ -1,0 +1,60 @@
+{
+  "slug": "vung",
+  "name_vi": "Vừng (mè) nguyên vỏ, sống",
+  "name_en": "Sesame seeds, whole, dried",
+  "category": "khac",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "170150",
+    "source_url": "https://fdc.nal.usda.gov/food-details/170150/nutrients",
+    "scientific_name": "Sesamum indicum",
+    "kcal_per_100g": 573,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 17.7,
+    "fat_g": 49.7,
+    "carb_g": 23.4,
+    "fiber_g": 11.8,
+    "water_g": 4.69,
+    "sodium_mg": 11,
+    "mapping_confidence": "high",
+    "mapping_note": "Đây là dạng NGUYÊN VỎ, SỐNG — dạng mua về. USDA có 3 dạng chênh nhau đáng kể, đã TÁCH THÀNH 3 NGUYÊN LIỆU RIÊNG: `vung` (nguyên vỏ sống, 573), `vung-rang` (nguyên vỏ rang, 565), và nhân bóc vỏ 631 kcal (chưa nhập). Chênh lớn nhất ở nhân bóc vỏ: béo 61,2 so với 49,7 (+23%) vì bỏ vỏ nhiều xơ và khoáng. Muối vừng VN dùng vừng RANG → dùng `vung-rang`.",
+    "alternatives": [
+      {
+        "external_id": "169412",
+        "name": "Seeds, sesame seed kernels, dried (decorticated)",
+        "kcal_per_100g": 631,
+        "why_not": "NHÂN BÓC VỎ — thực phẩm khác hẳn về macro (béo 61,2, đạm 20,4, carb 11,7). Chỉ dùng khi công thức ghi rõ 'nhân vừng'"
+      },
+      {
+        "external_id": "170189",
+        "name": "Seeds, sesame butter, tahini",
+        "kcal_per_100g": null,
+        "why_not": "Là bơ vừng, không phải hạt"
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": 0.609,
+  "density_note": "SUY RA, kiểm chứng chéo 2 điểm KHỚP CHÍNH XÁC: cup 144/236,588 = 0,6086; muỗng canh 9/14,787 = 0,6087.",
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "cup",
+      "grams": 144,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "source": "FDC 170150 foodMeasures"
+    },
+    {
+      "unit_name": "muỗng canh",
+      "grams": 9,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "source": "FDC 170150 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

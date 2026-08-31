@@ -1,0 +1,47 @@
+{
+  "slug": "ca-ngu-van",
+  "name_vi": "Cá ngừ vằn (cá ngừ sọc dưa, sống)",
+  "name_en": "Tuna, skipjack, raw",
+  "category": "thuy-san",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "175156",
+    "source_url": "https://fdc.nal.usda.gov/food-details/175156/nutrients",
+    "scientific_name": "Katsuwonus pelamis (USDA ghi Euthynnus pelamis)",
+    "kcal_per_100g": 103,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 22.0,
+    "fat_g": 1.01,
+    "carb_g": 0.0,
+    "fiber_g": 0.0,
+    "water_g": 70.6,
+    "sodium_mg": null,
+    "mapping_confidence": "high",
+    "mapping_note": "Đúng loài cá ngừ vằn VN hay dùng. CẢNH BÁO: KHÔNG dùng dòng này cho 'cá ngừ đại dương' (cá ngừ vây vàng, Thunnus albacares) hay cá ngừ bò/chù — khác chi, lipid khác hẳn. Nếu công thức ghi 'cá ngừ đại dương' phải tạo nguyên liệu riêng; mẻ này chưa tra dòng đó.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "phi lê",
+      "grams": 198,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "source": "FDC 175156 foodMeasures"
+    },
+    {
+      "unit_name": "oz",
+      "grams": 85,
+      "note": null,
+      "source": "FDC 175156 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

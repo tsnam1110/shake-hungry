@@ -1,0 +1,39 @@
+{
+  "slug": "bun-tuoi",
+  "name_vi": "Bún tươi",
+  "name_en": "Rice vermicelli, fresh",
+  "category": "tinh-bot",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "168914",
+    "source_url": "https://fdc.nal.usda.gov/food-details/168914/nutrients",
+    "scientific_name": null,
+    "kcal_per_100g": 108,
+    "kcal_min": 87,
+    "kcal_max": 108,
+    "protein_g": 1.79,
+    "fat_g": 0.2,
+    "carb_g": 24.0,
+    "fiber_g": 1.0,
+    "water_g": 73.8,
+    "mapping_confidence": "low",
+    "mapping_note": "DÙNG CHUNG một bản ghi với 'banh-pho-tuoi' vì USDA không tách sợi dẹt và sợi tròn — đây là điểm yếu phải biết, đừng để nó trông như hai phép đo độc lập. Bún tươi VN là bún ép đùn từ bột gạo lên men nhẹ rồi luộc, khác quy trình với sợi khô luộc lại. Ciqual 9901 'Vermicelle de riz, cuite' = 86,6 kcal, protein 1,43, carb 20,1, nước 77,8% — khớp NGỮ NGHĨA tốt hơn (đúng 'vermicelli') nhưng đổi sang sẽ trộn nguồn, vi phạm QT-4 nếu cùng món với nguyên liệu USDA.",
+    "alternatives": []
+  },
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "cup",
+      "grams": 176,
+      "note": "sợi đã nấu",
+      "source": "FDC 168914 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "low",
+  "needs_review": true
+}

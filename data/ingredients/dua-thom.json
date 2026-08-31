@@ -1,0 +1,72 @@
+{
+  "slug": "dua-thom",
+  "name_vi": "Dứa (thơm, khóm)",
+  "name_en": "Pineapple, raw",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "169124",
+    "source_url": "https://fdc.nal.usda.gov/food-details/169124/nutrients",
+    "scientific_name": "Ananas comosus",
+    "kcal_per_100g": 50,
+    "kcal_min": 45,
+    "kcal_max": 51,
+    "protein_g": 0.54,
+    "fat_g": 0.12,
+    "carb_g": 13.1,
+    "fiber_g": 1.4,
+    "water_g": 86.0,
+    "sodium_mg": null,
+    "mapping_confidence": "high",
+    "mapping_note": "Khoảng 45–51 lấy từ hai bản SR Legacy phân theo giống (CÙNG BẢNG, không phá QT-4). Dứa Queen VN (khóm, quả nhỏ, ngọt đậm) gần nhóm 'traditional varieties' (45 kcal) hơn là 'extra sweet' (MD-2, 51 kcal) — nếu cần chính xác theo vùng nên cân nhắc dùng thẳng 168193.",
+    "alternatives": [
+      {
+        "external_id": "168193",
+        "name": "Pineapple, raw, traditional varieties",
+        "kcal_per_100g": 45,
+        "why_not": "Một nhóm giống; cận dưới. Bản 'all varieties' phủ tốt hơn cho dữ liệu chung"
+      },
+      {
+        "external_id": "168194",
+        "name": "Pineapple, raw, extra sweet variety",
+        "kcal_per_100g": 51,
+        "why_not": "Giống MD-2 công nghiệp; cận trên"
+      },
+      {
+        "external_id": "2346398",
+        "name": "Pineapple, raw (Foundation)",
+        "kcal_per_100g": 60.1,
+        "why_not": "Khác bảng, năng lượng ở nutrient 2047 — phá QT-4"
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "quả",
+      "grams": 905,
+      "note": null,
+      "source": "FDC 169124 foodMeasures"
+    },
+    {
+      "unit_name": "khoanh",
+      "grams": 84,
+      "note": "đường kính 9 cm, dày 2 cm",
+      "source": "FDC 169124 foodMeasures"
+    },
+    {
+      "unit_name": "cup miếng",
+      "grams": 165,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "source": "FDC 169124 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

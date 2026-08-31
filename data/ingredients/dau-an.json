@@ -1,0 +1,59 @@
+{
+  "slug": "dau-an",
+  "name_vi": "Dầu ăn thực vật",
+  "name_en": "Vegetable oil",
+  "category": "dau-mo",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "171411",
+    "source_url": "https://fdc.nal.usda.gov/food-details/171411/nutrients",
+    "scientific_name": null,
+    "kcal_per_100g": 884,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 0.0,
+    "fat_g": 100.0,
+    "carb_g": 0.0,
+    "fiber_g": 0.0,
+    "water_g": null,
+    "sodium_mg": 0,
+    "mapping_confidence": "high",
+    "mapping_note": "Mọi dầu thực vật tinh luyện đều là 884 kcal / 100 g chất béo, khác nhau chỉ ở hồ sơ acid béo — không ảnh hưởng kcal. An toàn dùng chung cho dầu đậu nành, dầu cọ, dầu hướng dương, dầu ăn pha (Neptune, Simply, Tường An).",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": 0.92,
+  "density_note": "SUY RA từ USDA foodMeasures 171411, kiểm chứng chéo 3 điểm rất nhất quán: tbsp 13,6/14,7868 = 0,920; tsp 4,5/4,9289 = 0,913; cup 218/236,588 = 0,921.",
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "muỗng canh",
+      "grams": 13.6,
+      "note": "US tbsp 14,7868 ml",
+      "source": "FDC 171411 foodMeasures"
+    },
+    {
+      "unit_name": "muỗng cà phê",
+      "grams": 4.5,
+      "note": null,
+      "source": "FDC 171411 foodMeasures"
+    },
+    {
+      "unit_name": "cup",
+      "grams": 218.0,
+      "note": null,
+      "source": "FDC 171411 foodMeasures"
+    },
+    {
+      "unit_name": "muỗng canh VN",
+      "grams": 13.8,
+      "note": "muỗng canh VN 15 ml — KHÔNG phải số USDA gốc",
+      "source": "SUY RA từ density 0,92 g/ml"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

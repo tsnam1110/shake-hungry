@@ -1,0 +1,59 @@
+{
+  "slug": "muoi",
+  "name_vi": "Muối ăn",
+  "name_en": "Salt, table",
+  "category": "gia-vi",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "173468",
+    "source_url": "https://fdc.nal.usda.gov/food-details/173468/nutrients",
+    "scientific_name": null,
+    "kcal_per_100g": 0,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "carb_g": 0.0,
+    "fiber_g": 0.0,
+    "water_g": null,
+    "sodium_mg": 38800,
+    "mapping_confidence": "high",
+    "mapping_note": "Không đóng góp calo, chỉ có ý nghĩa cho trường natri. Bản Foundation 746775 'Salt, table, iodized' cho Na 38700 mg — chênh 0,3%, không đáng kể.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": 1.22,
+  "density_note": "BULK DENSITY. SUY RA, kiểm chứng chéo 3 điểm: tsp 6,0/4,9289 = 1,217; tbsp 18,0/14,7868 = 1,217; cup 292/236,588 = 1,234. LƯU Ý muối hạt to (muối biển thô) có bulk density THẤP hơn muối bột — không dùng chung con số này.",
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "muỗng cà phê",
+      "grams": 6.0,
+      "note": null,
+      "source": "FDC 173468 foodMeasures"
+    },
+    {
+      "unit_name": "muỗng canh",
+      "grams": 18.0,
+      "note": null,
+      "source": "FDC 173468 foodMeasures"
+    },
+    {
+      "unit_name": "cup",
+      "grams": 292.0,
+      "note": null,
+      "source": "FDC 173468 foodMeasures"
+    },
+    {
+      "unit_name": "nhúm",
+      "grams": 0.4,
+      "note": null,
+      "source": "FDC 173468 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

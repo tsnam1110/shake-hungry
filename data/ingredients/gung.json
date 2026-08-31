@@ -1,0 +1,47 @@
+{
+  "slug": "gung",
+  "name_vi": "Gừng",
+  "name_en": "Ginger root, raw",
+  "category": "gia-vi",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "169231",
+    "source_url": "https://fdc.nal.usda.gov/food-details/169231/nutrients",
+    "scientific_name": "Zingiber officinale",
+    "kcal_per_100g": 80,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 1.82,
+    "fat_g": 0.75,
+    "carb_g": 17.8,
+    "fiber_g": 2.0,
+    "water_g": 78.9,
+    "sodium_mg": 13,
+    "mapping_confidence": "high",
+    "mapping_note": "Loài khớp. Nước có min/max THẬT (70,4–84,6 g, dataPoints 5) → biến thiên tự nhiên đáng kể, nên kcal cũng nên hiển thị dạng khoảng khi lên món.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "muỗng cà phê băm",
+      "grams": 2,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "source": "FDC 169231 foodMeasures"
+    },
+    {
+      "unit_name": "lát",
+      "grams": 2.2,
+      "note": "suy từ 5 lát đường kính 2,5 cm = 11 g. CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "source": "FDC 169231 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

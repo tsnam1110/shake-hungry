@@ -1,0 +1,49 @@
+{
+  "slug": "tom-su",
+  "name_vi": "Tôm sú (bỏ vỏ, sống)",
+  "name_en": "Shrimp, raw",
+  "category": "thuy-san",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "175179",
+    "source_url": "https://fdc.nal.usda.gov/food-details/175179/nutrients",
+    "scientific_name": "Penaeus monodon (USDA không ghi rõ loài)",
+    "kcal_per_100g": 85,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 20.1,
+    "fat_g": 0.51,
+    "carb_g": 0,
+    "fiber_g": null,
+    "water_g": null,
+    "mapping_confidence": "medium",
+    "mapping_note": "USDA không tách riêng Penaeus monodon; 175179 là bản ghi tôm sống chung (NDB 15270), không có scientificName. fiber = null vì USDA KHÔNG đo cho bản ghi này — KHÔNG được thay bằng 0 (null nghĩa là 'không biết', 0 nghĩa là 'biết chắc bằng 0'). Không chọn 174210 'shrimp, mixed species, raw (may contain additives to retain moisture)' = 71 kcal / 13,6 P vì mô tả nói rõ có phụ gia giữ ẩm nên bị pha loãng. Không chọn Foundation 2684443 'shrimp, farm raised, raw' = 71 kcal / 15,6 P để giữ đồng bộ SR Legacy theo QT-4. Đối chiếu Ciqual 10021 'Shrimp or prawn, raw' = 99 kcal / 19,7 P / 0,84 F và Ciqual 10062 'Tropical tiger prawn, boiled' (đúng tôm sú, đã luộc) = 101 kcal / 22,6 P — protein ~20 g khớp.",
+    "alternatives": []
+  },
+  "density_g_per_ml": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "units": [
+    {
+      "unit_name": "con lớn",
+      "grams": 28,
+      "note": "bản ghi khác bản ghi dinh dưỡng, chỉ dùng cho quy đổi khối lượng",
+      "source": "FDC 174210 foodMeasures"
+    },
+    {
+      "unit_name": "con vừa",
+      "grams": 6,
+      "note": "như trên",
+      "source": "FDC 174210 foodMeasures"
+    },
+    {
+      "unit_name": "con nhỏ",
+      "grams": 5,
+      "note": "như trên",
+      "source": "FDC 174210 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "medium",
+  "needs_review": true
+}

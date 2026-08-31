@@ -1,0 +1,46 @@
+{
+  "slug": "thit-lon-nac-vai",
+  "name_vi": "Thịt lợn nạc vai (sống)",
+  "name_en": "Pork shoulder (Boston butt), lean and fat, raw",
+  "category": "thit",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "167849",
+    "source_url": "https://fdc.nal.usda.gov/food-details/167849/nutrients",
+    "scientific_name": null,
+    "kcal_per_100g": 186,
+    "kcal_min": 132,
+    "kcal_max": 186,
+    "protein_g": 17.4,
+    "fat_g": 12.4,
+    "carb_g": 0.0,
+    "fiber_g": 0.0,
+    "water_g": null,
+    "mapping_confidence": "medium",
+    "mapping_note": "Nạc vai VN = vai lợn còn dính mỡ giắt, tương ứng Boston butt 'separable lean and fat'. Nếu công thức ghi 'nạc vai lọc sạch mỡ' thì PHẢI đổi sang dòng 168260 (132 kcal) — chênh 54 kcal/100g. Đã loại các dòng 'with added solution' (168365, 168363) vì đó là thịt bơm dung dịch muối phosphate, không có ở chợ VN.",
+    "alternatives": [
+      {
+        "external_id": "168260",
+        "name": "Pork shoulder, separable lean only, raw",
+        "kcal_per_100g": 132,
+        "why_not": "Dùng khi công thức ghi rõ đã lọc sạch mỡ (protein 18,7 / fat 5,71)"
+      }
+    ]
+  },
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "miếng vai lọc xương",
+      "grams": 288,
+      "note": "CẢNH BÁO: kích cỡ miếng của Mỹ, KHÔNG dùng cho khẩu phần VN",
+      "source": "FDC 167849 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "medium",
+  "needs_review": true
+}

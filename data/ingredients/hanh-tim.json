@@ -1,0 +1,41 @@
+{
+  "slug": "hanh-tim",
+  "name_vi": "Hành tím (hành khô, sống)",
+  "name_en": "Shallots, raw",
+  "category": "gia-vi",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "170499",
+    "source_url": "https://fdc.nal.usda.gov/food-details/170499/nutrients",
+    "scientific_name": "Allium cepa var. aggregatum",
+    "kcal_per_100g": 72,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 2.5,
+    "fat_g": 0.1,
+    "carb_g": 16.8,
+    "fiber_g": 3.2,
+    "water_g": null,
+    "sodium_mg": 12,
+    "mapping_confidence": "medium",
+    "mapping_note": "Shallot phương Tây và hành tím Việt (hành tím Vĩnh Châu) cùng loài nhưng củ Việt nhỏ và khô hơn, hàm lượng nước có thể thấp hơn → giá trị/100g thực tế có thể CAO hơn dòng USDA. Bản Foundation 2727586 cho protein 1,38 (thấp hơn hẳn 2,5) và không có kcal — chênh gần 2 lần giữa hai bản USDA cho thấy dòng này vốn không ổn định. QUAN TRỌNG: đây là hành tím SỐNG. HÀNH PHI (chiên ngập dầu) là nguyên liệu KHÁC, kcal cao hơn nhiều do ngấm dầu và mất nước — phải tạo bản ghi riêng, KHÔNG suy từ đây.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "muỗng canh băm",
+      "grams": 10.0,
+      "note": null,
+      "source": "FDC 170499 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "medium",
+  "needs_review": true
+}

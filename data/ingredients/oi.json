@@ -1,0 +1,48 @@
+{
+  "slug": "oi",
+  "name_vi": "Ổi",
+  "name_en": "Guava, raw",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "173044",
+    "source_url": "https://fdc.nal.usda.gov/food-details/173044/nutrients",
+    "scientific_name": "Psidium guajava",
+    "kcal_per_100g": 68,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 2.55,
+    "fat_g": 0.95,
+    "carb_g": 14.3,
+    "fiber_g": 5.4,
+    "water_g": 80.8,
+    "sodium_mg": null,
+    "mapping_confidence": "medium",
+    "mapping_note": "Đúng loài nhưng bản ghi chỉ dựa trên 2 mẫu (dataPoints=2 cho nước/đạm/béo) — nền mẫu rất mỏng. USDA lấy mẫu ổi RUỘT HỒNG; ổi VN phổ biến là ruột trắng (ổi xá lị, ổi nữ hoàng), giòn và ít ngọt hơn. Chất xơ 5,4 g rất cao vì tính CẢ HẠT, mà người Việt thường bỏ hạt ổi xá lị.",
+    "alternatives": [
+      {
+        "external_id": "173045",
+        "name": "Guavas, strawberry, raw",
+        "kcal_per_100g": 69,
+        "why_not": "Khác loài (Psidium cattleianum — ổi dâu), không trồng phổ biến ở VN"
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "quả",
+      "grams": 55,
+      "note": "phần ăn được",
+      "source": "FDC 173044 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "medium",
+  "needs_review": true
+}

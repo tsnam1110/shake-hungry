@@ -1,0 +1,47 @@
+{
+  "slug": "hung-que",
+  "name_vi": "Húng quế",
+  "name_en": "Basil, fresh",
+  "category": "rau-gia-vi",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "172232",
+    "source_url": "https://fdc.nal.usda.gov/food-details/172232/nutrients",
+    "scientific_name": "Ocimum basilicum",
+    "kcal_per_100g": 23,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 3.15,
+    "fat_g": 0.64,
+    "carb_g": 2.65,
+    "fiber_g": 1.6,
+    "water_g": 92.1,
+    "sodium_mg": null,
+    "mapping_confidence": "medium",
+    "mapping_note": "ĐÃ KIỂM: USDA KHÔNG có bản ghi Thai basil (truy vấn 'Thai basil' với requireAllWords=true trả 0 kết quả). Dòng 172232 là húng tây (sweet basil, giống Genovese) — CÙNG LOÀI Ocimum basilicum với húng quế VN nhưng KHÁC GIỐNG (húng quế VN là var. thyrsiflora, thân tím, vị hồi). Cùng loài nên chấp nhận làm proxy, nhưng không phải cùng thứ rau. Đây là mục rủi ro cao nhất trong nhóm này — ưu tiên thay khi có nguồn VN.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "lá",
+      "grams": 0.5,
+      "note": "suy từ 5 lá = 2,5 g. CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam — lá sweet basil to hơn lá húng quế VN",
+      "source": "FDC 172232 foodMeasures"
+    },
+    {
+      "unit_name": "cup lá nguyên",
+      "grams": 24.0,
+      "note": "suy từ 1/4 cup = 6 g",
+      "source": "FDC 172232 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "medium",
+  "needs_review": true
+}

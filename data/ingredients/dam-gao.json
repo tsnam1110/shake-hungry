@@ -1,0 +1,60 @@
+{
+  "slug": "dam-gao",
+  "name_vi": "Dấm gạo",
+  "name_en": "Rice vinegar",
+  "category": "gia-vi",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "172237",
+    "source_url": "https://fdc.nal.usda.gov/food-details/172237/nutrients",
+    "scientific_name": null,
+    "kcal_per_100g": 18,
+    "kcal_min": 0,
+    "kcal_max": 33,
+    "protein_g": 0,
+    "fat_g": 0,
+    "carb_g": null,
+    "fiber_g": null,
+    "water_g": null,
+    "sodium_mg": 2,
+    "mapping_confidence": "low",
+    "mapping_note": "KHÔNG có dấm gạo trong SR Legacy/Foundation ('vinegar' chỉ ra balsamic / cider / distilled / red wine). QUYẾT ĐỊNH BIÊN SOẠN: dùng 'Vinegar, distilled' (172237, 18 kcal — GIÁ TRỊ ĐO THẬT trong cùng bảng) làm proxy, thay vì lấy nhãn thương mại. ⚠️ VÌ SAO KHÔNG DÙNG NHÃN: nhãn PATCHUN (GTIN 4891434202650, 'WATER, GLUTINOUS RICE, dilute to 5% acidity') khai 0 kcal cho khẩu phần 15 ml — đó là LÀM TRÒN NHÃN, không phải 0 thật: 21 CFR 101.9(c)(1) cho phép khai 0 khi dưới 5 kcal/khẩu phần. Toàn bộ 7.538 bản ghi Branded 'rice vinegar' đều khai 0 theo cùng cách. Cận trên 33 kcal/100ml suy từ ngưỡng 5 kcal/15 ml. Dấm gạo có đường sót từ gạo nếp nên thực tế có thể cao hơn dấm cất đôi chút.",
+    "alternatives": [
+      {
+        "external_id": "173469",
+        "name": "Vinegar, cider (SR Legacy)",
+        "kcal_per_100g": 21,
+        "why_not": "Dấm táo, khác nguyên liệu"
+      },
+      {
+        "external_id": "501396",
+        "name": "KC CENTRAL TRADING RICE VINEGAR",
+        "kcal_per_100g": 200,
+        "why_not": "Thành phần có 'SUGAR, SALT, KELP EXTRACT' → đây là dấm sushi ĐÃ NÊM (carb 53,3 g, Na 4.730 mg), không phải dấm gạo trơn"
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": 1.01,
+  "density_note": "SUY RA từ SR Legacy 'Vinegar, distilled' 172237, KIỂM CHỨNG CHÉO 3 portion độc lập: muỗng canh 14,9/14,787 = 1,008; muỗng cà phê 5,0/4,929 = 1,014; cup 238/236,588 = 1,006. Bản 'Vinegar, cider' 173469 cho 1,008/1,014/1,010 — trùng khớp. KHÔNG phải số đo trực tiếp trên dấm gạo.",
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "muỗng canh",
+      "grams": 14.9,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "source": "FDC 172237 foodMeasures"
+    },
+    {
+      "unit_name": "muỗng cà phê",
+      "grams": 5.0,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "source": "FDC 172237 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "low",
+  "needs_review": true
+}

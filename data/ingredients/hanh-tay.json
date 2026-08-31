@@ -1,0 +1,61 @@
+{
+  "slug": "hanh-tay",
+  "name_vi": "Hành tây (sống)",
+  "name_en": "Onion, raw",
+  "category": "rau-cu",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "170000",
+    "source_url": "https://fdc.nal.usda.gov/food-details/170000/nutrients",
+    "scientific_name": "Allium cepa",
+    "kcal_per_100g": 40,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 1.1,
+    "fat_g": 0.1,
+    "carb_g": 9.34,
+    "fiber_g": 1.7,
+    "water_g": null,
+    "mapping_confidence": "high",
+    "mapping_note": "scientificName = 'Allium cepa'. Đây là hành tây chung. USDA có bản ghi riêng cho hành tây đỏ (790577), trắng (1104962), vàng (790646) nếu sau này cần tách.",
+    "alternatives": []
+  },
+  "density_g_per_ml": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "units": [
+    {
+      "unit_name": "củ vừa",
+      "grams": 110,
+      "note": "đường kính 2-1/2 inch",
+      "source": "FDC 170000 foodMeasures"
+    },
+    {
+      "unit_name": "củ nhỏ",
+      "grams": 70,
+      "note": null,
+      "source": "FDC 170000 foodMeasures"
+    },
+    {
+      "unit_name": "củ lớn",
+      "grams": 150,
+      "note": null,
+      "source": "FDC 170000 foodMeasures"
+    },
+    {
+      "unit_name": "cup thái nhỏ",
+      "grams": 160,
+      "note": null,
+      "source": "FDC 170000 foodMeasures"
+    },
+    {
+      "unit_name": "muỗng canh thái nhỏ",
+      "grams": 10,
+      "note": null,
+      "source": "FDC 170000 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

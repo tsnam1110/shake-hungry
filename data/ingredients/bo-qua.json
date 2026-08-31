@@ -1,0 +1,66 @@
+{
+  "slug": "bo-qua",
+  "name_vi": "Bơ (quả bơ)",
+  "name_en": "Avocado, raw",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "171705",
+    "source_url": "https://fdc.nal.usda.gov/food-details/171705/nutrients",
+    "scientific_name": "Persea americana",
+    "kcal_per_100g": 160,
+    "kcal_min": 120,
+    "kcal_max": 167,
+    "protein_g": 2.0,
+    "fat_g": 14.7,
+    "carb_g": 8.53,
+    "fiber_g": 6.7,
+    "water_g": 73.2,
+    "sodium_mg": null,
+    "mapping_confidence": "medium",
+    "mapping_note": "BIẾN THIÊN RẤT LỚN THEO GIỐNG — chênh gần 2 lần. Bơ Florida (giống Tây Ấn, nhiều nước) 120 kcal / 10,1 g béo; bơ California (Hass) 167 kcal / 15,4 g béo. Bơ sáp VN (bơ 034, bơ booth) thuộc nhóm béo cao, GẦN HASS hơn — nếu món dùng bơ sáp thì 160–167 hợp lý hơn 120. Bản Foundation Hass thậm chí cho 223 kcal, chênh 39% so với bản California cùng giống — cần điều tra trước khi dùng. Đây là mục nên cân nhắc tách bản ghi riêng.",
+    "alternatives": [
+      {
+        "external_id": "171706",
+        "name": "Avocados, raw, California",
+        "kcal_per_100g": 167,
+        "why_not": "Bản theo giống; cận trên. Thực tế gần bơ sáp VN nhất trong SR Legacy"
+      },
+      {
+        "external_id": "171707",
+        "name": "Avocados, raw, Florida",
+        "kcal_per_100g": 120,
+        "why_not": "Giống Tây Ấn nhiều nước, ít gặp ở VN; cận dưới"
+      },
+      {
+        "external_id": "2710824",
+        "name": "Avocado, Hass, peeled, raw (Foundation)",
+        "kcal_per_100g": 223,
+        "why_not": "Khác bảng — phá QT-4. Chênh 39% so với bản California cùng giống Hass; cần điều tra"
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "quả",
+      "grams": 201,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam — không rõ Florida hay California",
+      "source": "FDC 171705 foodMeasures"
+    },
+    {
+      "unit_name": "cup thái khối",
+      "grams": 150,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "source": "FDC 171705 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "medium",
+  "needs_review": true
+}

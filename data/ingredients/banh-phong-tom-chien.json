@@ -1,0 +1,41 @@
+{
+  "slug": "banh-phong-tom-chien",
+  "name_vi": "Bánh phồng tôm (đã chiên)",
+  "name_en": "Shrimp cracker, fried",
+  "category": "khac",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "173160",
+    "source_url": "https://fdc.nal.usda.gov/food-details/173160/nutrients",
+    "scientific_name": null,
+    "kcal_per_100g": 426,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 7.14,
+    "fat_g": 17.9,
+    "carb_g": 59.1,
+    "fiber_g": 5.6,
+    "water_g": 13.6,
+    "sodium_mg": 571,
+    "mapping_confidence": "medium",
+    "mapping_note": "TÁCH RIÊNG khỏi bản sống (`banh-phong-tom-song`, 357 kcal, béo 0). Chênh khoảng 69 kcal/100g đến HOÀN TOÀN từ dầu ngấm khi chiên — dùng nhầm bản sống cho món đã chiên sẽ hụt khoảng 16% năng lượng. ⚠️ Hạ xuống medium vì TOÀN BỘ chất dinh dưỡng của bản ghi này có derivation 'Estimated formulation based on ingredient list; Linear program used to estimate ingredients' — USDA SUY từ danh sách nguyên liệu bằng quy hoạch tuyến tính, KHÔNG phân tích mẫu. Riêng đường tổng 21,4 g/100g có vẻ cao bất thường cho bánh phồng tôm, càng củng cố nghi ngờ.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": true,
+  "units": [
+    {
+      "unit_name": "khẩu phần",
+      "grams": 28,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam — USDA không cho số miếng, phải tự cân nếu cần",
+      "source": "FDC 173160 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "medium",
+  "needs_review": true
+}

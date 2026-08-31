@@ -1,0 +1,48 @@
+{
+  "slug": "thit-vit-khong-da",
+  "name_vi": "Thịt vịt không da (sống)",
+  "name_en": "Duck, meat only, raw",
+  "category": "thit",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "172410",
+    "source_url": "https://fdc.nal.usda.gov/food-details/172410/nutrients",
+    "scientific_name": null,
+    "kcal_per_100g": 135,
+    "kcal_min": 127,
+    "kcal_max": 135,
+    "protein_g": 18.3,
+    "fat_g": 5.95,
+    "carb_g": 0.94,
+    "fiber_g": 0.0,
+    "water_g": 73.8,
+    "sodium_mg": 74,
+    "mapping_confidence": "high",
+    "mapping_note": "Bỏ da thì khác biệt giống vịt gần như biến mất — đây là mục đáng tin nhất trong nhóm gia cầm. ⚠️ NHƯNG: USDA 135 kcal và Ciqual 36201 (127 kcal) có đạm 18,3 / béo 5,95 / nước 73,8 GIỐNG HỆT nhau — Ciqual mượn số USDA, chênh 8 kcal chỉ do EU không tính 0,94 g glucid vào năng lượng. ĐỪNG coi hai nguồn này là hai xác nhận độc lập; nó là một.",
+    "alternatives": [
+      {
+        "external_id": "ciqual-36201",
+        "name": "Canard, viande crue (Ciqual)",
+        "kcal_per_100g": 127,
+        "why_not": "CÙNG bộ số gốc với USDA, chỉ khác công thức năng lượng EU 1169/2011 — không phải xác nhận độc lập"
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "nửa con",
+      "grams": 303,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam — phần thịt nạc",
+      "source": "FDC 172410 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

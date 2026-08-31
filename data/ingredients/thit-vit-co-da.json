@@ -1,0 +1,54 @@
+{
+  "slug": "thit-vit-co-da",
+  "name_vi": "Thịt vịt có da (sống)",
+  "name_en": "Duck, meat and skin, raw",
+  "category": "thit",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "172408",
+    "source_url": "https://fdc.nal.usda.gov/food-details/172408/nutrients",
+    "scientific_name": "Anas platyrhynchos",
+    "kcal_per_100g": 404,
+    "kcal_min": 211,
+    "kcal_max": 404,
+    "protein_g": 11.5,
+    "fat_g": 39.3,
+    "carb_g": 0.0,
+    "fiber_g": 0.0,
+    "water_g": 48.5,
+    "sodium_mg": 63,
+    "mapping_confidence": "low",
+    "mapping_note": "⚠️ MỤC RỦI RO NHẤT MẺ NÀY. Dòng USDA là vịt Pekin nuôi công nghiệp Mỹ — 39,3 g mỡ/100g, nước chỉ 48,5 g, tức GẦN NỬA khối lượng là mỡ dưới da. Vịt cỏ / vịt bầu VN nạc hơn hẳn. Ba nguồn cho ba con số rất khác nhau cho cùng mô tả 'meat and skin, raw': USDA nuôi 404, Ciqual 273, USDA vịt trời 211 — CHÊNH 193 kcal/100g. KHÔNG dùng một con số đơn; dùng khoảng 211–404, confidence thấp, hoặc chờ cân đo vịt VN thực tế. LƯU Ý LOÀI: Anas platyrhynchos = vịt cỏ/vịt bầu; VỊT XIÊM (ngan) là Cairina moschata — KHÔNG dùng dòng này cho ngan.",
+    "alternatives": [
+      {
+        "external_id": "174468",
+        "name": "Duck, wild, meat and skin, raw",
+        "kcal_per_100g": 211,
+        "why_not": "Vịt trời, mỡ 15,2 g — nạc hơn vịt nuôi VN. Cận dưới"
+      },
+      {
+        "external_id": "ciqual-36204",
+        "name": "Canard, viande et peau crues (Ciqual)",
+        "kcal_per_100g": 273,
+        "why_not": "Vịt Pháp, mỡ 22,6 g, độ tin cậy Ciqual A cho đạm/béo. Không chọn làm chính vì QT-4, NHƯNG có thể là con số hợp lý nhất cho vịt VN"
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "nửa con",
+      "grams": 634,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam — vịt Pekin khoảng 2,5 kg; vịt cỏ VN thường 1,2–1,8 kg/con",
+      "source": "FDC 172408 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "low",
+  "needs_review": true
+}

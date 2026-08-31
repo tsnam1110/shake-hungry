@@ -1,0 +1,54 @@
+{
+  "slug": "bo-dong-vat",
+  "name_vi": "Bơ động vật (bơ lạt)",
+  "name_en": "Butter, unsalted",
+  "category": "dau-mo",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "173430",
+    "source_url": "https://fdc.nal.usda.gov/food-details/173430/nutrients",
+    "scientific_name": null,
+    "kcal_per_100g": 717,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 0.85,
+    "fat_g": 81.1,
+    "carb_g": 0.06,
+    "fiber_g": 0.0,
+    "water_g": 16.2,
+    "sodium_mg": 11,
+    "mapping_confidence": "high",
+    "mapping_note": "Bơ MẶN là bản ghi khác — nếu công thức dùng bơ mặn thì natri khác hàng trăm mg, phải tra riêng.",
+    "alternatives": [
+      {
+        "external_id": "172344",
+        "name": "Butter, light, stick, without salt",
+        "kcal_per_100g": null,
+        "why_not": "Bơ giảm béo, không phải bơ thường"
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": 0.96,
+  "density_note": "SUY RA, kiểm chứng chéo 3 điểm: muỗng canh 14,2 → 0,9603; cup 227 → 0,9595; stick 113 g (= 1/2 cup) → 0,9553. Bơ là chất RẮN nên đây là khối lượng riêng khi cắt theo khuôn, KHÔNG dùng cho bơ đun chảy.",
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "muỗng canh",
+      "grams": 14.2,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "source": "FDC 173430 foodMeasures"
+    },
+    {
+      "unit_name": "miếng vuông nhỏ",
+      "grams": 5,
+      "note": "1 inch vuông, dày 1/3 inch",
+      "source": "FDC 173430 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

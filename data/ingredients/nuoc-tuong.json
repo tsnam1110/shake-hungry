@@ -1,0 +1,66 @@
+{
+  "slug": "nuoc-tuong",
+  "name_vi": "Nước tương (xì dầu)",
+  "name_en": "Soy sauce (shoyu)",
+  "category": "gia-vi",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "174277",
+    "source_url": "https://fdc.nal.usda.gov/food-details/174277/nutrients",
+    "scientific_name": null,
+    "kcal_per_100g": 53,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 8.14,
+    "fat_g": 0.57,
+    "carb_g": 4.93,
+    "fiber_g": 0.8,
+    "water_g": null,
+    "sodium_mg": 5490,
+    "mapping_confidence": "medium",
+    "mapping_note": "Shoyu (đậu nành + lúa mì) là loại gần nhất với xì dầu phổ thông bán tại VN. Nếu món dùng TƯƠNG đậu nành lên men kiểu Việt (tương Bần, tương Cự Đà) thì KHÔNG dùng dòng này — đó là sản phẩm khác hẳn, USDA không có, phải tạo nguyên liệu riêng.",
+    "alternatives": [
+      {
+        "external_id": "174278",
+        "name": "Soy sauce, tamari (thuần đậu nành, không lúa mì)",
+        "kcal_per_100g": 60,
+        "why_not": "Dùng khi công thức ghi rõ tamari (protein 10,5 / Na 5590 mg)"
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": 1.08,
+  "density_note": "SUY RA từ USDA foodMeasures 174277, kiểm chứng chéo 3 điểm nhất quán: tbsp 16,0/14,7868 = 1,082; tsp 5,3/4,9289 = 1,075; cup 255/236,588 = 1,078.",
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "muỗng canh",
+      "grams": 16.0,
+      "note": null,
+      "source": "FDC 174277 foodMeasures"
+    },
+    {
+      "unit_name": "muỗng cà phê",
+      "grams": 5.3,
+      "note": null,
+      "source": "FDC 174277 foodMeasures"
+    },
+    {
+      "unit_name": "cup",
+      "grams": 255.0,
+      "note": null,
+      "source": "FDC 174277 foodMeasures"
+    },
+    {
+      "unit_name": "gói lẻ",
+      "grams": 8.9,
+      "note": null,
+      "source": "FDC 174277 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "medium",
+  "needs_review": true
+}

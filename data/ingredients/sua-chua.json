@@ -1,0 +1,60 @@
+{
+  "slug": "sua-chua",
+  "name_vi": "Sữa chua không đường",
+  "name_en": "Yogurt, plain, whole milk",
+  "category": "khac",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "171284",
+    "source_url": "https://fdc.nal.usda.gov/food-details/171284/nutrients",
+    "scientific_name": null,
+    "kcal_per_100g": 61,
+    "kcal_min": 61,
+    "kcal_max": 78,
+    "protein_g": 3.47,
+    "fat_g": 3.25,
+    "carb_g": 4.66,
+    "fiber_g": 0.0,
+    "water_g": 87.9,
+    "sodium_mg": 46,
+    "mapping_confidence": "high",
+    "mapping_note": "⚠️ CHÊNH LỆCH LỚN GIỮA HAI BẢN USDA CÙNG ndbNumber 1116: SR Legacy 61 kcal (nước 87,9, béo 3,25) so với Foundation 78 kcal (nước 85,3, béo 4,48) — chênh 28%. Bản Foundation lấy mẫu sữa chua Mỹ hiện đại đặc hơn. Chọn SR Legacy vì có nutrient 1008 và gần sữa chua VN kiểu loãng hơn; khoảng ghi cả hai. Nếu dự án chuẩn hoá theo Foundation thì phải đổi cả ba macro.",
+    "alternatives": [
+      {
+        "external_id": "2259793",
+        "name": "Yogurt, plain, whole milk (Foundation)",
+        "kcal_per_100g": 78,
+        "why_not": "Nước thấp hơn 2,6 điểm phần trăm, béo cao hơn 38%. Ghi vào cận trên thay vì chọn làm chính"
+      },
+      {
+        "external_id": "2259794",
+        "name": "Yogurt, Greek, plain, whole milk (Foundation)",
+        "kcal_per_100g": 94,
+        "why_not": "Sữa chua Hy Lạp đã tách whey, đạm 8,78 g gấp 2,5 lần — khác hẳn sữa chua VN"
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": 1.036,
+  "density_note": "SUY RA, CHỈ MỘT ĐIỂM: cup 245/236,588 = 1,0356. Ba measure còn lại là 'container 8/6/4 oz' tính theo khối lượng nên không dùng quy đổi thể tích được. Không có điểm kiểm chứng chéo — độ tin cậy trung bình.",
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "cup",
+      "grams": 245,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "source": "FDC 171284 foodMeasures"
+    },
+    {
+      "unit_name": "hũ 100 g",
+      "grams": 100,
+      "note": "dùng thẳng, không cần quy đổi",
+      "source": "đơn vị khối lượng của VN"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

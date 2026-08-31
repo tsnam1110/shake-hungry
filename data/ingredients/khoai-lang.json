@@ -1,0 +1,45 @@
+{
+  "slug": "khoai-lang",
+  "name_vi": "Khoai lang (sống)",
+  "name_en": "Sweet potato, raw",
+  "category": "rau-cu",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "168482",
+    "source_url": "https://fdc.nal.usda.gov/food-details/168482/nutrients",
+    "scientific_name": null,
+    "kcal_per_100g": 86,
+    "kcal_min": 81,
+    "kcal_max": 86,
+    "protein_g": 1.57,
+    "fat_g": 0.05,
+    "carb_g": 20.1,
+    "fiber_g": 3.0,
+    "water_g": 77.3,
+    "mapping_confidence": "medium",
+    "mapping_note": "Dòng USDA là khoai lang ruột cam giống Mỹ. Khoai lang VN phổ biến là ruột vàng nhạt (Hoàng Long), ruột tím (Vĩnh Long), khoai mật — khác nhau nhiều về hàm lượng đường và tinh bột, giá trị này KHÔNG đại diện cho chúng. Đối chứng Ciqual 4101 = 81,2 kcal, carb 17,1 (thấp hơn 15% vì Ciqual đo glucid trực tiếp còn USDA tính by-difference). Fibre của USDA chỉ dựa trên 1 mẫu (dataPoints=1) → độ tin cậy thấp.",
+    "alternatives": []
+  },
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "củ",
+      "grams": 130,
+      "note": "dài khoảng 12,7 cm",
+      "source": "FDC 168482 foodMeasures"
+    },
+    {
+      "unit_name": "cup thái khối",
+      "grams": 133,
+      "note": null,
+      "source": "FDC 168482 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "medium",
+  "needs_review": true
+}

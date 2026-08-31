@@ -1,0 +1,58 @@
+{
+  "slug": "thit-ga-co-da",
+  "name_vi": "Thịt gà có da (sống, bỏ xương)",
+  "name_en": "Chicken, broilers or fryers, meat and skin, raw",
+  "category": "thit",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "171447",
+    "source_url": "https://fdc.nal.usda.gov/food-details/171447/nutrients",
+    "scientific_name": null,
+    "kcal_per_100g": 215,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 18.6,
+    "fat_g": 15.1,
+    "carb_g": 0.0,
+    "fiber_g": 0.0,
+    "water_g": null,
+    "mapping_confidence": "medium",
+    "mapping_note": "Giá trị tổng hợp cả con gà công nghiệp (broiler/fryer), thịt + da, đã bỏ xương — đúng cho gà luộc chặt miếng, gà kho. Nếu món chỉ dùng một phần cụ thể thì số lệch rất mạnh: ức có da 172 kcal, đùi có da 221, lườn có da 237, lưng có da 319, RIÊNG DA GÀ 440 kcal. Gà ta VN nuôi thả thường ít mỡ dưới da hơn broiler Mỹ nên 215 có thể là cận trên — nhưng KHÔNG có số đo cho gà ta, không suy đoán.",
+    "alternatives": [
+      {
+        "external_id": "172855",
+        "name": "Chicken skin (drumsticks and thighs), raw",
+        "kcal_per_100g": 440,
+        "why_not": "Chỉ da — dùng khi công thức tách riêng da (fat 44,2)"
+      },
+      {
+        "external_id": "171474",
+        "name": "Chicken breast, meat and skin, raw",
+        "kcal_per_100g": 172,
+        "why_not": "Chỉ ức có da"
+      }
+    ]
+  },
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "nửa con bỏ xương",
+      "grams": 460,
+      "note": null,
+      "source": "FDC 171447 foodMeasures"
+    },
+    {
+      "unit_name": "phần ăn được từ 1 lb gà nguyên con",
+      "grams": 276,
+      "note": null,
+      "source": "FDC 171447 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "medium",
+  "needs_review": true
+}

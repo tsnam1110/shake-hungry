@@ -1,0 +1,54 @@
+{
+  "slug": "bi-do",
+  "name_vi": "Bí đỏ (bí ngô, sống)",
+  "name_en": "Pumpkin, raw",
+  "category": "rau-cu",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "168448",
+    "source_url": "https://fdc.nal.usda.gov/food-details/168448/nutrients",
+    "scientific_name": "Cucurbita spp.",
+    "kcal_per_100g": 26,
+    "kcal_min": 26,
+    "kcal_max": 45,
+    "protein_g": 1.0,
+    "fat_g": 0.1,
+    "carb_g": 6.5,
+    "fiber_g": 0.5,
+    "water_g": 91.6,
+    "sodium_mg": null,
+    "mapping_confidence": "low",
+    "mapping_note": "Ô CẦN NGƯỜI DUYỆT QUYẾT ĐỊNH, KHÔNG NÊN CHỐT TỰ ĐỘNG. Bí đỏ VN phần lớn là Cucurbita moschata. Dòng 'Pumpkin, raw' của USDA chỉ ghi 'Cucurbita spp.' và thực tế là pumpkin kiểu Mỹ (nhiều nước, nhạt) = 26 kcal. Dòng cùng loài C. moschata là butternut (169295) = 45 kcal — CHÊNH 1,7 LẦN. Xơ 0,5 g của dòng này thấp bất thường so với 2,0–2,3 g ở hai dòng bí đỏ khác, càng cho thấy bản ghi yếu (toàn bộ dataPoints=0).",
+    "alternatives": [
+      {
+        "external_id": "169295",
+        "name": "Squash, winter, butternut, raw",
+        "kcal_per_100g": 45,
+        "why_not": "KHỚP LOÀI HƠN (Cucurbita moschata) nhưng là giống butternut Mỹ, chất khô cao hơn bí đỏ VN — dùng làm cận trên của khoảng"
+      },
+      {
+        "external_id": "2727578",
+        "name": "Squash, pie pumpkin, peeled, seeded, raw (Foundation)",
+        "kcal_per_100g": null,
+        "why_not": "Bản ghi Foundation KHÔNG có nutrient năng lượng nào (không 1008, không 2047/2048) — không dùng được để lấy kcal"
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "cup thái khối",
+      "grams": 116,
+      "note": null,
+      "source": "FDC 168448 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "low",
+  "needs_review": true
+}

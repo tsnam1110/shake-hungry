@@ -1,0 +1,48 @@
+{
+  "slug": "mang-tuoi",
+  "name_vi": "Măng tươi",
+  "name_en": "Bamboo shoots, raw",
+  "category": "rau-cu",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "169210",
+    "source_url": "https://fdc.nal.usda.gov/food-details/169210/nutrients",
+    "scientific_name": "Phyllostachys spp.",
+    "kcal_per_100g": 27,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 2.6,
+    "fat_g": 0.3,
+    "carb_g": 5.2,
+    "fiber_g": 2.2,
+    "water_g": 91.0,
+    "sodium_mg": null,
+    "mapping_confidence": "medium",
+    "mapping_note": "USDA dùng chi Phyllostachys (măng mai/măng trúc Đông Á). Măng tươi VN thường là măng tre/măng nứa/măng vầu — chi Bambusa, Dendrocalamus, Indosasa. Khác chi, cùng họ. Toàn bộ chất dinh dưỡng dataPoints=0 (giá trị gán). LƯU Ý BIÊN SOẠN: măng tươi VN BẮT BUỘC luộc và đổ bỏ nước luộc (khử cyanogenic glycoside); con số 'raw' này không phản ánh măng đã qua xử lý — nếu công thức dùng măng đã luộc thì nên dùng 169211.",
+    "alternatives": [
+      {
+        "external_id": "169211",
+        "name": "Bamboo shoots, cooked, boiled, drained",
+        "kcal_per_100g": null,
+        "why_not": "Không phải dạng 'tươi' nhưng ĐÂY MỚI LÀ DÒNG SÁT THỰC TẾ NẤU ĂN VN — khuyến nghị tra bổ sung thành nguyên liệu riêng"
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "cup thái lát",
+      "grams": 151,
+      "note": null,
+      "source": "FDC 169210 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "medium",
+  "needs_review": true
+}

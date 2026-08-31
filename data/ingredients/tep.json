@@ -1,0 +1,54 @@
+{
+  "slug": "tep",
+  "name_vi": "Tép (tôm nhỏ nước ngọt)",
+  "name_en": "Small freshwater shrimp",
+  "category": "thuy-san",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "175179",
+    "source_url": "https://fdc.nal.usda.gov/food-details/175179/nutrients",
+    "scientific_name": null,
+    "kcal_per_100g": 85,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 20.1,
+    "fat_g": 0.51,
+    "carb_g": 0.0,
+    "fiber_g": null,
+    "water_g": 78.4,
+    "sodium_mg": null,
+    "mapping_confidence": "low",
+    "mapping_note": "SAI PHẦN ĂN ĐƯỢC là rủi ro chính, không phải sai loài. Dòng USDA là THỊT TÔM ĐÃ BÓC VỎ; tép VN (Macrobrachium lanchesteri và các loại tép riu nước ngọt) được ăn NGUYÊN CON CẢ VỎ → tro/canxi cao hơn nhiều, protein trên 100 g thấp hơn, kcal lệch đáng kể. USDA cũng không ghi scientificName. Hiển thị dạng khoảng rộng.",
+    "alternatives": [
+      {
+        "external_id": "174210",
+        "name": "Crustaceans, shrimp, mixed species, raw (may contain additives to retain moisture)",
+        "kcal_per_100g": 71,
+        "why_not": "BẪY: dòng này có scientificName trông 'chuẩn' hơn (Penaeidae và Pandalidae) nhưng chính mô tả ghi có phụ gia giữ ẩm — nước bị đẩy lên 83,0 g, protein tụt còn 13,6 g. Là tôm ngậm nước, chênh 20% kcal"
+      },
+      {
+        "external_id": "ciqual-10021",
+        "name": "Crevette, crue",
+        "kcal_per_100g": 99,
+        "why_not": "Khác nguồn FCT. carb 3,21 g cho tôm sống là bất thường (USDA ghi 0,00) — nghi vấn phương pháp tính glucid theo hiệu số"
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "con lớn",
+      "grams": 28,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam — tép VN nhỏ hơn cả cỡ 'small' (5 g)",
+      "source": "FDC 174210 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "low",
+  "needs_review": true
+}

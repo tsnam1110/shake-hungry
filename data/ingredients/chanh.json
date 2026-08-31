@@ -1,0 +1,48 @@
+{
+  "slug": "chanh",
+  "name_vi": "Chanh",
+  "name_en": "Lime, raw",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "168155",
+    "source_url": "https://fdc.nal.usda.gov/food-details/168155/nutrients",
+    "scientific_name": "Citrus latifolia",
+    "kcal_per_100g": 30,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 0.7,
+    "fat_g": 0.2,
+    "carb_g": 10.5,
+    "fiber_g": 2.8,
+    "water_g": 88.3,
+    "sodium_mg": null,
+    "mapping_confidence": "medium",
+    "mapping_note": "KHÁC LOÀI. USDA là Citrus latifolia (chanh Persian/Tahiti — quả to, không hạt). Chanh ta VN là Citrus aurantifolia (quả nhỏ, nhiều hạt, chua gắt hơn); USDA KHÔNG có bản C. aurantifolia trong SR Legacy/Foundation. CỠ QUẢ LỆCH NHIỀU: bản USDA ghi 67 g/quả, chanh ta VN nhỏ hơn hẳn — KHÔNG dùng 67 g làm quy đổi cho chanh ta, phải tự cân. Trong món Việt chanh hầu như chỉ dùng vài gram nước cốt nên sai số kcal không đáng kể.",
+    "alternatives": [
+      {
+        "external_id": "168156",
+        "name": "Lime juice, raw",
+        "kcal_per_100g": null,
+        "why_not": "Là nước cốt, không phải quả nguyên. Hữu ích riêng cho công thức nước chấm — nên tra ở mẻ sau"
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "quả",
+      "grams": 67,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam — KHÔNG áp dụng cho chanh ta VN, phải tự cân",
+      "source": "FDC 168155 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "medium",
+  "needs_review": true
+}

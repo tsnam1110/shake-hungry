@@ -1,0 +1,43 @@
+{
+  "slug": "gia-do",
+  "name_vi": "Giá đỗ (giá đậu xanh, sống)",
+  "name_en": "Mung bean sprouts, raw",
+  "category": "rau-cu",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "169957",
+    "source_url": "https://fdc.nal.usda.gov/food-details/169957/nutrients",
+    "scientific_name": "Vigna radiata",
+    "kcal_per_100g": 30,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 3.04,
+    "fat_g": 0.18,
+    "carb_g": 5.94,
+    "fiber_g": 1.8,
+    "water_g": null,
+    "mapping_confidence": "high",
+    "mapping_note": "scientificName = 'Vigna radiata', đúng đậu xanh. CẨN THẬN: KHÔNG nhầm với 174256 'Mung beans, mature seeds, raw' (hạt đậu xanh khô, khoảng 347 kcal) — chênh hơn 11 lần.",
+    "alternatives": []
+  },
+  "density_g_per_ml": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "units": [
+    {
+      "unit_name": "cup",
+      "grams": 104,
+      "note": null,
+      "source": "FDC 169957 foodMeasures"
+    },
+    {
+      "unit_name": "gói 12 oz",
+      "grams": 340,
+      "note": null,
+      "source": "FDC 169957 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

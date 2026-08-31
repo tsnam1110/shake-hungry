@@ -1,0 +1,47 @@
+{
+  "slug": "dau-me",
+  "name_vi": "Dầu mè (dầu vừng)",
+  "name_en": "Sesame oil",
+  "category": "dau-mo",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "171016",
+    "source_url": "https://fdc.nal.usda.gov/food-details/171016/nutrients",
+    "scientific_name": null,
+    "kcal_per_100g": 884,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 0.0,
+    "fat_g": 100,
+    "carb_g": 0.0,
+    "fiber_g": 0.0,
+    "water_g": 0.0,
+    "sodium_mg": 0,
+    "mapping_confidence": "high",
+    "mapping_note": "Bản ghi USDA không phân biệt dầu mè SỐNG (ép lạnh, màu nhạt) và dầu mè RANG (toasted, màu nâu đậm, dùng làm dầu nêm trong bếp Việt/Hoa). Về năng lượng thì đồng nhất 884 kcal (100% béo) nên KHÔNG ảnh hưởng engine calo; chỉ ảnh hưởng nếu dự án về sau gắn nhãn hương vị hoặc ngũ hành.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": 0.92,
+  "density_note": "SUY RA, kiểm chứng chéo 3 điểm: muỗng canh 13,6 → 0,9197; muỗng cà phê 4,5 → 0,9130; cup 218 → 0,9214. Cả ba trong 0,913–0,921 — khớp dải chuẩn dầu thực vật ở 20°C.",
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "muỗng canh",
+      "grams": 13.6,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "source": "FDC 171016 foodMeasures"
+    },
+    {
+      "unit_name": "muỗng cà phê",
+      "grams": 4.5,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "source": "FDC 171016 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

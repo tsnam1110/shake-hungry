@@ -1,0 +1,39 @@
+{
+  "slug": "banh-mi",
+  "name_vi": "Bánh mì (ổ Việt Nam)",
+  "name_en": "Vietnamese baguette",
+  "category": "tinh-bot",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "172675",
+    "source_url": "https://fdc.nal.usda.gov/food-details/172675/nutrients",
+    "scientific_name": null,
+    "kcal_per_100g": 272,
+    "kcal_min": 272,
+    "kcal_max": 287,
+    "protein_g": 10.8,
+    "fat_g": 2.42,
+    "carb_g": 51.9,
+    "fiber_g": 2.2,
+    "water_g": 33.0,
+    "mapping_confidence": "medium",
+    "mapping_note": "Bánh mì VN khác baguette Pháp: ruột rỗng xốp hơn, vỏ mỏng giòn, công thức thường có thêm đường/bột nở/chất béo, và bột mì VN protein thấp hơn. Đối chứng Ciqual 7001 'Pain blanc (baguette)' = 287 kcal, protein 8,27. Hai nguồn lệch 5% ở kcal nhưng lệch 31% ở protein (10,8 so với 8,27) — protein của bánh mì VN nhiều khả năng gần Ciqual hơn. KHÔNG tra được khối lượng 1 ổ bánh mì VN từ nguồn trích dẫn được: USDA có 'slice = 139 g' nhưng đó là lát baguette Mỹ, cố tình KHÔNG đưa vào để tránh con số chính xác giả. Cần tự cân mẫu.",
+    "alternatives": []
+  },
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "oz",
+      "grams": 28.35,
+      "note": null,
+      "source": "FDC 172675 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "medium",
+  "needs_review": true
+}

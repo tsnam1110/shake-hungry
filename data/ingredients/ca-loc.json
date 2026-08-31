@@ -1,0 +1,30 @@
+{
+  "slug": "ca-loc",
+  "name_vi": "Cá lóc (sống)",
+  "name_en": "Snakehead / murrel, raw",
+  "category": "thuy-san",
+  "reference_food": {
+    "fct_source": null,
+    "external_id": null,
+    "source_url": null,
+    "scientific_name": "Channa striata",
+    "kcal_per_100g": null,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": null,
+    "fat_g": null,
+    "carb_g": null,
+    "fiber_g": null,
+    "water_g": null,
+    "mapping_confidence": "low",
+    "mapping_note": "KHÔNG TRA ĐƯỢC — để null theo QT-1, không đoán. Đã tìm: USDA FDC với 'snakehead', 'murrel', 'fish snakehead' trên cả 4 dataType (0 kết quả); ANSES-Ciqual với 'snakehead' (0 kết quả). Các bảng có thể có đều vướng: FAO/INFOODS ASEAN là NC (cấm theo QT-2), Bảng TPTP Việt Nam có bản quyền (không dùng — xem LEGAL-001), FNRI Philippines và Thai FCT chưa xác minh license. Có bài báo khoa học đưa số proximate (ẩm 77,2% / protein 13,9% / lipid 5,9%) nhưng phân tán rất lớn giữa cá tự nhiên và cá nuôi, không đủ tư cách làm bảng tham chiếu. VIỆC CẦN LÀM: tra nhãn sản phẩm cá lóc đóng gói, hoặc tự đo — xem DATA-PIPELINE §7.2 nguồn cấp 4–5. Món chứa cá lóc hiện hiển thị 'chưa đủ dữ liệu'.",
+    "alternatives": []
+  },
+  "density_g_per_ml": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "units": [],
+  "source": "curated",
+  "confidence": "unknown",
+  "needs_review": true
+}

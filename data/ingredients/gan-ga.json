@@ -1,0 +1,41 @@
+{
+  "slug": "gan-ga",
+  "name_vi": "Gan gà (sống)",
+  "name_en": "Chicken liver, raw",
+  "category": "thit",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "171060",
+    "source_url": "https://fdc.nal.usda.gov/food-details/171060/nutrients",
+    "scientific_name": null,
+    "kcal_per_100g": 119,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 16.9,
+    "fat_g": 4.83,
+    "carb_g": 0.73,
+    "fiber_g": 0.0,
+    "water_g": 76.5,
+    "sodium_mg": 71,
+    "mapping_confidence": "high",
+    "mapping_note": "derivation = Analytical cho đạm, béo, nước, natri (ĐO TRỰC TIẾP, không suy ra). 'all classes' đã gộp mọi loại gà nên không phải chọn giữa các dòng. Cholesterol 345 mg/100g.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "bộ gan",
+      "grams": 44,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam — gà Mỹ cỡ lớn, gan gà ta VN nhỏ hơn",
+      "source": "FDC 171060 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

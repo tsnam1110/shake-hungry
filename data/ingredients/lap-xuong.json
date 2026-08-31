@@ -1,0 +1,52 @@
+{
+  "slug": "lap-xuong",
+  "name_vi": "Lạp xưởng",
+  "name_en": "Chinese style sausage",
+  "category": "thit",
+  "reference_food": {
+    "fct_source": "usda_branded",
+    "external_id": "1863087",
+    "source_url": "https://fdc.nal.usda.gov/food-details/1863087/nutrients",
+    "scientific_name": null,
+    "kcal_per_100g": 524,
+    "kcal_min": 413,
+    "kcal_max": 524,
+    "protein_g": 21.4,
+    "fat_g": 45.2,
+    "carb_g": 9.52,
+    "fiber_g": 0.0,
+    "water_g": null,
+    "mapping_confidence": "low",
+    "mapping_note": "USDA SR Legacy/Foundation không có lạp xưởng — chỉ có trong Branded. Chọn nhãn GOLDEN MOUNTAIN vì bảng thành phần khớp công thức lạp xưởng cổ điển (có mỡ lưng và rượu nấu — đúng lạp xưởng, không phải xúc xích tiệt trùng). Các nhãn khác lệch rất nhiều nên phải dùng khoảng 413–524. Kiểm tra nội tại: 4×21,4 + 9×45,2 + 4×9,52 = 530, gần khớp 524 trên nhãn. LƯU Ý CHO ENGINE: lạp xưởng là nguyên liệu ĂN LIỀN (đã sấy chín) — KHÔNG được áp hệ số hao hụt khi nấu.",
+    "alternatives": [
+      {
+        "external_id": "2288184",
+        "name": "KAM YEN JAN, Chinese Style Sweet Sausage",
+        "kcal_per_100g": 413,
+        "why_not": "Có thêm thịt gà tách cơ học, fat 28,3 — dùng làm cận dưới"
+      },
+      {
+        "external_id": "2593440",
+        "name": "Chinese Style Sausage Links",
+        "kcal_per_100g": 211,
+        "why_not": "Nhiều khả năng là xúc xích tươi, KHÔNG phải lạp xưởng — không dùng"
+      }
+    ]
+  },
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": true,
+  "units": [
+    {
+      "unit_name": "cây",
+      "grams": 42,
+      "note": null,
+      "source": "servingSize nhãn FDC 1863087"
+    }
+  ],
+  "source": "curated",
+  "confidence": "low",
+  "needs_review": true
+}

@@ -1,0 +1,60 @@
+{
+  "slug": "rau-mui",
+  "name_vi": "Rau mùi (ngò rí)",
+  "name_en": "Coriander / cilantro leaves, raw",
+  "category": "rau-gia-vi",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "169997",
+    "source_url": "https://fdc.nal.usda.gov/food-details/169997/nutrients",
+    "scientific_name": "Coriandrum sativum",
+    "kcal_per_100g": 23,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 2.13,
+    "fat_g": 0.52,
+    "carb_g": 3.67,
+    "fiber_g": 2.8,
+    "water_g": 92.2,
+    "sodium_mg": null,
+    "mapping_confidence": "high",
+    "mapping_note": "Khớp loài chính xác, dạng lá tươi.",
+    "alternatives": [
+      {
+        "external_id": "170921",
+        "name": "Spices, coriander leaf, dried",
+        "kcal_per_100g": null,
+        "why_not": "Lá khô — hàm lượng nước khác hoàn toàn"
+      },
+      {
+        "external_id": "170922",
+        "name": "Spices, coriander seed",
+        "kcal_per_100g": null,
+        "why_not": "Hạt ngò, bộ phận khác"
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "nhánh",
+      "grams": 2.2,
+      "note": "suy từ 9 nhánh = 20 g",
+      "source": "FDC 169997 foodMeasures"
+    },
+    {
+      "unit_name": "cup",
+      "grams": 16.0,
+      "note": "suy từ 1/4 cup = 4 g",
+      "source": "FDC 169997 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

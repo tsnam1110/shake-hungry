@@ -1,0 +1,39 @@
+{
+  "slug": "mien-dong",
+  "name_vi": "Miến dong",
+  "name_en": "Cellophane / glass noodles, dry",
+  "category": "tinh-bot",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "174258",
+    "source_url": "https://fdc.nal.usda.gov/food-details/174258/nutrients",
+    "scientific_name": null,
+    "kcal_per_100g": 351,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 0.16,
+    "fat_g": 0.06,
+    "carb_g": 86.1,
+    "fiber_g": 0.5,
+    "water_g": 13.4,
+    "mapping_confidence": "medium",
+    "mapping_note": "SAI KHÁC VỀ NGUYÊN LIỆU: miến dong VN làm từ tinh bột củ dong riềng (Canna edulis), dòng USDA làm từ tinh bột đậu xanh. Không bảng nào đo miến dong riềng (đã tìm USDA + Ciqual + Canadian Nutrient File). Chấp nhận thay thế vì cả hai gần như tinh bột thuần → macro bị chi phối bởi hàm lượng tinh bột chứ không bởi loại củ. Đối chứng độc lập Ciqual 9902 = 343 kcal, lệch 2,3%. Hai nguồn độc lập khớp chặt nên nâng lên medium; vẫn KHÔNG phải high vì chưa có phép đo trên chính miến dong.",
+    "alternatives": []
+  },
+  "density_g_per_ml": 0.592,
+  "density_note": "SUY RA: 140 g/cup (FDC 174258 foodMeasures) chia 236,588 ml. Bulk, sợi khô rối.",
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "cup",
+      "grams": 140,
+      "note": "miến khô",
+      "source": "FDC 174258 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "medium",
+  "needs_review": true
+}

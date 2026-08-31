@@ -1,0 +1,59 @@
+{
+  "slug": "duong-trang",
+  "name_vi": "Đường trắng (đường cát)",
+  "name_en": "Granulated sugar",
+  "category": "gia-vi",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "169655",
+    "source_url": "https://fdc.nal.usda.gov/food-details/169655/nutrients",
+    "scientific_name": null,
+    "kcal_per_100g": 387,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 0.0,
+    "fat_g": 0.0,
+    "carb_g": 100.0,
+    "fiber_g": 0.0,
+    "water_g": null,
+    "sodium_mg": 1,
+    "mapping_confidence": "high",
+    "mapping_note": "Sucrose tinh luyện, đồng nhất toàn cầu. Bản Foundation 746784 cho 99,6 g carb và ghi fat 0,32 g — con số fat đó là nhiễu phân tích, không có ý nghĩa với sucrose tinh khiết. LƯU Ý: đường phèn và đường thốt nốt là nguyên liệu KHÁC, không dùng dòng này.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": 0.845,
+  "density_note": "BULK DENSITY (khối lượng riêng đổ đống), KHÔNG phải density chất lỏng. SUY RA: cup 200/236,588 = 0,845; tsp 4,2/4,9289 = 0,852. Chỉ dùng quy đổi thìa/chén.",
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "muỗng cà phê",
+      "grams": 4.2,
+      "note": null,
+      "source": "FDC 169655 foodMeasures"
+    },
+    {
+      "unit_name": "cup",
+      "grams": 200.0,
+      "note": null,
+      "source": "FDC 169655 foodMeasures"
+    },
+    {
+      "unit_name": "viên đường",
+      "grams": 2.3,
+      "note": null,
+      "source": "FDC 169655 foodMeasures"
+    },
+    {
+      "unit_name": "gói lẻ",
+      "grams": 2.8,
+      "note": null,
+      "source": "FDC 169655 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

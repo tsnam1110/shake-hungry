@@ -1,0 +1,46 @@
+{
+  "slug": "uc-ga",
+  "name_vi": "Ức gà (không da, sống)",
+  "name_en": "Chicken breast, skinless, boneless, meat only, raw",
+  "category": "thit",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "171077",
+    "source_url": "https://fdc.nal.usda.gov/food-details/171077/nutrients",
+    "scientific_name": null,
+    "kcal_per_100g": 120,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 22.5,
+    "fat_g": 2.62,
+    "carb_g": 0.0,
+    "fiber_g": 0.0,
+    "water_g": null,
+    "mapping_confidence": "high",
+    "mapping_note": "Foundation 2646170 cho 106 kcal (Atwater tổng quát) / 112 (Atwater riêng), protein 22,5, fat 1,93 — chênh 8–14 kcal, nhỏ, không đổi kết luận. Chọn SR Legacy để đồng bộ với phần còn lại của nhóm gà theo QT-4. TRÁNH dòng 171509 'with added solution' (ức gà bơm dung dịch, không phổ biến ở chợ VN).",
+    "alternatives": [
+      {
+        "external_id": "2646170",
+        "name": "Chicken breast, boneless, skinless, raw (Foundation)",
+        "kcal_per_100g": 106,
+        "why_not": "Đối chứng, lệch 8–14 kcal"
+      }
+    ]
+  },
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "miếng nửa ức",
+      "grams": 272,
+      "note": "cỡ broiler Mỹ, cần đo lại cho khẩu phần VN",
+      "source": "FDC 171077 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

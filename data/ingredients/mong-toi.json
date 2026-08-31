@@ -1,0 +1,41 @@
+{
+  "slug": "mong-toi",
+  "name_vi": "Mồng tơi",
+  "name_en": "Malabar spinach (vinespinach), raw",
+  "category": "rau-cu",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "170474",
+    "source_url": "https://fdc.nal.usda.gov/food-details/170474/nutrients",
+    "scientific_name": "Basella alba",
+    "kcal_per_100g": 19,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 1.8,
+    "fat_g": 0.3,
+    "carb_g": 3.4,
+    "fiber_g": null,
+    "water_g": 93.1,
+    "sodium_mg": null,
+    "mapping_confidence": "medium",
+    "mapping_note": "Đúng loài Basella alba. Hạ xuống medium vì TOÀN BỘ proximate có dataPoints=0 — không mẫu đo nào, mọi giá trị đều gán. USDA KHÔNG công bố chất xơ cho dòng này nên fiber_g = null; TUYỆT ĐỐI không mượn giá trị xơ từ dòng 169400 (bản đã nấu). Bản ghi cũng không có foodMeasures nào.",
+    "alternatives": [
+      {
+        "external_id": "169400",
+        "name": "Malabar spinach, cooked",
+        "kcal_per_100g": 23,
+        "why_not": "Có dữ liệu đo thật (dataPoints=2) và có chất xơ 2,1 g, nhưng là dạng ĐÃ NẤU — không so được với nguyên liệu sống, và bản ghi thiếu scientificName"
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "medium",
+  "needs_review": true
+}

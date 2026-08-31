@@ -1,0 +1,41 @@
+{
+  "slug": "suon-lon",
+  "name_vi": "Sườn lợn (sườn non, sống)",
+  "name_en": "Pork spareribs, raw",
+  "category": "thit",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "167853",
+    "source_url": "https://fdc.nal.usda.gov/food-details/167853/nutrients",
+    "scientific_name": null,
+    "kcal_per_100g": 277,
+    "kcal_min": 237,
+    "kcal_max": 277,
+    "protein_g": 15.5,
+    "fat_g": 23.4,
+    "carb_g": 0.0,
+    "fiber_g": 0.0,
+    "water_g": 59.8,
+    "sodium_mg": 81,
+    "mapping_confidence": "medium",
+    "mapping_note": "⚠️ QUAN TRỌNG CHO ENGINE CALO: 'separable lean and fat' nghĩa là phần ĂN ĐƯỢC, ĐÃ LOẠI XƯƠNG. Nhưng sườn ở chợ VN bán theo cân CẢ XƯƠNG. Nếu công thức ghi '300 g sườn' thì đó là khối lượng CÓ XƯƠNG — phải nhân hệ số phần ăn được TRƯỚC KHI áp 277 kcal/100g, nếu không sẽ vống calo lên rất nhiều. Hệ số đó CHƯA TRA ĐƯỢC, cần bổ sung. Ciqual 28400 cho 237 kcal — thấp hơn 40 kcal, có thể do sườn EU nạc hơn hoặc quy ước phần thịt bám xương khác. Riêng cholesterol của dòng USDA có derivation 'Based on another form of the food or similar food' nên độ tin cậy thấp hơn các chất còn lại.",
+    "alternatives": [
+      {
+        "external_id": "ciqual-28400",
+        "name": "Porc, travers cru (Ciqual)",
+        "kcal_per_100g": 237,
+        "why_not": "Khác bảng FCT (QT-4); dùng làm cận dưới"
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "medium",
+  "needs_review": true
+}

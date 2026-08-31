@@ -1,0 +1,47 @@
+{
+  "slug": "tuong-ban",
+  "name_vi": "Tương bần (tương đậu nành kiểu Việt)",
+  "name_en": "Vietnamese fermented soybean sauce",
+  "category": "gia-vi",
+  "reference_food": {
+    "fct_source": null,
+    "external_id": null,
+    "source_url": null,
+    "scientific_name": null,
+    "kcal_per_100g": null,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": null,
+    "fat_g": null,
+    "carb_g": null,
+    "fiber_g": null,
+    "water_g": null,
+    "sodium_mg": null,
+    "mapping_confidence": "low",
+    "mapping_note": "KHÔNG TRA ĐƯỢC — để null theo QT-1. Không nguồn nào chứa đúng sản phẩm tương Việt (tương Bần, tương Cự Đà — đậu nành + gạo nếp + nước, LOÃNG hơn miso/doenjang rất nhiều). Đã thử: USDA SR Legacy + Foundation 'miso' → chỉ có bản Nhật; USDA Branded 'tuong' → 2 kết quả và cả hai là hạnh nhân vị Sriracha (nhiễu); 'soybean paste' → 8.350 kết quả, tất cả là miso Nhật / doenjang Hàn / tương Sơn Đông; Ciqual 'soja fermente' → 106 kết quả, toàn sữa chua đậu nành và nước tương; Open Food Facts 'tuong' → 30 kết quả, toàn tương ớt và nước tương. VÌ SAO KHÔNG DÙNG MISO LÀM PROXY: ánh xạ sang miso sẽ thổi phồng đạm và natri khoảng 2 lần. VIỆC CẦN LÀM: lấy nhãn một thương hiệu tương Bần cụ thể, hoặc tự đo.",
+    "alternatives": [
+      {
+        "external_id": "172442",
+        "name": "Miso (SR Legacy)",
+        "kcal_per_100g": 198,
+        "why_not": "Miso Nhật: nước 43 g, đạm 12,8 g, Na 3.730 mg/100g — đặc và mặn hơn tương Việt nhiều lần. Khác sản phẩm"
+      },
+      {
+        "external_id": "2028290",
+        "name": "KOON CHUN, GROUND BEAN SAUCE (Hồng Kông)",
+        "kcal_per_100g": 156,
+        "why_not": "Có thêm đường, dầu mè, bột mì; là tương Quảng Đông, không phải tương Bần"
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "unknown",
+  "needs_review": true
+}

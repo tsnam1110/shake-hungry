@@ -1,0 +1,41 @@
+{
+  "slug": "rieng",
+  "name_vi": "Riềng (củ tươi)",
+  "name_en": "Galangal, fresh",
+  "category": "gia-vi",
+  "reference_food": {
+    "fct_source": null,
+    "external_id": null,
+    "source_url": null,
+    "scientific_name": "Alpinia galanga",
+    "kcal_per_100g": null,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": null,
+    "fat_g": null,
+    "carb_g": null,
+    "fiber_g": null,
+    "water_g": null,
+    "sodium_mg": null,
+    "mapping_confidence": "low",
+    "mapping_note": "KHÔNG TRA ĐƯỢC RIỀNG TƯƠI — để null theo QT-1. Đã thử: USDA SR Legacy + Foundation 'galangal' → 0 kết quả; Ciqual 'galanga' → 0 kết quả (đã xác nhận JSON parse thành công, hits.total = 0, không phải lỗi truy vấn); USDA Branded 'galangal' → 273 kết quả nhưng TẤT CẢ là bột khô hoặc curry paste hỗn hợp. Philippine FCT (có thể chứa 'langkawas') yêu cầu đăng nhập tại i.fnri.dost.gov.ph — không truy cập được.",
+    "alternatives": [
+      {
+        "external_id": "501677",
+        "name": "PEACOCK BRAND, BOT RIENG GALANGAL POWDER",
+        "kcal_per_100g": 400,
+        "why_not": "(a) Là BỘT KHÔ, không phải củ tươi — riềng tươi khoảng 80% nước nên chênh khoảng 5 lần, đúng loại bẫy 'đậu xanh khô so với giá đỗ'. (b) Số liệu bị lượng tử hoá thô: khẩu phần 5 g → 400 kcal/100g tính ngược từ 20 kcal/5 g, và protein khai 0 (vô lý với bột thực vật khô)"
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "unknown",
+  "needs_review": true
+}

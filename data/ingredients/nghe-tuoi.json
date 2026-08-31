@@ -1,0 +1,41 @@
+{
+  "slug": "nghe-tuoi",
+  "name_vi": "Nghệ tươi (củ)",
+  "name_en": "Turmeric root, fresh",
+  "category": "gia-vi",
+  "reference_food": {
+    "fct_source": null,
+    "external_id": null,
+    "source_url": null,
+    "scientific_name": "Curcuma longa",
+    "kcal_per_100g": null,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": null,
+    "fat_g": null,
+    "carb_g": null,
+    "fiber_g": null,
+    "water_g": null,
+    "sodium_mg": null,
+    "mapping_confidence": "low",
+    "mapping_note": "KHÔNG TRA ĐƯỢC NGHỆ TƯƠI — để null theo QT-1. Mọi nguồn chỉ có nghệ BỘT KHÔ. Đã thử: USDA SR Legacy + Foundation 'turmeric' → đúng 1 kết quả và là bột (172231); USDA Branded 'turmeric root' → 454 kết quả, toàn bộ là bột, trà túi lọc, nước ép, hoặc paste có thêm nguyên liệu khác; Ciqual 'curcuma' → 1 kết quả, mã 11089 'Curcuma, poudre' cũng là bột; Open Food Facts 'turmeric fresh' → 11 kết quả, toàn món chế biến. KHÔNG suy ra từ bột vì độ ẩm chênh khoảng 6,5 lần (bột chỉ 12,8 g nước/100g). Bột nghệ đã được nhập RIÊNG thành nguyên liệu `bot-nghe`.",
+    "alternatives": [
+      {
+        "external_id": "172231",
+        "name": "Spices, turmeric, ground (SR Legacy)",
+        "kcal_per_100g": 312,
+        "why_not": "Là nghệ BỘT KHÔ, không phải củ tươi. Đã nhập riêng thành nguyên liệu `bot-nghe`"
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "unknown",
+  "needs_review": true
+}

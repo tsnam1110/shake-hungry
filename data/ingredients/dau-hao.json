@@ -1,0 +1,41 @@
+{
+  "slug": "dau-hao",
+  "name_vi": "Dầu hào",
+  "name_en": "Oyster sauce",
+  "category": "gia-vi",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "174529",
+    "source_url": "https://fdc.nal.usda.gov/food-details/174529/nutrients",
+    "scientific_name": null,
+    "kcal_per_100g": 51,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 1.35,
+    "fat_g": 0.25,
+    "carb_g": 10.9,
+    "fiber_g": 0.3,
+    "water_g": 80.0,
+    "sodium_mg": 2730,
+    "mapping_confidence": "high",
+    "mapping_note": "Đạm/lipid/nước là 'Analytical', dataPoints = 2 mỗi chất — mẫu ít nhưng là đo thật. Lưu ý dầu hào thương mại Việt Nam (Maggi, Cholimex) ngọt hơn bản Mỹ này.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": 1.217,
+  "density_note": "SUY RA từ portion DUY NHẤT của chính bản ghi 174529: muỗng canh 18,0 g / 14,787 ml = 1,217. CHỈ CÓ MỘT ĐIỂM → không kiểm chứng chéo được. Trị số cao hơn nước rõ rệt, hợp lý với sốt đặc nhiều đường và muối (carb 10,9 g, Na 2,73 g/100g), nhưng nên coi là ước lượng.",
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "muỗng canh",
+      "grams": 18.0,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "source": "FDC 174529 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

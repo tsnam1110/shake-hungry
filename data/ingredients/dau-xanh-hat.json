@@ -1,0 +1,54 @@
+{
+  "slug": "dau-xanh-hat",
+  "name_vi": "Đậu xanh (hạt khô)",
+  "name_en": "Mung beans, dry",
+  "category": "khac",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "174256",
+    "source_url": "https://fdc.nal.usda.gov/food-details/174256/nutrients",
+    "scientific_name": "Vigna radiata",
+    "kcal_per_100g": 347,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 23.9,
+    "fat_g": 1.15,
+    "carb_g": 62.6,
+    "fiber_g": 16.3,
+    "water_g": 9.05,
+    "sodium_mg": 15,
+    "mapping_confidence": "high",
+    "mapping_note": "Đã xác nhận nước = 9,05 g → ĐÚNG là hạt khô, không phải giá đỗ. dataPoints cao (đạm 82, nước 60, béo 65). ⚠️ ĐÂY CHÍNH LÀ BẪY ĐÃ CẢNH BÁO: giá đỗ (nguyên liệu `gia-do`, fdc 169957) chỉ 30 kcal — CHÊNH 11,6 LẦN. Hai nguyên liệu hoàn toàn khác nhau dù tên tiếng Anh gần giống.",
+    "alternatives": [
+      {
+        "external_id": "169957",
+        "name": "Mung beans, mature seeds, sprouted, raw (GIÁ ĐỖ)",
+        "kcal_per_100g": 30,
+        "why_not": "Giá đỗ — nước 90,4 g, chênh 11,6 lần. Đã nhập riêng thành nguyên liệu `gia-do`"
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": 0.875,
+  "density_note": "SUY RA từ portion của chính bản ghi: cup 207 g / 236,588 ml = 0,875. Kiểm chứng chéo bằng portion thứ hai: muỗng canh 13,0 / 14,787 = 0,879 — khớp. Bulk density hạt rời, KHÔNG phải khối lượng riêng hạt.",
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "cup",
+      "grams": 207,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "source": "FDC 174256 foodMeasures"
+    },
+    {
+      "unit_name": "muỗng canh",
+      "grams": 13.0,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "source": "FDC 174256 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

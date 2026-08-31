@@ -1,0 +1,43 @@
+{
+  "slug": "rau-muong",
+  "name_vi": "Rau muống (sống)",
+  "name_en": "Water convolvulus, raw",
+  "category": "rau-cu",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "169301",
+    "source_url": "https://fdc.nal.usda.gov/food-details/169301/nutrients",
+    "scientific_name": "Ipomoea aquatica",
+    "kcal_per_100g": 19,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 2.6,
+    "fat_g": 0.2,
+    "carb_g": 3.13,
+    "fiber_g": 2.1,
+    "water_g": null,
+    "mapping_confidence": "high",
+    "mapping_note": "ĐÃ KIỂM TRA LOÀI. CẢNH BÁO CHO NGƯỜI SAU: USDA KHÔNG đặt tên bản ghi này là 'water spinach'. Tra 'water spinach' trên FDC chỉ ra Spinacia oleracea, Basella alba, Tetragonia — KHÔNG phải rau muống. Bản ghi đúng tên là 'Water convolvulus, raw' (NDB 11503), scientificName = 'Ipomoea aquatica'. Tra bằng 'kangkong' cũng ra đúng bản ghi này. Ai tra 'water spinach' rồi lấy kết quả đầu sẽ nhập nhầm rau chân vịt (23 kcal, 2,86 g protein, 2,2 g xơ) vào rau muống.",
+    "alternatives": []
+  },
+  "density_g_per_ml": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "units": [
+    {
+      "unit_name": "ngọn",
+      "grams": 13,
+      "note": null,
+      "source": "FDC 169301 foodMeasures"
+    },
+    {
+      "unit_name": "cup thái nhỏ",
+      "grams": 56,
+      "note": null,
+      "source": "FDC 169301 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

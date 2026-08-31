@@ -1,0 +1,53 @@
+{
+  "slug": "du-du-chin",
+  "name_vi": "Đu đủ chín",
+  "name_en": "Papaya, raw",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "169926",
+    "source_url": "https://fdc.nal.usda.gov/food-details/169926/nutrients",
+    "scientific_name": "Carica papaya",
+    "kcal_per_100g": 43,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 0.47,
+    "fat_g": 0.26,
+    "carb_g": 10.8,
+    "fiber_g": 1.7,
+    "water_g": 88.1,
+    "sodium_mg": null,
+    "mapping_confidence": "high",
+    "mapping_note": "Không có bản giống nào khác trong SR Legacy/Foundation nên CHƯA TRA ĐƯỢC BIẾN THIÊN — kcal_min/max để null (không đặt bằng giá trị điểm, xem quy tắc ở RESEARCH-PROTOCOL §4.12). LƯU Ý: bản ghi này là đu đủ CHÍN; đu đủ XANH (nấu canh, làm gỏi) là nguyên liệu khác, chưa tra.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "quả nhỏ",
+      "grams": 157,
+      "note": null,
+      "source": "FDC 169926 foodMeasures"
+    },
+    {
+      "unit_name": "quả lớn",
+      "grams": 781,
+      "note": null,
+      "source": "FDC 169926 foodMeasures"
+    },
+    {
+      "unit_name": "cup miếng",
+      "grams": 145,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "source": "FDC 169926 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

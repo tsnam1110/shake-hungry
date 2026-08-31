@@ -1,0 +1,41 @@
+{
+  "slug": "nuoc-mam-cong-nghiep",
+  "name_vi": "Nước mắm công nghiệp (pha đường, độ đạm thấp)",
+  "name_en": "Industrial fish sauce, sweetened",
+  "category": "gia-vi",
+  "reference_food": {
+    "fct_source": "off",
+    "external_id": "8936017366964",
+    "source_url": "https://world.openfoodfacts.org/api/v2/product/8936017366964",
+    "scientific_name": null,
+    "kcal_per_100g": 68.5,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 7.33,
+    "fat_g": 0.0,
+    "carb_g": 9.33,
+    "fiber_g": null,
+    "water_g": null,
+    "sodium_mg": 8820,
+    "mapping_confidence": "low",
+    "mapping_note": "TÁCH RIÊNG khỏi nước mắm truyền thống. Đại diện dòng công nghiệp (Nam Ngư – Masan). Dấu hiệu phân biệt rõ nhất trong dữ liệu: carb 9,33 g/100ml do pha thêm đường và chất điều vị, so với ~0,5 g của nước mắm truyền thống. CẢNH BÁO ĐỘ CHÍNH XÁC: giá trị /100ml trên OFF được quy ngược từ khẩu phần 15 ml đã làm tròn (10,3 kcal / 1,1 g protein), nên sai số quy đổi lớn — con số 68,514977682 trong bản ghi gốc là chính xác giả, đã làm tròn về 68,5. Bản ghi ghi thị trường Australia (hàng xuất khẩu), công thức nội địa có thể khác.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": 1.22,
+  "density_note": "SUY RA từ USDA foodMeasures 174531, chỉ một điểm — độ tin cậy thấp.",
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "muỗng canh",
+      "grams": 18.0,
+      "note": "suy từ dòng USDA chung",
+      "source": "FDC 174531 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "low",
+  "needs_review": true
+}

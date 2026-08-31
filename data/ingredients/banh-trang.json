@@ -1,0 +1,45 @@
+{
+  "slug": "banh-trang",
+  "name_vi": "Bánh tráng (bánh đa nem)",
+  "name_en": "Rice paper / spring roll wrapper",
+  "category": "tinh-bot",
+  "reference_food": {
+    "fct_source": "usda_branded",
+    "external_id": "2012718",
+    "source_url": "https://fdc.nal.usda.gov/food-details/2012718/nutrients",
+    "scientific_name": null,
+    "kcal_per_100g": 330,
+    "kcal_min": 317,
+    "kcal_max": 350,
+    "protein_g": 2.11,
+    "fat_g": 0.35,
+    "carb_g": 80.7,
+    "fiber_g": 0.0,
+    "water_g": null,
+    "mapping_confidence": "low",
+    "mapping_note": "KHÔNG bảng thành phần nào có bánh tráng. Đã tìm: USDA SR Legacy + Foundation ('rice paper', 'spring roll wrapper' → chỉ ra bánh gạo phồng và bánh quy gạo); Ciqual ('galette de riz', 'feuille de riz', 'nem' → chỉ có nem đã chiên thành phẩm); Canadian Nutrient File (tải toàn bộ 5.690 món, tìm 'rice paper'/'wrapper' → chỉ có 'Wonton wrapper'). Đây là NHÃN của sản phẩm thương mại ASIAN BEST (Eastland Food Corp.), bán tại Mỹ, thành phần 'TAPIOCA FLOUR, WATER, RICE STARCH, SALT'. Chọn nhãn này vì là nhãn duy nhất KHÔNG làm tròn protein và fat về 0. Phân tán giữa các nhãn rất lớn: 317–350 kcal. Fiber 0,0 gần chắc chắn là làm tròn nhãn, không phải phép đo. VIỆC CẦN LÀM: thay bằng nhãn sản phẩm bán tại VN (Safoco / Bích Chi / Tây Ninh) khi có ảnh nhãn.",
+    "alternatives": [
+      {
+        "external_id": "2455388",
+        "name": "Kim-Seng / DOUBLE PARROT rice paper",
+        "kcal_per_100g": 317,
+        "why_not": "Nhãn khác, cận dưới"
+      },
+      {
+        "external_id": "2029657",
+        "name": "Three Ladies rice paper",
+        "kcal_per_100g": 350,
+        "why_not": "Nhãn khác, cận trên"
+      }
+    ]
+  },
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "low",
+  "needs_review": true
+}

@@ -1,0 +1,47 @@
+{
+  "slug": "sa",
+  "name_vi": "Sả",
+  "name_en": "Lemongrass, raw",
+  "category": "gia-vi",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "168573",
+    "source_url": "https://fdc.nal.usda.gov/food-details/168573/nutrients",
+    "scientific_name": "Cymbopogon citratus",
+    "kcal_per_100g": 99,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 1.82,
+    "fat_g": 0.49,
+    "carb_g": 25.3,
+    "fiber_g": null,
+    "water_g": 70.6,
+    "sodium_mg": 6,
+    "mapping_confidence": "high",
+    "mapping_note": "Loài khớp (Cymbopogon citratus = sả chanh, đúng loài dùng trong bếp Việt). ⚠️ LƯU Ý QUAN TRỌNG CHO ENGINE: bản ghi KHÔNG CÓ chất xơ — nutrient 1079 VẮNG MẶT khỏi danh sách, khác hoàn toàn với 'xơ = 0'. Mà carb 25,3 g là tính by-difference. Với sả (rất nhiều xơ, phần lớn không tiêu hoá được), con số 99 kcal là CẬN TRÊN mạnh; calo hấp thu thực tế thấp hơn nhiều. Ngoài ra sả trong món Việt thường bị vớt bỏ, không ăn — engine nên cho phép đánh dấu nguyên liệu 'không ăn'.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "cup",
+      "grams": 67,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "source": "FDC 168573 foodMeasures"
+    },
+    {
+      "unit_name": "muỗng canh",
+      "grams": 4.8,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "source": "FDC 168573 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

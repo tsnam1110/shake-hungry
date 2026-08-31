@@ -1,0 +1,43 @@
+{
+  "slug": "ca-thu",
+  "name_vi": "Cá thu (sống)",
+  "name_en": "Mackerel, raw",
+  "category": "thuy-san",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "173673",
+    "source_url": "https://fdc.nal.usda.gov/food-details/173673/nutrients",
+    "scientific_name": "Scomberomorus maculatus",
+    "kcal_per_100g": 139,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 19.3,
+    "fat_g": 6.3,
+    "carb_g": 0,
+    "fiber_g": 0,
+    "water_g": null,
+    "mapping_confidence": "medium",
+    "mapping_note": "Cá thu VN phổ biến nhất là Scomberomorus commerson (cá thu vạch). USDA không có loài này; 173673 là S. maculatus — CÙNG CHI (xác nhận qua trường scientificName của FDC). Bản ghi cùng chi khác: fdc_id 175122 'Fish, mackerel, king, raw' (S. cavalla) = 105 kcal / 20,3 P / 2,0 F. Hai bản ghi cùng chi chênh 105–139 kcal và 2,0–6,3 g lipid, nên khi hiển thị phải theo QT-5 (khoảng rộng). CẤM dùng fdc_id 175119 'Fish, mackerel, Atlantic, raw' (205 kcal, 13,9 g lipid): Scomber scombrus, KHÁC CHI, cá vùng lạnh, béo gấp đôi.",
+    "alternatives": []
+  },
+  "density_g_per_ml": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "units": [
+    {
+      "unit_name": "phi lê",
+      "grams": 187,
+      "note": null,
+      "source": "FDC 173673 foodMeasures"
+    },
+    {
+      "unit_name": "oz",
+      "grams": 85,
+      "note": null,
+      "source": "FDC 173673 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "medium",
+  "needs_review": true
+}

@@ -1,0 +1,54 @@
+{
+  "slug": "dau-do-hat",
+  "name_vi": "Đậu đỏ (hạt khô)",
+  "name_en": "Adzuki beans, dry",
+  "category": "khac",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "173727",
+    "source_url": "https://fdc.nal.usda.gov/food-details/173727/nutrients",
+    "scientific_name": "Vigna angularis",
+    "kcal_per_100g": 329,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 19.9,
+    "fat_g": 0.53,
+    "carb_g": 62.9,
+    "fiber_g": 12.7,
+    "water_g": 13.4,
+    "sodium_mg": 5,
+    "mapping_confidence": "high",
+    "mapping_note": "Loài khớp, dữ liệu đầy đủ. Nước 13,4 g → đúng hạt khô.",
+    "alternatives": [
+      {
+        "external_id": "173728",
+        "name": "Beans, adzuki, cooked, boiled",
+        "kcal_per_100g": null,
+        "why_not": "Đã luộc — phải là nguyên liệu riêng nếu cần"
+      },
+      {
+        "external_id": "173729",
+        "name": "Beans, adzuki, canned, sweetened",
+        "kcal_per_100g": null,
+        "why_not": "Đóng hộp có đường"
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": 0.83,
+  "density_note": "SUY RA từ foodMeasures: cup 197/236,588 = 0,833. Một điểm, chưa kiểm chứng chéo. Bulk density hạt rời.",
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "cup",
+      "grams": 197,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "source": "FDC 173727 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

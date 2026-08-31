@@ -1,0 +1,54 @@
+{
+  "slug": "nam-huong-kho",
+  "name_vi": "Nấm hương khô",
+  "name_en": "Shiitake mushrooms, dried",
+  "category": "rau-cu",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "168436",
+    "source_url": "https://fdc.nal.usda.gov/food-details/168436/nutrients",
+    "scientific_name": "Lentinula edodes (USDA ghi Lentinus edodes)",
+    "kcal_per_100g": 296,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 9.58,
+    "fat_g": 0.99,
+    "carb_g": 75.4,
+    "fiber_g": 11.5,
+    "water_g": 9.5,
+    "sodium_mg": null,
+    "mapping_confidence": "high",
+    "mapping_note": "ĐÃ LẤY ĐÚNG BẢN KHÔ (nước 9,50 g/100g). Bản TƯƠI là 169242 = 34 kcal — CHÊNH 8,7 LẦN, tuyệt đối không lẫn. QUY TẮC BIÊN SOẠN: công thức Việt gần như luôn ghi nấm hương khô theo khối lượng KHÔ trước khi ngâm; nếu công thức ghi khối lượng sau khi ngâm nở thì phải dùng bản tươi hoặc áp hệ số nở. Toàn bộ chất dinh dưỡng dataPoints=0 trừ nước (=2) → số liệu gán.",
+    "alternatives": [
+      {
+        "external_id": "169242",
+        "name": "Mushrooms, shiitake, raw (TƯƠI)",
+        "kcal_per_100g": 34,
+        "why_not": "Bản tươi — giữ lại để dùng khi công thức ghi nấm đã ngâm nở"
+      },
+      {
+        "external_id": "1999628",
+        "name": "Mushrooms, shiitake (Foundation)",
+        "kcal_per_100g": null,
+        "why_not": "Không ghi rõ tươi hay khô trong mô tả — mơ hồ, loại"
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "tai nấm",
+      "grams": 3.6,
+      "note": "nấm khô",
+      "source": "FDC 168436 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

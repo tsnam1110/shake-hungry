@@ -1,0 +1,41 @@
+{
+  "slug": "nhan",
+  "name_vi": "Nhãn",
+  "name_en": "Longan, raw",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "169089",
+    "source_url": "https://fdc.nal.usda.gov/food-details/169089/nutrients",
+    "scientific_name": "Dimocarpus longan",
+    "kcal_per_100g": 60,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 1.31,
+    "fat_g": 0.1,
+    "carb_g": 15.1,
+    "fiber_g": 1.1,
+    "water_g": 82.8,
+    "sodium_mg": null,
+    "mapping_confidence": "medium",
+    "mapping_note": "Đúng loài, nhưng NỀN MẪU CỰC MỎNG: dataPoints = 2 cho nước, 1 cho đạm, và TRỐNG cho lipid/xơ. Đây là bản ghi USDA yếu nhất trong cả mẻ trái cây. Giá trị dùng được nhưng phải gắn confidence thấp ở tầng món.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "quả",
+      "grams": 3.2,
+      "note": "phần ăn được, đã bỏ vỏ và hạt",
+      "source": "FDC 169089 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "medium",
+  "needs_review": true
+}

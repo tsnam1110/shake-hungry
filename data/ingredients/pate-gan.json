@@ -1,0 +1,53 @@
+{
+  "slug": "pate-gan",
+  "name_vi": "Pate gan lợn",
+  "name_en": "Pork liver pâté",
+  "category": "thit",
+  "reference_food": {
+    "fct_source": "ciqual",
+    "external_id": "8300",
+    "source_url": "https://ciqual.anses.fr/#/aliments/8300",
+    "scientific_name": null,
+    "kcal_per_100g": 358,
+    "kcal_min": 319,
+    "kcal_max": 358,
+    "protein_g": 13,
+    "fat_g": 31,
+    "carb_g": 6.5,
+    "fiber_g": 0.3,
+    "water_g": 47.6,
+    "sodium_mg": 643,
+    "mapping_confidence": "medium",
+    "mapping_note": "Chọn Ciqual thay vì USDA vì ĐÚNG LOÀI VÀ ĐÚNG DÒNG SẢN PHẨM: pate gan VN (pate bánh mì) là hậu duệ trực tiếp của pâté de foie de porc Pháp, làm từ gan lợn + mỡ lợn. Dòng USDA tương ứng là 'Pate, liver, not specified' — KHÔNG ghi rõ loài. Ba nguồn hội tụ khá tốt quanh 320–360 kcal. Độ tin cậy Ciqual cho đạm, béo, natri là A (đo trực tiếp); riêng năng lượng là D vì tính lại. ⚠️ CẢNH BÁO ÁP DỤNG: pate VN thường độn thêm bánh mì/bột và ít mỡ hơn loại 'supérieur' của Pháp (nhãn 'supérieur' là quy định Pháp về hàm lượng gan tối thiểu), nên pate bánh mì vỉa hè nhiều khả năng THẤP hơn 358 kcal. ⚠️ BẪY DỄ MẮC NHẤT: dòng 'Pate, chicken liver' của USDA là GAN GÀ — lệch 157 kcal, tuyệt đối không dùng thay.",
+    "alternatives": [
+      {
+        "external_id": "172930",
+        "name": "Pate, liver, not specified, canned (USDA)",
+        "kcal_per_100g": 319,
+        "why_not": "Không ghi rõ loài gan; đóng hộp. Cận dưới"
+      },
+      {
+        "external_id": "ciqual-8312",
+        "name": "Mousse de foie de porc, supérieur",
+        "kcal_per_100g": 324,
+        "why_not": "Mousse mịn hơn, glucid 10,9 g — kết cấu và công thức khác pate khối"
+      },
+      {
+        "external_id": "172928",
+        "name": "Pate, chicken liver, canned (USDA)",
+        "kcal_per_100g": 201,
+        "why_not": "GAN GÀ, không phải gan lợn — lệch 157 kcal, TUYỆT ĐỐI không dùng thay thế"
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "medium",
+  "needs_review": true
+}
