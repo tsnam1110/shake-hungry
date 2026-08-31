@@ -1,0 +1,72 @@
+# CI — chạy toàn bộ test Pest + lacdoi:validate-data trên PostgreSQL thật.
+# Đỏ ⇒ chặn merge (bật branch protection sau khi repo có remote). TEST-001 / DATA-006.
+name: tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  pest:
+    runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        image: postgres:17
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: shake_hungry_test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+          extensions: pdo_pgsql, pgsql
+          coverage: none
+
+      - name: Cài dependencies
+        run: composer install --prefer-dist --no-progress --no-interaction
+
+      - name: Chuẩn bị môi trường
+        run: |
+          cp .env.example .env
+          php artisan key:generate
+
+      - name: Bật extension PostgreSQL
+        env:
+          PGPASSWORD: postgres
+        run: |
+          psql -h 127.0.0.1 -U postgres -d shake_hungry_test \
+            -c "CREATE EXTENSION IF NOT EXISTS pg_trgm; CREATE EXTENSION IF NOT EXISTS unaccent;"
+
+      - name: Test
+        env:
+          DB_CONNECTION: pgsql
+          DB_HOST: 127.0.0.1
+          DB_PORT: 5432
+          DB_DATABASE: shake_hungry_test
+          DB_USERNAME: postgres
+          DB_PASSWORD: postgres
+        run: vendor/bin/pest --no-coverage
+
+      - name: Kiểm tra toàn vẹn dữ liệu (V1–V14)
+        env:
+          DB_CONNECTION: pgsql
+          DB_HOST: 127.0.0.1
+          DB_PORT: 5432
+          DB_DATABASE: shake_hungry_test
+          DB_USERNAME: postgres
+          DB_PASSWORD: postgres
+        run: |
+          php artisan migrate:fresh --seed --force
+          php artisan lacdoi:validate-data

@@ -3,7 +3,7 @@
 **Mã task:** DATA-006
 **Giai đoạn:** GĐ1
 **Loại:** Backend
-**Status:** ⬜ TODO
+**Status:** ✅ DONE (2026-08-31)
 **Ngày tạo:** 2026-08-31
 **Phụ thuộc:** SETUP-003
 
@@ -43,12 +43,15 @@ Hiện thực 14 kiểm tra V1–V14 ở [DATA-PIPELINE §5](../../04-data-sourc
 
 ## Definition of Done
 
-- [ ] `php artisan lacdoi:import-usda` chạy được, sinh file trong `data/reference/`
-- [ ] MANIFEST có đủ: nguồn, ngày, checksum file gốc, license, tiêu chí lọc
-- [ ] File sau lọc < 20 MB tổng cộng
-- [ ] `php artisan lacdoi:validate-data` hiện thực đủ V1–V14
-- [ ] Lỗi 🔴 làm lệnh trả exit code khác 0 — **thử cố ý tạo một bản ghi sai để xác nhận nó đỏ được**
-- [ ] Có test Pest cho ít nhất V1 (chốt chặn QT-1) và V5
+- [x] `php artisan lacdoi:import-usda` chạy được — đã chạy thật với SR Legacy 2026-08-31,
+      sinh `data/reference/usda-sr_legacy.csv` (7.793 dòng, 0,64 MB)
+- [x] MANIFEST có đủ: nguồn, ngày, checksum SHA-256 file zip gốc, license CC0, tiêu chí lọc
+- [x] File sau lọc < 20 MB tổng cộng
+- [x] `php artisan lacdoi:validate-data` hiện thực đủ V1–V14
+- [x] Lỗi 🔴 trả exit code 1 — đã cố ý chèn bản ghi sai, lệnh bắt được đúng 4 vi phạm
+      (V3, V5, V13, V14) rồi xanh lại khi gỡ
+- [x] Test Pest cho V1 và V5 ở `tests/Feature/ValidateDataCommandTest.php` — mô phỏng dữ liệu
+      bẩn lọt qua bằng cách tạm gỡ ràng buộc R1/R2 trong transaction test
 
 ---
 
@@ -77,3 +80,15 @@ Hiện thực 14 kiểm tra V1–V14 ở [DATA-PIPELINE §5](../../04-data-sourc
 ---
 
 ## Ghi chú
+
+**Hoàn thành 2026-08-31.**
+
+- Lệnh nhận `--source=sr_legacy|foundation`, `--dir=` (thư mục CSV đã giải nén) và `--zip=`
+  (file zip gốc, để ghi SHA-256 vào MANIFEST). Thiếu `--zip` thì cảnh báo chứ không chặn.
+- Kiểm tra V-file chạy thẳng trên `data/` không cần database; kiểm tra trên dữ liệu dẫn xuất
+  (V1, V5-DB, V6, V7-trigram, V8, V9-DB) tự bỏ qua **có thông báo** khi database chưa kết nối.
+- V8 (nguyên liệu mồ côi) chỉ chạy khi đã có món — với 0 món, 150 cảnh báo "mồ côi" là nhiễu
+  vô nghĩa, không phải tín hiệu.
+- Ba bẫy trong mục "Cạm bẫy" đã né đúng: lọc theo nutrient id (1008, dự phòng 2047/2048),
+  bỏ bản ghi không có năng lượng (0 bản ghi ở SR Legacy — đúng như kỳ vọng vì SR Legacy
+  luôn có mục Energy), đọc CSV bằng generator nên không phình bộ nhớ.

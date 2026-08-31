@@ -1,9 +1,8 @@
 # Dựng lại dự án trên máy mới — Lắc Đói
 
-**Cập nhật lần cuối:** 2026-08-31 — bản đầu tiên
-**Trạng thái:** ⚠️ **CHƯA KIỂM CHỨNG.** Chưa có code nên chưa ai chạy thử quy trình này. Người thực
-hiện [SETUP-001](../05-tasks/tasks/SETUP-001.md) phải cập nhật lại tài liệu này với những gì thực tế
-xảy ra, **kể cả các chỗ vướng**.
+**Cập nhật lần cuối:** 2026-08-31 — cập nhật theo lần cài đặt thật (SETUP-001), thêm §2b các chỗ vướng
+**Trạng thái:** Quy trình §2 đã chạy thật trên máy gốc (Laragon/Windows). Chưa kiểm trên máy trắng
+thứ hai — làm điều đó khi đóng GĐ1 (DoD giai đoạn).
 
 ---
 
@@ -48,6 +47,28 @@ php artisan migrate:fresh --seed
 php artisan lacdoi:validate-data
 npm install && npm run build
 ```
+
+### 2b. Các chỗ vướng thực tế trên Windows/Laragon — gặp 2026-08-31
+
+1. **Laragon không kèm PostgreSQL.** Cách đã dùng: tải bản **binaries portable** của
+   EnterpriseDB (`postgresql-17.11-1-windows-x64-binaries.zip`, ~325 MB), giải nén vào
+   `D:\laragon\bin\postgresql\postgresql-17.11-1`. Không cần cài service.
+2. **Khởi tạo cluster với ICU tiếng Việt** (sắp xếp tên món đúng):
+   ```bash
+   initdb -D D:\laragon\data\postgresql-17 -U postgres -E UTF8 --locale-provider=icu --icu-locale=vi-VN --locale=C -A trust
+   ```
+   `-A trust` chỉ dành cho dev local (server chỉ nghe localhost). Production bắt buộc
+   `scram-sha-256`.
+3. **Khởi động / dừng:**
+   ```bash
+   pg_ctl -D D:\laragon\data\postgresql-17 -l D:\laragon\data\postgresql-17\server.log start
+   ```
+4. **PHP Laragon có sẵn DLL pgsql nhưng chưa bật** — thêm vào `php.ini`:
+   `extension=pdo_pgsql` và `extension=pgsql`, rồi kiểm bằng `php -m | findstr pgsql`.
+5. **psql trên PowerShell hỏng encoding tiếng Việt** khi truyền chuỗi qua `-c` — muốn chạy
+   SQL có dấu, ghi ra file UTF-8 (không BOM) rồi `psql -f`.
+6. **Tạo database:** `createdb -U postgres shake_hungry` và `createdb -U postgres shake_hungry_test`
+   (bảng test cho Pest — phpunit.xml trỏ vào `shake_hungry_test`).
 
 ### Ghi chú về pgvector trên Windows
 

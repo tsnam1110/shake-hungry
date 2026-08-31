@@ -1,7 +1,8 @@
 # Engine tính calo — Lắc Đói
 
-**Cập nhật lần cuối:** 2026-08-31 — bản đầu tiên
-**Trạng thái:** ⚠️ **CHƯA HIỆN THỰC.** Đặc tả cho task [CALC-001](../05-tasks/tasks/CALC-001.md).
+**Cập nhật lần cuối:** 2026-08-31 — hiện thực xong CALC-001 (`App\Nutrition\NutritionCalculator`, engine_version 1.0.0); thêm §5b
+**Trạng thái:** ✅ **ĐÃ HIỆN THỰC** phần CALC-001 + logic chiên/xơ của CALC-002.
+Phần còn thiếu là **dữ liệu** hệ số (DATA-004, DATA-008) — code đã sẵn chỗ.
 
 Mọi công thức và hệ số trong tài liệu này đều có nguồn. Con số không nguồn không được đưa vào code.
 
@@ -225,6 +226,21 @@ Mỗi nguồn bất định nới khoảng thêm. Nhân dồn:
 > đổi mà không chạy lại kiểm chứng.
 
 ---
+
+## 5b. Hai quyết định hiện thực — bổ sung 2026-08-31 (CALC-001)
+
+Đặc tả gốc không định nghĩa hai trường hợp; cách hiện thực đã chọn:
+
+1. **Nguyên liệu tuỳ chọn (`is_optional`)**: không tính vào `kcal_min`, tính đủ vào
+   `kcal_max` — khoảng phản ánh đúng nghĩa "có thể có hoặc không". Macro (cột đơn, không có
+   khoảng trong `dish_nutrition`) là ước lượng của công thức đầy đủ gồm cả phần tuỳ chọn.
+2. **`fct_source = 'mixed'`** (ngoại lệ có kiểm soát, [DATA-PIPELINE §7.2](../04-data-sources/DATA-PIPELINE.md)):
+   engine nhận dữ liệu từ mọi nguồn của từng nguyên liệu, nhưng ép `confidence ≤ medium` —
+   đúng cam kết "món dùng nguồn 4–5 phải hạ confidence".
+
+Món chiên: nguyên liệu chưa có `oil_absorption_pct` có nguồn ⇒ vào `missing[]`
+(CALC-002 mục 3), không bịa hệ số. Hệ quả thực tế: món chiên chỉ tính được khi nguyên liệu
+chính đã tra được hệ số dầu — hiện mới có nhóm khoai/cá/gà điển hình trong tài liệu tham khảo.
 
 ## 6. Xác định `confidence`
 

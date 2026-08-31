@@ -3,7 +3,7 @@
 **Mã task:** CALC-001
 **Giai đoạn:** GĐ1
 **Loại:** Backend
-**Status:** ⬜ TODO
+**Status:** ✅ DONE (2026-08-31)
 **Ngày tạo:** 2026-08-31
 **Phụ thuộc:** ING-001
 
@@ -62,13 +62,17 @@ Phần hệ số hao hụt và hấp thụ dầu thuộc [CALC-002](./CALC-002.m
 
 ## Definition of Done
 
-- [ ] Hàm thuần tuý — cùng đầu vào luôn cho cùng đầu ra, test được không cần database ngoài fixture
-- [ ] Trả về đủ: `kcal_min`, `kcal_max`, macro, `confidence`, `missing[]`, `fct_source`, `engine_version`
-- [ ] `missing[]` không rỗng ⇒ `confidence` không bao giờ là `high`
-- [ ] `missing[]` ≥30% khối lượng ⇒ `confidence = unknown`, không trả số
-- [ ] **Không trộn `fct_source`** — có test chứng minh engine từ chối nguyên liệu ngoài nguồn chỉ định
-- [ ] Test Pest phủ: món đầy đủ, món thiếu nguyên liệu, món có nguyên liệu tuỳ chọn, quy đổi đơn vị
-- [ ] Kết quả ghi vào `dish_nutrition` với `source = 'computed'`
+- [x] Hàm thuần tuý — `App\Nutrition\NutritionCalculator`, test không cần database;
+      có test "cùng đầu vào cho cùng đầu ra"
+- [x] Trả về đủ: `kcal_min`, `kcal_max`, macro, `confidence`, `missing[]`, `fct_source`, `engine_version`
+- [x] `missing[]` không rỗng ⇒ `confidence` tối đa `low`
+- [x] `missing[]` ≥30% khối lượng ⇒ `confidence = unknown`, mọi giá trị số null
+- [x] **Không trộn `fct_source`** — test `tu choi nguyen lieu ngoai fct_source chi dinh`
+- [x] 15 test Pest ở `tests/Unit/NutritionCalculatorTest.php`: món đầy đủ, thiếu nguyên liệu,
+      tuỳ chọn, vớt bỏ, chiên, giàu xơ, mixed, khẩu phần không cân… Quy đổi đơn vị nằm ở
+      `DishNutritionService::resolveGrams` (tầng không thuần tuý)
+- [x] `DishNutritionService::computeAndStore` ghi `dish_nutrition` với `source = 'computed'`;
+      `unknown` ⇒ xoá bản ghi cũ, không ghi số nào (QT-5)
 
 ---
 
@@ -84,3 +88,15 @@ Phần hệ số hao hụt và hấp thụ dầu thuộc [CALC-002](./CALC-002.m
 ---
 
 ## Ghi chú
+
+**Hoàn thành 2026-08-31.** Hai quyết định hiện thực ngoài đặc tả, đã bổ sung vào
+[CALORIE-ENGINE §5b](../../06-nutrition/CALORIE-ENGINE.md):
+
+1. **Nguyên liệu tuỳ chọn** (đặc tả không định nghĩa cách tính): không tính vào cận dưới,
+   tính đủ vào cận trên — khoảng min–max phản ánh "có thể không có mặt". Macro (cột đơn,
+   không có khoảng) là ước lượng của công thức đầy đủ.
+2. **`fct_source = 'mixed'`** (ngoại lệ DATA-PIPELINE §7.2): engine nhận nguyên liệu từ
+   mọi nguồn nhưng ép `confidence` tối đa `medium`.
+
+Engine version khởi điểm: `1.0.0` — đổi hằng số nào trong engine phải nâng version để
+`lacdoi:recompute-calories` biết món nào cần tính lại.

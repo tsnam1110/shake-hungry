@@ -170,6 +170,7 @@ Bất kỳ ai (người hay AI agent) muốn thêm một nguồn dữ liệu:
 | Ngày | Nguồn | Kết luận | Người/agent thẩm định | Ghi chú |
 |---|---|---|---|---|
 | 2026-08-31 | USDA FDC (Foundation, SR Legacy, FNDDS, SR Links) | ✅ Duyệt | Khảo sát khởi tạo dự án | CC0, không ràng buộc |
+| 2026-08-31 | USDA FDC **SR Legacy — ĐÃ NHẬP** ([DATA-002](../05-tasks/tasks/DATA-002.md)) | ✅ Nhập 7.793 dòng | `lacdoi:import-usda` | Bản `sr_legacy_food_csv_2018-04.zip`, SHA-256 trong `data/reference/MANIFEST.json`; bản sao điều khoản tại `data/reference/_licenses/usda-fdc.txt` |
 | 2026-08-31 | Wikidata | ✅ Duyệt | — | CC0. Chỉ 58–79 món Việt |
 | 2026-08-31 | Nutrition5k | ✅ Duyệt | — | CC BY 4.0, phải ghi công |
 | 2026-08-31 | Open Food Facts | ⚠️ **Đã dùng trước khi chốt Q2** | Đợt tra cứu ING-001 | ⚠️ **Ghi nhận sai quy trình:** OFF đang ở trạng thái "⏸️ hoãn chờ Q2" nhưng đã được dùng cho 4 nguyên liệu (`nuoc-mam-truyen-thong`, `nuoc-mam-cong-nghiep`, `tuong-ot`, `sua-dac`, `nem-chua`) — vì đây là nguyên liệu USDA không phủ được và nhãn sản phẩm Việt là nguồn duy nhất tra được. Mỗi file đã ghi `license_note` cảnh báo. **Phải chốt [LEGAL-002](../05-tasks/tasks/LEGAL-002.md) trước khi phát hành**, nếu không chấp nhận ODbL thì thay bằng ảnh nhãn tự chụp |

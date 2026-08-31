@@ -1,7 +1,7 @@
 # [CALC-002] — Hệ số hao hụt khi nấu và hấp thụ dầu khi chiên
 
 **Mã task:** CALC-002 · **Giai đoạn:** GĐ1 · **Loại:** Backend
-**Status:** ⬜ TODO · **Ngày tạo:** 2026-08-31 · **Phụ thuộc:** CALC-001, DATA-004
+**Status:** 🔵 IN PROGRESS — phần code xong 2026-08-31, chờ dữ liệu DATA-004/DATA-008 · **Ngày tạo:** 2026-08-31 · **Phụ thuộc:** CALC-001, DATA-004
 
 ---
 
@@ -44,12 +44,15 @@ không bao giờ đạt `confidence = high`.
 
 ## Definition of Done
 
-- [ ] Yield factor áp đúng chiều (không nhân vào chất dinh dưỡng)
-- [ ] Món chiên có khoảng min–max rộng và `confidence` không bao giờ `high`
-- [ ] Test: cùng nguyên liệu, `cooking_method = 'luoc'` vs `'chien'` cho kcal khác nhau rõ rệt
-- [ ] Test: món chiên có nguyên liệu thiếu `oil_absorption_pct` → vào `missing[]`
-- [ ] Mọi hệ số dùng trong code đều có nguồn ghi ở
-      [CALORIE-ENGINE §9](../../06-nutrition/CALORIE-ENGINE.md)
+- [x] Yield factor áp đúng chiều — chỉ dùng suy `cookedGramsEstimate`, không nhân vào
+      chất dinh dưỡng
+- [x] Món chiên nới khoảng ×0,80–×1,25 và `confidence` tối đa `medium`
+- [x] Test `cung nguyen lieu, luoc vs chien cho ket qua khac nhau ro ret`
+- [x] Test `mon chien co nguyen lieu thieu oil_absorption_pct thi vao missing`
+- [x] Hệ số trong code trích nguồn ở đầu class `NutritionCalculator` + CALORIE-ENGINE §9
+- [ ] **Chưa xong:** dữ liệu hệ số — `default_yield_factor` hiện null toàn bộ 150 nguyên liệu
+      (chưa tra được nguồn), bảng hao hụt USDA chưa nhập ([DATA-004](./DATA-004.md)), hệ số
+      phần ăn được chưa nhập ([DATA-008](./DATA-008.md)). Code đã sẵn chỗ, thiếu số có nguồn.
 
 ## Cạm bẫy
 

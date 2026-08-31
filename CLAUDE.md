@@ -6,8 +6,8 @@ File hướng dẫn bắt buộc cho Claude Code và mọi AI agent làm việc 
 quy tắc ở đây, phải nói ra chỗ mâu thuẫn trước khi làm, không âm thầm làm khác.
 
 **Ngày tạo:** 2026-08-31
-**Cập nhật lần cuối:** 2026-08-31 — soát lại toàn bộ tài liệu, sửa 9 lỗi; biên soạn **150 nguyên liệu**
-qua 10 mẻ tra cứu; thêm [RESEARCH-PROTOCOL](docs/09-standards/RESEARCH-PROTOCOL.md) với 19 bẫy đúc kết
+**Cập nhật lần cuối:** 2026-08-31 (lần 3) — dựng xong nền code GĐ0/GĐ1: Laravel 13 + PostgreSQL 17,
+schema đủ R1–R9, engine calo, 4 lệnh `lacdoi:*`, nhập USDA SR Legacy, 31 test Pest xanh
 
 ---
 
@@ -20,29 +20,32 @@ qua 10 mẻ tra cứu; thêm [RESEARCH-PROTOCOL](docs/09-standards/RESEARCH-PROT
 > soạn thành file dữ liệu. Đây chính là loại lỗi tài liệu mà [docs/README.md](docs/README.md) §5
 > cảnh báo, và nó xuất hiện ngay ở dòng quan trọng nhất của repo.
 
-**Trạng thái thực tế, kiểm ngày 2026-08-31:**
+> ## ⚠️ Đính chính lần 2, 2026-08-31 — đoạn "chưa có code" bên trên cũng đã hết hạn TRONG NGÀY
+>
+> Ngay sau đính chính thứ nhất, toàn bộ nền code GĐ0/GĐ1 đã được dựng. Bảng dưới là trạng thái
+> mới; các cảnh báo "lệnh chưa chạy được" trước đây không còn đúng.
+
+**Trạng thái thực tế, kiểm ngày 2026-08-31 (cuối ngày):**
 
 | Hạng mục | Thực tế | Kiểm bằng |
 |---|---|---|
 | Tài liệu | ✅ 19 tài liệu trong `docs/` + 47 task file | `find docs -name "*.md" -not -path "*/tasks/*" \| wc -l` |
-| **Dữ liệu nguyên liệu** | ✅ **150 file** trong `data/ingredients/` (14 trong đó là bản ghi "không tra được", cố ý giữ để không tra lại) | `ls data/ingredients \| wc -l` |
-| Dữ liệu món ăn | ⬜ 0 file — `data/dishes/` còn trống | `ls data/dishes` |
-| Bảng tham chiếu | ⬜ 0 file — `data/reference/` còn trống | `ls data/reference` |
-| **Code** | ⬜ **0 dòng.** Chưa có Laravel, chưa có migration, chưa có database | `find . -name "*.php" \| wc -l` |
+| **Dữ liệu nguyên liệu** | ✅ **150 file** trong `data/ingredients/` (14 là bản ghi "không tra được", cố ý giữ), **đã chuẩn hoá canonical, đã qua `lacdoi:validate-data`, đã seed vào PostgreSQL** | `php artisan lacdoi:validate-data` |
+| Dữ liệu món ăn | ⬜ 0 file — `data/dishes/` còn trống (GĐ3) | `ls data/dishes/vn` |
+| Bảng tham chiếu | ✅ `usda-sr_legacy.csv` **7.793 dòng** + `regions-vn.json` + MANIFEST; **116/150 nguyên liệu đã ánh xạ `reference_food_id`, đối chiếu snapshot 0 lệch** | `data/reference/MANIFEST.json` |
+| **Code** | ✅ **Laravel 13.29 + PostgreSQL 17.11** — 12 migration (đủ R1–R9), 18 model, 5 seeder, engine calo thuần tuý, 4 lệnh `lacdoi:*`, **31 test Pest xanh** | `php artisan migrate:fresh --seed; vendor\bin\pest --no-coverage` |
+| Chưa có | pgvector (hoãn tới GĐ4), Filament (GĐ2), Foundation Foods, DATA-003/004/005/008, ING-003, TEST-002, UI-001 | [ROADMAP](docs/05-tasks/ROADMAP.md) |
 
-> **Hệ quả quan trọng:** mọi lệnh ở mục 1 bên dưới **chưa chạy được**, kể cả `migrate:fresh --seed`.
-> 150 file nguyên liệu hiện **chưa từng được nạp vào database nào** và **chưa từng qua kiểm tra tự
-> động** — vì công cụ kiểm tra chưa tồn tại. Đừng báo cáo là đã chạy chúng.
->
-> Việc tiếp theo: xem [ROADMAP](docs/05-tasks/ROADMAP.md) → [SETUP-001](docs/05-tasks/tasks/SETUP-001.md)
-> và [SETUP-003](docs/05-tasks/tasks/SETUP-003.md), để dữ liệu đã biên soạn có chỗ chạy.
+> Việc tiếp theo theo thứ tự ưu tiên: **ING-003** (150→250 nguyên liệu) song song **DATA-004/008**
+> (bảng hệ số), rồi **TEST-002** (kiểm chứng engine), rồi mở GĐ2 (ADM-001 Filament).
+> Hai việc chờ chủ dự án: **LEGAL-002** (chốt license) và **Q1** (tên chính thức).
 
 Bảng trạng thái tổng quan — **bắt buộc cập nhật mỗi khi đóng một giai đoạn**:
 
 | Giai đoạn | Nội dung | Trạng thái | Ngày đóng |
 |---|---|---|---|
-| GĐ0 | Thủ tục pháp lý + chốt định nghĩa + khởi tạo repo | 🔵 IN PROGRESS | — |
-| GĐ1 | Xương sống dữ liệu: schema + bảng nguyên liệu + engine calo | 🔵 IN PROGRESS — 150/250 nguyên liệu | — |
+| GĐ0 | Thủ tục pháp lý + chốt định nghĩa + khởi tạo repo | 🔵 IN PROGRESS — kỹ thuật xong (SETUP-001/002 ✅); còn LEGAL-002 + Q1 chờ chủ dự án | — |
+| GĐ1 | Xương sống dữ liệu: schema + bảng nguyên liệu + engine calo | 🔵 IN PROGRESS — schema ✅, engine ✅, SR Legacy ✅, validate/export ✅; còn 150/250 nguyên liệu, DATA-003/004/005/008, TEST-002 | — |
 | GĐ2 | Trình nhập liệu nội bộ (mục tiêu: 5 phút/món) | ⬜ TODO | — |
 | GĐ3 | Sản xuất dữ liệu: 150 → 500 món | ⬜ TODO | — |
 | GĐ4 | Engine gợi ý + nút Lắc bản chính thức | ⬜ TODO | — |
@@ -69,8 +72,10 @@ php artisan lacdoi:validate-data        # kiểm tra tính toàn vẹn dữ li�
 vendor\bin\pest --no-coverage           # chạy test
 ```
 
-> ⚠️ Các lệnh `lacdoi:*` **chưa tồn tại**. Chúng là đặc tả cần hiện thực ở GĐ1–GĐ2. Task tương ứng:
-> [DATA-006](docs/05-tasks/tasks/DATA-006.md), [DATA-007](docs/05-tasks/tasks/DATA-007.md).
+> ✅ **Cập nhật 2026-08-31:** cả 4 lệnh `lacdoi:*` đã tồn tại và chạy được
+> (`import-usda`, `validate-data`, `export-data`, `recompute-calories`).
+> `import-usda` cần file gốc trong `storage/imports/` — xem [DEPLOYMENT §4](docs/10-deployment/DEPLOYMENT.md).
+> Sau mỗi phiên sửa dữ liệu trong DB: `lacdoi:export-data` rồi commit (QT-3).
 
 ---
 

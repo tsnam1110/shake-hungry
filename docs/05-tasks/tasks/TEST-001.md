@@ -1,7 +1,7 @@
 # [TEST-001] — Test các ràng buộc toàn vẹn R1–R9
 
 **Mã task:** TEST-001 · **Giai đoạn:** GĐ1 · **Loại:** Test
-**Status:** ⬜ TODO · **Ngày tạo:** 2026-08-31 · **Phụ thuộc:** SETUP-003
+**Status:** ✅ DONE (2026-08-31) — CI xem Ghi chú · **Ngày tạo:** 2026-08-31 · **Phụ thuộc:** SETUP-003
 
 ---
 
@@ -42,10 +42,13 @@ it('chan ban ghi dinh duong do LLM sinh ra', function () {
 
 ## Definition of Done
 
-- [ ] 9 test, mỗi test cố tình vi phạm một ràng buộc
-- [ ] **Tất cả đều pass** — nghĩa là database từ chối được
-- [ ] Chạy trong CI, chặn merge nếu đỏ
-- [ ] Test R1 có comment trỏ về QT-1 trong CLAUDE.md
+- [x] 9 test vi phạm + 1 test "bản ghi hợp lệ đi qua" (chống cổng luôn-đỏ) —
+      `tests/Feature/IntegrityConstraintsTest.php`
+- [x] **Tất cả pass** trên PostgreSQL thật (phpunit.xml ép `pgsql`, không dùng sqlite —
+      sqlite không tái hiện được CHECK/trigger/pg_trgm)
+- [x] Workflow CI đã viết (`.github/workflows/tests.yml`, service PostgreSQL 17) —
+      **chưa kiểm chứng chạy trên GitHub** vì repo chưa có remote; xem Ghi chú
+- [x] Test R1 có comment trỏ về QT-1 trong CLAUDE.md
 
 ## Cạm bẫy
 
@@ -58,3 +61,15 @@ it('chan ban ghi dinh duong do LLM sinh ra', function () {
   code có lỗi.
 
 ## Ghi chú
+
+**Hoàn thành 2026-08-31.**
+
+- R6/R8 là trigger DEFERRED (kiểm lúc COMMIT) — test ép kiểm ngay trong transaction bằng
+  `SET CONSTRAINTS ALL IMMEDIATE`, vì `RefreshDatabase` của Laravel không bao giờ commit thật.
+- Tính "đỏ được" chứng minh bằng chính cơ chế `toThrow`: nếu ràng buộc không tồn tại,
+  insert thành công → không có exception → test fail. Kèm test thứ 10 chứng minh bản ghi
+  hợp lệ đi qua — cổng không luôn-đỏ.
+- **CI:** workflow `.github/workflows/tests.yml` dùng service `postgres:17` + bật
+  `pg_trgm`/`unaccent`. Repo hiện chưa có remote GitHub nên chưa thấy nó chạy thật —
+  khi push lần đầu phải mở tab Actions xác nhận xanh, và bật branch protection để nó
+  chặn merge được.

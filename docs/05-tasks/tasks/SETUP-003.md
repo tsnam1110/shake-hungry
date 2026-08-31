@@ -3,7 +3,7 @@
 **Mã task:** SETUP-003
 **Giai đoạn:** GĐ1
 **Loại:** Backend
-**Status:** ⬜ TODO
+**Status:** ✅ DONE (2026-08-31) — cột `embedding` chờ pgvector, xem Ghi chú
 **Ngày tạo:** 2026-08-31
 **Phụ thuộc:** SETUP-001
 
@@ -40,11 +40,13 @@ chúng là chặn cả khi code có lỗi.
 
 ## Definition of Done
 
-- [ ] `php artisan migrate:fresh` chạy sạch trên database trắng
-- [ ] Mọi bảng, cột, kiểu dữ liệu khớp [DATA-MODEL](../../03-data-model/DATA-MODEL.md)
-- [ ] 9 ràng buộc R1–R9 đã tạo và **thử nghiệm chặn được** (xem [TEST-001](./TEST-001.md))
-- [ ] Index trigram đã tạo và `EXPLAIN` cho thấy có dùng
-- [ ] Nếu schema thực tế khác tài liệu: **đã sửa DATA-MODEL trong cùng commit** (QT-7)
+- [x] `php artisan migrate:fresh` chạy sạch trên database trắng — 12 migration, 2026-08-31
+- [x] Mọi bảng, cột, kiểu dữ liệu khớp [DATA-MODEL](../../03-data-model/DATA-MODEL.md)
+- [x] 9 ràng buộc R1–R9 đã tạo và **thử nghiệm chặn được** — 10 test Pest ở
+      `tests/Feature/IntegrityConstraintsTest.php` ([TEST-001](./TEST-001.md))
+- [x] Index trigram đã tạo (`ingredients_name_vi_trgm`, `dishes_slug_trgm`, `dish_names_name_trgm`);
+      `EXPLAIN` sẽ chỉ dùng index khi bảng đủ lớn — kiểm lại ở GĐ2 khi có màn hình cảnh báo trùng
+- [x] Schema thực tế khác tài liệu 4 chỗ nhỏ: **đã đính chính DATA-MODEL trong cùng commit** (QT-7)
 
 ---
 
@@ -60,3 +62,19 @@ chúng là chặn cả khi code có lỗi.
 ---
 
 ## Ghi chú
+
+**Hoàn thành 2026-08-31.**
+
+- **Cột `embedding vector(768)` chưa tạo** vì pgvector chưa cài (xem [SETUP-001](./SETUP-001.md)
+  Ghi chú). Migration `create_dishes_tables` tự thêm cột khi extension `vector` tồn tại —
+  khi cài pgvector ở GĐ4 chỉ cần `migrate:fresh --seed`.
+- **R6/R8 là ràng buộc xuyên dòng** nên không viết được bằng `CHECK` — hiện thực bằng
+  `CONSTRAINT TRIGGER DEFERRABLE INITIALLY DEFERRED` (kiểm lúc COMMIT, để seeder chèn món
+  trước rồi chèn nguyên liệu/nguồn sau trong cùng transaction). Test ép kiểm bằng
+  `SET CONSTRAINTS ALL IMMEDIATE`.
+- **R9 hiện thực bằng khoá ngoại RESTRICT** — vừa chặn slug lỗi thời vừa chặn xoá nguyên liệu
+  đang được dùng.
+- 4 chỗ lệch với DATA-MODEL bản đầu (đã đính chính ở đó): `unit_name` 32→64,
+  `ingredient_units.grams` (8,2)→(8,3), `ingredient_units.source` varchar(16)→text,
+  danh mục category có thêm `trai-cay`/`rau-gia-vi`; thêm cột `dishes.estimated_kcal jsonb`
+  (định dạng file đã có mà bảng thiếu).

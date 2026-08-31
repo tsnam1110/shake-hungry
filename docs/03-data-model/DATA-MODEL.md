@@ -1,10 +1,29 @@
 # Mô hình dữ liệu — Lắc Đói
 
-**Cập nhật lần cuối:** 2026-08-31 — bản đầu tiên
-**Trạng thái:** ⚠️ **CHƯA HIỆN THỰC.** Đây là đặc tả. Chưa có migration nào được viết.
+**Cập nhật lần cuối:** 2026-08-31 — hiện thực xong migration ([SETUP-003](../05-tasks/tasks/SETUP-003.md)), đính chính 5 chỗ lệch với thực tế
+**Trạng thái:** ✅ **ĐÃ HIỆN THỰC** — 12 migration trong `database/migrations/`, 9 ràng buộc
+R1–R9 có test ở `tests/Feature/IntegrityConstraintsTest.php`.
 
 Khi hiện thực, migration phải khớp tài liệu này. Nếu thực tế buộc phải khác, **sửa tài liệu trong
 cùng commit** (QT-7) và ghi lý do.
+
+> ## ⚠️ Đính chính 2026-08-31 — 5 chỗ đặc tả lệch với dữ liệu thật, phát hiện khi seed 150 file
+>
+> 1. **`ingredient_units.unit_name` varchar(32) → varchar(64).** Dữ liệu thật có tên đơn vị
+>    34 ký tự ("phần ăn được từ 1 lb gà nguyên con"). `dish_ingredients.unit_name` nới theo.
+> 2. **`ingredient_units.grams` numeric(8,2) → numeric(8,3).** Hạt sen khô 0,675 g/hạt bị
+>    numeric(8,2) làm tròn thành 0,68 — phát hiện nhờ so sánh ngữ nghĩa khi kiểm DATA-007.
+> 3. **`ingredient_units.source` varchar(16) → text.** Dữ liệu thật ghi nguồn dạng
+>    "FDC 174277 foodMeasures" (23 ký tự) và dài hơn.
+> 4. **`ingredients.category`** thực tế có thêm `trai-cay` và `rau-gia-vi` so với danh mục trong
+>    DATA-REPOSITORY §3 (bảng CHECK trong migration là danh sách đúng: `thit`, `thuy-san`,
+>    `rau-cu`, `rau-gia-vi`, `gia-vi`, `tinh-bot`, `dau-mo`, `trai-cay`, `khac`).
+> 5. **Bảng `dishes` thiếu cột `estimated_kcal jsonb`** trong khi định dạng file món
+>    (DATA-REPOSITORY §3) đã có — cột đã thêm, chứa `{min, max, confidence, source_note}`
+>    cho món ăn ngoài Mức 1.
+>
+> Ngoài ra: cột `embedding vector(768)` chỉ được migration tạo khi extension `vector` đã cài
+> (pgvector hoãn có ý thức tới GĐ4 — [SETUP-001](../05-tasks/tasks/SETUP-001.md)).
 
 ---
 

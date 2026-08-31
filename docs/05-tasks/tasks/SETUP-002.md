@@ -3,7 +3,7 @@
 **Mã task:** SETUP-002
 **Giai đoạn:** GĐ0
 **Loại:** Backend
-**Status:** ⬜ TODO
+**Status:** ✅ DONE (2026-08-31)
 **Ngày tạo:** 2026-08-31
 **Phụ thuộc:** SETUP-001
 
@@ -54,11 +54,11 @@ Yêu cầu gốc từ chủ dự án: *"Mọi tài nguyên về món ăn, nguyê
 
 ## Definition of Done
 
-- [ ] Cấu trúc thư mục đúng như [DATA-REPOSITORY §2](../../04-data-sources/DATA-REPOSITORY.md)
-- [ ] Hai file MANIFEST tồn tại và đúng schema
-- [ ] `.gitignore` loại trừ `storage/imports/` và `.env`
-- [ ] `data/README.md` đã viết
-- [ ] `git status` sạch sau khi commit (không có file rác)
+- [x] Cấu trúc thư mục đúng như [DATA-REPOSITORY §2](../../04-data-sources/DATA-REPOSITORY.md)
+- [x] Hai file MANIFEST tồn tại và đúng schema
+- [x] `.gitignore` loại trừ `storage/imports/` và `.env`
+- [x] `data/README.md` đã viết
+- [x] `git status` sạch sau khi commit (không có file rác)
 
 ---
 

@@ -1,7 +1,7 @@
 # [DATA-002] — Nhập USDA SR Legacy + Foundation Foods
 
 **Mã task:** DATA-002 · **Giai đoạn:** GĐ1 · **Loại:** Dữ liệu
-**Status:** ⬜ TODO · **Ngày tạo:** 2026-08-31 · **Phụ thuộc:** DATA-006
+**Status:** 🔵 IN PROGRESS — SR Legacy xong 2026-08-31, Foundation chưa · **Ngày tạo:** 2026-08-31 · **Phụ thuộc:** DATA-006
 
 ---
 
@@ -29,11 +29,13 @@ Cả hai đều CC0 — không ràng buộc gì, dùng thương mại và phân 
 
 ## Definition of Done
 
-- [ ] `reference_foods` có dữ liệu với `fct_source` = `usda_sr_legacy` và `usda_foundation`
-- [ ] File đã lọc trong `data/reference/`, tổng < 20 MB
-- [ ] MANIFEST đầy đủ, có checksum **file gốc**
-- [ ] Nhật ký thẩm định [LICENSE-COMPLIANCE §7](../../04-data-sources/LICENSE-COMPLIANCE.md) đã cập nhật
-- [ ] Thử tra một vài thực phẩm quen thuộc, đối chiếu giá trị với trang web FDC
+- [x] `reference_foods` có `usda_sr_legacy` (7.793 dòng) — [ ] `usda_foundation` **chưa nhập**
+- [x] File đã lọc trong `data/reference/`, tổng < 20 MB (usda-sr_legacy.csv: 0,64 MB)
+- [x] MANIFEST đầy đủ, có checksum SHA-256 **file zip gốc**
+- [x] Nhật ký thẩm định [LICENSE-COMPLIANCE §7](../../04-data-sources/LICENSE-COMPLIANCE.md) đã cập nhật
+- [x] Đối chiếu giá trị: **116/116 nguyên liệu có snapshot `usda_sr_legacy` khớp tuyệt đối
+      (chênh ≤ 0,5 kcal) với bảng vừa nhập, 0 lệch** — mạnh hơn "tra một vài thực phẩm",
+      vì snapshot vốn được chép tay từ trang FDC lúc tra cứu
 
 ## Cạm bẫy
 
@@ -43,3 +45,18 @@ Cả hai đều CC0 — không ràng buộc gì, dùng thương mại và phân 
 - USDA phủ rất kém nguyên liệu Việt. Đây là điều đã biết trước, không phải lỗi nhập liệu.
 
 ## Ghi chú
+
+**2026-08-31 — SR Legacy hoàn tất, còn Foundation:**
+
+- Đã tải `FoodData_Central_sr_legacy_food_csv_2018-04.zip` (5,8 MB — nhỏ hơn nhiều con số
+  54 MB ước tính trong Bối cảnh), chạy `lacdoi:import-usda --source=sr_legacy`, nạp 7.793 dòng.
+- **Đối chiếu snapshot theo DATA-MODEL §3.1 đã chạy trong `IngredientSeeder`:** khớp
+  (chênh kcal ≤ 0,5) ⇒ gán `reference_food_id`, engine chuyển sang dùng `reference_foods`;
+  lệch ⇒ giữ null + cảnh báo, không âm thầm ghi đè. Kết quả: **116 khớp / 0 lệch.**
+- `ReferenceFoodSeeder` nạp lại bảng tham chiếu từ CSV đã lọc (đã commit) — máy trắng
+  không cần tải lại file gốc (QT-3).
+- **Còn lại:** Foundation Foods (chỉ ảnh hưởng 3 nguyên liệu đang dùng `usda_foundation`).
+  URL tải thay đổi theo bản phát hành — lấy link mới nhất tại
+  fdc.nal.usda.gov/download-datasets/ rồi chạy `lacdoi:import-usda --source=foundation`.
+  8 nguyên liệu `usda_branded` và 1 `usda_survey` tra lẻ theo mã — KHÔNG nhập nguyên bộ
+  Branded (2,9 GB) chỉ vì 8 mã; giữ snapshot làm nguồn cho tới khi có cách nhập chọn lọc.

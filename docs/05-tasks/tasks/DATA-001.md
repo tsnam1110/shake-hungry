@@ -1,7 +1,7 @@
 # [DATA-001] — Biên soạn cây `regions` Việt Nam
 
 **Mã task:** DATA-001 · **Giai đoạn:** GĐ1 · **Loại:** Dữ liệu
-**Status:** ⬜ TODO · **Ngày tạo:** 2026-08-31 · **Phụ thuộc:** SETUP-003
+**Status:** ✅ DONE (2026-08-31) · **Ngày tạo:** 2026-08-31 · **Phụ thuộc:** SETUP-003
 
 ---
 
@@ -25,10 +25,11 @@ nhập đủ 63 tỉnh ngay.
 
 ## Definition of Done
 
-- [ ] Ba vùng lớn + các tỉnh có món đặc trưng rõ rệt (Huế, Nam Định, Hà Nội, TP.HCM…)
-- [ ] Cấu trúc đệ quy đúng, `parent_id` trỏ hợp lệ
-- [ ] `country_code = 'VN'` cho mọi bản ghi
-- [ ] Seed dựng lại được từ file
+- [x] Ba vùng lớn + 14 tỉnh có món đặc trưng rõ rệt (Hà Nội, Nam Định, Hải Phòng, Thanh Hoá,
+      Nghệ An, Huế, Đà Nẵng, Quảng Nam, TP.HCM, Tiền Giang, An Giang, Cần Thơ, Sóc Trăng, Vũng Tàu)
+- [x] Cấu trúc đệ quy đúng, `parent_id` trỏ hợp lệ (seeder fail nếu cha chưa khai báo trước con)
+- [x] `country_code = 'VN'` cho mọi bản ghi
+- [x] Seed dựng lại được từ file — `data/reference/regions-vn.json` → `RegionSeeder`
 
 ## Cạm bẫy
 
