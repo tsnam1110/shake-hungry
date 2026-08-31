@@ -15,7 +15,7 @@
     "fat_g": 0.1,
     "carb_g": 6.2,
     "fiber_g": 3.6,
-    "water_g": 91.0,
+    "water_g": 91,
     "sodium_mg": null,
     "mapping_confidence": "high",
     "mapping_note": "Tên và tên khoa học khớp tuyệt đối. Lưu ý chất lượng số: năng lượng dataPoints=0 (tính bằng Atwater, không đo); đạm/béo chỉ dataPoints=1 (một mẫu).",
@@ -29,14 +29,14 @@
   "is_ready_to_eat": false,
   "units": [
     {
-      "unit_name": "lát",
-      "grams": 16,
+      "unit_name": "cup",
+      "grams": 135.0,
       "note": null,
       "source": "FDC 168424 foodMeasures"
     },
     {
-      "unit_name": "cup",
-      "grams": 135,
+      "unit_name": "lát",
+      "grams": 16.0,
       "note": null,
       "source": "FDC 168424 foodMeasures"
     }

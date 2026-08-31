@@ -15,22 +15,22 @@
     "fat_g": 1.12,
     "carb_g": 7.02,
     "fiber_g": 2.1,
-    "water_g": 86.0,
+    "water_g": 86,
     "sodium_mg": null,
     "mapping_confidence": "medium",
     "mapping_note": "Đúng loài, đúng dạng tươi. Hạ xuống medium vì đạm/béo/nước chỉ có dataPoints=2 — nền mẫu rất mỏng. 43 kcal cũng cao bất thường trong nhóm rau gia vị (các rau khác 15–32 kcal), nên đánh dấu soát lại nếu về sau có nguồn tốt hơn.",
     "alternatives": [
       {
-        "external_id": "171322",
         "name": "Spices, dill weed, dried",
-        "kcal_per_100g": null,
-        "why_not": "Dạng khô"
+        "why_not": "Dạng khô",
+        "external_id": "171322",
+        "kcal_per_100g": null
       },
       {
-        "external_id": "170925",
         "name": "Spices, dill seed",
-        "kcal_per_100g": null,
-        "why_not": "Hạt, bộ phận khác"
+        "why_not": "Hạt, bộ phận khác",
+        "external_id": "170925",
+        "kcal_per_100g": null
       }
     ]
   },
@@ -42,15 +42,15 @@
   "is_ready_to_eat": false,
   "units": [
     {
-      "unit_name": "nhánh",
-      "grams": 0.2,
-      "note": "suy từ 5 nhánh = 1 g",
-      "source": "FDC 172233 foodMeasures"
-    },
-    {
       "unit_name": "cup nhánh",
       "grams": 8.9,
       "note": null,
+      "source": "FDC 172233 foodMeasures"
+    },
+    {
+      "unit_name": "nhánh",
+      "grams": 0.2,
+      "note": "suy từ 5 nhánh = 1 g",
       "source": "FDC 172233 foodMeasures"
     }
   ],

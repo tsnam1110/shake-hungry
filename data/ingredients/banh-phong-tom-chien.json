@@ -30,7 +30,7 @@
   "units": [
     {
       "unit_name": "khẩu phần",
-      "grams": 28,
+      "grams": 28.0,
       "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam — USDA không cho số miếng, phải tự cân nếu cần",
       "source": "FDC 173160 foodMeasures"
     }

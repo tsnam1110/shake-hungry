@@ -11,10 +11,10 @@
     "kcal_per_100g": 103,
     "kcal_min": null,
     "kcal_max": null,
-    "protein_g": 22.0,
+    "protein_g": 22,
     "fat_g": 1.01,
-    "carb_g": 0.0,
-    "fiber_g": 0.0,
+    "carb_g": 0,
+    "fiber_g": 0,
     "water_g": 70.6,
     "sodium_mg": null,
     "mapping_confidence": "high",
@@ -29,15 +29,15 @@
   "is_ready_to_eat": false,
   "units": [
     {
-      "unit_name": "phi lê",
-      "grams": 198,
-      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "unit_name": "oz",
+      "grams": 85.0,
+      "note": null,
       "source": "FDC 175156 foodMeasures"
     },
     {
-      "unit_name": "oz",
-      "grams": 85,
-      "note": null,
+      "unit_name": "phi lê",
+      "grams": 198.0,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
       "source": "FDC 175156 foodMeasures"
     }
   ],

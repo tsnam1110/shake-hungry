@@ -20,6 +20,7 @@
     "mapping_note": "Dòng USDA là mì trứng kiểu Âu-Mỹ (enriched, tỷ lệ trứng cao). Mì trứng châu Á (mì vằn thắn, mì Quảng khô) ít trứng hơn. Ciqual 9863 'Pâtes ou nouilles asiatiques sèches, au blé et aux oeufs' = 371 kcal, protein 11,9, fat 3,0 — KHỚP NGỮ NGHĨA TỐT HƠN cho mì trứng VN. Giữ USDA làm nguồn chính chỉ để tuân QT-4; nếu dự án đổi sang Ciqual cho toàn nhóm tinh bột thì nên dùng 9863. Ciqual ghi độ tin cậy C (thấp) cho cả 4 chỉ số của 9863.",
     "alternatives": []
   },
+  "secondary_sources": [],
   "density_g_per_ml": 0.161,
   "density_note": "SUY RA: 38 g/cup (FDC 169731 foodMeasures) chia 236,588 ml. Rất thấp vì sợi mì khô xoăn chiếm nhiều khoảng rỗng — KHÔNG dùng làm tỉ trọng vật liệu.",
   "default_yield_factor": null,
@@ -28,13 +29,13 @@
   "units": [
     {
       "unit_name": "cup",
-      "grams": 38,
+      "grams": 38.0,
       "note": "mì khô",
       "source": "FDC 169731 foodMeasures"
     },
     {
       "unit_name": "oz",
-      "grams": 57,
+      "grams": 57.0,
       "note": null,
       "source": "FDC 169731 foodMeasures"
     }

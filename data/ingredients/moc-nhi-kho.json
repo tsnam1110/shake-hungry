@@ -13,7 +13,7 @@
     "kcal_max": null,
     "protein_g": 9.25,
     "fat_g": 0.73,
-    "carb_g": 73.0,
+    "carb_g": 73,
     "fiber_g": 70.1,
     "water_g": 14.8,
     "sodium_mg": null,
@@ -21,10 +21,10 @@
     "mapping_note": "ĐÃ LẤY ĐÚNG BẢN KHÔ (nước 14,8 g/100g). Bản tươi là 169237 = 25 kcal — CHÊNH 11,4 LẦN. Hạ xuống medium vì USDA KHÔNG ghi tên khoa học cho dòng khô này, nên không xác minh được là Auricularia polytricha (mộc nhĩ lông, phổ biến ở VN) hay A. auricula-judae. ⚠️ CẢNH BÁO NĂNG LƯỢNG CHO ENGINE CALO: carb 73,0 g nhưng xơ 70,1 g — gần như TOÀN BỘ glucid là chất xơ. Con số 284 kcal là kết quả áp Atwater 4 kcal/g cho cả phần xơ, KHÔNG phản ánh năng lượng thực hấp thu. Cân nhắc tính lại bằng hệ số xơ 2 kcal/g ở engine.",
     "alternatives": [
       {
-        "external_id": "169237",
         "name": "Jew's ear (pepeao), raw — Auricularia polytricha (TƯƠI)",
-        "kcal_per_100g": 25,
-        "why_not": "Bản tươi. Đây là dòng DUY NHẤT có tên khoa học Auricularia, dùng để đối chiếu định danh"
+        "why_not": "Bản tươi. Đây là dòng DUY NHẤT có tên khoa học Auricularia, dùng để đối chiếu định danh",
+        "external_id": "169237",
+        "kcal_per_100g": 25
       }
     ]
   },
@@ -36,14 +36,14 @@
   "is_ready_to_eat": false,
   "units": [
     {
-      "unit_name": "tai mộc nhĩ",
-      "grams": 4.5,
+      "unit_name": "cup",
+      "grams": 28.0,
       "note": "khô",
       "source": "FDC 168581 foodMeasures"
     },
     {
-      "unit_name": "cup",
-      "grams": 28,
+      "unit_name": "tai mộc nhĩ",
+      "grams": 4.5,
       "note": "khô",
       "source": "FDC 168581 foodMeasures"
     }

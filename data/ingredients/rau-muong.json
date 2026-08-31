@@ -20,19 +20,22 @@
     "mapping_note": "ĐÃ KIỂM TRA LOÀI. CẢNH BÁO CHO NGƯỜI SAU: USDA KHÔNG đặt tên bản ghi này là 'water spinach'. Tra 'water spinach' trên FDC chỉ ra Spinacia oleracea, Basella alba, Tetragonia — KHÔNG phải rau muống. Bản ghi đúng tên là 'Water convolvulus, raw' (NDB 11503), scientificName = 'Ipomoea aquatica'. Tra bằng 'kangkong' cũng ra đúng bản ghi này. Ai tra 'water spinach' rồi lấy kết quả đầu sẽ nhập nhầm rau chân vịt (23 kcal, 2,86 g protein, 2,2 g xơ) vào rau muống.",
     "alternatives": []
   },
+  "secondary_sources": [],
   "density_g_per_ml": null,
+  "density_note": null,
   "default_yield_factor": null,
   "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
   "units": [
     {
-      "unit_name": "ngọn",
-      "grams": 13,
+      "unit_name": "cup thái nhỏ",
+      "grams": 56.0,
       "note": null,
       "source": "FDC 169301 foodMeasures"
     },
     {
-      "unit_name": "cup thái nhỏ",
-      "grams": 56,
+      "unit_name": "ngọn",
+      "grams": 13.0,
       "note": null,
       "source": "FDC 169301 foodMeasures"
     }

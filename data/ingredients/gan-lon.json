@@ -14,7 +14,7 @@
     "protein_g": 21.4,
     "fat_g": 3.65,
     "carb_g": 2.47,
-    "fiber_g": 0.0,
+    "fiber_g": 0,
     "water_g": 71.1,
     "sodium_mg": 87,
     "mapping_confidence": "high",

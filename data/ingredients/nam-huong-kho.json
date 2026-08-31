@@ -21,16 +21,16 @@
     "mapping_note": "ĐÃ LẤY ĐÚNG BẢN KHÔ (nước 9,50 g/100g). Bản TƯƠI là 169242 = 34 kcal — CHÊNH 8,7 LẦN, tuyệt đối không lẫn. QUY TẮC BIÊN SOẠN: công thức Việt gần như luôn ghi nấm hương khô theo khối lượng KHÔ trước khi ngâm; nếu công thức ghi khối lượng sau khi ngâm nở thì phải dùng bản tươi hoặc áp hệ số nở. Toàn bộ chất dinh dưỡng dataPoints=0 trừ nước (=2) → số liệu gán.",
     "alternatives": [
       {
-        "external_id": "169242",
         "name": "Mushrooms, shiitake, raw (TƯƠI)",
-        "kcal_per_100g": 34,
-        "why_not": "Bản tươi — giữ lại để dùng khi công thức ghi nấm đã ngâm nở"
+        "why_not": "Bản tươi — giữ lại để dùng khi công thức ghi nấm đã ngâm nở",
+        "external_id": "169242",
+        "kcal_per_100g": 34
       },
       {
-        "external_id": "1999628",
         "name": "Mushrooms, shiitake (Foundation)",
-        "kcal_per_100g": null,
-        "why_not": "Không ghi rõ tươi hay khô trong mô tả — mơ hồ, loại"
+        "why_not": "Không ghi rõ tươi hay khô trong mô tả — mơ hồ, loại",
+        "external_id": "1999628",
+        "kcal_per_100g": null
       }
     ]
   },

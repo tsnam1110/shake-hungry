@@ -11,10 +11,10 @@
     "kcal_per_100g": 387,
     "kcal_min": null,
     "kcal_max": null,
-    "protein_g": 0.0,
-    "fat_g": 0.0,
-    "carb_g": 100.0,
-    "fiber_g": 0.0,
+    "protein_g": 0,
+    "fat_g": 0,
+    "carb_g": 100,
+    "fiber_g": 0,
     "water_g": null,
     "sodium_mg": 1,
     "mapping_confidence": "high",
@@ -29,26 +29,26 @@
   "is_ready_to_eat": false,
   "units": [
     {
-      "unit_name": "muỗng cà phê",
-      "grams": 4.2,
-      "note": null,
-      "source": "FDC 169655 foodMeasures"
-    },
-    {
       "unit_name": "cup",
       "grams": 200.0,
       "note": null,
       "source": "FDC 169655 foodMeasures"
     },
     {
-      "unit_name": "viên đường",
-      "grams": 2.3,
+      "unit_name": "gói lẻ",
+      "grams": 2.8,
       "note": null,
       "source": "FDC 169655 foodMeasures"
     },
     {
-      "unit_name": "gói lẻ",
-      "grams": 2.8,
+      "unit_name": "muỗng cà phê",
+      "grams": 4.2,
+      "note": null,
+      "source": "FDC 169655 foodMeasures"
+    },
+    {
+      "unit_name": "viên đường",
+      "grams": 2.3,
       "note": null,
       "source": "FDC 169655 foodMeasures"
     }

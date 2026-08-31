@@ -29,9 +29,9 @@
   "is_ready_to_eat": false,
   "units": [
     {
-      "unit_name": "tép",
-      "grams": 3.0,
-      "note": "cỡ tỏi tây — tỏi ta nhỏ hơn, nên cân thay vì đếm",
+      "unit_name": "cup",
+      "grams": 136.0,
+      "note": null,
       "source": "FDC 169230 foodMeasures"
     },
     {
@@ -41,9 +41,9 @@
       "source": "FDC 169230 foodMeasures"
     },
     {
-      "unit_name": "cup",
-      "grams": 136.0,
-      "note": null,
+      "unit_name": "tép",
+      "grams": 3.0,
+      "note": "cỡ tỏi tây — tỏi ta nhỏ hơn, nên cân thay vì đếm",
       "source": "FDC 169230 foodMeasures"
     }
   ],

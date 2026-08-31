@@ -21,33 +21,33 @@
     "mapping_note": "VÌ SAO KHÔNG DÙNG USDA: USDA chỉ có (a) 171595 'Sauce, tomato chili sauce, bottled' = tương ớt kiểu Mỹ nền cà chua, ăn với thịt nguội — không phải tương ớt Việt; (b) 171604 'Sauce, peppers, hot, chili, canned' = gần như thuần ớt xay, KHÔNG đường và tinh bột biến tính. Tương ớt Việt (Chin-Su, Cholimex) là hệ đường + tinh bột biến tính E1422 + tỏi + cà chua cô đặc, carb khoảng 19–25 g/100g — nằm giữa hai dòng USDA, không dòng nào thay được. THIẾU fat, fiber, sodium vì bản ghi OFF không đủ trường. Cần chụp nhãn sản phẩm thực tế để bổ sung trước khi dùng cho món có lượng tương ớt đáng kể.",
     "alternatives": [
       {
-        "external_id": "171595",
         "name": "USDA — Sauce, tomato chili sauce, bottled",
-        "kcal_per_100g": 92,
-        "why_not": "Nền cà chua kiểu Mỹ, không phải tương ớt Việt"
+        "why_not": "Nền cà chua kiểu Mỹ, không phải tương ớt Việt",
+        "external_id": "171595",
+        "kcal_per_100g": 92
       },
       {
-        "external_id": "171604",
         "name": "USDA — Sauce, peppers, hot, chili, mature red, canned",
-        "kcal_per_100g": 21,
-        "why_not": "Thuần ớt xay, không đường/tinh bột"
+        "why_not": "Thuần ớt xay, không đường/tinh bột",
+        "external_id": "171604",
+        "kcal_per_100g": 21
       }
     ]
   },
   "secondary_sources": [
     {
       "kind": "off",
+      "note": "KHÁC tương ớt thường (có xí muội). Chỉ dùng khi món ghi rõ. Bản ghi Cholimex tương ớt thường (8934637514253) tồn tại trên OFF nhưng TRỐNG toàn bộ số dinh dưỡng.",
       "brand": "Cholimex Foods — tương ớt xí muội",
-      "external_id": "8934637042510",
-      "source_url": "https://world.openfoodfacts.org/api/v2/product/8934637042510",
-      "kcal_per_100g": 104,
-      "protein_g": 0.23,
       "fat_g": 0.04,
       "carb_g": 25.1,
+      "protein_g": 0.23,
       "sodium_mg": 472,
       "confidence": "low",
+      "source_url": "https://world.openfoodfacts.org/api/v2/product/8934637042510",
+      "external_id": "8934637042510",
       "license_note": "Dữ liệu Open Food Facts, giấy phép ODbL 1.0 — bắt buộc ghi công. PHỤ THUỘC QUYẾT ĐỊNH LEGAL-002: nếu dự án không chấp nhận ràng buộc share-alike của ODbL thì phải thay bằng ảnh nhãn tự chụp trước khi phát hành.",
-      "note": "KHÁC tương ớt thường (có xí muội). Chỉ dùng khi món ghi rõ. Bản ghi Cholimex tương ớt thường (8934637514253) tồn tại trên OFF nhưng TRỐNG toàn bộ số dinh dưỡng."
+      "kcal_per_100g": 104
     }
   ],
   "density_g_per_ml": null,

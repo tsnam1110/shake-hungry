@@ -14,12 +14,13 @@
     "protein_g": 17.9,
     "fat_g": 8.93,
     "carb_g": 1.79,
-    "fiber_g": 0.0,
+    "fiber_g": 0,
     "water_g": null,
     "mapping_confidence": "low",
     "mapping_note": "USDA SR Legacy và Foundation KHÔNG có giò lụa. Đây là NHÃN DINH DƯỠNG của sản phẩm 'QUE HUONG THIT DOI, CURED PORK ROLL SAUSAGE' (Great Wall Food Co.), bán tại Mỹ. Bảng thành phần trên nhãn đúng công thức giò lụa (thịt lợn + nước + muối + đường + bột năng + tỏi), không phải chả quế hay giò thủ. LÝ DO ĐỂ low: (1) giá trị nhãn FDA làm tròn theo bậc, sai số cho phép ±20%; (2) chỉ một nhãn, không có mẫu đối chứng; (3) giò lụa VN mỗi lò một công thức, tỉ lệ mỡ khác nhau nhiều; (4) sản phẩm bán ở Mỹ có thể khác công thức trong nước. VIỆC CẦN LÀM: chụp nhãn 2–3 sản phẩm giò lụa đóng gói bán tại VN rồi thay bằng trung bình có nguồn — từ 01/01/2026 luật VN bắt buộc ghi năng lượng trên nhãn thực phẩm bao gói sẵn. ĐÃ TỪ CHỐI các số tìm được qua tìm kiếm web (136 và 230 kcal/100g) vì chúng mâu thuẫn nhau và một nguồn dẫn lại 'Viện Y tế' — nhiều khả năng chép từ bảng có bản quyền.",
     "alternatives": []
   },
+  "secondary_sources": [],
   "density_g_per_ml": null,
   "density_note": null,
   "default_yield_factor": null,
@@ -28,7 +29,7 @@
   "units": [
     {
       "unit_name": "khẩu phần nhãn 2 oz",
-      "grams": 56,
+      "grams": 56.0,
       "note": "đơn vị của nhãn Mỹ, KHÔNG phải 'khoanh giò' của VN",
       "source": "servingSize nhãn FDC 2033684"
     }

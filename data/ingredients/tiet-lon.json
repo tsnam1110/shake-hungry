@@ -14,23 +14,23 @@
     "protein_g": 19.5,
     "fat_g": 0.12,
     "carb_g": 0.8,
-    "fiber_g": 0.0,
+    "fiber_g": 0,
     "water_g": 80.5,
     "sodium_mg": 240,
     "mapping_confidence": "low",
     "mapping_note": "⚠️ SAI LOÀI — KHÔNG CÓ NGUỒN ĐÚNG LOÀI TRONG BẤT KỲ BẢNG FCT NÀO. USDA SR Legacy/Foundation KHÔNG có tiết của loài nào (tra 'blood' chỉ ra đúng 1 kết quả: Blood sausage 171618). Ciqual chỉ có TIẾT BÒ (40600), không có tiết lợn. Độ tin cậy Ciqual cho dòng này = D (mức THẤP NHẤT, giá trị được suy chứ không đo). Đối chứng độc lập từ nhãn OFF (Pork Blood, Bahay-Kubo Canada): 72,7 kcal / đạm 16,4 / béo 0 — hội tụ đủ để tin biên độ 73–82 kcal nhưng KHÔNG đủ để chốt một con số. Ngoài ra tiết ở VN hầu như luôn ăn dạng đã đông/luộc, hoặc tiết canh có pha nước mắm — natri thực tế sẽ khác xa 240 mg.",
     "alternatives": [
       {
-        "external_id": "off-0878052002828",
         "name": "Pork Blood (Bahay-Kubo, Canada)",
-        "kcal_per_100g": 72.7,
-        "why_not": "ĐÚNG loài nhưng là số ghi nhãn, làm tròn thô (béo 0, glucid 0), không có nước, không phải bảng FCT"
+        "why_not": "ĐÚNG loài nhưng là số ghi nhãn, làm tròn thô (béo 0, glucid 0), không có nước, không phải bảng FCT",
+        "external_id": "off-0878052002828",
+        "kcal_per_100g": 72.7
       },
       {
-        "external_id": "171618",
         "name": "Blood sausage (USDA SR Legacy)",
-        "kcal_per_100g": null,
-        "why_not": "Dồi tiết, có mỡ và ngũ cốc — không phải tiết"
+        "why_not": "Dồi tiết, có mỡ và ngũ cốc — không phải tiết",
+        "external_id": "171618",
+        "kcal_per_100g": null
       }
     ]
   },

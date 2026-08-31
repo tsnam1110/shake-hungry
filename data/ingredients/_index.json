@@ -1,0 +1,756 @@
+{
+  "_generated_by": "php artisan lacdoi:export-data — không sửa tay (DATA-REPOSITORY §2)",
+  "count": 150,
+  "ingredients": [
+    {
+      "slug": "banh-mi",
+      "name_vi": "Bánh mì (ổ Việt Nam)",
+      "category": "tinh-bot"
+    },
+    {
+      "slug": "banh-pho-tuoi",
+      "name_vi": "Bánh phở (tươi)",
+      "category": "tinh-bot"
+    },
+    {
+      "slug": "banh-phong-tom-chien",
+      "name_vi": "Bánh phồng tôm (đã chiên)",
+      "category": "khac"
+    },
+    {
+      "slug": "banh-phong-tom-song",
+      "name_vi": "Bánh phồng tôm (sống, chưa chiên)",
+      "category": "khac"
+    },
+    {
+      "slug": "banh-trang",
+      "name_vi": "Bánh tráng (bánh đa nem)",
+      "category": "tinh-bot"
+    },
+    {
+      "slug": "bap-bo",
+      "name_vi": "Bắp bò (sống)",
+      "category": "thit"
+    },
+    {
+      "slug": "bap-cai",
+      "name_vi": "Bắp cải (sống)",
+      "category": "rau-cu"
+    },
+    {
+      "slug": "bi-dao",
+      "name_vi": "Bí đao (sống)",
+      "category": "rau-cu"
+    },
+    {
+      "slug": "bi-do",
+      "name_vi": "Bí đỏ (bí ngô, sống)",
+      "category": "rau-cu"
+    },
+    {
+      "slug": "bo-dong-vat",
+      "name_vi": "Bơ động vật (bơ lạt)",
+      "category": "dau-mo"
+    },
+    {
+      "slug": "bo-qua",
+      "name_vi": "Bơ (quả bơ)",
+      "category": "trai-cay"
+    },
+    {
+      "slug": "bot-gao",
+      "name_vi": "Bột gạo (gạo tẻ)",
+      "category": "tinh-bot"
+    },
+    {
+      "slug": "bot-mi",
+      "name_vi": "Bột mì đa dụng",
+      "category": "tinh-bot"
+    },
+    {
+      "slug": "bot-nang",
+      "name_vi": "Bột năng (tinh bột sắn)",
+      "category": "tinh-bot"
+    },
+    {
+      "slug": "bot-nghe",
+      "name_vi": "Bột nghệ",
+      "category": "gia-vi"
+    },
+    {
+      "slug": "bun-kho",
+      "name_vi": "Bún khô (và bánh phở khô)",
+      "category": "tinh-bot"
+    },
+    {
+      "slug": "bun-tuoi",
+      "name_vi": "Bún tươi",
+      "category": "tinh-bot"
+    },
+    {
+      "slug": "ca-basa",
+      "name_vi": "Cá basa (phi lê, sống)",
+      "category": "thuy-san"
+    },
+    {
+      "slug": "ca-chep",
+      "name_vi": "Cá chép (sống)",
+      "category": "thuy-san"
+    },
+    {
+      "slug": "ca-chua",
+      "name_vi": "Cà chua (chín, sống)",
+      "category": "rau-cu"
+    },
+    {
+      "slug": "ca-loc",
+      "name_vi": "Cá lóc (sống)",
+      "category": "thuy-san"
+    },
+    {
+      "slug": "ca-ngu-van",
+      "name_vi": "Cá ngừ vằn (cá ngừ sọc dưa, sống)",
+      "category": "thuy-san"
+    },
+    {
+      "slug": "ca-ro-phi",
+      "name_vi": "Cá rô phi (sống)",
+      "category": "thuy-san"
+    },
+    {
+      "slug": "ca-rot",
+      "name_vi": "Cà rốt (sống)",
+      "category": "rau-cu"
+    },
+    {
+      "slug": "ca-thu",
+      "name_vi": "Cá thu (sống)",
+      "category": "thuy-san"
+    },
+    {
+      "slug": "ca-tim",
+      "name_vi": "Cà tím (sống)",
+      "category": "rau-cu"
+    },
+    {
+      "slug": "ca-trich",
+      "name_vi": "Cá trích (sống)",
+      "category": "thuy-san"
+    },
+    {
+      "slug": "cai-xanh",
+      "name_vi": "Cải xanh (cải bẹ xanh, sống)",
+      "category": "rau-cu"
+    },
+    {
+      "slug": "cam",
+      "name_vi": "Cam (cam vàng, cam Vinh)",
+      "category": "trai-cay"
+    },
+    {
+      "slug": "cha-ca-vien",
+      "name_vi": "Chả cá viên (cá xay quết)",
+      "category": "thuy-san"
+    },
+    {
+      "slug": "chanh",
+      "name_vi": "Chanh",
+      "category": "trai-cay"
+    },
+    {
+      "slug": "chao",
+      "name_vi": "Chao (đậu phụ lên men)",
+      "category": "gia-vi"
+    },
+    {
+      "slug": "chuoi",
+      "name_vi": "Chuối tiêu",
+      "category": "trai-cay"
+    },
+    {
+      "slug": "com-trang",
+      "name_vi": "Cơm trắng (đã nấu)",
+      "category": "tinh-bot"
+    },
+    {
+      "slug": "cua-dong",
+      "name_vi": "Cua đồng",
+      "category": "thuy-san"
+    },
+    {
+      "slug": "cui-dua-nao",
+      "name_vi": "Cùi dừa nạo (dừa già)",
+      "category": "khac"
+    },
+    {
+      "slug": "da-day-lon",
+      "name_vi": "Dạ dày lợn (bao tử, sống)",
+      "category": "thit"
+    },
+    {
+      "slug": "dam-gao",
+      "name_vi": "Dấm gạo",
+      "category": "gia-vi"
+    },
+    {
+      "slug": "dau-an",
+      "name_vi": "Dầu ăn thực vật",
+      "category": "dau-mo"
+    },
+    {
+      "slug": "dau-bap",
+      "name_vi": "Đậu bắp (sống)",
+      "category": "rau-cu"
+    },
+    {
+      "slug": "dau-den-hat",
+      "name_vi": "Đậu đen (hạt khô)",
+      "category": "khac"
+    },
+    {
+      "slug": "dau-do-hat",
+      "name_vi": "Đậu đỏ (hạt khô)",
+      "category": "khac"
+    },
+    {
+      "slug": "dau-hao",
+      "name_vi": "Dầu hào",
+      "category": "gia-vi"
+    },
+    {
+      "slug": "dau-me",
+      "name_vi": "Dầu mè (dầu vừng)",
+      "category": "dau-mo"
+    },
+    {
+      "slug": "dau-phu",
+      "name_vi": "Đậu phụ (đậu phụ trắng)",
+      "category": "khac"
+    },
+    {
+      "slug": "dau-que",
+      "name_vi": "Đậu que (đậu cove, sống)",
+      "category": "rau-cu"
+    },
+    {
+      "slug": "dau-xanh-hat",
+      "name_vi": "Đậu xanh (hạt khô)",
+      "category": "khac"
+    },
+    {
+      "slug": "du-du-chin",
+      "name_vi": "Đu đủ chín",
+      "category": "trai-cay"
+    },
+    {
+      "slug": "dua-hau",
+      "name_vi": "Dưa hấu",
+      "category": "trai-cay"
+    },
+    {
+      "slug": "dua-thom",
+      "name_vi": "Dứa (thơm, khóm)",
+      "category": "trai-cay"
+    },
+    {
+      "slug": "dui-ga",
+      "name_vi": "Đùi gà (có da, bỏ xương, sống)",
+      "category": "thit"
+    },
+    {
+      "slug": "duong-trang",
+      "name_vi": "Đường trắng (đường cát)",
+      "category": "gia-vi"
+    },
+    {
+      "slug": "gan-ga",
+      "name_vi": "Gan gà (sống)",
+      "category": "thit"
+    },
+    {
+      "slug": "gan-lon",
+      "name_vi": "Gan lợn (sống)",
+      "category": "thit"
+    },
+    {
+      "slug": "gao-nep",
+      "name_vi": "Gạo nếp (sống)",
+      "category": "tinh-bot"
+    },
+    {
+      "slug": "gao-te",
+      "name_vi": "Gạo tẻ (sống)",
+      "category": "tinh-bot"
+    },
+    {
+      "slug": "gia-do",
+      "name_vi": "Giá đỗ (giá đậu xanh, sống)",
+      "category": "rau-cu"
+    },
+    {
+      "slug": "gio-lua",
+      "name_vi": "Giò lụa (chả lụa)",
+      "category": "thit"
+    },
+    {
+      "slug": "gung",
+      "name_vi": "Gừng",
+      "category": "gia-vi"
+    },
+    {
+      "slug": "hanh-la",
+      "name_vi": "Hành lá",
+      "category": "rau-gia-vi"
+    },
+    {
+      "slug": "hanh-tay",
+      "name_vi": "Hành tây (sống)",
+      "category": "rau-cu"
+    },
+    {
+      "slug": "hanh-tim",
+      "name_vi": "Hành tím (hành khô, sống)",
+      "category": "gia-vi"
+    },
+    {
+      "slug": "hat-dieu-rang",
+      "name_vi": "Hạt điều rang (không muối)",
+      "category": "khac"
+    },
+    {
+      "slug": "hat-sen-kho",
+      "name_vi": "Hạt sen khô",
+      "category": "khac"
+    },
+    {
+      "slug": "hat-sen-tuoi",
+      "name_vi": "Hạt sen tươi",
+      "category": "khac"
+    },
+    {
+      "slug": "hat-tieu-den",
+      "name_vi": "Hạt tiêu đen (xay)",
+      "category": "gia-vi"
+    },
+    {
+      "slug": "hung-que",
+      "name_vi": "Húng quế",
+      "category": "rau-gia-vi"
+    },
+    {
+      "slug": "khoai-lang",
+      "name_vi": "Khoai lang (sống)",
+      "category": "rau-cu"
+    },
+    {
+      "slug": "khoai-tay",
+      "name_vi": "Khoai tây (sống)",
+      "category": "rau-cu"
+    },
+    {
+      "slug": "kinh-gioi",
+      "name_vi": "Kinh giới",
+      "category": "rau-gia-vi"
+    },
+    {
+      "slug": "la-lot",
+      "name_vi": "Lá lốt",
+      "category": "rau-gia-vi"
+    },
+    {
+      "slug": "lac-rang",
+      "name_vi": "Lạc (đậu phộng) rang",
+      "category": "khac"
+    },
+    {
+      "slug": "lac-song",
+      "name_vi": "Lạc sống (đậu phộng chưa rang)",
+      "category": "khac"
+    },
+    {
+      "slug": "lap-xuong",
+      "name_vi": "Lạp xưởng",
+      "category": "thit"
+    },
+    {
+      "slug": "long-non-lon",
+      "name_vi": "Lòng non lợn (ruột non, sống)",
+      "category": "thit"
+    },
+    {
+      "slug": "mam-ruoc",
+      "name_vi": "Mắm ruốc",
+      "category": "gia-vi"
+    },
+    {
+      "slug": "mam-tom",
+      "name_vi": "Mắm tôm",
+      "category": "gia-vi"
+    },
+    {
+      "slug": "mang-tuoi",
+      "name_vi": "Măng tươi",
+      "category": "rau-cu"
+    },
+    {
+      "slug": "mat-ong",
+      "name_vi": "Mật ong",
+      "category": "gia-vi"
+    },
+    {
+      "slug": "me-chin",
+      "name_vi": "Me chín",
+      "category": "trai-cay"
+    },
+    {
+      "slug": "mi-chinh",
+      "name_vi": "Mì chính (bột ngọt)",
+      "category": "gia-vi"
+    },
+    {
+      "slug": "mi-trung-kho",
+      "name_vi": "Mì trứng (khô)",
+      "category": "tinh-bot"
+    },
+    {
+      "slug": "mien-dong",
+      "name_vi": "Miến dong",
+      "category": "tinh-bot"
+    },
+    {
+      "slug": "mit-chin",
+      "name_vi": "Mít chín",
+      "category": "trai-cay"
+    },
+    {
+      "slug": "mo-lon-nuoc",
+      "name_vi": "Mỡ lợn (nước, đã thắng)",
+      "category": "dau-mo"
+    },
+    {
+      "slug": "moc-nhi-kho",
+      "name_vi": "Mộc nhĩ khô",
+      "category": "rau-cu"
+    },
+    {
+      "slug": "mong-toi",
+      "name_vi": "Mồng tơi",
+      "category": "rau-cu"
+    },
+    {
+      "slug": "muc-ong",
+      "name_vi": "Mực ống (sống)",
+      "category": "thuy-san"
+    },
+    {
+      "slug": "muoi",
+      "name_vi": "Muối ăn",
+      "category": "gia-vi"
+    },
+    {
+      "slug": "muop",
+      "name_vi": "Mướp hương (sống)",
+      "category": "rau-cu"
+    },
+    {
+      "slug": "nam-huong-kho",
+      "name_vi": "Nấm hương khô",
+      "category": "rau-cu"
+    },
+    {
+      "slug": "nam-rom",
+      "name_vi": "Nấm rơm",
+      "category": "rau-cu"
+    },
+    {
+      "slug": "nem-chua",
+      "name_vi": "Nem chua",
+      "category": "thit"
+    },
+    {
+      "slug": "nghe-tuoi",
+      "name_vi": "Nghệ tươi (củ)",
+      "category": "gia-vi"
+    },
+    {
+      "slug": "ngheu",
+      "name_vi": "Nghêu (thịt, sống)",
+      "category": "thuy-san"
+    },
+    {
+      "slug": "ngo-gai",
+      "name_vi": "Ngò gai (mùi tàu)",
+      "category": "rau-gia-vi"
+    },
+    {
+      "slug": "ngo-ngot",
+      "name_vi": "Ngô ngọt (hạt, sống)",
+      "category": "rau-cu"
+    },
+    {
+      "slug": "nhan",
+      "name_vi": "Nhãn",
+      "category": "trai-cay"
+    },
+    {
+      "slug": "nuoc-cot-dua",
+      "name_vi": "Nước cốt dừa",
+      "category": "khac"
+    },
+    {
+      "slug": "nuoc-mam-cong-nghiep",
+      "name_vi": "Nước mắm công nghiệp (pha đường, độ đạm thấp)",
+      "category": "gia-vi"
+    },
+    {
+      "slug": "nuoc-mam-truyen-thong",
+      "name_vi": "Nước mắm truyền thống (cốt cá cơm, độ đạm cao)",
+      "category": "gia-vi"
+    },
+    {
+      "slug": "nuoc-tuong",
+      "name_vi": "Nước tương (xì dầu)",
+      "category": "gia-vi"
+    },
+    {
+      "slug": "oc-buou",
+      "name_vi": "Ốc bươu (ốc nhồi)",
+      "category": "thuy-san"
+    },
+    {
+      "slug": "oi",
+      "name_vi": "Ổi",
+      "category": "trai-cay"
+    },
+    {
+      "slug": "ot-tuoi",
+      "name_vi": "Ớt tươi (ớt đỏ)",
+      "category": "gia-vi"
+    },
+    {
+      "slug": "pate-gan",
+      "name_vi": "Pate gan lợn",
+      "category": "thit"
+    },
+    {
+      "slug": "rau-can-ta",
+      "name_vi": "Rau cần ta",
+      "category": "rau-gia-vi"
+    },
+    {
+      "slug": "rau-mui",
+      "name_vi": "Rau mùi (ngò rí)",
+      "category": "rau-gia-vi"
+    },
+    {
+      "slug": "rau-muong",
+      "name_vi": "Rau muống (sống)",
+      "category": "rau-cu"
+    },
+    {
+      "slug": "rau-ngo",
+      "name_vi": "Rau ngổ",
+      "category": "rau-gia-vi"
+    },
+    {
+      "slug": "rau-ram",
+      "name_vi": "Rau răm",
+      "category": "rau-gia-vi"
+    },
+    {
+      "slug": "rieng",
+      "name_vi": "Riềng (củ tươi)",
+      "category": "gia-vi"
+    },
+    {
+      "slug": "sa",
+      "name_vi": "Sả",
+      "category": "gia-vi"
+    },
+    {
+      "slug": "su-hao",
+      "name_vi": "Su hào (sống)",
+      "category": "rau-cu"
+    },
+    {
+      "slug": "sua-chua",
+      "name_vi": "Sữa chua không đường",
+      "category": "khac"
+    },
+    {
+      "slug": "sua-dac",
+      "name_vi": "Sữa đặc có đường",
+      "category": "khac"
+    },
+    {
+      "slug": "sua-tuoi",
+      "name_vi": "Sữa tươi nguyên kem (không đường)",
+      "category": "khac"
+    },
+    {
+      "slug": "suon-lon",
+      "name_vi": "Sườn lợn (sườn non, sống)",
+      "category": "thit"
+    },
+    {
+      "slug": "sup-lo-xanh",
+      "name_vi": "Súp lơ xanh (sống)",
+      "category": "rau-cu"
+    },
+    {
+      "slug": "tep",
+      "name_vi": "Tép (tôm nhỏ nước ngọt)",
+      "category": "thuy-san"
+    },
+    {
+      "slug": "thanh-long",
+      "name_vi": "Thanh long",
+      "category": "trai-cay"
+    },
+    {
+      "slug": "thi-la",
+      "name_vi": "Thì là",
+      "category": "rau-gia-vi"
+    },
+    {
+      "slug": "thit-bo-nam",
+      "name_vi": "Thịt bò nạm (sống)",
+      "category": "thit"
+    },
+    {
+      "slug": "thit-bo-than",
+      "name_vi": "Thịt bò thăn (sống)",
+      "category": "thit"
+    },
+    {
+      "slug": "thit-bo-xay",
+      "name_vi": "Thịt bò xay (90% nạc)",
+      "category": "thit"
+    },
+    {
+      "slug": "thit-ga-co-da",
+      "name_vi": "Thịt gà có da (sống, bỏ xương)",
+      "category": "thit"
+    },
+    {
+      "slug": "thit-lon-ba-chi",
+      "name_vi": "Thịt lợn ba chỉ (sống)",
+      "category": "thit"
+    },
+    {
+      "slug": "thit-lon-nac-vai",
+      "name_vi": "Thịt lợn nạc vai (sống)",
+      "category": "thit"
+    },
+    {
+      "slug": "thit-lon-than-ngoai",
+      "name_vi": "Thịt lợn thăn ngoại (sống)",
+      "category": "thit"
+    },
+    {
+      "slug": "thit-lon-than-noi",
+      "name_vi": "Thịt lợn thăn nội (phi lê, sống)",
+      "category": "thit"
+    },
+    {
+      "slug": "thit-lon-xay",
+      "name_vi": "Thịt lợn xay (84% nạc)",
+      "category": "thit"
+    },
+    {
+      "slug": "thit-vit-co-da",
+      "name_vi": "Thịt vịt có da (sống)",
+      "category": "thit"
+    },
+    {
+      "slug": "thit-vit-khong-da",
+      "name_vi": "Thịt vịt không da (sống)",
+      "category": "thit"
+    },
+    {
+      "slug": "tia-to",
+      "name_vi": "Tía tô",
+      "category": "rau-gia-vi"
+    },
+    {
+      "slug": "tiet-lon",
+      "name_vi": "Tiết lợn (huyết lợn)",
+      "category": "thit"
+    },
+    {
+      "slug": "tim-lon",
+      "name_vi": "Tim lợn (sống)",
+      "category": "thit"
+    },
+    {
+      "slug": "toi",
+      "name_vi": "Tỏi (sống)",
+      "category": "gia-vi"
+    },
+    {
+      "slug": "tom-kho",
+      "name_vi": "Tôm khô",
+      "category": "thuy-san"
+    },
+    {
+      "slug": "tom-su",
+      "name_vi": "Tôm sú (bỏ vỏ, sống)",
+      "category": "thuy-san"
+    },
+    {
+      "slug": "trung-cut",
+      "name_vi": "Trứng cút (sống, cả quả)",
+      "category": "thit"
+    },
+    {
+      "slug": "trung-ga",
+      "name_vi": "Trứng gà (nguyên quả, sống)",
+      "category": "thit"
+    },
+    {
+      "slug": "trung-vit",
+      "name_vi": "Trứng vịt (nguyên quả, sống)",
+      "category": "thit"
+    },
+    {
+      "slug": "tuong-ban",
+      "name_vi": "Tương bần (tương đậu nành kiểu Việt)",
+      "category": "gia-vi"
+    },
+    {
+      "slug": "tuong-ot",
+      "name_vi": "Tương ớt",
+      "category": "gia-vi"
+    },
+    {
+      "slug": "uc-ga",
+      "name_vi": "Ức gà (không da, sống)",
+      "category": "thit"
+    },
+    {
+      "slug": "vai",
+      "name_vi": "Vải",
+      "category": "trai-cay"
+    },
+    {
+      "slug": "vung",
+      "name_vi": "Vừng (mè) nguyên vỏ, sống",
+      "category": "khac"
+    },
+    {
+      "slug": "vung-rang",
+      "name_vi": "Vừng (mè) rang",
+      "category": "khac"
+    },
+    {
+      "slug": "xa-lach",
+      "name_vi": "Xà lách (lá rời)",
+      "category": "rau-cu"
+    },
+    {
+      "slug": "xoai",
+      "name_vi": "Xoài chín",
+      "category": "trai-cay"
+    }
+  ]
+}

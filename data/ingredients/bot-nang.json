@@ -21,16 +21,16 @@
     "mapping_note": "MỤC KHÓ NHẤT MẺ NÀY. USDA KHÔNG có bản ghi SR Legacy/Foundation nào cho tinh bột sắn tinh khiết. Đã kiểm đúng bẫy: 'Tapioca, pearl, dry' (169717) là TRÂN CHÂU (hạt bột đã hồ hoá), không phải bột năng; 'Flour, cassava' (2512377) là bột củ sắn NGUYÊN XAY, còn xơ và đạm. Đành dùng Branded ERAWAN — đúng nhận dạng sản phẩm (thành phần: MANIOC, WATER), nhưng số nhãn bị làm tròn thô (đạm 0, béo 0, xơ 0, Na 0) và derivation là 'Calculated from a daily value percentage', tức SUY TỪ %DV chứ không phân tích. ⚠️ Nếu dự án muốn giữ một FCT duy nhất theo QT-4, dùng 169717 (358 kcal) làm proxy và ghi rõ là proxy.",
     "alternatives": [
       {
-        "external_id": "169717",
         "name": "Tapioca, pearl, dry (SR Legacy)",
-        "kcal_per_100g": 358,
-        "why_not": "Là hạt trân châu chứ không phải bột; nhưng thành phần gần trùng (đạm 0,19, béo 0,02, carb 88,7, nước 11,0) nên dùng được làm proxy SR Legacy nếu cần giữ QT-4"
+        "why_not": "Là hạt trân châu chứ không phải bột; nhưng thành phần gần trùng (đạm 0,19, béo 0,02, carb 88,7, nước 11,0) nên dùng được làm proxy SR Legacy nếu cần giữ QT-4",
+        "external_id": "169717",
+        "kcal_per_100g": 358
       },
       {
-        "external_id": "2512377",
         "name": "Flour, cassava (Foundation)",
-        "kcal_per_100g": null,
-        "why_not": "Bột củ sắn nguyên xay — còn xơ, đạm, khoáng. KHÁC tinh bột sắn"
+        "why_not": "Bột củ sắn nguyên xay — còn xơ, đạm, khoáng. KHÁC tinh bột sắn",
+        "external_id": "2512377",
+        "kcal_per_100g": null
       }
     ]
   },
@@ -43,7 +43,7 @@
   "units": [
     {
       "unit_name": "muỗng canh",
-      "grams": 10,
+      "grams": 10.0,
       "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
       "source": "nhãn ERAWAN FDC 364844"
     }

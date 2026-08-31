@@ -29,15 +29,15 @@
   "is_ready_to_eat": false,
   "units": [
     {
-      "unit_name": "quả",
-      "grams": 9.6,
-      "note": "phần ăn được, đã bỏ vỏ và hạt",
+      "unit_name": "cup",
+      "grams": 190.0,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
       "source": "FDC 169086 foodMeasures"
     },
     {
-      "unit_name": "cup",
-      "grams": 190,
-      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "unit_name": "quả",
+      "grams": 9.6,
+      "note": "phần ăn được, đã bỏ vỏ và hạt",
       "source": "FDC 169086 foodMeasures"
     }
   ],

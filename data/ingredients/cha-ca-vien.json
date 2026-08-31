@@ -21,22 +21,22 @@
     "mapping_note": "⚠️ 'CHẢ CÁ LÃ VỌNG' KHÔNG PHẢI NGUYÊN LIỆU NÀY — đó là một MÓN (cá lăng ướp nghệ và mẻ rồi rán với thì là), phải nhập như một MÓN có công thức, không phải nguyên liệu. Bản ghi này là chả cá VIÊN / chả cá quết. Chọn 1913804 vì bảng thành phần khớp nhất với chả cá VN (51% thịt cá đổng + tinh bột khoai tây + muối + bột ngọt + đường) — đúng kiểu 'cá + bột + gia vị', KHÔNG có rau độn. Nhưng đây là SỐ GHI NHÃN (làm tròn thô: đạm đúng 7, glucid đúng 8), không phải phép đo FCT; natri 850 mg phản ánh công thức riêng của nhà sản xuất đó. Biên độ thực tế của nhóm này là 70–178 kcal. CHẢ CÁ CHIÊN sẽ cao hơn hẳn do ngấm dầu — con số 70 kcal chỉ đúng cho chả cá luộc/hấp.",
     "alternatives": [
       {
-        "external_id": "2090458",
         "name": "FISH BALLS (Khong Guan Corporation)",
-        "kcal_per_100g": 178,
-        "why_not": "Có dầu đậu nành + cải bắp + măng độn — công thức khác chả cá VN. Cận trên"
+        "why_not": "Có dầu đậu nành + cải bắp + măng độn — công thức khác chả cá VN. Cận trên",
+        "external_id": "2090458",
+        "kcal_per_100g": 178
       },
       {
-        "external_id": "173702",
         "name": "Fish, surimi (USDA SR Legacy)",
-        "kcal_per_100g": 99,
-        "why_not": "Surimi là BÁN THÀNH PHẨM cá xay rửa, chưa phải chả cá đã định hình/nấu. Là dòng SR Legacy chất lượng cao nhất trong nhóm nếu chấp nhận sai lệch mức độ chế biến"
+        "why_not": "Surimi là BÁN THÀNH PHẨM cá xay rửa, chưa phải chả cá đã định hình/nấu. Là dòng SR Legacy chất lượng cao nhất trong nhóm nếu chấp nhận sai lệch mức độ chế biến",
+        "external_id": "173702",
+        "kcal_per_100g": 99
       },
       {
-        "external_id": "2706550",
         "name": "Fish, cake or patty (USDA Survey)",
-        "kcal_per_100g": 212,
-        "why_not": "Chả cá kiểu Âu-Mỹ: tẩm bột chiên, có xơ 1,2 g từ vụn bánh — sai hẳn bản chất món"
+        "why_not": "Chả cá kiểu Âu-Mỹ: tẩm bột chiên, có xơ 1,2 g từ vụn bánh — sai hẳn bản chất món",
+        "external_id": "2706550",
+        "kcal_per_100g": 212
       }
     ]
   },

@@ -15,28 +15,28 @@
     "fat_g": 0.15,
     "carb_g": 2.87,
     "fiber_g": 1.3,
-    "water_g": 95.0,
+    "water_g": 95,
     "sodium_mg": null,
     "mapping_confidence": "medium",
     "mapping_note": "USDA tách 4 giống xà lách riêng biệt, buộc phải chọn. Chọn green leaf (lá rời) vì xà lách ăn kèm bún chả / gỏi cuốn / bánh xèo ở VN là loại lá mềm rời, không cuốn bắp. Nếu công thức ghi rõ 'xà lách búp / Đà Lạt' thì phải đổi sang butterhead 168429. Biên độ giữa 4 giống chỉ 13–17 kcal nên sai số do chọn sai giống tối đa 4 kcal/100g — rủi ro thấp.",
     "alternatives": [
       {
-        "external_id": "168429",
         "name": "Lettuce, butterhead (boston/bibb), raw",
-        "kcal_per_100g": 13,
-        "why_not": "Ứng viên sát nhất cho 'xà lách búp / Đà Lạt' — dùng dòng này nếu công thức ghi rõ xà lách cuốn bắp"
+        "why_not": "Ứng viên sát nhất cho 'xà lách búp / Đà Lạt' — dùng dòng này nếu công thức ghi rõ xà lách cuốn bắp",
+        "external_id": "168429",
+        "kcal_per_100g": 13
       },
       {
-        "external_id": "169247",
         "name": "Lettuce, cos or romaine, raw",
-        "kcal_per_100g": 17,
-        "why_not": "Lá dày đứng, không phải loại phổ biến ăn kèm ở VN"
+        "why_not": "Lá dày đứng, không phải loại phổ biến ăn kèm ở VN",
+        "external_id": "169247",
+        "kcal_per_100g": 17
       },
       {
-        "external_id": "169248",
         "name": "Lettuce, iceberg (crisphead), raw",
-        "kcal_per_100g": 14,
-        "why_not": "Xà lách Mỹ giòn cuốn bắp chặt, hầu như không dùng ăn kèm món Việt truyền thống"
+        "why_not": "Xà lách Mỹ giòn cuốn bắp chặt, hầu như không dùng ăn kèm món Việt truyền thống",
+        "external_id": "169248",
+        "kcal_per_100g": 14
       }
     ]
   },
@@ -48,18 +48,6 @@
   "is_ready_to_eat": false,
   "units": [
     {
-      "unit_name": "lá trong",
-      "grams": 4.8,
-      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
-      "source": "FDC 169249 foodMeasures"
-    },
-    {
-      "unit_name": "lá ngoài",
-      "grams": 24.0,
-      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
-      "source": "FDC 169249 foodMeasures"
-    },
-    {
       "unit_name": "cup thái sợi",
       "grams": 36.0,
       "note": null,
@@ -69,6 +57,18 @@
       "unit_name": "cây",
       "grams": 360.0,
       "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam — cây xà lách VN thường nhỏ hơn",
+      "source": "FDC 169249 foodMeasures"
+    },
+    {
+      "unit_name": "lá ngoài",
+      "grams": 24.0,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "source": "FDC 169249 foodMeasures"
+    },
+    {
+      "unit_name": "lá trong",
+      "grams": 4.8,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
       "source": "FDC 169249 foodMeasures"
     }
   ],

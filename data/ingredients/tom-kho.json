@@ -13,18 +13,18 @@
     "kcal_max": 250,
     "protein_g": 51.05,
     "fat_g": 3.4,
-    "carb_g": 0.0,
-    "fiber_g": 0.0,
+    "carb_g": 0,
+    "fiber_g": 0,
     "water_g": 39.62,
     "sodium_mg": null,
     "mapping_confidence": "medium",
     "mapping_note": "ĐÃ LẤY ĐÚNG BẢN KHÔ, không phải tươi (tôm tươi 71–85 kcal, lệch khoảng 3,5 lần). NHƯNG ĐỘ KHÔ KHÁC NHAU RẤT NHIỀU giữa các nguồn: bản USDA Survey có nước 39,6 g, trong khi bản Nhật (MEXT 干しえび) chỉ 24,2 g → 213 kcal. Tôm khô VN loại phơi kỹ (thường 20–25% ẩm) gần bản Nhật hơn, nên giá trị thực có thể nghiêng về đầu 250 trở lên. Khoảng 213–250 là giữa hai giá trị đã tra thật. LƯU Ý NGUỒN: đây là USDA Survey (FNDDS) — dữ liệu khảo sát dẫn xuất từ SR, không phải phép đo gốc, nên hạ confidence. water_g là KHOÁ QUY ĐỔI của nguyên liệu khô — nếu công thức dùng loại khô hơn/ướt hơn thì phải quy lại.",
     "alternatives": [
       {
-        "external_id": "174210",
         "name": "Crustaceans, shrimp, raw",
-        "kcal_per_100g": 71,
-        "why_not": "TÔM TƯƠI — tuyệt đối không dùng thay tôm khô"
+        "why_not": "TÔM TƯƠI — tuyệt đối không dùng thay tôm khô",
+        "external_id": "174210",
+        "kcal_per_100g": 71
       }
     ]
   },
@@ -37,7 +37,7 @@
   "units": [
     {
       "unit_name": "cup",
-      "grams": 135,
+      "grams": 135.0,
       "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
       "source": "FDC 2706366 foodMeasures"
     }

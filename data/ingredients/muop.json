@@ -29,15 +29,15 @@
   "is_ready_to_eat": false,
   "units": [
     {
-      "unit_name": "quả",
-      "grams": 178,
-      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "unit_name": "cup thái miếng",
+      "grams": 95.0,
+      "note": null,
       "source": "FDC 168414 foodMeasures"
     },
     {
-      "unit_name": "cup thái miếng",
-      "grams": 95,
-      "note": null,
+      "unit_name": "quả",
+      "grams": 178.0,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
       "source": "FDC 168414 foodMeasures"
     }
   ],

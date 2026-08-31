@@ -14,7 +14,7 @@
     "protein_g": 1.82,
     "fat_g": 0.75,
     "carb_g": 17.8,
-    "fiber_g": 2.0,
+    "fiber_g": 2,
     "water_g": 78.9,
     "sodium_mg": 13,
     "mapping_confidence": "high",
@@ -29,15 +29,15 @@
   "is_ready_to_eat": false,
   "units": [
     {
-      "unit_name": "muỗng cà phê băm",
-      "grams": 2,
-      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
-      "source": "FDC 169231 foodMeasures"
-    },
-    {
       "unit_name": "lát",
       "grams": 2.2,
       "note": "suy từ 5 lát đường kính 2,5 cm = 11 g. CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "source": "FDC 169231 foodMeasures"
+    },
+    {
+      "unit_name": "muỗng cà phê băm",
+      "grams": 2.0,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
       "source": "FDC 169231 foodMeasures"
     }
   ],

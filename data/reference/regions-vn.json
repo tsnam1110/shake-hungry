@@ -1,0 +1,23 @@
+{
+  "_comment": "Cây địa lý ẩm thực Việt Nam — task DATA-001. Ranh giới theo cách người ăn hiểu, không phải ranh giới hành chính. Chỉ thêm tỉnh khi có món đặc trưng rõ rệt. Seed bởi RegionSeeder.",
+  "regions": [
+    { "code": "vn", "name": "Việt Nam", "level": "country", "country_code": "VN", "parent_code": null },
+    { "code": "vn-north", "name": "Bắc Bộ", "level": "macro_region", "country_code": "VN", "parent_code": "vn" },
+    { "code": "vn-central", "name": "Trung Bộ", "level": "macro_region", "country_code": "VN", "parent_code": "vn" },
+    { "code": "vn-south", "name": "Nam Bộ", "level": "macro_region", "country_code": "VN", "parent_code": "vn" },
+    { "code": "vn-ha-noi", "name": "Hà Nội", "level": "province", "country_code": "VN", "parent_code": "vn-north" },
+    { "code": "vn-nam-dinh", "name": "Nam Định", "level": "province", "country_code": "VN", "parent_code": "vn-north" },
+    { "code": "vn-hai-phong", "name": "Hải Phòng", "level": "province", "country_code": "VN", "parent_code": "vn-north" },
+    { "code": "vn-thanh-hoa", "name": "Thanh Hoá", "level": "province", "country_code": "VN", "parent_code": "vn-central" },
+    { "code": "vn-nghe-an", "name": "Nghệ An", "level": "province", "country_code": "VN", "parent_code": "vn-central" },
+    { "code": "vn-hue", "name": "Huế", "level": "province", "country_code": "VN", "parent_code": "vn-central" },
+    { "code": "vn-da-nang", "name": "Đà Nẵng", "level": "province", "country_code": "VN", "parent_code": "vn-central" },
+    { "code": "vn-quang-nam", "name": "Quảng Nam", "level": "province", "country_code": "VN", "parent_code": "vn-central" },
+    { "code": "vn-tp-hcm", "name": "TP. Hồ Chí Minh", "level": "province", "country_code": "VN", "parent_code": "vn-south" },
+    { "code": "vn-tien-giang", "name": "Tiền Giang", "level": "province", "country_code": "VN", "parent_code": "vn-south" },
+    { "code": "vn-an-giang", "name": "An Giang", "level": "province", "country_code": "VN", "parent_code": "vn-south" },
+    { "code": "vn-can-tho", "name": "Cần Thơ", "level": "province", "country_code": "VN", "parent_code": "vn-south" },
+    { "code": "vn-soc-trang", "name": "Sóc Trăng", "level": "province", "country_code": "VN", "parent_code": "vn-south" },
+    { "code": "vn-vung-tau", "name": "Bà Rịa – Vũng Tàu", "level": "province", "country_code": "VN", "parent_code": "vn-south" }
+  ]
+}

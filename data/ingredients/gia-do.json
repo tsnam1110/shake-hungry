@@ -20,19 +20,22 @@
     "mapping_note": "scientificName = 'Vigna radiata', đúng đậu xanh. CẨN THẬN: KHÔNG nhầm với 174256 'Mung beans, mature seeds, raw' (hạt đậu xanh khô, khoảng 347 kcal) — chênh hơn 11 lần.",
     "alternatives": []
   },
+  "secondary_sources": [],
   "density_g_per_ml": null,
+  "density_note": null,
   "default_yield_factor": null,
   "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
   "units": [
     {
       "unit_name": "cup",
-      "grams": 104,
+      "grams": 104.0,
       "note": null,
       "source": "FDC 169957 foodMeasures"
     },
     {
       "unit_name": "gói 12 oz",
-      "grams": 340,
+      "grams": 340.0,
       "note": null,
       "source": "FDC 169957 foodMeasures"
     }

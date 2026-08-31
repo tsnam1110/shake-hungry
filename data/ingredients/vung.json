@@ -21,16 +21,16 @@
     "mapping_note": "Đây là dạng NGUYÊN VỎ, SỐNG — dạng mua về. USDA có 3 dạng chênh nhau đáng kể, đã TÁCH THÀNH 3 NGUYÊN LIỆU RIÊNG: `vung` (nguyên vỏ sống, 573), `vung-rang` (nguyên vỏ rang, 565), và nhân bóc vỏ 631 kcal (chưa nhập). Chênh lớn nhất ở nhân bóc vỏ: béo 61,2 so với 49,7 (+23%) vì bỏ vỏ nhiều xơ và khoáng. Muối vừng VN dùng vừng RANG → dùng `vung-rang`.",
     "alternatives": [
       {
-        "external_id": "169412",
         "name": "Seeds, sesame seed kernels, dried (decorticated)",
-        "kcal_per_100g": 631,
-        "why_not": "NHÂN BÓC VỎ — thực phẩm khác hẳn về macro (béo 61,2, đạm 20,4, carb 11,7). Chỉ dùng khi công thức ghi rõ 'nhân vừng'"
+        "why_not": "NHÂN BÓC VỎ — thực phẩm khác hẳn về macro (béo 61,2, đạm 20,4, carb 11,7). Chỉ dùng khi công thức ghi rõ 'nhân vừng'",
+        "external_id": "169412",
+        "kcal_per_100g": 631
       },
       {
-        "external_id": "170189",
         "name": "Seeds, sesame butter, tahini",
-        "kcal_per_100g": null,
-        "why_not": "Là bơ vừng, không phải hạt"
+        "why_not": "Là bơ vừng, không phải hạt",
+        "external_id": "170189",
+        "kcal_per_100g": null
       }
     ]
   },
@@ -43,13 +43,13 @@
   "units": [
     {
       "unit_name": "cup",
-      "grams": 144,
+      "grams": 144.0,
       "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
       "source": "FDC 170150 foodMeasures"
     },
     {
       "unit_name": "muỗng canh",
-      "grams": 9,
+      "grams": 9.0,
       "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
       "source": "FDC 170150 foodMeasures"
     }

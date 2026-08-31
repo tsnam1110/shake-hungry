@@ -21,10 +21,10 @@
     "mapping_note": "Shoyu (đậu nành + lúa mì) là loại gần nhất với xì dầu phổ thông bán tại VN. Nếu món dùng TƯƠNG đậu nành lên men kiểu Việt (tương Bần, tương Cự Đà) thì KHÔNG dùng dòng này — đó là sản phẩm khác hẳn, USDA không có, phải tạo nguyên liệu riêng.",
     "alternatives": [
       {
-        "external_id": "174278",
         "name": "Soy sauce, tamari (thuần đậu nành, không lúa mì)",
-        "kcal_per_100g": 60,
-        "why_not": "Dùng khi công thức ghi rõ tamari (protein 10,5 / Na 5590 mg)"
+        "why_not": "Dùng khi công thức ghi rõ tamari (protein 10,5 / Na 5590 mg)",
+        "external_id": "174278",
+        "kcal_per_100g": 60
       }
     ]
   },
@@ -36,18 +36,6 @@
   "is_ready_to_eat": false,
   "units": [
     {
-      "unit_name": "muỗng canh",
-      "grams": 16.0,
-      "note": null,
-      "source": "FDC 174277 foodMeasures"
-    },
-    {
-      "unit_name": "muỗng cà phê",
-      "grams": 5.3,
-      "note": null,
-      "source": "FDC 174277 foodMeasures"
-    },
-    {
       "unit_name": "cup",
       "grams": 255.0,
       "note": null,
@@ -56,6 +44,18 @@
     {
       "unit_name": "gói lẻ",
       "grams": 8.9,
+      "note": null,
+      "source": "FDC 174277 foodMeasures"
+    },
+    {
+      "unit_name": "muỗng canh",
+      "grams": 16.0,
+      "note": null,
+      "source": "FDC 174277 foodMeasures"
+    },
+    {
+      "unit_name": "muỗng cà phê",
+      "grams": 5.3,
       "note": null,
       "source": "FDC 174277 foodMeasures"
     }

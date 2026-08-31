@@ -21,27 +21,27 @@
     "mapping_note": "LỆCH HỆ THỐNG VỚI DÒNG USDA — đã chọn nhãn Việt Nam làm nguồn chính, không dùng USDA. Dòng USDA 171275 là sữa đặc SỮA THẬT (protein 7,91). Phần lớn 'sữa đặc có đường' bán tại VN thực chất là SỮA ĐẶC PHA DẦU THỰC VẬT (filled milk / creamer): Ông Thọ 4,8 g protein, Ngôi Sao Phương Nam 2,7 g — chỉ bằng 34–61% dòng USDA, trong khi kcal lại CAO hơn (334–341 so với 321) do nhiều béo và đường hơn. Với cà phê sữa đá, bánh flan, sữa chua — những món dùng sữa đặc nhiều — sai lệch protein này là đáng kể.",
     "alternatives": [
       {
-        "external_id": "171275",
         "name": "USDA — Milk, canned, condensed, sweetened",
-        "kcal_per_100g": 321,
-        "why_not": "Sữa đặc sữa thật (protein 7,91); không đại diện sản phẩm bán tại VN"
+        "why_not": "Sữa đặc sữa thật (protein 7,91); không đại diện sản phẩm bán tại VN",
+        "external_id": "171275",
+        "kcal_per_100g": 321
       }
     ]
   },
   "secondary_sources": [
     {
       "kind": "off",
+      "note": "Bản ghi ghi thị trường Việt Nam, hộp 380 g. Protein 2,7 g xác nhận đây là dòng creamer pha dầu thực vật.",
       "brand": "Vinamilk Ngôi Sao Phương Nam",
-      "external_id": "8934673218368",
-      "source_url": "https://world.openfoodfacts.org/api/v2/product/8934673218368",
-      "kcal_per_100g": 334,
-      "protein_g": 2.7,
       "fat_g": 10.8,
       "carb_g": 56.7,
+      "protein_g": 2.7,
       "sodium_mg": null,
       "confidence": "medium",
+      "source_url": "https://world.openfoodfacts.org/api/v2/product/8934673218368",
+      "external_id": "8934673218368",
       "license_note": "Dữ liệu Open Food Facts, giấy phép ODbL 1.0 — bắt buộc ghi công. PHỤ THUỘC QUYẾT ĐỊNH LEGAL-002: nếu dự án không chấp nhận ràng buộc share-alike của ODbL thì phải thay bằng ảnh nhãn tự chụp trước khi phát hành.",
-      "note": "Bản ghi ghi thị trường Việt Nam, hộp 380 g. Protein 2,7 g xác nhận đây là dòng creamer pha dầu thực vật."
+      "kcal_per_100g": 334
     }
   ],
   "density_g_per_ml": 1.29,

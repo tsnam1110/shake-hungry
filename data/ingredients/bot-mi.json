@@ -20,6 +20,7 @@
     "mapping_note": "Ba biến thể SR Legacy (bleached 168894, unbleached 168936, unenriched 169761) có macro HOÀN TOÀN GIỐNG NHAU → chọn dòng nào cũng như nhau. LƯU Ý: dữ liệu Foundation mới hơn cho số khác đáng kể (789890 bleached = 366 kcal / protein 10,9; 789951 unbleached = 358 kcal / protein 13,1) — protein bột mì dao động mạnh theo lô, nên công thức bánh cần độ chính xác phải lấy theo nhãn bột cụ thể.",
     "alternatives": []
   },
+  "secondary_sources": [],
   "density_g_per_ml": 0.528,
   "density_note": "SUY RA: 125 g/cup (FDC 168894 foodMeasures) chia 236,588 ml. Bột chưa rây, đong theo cách 'dip and sweep' của USDA.",
   "default_yield_factor": null,
@@ -28,7 +29,7 @@
   "units": [
     {
       "unit_name": "cup",
-      "grams": 125,
+      "grams": 125.0,
       "note": null,
       "source": "FDC 168894 foodMeasures"
     }

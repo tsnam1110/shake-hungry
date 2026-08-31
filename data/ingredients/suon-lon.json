@@ -13,18 +13,18 @@
     "kcal_max": 277,
     "protein_g": 15.5,
     "fat_g": 23.4,
-    "carb_g": 0.0,
-    "fiber_g": 0.0,
+    "carb_g": 0,
+    "fiber_g": 0,
     "water_g": 59.8,
     "sodium_mg": 81,
     "mapping_confidence": "medium",
     "mapping_note": "⚠️ QUAN TRỌNG CHO ENGINE CALO: 'separable lean and fat' nghĩa là phần ĂN ĐƯỢC, ĐÃ LOẠI XƯƠNG. Nhưng sườn ở chợ VN bán theo cân CẢ XƯƠNG. Nếu công thức ghi '300 g sườn' thì đó là khối lượng CÓ XƯƠNG — phải nhân hệ số phần ăn được TRƯỚC KHI áp 277 kcal/100g, nếu không sẽ vống calo lên rất nhiều. Hệ số đó CHƯA TRA ĐƯỢC, cần bổ sung. Ciqual 28400 cho 237 kcal — thấp hơn 40 kcal, có thể do sườn EU nạc hơn hoặc quy ước phần thịt bám xương khác. Riêng cholesterol của dòng USDA có derivation 'Based on another form of the food or similar food' nên độ tin cậy thấp hơn các chất còn lại.",
     "alternatives": [
       {
-        "external_id": "ciqual-28400",
         "name": "Porc, travers cru (Ciqual)",
-        "kcal_per_100g": 237,
-        "why_not": "Khác bảng FCT (QT-4); dùng làm cận dưới"
+        "why_not": "Khác bảng FCT (QT-4); dùng làm cận dưới",
+        "external_id": "ciqual-28400",
+        "kcal_per_100g": 237
       }
     ]
   },

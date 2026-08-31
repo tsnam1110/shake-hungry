@@ -13,7 +13,7 @@
     "kcal_max": null,
     "protein_g": 0.4,
     "fat_g": 0.2,
-    "carb_g": 3.0,
+    "carb_g": 3,
     "fiber_g": 2.9,
     "water_g": 96.1,
     "sodium_mg": null,
@@ -21,10 +21,10 @@
     "mapping_note": "Tên khoa học khớp chính xác Benincasa hispida — đúng bí đao. NHƯNG toàn bộ chất dinh dưỡng có dataPoints=0 (kể cả nước, đạm, béo) → bản ghi gán/ước tính, không phải đo. Xơ 2,9 g trên carb 3,00 g là đáng ngờ (gần như toàn bộ glucid là xơ). BẪY TÌM KIẾM: từ khoá 'wax gourd' (có dấu cách) KHÔNG trả về dòng này; phải tra 'waxgourd' viết liền hoặc 'Benincasa'.",
     "alternatives": [
       {
-        "external_id": "169232",
         "name": "Gourd, white-flowered (calabash), raw — Lagenaria siceraria",
-        "kcal_per_100g": null,
-        "why_not": "Đây là quả BẦU, loài khác hẳn bí đao"
+        "why_not": "Đây là quả BẦU, loài khác hẳn bí đao",
+        "external_id": "169232",
+        "kcal_per_100g": null
       }
     ]
   },
@@ -37,7 +37,7 @@
   "units": [
     {
       "unit_name": "cup thái khối",
-      "grams": 132,
+      "grams": 132.0,
       "note": null,
       "source": "FDC 170069 foodMeasures"
     }

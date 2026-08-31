@@ -13,24 +13,24 @@
     "kcal_max": 100,
     "protein_g": 20.1,
     "fat_g": 1.7,
-    "carb_g": 0.0,
-    "fiber_g": 0.0,
+    "carb_g": 0,
+    "fiber_g": 0,
     "water_g": 78.1,
     "sodium_mg": null,
     "mapping_confidence": "high",
     "mapping_note": "USDA không ghi scientificName; 'tilapia' là tên nhóm (Oreochromis spp.). Cá rô phi VN là O. niloticus / O. mossambicus — cùng chi, chấp nhận được. kcal_min/max lấy từ dòng Foundation 2684442 (Atwater tổng quát 95 / Atwater riêng 100), KHÔNG phải số suy đoán. Lưu ý kcal của SR Legacy có dataPoints=0 (giá trị tính); nước/đạm/béo thì dataPoints=3 (đo thật).",
     "alternatives": [
       {
-        "external_id": "2684442",
         "name": "Fish, tilapia, farm raised, raw (Foundation)",
-        "kcal_per_100g": 95,
-        "why_not": "Không bị loại — dùng làm nguồn cho khoảng kcal. Không chọn làm chính vì thiếu cột xơ và để giữ cả mẻ trong SR Legacy theo QT-4"
+        "why_not": "Không bị loại — dùng làm nguồn cho khoảng kcal. Không chọn làm chính vì thiếu cột xơ và để giữ cả mẻ trong SR Legacy theo QT-4",
+        "external_id": "2684442",
+        "kcal_per_100g": 95
       },
       {
-        "external_id": "175177",
         "name": "Fish, tilapia, cooked, dry heat",
-        "kcal_per_100g": null,
-        "why_not": "Đã nấu"
+        "why_not": "Đã nấu",
+        "external_id": "175177",
+        "kcal_per_100g": null
       }
     ]
   },
@@ -43,7 +43,7 @@
   "units": [
     {
       "unit_name": "phi lê",
-      "grams": 116,
+      "grams": 116.0,
       "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam — phi lê cá rô phi VN thường nhỏ hơn",
       "source": "FDC 175176 foodMeasures"
     }

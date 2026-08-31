@@ -13,20 +13,21 @@
     "kcal_max": null,
     "protein_g": 21.3,
     "fat_g": 8.33,
-    "carb_g": 0.0,
-    "fiber_g": 0.0,
+    "carb_g": 0,
+    "fiber_g": 0,
     "water_g": null,
     "mapping_confidence": "medium",
     "mapping_note": "Số liệu ổn định: Foundation 2646168 'Pork, loin, boneless, raw' = 168 kcal / protein 21,1 / fat 9,47, chỉ lệch 2 kcal so với SR Legacy → tin cậy tốt. TÁCH RIÊNG khỏi thăn nội theo phát hiện khi tra cứu: tiếng Việt gọi 'thăn' cho cả hai, nhưng chúng chênh 47 kcal/100g. Xem nguyên liệu 'thit-lon-than-noi'.",
     "alternatives": [
       {
-        "external_id": "2646168",
         "name": "Pork, loin, boneless, raw (Foundation)",
-        "kcal_per_100g": 168,
-        "why_not": "Đối chứng, lệch 2 kcal — không cần đổi"
+        "why_not": "Đối chứng, lệch 2 kcal — không cần đổi",
+        "external_id": "2646168",
+        "kcal_per_100g": 168
       }
     ]
   },
+  "secondary_sources": [],
   "density_g_per_ml": null,
   "density_note": null,
   "default_yield_factor": null,

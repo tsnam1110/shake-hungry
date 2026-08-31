@@ -13,8 +13,8 @@
     "kcal_max": null,
     "protein_g": 17.8,
     "fat_g": 5.6,
-    "carb_g": 0.0,
-    "fiber_g": 0.0,
+    "carb_g": 0,
+    "fiber_g": 0,
     "water_g": 76.3,
     "sodium_mg": null,
     "mapping_confidence": "high",
@@ -29,15 +29,15 @@
   "is_ready_to_eat": false,
   "units": [
     {
-      "unit_name": "phi lê",
-      "grams": 218,
-      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "unit_name": "oz",
+      "grams": 85.0,
+      "note": null,
       "source": "FDC 171952 foodMeasures"
     },
     {
-      "unit_name": "oz",
-      "grams": 85,
-      "note": null,
+      "unit_name": "phi lê",
+      "grams": 218.0,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
       "source": "FDC 171952 foodMeasures"
     }
   ],

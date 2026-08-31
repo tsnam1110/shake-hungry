@@ -30,7 +30,7 @@
   "units": [
     {
       "unit_name": "cup miếng",
-      "grams": 151,
+      "grams": 151.0,
       "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
       "source": "FDC 174687 foodMeasures"
     }

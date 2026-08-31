@@ -20,9 +20,12 @@
     "mapping_note": "USDA KHÔNG có pangasius: đã tra 'pangasius', 'basa', 'swai', 'tra' trên FDC (SR Legacy, Foundation, Survey, Experimental) — 0 kết quả. Giá trị lấy từ UK CoFID mã 16-382, gốc là khảo sát 'DH, Nutrient analysis of fish and fish products, 2013'. CẢNH BÁO 1: mới đọc qua nutridex.org.uk (nguồn thứ cấp), CHƯA mở được file CoFID gốc — phải đối chiếu file .xlsx chính thức trước khi dùng cho món published. CẢNH BÁO 2: dùng CoFID trong khi nguyên liệu khác dùng USDA là trộn nguồn, xem ngoại lệ có kiểm soát ở DATA-PIPELINE §7.2. TUYỆT ĐỐI KHÔNG thay bằng USDA 175165 'Fish, catfish, channel, farmed, raw' — đó là Ictalurus punctatus, khác họ, 5,94 g lipid so với 1,6 g (sai gần 4 lần). Đối chiếu Ciqual 27018 'Pangasius, filets, cooked': 79 kcal / 17,5 P / 1,0 F (đã nấu).",
     "alternatives": []
   },
+  "secondary_sources": [],
   "density_g_per_ml": null,
+  "density_note": null,
   "default_yield_factor": null,
   "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
   "units": [],
   "source": "curated",
   "confidence": "low",

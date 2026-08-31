@@ -15,7 +15,7 @@
     "fat_g": 0.25,
     "carb_g": 10.9,
     "fiber_g": 0.3,
-    "water_g": 80.0,
+    "water_g": 80,
     "sodium_mg": 2730,
     "mapping_confidence": "high",
     "mapping_note": "Đạm/lipid/nước là 'Analytical', dataPoints = 2 mỗi chất — mẫu ít nhưng là đo thật. Lưu ý dầu hào thương mại Việt Nam (Maggi, Cholimex) ngọt hơn bản Mỹ này.",

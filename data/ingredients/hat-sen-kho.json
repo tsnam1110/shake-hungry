@@ -29,16 +29,16 @@
   "is_ready_to_eat": false,
   "units": [
     {
+      "unit_name": "cup",
+      "grams": 32.0,
+      "note": "hạt rời rất xốp — chỉ dùng ước lượng",
+      "source": "FDC 170149 foodMeasures"
+    },
+    {
       "unit_name": "hạt",
       "grams": 0.675,
       "note": null,
       "source": "suy từ FDC 170149: 1 oz = 28,35 g khoảng 42 hạt vừa"
-    },
-    {
-      "unit_name": "cup",
-      "grams": 32,
-      "note": "hạt rời rất xốp — chỉ dùng ước lượng",
-      "source": "FDC 170149 foodMeasures"
     }
   ],
   "source": "curated",

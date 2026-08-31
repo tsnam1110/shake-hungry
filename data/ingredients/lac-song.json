@@ -21,16 +21,16 @@
     "mapping_note": "⚠️ Bản Foundation 2515376 (cùng ndbNumber 16087) KHÁC ĐÁNG KỂ: béo 43,3 so với 49,2; carb 26,5 so với 16,1; và không có nutrient 1008 (chỉ 2047=588 / 2048=551). Chọn SR Legacy vì có 1008 và macro hợp lý hơn với lạc VN. Khoảng 551–588 lấy từ dải Foundation để phản ánh độ bất định thật. Lạc RANG là nguyên liệu riêng (`lac-rang`, 587 kcal).",
     "alternatives": [
       {
-        "external_id": "2515376",
         "name": "Peanuts, raw (Foundation)",
-        "kcal_per_100g": 588,
-        "why_not": "Không có 1008; hai giá trị Atwater lệch nhau 37 kcal (551 so với 588) — bất định cao"
+        "why_not": "Không có 1008; hai giá trị Atwater lệch nhau 37 kcal (551 so với 588) — bất định cao",
+        "external_id": "2515376",
+        "kcal_per_100g": 588
       },
       {
-        "external_id": "174263",
         "name": "Peanuts, spanish, raw",
-        "kcal_per_100g": null,
-        "why_not": "Giống Spanish riêng; 'all types' tổng quát hơn, hợp lạc VN không xác định giống"
+        "why_not": "Giống Spanish riêng; 'all types' tổng quát hơn, hợp lạc VN không xác định giống",
+        "external_id": "174263",
+        "kcal_per_100g": null
       }
     ]
   },
@@ -43,7 +43,7 @@
   "units": [
     {
       "unit_name": "cup",
-      "grams": 146,
+      "grams": 146.0,
       "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
       "source": "FDC 172430 foodMeasures"
     }

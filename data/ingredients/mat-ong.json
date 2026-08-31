@@ -12,7 +12,7 @@
     "kcal_min": null,
     "kcal_max": null,
     "protein_g": 0.3,
-    "fat_g": 0.0,
+    "fat_g": 0,
     "carb_g": 82.4,
     "fiber_g": 0.2,
     "water_g": 17.1,
@@ -30,13 +30,13 @@
   "units": [
     {
       "unit_name": "cup",
-      "grams": 339,
+      "grams": 339.0,
       "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
       "source": "FDC 169640 foodMeasures"
     },
     {
       "unit_name": "muỗng canh",
-      "grams": 21,
+      "grams": 21.0,
       "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
       "source": "FDC 169640 foodMeasures"
     }

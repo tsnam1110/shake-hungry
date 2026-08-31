@@ -20,6 +20,7 @@
     "mapping_note": "TÁCH RIÊNG khỏi thăn ngoại. Tiếng Việt gọi 'thăn' cho cả thăn ngoại (166 kcal) lẫn thăn nội/phi lê (119 kcal) — chênh 47 kcal/100g, đủ để làm sai calo món. Người nhập liệu PHẢI chọn tường minh. Dòng Foundation không đo carb và xơ nên để null. CẢNH BÁO QT-4: dòng Foundation lẫn trong nhóm thịt lợn dùng SR Legacy.",
     "alternatives": []
   },
+  "secondary_sources": [],
   "density_g_per_ml": null,
   "density_note": null,
   "default_yield_factor": null,

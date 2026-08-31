@@ -20,13 +20,16 @@
     "mapping_note": "scientificName = 'Brassica juncea', trùng loài với cải xanh/cải cay VN. Khác biệt còn lại chỉ ở giống trồng (USDA lấy mẫu giống lá xoăn Mỹ, VN dùng giống lá bẹ) — không đủ để hạ độ tin cậy. CẨN THẬN: không nhầm với 168438 'Mustard spinach (tendergreen)' (Brassica rapa var. perviridis) là loài khác.",
     "alternatives": []
   },
+  "secondary_sources": [],
   "density_g_per_ml": null,
+  "density_note": null,
   "default_yield_factor": null,
   "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
   "units": [
     {
       "unit_name": "cup thái nhỏ",
-      "grams": 56,
+      "grams": 56.0,
       "note": null,
       "source": "FDC 169256 foodMeasures"
     }

@@ -11,10 +11,10 @@
     "kcal_per_100g": 884,
     "kcal_min": null,
     "kcal_max": null,
-    "protein_g": 0.0,
-    "fat_g": 100.0,
-    "carb_g": 0.0,
-    "fiber_g": 0.0,
+    "protein_g": 0,
+    "fat_g": 100,
+    "carb_g": 0,
+    "fiber_g": 0,
     "water_g": null,
     "sodium_mg": 0,
     "mapping_confidence": "high",
@@ -29,21 +29,15 @@
   "is_ready_to_eat": false,
   "units": [
     {
-      "unit_name": "muỗng canh",
-      "grams": 13.6,
-      "note": "US tbsp 14,7868 ml",
-      "source": "FDC 171411 foodMeasures"
-    },
-    {
-      "unit_name": "muỗng cà phê",
-      "grams": 4.5,
-      "note": null,
-      "source": "FDC 171411 foodMeasures"
-    },
-    {
       "unit_name": "cup",
       "grams": 218.0,
       "note": null,
+      "source": "FDC 171411 foodMeasures"
+    },
+    {
+      "unit_name": "muỗng canh",
+      "grams": 13.6,
+      "note": "US tbsp 14,7868 ml",
       "source": "FDC 171411 foodMeasures"
     },
     {
@@ -51,6 +45,12 @@
       "grams": 13.8,
       "note": "muỗng canh VN 15 ml — KHÔNG phải số USDA gốc",
       "source": "SUY RA từ density 0,92 g/ml"
+    },
+    {
+      "unit_name": "muỗng cà phê",
+      "grams": 4.5,
+      "note": null,
+      "source": "FDC 171411 foodMeasures"
     }
   ],
   "source": "curated",

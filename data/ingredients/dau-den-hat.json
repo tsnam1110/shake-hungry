@@ -15,16 +15,16 @@
     "fat_g": 1.42,
     "carb_g": 62.4,
     "fiber_g": 15.5,
-    "water_g": 11.0,
+    "water_g": 11,
     "sodium_mg": 5,
     "mapping_confidence": "high",
     "mapping_note": "Nước = 11,0 g → đúng hạt khô. ⚠️ CẢNH BÁO DERIVATION: chất xơ 15,5 g mang ghi chú 'Based on another form of the food or similar food' → xơ được SUY RA từ dạng khác của thực phẩm, không phải đo trên hạt sống. Đạm/béo/nước là đo thật (dataPoints 36/12/40). ⚠️ LƯU Ý LOÀI: đậu đen Việt Nam (nấu chè, hầm) ở nhiều vùng là Vigna unguiculata, còn bản ghi này là Phaseolus vulgaris (đậu đen Mỹ Latin) — cần xác nhận ở khâu biên soạn món.",
     "alternatives": [
       {
-        "external_id": "175186",
         "name": "Beans, black turtle, mature seeds, raw",
-        "kcal_per_100g": 339,
-        "why_not": "Giống 'black turtle' cụ thể (đạm 21,2, béo 0,90). Rất gần bản tổng quát; giữ 173734 vì dataPoints cao hơn. Dùng làm cận dưới"
+        "why_not": "Giống 'black turtle' cụ thể (đạm 21,2, béo 0,90). Rất gần bản tổng quát; giữ 173734 vì dataPoints cao hơn. Dùng làm cận dưới",
+        "external_id": "175186",
+        "kcal_per_100g": 339
       }
     ]
   },
@@ -37,7 +37,7 @@
   "units": [
     {
       "unit_name": "cup",
-      "grams": 194,
+      "grams": 194.0,
       "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
       "source": "FDC 173734 foodMeasures"
     },

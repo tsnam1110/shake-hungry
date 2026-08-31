@@ -21,22 +21,22 @@
     "mapping_note": "KHÔNG có bản ghi SR Legacy/Foundation nào cho mắm ruốc ('shrimp paste' trong SR Legacy + Foundation → 0 kết quả). Đây là NHÃN sản phẩm Lee Kum Kee (GTIN 078895400014), thành phần 'SHRIMP (FERMENTED), SALT' — cùng họ sản phẩm với mắm ruốc. ⚠️ BẪY LƯỢNG TỬ HOÁ KHẨU PHẦN: khẩu phần nhãn là 6 g, nên 83 kcal/100g được tính ngược từ '5 kcal / 6 g'. Theo 21 CFR 101.9(c)(1) calo trên nhãn làm tròn theo bội số 5, nên giá trị THẬT của khẩu phần nằm trong 2,5–7,5 kcal → khoảng thật là 42–125 kcal/100g. Protein 16,7 cũng là tính ngược từ '1 g / 6 g' → thật ra 8–25 g/100g. CHỈ dùng để ước lượng, KHÔNG hiển thị con số chính xác. Con số này độc lập hoàn toàn với con số '73 kcal / 14,8 g' mà mẻ trước đã loại vì nghi chép từ bảng có bản quyền — trùng khoảng độ lớn là ngẫu nhiên, không dùng làm bằng chứng cho nhau.",
     "alternatives": [
       {
-        "external_id": "2032323",
         "name": "NORTH SOUTH, BLACHEN DRIED SHRIMP PASTE (65% tôm / 35% muối)",
-        "kcal_per_100g": 140,
-        "why_not": "Belacan dạng BÁNH KHÔ (Mã Lai), độ ẩm thấp hơn hẳn mắm ruốc Việt dạng nhuyễn ướt; Na 13.100 mg so với 9.830. Giữ làm cận trên"
+        "why_not": "Belacan dạng BÁNH KHÔ (Mã Lai), độ ẩm thấp hơn hẳn mắm ruốc Việt dạng nhuyễn ướt; Na 13.100 mg so với 9.830. Giữ làm cận trên",
+        "external_id": "2032323",
+        "kcal_per_100g": 140
       },
       {
-        "external_id": "2031212",
         "name": "POR KWAN, SHRIMP PASTE WITH BEAN OIL",
-        "kcal_per_100g": null,
-        "why_not": "Có thêm dầu đậu — không cùng sản phẩm"
+        "why_not": "Có thêm dầu đậu — không cùng sản phẩm",
+        "external_id": "2031212",
+        "kcal_per_100g": null
       },
       {
-        "external_id": "391912",
         "name": "GINISANG BAGOONG (sauteed shrimp paste, Philippines)",
-        "kcal_per_100g": null,
-        "why_not": "'Sauteed' = đã xào với dầu/đường, khác hẳn mắm ruốc sống"
+        "why_not": "'Sauteed' = đã xào với dầu/đường, khác hẳn mắm ruốc sống",
+        "external_id": "391912",
+        "kcal_per_100g": null
       }
     ]
   },
@@ -49,7 +49,7 @@
   "units": [
     {
       "unit_name": "muỗng cà phê",
-      "grams": 6,
+      "grams": 6.0,
       "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
       "source": "householdServingFullText FDC 2024889"
     }

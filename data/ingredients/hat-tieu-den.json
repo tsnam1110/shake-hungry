@@ -13,7 +13,7 @@
     "kcal_max": null,
     "protein_g": 10.4,
     "fat_g": 3.26,
-    "carb_g": 64.0,
+    "carb_g": 64,
     "fiber_g": 25.3,
     "water_g": null,
     "sodium_mg": 20,
@@ -35,14 +35,14 @@
       "source": "FDC 170931 foodMeasures"
     },
     {
-      "unit_name": "muỗng cà phê xay",
-      "grams": 2.3,
+      "unit_name": "muỗng cà phê nguyên hạt",
+      "grams": 2.9,
       "note": null,
       "source": "FDC 170931 foodMeasures"
     },
     {
-      "unit_name": "muỗng cà phê nguyên hạt",
-      "grams": 2.9,
+      "unit_name": "muỗng cà phê xay",
+      "grams": 2.3,
       "note": null,
       "source": "FDC 170931 foodMeasures"
     },

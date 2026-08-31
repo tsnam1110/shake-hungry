@@ -21,16 +21,16 @@
     "mapping_note": "Khớp tuyệt đối, dữ liệu dày (nước dataPoints=49, đạm=23, béo=29). Khoảng lấy từ Foundation 747447 (2048=32, 2047=39). BẪY TÊN: phân biệt với 169404 'Broccoli, chinese' = CẢI LÀN (var. alboglabra), một loại rau khác hẳn dù USDA xếp cùng tên 'broccoli'.",
     "alternatives": [
       {
-        "external_id": "747447",
         "name": "Broccoli, raw (Foundation)",
-        "kcal_per_100g": 32,
-        "why_not": "Foundation không có 1008; dùng làm biên khoảng theo QT-4"
+        "why_not": "Foundation không có 1008; dùng làm biên khoảng theo QT-4",
+        "external_id": "747447",
+        "kcal_per_100g": 32
       },
       {
-        "external_id": "169404",
         "name": "Broccoli, chinese, raw — Brassica oleracea var. alboglabra",
-        "kcal_per_100g": null,
-        "why_not": "Đây là CẢI LÀN, không phải súp lơ xanh — bẫy tên"
+        "why_not": "Đây là CẢI LÀN, không phải súp lơ xanh — bẫy tên",
+        "external_id": "169404",
+        "kcal_per_100g": null
       }
     ]
   },
@@ -42,27 +42,27 @@
   "is_ready_to_eat": false,
   "units": [
     {
-      "unit_name": "cup thái nhỏ",
-      "grams": 91,
-      "note": null,
+      "unit_name": "bó",
+      "grams": 608.0,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
       "source": "FDC 170379 foodMeasures"
     },
     {
-      "unit_name": "nhánh",
-      "grams": 31,
+      "unit_name": "cup thái nhỏ",
+      "grams": 91.0,
       "note": null,
       "source": "FDC 170379 foodMeasures"
     },
     {
       "unit_name": "cây",
-      "grams": 151,
+      "grams": 151.0,
       "note": null,
       "source": "FDC 170379 foodMeasures"
     },
     {
-      "unit_name": "bó",
-      "grams": 608,
-      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "unit_name": "nhánh",
+      "grams": 31.0,
+      "note": null,
       "source": "FDC 170379 foodMeasures"
     }
   ],

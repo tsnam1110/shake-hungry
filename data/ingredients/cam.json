@@ -21,28 +21,28 @@
     "mapping_note": "⚠️ CẢNH BÁO GIỐNG QUAN TRỌNG. Bản ghi này là cam ngọt Citrus sinensis (navel/Valencia). 'CAM SÀNH' — loại phổ biến nhất ở VN — KHÔNG phải C. sinensis mà là con lai quýt × cam, gần Citrus reticulata hơn; USDA có bản riêng cho nhóm đó (169105, Tangerines). NẾU dữ liệu món cần cam sành thì PHẢI tra lại, không dùng bản này. Tên nguyên liệu đã đặt là 'cam vàng, cam Vinh' để tránh nhầm. Khoảng 46–49 từ ba bản giống cùng SR Legacy.",
     "alternatives": [
       {
-        "external_id": "169918",
         "name": "Oranges, raw, Florida",
-        "kcal_per_100g": 46,
-        "why_not": "Bản theo vùng trồng Mỹ; cận dưới"
+        "why_not": "Bản theo vùng trồng Mỹ; cận dưới",
+        "external_id": "169918",
+        "kcal_per_100g": 46
       },
       {
-        "external_id": "169916",
         "name": "Oranges, raw, California, valencias",
-        "kcal_per_100g": 49,
-        "why_not": "Bản theo vùng trồng Mỹ; cận trên"
+        "why_not": "Bản theo vùng trồng Mỹ; cận trên",
+        "external_id": "169916",
+        "kcal_per_100g": 49
       },
       {
-        "external_id": "169105",
         "name": "Tangerines (mandarin oranges), raw",
-        "kcal_per_100g": null,
-        "why_not": "Là quýt, không phải cam — nhưng ĐÂY LÀ ỨNG VIÊN ĐÚNG cho 'cam sành'. Cần tra ở mẻ sau"
+        "why_not": "Là quýt, không phải cam — nhưng ĐÂY LÀ ỨNG VIÊN ĐÚNG cho 'cam sành'. Cần tra ở mẻ sau",
+        "external_id": "169105",
+        "kcal_per_100g": null
       },
       {
-        "external_id": "169919",
         "name": "Oranges, raw, with peel",
-        "kcal_per_100g": null,
-        "why_not": "Tính cả vỏ, không phải phần ăn được"
+        "why_not": "Tính cả vỏ, không phải phần ăn được",
+        "external_id": "169919",
+        "kcal_per_100g": null
       }
     ]
   },
@@ -54,20 +54,20 @@
   "is_ready_to_eat": false,
   "units": [
     {
-      "unit_name": "quả vừa",
-      "grams": 131,
+      "unit_name": "quả lớn",
+      "grams": 184.0,
       "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
       "source": "FDC 169097 foodMeasures"
     },
     {
       "unit_name": "quả nhỏ",
-      "grams": 96,
+      "grams": 96.0,
       "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
       "source": "FDC 169097 foodMeasures"
     },
     {
-      "unit_name": "quả lớn",
-      "grams": 184,
+      "unit_name": "quả vừa",
+      "grams": 131.0,
       "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
       "source": "FDC 169097 foodMeasures"
     }

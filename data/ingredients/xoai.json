@@ -13,7 +13,7 @@
     "kcal_max": 78.5,
     "protein_g": 0.82,
     "fat_g": 0.38,
-    "carb_g": 15.0,
+    "carb_g": 15,
     "fiber_g": 1.6,
     "water_g": 83.5,
     "sodium_mg": null,
@@ -21,16 +21,16 @@
     "mapping_note": "CẢNH BÁO GIỐNG. Bản SR Legacy là giống thương mại Mỹ (chủ yếu Tommy Atkins — xoài xơ, ít ngọt). Giống VN phổ biến (cát Hoà Lộc, cát chu, xoài keo) ngọt và nhiều đường hơn, gần nhóm Ataulfo — bản Foundation Ataulfo cho 78,5 kcal, CAO HƠN 31%. Giữ 60 làm điểm chính theo QT-4 nhưng nâng cận trên lên 78,5. Nếu sau này biên soạn riêng cho xoài cát, nên tách bản ghi.",
     "alternatives": [
       {
-        "external_id": "2710834",
         "name": "Mango, Ataulfo, peeled, raw (Foundation)",
-        "kcal_per_100g": 78.5,
-        "why_not": "Khác bảng (năng lượng ở nutrient 2047) — trộn sẽ phá QT-4. Dùng làm cận trên"
+        "why_not": "Khác bảng (năng lượng ở nutrient 2047) — trộn sẽ phá QT-4. Dùng làm cận trên",
+        "external_id": "2710834",
+        "kcal_per_100g": 78.5
       },
       {
-        "external_id": "2710833",
         "name": "Mango, Tommy Atkins, peeled, raw (Foundation)",
-        "kcal_per_100g": 68.5,
-        "why_not": "Khác bảng, và Tommy Atkins không phải giống VN"
+        "why_not": "Khác bảng, và Tommy Atkins không phải giống VN",
+        "external_id": "2710833",
+        "kcal_per_100g": 68.5
       }
     ]
   },
@@ -42,15 +42,15 @@
   "is_ready_to_eat": false,
   "units": [
     {
-      "unit_name": "quả",
-      "grams": 336,
-      "note": "phần ăn được, đã bỏ vỏ và hạt",
+      "unit_name": "cup miếng",
+      "grams": 165.0,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
       "source": "FDC 169910 foodMeasures"
     },
     {
-      "unit_name": "cup miếng",
-      "grams": 165,
-      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "unit_name": "quả",
+      "grams": 336.0,
+      "note": "phần ăn được, đã bỏ vỏ và hạt",
       "source": "FDC 169910 foodMeasures"
     }
   ],

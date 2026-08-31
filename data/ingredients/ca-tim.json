@@ -14,17 +14,17 @@
     "protein_g": 0.98,
     "fat_g": 0.18,
     "carb_g": 5.88,
-    "fiber_g": 3.0,
+    "fiber_g": 3,
     "water_g": 92.3,
     "sodium_mg": null,
     "mapping_confidence": "high",
     "mapping_note": "Loài khớp. Ba nguồn hội tụ chặt (22–26 kcal) nên khoảng hẹp. CẢNH BÁO ĐƠN VỊ: '1 quả cà tím' của USDA = 548 g (cỡ Mỹ, quả tròn to); cà tím VN là giống dài mảnh, quả thường 100–200 g — KHÔNG dùng con số 548 g cho công thức Việt.",
     "alternatives": [
       {
-        "external_id": "2685577",
         "name": "Eggplant, raw (Foundation)",
-        "kcal_per_100g": 22,
-        "why_not": "Foundation không có 1008; 2047=26, 2048=22. Dùng làm biên của khoảng"
+        "why_not": "Foundation không có 1008; 2047=26, 2048=22. Dùng làm biên của khoảng",
+        "external_id": "2685577",
+        "kcal_per_100g": 22
       }
     ]
   },
@@ -37,20 +37,20 @@
   "units": [
     {
       "unit_name": "cup thái khối",
-      "grams": 82,
+      "grams": 82.0,
       "note": null,
       "source": "FDC 169228 foodMeasures"
     },
     {
-      "unit_name": "quả nguyên cả vỏ",
-      "grams": 548,
-      "note": "CỠ MỸ — KHÔNG áp cho cà tím VN (100–200 g/quả)",
+      "unit_name": "quả gọt vỏ",
+      "grams": 458.0,
+      "note": "hao hụt gọt vỏ khoảng 16%",
       "source": "FDC 169228 foodMeasures"
     },
     {
-      "unit_name": "quả gọt vỏ",
-      "grams": 458,
-      "note": "hao hụt gọt vỏ khoảng 16%",
+      "unit_name": "quả nguyên cả vỏ",
+      "grams": 548.0,
+      "note": "CỠ MỸ — KHÔNG áp cho cà tím VN (100–200 g/quả)",
       "source": "FDC 169228 foodMeasures"
     }
   ],

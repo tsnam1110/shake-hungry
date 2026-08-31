@@ -30,13 +30,13 @@
   "units": [
     {
       "unit_name": "cup thịt me",
-      "grams": 120,
+      "grams": 120.0,
       "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
       "source": "FDC 167763 foodMeasures"
     },
     {
       "unit_name": "quả",
-      "grams": 2,
+      "grams": 2.0,
       "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
       "source": "FDC 167763 foodMeasures"
     }

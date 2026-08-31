@@ -1,0 +1,18 @@
+Nguồn: USDA FoodData Central (fdc.nal.usda.gov)
+Bộ đã tải: FoodData_Central_sr_legacy_food_csv_2018-04.zip (SR Legacy, bản cuối 4/2018)
+Ngày tải: 2026-08-31
+SHA-256 file gốc: b80817294b8850530aaedf2e515c02593b1824f763a0ff356e5c2081643e6fd0
+URL tải: https://fdc.nal.usda.gov/fdc-datasets/FoodData_Central_sr_legacy_food_csv_2018-04.zip
+
+Điều khoản (tóm tắt từ trang Data & Documentation / About của FoodData Central,
+truy cập 2026-08-31 — đối chiếu nguyên văn tại https://fdc.nal.usda.gov/about-us):
+
+- Dữ liệu FoodData Central do USDA Agricultural Research Service công bố, thuộc
+  public domain của chính phủ liên bang Hoa Kỳ (17 U.S.C. §105) / CC0.
+- Được phép sử dụng, sao chép, phân phối lại, kể cả mục đích thương mại,
+  không cần xin phép.
+- USDA đề nghị (không bắt buộc) ghi nguồn khi sử dụng, dạng:
+  "U.S. Department of Agriculture, Agricultural Research Service. FoodData Central.
+  fdc.nal.usda.gov."
+
+Ghi chú thẩm định: xem docs/04-data-sources/LICENSE-COMPLIANCE.md §7.

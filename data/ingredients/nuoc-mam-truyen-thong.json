@@ -11,20 +11,20 @@
     "kcal_per_100g": 108,
     "kcal_min": null,
     "kcal_max": null,
-    "protein_g": 27.0,
+    "protein_g": 27,
     "fat_g": 0.5,
     "carb_g": 0.5,
-    "fiber_g": 0.0,
+    "fiber_g": 0,
     "water_g": null,
     "sodium_mg": 9680,
     "mapping_confidence": "medium",
     "mapping_note": "TÁCH RIÊNG khỏi nước mắm công nghiệp — đây là phát hiện quan trọng khi tra cứu. Protein nước mắm trải từ 5,06 g (dòng USDA chung) đến 7,33 g (Nam Ngư công nghiệp) đến 27,0 g/100ml (Red Boat 40 độ đạm) — chênh HƠN 5 LẦN. Một bản ghi duy nhất chắc chắn sai. Dòng này đại diện nước mắm cốt cá cơm truyền thống (thành phần chỉ có cá cơm + muối biển, không đường, không phụ gia); dấu hiệu nhận biết trong dữ liệu là carb rất thấp (~0,5 g). Dòng USDA 174531 'Sauce, fish, ready-to-serve' KHÔNG dùng được vì không ghi độ đạm, không ghi nguồn cá, protein 5,06 g tương ứng chỉ khoảng 8 độ đạm — thấp hơn hầu hết nước mắm bán tại VN. Dữ liệu OFF do cộng đồng nhập, CHƯA đối chiếu ảnh nhãn gốc.",
     "alternatives": [
       {
-        "external_id": "174531",
         "name": "USDA SR Legacy — Sauce, fish, ready-to-serve",
-        "kcal_per_100g": 35,
-        "why_not": "Không ghi độ đạm; protein 5,06 g tương ứng ~8 độ đạm, thấp hơn hầu hết nước mắm VN"
+        "why_not": "Không ghi độ đạm; protein 5,06 g tương ứng ~8 độ đạm, thấp hơn hầu hết nước mắm VN",
+        "external_id": "174531",
+        "kcal_per_100g": 35
       }
     ]
   },

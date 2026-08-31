@@ -21,16 +21,16 @@
     "mapping_note": "Năng lượng lấy từ nutrient id 1008 (32 kcal); id 1062 là 135 kJ, không dùng. Dòng này ghi rõ gồm cả phần lá lẫn củ, và scientificName bao trùm cả A. fistulosum — đúng loài hành lá VN. Nước/đạm/béo có dataPoints 21/3/3 (đo thật).",
     "alternatives": [
       {
-        "external_id": "170007",
         "name": "Onions, welsh, raw",
-        "kcal_per_100g": 34,
-        "why_not": "Khớp loài chuẩn hơn (A. fistulosum) nhưng TOÀN BỘ proximate có dataPoints=0 — không mẫu đo nào, mọi giá trị đều gán. Chọn dòng có dữ liệu đo."
+        "why_not": "Khớp loài chuẩn hơn (A. fistulosum) nhưng TOÀN BỘ proximate có dataPoints=0 — không mẫu đo nào, mọi giá trị đều gán. Chọn dòng có dữ liệu đo.",
+        "external_id": "170007",
+        "kcal_per_100g": 34
       },
       {
-        "external_id": "2727585",
         "name": "Green onion, bulb and greens, raw (Foundation)",
-        "kcal_per_100g": null,
-        "why_not": "Bản Foundation mới hơn nhưng KHÔNG có bản ghi năng lượng nào (không 1008, không 2047/2048), mục Carbohydrates rỗng, protein median 0,61 g bất thường. Không dùng được để tính calo."
+        "why_not": "Bản Foundation mới hơn nhưng KHÔNG có bản ghi năng lượng nào (không 1008, không 2047/2048), mục Carbohydrates rỗng, protein median 0,61 g bất thường. Không dùng được để tính calo.",
+        "external_id": "2727585",
+        "kcal_per_100g": null
       }
     ]
   },
@@ -42,14 +42,14 @@
   "is_ready_to_eat": false,
   "units": [
     {
-      "unit_name": "cây nhỏ",
-      "grams": 5.0,
-      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "unit_name": "cup thái nhỏ",
+      "grams": 100.0,
+      "note": null,
       "source": "FDC 170005 foodMeasures"
     },
     {
-      "unit_name": "cây vừa",
-      "grams": 15.0,
+      "unit_name": "cây nhỏ",
+      "grams": 5.0,
       "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
       "source": "FDC 170005 foodMeasures"
     },
@@ -60,14 +60,14 @@
       "source": "FDC 170005 foodMeasures"
     },
     {
-      "unit_name": "muỗng canh thái nhỏ",
-      "grams": 6.0,
-      "note": null,
+      "unit_name": "cây vừa",
+      "grams": 15.0,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
       "source": "FDC 170005 foodMeasures"
     },
     {
-      "unit_name": "cup thái nhỏ",
-      "grams": 100.0,
+      "unit_name": "muỗng canh thái nhỏ",
+      "grams": 6.0,
       "note": null,
       "source": "FDC 170005 foodMeasures"
     }

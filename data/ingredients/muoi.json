@@ -11,10 +11,10 @@
     "kcal_per_100g": 0,
     "kcal_min": null,
     "kcal_max": null,
-    "protein_g": 0.0,
-    "fat_g": 0.0,
-    "carb_g": 0.0,
-    "fiber_g": 0.0,
+    "protein_g": 0,
+    "fat_g": 0,
+    "carb_g": 0,
+    "fiber_g": 0,
     "water_g": null,
     "sodium_mg": 38800,
     "mapping_confidence": "high",
@@ -29,8 +29,8 @@
   "is_ready_to_eat": false,
   "units": [
     {
-      "unit_name": "muỗng cà phê",
-      "grams": 6.0,
+      "unit_name": "cup",
+      "grams": 292.0,
       "note": null,
       "source": "FDC 173468 foodMeasures"
     },
@@ -41,8 +41,8 @@
       "source": "FDC 173468 foodMeasures"
     },
     {
-      "unit_name": "cup",
-      "grams": 292.0,
+      "unit_name": "muỗng cà phê",
+      "grams": 6.0,
       "note": null,
       "source": "FDC 173468 foodMeasures"
     },

@@ -14,23 +14,23 @@
     "protein_g": 15.3,
     "fat_g": 46.4,
     "carb_g": 32.7,
-    "fiber_g": 3.0,
+    "fiber_g": 3,
     "water_g": 1.7,
     "sodium_mg": 16,
     "mapping_confidence": "high",
     "mapping_note": "⚠️ Nếu công thức dùng 'hạt điều rang MUỐI' thì PHẢI dùng bản ghi riêng 169421 — macro y hệt nhưng natri 640 mg/100g thay vì 16 mg, GẤP 40 LẦN. Đừng dùng chung một nguyên liệu cho cả hai.",
     "alternatives": [
       {
-        "external_id": "169421",
         "name": "Nuts, cashew nuts, dry roasted, with salt added",
-        "kcal_per_100g": 574,
-        "why_not": "Cùng năng lượng nhưng natri 640 mg — nên tách thành nguyên liệu riêng 'hạt điều rang muối'"
+        "why_not": "Cùng năng lượng nhưng natri 640 mg — nên tách thành nguyên liệu riêng 'hạt điều rang muối'",
+        "external_id": "169421",
+        "kcal_per_100g": 574
       },
       {
-        "external_id": "170572",
         "name": "Nuts, cashew nuts, oil roasted",
-        "kcal_per_100g": null,
-        "why_not": "Rang dầu — hạt điều VN chủ yếu rang khô/rang muối"
+        "why_not": "Rang dầu — hạt điều VN chủ yếu rang khô/rang muối",
+        "external_id": "170572",
+        "kcal_per_100g": null
       }
     ]
   },
@@ -43,7 +43,7 @@
   "units": [
     {
       "unit_name": "cup",
-      "grams": 137,
+      "grams": 137.0,
       "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
       "source": "FDC 170571 foodMeasures"
     },

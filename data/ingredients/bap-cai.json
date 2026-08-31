@@ -20,37 +20,40 @@
     "mapping_note": "scientificName = 'Brassica oleracea (Capitata Group)', đúng bắp cải cuộn. Bản Foundation 2346407 'Cabbage, green, raw' cho 31 kcal / 0,96 P / 6,38 carb nhưng KHÔNG có giá trị xơ, nên chọn SR Legacy.",
     "alternatives": []
   },
+  "secondary_sources": [],
   "density_g_per_ml": null,
+  "density_note": null,
   "default_yield_factor": null,
   "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
   "units": [
     {
-      "unit_name": "bắp vừa",
-      "grams": 908,
-      "note": "đường kính 5-3/4 inch",
-      "source": "FDC 169975 foodMeasures"
-    },
-    {
-      "unit_name": "bắp nhỏ",
-      "grams": 714,
+      "unit_name": "bắp lớn",
+      "grams": 1248.0,
       "note": null,
       "source": "FDC 169975 foodMeasures"
     },
     {
-      "unit_name": "bắp lớn",
-      "grams": 1248,
+      "unit_name": "bắp nhỏ",
+      "grams": 714.0,
+      "note": null,
+      "source": "FDC 169975 foodMeasures"
+    },
+    {
+      "unit_name": "bắp vừa",
+      "grams": 908.0,
+      "note": "đường kính 5-3/4 inch",
+      "source": "FDC 169975 foodMeasures"
+    },
+    {
+      "unit_name": "cup thái sợi",
+      "grams": 70.0,
       "note": null,
       "source": "FDC 169975 foodMeasures"
     },
     {
       "unit_name": "lá vừa",
-      "grams": 23,
-      "note": null,
-      "source": "FDC 169975 foodMeasures"
-    },
-    {
-      "unit_name": "cup thái sợi",
-      "grams": 70,
+      "grams": 23.0,
       "note": null,
       "source": "FDC 169975 foodMeasures"
     }

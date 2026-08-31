@@ -29,15 +29,15 @@
   "is_ready_to_eat": false,
   "units": [
     {
-      "unit_name": "quả",
-      "grams": 11.9,
-      "note": "suy từ 8 quả dài 7,6 cm = 95 g. CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "unit_name": "cup",
+      "grams": 100.0,
+      "note": null,
       "source": "FDC 169260 foodMeasures"
     },
     {
-      "unit_name": "cup",
-      "grams": 100,
-      "note": null,
+      "unit_name": "quả",
+      "grams": 11.9,
+      "note": "suy từ 8 quả dài 7,6 cm = 95 g. CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
       "source": "FDC 169260 foodMeasures"
     }
   ],

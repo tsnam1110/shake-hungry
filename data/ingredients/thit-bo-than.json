@@ -20,13 +20,14 @@
     "mapping_note": "143 kcal là Atwater tổng quát; Atwater riêng cho dòng này = 149 kcal. Con số vững vì dòng Foundation láng giềng 2727574 'Beef, top sirloin steak, raw' = 140 kcal — thăn nội và thăn ngoại bò chỉ lệch 3 kcal, nên nhầm giữa hai loại không gây hại (KHÁC hẳn với thịt lợn, nơi lệch 47 kcal). CẢNH BÁO NGƯỢC LẠI: các dòng SR Legacy cũ còn mỡ 1/8 inch cao hơn nhiều — chọn nhầm sẽ sai hơn +100 kcal/100g. Thăn bò bán ở VN là miếng lọc sạch mỡ nên dòng Foundation đúng hơn. Foundation không đo xơ → null.",
     "alternatives": [
       {
-        "external_id": "169545",
         "name": "Beef tenderloin, lean and fat, trimmed to 1/8 inch fat, choice",
-        "kcal_per_100g": 246,
-        "why_not": "Còn mỡ dày, không giống miếng thăn bán ở VN — chọn nhầm sai hơn +100 kcal/100g"
+        "why_not": "Còn mỡ dày, không giống miếng thăn bán ở VN — chọn nhầm sai hơn +100 kcal/100g",
+        "external_id": "169545",
+        "kcal_per_100g": 246
       }
     ]
   },
+  "secondary_sources": [],
   "density_g_per_ml": null,
   "density_note": null,
   "default_yield_factor": null,

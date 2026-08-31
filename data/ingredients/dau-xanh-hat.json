@@ -21,10 +21,10 @@
     "mapping_note": "Đã xác nhận nước = 9,05 g → ĐÚNG là hạt khô, không phải giá đỗ. dataPoints cao (đạm 82, nước 60, béo 65). ⚠️ ĐÂY CHÍNH LÀ BẪY ĐÃ CẢNH BÁO: giá đỗ (nguyên liệu `gia-do`, fdc 169957) chỉ 30 kcal — CHÊNH 11,6 LẦN. Hai nguyên liệu hoàn toàn khác nhau dù tên tiếng Anh gần giống.",
     "alternatives": [
       {
-        "external_id": "169957",
         "name": "Mung beans, mature seeds, sprouted, raw (GIÁ ĐỖ)",
-        "kcal_per_100g": 30,
-        "why_not": "Giá đỗ — nước 90,4 g, chênh 11,6 lần. Đã nhập riêng thành nguyên liệu `gia-do`"
+        "why_not": "Giá đỗ — nước 90,4 g, chênh 11,6 lần. Đã nhập riêng thành nguyên liệu `gia-do`",
+        "external_id": "169957",
+        "kcal_per_100g": 30
       }
     ]
   },
@@ -37,7 +37,7 @@
   "units": [
     {
       "unit_name": "cup",
-      "grams": 207,
+      "grams": 207.0,
       "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
       "source": "FDC 174256 foodMeasures"
     },

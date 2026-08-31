@@ -15,28 +15,28 @@
     "fat_g": 0.12,
     "carb_g": 13.1,
     "fiber_g": 1.4,
-    "water_g": 86.0,
+    "water_g": 86,
     "sodium_mg": null,
     "mapping_confidence": "high",
     "mapping_note": "Khoảng 45–51 lấy từ hai bản SR Legacy phân theo giống (CÙNG BẢNG, không phá QT-4). Dứa Queen VN (khóm, quả nhỏ, ngọt đậm) gần nhóm 'traditional varieties' (45 kcal) hơn là 'extra sweet' (MD-2, 51 kcal) — nếu cần chính xác theo vùng nên cân nhắc dùng thẳng 168193.",
     "alternatives": [
       {
-        "external_id": "168193",
         "name": "Pineapple, raw, traditional varieties",
-        "kcal_per_100g": 45,
-        "why_not": "Một nhóm giống; cận dưới. Bản 'all varieties' phủ tốt hơn cho dữ liệu chung"
+        "why_not": "Một nhóm giống; cận dưới. Bản 'all varieties' phủ tốt hơn cho dữ liệu chung",
+        "external_id": "168193",
+        "kcal_per_100g": 45
       },
       {
-        "external_id": "168194",
         "name": "Pineapple, raw, extra sweet variety",
-        "kcal_per_100g": 51,
-        "why_not": "Giống MD-2 công nghiệp; cận trên"
+        "why_not": "Giống MD-2 công nghiệp; cận trên",
+        "external_id": "168194",
+        "kcal_per_100g": 51
       },
       {
-        "external_id": "2346398",
         "name": "Pineapple, raw (Foundation)",
-        "kcal_per_100g": 60.1,
-        "why_not": "Khác bảng, năng lượng ở nutrient 2047 — phá QT-4"
+        "why_not": "Khác bảng, năng lượng ở nutrient 2047 — phá QT-4",
+        "external_id": "2346398",
+        "kcal_per_100g": 60.1
       }
     ]
   },
@@ -48,21 +48,21 @@
   "is_ready_to_eat": false,
   "units": [
     {
-      "unit_name": "quả",
-      "grams": 905,
-      "note": null,
+      "unit_name": "cup miếng",
+      "grams": 165.0,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
       "source": "FDC 169124 foodMeasures"
     },
     {
       "unit_name": "khoanh",
-      "grams": 84,
+      "grams": 84.0,
       "note": "đường kính 9 cm, dày 2 cm",
       "source": "FDC 169124 foodMeasures"
     },
     {
-      "unit_name": "cup miếng",
-      "grams": 165,
-      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "unit_name": "quả",
+      "grams": 905.0,
+      "note": null,
       "source": "FDC 169124 foodMeasures"
     }
   ],

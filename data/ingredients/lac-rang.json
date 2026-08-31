@@ -21,10 +21,10 @@
     "mapping_note": "'Dry-roasted' = rang khô KHÔNG dầu — đúng với lạc rang của món Việt (bún, gỏi, xôi). Nếu công thức dùng lạc RANG DẦU (chiên ngập dầu) thì kcal cao hơn, phải dùng bản ghi khác. Bản có muối (174262) macro y hệt, chỉ khác Na = 410 mg thay vì 6 mg — nếu món dùng lạc rang muối thì đổi sang 174262 để trường natri đúng.",
     "alternatives": [
       {
-        "external_id": "174262",
         "name": "Peanuts, all types, dry-roasted, with salt",
-        "kcal_per_100g": 587,
-        "why_not": "Macro y hệt, chỉ khác natri (410 mg)"
+        "why_not": "Macro y hệt, chỉ khác natri (410 mg)",
+        "external_id": "174262",
+        "kcal_per_100g": 587
       }
     ]
   },
@@ -36,12 +36,6 @@
   "is_ready_to_eat": true,
   "units": [
     {
-      "unit_name": "oz",
-      "grams": 28.35,
-      "note": null,
-      "source": "FDC 173806 foodMeasures"
-    },
-    {
       "unit_name": "cup",
       "grams": 146.0,
       "note": null,
@@ -50,6 +44,12 @@
     {
       "unit_name": "hạt",
       "grams": 1.0,
+      "note": null,
+      "source": "FDC 173806 foodMeasures"
+    },
+    {
+      "unit_name": "oz",
+      "grams": 28.35,
       "note": null,
       "source": "FDC 173806 foodMeasures"
     }

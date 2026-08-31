@@ -21,10 +21,10 @@
     "mapping_note": "KHÔNG CÓ TRONG BẤT KỲ BẢNG FCT NÀO. USDA (SR Legacy, Foundation, Survey, Branded) = 0 kết quả cho 'nem chua'; Ciqual = 0. Nguồn duy nhất là nhãn sản phẩm trên Open Food Facts, đều là hàng sản xuất tại Pháp cho cộng đồng người Việt. Chọn nhãn này vì có bảng thành phần đầy đủ và đúng công thức nem chua truyền thống: thịt lợn 88% (nạc 58%, BÌ 27%, mỡ 3%), đường, muối, tỏi, ớt, THÍNH GẠO RANG, tiêu — tỷ lệ bì 27% chính là đặc trưng làm nem chua giòn. ⚠️ Biên độ giữa các nhãn CỰC LỚN: cụm này 165 kcal / đạm 22; cụm HOA NAM 301 kcal / đạm 36,8 / béo 16,1 — chênh 136 kcal/100g, và đạm 36,8 g là mức bất thường cao cho thịt lợn, gợi ý nem đó khô hơn nhiều (nem sỏ để lâu). Không đủ căn cứ chọn cụm nào đúng hơn cho nem chua Thanh Hoá/Bình Định. Xơ và nước KHÔNG có trên nhãn — để null. Natri 1280 mg đáng chú ý cho tầng cảnh báo muối.",
     "alternatives": [
       {
-        "external_id": "off-3474930204000",
         "name": "Nem Chua Sõ (HOA NAM)",
-        "kcal_per_100g": 301,
-        "why_not": "Đạm 36,8 g bất thường cao, không có bảng thành phần định lượng %. Cận trên"
+        "why_not": "Đạm 36,8 g bất thường cao, không có bảng thành phần định lượng %. Cận trên",
+        "external_id": "off-3474930204000",
+        "kcal_per_100g": 301
       }
     ]
   },

@@ -20,13 +20,14 @@
     "mapping_note": "Ô SAI SỐ LỚN NHẤT TRONG BẢNG NGUYÊN LIỆU. USDA có HAI dòng ba chỉ lệch nhau 138 kcal/100g. Chọn Foundation 2727576 làm giá trị trung tâm vì mới hơn (phân tích 2025, 6 mẫu) và CÓ BÌ — giống ba chỉ VN. Nhưng ba chỉ VN nằm đâu đó giữa hai dòng, nên bắt buộc dùng khoảng 380–518 và confidence=low theo QT-5. Ghi chú kỹ thuật: dòng Foundation có carbohydrate by difference = −0,705 (âm do sai số phân tích) — đã quy về 0; Foundation không đo chất xơ nên fiber=null. CẢNH BÁO QT-4: đây là dòng Foundation lẫn trong nhóm thịt lợn dùng SR Legacy. Nếu muốn giữ nghiêm ngặt một dataType thì phải dùng SR Legacy 167812 và chấp nhận 518 kcal.",
     "alternatives": [
       {
-        "external_id": "167812",
         "name": "Pork, fresh, belly, raw (SR Legacy)",
-        "kcal_per_100g": 518,
-        "why_not": "Ba chỉ kiểu Mỹ để làm bacon, fat 53,0 / protein 9,34 — nhiều mỡ hơn ba chỉ VN"
+        "why_not": "Ba chỉ kiểu Mỹ để làm bacon, fat 53,0 / protein 9,34 — nhiều mỡ hơn ba chỉ VN",
+        "external_id": "167812",
+        "kcal_per_100g": 518
       }
     ]
   },
+  "secondary_sources": [],
   "density_g_per_ml": null,
   "density_note": null,
   "default_yield_factor": null,

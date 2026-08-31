@@ -11,20 +11,20 @@
     "kcal_per_100g": 158,
     "kcal_min": null,
     "kcal_max": null,
-    "protein_g": 13.0,
+    "protein_g": 13,
     "fat_g": 11.1,
     "carb_g": 0.41,
-    "fiber_g": 0.0,
+    "fiber_g": 0,
     "water_g": 74.4,
     "sodium_mg": 141,
     "mapping_confidence": "high",
     "mapping_note": "Bản ghi KHÔNG ghi scientificName (trứng cút thương mại thường là Coturnix japonica nhưng USDA KHÔNG khẳng định — không tự điền). Chỉ có một bản ghi USDA duy nhất cho trứng cút nên chưa tra được biến thiên, kcal_min/max để null.",
     "alternatives": [
       {
-        "external_id": "172418",
         "name": "Quail, meat and skin, raw",
-        "kcal_per_100g": null,
-        "why_not": "Là THỊT chim cút, không phải trứng"
+        "why_not": "Là THỊT chim cút, không phải trứng",
+        "external_id": "172418",
+        "kcal_per_100g": null
       }
     ]
   },
@@ -37,7 +37,7 @@
   "units": [
     {
       "unit_name": "quả",
-      "grams": 9,
+      "grams": 9.0,
       "note": "phần ăn được, không vỏ. Trứng cút VN nhỉnh hơn chút — nếu dùng 10 g/quả phải ghi rõ là ước lượng của dự án",
       "source": "FDC 172191 foodMeasures"
     }

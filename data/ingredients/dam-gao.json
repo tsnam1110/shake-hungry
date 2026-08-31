@@ -21,16 +21,16 @@
     "mapping_note": "KHÔNG có dấm gạo trong SR Legacy/Foundation ('vinegar' chỉ ra balsamic / cider / distilled / red wine). QUYẾT ĐỊNH BIÊN SOẠN: dùng 'Vinegar, distilled' (172237, 18 kcal — GIÁ TRỊ ĐO THẬT trong cùng bảng) làm proxy, thay vì lấy nhãn thương mại. ⚠️ VÌ SAO KHÔNG DÙNG NHÃN: nhãn PATCHUN (GTIN 4891434202650, 'WATER, GLUTINOUS RICE, dilute to 5% acidity') khai 0 kcal cho khẩu phần 15 ml — đó là LÀM TRÒN NHÃN, không phải 0 thật: 21 CFR 101.9(c)(1) cho phép khai 0 khi dưới 5 kcal/khẩu phần. Toàn bộ 7.538 bản ghi Branded 'rice vinegar' đều khai 0 theo cùng cách. Cận trên 33 kcal/100ml suy từ ngưỡng 5 kcal/15 ml. Dấm gạo có đường sót từ gạo nếp nên thực tế có thể cao hơn dấm cất đôi chút.",
     "alternatives": [
       {
-        "external_id": "173469",
         "name": "Vinegar, cider (SR Legacy)",
-        "kcal_per_100g": 21,
-        "why_not": "Dấm táo, khác nguyên liệu"
+        "why_not": "Dấm táo, khác nguyên liệu",
+        "external_id": "173469",
+        "kcal_per_100g": 21
       },
       {
-        "external_id": "501396",
         "name": "KC CENTRAL TRADING RICE VINEGAR",
-        "kcal_per_100g": 200,
-        "why_not": "Thành phần có 'SUGAR, SALT, KELP EXTRACT' → đây là dấm sushi ĐÃ NÊM (carb 53,3 g, Na 4.730 mg), không phải dấm gạo trơn"
+        "why_not": "Thành phần có 'SUGAR, SALT, KELP EXTRACT' → đây là dấm sushi ĐÃ NÊM (carb 53,3 g, Na 4.730 mg), không phải dấm gạo trơn",
+        "external_id": "501396",
+        "kcal_per_100g": 200
       }
     ]
   },

@@ -21,16 +21,16 @@
     "mapping_note": "USDA lấy mẫu chuối Cavendish; chuối tiêu VN cùng nhóm Cavendish (Musa acuminata, AAA) nên khác biệt nhỏ. Khoảng 85–97 là BIẾN THIÊN THẬT theo độ chín (hai bản Foundation), không phải sai số đo — chuối chín kỹ cho kcal thấp hơn chuối vừa chín.",
     "alternatives": [
       {
-        "external_id": "1105073",
         "name": "Bananas, overripe, raw (Foundation)",
-        "kcal_per_100g": 85,
-        "why_not": "Một trạng thái chín; dùng làm cận dưới, không làm bản ghi chính"
+        "why_not": "Một trạng thái chín; dùng làm cận dưới, không làm bản ghi chính",
+        "external_id": "1105073",
+        "kcal_per_100g": 85
       },
       {
-        "external_id": "1105314",
         "name": "Bananas, ripe and slightly ripe, raw (Foundation)",
-        "kcal_per_100g": 97,
-        "why_not": "Trạng thái chín; cận trên. Trộn Foundation làm bản chính sẽ phá QT-4"
+        "why_not": "Trạng thái chín; cận trên. Trộn Foundation làm bản chính sẽ phá QT-4",
+        "external_id": "1105314",
+        "kcal_per_100g": 97
       }
     ]
   },
@@ -42,20 +42,20 @@
   "is_ready_to_eat": false,
   "units": [
     {
-      "unit_name": "quả vừa",
-      "grams": 118,
+      "unit_name": "cup thái lát",
+      "grams": 150.0,
       "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
       "source": "FDC 173944 foodMeasures"
     },
     {
       "unit_name": "quả nhỏ",
-      "grams": 101,
+      "grams": 101.0,
       "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
       "source": "FDC 173944 foodMeasures"
     },
     {
-      "unit_name": "cup thái lát",
-      "grams": 150,
+      "unit_name": "quả vừa",
+      "grams": 118.0,
       "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
       "source": "FDC 173944 foodMeasures"
     }

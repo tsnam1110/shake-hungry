@@ -14,8 +14,8 @@
     "protein_g": 3.33,
     "fat_g": 33.5,
     "carb_g": 15.2,
-    "fiber_g": 9.0,
-    "water_g": 47.0,
+    "fiber_g": 9,
+    "water_g": 47,
     "sodium_mg": null,
     "mapping_confidence": "high",
     "mapping_note": "Nền mẫu tốt nhất trong nhóm dừa (dataPoints 12–15). Đây là cùi DỪA GIÀ (nước 47%, béo 33,5%). CÙI DỪA NON / dừa nước (mềm, trong, nhiều nước, ăn tráng miệng) KHÔNG dùng được con số này — USDA không có bản riêng, cần tra bổ sung.",
@@ -30,13 +30,13 @@
   "units": [
     {
       "unit_name": "cup nạo sợi",
-      "grams": 80,
+      "grams": 80.0,
       "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
       "source": "FDC 170169 foodMeasures"
     },
     {
       "unit_name": "quả dừa vừa",
-      "grams": 397,
+      "grams": 397.0,
       "note": "phần cùi",
       "source": "FDC 170169 foodMeasures"
     }

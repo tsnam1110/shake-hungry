@@ -14,7 +14,7 @@
     "protein_g": 16.9,
     "fat_g": 4.83,
     "carb_g": 0.73,
-    "fiber_g": 0.0,
+    "fiber_g": 0,
     "water_g": 76.5,
     "sodium_mg": 71,
     "mapping_confidence": "high",
@@ -30,7 +30,7 @@
   "units": [
     {
       "unit_name": "bộ gan",
-      "grams": 44,
+      "grams": 44.0,
       "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam — gà Mỹ cỡ lớn, gan gà ta VN nhỏ hơn",
       "source": "FDC 171060 foodMeasures"
     }

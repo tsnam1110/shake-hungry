@@ -21,10 +21,10 @@
     "mapping_note": "Ánh xạ chắc chắn. Dữ liệu tốt nhất trong cả lô: nước dataPoints=165, đạm=104. Khoảng rộng ra vì dòng Foundation trùng tên (2346400) dùng hệ Atwater: 2047 = 40 kcal, 2048 = 34 kcal, so với 1008 = 31 kcal của SR Legacy.",
     "alternatives": [
       {
-        "external_id": "2346400",
         "name": "Beans, snap, green, raw (Foundation)",
-        "kcal_per_100g": 34,
-        "why_not": "Foundation KHÔNG có nutrient 1008; chỉ có 2047=40 và 2048=34. Giữ làm cận trên của khoảng theo QT-4"
+        "why_not": "Foundation KHÔNG có nutrient 1008; chỉ có 2047=40 và 2048=34. Giữ làm cận trên của khoảng theo QT-4",
+        "external_id": "2346400",
+        "kcal_per_100g": 34
       }
     ]
   },
@@ -36,15 +36,15 @@
   "is_ready_to_eat": false,
   "units": [
     {
-      "unit_name": "quả",
-      "grams": 5.5,
-      "note": "suy từ 10 quả dài 10 cm = 55 g",
+      "unit_name": "cup cắt khúc",
+      "grams": 100.0,
+      "note": null,
       "source": "FDC 169961 foodMeasures"
     },
     {
-      "unit_name": "cup cắt khúc",
-      "grams": 100,
-      "note": null,
+      "unit_name": "quả",
+      "grams": 5.5,
+      "note": "suy từ 10 quả dài 10 cm = 55 g",
       "source": "FDC 169961 foodMeasures"
     }
   ],

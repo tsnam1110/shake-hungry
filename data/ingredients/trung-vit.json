@@ -14,12 +14,13 @@
     "protein_g": 12.8,
     "fat_g": 13.8,
     "carb_g": 1.45,
-    "fiber_g": 0.0,
+    "fiber_g": 0,
     "water_g": null,
     "mapping_confidence": "high",
     "mapping_note": "Phần ăn được, đã bỏ vỏ. Trứng vịt đậm hơn trứng gà rõ rệt (185 so với 143 kcal/100g) VÀ quả to hơn (70 g so với 50 g) → một quả trứng vịt khoảng 130 kcal so với khoảng 72 kcal của một quả trứng gà large. Dòng này KHÔNG dùng được cho trứng vịt lộn — đó là nguyên liệu riêng, USDA không có, chưa tra.",
     "alternatives": []
   },
+  "secondary_sources": [],
   "density_g_per_ml": null,
   "density_note": null,
   "default_yield_factor": null,
@@ -28,7 +29,7 @@
   "units": [
     {
       "unit_name": "quả",
-      "grams": 70,
+      "grams": 70.0,
       "note": "phần ăn được",
       "source": "FDC 172189 foodMeasures"
     }

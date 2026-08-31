@@ -20,37 +20,40 @@
     "mapping_note": "scientificName = 'Allium cepa'. Đây là hành tây chung. USDA có bản ghi riêng cho hành tây đỏ (790577), trắng (1104962), vàng (790646) nếu sau này cần tách.",
     "alternatives": []
   },
+  "secondary_sources": [],
   "density_g_per_ml": null,
+  "density_note": null,
   "default_yield_factor": null,
   "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
   "units": [
     {
-      "unit_name": "củ vừa",
-      "grams": 110,
-      "note": "đường kính 2-1/2 inch",
-      "source": "FDC 170000 foodMeasures"
-    },
-    {
-      "unit_name": "củ nhỏ",
-      "grams": 70,
+      "unit_name": "cup thái nhỏ",
+      "grams": 160.0,
       "note": null,
       "source": "FDC 170000 foodMeasures"
     },
     {
       "unit_name": "củ lớn",
-      "grams": 150,
+      "grams": 150.0,
       "note": null,
       "source": "FDC 170000 foodMeasures"
     },
     {
-      "unit_name": "cup thái nhỏ",
-      "grams": 160,
+      "unit_name": "củ nhỏ",
+      "grams": 70.0,
       "note": null,
+      "source": "FDC 170000 foodMeasures"
+    },
+    {
+      "unit_name": "củ vừa",
+      "grams": 110.0,
+      "note": "đường kính 2-1/2 inch",
       "source": "FDC 170000 foodMeasures"
     },
     {
       "unit_name": "muỗng canh thái nhỏ",
-      "grams": 10,
+      "grams": 10.0,
       "note": null,
       "source": "FDC 170000 foodMeasures"
     }

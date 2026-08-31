@@ -12,19 +12,19 @@
     "kcal_min": null,
     "kcal_max": null,
     "protein_g": 8.92,
-    "fat_g": 8.0,
+    "fat_g": 8,
     "carb_g": 4.38,
     "fiber_g": null,
-    "water_g": 70.0,
+    "water_g": 70,
     "sodium_mg": 2870,
     "mapping_confidence": "medium",
     "mapping_note": "Fuyu (腐乳) và chao là CÙNG một họ sản phẩm (đậu phụ ướp muối lên men trong nước muối/rượu). Nhưng chao đỏ Việt Nam thường có men gạo đỏ và đường; chao trắng bán theo hũ có nhiều nước muối. Toàn bộ dinh dưỡng của bản ghi này dựa trên dataPoints = 1 (MỘT mẫu duy nhất) — độ tin cậy nội tại của chính USDA đã thấp.",
     "alternatives": [
       {
-        "external_id": "174305",
         "name": "Tofu, salted and fermented (fuyu), prepared with calcium sulfate",
-        "kcal_per_100g": null,
-        "why_not": "Bản đặc tả chất đông tụ calcium sulfate; chao Việt không nêu chất đông tụ nên chọn bản tổng quát"
+        "why_not": "Bản đặc tả chất đông tụ calcium sulfate; chao Việt không nêu chất đông tụ nên chọn bản tổng quát",
+        "external_id": "174305",
+        "kcal_per_100g": null
       }
     ]
   },
@@ -37,7 +37,7 @@
   "units": [
     {
       "unit_name": "miếng chao",
-      "grams": 11,
+      "grams": 11.0,
       "note": null,
       "source": "FDC 174280 foodMeasures"
     }

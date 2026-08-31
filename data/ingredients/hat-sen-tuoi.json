@@ -15,16 +15,16 @@
     "fat_g": 0.53,
     "carb_g": 17.3,
     "fiber_g": null,
-    "water_g": 77.0,
+    "water_g": 77,
     "sodium_mg": 1,
     "mapping_confidence": "high",
     "mapping_note": "Cũng thiếu nutrient 1079 như bản khô. Chênh khô/tươi 3,73 lần — KHÔNG lẫn hai bản.",
     "alternatives": [
       {
-        "external_id": "169250",
         "name": "Lotus root, raw (Nelumbo nucifera)",
-        "kcal_per_100g": null,
-        "why_not": "Là CỦ SEN, không phải hạt sen"
+        "why_not": "Là CỦ SEN, không phải hạt sen",
+        "external_id": "169250",
+        "kcal_per_100g": null
       }
     ]
   },

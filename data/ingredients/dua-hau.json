@@ -21,10 +21,10 @@
     "mapping_note": "Không có bản giống nào khác CÓ NĂNG LƯỢNG để lập khoảng — kcal_min/max để null (chưa tra được biến thiên).",
     "alternatives": [
       {
-        "external_id": "2747675",
         "name": "Watermelon, seedless, flesh only, raw (Foundation)",
-        "kcal_per_100g": null,
-        "why_not": "BẢN NÀY KHÔNG CÓ GIÁ TRỊ NĂNG LƯỢNG NÀO — không 1008, không 2047, không 2048, chỉ có protein. Không dùng được. Đây là ca cực đoan của bẫy 'Foundation có thể thiếu năng lượng'"
+        "why_not": "BẢN NÀY KHÔNG CÓ GIÁ TRỊ NĂNG LƯỢNG NÀO — không 1008, không 2047, không 2048, chỉ có protein. Không dùng được. Đây là ca cực đoan của bẫy 'Foundation có thể thiếu năng lượng'",
+        "external_id": "2747675",
+        "kcal_per_100g": null
       }
     ]
   },
@@ -37,13 +37,13 @@
   "units": [
     {
       "unit_name": "cup thái hạt lựu",
-      "grams": 152,
+      "grams": 152.0,
       "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
       "source": "FDC 167765 foodMeasures"
     },
     {
       "unit_name": "miếng",
-      "grams": 286,
+      "grams": 286.0,
       "note": "khoảng 1/16 quả",
       "source": "FDC 167765 foodMeasures"
     }

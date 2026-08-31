@@ -29,15 +29,15 @@
   "is_ready_to_eat": false,
   "units": [
     {
-      "unit_name": "lá",
-      "grams": 0.5,
-      "note": "suy từ 5 lá = 2,5 g. CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam — lá sweet basil to hơn lá húng quế VN",
-      "source": "FDC 172232 foodMeasures"
-    },
-    {
       "unit_name": "cup lá nguyên",
       "grams": 24.0,
       "note": "suy từ 1/4 cup = 6 g",
+      "source": "FDC 172232 foodMeasures"
+    },
+    {
+      "unit_name": "lá",
+      "grams": 0.5,
+      "note": "suy từ 5 lá = 2,5 g. CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam — lá sweet basil to hơn lá húng quế VN",
       "source": "FDC 172232 foodMeasures"
     }
   ],

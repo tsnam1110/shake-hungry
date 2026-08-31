@@ -20,37 +20,40 @@
     "mapping_note": "scientificName = 'Daucus carota'. Bản Foundation mới hơn 2258586 'Carrots, mature, raw' cho 48 kcal (Atwater general) / 0,94 P / 10,3 carb / 3,1 xơ — cao hơn khoảng 17% kcal. Chọn SR Legacy để đồng bộ nguồn với các nguyên liệu còn lại theo QT-4.",
     "alternatives": []
   },
+  "secondary_sources": [],
   "density_g_per_ml": null,
+  "density_note": null,
   "default_yield_factor": null,
   "oil_absorption_pct": null,
+  "is_ready_to_eat": false,
   "units": [
     {
-      "unit_name": "củ vừa",
-      "grams": 61,
-      "note": null,
-      "source": "FDC 170393 foodMeasures"
-    },
-    {
-      "unit_name": "củ nhỏ",
-      "grams": 50,
-      "note": null,
-      "source": "FDC 170393 foodMeasures"
-    },
-    {
-      "unit_name": "củ lớn",
-      "grams": 72,
+      "unit_name": "cup bào",
+      "grams": 110.0,
       "note": null,
       "source": "FDC 170393 foodMeasures"
     },
     {
       "unit_name": "cup thái",
-      "grams": 128,
+      "grams": 128.0,
       "note": null,
       "source": "FDC 170393 foodMeasures"
     },
     {
-      "unit_name": "cup bào",
-      "grams": 110,
+      "unit_name": "củ lớn",
+      "grams": 72.0,
+      "note": null,
+      "source": "FDC 170393 foodMeasures"
+    },
+    {
+      "unit_name": "củ nhỏ",
+      "grams": 50.0,
+      "note": null,
+      "source": "FDC 170393 foodMeasures"
+    },
+    {
+      "unit_name": "củ vừa",
+      "grams": 61.0,
       "note": null,
       "source": "FDC 170393 foodMeasures"
     }

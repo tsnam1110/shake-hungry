@@ -24,31 +24,31 @@
   "secondary_sources": [
     {
       "kind": "off",
+      "note": "KHÔNG ghi vào bản ghi nguyên liệu. Chỉ dùng làm mốc kiểm tra tính hợp lý khi có số liệu mắm tôm Việt.",
       "brand": "Pantai (Thái Lan) — KAPI, CHỈ THAM KHẢO",
-      "external_id": "8850058002721",
-      "source_url": "https://world.openfoodfacts.org/api/v2/product/8850058002721",
-      "kcal_per_100g": 125,
-      "protein_g": 22.0,
       "fat_g": 1.7,
       "carb_g": 4.4,
+      "protein_g": 22,
       "sodium_mg": 8720,
       "confidence": "low",
+      "source_url": "https://world.openfoodfacts.org/api/v2/product/8850058002721",
+      "external_id": "8850058002721",
       "license_note": "Dữ liệu Open Food Facts, giấy phép ODbL 1.0 — bắt buộc ghi công. PHỤ THUỘC QUYẾT ĐỊNH LEGAL-002: nếu dự án không chấp nhận ràng buộc share-alike của ODbL thì phải thay bằng ảnh nhãn tự chụp trước khi phát hành.",
-      "note": "KHÔNG ghi vào bản ghi nguyên liệu. Chỉ dùng làm mốc kiểm tra tính hợp lý khi có số liệu mắm tôm Việt."
+      "kcal_per_100g": 125
     },
     {
       "kind": "off",
+      "note": "Hai nhãn Thái đồng thuận ở khoảng 123–125 kcal và 22–25 g protein, cho thấy khoảng đó đáng tin cho kapi — nhưng vẫn KHÔNG phải mắm tôm Việt.",
       "brand": "Maepranom (Thái Lan) — KAPI, CHỈ THAM KHẢO",
-      "external_id": "8850487029108",
-      "source_url": "https://world.openfoodfacts.org/api/v2/product/8850487029108",
-      "kcal_per_100g": 123,
-      "protein_g": 24.9,
       "fat_g": 2.6,
-      "carb_g": 0.0,
+      "carb_g": 0,
+      "protein_g": 24.9,
       "sodium_mg": 7080,
       "confidence": "low",
+      "source_url": "https://world.openfoodfacts.org/api/v2/product/8850487029108",
+      "external_id": "8850487029108",
       "license_note": "Dữ liệu Open Food Facts, giấy phép ODbL 1.0 — bắt buộc ghi công. PHỤ THUỘC QUYẾT ĐỊNH LEGAL-002: nếu dự án không chấp nhận ràng buộc share-alike của ODbL thì phải thay bằng ảnh nhãn tự chụp trước khi phát hành.",
-      "note": "Hai nhãn Thái đồng thuận ở khoảng 123–125 kcal và 22–25 g protein, cho thấy khoảng đó đáng tin cho kapi — nhưng vẫn KHÔNG phải mắm tôm Việt."
+      "kcal_per_100g": 123
     }
   ],
   "density_g_per_ml": null,

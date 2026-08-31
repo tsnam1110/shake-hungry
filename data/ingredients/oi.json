@@ -21,10 +21,10 @@
     "mapping_note": "Đúng loài nhưng bản ghi chỉ dựa trên 2 mẫu (dataPoints=2 cho nước/đạm/béo) — nền mẫu rất mỏng. USDA lấy mẫu ổi RUỘT HỒNG; ổi VN phổ biến là ruột trắng (ổi xá lị, ổi nữ hoàng), giòn và ít ngọt hơn. Chất xơ 5,4 g rất cao vì tính CẢ HẠT, mà người Việt thường bỏ hạt ổi xá lị.",
     "alternatives": [
       {
-        "external_id": "173045",
         "name": "Guavas, strawberry, raw",
-        "kcal_per_100g": 69,
-        "why_not": "Khác loài (Psidium cattleianum — ổi dâu), không trồng phổ biến ở VN"
+        "why_not": "Khác loài (Psidium cattleianum — ổi dâu), không trồng phổ biến ở VN",
+        "external_id": "173045",
+        "kcal_per_100g": 69
       }
     ]
   },
@@ -37,7 +37,7 @@
   "units": [
     {
       "unit_name": "quả",
-      "grams": 55,
+      "grams": 55.0,
       "note": "phần ăn được",
       "source": "FDC 173044 foodMeasures"
     }

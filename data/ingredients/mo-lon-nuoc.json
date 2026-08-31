@@ -11,22 +11,23 @@
     "kcal_per_100g": 902,
     "kcal_min": null,
     "kcal_max": null,
-    "protein_g": 0.0,
-    "fat_g": 100.0,
-    "carb_g": 0.0,
-    "fiber_g": 0.0,
-    "water_g": 0.0,
+    "protein_g": 0,
+    "fat_g": 100,
+    "carb_g": 0,
+    "fiber_g": 0,
+    "water_g": 0,
     "mapping_confidence": "high",
     "mapping_note": "Mỡ nước đã thắng là chất béo tinh khiết 100%, nước 0% → 902 kcal/100g là hằng số vật lý, không phụ thuộc giống lợn hay vùng miền. Đây là dòng đáng tin nhất trong cả bảng. PHÂN BIỆT với mỡ CHƯA thắng: dùng 167811 khi công thức ghi 'mỡ khổ / mỡ tươi'. TRÁNH 172327 và 173566 'Shortening, lard and vegetable oil' — đó là mỡ pha dầu thực vật công nghiệp.",
     "alternatives": [
       {
-        "external_id": "167811",
         "name": "Pork, fresh, backfat, raw",
-        "kcal_per_100g": 812,
-        "why_not": "Mỡ khổ chưa thắng, còn 7,69% nước (fat 88,7)"
+        "why_not": "Mỡ khổ chưa thắng, còn 7,69% nước (fat 88,7)",
+        "external_id": "167811",
+        "kcal_per_100g": 812
       }
     ]
   },
+  "secondary_sources": [],
   "density_g_per_ml": null,
   "density_note": null,
   "default_yield_factor": null,
@@ -34,14 +35,14 @@
   "is_ready_to_eat": false,
   "units": [
     {
-      "unit_name": "muỗng canh",
-      "grams": 12.8,
+      "unit_name": "cup",
+      "grams": 205.0,
       "note": null,
       "source": "FDC 171401 foodMeasures"
     },
     {
-      "unit_name": "cup",
-      "grams": 205,
+      "unit_name": "muỗng canh",
+      "grams": 12.8,
       "note": null,
       "source": "FDC 171401 foodMeasures"
     }

@@ -29,14 +29,14 @@
   "is_ready_to_eat": false,
   "units": [
     {
-      "unit_name": "muỗng cà phê",
-      "grams": 3.0,
+      "unit_name": "muỗng canh",
+      "grams": 9.4,
       "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
       "source": "FDC 172231 foodMeasures"
     },
     {
-      "unit_name": "muỗng canh",
-      "grams": 9.4,
+      "unit_name": "muỗng cà phê",
+      "grams": 3.0,
       "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
       "source": "FDC 172231 foodMeasures"
     }

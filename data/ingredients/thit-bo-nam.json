@@ -14,31 +14,32 @@
     "protein_g": 18.4,
     "fat_g": 19.1,
     "carb_g": 0.56,
-    "fiber_g": 0.0,
+    "fiber_g": 0,
     "water_g": null,
     "mapping_confidence": "low",
     "mapping_note": "'Nạm' KHÔNG có dòng USDA tương đương 1-1: nạm là phần bụng/sườn bò lẫn gân và mỡ lá, dùng cho phở. Bốn ứng viên trải từ 155 đến 345 kcal — chọn brisket nguyên tảng còn mỡ 1/8 inch (253) làm điểm giữa. Đây là nguyên liệu nên ưu tiên tự đo hoặc khảo sát lại, vì nó xuất hiện trong phở — món quan trọng nhất của kho dữ liệu.",
     "alternatives": [
       {
-        "external_id": "168607",
         "name": "Beef brisket, whole, separable lean only",
-        "kcal_per_100g": 157,
-        "why_not": "Quá nạc so với nạm (fat 7,37)"
+        "why_not": "Quá nạc so với nạm (fat 7,37)",
+        "external_id": "168607",
+        "kcal_per_100g": 157
       },
       {
-        "external_id": "174740",
         "name": "Beef, New Zealand, brisket navel end, lean and fat",
-        "kcal_per_100g": 345,
-        "why_not": "Navel end đúng vị trí giải phẫu của nạm nhất, nhưng bò NZ nuôi cỏ béo hơn (fat 31,3)"
+        "why_not": "Navel end đúng vị trí giải phẫu của nạm nhất, nhưng bò NZ nuôi cỏ béo hơn (fat 31,3)",
+        "external_id": "174740",
+        "kcal_per_100g": 345
       },
       {
-        "external_id": "169563",
         "name": "Beef, flank steak, lean and fat, trimmed to 0 inch fat",
-        "kcal_per_100g": 155,
-        "why_not": "Thăn sườn, ít mỡ hơn nạm"
+        "why_not": "Thăn sườn, ít mỡ hơn nạm",
+        "external_id": "169563",
+        "kcal_per_100g": 155
       }
     ]
   },
+  "secondary_sources": [],
   "density_g_per_ml": null,
   "density_note": null,
   "default_yield_factor": null,

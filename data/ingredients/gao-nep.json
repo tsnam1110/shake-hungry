@@ -20,6 +20,7 @@
     "mapping_note": "Khớp trực tiếp. LƯU Ý số mẫu rất thấp (dataPoints = 3 cho nước/protein/lipid), USDA không công bố min/max. Ciqual KHÔNG có gạo nếp (đã tìm 'riz gluant', 'glutinous sticky rice' → 0 kết quả khớp).",
     "alternatives": []
   },
+  "secondary_sources": [],
   "density_g_per_ml": 0.782,
   "density_note": "SUY RA: 185 g/cup (FDC 168883 foodMeasures) chia 236,588 ml. Bulk density.",
   "default_yield_factor": null,
@@ -28,7 +29,7 @@
   "units": [
     {
       "unit_name": "cup",
-      "grams": 185,
+      "grams": 185.0,
       "note": "US cup, gạo nếp sống",
       "source": "FDC 168883 foodMeasures"
     }

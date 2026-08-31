@@ -20,6 +20,7 @@
     "mapping_note": "Dòng USDA là 'rice noodles' chung, không phân biệt sợi bún với sợi phở — dùng chung được cho cả hai ở dạng KHÔ. Ciqual 9900 'Vermicelles de riz sèches, crues' khớp chủng loại chính xác hơn và cho số gần trùng khít: 365 kcal, carb 80,5, nhưng protein 7,44 so với 5,95 (lệch 25%). Vì USDA 169742 KHÔNG ghi dataPoints cho protein (n=0, tức là giá trị gán chứ không đo), protein 7,44 của Ciqual đáng tin hơn. ĐÂY LÀ DÒNG NÊN DÙNG cho món phở/bún thay vì dòng sợi tươi — tính từ khối lượng khô rồi nhân hệ số hút nước.",
     "alternatives": []
   },
+  "secondary_sources": [],
   "density_g_per_ml": null,
   "density_note": null,
   "default_yield_factor": null,
@@ -28,7 +29,7 @@
   "units": [
     {
       "unit_name": "oz",
-      "grams": 57,
+      "grams": 57.0,
       "note": null,
       "source": "FDC 169742 foodMeasures"
     }

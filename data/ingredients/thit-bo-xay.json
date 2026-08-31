@@ -11,26 +11,26 @@
     "kcal_per_100g": 176,
     "kcal_min": 152,
     "kcal_max": 254,
-    "protein_g": 20.0,
-    "fat_g": 10.0,
-    "carb_g": 0.0,
-    "fiber_g": 0.0,
+    "protein_g": 20,
+    "fat_g": 10,
+    "carb_g": 0,
+    "fiber_g": 0,
     "water_g": 69.4,
     "sodium_mg": 66,
     "mapping_confidence": "medium",
     "mapping_note": "CHỌN MỨC 90% NẠC / 10% MỠ vì thịt bò xay ở VN gần như luôn xay từ phần nạc (thăn, mông, nạc vai) — mỡ bò không được ưa dùng như mỡ lợn, và không có tập quán bán bò xay 70/30 kiểu hamburger Mỹ. ⚠️ USDA có tới BẢY mức nạc từ 70/30 đến 97/3 — biên độ khổng lồ; riêng 80/20 đã là 254 kcal (chênh 78 kcal/100g so với mức đã chọn). BẮT BUỘC ghi mức % nạc vào bản ghi.",
     "alternatives": [
       {
-        "external_id": "173110",
         "name": "Beef, ground, 93% lean / 7% fat, raw",
-        "kcal_per_100g": 152,
-        "why_not": "Cận dưới hợp lý nếu xay từ thăn thuần nạc"
+        "why_not": "Cận dưới hợp lý nếu xay từ thăn thuần nạc",
+        "external_id": "173110",
+        "kcal_per_100g": 152
       },
       {
-        "external_id": "174036",
         "name": "Beef, ground, 80% lean / 20% fat, raw",
-        "kcal_per_100g": 254,
-        "why_not": "Mức hamburger Mỹ, quá béo so với bò xay ở VN — cận trên"
+        "why_not": "Mức hamburger Mỹ, quá béo so với bò xay ở VN — cận trên",
+        "external_id": "174036",
+        "kcal_per_100g": 254
       }
     ]
   },

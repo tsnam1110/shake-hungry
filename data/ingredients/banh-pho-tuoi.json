@@ -13,13 +13,14 @@
     "kcal_max": 108,
     "protein_g": 1.79,
     "fat_g": 0.2,
-    "carb_g": 24.0,
-    "fiber_g": 1.0,
+    "carb_g": 24,
+    "fiber_g": 1,
     "water_g": 73.8,
     "mapping_confidence": "low",
     "mapping_note": "KHÔNG bảng thành phần nào có bánh phở tươi. USDA 168914 là sợi phở KHÔ đã luộc chín, không phải bánh phở tươi tráng-hấp-cắt. Chọn vì trạng thái ngậm nước gần nhất (nước 73,8%). Đối chứng Ciqual 9901 'Rice vermicelli, dry, cooked' = 86,6 kcal, nước 77,8% — LỆCH 20%, gần như hoàn toàn do độ ngậm nước. KHUYẾN NGHỊ: với món phở, tính từ khối lượng sợi KHÔ (nguyên liệu 'bun-kho') rồi nhân hệ số hút nước tự đo, thay vì dùng dòng này. DÙNG CHUNG bản ghi với 'bun-tuoi' — USDA không tách sợi dẹt và sợi tròn.",
     "alternatives": []
   },
+  "secondary_sources": [],
   "density_g_per_ml": null,
   "density_note": null,
   "default_yield_factor": null,
@@ -28,7 +29,7 @@
   "units": [
     {
       "unit_name": "cup",
-      "grams": 176,
+      "grams": 176.0,
       "note": "sợi đã nấu",
       "source": "FDC 168914 foodMeasures"
     }

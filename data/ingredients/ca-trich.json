@@ -11,26 +11,26 @@
     "kcal_per_100g": 158,
     "kcal_min": 158,
     "kcal_max": 160,
-    "protein_g": 18.0,
+    "protein_g": 18,
     "fat_g": 9.04,
-    "carb_g": 0.0,
-    "fiber_g": 0.0,
-    "water_g": 72.0,
+    "carb_g": 0,
+    "fiber_g": 0,
+    "water_g": 72,
     "sodium_mg": null,
     "mapping_confidence": "medium",
     "mapping_note": "Cá trích VN là Sardinella spp. (S. gibbosa, S. lemuru) — CÙNG HỌ Clupeidae nhưng KHÁC CHI với cả Clupea (trích Đại Tây Dương) lẫn Sardina (sardine châu Âu). Chọn dòng USDA vì dữ liệu đo dày nhất (béo dataPoints=2524, nước=138) và giữ QT-4. Khoảng 158–160 là giữa HAI GIÁ TRỊ ĐÃ TRA THẬT (USDA 158, Ciqual 160). RỦI RO CHÍNH LÀ LIPID: cá trích là cá béo, lipid biến động theo mùa cực mạnh — Ciqual ghi sardine dao động 0,4–23,2 g/100g. KHÔNG trình bày calo cá trích dưới dạng số đơn.",
     "alternatives": [
       {
-        "external_id": "ciqual-26065",
         "name": "Sardine, crue (Sardina pilchardus)",
-        "kcal_per_100g": 160,
-        "why_not": "Khác nguồn FCT, thiếu cột nước; dùng làm số đối chứng cho khoảng. Ciqual ghi độ tin cậy D"
+        "why_not": "Khác nguồn FCT, thiếu cột nước; dùng làm số đối chứng cho khoảng. Ciqual ghi độ tin cậy D",
+        "external_id": "ciqual-26065",
+        "kcal_per_100g": 160
       },
       {
-        "external_id": "173669",
         "name": "Fish, herring, Pacific, raw",
-        "kcal_per_100g": null,
-        "why_not": "Phân loài Thái Bình Dương, không gần cá trích VN hơn dòng Atlantic"
+        "why_not": "Phân loài Thái Bình Dương, không gần cá trích VN hơn dòng Atlantic",
+        "external_id": "173669",
+        "kcal_per_100g": null
       }
     ]
   },
@@ -42,15 +42,15 @@
   "is_ready_to_eat": false,
   "units": [
     {
-      "unit_name": "phi lê",
-      "grams": 184,
-      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam — cá trích VN nhỏ hơn nhiều",
+      "unit_name": "oz",
+      "grams": 85.0,
+      "note": null,
       "source": "FDC 175116 foodMeasures"
     },
     {
-      "unit_name": "oz",
-      "grams": 85,
-      "note": null,
+      "unit_name": "phi lê",
+      "grams": 184.0,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam — cá trích VN nhỏ hơn nhiều",
       "source": "FDC 175116 foodMeasures"
     }
   ],

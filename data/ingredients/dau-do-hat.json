@@ -21,16 +21,16 @@
     "mapping_note": "Loài khớp, dữ liệu đầy đủ. Nước 13,4 g → đúng hạt khô.",
     "alternatives": [
       {
-        "external_id": "173728",
         "name": "Beans, adzuki, cooked, boiled",
-        "kcal_per_100g": null,
-        "why_not": "Đã luộc — phải là nguyên liệu riêng nếu cần"
+        "why_not": "Đã luộc — phải là nguyên liệu riêng nếu cần",
+        "external_id": "173728",
+        "kcal_per_100g": null
       },
       {
-        "external_id": "173729",
         "name": "Beans, adzuki, canned, sweetened",
-        "kcal_per_100g": null,
-        "why_not": "Đóng hộp có đường"
+        "why_not": "Đóng hộp có đường",
+        "external_id": "173729",
+        "kcal_per_100g": null
       }
     ]
   },
@@ -43,7 +43,7 @@
   "units": [
     {
       "unit_name": "cup",
-      "grams": 197,
+      "grams": 197.0,
       "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
       "source": "FDC 173727 foodMeasures"
     }

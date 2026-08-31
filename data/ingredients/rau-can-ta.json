@@ -21,10 +21,10 @@
     "mapping_note": "KHÔNG TRA ĐƯỢC — để null theo QT-1, không dùng proxy cùng họ. Rau gia vị Đông Nam Á không được USDA và Ciqual phủ. VIỆC CẦN LÀM: tra nhãn sản phẩm, hoặc tự cân đo và phân tích — xem RESEARCH-PROTOCOL §2 nguồn cấp 4–5. Đã tìm USDA: 'Oenanthe' → 0, 'dropwort' → 0, 'Japanese parsley' → 0; 'water celery' chỉ ra một kết quả là súp cần tây đóng hộp (172907), không liên quan. Ciqual: 'oenanthe' → 0.",
     "alternatives": [
       {
-        "external_id": "169988",
         "name": "Celery, raw (Apium graveolens)",
-        "kcal_per_100g": 14,
-        "why_not": "Cần tây — KHÁC CHI hoàn toàn với rau cần ta (Oenanthe javanica). Chỉ trùng chữ 'celery' trong tên tiếng Anh, đúng kiểu bẫy ở EDITORIAL-GUIDE §9.1. Không dùng thay."
+        "why_not": "Cần tây — KHÁC CHI hoàn toàn với rau cần ta (Oenanthe javanica). Chỉ trùng chữ 'celery' trong tên tiếng Anh, đúng kiểu bẫy ở EDITORIAL-GUIDE §9.1. Không dùng thay.",
+        "external_id": "169988",
+        "kcal_per_100g": 14
       }
     ]
   },

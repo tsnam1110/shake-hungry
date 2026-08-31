@@ -29,21 +29,21 @@
   "is_ready_to_eat": false,
   "units": [
     {
-      "unit_name": "quả nhỏ",
-      "grams": 157,
-      "note": null,
+      "unit_name": "cup miếng",
+      "grams": 145.0,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
       "source": "FDC 169926 foodMeasures"
     },
     {
       "unit_name": "quả lớn",
-      "grams": 781,
+      "grams": 781.0,
       "note": null,
       "source": "FDC 169926 foodMeasures"
     },
     {
-      "unit_name": "cup miếng",
-      "grams": 145,
-      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "unit_name": "quả nhỏ",
+      "grams": 157.0,
+      "note": null,
       "source": "FDC 169926 foodMeasures"
     }
   ],

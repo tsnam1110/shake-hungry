@@ -29,14 +29,14 @@
   "is_ready_to_eat": false,
   "units": [
     {
-      "unit_name": "cây nấm",
-      "grams": 5.5,
+      "unit_name": "cup",
+      "grams": 182.0,
       "note": null,
       "source": "FDC 168582 foodMeasures"
     },
     {
-      "unit_name": "cup",
-      "grams": 182,
+      "unit_name": "cây nấm",
+      "grams": 5.5,
       "note": null,
       "source": "FDC 168582 foodMeasures"
     }

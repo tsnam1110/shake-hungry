@@ -1,0 +1,3 @@
+{
+  "_comment": "License + ghi công cho TỪNG ảnh trong data/media/. Ảnh không có mục ở đây thì không được commit (ràng buộc R4). Schema mỗi mục: license (own/cc-by-4.0/cc0…), author, captured_at hoặc source_url, attribution (bắt buộc khi license yêu cầu ghi công)."
+}

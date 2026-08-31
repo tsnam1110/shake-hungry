@@ -20,13 +20,14 @@
     "mapping_note": "Ô NGUY HIỂM. Calo/100g cơm phụ thuộc gần như hoàn toàn vào tỉ lệ nước khi nấu, ba nguồn cho ba con số rất khác: USDA 168878 = 130 kcal (nước 68,4%); Ciqual 9104 = 155 kcal (nước 61,4%, độ tin cậy A); USDA 169712 'Rice, white, steamed, Chinese restaurant' = 151 kcal. Chênh 130 → 155 là 19%, thuần tuý do độ ngậm nước, KHÔNG phải sai số phép đo. Cơm Việt thường nấu mềm hơn nên USDA 130 có vẻ sát hơn, nhưng KHÔNG nguồn nào xác nhận. KHUYẾN NGHỊ MẠNH: đừng dùng nguyên liệu này trong công thức — dùng 'gao-te' (sống) rồi nhân hệ số hút nước tự đo, như vậy engine calo mới truy nguyên được.",
     "alternatives": [
       {
-        "external_id": "169712",
         "name": "Rice, white, steamed, Chinese restaurant",
-        "kcal_per_100g": 151,
-        "why_not": "Cơm hấp nhà hàng, ít nước hơn"
+        "why_not": "Cơm hấp nhà hàng, ít nước hơn",
+        "external_id": "169712",
+        "kcal_per_100g": 151
       }
     ]
   },
+  "secondary_sources": [],
   "density_g_per_ml": 0.668,
   "density_note": "SUY RA: 158 g/cup (FDC 168878 foodMeasures) chia 236,588 ml.",
   "default_yield_factor": null,
@@ -35,7 +36,7 @@
   "units": [
     {
       "unit_name": "cup",
-      "grams": 158,
+      "grams": 158.0,
       "note": "cơm chín",
       "source": "FDC 168878 foodMeasures"
     }

@@ -14,17 +14,17 @@
     "protein_g": 18.3,
     "fat_g": 5.95,
     "carb_g": 0.94,
-    "fiber_g": 0.0,
+    "fiber_g": 0,
     "water_g": 73.8,
     "sodium_mg": 74,
     "mapping_confidence": "high",
     "mapping_note": "Bỏ da thì khác biệt giống vịt gần như biến mất — đây là mục đáng tin nhất trong nhóm gia cầm. ⚠️ NHƯNG: USDA 135 kcal và Ciqual 36201 (127 kcal) có đạm 18,3 / béo 5,95 / nước 73,8 GIỐNG HỆT nhau — Ciqual mượn số USDA, chênh 8 kcal chỉ do EU không tính 0,94 g glucid vào năng lượng. ĐỪNG coi hai nguồn này là hai xác nhận độc lập; nó là một.",
     "alternatives": [
       {
-        "external_id": "ciqual-36201",
         "name": "Canard, viande crue (Ciqual)",
-        "kcal_per_100g": 127,
-        "why_not": "CÙNG bộ số gốc với USDA, chỉ khác công thức năng lượng EU 1169/2011 — không phải xác nhận độc lập"
+        "why_not": "CÙNG bộ số gốc với USDA, chỉ khác công thức năng lượng EU 1169/2011 — không phải xác nhận độc lập",
+        "external_id": "ciqual-36201",
+        "kcal_per_100g": 127
       }
     ]
   },
@@ -37,7 +37,7 @@
   "units": [
     {
       "unit_name": "nửa con",
-      "grams": 303,
+      "grams": 303.0,
       "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam — phần thịt nạc",
       "source": "FDC 172410 foodMeasures"
     }

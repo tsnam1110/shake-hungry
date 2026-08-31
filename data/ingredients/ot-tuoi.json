@@ -29,15 +29,15 @@
   "is_ready_to_eat": false,
   "units": [
     {
-      "unit_name": "quả cỡ Âu Mỹ",
-      "grams": 45.0,
-      "note": "KHÔNG áp dụng cho ớt hiểm VN (1–3 g/quả)",
-      "source": "FDC 170106 foodMeasures"
-    },
-    {
       "unit_name": "nửa cup thái",
       "grams": 75.0,
       "note": null,
+      "source": "FDC 170106 foodMeasures"
+    },
+    {
+      "unit_name": "quả cỡ Âu Mỹ",
+      "grams": 45.0,
+      "note": "KHÔNG áp dụng cho ớt hiểm VN (1–3 g/quả)",
       "source": "FDC 170106 foodMeasures"
     }
   ],

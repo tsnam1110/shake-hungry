@@ -21,16 +21,16 @@
     "mapping_note": "KHÔNG có MSG trong SR Legacy/Foundation lẫn Ciqual ('glutamate' → 0 kết quả). Dùng nhãn Ajinomoto, thành phần khai đúng một chất: 'MONOSODIUM GLUTAMATE'. Na 12.500 mg/100g phù hợp tỷ lệ natri lý thuyết của C5H8NNaO4. ⚠️ CẢNH BÁO kcal: 0 là GIÁ TRỊ KHAI TRÊN NHÃN theo quy tắc dưới 5 kcal/khẩu phần (khẩu phần 1 g), KHÔNG phải 0 sinh hoá — glutamate là amino acid nên có năng lượng chuyển hoá. Cận trên 500 là mức lý thuyết nếu tính toàn bộ khối lượng theo Atwater 4 kcal/g. Thực tế lượng dùng 1–3 g/món nên ảnh hưởng dưới 12 kcal, bỏ qua được.",
     "alternatives": [
       {
-        "external_id": "2032559",
         "name": "AJINOMOTO, UMAMI SEASONING (GTIN 071757010031)",
-        "kcal_per_100g": 0,
-        "why_not": "Trùng khớp hoàn toàn (Na 12.500, kcal 0); giữ bản mới hơn"
+        "why_not": "Trùng khớp hoàn toàn (Na 12.500, kcal 0); giữ bản mới hơn",
+        "external_id": "2032559",
+        "kcal_per_100g": 0
       },
       {
-        "external_id": "1849860",
         "name": "ACCENT, FLAVOR ENHANCER (B&G Foods)",
-        "kcal_per_100g": null,
-        "why_not": "Tên thương mại, không khai thành phần thuần MSG"
+        "why_not": "Tên thương mại, không khai thành phần thuần MSG",
+        "external_id": "1849860",
+        "kcal_per_100g": null
       }
     ]
   },
@@ -43,7 +43,7 @@
   "units": [
     {
       "unit_name": "muỗng cà phê",
-      "grams": 4,
+      "grams": 4.0,
       "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam — nhãn ghi 1/4 tsp = 1 g",
       "source": "suy từ householdServingFullText FDC 2568847"
     }

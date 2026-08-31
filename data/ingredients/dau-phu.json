@@ -21,22 +21,22 @@
     "mapping_note": "Ô RỦI RO CAO NHẤT TRONG NHÓM GIA VỊ/KHÁC. Các dòng USDA cùng mang chữ 'firm' lệch nhau 40–70%: 172475 'Tofu, raw, firm, prepared with calcium sulfate' = 144 kcal / 17,3 P (đậu phụ ÉP RẤT CHẶT kiểu Mỹ); HOUSE FOODS Premium Firm (173788) = 85 kcal / 10,9 P; Vitasoy Azumaya Firm (175236) = 80 kcal / 9,08 P; 174290 extra firm với nigari = 83 kcal / 9,98 P. Đậu phụ Việt bán ở chợ mềm và nhiều nước hơn hẳn loại 172475, nên nhóm 80–85 kcal khả năng đúng hơn — đã chọn 174290 làm giá trị trung tâm và để khoảng 80–144. CHƯA CHỐT: cần một nhãn sản phẩm đậu phụ bán tại VN để xác nhận; chưa tra được cái nào.",
     "alternatives": [
       {
-        "external_id": "172475",
         "name": "Tofu, raw, firm, prepared with calcium sulfate",
-        "kcal_per_100g": 144,
-        "why_not": "Đậu phụ ép rất chặt kiểu Mỹ, cứng hơn đậu phụ VN nhiều (protein 17,3)"
+        "why_not": "Đậu phụ ép rất chặt kiểu Mỹ, cứng hơn đậu phụ VN nhiều (protein 17,3)",
+        "external_id": "172475",
+        "kcal_per_100g": 144
       },
       {
-        "external_id": "173788",
         "name": "HOUSE FOODS Premium Firm tofu",
-        "kcal_per_100g": 85,
-        "why_not": "Nhãn thương mại, gần đậu phụ VN hơn"
+        "why_not": "Nhãn thương mại, gần đậu phụ VN hơn",
+        "external_id": "173788",
+        "kcal_per_100g": 85
       },
       {
-        "external_id": "175236",
         "name": "Vitasoy Azumaya Firm tofu",
-        "kcal_per_100g": 80,
-        "why_not": "Nhãn thương mại, cận dưới"
+        "why_not": "Nhãn thương mại, cận dưới",
+        "external_id": "175236",
+        "kcal_per_100g": 80
       }
     ]
   },

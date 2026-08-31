@@ -21,16 +21,16 @@
     "mapping_note": "Khớp loài chính xác, dạng lá tươi.",
     "alternatives": [
       {
-        "external_id": "170921",
         "name": "Spices, coriander leaf, dried",
-        "kcal_per_100g": null,
-        "why_not": "Lá khô — hàm lượng nước khác hoàn toàn"
+        "why_not": "Lá khô — hàm lượng nước khác hoàn toàn",
+        "external_id": "170921",
+        "kcal_per_100g": null
       },
       {
-        "external_id": "170922",
         "name": "Spices, coriander seed",
-        "kcal_per_100g": null,
-        "why_not": "Hạt ngò, bộ phận khác"
+        "why_not": "Hạt ngò, bộ phận khác",
+        "external_id": "170922",
+        "kcal_per_100g": null
       }
     ]
   },
@@ -42,15 +42,15 @@
   "is_ready_to_eat": false,
   "units": [
     {
-      "unit_name": "nhánh",
-      "grams": 2.2,
-      "note": "suy từ 9 nhánh = 20 g",
-      "source": "FDC 169997 foodMeasures"
-    },
-    {
       "unit_name": "cup",
       "grams": 16.0,
       "note": "suy từ 1/4 cup = 4 g",
+      "source": "FDC 169997 foodMeasures"
+    },
+    {
+      "unit_name": "nhánh",
+      "grams": 2.2,
+      "note": "suy từ 9 nhánh = 20 g",
       "source": "FDC 169997 foodMeasures"
     }
   ],

@@ -14,7 +14,7 @@
     "protein_g": 17.3,
     "fat_g": 4.36,
     "carb_g": 1.33,
-    "fiber_g": 0.0,
+    "fiber_g": 0,
     "water_g": 76.2,
     "sodium_mg": 56,
     "mapping_confidence": "high",
@@ -30,7 +30,7 @@
   "units": [
     {
       "unit_name": "quả tim",
-      "grams": 226,
+      "grams": 226.0,
       "note": "lợn Mỹ; tim lợn ở chợ VN thường 150–250 g — khoảng này chấp nhận được",
       "source": "FDC 168267 foodMeasures"
     }

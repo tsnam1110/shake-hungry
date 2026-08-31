@@ -14,31 +14,32 @@
     "protein_g": 16.5,
     "fat_g": 16.6,
     "carb_g": 0.25,
-    "fiber_g": 0.0,
+    "fiber_g": 0,
     "water_g": null,
     "mapping_confidence": "medium",
     "mapping_note": "Ba mức rất khác nhau, phải chọn đúng theo cách chế biến. Món VN (đùi gà nướng, gà rang) hầu như luôn giữ da nên dùng dòng có da. Số này KHÔNG bao gồm xương — nếu công thức ghi 'đùi gà nguyên xương' phải trừ khối lượng xương trước.",
     "alternatives": [
       {
-        "external_id": "2727567",
         "name": "Chicken thigh, meat and skin, raw (Foundation)",
-        "kcal_per_100g": 188,
-        "why_not": "Cùng loại nhưng Foundation cho thấp hơn 33 kcal → dùng làm cận dưới"
+        "why_not": "Cùng loại nhưng Foundation cho thấp hơn 33 kcal → dùng làm cận dưới",
+        "external_id": "2727567",
+        "kcal_per_100g": 188
       },
       {
-        "external_id": "173627",
         "name": "Chicken, dark meat, thigh, meat only, raw",
-        "kcal_per_100g": 121,
-        "why_not": "Đùi BỎ DA (fat 4,12)"
+        "why_not": "Đùi BỎ DA (fat 4,12)",
+        "external_id": "173627",
+        "kcal_per_100g": 121
       },
       {
-        "external_id": "172373",
         "name": "Chicken drumstick, meat and skin, raw",
-        "kcal_per_100g": 161,
-        "why_not": "Tỏi/cẳng gà, không phải đùi"
+        "why_not": "Tỏi/cẳng gà, không phải đùi",
+        "external_id": "172373",
+        "kcal_per_100g": 161
       }
     ]
   },
+  "secondary_sources": [],
   "density_g_per_ml": null,
   "density_note": null,
   "default_yield_factor": null,
@@ -47,7 +48,7 @@
   "units": [
     {
       "unit_name": "đùi có da",
-      "grams": 193,
+      "grams": 193.0,
       "note": "đùi gà công nghiệp Mỹ, to hơn đùi gà ta VN — cần đo lại tại chợ VN",
       "source": "FDC 172385 foodMeasures"
     }

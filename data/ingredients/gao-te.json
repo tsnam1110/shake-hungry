@@ -13,20 +13,21 @@
     "kcal_max": null,
     "protein_g": 7.13,
     "fat_g": 0.66,
-    "carb_g": 80.0,
+    "carb_g": 80,
     "fiber_g": 1.3,
     "water_g": 11.6,
     "mapping_confidence": "high",
     "mapping_note": "Dòng 'enriched' (Mỹ bắt buộc bổ sung sắt/folate/thiamin). Gạo tẻ VN KHÔNG enriched, nhưng enrichment chỉ động tới vi chất: dòng song sinh unenriched (169756) có macro y hệt 365/7,13/0,66/80,0/1,3. Với 5 chỉ số macro thì coi là khớp chính xác.",
     "alternatives": [
       {
-        "external_id": "169756",
         "name": "Rice, white, long-grain, regular, unenriched, raw",
-        "kcal_per_100g": 365,
-        "why_not": "Macro y hệt — chọn dòng nào cũng như nhau"
+        "why_not": "Macro y hệt — chọn dòng nào cũng như nhau",
+        "external_id": "169756",
+        "kcal_per_100g": 365
       }
     ]
   },
+  "secondary_sources": [],
   "density_g_per_ml": 0.782,
   "density_note": "SUY RA, không phải đo trực tiếp: 185 g/cup (FDC 168877 foodMeasures) chia 236,588 ml. Đây là khối lượng riêng đổ đống (bulk), không phải tỉ trọng hạt.",
   "default_yield_factor": null,
@@ -35,7 +36,7 @@
   "units": [
     {
       "unit_name": "cup",
-      "grams": 185,
+      "grams": 185.0,
       "note": "US cup 236,6 ml, gạo sống",
       "source": "FDC 168877 foodMeasures"
     }

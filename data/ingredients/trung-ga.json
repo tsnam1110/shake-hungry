@@ -14,25 +14,26 @@
     "protein_g": 12.6,
     "fat_g": 9.51,
     "carb_g": 0.72,
-    "fiber_g": 0.0,
+    "fiber_g": 0,
     "water_g": null,
     "mapping_confidence": "high",
     "mapping_note": "Tính trên phần ăn được (lòng đỏ + lòng trắng, đã bỏ vỏ). Trứng gà ta VN nhỏ hơn trứng 'large' của Mỹ — dùng cỡ small (38 g) hoặc medium (44 g) sát hơn, nhưng KHÔNG có số đo khối lượng trứng gà ta từ nguồn kiểm chứng được nên không ghi con số VN.",
     "alternatives": [
       {
-        "external_id": "172183",
         "name": "Egg, white, raw, fresh",
-        "kcal_per_100g": 52,
-        "why_not": "Chỉ lòng trắng (protein 10,9 / fat 0,17)"
+        "why_not": "Chỉ lòng trắng (protein 10,9 / fat 0,17)",
+        "external_id": "172183",
+        "kcal_per_100g": 52
       },
       {
-        "external_id": "172184",
         "name": "Egg, yolk, raw, fresh",
-        "kcal_per_100g": 322,
-        "why_not": "Chỉ lòng đỏ (protein 15,9 / fat 26,5)"
+        "why_not": "Chỉ lòng đỏ (protein 15,9 / fat 26,5)",
+        "external_id": "172184",
+        "kcal_per_100g": 322
       }
     ]
   },
+  "secondary_sources": [],
   "density_g_per_ml": null,
   "density_note": null,
   "default_yield_factor": null,
@@ -40,27 +41,27 @@
   "is_ready_to_eat": false,
   "units": [
     {
+      "unit_name": "cup trứng đánh tan",
+      "grams": 243.0,
+      "note": "khoảng 4,86 quả large",
+      "source": "FDC 171287 foodMeasures"
+    },
+    {
+      "unit_name": "quả lớn",
+      "grams": 50.0,
+      "note": "cỡ large của Mỹ",
+      "source": "FDC 171287 foodMeasures"
+    },
+    {
       "unit_name": "quả nhỏ",
-      "grams": 38,
+      "grams": 38.0,
       "note": "cỡ small của Mỹ",
       "source": "FDC 171287 foodMeasures"
     },
     {
       "unit_name": "quả vừa",
-      "grams": 44,
+      "grams": 44.0,
       "note": "cỡ medium của Mỹ",
-      "source": "FDC 171287 foodMeasures"
-    },
-    {
-      "unit_name": "quả lớn",
-      "grams": 50,
-      "note": "cỡ large của Mỹ",
-      "source": "FDC 171287 foodMeasures"
-    },
-    {
-      "unit_name": "cup trứng đánh tan",
-      "grams": 243,
-      "note": "khoảng 4,86 quả large",
       "source": "FDC 171287 foodMeasures"
     }
   ],

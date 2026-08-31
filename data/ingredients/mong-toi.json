@@ -21,10 +21,10 @@
     "mapping_note": "Đúng loài Basella alba. Hạ xuống medium vì TOÀN BỘ proximate có dataPoints=0 — không mẫu đo nào, mọi giá trị đều gán. USDA KHÔNG công bố chất xơ cho dòng này nên fiber_g = null; TUYỆT ĐỐI không mượn giá trị xơ từ dòng 169400 (bản đã nấu). Bản ghi cũng không có foodMeasures nào.",
     "alternatives": [
       {
-        "external_id": "169400",
         "name": "Malabar spinach, cooked",
-        "kcal_per_100g": 23,
-        "why_not": "Có dữ liệu đo thật (dataPoints=2) và có chất xơ 2,1 g, nhưng là dạng ĐÃ NẤU — không so được với nguyên liệu sống, và bản ghi thiếu scientificName"
+        "why_not": "Có dữ liệu đo thật (dataPoints=2) và có chất xơ 2,1 g, nhưng là dạng ĐÃ NẤU — không so được với nguyên liệu sống, và bản ghi thiếu scientificName",
+        "external_id": "169400",
+        "kcal_per_100g": 23
       }
     ]
   },

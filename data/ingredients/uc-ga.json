@@ -13,20 +13,21 @@
     "kcal_max": null,
     "protein_g": 22.5,
     "fat_g": 2.62,
-    "carb_g": 0.0,
-    "fiber_g": 0.0,
+    "carb_g": 0,
+    "fiber_g": 0,
     "water_g": null,
     "mapping_confidence": "high",
     "mapping_note": "Foundation 2646170 cho 106 kcal (Atwater tổng quát) / 112 (Atwater riêng), protein 22,5, fat 1,93 — chênh 8–14 kcal, nhỏ, không đổi kết luận. Chọn SR Legacy để đồng bộ với phần còn lại của nhóm gà theo QT-4. TRÁNH dòng 171509 'with added solution' (ức gà bơm dung dịch, không phổ biến ở chợ VN).",
     "alternatives": [
       {
-        "external_id": "2646170",
         "name": "Chicken breast, boneless, skinless, raw (Foundation)",
-        "kcal_per_100g": 106,
-        "why_not": "Đối chứng, lệch 8–14 kcal"
+        "why_not": "Đối chứng, lệch 8–14 kcal",
+        "external_id": "2646170",
+        "kcal_per_100g": 106
       }
     ]
   },
+  "secondary_sources": [],
   "density_g_per_ml": null,
   "density_note": null,
   "default_yield_factor": null,
@@ -35,7 +36,7 @@
   "units": [
     {
       "unit_name": "miếng nửa ức",
-      "grams": 272,
+      "grams": 272.0,
       "note": "cỡ broiler Mỹ, cần đo lại cho khẩu phần VN",
       "source": "FDC 171077 foodMeasures"
     }
