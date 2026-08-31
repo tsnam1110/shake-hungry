@@ -1,0 +1,40 @@
+{
+  "slug": "banh-cay",
+  "parent_dish_slug": null,
+  "country_code": "VN",
+  "region_code": null,
+  "names": [
+    {
+      "locale": "en",
+      "name": "bánh cáy",
+      "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "Bánh cáy",
+      "is_primary": true
+    }
+  ],
+  "is_eat_out": false,
+  "is_home_cook": false,
+  "cooking_method": null,
+  "completeness_level": 1,
+  "meal_slots": [],
+  "serving_desc": null,
+  "serving_grams": null,
+  "ingredients": [],
+  "recipe_steps": null,
+  "recipe_sources": [],
+  "media": [],
+  "estimated_kcal": null,
+  "external_ref": {
+    "id": "Q5004800",
+    "source": "wikidata",
+    "queried_at": "2026-08-31"
+  },
+  "import_note": "Nhập tự động từ Wikidata Q5004800 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/B%C3%A1nh%20c%C3%A1y.JPG",
+  "status": "draft",
+  "source": "imported",
+  "confidence": "unknown",
+  "needs_review": true
+}

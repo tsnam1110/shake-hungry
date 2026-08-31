@@ -1,0 +1,334 @@
+food_code,fdc_id,description,wweia_category,kcal_per_100g,protein_g,fat_g,carb_g,fiber_g,cooking_method
+13126000,2705663,"Ice cream, fried",5802,282,3.94,15.16,32.77,1.2,chien
+21500000,2705853,"Beef, ground, raw",2004,213,18.44,14.88,0,0,song
+24107070,2705949,"Chicken, NS as to part, fried, coated, skin / coating eaten",2202,251,21.75,15.02,7.14,0.2,chien
+24107071,2705950,"Chicken, NS as to part, fried, coated, skin / coating not eaten",2202,164,26.18,6.58,0.07,0,chien
+24107080,2705951,"Chicken, NS as to part, baked, coated, skin / coating eaten",2202,251,21.75,15.02,7.14,0.2,nuong
+24107081,2705952,"Chicken, NS as to part, baked, coated, skin / coating not eaten",2202,164,26.18,6.58,0.07,0,nuong
+24122130,2705955,"Chicken breast, baked, broiled, or roasted, skin eaten, from raw",2202,192,26.25,8.8,0,0,nuong
+24122131,2705956,"Chicken breast, baked, broiled, or roasted, skin not eaten, from raw",2202,161,30.22,3.52,0,0,nuong
+24123110,2705965,"Chicken breast, stewed, skin eaten",2202,181,24.7,8.28,0,0,kho
+24123120,2705966,"Chicken breast, stewed, skin not eaten",2202,149,27.96,3.26,0,0,kho
+24132230,2705984,"Chicken leg, drumstick and thigh, baked or broiled, skin eaten",2202,214,23.16,12.81,0,0,nuong
+24132231,2705985,"Chicken leg, drumstick and thigh, baked or broiled, skin not eaten",2202,168,24.41,7.13,0,0,nuong
+24133210,2705988,"Chicken leg, drumstick and thigh, stewed, skin eaten",2202,211,22.45,13.44,0,0,kho
+24133220,2705989,"Chicken leg, drumstick and thigh, stewed, skin not eaten",2202,164,24.1,7.5,0,0,kho
+24134150,2705992,"Chicken leg, drumstick and thigh, grilled with sauce, skin eaten",2202,220,18.64,12.32,7.28,0.2,nuong
+24134151,2705993,"Chicken leg, drumstick and thigh, grilled with sauce, skin not eaten",2202,183,19.63,7.79,7.28,0.2,nuong
+24142300,2706002,"Chicken drumstick, baked, broiled, or roasted, skin eaten, from raw",2202,190,23.21,10.09,0,0,nuong
+24142301,2706003,"Chicken drumstick, baked, broiled, or roasted, skin not eaten, from raw",2202,154,24.1,5.67,0,0,nuong
+24143210,2706014,"Chicken drumstick, stewed, skin eaten",2202,186,22.54,10.64,0,0,kho
+24143220,2706015,"Chicken drumstick, stewed, skin not eaten",2202,148,23.71,5.9,0,0,kho
+24152230,2706029,"Chicken thigh, baked, broiled, or roasted, skin eaten, from raw",2202,231,23.12,14.62,0,0,nuong
+24152231,2706030,"Chicken thigh, baked, broiled, or roasted, skin not eaten, from raw",2202,178,24.61,8.1,0,0,nuong
+24153210,2706037,"Chicken thigh, stewed, skin eaten",2202,227,22.39,15.31,0,0,kho
+24153220,2706038,"Chicken thigh, stewed, skin not eaten",2202,175,24.36,8.56,0,0,kho
+24162130,2706057,"Chicken wing, baked, broiled, or roasted, from raw",2202,252,23.6,16.74,0,0,nuong
+24163110,2706061,"Chicken wing, stewed",2202,247,22.6,16.69,0,0,kho
+24198683,2706090,"Chicken fillet, grilled",2204,151,22.31,5.81,2.36,0,nuong
+24201060,2706107,"Turkey, light meat, breaded, baked or fried, skin not eaten",2206,173,27.26,3.69,6.46,0.4,chien
+24201070,2706108,"Turkey, light meat, breaded, baked or fried, skin eaten",2206,200,26.78,6.84,6.48,0.4,chien
+24201120,2706109,"Turkey, light meat, roasted, skin not eaten",2206,139,28.81,2.06,0,0,nuong
+24201130,2706110,"Turkey, light meat, roasted, skin eaten",2206,169,28.28,5.55,0.03,0,nuong
+24201220,2706111,"Turkey, dark meat, roasted, skin not eaten",2206,167,26.94,5.98,0,0,nuong
+24201230,2706112,"Turkey, dark meat, roasted, skin eaten",2206,202,26.46,10.16,0.05,0,nuong
+24201320,2706113,"Turkey, light and dark meat, roasted, skin not eaten",2206,151,27.99,3.76,0,0,nuong
+24201330,2706114,"Turkey, light and dark meat, roasted, skin eaten",2206,183,27.48,7.54,0.04,0,nuong
+24201360,2706115,"Turkey, light or dark meat, fried, coated, skin not eaten",2206,165,27.22,5.06,1.42,0,chien
+24201370,2706116,"Turkey, light or dark meat, fried, coated, skin eaten",2206,192,26.2,8.51,1.42,0,chien
+24201410,2706117,"Turkey, light or dark meat, stewed, skin not eaten",2206,158,31.18,2.66,0.19,0,kho
+24201420,2706118,"Turkey light or dark meat, stewed, skin eaten",2206,204,30.25,8.52,0.14,0,kho
+24202060,2706123,"Turkey, drumstick, roasted, skin not eaten",2206,144,28.52,3.38,0,0,nuong
+24202070,2706124,"Turkey, drumstick, roasted, skin eaten",2206,203,26.86,10.07,0,0,nuong
+24301010,2706139,"Duck, roasted, skin eaten",2206,336,18.91,28.23,0,0,nuong
+24301020,2706140,"Duck, roasted, skin not eaten",2206,200,23.38,11.15,0,0,nuong
+24311010,2706142,"Goose, wild, roasted",2206,304,25.06,21.83,0,0,nuong
+24401010,2706145,"Cornish game hen, roasted, skin eaten",2206,257,22.08,18.06,0,0,nuong
+24401020,2706146,"Cornish game hen, roasted, skin not eaten",2206,133,23.11,3.84,0,0,nuong
+24402110,2706148,"Dove, fried",2206,223,23.06,13.84,1.46,0,chien
+26100100,2706223,"Fish, raw",2402,94,17.22,2.34,0,0,song
+26100120,2706225,"Fish, NS as to type, baked or broiled",2402,208,23,12.39,0.01,0,nuong
+26100160,2706228,"Fish, NS as to type, steamed",2402,171,23.41,8.11,0,0,hap
+26107160,2706239,"Fish, catfish, steamed",2402,150,19.24,7.5,0,0,hap
+26109160,2706245,"Fish, cod, steamed",2402,87,19.29,0.52,0,0,hap
+26115160,2706253,"Fish, flounder, steamed",2402,88,15.68,2.44,0,0,hap
+26117160,2706259,"Fish, haddock, steamed",2402,87,20.59,0.57,0,0,hap
+26127160,2706275,"Fish, perch, steamed",2402,115,24.5,1.16,0,0,hap
+26131160,2706282,"Fish, pompano, steamed",2402,207,23.35,11.96,0,0,hap
+26137100,2706284,"Fish, salmon, raw",2402,188,20.44,11.16,0,0,song
+26137160,2706290,"Fish, salmon, steamed",2402,237,25.82,14.1,0,0,hap
+26141160,2706299,"Fish, bass, steamed",2402,123,23.28,2.53,0,0,hap
+26151160,2706307,"Fish, trout, steamed",2402,178,25.19,7.81,0,0,hap
+26157160,2706317,"Fish, whiting, steamed",2402,114,23.13,1.66,0,0,hap
+26158050,2706323,"Fish, tilapia, steamed",2402,121,25.37,2.15,0,0,hap
+26158140,2706328,"Fish, white, mixed species, steamed",2402,104,22.33,1.33,0,0,hap
+26317130,2706358,"Scallops, steamed or boiled",2404,87,15.24,0.62,4.02,0,hap
+26319130,2706363,"Shrimp, steamed or boiled",2404,90,17.19,1.28,1.15,0,hap
+27112000,2706379,"Beef with gravy",3002,156,21.56,7.05,1.58,0,nau
+27116350,2706393,"Stewed seasoned ground beef, Mexican style",3002,169,14.27,11.38,1.28,0.2,kho
+27120020,2706398,"Ham or pork with gravy",3002,160,20.15,7.49,1.58,0,nau
+27130010,2706413,"Lamb or mutton with gravy",3002,219,17.29,15.37,1.58,0,nau
+27133010,2706414,"Stewed goat, Puerto Rican style",3002,265,22.32,18.08,1.98,0.5,kho
+27136080,2706420,"Venison or deer with gravy",3002,147,25.48,3.53,1.58,0,nau
+27141050,2706424,"Stewed chicken with tomato-based sauce, Mexican style",3004,120,11.98,7.06,2.48,0.4,kho
+27142200,2706430,"Turkey with gravy",3004,125,20.46,3.46,1.58,0,nau
+27162500,2706472,"Stewed, seasoned, ground beef and pork, Mexican style",3002,139,16.7,6.98,1.45,0.2,kho
+27163010,2706473,"Meat with gravy, NS as to type of meat,",3002,156,21.56,7.05,1.58,0,nau
+27211550,2706479,"Stewed, seasoned, ground beef with potatoes, Mexican style",3002,137,10.42,7.88,5.6,0.8,kho
+27212200,2706484,"Beef and noodles with gravy",3002,139,7.7,5.07,15.39,0.7,nau
+27213200,2706493,"Beef and rice with gravy",3002,137,6.28,5.12,15.98,0.2,nau
+27218210,2706503,"Beef stew with potatoes, Puerto Rican style",3002,220,14.57,14.85,6.53,1,nau
+27220510,2706516,"Ham or pork and potatoes with gravy",3002,126,5.4,6.33,11.68,0.9,nau
+27221100,2706518,"Stewed pig's feet, Puerto Rican style",3002,136,9.99,8.7,4.13,0.5,kho
+27221170,2706520,"Stew, pork, with pasta",3002,133,9.35,5.58,10.81,1.1,nau
+27231000,2706522,"Lamb or mutton and potatoes with gravy",3002,129,5.13,6.46,12.53,1,nau
+27233000,2706524,"Lamb or mutton and noodles with gravy",3002,141,6.8,5.48,15.63,0.7,nau
+27250122,2706554,"Shrimp and noodles with gravy",3006,131,6.02,5.18,14.7,0.6,nau
+27250260,2706563,"Lobster with bread stuffing, baked",3006,177,14.98,8.26,9.83,0.5,nuong
+27251010,2706578,"Stewed salmon, Puerto Rican style",3006,146,12.02,7.02,8.47,1.3,kho
+27260050,2706580,"Meatballs, with breading, NS as to type of meat, with gravy",3002,143,12.22,7.51,6.28,0.4,nau
+27261500,2706586,"Stewed, seasoned, ground beef and pork with potatoes, Mexican style",3002,143,12.84,8.02,4.16,0.6,kho
+27311600,2706595,"Beef, potatoes, and vegetables including carrots, broccoli, and/or dark-green leafy; gravy",3002,129,5.23,7.16,11.17,1.4,nau
+27311605,2706596,"Beef, potatoes, and vegetables excluding carrots, broccoli, and dark-green leafy; gravy",3002,126,5.3,6.34,12.36,1.3,nau
+27313410,2706614,"Beef, noodles, and vegetables including carrots, broccoli, and/or dark-green leafy; gravy",3002,127,6.65,5.04,13.81,1.1,nau
+27313420,2706615,"Beef, noodles, and vegetables excluding carrots, broccoli, and dark-green leafy; gravy",3002,131,6.68,5.05,14.94,1,nau
+27315410,2706626,"Beef, rice, and vegetables including carrots, broccoli, and/or dark-green leafy; gravy",3002,131,5.77,5.18,15.01,0.8,nau
+27315420,2706627,"Beef, rice, and vegetables excluding carrots, broccoli, and dark-green leafy; gravy",3002,135,5.8,5.18,16.13,0.7,nau
+27320120,2706643,"Sausage, potatoes, and vegetables including carrots, broccoli, and/or dark-green leafy; gravy",3002,128,3.73,7.53,11.61,1.4,nau
+27320130,2706644,"Sausage, potatoes, and vegetables excluding carrots, broccoli, and dark-green leafy; gravy",3002,128,3.78,7.12,12.78,1.3,nau
+27320140,2706645,"Pork, potatoes, and vegetables including carrots, broccoli, and/or dark-green leafy; gravy",3002,126,4.98,6.84,11.22,1.4,nau
+27320150,2706646,"Pork, potatoes, and vegetables excluding carrots, broccoli, and dark-green leafy; gravy",3002,126,5.03,6.43,12.37,1.3,nau
+27330050,2706656,"Lamb or mutton, rice, and vegetables excluding carrots, broccoli, and dark-green leafy; gravy",3002,136,5.05,5.51,16.34,0.7,nau
+27330080,2706658,"Lamb or mutton, rice, and vegetables  including carrots, broccoli, and/or dark-green leafy; gravy",3002,133,5.02,5.5,15.2,0.8,nau
+27335500,2706661,"Stewed rabbit, Puerto Rican style,",3002,214,17.14,12.7,6.83,1,kho
+27336200,2706662,"Venison or deer, potatoes, and vegetables including carrots, broccoli, and/or dark-green leafy; gravy",3002,127,5.95,6.5,11.17,1.4,nau
+27336250,2706663,"Venison or deer, potatoes, and vegetables excluding carrots, broccoli, and dark-green leafy; gravy",3002,127,6.01,6.1,12.31,1.3,nau
+27341000,2706666,"Chicken or turkey, potatoes, corn, and cheese, with gravy",3004,123,4.51,6.11,13.27,1.1,nau
+27347220,2706706,"Chicken or turkey, stuffing, and vegetables including carrots, broccoli, and/or dark-green leafy; gravy",3004,131,5.46,7.18,11.27,1,nau
+27347230,2706707,"Chicken or turkey, stuffing, and vegetables excluding carrots, broccoli, and dark-green leafy; gravy",3004,128,5.22,6.82,11.81,0.8,nau
+27362000,2706725,"Stewed tripe, with potatoes, Puerto Rican style",3002,109,8.56,4.05,9.49,1.6,kho
+27416250,2706749,"Beef salad",3002,261,17.85,19.32,2.9,0.4,song
+27416400,2706751,"Stir fried beef and vegetables in soy sauce",3404,102,10.73,4.81,4.44,1,chien
+27416450,2706752,"Beef and vegetables including carrots, broccoli, and/or dark-green leafy; no potatoes, gravy",3002,115,8.06,7.34,4.5,1,nau
+27416500,2706753,"Beef and vegetables excluding carrots, broccoli, and dark-green leafy; no potatoes, gravy",3002,122,8.11,7.34,6.47,0.9,nau
+27420020,2706756,"Ham or pork salad",3002,230,13.26,18.09,2.83,0.4,song
+27443120,2706788,"Chicken or turkey a la king with vegetables excluding carrorts, broccoli, and dark-green leafy; no potatoes, cream, white, or soup-based sauce",3004,181,9.57,13.34,6.31,0.5,nau
+27446200,2706799,"Chicken or turkey salad, made with mayonnaise",3004,235,13.92,18.76,2.88,0.4,song
+27446220,2706801,"Chicken or turkey salad with egg",3004,228,13.81,18.06,2.73,0.4,song
+27446225,2706802,"Chicken or turkey salad, made with light mayonnaise",3004,146,13.55,8.15,4.76,0.4,song
+27446230,2706803,"Chicken or turkey salad, made with mayonnaise-type salad dressing",3004,148,13.68,7.95,5.95,0.4,song
+27446235,2706804,"Chicken or turkey salad, made with light mayonnaise-type salad dressing",3004,146,13.55,8.15,4.76,0.4,song
+27446240,2706805,"Chicken or turkey salad, made with creamy dressing",3004,188,13.76,13.09,4.02,0.4,song
+27446245,2706806,"Chicken or turkey salad, made with light creamy dressing",3004,128,13.75,6.36,4.28,0.4,song
+27446250,2706807,"Chicken or turkey salad, made with Italian dressing",3004,146,13.62,7.84,5.37,0.4,song
+27446255,2706808,"Chicken or turkey salad, made with light Italian dressing",3004,116,13.56,4.71,4.93,0.4,song
+27446260,2706809,"Chicken or turkey salad, made with any type of fat free dressing",3004,111,13.32,3.81,6.28,0.9,song
+27446315,2706812,"Chicken or turkey garden salad with bacon and cheese, chicken and/or turkey, bacon, cheese, lettuce and/or greens, tomato and/or carrots, other vegetables, no dressing",3004,106,10.95,5.61,3,0.9,song
+27446320,2706813,"Chicken or turkey, breaded, fried, garden salad with bacon and cheese, chicken and/or turkey, bacon, cheese, lettuce and/or greens, tomato and/or carrots, other vegetables, no dressing",3004,122,6.78,7.72,6.36,1.2,chien
+27446330,2706814,"Chicken or turkey garden salad with cheese, chicken and/or turkey, cheese, lettuce and/or greens, tomato and/or carrots, other vegetables, no dressing",3004,93,10.26,4.52,3.02,0.9,song
+27446332,2706815,"Chicken or turkey, breaded, fried, garden salad with cheese, chicken and/or turkey, cheese, lettuce and/or greens, tomato and/or carrots, other vegetables, no dressing",3004,123,6.5,7.9,6.47,1.3,chien
+27446360,2706818,"Chicken or turkey caesar garden salad, chicken and/or turkey, lettuce, tomato, cheese, no dressing",3004,63,8.52,1.94,2.99,1,song
+27450010,2706824,"Crab salad",3006,188,9.4,15.89,1.27,0.4,song
+27450020,2706825,"Lobster salad",3006,187,10.29,15.4,1.22,0.4,song
+27450030,2706826,"Salmon salad",3006,213,10.82,17.36,2.73,0.4,song
+27450060,2706828,"Tuna salad, made with mayonnaise",3006,194,10.07,15.84,2.89,0.4,song
+27450061,2706829,"Tuna salad, made with light mayonnaise",3006,106,9.78,5.4,4.75,0.4,song
+27450062,2706830,"Tuna salad, made with mayonnaise-type salad dressing",3006,108,9.88,5.19,5.92,0.4,song
+27450063,2706831,"Tuna salad, made with light mayonnaise-type salad dressing",3006,106,9.78,5.4,4.75,0.4,song
+27450064,2706832,"Tuna salad, made with creamy dressing",3006,148,9.98,10.29,4.02,0.4,song
+27450065,2706833,"Tuna salad, made with light creamy dressing",3006,78,9.82,1.16,7.38,0.4,song
+27450066,2706834,"Tuna salad, made with Italian dressing",3006,106,9.83,5.08,5.35,0.4,song
+27450067,2706835,"Tuna salad, made with light Italian dressing",3006,76,9.78,2,4.91,0.4,song
+27450068,2706836,"Tuna salad, made with any type of fat free dressing",3006,72,9.6,1.15,6.25,0.8,song
+27450070,2706837,"Shrimp salad",3006,196,10.68,16.2,1.27,0.4,song
+27450080,2706838,"Seafood salad",3006,190,10.12,15.82,1.25,0.4,song
+27450090,2706839,"Tuna salad with cheese",3006,214,11.33,17.58,2.85,0.4,song
+27450100,2706840,"Tuna salad with egg",3006,190,10.28,15.4,2.74,0.4,song
+27450110,2706841,"Shrimp garden salad, shrimp, lettuce, eggs, tomato and/or carrots, other vegetables, no dressing",3006,65,8.28,2.04,2.77,0.8,song
+27450130,2706843,"Crab salad made with imitation crab",3006,197,4.07,16.28,8.66,0.6,song
+27450190,2706846,"Seafood garden salad with seafood, lettuce, tomato and/or carrots, other vegetables, no dressing",3006,47,7.12,0.49,3.04,1,song
+27450210,2706848,"Seafood garden salad with seafood, lettuce, eggs, tomato and/or carrots, other vegetables, no dressing",3006,62,7.91,1.95,2.77,0.8,song
+27451010,2706868,"Fried fish with sauce, Puerto Rican style",3006,155,11.81,10.3,3.42,0.8,chien
+27451060,2706870,"Octopus salad, Puerto Rican style",3006,170,9.67,11.95,5.56,1,song
+27451070,2706871,"Codfish salad, Puerto Rican style, Serenata",3006,183,6.61,15.94,2.81,0.7,song
+27462000,2706877,"Stewed chitterlings, Puerto Rican style",3002,214,8.38,18.5,3.83,0.9,kho
+27463000,2706878,"Stewed gizzards, Puerto Rican style",3004,179,20.26,8.69,4.41,1.1,kho
+28110310,2707099,"Salisbury steak with gravy, potatoes, vegetable, frozen meal",3002,146,6.82,8.4,10.94,1.2,nau
+28110330,2707100,"Salisbury steak with gravy, whipped potatoes, vegetable, dessert, frozen meal",3002,141,7.65,6.66,12.62,1,nau
+28110380,2707101,"Salisbury steak with gravy, macaroni and cheese, frozen meal",3002,202,10.41,8.51,20.36,1.3,nau
+28110510,2707102,"Beef, sliced, with gravy, potatoes, vegetable, frozen meal",3002,125,8.12,7.28,6.59,0.7,nau
+28110660,2707103,"Meatballs, Swedish, in gravy, with noodles, diet frozen meal",3002,112,9.88,3.35,10.31,0.8,nau
+28141010,2707108,"Chicken, fried, with potatoes, vegetable, dessert, frozen meal, large meat portion",3004,201,10.88,9.93,18.05,1.3,chien
+28340120,2707132,"Soup, broth",3804,6,0.89,0.22,0.24,0,nau
+28520000,2707148,"Gravy, made with soy sauce",8412,46,0.82,0.29,9.82,0.1,nau
+31105010,2707156,"Egg, whole, fried no added fat",2502,143,12.36,9.93,0.96,0,chien
+31105040,2707159,"Egg, whole, fried with butter",2502,182,11.61,14.64,0.9,0,chien
+31105080,2707161,"Egg, whole, fried with cooking spray",2502,149,12.24,10.61,1.15,0,chien
+31106010,2707165,"Egg, whole, baked, no added fat",2502,143,12.36,9.93,0.96,0,nuong
+32103000,2707182,"Egg salad, made with mayonnaise",2502,257,10.26,23.14,1.01,0,song
+32103015,2707183,"Egg salad, made with light mayonnaise",2502,172,9.97,13,2.82,0,song
+32103020,2707184,"Egg salad, made with mayonnaise-type salad dressing",2502,174,10.07,12.83,3.93,0,song
+32103025,2707185,"Egg salad, made with light mayonnaise-type salad dressing",2502,172,9.97,13,2.82,0,song
+32103030,2707186,"Egg salad, made with creamy dressing",2502,212,10.17,17.68,2.12,0,song
+32103035,2707187,"Egg salad, made with light creamy dressing",2502,155,10.17,11.29,2.37,0,song
+32103040,2707188,"Egg salad, made with Italian dressing",2502,172,10.02,12.74,3.38,0,song
+32103045,2707189,"Egg salad, made with light Italian dressing",2502,143,9.98,9.74,2.98,0,song
+32103050,2707190,"Egg Salad, made with any type of fat free dressing",2502,139,9.8,8.82,4.29,0.4,song
+32400070,2707286,"Egg white omelet, scrambled, or fried, made with butter",2502,97,10.03,5.36,2.2,0,chien
+32400075,2707287,"Egg white omelet, scrambled, or fried, made with cooking spray",2502,59,10.56,0.78,2.53,0,chien
+32400080,2707289,"Egg white omelet, scrambled, or fried, no added fat",2502,52,10.67,0,2.35,0,chien
+33001050,2707299,"Egg substitute, omelet, scrambled, or fried, no added fat",2502,48,9.97,0,1.99,0,chien
+41203030,2707395,"Black bean salad",3102,94,3.08,3.85,12.61,3.4,song
+41221000,2707410,"Baked beans, reduced sodium",2802,104,4.77,0.4,20.35,5.5,nuong
+41421020,2707449,"Soybean curd, breaded, fried",2806,150,8.39,9.62,8.71,0.7,chien
+41811950,2707474,"Swiss steak, with gravy, meatless",3102,180,12.69,8.09,14.13,4,nau
+41812800,2707479,"Vegetarian stew",3104,33,0.67,2.15,3.12,1.1,nau
+42110050,2707505,"Mixed nuts, unroasted",2804,616,16.97,54.56,22.88,7.2,nuong
+42111205,2707518,"Peanuts, dry roasted, lightly salted",2804,584,24.23,49.41,21.15,8.4,nuong
+51140100,2707653,"Bread, dough, fried",4202,384,9.36,18.84,44.97,1.5,chien
+52207010,2707815,"Corn flour patty or tart, fried",4402,218,3.98,4.64,41.18,3,chien
+52208010,2707816,"Corn pone, baked",4402,214,3.5,4.31,39.68,1.9,nuong
+52208020,2707817,"Corn pone, fried",4402,254,3.34,9.78,37.79,1.8,chien
+53200100,2707898,"Cookie, batter or dough, raw",5504,435,4.97,22.45,54.47,0.9,chien
+53452120,2708048,"Pastry, made with bean or lotus seed paste filling, baked",5506,340,6.99,4.45,68.1,2.7,nuong
+53452130,2708049,"Pastry, made with bean paste and salted egg yolk filling, baked",5506,339,8.59,8.61,56.98,2.2,nuong
+53452170,2708051,"Pastry, cookie type, fried",5506,397,5.97,25.7,35.48,1,chien
+58101930,2708508,"Taco or tostada salad with meat",3502,179,7.45,9.32,16.49,2.9,song
+58101935,2708509,"Taco or tostada salad with chicken",3502,167,7.83,8.02,16.29,2.8,song
+58101940,2708510,"Taco or tostada salad, meatless",3502,163,5.28,7.36,19.3,3.7,song
+58101945,2708511,"Taco or tostada salad with meat and sour cream",3502,181,6.91,10.4,15.12,2.5,song
+58101950,2708512,"Taco or tostada salad with chicken and sour cream",3502,171,7.24,9.26,14.96,2.5,song
+58101955,2708513,"Taco or tostada salad, meatless with sour cream",3502,167,5,8.7,17.56,3.3,song
+58110200,2708704,"Roll with meat and/or shrimp, vegetables and rice paper, not fried",3406,112,5.65,2.65,17.23,1.9,chien
+58111200,2708707,"Puffs, fried, crab meat and cream cheese filled",3406,314,9.4,15.12,35.09,1.2,chien
+58128000,2708744,"Biscuit with gravy",3706,224,6.2,14.68,16.98,0.8,nau
+58148110,2708932,"Macaroni or pasta salad, made with mayonnaise",3204,221,4.46,11.52,24.65,1.4,song
+58148111,2708933,"Macaroni or pasta salad, made with light mayonnaise",3204,159,4.32,4.16,25.68,1.4,song
+58148112,2708934,"Macaroni or pasta salad, made with mayonnaise-type salad dressing",3204,160,4.38,4.01,26.58,1.4,song
+58148113,2708935,"Macaroni or pasta salad, made with light mayonnaise-type salad dressing",3204,159,4.32,4.16,25.68,1.4,song
+58148114,2708936,"Macaroni or pasta salad, made with Italian dressing",3204,133,3.7,3.72,20.9,1.6,song
+58148115,2708937,"Macaroni or pasta salad, made with light Italian dressing",3204,116,3.68,2,20.61,1.6,song
+58148116,2708938,"Macaroni or pasta salad, made with creamy dressing",3204,156,3.8,6.62,20.11,1.6,song
+58148117,2708939,"Macaroni or pasta salad, made with light creamy dressing",3204,123,3.82,2.92,20.22,1.6,song
+58148118,2708940,"Macaroni or pasta salad, made with any type of fat free dressing",3204,134,4.25,1.14,26.54,1.7,song
+58148120,2708941,"Macaroni or pasta salad with egg",3204,215,5.18,11.44,22.54,1.3,song
+58148130,2708942,"Macaroni or pasta salad with tuna",3204,200,6.69,9.9,20.88,1.2,song
+58148140,2708943,"Macaroni or pasta salad with crab meat",3204,201,6.48,9.9,20.94,1.2,song
+58148150,2708944,"Macaroni or pasta salad with shrimp",3204,203,6.86,9.99,20.94,1.2,song
+58148160,2708945,"Macaroni or pasta salad with tuna and egg",3204,197,7.14,9.96,19.36,1.1,song
+58148170,2708946,"Macaroni or pasta salad with chicken",3204,213,7.82,10.75,20.94,1.2,song
+58148180,2708947,"Macaroni or pasta salad with cheese",3204,246,6.89,14.43,21.78,1.3,song
+58148550,2708948,"Macaroni or pasta salad with meat",3204,211,7.65,10.59,20.82,1.2,song
+58150330,2708954,"Rice, fried, with pork",3402,179,7.56,4.16,27.62,0.9,chien
+58150340,2708955,"Rice, fried, with beef",3402,178,7.86,4.06,27.62,0.9,chien
+58150510,2708956,"Rice, fried, with shrimp",3402,166,6.68,2.97,27.85,0.9,chien
+58155510,2708975,"Soupy rice mixture with chicken and potatoes, Puerto Rican style",3804,112,6.34,4.26,12.07,0.9,nau
+58156710,2708980,"Rice with stewed beans, Puerto Rican style",3202,138,3.66,3.23,23.02,1.5,kho
+58164210,2709091,"Rice dessert or salad with fruit",3202,154,1.39,7.29,20.8,0.6,song
+58164540,2709096,"Rice, white, with gravy, no added fat",3202,102,2.02,1.06,20.4,0.3,nau
+58164840,2709105,"Rice, brown, with gravy, no added fat",3202,101,2.14,1.44,19.61,1.2,nau
+58165030,2709113,"Rice, white, with vegetables and gravy, NS as to fat",3202,107,2.15,2.4,18.63,1.1,nau
+58165040,2709114,"Rice, white, with vegetables and gravy, no added fat",3202,95,2.19,0.88,18.92,1.1,nau
+58165050,2709115,"Rice, white, with vegetables and gravy, fat added",3202,107,2.15,2.4,18.63,1.1,nau
+58165430,2709122,"Rice, brown, with vegetables and gravy, NS as to fat",3202,105,2.24,2.56,18.18,1.7,nau
+58165440,2709123,"Rice, brown, with vegetables and gravy, no added fat",3202,94,2.27,1.21,18.43,1.7,nau
+58165450,2709124,"Rice, brown, with vegetables and gravy, fat added",3202,105,2.24,2.56,18.18,1.7,nau
+58407030,2709152,"Soup, ramen noodles, water added",3808,66,1.53,2.64,9.04,0.4,nau
+59003000,2709163,"Meat substitute, cereal- and vegetable protein-based, fried",2806,359,12.8,7.23,61.25,8.9,chien
+61119010,2709171,"Orange, raw",6012,50,0.92,0.14,11.78,2.2,song
+63101000,2709215,"Apple, raw",6002,61,0.17,0.15,14.8,2.1,song
+63101310,2709220,"Apple, baked",6002,113,0.32,3.08,22.7,2.5,nuong
+63107410,2709225,"Banana, baked",6004,161,0.82,3.21,32.43,1.8,nuong
+63137010,2709254,"Pear, raw",6020,59,0.37,0.15,15.18,3.1,song
+63311000,2709287,"Fruit salad, fresh or raw, excluding citrus fruits, no dressing",6018,59,0.64,0.21,13.94,1.5,song
+63311050,2709288,"Fruit salad, fresh or raw, including citrus fruits, no dressing",6018,56,0.71,0.19,13.48,1.7,song
+63401010,2709293,"Apple salad with dressing",6018,180,1.45,14.24,12.2,2,song
+63402950,2709296,"Fruit salad, excluding citrus fruits, with salad dressing or mayonnaise",6018,247,1.78,20.68,13.57,1.5,song
+63402960,2709297,"Fruit salad, excluding citrus fruits, with whipped cream",6018,164,1.99,10.62,15.25,1.6,song
+63402970,2709298,"Fruit salad, excluding citrus fruits, with nondairy whipped topping",6018,153,1.93,8.67,17.28,1.7,song
+63402980,2709299,"Fruit salad, excluding citrus fruits, with marshmallows",6018,251,1.78,19.48,17.54,1.4,song
+63402990,2709300,"Fruit salad, including citrus fruits, with pudding",6018,133,1.95,6.34,17.49,1.8,song
+63403000,2709301,"Fruit salad, excluding citrus fruits, with pudding",6018,137,1.86,6.48,18.11,1.4,song
+63403010,2709302,"Fruit salad, including citrus fruits, with salad dressing or mayonnaise",6018,240,1.87,20.26,13.02,1.8,song
+63403020,2709303,"Fruit salad, including citrus fruit, with whipped cream",6018,158,2.08,10.37,14.61,2,song
+63403030,2709304,"Fruit salad, including citrus fruits, with nondairy whipped topping",6018,148,2.03,8.45,16.57,2.1,song
+63403040,2709305,"Fruit salad, including citrus fruits, with marshmallows",6018,244,1.87,19.1,16.95,1.7,song
+63413010,2709310,"Pineapple salad with dressing",6018,105,0.5,5.79,12.79,0.8,song
+63415100,2709311,"Soup, fruit",3804,30,0.54,0.12,7.04,0.8,nau
+71101000,2709384,"Potato, baked, peel not eaten",6802,93,1.95,0.1,21.45,1.5,nuong
+71103010,2709388,"Potato, boiled, from fresh, peel not eaten, no added fat",6802,93,1.95,0.1,21.46,1.5,luoc
+71103040,2709391,"Potato, boiled, from fresh, peel not eaten, made with butter",6802,123,1.9,3.99,20.45,1.4,luoc
+71103125,2709395,"Potato, boiled, from fresh,  peel eaten, no added fat",6802,93,2.49,0.13,21.07,2.2,luoc
+71103140,2709397,"Potato, boiled, from fresh, peel eaten, made with butter",6802,123,2.41,4.02,20.07,2.1,luoc
+71104050,2709404,"Potato, roasted, from fresh, peel eaten, no added fat",6802,93,2.49,0.13,21.07,2.2,nuong
+71104080,2709407,"Potato, roasted, from fresh, peel eaten, made with butter",6802,123,2.41,4.02,20.07,2.1,nuong
+71104120,2709411,"Potato, roasted, from fresh, peel not eaten, no added fat",6802,93,1.95,0.1,21.46,1.5,nuong
+71104140,2709413,"Potato, roasted, from fresh, peel not eaten, made with butter",6802,123,1.9,3.99,20.45,1.4,nuong
+71106010,2709417,"Potato only from Puerto Rican mixed dishes, gravy and other components reported separately",6802,85,1.7,0.1,19.89,1.8,nau
+71106020,2709418,"Potato from Puerto Rican style stuffed pot roast, with gravy",6806,74,2.46,0.93,14.45,1.3,nau
+71106050,2709419,"Potato from Puerto Rican beef stew, with gravy",6806,74,2.46,0.93,14.45,1.3,nau
+71200410,2709435,"Potato chips, baked, flavored",5002,467,4.97,18.11,71.04,4.8,nuong
+71501006,2709494,"Potato, mashed, from fast food, with gravy",6806,81,1.46,2.78,12.78,1.1,nau
+71501075,2709509,"Potato, mashed, ready-to-heat, with gravy",6806,94,1.72,4.53,11.69,1.5,nau
+71507005,2709518,"Potato, baked, peel not eaten, with butter",6802,125,1.9,4.19,20.39,1.4,nuong
+71507010,2709519,"Potato, baked, peel not eaten, with sour cream",6802,131,2,5.44,19.05,1.3,nuong
+71507020,2709520,"Potato, baked, peel not eaten, with cheese",6802,153,3.66,7.66,17.75,1.2,nuong
+71507025,2709521,"Potato, baked, peel not eaten, with meat",6802,160,4.32,8.26,17.4,1.2,nuong
+71507030,2709522,"Potato, baked, peel not eaten, with chili",6802,143,4.45,6.21,17.62,1.6,nuong
+71507035,2709523,"Potato, baked, peel not eaten, with vegetables",6802,142,3.68,6.34,18.09,1.4,nuong
+71508001,2709524,"Potato, baked, peel eaten",6802,93,2.49,0.13,21.05,2.2,nuong
+71508005,2709525,"Potato, baked, peel eaten, with butter",6802,125,2.41,4.22,20.01,2.1,nuong
+71508010,2709526,"Potato, baked, peel eaten, with sour cream",6802,131,2.47,5.46,18.7,1.9,nuong
+71508020,2709527,"Potato, baked, peel eaten, with cheese",6802,153,4.09,7.69,17.43,1.7,nuong
+71508025,2709528,"Potato, baked, peel eaten, with meat",6802,160,4.74,8.28,17.09,1.7,nuong
+71508030,2709529,"Potato, baked, peel eaten, with chili",6802,143,4.85,6.23,17.33,2.1,nuong
+71508035,2709530,"Potato, baked, peel eaten, with vegetables",6802,142,4.12,6.37,17.76,2,nuong
+71600950,2709531,"Potato salad with egg, from restaurant",6806,175,3.04,11.35,15.37,1.1,song
+71601015,2709533,"Potato salad with egg, made with light mayonnaise",6806,111,2.72,4.46,15.13,1.3,song
+71601020,2709534,"Potato salad with egg, made with mayonnaise-type salad dressing",6806,112,2.76,4.32,15.91,1.3,song
+71601025,2709535,"Potato salad with egg, made with light mayonnaise-type salad dressing",6806,111,2.72,4.46,15.13,1.3,song
+71601030,2709536,"Potato salad with egg, made with creamy dressing",6806,142,2.93,7.91,14.89,1.3,song
+71601035,2709537,"Potato salad with egg, made with light creamy dressing",6806,102,2.95,3.46,15.02,1.3,song
+71601040,2709538,"Potato salad with egg, made with Italian dressing",6806,114,2.8,4.42,15.81,1.3,song
+71601045,2709539,"Potato salad with egg, made with light Italian dressing",6806,94,2.79,2.35,15.49,1.3,song
+71601050,2709540,"Potato salad with egg, made with any type of fat free dressing",6806,89,2.67,1.74,16,1.6,song
+71602010,2709541,"Potato salad, German style",6806,108,2.92,3.22,17.17,1.9,song
+71602950,2709542,"Potato salad, from restaurant",6806,178,1.73,11.45,17.32,1.3,song
+71603010,2709543,"Potato salad, made with mayonnaise",6806,168,1.51,11.14,15.81,1.5,song
+71603015,2709544,"Potato salad, made with light mayonnaise",6806,105,1.41,3.65,16.98,1.5,song
+71603020,2709545,"Potato salad, made with mayonnaise-type salad dressing",6806,107,1.46,3.49,17.86,1.5,song
+71603025,2709546,"Potato salad, made with light mayonnaise-type salad dressing",6806,105,1.41,3.65,16.98,1.5,song
+71603030,2709547,"Potato salad, made with creamy dressing",6806,140,1.59,7.53,16.8,1.5,song
+71603035,2709548,"Potato salad, made with light creamy dressing",6806,95,1.62,2.47,16.95,1.5,song
+71603040,2709549,"Potato salad, made with Italian dressing",6806,108,1.44,3.56,17.86,1.5,song
+71603045,2709550,"Potato salad, made with light Italian dressing",6806,85,1.43,1.2,17.49,1.5,song
+71603050,2709551,"Potato salad, made with any type of fat free dressing",6806,81,1.38,0.58,17.94,1.8,song
+73101010,2709660,"Carrots, raw",6404,44,0.87,0.24,9.68,2.9,song
+73101110,2709661,"Carrots, raw, salad",6432,212,1.25,15.74,17.62,2.6,song
+73101210,2709662,"Carrots, raw, salad with apples",6432,181,0.85,16.02,8.59,2.3,song
+74506000,2709756,"Tomato and cucumber salad made with tomato, cucumber, oil, and vinegar",6432,122,0.52,10.18,6.35,0.6,song
+75115000,2709793,"Mushrooms, raw",6420,31,2.9,0.35,4.13,1.7,song
+75121000,2709798,"Peppers, hot, raw",8406,34,1.39,0.4,7.66,2.2,song
+75122000,2709799,"Peppers, raw, NFS",6420,27,0.81,0.12,5.72,1,song
+75127500,2709805,"Seaweed, raw",6420,41,3.51,0.49,7.94,0.7,song
+75140500,2709812,"Broccoli salad with cauliflower, cheese, bacon bits, and dressing",6432,270,5.83,22.82,10.38,1.6,song
+75140510,2709813,"Broccoli slaw salad",6432,123,1.97,8.11,10.41,1.9,song
+75141040,2709816,"Cabbage salad, NFS",6432,45,0.79,0.8,8.93,2.4,song
+75142500,2709819,"Cucumber salad, made with sour cream dressing",6432,66,1.3,5.18,3.7,0.4,song
+75142550,2709820,"Cucumber salad, made with Italian dressing",6432,120,0.46,9.96,6.19,0.5,song
+75142600,2709821,"Cucumber salad made with cucumber and vinegar",6432,34,0.5,0.13,6.79,0.5,song
+75143000,2709822,"Lettuce, salad with assorted vegetables including tomatoes and/or carrots, no dressing",6410,24,1.07,0.2,4.58,1.5,song
+75143100,2709824,"Lettuce, salad with avocado, tomato, and/or carrots, with or without other vegetables, no dressing",6410,54,1.29,3.39,5.5,2.7,song
+75143200,2709825,"Lettuce, salad with cheese, tomato and/or carrots, with or without other vegetables, no dressing",6410,91,4.94,6.08,4.2,1.2,song
+75143300,2709826,"Lettuce, salad with egg, tomato, and/or carrots, with or without other vegetables, no dressing",6410,50,3.4,2.31,3.88,1.2,song
+75143350,2709827,"Lettuce, salad with egg, cheese, tomato, and/or carrots, with or without other vegetables, no dressing",6410,71,4.24,4.36,3.7,1.2,song
+75145000,2709829,"Seven-layer salad, lettuce salad made with a combination of onion, celery, green pepper, peas, mayonnaise, cheese, eggs, and/or bacon",3104,229,4.7,20.71,5.79,1.2,song
+75146000,2709830,"Greek Salad, no dressing",3104,48,2.75,2.26,4.35,1.5,song
+75302080,2710009,"Bean salad, yellow and/or green string beans",6432,109,3.52,5,13,3.4,song
+75415022,2710055,"Fried onion rings",6430,352,4.19,19.82,39.94,2.6,chien
+75416500,2710056,"Pea salad",6432,180,2.98,14.02,10.64,2.7,song
+75416600,2710057,"Pea salad with cheese",6432,203,5,16.01,9.82,2.4,song
+83100200,2710196,"Salad dressing, NFS, for sandwiches",8010,594,0.9,64.2,3.41,0,song
+89901030,2710245,"Gravy, for use with vegetables",9999,57,0.31,1.05,11.24,0.1,nau
+91501100,2710312,"Gelatin salad with vegetables",5806,61,1.47,0.02,14.02,0.7,song
+99995000,2710785,"Breading or batter as ingredient in food",9999,201,6.56,1.63,40.08,1.6,chien

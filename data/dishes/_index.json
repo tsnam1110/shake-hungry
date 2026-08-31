@@ -1,0 +1,311 @@
+{
+  "_generated_by": "php artisan lacdoi:export-data — không sửa tay (DATA-REPOSITORY §2)",
+  "count": 61,
+  "dishes": [
+    {
+      "slug": "banh",
+      "name": "bánh",
+      "country_code": "VN"
+    },
+    {
+      "slug": "banh-bao-banh-vac",
+      "name": "Bánh bao, bánh vạc",
+      "country_code": "VN"
+    },
+    {
+      "slug": "banh-bao-viet-nam",
+      "name": "bánh bao Việt Nam",
+      "country_code": "VN"
+    },
+    {
+      "slug": "banh-beo",
+      "name": "bánh bèo",
+      "country_code": "VN"
+    },
+    {
+      "slug": "banh-cay",
+      "name": "Bánh cáy",
+      "country_code": "VN"
+    },
+    {
+      "slug": "banh-chay",
+      "name": "bánh chay",
+      "country_code": "VN"
+    },
+    {
+      "slug": "banh-chung",
+      "name": "bánh chưng",
+      "country_code": "VN"
+    },
+    {
+      "slug": "banh-da-do",
+      "name": "bánh đa đỏ",
+      "country_code": "VN"
+    },
+    {
+      "slug": "banh-dau-xanh",
+      "name": "bánh đậu xanh",
+      "country_code": "VN"
+    },
+    {
+      "slug": "banh-giay",
+      "name": "bánh giầy",
+      "country_code": "VN"
+    },
+    {
+      "slug": "banh-mi-ca-sau",
+      "name": "bánh mì cá sấu",
+      "country_code": "VN"
+    },
+    {
+      "slug": "banh-mi-thanh-long",
+      "name": "Bánh mì thanh long",
+      "country_code": "VN"
+    },
+    {
+      "slug": "banh-pho",
+      "name": "bánh phở",
+      "country_code": "VN"
+    },
+    {
+      "slug": "banh-phu-the",
+      "name": "Bánh phu thê",
+      "country_code": "VN"
+    },
+    {
+      "slug": "banh-re",
+      "name": "bánh rế",
+      "country_code": "VN"
+    },
+    {
+      "slug": "banh-tet",
+      "name": "bánh tét",
+      "country_code": "VN"
+    },
+    {
+      "slug": "banh-trang",
+      "name": "Bánh tráng",
+      "country_code": "VN"
+    },
+    {
+      "slug": "banh-troi",
+      "name": "bánh trôi",
+      "country_code": "VN"
+    },
+    {
+      "slug": "bim-bim",
+      "name": "Bim bim",
+      "country_code": "VN"
+    },
+    {
+      "slug": "bun-bung",
+      "name": "Bún bung",
+      "country_code": "VN"
+    },
+    {
+      "slug": "bun-cha",
+      "name": "Bún chả",
+      "country_code": "VN"
+    },
+    {
+      "slug": "bun-moc",
+      "name": "bún mọc",
+      "country_code": "VN"
+    },
+    {
+      "slug": "bun-nuoc-leo",
+      "name": "bún nước lèo",
+      "country_code": "VN"
+    },
+    {
+      "slug": "ca-cham-mam-tom",
+      "name": "cà chấm mắm tôm",
+      "country_code": "VN"
+    },
+    {
+      "slug": "cha-ca-la-vong",
+      "name": "chả cá Lã Vọng",
+      "country_code": "VN"
+    },
+    {
+      "slug": "cha-ruoi",
+      "name": "chả rươi",
+      "country_code": "VN"
+    },
+    {
+      "slug": "cha-trung",
+      "name": "chả trứng",
+      "country_code": "VN"
+    },
+    {
+      "slug": "che-troi-nuoc",
+      "name": "chè trôi nước",
+      "country_code": "VN"
+    },
+    {
+      "slug": "com",
+      "name": "cốm",
+      "country_code": "VN"
+    },
+    {
+      "slug": "com-lam",
+      "name": "Cơm lam",
+      "country_code": "VN"
+    },
+    {
+      "slug": "don",
+      "name": "don",
+      "country_code": "VN"
+    },
+    {
+      "slug": "hu-tieu",
+      "name": "Hủ tiếu",
+      "country_code": "VN"
+    },
+    {
+      "slug": "kho-ca-loc",
+      "name": "Khô cá lóc",
+      "country_code": "VN"
+    },
+    {
+      "slug": "kho-nhai",
+      "name": "Khô nhái",
+      "country_code": "VN"
+    },
+    {
+      "slug": "kho-quet",
+      "name": "kho quẹt",
+      "country_code": "VN"
+    },
+    {
+      "slug": "mam-ba-khia",
+      "name": "mắm ba khía",
+      "country_code": "VN"
+    },
+    {
+      "slug": "mam-ca-loc",
+      "name": "mắm cá lóc",
+      "country_code": "VN"
+    },
+    {
+      "slug": "mam-cay",
+      "name": "mắm cáy",
+      "country_code": "VN"
+    },
+    {
+      "slug": "mam-chua",
+      "name": "mắm chua",
+      "country_code": "VN"
+    },
+    {
+      "slug": "mam-cong",
+      "name": "mắm còng",
+      "country_code": "VN"
+    },
+    {
+      "slug": "mam-kho",
+      "name": "mắm kho",
+      "country_code": "VN"
+    },
+    {
+      "slug": "mam-nem",
+      "name": "mắm nêm",
+      "country_code": "VN"
+    },
+    {
+      "slug": "mam-ruoi",
+      "name": "mắm rươi",
+      "country_code": "VN"
+    },
+    {
+      "slug": "mam-ruot-an-giang",
+      "name": "mắm ruột An Giang",
+      "country_code": "VN"
+    },
+    {
+      "slug": "mam-tep",
+      "name": "mắm tép",
+      "country_code": "VN"
+    },
+    {
+      "slug": "mam-tep-chung-thit",
+      "name": "mắm tép chưng thịt",
+      "country_code": "VN"
+    },
+    {
+      "slug": "mam-tom-chua",
+      "name": "mắm tôm chua",
+      "country_code": "VN"
+    },
+    {
+      "slug": "mi-thanh-long",
+      "name": "Mì thanh long",
+      "country_code": "VN"
+    },
+    {
+      "slug": "muoi-tom",
+      "name": "Muối tôm",
+      "country_code": "VN"
+    },
+    {
+      "slug": "nem-chua-lai-vung",
+      "name": "Nem chua Lai Vung",
+      "country_code": "VN"
+    },
+    {
+      "slug": "nem-cuon",
+      "name": "Nem cuốn",
+      "country_code": "VN"
+    },
+    {
+      "slug": "nom-hoa-chuoi",
+      "name": "Nộm hoa chuối",
+      "country_code": "VN"
+    },
+    {
+      "slug": "nuoc-cham",
+      "name": "nước chấm",
+      "country_code": "VN"
+    },
+    {
+      "slug": "nuoc-mam",
+      "name": "nước mắm",
+      "country_code": "VN"
+    },
+    {
+      "slug": "nuoc-mam-cat-hai",
+      "name": "nước mắm Cát Hải",
+      "country_code": "VN"
+    },
+    {
+      "slug": "nuoc-mam-cua-khe",
+      "name": "nước mắm Cửa Khe",
+      "country_code": "VN"
+    },
+    {
+      "slug": "nuoc-mam-phan-thiet",
+      "name": "nước mắm Phan Thiết",
+      "country_code": "VN"
+    },
+    {
+      "slug": "nuoc-mam-phu-quoc",
+      "name": "nước mắm Phú Quốc",
+      "country_code": "VN"
+    },
+    {
+      "slug": "oc-vu-nang",
+      "name": "Ốc vú nàng",
+      "country_code": "VN"
+    },
+    {
+      "slug": "pho-ga",
+      "name": "phở gà",
+      "country_code": "VN"
+    },
+    {
+      "slug": "suon-nuong",
+      "name": "sườn nướng",
+      "country_code": "VN"
+    }
+  ]
+}

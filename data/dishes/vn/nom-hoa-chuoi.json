@@ -1,0 +1,35 @@
+{
+  "slug": "nom-hoa-chuoi",
+  "parent_dish_slug": null,
+  "country_code": "VN",
+  "region_code": null,
+  "names": [
+    {
+      "locale": "vi",
+      "name": "Nộm hoa chuối",
+      "is_primary": true
+    }
+  ],
+  "is_eat_out": false,
+  "is_home_cook": false,
+  "cooking_method": null,
+  "completeness_level": 1,
+  "meal_slots": [],
+  "serving_desc": null,
+  "serving_grams": null,
+  "ingredients": [],
+  "recipe_steps": null,
+  "recipe_sources": [],
+  "media": [],
+  "estimated_kcal": null,
+  "external_ref": {
+    "id": "Q68631373",
+    "source": "wikidata",
+    "queried_at": "2026-08-31"
+  },
+  "import_note": "Nhập tự động từ Wikidata Q68631373 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/N%E1%BB%99m%20hoa%20chu%E1%BB%91i.png",
+  "status": "draft",
+  "source": "imported",
+  "confidence": "unknown",
+  "needs_review": true
+}

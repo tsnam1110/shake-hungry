@@ -1,0 +1,1811 @@
+food_code,sr_code,sr_fdc_id,sr_description,gram_weight,retention_code
+13126000,18173,174957,"Cookies, graham crackers, plain or honey (includes cinnamon)",20,0
+13126000,4615,173584,"Shortening, vegetable, household, composite",5,0
+13126000,19095,167575,"Ice creams, vanilla",80,0
+21500000,23567,171796,"Beef, ground, 85% lean meat / 15% fat, raw (Includes foods for USDA's Food Distribution Program)",100,0
+21500000,2047,173468,"Salt, table",0.8,0
+24107070,21470,170757,"Fast Foods, Fried Chicken, Drumstick, meat and skin with breading",20,0
+24107070,21471,170359,"Fast Foods, Fried Chicken, Thigh, meat and skin and breading",30,0
+24107070,21469,170756,"Fast Foods, Fried Chicken, Breast, meat and skin and breading",50,0
+24107071,21466,170358,"Fast Foods, Fried Chicken, Thigh, meat only, skin and breading removed",30,0
+24107071,21464,170356,"Fast Foods, Fried Chicken, Breast, meat only, skin and breading removed",50,0
+24107071,21465,170357,"Fast Foods, Fried Chicken, Drumstick, meat only, skin and breading removed",20,0
+24107080,21470,170757,"Fast Foods, Fried Chicken, Drumstick, meat and skin with breading",20,0
+24107080,21471,170359,"Fast Foods, Fried Chicken, Thigh, meat and skin and breading",30,0
+24107080,21469,170756,"Fast Foods, Fried Chicken, Breast, meat and skin and breading",50,0
+24107081,21465,170357,"Fast Foods, Fried Chicken, Drumstick, meat only, skin and breading removed",20,0
+24107081,21466,170358,"Fast Foods, Fried Chicken, Thigh, meat only, skin and breading removed",30,0
+24107081,21464,170356,"Fast Foods, Fried Chicken, Breast, meat only, skin and breading removed",50,0
+24122130,5062,171077,"Chicken, broiler or fryers, breast, skinless, boneless, meat only, raw",85,803
+24122130,2047,173468,"Salt, table",0.6,0
+24122130,5015,171452,"Chicken, broilers or fryers, skin only, raw",15,803
+24122131,5062,171077,"Chicken, broiler or fryers, breast, skinless, boneless, meat only, raw",100,803
+24122131,2047,173468,"Salt, table",0.6,0
+24123110,5062,171077,"Chicken, broiler or fryers, breast, skinless, boneless, meat only, raw",85,803
+24123110,5015,171452,"Chicken, broilers or fryers, skin only, raw",15,803
+24123110,2047,173468,"Salt, table",0.6,0
+24123120,5062,171077,"Chicken, broiler or fryers, breast, skinless, boneless, meat only, raw",100,803
+24123120,2047,173468,"Salt, table",0.6,0
+24132230,5069,173612,"Chicken, broilers or fryers, drumstick, meat and skin, cooked, roasted",40,0
+24132230,2047,173468,"Salt, table",0.6,0
+24132230,5094,173625,"Chicken, broilers or fryers, thigh, meat and skin, cooked, roasted",60,0
+24132231,2047,173468,"Salt, table",0.6,0
+24132231,5098,172388,"Chicken, broilers or fryers, thigh, meat only, cooked, roasted",60,0
+24132231,5073,172376,"Chicken, broilers or fryers, dark meat, drumstick, meat only, cooked, roasted",40,0
+24133210,5677,174498,"Chicken, broilers or fryers, dark meat, thigh, meat and skin, cooked, braised",60,0
+24133210,2047,173468,"Salt, table",0.8,0
+24133210,5676,174497,"Chicken, broilers or fryers, dark meat, drumstick, meat and skin, cooked, braised",40,0
+24133220,5671,172852,"Chicken, broilers or fryers, drumstick, meat only, cooked, braised",40,0
+24133220,2047,173468,"Salt, table",0.8,0
+24133220,5672,172853,"Chicken, broilers or fryers, dark meat, thigh, meat only, cooked, braised",60,0
+24134150,6150,174523,"Sauce, barbecue",18,0
+24134150,82101000,,"Vegetable oil, NFS",2,0
+24134150,2047,173468,"Salt, table",0.8,0
+24134150,5094,173625,"Chicken, broilers or fryers, thigh, meat and skin, cooked, roasted",48,0
+24134150,5069,173612,"Chicken, broilers or fryers, drumstick, meat and skin, cooked, roasted",32,0
+24134151,82101000,,"Vegetable oil, NFS",2,0
+24134151,2047,173468,"Salt, table",0.8,0
+24134151,5073,172376,"Chicken, broilers or fryers, dark meat, drumstick, meat only, cooked, roasted",32,0
+24134151,6150,174523,"Sauce, barbecue",18,0
+24134151,5098,172388,"Chicken, broilers or fryers, thigh, meat only, cooked, roasted",48,0
+24142300,5069,173612,"Chicken, broilers or fryers, drumstick, meat and skin, cooked, roasted",100,0
+24142300,2047,173468,"Salt, table",0.6,0
+24142301,2047,173468,"Salt, table",0.6,0
+24142301,5073,172376,"Chicken, broilers or fryers, dark meat, drumstick, meat only, cooked, roasted",100,0
+24143210,5676,174497,"Chicken, broilers or fryers, dark meat, drumstick, meat and skin, cooked, braised",100,0
+24143210,2047,173468,"Salt, table",0.8,0
+24143220,5671,172852,"Chicken, broilers or fryers, drumstick, meat only, cooked, braised",100,0
+24143220,2047,173468,"Salt, table",0.8,0
+24152230,2047,173468,"Salt, table",0.6,0
+24152230,5094,173625,"Chicken, broilers or fryers, thigh, meat and skin, cooked, roasted",100,0
+24152231,5098,172388,"Chicken, broilers or fryers, thigh, meat only, cooked, roasted",100,0
+24152231,2047,173468,"Salt, table",0.6,0
+24153210,5677,174498,"Chicken, broilers or fryers, dark meat, thigh, meat and skin, cooked, braised",100,0
+24153210,2047,173468,"Salt, table",0.8,0
+24153220,5672,172853,"Chicken, broilers or fryers, dark meat, thigh, meat only, cooked, braised",100,0
+24153220,2047,173468,"Salt, table",0.8,0
+24162130,5103,173630,"Chicken, broilers or fryers, wing, meat and skin, cooked, roasted",100,0
+24162130,2047,173468,"Salt, table",0.8,0
+24163110,5104,173631,"Chicken, broilers or fryers, wing, meat and skin, cooked, stewed",100,0
+24163110,2047,173468,"Salt, table",0.8,0
+24198683,20061,169714,"Flour, rice, white, unenriched",3,0
+24198683,14411,173647,"Beverages, water, tap, drinking",15,0
+24198683,5000,171445,"Chicken, broiler, rotisserie, BBQ, breast, meat only",80,0
+24198683,4582,172336,"Oil, canola",3,0
+24198683,2047,173468,"Salt, table",0.5,0
+24201060,5697,172865,"Turkey from whole, light meat, meat only, with added solution, cooked, roasted",34,0
+24201060,18079,174928,"Bread, crumbs, dry, grated, plain",10,0
+24201060,4615,173584,"Shortening, vegetable, household, composite",1.5,0
+24201060,5186,171491,"Turkey, all classes, light meat, cooked, roasted",66,0
+24201070,4615,173584,"Shortening, vegetable, household, composite",1.5,0
+24201070,18079,174928,"Bread, crumbs, dry, grated, plain",10,0
+24201070,5182,171089,"Turkey, whole, light meat, meat and skin, cooked, roasted",66,0
+24201070,5703,174512,"Turkey from whole, light meat, meat and skin, with added solution, cooked, roasted",34,0
+24201120,2047,173468,"Salt, table",0.84,0
+24201120,5186,171491,"Turkey, all classes, light meat, cooked, roasted",66,0
+24201120,5697,172865,"Turkey from whole, light meat, meat only, with added solution, cooked, roasted",34,0
+24201130,5182,171089,"Turkey, whole, light meat, meat and skin, cooked, roasted",66,0
+24201130,5703,174512,"Turkey from whole, light meat, meat and skin, with added solution, cooked, roasted",34,0
+24201130,2047,173468,"Salt, table",0.84,0
+24201220,2047,173468,"Salt, table",0.84,0
+24201220,5188,171091,"Turkey, whole, dark meat, cooked, roasted",66,0
+24201220,5695,174508,"Turkey, dark meat, meat only, with added solution, cooked, roasted",34,0
+24201230,5184,171489,"Turkey, whole, dark meat, meat and skin, cooked, roasted",66,0
+24201230,2047,173468,"Salt, table",0.84,0
+24201230,5701,174510,"Turkey, dark meat from whole, meat and skin, with added solution, cooked, roasted",34,0
+24201320,5705,172869,"Turkey, whole, meat only, with added solution, roasted",34,0
+24201320,2047,173468,"Salt, table",0.84,0
+24201320,5168,171481,"Turkey, whole, meat only, cooked, roasted",66,0
+24201330,5707,172871,"Turkey, whole, meat and skin, with added solution, roasted",34,0
+24201330,2047,173468,"Salt, table",0.84,0
+24201330,5166,171479,"Turkey, whole, meat and skin, cooked, roasted",66,0
+24201360,1091,170877,"Milk, dry, nonfat, regular, without added vitamin A and vitamin D",0.21,2152
+24201360,14429,175103,"Beverages, water, tap, municipal",2.5,0
+24201360,5168,171481,"Turkey, whole, meat only, cooked, roasted",66,0
+24201360,2047,173468,"Salt, table",0.37,0
+24201360,5705,172869,"Turkey, whole, meat only, with added solution, roasted",34,0
+24201360,4615,173584,"Shortening, vegetable, household, composite",1.4,0
+24201360,20081,168894,"Flour, wheat, all-purpose, enriched, bleached",1.77,305
+24201360,1123,171287,"Eggs, Grade A, Large, egg whole",1.05,103
+24201370,1123,171287,"Eggs, Grade A, Large, egg whole",1.05,103
+24201370,4615,173584,"Shortening, vegetable, household, composite",1.4,0
+24201370,14429,175103,"Beverages, water, tap, municipal",2.5,0
+24201370,2047,173468,"Salt, table",0.37,0
+24201370,20081,168894,"Flour, wheat, all-purpose, enriched, bleached",1.77,305
+24201370,5166,171479,"Turkey, whole, meat and skin, cooked, roasted",66,0
+24201370,5707,172871,"Turkey, whole, meat and skin, with added solution, roasted",34,0
+24201370,1091,170877,"Milk, dry, nonfat, regular, without added vitamin A and vitamin D",0.21,2152
+24201410,2047,173468,"Salt, table",0.84,0
+24201410,5167,171480,"Turkey, whole, meat only, raw",100,0
+24201420,2047,173468,"Salt, table",0.84,0
+24201420,5727,171130,"Turkey, retail parts, breast, meat and skin, with added solution, raw",34,1851
+24201420,5165,171081,"Turkey, whole, meat and skin, raw",66,1851
+24202060,5739,171530,"Turkey, drumstick, from whole bird, meat only, roasted",66,0
+24202060,2047,173468,"Salt, table",0.84,0
+24202060,5725,171128,"Turkey, drumstick, from whole bird, meat only, with added solution, roasted",34,0
+24202070,5194,171494,"Turkey, all classes, leg, meat and skin, cooked, roasted",66,0
+24202070,2047,173468,"Salt, table",0.84,0
+24202070,5701,174510,"Turkey, dark meat from whole, meat and skin, with added solution, cooked, roasted",34,0
+24301010,2047,173468,"Salt, table",0.42,0
+24301010,5140,172409,"Duck, domesticated, meat and skin, cooked, roasted",100,0
+24301020,5142,172411,"Duck, domesticated, meat only, cooked, roasted",100,0
+24301020,2047,173468,"Salt, table",0.42,0
+24311010,5147,172412,"Goose, domesticated, meat and skin, cooked, roasted",100,0
+24311010,2047,173468,"Salt, table",0.42,0
+24401010,5308,171107,"Chicken, cornish game hens, meat and skin, cooked, roasted",100,0
+24401010,2047,173468,"Salt, table",0.84,0
+24401020,2047,173468,"Salt, table",0.84,0
+24401020,5310,171109,"Chicken, cornish game hens, meat only, cooked, roasted",100,0
+24402110,14429,175103,"Beverages, water, tap, municipal",2.5,0
+24402110,2047,173468,"Salt, table",0.37,0
+24402110,1154,172195,"Milk, dry, nonfat, regular, with added vitamin A and vitamin D",0.21,2152
+24402110,20081,168894,"Flour, wheat, all-purpose, enriched, bleached",1.77,301
+24402110,1123,171287,"Eggs, Grade A, Large, egg whole",1.05,103
+24402110,4615,173584,"Shortening, vegetable, household, composite",1.4,0
+24402110,43287,169905,"Dove, cooked (includes squab)",96.5,0
+26100100,15132,173713,"Fish, whiting, mixed species, raw",25,0
+26100100,15261,175176,"Fish, tilapia, raw",25,0
+26100100,15019,174191,"Fish, cod, Pacific, raw (may have been previously frozen)",25,0
+26100100,15234,175165,"Fish, catfish, channel, farmed, raw",25,0
+26100120,15261,175176,"Fish, tilapia, raw",24,2309
+26100120,15234,175165,"Fish, catfish, channel, farmed, raw",24,2309
+26100120,81200100,,"Oil or table fat, NFS",4,0
+26100120,2047,173468,"Salt, table",0.4,0
+26100120,15019,174191,"Fish, cod, Pacific, raw (may have been previously frozen)",10,2309
+26100120,15236,175167,"Fish, salmon, Atlantic, farmed, raw",28,2309
+26100120,15083,175138,"Fish, salmon, pink, raw",10,2309
+26100160,15019,174191,"Fish, cod, Pacific, raw (may have been previously frozen)",10,2309
+26100160,2047,173468,"Salt, table",0.2,0
+26100160,15236,175167,"Fish, salmon, Atlantic, farmed, raw",30,2309
+26100160,15261,175176,"Fish, tilapia, raw",25,2309
+26100160,15234,175165,"Fish, catfish, channel, farmed, raw",25,2309
+26100160,15083,175138,"Fish, salmon, pink, raw",10,2309
+26107160,2047,173468,"Salt, table",0.2,0
+26107160,15234,175165,"Fish, catfish, channel, farmed, raw",100,2309
+26109160,15019,174191,"Fish, cod, Pacific, raw (may have been previously frozen)",100,2309
+26109160,2047,173468,"Salt, table",0.2,0
+26115160,15028,174196,"Fish, flatfish (flounder and sole species), raw",100,2309
+26115160,2047,173468,"Salt, table",0.2,0
+26117160,15033,171964,"Fish, haddock, raw",100,2309
+26117160,2047,173468,"Salt, table",0.2,0
+26127160,15060,173678,"Fish, perch, mixed species, raw",100,2309
+26127160,2047,173468,"Salt, table",0.2,0
+26131160,15068,173682,"Fish, pompano, florida, raw",100,2309
+26131160,2047,173468,"Salt, table",0.2,0
+26137100,15083,175138,"Fish, salmon, pink, raw",25,0
+26137100,15236,175167,"Fish, salmon, Atlantic, farmed, raw",75,0
+26137160,2047,173468,"Salt, table",0.2,0
+26137160,15083,175138,"Fish, salmon, pink, raw",25,2309
+26137160,15236,175167,"Fish, salmon, Atlantic, farmed, raw",75,2309
+26141160,2047,173468,"Salt, table",0.2,0
+26141160,15091,175142,"Fish, sea bass, mixed species, raw",100,2309
+26151160,15240,173717,"Fish, trout, rainbow, farmed, raw",100,2309
+26151160,2047,173468,"Salt, table",0.2,0
+26157160,15132,173713,"Fish, whiting, mixed species, raw",100,2309
+26157160,2047,173468,"Salt, table",0.2,0
+26158050,15261,175176,"Fish, tilapia, raw",100,2309
+26158050,2047,173468,"Salt, table",0.2,0
+26158140,2047,173468,"Salt, table",0.2,0
+26158140,15019,174191,"Fish, cod, Pacific, raw (may have been previously frozen)",50,2309
+26158140,15261,175176,"Fish, tilapia, raw",50,2309
+26317130,2047,173468,"Salt, table",0.2,0
+26317130,15172,174220,"Mollusks, scallop, mixed species, raw",100,2755
+26319130,15149,174210,"Crustaceans, shrimp, mixed species, raw (may contain additives to retain moisture)",100,2755
+26319130,2047,173468,"Salt, table",0.2,0
+27112000,13893,169531,"Beef, round, top round steak, separable lean and fat, trimmed to 1/8"" fat, all grades, cooked, broiled",70,0
+27112000,2047,173468,"Salt, table",0.56,0
+27112000,6119,171566,"Gravy, chicken, canned or bottled, ready-to-serve",30,0
+27116350,11529,170457,"Tomatoes, red, ripe, raw, year round average",80,3751
+27116350,2030,170931,"Spices, pepper, black",0.5,0
+27116350,20081,168894,"Flour, wheat, all-purpose, enriched, bleached",3.9,0
+27116350,2014,170923,"Spices, cumin seed",1.5,0
+27116350,11282,170000,"Onions, raw",40,3460
+27116350,2047,173468,"Salt, table",5.5,0
+27116350,11215,169230,"Garlic, raw",9,3460
+27116350,21500000,,"Beef, ground, raw",908,752
+27116350,11333,170427,"Peppers, bell, green, raw",40,3776
+27116350,14411,173647,"Beverages, water, tap, drinking",237,0
+27120020,2047,173468,"Salt, table",0.5,0
+27120020,10027,168233,"Pork, fresh, loin, whole, separable lean only, cooked, roasted",70,0
+27120020,6119,171566,"Gravy, chicken, canned or bottled, ready-to-serve",30,0
+27130010,2047,173468,"Salt, table",0.5,0
+27130010,6119,171566,"Gravy, chicken, canned or bottled, ready-to-serve",30,0
+27130010,17002,172480,"Lamb, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/4"" fat, choice, cooked",70,0
+27133010,11529,170457,"Tomatoes, red, ripe, raw, year round average",90,3751
+27133010,2048,173469,"Vinegar, cider",15,0
+27133010,11943,168559,"Pimento, canned",24,0
+27133010,82104000,,"Olive oil",112,0
+27133010,11282,170000,"Onions, raw",113.4,3456
+27133010,9195,169096,"Olives, pickled, canned or bottled, green",33.25,0
+27133010,17169,175304,"Game meat, goat, cooked, roasted",680,0
+27133010,11215,169230,"Garlic, raw",3,0
+27133010,2030,170931,"Spices, pepper, black",0.525,0
+27133010,2047,173468,"Salt, table",9,0
+27133010,10141,168282,"Pork, cured, ham, center slice, country-style, separable lean only, raw",56.7,1556
+27133010,10165,168287,"Pork, cured, salt pork, raw",28.35,1556
+27136080,6119,171566,"Gravy, chicken, canned or bottled, ready-to-serve",30,0
+27136080,17346,172605,"Game meat, deer, shoulder clod, separable lean only, cooked, braised",70,0
+27136080,2047,173468,"Salt, table",0.5,0
+27141050,2047,173468,"Salt, table",5.6,0
+27141050,11282,170000,"Onions, raw",85,3456
+27141050,14411,173647,"Beverages, water, tap, drinking",474,0
+27141050,24102070,,"Chicken, NS as to part, rotisserie, skin not eaten",580,0
+27141050,20081,168894,"Flour, wheat, all-purpose, enriched, bleached",14,302
+27141050,11549,170054,"Tomato products, canned, sauce",240,3751
+27141050,11333,170427,"Peppers, bell, green, raw",37.5,3785
+27141050,4518,171029,"Oil, corn",27,0
+27141050,4615,173584,"Shortening, vegetable, household, composite",30,0
+27142200,5168,171481,"Turkey, whole, meat only, cooked, roasted",70,0
+27142200,2047,173468,"Salt, table",0.44,0
+27142200,6119,171566,"Gravy, chicken, canned or bottled, ready-to-serve",30,0
+27162500,11333,170427,"Peppers, bell, green, raw",40,3776
+27162500,10002,168220,"Pork, fresh, composite of trimmed retail cuts (leg, loin, shoulder), separable lean only, raw",454,1402
+27162500,11215,169230,"Garlic, raw",9,3460
+27162500,2014,170923,"Spices, cumin seed",1.5,0
+27162500,2047,173468,"Salt, table",5.5,0
+27162500,11529,170457,"Tomatoes, red, ripe, raw, year round average",80,3751
+27162500,14411,173647,"Beverages, water, tap, drinking",237,0
+27162500,20081,168894,"Flour, wheat, all-purpose, enriched, bleached",3.9,0
+27162500,11282,170000,"Onions, raw",40,3460
+27162500,2030,170931,"Spices, pepper, black",0.5,0
+27162500,21500100,,"Beef, ground",304,0
+27163010,6119,171566,"Gravy, chicken, canned or bottled, ready-to-serve",30,0
+27163010,2047,173468,"Salt, table",0.56,0
+27163010,13893,169531,"Beef, round, top round steak, separable lean and fat, trimmed to 1/8"" fat, all grades, cooked, broiled",70,0
+27211550,11215,169230,"Garlic, raw",9,3460
+27211550,11352,170026,"Potatoes, flesh and skin, raw",426,3309
+27211550,14411,173647,"Beverages, water, tap, drinking",237,0
+27211550,2014,170923,"Spices, cumin seed",1.05,0
+27211550,2047,173468,"Salt, table",6,0
+27211550,11333,170427,"Peppers, bell, green, raw",178.5,3776
+27211550,11529,170457,"Tomatoes, red, ripe, raw, year round average",123,3751
+27211550,20081,168894,"Flour, wheat, all-purpose, enriched, bleached",3.906,0
+27211550,21500000,,"Beef, ground, raw",907.2,752
+27211550,2030,170931,"Spices, pepper, black",0.525,0
+27211550,11282,170000,"Onions, raw",27.5,3460
+27212200,20110,169732,"Noodles, egg, enriched, cooked",50,0
+27212200,13893,169531,"Beef, round, top round steak, separable lean and fat, trimmed to 1/8"" fat, all grades, cooked, broiled",15,0
+27212200,6119,171566,"Gravy, chicken, canned or bottled, ready-to-serve",30,0
+27212200,82101000,,"Vegetable oil, NFS",1.5,0
+27212200,2047,173468,"Salt, table",0.4,0
+27213200,14411,173647,"Beverages, water, tap, drinking",5,0
+27213200,20045,168878,"Rice, white, long-grain, regular, enriched, cooked",50,0
+27213200,82101000,,"Vegetable oil, NFS",2.75,0
+27213200,13893,169531,"Beef, round, top round steak, separable lean and fat, trimmed to 1/8"" fat, all grades, cooked, broiled",15,0
+27213200,2047,173468,"Salt, table",0.48,0
+27213200,6119,171566,"Gravy, chicken, canned or bottled, ready-to-serve",30,0
+27218210,14411,173647,"Beverages, water, tap, drinking",474,0
+27218210,2027,171328,"Spices, oregano, dried",0.375,0
+27218210,74410110,,"Puerto Rican seasoning with ham",79.92,0
+27218210,82101000,,"Vegetable oil, NFS",28,0
+27218210,11215,169230,"Garlic, raw",3,0
+27218210,13864,168694,"Beef, round, full cut, separable lean and fat, trimmed to 1/8"" fat, choice, raw",454,702
+27218210,11549,170054,"Tomato products, canned, sauce",64.25,3751
+27218210,2047,173468,"Salt, table",7.5,0
+27218210,9195,169096,"Olives, pickled, canned or bottled, green",8.7,0
+27218210,11352,170026,"Potatoes, flesh and skin, raw",200,3309
+27220510,11367,170440,"Potatoes, boiled, cooked without skin, flesh, without salt",50,0
+27220510,2047,173468,"Salt, table",0.44,0
+27220510,10027,168233,"Pork, fresh, loin, whole, separable lean only, cooked, roasted",15,0
+27220510,14411,173647,"Beverages, water, tap, drinking",5,0
+27220510,6119,171566,"Gravy, chicken, canned or bottled, ready-to-serve",30,0
+27220510,82101000,,"Vegetable oil, NFS",4,0
+27221100,11333,170427,"Peppers, bell, green, raw",21.5,0
+27221100,14411,173647,"Beverages, water, tap, drinking",1422,0
+27221100,2027,171328,"Spices, oregano, dried",0.6,0
+27221100,82101000,,"Vegetable oil, NFS",22.7,0
+27221100,11352,170026,"Potatoes, flesh and skin, raw",226.8,3309
+27221100,11282,170000,"Onions, raw",26.7,3456
+27221100,25220710,,Chorizo,75,0
+27221100,11979,168576,"Peppers, jalapeno, raw",5.6,3776
+27221100,11529,170457,"Tomatoes, red, ripe, raw, year round average",53,3751
+27221100,11422,168448,"Pumpkin, raw",226.8,3456
+27221100,2047,173468,"Salt, table",12,0
+27221100,10141,168282,"Pork, cured, ham, center slice, country-style, separable lean only, raw",56.7,1603
+27221100,10173,168290,"Pork, fresh, variety meats and by-products, feet, cooked, simmered",520,0
+27221170,20121,169737,"Pasta, cooked, enriched, without added salt",25,0
+27221170,14411,173647,"Beverages, water, tap, drinking",20,0
+27221170,2047,173468,"Salt, table",0.7,0
+27221170,99997820,,"Vegetables as ingredient in stews",25,0
+27221170,10081,167850,"Pork, fresh, shoulder, (Boston butt), blade (steaks), separable lean and fat, cooked, braised",30,0
+27231000,82101000,,"Vegetable oil, NFS",2,0
+27231000,11367,170440,"Potatoes, boiled, cooked without skin, flesh, without salt",50,0
+27231000,2047,173468,"Salt, table",0.4,0
+27231000,17002,172480,"Lamb, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/4"" fat, choice, cooked",15,0
+27231000,6119,171566,"Gravy, chicken, canned or bottled, ready-to-serve",30,0
+27233000,20110,169732,"Noodles, egg, enriched, cooked",50,0
+27233000,17002,172480,"Lamb, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/4"" fat, choice, cooked",15,0
+27233000,6119,171566,"Gravy, chicken, canned or bottled, ready-to-serve",30,0
+27233000,2047,173468,"Salt, table",0.4,0
+27250122,20110,169732,"Noodles, egg, enriched, cooked",50,0
+27250122,6119,171566,"Gravy, chicken, canned or bottled, ready-to-serve",30,0
+27250122,82101000,,"Vegetable oil, NFS",3,0
+27250122,15151,171971,"Crustaceans, shrimp, mixed species, cooked, moist heat (may contain additives to retain moisture)",15,0
+27250122,2047,173468,"Salt, table",0.1,0
+27250122,14411,173647,"Beverages, water, tap, drinking",5,0
+27250260,1001,173410,"Butter, stick, salted",28,0
+27250260,18069,174924,"Bread, white, commercially prepared",64.08,301
+27250260,15148,174209,"Crustaceans, lobster, northern, cooked, moist heat",226.8,2750
+27250260,2047,173468,"Salt, table",1.5,0
+27250260,11282,170000,"Onions, raw",10,3465
+27251010,15084,173690,"Fish, salmon, pink, canned, total can contents",453.6,2552
+27251010,2047,173468,"Salt, table",3,0
+27251010,14411,173647,"Beverages, water, tap, drinking",59.25,0
+27251010,11352,170026,"Potatoes, flesh and skin, raw",295,3309
+27251010,11547,170460,"Tomato products, canned, puree, without salt added",62.5,3751
+27251010,9195,169096,"Olives, pickled, canned or bottled, green",39.9,0
+27251010,82101000,,"Vegetable oil, NFS",28,0
+27251010,11282,170000,"Onions, raw",110,3456
+27260050,23575,171799,"Beef, ground, 80% lean meat / 20% fat, crumbles, cooked, pan-browned",428.652,0
+27260050,18069,174924,"Bread, white, commercially prepared",84,302
+27260050,11282,170000,"Onions, raw",80,3456
+27260050,2047,173468,"Salt, table",6,0
+27260050,1151,173432,"Milk, nonfat, fluid, without added vitamin A and vitamin D (fat free or skim)",122.5,2152
+27260050,1123,171287,"Eggs, Grade A, Large, egg whole",50,105
+27260050,6116,171564,"Gravy, beef, canned, ready-to-serve",480,0
+27260050,2030,170931,"Spices, pepper, black",0.525,0
+27261500,11215,169230,"Garlic, raw",9,3460
+27261500,2047,173468,"Salt, table",5.5,0
+27261500,11529,170457,"Tomatoes, red, ripe, raw, year round average",80,3751
+27261500,11282,170000,"Onions, raw",40,3460
+27261500,11333,170427,"Peppers, bell, green, raw",40,3776
+27261500,10002,168220,"Pork, fresh, composite of trimmed retail cuts (leg, loin, shoulder), separable lean only, raw",454,1402
+27261500,11352,170026,"Potatoes, flesh and skin, raw",250,3302
+27261500,2030,170931,"Spices, pepper, black",0.5,0
+27261500,14411,173647,"Beverages, water, tap, drinking",237,0
+27261500,2014,170923,"Spices, cumin seed",1.5,0
+27261500,23572,174036,"Beef, ground, 80% lean meat / 20% fat, raw",454,752
+27261500,20081,168894,"Flour, wheat, all-purpose, enriched, bleached",3.9,0
+27311600,2047,173468,"Salt, table",0.56,0
+27311600,13893,169531,"Beef, round, top round steak, separable lean and fat, trimmed to 1/8"" fat, all grades, cooked, broiled",15,0
+27311600,11093,169969,"Broccoli, frozen, chopped, cooked, boiled, drained, without salt",10,0
+27311600,11367,170440,"Potatoes, boiled, cooked without skin, flesh, without salt",50,0
+27311600,82101000,,"Vegetable oil, NFS",6,0
+27311600,6119,171566,"Gravy, chicken, canned or bottled, ready-to-serve",30,0
+27311600,11131,169984,"Carrots, frozen, cooked, boiled, drained, without salt",10,0
+27311605,6119,171566,"Gravy, chicken, canned or bottled, ready-to-serve",30,0
+27311605,2047,173468,"Salt, table",0.6,0
+27311605,11367,170440,"Potatoes, boiled, cooked without skin, flesh, without salt",50,0
+27311605,13893,169531,"Beef, round, top round steak, separable lean and fat, trimmed to 1/8"" fat, all grades, cooked, broiled",15,0
+27311605,11061,169963,"Beans, snap, green, frozen, cooked, boiled, drained without salt",10,0
+27311605,11179,168399,"Corn, sweet, yellow, frozen, kernels cut off cob, boiled, drained, without salt",10,0
+27311605,82101000,,"Vegetable oil, NFS",5,0
+27313410,11093,169969,"Broccoli, frozen, chopped, cooked, boiled, drained, without salt",10,0
+27313410,13893,169531,"Beef, round, top round steak, separable lean and fat, trimmed to 1/8"" fat, all grades, cooked, broiled",15,0
+27313410,82101000,,"Vegetable oil, NFS",2.4,0
+27313410,11131,169984,"Carrots, frozen, cooked, boiled, drained, without salt",10,0
+27313410,20110,169732,"Noodles, egg, enriched, cooked",50,0
+27313410,6119,171566,"Gravy, chicken, canned or bottled, ready-to-serve",30,0
+27313410,2047,173468,"Salt, table",0.54,0
+27313420,82101000,,"Vegetable oil, NFS",2.4,0
+27313420,6119,171566,"Gravy, chicken, canned or bottled, ready-to-serve",30,0
+27313420,11179,168399,"Corn, sweet, yellow, frozen, kernels cut off cob, boiled, drained, without salt",10,0
+27313420,20110,169732,"Noodles, egg, enriched, cooked",50,0
+27313420,11061,169963,"Beans, snap, green, frozen, cooked, boiled, drained without salt",10,0
+27313420,2047,173468,"Salt, table",0.56,0
+27313420,13893,169531,"Beef, round, top round steak, separable lean and fat, trimmed to 1/8"" fat, all grades, cooked, broiled",15,0
+27315410,6119,171566,"Gravy, chicken, canned or bottled, ready-to-serve",30,0
+27315410,82101000,,"Vegetable oil, NFS",3.5,0
+27315410,2047,173468,"Salt, table",0.56,0
+27315410,13893,169531,"Beef, round, top round steak, separable lean and fat, trimmed to 1/8"" fat, all grades, cooked, broiled",15,0
+27315410,11093,169969,"Broccoli, frozen, chopped, cooked, boiled, drained, without salt",10,0
+27315410,20045,168878,"Rice, white, long-grain, regular, enriched, cooked",50,0
+27315410,11131,169984,"Carrots, frozen, cooked, boiled, drained, without salt",10,0
+27315420,11179,168399,"Corn, sweet, yellow, frozen, kernels cut off cob, boiled, drained, without salt",10,0
+27315420,11061,169963,"Beans, snap, green, frozen, cooked, boiled, drained without salt",10,0
+27315420,13893,169531,"Beef, round, top round steak, separable lean and fat, trimmed to 1/8"" fat, all grades, cooked, broiled",15,0
+27315420,6119,171566,"Gravy, chicken, canned or bottled, ready-to-serve",30,0
+27315420,20045,168878,"Rice, white, long-grain, regular, enriched, cooked",50,0
+27315420,2047,173468,"Salt, table",0.6,0
+27315420,82101000,,"Vegetable oil, NFS",3.5,0
+27320120,11093,169969,"Broccoli, frozen, chopped, cooked, boiled, drained, without salt",10,0
+27320120,11131,169984,"Carrots, frozen, cooked, boiled, drained, without salt",10,0
+27320120,11367,170440,"Potatoes, boiled, cooked without skin, flesh, without salt",50,0
+27320120,7064,174578,"Pork sausage, link/patty, cooked, pan-fried",15,0
+27320120,82101000,,"Vegetable oil, NFS",3.5,0
+27320120,2047,173468,"Salt, table",0.4,0
+27320120,6119,171566,"Gravy, chicken, canned or bottled, ready-to-serve",30,0
+27320130,6119,171566,"Gravy, chicken, canned or bottled, ready-to-serve",30,0
+27320130,11061,169963,"Beans, snap, green, frozen, cooked, boiled, drained without salt",10,0
+27320130,7064,174578,"Pork sausage, link/patty, cooked, pan-fried",15,0
+27320130,11179,168399,"Corn, sweet, yellow, frozen, kernels cut off cob, boiled, drained, without salt",10,0
+27320130,11367,170440,"Potatoes, boiled, cooked without skin, flesh, without salt",50,0
+27320130,2047,173468,"Salt, table",0.4,0
+27320130,82101000,,"Vegetable oil, NFS",3,0
+27320140,2047,173468,"Salt, table",0.56,0
+27320140,10027,168233,"Pork, fresh, loin, whole, separable lean only, cooked, roasted",15,0
+27320140,11367,170440,"Potatoes, boiled, cooked without skin, flesh, without salt",50,0
+27320140,11093,169969,"Broccoli, frozen, chopped, cooked, boiled, drained, without salt",10,0
+27320140,11131,169984,"Carrots, frozen, cooked, boiled, drained, without salt",10,0
+27320140,6119,171566,"Gravy, chicken, canned or bottled, ready-to-serve",30,0
+27320140,82101000,,"Vegetable oil, NFS",5.5,0
+27320150,10027,168233,"Pork, fresh, loin, whole, separable lean only, cooked, roasted",15,0
+27320150,82101000,,"Vegetable oil, NFS",5,0
+27320150,11179,168399,"Corn, sweet, yellow, frozen, kernels cut off cob, boiled, drained, without salt",10,0
+27320150,6119,171566,"Gravy, chicken, canned or bottled, ready-to-serve",30,0
+27320150,2047,173468,"Salt, table",0.56,0
+27320150,11061,169963,"Beans, snap, green, frozen, cooked, boiled, drained without salt",10,0
+27320150,11367,170440,"Potatoes, boiled, cooked without skin, flesh, without salt",50,0
+27330050,11179,168399,"Corn, sweet, yellow, frozen, kernels cut off cob, boiled, drained, without salt",10,0
+27330050,2047,173468,"Salt, table",0.56,0
+27330050,17002,172480,"Lamb, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/4"" fat, choice, cooked",15,0
+27330050,20045,168878,"Rice, white, long-grain, regular, enriched, cooked",50,0
+27330050,11061,169963,"Beans, snap, green, frozen, cooked, boiled, drained without salt",10,0
+27330050,6119,171566,"Gravy, chicken, canned or bottled, ready-to-serve",30,0
+27330050,82101000,,"Vegetable oil, NFS",2,0
+27330080,11131,169984,"Carrots, frozen, cooked, boiled, drained, without salt",10,0
+27330080,20045,168878,"Rice, white, long-grain, regular, enriched, cooked",50,0
+27330080,17002,172480,"Lamb, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/4"" fat, choice, cooked",15,0
+27330080,2047,173468,"Salt, table",0.56,0
+27330080,6119,171566,"Gravy, chicken, canned or bottled, ready-to-serve",30,0
+27330080,11093,169969,"Broccoli, frozen, chopped, cooked, boiled, drained, without salt",10,0
+27330080,82101000,,"Vegetable oil, NFS",2,0
+27335500,14553,174157,"Beverages, Wine, non-alcoholic",180,0
+27335500,2047,173468,"Salt, table",18,0
+27335500,11549,170054,"Tomato products, canned, sauce",192.75,3751
+27335500,17179,174346,"Game meat, rabbit, domesticated, composite of cuts, cooked, stewed",1134,856
+27335500,2048,173469,"Vinegar, cider",45,0
+27335500,11215,169230,"Garlic, raw",2.8,0
+27335500,11282,170000,"Onions, raw",110,3456
+27335500,82104000,,"Olive oil",168,0
+27335500,2054,172238,"Capers, canned",21,0
+27335500,11352,170026,"Potatoes, flesh and skin, raw",680.4,3309
+27335500,9195,169096,"Olives, pickled, canned or bottled, green",30.6,0
+27336200,2047,173468,"Salt, table",0.6,0
+27336200,6119,171566,"Gravy, chicken, canned or bottled, ready-to-serve",30,0
+27336200,17346,172605,"Game meat, deer, shoulder clod, separable lean only, cooked, braised",15,0
+27336200,11093,169969,"Broccoli, frozen, chopped, cooked, boiled, drained, without salt",10,0
+27336200,11367,170440,"Potatoes, boiled, cooked without skin, flesh, without salt",50,0
+27336200,11131,169984,"Carrots, frozen, cooked, boiled, drained, without salt",10,0
+27336200,82101000,,"Vegetable oil, NFS",6,0
+27336250,11367,170440,"Potatoes, boiled, cooked without skin, flesh, without salt",50,0
+27336250,11179,168399,"Corn, sweet, yellow, frozen, kernels cut off cob, boiled, drained, without salt",10,0
+27336250,17346,172605,"Game meat, deer, shoulder clod, separable lean only, cooked, braised",15,0
+27336250,6119,171566,"Gravy, chicken, canned or bottled, ready-to-serve",30,0
+27336250,2047,173468,"Salt, table",0.6,0
+27336250,11061,169963,"Beans, snap, green, frozen, cooked, boiled, drained without salt",10,0
+27336250,82101000,,"Vegetable oil, NFS",5.5,0
+27341000,5324,171513,"Chicken patty, frozen, cooked",100,0
+27341000,2047,173468,"Salt, table",0.3,0
+27341000,14410110,,"Cheese, American",14,0
+27341000,21139,170699,"Fast foods, potato, mashed",210,0
+27341000,11179,168399,"Corn, sweet, yellow, frozen, kernels cut off cob, boiled, drained, without salt",109,0
+27341000,6119,171566,"Gravy, chicken, canned or bottled, ready-to-serve",102,0
+27347220,6119,171566,"Gravy, chicken, canned or bottled, ready-to-serve",30,0
+27347220,24102070,,"Chicken, NS as to part, rotisserie, skin not eaten",15,0
+27347220,18082,174931,"Bread, stuffing, dry mix, prepared",50,0
+27347220,11093,169969,"Broccoli, frozen, chopped, cooked, boiled, drained, without salt",10,0
+27347220,11131,169984,"Carrots, frozen, cooked, boiled, drained, without salt",10,0
+27347230,24102070,,"Chicken, NS as to part, rotisserie, skin not eaten",15,0
+27347230,11061,169963,"Beans, snap, green, frozen, cooked, boiled, drained without salt",10,0
+27347230,6119,171566,"Gravy, chicken, canned or bottled, ready-to-serve",30,0
+27347230,11179,168399,"Corn, sweet, yellow, frozen, kernels cut off cob, boiled, drained, without salt",10,0
+27347230,18082,174931,"Bread, stuffing, dry mix, prepared",50,0
+27362000,16056,173756,"Chickpeas (garbanzo beans, bengal gram), mature seeds, raw",100,502
+27362000,11422,168448,"Pumpkin, raw",158.76,3456
+27362000,11529,170457,"Tomatoes, red, ripe, raw, year round average",246,3751
+27362000,11333,170427,"Peppers, bell, green, raw",119,3776
+27362000,11821,170108,"Peppers, bell, red, raw",74,3776
+27362000,11352,170026,"Potatoes, flesh and skin, raw",340.2,3309
+27362000,13341,170599,"Beef, variety meats and by-products, tripe, raw",680.4,1183
+27362000,14411,173647,"Beverages, water, tap, drinking",1896,0
+27362000,4518,171029,"Oil, corn",28,0
+27362000,10141,168282,"Pork, cured, ham, center slice, country-style, separable lean only, raw",113.4,1556
+27362000,14411,173647,"Beverages, water, tap, drinking",100,0
+27362000,11282,170000,"Onions, raw",110,3456
+27362000,2047,173468,"Salt, table",15,0
+27416250,2047,173468,"Salt, table",1.5,0
+27416250,23602,174050,"Beef, chuck, arm pot roast, separable lean only, trimmed to 1/8"" fat, all grades, cooked, braised",268,0
+27416250,11945,168561,"Pickle relish, sweet",30.625,0
+27416250,4025,171009,"Salad dressing, mayonnaise, regular",110,0
+27416250,11143,169988,"Celery, raw",120,0
+27416400,75115000,,"Mushrooms, raw",453.6,3785
+27416400,19335,169655,"Sugars, granulated",25,0
+27416400,16123,174277,"Soy sauce made from soy and wheat (shoyu)",127.2,0
+27416400,1123,171287,"Eggs, Grade A, Large, egg whole",300,103
+27416400,4001,171400,"Fat, beef tallow",25.625,0
+27416400,6475,172922,"Soup, beef broth or bouillon, powder, prepared with water",122,0
+27416400,11291,170005,"Onions, spring or scallions (includes tops and bulb), raw",180,3785
+27416400,11282,170000,"Onions, raw",220,3465
+27416400,23394,173071,"Beef, loin, top loin steak, boneless, lip-on, separable lean only, trimmed to 1/8"" fat, all grades, cooked, grilled",635.04,0
+27416400,11028,169212,"Bamboo shoots, canned, drained solids",262,3788
+27416400,11043,169957,"Mung beans, mature seeds, sprouted, raw",226.8,3785
+27416450,2047,173468,"Salt, table",0.18,0
+27416450,82101000,,"Vegetable oil, NFS",2.5,0
+27416450,6119,171566,"Gravy, chicken, canned or bottled, ready-to-serve",30,0
+27416450,11093,169969,"Broccoli, frozen, chopped, cooked, boiled, drained, without salt",10,0
+27416450,11131,169984,"Carrots, frozen, cooked, boiled, drained, without salt",10,0
+27416450,13893,169531,"Beef, round, top round steak, separable lean and fat, trimmed to 1/8"" fat, all grades, cooked, broiled",15,0
+27416500,13893,169531,"Beef, round, top round steak, separable lean and fat, trimmed to 1/8"" fat, all grades, cooked, broiled",15,0
+27416500,2047,173468,"Salt, table",0.2,0
+27416500,6119,171566,"Gravy, chicken, canned or bottled, ready-to-serve",30,0
+27416500,82101000,,"Vegetable oil, NFS",2.5,0
+27416500,11061,169963,"Beans, snap, green, frozen, cooked, boiled, drained without salt",10,0
+27416500,11179,168399,"Corn, sweet, yellow, frozen, kernels cut off cob, boiled, drained, without salt",10,0
+27420020,4025,171009,"Salad dressing, mayonnaise, regular",110,0
+27420020,10153,168284,"Pork, cured, ham, whole, separable lean only, roasted",280,0
+27420020,11945,168561,"Pickle relish, sweet",30.625,0
+27420020,11143,169988,"Celery, raw",120,0
+27420020,2047,173468,"Salt, table",1.5,0
+27443120,11264,169254,"Mushrooms, canned, drained solids",78,0
+27443120,1125,172184,"Eggs, Grade A, Large, egg yolk",17,105
+27443120,6194,174536,"Soup, chicken broth, ready-to-serve",40.08,0
+27443120,20081,168894,"Flour, wheat, all-purpose, enriched, bleached",23.438,302
+27443120,11943,168559,"Pimento, canned",12,0
+27443120,2047,173468,"Salt, table",3,0
+27443120,1151,173432,"Milk, nonfat, fluid, without added vitamin A and vitamin D (fat free or skim)",122.5,2152
+27443120,81102010,,"Margarine, stick",42,0
+27443120,1050,170857,"Cream, fluid, light (coffee cream or table cream)",120,2152
+27443120,24102070,,"Chicken, NS as to part, rotisserie, skin not eaten",135,0
+27446200,4025,171009,"Salad dressing, mayonnaise, regular",110,0
+27446200,11143,169988,"Celery, raw",120,0
+27446200,11945,168561,"Pickle relish, sweet",30.625,0
+27446200,24102070,,"Chicken, NS as to part, rotisserie, skin not eaten",270,0
+27446200,2047,173468,"Salt, table",1.5,0
+27446220,11143,169988,"Celery, raw",120,0
+27446220,11945,168561,"Pickle relish, sweet",30.625,0
+27446220,24102070,,"Chicken, NS as to part, rotisserie, skin not eaten",270,0
+27446220,1129,173424,"Egg, whole, cooked, hard-boiled",50,0
+27446220,4025,171009,"Salad dressing, mayonnaise, regular",110,0
+27446220,2047,173468,"Salt, table",1.5,0
+27446225,11945,168561,"Pickle relish, sweet",30.625,0
+27446225,2047,173468,"Salt, table",1.5,0
+27446225,4641,173594,"Salad dressing, mayonnaise, light",120,0
+27446225,11143,169988,"Celery, raw",120,0
+27446225,24102070,,"Chicken, NS as to part, rotisserie, skin not eaten",270,0
+27446230,24102070,,"Chicken, NS as to part, rotisserie, skin not eaten",270,0
+27446230,11945,168561,"Pickle relish, sweet",30.625,0
+27446230,11143,169988,"Celery, raw",120,0
+27446230,4018,171403,"Salad dressing, mayonnaise type, regular, with salt",117.5,0
+27446230,2047,173468,"Salt, table",1.5,0
+27446235,2047,173468,"Salt, table",1.5,0
+27446235,24102070,,"Chicken, NS as to part, rotisserie, skin not eaten",270,0
+27446235,4641,173594,"Salad dressing, mayonnaise, light",120,0
+27446235,11143,169988,"Celery, raw",120,0
+27446235,11945,168561,"Pickle relish, sweet",30.625,0
+27446240,4639,173592,"Salad dressing, ranch dressing, regular",120,0
+27446240,2047,173468,"Salt, table",1.5,0
+27446240,24102070,,"Chicken, NS as to part, rotisserie, skin not eaten",270,0
+27446240,11945,168561,"Pickle relish, sweet",30.625,0
+27446240,11143,169988,"Celery, raw",120,0
+27446245,11945,168561,"Pickle relish, sweet",30.625,0
+27446245,11143,169988,"Celery, raw",120,0
+27446245,24102070,,"Chicken, NS as to part, rotisserie, skin not eaten",270,0
+27446245,42116,167684,"Creamy dressing, made with sour cream and/or buttermilk and oil, reduced calorie",122.5,0
+27446245,2047,173468,"Salt, table",1.5,0
+27446250,11143,169988,"Celery, raw",120,0
+27446250,4114,171019,"Salad dressing, italian dressing, commercial, regular",117.5,0
+27446250,11945,168561,"Pickle relish, sweet",30.625,0
+27446250,2047,173468,"Salt, table",1.5,0
+27446250,24102070,,"Chicken, NS as to part, rotisserie, skin not eaten",270,0
+27446255,2047,173468,"Salt, table",1.5,0
+27446255,24102070,,"Chicken, NS as to part, rotisserie, skin not eaten",270,0
+27446255,11945,168561,"Pickle relish, sweet",30.625,0
+27446255,11143,169988,"Celery, raw",120,0
+27446255,4021,171405,"Salad dressing, italian dressing, commercial, reduced fat",120,0
+27446260,11945,168561,"Pickle relish, sweet",30.625,0
+27446260,42193,167700,"Salad Dressing, mayonnaise-like, fat-free",128,0
+27446260,24102070,,"Chicken, NS as to part, rotisserie, skin not eaten",270,0
+27446260,11143,169988,"Celery, raw",120,0
+27446260,2047,173468,"Salt, table",1.5,0
+27446315,1009,173414,"Cheese, cheddar",28,0
+27446315,11529,170457,"Tomatoes, red, ripe, raw, year round average",18,0
+27446315,11143,169988,"Celery, raw",12,0
+27446315,75114000,,"Mixed salad greens, raw",110,0
+27446315,5000,171445,"Chicken, broiler, rotisserie, BBQ, breast, meat only",67.5,0
+27446315,11205,168409,"Cucumber, with peel, raw",12,0
+27446315,11282,170000,"Onions, raw",12,0
+27446315,10862,168322,"Pork, cured, bacon, pre-sliced, cooked, pan-fried",10,0
+27446315,11124,170393,"Carrots, mature, raw",12,0
+27446320,11205,168409,"Cucumber, with peel, raw",12,0
+27446320,11529,170457,"Tomatoes, red, ripe, raw, year round average",18,0
+27446320,11282,170000,"Onions, raw",12,0
+27446320,21229,170718,"Fast foods, chicken, breaded and fried, boneless pieces, plain",54,0
+27446320,75114000,,"Mixed salad greens, raw",110,0
+27446320,1009,173414,"Cheese, cheddar",14,0
+27446320,10862,168322,"Pork, cured, bacon, pre-sliced, cooked, pan-fried",10,0
+27446320,11124,170393,"Carrots, mature, raw",12,0
+27446320,11143,169988,"Celery, raw",12,0
+27446330,11529,170457,"Tomatoes, red, ripe, raw, year round average",18,0
+27446330,11143,169988,"Celery, raw",12,0
+27446330,11282,170000,"Onions, raw",12,0
+27446330,75114000,,"Mixed salad greens, raw",110,0
+27446330,1009,173414,"Cheese, cheddar",28,0
+27446330,11205,168409,"Cucumber, with peel, raw",12,0
+27446330,5000,171445,"Chicken, broiler, rotisserie, BBQ, breast, meat only",70,0
+27446330,11124,170393,"Carrots, mature, raw",12,0
+27446332,11124,170393,"Carrots, mature, raw",28,0
+27446332,1009,173414,"Cheese, cheddar",28,0
+27446332,75114000,,"Mixed salad greens, raw",110,0
+27446332,11529,170457,"Tomatoes, red, ripe, raw, year round average",45,0
+27446332,21229,170718,"Fast foods, chicken, breaded and fried, boneless pieces, plain",54,0
+27446360,5000,171445,"Chicken, broiler, rotisserie, BBQ, breast, meat only",70,0
+27446360,2047,173468,"Salt, table",0.8,0
+27446360,1032,171247,"Cheese, parmesan, grated",10,0
+27446360,11529,170457,"Tomatoes, red, ripe, raw, year round average",50,0
+27446360,75114000,,"Mixed salad greens, raw",165,0
+27450010,11143,169988,"Celery, raw",120,0
+27450010,15140,174205,"Crustaceans, crab, blue, cooked, moist heat",270,0
+27450010,4025,171009,"Salad dressing, mayonnaise, regular",110,0
+27450010,2047,173468,"Salt, table",1.5,0
+27450010,9152,167747,"Lemon juice, raw",31,0
+27450020,15148,174209,"Crustaceans, lobster, northern, cooked, moist heat",290,0
+27450020,11143,169988,"Celery, raw",120,0
+27450020,4025,171009,"Salad dressing, mayonnaise, regular",110,0
+27450020,9152,167747,"Lemon juice, raw",31,0
+27450020,2047,173468,"Salt, table",1.5,0
+27450030,15084,173690,"Fish, salmon, pink, canned, total can contents",300,0
+27450030,11945,168561,"Pickle relish, sweet",30.625,0
+27450030,2047,173468,"Salt, table",1.5,0
+27450030,4025,171009,"Salad dressing, mayonnaise, regular",110,0
+27450030,11143,169988,"Celery, raw",120,0
+27450060,11945,168561,"Pickle relish, sweet",30.625,0
+27450060,15121,173709,"Fish, tuna, light, canned in water, drained solids",276,0
+27450060,2047,173468,"Salt, table",1.5,0
+27450060,4025,171009,"Salad dressing, mayonnaise, regular",110,0
+27450060,11143,169988,"Celery, raw",120,0
+27450061,4641,173594,"Salad dressing, mayonnaise, light",120,0
+27450061,11143,169988,"Celery, raw",120,0
+27450061,11945,168561,"Pickle relish, sweet",30.625,0
+27450061,2047,173468,"Salt, table",1.5,0
+27450061,15121,173709,"Fish, tuna, light, canned in water, drained solids",276,0
+27450062,4018,171403,"Salad dressing, mayonnaise type, regular, with salt",117.5,0
+27450062,11945,168561,"Pickle relish, sweet",30.625,0
+27450062,15121,173709,"Fish, tuna, light, canned in water, drained solids",276,0
+27450062,2047,173468,"Salt, table",1.5,0
+27450062,11143,169988,"Celery, raw",120,0
+27450063,15121,173709,"Fish, tuna, light, canned in water, drained solids",276,0
+27450063,11143,169988,"Celery, raw",120,0
+27450063,2047,173468,"Salt, table",1.5,0
+27450063,4641,173594,"Salad dressing, mayonnaise, light",120,0
+27450063,11945,168561,"Pickle relish, sweet",30.625,0
+27450064,11143,169988,"Celery, raw",120,0
+27450064,11945,168561,"Pickle relish, sweet",30.625,0
+27450064,4639,173592,"Salad dressing, ranch dressing, regular",120,0
+27450064,15121,173709,"Fish, tuna, light, canned in water, drained solids",276,0
+27450064,2047,173468,"Salt, table",1.5,0
+27450065,42157,168099,"Creamy dressing, made with sour cream and/or buttermilk and oil, reduced calorie, fat-free",132,0
+27450065,15121,173709,"Fish, tuna, light, canned in water, drained solids",276,0
+27450065,11143,169988,"Celery, raw",120,0
+27450065,2047,173468,"Salt, table",1.5,0
+27450065,11945,168561,"Pickle relish, sweet",30.625,0
+27450066,15121,173709,"Fish, tuna, light, canned in water, drained solids",276,0
+27450066,11945,168561,"Pickle relish, sweet",30.625,0
+27450066,11143,169988,"Celery, raw",120,0
+27450066,2047,173468,"Salt, table",1.5,0
+27450066,4114,171019,"Salad dressing, italian dressing, commercial, regular",117.5,0
+27450067,11945,168561,"Pickle relish, sweet",30.625,0
+27450067,2047,173468,"Salt, table",1.5,0
+27450067,4021,171405,"Salad dressing, italian dressing, commercial, reduced fat",120,0
+27450067,11143,169988,"Celery, raw",120,0
+27450067,15121,173709,"Fish, tuna, light, canned in water, drained solids",276,0
+27450068,42193,167700,"Salad Dressing, mayonnaise-like, fat-free",128,0
+27450068,11945,168561,"Pickle relish, sweet",30.625,0
+27450068,11143,169988,"Celery, raw",120,0
+27450068,15121,173709,"Fish, tuna, light, canned in water, drained solids",276,0
+27450068,2047,173468,"Salt, table",1.5,0
+27450070,11143,169988,"Celery, raw",120,0
+27450070,4025,171009,"Salad dressing, mayonnaise, regular",110,0
+27450070,15152,171972,"Crustaceans, shrimp, mixed species, canned",270,0
+27450070,9152,167747,"Lemon juice, raw",31,0
+27450070,2047,173468,"Salt, table",1.5,0
+27450080,4025,171009,"Salad dressing, mayonnaise, regular",110,0
+27450080,2047,173468,"Salt, table",1.5,0
+27450080,15141,171966,"Crustaceans, crab, blue, canned",90.005,0
+27450080,11143,169988,"Celery, raw",120,0
+27450080,15152,171972,"Crustaceans, shrimp, mixed species, canned",90.005,0
+27450080,9152,167747,"Lemon juice, raw",31,0
+27450080,15148,174209,"Crustaceans, lobster, northern, cooked, moist heat",96.672,0
+27450090,2047,173468,"Salt, table",1.5,0
+27450090,1009,173414,"Cheese, cheddar",56.7,0
+27450090,4025,171009,"Salad dressing, mayonnaise, regular",110,0
+27450090,15121,173709,"Fish, tuna, light, canned in water, drained solids",276,0
+27450090,11143,169988,"Celery, raw",120,0
+27450090,11945,168561,"Pickle relish, sweet",30.625,0
+27450100,2047,173468,"Salt, table",1.5,0
+27450100,1129,173424,"Egg, whole, cooked, hard-boiled",50,0
+27450100,11143,169988,"Celery, raw",120,0
+27450100,4025,171009,"Salad dressing, mayonnaise, regular",110,0
+27450100,11945,168561,"Pickle relish, sweet",30.625,0
+27450100,15121,173709,"Fish, tuna, light, canned in water, drained solids",276,0
+27450110,11282,170000,"Onions, raw",11.5,0
+27450110,11205,168409,"Cucumber, with peel, raw",10.4,0
+27450110,15152,171972,"Crustaceans, shrimp, mixed species, canned",67.5,0
+27450110,11124,170393,"Carrots, mature, raw",12.2,0
+27450110,11529,170457,"Tomatoes, red, ripe, raw, year round average",18,0
+27450110,75114000,,"Mixed salad greens, raw",70,0
+27450110,11143,169988,"Celery, raw",12,0
+27450110,1129,173424,"Egg, whole, cooked, hard-boiled",34,0
+27450130,4025,171009,"Salad dressing, mayonnaise, regular",110,0
+27450130,2047,173468,"Salt, table",1.5,0
+27450130,11143,169988,"Celery, raw",120,0
+27450130,15138,174203,"Crustaceans, crab, alaska king, imitation, made from surimi",252,0
+27450130,9152,167747,"Lemon juice, raw",31,0
+27450190,11282,170000,"Onions, raw",11.5,0
+27450190,75114000,,"Mixed salad greens, raw",70,0
+27450190,11205,168409,"Cucumber, with peel, raw",10.4,0
+27450190,11143,169988,"Celery, raw",12,0
+27450190,11124,170393,"Carrots, mature, raw",12.2,0
+27450190,15152,171972,"Crustaceans, shrimp, mixed species, canned",33.75,0
+27450190,15141,171966,"Crustaceans, crab, blue, canned",33.75,0
+27450190,11529,170457,"Tomatoes, red, ripe, raw, year round average",18,0
+27450210,15152,171972,"Crustaceans, shrimp, mixed species, canned",33.75,0
+27450210,11143,169988,"Celery, raw",12,0
+27450210,11205,168409,"Cucumber, with peel, raw",10.4,0
+27450210,75114000,,"Mixed salad greens, raw",70,0
+27450210,11282,170000,"Onions, raw",11.5,0
+27450210,1129,173424,"Egg, whole, cooked, hard-boiled",34,0
+27450210,11529,170457,"Tomatoes, red, ripe, raw, year round average",18,0
+27450210,11124,170393,"Carrots, mature, raw",12.2,0
+27450210,15141,171966,"Crustaceans, crab, blue, canned",33.75,0
+27451010,9195,169096,"Olives, pickled, canned or bottled, green",69.6,155
+27451010,11943,168559,"Pimento, canned",113.4,3776
+27451010,2047,173468,"Salt, table",36,0
+27451010,2054,172238,"Capers, canned",30,0
+27451010,11549,170054,"Tomato products, canned, sauce",453.6,3751
+27451010,11282,170000,"Onions, raw",680.4,3456
+27451010,82104000,,"Olive oil",224,0
+27451010,14411,173647,"Beverages, water, tap, drinking",355.5,0
+27451010,15020,174192,"Fish, croaker, Atlantic, raw",1814.4,2309
+27451010,2048,173469,"Vinegar, cider",30,0
+27451060,15166,174218,"Mollusks, octopus, common, raw",226.8,2905
+27451060,11282,170000,"Onions, raw",110,0
+27451060,82104000,,"Olive oil",42,0
+27451060,11529,170457,"Tomatoes, red, ripe, raw, year round average",123,0
+27451060,2030,170931,"Spices, pepper, black",1,0
+27451060,2048,173469,"Vinegar, cider",15,0
+27451070,11529,170457,"Tomatoes, red, ripe, raw, year round average",226.8,0
+27451070,11282,170000,"Onions, raw",113.4,0
+27451070,2048,173469,"Vinegar, cider",60,0
+27451070,9195,169096,"Olives, pickled, canned or bottled, green",17.4,0
+27451070,2047,173468,"Salt, table",6,0
+27451070,82104000,,"Olive oil",112,0
+27451070,15017,174189,"Fish, cod, Atlantic, canned, solids and liquid",198,0
+27462000,11549,170054,"Tomato products, canned, sauce",64.25,3751
+27462000,11282,170000,"Onions, raw",110,3456
+27462000,82104000,,"Olive oil",42,0
+27462000,11529,170457,"Tomatoes, red, ripe, raw, year round average",123,3751
+27462000,11979,168576,"Peppers, jalapeno, raw",45,3776
+27462000,11333,170427,"Peppers, bell, green, raw",119,3776
+27462000,10099,167856,"Pork, fresh, variety meats and by-products, chitterlings, cooked, simmered",453.6,0
+27462000,14411,173647,"Beverages, water, tap, drinking",118.5,0
+27462000,11215,169230,"Garlic, raw",3,0
+27463000,81102010,,"Margarine, stick",42,0
+27463000,5024,171457,"Chicken, gizzard, all classes, cooked, simmered",317.52,0
+27463000,20081,168894,"Flour, wheat, all-purpose, enriched, bleached",7.813,302
+27463000,2047,173468,"Salt, table",3,0
+27463000,11297,170416,"Parsley, fresh",2.533,0
+27463000,11282,170000,"Onions, raw",80,3456
+27463000,14553,174157,"Beverages, Wine, non-alcoholic",120,0
+27463000,11531,170051,"Tomatoes, red, ripe, canned, packed in tomato juice",190,3751
+28110310,20027,169698,Cornstarch,9.3,0
+28110310,14429,175103,"Beverages, water, tap, municipal",56,0
+28110310,1001,173410,"Butter, stick, salted",15.6,0
+28110310,11179,168399,"Corn, sweet, yellow, frozen, kernels cut off cob, boiled, drained, without salt",31.1,0
+28110310,11367,170440,"Potatoes, boiled, cooked without skin, flesh, without salt",62.2,0
+28110310,2047,173468,"Salt, table",1.6,0
+28110310,11264,169254,"Mushrooms, canned, drained solids",9.3,0
+28110310,23578,174038,"Beef, ground, 75% lean meat / 25% fat, patty, cooked, broiled",62.2,0
+28110310,1129,173424,"Egg, whole, cooked, hard-boiled",9.3,0
+28110310,11283,170001,"Onions, cooked, boiled, drained, without salt",12.4,0
+28110310,11334,170428,"Peppers, sweet, green, cooked, boiled, drained, without salt",9.3,0
+28110310,11313,170017,"Peas, green, frozen, cooked, boiled, drained, without salt",31.1,0
+28110330,19335,169655,"Sugars, granulated",3.8,0
+28110330,1129,173424,"Egg, whole, cooked, hard-boiled",3.3,0
+28110330,2047,173468,"Salt, table",3.3,0
+28110330,18079,174928,"Bread, crumbs, dry, grated, plain",10.3,304
+28110330,14429,175103,"Beverages, water, tap, municipal",31.6,0
+28110330,20081,168894,"Flour, wheat, all-purpose, enriched, bleached",16.3,301
+28110330,1211,172217,"Milk, whole, 3.25% milkfat, without added vitamin A and vitamin D",3.3,2152
+28110330,6008,171538,"Soup, beef broth or bouillon canned, ready-to-serve",75,0
+28110330,11179,168399,"Corn, sweet, yellow, frozen, kernels cut off cob, boiled, drained, without salt",32.6,0
+28110330,16115,174273,"Flour, soy, full-fat",3.3,301
+28110330,31036,169768,"Potatoes, mashed, ready-to-eat",71.7,0
+28110330,23578,174038,"Beef, ground, 75% lean meat / 25% fat, patty, cooked, broiled",65.2,0
+28110330,4615,173584,"Shortening, vegetable, household, composite",3.3,0
+28110380,20121,169737,"Pasta, cooked, enriched, without added salt",30,385
+28110380,11549,170054,"Tomato products, canned, sauce",3,0
+28110380,1151,173432,"Milk, nonfat, fluid, without added vitamin A and vitamin D (fat free or skim)",10,2152
+28110380,18079,174928,"Bread, crumbs, dry, grated, plain",30,301
+28110380,14429,175103,"Beverages, water, tap, municipal",30,0
+28110380,2047,173468,"Salt, table",0.3,0
+28110380,23578,174038,"Beef, ground, 75% lean meat / 25% fat, patty, cooked, broiled",30,770
+28110380,1009,173414,"Cheese, cheddar",8,0
+28110380,4610,172346,"Margarine, regular, 80% fat, composite, stick, with salt",3,0
+28110380,1032,171247,"Cheese, parmesan, grated",5,5
+28110380,6072,171164,"Soup, vegetable with beef broth, canned, condensed",20,0
+28110510,2047,173468,"Salt, table",1.2,0
+28110510,11264,169254,"Mushrooms, canned, drained solids",6.3,0
+28110510,11125,170394,"Carrots, cooked, boiled, drained, without salt",39.9,0
+28110510,6008,171538,"Soup, beef broth or bouillon canned, ready-to-serve",39.9,0
+28110510,20027,169698,Cornstarch,6.3,0
+28110510,11283,170001,"Onions, cooked, boiled, drained, without salt",6.3,3451
+28110510,14553,174157,"Beverages, Wine, non-alcoholic",39.9,0
+28110510,13865,168695,"Beef, round, full cut, separable lean and fat, trimmed to 1/8"" fat, choice, cooked, broiled",85.3,0
+28110510,11403,169264,"Potatoes, french fried, all types, salt added in processing, frozen, home-prepared, oven heated",39.9,0
+28110510,11546,170459,"Tomato products, canned, paste, without salt added (Includes foods for USDA's Food Distribution Program)",1.2,3754
+28110510,4610,172346,"Margarine, regular, 80% fat, composite, stick, with salt",12,0
+28110510,14429,175103,"Beverages, water, tap, municipal",39.9,0
+28110660,16122,174276,"Soy protein isolate",2.1,0
+28110660,81102010,,"Margarine, stick",0.1,0
+28110660,4582,172336,"Oil, canola",0.2,0
+28110660,20121,169737,"Pasta, cooked, enriched, without added salt",28.5,385
+28110660,9153,167748,"Lemon juice from concentrate, canned or bottled",0.1,0
+28110660,14429,175103,"Beverages, water, tap, municipal",25,0
+28110660,11888,170546,"Tomato products, canned, puree, with salt added",0.4,3754
+28110660,11283,170001,"Onions, cooked, boiled, drained, without salt",0.4,3468
+28110660,99997515,,"Mushrooms, cooked, as ingredient",15.8,3788
+28110660,6971,171610,"Sauce, worcestershire",0.4,0
+28110660,20081,168894,"Flour, wheat, all-purpose, enriched, bleached",0.4,301
+28110660,23575,171799,"Beef, ground, 80% lean meat / 20% fat, crumbles, cooked, pan-browned",15.8,770
+28110660,2047,173468,"Salt, table",0.4,0
+28110660,19335,169655,"Sugars, granulated",0.1,0
+28110660,1056,171257,"Cream, sour, full fat",0.4,2151
+28110660,1124,172183,"Eggs, Grade A, Large, egg white",0.4,101
+28110660,18079,174928,"Bread, crumbs, dry, grated, plain",0.4,301
+28110660,20027,169698,Cornstarch,0.4,0
+28110660,2020,171325,"Spices, garlic powder",0.1,0
+28110660,1016,173417,"Cheese, cottage, lowfat, 1% milkfat",20,1
+28141010,19334,168833,"Sugars, brown",4.2,0
+28141010,14429,175103,"Beverages, water, tap, municipal",4.2,0
+28141010,1129,173424,"Egg, whole, cooked, hard-boiled",4.2,0
+28141010,4610,172346,"Margarine, regular, 80% fat, composite, stick, with salt",4.2,0
+28141010,20027,169698,Cornstarch,2.2,0
+28141010,63101310,,"Apple, baked",69.3,0
+28141010,11403,169264,"Potatoes, french fried, all types, salt added in processing, frozen, home-prepared, oven heated",69.3,0
+28141010,24107070,,"Chicken, NS as to part, fried, coated, skin / coating eaten",197.1,0
+28141010,1115,171283,"Whey, sweet, dried",2.2,0
+28141010,11179,168399,"Corn, sweet, yellow, frozen, kernels cut off cob, boiled, drained, without salt",69.3,0
+28141010,20081,168894,"Flour, wheat, all-purpose, enriched, bleached",4.2,301
+28141010,2047,173468,"Salt, table",2.2,0
+28141010,19335,169655,"Sugars, granulated",4.2,0
+28141010,9298,168165,"Raisins, dark, seedless (Includes foods for USDA's Food Distribution Program)",2.2,251
+28141010,8120,173904,"Cereals, oats, regular and quick, not fortified, dry",4.2,301
+28141010,82101000,,"Vegetable oil, NFS",4.2,0
+28340120,6194,174536,"Soup, chicken broth, ready-to-serve",50,0
+28340120,6008,171538,"Soup, beef broth or bouillon canned, ready-to-serve",50,0
+28520000,19335,169655,"Sugars, granulated",4.167,0
+28520000,14411,173647,"Beverages, water, tap, drinking",118.5,0
+28520000,20027,169698,Cornstarch,8,0
+28520000,6075,171560,"Soup, beef broth or bouillon, powder, dry",3.6,0
+28520000,16123,174277,"Soy sauce made from soy and wheat (shoyu)",5.3,0
+31105010,2047,173468,"Salt, table",0.3,0
+31105010,1123,171287,"Eggs, Grade A, Large, egg whole",100,101
+31105040,2047,173468,"Salt, table",0.3,0
+31105040,1001,173410,"Butter, stick, salted",7,0
+31105040,1123,171287,"Eggs, Grade A, Large, egg whole",100,101
+31105080,2047,173468,"Salt, table",0.3,0
+31105080,1123,171287,"Eggs, Grade A, Large, egg whole",100,101
+31105080,4679,171430,"Oil, PAM cooking spray, original",1,0
+31106010,2047,173468,"Salt, table",0.3,0
+31106010,1123,171287,"Eggs, Grade A, Large, egg whole",100,101
+32103000,4025,171009,"Salad dressing, mayonnaise, regular",73.326,0
+32103000,2047,173468,"Salt, table",1.5,0
+32103000,1129,173424,"Egg, whole, cooked, hard-boiled",300,0
+32103015,2047,173468,"Salt, table",1.5,0
+32103015,1129,173424,"Egg, whole, cooked, hard-boiled",300,0
+32103015,4641,173594,"Salad dressing, mayonnaise, light",79.992,0
+32103020,4018,171403,"Salad dressing, mayonnaise type, regular, with salt",78.326,0
+32103020,2047,173468,"Salt, table",1.5,0
+32103020,1129,173424,"Egg, whole, cooked, hard-boiled",300,0
+32103025,2047,173468,"Salt, table",1.5,0
+32103025,1129,173424,"Egg, whole, cooked, hard-boiled",300,0
+32103025,4641,173594,"Salad dressing, mayonnaise, light",79.992,0
+32103030,1129,173424,"Egg, whole, cooked, hard-boiled",300,0
+32103030,2047,173468,"Salt, table",1.5,0
+32103030,4639,173592,"Salad dressing, ranch dressing, regular",79.992,0
+32103035,42116,167684,"Creamy dressing, made with sour cream and/or buttermilk and oil, reduced calorie",81.659,0
+32103035,1129,173424,"Egg, whole, cooked, hard-boiled",300,0
+32103035,2047,173468,"Salt, table",1.5,0
+32103040,1129,173424,"Egg, whole, cooked, hard-boiled",300,0
+32103040,2047,173468,"Salt, table",1.5,0
+32103040,4114,171019,"Salad dressing, italian dressing, commercial, regular",78.326,0
+32103045,4021,171405,"Salad dressing, italian dressing, commercial, reduced fat",79.992,0
+32103045,1129,173424,"Egg, whole, cooked, hard-boiled",300,0
+32103045,2047,173468,"Salt, table",1.5,0
+32103050,1129,173424,"Egg, whole, cooked, hard-boiled",300,0
+32103050,2047,173468,"Salt, table",1.5,0
+32103050,42193,167700,"Salad Dressing, mayonnaise-like, fat-free",85.325,0
+32400070,2047,173468,"Salt, table",0.3,0
+32400070,1001,173410,"Butter, stick, salted",7,0
+32400070,1124,172183,"Eggs, Grade A, Large, egg white",100,101
+32400075,4679,171430,"Oil, PAM cooking spray, original",1,0
+32400075,2047,173468,"Salt, table",0.3,0
+32400075,1124,172183,"Eggs, Grade A, Large, egg white",100,103
+32400080,2047,173468,"Salt, table",0.3,0
+32400080,1124,172183,"Eggs, Grade A, Large, egg white",100,101
+33001050,1226,173462,"Egg substitute, liquid or frozen, fat free",100,101
+33001050,2047,173468,"Salt, table",0.3,0
+41203030,11529,170457,"Tomatoes, red, ripe, raw, year round average",226.8,0
+41203030,16018,175188,"Beans, black turtle, mature seeds, canned",555,0
+41203030,11172,169214,"Corn, sweet, yellow, canned, whole kernel, drained solids",247.5,0
+41203030,11282,170000,"Onions, raw",160,0
+41203030,4114,171019,"Salad dressing, italian dressing, commercial, regular",235,0
+41221000,43449,168128,"Beans, baked, canned, no salt added",100,550
+41221000,2047,173468,"Salt, table",0.7,0
+41421020,18079,174928,"Bread, crumbs, dry, grated, plain",108,305
+41421020,14429,175103,"Beverages, water, tap, municipal",14.813,0
+41421020,4615,173584,"Shortening, vegetable, household, composite",54,0
+41421020,1123,171287,"Eggs, Grade A, Large, egg whole",50,103
+41421020,16127,172449,"Tofu, soft, prepared with calcium sulfate and magnesium chloride (nigari)",907.2,550
+41811950,16147,174287,"Veggie burgers or soyburgers, unprepared",684.4,0
+41811950,11282,170000,"Onions, raw",21.2,3456
+41811950,20081,168894,"Flour, wheat, all-purpose, enriched, bleached",31.2,302
+41811950,14429,175103,"Beverages, water, tap, municipal",237,0
+41811950,4518,171029,"Oil, corn",27.2,0
+41811950,2047,173468,"Salt, table",5.5,0
+41812800,19334,168833,"Sugars, brown",4.583,0
+41812800,2047,173468,"Salt, table",6,0
+41812800,11531,170051,"Tomatoes, red, ripe, canned, packed in tomato juice",255,0
+41812800,11143,169988,"Celery, raw",300,0
+41812800,14411,173647,"Beverages, water, tap, drinking",948,0
+41812800,1001,173410,"Butter, stick, salted",56,0
+41812800,11283,170001,"Onions, cooked, boiled, drained, without salt",60,0
+41812800,11281,169263,"Okra, frozen, cooked, boiled, drained, without salt",640,0
+41812800,2028,171329,"Spices, paprika",0.575,0
+42110050,12155,170187,"Nuts, walnuts, English, halves, raw",7,0
+42110050,12085,170571,"Nuts, cashew nuts, dry roasted, without salt added",30,0
+42110050,12120,170581,"Nuts, hazelnuts or filberts",7,0
+42110050,12152,170185,"Nuts, pistachio nuts, dry roasted, without salt added",7,0
+42110050,12078,170569,"Nuts, brazilnuts, dried, unblanched",7,0
+42110050,12063,170158,"Nuts, almonds, dry roasted, without salt added",30,0
+42110050,12142,170182,"Nuts, pecans, halves, raw",7,0
+42111205,2047,173468,"Salt, table",0.5,0
+42111205,16390,173806,"Peanuts, all types, dry-roasted, without salt",100,0
+51140100,20083,168896,"Flour, bread, white, enriched, unbleached",822,305
+51140100,11100000,,"Milk, NFS",488,2152
+51140100,19335,169655,"Sugars, granulated",25,0
+51140100,4615,173584,"Shortening, vegetable, household, composite",209.5,0
+51140100,18374,175042,"Leavening agents, yeast, baker's, compressed",17,0
+51140100,4615,173584,"Shortening, vegetable, household, composite",38.438,0
+51140100,2047,173468,"Salt, table",6,0
+52207010,20019,169696,"Corn flour, masa, unenriched, white",114,305
+52207010,19335,169655,"Sugars, granulated",25,0
+52207010,4518,171029,"Oil, corn",14,0
+52207010,2047,173468,"Salt, table",6,0
+52207010,14429,175103,"Beverages, water, tap, municipal",237,0
+52207010,20017,169694,"Corn flour, masa, enriched, white",114,305
+52208010,14429,175103,"Beverages, water, tap, municipal",315.921,0
+52208010,2047,173468,"Salt, table",3,0
+52208010,18369,172803,"Leavening agents, baking powder, double-acting, sodium aluminum sulfate",9.2,0
+52208010,20022,168867,"Cornmeal, degermed, enriched, yellow",244,301
+52208010,4615,173584,"Shortening, vegetable, household, composite",17.079,0
+52208020,20022,168867,"Cornmeal, degermed, enriched, yellow",244,301
+52208020,14429,175103,"Beverages, water, tap, municipal",315.921,0
+52208020,18369,172803,"Leavening agents, baking powder, double-acting, sodium aluminum sulfate",9.2,0
+52208020,2047,173468,"Salt, table",3,0
+52208020,4615,173584,"Shortening, vegetable, household, composite",17.079,0
+52208020,4615,173584,"Shortening, vegetable, household, composite",29.5,0
+53200100,20081,168894,"Flour, wheat, all-purpose, enriched, bleached",140.625,0
+53200100,18369,172803,"Leavening agents, baking powder, double-acting, sodium aluminum sulfate",2.3,0
+53200100,19335,169655,"Sugars, granulated",75,0
+53200100,19334,168833,"Sugars, brown",54.375,0
+53200100,1123,171287,"Eggs, Grade A, Large, egg whole",50,0
+53200100,2047,173468,"Salt, table",3,0
+53200100,4610,172346,"Margarine, regular, 80% fat, composite, stick, with salt",112.8,0
+53452120,19335,169655,"Sugars, granulated",300,0
+53452120,1123,171287,"Eggs, Grade A, Large, egg whole",100,101
+53452120,14429,175103,"Beverages, water, tap, municipal",5.925,0
+53452120,20081,168894,"Flour, wheat, all-purpose, enriched, bleached",300,301
+53452120,16081,174257,"Mung beans, mature seeds, cooked, boiled, without salt",187.5,0
+53452120,2047,173468,"Salt, table",1.5,0
+53452120,4044,171411,"Oil, soybean",21,0
+53452130,20081,168894,"Flour, wheat, all-purpose, enriched, bleached",300,301
+53452130,19335,169655,"Sugars, granulated",300,0
+53452130,16081,174257,"Mung beans, mature seeds, cooked, boiled, without salt",187.5,0
+53452130,1125,172184,"Eggs, Grade A, Large, egg yolk",170,101
+53452130,1123,171287,"Eggs, Grade A, Large, egg whole",100,101
+53452130,4044,171411,"Oil, soybean",21,0
+53452130,14429,175103,"Beverages, water, tap, municipal",5.925,0
+53452130,2047,173468,"Salt, table",13.5,0
+53452170,18375,175043,"Leavening agents, yeast, baker's, active dry",7,301
+53452170,2052,172236,"Vanilla extract, imitation, no alcohol",1.083,0
+53452170,19297,169641,"Jams and preserves",92,0
+53452170,20081,168894,"Flour, wheat, all-purpose, enriched, bleached",375,301
+53452170,1125,172184,"Eggs, Grade A, Large, egg yolk",102,101
+53452170,19335,169655,"Sugars, granulated",100,0
+53452170,11100000,,"Milk, NFS",610,2151
+53452170,1001,173410,"Butter, stick, salted",113.4,0
+53452170,9156,167749,"Lemon peel, raw",4,270
+53452170,82101000,,"Vegetable oil, NFS",210.7,0
+58101930,2031,170932,"Spices, pepper, red or cayenne",0.442,0
+58101930,2009,171319,"Spices, chili powder",7.5,0
+58101930,2020,171325,"Spices, garlic powder",0.808,0
+58101930,21500100,,"Beef, ground",307.5,0
+58101930,18364,175037,"Tortillas, ready-to-bake or -fry, flour, refrigerated",568,305
+58101930,16017,175187,"Beans, black turtle, mature seeds, cooked, boiled, without salt",283.5,0
+58101930,82101000,,"Vegetable oil, NFS",57,0
+58101930,11529,170457,"Tomatoes, red, ripe, raw, year round average",270,0
+58101930,9193,169094,"Olives, ripe, canned (small-extra large)",89.604,0
+58101930,11252,169248,"Lettuce, iceberg, raw",539,0
+58101930,9037,171705,"Avocados, raw, all commercial varieties",201,0
+58101930,1009,173414,"Cheese, cheddar",113,0
+58101930,11282,170000,"Onions, raw",80,0
+58101930,2047,173468,"Salt, table",3,0
+58101935,82101000,,"Vegetable oil, NFS",57,0
+58101935,11282,170000,"Onions, raw",80,0
+58101935,9037,171705,"Avocados, raw, all commercial varieties",201,0
+58101935,24102070,,"Chicken, NS as to part, rotisserie, skin not eaten",337.5,0
+58101935,11252,169248,"Lettuce, iceberg, raw",539,0
+58101935,2009,171319,"Spices, chili powder",7.5,0
+58101935,2031,170932,"Spices, pepper, red or cayenne",0.442,0
+58101935,11529,170457,"Tomatoes, red, ripe, raw, year round average",270,0
+58101935,2047,173468,"Salt, table",3,0
+58101935,16017,175187,"Beans, black turtle, mature seeds, cooked, boiled, without salt",283.5,0
+58101935,2020,171325,"Spices, garlic powder",0.808,0
+58101935,1009,173414,"Cheese, cheddar",113,0
+58101935,18364,175037,"Tortillas, ready-to-bake or -fry, flour, refrigerated",568,305
+58101935,9193,169094,"Olives, ripe, canned (small-extra large)",89.604,0
+58101940,9037,171705,"Avocados, raw, all commercial varieties",201,0
+58101940,1009,173414,"Cheese, cheddar",113,0
+58101940,18364,175037,"Tortillas, ready-to-bake or -fry, flour, refrigerated",568,305
+58101940,82101000,,"Vegetable oil, NFS",57,0
+58101940,11282,170000,"Onions, raw",80,0
+58101940,16017,175187,"Beans, black turtle, mature seeds, cooked, boiled, without salt",567,0
+58101940,11252,169248,"Lettuce, iceberg, raw",539,0
+58101940,9193,169094,"Olives, ripe, canned (small-extra large)",89.604,0
+58101940,11529,170457,"Tomatoes, red, ripe, raw, year round average",270,0
+58101940,2047,173468,"Salt, table",3,0
+58101945,11282,170000,"Onions, raw",80,0
+58101945,1056,171257,"Cream, sour, full fat",360,0
+58101945,11252,169248,"Lettuce, iceberg, raw",539,0
+58101945,9037,171705,"Avocados, raw, all commercial varieties",201,0
+58101945,2009,171319,"Spices, chili powder",7.5,0
+58101945,11529,170457,"Tomatoes, red, ripe, raw, year round average",270,0
+58101945,82101000,,"Vegetable oil, NFS",57,0
+58101945,9193,169094,"Olives, ripe, canned (small-extra large)",89.604,0
+58101945,2047,173468,"Salt, table",3,0
+58101945,2031,170932,"Spices, pepper, red or cayenne",0.442,0
+58101945,2020,171325,"Spices, garlic powder",0.808,0
+58101945,16017,175187,"Beans, black turtle, mature seeds, cooked, boiled, without salt",283.5,0
+58101945,21500100,,"Beef, ground",307.5,0
+58101945,18364,175037,"Tortillas, ready-to-bake or -fry, flour, refrigerated",568,305
+58101945,1009,173414,"Cheese, cheddar",113,0
+58101950,16017,175187,"Beans, black turtle, mature seeds, cooked, boiled, without salt",283.5,0
+58101950,18364,175037,"Tortillas, ready-to-bake or -fry, flour, refrigerated",568,305
+58101950,1009,173414,"Cheese, cheddar",113,0
+58101950,24102070,,"Chicken, NS as to part, rotisserie, skin not eaten",337.5,0
+58101950,11282,170000,"Onions, raw",80,0
+58101950,1056,171257,"Cream, sour, full fat",360,0
+58101950,2020,171325,"Spices, garlic powder",0.808,0
+58101950,2047,173468,"Salt, table",3,0
+58101950,9193,169094,"Olives, ripe, canned (small-extra large)",89.604,0
+58101950,11529,170457,"Tomatoes, red, ripe, raw, year round average",270,0
+58101950,11252,169248,"Lettuce, iceberg, raw",539,0
+58101950,9037,171705,"Avocados, raw, all commercial varieties",201,0
+58101950,2009,171319,"Spices, chili powder",7.5,0
+58101950,2031,170932,"Spices, pepper, red or cayenne",0.442,0
+58101950,82101000,,"Vegetable oil, NFS",57,0
+58101955,11529,170457,"Tomatoes, red, ripe, raw, year round average",270,0
+58101955,11252,169248,"Lettuce, iceberg, raw",539,0
+58101955,1009,173414,"Cheese, cheddar",113,0
+58101955,11282,170000,"Onions, raw",80,0
+58101955,2047,173468,"Salt, table",3,0
+58101955,9037,171705,"Avocados, raw, all commercial varieties",201,0
+58101955,82101000,,"Vegetable oil, NFS",57,0
+58101955,16017,175187,"Beans, black turtle, mature seeds, cooked, boiled, without salt",567,0
+58101955,1056,171257,"Cream, sour, full fat",360,0
+58101955,9193,169094,"Olives, ripe, canned (small-extra large)",89.604,0
+58101955,18364,175037,"Tortillas, ready-to-bake or -fry, flour, refrigerated",568,305
+58110200,11215,169230,"Garlic, raw",2.8,0
+58110200,54319500,,"Rice paper",56.8,0
+58110200,2044,172232,"Basil, fresh",0.75,0
+58110200,11124,170393,"Carrots, mature, raw",110,0
+58110200,9160,168156,"Lime juice, raw",15.5,0
+58110200,11165,169997,"Coriander (cilantro) leaves, raw",2,0
+58110200,11291,170005,"Onions, spring or scallions (includes tops and bulb), raw",30,0
+58110200,15151,171971,"Crustaceans, shrimp, mixed species, cooked, moist heat (may contain additives to retain moisture)",44,0
+58110200,2048,173469,"Vinegar, cider",15,0
+58110200,16390,173806,"Peanuts, all types, dry-roasted, without salt",18.25,0
+58110200,11043,169957,"Mung beans, mature seeds, sprouted, raw",104,0
+58110200,19335,169655,"Sugars, granulated",4.2,0
+58110200,6179,174531,"Sauce, fish, ready-to-serve",16.813,0
+58111200,11282,170000,"Onions, raw",3.333,3460
+58111200,11291,170005,"Onions, spring or scallions (includes tops and bulb), raw",18,3785
+58111200,1123,171287,"Eggs, Grade A, Large, egg whole",50,103
+58111200,11215,169230,"Garlic, raw",3,3460
+58111200,1017,173418,"Cream cheese, full fat, block",226.8,3
+58111200,15138,174203,"Crustaceans, crab, alaska king, imitation, made from surimi",226.8,2310
+58111200,6971,171610,"Sauce, worcestershire",2.865,0
+58111200,16123,174277,"Soy sauce made from soy and wheat (shoyu)",2.656,0
+58111200,2047,173468,"Salt, table",6,0
+58111200,20081,168894,"Flour, wheat, all-purpose, enriched, bleached",250,305
+58111200,2047,173468,"Salt, table",3,0
+58111200,82101000,,"Vegetable oil, NFS",18.2,0
+58111200,14429,175103,"Beverages, water, tap, municipal",118.5,0
+58128000,4610,172346,"Margarine, regular, 80% fat, composite, stick, with salt",5,0
+58128000,7064,174578,"Pork sausage, link/patty, cooked, pan-fried",12,1712
+58128000,20481,169761,"Flour, wheat, all-purpose, unenriched, unbleached",2,302
+58128000,1211,172217,"Milk, whole, 3.25% milkfat, without added vitamin A and vitamin D",51,2151
+58128000,21142,170302,"Fast food, biscuit",30,304
+58148110,11282,170000,"Onions, raw",17.5,0
+58148110,2047,173468,"Salt, table",3,0
+58148110,11143,169988,"Celery, raw",40,0
+58148110,9152,167747,"Lemon juice, raw",62,0
+58148110,11945,168561,"Pickle relish, sweet",61.25,0
+58148110,20121,169737,"Pasta, cooked, enriched, without added salt",1120,0
+58148110,4025,171009,"Salad dressing, mayonnaise, regular",220,0
+58148111,20121,169737,"Pasta, cooked, enriched, without added salt",1120,0
+58148111,11282,170000,"Onions, raw",17.5,0
+58148111,11945,168561,"Pickle relish, sweet",61.25,0
+58148111,11143,169988,"Celery, raw",40,0
+58148111,2047,173468,"Salt, table",3,0
+58148111,9152,167747,"Lemon juice, raw",62,0
+58148111,4641,173594,"Salad dressing, mayonnaise, light",240,0
+58148112,9152,167747,"Lemon juice, raw",62,0
+58148112,11945,168561,"Pickle relish, sweet",61.25,0
+58148112,11282,170000,"Onions, raw",17.5,0
+58148112,4018,171403,"Salad dressing, mayonnaise type, regular, with salt",235,0
+58148112,11143,169988,"Celery, raw",40,0
+58148112,2047,173468,"Salt, table",3,0
+58148112,20121,169737,"Pasta, cooked, enriched, without added salt",1120,0
+58148113,11945,168561,"Pickle relish, sweet",61.25,0
+58148113,9152,167747,"Lemon juice, raw",62,0
+58148113,11143,169988,"Celery, raw",40,0
+58148113,2047,173468,"Salt, table",3,0
+58148113,4641,173594,"Salad dressing, mayonnaise, light",240,0
+58148113,20121,169737,"Pasta, cooked, enriched, without added salt",1120,0
+58148113,11282,170000,"Onions, raw",17.5,0
+58148114,20121,169737,"Pasta, cooked, enriched, without added salt",560,0
+58148114,11090,170379,"Broccoli, raw",35.5,0
+58148114,11124,170393,"Carrots, mature, raw",64,0
+58148114,2047,173468,"Salt, table",1.5,0
+58148114,11529,170457,"Tomatoes, red, ripe, raw, year round average",149,0
+58148114,9193,169094,"Olives, ripe, canned (small-extra large)",52.8,0
+58148114,4114,171019,"Salad dressing, italian dressing, commercial, regular",117.5,0
+58148115,11529,170457,"Tomatoes, red, ripe, raw, year round average",149,0
+58148115,9193,169094,"Olives, ripe, canned (small-extra large)",52.8,0
+58148115,20121,169737,"Pasta, cooked, enriched, without added salt",560,0
+58148115,2047,173468,"Salt, table",1.5,0
+58148115,4021,171405,"Salad dressing, italian dressing, commercial, reduced fat",120,0
+58148115,11124,170393,"Carrots, mature, raw",64,0
+58148115,11090,170379,"Broccoli, raw",35.5,0
+58148116,9193,169094,"Olives, ripe, canned (small-extra large)",52.8,0
+58148116,4639,173592,"Salad dressing, ranch dressing, regular",120,0
+58148116,2047,173468,"Salt, table",1.5,0
+58148116,11529,170457,"Tomatoes, red, ripe, raw, year round average",149,0
+58148116,11124,170393,"Carrots, mature, raw",64,0
+58148116,11090,170379,"Broccoli, raw",35.5,0
+58148116,20121,169737,"Pasta, cooked, enriched, without added salt",560,0
+58148117,42116,167684,"Creamy dressing, made with sour cream and/or buttermilk and oil, reduced calorie",122.5,0
+58148117,20121,169737,"Pasta, cooked, enriched, without added salt",560,0
+58148117,11124,170393,"Carrots, mature, raw",64,0
+58148117,9193,169094,"Olives, ripe, canned (small-extra large)",52.8,0
+58148117,11090,170379,"Broccoli, raw",35.5,0
+58148117,11529,170457,"Tomatoes, red, ripe, raw, year round average",149,0
+58148117,2047,173468,"Salt, table",1.5,0
+58148118,2047,173468,"Salt, table",3,0
+58148118,11143,169988,"Celery, raw",40,0
+58148118,11945,168561,"Pickle relish, sweet",61.25,0
+58148118,20121,169737,"Pasta, cooked, enriched, without added salt",1120,0
+58148118,9152,167747,"Lemon juice, raw",62,0
+58148118,42193,167700,"Salad Dressing, mayonnaise-like, fat-free",256,0
+58148118,11282,170000,"Onions, raw",17.5,0
+58148120,11945,168561,"Pickle relish, sweet",61.25,0
+58148120,20121,169737,"Pasta, cooked, enriched, without added salt",1120,0
+58148120,11143,169988,"Celery, raw",40,0
+58148120,11282,170000,"Onions, raw",17.5,0
+58148120,4025,171009,"Salad dressing, mayonnaise, regular",220,0
+58148120,1129,173424,"Egg, whole, cooked, hard-boiled",150,0
+58148120,2047,173468,"Salt, table",3,0
+58148120,9152,167747,"Lemon juice, raw",62,0
+58148130,20121,169737,"Pasta, cooked, enriched, without added salt",1120,0
+58148130,11282,170000,"Onions, raw",17.5,0
+58148130,9152,167747,"Lemon juice, raw",62,0
+58148130,11143,169988,"Celery, raw",40,0
+58148130,4025,171009,"Salad dressing, mayonnaise, regular",220,0
+58148130,2047,173468,"Salt, table",3,0
+58148130,11945,168561,"Pickle relish, sweet",61.25,0
+58148130,15121,173709,"Fish, tuna, light, canned in water, drained solids",276,0
+58148140,4025,171009,"Salad dressing, mayonnaise, regular",220,0
+58148140,11945,168561,"Pickle relish, sweet",61.25,0
+58148140,11282,170000,"Onions, raw",17.5,0
+58148140,15140,174205,"Crustaceans, crab, blue, cooked, moist heat",270,0
+58148140,20121,169737,"Pasta, cooked, enriched, without added salt",1120,0
+58148140,9152,167747,"Lemon juice, raw",62,0
+58148140,2047,173468,"Salt, table",3,0
+58148140,11143,169988,"Celery, raw",40,0
+58148150,20121,169737,"Pasta, cooked, enriched, without added salt",1120,0
+58148150,9152,167747,"Lemon juice, raw",62,0
+58148150,15152,171972,"Crustaceans, shrimp, mixed species, canned",270,0
+58148150,2047,173468,"Salt, table",3,0
+58148150,11945,168561,"Pickle relish, sweet",61.25,0
+58148150,4025,171009,"Salad dressing, mayonnaise, regular",220,0
+58148150,11143,169988,"Celery, raw",40,0
+58148150,11282,170000,"Onions, raw",17.5,0
+58148160,1129,173424,"Egg, whole, cooked, hard-boiled",150,0
+58148160,20121,169737,"Pasta, cooked, enriched, without added salt",1120,0
+58148160,11143,169988,"Celery, raw",40,0
+58148160,9152,167747,"Lemon juice, raw",62,0
+58148160,11945,168561,"Pickle relish, sweet",61.25,0
+58148160,4025,171009,"Salad dressing, mayonnaise, regular",220,0
+58148160,2047,173468,"Salt, table",3,0
+58148160,11282,170000,"Onions, raw",17.5,0
+58148160,15121,173709,"Fish, tuna, light, canned in water, drained solids",276,0
+58148170,11143,169988,"Celery, raw",40,0
+58148170,11282,170000,"Onions, raw",17.5,0
+58148170,11945,168561,"Pickle relish, sweet",61.25,0
+58148170,24102070,,"Chicken, NS as to part, rotisserie, skin not eaten",270,0
+58148170,4025,171009,"Salad dressing, mayonnaise, regular",220,0
+58148170,9152,167747,"Lemon juice, raw",62,0
+58148170,2047,173468,"Salt, table",3,0
+58148170,20121,169737,"Pasta, cooked, enriched, without added salt",1120,0
+58148180,11143,169988,"Celery, raw",40,0
+58148180,1009,173414,"Cheese, cheddar",226,0
+58148180,2047,173468,"Salt, table",3,0
+58148180,11282,170000,"Onions, raw",17.5,0
+58148180,4025,171009,"Salad dressing, mayonnaise, regular",220,0
+58148180,9152,167747,"Lemon juice, raw",62,0
+58148180,20121,169737,"Pasta, cooked, enriched, without added salt",1120,0
+58148180,11945,168561,"Pickle relish, sweet",61.25,0
+58148550,11282,170000,"Onions, raw",17.5,0
+58148550,2047,173468,"Salt, table",3,0
+58148550,11143,169988,"Celery, raw",40,0
+58148550,4025,171009,"Salad dressing, mayonnaise, regular",220,0
+58148550,10153,168284,"Pork, cured, ham, whole, separable lean only, roasted",280,0
+58148550,11945,168561,"Pickle relish, sweet",61.25,0
+58148550,20121,169737,"Pasta, cooked, enriched, without added salt",1120,0
+58148550,9152,167747,"Lemon juice, raw",62,0
+58150330,36602,167668,"Restaurant, Chinese, fried rice, without meat",85,0
+58150330,10027,168233,"Pork, fresh, loin, whole, separable lean only, cooked, roasted",15,0
+58150340,13893,169531,"Beef, round, top round steak, separable lean and fat, trimmed to 1/8"" fat, all grades, cooked, broiled",15,0
+58150340,36602,167668,"Restaurant, Chinese, fried rice, without meat",85,0
+58150510,36602,167668,"Restaurant, Chinese, fried rice, without meat",85,0
+58150510,15151,171971,"Crustaceans, shrimp, mixed species, cooked, moist heat (may contain additives to retain moisture)",15,0
+58155510,11282,170000,"Onions, raw",70,3456
+58155510,20045,168878,"Rice, white, long-grain, regular, enriched, cooked",584.6,0
+58155510,9195,169096,"Olives, pickled, canned or bottled, green",13.2,0
+58155510,2047,173468,"Salt, table",12,0
+58155510,11333,170427,"Peppers, bell, green, raw",119,3776
+58155510,10141,168282,"Pork, cured, ham, center slice, country-style, separable lean only, raw",42,1522
+58155510,4002,171401,Lard,24,0
+58155510,5361,171127,"Chicken, broiler, rotisserie, BBQ, thigh, meat and skin",561,864
+58155510,14411,173647,"Beverages, water, tap, drinking",782.1,0
+58155510,11352,170026,"Potatoes, flesh and skin, raw",852,3309
+58155510,11529,170457,"Tomatoes, red, ripe, raw, year round average",91,3751
+58156710,82101000,,"Vegetable oil, NFS",3,0
+58156710,16050,175203,"Beans, white, mature seeds, cooked, boiled, without salt",20,0
+58156710,20045,168878,"Rice, white, long-grain, regular, enriched, cooked",64.4,0
+58156710,2047,173468,"Salt, table",1.2,0
+58156710,14411,173647,"Beverages, water, tap, drinking",12,0
+58164210,20045,168878,"Rice, white, long-grain, regular, enriched, cooked",316,0
+58164210,9266,169124,"Pineapple, raw",540,0
+58164210,19336,169656,"Sugars, powdered",30,0
+58164210,19116,167995,"Candies, marshmallows",40,0
+58164210,9328,167766,"Maraschino cherries, canned, drained",25.8,0
+58164210,1053,170859,"Cream, heavy",238,0
+58164540,6119,171566,"Gravy, chicken, canned or bottled, ready-to-serve",79.92,0
+58164540,2047,173468,"Salt, table",1.002,0
+58164540,20045,168878,"Rice, white, long-grain, regular, enriched, cooked",158,0
+58164840,6119,171566,"Gravy, chicken, canned or bottled, ready-to-serve",79.92,0
+58164840,20037,169704,"Rice, brown, long-grain, cooked (Includes foods for USDA's Food Distribution Program)",195,0
+58164840,2047,173468,"Salt, table",1.002,0
+58165030,2047,173468,"Salt, table",1.002,0
+58165030,11584,170472,"Vegetables, mixed, frozen, cooked, boiled, drained, without salt",60.697,0
+58165030,82101000,,"Vegetable oil, NFS",4.667,0
+58165030,6119,171566,"Gravy, chicken, canned or bottled, ready-to-serve",79.92,0
+58165030,20045,168878,"Rice, white, long-grain, regular, enriched, cooked",158,0
+58165040,6119,171566,"Gravy, chicken, canned or bottled, ready-to-serve",79.92,0
+58165040,20045,168878,"Rice, white, long-grain, regular, enriched, cooked",158,0
+58165040,11584,170472,"Vegetables, mixed, frozen, cooked, boiled, drained, without salt",60.697,0
+58165040,2047,173468,"Salt, table",1.002,0
+58165050,82101000,,"Vegetable oil, NFS",4.667,0
+58165050,6119,171566,"Gravy, chicken, canned or bottled, ready-to-serve",79.92,0
+58165050,20045,168878,"Rice, white, long-grain, regular, enriched, cooked",158,0
+58165050,11584,170472,"Vegetables, mixed, frozen, cooked, boiled, drained, without salt",60.697,0
+58165050,2047,173468,"Salt, table",1.002,0
+58165430,20037,169704,"Rice, brown, long-grain, cooked (Includes foods for USDA's Food Distribution Program)",195,0
+58165430,2047,173468,"Salt, table",1.002,0
+58165430,82101000,,"Vegetable oil, NFS",4.667,0
+58165430,6119,171566,"Gravy, chicken, canned or bottled, ready-to-serve",79.92,0
+58165430,11584,170472,"Vegetables, mixed, frozen, cooked, boiled, drained, without salt",60.697,0
+58165440,11584,170472,"Vegetables, mixed, frozen, cooked, boiled, drained, without salt",60.697,0
+58165440,20037,169704,"Rice, brown, long-grain, cooked (Includes foods for USDA's Food Distribution Program)",195,0
+58165440,6119,171566,"Gravy, chicken, canned or bottled, ready-to-serve",79.92,0
+58165440,2047,173468,"Salt, table",1.002,0
+58165450,20037,169704,"Rice, brown, long-grain, cooked (Includes foods for USDA's Food Distribution Program)",195,0
+58165450,11584,170472,"Vegetables, mixed, frozen, cooked, boiled, drained, without salt",60.697,0
+58165450,2047,173468,"Salt, table",1.002,0
+58165450,82101000,,"Vegetable oil, NFS",4.667,0
+58165450,6119,171566,"Gravy, chicken, canned or bottled, ready-to-serve",79.92,0
+58407030,6583,171177,"Soup, ramen noodle, any flavor, dry",15,0
+58407030,14411,173647,"Beverages, water, tap, drinking",85,0
+59003000,20080,168893,"Flour, whole wheat, unenriched",80,305
+59003000,16123,174277,"Soy sauce made from soy and wheat (shoyu)",5,0
+59003000,82101000,,"Vegetable oil, NFS",5,0
+59003000,11663,170090,"Seaweed, agar, dried",5,3015
+59003000,14429,175103,"Beverages, water, tap, municipal",5,0
+61119010,9202,169917,"Oranges, raw, navels",50,0
+61119010,9200,169097,"Oranges, raw, all commercial varieties",50,0
+63101000,9502,168203,"Apples, granny smith, with skin, raw",20,0
+63101000,9503,168204,"Apples, gala, with skin, raw",20,0
+63101000,9504,167793,"Apples, fuji, with skin, raw",20,0
+63101000,9500,168201,"Apples, red delicious, with skin, raw",20,0
+63101000,9501,168202,"Apples, honeycrisp, with skin, raw",20,0
+63101310,19334,168833,"Sugars, brown",7,0
+63101310,9003,171688,"Apples, raw, with skin (Includes foods for USDA's Food Distribution Program)",90,151
+63101310,1145,173430,"Butter, stick, unsalted",3,0
+63107410,1145,173430,"Butter, stick, unsalted",3,0
+63107410,9040,173944,"Bananas, ripe and slightly ripe, raw",90,151
+63107410,19334,168833,"Sugars, brown",7,0
+63137010,9412,167776,"Pears, raw, bartlett",40,0
+63137010,9252,169118,"Pears, raw",60,0
+63311000,9040,173944,"Bananas, ripe and slightly ripe, raw",75,0
+63311000,9326,167765,"Watermelon, raw",38,0
+63311000,9003,171688,"Apples, raw, with skin (Includes foods for USDA's Food Distribution Program)",62.5,0
+63311000,9181,169092,"Melons, cantaloupe, raw",39,0
+63311000,9316,167762,"Strawberries, raw",76,0
+63311000,63123000,,"Grapes, raw",46,0
+63311050,9326,167765,"Watermelon, raw",38,0
+63311050,9200,169097,"Oranges, raw, all commercial varieties",90,0
+63311050,9003,171688,"Apples, raw, with skin (Includes foods for USDA's Food Distribution Program)",62.5,0
+63311050,9316,167762,"Strawberries, raw",76,0
+63311050,9040,173944,"Bananas, ripe and slightly ripe, raw",75,0
+63311050,9181,169092,"Melons, cantaloupe, raw",39,0
+63311050,63123000,,"Grapes, raw",46,0
+63401010,11143,169988,"Celery, raw",30,0
+63401010,4025,171009,"Salad dressing, mayonnaise, regular",55,0
+63401010,63123000,,"Grapes, raw",75.5,0
+63401010,12155,170187,"Nuts, walnuts, English, halves, raw",30,0
+63401010,9003,171688,"Apples, raw, with skin (Includes foods for USDA's Food Distribution Program)",250,0
+63402950,12155,170187,"Nuts, walnuts, English, halves, raw",30,0
+63402950,4025,171009,"Salad dressing, mayonnaise, regular",73.326,0
+63402950,9003,171688,"Apples, raw, with skin (Includes foods for USDA's Food Distribution Program)",62.5,0
+63402950,9040,173944,"Bananas, ripe and slightly ripe, raw",75,0
+63402950,9266,169124,"Pineapple, raw",82.5,0
+63402950,63123000,,"Grapes, raw",46,0
+63402960,9003,171688,"Apples, raw, with skin (Includes foods for USDA's Food Distribution Program)",62.5,0
+63402960,9040,173944,"Bananas, ripe and slightly ripe, raw",75,0
+63402960,9266,169124,"Pineapple, raw",82.5,0
+63402960,1053,170859,"Cream, heavy",39.829,0
+63402960,63123000,,"Grapes, raw",46,0
+63402960,12155,170187,"Nuts, walnuts, English, halves, raw",30,0
+63402970,9040,173944,"Bananas, ripe and slightly ripe, raw",75,0
+63402970,9266,169124,"Pineapple, raw",82.5,0
+63402970,9003,171688,"Apples, raw, with skin (Includes foods for USDA's Food Distribution Program)",62.5,0
+63402970,63123000,,"Grapes, raw",46,0
+63402970,12155,170187,"Nuts, walnuts, English, halves, raw",30,0
+63402970,1073,170868,"Dessert topping, semi solid, frozen",24.998,0
+63402980,4025,171009,"Salad dressing, mayonnaise, regular",73.326,0
+63402980,9040,173944,"Bananas, ripe and slightly ripe, raw",75,0
+63402980,9266,169124,"Pineapple, raw",82.5,0
+63402980,12155,170187,"Nuts, walnuts, English, halves, raw",30,0
+63402980,63123000,,"Grapes, raw",46,0
+63402980,19116,167995,"Candies, marshmallows",23,0
+63402980,9003,171688,"Apples, raw, with skin (Includes foods for USDA's Food Distribution Program)",62.5,0
+63402990,63123000,,"Grapes, raw",46,0
+63402990,9200,169097,"Oranges, raw, all commercial varieties",90,0
+63402990,9003,171688,"Apples, raw, with skin (Includes foods for USDA's Food Distribution Program)",62.5,0
+63402990,19201,169608,"Puddings, vanilla, ready-to-eat",86.658,0
+63402990,9040,173944,"Bananas, ripe and slightly ripe, raw",75,0
+63402990,12155,170187,"Nuts, walnuts, English, halves, raw",30,0
+63403000,63123000,,"Grapes, raw",46,0
+63403000,19201,169608,"Puddings, vanilla, ready-to-eat",86.658,0
+63403000,9266,169124,"Pineapple, raw",82.5,0
+63403000,9003,171688,"Apples, raw, with skin (Includes foods for USDA's Food Distribution Program)",62.5,0
+63403000,12155,170187,"Nuts, walnuts, English, halves, raw",30,0
+63403000,9040,173944,"Bananas, ripe and slightly ripe, raw",75,0
+63403010,9003,171688,"Apples, raw, with skin (Includes foods for USDA's Food Distribution Program)",62.5,0
+63403010,63123000,,"Grapes, raw",46,0
+63403010,12155,170187,"Nuts, walnuts, English, halves, raw",30,0
+63403010,9200,169097,"Oranges, raw, all commercial varieties",90,0
+63403010,4025,171009,"Salad dressing, mayonnaise, regular",73.326,0
+63403010,9040,173944,"Bananas, ripe and slightly ripe, raw",75,0
+63403020,9200,169097,"Oranges, raw, all commercial varieties",90,0
+63403020,1053,170859,"Cream, heavy",39.829,0
+63403020,9003,171688,"Apples, raw, with skin (Includes foods for USDA's Food Distribution Program)",62.5,0
+63403020,63123000,,"Grapes, raw",46,0
+63403020,9040,173944,"Bananas, ripe and slightly ripe, raw",75,0
+63403020,12155,170187,"Nuts, walnuts, English, halves, raw",30,0
+63403030,12155,170187,"Nuts, walnuts, English, halves, raw",30,0
+63403030,1073,170868,"Dessert topping, semi solid, frozen",24.998,0
+63403030,9040,173944,"Bananas, ripe and slightly ripe, raw",75,0
+63403030,9200,169097,"Oranges, raw, all commercial varieties",90,0
+63403030,63123000,,"Grapes, raw",46,0
+63403030,9003,171688,"Apples, raw, with skin (Includes foods for USDA's Food Distribution Program)",62.5,0
+63403040,12155,170187,"Nuts, walnuts, English, halves, raw",30,0
+63403040,63123000,,"Grapes, raw",46,0
+63403040,9200,169097,"Oranges, raw, all commercial varieties",90,0
+63403040,4025,171009,"Salad dressing, mayonnaise, regular",73.326,0
+63403040,19116,167995,"Candies, marshmallows",23,0
+63403040,9040,173944,"Bananas, ripe and slightly ripe, raw",75,0
+63403040,9003,171688,"Apples, raw, with skin (Includes foods for USDA's Food Distribution Program)",62.5,0
+63413010,4025,171009,"Salad dressing, mayonnaise, regular",13.75,0
+63413010,9266,169124,"Pineapple, raw",165,0
+63413010,11252,169248,"Lettuce, iceberg, raw",5,0
+63415100,9219,169106,"Tangerines, (mandarin oranges), canned, juice pack",20,0
+63415100,9181,169092,"Melons, cantaloupe, raw",20,0
+63415100,9326,167765,"Watermelon, raw",20,0
+63415100,14411,173647,"Beverages, water, tap, drinking",20,0
+63415100,63200100,,"Berries, NFS",20,0
+71101000,2047,173468,"Salt, table",1.3,0
+71101000,11363,170033,"Potatoes, baked, flesh, without salt",285,0
+71103010,2047,173468,"Salt, table",0.4,0
+71103010,11363,170033,"Potatoes, baked, flesh, without salt",100,0
+71103040,2047,173468,"Salt, table",0.4,0
+71103040,1001,173410,"Butter, stick, salted",5,0
+71103040,11363,170033,"Potatoes, baked, flesh, without salt",100,0
+71103125,2047,173468,"Salt, table",0.4,0
+71103125,11674,170093,"Potatoes, baked, flesh and skin, without salt",100,0
+71103140,1001,173410,"Butter, stick, salted",5,0
+71103140,11674,170093,"Potatoes, baked, flesh and skin, without salt",100,0
+71103140,2047,173468,"Salt, table",0.4,0
+71104050,11674,170093,"Potatoes, baked, flesh and skin, without salt",100,0
+71104050,2047,173468,"Salt, table",0.4,0
+71104080,1001,173410,"Butter, stick, salted",5,0
+71104080,2047,173468,"Salt, table",0.4,0
+71104080,11674,170093,"Potatoes, baked, flesh and skin, without salt",100,0
+71104120,11363,170033,"Potatoes, baked, flesh, without salt",100,0
+71104120,2047,173468,"Salt, table",0.4,0
+71104140,1001,173410,"Butter, stick, salted",5,0
+71104140,2047,173468,"Salt, table",0.4,0
+71104140,11363,170033,"Potatoes, baked, flesh, without salt",100,0
+71106010,2047,173468,"Salt, table",0.96,0
+71106010,11367,170440,"Potatoes, boiled, cooked without skin, flesh, without salt",156,0
+71106020,11367,170440,"Potatoes, boiled, cooked without skin, flesh, without salt",156,0
+71106020,6116,171564,"Gravy, beef, canned, ready-to-serve",90,0
+71106050,6116,171564,"Gravy, beef, canned, ready-to-serve",90,0
+71106050,11367,170440,"Potatoes, boiled, cooked without skin, flesh, without salt",156,0
+71200410,42283,169046,"Snacks, potato chips, white, restructured, baked",100,0
+71200410,2047,173468,"Salt, table",0.5,0
+71501006,21139,170699,"Fast foods, potato, mashed",100,0
+71501006,6119,171566,"Gravy, chicken, canned or bottled, ready-to-serve",25,0
+71501075,6119,171566,"Gravy, chicken, canned or bottled, ready-to-serve",25,0
+71501075,31036,169768,"Potatoes, mashed, ready-to-eat",100,0
+71507005,2047,173468,"Salt, table",1.3,0
+71507005,11363,170033,"Potatoes, baked, flesh, without salt",285,0
+71507005,1001,173410,"Butter, stick, salted",15,0
+71507010,1056,171257,"Cream, sour, full fat",30,0
+71507010,11363,170033,"Potatoes, baked, flesh, without salt",285,0
+71507010,2047,173468,"Salt, table",1.3,0
+71507010,1001,173410,"Butter, stick, salted",15,0
+71507020,1001,173410,"Butter, stick, salted",15,0
+71507020,2047,173468,"Salt, table",1.3,0
+71507020,11363,170033,"Potatoes, baked, flesh, without salt",285,0
+71507020,1009,173414,"Cheese, cheddar",28,0
+71507020,1056,171257,"Cream, sour, full fat",30,0
+71507025,1056,171257,"Cream, sour, full fat",30,0
+71507025,2047,173468,"Salt, table",1.3,0
+71507025,11363,170033,"Potatoes, baked, flesh, without salt",285,0
+71507025,1009,173414,"Cheese, cheddar",28,0
+71507025,10862,168322,"Pork, cured, bacon, pre-sliced, cooked, pan-fried",8,0
+71507025,1001,173410,"Butter, stick, salted",15,0
+71507030,1001,173410,"Butter, stick, salted",15,0
+71507030,2047,173468,"Salt, table",1.3,0
+71507030,27111407,,"Chili with meat, canned",60,0
+71507030,11363,170033,"Potatoes, baked, flesh, without salt",285,0
+71507030,1009,173414,"Cheese, cheddar",28,0
+71507035,11093,169969,"Broccoli, frozen, chopped, cooked, boiled, drained, without salt",20,0
+71507035,2047,173468,"Salt, table",1.3,0
+71507035,1001,173410,"Butter, stick, salted",15,0
+71507035,1009,173414,"Cheese, cheddar",28,0
+71507035,11363,170033,"Potatoes, baked, flesh, without salt",285,0
+71508001,2047,173468,"Salt, table",1.3,0
+71508001,11674,170093,"Potatoes, baked, flesh and skin, without salt",285,0
+71508005,2047,173468,"Salt, table",1.3,0
+71508005,11674,170093,"Potatoes, baked, flesh and skin, without salt",285,0
+71508005,1001,173410,"Butter, stick, salted",15,0
+71508010,11674,170093,"Potatoes, baked, flesh and skin, without salt",285,0
+71508010,1001,173410,"Butter, stick, salted",15,0
+71508010,1056,171257,"Cream, sour, full fat",30,0
+71508010,2047,173468,"Salt, table",1.3,0
+71508020,1056,171257,"Cream, sour, full fat",30,0
+71508020,1001,173410,"Butter, stick, salted",15,0
+71508020,1009,173414,"Cheese, cheddar",28,0
+71508020,2047,173468,"Salt, table",1.3,0
+71508020,11674,170093,"Potatoes, baked, flesh and skin, without salt",285,0
+71508025,1009,173414,"Cheese, cheddar",28,0
+71508025,11674,170093,"Potatoes, baked, flesh and skin, without salt",285,0
+71508025,1001,173410,"Butter, stick, salted",15,0
+71508025,1056,171257,"Cream, sour, full fat",30,0
+71508025,2047,173468,"Salt, table",1.3,0
+71508025,10862,168322,"Pork, cured, bacon, pre-sliced, cooked, pan-fried",8,0
+71508030,27111407,,"Chili with meat, canned",60,0
+71508030,2047,173468,"Salt, table",1.3,0
+71508030,11674,170093,"Potatoes, baked, flesh and skin, without salt",285,0
+71508030,1001,173410,"Butter, stick, salted",15,0
+71508030,1009,173414,"Cheese, cheddar",28,0
+71508035,2047,173468,"Salt, table",1.3,0
+71508035,1001,173410,"Butter, stick, salted",15,0
+71508035,11674,170093,"Potatoes, baked, flesh and skin, without salt",285,0
+71508035,11093,169969,"Broccoli, frozen, chopped, cooked, boiled, drained, without salt",20,0
+71508035,1009,173414,"Cheese, cheddar",28,0
+71600950,4025,171009,"Salad dressing, mayonnaise, regular",165,0
+71600950,1129,173424,"Egg, whole, cooked, hard-boiled",150,0
+71600950,2053,172237,"Vinegar, distilled",30,0
+71600950,11282,170000,"Onions, raw",20,0
+71600950,11363,170033,"Potatoes, baked, flesh, without salt",835,0
+71600950,11143,169988,"Celery, raw",4,0
+71600950,2046,172234,"Mustard, prepared, yellow",15.625,0
+71600950,2047,173468,"Salt, table",6.6,0
+71600950,11945,168561,"Pickle relish, sweet",15.313,0
+71601015,2047,173468,"Salt, table",1.5,0
+71601015,11367,170440,"Potatoes, boiled, cooked without skin, flesh, without salt",835,0
+71601015,4641,173594,"Salad dressing, mayonnaise, light",180,0
+71601015,11143,169988,"Celery, raw",40,0
+71601015,2053,172237,"Vinegar, distilled",30,0
+71601015,1129,173424,"Egg, whole, cooked, hard-boiled",150,0
+71601015,2046,172234,"Mustard, prepared, yellow",15.625,0
+71601015,11282,170000,"Onions, raw",20,0
+71601015,11945,168561,"Pickle relish, sweet",15.313,0
+71601020,4018,171403,"Salad dressing, mayonnaise type, regular, with salt",176.25,0
+71601020,11143,169988,"Celery, raw",40,0
+71601020,1129,173424,"Egg, whole, cooked, hard-boiled",150,0
+71601020,11282,170000,"Onions, raw",20,0
+71601020,11367,170440,"Potatoes, boiled, cooked without skin, flesh, without salt",835,0
+71601020,2053,172237,"Vinegar, distilled",30,0
+71601020,2047,173468,"Salt, table",1.5,0
+71601020,2046,172234,"Mustard, prepared, yellow",15.625,0
+71601020,11945,168561,"Pickle relish, sweet",15.313,0
+71601025,11282,170000,"Onions, raw",20,0
+71601025,1129,173424,"Egg, whole, cooked, hard-boiled",150,0
+71601025,11945,168561,"Pickle relish, sweet",15.313,0
+71601025,11143,169988,"Celery, raw",40,0
+71601025,2047,173468,"Salt, table",1.5,0
+71601025,11367,170440,"Potatoes, boiled, cooked without skin, flesh, without salt",835,0
+71601025,4641,173594,"Salad dressing, mayonnaise, light",180,0
+71601025,2053,172237,"Vinegar, distilled",30,0
+71601025,2046,172234,"Mustard, prepared, yellow",15.625,0
+71601030,1129,173424,"Egg, whole, cooked, hard-boiled",150,0
+71601030,11282,170000,"Onions, raw",20,0
+71601030,4639,173592,"Salad dressing, ranch dressing, regular",180,0
+71601030,11367,170440,"Potatoes, boiled, cooked without skin, flesh, without salt",835,0
+71601030,2047,173468,"Salt, table",1.5,0
+71601030,11143,169988,"Celery, raw",40,0
+71601035,42116,167684,"Creamy dressing, made with sour cream and/or buttermilk and oil, reduced calorie",183.75,0
+71601035,11282,170000,"Onions, raw",20,0
+71601035,2047,173468,"Salt, table",1.5,0
+71601035,11367,170440,"Potatoes, boiled, cooked without skin, flesh, without salt",835,0
+71601035,1129,173424,"Egg, whole, cooked, hard-boiled",150,0
+71601035,11143,169988,"Celery, raw",40,0
+71601040,2047,173468,"Salt, table",1.5,0
+71601040,1129,173424,"Egg, whole, cooked, hard-boiled",150,0
+71601040,11282,170000,"Onions, raw",20,0
+71601040,4114,171019,"Salad dressing, italian dressing, commercial, regular",176.25,0
+71601040,11367,170440,"Potatoes, boiled, cooked without skin, flesh, without salt",835,0
+71601040,11143,169988,"Celery, raw",40,0
+71601045,1129,173424,"Egg, whole, cooked, hard-boiled",150,0
+71601045,4021,171405,"Salad dressing, italian dressing, commercial, reduced fat",180,0
+71601045,11143,169988,"Celery, raw",40,0
+71601045,11367,170440,"Potatoes, boiled, cooked without skin, flesh, without salt",835,0
+71601045,11282,170000,"Onions, raw",20,0
+71601045,2047,173468,"Salt, table",1.5,0
+71601050,11367,170440,"Potatoes, boiled, cooked without skin, flesh, without salt",835,0
+71601050,2046,172234,"Mustard, prepared, yellow",15.625,0
+71601050,42193,167700,"Salad Dressing, mayonnaise-like, fat-free",192,0
+71601050,1129,173424,"Egg, whole, cooked, hard-boiled",150,0
+71601050,11282,170000,"Onions, raw",20,0
+71601050,11945,168561,"Pickle relish, sweet",15.313,0
+71601050,11143,169988,"Celery, raw",40,0
+71601050,2047,173468,"Salt, table",1.5,0
+71601050,2053,172237,"Vinegar, distilled",30,0
+71602010,2028,171329,"Spices, paprika",0.288,0
+71602010,19335,169655,"Sugars, granulated",2.083,0
+71602010,11143,169988,"Celery, raw",30,3785
+71602010,10862,168322,"Pork, cured, bacon, pre-sliced, cooked, pan-fried",32,0
+71602010,11282,170000,"Onions, raw",80,3460
+71602010,2047,173468,"Salt, table",3,0
+71602010,4609,172345,"Animal fat, bacon grease",25.8,0
+71602010,11674,170093,"Potatoes, baked, flesh and skin, without salt",907.2,0
+71602010,2048,173469,"Vinegar, cider",75,0
+71602010,11937,168558,"Pickles, cucumber, dill or kosher dill",35.75,3788
+71602950,2046,172234,"Mustard, prepared, yellow",15.625,0
+71602950,11143,169988,"Celery, raw",4,0
+71602950,11363,170033,"Potatoes, baked, flesh, without salt",835,0
+71602950,11945,168561,"Pickle relish, sweet",15.313,0
+71602950,4025,171009,"Salad dressing, mayonnaise, regular",165,0
+71602950,11282,170000,"Onions, raw",20,0
+71602950,2053,172237,"Vinegar, distilled",30,0
+71602950,2047,173468,"Salt, table",6.6,0
+71603010,11282,170000,"Onions, raw",20,0
+71603010,11367,170440,"Potatoes, boiled, cooked without skin, flesh, without salt",835,0
+71603010,4025,171009,"Salad dressing, mayonnaise, regular",165,0
+71603010,2047,173468,"Salt, table",1.5,0
+71603010,11945,168561,"Pickle relish, sweet",15.313,0
+71603010,11143,169988,"Celery, raw",40,0
+71603010,2053,172237,"Vinegar, distilled",30,0
+71603010,2046,172234,"Mustard, prepared, yellow",15.625,0
+71603015,11945,168561,"Pickle relish, sweet",15.313,0
+71603015,2046,172234,"Mustard, prepared, yellow",15.625,0
+71603015,11367,170440,"Potatoes, boiled, cooked without skin, flesh, without salt",835,0
+71603015,2053,172237,"Vinegar, distilled",30,0
+71603015,2047,173468,"Salt, table",1.5,0
+71603015,11143,169988,"Celery, raw",40,0
+71603015,4641,173594,"Salad dressing, mayonnaise, light",180,0
+71603015,11282,170000,"Onions, raw",20,0
+71603020,2046,172234,"Mustard, prepared, yellow",15.625,0
+71603020,4018,171403,"Salad dressing, mayonnaise type, regular, with salt",176.25,0
+71603020,11143,169988,"Celery, raw",40,0
+71603020,11945,168561,"Pickle relish, sweet",15.313,0
+71603020,2047,173468,"Salt, table",1.5,0
+71603020,11367,170440,"Potatoes, boiled, cooked without skin, flesh, without salt",835,0
+71603020,11282,170000,"Onions, raw",20,0
+71603020,2053,172237,"Vinegar, distilled",30,0
+71603025,11282,170000,"Onions, raw",20,0
+71603025,4641,173594,"Salad dressing, mayonnaise, light",180,0
+71603025,2046,172234,"Mustard, prepared, yellow",15.625,0
+71603025,11367,170440,"Potatoes, boiled, cooked without skin, flesh, without salt",835,0
+71603025,2053,172237,"Vinegar, distilled",30,0
+71603025,2047,173468,"Salt, table",1.5,0
+71603025,11945,168561,"Pickle relish, sweet",15.313,0
+71603025,11143,169988,"Celery, raw",40,0
+71603030,11367,170440,"Potatoes, boiled, cooked without skin, flesh, without salt",835,0
+71603030,11282,170000,"Onions, raw",20,0
+71603030,4639,173592,"Salad dressing, ranch dressing, regular",180,0
+71603030,2047,173468,"Salt, table",1.5,0
+71603030,11143,169988,"Celery, raw",40,0
+71603035,11282,170000,"Onions, raw",20,0
+71603035,2047,173468,"Salt, table",1.5,0
+71603035,11367,170440,"Potatoes, boiled, cooked without skin, flesh, without salt",835,0
+71603035,42116,167684,"Creamy dressing, made with sour cream and/or buttermilk and oil, reduced calorie",183.75,0
+71603035,11143,169988,"Celery, raw",40,0
+71603040,4114,171019,"Salad dressing, italian dressing, commercial, regular",176.25,0
+71603040,2047,173468,"Salt, table",1.5,0
+71603040,11367,170440,"Potatoes, boiled, cooked without skin, flesh, without salt",835,0
+71603040,11143,169988,"Celery, raw",40,0
+71603040,11282,170000,"Onions, raw",20,0
+71603045,2047,173468,"Salt, table",1.5,0
+71603045,11282,170000,"Onions, raw",20,0
+71603045,11367,170440,"Potatoes, boiled, cooked without skin, flesh, without salt",835,0
+71603045,11143,169988,"Celery, raw",40,0
+71603045,4021,171405,"Salad dressing, italian dressing, commercial, reduced fat",180,0
+71603050,42193,167700,"Salad Dressing, mayonnaise-like, fat-free",192,0
+71603050,11282,170000,"Onions, raw",20,0
+71603050,2053,172237,"Vinegar, distilled",30,0
+71603050,2047,173468,"Salt, table",1.5,0
+71603050,11143,169988,"Celery, raw",40,0
+71603050,11945,168561,"Pickle relish, sweet",15.313,0
+71603050,2046,172234,"Mustard, prepared, yellow",15.625,0
+71603050,11367,170440,"Potatoes, boiled, cooked without skin, flesh, without salt",835,0
+73101010,11960,168568,"Carrots, baby, raw",50,0
+73101010,11124,170393,"Carrots, mature, raw",50,0
+73101110,9298,168165,"Raisins, dark, seedless (Includes foods for USDA's Food Distribution Program)",72.5,0
+73101110,9156,167749,"Lemon peel, raw",4,0
+73101110,11124,170393,"Carrots, mature, raw",330,0
+73101110,4025,171009,"Salad dressing, mayonnaise, regular",110,0
+73101110,9152,167747,"Lemon juice, raw",15.5,0
+73101210,9156,167749,"Lemon peel, raw",4,0
+73101210,9003,171688,"Apples, raw, with skin (Includes foods for USDA's Food Distribution Program)",62.5,0
+73101210,9152,167747,"Lemon juice, raw",15.5,0
+73101210,11124,170393,"Carrots, mature, raw",330,0
+73101210,4025,171009,"Salad dressing, mayonnaise, regular",110,0
+74506000,82101000,,"Vegetable oil, NFS",56,0
+74506000,11205,168409,"Cucumber, with peel, raw",150.5,0
+74506000,11529,170457,"Tomatoes, red, ripe, raw, year round average",153.75,0
+74506000,2048,173469,"Vinegar, cider",120,0
+74506000,11282,170000,"Onions, raw",55,0
+74506000,19335,169655,"Sugars, granulated",18.75,0
+74506000,2047,173468,"Salt, table",3,0
+75115000,11266,168434,"Mushroom, crimini",10,0
+75115000,11260,169251,"Mushrooms, white button",80,0
+75115000,11243,169243,"Mushroom, portabella",10,0
+75121000,11979,168576,"Peppers, jalapeno, raw",50,0
+75121000,11819,170106,"Peppers, hot chili, red, raw",50,0
+75122000,11333,170427,"Peppers, bell, green, raw",50,0
+75122000,11821,170108,"Peppers, bell, red, raw",50,0
+75127500,11669,170496,"Seaweed, wakame, raw",33,0
+75127500,11446,168458,"Seaweed, laver, raw",33,0
+75127500,11445,168457,"Seaweed, kelp, raw",33,0
+75140500,11282,170000,"Onions, raw",80,0
+75140500,2048,173469,"Vinegar, cider",45,0
+75140500,43212,169893,"Bacon bits, meatless",56,0
+75140500,4025,171009,"Salad dressing, mayonnaise, regular",220,0
+75140500,1009,173414,"Cheese, cheddar",113,0
+75140500,11090,170379,"Broccoli, raw",176,0
+75140500,19335,169655,"Sugars, granulated",50,0
+75140500,11135,169986,"Cauliflower, raw",220,0
+75140510,11090,170379,"Broccoli, raw",528,0
+75140510,2047,173468,"Salt, table",1.5,0
+75140510,11124,170393,"Carrots, mature, raw",72,0
+75140510,11282,170000,"Onions, raw",35,0
+75140510,43016,169056,"Salad dressing, coleslaw",187.5,0
+75141040,11109,169975,"Cabbage, green, raw",534,0
+75141040,11282,170000,"Onions, raw",35,0
+75141040,11124,170393,"Carrots, mature, raw",72,0
+75141040,42193,167700,"Salad Dressing, mayonnaise-like, fat-free",192,0
+75141040,2047,173468,"Salt, table",1.5,0
+75142500,2047,173468,"Salt, table",3,0
+75142500,1056,171257,"Cream, sour, full fat",160.008,0
+75142500,11205,168409,"Cucumber, with peel, raw",402,0
+75142500,9152,167747,"Lemon juice, raw",5,0
+75142550,19335,169655,"Sugars, granulated",18.75,0
+75142550,11282,170000,"Onions, raw",70,0
+75142550,11205,168409,"Cucumber, with peel, raw",301,0
+75142550,82101000,,"Vegetable oil, NFS",56,0
+75142550,2048,173469,"Vinegar, cider",120,0
+75142550,2047,173468,"Salt, table",3,0
+75142600,11205,168409,"Cucumber, with peel, raw",301,0
+75142600,19335,169655,"Sugars, granulated",18.75,0
+75142600,2047,173468,"Salt, table",3,0
+75142600,11282,170000,"Onions, raw",55,0
+75142600,2048,173469,"Vinegar, cider",120,0
+75143000,11205,168409,"Cucumber, with peel, raw",10.4,0
+75143000,11124,170393,"Carrots, mature, raw",12.2,0
+75143000,11529,170457,"Tomatoes, red, ripe, raw, year round average",18,0
+75143000,11282,170000,"Onions, raw",11.5,0
+75143000,11143,169988,"Celery, raw",12,0
+75143000,75114000,,"Mixed salad greens, raw",70,0
+75143100,11282,170000,"Onions, raw",11.5,0
+75143100,11143,169988,"Celery, raw",12,0
+75143100,11205,168409,"Cucumber, with peel, raw",5.2,0
+75143100,9037,171705,"Avocados, raw, all commercial varieties",36.5,0
+75143100,11529,170457,"Tomatoes, red, ripe, raw, year round average",18,0
+75143100,75114000,,"Mixed salad greens, raw",70,0
+75143100,11124,170393,"Carrots, mature, raw",12.2,0
+75143200,1009,173414,"Cheese, cheddar",28.25,0
+75143200,11529,170457,"Tomatoes, red, ripe, raw, year round average",18,0
+75143200,11143,169988,"Celery, raw",12,0
+75143200,11124,170393,"Carrots, mature, raw",12.2,0
+75143200,75114000,,"Mixed salad greens, raw",70,0
+75143200,11205,168409,"Cucumber, with peel, raw",10.4,0
+75143200,11282,170000,"Onions, raw",11.5,0
+75143300,1129,173424,"Egg, whole, cooked, hard-boiled",34,0
+75143300,11529,170457,"Tomatoes, red, ripe, raw, year round average",18,0
+75143300,11282,170000,"Onions, raw",11.5,0
+75143300,11143,169988,"Celery, raw",12,0
+75143300,75114000,,"Mixed salad greens, raw",70,0
+75143300,11124,170393,"Carrots, mature, raw",12.2,0
+75143300,11205,168409,"Cucumber, with peel, raw",10.4,0
+75143350,1129,173424,"Egg, whole, cooked, hard-boiled",34,0
+75143350,75114000,,"Mixed salad greens, raw",110,0
+75143350,11429,169276,"Radishes, raw",14.5,0
+75143350,11529,170457,"Tomatoes, red, ripe, raw, year round average",45,0
+75143350,11143,169988,"Celery, raw",30,0
+75143350,11124,170393,"Carrots, mature, raw",27.5,0
+75143350,11205,168409,"Cucumber, with peel, raw",26,0
+75143350,1009,173414,"Cheese, cheddar",28.25,0
+75145000,19335,169655,"Sugars, granulated",25,0
+75145000,11143,169988,"Celery, raw",120,0
+75145000,11333,170427,"Peppers, bell, green, raw",74.4,0
+75145000,10862,168322,"Pork, cured, bacon, pre-sliced, cooked, pan-fried",64,0
+75145000,11252,169248,"Lettuce, iceberg, raw",539,0
+75145000,11313,170017,"Peas, green, frozen, cooked, boiled, drained, without salt",284,0
+75145000,4025,171009,"Salad dressing, mayonnaise, regular",440,0
+75145000,1129,173424,"Egg, whole, cooked, hard-boiled",150,0
+75145000,1009,173414,"Cheese, cheddar",113,0
+75145000,11282,170000,"Onions, raw",160,0
+75146000,11529,170457,"Tomatoes, red, ripe, raw, year round average",136,0
+75146000,11143,169988,"Celery, raw",90,0
+75146000,11282,170000,"Onions, raw",54,0
+75146000,9193,169094,"Olives, ripe, canned (small-extra large)",121.6,0
+75146000,11291,170005,"Onions, spring or scallions (includes tops and bulb), raw",60,0
+75146000,11205,168409,"Cucumber, with peel, raw",100.5,0
+75146000,11429,169276,"Radishes, raw",36,0
+75146000,15002,174183,"Fish, anchovy, european, canned in oil, drained solids",45,0
+75146000,1019,173420,"Cheese, feta, whole milk, crumbled",75,0
+75146000,100281,,"Lettuce, romaine, green, raw",752,0
+75302080,4114,171019,"Salad dressing, italian dressing, commercial, regular",235,0
+75302080,11333,170427,"Peppers, bell, green, raw",74.5,0
+75302080,16033,175194,"Beans, kidney, red, mature seeds, cooked, boiled, without salt",354,0
+75302080,11282,170000,"Onions, raw",80,0
+75302080,11056,169143,"Beans, snap, green, canned, regular pack, drained solids",153,0
+75302080,11732,169326,"Beans, snap, yellow, frozen, cooked, boiled, drained, without salt",153,0
+75415022,11296,170415,"Onion rings, breaded, par fried, frozen, prepared, heated in oven",50,0
+75415022,21130,170697,"Fast foods, onion rings, breaded and fried",50,0
+75416500,2047,173468,"Salt, table",0.75,0
+75416500,11313,170017,"Peas, green, frozen, cooked, boiled, drained, without salt",454,0
+75416500,11940,169378,"Pickles, cucumber, sweet (includes bread and butter pickles)",105,0
+75416500,11143,169988,"Celery, raw",120,0
+75416500,4025,171009,"Salad dressing, mayonnaise, regular",165,0
+75416500,11821,170108,"Peppers, bell, red, raw",49.662,0
+75416600,11143,169988,"Celery, raw",120,0
+75416600,11821,170108,"Peppers, bell, red, raw",49.662,0
+75416600,4025,171009,"Salad dressing, mayonnaise, regular",165,0
+75416600,11940,169378,"Pickles, cucumber, sweet (includes bread and butter pickles)",105,0
+75416600,11313,170017,"Peas, green, frozen, cooked, boiled, drained, without salt",454,0
+75416600,2047,173468,"Salt, table",0.75,0
+75416600,1009,173414,"Cheese, cheddar",99,0
+83100200,4018,171403,"Salad dressing, mayonnaise type, regular, with salt",20,0
+83100200,4025,171009,"Salad dressing, mayonnaise, regular",80,0
+89901030,6119,171566,"Gravy, chicken, canned or bottled, ready-to-serve",40,0
+89901030,20027,169698,Cornstarch,10,304
+89901030,2047,173468,"Salt, table",2,0
+89901030,14429,175103,"Beverages, water, tap, municipal",48,0
+91501100,19173,169596,"Gelatin desserts, dry mix, prepared with water",85,0
+91501100,11584,170472,"Vegetables, mixed, frozen, cooked, boiled, drained, without salt",15,0
+99995000,2047,173468,"Salt, table",1,0
+99995000,18369,172803,"Leavening agents, baking powder, double-acting, sodium aluminum sulfate",1,0
+99995000,14411,173647,"Beverages, water, tap, drinking",120,0
+99995000,18079,174928,"Bread, crumbs, dry, grated, plain",25,0
+99995000,1123,171287,"Eggs, Grade A, Large, egg whole",15,0
+99995000,20081,168894,"Flour, wheat, all-purpose, enriched, bleached",125,0

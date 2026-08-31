@@ -25,5 +25,32 @@
     "filtered_rows": 163,
     "license": "Public domain / CC0 (USDA ARS)",
     "filter_note": "Giữ toàn bộ dòng có Cooking Yield %; chuẩn hoá n/a → rỗng; nối NDB → fdc_id SR Legacy qua sr_legacy_food.csv. Bỏ cột Food Group Code."
+  },
+  "wikidata-vn-dishes.json": {
+    "source_url": "https://query.wikidata.org/sparql",
+    "source_release": "Truy vấn SPARQL món Việt (cuisine Q826059 UNION country of origin Q881, lọc theo lớp món/thực phẩm), 94 kết quả",
+    "downloaded_at": "2026-08-31",
+    "original_sha256": "e54390498d50b9c8d8fbaadb6f3c340767965d2cc951b536652d12a9235b394b",
+    "filtered_rows": 94,
+    "license": "CC0 1.0 (Wikidata)",
+    "filter_note": "Wikidata là dữ liệu SỐNG — kết quả thay đổi theo thời gian. Câu truy vấn nguyên văn lưu trong _meta.sparql của chính file JSON."
+  },
+  "usda-fndds-foods.csv": {
+    "source_url": "https://fdc.nal.usda.gov/download-datasets/",
+    "source_release": "FoodData Central Survey (FNDDS) 2021–2023, bản CSV 2024-10-31",
+    "downloaded_at": "2026-08-31",
+    "original_sha256": "5ccc25ec2777a8982fbb61378a42f415316173eb11e48c9a8ba4cb19f5a4f29c",
+    "filtered_rows": 333,
+    "license": "Public domain / CC0 1.0",
+    "filter_note": "Food Code + dinh dưỡng công bố. CHỈ dùng để KIỂM CHỨNG engine (TEST-002), không phải món hiển thị. Lọc: có kcal công bố, ≥2 nguyên liệu SR Links, ≥80% nguyên liệu ánh xạ được sang SR Legacy, và suy được cách chế biến từ mô tả."
+  },
+  "usda-fndds-srlinks.csv": {
+    "source_url": "https://fdc.nal.usda.gov/download-datasets/",
+    "source_release": "FoodData Central Survey (FNDDS) 2021–2023, bản CSV 2024-10-31",
+    "downloaded_at": "2026-08-31",
+    "original_sha256": "5ccc25ec2777a8982fbb61378a42f415316173eb11e48c9a8ba4cb19f5a4f29c",
+    "filtered_rows": 1810,
+    "license": "Public domain / CC0 1.0",
+    "filter_note": "SR Links: món → nguyên liệu → gram/100 g món. CHỈ dùng để KIỂM CHỨNG engine (TEST-002), không phải món hiển thị. Lọc: có kcal công bố, ≥2 nguyên liệu SR Links, ≥80% nguyên liệu ánh xạ được sang SR Legacy, và suy được cách chế biến từ mô tả."
   }
 }

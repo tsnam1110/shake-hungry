@@ -1,0 +1,2622 @@
+{
+    "head": {
+        "vars": [
+            "dish",
+            "dishLabel",
+            "labelVi",
+            "labelEn",
+            "image",
+            "cuisineLabel",
+            "ingredients"
+        ]
+    },
+    "results": {
+        "bindings": [
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q10740107"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "Bim bim"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "Bim bim"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Bim bim"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": "spice|flour|nut"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q10742195"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "Bánh bao, bánh vạc"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "Bánh bao, bánh vạc"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Bánh bao, bánh vạc"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": ""
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C3%A1nh%20bao%20b%C3%A1nh%20v%E1%BA%A1c%20-%20hoi%20an%20%282024%29.jpg"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q5004800"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "Bánh cáy"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "Bánh cáy"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "bánh cáy"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": ""
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C3%A1nh%20c%C3%A1y.JPG"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q106906025"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "Bánh mì thanh long"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "Bánh mì thanh long"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Pitaya bread"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": ""
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C3%A1nh%20m%C3%AC%20thanh%20long%2020200524%20193247.jpg"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q564560"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "Bánh phu thê"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "Bánh phu thê"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Phu Thê Cake"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": ""
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Breakfast%20at%20Trung%20K%C3%ADnh%20H%E1%BA%A1%20Village%2003-03-2026.%20Phu%20Th%C3%AA%20Cakes.jpg"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q3094709"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "Bánh tráng"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "Bánh tráng"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Bánh tráng"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": "rice flour"
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Nems%20wafer%20DSC04723.JPG"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q3094709"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "Bánh tráng"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "Bánh tráng"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Bánh tráng"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": "rice flour"
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Nems%20wafer%20DSC04723.JPG"
+                },
+                "cuisineLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "ẩm thực Việt Nam"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q10742887"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "Bún bung"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "Bún bung"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": "banana flower|pork broth|noodle|onion"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q10742887"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "Bún bung"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "Bún bung"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": "banana flower|pork broth|noodle|onion"
+                },
+                "cuisineLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "ẩm thực Việt Nam"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q50634"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "Bún chả"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "Bún chả"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Bun cha"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": "vegetable|pork|fish sauce|rice vermicelli|nước chấm"
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C3%BAn%20ch%E1%BA%A3%20H%C3%A0ng%20M%C3%A0nh.jpg"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q5202958"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "Cơm lam"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "Cơm lam"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Cơm lam"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": ""
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/C%C6%A1m%20lam%20T%C3%A2y%20Nguy%C3%AAn.jpg"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q27909648"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "Hủ tiếu"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "Hủ tiếu"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Hủ tiếu"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": ""
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Hu-Tieu-Kho-2008.jpg"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q27909648"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "Hủ tiếu"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "Hủ tiếu"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Hủ tiếu"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": ""
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/H%E1%BB%A7%20ti%E1%BA%BFu%20Nam%20Vang%20S%C3%A0i%20G%C3%B2n.jpg"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q27909648"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "Hủ tiếu"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "Hủ tiếu"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Hủ tiếu"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": ""
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/H%E1%BB%A7%20ti%E1%BA%BFu%20b%C3%B2%20kho.jpg"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q27909648"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "Hủ tiếu"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "Hủ tiếu"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Hủ tiếu"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": ""
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/H%E1%BB%A7%20ti%E1%BA%BFu.jpg"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q10779714"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "Khô cá lóc"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "Khô cá lóc"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Khô cá lóc"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": "Channidae"
+                },
+                "cuisineLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "ẩm thực Việt Nam"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q117862884"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "Khô nhái"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "Khô nhái"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": "meat"
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/V%C5%A9%20n%E1%BB%AF%20ch%C3%A2n%20d%C3%A0i.png"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q117862884"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "Khô nhái"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "Khô nhái"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": "meat"
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/%C4%90%C4%A9a%20nh%C3%A1i%20kh%C3%B4.png"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q18459801"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "Muối tôm"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "Muối tôm"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": "carrot|Allium sativum|chili pepper|monosodium L-glutamate|dried shrimp|table salt|Cymbopogon"
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Mu%E1%BB%91i%20t%C3%B4m%20T%C3%A2y%20Ninh.png"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q50835686"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "Mì thanh long"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "Mì thanh long"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "dragon-fruit noodle"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": ""
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q109436498"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "Nem chua Lai Vung"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "Nem chua Lai Vung"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Nem Lai Vung"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": ""
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Nem%20chua%20Lai%20Vung.jpg"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q7799573"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "Nem cuốn"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "Nem cuốn"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "gỏi cuốn"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": "Lactuca sativa|pork|rice vermicelli|rice paper|shrimp|Thai basil"
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Summer%20roll.jpg"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q68631373"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "Nộm hoa chuối"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "Nộm hoa chuối"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Nộm hoa chuối"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": ""
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/N%E1%BB%99m%20hoa%20chu%E1%BB%91i.png"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q5004791"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "bánh"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "bánh"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "bánh"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": ""
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C3%A1nh%20b%C3%A8o%2C%20b%E1%BB%99t%20l%E1%BB%8Dc%2C%20nem%20chua.jpg"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q564271"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "bánh bao Việt Nam"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "bánh bao Việt Nam"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "bánh bao"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": "minced meat"
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Banhbao.jpg"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q564271"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "bánh bao Việt Nam"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "bánh bao Việt Nam"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "bánh bao"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": "minced meat"
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Banhbao.jpg"
+                },
+                "cuisineLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "ẩm thực Việt Nam"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q5004794"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "bánh bèo"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "bánh bèo"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "bánh bèo"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": "rice flour|tapioca flour"
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Rice%20flour%20cake%20with%20shrimp%20-%20Vietnam%20Kitchen%2C%20Louisville%2C%20KY%20%282011-05-28%20by%20Navin75%29.jpg"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q5004794"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "bánh bèo"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "bánh bèo"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "bánh bèo"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": "rice flour|tapioca flour"
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C3%A1nh%20b%C3%A8o%20ch%C3%A9n.jpg"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q5004794"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "bánh bèo"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "bánh bèo"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "bánh bèo"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": "rice flour|tapioca flour"
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C3%A1nh%20b%C3%A8o.jpg"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q110834827"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "bánh chay"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "bánh chay"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "bánh chay"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": "mung bean|glutinous rice"
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Banhchay.JPG"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q564567"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "bánh chưng"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "bánh chưng"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "bánh chưng"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": "Phrynium placentarium|glutinous rice"
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Banh%20chung%20vuong.jpg"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q10742207"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "bánh giầy"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "bánh giầy"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "bánh giày"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": ""
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C3%A1nh%20gi%E1%BA%A7y%20gi%C3%B2.JPG"
+                },
+                "cuisineLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "ẩm thực Việt Nam"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q109436407"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "bánh mì cá sấu"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "bánh mì cá sấu"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": ""
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C3%A1nh%20m%C3%AC%20c%C3%A1%20s%E1%BA%A5u%20%28Crocodile%20bread%29.jpg"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q109436407"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "bánh mì cá sấu"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "bánh mì cá sấu"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": ""
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C3%A1nh%20m%C3%AC%20c%C3%A1%20s%E1%BA%A5u%20%28Crocodile%20bread%29.jpg"
+                },
+                "cuisineLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "ẩm thực An Giang"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q61127179"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "bánh phở"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "bánh phở"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "bánh phở"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": ""
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Pho%20rice%20noodle%20PC210323.jpg"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q5004810"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "bánh rế"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "bánh rế"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "bánh rế"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": ""
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C3%A1nh%20r%E1%BA%BF%20v%C3%A0ng.jpg"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q110834778"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "bánh trôi"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "bánh trôi"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "bánh trôi"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": "glutinous rice|panela"
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Banhtroi.JPG"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q5004813"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "bánh tét"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "bánh tét"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "bánh tét"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": "glutinous rice"
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Banh%20tet.jpg"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q10742235"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "bánh đa đỏ"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "bánh đa đỏ"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": ""
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q10742235"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "bánh đa đỏ"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "bánh đa đỏ"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": ""
+                },
+                "cuisineLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "ẩm thực Hải Phòng"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q48880901"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "bánh đậu xanh"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "bánh đậu xanh"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "bánh đậu xanh"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": ""
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Banh%20dau%20xanh.jpg"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q48880901"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "bánh đậu xanh"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "bánh đậu xanh"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "bánh đậu xanh"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": ""
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Banh-Dau-Xanh.jpg"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q10742893"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "bún mọc"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "bún mọc"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": ""
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q10742893"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "bún mọc"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "bún mọc"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": ""
+                },
+                "cuisineLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "ẩm thực miền Bắc Việt Nam"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q10742896"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "bún nước lèo"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "bún nước lèo"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": "rice vermicelli"
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C3%BAn%20n%C6%B0%E1%BB%9Bc%20l%C3%A8o.jpg"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q10742896"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "bún nước lèo"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "bún nước lèo"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": "rice vermicelli"
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C3%BAn%20n%C6%B0%E1%BB%9Bc%20l%C3%A8o.jpg"
+                },
+                "cuisineLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "ẩm thực miền Nam Việt Nam"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q2468860"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "chè trôi nước"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "chè trôi nước"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "chè trôi nước"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": "bánh trôi|bánh chay"
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/M%C3%B3n%20ch%C3%A8%20%E1%BB%9F%20B%C3%ACnh%20Long%20n%C4%83m%202020.jpg"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q3274058"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "chả cá Lã Vọng"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "chả cá Lã Vọng"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "chả cá Lã Vọng"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": ""
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Cha%20ca%20La%20Vong.jpg"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q7125094"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "chả rươi"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "chả rươi"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "chả rươi"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": "Tylorrhynchus heterochaetus"
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Cha%20ruoi.JPG"
+                },
+                "cuisineLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "ẩm thực Việt Nam"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q54371849"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "chả trứng"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "chả trứng"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "chả trứng"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": "egg as food|pork"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q54371849"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "chả trứng"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "chả trứng"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "chả trứng"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": "egg as food|pork"
+                },
+                "cuisineLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "ẩm thực Việt Nam"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q10751546"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "cà chấm mắm tôm"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "cà chấm mắm tôm"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": "Solanum macrocarpon|shrimp paste"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q10751546"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "cà chấm mắm tôm"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "cà chấm mắm tôm"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": "Solanum macrocarpon|shrimp paste"
+                },
+                "cuisineLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "ẩm thực Việt Nam"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q5202996"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "cốm"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "cốm"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "cốm"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": ""
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Com.JPG"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q5202996"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "cốm"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "cốm"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "cốm"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": ""
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Com.JPG"
+                },
+                "cuisineLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "ẩm thực Việt Nam"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q86006763"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "don"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "don"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": ""
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Don-mon-an.jpg"
+                },
+                "cuisineLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "ẩm thực Quảng Ngãi"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q86006763"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "don"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "don"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": ""
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Don-mon-an.jpg"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q10779336"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "kho quẹt"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "kho quẹt"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "kho quẹt"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": ""
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Kho%20qu%E1%BA%B9t%202.jpg"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q10779336"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "kho quẹt"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "kho quẹt"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "kho quẹt"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": ""
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Kho%20qu%E1%BA%B9t%202.jpg"
+                },
+                "cuisineLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "ẩm thực miền Nam Việt Nam"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q10796543"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "mắm ba khía"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "mắm ba khía"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": "Episesarma mederi"
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Mam%20ba%20khia%20%28Vietnamese%29.jpg"
+                },
+                "cuisineLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "ẩm thực miền Nam Việt Nam"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q10796544"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "mắm chua"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "mắm chua"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": "toasted rice powder|Acetes"
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/M%E1%BA%AFm%20chua%20Thanh%20H%C3%B3a%20-%20Acetes%20paste%20from%20Vietnam%20-1.JPG"
+                },
+                "cuisineLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "ẩm thực Việt Nam"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q10796544"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "mắm chua"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "mắm chua"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": "toasted rice powder|Acetes"
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/M%E1%BA%AFm%20chua%20Thanh%20H%C3%B3a%20-%20Acetes%20paste%20from%20Vietnam%20-1.JPG"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q16480434"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "mắm cá lóc"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "mắm cá lóc"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "snakehead paste"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": "Channa striata"
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/M%E1%BA%AFm%20c%C3%A1%20l%C3%B3c.JPG"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q16480434"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "mắm cá lóc"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "mắm cá lóc"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "snakehead paste"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": "Channa striata"
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/M%E1%BA%AFm%20c%C3%A1%20l%C3%B3c.JPG"
+                },
+                "cuisineLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "ẩm thực miền Nam Việt Nam"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q10796545"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "mắm cáy"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "mắm cáy"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "mắm cáy"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": "cáy"
+                },
+                "cuisineLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "ẩm thực miền Bắc Việt Nam"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q16480438"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "mắm còng"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "mắm còng"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": ""
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q10796546"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "mắm kho"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "mắm kho"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": "prahok|snakehead paste"
+                },
+                "cuisineLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "ẩm thực miền Nam Việt Nam"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q10796546"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "mắm kho"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "mắm kho"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": "prahok|snakehead paste"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q10796549"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "mắm nêm"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "mắm nêm"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "mắm nêm"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": ""
+                },
+                "cuisineLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "ẩm thực Việt Nam"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q10796549"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "mắm nêm"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "mắm nêm"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "mắm nêm"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": ""
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q16480444"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "mắm ruột An Giang"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "mắm ruột An Giang"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": "Giant snakehead|toasted rice powder"
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/M%E1%BA%AFm%20th%C3%A1i.jpg"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q16480444"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "mắm ruột An Giang"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "mắm ruột An Giang"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": "Giant snakehead|toasted rice powder"
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/M%E1%BA%AFm%20th%C3%A1i.jpg"
+                },
+                "cuisineLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "ẩm thực An Giang"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q10796550"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "mắm rươi"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "mắm rươi"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": "Nereididae"
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/M%E1%BA%AFm%20r%C6%B0%C6%A1i.jpg"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q10796551"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "mắm tép"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "mắm tép"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": "Caridina flavilineata"
+                },
+                "cuisineLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "ẩm thực Việt Nam"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q10796551"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "mắm tép"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "mắm tép"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": "Caridina flavilineata"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q16481351"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "mắm tép chưng thịt"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "mắm tép chưng thịt"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": ""
+                },
+                "cuisineLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "ẩm thực Việt Nam"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q16481351"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "mắm tép chưng thịt"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "mắm tép chưng thịt"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": ""
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q10796553"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "mắm tôm chua"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "mắm tôm chua"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": "Metapenaeus ensis"
+                },
+                "cuisineLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "ẩm thực miền Trung Việt Nam"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q10796553"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "mắm tôm chua"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "mắm tôm chua"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": "Metapenaeus ensis"
+                },
+                "cuisineLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "ẩm thực miền Nam Việt Nam"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q10796553"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "mắm tôm chua"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "mắm tôm chua"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": "Metapenaeus ensis"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q1324118"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "nước chấm"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "nước chấm"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "nước chấm"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": ""
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/N%C6%B0%E1%BB%9Bc%20m%E1%BA%AFm%20%E1%BB%9Bt%2020201127.jpg"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q1324118"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "nước chấm"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "nước chấm"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "nước chấm"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": ""
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/N%C6%B0%E1%BB%9Bc%20m%E1%BA%AFm%20%E1%BB%9Bt%2020201127.jpg"
+                },
+                "cuisineLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "ẩm thực Việt Nam"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q18456374"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "nước mắm"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "nước mắm"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "nước mắm"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": ""
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Sauce%20de%20poisson.jpg"
+                },
+                "cuisineLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "ẩm thực Việt Nam"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q18456374"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "nước mắm"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "nước mắm"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "nước mắm"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": ""
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Sauce%20de%20poisson.jpg"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q10802091"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "nước mắm Cát Hải"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "nước mắm Cát Hải"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Cát Hải fish sauce"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": ""
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Cat%20Hai%20fish%20sauce%202.JPG"
+                },
+                "cuisineLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "ẩm thực Hải Phòng"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q10802091"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "nước mắm Cát Hải"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "nước mắm Cát Hải"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Cát Hải fish sauce"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": ""
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Cat%20Hai%20fish%20sauce%202.JPG"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q30919660"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "nước mắm Cửa Khe"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "nước mắm Cửa Khe"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Cửa Khe fish sauce"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": ""
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q30919660"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "nước mắm Cửa Khe"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "nước mắm Cửa Khe"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Cửa Khe fish sauce"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": ""
+                },
+                "cuisineLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "ẩm thực miền Trung Việt Nam"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q10802093"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "nước mắm Phan Thiết"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "nước mắm Phan Thiết"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Phan Thiết fish sauce"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": ""
+                },
+                "cuisineLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "ẩm thực miền Nam Việt Nam"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q10802093"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "nước mắm Phan Thiết"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "nước mắm Phan Thiết"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Phan Thiết fish sauce"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": ""
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q7188272"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "nước mắm Phú Quốc"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "nước mắm Phú Quốc"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Phú Quốc fish sauce"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": ""
+                },
+                "cuisineLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "ẩm thực An Giang"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q79059164"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "phở gà"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "phở gà"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "pho ga"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": "rice noodle"
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Vietnamese%20Pho.jpg"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q46070600"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "sườn nướng"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "sườn nướng"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "sườn nướng"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": "spare ribs"
+                },
+                "image": {
+                    "type": "uri",
+                    "value": "http://commons.wikimedia.org/wiki/Special:FilePath/S%C6%B0%E1%BB%9Dn%20n%C6%B0%E1%BB%9Bng.jpg"
+                }
+            },
+            {
+                "dish": {
+                    "type": "uri",
+                    "value": "http://www.wikidata.org/entity/Q25418402"
+                },
+                "dishLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "Ốc vú nàng"
+                },
+                "labelVi": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "Ốc vú nàng"
+                },
+                "labelEn": {
+                    "xml:lang": "en",
+                    "type": "literal",
+                    "value": "Ốc vú nàng"
+                },
+                "ingredients": {
+                    "type": "literal",
+                    "value": ""
+                },
+                "cuisineLabel": {
+                    "xml:lang": "vi",
+                    "type": "literal",
+                    "value": "ẩm thực Việt Nam"
+                }
+            }
+        ]
+    },
+    "_meta": {
+        "queried_at": "2026-08-31",
+        "endpoint": "https://query.wikidata.org/sparql",
+        "license": "CC0 1.0 (Wikidata)",
+        "note": "Wikidata là dữ liệu SỐNG — chạy lại lần sau sẽ ra kết quả khác. Ngày truy vấn ở trên là mốc đối chiếu.",
+        "sparql": "SELECT DISTINCT ?dish ?dishLabel ?labelVi ?labelEn ?image ?cuisineLabel\n       (GROUP_CONCAT(DISTINCT ?ingLabel; separator=\"|\") AS ?ingredients)\nWHERE {\n  {\n    ?cuisine (wdt:P279|wdt:P361)* wd:Q826059 .\n    ?dish wdt:P2012 ?cuisine .\n  } UNION {\n    ?dish wdt:P495 wd:Q881 .\n  }\n  ?dish wdt:P31/wdt:P279* ?class .\n  VALUES ?class { wd:Q746549 wd:Q2095 wd:Q19861951 }\n  OPTIONAL { ?dish wdt:P18 ?image . }\n  OPTIONAL { ?dish rdfs:label ?labelVi . FILTER(LANG(?labelVi) = \"vi\") }\n  OPTIONAL { ?dish rdfs:label ?labelEn . FILTER(LANG(?labelEn) = \"en\") }\n  OPTIONAL {\n    ?dish (wdt:P527|wdt:P186) ?ing .\n    ?ing rdfs:label ?ingLabel . FILTER(LANG(?ingLabel) = \"en\")\n  }\n  SERVICE wikibase:label { bd:serviceParam wikibase:language \"vi,en\". }\n}\nGROUP BY ?dish ?dishLabel ?labelVi ?labelEn ?image ?cuisineLabel\nORDER BY ?dishLabel"
+    }
+}
