@@ -115,6 +115,14 @@ final class DishNutritionService
             $grams = $this->resolveGrams($di);
             $n = $this->nutritionFor($di);
 
+            // DATA-008 / CALORIE-ENGINE §3b: khối lượng mua ở chợ × phần ăn được,
+            // ÁP TRƯỚC khi tra dinh dưỡng. Bỏ qua khi công thức đã ghi khối lượng
+            // ăn được (is_edible_weight) hoặc nguyên liệu không có hệ số.
+            $ediblePct = $di->ingredient->edible_portion_pct;
+            if ($grams !== null && $ediblePct !== null && ! $di->is_edible_weight) {
+                $grams *= $ediblePct / 100.0;
+            }
+
             $inputs[] = new IngredientInput(
                 slug: $di->ingredient->slug,
                 grams: $grams ?? 0.0,

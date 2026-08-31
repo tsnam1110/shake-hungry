@@ -152,6 +152,18 @@ khối lượng mua ở chợ
 Bảng hệ số: [DATA-008](../05-tasks/tasks/DATA-008.md). Ví dụ đã tra được: nghêu 15,0% (68 g thịt từ
 1 lb cả vỏ); gà nguyên con 276 g phần ăn được từ 1 lb làm sẵn.
 
+> **Đã hiện thực 2026-08-31:** `ingredients.edible_portion_pct` (+ `edible_portion_note` bắt
+> buộc khi có số) — `DishNutritionService` nhân hệ số **trước** khi tra dinh dưỡng; dòng
+> công thức có `is_edible_weight = true` thì bỏ qua (khối lượng đã là phần ăn được). Test:
+> `tests/Feature/EdiblePortionTest.php` (300 g sườn × 50% ⇒ giảm đúng nửa). Ba hệ số đầu
+> có nguồn foodMeasures: gà nguyên con 60,9%, nghêu 15,0%, chim cút 89,3%; 16 nguyên liệu
+> xương/vỏ khác đang `null` kèm ghi chú cách tự cân.
+>
+> **Bảng hao hụt khi nấu đã nhập (DATA-004, 2026-08-31):** 163 dòng USDA Cooking Yields R2
+> trong bảng `cooking_yields`, tra theo (NDB → fdc_id, phương pháp). 9 nguyên liệu thịt cốt
+> lõi đã có `default_yield_factor` suy từ dòng cụ thể (ghi trong `default_yield_factor_note`);
+> việc tra hệ số THEO CÁCH NẤU CỦA TỪNG MÓN (thay vì default) thuộc phần còn lại của CALC-002.
+
 > ⚠️ **Đây là lỗi âm thầm.** Không có gì báo sai — chỉ là mọi món có xương đều bị vống calo. Nó ảnh
 > hưởng đúng những món trung tâm của kho dữ liệu: sườn kho, gà luộc, cá kho, canh xương.
 

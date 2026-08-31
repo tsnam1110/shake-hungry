@@ -1,9 +1,10 @@
 # Roadmap & Task Tracking — Lắc Đói
 
 **Ngày bắt đầu:** 2026-08-31
-**Cập nhật lần cuối:** 2026-08-31 — dựng xong nền code: Laravel 13 + PostgreSQL 17, schema đủ R1–R9,
-engine calo (CALC-001), 4 lệnh `lacdoi:*`, nhập USDA SR Legacy (7.793 dòng, 116 nguyên liệu ánh xạ
-khớp 100%), 31 test Pest xanh. GĐ0 gần đóng (còn LEGAL-002/Q1), GĐ1 còn ING-003 + dữ liệu hệ số
+**Cập nhật lần cuối:** 2026-08-31 (lần 4) — ING-003 đạt mốc **255/250 nguyên liệu** (105 mới, máy-chép
+số từ SR Legacy cục bộ, 197 ánh xạ khớp/0 lệch); DATA-008 xong (edible_portion_pct + engine + test);
+DATA-004 nạp 163 dòng USDA Cooking Yields R2, 9 nguyên liệu thịt có yield suy có nguồn.
+GĐ1 còn: rà soát độc lập ING-003, Foundation, DATA-003/005, TEST-002, hệ số hút nước tinh bột
 
 > Mỗi task có file chi tiết riêng tại [`tasks/`](./tasks/). Click mã task để xem đầy đủ.
 > Tạo task mới: copy [`TASK-TEMPLATE.md`](./TASK-TEMPLATE.md) vào `tasks/`, đặt tên theo mã task.
@@ -30,7 +31,7 @@ khớp 100%), 31 test Pest xanh. GĐ0 gần đóng (còn LEGAL-002/Q1), GĐ1 cò
 | GĐ | Tên | Mục tiêu | Cổng chặn để sang giai đoạn sau | Trạng thái |
 |---|---|---|---|---|
 | **0** | Thủ tục & khởi tạo | Gửi đề nghị cấp phép, chốt các quyết định nền, dựng repo | Repo chạy được, các quyết định đã chốt | 🔵 IN PROGRESS — repo chạy được (Laravel 13 + PostgreSQL 17, `migrate:fresh --seed` xanh); còn [LEGAL-002](./tasks/LEGAL-002.md) và Q1 chờ chủ dự án |
-| **1** | Xương sống dữ liệu | Schema + bảng tham chiếu + **250 nguyên liệu** + engine calo | Engine calo qua kiểm chứng FNDDS/Nutrition5k | 🔵 IN PROGRESS — schema + engine + SR Legacy **xong**; còn **150/250 nguyên liệu**, Foundation, DATA-004/005/008, TEST-002 |
+| **1** | Xương sống dữ liệu | Schema + bảng tham chiếu + **250 nguyên liệu** + engine calo | Engine calo qua kiểm chứng FNDDS/Nutrition5k | 🔵 IN PROGRESS — schema + engine + SR Legacy + **255/250 nguyên liệu** + CY R2 + DATA-008 xong; còn rà soát độc lập, Foundation, DATA-003/005, TEST-002 |
 | **2** | Trình nhập liệu | Công cụ nhập món trong Filament + trợ lý LLM | **≤5 phút/món** — cổng chặn cứng | ⬜ TODO |
 | **3** | Sản xuất dữ liệu | 150 món (dùng được) → 500 món (đủ dùng) | ≥500 món Mức 1; đo độ chính xác đạt ≥80% | ⬜ TODO |
 | **4** | Engine gợi ý | Nút Lắc bản chính thức, 3 tầng, có pgvector | Độ phủ kho món ≥60% trong 30 ngày | ⬜ TODO |
@@ -100,10 +101,10 @@ thư mục `data/` đúng cấu trúc; câu hỏi Q1/Q2 ở [PRD §9](../01-prd/
 | [DATA-006](./tasks/DATA-006.md) | Lệnh `lacdoi:import-usda` + `lacdoi:validate-data` | Backend | ✅ | SETUP-003 | 2026-08-31 |
 | [DATA-002](./tasks/DATA-002.md) | Nhập USDA SR Legacy + Foundation Foods | Dữ liệu | 🔵 SR Legacy xong (7.793 dòng, 116 ánh xạ khớp/0 lệch); Foundation chưa | DATA-006 | — |
 | [DATA-003](./tasks/DATA-003.md) | Nhập USDA FNDDS + SR Links | Dữ liệu | ⬜ | DATA-006 | — |
-| [DATA-004](./tasks/DATA-004.md) | Nhập bảng hệ số hao hụt khi nấu | Dữ liệu | ⬜ | DATA-006 | — |
+| [DATA-004](./tasks/DATA-004.md) | Nhập bảng hệ số hao hụt khi nấu | Dữ liệu | 🔵 thịt/gia cầm xong (163 dòng CY R2, 9 yield suy có nguồn); còn hút nước tinh bột + retention | DATA-006 | — |
 | [DATA-005](./tasks/DATA-005.md) | Nhập món Việt từ Wikidata (SPARQL) | Dữ liệu | ⬜ | SETUP-003 | — |
 | [DATA-007](./tasks/DATA-007.md) | Lệnh `lacdoi:export-data` — JSON ổn định | Backend | ✅ | SETUP-003 | 2026-08-31 |
-| [DATA-008](./tasks/DATA-008.md) | Bảng hệ số phần ăn được (nguyên liệu có xương/vỏ) | Dữ liệu | ⬜ | — | — |
+| [DATA-008](./tasks/DATA-008.md) | Bảng hệ số phần ăn được (nguyên liệu có xương/vỏ) | Dữ liệu | ✅ khung + 3 hệ số có nguồn; 16 hệ số null chờ phép cân | — | 2026-08-31 |
 
 ### 1b. Nguyên liệu — phần tốn công nhất
 
@@ -111,7 +112,7 @@ thư mục `data/` đúng cấu trúc; câu hỏi Q1/Q2 ở [PRD §9](../01-prd/
 |---|---|---|---|---|---|
 | [ING-001](./tasks/ING-001.md) | 50 nguyên liệu cốt lõi (gạo, thịt, mắm, rau nền) | Dữ liệu | 🔵 | — | Biên soạn xong **55 nguyên liệu** 2026-08-31; **3 tiêu chí DoD chưa kiểm được** vì thiếu công cụ |
 | [ING-002](./tasks/ING-002.md) | Mở rộng lên 150 nguyên liệu | Dữ liệu | 🔵 | ING-001 | ✅ **150/150** đạt mốc 2026-08-31; 3 tiêu chí DoD chưa kiểm được vì thiếu công cụ; 5 mục giữ ngoài repo chờ thẩm định MEXT |
-| [ING-003](./tasks/ING-003.md) | Mở rộng lên 250 nguyên liệu | Dữ liệu | ⬜ | ING-002 | — |
+| [ING-003](./tasks/ING-003.md) | Mở rộng lên 250 nguyên liệu | Dữ liệu | 🔵 **255/250 đạt mốc 2026-08-31** (125 high/64 medium/28 low/38 null); còn rà soát độc lập + duyệt needs_review | ING-002 | — |
 
 ### 1c. Engine tính calo
 
@@ -232,6 +233,7 @@ Ghi kết quả mỗi lần rà soát định kỳ (mỗi 50 món — xem [DATA-
 | Ngày | Phạm vi | Mẫu kiểm | Phát hiện | Hành động |
 |---|---|---|---|---|
 | 2026-08-31 | 55 nguyên liệu đầu tiên ([ING-001](./tasks/ING-001.md)) | Toàn bộ, tra chéo USDA / Ciqual / nhãn sản phẩm | 20 `high`, 21 `medium`, 12 `low`, **2 không tra được** (cá lóc, mắm tôm). Bốn ô sai số lớn: ba chỉ (380–518), nạm bò (155–345), đậu phụ (80–144), cơm trắng (130–155). Bẫy loài: USDA không có mục `water spinach` cho rau muống | Tách đôi 3 nguyên liệu (thăn lợn, nước mắm); ghi 6 nhóm bẫy vào [EDITORIAL-GUIDE §9](../09-standards/EDITORIAL-GUIDE.md); 4 nguyên liệu dùng OFF → **chặn bởi [LEGAL-002](./tasks/LEGAL-002.md)** |
+| 2026-08-31 | Đợt ING-003: 105 nguyên liệu mới (150→255) + đối chiếu toàn kho | Máy: đối chiếu snapshot ↔ bảng SR Legacy đã nhập (197 mục), validator V1–V14, V10 | **197/197 ánh xạ khớp tuyệt đối, 0 lệch.** Số liệu 105 file mới do script máy-chép từ USDA gốc theo fdc_id (không gõ tay). 38 mục null có tài liệu tra cứu. V10: chỉ mỡ nước vượt 900 kcal — đúng ngoại lệ. Bẫy mới ghi nhận: chili powder Mỹ là hỗn hợp; sake ≠ rượu trắng (cồn bằng nửa); lươn Anguilla ≠ Monopterus (béo ~6×) | Toàn bộ 105 file needs_review=true chờ người duyệt; 5 mục MEXT tiếp tục giữ ngoài repo (Q6) |
 
 ---
 

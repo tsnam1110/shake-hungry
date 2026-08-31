@@ -23,6 +23,7 @@ class Ingredient extends Model
             'density_g_per_ml' => 'float',
             'default_yield_factor' => 'float',
             'oil_absorption_pct' => 'float',
+            'edible_portion_pct' => 'float',
         ];
     }
 

@@ -17,6 +17,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
             RegionSeeder::class,
             ReferenceFoodSeeder::class,
+            CookingYieldSeeder::class,
             IngredientSeeder::class,
             DishSeeder::class,
         ]);

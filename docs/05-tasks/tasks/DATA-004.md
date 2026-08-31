@@ -1,7 +1,7 @@
 # [DATA-004] — Nhập bảng hệ số hao hụt khi nấu
 
 **Mã task:** DATA-004 · **Giai đoạn:** GĐ1 · **Loại:** Dữ liệu
-**Status:** ⬜ TODO · **Ngày tạo:** 2026-08-31 · **Phụ thuộc:** DATA-006
+**Status:** 🔵 IN PROGRESS — bảng thịt/gia cầm nạp xong 2026-08-31; còn hệ số hút nước tinh bột + retention · **Ngày tạo:** 2026-08-31 · **Phụ thuộc:** DATA-006
 
 ---
 
@@ -27,10 +27,15 @@ thành phẩm. Bỏ qua bước này thì mọi chất dinh dưỡng đều sai 
 
 ## Definition of Done
 
-- [ ] Bảng hệ số nạp được, tra được theo (thực phẩm, cách chế biến)
-- [ ] Nguyên liệu ở ING-001 có `default_yield_factor` hợp lý
-- [ ] File trong `data/reference/`, MANIFEST đầy đủ
-- [ ] Có ghi chú cho các nguyên liệu Việt không có trong bảng USDA và cách xử lý
+- [x] Bảng hệ số nạp được — bảng `cooking_yields`, 163 dòng, tra theo (`ndb_number` →
+      `external_id` fdc SR Legacy, `preparation_method`); seeder dựng lại từ file
+- [x] 9 nguyên liệu thịt/gia cầm cốt lõi có `default_yield_factor` suy từ dòng cụ thể
+      (NDB + phương pháp ghi trong `default_yield_factor_note`); 3 mục ghi rõ vì sao null
+      (ba chỉ, vịt — bảng không có). **Còn lại:** hệ số HÚT NƯỚC của gạo/bún/phở (bảng
+      này chỉ có thịt/gia cầm) — cần nguồn khác hoặc tự đo
+- [x] `data/reference/usda-cooking-yields.csv` + MANIFEST (SHA-256, license CC0, tiêu chí lọc)
+- [x] Ghi chú nguyên liệu Việt không có trong bảng: xem `default_yield_factor_note` từng
+      file (ba chỉ, vịt) và mục Ghi chú dưới đây
 
 ## Cạm bẫy
 
@@ -40,3 +45,18 @@ thành phẩm. Bỏ qua bước này thì mọi chất dinh dưỡng đều sai 
   phải **ghi rõ là suy ra**, không ghi như thể tra được.
 
 ## Ghi chú
+
+**2026-08-31 — nạp xong phần thịt/gia cầm:**
+
+- Nguồn: file CSV **chính thức** `USDA_CookingYields_MeatPoultry02.csv` từ Ag Data Commons
+  (public domain) — không phải bóc PDF. NDB number nối sang `fdc_id` SR Legacy qua
+  `sr_legacy_food.csv`, nên tra được theo nguyên liệu đã ánh xạ.
+- **Không có nguyên liệu nào của ta trùng NDB trực tiếp** với 163 dòng (bảng đo các cắt
+  bán lẻ Mỹ chuyên biệt) ⇒ `default_yield_factor` phải SUY từ dòng tương đương, mỗi giá
+  trị ghi rõ NDB + phương pháp trong `default_yield_factor_note` (ràng buộc CHECK + V13c).
+- **Hoãn có ý thức:** (1) *Nutrient Retention Factors R6* — chỉ áp cho VI CHẤT, v1 tính
+  macro chưa dùng; PDF đã tải về `storage/imports/retn06.pdf` chờ GĐ sau. (2) Hệ số hút
+  nước gạo/bún/mì — ngoài phạm vi bảng thịt; hiện `com-trang` đã là bản chụp cơm CHÍN
+  (is_ready_to_eat) nên món cơm không phụ thuộc hệ số này; cần khi công thức ghi gạo sống.
+- Việc tra hệ số **theo cách nấu của từng món** (thay vì default theo nguyên liệu) là phần
+  còn lại của [CALC-002](./CALC-002.md) — bảng đã sẵn trong DB để làm việc đó.

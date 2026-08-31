@@ -109,6 +109,16 @@ class LacdoiValidateData extends Command
                 $this->errors[] = "V13 [{$slug}]: có density_g_per_ml nhưng thiếu density_note (đo hay suy ra?)";
             }
 
+            // V13c (DATA-004) — có default_yield_factor mà không ghi suy từ đâu (🔴).
+            if (($j['default_yield_factor'] ?? null) !== null && blank($j['default_yield_factor_note'] ?? null)) {
+                $this->errors[] = "V13c [{$slug}]: có default_yield_factor nhưng thiếu default_yield_factor_note (suy từ dòng nào của bảng USDA CY R2?)";
+            }
+
+            // V13b (DATA-008) — có edible_portion_pct mà thiếu nguồn/phương pháp (🔴).
+            if (($j['edible_portion_pct'] ?? null) !== null && blank($j['edible_portion_note'] ?? null)) {
+                $this->errors[] = "V13b [{$slug}]: có edible_portion_pct nhưng thiếu edible_portion_note (nguồn foodMeasures hay phép cân?)";
+            }
+
             // V14 — có số liệu mà thiếu source_url (🔴): mọi con số phải truy nguyên được.
             if ($kcal !== null && blank($ref['source_url'] ?? null)) {
                 $this->errors[] = "V14 [{$slug}]: có kcal_per_100g nhưng thiếu source_url";

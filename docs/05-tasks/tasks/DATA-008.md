@@ -1,7 +1,7 @@
 # [DATA-008] — Bảng hệ số phần ăn được (nguyên liệu có xương/vỏ)
 
 **Mã task:** DATA-008 · **Giai đoạn:** GĐ1 · **Loại:** Dữ liệu
-**Status:** ⬜ TODO · **Ngày tạo:** 2026-08-31 · **Phụ thuộc:** —
+**Status:** ✅ DONE (2026-08-31) — khung + 3 hệ số có nguồn; các hệ số null chờ phép cân, xem Ghi chú · **Ngày tạo:** 2026-08-31 · **Phụ thuộc:** —
 
 ---
 
@@ -43,11 +43,15 @@ cho 831 kcal, trong khi phần ăn được thực tế chỉ khoảng một n�
 
 ## Definition of Done
 
-- [ ] Mọi nguyên liệu bán cả xương/vỏ đều có `edible_portion_pct` hoặc `null` kèm giải thích
-- [ ] Mỗi hệ số có nguồn (USDA `foodMeasures`, hoặc phép cân của dự án kèm ngày và phương pháp)
-- [ ] Trường đã thêm vào DATA-MODEL và DATA-REPOSITORY **trong cùng commit** (QT-7)
-- [ ] Engine calo áp hệ số đúng thứ tự: khối lượng mua → phần ăn được → tra dinh dưỡng
-- [ ] Có test: cùng "300 g sườn", kết quả sau khi áp hệ số phải thấp hơn rõ rệt
+- [x] 19 nguyên liệu bán cả xương/vỏ đã xử lý: 3 có `edible_portion_pct` nguồn foodMeasures
+      (gà nguyên con 60,9%; nghêu 15,0%; chim cút 89,3%), 16 để `null` kèm
+      `edible_portion_note` giải thích thiếu gì và cân thế nào
+- [x] Ràng buộc CHECK + kiểm tra V13b: có pct thì bắt buộc có note nguồn
+- [x] Trường đã thêm vào DATA-MODEL và DATA-REPOSITORY trong cùng commit (QT-7); quy ước
+      khối lượng chợ ghi vào [EDITORIAL-GUIDE §11](../../09-standards/EDITORIAL-GUIDE.md)
+- [x] Engine áp đúng thứ tự trong `DishNutritionService`: khối lượng mua → ×pct → tra
+      dinh dưỡng; dòng công thức `is_edible_weight = true` thì không áp
+- [x] Test `tests/Feature/EdiblePortionTest.php`: 300 g sườn × 50% ⇒ 300 kcal so với 600
 
 ---
 
@@ -62,3 +66,16 @@ cho 831 kcal, trong khi phần ăn được thực tế chỉ khoảng một n�
 ---
 
 ## Ghi chú
+
+**Hoàn thành 2026-08-31** (khung + dữ liệu tra được). Phần chờ:
+
+- 16 hệ số `null` (sườn, móng giò, đùi/cánh/chân gà, cá nguyên con, tôm, ốc, cua…) cần
+  **phép cân của dự án** — foodMeasures của các dòng tương ứng không có mục yield.
+  Phương pháp ghi sẵn trong `edible_portion_note` từng file: mua → cân cả xương/vỏ →
+  lọc → cân lại → ghi ngày + cách làm. Đây là việc tay chân của chủ dự án, mỗi lần đi
+  chợ cân được 2–3 mục.
+- Sườn lợn là mục ĐAU NHẤT còn thiếu (ví dụ gốc của chính task này) — ưu tiên cân trước
+  khi nhập các món sườn ở GĐ3.
+- `totalRefuse` của portal FDC đã được xác nhận là vô dụng (luôn 0) — đúng cảnh báo
+  RESEARCH-PROTOCOL §4; toàn bộ hệ số lấy từ modifier dạng 'yield from 1 lb…' trong
+  `food_portion.csv` của bộ CSV.

@@ -25,6 +25,25 @@ cùng commit** (QT-7) và ghi lý do.
 > Ngoài ra: cột `embedding vector(768)` chỉ được migration tạo khi extension `vector` đã cài
 > (pgvector hoãn có ý thức tới GĐ4 — [SETUP-001](../05-tasks/tasks/SETUP-001.md)).
 
+> ## Bổ sung 2026-08-31 (lần 2) — DATA-004 và DATA-008
+>
+> **`ingredients` thêm 3 cột:**
+> - `edible_portion_pct` numeric(5,2) null + `edible_portion_note` text — % phần ăn được
+>   của khối lượng mua ở chợ (cả xương/vỏ). CHECK: có pct thì bắt buộc có note (nguồn
+>   foodMeasures hoặc phép cân). Engine áp **trước** khi tra dinh dưỡng (CALORIE-ENGINE §3b).
+> - `default_yield_factor_note` text — có `default_yield_factor` thì bắt buộc ghi suy từ
+>   dòng nào của bảng USDA Cooking Yields R2 (CHECK tương tự `density_note`).
+>
+> **`dish_ingredients` thêm cột** `is_edible_weight` boolean default false — quy ước
+> [EDITORIAL-GUIDE §11](../09-standards/EDITORIAL-GUIDE.md): mặc định `quantity` là khối
+> lượng mua ở chợ; `true` = đã là phần ăn được, engine không nhân hệ số nữa.
+>
+> **Bảng mới `cooking_yields`** (DATA-004): hệ số hao hụt khi nấu từ *USDA Table of Cooking
+> Yields for Meat and Poultry, Release 2* — khoá tra (`ndb_number` → `external_id` fdc SR
+> Legacy, `preparation_method`), kèm `yield_pct`, min/max, thay đổi ẩm/béo. Nạp từ
+> `data/reference/usda-cooking-yields.csv` bởi `CookingYieldSeeder`; 163 dòng.
+> Bảng này là dữ liệu THAM CHIẾU chỉ đọc, cùng nhóm với `reference_foods`.
+
 ---
 
 ## 0. Quy ước

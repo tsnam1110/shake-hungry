@@ -109,7 +109,10 @@ class LacdoiExportData extends Command
             'density_g_per_ml' => $ing->density_g_per_ml,
             'density_note' => $ing->density_note,
             'default_yield_factor' => $ing->default_yield_factor,
+            'default_yield_factor_note' => $ing->default_yield_factor_note,
             'oil_absorption_pct' => $ing->oil_absorption_pct,
+            'edible_portion_pct' => $ing->edible_portion_pct,
+            'edible_portion_note' => $ing->edible_portion_note,
             'is_ready_to_eat' => $ing->is_ready_to_eat,
             'units' => $units,
             'source' => $ing->source,
@@ -154,6 +157,9 @@ class LacdoiExportData extends Command
                 }
                 if ($di->is_discarded) {
                     $row['is_discarded'] = true;
+                }
+                if ($di->is_edible_weight) {
+                    $row['is_edible_weight'] = true;
                 }
                 if ($di->note !== null) {
                     $row['note'] = $di->note;

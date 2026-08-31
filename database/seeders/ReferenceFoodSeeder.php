@@ -26,8 +26,14 @@ class ReferenceFoodSeeder extends Seeder
             : [];
 
         $total = 0;
-        foreach (glob(base_path('data/reference/usda-*.csv')) ?: [] as $csv) {
-            $file = basename($csv);
+        // Chỉ các bảng THÀNH PHẦN dinh dưỡng — usda-cooking-yields.csv có cấu trúc
+        // khác (hệ số hao hụt) và do CookingYieldSeeder nạp.
+        $nutrientTables = ['usda-sr_legacy.csv', 'usda-foundation.csv'];
+        foreach ($nutrientTables as $file) {
+            $csv = base_path("data/reference/{$file}");
+            if (! is_file($csv)) {
+                continue;
+            }
             $source = 'usda_'.str_replace(['usda-', '.csv'], '', $file);
             $importedAt = isset($manifest[$file]['downloaded_at'])
                 ? Carbon::parse($manifest[$file]['downloaded_at'])

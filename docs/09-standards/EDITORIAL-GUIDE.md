@@ -204,3 +204,19 @@ Ghi câu hỏi vào mục "Câu hỏi mở" ở [ROADMAP](../05-tasks/ROADMAP.md
 | Ánh xạ nguyên liệu này `medium` hay `low`? | `low` |
 | Có nên đoán con số này không? | Không |
 | Có nên nhập món khi thiếu nhiều thông tin? | Nhập ở Mức 1, đừng cố lên Mức 2 |
+
+
+---
+
+## 11. Quy ước khối lượng nguyên liệu có xương/vỏ — bổ sung 2026-08-31 (DATA-008)
+
+**Mặc định, `quantity` trong công thức món là KHỐI LƯỢNG MUA Ở CHỢ** — cả xương, cả vỏ,
+cả đầu tôm. Engine tự nhân `edible_portion_pct` của nguyên liệu để ra phần ăn được
+TRƯỚC khi tra dinh dưỡng (CALORIE-ENGINE §3b).
+
+- Công thức ghi "300 g sườn" ⇒ nhập 300 g, KHÔNG tự trừ xương.
+- Nếu nguồn công thức ghi rõ khối lượng ĐÃ lọc xương/bóc vỏ ⇒ đánh dấu
+  `is_edible_weight: true` trên dòng nguyên liệu đó, engine sẽ không nhân hệ số nữa.
+- Nguyên liệu bán cả xương/vỏ mà `edible_portion_pct` còn null (xem
+  `edible_portion_note` của từng file): calo món sẽ bị VỐNG LÊN — ưu tiên bổ sung hệ số
+  (tự cân theo phương pháp ghi trong note) trước khi nhập nhiều món dùng nguyên liệu đó.

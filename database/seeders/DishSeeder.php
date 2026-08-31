@@ -108,6 +108,7 @@ class DishSeeder extends Seeder
                     'unit_name' => $row['unit_name'],
                     'is_optional' => $row['is_optional'] ?? false,
                     'is_discarded' => $row['is_discarded'] ?? false,
+                    'is_edible_weight' => $row['is_edible_weight'] ?? false,
                     'note' => $row['note'] ?? null,
                     'source' => $row['source'] ?? 'curated',
                     'confidence' => $row['confidence'] ?? null,

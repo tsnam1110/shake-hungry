@@ -20,6 +20,7 @@ class DishIngredient extends Model
             'grams_resolved' => 'float',
             'is_optional' => 'boolean',
             'is_discarded' => 'boolean',
+            'is_edible_weight' => 'boolean',
         ];
     }
 

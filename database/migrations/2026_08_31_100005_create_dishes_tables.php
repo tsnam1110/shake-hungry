@@ -83,6 +83,9 @@ return new class extends Migration
             $table->decimal('grams_resolved', 8, 2)->nullable();
             $table->boolean('is_optional')->default(false);
             $table->boolean('is_discarded')->default(false);
+            // DATA-008: mặc định quantity là KHỐI LƯỢNG MUA Ở CHỢ (cả xương/vỏ) và
+            // engine áp edible_portion_pct; true = quantity đã là phần ăn được, không áp nữa.
+            $table->boolean('is_edible_weight')->default(false);
             $table->text('note')->nullable();
             $table->string('source', 16);
             $table->string('confidence', 8)->nullable();

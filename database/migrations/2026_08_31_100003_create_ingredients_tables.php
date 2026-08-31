@@ -22,7 +22,14 @@ return new class extends Migration
             $table->string('category', 32);
             $table->decimal('density_g_per_ml', 6, 3)->nullable();
             $table->decimal('default_yield_factor', 4, 3)->nullable();
+            // DATA-004: hệ số suy từ bảng USDA Cooking Yields R2 — bắt buộc ghi
+            // suy từ dòng nào (NDB + phương pháp), cùng logic với density_note.
+            $table->text('default_yield_factor_note')->nullable();
             $table->decimal('oil_absorption_pct', 5, 2)->nullable();
+            // DATA-008: % phần ăn được của khối lượng mua ở chợ (cả xương/vỏ).
+            // null = bán sẵn phần ăn được, hoặc chưa tra được (ghi rõ ở note).
+            $table->decimal('edible_portion_pct', 5, 2)->nullable();
+            $table->text('edible_portion_note')->nullable();
             $table->boolean('is_ready_to_eat')->default(false);
             $table->text('density_note')->nullable();
             $table->text('source_url')->nullable();
@@ -46,6 +53,11 @@ return new class extends Migration
         DB::statement("ALTER TABLE ingredients ADD CONSTRAINT ingredients_r7_mapping_note CHECK (mapping_confidence = 'high' OR mapping_note IS NOT NULL)");
         // V13 dưới dạng ràng buộc cứng: có density thì phải ghi rõ đo hay suy ra.
         DB::statement('ALTER TABLE ingredients ADD CONSTRAINT ingredients_density_note_check CHECK (density_g_per_ml IS NULL OR density_note IS NOT NULL)');
+        // DATA-004: hệ số hao hụt phải ghi rõ suy từ dòng nào.
+        DB::statement('ALTER TABLE ingredients ADD CONSTRAINT ingredients_yield_note_check CHECK (default_yield_factor IS NULL OR default_yield_factor_note IS NOT NULL)');
+        // DATA-008: hệ số phần ăn được phải có nguồn (foodMeasures hoặc phép cân) — cùng logic V13.
+        DB::statement('ALTER TABLE ingredients ADD CONSTRAINT ingredients_edible_note_check CHECK (edible_portion_pct IS NULL OR edible_portion_note IS NOT NULL)');
+        DB::statement('ALTER TABLE ingredients ADD CONSTRAINT ingredients_edible_range_check CHECK (edible_portion_pct IS NULL OR (edible_portion_pct > 0 AND edible_portion_pct <= 100))');
         // Index trigram để cảnh báo trùng tên khi nhập liệu (SETUP-003).
         DB::statement('CREATE INDEX ingredients_name_vi_trgm ON ingredients USING gin (name_vi gin_trgm_ops)');
     }

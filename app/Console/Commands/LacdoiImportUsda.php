@@ -27,7 +27,7 @@ use RuntimeException;
 class LacdoiImportUsda extends Command
 {
     protected $signature = 'lacdoi:import-usda
-        {--source=sr_legacy : sr_legacy | foundation}
+        {--source=sr_legacy : sr_legacy | foundation | cooking_yields}
         {--dir= : thư mục chứa CSV đã giải nén (mặc định storage/imports/<source>)}
         {--zip= : đường dẫn file zip gốc để ghi SHA-256 vào MANIFEST}';
 
@@ -43,10 +43,14 @@ class LacdoiImportUsda extends Command
     public function handle(): int
     {
         $source = (string) $this->option('source');
-        if (! in_array($source, ['sr_legacy', 'foundation'], true)) {
-            $this->error("--source phải là sr_legacy hoặc foundation, nhận được '{$source}'.");
+        if (! in_array($source, ['sr_legacy', 'foundation', 'cooking_yields'], true)) {
+            $this->error("--source phải là sr_legacy, foundation hoặc cooking_yields, nhận được '{$source}'.");
 
             return self::FAILURE;
+        }
+
+        if ($source === 'cooking_yields') {
+            return $this->importCookingYields();
         }
 
         $dir = (string) ($this->option('dir') ?: storage_path("imports/{$source}"));
@@ -131,6 +135,97 @@ class LacdoiImportUsda extends Command
 
         $this->info("Đã nạp {$kept} dòng vào reference_foods ({$fctSource}); bỏ {$skippedNoEnergy} bản ghi không có năng lượng.");
         $this->line("Bản đã lọc: {$outPath} — nhớ commit cùng MANIFEST.");
+
+        return self::SUCCESS;
+    }
+
+    /**
+     * DATA-004 — USDA Table of Cooking Yields for Meat and Poultry, Release 2
+     * (public domain, Ag Data Commons DOI 10.15482/USDA.ADC/1436671; file
+     * USDA_CookingYields_MeatPoultry02.csv). NDB number được nối sang fdc_id
+     * SR Legacy qua sr_legacy_food.csv để tra được theo nguyên liệu đã ánh xạ.
+     */
+    private function importCookingYields(): int
+    {
+        $csv = (string) ($this->option('dir') ?: storage_path('imports')).'/USDA_CookingYields_MeatPoultry02.csv';
+        if (! is_file($csv)) {
+            $this->error("Không tìm thấy {$csv}.");
+            $this->line('Tải USDA_CookingYields_MeatPoultry02.csv từ Ag Data Commons (public domain):');
+            $this->line('https://agdatacommons.nal.usda.gov/articles/dataset/USDA_Table_of_Cooking_Yields_for_Meat_and_Poultry/24660864');
+
+            return self::FAILURE;
+        }
+
+        // Bảng NDB → fdc_id từ bộ SR Legacy đã giải nén.
+        $ndbToFdc = [];
+        $srMap = storage_path('imports/sr_legacy_extract/FoodData_Central_sr_legacy_food_csv_2018-04/sr_legacy_food.csv');
+        if (is_file($srMap)) {
+            foreach ($this->csvRows($srMap) as $row) {
+                $ndbToFdc[ltrim($row['NDB_number'], '0')] = $row['fdc_id'];
+            }
+        } else {
+            $this->warn('Thiếu sr_legacy_food.csv — external_id (fdc_id) sẽ để trống.');
+        }
+
+        $outPath = base_path('data/reference/usda-cooking-yields.csv');
+        $out = fopen($outPath, 'wb');
+        fputcsv($out, ['ndb_number', 'external_id', 'food_description', 'preparation_method', 'yield_pct', 'yield_min_pct', 'yield_max_pct', 'moisture_change_pct', 'fat_change_pct', 'sample_n', 'release_year'], escape: '\\');
+
+        $na = fn (string $v): ?string => in_array(trim($v), ['', 'n/a'], true) ? null : trim($v);
+        $kept = 0;
+
+        DB::transaction(function () use ($csv, $ndbToFdc, $out, $na, &$kept) {
+            DB::table('cooking_yields')->delete();
+            foreach ($this->csvRows($csv) as $row) {
+                // Header gốc có khoảng trắng thừa — chuẩn hoá khoá.
+                $r = [];
+                foreach ($row as $k => $v) {
+                    $r[trim((string) $k)] = $v;
+                }
+                $ndb = ltrim(trim((string) $r['NDB']), '0');
+                $yield = $na((string) $r['Cooking Yield %']);
+                if ($ndb === '' || $yield === null) {
+                    continue;
+                }
+                $record = [
+                    'ndb_number' => $ndb,
+                    'external_id' => $ndbToFdc[$ndb] ?? null,
+                    'food_description' => trim((string) $r['Yield Description']),
+                    'preparation_method' => trim((string) $r['Preparation Method1']),
+                    'yield_pct' => round((float) $yield, 2),
+                    'yield_min_pct' => $na((string) $r['Yield Minimum %']),
+                    'yield_max_pct' => $na((string) $r['Yield Maximum %']),
+                    'moisture_change_pct' => $na((string) $r['Moisture Gain/ Loss %']),
+                    'fat_change_pct' => $na((string) $r['Fat   Gain/ Loss %']),
+                    'sample_n' => $na((string) $r['n']),
+                    'release_year' => $na((string) $r['Release Year2']),
+                ];
+                fputcsv($out, array_values($record), escape: '\\');
+                DB::table('cooking_yields')->insert($record + [
+                    'fct_source' => 'usda_cooking_yields_r2',
+                    'imported_at' => Date::now(),
+                ]);
+                $kept++;
+            }
+        });
+        fclose($out);
+
+        $manifestPath = base_path('data/reference/MANIFEST.json');
+        $manifest = json_decode((string) file_get_contents($manifestPath), true) ?? [];
+        $manifest['usda-cooking-yields.csv'] = [
+            'source_url' => 'https://agdatacommons.nal.usda.gov/articles/dataset/USDA_Table_of_Cooking_Yields_for_Meat_and_Poultry/24660864',
+            'source_release' => 'USDA Table of Cooking Yields for Meat and Poultry, Release 2 (file USDA_CookingYields_MeatPoultry02.csv)',
+            'downloaded_at' => Date::now()->toDateString(),
+            'original_sha256' => hash_file('sha256', $csv),
+            'filtered_rows' => $kept,
+            'license' => 'Public domain / CC0 (USDA ARS)',
+            'filter_note' => 'Giữ toàn bộ dòng có Cooking Yield %; chuẩn hoá n/a → rỗng; nối NDB → fdc_id SR Legacy qua sr_legacy_food.csv. Bỏ cột Food Group Code.',
+        ];
+        $json = json_encode($manifest, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_THROW_ON_ERROR);
+        $json = preg_replace_callback('/^ +/m', fn (array $m) => str_repeat(' ', intdiv(strlen($m[0]), 2)), $json);
+        file_put_contents($manifestPath, $json."\n");
+
+        $this->info("Đã nạp {$kept} dòng hệ số hao hụt vào cooking_yields; bản lọc: {$outPath}.");
 
         return self::SUCCESS;
     }

@@ -169,7 +169,10 @@ tra trùng lặp nhanh. Không sửa tay file này.
 | `density_g_per_ml` | | Quy đổi thể tích → khối lượng |
 | `density_note` | ✅ khi có `density_g_per_ml` | **Bắt buộc ghi là đo hay suy ra**, và suy từ đâu |
 | `default_yield_factor` | | Hệ số hao hụt khi nấu. `null` là hợp lệ khi không tra được |
+| `default_yield_factor_note` | ✅ khi có `default_yield_factor` | Suy từ dòng nào của bảng USDA Cooking Yields R2 (NDB + phương pháp) — bổ sung 2026-08-31, DATA-004 |
 | `oil_absorption_pct` | | % dầu hấp thụ khi chiên. `null` khi không có số đo |
+| `edible_portion_pct` | | % phần ăn được của khối lượng mua ở chợ (cả xương/vỏ) — bổ sung 2026-08-31, DATA-008. `null` + `edible_portion_note` giải thích là hợp lệ |
+| `edible_portion_note` | ✅ khi có `edible_portion_pct` | Nguồn: foodMeasures USDA hoặc phép cân (ghi ngày + phương pháp) |
 | `is_ready_to_eat` | ✅ | `true` = đã chín/ăn liền (giò lụa, lạp xưởng, cơm) → engine **không** áp hệ số hao hụt |
 | `units[]` | | Quy đổi đơn vị đời thường; mỗi dòng **bắt buộc có `source`** |
 | `source` / `confidence` / `needs_review` | ✅ | Ba cột chuẩn của mọi bảng biên soạn |
@@ -238,6 +241,11 @@ tra trùng lặp nhanh. Không sửa tay file này.
   "needs_review": false
 }
 ```
+
+> **Bổ sung 2026-08-31 (DATA-008):** dòng nguyên liệu trong file món nhận thêm khoá tuỳ chọn
+> `is_edible_weight: true` khi `quantity` ĐÃ là phần ăn được (nguồn công thức ghi thịt đã
+> lọc xương/bóc vỏ). Mặc định vắng khoá = khối lượng mua ở chợ, engine tự nhân
+> `edible_portion_pct` — quy ước [EDITORIAL-GUIDE §11](../09-standards/EDITORIAL-GUIDE.md).
 
 > ⚠️ **`ingredient_slug` phải khớp tên file có thật trong `data/ingredients/`.** Ví dụ trên dùng
 > `banh-pho-tuoi` và `nuoc-mam-truyen-thong` — không phải `banh-pho` / `nuoc-mam`, vì hai nguyên
