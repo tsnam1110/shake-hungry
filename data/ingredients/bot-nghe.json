@@ -25,7 +25,10 @@
   "density_g_per_ml": 0.62,
   "density_note": "SUY RA từ foodMeasures: muỗng cà phê 3,0 g / 4,929 ml = 0,61; muỗng canh 9,4 / 14,787 = 0,64. Hai điểm khớp nhau. Bulk density dạng bột.",
   "default_yield_factor": null,
+  "default_yield_factor_note": null,
   "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
   "is_ready_to_eat": false,
   "units": [
     {

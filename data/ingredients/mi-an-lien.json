@@ -1,0 +1,44 @@
+{
+  "slug": "mi-an-lien",
+  "name_vi": "Mì ăn liền (mì gói, vắt khô chưa nấu)",
+  "name_en": "Instant ramen noodles, dry",
+  "category": "tinh-bot",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "171177",
+    "source_url": "https://fdc.nal.usda.gov/food-details/171177/nutrients",
+    "scientific_name": null,
+    "kcal_per_100g": 440,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 10.17,
+    "fat_g": 17.59,
+    "carb_g": 60.26,
+    "fiber_g": 2.9,
+    "water_g": 6.52,
+    "sodium_mg": 1855,
+    "mapping_confidence": "medium",
+    "mapping_note": "'Soup, ramen noodle, any flavor, dry' — mì chiên sấy kèm gói gia vị, cùng công nghệ mì gói VN (Hảo Hảo, Omachi vắt chiên). Medium vì trọng lượng vắt và lượng gia vị mỗi hãng khác nhau; natri đặc biệt biến động. Khi cần chính xác cho một nhãn cụ thể, đọc nhãn sản phẩm (nguồn cấp 4, DATA-PIPELINE §7.2) và ghi secondary_sources.",
+    "alternatives": [
+      {
+        "name": "Soup, ramen noodle, dry, any flavor, reduced fat, reduced sodium",
+        "why_not": "Bản reduced fat/sodium — không phải mì gói phổ thông VN",
+        "external_id": "171822",
+        "kcal_per_100g": 350
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "medium",
+  "needs_review": true
+}

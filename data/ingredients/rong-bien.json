@@ -1,0 +1,44 @@
+{
+  "slug": "rong-bien",
+  "name_vi": "Rong biển tươi (nấu canh)",
+  "name_en": "Seaweed (laver), raw",
+  "category": "rau-cu",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "168458",
+    "source_url": "https://fdc.nal.usda.gov/food-details/168458/nutrients",
+    "scientific_name": "Porphyra spp.",
+    "kcal_per_100g": 35,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 5.81,
+    "fat_g": 0.28,
+    "carb_g": 5.11,
+    "fiber_g": 0.3,
+    "water_g": 85.03,
+    "sodium_mg": 48,
+    "mapping_confidence": "medium",
+    "mapping_note": "'Seaweed, laver, raw' — laver (Porphyra) là chi làm nori/canh rong biển. Medium vì 'rong biển' VN gộp nhiều chi (Porphyra, kelp/Laminaria, Gracilaria…); canh rong biển kiểu Hàn thường dùng miyeok (Undaria) không có bản raw trong SR Legacy. Lá kim khô cuộn cơm khác mẫu số (đã sấy) — cần slug riêng nếu dùng.",
+    "alternatives": [
+      {
+        "name": "Seaweed, kelp, raw",
+        "why_not": "Kelp — chi Laminaria, dùng nấu dashi hơn là canh rong biển VN",
+        "external_id": "168457",
+        "kcal_per_100g": 43
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "medium",
+  "needs_review": true
+}

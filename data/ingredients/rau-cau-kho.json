@@ -1,0 +1,44 @@
+{
+  "slug": "rau-cau-kho",
+  "name_vi": "Rau câu (agar) khô",
+  "name_en": "Agar, dried",
+  "category": "khac",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "170090",
+    "source_url": "https://fdc.nal.usda.gov/food-details/170090/nutrients",
+    "scientific_name": null,
+    "kcal_per_100g": 306,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 6.21,
+    "fat_g": 0.3,
+    "carb_g": 80.88,
+    "fiber_g": 7.7,
+    "water_g": 8.68,
+    "sodium_mg": 102,
+    "mapping_confidence": "high",
+    "mapping_note": "'Seaweed, agar, dried' — bột/sợi rau câu khô làm thạch. LƯU Ý CALORIE-ENGINE §4b: carb của agar gần như toàn bộ là xơ không tiêu hoá — engine đã có hiệu chỉnh xơ, nhưng kcal hiển thị của USDA (306) cao hơn nhiều năng lượng hấp thu thực.",
+    "alternatives": [
+      {
+        "name": "Seaweed, agar, raw",
+        "why_not": "Bản raw (tươi) — thạch VN dùng bột/sợi khô",
+        "external_id": "169280",
+        "kcal_per_100g": 26
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

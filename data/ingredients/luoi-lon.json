@@ -1,0 +1,44 @@
+{
+  "slug": "luoi-lon",
+  "name_vi": "Lưỡi lợn (sống)",
+  "name_en": "Pork tongue, raw",
+  "category": "thit",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "168275",
+    "source_url": "https://fdc.nal.usda.gov/food-details/168275/nutrients",
+    "scientific_name": "Sus scrofa domesticus",
+    "kcal_per_100g": 225,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 16.3,
+    "fat_g": 17.2,
+    "carb_g": 0,
+    "fiber_g": 0,
+    "water_g": 65.9,
+    "sodium_mg": 110,
+    "mapping_confidence": "high",
+    "mapping_note": "'Pork, fresh, variety meats and by-products, tongue, raw' — lưỡi heo (luộc, khìa).",
+    "alternatives": [
+      {
+        "name": "Pork, fresh, variety meats and by-products, tongue, cooked, braised",
+        "why_not": "Bản braised — công thức ghi khối lượng sống",
+        "external_id": "168276",
+        "kcal_per_100g": 271
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

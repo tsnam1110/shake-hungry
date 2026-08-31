@@ -1,0 +1,44 @@
+{
+  "slug": "mong-gio",
+  "name_vi": "Móng giò (chân giò heo, sống)",
+  "name_en": "Pork feet/trotters, raw",
+  "category": "thit",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "167859",
+    "source_url": "https://fdc.nal.usda.gov/food-details/167859/nutrients",
+    "scientific_name": "Sus scrofa domesticus",
+    "kcal_per_100g": 212,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 23.16,
+    "fat_g": 12.59,
+    "carb_g": 0,
+    "fiber_g": 0,
+    "water_g": 64.99,
+    "sodium_mg": 132,
+    "mapping_confidence": "high",
+    "mapping_note": "'Pork, fresh, variety meats and by-products, feet, raw' — đúng móng giò (gồm da, gân, mỡ). Giá trị trên PHẦN ĂN ĐƯỢC đã loại xương; móng giò ở chợ bán cả xương — cần hệ số phần ăn được, chưa tra được nguồn cho móng giò (DATA-008, cần tự cân). Món móng giò nên ghi khối lượng theo quy ước chợ và chấp nhận confidence thấp hơn cho tới khi có hệ số.",
+    "alternatives": [
+      {
+        "name": "Pork, fresh, leg (ham), shank half, separable lean and fat, raw",
+        "why_not": "Shank half (bắp đùi sau) — là thịt nạc đùi, không phải móng giò có da gân",
+        "external_id": "168226",
+        "kcal_per_100g": 193
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": "CHƯA CÓ hệ số có nguồn: móng giò bán cả xương ống; foodMeasures FDC 167859 không có mục yield. Cần tự cân — tỷ lệ xương móng giò lớn, thiếu hệ số này món giả cầy/canh móng giò sẽ bị vống calo.",
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

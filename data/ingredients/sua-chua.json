@@ -38,7 +38,10 @@
   "density_g_per_ml": 1.036,
   "density_note": "SUY RA, CHỈ MỘT ĐIỂM: cup 245/236,588 = 1,0356. Ba measure còn lại là 'container 8/6/4 oz' tính theo khối lượng nên không dùng quy đổi thể tích được. Không có điểm kiểm chứng chéo — độ tin cậy trung bình.",
   "default_yield_factor": null,
+  "default_yield_factor_note": null,
   "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
   "is_ready_to_eat": false,
   "units": [
     {

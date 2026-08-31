@@ -25,7 +25,10 @@
   "density_g_per_ml": 1.42,
   "density_note": "SUY RA, kiểm chứng chéo 2 điểm: cup 339/236,588 = 1,4328; muỗng canh 21/14,787 = 1,4202. Lấy 1,42 (thận trọng hơn). Mật ong đặc/loãng theo độ ẩm nên 1,40–1,45 là dải thực tế.",
   "default_yield_factor": null,
+  "default_yield_factor_note": null,
   "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
   "is_ready_to_eat": false,
   "units": [
     {

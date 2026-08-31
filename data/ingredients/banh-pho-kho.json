@@ -1,0 +1,44 @@
+{
+  "slug": "banh-pho-kho",
+  "name_vi": "Bánh phở khô",
+  "name_en": "Dried rice noodles (pho)",
+  "category": "tinh-bot",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "169742",
+    "source_url": "https://fdc.nal.usda.gov/food-details/169742/nutrients",
+    "scientific_name": null,
+    "kcal_per_100g": 364,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 5.95,
+    "fat_g": 0.56,
+    "carb_g": 80.18,
+    "fiber_g": 1.6,
+    "water_g": 11.91,
+    "sodium_mg": 182,
+    "mapping_confidence": "medium",
+    "mapping_note": "'Rice noodles, dry' — sợi gạo khô, cùng dòng với bun-kho (đã dùng 169742, medium). SR Legacy không phân biệt bún/phở/hủ tiếu; thành phần cùng là bột gạo nên chấp nhận chung một dòng, tách slug để công thức món ghi đúng loại sợi. Nấu chín thì dùng hệ số hút nước, KHÔNG đổi sang dòng cooked 168914 giữa chừng (QT-4).",
+    "alternatives": [
+      {
+        "name": "Rice noodles, cooked",
+        "why_not": "Bản cooked — công thức món ghi khối lượng sợi KHÔ; trộn dòng raw/cooked trong một món là sai hệ thống",
+        "external_id": "168914",
+        "kcal_per_100g": 108
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "medium",
+  "needs_review": true
+}

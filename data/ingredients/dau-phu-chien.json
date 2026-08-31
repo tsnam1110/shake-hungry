@@ -1,0 +1,44 @@
+{
+  "slug": "dau-phu-chien",
+  "name_vi": "Đậu phụ chiên sẵn",
+  "name_en": "Tofu, fried",
+  "category": "khac",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "172451",
+    "source_url": "https://fdc.nal.usda.gov/food-details/172451/nutrients",
+    "scientific_name": null,
+    "kcal_per_100g": 270,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 18.82,
+    "fat_g": 20.18,
+    "carb_g": 8.86,
+    "fiber_g": 3.9,
+    "water_g": 50.52,
+    "sodium_mg": 16,
+    "mapping_confidence": "medium",
+    "mapping_note": "'Tofu, fried' — đậu phụ đã chiên kiểu bán sẵn ở chợ (270 kcal so với đậu phụ tươi 61–144 tuỳ loại). Medium vì độ hút dầu phụ thuộc cỡ miếng và độ chiên; đậu chiên VN thường miếng to hơn aburaage Nhật. Dùng cho công thức mua đậu ĐÃ chiên; nếu món tự chiên đậu tươi thì dùng dau-phu + cooking_method chiên để engine cộng dầu.",
+    "alternatives": [
+      {
+        "name": "Tofu, raw, firm, prepared with calcium sulfate",
+        "why_not": "Tofu raw firm — đó là phạm vi của slug dau-phu",
+        "external_id": "172475",
+        "kcal_per_100g": 144
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": true,
+  "units": [],
+  "source": "curated",
+  "confidence": "medium",
+  "needs_review": true
+}

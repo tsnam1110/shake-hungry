@@ -1,0 +1,44 @@
+{
+  "slug": "muop-dang",
+  "name_vi": "Mướp đắng (khổ qua, sống)",
+  "name_en": "Bitter melon, raw",
+  "category": "rau-cu",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "168393",
+    "source_url": "https://fdc.nal.usda.gov/food-details/168393/nutrients",
+    "scientific_name": "Momordica charantia",
+    "kcal_per_100g": 17,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 1,
+    "fat_g": 0.17,
+    "carb_g": 3.7,
+    "fiber_g": 2.8,
+    "water_g": 94.03,
+    "sodium_mg": 5,
+    "mapping_confidence": "high",
+    "mapping_note": "'Balsam-pear (bitter gourd), pods, raw' — trái khổ qua (canh khổ qua nhồi thịt, xào trứng). Đọt/lá khổ qua là dòng 'leafy tips' riêng.",
+    "alternatives": [
+      {
+        "name": "Balsam-pear (bitter gourd), leafy tips, raw",
+        "why_not": "Leafy tips — là ĐỌT lá, không phải trái",
+        "external_id": "168391",
+        "kcal_per_100g": 30
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

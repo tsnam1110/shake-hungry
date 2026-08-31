@@ -1,0 +1,50 @@
+{
+  "slug": "thit-lon-mong",
+  "name_vi": "Thịt lợn mông (mông sấn, sống)",
+  "name_en": "Pork leg (ham), lean and fat, raw",
+  "category": "thit",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "168222",
+    "source_url": "https://fdc.nal.usda.gov/food-details/168222/nutrients",
+    "scientific_name": "Sus scrofa domesticus",
+    "kcal_per_100g": 245,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 17.43,
+    "fat_g": 18.87,
+    "carb_g": 0,
+    "fiber_g": 0,
+    "water_g": 62.47,
+    "sodium_mg": 47,
+    "mapping_confidence": "high",
+    "mapping_note": "'Pork, fresh, leg (ham), whole, separable lean and fat, raw' — thịt mông sấn cả nạc lẫn mỡ, phần thịt luộc/kho phổ biến. Nếu công thức ghi 'mông nạc' (lọc mỡ) thì đúng dòng là 168224 lean only (136 kcal) — xem alternatives.",
+    "alternatives": [
+      {
+        "name": "Pork, fresh, leg (ham), whole, separable lean only, raw",
+        "why_not": "Lean only — dùng khi công thức ghi rõ nạc mông đã lọc mỡ",
+        "external_id": "168224",
+        "kcal_per_100g": 136
+      },
+      {
+        "name": "Pork, fresh, leg (ham), shank half, separable lean and fat, raw",
+        "why_not": "Shank half — phần bắp thấp hơn, ít mỡ hơn mông sấn",
+        "external_id": "168226",
+        "kcal_per_100g": 193
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": 0.79,
+  "default_yield_factor_note": "SUY TỪ USDA Table of Cooking Yields for Meat and Poultry R2 (data/reference/usda-cooking-yields.csv), NDB 10017 'Pork, fresh, leg (ham), shank half — Baked or Roasted' = 79%. Bảng không có dòng luộc cho thịt đùi tươi; ghi nhận sai lệch có thể có khi áp cho thịt luộc.",
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

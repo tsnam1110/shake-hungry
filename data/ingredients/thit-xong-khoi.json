@@ -1,0 +1,50 @@
+{
+  "slug": "thit-xong-khoi",
+  "name_vi": "Ba chỉ xông khói (bacon, chưa chế biến)",
+  "name_en": "Bacon, unprepared",
+  "category": "thit",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "168277",
+    "source_url": "https://fdc.nal.usda.gov/food-details/168277/nutrients",
+    "scientific_name": "Sus scrofa domesticus",
+    "kcal_per_100g": 393,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 13.66,
+    "fat_g": 37.13,
+    "carb_g": 0,
+    "fiber_g": 0,
+    "water_g": 46.74,
+    "sodium_mg": 751,
+    "mapping_confidence": "high",
+    "mapping_note": "'Pork, cured, bacon, unprepared' — ba chỉ muối xông khói lát mỏng, giá trị TRƯỚC khi chiên/áp chảo. Sau khi chiên mất nước và chảy mỡ, kcal/100g tăng vọt (548 ở bản cooked) — engine xử lý qua cooking_method, KHÔNG đổi dòng giữa chừng.",
+    "alternatives": [
+      {
+        "name": "Pork, cured, bacon, cooked, baked",
+        "why_not": "Bản cooked, baked — công thức ghi khối lượng lát sống",
+        "external_id": "167914",
+        "kcal_per_100g": 548
+      },
+      {
+        "name": "Canadian bacon, unprepared",
+        "why_not": "Canadian bacon là thăn muối, nạc hơn hẳn ba chỉ xông khói",
+        "external_id": "167869",
+        "kcal_per_100g": 110
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

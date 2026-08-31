@@ -1,0 +1,44 @@
+{
+  "slug": "bo-thuc-vat",
+  "name_vi": "Bơ thực vật (margarine)",
+  "name_en": "Margarine, regular, 80% fat",
+  "category": "dau-mo",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "172346",
+    "source_url": "https://fdc.nal.usda.gov/food-details/172346/nutrients",
+    "scientific_name": null,
+    "kcal_per_100g": 717,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 0.16,
+    "fat_g": 80.71,
+    "carb_g": 0.7,
+    "fiber_g": 0,
+    "water_g": 16.52,
+    "sodium_mg": 751,
+    "mapping_confidence": "medium",
+    "mapping_note": "'Margarine, regular, 80% fat, composite, stick, with salt' — bơ thực vật dạng thỏi/hộp (Tường An, Meizan). Medium vì margarine VN có loại 70–80% béo; nhãn cụ thể chính xác hơn (cấp 4). Bơ ĐỘNG VẬT đã có slug bo-dong-vat riêng.",
+    "alternatives": [
+      {
+        "name": "Margarine-like, vegetable oil spread, stick or tub, sweetened",
+        "why_not": "Vegetable oil spread có đường (sweetened) — không phải margarine nấu ăn phổ thông",
+        "external_id": "169860",
+        "kcal_per_100g": 534
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": true,
+  "units": [],
+  "source": "curated",
+  "confidence": "medium",
+  "needs_review": true
+}

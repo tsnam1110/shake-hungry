@@ -24,7 +24,10 @@
   "density_g_per_ml": 0.592,
   "density_note": "SUY RA: 140 g/cup (FDC 174258 foodMeasures) chia 236,588 ml. Bulk, sợi khô rối.",
   "default_yield_factor": null,
+  "default_yield_factor_note": null,
   "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
   "is_ready_to_eat": false,
   "units": [
     {

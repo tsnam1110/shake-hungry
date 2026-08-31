@@ -1,0 +1,44 @@
+{
+  "slug": "xot-mayonnaise",
+  "name_vi": "Xốt mayonnaise",
+  "name_en": "Mayonnaise, regular",
+  "category": "gia-vi",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "171009",
+    "source_url": "https://fdc.nal.usda.gov/food-details/171009/nutrients",
+    "scientific_name": null,
+    "kcal_per_100g": 680,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 0.96,
+    "fat_g": 74.85,
+    "carb_g": 0.57,
+    "fiber_g": 0,
+    "water_g": 21.65,
+    "sodium_mg": 635,
+    "mapping_confidence": "high",
+    "mapping_note": "'Salad dressing, mayonnaise, regular' — mayonnaise béo đầy đủ (bánh mì, xốt trộn). Bản giảm béo là dòng khác, khác gấp đôi kcal — đọc nhãn nếu công thức dùng loại light.",
+    "alternatives": [
+      {
+        "name": "Mayonnaise, reduced-calorie or diet, cholesterol-free",
+        "why_not": "Reduced-calorie — chỉ dùng khi công thức ghi rõ mayonnaise light",
+        "external_id": "168094",
+        "kcal_per_100g": 333
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": true,
+  "units": [],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

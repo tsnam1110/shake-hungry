@@ -1,0 +1,44 @@
+{
+  "slug": "bi-lon",
+  "name_vi": "Bì lợn (da heo sống)",
+  "name_en": "Pork skin, raw",
+  "category": "thit",
+  "reference_food": {
+    "fct_source": null,
+    "external_id": null,
+    "source_url": null,
+    "scientific_name": "Sus scrofa domesticus",
+    "kcal_per_100g": null,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": null,
+    "fat_g": null,
+    "carb_g": null,
+    "fiber_g": null,
+    "water_g": null,
+    "sodium_mg": null,
+    "mapping_confidence": "low",
+    "mapping_note": "KHÔNG TRA ĐƯỢC trong SR Legacy (bản 2018-04, tra cục bộ): 'pork skin'/'pork rind' chỉ ra snack da heo CHIÊN PHỒNG (167961, 544 kcal) — đã chiên ngập dầu, không suy ngược được về da sống luộc (bì cuốn, cơm tấm) vì khác hẳn nước và dầu. VIỆC CẦN LÀM: tra Ciqual ('couenne')/CNF online. Món có bì hiện 'chưa đủ dữ liệu'.",
+    "alternatives": [
+      {
+        "name": "Snacks, pork skins, plain",
+        "why_not": "Snack chiên phồng — mất nước và ngấm dầu, không cùng mẫu số với bì luộc",
+        "external_id": "167961",
+        "kcal_per_100g": 544
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "unknown",
+  "needs_review": true
+}

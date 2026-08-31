@@ -1,0 +1,44 @@
+{
+  "slug": "tau-hu-ky",
+  "name_vi": "Tàu hũ ky (váng đậu)",
+  "name_en": "Dried beancurd skin (yuba)",
+  "category": "khac",
+  "reference_food": {
+    "fct_source": null,
+    "external_id": null,
+    "source_url": null,
+    "scientific_name": null,
+    "kcal_per_100g": null,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": null,
+    "fat_g": null,
+    "carb_g": null,
+    "fiber_g": null,
+    "water_g": null,
+    "sodium_mg": null,
+    "mapping_confidence": "low",
+    "mapping_note": "KHÔNG TRA ĐƯỢC trong SR Legacy (bản 2018-04, tra cục bộ): 'yuba' 0 kết quả; các mục tofu không có váng đậu. Dòng gần nhất 'Tofu, dried-frozen (koyadofu)' 172450 bị loại vì là đậu phụ đông khô kiểu Nhật, công nghệ khác váng đậu. VIỆC CẦN LÀM: tra Ciqual/CNF online hoặc nhãn sản phẩm VN (cấp 4). Món chứa tàu hũ ky hiện 'chưa đủ dữ liệu'.",
+    "alternatives": [
+      {
+        "name": "Tofu, dried-frozen (koyadofu)",
+        "why_not": "Koyadofu là đậu phụ đông khô, không phải váng sữa đậu vớt màng",
+        "external_id": "172450",
+        "kcal_per_100g": 477
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "unknown",
+  "needs_review": true
+}

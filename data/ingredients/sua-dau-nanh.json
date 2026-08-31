@@ -1,0 +1,44 @@
+{
+  "slug": "sua-dau-nanh",
+  "name_vi": "Sữa đậu nành (không đường)",
+  "name_en": "Soymilk, unsweetened/original",
+  "category": "khac",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "172446",
+    "source_url": "https://fdc.nal.usda.gov/food-details/172446/nutrients",
+    "scientific_name": "Glycine max",
+    "kcal_per_100g": 54,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 3.27,
+    "fat_g": 1.75,
+    "carb_g": 6.28,
+    "fiber_g": 0.6,
+    "water_g": 88.05,
+    "sodium_mg": 51,
+    "mapping_confidence": "medium",
+    "mapping_note": "'Soymilk, original and vanilla, unfortified' — gần nhất với sữa đậu nành nấu/bán chai không bổ sung vi chất. Medium vì sữa đậu nành VN (nấu thủ công, Fami, Vinamilk) chênh nhau về tỷ lệ đậu và ĐƯỜNG THÊM — bản có đường phải cộng riêng đường trong công thức hoặc đọc nhãn (cấp 4).",
+    "alternatives": [
+      {
+        "name": "Soymilk (All flavors), enhanced",
+        "why_not": "Bản enhanced có bổ sung vi chất — không phản ánh sữa nấu thủ công",
+        "external_id": "173765",
+        "kcal_per_100g": 45
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": true,
+  "units": [],
+  "source": "curated",
+  "confidence": "medium",
+  "needs_review": true
+}

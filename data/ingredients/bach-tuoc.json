@@ -1,0 +1,44 @@
+{
+  "slug": "bach-tuoc",
+  "name_vi": "Bạch tuộc (sống)",
+  "name_en": "Octopus, raw",
+  "category": "thuy-san",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "174218",
+    "source_url": "https://fdc.nal.usda.gov/food-details/174218/nutrients",
+    "scientific_name": "Octopus vulgaris",
+    "kcal_per_100g": 82,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 14.91,
+    "fat_g": 1.04,
+    "carb_g": 2.2,
+    "fiber_g": 0,
+    "water_g": 80.25,
+    "sodium_mg": 230,
+    "mapping_confidence": "high",
+    "mapping_note": "'Mollusks, octopus, common, raw' — bạch tuộc (nướng sa tế, lẩu). Bạch tuộc ăn gần trọn con nên không cần hệ số phần ăn được đáng kể.",
+    "alternatives": [
+      {
+        "name": "Mollusks, octopus, common, cooked, moist heat",
+        "why_not": "Bản cooked — công thức ghi khối lượng sống",
+        "external_id": "174249",
+        "kcal_per_100g": 164
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

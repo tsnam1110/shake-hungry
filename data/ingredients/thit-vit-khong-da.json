@@ -32,7 +32,10 @@
   "density_g_per_ml": null,
   "density_note": null,
   "default_yield_factor": null,
+  "default_yield_factor_note": "CHƯA CÓ hệ số có nguồn: bảng USDA CY R2 không có vịt (xem thit-vit-co-da).",
   "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
   "is_ready_to_eat": false,
   "units": [
     {

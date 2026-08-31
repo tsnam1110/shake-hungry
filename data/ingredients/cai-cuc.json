@@ -1,0 +1,44 @@
+{
+  "slug": "cai-cuc",
+  "name_vi": "Cải cúc (tần ô, sống)",
+  "name_en": "Garland chrysanthemum, raw",
+  "category": "rau-cu",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "169995",
+    "source_url": "https://fdc.nal.usda.gov/food-details/169995/nutrients",
+    "scientific_name": "Glebionis coronaria",
+    "kcal_per_100g": 24,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 3.36,
+    "fat_g": 0.56,
+    "carb_g": 3.02,
+    "fiber_g": 3,
+    "water_g": 91.4,
+    "sodium_mg": 118,
+    "mapping_confidence": "high",
+    "mapping_note": "'Chrysanthemum, garland, raw' — rau cải cúc/tần ô (canh, lẩu, ăn kèm mì).",
+    "alternatives": [
+      {
+        "name": "Chrysanthemum leaves, raw",
+        "why_not": "'Chrysanthemum leaves' — lá cúc khác, kcal giống nhưng giữ đúng dòng garland",
+        "external_id": "168491",
+        "kcal_per_100g": 24
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

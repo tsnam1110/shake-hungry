@@ -1,0 +1,44 @@
+{
+  "slug": "ot-bot",
+  "name_vi": "Ớt bột (nguyên chất)",
+  "name_en": "Ground red chili (cayenne)",
+  "category": "gia-vi",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "170932",
+    "source_url": "https://fdc.nal.usda.gov/food-details/170932/nutrients",
+    "scientific_name": "Capsicum spp.",
+    "kcal_per_100g": 318,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 12.01,
+    "fat_g": 17.27,
+    "carb_g": 56.63,
+    "fiber_g": 27.2,
+    "water_g": 8.05,
+    "sodium_mg": 30,
+    "mapping_confidence": "high",
+    "mapping_note": "'Spices, pepper, red or cayenne' — ớt bột nguyên chất. KHÔNG dùng 'Spices, chili powder' (171319) — đó là HỖN HỢP kiểu Mỹ có thìa là/tỏi/muối, không phải ớt bột VN. Ớt bột Hàn (gochugaru) thô hơn nhưng cùng bản chất.",
+    "alternatives": [
+      {
+        "name": "Spices, chili powder",
+        "why_not": "Chili powder Mỹ là hỗn hợp gia vị (cumin, tỏi, muối) — không phải ớt nguyên chất",
+        "external_id": "171319",
+        "kcal_per_100g": 282
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

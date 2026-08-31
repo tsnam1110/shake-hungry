@@ -38,7 +38,10 @@
   "density_g_per_ml": 0.81,
   "density_note": "SUY RA từ householdServingFullText '1/4 tsp (1 g)' → 1 muỗng cà phê khoảng 4 g / 4,929 ml = 0,81. Đây là BULK DENSITY dạng bột của tinh thể MSG, không phải khối lượng riêng chất rắn. Bản ghi thứ hai (2032559, cùng hãng Ajinomoto) khai cùng tỷ lệ → khớp, nhưng CÙNG hãng nên không phải kiểm chứng độc lập.",
   "default_yield_factor": null,
+  "default_yield_factor_note": null,
   "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
   "is_ready_to_eat": false,
   "units": [
     {

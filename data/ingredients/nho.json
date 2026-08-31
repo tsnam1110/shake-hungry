@@ -1,0 +1,44 @@
+{
+  "slug": "nho",
+  "name_vi": "Nho (tươi)",
+  "name_en": "Grapes, raw",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "174683",
+    "source_url": "https://fdc.nal.usda.gov/food-details/174683/nutrients",
+    "scientific_name": "Vitis vinifera",
+    "kcal_per_100g": 69,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 0.72,
+    "fat_g": 0.16,
+    "carb_g": 18.1,
+    "fiber_g": 0.9,
+    "water_g": 80.54,
+    "sodium_mg": 2,
+    "mapping_confidence": "high",
+    "mapping_note": "'Grapes, red or green (European type, such as Thompson seedless), raw' — nho tươi ăn liền (gồm nho Ninh Thuận cũng là V. vinifera).",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "10 quả",
+      "grams": 49.0,
+      "note": null,
+      "source": "FDC 174683 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

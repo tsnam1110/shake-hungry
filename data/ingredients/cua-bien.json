@@ -1,0 +1,44 @@
+{
+  "slug": "cua-bien",
+  "name_vi": "Cua biển (thịt, sống)",
+  "name_en": "Mud crab / sea crab meat, raw",
+  "category": "thuy-san",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "174204",
+    "source_url": "https://fdc.nal.usda.gov/food-details/174204/nutrients",
+    "scientific_name": "Callinectes sapidus (dòng USDA) — cua biển VN là Scylla spp.",
+    "kcal_per_100g": 87,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 18.06,
+    "fat_g": 1.08,
+    "carb_g": 0.04,
+    "fiber_g": 0,
+    "water_g": 79.02,
+    "sodium_mg": 293,
+    "mapping_confidence": "low",
+    "mapping_note": "'Crustaceans, crab, blue, raw' là ghẹ xanh Đại Tây Dương (Callinectes sapidus); cua biển VN (cua Cà Mau) là chi Scylla — KHÁC CHI, cùng họ Portunidae. Thịt cua họ này có macro tương đồng (nạc, ít béo) nên chấp nhận low thay vì null; hạ confidence theo bẫy loài. GHẸ (Portunus) là mục chờ MEXT (Q6), không gộp vào đây. Giá trị trên THỊT đã tách; cua bán nguyên con — hệ số thịt/con chưa có nguồn (DATA-008, cần tự cân).",
+    "alternatives": [
+      {
+        "name": "Crustaceans, crab, blue, cooked, moist heat",
+        "why_not": "Bản cooked moist heat — công thức ghi khối lượng sống",
+        "external_id": "174205",
+        "kcal_per_100g": 83
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": "CHƯA CÓ hệ số có nguồn: cua biển bán nguyên con cả mai; giá trị trên phần thịt. Cần tự cân (mai+yếm cua chiếm phần lớn khối lượng).",
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "low",
+  "needs_review": true
+}

@@ -1,0 +1,44 @@
+{
+  "slug": "pho-mai",
+  "name_vi": "Phô mai (loại hộp/lát chế biến)",
+  "name_en": "Processed cheese",
+  "category": "khac",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "171290",
+    "source_url": "https://fdc.nal.usda.gov/food-details/171290/nutrients",
+    "scientific_name": null,
+    "kcal_per_100g": 371,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 18.13,
+    "fat_g": 31.79,
+    "carb_g": 3.7,
+    "fiber_g": 0,
+    "water_g": 39.61,
+    "sodium_mg": 1671,
+    "mapping_confidence": "medium",
+    "mapping_note": "'Cheese, pasteurized process, American, without added vitamin D' — đại diện cho phô mai CHẾ BIẾN phổ biến ở VN (Con Bò Cười, phô mai lát kẹp bánh mì). Medium vì phô mai hiệu Pháp (La Vache qui rit) công thức khác American cheese; muốn chính xác cho nhãn cụ thể thì đọc nhãn (cấp 4). Phô mai TƯƠI (mozzarella) hay ủ (cheddar khối) có mục riêng trong SR Legacy, tách slug khi món cần.",
+    "alternatives": [
+      {
+        "name": "Cheese spread, pasteurized process, American",
+        "why_not": "Cheese spread — phết, nhiều nước hơn phô mai miếng",
+        "external_id": "171254",
+        "kcal_per_100g": 290
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": true,
+  "units": [],
+  "source": "curated",
+  "confidence": "medium",
+  "needs_review": true
+}

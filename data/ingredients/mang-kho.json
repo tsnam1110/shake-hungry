@@ -1,0 +1,44 @@
+{
+  "slug": "mang-kho",
+  "name_vi": "Măng khô",
+  "name_en": "Dried bamboo shoots",
+  "category": "rau-cu",
+  "reference_food": {
+    "fct_source": null,
+    "external_id": null,
+    "source_url": null,
+    "scientific_name": null,
+    "kcal_per_100g": null,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": null,
+    "fat_g": null,
+    "carb_g": null,
+    "fiber_g": null,
+    "water_g": null,
+    "sodium_mg": null,
+    "mapping_confidence": "low",
+    "mapping_note": "KHÔNG TRA ĐƯỢC trong SR Legacy (bản 2018-04, tra cục bộ): 'bamboo' chỉ có măng tươi/luộc/đóng hộp, không có bản phơi khô. Không suy từ măng tươi vì mẫu số nước khác hẳn (khô đậm đặc ~5–10 lần). Măng tươi đã có slug mang-tuoi. VIỆC CẦN LÀM: nhãn măng khô đóng gói (cấp 4) hoặc Ciqual. Canh măng khô chân giò hiện thiếu dữ liệu phần măng.",
+    "alternatives": [
+      {
+        "name": "Bamboo shoots, raw",
+        "why_not": "Măng tươi — khác mẫu số nước, không suy ngược được sang khô",
+        "external_id": "169210",
+        "kcal_per_100g": 27
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "unknown",
+  "needs_review": true
+}

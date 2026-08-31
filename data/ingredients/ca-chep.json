@@ -25,7 +25,10 @@
   "density_g_per_ml": null,
   "density_note": null,
   "default_yield_factor": null,
+  "default_yield_factor_note": null,
   "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": "CHƯA CÓ hệ số có nguồn: cá chép bán nguyên con; giá trị trên phi lê ('1 fillet = 218 g' không cho biết tỷ lệ so với cá nguyên con). Cần tự cân (cá nguyên con → phi lê + phần ăn được).",
   "is_ready_to_eat": false,
   "units": [
     {

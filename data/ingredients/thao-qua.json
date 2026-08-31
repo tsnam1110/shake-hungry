@@ -1,0 +1,44 @@
+{
+  "slug": "thao-qua",
+  "name_vi": "Thảo quả (khô)",
+  "name_en": "Black cardamom (tsaoko)",
+  "category": "gia-vi",
+  "reference_food": {
+    "fct_source": null,
+    "external_id": null,
+    "source_url": null,
+    "scientific_name": "Amomum tsao-ko",
+    "kcal_per_100g": null,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": null,
+    "fat_g": null,
+    "carb_g": null,
+    "fiber_g": null,
+    "water_g": null,
+    "sodium_mg": null,
+    "mapping_confidence": "low",
+    "mapping_note": "KHÔNG TRA ĐƯỢC trong SR Legacy (bản 2018-04, tra cục bộ): 'Spices, cardamom' (170919) là bạch đậu khấu xanh Elettaria cardamomum — khác chi với thảo quả Amomum, hương hoàn toàn khác. TÁC ĐỘNG THẤP: thảo quả trong phở luôn bị vớt bỏ (is_discarded).",
+    "alternatives": [
+      {
+        "name": "Spices, cardamom",
+        "why_not": "Green cardamom (Elettaria) — khác chi, chỉ cùng họ gừng",
+        "external_id": "170919",
+        "kcal_per_100g": 311
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "unknown",
+  "needs_review": true
+}

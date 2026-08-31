@@ -1,0 +1,44 @@
+{
+  "slug": "hoa-hoi",
+  "name_vi": "Hoa hồi (đại hồi, khô)",
+  "name_en": "Star anise",
+  "category": "gia-vi",
+  "reference_food": {
+    "fct_source": null,
+    "external_id": null,
+    "source_url": null,
+    "scientific_name": "Illicium verum",
+    "kcal_per_100g": null,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": null,
+    "fat_g": null,
+    "carb_g": null,
+    "fiber_g": null,
+    "water_g": null,
+    "sodium_mg": null,
+    "mapping_confidence": "low",
+    "mapping_note": "KHÔNG TRA ĐƯỢC trong SR Legacy (bản 2018-04, tra cục bộ): 'star anise' 0 kết quả; 'Spices, anise seed' (171316) bị LOẠI vì là tiểu hồi Pimpinella anisum — loài khác hẳn, chỉ trùng mùi. TÁC ĐỘNG THẤP: hoa hồi trong phở/bò kho luôn bị vớt bỏ (is_discarded) nên engine không cần giá trị dinh dưỡng của nó — bản ghi này tồn tại để công thức tham chiếu được slug.",
+    "alternatives": [
+      {
+        "name": "Spices, anise seed",
+        "why_not": "Anise seed = tiểu hồi (Pimpinella anisum), khác chi/họ với đại hồi Illicium verum",
+        "external_id": "171316",
+        "kcal_per_100g": 337
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "unknown",
+  "needs_review": true
+}

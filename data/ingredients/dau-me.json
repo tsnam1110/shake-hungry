@@ -25,7 +25,10 @@
   "density_g_per_ml": 0.92,
   "density_note": "SUY RA, kiểm chứng chéo 3 điểm: muỗng canh 13,6 → 0,9197; muỗng cà phê 4,5 → 0,9130; cup 218 → 0,9214. Cả ba trong 0,913–0,921 — khớp dải chuẩn dầu thực vật ở 20°C.",
   "default_yield_factor": null,
+  "default_yield_factor_note": null,
   "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
   "is_ready_to_eat": false,
   "units": [
     {

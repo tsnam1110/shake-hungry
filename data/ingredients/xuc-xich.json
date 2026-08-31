@@ -1,0 +1,44 @@
+{
+  "slug": "xuc-xich",
+  "name_vi": "Xúc xích (heo, tiệt trùng/xông khói)",
+  "name_en": "Pork frankfurter",
+  "category": "thit",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "172964",
+    "source_url": "https://fdc.nal.usda.gov/food-details/172964/nutrients",
+    "scientific_name": null,
+    "kcal_per_100g": 269,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 12.81,
+    "fat_g": 23.68,
+    "carb_g": 0.28,
+    "fiber_g": 0.1,
+    "water_g": 59.85,
+    "sodium_mg": 816,
+    "mapping_confidence": "medium",
+    "mapping_note": "'Frankfurter, pork' — xúc xích heo kiểu công nghiệp. Medium vì xúc xích VN (Đức Việt, Vissan, xúc xích tiệt trùng que) khác nhau nhiều về tỷ lệ mỡ và tinh bột độn; nhãn sản phẩm cụ thể chính xác hơn (cấp 4).",
+    "alternatives": [
+      {
+        "name": "Sausage, chicken, beef, pork, skinless, smoked",
+        "why_not": "Xúc xích hỗn hợp gà-bò-heo skinless smoked — thành phần hỗn hợp khó đối chiếu nhãn VN",
+        "external_id": "174605",
+        "kcal_per_100g": 216
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": true,
+  "units": [],
+  "source": "curated",
+  "confidence": "medium",
+  "needs_review": true
+}

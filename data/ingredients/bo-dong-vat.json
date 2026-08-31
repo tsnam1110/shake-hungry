@@ -32,7 +32,10 @@
   "density_g_per_ml": 0.96,
   "density_note": "SUY RA, kiểm chứng chéo 3 điểm: muỗng canh 14,2 → 0,9603; cup 227 → 0,9595; stick 113 g (= 1/2 cup) → 0,9553. Bơ là chất RẮN nên đây là khối lượng riêng khi cắt theo khuôn, KHÔNG dùng cho bơ đun chảy.",
   "default_yield_factor": null,
+  "default_yield_factor_note": null,
   "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
   "is_ready_to_eat": false,
   "units": [
     {

@@ -1,0 +1,44 @@
+{
+  "slug": "ca-hoi",
+  "name_vi": "Cá hồi (nuôi, phi lê sống)",
+  "name_en": "Salmon, Atlantic, farmed, raw",
+  "category": "thuy-san",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "175167",
+    "source_url": "https://fdc.nal.usda.gov/food-details/175167/nutrients",
+    "scientific_name": "Salmo salar",
+    "kcal_per_100g": 208,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 20.42,
+    "fat_g": 13.42,
+    "carb_g": 0,
+    "fiber_g": 0,
+    "water_g": 64.89,
+    "sodium_mg": 59,
+    "mapping_confidence": "high",
+    "mapping_note": "'Fish, salmon, Atlantic, farmed, raw' — cá hồi nhập bán tại VN chủ yếu là Atlantic NUÔI (Na Uy/Chile); bản farmed béo gần gấp đôi bản wild nên chọn đúng bản rất quan trọng.",
+    "alternatives": [
+      {
+        "name": "Fish, salmon, Atlantic, wild, raw",
+        "why_not": "Bản wild (6,34 g béo so với 13,42 g) — chỉ dùng nếu chắc chắn cá đánh bắt tự nhiên",
+        "external_id": "173686",
+        "kcal_per_100g": 142
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

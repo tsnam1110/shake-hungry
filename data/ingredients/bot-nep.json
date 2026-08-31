@@ -1,0 +1,44 @@
+{
+  "slug": "bot-nep",
+  "name_vi": "Bột nếp",
+  "name_en": "Glutinous rice flour",
+  "category": "tinh-bot",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "168883",
+    "source_url": "https://fdc.nal.usda.gov/food-details/168883/nutrients",
+    "scientific_name": "Oryza sativa",
+    "kcal_per_100g": 370,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 6.81,
+    "fat_g": 0.55,
+    "carb_g": 81.68,
+    "fiber_g": 2.8,
+    "water_g": 10.46,
+    "sodium_mg": 7,
+    "mapping_confidence": "medium",
+    "mapping_note": "SR Legacy KHÔNG có mục 'glutinous rice flour' (đã tra 'glutinous', 'sweet rice' — chỉ có hạt gạo nếp). Dùng 'Rice, white, glutinous, unenriched, uncooked' vì bột nếp là gạo nếp xay mịn, thành phần trên 100 g gần như đồng nhất với hạt. Hạ medium vì độ ẩm bột thương phẩm có thể khác hạt. Đối chiếu: bột gạo tẻ (bot-gao) dùng 169714, chênh không đáng kể.",
+    "alternatives": [
+      {
+        "name": "Rice flour, white, unenriched",
+        "why_not": "Là bột gạo TẺ — bot-gao đã dùng; giữ nếp/tẻ tách đôi để mapping trung thực dù macro gần nhau",
+        "external_id": "169714",
+        "kcal_per_100g": 366
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "medium",
+  "needs_review": true
+}

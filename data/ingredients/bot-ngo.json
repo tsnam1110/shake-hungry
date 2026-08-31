@@ -1,0 +1,44 @@
+{
+  "slug": "bot-ngo",
+  "name_vi": "Bột ngô (bột bắp)",
+  "name_en": "Cornstarch",
+  "category": "tinh-bot",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "169698",
+    "source_url": "https://fdc.nal.usda.gov/food-details/169698/nutrients",
+    "scientific_name": "Zea mays",
+    "kcal_per_100g": 381,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 0.26,
+    "fat_g": 0.05,
+    "carb_g": 91.27,
+    "fiber_g": 0.9,
+    "water_g": 8.32,
+    "sodium_mg": 9,
+    "mapping_confidence": "high",
+    "mapping_note": "'Cornstarch' khớp đúng bột bắp tinh lọc dùng làm sánh (súp, sốt). LƯU Ý cho người biên soạn món: nếu công thức dùng bột ngô NGUYÊN HẠT xay (cornmeal, làm bánh) thì đây là dòng SAI — cornmeal có mục riêng trong SR Legacy, tra 'cornmeal'.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "muỗng canh",
+      "grams": 8.0,
+      "note": "CỠ MỸ (US tbsp) — cần đo lại với muỗng VN",
+      "source": "suy từ FDC 169698 foodMeasures: 1 cup = 128 g, 1 cup = 16 tbsp"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

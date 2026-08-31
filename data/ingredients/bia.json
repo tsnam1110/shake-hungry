@@ -1,0 +1,44 @@
+{
+  "slug": "bia",
+  "name_vi": "Bia (vàng, thường)",
+  "name_en": "Beer, regular lager",
+  "category": "khac",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "168746",
+    "source_url": "https://fdc.nal.usda.gov/food-details/168746/nutrients",
+    "scientific_name": null,
+    "kcal_per_100g": 43,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 0.46,
+    "fat_g": 0,
+    "carb_g": 3.55,
+    "fiber_g": 0,
+    "water_g": 91.96,
+    "sodium_mg": 4,
+    "mapping_confidence": "high",
+    "mapping_note": "'Alcoholic beverage, beer, regular, all' — trung bình các loại bia thường (~5% cồn), phù hợp bia phổ thông VN (333, Saigon, Tiger ~4,3–5,3%). Bia không cồn/bia đen khác đáng kể — tách slug nếu cần.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": true,
+  "units": [
+    {
+      "unit_name": "lon 330 ml",
+      "grams": 331.4,
+      "note": "SUY RA: 330 ml × (29,7 g / 29,5735 ml) = 331,4 g; foodMeasures ghi 1 fl oz = 29,7 g, 1 can (12 fl oz) = 356 g",
+      "source": "suy từ FDC 168746 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

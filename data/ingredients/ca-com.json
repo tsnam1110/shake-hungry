@@ -1,0 +1,44 @@
+{
+  "slug": "ca-com",
+  "name_vi": "Cá cơm tươi",
+  "name_en": "Fresh anchovy",
+  "category": "thuy-san",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "174182",
+    "source_url": "https://fdc.nal.usda.gov/food-details/174182/nutrients",
+    "scientific_name": "Engraulis encrasicolus (dòng USDA) — cá cơm VN chủ yếu Stolephorus spp.",
+    "kcal_per_100g": 131,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 20.35,
+    "fat_g": 4.84,
+    "carb_g": 0,
+    "fiber_g": 0,
+    "water_g": 73.37,
+    "sodium_mg": 104,
+    "mapping_confidence": "low",
+    "mapping_note": "'Fish, anchovy, european, raw' là Engraulis encrasicolus; cá cơm VN (làm mắm, kho tiêu) chủ yếu chi Stolephorus — KHÁC CHI, cùng họ Engraulidae. Hạ low theo bài học bẫy loài (EDITORIAL-GUIDE §9). Cá cơm KHÔ là 1 trong 5 mục chờ thẩm định MEXT (Q6) — không nhập ở đây.",
+    "alternatives": [
+      {
+        "name": "Fish, anchovy, european, canned in oil, drained solids",
+        "why_not": "Bản đóng hộp ngâm dầu — khác hẳn cá tươi",
+        "external_id": "174183",
+        "kcal_per_100g": 210
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "low",
+  "needs_review": true
+}

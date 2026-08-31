@@ -1,0 +1,51 @@
+{
+  "slug": "chanh-day",
+  "name_vi": "Chanh dây (ruột, tươi)",
+  "name_en": "Passion fruit, raw",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "169108",
+    "source_url": "https://fdc.nal.usda.gov/food-details/169108/nutrients",
+    "scientific_name": "Passiflora edulis",
+    "kcal_per_100g": 97,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 2.2,
+    "fat_g": 0.7,
+    "carb_g": 23.38,
+    "fiber_g": 10.4,
+    "water_g": 72.93,
+    "sodium_mg": 28,
+    "mapping_confidence": "high",
+    "mapping_note": "'Passion-fruit, (granadilla), purple, raw' — ruột chanh dây (pha nước, làm sốt).",
+    "alternatives": [
+      {
+        "name": "Passion-fruit juice, purple, raw",
+        "why_not": "Nước ép đã lọc — mẫu số khác ruột nguyên hạt",
+        "external_id": "169109",
+        "kcal_per_100g": 51
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "quả (phần ruột ăn được)",
+      "grams": 18.0,
+      "note": "foodMeasures 'fruit without refuse' — chỉ phần ruột, đã trừ vỏ",
+      "source": "FDC 169108 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

@@ -1,0 +1,44 @@
+{
+  "slug": "ca-phe-den",
+  "name_vi": "Cà phê đen (nước pha, không đường sữa)",
+  "name_en": "Coffee, brewed, black",
+  "category": "khac",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "171890",
+    "source_url": "https://fdc.nal.usda.gov/food-details/171890/nutrients",
+    "scientific_name": "Coffea",
+    "kcal_per_100g": 1,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 0.12,
+    "fat_g": 0.02,
+    "carb_g": 0,
+    "fiber_g": 0,
+    "water_g": 99.39,
+    "sodium_mg": 2,
+    "mapping_confidence": "medium",
+    "mapping_note": "'Beverages, coffee, brewed, prepared with tap water' — cà phê đen không đường. Medium vì cà phê phin VN đậm đặc hơn brewed Mỹ (tỷ lệ bột/nước cao hơn) nhưng năng lượng vẫn không đáng kể; cà phê sữa phải cộng sua-dac trong công thức món.",
+    "alternatives": [
+      {
+        "name": "Beverages, coffee, brewed, espresso, restaurant-prepared",
+        "why_not": "Espresso — gần phin hơn về độ đậm nhưng khẩu phần tính bằng shot 30 ml, dễ nhập sai đơn vị",
+        "external_id": "171891",
+        "kcal_per_100g": 9
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": true,
+  "units": [],
+  "source": "curated",
+  "confidence": "medium",
+  "needs_review": true
+}

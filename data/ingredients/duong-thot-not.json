@@ -1,0 +1,44 @@
+{
+  "slug": "duong-thot-not",
+  "name_vi": "Đường thốt nốt",
+  "name_en": "Palm sugar",
+  "category": "gia-vi",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "168833",
+    "source_url": "https://fdc.nal.usda.gov/food-details/168833/nutrients",
+    "scientific_name": "Borassus flabellifer",
+    "kcal_per_100g": 380,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 0.12,
+    "fat_g": 0,
+    "carb_g": 98.09,
+    "fiber_g": 0,
+    "water_g": 1.34,
+    "sodium_mg": 28,
+    "mapping_confidence": "low",
+    "mapping_note": "SUY RA (đường đi chính ING-003 mục 2): SR Legacy không có 'palm sugar'/'jaggery'; dùng 'Sugars, brown' vì cùng nhóm sucrose kèm khoáng/mật — gần đường thốt nốt hơn đường tinh luyện. Hạ low vì là suy luận; nhãn đường thốt nốt An Giang (cấp 4) sẽ chính xác hơn.",
+    "alternatives": [
+      {
+        "name": "Sugars, granulated",
+        "why_not": "Đường tinh luyện 100% sucrose — thốt nốt còn giữ mật và khoáng",
+        "external_id": "169655",
+        "kcal_per_100g": 387
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "low",
+  "needs_review": true
+}

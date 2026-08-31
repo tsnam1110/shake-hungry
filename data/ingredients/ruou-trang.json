@@ -1,0 +1,44 @@
+{
+  "slug": "ruou-trang",
+  "name_vi": "Rượu trắng (rượu gạo VN)",
+  "name_en": "Vietnamese rice liquor",
+  "category": "gia-vi",
+  "reference_food": {
+    "fct_source": null,
+    "external_id": null,
+    "source_url": null,
+    "scientific_name": null,
+    "kcal_per_100g": null,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": null,
+    "fat_g": null,
+    "carb_g": null,
+    "fiber_g": null,
+    "water_g": null,
+    "sodium_mg": null,
+    "mapping_confidence": "low",
+    "mapping_note": "KHÔNG TRA ĐƯỢC dòng tương đương trong SR Legacy (bản 2018-04, tra cục bộ). 'Alcoholic beverage, rice (sake)' 167723 bị LOẠI: sake ~15–16% cồn còn rượu trắng VN 29–40% — cồn 7 kcal/g nên chênh gấp đôi, sai có hệ thống. Có thể TÍNH từ độ cồn ghi trên nhãn (%vol × 0,789 g/ml × 7 kcal/g) — đó là phép tính có nguồn, làm khi có nhãn cụ thể (cấp 4). Lượng dùng ướp món thường nhỏ và bay hơi khi nấu nên ưu tiên thấp.",
+    "alternatives": [
+      {
+        "name": "Alcoholic beverage, rice (sake)",
+        "why_not": "Sake 15–16% cồn, bằng nửa rượu trắng VN — kcal sai gấp đôi",
+        "external_id": "167723",
+        "kcal_per_100g": 134
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "unknown",
+  "needs_review": true
+}

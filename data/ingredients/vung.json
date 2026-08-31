@@ -38,7 +38,10 @@
   "density_g_per_ml": 0.609,
   "density_note": "SUY RA, kiểm chứng chéo 2 điểm KHỚP CHÍNH XÁC: cup 144/236,588 = 0,6086; muỗng canh 9/14,787 = 0,6087.",
   "default_yield_factor": null,
+  "default_yield_factor_note": null,
   "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
   "is_ready_to_eat": false,
   "units": [
     {

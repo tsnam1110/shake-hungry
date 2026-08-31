@@ -1,0 +1,44 @@
+{
+  "slug": "cai-thao",
+  "name_vi": "Cải thảo (sống)",
+  "name_en": "Napa cabbage, raw",
+  "category": "rau-cu",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "169979",
+    "source_url": "https://fdc.nal.usda.gov/food-details/169979/nutrients",
+    "scientific_name": "Brassica rapa subsp. pekinensis",
+    "kcal_per_100g": 16,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 1.2,
+    "fat_g": 0.2,
+    "carb_g": 3.23,
+    "fiber_g": 1.2,
+    "water_g": 94.39,
+    "sodium_mg": 9,
+    "mapping_confidence": "high",
+    "mapping_note": "'Cabbage, chinese (pe-tsai), raw' — pe-tsai chính là cải thảo (lẩu, kim chi).",
+    "alternatives": [
+      {
+        "name": "Cabbage, napa, cooked",
+        "why_not": "'Cabbage, napa, cooked' — bản đã nấu, công thức ghi khối lượng sống",
+        "external_id": "168572",
+        "kcal_per_100g": 12
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

@@ -1,0 +1,51 @@
+{
+  "slug": "nuoc-ngot-cola",
+  "name_vi": "Nước ngọt có ga (cola)",
+  "name_en": "Cola, regular",
+  "category": "khac",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "174852",
+    "source_url": "https://fdc.nal.usda.gov/food-details/174852/nutrients",
+    "scientific_name": null,
+    "kcal_per_100g": 42,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 0,
+    "fat_g": 0.25,
+    "carb_g": 10.36,
+    "fiber_g": 0,
+    "water_g": 89.36,
+    "sodium_mg": 3,
+    "mapping_confidence": "high",
+    "mapping_note": "'Beverages, carbonated, cola, regular' — Coca/Pepsi thường có đường. Bản ăn kiêng (0 kcal) là dòng khác, tách slug nếu cần.",
+    "alternatives": [
+      {
+        "name": "Beverages, carbonated, cola, fast-food cola",
+        "why_not": "Fast-food cola pha máy có đá — mẫu số khác lon/chai",
+        "external_id": "175093",
+        "kcal_per_100g": 37
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": true,
+  "units": [
+    {
+      "unit_name": "lon 12 fl oz",
+      "grams": 370.0,
+      "note": "lon 355 ml chuẩn Mỹ; lon VN 320 ml nhẹ hơn ~10%",
+      "source": "FDC 174852 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

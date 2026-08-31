@@ -1,0 +1,44 @@
+{
+  "slug": "dua-cai-muoi",
+  "name_vi": "Dưa cải muối chua",
+  "name_en": "Salted/pickled mustard greens",
+  "category": "rau-cu",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "169891",
+    "source_url": "https://fdc.nal.usda.gov/food-details/169891/nutrients",
+    "scientific_name": "Brassica juncea",
+    "kcal_per_100g": 28,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 1.1,
+    "fat_g": 0.1,
+    "carb_g": 5.63,
+    "fiber_g": 3.1,
+    "water_g": 92.1,
+    "sodium_mg": 717,
+    "mapping_confidence": "medium",
+    "mapping_note": "'Cabbage, mustard, salted' — dưa cải muối kiểu Á (canh dưa, dưa xào). Medium vì độ mặn và độ chua thay đổi theo mẻ muối; natri đặc biệt biến động.",
+    "alternatives": [
+      {
+        "name": "Cabbage, kimchi",
+        "why_not": "Kimchi — có ớt/gia vị, không phải dưa cải muối VN",
+        "external_id": "170392",
+        "kcal_per_100g": 15
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": true,
+  "units": [],
+  "source": "curated",
+  "confidence": "medium",
+  "needs_review": true
+}

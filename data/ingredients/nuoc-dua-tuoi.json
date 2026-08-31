@@ -1,0 +1,50 @@
+{
+  "slug": "nuoc-dua-tuoi",
+  "name_vi": "Nước dừa tươi",
+  "name_en": "Coconut water",
+  "category": "khac",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "170174",
+    "source_url": "https://fdc.nal.usda.gov/food-details/170174/nutrients",
+    "scientific_name": "Cocos nucifera",
+    "kcal_per_100g": 19,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 0.72,
+    "fat_g": 0.2,
+    "carb_g": 3.71,
+    "fiber_g": 1.1,
+    "water_g": 94.99,
+    "sodium_mg": 105,
+    "mapping_confidence": "high",
+    "mapping_note": "'Nuts, coconut water (liquid from coconuts)' — nước dừa tự nhiên. Nước dừa đóng hộp có đường thêm phải đọc nhãn. Cùi dừa đã có slug cui-dua-nao.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": true,
+  "units": [
+    {
+      "unit_name": "cup",
+      "grams": 240.0,
+      "note": "CỠ MỸ",
+      "source": "FDC 170174 foodMeasures"
+    },
+    {
+      "unit_name": "trái dừa (phần nước)",
+      "grams": 206.0,
+      "note": "foodMeasures 'coconut yields' — lượng nước thu từ 1 trái, biến động lớn theo trái",
+      "source": "FDC 170174 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

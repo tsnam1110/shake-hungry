@@ -1,0 +1,51 @@
+{
+  "slug": "buoi",
+  "name_vi": "Bưởi (múi, tươi)",
+  "name_en": "Pomelo, raw",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "167754",
+    "source_url": "https://fdc.nal.usda.gov/food-details/167754/nutrients",
+    "scientific_name": "Citrus maxima",
+    "kcal_per_100g": 38,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 0.76,
+    "fat_g": 0.04,
+    "carb_g": 9.62,
+    "fiber_g": 1,
+    "water_g": 89.1,
+    "sodium_mg": 1,
+    "mapping_confidence": "high",
+    "mapping_note": "'Pummelo, raw' — đúng loài bưởi. Không dùng grapefruit (bưởi chùm) — loài lai khác, chua hơn.",
+    "alternatives": [
+      {
+        "name": "Grapefruit, raw, pink and red and white, all areas",
+        "why_not": "Grapefruit là bưởi chùm (Citrus × paradisi) — loài khác",
+        "external_id": "173033",
+        "kcal_per_100g": 32
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "quả (phần múi ăn được)",
+      "grams": 609.0,
+      "note": "foodMeasures 'fruit without refuse' — đã bỏ vỏ cùi; bưởi VN (da xanh, Năm Roi) cỡ tương đương hoặc lớn hơn, CẦN ĐO LẠI",
+      "source": "FDC 167754 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

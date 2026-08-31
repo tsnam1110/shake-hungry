@@ -31,7 +31,10 @@
   "density_g_per_ml": 0.782,
   "density_note": "SUY RA, không phải đo trực tiếp: 185 g/cup (FDC 168877 foodMeasures) chia 236,588 ml. Đây là khối lượng riêng đổ đống (bulk), không phải tỉ trọng hạt.",
   "default_yield_factor": null,
+  "default_yield_factor_note": null,
   "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
   "is_ready_to_eat": false,
   "units": [
     {

@@ -32,7 +32,10 @@
   "density_g_per_ml": null,
   "density_note": null,
   "default_yield_factor": null,
+  "default_yield_factor_note": null,
   "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": "CHƯA CÓ hệ số có nguồn: ốc bán cả vỏ, giá trị trên phần thịt; foodMeasures FDC 167744 không có mục yield vỏ. Cần tự cân — vỏ ốc chiếm tỷ trọng rất lớn.",
   "is_ready_to_eat": false,
   "units": [
     {

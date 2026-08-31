@@ -1,0 +1,44 @@
+{
+  "slug": "so-diep",
+  "name_vi": "Sò điệp (cồi, sống)",
+  "name_en": "Scallop, raw",
+  "category": "thuy-san",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "174220",
+    "source_url": "https://fdc.nal.usda.gov/food-details/174220/nutrients",
+    "scientific_name": null,
+    "kcal_per_100g": 69,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 12.06,
+    "fat_g": 0.49,
+    "carb_g": 3.18,
+    "fiber_g": 0,
+    "water_g": 82.53,
+    "sodium_mg": 392,
+    "mapping_confidence": "medium",
+    "mapping_note": "'Mollusks, scallop, mixed species, raw' — cồi sò điệp. Medium vì là hỗn hợp loài (bay + sea scallop), sò điệp VN (Chlamys nobilis…) không được nêu riêng; nhóm scallop có macro khá đồng nhất.",
+    "alternatives": [
+      {
+        "name": "Mollusks, scallop, (bay and sea), cooked, steamed",
+        "why_not": "Bản steamed — công thức ghi khối lượng sống",
+        "external_id": "167742",
+        "kcal_per_100g": 111
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "medium",
+  "needs_review": true
+}

@@ -1,0 +1,44 @@
+{
+  "slug": "quyt",
+  "name_vi": "Quýt (tươi)",
+  "name_en": "Tangerine (mandarin), raw",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "169105",
+    "source_url": "https://fdc.nal.usda.gov/food-details/169105/nutrients",
+    "scientific_name": "Citrus reticulata",
+    "kcal_per_100g": 53,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 0.81,
+    "fat_g": 0.31,
+    "carb_g": 13.34,
+    "fiber_g": 1.8,
+    "water_g": 85.17,
+    "sodium_mg": 2,
+    "mapping_confidence": "high",
+    "mapping_note": "'Tangerines, (mandarin oranges), raw' — quýt/cam sành nhỏ. Cam đã có slug cam.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "quả vừa",
+      "grams": 88.0,
+      "note": "đường kính 6,4 cm — CỠ PHƯƠNG TÂY, cần đo lại với quýt VN",
+      "source": "FDC 169105 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

@@ -1,0 +1,44 @@
+{
+  "slug": "luon",
+  "name_vi": "Lươn đồng (sống, làm sạch)",
+  "name_en": "Swamp eel, raw",
+  "category": "thuy-san",
+  "reference_food": {
+    "fct_source": null,
+    "external_id": null,
+    "source_url": null,
+    "scientific_name": "Monopterus albus",
+    "kcal_per_100g": null,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": null,
+    "fat_g": null,
+    "carb_g": null,
+    "fiber_g": null,
+    "water_g": null,
+    "sodium_mg": null,
+    "mapping_confidence": "low",
+    "mapping_note": "KHÔNG TRA ĐƯỢC đúng loài trong SR Legacy (bản 2018-04, tra cục bộ). 'Fish, eel, mixed species, raw' (174193, 184 kcal, béo 11,66 g) là chi Anguilla — lươn đồng VN là Monopterus albus KHÁC BỘ, thịt nạc hơn hẳn nên không suy được (sai chất béo có hệ thống, cùng kiểu bẫy cá lóc/cá nục đã ghi nhận). VIỆC CẦN LÀM: tra bảng có Monopterus (Thai FCT/FNRI — phải thẩm định license trước, QT-2), hoặc nhãn lươn làm sạch đóng gói (cấp 4). Món lươn hiện 'chưa đủ dữ liệu'.",
+    "alternatives": [
+      {
+        "name": "Fish, eel, mixed species, raw",
+        "why_not": "Chi Anguilla béo 11,66 g/100g — khác bộ với lươn đồng, chênh chất béo quá lớn",
+        "external_id": "174193",
+        "kcal_per_100g": 184
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "unknown",
+  "needs_review": true
+}

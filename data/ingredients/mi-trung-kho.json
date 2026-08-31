@@ -24,7 +24,10 @@
   "density_g_per_ml": 0.161,
   "density_note": "SUY RA: 38 g/cup (FDC 169731 foodMeasures) chia 236,588 ml. Rất thấp vì sợi mì khô xoăn chiếm nhiều khoảng rỗng — KHÔNG dùng làm tỉ trọng vật liệu.",
   "default_yield_factor": null,
+  "default_yield_factor_note": null,
   "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
   "is_ready_to_eat": false,
   "units": [
     {

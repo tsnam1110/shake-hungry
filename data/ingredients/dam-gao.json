@@ -38,7 +38,10 @@
   "density_g_per_ml": 1.01,
   "density_note": "SUY RA từ SR Legacy 'Vinegar, distilled' 172237, KIỂM CHỨNG CHÉO 3 portion độc lập: muỗng canh 14,9/14,787 = 1,008; muỗng cà phê 5,0/4,929 = 1,014; cup 238/236,588 = 1,006. Bản 'Vinegar, cider' 173469 cho 1,008/1,014/1,010 — trùng khớp. KHÔNG phải số đo trực tiếp trên dấm gạo.",
   "default_yield_factor": null,
+  "default_yield_factor_note": null,
   "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
   "is_ready_to_eat": false,
   "units": [
     {

@@ -1,0 +1,44 @@
+{
+  "slug": "sau-rieng",
+  "name_vi": "Sầu riêng (múi, tươi)",
+  "name_en": "Durian, raw",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "168192",
+    "source_url": "https://fdc.nal.usda.gov/food-details/168192/nutrients",
+    "scientific_name": "Durio zibethinus",
+    "kcal_per_100g": 147,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 1.47,
+    "fat_g": 5.33,
+    "carb_g": 27.09,
+    "fiber_g": 3.8,
+    "water_g": 64.99,
+    "sodium_mg": 2,
+    "mapping_confidence": "high",
+    "mapping_note": "'Durian, raw or frozen' — múi sầu riêng (Ri6, Monthong). Giá trị trên phần múi ăn được, không tính vỏ và hạt.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "quả (phần múi ăn được)",
+      "grams": 602.0,
+      "note": "foodMeasures '1 fruit' — phần ăn được của một quả cỡ Mỹ; sầu riêng VN biến động lớn, cần cân từng quả",
+      "source": "FDC 168192 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

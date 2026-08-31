@@ -1,0 +1,44 @@
+{
+  "slug": "chim-cut",
+  "name_vi": "Chim cút (cả da, sống)",
+  "name_en": "Quail, meat and skin, raw",
+  "category": "thit",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "172418",
+    "source_url": "https://fdc.nal.usda.gov/food-details/172418/nutrients",
+    "scientific_name": "Coturnix coturnix",
+    "kcal_per_100g": 192,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 19.63,
+    "fat_g": 12.05,
+    "carb_g": 0,
+    "fiber_g": 0,
+    "water_g": 69.65,
+    "sodium_mg": 53,
+    "mapping_confidence": "high",
+    "mapping_note": "'Quail, meat and skin, raw' — chim cút nguyên da (quay, chiên bơ). Trứng cút đã có mục trung-cut.",
+    "alternatives": [
+      {
+        "name": "Quail, meat only, raw",
+        "why_not": "Meat only — cút quay ăn cả da",
+        "external_id": "172419",
+        "kcal_per_100g": 134
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": 89.3,
+  "edible_portion_note": "SUY RA từ foodMeasures FDC 172418: 'yield from 1 lb ready-to-cook quail' = 405 g thịt+da ⇒ 405/453,6 = 89,3%. Áp cho khối lượng con làm sẵn (ready-to-cook); xương chim cút nhẹ nên tỷ lệ ăn được cao.",
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

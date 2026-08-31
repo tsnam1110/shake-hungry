@@ -1,0 +1,44 @@
+{
+  "slug": "khoai-mon",
+  "name_vi": "Khoai môn (sống, đã gọt vỏ)",
+  "name_en": "Taro, raw",
+  "category": "rau-cu",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "169308",
+    "source_url": "https://fdc.nal.usda.gov/food-details/169308/nutrients",
+    "scientific_name": "Colocasia esculenta",
+    "kcal_per_100g": 112,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 1.5,
+    "fat_g": 0.2,
+    "carb_g": 26.46,
+    "fiber_g": 4.1,
+    "water_g": 70.64,
+    "sodium_mg": 11,
+    "mapping_confidence": "high",
+    "mapping_note": "'Taro, raw' đúng loài khoai môn/khoai sọ (Colocasia esculenta). Giá trị tính trên phần ăn được đã gọt vỏ. Chưa tra được hệ số gọt vỏ có nguồn — công thức nên ghi khối lượng đã gọt, hoặc chờ bổ sung edible_portion_pct (DATA-008).",
+    "alternatives": [
+      {
+        "name": "Taro, cooked, without salt",
+        "why_not": "Bản cooked — công thức ghi khối lượng sống",
+        "external_id": "168486",
+        "kcal_per_100g": 142
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

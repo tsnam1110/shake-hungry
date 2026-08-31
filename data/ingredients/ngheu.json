@@ -24,7 +24,10 @@
   "density_g_per_ml": null,
   "density_note": null,
   "default_yield_factor": null,
+  "default_yield_factor_note": null,
   "oil_absorption_pct": null,
+  "edible_portion_pct": 15.0,
+  "edible_portion_note": "foodMeasures FDC 174214: '1 lb (with shell), yield after shell removed' = 68 g thịt ⇒ 68/453,59 = 15,0%. Áp cho khối lượng nghêu CẢ VỎ mua ở chợ.",
   "is_ready_to_eat": false,
   "units": [
     {

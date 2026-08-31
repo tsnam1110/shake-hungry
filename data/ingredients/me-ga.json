@@ -1,0 +1,44 @@
+{
+  "slug": "me-ga",
+  "name_vi": "Mề gà (sống)",
+  "name_en": "Chicken gizzard, raw",
+  "category": "thit",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "171456",
+    "source_url": "https://fdc.nal.usda.gov/food-details/171456/nutrients",
+    "scientific_name": "Gallus gallus domesticus",
+    "kcal_per_100g": 94,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 17.66,
+    "fat_g": 2.06,
+    "carb_g": 0,
+    "fiber_g": 0,
+    "water_g": 79.33,
+    "sodium_mg": 69,
+    "mapping_confidence": "high",
+    "mapping_note": "'Chicken, gizzard, all classes, raw' — mề gà (xào, nướng).",
+    "alternatives": [
+      {
+        "name": "Chicken, gizzard, all classes, cooked, simmered",
+        "why_not": "Bản simmered — công thức ghi khối lượng sống",
+        "external_id": "171457",
+        "kcal_per_100g": 154
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

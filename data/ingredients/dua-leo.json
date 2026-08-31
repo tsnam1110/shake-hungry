@@ -1,0 +1,51 @@
+{
+  "slug": "dua-leo",
+  "name_vi": "Dưa leo (dưa chuột, cả vỏ)",
+  "name_en": "Cucumber, with peel, raw",
+  "category": "rau-cu",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "168409",
+    "source_url": "https://fdc.nal.usda.gov/food-details/168409/nutrients",
+    "scientific_name": "Cucumis sativus",
+    "kcal_per_100g": 15,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 0.65,
+    "fat_g": 0.11,
+    "carb_g": 3.63,
+    "fiber_g": 0.5,
+    "water_g": 95.23,
+    "sodium_mg": 2,
+    "mapping_confidence": "high",
+    "mapping_note": "'Cucumber, with peel, raw' — ăn cả vỏ như thói quen VN. Bản gọt vỏ là 169225 (10 kcal).",
+    "alternatives": [
+      {
+        "name": "Cucumber, peeled, raw",
+        "why_not": "Bản peeled — dưa leo VN thường ăn cả vỏ",
+        "external_id": "169225",
+        "kcal_per_100g": 10
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "quả",
+      "grams": 301.0,
+      "note": "CỠ MỸ (dài 21 cm) — dưa leo VN thường 100–150 g/quả, CẦN ĐO LẠI, chỉ dùng tạm",
+      "source": "FDC 168409 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

@@ -1,0 +1,44 @@
+{
+  "slug": "hau",
+  "name_vi": "Hàu (thịt, sống)",
+  "name_en": "Oyster, Pacific, raw",
+  "category": "thuy-san",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "174219",
+    "source_url": "https://fdc.nal.usda.gov/food-details/174219/nutrients",
+    "scientific_name": "Magallana gigas (Crassostrea gigas)",
+    "kcal_per_100g": 81,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 9.45,
+    "fat_g": 2.3,
+    "carb_g": 4.95,
+    "fiber_g": 0,
+    "water_g": 82.06,
+    "sodium_mg": 106,
+    "mapping_confidence": "high",
+    "mapping_note": "'Mollusks, oyster, Pacific, raw' — đúng loài hàu Thái Bình Dương nuôi phổ biến ở VN. Giá trị trên phần THỊT; hàu bán cả vỏ — chưa có hệ số thịt/vỏ có nguồn (DATA-008; foodMeasures của dòng này không ghi yield).",
+    "alternatives": [
+      {
+        "name": "Mollusks, oyster, eastern, wild, raw",
+        "why_not": "Oyster eastern (Crassostrea virginica) — loài Đại Tây Dương, không phải loài nuôi ở VN",
+        "external_id": "171978",
+        "kcal_per_100g": 51
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": "CHƯA CÓ hệ số có nguồn: hàu bán cả vỏ (nướng mỡ hành) hoặc tách thịt (cháo hàu); giá trị trên phần thịt. foodMeasures FDC 174219 không có mục yield vỏ. Khi công thức ghi thịt hàu tách sẵn, đánh is_edible_weight.",
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

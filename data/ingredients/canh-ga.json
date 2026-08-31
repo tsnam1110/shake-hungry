@@ -1,0 +1,44 @@
+{
+  "slug": "canh-ga",
+  "name_vi": "Cánh gà (cả da, sống)",
+  "name_en": "Chicken wing, meat and skin, raw",
+  "category": "thit",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "172390",
+    "source_url": "https://fdc.nal.usda.gov/food-details/172390/nutrients",
+    "scientific_name": "Gallus gallus domesticus",
+    "kcal_per_100g": 191,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 17.52,
+    "fat_g": 12.85,
+    "carb_g": 0,
+    "fiber_g": 0,
+    "water_g": 69.19,
+    "sodium_mg": 84,
+    "mapping_confidence": "high",
+    "mapping_note": "'Chicken, broilers or fryers, wing, meat and skin, raw' — cánh gà nguyên da. Giá trị trên phần ăn được KHÔNG xương; cánh ở chợ bán cả xương — chưa tra được hệ số xương cánh có nguồn (DATA-008), foodMeasures chỉ ghi '1 piece = 107 g' không nói rõ có xương hay không nên KHÔNG dùng làm đơn vị.",
+    "alternatives": [
+      {
+        "name": "Chicken, broilers or fryers, wing, meat only, raw",
+        "why_not": "Meat only — cánh gà ăn cả da, bỏ da làm sai chất béo",
+        "external_id": "173632",
+        "kcal_per_100g": 126
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": 0.78,
+  "default_yield_factor_note": "SUY TỪ USDA Table of Cooking Yields for Meat and Poultry R2 (data/reference/usda-cooking-yields.csv), NDB 5103 'wing, meat and skin — Roasted' = 78% (giá trị giữa). Luộc: NDB 5104 = 86%; chiên ngập dầu có bột: NDB 5102 = 66% — món chiên nên dùng dòng thấp hơn khi CALC-002 tra theo phương pháp.",
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": "CHƯA CÓ hệ số có nguồn: foodMeasures FDC 172390 ghi '1 piece = 107 g' không nói rõ có xương hay không. Cánh gà chợ bán cả xương. Cần tự cân.",
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

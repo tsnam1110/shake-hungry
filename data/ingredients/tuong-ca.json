@@ -1,0 +1,44 @@
+{
+  "slug": "tuong-ca",
+  "name_vi": "Tương cà (ketchup)",
+  "name_en": "Ketchup",
+  "category": "gia-vi",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "168556",
+    "source_url": "https://fdc.nal.usda.gov/food-details/168556/nutrients",
+    "scientific_name": null,
+    "kcal_per_100g": 101,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 1.04,
+    "fat_g": 0.1,
+    "carb_g": 27.4,
+    "fiber_g": 0.3,
+    "water_g": 68.51,
+    "sodium_mg": 907,
+    "mapping_confidence": "high",
+    "mapping_note": "'Catsup' — tương cà công nghiệp (Cholimex, Heinz cùng nhóm sản phẩm).",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": true,
+  "units": [
+    {
+      "unit_name": "muỗng canh",
+      "grams": 17.0,
+      "note": "US tbsp",
+      "source": "FDC 168556 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}

@@ -1,0 +1,44 @@
+{
+  "slug": "tai-lon",
+  "name_vi": "Tai lợn (sống)",
+  "name_en": "Pork ears, raw",
+  "category": "thit",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "167857",
+    "source_url": "https://fdc.nal.usda.gov/food-details/167857/nutrients",
+    "scientific_name": "Sus scrofa domesticus",
+    "kcal_per_100g": 234,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 22.45,
+    "fat_g": 15.1,
+    "carb_g": 0.6,
+    "fiber_g": 0,
+    "water_g": 61.25,
+    "sodium_mg": 191,
+    "mapping_confidence": "high",
+    "mapping_note": "'Pork, fresh, variety meats and by-products, ears, frozen, raw' — tai heo (làm nem tai, bún đậu). Dòng USDA là hàng đông lạnh; khác biệt với tai tươi không đáng kể ở macro.",
+    "alternatives": [
+      {
+        "name": "Pork, fresh, variety meats and by-products, ears, frozen, cooked, simmered",
+        "why_not": "Bản simmered (đã luộc) — công thức ghi khối lượng sống",
+        "external_id": "167858",
+        "kcal_per_100g": 166
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true
+}
