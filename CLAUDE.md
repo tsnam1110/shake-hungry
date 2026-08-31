@@ -31,15 +31,20 @@ schema đủ R1–R9, engine calo, 4 lệnh `lacdoi:*`, nhập USDA SR Legacy, 3
 |---|---|---|
 | Tài liệu | ✅ 19 tài liệu trong `docs/` + 47 task file | `find docs -name "*.md" -not -path "*/tasks/*" \| wc -l` |
 | **Dữ liệu nguyên liệu** | ✅ **255 file** (mốc 250 của GĐ1 đã đạt): 125 high / 64 medium / 28 low / **38 "không tra được"** có tài liệu; 105 file mới đang `needs_review` chờ duyệt | `php artisan lacdoi:validate-data` |
-| Dữ liệu món ăn | ⬜ 0 file — `data/dishes/` còn trống (GĐ3) | `ls data/dishes/vn` |
-| Bảng tham chiếu | ✅ SR Legacy **7.793 dòng** + Cooking Yields R2 **163 dòng** + `regions-vn.json` + MANIFEST; **197/255 nguyên liệu ánh xạ `reference_food_id`, 0 lệch** | `data/reference/MANIFEST.json` |
-| Hệ số DATA-004/008 | ✅ khung xong: `edible_portion_pct` (3 có nguồn, 16 null chờ cân), `default_yield_factor` (9 thịt suy có nguồn, ghi chú từng dòng) | `edible_portion_note` / `default_yield_factor_note` từng file |
-| **Code** | ✅ **Laravel 13.29 + PostgreSQL 17.11** — 13 migration (đủ R1–R9), 19 model, 6 seeder, engine calo (kèm phần ăn được), 4 lệnh `lacdoi:*`, **33 test Pest xanh** | `php artisan migrate:fresh --seed; vendor\bin\pest --no-coverage` |
-| Chưa có | pgvector (GĐ4), Filament (GĐ2), Foundation Foods, DATA-003/005, TEST-002, UI-001, rà soát độc lập ING-003 | [ROADMAP](docs/05-tasks/ROADMAP.md) |
+| Dữ liệu món ăn | 🔵 **61 file nháp** gieo mầm từ Wikidata (`status=draft`, vỏ rỗng: chưa vùng miền/bữa/nguyên liệu) — GĐ3 mới biên soạn thật | `ls data/dishes/vn` |
+| Bảng tham chiếu | ✅ SR Legacy **7.793** + Cooking Yields R2 **163** + FNDDS **333 Food Code / 1.810 SR Links** + `regions-vn.json` + `wikidata-vn-dishes.json`; **197/255 nguyên liệu ánh xạ, 0 lệch** | `data/reference/MANIFEST.json` |
+| Hệ số DATA-004/008 | ✅ khung xong: `edible_portion_pct` (3 có nguồn, 16 null chờ cân), `default_yield_factor` (9 thịt suy có nguồn) | `edible_portion_note` / `default_yield_factor_note` từng file |
+| **Kiểm chứng engine** | 🔵 lần 1 (2026-08-31, engine 1.0.0): **89,7% món FNDDS trong ±20%**, MAPE 3,9% — tiêu chí chính đạt. **Nhóm chiên chưa đo được** (thiếu hệ số dầu) | [nhật ký đo](docs/06-nutrition/ACCURACY-SPEC.md) |
+| **Code** | ✅ **Laravel 13.29 + PostgreSQL 17.11** — 14 migration (đủ R1–R9), 20 model, 7 seeder, engine calo, 6 lệnh `lacdoi:*`, **36 test Pest xanh** | `php artisan migrate:fresh --seed; vendor\bin\pest --no-coverage` |
+| Chưa có | pgvector (GĐ4), Filament (GĐ2), Foundation Foods, UI-001, rà soát độc lập ING-003 | [ROADMAP](docs/05-tasks/ROADMAP.md) |
 
-> Việc tiếp theo theo thứ tự ưu tiên: **rà soát/duyệt 105 nguyên liệu needs_review** (người),
-> **phép cân 16 hệ số phần ăn được** (đi chợ — ưu tiên sườn lợn), **TEST-002** (kiểm chứng
-> engine), rồi mở GĐ2 (ADM-001 Filament). Hai việc chờ chủ dự án: **LEGAL-002** và **Q1**.
+> Việc tiếp theo theo thứ tự ưu tiên: **hệ số hấp thụ dầu có nguồn** (chặn việc đóng TEST-002 và
+> làm mọi món chiên VN hiển thị "chưa đủ dữ liệu"), **rà soát/duyệt 105 nguyên liệu needs_review**
+> (người), **phép cân 16 hệ số phần ăn được** (ưu tiên sườn lợn), rồi mở GĐ2 (ADM-001 Filament).
+> Hai việc chờ chủ dự án: **LEGAL-002** và **Q1**.
+>
+> ⚠️ **Chưa được tuyên bố "độ chính xác >80%" ra ngoài.** 89,7% là trên món Mỹ của FNDDS với ánh
+> xạ do USDA cung cấp sẵn, không có nhóm chiên — không phải trên kho món Việt. Xem ACCURACY-SPEC §6.
 
 Bảng trạng thái tổng quan — **bắt buộc cập nhật mỗi khi đóng một giai đoạn**:
 
@@ -73,8 +78,9 @@ php artisan lacdoi:validate-data        # kiểm tra tính toàn vẹn dữ li�
 vendor\bin\pest --no-coverage           # chạy test
 ```
 
-> ✅ **Cập nhật 2026-08-31:** cả 4 lệnh `lacdoi:*` đã tồn tại và chạy được
-> (`import-usda`, `validate-data`, `export-data`, `recompute-calories`).
+> ✅ **Cập nhật 2026-08-31:** cả 6 lệnh `lacdoi:*` đã tồn tại và chạy được — `import-usda`
+> (`--source=sr_legacy|foundation|cooking_yields|fndds`), `import-wikidata`, `validate-data`,
+> `export-data`, `recompute-calories`, `accuracy-run` (`--dataset=fndds|nutrition5k`).
 > `import-usda` cần file gốc trong `storage/imports/` — xem [DEPLOYMENT §4](docs/10-deployment/DEPLOYMENT.md).
 > Sau mỗi phiên sửa dữ liệu trong DB: `lacdoi:export-data` rồi commit (QT-3).
 

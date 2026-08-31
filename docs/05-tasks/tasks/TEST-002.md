@@ -3,7 +3,8 @@
 **Mã task:** TEST-002
 **Giai đoạn:** GĐ1
 **Loại:** Test
-**Status:** ⬜ TODO
+**Status:** 🔵 IN PROGRESS — chạy lần 1 xong 2026-08-31, **tiêu chí chính ĐẠT (89,7%)**;
+còn nhóm chiên chưa đo được và nhóm hấp cần yield factor
 **Ngày tạo:** 2026-08-31
 **Phụ thuộc:** CALC-002, DATA-003
 
@@ -50,14 +51,19 @@ lệch nhiều ở đây thì **engine sai**, không phải dữ liệu sai. Đ�
 
 ## Definition of Done
 
-- [ ] Đã chạy trên ≥200 món FNDDS
-- [ ] Đã chạy trên mẫu Nutrition5k
-- [ ] Báo cáo đủ **bốn** chỉ số, không phải một con số "độ chính xác"
-- [ ] Kết quả **tách theo cách chế biến**, có nhóm chiên/rán riêng
-- [ ] Đạt ≥80% số món trong ±20% trên FNDDS
-- [ ] Nhóm chiên/rán đạt ≥70% trong ±20% (ngưỡng thấp hơn vì sai số bản chất lớn hơn)
-- [ ] Hệ số đã hiệu chỉnh (nếu có) được cập nhật vào CALORIE-ENGINE §5 kèm lý do
-- [ ] Ghi công Nutrition5k đã thêm vào README
+- [x] Đã chạy trên **204 món FNDDS** (≥200)
+- [x] Đã chạy trên Nutrition5k — **4.766 món**, nhưng xem đính chính: đó là *sanity check vòng
+      tròn*, không phải phép đo độ chính xác
+- [x] Báo cáo đủ **bốn** chỉ số + chỉ số chẩn đoán thứ năm (hệ số khối lượng ngầm định):
+      [2026-08-31-fndds.md](../../06-nutrition/accuracy-runs/2026-08-31-fndds.md)
+- [x] Kết quả tách theo cách chế biến (6 nhóm)
+- [x] **Đạt ≥80% trên FNDDS: 89,7%**
+- [ ] ❌ **Nhóm chiên/rán ≥70%: CHƯA ĐO ĐƯỢC.** Engine từ chối tính cả 34 món chiên vì nguyên
+      liệu thiếu `oil_absorption_pct` — đúng thiết kế CALC-002, nhưng nghĩa là nhóm sai số lớn
+      nhất của món Việt vẫn chưa được kiểm chứng. **Đây là lý do task chưa DONE.**
+- [x] Không hiệu chỉnh hệ số nào — nguyên nhân hai nhóm lệch đã xác định được, nên không cần
+      (và theo cạm bẫy #2, không được) nới hệ số
+- [x] Ghi công Nutrition5k đã thêm vào README (kèm trích dẫn CVPR 2021)
 
 ---
 
@@ -72,3 +78,39 @@ lệch nhiều ở đây thì **engine sai**, không phải dữ liệu sai. Đ�
 ---
 
 ## Ghi chú
+
+**Lần chạy 1 — 2026-08-31, engine 1.0.0.** Lệnh: `php artisan lacdoi:accuracy-run --write-report`.
+
+**Kết quả:** 89,7% trong ±20% · MAPE 3,9% · bias −3,8% · Bland–Altman −5,2 kcal (LoA −28,4…+17,9).
+Bốn nhóm đạt: `song` 98,9%, `nau` 100%, `nuong` 94,2%, `luoc` 100%.
+
+**Ba việc đã xảy ra, đáng ghi lại:**
+
+1. **Lần chạy đầu cho bias +400% — và engine KHÔNG sai.** Nguyên nhân: `gram_weight` của SR Links
+   là gram cho **cả mẻ** (tới 3.980 g/món), không phải trên 100 g như DATA-003 mô tả; so thẳng
+   tổng kcal mẻ với kcal/100 g là sai đơn vị. Đúng như cạm bẫy #2 của task này cảnh báo — điều
+   tra trước, không đụng vào hệ số. Sau khi chuẩn hoá về 100 g: 34,8% → 89,7%.
+   Đã đính chính DATA-003.
+
+2. **Nhóm `hap` lệch −21% ĐỒNG LOẠT (hệ số khối lượng ngầm định 0,79).** Điều tra: các món này là
+   "Fish, cod/salmon/trout, **steamed**" với nguyên liệu là cá **sống**. Cá mất ~21% nước khi hấp,
+   nên 100 g cá sống ra ~79 g cá chín. Phép đo giả định bảo toàn khối lượng ⇒ mẫu số quá lớn.
+   Đây là **thiếu yield factor trong phép đo**, không phải lỗi engine — và chính là hiện tượng
+   [CALORIE-ENGINE §3](../../06-nutrition/CALORIE-ENGINE.md) mô tả. Chỉ số "hệ số khối lượng ngầm
+   định" được thêm vào báo cáo để chẩn đoán đúng loại này. Nhóm `kho` có trung vị 1,00 (đa số
+   khớp), bias đến từ vài ngoại lệ như "Stewed tripe" −57%.
+
+3. **Nutrition5k không phải thứ tài liệu mô tả.** Kiểm tra 4.766 món: `total_calories` = tổng
+   (gram × cal/g) từ chính bảng nguyên liệu của bộ, 100% khớp dưới 0,5 kcal. Calo **không đo độc
+   lập**; thứ đo bằng thiết bị là khối lượng. Dùng nó kiểm chứng engine là **vòng tròn** — kết quả
+   MAPE 0,04% chỉ chứng minh engine cộng đúng. Đã đính chính ACCURACY-SPEC §4 và ghi nhãn rõ trong
+   lệnh để không ai trích nhầm thành "độ chính xác".
+
+**Việc còn lại để đóng task:**
+
+- Bổ sung `oil_absorption_pct` có nguồn (ít nhất cho nhóm nguyên liệu chiên phổ biến) rồi chạy lại
+  — chừng nào nhóm chiên còn rỗng thì chưa đánh giá được tiêu chí ≥70%.
+- Bổ sung `default_yield_factor` cho cá/thuỷ sản (bảng USDA CY R2 chỉ có thịt và gia cầm), chạy
+  lại và **so hai lần đo** để xác nhận nhóm `hap` lên đúng như dự đoán.
+- Ba test Pest ở `tests/Feature/AccuracyRunTest.php` chốt lại hành vi đã kiểm chứng (chuẩn hoá
+  100 g, yield factor cho khối lượng thành phẩm) để sửa engine mà hỏng thì đỏ ngay.

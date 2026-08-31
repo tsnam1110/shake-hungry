@@ -25,6 +25,10 @@ return new class extends Migration
             $table->text('serving_desc')->nullable();
             $table->decimal('serving_grams', 8, 2)->nullable();
             $table->jsonb('estimated_kcal')->nullable();
+            // DATA-005: truy nguyên bản ghi nhập tự động ({source, id, queried_at}),
+            // và ghi chú nhập kèm cảnh báo cho người biên soạn.
+            $table->jsonb('external_ref')->nullable();
+            $table->text('import_note')->nullable();
             $table->string('status', 16)->default('draft');
             $table->string('source', 16);
             $table->string('confidence', 8);

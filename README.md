@@ -6,9 +6,10 @@
 tự nấu), món đã ăn bữa trước, và thể trạng người dùng. Món tự nấu có công thức và calo tính từ bảng
 thành phần thực phẩm; món ăn ngoài có calo ước lượng kèm độ tin cậy.
 
-**Trạng thái (2026-08-31):** 🚧 Đang ở Giai đoạn 1 — **55/250 nguyên liệu** đã biên soạn trong
-`data/ingredients/`; **chưa có dòng code nào**, nên dữ liệu chưa từng được nạp vào database.
-Xem [ROADMAP](docs/05-tasks/ROADMAP.md).
+**Trạng thái (2026-08-31):** 🚧 Giai đoạn 1 — **255/250 nguyên liệu** đã biên soạn, engine calo đã
+chạy và **qua kiểm chứng đầu tiên** (89,7% số món FNDDS trong ±20%; nhóm chiên chưa đo được), 61 món
+gieo mầm từ Wikidata ở trạng thái nháp. Xem [ROADMAP](docs/05-tasks/ROADMAP.md) và
+[nhật ký đo](docs/06-nutrition/ACCURACY-SPEC.md).
 
 ---
 
@@ -36,7 +37,18 @@ Bắt đầu ở [docs/README.md](docs/README.md). Nếu bạn là AI agent ho�
 
 ## Stack
 
-Laravel 12+ · PostgreSQL 16+ (pg_trgm, pgvector) · Filament 3+ · Livewire · Laragon trên Windows.
+Laravel 13 · PostgreSQL 17 (pg_trgm, unaccent; pgvector hoãn tới GĐ4) · Filament 3+ (GĐ2) ·
+Livewire · Pest · Laragon trên Windows.
+
+## Ghi công nguồn dữ liệu
+
+- **USDA FoodData Central** — SR Legacy, FNDDS/SR Links, Table of Cooking Yields for Meat and
+  Poultry R2. Public domain / CC0. *U.S. Department of Agriculture, Agricultural Research Service.
+  FoodData Central.* [fdc.nal.usda.gov](https://fdc.nal.usda.gov)
+- **Wikidata** — danh mục món Việt gieo mầm. CC0 1.0.
+- **Nutrition5k** (Google Research) — dùng để kiểm tra số học của engine.
+  CC BY 4.0 — *Thames, Q., Karpur, A., Norris, W., Xia, F., Panait, L., Weyand, T., Sim, J.
+  "Nutrition5k: Towards Automatic Nutritional Understanding of Generic Food", CVPR 2021.*
 
 ## Giấy phép
 

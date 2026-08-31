@@ -27,7 +27,7 @@ use RuntimeException;
 class LacdoiImportUsda extends Command
 {
     protected $signature = 'lacdoi:import-usda
-        {--source=sr_legacy : sr_legacy | foundation | cooking_yields}
+        {--source=sr_legacy : sr_legacy | foundation | cooking_yields | fndds}
         {--dir= : thư mục chứa CSV đã giải nén (mặc định storage/imports/<source>)}
         {--zip= : đường dẫn file zip gốc để ghi SHA-256 vào MANIFEST}';
 
@@ -43,14 +43,18 @@ class LacdoiImportUsda extends Command
     public function handle(): int
     {
         $source = (string) $this->option('source');
-        if (! in_array($source, ['sr_legacy', 'foundation', 'cooking_yields'], true)) {
-            $this->error("--source phải là sr_legacy, foundation hoặc cooking_yields, nhận được '{$source}'.");
+        if (! in_array($source, ['sr_legacy', 'foundation', 'cooking_yields', 'fndds'], true)) {
+            $this->error("--source phải là sr_legacy, foundation, cooking_yields hoặc fndds, nhận được '{$source}'.");
 
             return self::FAILURE;
         }
 
         if ($source === 'cooking_yields') {
             return $this->importCookingYields();
+        }
+
+        if ($source === 'fndds') {
+            return $this->importFndds();
         }
 
         $dir = (string) ($this->option('dir') ?: storage_path("imports/{$source}"));
@@ -228,6 +232,232 @@ class LacdoiImportUsda extends Command
         $this->info("Đã nạp {$kept} dòng hệ số hao hụt vào cooking_yields; bản lọc: {$outPath}.");
 
         return self::SUCCESS;
+    }
+
+    /**
+     * DATA-003 — FNDDS + SR Links từ bộ FoodData Central "survey" (public domain).
+     *
+     * Lọc mạnh theo hai tiêu chí: (a) món phải có ít nhất 2 nguyên liệu SR Links
+     * ánh xạ được sang SR Legacy (nếu không thì không kiểm chứng engine được),
+     * (b) suy được cách chế biến từ mô tả — bỏ đồ đóng gói công nghiệp
+     * (cạm bẫy DATA-003: không dùng dữ liệu này làm món hiển thị).
+     */
+    private function importFndds(): int
+    {
+        $dir = (string) ($this->option('dir')
+            ?: storage_path('imports/fndds_extract/FoodData_Central_survey_food_csv_2024-10-31'));
+        foreach (['food.csv', 'food_nutrient.csv', 'input_food.csv', 'survey_fndds_food.csv'] as $f) {
+            if (! is_file("{$dir}/{$f}")) {
+                $this->error("Không tìm thấy {$dir}/{$f}.");
+                $this->line('Tải bộ "FoodData Central Survey (FNDDS)" CSV từ https://fdc.nal.usda.gov/download-datasets/');
+
+                return self::FAILURE;
+            }
+        }
+
+        // NDB → fdc_id SR Legacy, để nối nguyên liệu SR Links sang bảng thành phần.
+        $ndbToFdc = [];
+        $srMap = storage_path('imports/sr_legacy_extract/FoodData_Central_sr_legacy_food_csv_2018-04/sr_legacy_food.csv');
+        if (is_file($srMap)) {
+            foreach ($this->csvRows($srMap) as $row) {
+                $ndbToFdc[ltrim($row['NDB_number'], '0')] = $row['fdc_id'];
+            }
+        } else {
+            $this->warn('Thiếu sr_legacy_food.csv — không nối được nguyên liệu sang SR Legacy, bộ kiểm chứng sẽ rỗng.');
+        }
+
+        $this->info('Đọc food.csv, survey_fndds_food.csv …');
+        $descByFdc = [];
+        foreach ($this->csvRows("{$dir}/food.csv") as $row) {
+            $descByFdc[$row['fdc_id']] = $row['description'];
+        }
+
+        $foodCodeByFdc = [];
+        $categoryByFdc = [];
+        foreach ($this->csvRows("{$dir}/survey_fndds_food.csv") as $row) {
+            $foodCodeByFdc[$row['fdc_id']] = $row['food_code'];
+            $categoryByFdc[$row['fdc_id']] = $row['wweia_category_number'];
+        }
+
+        // ⚠️ BẪY (phát hiện 2026-08-31): bộ SURVEY dùng **nutrient_nbr** trong cột
+        // nutrient_id (208 = kcal, 203/204/205/291 = macro), KHÁC hẳn SR Legacy dùng
+        // id chuẩn (1008/1003/1004/1005/1079) — dù nutrient.csv của chính bộ này vẫn
+        // khai id chuẩn. Lọc bằng id chuẩn cho ra 0 dòng mà không báo lỗi gì.
+        // Dò cả hai hệ để không phụ thuộc bản phát hành.
+        $kcalIds = [self::NUTRIENT_KCAL, 208];
+        $macroIds = self::NUTRIENT_MACROS + [203 => 'protein_g', 204 => 'fat_g', 205 => 'carb_g', 291 => 'fiber_g'];
+
+        $this->info('Đọc food_nutrient.csv (dò cả nutrient id chuẩn lẫn nutrient_nbr) …');
+        $nutrition = [];
+        foreach ($this->csvRows("{$dir}/food_nutrient.csv") as $row) {
+            $nid = (int) $row['nutrient_id'];
+            if ($row['amount'] === '' || ! isset($foodCodeByFdc[$row['fdc_id']])) {
+                continue;
+            }
+            if (in_array($nid, $kcalIds, true)) {
+                $nutrition[$row['fdc_id']]['kcal_per_100g'] = (float) $row['amount'];
+            } elseif (isset($macroIds[$nid])) {
+                $nutrition[$row['fdc_id']][$macroIds[$nid]] = (float) $row['amount'];
+            }
+        }
+
+        $withKcal = count(array_filter($nutrition, fn ($n) => isset($n['kcal_per_100g'])));
+        if ($withKcal === 0) {
+            $this->error('Không đọc được năng lượng cho Food Code nào — kiểm tra lại quy ước nutrient id của bản phát hành này trước khi kết luận "không có dữ liệu".');
+
+            return self::FAILURE;
+        }
+        $this->line("  {$withKcal} Food Code có năng lượng công bố.");
+
+        $this->info('Đọc input_food.csv (SR Links) …');
+        $inputs = [];
+        foreach ($this->csvRows("{$dir}/input_food.csv") as $row) {
+            $fdc = $row['fdc_id'];
+            $srCode = ltrim(trim($row['sr_code']), '0');
+            if ($srCode === '' || $row['gram_weight'] === '' || ! isset($foodCodeByFdc[$fdc])) {
+                continue;
+            }
+            $inputs[$fdc][] = [
+                'sr_code' => $srCode,
+                'sr_fdc_id' => $ndbToFdc[$srCode] ?? null,
+                'sr_description' => $row['sr_description'],
+                'gram_weight' => (float) $row['gram_weight'],
+                'retention_code' => $row['retention_code'] === '' ? null : $row['retention_code'],
+            ];
+        }
+
+        $keptFoods = 0;
+        $keptInputs = 0;
+        $skippedNoMethod = 0;
+        $skippedUnmapped = 0;
+        $rowsOut = [];
+
+        DB::transaction(function () use ($foodCodeByFdc, $categoryByFdc, $descByFdc, $nutrition, $inputs, &$keptFoods, &$keptInputs, &$skippedNoMethod, &$skippedUnmapped, &$rowsOut) {
+            DB::table('fndds_food_inputs')->delete();
+            DB::table('fndds_foods')->delete();
+
+            foreach ($foodCodeByFdc as $fdc => $foodCode) {
+                $desc = $descByFdc[$fdc] ?? '';
+                $kcal = $nutrition[$fdc]['kcal_per_100g'] ?? null;
+                $rows = $inputs[$fdc] ?? [];
+
+                if ($kcal === null || count($rows) < 2) {
+                    continue;
+                }
+
+                // Bỏ món mà phần lớn nguyên liệu không ánh xạ được — không kiểm chứng được.
+                $mapped = array_filter($rows, fn ($r) => $r['sr_fdc_id'] !== null);
+                if (count($mapped) < 2 || count($mapped) < count($rows) * 0.8) {
+                    $skippedUnmapped++;
+
+                    continue;
+                }
+
+                $method = $this->guessCookingMethod($desc);
+                if ($method === null) {
+                    $skippedNoMethod++;
+
+                    continue;
+                }
+
+                DB::table('fndds_foods')->insert([
+                    'food_code' => $foodCode,
+                    'fdc_id' => $fdc,
+                    'description' => $desc,
+                    'wweia_category' => $categoryByFdc[$fdc] ?? null,
+                    'kcal_per_100g' => $kcal,
+                    'protein_g' => $nutrition[$fdc]['protein_g'] ?? null,
+                    'fat_g' => $nutrition[$fdc]['fat_g'] ?? null,
+                    'carb_g' => $nutrition[$fdc]['carb_g'] ?? null,
+                    'fiber_g' => $nutrition[$fdc]['fiber_g'] ?? null,
+                    'cooking_method' => $method,
+                    'imported_at' => Date::now(),
+                ]);
+                $keptFoods++;
+
+                foreach ($rows as $r) {
+                    DB::table('fndds_food_inputs')->insert(['food_code' => $foodCode] + $r);
+                    $rowsOut[] = [$foodCode, $r['sr_code'], $r['sr_fdc_id'], $r['sr_description'], $r['gram_weight'], $r['retention_code']];
+                    $keptInputs++;
+                }
+
+                $rowsOut['foods'][] = [$foodCode, $fdc, $desc, $categoryByFdc[$fdc] ?? '', $kcal,
+                    $nutrition[$fdc]['protein_g'] ?? '', $nutrition[$fdc]['fat_g'] ?? '',
+                    $nutrition[$fdc]['carb_g'] ?? '', $nutrition[$fdc]['fiber_g'] ?? '', $method];
+            }
+        });
+
+        // Ghi hai file đã lọc vào data/reference/ (vài trăm KB thay vì hàng GB).
+        $foodsOut = fopen(base_path('data/reference/usda-fndds-foods.csv'), 'wb');
+        fputcsv($foodsOut, ['food_code', 'fdc_id', 'description', 'wweia_category', 'kcal_per_100g', 'protein_g', 'fat_g', 'carb_g', 'fiber_g', 'cooking_method'], escape: '\\');
+        foreach ($rowsOut['foods'] ?? [] as $r) {
+            fputcsv($foodsOut, $r, escape: '\\');
+        }
+        fclose($foodsOut);
+
+        $linksOut = fopen(base_path('data/reference/usda-fndds-srlinks.csv'), 'wb');
+        fputcsv($linksOut, ['food_code', 'sr_code', 'sr_fdc_id', 'sr_description', 'gram_weight', 'retention_code'], escape: '\\');
+        foreach ($rowsOut as $k => $r) {
+            if ($k === 'foods') {
+                continue;
+            }
+            fputcsv($linksOut, $r, escape: '\\');
+        }
+        fclose($linksOut);
+
+        $manifestPath = base_path('data/reference/MANIFEST.json');
+        $manifest = json_decode((string) file_get_contents($manifestPath), true) ?? [];
+        $zip = (string) ($this->option('zip') ?? '');
+        $sha = ($zip !== '' && is_file($zip)) ? hash_file('sha256', $zip) : null;
+        foreach (['usda-fndds-foods.csv' => 'Food Code + dinh dưỡng công bố', 'usda-fndds-srlinks.csv' => 'SR Links: món → nguyên liệu → gram/100 g món'] as $file => $what) {
+            $manifest[$file] = [
+                'source_url' => 'https://fdc.nal.usda.gov/download-datasets/',
+                'source_release' => 'FoodData Central Survey (FNDDS) 2021–2023, bản CSV 2024-10-31',
+                'downloaded_at' => Date::now()->toDateString(),
+                'original_sha256' => $sha,
+                'filtered_rows' => $file === 'usda-fndds-foods.csv' ? $keptFoods : $keptInputs,
+                'license' => 'Public domain / CC0 1.0',
+                'filter_note' => "{$what}. CHỈ dùng để KIỂM CHỨNG engine (TEST-002), không phải món hiển thị. Lọc: có kcal công bố, ≥2 nguyên liệu SR Links, ≥80% nguyên liệu ánh xạ được sang SR Legacy, và suy được cách chế biến từ mô tả.",
+            ];
+        }
+        $json = json_encode($manifest, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_THROW_ON_ERROR);
+        $json = preg_replace_callback('/^ +/m', fn (array $m) => str_repeat(' ', intdiv(strlen($m[0]), 2)), $json);
+        file_put_contents($manifestPath, $json."\n");
+
+        $this->info("Đã nạp {$keptFoods} Food Code và {$keptInputs} dòng SR Links.");
+        $this->line("Bỏ: {$skippedNoMethod} món không suy được cách chế biến, {$skippedUnmapped} món có nguyên liệu không ánh xạ được.");
+
+        return self::SUCCESS;
+    }
+
+    /**
+     * Suy cách chế biến từ mô tả FNDDS, ánh xạ sang từ vựng cooking_method của dự án.
+     * Trả null cho món không rõ cách chế biến hoặc đồ đóng gói — những món đó bị loại,
+     * vì TEST-002 bắt buộc tách kết quả theo cách chế biến.
+     */
+    private function guessCookingMethod(string $description): ?string
+    {
+        $d = mb_strtolower($description);
+
+        // Loại trước: đồ công nghiệp/đóng gói, không phải món nấu.
+        foreach (['baby food', 'infant formula', 'formula,', 'dietary supplement', 'candy', 'soft drink', 'energy drink', 'protein powder'] as $bad) {
+            if (str_contains($d, $bad)) {
+                return null;
+            }
+        }
+
+        return match (true) {
+            str_contains($d, 'deep fried') || str_contains($d, 'deep-fried') => 'chien-ngap-dau',
+            str_contains($d, 'fried') || str_contains($d, 'batter') => 'chien',
+            str_contains($d, 'stir-fry') || str_contains($d, 'stir fried') => 'xao',
+            str_contains($d, 'grilled') || str_contains($d, 'broiled') || str_contains($d, 'roasted') || str_contains($d, 'baked') => 'nuong',
+            str_contains($d, 'steamed') => 'hap',
+            str_contains($d, 'boiled') || str_contains($d, 'cooked in water') => 'luoc',
+            str_contains($d, 'braised') || str_contains($d, 'stewed') => 'kho',
+            str_contains($d, 'soup') || str_contains($d, 'stew') || str_contains($d, 'porridge') || str_contains($d, 'gravy') => 'nau',
+            str_contains($d, 'salad') || str_contains($d, ' raw') => 'song',
+            default => null,
+        };
     }
 
     /** @return iterable<array<string, string>> */

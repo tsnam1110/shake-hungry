@@ -1,7 +1,7 @@
 # Đặc tả độ chính xác calo — Lắc Đói
 
-**Cập nhật lần cuối:** 2026-08-31 — bản đầu tiên
-**Trạng thái:** Định nghĩa đã chốt. Quy trình đo **chưa chạy lần nào**.
+**Cập nhật lần cuối:** 2026-08-31 — chạy phép đo đầu tiên trên FNDDS (TEST-002); đính chính mô tả Nutrition5k
+**Trạng thái:** Định nghĩa đã chốt. **Đã chạy lần đầu 2026-08-31** trên bộ FNDDS — xem §6.
 
 ---
 
@@ -110,10 +110,29 @@ Hai bộ dữ liệu trong danh sách trắng cho phép kiểm engine **trước
 | Bộ dữ liệu | Cách dùng | License |
 |---|---|---|
 | **USDA FNDDS + SR Links** | Với mỗi Food Code, chạy engine trên danh sách nguyên liệu của nó, so với giá trị dinh dưỡng USDA công bố cho chính món đó. Lệch nhiều ⇒ **engine sai**, không phải dữ liệu sai | CC0 |
-| **Nutrition5k** (Google Research) | ~5.000 món thật, nguyên liệu + khối lượng + calo **đo bằng thiết bị**, không phải ước lượng. Đây là gần với "sự thật" nhất mà dự án tiếp cận được miễn phí | CC BY 4.0 (ghi công) |
+| **Nutrition5k** (Google Research) | ~5.000 món thật, nguyên liệu + khối lượng đo bằng thiết bị. ⚠️ **Calo KHÔNG đo độc lập** — xem đính chính bên dưới | CC BY 4.0 (ghi công) |
 
-> Chạy hai bộ này **trước** khi tốn công người tính tay. Nếu engine đã sai trên FNDDS thì không cần
-> đo tiếp — sửa engine đã.
+> ## ⚠️ Đính chính 2026-08-31 — mô tả Nutrition5k ở trên SAI
+>
+> Bản đầu ghi Nutrition5k có *"calo **đo bằng thiết bị**, không phải ước lượng"* và gọi nó là
+> *"gần với sự thật nhất"*. **Kiểm tra thực tế trên toàn bộ 4.766 món cho thấy điều đó không
+> đúng:** `total_calories` bằng đúng tổng (gram × cal/g) tra từ chính `ingredients_metadata.csv`
+> của bộ — **100% số món khớp dưới 0,5 kcal, sai lệch trung vị 0,00%**. Thứ được đo bằng thiết
+> bị là **khối lượng**; calo là **tính ra** từ một bảng thành phần.
+>
+> **Hệ quả:** chạy engine trên chính các nguyên liệu đó rồi so với `total_calories` là một phép
+> thử **vòng tròn**. Nó chỉ chứng minh engine cộng đúng về số học — **không nói gì** về chất
+> lượng dinh dưỡng. Kết quả của nó phải được gọi là *sanity check*, và **tuyệt đối không được
+> trích như "độ chính xác của ứng dụng"** (§5).
+>
+> Muốn Nutrition5k có giá trị kiểm chứng thật, phải **ánh xạ 555 nguyên liệu của nó sang bảng
+> thành phần của dự án** rồi mới so — khi đó hai vế mới độc lập. Đó là việc chưa làm.
+>
+> **Bài học:** kiểm tra giả định về bộ dữ liệu **bằng chính dữ liệu** trước khi thiết kế phép đo
+> quanh nó. Câu "đo bằng thiết bị" đọc rất thuyết phục và đã suýt tạo ra một con số vô nghĩa.
+
+⇒ Bộ kiểm chứng thật sự hiện có **chỉ là FNDDS**. Chạy nó **trước** khi tốn công người tính tay.
+Nếu engine đã sai trên FNDDS thì không cần đo tiếp — sửa engine đã.
 
 ### Bước 4 — Báo cáo
 
@@ -154,7 +173,21 @@ phần thực tế và cách nấu của từng quán/từng nhà làm thay đ�
 
 | Ngày | engine_version | Bộ mẫu | % trong ±20% | MAPE | Bias | Đạt mục tiêu? | Báo cáo |
 |---|---|---|---|---|---|---|---|
-| — | — | — | — | — | — | — | *chưa chạy lần nào* |
+| 2026-08-31 | 1.0.0 | 204 Food Code FNDDS (`usda_sr_legacy`) | **89,7%** | 3,9% | −3,8% | ✅ tiêu chí chính đạt; **nhóm chiên chưa đo được** | [2026-08-31-fndds.md](accuracy-runs/2026-08-31-fndds.md) |
+| 2026-08-31 | 1.0.0 | 4.766 món Nutrition5k | 100% | 0,04% | +0,01% | ⚠️ **sanity check vòng tròn** — không phải độ chính xác (xem §4) | — |
 
-> Bảng này trống là đúng với trạng thái hiện tại (chưa có engine). **Không được tuyên bố bất kỳ con
-> số độ chính xác nào ra bên ngoài khi bảng này còn trống.**
+**Đọc bảng này cho đúng.** Lần đo đầu tiên nói được ba điều, không hơn:
+
+1. **Engine không có lỗi số học.** MAPE 0,04% trên 4.766 món ở phép thử vòng tròn, và 89,7% số món
+   FNDDS trong ±20% — trong đó bốn nhóm `song`/`nau`/`nuong`/`luoc` đạt 94–100%.
+2. **Hai nhóm lệch có nguyên nhân đã xác định, không phải lỗi thuật toán.** Nhóm `hap` lệch
+   **−21% đồng loạt** (hệ số khối lượng ngầm định 0,79) vì phép đo giả định khối lượng thành phẩm
+   bằng khối lượng nguyên liệu — cá hấp mất ~21% nước. Đây là **thiếu yield factor**, đúng thứ
+   [CALORIE-ENGINE §3](CALORIE-ENGINE.md) mô tả.
+3. **Nhóm chiên/rán CHƯA được kiểm chứng lần nào.** Engine từ chối tính mọi món chiên vì nguyên
+   liệu thiếu `oil_absorption_pct` (đúng thiết kế CALC-002 — không bịa hệ số). Vì đây là nhóm sai
+   số lớn nhất với món Việt, **TEST-002 chưa được coi là hoàn tất** dù tiêu chí chính đã đạt.
+
+> **Vẫn chưa được tuyên bố "độ chính xác >80%" ra bên ngoài.** Con số 89,7% là trên **món Mỹ của
+> FNDDS**, với nguyên liệu do chính USDA ánh xạ sẵn — không phải trên kho món Việt do dự án biên
+> soạn, và không có nhóm chiên. Đo trên kho món thật là việc của [QA-002](../05-tasks/tasks/QA-002.md) ở GĐ3.

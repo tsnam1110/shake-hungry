@@ -19,6 +19,7 @@ class Dish extends Model
         return [
             'recipe_steps' => 'array',
             'estimated_kcal' => 'array',
+            'external_ref' => 'array',
             'is_eat_out' => 'boolean',
             'is_home_cook' => 'boolean',
             'needs_review' => 'boolean',

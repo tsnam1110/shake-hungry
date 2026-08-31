@@ -212,6 +212,8 @@ class LacdoiExportData extends Command
             'recipe_sources' => $sources,
             'media' => $media,
             'estimated_kcal' => $dish->estimated_kcal,
+            'external_ref' => $dish->external_ref,
+            'import_note' => $dish->import_note,
             'status' => $dish->status,
             'source' => $dish->source,
             'confidence' => $dish->confidence,

@@ -1,10 +1,10 @@
 # Roadmap & Task Tracking — Lắc Đói
 
 **Ngày bắt đầu:** 2026-08-31
-**Cập nhật lần cuối:** 2026-08-31 (lần 4) — ING-003 đạt mốc **255/250 nguyên liệu** (105 mới, máy-chép
-số từ SR Legacy cục bộ, 197 ánh xạ khớp/0 lệch); DATA-008 xong (edible_portion_pct + engine + test);
-DATA-004 nạp 163 dòng USDA Cooking Yields R2, 9 nguyên liệu thịt có yield suy có nguồn.
-GĐ1 còn: rà soát độc lập ING-003, Foundation, DATA-003/005, TEST-002, hệ số hút nước tinh bột
+**Cập nhật lần cuối:** 2026-08-31 (lần 5) — DATA-003 (333 Food Code FNDDS + SR Links) và DATA-005
+(61 món Wikidata, draft) xong; **TEST-002 chạy lần đầu: 89,7% trong ±20%, tiêu chí chính ĐẠT** —
+nhưng nhóm chiên chưa đo được (thiếu hệ số dầu) nên task chưa đóng.
+GĐ1 còn: rà soát độc lập ING-003, Foundation, hệ số dầu/yield để đóng TEST-002
 
 > Mỗi task có file chi tiết riêng tại [`tasks/`](./tasks/). Click mã task để xem đầy đủ.
 > Tạo task mới: copy [`TASK-TEMPLATE.md`](./TASK-TEMPLATE.md) vào `tasks/`, đặt tên theo mã task.
@@ -31,7 +31,7 @@ GĐ1 còn: rà soát độc lập ING-003, Foundation, DATA-003/005, TEST-002, h
 | GĐ | Tên | Mục tiêu | Cổng chặn để sang giai đoạn sau | Trạng thái |
 |---|---|---|---|---|
 | **0** | Thủ tục & khởi tạo | Gửi đề nghị cấp phép, chốt các quyết định nền, dựng repo | Repo chạy được, các quyết định đã chốt | 🔵 IN PROGRESS — repo chạy được (Laravel 13 + PostgreSQL 17, `migrate:fresh --seed` xanh); còn [LEGAL-002](./tasks/LEGAL-002.md) và Q1 chờ chủ dự án |
-| **1** | Xương sống dữ liệu | Schema + bảng tham chiếu + **250 nguyên liệu** + engine calo | Engine calo qua kiểm chứng FNDDS/Nutrition5k | 🔵 IN PROGRESS — schema + engine + SR Legacy + **255/250 nguyên liệu** + CY R2 + DATA-008 xong; còn rà soát độc lập, Foundation, DATA-003/005, TEST-002 |
+| **1** | Xương sống dữ liệu | Schema + bảng tham chiếu + **250 nguyên liệu** + engine calo | Engine calo qua kiểm chứng FNDDS/Nutrition5k | 🔵 IN PROGRESS — schema, engine, **255/250 nguyên liệu**, SR Legacy, CY R2, FNDDS, Wikidata, DATA-008 xong; **kiểm chứng lần 1 đạt 89,7%**. Cổng chặn chưa mở: nhóm chiên chưa đo được |
 | **2** | Trình nhập liệu | Công cụ nhập món trong Filament + trợ lý LLM | **≤5 phút/món** — cổng chặn cứng | ⬜ TODO |
 | **3** | Sản xuất dữ liệu | 150 món (dùng được) → 500 món (đủ dùng) | ≥500 món Mức 1; đo độ chính xác đạt ≥80% | ⬜ TODO |
 | **4** | Engine gợi ý | Nút Lắc bản chính thức, 3 tầng, có pgvector | Độ phủ kho món ≥60% trong 30 ngày | ⬜ TODO |
@@ -100,9 +100,9 @@ thư mục `data/` đúng cấu trúc; câu hỏi Q1/Q2 ở [PRD §9](../01-prd/
 | [DATA-001](./tasks/DATA-001.md) | Biên soạn cây `regions` Việt Nam | Dữ liệu | ✅ | SETUP-003 | 2026-08-31 |
 | [DATA-006](./tasks/DATA-006.md) | Lệnh `lacdoi:import-usda` + `lacdoi:validate-data` | Backend | ✅ | SETUP-003 | 2026-08-31 |
 | [DATA-002](./tasks/DATA-002.md) | Nhập USDA SR Legacy + Foundation Foods | Dữ liệu | 🔵 SR Legacy xong (7.793 dòng, 116 ánh xạ khớp/0 lệch); Foundation chưa | DATA-006 | — |
-| [DATA-003](./tasks/DATA-003.md) | Nhập USDA FNDDS + SR Links | Dữ liệu | ⬜ | DATA-006 | — |
+| [DATA-003](./tasks/DATA-003.md) | Nhập USDA FNDDS + SR Links | Dữ liệu | ✅ 333 Food Code / 1.810 dòng | DATA-006 | 2026-08-31 |
 | [DATA-004](./tasks/DATA-004.md) | Nhập bảng hệ số hao hụt khi nấu | Dữ liệu | 🔵 thịt/gia cầm xong (163 dòng CY R2, 9 yield suy có nguồn); còn hút nước tinh bột + retention | DATA-006 | — |
-| [DATA-005](./tasks/DATA-005.md) | Nhập món Việt từ Wikidata (SPARQL) | Dữ liệu | ⬜ | SETUP-003 | — |
+| [DATA-005](./tasks/DATA-005.md) | Nhập món Việt từ Wikidata (SPARQL) | Dữ liệu | ✅ 61 món, status=draft | SETUP-003 | 2026-08-31 |
 | [DATA-007](./tasks/DATA-007.md) | Lệnh `lacdoi:export-data` — JSON ổn định | Backend | ✅ | SETUP-003 | 2026-08-31 |
 | [DATA-008](./tasks/DATA-008.md) | Bảng hệ số phần ăn được (nguyên liệu có xương/vỏ) | Dữ liệu | ✅ khung + 3 hệ số có nguồn; 16 hệ số null chờ phép cân | — | 2026-08-31 |
 
@@ -121,7 +121,7 @@ thư mục `data/` đúng cấu trúc; câu hỏi Q1/Q2 ở [PRD §9](../01-prd/
 | [CALC-001](./tasks/CALC-001.md) | Engine tính dinh dưỡng (hàm thuần tuý) | Backend | ✅ | ING-001 | 2026-08-31 |
 | [CALC-002](./tasks/CALC-002.md) | Hệ số hao hụt khi nấu + hấp thụ dầu khi chiên | Backend | 🔵 code xong, chờ dữ liệu DATA-004/008 | CALC-001, DATA-004 | — |
 | [TEST-001](./tasks/TEST-001.md) | Test các ràng buộc toàn vẹn R1–R9 | Test | ✅ (CI chưa kiểm trên GitHub — chưa có remote) | SETUP-003 | 2026-08-31 |
-| [TEST-002](./tasks/TEST-002.md) | Kiểm chứng engine trên FNDDS + Nutrition5k | Test | ⬜ | CALC-002, DATA-003 | — |
+| [TEST-002](./tasks/TEST-002.md) | Kiểm chứng engine trên FNDDS + Nutrition5k | Test | 🔵 lần 1 xong: **89,7% trong ±20%** (tiêu chí chính ĐẠT); nhóm chiên chưa đo được → chưa đóng | CALC-002, DATA-003 | — |
 
 ### 1d. Có thứ nhìn thấy được
 
@@ -254,3 +254,6 @@ Ghi lại các quyết định kỹ thuật quan trọng để người sau khô
 | 2026-08-31 | PostgreSQL 17 bản portable trong `laragon/bin`, không cài service; **pgvector hoãn tới GĐ4** | Laragon không kèm PostgreSQL; portable gỡ được bằng xoá thư mục; GĐ1–GĐ3 không cần pgvector. Migration tự thêm cột `embedding` khi extension xuất hiện | [SETUP-001](./tasks/SETUP-001.md) |
 | 2026-08-31 | Nguyên liệu tuỳ chọn chỉ tính vào cận trên; `fct_source='mixed'` ép confidence ≤ medium; món chiên thiếu hệ số dầu ⇒ nguyên liệu vào `missing[]` | Đặc tả gốc không định nghĩa — chọn cách bảo toàn QT-1/QT-5 (không bịa, khoảng phản ánh bất định thật) | [CALORIE-ENGINE §5b](../06-nutrition/CALORIE-ENGINE.md) |
 | 2026-08-31 | Lần export đầu chuẩn hoá lại 140 file nguyên liệu về định dạng canonical | Bắt buộc để export ổn định (DoD DATA-007). Kiểm chứng bằng so sánh ngữ nghĩa: 0 mất mát; phát hiện và sửa 1 lỗi tròn số (hạt sen 0,675 g) | [DATA-007](./tasks/DATA-007.md) |
+| 2026-08-31 | FNDDS/SR Links để ở **bảng riêng** (`fndds_foods`, `fndds_food_inputs`), không vào `dishes` | Đây là món Mỹ, chỉ dùng kiểm chứng engine; trộn vào kho món Việt là làm bẩn dữ liệu (cạm bẫy DATA-003) | [DATA-003](./tasks/DATA-003.md) |
+| 2026-08-31 | Kết quả Nutrition5k được gọi là **sanity check**, không phải "độ chính xác" | Kiểm tra thực tế: calo của bộ này tính từ chính bảng nguyên liệu của nó (100% khớp <0,5 kcal), nên phép thử là vòng tròn. Trích nó như độ chính xác sẽ là con số vô nghĩa | [ACCURACY-SPEC §4](../06-nutrition/ACCURACY-SPEC.md) |
+| 2026-08-31 | **Không hiệu chỉnh hệ số** dù hai nhóm chưa đạt ngưỡng | Nguyên nhân đã truy được (thiếu yield factor cho cá hấp; ngoại lệ ở nhóm kho) — nới hệ số để đạt số đẹp là đúng thứ cạm bẫy #2 của TEST-002 cấm | [TEST-002](./tasks/TEST-002.md) |

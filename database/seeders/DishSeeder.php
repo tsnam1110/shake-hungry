@@ -64,6 +64,8 @@ class DishSeeder extends Seeder
                     'serving_desc' => $j['serving_desc'] ?? null,
                     'serving_grams' => $j['serving_grams'] ?? null,
                     'estimated_kcal' => $j['estimated_kcal'] ?? null,
+                    'external_ref' => $j['external_ref'] ?? null,
+                    'import_note' => $j['import_note'] ?? null,
                     'status' => $j['status'] ?? 'draft',
                     'source' => $j['source'],
                     'confidence' => $j['confidence'],

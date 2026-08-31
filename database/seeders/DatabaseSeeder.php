@@ -18,6 +18,7 @@ class DatabaseSeeder extends Seeder
             RegionSeeder::class,
             ReferenceFoodSeeder::class,
             CookingYieldSeeder::class,
+            FnddsSeeder::class,
             IngredientSeeder::class,
             DishSeeder::class,
         ]);
