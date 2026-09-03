@@ -1,7 +1,8 @@
 # Roadmap & Task Tracking — Lắc Đói
 
 **Ngày bắt đầu:** 2026-08-31
-**Cập nhật lần cuối:** 2026-09-01 — soát toàn dự án. Sửa **hai lỗi engine/schema chưa ai bắt**:
+**Cập nhật lần cuối:** 2026-09-01 (lần 2) — repo đã có remote GitLab (Q8 đóng), phát sinh Q9 (CI
+sai nền). Trước đó: soát toàn dự án, sửa **hai lỗi engine/schema chưa ai bắt**:
 khoảng tin cậy rộng bằng 0 (vi phạm QT-5, đã hiệu chuẩn → engine 1.1.0) và `needs_review` không có
 cơ chế duyệt + mặc định sai chiều (→ R10 + ING-004). 40 test xanh.
 GĐ1 còn: hệ số dầu (chặn TEST-002), hệ số hao hụt thuỷ sản, duyệt 255 nguyên liệu, Foundation
@@ -225,7 +226,8 @@ Ghi mọi câu hỏi chưa có lời giải ở đây. **Không đoán rồi là
 | Q4 | Ảnh món lấy từ đâu? Tự chụp / mua / CC BY? | DISH-001 trở đi; ảnh hưởng kích thước repo | Chủ dự án | ⬜ Chờ |
 | Q5 | Có cần Git LFS cho ảnh không? | Phụ thuộc Q4 | Chủ dự án | ⬜ Chờ |
 | **Q7** | **Nguồn nào cho hệ số hao hụt khi nấu của THUỶ SẢN?** Bảng USDA Cooking Yields R2 đã nhập chỉ có thịt và gia cầm — **0 dòng thuỷ sản**. Không thể suy từ SR Legacy (raw ÷ cooked) vì chính USDA là vế tham chiếu của TEST-002 ⇒ phép kiểm thành vòng tròn. Ứng viên: USDA Agriculture Handbook 102 (bản quét 1975, chưa có lớp text) | Nhóm `hap` của TEST-002; mọi món cá hấp/luộc VN | Chủ dự án + tra cứu | ⬜ Chờ ([DATA-004](./tasks/DATA-004.md)) |
-| **Q8** | **Repo có đẩy lên remote không, và ở đâu?** Hiện `git remote -v` trống: toàn bộ 255 nguyên liệu biên soạn tay + 20 tài liệu chỉ tồn tại trên một ổ đĩa. CI (`.github/workflows/tests.yml`) cũng chưa chạy lần nào vì không có remote | Sao lưu; bật được CI; branch protection | Chủ dự án | ⬜ Chờ |
+| ~~Q8~~ | ~~Repo có đẩy lên remote không, và ở đâu?~~ | — | — | ✅ **Đã đóng 2026-09-01** — `origin` = `git@gitlab.com:Tran-Son-Nam/shake-hungry.git`, branch `dev` đã đẩy (8 commit, 513 file). Rủi ro mất trắng đã gỡ |
+| **Q9** | **CI chạy trên nền nào?** Repo đang ở **GitLab**, nhưng file CI duy nhất là `.github/workflows/tests.yml` — cú pháp **GitHub Actions**, GitLab **bỏ qua hoàn toàn**. Nên dù đã có remote, CI vẫn chưa chạy lần nào. Chọn một: (a) viết `.gitlab-ci.yml` tương đương — tốn compute minutes của tài khoản GitLab; (b) mirror sang GitHub để dùng Actions; (c) chấp nhận chạy tay trước mỗi commit | Chặn merge khi test đỏ; branch protection | Chủ dự án | ⬜ Chờ |
 | **Q6** | **Có chấp nhận bảng MEXT (Nhật) làm nguồn thứ hai không?** 5 nguyên liệu thuỷ sản (cá nục, ghẹ, mực khô, cá cơm khô, sò huyết) chỉ MEXT có, và **đúng chi** trong khi USDA sai chi tới 43% kcal. Nhưng nhận MEXT là có hai bảng song song → xung đột QT-4 | 5 nguyên liệu thuỷ sản; món có ghẹ/mực khô/cá cơm khô | Chủ dự án | ⬜ Chờ ([ING-002](./tasks/ING-002.md)) |
 
 ---

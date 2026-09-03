@@ -55,16 +55,21 @@ quy tắc ở đây, phải nói ra chỗ mâu thuẫn trước khi làm, không
 | Hệ số DATA-004/008 | ✅ khung xong: `edible_portion_pct` (3 có nguồn, 16 null chờ cân), `default_yield_factor` (9 thịt suy có nguồn) | `edible_portion_note` / `default_yield_factor_note` từng file |
 | **Kiểm chứng engine** | 🔵 lần 2 (2026-09-01, engine **1.1.0**): **89,7% trong ±20%** (không đổi), MAPE 3,9%, và **% tham chiếu nằm trong khoảng 1,0% → 80,4%**. Vẫn chặn: **nhóm chiên chưa đo được** (0/255 có hệ số dầu) và **nhóm hấp lệch −21%** (Cooking Yields R2 **0 dòng thuỷ sản**) | [nhật ký đo](docs/06-nutrition/ACCURACY-SPEC.md) |
 | **Code** | ✅ **Laravel 13.29 + PostgreSQL 17.11** — 15 migration (đủ R1–**R10**), 19 model, 7 seeder, engine calo **1.1.0**, 6 lệnh `lacdoi:*`, **40 test Pest xanh** | `php artisan migrate:fresh --seed; vendor\bin\pest --no-coverage` |
-| **CI** | 🔵 `.github/workflows/tests.yml` viết xong, YAML hợp lệ, PSR-4 `--strict-psr` sạch, không có tên file đụng hoa/thường — nhưng **chưa chạy lần nào vì repo chưa có remote** (Q8) | `git remote -v` (trống) |
+| **CI** | ⚠️ `.github/workflows/tests.yml` viết xong và hợp lệ, nhưng đó là cú pháp **GitHub Actions** trong khi repo nằm ở **GitLab** — GitLab bỏ qua hoàn toàn, nên CI **vẫn chưa chạy lần nào**. Cần `.gitlab-ci.yml` hoặc mirror sang GitHub (Q9) | `ls .gitlab-ci.yml` (không có) |
 | Chưa có | pgvector (GĐ4), Filament (GĐ2), Foundation Foods, UI-001, rà soát độc lập ING-003 | [ROADMAP](docs/05-tasks/ROADMAP.md) |
-| ⚠️ **Không có bản sao ngoài máy** | `git remote -v` trống. 255 nguyên liệu biên soạn tay + 20 tài liệu chỉ tồn tại trên một ổ đĩa | Q8 ở [ROADMAP](docs/05-tasks/ROADMAP.md) |
+| Sao lưu | ✅ `origin` = `git@gitlab.com:Tran-Son-Nam/shake-hungry.git`, branch `dev` (8 commit, 513 file) — đẩy lần đầu 2026-09-01 | `git status -sb` |
 
-> Việc tiếp theo theo thứ tự ưu tiên: **(0) đẩy repo lên remote** — rẻ nhất, gỡ rủi ro mất trắng
-> lớn nhất (Q8); **(1) hệ số hấp thụ dầu có nguồn** (chặn TEST-002, làm mọi món chiên VN hiển thị
+> Việc tiếp theo theo thứ tự ưu tiên: ~~(0) đẩy repo lên remote~~ ✅ **xong 2026-09-01**;
+> **(1) hệ số hấp thụ dầu có nguồn** (chặn TEST-002, làm mọi món chiên VN hiển thị
 > "chưa đủ dữ liệu"); **(2) hệ số hao hụt cho thuỷ sản từ nguồn ĐỘC LẬP với USDA** (Q7 — nhóm hấp
 > lệch −21%); **(3) duyệt 255 nguyên liệu** (người — nay đã có chỗ ghi kết quả); **(4) cân 16 hệ số
 > phần ăn được** (ưu tiên sườn lợn); rồi mở GĐ2 (ADM-001 Filament).
-> Việc chờ chủ dự án: **LEGAL-002**, **Q1**, **Q6**, **Q7**, **Q8**.
+> Việc chờ chủ dự án: **LEGAL-002**, **Q1**, **Q6**, **Q7**, **Q9** (CI đang sai nền — xem bảng trên).
+
+> ⚠️ **Repo đã nằm trên GitLab nhưng [LEGAL-002](docs/05-tasks/tasks/LEGAL-002.md) vẫn ⬜ TODO** —
+> tức 255 file dữ liệu tự biên soạn hiện **chưa có tuyên bố giấy phép nào**. Nếu repo để chế độ
+> public thì cần chốt LEGAL-002 sớm; nếu private thì chưa gấp, nhưng vẫn phải chốt trước khi có
+> người đóng góp thứ hai (CTR-001).
 >
 > ⚠️ **Chưa được tuyên bố "độ chính xác >80%" ra ngoài.** 89,7% là trên món Mỹ của FNDDS với ánh
 > xạ do USDA cung cấp sẵn, không có nhóm chiên — không phải trên kho món Việt. Soát bộ mẫu ngày
