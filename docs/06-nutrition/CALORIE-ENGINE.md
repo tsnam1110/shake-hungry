@@ -226,16 +226,41 @@ Mỗi nguồn bất định nới khoảng thêm. Nhân dồn:
 
 | Nguồn bất định | Hệ số nới |
 |---|---|
+| **Bất định nền của mọi phép tính** (bảng thành phần + làm tròn + xấp xỉ của chính engine) | **×0,96 – ×1,04 — LUÔN áp dụng**, kể cả khi mọi nguyên liệu ánh xạ `high` |
 | Ánh xạ nguyên liệu `mapping_confidence = medium` | ×0,95 – ×1,05 mỗi nguyên liệu (dồn theo tỷ trọng khối lượng) |
 | Ánh xạ `mapping_confidence = low` | ×0,85 – ×1,15 |
 | Chế biến chiên/rán | ×0,80 – ×1,25 (§4) |
 | Khẩu phần ước lượng, không cân | ×0,85 – ×1,15 |
 | Có `missing[]` | Chỉ nới cận **trên**: `kcal_max × (1 + tỷ_lệ_khối_lượng_thiếu)` |
 
-> ⚠️ Các hệ số ở bảng này là **giá trị khởi đầu do dự án đặt**, chưa hiệu chuẩn. Chúng phải được
-> điều chỉnh sau khi chạy kiểm chứng trên Nutrition5k và FNDDS
-> ([ACCURACY-SPEC §4](ACCURACY-SPEC.md)). Đừng coi chúng là hằng số thiêng liêng — nhưng cũng đừng
-> đổi mà không chạy lại kiểm chứng.
+> ⚠️ Các hệ số ở bảng này là **giá trị khởi đầu do dự án đặt**, chưa hiệu chuẩn — **trừ dòng đầu**,
+> đã hiệu chuẩn 2026-09-01 (xem khối dưới). Chúng phải được điều chỉnh sau khi chạy kiểm chứng trên
+> Nutrition5k và FNDDS ([ACCURACY-SPEC §4](ACCURACY-SPEC.md)). Đừng coi chúng là hằng số thiêng
+> liêng — nhưng cũng đừng đổi mà không chạy lại kiểm chứng.
+
+> ## ⚠️ Đính chính 2026-09-01 — engine từng trả "khoảng" rộng bằng 0, vi phạm thẳng QT-5
+>
+> Bảng trên bản đầu **không có dòng bất định nền**, và `MAPPING_SPREAD['high']` bằng 0. Hệ quả: món
+> có toàn nguyên liệu ánh xạ `high`, không chiên, khẩu phần có cân thì `kcal_min === kcal_max` —
+> một con số điểm đội lốt khoảng. Đó **đúng là thứ QT-5 cấm** ("không hiển thị con số chính xác giả"),
+> và nó nằm ngay trong engine suốt từ CALC-001.
+>
+> Phép đo FNDDS lần 1 đã in ra bằng chứng mà không ai đọc: chỉ **1,0%** giá trị tham chiếu rơi vào
+> khoảng engine trả về. Với khoảng rộng 0 thì 1,0% đó chỉ là số lần hai số tình cờ bằng nhau sau
+> làm tròn.
+>
+> **Cách chọn 0,04.** Không đặt tay. Lấy phân vị 90 của sai số tuyệt đối trên nhóm món mà giả định
+> của engine thực sự đúng — nhóm **bảo toàn khối lượng** (`song` / `luoc` / `nau`, n = 124 của bộ
+> FNDDS): p50 0,40% · p80 0,94% · **p90 3,61%** · p95 9,91%. Làm tròn lên 4% ⇒ phủ 91,1% nhóm đó.
+>
+> **Cố ý KHÔNG nới rộng hơn.** Muốn phủ luôn nhóm `hap`/`kho` thì phải nới tới ±20%. Sai lệch của
+> hai nhóm đó là **thiên lệch có hệ thống** do thiếu hệ số hao hụt, phải sửa bằng dữ liệu. Nới
+> khoảng cho tới khi nó nuốt trọn thiên lệch là biến QT-5 từ công cụ trung thực thành công cụ che
+> lỗi — báo cáo đẹp lên mà engine không tốt hơn một chút nào.
+>
+> Kết quả sau khi sửa (engine 1.1.0, cùng bộ mẫu): % tham chiếu nằm trong khoảng **1,0% → 80,4%**,
+> trong khi **% trong ±20% giữ nguyên 89,7%**, MAPE 3,9% và bias −3,8% **không đổi** — vì điểm giữa
+> khoảng không đổi. Đó là bằng chứng phép sửa không đụng vào con số tiêu chí chính.
 
 ---
 

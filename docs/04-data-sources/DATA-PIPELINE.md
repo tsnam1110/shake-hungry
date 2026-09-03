@@ -180,6 +180,7 @@ Chạy trước mỗi commit dữ liệu, và trong CI:
 | V12 | Món `completeness_level >= 2` mà có <3 `recipe_sources` | 🔴 Lỗi (ràng buộc R8) |
 | V13 | Nguyên liệu có `density_g_per_ml` mà thiếu `density_note` | 🔴 Lỗi — phải ghi rõ đo hay suy ra |
 | V14 | Giá trị dinh dưỡng có mà thiếu `source_url` | 🔴 Lỗi — mọi con số phải truy nguyên được |
+| V15 | `needs_review = false` mà thiếu `reviewed_by` / `reviewed_at`, hoặc chỉ có một trong hai, hoặc `reviewed_at` sai dạng `YYYY-MM-DD` | 🔴 Lỗi (ràng buộc R10) — duyệt không có bằng chứng thì không phải duyệt |
 
 ### Thủ công — rà soát định kỳ
 

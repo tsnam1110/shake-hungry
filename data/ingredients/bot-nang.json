@@ -53,5 +53,8 @@
   ],
   "source": "curated",
   "confidence": "medium",
-  "needs_review": true
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null
 }

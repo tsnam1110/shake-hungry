@@ -63,6 +63,9 @@ class IngredientSeeder extends Seeder
                     'source' => $j['source'],
                     'confidence' => $j['confidence'],
                     'needs_review' => $j['needs_review'] ?? true,
+                    'reviewed_by' => $j['reviewed_by'] ?? null,
+                    'reviewed_at' => $j['reviewed_at'] ?? null,
+                    'review_note' => $j['review_note'] ?? null,
                 ],
             );
 

@@ -1,8 +1,8 @@
 # Mô hình dữ liệu — Lắc Đói
 
-**Cập nhật lần cuối:** 2026-08-31 — hiện thực xong migration ([SETUP-003](../05-tasks/tasks/SETUP-003.md)), đính chính 5 chỗ lệch với thực tế
-**Trạng thái:** ✅ **ĐÃ HIỆN THỰC** — 12 migration trong `database/migrations/`, 9 ràng buộc
-R1–R9 có test ở `tests/Feature/IntegrityConstraintsTest.php`.
+**Cập nhật lần cuối:** 2026-09-01 — thêm dấu vết duyệt + ràng buộc R10 ([ING-004](../05-tasks/tasks/ING-004.md))
+**Trạng thái:** ✅ **ĐÃ HIỆN THỰC** — 15 migration trong `database/migrations/`, 10 ràng buộc
+R1–R10 có test ở `tests/Feature/IntegrityConstraintsTest.php`.
 
 Khi hiện thực, migration phải khớp tài liệu này. Nếu thực tế buộc phải khác, **sửa tài liệu trong
 cùng commit** (QT-7) và ghi lý do.
@@ -57,6 +57,9 @@ cùng commit** (QT-7) và ghi lý do.
 - Enum: dùng bảng tra cứu hoặc `varchar` + `CHECK`, **không** dùng kiểu `ENUM` của Postgres (khó
   migrate).
 - Mọi bảng dữ liệu biên soạn có: `source`, `confidence`, `needs_review`, `created_at`, `updated_at`.
+- `ingredients` và `dishes` có thêm **dấu vết duyệt**: `reviewed_by`, `reviewed_at`, `review_note`
+  (bổ sung 2026-09-01, [ING-004](../05-tasks/tasks/ING-004.md)). Mặc định của `needs_review` ở hai
+  bảng này là **`true`** — chưa duyệt là trạng thái mặc định, ra khỏi nó phải khai báo tường minh.
 
 ### Bảng `source` — dùng chung toàn hệ thống
 
@@ -406,6 +409,16 @@ thì được ghi sang `dishes`/`ingredients` với `source='curated'`, không p
 
 ---
 
+> ## ⚠️ Đính chính 2026-09-01 — `needs_review` từng mặc định SAI CHIỀU
+>
+> Migration đầu đặt `needs_review` mặc định **`false`** cho cả `ingredients` lẫn `dishes`. Nghĩa là
+> mọi bản ghi tạo bằng đường không phải seeder — Filament ở GĐ2, form đóng góp [CTR-001](../05-tasks/tasks/CTR-001.md),
+> script nhập liệu — mặc nhiên được coi là **đã duyệt**. Đúng ngược với QT-1.
+>
+> Không ai phát hiện sớm vì `IngredientSeeder` truyền `?? true` tường minh, nên toàn bộ dữ liệu đi
+> qua file đều đúng; lỗ hổng chỉ mở ra đúng lúc GĐ2 bắt đầu ghi thẳng vào database.
+> Đã đảo mặc định thành `true` và thêm R10 trong cùng commit.
+
 ## 6. Ràng buộc toàn vẹn phải có
 
 Những ràng buộc này là hiện thực kỹ thuật của các quy tắc tuyệt đối. Phải viết thành CHECK/trigger,
@@ -422,5 +435,6 @@ không chỉ kiểm tra ở tầng ứng dụng:
 | R7 | `ingredients.mapping_confidence <> 'high'` ⇒ `mapping_note` NOT NULL | truy nguyên |
 | R8 | `dishes.completeness_level >= 2` ⇒ có ≥3 dòng `dish_recipe_sources` | truy nguyên công thức |
 | R9 | `dish_ingredients.ingredient_id` phải trỏ tới nguyên liệu có thật | chống slug lỗi thời |
+| R10 | `needs_review = false` ⇒ `reviewed_by` và `reviewed_at` NOT NULL (bảng `ingredients` và `dishes`) | QT-1 — duyệt phải có bằng chứng |
 
 Test kiểm chứng các ràng buộc này: task [TEST-001](../05-tasks/tasks/TEST-001.md).

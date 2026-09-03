@@ -59,7 +59,7 @@ jobs:
           DB_PASSWORD: postgres
         run: vendor/bin/pest --no-coverage
 
-      - name: Kiểm tra toàn vẹn dữ liệu (V1–V14)
+      - name: Kiểm tra toàn vẹn dữ liệu (V1–V15)
         env:
           DB_CONNECTION: pgsql
           DB_HOST: 127.0.0.1

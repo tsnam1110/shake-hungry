@@ -1,10 +1,10 @@
 # Roadmap & Task Tracking — Lắc Đói
 
 **Ngày bắt đầu:** 2026-08-31
-**Cập nhật lần cuối:** 2026-08-31 (lần 5) — DATA-003 (333 Food Code FNDDS + SR Links) và DATA-005
-(61 món Wikidata, draft) xong; **TEST-002 chạy lần đầu: 89,7% trong ±20%, tiêu chí chính ĐẠT** —
-nhưng nhóm chiên chưa đo được (thiếu hệ số dầu) nên task chưa đóng.
-GĐ1 còn: rà soát độc lập ING-003, Foundation, hệ số dầu/yield để đóng TEST-002
+**Cập nhật lần cuối:** 2026-09-01 — soát toàn dự án. Sửa **hai lỗi engine/schema chưa ai bắt**:
+khoảng tin cậy rộng bằng 0 (vi phạm QT-5, đã hiệu chuẩn → engine 1.1.0) và `needs_review` không có
+cơ chế duyệt + mặc định sai chiều (→ R10 + ING-004). 40 test xanh.
+GĐ1 còn: hệ số dầu (chặn TEST-002), hệ số hao hụt thuỷ sản, duyệt 255 nguyên liệu, Foundation
 
 > Mỗi task có file chi tiết riêng tại [`tasks/`](./tasks/). Click mã task để xem đầy đủ.
 > Tạo task mới: copy [`TASK-TEMPLATE.md`](./TASK-TEMPLATE.md) vào `tasks/`, đặt tên theo mã task.
@@ -113,6 +113,7 @@ thư mục `data/` đúng cấu trúc; câu hỏi Q1/Q2 ở [PRD §9](../01-prd/
 | [ING-001](./tasks/ING-001.md) | 50 nguyên liệu cốt lõi (gạo, thịt, mắm, rau nền) | Dữ liệu | 🔵 | — | Biên soạn xong **55 nguyên liệu** 2026-08-31; **3 tiêu chí DoD chưa kiểm được** vì thiếu công cụ |
 | [ING-002](./tasks/ING-002.md) | Mở rộng lên 150 nguyên liệu | Dữ liệu | 🔵 | ING-001 | ✅ **150/150** đạt mốc 2026-08-31; 3 tiêu chí DoD chưa kiểm được vì thiếu công cụ; 5 mục giữ ngoài repo chờ thẩm định MEXT |
 | [ING-003](./tasks/ING-003.md) | Mở rộng lên 250 nguyên liệu | Dữ liệu | 🔵 **255/250 đạt mốc 2026-08-31** (125 high/64 medium/28 low/38 null); còn rà soát độc lập + duyệt needs_review | ING-002 | — |
+| [ING-004](./tasks/ING-004.md) | Dấu vết duyệt + ràng buộc R10 (cơ chế duyệt dữ liệu) | Backend | ✅ | SETUP-003 | 2026-09-01 |
 
 ### 1c. Engine tính calo
 
@@ -120,6 +121,7 @@ thư mục `data/` đúng cấu trúc; câu hỏi Q1/Q2 ở [PRD §9](../01-prd/
 |---|---|---|---|---|---|
 | [CALC-001](./tasks/CALC-001.md) | Engine tính dinh dưỡng (hàm thuần tuý) | Backend | ✅ | ING-001 | 2026-08-31 |
 | [CALC-002](./tasks/CALC-002.md) | Hệ số hao hụt khi nấu + hấp thụ dầu khi chiên | Backend | 🔵 code xong, chờ dữ liệu DATA-004/008 | CALC-001, DATA-004 | — |
+| [CALC-003](./tasks/CALC-003.md) | Hiệu chuẩn khoảng min–max (QT-5) — engine 1.1.0 | Backend | ✅ 1,0% → 80,4% tham chiếu nằm trong khoảng | CALC-001, TEST-002 | 2026-09-01 |
 | [TEST-001](./tasks/TEST-001.md) | Test các ràng buộc toàn vẹn R1–R9 | Test | ✅ (CI chưa kiểm trên GitHub — chưa có remote) | SETUP-003 | 2026-08-31 |
 | [TEST-002](./tasks/TEST-002.md) | Kiểm chứng engine trên FNDDS + Nutrition5k | Test | 🔵 lần 1 xong: **89,7% trong ±20%** (tiêu chí chính ĐẠT); nhóm chiên chưa đo được → chưa đóng | CALC-002, DATA-003 | — |
 
@@ -222,6 +224,8 @@ Ghi mọi câu hỏi chưa có lời giải ở đây. **Không đoán rồi là
 | ~~Q3~~ | ~~Viện Dinh dưỡng có cấp phép không?~~ | — | — | ❌ **Đã đóng 2026-08-31** — chọn hướng tự tra cứu, không xin phép. Xem [LEGAL-001](./tasks/LEGAL-001.md) |
 | Q4 | Ảnh món lấy từ đâu? Tự chụp / mua / CC BY? | DISH-001 trở đi; ảnh hưởng kích thước repo | Chủ dự án | ⬜ Chờ |
 | Q5 | Có cần Git LFS cho ảnh không? | Phụ thuộc Q4 | Chủ dự án | ⬜ Chờ |
+| **Q7** | **Nguồn nào cho hệ số hao hụt khi nấu của THUỶ SẢN?** Bảng USDA Cooking Yields R2 đã nhập chỉ có thịt và gia cầm — **0 dòng thuỷ sản**. Không thể suy từ SR Legacy (raw ÷ cooked) vì chính USDA là vế tham chiếu của TEST-002 ⇒ phép kiểm thành vòng tròn. Ứng viên: USDA Agriculture Handbook 102 (bản quét 1975, chưa có lớp text) | Nhóm `hap` của TEST-002; mọi món cá hấp/luộc VN | Chủ dự án + tra cứu | ⬜ Chờ ([DATA-004](./tasks/DATA-004.md)) |
+| **Q8** | **Repo có đẩy lên remote không, và ở đâu?** Hiện `git remote -v` trống: toàn bộ 255 nguyên liệu biên soạn tay + 20 tài liệu chỉ tồn tại trên một ổ đĩa. CI (`.github/workflows/tests.yml`) cũng chưa chạy lần nào vì không có remote | Sao lưu; bật được CI; branch protection | Chủ dự án | ⬜ Chờ |
 | **Q6** | **Có chấp nhận bảng MEXT (Nhật) làm nguồn thứ hai không?** 5 nguyên liệu thuỷ sản (cá nục, ghẹ, mực khô, cá cơm khô, sò huyết) chỉ MEXT có, và **đúng chi** trong khi USDA sai chi tới 43% kcal. Nhưng nhận MEXT là có hai bảng song song → xung đột QT-4 | 5 nguyên liệu thuỷ sản; món có ghẹ/mực khô/cá cơm khô | Chủ dự án | ⬜ Chờ ([ING-002](./tasks/ING-002.md)) |
 
 ---
@@ -233,6 +237,7 @@ Ghi kết quả mỗi lần rà soát định kỳ (mỗi 50 món — xem [DATA-
 | Ngày | Phạm vi | Mẫu kiểm | Phát hiện | Hành động |
 |---|---|---|---|---|
 | 2026-08-31 | 55 nguyên liệu đầu tiên ([ING-001](./tasks/ING-001.md)) | Toàn bộ, tra chéo USDA / Ciqual / nhãn sản phẩm | 20 `high`, 21 `medium`, 12 `low`, **2 không tra được** (cá lóc, mắm tôm). Bốn ô sai số lớn: ba chỉ (380–518), nạm bò (155–345), đậu phụ (80–144), cơm trắng (130–155). Bẫy loài: USDA không có mục `water spinach` cho rau muống | Tách đôi 3 nguyên liệu (thăn lợn, nước mắm); ghi 6 nhóm bẫy vào [EDITORIAL-GUIDE §9](../09-standards/EDITORIAL-GUIDE.md); 4 nguyên liệu dùng OFF → **chặn bởi [LEGAL-002](./tasks/LEGAL-002.md)** |
+| 2026-09-01 | Soát toàn dự án (code + dữ liệu + tài liệu) | Máy: chạy lại `validate-data`, 40 test Pest, `migrate:fresh --seed`, `accuracy-run`; đối chiếu từng con số của CLAUDE.md/ROADMAP với thực tế | Số liệu tài liệu **khớp thực tế**, trừ 2 chỗ đã đính chính. Bốn phát hiện mới: (1) engine trả khoảng **rộng bằng 0** cho ánh xạ `high` — vi phạm QT-5, đúng thứ chỉ số "1,0% tham chiếu trong khoảng" đã tố cáo từ lần đo 1 mà không ai đọc; (2) **255/255** nguyên liệu `needs_review=true` (tài liệu ghi 105) vì schema **không có chỗ ghi ai đã duyệt**; (3) `needs_review` mặc định **`false`** ở cả hai bảng — ngược QT-1, lỗ hổng mở đúng lúc GĐ2 ghi thẳng vào DB; (4) bảng Cooking Yields R2 **0 dòng thuỷ sản** nên nhóm `hap` không có nguồn hệ số độc lập | Engine 1.1.0 (bất định nền ±4%, hiệu chuẩn từ p90 nhóm bảo toàn khối lượng); R10 + V15 + 3 cột dấu vết duyệt; đảo mặc định `needs_review`; ghi Q7 (hệ số thuỷ sản) và Q8 (remote) vào Câu hỏi mở |
 | 2026-08-31 | Đợt ING-003: 105 nguyên liệu mới (150→255) + đối chiếu toàn kho | Máy: đối chiếu snapshot ↔ bảng SR Legacy đã nhập (197 mục), validator V1–V14, V10 | **197/197 ánh xạ khớp tuyệt đối, 0 lệch.** Số liệu 105 file mới do script máy-chép từ USDA gốc theo fdc_id (không gõ tay). 38 mục null có tài liệu tra cứu. V10: chỉ mỡ nước vượt 900 kcal — đúng ngoại lệ. Bẫy mới ghi nhận: chili powder Mỹ là hỗn hợp; sake ≠ rượu trắng (cồn bằng nửa); lươn Anguilla ≠ Monopterus (béo ~6×) | Toàn bộ 105 file needs_review=true chờ người duyệt; 5 mục MEXT tiếp tục giữ ngoài repo (Q6) |
 
 ---

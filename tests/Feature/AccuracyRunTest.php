@@ -33,11 +33,15 @@ it('engine cong dung tren mot me lon roi quy ve 100g — nen tang cua phep do FN
         cookingMethod: 'nau', fctSource: 'usda_sr_legacy', portionWeighed: true,
     );
 
-    // Tổng mẻ: 900 g × 1 kcal/g + 100 g × 5 kcal/g = 1.400 kcal trên 1.000 g
-    expect($result->kcalMin)->toBe(1400.0)
+    // Tổng mẻ: 900 g × 1 kcal/g + 100 g × 5 kcal/g = 1.400 kcal trên 1.000 g.
+    // Dùng ĐIỂM GIỮA vì engine 1.1.0 luôn trả khoảng (±4% nền) — phép đo FNDDS
+    // cũng lấy điểm giữa, nên test phải bám đúng thứ phép đo dùng.
+    $mid = ($result->kcalMin + $result->kcalMax) / 2;
+    expect($mid)->toBe(1400.0)
+        ->and($result->kcalMin)->toBe(1344.0)
         ->and($result->totalRawG)->toBe(1000.0);
 
-    $per100g = $result->kcalMin * 100.0 / $result->totalRawG;
+    $per100g = $mid * 100.0 / $result->totalRawG;
     expect($per100g)->toBe(140.0);
 });
 
@@ -52,10 +56,28 @@ it('mon hap co yield factor cho khoi luong thanh pham dung ty le', function () {
     );
 
     // Chất dinh dưỡng KHÔNG đổi khi mất nước; chỉ khối lượng đổi.
-    expect($result->kcalMin)->toBe(100.0)
-        ->and($result->cookedGramsEstimate)->toBe(79.0);
+    $mid = ($result->kcalMin + $result->kcalMax) / 2;
+    expect($mid)->toBe(100.0)
+        ->and($result->cookedGramsEstimate)->toBe(79.0)
+        // Có yield factor ⇒ suy được khối lượng thành phẩm ⇒ KHÔNG có ghi chú cảnh báo.
+        ->and($result->notes)->not->toContain('khoi-luong-thanh-pham-khong-suy-duoc');
 
     // Quy về 100 g THÀNH PHẨM thì đậm đặc hơn — đúng chiều với dữ liệu USDA.
-    $per100gCooked = $result->kcalMin * 100.0 / $result->cookedGramsEstimate;
+    $per100gCooked = $mid * 100.0 / $result->cookedGramsEstimate;
     expect(round($per100gCooked, 1))->toBe(126.6);
+});
+
+it('khong suy duoc khoi luong thanh pham thi ghi chu ro — khong de ben goi thay tham', function () {
+    // Nguyên liệu không có yield factor và không ready-to-eat ⇒ engine KHÔNG biết
+    // khối lượng món chín. Trước 1.1.0 nó chỉ trả null, và bên gọi lặng lẽ thay bằng
+    // khối lượng sống rồi báo cáo như thể đã biết — đó chính là cơ chế sinh ra sai
+    // lệch −21% của nhóm `hap` trong phép đo lần 1 (2026-08-31).
+    $result = (new NutritionCalculator)->compute(
+        [new IngredientInput(slug: 'ca', grams: 100.0, mappingConfidence: 'high',
+            fctSource: 'usda_sr_legacy', kcalPer100g: 100.0)],
+        cookingMethod: 'hap', fctSource: 'usda_sr_legacy', portionWeighed: true,
+    );
+
+    expect($result->cookedGramsEstimate)->toBeNull()
+        ->and($result->notes)->toContain('khoi-luong-thanh-pham-khong-suy-duoc');
 });

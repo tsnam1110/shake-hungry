@@ -56,8 +56,9 @@ it('ap he so phan an duoc truoc khi tra dinh duong — 300g suon thap hon ro ret
     $coHeSo = $service->compute(dishWith300g(suonTest(50.0)), 'usda_sr_legacy', portionWeighed: true);
 
     // 300 g × 200 kcal/100g = 600 so với 150 g ăn được × 200 = 300
-    expect($khongHeSo->kcalMax)->toBe(600.0)
-        ->and($coHeSo->kcalMax)->toBe(300.0)
+    $mid = fn ($r) => round(($r->kcalMin + $r->kcalMax) / 2, 1);
+    expect($mid($khongHeSo))->toBe(600.0)
+        ->and($mid($coHeSo))->toBe(300.0)
         ->and($coHeSo->kcalMax)->toBeLessThan($khongHeSo->kcalMin);
 });
 
@@ -68,5 +69,5 @@ it('is_edible_weight=true thi khong ap he so nua — quantity da la phan an duoc
     $dish->dishIngredients()->update(['is_edible_weight' => true]);
     $result = $service->compute($dish->fresh(), 'usda_sr_legacy', portionWeighed: true);
 
-    expect($result->kcalMax)->toBe(600.0);
+    expect(round(($result->kcalMin + $result->kcalMax) / 2, 1))->toBe(600.0);
 });

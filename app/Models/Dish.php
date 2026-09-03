@@ -23,6 +23,7 @@ class Dish extends Model
             'is_eat_out' => 'boolean',
             'is_home_cook' => 'boolean',
             'needs_review' => 'boolean',
+            'reviewed_at' => 'datetime',
             'serving_grams' => 'float',
         ];
     }

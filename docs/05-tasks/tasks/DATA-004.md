@@ -60,3 +60,29 @@ thành phẩm. Bỏ qua bước này thì mọi chất dinh dưỡng đều sai 
   (is_ready_to_eat) nên món cơm không phụ thuộc hệ số này; cần khi công thức ghi gạo sống.
 - Việc tra hệ số **theo cách nấu của từng món** (thay vì default theo nguyên liệu) là phần
   còn lại của [CALC-002](./CALC-002.md) — bảng đã sẵn trong DB để làm việc đó.
+
+
+---
+
+## Bổ sung 2026-09-01 — bảng đã nhập KHÔNG có thuỷ sản
+
+Kiểm lại `data/reference/usda-cooking-yields.csv` (163 dòng, USDA Cooking Yields R2):
+
+```bash
+grep -icE 'fish|seafood|shrimp|salmon|cod|scallop' data/reference/usda-cooking-yields.csv
+# → 0
+```
+
+Bảng R2 theo đúng tên gọi của nó — *"for **Meat and Poultry**"* — chỉ có thịt và gia cầm. Đây là
+nguyên nhân trực tiếp khiến nhóm `hap` của [TEST-002](TEST-002.md) lệch **−21% đều đặn**: cá hấp
+mất ~21% nước, engine không có hệ số nên giả định bảo toàn khối lượng.
+
+**Không được suy từ SR Legacy** (kcal sống ÷ kcal chín) — chi tiết và lý do ở TEST-002, mục "Hai
+điểm chặn". Cần nguồn độc lập với USDA FoodData Central.
+
+**Ứng viên đã tra, chưa dùng được:** USDA Agriculture Handbook 102 *"Food Yields Summarized by
+Different Stages of Preparation"* (1975, public domain) —
+<https://www.ars.usda.gov/ARSUserFiles/80400530/pdf/ah102.pdf>. Có mục cá và thuỷ sản, nhưng bản
+trên mạng là **ảnh quét không có lớp text**, phải OCR rồi đối chiếu tay từng dòng. Chưa làm.
+
+Đã ghi thành **Q7** ở [ROADMAP](../ROADMAP.md) mục "Câu hỏi mở".

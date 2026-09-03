@@ -6,8 +6,8 @@ File hướng dẫn bắt buộc cho Claude Code và mọi AI agent làm việc 
 quy tắc ở đây, phải nói ra chỗ mâu thuẫn trước khi làm, không âm thầm làm khác.
 
 **Ngày tạo:** 2026-08-31
-**Cập nhật lần cuối:** 2026-08-31 (lần 3) — dựng xong nền code GĐ0/GĐ1: Laravel 13 + PostgreSQL 17,
-schema đủ R1–R9, engine calo, 4 lệnh `lacdoi:*`, nhập USDA SR Legacy, 31 test Pest xanh
+**Cập nhật lần cuối:** 2026-09-01 — soát toàn dự án; sửa hai lỗi engine/schema chưa ai bắt
+(khoảng tin cậy rộng bằng 0 → engine 1.1.0; `needs_review` không có cơ chế duyệt → R10), 40 test xanh
 
 ---
 
@@ -25,26 +25,52 @@ schema đủ R1–R9, engine calo, 4 lệnh `lacdoi:*`, nhập USDA SR Legacy, 3
 > Ngay sau đính chính thứ nhất, toàn bộ nền code GĐ0/GĐ1 đã được dựng. Bảng dưới là trạng thái
 > mới; các cảnh báo "lệnh chưa chạy được" trước đây không còn đúng.
 
-**Trạng thái thực tế, kiểm ngày 2026-08-31 (cuối ngày):**
+> ## ⚠️ Đính chính lần 3, 2026-09-01 — hai chỗ tài liệu tự tin hơn thực tế
+>
+> Soát lại toàn bộ bằng cách **chạy lệnh chứ không đọc tài liệu**. Phần lớn số liệu khớp; hai chỗ
+> sai, và cả hai đều sai theo hướng làm dự án trông tốt hơn thực tế:
+>
+> 1. Bảng dưới từng ghi *"105 file mới đang `needs_review` chờ duyệt"*. Thực tế là **255/255** —
+>    toàn bộ kho nguyên liệu, kể cả 150 file của ING-001/ING-002 đã rà soát tay. Lý do không phải
+>    ai lười: **schema không có chỗ nào ghi ai đã duyệt**, nên hạ cờ đồng nghĩa với xoá thông tin.
+>    Tệ hơn, `needs_review` mặc định là **`false`** ở cả hai bảng — ngược hẳn QT-1, và lỗ hổng sẽ
+>    mở đúng lúc GĐ2 cho Filament ghi thẳng vào database. Đã sửa: [ING-004](docs/05-tasks/tasks/ING-004.md).
+> 2. Engine 1.0.0 trả **khoảng rộng bằng 0** cho món ánh xạ `high` — tức một con số điểm đội lốt
+>    khoảng, đúng thứ **QT-5 cấm**, nằm sẵn trong engine từ CALC-001. Phép đo lần 1 đã in bằng chứng
+>    ngay trên bảng chỉ số (*"% tham chiếu nằm trong khoảng: **1,0%**"*) nhưng không ai đọc, vì dòng
+>    đầu tiên đã xanh. Đã sửa và hiệu chuẩn: [CALC-003](docs/05-tasks/tasks/CALC-003.md).
+>
+> Bài học chung của cả hai: **một cơ chế an toàn không có cách kiểm chứng thì không phải cơ chế an
+> toàn.** Cờ `needs_review` không ai kiểm được đã hạ đúng chưa; khoảng min–max không ai kiểm được
+> có thật sự chứa giá trị đúng không.
+
+**Trạng thái thực tế, kiểm ngày 2026-09-01 (đã chạy lại toàn bộ lệnh kiểm chứng):**
 
 | Hạng mục | Thực tế | Kiểm bằng |
 |---|---|---|
 | Tài liệu | ✅ 19 tài liệu trong `docs/` + 47 task file | `find docs -name "*.md" -not -path "*/tasks/*" \| wc -l` |
-| **Dữ liệu nguyên liệu** | ✅ **255 file** (mốc 250 của GĐ1 đã đạt): 125 high / 64 medium / 28 low / **38 "không tra được"** có tài liệu; 105 file mới đang `needs_review` chờ duyệt | `php artisan lacdoi:validate-data` |
+| **Dữ liệu nguyên liệu** | ✅ **255 file** (mốc 250 của GĐ1 đã đạt): 125 high / 64 medium / 28 low / **38 "không tra được"** có tài liệu. ⚠️ **255/255 đang `needs_review`** — nay đã có chỗ ghi kết quả duyệt (R10), còn chờ **người** | `php artisan lacdoi:validate-data` |
 | Dữ liệu món ăn | 🔵 **61 file nháp** gieo mầm từ Wikidata (`status=draft`, vỏ rỗng: chưa vùng miền/bữa/nguyên liệu) — GĐ3 mới biên soạn thật | `ls data/dishes/vn` |
 | Bảng tham chiếu | ✅ SR Legacy **7.793** + Cooking Yields R2 **163** + FNDDS **333 Food Code / 1.810 SR Links** + `regions-vn.json` + `wikidata-vn-dishes.json`; **197/255 nguyên liệu ánh xạ, 0 lệch** | `data/reference/MANIFEST.json` |
 | Hệ số DATA-004/008 | ✅ khung xong: `edible_portion_pct` (3 có nguồn, 16 null chờ cân), `default_yield_factor` (9 thịt suy có nguồn) | `edible_portion_note` / `default_yield_factor_note` từng file |
-| **Kiểm chứng engine** | 🔵 lần 1 (2026-08-31, engine 1.0.0): **89,7% món FNDDS trong ±20%**, MAPE 3,9% — tiêu chí chính đạt. **Nhóm chiên chưa đo được** (thiếu hệ số dầu) | [nhật ký đo](docs/06-nutrition/ACCURACY-SPEC.md) |
-| **Code** | ✅ **Laravel 13.29 + PostgreSQL 17.11** — 14 migration (đủ R1–R9), 20 model, 7 seeder, engine calo, 6 lệnh `lacdoi:*`, **36 test Pest xanh** | `php artisan migrate:fresh --seed; vendor\bin\pest --no-coverage` |
+| **Kiểm chứng engine** | 🔵 lần 2 (2026-09-01, engine **1.1.0**): **89,7% trong ±20%** (không đổi), MAPE 3,9%, và **% tham chiếu nằm trong khoảng 1,0% → 80,4%**. Vẫn chặn: **nhóm chiên chưa đo được** (0/255 có hệ số dầu) và **nhóm hấp lệch −21%** (Cooking Yields R2 **0 dòng thuỷ sản**) | [nhật ký đo](docs/06-nutrition/ACCURACY-SPEC.md) |
+| **Code** | ✅ **Laravel 13.29 + PostgreSQL 17.11** — 15 migration (đủ R1–**R10**), 19 model, 7 seeder, engine calo **1.1.0**, 6 lệnh `lacdoi:*`, **40 test Pest xanh** | `php artisan migrate:fresh --seed; vendor\bin\pest --no-coverage` |
+| **CI** | 🔵 `.github/workflows/tests.yml` viết xong, YAML hợp lệ, PSR-4 `--strict-psr` sạch, không có tên file đụng hoa/thường — nhưng **chưa chạy lần nào vì repo chưa có remote** (Q8) | `git remote -v` (trống) |
 | Chưa có | pgvector (GĐ4), Filament (GĐ2), Foundation Foods, UI-001, rà soát độc lập ING-003 | [ROADMAP](docs/05-tasks/ROADMAP.md) |
+| ⚠️ **Không có bản sao ngoài máy** | `git remote -v` trống. 255 nguyên liệu biên soạn tay + 20 tài liệu chỉ tồn tại trên một ổ đĩa | Q8 ở [ROADMAP](docs/05-tasks/ROADMAP.md) |
 
-> Việc tiếp theo theo thứ tự ưu tiên: **hệ số hấp thụ dầu có nguồn** (chặn việc đóng TEST-002 và
-> làm mọi món chiên VN hiển thị "chưa đủ dữ liệu"), **rà soát/duyệt 105 nguyên liệu needs_review**
-> (người), **phép cân 16 hệ số phần ăn được** (ưu tiên sườn lợn), rồi mở GĐ2 (ADM-001 Filament).
-> Hai việc chờ chủ dự án: **LEGAL-002** và **Q1**.
+> Việc tiếp theo theo thứ tự ưu tiên: **(0) đẩy repo lên remote** — rẻ nhất, gỡ rủi ro mất trắng
+> lớn nhất (Q8); **(1) hệ số hấp thụ dầu có nguồn** (chặn TEST-002, làm mọi món chiên VN hiển thị
+> "chưa đủ dữ liệu"); **(2) hệ số hao hụt cho thuỷ sản từ nguồn ĐỘC LẬP với USDA** (Q7 — nhóm hấp
+> lệch −21%); **(3) duyệt 255 nguyên liệu** (người — nay đã có chỗ ghi kết quả); **(4) cân 16 hệ số
+> phần ăn được** (ưu tiên sườn lợn); rồi mở GĐ2 (ADM-001 Filament).
+> Việc chờ chủ dự án: **LEGAL-002**, **Q1**, **Q6**, **Q7**, **Q8**.
 >
 > ⚠️ **Chưa được tuyên bố "độ chính xác >80%" ra ngoài.** 89,7% là trên món Mỹ của FNDDS với ánh
-> xạ do USDA cung cấp sẵn, không có nhóm chiên — không phải trên kho món Việt. Xem ACCURACY-SPEC §6.
+> xạ do USDA cung cấp sẵn, không có nhóm chiên — không phải trên kho món Việt. Soát bộ mẫu ngày
+> 2026-09-01 còn cho thấy: **bỏ qua 39% Food Code**, và **45% bộ mẫu là món sống** (`song`) tức
+> không có chuyển hoá do nấu. Nói cho đúng: 89,7% là bằng chứng engine **cộng đúng**, chưa phải
+> bằng chứng engine **tính đúng món nấu**. Xem ACCURACY-SPEC §6.
 
 Bảng trạng thái tổng quan — **bắt buộc cập nhật mỗi khi đóng một giai đoạn**:
 
@@ -74,7 +100,8 @@ php artisan db:seed --class=IngredientSeeder
 php artisan lacdoi:import-usda          # nạp USDA FoodData Central vào bảng tham chiếu
 php artisan lacdoi:recompute-calories   # tính lại calo toàn bộ món sau khi sửa nguyên liệu
 php artisan lacdoi:export-data          # xuất DB ngược ra data/*.json (xem mục 4)
-php artisan lacdoi:validate-data        # kiểm tra tính toàn vẹn dữ liệu, chạy trước mỗi commit dữ liệu
+php artisan lacdoi:validate-data        # kiểm tra toàn vẹn dữ liệu V1-V15, chạy trước mỗi commit dữ liệu
+php artisan lacdoi:accuracy-run --dataset=fndds   # đo lại độ chính xác engine (TEST-002)
 vendor\bin\pest --no-coverage           # chạy test
 ```
 

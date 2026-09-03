@@ -12,6 +12,12 @@ function calc(): NutritionCalculator
     return new NutritionCalculator;
 }
 
+/** Diem giua khoang — gia tri "mot con so" duy nhat engine cho phep suy ra (QT-5). */
+function mid(\App\Nutrition\NutritionResult $r): float
+{
+    return round(($r->kcalMin + $r->kcalMax) / 2, 1);
+}
+
 function thitBo(float $grams = 100.0): IngredientInput
 {
     return new IngredientInput(
@@ -31,9 +37,12 @@ it('tinh dung tong kcal cho mon day du, cung mot bang, anh xa high', function ()
         cookingMethod: 'luoc', fctSource: 'usda_sr_legacy',
     );
 
-    // 100g×200/100 + 50g×100/100 = 250 kcal; anh xa high ⇒ khong noi khoang
-    expect($result->kcalMin)->toBe(250.0)
-        ->and($result->kcalMax)->toBe(250.0)
+    // 100g×200/100 + 50g×100/100 = 250 kcal diem. Anh xa high van co bat dinh NEN
+    // ±4% (FCT_BASELINE_SPREAD, hieu chuan 2026-09-01) ⇒ 240–260. Khoang rong 0
+    // chinh la "con so chinh xac gia" ma QT-5 cam, nen engine khong bao gio tra.
+    expect(mid($result))->toBe(250.0)
+        ->and($result->kcalMin)->toBe(240.0)
+        ->and($result->kcalMax)->toBe(260.0)
         ->and($result->confidence)->toBe('high')
         ->and($result->missing)->toBe([])
         ->and($result->proteinG)->toBe(22.0)
@@ -50,8 +59,8 @@ it('nguyen lieu khong tra duoc thi vao missing, khong uoc luong thay the (QT-1)'
     // chi noi can TREN theo ty le thieu (CALORIE-ENGINE §5)
     expect($result->missing)->toBe(['ca-loc'])
         ->and($result->confidence)->toBe('low')
-        ->and($result->kcalMin)->toBe(200.0)
-        ->and($result->kcalMax)->toBe(233.3);
+        ->and($result->kcalMin)->toBe(192.0)
+        ->and($result->kcalMax)->toBe(242.7); // 208 × (1 + 20/120)
 });
 
 it('thieu >= 30% khoi luong thi confidence=unknown va khong tra so nao (QT-5)', function () {
@@ -83,7 +92,7 @@ it('tu choi nguyen lieu ngoai fct_source chi dinh — khong tron bang (QT-4)', f
 
     // Nguyen lieu nguon khac bi coi la missing, khong duoc cong vao
     expect($result->missing)->toBe(['nuoc-mam-test'])
-        ->and($result->kcalMin)->toBe(200.0);
+        ->and($result->kcalMin)->toBe(192.0);
 });
 
 it("fct_source='mixed' nhan moi nguon nhung confidence toi da medium (DATA-PIPELINE §7.2)", function () {
@@ -96,7 +105,8 @@ it("fct_source='mixed' nhan moi nguon nhung confidence toi da medium (DATA-PIPEL
     );
 
     expect($result->missing)->toBe([])
-        ->and($result->kcalMin)->toBe(250.0)
+        ->and(mid($result))->toBe(250.0)
+        ->and($result->kcalMin)->toBe(240.0)
         ->and($result->confidence)->toBe('medium');
 });
 
@@ -109,8 +119,9 @@ it('nguyen lieu tuy chon chi nam o can tren cua khoang', function () {
         cookingMethod: 'nau', fctSource: 'usda_sr_legacy',
     );
 
-    // Khong tuy chon: 200. Tuy chon them 20g×500/100 = 100 vao can tren.
-    expect($result->kcalMin)->toBe(200.0)->and($result->kcalMax)->toBe(300.0);
+    // Khong tuy chon: 200 diem ⇒ can duoi 192. Tuy chon them 20g×500/100 = 100
+    // (×1,04 = 104) chi vao can tren ⇒ 208 + 104 = 312.
+    expect($result->kcalMin)->toBe(192.0)->and($result->kcalMax)->toBe(312.0);
 });
 
 it('nguyen lieu vot bo (sa, la chanh) tinh khoi luong nhung khong cong calo (§4a)', function () {
@@ -122,8 +133,9 @@ it('nguyen lieu vot bo (sa, la chanh) tinh khoi luong nhung khong cong calo (§4
         cookingMethod: 'nau', fctSource: 'usda_sr_legacy',
     );
 
-    expect($result->kcalMin)->toBe(200.0)
-        ->and($result->kcalMax)->toBe(200.0)
+    expect(mid($result))->toBe(200.0)
+        ->and($result->kcalMin)->toBe(192.0)
+        ->and($result->kcalMax)->toBe(208.0)
         ->and($result->totalRawG)->toBe(200.0);
 });
 
@@ -137,9 +149,10 @@ it('mon chien cong dau hap thu va noi khoang 0,80-1,25, confidence <= medium (§
         cookingMethod: 'chien', fctSource: 'usda_sr_legacy',
     );
 
-    // 77 + 14g dau × 9 = 203; ×0,80 / ×1,25
-    expect($result->kcalMin)->toBe(162.4)
-        ->and($result->kcalMax)->toBe(253.8)
+    // 77 × (1∓0,04) = 73,92–80,08; cong 14 g dau × 9 = 126 ⇒ 199,92–206,08;
+    // roi ×0,80 / ×1,25.
+    expect($result->kcalMin)->toBe(159.9)
+        ->and($result->kcalMax)->toBe(257.6)
         ->and($result->confidence)->toBe('medium')
         ->and($result->fatG)->toBe(14.2);
 });
@@ -163,9 +176,12 @@ it('cung nguyen lieu, luoc vs chien cho ket qua khac nhau ro ret (CALC-002)', fu
     $luoc = calc()->compute([$khoai()], 'luoc', 'usda_sr_legacy');
     $chien = calc()->compute([$khoai()], 'chien', 'usda_sr_legacy');
 
-    // Luộc: 77 kcal điểm. Chiên: 77 + 126 kcal dầu, nới 0,80–1,25.
-    expect($luoc->kcalMax)->toBe(77.0)
-        ->and($chien->kcalMin)->toBeGreaterThan($luoc->kcalMax * 2)
+    // Luoc: 77 kcal diem. Chien: 77 + 126 kcal dau, noi 0,80–1,25.
+    // So DIEM GIUA chu khong so can: can duoi cua chien da bi ×0,80 keo xuong nen
+    // so can se do nham be rong khoang thay vi do hieu ung cua dau.
+    expect(mid($luoc))->toBe(77.0)
+        ->and(mid($chien))->toBeGreaterThan(mid($luoc) * 2)
+        ->and($chien->kcalMin)->toBeGreaterThan($luoc->kcalMax)
         ->and($chien->confidence)->toBe('medium')
         ->and($luoc->confidence)->toBe('high');
 });
@@ -180,8 +196,9 @@ it('hieu chinh nang luong thuc pham giau xo — moc nhi kho (§4b)', function ()
         cookingMethod: 'nau', fctSource: 'usda_sr_legacy',
     );
 
-    // xo/carb = 0,96 > 0,5 ⇒ kcal 284 − 70,1×2 = 143,8 (he so EU 2 kcal/g)
-    expect($result->kcalMin)->toBe(143.8)
+    // xo/carb = 0,96 > 0,5 ⇒ kcal 284 − 70,1×2 = 143,8 diem (he so EU 2 kcal/g)
+    expect(mid($result))->toBe(143.8)
+        ->and($result->kcalMin)->toBe(138.0)
         ->and($result->notes)->toContain('da-hieu-chinh-xo:moc-nhi-kho');
 });
 
@@ -191,8 +208,9 @@ it('khau phan khong can thi noi khoang ±15% va confidence <= medium (§5)', fun
         cookingMethod: 'luoc', fctSource: 'usda_sr_legacy', portionWeighed: false,
     );
 
-    expect($result->kcalMin)->toBe(170.0)
-        ->and($result->kcalMax)->toBe(230.0)
+    // 200 diem → ±4% nen → 192–208 → ×0,85 / ×1,15
+    expect($result->kcalMin)->toBe(163.2)
+        ->and($result->kcalMax)->toBe(239.2)
         ->and($result->confidence)->toBe('medium');
 });
 
@@ -205,8 +223,9 @@ it('anh xa medium noi khoang ±5% theo dong gop nguyen lieu (§5)', function () 
         cookingMethod: 'luoc', fctSource: 'usda_sr_legacy',
     );
 
-    expect($result->kcalMin)->toBe(95.0)
-        ->and($result->kcalMax)->toBe(105.0)
+    // 4% nen + 5% anh xa = 9%
+    expect($result->kcalMin)->toBe(91.0)
+        ->and($result->kcalMax)->toBe(109.0)
         ->and($result->confidence)->toBe('medium');
 });
 

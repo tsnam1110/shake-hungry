@@ -32,5 +32,8 @@
   "units": [],
   "source": "curated",
   "confidence": "unknown",
-  "needs_review": true
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null
 }

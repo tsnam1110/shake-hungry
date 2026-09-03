@@ -114,3 +114,36 @@ Bốn nhóm đạt: `song` 98,9%, `nau` 100%, `nuong` 94,2%, `luoc` 100%.
   lại và **so hai lần đo** để xác nhận nhóm `hap` lên đúng như dự đoán.
 - Ba test Pest ở `tests/Feature/AccuracyRunTest.php` chốt lại hành vi đã kiểm chứng (chuẩn hoá
   100 g, yield factor cho khối lượng thành phẩm) để sửa engine mà hỏng thì đỏ ngay.
+
+
+---
+
+## Bổ sung 2026-09-01 — lần đo 2 (engine 1.1.0) và hai điểm chặn còn lại
+
+Lần đo 2 **không phải** một vòng kiểm chứng mới. Nó chạy lại đúng bộ mẫu cũ sau khi
+[CALC-003](CALC-003.md) sửa lỗi khoảng rộng bằng 0. Kết quả: `% tham chiếu nằm trong khoảng`
+**1,0% → 80,4%**, còn `% trong ±20%` / MAPE / bias **không đổi** (89,7% / 3,9% / −3,8%) vì điểm
+giữa khoảng không đổi. Báo cáo: [2026-09-01-fndds.md](../../06-nutrition/accuracy-runs/2026-09-01-fndds.md).
+
+**Chỉ số "% tham chiếu nằm trong khoảng" là chỉ số có ích nhất mà lần 1 đã bỏ qua.** Nó bằng 1,0%
+và không ai dừng lại hỏi vì sao, vì tiêu chí chính đã đạt. Bài học cho các lần đo sau: **đọc hết
+bảng chỉ số, kể cả khi dòng đầu tiên đã xanh.**
+
+### Hai điểm chặn để đóng task — cả hai đều là thiếu DỮ LIỆU, không phải thiếu code
+
+| # | Điểm chặn | Vì sao chưa gỡ được |
+|---|---|---|
+| 1 | **Nhóm chiên chưa đo được** | 0/255 nguyên liệu có `oil_absorption_pct` có nguồn ⇒ engine từ chối tính (đúng CALC-002/QT-1) |
+| 2 | **Nhóm `hap` lệch −21% đều đặn** | Cần hệ số hao hụt cho **thuỷ sản**. Bảng USDA Cooking Yields R2 đã nhập có **0 dòng thuỷ sản** — xem Q7 ở [ROADMAP](../ROADMAP.md) |
+
+> ⚠️ **Không được suy hệ số thuỷ sản từ SR Legacy (kcal sống ÷ kcal chín).** Về mặt số học thì suy
+> được và ra đúng ~0,79. Nhưng chính USDA là **vế tham chiếu** của phép đo này, nên lấy hệ số từ đó
+> rồi đem so lại với nó là **phép thử vòng tròn** — nó sẽ khớp 100% và không chứng minh được gì.
+> Đúng loại lỗi đã mắc một lần với Nutrition5k (xem §4). Hệ số phải đến từ **nguồn độc lập**.
+
+### Giới hạn bộ mẫu — ghi lại để lần sau không trích sai
+
+Soát thành phần bộ mẫu ngày 2026-09-01, chi tiết ở [ACCURACY-SPEC §6](../../06-nutrition/ACCURACY-SPEC.md):
+bỏ qua 129/333 Food Code (39%); 45% bộ mẫu là món `song` (không có chuyển hoá do nấu); và nhóm
+`hap` — nhóm phơi bày rõ nhất giả định khối lượng — có 80% số món chỉ gồm một nguyên liệu chiếm
+>90% khối lượng (điển hình: 100 g cá sống + 0,2 g muối).

@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\DB;
 use Throwable;
 
 /**
- * lacdoi:validate-data — 14 kiểm tra V1–V14 theo DATA-PIPELINE §5.
+ * lacdoi:validate-data — 15 kiểm tra V1–V15 theo DATA-PIPELINE §5.
  *
  * Chạy trước mỗi commit dữ liệu và trong CI. Lỗi 🔴 ⇒ exit code 1 (CI chặn được).
  * Kiểm tra được thực hiện trên FILE trong data/ (nguồn sự thật, QT-3); các kiểm tra
@@ -20,7 +20,7 @@ class LacdoiValidateData extends Command
 {
     protected $signature = 'lacdoi:validate-data';
 
-    protected $description = 'Kiểm tra toàn vẹn dữ liệu trong data/ và database (V1–V14, DATA-PIPELINE §5)';
+    protected $description = 'Kiểm tra toàn vẹn dữ liệu trong data/ và database (V1–V15, DATA-PIPELINE §5)';
 
     /** @var list<string> */
     private array $errors = [];
@@ -124,6 +124,10 @@ class LacdoiValidateData extends Command
                 $this->errors[] = "V14 [{$slug}]: có kcal_per_100g nhưng thiếu source_url";
             }
 
+            // V15 (R10) — hạ needs_review mà không ghi ai duyệt / duyệt khi nào (🔴).
+            // Cờ duyệt không có bằng chứng thì không phải là duyệt (QT-1).
+            $this->validateReviewTrail("[{$slug}]", $j);
+
             // V7 (tầng file) — trùng tên nguyên liệu tuyệt đối (🟡); phần so trigram >90% chạy ở DB.
             $nameKey = mb_strtolower(trim((string) ($j['name_vi'] ?? '')));
             if ($nameKey !== '' && isset($seenNames[$nameKey])) {
@@ -171,6 +175,9 @@ class LacdoiValidateData extends Command
                 $this->errors[] = "V12 [{$slug}]: completeness_level={$level} nhưng chỉ có ".count($j['recipe_sources'] ?? []).' recipe_sources (cần ≥3)';
             }
 
+            // V15 (R10) — dấu vết duyệt, cùng luật với nguyên liệu.
+            $this->validateReviewTrail("[{$slug}]", $j);
+
             // V9 — estimated_kcal ngoài khoảng 50–2000 (🟡, thường là sai đơn vị).
             $est = $j['estimated_kcal'] ?? null;
             if (is_array($est)) {
@@ -187,6 +194,33 @@ class LacdoiValidateData extends Command
                     $this->errors[] = "V5 [{$slug}]: estimated_kcal.min > max";
                 }
             }
+        }
+    }
+
+    /**
+     * V15 / R10 — dấu vết duyệt (ING-004).
+     *
+     * `needs_review = false` là lời khẳng định "đã có người duyệt". Lời khẳng định
+     * đó phải kèm bằng chứng: ai duyệt và duyệt lúc nào. Không có bằng chứng thì
+     * cờ đã bị hạ nhầm hoặc hạ lặng lẽ — cả hai đều là lỗi 🔴.
+     *
+     * @param  array<string, mixed>  $j
+     */
+    private function validateReviewTrail(string $label, array $j): void
+    {
+        $by = $j['reviewed_by'] ?? null;
+        $at = $j['reviewed_at'] ?? null;
+
+        if (($j['needs_review'] ?? true) === false && (blank($by) || blank($at))) {
+            $this->errors[] = "V15 {$label}: needs_review=false nhưng thiếu reviewed_by/reviewed_at — duyệt không có bằng chứng (R10)";
+        }
+
+        if (blank($by) !== blank($at)) {
+            $this->errors[] = "V15 {$label}: reviewed_by và reviewed_at phải cùng có hoặc cùng không";
+        }
+
+        if (filled($at) && ! preg_match('/^\d{4}-\d{2}-\d{2}$/', (string) $at)) {
+            $this->errors[] = "V15 {$label}: reviewed_at = '{$at}' không đúng dạng YYYY-MM-DD";
         }
     }
 

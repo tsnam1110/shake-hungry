@@ -18,11 +18,33 @@ namespace App\Nutrition;
  */
 final class NutritionCalculator
 {
-    public const string ENGINE_VERSION = '1.0.0';
+    public const string ENGINE_VERSION = '1.1.0';
 
     private const array FRYING_METHODS = ['chien', 'ran', 'chien-ngap-dau'];
 
-    /** Hệ số nới khoảng theo mapping_confidence — CALORIE-ENGINE §5. */
+    /**
+     * Bất định NỀN của mọi phép tính — CALORIE-ENGINE §5, hiệu chuẩn 2026-09-01.
+     *
+     * Trước 1.1.0 hằng số này không tồn tại, nên món có toàn nguyên liệu ánh xạ
+     * `high`, không chiên, khẩu phần có cân sẽ ra `kcal_min === kcal_max`: một
+     * con số điểm đội lốt khoảng. Đó đúng là thứ QT-5 cấm ("không hiển thị con số
+     * chính xác giả"), và phép đo FNDDS lần 1 đã cho thấy hậu quả — chỉ **1,0%**
+     * giá trị tham chiếu rơi vào khoảng engine trả về, vì khoảng rộng bằng 0.
+     *
+     * Giá trị 0,04 KHÔNG do đặt tay. Nó là phân vị 90 của sai số tuyệt đối trên
+     * nhóm món mà giả định của engine thực sự đúng — nhóm bảo toàn khối lượng
+     * (`song` / `luoc` / `nau`, n = 124 của bộ FNDDS): p50 0,40% · p80 0,94% ·
+     * **p90 3,61%** · p95 9,91%. Làm tròn lên 4% ⇒ phủ 91,1% nhóm đó.
+     *
+     * Cố ý KHÔNG nới tới mức nuốt trọn sai lệch của nhóm `hap`/`kho` (cần ±20%).
+     * Sai lệch đó là thiên lệch có hệ thống do thiếu hệ số hao hụt, phải sửa bằng
+     * dữ liệu chứ không phải bằng cách vẽ khoảng rộng ra cho đẹp báo cáo — nới
+     * khoảng để che thiên lệch là làm hỏng chính ý nghĩa của QT-5.
+     * Tái lập: `php artisan lacdoi:accuracy-run --dataset=fndds`.
+     */
+    private const float FCT_BASELINE_SPREAD = 0.04;
+
+    /** Hệ số nới khoảng THÊM theo mapping_confidence — CALORIE-ENGINE §5. */
     private const array MAPPING_SPREAD = [
         'high' => 0.0,
         'medium' => 0.05,
@@ -131,7 +153,10 @@ final class NutritionCalculator
                 $notes[] = "da-hieu-chinh-xo:{$ing->slug}";
             }
 
-            $spread = self::MAPPING_SPREAD[$ing->mappingConfidence] ?? self::MAPPING_SPREAD['low'];
+            // Bất định nền (bảng thành phần + làm tròn + xấp xỉ của chính engine)
+            // cộng với bất định của việc ánh xạ nguyên liệu này sang bảng.
+            $spread = self::FCT_BASELINE_SPREAD
+                + (self::MAPPING_SPREAD[$ing->mappingConfidence] ?? self::MAPPING_SPREAD['low']);
             $ingMin = $kcal * (1 - $spread);
             $ingMax = $kcal * (1 + $spread);
 
@@ -197,6 +222,14 @@ final class NutritionCalculator
         // missing[] chỉ nới cận TRÊN theo tỷ lệ khối lượng thiếu (CALORIE-ENGINE §5).
         if ($missingG > 0) {
             $kcalMax *= (1 + $missingShare);
+        }
+
+        // Không suy được khối lượng thành phẩm ⇒ mọi phép quy về "trên 100 g món"
+        // đều phải giả định bảo toàn khối lượng. Engine KHÔNG tự giả định hộ; nó
+        // trả cookedGramsEstimate = null và ghi lại ở đây để bên gọi không thay
+        // thầm bằng totalRawG rồi báo cáo như thể đã biết (cùng tinh thần QT-1).
+        if (! $cookedKnown) {
+            $notes[] = 'khoi-luong-thanh-pham-khong-suy-duoc';
         }
 
         $confidence = $this->determineConfidence(

@@ -118,6 +118,9 @@ class LacdoiExportData extends Command
             'source' => $ing->source,
             'confidence' => $ing->confidence,
             'needs_review' => $ing->needs_review,
+            'reviewed_by' => $ing->reviewed_by,
+            'reviewed_at' => $ing->reviewed_at?->toDateString(),
+            'review_note' => $ing->review_note,
         ];
     }
 
@@ -218,6 +221,9 @@ class LacdoiExportData extends Command
             'source' => $dish->source,
             'confidence' => $dish->confidence,
             'needs_review' => $dish->needs_review,
+            'reviewed_by' => $dish->reviewed_by,
+            'reviewed_at' => $dish->reviewed_at?->toDateString(),
+            'review_note' => $dish->review_note,
         ];
     }
 

@@ -153,7 +153,10 @@ tra trùng lặp nhanh. Không sửa tay file này.
   ],
   "source": "curated",
   "confidence": "medium",
-  "needs_review": true
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null
 }
 ```
 
@@ -176,6 +179,9 @@ tra trùng lặp nhanh. Không sửa tay file này.
 | `is_ready_to_eat` | ✅ | `true` = đã chín/ăn liền (giò lụa, lạp xưởng, cơm) → engine **không** áp hệ số hao hụt |
 | `units[]` | | Quy đổi đơn vị đời thường; mỗi dòng **bắt buộc có `source`** |
 | `source` / `confidence` / `needs_review` | ✅ | Ba cột chuẩn của mọi bảng biên soạn |
+| `reviewed_by` | ✅ khi `needs_review = false` | Định danh **người** đã duyệt (email/handle). Không phải tên agent — dữ liệu máy sinh không tự duyệt chính nó (QT-1). Bổ sung 2026-09-01, ING-004 |
+| `reviewed_at` | ✅ khi `needs_review = false` | Ngày duyệt, dạng `YYYY-MM-DD` |
+| `review_note` | | Đã đối chiếu lại những gì. Để trống được, nhưng nên ghi |
 
 #### Khối `reference_food`
 

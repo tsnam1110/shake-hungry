@@ -175,6 +175,7 @@ phần thực tế và cách nấu của từng quán/từng nhà làm thay đ�
 |---|---|---|---|---|---|---|---|
 | 2026-08-31 | 1.0.0 | 204 Food Code FNDDS (`usda_sr_legacy`) | **89,7%** | 3,9% | −3,8% | ✅ tiêu chí chính đạt; **nhóm chiên chưa đo được** | [2026-08-31-fndds.md](accuracy-runs/2026-08-31-fndds.md) |
 | 2026-08-31 | 1.0.0 | 4.766 món Nutrition5k | 100% | 0,04% | +0,01% | ⚠️ **sanity check vòng tròn** — không phải độ chính xác (xem §4) | — |
+| 2026-09-01 | **1.1.0** | 204 Food Code FNDDS (`usda_sr_legacy`) | **89,7%** | 3,9% | −3,8% | ✅ tiêu chí chính giữ nguyên; **% tham chiếu trong khoảng 1,0% → 80,4%** | [2026-09-01-fndds.md](accuracy-runs/2026-09-01-fndds.md) |
 
 **Đọc bảng này cho đúng.** Lần đo đầu tiên nói được ba điều, không hơn:
 
@@ -187,6 +188,41 @@ phần thực tế và cách nấu của từng quán/từng nhà làm thay đ�
 3. **Nhóm chiên/rán CHƯA được kiểm chứng lần nào.** Engine từ chối tính mọi món chiên vì nguyên
    liệu thiếu `oil_absorption_pct` (đúng thiết kế CALC-002 — không bịa hệ số). Vì đây là nhóm sai
    số lớn nhất với món Việt, **TEST-002 chưa được coi là hoàn tất** dù tiêu chí chính đã đạt.
+
+### Lần đo 2 (2026-09-01, engine 1.1.0) — sửa khoảng, KHÔNG sửa điểm
+
+Lần này chỉ đổi một thứ: thêm bất định nền ±4% vào engine ([CALORIE-ENGINE §5](CALORIE-ENGINE.md)),
+vì bản 1.0.0 trả khoảng rộng bằng 0 cho món ánh xạ `high` — vi phạm QT-5.
+
+| Chỉ số | 1.0.0 | 1.1.0 | Vì sao |
+|---|---|---|---|
+| % trong ±20% | 89,7% | **89,7%** | điểm giữa khoảng không đổi ⇒ tiêu chí chính không bị động tới |
+| MAPE / Bias | 3,9% / −3,8% | **3,9% / −3,8%** | như trên |
+| % tham chiếu nằm trong khoảng | 1,0% | **80,4%** | khoảng từ rộng-0 thành ±4% |
+| `hap` / `kho` | 6,7% / 76,9% | **6,7% / 76,9%** | **cố ý không đổi** — xem dưới |
+
+Việc `hap` và `kho` **không nhúc nhích** là điều quan trọng nhất của lần đo này, không phải con số
+80,4%. Nếu nới khoảng tới ±20% thì hai nhóm đó cũng "đạt" ngay, báo cáo đẹp lên mà engine không tốt
+hơn một chút nào. Khoảng tin cậy dùng để **nói ra** mình không chắc, không phải để **giấu** chỗ mình sai.
+
+### Ba giới hạn của bộ mẫu — phải đọc trước khi trích con số 89,7%
+
+Bổ sung 2026-09-01 sau khi soát lại thành phần bộ mẫu:
+
+1. **Bỏ qua 129/333 Food Code (39%).** Bộ nhập đã lọc sẵn "≥80% nguyên liệu ánh xạ được", rồi phép
+   đo lại loại tiếp món không tính được. Nghĩa là 204 món còn lại là **phần dễ của phần dễ** — món
+   khó ánh xạ, đúng loại hay gặp ở ẩm thực Việt, không có mặt trong mẫu số.
+2. **45% bộ mẫu (`song`, n = 91) không có chuyển hoá do nấu.** Nhóm này đo được năng lực **cộng dồn
+   nguyên liệu** của engine (và đo tốt: các món này trung bình ~6 nguyên liệu, chỉ 1,1% có một
+   nguyên liệu chiếm >90% khối lượng), nhưng **không nói gì** về hao hụt nước, hấp thụ dầu, hay hệ
+   số phần ăn được.
+3. **Nhóm phơi bày rõ nhất giả định khối lượng lại là nhóm ít nguyên liệu nhất.** `hap` có 80% số
+   món chỉ gồm một nguyên liệu chiếm >90% khối lượng (điển hình: 100 g cá sống + 0,2 g muối),
+   `luoc` là 100%. Ở đó engine không còn gì để "cộng đúng" — nó chỉ còn đúng hoặc sai ở đúng một
+   phép: khối lượng thành phẩm. Và nó sai −21%, đều đặn.
+
+> Nói gọn: **89,7% chưa phải bằng chứng engine tính đúng món nấu.** Nó là bằng chứng engine cộng
+> đúng, và chưa mâu thuẫn với việc tính đúng món nấu ở những nhóm đã đo được.
 
 > **Vẫn chưa được tuyên bố "độ chính xác >80%" ra bên ngoài.** Con số 89,7% là trên **món Mỹ của
 > FNDDS**, với nguyên liệu do chính USDA ánh xạ sẵn — không phải trên kho món Việt do dự án biên

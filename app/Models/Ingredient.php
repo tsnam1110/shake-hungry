@@ -20,6 +20,7 @@ class Ingredient extends Model
             'secondary_sources' => 'array',
             'is_ready_to_eat' => 'boolean',
             'needs_review' => 'boolean',
+            'reviewed_at' => 'datetime',
             'density_g_per_ml' => 'float',
             'default_yield_factor' => 'float',
             'oil_absorption_pct' => 'float',

@@ -12,7 +12,7 @@ use Illuminate\Database\QueryException;
 use Illuminate\Support\Facades\DB;
 
 /**
- * TEST-001 — chứng minh 9 ràng buộc R1–R9 (DATA-MODEL §6) THỰC SỰ chặn được
+ * TEST-001 — chứng minh 10 ràng buộc R1–R10 (DATA-MODEL §6) THỰC SỰ chặn được
  * ở tầng DATABASE, không phải tầng validation của Laravel: mục đích là chặn
  * cả khi code có lỗi.
  */
@@ -145,6 +145,36 @@ it('R9: chan dish_ingredients tro toi nguyen lieu khong ton tai', function () {
         'ingredient_id' => 999999999, // vi phạm R9
         'quantity' => 100, 'unit_name' => 'g', 'source' => 'curated',
     ]))->toThrow(QueryException::class);
+});
+
+// R10 — ING-004: `needs_review = false` là lời khẳng định "đã có người duyệt".
+// Trước 2026-09-01 cờ này hạ được mà không để lại dấu vết nào, nên cả 255/255
+// nguyên liệu kẹt ở true vĩnh viễn. Ràng buộc này bắt cờ phải đi kèm bằng chứng.
+it('R10: chan ha needs_review ma khong ghi ai duyet va duyet khi nao', function () {
+    expect(fn () => makeIngredient(['needs_review' => false]))
+        ->toThrow(QueryException::class);
+
+    expect(fn () => makeDish(['needs_review' => false]))
+        ->toThrow(QueryException::class);
+});
+
+it('R10: chan nua bo dau vet duyet (co nguoi duyet nhung khong co thoi diem)', function () {
+    expect(fn () => makeIngredient(['reviewed_by' => 'tampv.bg@gmail.com']))
+        ->toThrow(QueryException::class);
+
+    expect(fn () => makeIngredient(['reviewed_at' => now()]))
+        ->toThrow(QueryException::class);
+});
+
+it('R10: cho phep ha needs_review khi da ghi du dau vet', function () {
+    $ing = makeIngredient([
+        'needs_review' => false,
+        'reviewed_by' => 'tampv.bg@gmail.com',
+        'reviewed_at' => now(),
+        'review_note' => 'Đối chiếu lại USDA fdc_id 174036, khớp.',
+    ]);
+
+    expect($ing->fresh()->needs_review)->toBeFalse();
 });
 
 it('cho phep ban ghi hop le di qua — cac rang buoc khong chan nham', function () {
