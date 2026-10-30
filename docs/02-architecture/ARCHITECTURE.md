@@ -27,7 +27,7 @@
 | Framework | Laravel 12+ | |
 | Database | **MySQL 8.0+** | Xem §4 |
 | Tìm kiếm tên | FULLTEXT ngram + độ giống trigram ở tầng PHP | |
-| Admin / nhập liệu | Ant Design (antd) + React | Công cụ sản xuất dữ liệu chính — quyết định 2026-10-30, xem §5.6 |
+| Admin / nhập liệu | Ant Design (antd) 6 + React 19 | Công cụ sản xuất dữ liệu chính — quyết định 2026-10-30, xem §5.6 |
 | Giao diện người dùng | Blade + Livewire 3 | |
 | Trợ lý nhập liệu | Claude API | Vai trò giới hạn theo QT-1 |
 | Test | Pest | |
@@ -165,12 +165,19 @@ có trọng số trong nhóm điểm cao. Chi tiết:
 Mức 2 trong **≤5 phút**. Thiết kế: [DATA-PIPELINE §4](../04-data-sources/DATA-PIPELINE.md).
 
 Công nghệ (quyết định của chủ dự án, 2026-10-30): giao diện quản trị viết bằng
-**React + Ant Design (antd)**, chạy tại `/admin`, build bằng Vite trong cùng repo;
+**React 19 + Ant Design (antd) 6**, chạy tại `/admin`, build bằng Vite trong cùng repo;
 Laravel làm backend — API nội bộ cho trang quản trị và xác thực đăng nhập theo
 phiên. Lý do chọn antd: bộ component quản trị (Table, Form, Modal, Upload) đầy đủ
 và đồng nhất, giao diện sáng sủa, thao tác phía client nên mượt — đúng hai điểm
 một công cụ nhập liệu dùng hằng ngày cần. Phân quyền hai vai trò `admin`/`editor`
 kiểm ở backend, không dựa vào giao diện.
+
+Phiên bản được chốt sau nghiên cứu so sánh với Ant Design Vue (bản Vue): **bắt
+đầu ở antd 6**, không dùng bản Vue — vì bản Vue đã đóng băng ở 4.2.6 từ 11/2024,
+thiếu Table virtual scrolling và hệ ProComponents, rủi ro bảo trì dài hạn cao;
+antd gốc vẫn phát hành đều (6.6.8 tại thời điểm chốt). Khi cài đặt ở ADM-001,
+ghim antd ở major 6 và React 19 (antd 6 hỗ trợ React 19 nguyên bản, không cần
+gói vá như thời v5).
 
 ---
 

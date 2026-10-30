@@ -63,6 +63,14 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > đăng nhập). Toàn bộ tài liệu đã thay theo quyết định này trong cùng commit;
 > task nền là [ADM-001](docs/05-tasks/tasks/ADM-001.md) (đã viết lại), thiết kế
 > tổng thể ở [ARCHITECTURE §5.6](docs/02-architecture/ARCHITECTURE.md).
+>
+> **Bổ sung cùng ngày (sau nghiên cứu so sánh chuyên sâu):** chốt bắt đầu ở
+> **antd 6 + React 19**. Đã đối chiếu với Ant Design Vue và loại nó vì lý do
+> bảo trì: bản Vue đóng băng ở 4.2.6 từ 11/2024 (không một bản phát hành nào
+> trong 2025–2026), thiếu Table virtual scrolling và ProComponents, trong khi
+> antd gốc phát hành gần như hằng tuần (6.6.8 tại thời điểm chốt). "Xung đột
+> Laravel" từng được nhắc tới là chuyện Ant Design Vue 1.x chỉ chạy Vue 2 thời
+> scaffolding Laravel cũ — không áp dụng cho dự án này.
 
 > ## ⚠️ Đính chính lần 6, 2026-10-30 — thêm quy tắc QT-8
 >
@@ -277,7 +285,7 @@ khi các điều kiện đã rõ, hoặc phần chưa rõ / rủi ro đã đư�
 |---|---|---|
 | Backend | **Laravel 12+ (PHP 8.3+)** | Hợp môi trường Laragon sẵn có |
 | Database | **MySQL 8.0+** | Khớp mờ tên: trigram ở tầng PHP + FULLTEXT ngram; tìm không dấu/sắp xếp tiếng Việt: collation `utf8mb4_vi_0900_ai_ci`; vector: hoãn tới GĐ4, tính lại khi đó |
-| Admin / nhập liệu | **Ant Design (antd) + React** | Đây là công cụ sản xuất dữ liệu chính, không phải phần phụ. Quyết định của chủ dự án 2026-10-30 — xem ADM-001 |
+| Admin / nhập liệu | **Ant Design (antd) 6 + React 19** | Đây là công cụ sản xuất dữ liệu chính, không phải phần phụ. Quyết định của chủ dự án 2026-10-30 — xem ADM-001 và Đính chính lần 5 |
 | Frontend người dùng | Blade + Livewire (v1) | Giữ đơn giản; tách SPA chỉ khi thực sự cần |
 | Trợ lý nhập liệu | Claude API | Chỉ đóng vai trò ở QT-1 |
 

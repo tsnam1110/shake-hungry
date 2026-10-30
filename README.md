@@ -37,7 +37,7 @@ Bắt đầu ở [docs/README.md](docs/README.md). Nếu bạn là AI agent ho�
 
 ## Stack
 
-Laravel 13 · MySQL 8 · Ant Design (antd) cho trang quản trị (GĐ2) ·
+Laravel 13 · MySQL 8 · Ant Design (antd) 6 + React cho trang quản trị (GĐ2) ·
 Livewire · Pest · Laragon trên Windows.
 
 ## Ghi công nguồn dữ liệu
