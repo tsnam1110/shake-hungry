@@ -5,6 +5,7 @@ import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import Ingredients from './pages/Ingredients';
 import Dishes from './pages/Dishes';
+import Contributions from './pages/Contributions';
 
 const { Header, Sider, Content } = Layout;
 
@@ -36,6 +37,7 @@ export default function App() {
                         { key: 'dashboard', label: 'Tổng quan' },
                         { key: 'ingredients', label: 'Nguyên liệu' },
                         { key: 'dishes', label: 'Món ăn' },
+                        { key: 'contributions', label: 'Đóng góp cộng đồng' },
                     ]} />
             </Sider>
             <Layout>
@@ -50,6 +52,7 @@ export default function App() {
                     {page === 'dashboard' && <Dashboard />}
                     {page === 'ingredients' && <Ingredients />}
                     {page === 'dishes' && <Dishes />}
+                    {page === 'contributions' && <Contributions /> }
                 </Content>
             </Layout>
         </Layout>

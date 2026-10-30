@@ -20,6 +20,7 @@
             <div id="dice" class="text-6xl">🎲</div>
             <h1 class="text-3xl font-bold mt-2">Lắc Đói</h1>
             <p class="text-neutral-500">Không biết ăn gì? Lắc một cái là xong.</p>
+            <p id="auth-area" class="text-sm mt-2 text-neutral-500"></p>
         </header>
 
         <section class="bg-white rounded-2xl shadow p-4 mt-4">
@@ -68,6 +69,13 @@ let allergenSlugs = new Set();
 let shakeIndex = 0;
 const recent = JSON.parse(localStorage.getItem('lacdoi_recent') || '[]');
 const csrf = document.querySelector('meta[name=csrf-token]').content;
+let currentUser = null;
+fetch('/api/me').then(r => r.json()).then(({ user }) => {
+    currentUser = user;
+    document.getElementById('auth-area').innerHTML = user
+        ? `Xin chào <b>${user.name}</b> · <a class="text-orange-700 underline" href="/ho-so">Hồ sơ & nhật ký bữa ăn</a>`
+        : `<a class="text-orange-700 underline" href="/tai-khoan">Đăng nhập</a> để lưu bữa ăn và lắc theo khẩu vị của bạn — khách vẫn lắc thoải mái.`;
+});
 const confLabel = { high: 'tin cậy cao', medium: 'tin cậy trung bình', low: 'tin cậy thấp — số tham khảo' };
 
 const slotsEl = document.getElementById('slots');
@@ -143,7 +151,18 @@ document.getElementById('shake-btn').addEventListener('click', async () => {
             <div class="text-sm text-neutral-600">Đạm ${n.protein_g ?? '?'}g · Béo ${n.fat_g ?? '?'}g · Bột đường ${n.carb_g ?? '?'}g</div>`
             : '<div class="mt-2 text-neutral-400">Chưa đủ dữ liệu dinh dưỡng</div>'}
             ${data.relaxed_level > 0 ? '<div class="text-xs text-amber-600 mt-2">Đã nới lỏng bộ lọc để tìm thêm lựa chọn (lọc dị ứng vẫn giữ nguyên).</div>' : ''}
+            <div class="mt-3">${currentUser
+                ? `<button id="eat-btn" class="bg-green-600 hover:bg-green-700 text-white font-semibold rounded-xl px-4 py-2">✓ Ăn món này</button>`
+                : `<a href="/tai-khoan" class="text-sm text-orange-700 underline">Đăng nhập để ghi lại bữa ăn này</a>`}</div>
         </div>`;
+        const eatBtn = document.getElementById('eat-btn');
+        if (eatBtn) eatBtn.onclick = async () => {
+            const resp = await fetch('/api/meal-logs', { method: 'POST',
+                headers: { 'Content-Type': 'application/json', 'Accept': 'application/json', 'X-CSRF-TOKEN': csrf },
+                body: JSON.stringify({ dish_id: d.id, slot, source: 'shake_accepted' }) });
+            eatBtn.textContent = resp.ok ? 'Đã ghi vào nhật ký ✓' : 'Ghi thất bại';
+            eatBtn.disabled = true;
+        };
     } finally {
         btn.disabled = false; btn.textContent = '🎲 LẮC MÓN KHÁC';
     }

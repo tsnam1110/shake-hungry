@@ -197,10 +197,10 @@ kiểm chứng TEST-002**; `migrate:fresh --seed` dựng lại đúng toàn bộ
 
 | ID | Task | Loại | Status | Phụ thuộc | Ngày xong |
 |---|---|---|---|---|---|
-| [USR-001](./tasks/USR-001.md) | Đăng ký / đăng nhập người dùng | Backend | ⬜ | UI-002 | — |
-| [USR-002](./tasks/USR-002.md) | Hồ sơ thể trạng + tính khoảng TDEE | Backend | ⬜ | USR-001 | — |
-| [USR-003](./tasks/USR-003.md) | Ghi nhật ký bữa ăn (`meal_logs`) | Backend | ⬜ | USR-001 | — |
-| [USR-004](./tasks/USR-004.md) | Đưa lịch sử + TDEE vào engine gợi ý | Backend | ⬜ | USR-002, USR-003, REC-001 | — |
+| [USR-001](./tasks/USR-001.md) | Đăng ký / đăng nhập người dùng | Backend | ✅ | UI-002 | — |
+| [USR-002](./tasks/USR-002.md) | Hồ sơ thể trạng + tính khoảng TDEE | Backend | ✅ | USR-001 | — |
+| [USR-003](./tasks/USR-003.md) | Ghi nhật ký bữa ăn (`meal_logs`) | Backend | ✅ | USR-001 | — |
+| [USR-004](./tasks/USR-004.md) | Đưa lịch sử + TDEE vào engine gợi ý | Backend | ✅ | USR-002, USR-003, REC-001 | — |
 
 ---
 
@@ -208,7 +208,7 @@ kiểm chứng TEST-002**; `migrate:fresh --seed` dựng lại đúng toàn bộ
 
 | ID | Task | Loại | Status | Phụ thuộc | Ngày xong |
 |---|---|---|---|---|---|
-| [CTR-001](./tasks/CTR-001.md) | Form đóng góp + hàng đợi duyệt trong trang quản trị | Backend | ⬜ | ADM-001 | — |
+| [CTR-001](./tasks/CTR-001.md) | Form đóng góp + hàng đợi duyệt trong trang quản trị | Backend | ✅ | ADM-001 | — |
 | [TCM-001](./tasks/TCM-001.md) | Bảng `ingredient_tcm_traits` + gieo mầm từ dược thực đồng nguyên | Dữ liệu | ⬜ | ING-003 | — |
 | [TCM-002](./tasks/TCM-002.md) | Tổng hợp tính vị từ nguyên liệu lên món | Backend | ⬜ | TCM-001 | — |
 | [TCM-003](./tasks/TCM-003.md) | Hiển thị lớp tính vị (mặc định tắt, khung văn hoá) | Frontend | ⬜ | TCM-002 | — |

@@ -16,4 +16,14 @@ class MealLog extends Model
             'eaten_at' => 'datetime',
         ];
     }
+
+    public function dish(): \Illuminate\Database\Eloquent\Relations\BelongsTo
+    {
+        return $this->belongsTo(Dish::class);
+    }
+
+    public function user(): \Illuminate\Database\Eloquent\Relations\BelongsTo
+    {
+        return $this->belongsTo(User::class);
+    }
 }

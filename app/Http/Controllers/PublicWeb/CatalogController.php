@@ -60,12 +60,58 @@ class CatalogController extends Controller
             'shake_index' => ['nullable', 'integer', 'min:0'],
         ]);
 
+        // USR-004: người đã đăng nhập được cá nhân hoá từ hồ sơ + nhật ký thật.
+        $allergens = $data['allergens'] ?? [];
+        $vegetarian = $data['vegetarian'] ?? false;
+        $recentIds = $data['recent_dish_ids'] ?? [];
+        $targetKcal = $data['target_kcal'] ?? null;
+        $user = $request->user();
+        if ($user !== null) {
+            $profile = $user->profile;
+            if ($profile !== null) {
+                $allergens = array_values(array_unique(array_merge(
+                    $allergens,
+                    $profile->excluded_ingredients ?? [],
+                )));
+                if (in_array($profile->diet_type, ['chay', 'chay-truong'], true)) {
+                    $vegetarian = true;
+                }
+            }
+            // Tầng 2 lấy từ meal_logs thật (mới nhất đứng cuối, đúng thứ tự engine kỳ vọng)
+            $logIds = $user->mealLogs()->latest('eaten_at')->limit(10)->pluck('dish_id')->reverse()->values()->all();
+            $recentIds = array_values(array_unique([...$logIds, ...$recentIds]));
+            // Tầng 3 calo: mục tiêu = phần calo còn lại của ngày chia theo tỷ lệ bữa
+            if ($targetKcal === null && $profile !== null) {
+                $calc = app(\App\Profile\TdeeCalculator::class);
+                $tdee = $calc->for($profile);
+                if ($tdee !== null) {
+                    $eatenMid = $user->mealLogs()->whereDate('eaten_at', now()->toDateString())
+                        ->with('dish.nutrition')->get()
+                        ->sum(fn ($log) => $log->dish?->nutrition !== null
+                            ? ($log->dish->nutrition->kcal_min + $log->dish->nutrition->kcal_max) / 2
+                            : 0);
+                    $tdeeMid = ($tdee['tdee_min'] + $tdee['tdee_max']) / 2;
+                    $remaining = max($tdeeMid - $eatenMid, 150);
+                    $ratios = \App\Profile\TdeeCalculator::SLOT_RATIOS;
+                    $order = ['sang', 'trua', 'chieu', 'toi'];
+                    $idx = array_search($data['slot'], $order, true);
+                    if ($idx !== false) {
+                        $denom = array_sum(array_map(fn ($s) => $ratios[$s], array_slice($order, $idx)));
+                        $targetKcal = $remaining * $ratios[$data['slot']] / max($denom, 0.01);
+                    } elseif ($data['slot'] === 'an-vat') {
+                        $targetKcal = $remaining * $ratios['an-vat'];
+                    }
+                }
+            }
+        }
+
         $result = $recommender->shake([
             ...$data,
-            'user_id' => $request->user()?->id,
-            'vegetarian' => $data['vegetarian'] ?? false,
-            'allergens' => $data['allergens'] ?? [],
-            'recent_dish_ids' => $data['recent_dish_ids'] ?? [],
+            'user_id' => $user?->id,
+            'vegetarian' => $vegetarian,
+            'allergens' => $allergens,
+            'recent_dish_ids' => $recentIds,
+            'target_kcal' => $targetKcal,
             'shake_index' => $data['shake_index'] ?? 0,
         ]);
 

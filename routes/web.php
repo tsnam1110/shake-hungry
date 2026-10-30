@@ -13,7 +13,26 @@ Route::get('/', function () {
 });
 
 // --- API công khai cho trang người dùng (GĐ4) ---
+Route::get('/tai-khoan', fn () => view('account'))->name('login');
+Route::get('/ho-so', fn () => view('profile'))->middleware('auth');
+
 Route::prefix('api')->group(function () {
+    Route::post('/register', [\App\Http\Controllers\PublicWeb\UserAuthController::class, 'register']);
+    Route::post('/login', [\App\Http\Controllers\PublicWeb\UserAuthController::class, 'login']);
+    Route::post('/logout', [\App\Http\Controllers\PublicWeb\UserAuthController::class, 'logout']);
+    Route::get('/me', [\App\Http\Controllers\PublicWeb\UserAuthController::class, 'me']);
+    Route::post('/forgot-password', [\App\Http\Controllers\PublicWeb\UserAuthController::class, 'forgot']);
+    Route::post('/reset-password', [\App\Http\Controllers\PublicWeb\UserAuthController::class, 'reset']);
+    Route::middleware('auth')->group(function () {
+        Route::get('/profile', [\App\Http\Controllers\PublicWeb\ProfileController::class, 'show']);
+        Route::put('/profile', [\App\Http\Controllers\PublicWeb\ProfileController::class, 'update']);
+        Route::get('/meal-logs', [\App\Http\Controllers\PublicWeb\ProfileController::class, 'mealLogs']);
+        Route::post('/meal-logs', [\App\Http\Controllers\PublicWeb\ProfileController::class, 'storeMealLog']);
+        Route::put('/meal-logs/{mealLog}', [\App\Http\Controllers\PublicWeb\ProfileController::class, 'updateMealLog']);
+        Route::delete('/meal-logs/{mealLog}', [\App\Http\Controllers\PublicWeb\ProfileController::class, 'destroyMealLog']);
+        Route::post('/contributions', [\App\Http\Controllers\PublicWeb\ContributionController::class, 'store']);
+        Route::get('/contributions', [\App\Http\Controllers\PublicWeb\ContributionController::class, 'mine']);
+    });
     Route::get('/regions', [\App\Http\Controllers\PublicWeb\CatalogController::class, 'regions']);
     Route::get('/dishes', [\App\Http\Controllers\PublicWeb\CatalogController::class, 'index']);
     Route::get('/dishes/{dish:slug}', [\App\Http\Controllers\PublicWeb\CatalogController::class, 'show']);
@@ -37,6 +56,8 @@ Route::middleware(['auth', 'admin'])->prefix('admin/api')->group(function () {
     Route::post('/dishes/preview-nutrition', [DishController::class, 'previewNutrition']);
     Route::apiResource('dishes', DishController::class);
     Route::post('/dishes/{dish}/review', [DishController::class, 'review']);
+    Route::get('/contributions', [\App\Http\Controllers\Admin\ContributionController::class, 'index']);
+    Route::post('/contributions/{contribution}/review', [\App\Http\Controllers\Admin\ContributionController::class, 'review']);
     Route::post('/dishes/{dish}/compute', [DishController::class, 'compute']);
 });
 
