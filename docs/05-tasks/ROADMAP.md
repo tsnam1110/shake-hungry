@@ -131,7 +131,7 @@ thư mục `data/` đúng cấu trúc; câu hỏi Q1/Q2 ở [PRD §9](../01-prd/
 
 | ID | Task | Loại | Status | Phụ thuộc | Ngày xong |
 |---|---|---|---|---|---|
-| [UI-001](./tasks/UI-001.md) | Nút Lắc bản thô sơ — giữ động lực | Frontend | ⬜ | DATA-005 | — |
+| [UI-001](./tasks/UI-001.md) | Nút Lắc bản thô sơ — giữ động lực | Frontend | ✅ | DATA-005 | 2026-10-30 |
 
 **DoD GĐ1:** 250 nguyên liệu có ánh xạ dinh dưỡng và quy đổi đơn vị; engine tính calo chạy và **qua
 kiểm chứng TEST-002**; `migrate:fresh --seed` dựng lại đúng toàn bộ dữ liệu từ `data/`.
@@ -184,7 +184,7 @@ kiểm chứng TEST-002**; `migrate:fresh --seed` dựng lại đúng toàn bộ
 
 | ID | Task | Loại | Status | Phụ thuộc | Ngày xong |
 |---|---|---|---|---|---|
-| [REC-001](./tasks/REC-001.md) | Engine gợi ý 3 tầng | Backend | ⬜ | DISH-002 | — |
+| [REC-001](./tasks/REC-001.md) | Engine gợi ý 3 tầng | Backend | ✅ | DISH-002 | 2026-10-30 |
 | [REC-002](./tasks/REC-002.md) | Sinh embedding + tìm món tương tự bằng embedding vector | Backend | ⬜ | REC-001 | — |
 | [UI-002](./tasks/UI-002.md) | Nút Lắc bản chính thức | Frontend | ⬜ | REC-001 | — |
 | [UI-003](./tasks/UI-003.md) | Trang chi tiết món (công thức, dinh dưỡng, độ tin cậy) | Frontend | ⬜ | UI-002 | — |

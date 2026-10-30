@@ -9,7 +9,15 @@ use App\Http\Controllers\Admin\RegionController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('shake');
+});
+
+// --- API công khai cho trang người dùng (GĐ4) ---
+Route::prefix('api')->group(function () {
+    Route::get('/regions', [\App\Http\Controllers\PublicWeb\CatalogController::class, 'regions']);
+    Route::get('/dishes', [\App\Http\Controllers\PublicWeb\CatalogController::class, 'index']);
+    Route::get('/dishes/{dish:slug}', [\App\Http\Controllers\PublicWeb\CatalogController::class, 'show']);
+    Route::post('/shake', [\App\Http\Controllers\PublicWeb\CatalogController::class, 'shake']);
 });
 
 // --- Khu vực quản trị (ADM-001): SPA React + antd tại /admin, API nội bộ dùng phiên web ---

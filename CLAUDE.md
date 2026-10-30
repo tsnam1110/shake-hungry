@@ -95,7 +95,7 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 | **Kiểm chứng engine** | 🔵 lần 2 (2026-09-01, engine **1.1.0**): **89,7% trong ±20%** (không đổi), MAPE 3,9%, và **% tham chiếu nằm trong khoảng 1,0% → 80,4%**. Vẫn chặn: **nhóm chiên chưa đo được** (0/255 có hệ số dầu) và **nhóm hấp lệch −21%** (Cooking Yields R2 **0 dòng thuỷ sản**) | [nhật ký đo](docs/06-nutrition/ACCURACY-SPEC.md) |
 | **Code** | ✅ **Laravel 13.29 + MySQL 8.0** — 15 migration (đủ R1–**R10**), 20 model, 7 seeder, engine calo **1.1.0**, 6 lệnh `lacdoi:*`, **trang quản trị antd 6 + React 19 tại `/admin`** (ADM-001/002/003 ✅, ADM-005 🔶), **47 test Pest xanh** | `php artisan migrate:fresh --seed; vendor\bin\pest --no-coverage` |
 | **CI** | ⚠️ `.github/workflows/tests.yml` viết xong và hợp lệ, nhưng đó là cú pháp **GitHub Actions** trong khi repo nằm ở **GitLab** — GitLab bỏ qua hoàn toàn, nên CI **vẫn chưa chạy lần nào**. Cần `.gitlab-ci.yml` hoặc mirror sang GitHub (Q9) | `ls .gitlab-ci.yml` (không có) |
-| Chưa có | cột embedding (GĐ4), Foundation Foods, UI-001, rà soát độc lập ING-003, tích hợp LLM trong trang quản trị (ADM-006 — chờ chủ dự án chốt nhà cung cấp/API key) | [ROADMAP](docs/05-tasks/ROADMAP.md) |
+| Chưa có | cột embedding (REC-002), Foundation Foods, rà soát độc lập ING-003, tích hợp LLM trong trang quản trị (ADM-006 — chờ chủ dự án chốt nhà cung cấp/API key), hệ tài khoản người dùng (GĐ5) và đóng góp cộng đồng (GĐ6) — đang triển khai tiếp trong đợt 2026-10-30 | [ROADMAP](docs/05-tasks/ROADMAP.md) |
 | Sao lưu | ✅ `origin` = `git@gitlab.com:Tran-Son-Nam/shake-hungry.git`, branch `dev` (8 commit, 513 file) — đẩy lần đầu 2026-09-01 | `git status -sb` |
 
 > Việc tiếp theo theo thứ tự ưu tiên: ~~(0) đẩy repo lên remote~~ ✅ **xong 2026-09-01**;
