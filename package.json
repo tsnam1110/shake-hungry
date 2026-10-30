@@ -15,5 +15,12 @@
     },
     "optionalDependencies": {
         "@laravel/multiplex": "^0.4.1"
+    },
+    "dependencies": {
+        "@vitejs/plugin-react": "^6.1.2",
+        "antd": "^6.6.8",
+        "axios": "^1.21.0",
+        "react": "^19.3.1",
+        "react-dom": "^19.3.1"
     }
 }

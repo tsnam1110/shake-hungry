@@ -37,7 +37,7 @@ Bắt đầu ở [docs/README.md](docs/README.md). Nếu bạn là AI agent ho�
 
 ## Stack
 
-Laravel 13 · MySQL 8 · Ant Design (antd) 6 + React cho trang quản trị (GĐ2) ·
+Laravel 13 · MySQL 8 · Ant Design (antd) 6 + React 19 cho trang quản trị (GĐ2) ·
 Livewire · Pest · Laragon trên Windows.
 
 ## Ghi công nguồn dữ liệu
@@ -55,3 +55,10 @@ Livewire · Pest · Laragon trên Windows.
 Chưa chốt — xem [LICENSE-COMPLIANCE](docs/04-data-sources/LICENSE-COMPLIANCE.md) §6. Lưu ý: việc dùng
 Open Food Facts (ODbL) và Wikibooks (CC BY-SA) có ràng buộc share-alike ảnh hưởng tới lựa chọn này,
 nên phải quyết định **trước** khi nhập các nguồn đó.
+
+## Trang quản trị
+
+Công cụ biên soạn dữ liệu chạy tại `/admin` (React 19 + antd 6, đăng nhập
+email/mật khẩu, hai vai trò admin/editor). Tài khoản quản trị được tạo riêng
+tại từng máy phát triển — mật khẩu không nằm trong repo. Xem
+[ADM-001](docs/05-tasks/tasks/ADM-001.md).

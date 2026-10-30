@@ -93,9 +93,9 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 | Bảng tham chiếu | ✅ SR Legacy **7.793** + Cooking Yields R2 **163** + FNDDS **333 Food Code / 1.810 SR Links** + `regions-vn.json` + `wikidata-vn-dishes.json`; **197/255 nguyên liệu ánh xạ, 0 lệch** | `data/reference/MANIFEST.json` |
 | Hệ số DATA-004/008 | ✅ khung xong: `edible_portion_pct` (3 có nguồn, 16 null chờ cân), `default_yield_factor` (9 thịt suy có nguồn) | `edible_portion_note` / `default_yield_factor_note` từng file |
 | **Kiểm chứng engine** | 🔵 lần 2 (2026-09-01, engine **1.1.0**): **89,7% trong ±20%** (không đổi), MAPE 3,9%, và **% tham chiếu nằm trong khoảng 1,0% → 80,4%**. Vẫn chặn: **nhóm chiên chưa đo được** (0/255 có hệ số dầu) và **nhóm hấp lệch −21%** (Cooking Yields R2 **0 dòng thuỷ sản**) | [nhật ký đo](docs/06-nutrition/ACCURACY-SPEC.md) |
-| **Code** | ✅ **Laravel 13.29 + MySQL 8.0** — 14 migration (đủ R1–**R10**), 19 model, 7 seeder, engine calo **1.1.0**, 6 lệnh `lacdoi:*`, **40 test Pest xanh** | `php artisan migrate:fresh --seed; vendor\bin\pest --no-coverage` |
+| **Code** | ✅ **Laravel 13.29 + MySQL 8.0** — 15 migration (đủ R1–**R10**), 20 model, 7 seeder, engine calo **1.1.0**, 6 lệnh `lacdoi:*`, **trang quản trị antd 6 + React 19 tại `/admin`** (ADM-001/002/003 ✅, ADM-005 🔶), **47 test Pest xanh** | `php artisan migrate:fresh --seed; vendor\bin\pest --no-coverage` |
 | **CI** | ⚠️ `.github/workflows/tests.yml` viết xong và hợp lệ, nhưng đó là cú pháp **GitHub Actions** trong khi repo nằm ở **GitLab** — GitLab bỏ qua hoàn toàn, nên CI **vẫn chưa chạy lần nào**. Cần `.gitlab-ci.yml` hoặc mirror sang GitHub (Q9) | `ls .gitlab-ci.yml` (không có) |
-| Chưa có | cột embedding (GĐ4), trang quản trị antd (GĐ2), Foundation Foods, UI-001, rà soát độc lập ING-003 | [ROADMAP](docs/05-tasks/ROADMAP.md) |
+| Chưa có | cột embedding (GĐ4), Foundation Foods, UI-001, rà soát độc lập ING-003, tích hợp LLM trong trang quản trị (ADM-006 — chờ chủ dự án chốt nhà cung cấp/API key) | [ROADMAP](docs/05-tasks/ROADMAP.md) |
 | Sao lưu | ✅ `origin` = `git@gitlab.com:Tran-Son-Nam/shake-hungry.git`, branch `dev` (8 commit, 513 file) — đẩy lần đầu 2026-09-01 | `git status -sb` |
 
 > Việc tiếp theo theo thứ tự ưu tiên: ~~(0) đẩy repo lên remote~~ ✅ **xong 2026-09-01**;

@@ -305,8 +305,8 @@ class LacdoiValidateData extends Command
             }
 
             // V7 (trigram) — hai món tên giống nhau >90% (🟡).
-            // Độ giống trigram tính ở tầng PHP: chuẩn hoá bỏ dấu tiếng Việt
-            // rồi so tập trigram của hai tên (xem các hàm cuối file).
+            // Độ giống trigram tính ở tầng PHP qua App\Support\NameSimilarity
+            // (dùng chung với cảnh báo trùng món ADM-005 trong trang quản trị).
             $primaries = DB::table('dish_names')
                 ->where('is_primary', true)
                 ->get(['id', 'dish_id', 'locale', 'name']);
@@ -321,7 +321,7 @@ class LacdoiValidateData extends Command
                         if ($a->dish_id === $b->dish_id) {
                             continue;
                         }
-                        if (self::trigramSimilarity(self::normalizeName($a->name), self::normalizeName($b->name)) > 0.9) {
+                        if (\App\Support\NameSimilarity::similarity($a->name, $b->name) > 0.9) {
                             $this->warnings[] = "V7: hai món tên giống nhau >90%: \"{$a->name}\" ↔ \"{$b->name}\"";
                         }
                     }
@@ -339,57 +339,4 @@ class LacdoiValidateData extends Command
         }
     }
 
-    /**
-     * Chuẩn hoá tên để so trùng: chữ thường + bỏ dấu tiếng Việt.
-     * Chữ đ/Đ không tách được bằng Normalizer nên thay tay trước.
-     */
-    private static function normalizeName(string $name): string
-    {
-        $name = str_replace(['đ', 'Đ'], ['d', 'D'], $name);
-        $name = mb_strtolower($name, 'UTF-8');
-        if (class_exists(\Normalizer::class)) {
-            $decomposed = \Normalizer::normalize($name, \Normalizer::FORM_D);
-            if ($decomposed !== false) {
-                $name = preg_replace('/\p{Mn}+/u', '', $decomposed) ?? $name;
-            }
-        }
-
-        return trim(preg_replace('/\s+/u', ' ', $name) ?? $name);
-    }
-
-    /**
-     * Độ giống trigram: mỗi từ được đệm hai khoảng trắng ở đầu và một ở
-     * cuối, tách thành các trigram, similarity = |giao| / (|A| + |B| − |giao|).
-     *
-     * @return float 0.0 – 1.0
-     */
-    private static function trigramSimilarity(string $a, string $b): float
-    {
-        $setA = self::trigramSet($a);
-        $setB = self::trigramSet($b);
-        if ($setA === [] || $setB === []) {
-            return 0.0;
-        }
-        $shared = count(array_intersect_key($setA, $setB));
-
-        return $shared / (count($setA) + count($setB) - $shared);
-    }
-
-    /** @return array<string, true> */
-    private static function trigramSet(string $text): array
-    {
-        $set = [];
-        foreach (preg_split('/\s+/u', $text) ?: [] as $word) {
-            if ($word === '') {
-                continue;
-            }
-            $padded = '  '.$word.' ';
-            $length = mb_strlen($padded, 'UTF-8');
-            for ($i = 0; $i + 3 <= $length; $i++) {
-                $set[mb_substr($padded, $i, 3, 'UTF-8')] = true;
-            }
-        }
-
-        return $set;
-    }
 }
