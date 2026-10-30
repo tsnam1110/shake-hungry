@@ -16,7 +16,7 @@ thứ hai — làm điều đó khi đóng GĐ1 (DoD giai đoạn).
 | Node.js | 20+ | Chỉ để build asset |
 | Git | | |
 
-Không cần extension nào (bản PostgreSQL cũ cần `pg_trgm`, `unaccent`, `vector`). Điều kiện bắt buộc phía MySQL: database tạo với collation `utf8mb4_vi_0900_ai_ci`, và server bật `log_bin_trust_function_creators` (nếu có binary logging) để user thường tạo được trigger — xem §2.
+Không cần extension nào. Điều kiện bắt buộc phía MySQL: database tạo với collation `utf8mb4_vi_0900_ai_ci`, và server bật `log_bin_trust_function_creators` (nếu có binary logging) để user thường tạo được trigger — xem §2.
 
 ---
 
@@ -30,63 +30,26 @@ cp .env.example .env
 php artisan key:generate
 ```
 
-Tạo database (đúng charset/collation tiếng Việt) và user:
+Tạo database (đúng charset/collation tiếng Việt):
 
 ```sql
 CREATE DATABASE shake_hungry CHARACTER SET utf8mb4 COLLATE utf8mb4_vi_0900_ai_ci;
 CREATE DATABASE shake_hungry_test CHARACTER SET utf8mb4 COLLATE utf8mb4_vi_0900_ai_ci;
-CREATE USER 'shake_hungry'@'localhost' IDENTIFIED BY '<mật khẩu>';
-GRANT ALL PRIVILEGES ON shake_hungry.* TO 'shake_hungry'@'localhost';
-GRANT ALL PRIVILEGES ON shake_hungry_test.* TO 'shake_hungry'@'localhost';
 -- Nếu server bật binary logging mà chưa có dòng này, tạo trigger sẽ lỗi 1419:
 SET GLOBAL log_bin_trust_function_creators = 1;  -- và ghi vào my.cnf: log_bin_trust_function_creators = 1
 ```
 
-Sửa `.env`: `DB_CONNECTION=mysql`, host, cổng (3306), tên DB, user, mật khẩu.
+Tài khoản database dùng **mặc định `root`, không mật khẩu** (kiểu Laragon) — không
+tạo user riêng cho dự án.
+
+Sửa `.env`: `DB_CONNECTION=mysql`, host, cổng (3306), tên DB, `DB_USERNAME=root`,
+`DB_PASSWORD` để trống.
 
 ```bash
 php artisan migrate:fresh --seed
 php artisan lacdoi:validate-data
 npm install && npm run build
 ```
-
-### 2b. Các chỗ vướng thực tế trên Windows/Laragon — gặp 2026-08-31
-
-> ⚠️ **Hết áp dụng từ 2026-10-30:** mục này ghi lại thời dự án còn dùng PostgreSQL.
-> Laragon có sẵn MySQL nên các vướng mắc dưới đây không còn xuất hiện. Giữ lại làm
-> lịch sử theo QT-7, không xoá.
-
-1. **Laragon không kèm PostgreSQL.** Cách đã dùng: tải bản **binaries portable** của
-   EnterpriseDB (`postgresql-17.11-1-windows-x64-binaries.zip`, ~325 MB), giải nén vào
-   `D:\laragon\bin\postgresql\postgresql-17.11-1`. Không cần cài service.
-2. **Khởi tạo cluster với ICU tiếng Việt** (sắp xếp tên món đúng):
-   ```bash
-   initdb -D D:\laragon\data\postgresql-17 -U postgres -E UTF8 --locale-provider=icu --icu-locale=vi-VN --locale=C -A trust
-   ```
-   `-A trust` chỉ dành cho dev local (server chỉ nghe localhost). Production bắt buộc
-   `scram-sha-256`.
-3. **Khởi động / dừng:**
-   ```bash
-   pg_ctl -D D:\laragon\data\postgresql-17 -l D:\laragon\data\postgresql-17\server.log start
-   ```
-4. **PHP Laragon có sẵn DLL pgsql nhưng chưa bật** — thêm vào `php.ini`:
-   `extension=pdo_pgsql` và `extension=pgsql`, rồi kiểm bằng `php -m | findstr pgsql`.
-5. **psql trên PowerShell hỏng encoding tiếng Việt** khi truyền chuỗi qua `-c` — muốn chạy
-   SQL có dấu, ghi ra file UTF-8 (không BOM) rồi `psql -f`.
-6. **Tạo database:** `createdb -U postgres shake_hungry` và `createdb -U postgres shake_hungry_test`
-   (bảng test cho Pest — phpunit.xml trỏ vào `shake_hungry_test`).
-
-### Ghi chú về pgvector trên Windows
-
-`pgvector` **không có sẵn** trong bản PostgreSQL tiêu chuẩn. Phải tải bản build khớp đúng phiên bản
-PostgreSQL đang dùng.
-
-Nếu chưa cài được: **GĐ1–GĐ3 vẫn chạy được không cần pgvector**. Chỉ GĐ4 ([REC-002](../05-tasks/tasks/REC-002.md))
-mới cần. Có thể bỏ qua tạm, nhưng **phải ghi lại là đã bỏ qua**, không phải quên.
-
-`pg_trgm` và `unaccent` có sẵn trong bản tiêu chuẩn — hai cái này **bắt buộc** từ GĐ2.
-
----
 
 ## 3. Kiểm chứng cài đặt thành công
 

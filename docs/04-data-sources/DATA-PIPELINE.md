@@ -82,7 +82,7 @@ tính lại bất cứ lúc nào.
 
 ### Bước 1 — Xác định món chuẩn hay biến thể
 
-Gõ tên món. Hệ thống dùng `pg_trgm` + `unaccent` tìm món gần giống **ngay lúc gõ**.
+Gõ tên món. Hệ thống dùng độ giống trigram + tìm kiếm không dấu (collation tiếng Việt) để tìm món gần giống **ngay lúc gõ**.
 
 - Trùng hoàn toàn → sửa món cũ, không tạo mới.
 - Gần giống → quyết định: biến thể (`parent_dish_id`) hay món độc lập? Quy tắc:

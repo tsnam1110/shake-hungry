@@ -13,8 +13,7 @@ return new class extends Migration
     public function up(): void
     {
         // MySQL không nhận default dạng literal cho cột JSON — phải dùng biểu thức.
-        $jsonArrayDefault = DB::connection()->getDriverName() === 'pgsql'
-            ? '[]' : new Expression('(JSON_ARRAY())');
+        $jsonArrayDefault = new Expression('(JSON_ARRAY())');
 
         Schema::create('user_profiles', function (Blueprint $table) use ($jsonArrayDefault) {
             $table->id();
@@ -22,8 +21,7 @@ return new class extends Migration
             $table->decimal('height_cm', 5, 1)->nullable();
             $table->decimal('weight_kg', 5, 1)->nullable();
             $table->smallInteger('birth_year')->nullable();
-            // varchar(16): giá trị 'unspecified' dài 11 ký tự — PostgreSQL chấp
-            // nhận default dài hơn cột (tự cắt khi ép kiểu), MySQL strict thì không.
+            // varchar(16): giá trị 'unspecified' dài 11 ký tự, không vừa varchar(8).
             $table->string('sex', 16)->default('unspecified');
             $table->string('activity_level', 16)->nullable();
             $table->string('diet_type', 24)->nullable();

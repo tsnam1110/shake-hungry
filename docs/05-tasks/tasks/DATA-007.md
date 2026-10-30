@@ -19,9 +19,9 @@ QT-3. Người biên soạn làm việc trên Filament; lệnh này đưa kết 
 ## Bối cảnh
 
 ```
-Filament → PostgreSQL → [lacdoi:export-data] → data/**/*.json → git
+Filament → MySQL → [lacdoi:export-data] → data/**/*.json → git
                                                      ↓
-                        máy khác: migrate:fresh --seed → PostgreSQL
+                        máy khác: migrate:fresh --seed → MySQL
 ```
 
 Chi tiết: [DATA-REPOSITORY §6](../../04-data-sources/DATA-REPOSITORY.md).
@@ -66,7 +66,7 @@ Xuất `ingredients`, `dishes` (và các bảng con) ra file theo định dạng
 
 - **JSON không ổn định là lỗi âm thầm giết chết quy trình.** Nếu mỗi lần export sinh diff trên 400
   file, không ai review được nữa, và người ta sẽ bỏ luôn việc review — mất toàn bộ lợi ích của QT-3.
-- Kiểu `numeric` của PostgreSQL trả về chuỗi trong PHP. Ép kiểu và định dạng nhất quán.
+- Kiểu `DECIMAL` của MySQL trả về chuỗi trong PHP. Ép kiểu và định dạng nhất quán.
 - Chú ý ký tự xuống dòng khi commit trên Windows — cấu hình `.gitattributes` với `*.json text eol=lf`.
 
 ---
@@ -82,5 +82,5 @@ Xuất `ingredients`, `dishes` (và các bảng con) ra file theo định dạng
   phát hiện `hat-sen-kho` có unit 0,675 g bị `numeric(8,2)` làm tròn — đã nới cột `grams`
   lên `numeric(8,3)` (đính chính DATA-MODEL).
 - Định dạng số canonical: float giữ `.0` (`JSON_PRESERVE_ZERO_FRACTION`); mọi giá trị
-  `numeric` của PostgreSQL được cast float trước khi encode để không lúc `18`, lúc `18.00`.
+  `DECIMAL` của MySQL được cast float trước khi encode để không lúc `18`, lúc `18.00`.
 - Thụt lề 2 dấu cách đạt bằng hậu xử lý regex (json_encode của PHP cố định 4).

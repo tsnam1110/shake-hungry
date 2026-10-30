@@ -25,8 +25,8 @@
 |---|---|---|
 | Runtime | PHP 8.3+ trên Laragon (Windows) | Không dùng Docker cho dev hằng ngày |
 | Framework | Laravel 12+ | |
-| Database | **MySQL 8.0+** | Nền tảng chính từ 2026-10-30 — xem §4 (trước đó là PostgreSQL) |
-| Extension DB | `pg_trgm`, `pgvector`, `unaccent` | |
+| Database | **MySQL 8.0+** | Xem §4 |
+| Tìm kiếm tên | FULLTEXT ngram + độ giống trigram ở tầng PHP | |
 | Admin / nhập liệu | Filament 3+ | Công cụ sản xuất dữ liệu chính |
 | Giao diện người dùng | Blade + Livewire 3 | |
 | Trợ lý nhập liệu | Claude API | Vai trò giới hạn theo QT-1 |
@@ -57,31 +57,32 @@ chạy của ứng dụng, và phải cập nhật lại mục này.
 
 ---
 
-## 4. Quyết định CSDL
+## 4. Quyết định: MySQL 8
 
-### Thay đổi 2026-10-30: chuyển sang MySQL 8 (hiện hành)
+Nền tảng CSDL chính thức: **MySQL 8.0+** — cũng là CSDL mặc định của Laragon, môi
+trường phát triển của dự án, nên không tốn thêm công cài đặt riêng.
 
-Theo quyết định của chủ dự án, nền tảng CSDL chính thức hiện nay là **MySQL 8.0+**.
-Quyết định gốc ưu tiên PostgreSQL (giữ nguyên văn bên dưới để đối chiếu lịch sử) bị
-thay thế. Ánh xạ từng tính năng PostgreSQL sang cơ chế thay thế, các giới hạn đã biết
-(không có deferred trigger cho R6/R8, MySQL 8 chưa có kiểu VECTOR), điều kiện vận
-hành (collation `utf8mb4_vi_0900_ai_ci`, `log_bin_trust_function_creators`) và số
-liệu kiểm chứng nằm ở task [SETUP-004](../05-tasks/tasks/SETUP-004.md) và
-[DEPLOYMENT §2](../10-deployment/DEPLOYMENT.md).
+Các nhu cầu đặc thù của dự án và cách MySQL đáp ứng:
 
-### Quyết định gốc (đã bị thay thế): PostgreSQL, không MySQL
+1. **Khớp mờ tên món tiếng Việt** — cần cảnh báo trùng ngay lúc biên soạn viên đang gõ
+   ("Bún bò Huế" ≈ "bún bò huế đặc biệt"). Độ giống trigram tính ở tầng PHP (dùng trong
+   V7 của `lacdoi:validate-data`, và ADM-005 ở GĐ2), kèm chỉ mục FULLTEXT ngram cho
+   tìm kiếm theo tên.
+2. **Tìm kiếm không dấu + sắp xếp tiếng Việt** — collation `utf8mb4_vi_0900_ai_ci`
+   ở tầng database lo cả hai, không cần extension.
+3. **Gợi ý món tương tự bằng embedding (GĐ4)** — cột `embedding` hoãn tới GĐ4
+   ([REC-002](../05-tasks/tasks/REC-002.md)); khi đó chốt kiểu dữ liệu theo phiên bản
+   MySQL đang dùng (MySQL 9 đã có kiểu `VECTOR`).
 
-Laragon mặc định MySQL, nên đây là lựa chọn có chi phí. Ba lý do:
+**Điều kiện vận hành:** database phải tạo với collation ở trên; server bật
+`log_bin_trust_function_creators` (khi có binary logging) để tạo được trigger.
+Quy trình: [DEPLOYMENT §2](../10-deployment/DEPLOYMENT.md). Tài khoản database dùng
+mặc định `root` (không mật khẩu, kiểu Laragon), không tạo user riêng.
 
-1. **`pg_trgm` — khớp mờ tên món tiếng Việt.** Cần cảnh báo trùng ngay lúc người biên soạn đang gõ
-   ("Bún bò Huế" ≈ "bún bò huế đặc biệt"). MySQL không có tương đương; fulltext index của MySQL giải
-   quyết bài toán khác.
-2. **`pgvector` — gợi ý món tương tự.** Chính là chức năng lõi ở GĐ4: "gợi món khác món bữa trước",
-   "món giống món bạn thích". Không có nó thì phải tự dựng chỉ mục vector bên ngoài.
-3. **`unaccent` + `CITEXT`** — xử lý dấu tiếng Việt trong tìm kiếm gọn hơn.
-
-**Đánh đổi:** phải bật PostgreSQL trong Laragon và cài extension thủ công. Quy trình:
-[DEPLOYMENT §2](../10-deployment/DEPLOYMENT.md).
+**Giới hạn đã biết:** MySQL không có deferred constraint trigger (kiểm lúc COMMIT)
+nên R6/R8 kiểm tại thời điểm UPDATE trên `dishes` và DELETE/UPDATE trên hai bảng
+con; thời điểm INSERT món do V4 của `lacdoi:validate-data` chốt chặn. Chi tiết:
+migration `100008` và [SETUP-004](../05-tasks/tasks/SETUP-004.md).
 
 ---
 
@@ -211,6 +212,6 @@ Dữ liệu v1 chỉ có món Việt, nhưng **schema phải đa quốc gia ngay
 |---|---|
 | Tách API + SPA | Thêm một tầng phải bảo trì; v1 không có client thứ hai |
 | Redis / hàng đợi | Chưa có việc gì đủ nặng để chạy nền, trừ nhập USDA (chạy bằng artisan command) |
-| Elasticsearch | `pg_trgm` + `pgvector` đủ cho quy mô vài nghìn món |
+| Elasticsearch | FULLTEXT ngram + trigram ở tầng PHP đủ cho quy mô vài nghìn món |
 | Đa người dùng biên soạn với phân quyền chi tiết | v1 chỉ có 1–2 người biên soạn. Filament role cơ bản là đủ |
 | Microservice | Không có lý do gì |

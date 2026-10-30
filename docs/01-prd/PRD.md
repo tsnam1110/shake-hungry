@@ -124,7 +124,7 @@ biết quán cho bao nhiêu dầu.
 | Dùng nhầm dữ liệu license bẩn | Trung bình | [LICENSE-COMPLIANCE](../04-data-sources/LICENSE-COMPLIANCE.md) + quy trình duyệt nguồn mới |
 | Calo sai nhiều ở món chiên rán | Trung bình | Hệ số hấp thụ dầu riêng — xem [CALORIE-ENGINE §4](../06-nutrition/CALORIE-ENGINE.md) |
 | Lớp ngũ hành bị hiểu là tư vấn y tế | Trung bình | Khung diễn đạt văn hoá, không cá nhân hoá theo tình trạng sức khoẻ ([NGU-HANH-AM-DUONG §5](../08-cultural/NGU-HANH-AM-DUONG.md)) |
-| Trùng lặp / mâu thuẫn dữ liệu khi nhiều người cùng biên soạn | Thấp ở v1 | [EDITORIAL-GUIDE](../09-standards/EDITORIAL-GUIDE.md) + `pg_trgm` cảnh báo trùng lúc nhập |
+| Trùng lặp / mâu thuẫn dữ liệu khi nhiều người cùng biên soạn | Thấp ở v1 | [EDITORIAL-GUIDE](../09-standards/EDITORIAL-GUIDE.md) + cảnh báo trùng bằng độ giống trigram lúc nhập |
 
 ## 9. Câu hỏi còn mở
 

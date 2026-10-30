@@ -31,11 +31,11 @@ GĐ1 còn: hệ số dầu (chặn TEST-002), hệ số hao hụt thuỷ sản, 
 
 | GĐ | Tên | Mục tiêu | Cổng chặn để sang giai đoạn sau | Trạng thái |
 |---|---|---|---|---|
-| **0** | Thủ tục & khởi tạo | Gửi đề nghị cấp phép, chốt các quyết định nền, dựng repo | Repo chạy được, các quyết định đã chốt | 🔵 IN PROGRESS — repo chạy được (Laravel 13 + PostgreSQL 17, `migrate:fresh --seed` xanh); còn [LEGAL-002](./tasks/LEGAL-002.md) và Q1 chờ chủ dự án |
+| **0** | Thủ tục & khởi tạo | Gửi đề nghị cấp phép, chốt các quyết định nền, dựng repo | Repo chạy được, các quyết định đã chốt | 🔵 IN PROGRESS — repo chạy được (Laravel 13 + MySQL 8, `migrate:fresh --seed` xanh); còn [LEGAL-002](./tasks/LEGAL-002.md) và Q1 chờ chủ dự án |
 | **1** | Xương sống dữ liệu | Schema + bảng tham chiếu + **250 nguyên liệu** + engine calo | Engine calo qua kiểm chứng FNDDS/Nutrition5k | 🔵 IN PROGRESS — schema, engine, **255/250 nguyên liệu**, SR Legacy, CY R2, FNDDS, Wikidata, DATA-008 xong; **kiểm chứng lần 1 đạt 89,7%**. Cổng chặn chưa mở: nhóm chiên chưa đo được |
 | **2** | Trình nhập liệu | Công cụ nhập món trong Filament + trợ lý LLM | **≤5 phút/món** — cổng chặn cứng | ⬜ TODO |
 | **3** | Sản xuất dữ liệu | 150 món (dùng được) → 500 món (đủ dùng) | ≥500 món Mức 1; đo độ chính xác đạt ≥80% | ⬜ TODO |
-| **4** | Engine gợi ý | Nút Lắc bản chính thức, 3 tầng, có pgvector | Độ phủ kho món ≥60% trong 30 ngày | ⬜ TODO |
+| **4** | Engine gợi ý | Nút Lắc bản chính thức, 3 tầng, có embedding | Độ phủ kho món ≥60% trong 30 ngày | ⬜ TODO |
 | **5** | Người dùng | Hồ sơ, TDEE, lịch sử bữa ăn | Gợi ý có tính tới bữa trước và TDEE | ⬜ TODO |
 | **6** | Lớp phụ | Đóng góp cộng đồng + ngũ hành (tuỳ chọn) | — | ⬜ TODO |
 
@@ -66,10 +66,10 @@ thứ khác phụ thuộc vào.
 | [DEC-001](./tasks/DEC-001.md) | Chốt định nghĩa "độ chính xác calo >80%" | Quyết định | ✅ | DOC-001 | 2026-08-31 |
 | [LEGAL-001](./tasks/LEGAL-001.md) | ~~Gửi đề nghị xin phép sử dụng dữ liệu Viện Dinh dưỡng~~ | Thủ tục | ❌ | — | Huỷ 2026-08-31 |
 | [LEGAL-002](./tasks/LEGAL-002.md) | Chốt giấy phép mã nguồn & dữ liệu của dự án | Quyết định | ⬜ | — | — |
-| [SETUP-001](./tasks/SETUP-001.md) | Khởi tạo Laravel + PostgreSQL + extension | Backend | ✅ (pgvector hoãn có ý thức) | — | 2026-08-31 |
+| [SETUP-001](./tasks/SETUP-001.md) | Khởi tạo Laravel + MySQL | Backend | ✅ | — | 2026-08-31 |
 | [SETUP-002](./tasks/SETUP-002.md) | Dựng cấu trúc `data/` + `.gitignore` + MANIFEST | Backend | ✅ | SETUP-001 | 2026-08-31 |
 
-**DoD GĐ0:** `php artisan --version` chạy được; kết nối được PostgreSQL có `pg_trgm`/`pgvector`/`unaccent`;
+**DoD GĐ0:** `php artisan --version` chạy được; kết nối được MySQL 8 với collation `utf8mb4_vi_0900_ai_ci`;
 thư mục `data/` đúng cấu trúc; câu hỏi Q1/Q2 ở [PRD §9](../01-prd/PRD.md) đã có câu trả lời.
 
 > ## ⚠️ Đính chính 2026-08-31 — đổi hướng về dữ liệu dinh dưỡng Việt Nam
@@ -97,8 +97,8 @@ thư mục `data/` đúng cấu trúc; câu hỏi Q1/Q2 ở [PRD §9](../01-prd/
 
 | ID | Task | Loại | Status | Phụ thuộc | Ngày xong |
 |---|---|---|---|---|---|
-| [SETUP-003](./tasks/SETUP-003.md) | Migration toàn bộ schema theo DATA-MODEL | Backend | ✅ (cột embedding chờ pgvector) | SETUP-001 | 2026-08-31 |
-| [SETUP-004](./tasks/SETUP-004.md) | Chuyển nền tảng CSDL PostgreSQL → MySQL 8 | Backend | ✅ 255/61/7.793, 40/40 test | SETUP-003 | 2026-10-30 |
+| [SETUP-003](./tasks/SETUP-003.md) | Migration toàn bộ schema theo DATA-MODEL | Backend | ✅ (cột embedding hoãn tới GĐ4) | SETUP-001 | 2026-08-31 |
+| [SETUP-004](./tasks/SETUP-004.md) | Thiết lập nền tảng CSDL MySQL 8 + tài khoản mặc định | Backend | ✅ 255/61/7.793, 40/40 test | SETUP-003 | 2026-10-30 |
 | [DATA-001](./tasks/DATA-001.md) | Biên soạn cây `regions` Việt Nam | Dữ liệu | ✅ | SETUP-003 | 2026-08-31 |
 | [DATA-006](./tasks/DATA-006.md) | Lệnh `lacdoi:import-usda` + `lacdoi:validate-data` | Backend | ✅ | SETUP-003 | 2026-08-31 |
 | [DATA-002](./tasks/DATA-002.md) | Nhập USDA SR Legacy + Foundation Foods | Dữ liệu | 🔵 SR Legacy xong (7.793 dòng, 116 ánh xạ khớp/0 lệch); Foundation chưa | DATA-006 | — |
@@ -152,7 +152,7 @@ kiểm chứng TEST-002**; `migrate:fresh --seed` dựng lại đúng toàn bộ
 | [ADM-002](./tasks/ADM-002.md) | Màn hình quản lý nguyên liệu + quy đổi đơn vị | Backend | ⬜ | ADM-001 | — |
 | [ADM-003](./tasks/ADM-003.md) | Màn hình nhập món Mức 1 | Backend | ⬜ | ADM-001 | — |
 | [ADM-004](./tasks/ADM-004.md) | Màn hình nhập nguyên liệu: bàn phím + calo cập nhật trực tiếp | Backend | ⬜ | ADM-003, CALC-002 | — |
-| [ADM-005](./tasks/ADM-005.md) | Cảnh báo trùng món bằng `pg_trgm` ngay khi gõ | Backend | ⬜ | ADM-003 | — |
+| [ADM-005](./tasks/ADM-005.md) | Cảnh báo trùng món bằng độ giống trigram ngay khi gõ | Backend | ⬜ | ADM-003 | — |
 | [ADM-006](./tasks/ADM-006.md) | Tích hợp LLM đề xuất nguyên liệu + ánh xạ | Backend | ⬜ | ADM-004 | — |
 | [ADM-007](./tasks/ADM-007.md) | **Đo và đạt ≤5 phút/món** — cổng chặn sang GĐ3 | Nghiệm thu | ⬜ | ADM-006 | — |
 
@@ -185,7 +185,7 @@ kiểm chứng TEST-002**; `migrate:fresh --seed` dựng lại đúng toàn bộ
 | ID | Task | Loại | Status | Phụ thuộc | Ngày xong |
 |---|---|---|---|---|---|
 | [REC-001](./tasks/REC-001.md) | Engine gợi ý 3 tầng | Backend | ⬜ | DISH-002 | — |
-| [REC-002](./tasks/REC-002.md) | Sinh embedding + tìm món tương tự bằng pgvector | Backend | ⬜ | REC-001 | — |
+| [REC-002](./tasks/REC-002.md) | Sinh embedding + tìm món tương tự bằng embedding vector | Backend | ⬜ | REC-001 | — |
 | [UI-002](./tasks/UI-002.md) | Nút Lắc bản chính thức | Frontend | ⬜ | REC-001 | — |
 | [UI-003](./tasks/UI-003.md) | Trang chi tiết món (công thức, dinh dưỡng, độ tin cậy) | Frontend | ⬜ | UI-002 | — |
 
@@ -251,7 +251,7 @@ Ghi lại các quyết định kỹ thuật quan trọng để người sau khô
 
 | Ngày | Quyết định | Lý do tóm tắt | Tài liệu |
 |---|---|---|---|
-| 2026-08-31 | PostgreSQL, không MySQL | Cần `pg_trgm` (chống trùng tên món tiếng Việt) và `pgvector` (gợi ý món tương tự) | [ARCHITECTURE §4](../02-architecture/ARCHITECTURE.md) |
+| 2026-08-31 | MySQL 8 | Khớp mờ tên món bằng trigram ở tầng PHP + FULLTEXT ngram; tìm không dấu/sắp xếp tiếng Việt bằng collation `utf8mb4_vi_0900_ai_ci`; embedding hoãn tới GĐ4 | [ARCHITECTURE §4](../02-architecture/ARCHITECTURE.md) |
 | 2026-08-31 | Không dùng Python | `ingredient-parser-nlp` và `recipe-scrapers` đều chỉ hỗ trợ tiếng Anh, không có site VN → lợi thế hệ sinh thái Python biến mất | [ARCHITECTURE §3](../02-architecture/ARCHITECTURE.md) |
 | 2026-08-31 | Không fork bất kỳ app quản lý công thức nào | Tandoor có Commons Clause (không phải OSS); Mealie/KitchenOwl/Nextcloud là AGPL copyleft mạng | [LICENSE-COMPLIANCE §2.4](../04-data-sources/LICENSE-COMPLIANCE.md) |
 | 2026-08-31 | Hoãn dữ liệu địa điểm quán sang v2 | OSM chỉ có 1.845 nhà hàng ở lõi TP.HCM — quá mỏng; quán vỉa hè gần như không được map | [DATA-SOURCES §5](../04-data-sources/DATA-SOURCES.md) |
@@ -259,7 +259,7 @@ Ghi lại các quyết định kỹ thuật quan trọng để người sau khô
 | 2026-08-31 | Nguyên liệu trước, món sau | ~250 nguyên liệu phủ hết món Việt thường ngày; làm ngược là lặp việc hàng trăm lần | [DATA-PIPELINE §1](../04-data-sources/DATA-PIPELINE.md) |
 | 2026-08-31 | Định nghĩa độ chính xác = ≥80% món trong ±20% | "±10% so với phân tích hoá học" không khả thi — nhãn menu nhà hàng Mỹ còn lệch trung bình 18% | [ACCURACY-SPEC §2](../06-nutrition/ACCURACY-SPEC.md) |
 | 2026-08-31 | **Không xin phép Viện Dinh dưỡng; tự tra cứu từng nguyên liệu từ nguồn công khai** | Chấp nhận đánh đổi thời gian lấy độ chính xác và quyền sở hữu dữ liệu. Giá trị dinh dưỡng là **dữ kiện**, biên soạn độc lập có ghi nguồn là hợp lệ; cái bị bảo hộ là **bảng biên soạn** của họ, và ta không chép nó | [LEGAL-001](./tasks/LEGAL-001.md) · [DATA-PIPELINE §7](../04-data-sources/DATA-PIPELINE.md) |
-| 2026-08-31 | PostgreSQL 17 bản portable trong `laragon/bin`, không cài service; **pgvector hoãn tới GĐ4** | Laragon không kèm PostgreSQL; portable gỡ được bằng xoá thư mục; GĐ1–GĐ3 không cần pgvector. Migration tự thêm cột `embedding` khi extension xuất hiện | [SETUP-001](./tasks/SETUP-001.md) |
+| 2026-08-31 | MySQL 8 có sẵn trong Laragon, tài khoản mặc định `root`; **cột `embedding` hoãn tới GĐ4** | Không cần cài thêm CSDL ngoài mặc định của Laragon; GĐ1–GĐ3 không cần embedding | [SETUP-001](./tasks/SETUP-001.md) |
 | 2026-08-31 | Nguyên liệu tuỳ chọn chỉ tính vào cận trên; `fct_source='mixed'` ép confidence ≤ medium; món chiên thiếu hệ số dầu ⇒ nguyên liệu vào `missing[]` | Đặc tả gốc không định nghĩa — chọn cách bảo toàn QT-1/QT-5 (không bịa, khoảng phản ánh bất định thật) | [CALORIE-ENGINE §5b](../06-nutrition/CALORIE-ENGINE.md) |
 | 2026-08-31 | Lần export đầu chuẩn hoá lại 140 file nguyên liệu về định dạng canonical | Bắt buộc để export ổn định (DoD DATA-007). Kiểm chứng bằng so sánh ngữ nghĩa: 0 mất mát; phát hiện và sửa 1 lỗi tròn số (hạt sen 0,675 g) | [DATA-007](./tasks/DATA-007.md) |
 | 2026-08-31 | FNDDS/SR Links để ở **bảng riêng** (`fndds_foods`, `fndds_food_inputs`), không vào `dishes` | Đây là món Mỹ, chỉ dùng kiểm chứng engine; trộn vào kho món Việt là làm bẩn dữ liệu (cạm bẫy DATA-003) | [DATA-003](./tasks/DATA-003.md) |

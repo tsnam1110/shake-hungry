@@ -42,8 +42,7 @@ return new class extends Migration
             // nhập liệu) mặc nhiên coi như "đã duyệt". Đúng ngược với QT-1. Đảo lại
             // thành TRUE: chưa duyệt là trạng thái mặc định, muốn ra khỏi nó thì
             // phải khai báo tường minh và để lại dấu vết.
-            $defaultTrue = DB::connection()->getDriverName() === 'pgsql' ? 'true' : '1';
-            DB::statement("ALTER TABLE {$table} ALTER COLUMN needs_review SET DEFAULT {$defaultTrue}");
+            DB::statement("ALTER TABLE {$table} ALTER COLUMN needs_review SET DEFAULT 1");
 
             // R10 — hạ cờ needs_review phải kèm bằng chứng ai/khi nào.
             DB::statement(
@@ -61,23 +60,16 @@ return new class extends Migration
 
     public function down(): void
     {
-        $isPgsql = DB::connection()->getDriverName() === 'pgsql';
         foreach ($this->tables as $table) {
-            if ($isPgsql) {
-                DB::statement("ALTER TABLE {$table} DROP CONSTRAINT IF EXISTS {$table}_r10_review_trail");
-                DB::statement("ALTER TABLE {$table} DROP CONSTRAINT IF EXISTS {$table}_review_pair_check");
-            } else {
-                // MySQL: ràng buộc CHECK gỡ bằng DROP CHECK, không có IF EXISTS.
-                foreach (["{$table}_r10_review_trail", "{$table}_review_pair_check"] as $check) {
-                    try {
-                        DB::statement("ALTER TABLE {$table} DROP CHECK {$check}");
-                    } catch (\Throwable) {
-                        // Không tồn tại thì thôi — down() phải chạy được lặp lại.
-                    }
+            // MySQL: ràng buộc CHECK gỡ bằng DROP CHECK, không có IF EXISTS.
+            foreach (["{$table}_r10_review_trail", "{$table}_review_pair_check"] as $check) {
+                try {
+                    DB::statement("ALTER TABLE {$table} DROP CHECK {$check}");
+                } catch (\Throwable) {
+                    // Không tồn tại thì thôi — down() phải chạy được lặp lại.
                 }
             }
-            $defaultFalse = $isPgsql ? 'false' : '0';
-            DB::statement("ALTER TABLE {$table} ALTER COLUMN needs_review SET DEFAULT {$defaultFalse}");
+            DB::statement("ALTER TABLE {$table} ALTER COLUMN needs_review SET DEFAULT 0");
             Schema::table($table, function (Blueprint $t) {
                 $t->dropColumn(['reviewed_by', 'reviewed_at', 'review_note']);
             });

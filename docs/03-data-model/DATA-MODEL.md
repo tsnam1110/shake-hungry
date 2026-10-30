@@ -1,7 +1,7 @@
 # Mô hình dữ liệu — Lắc Đói
 
 **Cập nhật lần cuối:** 2026-09-01 — thêm dấu vết duyệt + ràng buộc R10 ([ING-004](../05-tasks/tasks/ING-004.md))
-**Trạng thái:** ✅ **ĐÃ HIỆN THỰC** — 15 migration trong `database/migrations/`, 10 ràng buộc
+**Trạng thái:** ✅ **ĐÃ HIỆN THỰC** — 14 migration trong `database/migrations/`, 10 ràng buộc
 R1–R10 có test ở `tests/Feature/IntegrityConstraintsTest.php`.
 
 Khi hiện thực, migration phải khớp tài liệu này. Nếu thực tế buộc phải khác, **sửa tài liệu trong
@@ -22,8 +22,8 @@ cùng commit** (QT-7) và ghi lý do.
 >    (DATA-REPOSITORY §3) đã có — cột đã thêm, chứa `{min, max, confidence, source_note}`
 >    cho món ăn ngoài Mức 1.
 >
-> Ngoài ra: cột `embedding vector(768)` chỉ được migration tạo khi extension `vector` đã cài
-> (pgvector hoãn có ý thức tới GĐ4 — [SETUP-001](../05-tasks/tasks/SETUP-001.md)).
+> Ngoài ra: cột `embedding` cho gợi ý món tương tự hoãn có ý thức tới GĐ4, migration
+> chưa tạo — xem [REC-002](../05-tasks/tasks/REC-002.md).
 
 > ## Bổ sung 2026-08-31 (lần 2) — DATA-004 và DATA-008
 >
@@ -54,7 +54,7 @@ cùng commit** (QT-7) và ghi lý do.
   > ghi sai tên cột trong nhiều tháng. Dự án này bỏ hẳn prefix để không tái diễn.
 - Khoá chính: `id` (`bigserial`).
 - Thời gian: `timestamptz`, luôn lưu UTC.
-- Enum: dùng bảng tra cứu hoặc `varchar` + `CHECK`, **không** dùng kiểu `ENUM` của Postgres (khó
+- Enum: dùng bảng tra cứu hoặc `varchar` + `CHECK`, **không** dùng kiểu `ENUM` (khó
   migrate).
 - Mọi bảng dữ liệu biên soạn có: `source`, `confidence`, `needs_review`, `created_at`, `updated_at`.
 - `ingredients` và `dishes` có thêm **dấu vết duyệt**: `reviewed_by`, `reviewed_at`, `review_note`
@@ -193,7 +193,7 @@ lớn nhất** — làm xong thì món tự tính được calo.
 Snapshot **không được** dùng làm nguồn tính calo khi `reference_foods` đã có dữ liệu tương ứng —
 nếu không sẽ có hai nguồn sự thật, đúng thứ QT-4 cấm.
 
-**Ràng buộc:** `UNIQUE (slug)`. Index `gin (name_vi gin_trgm_ops)` để cảnh báo trùng.
+**Ràng buộc:** `UNIQUE (slug)`. Index FULLTEXT ngram trên `name_vi` để tìm kiếm và cảnh báo trùng.
 
 > **Vì sao `reference_food_id` là nullable:** nhiều nguyên liệu Việt (nước mắm, bánh phở, giò lụa,
 > rau muống) **không có trong USDA**. Chúng sẽ null cho tới khi có dữ liệu Viện Dinh dưỡng
@@ -252,7 +252,7 @@ với phân loại này, và mâu thuẫn phải được hiển thị chứ kh�
 | `source` / `confidence` / `needs_review` | | |
 | `embedding` | vector(768) null | cho gợi ý món tương tự (GĐ4) |
 
-**Index:** `gin (slug gin_trgm_ops)`, `ivfflat (embedding)`.
+**Index:** FULLTEXT ngram trên `slug`; chỉ mục cho `embedding` bổ sung ở GĐ4 cùng cột.
 
 > **Vì sao tách `parent_dish_id` ngay từ đầu:** "Phở bò", "Phở bò tái", "phở bò nam định" là cùng một
 > món chuẩn với ba biến thể. Nếu để phẳng, dữ liệu sẽ phình và nút Lắc sẽ gợi ý ba lần cùng một thứ.
@@ -371,7 +371,7 @@ Kết quả tổng hợp tính vị từ nguyên liệu lên món. Do máy tính
 | `user_id` | bigint | |
 | `height_cm` / `weight_kg` | numeric(5,1) | |
 | `birth_year` | smallint | lưu năm sinh, không lưu tuổi (tuổi thay đổi) |
-| `sex` | varchar(16) | `male`, `female`, `unspecified` — dùng cho công thức BMR. (Khai varchar(8) ở bản đầu là lỗi tiềm ẩn: `unspecified` dài 11 ký tự; PostgreSQL bỏ qua, MySQL strict từ chối — đã nới ngày 2026-10-30, xem SETUP-004) |
+| `sex` | varchar(16) | `male`, `female`, `unspecified` — dùng cho công thức BMR. (`unspecified` dài 11 ký tự nên không dùng varchar(8) — xem SETUP-004) |
 | `activity_level` | varchar(16) | ánh xạ sang PAL, xem CALORIE-ENGINE §5 |
 | `diet_type` | varchar(24) null | `chay`, `chay-truong`, `low-carb`… |
 | `excluded_ingredients` | jsonb | dị ứng / không ăn được — **lọc cứng** ở engine gợi ý |

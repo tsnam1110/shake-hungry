@@ -13,8 +13,7 @@ return new class extends Migration
     public function up(): void
     {
         // MySQL không nhận default dạng literal cho cột JSON — phải dùng biểu thức.
-        $jsonArrayDefault = DB::connection()->getDriverName() === 'pgsql'
-            ? '[]' : new Expression('(JSON_ARRAY())');
+        $jsonArrayDefault = new Expression('(JSON_ARRAY())');
 
         Schema::create('dishes', function (Blueprint $table) {
             $table->id();
@@ -47,23 +46,11 @@ return new class extends Migration
         DB::statement("ALTER TABLE dishes ADD CONSTRAINT dishes_status_check CHECK (status IN ('draft', 'published', 'archived'))");
         DB::statement("ALTER TABLE dishes ADD CONSTRAINT dishes_source_check CHECK (source IN ('imported', 'curated', 'computed', 'llm_suggested', 'community'))");
         DB::statement("ALTER TABLE dishes ADD CONSTRAINT dishes_confidence_check CHECK (confidence IN ('high', 'medium', 'low', 'unknown'))");
-        // Chỉ mục tìm kiếm theo slug: GIN trigram trên PostgreSQL,
-        // FULLTEXT ngram trên MySQL 8 (nền tảng chính từ 2026-10-30).
-        if (DB::connection()->getDriverName() === 'pgsql') {
-            DB::statement('CREATE INDEX dishes_slug_trgm ON dishes USING gin (slug gin_trgm_ops)');
-        } else {
-            DB::statement('CREATE FULLTEXT INDEX dishes_slug_ft ON dishes (slug) WITH PARSER ngram');
-        }
+        // Chỉ mục tìm kiếm theo slug: FULLTEXT với ngram parser.
+        DB::statement('CREATE FULLTEXT INDEX dishes_slug_ft ON dishes (slug) WITH PARSER ngram');
 
-        // Cột embedding vector(768) chỉ tạo được khi pgvector đã cài (SETUP-003 "Cạm bẫy").
-        // Chưa cài ⇒ bỏ qua CÓ Ý THỨC, ghi ở SETUP-001/SETUP-003 mục Ghi chú; GĐ4 (REC-002) mới cần.
-        // MySQL 8 chưa có kiểu VECTOR nên nhánh này chỉ chạy trên PostgreSQL.
-        if (DB::connection()->getDriverName() === 'pgsql') {
-            $hasVector = DB::selectOne("SELECT count(*) AS n FROM pg_extension WHERE extname = 'vector'");
-            if ((int) $hasVector->n > 0) {
-                DB::statement('ALTER TABLE dishes ADD COLUMN embedding vector(768)');
-            }
-        }
+        // Cột embedding cho gợi ý món tương tự: hoãn tới GĐ4 (REC-002) mới tạo,
+        // khi đó chốt kiểu dữ liệu theo phiên bản MySQL đang dùng (MySQL 9 có VECTOR).
 
         Schema::create('dish_names', function (Blueprint $table) {
             $table->id();
@@ -75,17 +62,12 @@ return new class extends Migration
         });
 
         // Mỗi (dish, locale) đúng một dòng primary (DATA-MODEL §4).
-        // PostgreSQL: partial unique index. MySQL không có partial index nên
-        // dùng cột generated: chỉ dòng primary mới có giá trị, NULL không bị
-        // ràng buộc duy nhất — hiệu lực tương đương.
-        if (DB::connection()->getDriverName() === 'pgsql') {
-            DB::statement('CREATE UNIQUE INDEX dish_names_one_primary ON dish_names (dish_id, locale) WHERE is_primary');
-            DB::statement('CREATE INDEX dish_names_name_trgm ON dish_names USING gin (name gin_trgm_ops)');
-        } else {
-            DB::statement("ALTER TABLE dish_names ADD COLUMN primary_slot VARCHAR(64) GENERATED ALWAYS AS (CASE WHEN is_primary THEN CONCAT(dish_id, '-', locale) ELSE NULL END) VIRTUAL");
-            DB::statement('CREATE UNIQUE INDEX dish_names_one_primary ON dish_names (primary_slot)');
-            DB::statement('CREATE FULLTEXT INDEX dish_names_name_ft ON dish_names (name) WITH PARSER ngram');
-        }
+        // MySQL không có partial unique index nên dùng cột generated: chỉ dòng
+        // primary mới có giá trị, NULL không bị ràng buộc duy nhất — hiệu lực
+        // tương đương partial index.
+        DB::statement("ALTER TABLE dish_names ADD COLUMN primary_slot VARCHAR(64) GENERATED ALWAYS AS (CASE WHEN is_primary THEN CONCAT(dish_id, '-', locale) ELSE NULL END) VIRTUAL");
+        DB::statement('CREATE UNIQUE INDEX dish_names_one_primary ON dish_names (primary_slot)');
+        DB::statement('CREATE FULLTEXT INDEX dish_names_name_ft ON dish_names (name) WITH PARSER ngram');
 
         Schema::create('dish_meal_slots', function (Blueprint $table) {
             $table->id();
@@ -145,11 +127,7 @@ return new class extends Migration
         // R2 — luôn là khoảng hợp lệ (QT-5).
         DB::statement('ALTER TABLE dish_nutrition ADD CONSTRAINT dish_nutrition_r2_range CHECK (kcal_min <= kcal_max)');
         // R3 — thiếu nguyên liệu thì không được nhận confidence 'high' (QT-5).
-        if (DB::connection()->getDriverName() === 'pgsql') {
-            DB::statement("ALTER TABLE dish_nutrition ADD CONSTRAINT dish_nutrition_r3_missing CHECK (missing_ingredients = '[]'::jsonb OR confidence <> 'high')");
-        } else {
-            DB::statement("ALTER TABLE dish_nutrition ADD CONSTRAINT dish_nutrition_r3_missing CHECK (missing_ingredients = CAST('[]' AS JSON) OR confidence <> 'high')");
-        }
+        DB::statement("ALTER TABLE dish_nutrition ADD CONSTRAINT dish_nutrition_r3_missing CHECK (missing_ingredients = CAST('[]' AS JSON) OR confidence <> 'high')");
 
         Schema::create('dish_recipe_sources', function (Blueprint $table) {
             $table->id();

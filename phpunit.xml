@@ -23,8 +23,8 @@
         <env name="BCRYPT_ROUNDS" value="4"/>
         <env name="BROADCAST_CONNECTION" value="null"/>
         <env name="CACHE_STORE" value="array"/>
-        <!-- Test chạy trên PostgreSQL thật: các ràng buộc R1–R10 (CHECK, trigger,
-             pg_trgm) phải được kiểm ở tầng database, sqlite không tái hiện được (TEST-001). -->
+        <!-- Test chạy trên MySQL thật: các ràng buộc R1–R10 (CHECK, trigger)
+             phải được kiểm ở tầng database, sqlite không tái hiện được (TEST-001). -->
         <env name="DB_CONNECTION" value="mysql"/>
         <env name="DB_DATABASE" value="shake_hungry_test"/>
         <env name="DB_URL" value=""/>

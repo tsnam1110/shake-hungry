@@ -377,13 +377,13 @@ Người biên soạn làm việc trên Filament, không phải trên file JSON.
       sửa trong Filament (nhanh, tiện)
                   │
                   ▼
-            PostgreSQL
+            MySQL
                   │  php artisan lacdoi:export-data
                   ▼
           data/**/*.json           ← commit vào git
                   │  php artisan migrate:fresh --seed
                   ▼
-            PostgreSQL             ← trên máy khác, dựng lại y hệt
+            MySQL                  ← trên máy khác, dựng lại y hệt
 ```
 
 **Quy tắc bắt buộc:** kết thúc mỗi phiên biên soạn phải chạy `lacdoi:export-data` rồi commit. Dữ liệu

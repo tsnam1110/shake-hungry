@@ -130,10 +130,10 @@ Vì TDEE là **khoảng** ([CALORIE-ENGINE §8](../06-nutrition/CALORIE-ENGINE.m
 khoảng và **không hiển thị phép tính này như một chỉ dẫn dinh dưỡng chính xác**. Nó chỉ để xếp hạng
 nội bộ.
 
-### `đa_dạng` và pgvector
+### `đa_dạng` và embedding
 
-`dishes.embedding` sinh từ: tên món + nguyên liệu chính + cách chế biến + vùng miền. Đây là lý do dự
-án chọn PostgreSQL ([ARCHITECTURE §4](../02-architecture/ARCHITECTURE.md)).
+`dishes.embedding` sinh từ: tên món + nguyên liệu chính + cách chế biến + vùng miền
+(xem [REC-002](../05-tasks/tasks/REC-002.md)).
 
 Nếu chưa có embedding (giai đoạn đầu), thay bằng heuristic: khác `cooking_method` và khác nguyên liệu
 chính so với bữa trước. Engine phải chạy được **không cần** embedding — đừng để GĐ4 bị chặn bởi việc

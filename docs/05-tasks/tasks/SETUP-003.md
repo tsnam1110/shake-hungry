@@ -3,7 +3,7 @@
 **Mã task:** SETUP-003
 **Giai đoạn:** GĐ1
 **Loại:** Backend
-**Status:** ✅ DONE (2026-08-31) — cột `embedding` chờ pgvector, xem Ghi chú
+**Status:** ✅ DONE (2026-08-31) — cột `embedding` hoãn tới GĐ4, xem Ghi chú
 **Ngày tạo:** 2026-08-31
 **Phụ thuộc:** SETUP-001
 
@@ -29,9 +29,9 @@ Migration theo thứ tự phụ thuộc:
 6. `ingredient_tcm_traits`, `dish_tcm_summary` (tạo sẵn bảng, dùng ở GĐ6)
 
 Index bắt buộc:
-- `gin (name_vi gin_trgm_ops)` trên `ingredients`
-- `gin (name gin_trgm_ops)` trên `dish_names`
-- `ivfflat (embedding)` trên `dishes` — bỏ qua nếu `pgvector` chưa cài, ghi lại vào Ghi chú
+- FULLTEXT ngram trên `ingredients.name_vi`
+- FULLTEXT ngram trên `dish_names.name`
+- chỉ mục `embedding` trên `dishes` — hoãn tới GĐ4 cùng cột `embedding`, ghi lại vào Ghi chú
 
 Ràng buộc R1–R9 viết bằng `CHECK` hoặc trigger. **Không** chỉ kiểm ở tầng ứng dụng — mục đích của
 chúng là chặn cả khi code có lỗi.
@@ -54,9 +54,9 @@ chúng là chặn cả khi code có lỗi.
 
 - **R1 (`dish_nutrition.source <> 'llm_suggested'`) là chốt chặn kỹ thuật cho QT-1.** Đừng bỏ qua vì
   "đằng nào code cũng không ghi vào đó" — chính là để phòng khi code sai.
-- Cột `embedding vector(768)` sẽ lỗi nếu chưa cài `pgvector`. Có thể tạm bỏ cột này và thêm ở GĐ4,
-  nhưng phải ghi vào Ghi chú, không được quên.
-- **Không dùng kiểu `ENUM` của PostgreSQL** — thêm giá trị mới cần migration phiền phức. Dùng
+- Cột `embedding` chưa tạo ở giai đoạn này. Thêm ở GĐ4 (REC-002), nhưng phải ghi
+  vào Ghi chú, không được quên.
+- **Không dùng kiểu `ENUM`** — thêm giá trị mới cần migration phiền phức. Dùng
   `varchar` + `CHECK`.
 
 ---
@@ -65,13 +65,12 @@ chúng là chặn cả khi code có lỗi.
 
 **Hoàn thành 2026-08-31.**
 
-- **Cột `embedding vector(768)` chưa tạo** vì pgvector chưa cài (xem [SETUP-001](./SETUP-001.md)
-  Ghi chú). Migration `create_dishes_tables` tự thêm cột khi extension `vector` tồn tại —
-  khi cài pgvector ở GĐ4 chỉ cần `migrate:fresh --seed`.
+- **Cột `embedding` chưa tạo** — hoãn có ý thức tới GĐ4 (xem [SETUP-001](./SETUP-001.md)
+  Ghi chú và REC-002).
 - **R6/R8 là ràng buộc xuyên dòng** nên không viết được bằng `CHECK` — hiện thực bằng
-  `CONSTRAINT TRIGGER DEFERRABLE INITIALLY DEFERRED` (kiểm lúc COMMIT, để seeder chèn món
-  trước rồi chèn nguyên liệu/nguồn sau trong cùng transaction). Test ép kiểm bằng
-  `SET CONSTRAINTS ALL IMMEDIATE`.
+  trigger trên MySQL: AFTER UPDATE trên `dishes`, AFTER DELETE/UPDATE trên hai bảng
+  con (MySQL không có deferred trigger — xem migration 100008). Test ép kiểm bằng
+  `forceCompletenessCheck()` trong `tests/Pest.php`.
 - **R9 hiện thực bằng khoá ngoại RESTRICT** — vừa chặn slug lỗi thời vừa chặn xoá nguyên liệu
   đang được dùng.
 - 4 chỗ lệch với DATA-MODEL bản đầu (đã đính chính ở đó): `unit_name` 32→64,

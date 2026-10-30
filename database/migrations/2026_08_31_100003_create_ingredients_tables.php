@@ -13,8 +13,7 @@ return new class extends Migration
     public function up(): void
     {
         // MySQL không nhận default dạng literal cho cột JSON — phải dùng biểu thức.
-        $jsonArrayDefault = DB::connection()->getDriverName() === 'pgsql'
-            ? '[]' : new Expression('(JSON_ARRAY())');
+        $jsonArrayDefault = new Expression('(JSON_ARRAY())');
 
         Schema::create('ingredients', function (Blueprint $table) use ($jsonArrayDefault) {
             $table->id();
@@ -64,13 +63,8 @@ return new class extends Migration
         DB::statement('ALTER TABLE ingredients ADD CONSTRAINT ingredients_edible_note_check CHECK (edible_portion_pct IS NULL OR edible_portion_note IS NOT NULL)');
         DB::statement('ALTER TABLE ingredients ADD CONSTRAINT ingredients_edible_range_check CHECK (edible_portion_pct IS NULL OR (edible_portion_pct > 0 AND edible_portion_pct <= 100))');
         // Index trigram để cảnh báo trùng tên khi nhập liệu (SETUP-003).
-        // Chỉ mục tìm kiếm theo tên: PostgreSQL dùng GIN trigram (pg_trgm);
-        // MySQL 8 (nền tảng chính từ 2026-10-30) dùng FULLTEXT ngram.
-        if (DB::connection()->getDriverName() === 'pgsql') {
-            DB::statement('CREATE INDEX ingredients_name_vi_trgm ON ingredients USING gin (name_vi gin_trgm_ops)');
-        } else {
-            DB::statement('CREATE FULLTEXT INDEX ingredients_name_vi_ft ON ingredients (name_vi) WITH PARSER ngram');
-        }
+        // Chỉ mục tìm kiếm theo tên: FULLTEXT với ngram parser.
+        DB::statement('CREATE FULLTEXT INDEX ingredients_name_vi_ft ON ingredients (name_vi) WITH PARSER ngram');
     }
 
     public function down(): void

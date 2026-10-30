@@ -37,7 +37,7 @@ Bắt đầu ở [docs/README.md](docs/README.md). Nếu bạn là AI agent ho�
 
 ## Stack
 
-Laravel 13 · MySQL 8 (từ 2026-10-30, thay PostgreSQL — xem ARCHITECTURE §4) · Filament 3+ (GĐ2) ·
+Laravel 13 · MySQL 8 · Filament 3+ (GĐ2) ·
 Livewire · Pest · Laragon trên Windows.
 
 ## Ghi công nguồn dữ liệu
