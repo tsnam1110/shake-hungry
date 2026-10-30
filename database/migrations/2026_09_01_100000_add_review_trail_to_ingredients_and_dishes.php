@@ -38,7 +38,7 @@ return new class extends Migration
             });
 
             // Mặc định của `needs_review` vốn là FALSE — nghĩa là mọi bản ghi tạo
-            // bằng đường khác seeder (Filament ở GĐ2, form đóng góp CTR-001, script
+            // bằng đường khác seeder (trang quản trị ở GĐ2, form đóng góp CTR-001, script
             // nhập liệu) mặc nhiên coi như "đã duyệt". Đúng ngược với QT-1. Đảo lại
             // thành TRUE: chưa duyệt là trạng thái mặc định, muốn ra khỏi nó thì
             // phải khai báo tường minh và để lại dấu vết.

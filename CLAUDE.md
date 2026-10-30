@@ -34,7 +34,7 @@ quy tắc ở đây, phải nói ra chỗ mâu thuẫn trước khi làm, không
 >    toàn bộ kho nguyên liệu, kể cả 150 file của ING-001/ING-002 đã rà soát tay. Lý do không phải
 >    ai lười: **schema không có chỗ nào ghi ai đã duyệt**, nên hạ cờ đồng nghĩa với xoá thông tin.
 >    Tệ hơn, `needs_review` mặc định là **`false`** ở cả hai bảng — ngược hẳn QT-1, và lỗ hổng sẽ
->    mở đúng lúc GĐ2 cho Filament ghi thẳng vào database. Đã sửa: [ING-004](docs/05-tasks/tasks/ING-004.md).
+>    mở đúng lúc GĐ2 cho trang quản trị ghi thẳng vào database. Đã sửa: [ING-004](docs/05-tasks/tasks/ING-004.md).
 > 2. Engine 1.0.0 trả **khoảng rộng bằng 0** cho món ánh xạ `high` — tức một con số điểm đội lốt
 >    khoảng, đúng thứ **QT-5 cấm**, nằm sẵn trong engine từ CALC-001. Phép đo lần 1 đã in bằng chứng
 >    ngay trên bảng chỉ số (*"% tham chiếu nằm trong khoảng: **1,0%**"*) nhưng không ai đọc, vì dòng
@@ -54,6 +54,14 @@ quy tắc ở đây, phải nói ra chỗ mâu thuẫn trước khi làm, không
 > MySQL 8.0: seed đủ **255/61/7.793**, validate **0 lỗi 🔴**, **40/40 test đạt**.
 > Chi tiết: [SETUP-004](docs/05-tasks/tasks/SETUP-004.md).
 
+> ## ⚠️ Đính chính lần 5, 2026-10-30 — trang quản trị dùng Ant Design (antd)
+>
+> Theo quyết định của **chủ dự án**, trang quản trị (GĐ2) dùng **Ant Design (antd)**
+> với React — giao diện tại `/admin`, Laravel làm backend (API nội bộ + xác thực
+> đăng nhập). Toàn bộ tài liệu đã thay theo quyết định này trong cùng commit;
+> task nền là [ADM-001](docs/05-tasks/tasks/ADM-001.md) (đã viết lại), thiết kế
+> tổng thể ở [ARCHITECTURE §5.6](docs/02-architecture/ARCHITECTURE.md).
+
 **Trạng thái thực tế, kiểm ngày 2026-09-01 (đã chạy lại toàn bộ lệnh kiểm chứng):**
 
 | Hạng mục | Thực tế | Kiểm bằng |
@@ -66,14 +74,14 @@ quy tắc ở đây, phải nói ra chỗ mâu thuẫn trước khi làm, không
 | **Kiểm chứng engine** | 🔵 lần 2 (2026-09-01, engine **1.1.0**): **89,7% trong ±20%** (không đổi), MAPE 3,9%, và **% tham chiếu nằm trong khoảng 1,0% → 80,4%**. Vẫn chặn: **nhóm chiên chưa đo được** (0/255 có hệ số dầu) và **nhóm hấp lệch −21%** (Cooking Yields R2 **0 dòng thuỷ sản**) | [nhật ký đo](docs/06-nutrition/ACCURACY-SPEC.md) |
 | **Code** | ✅ **Laravel 13.29 + MySQL 8.0** — 14 migration (đủ R1–**R10**), 19 model, 7 seeder, engine calo **1.1.0**, 6 lệnh `lacdoi:*`, **40 test Pest xanh** | `php artisan migrate:fresh --seed; vendor\bin\pest --no-coverage` |
 | **CI** | ⚠️ `.github/workflows/tests.yml` viết xong và hợp lệ, nhưng đó là cú pháp **GitHub Actions** trong khi repo nằm ở **GitLab** — GitLab bỏ qua hoàn toàn, nên CI **vẫn chưa chạy lần nào**. Cần `.gitlab-ci.yml` hoặc mirror sang GitHub (Q9) | `ls .gitlab-ci.yml` (không có) |
-| Chưa có | cột embedding (GĐ4), Filament (GĐ2), Foundation Foods, UI-001, rà soát độc lập ING-003 | [ROADMAP](docs/05-tasks/ROADMAP.md) |
+| Chưa có | cột embedding (GĐ4), trang quản trị antd (GĐ2), Foundation Foods, UI-001, rà soát độc lập ING-003 | [ROADMAP](docs/05-tasks/ROADMAP.md) |
 | Sao lưu | ✅ `origin` = `git@gitlab.com:Tran-Son-Nam/shake-hungry.git`, branch `dev` (8 commit, 513 file) — đẩy lần đầu 2026-09-01 | `git status -sb` |
 
 > Việc tiếp theo theo thứ tự ưu tiên: ~~(0) đẩy repo lên remote~~ ✅ **xong 2026-09-01**;
 > **(1) hệ số hấp thụ dầu có nguồn** (chặn TEST-002, làm mọi món chiên VN hiển thị
 > "chưa đủ dữ liệu"); **(2) hệ số hao hụt cho thuỷ sản từ nguồn ĐỘC LẬP với USDA** (Q7 — nhóm hấp
 > lệch −21%); **(3) duyệt 255 nguyên liệu** (người — nay đã có chỗ ghi kết quả); **(4) cân 16 hệ số
-> phần ăn được** (ưu tiên sườn lợn); rồi mở GĐ2 (ADM-001 Filament).
+> phần ăn được** (ưu tiên sườn lợn); rồi mở GĐ2 (ADM-001 trang quản trị antd).
 > Việc chờ chủ dự án: **LEGAL-002**, **Q1**, **Q6**, **Q7**, **Q9** (CI đang sai nền — xem bảng trên).
 
 > ⚠️ **Repo đã nằm trên GitLab nhưng [LEGAL-002](docs/05-tasks/tasks/LEGAL-002.md) vẫn ⬜ TODO** —
@@ -233,7 +241,7 @@ lặng lẽ** — chèn khối `> ⚠️ **Đính chính YYYY-MM-DD**` giải th
 |---|---|---|
 | Backend | **Laravel 12+ (PHP 8.3+)** | Hợp môi trường Laragon sẵn có |
 | Database | **MySQL 8.0+** | Khớp mờ tên: trigram ở tầng PHP + FULLTEXT ngram; tìm không dấu/sắp xếp tiếng Việt: collation `utf8mb4_vi_0900_ai_ci`; vector: hoãn tới GĐ4, tính lại khi đó |
-| Admin / nhập liệu | **Filament 3+** | Đây là công cụ sản xuất dữ liệu chính, không phải phần phụ |
+| Admin / nhập liệu | **Ant Design (antd) + React** | Đây là công cụ sản xuất dữ liệu chính, không phải phần phụ. Quyết định của chủ dự án 2026-10-30 — xem ADM-001 |
 | Frontend người dùng | Blade + Livewire (v1) | Giữ đơn giản; tách SPA chỉ khi thực sự cần |
 | Trợ lý nhập liệu | Claude API | Chỉ đóng vai trò ở QT-1 |
 

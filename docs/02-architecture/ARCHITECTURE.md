@@ -27,7 +27,7 @@
 | Framework | Laravel 12+ | |
 | Database | **MySQL 8.0+** | Xem §4 |
 | Tìm kiếm tên | FULLTEXT ngram + độ giống trigram ở tầng PHP | |
-| Admin / nhập liệu | Filament 3+ | Công cụ sản xuất dữ liệu chính |
+| Admin / nhập liệu | Ant Design (antd) + React | Công cụ sản xuất dữ liệu chính — quyết định 2026-10-30, xem §5.6 |
 | Giao diện người dùng | Blade + Livewire 3 | |
 | Trợ lý nhập liệu | Claude API | Vai trò giới hạn theo QT-1 |
 | Test | Pest | |
@@ -106,7 +106,7 @@ migration `100008` và [SETUP-004](../05-tasks/tasks/SETUP-004.md).
          │                  │                  │
          ▼                  ▼                  ▼
 ┌─────────────────┐ ┌───────────────┐ ┌──────────────────────┐
-│ Engine tính calo│ │ Engine gợi ý  │ │ Filament — nhập liệu │
+│ Engine tính calo│ │ Engine gợi ý  │ │ Antd — nhập liệu     │
 │ (hàm thuần tuý) │ │ (luật+vector) │ │ + trợ lý LLM         │
 └─────────────────┘ └───────┬───────┘ └──────────────────────┘
                             ▼
@@ -159,10 +159,18 @@ vừa ăn) → **chấm điểm** (phù hợp bữa, phù hợp TDEE còn lại,
 có trọng số trong nhóm điểm cao. Chi tiết:
 [RECOMMENDATION-ENGINE](../07-recommendation/RECOMMENDATION-ENGINE.md).
 
-### 5.6 Công cụ nhập liệu (Filament)
+### 5.6 Công cụ nhập liệu (trang quản trị antd)
 
 **Đây là sản phẩm được ưu tiên cao nhất ở GĐ2.** Tiêu chí nghiệm thu duy nhất: nhập trọn một món ở
 Mức 2 trong **≤5 phút**. Thiết kế: [DATA-PIPELINE §4](../04-data-sources/DATA-PIPELINE.md).
+
+Công nghệ (quyết định của chủ dự án, 2026-10-30): giao diện quản trị viết bằng
+**React + Ant Design (antd)**, chạy tại `/admin`, build bằng Vite trong cùng repo;
+Laravel làm backend — API nội bộ cho trang quản trị và xác thực đăng nhập theo
+phiên. Lý do chọn antd: bộ component quản trị (Table, Form, Modal, Upload) đầy đủ
+và đồng nhất, giao diện sáng sủa, thao tác phía client nên mượt — đúng hai điểm
+một công cụ nhập liệu dùng hằng ngày cần. Phân quyền hai vai trò `admin`/`editor`
+kiểm ở backend, không dựa vào giao diện.
 
 ---
 
@@ -213,5 +221,5 @@ Dữ liệu v1 chỉ có món Việt, nhưng **schema phải đa quốc gia ngay
 | Tách API + SPA | Thêm một tầng phải bảo trì; v1 không có client thứ hai |
 | Redis / hàng đợi | Chưa có việc gì đủ nặng để chạy nền, trừ nhập USDA (chạy bằng artisan command) |
 | Elasticsearch | FULLTEXT ngram + trigram ở tầng PHP đủ cho quy mô vài nghìn món |
-| Đa người dùng biên soạn với phân quyền chi tiết | v1 chỉ có 1–2 người biên soạn. Filament role cơ bản là đủ |
+| Đa người dùng biên soạn với phân quyền chi tiết | v1 chỉ có 1–2 người biên soạn. Phân quyền hai vai trò ở backend là đủ |
 | Microservice | Không có lý do gì |

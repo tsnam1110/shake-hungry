@@ -412,7 +412,7 @@ thì được ghi sang `dishes`/`ingredients` với `source='curated'`, không p
 > ## ⚠️ Đính chính 2026-09-01 — `needs_review` từng mặc định SAI CHIỀU
 >
 > Migration đầu đặt `needs_review` mặc định **`false`** cho cả `ingredients` lẫn `dishes`. Nghĩa là
-> mọi bản ghi tạo bằng đường không phải seeder — Filament ở GĐ2, form đóng góp [CTR-001](../05-tasks/tasks/CTR-001.md),
+> mọi bản ghi tạo bằng đường không phải seeder — trang quản trị antd ở GĐ2, form đóng góp [CTR-001](../05-tasks/tasks/CTR-001.md),
 > script nhập liệu — mặc nhiên được coi là **đã duyệt**. Đúng ngược với QT-1.
 >
 > Không ai phát hiện sớm vì `IngredientSeeder` truyền `?? true` tường minh, nên toàn bộ dữ liệu đi

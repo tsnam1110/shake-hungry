@@ -201,7 +201,7 @@ lan ra hàng trăm món trước khi ai đó nhận ra.
 xây hệ thống wiki đầy đủ:
 
 - Một form gửi đề xuất → ghi vào bảng `contributions` với `status='pending'`.
-- Admin duyệt trong Filament: xem, sửa, chấp nhận hoặc từ chối kèm lý do.
+- Admin duyệt trong trang quản trị antd: xem, sửa, chấp nhận hoặc từ chối kèm lý do.
 - Khi chấp nhận → ghi sang `dishes`/`ingredients` với `source='curated'` (không phải `community`) —
   vì đã qua tay người biên soạn thì nó chịu cùng chuẩn chất lượng.
 - **Không** có auto-approve, **không** có cấp bậc uy tín, **không** có lịch sử phiên bản kiểu wiki ở

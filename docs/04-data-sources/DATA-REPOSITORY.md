@@ -9,7 +9,7 @@
 
 > **File trong `data/` là nguồn sự thật. Database chỉ là bản dựng lại từ file.**
 
-Không phải ngược lại. Đây là quy tắc dễ vi phạm nhất trong thực tế, vì sửa thẳng vào Filament nhanh
+Không phải ngược lại. Đây là quy tắc dễ vi phạm nhất trong thực tế, vì sửa thẳng trong trang quản trị nhanh
 hơn sửa file. Nhưng vi phạm nó là mất dữ liệu.
 
 **Tiêu chí nghiệm thu, kiểm được bằng máy:**
@@ -371,10 +371,10 @@ Như vậy repo vẫn tự đủ (clone về là chạy được), mà không ph
 
 ## 6. Luồng đồng bộ hai chiều
 
-Người biên soạn làm việc trên Filament, không phải trên file JSON. Nên cần đường quay về:
+Người biên soạn làm việc trên trang quản trị antd, không phải trên file JSON. Nên cần đường quay về:
 
 ```
-      sửa trong Filament (nhanh, tiện)
+      sửa trong trang quản trị (nhanh, tiện)
                   │
                   ▼
             MySQL

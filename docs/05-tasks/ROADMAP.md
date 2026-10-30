@@ -33,7 +33,7 @@ GĐ1 còn: hệ số dầu (chặn TEST-002), hệ số hao hụt thuỷ sản, 
 |---|---|---|---|---|
 | **0** | Thủ tục & khởi tạo | Gửi đề nghị cấp phép, chốt các quyết định nền, dựng repo | Repo chạy được, các quyết định đã chốt | 🔵 IN PROGRESS — repo chạy được (Laravel 13 + MySQL 8, `migrate:fresh --seed` xanh); còn [LEGAL-002](./tasks/LEGAL-002.md) và Q1 chờ chủ dự án |
 | **1** | Xương sống dữ liệu | Schema + bảng tham chiếu + **250 nguyên liệu** + engine calo | Engine calo qua kiểm chứng FNDDS/Nutrition5k | 🔵 IN PROGRESS — schema, engine, **255/250 nguyên liệu**, SR Legacy, CY R2, FNDDS, Wikidata, DATA-008 xong; **kiểm chứng lần 1 đạt 89,7%**. Cổng chặn chưa mở: nhóm chiên chưa đo được |
-| **2** | Trình nhập liệu | Công cụ nhập món trong Filament + trợ lý LLM | **≤5 phút/món** — cổng chặn cứng | ⬜ TODO |
+| **2** | Trình nhập liệu | Công cụ nhập món (trang quản trị antd) + trợ lý LLM | **≤5 phút/món** — cổng chặn cứng | ⬜ TODO |
 | **3** | Sản xuất dữ liệu | 150 món (dùng được) → 500 món (đủ dùng) | ≥500 món Mức 1; đo độ chính xác đạt ≥80% | ⬜ TODO |
 | **4** | Engine gợi ý | Nút Lắc bản chính thức, 3 tầng, có embedding | Độ phủ kho món ≥60% trong 30 ngày | ⬜ TODO |
 | **5** | Người dùng | Hồ sơ, TDEE, lịch sử bữa ăn | Gợi ý có tính tới bữa trước và TDEE | ⬜ TODO |
@@ -148,7 +148,7 @@ kiểm chứng TEST-002**; `migrate:fresh --seed` dựng lại đúng toàn bộ
 
 | ID | Task | Loại | Status | Phụ thuộc | Ngày xong |
 |---|---|---|---|---|---|
-| [ADM-001](./tasks/ADM-001.md) | Cài Filament + đăng nhập + phân quyền cơ bản | Backend | ⬜ | SETUP-003 | — |
+| [ADM-001](./tasks/ADM-001.md) | Dựng trang quản trị antd + đăng nhập + phân quyền cơ bản | Backend | ⬜ | SETUP-003 | — |
 | [ADM-002](./tasks/ADM-002.md) | Màn hình quản lý nguyên liệu + quy đổi đơn vị | Backend | ⬜ | ADM-001 | — |
 | [ADM-003](./tasks/ADM-003.md) | Màn hình nhập món Mức 1 | Backend | ⬜ | ADM-001 | — |
 | [ADM-004](./tasks/ADM-004.md) | Màn hình nhập nguyên liệu: bàn phím + calo cập nhật trực tiếp | Backend | ⬜ | ADM-003, CALC-002 | — |
@@ -208,7 +208,7 @@ kiểm chứng TEST-002**; `migrate:fresh --seed` dựng lại đúng toàn bộ
 
 | ID | Task | Loại | Status | Phụ thuộc | Ngày xong |
 |---|---|---|---|---|---|
-| [CTR-001](./tasks/CTR-001.md) | Form đóng góp + hàng đợi duyệt trong Filament | Backend | ⬜ | ADM-001 | — |
+| [CTR-001](./tasks/CTR-001.md) | Form đóng góp + hàng đợi duyệt trong trang quản trị | Backend | ⬜ | ADM-001 | — |
 | [TCM-001](./tasks/TCM-001.md) | Bảng `ingredient_tcm_traits` + gieo mầm từ dược thực đồng nguyên | Dữ liệu | ⬜ | ING-003 | — |
 | [TCM-002](./tasks/TCM-002.md) | Tổng hợp tính vị từ nguyên liệu lên món | Backend | ⬜ | TCM-001 | — |
 | [TCM-003](./tasks/TCM-003.md) | Hiển thị lớp tính vị (mặc định tắt, khung văn hoá) | Frontend | ⬜ | TCM-002 | — |

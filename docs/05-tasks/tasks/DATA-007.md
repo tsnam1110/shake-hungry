@@ -3,7 +3,7 @@
 **Mã task:** DATA-007
 **Giai đoạn:** GĐ1
 **Loại:** Backend
-**Status:** ✅ DONE (2026-08-31) — tiêu chí Filament chờ GĐ2, xem Ghi chú
+**Status:** ✅ DONE (2026-08-31) — tiêu chí trang quản trị chờ GĐ2, xem Ghi chú
 **Ngày tạo:** 2026-08-31
 **Phụ thuộc:** SETUP-003
 
@@ -12,14 +12,14 @@
 ## Mục tiêu
 
 Xuất dữ liệu từ database ngược ra file JSON trong `data/`, để hiện thực vòng đồng bộ hai chiều của
-QT-3. Người biên soạn làm việc trên Filament; lệnh này đưa kết quả về dạng file có version.
+QT-3. Người biên soạn làm việc trên trang quản trị antd; lệnh này đưa kết quả về dạng file có version.
 
 ---
 
 ## Bối cảnh
 
 ```
-Filament → MySQL → [lacdoi:export-data] → data/**/*.json → git
+Trang quản trị antd → MySQL → [lacdoi:export-data] → data/**/*.json → git
                                                      ↓
                         máy khác: migrate:fresh --seed → MySQL
 ```
@@ -54,7 +54,7 @@ Xuất `ingredients`, `dishes` (và các bảng con) ra file theo định dạng
 - [x] `php artisan lacdoi:export-data` sinh đúng cấu trúc file (150 nguyên liệu + `_index.json`)
 - [x] **Chạy lệnh hai lần liên tiếp ⇒ hash từng file giống hệt** — kiểm 2026-08-31, có test
       Pest thường trực ở `tests/Feature/ExportStabilityTest.php`
-- [ ] Sửa một món trong Filament → export → diff một file — **chưa kiểm được, Filament ở GĐ2
+- [ ] Sửa một món trong trang quản trị antd → export → diff một file — **chưa kiểm được, trang quản trị ở GĐ2
       (ADM-001)**; tiêu chí tương đương đã kiểm: sửa DB bằng seeder → export → diff đúng phạm vi
 - [x] Vòng khép kín: `export-data` → `migrate:fresh --seed` → `export-data` ⇒ không có diff
 - [x] Tiếng Việt hiển thị đúng, không escape `\uXXXX` (`JSON_UNESCAPED_UNICODE`)
