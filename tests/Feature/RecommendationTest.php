@@ -101,3 +101,21 @@ it('bữa chính không gợi ý gia vị khẩu phần nhỏ, bữa ăn vặt t
     expect(shakeIt(['slot' => 'trua'])['dish'])->toBeNull();
     expect(shakeIt(['slot' => 'an-vat'])['dish']?->slug)->toBe('nuoc-mam-test');
 });
+
+it('chi tiết món có khối minh bạch nguồn số (UI-003) và lọc ăn ngoài hoạt động (UI-002)', function () {
+    $dish = recDish('mon-chi-tiet', ['name' => 'Món chi tiết']);
+    $resp = $this->getJson('/api/dishes/mon-chi-tiet')->assertOk();
+    expect($resp->json('provenance.fct_source'))->toBe('usda_sr_legacy')
+        ->and($resp->json('provenance.computed_at'))->not->toBeNull()
+        ->and($resp->json('dish.names.0.name'))->toBe('Món chi tiết');
+
+    $home = recDish('mon-tu-nau');
+    $home->update(['is_eat_out' => false, 'is_home_cook' => true]);
+    $out = recDish('mon-an-ngoai');
+    $out->update(['is_eat_out' => true, 'is_home_cook' => false]);
+    $r = app(Recommender::class)->shake([
+        'slot' => 'trua', 'user_id' => null, 'shake_index' => 0,
+        'allergens' => [], 'recent_dish_ids' => [$dish->id, $home->id], 'eat_out' => true,
+    ]);
+    expect($r['dish']?->id)->toBe($out->id);
+});

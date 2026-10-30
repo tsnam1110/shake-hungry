@@ -15,6 +15,7 @@ Route::get('/', function () {
 // --- API công khai cho trang người dùng (GĐ4) ---
 Route::get('/tai-khoan', fn () => view('account'))->name('login');
 Route::get('/ho-so', fn () => view('profile'))->middleware('auth');
+Route::get('/mon/{slug}', fn () => view('dish'));
 
 Route::prefix('api')->group(function () {
     Route::post('/register', [\App\Http\Controllers\PublicWeb\UserAuthController::class, 'register']);

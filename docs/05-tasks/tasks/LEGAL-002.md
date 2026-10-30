@@ -82,3 +82,22 @@ dự án tốn công biên soạn.
 ## Ghi chú
 
 *(Ghi quyết định và lý do ở đây khi chốt.)*
+
+---
+
+## Phụ lục kiểm kê nguồn dữ liệu hiện có (2026-10-30) — sẵn sàng để chốt
+
+Phần phân tích và khuyến nghị ở trên vẫn nguyên giá trị. Kiểm kê thực tế kho
+dữ liệu **hôm nay** để chủ dự án chốt nhanh:
+
+| Nguồn đang có trong DB | Giấy phép | Hệ quả |
+|---|---|---|
+| USDA SR Legacy (7.793 dòng) | Public domain (CC0) | Không ràng buộc |
+| Wikidata (61 món vỏ) | CC0 | Không ràng buộc |
+| Dữ liệu tự biên soạn (255 nguyên liệu, định lượng 57 món) | Của dự án | Toàn quyền quyết định |
+| Open Food Facts / Wikibooks | **Chưa nhập dòng nào** | Chọn (b)/(c) lúc này **không mất gì** |
+
+Tức là: chốt phương án (b) hoặc (c) cho dữ liệu + MIT hoặc AGPL-3.0 cho mã
+nguồn là quyết định không tốn chi phí ở thời điểm này, và mở đường cho việc
+công khai repo an toàn. Việc còn lại thuần tuý là **chủ dự án chọn** — trợ lý
+không tự quyết thay.

@@ -96,6 +96,12 @@ class Recommender
         if ($level < 2 && ! empty($input['region_id'])) {
             $query->where('region_id', $input['region_id']);
         }
+        if (! empty($input['eat_out'])) {
+            $query->where('is_eat_out', true);
+        }
+        if (! empty($input['home_cook'])) {
+            $query->where('is_home_cook', true);
+        }
         $dishes = $query->get();
 
         // Lọc theo thành phần (dị ứng/chay) ở tầng PHP: tập dữ liệu nhỏ, rõ ràng.

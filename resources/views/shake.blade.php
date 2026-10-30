@@ -27,6 +27,8 @@
             <div class="flex flex-wrap gap-2 justify-center" id="slots"></div>
             <div class="flex flex-wrap items-center gap-3 mt-4 justify-center text-sm">
                 <label class="flex items-center gap-1"><input type="checkbox" id="vegetarian" class="accent-orange-600"> Ăn chay</label>
+                <label class="flex items-center gap-1"><input type="checkbox" id="eat_out" class="accent-orange-600"> Ăn ngoài</label>
+                <label class="flex items-center gap-1"><input type="checkbox" id="home_cook" class="accent-orange-600"> Tự nấu</label>
                 <select id="region" class="border rounded-lg px-2 py-1.5">
                     <option value="">Mọi vùng miền</option>
                 </select>
@@ -104,11 +106,11 @@ async function loadCatalog(q = '') {
     document.getElementById('catalog').innerHTML = data.data.map(d => {
         const n = d.nutrition;
         const kcal = n ? `${Math.round(n.kcal_min)}–${Math.round(n.kcal_max)} kcal` : 'Chưa đủ dữ liệu';
-        return `<div class="bg-white rounded-xl shadow p-3">
+        return `<a href="/mon/${d.slug}" class="block bg-white rounded-xl shadow p-3 hover:shadow-md transition">
             <div class="font-semibold">${d.names?.[0]?.name ?? d.slug}</div>
             <div class="text-sm text-neutral-500">${d.region?.name ?? ''}</div>
             <div class="text-sm ${n ? 'text-orange-700 font-medium' : 'text-neutral-400'}">${kcal}</div>
-        </div>`;
+        </a>`;
     }).join('') || '<p class="text-neutral-400 col-span-2">Không thấy món nào.</p>';
 }
 loadCatalog();
@@ -130,6 +132,8 @@ document.getElementById('shake-btn').addEventListener('click', async () => {
                 shake_index: shakeIndex++,
                 recent_dish_ids: recent.slice(-10),
                 vegetarian: document.getElementById('vegetarian').checked,
+                eat_out: document.getElementById('eat_out').checked,
+                home_cook: document.getElementById('home_cook').checked,
                 region_id: document.getElementById('region').value || null,
                 target_kcal: document.getElementById('target_kcal').value || null,
                 allergens: [...allergenSlugs],
@@ -146,7 +150,7 @@ document.getElementById('shake-btn').addEventListener('click', async () => {
         const n = d.nutrition;
         box.innerHTML = `<div class="rounded-2xl border-2 border-orange-200 bg-orange-50 p-5 text-center">
             <div class="text-sm text-neutral-500">${d.region ?? ''} ${d.serving_desc ? '· ' + d.serving_desc : ''}</div>
-            <div class="text-2xl font-bold mt-1">${d.name}</div>
+            <div class="text-2xl font-bold mt-1"><a class="hover:underline" href="/mon/${d.slug}">${d.name}</a></div>
             ${n ? `<div class="mt-2 text-lg">🔥 ${Math.round(n.kcal_min)}–${Math.round(n.kcal_max)} kcal <span class="text-sm text-neutral-500">(${confLabel[n.confidence] ?? n.confidence})</span></div>
             <div class="text-sm text-neutral-600">Đạm ${n.protein_g ?? '?'}g · Béo ${n.fat_g ?? '?'}g · Bột đường ${n.carb_g ?? '?'}g</div>`
             : '<div class="mt-2 text-neutral-400">Chưa đủ dữ liệu dinh dưỡng</div>'}

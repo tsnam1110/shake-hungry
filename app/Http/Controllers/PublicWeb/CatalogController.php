@@ -40,10 +40,31 @@ class CatalogController extends Controller
 
     public function show(Dish $dish): JsonResponse
     {
-        return response()->json($dish->load([
+        $dish->load([
             'names', 'region', 'mealSlots', 'nutrition',
             'dishIngredients.ingredient:id,name_vi,slug',
-        ]));
+            'parent.names' => fn ($q) => $q->where('is_primary', true),
+        ]);
+        $variants = Dish::where('parent_dish_id', $dish->id)
+            ->with(['names' => fn ($q) => $q->where('is_primary', true)])
+            ->get()
+            ->map(fn (Dish $v) => ['slug' => $v->slug, 'name' => $v->names->first()?->name]);
+
+        return response()->json([
+            'dish' => $dish,
+            'variants' => $variants,
+            // UI-003: khối minh bạch "Con số này từ đâu ra"
+            'provenance' => $dish->nutrition === null ? null : [
+                'fct_source' => $dish->nutrition->fct_source,
+                'engine_version' => $dish->nutrition->engine_version,
+                'computed_at' => $dish->nutrition->computed_at,
+                'missing_ingredients' => $dish->nutrition->missing_ingredients,
+                'contributing_ingredients' => $dish->dishIngredients
+                    ->reject(fn ($di) => in_array($di->ingredient->slug, $dish->nutrition->missing_ingredients ?? [], true))
+                    ->map(fn ($di) => $di->ingredient->name_vi)
+                    ->values(),
+            ],
+        ]);
     }
 
     public function shake(Request $request, Recommender $recommender): JsonResponse
@@ -53,6 +74,8 @@ class CatalogController extends Controller
             'target_kcal' => ['nullable', 'numeric', 'min:50', 'max:3000'],
             'region_id' => ['nullable', 'integer', 'exists:regions,id'],
             'vegetarian' => ['nullable', 'boolean'],
+            'eat_out' => ['nullable', 'boolean'],
+            'home_cook' => ['nullable', 'boolean'],
             'allergens' => ['nullable', 'array'],
             'allergens.*' => ['string', 'max:64'],
             'recent_dish_ids' => ['nullable', 'array'],

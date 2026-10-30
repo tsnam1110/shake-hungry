@@ -186,8 +186,8 @@ kiểm chứng TEST-002**; `migrate:fresh --seed` dựng lại đúng toàn bộ
 |---|---|---|---|---|---|
 | [REC-001](./tasks/REC-001.md) | Engine gợi ý 3 tầng | Backend | ✅ | DISH-002 | 2026-10-30 |
 | [REC-002](./tasks/REC-002.md) | Sinh embedding + tìm món tương tự bằng embedding vector | Backend | ⬜ | REC-001 | — |
-| [UI-002](./tasks/UI-002.md) | Nút Lắc bản chính thức | Frontend | ⬜ | REC-001 | — |
-| [UI-003](./tasks/UI-003.md) | Trang chi tiết món (công thức, dinh dưỡng, độ tin cậy) | Frontend | ⬜ | UI-002 | — |
+| [UI-002](./tasks/UI-002.md) | Nút Lắc bản chính thức | Frontend | ✅ | REC-001 | — |
+| [UI-003](./tasks/UI-003.md) | Trang chi tiết món (công thức, dinh dưỡng, độ tin cậy) | Frontend | ✅ | UI-002 | — |
 
 **DoD GĐ4:** bấm Lắc ra món hợp bữa, không lặp món vừa ăn, hiển thị dinh dưỡng đúng quy tắc QT-5.
 
