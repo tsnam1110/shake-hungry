@@ -2,7 +2,7 @@
   "slug": "banh-beo",
   "parent_dish_slug": null,
   "country_code": "VN",
-  "region_code": null,
+  "region_code": "vn-hue",
   "names": [
     {
       "locale": "vi",
@@ -10,15 +10,85 @@
       "is_primary": true
     }
   ],
-  "is_eat_out": false,
-  "is_home_cook": false,
-  "cooking_method": null,
+  "is_eat_out": true,
+  "is_home_cook": true,
+  "cooking_method": "hap",
   "completeness_level": 1,
-  "meal_slots": [],
-  "serving_desc": null,
-  "serving_grams": null,
-  "ingredients": [],
-  "recipe_steps": null,
+  "meal_slots": [
+    {
+      "slot": "an-vat",
+      "weight": 8
+    },
+    {
+      "slot": "chieu",
+      "weight": 8
+    }
+  ],
+  "serving_desc": "1 đĩa 10 chén nhỏ",
+  "serving_grams": 180,
+  "ingredients": [
+    {
+      "ingredient_slug": "bot-gao",
+      "quantity": 55,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "bot-nang",
+      "quantity": 10,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "tom-kho",
+      "quantity": 8,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "mo-lon-nuoc",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-la",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nuoc-mam-truyen-thong",
+      "quantity": 8,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "duong-trang",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    }
+  ],
+  "recipe_steps": [
+    "Pha bột gạo + bột năng, đổ chén hấp.",
+    "Rắc tôm chấy, mỡ hành.",
+    "Chan nước mắm pha loãng."
+  ],
   "recipe_sources": [],
   "media": [],
   "estimated_kcal": null,
@@ -27,7 +97,7 @@
     "source": "wikidata",
     "queried_at": "2026-08-31"
   },
-  "import_note": "Nhập tự động từ Wikidata Q5004794 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Gợi ý nguyên liệu từ Wikidata (tiếng Anh, CHƯA ánh xạ sang data/ingredients/): rice flour, tapioca flour. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/Rice%20flour%20cake%20with%20shrimp%20-%20Vietnam%20Kitchen%2C%20Louisville%2C%20KY%20%282011-05-28%20by%20Navin75%29.jpg",
+  "import_note": "Nhập tự động từ Wikidata Q5004794 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Gợi ý nguyên liệu từ Wikidata (tiếng Anh, CHƯA ánh xạ sang data/ingredients/): rice flour, tapioca flour. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/Rice%20flour%20cake%20with%20shrimp%20-%20Vietnam%20Kitchen%2C%20Louisville%2C%20KY%20%282011-05-28%20by%20Navin75%29.jpg Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

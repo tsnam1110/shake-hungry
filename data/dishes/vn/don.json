@@ -27,7 +27,7 @@
     "source": "wikidata",
     "queried_at": "2026-08-31"
   },
-  "import_note": "Nhập tự động từ Wikidata Q86006763 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/Don-mon-an.jpg",
+  "import_note": "Nhập tự động từ Wikidata Q86006763 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/Don-mon-an.jpg Chưa soạn định lượng: nguyên liệu cốt lõi là con don (hến biển nhỏ) — chưa có trong bộ 255; nghêu gần nhất nhưng khác loài, không thay thế để tránh sai dữ liệu. Cần bổ sung nguyên liệu.",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

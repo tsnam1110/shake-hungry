@@ -165,7 +165,7 @@ kiểm chứng TEST-002**; `migrate:fresh --seed` dựng lại đúng toàn bộ
 
 | ID | Task | Loại | Status | Phụ thuộc | Ngày xong |
 |---|---|---|---|---|---|
-| [DISH-001](./tasks/DISH-001.md) | 50 món đầu tiên | Dữ liệu | ⬜ | ADM-007 | — |
+| [DISH-001](./tasks/DISH-001.md) | 50 món đầu tiên | Dữ liệu | 🔶 | ADM-007 | — |
 | [DISH-002](./tasks/DISH-002.md) | Lên 150 món — **mốc app dùng được** | Dữ liệu | ⬜ | DISH-001 | — |
 | [DISH-003](./tasks/DISH-003.md) | Lên 300 món | Dữ liệu | ⬜ | DISH-002 | — |
 | [DISH-004](./tasks/DISH-004.md) | Lên 500 món — **mốc đủ dùng** | Dữ liệu | ⬜ | DISH-003 | — |

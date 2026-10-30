@@ -27,7 +27,7 @@
     "source": "wikidata",
     "queried_at": "2026-08-31"
   },
-  "import_note": "Nhập tự động từ Wikidata Q16480444 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Gợi ý nguyên liệu từ Wikidata (tiếng Anh, CHƯA ánh xạ sang data/ingredients/): Giant snakehead, toasted rice powder. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/M%E1%BA%AFm%20th%C3%A1i.jpg",
+  "import_note": "Nhập tự động từ Wikidata Q16480444 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Gợi ý nguyên liệu từ Wikidata (tiếng Anh, CHƯA ánh xạ sang data/ingredients/): Giant snakehead, toasted rice powder. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/M%E1%BA%AFm%20th%C3%A1i.jpg Chưa soạn định lượng: mắm ruột cá cần dữ liệu lên men ruột cá riêng, bộ nguyên liệu hiện không có thành phần tương đương đủ tin cậy. Cần biên soạn thủ công bởi người có kinh nghiệm.",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

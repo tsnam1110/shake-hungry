@@ -2,7 +2,7 @@
   "slug": "banh-giay",
   "parent_dish_slug": null,
   "country_code": "VN",
-  "region_code": null,
+  "region_code": "vn-north",
   "names": [
     {
       "locale": "en",
@@ -15,15 +15,36 @@
       "is_primary": true
     }
   ],
-  "is_eat_out": false,
-  "is_home_cook": false,
-  "cooking_method": null,
+  "is_eat_out": true,
+  "is_home_cook": true,
+  "cooking_method": "hap",
   "completeness_level": 1,
-  "meal_slots": [],
-  "serving_desc": null,
-  "serving_grams": null,
-  "ingredients": [],
-  "recipe_steps": null,
+  "meal_slots": [
+    {
+      "slot": "sang",
+      "weight": 8
+    },
+    {
+      "slot": "an-vat",
+      "weight": 8
+    }
+  ],
+  "serving_desc": "2 chiếc",
+  "serving_grams": 120,
+  "ingredients": [
+    {
+      "ingredient_slug": "gao-nep",
+      "quantity": 80,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    }
+  ],
+  "recipe_steps": [
+    "Đồ xôi nếp, giã nóng đến dẻo mịn.",
+    "Nặn dẹt, kẹp chả hoặc ăn không."
+  ],
   "recipe_sources": [],
   "media": [],
   "estimated_kcal": null,
@@ -32,7 +53,7 @@
     "source": "wikidata",
     "queried_at": "2026-08-31"
   },
-  "import_note": "Nhập tự động từ Wikidata Q10742207 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/B%C3%A1nh%20gi%E1%BA%A7y%20gi%C3%B2.JPG",
+  "import_note": "Nhập tự động từ Wikidata Q10742207 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/B%C3%A1nh%20gi%E1%BA%A7y%20gi%C3%B2.JPG Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

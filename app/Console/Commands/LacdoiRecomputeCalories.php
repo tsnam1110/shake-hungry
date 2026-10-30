@@ -14,10 +14,15 @@ use Illuminate\Console\Command;
  *
  * Chỉ món completeness_level >= 2 có danh sách nguyên liệu mới tính được;
  * kết quả 'unknown' ⇒ xoá bản ghi dinh dưỡng cũ, món hiển thị "chưa đủ dữ liệu".
+ *
+ * Cờ --with-ingredients: tính thêm cả món Mức 1 ĐÃ CÓ danh sách nguyên liệu —
+ * dùng cho đợt dữ liệu nháp chờ người duyệt (DISH-001 đợt 1, 2026-10-30), khi
+ * món chưa đủ recipe_sources để lên Mức 2 (cổng V12) nhưng vẫn cần số dinh
+ * dưỡng tham khảo. Số vẫn do engine tính và mang confidence của engine.
  */
 class LacdoiRecomputeCalories extends Command
 {
-    protected $signature = 'lacdoi:recompute-calories';
+    protected $signature = 'lacdoi:recompute-calories {--with-ingredients : Tính cả món Mức 1 đã có nguyên liệu (dữ liệu nháp chờ duyệt)}';
 
     protected $description = 'Tính lại dinh dưỡng toàn bộ món từ bảng nguyên liệu (engine thuần tuý, QT-1)';
 
@@ -26,7 +31,10 @@ class LacdoiRecomputeCalories extends Command
         $computed = 0;
         $unknown = 0;
 
-        $dishes = Dish::where('completeness_level', '>=', 2)->get();
+        $dishes = Dish::where('completeness_level', '>=', 2)
+            ->when($this->option('with-ingredients'), fn ($q) => $q
+                ->orWhere(fn ($q2) => $q2->where('completeness_level', 1)->has('dishIngredients')))
+            ->get();
         foreach ($dishes as $dish) {
             $row = $service->computeAndStore($dish, $service->pickFctSource($dish));
             if ($row === null) {
@@ -42,7 +50,10 @@ class LacdoiRecomputeCalories extends Command
             }
         }
 
-        $this->info("Đã tính {$computed} món, {$unknown} món chưa đủ dữ liệu, ".Dish::where('completeness_level', 1)->count().' món Mức 1 (chỉ có estimated_kcal).');
+        $level1NoCompute = Dish::where('completeness_level', 1)
+            ->when($this->option('with-ingredients'), fn ($q) => $q->doesntHave('dishIngredients'))
+            ->count();
+        $this->info("Đã tính {$computed} món, {$unknown} món chưa đủ dữ liệu, {$level1NoCompute} món Mức 1 (chỉ có estimated_kcal).");
 
         return self::SUCCESS;
     }

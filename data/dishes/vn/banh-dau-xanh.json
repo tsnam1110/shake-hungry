@@ -2,7 +2,7 @@
   "slug": "banh-dau-xanh",
   "parent_dish_slug": null,
   "country_code": "VN",
-  "region_code": null,
+  "region_code": "vn-north",
   "names": [
     {
       "locale": "vi",
@@ -10,15 +10,57 @@
       "is_primary": true
     }
   ],
-  "is_eat_out": false,
-  "is_home_cook": false,
-  "cooking_method": null,
+  "is_eat_out": true,
+  "is_home_cook": true,
+  "cooking_method": "nau",
   "completeness_level": 1,
-  "meal_slots": [],
-  "serving_desc": null,
-  "serving_grams": null,
-  "ingredients": [],
-  "recipe_steps": null,
+  "meal_slots": [
+    {
+      "slot": "an-vat",
+      "weight": 8
+    }
+  ],
+  "serving_desc": "1 hộp nhỏ 10 viên",
+  "serving_grams": 100,
+  "ingredients": [
+    {
+      "ingredient_slug": "dau-xanh-hat",
+      "quantity": 40,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "duong-trang",
+      "quantity": 25,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nuoc-cot-dua",
+      "quantity": 8,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "mo-lon-nuoc",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    }
+  ],
+  "recipe_steps": [
+    "Nấu đậu xanh nhừ, xay mịn.",
+    "Sên với đường, nước cốt dừa đến khi ráo.",
+    "Đóng khuôn, cắt viên."
+  ],
   "recipe_sources": [],
   "media": [],
   "estimated_kcal": null,
@@ -27,7 +69,7 @@
     "source": "wikidata",
     "queried_at": "2026-08-31"
   },
-  "import_note": "Nhập tự động từ Wikidata Q48880901 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/Banh%20dau%20xanh.jpg",
+  "import_note": "Nhập tự động từ Wikidata Q48880901 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/Banh%20dau%20xanh.jpg Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",
