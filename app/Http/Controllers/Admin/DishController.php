@@ -161,6 +161,61 @@ class DishController extends Controller
         return response()->json(array_slice($results, 0, 10));
     }
 
+    /**
+     * ADM-004: xem trước dinh dưỡng TRỰC TIẾP khi đang nhập — chạy engine
+     * chính thức trên dữ liệu form chưa lưu (mô hình tạm, không ghi DB).
+     */
+    public function previewNutrition(Request $request, DishNutritionService $service): JsonResponse
+    {
+        $data = $request->validate([
+            'cooking_method' => ['nullable', 'string', 'max:32'],
+            'ingredients' => ['present', 'array'],
+            'ingredients.*.ingredient_id' => ['required', 'integer', 'exists:ingredients,id'],
+            'ingredients.*.quantity' => ['nullable', 'numeric', 'min:0'],
+            'ingredients.*.unit_name' => ['nullable', 'string', 'max:32'],
+            'ingredients.*.is_optional' => ['nullable', 'boolean'],
+        ]);
+
+        $dish = new Dish(['cooking_method' => $data['cooking_method'] ?? null]);
+        $rows = collect();
+        foreach ($data['ingredients'] as $row) {
+            $ingredient = \App\Models\Ingredient::with(['units', 'referenceFood'])->find($row['ingredient_id']);
+            $di = new \App\Models\DishIngredient([
+                'ingredient_id' => $row['ingredient_id'],
+                'quantity' => $row['quantity'] ?? null,
+                'unit_name' => $row['unit_name'] ?? 'g',
+                'is_optional' => $row['is_optional'] ?? false,
+                'is_discarded' => false,
+                'is_edible_weight' => false,
+            ]);
+            $di->setRelation('ingredient', $ingredient);
+            $rows->push($di);
+        }
+        $dish->setRelation('dishIngredients', $rows);
+
+        // pickFctSource() truy vấn DB theo món đã lưu — bản xem trước tính
+        // nguồn ngay trên tập đang nhập, cùng quy tắc QT-4.
+        $sources = $rows->map(fn ($di) => $di->ingredient->referenceFood?->fct_source
+            ?? $di->ingredient->nutrition_snapshot['fct_source'] ?? null)
+            ->filter()->unique()->values();
+        $fctSource = $sources->count() === 1 ? (string) $sources->first() : 'mixed';
+
+        $result = $service->compute($dish, $fctSource);
+
+        return response()->json([
+            'kcal_min' => $result->kcalMin,
+            'kcal_max' => $result->kcalMax,
+            'protein_g' => $result->proteinG,
+            'fat_g' => $result->fatG,
+            'carb_g' => $result->carbG,
+            'fiber_g' => $result->fiberG,
+            'confidence' => $result->confidence,
+            'missing' => $result->missing,
+            'cooked_grams_estimate' => $result->cookedGramsEstimate,
+            'engine_version' => $result->engineVersion,
+        ]);
+    }
+
     /** Tính dinh dưỡng bằng engine chính thức rồi lưu vào dish_nutrition. */
     public function compute(Dish $dish, DishNutritionService $service): JsonResponse
     {

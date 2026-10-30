@@ -24,7 +24,27 @@ export default function Dishes() {
     const [similar, setSimilar] = useState([]);
     const [nutrition, setNutrition] = useState(null);
     const [ingredientOptions, setIngredientOptions] = useState([]);
+    const [preview, setPreview] = useState(null);
     const timers = useRef({});
+    const watchedIngredients = Form.useWatch('ingredients', form);
+    const watchedMethod = Form.useWatch('cooking_method', form);
+    const parentDishId = Form.useWatch('parent_dish_id', form);
+
+    // ADM-004: calo cập nhật trực tiếp khi gõ — engine chính thức chạy trên dữ liệu form
+    useEffect(() => {
+        const rowsIn = (watchedIngredients ?? []).filter((r) => r?.ingredient_id && r?.quantity);
+        if (rowsIn.length === 0) { setPreview(null); return; }
+        clearTimeout(timers.current.preview);
+        timers.current.preview = setTimeout(async () => {
+            try {
+                const { data } = await api.post('/dishes/preview-nutrition', {
+                    cooking_method: watchedMethod ?? null,
+                    ingredients: rowsIn,
+                });
+                setPreview(data);
+            } catch { setPreview(null); }
+        }, 500);
+    }, [watchedIngredients, watchedMethod]);
 
     const load = useCallback(async (page = 1) => {
         setLoading(true);
@@ -176,9 +196,23 @@ export default function Dishes() {
                     </Form.Item>
                     {similar.length > 0 && (
                         <Alert type="warning" style={{ marginBottom: 12 }}
-                            message="Có món gần giống đã tồn tại — cân nhắc sửa món cũ hoặc tạo biến thể:"
-                            description={similar.map((s) => `${s.name}${s.region ? ` (${s.region})` : ''} — giống ${(s.similarity * 100).toFixed(0)}%`).join(' · ')} />
+                            message="Có món gần giống đã tồn tại — chọn cách xử lý:"
+                            description={similar.map((s) => (
+                                <div key={s.dish_id} style={{ marginTop: 4 }}>
+                                    <b>{s.name}</b>{s.region ? ` (${s.region})` : ''} — giống {(s.similarity * 100).toFixed(0)}%
+                                    <Space style={{ marginLeft: 8 }}>
+                                        <Button size="small" onClick={() => openEdit({ id: s.dish_id })}>Sửa món cũ</Button>
+                                        <Button size="small" onClick={() => { form.setFieldValue('parent_dish_id', s.dish_id); setSimilar([]); message.info(`Sẽ tạo biến thể của "${s.name}"`); }}>Tạo biến thể</Button>
+                                        <Button size="small" type="text" onClick={() => setSimilar((prev) => prev.filter((x) => x.dish_id !== s.dish_id))}>Vẫn là món độc lập</Button>
+                                    </Space>
+                                </div>
+                            ))} />
                     )}
+                    {parentDishId ? (
+                        <Alert type="info" style={{ marginBottom: 12 }} message={`Món này sẽ là biến thể của món #${parentDishId}`}
+                            action={<Button size="small" onClick={() => form.setFieldValue('parent_dish_id', null)}>Huỷ biến thể</Button>} />
+                    ) : null}
+                    <Form.Item name="parent_dish_id" hidden><Input /></Form.Item>
                     <Form.Item label="Tên gọi khác" name="alias_names">
                         <Select mode="tags" placeholder="Gõ rồi Enter để thêm tên khác" />
                     </Form.Item>
@@ -210,7 +244,15 @@ export default function Dishes() {
                     <Form.Item label="Các bước nấu (mỗi dòng một bước)" name="recipe_steps">
                         <Select mode="tags" placeholder="Gõ bước rồi Enter" />
                     </Form.Item>
+                    {preview && (
+                        <Alert type={preview.missing?.length ? 'warning' : 'success'} style={{ marginBottom: 12 }}
+                            message={`Calo trực tiếp (toàn bộ công thức như đang nhập): ${preview.kcal_min != null ? `${Math.round(preview.kcal_min)}–${Math.round(preview.kcal_max)} kcal` : 'chưa đủ dữ liệu'} · đạm ${preview.protein_g ?? '?'}g · béo ${preview.fat_g ?? '?'}g · bột ${preview.carb_g ?? '?'}g · tin cậy: ${preview.confidence}`}
+                            description={preview.missing?.length ? `Chưa tra được dinh dưỡng: ${preview.missing.join(', ')}` : undefined} />
+                    )}
                     <Typography.Text strong>Nguyên liệu của món</Typography.Text>
+                    <Typography.Paragraph type="secondary" style={{ margin: 0 }}>
+                        Mẹo bàn phím: nhấn Enter ở ô số lượng của dòng cuối để thêm dòng mới.
+                    </Typography.Paragraph>
                     <Form.List name="ingredients">
                         {(fields, { add, remove }) => (
                             <>
@@ -221,7 +263,14 @@ export default function Dishes() {
                                                 options={ingredientOptions} placeholder="Tìm nguyên liệu…" />
                                         </Form.Item>
                                         <Form.Item {...field} name={[field.name, 'quantity']}>
-                                            <InputNumber placeholder="Số lượng" min={0} />
+                                            <InputNumber placeholder="Số lượng" min={0}
+                                                onPressEnter={(e) => {
+                                                    e.preventDefault();
+                                                    const current = form.getFieldValue('ingredients') ?? [];
+                                                    if (field.name === current.length - 1) {
+                                                        document.querySelector('[data-add-ingredient]')?.click();
+                                                    }
+                                                }} />
                                         </Form.Item>
                                         <Form.Item {...field} name={[field.name, 'unit_name']}>
                                             <Input placeholder="g / quả / muỗng" style={{ width: 110 }} />
@@ -232,8 +281,8 @@ export default function Dishes() {
                                         <Button danger size="small" onClick={() => remove(field.name)}>Xoá</Button>
                                     </Space>
                                 ))}
-                                <Button type="dashed" onClick={() => add({ unit_name: 'g' })} block style={{ marginTop: 8 }}>
-                                    + Thêm nguyên liệu (phím Enter ở dòng cuối cũng thêm dòng mới)
+                                <Button type="dashed" data-add-ingredient onClick={() => add({ unit_name: 'g' })} block style={{ marginTop: 8 }}>
+                                    + Thêm nguyên liệu
                                 </Button>
                             </>
                         )}

@@ -133,3 +133,21 @@ it('dashboard trả số liệu tổng quan', function () {
         ->assertJsonPath('ingredients_total', 1)
         ->assertJsonPath('ingredients_pending_review', 1);
 });
+
+it('xem trước dinh dưỡng trực tiếp không ghi vào DB (ADM-004)', function () {
+    $this->actingAs(adminUser());
+    $refId = DB::table('reference_foods')->insertGetId([
+        'fct_source' => 'usda_sr_legacy', 'external_id' => '888888',
+        'name_en' => 'Rice, cooked', 'kcal_per_100g' => 130,
+        'protein_g' => 2.7, 'fat_g' => 0.3, 'carb_g' => 28,
+        'imported_at' => now(),
+    ]);
+    $ingredient = adminMakeIngredient(['reference_food_id' => $refId]);
+
+    $resp = $this->postJson('/admin/api/dishes/preview-nutrition', [
+        'cooking_method' => 'luoc',
+        'ingredients' => [['ingredient_id' => $ingredient->id, 'quantity' => 200, 'unit_name' => 'g']],
+    ])->assertOk();
+    expect($resp->json('kcal_max'))->toBeGreaterThan(200);
+    $this->assertDatabaseCount('dish_nutrition', 0);
+});

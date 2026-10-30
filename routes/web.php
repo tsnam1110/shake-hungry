@@ -26,6 +26,7 @@ Route::middleware(['auth', 'admin'])->prefix('admin/api')->group(function () {
     Route::post('/ingredients/{ingredient}/review', [IngredientController::class, 'review']);
 
     Route::get('/dishes/similar', [DishController::class, 'similar']);
+    Route::post('/dishes/preview-nutrition', [DishController::class, 'previewNutrition']);
     Route::apiResource('dishes', DishController::class);
     Route::post('/dishes/{dish}/review', [DishController::class, 'review']);
     Route::post('/dishes/{dish}/compute', [DishController::class, 'compute']);
