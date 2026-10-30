@@ -25,7 +25,7 @@
 |---|---|---|
 | Runtime | PHP 8.3+ trên Laragon (Windows) | Không dùng Docker cho dev hằng ngày |
 | Framework | Laravel 12+ | |
-| Database | **PostgreSQL 16+** | Bắt buộc, không dùng MySQL — xem §4 |
+| Database | **MySQL 8.0+** | Nền tảng chính từ 2026-10-30 — xem §4 (trước đó là PostgreSQL) |
 | Extension DB | `pg_trgm`, `pgvector`, `unaccent` | |
 | Admin / nhập liệu | Filament 3+ | Công cụ sản xuất dữ liệu chính |
 | Giao diện người dùng | Blade + Livewire 3 | |
@@ -57,7 +57,19 @@ chạy của ứng dụng, và phải cập nhật lại mục này.
 
 ---
 
-## 4. Quyết định: PostgreSQL, không MySQL
+## 4. Quyết định CSDL
+
+### Thay đổi 2026-10-30: chuyển sang MySQL 8 (hiện hành)
+
+Theo quyết định của chủ dự án, nền tảng CSDL chính thức hiện nay là **MySQL 8.0+**.
+Quyết định gốc ưu tiên PostgreSQL (giữ nguyên văn bên dưới để đối chiếu lịch sử) bị
+thay thế. Ánh xạ từng tính năng PostgreSQL sang cơ chế thay thế, các giới hạn đã biết
+(không có deferred trigger cho R6/R8, MySQL 8 chưa có kiểu VECTOR), điều kiện vận
+hành (collation `utf8mb4_vi_0900_ai_ci`, `log_bin_trust_function_creators`) và số
+liệu kiểm chứng nằm ở task [SETUP-004](../05-tasks/tasks/SETUP-004.md) và
+[DEPLOYMENT §2](../10-deployment/DEPLOYMENT.md).
+
+### Quyết định gốc (đã bị thay thế): PostgreSQL, không MySQL
 
 Laragon mặc định MySQL, nên đây là lựa chọn có chi phí. Ba lý do:
 
@@ -83,7 +95,7 @@ Laragon mặc định MySQL, nên đây là lựa chọn có chi phí. Ba lý do
                          │ seeder (một chiều, dựng lại được)
                          ▼
 ┌──────────────────────────────────────────────────────────────┐
-│  PostgreSQL                                                   │
+│  MySQL 8 (từ 2026-10-30)                                      │
 │  ┌────────────┐  ┌────────────┐  ┌─────────────────────────┐ │
 │  │ Bảng tham  │  │ Nguyên     │  │ Món ăn                  │ │
 │  │ chiếu      │◄─┤ liệu       │◄─┤ + dish_ingredients      │ │

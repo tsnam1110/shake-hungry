@@ -110,9 +110,9 @@ it('R5: chan nhan tinh vi khong co nguon', function () {
 
 it('R6: chan mon Muc 2 khong co nguyen lieu nao', function () {
     expect(function () {
-        makeDish(['completeness_level' => 2]); // không có dish_ingredients
-        // Trigger DEFERRED kiểm lúc COMMIT — ép kiểm ngay trong transaction test:
-        DB::statement('SET CONSTRAINTS ALL IMMEDIATE');
+        $dish = makeDish(['completeness_level' => 2]); // không có dish_ingredients
+        // Ép kiểm R6/R8 ngay (cơ chế theo nền tảng — xem forceCompletenessCheck):
+        forceCompletenessCheck($dish->id);
     })->toThrow(QueryException::class);
 });
 
@@ -133,7 +133,7 @@ it('R8: chan mon Muc 2 co it hon 3 nguon cong thuc', function () {
             'quantity' => 100, 'unit_name' => 'g', 'source' => 'curated',
         ]);
         // Đủ R6 (1 nguyên liệu) nhưng 0 nguồn công thức — vi phạm R8
-        DB::statement('SET CONSTRAINTS ALL IMMEDIATE');
+        forceCompletenessCheck($dish->id);
     })->toThrow(QueryException::class, 'R8');
 });
 
@@ -201,7 +201,7 @@ it('cho phep ban ghi hop le di qua — cac rang buoc khong chan nham', function 
         'engine_version' => '1.0.0',
         'source' => 'computed',
     ]);
-    DB::statement('SET CONSTRAINTS ALL IMMEDIATE');
+    forceCompletenessCheck($dish->id);
 
     expect(DishNutrition::where('dish_id', $dish->id)->exists())->toBeTrue();
 });

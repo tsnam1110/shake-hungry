@@ -44,6 +44,17 @@ quy tắc ở đây, phải nói ra chỗ mâu thuẫn trước khi làm, không
 > toàn.** Cờ `needs_review` không ai kiểm được đã hạ đúng chưa; khoảng min–max không ai kiểm được
 > có thật sự chứa giá trị đúng không.
 
+> ## ⚠️ Đính chính lần 4, 2026-10-30 — nền tảng CSDL đã đổi sang MySQL
+>
+> Theo quyết định của **chủ dự án**, toàn hệ thống chuyển từ PostgreSQL sang **MySQL 8**:
+> các migration đã rẽ nhánh theo driver (giữ nhánh PostgreSQL để đối chiếu), trigger
+> R6/R8 viết lại theo cơ chế MySQL (không có deferred trigger — giới hạn đã biết ghi ở
+> migration 100008 và ARCHITECTURE §4), V7 của `lacdoi:validate-data` chuyển sang
+> trigram ở tầng PHP. Kiểm chứng trên MySQL 8.0: seed đủ **255/61/7.793**, validate
+> **0 lỗi 🔴**, **40/40 test đạt**. Chi tiết: [SETUP-004](docs/05-tasks/tasks/SETUP-004.md).
+> Mọi chỗ trong tài liệu còn ghi PostgreSQL là nền tảng hiện hành đều hết hiệu lực —
+> quyết định gốc giữ lại ở ARCHITECTURE §4 chỉ để đối chiếu lịch sử.
+
 **Trạng thái thực tế, kiểm ngày 2026-09-01 (đã chạy lại toàn bộ lệnh kiểm chứng):**
 
 | Hạng mục | Thực tế | Kiểm bằng |
@@ -54,7 +65,7 @@ quy tắc ở đây, phải nói ra chỗ mâu thuẫn trước khi làm, không
 | Bảng tham chiếu | ✅ SR Legacy **7.793** + Cooking Yields R2 **163** + FNDDS **333 Food Code / 1.810 SR Links** + `regions-vn.json` + `wikidata-vn-dishes.json`; **197/255 nguyên liệu ánh xạ, 0 lệch** | `data/reference/MANIFEST.json` |
 | Hệ số DATA-004/008 | ✅ khung xong: `edible_portion_pct` (3 có nguồn, 16 null chờ cân), `default_yield_factor` (9 thịt suy có nguồn) | `edible_portion_note` / `default_yield_factor_note` từng file |
 | **Kiểm chứng engine** | 🔵 lần 2 (2026-09-01, engine **1.1.0**): **89,7% trong ±20%** (không đổi), MAPE 3,9%, và **% tham chiếu nằm trong khoảng 1,0% → 80,4%**. Vẫn chặn: **nhóm chiên chưa đo được** (0/255 có hệ số dầu) và **nhóm hấp lệch −21%** (Cooking Yields R2 **0 dòng thuỷ sản**) | [nhật ký đo](docs/06-nutrition/ACCURACY-SPEC.md) |
-| **Code** | ✅ **Laravel 13.29 + PostgreSQL 17.11** — 15 migration (đủ R1–**R10**), 19 model, 7 seeder, engine calo **1.1.0**, 6 lệnh `lacdoi:*`, **40 test Pest xanh** | `php artisan migrate:fresh --seed; vendor\bin\pest --no-coverage` |
+| **Code** | ✅ **Laravel 13.29 + MySQL 8.0** (chuyển từ PostgreSQL ngày 2026-10-30 — SETUP-004) — 15 migration (đủ R1–**R10**), 19 model, 7 seeder, engine calo **1.1.0**, 6 lệnh `lacdoi:*`, **40 test Pest xanh** | `php artisan migrate:fresh --seed; vendor\bin\pest --no-coverage` |
 | **CI** | ⚠️ `.github/workflows/tests.yml` viết xong và hợp lệ, nhưng đó là cú pháp **GitHub Actions** trong khi repo nằm ở **GitLab** — GitLab bỏ qua hoàn toàn, nên CI **vẫn chưa chạy lần nào**. Cần `.gitlab-ci.yml` hoặc mirror sang GitHub (Q9) | `ls .gitlab-ci.yml` (không có) |
 | Chưa có | pgvector (GĐ4), Filament (GĐ2), Foundation Foods, UI-001, rà soát độc lập ING-003 | [ROADMAP](docs/05-tasks/ROADMAP.md) |
 | Sao lưu | ✅ `origin` = `git@gitlab.com:Tran-Son-Nam/shake-hungry.git`, branch `dev` (8 commit, 513 file) — đẩy lần đầu 2026-09-01 | `git status -sb` |
@@ -222,7 +233,7 @@ lặng lẽ** — chèn khối `> ⚠️ **Đính chính YYYY-MM-DD**` giải th
 | Lớp | Công nghệ | Lý do |
 |---|---|---|
 | Backend | **Laravel 12+ (PHP 8.3+)** | Hợp môi trường Laragon sẵn có |
-| Database | **PostgreSQL 16+** (KHÔNG dùng MySQL) | Cần `pg_trgm` (khớp mờ tên món tiếng Việt) và `pgvector` (gợi ý món tương tự) |
+| Database | **MySQL 8.0+** (đổi từ PostgreSQL ngày 2026-10-30 — SETUP-004) | Khớp mờ tên: trigram ở tầng PHP + FULLTEXT ngram; tìm không dấu/sắp xếp tiếng Việt: collation `utf8mb4_vi_0900_ai_ci`; vector: hoãn tới GĐ4, tính lại khi đó |
 | Admin / nhập liệu | **Filament 3+** | Đây là công cụ sản xuất dữ liệu chính, không phải phần phụ |
 | Frontend người dùng | Blade + Livewire (v1) | Giữ đơn giản; tách SPA chỉ khi thực sự cần |
 | Trợ lý nhập liệu | Claude API | Chỉ đóng vai trò ở QT-1 |

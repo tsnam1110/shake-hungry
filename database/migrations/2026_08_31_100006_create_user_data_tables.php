@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Query\Expression;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
@@ -11,16 +12,22 @@ return new class extends Migration
 {
     public function up(): void
     {
-        Schema::create('user_profiles', function (Blueprint $table) {
+        // MySQL không nhận default dạng literal cho cột JSON — phải dùng biểu thức.
+        $jsonArrayDefault = DB::connection()->getDriverName() === 'pgsql'
+            ? '[]' : new Expression('(JSON_ARRAY())');
+
+        Schema::create('user_profiles', function (Blueprint $table) use ($jsonArrayDefault) {
             $table->id();
             $table->foreignId('user_id')->unique()->constrained('users')->cascadeOnDelete();
             $table->decimal('height_cm', 5, 1)->nullable();
             $table->decimal('weight_kg', 5, 1)->nullable();
             $table->smallInteger('birth_year')->nullable();
-            $table->string('sex', 8)->default('unspecified');
+            // varchar(16): giá trị 'unspecified' dài 11 ký tự — PostgreSQL chấp
+            // nhận default dài hơn cột (tự cắt khi ép kiểu), MySQL strict thì không.
+            $table->string('sex', 16)->default('unspecified');
             $table->string('activity_level', 16)->nullable();
             $table->string('diet_type', 24)->nullable();
-            $table->jsonb('excluded_ingredients')->default('[]');
+            $table->jsonb('excluded_ingredients')->default($jsonArrayDefault);
             $table->timestampsTz();
         });
 

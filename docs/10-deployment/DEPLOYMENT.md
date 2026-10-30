@@ -12,11 +12,11 @@ thứ hai — làm điều đó khi đóng GĐ1 (DoD giai đoạn).
 |---|---|---|
 | PHP | 8.3+ | Laragon có sẵn |
 | Composer | 2.x | |
-| **PostgreSQL** | **16+** | **Không dùng MySQL** — xem [ARCHITECTURE §4](../02-architecture/ARCHITECTURE.md) |
+| **MySQL** | **8.0+** | Nền tảng chính từ 2026-10-30 — xem [ARCHITECTURE §4](../02-architecture/ARCHITECTURE.md) và [SETUP-004](../05-tasks/tasks/SETUP-004.md) |
 | Node.js | 20+ | Chỉ để build asset |
 | Git | | |
 
-Extension PostgreSQL bắt buộc: `pg_trgm`, `unaccent`, `vector` (pgvector).
+Không cần extension nào (bản PostgreSQL cũ cần `pg_trgm`, `unaccent`, `vector`). Điều kiện bắt buộc phía MySQL: database tạo với collation `utf8mb4_vi_0900_ai_ci`, và server bật `log_bin_trust_function_creators` (nếu có binary logging) để user thường tạo được trigger — xem §2.
 
 ---
 
@@ -30,17 +30,19 @@ cp .env.example .env
 php artisan key:generate
 ```
 
-Tạo database và bật extension:
+Tạo database (đúng charset/collation tiếng Việt) và user:
 
 ```sql
-CREATE DATABASE shake_hungry;
-\c shake_hungry
-CREATE EXTENSION IF NOT EXISTS pg_trgm;
-CREATE EXTENSION IF NOT EXISTS unaccent;
-CREATE EXTENSION IF NOT EXISTS vector;
+CREATE DATABASE shake_hungry CHARACTER SET utf8mb4 COLLATE utf8mb4_vi_0900_ai_ci;
+CREATE DATABASE shake_hungry_test CHARACTER SET utf8mb4 COLLATE utf8mb4_vi_0900_ai_ci;
+CREATE USER 'shake_hungry'@'localhost' IDENTIFIED BY '<mật khẩu>';
+GRANT ALL PRIVILEGES ON shake_hungry.* TO 'shake_hungry'@'localhost';
+GRANT ALL PRIVILEGES ON shake_hungry_test.* TO 'shake_hungry'@'localhost';
+-- Nếu server bật binary logging mà chưa có dòng này, tạo trigger sẽ lỗi 1419:
+SET GLOBAL log_bin_trust_function_creators = 1;  -- và ghi vào my.cnf: log_bin_trust_function_creators = 1
 ```
 
-Sửa `.env`: `DB_CONNECTION=pgsql`, host, cổng, tên DB, user, mật khẩu.
+Sửa `.env`: `DB_CONNECTION=mysql`, host, cổng (3306), tên DB, user, mật khẩu.
 
 ```bash
 php artisan migrate:fresh --seed
@@ -49,6 +51,10 @@ npm install && npm run build
 ```
 
 ### 2b. Các chỗ vướng thực tế trên Windows/Laragon — gặp 2026-08-31
+
+> ⚠️ **Hết áp dụng từ 2026-10-30:** mục này ghi lại thời dự án còn dùng PostgreSQL.
+> Laragon có sẵn MySQL nên các vướng mắc dưới đây không còn xuất hiện. Giữ lại làm
+> lịch sử theo QT-7, không xoá.
 
 1. **Laragon không kèm PostgreSQL.** Cách đã dùng: tải bản **binaries portable** của
    EnterpriseDB (`postgresql-17.11-1-windows-x64-binaries.zip`, ~325 MB), giải nén vào
@@ -98,12 +104,13 @@ SELECT count(*) FROM dishes;           -- phải khớp số file trong data/dis
 SELECT count(*) FROM reference_foods;  -- phải khớp MANIFEST
 ```
 
-Kiểm extension:
+Kiểm điều kiện nền tảng MySQL:
 
 ```sql
-SELECT 'x' % 'y';            -- pg_trgm
-SELECT unaccent('Phở bò');    -- unaccent
-SELECT '[1,2,3]'::vector;     -- pgvector (bỏ qua nếu chưa cài)
+SELECT DEFAULT_COLLATION_NAME FROM information_schema.SCHEMATA
+ WHERE SCHEMA_NAME = 'shake_hungry';   -- phải là utf8mb4_vi_0900_ai_ci
+SELECT COUNT(*) FROM information_schema.TRIGGERS
+ WHERE TRIGGER_SCHEMA = 'shake_hungry';  -- 5 trigger R6/R8
 ```
 
 **Nếu số lượng không khớp**, nghĩa là có dữ liệu chỉ tồn tại trong database của máy gốc mà chưa được

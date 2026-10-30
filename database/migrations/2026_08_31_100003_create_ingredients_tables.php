@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Query\Expression;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
@@ -11,7 +12,11 @@ return new class extends Migration
 {
     public function up(): void
     {
-        Schema::create('ingredients', function (Blueprint $table) {
+        // MySQL không nhận default dạng literal cho cột JSON — phải dùng biểu thức.
+        $jsonArrayDefault = DB::connection()->getDriverName() === 'pgsql'
+            ? '[]' : new Expression('(JSON_ARRAY())');
+
+        Schema::create('ingredients', function (Blueprint $table) use ($jsonArrayDefault) {
             $table->id();
             $table->string('slug', 64)->unique();
             $table->text('name_vi');
@@ -35,8 +40,8 @@ return new class extends Migration
             $table->text('source_url')->nullable();
             $table->text('scientific_name')->nullable();
             $table->jsonb('nutrition_snapshot')->nullable();
-            $table->jsonb('alternatives')->default('[]');
-            $table->jsonb('secondary_sources')->default('[]');
+            $table->jsonb('alternatives')->default($jsonArrayDefault);
+            $table->jsonb('secondary_sources')->default($jsonArrayDefault);
             $table->string('source', 16);
             $table->string('confidence', 8);
             $table->boolean('needs_review')->default(false);
@@ -59,7 +64,13 @@ return new class extends Migration
         DB::statement('ALTER TABLE ingredients ADD CONSTRAINT ingredients_edible_note_check CHECK (edible_portion_pct IS NULL OR edible_portion_note IS NOT NULL)');
         DB::statement('ALTER TABLE ingredients ADD CONSTRAINT ingredients_edible_range_check CHECK (edible_portion_pct IS NULL OR (edible_portion_pct > 0 AND edible_portion_pct <= 100))');
         // Index trigram để cảnh báo trùng tên khi nhập liệu (SETUP-003).
-        DB::statement('CREATE INDEX ingredients_name_vi_trgm ON ingredients USING gin (name_vi gin_trgm_ops)');
+        // Chỉ mục tìm kiếm theo tên: PostgreSQL dùng GIN trigram (pg_trgm);
+        // MySQL 8 (nền tảng chính từ 2026-10-30) dùng FULLTEXT ngram.
+        if (DB::connection()->getDriverName() === 'pgsql') {
+            DB::statement('CREATE INDEX ingredients_name_vi_trgm ON ingredients USING gin (name_vi gin_trgm_ops)');
+        } else {
+            DB::statement('CREATE FULLTEXT INDEX ingredients_name_vi_ft ON ingredients (name_vi) WITH PARSER ngram');
+        }
     }
 
     public function down(): void

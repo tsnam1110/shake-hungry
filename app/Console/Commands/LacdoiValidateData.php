@@ -275,10 +275,15 @@ class LacdoiValidateData extends Command
         }
 
         // V6 — thiếu nguyên liệu mà vẫn confidence='high' (🔴).
-        $n = DB::table('dish_nutrition')
-            ->whereRaw("missing_ingredients <> '[]'::jsonb")
-            ->where('confidence', 'high')
-            ->count();
+        // So sánh JSON rỗng khác cú pháp theo nền tảng (jsonb của PostgreSQL
+        // vs JSON của MySQL) — rẽ nhánh theo driver, ngữ nghĩa giữ nguyên.
+        $v6Query = DB::table('dish_nutrition');
+        if (DB::connection()->getDriverName() === 'pgsql') {
+            $v6Query->whereRaw("missing_ingredients <> '[]'::jsonb");
+        } else {
+            $v6Query->whereRaw('JSON_LENGTH(missing_ingredients) > 0');
+        }
+        $n = $v6Query->where('confidence', 'high')->count();
         if ($n > 0) {
             $this->errors[] = "V6: {$n} bản ghi dish_nutrition thiếu nguyên liệu nhưng confidence='high'";
         }
@@ -305,15 +310,29 @@ class LacdoiValidateData extends Command
             }
 
             // V7 (trigram) — hai món tên giống nhau >90% (🟡).
-            $pairs = DB::select(<<<'SQL'
-                SELECT a.name AS name_a, b.name AS name_b
-                FROM dish_names a
-                JOIN dish_names b ON a.id < b.id AND a.dish_id <> b.dish_id
-                WHERE a.is_primary AND b.is_primary AND a.locale = b.locale
-                  AND similarity(lower(unaccent(a.name)), lower(unaccent(b.name))) > 0.9
-            SQL);
-            foreach ($pairs as $p) {
-                $this->warnings[] = "V7: hai món tên giống nhau >90%: \"{$p->name_a}\" ↔ \"{$p->name_b}\"";
+            // Bản PostgreSQL dùng similarity(lower(unaccent(...))) của pg_trgm.
+            // Từ khi chuyển MySQL (2026-10-30) phép tính được đưa lên PHP để
+            // MỘT thuật toán chạy trên mọi nền tảng: chuẩn hoá bỏ dấu tiếng
+            // Việt + độ giống trigram tương đương pg_trgm (xem hai hàm cuối file).
+            $primaries = DB::table('dish_names')
+                ->where('is_primary', true)
+                ->get(['id', 'dish_id', 'locale', 'name']);
+            $byLocale = $primaries->groupBy('locale');
+            foreach ($byLocale as $rows) {
+                $rows = $rows->values();
+                $total = $rows->count();
+                for ($i = 0; $i < $total; $i++) {
+                    for ($j = $i + 1; $j < $total; $j++) {
+                        $a = $rows[$i];
+                        $b = $rows[$j];
+                        if ($a->dish_id === $b->dish_id) {
+                            continue;
+                        }
+                        if (self::trigramSimilarity(self::normalizeName($a->name), self::normalizeName($b->name)) > 0.9) {
+                            $this->warnings[] = "V7: hai món tên giống nhau >90%: \"{$a->name}\" ↔ \"{$b->name}\"";
+                        }
+                    }
+                }
             }
         }
 
@@ -325,5 +344,61 @@ class LacdoiValidateData extends Command
         foreach ($rows as $slug) {
             $this->errors[] = "V4 [{$slug}]: completeness_level >= 2 trong DB nhưng không có dish_ingredients";
         }
+    }
+
+    /**
+     * Chuẩn hoá tên để so trùng (tương đương lower(unaccent(...)) của
+     * PostgreSQL): chữ thường + bỏ dấu tiếng Việt. Chữ đ/Đ không tách được
+     * bằng Normalizer nên thay tay trước.
+     */
+    private static function normalizeName(string $name): string
+    {
+        $name = str_replace(['đ', 'Đ'], ['d', 'D'], $name);
+        $name = mb_strtolower($name, 'UTF-8');
+        if (class_exists(\Normalizer::class)) {
+            $decomposed = \Normalizer::normalize($name, \Normalizer::FORM_D);
+            if ($decomposed !== false) {
+                $name = preg_replace('/\p{Mn}+/u', '', $decomposed) ?? $name;
+            }
+        }
+
+        return trim(preg_replace('/\s+/u', ' ', $name) ?? $name);
+    }
+
+    /**
+     * Độ giống trigram theo đúng định nghĩa pg_trgm: mỗi từ được đệm
+     * hai khoảng trắng ở đầu và một ở cuối, tách thành các trigram,
+     * similarity = |giao| / (|A| + |B| − |giao|).
+     *
+     * @return float 0.0 – 1.0
+     */
+    private static function trigramSimilarity(string $a, string $b): float
+    {
+        $setA = self::trigramSet($a);
+        $setB = self::trigramSet($b);
+        if ($setA === [] || $setB === []) {
+            return 0.0;
+        }
+        $shared = count(array_intersect_key($setA, $setB));
+
+        return $shared / (count($setA) + count($setB) - $shared);
+    }
+
+    /** @return array<string, true> */
+    private static function trigramSet(string $text): array
+    {
+        $set = [];
+        foreach (preg_split('/\s+/u', $text) ?: [] as $word) {
+            if ($word === '') {
+                continue;
+            }
+            $padded = '  '.$word.' ';
+            $length = mb_strlen($padded, 'UTF-8');
+            for ($i = 0; $i + 3 <= $length; $i++) {
+                $set[mb_substr($padded, $i, 3, 'UTF-8')] = true;
+            }
+        }
+
+        return $set;
     }
 }

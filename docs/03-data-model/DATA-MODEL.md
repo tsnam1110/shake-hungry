@@ -371,7 +371,7 @@ Kết quả tổng hợp tính vị từ nguyên liệu lên món. Do máy tính
 | `user_id` | bigint | |
 | `height_cm` / `weight_kg` | numeric(5,1) | |
 | `birth_year` | smallint | lưu năm sinh, không lưu tuổi (tuổi thay đổi) |
-| `sex` | varchar(8) | `male`, `female`, `unspecified` — dùng cho công thức BMR |
+| `sex` | varchar(16) | `male`, `female`, `unspecified` — dùng cho công thức BMR. (Khai varchar(8) ở bản đầu là lỗi tiềm ẩn: `unspecified` dài 11 ký tự; PostgreSQL bỏ qua, MySQL strict từ chối — đã nới ngày 2026-10-30, xem SETUP-004) |
 | `activity_level` | varchar(16) | ánh xạ sang PAL, xem CALORIE-ENGINE §5 |
 | `diet_type` | varchar(24) null | `chay`, `chay-truong`, `low-carb`… |
 | `excluded_ingredients` | jsonb | dị ứng / không ăn được — **lọc cứng** ở engine gợi ý |
