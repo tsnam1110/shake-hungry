@@ -21,7 +21,7 @@ không cần đọc thêm tài liệu khác.
 ## Bối cảnh
 
 Liên kết tới tài liệu thiết kế liên quan. Nếu task này hiện thực một quy tắc bắt buộc, ghi rõ quy
-tắc nào (QT-1…QT-7).
+tắc nào (QT-1…QT-8).
 
 > **Về đường dẫn tương đối:** file task nằm ở `docs/05-tasks/tasks/`, nên tiền tố là `../../` để tới
 > `docs/`, và `../../../` để tới gốc repo. Ví dụ đã điền sẵn cho vị trí đó:

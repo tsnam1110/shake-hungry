@@ -8,6 +8,8 @@ quy tắc ở đây, phải nói ra chỗ mâu thuẫn trước khi làm, không
 **Ngày tạo:** 2026-08-31
 **Cập nhật lần cuối:** 2026-09-01 — soát toàn dự án; sửa hai lỗi engine/schema chưa ai bắt
 (khoảng tin cậy rộng bằng 0 → engine 1.1.0; `needs_review` không có cơ chế duyệt → R10), 40 test xanh
+**Bổ sung 2026-10-30:** thêm **QT-8** — phân tích kỹ yêu cầu và kiểm tra điều kiện ngoại vi trước
+khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 và §3)
 
 ---
 
@@ -61,6 +63,17 @@ quy tắc ở đây, phải nói ra chỗ mâu thuẫn trước khi làm, không
 > đăng nhập). Toàn bộ tài liệu đã thay theo quyết định này trong cùng commit;
 > task nền là [ADM-001](docs/05-tasks/tasks/ADM-001.md) (đã viết lại), thiết kế
 > tổng thể ở [ARCHITECTURE §5.6](docs/02-architecture/ARCHITECTURE.md).
+
+> ## ⚠️ Đính chính lần 6, 2026-10-30 — thêm quy tắc QT-8
+>
+> Theo quyết định của **chủ dự án**, hệ thống có thêm quy tắc tuyệt đối **QT-8**
+> (xem §3): trước khi thực thi bất kỳ yêu cầu nào phải **phân tích kỹ yêu cầu** và
+> **kiểm tra các điều kiện ngoại vi cùng mức phù hợp với dự án**; việc lớn, khó đảo
+> ngược hoặc đổi hướng phải trình phân tích và chờ chủ dự án chốt trước khi làm.
+> Quy tắc này hệ thống hoá quy định sẵn có ở đầu file này ("mâu thuẫn thì nói ra
+> trước khi làm") và bước kiểm tra phụ thuộc ở §6 — không thay đổi QT-1…QT-7.
+> Đồng bộ trong cùng commit: §3, §6 của file này, [AGENTS.md](AGENTS.md) và
+> [TASK-TEMPLATE](docs/05-tasks/TASK-TEMPLATE.md).
 
 **Trạng thái thực tế, kiểm ngày 2026-09-01 (đã chạy lại toàn bộ lệnh kiểm chứng):**
 
@@ -160,7 +173,7 @@ Chi tiết: [PRD](docs/01-prd/PRD.md).
 
 ---
 
-## 3. BẢY QUY TẮC TUYỆT ĐỐI
+## 3. TÁM QUY TẮC TUYỆT ĐỐI
 
 Vi phạm bất kỳ quy tắc nào dưới đây là lỗi nghiêm trọng, không phải "khác biệt về phong cách".
 
@@ -230,6 +243,29 @@ trạng bạn mất cân bằng, nên tránh món này". Chi tiết và lý do p
 cập nhật [ROADMAP](docs/05-tasks/ROADMAP.md) là lỗi. Phát hiện tài liệu cũ ghi sai thì **không xoá
 lặng lẽ** — chèn khối `> ⚠️ **Đính chính YYYY-MM-DD**` giải thích chỗ sai và vì sao, theo đúng cách
 `edu-crm-v2` đang làm. Người kế nhiệm cần biết dự án đã từng hiểu sai chỗ nào.
+
+### QT-8 — Phân tích kỹ yêu cầu và kiểm tra điều kiện ngoại vi trước khi thực thi
+
+Không bắt tay vào làm ngay khi nhận yêu cầu. Trước khi thực thi, **bắt buộc** làm đủ bốn việc:
+
+1. **Phân tích yêu cầu:** mục tiêu thật là gì, phạm vi tới đâu, tiêu chí nghiệm thu là gì, chỗ nào
+   còn chưa rõ. Chỗ chưa rõ mà ảnh hưởng kết quả thì phải làm rõ hoặc nêu giả định rõ ràng —
+   không tự suy diễn rồi làm theo suy diễn đó.
+2. **Kiểm tra mức phù hợp với dự án:** đối chiếu yêu cầu với QT-1…QT-7, kiến trúc đã chốt,
+   [DATA-MODEL](docs/03-data-model/DATA-MODEL.md), quy định license và [ROADMAP](docs/05-tasks/ROADMAP.md)
+   (giai đoạn hiện tại, task phụ thuộc). Yêu cầu mâu thuẫn với bất kỳ điểm nào thì **nói rõ chỗ
+   mâu thuẫn trước khi làm**, theo quy định ở đầu file này — không âm thầm làm khác.
+3. **Kiểm tra điều kiện ngoại vi:** dữ liệu đầu vào đã có chưa, môi trường / database / công cụ đã
+   sẵn sàng chưa, việc này tác động gì lên dữ liệu, tài liệu và test hiện có, có đảo ngược được
+   không, có rủi ro bảo mật hay pháp lý nào không.
+4. **Trình phân tích trước khi làm khi việc lớn:** nếu yêu cầu thuộc diện khó đảo ngược, đổi hướng /
+   đổi kiến trúc / đổi công nghệ, hoặc có nhiều phương án khả thi, phải trình bày phân tích —
+   các phương án, đánh đổi, khuyến nghị — và **chờ chủ dự án chốt** rồi mới triển khai.
+   Không tự ý chọn thay chủ dự án.
+
+Mức độ phân tích **tỉ lệ với rủi ro**: việc nhỏ, hiển nhiên và dễ đảo ngược thì kiểm tra nhanh
+bốn điểm trên là đủ; không dùng QT-8 làm lý do trì hoãn việc hiển nhiên. Chỉ bắt đầu thực thi
+khi các điều kiện đã rõ, hoặc phần chưa rõ / rủi ro đã được chủ dự án chấp thuận.
 
 ---
 
@@ -301,13 +337,17 @@ shake-hungry/
 
 ### Khi nhận một task
 
-1. Đọc [ROADMAP](docs/05-tasks/ROADMAP.md), tìm mã task.
-2. Mở file task tại `docs/05-tasks/tasks/<MÃ>.md`. Nếu chưa có, copy
+1. **Phân tích trước theo QT-8:** làm rõ mục tiêu / phạm vi / tiêu chí nghiệm thu; đối chiếu
+   QT-1…QT-8, kiến trúc và dữ liệu hiện có; kiểm tra điều kiện ngoại vi (phụ thuộc, môi trường,
+   dữ liệu đầu vào, rủi ro). Có mâu thuẫn, hoặc task thuộc diện lớn / đổi hướng → trình phân
+   tích và chờ chủ dự án chốt trước khi bắt đầu.
+2. Đọc [ROADMAP](docs/05-tasks/ROADMAP.md), tìm mã task.
+3. Mở file task tại `docs/05-tasks/tasks/<MÃ>.md`. Nếu chưa có, copy
    [TASK-TEMPLATE](docs/05-tasks/TASK-TEMPLATE.md).
-3. Kiểm tra cột **Phụ thuộc** — task phụ thuộc chưa DONE thì không được bắt đầu.
-4. Làm. Đối chiếu [DEFINITION-OF-DONE](docs/05-tasks/DEFINITION-OF-DONE.md).
-5. Cập nhật status trong **cả** file task **và** bảng ở ROADMAP. Ghi ngày hoàn thành.
-6. Nếu phát sinh quyết định thiết kế → ghi vào mục "Ghi chú" của task **và** vào tài liệu tương ứng.
+4. Kiểm tra cột **Phụ thuộc** — task phụ thuộc chưa DONE thì không được bắt đầu.
+5. Làm. Đối chiếu [DEFINITION-OF-DONE](docs/05-tasks/DEFINITION-OF-DONE.md).
+6. Cập nhật status trong **cả** file task **và** bảng ở ROADMAP. Ghi ngày hoàn thành.
+7. Nếu phát sinh quyết định thiết kế → ghi vào mục "Ghi chú" của task **và** vào tài liệu tương ứng.
 
 ### Khi thêm dữ liệu
 

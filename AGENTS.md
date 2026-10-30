@@ -15,7 +15,7 @@ Nút "Lắc" gợi ý món chỉ là vài chục dòng code; giá trị nằm �
 **Trạng thái 2026-08-31: repo mới chỉ có tài liệu, chưa có code.** Việc tiếp theo xem
 [docs/05-tasks/ROADMAP.md](docs/05-tasks/ROADMAP.md).
 
-## Bảy quy tắc tuyệt đối (bản rút gọn — bản đầy đủ ở CLAUDE.md §3)
+## Tám quy tắc tuyệt đối (bản rút gọn — bản đầy đủ ở CLAUDE.md §3)
 
 1. **QT-1** — LLM không bao giờ được sinh con số dinh dưỡng. Chỉ được đề xuất ánh xạ nguyên liệu,
    định lượng gram, và chuẩn hoá tên. Calo do hàm thuần tuý tính từ bảng tham chiếu.
@@ -29,12 +29,16 @@ Nút "Lắc" gợi ý món chỉ là vài chục dòng code; giá trị nằm �
    khung y tế.
 7. **QT-7** — Sửa code phải sửa tài liệu trong cùng commit. Tài liệu sai thì chèn khối "Đính chính",
    không xoá lặng lẽ.
+8. **QT-8** — Trước khi thực thi phải phân tích kỹ yêu cầu và kiểm tra điều kiện ngoại vi + mức
+   phù hợp với dự án (QT-1…QT-7, kiến trúc, dữ liệu, phụ thuộc, rủi ro). Việc lớn / khó đảo ngược /
+   đổi hướng phải trình phân tích và chờ chủ dự án chốt, không tự ý làm.
 
-## Ba việc dễ làm sai nhất
+## Bốn việc dễ làm sai nhất
 
 - Làm nút Lắc trước khi có dữ liệu → dự án chết vì DB rỗng.
 - Nhập dữ liệu theo món thay vì theo nguyên liệu → làm lại cùng một việc hàng trăm lần.
 - Để LLM điền calo cho nhanh → phá thẳng mục tiêu chính của dự án.
+- Bắt tay làm ngay khi chưa phân tích yêu cầu và chưa kiểm tra điều kiện ngoại vi (QT-8) → làm sai hướng, phải làm lại.
 
 ## Trước khi báo cáo hoàn thành
 
