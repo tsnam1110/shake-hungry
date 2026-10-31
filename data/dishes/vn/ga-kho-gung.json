@@ -122,7 +122,14 @@
       "note": "Sách dạy nấu ăn (thuvienso): gà kho gừng 300g thịt gà, 1 nhánh gừng, 3 muỗng canh nước mắm — đối chiếu định lượng theo mẻ."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/ga-kho-gung.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): đã đối chiếu 3 nguồn công thức đã mở kiểm chứng (Knorr Việt Nam, Cookpad Huỳnh Uyên Vũ, sách dạy nấu ăn). Hai trong ba nguồn không ghi số khẩu phần nên không quy đổi định lượng mỗi khẩu phần một cách tin cậy; định lượng theo mẻ (300–500g gà) không mâu thuẫn với file nên giữ nguyên mọi quantity. Gừng 15g nằm trong khoảng suy từ các nguồn (1 muỗng canh gừng sợi đến 1 nhánh gừng mỗi mẻ). recipe_steps viết lại hoàn toàn thành 6 bước. Không sửa phân loại.",

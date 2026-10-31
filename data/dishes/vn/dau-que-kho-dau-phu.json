@@ -95,7 +95,14 @@
     "Cho đậu phụ vào kho thêm 4–5 phút cho thấm, rắc tiêu, dùng với cơm."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/dau-que-kho-dau-phu.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món chay thuần: toàn bộ nguyên liệu có origin thực vật/nấm, gia vị chỉ dùng nước tương/muối/chao đậu — không nước mắm, không hạt nêm/bột canh (nhóm COMPOSITE_ANIMAL tính là mặn), không trứng/sữa; nhãn diet suy từ thành phần phải ra chay và đã kiểm chứng trực tiếp trong DB sau seed (cổng G3/G6 của đợt). MÓN THAY cho rau-cu-kho-chay của kế hoạch §3.5: kho đã có kho-chay ('kho chay thập cẩm' — khổ qua, đậu phụ, nấm rơm, cà rốt) cùng khái niệm rau củ kho thập cẩm và trùng tên tiếng Anh; bản thay tập trung vào đậu que + đậu phụ, tên và thành phần phân biệt rõ theo phép thử EDITORIAL-GUIDE §3.",

@@ -107,7 +107,14 @@
       "note": "ToYenXin: bò 200 g, đậu que 300 g, hành tây 1 củ (không ghi khẩu phần) — tỉ lệ đậu:bò 1,5; chần đậu 1–2 phút."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/dau-que-xao-bo.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 3 nguồn. Phân xử định lượng: dau-que 110 → 140 g — hai nguồn ghi rõ khẩu phần cho 143–150 g/người, file thấp hơn 23–27%, lấy cận dưới 140 g; thit-bo-nam 50 g giữ nguyên (khớp chính xác cả hai nguồn có khẩu phần); nước tương 5 g khớp Cookpad. Bất thường ghi nhận: hành tây có ở 3/3 nguồn (1 củ/mẻ), file thiếu; tên/tags gắn loai:mon-chinh trong khi serving_desc là đĩa rau — cân nhắc khi duyệt phân loại. Phân xử bất thường LV2-003 (Phần A — LV2-004, 2026-10-31): Thêm hanh-tay 25 g: 3/3 nguồn đã mở ở đợt 3 đều có hành tây (1 củ/mẻ gia đình, quy về ~25 g/khẩu phần), file thiếu hẳn.",

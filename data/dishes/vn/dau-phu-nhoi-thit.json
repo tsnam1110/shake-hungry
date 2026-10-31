@@ -123,7 +123,14 @@
       "note": "Cookpad (Nguyễn Ngọc Phương Thảo): đậu phụ 2 bìa to, thịt lợn xay 100 g, mộc nhĩ 2 tai, cà chua 3 quả cho 2 người (thịt 50 g/khẩu phần, kèm món bò xào và bắp cải luộc trong cùng bài); khoét lỗ vuông giữa miếng đậu, chiên vàng rồi đun trong sốt tới khi sệt"
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/dau-phu-nhoi-thit.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Đậu phụ ở đây áp chảo nhẹ trong sốt cà (không chiên ngập) — phân loại kho theo tiền lệ dau-phu-sot-ca; dòng dầu 5 g là dầu áp chảo/xào sốt ăn vào, không phải dầu chiên chính theo §12. Nâng Mức 2 đợt 2 (2026-10-31): Đã đối chiếu 3 nguồn thật mở kiểm chứng (Cookpad Hoàng Ngọc; Diễn Đàn Mẹ và Bé; Cookpad Nguyễn Ngọc Phương Thảo). Phân xử định lượng: giữ nguyên mọi dòng — thịt xay 60 g nằm giữa các quy đổi (Cookpad Hoàng Ngọc 150 g/mẻ không ghi khẩu phần; Mẹ và Bé 300 g/mẻ; Cookpad Phương Thảo 100 g/2 người = 50 g/khẩu phần); cà chua giữ 80 g vì nguồn bất đồng mạnh (200 g cho cả mẻ ở Mẹ và Bé so với 3 quả/2 người, khoảng 150 g/khẩu phần, ở Cookpad Phương Thảo); đậu phụ 120 g nằm trong khoảng quy đổi theo bìa của cả ba nguồn; mộc nhĩ 3 g khớp Cookpad Phương Thảo (2 tai/2 người). Bất thường ghi nhận: Mẹ và Bé dùng nấm hương trong nhân thay cho mộc nhĩ; Cookpad Hoàng Ngọc dùng đậu hũ chiên sẵn xẻ thành túi để nhồi — file dùng đậu tươi khoét ruột rồi áp chảo, khác kỹ thuật nhưng cùng cấu trúc món. Phân xử bất thường LV2-002 (Phần A, 2026-10-31): GIỮ cooking_method nau (hấp): nguồn chính chiên–rim nhưng bản hấp thanh đạm là biến thể có thật đã ghi nhận ở đợt 2 — không đổi phân loại theo một chiều nguồn, đúng quy tắc chỉ sửa lỗi phân loại hiển nhiên.",

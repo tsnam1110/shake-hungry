@@ -115,7 +115,14 @@
       "note": "Bếp Xưa: cho 4 người, thịt ếch 500g, sả 4 cây, nước mắm 4 muỗng canh — đối chiếu ếch theo khẩu phần (125g)."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/ech-xao-sa-ot.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): Đã mở kiểm chứng 3 nguồn công thức thật (VietnamNet, Cookpad của Hien Thai Nguyen, Bếp Xưa) và đối chiếu định lượng theo khẩu phần. Định lượng: Bếp Xưa cho 125g ếch mỗi khẩu phần (500g cho 4 người); hai nguồn còn lại cho mẻ 300–500g không ghi khẩu phần, tương đương khoảng 100–167g mỗi khẩu phần. File 150g lệch +20% so với điểm quy chiếu 125g, nằm trong ngưỡng 30% — giữ nguyên toàn bộ. Sả 15g khớp tỉ lệ 3–4 cây sả cho mẻ 500g của nguồn. Ghi nhận bất thường: dòng lá lốt 5g trong file không xuất hiện ở cả 3 nguồn đối chiếu (lá lốt thuộc món riêng là ếch xào lá lốt) — giữ nguyên dòng theo quy tắc không thêm/bớt, đã đưa vào báo cáo đợt này. Viết lại hoàn toàn recipe_steps bằng lời riêng (7 bước). Rà phân loại: loai:mon-chinh, cooking_method xao, region vn, meal_slots trưa/tối đều phù hợp — không sửa. Đạt Mức 2. Phân xử bất thường LV2-001 (Phần A, 2026-10-31): bỏ dòng la-lot 5 g — không xuất hiện ở cả 3 nguồn đối chiếu (lá lốt thuộc món riêng ếch xào lá lốt); bước cuối bỏ câu lá lốt cho khớp danh sách nguyên liệu.",

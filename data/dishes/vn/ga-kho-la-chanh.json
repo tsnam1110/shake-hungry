@@ -115,7 +115,14 @@
       "note": "ToYenXin (trang tổng hợp): gà nguyên con 1,2–1,5 kg, lá chanh 10–15 lá, gừng, hành tím, tỏi, nước mắm, đường; kho 30–45 phút, lá chanh cho một nửa lúc ướp, một nửa lúc cuối."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/ga-kho-la-chanh.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Lá chanh là gia vị thơm lượng rất nhỏ và slug la-chanh chưa có số dinh dưỡng (hồ sơ null đã có từ trước) — để dòng tùy chọn (is_optional) theo tiền lệ ngo-gai trong kho: món vẫn tính được đầy đủ phần chính, không bị chặn vì lá thơm. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 3 nguồn. Phân xử định lượng: GIỮ NGUYÊN TOÀN BỘ — gà 180 g so với nguồn ghi rõ khẩu phần ~167 g lệch −7%; nước mắm/đường giữa các nguồn trải rất rộng (biến thể chỉ muối của BlueStone đến ~10 g của ToYenXin), không đồng thuận một chiều. Sửa kỹ thuật trong bước: thời gian kho của file cũ (15 phút) ngắn hơn mọi nguồn — bước đã ghi tổng 20–25 phút; điểm đồng thuận mạnh 3/3 nguồn là lá chanh thái chỉ cho vào cuối, file đã đúng hướng này. Bất thường ghi nhận: tiêu và tỏi có ở 2/3 nguồn, file không có; sả/củ nén/ngũ vị hương của nguồn Cookpad là biến thể miền Trung — file gắn vùng Bắc nên không bổ sung là nhất quán.",

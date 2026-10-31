@@ -129,7 +129,14 @@
       "note": "Hướng Nghiệp Á Âu: đậu hũ kho nấm rơm — ướp nấm trước với nước tương và đường."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/dau-phu-rim-nam.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món chay (nước tương, không nước mắm) — bổ sung độ phủ món chính chay.  [LV2-004 đợt 4: nâng Mức 2 — đổi dau-phu thành dau-phu-chien (3/3 nguồn đều dùng đậu đã chiên), thêm tiêu 0,5 và ớt tươi 3 (2/2 họ nguồn lượng hoá), đường 5→7. Ghi nhận: 2 trang VietnamNet/Cách Nấu Ngon có đoạn văn gần trùng nhau — tính là 2 họ độc lập có dè dặt.]",

@@ -87,7 +87,14 @@
     "Rưới hỗn hợp nước tương vào, rim lửa nhỏ 6–8 phút cho đậu thấm và nước rim sánh nhẹ, dùng nóng với cơm."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/dau-phu-rim-sa-ot.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món chay thuần: toàn bộ nguyên liệu có origin thực vật/nấm, gia vị chỉ dùng nước tương/muối/chao đậu — không nước mắm, không hạt nêm/bột canh (nhóm COMPOSITE_ANIMAL tính là mặn), không trứng/sữa; nhãn diet suy từ thành phần phải ra chay và đã kiểm chứng trực tiếp trong DB sau seed (cổng G3/G6 của đợt). MÓN THAY cho dau-phu-chien-sa-ot của kế hoạch §3.5: phép kiểm tham chiếu độc lập kiểu QA-002 lần 3 cho món chiên đậu phụ tươi lệch +24% — hệ số hấp thụ 15 (quy tắc để dành của CALC-004, áp dụng cho dau-phu nhân đợt này) chưa được tham chiếu độc lập hậu thuẫn: cặp SR Legacy đậu phụ sống firm (172475) ↔ đậu phụ chiên (172451) suy bằng cân bằng protein cho hệ số tham chiếu ≈9,8. Theo tiền lệ đợt 2 (món chiên chưa sẵn sàng đường tính thì thay), đổi sang bản rim (method kho, dầu rim kê trong công thức) và HOÃN bản chiên tới khi hệ số đậu phụ được hiệu chuẩn ở quy trình CALC-004/QA-002.",
