@@ -18,6 +18,7 @@ class DishNutrition extends Model
     {
         return [
             'missing_ingredients' => 'array',
+            'unverified_ingredients' => 'array',
             'computed_at' => 'datetime',
             'kcal_min' => 'float',
             'kcal_max' => 'float',

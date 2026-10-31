@@ -165,6 +165,17 @@ final class DishNutritionService
             return null;
         }
 
+        // Cờ "chưa kiểm định" (quyết định chủ dự án 2026-10-31): nguyên liệu dùng
+        // nguồn THỨ CẤP (SourceTier) mà thực sự tham gia phép tính — không nằm
+        // trong missing[] — được ghi lại để giao diện cảnh báo người dùng.
+        $unverified = $dish->dishIngredients
+            ->reject(fn ($di) => in_array($di->ingredient->slug, $result->missing, true))
+            ->filter(fn ($di) => SourceTier::isSecondary($this->nutritionFor($di)['fct']))
+            ->map(fn ($di) => $di->ingredient->slug)
+            ->unique()
+            ->values()
+            ->all();
+
         DishNutrition::where('dish_id', $dish->id)->delete();
 
         return DishNutrition::create([
@@ -179,6 +190,7 @@ final class DishNutritionService
             'confidence' => $result->confidence,
             'fct_source' => $result->fctSource,
             'missing_ingredients' => $result->missing,
+            'unverified_ingredients' => $unverified,
             'computed_at' => Date::now(),
             'engine_version' => $result->engineVersion,
             'source' => 'computed',

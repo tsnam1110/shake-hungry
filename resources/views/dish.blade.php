@@ -33,7 +33,8 @@ fetch('/api/dishes/' + encodeURIComponent(slug), { headers: { 'Accept': 'applica
             <div class="mt-4 rounded-xl bg-orange-50 border border-orange-200 p-4">
                 ${n ? `<div class="text-xl font-bold">🔥 ${Math.round(n.kcal_min)}–${Math.round(n.kcal_max)} kcal/khẩu phần</div>
                 <div class="text-sm text-neutral-600 mt-1">Đạm ${n.protein_g ?? '?'}g · Béo ${n.fat_g ?? '?'}g · Bột đường ${n.carb_g ?? '?'}g · Chất xơ ${n.fiber_g ?? '?'}g</div>
-                <div class="text-sm text-neutral-500">Độ ${confLabel[n.confidence] ?? n.confidence}</div>`
+                <div class="text-sm text-neutral-500">Độ ${confLabel[n.confidence] ?? n.confidence}</div>
+                ${(provenance?.unverified_ingredients ?? []).length ? `<div class="mt-2 rounded-lg bg-amber-100 border border-amber-300 text-amber-800 px-3 py-2">⚠️ <b>Số liệu tham khảo — chưa kiểm định:</b> món có nguyên liệu dùng nguồn thứ cấp (${provenance.unverified_ingredients.join(', ')}). Thông tin đã có nhưng chưa được kiểm chứng bằng nguồn chính thống.</div>` : ''}`
                 : '<div class="text-neutral-400">Chưa đủ dữ liệu dinh dưỡng cho món này.</div>'}
             </div>
             ${provenance ? `<details class="mt-3 text-sm">
@@ -42,6 +43,7 @@ fetch('/api/dishes/' + encodeURIComponent(slug), { headers: { 'Accept': 'applica
                     <p>· Bảng thành phần: <b>${provenance.fct_source}</b> · Engine phiên bản ${provenance.engine_version} · Tính ngày ${new Date(provenance.computed_at).toLocaleDateString('vi-VN')}</p>
                     <p>· Nguyên liệu đã tham gia tính: ${provenance.contributing_ingredients.join(', ') || '—'}</p>
                     ${(provenance.missing_ingredients ?? []).length ? `<p>· Nguyên liệu chưa tra được (không tính vào số trên): ${provenance.missing_ingredients.join(', ')}</p>` : ''}
+                    ${(provenance.unverified_ingredients ?? []).length ? `<p>· Nguyên liệu dùng nguồn thứ cấp (chưa kiểm định): ${provenance.unverified_ingredients.join(', ')}</p>` : ''}
                 </div></details>` : ''}
         </div>
         <div class="bg-white rounded-2xl shadow p-5 mt-4">

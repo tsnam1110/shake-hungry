@@ -59,6 +59,11 @@ class CatalogController extends Controller
                 'engine_version' => $dish->nutrition->engine_version,
                 'computed_at' => $dish->nutrition->computed_at,
                 'missing_ingredients' => $dish->nutrition->missing_ingredients,
+                // Cờ "chưa kiểm định": nguyên liệu dùng nguồn thứ cấp (hiển thị cảnh báo ở UI)
+                'unverified_ingredients' => $dish->dishIngredients
+                    ->filter(fn ($di) => in_array($di->ingredient->slug, $dish->nutrition->unverified_ingredients ?? [], true))
+                    ->map(fn ($di) => $di->ingredient->name_vi)
+                    ->values(),
                 'contributing_ingredients' => $dish->dishIngredients
                     ->reject(fn ($di) => in_array($di->ingredient->slug, $dish->nutrition->missing_ingredients ?? [], true))
                     ->map(fn ($di) => $di->ingredient->name_vi)
@@ -139,6 +144,9 @@ class CatalogController extends Controller
         ]);
 
         $dish = $result['dish'];
+        if ($dish !== null) {
+            $dish->loadMissing('dishIngredients.ingredient:id,name_vi,slug');
+        }
 
         return response()->json([
             'dish' => $dish === null ? null : [
@@ -156,6 +164,10 @@ class CatalogController extends Controller
                     'fat_g' => $dish->nutrition->fat_g,
                     'carb_g' => $dish->nutrition->carb_g,
                     'confidence' => $dish->nutrition->confidence,
+                    'unverified_ingredients' => $dish->dishIngredients
+                        ->filter(fn ($di) => in_array($di->ingredient->slug, $dish->nutrition->unverified_ingredients ?? [], true))
+                        ->map(fn ($di) => $di->ingredient->name_vi)
+                        ->values(),
                 ],
             ],
             'seed' => $result['seed'],

@@ -110,6 +110,7 @@ async function loadCatalog(q = '') {
             <div class="font-semibold">${d.names?.[0]?.name ?? d.slug}</div>
             <div class="text-sm text-neutral-500">${d.region?.name ?? ''}</div>
             <div class="text-sm ${n ? 'text-orange-700 font-medium' : 'text-neutral-400'}">${kcal}</div>
+            ${(n?.unverified_ingredients ?? []).length ? '<div class="text-xs text-amber-600 font-medium">⚠️ Chưa kiểm định (nguồn thứ cấp)</div>' : ''}
         </a>`;
     }).join('') || '<p class="text-neutral-400 col-span-2">Không thấy món nào.</p>';
 }
@@ -152,7 +153,8 @@ document.getElementById('shake-btn').addEventListener('click', async () => {
             <div class="text-sm text-neutral-500">${d.region ?? ''} ${d.serving_desc ? '· ' + d.serving_desc : ''}</div>
             <div class="text-2xl font-bold mt-1"><a class="hover:underline" href="/mon/${d.slug}">${d.name}</a></div>
             ${n ? `<div class="mt-2 text-lg">🔥 ${Math.round(n.kcal_min)}–${Math.round(n.kcal_max)} kcal <span class="text-sm text-neutral-500">(${confLabel[n.confidence] ?? n.confidence})</span></div>
-            <div class="text-sm text-neutral-600">Đạm ${n.protein_g ?? '?'}g · Béo ${n.fat_g ?? '?'}g · Bột đường ${n.carb_g ?? '?'}g</div>`
+            <div class="text-sm text-neutral-600">Đạm ${n.protein_g ?? '?'}g · Béo ${n.fat_g ?? '?'}g · Bột đường ${n.carb_g ?? '?'}g</div>
+            ${(n.unverified_ingredients ?? []).length ? `<div class="mt-1 text-xs text-amber-700">⚠️ Số liệu tham khảo — chưa kiểm định (nguồn thứ cấp): ${n.unverified_ingredients.join(', ')}</div>` : ''}`
             : '<div class="mt-2 text-neutral-400">Chưa đủ dữ liệu dinh dưỡng</div>'}
             ${data.relaxed_level > 0 ? '<div class="text-xs text-amber-600 mt-2">Đã nới lỏng bộ lọc để tìm thêm lựa chọn (lọc dị ứng vẫn giữ nguyên).</div>' : ''}
             <div class="mt-3">${currentUser
