@@ -1,0 +1,124 @@
+{
+  "slug": "chao-ca-loc-trung",
+  "parent_dish_slug": "chao-ca-loc",
+  "country_code": "VN",
+  "region_code": "vn-central",
+  "names": [
+    {
+      "locale": "vi",
+      "name": "Cháo cá lóc nghệ (miền Trung)",
+      "is_primary": true
+    },
+    {
+      "locale": "en",
+      "name": "Central-style snakehead fish congee with turmeric",
+      "is_primary": true
+    }
+  ],
+  "is_eat_out": true,
+  "is_home_cook": true,
+  "cooking_method": "nau",
+  "completeness_level": 1,
+  "meal_slots": [
+    {
+      "slot": "sang",
+      "weight": 6
+    },
+    {
+      "slot": "trua",
+      "weight": 7
+    },
+    {
+      "slot": "toi",
+      "weight": 7
+    }
+  ],
+  "serving_desc": "1 tô",
+  "serving_grams": 320,
+  "ingredients": [
+    {
+      "ingredient_slug": "gao-te",
+      "quantity": 50,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "ca-loc",
+      "quantity": 100,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "bot-nghe",
+      "quantity": 2,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-tim",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dau-an",
+      "quantity": 4,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nuoc-mam-truyen-thong",
+      "quantity": 8,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-la",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hat-tieu-den",
+      "quantity": 0.5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    }
+  ],
+  "recipe_steps": [
+    "Cá lóc luộc chín, gỡ thịt, giữ nước luộc.",
+    "Gạo nấu cháo bằng nước luộc cá; phi hành tím và bột nghệ, xào thịt cá với nước mắm.",
+    "Múc cháo ra tô, đặt cá lên, rắc hành lá, tiêu."
+  ],
+  "recipe_sources": [],
+  "media": [],
+  "estimated_kcal": null,
+  "external_ref": null,
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Biến thể vùng của chao-ca-loc theo cơ chế parent_dish_slug: bản miền Trung (Nghệ An–Quảng Trị) nấu với nghệ và hành tím phi — khác bản gốc ở gia vị chủ đạo và vùng, đúng dự phòng của kế hoạch §3.4.",
+  "status": "draft",
+  "source": "curated",
+  "confidence": "unknown",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "loai:chao-sup"
+  ]
+}

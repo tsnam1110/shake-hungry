@@ -1,0 +1,120 @@
+{
+  "slug": "com-hen-xao",
+  "parent_dish_slug": null,
+  "country_code": "VN",
+  "region_code": "vn-hue",
+  "names": [
+    {
+      "locale": "vi",
+      "name": "Cơm hến xào",
+      "is_primary": true
+    },
+    {
+      "locale": "en",
+      "name": "Stir-fried baby clam rice, Hue style",
+      "is_primary": true
+    }
+  ],
+  "is_eat_out": true,
+  "is_home_cook": true,
+  "cooking_method": "xao",
+  "completeness_level": 1,
+  "meal_slots": [
+    {
+      "slot": "sang",
+      "weight": 7
+    },
+    {
+      "slot": "trua",
+      "weight": 8
+    }
+  ],
+  "serving_desc": "1 đĩa cơm",
+  "serving_grams": 260,
+  "ingredients": [
+    {
+      "ingredient_slug": "com-trang",
+      "quantity": 180,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hen",
+      "quantity": 80,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-tim",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dau-an",
+      "quantity": 6,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nuoc-mam-truyen-thong",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "ot-tuoi",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "rau-ram",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "banh-trang",
+      "quantity": 10,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
+    }
+  ],
+  "recipe_steps": [
+    "Hến đãi sạch, luộc tách thịt; cơm nguội đánh tơi.",
+    "Phi hành tím, xào thịt hến với nước mắm, ớt cho săn thơm.",
+    "Cho cơm vào đảo cùng hến 3–4 phút, nêm lại, rắc rau răm; ăn kèm bánh tráng nướng nếu có."
+  ],
+  "recipe_sources": [],
+  "media": [],
+  "estimated_kcal": null,
+  "external_ref": null,
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Phân xử biến thể: com-hen đã có là cơm hến TRỘN nguội (method tron); bản XÀO nóng là món khác trong thực đơn Huế (cơm hến xào bán phổ biến buổi sáng) — khác method và khác cách ăn, giữ độc lập theo phép thử §3, ghi rõ ở đây để khỏi nhầm trùng.",
+  "status": "draft",
+  "source": "curated",
+  "confidence": "unknown",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "loai:com"
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "slug": "tam-huu",
+  "parent_dish_slug": null,
+  "country_code": "VN",
+  "region_code": "vn-quang-nam",
+  "names": [
+    {
+      "locale": "vi",
+      "name": "Tôm hữu (tám hữu)",
+      "is_primary": true
+    },
+    {
+      "locale": "en",
+      "name": "Quang Nam shrimp and pork herb rolls",
+      "is_primary": true
+    }
+  ],
+  "is_eat_out": true,
+  "is_home_cook": true,
+  "cooking_method": "song",
+  "completeness_level": 1,
+  "meal_slots": [
+    {
+      "slot": "trua",
+      "weight": 7
+    },
+    {
+      "slot": "toi",
+      "weight": 7
+    },
+    {
+      "slot": "an-vat",
+      "weight": 5
+    }
+  ],
+  "serving_desc": "1 đĩa",
+  "serving_grams": 200,
+  "ingredients": [
+    {
+      "ingredient_slug": "tom-su",
+      "quantity": 80,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "thit-lon-ba-chi",
+      "quantity": 60,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-la",
+      "quantity": 10,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "rau-mui",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nuoc-mam-truyen-thong",
+      "quantity": 8,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "duong-trang",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "chanh",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    }
+  ],
+  "recipe_steps": [
+    "Tôm luộc chín đỏ; ba chỉ luộc chín, thái miếng mỏng dài.",
+    "Xếp tôm và thịt cạnh nhau, dùng lá hành luộc buộc thành từng bó nhỏ cùng rau thơm.",
+    "Pha nước mắm chua ngọt; chấm kèm khi ăn."
+  ],
+  "recipe_sources": [],
+  "media": [],
+  "estimated_kcal": null,
+  "external_ref": null,
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Đặc sản Quảng Nam (tôm hữu = bạn tôm): món bổ sung đủ quota lõi Trung 25 sau khi loại các mục trùng/hoãn — món cuốn lạnh ăn kèm nước chấm — loai mon-chinh theo đúng tiền lệ banh-trang-cuon-thit-heo và nem-lui trong kho (rà soát phân loại độc lập G6 đợt 2 đã phân xử ca biên này: món không trộn gỏi nên không để goi-nom), method song theo cùng tiền lệ.",
+  "status": "draft",
+  "source": "curated",
+  "confidence": "unknown",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "loai:mon-chinh"
+  ]
+}

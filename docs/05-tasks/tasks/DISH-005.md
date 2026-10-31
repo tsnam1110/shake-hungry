@@ -3,7 +3,7 @@
 **Mã task:** DISH-005
 **Giai đoạn:** GĐ3
 **Loại:** Dữ liệu
-**Status:** 🔵 IN PROGRESS — đợt 1 (canh + rau) đã sản xuất xong 2026-10-31, chờ duyệt công thức; các đợt còn lại chưa làm
+**Status:** 🔵 IN PROGRESS — đợt 1 (canh + rau) và đợt 2 (mặn nhanh + lõi Trung) đã sản xuất xong 2026-10-31, chờ duyệt công thức; đợt 3 (chay + sáng) chưa làm
 **Ngày tạo:** 2026-10-31
 **Ngày bắt đầu:** 2026-10-31
 **Ngày hoàn thành:** —
@@ -21,8 +21,8 @@ dự án duyệt 2026-10-31 (báo cáo tầm soát + kế hoạch DISH-005/Mức
 
 1. **Canh +30** — phân bổ để cả 3 miền đều đạt tối thiểu 20 món canh.
 2. **Rau/xào/luộc +30** — nhóm rau ăn kèm mâm cơm.
-3. **Món mặn nhanh ≤30 phút +40** (chưa làm).
-4. **Lõi miền Trung +25** (chưa làm; đợt 1 đã đóng góp phần canh Trung).
+3. **Món mặn nhanh ≤30 phút +40** (✅ đợt 2).
+4. **Lõi miền Trung +25** (✅ đợt 2; đợt 1 đã đóng góp phần canh Trung).
 5. **Món chính chay +20** (chưa làm).
 6. **Bữa sáng tự nấu +15** (chưa làm).
 7. Song song: nâng Mức 2 thật cho danh sách 50 món đợt 1 của kế hoạch (task riêng khi triển khai).
@@ -96,10 +96,90 @@ Bắc 33 (13 `vn` + 18 `vn-north` + 2 `vn-ha-noi`) · Trung 20 · Nam 20 (19 `vn
 | Canh bí rợ nấu tôm (Nam) | ĐỔI thành `canh-bi-ro-suon` | Bản bí đỏ + tôm đã biên soạn ở quota Trung (`canh-bi-do-tom`); theo phép thử biến thể EDITORIAL-GUIDE §3, hai file chỉ khác nhãn miền là không đủ độc lập — bản Nam đổi sang nấu sườn |
 | Cải bó xôi xào tỏi | Giữ, dùng slug `rau-bina` | Theo §4 kế hoạch: `rau-bina` đã xác nhận là spinach — không tạo slug trùng |
 
+### Đợt 2 — mặn nhanh +40, lõi Trung +25 (✅ đã sản xuất 2026-10-31, chờ duyệt)
+
+**Nguyên liệu biên soạn trước: 6 file mới** trong `data/ingredients/`:
+
+| Slug | Kết quả | Nguồn / lý do |
+|---|---|---|
+| `ca-bac-ma` | ✅ 103 kcal (low) | DKBM/TKPI EA023 qua bản đăng lại organisasi.org (đạm 22, béo 1, carb 0, nước 76). USDA không có chi *Rastrelliger*; mapping_note ghi xung đột chưa phân xử với một bản "TKPI 2017" (125 kcal) và việc KHÔNG áp tỉ lệ ăn được 80% của DKBM (phần ăn được để null theo kỷ luật DATA-008) |
+| `long-ga` | ✅ 124 kcal (medium) | USDA SR Legacy 171057 (chicken giblets, raw) |
+| `banh-uot` | ✅ 108 kcal (low) | USDA SR Legacy 168914 — cùng tiền lệ ánh xạ sợi gạo tươi của `bun-tuoi`/`banh-pho-tuoi` |
+| `heo-quay` | ⬜ null + hồ sơ | Không có nguồn đạt chuẩn cho heo quay thành phẩm; số thịt sống không còn đúng sau quay → món phụ thuộc HOÃN |
+| `mam-tom-chua` | ⬜ null + hồ sơ | SR 172238 là tôm lên men nguyên con Thái — khác bản chất mắm xay Huế; tỉ lệ tôm/cơm/muối mỗi nhà mỗi khác |
+| `oc-hut` | ⬜ null + hồ sơ | Tên gọi chung nhiều loài ốc biển nhỏ — không bảng thành phần tương ứng |
+
+`nam-dui-ga` không biên soạn (không món nào của §3.3/§3.4 dùng); `cu-cai-trang` đã có trong kho.
+Đồng thời bổ sung luật `TaggingRules` cho `mam-tom-chua` (dong-vat / len-men / dị ứng tom +
+mam-tom) và `oc-hut` (dị ứng dong-vat-co-vo).
+
+**Mặn nhanh +40/40** — đủ số theo §3.3; tiêu chí ≤30 phút ghi trong từng `recipe_steps` (tổng
+thời lượng từng món đều ≤30′). 5 món chiên mới theo **Phương án A** (không kê dầu chiên chính).
+**5 món thay được phân xử** (ghi cả trong `import_note` của món thay):
+
+| Món kế hoạch | Xử lý | Lý do |
+|---|---|---|
+| Đậu phụ sốt cà chua | → `trung-khuay-ca-chua` | Trùng `dau-phu-sot-ca` đã có — tên đầy đủ của nó chính là "Đậu phụ sốt cà chua" (phép thử §3). Ứng viên thay đầu tiên `dau-phu-kho-nam-huong` cũng trùng `dau-phu-kho-nam` đã có — V7 phát hiện, đã huỷ |
+| Tôm rim thịt ba chỉ | → `nam-kho-tieu` | Đã có trong kho ở slug `tom-rim` với thành phần gần như trùng — V7 phát hiện ở vòng rà soát, đã huỷ bản trùng; món thay là món chay (nêm nước tương) |
+| Heo quay kho cải chua | → `suon-rang-muoi` | `heo-quay` null (xem trên) |
+| Cá thu chiên sốt cà | → `bo-xao-la-lot` | `ca-thu-sot-ca` đã có chính là món này dạng kho; `ca-thu` chưa có `oil_absorption_pct` nên dạng chiên chưa tính được phần dầu |
+| Chả trứng hấp | → `thit-xao-mam-ruoc` | `cha-trung` đã có |
+
+`banh-khoai` (nhóm Trung) đổi nhân `thit-lon-ba-chi` thay `thit-lon-nac-vai` của kế hoạch:
+nac-vai chưa có `oil_absorption_pct` — món chiên không được thiếu hệ số cho nguyên liệu chính.
+
+**Lõi Trung +25/25** — mọi món mang mã vùng Trung, không món nào gán `vn` chung chung:
+vn-hue 9 · vn-central 9 · vn-quang-nam 5 · vn-nghe-an 2.
+
+- **4 biến thể đúng cơ chế** `parent_dish_slug` (kế hoạch §3.4 dự phòng sẵn):
+  `banh-canh-ca-loc-quang-tri`, `ca-bong-kho-tieu-quang`, `chao-ca-loc-trung`, `mit-tron-thit`
+  (tạo sau khi cặp gỏi/nộm mít non đã quyết xong ở pha tầm soát). Cây vùng chưa có mã Quảng
+  Trị/Bình Định → vn-central.
+- **19 món độc lập**, gồm `com-hen-xao` (khác `com-hen` trộn nguội ở method — phân xử ghi tại
+  file), đôi `sup-luon` + `chao-luon-nghe-an`, `mam-ca-ro` (weight bữa để 2 theo bài học M-4
+  của pha tầm soát), `tam-huu` (bổ sung đủ quota).
+- **3 món thay**: tom-chua-thit-luoc → `hen-xao` (`mam-tom-chua` null); oc-hut-xao-dua →
+  `chao-ngheu` (`oc-hut` null); tre-tron → `nem-lui` (`rieng` null — tré phụ thuộc riềng theo
+  khối lượng đáng kể).
+
+**Cổng G1–G7 đợt 2** (đo thật 2026-10-31):
+
+- **G1** validate: **1.106 bản ghi — 0 🔴**, 38 🟡 đều thuộc các nhóm cảnh báo cũ (V9-DB:
+  món nhỏ dưới 50 kcal/khẩu phần như nước chấm/món luộc — validator đọc DB nên số 🟡 thay
+  đổi theo trạng thái recompute của DB, đợt 1 đã ghi nhận nhóm này; V10 mỡ 902; V8 nguyên
+  liệu chưa món nào dùng — gồm 3 hồ sơ null mới lập có chủ đích; 2 cặp V7 tên giống nhau cũ).
+- **G2** seed + recompute: kho **621 món / 403 nguyên liệu** (363 có số); **616/621 món tính
+  được** — 5 món không tính được vẫn là đúng 5 hồ sơ thiếu dữ liệu thật cũ. **65/65 món mới
+  tính được (100%)**. Món dùng nguyên liệu tầng 6 (`ca-bac-ma`) tự mang cờ chưa kiểm định.
+- **G3** Pest: **114/114 xanh** ở lần chạy cuối trên HEAD `207685c`. Lưu ý vận hành: giữa
+  đợt, phiên song song (REC-003) sửa dở `Recommender` chưa commit làm test lắc USR-004 đỏ
+  thoáng qua 1 lần — không liên quan dữ liệu đợt này (test đó tự dựng fixture, không đọc
+  `data/`); sau khi phiên kia commit REC-003, toàn bộ 114 test xanh với dữ liệu đợt 2.
+- **G4** kiểm tay 10 món (5/nhóm): đạm chính 100–180 g/khẩu phần khớp tiền lệ kho; chênh
+  serving ↔ tổng nguyên liệu nằm trong biên độ tiền lệ (món nước không kê nước dùng;
+  `thit-ngam-mam` ghi chú nước ngâm không ăn hết tại file).
+- **G5** nhóm chiên mới vs tham chiếu độc lập QA-002 lần 3 (Variant A: trứng 4,2 · thịt 4 ·
+  tôm thịt 7 · vỏ bột gạo 16): **5/5 trong ±20%**, lệch −2,7%…0,0% (trung-chien-thit-bam
+  −0,6%, cha-la-lot 0,0%, trung-duc-thit −0,5%, trung-chien-hanh −0,9%, banh-khoai −2,7%).
+- **G6** rà phân loại ĐỘC LẬP 65/65 (agent riêng, 8 tiêu chí): **0 lỗi chắc chắn**; 3 ca
+  biên được phân xử: (1) `tam-huu` đổi `loai:goi-nom` → `mon-chinh` cho nhất quán tiền lệ
+  món cuốn trong kho (`banh-trang-cuon-thit-heo`, `nem-lui`) — đã sửa; (2) `banh-uot-long-heo`
+  không có slot an-vat — giữ nguyên vì khớp hệt tiền lệ `banh-uot-cha-lua`; (3) `thit-ngam-mam`
+  method `luoc` — giữ (từ vựng method không có "ngâm"). Vòng rà soát này cũng phát hiện 2
+  món trùng món đã có (xem bảng thay thế) — đã huỷ và thay món khác cùng quota. Diet suy
+  kiểm chứng trong DB: 3 món chay mới (`nam-kho-tieu`, `dau-phu-rim-nam` — mặn nhanh;
+  `banh-it-la-gai` — Trung) đúng `diet:chay`; món nêm nước mắm suy mặn đúng; `mam-ca-ro`
+  đúng nhóm nuoc-cham weight 2.
+- **G7** tài liệu cùng commit: file task này + ROADMAP + CLAUDE §0 + AGENTS.md.
+
+Sau đợt 2: **325 công thức chờ chủ dự án duyệt** (200 DISH-004 + 60 đợt 1 + 65 đợt 2).
+Món hoãn chờ nguồn: heo-quay-kho-cai-chua, tom-chua-thit-luoc, oc-hut-xao-dua, tre-tron.
+
 ### Các đợt còn lại (chưa làm — giữ nguyên phạm vi kế hoạch)
 
-- [ ] Món mặn nhanh +40 (kèm biên soạn `ca-bac-ma`, `ca-thu`, `nam-dui-ga` nếu món dùng tới).
-- [ ] Lõi miền Trung +25 (món chính — canh Trung đã đạt quota ở đợt 1).
+- [x] Món mặn nhanh +40 (đợt 2 — kèm biên soạn `ca-bac-ma`, `long-ga`, `banh-uot`; `nam-dui-ga`
+  không món nào dùng nên chưa biên soạn).
+- [x] Lõi miền Trung +25 (đợt 2 — món chính là chủ yếu; canh Trung đã đạt quota ở đợt 1).
 - [ ] Món chính chay +20 (kèm `cu-cai-trang`; cổng phụ: 100% món chay mới phải suy ra `diet:chay`).
 - [ ] Bữa sáng tự nấu +15.
 - [ ] Khi có nguồn đạt chuẩn cho `ca-dia` / `mang-chua` / `ngong-cai` / `la-he` / `rau-dang` /
@@ -161,3 +241,8 @@ kết quả đo thật 2026-10-31:
   chi tiết (số USDA lấy từ bản trích SR Legacy trong `data/reference/` — nguồn chính thống tại máy);
   nhãn cá chuồn lấy qua trang đăng lại nhãn USDA Branded vì không mở được bản ghi gốc.
 - 60 công thức đợt 1 cộng với 200 công thức DISH-004 = **260 công thức đang chờ chủ dự án duyệt**.
+- Đợt 2 (2026-10-31): thêm 65 công thức → **tổng 325 công thức chờ duyệt**. Khi tra DKBM cho
+  `ca-bac-ma`: tránh các bản đăng lại ghi lẫn "125 kcal" (trang hocnaumonngon ghi nguồn lẫn
+  USDA cho cá ngừ) — bản organisasi.org giữ đúng bộ số EA023 (103 kcal) khớp phân tích
+  proximate trên tạp chí IFRJ; xung đột đã ghi vào `mapping_note`, chờ bảng DKBM/TKPI chính
+  thống đối chiếu khi có.

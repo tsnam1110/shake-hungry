@@ -1,0 +1,104 @@
+{
+  "slug": "banh-uot-long-heo",
+  "parent_dish_slug": null,
+  "country_code": "VN",
+  "region_code": "vn-quang-nam",
+  "names": [
+    {
+      "locale": "vi",
+      "name": "Bánh ướt lòng heo",
+      "is_primary": true
+    },
+    {
+      "locale": "en",
+      "name": "Steamed rice sheets with pork offal, Quang Nam style",
+      "is_primary": true
+    }
+  ],
+  "is_eat_out": true,
+  "is_home_cook": true,
+  "cooking_method": "song",
+  "completeness_level": 1,
+  "meal_slots": [
+    {
+      "slot": "sang",
+      "weight": 8
+    },
+    {
+      "slot": "trua",
+      "weight": 6
+    }
+  ],
+  "serving_desc": "1 đĩa",
+  "serving_grams": 260,
+  "ingredients": [
+    {
+      "ingredient_slug": "banh-uot",
+      "quantity": 120,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "long-lon",
+      "quantity": 80,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nuoc-mam-truyen-thong",
+      "quantity": 8,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "duong-trang",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "chanh",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "rau-mui",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    }
+  ],
+  "recipe_steps": [
+    "Lòng heo làm sạch, luộc chín với gừng và muối, thái miếng vừa ăn.",
+    "Bánh ướt trải đĩa, xếp lòng lên trên, rắc rau thơm.",
+    "Pha nước mắm chua ngọt từ nước mắm, đường, chanh; chấm kèm khi ăn."
+  ],
+  "recipe_sources": [],
+  "media": [],
+  "estimated_kcal": null,
+  "external_ref": null,
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Dùng nguyên liệu banh-uot mới biên soạn đợt này (ánh xạ SR 168914 theo tiền lệ sợi gạo tươi). Nước chấm pha kê trong thành phần theo tiền lệ các món gỏi/cuốn của kho.",
+  "status": "draft",
+  "source": "curated",
+  "confidence": "unknown",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "loai:banh"
+  ]
+}

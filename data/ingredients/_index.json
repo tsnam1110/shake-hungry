@@ -1,6 +1,6 @@
 {
   "_generated_by": "php artisan lacdoi:export-data — không sửa tay (DATA-REPOSITORY §2)",
-  "count": 397,
+  "count": 403,
   "ingredients": [
     {
       "slug": "bach-tuoc",
@@ -40,6 +40,11 @@
     {
       "slug": "banh-trang",
       "name_vi": "Bánh tráng (bánh đa nem)",
+      "category": "tinh-bot"
+    },
+    {
+      "slug": "banh-uot",
+      "name_vi": "Bánh ướt (tờ bánh gạo hấp, tươi)",
       "category": "tinh-bot"
     },
     {
@@ -201,6 +206,11 @@
       "slug": "buoi-chum",
       "name_vi": "Bưởi chùm (grapefruit, múi tươi)",
       "category": "trai-cay"
+    },
+    {
+      "slug": "ca-bac-ma",
+      "name_vi": "Cá bạc má (sống)",
+      "category": "thuy-san"
     },
     {
       "slug": "ca-basa",
@@ -838,6 +848,11 @@
       "category": "thuy-san"
     },
     {
+      "slug": "heo-quay",
+      "name_vi": "Heo quay (thịt ba chỉ quay giòn bì, thành phẩm)",
+      "category": "thit"
+    },
+    {
       "slug": "hoa-bi",
       "name_vi": "Hoa bí (bông bí, sống)",
       "category": "rau-cu"
@@ -998,6 +1013,11 @@
       "category": "trai-cay"
     },
     {
+      "slug": "long-ga",
+      "name_vi": "Lòng gà (mề, gan, tim — sống)",
+      "category": "thit"
+    },
+    {
       "slug": "long-lon",
       "name_vi": "Lòng lợn (ruột lợn làm sạch, sống)",
       "category": "thit"
@@ -1055,6 +1075,11 @@
     {
       "slug": "mam-tom",
       "name_vi": "Mắm tôm",
+      "category": "gia-vi"
+    },
+    {
+      "slug": "mam-tom-chua",
+      "name_vi": "Mắm tôm chua (tôm ủ chua nguyên con, thành phẩm)",
       "category": "gia-vi"
     },
     {
@@ -1345,6 +1370,11 @@
     {
       "slug": "oc-buou",
       "name_vi": "Ốc bươu (ốc nhồi)",
+      "category": "thuy-san"
+    },
+    {
+      "slug": "oc-hut",
+      "name_vi": "Ốc hút (ốc biển nhỏ, sống)",
       "category": "thuy-san"
     },
     {

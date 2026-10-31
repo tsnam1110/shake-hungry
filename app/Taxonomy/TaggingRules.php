@@ -37,6 +37,7 @@ final class TaggingRules
         'nuoc-mam-cong-nghiep' => 'dong-vat', 'nuoc-mam-truyen-thong' => 'dong-vat',
         'mam-ca-linh' => 'dong-vat', 'mam-ca-sac' => 'dong-vat', 'mam-nem' => 'dong-vat',
         'mam-ruoc' => 'dong-vat', 'mam-tom' => 'dong-vat',
+        'mam-tom-chua' => 'dong-vat', // mắm tôm chua = tôm ủ chua nguyên con (đợt DISH-005 đợt 2)
         'dau-hao' => 'dong-vat', // dầu hào — chiết xuất hàu
         'mat-ong' => 'dong-vat', // mật ong — sản phẩm của ong
         'sa-te' => 'dong-vat', // sa tế thương mại VN phổ biến có tôm khô — lấy chiều an toàn cho nhãn chay
@@ -99,6 +100,7 @@ final class TaggingRules
         'nuoc-mam-truyen-thong' => 'len-men', 'tuong-ban' => 'len-men',
         'chao' => 'len-men', 'nem-chua' => 'len-men', 'sua-chua' => 'len-men',
         'mang-chua' => 'len-men', // măng muối chua lên men — đợt DISH-005
+        'mam-tom-chua' => 'len-men', // tôm ủ chua lên men — đợt DISH-005 đợt 2
         'ruou-trang' => 'len-men', 'ruou-vang-do' => 'len-men', 'bia' => 'len-men',
         'dam-gao' => 'len-men', 'nuoc-tuong' => 'len-men', 'tuong-den' => 'len-men',
         'dua-cai-muoi' => 'len-men',
@@ -118,6 +120,7 @@ final class TaggingRules
         'bo-dong-vat' => 'che-bien', 'bo-thuc-vat' => 'che-bien', 'mo-lon-nuoc' => 'che-bien',
         'trung-vit-muoi' => 'che-bien', 'banh-phong-tom-chien' => 'che-bien',
         'dau-hao' => 'che-bien', 'sa-te' => 'che-bien', 'xot-mayonnaise' => 'che-bien',
+        'heo-quay' => 'che-bien', // thành phẩm quay sẵn — đợt DISH-005 đợt 2
     ];
 
     /** Nhãn dị ứng theo slug nguyên liệu (TAXONOMY.md §4). */
@@ -126,6 +129,8 @@ final class TaggingRules
         'tom-su' => ['tom'], 'tom-kho' => ['tom'], 'tep' => ['tom'], 'be-be' => ['tom'],
         'tom-the' => ['tom'], 'tom-cang-xanh' => ['tom'], // đợt mở rộng kho 2026-10-31
         'mam-tom' => ['tom', 'mam-tom'], 'mam-ruoc' => ['tom', 'mam-tom'],
+        'mam-tom-chua' => ['tom', 'mam-tom'], // tôm nguyên con ủ chua — đợt DISH-005 đợt 2
+        'oc-hut' => ['dong-vat-co-vo'], // ốc biển nhỏ — đợt DISH-005 đợt 2
         'banh-phong-tom-chien' => ['tom'], 'banh-phong-tom-song' => ['tom'],
         'cua-bien' => ['cua'], 'cua-dong' => ['cua'], 'ghe' => ['cua'],
         'ngheu' => ['dong-vat-co-vo'], 'hau' => ['dong-vat-co-vo'], 'so-diep' => ['dong-vat-co-vo'],

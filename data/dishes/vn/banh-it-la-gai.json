@@ -1,0 +1,100 @@
+{
+  "slug": "banh-it-la-gai",
+  "parent_dish_slug": null,
+  "country_code": "VN",
+  "region_code": "vn-central",
+  "names": [
+    {
+      "locale": "vi",
+      "name": "Bánh ít lá gai",
+      "is_primary": true
+    },
+    {
+      "locale": "en",
+      "name": "Sticky rice cake with ramie leaf and mung bean",
+      "is_primary": true
+    }
+  ],
+  "is_eat_out": true,
+  "is_home_cook": true,
+  "cooking_method": "hap",
+  "completeness_level": 1,
+  "meal_slots": [
+    {
+      "slot": "an-vat",
+      "weight": 8
+    }
+  ],
+  "serving_desc": "1 phần (3 cái)",
+  "serving_grams": 150,
+  "ingredients": [
+    {
+      "ingredient_slug": "bot-nep",
+      "quantity": 70,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dau-xanh-hat",
+      "quantity": 30,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "duong-trang",
+      "quantity": 15,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "cui-dua-nao",
+      "quantity": 15,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "la-gai",
+      "quantity": 10,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "vung",
+      "quantity": 2,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    }
+  ],
+  "recipe_steps": [
+    "Đậu xanh ngâm, nấu chín, xào với đường và cùi dừa nạo thành nhân.",
+    "Bột nếp nhồi với nước lá gai xay cho vỏ đen bóng, chia viên, bọc nhân.",
+    "Gói lá chuối, hấp 20 phút tới khi bánh trong và dẻo."
+  ],
+  "recipe_sources": [],
+  "media": [],
+  "estimated_kcal": null,
+  "external_ref": null,
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Đặc sản Bình Định (region vn-central — cây vùng chưa có mã Bình Định). Lá gai là lá tạo màu/vỏ bánh, slug la-gai chưa có số dinh dưỡng (hồ sơ null) — để dòng tùy chọn lượng nhỏ theo tiền lệ gia vị chưa có số; phần chính của bánh tính được đầy đủ.",
+  "status": "draft",
+  "source": "curated",
+  "confidence": "unknown",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "loai:banh"
+  ]
+}

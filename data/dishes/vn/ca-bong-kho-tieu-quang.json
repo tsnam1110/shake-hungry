@@ -1,0 +1,104 @@
+{
+  "slug": "ca-bong-kho-tieu-quang",
+  "parent_dish_slug": "ca-bong-kho-tieu",
+  "country_code": "VN",
+  "region_code": "vn-quang-nam",
+  "names": [
+    {
+      "locale": "vi",
+      "name": "Cá bống kho tiêu Quảng Nam",
+      "is_primary": true
+    },
+    {
+      "locale": "en",
+      "name": "Quang Nam goby braised with black pepper",
+      "is_primary": true
+    }
+  ],
+  "is_eat_out": true,
+  "is_home_cook": true,
+  "cooking_method": "kho",
+  "completeness_level": 1,
+  "meal_slots": [
+    {
+      "slot": "trua",
+      "weight": 8
+    },
+    {
+      "slot": "toi",
+      "weight": 8
+    }
+  ],
+  "serving_desc": "1 đĩa",
+  "serving_grams": 190,
+  "ingredients": [
+    {
+      "ingredient_slug": "ca-bong",
+      "quantity": 150,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-tim",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dau-an",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nuoc-mam-truyen-thong",
+      "quantity": 10,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "duong-trang",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hat-tieu-den",
+      "quantity": 1.5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    }
+  ],
+  "recipe_steps": [
+    "Cá bống làm sạch, ướp nước mắm, đường, tiêu 15 phút.",
+    "Phi hành tím, xếp cá vào nồi đất, thêm ít nước nóng.",
+    "Kho lửa nhỏ 15 phút tới khi nước sệt, cá chắc thơm mùi tiêu."
+  ],
+  "recipe_sources": [],
+  "media": [],
+  "estimated_kcal": null,
+  "external_ref": null,
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Biến thể vùng của ca-bong-kho-tieu (bản Nam) theo cơ chế parent_dish_slug — phép thử §3 áp dụng: cùng lõi món, khác vùng và tỉ lệ tiêu/đường theo khẩu vị Quảng Nam; tạo dạng biến thể thay vì món độc lập mới.",
+  "status": "draft",
+  "source": "curated",
+  "confidence": "unknown",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "loai:mon-chinh"
+  ]
+}
