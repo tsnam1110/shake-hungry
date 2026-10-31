@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "luoc",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "chieu",
@@ -106,12 +106,31 @@
     }
   ],
   "recipe_steps": [
-    "Nhào bột năng với nước sôi cho dẻo, cán mỏng rồi cắt khoanh tròn nhỏ.",
-    "Tôm và thịt ba chỉ thái hạt lựu, xào săn với nước mắm, tiêu.",
-    "Gói nhân vào từng khoanh bột, bóp kín mép, thả luộc đến khi bánh trong và nổi.",
-    "Vớt ra trộn mỡ hành, chan nước mắm pha chua ngọt, ăn nóng."
+    "Sơ chế tôm bỏ đầu, vỏ và chỉ lưng; thịt ba chỉ thái hạt lựu nhỏ. Ướp riêng tôm và thịt với chút muối, tiêu, hạt nêm và tỏi băm khoảng 10–20 phút cho thấm.",
+    "Rim thịt trước trên lửa vừa khoảng 10–15 phút đến khi thịt săn, ra mỡ và hơi xém cạnh; cho tôm vào rim tiếp khoảng 10 phút đến khi tôm chuyển đỏ cam, nhân sệt và bóng mỡ thì tắt bếp, để nguội bớt.",
+    "Cho bột năng và chút muối vào âu, chế từ từ nước thật sôi vào giữa bột, khuấy nhanh tay rồi nhào khoảng 5–7 phút đến khi khối bột dẻo mịn, không dính tay; bọc kín bột để không bị khô mặt.",
+    "Ngắt bột thành từng viên nhỏ, cán hoặc ấn dẹt mỏng, đặt nhân tôm thịt vào giữa, gấp đôi miếng bột và miết chặt mép thành hình bán nguyệt, mép kín không hở nhân.",
+    "Đun nồi nước thật sôi với chút muối và dầu, thả bánh vào luộc đến khi bánh nổi lên, vỏ trong nhìn rõ nhân bên trong; vớt ra thả ngay vào âu nước nguội 1–2 phút cho bánh dai và không dính nhau.",
+    "Đun nóng mỡ lợn (hoặc dầu), rưới vào hành lá cắt nhỏ cho hành vừa chín, giữ màu xanh. Pha nước mắm với đường, nước ấm và ớt cắt khoanh, vị mặn ngọt dịu.",
+    "Xếp bánh ra đĩa, rưới mỡ hành lên mặt, chan hoặc chấm nước mắm pha và ăn ngay khi bánh còn ấm để vỏ giữ độ dai trong."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-banh-bot-loc-bang-bot-nang-nhan-tom-thit-dai-ngon-09848",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH: mẻ bột năng 800 g, tôm 200 g, thịt heo 200 g (trang ghi cho 2 người — tỉ lệ bột:tôm:thịt 4:1:1), mỡ hành dầu + hành lá, nước mắm 2 muỗng canh chan — họ 1"
+    },
+    {
+      "url": "https://daylambanh.edu.vn/banh-bot-loc-bang-bot-nang",
+      "accessed": "2026-10-31",
+      "note": "Dạy Làm Bánh Á Âu (Baker Thanh Tuyền): mẻ bột năng 500 g, tôm sông 100 g, thịt ba chỉ 200 g; rim thịt 15 phút rồi rim tôm 10–15 phút; nước chấm 2 mắm : 2 đường : 8 nước — họ 2 (amthucmoimien/bepxua/thongthai chép cùng bộ số này, tính một họ)"
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/5325196",
+      "accessed": "2026-10-31",
+      "note": "Cookpad Huỳnh Ngân: 1 đĩa — bột năng 200 g, tôm 100 g, thịt ba chỉ 100 g, mỡ hành dầu + hành lá, nước mắm 2 thìa + đường 1 thìa — họ 3"
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/banh-loc-tran.webp",
@@ -122,7 +141,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-010 đợt 10: GIỮ Mức 1 do 429 toàn đợt trước khi tới món này — chưa tra cứu, làm lại ở vòng sau. Lưu ý sẵn: nước mắm chan là món riêng — file hiện đang kê nuoc-mam-truyen-thong 12 g + duong-trang 4 g, cần trình phân xử remove theo Q10 khi làm spec chính; mỡ hành (mo-lon-nuoc 5 g + hanh-la 3 g) là dòng hợp lệ giữ lại.]",
+  "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-010 đợt 10: GIỮ Mức 1 do 429 toàn đợt trước khi tới món này — chưa tra cứu, làm lại ở vòng sau. Lưu ý sẵn: nước mắm chan là món riêng — file hiện đang kê nuoc-mam-truyen-thong 12 g + duong-trang 4 g, cần trình phân xử remove theo Q10 khi làm spec chính; mỡ hành (mo-lon-nuoc 5 g + hanh-la 3 g) là dòng hợp lệ giữ lại.] [LV2-011 đợt 11: NÂNG Mức 2 — 3 họ độc lập đã mở đọc thật (Điện Máy XANH; Dạy Làm Bánh Á Âu — Baker Thanh Tuyền; Cookpad Huỳnh Ngân), định lượng file đối chiếu ≥2 họ theo tỉ lệ bột:tôm:thịt (file 80:40:25 nằm trong dải nguồn, từ 200:100:100 đến 800:200:200), không dòng nào lệch >30% theo đồng thuận ≥2 họ nên giữ nguyên định lượng; bước nấu viết lại 7 bước. Bất thường ghi nhận: ĐMX ghi 'cho 2 người' nhưng dùng 800 g bột — khẩu phần trong nguồn bất nhất nội bộ nên chỉ đối chiếu theo tỉ lệ; nước mắm + đường trong file là phần nước chấm pha ăn kèm (mọi họ đều pha nước mắm riêng khi ăn) — giữ dòng theo kỷ luật 0 họ phản đối, vẫn chờ phân xử Q10 như đã ghi đợt 10; mộc nhĩ chỉ xuất hiện ở 1 họ phụ (Cookpad Song Phương, mới qua trích đoạn tìm kiếm) nên không thêm; nguồn dùng tôm sông/tôm nhỏ trong khi file dùng slug tom-su — ghi nhận chờ phân xử slug.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "hap",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -82,11 +82,31 @@
     }
   ],
   "recipe_steps": [
-    "Ngâm nếp và đậu xanh; hấp đậu chín, giã mịn.",
-    "Đồ xôi chín, trộn đậu xanh giã và đường cho hạt xôi rời, bóng (vò).",
-    "Rắc vừng rang khi dùng."
+    "Ngâm gạo nếp 6-8 giờ (hoặc qua đêm) và đậu xanh 3-4 giờ trong hai thau riêng, vo sạch rồi để thật ráo nước; hạt ráo là điều kiện để xôi tơi rời.",
+    "Hấp đậu xanh khoảng 20 phút đến khi chín bở, tán hoặc giã nhuyễn ngay khi còn nóng cho thật mịn, không còn hạt nguyên.",
+    "Trộn muối vào gạo nếp, cho nửa phần đậu xanh đã tán vào và vò nhẹ tay cho đậu áo đều từng hạt gạo mà không làm nát hạt.",
+    "Cho hỗn hợp vào xửng, đồ lần 1 trên nước sôi khoảng 20-30 phút, dùng đũa chọc vài lỗ thoát hơi và thỉnh thoảng xới nhẹ; xôi đạt khi hạt nếp trong, dẻo và không còn lõi sống.",
+    "Trộn đường và phần nước cốt dừa (nếu dùng) vào xôi, đảo đều tay cho hạt xôi bóng nhẹ và có vị ngọt dịu, tránh đảo mạnh làm nát hạt.",
+    "Đổ xôi ra mâm, vò và trộn nốt phần đậu xanh tán còn lại cho hạt xôi rời nhau và áo đậu đều; nếu xôi còn ẩm, đồ lại khoảng 10 phút cho ráo.",
+    "Rắc vừng rang khi dùng; xôi đạt khi hạt tơi rời, vàng nhạt, bùi vị đậu xanh và không dính thành chùm."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/13007546",
+      "accessed": "2026-10-31",
+      "note": "Cookpad (Phan Bao Van): gạo nếp 500g, đậu xanh 300g, nước cốt dừa 50ml, dầu ăn 4 muỗng, đường 2 muỗng, muối 1 muỗng cà phê — quy đổi ~4-5 khẩu phần: nếp ~100-125g, đậu xanh ~60-75g/khẩu phần — họ 1"
+    },
+    {
+      "url": "https://xoichecohoa.com/huong-dan-nau-xoi-vo-tai-nha-cho-cac-ba-me/",
+      "accessed": "2026-10-31",
+      "note": "Xôi Chè Cô Hoa (40 năm kinh nghiệm): gạo nếp 400g, đậu xanh 200g, dầu ăn 2 muỗng, đường 2 muỗng, muối 1 thìa cà phê cho 3-4 phần ăn — quy đổi nếp ~114g, đậu xanh ~57g/khẩu phần — họ 2"
+    },
+    {
+      "url": "https://soctrangtourism.vn/cach-nau-xoi-vo-dau-xanh/",
+      "accessed": "2026-10-31",
+      "note": "Du lịch Sóc Trăng: gạo nếp 500g, đậu xanh 200g, muối 1 thìa cà phê; bản truyền thống Bắc không dùng đường, dầu ăn hay nước cốt dừa và thường ăn kèm muối vừng — họ 3"
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/xoi-vo.webp",
@@ -97,7 +117,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-011 đợt 11: NÂNG Mức 2 — 3 họ độc lập đã mở đọc thật (Cookpad Phan Bao Van, Xôi Chè Cô Hoa, Du lịch Sóc Trăng), đối chiếu ≥2 họ cho nếp/đậu xanh/muối/đường; 0 dòng sửa số vì mọi dòng của file đều nằm trong dải quy đổi của nguồn (nếp ~100-125g, đậu xanh ~40-75g/khẩu phần). Bất thường ghi nhận không sửa: dầu ăn có ở 2/3 họ nhưng họ thứ ba khẳng định bản truyền thống không dùng dầu ăn/nước cốt dừa nên chưa đủ 3/3 để thêm dòng dau-an; nước cốt dừa và vừng rang chỉ được 1/3 họ ủng hộ trực tiếp (vừng là đồ ăn kèm muối vừng ở họ 3) nên giữ nguyên dạng tuỳ chọn sẵn có của file.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

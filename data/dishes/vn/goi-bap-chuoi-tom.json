@@ -25,7 +25,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "tron",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -57,7 +57,7 @@
     },
     {
       "ingredient_slug": "thit-lon-ba-chi",
-      "quantity": 50,
+      "quantity": 70,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -105,7 +105,7 @@
     },
     {
       "ingredient_slug": "duong-trang",
-      "quantity": 6,
+      "quantity": 12,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -121,11 +121,30 @@
     }
   ],
   "recipe_steps": [
-    "Bắp chuối thái sợi mỏng ngâm nước chanh cho trắng và bớt chát, vớt ráo.",
-    "Tôm luộc bóc vỏ, thịt ba chỉ luộc thái mỏng; pha nước mắm chua ngọt.",
-    "Trộn bắp chuối với tôm, thịt và nước trộn, rau răm; rắc lạc rang và hành phi khi dọn."
+    "Bắp chuối bóc bỏ bẹ già, bào sợi mỏng đến đâu thả ngay vào thau nước pha nước cốt chanh và chút muối đến đó; ngâm 15–20 phút cho trắng và bớt chát, vớt ra xả sạch, để ráo.",
+    "Thịt ba chỉ chà muối, rửa sạch, chần sơ 1–2 phút rồi luộc lửa vừa khoảng 25–30 phút đến khi xăm đũa không ra nước hồng; vớt ra ngâm nước lạnh cho nguội hẳn, thái lát mỏng.",
+    "Dùng nồi nước luộc thịt, cho tôm vào luộc khoảng 5 phút đến khi tôm cong và chuyển màu hồng; vớt ra để nguội, bóc vỏ, chẻ đôi nếu tôm to.",
+    "Pha nước trộn: khuấy nước mắm với đường, nước cốt chanh và ít nước lọc cho tan hết, cho tỏi ớt băm vào sau cùng để nổi lên trên mặt.",
+    "Cho bắp chuối, thịt và tôm vào tô lớn, rưới nước trộn, trộn nhẹ tay khoảng 2–3 phút cho thấm đều mà không làm nát sợi bắp chuối; nêm lại vị chua mặn ngọt.",
+    "Bày gỏi ra đĩa, rắc đậu phộng rang giã dập, hành phi và rau răm lên trên; ăn ngay khi bắp chuối còn giòn, có thể kèm bánh phồng tôm."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-goi-bap-chuoi-hoa-chuoi-tom-thit-gion-ngon-hap-dan-09819",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH (biên tập Nguyễn Dạ Thu Thảo): mẻ 4 người — tôm 300g (75g/người), thịt ba chỉ 300g (75g/người), bắp chuối 1 cái, đậu phộng 50g (12,5g/người), nước mắm 3 muỗng canh, đường pha sốt 5 muỗng canh — họ 1"
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/17003129-hoa-chu%E1%BB%91i-tr%E1%BB%99n-tom-th%E1%BB%8Bt",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Bếp của Quỳnh: mẻ 3 người — tôm 300g (100g/người), thịt ba chỉ 200g (~67g/người), đậu phộng rang 100g, sốt mắm 2 thìa + đường 3 thìa — họ 2 (biến thể xào tôm thịt thay vì luộc)"
+    },
+    {
+      "url": "https://www.bluestone.com.vn/blogs/vao-bep/goi-hoa-chuoi-tom-thit",
+      "accessed": "2026-10-31",
+      "note": "BlueStone: bắp chuối 1 cái khoảng 500g, tôm sú 200g, thịt ba rọi 200g, đậu phộng rang 3 muỗng canh, chanh 2 quả, sốt nước mắm 2 muỗng canh + đường 2 muỗng canh — họ 3 (không ghi số người, dùng đối chiếu tỉ lệ tôm:thịt 1:1)"
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/goi-bap-chuoi-tom.webp",
@@ -136,7 +155,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-011 đợt 11: NÂNG Mức 2. 3 họ độc lập (ĐMX 4 người; Cookpad Bếp của Quỳnh 3 người; BlueStone). Sửa theo đồng thuận 2 họ có khẩu phần tường minh lệch >30%: thit-lon-ba-chi 50→70 (ĐMX 75g/người, Quỳnh ~67g/người), duong-trang 6→12 (ĐMX ~15g/người, Quỳnh ~12g/người). Bất thường ghi nhận không sửa: file thiếu ca-rot + hanh-tay (ĐMX và Quỳnh đều có nhưng BlueStone không có nên chưa đạt điều kiện mọi họ để thêm dòng); rau thơm ở ĐMX là húng lủi, ở Quỳnh là rau húng — file dùng rau-ram (BlueStone có rau răm) nên giữ nguyên chờ phân xử; rau-ram chưa có số dinh dưỡng nhưng là nguyên liệu phụ, không chặn nâng.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

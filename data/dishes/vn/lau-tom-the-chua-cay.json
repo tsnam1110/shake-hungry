@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "toi",
@@ -134,11 +134,31 @@
     }
   ],
   "recipe_steps": [
-    "Nấu nước dùng với sả, riềng, lá chanh, cà chua và ớt; nêm nước mắm, đường, nước cốt chanh cho vị chua cay rõ.",
-    "Bày tôm thẻ, mực, nấm rơm và rau muống ra đĩa riêng.",
-    "Khi ăn nhúng tôm, mực và rau vào nồi lẩu sôi, ăn kèm bún tươi."
+    "Sơ chế tôm thẻ: rửa sạch, cắt râu và chân, rút chỉ đen dọc lưng; mực làm sạch, cắt khoanh hoặc miếng vừa ăn rồi để ráo nước.",
+    "Nấm rơm cắt bỏ chân, ngâm nước muối loãng khoảng 10 phút, rửa lại và chẻ đôi quả to; rau muống nhặt khúc 4–5 cm rửa sạch để ráo, cà chua rửa sạch cắt múi cau.",
+    "Sả đập dập cắt khúc, riềng thái lát rồi đập dập, lá chanh rửa sạch vò nhẹ cho ra tinh dầu, ớt đập dập — nhóm gia vị thơm chuẩn bị sẵn trước khi nấu.",
+    "Đun sôi khoảng 1,2–1,5 lít nước (hoặc nước dùng), cho sả, riềng, lá chanh và cà chua vào nấu lửa vừa 5–7 phút, tới khi nước thơm rõ và cà chua mềm, ra màu hồng nhạt.",
+    "Nêm nước mắm, đường và nước cốt chanh cho vị chua – cay – mặn – ngọt cân bằng; thả nấm rơm vào nấu thêm 2–3 phút tới khi nấm chín mềm.",
+    "Bày tôm, mực và rau muống ra đĩa riêng; chuyển nước lẩu sang nồi lẩu đặt trên bếp tại bàn và giữ sôi lăn tăn trong suốt bữa ăn.",
+    "Khi ăn nhúng tôm 2–3 phút tới khi tôm cong và đỏ hồng, mực nhúng vừa săn lại, rau nhúng vừa chín tái; ăn kèm bún tươi và chấm nước mắm ớt nếu thích đậm vị."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/3-cach-nau-lau-thai-tom-yum-tu-don-gian-den-thap-cam-thom-04517",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH: thập cẩm 5 người (tôm 200 g→40 g, mực 200 g→40 g, rau ăn kèm 250 g→50 g/khẩu phần) và lẩu tôm tom yum 7 người (tôm 560 g→80 g, nấm 370 g→53 g, đường ~30 g→4,3 g/khẩu phần) — họ 1"
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/8198801",
+      "accessed": "2026-10-31",
+      "note": "Cookpad Loan Loan: lẩu tôm chua cay 4 người — tôm sú 500 g→125 g, nấm rơm 200 g→50 g, cà chua 4 trái→1 trái, bún tươi 1 kg cho cả nồi — họ 2"
+    },
+    {
+      "url": "https://yummyday.vn/lau-tom-chua-cay-651",
+      "accessed": "2026-10-31",
+      "note": "YummyDay: mẻ tôm 500 g, nấm rơm 150 g, cà chua bi 250 g, nước cốt chanh 20 ml — cùng cỡ mẻ 4 người với họ 2, quy đổi tôm ~125 g, nấm ~38 g/khẩu phần — họ 3"
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/lau-tom-the-chua-cay.webp",
@@ -149,7 +169,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-011 đợt 11: NÂNG Mức 2 — 3 họ độc lập đã mở: Điện Máy XANH (thập cẩm 5 người: tôm 40 g, mực 40 g, rau ăn kèm 50 g/khẩu phần; lẩu tôm tom yum 7 người: tôm 80 g, nấm 53 g, đường ~4,3 g/khẩu phần), Cookpad Loan Loan (4 người: tôm sú 500 g→125 g, nấm rơm 200 g→50 g, cà chua 1 trái/khẩu phần), YummyDay (mẻ tôm 500 g, nấm rơm 150 g, cà chua bi 250 g — cùng cỡ mẻ 4 người). Mọi dòng file nằm trong dải nguồn nên giữ nguyên định lượng; bún 80 g giữ theo quy ước §14 nhóm lẩu. Nguồn dùng tôm sú/tôm nói chung, file dùng tôm thẻ — cùng vai trò nguyên liệu chính. Ghi nhận: DMX ghi nấm rơm 20 g/5 người ở bản thập cẩm, bất thường so với chính các bản khác của DMX (370 g/7 người), không lấy làm căn cứ. rieng và la-chanh chưa có số dinh dưỡng (fct_source null) nhưng là gia vị thơm phụ, không phải nguyên liệu định danh — nguyên liệu chính tom-the đã có số.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

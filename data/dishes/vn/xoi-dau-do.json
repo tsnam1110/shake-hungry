@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "hap",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -42,7 +42,7 @@
     },
     {
       "ingredient_slug": "dau-do-hat",
-      "quantity": 50,
+      "quantity": 70,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -50,7 +50,7 @@
     },
     {
       "ingredient_slug": "nuoc-cot-dua",
-      "quantity": 15,
+      "quantity": 22,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -74,11 +74,30 @@
     }
   ],
   "recipe_steps": [
-    "Đậu đỏ ngâm mềm, nấu chín tới; gạo nếp ngâm qua đêm.",
-    "Trộn nếp với đậu đỏ và chút muối, đồ chín; giữa chừng rưới nước cốt dừa, đồ tiếp cho xôi dẻo.",
-    "Xới ra gói, rắc vừng rang hoặc muối vừng khi ăn."
+    "Đậu đỏ vo sạch, ngâm nước 6–8 tiếng hoặc qua đêm cho hạt nở mềm. Gạo nếp vo sạch, ngâm 1–2 tiếng rồi vớt ra để ráo (nếu nấu nồi cơm điện có thể chỉ vo ráo).",
+    "Luộc đậu đỏ với chút muối trên lửa vừa khoảng 20–30 phút đến khi hạt chín mềm nhưng chưa nát, đậy nắp ủ thêm khoảng 15 phút; vớt đậu ra, giữ lại phần nước luộc đậu.",
+    "Trộn đều nếp đã ráo với đậu đỏ và muối, cho vào xửng hoặc nồi cơm điện, chế nước luộc đậu xâm xấp mặt, đồ/nấu khoảng 30–35 phút đến khi hạt nếp nở căng, dẻo và thơm.",
+    "Mở nắp, dùng đũa xới tơi xôi từ dưới lên, rưới đều nước cốt dừa lên mặt, đậy nắp đồ/nấu tiếp 10–15 phút cho xôi ngấm vị béo và hạt bóng.",
+    "Tắt bếp, ủ xôi thêm 10–15 phút cho hạt ráo dẻo rồi xới ra gói hoặc đĩa khi còn nóng.",
+    "Rắc vừng rang lên mặt khi ăn; ăn nóng, có thể kèm muối vừng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.cet.edu.vn/cach-nau-xoi-dau-den-va-dau-do",
+      "accessed": "2026-10-31",
+      "note": "CET.edu.vn (Chef Lập): mẻ gạo nếp 500 g, đậu đỏ 300 g (quy đổi 90 g/150 g nếp), dừa nạo khô 200 g vắt lấy nước cốt, mè trắng 50 g, gia vị muối + đường — họ 1"
+    },
+    {
+      "url": "https://www.bluestone.com.vn/blogs/vao-bep/cach-nau-xoi-bang-noi-com-dien-thom-lung",
+      "accessed": "2026-10-31",
+      "note": "BlueStone: mẻ gạo nếp 800 g, đậu đỏ 400 g (quy đổi 75 g/150 g nếp), nước cốt dừa 120 ml (≈22,5 g/150 g nếp), đường 70 g, muối 10 g; luộc đậu trước, nấu xôi bằng nước luộc đậu — họ 2 (nauchuananngon/memart cùng bộ số, tính một họ)"
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/2276805",
+      "accessed": "2026-10-31",
+      "note": "Cookpad Hà Vy: gạo nếp 600 g, đậu đỏ 200–250 g (quy đổi 50–62,5 g/150 g nếp), muối 3 g; ăn kèm đậu xanh đánh và mỡ hành (biến thể trình bày kiểu xôi xéo, không cốt dừa, không đường) — họ 3"
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/xoi-dau-do.webp",
@@ -89,7 +108,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt)",
+  "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-011 đợt 11: NÂNG Mức 2 — 3 họ độc lập đã mở đọc thật (CET.edu.vn — Chef Lập; BlueStone; Cookpad Hà Vy), định lượng quy đổi theo cơ số 150 g nếp/khẩu phần của file và đối chiếu ≥2 họ. Sửa 2 dòng: dau-do-hat 50→70 g (quy đổi nguồn: CET 90 g, BlueStone 75 g, Hà Vy 50–62,5 g — 2 họ lệch >30% so với file, sửa về dải nguồn); nuoc-cot-dua 15→22 g (BlueStone quy đổi ≈22,5 g; CET dùng dừa nạo 60 g/150 g nếp vắt cốt, cùng chiều cao hơn hẳn file). Bất thường ghi nhận: đường có ở 2/3 họ (CET liệt kê trong gia vị, BlueStone 70 g/mẻ ≈13 g/150 g nếp pha vào nước cốt dừa) nhưng Cookpad Hà Vy không dùng nên chưa đủ điều kiện thêm dòng — chờ phân xử; vung-rang file 3 g (tuỳ chọn) thấp hơn CET quy đổi 15 g/150 g nếp nhưng chỉ 1 họ có số, 2 họ còn lại chỉ nhắc muối mè ăn kèm — giữ nguyên; dầu ăn xuất hiện lẻ tẻ, không đồng thuận (BlueStone 1 muỗng canh/mẻ, Hà Vy 'xíu dầu ăn', CET không có) — không thêm.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

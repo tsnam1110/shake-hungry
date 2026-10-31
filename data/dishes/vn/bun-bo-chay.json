@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -162,12 +162,30 @@
     }
   ],
   "recipe_steps": [
-    "Hầm nước dùng rau củ với sả đập dập và nấm hương.",
-    "Phi dầu với ớt bột, sả băm tạo màu; cho mì căn, đậu phụ vào xào thấm.",
-    "Nêm nước tương, muối, đường phèn (không dùng mắm ruốc).",
-    "Trụng bún, chan nước dùng; ăn kèm bắp cải, giá, húng quế."
+    "Sơ chế: nấm hương khô ngâm nước ấm khoảng 30 phút cho nở mềm, vắt ráo và giữ lại nước ngâm; sả chia hai phần, một phần đập dập cắt khúc, phần còn lại băm nhỏ; mì căn và đậu phụ chiên cắt miếng vừa ăn.",
+    "Hầm nước dùng: cho cà rốt, hành tây và bắp cải cùng sả đập dập và nước ngâm nấm vào nồi, nấu lửa vừa 20–30 phút cho rau củ ra vị ngọt; vớt bỏ xác rau củ, giữ lại phần nước dùng trong.",
+    "Xào topping: phi sả băm với dầu ăn trên lửa vừa đến khi thơm, cho ớt bột vào đảo nhanh cho lên màu đỏ cam, rồi cho mì căn, nấm bào ngư và nấm hương vào xào 3–4 phút cho thấm đều.",
+    "Cho topping đã xào cùng đậu phụ chiên vào nồi nước dùng, đun sôi lại 5–7 phút ở lửa vừa; nêm nước tương, muối và đường phèn cho vừa miệng — giữ thuần chay, không dùng nước mắm hay mắm ruốc.",
+    "Trụng bún tươi qua nước sôi khoảng 30 giây cho sợi bún nóng và tơi, để ráo rồi cho vào tô; bắp cải thái sợi, giá và húng quế rửa sạch, để ráo nước bày sẵn.",
+    "Chan nước dùng đang sôi ngập mặt bún, xếp mì căn, nấm và đậu phụ lên trên; dọn ngay khi tô bún còn bốc khói, ăn kèm bắp cải, giá và húng quế."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-nau-bun-bo-hue-chay-thom-ngon-thanh-dam-dam-02208",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH: cho 4 người — bún 500 g (125 g/khẩu phần), nấm hương khô 30 g (7,5 g), nấm rơm 100 g (25 g), đậu hũ chiên 2 miếng; nước dùng rau củ hầm 20–30 phút, nêm đường phèn và hạt nêm chay — họ 1"
+    },
+    {
+      "url": "https://giadinh.suckhoedoisong.vn/cach-lam-mon-bun-bo-chay-la-chuan-khong-can-chinh-172190220105348948.htm",
+      "accessed": "2026-10-31",
+      "note": "SKĐS/Gia đình (tác giả Ròm): cho 4 tô — chả chay 300 g, nấm bào ngư 1 hộp, đậu hũ chiên 1/2 bịch, cà rốt 2 củ hầm lấy nước dùng; nêm tương đậu nành, không dùng mắm — họ 2"
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/918848",
+      "accessed": "2026-10-31",
+      "note": "Cookpad (Anna): bún sợi to 1 kg + 3 lít nước dùng (~6 tô) — thịt bò chay 200 g (~33 g/tô, tương ứng mì căn của file), nấm các loại 300 g (~50 g/tô), bắp cải 500 g hầm nước dùng — họ 3"
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/bun-bo-chay.webp",
@@ -178,7 +196,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt).",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [LV2-011 đợt 11: NÂNG Mức 2 — đối chiếu 3 họ độc lập thuần chay (ĐMX, SKĐS/Ròm, Cookpad Anna); kiểm cứng: file và cả 3 nguồn đều không có nước mắm/trứng/thịt. Định lượng chính khớp ≥2 họ (bún 150 g theo quy ước EDITORIAL-GUIDE §14 và Anna ~150 g/tô; mì căn 40 g ~ bò chay ~33 g/tô; nấm hương khô 8 g ~ ĐMX 7,5 g; đậu phụ chiên 30 g ~ 25 g ở 2 họ) nên giữ nguyên toàn bộ. Bất thường ghi nhận, KHÔNG sửa theo kỷ luật thêm dòng: chả chay có ở 2/3 họ (ĐMX + Ròm) nhưng Anna không có → không thêm (slug cha-lua-chay cũng chưa có số dinh dưỡng); tàu hũ ki chỉ ĐMX có; giá của file 20 g thấp hơn ĐMX 50 g nhưng ĐMX ghi tuỳ thích và 2 họ còn lại không định lượng giá → giữ.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

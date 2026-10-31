@@ -144,7 +144,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-011 đợt 11: GIỮ Mức 1 — GIU-BIEN-THE/THIEU-NGUON. Mọi nguồn đạt chuẩn có gram cho món tai heo trộn chuối đều là biến thể HOA CHUỐI: Beemart (hoa chuối 300–500 g, tai heo 200 g, cà rốt 100 g, giá đỗ 100 g), Digifood (hoa chuối ~700 g, tai heo 500 g, khẩu phần 3–4 người), Cookpad Ng.T.Gái (2 bắp chuối, 1 tai heo, lạc rang 200 g), nauankhongkho. Bản QUẢ chuối xanh + tai heo chỉ có ở nguồn SEO không định lượng (SaigoneSebaguette: 3–4 quả chuối xanh, 1 tai heo, không gram/khẩu phần). File dùng chuoi-xanh (quả) — khác nguyên liệu định danh với họ hoa chuối nên không mượn số được. Cần chủ dự án phân xử định danh quả chuối xanh vs hoa chuối; không sửa dòng nào.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

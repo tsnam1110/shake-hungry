@@ -25,7 +25,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "tron",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -129,7 +129,7 @@
     },
     {
       "ingredient_slug": "toi",
-      "quantity": 2,
+      "quantity": 4,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -145,12 +145,30 @@
     }
   ],
   "recipe_steps": [
-    "Sứa rửa sạch nhiều lần, chần nhanh, để ráo, thái miếng vừa ăn.",
-    "Trộn sứa với bắp chuối bào, dưa leo và rau thơm.",
-    "Rưới nước mắm chua ngọt, trộn đều tay.",
-    "Rắc lạc rang, vừng, hành phi; ăn ngay cho giòn."
+    "Sứa rửa sạch nhiều lần cho hết nhớt, chần trong nước sôi khoảng 2-5 phút rồi ngâm ngay nước lạnh, để thật ráo và cắt miếng vừa ăn; sứa đạt khi trắng, giòn sần sật và không còn tanh.",
+    "Bắp chuối bào mỏng, ngâm nước muối loãng pha chút chanh khoảng 5-10 phút cho trắng và bớt chát, rửa lại rồi vắt ráo; sợi bắp chuối phải ráo nước trước khi trộn.",
+    "Dưa leo rửa sạch cắt miếng vừa ăn; húng quế và kinh giới nhặt rửa, để ráo rồi thái nhỏ; lạc rang giã dập, hành phi để riêng cho khỏi ỉu.",
+    "Pha nước trộn gồm nước mắm, đường và nước cốt chanh, khuấy đều cho đường tan hết rồi cho tỏi băm và ớt vào; nếm lại cho chua ngọt mặn cân bằng.",
+    "Cho bắp chuối, dưa leo và sứa vào tô lớn, rưới nước trộn rồi trộn nhẹ tay khoảng 1 phút cho thấm đều mà sứa không ra nước, rau không dập.",
+    "Bày gỏi ra đĩa, rắc lạc rang, vừng rang và hành phi lên trên, thêm rau thơm; ăn ngay khi gỏi còn giòn và ráo."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://giadinh.suckhoedoisong.vn/3-cach-lam-goi-sua-ngon-cho-mam-com-gia-dinh-them-hap-dan-172221229195742357.htm",
+      "accessed": "2026-10-31",
+      "note": "Sức khỏe & Đời sống (Gia đình): gỏi sứa bắp chuối mẻ sứa 300g, hoa chuối 200g, lạc rang 100g, dưa chuột 1 quả, cà rốt 1 củ — quy đổi ~4 khẩu phần: sứa ~75g, bắp chuối ~50g/khẩu phần — họ 1"
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/23989417",
+      "accessed": "2026-10-31",
+      "note": "Cookpad (Rose Truong): sứa 300g, bắp chuối 100g, đậu phộng rang 1/3 chén, mắm tỏi ớt dùng 4-5 muỗng — quy đổi ~4 khẩu phần: sứa ~75g, bắp chuối ~25g, nước mắm ~8-9g/khẩu phần — họ 2"
+    },
+    {
+      "url": "https://www.bluestone.com.vn/blogs/vao-bep/cach-lam-goi-sua",
+      "accessed": "2026-10-31",
+      "note": "Bluestone: sứa 250g, hoa chuối 100g, cà rốt 100g, xoài xanh 150g, lạc 50g, nước mắm và đường mỗi 1,5 muỗng canh — quy đổi ~4 khẩu phần: sứa ~63g, bắp chuối ~25g, lạc ~13g/khẩu phần — họ 3"
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/goi-sua.webp",
@@ -161,7 +179,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu). [LV2-010 đợt 10: GIU-429 — mở nguồn biến thể bắp chuối bị chặn 429, dừng ngay không retry; chưa mở được ≥3 họ nên giữ Mức 1. Đã xác minh sua-bien có số (USDA 168129, 36 kcal) nên không bị trần nguyên liệu. Làm lại khi hết chặn, ưu tiên biến thể bắp chuối.]",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu). [LV2-010 đợt 10: GIU-429 — mở nguồn biến thể bắp chuối bị chặn 429, dừng ngay không retry; chưa mở được ≥3 họ nên giữ Mức 1. Đã xác minh sua-bien có số (USDA 168129, 36 kcal) nên không bị trần nguyên liệu. Làm lại khi hết chặn, ưu tiên biến thể bắp chuối.] [LV2-011 đợt 11: NÂNG Mức 2 — 3 họ độc lập đã mở đọc thật (SKĐS/Gia đình, Cookpad Rose Truong, Bluestone), định lượng quy đổi ~4 khẩu phần/mẻ, đối chiếu ≥2 họ cho sứa/bắp chuối/lạc/nước mắm/đường. Sửa toi 2→4g (Cookpad ~1 củ/mẻ và Bluestone 20g/mẻ đều quy đổi ~5g/khẩu phần, lệch >30% so với file; lấy 4g trong dải nguồn). sua-bien đã xác minh có số nên không bị trần nguyên liệu; kinh-gioi null là nguyên liệu phụ. Bất thường ghi nhận không sửa: cà rốt và xoài xanh có ở 2/3 họ (chưa đủ điều kiện 3/3 để thêm dòng); vừng rang và hành phi 0/3 họ lõi nhưng là garnish của biến thể khác (Tạp chí Đẹp có mè rang trong gỏi sứa) nên giữ nguyên và ghi nhận.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -105,7 +105,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-011 đợt 11: GIU-THIEU-NGUON — đã mở CET/Chef Lập (nếp 250 g : đậu đen 150 g, tỉ lệ đậu/nếp 0,60; bộ số 250:150 này cũng xuất hiện nguyên vẹn ở Em Vào Bếp và PasGo nên tính là một họ) và Cookpad Quân Nguyễn (khi mở trang, khối nguyên liệu không hiển thị trong bản đọc được nên không tính là họ đã đọc đủ định lượng). Không họ nào ghi số khẩu phần/đĩa nên không quy đổi tuyệt đối về 1 đĩa được; tỉ lệ đậu/nếp của file 0,33 nằm trong dải tỉ lệ nguồn 0,30–0,60. Bất thường: tổng nguyên liệu khô 270 g so với serving_grams 300 g — khối lượng xôi chín thực tế nhiều khả năng cao hơn hẳn, ghi nhận chờ phân xử.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

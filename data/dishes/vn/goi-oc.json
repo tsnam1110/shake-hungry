@@ -152,7 +152,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 đợt 2 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 đợt 2 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-011 đợt 11: GIỮ Mức 1 — GIU-BIEN-THE (định danh chưa xác nhận được). Tra cứu mở rộng: mọi nguồn gỏi/nộm ốc đạt chuẩn đều trộn ốc với BẮP CHUỐI (hoa chuối bào) — ĐMX 'Gỏi ốc bươu hoa chuối' (ốc 1 kg, cho 3 người), Cookpad Món Ngon Miền Quê 'Gỏi ốc bắp chuối', Cookpad Vy Tuong ốc đắng trộn bắp chuối; quả chuối xanh + ốc chỉ xuất hiện ở món NẤU/OM/XÁO (kèm mẻ, nghệ, ba chỉ, đậu phụ). Không tìm thấy bất kỳ nguồn nào cho 'gỏi ốc trộn quả chuối xanh sống' — nghi file lẫn định danh chuoi-xanh (quả) với bap-chuoi (hoa). Cần chủ dự án phân xử định danh trước khi nâng; không tự đổi nguyên liệu định danh, không sửa dòng nào.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

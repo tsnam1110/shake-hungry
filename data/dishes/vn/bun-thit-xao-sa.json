@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "xao",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -106,7 +106,7 @@
     },
     {
       "ingredient_slug": "duong-trang",
-      "quantity": 4,
+      "quantity": 6,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -122,11 +122,31 @@
     }
   ],
   "recipe_steps": [
-    "Ướp thịt heo với sả băm, nước mắm, đường; xào nhanh lửa lớn cho thịt săn và thơm sả.",
-    "Pha nước chấm từ nước mắm và đường, thêm ít nước ấm cho dịu vị.",
-    "Xếp bún, giá, dưa leo, xà lách vào tô, cho thịt xào lên trên, rắc lạc rang và hành phi, chan nước chấm."
+    "Thịt heo thái lát mỏng; sả, tỏi và ớt băm nhuyễn. Giá rửa sạch để ráo, dưa leo thái lát hoặc sợi, xà lách và rau thơm nhặt rửa, để ráo nước.",
+    "Ướp thịt với sả băm, tỏi, ớt, chút nước mắm, đường và hạt nêm khoảng 10–30 phút cho thịt thấm đều gia vị.",
+    "Làm mỡ hành: đun dầu thật nóng rồi rưới vào chén hành lá cắt nhỏ, hành vừa chín tái và giữ màu xanh. Lạc rang vàng trên lửa nhỏ, bóc vỏ, giã dập.",
+    "Chảo nóng lửa lớn, phi thơm sả và tỏi, cho thịt vào xào 5–7 phút đến khi thịt săn, hơi xém cạnh và không ra nước; nếu dùng hành tây, cho vào đảo thêm 1–2 phút vừa chín tới rồi tắt bếp.",
+    "Pha nước mắm: khuấy nước mắm, đường, nước ấm và nước cốt chanh (hoặc giấm) đến khi tan, cho tỏi ớt băm vào, vị chua ngọt mặn dịu.",
+    "Trụng nhanh bún tươi qua nước sôi khoảng 20–30 giây nếu bún lạnh, vớt ra để ráo; bún mới mua còn mềm thì chỉ cần tách tơi.",
+    "Cho giá, bún, xà lách và dưa leo vào tô, xếp thịt xào lên trên, rắc lạc rang và hành phi, chan nước mắm pha và trộn đều khi ăn."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/3-cach-lam-bun-thit-xao-sa-ot-hanh-tay-va-ngu-vi-huong-thom-01801",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH: 4 người — thịt nạc dăm 300 g (75 g/người), bún tươi 800 g (200 g/người), giá 100 g, đậu phộng 50 g, dầu ăn 50 ml, nước mắm 2,5 muỗng canh, đường pha + ướp ≈6,8 g/người; hành tây dùng ở bước xào dù không liệt kê trong danh mục — họ 1 (thitheonong/emvaobep và mục xào sả của diachiamthuc chép nguyên ĐMX, tính một họ)"
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/10555625-bun-th%E1%BB%8Bt-xao-s%E1%BA%A3-%E1%BB%9Bt",
+      "accessed": "2026-10-31",
+      "note": "Cookpad DiepngocNguyen: 4 phần — thịt nạc dăm 300 g (75 g/phần), bún tươi 1 kg (250 g/phần), hành tây 1 củ, dầu ăn 2 muỗng canh, nước mắm pha 2 muỗng canh + đường 2 muỗng canh (≈6,5 g đường/phần) — họ 2"
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/5312686",
+      "accessed": "2026-10-31",
+      "note": "Cookpad Hân (Bún xào miền Tây): thịt nạc vai 200 g, bún tươi 500 g — tỉ lệ thịt/bún 0,40 khớp file 70/180 ≈ 0,39; không ghi số phần, không hành tây/lạc — họ 3"
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/bun-thit-xao-sa.webp",
@@ -137,7 +157,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt DISH-004 đợt 2 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt DISH-004 đợt 2 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-011 đợt 11: NÂNG Mức 2 — 3 họ độc lập đã mở đọc thật (Điện Máy XANH; Cookpad DiepngocNguyen; Cookpad Hân), định lượng đối chiếu ≥2 họ quy về khẩu phần. Sửa 1 dòng: duong-trang 4→6 g (tổng đường pha nước mắm + ướp: ĐMX ≈6,8 g/người, Cookpad DiepngocNguyen ≈6,5 g/phần — file lệch >30% theo 2 họ). Các dòng chính khớp nguồn: bún 180 g (nguồn 200–250 g, lệch <30%), thịt 70 g (nguồn 75 g và tỉ lệ của Hân ≈72 g), nước mắm 10 g (nguồn ≈8,4–9,4 g). Bất thường ghi nhận: hành tây có ở 2/3 họ (ĐMX chỉ xuất hiện ở bước xào, không có trong danh mục; Cookpad DiepngocNguyen 1 củ/4 phần) nhưng họ Hân không có nên chưa đủ điều kiện thêm dòng — chờ phân xử; topping của file là hanh-phi trong khi 2/3 họ dùng mỡ hành từ hành lá và file không có dòng hanh-la — giữ nguyên, chờ phân xử; lạc file 8 g thấp hơn ĐMX 12,5 g/người nhưng chỉ 1 họ có số nên không sửa.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

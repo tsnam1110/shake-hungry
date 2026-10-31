@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "song",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "chieu",
@@ -58,7 +58,7 @@
     },
     {
       "ingredient_slug": "trung-ga",
-      "quantity": 15,
+      "quantity": 10,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -82,15 +82,15 @@
     },
     {
       "ingredient_slug": "hung-que",
-      "quantity": 2,
+      "quantity": 6,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
     },
     {
-      "ingredient_slug": "tuong-ban",
-      "quantity": 10,
+      "ingredient_slug": "tuong-den",
+      "quantity": 8,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -122,12 +122,31 @@
     }
   ],
   "recipe_steps": [
-    "Củ đậu thái sợi, xào chín mềm; lạp xưởng chiên thái lát; trứng tráng mỏng thái sợi.",
-    "Nhúng mềm bánh tráng, xếp xà lách, củ đậu, trứng, lạp xưởng, tôm khô, rau thơm.",
-    "Cuốn chặt tay.",
-    "Chấm tương bần pha đường và đậu phộng giã."
+    "Củ đậu gọt vỏ, cắt sợi ngắn khoảng 5–6 cm; xà lách và húng quế nhặt rửa sạch, để thật ráo nước để bánh tráng không bị nhão khi cuốn.",
+    "Phi hành tím với ít dầu cho thơm, cho củ đậu vào xào lửa vừa khoảng 3–5 phút, nêm chút muối và hạt nêm; xào đến khi sợi củ đậu trong và ráo nước thì tắt bếp, để nguội.",
+    "Trứng đánh tan với chút muối, tráng thật mỏng trên chảo chống dính lửa nhỏ; khi trứng nguội, xếp chồng lên nhau và cắt thành sợi nhỏ.",
+    "Lạp xưởng luộc trong ít nước khoảng 10 phút cho chín, vớt ra để nguội rồi cắt lát mỏng xéo; tôm khô nếu cứng thì ngâm nước ấm cho mềm, để ráo.",
+    "Làm sốt chấm: khuấy tương đen với đậu phộng rang giã và chút nước, thêm đường, đun lửa nhỏ đến khi sôi lăn tăn và hơi sánh thì tắt bếp, để nguội; khi ăn rắc thêm hành phi và đậu phộng giã dập.",
+    "Phết ít nước làm mềm bánh tráng, xếp lần lượt xà lách, húng quế, củ đậu xào, trứng sợi, lạp xưởng và tôm khô lên, gấp hai mép vào trong rồi cuốn chặt tay thành cuốn dài khoảng 9 cm.",
+    "Xếp bò bía ra đĩa, ăn ngay trong 1–2 giờ khi bánh tráng còn dai, chấm sốt tương đen đậu phộng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-bo-bia-man-cham-tuong-den-dau-phong-beo-ngay-ngon-me-22195",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH: mẻ 50 cuốn — củ sắn 800g (16g/cuốn), trứng vịt 5 quả (0,1 quả/cuốn), lạp xưởng 3 cây (3 lát/cuốn), xà lách 300g (6g/cuốn), húng quế 150g (3g/cuốn), tương đen 200g nấu sốt (4g/cuốn); quy đổi khẩu phần 2 cuốn — họ 1 (Bếp Trưởng Á Âu và Hướng Nghiệp Á Âu đăng cùng bộ số, tính cùng họ)"
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/11115792",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Mai Nguyen: củ sắn 500g, cà rốt 50g, trứng gà 3 quả, lạp xưởng 1 cây, ruốc sấy 100g, húng quế 100g, đậu phộng rang 50g, tương đen 1 chai — họ 2 (không ghi số cuốn, dùng đối chiếu thành phần và tỉ lệ)"
+    },
+    {
+      "url": "https://atuankhang.vn/cach-lam-bo-bia-man/",
+      "accessed": "2026-10-31",
+      "note": "A Tuấn Khang (Nguyễn Oanh): mẻ 30 cuốn — củ sắn 600g (20g/cuốn), lạp xưởng 100g (3,3g/cuốn), ruốc khô 100g, trứng vịt 3 quả (0,1 quả/cuốn), xà lách 300g (10g/cuốn), húng quế 100g (3,3g/cuốn), tương đen — họ 3"
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/bo-bia.webp",
@@ -138,7 +157,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt).",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [LV2-011 đợt 11: NÂNG Mức 2. 3 họ độc lập (ĐMX mẻ 50 cuốn; Cookpad Mai Nguyen; A Tuấn Khang mẻ 30 cuốn). Sửa theo đồng thuận ≥2 họ lệch >30%: trung-ga 15→10 (ĐMX và ATK đều 0,1 quả/cuốn), hung-que 2→6 (ĐMX 3g/cuốn, ATK 3,3g/cuốn). Bớt tuong-ban (0/3 họ ủng hộ — cả 3 họ dùng tương đen/tương hột cho bò bía) và thêm tuong-den 8g theo quy đổi ĐMX 200g/50 cuốn × 2 cuốn. Bất thường ghi nhận không sửa: lap-xuong file 15g cao hơn quy đổi gram của ATK (~7g/2 cuốn) nhưng ĐMX chỉ ghi theo cây/lát, chưa đủ 2 họ gram tường minh; ca-rot có ở Cookpad Mai Nguyen và Eva nhưng ĐMX/ATK/Châu Phương không có nên không thêm.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

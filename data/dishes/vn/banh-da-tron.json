@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "tron",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "chieu",
@@ -47,6 +47,14 @@
     {
       "ingredient_slug": "gio-lua",
       "quantity": 30,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "thit-bo-nam",
+      "quantity": 50,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -126,11 +134,31 @@
     }
   ],
   "recipe_steps": [
-    "Trụng bánh đa đỏ cho mềm, để ráo; trụng rau muống, giá đỗ.",
-    "Đậu phụ chiên thái miếng, giò lụa thái sợi.",
-    "Pha nước trộn me — đường — nước mắm; trộn đều tất cả, rắc lạc rang, hành phi."
+    "Bánh đa đỏ rửa nhanh cho sạch bụi, ngâm nước lạnh 5–10 phút cho mềm bớt rồi để ráo; đậu phụ cắt miếng vừa ăn, chiên vàng đều các mặt, vớt ra để ráo dầu.",
+    "Thịt bò thái lát mỏng, ướp chút hạt nêm và tỏi băm khoảng 10 phút cho thấm; giò lụa thái chỉ hoặc lát mỏng.",
+    "Rau muống nhặt khúc 7–10 cm, rửa sạch; giá đỗ rửa sạch để ráo. Hành khô thái mỏng, phi vàng giòn với dầu ăn, vớt ra để riêng và giữ lại phần dầu hành phi.",
+    "Đun sôi nồi nước, trụng rau muống chín tới rồi vớt ra ngâm nhanh vào nước lạnh cho xanh giòn; trụng giá sơ 20–30 giây, vớt ra để ráo.",
+    "Xào thịt bò lửa lớn với ít dầu hành phi khoảng 2–3 phút cho vừa chín tới, thịt còn mềm và không ra nhiều nước.",
+    "Trụng bánh đa trong nước sôi khoảng 1–2 phút đến khi sợi mềm mà vẫn còn dai, vớt ra sóc cho ráo nước, trộn ngay một thìa dầu hành phi cho sợi tơi, không dính.",
+    "Pha nước trộn từ nước cốt me, nước mắm và đường cho vị chua ngọt hài hoà; xếp bánh đa ra đĩa cùng rau, giá, đậu chiên, giò và thịt bò, rưới nước trộn, rắc lạc rang giã dập và hành phi, trộn đều ăn ngay."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://bepxua.vn/cach-lam-banh-da-tron-thom-ngon-hap-dan/?amp=1",
+      "accessed": "2026-10-31",
+      "note": "Bếp Xưa (bánh đa cua trộn): mẻ 4 người — bánh đa cua khô 400g (100g/người), thịt bò 200g (50g/người), giò tai 150g, đậu phụ 2 bìa, rau muống 200g (50g/người), giá đỗ 100g (25g/người), lạc rang 50g — họ 1"
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/319301",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Ngoc Vu (Hà Nội): 3 phần ăn — bánh đa 200g (~67g/phần), thịt bò 200g (~67g/phần), giò nạc 100g, đậu rán 1 gói 6 miếng, sốt xì dầu–đường–giấm — họ 2"
+    },
+    {
+      "url": "https://www.bluestone.com.vn/blogs/vao-bep/cach-lam-banh-da-tron?srsltid=AfmBOorsbEbK3ulsKsBqKuWhegIa4fQVy4McyTw746R1aLgO5zmrJbCu",
+      "accessed": "2026-10-31",
+      "note": "BlueStone: bánh đa đỏ khô 300g, giò lụa 100g, chả cá 150g, thịt bò 150g (tuỳ chọn), lạc rang 100g, giá đỗ 100g, rau muống 1 mớ; sốt xì dầu–dầu hào–giấm/me đun sánh — họ 3 (không ghi khẩu phần, dùng đối chiếu thành phần và tỉ lệ)"
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/banh-da-tron.webp",
@@ -141,7 +169,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-011 đợt 11: NÂNG Mức 2. 3 họ độc lập (Bếp Xưa 4 người; Cookpad Ngoc Vu 3 phần; BlueStone). Thêm thit-bo-nam 50g — thành phần mọi họ đều có (Bếp Xưa 50g/người, Ngoc Vu ~67g/phần, BlueStone 150g/mẻ dạng tuỳ chọn), file cũ thiếu hẳn. Bất thường ghi nhận không sửa: (1) SỐT — file dùng nước mắm + me, trong khi 2/3 họ (Ngoc Vu, BlueStone) dùng sốt nền xì dầu (BlueStone thêm dầu hào, me chỉ là lựa chọn thay giấm) và Bếp Xưa dùng mắm + giấm — chưa đủ điều kiện đổi theo kỷ luật, chờ chủ dự án phân xử định danh sốt. (2) cha-ca có ở Bếp Xưa + BlueStone nhưng Ngoc Vu không có nên không thêm; cua-dong chỉ thuộc biến thể bánh đa cua (Bếp Xưa) nên không thêm. (3) rau-muong file 30g thấp hơn quy đổi của Bếp Xưa (50g/người) nhưng chỉ 1 họ gram tường minh nên giữ nguyên.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

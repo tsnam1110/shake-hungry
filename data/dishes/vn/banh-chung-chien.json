@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "chien",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -82,11 +82,30 @@
     }
   ],
   "recipe_steps": [
-    "Bánh chưng (nếp, đậu xanh, thịt ba chỉ đã gói và luộc chín) bóc lá, cắt thành miếng dày vừa.",
-    "Chiên các miếng bánh trong dầu nóng đến khi hai mặt vàng giòn.",
-    "Dọn nóng, ăn kèm hành muối hoặc chấm nước mắm, tương ớt."
+    "Chuẩn bị bánh: bánh chưng đã gói từ nếp, đậu xanh và thịt ba chỉ ướp hành tím, tiêu rồi luộc chín; bóc bỏ lá dong, dùng dây lạt hoặc dao bọc màng thực phẩm cắt thành 2 miếng vừa khẩu phần, để mặt cắt ráo khoảng 5 phút cho đỡ dính.",
+    "Làm nóng chảo chống dính trên lửa vừa, cho dầu ăn vào tráng đều khắp mặt chảo (giữ nguyên 10 g/khẩu phần theo Phương án A); chờ dầu nóng già nhưng chưa bốc khói.",
+    "Xếp các miếng bánh vào chảo, chừa khoảng cách để không dính nhau, chiên mặt đầu ở lửa nhỏ khoảng 5 phút; không lật sớm — mặt bánh vàng giòn và tự bong khỏi chảo là dấu hiệu đạt.",
+    "Lật bánh nhẹ tay, chiên mặt còn lại thêm 3–4 phút ở lửa nhỏ đến khi vàng giòn đều và phần nhân bên trong nóng mềm, dẻo trở lại.",
+    "Gắp bánh ra đặt lên giấy thấm dầu 1–2 phút cho ráo dầu thừa, mặt bánh khô và giữ được độ giòn.",
+    "Dọn nóng cả 2 miếng ra đĩa, ăn kèm hành muối hoặc dưa món, chấm nước mắm pha hoặc tương ớt tuỳ khẩu vị."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/2-cach-lam-banh-tet-chien-banh-chung-chien-ran-ngon-01567",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH (bản chiên dầu): 1 cái bánh chưng + dầu ăn 2 muỗng canh cho 4 người → dầu ~7 g/khẩu phần; chiên lửa nhỏ 5 phút mặt đầu + 3–4 phút mặt sau — họ 1"
+    },
+    {
+      "url": "https://vinid.net/blog/cach-lam-banh-chung-ran/",
+      "accessed": "2026-10-31",
+      "note": "VinID (rán truyền thống): 250 g bánh chưng đã chín + dầu ăn 1 thìa cho 1 mẻ → quy đổi ~10 g dầu/180 g khẩu phần, khớp dòng dau-an của file — họ 2"
+    },
+    {
+      "url": "https://beptruong.edu.vn/day-lam-banh/banh-viet/cach-goi-banh-chung",
+      "accessed": "2026-10-31",
+      "note": "Bếp Trưởng Á Âu (Huongnghiepaau): thành phần 1 cái bánh chưng = nếp 400 g + đậu xanh 200 g + thịt ba chỉ 200 g (tỉ lệ 50/25/25), thịt ướp tiêu — đối chiếu tỉ lệ file nếp 90/đậu 30/thịt 30 g lệch <30% — họ 3"
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/banh-chung-chien.webp",
@@ -97,7 +116,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) [Ghi chú 2026-10-31 — Phương án A/QA-002: GIỮ NGUYÊN dòng dau-an 10 g, KHÔNG phải tính trùng. Chủ thể chiên của món là tinh bột đã nấu chín (gạo nếp) — nguyên liệu có oil_absorption_pct = 0 theo thiết kế CALC-004 ('tinh bột đã nấu chín rán lại với dầu đã kê trong công thức'), nên dòng dầu này là cơ chế tính dầu duy nhất của món; bỏ đi là engine tính 0 g dầu cho một món chiên. Đưa món này về quy ước A thuần tuý đòi hỏi gán hệ số hấp thụ cho gao-nep đã nấu — thay đổi phía engine/dữ liệu nguyên liệu, ngoài phạm vi Phương án A, chờ quyết định riêng.] [LV2-010 đợt 10: GIỮ-429 — lần mở nguồn đầu tiên cho món bị chặn 429, dừng ngay theo quy tắc đợt, chưa đủ 3 họ đã mở nên giữ Mức 1; dòng dau-an 10 g giữ nguyên theo tiền lệ Phương án A cho tinh bột đã nấu (hệ số hấp thụ 0), không thay đổi gì.]",
+  "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) [Ghi chú 2026-10-31 — Phương án A/QA-002: GIỮ NGUYÊN dòng dau-an 10 g, KHÔNG phải tính trùng. Chủ thể chiên của món là tinh bột đã nấu chín (gạo nếp) — nguyên liệu có oil_absorption_pct = 0 theo thiết kế CALC-004 ('tinh bột đã nấu chín rán lại với dầu đã kê trong công thức'), nên dòng dầu này là cơ chế tính dầu duy nhất của món; bỏ đi là engine tính 0 g dầu cho một món chiên. Đưa món này về quy ước A thuần tuý đòi hỏi gán hệ số hấp thụ cho gao-nep đã nấu — thay đổi phía engine/dữ liệu nguyên liệu, ngoài phạm vi Phương án A, chờ quyết định riêng.] [LV2-010 đợt 10: GIỮ-429 — lần mở nguồn đầu tiên cho món bị chặn 429, dừng ngay theo quy tắc đợt, chưa đủ 3 họ đã mở nên giữ Mức 1; dòng dau-an 10 g giữ nguyên theo tiền lệ Phương án A cho tinh bột đã nấu (hệ số hấp thụ 0), không thay đổi gì.] [LV2-011 đợt 11: NÂNG Mức 2 — đối chiếu 3 họ độc lập (ĐMX bản chiên dầu, VinID rán truyền thống, Bếp Trưởng Á Âu về thành phần bánh); mọi định lượng lệch <30% hoặc không đồng thuận ≥2 họ nên giữ nguyên, đặc biệt GIỮ dòng dau-an 10 g theo Phương án A (tinh bột đã nấu chín hệ số hấp thụ 0; VinID ~10 g/180 g ủng hộ). Bất thường ghi nhận: ĐMX còn có biến thể chiên nước không dầu và sốt chua ngọt — khác biến thể file (chiên dầu truyền thống), không áp.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

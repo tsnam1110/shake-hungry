@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "kho",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -50,7 +50,7 @@
     },
     {
       "ingredient_slug": "nuoc-tuong",
-      "quantity": 8,
+      "quantity": 12,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -58,7 +58,7 @@
     },
     {
       "ingredient_slug": "dau-an",
-      "quantity": 5,
+      "quantity": 7,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -82,11 +82,30 @@
     }
   ],
   "recipe_steps": [
-    "Khổ qua bỏ ruột, cắt khúc 3 cm, chần nhanh nước sôi 1 phút cho bớt đắng, để ráo.",
-    "Phi thơm hành tím, cho khổ qua vào xào săn, thêm nước tương, đường và khoảng 120 ml nước, kho lửa nhỏ 10 phút.",
-    "Cho đậu phụ cắt miếng vào kho thêm 5 phút, nêm lại, dùng với cơm."
+    "Khổ qua bổ dọc, bỏ sạch ruột, cắt khúc khoảng 2-3cm, ngâm nước muối loãng 10 phút rồi rửa lại cho bớt đắng và để ráo.",
+    "Chần khổ qua trong nước sôi khoảng 1-2 phút rồi vớt ra để ráo; miếng khổ qua đạt khi còn xanh, hơi mềm nhưng chưa nát.",
+    "Đậu phụ cắt miếng vừa ăn, thấm khô bề mặt; có thể chiên sơ lửa vừa cho săn mặt để khi kho không bị vỡ.",
+    "Phi thơm hành tím với dầu ăn trên lửa vừa đến vàng thơm, cho khổ qua vào xào săn khoảng 2-3 phút cho thấm dầu và giảm mùi hăng.",
+    "Thêm nước tương, đường và khoảng 120ml nước, hạ lửa nhỏ kho 10-15 phút đến khi khổ qua mềm thấm và nước kho hơi sánh lại.",
+    "Cho đậu phụ vào kho thêm khoảng 5 phút cho thấm nước kho, nêm lại cho vừa rồi tắt bếp; dùng nóng với cơm. Món giữ thuần chay: chỉ nêm nước tương, không dùng nước mắm, thịt, trứng hay sữa."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/2-cach-lam-kho-qua-kho-tieu-va-kho-nuoc-tuong-chay-02609",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH (biên tập Đoàn Trâm Anh): khổ qua kho nước tương cho 3-4 người — khổ qua 3 trái, nước tương 4 muỗng canh, đường 1 muỗng canh, xào với 2 muỗng canh dầu ăn — quy đổi nước tương ~17g, đường ~3g/khẩu phần — họ 1"
+    },
+    {
+      "url": "https://www.bluestone.com.vn/blogs/vao-bep/kho-qua-kho-tieu-va-kho-nuoc-tuong-chay",
+      "accessed": "2026-10-31",
+      "note": "Bluestone: bản kho nước tương — khổ qua 300g, đậu hũ 150g, nấm rơm/nấm mỡ 100g, nước tương 2 muỗng canh, dầu ăn 1,5 muỗng canh, kho 15 phút; bản kho tiêu — khổ qua 400g, đậu hũ 200g, nước tương 1,5 muỗng canh — họ 2"
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/11166991",
+      "accessed": "2026-10-31",
+      "note": "Cookpad (NPNQ), đậu kho nấm khổ qua: khổ qua 2 trái, nấm rơm 50g, đậu hũ 100g, nước tương 2 thìa, đường 3 thìa — quy đổi ~2 khẩu phần: khổ qua ~150g, đậu hũ ~50g/khẩu phần — họ 3"
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/kho-qua-kho-chay.webp",
@@ -97,7 +116,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món chay thuần: toàn bộ nguyên liệu có origin thực vật/nấm, gia vị chỉ dùng nước tương/muối/chao đậu — không nước mắm, không hạt nêm/bột canh (nhóm COMPOSITE_ANIMAL tính là mặn), không trứng/sữa; nhãn diet suy từ thành phần phải ra chay và đã kiểm chứng trực tiếp trong DB sau seed (cổng G3/G6 của đợt).",
+  "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món chay thuần: toàn bộ nguyên liệu có origin thực vật/nấm, gia vị chỉ dùng nước tương/muối/chao đậu — không nước mắm, không hạt nêm/bột canh (nhóm COMPOSITE_ANIMAL tính là mặn), không trứng/sữa; nhãn diet suy từ thành phần phải ra chay và đã kiểm chứng trực tiếp trong DB sau seed (cổng G3/G6 của đợt). [LV2-011 đợt 11: NÂNG Mức 2 — 3 họ độc lập đã mở đọc thật (Điện Máy XANH bản kho nước tương, Bluestone, Cookpad NPNQ), đối chiếu ≥2 họ cho khổ qua/đậu phụ/nước tương/đường/dầu. Sửa nuoc-tuong 8→12g (ĐMX quy đổi ~17g, Bluestone/Cookpad ~10-15g/khẩu phần — file thấp hơn >30%) và dau-an 5→7g (ĐMX/Bluestone quy đổi ~7-8g/khẩu phần). Kiểm cứng chay thuần đạt: file chỉ dùng nước tương, không nước mắm/thịt/trứng/sữa — đúng biến thể chay; lưu ý trang chay của ĐMX ở bản kho tiêu ghi 'nước mắm' (mơ hồ chay/mặn), file không đi theo bản đó. Bất thường ghi nhận không sửa: nấm rơm có ở 2/3 họ (Bluestone, Cookpad) nhưng bản nước tương của ĐMX không có nên chưa đủ 3/3 để thêm dòng; cả 3 họ dùng hành boa-rô/paro để phi nhưng kho nguyên liệu chưa có slug hành boa-rô nên giữ hanh-tim và ghi nhận.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

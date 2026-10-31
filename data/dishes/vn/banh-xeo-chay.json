@@ -166,7 +166,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 10 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).]",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 10 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).] [LV2-011 đợt 11: GIU-THIEU-NGUON — kiểm cứng thuần chay ĐẠT: file không có dòng nước mắm/trứng/thịt, nước chấm bằng nước tương. Đã mở 3 họ (Full of Plants: 2 cái 25 cm — bột gạo 32 g/cái, nước cốt dừa 39 ml/cái, đậu phụ 85 g/cái, giá 50 g/cái; Dạy Làm Bánh Á Âu/Trần Văn Vinh; Cookpad Apple's Kitchen) nhưng 2 họ Việt đều dùng bột bánh xèo pha sẵn tính theo gói và không ghi số cái/khẩu phần nên không quy đổi được về 1 cái lớn; chỉ 1 họ quy đổi được là chưa đủ 3. Bất thường: nhiều họ Việt cho đậu xanh vào nhân, file không có — chưa đạt đồng thuận tuyệt đối (Full of Plants không dùng) nên chưa thêm.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
