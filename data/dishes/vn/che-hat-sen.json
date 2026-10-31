@@ -6,7 +6,7 @@
   "names": [
     {
       "locale": "vi",
-      "name": "chè hạt sen",
+      "name": "Chè hạt sen",
       "is_primary": true
     },
     {
@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "chieu",
@@ -42,7 +42,7 @@
     },
     {
       "ingredient_slug": "duong-phen",
-      "quantity": 20,
+      "quantity": 30,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -55,19 +55,52 @@
       "is_optional": true,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "muoi",
+      "quantity": 0.5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Bóc vỏ, bỏ tâm hạt sen tươi, rửa sạch.",
-    "Nấu hạt sen với nước cho chín bở nhưng không nát.",
-    "Cho đường phèn và lá dứa, nấu thêm cho thấm ngọt, để nguội.",
-    "Ăn lạnh, vị thanh mát."
+    "Hạt sen tươi bỏ tâm sen bằng tăm (tâm gây đắng); luộc sơ khoảng 5 phút, đổ bỏ nước đầu để hết nhựa/chát.",
+    "Ninh sen lửa nhỏ 15–20 phút tới khi hạt chín bở, mềm nhưng còn nguyên hạt, nước trong — không nấu quá nhừ.",
+    "Nấu riêng nước đường phèn, lọc cặn cho nước trong; cho vào nồi sen SAU khi sen đã chín.",
+    "Đun riu riu thêm 5–10 phút cho ngấm (hoặc tắt bếp ủ 30 phút đậy nắp).",
+    "Thêm chút muối tôn vị ngọt; vớt lá dứa ra nếu dùng.",
+    "Múc ra chén, ăn ấm hoặc lạnh; dừa nạo rắc là phần ăn kèm ngoài nếu thích."
   ],
-  "recipe_sources": [],
-  "media": [],
+  "recipe_sources": [
+    {
+      "url": "https://eva.vn/bep-eva/cach-nau-che-hat-sen-ngon-don-gian-tai-nha-an-bao-nhieu-cung-khong-ngan-c162a396979.html",
+      "accessed": "2026-10-31",
+      "note": "Bếp Eva — 'chè hạt sen đường phèn' đúng bản thuần: tỉ lệ phèn/sen = 0,4; luộc sơ 5 phút bỏ nước đầu; cho đường sau khi sen chín."
+    },
+    {
+      "url": "https://vnexpress.net/doi-song-cooking-che-sen-ha-noi-4606006.html",
+      "accessed": "2026-10-31",
+      "note": "VnExpress Cooking (Bùi Thủy, 5–6 người) — 'Chè sen Hà Nội': nồi sen thuần 55 g sen + 36 g đường phèn/khẩu phần (thạch đen + trân châu dừa là phần ghép khi trình bày, không thuộc nồi sen)."
+    },
+    {
+      "url": "https://beptruong.edu.vn/cach-nau-che-hat-sen-nhan-nhuc",
+      "accessed": "2026-10-31",
+      "note": "Bếp Trưởng Á Âu — chỉ dùng tỉ lệ nền sen/đường phèn của nồi sen (sen 31g, phèn 31g/khẩu phần): nhãn nhục là biến thể riêng đã có file che-hat-sen-long-nhan, không trộn vào."
+    }
+  ],
+  "media": [
+    {
+      "path": "media/dishes/che-hat-sen.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt)",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-007 đợt 7: nâng Mức 2 — 3 nguồn đã mở. SỬA đường phèn 20→30g — ca sửa duy nhất của món: 2 nguồn có định lượng theo khẩu phần/lượng nước rõ ràng đồng thuận cao hơn file 55–80% (36 và 31g); nguồn thứ ba (tỉ lệ 0,4 theo sen → 20g) không ghi lượng nước/số người. Giá trị 30 là mức thận trọng dưới cả hai nguồn đồng thuận (nguồn 31g còn có đường cát phụ). GIỮ hạt sen 50g (nguồn báo chí sát nhất: 55g). BỔ SUNG muối 0,5g (1 nguồn dùng muối hạt tôn vị — bổ sung nhẹ). GIỮ lá dứa 1g dạng tuỳ chọn kèm ghi nhận: cả 2 bản thuần đều không dùng lá dứa (lá dứa chỉ có ở biến thể nhãn nhục) — tuỳ chọn là đúng mức bằng chứng. Ghi nhận tương đương sen khô = 0,6 × sen tươi theo 1 nguồn, dành cho biến thể sen khô sau này. Sửa viết hoa tên chính theo DATA-009.]",
   "status": "draft",
   "source": "llm_suggested",
   "confidence": "unknown",

@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "chieu",
@@ -34,7 +34,15 @@
   "ingredients": [
     {
       "ingredient_slug": "sua-tuoi",
-      "quantity": 80,
+      "quantity": 50,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "kem-whipping",
+      "quantity": 50,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -58,15 +66,23 @@
     },
     {
       "ingredient_slug": "pho-mai",
-      "quantity": 20,
+      "quantity": 8,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
     },
     {
-      "ingredient_slug": "rau-cau-kho",
-      "quantity": 4,
+      "ingredient_slug": "sua-dac",
+      "quantity": 10,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "gelatin",
+      "quantity": 3,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -90,15 +106,41 @@
     }
   ],
   "recipe_steps": [
-    "Đun sữa tươi với phô mai (cream cheese) và đường cho tan, cho bột rau câu đã ngâm vào khuấy tan; đổ khuôn, để lạnh và cắt khối vuông.",
-    "Nấu nước đường lá dứa, để nguội.",
-    "Cho khúc bạch vào ly cùng vải (hoặc nhãn), chan nước đường, thêm hạnh nhân lát rang; ăn lạnh."
+    "Ngâm gelatin trong nước 10–15 phút cho nở; làm tan cách thuỷ — tuyệt đối không đun sôi gelatin (sôi làm mất tác dụng đông).",
+    "Nghiền/rây mịn phô mai; đun sữa tươi, kem whipping, sữa đặc và phô mai ấm tới 60–65 °C, lửa nhỏ, không để sôi.",
+    "Cho gelatin đã tan vào hỗn hợp sữa–kem, khuấy đều, lọc qua rây, đổ khuôn.",
+    "Để ngăn mát 2–6 giờ tới khi thạch đông chắc, cắt được khối mà vẫn mềm tan.",
+    "Nấu nước đường với lá dứa, để nguội hẳn rồi cấp lạnh (chan nước ấm/nóng sẽ làm khúc bạch tan).",
+    "Chỉ cắt khúc bạch ngay trước khi ăn; chan nước đường lạnh, thêm vải và đá, rắc hạnh nhân lát rang vàng."
   ],
-  "recipe_sources": [],
-  "media": [],
+  "recipe_sources": [
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/15462767",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — vlanhn (Hà Nội): bản chuẩn đầy đủ (khúc bạch + nước đường + topping) — sữa : kem : phô mai theo tỉ lệ khối thạch; gelatin 3,3% trên sữa+kem."
+    },
+    {
+      "url": "https://daynauan.info.vn/che-khuc-bach-pho-mai",
+      "accessed": "2026-10-31",
+      "note": "Dạy Nấu Ăn (hệ Hướng Nghiệp Á Âu) — 'Chè khúc bạch phô mai': gelatin 2,5%; ghi chú có thể thay gelatin bằng bột rau câu (thay thế phụ, kết cấu khác)."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/13530217",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — thuthao.4586 (5–7 người): biến thể không phô mai — sữa + whipping + sữa đặc + gelatin 3,5%."
+    }
+  ],
+  "media": [
+    {
+      "path": "media/dishes/che-khuc-bach.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt)",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-007 đợt 7: nâng Mức 2 — 3 nguồn đã mở; đây là món lệch cấu trúc nhiều nhất đợt. File cũ là bản 'khúc bạch rau câu toàn sữa' không tồn tại trong bất kỳ nguồn chuẩn nào: 3/3 nguồn dùng GELATIN (không nguồn nào dùng rau câu làm chất đông chính) và 3/3 dùng WHIPPING CREAM. THAY rau câu khô 4g → gelatin 3g (tỉ lệ đồng thuận 2,5–3,5% lượng sữa+kem; slug gelatin mới biên soạn đợt này theo USDA 169599); BỔ SUNG kem whipping 50g (slug mới, USDA 170859) và sữa đặc 10g (2/3 nguồn, 7,2–11,6g); SỬA sữa tươi 80→50g và phô mai 20→8g (2 nguồn có phô mai: 5,4–8,7g — file cũ cao gấp 2,3–3,7 lần). GIỮ đường 25g (tổng đường nguồn ~35–37 gồm nước đường chan dư không ăn hết), vải 40g, hạnh nhân 5g, lá dứa 1g. Tổng sau vá ≈ 192g + ~58g nước đường ≈ serving 250g. Diet suy ra vẫn man (sữa/kem/phô mai/gelatin động vật). Bất thường phân loại ghi nhận: cooking_method nau chỉ gần đúng (món chỉ đun ấm 60–65 °C + đông lạnh) — giữ mã hiện có, taxonomy chưa có mã phù hợp.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

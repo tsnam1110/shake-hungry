@@ -79,7 +79,14 @@
     "Nấu nước đường phèn với lá dứa, cho hạt sen và long nhãn vào nấu thêm ít phút, ăn nóng hoặc lạnh."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/che-hat-sen-long-nhan.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt)",

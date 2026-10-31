@@ -90,7 +90,14 @@
       "note": "Cookpad VN (Bí Đỏ Cà Rốt) — biến thể chè đánh; đối chiếu tỉ lệ đường/đậu 0,5."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/che-dau-xanh.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-006 đợt 6: nâng Mức 2 — định lượng giữ nguyên toàn bộ (đậu 45g lệch −10% so với 50g/người của 2 nguồn, dưới ngưỡng sửa; đường 22g khớp hai nguồn độc lập 22,5–24,5g). Chất tạo sánh (bột sắn dây/bột năng) khác nhau giữa các biến thể sánh/đánh — không bổ sung dòng bắt buộc.]",
