@@ -42,6 +42,14 @@
     },
     {
       "ingredient_slug": "bot-chien-xu",
+      "quantity": 50,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "bot-mi",
       "quantity": 25,
       "unit_name": "g",
       "is_optional": false,
@@ -83,11 +91,6 @@
   ],
   "recipe_sources": [
     {
-      "url": "https://www.dienmayxanh.com/vao-bep/2-cach-lam-ca-ro-phi-chien-xu-gion-rum-thom-ngon-hap-dan-06135",
-      "accessed": "2026-10-31",
-      "note": "Điện Máy XANH (cho 4 người, cách tẩm bột chiên xù): cá rô phi 1 kg, bột chiên xù 100 g, trứng 2 quả, hành tím + gừng băm; trộn trứng vào cá đã ướp rồi lăn bột xù (không lớp bột mì). Cùng trang còn cách chiên nguyên con không bột."
-    },
-    {
       "url": "https://amthucmoimien.com/Cach-lam-Ca-me-chien-gion-mon-an-10912.html",
       "accessed": "2026-10-31",
       "note": "Ẩm Thực Mọi Miền (cho 4 người): cá rô đồng 1 kg chiên ngập dầu nguyên con, không bột không trứng — nghĩa truyền thống của \"chiên xù\" với cá rô đồng; chấm mắm gừng."
@@ -113,7 +116,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 20 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).] Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 4 nguồn. Phân xử định lượng: ca-ro-dong 180 → 250 g và trung-ga 15 → 25 g — cả hai nguồn ghi rõ khẩu phần (ĐMX, Ẩm Thực Mọi Miền) đều cho 1 kg cá/4 người = 250 g/khẩu phần; trứng 25 g khớp ĐMX và tỉ lệ trứng/cá của Memart; bot-chien-xu 25 g giữ nguyên (khớp ĐMX). serving_grams 220 → 300 theo tổng dòng mới. Bất thường ghi nhận: lớp bột mì đầu tiên của quy trình 3 lớp có ở 2/4 nguồn (Memart, ToYenXin), file và ĐMX chỉ 2 lớp trứng → bột xù; tên món \"chiên xù\" còn có nghĩa truyền thống là chiên nguyên con không bột (Ẩm Thực Mọi Miền) — file theo nghĩa tẩm bột được 3 nguồn ủng hộ, cân nhắc ghi chú phân biệt trong mô tả khi biên tập.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 20 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).] Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 4 nguồn. Phân xử định lượng: ca-ro-dong 180 → 250 g và trung-ga 15 → 25 g — cả hai nguồn ghi rõ khẩu phần (ĐMX, Ẩm Thực Mọi Miền) đều cho 1 kg cá/4 người = 250 g/khẩu phần; trứng 25 g khớp ĐMX và tỉ lệ trứng/cá của Memart; bot-chien-xu 25 g giữ nguyên (khớp ĐMX). serving_grams 220 → 300 theo tổng dòng mới. Bất thường ghi nhận: lớp bột mì đầu tiên của quy trình 3 lớp có ở 2/4 nguồn (Memart, ToYenXin), file và ĐMX chỉ 2 lớp trứng → bột xù; tên món \"chiên xù\" còn có nghĩa truyền thống là chiên nguyên con không bột (Ẩm Thực Mọi Miền) — file theo nghĩa tẩm bột được 3 nguồn ủng hộ, cân nhắc ghi chú phân biệt trong mô tả khi biên tập. [AUDIT-FIX 2026-11-01 — PX-17 (AUDIT-002): CÔNG KHAI LOẠI NGUỒN SAI LOÀI — nguồn Điện Máy XANH đã ghi trong hồ sơ là trang cá rô PHI (tilapia), khác loài cá rô đồng, và ghi chú cũ không hề nêu điều này (ca sai loài duy nhất không công khai của AUDIT-002); nguồn đó đã bị loại khỏi recipe_sources. Tỉ lệ bột cũ của file (bột chiên xù 25g/250g cá = 10g/100g cá) đi theo đúng họ công thức rô phi này — kiểm chứng độc lập ở AUDIT-FIX: FPT Shop và Ẩm Thực Mọi Miền đều ghi cá rô phi tẩm bột 100g bột xù + 2 trứng/1kg cá. Căn cứ bột từ nay là nguồn đúng loài duy nhất có định lượng, Memart (cá rô bí = cá rô đồng): cá 500g, bột chiên xù 100g, bột mì 50g, trứng 1 quả → quy đổi khẩu phần 250g cá: bột chiên xù 25 → 50g, THÊM bột mì 25g (quy trình 3 lớp bột mì → trứng → bột xù mà ToyenXin mô tả định tính), trứng giữ 25g. Đã rà thêm: ngoài Memart/ToyenXin, không tồn tại nguồn đúng loài rô đồng tẩm bột chiên xù có định lượng nào khác trên web mở (các nguồn 'cá rô đồng chiên xù' độc lập đều là chiên trần không bột, như nguồn Ẩm Thực Mọi Miền đã ghi trong file) — tỉ lệ bột của món vì vậy dựa trên một họ nguồn đúng loài duy nhất, giữ confidence low. Cổng 3 nguồn vẫn đứng (ATMM + Memart + ToyenXin), giữ Mức 2.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
