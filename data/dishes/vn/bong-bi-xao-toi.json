@@ -57,8 +57,16 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "nuoc-mam-truyen-thong",
-      "quantity": 4,
+      "ingredient_slug": "muoi",
+      "quantity": 1,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hat-nem",
+      "quantity": 2,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -70,7 +78,7 @@
     "Bóc vỏ tỏi và đập dập vừa, không băm quá nhỏ để tỏi khó cháy khi phi; tỏi đạt khi dập nát nhẹ và dậy mùi thơm.",
     "Đun nóng dầu ăn trên lửa vừa, cho tỏi vào phi khoảng 30–60 giây đến vàng thơm, tỏi chuyển vàng nhạt là đạt, tránh để sậm màu.",
     "Cho bông bí vào chảo, xào trên lửa lớn và đảo nhanh tay; cho phần cuống vào trước khoảng 30–60 giây rồi mới cho phần hoa để cả hai chín đều.",
-    "Nêm nước mắm khi bông bắt đầu săn lại, tiếp tục đảo nhanh trên lửa lớn, tổng thời gian xào khoảng 3 phút cho thấm vị.",
+    "Nêm muối và hạt nêm khi bông bắt đầu săn lại, tiếp tục đảo nhanh trên lửa lớn, tổng thời gian xào khoảng 3 phút cho thấm vị.",
     "Tắt bếp khi bông vừa chín tới, còn giòn ngọt, màu xanh tươi và đĩa ráo ít nước; dọn nóng ngay, tránh xào lâu thêm vì bông sẽ nhũn."
   ],
   "recipe_sources": [
@@ -105,7 +113,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Dùng nguyên liệu hoa-bi mới biên soạn đợt này (USDA pumpkin flowers). Lưu ý slug bong-bi trong kho là bóng bì lợn — nguyên liệu của món này là hoa-bi. [LV2-005 đợt 5: nâng Mức 2 — đối chiếu 4 nguồn đã mở; không sửa định lượng vì lượng bông bí theo người phân kỳ rất rộng và file chỉ lệch khoảng −20% so với nguồn biên tập đáng tin nhất, dưới ngưỡng sửa. Bất thường ghi nhận: nguồn có dầu hào, tiêu và cách chia tỏi làm hai phần mà file chưa có; nguồn bất đồng về việc thêm nước khi xào và về thời gian xào (mức 7 phút là ngoại lệ) — chờ pha phân xử.]",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Dùng nguyên liệu hoa-bi mới biên soạn đợt này (USDA pumpkin flowers). Lưu ý slug bong-bi trong kho là bóng bì lợn — nguyên liệu của món này là hoa-bi. [LV2-005 đợt 5: nâng Mức 2 — đối chiếu 4 nguồn đã mở; không sửa định lượng vì lượng bông bí theo người phân kỳ rất rộng và file chỉ lệch khoảng −20% so với nguồn biên tập đáng tin nhất, dưới ngưỡng sửa. Bất thường ghi nhận: nguồn có dầu hào, tiêu và cách chia tỏi làm hai phần mà file chưa có; nguồn bất đồng về việc thêm nước khi xào và về thời gian xào (mức 7 phút là ngoại lệ) — chờ pha phân xử.] [LV2-010 Phần C — gói quyết định chủ dự án 2026-10-31: A4.1 ÁP quy ước rau xào: bỏ dòng nuoc-mam-truyen-thong 4 g, chuẩn nêm thành muoi 1 g + hat-nem 2 g (± dầu hào nếu đã có). Căn cứ riêng của món: hồ sơ đợt nâng không ghi họ nào ủng hộ nêm mắm — dòng mắm là khuôn mẫu soạn nháp.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

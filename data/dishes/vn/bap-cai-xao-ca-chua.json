@@ -65,8 +65,16 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "nuoc-mam-truyen-thong",
-      "quantity": 4,
+      "ingredient_slug": "muoi",
+      "quantity": 1,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hat-nem",
+      "quantity": 2,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -78,7 +86,7 @@
     "Bổ cà chua thành múi cau vừa ăn và băm nhỏ tỏi; cà chua cắt đều để khi xào mềm cùng lúc, không miếng nát miếng sống.",
     "Đun nóng dầu ăn trên lửa vừa, cho tỏi vào phi khoảng 30 giây đến vàng thơm, tỏi dậy mùi và chuyển vàng nhạt là đạt, tránh để cháy đắng.",
     "Cho cà chua vào xào trên lửa lớn 1–2 phút, đảo đều đến khi cà chua mềm, ra màu đỏ và hơi sệt quanh miếng.",
-    "Cho bắp cải vào chảo, xào trên lửa lớn và đậy nắp chừng 3 phút cho rau chín đều; nêm nước mắm khi bắp cải vừa chín tái để thấm vị mà không ra nhiều nước.",
+    "Cho bắp cải vào chảo, xào trên lửa lớn và đậy nắp chừng 3 phút cho rau chín đều; nêm muối và hạt nêm khi bắp cải vừa chín tái để thấm vị mà không ra nhiều nước.",
     "Đảo thêm 1–2 phút trên lửa lớn rồi tắt bếp; món đạt khi bắp cải vừa chín tới còn giòn, cà chua mềm quyện đều quanh rau, dọn nóng ngay."
   ],
   "recipe_sources": [
@@ -108,7 +116,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-005 đợt 5: nâng Mức 2 — đối chiếu 3 nguồn đã mở; không sửa định lượng vì không có đồng thuận lệch quá ngưỡng, lượng dầu ăn và tỉ lệ cà chua/bắp cải của file nằm giữa các nguồn. Bất thường ghi nhận: nguồn phi thơm bằng hành tím trong khi file dùng tỏi; nguồn có gừng băm, hành lá và đường mà file chưa có dòng tương ứng; bản chay không dùng nước mắm, khác biến thể mặn của file — chờ pha phân xử.]",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-005 đợt 5: nâng Mức 2 — đối chiếu 3 nguồn đã mở; không sửa định lượng vì không có đồng thuận lệch quá ngưỡng, lượng dầu ăn và tỉ lệ cà chua/bắp cải của file nằm giữa các nguồn. Bất thường ghi nhận: nguồn phi thơm bằng hành tím trong khi file dùng tỏi; nguồn có gừng băm, hành lá và đường mà file chưa có dòng tương ứng; bản chay không dùng nước mắm, khác biến thể mặn của file — chờ pha phân xử.] [LV2-010 Phần C — gói quyết định chủ dự án 2026-10-31: A4.1 ÁP quy ước rau xào: bỏ dòng nuoc-mam-truyen-thong 4 g, chuẩn nêm thành muoi 1 g + hat-nem 2 g (± dầu hào nếu đã có). Căn cứ riêng của món: nguồn đã mở là bản chay không dùng nước mắm; không họ nào ghi mắm là thiết yếu cho bản mặn.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

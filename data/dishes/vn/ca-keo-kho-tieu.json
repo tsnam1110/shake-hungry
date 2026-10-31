@@ -49,7 +49,7 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "duong-thot-not",
+      "ingredient_slug": "duong-trang",
       "quantity": 8,
       "unit_name": "g",
       "is_optional": false,
@@ -107,7 +107,7 @@
   ],
   "recipe_steps": [
     "Cá kèo rửa với nước cốt chanh và muối, chà nhẹ cho hết nhớt, rửa lại nhiều lần bằng nước sạch rồi để ráo; giữ nguyên con, chỉ cắt bỏ đầu nếu thích.",
-    "Ướp cá với nước mắm, một phần đường thốt nốt, tiêu xay, hành tím và tỏi băm trong 20–30 phút cho thấm đều gia vị.",
+    "Ướp cá với nước mắm, một phần đường trắng, tiêu xay, hành tím và tỏi băm trong 20–30 phút cho thấm đều gia vị.",
     "Thắng nước màu: cho phần đường còn lại cùng một chút nước vào nồi đất, đun lửa vừa đến khi đường chuyển màu cánh gián đậm thì tắt bếp ngay, tránh để cháy sẽ đắng.",
     "Xếp cá đã ướp vào nồi, rưới nước màu và toàn bộ phần nước ướp lên trên; bật lửa lớn cho nồi cá sôi bùng khoảng 2–3 phút.",
     "Hạ lửa nhỏ liu riu, kho 15–20 phút, không đậy kín nắp; thỉnh thoảng nghiêng nồi, rưới nước kho lên mặt cá thay vì đảo để cá không bị nát.",
@@ -142,7 +142,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): Đối chiếu 3 nguồn công thức đã mở kiểm chứng (xem recipe_sources). Định lượng: giữ nguyên toàn bộ. Cá kèo 150g/khẩu phần cao hơn nguồn thuần cá kèo (125g/khẩu phần) khoảng 20%, nằm trong ngưỡng 30%; nguồn thứ hai là biến thể kho chung thịt ba rọi (≈55g cá + ≈55g thịt mỗi khẩu phần) nên không đồng nhất để kết luận sửa. Ghi nhận bất thường: biến thể kho chung thịt ba rọi rất phổ biến trong các nguồn nhưng file không có thịt ba rọi — không tự thêm dòng. Bước nấu viết lại 8 bước.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): Đối chiếu 3 nguồn công thức đã mở kiểm chứng (xem recipe_sources). Định lượng: giữ nguyên toàn bộ. Cá kèo 150g/khẩu phần cao hơn nguồn thuần cá kèo (125g/khẩu phần) khoảng 20%, nằm trong ngưỡng 30%; nguồn thứ hai là biến thể kho chung thịt ba rọi (≈55g cá + ≈55g thịt mỗi khẩu phần) nên không đồng nhất để kết luận sửa. Ghi nhận bất thường: biến thể kho chung thịt ba rọi rất phổ biến trong các nguồn nhưng file không có thịt ba rọi — không tự thêm dòng. Bước nấu viết lại 8 bước. [LV2-010 Phần C — gói quyết định chủ dự án 2026-10-31: A4.2 ÁP quy ước cá kho: duong-thot-not 8 g → duong-trang 8 g. Căn cứ: hồ sơ đợt nâng không ghi họ nào dùng thốt nốt.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

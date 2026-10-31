@@ -83,6 +83,22 @@ món xét đạt Mức 2 (19 vòng 1 + 4 vòng 2 mở nguồn tuần tự) — T
 `che-tao-soan`…) gom tại [tasks/LV2-010.md](./tasks/LV2-010.md) §B.3.
 Kiểm chứng: validate 0 🔴 (kể cả DB), Pest 127/127, đối chiếu calo
 cách ly bằng worktree tại `cd6f7d9` — 0 món ngoài phạm vi đổi >1%.
+**Phần C — gói quyết định A1–A4 của chủ dự án (duyệt 2026-10-31
+~22:28):** áp bộ sửa `canh-ba-roi-nau-dau` → Mức 2; **xoá 3 món
+không xác nhận được tồn tại** (`canh-nghe-ca-ro`, `ca-bong-om-chuoi`,
+`canh-ca-bong`) — **kho còn 654 món**; A3 chốt các ca cấp món
+(`banh-bo` men nở khô → Mức 2, `bau-xao-tep`/`canh-rau-den-tep` →
+tép khô, `dau-phu-kho-nam` → nấm rơm, `com-nam-huong` giữ dạng tự
+biên soạn; `chao-dau-xanh`/`chao-ca-loc-trung` giữ nguyên chờ chỉ
+định phương án); A4 áp 4 quy ước cấp kho (rau xào bỏ nêm mắm — 12
+món + 2 ngoại lệ; cá kho bỏ thốt nốt — 11 món; quy ước lượng sợi
+tại EDITORIAL-GUIDE §14; `mong-gio` 150 g) + nhóm rang muối đổi
+chiên + bột rang muối (slug mới `bot-rang-muoi` null) — **cả 3 món
+nâng Mức 2. TỔNG CUỐI: 406/654 món Mức 2, còn 248 Mức 1; 434
+nguyên liệu.** Kiểm chứng Phần C: validate 0 🔴, recompute 406/406
+tính đủ trên DB kiểm chứng riêng, đối chiếu calo cách ly — 0 món
+ngoài phạm vi đổi >1%, Pest 127/127. Chi tiết:
+[tasks/LV2-010.md](./tasks/LV2-010.md) mục PHẦN C.
 
 > Mỗi task có file chi tiết riêng tại [`tasks/`](./tasks/). Click mã task để xem đầy đủ.
 > Tạo task mới: copy [`TASK-TEMPLATE.md`](./TASK-TEMPLATE.md) vào `tasks/`, đặt tên theo mã task.

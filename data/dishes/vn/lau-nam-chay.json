@@ -134,7 +134,7 @@
     },
     {
       "ingredient_slug": "bun-tuoi",
-      "quantity": 40,
+      "quantity": 80,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -190,7 +190,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt).",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [LV2-010 Phần C — gói quyết định chủ dự án 2026-10-31: A4.3 ÁP quy ước lượng sợi (EDITORIAL-GUIDE §14): bun-tuoi ăn kèm lẩu 40→80 g — toàn kho lẩu dùng thống nhất 80 g cho dòng bún ăn kèm; 40 g là ngoại lệ duy nhất không có căn cứ nguồn riêng.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

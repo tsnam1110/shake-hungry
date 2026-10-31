@@ -73,7 +73,7 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "duong-thot-not",
+      "ingredient_slug": "duong-trang",
       "quantity": 15,
       "unit_name": "g",
       "is_optional": false,
@@ -92,9 +92,9 @@
   "recipe_steps": [
     "Làm sạch mực ống, cắt khoanh vừa ăn hoặc giữ nguyên con nhỏ, rửa nhanh rồi để ráo khoảng 10 phút cho bề mặt mực khô, không còn đọng nước.",
     "Đun nước sôi cùng hành tím đập dập, chần mực khoảng 1 phút trên lửa lớn rồi vớt ra để ráo; mực vừa săn lại và hơi cong là đạt, không chần lâu kẻo dai.",
-    "Ướp mực với một phần nước mắm và đường thốt nốt trong 15 phút, đảo đều một lần giữa chừng cho gia vị thấm và bề mặt mực hơi bóng ẩm.",
+    "Ướp mực với một phần nước mắm và đường trắng trong 15 phút, đảo đều một lần giữa chừng cho gia vị thấm và bề mặt mực hơi bóng ẩm.",
     "Đun dầu ăn nóng vừa, phi hành tím và tỏi băm 1–2 phút trên lửa vừa, đảo liên tục đến khi hành tỏi vàng nhẹ và dậy mùi thơm.",
-    "Cho phần nước mắm và đường thốt nốt còn lại cùng ớt tươi vào chảo, đun lửa nhỏ 2–3 phút và khuấy đều đến khi sốt hơi sệt, nổi bóng nhẹ.",
+    "Cho phần nước mắm và đường trắng còn lại cùng ớt tươi vào chảo, đun lửa nhỏ 2–3 phút và khuấy đều đến khi sốt hơi sệt, nổi bóng nhẹ.",
     "Cho mực đã chần vào sốt, tăng lửa lớn và đảo nhẹ tay 5–7 phút cho sốt keo lại, áo đều quanh mực; mực bóng, săn chắc là đạt, tắt bếp ngay để tránh rim lâu làm mực teo và dai."
   ],
   "recipe_sources": [
@@ -124,7 +124,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-005 đợt 5: nâng Mức 2 — đối chiếu 3 nguồn công thức đã mở đọc; sửa duong-thot-not 10→15g vì 2/3 nguồn quy về 150g mực cho đường cao hơn file >30% (Cookpad 320667 ~15g với định lượng cup rõ ràng, Cookpad 13293421 ~22,5g ước tính theo muỗng), lấy mức thận trọng 15g theo nguồn chắc nhất; nước mắm 10g giữ nguyên vì khớp hai nguồn Cookpad (~9g và ~11g). Bất thường ghi nhận: dầu ăn có 1/3 nguồn cao hơn nhiều nhưng chưa đủ đồng thuận, 3/3 nguồn dùng đường cát thay đường thốt nốt và đều có tương ớt mà file không có — chờ pha phân xử.]",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-005 đợt 5: nâng Mức 2 — đối chiếu 3 nguồn công thức đã mở đọc; sửa duong-thot-not 10→15g vì 2/3 nguồn quy về 150g mực cho đường cao hơn file >30% (Cookpad 320667 ~15g với định lượng cup rõ ràng, Cookpad 13293421 ~22,5g ước tính theo muỗng), lấy mức thận trọng 15g theo nguồn chắc nhất; nước mắm 10g giữ nguyên vì khớp hai nguồn Cookpad (~9g và ~11g). Bất thường ghi nhận: dầu ăn có 1/3 nguồn cao hơn nhiều nhưng chưa đủ đồng thuận, 3/3 nguồn dùng đường cát thay đường thốt nốt và đều có tương ớt mà file không có — chờ pha phân xử.] [LV2-010 Phần C — gói quyết định chủ dự án 2026-10-31: A4.2 ÁP quy ước cá kho: duong-thot-not 15 g → duong-trang 15 g. Căn cứ: 3/3 họ đã mở dùng đường cát (đã ghi nhận chờ pha phân xử ở đợt nâng).]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

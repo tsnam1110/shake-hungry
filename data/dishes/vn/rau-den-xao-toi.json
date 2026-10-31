@@ -57,8 +57,16 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "nuoc-mam-truyen-thong",
-      "quantity": 4,
+      "ingredient_slug": "muoi",
+      "quantity": 1,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hat-nem",
+      "quantity": 2,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -70,7 +78,7 @@
     "Rửa rau dền 2–3 lượt nước, ngâm khoảng 10 phút rồi vớt ra để ráo chừng 5 phút, tới khi lá không còn đọng nhiều nước trước khi xào.",
     "Băm nhỏ tỏi, đun dầu ăn nóng trên lửa vừa khoảng 30 giây, cho tỏi vào phi 30–45 giây, đảo đều tới khi tỏi vàng và dậy mùi thơm.",
     "Cho rau dền vào chảo, xào trên lửa vừa 3–5 phút, đảo đều tay tới khi lá xẹp xuống, chuyển xanh sẫm và thân bắt đầu mềm.",
-    "Nêm nước mắm quanh chảo, đảo nhanh thêm 1–2 phút trên lửa vừa, tới khi rau mềm vừa, thấm vị mà vẫn giữ màu xanh và không ra nhiều nước.",
+    "Nêm muối và hạt nêm quanh chảo, đảo nhanh thêm 1–2 phút trên lửa vừa, tới khi rau mềm vừa, thấm vị mà vẫn giữ màu xanh và không ra nhiều nước.",
     "Tắt bếp ngay khi rau vừa chín tới, đảo thêm vài lượt cho tỏi bám đều lên lá, gắp ra đĩa và dùng nóng lúc rau còn xanh bóng."
   ],
   "recipe_sources": [
@@ -100,7 +108,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món THAY thứ hai cho các món rau hoãn (ngồng cải/giá hẹ) để đủ quota 30 món rau của đợt. [LV2-005 đợt 5: nâng Mức 2 — đối chiếu 3 nguồn công thức đã mở đọc (cả 3 đều không ghi số khẩu phần, định lượng quy theo cỡ mẻ); giữ nguyên toàn bộ định lượng vì lượng rau dền 140 g/người nằm trong khoảng suy ra từ các mẻ, lượng dầu chỉ có 1/3 nguồn cao hơn hẳn và tỏi ghi theo tép/củ không đồng nhất đơn vị. Bất thường ghi nhận: file nêm bằng nước mắm trong khi 2/3 nguồn nêm muối và hạt nêm, không dùng nước mắm — chờ pha phân xử.]",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món THAY thứ hai cho các món rau hoãn (ngồng cải/giá hẹ) để đủ quota 30 món rau của đợt. [LV2-005 đợt 5: nâng Mức 2 — đối chiếu 3 nguồn công thức đã mở đọc (cả 3 đều không ghi số khẩu phần, định lượng quy theo cỡ mẻ); giữ nguyên toàn bộ định lượng vì lượng rau dền 140 g/người nằm trong khoảng suy ra từ các mẻ, lượng dầu chỉ có 1/3 nguồn cao hơn hẳn và tỏi ghi theo tép/củ không đồng nhất đơn vị. Bất thường ghi nhận: file nêm bằng nước mắm trong khi 2/3 nguồn nêm muối và hạt nêm, không dùng nước mắm — chờ pha phân xử.] [LV2-010 Phần C — gói quyết định chủ dự án 2026-10-31: A4.1 ÁP quy ước rau xào: bỏ dòng nuoc-mam-truyen-thong 4 g, chuẩn nêm thành muoi 1 g + hat-nem 2 g (± dầu hào nếu đã có). Căn cứ riêng của món: 2/3 họ nêm muối và hạt nêm, không dùng nước mắm (đã ghi nhận chờ phân xử ở đợt nâng).]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

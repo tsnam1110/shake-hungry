@@ -6,19 +6,19 @@
   "names": [
     {
       "locale": "vi",
-      "name": "Bầu xào tép",
+      "name": "Bầu xào tép khô",
       "is_primary": true
     },
     {
       "locale": "en",
-      "name": "Stir-fried bottle gourd with tiny shrimp",
+      "name": "Stir-fried bottle gourd with dried tiny shrimp",
       "is_primary": true
     }
   ],
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "xao",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -41,8 +41,8 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "tep",
-      "quantity": 30,
+      "ingredient_slug": "tom-kho",
+      "quantity": 15,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -71,14 +71,41 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-tim",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Bầu gọt vỏ bỏ ruột, thái lát; tép rửa sạch để ráo.",
-    "Phi hành với dầu, cho tép vào xào săn.",
-    "Cho bầu vào xào vừa trong, nêm nước mắm, rắc hành lá."
+    "Tép khô ngâm nước ấm khoảng 10 phút, rửa sạch 2–3 lần cho hết cát và bớt mặn, để ráo.",
+    "Bầu gọt vỏ, bỏ phần ruột già, cắt miếng vừa ăn; hành lá cắt khúc, hành tím băm nhỏ.",
+    "Phi thơm hành tím với dầu ăn, cho tép khô vào xào lửa lớn 1–2 phút cho tép săn lại và dậy mùi.",
+    "Cho bầu vào xào nhanh tay 3–4 phút đến khi bầu vừa chín tới, còn độ giòn và chỉ ra ít nước.",
+    "Nêm nước mắm cho vừa ăn (tép khô đã mặn sẵn nên nêm nhẹ tay), đảo đều.",
+    "Rắc hành lá, đảo qua rồi tắt bếp; dùng nóng với cơm."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.bluestone.com.vn/blogs/vao-bep/bau-xao-tep",
+      "accessed": "2026-10-31",
+      "note": "BlueStone 'Bầu xào tép (khô)' — mở ở LV2-004, họ 1"
+    },
+    {
+      "url": "https://saigonesebaguette.vn/cach-lam-bau-xao-tep-kho",
+      "accessed": "2026-10-31",
+      "note": "Saigonese Baguette 'Bầu xào tép khô' — mở ở LV2-004, họ 2"
+    },
+    {
+      "url": "https://toyenxin.com/blog-1/cach-lam-bau-xao-tep-kho-vi-cb",
+      "accessed": "2026-10-31",
+      "note": "ToyenXin 'Bầu xào tép khô' — mở ở LV2-004, họ 3"
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/bau-xao-tep.webp",
@@ -89,7 +116,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-004 đợt 4: thử nâng Mức 2 — GIỮ MỨC 1 chờ phân xử: 3/3 nguồn (bluestone.com.vn/blogs/vao-bep/bau-xao-tep; saigonesebaguette.vn/cach-lam-bau-xao-tep-kho; toyenxin.com/blog-1/cach-lam-bau-xao-tep-kho-vi-cb) đều dùng tép/tôm KHÔ trong khi file dùng tép tươi — đổi nguyên liệu là quyết định định danh; ngoài ra tép khô quy về khẩu phần 30 g tươi tương đương thấp hơn nguồn 25–50% theo chất khô, và bước nấu file nhắc phi hành nhưng không có dòng hành tím.] [Phân tích LV2-005 Phần A (2026-10-31) — GIỮ NGUYÊN, chờ chủ dự án quyết: mâu thuẫn nằm giữa KẾ HOẠCH ĐÃ DUYỆT và NGUỒN NGOÀI. Kế hoạch DISH-005 §3.2 (chủ dự án đã duyệt) ghi rõ bau-xao-tep dùng tep (tép tươi); nhưng 3/3 nguồn công thức đã mở ở LV2-004 (BlueStone; Saigonese Baguette; ToyenXin) đều là \"bầu xào tép KHÔ\" — không tìm được nguồn công thức đúng món dùng tép tươi. Hai lựa chọn: (1) giữ tép tươi theo kế hoạch đã duyệt, chấp nhận món là biến thể gia đình ít tài liệu — giữ Mức 1 lâu dài; (2) đổi sang tom-kho theo đồng thuận nguồn, món thành \"bầu xào tép khô\" và đủ đường nâng Mức 2. Vì định danh này do chính kế hoạch đã duyệt ấn định, không tự ý đổi ở pha biên tập.]",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-004 đợt 4: thử nâng Mức 2 — GIỮ MỨC 1 chờ phân xử: 3/3 nguồn (bluestone.com.vn/blogs/vao-bep/bau-xao-tep; saigonesebaguette.vn/cach-lam-bau-xao-tep-kho; toyenxin.com/blog-1/cach-lam-bau-xao-tep-kho-vi-cb) đều dùng tép/tôm KHÔ trong khi file dùng tép tươi — đổi nguyên liệu là quyết định định danh; ngoài ra tép khô quy về khẩu phần 30 g tươi tương đương thấp hơn nguồn 25–50% theo chất khô, và bước nấu file nhắc phi hành nhưng không có dòng hành tím.] [Phân tích LV2-005 Phần A (2026-10-31) — GIỮ NGUYÊN, chờ chủ dự án quyết: mâu thuẫn nằm giữa KẾ HOẠCH ĐÃ DUYỆT và NGUỒN NGOÀI. Kế hoạch DISH-005 §3.2 (chủ dự án đã duyệt) ghi rõ bau-xao-tep dùng tep (tép tươi); nhưng 3/3 nguồn công thức đã mở ở LV2-004 (BlueStone; Saigonese Baguette; ToyenXin) đều là \"bầu xào tép KHÔ\" — không tìm được nguồn công thức đúng món dùng tép tươi. Hai lựa chọn: (1) giữ tép tươi theo kế hoạch đã duyệt, chấp nhận món là biến thể gia đình ít tài liệu — giữ Mức 1 lâu dài; (2) đổi sang tom-kho theo đồng thuận nguồn, món thành \"bầu xào tép khô\" và đủ đường nâng Mức 2. Vì định danh này do chính kế hoạch đã duyệt ấn định, không tự ý đổi ở pha biên tập.] [LV2-010 Phần C — gói quyết định chủ dự án 2026-10-31: A3 ÁP quyết định tép khô (đồng thuận 3/3 họ LV2-004): tep tươi 30 g → tom-kho 15 g, đổi tên 'Bầu xào tép khô', thêm hanh-tim 5 g (các họ đều phi hành tím, file thiếu hẳn dù steps cũ có nhắc). Lượng tom-kho: suy từ ghi nhận LV2-005 (bộ số nguồn cao hơn tương đương khô của 30 g tép tươi ~25–50%) và neo đối chiếu tép khô xào của ĐMX (bắp xào tép khô 50 g/3 người ≈ 17 g) → 15 g, confidence low. Nước mắm 4 g GIỮ — ngoại lệ quy ước A4.1: món xào tép khô theo nguồn của chính nhóm món này có nêm nước mắm thật (ĐMX bắp xào tép khô: nước mắm 1 muỗng canh/3 người ≈ 5 g), không phải khuôn mẫu rau xào. NÂNG MỨC 2.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

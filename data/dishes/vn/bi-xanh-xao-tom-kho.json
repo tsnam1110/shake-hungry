@@ -65,8 +65,16 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "nuoc-mam-truyen-thong",
-      "quantity": 3,
+      "ingredient_slug": "muoi",
+      "quantity": 1,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hat-nem",
+      "quantity": 2,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -78,7 +86,7 @@
     "Gọt vỏ bí đao, bỏ ruột và hạt, thái lát mỏng vừa ăn; lát thái đều và mỏng giúp bí chín nhanh, vừa mềm mà vẫn giữ độ giòn.",
     "Đun nóng dầu ăn trên lửa vừa, cho tôm khô vào xào khoảng 1–2 phút, đảo đều đến khi tôm săn lại và dậy mùi thơm hải sản.",
     "Cho bí đao vào xào nhanh trên lửa lớn, đảo đều tay khoảng 1–2 phút cho bí thấm dầu và bắt đầu chuyển trong nhẹ ở mép lát.",
-    "Thêm một ít nước, hạ lửa nhỏ đun khoảng 3 phút cho bí ngấm; nêm nước mắm nhẹ tay vì tôm khô đã mặn, đảo đều cho vừa vị.",
+    "Thêm một ít nước, hạ lửa nhỏ đun khoảng 3 phút cho bí ngấm; nêm muối và hạt nêm nhẹ tay vì tôm khô đã mặn, đảo đều cho vừa vị.",
     "Khi bí vừa mềm, chuyển trong nhẹ mà vẫn còn giòn thì rắc hành lá thái nhỏ, đảo đều một lượt rồi tắt bếp, dọn nóng ngay."
   ],
   "recipe_sources": [
@@ -113,7 +121,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-005 đợt 5: nâng Mức 2 — đối chiếu 3 nguồn đúng món và 1 nguồn món tương tự đã mở; không sửa định lượng vì lượng tôm khô phân kỳ theo biến thể đạm đi kèm và nguồn tương tự khớp file. Bất thường ghi nhận: nguồn đúng món có tỏi và tiêu trắng mà file chưa có dòng tương ứng, bước hiện tại ghi phi hành nhưng danh mục nguyên liệu chỉ có hành lá; biến thể có xúc xích, cà rốt hoặc dùng tôm tươi kèm thịt heo chỉ ghi nhận — chờ pha phân xử.]",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-005 đợt 5: nâng Mức 2 — đối chiếu 3 nguồn đúng món và 1 nguồn món tương tự đã mở; không sửa định lượng vì lượng tôm khô phân kỳ theo biến thể đạm đi kèm và nguồn tương tự khớp file. Bất thường ghi nhận: nguồn đúng món có tỏi và tiêu trắng mà file chưa có dòng tương ứng, bước hiện tại ghi phi hành nhưng danh mục nguyên liệu chỉ có hành lá; biến thể có xúc xích, cà rốt hoặc dùng tôm tươi kèm thịt heo chỉ ghi nhận — chờ pha phân xử.] [LV2-010 Phần C — gói quyết định chủ dự án 2026-10-31: A4.1 ÁP quy ước rau xào: bỏ dòng nuoc-mam-truyen-thong 3 g, chuẩn nêm thành muoi 1 g + hat-nem 2 g (± dầu hào nếu đã có). Căn cứ riêng của món: hồ sơ đợt nâng không ghi họ nào ủng hộ nêm mắm — dòng mắm là khuôn mẫu soạn nháp.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

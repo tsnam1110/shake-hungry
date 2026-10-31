@@ -1,0 +1,57 @@
+{
+  "slug": "bot-rang-muoi",
+  "name_vi": "Bột rang muối",
+  "name_en": "Roasted salt powder (salt, glutinous rice and mung bean, ground)",
+  "category": "gia-vi",
+  "reference_food": {
+    "fct_source": null,
+    "external_id": null,
+    "source_url": null,
+    "scientific_name": null,
+    "kcal_per_100g": null,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": null,
+    "fat_g": null,
+    "carb_g": null,
+    "fiber_g": null,
+    "water_g": null,
+    "sodium_mg": null,
+    "mapping_confidence": "low",
+    "mapping_note": "Biên soạn LV2-010 Phần C (2026-10-31) dạng null + hồ sơ theo quyết định nhóm rang muối của chủ dự án: bột rang muối là hỗn hợp TỰ LÀM tại bếp — muối hột rang + gạo nếp rang + đậu xanh cà vỏ rang (có biến thể thêm gạo tẻ, hạt sen, tiêu sọ), xay nhuyễn; tỉ lệ các thành phần dao động theo từng công thức đã mở (ĐMX: nếp 100 + đậu 100 + muối 2 thìa cà phê/mẻ; Thật Là Ngon: muối 4 + đậu 15 + nếp 20 + gạo tẻ 15 + hạt sen 20/mẻ nhỏ; NAKK: gạo 2 muỗng canh + đậu 1 muỗng canh + muối hột 1 muỗng canh) nên KHÔNG có một bộ số/100 g duy nhất đúng cho mọi mẻ, và không bảng FCT nào có mục cho hỗn hợp này. Không tự tính số từ thành phần (không có tiền lệ trong kho cho hỗn hợp gia vị tự phối). Tác động: dòng bột rang muối trong món vào missing_ingredients — lượng thực dùng chỉ ~5–10 g/khẩu phần và phần muối thực ăn ~0,6–2 g (hồ sơ suon-rang-muoi LV2-004), nên phần dinh dưỡng chưa tính được là nhỏ so với khẩu phần; món vẫn tính được khoảng từ các dòng còn lại. VIỆC CẦN LÀM: nếu kho quyết một công thức bột chuẩn duy nhất cho mọi món rang muối, có thể cân nhắc tính bộ số theo công thức đó ở một quyết định riêng.",
+    "alternatives": [
+      {
+        "name": "Muối hột/muối ăn (slug muoi)",
+        "why_not": "Chỉ là một thành phần của bột; dùng thay sẽ mất phần gạo/đậu rang và sai bản chất dòng nguyên liệu.",
+        "external_id": null,
+        "kcal_per_100g": 0
+      },
+      {
+        "name": "Muối Hồng Kông thương mại (gia vị đóng gói)",
+        "why_not": "Sản phẩm công nghiệp khác công thức (có tôm khô/hạt điều/bột tỏi) — là biến thể khác, không phải bột rang muối truyền thống của nhóm món này.",
+        "external_id": null,
+        "kcal_per_100g": null
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": 0.0,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": true,
+  "units": [],
+  "source": "curated",
+  "confidence": "low",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:tong-hop",
+    "state:kho"
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "_generated_by": "php artisan lacdoi:export-data — không sửa tay (DATA-REPOSITORY §2)",
-  "count": 433,
+  "count": 434,
   "ingredients": [
     {
       "slug": "bach-tuoc",
@@ -210,6 +210,11 @@
     {
       "slug": "bot-que",
       "name_vi": "Bột quế / quế thanh",
+      "category": "gia-vi"
+    },
+    {
+      "slug": "bot-rang-muoi",
+      "name_vi": "Bột rang muối",
       "category": "gia-vi"
     },
     {

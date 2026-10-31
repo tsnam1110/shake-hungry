@@ -65,7 +65,7 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "tom-su",
+      "ingredient_slug": "tep",
       "quantity": 80,
       "unit_name": "g",
       "is_optional": false,
@@ -190,7 +190,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 12 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).] [LV2-009 đợt 9 (bổ sung): Nâng Mức 2 — mở kiểm chứng 3 họ nguồn (Điện Máy XANH, Savoury Days, Cookpad Hien Dang). Thêm bot-nang 20 g (hai họ định lượng 25 g; tổng bột thành 75 g khớp cả hai) và đồ chua su-hao 20 g + ca-rot 15 g (3/3 họ đều có ăn kèm, file thiếu hẳn; lấy dưới mức nguồn vì đồ chua thường không ăn hết); sửa tom-su 40→80 g (3/3 họ 83–125 g/khẩu phần — lấy thận trọng vì một họ tự nhận tôm to hơn cổ truyền), trung-ga 12→20 g, xa-lach 25→50 g, nuoc-mam-truyen-thong 12→8 g (3/3 họ hội tụ ~7,5 g). Giữ khoai-lang 50 g vì nguồn bất đồng 33–112 g. Phương án A: file vốn không có dòng dau-an — đúng quy ước, dầu chiên ngập do engine mô hình hoá theo CALC-004, món không có bước phụ nên không thêm dòng dầu. Ghi nhận chờ quyết (LV2-009 §B.5): cả 3 họ dùng tôm nhỏ nguyên con còn vỏ đặt lên mặt bánh, file dùng slug tom-su — đổi slug là quyết định định danh, đợt này chỉ sửa lượng.]",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 12 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).] [LV2-009 đợt 9 (bổ sung): Nâng Mức 2 — mở kiểm chứng 3 họ nguồn (Điện Máy XANH, Savoury Days, Cookpad Hien Dang). Thêm bot-nang 20 g (hai họ định lượng 25 g; tổng bột thành 75 g khớp cả hai) và đồ chua su-hao 20 g + ca-rot 15 g (3/3 họ đều có ăn kèm, file thiếu hẳn; lấy dưới mức nguồn vì đồ chua thường không ăn hết); sửa tom-su 40→80 g (3/3 họ 83–125 g/khẩu phần — lấy thận trọng vì một họ tự nhận tôm to hơn cổ truyền), trung-ga 12→20 g, xa-lach 25→50 g, nuoc-mam-truyen-thong 12→8 g (3/3 họ hội tụ ~7,5 g). Giữ khoai-lang 50 g vì nguồn bất đồng 33–112 g. Phương án A: file vốn không có dòng dau-an — đúng quy ước, dầu chiên ngập do engine mô hình hoá theo CALC-004, món không có bước phụ nên không thêm dòng dầu. Ghi nhận chờ quyết (LV2-009 §B.5): cả 3 họ dùng tôm nhỏ nguyên con còn vỏ đặt lên mặt bánh, file dùng slug tom-su — đổi slug là quyết định định danh, đợt này chỉ sửa lượng.] [LV2-010 Phần C — gói quyết định chủ dự án 2026-10-31: A3 PHÂN XỬ slug tôm theo hồ sơ LV2-009 §B.5: tom-su 80 g → tep 80 g. Cả 3 họ đã mở đều dùng tôm NHỎ nguyên con còn vỏ đặt trên mặt bánh (đúng truyền thống bánh tôm Hồ Tây), trong khi tom-su là tôm sú lớn đã bỏ vỏ — sai định danh nguyên liệu. Slug tep ('tép — tôm nhỏ nước ngọt') khớp kích cỡ/dạng dùng; calo không đổi (cả hai slug cùng 85 kcal/100 g) nên không ảnh hưởng khoảng dinh dưỡng của món.]",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

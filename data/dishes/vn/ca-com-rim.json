@@ -65,7 +65,7 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "duong-thot-not",
+      "ingredient_slug": "duong-trang",
       "quantity": 10,
       "unit_name": "g",
       "is_optional": false,
@@ -117,7 +117,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 3 nguồn (cả 3 không ghi số khẩu phần — phân xử theo tỉ lệ trên 100 g cá). Phân xử định lượng: nuoc-mam-truyen-thong 8 → 15 g — 2/3 nguồn đồng thuận ~15 g/100 g cá, file thấp hơn ~47%; đường thốt nốt 10 g giữ nguyên (dải nguồn 6–12 g; nguồn dùng đường trắng, file dùng thốt nốt là thay thế hợp lệ). Bất thường ghi nhận: hành tím có ở 2/3 nguồn và tiêu ở 2/3 nguồn, file thiếu cả hai; kỹ thuật cũ của file thiếu bước ướp + chiên sơ (3/3 nguồn đều có) — bước đã viết lại.",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 3 nguồn (cả 3 không ghi số khẩu phần — phân xử theo tỉ lệ trên 100 g cá). Phân xử định lượng: nuoc-mam-truyen-thong 8 → 15 g — 2/3 nguồn đồng thuận ~15 g/100 g cá, file thấp hơn ~47%; đường thốt nốt 10 g giữ nguyên (dải nguồn 6–12 g; nguồn dùng đường trắng, file dùng thốt nốt là thay thế hợp lệ). Bất thường ghi nhận: hành tím có ở 2/3 nguồn và tiêu ở 2/3 nguồn, file thiếu cả hai; kỹ thuật cũ của file thiếu bước ướp + chiên sơ (3/3 nguồn đều có) — bước đã viết lại. [LV2-010 Phần C — gói quyết định chủ dự án 2026-10-31: A4.2 ÁP quy ước cá kho: duong-thot-not 10 g → duong-trang 10 g. Căn cứ: nguồn của món dùng đường trắng (dải 6–12 g); đợt nâng từng giữ thốt nốt như 'thay thế hợp lệ' — quy ước cấp kho nay chốt bỏ, áp lại theo nguồn.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

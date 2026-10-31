@@ -6,19 +6,19 @@
   "names": [
     {
       "locale": "vi",
-      "name": "canh thịt ba rọi nấu đậu trắng",
+      "name": "thịt heo nấu đậu trắng",
       "is_primary": true
     },
     {
       "locale": "en",
-      "name": "Pork belly soup with white beans",
+      "name": "Pork and white bean stew",
       "is_primary": true
     }
   ],
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -33,8 +33,8 @@
   "serving_grams": 300,
   "ingredients": [
     {
-      "ingredient_slug": "thit-lon-ba-chi",
-      "quantity": 80,
+      "ingredient_slug": "thit-lon-nac-vai",
+      "quantity": 90,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -42,7 +42,7 @@
     },
     {
       "ingredient_slug": "dau-trang",
-      "quantity": 60,
+      "quantity": 40,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -111,14 +111,41 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "ca-rot",
+      "quantity": 30,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Đậu trắng ngâm nở trước vài giờ; thịt ba rọi rửa sạch, cắt miếng vừa ăn, xào săn.",
-    "Cho đậu và thịt vào nồi, đổ nước, hầm đến khi đậu và thịt cùng mềm.",
-    "Thêm cà chua và hành tây nấu chín, nêm nước mắm và chút đường, rắc hành lá và tiêu."
+    "Đậu trắng khô ngâm nước 6–8 giờ (hoặc qua đêm) cho nở mềm; vo sạch, để ráo.",
+    "Thịt nạc vai rửa sạch, cắt miếng vuông khoảng 3 cm; ướp nước mắm, đường và tiêu xay khoảng 20 phút cho thấm.",
+    "Phi hành tây với dầu ăn cho thơm, cho thịt vào xào săn các mặt khoảng 5 phút.",
+    "Đổ khoảng 800 ml nước, đun sôi rồi hạ lửa nhỏ hầm 25–30 phút đến khi thịt mềm.",
+    "Cho đậu trắng và cà rốt vào hầm tiếp 15–20 phút đến khi đậu mềm bùi và cà rốt chín.",
+    "Cho cà chua vào nấu thêm 3–4 phút; nêm lại muối cho vừa ăn, tắt bếp, rắc hành lá và tiêu."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/14174588",
+      "accessed": "2026-10-31",
+      "note": "Cookpad Minh Hayes 'Thịt heo nấu đậu': nạc vai 2 lbs, đậu trắng 1 hộp (tỉ lệ đậu/thịt ≈ 0,44), cà rốt, hành tây — họ 1"
+    },
+    {
+      "url": "https://simplevietnamesefood.com/pork-beans-stew-thit-kho-dau/",
+      "accessed": "2026-10-31",
+      "note": "Simple Vietnamese Food 'Pork & Beans Stew': pork butt 1 lb/5 khẩu phần ≈ 90 g, cannellini 2 lon, cà rốt — họ 2"
+    },
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/2-cach-lam-suon-heo-nau-dau-trang-thom-ngon-bo-duong-cho-ca-09791",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH: sườn nấu đậu trắng dạng lagu (cà chua, cà rốt, hành tây) — họ 3"
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/canh-ba-roi-nau-dau.webp",
@@ -129,7 +156,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-008 đợt 8: HOLD do 429 khi mở nguồn. Ghi nhận từ vòng tìm kiếm (chưa tính là nguồn đã mở): biến thể thịt heo nấu đậu trắng vốn đã thưa nguồn đạt chuẩn — các trang tiếng Việt đúng biến thể chủ yếu là trang tổng hợp SEO vô danh (memart.vn, saigonesebaguette.vn) không tính nguồn theo brief; nguồn có tác giả rõ ràng tìm được là biến thể thịt heo (nạc vai) + đậu cannellini đóng hộp kiểu kho/hầm và công thức Cookpad thịt heo nấu đậu/cassoulet đậu trắng kiểu Pháp — khác cắt thịt (ba rọi) và khác dạng đậu so với file. Cần chạy lại khi hết 429 để mở đọc và phân xử dứt điểm.] [LV2-009 đợt 9: GIỮ Mức 1 — thử lại món 429 của đợt 8, đã mở đủ 3 họ ở vòng 2 (Cookpad Minh Hayes 'Thịt heo nấu đậu', Simple Vietnamese Food 'Pork & Beans Stew', Điện Máy XANH 'Sườn heo nấu đậu trắng') nhưng 0/3 họ dùng BA RỌI: hai họ dùng nạc vai, họ còn lại dùng sườn non dạng lagu sốt cà sánh. Cắt thịt định danh của món ('canh thịt ba rọi nấu đậu trắng') không có họ nào xác nhận, và dạng món của file (canh nước trong, đậu trắng khô) cũng không họ nào khớp trọn. Đổi cắt thịt đồng nghĩa đổi định danh/tên món — CHỜ QUYẾT của chủ dự án (mục mới): giữ tên ba rọi hay đổi thành 'thịt heo nấu đậu trắng'. Bộ sửa dự kiến đã soạn sẵn trong hồ sơ LV2-009 (nếu đổi: thit-lon-ba-chi 80 g → thit-lon-nac-vai 90 g; dau-trang 60→40 g; thêm ca-rot 30 g — 3/3 họ đều có mà file thiếu hẳn; steps 6 bước) — đủ nguồn để nâng ngay khi có quyết định.]",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-008 đợt 8: HOLD do 429 khi mở nguồn. Ghi nhận từ vòng tìm kiếm (chưa tính là nguồn đã mở): biến thể thịt heo nấu đậu trắng vốn đã thưa nguồn đạt chuẩn — các trang tiếng Việt đúng biến thể chủ yếu là trang tổng hợp SEO vô danh (memart.vn, saigonesebaguette.vn) không tính nguồn theo brief; nguồn có tác giả rõ ràng tìm được là biến thể thịt heo (nạc vai) + đậu cannellini đóng hộp kiểu kho/hầm và công thức Cookpad thịt heo nấu đậu/cassoulet đậu trắng kiểu Pháp — khác cắt thịt (ba rọi) và khác dạng đậu so với file. Cần chạy lại khi hết 429 để mở đọc và phân xử dứt điểm.] [LV2-009 đợt 9: GIỮ Mức 1 — thử lại món 429 của đợt 8, đã mở đủ 3 họ ở vòng 2 (Cookpad Minh Hayes 'Thịt heo nấu đậu', Simple Vietnamese Food 'Pork & Beans Stew', Điện Máy XANH 'Sườn heo nấu đậu trắng') nhưng 0/3 họ dùng BA RỌI: hai họ dùng nạc vai, họ còn lại dùng sườn non dạng lagu sốt cà sánh. Cắt thịt định danh của món ('canh thịt ba rọi nấu đậu trắng') không có họ nào xác nhận, và dạng món của file (canh nước trong, đậu trắng khô) cũng không họ nào khớp trọn. Đổi cắt thịt đồng nghĩa đổi định danh/tên món — CHỜ QUYẾT của chủ dự án (mục mới): giữ tên ba rọi hay đổi thành 'thịt heo nấu đậu trắng'. Bộ sửa dự kiến đã soạn sẵn trong hồ sơ LV2-009 (nếu đổi: thit-lon-ba-chi 80 g → thit-lon-nac-vai 90 g; dau-trang 60→40 g; thêm ca-rot 30 g — 3/3 họ đều có mà file thiếu hẳn; steps 6 bước) — đủ nguồn để nâng ngay khi có quyết định.] [LV2-010 Phần C — gói quyết định chủ dự án 2026-10-31: A1 ÁP bộ sửa soạn sẵn của LV2-009 §B.3 sau khi chủ dự án duyệt: đổi tên 'thịt heo nấu đậu trắng' (slug giữ nguyên để không đứt liên kết media/tham chiếu), thit-lon-ba-chi 80 g → thit-lon-nac-vai 90 g, dau-trang 60→40 g, thêm ca-rot 30 g (3/3 họ đều có, file thiếu hẳn); steps viết lại 6 bước; NÂNG MỨC 2 — 3 họ đã mở ở LV2-009 và đối chiếu lại ở Phần C (tỉ lệ đậu/thịt của Cookpad ≈ 0,44 khớp 40/90; SVF cho thịt ≈ 90 g/khẩu phần). Cà chua 40 g giữ theo họ ĐMX.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

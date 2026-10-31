@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "hap",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "chieu",
@@ -34,7 +34,7 @@
   "ingredients": [
     {
       "ingredient_slug": "bot-gao",
-      "quantity": 60,
+      "quantity": 30,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -63,14 +63,50 @@
       "is_optional": true,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "bot-nang",
+      "quantity": 6,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "men-no",
+      "quantity": 1,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Hòa bột gạo với nước cơm rượu (men), ủ cho bột lên men chua nhẹ.",
-    "Thắng nước đường, trộn với bột và nước cốt dừa thành hỗn hợp lỏng.",
-    "Đổ bột vào khuôn nhỏ, hấp chín đến khi mặt bánh rỗ tổ ong, bánh dai xốp."
+    "Kích hoạt men nở: hoà men với khoảng 50 ml nước ấm (35–40°C) và 1 thìa cà phê đường lấy trong lượng đường chung, để 10 phút đến khi men nổi bọt như gạch cua.",
+    "Đun nước cốt dừa với phần đường còn lại và lá dứa trên lửa nhỏ cho đường tan, hỗn hợp vừa ấm (không để sôi) thì tắt bếp, để nguội bớt còn âm ấm.",
+    "Trộn bột gạo và bột năng trong âu lớn; đổ phần nước men vào khuấy đều, thêm từ từ nước cốt dừa đường, khuấy đến khi bột mịn, không vón cục.",
+    "Đậy kín âu bột, ủ nơi ấm 1,5–2 giờ đến khi bột nở gấp đôi và mặt bột có nhiều bọt khí nhỏ.",
+    "Làm nóng xửng và khuôn hấp khoảng 5 phút; khuấy nhẹ bột cho đều rồi múc vào khuôn, chỉ đổ khoảng ⅔ khuôn.",
+    "Hấp lửa vừa 15–20 phút, không mở nắp trong 10 phút đầu; bánh chín khi mặt bánh rỗ tổ ong và xiên tăm rút ra khô.",
+    "Để bánh nguội bớt trong khuôn khoảng 5 phút rồi lấy ra; bánh đạt khi ruột xốp, có rễ tre và thơm cốt dừa."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://bepnhatoi.net/cach-lam-banh-bo-hap/",
+      "accessed": "2026-10-31",
+      "note": "Bếp Nhà Tôi: bột gạo 500, bột năng 100, men nở instant 7, cốt dừa 400, đường 150 — họ 1 (đối chiếu lại ở Phần C)"
+    },
+    {
+      "url": "https://www.beemart.vn/cach-lam-banh-bo-hap-mem-thom",
+      "accessed": "2026-10-31",
+      "note": "Beemart: bột gạo 200, bột năng 50, men nở 5, cốt dừa 200, đường 150 — họ 2 (đối chiếu lại ở Phần C)"
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/15414298",
+      "accessed": "2026-10-31",
+      "note": "Cookpad Bòn Bon: bột gạo 140 + bột năng 60, men nở 3, cốt dừa 150, đường 180–200 — họ 3 (đối chiếu lại ở Phần C)"
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/banh-bo.webp",
@@ -81,7 +117,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-007 đợt 7: thử nâng Mức 2 — GIỮ MỨC 1 dù đã đủ 3 nguồn đúng biến thể (bánh bò hấp đường cát trắng + cốt dừa; biến thể thốt nốt đã loại khỏi đối chiếu). Lý do: BẤT THƯỜNG CẤU TRÚC — bước nấu của file ghi 'nước cơm rượu (men)' nhưng danh sách nguyên liệu không có dòng tác nhân nở nào, mà kho chưa có slug cơm rượu lẫn men nở → không áp được phân xử. Phân xử dự phòng đã sẵn (chờ có slug): bột gạo 60→30g (3/3 nguồn 28,1–32,4g — file lệch ~+90–114%), +bột năng 6g (3/3 nguồn đều có, file thiếu hẳn), GIỮ đường 25g và cốt dừa 30g. Chờ chủ dự án quyết tạo nguyên liệu nở: men-no ~1g (2/3 nguồn hiện đại) hay com-ruou ~20g (truyền thống, khớp bước hiện tại của file). Xem LV2-007 §3.]",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-007 đợt 7: thử nâng Mức 2 — GIỮ MỨC 1 dù đã đủ 3 nguồn đúng biến thể (bánh bò hấp đường cát trắng + cốt dừa; biến thể thốt nốt đã loại khỏi đối chiếu). Lý do: BẤT THƯỜNG CẤU TRÚC — bước nấu của file ghi 'nước cơm rượu (men)' nhưng danh sách nguyên liệu không có dòng tác nhân nở nào, mà kho chưa có slug cơm rượu lẫn men nở → không áp được phân xử. Phân xử dự phòng đã sẵn (chờ có slug): bột gạo 60→30g (3/3 nguồn 28,1–32,4g — file lệch ~+90–114%), +bột năng 6g (3/3 nguồn đều có, file thiếu hẳn), GIỮ đường 25g và cốt dừa 30g. Chờ chủ dự án quyết tạo nguyên liệu nở: men-no ~1g (2/3 nguồn hiện đại) hay com-ruou ~20g (truyền thống, khớp bước hiện tại của file). Xem LV2-007 §3.] [LV2-010 Phần C — gói quyết định chủ dự án 2026-10-31: A3 ÁP quyết định chất nở: dùng MEN NỞ KHÔ ~1 g (slug men-no, USDA SR 175043) thay cơm rượu trong bước ủ. Áp phân xử định lượng đã soạn sẵn ở LV2-007: bot-gao 60→30 g, thêm bot-nang 6 g, giữ duong-trang 25 g và nuoc-cot-dua 30 g; steps viết lại 7 bước theo kỹ thuật men nở. NÂNG MỨC 2: LV2-007 đã mở đủ 3 họ đúng biến thể; Phần C đối chiếu lại 3 họ (Bếp Nhà Tôi/Beemart/Cookpad Bòn Bon): bột gạo quy về khẩu phần 23–37 g, bột năng 6–10 g, men 0,5–1 g — khớp bộ số áp dụng.]",
   "status": "draft",
   "source": "llm_suggested",
   "confidence": "unknown",

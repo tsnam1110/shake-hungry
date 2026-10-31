@@ -57,16 +57,24 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "nuoc-mam-truyen-thong",
-      "quantity": 4,
+      "ingredient_slug": "dau-hao",
+      "quantity": 5,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
     },
     {
-      "ingredient_slug": "dau-hao",
-      "quantity": 5,
+      "ingredient_slug": "muoi",
+      "quantity": 1,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hat-nem",
+      "quantity": 2,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -109,7 +117,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-008 đợt 8: GIỮ MỨC 1 — chỉ gom được 2 nguồn đạt chuẩn đã mở đọc cho đúng món cần nước xào tỏi, đều là Cookpad VN có tác giả: Pi Ha (1 bó rau cần, 3 tép tỏi, nêm hạt nêm/muối/đường, đảo nhanh 30 giây — 'cần xào tái') và Trần Nguyên (2 người, 1/2–1 bó cần nước, 2 tép tỏi, dầu hào 1 thìa, muối/hạt nêm). Hai nguồn này nhất quán với file hiện tại (rau 120g/khẩu phần nằm trong dải 1 bó 200–300g chia 2 người = 100–150g; tỏi 5g ở cận trên của 2–3 tép/mẻ) nhưng chưa đủ 3 nguồn theo tiêu chí Mức 2. Các ứng viên nguồn thứ ba đều không đạt: cụm memart.vn / saigonesebaguette.vn / toyenxin.com là một họ nội dung SEO sao chép lẫn nhau (cùng văn bản, cùng định lượng) nên brief loại và chỉ tính tối đa 1 họ vô danh; suckhoedoisong.vn có rau cần xào mắm ruốc — biến thể khác về gia vị định danh, không tính cho bản xào tỏi; nauchuananngon.vn có công thức đúng món nhưng browser.open lỗi fetch (không có HTTP status, không retry theo quy định). Làm lại được ở đợt sau khi mở được thêm 1 nguồn biên tập độc lập.] [LV2-010 đợt 10: ĐẠT MỨC 2 — 3 họ đã mở: Cookpad Pi Ha (1 bó cần nước, 3 tép tỏi, nêm hạt nêm + muối + đường, đảo nhanh 30 giây — 'cần xào tái'); Cookpad Trần Nguyên (2 người, 1/2–1 bó, 2 tép tỏi, dầu hào 1 thìa, muối/hạt nêm); Nấu Chuẩn Ăn Ngon (1 bó 200–300 g cho 2 người, tỏi 8 tép lớn, dầu 2 muỗng canh, dầu hào 1 tsp, nước mắm 1/2 tsp cuối mẻ). Rau 120 g/khẩu phần khớp dải 100–150 g của 3 họ → giữ; tỏi các họ bất đồng >30% (3–16 g/người) → giữ 5 g; dầu chỉ 1 họ có số (14 g/người) → giữ 8 g. Thêm dầu hào 5 g (2/3 họ có; lượng giữa 2 họ lệch xa 2,5–7,5 g/người, lấy trung điểm — cần rà lại). BẤT THƯỜNG chờ quy ước cấp kho (LV2-005 §4): 2/3 họ nêm muối/hạt nêm là chính và không dùng nước mắm, họ còn lại chỉ dùng 1/2 tsp nước mắm cho cả mẻ — file đang dùng nước mắm 4 g làm gia vị mặn duy nhất, KHÔNG tự đổi theo chỉ đạo đợt này.]",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-008 đợt 8: GIỮ MỨC 1 — chỉ gom được 2 nguồn đạt chuẩn đã mở đọc cho đúng món cần nước xào tỏi, đều là Cookpad VN có tác giả: Pi Ha (1 bó rau cần, 3 tép tỏi, nêm hạt nêm/muối/đường, đảo nhanh 30 giây — 'cần xào tái') và Trần Nguyên (2 người, 1/2–1 bó cần nước, 2 tép tỏi, dầu hào 1 thìa, muối/hạt nêm). Hai nguồn này nhất quán với file hiện tại (rau 120g/khẩu phần nằm trong dải 1 bó 200–300g chia 2 người = 100–150g; tỏi 5g ở cận trên của 2–3 tép/mẻ) nhưng chưa đủ 3 nguồn theo tiêu chí Mức 2. Các ứng viên nguồn thứ ba đều không đạt: cụm memart.vn / saigonesebaguette.vn / toyenxin.com là một họ nội dung SEO sao chép lẫn nhau (cùng văn bản, cùng định lượng) nên brief loại và chỉ tính tối đa 1 họ vô danh; suckhoedoisong.vn có rau cần xào mắm ruốc — biến thể khác về gia vị định danh, không tính cho bản xào tỏi; nauchuananngon.vn có công thức đúng món nhưng browser.open lỗi fetch (không có HTTP status, không retry theo quy định). Làm lại được ở đợt sau khi mở được thêm 1 nguồn biên tập độc lập.] [LV2-010 đợt 10: ĐẠT MỨC 2 — 3 họ đã mở: Cookpad Pi Ha (1 bó cần nước, 3 tép tỏi, nêm hạt nêm + muối + đường, đảo nhanh 30 giây — 'cần xào tái'); Cookpad Trần Nguyên (2 người, 1/2–1 bó, 2 tép tỏi, dầu hào 1 thìa, muối/hạt nêm); Nấu Chuẩn Ăn Ngon (1 bó 200–300 g cho 2 người, tỏi 8 tép lớn, dầu 2 muỗng canh, dầu hào 1 tsp, nước mắm 1/2 tsp cuối mẻ). Rau 120 g/khẩu phần khớp dải 100–150 g của 3 họ → giữ; tỏi các họ bất đồng >30% (3–16 g/người) → giữ 5 g; dầu chỉ 1 họ có số (14 g/người) → giữ 8 g. Thêm dầu hào 5 g (2/3 họ có; lượng giữa 2 họ lệch xa 2,5–7,5 g/người, lấy trung điểm — cần rà lại). BẤT THƯỜNG chờ quy ước cấp kho (LV2-005 §4): 2/3 họ nêm muối/hạt nêm là chính và không dùng nước mắm, họ còn lại chỉ dùng 1/2 tsp nước mắm cho cả mẻ — file đang dùng nước mắm 4 g làm gia vị mặn duy nhất, KHÔNG tự đổi theo chỉ đạo đợt này.] [LV2-010 Phần C — gói quyết định chủ dự án 2026-10-31: A4.1 ÁP quy ước rau xào: bỏ dòng nuoc-mam-truyen-thong 4 g, chuẩn nêm thành muoi 1 g + hat-nem 2 g (± dầu hào nếu đã có). Căn cứ riêng của món: 2/3 họ nêm muối/hạt nêm là chính và không dùng nước mắm, họ còn lại chỉ 1/2 thìa cà phê cho cả mẻ (đã ghi nhận chờ quy ước ở đợt 10).]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

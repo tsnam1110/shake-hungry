@@ -44,7 +44,7 @@
   "density_note": null,
   "default_yield_factor": 0.74,
   "default_yield_factor_note": "SUY TỪ USDA Table of Cooking Yields for Meat and Poultry R2 (data/reference/usda-cooking-yields.csv), NDB 5095 'thigh, meat and skin — Poached, Simmered or Stewed' = 74%. Nướng/quay: NDB 5094 = 69%.",
-  "oil_absorption_pct": null,
+  "oil_absorption_pct": 4.0,
   "edible_portion_pct": null,
   "edible_portion_note": "CHƯA CÓ hệ số có nguồn: foodMeasures FDC 172385 ghi '1 thigh with skin = 193 g' nhưng không nói rõ có xương hay không — không dám suy. Đùi gà chợ bán cả xương. Cần tự cân hoặc tìm nguồn yield rõ ràng.",
   "is_ready_to_eat": false,

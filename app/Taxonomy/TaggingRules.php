@@ -58,6 +58,7 @@ final class TaggingRules
         'muoi' => 'khoang-chat',
         'muoi-tom' => 'tong-hop', // hỗn hợp muối + tôm khô + ớt — LV2-007
         'men-no' => 'tong-hop', 'bot-no' => 'khoang-chat', // men nuôi cấy công nghiệp + bột nở muối khoáng — LV2-007 Phần B
+        'bot-rang-muoi' => 'tong-hop', // hỗn hợp muối + gạo nếp rang + đậu xanh rang xay, không thành phần động vật — LV2-010 Phần C
     ];
 
     /**
@@ -100,6 +101,7 @@ final class TaggingRules
         'bot-khoai' => 'kho', 'gelatin' => 'kho', // sợi tinh bột sắn khô + bột gelatin khô — LV2-007 Phần B
         'kem-whipping' => 'dong-hop', 'cha-bong' => 'che-bien', // kem hộp lạnh + ruốc thịt thành phẩm — LV2-007 Phần B
         'men-no' => 'kho', 'bot-no' => 'kho', // chất nở dạng bột khô — LV2-007 Phần B
+        'bot-rang-muoi' => 'kho', // bột gia vị khô tự phối — LV2-010 Phần C
         'lac-song' => 'kho', 'lac-rang' => 'kho', 'vung' => 'kho', 'vung-rang' => 'kho',
         'hat-dieu-rang' => 'kho',
         'tao-tau-kho' => 'kho', 'nhan-kho' => 'kho', 'qua-danh-danh' => 'kho',

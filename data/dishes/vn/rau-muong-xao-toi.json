@@ -57,14 +57,6 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "nuoc-mam-truyen-thong",
-      "quantity": 5,
-      "unit_name": "g",
-      "is_optional": false,
-      "source": "llm_suggested",
-      "confidence": "low"
-    },
-    {
       "ingredient_slug": "ot-tuoi",
       "quantity": 1,
       "unit_name": "g",
@@ -79,11 +71,27 @@
       "is_optional": true,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "muoi",
+      "quantity": 1,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hat-nem",
+      "quantity": 2,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
     "Nhặt rau muống bỏ cọng già và lá úa, ngắt khúc 5-7cm, ngâm nước muối loãng khoảng 5 phút rồi rửa lại 3-4 lần nước sạch và để thật ráo, vì rau còn đọng nước sẽ làm rau ra nước và xỉn màu khi xào.",
-    "Tỏi bóc vỏ, chia hai phần: một phần băm nhỏ, một phần đập dập để nguyên tép. Pha sẵn một chén gia vị gồm nước mắm, chút đường và mì chính để khi xào chỉ nêm một lượt, tránh rau chín quá trong lúc nêm nếm.",
+    "Tỏi bóc vỏ, chia hai phần: một phần băm nhỏ, một phần đập dập để nguyên tép. Pha sẵn một chén gia vị gồm muối và hạt nêm, chút đường và mì chính để khi xào chỉ nêm một lượt, tránh rau chín quá trong lúc nêm nếm.",
     "Đun sôi nồi nước với một muỗng cà phê muối, cho rau vào chần nhanh 30-45 giây đến khi cọng rau vừa chuyển xanh đậm thì vớt ra ngâm ngay vào thau nước đá khoảng 1 phút, sau đó vớt ra để ráo hẳn.",
     "Bắc chảo lên bếp lửa lớn cho thật nóng, thêm dầu ăn; khi dầu nóng, cho phần tỏi băm vào phi đến khi vàng nhạt và dậy mùi thơm thì cho tiếp phần tỏi đập dập vào đảo nhanh.",
     "Cho rau đã ráo nước vào chảo, đảo nhanh tay liên tục 1-2 phút trên lửa lớn, rưới chén gia vị đã pha vào đảo đều cho bám khắp cọng rau; rau vừa chín tới, còn giòn, màu xanh mướt là đạt.",
@@ -116,7 +124,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): Đã đối chiếu 3 nguồn công thức thật (Hướng Nghiệp Á Âu, báo Lao Động, Cookpad/Bòn Bon). Định lượng: rau muống trong file 180g/khẩu phần nằm giữa các nguồn (Lao Động ~200-250g/người; hai nguồn còn lại là mẻ 300-500g không ghi số người, quy ra khoảng 125-250g/người) nên giữ nguyên; tỏi 8g và dầu ăn 10g khớp khoảng của các nguồn, giữ nguyên. Phân loại (loai:mon-chinh, xao, vn, trưa/tối) rà soát, không có điểm sai rõ ràng nên giữ nguyên.",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): Đã đối chiếu 3 nguồn công thức thật (Hướng Nghiệp Á Âu, báo Lao Động, Cookpad/Bòn Bon). Định lượng: rau muống trong file 180g/khẩu phần nằm giữa các nguồn (Lao Động ~200-250g/người; hai nguồn còn lại là mẻ 300-500g không ghi số người, quy ra khoảng 125-250g/người) nên giữ nguyên; tỏi 8g và dầu ăn 10g khớp khoảng của các nguồn, giữ nguyên. Phân loại (loai:mon-chinh, xao, vn, trưa/tối) rà soát, không có điểm sai rõ ràng nên giữ nguyên. [LV2-010 Phần C — gói quyết định chủ dự án 2026-10-31: A4.1 ÁP quy ước rau xào: bỏ dòng nuoc-mam-truyen-thong 5 g, chuẩn nêm thành muoi 1 g + hat-nem 2 g (± dầu hào nếu đã có). Căn cứ riêng của món: hồ sơ đợt nâng không ghi họ nào ủng hộ nêm mắm — dòng mắm là khuôn mẫu soạn nháp.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

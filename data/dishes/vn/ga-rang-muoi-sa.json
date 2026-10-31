@@ -17,8 +17,8 @@
   ],
   "is_eat_out": true,
   "is_home_cook": true,
-  "cooking_method": "xao",
-  "completeness_level": 1,
+  "cooking_method": "chien-ngap-dau",
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -57,24 +57,8 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "dau-an",
-      "quantity": 6,
-      "unit_name": "g",
-      "is_optional": false,
-      "source": "llm_suggested",
-      "confidence": "low"
-    },
-    {
       "ingredient_slug": "muoi",
-      "quantity": 3,
-      "unit_name": "g",
-      "is_optional": false,
-      "source": "llm_suggested",
-      "confidence": "low"
-    },
-    {
-      "ingredient_slug": "duong-trang",
-      "quantity": 3,
+      "quantity": 1,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -87,14 +71,58 @@
       "is_optional": true,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "bot-nang",
+      "quantity": 25,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "bot-rang-muoi",
+      "quantity": 8,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "gung",
+      "quantity": 10,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Đùi gà chặt miếng, ướp muối, đường 15 phút; sả băm nhuyễn.",
-    "Phi sả, tỏi với dầu cho vàng thơm.",
-    "Cho gà vào rang lửa vừa 12–15 phút tới khi gà chín, da xém; rắc lá chanh thái chỉ nếu có. Món mặn nhanh: tổng thời gian nấu ~30 phút, nguyên liệu phổ thông."
+    "Làm bột rang muối: ngâm gạo nếp và đậu xanh cà vỏ 15–20 phút, để ráo; rang riêng từng loại trên chảo khô lửa nhỏ đến vàng thơm, rang muối cho khô, rồi xay nhuyễn tất cả thành bột mịn.",
+    "Sả tước sợi, gừng cắt sợi, lá chanh cắt sợi; thấm thật khô để chiên không bắn dầu.",
+    "Đùi gà chặt miếng vừa ăn, ướp muối khoảng 15 phút; áo đều một lớp bột năng mỏng quanh miếng gà.",
+    "Chiên sả, gừng và lá chanh trong dầu nóng đến vàng giòn, vớt ra để ráo dầu.",
+    "Chiên gà ngập dầu lửa vừa 8–10 phút đến khi vàng giòn các mặt và thịt chín; vớt ra để ráo dầu (dầu chiên không kê dòng riêng — engine mô hình hoá phần hấp thụ theo CALC-004, Phương án A).",
+    "Cho gà còn nóng vào âu lớn, rắc bột rang muối, đậy nắp và xóc đều cho bột bám khắp mặt gà.",
+    "Trộn sả, gừng và lá chanh chiên vào, bày ra đĩa, dùng nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-ga-rang-muoi-gion-ngon-don-gian-tai-nha-01921",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH: đùi gà 400 g/3 người, áo bột năng 100 g, muối rang nếp + đậu xanh + muối, chiên sả/gừng/lá chanh — họ 1 (mở ở LV2-003, đối chiếu lại Phần C)"
+    },
+    {
+      "url": "https://nauankhongkho.vn/blog/cach-lam-ga-rang-muoi-sa-gion-ngon-bat-tan-Qea33DjrgrwP",
+      "accessed": "2026-10-31",
+      "note": "Nấu Ăn Không Khó: gà 500 g, áo bột bắp, muối rang gạo + đậu xanh + muối hột + tiêu, chiên sả lá chanh trước — họ 2 (mở ở LV2-003, đối chiếu lại Phần C)"
+    },
+    {
+      "url": "https://bepxua.vn/cong-thuc-che-bien-ga-rang-muoi-sa-la-mieng/",
+      "accessed": "2026-10-31",
+      "note": "Bếp Xưa: gà 1,5 kg, nếp 60 + đậu 60 + muối hột 60/mẻ bột, gừng sợi + sả chiên — họ 3 (mở ở LV2-003, đối chiếu lại Phần C)"
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/ga-rang-muoi-sa.webp",
@@ -105,7 +133,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Method xao theo tiền lệ nhóm rang chảo ít dầu. Lá chanh tùy chọn lượng nhỏ (slug chưa có số — xem ghi chú ga-kho-la-chanh). Nghiên cứu Mức 2 đợt 3 (LV2-003, 2026-10-31): GIỮ Mức 1 — dù đã mở kiểm chứng 3 nguồn (Điện Máy XANH; Nấu Ăn Không Khó; Bếp Xưa) vì bất thường hệ thống của nhóm \"rang muối\" cần chủ dự án phân xử một lần: cả 3/3 nguồn đều chiên ngập dầu sau khi lăn bột năng/bột bắp rồi xóc bột muối (gạo nếp + đậu xanh rang xay + muối hột), trong khi file để cooking_method xao ít dầu và thiếu toàn bộ dòng bột muối + bột áo + gừng chiên sợi; đùi gà 180 g cũng cao hơn nguồn ghi rõ khẩu phần duy nhất (133 g/người) +35% nhưng chưa đủ 2 nguồn có khẩu phần để phân xử. [LV2-004 đợt 4: không xử lý theo chỉ đạo — chờ chủ dự án quyết cấp nhóm các món rang muối.]",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Method xao theo tiền lệ nhóm rang chảo ít dầu. Lá chanh tùy chọn lượng nhỏ (slug chưa có số — xem ghi chú ga-kho-la-chanh). Nghiên cứu Mức 2 đợt 3 (LV2-003, 2026-10-31): GIỮ Mức 1 — dù đã mở kiểm chứng 3 nguồn (Điện Máy XANH; Nấu Ăn Không Khó; Bếp Xưa) vì bất thường hệ thống của nhóm \"rang muối\" cần chủ dự án phân xử một lần: cả 3/3 nguồn đều chiên ngập dầu sau khi lăn bột năng/bột bắp rồi xóc bột muối (gạo nếp + đậu xanh rang xay + muối hột), trong khi file để cooking_method xao ít dầu và thiếu toàn bộ dòng bột muối + bột áo + gừng chiên sợi; đùi gà 180 g cũng cao hơn nguồn ghi rõ khẩu phần duy nhất (133 g/người) +35% nhưng chưa đủ 2 nguồn có khẩu phần để phân xử. [LV2-004 đợt 4: không xử lý theo chỉ đạo — chờ chủ dự án quyết cấp nhóm các món rang muối.] [LV2-010 Phần C — gói quyết định chủ dự án 2026-10-31: A4.5 ÁP quyết định nhóm rang muối: method xao → chien-ngap-dau, bỏ dòng dau-an 6 g (Phương án A — dầu chiên do engine mô hình hoá), bỏ duong-trang 3 g (0/3 họ), muoi 3→1 g (muối chính nằm trong bột rang), thêm bot-nang 25 g (áo chiên — ĐMX 100 g/3 khẩu phần là lượng trộn cả mẻ, phần bám thực tế thấp hơn, lấy 25 g, low), bot-rang-muoi 8 g (slug mới biên soạn null + hồ sơ ở Phần C; mức dùng 5–10 g/khẩu phần theo hồ sơ nhóm) và gung 10 g (gừng chiên sợi có ở ĐMX + Bếp Xưa, file thiếu hẳn). Đùi gà 180 g giữ theo hồ sơ LV2-003 (chỉ 1 họ ghi rõ khẩu phần 133 g — chưa đủ 2 họ để đổi). NÂNG MỨC 2.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

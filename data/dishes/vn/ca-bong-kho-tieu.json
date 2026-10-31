@@ -49,7 +49,7 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "duong-thot-not",
+      "ingredient_slug": "duong-trang",
       "quantity": 8,
       "unit_name": "g",
       "is_optional": false,
@@ -108,7 +108,7 @@
   "recipe_steps": [
     "Sơ chế cá bống: đánh vảy, cắt bỏ đầu và ruột, chà xát muối lên thân cá cho hết nhớt, rửa lại nhiều lần với nước sạch, để thật ráo.",
     "Bóc vỏ hành tím và tỏi rồi băm nhỏ; hành lá rửa sạch cắt nhỏ; ớt rửa sạch, để nguyên trái hoặc cắt lát.",
-    "Ướp cá với nước mắm, đường thốt nốt, tiêu xay và một ít hành tỏi băm khoảng 15–20 phút (có thời gian thì ướp lâu hơn) cho cá thấm vị và săn thịt.",
+    "Ướp cá với nước mắm, đường trắng, tiêu xay và một ít hành tỏi băm khoảng 15–20 phút (có thời gian thì ướp lâu hơn) cho cá thấm vị và săn thịt.",
     "Cho dầu ăn và một ít đường vào nồi đất, đun lửa nhỏ thắng đến khi đường tan và chuyển màu cánh gián thì cho hành tím, tỏi vào phi thơm vàng.",
     "Xếp cá đã ướp vào nồi, thêm ít nước xâm xấp mặt cá, đun lửa vừa đến khi sôi thì hạ lửa nhỏ, kho khoảng 20–30 phút; hạn chế đảo để cá không nát, chỉ lắc nhẹ nồi hoặc trở cá một lần.",
     "Kho đến khi nước rút còn khoảng một phần ba, sánh sệt và áo đều quanh cá, thịt cá săn chắc, màu nâu bóng thì nêm nếm lại cho vừa miệng.",
@@ -141,7 +141,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): Đã mở kiểm chứng 3 nguồn công thức thật (Điện Máy Xanh, VietnamNet, Cookpad của Kim Dung) và đối chiếu định lượng theo khẩu phần. Định lượng: cá bống theo khẩu phần ở Điện Máy Xanh là 200g và ở Cookpad là 150g — hai nguồn chênh nhau hơn 30% nên không tạo đồng thuận; file 180g nằm giữa khoảng nguồn, giữ nguyên toàn bộ định lượng, không sửa dòng nào. Ghi nhận: nhiều biến thể nguồn kho cá bống cùng thịt ba chỉ hoặc thịt vai (khoảng 75–100g mỗi mẻ) và đôi khi thêm nước dừa; file không có các dòng này — đây là biến thể hợp lệ (bản Điện Máy Xanh cũng không có thịt), không tự thêm dòng theo quy tắc. Viết lại hoàn toàn recipe_steps bằng lời riêng (7 bước). Rà phân loại: loai:mon-chinh, cooking_method kho, region vn-south, meal_slots trưa/tối đều phù hợp — không sửa. Đạt Mức 2.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): Đã mở kiểm chứng 3 nguồn công thức thật (Điện Máy Xanh, VietnamNet, Cookpad của Kim Dung) và đối chiếu định lượng theo khẩu phần. Định lượng: cá bống theo khẩu phần ở Điện Máy Xanh là 200g và ở Cookpad là 150g — hai nguồn chênh nhau hơn 30% nên không tạo đồng thuận; file 180g nằm giữa khoảng nguồn, giữ nguyên toàn bộ định lượng, không sửa dòng nào. Ghi nhận: nhiều biến thể nguồn kho cá bống cùng thịt ba chỉ hoặc thịt vai (khoảng 75–100g mỗi mẻ) và đôi khi thêm nước dừa; file không có các dòng này — đây là biến thể hợp lệ (bản Điện Máy Xanh cũng không có thịt), không tự thêm dòng theo quy tắc. Viết lại hoàn toàn recipe_steps bằng lời riêng (7 bước). Rà phân loại: loai:mon-chinh, cooking_method kho, region vn-south, meal_slots trưa/tối đều phù hợp — không sửa. Đạt Mức 2. [LV2-010 Phần C — gói quyết định chủ dự án 2026-10-31: A4.2 ÁP quy ước cá kho: duong-thot-not 8 g → duong-trang 8 g. Căn cứ: hồ sơ đợt nâng không ghi họ nào dùng thốt nốt.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -256,3 +256,42 @@ tham chiếu nguyên văn) không tương thích về định nghĩa. Phân tíc
 tiếp theo: [accuracy-runs/2026-10-31-vn-dishes-lan-2.md](../06-nutrition/accuracy-runs/2026-10-31-vn-dishes-lan-2.md) §5, §7.
 Không vì kết quả đo này mà quay lại kê dầu chiên vào công thức: quy ước trên là quyết định
 đã chốt; phần cần quyết tiếp là *phương pháp đo* và/hoặc *hệ số engine*, thuộc chủ dự án.
+
+## 13. Quy ước cân `mong-gio` — chốt 2026-10-31 (LV2-010 Phần C, quyết định A4.4)
+
+Lượng `mong-gio` trong file món cân theo **khoanh có xương bày tô** — tức khối lượng
+sống có xương như chợ bán và như các công thức nguồn ghi (thực tế đã đối chiếu ở
+banh-canh-gio-heo: 3 họ cho 125–250 g có xương/khẩu phần).
+
+Hệ quả phải ghi nhận công khai, không giấu: bộ số của ingredient `mong-gio`
+(USDA SR Legacy 167859) là trên **phần ăn được đã loại xương**, nên kcal tính ra
+cho dòng giò sẽ cao hơn phần thực ăn cho tới khi tra/cân được hệ số phần ăn được
+(DATA-008). `mapping_note` của ingredient đã hướng dẫn tạm thời đúng quy ước này
+("ghi khối lượng theo quy ước chợ và chấp nhận confidence thấp hơn"). Không tự
+chế hệ số xương, không âm thầm đổi sang cân phần thịt — khi DATA-008 có hệ số,
+rà lại toàn bộ món dùng `mong-gio` trong một đợt riêng.
+
+## 14. Quy ước lượng sợi theo khẩu phần — chốt 2026-10-31 (LV2-010 Phần C, quyết định A4.3)
+
+Một quy ước duy nhất cho nhóm món sợi, suy từ tổng hợp định lượng đã đối chiếu
+qua các đợt LV2-001…LV2-010 (chỉ tính các món đã phân xử bằng ≥3 họ nguồn):
+
+| Sợi | Dạng | Lượng/khẩu phần | Căn cứ đã đối chiếu |
+|---|---|---|---|
+| `bun-tuoi` | tươi | **150 g** | Điểm hội tụ của hàng chục món bún đã nâng Mức 2 (bun-bo-hue, bun-cha, bun-ca, bun-mam, bun-nem… đều 150 g sau phân xử) |
+| `bun-tuoi` ăn kèm lẩu | tươi, dòng tuỳ chọn | **80 g** | Thống nhất ở toàn bộ nhóm lẩu đã rà (lau-bo, lau-thai, lau-vit… đều 80 g) |
+| `bun-kho` | khô | **50 g** | Tương đương ~150 g sau ngâm/trụng (tỉ lệ nở ~3 lần) — bun-gao-xao-trung |
+| `soi-banh-canh` | tươi | **130 g** | banh-canh-gio-heo phân xử ở LV2-003/004 (nguồn 125–250 g); các món bánh canh khác đã phân xử riêng (80–200 g) giữ theo nguồn của chính món |
+| `hu-tieu-kho` | khô | **60 g** | hu-tieu, hu-tieu-ga đều 60 g sau phân xử (≈150 g sau ngâm) |
+| `banh-pho-tuoi` | tươi | **180 g** | pho-bo, pho-ga, pho-chay, pho-xao đều 180 g sau phân xử |
+| `banh-pho-kho` | khô | **60 g** | pho-kho-gia-lai — cùng mặt bằng sợi khô 60 g |
+| `mi-trung-kho` | khô | **70 g** | Dải đã phân xử 60–90 g (mi-xao-gion 60, mi-van-than 80, mi-xao-bo 90); lấy 70 g làm chuẩn soạn mới, lệch ≤30% không bắt sửa |
+| `mi-an-lien` | khô | **60–65 g** | Một gói nhỏ tiêu chuẩn (mi-xao-chay 60, mi-goi-xao-trung-rau 65) |
+
+Quy tắc áp dụng: món soạn mới hoặc món Mức 1 chưa từng đối chiếu nguồn dùng
+đúng bảng trên. Món đã phân xử bằng nguồn riêng (thường là món đã đạt Mức 2)
+mà lệch quy ước thì **giữ theo nguồn của chính món** và ghi ngoại lệ trong
+`import_note` — ví dụ bun-dau-mam-tom/bun-thang 120 g (tô nhỏ), bun-thit-nuong
+200 g, hu-tieu-chay 100 g, banh-canh-tom-cang 80 g (nguồn của món bất đồng,
+đã giữ ở LV2-010). Lệch quy ước không có căn cứ nguồn thì sửa về quy ước khi
+rà tới món, kèm ghi phân xử.
