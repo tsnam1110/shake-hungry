@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "chien-ngap-dau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -30,11 +30,11 @@
     }
   ],
   "serving_desc": "1 phần",
-  "serving_grams": 220,
+  "serving_grams": 300,
   "ingredients": [
     {
       "ingredient_slug": "ca-ro-dong",
-      "quantity": 180,
+      "quantity": 250,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -50,7 +50,7 @@
     },
     {
       "ingredient_slug": "trung-ga",
-      "quantity": 15,
+      "quantity": 25,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -74,15 +74,39 @@
     }
   ],
   "recipe_steps": [
-    "Cá rô đồng làm sạch, khứa thân, ướp muối tiêu 15 phút.",
-    "Nhúng cá qua trứng đánh tan rồi lăn bột chiên xù.",
-    "Chiên ngập dầu nóng đến khi lớp vỏ vàng giòn, cá chín thơm."
+    "Cá rô đồng đánh vảy, bỏ ruột và mang, khứa nhẹ thân; rửa nước muối loãng, thấm thật khô.",
+    "Ướp cá với muối, tiêu (đúng định lượng file) 15 phút.",
+    "Đánh tan trứng gà, nhúng cá cho trứng bám đều hai mặt.",
+    "Lăn cá qua bột chiên xù, ấn nhẹ cho vụn bột bám kín; để nghỉ 5 phút cho áo bột ổn định.",
+    "Chiên ngập dầu lửa vừa–lớn (dầu do engine mô hình hoá) đến khi vỏ vàng giòn hai mặt, thịt cá trắng và không còn nước hồng ở khứa sâu nhất; hạn chế lật nhiều lần để không bong áo.",
+    "Vớt cá để ráo trên vỉ, dùng nóng ngay khi vỏ còn giòn, chấm nước mắm gừng nếu thích."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/2-cach-lam-ca-ro-phi-chien-xu-gion-rum-thom-ngon-hap-dan-06135",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH (cho 4 người, cách tẩm bột chiên xù): cá rô phi 1 kg, bột chiên xù 100 g, trứng 2 quả, hành tím + gừng băm; trộn trứng vào cá đã ướp rồi lăn bột xù (không lớp bột mì). Cùng trang còn cách chiên nguyên con không bột."
+    },
+    {
+      "url": "https://amthucmoimien.com/Cach-lam-Ca-me-chien-gion-mon-an-10912.html",
+      "accessed": "2026-10-31",
+      "note": "Ẩm Thực Mọi Miền (cho 4 người): cá rô đồng 1 kg chiên ngập dầu nguyên con, không bột không trứng — nghĩa truyền thống của \"chiên xù\" với cá rô đồng; chấm mắm gừng."
+    },
+    {
+      "url": "https://memart.vn/tin-tuc/blog3/ca-ro-bi-chien-xu-vi-cb.html",
+      "accessed": "2026-10-31",
+      "note": "Memart: cá 500 g, bột chiên xù 100 g, bột mì 50 g, trứng 1 quả; quy trình 3 lớp bột mì → trứng → bột xù."
+    },
+    {
+      "url": "https://toyenxin.com/blog-1/ca-ro-dong-chien-xu-vi-cb.html",
+      "accessed": "2026-10-31",
+      "note": "ToYenXin (định tính): quy trình 3 lớp bột mì → trứng → bột chiên xù; ướp muối/tiêu 15 phút; chấm mắm gừng."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 20 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).]",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 20 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).] Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 4 nguồn. Phân xử định lượng: ca-ro-dong 180 → 250 g và trung-ga 15 → 25 g — cả hai nguồn ghi rõ khẩu phần (ĐMX, Ẩm Thực Mọi Miền) đều cho 1 kg cá/4 người = 250 g/khẩu phần; trứng 25 g khớp ĐMX và tỉ lệ trứng/cá của Memart; bot-chien-xu 25 g giữ nguyên (khớp ĐMX). serving_grams 220 → 300 theo tổng dòng mới. Bất thường ghi nhận: lớp bột mì đầu tiên của quy trình 3 lớp có ở 2/4 nguồn (Memart, ToYenXin), file và ĐMX chỉ 2 lớp trứng → bột xù; tên món \"chiên xù\" còn có nghĩa truyền thống là chiên nguyên con không bột (Ẩm Thực Mọi Miền) — file theo nghĩa tẩm bột được 3 nguồn ủng hộ, cân nhắc ghi chú phân biệt trong mô tả khi biên tập.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

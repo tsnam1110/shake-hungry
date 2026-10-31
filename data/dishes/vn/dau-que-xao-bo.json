@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "xao",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -34,7 +34,7 @@
   "ingredients": [
     {
       "ingredient_slug": "dau-que",
-      "quantity": 110,
+      "quantity": 140,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -74,15 +74,35 @@
     }
   ],
   "recipe_steps": [
-    "Đậu que tước xơ bẻ khúc, chần sơ; thịt bò thái mỏng ướp nước tương và tỏi.",
-    "Xào thịt bò lửa lớn vừa chín, trút ra.",
-    "Xào đậu que chín giòn, cho bò vào đảo lại, tắt bếp."
+    "Đậu que tước xơ hai bên, rửa sạch, cắt khúc 4–5 cm; tỏi băm nhỏ.",
+    "Bò thái mỏng ngang thớ, ướp nước tương và một nửa tỏi 15 phút.",
+    "Đun sôi nước với chút muối, chần đậu que 1–2 phút đến khi xanh sẫm, vớt ngay sang nước lạnh 1 phút, để ráo.",
+    "Làm nóng chảo với một nửa dầu ăn, phi tỏi thơm, cho bò vào xào lửa lớn ~1 phút vừa chín tái; trút ra.",
+    "Dùng lại chảo, thêm dầu còn lại, xào đậu que lửa lớn 3–4 phút đến khi đậu chín giòn, vỏ hơi săn.",
+    "Trút bò trở lại, đảo đều 1 phút, nêm lại cho vừa.",
+    "Tắt bếp khi đậu còn xanh giòn, bò vừa chín; ăn nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://tripi.vn/blog/vi/kinh-nghiem-hay/mon-dau-que-xao-thit-bo-gion-ngot-xanh-tuoi-la-lua-chon-ly-tuong-de-bo-sung-duong-chat-cho-ca-gia-dinh-tripi",
+      "accessed": "2026-10-31",
+      "note": "Tripi (3–4 người): bò 200 g, đậu que 500 g, hành tây 1 củ; chần đậu trước khi xào."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/9893916",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Bòn Bon (2 phần ăn): đậu que 300 g, bò thăn 100 g, cà rốt 1/2 củ, cà chua 1/2 quả, nước tương + dầu hào; trụng đậu qua nước đá."
+    },
+    {
+      "url": "https://toyenxin.com/blog-1/dau-que-xao-thit-bo-vi-cb.html",
+      "accessed": "2026-10-31",
+      "note": "ToYenXin: bò 200 g, đậu que 300 g, hành tây 1 củ (không ghi khẩu phần) — tỉ lệ đậu:bò 1,5; chần đậu 1–2 phút."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 3 nguồn. Phân xử định lượng: dau-que 110 → 140 g — hai nguồn ghi rõ khẩu phần cho 143–150 g/người, file thấp hơn 23–27%, lấy cận dưới 140 g; thit-bo-nam 50 g giữ nguyên (khớp chính xác cả hai nguồn có khẩu phần); nước tương 5 g khớp Cookpad. Bất thường ghi nhận: hành tây có ở 3/3 nguồn (1 củ/mẻ), file thiếu; tên/tags gắn loai:mon-chinh trong khi serving_desc là đĩa rau — cân nhắc khi duyệt phân loại.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

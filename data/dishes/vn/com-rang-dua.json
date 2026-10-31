@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "chien",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -62,7 +62,7 @@
     },
     {
       "ingredient_slug": "trung-ga",
-      "quantity": 50,
+      "quantity": 25,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -94,15 +94,36 @@
     }
   ],
   "recipe_steps": [
-    "Dưa cải muối rửa bớt chua mặn, vắt ráo, thái nhỏ; cơm nguội đánh tơi.",
-    "Phi hành tím, xào thịt bò và dưa cải, cho trứng vào đảo.",
-    "Rang cơm cùng hỗn hợp dưa bò lửa lớn, nêm nước mắm và tiêu."
+    "Dưa cải rửa sơ cho bớt mặn chua, vắt thật ráo, cắt khúc ~1–2 cm; cơm nguội đánh tơi từng hạt.",
+    "Thịt bò (dòng thit-bo-xay) ướp nước mắm, tiêu và hành tím băm 10–15 phút.",
+    "Trộn trứng (định lượng sau phân xử) vào cơm nguội cho áo đều hạt, để riêng.",
+    "Phi thơm hành tím, cho dưa vào xào lửa lớn 2–3 phút đến khi dưa săn, ráo nước và hơi xém cạnh.",
+    "Cho thịt bò vào đảo nhanh lửa lớn 1–2 phút đến khi thịt vừa tái săn; trút hỗn hợp ra đĩa.",
+    "Cùng chảo, rang cơm đã trộn trứng trên lửa lớn 5–7 phút, đảo liên tục đến khi hạt cơm tơi, khô ráo và hơi vàng (dầu chiên không kê dòng riêng theo quy ước Phương án A).",
+    "Trả hỗn hợp dưa bò vào, đảo đều 1–2 phút cho hoà quyện, nêm lại nước mắm và tiêu cho vừa ăn.",
+    "Tắt bếp khi cơm còn bốc khói, hạt rời không bết; dọn nóng, ăn kèm nước tương ớt nếu thích."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/2-cach-lam-com-rang-dua-bo-va-kim-chi-thit-bo-thom-ngon-hap-05353",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH (4 người): bò 150 g, dưa 150 g, trứng 2 quả, cà chua 100 g. (Bản VinID dùng cùng bộ định lượng — tính chung một gốc.)"
+    },
+    {
+      "url": "https://www.bluestone.com.vn/blogs/vao-bep/com-rang-dua-bo",
+      "accessed": "2026-10-31",
+      "note": "BlueStone: cơm 2 bát to, dưa 200 g, bò thăn 150 g, không trứng (quy ước ~2 người)."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/15454887",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Tu Anh (5 người): bò 300 g, dưa 300 g, cơm 400 g, trứng 2 quả, cà chua 3 quả."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 đợt 2 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 10 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).]",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 đợt 2 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 10 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).] Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 3 gốc nguồn độc lập (ĐMX và VinID trùng một gốc). Phân xử định lượng: trung-ga 50 → 25 g — hai gốc nguồn độc lập đồng thuận thấp hơn file trên 30% (25 g và 20 g/khẩu phần); dưa 70 g và bò 60 g giữ nguyên (đều nằm trong khoảng nguồn). Bất thường ghi nhận chờ pha phân xử: (1) dạng thịt — 4/4 trang nguồn dùng bò thái lát mỏng ngang thớ, không nguồn nào dùng bò xay như dòng thit-bo-xay của file (kho đã có thit-bo-nam); (2) cà chua có ở 2 gốc nguồn (25–60 g/khẩu phần), file thiếu; (3) tỏi phi có ở 4/4 trang, file chỉ có hành tím.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

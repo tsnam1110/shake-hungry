@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "xao",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -122,15 +122,36 @@
     }
   ],
   "recipe_steps": [
-    "Nấu cơm trắng hơi khô, để nguội cho tơi hạt.",
-    "Xào tôm, mực và bạch tuộc với hành tây, cà rốt, nêm nước mắm.",
-    "Cho cơm vào đảo đều lửa lớn, rắc hành lá và tiêu, dọn nóng."
+    "Nấu cơm hơi khô, xới tơi, để nguội hẳn (tốt nhất để tủ lạnh vài giờ) để hạt cơm se, không nát khi xào.",
+    "Tôm bóc vỏ, bỏ chỉ đen, cắt hạt lựu; mực làm sạch, cắt hạt lựu; bạch tuộc (nếu dùng) cắt miếng nhỏ; cà rốt và hành tây cắt hạt lựu, hành lá cắt nhỏ.",
+    "Ướp tôm, mực, bạch tuộc với một phần nước mắm, chút đường và tiêu khoảng 5 phút.",
+    "Làm nóng chảo với một nửa dầu ăn (dòng dau-an), cho hải sản vào đảo lửa lớn 2–3 phút đến khi tôm chuyển hồng, mực săn và hơi cong thì trút ra để riêng, giữ lại nước xào.",
+    "Thêm phần dầu còn lại, cho cơm nguội vào xào lửa lớn khoảng 5 phút, đảo liên tục đến khi hạt cơm ráo, tơi và hơi săn; rưới nước xào hải sản cho thấm.",
+    "Cho cà rốt, hành tây vào đảo thêm 2 phút.",
+    "Trả hải sản vào chảo, đảo đều 1–2 phút cho nóng lại, nêm phần nước mắm còn lại cho vừa ăn.",
+    "Tắt bếp, rắc hành lá và tiêu, đảo một lượt rồi dọn nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/3-cach-lam-com-chien-hai-san-ngon-mieng-don-gian-hap-dan-06761",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH (3 người): cơm 500 g, tôm tươi 200 g, râu mực 100 g, tôm khô 20 g, trứng 2 quả. (Bản BlueStone dùng cùng một bộ định lượng — tính chung một gốc.)"
+    },
+    {
+      "url": "https://nauchuananngon.vn/cach-lam-com-chien-hai-san-ngon-chuan-vi-gia-dinh",
+      "accessed": "2026-10-31",
+      "note": "Nấu Chuẩn Ăn Ngon (3–4 khẩu phần): cơm 1000 g, tôm 300 g, mực 200 g, trứng 3 quả, cà rốt 70 g, đậu Hà Lan 100 g, nấm đông cô 200 g."
+    },
+    {
+      "url": "http://giavihanhphuc.com/thap-cam/com-chien-gion-hai-san-nghis-kitchen-amp",
+      "accessed": "2026-10-31",
+      "note": "Nghi's Kitchen qua Gia Vị Hạnh Phúc (5 người, kiểu nhà hàng hải sản điểm xuyết — ngoại lệ thấp): cơm thành phẩm 1000 g, tôm 70 g, mực 70 g, trứng 1 quả, đậu cove."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 đợt 2 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 đợt 2 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 3 gốc nguồn độc lập (ĐMX và BlueStone trùng một gốc công thức, tính một). Phân xử định lượng: GIỮ NGUYÊN — tôm 60 g và mực 50 g không có đồng thuận đổi (nguồn trải 33–86 g), cơm 200 g nằm giữa dải nguồn. Bất thường ghi nhận chờ pha phân xử: (1) trứng có ở 3/3 gốc nguồn (33–43 g/khẩu phần), file không có dòng trung-ga; (2) tên gọi nguồn là \"cơm chiên\" trong khi file để method xao — GIỮ xao có chủ đích: nếu đổi sang chien, engine sẽ cộng dầu hấp thụ trên tôm/mực theo CALC-004 trong khi dầu xào đã là dòng nguyên liệu ăn vào, gây tính dầu hai lần kiểu Phương án A; (3) dòng bach-tuoc tuỳ chọn không nguồn nào có; hành tây chỉ ở biến thể phụ (nguồn chính phi hành tím + tỏi, file thiếu cả hai); đậu Hà Lan/cove có ở 3 nguồn dạng tuỳ chọn.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

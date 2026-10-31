@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -50,7 +50,7 @@
     },
     {
       "ingredient_slug": "mang-tuoi",
-      "quantity": 60,
+      "quantity": 90,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -106,15 +106,34 @@
     }
   ],
   "recipe_steps": [
-    "Luộc vịt với gừng, vớt ra chặt miếng; măng tươi luộc xả nhiều nước cho hết đắng.",
-    "Cho măng vào nước luộc vịt nấu nước dùng, nêm nước mắm, muối.",
-    "Trụng bún, xếp thịt vịt, chan nước dùng măng, ăn kèm nước mắm gừng và rau răm."
+    "Vịt chà muối và gừng đập dập 5–10 phút, rửa sạch nhiều lần cho hết mùi hôi lông, để ráo.",
+    "Măng tươi thái mỏng, luộc sôi 10 phút, đổ bỏ nước; luộc lại lần 2 nếu măng còn đắng, rửa sạch, để ráo.",
+    "Luộc vịt với gừng (dòng gung) ở lửa vừa 30–40 phút, hớt bọt; vịt chín khi xiên đùi không ra nước đỏ.",
+    "Vớt vịt, ngâm nước nguội 5 phút cho da săn, chặt miếng vừa ăn.",
+    "Cho măng đã luộc vào nồi nước luộc vịt, nấu thêm 15–20 phút lửa nhỏ cho măng mềm; nêm nước mắm, muối vừa miệng.",
+    "Trụng bún, cho vào tô; xếp thịt vịt và măng, chan nước dùng, rắc hành lá và rau răm; ăn nóng kèm nước mắm gừng nếu thích."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-vit-nau-mang-tuoi-an-voi-bun-ngon-ngot-cuc-hap-dan-14436",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH (3 người): vịt 1/2 con 600 g, măng tươi 400 g, bún 500 g, hành tây, hành tím, gừng; chặt miếng ướp xào săn rồi nấu; măng luộc xả nhiều nước, xào sơ trước khi vào nồi."
+    },
+    {
+      "url": "http://www.savourydays.com/cach-lam-bun-mang-vit/",
+      "accessed": "2026-10-31",
+      "note": "Savoury Days: vịt 1,2 kg, măng 500 g, bún 1 kg (không ghi khẩu phần — suy theo lượng bún ~5–6 tô); áp chảo mặt da cho ra mỡ rồi luộc ủ."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/1728372",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — minh! (4 người): vịt 1 kg nguyên con luộc, măng 300 g, bún 500 g, hành tây, gừng."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 3 nguồn. Phân xử định lượng: mang-tuoi 60 → 90 g — cả 3 nguồn đồng thuận tăng (75–133 g/khẩu phần), lấy mức giữa thận trọng; vịt 100 g thịt có da giữ nguyên (nguồn 200–250 g sống có xương/khẩu phần, phần ăn được tương đương); bún 150 g giữ (dải nguồn 125–167 g). Bất thường ghi nhận chờ pha phân xử: hành tây (2 nguồn) và hành tím (2 nguồn) cho nước dùng, file thiếu cả hai; dòng rau-ram không nguồn đã mở nào dùng (nguồn dùng húng quế/mùi tàu/ngò) — giữ rau răm dạng biến thể phổ biến và ghi nhận; kỹ thuật xào sơ măng trước khi vào nồi có ở 2/3 nguồn, bước hiện tại cho măng thẳng vào nước dùng cho nhất quán với danh sách nguyên liệu (file không có dòng dầu).",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

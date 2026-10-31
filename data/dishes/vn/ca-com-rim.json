@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "kho",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -58,7 +58,7 @@
     },
     {
       "ingredient_slug": "nuoc-mam-truyen-thong",
-      "quantity": 8,
+      "quantity": 15,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -82,15 +82,35 @@
     }
   ],
   "recipe_steps": [
-    "Cá cơm rửa nhanh, để thật ráo.",
-    "Phi tỏi với dầu, cho cá vào đảo nhẹ tay cho săn.",
-    "Nêm nước mắm, đường, rim lửa nhỏ 6–8 phút tới khi cá keo bóng, thêm ớt. Món mặn nhanh: tổng thời gian nấu ~15 phút, nguyên liệu phổ thông."
+    "Cá cơm tươi rửa nhẹ tay với nước muối loãng, vớt ra để thật ráo 10–15 phút; ướp cá với một phần đường (dòng duong-thot-not) và chút muối 15 phút cho thịt cá săn, không nát khi rim.",
+    "Tỏi bóc vỏ, băm nhỏ; ớt thái lát.",
+    "Làm nóng chảo với dầu ăn (dòng dau-an), cho cá vào chiên/rang sơ lửa vừa 3–4 phút đến khi cá săn, mặt hơi vàng; gắp ra, chắt bớt dầu.",
+    "Dùng lại chảo, phi tỏi đến vàng thơm, dậy mùi.",
+    "Pha nước mắm (dòng nuoc-mam-truyen-thong) với phần đường còn lại và ~30 ml nước, đổ vào chảo đun sôi lăn tăn.",
+    "Cho cá trở lại, rim lửa nhỏ 6–8 phút, đảo thật nhẹ tay; khi sốt keo sệt, bóng và áo đều từng con cá, cá săn chắc là đạt.",
+    "Thêm ớt thái lát, đảo 30 giây, tắt bếp; ăn nóng với cơm."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://amthuchuongque.com/cach-lam/ca-com-rim-man-ngot",
+      "accessed": "2026-10-31",
+      "note": "Ẩm Thực Hương Quê: cá cơm tươi 500 g; sốt nước mắm 2 thìa canh, đường tổng ~2,5 thìa canh, mỡ heo; có hành tím, tỏi, ớt, tương ớt, nước màu, tiêu; ướp cá trước, chiên/rang sơ rồi rim."
+    },
+    {
+      "url": "https://saigonesebaguette.vn/huong-dan-cach-nau-ca-com-tuoi-chuan-vi-gia-dinh-ai-cung-me/",
+      "accessed": "2026-10-31",
+      "note": "Saigonese Baguette: cá cơm tươi 300 g; nước mắm 3–4 thìa canh, đường 2–3 thìa canh, tỏi, hành tím, ớt, dầu (chiên sơ); tỉ lệ nước mắm ~15–20 g/100 g cá."
+    },
+    {
+      "url": "https://giavihanhphuc.com/ca-com/ca-com-rim-nuoc-mam",
+      "accessed": "2026-10-31",
+      "note": "Gia Vị Hạnh Phúc: cá cơm 300 g; nước mắm 3 thìa canh, đường 3 thìa canh (tỉ lệ ~15 g mắm và ~12 g đường/100 g cá); cá áo bột chiên giòn trước khi rim."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 3 nguồn (cả 3 không ghi số khẩu phần — phân xử theo tỉ lệ trên 100 g cá). Phân xử định lượng: nuoc-mam-truyen-thong 8 → 15 g — 2/3 nguồn đồng thuận ~15 g/100 g cá, file thấp hơn ~47%; đường thốt nốt 10 g giữ nguyên (dải nguồn 6–12 g; nguồn dùng đường trắng, file dùng thốt nốt là thay thế hợp lệ). Bất thường ghi nhận: hành tím có ở 2/3 nguồn và tiêu ở 2/3 nguồn, file thiếu cả hai; kỹ thuật cũ của file thiếu bước ướp + chiên sơ (3/3 nguồn đều có) — bước đã viết lại.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -66,15 +66,33 @@
     }
   ],
   "recipe_steps": [
-    "Tôm khô ngâm nước ấm cho mềm; bầu gọt vỏ bỏ ruột, cắt miếng.",
-    "Đun sôi nước, cho tôm khô vào nấu 5 phút lấy vị ngọt.",
-    "Thả bầu nấu vừa trong, nêm nước mắm, rắc hành lá."
+    "Tôm khô rửa nhanh, ngâm nước ấm 10–15 phút cho mềm, vớt ra để ráo, giã dập hoặc băm nhỏ.",
+    "Bầu gọt vỏ, bỏ ruột già, cắt miếng hoặc lát mỏng vừa ăn; hành lá cắt nhỏ, để riêng đầu hành.",
+    "Cho tôm khô vào nồi nước (khoảng 250 ml/khẩu phần), đun sôi, hớt bọt, giữ lửa vừa nấu ~5–10 phút cho tôm ra vị ngọt.",
+    "Cho bầu vào, nấu sôi lại 3–5 phút đến khi miếng bầu trong, vừa mềm mà chưa nát; mở vung khi nấu để bầu giữ màu và không bị nồng.",
+    "Nêm nước mắm cho vừa miệng, tắt bếp, rắc hành lá, múc ra tô dùng nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.huongnghiepaau.com/canh-bau-voi-tom",
+      "accessed": "2026-10-31",
+      "note": "Hướng Nghiệp Á Âu: bầu 500 g, tôm khô 50 g, hành lá, thì là; ngâm tôm khô cho mềm trước khi nấu."
+    },
+    {
+      "url": "https://pasgo.vn/blog/tro-tai-vao-bep-voi-2-cach-lam-canh-bau-nau-tom-ngot-nuoc-thanh-mat-4696",
+      "accessed": "2026-10-31",
+      "note": "PasGo: bầu 1 quả, hành khô 2 củ, phi hành xào tôm khô trước khi cho nước. (Số tôm khô 200 g của trang này là ngoại lệ gấp ~4 lần hai nguồn còn lại — không theo.)"
+    },
+    {
+      "url": "https://memart.vn/tin-tuc/blog3/canh-bau-nau-tom-kho-vi-cb.html",
+      "accessed": "2026-10-31",
+      "note": "Memart: bầu ~500 g, tôm khô 50 g, hành tím băm, nước 1 L; phi hành tím, xào tôm khô rồi mới cho nước."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 3 nguồn (không nguồn nào ghi số khẩu phần — quy theo mẻ gia đình 4). Phân xử định lượng: GIỮ NGUYÊN — bầu 130 g khớp đồng thuận 125 g; tôm khô 15 g so với đồng thuận 2 nguồn 12,5 g lệch 20%, dưới ngưỡng (số 200 g của PasGo là ngoại lệ bất hợp lý, đã loại). Bất thường ghi nhận chờ pha phân xử: hành tím có ở 2/3 nguồn và kỹ thuật phi hành + xào tôm khô trước khi cho nước cũng ở 2/3 nguồn, file thiếu cả dòng hanh-tim lẫn dau-an — bước hiện tại giữ kỹ thuật đun nước thả tôm của file cho nhất quán với danh sách nguyên liệu.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

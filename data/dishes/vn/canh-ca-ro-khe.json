@@ -82,7 +82,7 @@
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món THAY cho canh măng chua nấu cá trong kế hoạch: măng chua chưa tra được số đạt chuẩn nên món gốc hoãn (xem file nguyên liệu mang-chua).",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món THAY cho canh măng chua nấu cá trong kế hoạch: măng chua chưa tra được số đạt chuẩn nên món gốc hoãn (xem file nguyên liệu mang-chua). Nghiên cứu Mức 2 đợt 3 (LV2-003, 2026-10-31): GIỮ Mức 1 — các trang mở được chỉ gồm 1 lineage công thức gốc bị sao chép nguyên văn (Thế Giới Ẩm Thực và tài liệu ĐH Duy Tân giống từng chữ) cộng 1 trang tổng hợp viết lại cùng khuôn — không đạt chuẩn 3 nguồn độc lập (cùng họ khó tìm nguồn như canh-nghe-ca-ro đợt 1). Tín hiệu từ lineage duy nhất (chưa đủ chuẩn phân xử): cà chua ~60 g và khế 50–125 g/khẩu phần đều cao hơn file (30 g và 40 g); file thiếu hẳn me, tỏi, dầu ăn, đường và rau ngổ/ngò gai mà lineage có.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -25,7 +25,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -97,15 +97,35 @@
     }
   ],
   "recipe_steps": [
-    "Nghêu ngâm nước vo gạo cho nhả cát, rửa sạch; mồng tơi nhặt lá và ngọn non, rửa sạch.",
-    "Luộc nghêu với gừng đến khi há miệng, gạn lấy phần nước trong, bỏ cát lắng.",
-    "Đun lại nước nghêu, cho mồng tơi vào nấu vừa chín, nêm nước mắm, rắc hành lá, dùng nóng."
+    "Nghêu ngâm nước vo gạo hoặc nước muối loãng có vài lát ớt 1–2 giờ cho nhả cát, chà rửa vỏ, xả lại nhiều lần.",
+    "Mồng tơi nhặt lá và ngọn non, rửa sạch, cắt khúc vừa ăn; gừng thái lát hoặc đập dập.",
+    "Cho nghêu vào nồi với nước xâm xấp và gừng, đun lửa vừa đến khi nghêu vừa há miệng (khoảng 5–10 phút) thì tắt bếp, tránh luộc lâu làm teo thịt.",
+    "Tách lấy thịt nghêu để riêng; nước luộc để lắng 10–15 phút, gạn lấy phần trong, bỏ cặn cát ở đáy.",
+    "Phi nhẹ thịt nghêu với dầu ăn (dòng dau-an) khoảng 1 phút cho săn và thơm, trút ra để riêng.",
+    "Đun sôi lại nước nghêu đã gạn, nêm muối và nước mắm nhẹ (nước nghêu đã ngọt mặn sẵn), cho mồng tơi vào nấu 2–3 phút đến khi rau vừa chín, còn xanh.",
+    "Cho thịt nghêu trở lại, đợi sôi lại là tắt bếp ngay; múc ra tô, rắc hành lá, dùng nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://vnask.com/cach-nau-canh-ngao-mong-toi-16613",
+      "accessed": "2026-10-31",
+      "note": "VnAsk: ngao 500 g (cả vỏ), mồng tơi 300 g, sả 3 nhánh, nước luộc 500 ml (không ghi khẩu phần, quy theo mẻ 4)."
+    },
+    {
+      "url": "https://vtimes.com.au/cach-nau-canh-mong-toi-thom-ngon-hap-dan-2331058-amp.html",
+      "accessed": "2026-10-31",
+      "note": "VTimes (Ẩm Thực): ngao 700 g (cả vỏ), mồng tơi 1 bó, gừng, muối (không ghi khẩu phần, quy theo mẻ 4)."
+    },
+    {
+      "url": "https://memart.vn/tin-tuc/blog3/canh-ngheu-mong-toi-vi-cb.html",
+      "accessed": "2026-10-31",
+      "note": "Memart: nghêu 500 g–1 kg, mồng tơi 150–300 g, hành tím; phi hành tím xào thịt nghêu bằng dầu trước khi nấu rau."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Món thay thế cho canh-moc-nau-bau vì slug canh-moc đã có trong kho.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Món thay thế cho canh-moc-nau-bau vì slug canh-moc đã có trong kho. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 3 nguồn. Phân xử định lượng: GIỮ NGUYÊN — ngheu 150 g theo quy ước của ingredient (khối lượng cả vỏ mua ở chợ, edible_portion_pct 15%) nằm giữa dải nguồn 125–250 g cả vỏ/khẩu phần; mồng tơi 100 g ở phía cao của dải quy đổi (38–75 g) nhưng khẩu phần nguồn không ghi nên độ tin cậy thấp, chưa đủ chắc để đổi. Sửa kỹ thuật trong bước (không đổi nguyên liệu): bước cũ thiếu thao tác cho thịt nghêu trở lại nồi và dòng dau-an không gắn với bước nào — bước đã viết lại (tách thịt, gạn nước, xào thịt nghêu bằng dầu rồi cho lại cuối). Bất thường nhẹ ghi nhận: hành tím phi/xào nghêu chỉ rõ ở 1/3 nguồn, hành lá không nguồn nào dùng cho món này (giữ dạng trang trí).",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

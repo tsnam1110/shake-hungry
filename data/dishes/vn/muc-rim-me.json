@@ -107,7 +107,7 @@
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu).",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu). Nghiên cứu Mức 2 đợt 3 (LV2-003, 2026-10-31): GIỮ Mức 1 — mới mở kiểm chứng được 2 nguồn (Emdep; Hải Sản Cô Tô), các nguồn còn lại bị provider chặn 429 nên chỉ ở mức trích đoạn tìm kiếm, chưa đạt cổng ≥3 nguồn đã mở. Bất thường ghi nhận cho pha phân xử: sả và gừng có ở 2/2 nguồn đã mở, file thiếu cả hai; định lượng chính (mực khô 40, me 15, đường 10) nằm trong dải quy đổi của nguồn, không đề xuất đổi.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

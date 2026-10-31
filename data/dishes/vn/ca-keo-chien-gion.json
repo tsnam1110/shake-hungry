@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "chien-ngap-dau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -66,15 +66,40 @@
     }
   ],
   "recipe_steps": [
-    "Cá kèo rửa sạch nhớt bằng muối và chanh, để ráo, ướp muối tiêu.",
-    "Lăn cá qua bột mì khô cho áo một lớp mỏng.",
-    "Chiên ngập dầu đến khi vàng giòn, ăn kèm rau thơm và nước mắm me."
+    "Cá kèo để nguyên con, tuốt nhớt bằng muối và chanh/giấm, rửa nhiều lần đến hết nhớt, để thật ráo.",
+    "Ướp cá với muối và tiêu (đúng định lượng file) 10 phút cho thấm và săn mặt.",
+    "Cho bột mì (dòng bot-mi) vào hộp, xếp cá vào, đậy nắp xóc nhẹ cho bột áo đều lớp mỏng; giũ bỏ bột thừa.",
+    "Đun dầu gần ngập cá đến nóng già (đầu đũa sủi tăm mạnh); dầu chiên do engine mô hình hoá theo Phương án A.",
+    "Thả cá từng con, chiên lửa vừa khoảng 3 phút, không đảo ngay; khi lớp áo tự cứng mới trở mặt.",
+    "Chiên tiếp đến khi cá vàng ruộm, thân cứng giòn; vớt ra để đứng trên vỉ hoặc giấy thấm cho ráo dầu.",
+    "Dùng ngay lúc nóng với nước chấm tuỳ thích (nước chấm là món kèm, không tính vào nguyên liệu món này — bước cũ của file nhắc mắm me/chanh không có dòng nguyên liệu, đã sửa)."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://tripi.vn/blog/vi/kinh-nghiem-hay/huong-dan-cach-lam-ca-keo-chien-gion-cham-tuong-ban-mon-ngon-dan-da-cho-bua-com-gia-dinh-tripi",
+      "accessed": "2026-10-31",
+      "note": "Tripi (đăng lại ĐMX/BHX, 2–3 người): cá kèo 400 g, bột chiên giòn 1 gói; ướp tiêu + cốt chanh 5 phút, chiên lửa vừa ~3 phút, chấm tương bần."
+    },
+    {
+      "url": "https://bloganngon.edu.vn/cach-lam-ca-keo-chien-gion-thom-ngon-cuc-pham-ai-cung-me/",
+      "accessed": "2026-10-31",
+      "note": "Blog Ăn Ngon: cá 500 g, trứng gà 1 quả, me cô đặc; áo bột ướt (bột chiên giòn/bột năng pha nước + trứng), ướp muối/tiêu/đường 10–20 phút, chấm mắm me."
+    },
+    {
+      "url": "https://congthucgiadinh.com/mon-an/ca-keo-chien-nuoc-mam",
+      "accessed": "2026-10-31",
+      "note": "Công Thức Gia Đình (biến thể chiên nước mắm): cá 300 g, bột mì + bột năng (tỉ lệ bột/cá 0,4 ở lượng chuẩn bị); chiên 5–7 phút lửa vừa."
+    },
+    {
+      "url": "https://fptshop.com.vn/tin-tuc/dien-may/ca-keo-180365",
+      "accessed": "2026-10-31",
+      "note": "FPT Shop (định tính): nhúng lòng đỏ trứng rồi lăn bột chiên giòn, chiên giòn, chấm mắm me."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 15 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).]",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 15 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).] Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 4 nguồn. Phân xử định lượng: GIỮ NGUYÊN — cá 180 g nằm trong khoảng nguồn có khẩu phần (133–200 g); muối/tiêu sát tỉ lệ ướp của nguồn. Bất thường ghi nhận chờ pha phân xử: (1) loại bột áo — 3/4 nguồn dùng bột chiên giòn hoặc hỗn hợp mì+năng, không nguồn nào áo bột mì khô đơn thuần như file; kho chưa có ingredient bột chiên giòn, cần quyết định biên soạn nguyên liệu hay đổi ánh xạ; tỉ lệ bột nguồn là lượng chuẩn bị (phần lớn rơi lại khi xóc), không quy thẳng thành lượng ăn vào; (2) trứng làm chất kết dính áo bột có ở 2/4 nguồn — hai trường phái áo khô/áo ướt ngang nhau.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "chien",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -30,11 +30,11 @@
     }
   ],
   "serving_desc": "1 đĩa",
-  "serving_grams": 160,
+  "serving_grams": 135,
   "ingredients": [
     {
       "ingredient_slug": "trung-ga",
-      "quantity": 100,
+      "quantity": 75,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -66,15 +66,39 @@
     }
   ],
   "recipe_steps": [
-    "Thịt xay ướp nước mắm 5 phút; trứng đánh tan cùng hành lá.",
-    "Chiên thịt xay trong chảo cho chín săn, đổ trứng tráng đều mặt, chiên lửa vừa tới khi mặt dưới vàng, lật mặt chiên thêm 1 phút.",
-    "Cắt miếng vừa ăn, dùng nóng với cơm. Món mặn nhanh: tổng thời gian nấu ~15 phút, nguyên liệu phổ thông."
+    "Thịt xay ướp nước mắm khoảng 10 phút cho thấm; hành lá rửa sạch, cắt nhỏ.",
+    "Đánh tan trứng trong tô lớn, cho hành lá vào khuấy đều, để riêng.",
+    "Làm nóng chảo ở lửa vừa (không kê dầu chiên chính theo Phương án A), cho thịt vào đảo nhanh tay 2–3 phút đến khi thịt tơi, săn và hết màu hồng.",
+    "Hạ lửa vừa–nhỏ, đổ trứng dàn đều khắp mặt thịt, đậy nắp 2–3 phút cho mặt trên se lại.",
+    "Lật mặt, chiên thêm khoảng 1 phút đến khi hai mặt vàng nhẹ, trứng chín nhưng còn mềm ẩm ở giữa.",
+    "Trút ra đĩa, cắt miếng vừa ăn, dùng nóng với cơm."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://bepxua.vn/cong-thuc-trung-chien-thit-bam-de-nau-bua-com-nhanh-chong-va-dinh-duong/",
+      "accessed": "2026-10-31",
+      "note": "Bếp Xưa (bài 1, 4 người): thịt vai 150 g, trứng 4 quả, hành lá 30 g, dầu 20 ml; trộn thịt sống vào trứng rồi chiên."
+    },
+    {
+      "url": "https://bepxua.vn/cach-chien-trung-thit-bam-ngon-ai-cung-co-the-chien-trung-ngon/?noamp=mobile",
+      "accessed": "2026-10-31",
+      "note": "Bếp Xưa (bài 2, công thức khác, 4 người): thịt băm 200 g, trứng 6 quả, hành lá 10 g; xào thịt trước rồi đổ trứng."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/9689045",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Tuyền: trứng 4 quả, thịt heo bằm 200 g, nấm mèo, hành lá (không ghi khẩu phần) — tỉ lệ thịt:trứng 1:1 theo mẻ."
+    },
+    {
+      "url": "https://inauanngon.com/trung-thit-chien-bam/",
+      "accessed": "2026-10-31",
+      "note": "I Nấu Ăn Ngon: trứng 3 quả, thịt nạc vai 100 g, hành lá 30 g (không ghi khẩu phần) — tỉ lệ thịt:trứng 100:150 theo mẻ."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món chiên theo quy ước Phương án A (EDITORIAL-GUIDE §12): công thức KHÔNG kê dầu của bước chiên chính — dầu hấp thụ do engine mô hình hoá theo hệ số CALC-004 của nguyên liệu.",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món chiên theo quy ước Phương án A (EDITORIAL-GUIDE §12): công thức KHÔNG kê dầu của bước chiên chính — dầu hấp thụ do engine mô hình hoá theo hệ số CALC-004 của nguyên liệu. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 4 nguồn (hai bài Bếp Xưa là hai công thức khác nhau trên cùng một trang — tính độc lập vừa phải). Phân xử định lượng: trung-ga 100 → 75 g — hai nguồn ghi rõ khẩu phần đều thấp hơn file (50 g và 75 g/khẩu phần), lấy mức cao nhất 75 g thận trọng; serving_grams 160 → 135 theo tổng dòng mới; thịt 50 g giữ nguyên (một nguồn khớp file). Ghi nhận tranh luận khẩu phần: nguồn là đĩa chung gia đình chia 4, file là đĩa chính 1 người — chủ dự án có thể quyết khác ở pha phân xử. Bất thường ghi nhận: hành tím/hành khô có ở 4/4 nguồn, file thiếu hẳn.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

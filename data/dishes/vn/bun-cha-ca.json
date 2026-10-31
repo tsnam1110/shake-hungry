@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -42,7 +42,7 @@
     },
     {
       "ingredient_slug": "cha-ca-vien",
-      "quantity": 60,
+      "quantity": 115,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -50,7 +50,7 @@
     },
     {
       "ingredient_slug": "ca-chua",
-      "quantity": 40,
+      "quantity": 60,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -58,7 +58,7 @@
     },
     {
       "ingredient_slug": "bi-do",
-      "quantity": 40,
+      "quantity": 95,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -106,15 +106,36 @@
     }
   ],
   "recipe_steps": [
-    "Nấu nước dùng với bí đỏ, cà chua và dứa cho vị chua ngọt thanh.",
-    "Chả cá chiên vàng, thái lát.",
-    "Trụng bún, xếp chả cá, chan nước dùng, rắc hành lá."
+    "Bí đỏ gọt vỏ, cắt miếng vừa ăn; cà chua bổ múi cau; thơm cắt lát mỏng; hành lá cắt nhỏ.",
+    "Nấu cà chua trong ít nước khoảng 5 phút đến khi mềm và ra màu, làm nền nước dùng.",
+    "Đổ khoảng 500 ml nước/khẩu phần vào, đun sôi, cho bí đỏ vào nấu lửa vừa 10–12 phút đến khi bí vừa mềm.",
+    "Cho thơm vào, nấu thêm ~5 phút cho nước ngọt thanh; nêm muối, đường và nước mắm cho vừa ăn, giữ lửa nhỏ lăn tăn, không để sôi bùng lâu làm đục nước.",
+    "Chả cá (dòng cha-ca-vien) chiên vàng đều hai mặt 3–4 phút mỗi mặt, vớt ráo dầu.",
+    "Trụng bún qua nước sôi, để ráo, cho vào tô.",
+    "Xếp chả cá lên bún, chan nước dùng nóng cùng bí đỏ, cà chua, thơm.",
+    "Rắc hành lá, dùng nóng; ăn kèm rau sống, chanh ớt nếu thích."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/amp/cach-nau-bun-cha-ca-da-nang-chuan-vi-thom-ngon-don-gian-cho-09524",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH (bún chả cá Đà Nẵng, 4 người): chả hấp 500 g + chả chiên 500 g, bí đỏ 500 g, bắp cải 200 g, cà chua 3 quả, thơm 1 trái, thêm 1 con cá basa kho riêng."
+    },
+    {
+      "url": "https://yeutre.vn/bai-viet/bun-cha-ca-da-nang.26423/",
+      "accessed": "2026-10-31",
+      "note": "Yeutre (cách chả mua sẵn): bún 1000 g, chả hấp 300 g + chả chiên 300 g, bí đỏ 500 g, cà chua 4 quả, thơm 1/3 trái, bắp cải 1/4 cây (không ghi số người, quy ước 4–5)."
+    },
+    {
+      "url": "https://nauankhongkho.vn/mon-ngon-mien-trung/cach-lam-bun-cha-ca-cuc-ngon",
+      "accessed": "2026-10-31",
+      "note": "Nấu Ăn Không Khó: chả tự làm từ 300 g thác lác + 200 g basa + 100 g mỡ, bí đỏ 100 g (ngoại lệ thấp), cà chua 3 quả, thơm 1/4 trái, bắp cải 10 lá, mắm ruốc 2 thìa canh, có măng."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 3 nguồn (bún chả cá Đà Nẵng). Phân xử định lượng: cha-ca-vien 60 → 115 g (hai nguồn đồng thuận ~100–150 g/khẩu phần; số 250 g của ĐMX gồm cả hấp + chiên, cùng chiều nhưng cao bất thường), bi-do 40 → 95 g (hai nguồn ~100–125 g/khẩu phần) và ca-chua 40 → 60 g (nguồn 3–4 quả/mẻ). Bất thường lớn ghi nhận chờ pha phân xử: bắp cải nấu trong nước dùng có ở 3/3 nguồn (kho đã có ingredient bap-cai, ~50 g/khẩu phần) mà file thiếu hẳn — đây là thiếu cấu trúc nước dùng, không phải sai số gram; mắm ruốc có ở 2/3 nguồn (đặc trưng Đà Nẵng), file thiếu; nguồn dùng chả miếng hấp + chiên, file dùng cha-ca-vien dạng viên — khác dạng chế biến.",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

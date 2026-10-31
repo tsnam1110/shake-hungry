@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "xao",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -74,15 +74,39 @@
     }
   ],
   "recipe_steps": [
-    "Rau muống nhặt khúc, rửa sạch; chao tán nhuyễn với chút đường.",
-    "Phi thơm tỏi với dầu.",
-    "Cho rau vào xào lửa lớn, rưới chao, đảo nhanh vừa chín, dùng nóng."
+    "Rau muống nhặt bỏ gốc già và lá úa, ngắt khúc 6–7 cm, ngâm nước muối loãng 5 phút, rửa sạch, để ráo.",
+    "Tán nhuyễn chao trong chén cùng đường, khuấy thành sốt sệt.",
+    "Đun dầu ăn (dòng dau-an) thật nóng, phi tỏi băm đến khi vàng nhẹ và dậy mùi.",
+    "Cho rau vào xào lửa lớn, đảo nhanh 2 phút đến khi cọng rau xanh bóng, vừa tái.",
+    "Rưới sốt chao đều khắp, đảo thêm 1–2 phút cho chao áo đều, rau chín tới mà vẫn giòn.",
+    "Tắt bếp ngay khi rau còn xanh, dọn ra đĩa ăn nóng (để lâu rau thâm và ra nước)."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://vuonxanhpho.vn/blogs/rau-cu/cach-lam-rau-muong-xao-chao-chay-thom-ngon-la-mieng-thanh-dam-cho-ca-nha/",
+      "accessed": "2026-10-31",
+      "note": "Vườn Xanh Phố (văn bản cùng họ công thức Điện Máy XANH, 2 người): rau muống 300 g, chao 3 thìa canh, dầu 2 thìa canh."
+    },
+    {
+      "url": "https://nauankhongkho.vn/blog/cach-lam-rau-muong-xao-chao-don-gian-ma-ngon-het-say-YM3bgJ7eoK9L",
+      "accessed": "2026-10-31",
+      "note": "Nấu Ăn Không Khó — Túc Túc: rau 400 g, chao 3 thìa canh, tỏi 5 tép, đường 1/2 thìa cà phê, dầu 2 thìa canh (không ghi khẩu phần); phi chao trong dầu trước khi cho rau."
+    },
+    {
+      "url": "https://daubepgiadinh.vn/rau-muong-xao",
+      "accessed": "2026-10-31",
+      "note": "Đầu Bếp Gia Đình (Hướng Nghiệp Á Âu): rau 1 bó lớn, chao 2 viên, tỏi 1 củ, đường trong sốt chao (không ghi khẩu phần); luộc sơ rau 1 phút + ngâm nước đá trước khi xào."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/10992844",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Huyen le Tran (chỉ kỹ thuật, bản đọc thiếu mục nguyên liệu): tán chao + đường, phi tỏi, xào rau rồi cho chao."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 4 nguồn (1 nguồn chỉ dùng kỹ thuật). Phân xử định lượng: GIỮ NGUYÊN TOÀN BỘ — nguồn duy nhất ghi rõ khẩu phần cho rau 150 g/khẩu phần ≈ file 140 g; lượng chao giữa các nguồn dao động rất rộng (2 viên cho cả bó lớn đến ~22 g/khẩu phần), file 15 g nằm giữa khoảng; dầu 7 g thấp hơn chiều hướng nguồn nhưng chỉ 1 nguồn có khẩu phần nên chưa đủ chuẩn phân xử, ghi nhận để pha phân xử xem lại. Biến thể kỹ thuật ghi nhận: chần rau trước khi xào (1 nguồn) và phi chao trước khi cho rau (1 nguồn) — file theo đa số xào trực tiếp, cho chao sau.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

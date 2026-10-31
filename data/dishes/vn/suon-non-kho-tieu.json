@@ -98,7 +98,7 @@
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Khác suon-rim cùng đợt ở gia vị chủ đạo (tiêu) và không thắng sốt rim ngọt — hai biến thể kho sườn phổ biến, giữ độc lập.",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Khác suon-rim cùng đợt ở gia vị chủ đạo (tiêu) và không thắng sốt rim ngọt — hai biến thể kho sườn phổ biến, giữ độc lập. Nghiên cứu Mức 2 đợt 3 (LV2-003, 2026-10-31): GIỮ Mức 1 — mới mở kiểm chứng được 2 nguồn độc lập (VinID; Công Thức Gia Đình); trang tổng hợp thứ ba có nội dung gần trùng VinID, nghi sao chép nên không tính độc lập. Tín hiệu phân xử chờ xác nhận khi có nguồn thứ ba: sườn 180 g cao hơn quy đổi của cả hai nguồn đã mở (100–125 g/khẩu phần theo mẻ gia đình 4), đường 8 g cao hơn số thắng màu của nguồn (3,8–4 g); ớt tươi có ở nguồn, file thiếu.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

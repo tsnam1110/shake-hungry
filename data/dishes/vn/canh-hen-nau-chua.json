@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -82,15 +82,40 @@
     }
   ],
   "recipe_steps": [
-    "Hến đãi sạch sạn; cà chua bổ cau; khế gọt rìa, thái lát.",
-    "Đun sôi nước, cho cà chua và khế vào nấu lấy vị chua, nêm nước mắm và chút đường.",
-    "Cho hến vào nấu vừa sôi lại, rắc hành lá, dùng nóng."
+    "Hến ngâm nước vo gạo hoặc nước muối có vài lát ớt 2–4 giờ cho nhả bùn cát, chà rửa vỏ thật sạch, xả nhiều lần.",
+    "Luộc hến với nước xâm xấp; khi sôi dùng đũa khuấy đều một chiều cho thịt bung khỏi vỏ, hến mở hết miệng thì tắt bếp.",
+    "Đãi lấy thịt hến, rửa lại cho hết sạn, để ráo; nước luộc để lắng 15–20 phút, gạn lấy phần trong, bỏ cặn đáy.",
+    "Cà chua bổ múi cau (một nửa có thể băm nhỏ để nấu lấy màu); khế gọt rìa, thái lát; hành lá cắt nhỏ.",
+    "Đổ nước luộc hến đã gạn vào nồi, cho phần cà chua băm vào nấu cho mềm ra màu, đun sôi.",
+    "Cho cà chua múi cau và khế vào, nấu thêm 3–5 phút cho ra vị chua; nêm nước mắm và đường cho cân bằng chua–mặn–ngọt.",
+    "Cho thịt hến đã đãi trở lại, sôi lại là tắt bếp ngay (nấu lâu hến dai); rắc hành lá, dùng nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://vnexpress.net/doi-song-cooking-canh-rieu-hen-bac-bo-4757908.html",
+      "accessed": "2026-10-31",
+      "note": "VnExpress — Bùi Thủy (4–5 người, ghi rõ): hến cả vỏ 1,5 kg, cà chua 3 quả, khế 2 quả, rau răm, hành tím; biến thể Bắc dùng thêm giấm bỗng nếp. Luộc–đãi–xào thịt hến trước khi nấu."
+    },
+    {
+      "url": "https://www.cet.edu.vn/cach-nau-canh-hen",
+      "accessed": "2026-10-31",
+      "note": "CET: hến 1 kg, cà chua 2 quả, khế 1 quả, thêm 1/2 quả dứa, hành tím 1 củ (quy theo mẻ 4)."
+    },
+    {
+      "url": "https://phunutoday.vn/cong-thuc-nau-canh-hen-chua-ngon-nhat-danh-cho-mua-he-d137971.html",
+      "accessed": "2026-10-31",
+      "note": "Phụ Nữ Today: hến 1 kg, cà chua 2 quả, khế 1 quả, hành tím 1–2 củ (quy theo mẻ 4)."
+    },
+    {
+      "url": "https://cholaithieu.com/cach-nau-canh-hen-nau-chua-ngon-dung-vi-khong-tanh/",
+      "accessed": "2026-10-31",
+      "note": "Chợ Lái Thiêu (4 người, ghi rõ): hến 1 kg, cà chua 2 quả lớn, khế 1–2 quả, hành tím 2 củ, rau răm."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 4 nguồn. Phân xử định lượng: GIỮ NGUYÊN — cà chua 50 g và khế 30 g khớp đồng thuận nguồn (~45–60 g và ~28–55 g/khẩu phần); hen 60 g là thịt hến đã đãi theo định nghĩa ingredient (45 kcal/100 g), tương đương phần thịt thu được từ 250–375 g hến cả vỏ/khẩu phần của nguồn (tỉ lệ thịt hến nhỏ ~20–25%) nên không lệch như số thô cả vỏ gợi ý. Bất thường ghi nhận chờ pha phân xử: rau răm (4/4 nguồn — rau thơm định danh của món), hành tím (4/4) và dầu ăn cho bước xào thịt hến (4/4) đều thiếu trong file; bước đã bổ sung công đoạn luộc–đãi còn thiếu nhưng giữ kỹ thuật cho hến vào cuối không xào cho nhất quán với danh sách nguyên liệu hiện tại.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

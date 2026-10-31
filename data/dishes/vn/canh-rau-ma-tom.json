@@ -74,7 +74,7 @@
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nghiên cứu Mức 2 đợt 3 (LV2-003, 2026-10-31): GIỮ Mức 1 — mới mở kiểm chứng được 2 nguồn (Lofita — khớp chính xác rau má 50 g + tôm 50 g của file; Đầu Bếp Gia Đình — lệch ngược chiều rau 75/tôm 37,5) do provider chặn 429 ở nguồn thứ ba; hai nguồn không đồng thuận một hướng nên không đề xuất đổi định lượng. Bất thường ghi nhận: cả 2 nguồn đã mở đều phi hành/tỏi bằng dầu và xào tôm trước khi cho nước — file không có dòng dau-an và bước đun nước thả tôm sống; cả 2 nguồn đều băm/giã dập tôm và ướp trước khi xào.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

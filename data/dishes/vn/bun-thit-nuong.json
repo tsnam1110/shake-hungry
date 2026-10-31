@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nuong",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -34,7 +34,7 @@
   "ingredients": [
     {
       "ingredient_slug": "bun-tuoi",
-      "quantity": 150,
+      "quantity": 200,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -42,7 +42,7 @@
     },
     {
       "ingredient_slug": "thit-lon-nac-vai",
-      "quantity": 70,
+      "quantity": 140,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -82,7 +82,7 @@
     },
     {
       "ingredient_slug": "lac-rang",
-      "quantity": 10,
+      "quantity": 20,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -146,15 +146,36 @@
     }
   ],
   "recipe_steps": [
-    "Ướp thịt với sả, tỏi, nước mắm, đường; nướng than cho cháy cạnh thơm.",
-    "Làm mỡ hành; cà rốt và củ cải ngâm chua ngọt.",
-    "Xếp bún, thịt nướng, rau sống, đồ chua, rắc đậu phộng và mỡ hành, chan nước mắm pha."
+    "Thịt nạc vai thái lát mỏng 0,3–0,5 cm; sả và tỏi băm nhuyễn, trộn với nước mắm, đường và chút dầu ăn (dòng dau-an), ướp thịt ít nhất 30 phút (ngon hơn sau 2 giờ trong tủ lạnh).",
+    "Cà rốt và củ cải trắng bào sợi, bóp chút muối 10 phút, rửa lại, vắt ráo rồi ngâm nước giấm đường ấm khoảng 20–30 phút làm đồ chua.",
+    "Pha nước mắm chan từ phần nước mắm và đường còn lại pha loãng với nước ấm, vị chua ngọt nhẹ, mặn vừa (nước mắm trong định lượng file là phần nguyên chất).",
+    "Hành lá cắt nhỏ, rưới dầu nóng làm mỡ hành; đậu phộng (dòng lac-rang) rang vàng, bỏ vỏ, giã dập.",
+    "Nướng thịt trên than hồng (hoặc nồi chiên không dầu 170–180°C): nướng mỗi mặt 5–7 phút, trở đều đến khi thịt chín vàng, xém cạnh nhẹ và còn mềm mọng, tránh để cháy phần đường ướp.",
+    "Bún tươi trụng nhanh nước sôi 30 giây nếu sợi đã khô, để ráo; rau xà lách, húng quế, dưa leo rửa sạch, cắt vừa ăn.",
+    "Xếp bún vào tô, bày rau sống, dưa leo, đồ chua, thịt nướng cắt miếng vừa ăn lên trên.",
+    "Rưới mỡ hành, rắc đậu phộng rang, chan nước mắm pha và trộn đều khi ăn."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-bun-tron-thit-nuong-ngon-mem-thom-ai-cung-me-23648",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH (bún trộn thịt nướng, 3 người): thịt nạc dăm 1000 g (outlier cao, ướp kiểu xiên que — không dùng số thịt), bún 500 g, lạc 100 g, củ cải 200 g, cà rốt 100 g, rau sống 400 g."
+    },
+    {
+      "url": "https://www.bluestone.com.vn/blogs/vao-bep/cach-lam-bun-thit-nuong-bang-noi-chien-khong-dau",
+      "accessed": "2026-10-31",
+      "note": "BlueStone (nồi chiên không dầu, không ghi số người — quy ước 4–5): bún 1000 g, thịt heo 800 g, lạc rang 200 g."
+    },
+    {
+      "url": "https://cookpad.com/eng/recipes/16685954",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Hoàng Thị Tố Hà (4–5 người): thịt vai 650 g, bún 1000 g, lạc 100 g, sả trong sốt ướp, hành tím 50 g."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 3 nguồn. Phân xử định lượng: thit-lon-nac-vai 70 → 140 g (hai nguồn độc lập đồng thuận ~144–200 g/khẩu phần, file thấp hơn ~2 lần; số 333 g của ĐMX là ngoại lệ không dùng), bun-tuoi 150 → 200 g (nguồn 167–250 g/khẩu phần) và lac-rang 10 → 20 g (3 nguồn đều 22–50 g/khẩu phần, lấy cận dưới). Đồ chua cà rốt + củ cải giữ nguyên (chỉ 1 nguồn định lượng rõ cao hơn, chưa đủ 2 nguồn). Nước mắm 12 g giữ: nguồn pha nước chấm loãng chan 50–80 ml/tô, file kê phần nguyên chất — nhất quán nội bộ.",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

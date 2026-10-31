@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "xao",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -30,11 +30,11 @@
     }
   ],
   "serving_desc": "1 đĩa",
-  "serving_grams": 220,
+  "serving_grams": 130,
   "ingredients": [
     {
       "ingredient_slug": "thit-bo-nam",
-      "quantity": 120,
+      "quantity": 60,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -42,7 +42,7 @@
     },
     {
       "ingredient_slug": "can-tay",
-      "quantity": 80,
+      "quantity": 50,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -82,15 +82,35 @@
     }
   ],
   "recipe_steps": [
-    "Bò thái mỏng, ướp như món bò xào hành tây; cần tây cắt khúc xéo.",
-    "Phi tỏi thơm, xào bò lửa lớn vừa tái, trút ra.",
-    "Xào cần tây nhanh tay còn giòn, trộn bò vào, nêm lại. Món mặn nhanh: tổng thời gian nấu ~20 phút, nguyên liệu phổ thông."
+    "Thịt bò thái mỏng ngang thớ, ướp nước mắm, tiêu và một nửa tỏi băm 15 phút.",
+    "Cần tây nhặt bỏ lá già, rửa sạch, cắt khúc 4–5 cm.",
+    "Làm nóng chảo với một nửa dầu ăn, phi tỏi cho thơm vàng nhẹ.",
+    "Cho bò vào xào lửa lớn, đảo nhanh 1,5–2 phút đến khi thịt vừa tái, còn hồng nhẹ; trút ra đĩa.",
+    "Dùng lại chảo, thêm phần dầu còn lại, xào cần tây 2 phút đến khi rau chín tới, vẫn xanh và giòn.",
+    "Trút bò trở lại, đảo nhanh 30–60 giây cho hoà quyện, nêm lại cho vừa.",
+    "Tắt bếp ngay khi bò vừa chín tới (xào quá lâu bò dai, cần ra nước), rắc tiêu, ăn nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://pasgo.vn/blog/bi-quyet-lam-mon-bo-xao-can-toi-thom-ngon-kho-cuong-3667",
+      "accessed": "2026-10-31",
+      "note": "PasGo (4–5 người): bò 300 g, cần tây 200 g, tỏi tây 50 g, hành tây 1 củ, cà chua 1 quả; bò xào tái trút ra, xào rau riêng rồi trộn lại."
+    },
+    {
+      "url": "https://anthinhfood.com.vn/cach-lam-thit-bo-xao-can-toi-thom-ngon-bo-duong-dam-da-bat-com/",
+      "accessed": "2026-10-31",
+      "note": "AnThinhFood (4 người): bò 200 g, cần tây 200 g, tỏi tây 5 nhánh, hành tây 1 củ, tỏi, hành tím, nước mắm 1 thìa canh, dầu."
+    },
+    {
+      "url": "https://vietfoodshop.com/thit-bo-xao-can-toi-mem-ngon-thom/",
+      "accessed": "2026-10-31",
+      "note": "VietFoodShop: bò phi lê 150 g, hành tây 1/2 củ, cần tây, tỏi tây 1–2 cây, tỏi, ớt sừng — đối chiếu thành phần (không ghi khẩu phần)."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 3 nguồn. Phân xử định lượng: thit-bo-nam 120 → 60 g và can-tay 80 → 50 g — hai nguồn ghi rõ khẩu phần đồng thuận 50–75 g bò và 40–50 g cần tây mỗi người, file cao hơn 60–140%; serving_grams 220 → 130 theo tổng dòng mới. Bất thường lớn ghi nhận chờ pha phân xử: tên món \"cần tỏi\" trong cả 3/3 nguồn là cần tây + TỎI TÂY (hành boa rô) — file không có dòng toi-tay (kho đã có ingredient này), thay bằng tỏi củ; hành tây có ở 3/3 nguồn và hành tím ở 2/3 nguồn, file đều thiếu.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

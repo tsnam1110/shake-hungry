@@ -25,7 +25,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -105,15 +105,35 @@
     }
   ],
   "recipe_steps": [
-    "Sườn chần, rửa sạch, hầm lấy nước ngọt; khổ qua bỏ ruột, cắt lát, ngâm nước muối loãng cho bớt đắng.",
-    "Cho khổ qua vào nồi nước sườn, nấu vừa chín tới để khổ qua còn xanh và giòn.",
-    "Nêm nước mắm, rắc hành lá, rau mùi và tiêu, dùng nóng."
+    "Sườn chặt khúc vừa ăn, rửa sạch, chần nước sôi 3–5 phút, đổ bỏ nước chần, rửa lại cho sạch bọt bẩn.",
+    "Khổ qua bổ đôi, bỏ ruột và màng trắng, cắt lát/khúc vừa ăn, ngâm nước muối loãng 10–15 phút, rửa lại để bớt đắng.",
+    "Cho sườn vào nồi với ~300 ml nước/khẩu phần, đun sôi, hớt bọt, hạ lửa nhỏ hầm 25–30 phút đến khi sườn mềm và nước ngọt trong.",
+    "Cho khổ qua vào, nấu lửa vừa 8–10 phút đến khi khổ qua chín mềm nhưng còn xanh, không nấu lâu hơn để tránh vàng và đắng gắt.",
+    "Nêm muối và nước mắm cho vừa ăn, nêm lại sau khi khổ qua đã ra vị đắng nhẹ.",
+    "Tắt bếp, rắc hành lá, rau mùi và tiêu xay lên mặt.",
+    "Múc ra tô, dùng nóng với cơm; canh ngon nhất khi khổ qua còn giữ màu xanh và vị đắng thanh."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://danviet.vn/3-loai-qua-mua-he-mang-nau-canh-vo-cung-ngon-mieng-bo-duong-thanh-nhiet-giai-doc-20230508195016886-d1092491.html",
+      "accessed": "2026-10-31",
+      "note": "Dân Việt (Fb Thanh Thoa thực hiện): khổ qua rừng 300 g, sườn non 200 g; chần sườn rồi hầm trực tiếp, không dùng dầu."
+    },
+    {
+      "url": "https://thuvienso.com.vn/upload/library/511584/preview/canh-suon-heo-kho-qua-511584.pdf",
+      "accessed": "2026-10-31",
+      "note": "Knorr / Món Ngon VN 2012: sườn non 400 g, khổ qua 4 trái, hành 50 g, nước 600 ml; hầm sườn 20 phút + khổ qua 10 phút; trụng khổ qua + ngâm nước đá."
+    },
+    {
+      "url": "https://cellphones.com.vn/sforum/cach-nau-canh-kho-qua",
+      "accessed": "2026-10-31",
+      "note": "CellphoneS / Sforum: sườn non 300 g, khổ qua 3–4 trái; phi hành tím, xào sườn săn rồi mới cho nước."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Món thay thế cho canh-kho-qua-nhoi-thit vì món đó đã có trong kho.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Món thay thế cho canh-kho-qua-nhoi-thit vì món đó đã có trong kho. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 3 nguồn (không nguồn nào ghi số khẩu phần — quy theo mẻ gia đình 4). Phân xử định lượng: GIỮ NGUYÊN TOÀN BỘ — sườn 80 g nằm trong dải nguồn 67–100 g, khổ qua 120 g khớp cận dưới của 2/3 nguồn; đây là món khớp nguồn tốt nhất nhóm canh đợt 3. Bất thường ghi nhận chờ pha phân xử: dòng dau-an 5 g không gắn với bước nào và 2/3 nguồn không dùng dầu (chần sườn hầm trực tiếp) — đề xuất bỏ dòng dầu hoặc thêm bước xào sườn theo nguồn thiểu số; nước mắm chỉ 1/3 nguồn liệt kê (hai nguồn còn lại nêm muối + hạt nêm), giữ và ghi nhận.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

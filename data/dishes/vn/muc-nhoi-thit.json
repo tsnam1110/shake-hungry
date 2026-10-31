@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "chien",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -66,7 +66,7 @@
     },
     {
       "ingredient_slug": "hanh-tim",
-      "quantity": 8,
+      "quantity": 14,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -98,15 +98,40 @@
     }
   ],
   "recipe_steps": [
-    "Mộc nhĩ và nấm hương ngâm nở, băm nhỏ; trộn với thịt xay, hành, trứng, nước mắm và tiêu.",
-    "Nhồi nhân vào thân mực, ghim đầu bằng tăm.",
-    "Chiên mực lửa vừa đến khi vàng đều và nhân chín, cắt khoanh khi ăn."
+    "Mực ống rút nang, bỏ túi mực và mắt, lột màng, rửa nước muối loãng, để ráo; tách đầu/râu, băm nhỏ râu để trộn nhân.",
+    "Mộc nhĩ và nấm hương ngâm nở, rửa sạch, băm nhỏ.",
+    "Trộn thịt xay với râu mực băm, mộc nhĩ, nấm hương, hành tím băm, trứng gà, nước mắm và tiêu; quết đều tay 2–3 phút cho nhân dẻo, kết dính, ướp 15 phút.",
+    "Nhồi nhân vào thân mực tới khoảng 4/5 ống — không nhồi chặt, nhân nở khi chiên sẽ làm rách mực; ghim miệng bằng tăm, khía một đường nhỏ ở đuôi cho thoát hơi.",
+    "Làm nóng dầu trong chảo (dầu chiên không kê dòng riêng theo quy ước Phương án A), cho mực vào chiên lửa vừa 12–15 phút, trở đều tay đến khi thân mực vàng đều các mặt.",
+    "Kiểm tra chín: cắt thử một khoanh thấy nhân hết hồng, chắc và không ra nước đục; vớt ra để ráo dầu 2–3 phút.",
+    "Rút tăm, cắt khoanh 1,5–2 cm, bày đĩa, ăn nóng với cơm. (Biến thể an toàn: hấp mực 10 phút cho nhân định hình trước khi chiên.)"
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.cet.edu.vn/cach-lam-mon-muc-nhoi-thit-chien",
+      "accessed": "2026-10-31",
+      "note": "CET: bản chiên giòn — mực 1 kg, thịt heo 200 g, nấm hương + mộc nhĩ, có miến, hành tây, hành lá; hấp 20 phút rồi mới chiên. Bản chiên nước mắm: mực 500 g/thịt ba chỉ 300 g."
+    },
+    {
+      "url": "https://vaobepwiki.com/cach-lam-com-muc-xao-thit-thom-ngon-dam-da-cho-ca-nha/",
+      "accessed": "2026-10-31",
+      "note": "Vào Bếp Wiki (4 phần ăn): mực 400 g, thịt bằm 200 g, hành tím 5 củ, nấm mèo khô; chiên trực tiếp lửa vừa 15–20 phút."
+    },
+    {
+      "url": "https://thegioiamthuc.com/mon-muc-nhoi-thit-chien/",
+      "accessed": "2026-10-31",
+      "note": "Thế Giới Ẩm Thực: mực ống 500 g, thịt ba rọi 500 g, nấm mèo, hành tím, hành lá; chiên trực tiếp lửa nhỏ."
+    },
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/3-cach-lam-muc-nhoi-thit-kho-ngon-dam-da-hap-dan-cho-bua-com-08160",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH (biến thể kho, đối chiếu nhân): rim nước dừa 3 người — mực 300 g, thịt 300 g, nấm mèo 10 g; kho me 2 người — thịt xay 100 g, trứng gà chỉ lòng đỏ, miến 10 g, nấm hương, hành tím 30 g; hấp chín 70–80% rồi chiên."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 8 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).]",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 8 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).] Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 4 nguồn. Phân xử định lượng: hanh-tim 8 → 14 g — hai nguồn định lượng được (Vào Bếp Wiki ~13 g, ĐMX ~15 g/khẩu phần) đều cao hơn file ~40–47%; mực 150 g giữ (đầu trên của dải nguồn 100–150); thịt xay 80 g giữ (nguồn chia rẽ 50–100, không đồng thuận một chiều); mộc nhĩ/nấm hương 5 g khớp ĐMX. Bất thường ghi nhận: miến có ở 2/4 nguồn (CET — chính biến thể chiên giòn; ĐMX kho me ~5 g khô/khẩu phần), file thiếu; dòng trung-ga căn cứ yếu — chỉ 1/4 nguồn có trứng (biến thể kho me, chỉ lòng đỏ), 3 nguồn chiên trực tiếp không dùng trứng — chờ pha phân xử quyết giữ/bỏ.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

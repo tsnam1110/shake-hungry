@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "hap",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -34,7 +34,7 @@
   "ingredients": [
     {
       "ingredient_slug": "com-xanh",
-      "quantity": 60,
+      "quantity": 40,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -42,7 +42,7 @@
     },
     {
       "ingredient_slug": "thit-lon-xay",
-      "quantity": 85,
+      "quantity": 100,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -82,16 +82,35 @@
     }
   ],
   "recipe_steps": [
-    "Trộn cốm với thịt xay (giò sống), nêm nước mắm, tiêu; để cốm nở mềm.",
-    "Nặn viên dẹt, hấp chín.",
-    "Chiên sơ cho mặt ngoài hơi vàng (tùy chọn).",
-    "Ăn nóng với cơm hoặc bún đậu."
+    "Nếu dùng cốm khô, ngâm nước ấm 10–15 phút cho nở mềm, vẩy thật ráo; cốm tươi chỉ vẩy ít nước, không rửa để giữ mùi thơm.",
+    "Trộn thịt xay (dòng thit-lon-xay) với nước mắm và tiêu, quết đều tay 3–5 phút đến khi hỗn hợp dẻo, kết dính.",
+    "Cho cốm vào trộn nhẹ tay cho hạt cốm quyện đều mà không nát; bọc kín, để ngăn mát 30 phút cho hỗn hợp se lại, dễ nặn.",
+    "Thoa ít dầu ăn (dòng dau-an) lên tay, nặn thành miếng dẹt dày ~1,5 cm, đặt lên lá chuối/lá sen đã quét dầu.",
+    "Hấp lửa vừa 12–15 phút đến khi chả se mặt, ấn vào đàn hồi và chín đều bên trong; lấy ra để nguội bớt.",
+    "Đun dầu nóng, chiên chả đã hấp 2–3 phút mỗi mặt đến khi vàng đều, vớt ra thấm dầu (dầu chiên chính do engine mô hình hoá).",
+    "Cắt miếng vừa ăn, dùng nóng với cơm hoặc bún đậu; ăn ngay khi vỏ còn giòn, trong còn dẻo thơm mùi cốm."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://yeubepnuc.com/2025/06/24/cach-lam-cha-com/",
+      "accessed": "2026-10-31",
+      "note": "Yêu Bếp Núc — Hồng Nhung: giò sống 250 g + thịt nạc vai 150 g + cốm tươi 100 g = mẻ 500 g; hấp rồi chiên là bước chuẩn."
+    },
+    {
+      "url": "https://thuvienso.com.vn/upload/library/509310/preview/cha-com-509310.pdf",
+      "accessed": "2026-10-31",
+      "note": "Knorr / Tạp chí Món Ngon VN 2012: giò sống 100 g + thịt nạc xay 200 g + cốm xanh 150 g (100 trộn + 50 lăn ngoài) + 1 trứng gà; chiên trực tiếp."
+    },
+    {
+      "url": "https://cdn.tailieu.vn/files/samples/2011/20111101/huongdanhoctot_7/cha_co_m_thom_ngon_cho_bu_a_com_cuo_i_tua_n_1706.pdf",
+      "accessed": "2026-10-31",
+      "note": "tailieu.vn (blog gia đình): giò sống 250 g + thịt xay 150 g + cốm 100 g = mẻ 500 g."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu).",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu). Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 3 nguồn (không nguồn nào ghi số khẩu phần — chuẩn hoá về khẩu phần 140 g như file). Phân xử định lượng: com-xanh 60 → 40 g (hai nguồn quy đổi 28 g, nguồn còn lại 47 g; 40 g đưa tỉ lệ cốm về ~29%, trong dải nguồn 20–33%) và thit-lon-xay 85 → 100 g (tổng thịt quy đổi của nguồn 93–112 g/khẩu phần). Bất thường lớn ghi nhận chờ pha phân xử: 3/3 nguồn tách riêng GIÒ SỐNG + thịt xay (giò chiếm 33–62% phần thịt) — kho chưa có ingredient giò sống (cùng đầu mối với bun-moc ở Phần A), dòng thịt hiện tại là proxy gộp; method hap giữ nguyên nhưng bước đã ghi chiên sau hấp là bước chuẩn theo 3/3 nguồn — việc đổi method sang chien cần quyết ở pha phân xử vì đổi mô hình dầu của engine.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

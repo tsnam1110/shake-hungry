@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "xao",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -34,7 +34,7 @@
   "ingredients": [
     {
       "ingredient_slug": "muop-dang",
-      "quantity": 110,
+      "quantity": 75,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -74,15 +74,35 @@
     }
   ],
   "recipe_steps": [
-    "Khổ qua bỏ ruột, thái lát mỏng, ngâm nước muối loãng; trứng đánh tan.",
-    "Xào khổ qua với dầu vừa chín tới, nêm nước mắm.",
-    "Đổ trứng vào đảo đều cho trứng bám mặt, rắc hành lá, dùng nóng."
+    "Khổ qua bổ đôi, nạo sạch ruột và màng trắng, thái lát mỏng khoảng 2 mm.",
+    "Ngâm lát khổ qua trong nước muối loãng (hoặc nước đá có muối) 10 phút, rửa lại, để thật ráo.",
+    "Đánh tan trứng với nước mắm, để riêng; hành lá cắt khúc ngắn.",
+    "Đun dầu ăn (dòng dau-an) nóng ở lửa lớn.",
+    "Cho khổ qua vào xào nhanh 2–3 phút đến khi lát chuyển xanh trong, còn giòn, nêm vừa ăn.",
+    "Rưới trứng đều khắp chảo, đảo nhanh 30–60 giây cho trứng vừa đông, bám thành lớp mỏng quanh khổ qua, không xào khô.",
+    "Cho hành lá, đảo một lượt rồi tắt bếp ngay, dọn nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://cookbeo.com/recipes/kho-qua-xao-trung",
+      "accessed": "2026-10-31",
+      "note": "Cookbeo (4 khẩu phần): khổ qua ~300 g, trứng 4–5 quả, dầu 2 thìa canh; chần khổ qua qua nước sôi rồi dội nước lạnh trước khi xào."
+    },
+    {
+      "url": "https://bepxua.vn/cach-lam-kho-qua-xao-trung-cha-bong/",
+      "accessed": "2026-10-31",
+      "note": "Bếp Xưa (4 người, bản rắc chà bông): khổ qua 300 g, trứng 3 quả, dầu 1 thìa canh, nước mắm 1 thìa canh."
+    },
+    {
+      "url": "http://giavihanhphuc.com/kho-qua/kho-qua-xao-trung-nguyen-thuy-nhu-amp",
+      "accessed": "2026-10-31",
+      "note": "Gia Vị Hạnh Phúc — Chef Nguyễn Thụy Như (cơm văn phòng, không ghi khẩu phần): khổ qua 3 trái, trứng 1 quả, hành lá 50 g, dầu 30 g — tỉ lệ trứng rất thấp, là ngoại lệ thương mại, chỉ đối chiếu kỹ thuật."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 3 nguồn. Phân xử định lượng: muop-dang 110 → 75 g — cả hai nguồn ghi rõ khẩu phần đều đúng 75 g/khẩu phần (lệch −32%); trứng 50 g giữ (Cookbeo 50–62,5 g khớp, nguồn còn lại thấp hơn nhưng không đồng thuận); dầu 8 g và nước mắm 4 g khớp nguồn. Bất thường ghi nhận: tỏi và/hoặc hành tím phi thơm có ở 3/3 nguồn, file không có dòng nào; kỹ thuật chần khổ qua trước khi xào có ở 2/3 nguồn, file chỉ ngâm muối — bước giữ cách của file, ghi nhận biến thể chần.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

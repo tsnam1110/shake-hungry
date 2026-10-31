@@ -106,7 +106,7 @@
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nghiên cứu Mức 2 đợt 3 (LV2-003, 2026-10-31): GIỮ Mức 1 — không mở kiểm chứng được nguồn nào do provider chặn 429 (chỉ có trích đoạn tìm kiếm). Bất thường ghi nhận từ trích đoạn, chờ mở xác nhận ở pha phân xử: trứng gà + bột năng/bột mì làm chất kết dính có ở 3/4 nguồn, file thiếu cả hai; mọi nguồn đều chiên/áp chảo viên cho se vàng trước khi sốt trong khi bước của file thả thẳng vào sốt; bước của file nhắc tiêu nhưng danh sách nguyên liệu không có dòng tiêu.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

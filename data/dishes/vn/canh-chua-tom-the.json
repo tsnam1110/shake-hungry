@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -58,7 +58,7 @@
     },
     {
       "ingredient_slug": "dau-bap",
-      "quantity": 30,
+      "quantity": 15,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -66,7 +66,7 @@
     },
     {
       "ingredient_slug": "gia-do",
-      "quantity": 25,
+      "quantity": 10,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -138,15 +138,35 @@
     }
   ],
   "recipe_steps": [
-    "Tôm thẻ rửa sạch, để nguyên vỏ; me dầm với nước nóng lấy nước chua.",
-    "Phi tỏi, đun sôi nước me, cho tôm vào nấu vừa đỏ vỏ, thêm dứa, cà chua và đậu bắp.",
-    "Nêm nước mắm và đường cho chua ngọt hài hoà, cho giá, tắt bếp rồi thêm rau ngổ, ngò gai và ớt."
+    "Tôm thẻ rửa sạch, cắt bỏ râu và chân, để nguyên vỏ, để ráo.",
+    "Me dầm với nước nóng, lọc lấy nước cốt bỏ hạt; cà chua bổ múi cau, dứa thái lát, đậu bắp cắt xéo.",
+    "Phi tỏi với dầu ăn (dòng dau-an) cho vàng, vớt tỏi phi để riêng; dùng dầu đó xào cà chua và dứa 2 phút cho mềm.",
+    "Đổ ~300 ml nước/khẩu phần cùng nước cốt me vào, đun sôi, nêm trước nước mắm và đường cho nền chua–ngọt.",
+    "Nước sôi bùng, cho tôm vào nấu 2–3 phút đến khi tôm cong, vỏ đỏ đều là vừa chín; cho đậu bắp vào nấu thêm 1–2 phút.",
+    "Cho giá vào, sôi lại thì tắt bếp ngay để giá còn giòn; nêm lại lần cuối.",
+    "Múc ra tô, rắc rau ngổ, ngò gai, ớt lát và tỏi phi lên mặt, dùng nóng với cơm hoặc bún."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://yummyday.vn/canh-chua-tom-603",
+      "accessed": "2026-10-31",
+      "note": "YummyDay (tôm đất): tôm 200 g, cà chua 1 quả, dứa 1/4 quả, đậu bắp 3 trái, giá 20 g, me 5 g, tỏi 5 g, nước 1 L (không ghi khẩu phần, quy theo mẻ 2)."
+    },
+    {
+      "url": "https://lib.vn/upload/library/245351/preview/canh-chua-tom-245351.pdf",
+      "accessed": "2026-10-31",
+      "note": "Knorr / Món Ngon VN 2012 (tôm sú): tôm 300 g, cà chua 2 trái, đậu bắp 4 trái, giá 30 g, thơm 1/4 trái, bạc hà 1 cây, nước 750 ml (không ghi khẩu phần, quy theo mẻ 4)."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/15606931",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Emily Luu (cho 2 người, ghi rõ): 4–5 con tôm sú to, cà chua 1 trái, me 1 gói, đậu bắp, bạc hà."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 3 nguồn (nguồn dùng tôm sú/tôm đất — cùng khuôn canh chua tôm Nam Bộ). Phân xử định lượng: gia-do 25 → 10 g và dau-bap 30 → 15 g — cả hai nguồn có định lượng đều thấp hơn file 60–70% ở giá và ~2 lần ở đậu bắp; tôm 80 g, cà chua 60 g, dứa 40 g giữ nguyên (khớp dải nguồn); me 10 g giữ (nguồn phân tán hai chiều). Bất thường ghi nhận: bạc hà/dọc mùng có ở 3/3 nguồn mà file thiếu hẳn — kho chưa có ingredient này (đầu mối biên soạn nguyên liệu mới, cùng nhóm mẻ/giấm bỗng/nước màu/giò sống).",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

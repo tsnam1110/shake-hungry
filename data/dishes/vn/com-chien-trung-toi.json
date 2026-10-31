@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "chien",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -54,7 +54,7 @@
     },
     {
       "ingredient_slug": "toi",
-      "quantity": 5,
+      "quantity": 15,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -62,7 +62,7 @@
     },
     {
       "ingredient_slug": "dau-an",
-      "quantity": 3,
+      "quantity": 8,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -86,15 +86,35 @@
     }
   ],
   "recipe_steps": [
-    "Cơm nguội tơi hạt; trứng đánh tan; tỏi băm nhỏ. Tổng thời gian làm ~12 phút.",
-    "Phi thơm tỏi với dầu, cho cơm vào chiên lửa lớn 4–5 phút cho hạt cơm săn, đẩy cơm sang bên, đổ trứng vào đảo nhanh cho trứng quyện cơm.",
-    "Nêm nước tương, rắc hành lá, ăn nóng."
+    "Cơm nguội bóp tơi từng hạt (cơm để tủ lạnh càng tốt); trứng đánh tan; tỏi băm, chia làm 2 phần; hành lá cắt nhỏ.",
+    "Làm nóng chảo lửa vừa, cho một nửa dầu ăn vào tráng trứng mỏng 1–2 phút; trứng vừa chín tới thì cuộn, cắt sợi, để riêng.",
+    "Thêm phần dầu còn lại, hạ lửa vừa–nhỏ, phi tỏi đến vàng nhạt và thơm — tỏi chuyển vàng sậm rất nhanh, vớt ra ngay kẻo đắng.",
+    "Tăng lửa lớn, cho cơm vào chiên 4–5 phút, đảo/xóc đều đến khi hạt cơm tơi, săn mặt, nghe tiếng lách tách nhẹ.",
+    "Rưới nước tương quanh thành chảo cho bốc hơi thơm, đảo đều.",
+    "Trả tỏi phi và trứng sợi vào, đảo 30 giây; nếm lại.",
+    "Tắt bếp, rắc hành lá, dọn ra đĩa ăn nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/16146975",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Huỳnh Phát (3 người): 3 chén cơm nguội, trứng 2 quả, tỏi băm 2 thìa canh, dầu 2,5 thìa canh, nước mắm 2 thìa canh."
+    },
+    {
+      "url": "https://truongnauan.com/com-chien-toi-trung/",
+      "accessed": "2026-10-31",
+      "note": "Trường Nấu Ăn (3–4 khẩu phần, bản chuyên về tỏi): gạo 500 g, trứng 2 quả, tỏi tươi 100 g + tỏi bột 10 g, hành lá 10 g. (Văn bản gần trùng công thức Hướng Nghiệp Á Âu — tính là một dòng nguồn.)"
+    },
+    {
+      "url": "https://noiphodien123.vn/com-chien-trung-5-new.html",
+      "accessed": "2026-10-31",
+      "note": "Nồi Phở Điện 123 / Quang Huy (biến thể cơm chiên trứng tỏi): cơm nguội 1 bát, trứng 2 quả, tỏi 1 củ, dầu 1 thìa canh, nước mắm 1 thìa canh."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Cơm chiên thuộc nhóm tinh bột đã nấu chín rán lại: dầu chiên KÊ trong công thức theo đúng thiết kế CALC-004 (com-trang có hệ số hấp thụ 0 — dầu kê là cơ chế tính dầu duy nhất, không tính trùng); lượng dầu kê 3 g theo tiền lệ com-chien-trung-muoi của kho (rà soát G6).",
+  "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Cơm chiên thuộc nhóm tinh bột đã nấu chín rán lại: dầu chiên KÊ trong công thức theo đúng thiết kế CALC-004 (com-trang có hệ số hấp thụ 0 — dầu kê là cơ chế tính dầu duy nhất, không tính trùng); lượng dầu kê 3 g theo tiền lệ com-chien-trung-muoi của kho (rà soát G6). Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 3 nguồn. Phân xử định lượng: toi 5 → 15 g — hai nguồn chuyên biến thể tỏi đồng thuận tỏi phải cao hơn file ít nhất gấp đôi (tỏi là nguyên liệu định danh của món), lấy cận dưới 15 g; dau-an 3 → 8 g — mọi nguồn đều dùng ~7–12 g/khẩu phần để phi tỏi + chiên cơm, và khác với dầu chiên ngập của Phương án A, dầu cơm chiên là nguyên liệu ăn vào trực tiếp nên ghi đè ghi chú cũ của file về mức 3 g; trứng 50 g và cơm 200 g giữ nguyên (không đồng thuận đổi — biến thể tỏi dùng tỉ lệ trứng/cơm còn cao hơn file). Bất thường ghi nhận: 3/3 nguồn nêm nước mắm, 0 nguồn dùng nước tương như file — giữ nước tương của file và ghi nhận để pha phân xử quyết có đổi gia vị nêm hay không.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

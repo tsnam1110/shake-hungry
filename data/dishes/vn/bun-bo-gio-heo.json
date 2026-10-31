@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -126,15 +126,39 @@
     }
   ],
   "recipe_steps": [
-    "Hầm giò heo và thịt bò với sả đập dập, hành tây đến khi mềm, vớt bọt cho nước trong.",
-    "Nêm nước mắm, đường, muối vừa ăn, thả ớt tươi.",
-    "Trụng bún, xếp giò heo và thịt bò thái lát, chan nước dùng, rắc hành lá, rau mùi."
+    "Giò heo cạo rửa, chần sôi 3–4 phút, rửa lại; thịt bò rửa sạch, để nguyên miếng.",
+    "Hầm giò và bò với sả đập dập và hành tây ở lửa nhỏ 40–50 phút, hớt bọt thường xuyên cho nước trong; bò mềm trước thì vớt trước, ngâm nước nguội 10 phút rồi thái lát mỏng.",
+    "Nêm nước dùng bằng nước mắm, muối, đường cho vừa miệng (mắm ruốc là dòng đang thiếu — xem ghi chú bất thường).",
+    "Giò chín đạt khi xiên đũa qua da dễ dàng nhưng khoanh giò chưa rã; vớt ra để riêng.",
+    "Trụng bún qua nước sôi, cho vào tô; xếp giò, thịt bò, hành tây thái mỏng, hành lá, rau mùi, ớt lát.",
+    "Chan nước dùng đang sôi, ăn nóng kèm rau sống và sa tế sả ớt nếu thích cay."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/25120402",
+      "accessed": "2026-10-31",
+      "note": "Cookpad VN — Bòn Bon (3 tô): giò heo 300 g, bò tái 150 g, bún 500 g, chả bì 100 g, sả, hành tây, mắm ruốc 2 thìa cà phê (pha lắng lấy nước trong)."
+    },
+    {
+      "url": "https://tripi.vn/blog/vi/kinh-nghiem-hay/kham-pha-cong-thuc-nau-bun-bo-hue-gio-heo-dam-da-huong-vi-hue-voi-nhung-nguyen-lieu-tuoi-ngon-va-cach-che-bien-chuan-chinh-mon-an-nay-hua-hen-mang-tripi",
+      "accessed": "2026-10-31",
+      "note": "Tripi (syndication TGDD, 3–4 người): giò 800 g, bắp + nạm 1000 g, bún 2000 g (số bún phi thực tế — chỉ dùng định tính), mắm ruốc 100 g, huyết, sả, gừng; hầm bò và giò tách thời gian."
+    },
+    {
+      "url": "https://cookpad.com/eng/recipes/13580410",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Trang Z.: giò 1–2 cái, nạm/bắp 800 g + xương bò 1 kg (cả nồi ~4 L), sả 5 cây, mắm ruốc Huế 1 thìa canh, gừng, hành tím, tỏi, sa tế."
+    },
+    {
+      "url": "https://cdn.tailieu.com/attachment/2022/1014/20221014160257634925c105da6_cach-nau-bun-gio-heo.pdf",
+      "accessed": "2026-10-31",
+      "note": "tailieu.com (PDF sao công thức Điện Máy XANH): giò 1 kg, bắp bò 300 g, bún 1 kg, huyết 200 g, chả lụa 300 g, mắm ruốc 1/2 thìa canh, sả, hành tây, gừng (cả mẻ, không ghi khẩu phần)."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt DISH-004 đợt 2 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt DISH-004 đợt 2 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 4 nguồn. Phân xử định lượng: GIỮ NGUYÊN TOÀN BỘ — giò 90 g so với nguồn tin cậy nhất 100 g lệch +11%, bò bày tô 50 g khớp chính xác nguồn, bún 200 g so với 167 g lệch dưới ngưỡng (số thịt/bún theo cả nồi hầm của các nguồn còn lại là ngoại lệ không dùng phân xử). Bất thường lớn ghi nhận chờ pha phân xử: mắm ruốc — nguyên liệu định danh bún bò Huế — có ở 4/4 nguồn (~4 g/khẩu phần, pha nước lắng lọc lấy nước trong) mà file THIẾU HẲN (kho đã có ingredient mam-ruoc); huyết luộc (2 nguồn, tuỳ chọn ~30 g), chả lụa/chả bì (3 nguồn, tuỳ chọn ~25 g) và gừng cho nước dùng (3 nguồn) cũng thiếu.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

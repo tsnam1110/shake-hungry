@@ -98,7 +98,7 @@
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Method xao theo tiền lệ nhóm rang chảo ít dầu. Lá chanh tùy chọn lượng nhỏ (slug chưa có số — xem ghi chú ga-kho-la-chanh).",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Method xao theo tiền lệ nhóm rang chảo ít dầu. Lá chanh tùy chọn lượng nhỏ (slug chưa có số — xem ghi chú ga-kho-la-chanh). Nghiên cứu Mức 2 đợt 3 (LV2-003, 2026-10-31): GIỮ Mức 1 — dù đã mở kiểm chứng 3 nguồn (Điện Máy XANH; Nấu Ăn Không Khó; Bếp Xưa) vì bất thường hệ thống của nhóm \"rang muối\" cần chủ dự án phân xử một lần: cả 3/3 nguồn đều chiên ngập dầu sau khi lăn bột năng/bột bắp rồi xóc bột muối (gạo nếp + đậu xanh rang xay + muối hột), trong khi file để cooking_method xao ít dầu và thiếu toàn bộ dòng bột muối + bột áo + gừng chiên sợi; đùi gà 180 g cũng cao hơn nguồn ghi rõ khẩu phần duy nhất (133 g/người) +35% nhưng chưa đủ 2 nguồn có khẩu phần để phân xử.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -90,7 +90,7 @@
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Method xao theo tiền lệ be-be-rang-muoi (rang chảo với ít dầu).",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Method xao theo tiền lệ be-be-rang-muoi (rang chảo với ít dầu). Nghiên cứu Mức 2 đợt 3 (LV2-003, 2026-10-31): GIỮ Mức 1 — dù đã mở kiểm chứng 3 nguồn (Cookpad; Blog Ăn Ngon; Hải Sản Online) vì cùng bất thường hệ thống nhóm \"rang muối\" như ga-rang-muoi-sa: 2/3 nguồn chiên tôm sau khi xóc bột năng/bột chiên giòn (1 nguồn có trứng) rồi mới xóc bột muối gạo/đậu, file rang trực tiếp với 6 g dầu và method xao; tôm 150 g khớp dải nguồn nên phần định lượng không vấn đề — chờ phân xử kỹ thuật/method cho cả nhóm trước khi công nhận Mức 2.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

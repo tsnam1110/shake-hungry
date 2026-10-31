@@ -25,7 +25,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -41,7 +41,7 @@
   "ingredients": [
     {
       "ingredient_slug": "ca-thac-lac",
-      "quantity": 80,
+      "quantity": 60,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -49,7 +49,7 @@
     },
     {
       "ingredient_slug": "cai-cuc",
-      "quantity": 80,
+      "quantity": 100,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -105,15 +105,40 @@
     }
   ],
   "recipe_steps": [
-    "Cá thác lác quết dai với muối, tiêu và chút dầu ăn; tần ô (cải cúc) nhặt rửa sạch.",
-    "Đun nước sôi, dùng thìa múc từng viên chả cá thả vào nồi.",
-    "Chả cá nổi lên là chín, cho tần ô vào nấu vừa chín, nêm nước mắm, rắc hành lá và gừng sợi."
+    "Tần ô nhặt bỏ gốc già, rửa nhẹ 2–3 nước, cắt khúc 4–5 cm, để ráo; hành lá cắt nhỏ, đầu hành để riêng.",
+    "Cho cá thác lác vào tô cùng muối, tiêu, đầu hành băm và dầu ăn (dòng dau-an); quết bằng muỗng theo một chiều 8–10 phút đến khi cá dẻo, quyện thành khối bóng.",
+    "Vo cá thành viên vừa ăn.",
+    "Đun ~250 ml nước/khẩu phần ở lửa lớn; nước sôi già thì thả từng viên cá vào, không đảo mạnh tay.",
+    "Hạ lửa vừa, nấu 4–5 phút; viên cá nổi lên mặt nước và đàn hồi khi ấn nhẹ là chín, hớt bọt cho nước trong.",
+    "Nêm nước mắm, nếm lại; cho tần ô vào, đảo nhẹ cho rau ngập nước, nấu thêm 1–2 phút — rau vừa mềm, còn xanh là đạt, không nấu lâu hơn.",
+    "Tắt bếp, rắc hành lá và tiêu, múc ra tô dùng nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://cachnaumonngon.com/cach-nau-canh-rau-can-o-ca-thac-lac-3-1541.html",
+      "accessed": "2026-10-31",
+      "note": "Cách Nấu Món Ngon: cá thác lác 200 g, tần ô 400 g, tỏi, dầu, nước 1 L (không ghi khẩu phần, quy theo mẻ 4)."
+    },
+    {
+      "url": "https://giadinh.suckhoedoisong.vn/canh-ca-thac-lac-rau-tan-o-thom-ngon-172181016094432583.htm",
+      "accessed": "2026-10-31",
+      "note": "Gia đình & Xã hội (SKĐS): cá 200 g, tần ô 500 g, hành băm, nước mắm (không ghi khẩu phần, quy theo mẻ 4)."
+    },
+    {
+      "url": "https://vinhhanhfood.com/cach-nau-canh-ca-thac-lac/",
+      "accessed": "2026-10-31",
+      "note": "Vinh Hạnh Food: cá 200 g, tần ô 1 bó, hành tím + hành lá (không ghi khẩu phần, quy theo mẻ 4)."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/12908547",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Hoàng Oanh (chỉ kỹ thuật): quết cá với đầu hành lá, hạt nêm, tiêu, ít dầu ăn; phi đầu hành; rau nấu ~3 phút."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 4 nguồn (3 nguồn có định lượng đều dùng đúng 200 g cá/mẻ). Phân xử định lượng: ca-thac-lac 80 → 60 g (nguồn đồng thuận ~50 g/khẩu phần theo mẻ 4, lấy 60 g chừa khả năng mẻ 3 người) và cai-cuc (tần ô) 80 → 100 g (hai nguồn 100–125 g/khẩu phần). Bất thường ghi nhận: dòng gung 3 g không nguồn nào của đúng biến thể tần ô sử dụng (gừng chỉ có ở biến thể cải bẹ xanh) — chờ pha phân xử quyết bỏ hay chuyển tuỳ chọn; hành tím có ở 2/4 nguồn, file thiếu.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

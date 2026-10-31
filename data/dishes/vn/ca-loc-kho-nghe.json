@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "kho",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -98,15 +98,40 @@
     }
   ],
   "recipe_steps": [
-    "Cá lóc cắt khúc, ướp nước mắm, bột nghệ, tiêu 15 phút.",
-    "Phi hành tím, xếp cá vào nồi, thêm ít nước nóng.",
-    "Kho lửa nhỏ 12 phút cho cá vàng nghệ, thấm vị. Món mặn nhanh: tổng thời gian nấu ~30 phút, nguyên liệu phổ thông."
+    "Cá lóc đánh vảy, bỏ ruột và chỉ máu dọc sống lưng; chà muối, rửa sạch nhớt, cắt khúc vừa ăn, để ráo.",
+    "Băm nhuyễn hành tím; hoà bột nghệ (dòng bot-nghe) với ít nước cho tan đều.",
+    "Ướp cá với nghệ, hành tím, nước mắm, đường, tiêu và ớt trong 30 phút.",
+    "Phi nhẹ phần hành và nghệ ướp với dầu (dòng dau-an) cho thơm, xếp cá vào nồi, trở nhẹ cho thịt cá săn mặt và lên màu vàng nghệ.",
+    "Thêm nước nóng xâm xấp mặt cá, đun sôi rồi hạ lửa nhỏ, đậy nắp kho liu riu 20 phút; không đảo mạnh tay để khúc cá không nát.",
+    "Mở nắp, kho tiếp 10–15 phút cho nước kho sánh keo, cá thấm vị; nêm lại vừa ăn — tổng thời gian kho 30–35 phút.",
+    "Khi khúc cá chắc, màu vàng nghệ đều, nước kho sệt bám cá thì tắt bếp, rắc thêm tiêu, dùng nóng với cơm."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://tripi.vn/blog/vi/kinh-nghiem-hay/kham-pha-bi-quyet-che-bien-mon-ca-loc-kho-nghe-thom-ngon-dam-da-ma-khong-he-co-mui-tanh-mang-den-huong-vi-tuyet-voi-cho-bua-com-gia-dinh-tripi",
+      "accessed": "2026-10-31",
+      "note": "Tripi (đăng lại Bách Hoá XANH, ghi 2–5 người): cá lóc 800 g, nghệ tươi 25 g, hành tím, ớt; ướp nước mắm/đường/tiêu 30 phút, kho 10 phút + thêm nước nóng kho tiếp 30 phút."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/1176038",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Ngọc Hoan: cá lóc, nghệ tươi giã nhuyễn, hành tím, ớt; ướp 15 phút, kho bằng nước dừa tươi xâm xấp, liu riu đến nước sánh keo."
+    },
+    {
+      "url": "https://trihung.com/blog/huong-dan-che-bien-ca-loc-kho-nghe/",
+      "accessed": "2026-10-31",
+      "note": "TriHưng: cá ~1 kg, nghệ tươi 50 g, hành tím, tỏi, ớt, nước mắm, đường, dầu; ướp 30 phút, kho 30–40 phút."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/2417547",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Hoàng Thị Tố Hà (Huế): cá lóc đồng 350 g, nghệ tươi giã hoặc bột nghệ 1 thìa canh, nước mắm, đường, dầu, ớt bột; ướp 30 phút, kho riu đến cạn, nước keo."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 4 nguồn. Phân xử định lượng: GIỮ NGUYÊN — cá 160 g khớp mốc 5 người của nguồn Tripi, các nguồn còn lại không ghi khẩu phần; nước mắm/đường/dầu/hành tím/ớt đều nằm trong khoảng tỉ lệ nguồn. Hai bất thường ghi nhận: (1) nghệ — 3/4 nguồn dùng nghệ tươi giã (5–8 g tươi/khẩu phần), file dùng bot-nghe 2 g; bột khô cô đặc hơn khoảng 3 lần nên độ mạnh tương đương, nhưng đúng nguyên liệu đa số là nghệ tươi (kho đã có ingredient nghe-tuoi) — chờ pha phân xử quyết đổi dòng hay giữ; (2) thời gian kho của file cũ (12 phút, gắn nhãn mặn nhanh) sai lệch lớn so với cả 3 nguồn có ghi thời gian (30–40 phút) — bước đã viết lại theo nguồn, nhãn \"mặn nhanh\" của món cần xem lại khi biên tập phân loại.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

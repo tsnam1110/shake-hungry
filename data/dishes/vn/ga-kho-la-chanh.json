@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "kho",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -90,15 +90,35 @@
     }
   ],
   "recipe_steps": [
-    "Đùi gà chặt miếng, ướp nước mắm, đường, gừng 15 phút.",
-    "Phi hành tím, cho gà vào đảo săn, thêm ít nước nóng.",
-    "Kho lửa nhỏ 15 phút, thả lá chanh thái chỉ vào đảo đều, tắt bếp. Món mặn nhanh: tổng thời gian nấu ~30 phút, nguyên liệu phổ thông."
+    "Đùi gà rửa với muối và ít gừng đập dập để khử mùi, rửa lại, để ráo, chặt miếng vừa ăn.",
+    "Ướp gà với nước mắm, đường, hành tím băm và gừng thái sợi khoảng 15–20 phút.",
+    "Đun dầu ăn (dòng dau-an) nóng, cho gà đã ướp vào đảo lửa vừa–lớn 5–7 phút đến khi thịt săn, mặt ngoài xém nhẹ và tươm nước.",
+    "Thêm ít nước nóng xâm xấp nửa mặt thịt, đậy nắp, hạ lửa nhỏ kho khoảng 15 phút.",
+    "Mở nắp, đảo đều, kho tiếp 5–10 phút đến khi nước kho sánh lại, thịt mềm, đũa xiên qua dễ dàng (tổng kho 20–25 phút).",
+    "Thả lá chanh thái chỉ vào, đảo đều, đậy nắp thêm khoảng 1 phút cho dậy mùi rồi tắt bếp — không kho lâu hơn để tránh đắng.",
+    "Để nghỉ 2–3 phút, dọn nóng với cơm; rắc thêm ít lá chanh tươi thái chỉ lên mặt nếu thích."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/12271890",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Nguyễn Hoàng Yến (3 người): gà 0,5 kg, nước mắm 1 thìa canh, đường 1 thìa cà phê, muối, lá chanh + sả + củ nén + ớt (phong cách miền Trung); lá chanh trộn sau khi kho xong."
+    },
+    {
+      "url": "https://www.bluestone.com.vn/blogs/vao-bep/ga-kho-la-chanh",
+      "accessed": "2026-10-31",
+      "note": "BlueStone (nguồn video Bếp Vợ Đậu): nửa con gà ta, 6 lá chanh, hành tím; gia vị chỉ muối + bột ngọt; kho ~20 phút không thêm nước, lá chanh cho cuối — cảnh báo cho lá chanh sớm bị đắng."
+    },
+    {
+      "url": "https://toyenxin.com/blog-1/cach-kho-ga-la-chanh-ngon-vi-cb.html",
+      "accessed": "2026-10-31",
+      "note": "ToYenXin (trang tổng hợp): gà nguyên con 1,2–1,5 kg, lá chanh 10–15 lá, gừng, hành tím, tỏi, nước mắm, đường; kho 30–45 phút, lá chanh cho một nửa lúc ướp, một nửa lúc cuối."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Lá chanh là gia vị thơm lượng rất nhỏ và slug la-chanh chưa có số dinh dưỡng (hồ sơ null đã có từ trước) — để dòng tùy chọn (is_optional) theo tiền lệ ngo-gai trong kho: món vẫn tính được đầy đủ phần chính, không bị chặn vì lá thơm.",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Lá chanh là gia vị thơm lượng rất nhỏ và slug la-chanh chưa có số dinh dưỡng (hồ sơ null đã có từ trước) — để dòng tùy chọn (is_optional) theo tiền lệ ngo-gai trong kho: món vẫn tính được đầy đủ phần chính, không bị chặn vì lá thơm. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 3 nguồn. Phân xử định lượng: GIỮ NGUYÊN TOÀN BỘ — gà 180 g so với nguồn ghi rõ khẩu phần ~167 g lệch −7%; nước mắm/đường giữa các nguồn trải rất rộng (biến thể chỉ muối của BlueStone đến ~10 g của ToYenXin), không đồng thuận một chiều. Sửa kỹ thuật trong bước: thời gian kho của file cũ (15 phút) ngắn hơn mọi nguồn — bước đã ghi tổng 20–25 phút; điểm đồng thuận mạnh 3/3 nguồn là lá chanh thái chỉ cho vào cuối, file đã đúng hướng này. Bất thường ghi nhận: tiêu và tỏi có ở 2/3 nguồn, file không có; sả/củ nén/ngũ vị hương của nguồn Cookpad là biến thể miền Trung — file gắn vùng Bắc nên không bổ sung là nhất quán.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "kho",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -42,7 +42,7 @@
     },
     {
       "ingredient_slug": "gung",
-      "quantity": 20,
+      "quantity": 12,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -106,15 +106,35 @@
     }
   ],
   "recipe_steps": [
-    "Vịt chặt miếng vừa ăn, ướp nước mắm cùng gừng đập dập và thái sợi.",
-    "Phi hành, tỏi thơm, cho vịt vào xào săn, thêm nước xâm xấp.",
-    "Kho lửa nhỏ đến khi vịt mềm, nước sệt; thêm ớt, rắc tiêu."
+    "Vịt chặt miếng vừa ăn, chà muối và gừng đập dập (hoặc chút rượu trắng) 10 phút để khử hôi, rửa sạch, để ráo.",
+    "Ướp vịt với một nửa gừng băm, hành tím, tỏi, nước mắm, đường và tiêu 20–30 phút.",
+    "Thắng phần đường còn lại trong nồi lửa nhỏ đến màu cánh gián nhạt (không để cháy đắng).",
+    "Cho dầu ăn (dòng dau-an) và phần hành, tỏi, gừng sợi còn lại vào phi thơm 1–2 phút.",
+    "Cho vịt vào xào lửa lớn 3–5 phút đến thịt săn, da hơi xém và ra bớt mỡ.",
+    "Thêm nước xâm xấp mặt thịt, đun sôi, hớt bọt, hạ lửa nhỏ kho liu riu 40–50 phút đến thịt mềm.",
+    "Mở nắp kho thêm 5–10 phút cho nước sệt lại, cho ớt vào, nêm lại, rắc tiêu rồi tắt bếp; thịt chín mềm nhưng không nát, nước kho sánh màu nâu."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://vinid.net/blog/bi-quyet-nau-an/cach-lam-vit-kho/",
+      "accessed": "2026-10-31",
+      "note": "VinID: thịt vịt 1/2 con (~750–900 g), gừng 1 củ, hành tím, tỏi, ớt; đường thắng nước màu, kho lửa nhỏ đến cạn; khử hôi bằng rượu + muối + gừng."
+    },
+    {
+      "url": "https://yeubepnuc.com/2025/04/29/cach-lam-vit-kho-gung-mien-bac/",
+      "accessed": "2026-10-31",
+      "note": "Yêu Bếp Núc (miền Bắc): vịt 1,5–1,8 kg, gừng 100 g, nước mắm 3 thìa canh, dầu 2 thìa canh, tỏi, hành khô, tiêu; ướp 20–30 phút, kho liu riu 40–60 phút."
+    },
+    {
+      "url": "https://amthucmuonnoi.net/cach-lam-vit-kho-gung/",
+      "accessed": "2026-10-31",
+      "note": "Ẩm Thực Muôn Nơi: thịt vịt 500 g, gừng 1 củ (nửa sợi, nửa băm), nước mắm, đường, nước màu dừa; ướp 20–30 phút, xào săn lửa lớn rồi kho lửa nhỏ đến sệt."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 3 nguồn. Phân xử định lượng: gung 20 → 12 g — quy theo 150 g vịt/khẩu phần, cả 3 nguồn đều cho gừng thấp hơn file 35–60% (~8–13 g); nước mắm 10 g giữ nguyên dù tỉ lệ nguồn thấp hơn ~2 lần, vì 2/3 nguồn còn nêm thêm mắm/muối không định lượng khi kho (ghi nhận file nghiêng mặn để pha phân xử xem lại cùng tổng muối). Sửa kỹ thuật trong bước: file cũ không thắng nước màu và không ghi thời lượng kho — bước đã bổ sung thắng đường và kho 40–50 phút theo nguồn; rượu trắng khử hôi (3/3 nguồn) là chất sơ chế không ăn vào, chỉ thể hiện trong bước, không thành dòng nguyên liệu.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

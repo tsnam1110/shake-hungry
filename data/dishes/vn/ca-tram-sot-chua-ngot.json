@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "chien",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -114,15 +114,35 @@
     }
   ],
   "recipe_steps": [
-    "Cá trắm cắt khúc, ướp muối tiêu, chiên vàng hai mặt.",
-    "Phi tỏi, xào cà chua, ớt chuông và hành tây; pha nước sốt gồm dấm, đường, nước mắm và chút bột năng.",
-    "Rưới sốt chua ngọt lên cá, đun sôi lại cho sốt sánh rồi tắt bếp."
+    "Cá trắm cắt khúc, ngâm nước muối loãng hoặc nước vo gạo 15 phút, rửa sạch, thấm khô.",
+    "Ướp khúc cá với chút muối, tiêu 10–15 phút cho săn mặt.",
+    "Chiên cá lửa vừa đến vàng đều hai mặt, thịt săn và không dính chảo khi lật; gắp ra để ráo (dầu chiên chính do engine mô hình hoá).",
+    "Dùng 3 g dầu (dòng dau-an) phi thơm tỏi.",
+    "Cho cà chua, ớt chuông, hành tây vào xào lửa vừa 3–4 phút đến khi rau củ vừa mềm, cà ra màu.",
+    "Pha dấm, đường, nước mắm với ít nước, đổ vào chảo đun sôi; hoà bột năng với nước lạnh, rót từ từ, khuấy đến khi sốt sánh trong.",
+    "Trả cá vào sốt, hạ lửa nhỏ đun 2–3 phút, rưới sốt đều hai mặt — cá thấm sốt mà vỏ còn săn là đạt; tắt bếp, dùng nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://congthucgiadinh.com/mon-an/ca-tram-sot-chua-ngot",
+      "accessed": "2026-10-31",
+      "note": "Công Thức Gia Đình: cá trắm 500 g, dứa 100 g, hành tây, ớt chuông, tỏi + gừng (tỉ lệ gừng ~3 g/100 g cá), sốt dấm/đường/nước tương tự pha, tinh bột ngô tạo sánh."
+    },
+    {
+      "url": "https://cachnaungon.com/cach-lam-ca-tram-chien-gion-sot-chua-ngot-thom-ngon-02775/",
+      "accessed": "2026-10-31",
+      "note": "Cách Nấu Ngon (đăng lại ĐMX, cho 4 người): cá 1 kg, ớt chuông 90 g, gừng 15 g, hành tím; biến thể dùng sốt chua ngọt đóng gói — chỉ đối chiếu định lượng cá/rau, không theo phần sốt."
+    },
+    {
+      "url": "https://toyenxin.com/blog-1/ca-tram-gion-sot-ca-chua-vi-cb.html",
+      "accessed": "2026-10-31",
+      "note": "ToYenXin (biến thể sốt cà chua): cá ~1 kg, cà chua 3 quả, hành tây, đường, nước mắm, giấm, tỏi; tỉ lệ cà chua/cá và đường/cá khớp file."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [Đính chính 2026-10-31 — Phương án A/QA-002: dau-an 12 g → 3 g. Chỉ giữ phần dầu cho bước phụ có thật trong công thức (phi tỏi, xào cà chua/ớt chuông/hành tây làm sốt chua ngọt) — mức 3 g/khẩu phần là định lượng chế biến cho bước phi/xào nhanh, phần dầu này ăn vào cùng nhân/sốt. Dầu chiên chính không kê nữa: đã được engine mô hình hoá theo CALC-004.]",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [Đính chính 2026-10-31 — Phương án A/QA-002: dau-an 12 g → 3 g. Chỉ giữ phần dầu cho bước phụ có thật trong công thức (phi tỏi, xào cà chua/ớt chuông/hành tây làm sốt chua ngọt) — mức 3 g/khẩu phần là định lượng chế biến cho bước phi/xào nhanh, phần dầu này ăn vào cùng nhân/sốt. Dầu chiên chính không kê nữa: đã được engine mô hình hoá theo CALC-004.] Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 3 nguồn. Phân xử định lượng: GIỮ NGUYÊN toàn bộ — chỉ 1 nguồn ghi rõ khẩu phần cho cá 250 g/khẩu phần, chưa đủ ≥2 nguồn để đổi cá 180 g (ghi nhận tín hiệu để pha phân xử xem lại); cà chua, ớt chuông, hành tây, đường, bột năng đều có ít nhất 1 nguồn ủng hộ sát tỉ lệ. Bất thường ghi nhận: gừng có ở 3/3 nguồn (khử tanh + nền sốt, ~4 g/khẩu phần) mà file thiếu hẳn — chờ pha phân xử bổ sung dòng gung; dứa chỉ 1/3 nguồn, là biến thể.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

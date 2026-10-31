@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "xao",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -54,7 +54,7 @@
     },
     {
       "ingredient_slug": "cai-ngot",
-      "quantity": 50,
+      "quantity": 100,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -118,15 +118,35 @@
     }
   ],
   "recipe_steps": [
-    "Trụng mì cho vừa mềm, để ráo; ướp thịt bò với nước tương, dầu hào, tỏi.",
-    "Xào thịt bò lửa lớn, cho rau cải, cà rốt, hành tây vào đảo nhanh.",
-    "Cho mì vào xào chung, nêm lại, dọn nóng."
+    "Trụng mì trứng trong nước sôi ~1 phút đến khi sợi vừa mềm còn dai, xả nước lạnh, để thật ráo.",
+    "Thịt bò thái mỏng, ướp nước tương, dầu hào, tỏi băm, chút đường 15 phút.",
+    "Pha sẵn sốt: dầu hào + nước tương + đường (phần còn lại) trong chén nhỏ.",
+    "Chảo thật nóng, cho dầu ăn (dòng dau-an), phi tỏi; xào bò lửa lớn 2–3 phút đến khi hết màu đỏ, còn hồng tái thì trút ngay ra đĩa.",
+    "Cùng chảo, xào cà rốt trước 1 phút, thêm cải ngọt và hành tây, đảo lửa lớn 2–3 phút đến khi rau vừa chín tới, còn giòn.",
+    "Cho mì vào chảo, rưới sốt, đảo 2–3 phút cho sợi mì thấm đều và hơi săn.",
+    "Trả thịt bò (cùng nước thịt) vào, đảo nhanh 1 phút, nêm lại, tắt bếp; dọn nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-mi-xao-bo-thay-doi-khau-vi-cho-bua-sang-01023",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH (mì gói + cải thìa, 4 người): 4 gói mì, bò 400 g, cải thìa 500 g, tỏi, hành tím; xào bò riêng, rau riêng, trộn cuối."
+    },
+    {
+      "url": "https://cookbeo.com/recipes/mi-xao-bo",
+      "accessed": "2026-10-31",
+      "note": "Cookbeo (mì tôm, 3 khẩu phần): 3 gói mì, bò 250–300 g, hành tây 170 g, cà rốt 100 g, cà chua 2 quả, rau cải 1 bó."
+    },
+    {
+      "url": "https://vietnamdiscovery.com/vietnamese-recipes/stir-fried-egg-noodle-with-beef-recipe-mi-xao-bo/",
+      "accessed": "2026-10-31",
+      "note": "VietnamDiscovery (mì trứng — cùng loại mì với file, lượng theo 1 đĩa): mì 100–150 g, bò 150 g, bắp cải 150 g, cà rốt, dầu hào 1 thìa canh, nước tương 1 thìa canh."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 3 nguồn. Phân xử định lượng: cai-ngot 50 → 100 g — cả 3 nguồn đều dùng 100–150 g rau lá/bắp cải mỗi khẩu phần (file thấp hơn 2–3 lần), lấy cận dưới 100 g; bò 90 g giữ (chỉ 1 nguồn lệch trên ngưỡng); hành tây/dầu hào/nước tương giữ (chỉ 1 nguồn định lượng lệch). Sửa kỹ thuật trong bước: file cũ xào bò và rau chung một lượt — cả 3/3 nguồn đều xào bò riêng lửa lớn, trút ra, xào rau và mì riêng, trộn lại ở cuối; bước đã viết lại theo nguồn. Bất thường nhẹ ghi nhận: cà chua và gừng ướp bò mỗi thứ chỉ 1 nguồn.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -129,7 +129,7 @@
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nghiên cứu Mức 2 đợt 3 (LV2-003, 2026-10-31): GIỮ Mức 1 — không mở kiểm chứng được nguồn nào do provider chặn 429 (4 nguồn mới ở mức trích đoạn: Điện Máy XANH; Eva; VnExpress; Cookpad). Bất thường ghi nhận từ trích đoạn, chờ mở xác nhận: cà chua có ở 4/4 nguồn (~25–30 g/khẩu phần), file thiếu hẳn; hai nguồn ghi rõ khẩu phần đều cho lòng 100 g/người, file 150 g cao hơn +50%; kỹ thuật đồng thuận là xào lòng riêng và xào dưa riêng rồi trộn cuối, file xào chung một lượt.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

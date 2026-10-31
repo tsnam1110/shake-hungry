@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "xao",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -82,15 +82,35 @@
     }
   ],
   "recipe_steps": [
-    "Bò thái mỏng ướp nước mắm, tiêu; lá lốt thái sợi to.",
-    "Phi tỏi, xào bò lửa lớn vừa tái, trút ra.",
-    "Cho lá lốt vào chảo đảo nhanh dậy mùi, trộn bò vào, tắt bếp. Món mặn nhanh: tổng thời gian nấu ~15 phút, nguyên liệu phổ thông."
+    "Bò thái mỏng ngang thớ, ướp nước mắm, tiêu và một nửa tỏi băm 15 phút.",
+    "Lá lốt rửa sạch, để ráo, xếp chồng, thái sợi to bản ~2 cm (thái nhỏ quá lá nát và đắng).",
+    "Làm nóng chảo với dầu ăn, phi tỏi vàng thơm.",
+    "Cho bò vào xào lửa lớn, đảo nhanh 2 phút đến khi thịt săn, vừa tái; trút ra đĩa.",
+    "Dùng lại chảo đang nóng, cho lá lốt vào đảo nhanh 30 giây đến khi lá vừa xịu, dậy mùi thơm nồng.",
+    "Trút bò trở lại, đảo đều 1 phút cho lá quyện thịt, nêm lại; thịt vừa chín tới là đạt.",
+    "Tắt bếp, rắc tiêu, dọn ăn nóng ngay (để lâu lá lốt thâm và mất mùi)."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://cachnaungon.com/cach-lam-thit-bo-xao-la-lot-thom-ngon-chuan-vi-14620/",
+      "accessed": "2026-10-31",
+      "note": "Cách Nấu Ngon (2 người): bò 100 g, lá lốt 20 g, tỏi, dầu hào, bơ lạt — công thức nhỏ, tỉ lệ lá/bò thấp."
+    },
+    {
+      "url": "https://memart.vn/tin-tuc/blog2/cach-lam-bo-xao-la-lot-vi-cb.html",
+      "accessed": "2026-10-31",
+      "note": "Memart (2–3 người): bò 300 g, lá lốt 100 g, hành tím 1 củ, tỏi."
+    },
+    {
+      "url": "https://toyenxin.com/blog-1/xao-thit-bo-la-lot-vi-cb.html",
+      "accessed": "2026-10-31",
+      "note": "ToYenXin (2–3 người): bò 300 g, lá lốt 100 g, hành tím 1 củ, tỏi, nước mắm 1 thìa canh."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món THAY cho ca-thu-chien-sot-ca trong kế hoạch §3.3: (1) ca-thu-sot-ca đã có trong kho là cùng món cá thu sốt cà ở dạng kho — bản chiên chỉ khác bước sơ chế, không đủ độc lập theo phép thử §3; (2) ca-thu chưa có oil_absorption_pct có nguồn nên món chiên dùng cá thu sẽ bị engine đưa nguyên liệu chính vào missing theo CALC-002. Thay bằng món bò xào nhanh cùng nhóm.",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món THAY cho ca-thu-chien-sot-ca trong kế hoạch §3.3: (1) ca-thu-sot-ca đã có trong kho là cùng món cá thu sốt cà ở dạng kho — bản chiên chỉ khác bước sơ chế, không đủ độc lập theo phép thử §3; (2) ca-thu chưa có oil_absorption_pct có nguồn nên món chiên dùng cá thu sẽ bị engine đưa nguyên liệu chính vào missing theo CALC-002. Thay bằng món bò xào nhanh cùng nhóm. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 3 nguồn. Phân xử định lượng: GIỮ NGUYÊN toàn bộ — bò 120 g nằm trong dải 100–150 g của 2 nguồn; lá lốt 20 g đang TRANH CHẤP: Memart và ToYenXin cho 33–50 g/khẩu phần nhưng hai trang tổng hợp này dùng con số giống hệt nhau (tính độc lập yếu), nguồn còn lại chỉ 10 g/khẩu phần — chưa đủ bằng chứng độc lập để đổi, ghi nhận chờ mở thêm nguồn mạnh ở pha phân xử. Bất thường ghi nhận: hành tím có ở 2/3 nguồn đã mở, file thiếu.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
