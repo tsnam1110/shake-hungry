@@ -103,7 +103,14 @@
       "note": "ToYenXin (định tính): quy trình 3 lớp bột mì → trứng → bột chiên xù; ướp muối/tiêu 15 phút; chấm mắm gừng."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/ca-ro-dong-chien-xu.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 20 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).] Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 4 nguồn. Phân xử định lượng: ca-ro-dong 180 → 250 g và trung-ga 15 → 25 g — cả hai nguồn ghi rõ khẩu phần (ĐMX, Ẩm Thực Mọi Miền) đều cho 1 kg cá/4 người = 250 g/khẩu phần; trứng 25 g khớp ĐMX và tỉ lệ trứng/cá của Memart; bot-chien-xu 25 g giữ nguyên (khớp ĐMX). serving_grams 220 → 300 theo tổng dòng mới. Bất thường ghi nhận: lớp bột mì đầu tiên của quy trình 3 lớp có ở 2/4 nguồn (Memart, ToYenXin), file và ĐMX chỉ 2 lớp trứng → bột xù; tên món \"chiên xù\" còn có nghĩa truyền thống là chiên nguyên con không bột (Ẩm Thực Mọi Miền) — file theo nghĩa tẩm bột được 3 nguồn ủng hộ, cân nhắc ghi chú phân biệt trong mô tả khi biên tập.",

@@ -132,7 +132,14 @@
       "note": "Cá kèo kho tiêu (theo Ngôi sao): cá kèo 0,5kg, ướp 30 phút với đường, nước mắm, hành tỏi ớt và tiêu, thắng nước màu rồi kho, gần cạn mới cho rau răm — đối chiếu kỹ thuật."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/ca-keo-kho-tieu.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): Đối chiếu 3 nguồn công thức đã mở kiểm chứng (xem recipe_sources). Định lượng: giữ nguyên toàn bộ. Cá kèo 150g/khẩu phần cao hơn nguồn thuần cá kèo (125g/khẩu phần) khoảng 20%, nằm trong ngưỡng 30%; nguồn thứ hai là biến thể kho chung thịt ba rọi (≈55g cá + ≈55g thịt mỗi khẩu phần) nên không đồng nhất để kết luận sửa. Ghi nhận bất thường: biến thể kho chung thịt ba rọi rất phổ biến trong các nguồn nhưng file không có thịt ba rọi — không tự thêm dòng. Bước nấu viết lại 8 bước.",

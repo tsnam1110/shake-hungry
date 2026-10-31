@@ -147,7 +147,14 @@
       "note": "Sách dạy nấu ăn (thuvienso): cá kho tộ 500g cá, 100g thịt ba rọi, ướp khoảng 1 giờ, kho riu riu đến cạn — đối chiếu định lượng theo mẻ."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/ca-kho.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): đã đối chiếu 3 nguồn công thức đã mở kiểm chứng (Cách Nấu Ngon, Bếp MiNa, sách dạy nấu ăn). Cá mỗi khẩu phần: 175g (cá chép kho riềng) so với 100g (cá diếc kho tương) — hai nguồn bất đồng >30% nên giữ nguyên ca-chep 150g; thit-lon-ba-chi 40g nằm giữa hai nguồn (50g và 30g). recipe_steps viết lại hoàn toàn thành 7 bước theo đúng hồ sơ kho riềng/tương bần của file. Không sửa phân loại; lưu ý region_code vẫn giữ 'vn' dù bộ nguyên liệu (tương bần, riềng, cá chép) thiên rõ về miền Bắc — chờ chủ dự án phân xử.",

@@ -129,7 +129,14 @@
       "note": "Xây Dựng Số: cá nục kho rim dân dã 500 g — đường trắng 1 muỗng súp, tỏi 1 tép lớn, rim 15–20 phút."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/ca-nuc-kho-rim.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — thêm tỏi 6 (3/3); đổi đường thốt nốt 8 thành đường trắng 5 (thốt nốt 0/3 nguồn ủng hộ — cùng mẫu hình với ca-doi-kho-tieu, ghi nhận ở mục bất thường hệ thống), ớt 3→5, tiêu 0,5→0,3, thêm nước màu 3 (2/3; chưa có số).]",

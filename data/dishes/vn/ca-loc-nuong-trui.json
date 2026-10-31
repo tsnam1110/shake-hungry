@@ -163,7 +163,14 @@
       "note": "Cá lóc cỡ từ 1,2kg, ướp bụng cá với rượu gừng và muối 15–20 phút, xiên nướng đến khi da khô, cháy răn nứt là chín — đối chiếu kỹ thuật nướng trui truyền thống."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/ca-loc-nuong-trui.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Nâng Mức 2 đợt 1 (2026-10-31): Đối chiếu 3 nguồn công thức đã mở kiểm chứng (xem recipe_sources). Định lượng: giữ nguyên toàn bộ. Cả 3 nguồn đều tính theo nguyên con khoảng 1–1,2kg cho cả nhà và không ghi số khẩu phần, nên không quy đổi được gram/khẩu phần đáng tin cậy để đối chiếu; giữ cá lóc 220g/khẩu phần. Ghi nhận bất thường: cả 3 nguồn đều rưới mỡ hành và rắc đậu phộng rang lên cá sau khi nướng, nhưng file chưa có hai nguyên liệu này (chỉ có hành qua rau ăn kèm) — không tự thêm dòng, chờ chủ dự án quyết. Bước nấu viết lại 8 bước.",

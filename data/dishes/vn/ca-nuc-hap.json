@@ -147,7 +147,14 @@
       "note": "Cá nục hấp cuốn rau muống và phở sắn của Bòn Bon cho 2 phần ăn: cá nục 300g (150g/khẩu phần, khớp file), gừng 10g, hấp cùng hành tây 15 phút, chấm nước mắm pha — đối chiếu định lượng."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/ca-nuc-hap.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): Đối chiếu 3 nguồn công thức đã mở kiểm chứng (xem recipe_sources). Định lượng: giữ nguyên toàn bộ. Cá nục mỗi khẩu phần ở 3 nguồn lần lượt là 125g, 200g và 150g — hai cực bất đồng >30% nên giữ 150g của file (khớp nguồn Bòn Bon); gừng và hành lá của file nằm trong khoảng các nguồn. Ghi nhận: biến thể miền Trung trong các nguồn thường ăn kèm rau muống và chấm mắm nêm, file dùng nước mắm pha và không có rau muống — coi là khác biệt biến thể, không sửa nguyên liệu. Bước nấu viết lại 7 bước.",

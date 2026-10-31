@@ -122,7 +122,14 @@
       "note": "BlueStone (theo video Vành Khuyên Lê) — cá rô kho tộ: cá rô 500–700g (3–4 con), thịt ba chỉ 100g tuỳ chọn, nước mắm 3 thìa canh, đường 1,5 thìa canh, nước dừa tươi 150–200ml; chiên sơ cá cho săn, xếp thịt lót đáy tộ, kho nhỏ lửa 40–50 phút tới sệt — đối chiếu cá/khẩu phần ở mốc cao (~143–200g)."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/ca-ro-kho-to.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nâng Mức 2 đợt 2 (2026-10-31): Đối chiếu 3 nguồn công thức đã mở kiểm chứng (xem recipe_sources; nguồn ĐMX là cá rô kho tiêu — biến thể kho cùng họ, đã ghi rõ). Định lượng: giữ nguyên toàn bộ — cá rô nguồn bất đồng nhau >30% (ĐMX 100–125g/khẩu phần so với Sức khoẻ & Đời sống mẻ 400g và Bluestone mẻ 500–700g quy đổi ~143–200g/khẩu phần) nên 160g của file nằm trong khoảng nguồn; đường, nước mắm cũng dao động theo mẻ (ĐMX ~3,5g đường/khẩu phần so với Bluestone ~6g quy đổi) nên giữ nguyên. Bất thường lớn ghi nhận, chờ pha phân xử riêng: cả 3 nguồn đều kho kèm thịt ba chỉ (100–400g/mẻ; ĐMX bản hai dùng mỡ heo 200g làm tóp mỡ) — file không có dòng thit-lon-ba-chi hay mo-heo; nguồn còn dùng nước màu/nước hàng và nước dừa tươi để kho, file tạo vị bằng đường thốt nốt và không có dòng nước dừa. Bước nấu viết lại 6 bước. Phân xử bất thường LV2-002 (Phần A, 2026-10-31): Thêm thit-lon-ba-chi 40 g — cả 3 nguồn đều kho cá rô kèm thịt ba chỉ/mỡ heo; đã mở kiểm chứng lại SKĐS ở pha này: 100 g ba chỉ cho mẻ cá 400 g, quy theo 160 g cá/khẩu phần của file = 40 g (khớp tỉ lệ thịt:cá 0,25 và tiền lệ ca-tram-kho-rieng Phần A đợt 1). Nước màu: nguồn dùng nhưng kho chưa có slug — không thêm, chờ biên soạn nguyên liệu. Nước dừa tươi: SKĐS không dùng (kho bằng nước nóng), chưa quy đổi chắc từ các nguồn còn lại — không thêm, giữ ghi nhận.",

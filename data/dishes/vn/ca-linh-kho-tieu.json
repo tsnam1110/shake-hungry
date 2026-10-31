@@ -137,7 +137,14 @@
       "note": "Nước Mắm An Toàn: cá linh kho tiêu miền Tây — thắng nước màu trước, kho đến khi keo lại."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/ca-linh-kho-tieu.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — cá linh 150→75 và serving 200→130 (cá linh khẩu phần nhỏ theo nguồn; bằng chứng khẩu phần của món này mỏng — 1 họ nguồn ghi yếu, đã ghi nhận), thêm dầu ăn 8 (3/3) và nước màu 5 (2/3; nước màu chưa có số — dòng chờ theo tiền lệ Phần A), hành tím 8→3.]",
