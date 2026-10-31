@@ -90,7 +90,14 @@ Trong SPA admin hiện có (antd 6 + React 19), thêm mục **Hoa quả** tách 
 
 ## 7. Phạm vi giai đoạn 1 — toàn bộ hoa quả lưu hành tại VN (gồm nhập khẩu)
 
-Ước lượng **~110 loại quả** (theo "loại", không tách giống/cultivar):
+> **Đính chính khi triển khai (2026-10-31):** chủ dự án đã duyệt thiết kế + quy mô toàn bộ.
+> Rà soát danh sách theo *loại* quả lưu hành thực tế cho ra **85 hồ sơ** (32 nguyên liệu đã có +
+> 53 loại mới) — con số ~110 trong ước lượng ban đầu gồm cả các mục tách theo giống/cultivar;
+> các giống đáng chú ý (nho mẫu đơn, táo Envy, sầu riêng Ri6/Monthong...) được ghi trong hồ sơ
+> ở giai đoạn 1, tách hồ sơ theo giống để giai đoạn 2. Danh sách chốt:
+> `fruit-phase1-list` (lưu trong hồ sơ triển khai FRUIT-002).
+
+Ước lượng ban đầu **~110 loại quả** (theo "loại", không tách giống/cultivar):
 
 - **Đã có nền (32):** chỉ cần viết hồ sơ + giá.
 - **Cần bổ sung nguyên liệu + hồ sơ (~78):** trong nước — măng cụt đã có? (chưa: cần thêm) mãng cầu

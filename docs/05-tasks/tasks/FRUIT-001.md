@@ -1,6 +1,7 @@
 # FRUIT-001 — Schema + hạ tầng dữ liệu nhánh hoa quả
 
-- **Trạng thái:** ⬜ (thiết kế đã soạn tại [FRUIT-MODULE](../../03-data-model/FRUIT-MODULE.md), chờ chủ dự án chốt theo QT-8)
+- **Trạng thái:** 🔶 (2026-10-31 — hạ tầng xong: migration `fruits`/`fruit_prices`, model, FruitSeeder,
+  validator V17; hồ sơ mẫu xoài chạy end-to-end. Đóng task khi FRUIT-003/004 lấp đủ dữ liệu thật)
 - **Phụ thuộc:** —
 - **Nhánh:** Hoa quả (FRUIT-MODULE)
 

@@ -20,7 +20,7 @@ class LacdoiValidateData extends Command
 {
     protected $signature = 'lacdoi:validate-data';
 
-    protected $description = 'Kiểm tra toàn vẹn dữ liệu trong data/ và database (V1–V16, DATA-PIPELINE §5)';
+    protected $description = 'Kiểm tra toàn vẹn dữ liệu trong data/ và database (V1–V17, DATA-PIPELINE §5)';
 
     /** @var list<string> */
     private array $errors = [];
@@ -37,6 +37,8 @@ class LacdoiValidateData extends Command
 
         $this->validateIngredientFiles($ingredients);
         $this->validateDishFiles($dishes, array_keys($ingredients));
+        $fruits = is_dir(base_path('data/fruits')) ? $this->loadJsonDir(base_path('data/fruits')) : [];
+        $this->validateFruitFiles($fruits, $ingredients);
         $this->validateTaxonomy($ingredients, $dishes);
         $this->validateMediaManifest();
         $this->validateDatabase();
@@ -222,6 +224,93 @@ class LacdoiValidateData extends Command
 
         if (filled($at) && ! preg_match('/^\d{4}-\d{2}-\d{2}$/', (string) $at)) {
             $this->errors[] = "V15 {$label}: reviewed_at = '{$at}' không đúng dạng YYYY-MM-DD";
+        }
+    }
+
+    /**
+     * V17 — hồ sơ hoa quả (FRUIT-MODULE.md): cấu trúc file, tham chiếu nguyên liệu
+     * trai-cay, tháng mùa vụ hợp lệ, cửa sổ là tập con của tháng có hàng, lưu ý
+     * kết hợp có mức bằng chứng, và kỷ luật giá (mỗi dòng giá có nguồn + ngày
+     * thu thập, min ≤ max).
+     *
+     * @param  array<string, array<string, mixed>>  $fruits
+     * @param  array<string, array<string, mixed>>  $ingredients
+     */
+    private function validateFruitFiles(array $fruits, array $ingredients): void
+    {
+        $groups = ['co-mui', 'mong', 'hach', 'nhiet-doi', 'dua', 'khac'];
+        foreach ($fruits as $slug => $j) {
+            $this->checked++;
+            $label = "[{$slug}]";
+
+            if (($j['slug'] ?? '') !== $slug) {
+                $this->errors[] = "V17 {$label}: slug trong file không khớp tên file";
+            }
+
+            $ingSlug = $j['ingredient_slug'] ?? '';
+            if (! isset($ingredients[$ingSlug])) {
+                $this->errors[] = "V17 {$label}: ingredient_slug '{$ingSlug}' không tồn tại";
+
+                continue;
+            }
+            if (($ingredients[$ingSlug]['category'] ?? '') !== 'trai-cay') {
+                $this->errors[] = "V17 {$label}: nguyên liệu '{$ingSlug}' không thuộc nhóm trai-cay";
+            }
+
+            $c = $j['classification'] ?? [];
+            if (! in_array($c['group'] ?? '', $groups, true)) {
+                $this->errors[] = "V17 {$label}: classification.group không hợp lệ: ".($c['group'] ?? '');
+            }
+            if (! in_array($c['origin'] ?? '', ['trong-nuoc', 'nhap-khau', 'ca-hai'], true)) {
+                $this->errors[] = "V17 {$label}: classification.origin không hợp lệ: ".($c['origin'] ?? '');
+            }
+
+            $a = $j['availability'] ?? [];
+            $months = $a['months'] ?? [];
+            $validMonths = is_array($months) && $months !== []
+                && array_filter($months, fn ($m) => ! is_int($m) || $m < 1 || $m > 12) === []
+                && count($months) === count(array_unique($months));
+            if (! $validMonths) {
+                $this->errors[] = "V17 {$label}: availability.months phải là các tháng 1–12 không trùng, không rỗng";
+                $months = [];
+            }
+            if (! in_array($a['availability_type'] ?? '', ['theo-mua', 'quanh-nam', 'quanh-nam-nhap-khau'], true)) {
+                $this->errors[] = "V17 {$label}: availability.availability_type không hợp lệ";
+            }
+            foreach (['main_season_months' => $a['main_season_months'] ?? [], 'best_nutrition_window' => $j['best_nutrition_window']['months'] ?? [], 'best_value_window' => $j['best_value_window']['months'] ?? []] as $field => $win) {
+                if (array_diff($win, $months) !== []) {
+                    $this->errors[] = "V17 {$label}: {$field} chứa tháng ngoài availability.months";
+                }
+            }
+
+            foreach ($j['pairing_cautions'] ?? [] as $pc) {
+                if (blank($pc['with'] ?? null) || blank($pc['note'] ?? null)) {
+                    $this->errors[] = "V17 {$label}: pairing_cautions thiếu with/note";
+                }
+                if (! in_array($pc['level'] ?? '', ['co-so', 'dan-gian'], true)) {
+                    $this->errors[] = "V17 {$label}: pairing_cautions.level phải là co-so hoặc dan-gian";
+                }
+            }
+
+            foreach ($j['prices'] ?? [] as $p) {
+                if (! in_array($p['region_code'] ?? '', ['bac', 'trung', 'nam'], true)) {
+                    $this->errors[] = "V17 {$label}: prices.region_code phải là bac/trung/nam";
+                }
+                if (! is_int($p['month'] ?? null) || $p['month'] < 1 || $p['month'] > 12) {
+                    $this->errors[] = "V17 {$label}: prices.month ngoài 1–12";
+                }
+                if (($p['price_min'] ?? 0) <= 0 || ($p['price_max'] ?? 0) < ($p['price_min'] ?? 0)) {
+                    $this->errors[] = "V17 {$label}: prices phải có 0 < price_min ≤ price_max";
+                }
+                if (blank($p['source_name'] ?? null)) {
+                    $this->errors[] = "V17 {$label}: dòng giá thiếu source_name — giá vô danh bị cấm (FRUIT-MODULE §3)";
+                }
+                if (! preg_match('/^\d{4}-\d{2}-\d{2}$/', (string) ($p['collected_at'] ?? ''))) {
+                    $this->errors[] = "V17 {$label}: dòng giá thiếu/sai collected_at (YYYY-MM-DD)";
+                }
+            }
+
+            $this->validateReviewTrail($label, $j);
         }
     }
 
