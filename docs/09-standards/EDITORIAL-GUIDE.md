@@ -220,3 +220,39 @@ TRƯỚC khi tra dinh dưỡng (CALORIE-ENGINE §3b).
 - Nguyên liệu bán cả xương/vỏ mà `edible_portion_pct` còn null (xem
   `edible_portion_note` của từng file): calo món sẽ bị VỐNG LÊN — ưu tiên bổ sung hệ số
   (tự cân theo phương pháp ghi trong note) trước khi nhập nhiều món dùng nguyên liệu đó.
+---
+
+## 12. Quy ước dầu ăn trong món chiên/rán — Phương án A, chốt 2026-10-31 (QA-002)
+
+**Bối cảnh.** QA-002 lần 1 (2026-10-31) đo thấy nhóm chiên lệch **+39,8%** vì dầu bị tính hai
+lần: công thức kê sẵn dòng `dau-an` 8–20 g, engine lại cộng thêm mô hình hấp thụ dầu
+CALC-004. Chủ dự án đã chốt **Phương án A — đổi quy ước dữ liệu, không đổi engine** và toàn
+bộ 46 món chiên trong kho đã rà lại theo quy ước này.
+
+**Quy ước (bắt buộc khi biên soạn món `chien` / `chien-ngap-dau`):**
+
+1. **Dầu dùng cho bước chiên chính KHÔNG ghi vào công thức.** Lượng dầu thực phẩm hấp thụ
+   khi chiên do engine mô hình hoá theo `oil_absorption_pct` của từng nguyên liệu
+   (CALC-004) — kê vào công thức là tính hai lần.
+2. **Dòng `dau-an` chỉ ghi dầu dùng cho chế biến KHÁC ngoài bước chiên chính**, khi bước đó
+   có thật trong `recipe_steps`: phi hành/tỏi thơm, xào nhân trước khi gói, xào sốt rưới
+   lên món, phi nguyên liệu tạo màu/mùi. Mức tham chiếu cho một bước phi/xào nhanh ở một
+   khẩu phần là **3 g** — định lượng chế biến (không phải số dinh dưỡng), và phần dầu này
+   được ăn vào cùng nhân/sốt nên kê nguyên. Ghi rõ lý do vào `import_note` của món.
+3. **Ngoại lệ — chủ thể chiên có hệ số hấp thụ 0 theo thiết kế CALC-004:** tinh bột đã nấu
+   chín đem rán (xôi chiên, bánh chưng chiên — `gao-nep`; xem danh mục hệ số 0 trong
+   CALC-004) thì dòng dầu đã kê *là* cơ chế tính dầu duy nhất của món, không tính trùng —
+   **giữ dòng `dau-an`** và ghi chú ngoại lệ vào `import_note`. Khi gặp món mới thuộc diện
+   này (mọi nguyên liệu chính đều hệ số 0 và dầu chiên chưa được mô hình hoá ở đâu khác),
+   áp cùng xử lý và ghi chú; không tự ý bỏ dòng dầu khiến món chiên tính ra 0 g dầu.
+4. **Phân biệt dầu/mỡ là NGUYÊN LIỆU với dầu là MÔI TRƯỜNG chiên:** mỡ lợn trộn trong
+   chạo/nhân, dầu phi đã thành một phần của món… là nguyên liệu ăn vào — giữ nguyên như
+   mọi nguyên liệu khác. Chỉ phần dầu làm môi trường cho bước chiên chính mới thuộc mục 1.
+
+**Hệ quả đo lường đã biết (QA-002 lần 2, 2026-10-31):** sau khi áp quy ước này, phía tham
+chiếu "công thức nguyên văn" của QA-002 không còn chứa đại diện nào cho dầu hấp thụ, nên
+nhóm chiên vẫn lệch +49,0% so với engine dù quy ước dữ liệu đã nhất quán — cặp (quy ước A +
+tham chiếu nguyên văn) không tương thích về định nghĩa. Phân tích đầy đủ và các lựa chọn
+tiếp theo: [accuracy-runs/2026-10-31-vn-dishes-lan-2.md](../06-nutrition/accuracy-runs/2026-10-31-vn-dishes-lan-2.md) §5, §7.
+Không vì kết quả đo này mà quay lại kê dầu chiên vào công thức: quy ước trên là quyết định
+đã chốt; phần cần quyết tiếp là *phương pháp đo* và/hoặc *hệ số engine*, thuộc chủ dự án.

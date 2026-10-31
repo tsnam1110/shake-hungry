@@ -177,6 +177,7 @@ phần thực tế và cách nấu của từng quán/từng nhà làm thay đ�
 | 2026-08-31 | 1.0.0 | 4.766 món Nutrition5k | 100% | 0,04% | +0,01% | ⚠️ **sanity check vòng tròn** — không phải độ chính xác (xem §4) | — |
 | 2026-09-01 | **1.1.0** | 204 Food Code FNDDS (`usda_sr_legacy`) | **89,7%** | 3,9% | −3,8% | ✅ tiêu chí chính giữ nguyên; **% tham chiếu trong khoảng 1,0% → 80,4%** | [2026-09-01-fndds.md](accuracy-runs/2026-09-01-fndds.md) |
 | 2026-10-31 | **1.1.0** | **160 món Việt của dự án, phân tầng theo cách chế biến (QA-002)** | **76,9%** | 11,5% | **+10,3%** | ❌ **CHƯA ĐẠT** — 4/5 nhóm đạt 100%; nhóm chiên/rán chỉ 7,5% (bias +39,8%): dầu bị tính hai lần (dòng `dau-an` trong công thức + mô hình hấp thụ CALC-004) | [2026-10-31-vn-dishes.md](accuracy-runs/2026-10-31-vn-dishes.md) |
+| 2026-10-31 | **1.1.0** (không đổi) | **160 món Việt, cùng thiết kế mẫu (QA-002 lần 2 — sau Phương án A: bỏ/giảm dòng dầu chiên trong công thức)** | **77,5%** | 13,8% | **+12,6%** | ❌ **CHƯA ĐẠT** — 4/5 nhóm vẫn 100%; nhóm chiên/rán 10,0% (bias +49,0%): chênh lệch tuyệt đối nhóm chiên gần như không đổi (+143,7 → +137,0 kcal) vì phía tham chiếu nguyên văn không chứa dầu hấp thụ mà engine mô hình hoá — cặp (quy ước A + tham chiếu nguyên văn) không tương thích về định nghĩa; chờ chủ dự án chốt bước tiếp (báo cáo §7) | [2026-10-31-vn-dishes-lan-2.md](accuracy-runs/2026-10-31-vn-dishes-lan-2.md) |
 
 **Đọc bảng này cho đúng.** Lần đo đầu tiên nói được ba điều, không hơn:
 
@@ -205,6 +206,23 @@ vì bản 1.0.0 trả khoảng rộng bằng 0 cho món ánh xạ `high` — vi 
 Việc `hap` và `kho` **không nhúc nhích** là điều quan trọng nhất của lần đo này, không phải con số
 80,4%. Nếu nới khoảng tới ±20% thì hai nhóm đó cũng "đạt" ngay, báo cáo đẹp lên mà engine không tốt
 hơn một chút nào. Khoảng tin cậy dùng để **nói ra** mình không chắc, không phải để **giấu** chỗ mình sai.
+
+### Lần đo 3 + 4 (2026-10-31, QA-002 trên món Việt — trước và sau Phương án A)
+
+Lần đo 3 là lần đầu đo trên kho món Việt của dự án: **76,9%**, và toàn bộ phần chưa đạt nằm ở
+nhóm chiên (7,5%, bias +39,8%) — nguyên nhân: công thức kê sẵn dòng `dau-an`, engine cộng thêm
+mô hình hấp thụ CALC-004. Chủ dự án chốt **Phương án A** (đổi quy ước dữ liệu: bỏ/giảm dòng
+dầu chiên trong công thức, engine giữ nguyên) và đo lại ở lần 4: **77,5% — vẫn chưa đạt**,
+nhóm chiên 10,0% (bias +49,0%).
+
+Bài học của lần 4 quan trọng hơn con số: chênh lệch tuyệt đối engine ↔ tham chiếu ở nhóm chiên
+gần như không đổi (+143,7 → +137,0 kcal/món), vì chênh lệch đó *chính là* dầu hấp thụ do engine
+mô hình hoá, còn phía tham chiếu "công thức nguyên văn" không chứa nó ở cả hai lần. Lần 3, dòng
+`dau-an` trong công thức vô tình làm đại diện cho dầu hấp thụ ở phía tham chiếu. **Định nghĩa
+mục tiêu không đổi**; việc cần quyết tiếp là phương pháp dựng phía tham chiếu cho món chiên
+(phương án C ở phía tham chiếu) và/hoặc độ lớn hệ số CALC-004 — đều chờ chủ dự án. Chi tiết:
+[báo cáo lần 1](accuracy-runs/2026-10-31-vn-dishes.md) ·
+[báo cáo lần 2](accuracy-runs/2026-10-31-vn-dishes-lan-2.md).
 
 ### Ba giới hạn của bộ mẫu — phải đọc trước khi trích con số 89,7%
 

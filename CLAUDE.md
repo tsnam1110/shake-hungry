@@ -157,8 +157,8 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 | Dữ liệu món ăn | ✅ **500 file đầy đủ công thức**, kèm hệ nhãn phân loại (TAXONOMY.md); **495/500 tính được dinh dưỡng** (5 món còn lại vướng thiếu dữ liệu thật: gỏi ngó sen, canh rau nhút, mắm nêm ×2, mắm ruột). **300 công thức đầu đã được chủ dự án duyệt ngày 2026-10-31**; 200 công thức của DISH-004 đang chờ duyệt (`needs_review=true`) | `ls data/dishes/vn` |
 | Bảng tham chiếu | ✅ SR Legacy **7.793** + Cooking Yields R2 **163** + FNDDS **333 Food Code / 1.810 SR Links** + `regions-vn.json` + `wikidata-vn-dishes.json`; **nguyên liệu gốc có số 242/255 (94,9%)** | `data/reference/MANIFEST.json` |
 | Hệ số DATA-004/008 | ✅ khung xong: `edible_portion_pct` (3 có nguồn, 16 null chờ cân), `default_yield_factor` (9 thịt suy có nguồn) | `edible_portion_note` / `default_yield_factor_note` từng file |
-| **Kiểm chứng engine** | 🔵 lần 2 (2026-09-01, engine **1.1.0**): **89,7% trong ±20%** (không đổi), MAPE 3,9%, và **% tham chiếu nằm trong khoảng 1,0% → 80,4%**. Hệ số hấp thụ dầu đã có theo nhóm (CALC-004, áp 2026-10-31) nên **nhóm chiên đã tính được**; **lần 3 (2026-10-31, QA-002 trên 160 món Việt): 76,9% trong ±20% — CHƯA ĐẠT 80%** (4 nhóm không chiên 100%; nhóm chiên 7,5%, bias +39,8% do dầu tính hai lần — xem ACCURACY-SPEC §6); vẫn còn **nhóm hấp lệch −21%** ở bộ FNDDS (Cooking Yields R2 **0 dòng thuỷ sản**) | [nhật ký đo](docs/06-nutrition/ACCURACY-SPEC.md) |
-| **Code** | ✅ **Laravel 13.29 + MySQL 8.0** — 19 migration (đủ R1–**R10**), engine calo **1.1.0**, **trang quản trị antd 6 + React 19 tại `/admin`**, **trang người dùng hoàn chỉnh** (Lắc + lọc theo nhãn + tài khoản + TDEE + nhật ký + đóng góp), **97 test Pest xanh** | `php artisan migrate:fresh --seed; vendor\bin\pest --no-coverage` |
+| **Kiểm chứng engine** | 🔵 lần 2 (2026-09-01, engine **1.1.0**): **89,7% trong ±20%** (không đổi), MAPE 3,9%, và **% tham chiếu nằm trong khoảng 1,0% → 80,4%**. Hệ số hấp thụ dầu đã có theo nhóm (CALC-004, áp 2026-10-31) nên **nhóm chiên đã tính được**; **lần 3 (2026-10-31, QA-002 trên 160 món Việt): 76,9% trong ±20% — CHƯA ĐẠT 80%** (4 nhóm không chiên 100%; nhóm chiên 7,5%, bias +39,8% do dầu tính hai lần — xem ACCURACY-SPEC §6). **Lần 4 (2026-10-31, QA-002 lần 2 sau Phương án A — chủ dự án chốt đổi quy ước dữ liệu: bỏ/giảm dòng dầu chiên ở 40/46 món chiên, engine không đổi): 77,5% — VẪN CHƯA ĐẠT** (nhóm chiên 10,0%, bias +49,0%; chênh lệch tuyệt đối nhóm chiên gần như không đổi +143,7 → +137,0 kcal vì tham chiếu nguyên văn không chứa dầu hấp thụ engine mô hình hoá — chờ chủ dự án chốt bước tiếp theo báo cáo lần 2 §7); vẫn còn **nhóm hấp lệch −21%** ở bộ FNDDS (Cooking Yields R2 **0 dòng thuỷ sản**) | [nhật ký đo](docs/06-nutrition/ACCURACY-SPEC.md) |
+| **Code** | ✅ **Laravel 13.29 + MySQL 8.0** — 19 migration (đủ R1–**R10**), engine calo **1.1.0**, **trang quản trị antd 6 + React 19 tại `/admin`**, **trang người dùng hoàn chỉnh** (Lắc + lọc theo nhãn + tài khoản + TDEE + nhật ký + đóng góp), **106 test Pest xanh** | `php artisan migrate:fresh --seed; vendor\bin\pest --no-coverage` |
 | **CI** | 🔵 `.github/workflows/tests.yml` (GitHub Actions) — repo nay ở **GitHub** nên đã đúng nền; **chưa chạy lần nào vì code chưa push** (đang chờ chủ dự án cấp credential push) | `git remote -v` |
 | Chưa có | cột embedding (REC-002), Foundation Foods, rà soát độc lập ING-003, tích hợp LLM trong trang quản trị (ADM-006 — chờ chủ dự án chốt nhà cung cấp/API key) | [ROADMAP](docs/05-tasks/ROADMAP.md) |
 | Sao lưu | 🔵 `origin` = `https://github.com/tsnam1110/shake-hungry.git`, branch `dev`; nhánh local đang ahead origin nhiều commit (toàn bộ đợt 2026-10-30/31) — **push chờ chủ dự án cấp credential** (token hoặc khoá SSH) | `git status -sb` |
@@ -166,11 +166,13 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > Việc tiếp theo theo thứ tự ưu tiên: **(1) đẩy code lên GitHub** (đã duyệt, chờ
 > credential); **(2) chốt phương án go-live** (VPS + subdomain / Laravel Cloud / PC +
 > Tailscale Funnel — chủ dự án quyết định 2026-10-31 **chưa go-live**, hoàn thiện sản phẩm
-> trước); **(3) sửa nhóm chiên sau QA-002** — dầu bị tính hai lần (dòng `dau-an` trong công
-> thức + mô hình CALC-004), chờ chủ dự án chốt phương án rồi đo lại trên cùng bộ mẫu;
+> trước); **(3) nhóm chiên sau QA-002** — chủ dự án đã chốt **Phương án A** (đổi quy ước
+> dữ liệu) và đã triển khai + đo lại 2026-10-31: **77,5%, vẫn chưa đạt**; phần còn lại chờ
+> chủ dự án chốt bước tiếp (phương án C ở phía tham chiếu và/hoặc rà soát hệ số CALC-004 —
+> xem báo cáo QA-002 lần 2 §7);
 > **(4) hệ số hao hụt cho thuỷ sản từ nguồn độc lập với USDA** (Q7 — nhóm
 > hấp lệch −21%); **(5) cân 16 hệ số phần ăn được** (ưu tiên sườn lợn); **(6) DISH-004**
-> mở rộng lên 500 món theo nhu cầu. Việc chờ chủ dự án: **go-live**, **phương án sửa nhóm
+> mở rộng lên 500 món theo nhu cầu. Việc chờ chủ dự án: **go-live**, **bước tiếp cho nhóm
 > chiên (QA-002)**, **ADM-006**
 > (chọn nhà cung cấp/API key cho LLM trong admin), **tắt nút đăng nhập nhanh admin**
 > (đang bật trên môi trường dev kèm cảnh báo bảo mật).

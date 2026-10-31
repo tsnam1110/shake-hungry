@@ -132,6 +132,18 @@ xuất, tinh bột đã nấu chín rán lại với dầu đã kê trong công 
 bản chất mô hình** — không phải số đo. Bảng đầy đủ và các đánh đổi đã biết:
 [CALC-004](../05-tasks/tasks/CALC-004.md).
 
+> **Đính chính 2026-10-31 — quy ước dữ liệu về dầu món chiên đã đổi (Phương án A, QA-002).**
+> Từ 2026-10-31, công thức món chiên **không còn kê dầu của bước chiên chính**: dòng
+> `dau-an` chỉ ghi dầu cho bước phụ (phi/xào nhân, xào sốt — xem
+> [EDITORIAL-GUIDE §12](../09-standards/EDITORIAL-GUIDE.md)); dầu hấp thụ do chính mô hình
+> ở mục này đảm nhiệm. Engine **không đổi** (vẫn 1.1.0). Ngoại lệ duy nhất còn kê dầu
+> chiên trong công thức là món mà chủ thể chiên thuộc nhóm hệ số 0 "dầu đã kê" ở trên
+> (xôi chiên, bánh chưng chiên) — với các món đó dòng dầu là cơ chế tính dầu duy nhất.
+> Hệ quả đo lường: QA-002 lần 2 (sau Phương án A) vẫn **chưa đạt** — nhóm chiên +49,0%
+> so với phía tham chiếu nguyên văn, vì tham chiếu nguyên văn không chứa dầu hấp thụ mà
+> mô hình này cộng. Phân tích và lựa chọn tiếp theo (chờ chủ dự án):
+> [accuracy-runs/2026-10-31-vn-dishes-lan-2.md](accuracy-runs/2026-10-31-vn-dishes-lan-2.md).
+
 > **Cảnh báo cho người kế nhiệm:** nếu bỏ qua mục này, calo món chiên sẽ **thấp hơn thực tế 30–50%**.
 > Đây là lỗi âm thầm — không có gì báo sai, chỉ là mọi con số đều thấp.
 
