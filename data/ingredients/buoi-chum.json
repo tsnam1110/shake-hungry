@@ -1,0 +1,58 @@
+{
+  "slug": "buoi-chum",
+  "name_vi": "Bưởi chùm (grapefruit, múi tươi)",
+  "name_en": "Grapefruit, raw, pink and red and white, all areas",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "173033",
+    "source_url": "https://fdc.nal.usda.gov/food-details/173033/nutrients",
+    "scientific_name": "Citrus × paradisi",
+    "kcal_per_100g": 32,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 0.63,
+    "fat_g": 0.1,
+    "carb_g": 8.08,
+    "fiber_g": 1.1,
+    "water_g": 90.89,
+    "sodium_mg": 0,
+    "mapping_confidence": "high",
+    "mapping_note": "FRUIT-002 2026-10-31: USDA SR Legacy 173033 \"Grapefruit, raw, pink and red and white, all areas\" — đúng bưởi chùm Citrus × paradisi (lai bưởi ta × cam ngọt). PHÂN BIỆT với file buoi.json: bưởi ta là Citrus maxima (38 kcal, múi to, ngọt hơn) — hai loài khác nhau, không dùng chung số; grapefruit chua hơn, carb thấp hơn. Bộ số gộp cả grapefruit trắng/hồng/đỏ — khớp thực tế hàng nhập bán tại VN.",
+    "alternatives": [
+      {
+        "name": "Grapefruit, raw — USDA Foundation (FDC 2758977)",
+        "why_not": "Bản Foundation hiện mới công bố nước/xơ/natri, thiếu năng lượng và đạm/béo/carb — không đủ bộ số cho engine",
+        "external_id": "2758977",
+        "kcal_per_100g": null
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "quả vừa",
+      "grams": 128.0,
+      "note": "foodMeasures 'medium (approx 4\" dia)' — cỡ Mỹ, cần đo lại cho hàng nhập tại VN",
+      "source": "FDC 173033 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}

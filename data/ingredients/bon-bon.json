@@ -1,0 +1,58 @@
+{
+  "slug": "bon-bon",
+  "name_vi": "Bòn bon",
+  "name_en": "Langsat, raw",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "fnri_ph",
+    "external_id": "E039",
+    "source_url": "https://i.fnri.dost.gov.ph/fct/library/report/3621",
+    "scientific_name": "Lansium parasiticum (đồng danh Lansium domesticum)",
+    "kcal_per_100g": 64,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 1,
+    "fat_g": 0.3,
+    "carb_g": 14.2,
+    "fiber_g": 2.7,
+    "water_g": 83.9,
+    "sodium_mg": 1,
+    "mapping_confidence": "low",
+    "mapping_note": "Nguồn THỨ CẤP tầng 6 theo thang DATA-PIPELINE §7.2 (USDA không có mục langsat/Lansium) → món dùng nó mang cờ CHƯA KIỂM ĐỊNH. PhilFCT (FNRI Philippines) mục E039 'Lanzon', ghi danh Lansium domesticum — đồng danh của Lansium parasiticum theo phân loại hiện hành, cùng một loài bòn bon trồng ở VN. Đọc trực tiếp bản báo cáo FNRI 2026-10-31: phần ăn được 68%, nước 83,9, 64 kcal, đạm 1,0, béo 0,3, carb 14,2, xơ 2,7, natri 1 mg; Atwater 1,0×4 + 0,3×9 + 14,2×4 ≈ 64 ✓. Lưu ý phân biệt với duku (cùng loài, dạng quả to vỏ dày ở Indonesia/Malaysia) — bản ghi Philippines là dạng langsat quả nhỏ phổ biến ở VN.",
+    "alternatives": [
+      {
+        "name": "Lanzon — PhilFCT bản 1997 (đạm 0,8 / carb 9,5 / xơ 2,3 / Ca 20 / P 30)",
+        "why_not": "Bộ số cũ lưu hành khắp các trang VN ('bòn bon ~60 kcal') tự mâu thuẫn theo Atwater (0,8×4 + 0,2×9 + 9,5×4 ≈ 43 ≠ 60) và đã bị bản PhilFCT hiện hành thay thế — không dùng.",
+        "external_id": "E039 (bản 1997)",
+        "kcal_per_100g": 60
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": 68.0,
+  "edible_portion_note": "Theo PhilFCT E039: phần ăn được 68% (bỏ vỏ mỏng dai và hạt).",
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "quả",
+      "grams": 17.0,
+      "note": "ước lượng phần ăn được của quả ~25 g nguyên trái × 68% (EP PhilFCT); cần đo lại",
+      "source": "ước lượng theo PhilFCT"
+    }
+  ],
+  "source": "curated",
+  "confidence": "low",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}

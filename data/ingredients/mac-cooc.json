@@ -1,0 +1,51 @@
+{
+  "slug": "mac-cooc",
+  "name_vi": "Mắc cọp (lê rừng, tươi)",
+  "name_en": "Wild Himalayan pear (mắc cọp), raw",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": null,
+    "external_id": null,
+    "source_url": null,
+    "scientific_name": "Pyrus pashia",
+    "kcal_per_100g": null,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": null,
+    "fat_g": null,
+    "carb_g": null,
+    "fiber_g": null,
+    "water_g": null,
+    "sodium_mg": null,
+    "mapping_confidence": "low",
+    "mapping_note": "KHÔNG TRA ĐƯỢC — để null theo QT-1. Hồ sơ tra cứu (FRUIT-002, 2026-10-31): mắc cọp = Pyrus pashia, quả rừng vùng cao Tây Bắc. (1) USDA FoodData Central: không có P. pashia (chỉ có lê trồng Pyrus communis/pyrifolia — đã loại, xem alternatives). (2) IFCT 2017, Ciqual, Bảng TPTP VN: không có mục cho loài này. (3) Văn liệu: nghiên cứu biến đổi sinh hoá theo độ chín (Mala et al., mẫu Uttarakhand) công bố proximate theo CHẤT KHÔ (đạm thô 2,93–4,08%, carb ~39–41%, xơ thô 38,26–43,37%) — không quy về quả tươi được vì thiếu độ ẩm đo kèm đáng tin cậy; số lưu hành qua PFAF (đường 6,8%, đạm 3,7%) không truy được nguồn phân tích gốc. TÁC ĐỘNG THẤP: quả rừng ăn tại chỗ, sản lượng nhỏ, thường ăn chín nẫu lượng ít. VIỆC CẦN LÀM: tìm phân tích proximate quả tươi đúng loài (ưu tiên mẫu VN/Ấn Độ có ghi độ ẩm) hoặc đo kiểm nghiệm trong nước.",
+    "alternatives": [
+      {
+        "name": "Pears, raw — SR Legacy (FDC 169118, slug le)",
+        "why_not": "Lê trồng Pyrus spp. quả to, xơ 3,1 g/100g tươi — mắc cọp là quả rừng nhỏ 1–2,5 cm ăn khi chín nẫu (bletted), xơ thô cao hơn hẳn theo văn liệu; ánh xạ sẽ sai hệ thống",
+        "external_id": "169118",
+        "kcal_per_100g": 57
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "unknown",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}

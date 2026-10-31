@@ -1,0 +1,51 @@
+{
+  "slug": "thot-not",
+  "name_vi": "Thốt nốt (cơm quả non)",
+  "name_en": "Palmyra fruit, tender kernel (ice apple), raw",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "ifct_in",
+    "external_id": null,
+    "source_url": "https://www.hdfcergo.com/blogs/health-insurance/benefits-of-ice-apples-this-summer",
+    "scientific_name": "Borassus flabellifer",
+    "kcal_per_100g": 43,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 0.5,
+    "fat_g": 0.12,
+    "carb_g": 10.9,
+    "fiber_g": 2.4,
+    "water_g": 87.6,
+    "sodium_mg": null,
+    "mapping_confidence": "low",
+    "mapping_note": "Nguồn THỨ CẤP tầng 6: Indian Food Composition Tables — IFCT 2017 (ICMR-NIN, Longvah et al.), mục quả thốt nốt non (nungu/ice apple — phần nội nhũ thạch trong, đúng phần 'cơm thốt nốt' ăn ở VN: hạt thốt nốt trong chè/nước giải khát). Số lấy qua các bản tái bản ghi rõ nguồn IFCT (bảng HDFC Ergo trích IFCT: 43 kcal, đạm 0,5, béo 0,12, xơ TDF 2,4, K 158 mg; nước 87,6 và carb 10,9 khớp ở hai bản tái bản độc lập). Chưa đối chiếu trực tiếp được bản in IFCT nên external_id để trống. Các bản tái bản lệch nhau ở đạm (0,5-0,8 g) — lấy 0,5 theo bản ghi rõ IFCT. Để low vì: nguồn tầng 6 + qua tái bản thứ cấp; món dùng nó mang cờ CHƯA KIỂM ĐỊNH khi hiển thị. Quả thốt nốt CHÍN (thịt vàng quanh hạt) là phần ăn khác, không dùng số này.",
+    "alternatives": [
+      {
+        "name": "Palmyra tender fruit — Gopalan, Nutritive Value of Indian Foods (bảng Ấn Độ cũ, TNAU tái bản)",
+        "why_not": "Bộ số cũ (nước 92,5; đạm 0,6; carb 6,4; 28,9 kcal) — phân tích từ nhiều thập kỷ trước; IFCT 2017 là bản phân tích lại hiện hành của chính ICMR-NIN nên ưu tiên IFCT. Ghi lại để đối chiếu độ dao động theo độ non của quả",
+        "external_id": null,
+        "kcal_per_100g": 29
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": 25.0,
+  "edible_portion_note": "ƯỚC TÍNH: phần cơm (3 múi thạch trong mỗi quả, gồm cả dịch trong múi) ≈ 25% trọng lượng quả nguyên (phần còn lại là vỏ xơ dày, vỏ cứng và hạt). Dao động theo cỡ quả; cần đo lại trên quả thốt nốt An Giang",
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "low",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}

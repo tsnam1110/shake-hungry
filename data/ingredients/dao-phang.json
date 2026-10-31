@@ -1,0 +1,51 @@
+{
+  "slug": "dao-phang",
+  "name_vi": "Đào phẳng (donut peach, tươi)",
+  "name_en": "Flat peach (donut peach), raw",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "169928",
+    "source_url": "https://fdc.nal.usda.gov/food-details/169928/nutrients",
+    "scientific_name": "Prunus persica var. platycarpa",
+    "kcal_per_100g": 39,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 0.91,
+    "fat_g": 0.25,
+    "carb_g": 9.54,
+    "fiber_g": 1.5,
+    "water_g": 88.87,
+    "sodium_mg": 0,
+    "mapping_confidence": "medium",
+    "mapping_note": "'Peaches, yellow, raw' — FDC không có mục riêng cho đào phẳng/donut peach. Cùng loài Prunus persica, khác giống (quả dẹt hình bánh rán, thường thịt trắng, vị ngọt dịu ít chua hơn đào tròn thịt vàng); thành phần đa lượng giữa các giống đào rất gần nhau nên dùng chung số đào thường, hạ độ tin cậy xuống medium.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "quả vừa",
+      "grams": 120.0,
+      "note": "quả đào phẳng nhỏ hơn đào tròn (FDC 169928: đào tròn vừa 150 g); cỡ lưu hành ~90–130 g, cần đo lại",
+      "source": "ước lượng theo FDC 169928 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "medium",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}

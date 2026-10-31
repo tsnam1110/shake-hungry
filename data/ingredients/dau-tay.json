@@ -1,0 +1,57 @@
+{
+  "slug": "dau-tay",
+  "name_vi": "Dâu tây",
+  "name_en": "Strawberries, raw",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "167762",
+    "source_url": "https://fdc.nal.usda.gov/food-details/167762/nutrients",
+    "scientific_name": "Fragaria × ananassa",
+    "kcal_per_100g": 32,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 0.67,
+    "fat_g": 0.3,
+    "carb_g": 7.68,
+    "fiber_g": 2,
+    "water_g": 90.95,
+    "sodium_mg": 1,
+    "mapping_confidence": "high",
+    "mapping_note": "'Strawberries, raw' — đúng loài Fragaria × ananassa (dâu tây trồng, gồm dâu Đà Lạt và hàng nhập Hàn/Nhật). Đã kiểm chứng qua FDC API.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "cup",
+      "grams": 152.0,
+      "note": null,
+      "source": "FDC 167762 foodMeasures"
+    },
+    {
+      "unit_name": "quả",
+      "grams": 12.0,
+      "note": null,
+      "source": "FDC 167762 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}

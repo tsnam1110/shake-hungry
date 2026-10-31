@@ -1,0 +1,51 @@
+{
+  "slug": "qua-dieu",
+  "name_vi": "Quả điều (cuống quả)",
+  "name_en": "Cashew apple, raw",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "ifct_in",
+    "external_id": null,
+    "source_url": "https://www.academia.edu/68986009/Cashew_apple_Anacardium_occidentale_L_therap_eutic_benefits_processing_and_product_development_An_over_view",
+    "scientific_name": "Anacardium occidentale",
+    "kcal_per_100g": 51,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 0.2,
+    "fat_g": 0.1,
+    "carb_g": 11.1,
+    "fiber_g": 3.2,
+    "water_g": 86.3,
+    "sodium_mg": null,
+    "mapping_confidence": "low",
+    "mapping_note": "Nguồn THỨ CẤP tầng 6: bảng thành phần Ấn Độ của ICMR-NIN — Gopalan et al., 'Nutritive Value of Indian Foods' (hệ bảng quốc gia Ấn Độ mà IFCT 2017 kế thừa), mục cashew apple: nước 86,3; đạm 0,2; béo 0,1; xơ 3,2; carb 11,1; 51 kcal; Ca 10 mg; P 67 mg; vitamin C 180 mg/100 g. Hàng số được trích nguyên trong tổng quan The Pharma Innovation Journal 2017;6(7):260-264. USDA/FNRI/MEXT đều không có mục quả điều (USDA chỉ có hạt điều). Chưa truy được hàng IFCT 2017 cập nhật (nếu có) nên external_id để trống. Để low vì: nguồn tầng 6, phân tích cũ — đặc biệt xơ 3,2 g là XƠ THÔ theo phương pháp cũ, các phân tích mới cho xơ ăn uống ~0,4-1,0 g; vitamin C dao động rất lớn theo giống/độ chín (147-372 mg). Quả điều ở VN chủ yếu ăn tươi tại vùng trồng (Bình Phước, Đồng Nai) và làm rượu/mứt; phần HẠT điều là nguyên liệu riêng, không thuộc file này.",
+    "alternatives": [
+      {
+        "name": "Phân tích quả điều tươi hiện đại (tổng hợp DCCD Ấn Độ, nhiều nghiên cứu)",
+        "why_not": "Chỉ là KHOẢNG dao động giữa các nghiên cứu (đạm 0,10-0,16; xơ 0,4-1,0; carb 9,1-9,8; vitamin C 147-372 mg) — không có hàng số đầy đủ duy nhất để làm bản ghi; cho thấy xơ 3,2 g của bảng cũ (xơ thô, phương pháp cũ) có thể cao hơn thực tế, đã ghi vào mapping_note",
+        "external_id": null,
+        "kcal_per_100g": null
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "low",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}

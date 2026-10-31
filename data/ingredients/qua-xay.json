@@ -1,0 +1,57 @@
+{
+  "slug": "qua-xay",
+  "name_vi": "Quả xây (xay nhung)",
+  "name_en": "Velvet tamarind",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": null,
+    "external_id": null,
+    "source_url": null,
+    "scientific_name": "Dialium indum",
+    "kcal_per_100g": null,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": null,
+    "fat_g": null,
+    "carb_g": null,
+    "fiber_g": null,
+    "water_g": null,
+    "sodium_mg": null,
+    "mapping_confidence": "low",
+    "mapping_note": "HỒ SƠ TRA CỨU (2 vòng, 2026-10-31) — CHƯA CÓ NGUỒN ĐẠT CHUẨN: (1) USDA SR/Foundation/FNDDS: không có chi Dialium. (2) IFCT 2017, FNRI PhilFCT, MEXT, Bảng TPTP VN số hoá: không có mục quả xây/Dialium indum. (3) Văn liệu: các nghiên cứu proximate hiện có gần như toàn bộ trên loài ANH EM Dialium guineense (châu Phi) và kết quả tản mạn cực lớn (đạm 3,2-24,3%, nước 8-30% giữa các bài) — mượn số khác loài bị loại theo nguyên tắc đã áp cho thao-qua/hat-doi; bài Sarawak 1999 trên 'Dialium sp.' chưa xác nhận loài (xem alternatives). Quả xây ở VN ăn phần cơm bột khô chua ngọt trong vỏ giòn đen (vỏ + hạt chiếm phần lớn khối lượng quả). KẾT LUẬN: để null; cần một phân tích công bố riêng trên D. indum (mẫu Đông Nam Á) hoặc mục chính thức trong bảng quốc gia (Malaysia MyFCD 'keranji' là đầu mối cần kiểm chứng trực tiếp — chưa truy được bản gốc). Tác động thấp: quả ăn vặt lượng nhỏ.",
+    "alternatives": [
+      {
+        "name": "Keranji (Dialium sp.) — Voon & Kueh 1999, Asia Pacific J Clin Nutr 8(1):24-31 (quả bản địa Sarawak)",
+        "why_not": "Nguồn văn liệu duy nhất có hàng số đầy đủ (126 kcal; nước 63,8; đạm 1,2; béo 0,3; carb 29,7) nhưng chỉ định danh ở mức CHI 'Dialium sp.', không xác nhận là D. indum; nước 63,8% cũng không khớp dạng cơm bột khô của quả xây lưu hành ở VN. Ghi lại làm đầu mối kiểm chứng sau, chưa đủ chuẩn để gán số",
+        "external_id": null,
+        "kcal_per_100g": 126
+      },
+      {
+        "name": "Số tổng hợp trên các trang web dinh dưỡng (fruitspedia và tương tự): 287 kcal, carb 67,1, đạm 2,8",
+        "why_not": "Không truy được nguồn phân tích gốc, không phương pháp, không mẫu — không đạt chuẩn nguồn của dự án",
+        "external_id": null,
+        "kcal_per_100g": 287
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "unknown",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:thuc-vat",
+    "state:kho"
+  ]
+}

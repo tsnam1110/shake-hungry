@@ -1,0 +1,51 @@
+{
+  "slug": "man-nhap",
+  "name_vi": "Mận nhập khẩu (tươi)",
+  "name_en": "Plum, imported, raw",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "169949",
+    "source_url": "https://fdc.nal.usda.gov/food-details/169949/nutrients",
+    "scientific_name": "Prunus salicina / Prunus domestica",
+    "kcal_per_100g": 46,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 0.7,
+    "fat_g": 0.28,
+    "carb_g": 11.42,
+    "fiber_g": 1.4,
+    "water_g": 87.23,
+    "sodium_mg": 0,
+    "mapping_confidence": "high",
+    "mapping_note": "'Plums, raw' là mục gộp các giống mận thương mại (P. salicina và P. domestica) — đúng nhóm mận nhập khẩu bán tại VN (Úc, Mỹ, Chile, Trung Quốc). Tách file riêng với mận hậu miền Bắc KHÔNG phải vì khác loài (mận hậu cũng là P. salicina) mà vì thị trường/mùa vụ/hồ sơ quả khác hẳn nhau: mận hậu là giống địa phương, vụ ngắn tháng 5–7, quả nhỏ chua giòn; mận nhập quả to, ngọt, bán gần như quanh năm. Số dinh dưỡng dùng chung một mục tham chiếu USDA.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "quả",
+      "grams": 66.0,
+      "note": "CỠ PHƯƠNG TÂY — mận nhập lưu hành tại VN thường to hơn (80–120 g), cần đo lại",
+      "source": "FDC 169949 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}

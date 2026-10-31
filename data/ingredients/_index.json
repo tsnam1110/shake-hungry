@@ -1,6 +1,6 @@
 {
   "_generated_by": "php artisan lacdoi:export-data — không sửa tay (DATA-REPOSITORY §2)",
-  "count": 333,
+  "count": 386,
   "ingredients": [
     {
       "slug": "bach-tuoc",
@@ -88,6 +88,11 @@
       "category": "khac"
     },
     {
+      "slug": "binh-bat",
+      "name_vi": "Bình bát",
+      "category": "trai-cay"
+    },
+    {
       "slug": "bo-dong-vat",
       "name_vi": "Bơ động vật (bơ lạt)",
       "category": "dau-mo"
@@ -106,6 +111,11 @@
       "slug": "bo-thuc-vat",
       "name_vi": "Bơ thực vật (margarine)",
       "category": "dau-mo"
+    },
+    {
+      "slug": "bon-bon",
+      "name_vi": "Bòn bon",
+      "category": "trai-cay"
     },
     {
       "slug": "bong-bi",
@@ -188,6 +198,11 @@
       "category": "trai-cay"
     },
     {
+      "slug": "buoi-chum",
+      "name_vi": "Bưởi chùm (grapefruit, múi tươi)",
+      "category": "trai-cay"
+    },
+    {
       "slug": "ca-basa",
       "name_vi": "Cá basa (phi lê, sống)",
       "category": "thuy-san"
@@ -266,6 +281,11 @@
       "slug": "ca-me",
       "name_vi": "Cá mè (sống)",
       "category": "thuy-san"
+    },
+    {
+      "slug": "ca-na",
+      "name_vi": "Cà na",
+      "category": "trai-cay"
     },
     {
       "slug": "ca-ngu-van",
@@ -373,6 +393,11 @@
       "category": "thuy-san"
     },
     {
+      "slug": "cha-la",
+      "name_vi": "Chà là (khô)",
+      "category": "trai-cay"
+    },
+    {
       "slug": "chan-ga",
       "name_vi": "Chân gà (đã luộc)",
       "category": "thit"
@@ -388,9 +413,19 @@
       "category": "trai-cay"
     },
     {
+      "slug": "chanh-vang",
+      "name_vi": "Chanh vàng (lemon, tươi)",
+      "category": "trai-cay"
+    },
+    {
       "slug": "chao",
       "name_vi": "Chao (đậu phụ lên men)",
       "category": "gia-vi"
+    },
+    {
+      "slug": "cherry",
+      "name_vi": "Anh đào (cherry)",
+      "category": "trai-cay"
     },
     {
       "slug": "chim-cut",
@@ -411,6 +446,11 @@
       "slug": "chuoi-xanh",
       "name_vi": "Chuối xanh (nấu)",
       "category": "rau-cu"
+    },
+    {
+      "slug": "coc",
+      "name_vi": "Cóc",
+      "category": "trai-cay"
     },
     {
       "slug": "com-trang",
@@ -463,6 +503,16 @@
       "category": "gia-vi"
     },
     {
+      "slug": "dao",
+      "name_vi": "Đào (tươi)",
+      "category": "trai-cay"
+    },
+    {
+      "slug": "dao-phang",
+      "name_vi": "Đào phẳng (donut peach, tươi)",
+      "category": "trai-cay"
+    },
+    {
       "slug": "dau-an",
       "name_vi": "Dầu ăn thực vật",
       "category": "dau-mo"
@@ -471,6 +521,16 @@
       "slug": "dau-bap",
       "name_vi": "Đậu bắp (sống)",
       "category": "rau-cu"
+    },
+    {
+      "slug": "dau-da",
+      "name_vi": "Dâu da đất",
+      "category": "trai-cay"
+    },
+    {
+      "slug": "dau-den",
+      "name_vi": "Dâu đen (mâm xôi đen)",
+      "category": "trai-cay"
     },
     {
       "slug": "dau-den-hat",
@@ -523,6 +583,16 @@
       "category": "rau-cu"
     },
     {
+      "slug": "dau-tam",
+      "name_vi": "Dâu tằm",
+      "category": "trai-cay"
+    },
+    {
+      "slug": "dau-tay",
+      "name_vi": "Dâu tây",
+      "category": "trai-cay"
+    },
+    {
       "slug": "dau-trang",
       "name_vi": "Đậu trắng (hạt khô)",
       "category": "khac"
@@ -553,13 +623,33 @@
       "category": "trai-cay"
     },
     {
+      "slug": "dua",
+      "name_vi": "Dừa (phần cùi)",
+      "category": "trai-cay"
+    },
+    {
+      "slug": "dua-bo",
+      "name_vi": "Dưa bở",
+      "category": "trai-cay"
+    },
+    {
       "slug": "dua-cai-muoi",
       "name_vi": "Dưa cải muối chua",
       "category": "rau-cu"
     },
     {
+      "slug": "dua-gang",
+      "name_vi": "Dưa gang",
+      "category": "trai-cay"
+    },
+    {
       "slug": "dua-hau",
       "name_vi": "Dưa hấu",
+      "category": "trai-cay"
+    },
+    {
+      "slug": "dua-le",
+      "name_vi": "Dưa lê",
       "category": "trai-cay"
     },
     {
@@ -728,6 +818,11 @@
       "category": "gia-vi"
     },
     {
+      "slug": "hong-gion",
+      "name_vi": "Hồng giòn (tươi)",
+      "category": "trai-cay"
+    },
+    {
       "slug": "hong-xiem",
       "name_vi": "Hồng xiêm (sa-pô-chê, tươi)",
       "category": "trai-cay"
@@ -778,6 +873,11 @@
       "category": "rau-gia-vi"
     },
     {
+      "slug": "kiwi",
+      "name_vi": "Kiwi xanh",
+      "category": "trai-cay"
+    },
+    {
       "slug": "ky-tu",
       "name_vi": "Kỷ tử khô",
       "category": "gia-vi"
@@ -811,6 +911,11 @@
       "slug": "la-giang",
       "name_vi": "Lá giang",
       "category": "rau-gia-vi"
+    },
+    {
+      "slug": "la-han",
+      "name_vi": "La hán quả (khô)",
+      "category": "trai-cay"
     },
     {
       "slug": "la-khuc",
@@ -853,6 +958,11 @@
       "category": "trai-cay"
     },
     {
+      "slug": "lekima",
+      "name_vi": "Lêkima (quả trứng gà)",
+      "category": "trai-cay"
+    },
+    {
       "slug": "long-lon",
       "name_vi": "Lòng lợn (ruột lợn làm sạch, sống)",
       "category": "thit"
@@ -871,6 +981,16 @@
       "slug": "luon",
       "name_vi": "Lươn đồng (sống, làm sạch)",
       "category": "thuy-san"
+    },
+    {
+      "slug": "luu",
+      "name_vi": "Lựu (tươi)",
+      "category": "trai-cay"
+    },
+    {
+      "slug": "mac-cooc",
+      "name_vi": "Mắc cọp (lê rừng, tươi)",
+      "category": "trai-cay"
     },
     {
       "slug": "mac-khen",
@@ -903,8 +1023,33 @@
       "category": "gia-vi"
     },
     {
+      "slug": "mam-xoi",
+      "name_vi": "Mâm xôi đỏ",
+      "category": "trai-cay"
+    },
+    {
+      "slug": "man-hau",
+      "name_vi": "Mận hậu (tươi)",
+      "category": "trai-cay"
+    },
+    {
+      "slug": "man-nhap",
+      "name_vi": "Mận nhập khẩu (tươi)",
+      "category": "trai-cay"
+    },
+    {
       "slug": "mang-cau",
       "name_vi": "Mãng cầu ta (na, tươi)",
+      "category": "trai-cay"
+    },
+    {
+      "slug": "mang-cau-xiem",
+      "name_vi": "Mãng cầu xiêm",
+      "category": "trai-cay"
+    },
+    {
+      "slug": "mang-cut",
+      "name_vi": "Măng cụt",
       "category": "trai-cay"
     },
     {
@@ -921,6 +1066,11 @@
       "slug": "mat-ong",
       "name_vi": "Mật ong",
       "category": "gia-vi"
+    },
+    {
+      "slug": "may",
+      "name_vi": "Mây (salak, tươi)",
+      "category": "trai-cay"
     },
     {
       "slug": "me-chin",
@@ -966,6 +1116,16 @@
       "slug": "mit-non",
       "name_vi": "Mít non",
       "category": "rau-cu"
+    },
+    {
+      "slug": "mit-to-nu",
+      "name_vi": "Mít tố nữ",
+      "category": "trai-cay"
+    },
+    {
+      "slug": "mo",
+      "name_vi": "Mơ ngọt (apricot, tươi)",
+      "category": "trai-cay"
     },
     {
       "slug": "mo-lon-nuoc",
@@ -1083,6 +1243,16 @@
       "category": "trai-cay"
     },
     {
+      "slug": "nho-than-go",
+      "name_vi": "Nho thân gỗ (jabuticaba)",
+      "category": "trai-cay"
+    },
+    {
+      "slug": "nhot",
+      "name_vi": "Nhót",
+      "category": "trai-cay"
+    },
+    {
       "slug": "nui-kho",
       "name_vi": "Nui ống (khô)",
       "category": "tinh-bot"
@@ -1168,6 +1338,11 @@
       "category": "gia-vi"
     },
     {
+      "slug": "qua-dieu",
+      "name_vi": "Quả điều (cuống quả)",
+      "category": "trai-cay"
+    },
+    {
       "slug": "qua-gac",
       "name_vi": "Quả gấc (phần ăn được)",
       "category": "trai-cay"
@@ -1178,6 +1353,11 @@
       "category": "trai-cay"
     },
     {
+      "slug": "qua-mo",
+      "name_vi": "Mơ ta (mơ chua, tươi)",
+      "category": "trai-cay"
+    },
+    {
       "slug": "qua-quat",
       "name_vi": "Quất (tắc)",
       "category": "trai-cay"
@@ -1185,6 +1365,36 @@
     {
       "slug": "qua-sau",
       "name_vi": "Quả sấu",
+      "category": "trai-cay"
+    },
+    {
+      "slug": "qua-sim",
+      "name_vi": "Quả sim",
+      "category": "trai-cay"
+    },
+    {
+      "slug": "qua-sung",
+      "name_vi": "Quả sung",
+      "category": "trai-cay"
+    },
+    {
+      "slug": "qua-thi",
+      "name_vi": "Quả thị",
+      "category": "trai-cay"
+    },
+    {
+      "slug": "qua-tram",
+      "name_vi": "Quả trâm (trâm mốc)",
+      "category": "trai-cay"
+    },
+    {
+      "slug": "qua-va",
+      "name_vi": "Quả vả",
+      "category": "trai-cay"
+    },
+    {
+      "slug": "qua-xay",
+      "name_vi": "Quả xây (xay nhung)",
       "category": "trai-cay"
     },
     {
@@ -1273,6 +1483,11 @@
       "category": "gia-vi"
     },
     {
+      "slug": "roi",
+      "name_vi": "Roi (mận nước)",
+      "category": "trai-cay"
+    },
+    {
       "slug": "rong-bien",
       "name_vi": "Rong biển tươi (nấu canh)",
       "category": "rau-cu"
@@ -1311,6 +1526,11 @@
       "slug": "so-diep",
       "name_vi": "Sò điệp (cồi, sống)",
       "category": "thuy-san"
+    },
+    {
+      "slug": "so-ri",
+      "name_vi": "Sơ ri",
+      "category": "trai-cay"
     },
     {
       "slug": "soi-banh-canh",
@@ -1383,8 +1603,28 @@
       "category": "thit"
     },
     {
+      "slug": "tam-bop",
+      "name_vi": "Tầm bóp (thù lù)",
+      "category": "trai-cay"
+    },
+    {
       "slug": "tao",
       "name_vi": "Táo tây (cả vỏ, tươi)",
+      "category": "trai-cay"
+    },
+    {
+      "slug": "tao-meo",
+      "name_vi": "Táo mèo (tươi)",
+      "category": "trai-cay"
+    },
+    {
+      "slug": "tao-ta",
+      "name_vi": "Táo ta (tươi)",
+      "category": "trai-cay"
+    },
+    {
+      "slug": "tao-tau",
+      "name_vi": "Táo tàu tươi (đại táo)",
       "category": "trai-cay"
     },
     {
@@ -1415,6 +1655,11 @@
     {
       "slug": "thanh-long",
       "name_vi": "Thanh long",
+      "category": "trai-cay"
+    },
+    {
+      "slug": "thanh-tra",
+      "name_vi": "Thanh trà",
       "category": "trai-cay"
     },
     {
@@ -1506,6 +1751,11 @@
       "slug": "thit-xong-khoi",
       "name_vi": "Ba chỉ xông khói (bacon, chưa chế biến)",
       "category": "thit"
+    },
+    {
+      "slug": "thot-not",
+      "name_vi": "Thốt nốt (cơm quả non)",
+      "category": "trai-cay"
     },
     {
       "slug": "tia-to",
@@ -1623,9 +1873,19 @@
       "category": "trai-cay"
     },
     {
+      "slug": "viet-quat",
+      "name_vi": "Việt quất",
+      "category": "trai-cay"
+    },
+    {
       "slug": "vo-hoanh-thanh",
       "name_vi": "Vỏ hoành thánh",
       "category": "tinh-bot"
+    },
+    {
+      "slug": "vu-sua",
+      "name_vi": "Vú sữa",
+      "category": "trai-cay"
     },
     {
       "slug": "vung",
@@ -1656,6 +1916,11 @@
       "slug": "xot-mayonnaise",
       "name_vi": "Xốt mayonnaise",
       "category": "gia-vi"
+    },
+    {
+      "slug": "xuan-dao",
+      "name_vi": "Xuân đào (nectarine, tươi)",
+      "category": "trai-cay"
     },
     {
       "slug": "xuc-xich",

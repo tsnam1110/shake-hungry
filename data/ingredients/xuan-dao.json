@@ -1,0 +1,51 @@
+{
+  "slug": "xuan-dao",
+  "name_vi": "Xuân đào (nectarine, tươi)",
+  "name_en": "Nectarine, raw",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "169914",
+    "source_url": "https://fdc.nal.usda.gov/food-details/169914/nutrients",
+    "scientific_name": "Prunus persica var. nucipersica",
+    "kcal_per_100g": 44,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 1.06,
+    "fat_g": 0.32,
+    "carb_g": 10.55,
+    "fiber_g": 1.7,
+    "water_g": 87.59,
+    "sodium_mg": 0,
+    "mapping_confidence": "high",
+    "mapping_note": "'Nectarines, raw' — xuân đào là giống đào vỏ nhẵn không lông (var. nucipersica), đúng mục USDA.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "quả vừa",
+      "grams": 142.0,
+      "note": "đường kính 2-1/2 inch",
+      "source": "FDC 169914 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}

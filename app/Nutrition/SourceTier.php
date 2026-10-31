@@ -26,6 +26,8 @@ final class SourceTier
         'ifct_in',     // Indian Food Composition Tables (ICMR–NIN) — qua nguồn đăng lại
         'thai_fct',    // Bảng thành phần Thái Lan — dự phòng, qua nguồn đăng lại
         'fnri_ph',     // FNRI Philippines — dự phòng, qua nguồn đăng lại
+        'tbca_br',     // TBCA Brazil (USP/FoRC) — bảng quốc gia của nước bản địa của loài, FRUIT-002 2026-10-31
+        'tkpi_id',     // TKPI Indonesia (Kemenkes) — bảng quốc gia của nước bản địa của loài, FRUIT-002 2026-10-31
     ];
 
     public static function isSecondary(?string $fctSource): bool

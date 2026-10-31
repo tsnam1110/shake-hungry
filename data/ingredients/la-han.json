@@ -1,0 +1,57 @@
+{
+  "slug": "la-han",
+  "name_vi": "La hán quả (khô)",
+  "name_en": "Monk fruit, dried (luo han guo)",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "literature",
+    "external_id": null,
+    "source_url": "https://www.tuliu.com/read-86708.html",
+    "scientific_name": "Siraitia grosvenorii",
+    "kcal_per_100g": 169,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 13.4,
+    "fat_g": 0.8,
+    "carb_g": 65.6,
+    "fiber_g": 38.6,
+    "water_g": null,
+    "sodium_mg": 10.6,
+    "mapping_confidence": "low",
+    "mapping_note": "Nguồn THỨ CẤP tầng 6 (văn liệu/bảng quốc gia trích dẫn lại): hàng số la hán quả KHÔ của Bảng thành phần thực phẩm Trung Quốc (中国食物成分表, Dương Nguyệt Hân chủ biên) được tái bản nhất quán ở nhiều nguồn Trung Quốc: 169 kcal; đạm 13,4; béo 0,8; carb 65,6 (trong đó xơ ăn uống 38,6); natri 10,6 mg; Ca 40 mg; P 180 mg; vitamin C 5 mg/100 g. Tự kiểm Atwater khớp: carb khả dụng (65,6-38,6) x 4 + đạm 13,4 x 4 + béo 0,8 x 9 ≈ 169 kcal. Nhãn quả khô nguyên trái bán lẻ độc lập (Eaglobe) cho đúng 169 kcal/65,6 g carb — khớp hàng bảng này. USDA/FNRI/IFCT/MEXT không có mục la hán. Để low vì: chưa đối chiếu trực tiếp bản in bảng TQ, và các phân tích khác cho đạm thấp hơn (7,1-7,8%) — dao động mẫu lớn. LƯU Ý sử dụng: số này là cho QUẢ KHÔ NGUYÊN TRÁI; vị ngọt đến từ mogroside (không sinh năng lượng) nên nước hãm la hán thực tế nạp vào rất ít năng lượng — không suy ngược năng lượng nước hãm từ số quả khô. File này là dạng KHÔ (state:kho) — dạng lưu hành phổ biến ở VN.",
+    "alternatives": [
+      {
+        "name": "Các phân tích thành phần la hán khô khác (tổng hợp y văn Trung Quốc): đạm 7,1-7,8%, tổng đường 25,2-38,3%",
+        "why_not": "Chỉ công bố từng phần (đạm/đường), không có hàng số đầy đủ kèm năng lượng; cho thấy đạm dao động lớn theo mẫu (7,1-13,4 g) — đã ghi vào mapping_note, không trộn số giữa các nguồn (QT-4)",
+        "external_id": null,
+        "kcal_per_100g": null
+      },
+      {
+        "name": "Nhãn bột chiết xuất la hán (extract/mogroside powder) trên thị trường: ~100-385 kcal/100 g bột",
+        "why_not": "Là sản phẩm CHIẾT XUẤT/bột nước ép sấy (thành phần chủ yếu mogroside hoặc maltodextrin mang) — không phải quả khô nguyên trái lưu hành ở VN",
+        "external_id": null,
+        "kcal_per_100g": 100
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": 100.0,
+  "edible_portion_note": "Phần dùng = 100% quả khô: khi hãm/sắc, cả quả (vỏ mỏng, thịt, hạt) được đập dập cho vào nước, bã bỏ sau khi chiết — không có phần thải bỏ trước khi dùng",
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "low",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:thuc-vat",
+    "state:kho"
+  ]
+}

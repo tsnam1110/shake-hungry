@@ -91,6 +91,8 @@ final class TaggingRules
         'lac-song' => 'kho', 'lac-rang' => 'kho', 'vung' => 'kho', 'vung-rang' => 'kho',
         'hat-dieu-rang' => 'kho',
         'tao-tau-kho' => 'kho', 'nhan-kho' => 'kho', 'qua-danh-danh' => 'kho',
+        'la-han' => 'kho', 'qua-xay' => 'kho', // quả lưu hành dạng khô (FRUIT-002)
+        'cha-la' => 'kho', // chà là lưu hành dạng khô (FRUIT-002)
         // Lên men
         'mam-ca-linh' => 'len-men', 'mam-ca-sac' => 'len-men', 'mam-nem' => 'len-men',
         'mam-ruoc' => 'len-men', 'mam-tom' => 'len-men', 'nuoc-mam-cong-nghiep' => 'len-men',

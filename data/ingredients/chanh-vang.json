@@ -1,0 +1,51 @@
+{
+  "slug": "chanh-vang",
+  "name_vi": "Chanh vàng (lemon, tươi)",
+  "name_en": "Lemon, raw, without peel",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "167746",
+    "source_url": "https://fdc.nal.usda.gov/food-details/167746/nutrients",
+    "scientific_name": "Citrus limon",
+    "kcal_per_100g": 29,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 1.1,
+    "fat_g": 0.3,
+    "carb_g": 9.32,
+    "fiber_g": 2.8,
+    "water_g": 88.98,
+    "sodium_mg": 2,
+    "mapping_confidence": "high",
+    "mapping_note": "FRUIT-002 2026-10-31: USDA SR Legacy 167746 \"Lemons, raw, without peel\" — đúng loài Citrus limon (chanh vàng/lemon). PHÂN BIỆT với file chanh.json (chanh xanh): chanh xanh VN là C. aurantiifolia, bản USDA của slug đó là C. latifolia — chanh vàng khác loài, quả to hơn, chua dịu và thơm vỏ hơn; không dùng chung bộ số.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "quả",
+      "grams": 58.0,
+      "note": "foodMeasures 'fruit (2-1/8\" dia)' — chanh vàng nhập cỡ tương đương",
+      "source": "FDC 167746 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}

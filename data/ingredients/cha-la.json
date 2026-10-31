@@ -1,0 +1,58 @@
+{
+  "slug": "cha-la",
+  "name_vi": "Chà là (khô)",
+  "name_en": "Dates, deglet noor, dried",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "171726",
+    "source_url": "https://fdc.nal.usda.gov/food-details/171726/nutrients",
+    "scientific_name": "Phoenix dactylifera",
+    "kcal_per_100g": 282,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 2.45,
+    "fat_g": 0.39,
+    "carb_g": 75.03,
+    "fiber_g": 8,
+    "water_g": 20.53,
+    "sodium_mg": 2,
+    "mapping_confidence": "high",
+    "mapping_note": "'Dates, deglet noor' — chà là lưu hành tại VN chủ yếu ở dạng quả khô, và Deglet Noor (Tunisia/Algeria) là giống khô phổ biến nhất trên thị trường. Số tính cho quả đã bỏ hạt.",
+    "alternatives": [
+      {
+        "name": "Dates, medjool (USDA SR Legacy)",
+        "why_not": "Medjool là giống cao cấp (quả to, mềm) ít phổ biến hơn Deglet Noor tại VN; số gần tương đương (277 kcal) nên không tách file riêng.",
+        "external_id": "168191",
+        "kcal_per_100g": 277
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "quả (đã bỏ hạt)",
+      "grams": 7.1,
+      "note": "",
+      "source": "FDC 171726 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:thuc-vat",
+    "state:kho"
+  ]
+}

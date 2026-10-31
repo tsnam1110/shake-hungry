@@ -1,0 +1,57 @@
+{
+  "slug": "dua-gang",
+  "name_vi": "Dưa gang",
+  "name_en": "Oriental pickling melon, raw",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "mext_jp",
+    "external_id": "06106",
+    "source_url": "https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=6_06106_7",
+    "scientific_name": "Cucumis melo var. conomon",
+    "kcal_per_100g": 15,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 0.9,
+    "fat_g": 0.1,
+    "carb_g": 3.3,
+    "fiber_g": 1.2,
+    "water_g": 95.3,
+    "sodium_mg": 1,
+    "mapping_confidence": "low",
+    "mapping_note": "Nguồn THỨ CẤP tầng 6: Bảng thành phần thực phẩm Nhật Bản (MEXT, 日本食品標準成分表 八訂増補2023), mã 06106 'しろうり/果実/生' (Oriental pickling melon, fruit, raw) — ĐÚNG thứ Cucumis melo var. conomon, ăn non giòn kiểu rau (gỏi, muối, ăn sống) như dưa gang VN; đã mở trực tiếp fooddb.mext.go.jp kiểm chứng toàn bộ hàng số (nước 95,3;廃棄率/phần bỏ 25%). USDA/FNRI/IFCT không có mục cho var. conomon; các mục melon chín của USDA (cantaloupe 34, honeydew 36 kcal) là quả CHÍN ngọt — sai bản chất dưa gang ăn non (đường thấp hơn hẳn). Để low vì: nguồn tầng 6, mẫu Nhật Bản. LƯU Ý tên gọi: trên nhiều trang VN 'dưa gang' bị dùng lẫn cho melon chín ngọt (số 34-64 kcal lan truyền thực chất là số cantaloupe USDA) — slug này theo đúng định danh var. conomon; melon chín xem dua-le/dua-bo.",
+    "alternatives": [
+      {
+        "name": "Melons, cantaloupe, raw (SR Legacy)",
+        "why_not": "Melon CHÍN ngọt (34 kcal, carb 8,16 g) — dưa gang var. conomon ăn non, carb chỉ ~3,3 g; dùng số cantaloupe sẽ ước gấp đôi năng lượng",
+        "external_id": "169092",
+        "kcal_per_100g": 34
+      },
+      {
+        "name": "Cucumber, with peel, raw (SR Legacy)",
+        "why_not": "Hồ sơ gần (15 kcal) nhưng KHÁC LOÀI (Cucumis sativus) — MEXT có mục đúng thứ conomon nên ưu tiên nguồn đúng loài/thứ theo thang nguồn",
+        "external_id": "168409",
+        "kcal_per_100g": 15
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": 75.0,
+  "edible_portion_note": "Theo MEXT 06106: tỉ lệ thải bỏ (廃棄率) 25% (vỏ + hạt) → phần ăn được 75% trên quả nguyên",
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "low",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}

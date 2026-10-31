@@ -1,0 +1,51 @@
+{
+  "slug": "may",
+  "name_vi": "Mây (salak, tươi)",
+  "name_en": "Salak (snake fruit), raw",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "tkpi_id",
+    "external_id": null,
+    "source_url": "https://www.panganku.org/en-EN/view",
+    "scientific_name": "Salacca zalacca",
+    "kcal_per_100g": 77,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 0.4,
+    "fat_g": 0,
+    "carb_g": 20.9,
+    "fiber_g": null,
+    "water_g": 78,
+    "sodium_mg": null,
+    "mapping_confidence": "low",
+    "mapping_note": "Nguồn THỨ CẤP tầng 6 theo thang DATA-PIPELINE §7.2 — món dùng nó mang cờ CHƯA KIỂM ĐỊNH. Bảng thành phần thực phẩm Indonesia (TKPI, Kemenkes RI — truy cập qua panganku.org và các bản đăng lại nhất quán): 77 kcal, nước 78.0, đạm 0.4, béo 0, carb 20.9 /100 g phần ăn được. USDA, FNRI (Philippines — salak không phải quả bản địa) và IFCT (Ấn Độ) đều không có mục salak/snake fruit. Xơ (~1–2 g) và natri không thống nhất giữa các bản đăng lại nên để null thay vì chép một con số không chắc.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": "Tỉ lệ ăn được giữa các bản TKPI đăng lại chênh nhau lớn (50% ở bảng cũ, cao hơn ở bản mới) — chưa chốt được, để null.",
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "quả (phần thịt ăn được)",
+      "grams": 35.0,
+      "note": "quả nguyên 50–70 g; ước lượng phần thịt sau khi bóc vỏ vảy và bỏ hạt, cần đo lại",
+      "source": "ước lượng"
+    }
+  ],
+  "source": "curated",
+  "confidence": "low",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}

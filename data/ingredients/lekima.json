@@ -1,0 +1,57 @@
+{
+  "slug": "lekima",
+  "name_vi": "Lêkima (quả trứng gà)",
+  "name_en": "Lucuma (eggfruit), raw",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "literature",
+    "external_id": null,
+    "source_url": "https://1library.co/article/contenido-g-g-muestra-cuantificaci%C3%B3n-macronutrientes-micronutrientes-vitamina.oz1mkd3z",
+    "scientific_name": "Pouteria lucuma",
+    "kcal_per_100g": 99,
+    "kcal_min": 99,
+    "kcal_max": 134,
+    "protein_g": 1.5,
+    "fat_g": 0.5,
+    "carb_g": 25,
+    "fiber_g": 1.3,
+    "water_g": 72.3,
+    "sodium_mg": null,
+    "mapping_confidence": "medium",
+    "mapping_note": "Nguồn THỨ CẤP (tầng 6) — món dùng nó mang cờ CHƯA KIỂM ĐỊNH. USDA chỉ có lucuma dạng Branded (bột/pulp đóng gói) — đã loại theo chỉ đạo nhiệm vụ. Dùng Bảng Thành phần Thực phẩm Peru (Tablas Peruanas de Composición de Alimentos, CENAN–INS 2009, qua Collazos 2016) cho phần thịt quả tươi: 99 kcal, nước 72,3, đạm 1,5, béo 0,5, carb 25,0, xơ 1,3 — bộ số được nhiều tài liệu học thuật Peru trích nhất quán. Độ ẩm lucuma dao động rất mạnh theo giống (seda/palo) và độ chín: luận án đo trực tiếp thịt quả tươi ở Virú cho nước chỉ 58,0%, đạm 1,95, carb 30,62 → ~134 kcal (đặt làm kcal_max + alternatives). Lêkima VN cùng loài Pouteria lucuma, ăn chín mềm, kết cấu bột khô như lòng đỏ trứng — kỳ vọng nằm trong dải này. Natri: bảng Peru không công bố → null.",
+    "alternatives": [
+      {
+        "name": "Đo trực tiếp thịt quả lucuma tươi, Virú, Peru (luận án ĐH, 1library)",
+        "why_not": "Mẫu phòng thí nghiệm một vùng/một giống, độ ẩm 58% khô hơn hẳn bảng quốc gia — dùng làm cận trên thay vì điểm chính",
+        "external_id": null,
+        "kcal_per_100g": 134
+      },
+      {
+        "name": "USDA Branded 'LUCUMA POWDER' / 'LUCUMA PULP'",
+        "why_not": "Sản phẩm thương mại (bột sấy / pulp chế biến), không phải quả tươi — không dùng làm bản ghi tham chiếu",
+        "external_id": null,
+        "kcal_per_100g": null
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": 75.0,
+  "edible_portion_note": "Thịt quả chiếm 69–82% khối lượng quả nguyên (vỏ 7–15%, hạt 8–14% — theo tài liệu kỹ thuật Peru về lucuma); lấy điểm giữa ~75%. Bộ số dinh dưỡng tính trên 100 g phần thịt quả.",
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "medium",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}

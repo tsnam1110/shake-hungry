@@ -1,0 +1,51 @@
+{
+  "slug": "vu-sua",
+  "name_vi": "Vú sữa",
+  "name_en": "Star apple, raw",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "fnri_ph",
+    "external_id": "E086",
+    "source_url": "https://i.fnri.dost.gov.ph/fct/library/report/3668",
+    "scientific_name": "Chrysophyllum cainito",
+    "kcal_per_100g": 80,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 1.3,
+    "fat_g": 0.6,
+    "carb_g": 17.4,
+    "fiber_g": 3,
+    "water_g": 80.5,
+    "sodium_mg": 9,
+    "mapping_confidence": "low",
+    "mapping_note": "Nguồn THỨ CẤP tầng 6 theo thang DATA-PIPELINE §7.2 (chỉ dùng vì USDA không có Chrysophyllum cainito — đã tra FDC 'star apple'/'cainito' không có mục) → món dùng nó mang cờ CHƯA KIỂM ĐỊNH. PhilFCT (FNRI Philippines) mục E086 'Star apple, purple', đúng loài C. cainito — đọc trực tiếp bản báo cáo FNRI 2026-10-31: phần ăn được 63%, nước 80,5, 80 kcal, đạm 1,3, béo 0,6, carb 17,4, xơ 3,0, đường 11,2, natri 9 mg; tự nhất quán Atwater 1,3×4 + 0,6×9 + 17,4×4 ≈ 80 ✓. Vú sữa VN có cả giống vỏ tím và vỏ xanh/trắng — bản ghi là giống tím; chênh lệch giữa hai nhóm giống được coi là nhỏ so với sai số bảng.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": 63.0,
+  "edible_portion_note": "Theo PhilFCT E086: phần ăn được 63% (bỏ vỏ dày và hạt). PROSEA đối chiếu cho dải 53–63%.",
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "quả",
+      "grams": 125.0,
+      "note": "ước lượng phần ăn được của quả ~200 g nguyên trái × 63% (EP PhilFCT); quả VN dao động 150–300 g, cần đo lại",
+      "source": "ước lượng theo PhilFCT"
+    }
+  ],
+  "source": "curated",
+  "confidence": "low",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}

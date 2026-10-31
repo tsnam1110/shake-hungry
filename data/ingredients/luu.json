@@ -1,0 +1,57 @@
+{
+  "slug": "luu",
+  "name_vi": "Lựu (tươi)",
+  "name_en": "Pomegranate, raw",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "169134",
+    "source_url": "https://fdc.nal.usda.gov/food-details/169134/nutrients",
+    "scientific_name": "Punica granatum",
+    "kcal_per_100g": 83,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 1.67,
+    "fat_g": 1.17,
+    "carb_g": 18.7,
+    "fiber_g": 4,
+    "water_g": 77.93,
+    "sodium_mg": 3,
+    "mapping_confidence": "high",
+    "mapping_note": "'Pomegranates, raw' — số tính cho phần hạt (arils) ăn được. Lựu bán tại VN gồm giống trong nước và nhập khẩu (Ấn Độ, Peru, Israel...), cùng loài, thành phần đa lượng gần nhau.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": 55.0,
+  "edible_portion_note": "Chỉ ăn phần hạt (arils): vỏ quả + màng ngăn chiếm khoảng 45% trọng lượng quả nguyên — tỉ lệ ăn được thấp, cần tính khi cân quả nguyên trái.",
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "cup hạt",
+      "grams": 174.0,
+      "note": "",
+      "source": "FDC 169134 foodMeasures"
+    },
+    {
+      "unit_name": "quả (phần hạt ăn được)",
+      "grams": 155.0,
+      "note": "suy từ quả nguyên 282 g (FDC 169134) × tỉ lệ ăn được 55%",
+      "source": "FDC 169134 foodMeasures + edible_portion_pct"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}

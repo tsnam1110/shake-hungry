@@ -1,0 +1,51 @@
+{
+  "slug": "dau-den",
+  "name_vi": "Dâu đen (mâm xôi đen)",
+  "name_en": "Blackberries, raw",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "173946",
+    "source_url": "https://fdc.nal.usda.gov/food-details/173946/nutrients",
+    "scientific_name": "Rubus fruticosus",
+    "kcal_per_100g": 43,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 1.39,
+    "fat_g": 0.49,
+    "carb_g": 9.61,
+    "fiber_g": 5.3,
+    "water_g": 88.15,
+    "sodium_mg": 1,
+    "mapping_confidence": "high",
+    "mapping_note": "'Blackberries, raw' — mục SR cho mâm xôi đen trồng (tổ hợp loài Rubus fruticosus agg.; FDC ghi 'Rubus spp.'). Đúng loại blackberry nhập khẩu lưu hành tại VN. Đã kiểm chứng qua FDC API.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "cup",
+      "grams": 144.0,
+      "note": null,
+      "source": "FDC 173946 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}

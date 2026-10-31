@@ -1,0 +1,51 @@
+{
+  "slug": "dua-bo",
+  "name_vi": "Dưa bở",
+  "name_en": "Muskmelon, soft ripe, raw",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "169092",
+    "source_url": "https://fdc.nal.usda.gov/food-details/169092/nutrients",
+    "scientific_name": "Cucumis melo",
+    "kcal_per_100g": 34,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 0.84,
+    "fat_g": 0.19,
+    "carb_g": 8.16,
+    "fiber_g": 0.9,
+    "water_g": 90.15,
+    "sodium_mg": 16,
+    "mapping_confidence": "medium",
+    "mapping_note": "'Melons, cantaloupe, raw' (kiểm chứng trực tiếp qua FDC API 2026-10-31) — dùng ở mức ĐẠI DIỆN NHÓM melon chín của loài Cucumis melo: dưa bở là dưa thơm chín mềm (thịt bở, dầm đường/đá ăn), USDA không có mục riêng cho dưa bở. Cùng một mục nguồn với dua-luoi (dưa lưới) vì cả hai đều là thịt quả melon chín cùng loài và SR Legacy chỉ có hai mục melon chín (cantaloupe/honeydew); dưa bở chín thơm, mềm ngọt nên gần nhóm cantaloupe hơn honeydew. Để medium: số là của nhóm melon chín, không phải đo riêng trên dưa bở VN (dưa bở thường mềm và ngọt đậm hơn khi chín rộ — sai lệch tuyệt đối nhỏ ở mức ~34 kcal).",
+    "alternatives": [
+      {
+        "name": "Melons, honeydew, raw (SR Legacy)",
+        "why_not": "Honeydew ruột xanh nhạt, vị thanh, hồ sơ hợp với dưa lê hơn; dưa bở chín mềm thơm đậm thuộc phía muskmelon/cantaloupe. Mục này đã dùng cho dua-le",
+        "external_id": "169911",
+        "kcal_per_100g": 36
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "medium",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}

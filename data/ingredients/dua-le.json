@@ -1,0 +1,51 @@
+{
+  "slug": "dua-le",
+  "name_vi": "Dưa lê",
+  "name_en": "Oriental melon (sweet melon), raw",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "169911",
+    "source_url": "https://fdc.nal.usda.gov/food-details/169911/nutrients",
+    "scientific_name": "Cucumis melo",
+    "kcal_per_100g": 36,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 0.54,
+    "fat_g": 0.14,
+    "carb_g": 9.09,
+    "fiber_g": 0.8,
+    "water_g": 89.82,
+    "sodium_mg": 18,
+    "mapping_confidence": "medium",
+    "mapping_note": "'Melons, honeydew, raw' (kiểm chứng trực tiếp qua FDC API 2026-10-31). Dưa lê VN thuộc nhóm dưa thơm ruột trắng/xanh nhạt của loài Cucumis melo (nhóm dưa lê phương Đông, var. makuwa) — USDA không có mục riêng cho nhóm này. Honeydew là mục melon ruột nhạt, vị ngọt thanh có hồ sơ đường/nước sát dưa lê nhất trong SR Legacy. Để medium vì là ánh xạ theo nhóm cultivar trong cùng loài, không phải đúng giống dưa lê VN.",
+    "alternatives": [
+      {
+        "name": "Melons, cantaloupe, raw (SR Legacy)",
+        "why_not": "Cantaloupe là melon RUỘT CAM — đã dùng cho dua-luoi (dưa lưới ruột cam) và dua-bo. Dưa lê ruột trắng/xanh nhạt, không dùng chung tránh lẫn hồ sơ hai loại quả khác nhau",
+        "external_id": "169092",
+        "kcal_per_100g": 34
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "medium",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}

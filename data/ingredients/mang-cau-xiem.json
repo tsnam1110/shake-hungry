@@ -1,0 +1,57 @@
+{
+  "slug": "mang-cau-xiem",
+  "name_vi": "Mãng cầu xiêm",
+  "name_en": "Soursop, raw",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "167761",
+    "source_url": "https://fdc.nal.usda.gov/food-details/167761/nutrients",
+    "scientific_name": "Annona muricata",
+    "kcal_per_100g": 66,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 1,
+    "fat_g": 0.3,
+    "carb_g": 16.84,
+    "fiber_g": 3.3,
+    "water_g": 81.16,
+    "sodium_mg": 14,
+    "mapping_confidence": "high",
+    "mapping_note": "Đúng loài Annona muricata — mãng cầu xiêm VN là cùng một loài trồng thương mại toàn cầu, không có cảnh báo giống đáng kể. Kiểm chứng trực tiếp qua FDC API ngày 2026-10-31: 66 kcal, nước 81,16, đạm 1,0, béo 0,3, carb 16,84, xơ 3,3, natri 14 mg. Quả ăn chín tươi, cơm mềm nhiều nước; phần bỏ là vỏ gai và hạt (hạt có độc tính nhẹ — không ăn).",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": "SR Legacy không công bố tỉ lệ thải bỏ cho mục này. Vỏ + hạt chiếm đáng kể (~30–40% trọng lượng quả nguyên trái tuỳ cỡ quả) — cần đo lại trên quả VN trước khi gán số.",
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "cup cơm",
+      "grams": 225.0,
+      "note": "phần cơm đã bỏ hạt",
+      "source": "FDC 167761 foodPortions"
+    },
+    {
+      "unit_name": "quả",
+      "grams": 625.0,
+      "note": "phần ăn được của 1 quả cỡ 7\" × 5¼\" theo FDC — quả VN thường to hơn (0,5–2 kg nguyên trái), cần đo lại",
+      "source": "FDC 167761 foodPortions"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}

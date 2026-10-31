@@ -1,0 +1,51 @@
+{
+  "slug": "nho-than-go",
+  "name_vi": "Nho thân gỗ (jabuticaba)",
+  "name_en": "Jabuticaba, raw",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "tbca_br",
+    "external_id": "BRC0079C",
+    "source_url": "https://www.tbca.net.br/base-dados/int_composicao_alimentos.php?n0REd3kv7e86D%2BViXWYUnQ%3D%3D=0MbCloxg5AbJeTGGrevTbg%3D%3D",
+    "scientific_name": "Plinia cauliflora",
+    "kcal_per_100g": 60,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 0.61,
+    "fat_g": 0.13,
+    "carb_g": 15.3,
+    "fiber_g": 2.3,
+    "water_g": 83.6,
+    "sodium_mg": null,
+    "mapping_confidence": "low",
+    "mapping_note": "Nguồn THỨ CẤP theo quyết định chủ dự án 2026-10-31 (chỉ dùng khi nguồn chính thống không có) — món dùng nó mang cờ CHƯA KIỂM ĐỊNH. USDA FDC KHÔNG có mục jabuticaba tham chiếu (tra 'jaboticaba'/'jabuticaba'/'Myrciaria' chỉ ra sản phẩm Branded). Bộ số lấy từ TBCA — Bảng thành phần thực phẩm Brazil (Đại học São Paulo/FoRC, bảng quốc gia của nước bản địa của loài này), mã BRC0079C 'Jabuticaba, in natura': nước 83,6 / đạm 0,61 / béo 0,13 / carb tổng 15,3 (carb khả dụng 13,0) / xơ 2,3 / tro 0,36 / vitamin C 16,2 mg — năng lượng công bố 60 kcal tự nhất quán theo cách tính của TBCA (carb khả dụng + xơ). TBCA ghi tên khoa học Myrciaria cauliflora Berg. — đồng danh của Plinia cauliflora (cùng một loài, phân loại Myrtaceae đã đổi chi). Natri TBCA ghi 'tr' (vết) → để null. ⚠️ MÃ NGUỒN MỚI: 'tbca_br' chưa có trong SourceTier::SECONDARY và DATA-PIPELINE §7.2 — cần đăng ký khi tích hợp (như đã làm với mext_jp/ifct_in) thì cờ 'chưa kiểm định' mới tự áp dụng. Ở VN nho thân gỗ là quả đặc sản trồng (cây cho quả trực tiếp trên thân) + nhập khẩu, ăn nguyên quả.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "quả",
+      "grams": 5.0,
+      "note": "1 quả (pedaço/unidade cỡ M) theo TBCA",
+      "source": "TBCA BRC0079C"
+    }
+  ],
+  "source": "curated",
+  "confidence": "low",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}

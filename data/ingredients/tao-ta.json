@@ -1,0 +1,51 @@
+{
+  "slug": "tao-ta",
+  "name_vi": "Táo ta (tươi)",
+  "name_en": "Indian jujube (ber), raw",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "literature",
+    "external_id": null,
+    "source_url": "https://assets-global.echocommunity.org/pdf/FPI/PFS/Ziziphus+mauritiana.PDF",
+    "scientific_name": "Ziziphus mauritiana",
+    "kcal_per_100g": 80,
+    "kcal_min": 74,
+    "kcal_max": 86,
+    "protein_g": 0.8,
+    "fat_g": null,
+    "carb_g": null,
+    "fiber_g": null,
+    "water_g": null,
+    "sodium_mg": null,
+    "mapping_confidence": "low",
+    "mapping_note": "Nguồn THỨ CẤP theo quyết định chủ dự án 2026-10-31 (chỉ dùng khi nguồn chính thống không có) — hệ thống đánh dấu CHƯA KIỂM ĐỊNH khi hiển thị. FRUIT-002 2026-10-31: táo ta = Ziziphus mauritiana. USDA KHÔNG có loài này (tra FDC 'ziziphus'/'indian jujube' chỉ ra Z. jujuba — đã tách thành slug tao-tau). IFCT 2017 (Ấn Độ) có mục 'Ber' đúng loài nhưng chưa kiểm chứng trực tiếp được bộ số trong vòng tra này. Số dùng tạm từ văn liệu tổng hợp: Food Plants International Database (French & Maynard 2022, bản in 10/01/2023) cho quả tươi 86 kcal, đạm 0,8 g, nước 77,0 g/100g phần ăn được; truyền thống bảng Ấn Độ (Gopalan) cho ~74 kcal, nước 81,6–83,0 g, carb ~17 g, đạm 0,8 g; tổng quan văn liệu (Springer 2021) chốt dải 70–90 kcal. Lấy điểm giữa 80 kcal, khoảng 74–86; chỉ chốt đạm 0,8 g (hai nguồn khớp nhau), các macro còn lại để null vì các nguồn lệch nhau (đặc biệt nước 77 vs 81,6–83 — khác nhau theo giống/độ chín). VIỆC CẦN LÀM: kiểm chứng trực tiếp mục 'Ber' trong IFCT 2017 rồi thay bộ số này.",
+    "alternatives": [
+      {
+        "name": "Jujube, raw — SR Legacy (FDC 168151)",
+        "why_not": "Là Ziziphus jujuba (táo tàu) — khác loài với táo ta Z. mauritiana; chỉ dùng cho slug tao-tau",
+        "external_id": "168151",
+        "kcal_per_100g": 79
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "low",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}

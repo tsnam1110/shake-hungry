@@ -1,0 +1,51 @@
+{
+  "slug": "binh-bat",
+  "name_vi": "Bình bát",
+  "name_en": "Custard apple (bullock's heart), raw",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "171725",
+    "source_url": "https://fdc.nal.usda.gov/food-details/171725/nutrients",
+    "scientific_name": "Annona reticulata",
+    "kcal_per_100g": 101,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 1.7,
+    "fat_g": 0.6,
+    "carb_g": 25.2,
+    "fiber_g": 2.4,
+    "water_g": 71.5,
+    "sodium_mg": 4,
+    "mapping_confidence": "medium",
+    "mapping_note": "ĐỊNH DANH: 'bình bát' ăn tươi ở miền Tây là Annona reticulata TRỒNG (cơm vàng, ngọt, ăn tươi/dầm đường) — KHÔNG phải Annona glabra (bình bát mé sông, quả nhỏ, cơm nhạt, chủ yếu mọc hoang ven kênh rạch, hiếm khi ăn). Bản ghi SR Legacy FDC 171725 'Custard-apple, (bullock's-heart), raw' đúng loài A. reticulata, kiểm chứng qua FDC API 2026-10-31: 101 kcal, nước 71,5, đạm 1,7, béo 0,6, carb 25,2, xơ 2,4, natri 4 mg. Để medium (không high) vì quả VN nhỏ và nhiều hạt hơn giống thương mại trong bản ghi, và ranh giới tên gọi giữa hai loài trong dân gian chưa dứt khoát — nếu sau này biên soạn bình bát mé sông (A. glabra) phải tách bản ghi riêng, USDA không có mục cho loài đó.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": "SR Legacy không công bố tỉ lệ thải bỏ. Quả rất nhiều hạt + vỏ mỏng: phần cơm ăn được ước ~55–65% trọng lượng quả — cần đo lại trên quả VN trước khi gán số.",
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "quả",
+      "grams": 150.0,
+      "note": "ước lượng phần cơm ăn được của quả ~250 g nguyên trái (bỏ vỏ + hạt); cần đo lại",
+      "source": "ước lượng"
+    }
+  ],
+  "source": "curated",
+  "confidence": "medium",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}

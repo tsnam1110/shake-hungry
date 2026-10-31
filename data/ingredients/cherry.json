@@ -1,0 +1,57 @@
+{
+  "slug": "cherry",
+  "name_vi": "Anh đào (cherry)",
+  "name_en": "Cherries, sweet, raw",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "171719",
+    "source_url": "https://fdc.nal.usda.gov/food-details/171719/nutrients",
+    "scientific_name": "Prunus avium",
+    "kcal_per_100g": 63,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 1.06,
+    "fat_g": 0.2,
+    "carb_g": 16.01,
+    "fiber_g": 2.1,
+    "water_g": 82.25,
+    "sodium_mg": 0,
+    "mapping_confidence": "high",
+    "mapping_note": "'Cherries, sweet, raw' — đúng loài Prunus avium, anh đào ngọt thương mại lưu hành tại VN (hàng nhập Mỹ/Chile/Úc). Số đã kiểm chứng trực tiếp qua FDC API.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "cup",
+      "grams": 154.0,
+      "note": null,
+      "source": "FDC 171719 foodMeasures"
+    },
+    {
+      "unit_name": "quả",
+      "grams": 8.2,
+      "note": null,
+      "source": "FDC 171719 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}

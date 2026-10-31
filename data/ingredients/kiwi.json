@@ -1,0 +1,51 @@
+{
+  "slug": "kiwi",
+  "name_vi": "Kiwi xanh",
+  "name_en": "Kiwifruit, green, raw",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "usda_foundation",
+    "external_id": "327046",
+    "source_url": "https://fdc.nal.usda.gov/food-details/327046/nutrients",
+    "scientific_name": "Actinidia deliciosa",
+    "kcal_per_100g": 58,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 1.06,
+    "fat_g": 0.44,
+    "carb_g": 14,
+    "fiber_g": 3,
+    "water_g": 83.9,
+    "sodium_mg": 5,
+    "mapping_confidence": "high",
+    "mapping_note": "'Kiwifruit, green, raw' (Foundation) — đúng loài Actinidia deliciosa, kiwi xanh nhập khẩu phổ biến tại VN. Số đã kiểm chứng trực tiếp qua FDC API.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "cup miếng",
+      "grams": 140.0,
+      "note": null,
+      "source": "FDC 327046 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "slug": "dau-da",
+  "name_vi": "Dâu da đất",
+  "name_en": "Rambai (Burmese grape), raw",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "thai_fct",
+    "external_id": "THE60",
+    "source_url": "https://www.mcgill.ca/files/cine/Karen_Datatables_fruits_Jn06.pdf",
+    "scientific_name": "Baccaurea ramiflora",
+    "kcal_per_100g": 48,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 0.7,
+    "fat_g": 0.3,
+    "carb_g": 10.5,
+    "fiber_g": null,
+    "water_g": 88.2,
+    "sodium_mg": null,
+    "mapping_confidence": "low",
+    "mapping_note": "Nguồn THỨ CẤP tầng 6 theo thang DATA-PIPELINE §7.2 — món dùng nó mang cờ CHƯA KIỂM ĐỊNH. Thai FCT 1999 mục THE60 'ma-fai' định danh đích danh Baccaurea ramiflora Lour. — đúng loài dâu da đất VN (đọc qua bản đăng lại CINE Community Food System Data Tables, McGill, bảng #89): nước 88,2, 48 kcal, đạm 0,7, béo 0,3, carb 10,5, vitamin C 55 mg; tự nhất quán Atwater 0,7×4 + 0,3×9 + 10,5×4 ≈ 48 ✓. Xơ và natri: Thai FCT không báo cáo ở bản đăng lại → để null. Đối chiếu: ASEAN FCD mục AAE99 'Rambai' (gốc dữ liệu Thái) gộp ba loài B. motleyana + B. ramiflora + B. sapida — hàng THE60 tách đúng loài nên ưu tiên hơn. USDA/Ciqual/CNF/CoFID/FNRI đều không có chi Baccaurea. LƯU Ý TÊN GỌI: một số vùng phía Bắc cũng gọi bòn bon (Lansium) là 'dâu da' — file này CHỈ là Baccaurea ramiflora theo đúng phân công FRUIT-002; bòn bon có file riêng (bon-bon).",
+    "alternatives": [
+      {
+        "name": "Rambai Baccaurea motleyana — bộ số tổng kết trong bài tổng quan Food Science & Nutrition / Prodhan & Mridu 2023 (nước 83,7, đạm 0,4, béo 0,4, carb 14,6, xơ 0,1, natri 2)",
+        "why_not": "Loài chị em B. motleyana, không phải B. ramiflora; nước thấp hơn hẳn (83,7 so với 88,2) cho thấy mẫu/độ chín khác. Chỉ dùng đối chiếu: cùng chi, cùng dải năng lượng thấp — không thay được hàng đúng loài THE60",
+        "external_id": null,
+        "kcal_per_100g": 64
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": "Thai FCT không công bố tỉ lệ phần ăn được cho mục này. Quả nhỏ 2–4 cm, ăn phần cơm trong sau khi bóc vỏ mỏng và bỏ hạt; vỏ + hạt ước chiếm ~35–40% — cần đo lại trước khi gán số.",
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "low",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}

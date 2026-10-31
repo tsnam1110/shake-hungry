@@ -1,0 +1,51 @@
+{
+  "slug": "qua-sim",
+  "name_vi": "Quả sim",
+  "name_en": "Rose myrtle fruit, raw",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "literature",
+    "external_id": null,
+    "source_url": "http://hdl.handle.net/2078.1/156442",
+    "scientific_name": "Rhodomyrtus tomentosa",
+    "kcal_per_100g": 36,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 0.98,
+    "fat_g": 1.03,
+    "carb_g": 22,
+    "fiber_g": 16.3,
+    "water_g": 75.5,
+    "sodium_mg": 28,
+    "mapping_confidence": "low",
+    "mapping_note": "Nguồn THỨ CẤP (tầng 6) — món dùng nó mang cờ CHƯA KIỂM ĐỊNH. Không bảng FCT nào có Rhodomyrtus tomentosa. Dùng nghiên cứu đo trực tiếp đúng loài trên QUẢ VIỆT NAM: Lai et al., Food Chemistry 168 (2015) 410–416 (mẫu Hải Dương/Thái Nguyên/Hoà Bình), quy đổi từ cơ sở chất khô sang 100 g quả tươi bằng chính độ khô của bài (chất khô 36,78 g/khẩu phần 150 g → 24,52%; nước 75,5%): đạm 4,00% DW → 0,98; béo 4,19% DW → 1,03; xơ tổng (TDF) 66,56% DW → 16,3; natri 113,64 mg/100g DW → 28 mg; carb 22,0 là by-difference (100 − nước − đạm − béo − tro 0,49) và PHẦN LỚN LÀ XƠ. Năng lượng 36 kcal lấy theo tính toán của chính bài (53,31 kcal/150 g; hệ số FAO: đường 4, xơ tan 2, acid hữu cơ 3) — KHÔNG khớp Atwater tổng quát trên carb by-difference vì đa số carb là xơ không tiêu hoá (TDF theo Van Soest gồm cả lignin 16,53% DW; quả ăn cả ~40–45 hạt nhỏ). Xơ 16,3 g/100g là cao bất thường so với quả thường nhưng đúng với cách ăn sim (cả hạt) và phương pháp đo của bài. Hạ low: một nghiên cứu duy nhất + phải quy đổi cơ sở.",
+    "alternatives": [
+      {
+        "name": "Bộ số 'rose myrtle' trên fruitsinfo.com (47 kcal, xơ 5,6, đạm 0,6)",
+        "why_not": "Trang tổng hợp không nêu nguồn gốc số liệu; xơ thấp hơn hẳn nghiên cứu gốc đo trên quả VN — không đạt chuẩn truy vết",
+        "external_id": null,
+        "kcal_per_100g": 47
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "low",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}

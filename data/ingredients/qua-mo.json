@@ -1,0 +1,51 @@
+{
+  "slug": "qua-mo",
+  "name_vi": "Mơ ta (mơ chua, tươi)",
+  "name_en": "Japanese apricot (ume), raw",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "mext_jp",
+    "external_id": "07019",
+    "source_url": "https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=7_07019_7",
+    "scientific_name": "Prunus mume",
+    "kcal_per_100g": 33,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 0.7,
+    "fat_g": 0.5,
+    "carb_g": 7.9,
+    "fiber_g": 2.5,
+    "water_g": 90.4,
+    "sodium_mg": 2,
+    "mapping_confidence": "low",
+    "mapping_note": "Nguồn THỨ CẤP tầng 6 theo thang DATA-PIPELINE §7.2 — món dùng nó mang cờ CHƯA KIỂM ĐỊNH. Bảng thành phần thực phẩm Nhật Bản (MEXT, bản 八訂 tăng bổ 2023), mục 07019 'うめ/生' (ume, raw) — đúng loài Prunus mume, đã kiểm chứng trực tiếp trên fooddb.mext.go.jp: 33 kcal, nước 90.4, đạm 0.7, béo 0.5, carb 7.9, xơ 2.5, natri 2 mg, tỉ lệ thải bỏ 15%. Mơ ta miền Bắc VN cùng loài, hái xanh/chín ương, vị rất chua, chủ yếu ngâm đường/làm ô mai/rượu mơ — số này là quả tươi nguyên liệu. USDA không có mục Prunus mume tươi (chỉ có mơ khô/mơ đóng hộp đã qua chế biến).",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": 85.0,
+  "edible_portion_note": "Theo MEXT: tỉ lệ thải bỏ 15% (hạt) — phần ăn/ngâm được 85%.",
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "quả",
+      "grams": 15.0,
+      "note": "ước lượng theo cỡ quả mơ ta VN (~10–20 g/quả), cần đo lại",
+      "source": "ước lượng"
+    }
+  ],
+  "source": "curated",
+  "confidence": "low",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}

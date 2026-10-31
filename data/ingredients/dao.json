@@ -1,0 +1,58 @@
+{
+  "slug": "dao",
+  "name_vi": "Đào (tươi)",
+  "name_en": "Peach, yellow, raw",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "usda_foundation",
+    "external_id": "325430",
+    "source_url": "https://fdc.nal.usda.gov/food-details/325430/nutrients",
+    "scientific_name": "Prunus persica",
+    "kcal_per_100g": 42,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 0.91,
+    "fat_g": 0.27,
+    "carb_g": 10.1,
+    "fiber_g": 1.5,
+    "water_g": 88.3,
+    "sodium_mg": 13,
+    "mapping_confidence": "high",
+    "mapping_note": "FRUIT-002 2026-10-31: USDA Foundation 325430 \"Peaches, yellow, raw\" — đúng loài Prunus persica, số liệu phân tích mới (thay cho SR Legacy cũ). Đào VN (đào Sapa, đào tiên) và đào nhập đều là P. persica thịt vàng/trắng — macro theo nhóm đào gần nhau. Natri 13 mg là giá trị phân tích của bản Foundation (SR cũ ghi 0) — giữ nguyên theo nguồn.",
+    "alternatives": [
+      {
+        "name": "Peaches, yellow, raw — SR Legacy (FDC 169928)",
+        "why_not": "Cùng loài nhưng là bộ số cũ 39 kcal; Foundation là bản phân tích mới hơn nên ưu tiên",
+        "external_id": "169928",
+        "kcal_per_100g": 39
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "quả vừa",
+      "grams": 161.0,
+      "note": "foodMeasures 'medium (2-2/3\" dia)' — đào VN thường nhỏ hơn đào Mỹ, cần đo lại",
+      "source": "FDC 325430 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}

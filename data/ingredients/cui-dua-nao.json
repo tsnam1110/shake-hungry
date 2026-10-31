@@ -16,9 +16,9 @@
     "carb_g": 15.2,
     "fiber_g": 9,
     "water_g": 47,
-    "sodium_mg": null,
+    "sodium_mg": 20,
     "mapping_confidence": "high",
-    "mapping_note": "Nền mẫu tốt nhất trong nhóm dừa (dataPoints 12–15). Đây là cùi DỪA GIÀ (nước 47%, béo 33,5%). CÙI DỪA NON / dừa nước (mềm, trong, nhiều nước, ăn tráng miệng) KHÔNG dùng được con số này — USDA không có bản riêng, cần tra bổ sung.",
+    "mapping_note": "Nền mẫu tốt nhất trong nhóm dừa (dataPoints 12–15). Đây là cùi DỪA GIÀ (nước 47%, béo 33,5%). CÙI DỪA NON / dừa nước (mềm, trong, nhiều nước, ăn tráng miệng) KHÔNG dùng được con số này — USDA không có bản riêng, cần tra bổ sung. Bổ sung 2026-10-31: điền natri 20 mg — giá trị có trong chính bản ghi SR 170169, đã kiểm chứng trực tiếp qua FDC API khi tạo file dua (FRUIT-002).",
     "alternatives": []
   },
   "secondary_sources": [],

@@ -1,0 +1,51 @@
+{
+  "slug": "man-hau",
+  "name_vi": "Mận hậu (tươi)",
+  "name_en": "Plum, black, with skin, raw (Japanese plum)",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "usda_foundation",
+    "external_id": "2710837",
+    "source_url": "https://fdc.nal.usda.gov/food-details/2710837/nutrients",
+    "scientific_name": "Prunus salicina",
+    "kcal_per_100g": 59,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 0.58,
+    "fat_g": 0.28,
+    "carb_g": 13.46,
+    "fiber_g": 1.35,
+    "water_g": 84.94,
+    "sodium_mg": 0,
+    "mapping_confidence": "medium",
+    "mapping_note": "FRUIT-002 2026-10-31: USDA Foundation 2710837 \"Plum, black, with skin, raw\" — mận đen bán lẻ tại Mỹ thuộc nhóm mận Nhật Prunus salicina, ĐÚNG LOÀI với mận hậu VN (tránh bẫy dùng \"Plums, raw\" của SR Legacy vốn thiên về P. domestica). LƯU Ý NGUỒN: bản Foundation này chưa công bố nutrient Energy (1008); kcal 59 lấy từ \"Energy (Atwater General Factors)\" = 58,68 làm tròn theo quy ước kho (Atwater Specific cho 52,7 — ghi lại để vòng duyệt cân nhắc). Bản ghi không kèm tên khoa học nên confidence để medium. Mận hậu VN hay ăn khi còn chắc, hơi chua — đường thực tế có thể thấp hơn mận đen chín mềm của Mỹ.",
+    "alternatives": [
+      {
+        "name": "Plums, raw — SR Legacy (FDC 169949)",
+        "why_not": "Bộ số cũ thiên về mận châu Âu Prunus domestica (46 kcal, carb 11,42 g) — khác loài với mận hậu; chỉ dùng làm đối chứng",
+        "external_id": "169949",
+        "kcal_per_100g": 46
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "medium",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}

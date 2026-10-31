@@ -1,0 +1,57 @@
+{
+  "slug": "dua",
+  "name_vi": "Dừa (phần cùi)",
+  "name_en": "Coconut (meat)",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "170169",
+    "source_url": "https://fdc.nal.usda.gov/food-details/170169/nutrients",
+    "scientific_name": "Cocos nucifera",
+    "kcal_per_100g": 354,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 3.33,
+    "fat_g": 33.5,
+    "carb_g": 15.2,
+    "fiber_g": 9,
+    "water_g": 47,
+    "sodium_mg": 20,
+    "mapping_confidence": "high",
+    "mapping_note": "'Nuts, coconut meat, raw' — cùng mục nguồn với nguyên liệu cui-dua-nao (kiểm chứng lại trực tiếp qua FDC API 2026-10-31, khớp từng số; natri 20 mg có trong bản ghi FDC nên điền, khác cui-dua-nao để trống). Đây là số của CÙI DỪA GIÀ (nước 47%, béo 33,5%). Cùi dừa NON của quả dừa uống nước (mềm, trong, nhiều nước) gầy hơn nhiều và USDA không có mục riêng — khi hồ sơ quả dùng cho dừa non cần lưu ý điểm này. Phần NƯỚC dừa đã có slug riêng nuoc-dua-tuoi (170174, 19 kcal), không gộp vào file này. oil_absorption_pct để null theo quy ước nhánh quả (dừa không phải chủ thể chiên trong hồ sơ quả; bản cui-dua-nao ở tầng nguyên liệu nấu ăn đang để 0).",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": 40.0,
+  "edible_portion_note": "ƯỚC TÍNH: phần cùi ≈ 40% trọng lượng quả nguyên trái (phần còn lại là vỏ xơ, gáo và nước dừa — nước xem slug nuoc-dua-tuoi). Tỉ lệ dao động mạnh theo độ già và cỡ quả (dừa non uống nước phần cùi mỏng hơn nhiều). Cần đo lại theo cỡ quả VN",
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "cup nạo sợi",
+      "grams": 80.0,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "source": "FDC 170169 foodMeasures"
+    },
+    {
+      "unit_name": "quả dừa vừa",
+      "grams": 397.0,
+      "note": "phần cùi",
+      "source": "FDC 170169 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "slug": "coc",
+  "name_vi": "Cóc",
+  "name_en": "Ambarella, raw",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "tkpi_id",
+    "external_id": "ER043",
+    "source_url": "https://www.panganku.org/en-EN/view",
+    "scientific_name": "Spondias dulcis",
+    "kcal_per_100g": 49,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 0.7,
+    "fat_g": 0.2,
+    "carb_g": 11.1,
+    "fiber_g": 0.5,
+    "water_g": 87.6,
+    "sodium_mg": 4,
+    "mapping_confidence": "low",
+    "mapping_note": "Nguồn THỨ CẤP tầng 6 theo thang DATA-PIPELINE §7.2 — món dùng nó mang cờ CHƯA KIỂM ĐỊNH. ĐÃ CÓ SỐ từ 2026-10-31 theo quyết định của chủ dự án đăng ký mã tkpi_id vào tầng 6 (App\\Nutrition\\SourceTier) — cùng tiền lệ tbca_br/ifct_in: bảng quốc gia của nước bản địa của loài. Bảng thành phần thực phẩm Indonesia (TKPI, Kemenkes RI — bản bảng TKPI 2017, Mahmud et al., Kemenkes 2018; truy cập qua panganku.org, đối chiếu trực tiếp hàng trong bản scan cuốn bảng): mục ER043 'Kedondong masak, segar' (nguồn phân tích DABM-1964): 49 kcal, nước 87,6, đạm 0,7, béo 0,2, carb 11,1, xơ 0,5, natri 4 /100 g phần ăn được — tự nhất quán Atwater (0,7×4 + 0,2×9 + 11,1×4 = 49,0 ✓). Đây là hàng số ĐÚNG LOÀI (Spondias dulcis) duy nhất trong toàn bộ thang nguồn; confidence low vì số phân tích gốc DABM-1964 đã cũ và chỉ có một nguồn duy nhất. Hồ sơ tra cứu FRUIT-002 (2026-10-31): (1) USDA FoodData Central không có mục ambarella/S. dulcis (tra 'ambarella', 'june plum' đều trống; chỉ có nhãn branded). (2) Ciqual, CNF, CoFID, MEXT, IFCT: không có mục cho loài này. (3) PhilFCT/ASEAN FCD chỉ có 'Spanish plum' AAE111 là Spondias purpurea/pinnata — LOÀI KHÁC, không ánh xạ. (4) Bộ số lưu hành trên web VN bị loại: hai bộ mâu thuẫn nhau (29 so với 46 kcal) và bộ 29 kcal tự mâu thuẫn Atwater (từ chính đạm 0,88/béo 0,27/carb 10 của nó cho ≈46 kcal) — xem alternatives. (5) Bảng TPTP VN bản in có mục quả cóc nhưng chưa đối chiếu được bản số hoá có nhãn cột.",
+    "alternatives": [
+      {
+        "external_id": null,
+        "kcal_per_100g": 29,
+        "name": "Bộ số lưu hành trên các trang dinh dưỡng VN (29 kcal, đạm 0,88, béo 0,27, carb 10, xơ 2,2, nước 80, vitamin C 36, Ca 18, P 67, K 250, Na 3)",
+        "why_not": "Không truy được về một bảng có nhãn cột cụ thể, và tự mâu thuẫn: Atwater từ chính bộ đạm/béo/carb này cho ≈46 kcal chứ không phải 29. Một bộ số VN khác (46 kcal, carb 12,4, Ca 56) cũng lưu hành song song — hai bộ không thể cùng đúng"
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "low",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}

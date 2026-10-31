@@ -1,0 +1,51 @@
+{
+  "slug": "qua-thi",
+  "name_vi": "Quả thị",
+  "name_en": "Gold apple, raw",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "literature",
+    "external_id": null,
+    "source_url": "https://baonghean.vn/en/print/10279015.html",
+    "scientific_name": "Diospyros decandra",
+    "kcal_per_100g": 52,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 0.67,
+    "fat_g": 0.16,
+    "carb_g": 12,
+    "fiber_g": 0.47,
+    "water_g": 86.5,
+    "sodium_mg": null,
+    "mapping_confidence": "low",
+    "mapping_note": "Nguồn THỨ CẤP (tầng 6) — món dùng nó mang cờ CHƯA KIỂM ĐỊNH. USDA/FNRI/MEXT/IFCT không có Diospyros decandra. Dùng phân tích phần thịt quả trong 'Cây thuốc và động vật làm thuốc ở Việt Nam' (Viện Dược liệu), trích lại trên Báo Nghệ An: nước 86,5%, đạm 0,67%, béo 0,16%, glucid 12%, cellulose 0,47%, tro 0,5%, tannin 0,33%. Năng lượng KHÔNG có sẵn trong nguồn — tính bằng Atwater: 0,67×4 + 0,16×9 + 12×4 = 52,1 ≈ 52 kcal (ghi rõ là số suy tính). fiber_g = 0,47 là XƠ THÔ (cellulose), không phải chất xơ tổng số (TDF) — TDF thật sẽ cao hơn. Tổng kiểm: 86,5+0,67+0,16+12+0,5 = 99,83 ✓. Hạ low vì: một nguồn duy nhất, phân tích cũ, không có natri. Lưu ý ăn uống: chỉ ăn quả chín mềm; quả xanh chát do tannin cao hơn nhiều. Nghiên cứu Thái (PSRU 2023) chỉ phân tích BỘT quả sấy (334 kcal/100g bột) — không dùng cho quả tươi.",
+    "alternatives": [
+      {
+        "name": "Bột quả thị sấy khô — PSRU J. Sci. Technol. (Thái Lan)",
+        "why_not": "Sản phẩm bột đã sấy (độ ẩm 7,44%), không phải quả tươi như ăn",
+        "external_id": null,
+        "kcal_per_100g": 334
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "low",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}

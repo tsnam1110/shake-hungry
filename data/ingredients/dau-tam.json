@@ -1,0 +1,57 @@
+{
+  "slug": "dau-tam",
+  "name_vi": "Dâu tằm",
+  "name_en": "Mulberries, raw",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "169913",
+    "source_url": "https://fdc.nal.usda.gov/food-details/169913/nutrients",
+    "scientific_name": "Morus alba",
+    "kcal_per_100g": 43,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 1.44,
+    "fat_g": 0.39,
+    "carb_g": 9.8,
+    "fiber_g": 1.7,
+    "water_g": 87.68,
+    "sodium_mg": null,
+    "mapping_confidence": "medium",
+    "mapping_note": "Bản SR Legacy 169913 là Morus nigra (dâu tằm đen châu Âu), trong khi dâu tằm trồng và ăn quả ở VN là Morus alba — KHÁC LOÀI nhưng cùng chi Morus, thành phần proximate của quả Morus nhìn chung rất gần nhau (nhóm quả mọng nước ~88%, carb ~10). Không có mục Morus alba trong USDA/Ciqual/CNF; Bảng TPTP VN và FNRI không tra được mục dâu tằm ăn quả. Chấp nhận bộ số M. nigra làm đại diện ở mức medium. Natri để null theo quy ước các file trái cây SR trong kho.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "cup",
+      "grams": 140.0,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "source": "FDC 169913 foodMeasures"
+    },
+    {
+      "unit_name": "quả",
+      "grams": 15.0,
+      "note": "phần ăn được",
+      "source": "FDC 169913 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "medium",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "slug": "qua-sung",
+  "name_vi": "Quả sung",
+  "name_en": "Figs, raw",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "173021",
+    "source_url": "https://fdc.nal.usda.gov/food-details/173021/nutrients",
+    "scientific_name": "Ficus carica",
+    "kcal_per_100g": 74,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 0.75,
+    "fat_g": 0.3,
+    "carb_g": 19.18,
+    "fiber_g": 2.9,
+    "water_g": 79.11,
+    "sodium_mg": 1,
+    "mapping_confidence": "medium",
+    "mapping_note": "Đã kiểm chứng trực tiếp qua FDC API (2026-10-31): đúng loài Ficus carica, bộ số khớp toàn bộ. QUYẾT ĐỊNH ÁNH XẠ (ghi rõ theo yêu cầu phân xử sung ta/sung Mỹ): 'quả sung' ở VN là HAI thực tế khác nhau — (a) sung ta Ficus racemosa: quả chủ yếu ăn XANH, non, làm rau kèm/gỏi, quả chín rất ít ăn; (b) sung Mỹ Ficus carica: trồng tại VN và nhập khẩu, ăn CHÍN như trái cây. File này thuộc nhóm trai-cay (quả ăn chín) nên chọn F. carica đúng loài ở nguồn tầng 1 là ánh xạ bảo vệ được nhất. Thai FCT 1999 có mục 'Ficus spp.' (THE55: 54 kcal, nước 85,8, đạm 1,5, carb 11,3) đại diện nhóm sung bản địa nhưng KHÔNG định danh tới loài (spp.) → chỉ để ở alternatives cho tham khảo, không dùng làm số chính. Cách dùng sung ta xanh làm rau nằm ngoài phạm vi file quả chín này; nếu sau này biên soạn món dùng sung xanh, cần mục nguyên liệu riêng cho F. racemosa. Hạ medium (không phải high) vì tên gọi 'quả sung' trong thực tế VN bao cả hai loài — người duyệt cần biết số này là của sung Mỹ chín.",
+    "alternatives": [
+      {
+        "name": "Fig, Thai variety (Ficus spp.), Thai FCT 1999, record THE55",
+        "why_not": "Không định danh đến loài (Ficus spp.) — khả năng thuộc nhóm sung ta F. racemosa ăn xanh; chỉ dùng tham khảo cho sung bản địa, không thay số sung chín F. carica",
+        "external_id": "THE55",
+        "kcal_per_100g": 54
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "quả",
+      "grams": 50.0,
+      "note": "quả cỡ vừa (medium, đường kính 2-1/4 inch) — CỠ PHƯƠNG TÂY, cần đo lại cho khẩu phần Việt Nam",
+      "source": "FDC 173021 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "medium",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}

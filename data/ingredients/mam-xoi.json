@@ -1,0 +1,51 @@
+{
+  "slug": "mam-xoi",
+  "name_vi": "Mâm xôi đỏ",
+  "name_en": "Raspberries, raw",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "167755",
+    "source_url": "https://fdc.nal.usda.gov/food-details/167755/nutrients",
+    "scientific_name": "Rubus idaeus",
+    "kcal_per_100g": 52,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 1.2,
+    "fat_g": 0.65,
+    "carb_g": 11.94,
+    "fiber_g": 6.5,
+    "water_g": 85.75,
+    "sodium_mg": 1,
+    "mapping_confidence": "high",
+    "mapping_note": "'Raspberries, raw' — mục SR cho mâm xôi đỏ trồng (Rubus idaeus; FDC ghi ở mức chi 'Rubus spp.' nhưng mô tả và mẫu là mâm xôi đỏ ăn tươi). Đã kiểm chứng qua FDC API.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "cup",
+      "grams": 123.0,
+      "note": null,
+      "source": "FDC 167755 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}

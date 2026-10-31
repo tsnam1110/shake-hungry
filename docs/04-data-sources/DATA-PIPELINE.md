@@ -240,7 +240,7 @@ riêng, là hoạt động hợp lệ và cho ra một cơ sở dữ liệu mà 
 | 3 | **Canadian Nutrient File** (OGL-Canada) | `cnf` | `high`–`medium` |
 | 4 | **Nhãn dinh dưỡng sản phẩm thương mại** bán tại VN — bắt buộc ghi **tên thương hiệu + URL** | `nhan_san_pham` | `medium` |
 | 5 | **Tự đo / tự cân** — ghi rõ phương pháp, ngày, dụng cụ | `tu_do` | `medium` |
-| 6 | **Nguồn THỨ CẤP — không ưu tiên** (xem ghi chú ngay dưới): Bảng TPTP Việt Nam (Viện Dinh dưỡng), bảng FCT nước ngoài khác (MEXT Nhật, IFCT Ấn Độ, Thai FCT, FNRI), bài báo/tài liệu khoa học có phân tích thành phần | `vn_nin`, `mext_jp`, `ifct_in`, `thai_fct`, `fnri_ph`, `literature` | `low` — và bị đánh dấu **chưa kiểm định** |
+| 6 | **Nguồn THỨ CẤP — không ưu tiên** (xem ghi chú ngay dưới): Bảng TPTP Việt Nam (Viện Dinh dưỡng), bảng FCT nước ngoài khác (MEXT Nhật, IFCT Ấn Độ, Thai FCT, FNRI), bài báo/tài liệu khoa học có phân tích thành phần | `vn_nin`, `mext_jp`, `ifct_in`, `thai_fct`, `fnri_ph`, `literature`, `tbca_br`, `tkpi_id` | `low` — và bị đánh dấu **chưa kiểm định** |
 | 7 | Không tra được | `null` | — |
 
 > ⚠️ **Nguồn 4 và 5 là ngoại lệ có kiểm soát của QT-4.** Chúng phá nguyên tắc "một bảng thành phần

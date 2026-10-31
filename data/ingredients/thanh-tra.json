@@ -1,0 +1,51 @@
+{
+  "slug": "thanh-tra",
+  "name_vi": "Thanh trà",
+  "name_en": "Marian plum (gandaria), raw",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "thai_fct",
+    "external_id": "THE57",
+    "source_url": "https://www.mcgill.ca/files/cine/Karen_Datatables_fruits_Jn06.pdf",
+    "scientific_name": "Bouea macrophylla",
+    "kcal_per_100g": 53,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 0.4,
+    "fat_g": 0,
+    "carb_g": 12.8,
+    "fiber_g": 1.5,
+    "water_g": 86.6,
+    "sodium_mg": null,
+    "mapping_confidence": "low",
+    "mapping_note": "Nguồn THỨ CẤP theo quyết định chủ dự án 2026-10-31 (chỉ dùng khi nguồn chính thống không có) — món dùng nó mang cờ CHƯA KIỂM ĐỊNH. Thanh trà = Bouea macrophylla (ma-prang/gandaria). USDA, Ciqual, CNF, CoFID, FNRI, IFCT đều không có mục cho loài này. Bộ số lấy từ Thai FCT 1999, mục THE57 'ma-prang, Marian plum' (đọc qua bản đăng lại CINE Community Food System Data Tables, McGill): nước 86,6 / đạm 0,4 / béo 0 / carb 12,8 / xơ 1,5 / tro 0,2 / vitamin C 100 mg — tự nhất quán theo Atwater: 0,4×4 + 0×9 + 12,8×4 = 52,8 ≈ 53 kcal ✓. ĐIỂM CẦN LƯU Ý VỀ TÊN KHOA HỌC: Thai FCT 1999 ghi mục này dưới tên Bouea burmanica Griff. — tên này trong phân loại hiện đại là đồng danh của Bouea oppositifolia theo POWO, trong khi nhiều tài liệu (MDPI 2020, UF/IFAS HS1528) vẫn liệt kê B. burmanica như đồng danh của B. macrophylla; hai loài chị em này vốn bị lẫn nhau trong thực hành. Cây trồng ma-prang/thanh trà ở Thái Lan và VN là cùng một đối tượng thực phẩm, nên ánh xạ theo danh tính cây trồng là bảo vệ được, nhưng đây là lý do confidence để low. ĐỐI CHIẾU ĐỘC LẬP: PROSEA (dẫn thành phần mẫu quả ở Honduras) cho nước 85 / đạm 0,11 / béo 0,04 / xơ 0,6 / tro 0,23 → carb suy ra ≈ 14,0 và năng lượng ≈ 57 kcal — cùng dải với 53 kcal của Thai FCT. Nghiên cứu proximate trực tiếp (Rajan & Bhat, Int. Food Res. J. 21(3):985-990, 2014) chỉ công bố trên mẫu ĐÔNG KHÔ (freeze-dried) nên không trích số tươi. Natri: Thai FCT không báo cáo ở bản đăng lại → để null.",
+    "alternatives": [
+      {
+        "name": "Bouea macrophylla composition in PROSEA / Morton (mẫu Honduras)",
+        "why_not": "Mẫu đơn lẻ một cây ở Honduras, không cho carb và năng lượng trực tiếp (chỉ suy ra được ≈57 kcal) — chỉ dùng đối chiếu, không dùng làm bộ số chính",
+        "external_id": null,
+        "kcal_per_100g": 57
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "low",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}

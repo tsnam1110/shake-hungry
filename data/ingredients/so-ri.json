@@ -1,0 +1,57 @@
+{
+  "slug": "so-ri",
+  "name_vi": "Sơ ri",
+  "name_en": "Acerola (west indian cherry), raw",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "171686",
+    "source_url": "https://fdc.nal.usda.gov/food-details/171686/nutrients",
+    "scientific_name": "Malpighia emarginata",
+    "kcal_per_100g": 32,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 0.4,
+    "fat_g": 0.3,
+    "carb_g": 7.69,
+    "fiber_g": 1.1,
+    "water_g": 91.41,
+    "sodium_mg": null,
+    "mapping_confidence": "medium",
+    "mapping_note": "ĐÚNG LOÀI Malpighia emarginata (SR Legacy 171686, kiểm chứng qua FDC API 2026-10-31). Sơ ri VN (Gò Công, Tiền Giang) cùng loài này. Giữ medium vì bộ số SR kế thừa các phân tích cũ với nền mẫu mỏng — đặc biệt vitamin C của mục này (1.677,6 mg/100g) nổi tiếng là cao bất thường theo giống/độ chín; proximate (nước 91,41 / carb 7,69) ổn định hơn và khớp dải văn liệu acerola tươi (~30–35 kcal). Natri để null theo quy ước các file trái cây SR trong kho.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "cup",
+      "grams": 98.0,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "source": "FDC 171686 foodMeasures"
+    },
+    {
+      "unit_name": "quả",
+      "grams": 4.8,
+      "note": "phần ăn được, đã bỏ hạt",
+      "source": "FDC 171686 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "medium",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}

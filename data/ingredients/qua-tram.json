@@ -1,0 +1,57 @@
+{
+  "slug": "qua-tram",
+  "name_vi": "Quả trâm (trâm mốc)",
+  "name_en": "Java-plum (jambolan), raw",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "168150",
+    "source_url": "https://fdc.nal.usda.gov/food-details/168150/nutrients",
+    "scientific_name": "Syzygium cumini",
+    "kcal_per_100g": 60,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 0.72,
+    "fat_g": 0.23,
+    "carb_g": 15.56,
+    "fiber_g": null,
+    "water_g": 83.13,
+    "sodium_mg": null,
+    "mapping_confidence": "medium",
+    "mapping_note": "ĐÚNG LOÀI Syzygium cumini (SR Legacy 168150, kiểm chứng qua FDC API 2026-10-31) — trâm mốc/trâm vối ở VN cùng loài này. XƠ: bản ghi FDC hiện hành KHÔNG có dòng chất xơ (đã kiểm tra toàn bộ nutrient của mục) → để null, không tự điền theo trí nhớ bộ NDB cũ. Natri để null theo quy ước các file trái cây SR trong kho. Giữ medium theo quy ước nhóm trái cây SR của kho (nền mẫu phân tích cũ).",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "cup",
+      "grams": 135.0,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "source": "FDC 168150 foodMeasures"
+    },
+    {
+      "unit_name": "quả",
+      "grams": 9.0,
+      "note": "phần ăn được",
+      "source": "FDC 168150 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "medium",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}

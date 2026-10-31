@@ -1,0 +1,58 @@
+{
+  "slug": "hong-gion",
+  "name_vi": "Hồng giòn (tươi)",
+  "name_en": "Persimmon, Japanese, raw (crisp, non-astringent type)",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "169941",
+    "source_url": "https://fdc.nal.usda.gov/food-details/169941/nutrients",
+    "scientific_name": "Diospyros kaki",
+    "kcal_per_100g": 70,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 0.58,
+    "fat_g": 0.19,
+    "carb_g": 18.59,
+    "fiber_g": 3.6,
+    "water_g": 80.32,
+    "sodium_mg": 1,
+    "mapping_confidence": "high",
+    "mapping_note": "FRUIT-002 2026-10-31: USDA SR Legacy 169941 \"Persimmons, japanese, raw\" — đúng loài Diospyros kaki. Hồng giòn VN là nhóm giống không chát (kiểu Fuyu) ăn khi còn giòn; bản USDA là hồng Nhật nói chung (đo trên quả chín) — cùng loài, chênh lệch macro nhỏ; tannin/độ chát khác nhau theo giống nhưng không đổi đáng kể đạm/béo/carb. KHÁC hồng đỏ/hồng ngâm chín mềm về trạng thái ăn (vẫn cùng loài, dùng chung bộ số này ở Mức 1).",
+    "alternatives": [
+      {
+        "name": "Persimmons, native, raw (FDC 169943)",
+        "why_not": "Là Diospyros virginiana — hồng bản địa Bắc Mỹ, loài khác hẳn",
+        "external_id": "169943",
+        "kcal_per_100g": null
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "quả",
+      "grams": 168.0,
+      "note": "foodMeasures 'fruit (2-1/2\" dia)' — hồng giòn VN cỡ tương đương, cần đo lại",
+      "source": "FDC 169941 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}

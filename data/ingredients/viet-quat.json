@@ -1,0 +1,51 @@
+{
+  "slug": "viet-quat",
+  "name_vi": "Việt quất",
+  "name_en": "Blueberries, raw",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "171711",
+    "source_url": "https://fdc.nal.usda.gov/food-details/171711/nutrients",
+    "scientific_name": "Vaccinium corymbosum",
+    "kcal_per_100g": 57,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 0.74,
+    "fat_g": 0.33,
+    "carb_g": 14.49,
+    "fiber_g": 2.4,
+    "water_g": 84.21,
+    "sodium_mg": 1,
+    "mapping_confidence": "high",
+    "mapping_note": "'Blueberries, raw' — mục SR cho việt quất trồng thương mại (nhóm highbush, chủ yếu V. corymbosum và lai của nó); FDC ghi tên khoa học ở mức chi 'Vaccinium spp.' nhưng mẫu là việt quất trồng ăn tươi đúng loại lưu hành tại VN. Đã kiểm chứng qua FDC API. Bản Foundation 2346411 thiếu số xơ trong bản ghi API nên không dùng.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "cup",
+      "grams": 148.0,
+      "note": null,
+      "source": "FDC 171711 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}

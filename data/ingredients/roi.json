@@ -1,0 +1,64 @@
+{
+  "slug": "roi",
+  "name_vi": "Roi (mận nước)",
+  "name_en": "Rose apple / wax apple, raw",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "168171",
+    "source_url": "https://fdc.nal.usda.gov/food-details/168171/nutrients",
+    "scientific_name": "Syzygium jambos (loài của bản ghi nguồn; roi VN chủ yếu là S. samarangense và S. aqueum)",
+    "kcal_per_100g": 25,
+    "kcal_min": null,
+    "kcal_max": 44,
+    "protein_g": 0.6,
+    "fat_g": 0.3,
+    "carb_g": 5.7,
+    "fiber_g": null,
+    "water_g": 93,
+    "sodium_mg": 0,
+    "mapping_confidence": "low",
+    "mapping_note": "ÁNH XẠ CÙNG CHI, KHÁC LOÀI — bắt buộc đọc trước khi dùng. Tên 'quả roi / mận nước' ở VN bao phủ BA loài Syzygium: S. samarangense (roi/mận thương phẩm chủ lực, gồm mận An Phước), S. aqueum (roi ta quả nhỏ) và S. malaccense (roi hoa đỏ). KHÔNG bảng nào trong thang nguồn có mục cho S. aqueum hay S. samarangense (USDA, Ciqual, CNF, CoFID, FNRI đều không có; ASEAN FCD có mục AAE125 'Wax jambu' gốc dữ liệu Thái Lan nhưng bản trực tuyến không trích được hàng số đáng tin cậy). Chọn bản SR Legacy FDC 168171 'Rose-apples, raw' — Syzygium jambos, loài chị em cùng chi, kiểm chứng qua FDC API 2026-10-31: 25 kcal, nước 93,0, đạm 0,6, béo 0,3, carb 5,7, natri 0 (bản ghi SR không có xơ → để null). Độ lệch loài được khoanh bằng kcal_max = 44 (PhilFCT E047, S. malaccense) và đối chiếu PROSEA: cả ba loài có thành phần tương tự (nước >90%, năng lượng dải ~19–44 kcal). Khi có bảng nào công bố S. samarangense, ưu tiên tách bản ghi riêng cho roi thương phẩm.",
+    "alternatives": [
+      {
+        "name": "Malay apple — PhilFCT E047 (Syzygium malaccense)",
+        "why_not": "Loài thứ ba trong nhóm roi (roi hoa đỏ/mận điều đỏ), quả to và đậm nước/đường hơn roi thương phẩm; dùng làm cận trên kcal_max thay vì số điểm vì là nguồn tầng 6 và không phải loài chủ lực trên thị trường",
+        "external_id": "E047",
+        "kcal_per_100g": 44
+      },
+      {
+        "name": "Wax jambu (Syzygium samarangense) — phân tích Thái Lan dẫn trong PROSEA",
+        "why_not": "Chỉ là bộ số tóm tắt trong tài liệu tổng quan (nước >90%, đạm 0,3, béo 0, carb 3,9, xơ 1, ~19 kcal), không phải hàng bảng tra cứu được — dùng đối chiếu dải, không dùng làm số điểm",
+        "external_id": null,
+        "kcal_per_100g": 19
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": 80.0,
+  "edible_portion_note": "Theo PROSEA (nhóm Syzygium ăn quả): ≥80% quả là phần ăn được (vỏ mỏng ăn cả, chỉ bỏ lõi xốp/hạt nhỏ).",
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "quả",
+      "grams": 45.0,
+      "note": "ước lượng phần ăn được của quả ~55 g nguyên trái × 80% (EP theo PROSEA); mận An Phước to hơn (80–120 g/quả), cần đo lại",
+      "source": "ước lượng"
+    }
+  ],
+  "source": "curated",
+  "confidence": "low",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}

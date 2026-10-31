@@ -1,0 +1,64 @@
+{
+  "slug": "mang-cut",
+  "name_vi": "Măng cụt",
+  "name_en": "Mangosteen, raw",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "mext_jp",
+    "external_id": "07133",
+    "source_url": "https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=7_07133_7",
+    "scientific_name": "Garcinia mangostana",
+    "kcal_per_100g": 71,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 0.6,
+    "fat_g": 0.2,
+    "carb_g": 17.5,
+    "fiber_g": 1.4,
+    "water_g": 81.5,
+    "sodium_mg": 1,
+    "mapping_confidence": "low",
+    "mapping_note": "Nguồn THỨ CẤP tầng 6 theo thang DATA-PIPELINE §7.2 — món dùng nó mang cờ CHƯA KIỂM ĐỊNH. Bảng thành phần thực phẩm Nhật Bản (MEXT, bản 八訂 2020 + tăng bổ 2023), mục 07133 'マンゴスチン/生' (mangosteen, raw) — đúng loài Garcinia mangostana: 71 kcal (303 kJ), nước 81,5, đạm 0,6, béo 0,2, carb 17,5, xơ 1,4, natri 1 mg; tỉ lệ thải bỏ 70% (vỏ + hạt) → phần ăn được 30%. Lưu ý mẫu MEXT là hàng đông lạnh nhập khẩu — măng cụt tươi VN có thể lệch nhẹ về nước/đường. USDA KHÔNG có măng cụt tươi (chỉ có bản đóng hộp ngâm đường FDC 169090 — xem alternatives); đó là lý do phải xuống tầng 6.",
+    "alternatives": [
+      {
+        "name": "Mangosteen, canned, syrup pack — USDA SR Legacy (FDC 169090)",
+        "why_not": "Là măng cụt ĐÓNG HỘP NGÂM ĐƯỜNG, không phải quả tươi. Bộ số 73 kcal / đạm 0,41 / béo 0,58 / carb 17,91 / nước 80,94 lưu hành khắp các trang dinh dưỡng VN ghi là 'măng cụt tươi' chính là dòng đóng hộp này bị ghi sai nhãn — đã loại.",
+        "external_id": "169090",
+        "kcal_per_100g": 73
+      },
+      {
+        "name": "Mangosteen — Malaysian Food Composition Database (MyFCD)",
+        "why_not": "Nước 87,6% và xơ 5,1 g không nhất quán với các bảng khác và với cấu trúc quả (cơm măng cụt ~81–82% nước); không kiểm chứng được — chỉ ghi lại làm đầu mối.",
+        "external_id": null,
+        "kcal_per_100g": 34
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": 30.0,
+  "edible_portion_note": "Theo MEXT: tỉ lệ thải bỏ 70% (vỏ dày + hạt) — phần cơm ăn được chỉ 30% trọng lượng quả nguyên trái.",
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "quả",
+      "grams": 30.0,
+      "note": "phần cơm ăn được của quả ~100 g nguyên trái × 30% (tỉ lệ thải bỏ MEXT); quả VN dao động 75–150 g",
+      "source": "ước lượng theo MEXT"
+    }
+  ],
+  "source": "curated",
+  "confidence": "low",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}

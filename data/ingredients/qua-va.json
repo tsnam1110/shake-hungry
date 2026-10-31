@@ -1,0 +1,57 @@
+{
+  "slug": "qua-va",
+  "name_vi": "Quả vả",
+  "name_en": "Roxburgh fig, raw",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "literature",
+    "external_id": null,
+    "source_url": "https://www.ijmfmap.in/pdf_vol2_1/vol_2_8.pdf",
+    "scientific_name": "Ficus auriculata",
+    "kcal_per_100g": 99,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 3.5,
+    "fat_g": 1.71,
+    "carb_g": 17.28,
+    "fiber_g": null,
+    "water_g": 87.91,
+    "sodium_mg": 29,
+    "mapping_confidence": "low",
+    "mapping_note": "Nguồn THỨ CẤP (tầng 6) — món dùng nó mang cờ CHƯA KIỂM ĐỊNH. Không bảng FCT nào (USDA/Ciqual/FNRI/IFCT/Bảng VN) có Ficus auriculata. Dùng nghiên cứu proximate trên quả TƯƠI đúng loài: Int. J. Minor Fruits Med. Aromat. Plants 2(1), 2016 (mẫu Khagrachari, Bangladesh): nước 87,91%, đạm 3,50%, béo 1,71%, đường tổng 4,15%, tinh bột 13,13%, natri 29 mg (cột F. auriculata của bài được đối chiếu chéo khớp với review Discover Sustainability 2024: Mg 68, K 329 mg). carb_g = 17,28 là TỔNG ĐƯỜNG + TINH BỘT ĐO TRỰC TIẾP (không phải by-difference); bài không báo cáo xơ → fiber null. Năng lượng suy tính Atwater: 3,5×4 + 1,71×9 + 17,28×4 = 98,5 ≈ 99 kcal. Hồ sơ tinh bột cao/đường thấp khớp quả vả ăn XANH (muối, gỏi) như ở VN; quả chín ngọt sẽ khác. Hạ low: một nghiên cứu duy nhất, không SD cho proximate trong bản trích, độ chín mẫu không ghi rõ.",
+    "alternatives": [
+      {
+        "name": "Saklani et al. — F. auriculata, Garhwal Himalaya (protein 5,32%, carb 27,09%, xơ 16,96%)",
+        "why_not": "Độ ẩm chỉ 46,64% — mẫu không ở trạng thái quả tươi như ăn (nghi sấy một phần/thu hái để lâu); cơ sở tính xơ/carb không rõ ràng",
+        "external_id": null,
+        "kcal_per_100g": null
+      },
+      {
+        "name": "USDA SR 'Figs, raw' (Ficus carica)",
+        "why_not": "Khác loài — sung carica chín ngọt (74 kcal, đường ~16 g) không đại diện cho vả auriculata ăn xanh giàu tinh bột",
+        "external_id": null,
+        "kcal_per_100g": 74
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "low",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}
