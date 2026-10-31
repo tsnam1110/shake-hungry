@@ -5,13 +5,13 @@
   "region_code": "vn-south",
   "names": [
     {
-      "locale": "en",
-      "name": "banh da lon (pandan layer cake)",
+      "locale": "vi",
+      "name": "bánh da lợn",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "bánh da lợn",
+      "locale": "en",
+      "name": "Pandan layer cake",
       "is_primary": true
     }
   ],

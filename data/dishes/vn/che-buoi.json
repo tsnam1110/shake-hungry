@@ -5,13 +5,13 @@
   "region_code": "vn-an-giang",
   "names": [
     {
-      "locale": "en",
-      "name": "che buoi (pomelo sweet soup)",
+      "locale": "vi",
+      "name": "Chè bưởi",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Chè bưởi",
+      "locale": "en",
+      "name": "Pomelo sweet soup",
       "is_primary": true
     }
   ],

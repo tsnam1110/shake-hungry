@@ -5,13 +5,13 @@
   "region_code": "vn-hai-phong",
   "names": [
     {
-      "locale": "en",
-      "name": "sui din (tangyuan in ginger syrup)",
+      "locale": "vi",
+      "name": "sủi dìn",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "sủi dìn",
+      "locale": "en",
+      "name": "Tangyuan in ginger syrup",
       "is_primary": true
     }
   ],

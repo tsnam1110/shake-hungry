@@ -5,13 +5,13 @@
   "region_code": "vn-ha-noi",
   "names": [
     {
-      "locale": "en",
-      "name": "Bun ngan (muscovy duck noodle soup with dried bamboo shoots)",
+      "locale": "vi",
+      "name": "Bún ngan",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bún ngan",
+      "locale": "en",
+      "name": "Muscovy duck noodle soup with dried bamboo shoots",
       "is_primary": true
     }
   ],

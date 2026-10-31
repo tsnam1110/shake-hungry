@@ -5,13 +5,13 @@
   "region_code": "vn-an-giang",
   "names": [
     {
-      "locale": "en",
-      "name": "snakehead paste",
+      "locale": "vi",
+      "name": "mắm cá lóc",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "mắm cá lóc",
+      "locale": "en",
+      "name": "Snakehead paste",
       "is_primary": true
     }
   ],

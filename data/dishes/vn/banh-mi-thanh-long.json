@@ -5,13 +5,13 @@
   "region_code": "vn-south",
   "names": [
     {
-      "locale": "en",
-      "name": "Pitaya bread",
+      "locale": "vi",
+      "name": "Bánh mì thanh long",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bánh mì thanh long",
+      "locale": "en",
+      "name": "Pitaya bread",
       "is_primary": true
     }
   ],

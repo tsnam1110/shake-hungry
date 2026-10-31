@@ -5,13 +5,13 @@
   "region_code": "vn-an-giang",
   "names": [
     {
-      "locale": "en",
-      "name": "Canh ca linh bong dien dien (sour soup with linh fish and sesbania flowers)",
+      "locale": "vi",
+      "name": "Canh chua cá linh bông điên điển",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Canh chua cá linh bông điên điển",
+      "locale": "en",
+      "name": "Sour soup with linh fish and sesbania flowers",
       "is_primary": true
     }
   ],

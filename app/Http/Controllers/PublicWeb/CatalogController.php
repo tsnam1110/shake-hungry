@@ -81,7 +81,7 @@ class CatalogController extends Controller
         $variants = Dish::where('parent_dish_id', $dish->id)
             ->with(['names' => fn ($q) => $q->where('is_primary', true)])
             ->get()
-            ->map(fn (Dish $v) => ['slug' => $v->slug, 'name' => $v->names->first()?->name]);
+            ->map(fn (Dish $v) => ['slug' => $v->slug, 'name' => $v->displayName()]);
 
         return response()->json([
             'dish' => $dish,
@@ -185,7 +185,7 @@ class CatalogController extends Controller
             'dish' => $dish === null ? null : [
                 'id' => $dish->id,
                 'slug' => $dish->slug,
-                'name' => $dish->names->first()?->name,
+                'name' => $dish->displayName(),
                 'region' => $dish->region?->name,
                 'cooking_method' => $dish->cooking_method,
                 'serving_desc' => $dish->serving_desc,

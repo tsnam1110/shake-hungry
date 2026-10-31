@@ -5,13 +5,13 @@
   "region_code": "vn-south",
   "names": [
     {
-      "locale": "en",
-      "name": "chuoi nuong (grilled banana in sticky rice)",
+      "locale": "vi",
+      "name": "chuối nướng",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "chuối nướng",
+      "locale": "en",
+      "name": "Grilled banana in sticky rice",
       "is_primary": true
     }
   ],

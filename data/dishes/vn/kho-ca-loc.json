@@ -15,6 +15,11 @@
       "is_primary": false,
       "is_alias": true,
       "note": "miền Bắc"
+    },
+    {
+      "locale": "en",
+      "name": "Dried snakehead fish",
+      "is_primary": true
     }
   ],
   "is_eat_out": true,

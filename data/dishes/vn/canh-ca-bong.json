@@ -5,13 +5,13 @@
   "region_code": "vn-south",
   "names": [
     {
-      "locale": "en",
-      "name": "Canh ca bong (goby soup with sweet leaf)",
+      "locale": "vi",
+      "name": "Canh cá bống rau ngót",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Canh cá bống rau ngót",
+      "locale": "en",
+      "name": "Goby soup with sweet leaf",
       "is_primary": true
     }
   ],

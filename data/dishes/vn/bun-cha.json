@@ -5,13 +5,13 @@
   "region_code": "vn-ha-noi",
   "names": [
     {
-      "locale": "en",
-      "name": "Bun cha",
+      "locale": "vi",
+      "name": "Bún chả",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bún chả",
+      "locale": "en",
+      "name": "Grilled pork with vermicelli noodles (Hanoi)",
       "is_primary": true
     }
   ],

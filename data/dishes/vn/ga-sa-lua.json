@@ -5,13 +5,13 @@
   "region_code": "vn",
   "names": [
     {
-      "locale": "en",
-      "name": "ga sa lua (lemongrass grilled chicken)",
+      "locale": "vi",
+      "name": "Gà sa lửa",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Gà sa lửa",
+      "locale": "en",
+      "name": "Lemongrass grilled chicken",
       "is_primary": true
     }
   ],

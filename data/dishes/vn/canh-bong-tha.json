@@ -5,13 +5,13 @@
   "region_code": "vn-ha-noi",
   "names": [
     {
-      "locale": "en",
-      "name": "Canh bong tha (puffed pork skin and vegetable soup, Hanoi style)",
+      "locale": "vi",
+      "name": "Canh bóng thả",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Canh bóng thả",
+      "locale": "en",
+      "name": "Puffed pork skin and vegetable soup, Hanoi style",
       "is_primary": true
     }
   ],

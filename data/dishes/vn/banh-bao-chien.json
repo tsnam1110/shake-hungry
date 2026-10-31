@@ -5,13 +5,13 @@
   "region_code": "vn",
   "names": [
     {
-      "locale": "en",
-      "name": "fried bao buns",
+      "locale": "vi",
+      "name": "Bánh bao chiên",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bánh bao chiên",
+      "locale": "en",
+      "name": "Fried bao buns",
       "is_primary": true
     }
   ],

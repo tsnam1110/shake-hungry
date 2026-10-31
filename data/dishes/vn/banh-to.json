@@ -5,13 +5,13 @@
   "region_code": "vn-quang-nam",
   "names": [
     {
-      "locale": "en",
-      "name": "Banh to (Quang Nam glutinous rice cake with ginger)",
+      "locale": "vi",
+      "name": "Bánh tổ",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bánh tổ",
+      "locale": "en",
+      "name": "Quang Nam glutinous rice cake with ginger",
       "is_primary": true
     }
   ],

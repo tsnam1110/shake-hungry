@@ -5,13 +5,13 @@
   "region_code": "vn-quang-nam",
   "names": [
     {
-      "locale": "en",
-      "name": "Mi Quang (Quang-style turmeric noodles)",
+      "locale": "vi",
+      "name": "Mì Quảng",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Mì Quảng",
+      "locale": "en",
+      "name": "Quang-style turmeric noodles",
       "is_primary": true
     }
   ],

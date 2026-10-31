@@ -5,13 +5,13 @@
   "region_code": "vn-south",
   "names": [
     {
-      "locale": "en",
-      "name": "Hu tieu ga (rice noodle soup with chicken)",
+      "locale": "vi",
+      "name": "Hủ tiếu gà",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Hủ tiếu gà",
+      "locale": "en",
+      "name": "Rice noodle soup with chicken",
       "is_primary": true
     }
   ],

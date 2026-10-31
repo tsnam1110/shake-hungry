@@ -8,6 +8,11 @@
       "locale": "vi",
       "name": "sườn nướng",
       "is_primary": true
+    },
+    {
+      "locale": "en",
+      "name": "Grilled pork ribs",
+      "is_primary": true
     }
   ],
   "is_eat_out": true,

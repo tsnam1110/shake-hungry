@@ -5,13 +5,13 @@
   "region_code": "vn-nghe-an",
   "names": [
     {
-      "locale": "en",
-      "name": "Banh ngao (glutinous rice balls in ginger sugar syrup, Nghe An)",
+      "locale": "vi",
+      "name": "Bánh ngào",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bánh ngào",
+      "locale": "en",
+      "name": "Glutinous rice balls in ginger sugar syrup, Nghe An",
       "is_primary": true
     }
   ],

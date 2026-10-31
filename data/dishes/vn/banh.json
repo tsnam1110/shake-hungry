@@ -8,6 +8,11 @@
       "locale": "vi",
       "name": "bánh",
       "is_primary": true
+    },
+    {
+      "locale": "en",
+      "name": "Vietnamese cakes (generic entry)",
+      "is_primary": true
     }
   ],
   "is_eat_out": true,

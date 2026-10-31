@@ -5,13 +5,13 @@
   "region_code": "vn-ha-noi",
   "names": [
     {
-      "locale": "en",
-      "name": "Pho bo (beef pho)",
+      "locale": "vi",
+      "name": "Phở bò",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Phở bò",
+      "locale": "en",
+      "name": "Beef pho",
       "is_primary": true
     }
   ],

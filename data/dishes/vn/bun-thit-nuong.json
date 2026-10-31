@@ -5,13 +5,13 @@
   "region_code": "vn-hue",
   "names": [
     {
-      "locale": "en",
-      "name": "Bun thit nuong (noodles with grilled pork)",
+      "locale": "vi",
+      "name": "Bún thịt nướng",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bún thịt nướng",
+      "locale": "en",
+      "name": "Noodles with grilled pork",
       "is_primary": true
     }
   ],

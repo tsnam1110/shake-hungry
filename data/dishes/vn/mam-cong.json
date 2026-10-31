@@ -8,6 +8,11 @@
       "locale": "vi",
       "name": "mắm còng",
       "is_primary": true
+    },
+    {
+      "locale": "en",
+      "name": "Fermented fiddler crab paste",
+      "is_primary": true
     }
   ],
   "is_eat_out": true,

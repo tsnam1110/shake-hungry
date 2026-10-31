@@ -5,13 +5,13 @@
   "region_code": "vn-tp-hcm",
   "names": [
     {
-      "locale": "en",
-      "name": "Hu tieu ca (rice noodle soup with fish)",
+      "locale": "vi",
+      "name": "Hủ tiếu cá",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Hủ tiếu cá",
+      "locale": "en",
+      "name": "Rice noodle soup with fish",
       "is_primary": true
     }
   ],

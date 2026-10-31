@@ -5,13 +5,13 @@
   "region_code": "vn-quang-nam",
   "names": [
     {
-      "locale": "en",
-      "name": "Com ga Tam Ky (Tam Ky chicken rice)",
+      "locale": "vi",
+      "name": "Cơm gà Tam Kỳ",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Cơm gà Tam Kỳ",
+      "locale": "en",
+      "name": "Tam Ky chicken rice",
       "is_primary": true
     }
   ],

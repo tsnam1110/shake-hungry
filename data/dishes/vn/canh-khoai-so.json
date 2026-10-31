@@ -11,8 +11,8 @@
     },
     {
       "locale": "en",
-      "name": "taro corm soup with minced pork",
-      "is_primary": false
+      "name": "Taro corm soup with minced pork",
+      "is_primary": true
     }
   ],
   "is_eat_out": true,

@@ -5,13 +5,13 @@
   "region_code": "vn",
   "names": [
     {
-      "locale": "en",
-      "name": "Chao ca tram (grass carp rice porridge)",
+      "locale": "vi",
+      "name": "Cháo cá trắm",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Cháo cá trắm",
+      "locale": "en",
+      "name": "Grass carp rice porridge",
       "is_primary": true
     }
   ],

@@ -8,6 +8,11 @@
       "locale": "vi",
       "name": "Hủ tiếu",
       "is_primary": true
+    },
+    {
+      "locale": "en",
+      "name": "Hu tieu chewy noodle soup",
+      "is_primary": true
     }
   ],
   "is_eat_out": true,

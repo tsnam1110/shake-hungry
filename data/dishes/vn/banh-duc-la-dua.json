@@ -5,13 +5,13 @@
   "region_code": "vn-south",
   "names": [
     {
-      "locale": "en",
-      "name": "Banh duc la dua (pandan rice cake with coconut milk)",
+      "locale": "vi",
+      "name": "Bánh đúc lá dứa",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bánh đúc lá dứa",
+      "locale": "en",
+      "name": "Pandan rice cake with coconut milk",
       "is_primary": true
     }
   ],

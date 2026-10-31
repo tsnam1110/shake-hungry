@@ -5,13 +5,13 @@
   "region_code": "vn-north",
   "names": [
     {
-      "locale": "en",
-      "name": "Banh ran duong (sugar-coated fried glutinous rice balls)",
+      "locale": "vi",
+      "name": "Bánh rán đường",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bánh rán đường",
+      "locale": "en",
+      "name": "Sugar-coated fried glutinous rice balls",
       "is_primary": true
     }
   ],

@@ -5,13 +5,13 @@
   "region_code": "vn",
   "names": [
     {
-      "locale": "en",
-      "name": "che khuc bach (milk jelly sweet soup with lychee)",
+      "locale": "vi",
+      "name": "Chè khúc bạch",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Chè khúc bạch",
+      "locale": "en",
+      "name": "Milk jelly sweet soup with lychee",
       "is_primary": true
     }
   ],

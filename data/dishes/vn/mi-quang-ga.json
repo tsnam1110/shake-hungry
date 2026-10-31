@@ -5,13 +5,13 @@
   "region_code": "vn-quang-nam",
   "names": [
     {
-      "locale": "en",
-      "name": "Mi Quang ga (Quang-style turmeric noodles with chicken)",
+      "locale": "vi",
+      "name": "Mì Quảng gà",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Mì Quảng gà",
+      "locale": "en",
+      "name": "Quang-style turmeric noodles with chicken",
       "is_primary": true
     }
   ],

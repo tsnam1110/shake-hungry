@@ -5,13 +5,13 @@
   "region_code": "vn-ha-noi",
   "names": [
     {
-      "locale": "en",
-      "name": "tao pho (silken tofu pudding)",
+      "locale": "vi",
+      "name": "tào phớ",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "tào phớ",
+      "locale": "en",
+      "name": "Silken tofu pudding",
       "is_primary": true
     },
     {

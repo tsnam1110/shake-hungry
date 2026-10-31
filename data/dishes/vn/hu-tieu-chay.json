@@ -5,13 +5,13 @@
   "region_code": "vn-south",
   "names": [
     {
-      "locale": "en",
-      "name": "hu tieu chay (vegetarian hu tieu)",
+      "locale": "vi",
+      "name": "Hủ tiếu chay",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Hủ tiếu chay",
+      "locale": "en",
+      "name": "Vegetarian hu tieu",
       "is_primary": true
     }
   ],

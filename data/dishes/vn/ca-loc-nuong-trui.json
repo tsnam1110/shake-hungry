@@ -5,13 +5,13 @@
   "region_code": "vn-south",
   "names": [
     {
-      "locale": "en",
-      "name": "ca loc nuong trui (charcoal-grilled snakehead)",
+      "locale": "vi",
+      "name": "Cá lóc nướng trui",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Cá lóc nướng trui",
+      "locale": "en",
+      "name": "Charcoal-grilled snakehead",
       "is_primary": true
     },
     {

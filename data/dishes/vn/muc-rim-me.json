@@ -5,13 +5,13 @@
   "region_code": "vn-da-nang",
   "names": [
     {
-      "locale": "en",
-      "name": "muc rim me (squid simmered in tamarind)",
+      "locale": "vi",
+      "name": "Mực rim me",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Mực rim me",
+      "locale": "en",
+      "name": "Squid simmered in tamarind",
       "is_primary": true
     }
   ],

@@ -5,13 +5,13 @@
   "region_code": "vn-south",
   "names": [
     {
-      "locale": "en",
-      "name": "che chuoi (banana tapioca sweet soup)",
+      "locale": "vi",
+      "name": "chè chuối",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "chè chuối",
+      "locale": "en",
+      "name": "Banana tapioca sweet soup",
       "is_primary": true
     }
   ],

@@ -5,13 +5,13 @@
   "region_code": "vn-ha-noi",
   "names": [
     {
-      "locale": "en",
-      "name": "com (young green rice flakes)",
+      "locale": "vi",
+      "name": "cốm",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "cốm",
+      "locale": "en",
+      "name": "Young green rice flakes",
       "is_primary": true
     }
   ],

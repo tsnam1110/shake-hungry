@@ -5,13 +5,13 @@
   "region_code": "vn-south",
   "names": [
     {
-      "locale": "en",
-      "name": "banh bo (honeycomb cake)",
+      "locale": "vi",
+      "name": "bánh bò",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "bánh bò",
+      "locale": "en",
+      "name": "Honeycomb cake",
       "is_primary": true
     }
   ],

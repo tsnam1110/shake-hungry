@@ -5,13 +5,13 @@
   "region_code": "vn-south",
   "names": [
     {
-      "locale": "en",
-      "name": "Banh canh (thick noodle soup)",
+      "locale": "vi",
+      "name": "Bánh canh",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bánh canh",
+      "locale": "en",
+      "name": "Thick noodle soup",
       "is_primary": true
     }
   ],

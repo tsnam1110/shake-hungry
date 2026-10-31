@@ -8,6 +8,11 @@
       "locale": "vi",
       "name": "kho quẹt",
       "is_primary": true
+    },
+    {
+      "locale": "en",
+      "name": "Caramelized fish sauce dip",
+      "is_primary": true
     }
   ],
   "is_eat_out": true,

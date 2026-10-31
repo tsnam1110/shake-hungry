@@ -5,13 +5,13 @@
   "region_code": "vn-south",
   "names": [
     {
-      "locale": "en",
-      "name": "che ba ba (sweet potato and cassava sweet soup)",
+      "locale": "vi",
+      "name": "chè bà ba",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "chè bà ba",
+      "locale": "en",
+      "name": "Sweet potato and cassava sweet soup",
       "is_primary": true
     }
   ],

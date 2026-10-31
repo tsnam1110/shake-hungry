@@ -5,13 +5,13 @@
   "region_code": "vn-south",
   "names": [
     {
-      "locale": "en",
-      "name": "gỏi cuốn",
+      "locale": "vi",
+      "name": "Nem cuốn",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Nem cuốn",
+      "locale": "en",
+      "name": "Gỏi cuốn",
       "is_primary": true
     },
     {

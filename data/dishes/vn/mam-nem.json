@@ -8,6 +8,11 @@
       "locale": "vi",
       "name": "mắm nêm",
       "is_primary": true
+    },
+    {
+      "locale": "en",
+      "name": "Fermented fish dip with pineapple",
+      "is_primary": true
     }
   ],
   "is_eat_out": true,

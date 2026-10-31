@@ -5,13 +5,13 @@
   "region_code": "vn-north",
   "names": [
     {
-      "locale": "en",
-      "name": "Phu Thê Cake",
+      "locale": "vi",
+      "name": "Bánh phu thê",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bánh phu thê",
+      "locale": "en",
+      "name": "Phu Thê Cake",
       "is_primary": true
     }
   ],

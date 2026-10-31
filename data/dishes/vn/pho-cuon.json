@@ -5,13 +5,13 @@
   "region_code": "vn-ha-noi",
   "names": [
     {
-      "locale": "en",
-      "name": "Pho cuon (pho noodle rolls)",
+      "locale": "vi",
+      "name": "Phở cuốn",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Phở cuốn",
+      "locale": "en",
+      "name": "Pho noodle rolls",
       "is_primary": true
     }
   ],

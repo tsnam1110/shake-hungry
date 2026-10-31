@@ -5,13 +5,13 @@
   "region_code": "vn-north",
   "names": [
     {
-      "locale": "en",
-      "name": "Banh khao (pressed roasted glutinous flour cake)",
+      "locale": "vi",
+      "name": "Bánh khảo",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bánh khảo",
+      "locale": "en",
+      "name": "Pressed roasted glutinous flour cake",
       "is_primary": true
     }
   ],

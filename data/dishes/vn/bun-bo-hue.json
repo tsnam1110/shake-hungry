@@ -5,13 +5,13 @@
   "region_code": "vn-hue",
   "names": [
     {
-      "locale": "en",
-      "name": "Bun bo Hue (Hue beef noodle soup)",
+      "locale": "vi",
+      "name": "Bún bò Huế",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bún bò Huế",
+      "locale": "en",
+      "name": "Hue beef noodle soup",
       "is_primary": true
     }
   ],

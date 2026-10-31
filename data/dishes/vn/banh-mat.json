@@ -5,13 +5,13 @@
   "region_code": "vn-nghe-an",
   "names": [
     {
-      "locale": "en",
-      "name": "Banh mat (Nghe An glutinous cake with cane syrup)",
+      "locale": "vi",
+      "name": "Bánh mật",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bánh mật",
+      "locale": "en",
+      "name": "Nghe An glutinous cake with cane syrup",
       "is_primary": true
     }
   ],

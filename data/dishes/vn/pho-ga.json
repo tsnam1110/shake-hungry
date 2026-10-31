@@ -5,13 +5,13 @@
   "region_code": "vn-ha-noi",
   "names": [
     {
-      "locale": "en",
-      "name": "pho ga",
+      "locale": "vi",
+      "name": "phở gà",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "phở gà",
+      "locale": "en",
+      "name": "Chicken pho",
       "is_primary": true
     }
   ],

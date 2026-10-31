@@ -5,13 +5,13 @@
   "region_code": "vn-south",
   "names": [
     {
-      "locale": "en",
-      "name": "Bun thit xao sa (vermicelli with lemongrass stir-fried pork)",
+      "locale": "vi",
+      "name": "Bún thịt xào sả",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bún thịt xào sả",
+      "locale": "en",
+      "name": "Vermicelli with lemongrass stir-fried pork",
       "is_primary": true
     }
   ],

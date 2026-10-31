@@ -5,13 +5,13 @@
   "region_code": "vn-hai-phong",
   "names": [
     {
-      "locale": "en",
-      "name": "Banh da ca (red flat noodle soup with fish)",
+      "locale": "vi",
+      "name": "Bánh đa cá",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bánh đa cá",
+      "locale": "en",
+      "name": "Red flat noodle soup with fish",
       "is_primary": true
     }
   ],

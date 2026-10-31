@@ -5,13 +5,13 @@
   "region_code": "vn-south",
   "names": [
     {
-      "locale": "en",
-      "name": "chuoi chien (fried banana fritter)",
+      "locale": "vi",
+      "name": "chuối chiên",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "chuối chiên",
+      "locale": "en",
+      "name": "Fried banana fritter",
       "is_primary": true
     }
   ],

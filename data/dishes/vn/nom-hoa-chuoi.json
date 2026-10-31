@@ -15,6 +15,11 @@
       "is_primary": false,
       "is_alias": true,
       "note": "miền Nam"
+    },
+    {
+      "locale": "en",
+      "name": "Banana blossom salad",
+      "is_primary": true
     }
   ],
   "is_eat_out": true,

@@ -5,13 +5,13 @@
   "region_code": "vn-south",
   "names": [
     {
-      "locale": "en",
-      "name": "Nem Lai Vung",
+      "locale": "vi",
+      "name": "Nem chua Lai Vung",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Nem chua Lai Vung",
+      "locale": "en",
+      "name": "Lai Vung fermented pork roll",
       "is_primary": true
     }
   ],

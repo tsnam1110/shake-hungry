@@ -5,13 +5,13 @@
   "region_code": "vn-ha-noi",
   "names": [
     {
-      "locale": "en",
-      "name": "cha com (young green rice pork cake)",
+      "locale": "vi",
+      "name": "Chả cốm",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Chả cốm",
+      "locale": "en",
+      "name": "Young green rice pork cake",
       "is_primary": true
     }
   ],

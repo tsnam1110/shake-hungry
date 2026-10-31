@@ -5,13 +5,13 @@
   "region_code": "vn-south",
   "names": [
     {
-      "locale": "en",
-      "name": "Bun rieu tom (shrimp paste noodle soup)",
+      "locale": "vi",
+      "name": "Bún riêu tôm",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bún riêu tôm",
+      "locale": "en",
+      "name": "Shrimp paste noodle soup",
       "is_primary": true
     }
   ],

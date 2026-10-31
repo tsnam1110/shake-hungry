@@ -5,13 +5,13 @@
   "region_code": "vn-south",
   "names": [
     {
-      "locale": "en",
-      "name": "Bun mam (fermented fish noodle soup)",
+      "locale": "vi",
+      "name": "Bún mắm",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bún mắm",
+      "locale": "en",
+      "name": "Fermented fish noodle soup",
       "is_primary": true
     }
   ],

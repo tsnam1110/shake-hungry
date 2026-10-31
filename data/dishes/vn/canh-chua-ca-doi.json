@@ -5,13 +5,13 @@
   "region_code": "vn-south",
   "names": [
     {
-      "locale": "en",
-      "name": "Canh chua ca doi (sour soup with grey mullet)",
+      "locale": "vi",
+      "name": "Canh chua cá đối",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Canh chua cá đối",
+      "locale": "en",
+      "name": "Sour soup with grey mullet",
       "is_primary": true
     }
   ],

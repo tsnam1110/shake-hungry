@@ -8,6 +8,11 @@
       "locale": "vi",
       "name": "Khô nhái",
       "is_primary": true
+    },
+    {
+      "locale": "en",
+      "name": "Dried frog",
+      "is_primary": true
     }
   ],
   "is_eat_out": true,

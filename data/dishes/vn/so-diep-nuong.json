@@ -5,13 +5,13 @@
   "region_code": "vn",
   "names": [
     {
-      "locale": "en",
-      "name": "grilled scallops with scallion oil",
+      "locale": "vi",
+      "name": "Sò điệp nướng mỡ hành",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Sò điệp nướng mỡ hành",
+      "locale": "en",
+      "name": "Grilled scallops with scallion oil",
       "is_primary": true
     }
   ],

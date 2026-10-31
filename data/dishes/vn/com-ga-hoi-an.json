@@ -5,13 +5,13 @@
   "region_code": "vn-quang-nam",
   "names": [
     {
-      "locale": "en",
-      "name": "Com ga Hoi An (Hoi An chicken rice)",
+      "locale": "vi",
+      "name": "Cơm gà Hội An",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Cơm gà Hội An",
+      "locale": "en",
+      "name": "Hoi An chicken rice",
       "is_primary": true
     }
   ],

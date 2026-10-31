@@ -5,13 +5,13 @@
   "region_code": "vn-south",
   "names": [
     {
-      "locale": "en",
-      "name": "banh tam khoai mi (cassava silkworm cake)",
+      "locale": "vi",
+      "name": "bánh tằm khoai mì",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "bánh tằm khoai mì",
+      "locale": "en",
+      "name": "Cassava silkworm cake",
       "is_primary": true
     }
   ],

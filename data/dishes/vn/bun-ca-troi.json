@@ -5,13 +5,13 @@
   "region_code": "vn-ha-noi",
   "names": [
     {
-      "locale": "en",
-      "name": "Bun ca troi (silver carp noodle soup)",
+      "locale": "vi",
+      "name": "Bún cá trôi",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bún cá trôi",
+      "locale": "en",
+      "name": "Silver carp noodle soup",
       "is_primary": true
     }
   ],

@@ -5,13 +5,13 @@
   "region_code": "vn",
   "names": [
     {
-      "locale": "en",
-      "name": "mi xao gion (crispy fried noodles)",
+      "locale": "vi",
+      "name": "Mì xào giòn",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Mì xào giòn",
+      "locale": "en",
+      "name": "Crispy fried noodles",
       "is_primary": true
     }
   ],

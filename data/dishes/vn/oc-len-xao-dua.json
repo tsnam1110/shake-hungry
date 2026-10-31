@@ -5,13 +5,13 @@
   "region_code": "vn-south",
   "names": [
     {
-      "locale": "en",
-      "name": "mud creepers stir-fried in coconut milk",
+      "locale": "vi",
+      "name": "Ốc len xào dừa",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Ốc len xào dừa",
+      "locale": "en",
+      "name": "Mud creepers stir-fried in coconut milk",
       "is_primary": true
     }
   ],

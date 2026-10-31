@@ -5,13 +5,13 @@
   "region_code": "vn-south",
   "names": [
     {
-      "locale": "en",
-      "name": "dragon-fruit noodle",
+      "locale": "vi",
+      "name": "Mì thanh long",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Mì thanh long",
+      "locale": "en",
+      "name": "Dragon-fruit noodle",
       "is_primary": true
     }
   ],

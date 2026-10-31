@@ -5,13 +5,13 @@
   "region_code": "vn-south",
   "names": [
     {
-      "locale": "en",
-      "name": "Mi xao tom cang (stir-fried egg noodles with giant river prawns)",
+      "locale": "vi",
+      "name": "Mì xào tôm càng",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Mì xào tôm càng",
+      "locale": "en",
+      "name": "Stir-fried egg noodles with giant river prawns",
       "is_primary": true
     }
   ],

@@ -5,13 +5,13 @@
   "region_code": "vn-tp-hcm",
   "names": [
     {
-      "locale": "en",
-      "name": "rice paper salad (banh trang tron)",
+      "locale": "vi",
+      "name": "Bánh tráng trộn",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bánh tráng trộn",
+      "locale": "en",
+      "name": "Rice paper salad (banh trang tron)",
       "is_primary": true
     }
   ],

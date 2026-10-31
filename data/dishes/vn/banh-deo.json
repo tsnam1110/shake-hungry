@@ -5,13 +5,13 @@
   "region_code": "vn",
   "names": [
     {
-      "locale": "en",
-      "name": "Banh deo (soft snow-skin mooncake with mung bean)",
+      "locale": "vi",
+      "name": "Bánh dẻo",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bánh dẻo",
+      "locale": "en",
+      "name": "Soft snow-skin mooncake with mung bean",
       "is_primary": true
     }
   ],

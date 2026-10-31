@@ -5,13 +5,13 @@
   "region_code": "vn-north",
   "names": [
     {
-      "locale": "en",
-      "name": "Banh troi tau (glutinous rice balls in ginger syrup)",
+      "locale": "vi",
+      "name": "Bánh trôi tàu",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bánh trôi tàu",
+      "locale": "en",
+      "name": "Tangyuan-style glutinous rice balls in ginger syrup",
       "is_primary": true
     }
   ],

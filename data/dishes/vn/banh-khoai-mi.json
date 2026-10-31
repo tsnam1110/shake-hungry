@@ -5,13 +5,13 @@
   "region_code": "vn-south",
   "names": [
     {
-      "locale": "en",
-      "name": "banh khoai mi (cassava cake)",
+      "locale": "vi",
+      "name": "bánh khoai mì",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "bánh khoai mì",
+      "locale": "en",
+      "name": "Cassava cake",
       "is_primary": true
     },
     {

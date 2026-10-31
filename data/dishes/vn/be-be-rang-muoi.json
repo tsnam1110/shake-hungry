@@ -5,13 +5,13 @@
   "region_code": "vn-north",
   "names": [
     {
-      "locale": "en",
-      "name": "mantis shrimp dry-fried with salt",
+      "locale": "vi",
+      "name": "Bề bề rang muối",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bề bề rang muối",
+      "locale": "en",
+      "name": "Mantis shrimp dry-fried with salt",
       "is_primary": true
     },
     {

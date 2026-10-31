@@ -43,6 +43,19 @@ class Dish extends Model
         return $this->hasMany(DishName::class);
     }
 
+    /**
+     * Tên hiển thị cho người dùng Việt: luôn ưu tiên tên chính tiếng Việt có
+     * dấu, không phụ thuộc thứ tự dòng tên trong dữ liệu (DATA-009).
+     */
+    public function displayName(): ?string
+    {
+        $names = $this->relationLoaded('names') ? $this->names : $this->names()->get();
+        $vi = $names->first(fn ($n) => $n->locale === 'vi' && $n->is_primary)
+            ?? $names->first(fn ($n) => $n->locale === 'vi');
+
+        return ($vi ?? $names->first())?->name;
+    }
+
     public function mealSlots(): HasMany
     {
         return $this->hasMany(DishMealSlot::class);

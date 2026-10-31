@@ -5,13 +5,13 @@
   "region_code": "vn-hue",
   "names": [
     {
-      "locale": "en",
-      "name": "che dau ngu (lima bean sweet soup)",
+      "locale": "vi",
+      "name": "chè đậu ngự",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "chè đậu ngự",
+      "locale": "en",
+      "name": "Lima bean sweet soup",
       "is_primary": true
     }
   ],

@@ -5,13 +5,13 @@
   "region_code": "vn-north",
   "names": [
     {
-      "locale": "en",
-      "name": "Bun dau mam tom (noodles with fried tofu and shrimp paste)",
+      "locale": "vi",
+      "name": "Bún đậu mắm tôm",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bún đậu mắm tôm",
+      "locale": "en",
+      "name": "Noodles with fried tofu and shrimp paste",
       "is_primary": true
     }
   ],

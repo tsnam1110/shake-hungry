@@ -8,6 +8,11 @@
       "locale": "vi",
       "name": "mắm ruột An Giang",
       "is_primary": true
+    },
+    {
+      "locale": "en",
+      "name": "Fermented fish entrails sauce (An Giang)",
+      "is_primary": true
     }
   ],
   "is_eat_out": false,

@@ -5,13 +5,13 @@
   "region_code": "vn-tp-hcm",
   "names": [
     {
-      "locale": "en",
-      "name": "com tam chay (vegetarian broken rice)",
+      "locale": "vi",
+      "name": "Cơm tấm chay",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Cơm tấm chay",
+      "locale": "en",
+      "name": "Vegetarian broken rice",
       "is_primary": true
     }
   ],

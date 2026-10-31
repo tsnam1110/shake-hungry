@@ -5,13 +5,13 @@
   "region_code": "vn-tien-giang",
   "names": [
     {
-      "locale": "en",
-      "name": "banh gia (bean sprout fritter)",
+      "locale": "vi",
+      "name": "bánh giá",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "bánh giá",
+      "locale": "en",
+      "name": "Bean sprout fritter",
       "is_primary": true
     }
   ],

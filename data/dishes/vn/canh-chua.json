@@ -6,12 +6,12 @@
   "names": [
     {
       "locale": "vi",
-      "name": "canh chua",
+      "name": "Canh chua",
       "is_primary": true
     },
     {
       "locale": "en",
-      "name": "sour fish soup",
+      "name": "Sour fish soup",
       "is_primary": true
     }
   ],

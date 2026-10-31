@@ -6,12 +6,12 @@
   "names": [
     {
       "locale": "vi",
-      "name": "cua rang me",
+      "name": "Cua rang me",
       "is_primary": true
     },
     {
       "locale": "en",
-      "name": "crab stir-fried with tamarind",
+      "name": "Crab stir-fried with tamarind",
       "is_primary": true
     }
   ],

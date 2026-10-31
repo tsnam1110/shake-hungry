@@ -8,6 +8,11 @@
       "locale": "vi",
       "name": "chả rươi",
       "is_primary": true
+    },
+    {
+      "locale": "en",
+      "name": "Sandworm fritters",
+      "is_primary": true
     }
   ],
   "is_eat_out": true,

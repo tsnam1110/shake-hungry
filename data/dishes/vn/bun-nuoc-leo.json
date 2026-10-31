@@ -8,6 +8,11 @@
       "locale": "vi",
       "name": "bún nước lèo",
       "is_primary": true
+    },
+    {
+      "locale": "en",
+      "name": "Vermicelli in fermented fish broth (Soc Trang)",
+      "is_primary": true
     }
   ],
   "is_eat_out": true,

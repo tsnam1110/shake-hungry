@@ -5,13 +5,13 @@
   "region_code": "vn-ha-noi",
   "names": [
     {
-      "locale": "en",
-      "name": "Pho bo sot vang (pho with wine-braised beef)",
+      "locale": "vi",
+      "name": "Phở bò sốt vang",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Phở bò sốt vang",
+      "locale": "en",
+      "name": "Pho with wine-braised beef",
       "is_primary": true
     }
   ],

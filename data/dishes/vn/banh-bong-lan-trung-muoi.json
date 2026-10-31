@@ -5,13 +5,13 @@
   "region_code": "vn",
   "names": [
     {
-      "locale": "en",
-      "name": "Banh bong lan trung muoi (sponge cake with salted egg yolk)",
+      "locale": "vi",
+      "name": "Bánh bông lan trứng muối",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bánh bông lan trứng muối",
+      "locale": "en",
+      "name": "Sponge cake with salted egg yolk",
       "is_primary": true
     }
   ],

@@ -5,13 +5,13 @@
   "region_code": "vn-ha-noi",
   "names": [
     {
-      "locale": "en",
-      "name": "fried fermented pork (nem chua ran)",
+      "locale": "vi",
+      "name": "Nem chua rán",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Nem chua rán",
+      "locale": "en",
+      "name": "Fried fermented pork (nem chua ran)",
       "is_primary": true
     }
   ],

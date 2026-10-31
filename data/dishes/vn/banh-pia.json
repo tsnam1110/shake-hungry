@@ -5,13 +5,13 @@
   "region_code": "vn-soc-trang",
   "names": [
     {
-      "locale": "en",
-      "name": "banh pia (mung bean pastry)",
+      "locale": "vi",
+      "name": "bánh pía",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "bánh pía",
+      "locale": "en",
+      "name": "Mung bean pastry",
       "is_primary": true
     }
   ],

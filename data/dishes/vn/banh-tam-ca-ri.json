@@ -5,13 +5,13 @@
   "region_code": "vn-south",
   "names": [
     {
-      "locale": "en",
-      "name": "Banh tam ca ri (silkworm noodles with curry)",
+      "locale": "vi",
+      "name": "Bánh tằm cà ri",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bánh tằm cà ri",
+      "locale": "en",
+      "name": "Silkworm noodles with curry",
       "is_primary": true
     }
   ],

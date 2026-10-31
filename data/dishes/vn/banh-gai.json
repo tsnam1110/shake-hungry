@@ -5,13 +5,13 @@
   "region_code": "vn-north",
   "names": [
     {
-      "locale": "en",
-      "name": "banh gai (ramie leaf cake)",
+      "locale": "vi",
+      "name": "bánh gai",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "bánh gai",
+      "locale": "en",
+      "name": "Ramie leaf cake",
       "is_primary": true
     }
   ],

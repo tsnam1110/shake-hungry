@@ -5,13 +5,13 @@
   "region_code": "vn",
   "names": [
     {
-      "locale": "en",
-      "name": "fried cheese sticks",
+      "locale": "vi",
+      "name": "Phô mai que",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Phô mai que",
+      "locale": "en",
+      "name": "Fried cheese sticks",
       "is_primary": true
     }
   ],

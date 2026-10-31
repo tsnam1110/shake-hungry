@@ -5,13 +5,13 @@
   "region_code": "vn-south",
   "names": [
     {
-      "locale": "en",
-      "name": "Banh canh ghe (thick noodle soup with flower crab)",
+      "locale": "vi",
+      "name": "Bánh canh ghẹ",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bánh canh ghẹ",
+      "locale": "en",
+      "name": "Thick noodle soup with flower crab",
       "is_primary": true
     }
   ],

@@ -5,13 +5,13 @@
   "region_code": "vn-south",
   "names": [
     {
-      "locale": "en",
-      "name": "suong sam (green jelly leaf dessert)",
+      "locale": "vi",
+      "name": "sương sâm",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "sương sâm",
+      "locale": "en",
+      "name": "Green jelly leaf dessert",
       "is_primary": true
     }
   ],

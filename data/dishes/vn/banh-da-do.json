@@ -8,6 +8,11 @@
       "locale": "vi",
       "name": "bánh đa đỏ",
       "is_primary": true
+    },
+    {
+      "locale": "en",
+      "name": "Red rice-paper crackers (Hai Phong)",
+      "is_primary": true
     }
   ],
   "is_eat_out": false,

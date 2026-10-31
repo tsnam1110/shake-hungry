@@ -8,6 +8,11 @@
       "locale": "vi",
       "name": "Ốc vú nàng",
       "is_primary": true
+    },
+    {
+      "locale": "en",
+      "name": "Vu nang cone snails",
+      "is_primary": true
     }
   ],
   "is_eat_out": true,

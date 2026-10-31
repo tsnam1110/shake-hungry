@@ -5,13 +5,13 @@
   "region_code": "vn-south",
   "names": [
     {
-      "locale": "en",
-      "name": "Banh canh cua (thick noodle soup with field crab)",
+      "locale": "vi",
+      "name": "Bánh canh cua",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bánh canh cua",
+      "locale": "en",
+      "name": "Thick noodle soup with field crab",
       "is_primary": true
     }
   ],

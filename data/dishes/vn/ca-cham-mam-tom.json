@@ -8,6 +8,11 @@
       "locale": "vi",
       "name": "cà chấm mắm tôm",
       "is_primary": true
+    },
+    {
+      "locale": "en",
+      "name": "Pickled eggplant with shrimp paste",
+      "is_primary": true
     }
   ],
   "is_eat_out": true,

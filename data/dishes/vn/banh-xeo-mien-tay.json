@@ -5,13 +5,13 @@
   "region_code": "vn-south",
   "names": [
     {
-      "locale": "en",
-      "name": "Banh xeo mien Tay (Mekong Delta crispy turmeric pancake)",
+      "locale": "vi",
+      "name": "Bánh xèo miền Tây",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bánh xèo miền Tây",
+      "locale": "en",
+      "name": "Mekong Delta crispy turmeric pancake",
       "is_primary": true
     }
   ],

@@ -5,13 +5,13 @@
   "region_code": "vn-south",
   "names": [
     {
-      "locale": "en",
-      "name": "banh xeo chay (vegetarian banh xeo)",
+      "locale": "vi",
+      "name": "Bánh xèo chay",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bánh xèo chay",
+      "locale": "en",
+      "name": "Vegetarian banh xeo",
       "is_primary": true
     }
   ],

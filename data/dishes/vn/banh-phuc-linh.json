@@ -5,13 +5,13 @@
   "region_code": "vn-south",
   "names": [
     {
-      "locale": "en",
-      "name": "Banh phuc linh (pressed tapioca coconut cookies)",
+      "locale": "vi",
+      "name": "Bánh phục linh",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bánh phục linh",
+      "locale": "en",
+      "name": "Pressed tapioca coconut cookies",
       "is_primary": true
     }
   ],

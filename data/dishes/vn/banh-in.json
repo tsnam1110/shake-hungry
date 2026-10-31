@@ -5,13 +5,13 @@
   "region_code": "vn-hue",
   "names": [
     {
-      "locale": "en",
-      "name": "Banh in (pressed glutinous rice flour cake, Hue)",
+      "locale": "vi",
+      "name": "Bánh in",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bánh in",
+      "locale": "en",
+      "name": "Pressed glutinous rice flour cake, Hue",
       "is_primary": true
     }
   ],

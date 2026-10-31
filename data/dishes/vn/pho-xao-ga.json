@@ -5,13 +5,13 @@
   "region_code": "vn-ha-noi",
   "names": [
     {
-      "locale": "en",
-      "name": "Pho xao ga (stir-fried pho noodles with chicken)",
+      "locale": "vi",
+      "name": "Phở xào gà",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Phở xào gà",
+      "locale": "en",
+      "name": "Stir-fried pho noodles with chicken",
       "is_primary": true
     }
   ],

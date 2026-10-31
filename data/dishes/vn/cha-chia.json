@@ -5,13 +5,13 @@
   "region_code": "vn-hai-phong",
   "names": [
     {
-      "locale": "en",
-      "name": "cha chia (pork paste on lemongrass stalks)",
+      "locale": "vi",
+      "name": "Chả chìa",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Chả chìa",
+      "locale": "en",
+      "name": "Pork paste on lemongrass stalks",
       "is_primary": true
     }
   ],

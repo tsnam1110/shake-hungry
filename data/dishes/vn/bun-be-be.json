@@ -5,13 +5,13 @@
   "region_code": "vn-north",
   "names": [
     {
-      "locale": "en",
-      "name": "Bun be be (mantis shrimp noodle soup)",
+      "locale": "vi",
+      "name": "Bún bề bề",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bún bề bề",
+      "locale": "en",
+      "name": "Mantis shrimp noodle soup",
       "is_primary": true
     }
   ],

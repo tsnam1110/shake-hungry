@@ -5,13 +5,13 @@
   "region_code": "vn-ha-noi",
   "names": [
     {
-      "locale": "en",
-      "name": "banh com (green rice cake)",
+      "locale": "vi",
+      "name": "bánh cốm",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "bánh cốm",
+      "locale": "en",
+      "name": "Green rice cake",
       "is_primary": true
     }
   ],

@@ -5,13 +5,13 @@
   "region_code": "vn-south",
   "names": [
     {
-      "locale": "en",
-      "name": "che banh lot (pandan jelly sweet soup)",
+      "locale": "vi",
+      "name": "chè bánh lọt",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "chè bánh lọt",
+      "locale": "en",
+      "name": "Pandan jelly sweet soup",
       "is_primary": true
     }
   ],

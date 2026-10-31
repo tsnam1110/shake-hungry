@@ -8,6 +8,11 @@
       "locale": "vi",
       "name": "Bánh bao, bánh vạc",
       "is_primary": true
+    },
+    {
+      "locale": "en",
+      "name": "White rose dumplings (Hoi An)",
+      "is_primary": true
     }
   ],
   "is_eat_out": true,

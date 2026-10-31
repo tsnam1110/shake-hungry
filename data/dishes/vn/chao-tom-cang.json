@@ -5,13 +5,13 @@
   "region_code": "vn-south",
   "names": [
     {
-      "locale": "en",
-      "name": "Chao tom cang (giant river prawn rice porridge)",
+      "locale": "vi",
+      "name": "Cháo tôm càng",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Cháo tôm càng",
+      "locale": "en",
+      "name": "Giant river prawn rice porridge",
       "is_primary": true
     }
   ],

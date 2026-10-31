@@ -5,13 +5,13 @@
   "region_code": "vn-south",
   "names": [
     {
-      "locale": "en",
-      "name": "che dau trang (white bean sweet soup)",
+      "locale": "vi",
+      "name": "chè đậu trắng",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "chè đậu trắng",
+      "locale": "en",
+      "name": "White bean sweet soup",
       "is_primary": true
     }
   ],

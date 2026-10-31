@@ -5,13 +5,13 @@
   "region_code": "vn-hai-phong",
   "names": [
     {
-      "locale": "en",
-      "name": "Banh da cua (Hai Phong crab noodle soup)",
+      "locale": "vi",
+      "name": "Bánh đa cua",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bánh đa cua",
+      "locale": "en",
+      "name": "Hai Phong crab noodle soup",
       "is_primary": true
     }
   ],

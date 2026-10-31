@@ -8,6 +8,11 @@
       "locale": "vi",
       "name": "mắm chua",
       "is_primary": true
+    },
+    {
+      "locale": "en",
+      "name": "Sour fermented fish paste",
+      "is_primary": true
     }
   ],
   "is_eat_out": true,

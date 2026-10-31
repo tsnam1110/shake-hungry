@@ -5,13 +5,13 @@
   "region_code": "vn-da-nang",
   "names": [
     {
-      "locale": "en",
-      "name": "pork rice paper rolls, Da Nang style",
+      "locale": "vi",
+      "name": "Bánh tráng cuốn thịt heo",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bánh tráng cuốn thịt heo",
+      "locale": "en",
+      "name": "Pork rice paper rolls, Da Nang style",
       "is_primary": true
     },
     {

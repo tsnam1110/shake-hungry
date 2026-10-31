@@ -5,13 +5,13 @@
   "region_code": "vn",
   "names": [
     {
-      "locale": "en",
-      "name": "cha lua chay (vegetarian sausage)",
+      "locale": "vi",
+      "name": "Chả lụa chay",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Chả lụa chay",
+      "locale": "en",
+      "name": "Vegetarian sausage",
       "is_primary": true
     },
     {

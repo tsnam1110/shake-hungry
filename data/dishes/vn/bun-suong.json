@@ -5,13 +5,13 @@
   "region_code": "vn-south",
   "names": [
     {
-      "locale": "en",
-      "name": "Bun suong (Tra Vinh shrimp dumpling noodle soup)",
+      "locale": "vi",
+      "name": "Bún suông",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bún suông",
+      "locale": "en",
+      "name": "Tra Vinh shrimp dumpling noodle soup",
       "is_primary": true
     }
   ],

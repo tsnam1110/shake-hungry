@@ -5,13 +5,13 @@
   "region_code": "vn-north",
   "names": [
     {
-      "locale": "en",
-      "name": "Bun oc (snail noodle soup)",
+      "locale": "vi",
+      "name": "Bún ốc",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bún ốc",
+      "locale": "en",
+      "name": "Snail noodle soup",
       "is_primary": true
     }
   ],

@@ -6,7 +6,12 @@
   "names": [
     {
       "locale": "vi",
-      "name": "don",
+      "name": "Don",
+      "is_primary": true
+    },
+    {
+      "locale": "en",
+      "name": "Don tiny clam dish (Quang Ngai)",
       "is_primary": true
     }
   ],

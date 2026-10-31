@@ -5,13 +5,13 @@
   "region_code": "vn-north",
   "names": [
     {
-      "locale": "en",
-      "name": "Canh hat sen suon (lotus seed soup with pork ribs)",
+      "locale": "vi",
+      "name": "Canh hạt sen nấu sườn",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Canh hạt sen nấu sườn",
+      "locale": "en",
+      "name": "Lotus seed soup with pork ribs",
       "is_primary": true
     }
   ],

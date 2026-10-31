@@ -5,13 +5,13 @@
   "region_code": "vn-south",
   "names": [
     {
-      "locale": "en",
-      "name": "Bun ken (Phu Quoc fish curry noodle soup)",
+      "locale": "vi",
+      "name": "Bún kèn",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bún kèn",
+      "locale": "en",
+      "name": "Phu Quoc fish curry noodle soup",
       "is_primary": true
     }
   ],

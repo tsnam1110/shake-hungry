@@ -5,13 +5,13 @@
   "region_code": "vn",
   "names": [
     {
-      "locale": "en",
-      "name": "pho chay (vegetarian pho)",
+      "locale": "vi",
+      "name": "Phở chay",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Phở chay",
+      "locale": "en",
+      "name": "Vegetarian pho",
       "is_primary": true
     }
   ],

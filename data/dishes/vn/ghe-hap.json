@@ -5,13 +5,13 @@
   "region_code": "vn",
   "names": [
     {
-      "locale": "en",
-      "name": "steamed swimming crab with lemongrass",
+      "locale": "vi",
+      "name": "Ghẹ hấp sả",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Ghẹ hấp sả",
+      "locale": "en",
+      "name": "Steamed swimming crab with lemongrass",
       "is_primary": true
     }
   ],

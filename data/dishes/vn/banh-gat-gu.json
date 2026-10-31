@@ -5,13 +5,13 @@
   "region_code": "vn-north",
   "names": [
     {
-      "locale": "en",
-      "name": "banh gat gu (nodding rice rolls)",
+      "locale": "vi",
+      "name": "bánh gật gù",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "bánh gật gù",
+      "locale": "en",
+      "name": "Nodding rice rolls",
       "is_primary": true
     }
   ],

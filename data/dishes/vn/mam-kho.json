@@ -8,6 +8,11 @@
       "locale": "vi",
       "name": "mắm kho",
       "is_primary": true
+    },
+    {
+      "locale": "en",
+      "name": "Braised fermented fish",
+      "is_primary": true
     }
   ],
   "is_eat_out": true,

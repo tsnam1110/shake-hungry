@@ -5,13 +5,13 @@
   "region_code": "vn-hue",
   "names": [
     {
-      "locale": "en",
-      "name": "Banh hoa hong trang (white rose dumplings, Hoi An style)",
+      "locale": "vi",
+      "name": "Bánh hoa hồng trắng",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bánh hoa hồng trắng",
+      "locale": "en",
+      "name": "White rose dumplings, Hoi An style",
       "is_primary": true
     }
   ],

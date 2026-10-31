@@ -8,6 +8,11 @@
       "locale": "vi",
       "name": "bánh chưng",
       "is_primary": true
+    },
+    {
+      "locale": "en",
+      "name": "Square sticky rice cake with pork and mung bean",
+      "is_primary": true
     }
   ],
   "is_eat_out": true,

@@ -8,6 +8,11 @@
       "locale": "vi",
       "name": "Bim bim",
       "is_primary": true
+    },
+    {
+      "locale": "en",
+      "name": "Snack crisps",
+      "is_primary": true
     }
   ],
   "is_eat_out": false,

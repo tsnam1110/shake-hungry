@@ -5,13 +5,13 @@
   "region_code": "vn-north",
   "names": [
     {
-      "locale": "en",
-      "name": "goi sua (jellyfish salad)",
+      "locale": "vi",
+      "name": "Gỏi sứa",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Gỏi sứa",
+      "locale": "en",
+      "name": "Jellyfish salad",
       "is_primary": true
     },
     {

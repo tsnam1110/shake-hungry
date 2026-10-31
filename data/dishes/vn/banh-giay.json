@@ -5,13 +5,13 @@
   "region_code": "vn-north",
   "names": [
     {
-      "locale": "en",
-      "name": "bánh giày",
+      "locale": "vi",
+      "name": "bánh giầy",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "bánh giầy",
+      "locale": "en",
+      "name": "Bánh giày",
       "is_primary": true
     }
   ],

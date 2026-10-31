@@ -5,13 +5,13 @@
   "region_code": "vn-soc-trang",
   "names": [
     {
-      "locale": "en",
-      "name": "Banh ong la dua (Khmer pandan rice cake in bamboo tube)",
+      "locale": "vi",
+      "name": "Bánh ống lá dứa",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bánh ống lá dứa",
+      "locale": "en",
+      "name": "Khmer pandan rice cake in bamboo tube",
       "is_primary": true
     }
   ],

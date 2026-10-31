@@ -5,13 +5,13 @@
   "region_code": "vn-quang-nam",
   "names": [
     {
-      "locale": "en",
-      "name": "banh dap (crushed rice cake)",
+      "locale": "vi",
+      "name": "bánh đập",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "bánh đập",
+      "locale": "en",
+      "name": "Crushed rice cake",
       "is_primary": true
     }
   ],

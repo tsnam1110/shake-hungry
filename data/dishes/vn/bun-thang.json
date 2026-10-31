@@ -5,13 +5,13 @@
   "region_code": "vn-ha-noi",
   "names": [
     {
-      "locale": "en",
-      "name": "Bun thang (Hanoi assorted noodle soup)",
+      "locale": "vi",
+      "name": "Bún thang",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bún thang",
+      "locale": "en",
+      "name": "Hanoi assorted noodle soup",
       "is_primary": true
     }
   ],

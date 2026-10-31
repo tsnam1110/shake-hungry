@@ -5,13 +5,13 @@
   "region_code": "vn",
   "names": [
     {
-      "locale": "en",
-      "name": "grilled oysters with scallion oil",
+      "locale": "vi",
+      "name": "Hàu nướng mỡ hành",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Hàu nướng mỡ hành",
+      "locale": "en",
+      "name": "Grilled oysters with scallion oil",
       "is_primary": true
     }
   ],

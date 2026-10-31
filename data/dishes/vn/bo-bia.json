@@ -5,13 +5,13 @@
   "region_code": "vn-tp-hcm",
   "names": [
     {
-      "locale": "en",
-      "name": "bo bia (jicama and Chinese sausage rolls)",
+      "locale": "vi",
+      "name": "Bò bía",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bò bía",
+      "locale": "en",
+      "name": "Jicama and Chinese sausage rolls",
       "is_primary": true
     }
   ],

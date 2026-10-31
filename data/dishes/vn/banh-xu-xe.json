@@ -5,13 +5,13 @@
   "region_code": "vn-north",
   "names": [
     {
-      "locale": "en",
-      "name": "Banh xu xe (tapioca cake with mung bean filling)",
+      "locale": "vi",
+      "name": "Bánh xu xê",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bánh xu xê",
+      "locale": "en",
+      "name": "Tapioca cake with mung bean filling",
       "is_primary": true
     }
   ],

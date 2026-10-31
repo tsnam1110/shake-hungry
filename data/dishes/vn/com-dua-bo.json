@@ -5,13 +5,13 @@
   "region_code": "vn-ha-noi",
   "names": [
     {
-      "locale": "en",
-      "name": "Com dua bo (rice with pickled mustard greens and beef)",
+      "locale": "vi",
+      "name": "Cơm dưa bò",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Cơm dưa bò",
+      "locale": "en",
+      "name": "Rice with pickled mustard greens and beef",
       "is_primary": true
     }
   ],

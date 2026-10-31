@@ -5,13 +5,13 @@
   "region_code": "vn",
   "names": [
     {
-      "locale": "en",
-      "name": "bánh bao",
+      "locale": "vi",
+      "name": "bánh bao Việt Nam",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "bánh bao Việt Nam",
+      "locale": "en",
+      "name": "Bánh bao",
       "is_primary": true
     }
   ],

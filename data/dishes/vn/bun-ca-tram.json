@@ -5,13 +5,13 @@
   "region_code": "vn-ha-noi",
   "names": [
     {
-      "locale": "en",
-      "name": "Bun ca tram (grass carp noodle soup)",
+      "locale": "vi",
+      "name": "Bún cá trắm",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bún cá trắm",
+      "locale": "en",
+      "name": "Grass carp noodle soup",
       "is_primary": true
     }
   ],

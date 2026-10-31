@@ -5,13 +5,13 @@
   "region_code": "vn-hue",
   "names": [
     {
-      "locale": "en",
-      "name": "Bun chao tom (noodles with grilled shrimp paste on sugarcane)",
+      "locale": "vi",
+      "name": "Bún chạo tôm",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bún chạo tôm",
+      "locale": "en",
+      "name": "Noodles with grilled shrimp paste on sugarcane",
       "is_primary": true
     }
   ],

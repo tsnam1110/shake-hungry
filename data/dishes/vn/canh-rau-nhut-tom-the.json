@@ -5,13 +5,13 @@
   "region_code": "vn-south",
   "names": [
     {
-      "locale": "en",
-      "name": "Canh rau nhut tom the (water mimosa soup with whiteleg shrimp)",
+      "locale": "vi",
+      "name": "Canh rau nhút tôm thẻ",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Canh rau nhút tôm thẻ",
+      "locale": "en",
+      "name": "Water mimosa soup with whiteleg shrimp",
       "is_primary": true
     },
     {

@@ -5,13 +5,13 @@
   "region_code": "vn-south",
   "names": [
     {
-      "locale": "en",
-      "name": "banh tam bi (silkworm noodles with pork skin)",
+      "locale": "vi",
+      "name": "bánh tằm bì",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "bánh tằm bì",
+      "locale": "en",
+      "name": "Silkworm noodles with pork skin",
       "is_primary": true
     }
   ],

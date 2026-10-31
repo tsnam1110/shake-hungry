@@ -5,13 +5,13 @@
   "region_code": "vn-ha-noi",
   "names": [
     {
-      "locale": "en",
-      "name": "Bun ca (Hanoi fish noodle soup)",
+      "locale": "vi",
+      "name": "Bún cá",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bún cá",
+      "locale": "en",
+      "name": "Hanoi fish noodle soup",
       "is_primary": true
     }
   ],

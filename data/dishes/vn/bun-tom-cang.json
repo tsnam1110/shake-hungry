@@ -5,13 +5,13 @@
   "region_code": "vn-south",
   "names": [
     {
-      "locale": "en",
-      "name": "Bun tom cang (giant river prawn noodle soup)",
+      "locale": "vi",
+      "name": "Bún tôm càng",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bún tôm càng",
+      "locale": "en",
+      "name": "Giant river prawn noodle soup",
       "is_primary": true
     }
   ],

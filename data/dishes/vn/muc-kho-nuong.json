@@ -5,13 +5,13 @@
   "region_code": "vn",
   "names": [
     {
-      "locale": "en",
-      "name": "muc kho nuong (grilled dried squid)",
+      "locale": "vi",
+      "name": "Mực khô nướng",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Mực khô nướng",
+      "locale": "en",
+      "name": "Grilled dried squid",
       "is_primary": true
     }
   ],

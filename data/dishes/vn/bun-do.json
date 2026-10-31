@@ -5,13 +5,13 @@
   "region_code": "vn",
   "names": [
     {
-      "locale": "en",
-      "name": "Bun do (red noodle soup)",
+      "locale": "vi",
+      "name": "Bún đỏ",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bún đỏ",
+      "locale": "en",
+      "name": "Red noodle soup",
       "is_primary": true
     }
   ],

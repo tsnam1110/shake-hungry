@@ -5,13 +5,13 @@
   "region_code": "vn",
   "names": [
     {
-      "locale": "en",
-      "name": "Pho kho Gia Lai (Gia Lai dry pho)",
+      "locale": "vi",
+      "name": "Phở khô Gia Lai",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Phở khô Gia Lai",
+      "locale": "en",
+      "name": "Gia Lai dry pho",
       "is_primary": true
     }
   ],

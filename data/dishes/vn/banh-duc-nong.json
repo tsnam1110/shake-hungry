@@ -5,13 +5,13 @@
   "region_code": "vn-north",
   "names": [
     {
-      "locale": "en",
-      "name": "Banh duc nong (hot rice flour cake with minced pork)",
+      "locale": "vi",
+      "name": "Bánh đúc nóng",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bánh đúc nóng",
+      "locale": "en",
+      "name": "Hot rice flour cake with minced pork",
       "is_primary": true
     }
   ],

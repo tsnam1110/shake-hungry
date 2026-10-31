@@ -5,13 +5,13 @@
   "region_code": "vn-ha-noi",
   "names": [
     {
-      "locale": "en",
-      "name": "Bun mang ga (chicken and bamboo shoot noodle soup)",
+      "locale": "vi",
+      "name": "Bún măng gà",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bún măng gà",
+      "locale": "en",
+      "name": "Chicken and bamboo shoot noodle soup",
       "is_primary": true
     }
   ],

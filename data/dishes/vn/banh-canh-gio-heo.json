@@ -5,13 +5,13 @@
   "region_code": "vn-south",
   "names": [
     {
-      "locale": "en",
-      "name": "Banh canh gio heo (thick noodle soup with pork knuckle)",
+      "locale": "vi",
+      "name": "Bánh canh giò heo",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bánh canh giò heo",
+      "locale": "en",
+      "name": "Thick noodle soup with pork knuckle",
       "is_primary": true
     }
   ],

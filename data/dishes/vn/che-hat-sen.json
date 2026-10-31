@@ -5,13 +5,13 @@
   "region_code": "vn",
   "names": [
     {
-      "locale": "en",
-      "name": "che hat sen (lotus seed sweet soup)",
+      "locale": "vi",
+      "name": "chè hạt sen",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "chè hạt sen",
+      "locale": "en",
+      "name": "Lotus seed sweet soup",
       "is_primary": true
     }
   ],

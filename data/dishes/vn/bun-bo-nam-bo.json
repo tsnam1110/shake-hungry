@@ -5,13 +5,13 @@
   "region_code": "vn-south",
   "names": [
     {
-      "locale": "en",
-      "name": "Bun bo Nam Bo (southern beef noodle salad)",
+      "locale": "vi",
+      "name": "Bún bò Nam Bộ",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bún bò Nam Bộ",
+      "locale": "en",
+      "name": "Southern beef noodle salad",
       "is_primary": true
     }
   ],

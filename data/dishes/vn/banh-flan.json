@@ -5,13 +5,13 @@
   "region_code": "vn",
   "names": [
     {
-      "locale": "en",
-      "name": "banh flan (creme caramel)",
+      "locale": "vi",
+      "name": "bánh flan",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "bánh flan",
+      "locale": "en",
+      "name": "Creme caramel",
       "is_primary": true
     }
   ],

@@ -5,13 +5,13 @@
   "region_code": "vn-south",
   "names": [
     {
-      "locale": "en",
-      "name": "bo nuong la lot (beef in betel leaves)",
+      "locale": "vi",
+      "name": "Bò nướng lá lốt",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bò nướng lá lốt",
+      "locale": "en",
+      "name": "Beef in betel leaves",
       "is_primary": true
     }
   ],

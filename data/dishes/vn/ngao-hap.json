@@ -5,13 +5,13 @@
   "region_code": "vn",
   "names": [
     {
-      "locale": "en",
-      "name": "steamed clams with lemongrass",
+      "locale": "vi",
+      "name": "Ngao hấp sả",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Ngao hấp sả",
+      "locale": "en",
+      "name": "Steamed clams with lemongrass",
       "is_primary": true
     },
     {

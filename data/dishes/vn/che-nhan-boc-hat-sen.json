@@ -5,13 +5,13 @@
   "region_code": "vn-hue",
   "names": [
     {
-      "locale": "en",
-      "name": "che nhan boc hat sen (longan lotus seed sweet soup)",
+      "locale": "vi",
+      "name": "chè nhãn bọc hạt sen",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "chè nhãn bọc hạt sen",
+      "locale": "en",
+      "name": "Longan lotus seed sweet soup",
       "is_primary": true
     }
   ],

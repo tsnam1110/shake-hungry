@@ -5,13 +5,13 @@
   "region_code": "vn-north",
   "names": [
     {
-      "locale": "en",
-      "name": "cha muc (squid cake)",
+      "locale": "vi",
+      "name": "Chả mực",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Chả mực",
+      "locale": "en",
+      "name": "Squid cake",
       "is_primary": true
     }
   ],

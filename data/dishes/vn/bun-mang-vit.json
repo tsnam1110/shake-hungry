@@ -5,13 +5,13 @@
   "region_code": "vn",
   "names": [
     {
-      "locale": "en",
-      "name": "Bun mang vit (duck and bamboo shoot noodle soup)",
+      "locale": "vi",
+      "name": "Bún măng vịt",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bún măng vịt",
+      "locale": "en",
+      "name": "Duck and bamboo shoot noodle soup",
       "is_primary": true
     }
   ],

@@ -5,13 +5,13 @@
   "region_code": "vn-central",
   "names": [
     {
-      "locale": "en",
-      "name": "Bun bo gio heo (beef and pork knuckle noodle soup)",
+      "locale": "vi",
+      "name": "Bún bò giò heo",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bún bò giò heo",
+      "locale": "en",
+      "name": "Beef and pork knuckle noodle soup",
       "is_primary": true
     }
   ],

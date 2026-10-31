@@ -5,13 +5,13 @@
   "region_code": "vn-south",
   "names": [
     {
-      "locale": "en",
-      "name": "bun mam chay (vegetarian fermented noodle soup)",
+      "locale": "vi",
+      "name": "Bún mắm chay",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bún mắm chay",
+      "locale": "en",
+      "name": "Vegetarian fermented noodle soup",
       "is_primary": true
     }
   ],

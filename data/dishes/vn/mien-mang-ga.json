@@ -5,13 +5,13 @@
   "region_code": "vn-north",
   "names": [
     {
-      "locale": "en",
-      "name": "Mien mang ga (glass noodle soup with chicken and bamboo shoots)",
+      "locale": "vi",
+      "name": "Miến măng gà",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Miến măng gà",
+      "locale": "en",
+      "name": "Glass noodle soup with chicken and bamboo shoots",
       "is_primary": true
     }
   ],

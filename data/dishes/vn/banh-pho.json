@@ -8,6 +8,11 @@
       "locale": "vi",
       "name": "bánh phở",
       "is_primary": true
+    },
+    {
+      "locale": "en",
+      "name": "Rice noodle sheets for pho",
+      "is_primary": true
     }
   ],
   "is_eat_out": false,

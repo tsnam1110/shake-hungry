@@ -5,13 +5,13 @@
   "region_code": "vn-central",
   "names": [
     {
-      "locale": "en",
-      "name": "grilled rice paper (Da Lat pizza)",
+      "locale": "vi",
+      "name": "Bánh tráng nướng",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bánh tráng nướng",
+      "locale": "en",
+      "name": "Grilled rice paper (Da Lat pizza)",
       "is_primary": true
     }
   ],

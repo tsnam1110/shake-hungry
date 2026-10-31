@@ -5,13 +5,13 @@
   "region_code": "vn-quang-nam",
   "names": [
     {
-      "locale": "en",
-      "name": "Cao lau (Hoi An Cao Lau noodles)",
+      "locale": "vi",
+      "name": "Cao lầu",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Cao lầu",
+      "locale": "en",
+      "name": "Hoi An Cao Lau noodles",
       "is_primary": true
     }
   ],

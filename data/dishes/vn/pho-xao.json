@@ -5,13 +5,13 @@
   "region_code": "vn-ha-noi",
   "names": [
     {
-      "locale": "en",
-      "name": "Pho xao (stir-fried pho noodles)",
+      "locale": "vi",
+      "name": "Phở xào",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Phở xào",
+      "locale": "en",
+      "name": "Stir-fried pho noodles",
       "is_primary": true
     }
   ],

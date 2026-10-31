@@ -5,13 +5,13 @@
   "region_code": "vn",
   "names": [
     {
-      "locale": "en",
-      "name": "oc buou nhoi thit (pork-stuffed apple snails)",
+      "locale": "vi",
+      "name": "Ốc bươu nhồi thịt",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Ốc bươu nhồi thịt",
+      "locale": "en",
+      "name": "Pork-stuffed apple snails",
       "is_primary": true
     }
   ],

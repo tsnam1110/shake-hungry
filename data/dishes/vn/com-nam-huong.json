@@ -5,13 +5,13 @@
   "region_code": "vn",
   "names": [
     {
-      "locale": "en",
-      "name": "Com nam huong (shiitake mushroom rice)",
+      "locale": "vi",
+      "name": "Cơm nấm hương",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Cơm nấm hương",
+      "locale": "en",
+      "name": "Shiitake mushroom rice",
       "is_primary": true
     }
   ],

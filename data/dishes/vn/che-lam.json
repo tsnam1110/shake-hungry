@@ -5,13 +5,13 @@
   "region_code": "vn-north",
   "names": [
     {
-      "locale": "en",
-      "name": "che lam (sticky rice ginger candy)",
+      "locale": "vi",
+      "name": "chè lam",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "chè lam",
+      "locale": "en",
+      "name": "Sticky rice ginger candy",
       "is_primary": true
     }
   ],

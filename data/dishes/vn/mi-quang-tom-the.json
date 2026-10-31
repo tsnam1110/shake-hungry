@@ -5,13 +5,13 @@
   "region_code": "vn-quang-nam",
   "names": [
     {
-      "locale": "en",
-      "name": "Mi Quang tom the (Quang noodles with whiteleg shrimp)",
+      "locale": "vi",
+      "name": "Mì Quảng tôm thẻ",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Mì Quảng tôm thẻ",
+      "locale": "en",
+      "name": "Quang noodles with whiteleg shrimp",
       "is_primary": true
     }
   ],

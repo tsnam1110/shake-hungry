@@ -5,13 +5,13 @@
   "region_code": "vn-tp-hcm",
   "names": [
     {
-      "locale": "en",
-      "name": "bot chien (fried rice flour cake)",
+      "locale": "vi",
+      "name": "bột chiên",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "bột chiên",
+      "locale": "en",
+      "name": "Fried rice flour cake",
       "is_primary": true
     }
   ],

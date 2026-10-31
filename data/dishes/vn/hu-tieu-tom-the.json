@@ -5,13 +5,13 @@
   "region_code": "vn-tien-giang",
   "names": [
     {
-      "locale": "en",
-      "name": "Hu tieu tom the (clear noodle soup with whiteleg shrimp)",
+      "locale": "vi",
+      "name": "Hủ tiếu tôm thẻ",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Hủ tiếu tôm thẻ",
+      "locale": "en",
+      "name": "Clear noodle soup with whiteleg shrimp",
       "is_primary": true
     }
   ],

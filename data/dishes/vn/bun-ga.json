@@ -5,13 +5,13 @@
   "region_code": "vn-north",
   "names": [
     {
-      "locale": "en",
-      "name": "Bun ga (chicken vermicelli soup)",
+      "locale": "vi",
+      "name": "Bún gà",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bún gà",
+      "locale": "en",
+      "name": "Chicken vermicelli soup",
       "is_primary": true
     }
   ],

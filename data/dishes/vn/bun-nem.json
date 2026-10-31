@@ -5,13 +5,13 @@
   "region_code": "vn-ha-noi",
   "names": [
     {
-      "locale": "en",
-      "name": "Bun nem (noodles with fried spring rolls)",
+      "locale": "vi",
+      "name": "Bún nem",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bún nem",
+      "locale": "en",
+      "name": "Noodles with fried spring rolls",
       "is_primary": true
     },
     {

@@ -5,13 +5,13 @@
   "region_code": "vn-south",
   "names": [
     {
-      "locale": "en",
-      "name": "Banh canh ca loc (snakehead fish thick noodle soup)",
+      "locale": "vi",
+      "name": "Bánh canh cá lóc",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bánh canh cá lóc",
+      "locale": "en",
+      "name": "Snakehead fish thick noodle soup",
       "is_primary": true
     },
     {

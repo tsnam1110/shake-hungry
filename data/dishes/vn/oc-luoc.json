@@ -5,13 +5,13 @@
   "region_code": "vn",
   "names": [
     {
-      "locale": "en",
-      "name": "oc luoc (boiled apple snails)",
+      "locale": "vi",
+      "name": "Ốc luộc",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Ốc luộc",
+      "locale": "en",
+      "name": "Boiled apple snails",
       "is_primary": true
     }
   ],

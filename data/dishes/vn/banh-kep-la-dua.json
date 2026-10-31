@@ -5,13 +5,13 @@
   "region_code": "vn-south",
   "names": [
     {
-      "locale": "en",
-      "name": "Banh kep la dua (pandan coconut waffle)",
+      "locale": "vi",
+      "name": "Bánh kẹp lá dứa",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bánh kẹp lá dứa",
+      "locale": "en",
+      "name": "Pandan coconut waffle",
       "is_primary": true
     }
   ],

@@ -5,13 +5,13 @@
   "region_code": "vn-north",
   "names": [
     {
-      "locale": "en",
-      "name": "banh ran (fried glutinous rice donut)",
+      "locale": "vi",
+      "name": "bánh rán",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "bánh rán",
+      "locale": "en",
+      "name": "Fried glutinous rice donut",
       "is_primary": true
     }
   ],

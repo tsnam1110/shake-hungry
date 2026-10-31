@@ -5,13 +5,13 @@
   "region_code": "vn-an-giang",
   "names": [
     {
-      "locale": "en",
-      "name": "Com tam Long Xuyen (Long Xuyen broken rice)",
+      "locale": "vi",
+      "name": "Cơm tấm Long Xuyên",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Cơm tấm Long Xuyên",
+      "locale": "en",
+      "name": "Long Xuyen broken rice",
       "is_primary": true
     }
   ],

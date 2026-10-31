@@ -5,13 +5,13 @@
   "region_code": "vn-south",
   "names": [
     {
-      "locale": "en",
-      "name": "Canh khoai so suon (taro corm soup with pork ribs)",
+      "locale": "vi",
+      "name": "Canh khoai sọ nấu sườn",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Canh khoai sọ nấu sườn",
+      "locale": "en",
+      "name": "Taro corm soup with pork ribs",
       "is_primary": true
     }
   ],

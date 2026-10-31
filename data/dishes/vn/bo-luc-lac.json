@@ -5,13 +5,13 @@
   "region_code": "vn-tp-hcm",
   "names": [
     {
-      "locale": "en",
-      "name": "bo luc lac (shaking beef)",
+      "locale": "vi",
+      "name": "Bò lúc lắc",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bò lúc lắc",
+      "locale": "en",
+      "name": "Shaking beef",
       "is_primary": true
     }
   ],

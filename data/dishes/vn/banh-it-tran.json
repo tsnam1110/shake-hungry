@@ -5,13 +5,13 @@
   "region_code": "vn-hue",
   "names": [
     {
-      "locale": "en",
-      "name": "banh it tran (naked glutinous rice dumplings, Hue style)",
+      "locale": "vi",
+      "name": "Bánh ít trần",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bánh ít trần",
+      "locale": "en",
+      "name": "Naked glutinous rice dumplings, Hue style",
       "is_primary": true
     }
   ],

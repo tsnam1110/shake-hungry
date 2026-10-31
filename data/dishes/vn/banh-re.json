@@ -8,6 +8,11 @@
       "locale": "vi",
       "name": "bánh rế",
       "is_primary": true
+    },
+    {
+      "locale": "en",
+      "name": "Woven rice vermicelli cakes",
+      "is_primary": true
     }
   ],
   "is_eat_out": true,

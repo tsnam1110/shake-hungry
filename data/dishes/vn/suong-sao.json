@@ -5,13 +5,13 @@
   "region_code": "vn",
   "names": [
     {
-      "locale": "en",
-      "name": "suong sao (grass jelly)",
+      "locale": "vi",
+      "name": "sương sáo",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "sương sáo",
+      "locale": "en",
+      "name": "Grass jelly",
       "is_primary": true
     }
   ],

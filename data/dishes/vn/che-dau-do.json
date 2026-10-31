@@ -5,13 +5,13 @@
   "region_code": "vn",
   "names": [
     {
-      "locale": "en",
-      "name": "che dau do (red bean sweet soup)",
+      "locale": "vi",
+      "name": "Chè đậu đỏ",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Chè đậu đỏ",
+      "locale": "en",
+      "name": "Red bean sweet soup",
       "is_primary": true
     }
   ],

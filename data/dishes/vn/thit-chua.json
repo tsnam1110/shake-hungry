@@ -5,13 +5,13 @@
   "region_code": "vn-north",
   "names": [
     {
-      "locale": "en",
-      "name": "thit chua (fermented sour pork)",
+      "locale": "vi",
+      "name": "Thịt chua",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Thịt chua",
+      "locale": "en",
+      "name": "Fermented sour pork",
       "is_primary": true
     }
   ],

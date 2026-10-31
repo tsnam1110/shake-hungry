@@ -5,13 +5,13 @@
   "region_code": "vn-an-giang",
   "names": [
     {
-      "locale": "en",
-      "name": "palm sugar honeycomb cake",
+      "locale": "vi",
+      "name": "Bánh bò thốt nốt",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bánh bò thốt nốt",
+      "locale": "en",
+      "name": "Palm sugar honeycomb cake",
       "is_primary": true
     }
   ],

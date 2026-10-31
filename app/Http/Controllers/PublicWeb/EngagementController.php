@@ -41,7 +41,7 @@ class EngagementController extends Controller
             'dishes' => $favs->filter(fn ($f) => $f->dish !== null)->map(fn ($f) => [
                 'id' => $f->dish->id,
                 'slug' => $f->dish->slug,
-                'name' => $f->dish->names->first()?->name,
+                'name' => $f->dish->displayName(),
                 'region' => $f->dish->region?->name,
                 'nutrition' => $f->dish->nutrition === null ? null : [
                     'kcal_min' => $f->dish->nutrition->kcal_min,
@@ -132,7 +132,7 @@ class EngagementController extends Controller
             ->with(['dish' => fn ($q) => $q->with(['names' => fn ($n) => $n->where('is_primary', true)])])
             ->get()
             ->map(fn ($r) => [
-                'name' => $r->dish?->names->first()?->name,
+                'name' => $r->dish?->displayName(),
                 'slug' => $r->dish?->slug,
                 'count' => (int) $r->cnt,
             ]);

@@ -5,13 +5,13 @@
   "region_code": "vn-hue",
   "names": [
     {
-      "locale": "en",
-      "name": "bun bo chay (vegetarian Hue-style noodle soup)",
+      "locale": "vi",
+      "name": "Bún bò chay",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bún bò chay",
+      "locale": "en",
+      "name": "Vegetarian Hue-style noodle soup",
       "is_primary": true
     }
   ],

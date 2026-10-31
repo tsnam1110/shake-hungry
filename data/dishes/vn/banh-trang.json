@@ -8,6 +8,11 @@
       "locale": "vi",
       "name": "Bánh tráng",
       "is_primary": true
+    },
+    {
+      "locale": "en",
+      "name": "Rice paper",
+      "is_primary": true
     }
   ],
   "is_eat_out": false,

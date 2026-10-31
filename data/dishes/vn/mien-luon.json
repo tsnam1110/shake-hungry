@@ -5,13 +5,13 @@
   "region_code": "vn-nghe-an",
   "names": [
     {
-      "locale": "en",
-      "name": "Mien luon (stir-fried eel glass noodles)",
+      "locale": "vi",
+      "name": "Miến lươn",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Miến lươn",
+      "locale": "en",
+      "name": "Stir-fried eel glass noodles",
       "is_primary": true
     }
   ],

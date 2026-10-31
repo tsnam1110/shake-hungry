@@ -5,13 +5,13 @@
   "region_code": "vn-north",
   "names": [
     {
-      "locale": "en",
-      "name": "tiet canh (raw pig blood pudding)",
+      "locale": "vi",
+      "name": "Tiết canh",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Tiết canh",
+      "locale": "en",
+      "name": "Raw pig blood pudding",
       "is_primary": true
     }
   ],

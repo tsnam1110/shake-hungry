@@ -5,13 +5,13 @@
   "region_code": "vn-south",
   "names": [
     {
-      "locale": "en",
-      "name": "Banh canh tom cang (thick noodle soup with giant river prawns)",
+      "locale": "vi",
+      "name": "Bánh canh tôm càng",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bánh canh tôm càng",
+      "locale": "en",
+      "name": "Thick noodle soup with giant river prawns",
       "is_primary": true
     }
   ],

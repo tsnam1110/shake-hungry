@@ -5,13 +5,13 @@
   "region_code": "vn-central",
   "names": [
     {
-      "locale": "en",
-      "name": "Canh ca chim (pomfret soup with tomato and pineapple)",
+      "locale": "vi",
+      "name": "Canh cá chim nấu ngót",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Canh cá chim nấu ngót",
+      "locale": "en",
+      "name": "Pomfret soup with tomato and pineapple",
       "is_primary": true
     }
   ],

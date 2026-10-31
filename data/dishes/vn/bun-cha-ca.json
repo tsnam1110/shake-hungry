@@ -5,13 +5,13 @@
   "region_code": "vn-da-nang",
   "names": [
     {
-      "locale": "en",
-      "name": "Bun cha ca (Da Nang fish cake noodle soup)",
+      "locale": "vi",
+      "name": "Bún chả cá",
       "is_primary": true
     },
     {
-      "locale": "vi",
-      "name": "Bún chả cá",
+      "locale": "en",
+      "name": "Da Nang fish cake noodle soup",
       "is_primary": true
     }
   ],

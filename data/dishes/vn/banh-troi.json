@@ -8,6 +8,11 @@
       "locale": "vi",
       "name": "bánh trôi",
       "is_primary": true
+    },
+    {
+      "locale": "en",
+      "name": "Glutinous rice balls",
+      "is_primary": true
     }
   ],
   "is_eat_out": true,
