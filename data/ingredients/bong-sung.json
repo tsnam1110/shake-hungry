@@ -1,0 +1,57 @@
+{
+  "slug": "bong-sung",
+  "name_vi": "Bông súng (cọng)",
+  "name_en": "Water lily stem",
+  "category": "rau-cu",
+  "reference_food": {
+    "fct_source": null,
+    "external_id": null,
+    "source_url": null,
+    "scientific_name": "Nymphaea spp.",
+    "kcal_per_100g": null,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": null,
+    "fat_g": null,
+    "carb_g": null,
+    "fiber_g": null,
+    "water_g": null,
+    "sodium_mg": null,
+    "mapping_confidence": "low",
+    "mapping_note": "Biên soạn LV2-009 Phần A (2026-10-31) dạng null + hồ sơ: cọng bông súng là cuống hoa/cuống lá nổi của cây súng Nymphaea spp. (hàng chợ VN không cố định loài: thường gặp N. nouchali, N. lotus và giống lai), ăn tươi trong canh chua/lẩu miền Tây. PHÂN BIỆT BẪY: khác hẳn ngó sen/củ sen (Nelumbo nucifera, họ Nelumbonaceae — xem cảnh báo trong ngo-sen); không dùng số sen cho súng. Đã tra: (1) USDA portal — 'Nymphaea' = 0 kết quả; 'waterlily' = 0; 'lotus stem' = 0; 'water lily' chỉ ra Wocas (Nuphar lutea — chi khác, bộ phận khác) và dòng FNDDS gộp hoa 3 nhóm cây, không phải cọng súng. Bản trích SR Legacy trong repo cũng không có mục súng. (2) Thai FCT, FNRI, Bảng TPTP VN (tầng 6): không tìm thấy mục cọng súng trong các nguồn đã mở; cổng FNRI FCT cần đăng nhập (tiền lệ rieng). (3) Văn liệu tầng 6 CÓ số nhưng đều trên mẫu SẤY KHÔ, không quy đổi được sang tươi: Khan et al. 2022, Curr. Res. Nutr. Food Sci. 10(3):1196–1204 (DOI 10.12944/CRNFSJ.10.3.32) — thân N. nouchali/N. rubra ở Bangladesh, sấy 60 °C/24 giờ: ẩm còn ~12,7%, đạm ~8,2–8,5%, béo ~1,5%, xơ thô 16,2–19,6%, carb ~42,4–42,8% theo chất khô. Bài Myanmar trên stalk sấy cho 276,13 kcal/100g khô cho N. nouchali nhưng xơ chỉ 0,638% — lệch ~30 lần so với Khan cho cùng nhóm loài/bộ phận, và bài này còn gộp Nelumbo thành 'Chinese water lily' (đúng bẫy sen/súng). Muốn ra số tươi phải biết độ ẩm tươi của cọng súng VN — không nguồn đã mở nào công bố; tự giả định độ ẩm để quy đổi là bịa số (QT-1). VIỆC CẦN LÀM: phân tích proximate trên cọng súng TƯƠI (kiểu tiền lệ nghe-tuoi — văn liệu tươi mới nhận), hoặc mục tươi trích nguyên văn trong một bảng FCT.",
+    "alternatives": [
+      {
+        "name": "Lotus root, raw (USDA SR Legacy 169250)",
+        "why_not": "Nelumbo nucifera — thân rễ (củ sen), khác cây, khác họ, khác bộ phận với cọng súng Nymphaea. Bẫy sen/súng kinh điển, tuyệt đối không dùng thay.",
+        "external_id": "169250",
+        "kcal_per_100g": 74
+      },
+      {
+        "name": "Khan et al. 2022 / bài Myanmar — số trên mẫu thân súng SẤY KHÔ (276,13 kcal/100g khô)",
+        "why_not": "Mẫu sấy khô, thiếu độ ẩm tươi để quy đổi; hai nghiên cứu lệch nhau ~30 lần ở chỉ số xơ cho cùng nhóm loài/bộ phận. Chỉ để đối chiếu hồ sơ.",
+        "external_id": "10.12944/CRNFSJ.10.3.32",
+        "kcal_per_100g": 276
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "unknown",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "slug": "cha-com",
+  "name_vi": "Chả cốm",
+  "name_en": "Green rice pork cake (cha com)",
+  "category": "thit",
+  "reference_food": {
+    "fct_source": null,
+    "external_id": null,
+    "source_url": null,
+    "scientific_name": null,
+    "kcal_per_100g": null,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": null,
+    "fat_g": null,
+    "carb_g": null,
+    "fiber_g": null,
+    "water_g": null,
+    "sodium_mg": null,
+    "mapping_confidence": "low",
+    "mapping_note": "Biên soạn LV2-009 Phần A (2026-10-31) dạng null + hồ sơ: chả cốm là chế phẩm thịt lợn xay + giò sống + cốm xanh, hấp rồi chiên; tỉ lệ cốm/thịt và độ mỡ dao động mạnh theo cơ sở sản xuất, không bảng FCT nào có mục này. Đã tra: (1) USDA portal (RESEARCH-PROTOCOL §3, không dùng DEMO_KEY) — Branded với requireAllWords=true cho 'cha com' = 0 kết quả; 'vietnamese pork sausage' = 0; 'green rice' Branded chỉ ra trà/cơm, không có sản phẩm thịt + cốm; thương hiệu QUE HUONG (tiền lệ giò lụa) chỉ có đúng 1 sản phẩm trong FDC là giò lụa 2033684, không có chả cốm. SR Legacy/Foundation không có. (2) Open Food Facts: truy vấn trả 503 dạng HTML cả 2 lần (bẫy RESEARCH-PROTOCOL §4.16) — ghi là tra không thành công, KHÔNG kết luận không có dữ liệu, cần tra lại. (3) Nhãn sản phẩm VN công khai: không tìm thấy sản phẩm nào công bố bảng/100g có thương hiệu truy nguyên được. (4) Các bộ số lưu hành trên web đều bị loại: cụm '140 kcal, nước 25 g, đạm 6,1 g, tinh bột 0,6 g' (nhathuoclongchau.com.vn và các trang sao chép nguyên văn) gãy cân bằng khối lượng — tổng thành phần công bố chỉ ~31,7 g/100g, nước 25 g là không thể với chả tươi, carb 0,6 g mâu thuẫn với cốm chiếm ~20–30% khối lượng (cốm 68,5 g carb/100g, xem com-xanh); cụm '180–220 kcal' của blog tổng hợp tự nhất quán Atwater nhưng không nhãn, không thương hiệu, không trích dẫn — không dùng. KHÔNG tự tính số từ công thức món cha-com (không có tiền lệ; bản thân món đang dùng proxy thịt gộp vì gio-song cũng null). VIỆC CẦN LÀM: nhãn in bao bì chả cốm đóng gói bán tại VN có bảng/100g (tầng nhan_san_pham) hoặc nhãn USDA Branded khớp thành phần thịt + cốm nếu xuất hiện. Slug nguyên liệu trùng chuỗi với slug MÓN cha-com — hai bảng khác nhau, tiền lệ cha-lua-chay/com-xanh cũng vậy.",
+    "alternatives": [
+      {
+        "name": "Giò lụa QUE HUONG (USDA Branded 2033684)",
+        "why_not": "Sản phẩm khác hẳn — giò lụa không có cốm; đã là slug riêng gio-lua (161 kcal/100g). Chỉ để đối chiếu nhóm chế phẩm thịt lợn.",
+        "external_id": "2033684",
+        "kcal_per_100g": 161
+      },
+      {
+        "name": "Cụm số web '140 kcal, đạm 6,1 g, carb 0,6 g' (nhathuoclongchau.com.vn và các trang sao chép)",
+        "why_not": "Gãy cân bằng khối lượng (tổng ~31,7 g/100g) và mâu thuẫn với tỉ lệ cốm trong sản phẩm; sao chép vô danh, không phải nhãn bao bì.",
+        "external_id": null,
+        "kcal_per_100g": 140
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": true,
+  "units": [],
+  "source": "curated",
+  "confidence": "unknown",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:dong-vat",
+    "state:che-bien",
+    "allergen:ca"
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "slug": "ngai-bun",
+  "name_vi": "Ngải bún (củ)",
+  "name_en": "Fingerroot",
+  "category": "gia-vi",
+  "reference_food": {
+    "fct_source": null,
+    "external_id": null,
+    "source_url": null,
+    "scientific_name": "Boesenbergia rotunda (L.) Mansf.",
+    "kcal_per_100g": null,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": null,
+    "fat_g": null,
+    "carb_g": null,
+    "fiber_g": null,
+    "water_g": null,
+    "sodium_mg": null,
+    "mapping_confidence": "low",
+    "mapping_note": "Biên soạn LV2-009 Phần A (2026-10-31) dạng null + hồ sơ. DANH TÍNH ĐÃ CHỐT: Boesenbergia rotunda (L.) Mansf., họ Zingiberaceae (fingerroot; Thái: krachai; Khmer: k'cheay; Indonesia: temu kunci). Bằng chứng đã mở trong phiên tra: Wikipedia Boesenbergia rotunda — mục Common names ghi thẳng tên Việt 'ngải bún', 'nga truật'; Nguyen Thi Hoai Trang et al., Can Tho Journal of Medicine and Pharmacy 10(7) 2024 — mẫu thu tại Giồng Riềng, Kiên Giang, ghi 'Bồng Nga truật, or Fingerroot, (Boesenbergia rotunda (L.) Mansf syn. Boesenbergia pandurata), also known as Ngải bún... its tuber roots and rhizomes are often used to cook rice noodles' — khớp chính xác ngữ cảnh bún nước lèo miền Tây; Kew POWO/PROSEA/NParks và các trang VN đã mở (Long Châu, Pharmacity, báo Tây Ninh về 'củ cà chơi/ngải bún' của người Khmer) mô tả nhất quán: họ Gừng, rễ chùm ngón tay, hoạt chất panduratin A (chất đánh dấu đặc trưng của B. rotunda). Tên khác: bồng nga truật, củ ngải, cà chơi. Hệ quả: dòng ngo-gai (Eryngium foetidum, họ Hoa tán) trong bun-nuoc-leo là thay thế SAI loài/họ cho củ ngải này — đã phân xử thay dòng ở LV2-009 Phần A. SỐ DINH DƯỠNG: chưa có số đạt chuẩn. Đã tra: (1) USDA portal — 'Boesenbergia' = 0, 'krachai' = 0, 'temu kunci' = 0; 'fingerroot' chỉ có 1 kết quả Branded 2545700 là sốt đậu phộng Thái WATCHAREE'S (fingerroot chỉ là thành phần phụ trong sốt — không phải củ). (2) BẪY SAI LOÀI đã phát hiện và loại: bộ số '80 kcal, đạm 1,8 g, carb 17,8 g, xơ 2,0 g, natri 13 mg' gắn cho krachai/fingerroot trên web Thái và trang tổng hợp là số của GỪNG Zingiber officinale trong USDA sao chép nguyên xi (fingerroot bị gọi nhầm 'Chinese ginger') — gừng là loài khác, đã có slug riêng gung; tuyệt đối không dùng. (3) Thai FCT / TKPI Indonesia (tầng 6): tra 'krachai' và 'temu kunci' trên bản TKPI 2017 công khai và tìm kiếm web — không thấy mục cho loài này trong phần đã mở. FNRI/Bảng TPTP VN: không tìm thấy mục. (4) Văn liệu: chỉ có tinh dầu/phytochemical (panduratin A, pinostrobin…) và phân tích bột/chiết xuất — không có proximate trên CỦ TƯƠI kiểu tiền lệ nghe-tuoi. VIỆC CẦN LÀM: phân tích củ tươi hoặc mục tươi trong FCT; trạng thái khớp tiền lệ rieng (cùng họ Gừng, cùng bẫy bột khô, giữ null).",
+    "alternatives": [
+      {
+        "name": "Gừng tươi — bộ số USDA '80 kcal, đạm 1,8 g, carb 17,8 g' lưu hành dưới tên krachai/fingerroot",
+        "why_not": "Zingiber officinale — loài khác; đây là nguồn gốc của bộ số 'krachai' giả trên web (sao chép nguyên xi từ gừng). Đã có slug riêng gung.",
+        "external_id": null,
+        "kcal_per_100g": 80
+      },
+      {
+        "name": "WATCHAREE'S Thai Peanut Sauce (USDA Branded 2545700)",
+        "why_not": "Sốt thành phẩm; fingerroot chỉ là gia vị phụ trong hỗn hợp cà ri của sốt, không phải củ ngải bún.",
+        "external_id": "2545700",
+        "kcal_per_100g": null
+      },
+      {
+        "name": "Bột riềng PEACOCK (USDA Branded 501677, 400 kcal)",
+        "why_not": "Bột khô của loài khác (Alpinia — riềng), số lượng tử hoá của dạng bột; đã ghi ở hồ sơ rieng.",
+        "external_id": "501677",
+        "kcal_per_100g": 400
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "unknown",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "_generated_by": "php artisan lacdoi:export-data — không sửa tay (DATA-REPOSITORY §2)",
-  "count": 420,
+  "count": 425,
   "ingredients": [
     {
       "slug": "bach-tuoc",
@@ -130,6 +130,11 @@
     {
       "slug": "bong-dien-dien",
       "name_vi": "Bông điên điển (sống)",
+      "category": "rau-cu"
+    },
+    {
+      "slug": "bong-sung",
+      "name_vi": "Bông súng (cọng)",
       "category": "rau-cu"
     },
     {
@@ -441,6 +446,11 @@
       "slug": "cha-ca-vien",
       "name_vi": "Chả cá viên (cá xay quết)",
       "category": "thuy-san"
+    },
+    {
+      "slug": "cha-com",
+      "name_vi": "Chả cốm",
+      "category": "thit"
     },
     {
       "slug": "cha-la",
@@ -923,6 +933,11 @@
       "category": "tinh-bot"
     },
     {
+      "slug": "hung-lui",
+      "name_vi": "Húng lũi (bạc hà Á)",
+      "category": "rau-gia-vi"
+    },
+    {
       "slug": "hung-que",
       "name_vi": "Húng quế",
       "category": "rau-gia-vi"
@@ -1333,6 +1348,11 @@
       "category": "thit"
     },
     {
+      "slug": "ngai-bun",
+      "name_vi": "Ngải bún (củ)",
+      "category": "gia-vi"
+    },
+    {
       "slug": "nghe-tuoi",
       "name_vi": "Nghệ tươi (củ)",
       "category": "gia-vi"
@@ -1351,6 +1371,11 @@
       "slug": "ngo-ngot",
       "name_vi": "Ngô ngọt (hạt, sống)",
       "category": "rau-cu"
+    },
+    {
+      "slug": "ngo-om",
+      "name_vi": "Ngò om",
+      "category": "rau-gia-vi"
     },
     {
       "slug": "ngo-sen",

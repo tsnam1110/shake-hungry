@@ -49,6 +49,14 @@
       "confidence": "low"
     },
     {
+      "ingredient_slug": "bong-sung",
+      "quantity": 65,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
       "ingredient_slug": "me-chin",
       "quantity": 8,
       "unit_name": "g",
@@ -75,6 +83,14 @@
     {
       "ingredient_slug": "ngo-gai",
       "quantity": 2,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "ngo-om",
+      "quantity": 3,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -148,7 +164,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt DISH-004 đợt 2 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-008 đợt 8: Nâng Mức 2 với 3 nguồn đã mở đọc — Bếp Xưa (4 người), Tripi (2–3 người), Bluestone (quy ước 4 người theo nồi 1,2 lít). Sửa 2 dòng: bông điên điển 40→80g (nguồn: 100/80/~38g mỗi người, trung vị 80) và nước mắm 6→10g (nguồn: ~11/12/7,5g mỗi người). Giữ nguyên: cá linh 90g (nguồn 75/120/100 — nằm trong dải), me chín 8g (2/3 nguồn me vắt quy đổi 7,5–8g/người; nguồn còn lại dùng me non tươi 25g gồm vỏ hạt), cà chua 40g (Bluestone ~30g/người, lệch trong ngưỡng), giá đỗ 30g (Bluestone 25g/người), đường 3g và muối 1g (khớp 2/3 nguồn), ngò gai 2g (Bếp Xưa có dùng, lượng nêm nhỏ), tỏi 3g (giữ theo đa số — xem anomalies). Không thêm bông súng dù xuất hiện 3/3 nguồn vì kho chưa có slug nguyên liệu. serving 380g, method nau và region vn-south giữ nguyên.]",
+  "import_note": "Soạn nháp đợt DISH-004 đợt 2 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-008 đợt 8: Nâng Mức 2 với 3 nguồn đã mở đọc — Bếp Xưa (4 người), Tripi (2–3 người), Bluestone (quy ước 4 người theo nồi 1,2 lít). Sửa 2 dòng: bông điên điển 40→80g (nguồn: 100/80/~38g mỗi người, trung vị 80) và nước mắm 6→10g (nguồn: ~11/12/7,5g mỗi người). Giữ nguyên: cá linh 90g (nguồn 75/120/100 — nằm trong dải), me chín 8g (2/3 nguồn me vắt quy đổi 7,5–8g/người; nguồn còn lại dùng me non tươi 25g gồm vỏ hạt), cà chua 40g (Bluestone ~30g/người, lệch trong ngưỡng), giá đỗ 30g (Bluestone 25g/người), đường 3g và muối 1g (khớp 2/3 nguồn), ngò gai 2g (Bếp Xưa có dùng, lượng nêm nhỏ), tỏi 3g (giữ theo đa số — xem anomalies). Không thêm bông súng dù xuất hiện 3/3 nguồn vì kho chưa có slug nguyên liệu. serving 380g, method nau và region vn-south giữ nguyên.] [LV2-009 Phần A: Bổ sung bong-sung 65 g (3/3 nguồn đợt 8 đều có — Bếp Xưa 200 g/4 người = 50 g/khẩu phần, Tripi 200 g/2,5 người = 80 g, lấy trung vị 65 g) và ngo-om 3 g (2/3 nguồn, lượng vết rau thơm). Cả hai slug biên soạn đợt này dạng null + hồ sơ: bong-sung chỉ có số văn liệu trên mẫu sấy khô (hai nghiên cứu lệch nhau ~30 lần ở chỉ số xơ, thiếu độ ẩm tươi để quy đổi); ngo-om không bảng FCT nào có mục tươi. Engine ghi cả hai vào missing_ingredients, món vẫn tính khoảng từ các thành phần còn lại.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

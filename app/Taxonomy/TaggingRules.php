@@ -136,6 +136,7 @@ final class TaggingRules
         'dau-hao' => 'che-bien', 'sa-te' => 'che-bien', 'xot-mayonnaise' => 'che-bien',
         'heo-quay' => 'che-bien', // thành phẩm quay sẵn — đợt DISH-005 đợt 2
         'gio-song' => 'che-bien', 'nuoc-mau' => 'che-bien', // nhũ tương sống đóng gói + nước thắng đóng chai — LV2-004
+        'cha-com' => 'che-bien', // chả cốm thành phẩm hấp/chiên sẵn — LV2-009 Phần A
     ];
 
     /** Nhãn dị ứng theo slug nguyên liệu (TAXONOMY.md §4). */
@@ -156,6 +157,7 @@ final class TaggingRules
         'dau-hao' => ['dong-vat-co-vo'],
         'luon' => ['ca'], 'cha-ca-vien' => ['ca', 'lua-mi'], 'gio-lua' => ['ca'],
         'gio-song' => ['ca'], // có nước mắm trong thành phần — LV2-004
+        'cha-com' => ['ca'], // ướp nước mắm trong thành phần — LV2-009 Phần A
         'nuoc-mam-cong-nghiep' => ['ca'], 'nuoc-mam-truyen-thong' => ['ca'],
         'mam-ca-linh' => ['ca'], 'mam-ca-sac' => ['ca'], 'mam-nem' => ['ca'],
         'trung-ga' => ['trung'], 'trung-vit' => ['trung'], 'trung-cut' => ['trung'],
