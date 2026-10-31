@@ -82,7 +82,14 @@
     "Xới ra gói, rắc hành phi khi ăn."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/xoi-ngo.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) GỘP BIẾN THỂ 2026-10-31 (tầm soát + quyết định của chủ dự án): chuyển thành BIẾN THỂ miền Bắc của xoi-bap — bắp (Nam) và ngô (Bắc) là hai tên của cùng một món; hai file vốn đã alias qua lại. Khác biệt của biến thể Bắc: tối giản — không đậu xanh, không đường, nước cốt dừa 15 g (bản Nam của món chuẩn: đậu xanh 40 g, đường 8 g, cốt dừa 30 g), serving 230 g. Định lượng giữ nguyên bản gốc của biến thể.",

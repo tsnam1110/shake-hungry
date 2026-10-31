@@ -37,6 +37,14 @@
       "source": "FDC 168914 foodMeasures"
     }
   ],
+  "media": [
+    {
+      "path": "media/ingredients/banh-pho-tuoi.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "low",
   "needs_review": true,

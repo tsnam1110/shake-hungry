@@ -106,7 +106,14 @@
       "note": "Nguyễn Kim (blog biên tập): dùng nước dừa tươi + mỡ gà thay cốt dừa — thêm một tiếng nói cho phía 'không cốt dừa' trong tranh chấp cốt dừa."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/xoi-lac.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-007 đợt 7: nâng Mức 2 — 4 nguồn đã mở. GIỮ toàn bộ định lượng: lạc sống 40g nằm giữa dải nguồn 25–62g; muối 1g trong dải 0,3–1,5. TRANH CHẤP CỐT DỪA (ghi nhận, không sửa ràng buộc): 2 nguồn dùng ~50g/khẩu phần trong khi 2 nguồn không dùng cốt dừa (dầu dừa / nước dừa tươi) — đồng thuận bị chia đôi, không thỏa điều kiện ≥2 nguồn áp đảo lệch >25–30%; giữ 15g, chủ dự án có thể chốt chuẩn hoá độ béo sau. Ghi nhận cùng nhóm quy ước thang khô của xôi: tổng khô của file 209g so với serving 220g thành phẩm (150g nếp khô hấp chín cho ~330–360g xôi) — chờ quy ước cấp kho.]",
