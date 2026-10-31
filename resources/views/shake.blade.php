@@ -27,13 +27,21 @@
                 <span class="grow">Ăn chay</span>
                 <button class="ld-switch" type="button" role="switch" aria-checked="false" id="vegetarian" aria-label="Ăn chay"></button>
             </div>
-            <div class="ld-row" style="padding-left:2px;padding-right:2px">
-                <span class="grow">Ăn ngoài<span class="sub">Món quán xá, hàng ăn — chọn Ăn ngoài thì Tự nấu tự tắt</span></span>
-                <button class="ld-switch" type="button" role="switch" aria-checked="false" id="eat_out" aria-label="Ăn ngoài"></button>
-            </div>
-            <div class="ld-row" style="padding-left:2px;padding-right:2px">
-                <span class="grow">Tự nấu<span class="sub">Món nấu tại nhà — chọn Tự nấu thì Ăn ngoài tự tắt</span></span>
-                <button class="ld-switch" type="button" role="switch" aria-checked="false" id="home_cook" aria-label="Tự nấu"></button>
+            <div style="padding:10px 2px 0">
+                <p class="ld-field-label" style="margin:0">Chế độ lắc</p>
+                <div class="ld-seg" id="shake-mode" role="group" aria-label="Chọn chế độ lắc" style="margin-top:8px">
+                    <button type="button" data-mode="eat_out" aria-pressed="true">Ăn ngoài · 1 món</button>
+                    <button type="button" data-mode="home" aria-pressed="false">Tự nấu · Mâm cơm</button>
+                </div>
+                <div id="tray-count-row" hidden style="margin-top:12px">
+                    <p class="ld-field-label" style="margin:0">Số món trong mâm <span style="font-weight:400;color:var(--color-faint)">— không tính cơm; mâm chuẩn là 3 món: món chính, canh và món rau</span></p>
+                    <div class="ld-seg" id="tray-count" role="group" aria-label="Chọn số món trong mâm" style="margin-top:8px">
+                        <button type="button" data-count="1" aria-pressed="false">1 món</button>
+                        <button type="button" data-count="2" aria-pressed="false">2 món</button>
+                        <button type="button" data-count="3" aria-pressed="true">3 món</button>
+                        <button type="button" data-count="4" aria-pressed="false">4 món</button>
+                    </div>
+                </div>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3" style="padding:12px 2px 4px">
                 <div>
@@ -52,7 +60,7 @@
             </div>
             <div class="ld-chips" id="allergens" style="margin-top:8px"></div>
             <p class="ld-note" style="margin-top:8px">Món chứa các thành phần này không bao giờ xuất hiện khi lắc — lọc cứng, không bị nới lỏng kể cả khi các lọc khác được nới.</p>
-            <p class="ld-note" id="pref-note" hidden style="margin-top:12px">Các lựa chọn Ăn chay, Vùng miền, Kcal mục tiêu và Không ăn được được lấy từ hồ sơ của bạn và tự lưu lại khi bạn thay đổi. <span id="pref-saved" style="color:var(--color-mint-dark);font-weight:600"></span></p>
+            <p class="ld-note" id="pref-note" hidden style="margin-top:12px">Các lựa chọn Chế độ lắc, Số món trong mâm, Ăn chay, Vùng miền, Kcal mục tiêu và Không ăn được được lấy từ hồ sơ của bạn và tự lưu lại khi bạn thay đổi. <span id="pref-saved" style="color:var(--color-mint-dark);font-weight:600"></span></p>
         </div>
 
         <button id="shake-btn" class="ld-btn ld-btn-primary" style="width:100%;margin-top:18px;padding:16px 24px;font-size:18px">
@@ -111,6 +119,8 @@ function suggestedSlot(h) { if (h < 10) return 'sang'; if (h < 14) return 'trua'
 let slot = suggestedSlot(new Date().getHours());
 let allergenSlugs = new Set();
 let shakeIndex = 0;
+let shakeMode = 'eat_out'; // eat_out: lắc 1 món quán | home: lắc mâm cơm tự nấu (REC-003)
+let trayCount = 3; // số món trong mâm, không tính cơm — mặc định mâm chuẩn 3 món
 const recent = JSON.parse(localStorage.getItem('lacdoi_recent') || '[]');
 const csrf = document.querySelector('meta[name=csrf-token]').content;
 let currentUser = null;
@@ -170,6 +180,9 @@ function applySuggestion() {
 function applyPrefs() {
     if (!myProfile) return;
     if (['chay', 'chay-truong'].includes(myProfile.diet_type)) setSw('vegetarian', true);
+    if (myProfile.shake_mode) shakeMode = myProfile.shake_mode;
+    if (myProfile.tray_dish_count) trayCount = myProfile.tray_dish_count;
+    renderShakeMode();
     if (myProfile.preferred_region_id) {
         const sel = document.getElementById('region');
         if ([...sel.options].some(o => +o.value === myProfile.preferred_region_id)) sel.value = myProfile.preferred_region_id;
@@ -218,19 +231,31 @@ algEl.querySelectorAll('button').forEach(b => b.onclick = () => {
     savePref({ excluded_ingredients: [...allergenSlugs] });
 });
 
-['vegetarian', 'eat_out', 'home_cook'].forEach(id => {
-    const el = document.getElementById(id);
-    el.addEventListener('click', () => {
-        const turningOn = el.getAttribute('aria-checked') !== 'true';
-        el.setAttribute('aria-checked', turningOn ? 'true' : 'false');
-        // Ăn ngoài và Tự nấu loại trừ lẫn nhau — bật cái này thì tắt cái kia.
-        if (turningOn && id === 'eat_out') setSw('home_cook', false);
-        if (turningOn && id === 'home_cook') setSw('eat_out', false);
-        if (id === 'vegetarian' && myProfile?.diet_type !== 'low-carb') {
-            savePref({ diet_type: swOn('vegetarian') ? 'chay' : null });
-        }
-    });
+const vegEl = document.getElementById('vegetarian');
+vegEl.addEventListener('click', () => {
+    const turningOn = vegEl.getAttribute('aria-checked') !== 'true';
+    vegEl.setAttribute('aria-checked', turningOn ? 'true' : 'false');
+    if (myProfile?.diet_type !== 'low-carb') {
+        savePref({ diet_type: swOn('vegetarian') ? 'chay' : null });
+    }
 });
+
+/* ===== Chế độ lắc hai loại (REC-003): ăn ngoài 1 món / mâm cơm tự nấu 1–4 món ===== */
+function renderShakeMode() {
+    document.querySelectorAll('#shake-mode button').forEach(b =>
+        b.setAttribute('aria-pressed', b.dataset.mode === shakeMode ? 'true' : 'false'));
+    document.getElementById('tray-count-row').hidden = shakeMode !== 'home';
+    document.querySelectorAll('#tray-count button').forEach(b =>
+        b.setAttribute('aria-pressed', +b.dataset.count === trayCount ? 'true' : 'false'));
+    document.getElementById('shake-btn').textContent = shakeMode === 'home' ? 'Lắc mâm cơm' : 'Lắc một món';
+}
+document.querySelectorAll('#shake-mode button').forEach(b => b.addEventListener('click', () => {
+    shakeMode = b.dataset.mode; renderShakeMode(); savePref({ shake_mode: shakeMode });
+}));
+document.querySelectorAll('#tray-count button').forEach(b => b.addEventListener('click', () => {
+    trayCount = +b.dataset.count; renderShakeMode(); savePref({ tray_dish_count: trayCount });
+}));
+renderShakeMode();
 
 fetch('/api/regions').then(r => r.json()).then(rs => {
     document.getElementById('region').innerHTML = '<option value="">Mọi vùng miền</option>' +
@@ -340,8 +365,8 @@ document.getElementById('shake-btn').addEventListener('click', async () => {
                 shake_index: shakeIndex++,
                 recent_dish_ids: recent.slice(-10),
                 vegetarian: swOn('vegetarian'),
-                eat_out: swOn('eat_out'),
-                home_cook: swOn('home_cook'),
+                mode: shakeMode,
+                dish_count: shakeMode === 'home' ? trayCount : 1,
                 region_id: document.getElementById('region').value || null,
                 target_kcal: document.getElementById('target_kcal').value || null,
                 allergens: [...allergenSlugs],
@@ -349,6 +374,7 @@ document.getElementById('shake-btn').addEventListener('click', async () => {
         });
         const data = await resp.json();
         const box = document.getElementById('result');
+        if (data.mode === 'home') { renderTrayResult(data, box); return; }
         if (!data.dish) {
             box.innerHTML = `<div class="ld-warn" style="margin-top:16px"><span>Chưa tìm được món phù hợp. ${esc(data.suggestion ?? 'Hãy nới lỏng bớt bộ lọc (trừ dị ứng) rồi lắc lại.')}</span></div>`;
             return;
@@ -386,10 +412,56 @@ document.getElementById('shake-btn').addEventListener('click', async () => {
             else { eatBtn.textContent = 'Ghi thất bại — thử lại'; }
         };
     } finally {
-        btn.disabled = false; btn.textContent = 'Lắc món khác';
+        btn.disabled = false; btn.textContent = shakeMode === 'home' ? 'Lắc mâm khác' : 'Lắc món khác';
         setTimeout(() => icon.classList.remove('ld-shaking'), 600);
     }
 });
+
+/* ===== Hiển thị kết quả mâm cơm (REC-003) ===== */
+function renderTrayResult(data, box) {
+    const dishes = data.dishes ?? [];
+    if (!dishes.length) {
+        box.innerHTML = `<div class="ld-warn" style="margin-top:16px"><span>Chưa gom được mâm cơm phù hợp. ${esc(data.suggestion ?? 'Hãy nới lỏng bớt bộ lọc (trừ dị ứng) rồi lắc lại.')}</span></div>`;
+        return;
+    }
+    dishes.forEach(d => recent.push(d.id));
+    localStorage.setItem('lacdoi_recent', JSON.stringify(recent.slice(-15)));
+    const tk = data.tray_kcal;
+    const unvNames = [...new Set(dishes.flatMap(d => d.nutrition?.unverified_ingredients ?? []))];
+    box.innerHTML = `<div style="padding-top:8px;border-top:1px solid var(--color-line);margin-top:18px">
+        <h2 style="font-size:26px;font-weight:800;letter-spacing:-.02em;line-height:1.2;margin:12px 0 2px">Mâm cơm gợi ý · ${dishes.length} món</h2>
+        <p style="color:var(--color-sub);font-size:15px;margin:0">Chưa tính cơm — cơm nhà mình tự đong theo khẩu phần quen thuộc.</p>
+        ${tk ? `<div style="display:flex;align-items:baseline;gap:9px;margin-top:12px;flex-wrap:wrap">
+                <span class="ld-kcal-so ld-tnum">${Math.round(tk.kcal_min)}–${Math.round(tk.kcal_max)}</span>
+                <span style="color:var(--color-sub);font-size:14.5px">kcal cả mâm (từ ${tk.dishes_counted} món có dữ liệu, chưa gồm cơm)</span></div>` : ''}
+        <div class="ld-group" style="margin-top:14px">
+            ${dishes.map(d => { const n = d.nutrition; return `<a class="ld-row" href="/mon/${d.slug}" style="text-decoration:none;color:inherit">
+                <span class="grow"><span style="font-weight:600">${esc(d.name)}</span><span class="sub">${esc(d.role_label ?? '')}${d.cooking_method_label ? ' · ' + esc(d.cooking_method_label) : ''}${d.region ? ' · ' + esc(d.region) : ''}</span></span>
+                ${n ? `<span class="ld-price"><span class="so ld-tnum">${Math.round(n.kcal_min)}–${Math.round(n.kcal_max)}</span><small>kcal</small></span>`
+                     : `<span class="ld-price"><span class="so" style="color:var(--color-faint);font-weight:600">Chưa đủ dữ liệu</span></span>`}
+            </a>`; }).join('')}
+        </div>
+        ${unvNames.length ? `<div class="ld-warn" style="margin-top:14px"><span>Số liệu tham khảo — chưa kiểm định (nguồn thứ cấp): ${esc(unvNames.join(', '))}.</span></div>` : ''}
+        ${data.suggestion ? `<p class="ld-note" style="margin-top:12px">${esc(data.suggestion)}</p>` : ''}
+        ${data.relaxed_level > 0 ? '<p class="ld-note" style="margin-top:12px">Đã nới lỏng bộ lọc để gom đủ mâm — lọc dị ứng vẫn giữ nguyên.</p>' : ''}
+        <div style="margin-top:16px">${currentUser
+            ? `<button id="eat-tray-btn" class="ld-btn ld-btn-primary" style="padding:11px 22px;font-size:15.5px;width:100%">Ăn mâm này</button>`
+            : `<a href="/tai-khoan" style="color:var(--color-link);font-size:15px">Đăng nhập để ghi lại mâm cơm này</a>`}</div>
+    </div>`;
+    const eatBtn = document.getElementById('eat-tray-btn');
+    if (eatBtn) eatBtn.onclick = async () => {
+        eatBtn.disabled = true; eatBtn.textContent = 'Đang ghi…';
+        let okCount = 0;
+        for (const d of dishes) {
+            const r = await fetch('/api/meal-logs', { method: 'POST',
+                headers: { 'Content-Type': 'application/json', 'Accept': 'application/json', 'X-CSRF-TOKEN': csrf },
+                body: JSON.stringify({ dish_id: d.id, slot, source: 'shake_accepted' }) });
+            if (r.ok) okCount++;
+        }
+        if (okCount === dishes.length) { eatBtn.textContent = 'Đã ghi cả mâm vào nhật ký'; ldToast('Đã ghi mâm cơm vào nhật ký'); loadToday(); }
+        else { eatBtn.textContent = `Đã ghi ${okCount}/${dishes.length} món — bấm để ghi tiếp`; eatBtn.disabled = false; }
+    };
+}
 
 /* ===== Khối hoa quả tháng này — thẻ quả đồng nhất (UI-012) ===== */
 (async () => {

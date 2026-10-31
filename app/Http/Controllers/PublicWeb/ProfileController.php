@@ -38,6 +38,9 @@ class ProfileController extends Controller
             'excluded_ingredients.*' => ['string', 'max:64'],
             'preferred_region_id' => ['nullable', 'integer', 'exists:regions,id'],
             'target_kcal_per_meal' => ['nullable', 'integer', 'min:100', 'max:2000'],
+            // REC-003: chế độ lắc + số món mâm cơm lưu trong hồ sơ.
+            'shake_mode' => ['nullable', Rule::in(['eat_out', 'home'])],
+            'tray_dish_count' => ['nullable', 'integer', 'min:1', 'max:4'],
         ]);
         $profile = UserProfile::updateOrCreate(['user_id' => $request->user()->id], $data);
 

@@ -115,6 +115,9 @@ class CatalogController extends Controller
             'region_id' => ['nullable', 'integer', 'exists:regions,id'],
             'vegetarian' => ['nullable', 'boolean'],
             'eat_out' => ['nullable', 'boolean'],
+            // REC-003: lắc hai chế độ — ăn ngoài (1 món) / mâm cơm tự nấu (1–4 món).
+            'mode' => ['nullable', 'string', 'in:eat_out,home'],
+            'dish_count' => ['nullable', 'integer', 'min:1', 'max:4'],
             'home_cook' => ['nullable', 'boolean'],
             'allergens' => ['nullable', 'array'],
             'allergens.*' => ['string', 'max:64'],
@@ -168,7 +171,18 @@ class CatalogController extends Controller
             }
         }
 
-        $result = $recommender->shake([
+        // REC-003: quyết định chế độ lắc — tham số tường minh > hồ sơ > cờ cũ > mặc định ăn ngoài.
+        $mode = $data['mode'] ?? null;
+        if ($mode === null && ($profile ?? null) !== null && ! empty($profile->shake_mode)) {
+            $mode = $profile->shake_mode;
+        }
+        if ($mode === null) {
+            $mode = ! empty($data['home_cook']) ? 'home' : 'eat_out';
+        }
+        $dishCount = (int) ($data['dish_count'] ?? (($profile ?? null)?->tray_dish_count ?? 3));
+        $dishCount = max(1, min(4, $dishCount));
+
+        $engineInput = [
             ...$data,
             'user_id' => $user?->id,
             'vegetarian' => $vegetarian,
@@ -176,40 +190,79 @@ class CatalogController extends Controller
             'recent_dish_ids' => $recentIds,
             'target_kcal' => $targetKcal,
             'shake_index' => $data['shake_index'] ?? 0,
-        ]);
+        ];
 
+        if ($mode === 'home') {
+            $result = $recommender->shakeTray([...$engineInput, 'dish_count' => $dishCount]);
+            $dishes = [];
+            foreach ($result['dishes'] as $row) {
+                $row['dish']->loadMissing('dishIngredients.ingredient:id,name_vi,slug');
+                $dishes[] = $this->presentShakeDish($row['dish'], $row['role']);
+            }
+            $withNutrition = array_filter($dishes, fn ($d) => $d['nutrition'] !== null);
+
+            return response()->json([
+                'mode' => 'home',
+                'dish_count' => $dishCount,
+                'dishes' => $dishes,
+                'dish' => $dishes[0] ?? null,
+                'tray_kcal' => $withNutrition === [] ? null : [
+                    'kcal_min' => array_sum(array_column(array_column($withNutrition, 'nutrition'), 'kcal_min')),
+                    'kcal_max' => array_sum(array_column(array_column($withNutrition, 'nutrition'), 'kcal_max')),
+                    'dishes_counted' => count($withNutrition),
+                ],
+                'seed' => $result['seed'],
+                'relaxed_level' => $result['relaxed_level'],
+                'pool_size' => $result['pool_size'],
+                'suggestion' => $result['suggestion'] ?? null,
+            ]);
+        }
+
+        $result = $recommender->shake([...$engineInput, 'eat_out' => true, 'home_cook' => false]);
         $dish = $result['dish'];
         if ($dish !== null) {
             $dish->loadMissing('dishIngredients.ingredient:id,name_vi,slug');
         }
+        $presented = $dish === null ? null : $this->presentShakeDish($dish);
 
         return response()->json([
-            'dish' => $dish === null ? null : [
-                'id' => $dish->id,
-                'slug' => $dish->slug,
-                'name' => $dish->displayName(),
-                'region' => $dish->region?->name,
-                'cooking_method' => $dish->cooking_method,
-                'cooking_method_label' => $dish->cookingMethodLabel(),
-                'serving_desc' => $dish->serving_desc,
-                'slots' => $dish->mealSlots->pluck('slot'),
-                'nutrition' => $dish->nutrition === null ? null : [
-                    'kcal_min' => $dish->nutrition->kcal_min,
-                    'kcal_max' => $dish->nutrition->kcal_max,
-                    'protein_g' => $dish->nutrition->protein_g,
-                    'fat_g' => $dish->nutrition->fat_g,
-                    'carb_g' => $dish->nutrition->carb_g,
-                    'confidence' => $dish->nutrition->confidence,
-                    'unverified_ingredients' => $dish->dishIngredients
-                        ->filter(fn ($di) => in_array($di->ingredient->slug, $dish->nutrition->unverified_ingredients ?? [], true))
-                        ->map(fn ($di) => $di->ingredient->name_vi)
-                        ->values(),
-                ],
-            ],
+            'mode' => 'eat_out',
+            'dish_count' => 1,
+            'dishes' => $presented === null ? [] : [$presented],
+            'dish' => $presented,
             'seed' => $result['seed'],
             'relaxed_level' => $result['relaxed_level'],
             'pool_size' => $result['pool_size'],
             'suggestion' => $result['suggestion'] ?? null,
         ]);
+    }
+
+    /** Presenter dùng chung cho món lắc đơn và từng món trong mâm cơm (REC-003). */
+    private function presentShakeDish(\App\Models\Dish $dish, ?string $role = null): array
+    {
+        return [
+            'id' => $dish->id,
+            'slug' => $dish->slug,
+            'name' => $dish->displayName(),
+            'region' => $dish->region?->name,
+            'cooking_method' => $dish->cooking_method,
+            'cooking_method_label' => $dish->cookingMethodLabel(),
+            'serving_desc' => $dish->serving_desc,
+            'slots' => $dish->mealSlots->pluck('slot'),
+            'role' => $role,
+            'role_label' => $role === null ? null : (\App\Recommendation\Recommender::TRAY_ROLE_LABELS[$role] ?? $role),
+            'nutrition' => $dish->nutrition === null ? null : [
+                'kcal_min' => $dish->nutrition->kcal_min,
+                'kcal_max' => $dish->nutrition->kcal_max,
+                'protein_g' => $dish->nutrition->protein_g,
+                'fat_g' => $dish->nutrition->fat_g,
+                'carb_g' => $dish->nutrition->carb_g,
+                'confidence' => $dish->nutrition->confidence,
+                'unverified_ingredients' => $dish->dishIngredients
+                    ->filter(fn ($di) => in_array($di->ingredient->slug, $dish->nutrition->unverified_ingredients ?? [], true))
+                    ->map(fn ($di) => $di->ingredient->name_vi)
+                    ->values(),
+            ],
+        ];
     }
 }

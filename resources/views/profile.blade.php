@@ -127,6 +127,19 @@
                     </select></div>
                 <div><label class="ld-field-label" for="f-target">Kcal mục tiêu mỗi bữa (điền sẵn khi lắc)</label>
                     <input id="f-target" name="target_kcal_per_meal" type="number" min="100" max="2000" placeholder="Ví dụ: 600" class="ld-input"></div>
+                <div><label class="ld-field-label" for="f-shake-mode">Chế độ lắc mặc định</label>
+                    <select id="f-shake-mode" name="shake_mode" class="ld-select">
+                        <option value="">Ăn ngoài · 1 món</option>
+                        <option value="home">Tự nấu · Mâm cơm</option>
+                    </select></div>
+                <div><label class="ld-field-label" for="f-tray-count">Số món trong mâm cơm (không tính cơm)</label>
+                    <select id="f-tray-count" name="tray_dish_count" class="ld-select">
+                        <option value="">3 món — mâm chuẩn</option>
+                        <option value="1">1 món</option>
+                        <option value="2">2 món</option>
+                        <option value="3">3 món — mâm chuẩn</option>
+                        <option value="4">4 món</option>
+                    </select></div>
                 <div class="sm:col-span-2"><span class="ld-field-label">Không ăn được / dị ứng — lọc cứng khi lắc</span>
                     <div class="ld-chips" id="excluded-chips"></div>
                     <p class="ld-note" style="margin-top:8px">Chạm để bật hoặc tắt từng mục. Cấu hình này dùng chung cho khối Lắc ở trang chủ và không bao giờ bị hệ thống tự nới lỏng.</p></div>
@@ -190,7 +203,7 @@ async function init() {
     const { profile, tdee } = await (await fetch('/api/profile')).json();
     if (profile) {
         const f = document.getElementById('profile-form');
-        ['height_cm','weight_kg','birth_year','sex','activity_level','diet_type','preferred_region_id','target_kcal_per_meal'].forEach(k => { if (profile[k] != null && f.elements[k]) f.elements[k].value = profile[k]; });
+        ['height_cm','weight_kg','birth_year','sex','activity_level','diet_type','preferred_region_id','target_kcal_per_meal','shake_mode','tray_dish_count'].forEach(k => { if (profile[k] != null && f.elements[k]) f.elements[k].value = profile[k]; });
         const ex = new Set(profile.excluded_ingredients || []);
         excludedChips.querySelectorAll('button').forEach(b => {
             const i = +b.dataset.i;
@@ -216,8 +229,8 @@ document.getElementById('profile-form').onsubmit = async (e) => {
     e.preventDefault();
     const raw = Object.fromEntries(new FormData(e.target).entries());
     const body = {};
-    ['height_cm','weight_kg','birth_year','preferred_region_id','target_kcal_per_meal'].forEach(k => body[k] = raw[k] === '' || raw[k] == null ? null : +raw[k]);
-    ['sex','activity_level','diet_type'].forEach(k => body[k] = raw[k] === '' ? null : raw[k]);
+    ['height_cm','weight_kg','birth_year','preferred_region_id','target_kcal_per_meal','tray_dish_count'].forEach(k => body[k] = raw[k] === '' || raw[k] == null ? null : +raw[k]);
+    ['sex','activity_level','diet_type','shake_mode'].forEach(k => body[k] = raw[k] === '' ? null : raw[k]);
     body.excluded_ingredients = [...selectedPresets].flatMap(i => ALLERGEN_PRESETS[i][1]);
     const resp = await fetch('/api/profile', { method: 'PUT', headers, body: JSON.stringify(body) });
     const data = await resp.json();

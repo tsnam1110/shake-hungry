@@ -80,10 +80,184 @@ class Recommender
         ];
     }
 
-    private function pool(array $input, int $level, array $allergens): Collection
+    /** REC-003: các loại món KHÔNG thuộc mâm cơm (là bữa riêng hoặc đồ chấm kèm). */
+    private const TRAY_EXCLUDED_LOAI = ['com', 'xoi', 'banh', 'bun-pho-mi', 'che-trang-mieng', 'nuoc-cham', 'lau', 'chao-sup'];
+
+    /** REC-003: vai trò các món trong mâm theo số món — mâm chuẩn 3 món = chính + canh + rau. */
+    private const TRAY_ROLES = [
+        1 => ['chinh'],
+        2 => ['chinh', 'canh'],
+        3 => ['chinh', 'canh', 'rau'],
+        4 => ['chinh', 'canh', 'rau', 'phu'],
+    ];
+
+    public const TRAY_ROLE_LABELS = [
+        'chinh' => 'Món chính',
+        'canh' => 'Canh',
+        'rau' => 'Rau · món kèm',
+        'phu' => 'Món phụ',
+    ];
+
+    /** Tỷ trọng kcal mục tiêu theo vai trò — chỉ là gợi ý cho khâu chấm điểm. */
+    private const TRAY_KCAL_SHARE = ['chinh' => 0.52, 'canh' => 0.16, 'rau' => 0.14, 'phu' => 0.18];
+
+    /**
+     * REC-003: lắc MÂM CƠM tự nấu — chọn 1–4 món (không tính cơm) theo vai trò
+     * của mâm cơm Việt, dùng chung kho lọc cứng của REC-001: dị ứng không bao
+     * giờ nới, nới dần vùng miền → chế độ ăn khi thiếu món như lắc đơn.
+     *
+     * @param  array<string, mixed>  $input  như shake(), cộng dish_count
+     * @return array{dishes: array<int, array{dish: Dish, role: string}>, seed: string, relaxed_level: int, pool_size: int, suggestion?: string}
+     */
+    public function shakeTray(array $input): array
     {
+        $count = max(1, min(4, (int) ($input['dish_count'] ?? 3)));
+        $input['home_cook'] = true;
+        $allergens = $input['allergens'] ?? [];
+        $recentIds = $input['recent_dish_ids'] ?? [];
+        $rolesWanted = self::TRAY_ROLES[$count];
+        $seed = hash('sha256', implode('|', [
+            $input['user_id'] ?? 'guest',
+            now()->toDateString(),
+            $input['slot'],
+            'tray',
+            (string) $count,
+            (string) ($input['shake_index'] ?? 0),
+        ]));
+
+        $best = [];
+        $bestLevel = 3;
+        $bestPoolSize = 0;
+        for ($level = 0; $level <= 3; $level++) {
+            $pool = $this->pool($input, $level, $allergens, tray: true)
+                ->filter(fn (Dish $d) => $this->trayEligible($d));
+            $excluded = $level === 0 ? array_slice($recentIds, -10) : array_slice($recentIds, -3);
+            $picked = [];
+            $pickedIds = [];
+            $pickedMainIds = [];
+            foreach ($rolesWanted as $i => $role) {
+                $candidates = $pool->reject(fn (Dish $d) => in_array($d->id, $pickedIds, true)
+                    || in_array($d->id, $excluded, true)
+                    || ($d->parent_dish_id !== null && in_array($d->parent_dish_id, [...$excluded, ...$pickedIds], true)));
+                // Trong cùng một mâm, tránh hai món trùng nguyên liệu chính
+                // (ưu tiên mềm: chỉ áp khi vai trò vẫn còn lựa chọn khác).
+                $diverse = $candidates->reject(fn (Dish $d) => in_array($this->mainIngredientId($d), $pickedMainIds, true));
+                $rolePool = $diverse->filter(fn (Dish $d) => $this->roleMatches($this->dishRole($d), $role));
+                if ($rolePool->isEmpty()) {
+                    $rolePool = $candidates->filter(fn (Dish $d) => $this->roleMatches($this->dishRole($d), $role));
+                }
+                if ($rolePool->isEmpty()) {
+                    // Vai trò này thiếu món trong kho hiện tại → lấp bằng món hợp lệ bất kỳ còn lại.
+                    $rolePool = $diverse->isNotEmpty() ? $diverse : $candidates;
+                }
+                if ($rolePool->isEmpty()) {
+                    break;
+                }
+                $pickInput = $input;
+                if (! empty($input['target_kcal'])) {
+                    $pickInput['target_kcal'] = $input['target_kcal'] * (self::TRAY_KCAL_SHARE[$role] ?? 0.25);
+                }
+                $dish = $this->pick($rolePool, $pickInput, [...$recentIds, ...$pickedIds], $seed.'|'.$i);
+                $picked[] = ['dish' => $dish, 'role' => $role];
+                $pickedIds[] = $dish->id;
+                $mainId = $this->mainIngredientId($dish);
+                if ($mainId !== null) {
+                    $pickedMainIds[] = $mainId;
+                }
+            }
+            if (count($picked) > count($best)) {
+                $best = $picked;
+                $bestLevel = $level;
+                $bestPoolSize = $pool->count();
+            }
+            if (count($picked) === $count) {
+                break;
+            }
+        }
+
+        foreach ($best as $row) {
+            RecommendationLog::create([
+                'user_id' => $input['user_id'] ?? null,
+                'slot' => $input['slot'],
+                'seed' => $seed,
+                'dish_id' => $row['dish']->id,
+                'relaxed_level' => $bestLevel,
+                'context' => ['pool_size' => $bestPoolSize, 'allergens' => $allergens, 'mode' => 'home', 'role' => $row['role'], 'dish_count' => $count],
+            ]);
+        }
+        Log::info('shake-tray', ['seed' => $seed, 'dishes' => array_map(fn ($r) => $r['dish']->slug, $best), 'relaxed' => $bestLevel]);
+
+        $result = ['dishes' => $best, 'seed' => $seed, 'relaxed_level' => $bestLevel, 'pool_size' => $bestPoolSize];
+        if ($best === []) {
+            $result['suggestion'] = 'Không còn món tự nấu phù hợp — hãy nới bộ lọc (bỏ bớt vùng miền/chế độ ăn) hoặc lắc sang bữa khác.';
+        } elseif (count($best) < $count) {
+            $result['suggestion'] = 'Kho món tự nấu phù hợp hiện chỉ gom được '.count($best).'/'.$count.' món cho mâm này.';
+        }
+
+        return $result;
+    }
+
+    /** Loại (loai:) của món, bỏ tiền tố — dùng cho phân vai mâm cơm. */
+    private function dishLoai(Dish $dish): array
+    {
+        return $dish->tags
+            ->pluck('slug')
+            ->filter(fn ($s) => str_starts_with($s, 'loai:'))
+            ->map(fn ($s) => substr($s, 5))
+            ->all();
+    }
+
+    private function trayEligible(Dish $dish): bool
+    {
+        return array_intersect($this->dishLoai($dish), self::TRAY_EXCLUDED_LOAI) === [];
+    }
+
+    private function dishRole(Dish $dish): string
+    {
+        $loai = $this->dishLoai($dish);
+        if (in_array('canh', $loai, true)) {
+            return 'canh';
+        }
+        $main = $dish->dishIngredients->sortByDesc('quantity')->first()?->ingredient;
+        // "Món chính" của mâm phải là món đạm (thịt/thuỷ sản/trứng/đậu phụ…):
+        // món gắn nhãn mon-chinh nhưng nguyên liệu chính toàn rau (rau xào, rau
+        // luộc) là món RAU của mâm, không phải món chính.
+        if (in_array('mon-chinh', $loai, true)
+            && in_array($main?->category, ['thit', 'thuy-san', 'khac'], true)) {
+            return 'chinh';
+        }
+        if (in_array('goi-nom', $loai, true) || in_array($main?->category, ['rau-cu', 'rau-gia-vi'], true)) {
+            return 'rau';
+        }
+
+        return 'phu';
+    }
+
+    /** Nguyên liệu chính (định lượng lớn nhất) — căn cứ đa dạng trong mâm. */
+    private function mainIngredientId(Dish $dish): ?int
+    {
+        return $dish->dishIngredients->sortByDesc('quantity')->first()?->ingredient_id;
+    }
+
+    private function roleMatches(string $dishRole, string $wanted): bool
+    {
+        // Suất "phu" ưu tiên món chính thứ hai, sau đó mới đến món phụ nói chung.
+        return $wanted === 'phu'
+            ? in_array($dishRole, ['phu', 'chinh'], true)
+            : $dishRole === $wanted;
+    }
+
+    private function pool(array $input, int $level, array $allergens, bool $tray = false): Collection
+    {
+        // tags luôn nạp sẵn: nhãn diet suy từ thành phần (DishTagDeriver) là căn
+        // cứ lọc chay chính xác hơn nhóm nguyên liệu (bắt được cả mắm/nước mắm).
+        $with = ['names' => fn ($q) => $q->where('is_primary', true), 'region:id,name', 'nutrition', 'mealSlots', 'tags:id,slug'];
+        if ($tray) {
+            // Phân vai mâm cơm cần nguyên liệu chính của món.
+            $with[] = 'dishIngredients.ingredient:id,category,slug';
+        }
         $query = Dish::query()
-            ->with(['names' => fn ($q) => $q->where('is_primary', true), 'region:id,name', 'nutrition', 'mealSlots'])
+            ->with($with)
             ->whereHas('nutrition');
         // Bữa chính không gợi ý món gia vị/khẩu phần quá nhỏ (nước mắm, muối tôm…)
         // — chúng là đồ chấm kèm, không phải món ăn. Bữa ăn vặt không áp quy tắc này.
@@ -96,10 +270,14 @@ class Recommender
         if ($level < 2 && ! empty($input['region_id'])) {
             $query->where('region_id', $input['region_id']);
         }
-        if (! empty($input['eat_out'])) {
+        // Cờ ăn ngoài/tự nấu là lọc ƯU TIÊN theo chế độ lắc (REC-003): áp ở mức
+        // 0–1 và nới từ mức 2 như lọc vùng — gần như mọi món trong kho đều nấu
+        // được ở nhà và bán ở quán, giữ cứng cờ này chỉ gây cạn kho vô ích.
+        // Lọc cứng tuyệt đối duy nhất vẫn là dị ứng.
+        if ($level < 2 && ! empty($input['eat_out'])) {
             $query->where('is_eat_out', true);
         }
-        if (! empty($input['home_cook'])) {
+        if ($level < 2 && ! empty($input['home_cook'])) {
             $query->where('is_home_cook', true);
         }
         $dishes = $query->get();
@@ -118,6 +296,11 @@ class Recommender
                 }
             }
             if ($level < 3 && ($input['vegetarian'] ?? false)) {
+                // Nhãn diet:man đã suy từ MỌI thành phần (kể cả mắm tôm, nước mắm
+                // thuộc nhóm gia vị) — món bị gắn nhãn này không bao giờ là chay.
+                if ($dish->tags->contains('slug', 'diet:man')) {
+                    return false;
+                }
                 $hasMeat = $dish->dishIngredients()->with('ingredient:id,category')->get()
                     ->contains(fn ($di) => in_array($di->ingredient->category, ['thit', 'thuy-san'], true));
                 if ($hasMeat) {

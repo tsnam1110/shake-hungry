@@ -16,6 +16,7 @@ class UserProfile extends Model
             'excluded_ingredients' => 'array',
             'height_cm' => 'float',
             'weight_kg' => 'float',
+            'tray_dish_count' => 'integer',
         ];
     }
 }
