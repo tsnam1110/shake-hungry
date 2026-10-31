@@ -133,7 +133,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu). [LV2-012 đợt vét] Nâng Mức 2: đối chiếu 3 họ độc lập (BlueStone/Sukie's Kitchen, Hồng Lam, Bibi-DLBAAu). Đề xuất sửa cui-dua-nao 10→4 (cả hai họ có số đều chỉ 2-3g/bánh), duong-trang 12→17 (3 họ ở khoảng 15-20g/bánh); thêm nuoc-cot-dua 20, gao-nep 7, dau-an 5 — đều có ở ≥2 họ mà file đang thiếu. Giữ com-xanh 50 và dau-xanh-hat 25 vì tỉ lệ đậu/cốm giữa các họ dao động 0,3-1,0 và số file nằm trong khoảng đó.",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu). [LV2-012 đợt vét] Nâng Mức 2: đối chiếu 3 họ độc lập (BlueStone/Sukie's Kitchen, Hồng Lam, Bibi-DLBAAu). Đề xuất sửa cui-dua-nao 10→4 (cả hai họ có số đều chỉ 2-3g/bánh), duong-trang 12→17 (3 họ ở khoảng 15-20g/bánh); thêm nuoc-cot-dua 20, gao-nep 7, dau-an 5 — đều có ở ≥2 họ mà file đang thiếu. Giữ com-xanh 50 và dau-xanh-hat 25 vì tỉ lệ đậu/cốm giữa các họ dao động 0,3-1,0 và số file nằm trong khoảng đó. [AUDIT-FIX 2026-11-01 — PX-34 (AUDIT-002): mở lại toàn bộ URL chưa kết luận của món. URL bibihealthybread chưa kết luận (thử lại 2026-11-01: dịch vụ fetch lỗi mạng/không phân giải được, không có HTTP status — không kết luận chết); 2 nguồn còn lại HTTP 200 vòng này.]",
   "status": "draft",
   "source": "llm_suggested",
   "confidence": "unknown",
