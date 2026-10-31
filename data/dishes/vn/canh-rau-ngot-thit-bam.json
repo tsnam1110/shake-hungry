@@ -63,6 +63,14 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dau-an",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
@@ -93,7 +101,7 @@
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nâng Mức 2 đợt 2 (2026-10-31): đã mở kiểm chứng 3 nguồn (Vườn Xanh Phố: rau ngót 200 g + thịt 150 g cho 3 người, nước 1 lít; Bếp Xưa: rau 1 bó + thịt 150 g; Bingo Food: rau 300 g + thịt 150 g, nước 1 lít). Phân xử định lượng: giữ nguyên toàn bộ — rau ngót quy đổi ~44–67 g/khẩu phần tùy đường quy đổi (theo khẩu phần ghi rõ hay theo tổng mẻ), số file 60 g nằm trong khoảng; thịt quy đổi ~31–50 g/khẩu phần, số file 40 g nằm trong khoảng. Bất thường ghi nhận (không tự thêm/bớt dòng, chờ pha phân xử riêng): 2/3 nguồn (Bếp Xưa, Bingo Food) xào thịt và rau với dầu ăn trước khi cho nước mà file không có dòng dầu ăn; về gia vị, Bếp Xưa chủ động khuyên không nêm nước mắm (sợ canh ám vị chua) trong khi Bingo Food ướp/nêm nước mắm như file — tranh luận gia vị đã ghi nhận, giữ nguyên nước mắm 5 g.",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nâng Mức 2 đợt 2 (2026-10-31): đã mở kiểm chứng 3 nguồn (Vườn Xanh Phố: rau ngót 200 g + thịt 150 g cho 3 người, nước 1 lít; Bếp Xưa: rau 1 bó + thịt 150 g; Bingo Food: rau 300 g + thịt 150 g, nước 1 lít). Phân xử định lượng: giữ nguyên toàn bộ — rau ngót quy đổi ~44–67 g/khẩu phần tùy đường quy đổi (theo khẩu phần ghi rõ hay theo tổng mẻ), số file 60 g nằm trong khoảng; thịt quy đổi ~31–50 g/khẩu phần, số file 40 g nằm trong khoảng. Bất thường ghi nhận (không tự thêm/bớt dòng, chờ pha phân xử riêng): 2/3 nguồn (Bếp Xưa, Bingo Food) xào thịt và rau với dầu ăn trước khi cho nước mà file không có dòng dầu ăn; về gia vị, Bếp Xưa chủ động khuyên không nêm nước mắm (sợ canh ám vị chua) trong khi Bingo Food ướp/nêm nước mắm như file — tranh luận gia vị đã ghi nhận, giữ nguyên nước mắm 5 g. Phân xử bất thường LV2-002 (Phần A, 2026-10-31): Thêm dau-an 3 g — 2/3 nguồn (Bếp Xưa, Bingo Food) xào thịt và rau với dầu trước khi cho nước, file chưa có dòng dầu. Lưu ý đối chiếu: hành tím file ĐÃ có sẵn 3 g (điểm \"thiếu hành tím\" ở tổng hợp LV2-002 §5 là lỗi thời so với note chi tiết); tranh luận nước mắm (Bếp Xưa khuyên không nêm) giữ nguyên như ghi nhận đợt 2.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

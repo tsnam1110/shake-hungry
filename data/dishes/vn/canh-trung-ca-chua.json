@@ -79,6 +79,14 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "rau-mui",
+      "quantity": 2,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
@@ -109,7 +117,7 @@
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nâng Mức 2 đợt 2 (2026-10-31): đã mở kiểm chứng 3 nguồn (Lao Động: 3 trứng + 2 cà chua, nước 500–700 ml; Eva.vn: 2 trứng + 4 cà chua, nước 500 ml; Sức khỏe & Đời sống: 2–3 trứng + 1–2 cà chua). Phân xử định lượng: giữ nguyên toàn bộ — trứng quy đổi ~31–48 g/khẩu phần, hai nguồn bất đồng nhau >30%, số file 50 g (1 quả) sát nguồn Lao Động; cà chua các nguồn bất đồng lớn (~58 g so với ~113 g/khẩu phần sau quy đổi) nên giữ 70 g theo quy tắc nguồn bất đồng. Bất thường ghi nhận (không tự thêm dòng, chờ pha phân xử riêng): cả 3 nguồn đều cho thêm rau mùi/ngò rí cùng hành lá ở bước hoàn thiện mà file chỉ có hành lá.",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nâng Mức 2 đợt 2 (2026-10-31): đã mở kiểm chứng 3 nguồn (Lao Động: 3 trứng + 2 cà chua, nước 500–700 ml; Eva.vn: 2 trứng + 4 cà chua, nước 500 ml; Sức khỏe & Đời sống: 2–3 trứng + 1–2 cà chua). Phân xử định lượng: giữ nguyên toàn bộ — trứng quy đổi ~31–48 g/khẩu phần, hai nguồn bất đồng nhau >30%, số file 50 g (1 quả) sát nguồn Lao Động; cà chua các nguồn bất đồng lớn (~58 g so với ~113 g/khẩu phần sau quy đổi) nên giữ 70 g theo quy tắc nguồn bất đồng. Bất thường ghi nhận (không tự thêm dòng, chờ pha phân xử riêng): cả 3 nguồn đều cho thêm rau mùi/ngò rí cùng hành lá ở bước hoàn thiện mà file chỉ có hành lá. Phân xử bất thường LV2-002 (Phần A, 2026-10-31): Thêm rau-mui (ngò rí) 2 g — cả 3 nguồn đều cho ngò rí cùng hành lá ở bước hoàn thiện.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

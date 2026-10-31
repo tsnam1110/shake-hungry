@@ -87,6 +87,14 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-tay",
+      "quantity": 25,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
@@ -117,7 +125,7 @@
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nâng Mức 2 đợt 2 (2026-10-31): đã mở kiểm chứng 3 nguồn (Điện máy XANH 500 g mực/4 người; Thật Là Ngon 300 g mực + 100 g dứa/3 người; Bách hóa XANH 500 g mực/mẻ). Phân xử định lượng: mực quy đổi 100–125 g/khẩu phần, số file 130 g nằm trong ngưỡng 30% nên giữ nguyên; dứa các nguồn bất đồng nhau >30% (Thật Là Ngon ~33 g/khẩu phần so với ~50 g/khẩu phần ở hai nguồn dùng 1/4 quả/mẻ 4 người) nên giữ nguyên 80 g theo quy tắc nguồn bất đồng; cần tây ~27 g/khẩu phần ở Thật Là Ngon, khớp số file 30 g. Bất thường ghi nhận (không tự thêm dòng, chờ pha phân xử riêng): cả 3 nguồn đều có hành tây (1 củ/mẻ) mà file không có dòng hành tây; hai nguồn ĐMX/BHX cũng không dùng cần tây, chỉ Thật Là Ngon dùng cần tây như file.",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nâng Mức 2 đợt 2 (2026-10-31): đã mở kiểm chứng 3 nguồn (Điện máy XANH 500 g mực/4 người; Thật Là Ngon 300 g mực + 100 g dứa/3 người; Bách hóa XANH 500 g mực/mẻ). Phân xử định lượng: mực quy đổi 100–125 g/khẩu phần, số file 130 g nằm trong ngưỡng 30% nên giữ nguyên; dứa các nguồn bất đồng nhau >30% (Thật Là Ngon ~33 g/khẩu phần so với ~50 g/khẩu phần ở hai nguồn dùng 1/4 quả/mẻ 4 người) nên giữ nguyên 80 g theo quy tắc nguồn bất đồng; cần tây ~27 g/khẩu phần ở Thật Là Ngon, khớp số file 30 g. Bất thường ghi nhận (không tự thêm dòng, chờ pha phân xử riêng): cả 3 nguồn đều có hành tây (1 củ/mẻ) mà file không có dòng hành tây; hai nguồn ĐMX/BHX cũng không dùng cần tây, chỉ Thật Là Ngon dùng cần tây như file. Phân xử bất thường LV2-002 (Phần A, 2026-10-31): Thêm hanh-tay 25 g — cả 3 nguồn đều xào mực cùng dứa và hành tây (1 củ/mẻ 4 khẩu phần ≈ 25 g), đúng tiền lệ muc-xao-can-toi Phần A đợt 1 (thêm hành tây 25 g).",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

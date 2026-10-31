@@ -17,7 +17,7 @@
   ],
   "is_eat_out": true,
   "is_home_cook": true,
-  "cooking_method": "kho",
+  "cooking_method": "chien",
   "completeness_level": 2,
   "meal_slots": [
     {
@@ -66,7 +66,7 @@
     },
     {
       "ingredient_slug": "dau-an",
-      "quantity": 6,
+      "quantity": 3,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -100,9 +100,9 @@
   "recipe_steps": [
     "Sơ chế: cá diêu hồng đánh vảy, bỏ mang ruột, rửa với muối và gừng cho hết tanh, khía xéo hai mặt thân cá, thấm thật khô; cà chua cắt hạt lựu; hành tím, tỏi băm nhỏ.",
     "Ướp cá với ít muối và tiêu khoảng 10 phút cho thấm và săn mặt.",
-    "Áp chảo cá: đun dầu nóng, cho cá vào áp lửa vừa mỗi mặt 3–4 phút tới khi mặt cá săn và vàng nhẹ (không chiên giòn sâu), gắp ra đĩa.",
+    "Chiên cá: đun dầu nóng già trong chảo sâu lòng, cho cá vào chiên lửa vừa–lớn mỗi mặt 4–5 phút tới khi da vàng giòn, thịt vừa chín; vớt ra để ráo dầu.",
     "Làm sốt: phi hành tím, tỏi trong chảo cho thơm; cho cà chua vào xào lửa vừa tới khi mềm nhừ; nêm nước mắm, đường và thêm ít nước, nấu 4–5 phút cho sốt sệt nhẹ.",
-    "Sốt cá: đặt cá trở lại chảo sốt, dùng muỗng rưới sốt liên tục lên mình cá, đậy nắp nấu lửa nhỏ 7–8 phút cho cá thấm; trở cá một lần thật nhẹ tay.",
+    "Rưới sốt: đặt cá đã chiên ra đĩa, chan sốt cà chua đang nóng phủ đều lên mình cá; nếu muốn cá thấm hơn, cho cá trở lại chảo sốt, rưới đều và nấu lăn nhẹ 1–2 phút — không nấu lâu để giữ lớp vỏ giòn.",
     "Rắc hành lá cắt nhỏ và tiêu, tắt bếp; dọn cá ra đĩa, chan sốt phủ đều, ăn nóng với cơm trắng."
   ],
   "recipe_sources": [
@@ -125,7 +125,7 @@
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Phân loại kho theo tiền lệ ca-thu-sot-ca (cá sốt cà trong kho đều method kho); dầu 6 g là dầu áp chảo + làm sốt, ăn vào cùng sốt. Nâng Mức 2 đợt 2 (2026-10-31): Đối chiếu 3 nguồn công thức đã mở kiểm chứng (xem recipe_sources). Định lượng: sửa ca-chua 100→140g — tỉ lệ cà chua:cá ở Nấu ăn không khó và Gia vị hạnh phúc đều là 0,8 (400g:500g và 4 quả:1 con 500g), nguồn thứ ba là 1,0 (500g:500g); tỉ lệ cũ của file 100:180 = 0,56, thấp hơn cả hai mốc đồng thuận 0,8–1,0 trên 30%; quy theo cá 180g/khẩu phần, cà chua nguồn ≈144–180g nên lấy 140g. Giữ cá 180g (mẻ 1 con 500g chia ~3 khẩu phần ≈167g, gần số file) và các gia vị khác (đường nguồn ~5g/khẩu phần theo Nấu ăn không khó, khớp file). Bất thường lớn ghi nhận, chờ chủ dự án phân xử: cả 3 nguồn đều CHIÊN cá vàng giòn rồi mới rưới sốt/cho vào sốt, trong khi file đang để cooking_method=kho với kỹ thuật áp chảo nhẹ (theo tiền lệ ca-thu-sot-ca đã ghi trong import_note cũ) — không tự đổi phân loại vì chuyển sang chien sẽ đổi mô hình hấp thụ dầu của engine (CALC-004) và kéo theo thay đổi calo toàn món; Gia vị hạnh phúc còn dùng hành tây 1 củ/mẻ — file không có dòng hanh-tay. Bước nấu viết lại 6 bước theo kỹ thuật hiện tại của file.",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Phân loại kho theo tiền lệ ca-thu-sot-ca (cá sốt cà trong kho đều method kho); dầu 6 g là dầu áp chảo + làm sốt, ăn vào cùng sốt. Nâng Mức 2 đợt 2 (2026-10-31): Đối chiếu 3 nguồn công thức đã mở kiểm chứng (xem recipe_sources). Định lượng: sửa ca-chua 100→140g — tỉ lệ cà chua:cá ở Nấu ăn không khó và Gia vị hạnh phúc đều là 0,8 (400g:500g và 4 quả:1 con 500g), nguồn thứ ba là 1,0 (500g:500g); tỉ lệ cũ của file 100:180 = 0,56, thấp hơn cả hai mốc đồng thuận 0,8–1,0 trên 30%; quy theo cá 180g/khẩu phần, cà chua nguồn ≈144–180g nên lấy 140g. Giữ cá 180g (mẻ 1 con 500g chia ~3 khẩu phần ≈167g, gần số file) và các gia vị khác (đường nguồn ~5g/khẩu phần theo Nấu ăn không khó, khớp file). Bất thường lớn ghi nhận, chờ chủ dự án phân xử: cả 3 nguồn đều CHIÊN cá vàng giòn rồi mới rưới sốt/cho vào sốt, trong khi file đang để cooking_method=kho với kỹ thuật áp chảo nhẹ (theo tiền lệ ca-thu-sot-ca đã ghi trong import_note cũ) — không tự đổi phân loại vì chuyển sang chien sẽ đổi mô hình hấp thụ dầu của engine (CALC-004) và kéo theo thay đổi calo toàn món; Gia vị hạnh phúc còn dùng hành tây 1 củ/mẻ — file không có dòng hanh-tay. Bước nấu viết lại 6 bước theo kỹ thuật hiện tại của file. Phân xử bất thường LV2-002 (Phần A, 2026-10-31): ĐỔI cooking_method kho → chien theo đồng thuận 3/3 nguồn (cả 3 nguồn đều chiên cá vàng giòn rồi mới rưới/cho vào sốt; bản kho chỉ còn ở nguồn phụ). Hệ quả đã xử lý đồng bộ: (a) nguyên liệu ca-dieu-hong được gán oil_absorption_pct = 9 theo đúng nhóm hải sản của CALC-004 như mọi cá nguyên con khác trong kho (trước đây chưa gán vì món đang phân loại kho — không gán thì engine đẩy 180 g cá vào missing và món mất tính được); (b) dau-an 6 → 3 g theo quy ước dầu Phương án A — dầu chiên chính do engine mô hình hoá, 3 g còn lại là dầu làm sốt cà chua (đúng tiền lệ ca-chim-sot-ca-chua và ca-tram-sot-chua-ngot ở Phương án A); bước 3 và 5 viết lại theo kỹ thuật chiên. Hành tây của Gia vị hạnh phúc chỉ 1/3 nguồn — không thêm. Kiểm món này bằng tham chiếu độc lập kiểu QA-002 lần 3: xem LV2-003.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
