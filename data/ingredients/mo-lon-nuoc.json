@@ -50,6 +50,14 @@
       "source": "FDC 171401 foodMeasures"
     }
   ],
+  "media": [
+    {
+      "path": "media/ingredients/mo-lon-nuoc.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

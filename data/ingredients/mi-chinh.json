@@ -51,6 +51,14 @@
       "source": "suy từ householdServingFullText FDC 2568847"
     }
   ],
+  "media": [
+    {
+      "path": "media/ingredients/mi-chinh.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

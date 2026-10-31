@@ -38,6 +38,14 @@
   "edible_portion_note": "CHƯA CÓ hệ số có nguồn: móng giò bán cả xương ống; foodMeasures FDC 167859 không có mục yield. Cần tự cân — tỷ lệ xương móng giò lớn, thiếu hệ số này món giả cầy/canh móng giò sẽ bị vống calo.",
   "is_ready_to_eat": false,
   "units": [],
+  "media": [
+    {
+      "path": "media/ingredients/mong-gio.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,
