@@ -45,6 +45,14 @@
       "source": "FDC 169941 foodMeasures"
     }
   ],
+  "media": [
+    {
+      "path": "media/ingredients/hong-gion.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,
