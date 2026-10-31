@@ -25,7 +25,7 @@
   "density_note": "SUY RA: 185 g/cup (FDC 168883 foodMeasures) chia 236,588 ml. Bulk density.",
   "default_yield_factor": null,
   "default_yield_factor_note": null,
-  "oil_absorption_pct": null,
+  "oil_absorption_pct": 0.0,
   "edible_portion_pct": null,
   "edible_portion_note": null,
   "is_ready_to_eat": false,

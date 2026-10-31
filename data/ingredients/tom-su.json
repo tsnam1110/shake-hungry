@@ -25,7 +25,7 @@
   "density_note": null,
   "default_yield_factor": null,
   "default_yield_factor_note": null,
-  "oil_absorption_pct": null,
+  "oil_absorption_pct": 9.0,
   "edible_portion_pct": null,
   "edible_portion_note": "CHƯA CÓ hệ số có nguồn: tôm bán cả vỏ+đầu, giá trị trên phần thịt bóc vỏ; foodMeasures FDC 175179 không có mục yield. Cần tự cân (đầu+vỏ tôm sú chiếm đáng kể).",
   "is_ready_to_eat": false,

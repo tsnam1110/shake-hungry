@@ -39,7 +39,7 @@
   "density_note": "SUY RA từ foodMeasures 171265, KIỂM CHỨNG CHÉO 3 điểm khớp chính xác: cup 244/236,588 = 1,0313; fl oz 30,5/29,5735 = 1,0313; quart 976/946,353 = 1,0313. Khớp dải 1,030–1,035 của sữa nguyên kem.",
   "default_yield_factor": null,
   "default_yield_factor_note": null,
-  "oil_absorption_pct": null,
+  "oil_absorption_pct": 0.0,
   "edible_portion_pct": null,
   "edible_portion_note": null,
   "is_ready_to_eat": false,

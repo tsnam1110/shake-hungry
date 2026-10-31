@@ -122,6 +122,16 @@ Nếu cooking_method ∈ {chien, ran, chien-ngap-dau}:
 `oil_absorption_pct` lưu ở từng nguyên liệu (`ingredients.oil_absorption_pct`), vì khoai tây và cá
 hấp thụ rất khác nhau. Giá trị phải có nguồn; không có nguồn thì để null và món không tính được.
 
+**Hiện thực hoá (CALC-004, chủ dự án duyệt 2026-10-31):** hệ số được gán **theo nhóm
+thực phẩm**, trích từ chính hai nguồn trên (điểm đo fries/strips 12%, cheese samosa
+10%, dải bánh áo bột 10–28%, phi lê cá 1%→10,5%, đùi gà 8,53% uptake): củ/quả chiên
+miếng 12, phô mai trong vỏ bột 10, bột/vỏ chiên ngập 15, bột gạo/tinh bột áo 12,
+hải sản 9, thịt/đạm 8. Nguyên liệu không phải chủ thể chiên trong món (gia vị, rau ăn
+kèm sống, nhân kín, chính dầu ăn, thành phẩm đã chiên sẵn mà số liệu đã gồm dầu sản
+xuất, tinh bột đã nấu chín rán lại với dầu đã kê trong công thức) nhận hệ số **0 theo
+bản chất mô hình** — không phải số đo. Bảng đầy đủ và các đánh đổi đã biết:
+[CALC-004](../05-tasks/tasks/CALC-004.md).
+
 > **Cảnh báo cho người kế nhiệm:** nếu bỏ qua mục này, calo món chiên sẽ **thấp hơn thực tế 30–50%**.
 > Đây là lỗi âm thầm — không có gì báo sai, chỉ là mọi con số đều thấp.
 

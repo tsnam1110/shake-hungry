@@ -39,7 +39,7 @@
   "density_note": "SUY RA, MỘT ĐIỂM VÀ ĐỘ TIN CẬY THẤP: nhãn ERAWAN ghi servingSize 10 g = '1 Tbsp' → 10/14,787 = 0,676. Kiểm chứng gián tiếp bằng bột gạo (0,668) và trân châu (0,642) — cùng khoảng 0,64–0,68 nên chấp nhận được. NHƯNG bột năng đóng bánh hay không làm thay đổi con số này nhiều. Không dùng để tính dinh dưỡng, chỉ để đổi thìa sang gram khi bắt buộc.",
   "default_yield_factor": null,
   "default_yield_factor_note": null,
-  "oil_absorption_pct": null,
+  "oil_absorption_pct": 12.0,
   "edible_portion_pct": null,
   "edible_portion_note": null,
   "is_ready_to_eat": false,

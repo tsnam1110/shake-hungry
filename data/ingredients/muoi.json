@@ -26,7 +26,7 @@
   "density_note": "BULK DENSITY. SUY RA, kiểm chứng chéo 3 điểm: tsp 6,0/4,9289 = 1,217; tbsp 18,0/14,7868 = 1,217; cup 292/236,588 = 1,234. LƯU Ý muối hạt to (muối biển thô) có bulk density THẤP hơn muối bột — không dùng chung con số này.",
   "default_yield_factor": null,
   "default_yield_factor_note": null,
-  "oil_absorption_pct": null,
+  "oil_absorption_pct": 0.0,
   "edible_portion_pct": null,
   "edible_portion_note": null,
   "is_ready_to_eat": false,

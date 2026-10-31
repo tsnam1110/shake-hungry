@@ -33,7 +33,7 @@
   "density_note": "SUY RA từ USDA foodMeasures 174531 (1 tbsp = 18,0 g chia 14,7868 ml). CHỈ CÓ MỘT ĐIỂM, không kiểm chứng chéo được — độ tin cậy thấp.",
   "default_yield_factor": null,
   "default_yield_factor_note": null,
-  "oil_absorption_pct": null,
+  "oil_absorption_pct": 0.0,
   "edible_portion_pct": null,
   "edible_portion_note": null,
   "is_ready_to_eat": false,

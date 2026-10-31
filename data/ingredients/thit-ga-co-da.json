@@ -38,7 +38,7 @@
   "density_note": null,
   "default_yield_factor": 0.75,
   "default_yield_factor_note": "SUY TỪ USDA Table of Cooking Yields for Meat and Poultry R2 (data/reference/usda-cooking-yields.csv), NDB 5010 'Chicken, broiler-fryer, whole, including skin — Poached, Simmered or Stewed' = 75%. Chọn luộc vì gà nguyên con VN chủ yếu luộc; quay/nướng dùng NDB 5004 = 78%.",
-  "oil_absorption_pct": null,
+  "oil_absorption_pct": 8.0,
   "edible_portion_pct": 60.9,
   "edible_portion_note": "SUY RA từ foodMeasures FDC 171447: 'yield from 1 lb ready-to-cook chicken' = 276 g thịt+da ⇒ 276/453,59 = 60,9%. Áp cho khối lượng GÀ LÀM SẴN NGUYÊN CON (đã bỏ lông, nội tạng); gà chặt miếng có xương cũng dùng tạm hệ số này.",
   "is_ready_to_eat": false,

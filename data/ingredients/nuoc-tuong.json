@@ -33,7 +33,7 @@
   "density_note": "SUY RA từ USDA foodMeasures 174277, kiểm chứng chéo 3 điểm nhất quán: tbsp 16,0/14,7868 = 1,082; tsp 5,3/4,9289 = 1,075; cup 255/236,588 = 1,078.",
   "default_yield_factor": null,
   "default_yield_factor_note": null,
-  "oil_absorption_pct": null,
+  "oil_absorption_pct": 0.0,
   "edible_portion_pct": null,
   "edible_portion_note": null,
   "is_ready_to_eat": false,

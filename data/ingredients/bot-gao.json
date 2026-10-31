@@ -39,7 +39,7 @@
   "density_note": "SUY RA, MỘT ĐIỂM: cup 158/236,588 = 0,668. Không có measure thứ hai để kiểm chứng chéo. Bột gạo nén chặt có thể lên 0,75+, nên chỉ dùng cho ước lượng thô.",
   "default_yield_factor": null,
   "default_yield_factor_note": null,
-  "oil_absorption_pct": null,
+  "oil_absorption_pct": 12.0,
   "edible_portion_pct": null,
   "edible_portion_note": null,
   "is_ready_to_eat": false,

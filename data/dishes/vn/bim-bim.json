@@ -32,14 +32,6 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "dau-an",
-      "quantity": 8,
-      "unit_name": "g",
-      "is_optional": false,
-      "source": "llm_suggested",
-      "confidence": "low"
-    },
-    {
       "ingredient_slug": "muoi",
       "quantity": 0.5,
       "unit_name": "g",

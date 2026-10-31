@@ -33,7 +33,7 @@
   "density_note": "SUY RA từ portion của chính bản ghi: cup 207 g / 236,588 ml = 0,875. Kiểm chứng chéo bằng portion thứ hai: muỗng canh 13,0 / 14,787 = 0,879 — khớp. Bulk density hạt rời, KHÔNG phải khối lượng riêng hạt.",
   "default_yield_factor": null,
   "default_yield_factor_note": null,
-  "oil_absorption_pct": null,
+  "oil_absorption_pct": 0.0,
   "edible_portion_pct": null,
   "edible_portion_note": null,
   "is_ready_to_eat": false,
