@@ -92,8 +92,15 @@
     <main class="ld-main">
         <div class="@yield('page_class', 'ld-page')">
             @yield('content')
-            <footer class="ld-foot">
-                Số calo trên Lắc Đói luôn là khoảng ước tính từ engine của dự án, kèm độ tin cậy và nguồn gốc con số — món chưa đủ dữ liệu sẽ không hiện số.
+            <footer class="ld-footer">
+                <nav>
+                    <a href="/dieu-khoan">Điều khoản sử dụng</a>
+                    <a href="/chinh-sach-bao-mat">Chính sách bảo mật</a>
+                    <a href="/mien-tru-y-te">Miễn trừ y tế và dinh dưỡng</a>
+                    <a href="/nguon-du-lieu">Nguồn dữ liệu và giấy phép</a>
+                </nav>
+                <p>Số calo trên Lắc Đói luôn là khoảng ước tính từ engine của dự án, kèm độ tin cậy và nguồn gốc con số — món chưa đủ dữ liệu sẽ không hiện số. Thông tin dinh dưỡng chỉ mang tính tham khảo.</p>
+                <p>© 2026 Lắc Đói — mã nguồn MIT, dữ liệu tự biên soạn CC BY 4.0.</p>
             </footer>
         </div>
     </main>
@@ -108,13 +115,22 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">{!! $icons['fruit'] !!}</svg>Hoa quả</a>
     <a href="/nhat-ky" class="{{ $path === 'nhat-ky' ? 'active' : '' }}">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">{!! $icons['book'] !!}</svg>Nhật ký</a>
-    <a href="{{ $user ? '/ho-so' : '/tai-khoan' }}" class="{{ $path === 'ho-so' ? 'active' : '' }}">
+    <a href="/ho-so" class="{{ $path === 'ho-so' ? 'active' : '' }}">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">{!! $icons['person'] !!}</svg>Tôi</a>
 </nav>
 @else
 <main style="min-height:100vh;display:flex;align-items:flex-start;justify-content:center;padding:28px 18px 60px">
     <div style="width:100%;max-width:430px">
         @yield('content')
+        <footer class="ld-footer" style="text-align:center">
+            <nav style="justify-content:center">
+                <a href="/dieu-khoan">Điều khoản</a>
+                <a href="/chinh-sach-bao-mat">Bảo mật</a>
+                <a href="/mien-tru-y-te">Miễn trừ y tế</a>
+                <a href="/nguon-du-lieu">Nguồn dữ liệu</a>
+            </nav>
+            <p>© 2026 Lắc Đói.</p>
+        </footer>
     </div>
 </main>
 @endif

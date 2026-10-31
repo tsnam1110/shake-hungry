@@ -225,6 +225,21 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .ld-fav-btn .heart-ic { color: #aeaeb2; display: inline-flex; }
 .ld-fav-btn.on .heart-ic { color: #ff2d55; }
 .ld-fav-btn.on .heart-ic svg path { fill: #ff2d55; }
+
+/* Chân trang + trang chính sách (UI-016) */
+.ld-footer { margin-top: 44px; padding-top: 20px; border-top: 1px solid var(--color-sep); }
+.ld-footer nav { display: flex; flex-wrap: wrap; gap: 8px 20px; }
+.ld-footer nav a { color: var(--color-sub); text-decoration: none; font-size: 14px; font-weight: 500; }
+.ld-footer nav a:hover { color: var(--color-ink); }
+.ld-footer p { color: var(--color-faint); font-size: 13px; margin: 12px 0 0; line-height: 1.55; }
+.ld-prose { font-size: 15.5px; line-height: 1.65; color: var(--color-ink); }
+.ld-prose h2 { font-size: 19px; font-weight: 700; letter-spacing: -.01em; margin: 26px 0 8px; }
+.ld-prose h2:first-of-type { margin-top: 6px; }
+.ld-prose p { margin: 0 0 10px; }
+.ld-prose ul { margin: 0 0 10px; padding-left: 22px; }
+.ld-prose li { margin-bottom: 5px; }
+.ld-prose a { color: var(--color-link); }
+.ld-prose .updated { color: var(--color-faint); font-size: 13.5px; }
 a.ld-dcard:hover { box-shadow: 0 2px 4px rgba(0,0,0,.05), 0 14px 34px rgba(0,0,0,.09); }
 .ld-dcard-img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; flex: none; background: var(--color-fill); }
 .ld-dcard-body { display: flex; flex-direction: column; flex: 1; padding: 12px 14px 14px; min-width: 0; }

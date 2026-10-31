@@ -3,6 +3,38 @@
 @section('title', 'Hồ sơ của tôi — Lắc Đói')
 
 @section('content')
+@guest
+    {{-- Giao diện hồ sơ cho khách chưa đăng nhập (UI-016) --}}
+    <h1 class="ld-title" style="margin-top:14px">Hồ sơ của bạn</h1>
+    <p class="ld-subtitle">Đăng nhập để Lắc Đói nhớ khẩu vị, thể trạng và nhật ký ăn uống của bạn — gợi ý món vì thế sát với bạn hơn hẳn so với dùng khách.</p>
+
+    <div class="ld-group" style="margin-top:20px">
+        <div class="ld-row sep-icon">
+            <span class="ld-tile orange"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="5" width="14" height="14" rx="3.5"/><circle cx="9.3" cy="9.3" r="1" fill="currentColor" stroke="none"/><circle cx="14.7" cy="14.7" r="1" fill="currentColor" stroke="none"/><circle cx="14.7" cy="9.3" r="1" fill="currentColor" stroke="none"/><circle cx="9.3" cy="14.7" r="1" fill="currentColor" stroke="none"/></svg></span>
+            <span class="grow"><span style="font-weight:600">Lắc món theo khẩu vị của riêng bạn</span><span class="sub">Chế độ ăn, vùng miền, kcal mục tiêu mỗi bữa được lưu trong hồ sơ và tự điền sẵn mỗi lần lắc</span></span>
+        </div>
+        <div class="ld-row sep-icon">
+            <span class="ld-tile red"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M5.8 5.8l12.4 12.4"/></svg></span>
+            <span class="grow"><span style="font-weight:600">Lọc cứng những thứ bạn không ăn được</span><span class="sub">Khai báo dị ứng và thành phần kiêng một lần — hệ thống không bao giờ gợi ý món chứa chúng</span></span>
+        </div>
+        <div class="ld-row sep-icon">
+            <span class="ld-tile blue"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V4H6.5A2.5 2.5 0 0 0 4 6.5v13Z"/><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"/></svg></span>
+            <span class="grow"><span style="font-weight:600">Nhật ký và thống kê ăn uống</span><span class="sub">Ghi lại bữa ăn và hoa quả đã ăn, xem tổng năng lượng theo ngày, tuần và những món bạn ăn nhiều nhất</span></span>
+        </div>
+        <div class="ld-row sep-icon">
+            <span class="ld-tile green"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 20.5C7 16.5 3.8 13.3 3.8 9.6 3.8 7 5.7 5 8.1 5c1.6 0 3.1.9 3.9 2.3C12.8 5.9 14.3 5 15.9 5c2.4 0 4.3 2 4.3 4.6 0 3.7-3.2 6.9-8.2 10.9Z"/></svg></span>
+            <span class="grow"><span style="font-weight:600">Yêu thích và đóng góp cho cộng đồng</span><span class="sub">Lưu món và quả yêu thích, đóng góp món mới vào kho dữ liệu chung</span></span>
+        </div>
+    </div>
+
+    <div style="display:flex;gap:10px;margin-top:22px;flex-wrap:wrap">
+        <a href="/tai-khoan" class="ld-btn ld-btn-primary" style="text-decoration:none">Đăng nhập</a>
+        <a href="/tai-khoan" class="ld-btn ld-btn-gray" style="text-decoration:none">Tạo tài khoản miễn phí</a>
+    </div>
+    <p class="ld-note" style="margin-top:16px">Thông tin hồ sơ (năm sinh, giới tính, chiều cao, cân nặng) chỉ dùng để tính nhu cầu năng lượng và cá nhân hoá gợi ý cho chính bạn — cách chúng tôi xử lý dữ liệu được nêu rõ trong <a href="/chinh-sach-bao-mat" style="color:var(--color-link)">Chính sách bảo mật</a>. Bạn luôn có thể dùng Lắc Đói mà không cần tài khoản.</p>
+@endguest
+
+@auth
     <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:14px">
         <div>
             <h1 class="ld-title" style="margin-top:14px">Hồ sơ</h1>
@@ -123,9 +155,11 @@
             </form>
         </div>
     </section>
+@endauth
 @endsection
 
 @push('scripts')
+@auth
 <script>
 const csrf = document.querySelector('meta[name=csrf-token]').content;
 const headers = { 'Content-Type': 'application/json', 'Accept': 'application/json', 'X-CSRF-TOKEN': csrf };
@@ -291,4 +325,5 @@ async function loadFavorites() {
 document.addEventListener('fav-changed', () => loadFavorites());
 init().then(() => { loadStats(); loadFavorites(); });
 </script>
+@endauth
 @endpush

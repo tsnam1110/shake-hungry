@@ -15,7 +15,11 @@ Route::get('/', function () {
 
 // --- API công khai cho trang người dùng (GĐ4) ---
 Route::get('/tai-khoan', fn () => view('account'))->name('login');
-Route::get('/ho-so', fn () => view('profile'))->middleware('auth');
+Route::get('/ho-so', fn () => view('profile')); // khách chưa đăng nhập thấy giao diện giới thiệu (UI-016)
+Route::view('/dieu-khoan', 'legal.terms');
+Route::view('/chinh-sach-bao-mat', 'legal.privacy');
+Route::view('/mien-tru-y-te', 'legal.disclaimer');
+Route::view('/nguon-du-lieu', 'legal.data');
 Route::get('/mon/{slug}', fn () => view('dish'));
 Route::get('/kham-pha', fn () => view('explore'));
 Route::get('/nhat-ky', fn () => view('diary'))->middleware('auth');
