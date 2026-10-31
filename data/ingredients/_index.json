@@ -1,6 +1,6 @@
 {
   "_generated_by": "php artisan lacdoi:export-data — không sửa tay (DATA-REPOSITORY §2)",
-  "count": 386,
+  "count": 397,
   "ingredients": [
     {
       "slug": "bach-tuoc",
@@ -228,8 +228,18 @@
       "category": "rau-cu"
     },
     {
+      "slug": "ca-chuon",
+      "name_vi": "Cá chuồn (sống)",
+      "category": "thuy-san"
+    },
+    {
       "slug": "ca-com",
       "name_vi": "Cá cơm tươi",
+      "category": "thuy-san"
+    },
+    {
+      "slug": "ca-dia",
+      "name_vi": "Cá dìa (sống)",
       "category": "thuy-san"
     },
     {
@@ -250,6 +260,11 @@
     {
       "slug": "ca-hoi",
       "name_vi": "Cá hồi (nuôi, phi lê sống)",
+      "category": "thuy-san"
+    },
+    {
+      "slug": "ca-hu",
+      "name_vi": "Cá hú (sống)",
       "category": "thuy-san"
     },
     {
@@ -346,6 +361,11 @@
       "slug": "ca-troi",
       "name_vi": "Cá trôi (sống)",
       "category": "thuy-san"
+    },
+    {
+      "slug": "cai-cay",
+      "name_vi": "Cải cay (cải bẹ xanh, sống)",
+      "category": "rau-cu"
     },
     {
       "slug": "cai-cuc",
@@ -541,6 +561,11 @@
       "slug": "dau-do-hat",
       "name_vi": "Đậu đỏ (hạt khô)",
       "category": "khac"
+    },
+    {
+      "slug": "dau-dua",
+      "name_vi": "Đậu đũa (sống)",
+      "category": "rau-cu"
     },
     {
       "slug": "dau-ha-lan",
@@ -813,6 +838,11 @@
       "category": "thuy-san"
     },
     {
+      "slug": "hoa-bi",
+      "name_vi": "Hoa bí (bông bí, sống)",
+      "category": "rau-cu"
+    },
+    {
       "slug": "hoa-hoi",
       "name_vi": "Hoa hồi (đại hồi, khô)",
       "category": "gia-vi"
@@ -916,6 +946,11 @@
       "slug": "la-han",
       "name_vi": "La hán quả (khô)",
       "category": "trai-cay"
+    },
+    {
+      "slug": "la-he",
+      "name_vi": "Hẹ (lá hẹ, sống)",
+      "category": "rau-gia-vi"
     },
     {
       "slug": "la-khuc",
@@ -1046,6 +1081,11 @@
       "slug": "mang-cau-xiem",
       "name_vi": "Mãng cầu xiêm",
       "category": "trai-cay"
+    },
+    {
+      "slug": "mang-chua",
+      "name_vi": "Măng chua (măng muối chua)",
+      "category": "rau-cu"
     },
     {
       "slug": "mang-cut",
@@ -1220,6 +1260,16 @@
     {
       "slug": "ngo-sen",
       "name_vi": "Ngó sen",
+      "category": "rau-cu"
+    },
+    {
+      "slug": "ngon-bi",
+      "name_vi": "Ngọn bí (lá và ngọn bí đỏ, sống)",
+      "category": "rau-cu"
+    },
+    {
+      "slug": "ngong-cai",
+      "name_vi": "Ngồng cải (cải ngồng, sống)",
       "category": "rau-cu"
     },
     {
@@ -1555,6 +1605,11 @@
     {
       "slug": "su-hao",
       "name_vi": "Su hào (sống)",
+      "category": "rau-cu"
+    },
+    {
+      "slug": "su-su",
+      "name_vi": "Su su (sống)",
       "category": "rau-cu"
     },
     {

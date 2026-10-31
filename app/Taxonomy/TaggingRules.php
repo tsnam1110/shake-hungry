@@ -98,6 +98,7 @@ final class TaggingRules
         'mam-ruoc' => 'len-men', 'mam-tom' => 'len-men', 'nuoc-mam-cong-nghiep' => 'len-men',
         'nuoc-mam-truyen-thong' => 'len-men', 'tuong-ban' => 'len-men',
         'chao' => 'len-men', 'nem-chua' => 'len-men', 'sua-chua' => 'len-men',
+        'mang-chua' => 'len-men', // măng muối chua lên men — đợt DISH-005
         'ruou-trang' => 'len-men', 'ruou-vang-do' => 'len-men', 'bia' => 'len-men',
         'dam-gao' => 'len-men', 'nuoc-tuong' => 'len-men', 'tuong-den' => 'len-men',
         'dua-cai-muoi' => 'len-men',
