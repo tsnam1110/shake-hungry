@@ -38,6 +38,14 @@
   "edible_portion_note": "CHƯA CÓ hệ số có nguồn: hàu bán cả vỏ (nướng mỡ hành) hoặc tách thịt (cháo hàu); giá trị trên phần thịt. foodMeasures FDC 174219 không có mục yield vỏ. Khi công thức ghi thịt hàu tách sẵn, đánh is_edible_weight.",
   "is_ready_to_eat": false,
   "units": [],
+  "media": [
+    {
+      "path": "media/ingredients/hau.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

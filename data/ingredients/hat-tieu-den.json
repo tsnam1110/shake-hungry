@@ -56,6 +56,14 @@
       "source": "FDC 170931 foodMeasures"
     }
   ],
+  "media": [
+    {
+      "path": "media/ingredients/hat-tieu-den.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

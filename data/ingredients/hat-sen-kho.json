@@ -44,6 +44,14 @@
       "source": "suy từ FDC 170149: 1 oz = 28,35 g khoảng 42 hạt vừa"
     }
   ],
+  "media": [
+    {
+      "path": "media/ingredients/hat-sen-kho.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,
