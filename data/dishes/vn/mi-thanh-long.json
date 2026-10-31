@@ -53,7 +53,14 @@
     "Sợi mì nhuộm nước thanh long đỏ (Bình Thuận) — định lượng gói khô."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/mi-thanh-long.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": {
     "id": "Q50835686",

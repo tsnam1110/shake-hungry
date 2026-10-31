@@ -138,7 +138,14 @@
       "url": "https://cookpad.com/vn/cong-thuc/472096"
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/mien-xao-cua.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-005 đợt 5: nâng Mức 2 — đối chiếu 3 nguồn công thức đã mở đọc toàn văn (BlueStone, PasGo, Cookpad). Định lượng: giữ nguyên toàn bộ, không sửa — miến 70g nằm trong dải của các nguồn, trứng gà khớp biến thể 1 nguồn, giá đỗ và thịt cua không đủ cơ sở quy đổi (nguồn cân cua nguyên con, kho tính theo thịt cua đã gỡ) nên không kết luận lệch. Bất thường ghi nhận chờ pha phân xử: thiếu hành tây (2/3 nguồn dùng), thiếu nấm mèo (1/3 nguồn), và gia vị nêm chính trong file là nước tương trong khi cả 3 nguồn đều nêm bằng nước mắm/dầu hào.]",

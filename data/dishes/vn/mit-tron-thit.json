@@ -111,7 +111,14 @@
     "Trộn mít, thịt với nước trộn, rau răm; rắc lạc rang, hành phi; ăn kèm bánh tráng."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/mit-tron-thit.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Biến thể vùng của goi-mit-non theo cơ chế parent_dish_slug (pha sửa tầm soát đã chốt goi-mit-non là món chuẩn, nom-mit-non là biến thể): bản Quảng Nam này dùng thịt nạc vai luộc, không tôm, không tai heo — tạo SAU khi cặp gỏi/nộm đã quyết xong như kế hoạch yêu cầu.",
