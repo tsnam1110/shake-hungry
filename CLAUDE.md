@@ -157,6 +157,25 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > thứ tự mặc định, và kiểm "có số" trên JSON phải dùng `JSON_TYPE` (null trong JSON
 > không phải SQL NULL).
 
+> ## ⚠️ Đính chính lần 14, 2026-10-31 — rà soát toàn bộ (census) sau chương trình Mức 2 (AUDIT-002)
+>
+> Đợt rà soát toàn bộ đã xếp hàng từ khi chương trình Mức 2 còn chạy nay đã làm xong:
+> census 100% (654 món, 434 nguyên liệu, 82 hồ sơ quả, 1.087 ảnh, 2.185 URL nguồn —
+> 407 URL không-200 được mở lại bằng trình duyệt ở lượt 2 độc lập). Kết quả nền:
+> cấu trúc toàn kho sạch, media khớp 3 chiều tuyệt đối, hồ sơ giữ Mức 1 của 179 món
+> còn đúng, validate 0 🔴, recompute 475/475, Pest 127/127. Ba nhóm vấn đề thật đã
+> gom thành **danh sách phân xử PX-01…PX-35 chờ chủ dự án quyết** (không tự sửa):
+> (A) link rot làm 16 món Mức 2 rớt cổng nguồn — nặng nhất `bau-xao-tep` còn 0/3
+> nguồn mở lại được; (B) nguồn sai loài/họ kỹ thuật — trừ `ca-ro-dong-chien-xu`
+> (PX-17, không công khai + định lượng đi theo nguồn sai loài), các ca còn lại đều
+> đã công khai trong ghi chú và chờ **một quyết định quy ước chung** về việc nguồn
+> họ có tính vào cổng 3 nguồn hay không; (C) cặp `canh-hen`/`canh-hen-nau-chua`
+> trùng tên chính + link rot FDC (260 URL — số đã kiểm chứng độc lập trên bản trích
+> xuất SR Legacy). Ngoại lệ sửa cơ học duy nhất của đợt: 6 file nguyên liệu sửa
+> `oil_absorption_pct` theo nhóm CALC-004 đã hiệu chuẩn (truy vết đầy đủ trong báo
+> cáo). Chi tiết: [AUDIT-002](docs/05-tasks/tasks/AUDIT-002.md) và báo cáo rà soát
+> toàn bộ 2026-10-31 trong thư mục tài liệu bàn giao của chủ dự án.
+
 **Trạng thái thực tế, kiểm ngày 2026-10-31 (đã chạy lại toàn bộ lệnh kiểm chứng):**
 
 | Hạng mục | Thực tế | Kiểm bằng |
