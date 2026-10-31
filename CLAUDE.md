@@ -98,6 +98,20 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > đổi: vẫn cấm số từ trí nhớ và cấm gán số của loài/trạng thái khác cho nguyên liệu
 > chính mà không ghi rõ.
 
+> ## ⚠️ Đính chính lần 8, 2026-10-31 — giao diện người dùng v2: web app theo hướng Apple HIG
+>
+> Chủ dự án đã duyệt bản mẫu v2 và chốt triển khai (UI-004…UI-010): trang người dùng
+> chuyển từ các trang Blade rời (Tailwind cam mặc định, không layout chung) thành
+> **một vỏ web app**: layout `layouts/app` với sidebar theo nhóm tính năng trên
+> desktop và tab bar 5 mục trên mobile; **hệ thiết kế v2 trong `app.css`** (token
+> Apple: nền `#F5F5F7`, hành động `#0071E3`, màu theo ngữ nghĩa; component tiền tố
+> `ld-`). Font phía người dùng là **Inter (subset tiếng Việt) + chồng font hệ
+> thống Apple**, bỏ Instrument Sans (hỗ trợ tiếng Việt kém) và bỏ bunny fonts
+> khỏi `vite.config.js`. Trang hồ sơ là trung tâm quản trị thông tin của người
+> dùng. Tài liệu cũ ghi frontend là "Blade + Livewire 3" (ARCHITECTURE §2) là
+> **sai** — đã sửa ở UI-010: dự án dùng Blade + JavaScript thuần, chưa từng
+> dùng Livewire.
+
 **Trạng thái thực tế, kiểm ngày 2026-10-31 (đã chạy lại toàn bộ lệnh kiểm chứng):**
 
 | Hạng mục | Thực tế | Kiểm bằng |

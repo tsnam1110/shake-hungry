@@ -30,7 +30,7 @@
 | Database | **MySQL 8.0+** | Xem §4 |
 | Tìm kiếm tên | FULLTEXT ngram + độ giống trigram ở tầng PHP | |
 | Admin / nhập liệu | Ant Design (antd) 6 + React 19 | Công cụ sản xuất dữ liệu chính — quyết định 2026-10-30, xem §5.6 |
-| Giao diện người dùng | Blade + Livewire 3 | |
+| Giao diện người dùng | Blade + JavaScript thuần + Tailwind CSS 4 (vỏ web app, hệ thiết kế v2 — UI-004; đính chính 2026-10-31: bản cũ ghi "Blade + Livewire 3" là sai, dự án chưa từng dùng Livewire) | |
 | Trợ lý nhập liệu | Claude API | Vai trò giới hạn theo QT-1 |
 | Test | Pest | |
 

@@ -196,6 +196,13 @@ kiểm chứng TEST-002**; `migrate:fresh --seed` dựng lại đúng toàn bộ
 | [REC-002](./tasks/REC-002.md) | Sinh embedding + tìm món tương tự bằng embedding vector | Backend | ⬜ | REC-001 | — |
 | [UI-002](./tasks/UI-002.md) | Nút Lắc bản chính thức | Frontend | ✅ | REC-001 | — |
 | [UI-003](./tasks/UI-003.md) | Trang chi tiết món (công thức, dinh dưỡng, độ tin cậy) | Frontend | ✅ | UI-002 | — |
+| [UI-004](./tasks/UI-004.md) | Vỏ ứng dụng + hệ thiết kế v2 (Apple HIG) | Frontend | ✅ | UI-003 | 2026-10-31 |
+| [UI-005](./tasks/UI-005.md) | Trang chủ: sân khấu Lắc theo bản mẫu v2 | Frontend | ✅ | UI-004 | 2026-10-31 |
+| [UI-006](./tasks/UI-006.md) | Khám phá món dạng danh sách biên tập | Frontend | ✅ | UI-004 | 2026-10-31 |
+| [UI-007](./tasks/UI-007.md) | Chi tiết món: khối Nguồn gốc con số mở sẵn | Frontend | ✅ | UI-004 | 2026-10-31 |
+| [UI-008](./tasks/UI-008.md) | Hồ sơ — trung tâm quản trị của người dùng | Frontend | ✅ | UI-004 | 2026-10-31 |
+| [UI-009](./tasks/UI-009.md) | Trang Hoa quả theo cùng hệ thiết kế | Frontend | ✅ | UI-004 | 2026-10-31 |
+| [UI-010](./tasks/UI-010.md) | QA giao diện v2 + tài liệu | Frontend | ✅ | UI-005…UI-009 | 2026-10-31 |
 
 **DoD GĐ4:** bấm Lắc ra món hợp bữa, không lặp món vừa ăn, hiển thị dinh dưỡng đúng quy tắc QT-5.
 
