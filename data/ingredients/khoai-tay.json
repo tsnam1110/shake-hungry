@@ -55,6 +55,14 @@
       "source": "FDC 170026 foodMeasures"
     }
   ],
+  "media": [
+    {
+      "path": "media/ingredients/khoai-tay.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,
