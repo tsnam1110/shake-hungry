@@ -1,87 +1,101 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>Hồ sơ của tôi — Lắc Đói</title>
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-</head>
-<body class="bg-orange-50 min-h-screen text-neutral-800">
-<main class="mx-auto max-w-2xl px-4 pt-8 pb-16">
-    <header class="flex items-center justify-between">
-        <h1 class="text-2xl font-bold">🎲 Hồ sơ của tôi</h1>
-        <div class="text-sm">
-            <a href="/" class="text-orange-700 underline mr-3">Lắc món</a>
-            <button id="logout" class="text-neutral-500 underline">Đăng xuất</button>
-        </div>
-    </header>
-    <p id="whoami" class="text-neutral-500 text-sm mt-1"></p>
+@extends('layouts.app')
 
-    <section class="bg-white rounded-2xl shadow p-5 mt-4">
-        <h2 class="font-semibold mb-3">Thể trạng & nhu cầu năng lượng</h2>
-        <form id="profile-form" class="grid grid-cols-2 gap-3 text-sm">
-            <label>Chiều cao (cm)<input name="height_cm" type="number" step="0.1" class="mt-1 w-full border rounded-xl px-3 py-2"></label>
-            <label>Cân nặng (kg)<input name="weight_kg" type="number" step="0.1" class="mt-1 w-full border rounded-xl px-3 py-2"></label>
-            <label>Năm sinh<input name="birth_year" type="number" class="mt-1 w-full border rounded-xl px-3 py-2"></label>
-            <label>Giới tính
-                <select name="sex" class="mt-1 w-full border rounded-xl px-3 py-2">
-                    <option value="unspecified">Chưa rõ</option><option value="male">Nam</option><option value="female">Nữ</option>
-                </select></label>
-            <label>Mức vận động
-                <select name="activity_level" class="mt-1 w-full border rounded-xl px-3 py-2">
-                    <option value="nhe">Ít / nhẹ (PAL 1,40–1,69)</option>
-                    <option value="vua">Vừa (PAL 1,70–1,99)</option>
-                    <option value="nang">Mạnh (PAL 2,00–2,40)</option>
-                </select></label>
-            <label>Chế độ ăn
-                <select name="diet_type" class="mt-1 w-full border rounded-xl px-3 py-2">
-                    <option value="">Ăn thường</option><option value="chay">Ăn chay</option>
-                    <option value="chay-truong">Chay trường (thuần chay)</option><option value="low-carb">Low-carb</option>
-                </select></label>
-            <label class="col-span-2">Không ăn được / dị ứng (chọn để lọc cứng khi lắc)
-                <select id="excluded" multiple size="4" class="mt-1 w-full border rounded-xl px-3 py-2"></select>
-            </label>
-            <button class="col-span-2 bg-orange-600 text-white font-bold rounded-xl py-3">Lưu hồ sơ</button>
-        </form>
-        <div id="tdee" class="mt-4"></div>
-    </section>
+@section('title', 'Hồ sơ của tôi — Lắc Đói')
 
-    <section class="bg-white rounded-2xl shadow p-5 mt-4">
-        <div class="flex items-center justify-between">
-            <h2 class="font-semibold">Nhật ký bữa ăn</h2>
-            <input id="log-date" type="date" class="border rounded-xl px-2 py-1.5 text-sm">
+@section('content')
+    <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:14px">
+        <div>
+            <h1 class="ld-title" style="margin-top:14px">Hồ sơ</h1>
+            <p id="whoami" class="ld-subtitle" style="font-size:15px"></p>
         </div>
-        <div id="summary" class="mt-2 text-sm"></div>
-        <ul id="logs" class="mt-3 space-y-2 text-sm"></ul>
-        <div class="flex gap-2 mt-4">
-            <input id="manual-q" placeholder="Thêm món đã ăn: gõ tên món…" class="flex-1 border rounded-xl px-3 py-2 text-sm">
-            <select id="manual-slot" class="border rounded-xl px-2 py-2 text-sm">
+        <button id="logout" style="border:0;background:none;color:var(--color-danger);font-weight:600;font-size:15px;cursor:pointer;padding-top:22px;font-family:inherit">Đăng xuất</button>
+    </div>
+
+    {{-- Năng lượng (TDEE) — render bằng JS vào #tdee --}}
+    <p class="ld-group-label">Năng lượng</p>
+    <div id="tdee"></div>
+
+    {{-- Nhật ký bữa ăn --}}
+    <section id="nhat-ky" style="scroll-margin-top:80px">
+        <div class="ld-section-head">
+            <h2 class="ld-section-title">Nhật ký bữa ăn</h2>
+            <input id="log-date" type="date" class="ld-input" style="width:auto;padding:8px 11px;font-size:14.5px">
+        </div>
+        <div id="summary" style="font-size:15px;margin-bottom:12px"></div>
+        <div class="ld-group" id="logs"></div>
+        <div style="display:flex;gap:9px;margin-top:14px">
+            <div class="ld-search" style="flex:1">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#86868b" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20.5 20.5 16.6 16.6"/></svg>
+                <input id="manual-q" type="search" placeholder="Thêm món đã ăn: gõ tên món…" aria-label="Thêm món đã ăn">
+            </div>
+            <select id="manual-slot" class="ld-select" style="width:auto">
                 <option value="sang">Sáng</option><option value="trua">Trưa</option><option value="chieu">Chiều</option><option value="toi">Tối</option><option value="an-vat">Ăn vặt</option>
             </select>
         </div>
-        <div id="manual-results" class="mt-2 space-y-1"></div>
+        <div id="manual-results" class="ld-group" style="margin-top:10px"></div>
     </section>
 
-    <section class="bg-white rounded-2xl shadow p-5 mt-4">
-        <h2 class="font-semibold mb-2">Đóng góp cho cộng đồng</h2>
-        <p class="text-sm text-neutral-500 mb-3">Đề xuất món mới, báo sửa món, hoặc giới thiệu quán ăn — mọi đề xuất đều qua duyệt mới hiển thị.</p>
-        <form id="contrib-form" class="space-y-3 text-sm">
-            <select name="type" class="w-full border rounded-xl px-3 py-2">
-                <option value="new_dish">Đề xuất món mới</option>
-                <option value="fix_dish">Báo sửa thông tin món</option>
-                <option value="new_place">Giới thiệu quán ăn</option>
-            </select>
-            <input name="title" required placeholder="Tên món / quán" class="w-full border rounded-xl px-3 py-2">
-            <textarea name="detail" rows="3" placeholder="Chi tiết: nguyên liệu, cách làm, địa chỉ quán…" class="w-full border rounded-xl px-3 py-2"></textarea>
-            <button class="bg-orange-600 text-white font-bold rounded-xl px-4 py-2.5">Gửi đề xuất</button>
-            <span id="contrib-msg" class="text-sm"></span>
+    {{-- Thể trạng & ăn uống --}}
+    <section>
+        <h2 class="ld-section-title">Thể trạng và ăn uống</h2>
+        <form id="profile-form" class="ld-card">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div><label class="ld-field-label" for="f-height">Chiều cao (cm)</label>
+                    <input id="f-height" name="height_cm" type="number" step="0.1" class="ld-input"></div>
+                <div><label class="ld-field-label" for="f-weight">Cân nặng (kg)</label>
+                    <input id="f-weight" name="weight_kg" type="number" step="0.1" class="ld-input"></div>
+                <div><label class="ld-field-label" for="f-birth">Năm sinh</label>
+                    <input id="f-birth" name="birth_year" type="number" class="ld-input"></div>
+                <div><label class="ld-field-label" for="f-sex">Giới tính</label>
+                    <select id="f-sex" name="sex" class="ld-select">
+                        <option value="unspecified">Chưa rõ</option><option value="male">Nam</option><option value="female">Nữ</option>
+                    </select></div>
+                <div><label class="ld-field-label" for="f-act">Mức vận động</label>
+                    <select id="f-act" name="activity_level" class="ld-select">
+                        <option value="nhe">Ít / nhẹ (PAL 1,40–1,69)</option>
+                        <option value="vua">Vừa (PAL 1,70–1,99)</option>
+                        <option value="nang">Mạnh (PAL 2,00–2,40)</option>
+                    </select></div>
+                <div><label class="ld-field-label" for="f-diet">Chế độ ăn</label>
+                    <select id="f-diet" name="diet_type" class="ld-select">
+                        <option value="">Ăn thường</option><option value="chay">Ăn chay</option>
+                        <option value="chay-truong">Chay trường (thuần chay)</option><option value="low-carb">Low-carb</option>
+                    </select></div>
+                <div class="sm:col-span-2"><label class="ld-field-label" for="excluded">Không ăn được / dị ứng — chọn để lọc cứng khi lắc</label>
+                    <select id="excluded" multiple size="4" class="ld-select"></select>
+                    <p class="ld-note" style="margin-top:6px">Giữ Ctrl (hoặc Cmd) để chọn nhiều mục. Lọc dị ứng không bao giờ bị hệ thống tự nới lỏng.</p></div>
+            </div>
+            <button class="ld-btn ld-btn-primary" style="width:100%;margin-top:18px">Lưu hồ sơ</button>
         </form>
     </section>
-</main>
+
+    {{-- Đóng góp cộng đồng --}}
+    <section id="dong-gop" style="scroll-margin-top:80px">
+        <h2 class="ld-section-title">Đóng góp cho cộng đồng</h2>
+        <div class="ld-card">
+            <p style="color:var(--color-sub);font-size:15px;margin:0 0 14px">Đề xuất món mới, báo sửa món, hoặc giới thiệu quán ăn — mọi đề xuất đều qua duyệt mới hiển thị.</p>
+            <form id="contrib-form" style="display:flex;flex-direction:column;gap:11px">
+                <select name="type" class="ld-select">
+                    <option value="new_dish">Đề xuất món mới</option>
+                    <option value="fix_dish">Báo sửa thông tin món</option>
+                    <option value="new_place">Giới thiệu quán ăn</option>
+                </select>
+                <input name="title" required placeholder="Tên món / quán" class="ld-input">
+                <textarea name="detail" rows="3" placeholder="Chi tiết: nguyên liệu, cách làm, địa chỉ quán…" class="ld-input"></textarea>
+                <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+                    <button class="ld-btn ld-btn-primary" style="padding:11px 22px;font-size:15.5px">Gửi đề xuất</button>
+                    <span id="contrib-msg" style="font-size:14.5px"></span>
+                </div>
+            </form>
+        </div>
+    </section>
+@endsection
+
+@push('scripts')
 <script>
 const csrf = document.querySelector('meta[name=csrf-token]').content;
 const headers = { 'Content-Type': 'application/json', 'Accept': 'application/json', 'X-CSRF-TOKEN': csrf };
+function esc(s) { return (s ?? '').toString().replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
 const ALLERGEN_PRESETS = [
     ['Đậu phộng', ['lac-rang','lac-song']], ['Tôm/tép', ['tom-su','tom-kho','tep']],
     ['Cua', ['cua-bien','cua-dong']], ['Trứng', ['trung-ga','trung-vit','trung-cut','trung-vit-lon']],
@@ -108,12 +122,14 @@ async function init() {
 }
 function renderTdee(tdee) {
     document.getElementById('tdee').innerHTML = tdee
-        ? `<div class="rounded-xl bg-orange-50 border border-orange-200 p-4">
-             <div class="text-sm text-neutral-500">Nhu cầu năng lượng ước tính</div>
-             <div class="text-2xl font-bold">${tdee.tdee_min.toLocaleString('vi-VN')} – ${tdee.tdee_max.toLocaleString('vi-VN')} kcal/ngày</div>
-             <div class="text-xs text-neutral-500 mt-1">BMR ≈ ${tdee.bmr} kcal · ${tdee.formula}. ${tdee.note}</div>
+        ? `<div class="ld-card" style="padding:18px 20px">
+             <div style="display:flex;align-items:baseline;gap:9px;flex-wrap:wrap">
+               <span class="ld-tnum" style="font-size:27px;font-weight:800;letter-spacing:-.02em">${tdee.tdee_min.toLocaleString('vi-VN')} – ${tdee.tdee_max.toLocaleString('vi-VN')}</span>
+               <span style="color:var(--color-sub)">kcal mỗi ngày, theo hồ sơ thể trạng của bạn</span>
+             </div>
+             <p class="ld-note" style="margin-top:8px">BMR ≈ ${tdee.bmr} kcal · ${esc(tdee.formula)}. ${esc(tdee.note)}</p>
            </div>`
-        : '<p class="text-sm text-neutral-400">Điền cân nặng và năm sinh để xem nhu cầu năng lượng.</p>';
+        : '<div class="ld-card" style="padding:18px 20px"><p style="color:var(--color-faint);margin:0">Điền cân nặng và năm sinh ở mục Thể trạng để xem nhu cầu năng lượng.</p></div>';
 }
 document.getElementById('profile-form').onsubmit = async (e) => {
     e.preventDefault();
@@ -124,22 +140,26 @@ document.getElementById('profile-form').onsubmit = async (e) => {
     body.excluded_ingredients = [...excludedEl.selectedOptions].flatMap(o => ALLERGEN_PRESETS[+o.value][1]);
     const resp = await fetch('/api/profile', { method: 'PUT', headers, body: JSON.stringify(body) });
     const data = await resp.json();
-    if (resp.ok) renderTdee(data.tdee); else alert(data.message || 'Lưu thất bại');
+    if (resp.ok) { renderTdee(data.tdee); ldToast('Đã lưu hồ sơ'); } else alert(data.message || 'Lưu thất bại');
 };
 const slotName = { sang: 'Sáng', trua: 'Trưa', chieu: 'Chiều', toi: 'Tối', 'an-vat': 'Ăn vặt' };
 async function loadLogs() {
     const date = document.getElementById('log-date').value;
     const { logs, summary } = await (await fetch('/api/meal-logs?date=' + date)).json();
     document.getElementById('summary').innerHTML =
-        `Tổng hôm nay: <b>${summary.kcal_min} – ${summary.kcal_max} kcal</b> từ ${summary.dishes_counted} món có dữ liệu` +
-        (summary.dishes_unknown ? ` · <span class="text-amber-600">${summary.dishes_unknown} món chưa đủ dữ liệu nên chưa tính vào tổng</span>` : '');
+        `Tổng hôm nay: <b class="ld-tnum">${summary.kcal_min} – ${summary.kcal_max} kcal</b> từ ${summary.dishes_counted} món có dữ liệu` +
+        (summary.dishes_unknown ? ` · <span style="color:var(--color-warn-ink)">${summary.dishes_unknown} món chưa đủ dữ liệu nên chưa tính vào tổng</span>` : '');
     document.getElementById('logs').innerHTML = logs.map(l => {
         const n = l.dish?.nutrition;
-        return `<li class="flex items-center justify-between border rounded-xl px-3 py-2">
-            <span>${slotName[l.slot] ?? l.slot} · <b>${l.dish?.names?.[0]?.name ?? '?'}</b>
-            <span class="text-neutral-400">${n ? `${Math.round(n.kcal_min)}–${Math.round(n.kcal_max)} kcal` : 'chưa đủ dữ liệu'}</span></span>
-            <button data-del="${l.id}" class="text-red-500 text-xs underline">Xoá</button></li>`;
-    }).join('') || '<li class="text-neutral-400">Chưa ghi bữa nào.</li>';
+        const name = l.dish?.names?.[0]?.name ?? '?';
+        return `<div class="ld-row sep-icon">
+            <span class="ld-tile blue">${esc(name.trim().charAt(0).toUpperCase())}</span>
+            <span class="grow"><span style="font-weight:600">${esc(name)}</span><span class="sub">${slotName[l.slot] ?? l.slot}</span></span>
+            ${n ? `<span class="ld-price"><span class="so ld-tnum">${Math.round(n.kcal_min)}–${Math.round(n.kcal_max)}</span><small>kcal</small></span>`
+                 : `<span class="ld-price"><span class="so" style="color:var(--color-faint);font-weight:600">Chưa đủ dữ liệu</span></span>`}
+            <button data-del="${l.id}" style="border:0;background:none;color:var(--color-danger);font-size:13.5px;font-weight:600;cursor:pointer;font-family:inherit">Xoá</button>
+        </div>`;
+    }).join('') || '<p style="color:var(--color-faint);padding:16px;margin:0">Chưa ghi bữa nào.</p>';
     document.querySelectorAll('[data-del]').forEach(b => b.onclick = async () => {
         await fetch('/api/meal-logs/' + b.dataset.del, { method: 'DELETE', headers });
         loadLogs();
@@ -150,15 +170,16 @@ let mq;
 document.getElementById('manual-q').addEventListener('input', (e) => {
     clearTimeout(mq);
     mq = setTimeout(async () => {
-        const q = e.target.value.trim(); if (!q) return;
+        const q = e.target.value.trim(); if (!q) { document.getElementById('manual-results').innerHTML = ''; return; }
         const data = await (await fetch('/api/dishes?q=' + encodeURIComponent(q))).json();
         document.getElementById('manual-results').innerHTML = data.data.slice(0, 6).map(d =>
-            `<button data-add="${d.id}" class="block w-full text-left border rounded-xl px-3 py-2 text-sm bg-orange-50 hover:bg-orange-100">+ ${d.names?.[0]?.name ?? d.slug}</button>`).join('');
+            `<button data-add="${d.id}" class="ld-row" style="cursor:pointer"><span class="grow">+ ${esc(d.names?.[0]?.name ?? d.slug)}</span></button>`).join('');
         document.querySelectorAll('[data-add]').forEach(b => b.onclick = async () => {
             await fetch('/api/meal-logs', { method: 'POST', headers, body: JSON.stringify({
                 dish_id: +b.dataset.add, slot: document.getElementById('manual-slot').value, source: 'manual',
                 eaten_at: document.getElementById('log-date').value + 'T12:00:00',
             })});
+            ldToast('Đã thêm món vào nhật ký');
             loadLogs();
         });
     }, 350);
@@ -173,5 +194,4 @@ document.getElementById('contrib-form').onsubmit = async (e) => {
 document.getElementById('logout').onclick = async () => { await fetch('/api/logout', { method: 'POST', headers }); location.href = '/'; };
 init();
 </script>
-</body>
-</html>
+@endpush

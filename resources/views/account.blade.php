@@ -1,61 +1,63 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>Tài khoản — Lắc Đói</title>
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-</head>
-<body class="bg-orange-50 min-h-screen text-neutral-800">
-<main class="mx-auto max-w-md px-4 pt-10 pb-16">
-    <div class="text-center mb-6"><div class="text-5xl">🎲</div>
-        <h1 class="text-2xl font-bold mt-2">Lắc Đói</h1>
-        <p class="text-neutral-500 text-sm">Đăng nhập để lưu hồ sơ và nhật ký bữa ăn. Khách vẫn lắc món bình thường.</p>
+@extends('layouts.app', ['hideNav' => true])
+
+@section('title', 'Tài khoản — Lắc Đói')
+
+@section('content')
+    <div style="text-align:center;margin:14px 0 22px">
+        <span class="ld-app-icon" style="width:56px;height:56px;border-radius:15px" aria-hidden="true">
+            <svg width="31" height="31" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round"><path d="M4 12h16a8 8 0 0 1-16 0Z"/><path d="M9 8c1-1.6 4.5-1.8 6-.5"/><path d="M15.5 5.5c1.2-1 2.7-1.3 4-1"/></svg>
+        </span>
+        <h1 style="font-size:27px;font-weight:800;letter-spacing:-.02em;margin:12px 0 4px">Lắc Đói</h1>
+        <p style="color:var(--color-sub);font-size:15px;margin:0">Đăng nhập để lưu hồ sơ và nhật ký bữa ăn.<br>Khách vẫn lắc món bình thường.</p>
     </div>
-    <div class="bg-white rounded-2xl shadow p-5">
-        <div class="flex gap-2 mb-4">
-            <button data-tab="login" class="tabbtn flex-1 rounded-xl py-2 font-semibold bg-orange-600 text-white">Đăng nhập</button>
-            <button data-tab="register" class="tabbtn flex-1 rounded-xl py-2 font-semibold bg-neutral-100">Đăng ký</button>
-            <button data-tab="forgot" class="tabbtn flex-1 rounded-xl py-2 font-semibold bg-neutral-100">Quên MK</button>
+
+    <div class="ld-card">
+        <div class="ld-seg" style="margin-bottom:16px">
+            <button type="button" data-tab="login" class="tabbtn" aria-pressed="true">Đăng nhập</button>
+            <button type="button" data-tab="register" class="tabbtn" aria-pressed="false">Đăng ký</button>
+            <button type="button" data-tab="forgot" class="tabbtn" aria-pressed="false">Quên mật khẩu</button>
         </div>
-        <p id="msg" class="text-sm mb-3 hidden"></p>
+        <p id="msg" style="display:none"></p>
 
-        <form id="form-login" class="space-y-3">
-            <input name="email" type="email" required placeholder="Email" class="w-full border rounded-xl px-3 py-2.5">
-            <input name="password" type="password" required placeholder="Mật khẩu" class="w-full border rounded-xl px-3 py-2.5">
-            <button class="w-full bg-orange-600 text-white font-bold rounded-xl py-3">Đăng nhập</button>
+        <form id="form-login" style="display:flex;flex-direction:column;gap:11px">
+            <input name="email" type="email" required placeholder="Email" class="ld-input" autocomplete="email">
+            <input name="password" type="password" required placeholder="Mật khẩu" class="ld-input" autocomplete="current-password">
+            <button class="ld-btn ld-btn-primary" style="width:100%">Đăng nhập</button>
         </form>
 
-        <form id="form-register" class="space-y-3 hidden">
-            <input name="name" required placeholder="Tên của bạn" class="w-full border rounded-xl px-3 py-2.5">
-            <input name="email" type="email" required placeholder="Email" class="w-full border rounded-xl px-3 py-2.5">
-            <input name="password" type="password" required minlength="8" placeholder="Mật khẩu (ít nhất 8 ký tự)" class="w-full border rounded-xl px-3 py-2.5">
-            <input name="password_confirmation" type="password" required placeholder="Nhập lại mật khẩu" class="w-full border rounded-xl px-3 py-2.5">
-            <button class="w-full bg-orange-600 text-white font-bold rounded-xl py-3">Tạo tài khoản</button>
+        <form id="form-register" style="display:none;flex-direction:column;gap:11px">
+            <input name="name" required placeholder="Tên của bạn" class="ld-input" autocomplete="name">
+            <input name="email" type="email" required placeholder="Email" class="ld-input" autocomplete="email">
+            <input name="password" type="password" required minlength="8" placeholder="Mật khẩu (ít nhất 8 ký tự)" class="ld-input" autocomplete="new-password">
+            <input name="password_confirmation" type="password" required placeholder="Nhập lại mật khẩu" class="ld-input" autocomplete="new-password">
+            <button class="ld-btn ld-btn-primary" style="width:100%">Tạo tài khoản</button>
         </form>
 
-        <form id="form-forgot" class="space-y-3 hidden">
-            <input name="email" type="email" required placeholder="Email đã đăng ký" class="w-full border rounded-xl px-3 py-2.5">
-            <button class="w-full bg-orange-600 text-white font-bold rounded-xl py-3">Gửi liên kết đặt lại</button>
-            <p class="text-xs text-neutral-400">Nếu email tồn tại, hệ thống sẽ gửi liên kết đặt lại mật khẩu.</p>
+        <form id="form-forgot" style="display:none;flex-direction:column;gap:11px">
+            <input name="email" type="email" required placeholder="Email đã đăng ký" class="ld-input" autocomplete="email">
+            <button class="ld-btn ld-btn-primary" style="width:100%">Gửi liên kết đặt lại</button>
+            <p class="ld-note" style="margin:0">Nếu email tồn tại, hệ thống sẽ gửi liên kết đặt lại mật khẩu.</p>
         </form>
 
-        <form id="form-reset" class="space-y-3 hidden">
-            <input name="email" type="email" required placeholder="Email" class="w-full border rounded-xl px-3 py-2.5">
-            <input name="password" type="password" required minlength="8" placeholder="Mật khẩu mới" class="w-full border rounded-xl px-3 py-2.5">
-            <input name="password_confirmation" type="password" required placeholder="Nhập lại mật khẩu mới" class="w-full border rounded-xl px-3 py-2.5">
-            <button class="w-full bg-orange-600 text-white font-bold rounded-xl py-3">Đặt lại mật khẩu</button>
+        <form id="form-reset" style="display:none;flex-direction:column;gap:11px">
+            <input name="email" type="email" required placeholder="Email" class="ld-input" autocomplete="email">
+            <input name="password" type="password" required minlength="8" placeholder="Mật khẩu mới" class="ld-input" autocomplete="new-password">
+            <input name="password_confirmation" type="password" required placeholder="Nhập lại mật khẩu mới" class="ld-input" autocomplete="new-password">
+            <button class="ld-btn ld-btn-primary" style="width:100%">Đặt lại mật khẩu</button>
         </form>
     </div>
-    <p class="text-center mt-4 text-sm"><a class="text-orange-700 underline" href="/">← Về trang Lắc món</a></p>
-</main>
+    <p style="text-align:center;margin-top:18px"><a href="/" style="color:var(--color-link);text-decoration:none;font-size:15px">← Về trang Lắc món</a></p>
+@endsection
+
+@push('scripts')
 <script>
 const csrf = document.querySelector('meta[name=csrf-token]').content;
 const msg = document.getElementById('msg');
 function showMsg(text, ok = true) {
     msg.textContent = text;
-    msg.className = 'text-sm mb-3 rounded-xl px-3 py-2 ' + (ok ? 'bg-green-50 text-green-700' : 'bg-red-50 text-red-600');
+    msg.style.display = 'block';
+    msg.style.cssText += ';border-radius:12px;padding:11px 13px;font-size:14px;font-weight:500;margin:0 0 14px;' +
+        (ok ? 'background:var(--color-mint-tint);color:var(--color-mint-dark)' : 'background:var(--color-danger-tint);color:var(--color-danger)');
 }
 async function post(url, form) {
     const body = Object.fromEntries(new FormData(form).entries());
@@ -69,8 +71,11 @@ async function post(url, form) {
 }
 const tabs = document.querySelectorAll('.tabbtn');
 function activate(name) {
-    tabs.forEach(b => b.className = 'tabbtn flex-1 rounded-xl py-2 font-semibold ' + (b.dataset.tab === name ? 'bg-orange-600 text-white' : 'bg-neutral-100'));
-    ['login', 'register', 'forgot', 'reset'].forEach(t => document.getElementById('form-' + t).classList.toggle('hidden', t !== name));
+    tabs.forEach(b => b.setAttribute('aria-pressed', b.dataset.tab === name ? 'true' : 'false'));
+    ['login', 'register', 'forgot', 'reset'].forEach(t => {
+        const f = document.getElementById('form-' + t);
+        f.style.display = t === name ? 'flex' : 'none';
+    });
 }
 tabs.forEach(b => b.onclick = () => activate(b.dataset.tab));
 document.getElementById('form-login').onsubmit = async (e) => { e.preventDefault(); try { await post('/api/login', e.target); location.href = '/ho-so'; } catch (err) { showMsg(err.message, false); } };
@@ -90,5 +95,4 @@ document.getElementById('form-reset').onsubmit = async (e) => {
 if (new URLSearchParams(location.search).get('token')) activate('reset');
 fetch('/api/me').then(r => r.json()).then(({ user }) => { if (user) location.href = '/ho-so'; });
 </script>
-</body>
-</html>
+@endpush

@@ -1,63 +1,89 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Chi tiết món — Lắc Đói</title>
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-</head>
-<body class="bg-orange-50 min-h-screen text-neutral-800">
-<main class="mx-auto max-w-2xl px-4 pt-8 pb-16" id="app">
-    <a href="/" class="text-sm text-orange-700 underline">← Về trang Lắc món</a>
-    <div id="content" class="mt-4 text-neutral-400">Đang tải…</div>
-</main>
+@extends('layouts.app')
+
+@section('title', 'Chi tiết món — Lắc Đói')
+
+@section('content')
+    <a href="/#kham-pha" style="display:inline-flex;align-items:center;gap:3px;color:var(--color-link);font-size:16.5px;font-weight:500;text-decoration:none;padding-top:10px">
+        <svg width="11" height="18" viewBox="0 0 8 14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" style="transform:rotate(180deg)"><path d="M1 1l6 6-6 6"/></svg>
+        Khám phá
+    </a>
+    <div id="content" style="color:var(--color-faint);margin-top:14px">Đang tải…</div>
+@endsection
+
+@push('scripts')
 <script>
 const slug = location.pathname.split('/').pop();
 const slotName = { sang: 'Sáng', trua: 'Trưa', chieu: 'Chiều', toi: 'Tối', 'an-vat': 'Ăn vặt' };
-const confLabel = { high: 'tin cậy cao', medium: 'tin cậy trung bình', low: 'tin cậy thấp — số tham khảo' };
+const confLabel = { high: 'Tin cậy cao', medium: 'Tin cậy trung bình', low: 'Tin cậy thấp · số tham khảo' };
+const confClass = { high: '', medium: 'medium', low: 'low' };
+function esc(s) { return (s ?? '').toString().replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+const chev = '<svg class="ld-chev" width="8" height="14" viewBox="0 0 8 14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M1 1l6 6-6 6"/></svg>';
+
 fetch('/api/dishes/' + encodeURIComponent(slug), { headers: { 'Accept': 'application/json' } })
     .then(r => r.json())
     .then(({ dish: d, variants, provenance }) => {
         const n = d.nutrition;
         const name = d.names?.find(x => x.is_primary)?.name ?? d.slug;
-        const aliases = (d.names ?? []).filter(x => x.is_alias);
+        const aliases = (d.names ?? []).filter(x => !x.is_primary).map(x => x.name);
         document.title = name + ' — Lắc Đói';
+        const unv = provenance?.unverified_ingredients ?? [];
+        const allergenTags = (d.tags ?? []).filter(t => t.slug.startsWith('allergen:'));
+        const otherTags = (d.tags ?? []).filter(t => !t.slug.startsWith('allergen:'));
         document.getElementById('content').innerHTML = `
-        <div class="bg-white rounded-2xl shadow p-5">
-            <h1 class="text-3xl font-bold">${name}</h1>
-            ${aliases.length ? `<p class="text-neutral-400 text-sm">Tên gọi khác: ${aliases.map(x => x.note ? `${x.name} (${x.note})` : x.name).join(', ')}</p>` : ''}
-            <p class="text-neutral-500 mt-1">${d.region?.name ?? ''} ${d.cooking_method ? '· Cách làm: ' + d.cooking_method : ''} ${d.serving_desc ? '· ' + d.serving_desc : ''}</p>
-            ${(d.tags ?? []).length ? `<div class="flex flex-wrap gap-1.5 mt-2">${d.tags.map(t => `<span class="text-xs border rounded-full px-2.5 py-0.5 ${t.slug.startsWith('allergen:') ? 'border-red-300 text-red-700 bg-red-50' : 'border-neutral-300 text-neutral-600 bg-neutral-50'}">${t.name}</span>`).join('')}</div>` : ''}
-            <p class="mt-1 text-sm">${(d.meal_slots ?? []).map(s => `<span class="inline-block bg-orange-100 text-orange-800 rounded-full px-2 py-0.5 mr-1">${slotName[s.slot] ?? s.slot}</span>`).join('')}</p>
-            ${d.parent ? `<p class="text-sm mt-2">Biến thể của: <a class="text-orange-700 underline" href="/mon/${d.parent.slug}">${d.parent.names?.[0]?.name ?? ''}</a></p>` : ''}
-            ${variants.length ? `<p class="text-sm mt-2">Biến thể: ${variants.map(v => `<a class="text-orange-700 underline" href="/mon/${v.slug}">${v.name}</a>`).join(', ')}</p>` : ''}
-            <div class="mt-4 rounded-xl bg-orange-50 border border-orange-200 p-4">
-                ${n ? `<div class="text-xl font-bold">🔥 ${Math.round(n.kcal_min)}–${Math.round(n.kcal_max)} kcal/khẩu phần</div>
-                <div class="text-sm text-neutral-600 mt-1">Đạm ${n.protein_g ?? '?'}g · Béo ${n.fat_g ?? '?'}g · Bột đường ${n.carb_g ?? '?'}g · Chất xơ ${n.fiber_g ?? '?'}g</div>
-                <div class="text-sm text-neutral-500">Độ ${confLabel[n.confidence] ?? n.confidence}</div>
-                ${(provenance?.unverified_ingredients ?? []).length ? `<div class="mt-2 rounded-lg bg-amber-100 border border-amber-300 text-amber-800 px-3 py-2">⚠️ <b>Số liệu tham khảo — chưa kiểm định:</b> món có nguyên liệu dùng nguồn thứ cấp (${provenance.unverified_ingredients.join(', ')}). Thông tin đã có nhưng chưa được kiểm chứng bằng nguồn chính thống.</div>` : ''}`
-                : '<div class="text-neutral-400">Chưa đủ dữ liệu dinh dưỡng cho món này.</div>'}
-            </div>
-            ${provenance ? `<details class="mt-3 text-sm">
-                <summary class="cursor-pointer text-orange-700 font-medium">Con số này từ đâu ra?</summary>
-                <div class="mt-2 text-neutral-600 space-y-1">
-                    <p>· Bảng thành phần: <b>${provenance.fct_source}</b> · Engine phiên bản ${provenance.engine_version} · Tính ngày ${new Date(provenance.computed_at).toLocaleDateString('vi-VN')}</p>
-                    <p>· Nguyên liệu đã tham gia tính: ${provenance.contributing_ingredients.join(', ') || '—'}</p>
-                    ${(provenance.missing_ingredients ?? []).length ? `<p>· Nguyên liệu chưa tra được (không tính vào số trên): ${provenance.missing_ingredients.join(', ')}</p>` : ''}
-                    ${(provenance.unverified_ingredients ?? []).length ? `<p>· Nguyên liệu dùng nguồn thứ cấp (chưa kiểm định): ${provenance.unverified_ingredients.join(', ')}</p>` : ''}
-                </div></details>` : ''}
+        <h1 class="ld-title" style="margin-top:6px">${esc(name)}</h1>
+        ${aliases.length ? `<p style="color:var(--color-faint);margin:0">Tên gọi khác: ${aliases.map(esc).join(' · ')}</p>` : ''}
+        <p class="ld-subtitle" style="margin-top:4px">${esc(d.region?.name ?? '')}${d.cooking_method ? ' · Cách làm: ' + esc(d.cooking_method) : ''}${d.serving_desc ? ' · ' + esc(d.serving_desc) : ''}</p>
+        <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:12px">
+            ${(d.meal_slots ?? []).map(s => `<span class="ld-badge vu">${slotName[s.slot] ?? esc(s.slot)}</span>`).join('')}
+            ${otherTags.map(t => `<span class="ld-badge">${esc(t.name)}</span>`).join('')}
+            ${allergenTags.map(t => `<span class="ld-badge" style="background:var(--color-danger-tint);color:var(--color-danger)">Dị ứng: ${esc(t.name)}</span>`).join('')}
         </div>
-        <div class="bg-white rounded-2xl shadow p-5 mt-4">
-            <h2 class="font-semibold mb-2">Nguyên liệu (một khẩu phần)</h2>
-            <ul class="text-sm space-y-1">
-                ${(d.dish_ingredients ?? []).map(di => `<li>• <b>${di.ingredient?.name_vi ?? ''}</b> — ${di.quantity ?? ''} ${di.unit_name ?? ''}${di.is_optional ? ' <span class="text-neutral-400">(tuỳ chọn)</span>' : ''}</li>`).join('') || '<li class="text-neutral-400">Chưa có định lượng.</li>'}
-            </ul>
-            ${d.recipe_steps?.length ? `<h2 class="font-semibold mt-4 mb-2">Cách làm</h2>
-            <ol class="text-sm space-y-1 list-decimal list-inside">${d.recipe_steps.map(s => `<li>${s}</li>`).join('')}</ol>` : ''}
-            ${d.needs_review ? '<p class="text-xs text-amber-600 mt-4">⚠️ Món đang trong giai đoạn biên soạn dữ liệu — thông tin có thể được cập nhật sau khi duyệt.</p>' : ''}
-        </div>`;
+        ${d.parent ? `<div class="ld-group" style="margin-top:16px"><a class="ld-row" href="/mon/${d.parent.slug}"><span class="grow">Biến thể của <b>${esc(d.parent.names?.[0]?.name ?? '')}</b></span>${chev}</a></div>` : ''}
+        ${variants.length ? `<div class="ld-group" style="margin-top:12px">${variants.map(v => `<a class="ld-row" href="/mon/${v.slug}"><span class="grow">Biến thể: <b>${esc(v.name)}</b></span>${chev}</a>`).join('')}</div>` : ''}
+
+        <div class="ld-card" style="margin-top:18px">
+            <p style="margin:0;color:var(--color-sub);font-size:14.5px;font-weight:600">Năng lượng mỗi khẩu phần</p>
+            ${n ? `<div style="display:flex;align-items:baseline;gap:9px;margin-top:4px;flex-wrap:wrap">
+                    <span class="ld-kcal-so ld-tnum">${Math.round(n.kcal_min)}–${Math.round(n.kcal_max)}</span>
+                    <span style="color:var(--color-sub);font-size:14.5px">kcal</span>
+                    <span class="ld-capsule ${confClass[n.confidence] ?? ''}">${confLabel[n.confidence] ?? esc(n.confidence)}</span></div>
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5" style="margin-top:14px">
+                    <div class="ld-macro"><div class="gt ld-tnum">${n.protein_g ?? '?'} g</div><div class="nhan">Đạm</div></div>
+                    <div class="ld-macro"><div class="gt ld-tnum">${n.fat_g ?? '?'} g</div><div class="nhan">Béo</div></div>
+                    <div class="ld-macro"><div class="gt ld-tnum">${n.carb_g ?? '?'} g</div><div class="nhan">Bột đường</div></div>
+                    <div class="ld-macro"><div class="gt ld-tnum">${n.fiber_g ?? '?'} g</div><div class="nhan">Chất xơ</div></div>
+                </div>
+                ${unv.length ? `<div class="ld-warn" style="margin-top:14px"><span><b>Số liệu tham khảo — chưa kiểm định:</b> món có nguyên liệu dùng nguồn thứ cấp (${esc(unv.join(', '))}). Thông tin đã có nhưng chưa được kiểm chứng bằng nguồn chính thống.</span></div>` : ''}`
+            : '<p style="color:var(--color-faint);margin:10px 0 0">Chưa đủ dữ liệu dinh dưỡng cho món này — hệ thống không hiện số thay vì đoán.</p>'}
+        </div>
+
+        ${provenance ? `
+        <h2 class="ld-section-title">Nguồn gốc con số</h2>
+        <div class="ld-group">
+            <div class="ld-row"><span class="grow" style="color:var(--color-sub)">Bảng thành phần đã dùng</span><span class="value" style="color:var(--color-ink)">${esc(provenance.fct_source)}</span></div>
+            <div class="ld-row"><span class="grow" style="color:var(--color-sub)">Engine tính</span><span class="value" style="color:var(--color-ink)">Phiên bản ${esc(provenance.engine_version)}</span></div>
+            <div class="ld-row"><span class="grow" style="color:var(--color-sub)">Ngày tính</span><span class="value" style="color:var(--color-ink)">${new Date(provenance.computed_at).toLocaleDateString('vi-VN')}</span></div>
+            <div class="ld-row"><span class="grow" style="color:var(--color-sub)">Nguyên liệu tham gia tính</span><span class="value" style="color:var(--color-ink);white-space:normal;text-align:right">${esc((provenance.contributing_ingredients ?? []).join(', ') || '—')}</span></div>
+            ${(provenance.missing_ingredients ?? []).length ? `<div class="ld-row"><span class="grow" style="color:var(--color-sub)">Chưa tra được (không tính vào số trên)</span><span class="value" style="color:var(--color-ink);white-space:normal;text-align:right">${esc(provenance.missing_ingredients.join(', '))}</span></div>` : ''}
+            ${unv.length ? `<div class="ld-row"><span class="grow" style="color:var(--color-sub)">Nguyên liệu nguồn thứ cấp</span><span class="value" style="color:var(--color-ink);white-space:normal;text-align:right">${esc(unv.join(', '))}</span></div>` : ''}
+        </div>
+        <p class="ld-note" style="margin-top:10px">Khối này luôn mở sẵn — minh bạch nguồn là điểm khác biệt của Lắc Đói, bạn kiểm chứng được mọi con số ngay tại trang này.</p>` : ''}
+
+        <h2 class="ld-section-title">Nguyên liệu · một khẩu phần</h2>
+        <div class="ld-group">
+            ${(d.dish_ingredients ?? []).map(di => `<div class="ld-row"><span class="grow">${esc(di.ingredient?.name_vi ?? '')}${di.is_optional ? ' <span style="color:var(--color-faint);font-size:13.5px">(tuỳ chọn)</span>' : ''}</span><span class="value ld-tnum" style="color:var(--color-ink);font-weight:600">${esc(di.quantity ?? '')} ${esc(di.unit_name ?? '')}</span></div>`).join('')
+              || '<div class="ld-row"><span style="color:var(--color-faint)">Chưa có định lượng.</span></div>'}
+        </div>
+
+        ${d.recipe_steps?.length ? `
+        <h2 class="ld-section-title">Cách làm</h2>
+        <div class="ld-group">
+            ${d.recipe_steps.map((s, i) => `<div class="ld-row" style="align-items:flex-start">
+                <span style="flex:none;width:26px;height:26px;border-radius:50%;background:var(--color-accent);color:#fff;font-weight:700;font-size:14px;display:inline-flex;align-items:center;justify-content:center;margin-top:1px">${i + 1}</span>
+                <span class="grow">${esc(s)}</span></div>`).join('')}
+        </div>` : ''}
+        ${d.needs_review ? '<div class="ld-warn" style="margin-top:18px"><span>Món đang trong giai đoạn biên soạn dữ liệu — thông tin có thể được cập nhật sau khi duyệt.</span></div>' : ''}`;
     })
     .catch(() => { document.getElementById('content').textContent = 'Không tải được món này.'; });
 </script>
-</body>
-</html>
+@endpush

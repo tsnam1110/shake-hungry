@@ -1,27 +1,27 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Chi tiết quả — Lắc Đói</title>
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-</head>
-<body class="bg-orange-50 min-h-screen text-neutral-800">
-<main class="mx-auto max-w-2xl px-4 pt-8 pb-16">
-    <a href="/hoa-qua" class="text-sm text-orange-700 underline">← Danh sách hoa quả</a>
-    <div id="content" class="mt-4 text-neutral-400">Đang tải…</div>
-</main>
+@extends('layouts.app')
+
+@section('title', 'Chi tiết quả — Lắc Đói')
+
+@section('content')
+    <a href="/hoa-qua" style="display:inline-flex;align-items:center;gap:3px;color:var(--color-link);font-size:16.5px;font-weight:500;text-decoration:none;padding-top:10px">
+        <svg width="11" height="18" viewBox="0 0 8 14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" style="transform:rotate(180deg)"><path d="M1 1l6 6-6 6"/></svg>
+        Hoa quả theo mùa
+    </a>
+    <div id="content" style="color:var(--color-faint);margin-top:14px">Đang tải…</div>
+@endsection
+
+@push('scripts')
 <script>
 const slug = location.pathname.split('/').pop();
 const regionName = { bac: 'Miền Bắc', trung: 'Miền Trung', nam: 'Miền Nam' };
 const groupName = { 'co-mui': 'Có múi', mong: 'Quả mọng', hach: 'Quả hạch', 'nhiet-doi': 'Nhiệt đới', dua: 'Họ dưa', khac: 'Khác' };
 const originName = { 'trong-nuoc': 'Trồng trong nước', 'nhap-khau': 'Nhập khẩu', 'ca-hai': 'Cả trồng trong nước và nhập khẩu' };
-function esc(s) { return (s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+function esc(s) { return (s ?? '').toString().replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
 function fmt(v) { return v == null ? '—' : Math.round(v).toLocaleString('vi-VN'); }
-function seasonRow(label, months, cls) {
-    return `<div class="flex items-center gap-1 mt-1">
-        <span class="w-32 text-xs text-neutral-500 shrink-0">${label}</span>
-        ${Array.from({length: 12}, (_, i) => `<span class="flex-1 text-center text-[10px] rounded py-0.5 ${(months ?? []).includes(i + 1) ? cls : 'bg-neutral-100 text-neutral-300'}">${i + 1}</span>`).join('')}
+function seasonRow(label, months, bg, fg) {
+    return `<div style="display:flex;align-items:center;gap:3px;margin-top:5px">
+        <span style="width:104px;font-size:12.5px;color:var(--color-sub);flex:none">${label}</span>
+        ${Array.from({length: 12}, (_, i) => `<span style="flex:1;text-align:center;font-size:10.5px;border-radius:5px;padding:2.5px 0;${(months ?? []).includes(i + 1) ? `background:${bg};color:${fg};font-weight:700` : 'background:var(--color-fill);color:var(--color-faint)'}">${i + 1}</span>`).join('')}
     </div>`;
 }
 
@@ -34,52 +34,70 @@ fetch('/api/fruits/' + encodeURIComponent(slug), { headers: { 'Accept': 'applica
         (prices ?? []).forEach(p => { (byRegion[p.region_code] ??= {})[p.month] = p; });
         const monthsWithPrices = [...new Set((prices ?? []).map(p => p.month))].sort((a, b) => a - b);
         const sources = [...new Map((prices ?? []).map(p => [p.source_name + p.collected_at, p])).values()];
+        const allergenTags = (ing.tags ?? []).filter(t => t.slug.startsWith('allergen:'));
         document.getElementById('content').innerHTML = `
-        <div class="bg-white rounded-2xl shadow p-5">
-            <h1 class="text-3xl font-bold">${esc(f.name_vi)}</h1>
-            ${ing.aliases?.length ? `<p class="text-neutral-400 text-sm">Tên gọi khác: ${ing.aliases.map(a => a.note ? `${esc(a.name)} (${esc(a.note)})` : esc(a.name)).join(', ')}</p>` : ''}
-            <p class="text-neutral-500 mt-1">${groupName[f.classification_group] ?? ''}${f.family ? ' · ' + esc(f.family) : ''} · ${originName[f.origin] ?? ''}</p>
-            ${(ing.tags ?? []).filter(t => t.slug.startsWith('allergen:')).length ? `<div class="flex flex-wrap gap-1.5 mt-2">${ing.tags.filter(t => t.slug.startsWith('allergen:')).map(t => `<span class="text-xs border border-red-300 text-red-700 bg-red-50 rounded-full px-2.5 py-0.5">Dị ứng: ${esc(t.name)}</span>`).join('')}</div>` : ''}
+        <h1 class="ld-title" style="margin-top:6px">${esc(f.name_vi)}</h1>
+        ${ing.aliases?.length ? `<p style="color:var(--color-faint);margin:0">Tên gọi khác: ${ing.aliases.map(a => a.note ? `${esc(a.name)} (${esc(a.note)})` : esc(a.name)).join(', ')}</p>` : ''}
+        <p class="ld-subtitle" style="margin-top:4px">${groupName[f.classification_group] ?? ''}${f.family ? ' · ' + esc(f.family) : ''} · ${originName[f.origin] ?? ''}</p>
+        ${allergenTags.length ? `<div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:10px">${allergenTags.map(t => `<span class="ld-badge" style="background:var(--color-danger-tint);color:var(--color-danger)">Dị ứng: ${esc(t.name)}</span>`).join('')}</div>` : ''}
 
-            <div class="mt-4 rounded-xl bg-orange-50 border border-orange-200 p-4">
-                ${n.kcal_per_100g != null ? `<div class="text-xl font-bold">🔥 ${fmt(n.kcal_per_100g)} kcal/100g</div>
-                <div class="text-sm text-neutral-600 mt-1">Đạm ${fmt(n.protein_g)}g · Béo ${fmt(n.fat_g)}g · Bột đường ${fmt(n.carb_g)}g · Chất xơ ${fmt(n.fiber_g)}g · Natri ${fmt(n.sodium_mg)}mg</div>
-                <div class="text-xs text-neutral-400 mt-1">Nguồn số liệu: ${esc(n.fct_source ?? '—')}${n.scientific_name ? ' · ' + esc(n.scientific_name) : ''}</div>
-                ${n.unverified ? '<div class="text-xs text-amber-700 bg-amber-50 border border-amber-200 rounded-lg px-2 py-1 mt-2">⚠️ Số dinh dưỡng từ nguồn thứ cấp — chưa kiểm định chéo, chỉ nên tham khảo tương đối.</div>' : ''}`
-                : '<div class="text-neutral-500">Chưa có số dinh dưỡng đạt chuẩn cho quả này — hệ thống không đoán số.</div>'}
+        <div class="ld-card" style="margin-top:18px">
+            <p style="margin:0;color:var(--color-sub);font-size:14.5px;font-weight:600">Dinh dưỡng mỗi 100g phần ăn được</p>
+            ${n.kcal_per_100g != null ? `
+            <div style="display:flex;align-items:baseline;gap:9px;margin-top:4px">
+                <span class="ld-kcal-so ld-tnum">${fmt(n.kcal_per_100g)}</span>
+                <span style="color:var(--color-sub);font-size:14.5px">kcal/100g</span>
             </div>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5" style="margin-top:14px">
+                <div class="ld-macro"><div class="gt ld-tnum">${fmt(n.protein_g)} g</div><div class="nhan">Đạm</div></div>
+                <div class="ld-macro"><div class="gt ld-tnum">${fmt(n.fat_g)} g</div><div class="nhan">Béo</div></div>
+                <div class="ld-macro"><div class="gt ld-tnum">${fmt(n.carb_g)} g</div><div class="nhan">Bột đường</div></div>
+                <div class="ld-macro"><div class="gt ld-tnum">${fmt(n.fiber_g)} g</div><div class="nhan">Chất xơ</div></div>
+            </div>
+            <p class="ld-note" style="margin-top:12px">Natri ${fmt(n.sodium_mg)}mg · Nguồn số liệu: ${esc(n.fct_source ?? '—')}${n.scientific_name ? ' · ' + esc(n.scientific_name) : ''}</p>
+            ${n.unverified ? '<div class="ld-warn" style="margin-top:12px"><span>Số dinh dưỡng từ nguồn thứ cấp — chưa kiểm định chéo, chỉ nên tham khảo tương đối.</span></div>' : ''}`
+            : '<p style="color:var(--color-faint);margin:10px 0 0">Chưa có số dinh dưỡng đạt chuẩn cho quả này — hệ thống không đoán số.</p>'}
+        </div>
 
-            <h2 class="font-semibold mt-6 mb-1">📅 Mùa vụ trong năm</h2>
-            ${seasonRow('Có hàng', f.availability_months, 'bg-green-200 text-green-900')}
-            ${seasonRow('Vụ chính', f.main_season_months, 'bg-green-500 text-white')}
-            ${seasonRow('Bổ nhất', f.best_nutrition.months, 'bg-sky-400 text-white')}
-            ${seasonRow('Giá hời nhất', f.best_value.months, 'bg-amber-400 text-white')}
-            ${f.best_nutrition.note ? `<p class="text-sm text-neutral-600 mt-2"><b>Bổ nhất:</b> ${esc(f.best_nutrition.note)}</p>` : ''}
-            ${f.best_value.note ? `<p class="text-sm text-neutral-600 mt-1"><b>Giá hời:</b> ${esc(f.best_value.note)}</p>` : ''}
+        <h2 class="ld-section-title">Mùa vụ trong năm</h2>
+        <div class="ld-card" style="padding:16px 18px">
+            ${seasonRow('Có hàng', f.availability_months, '#bfe8cb', 'var(--color-mint-dark)')}
+            ${seasonRow('Vụ chính', f.main_season_months, 'var(--color-mint)', '#fff')}
+            ${seasonRow('Bổ nhất', f.best_nutrition.months, '#4a90d9', '#fff')}
+            ${seasonRow('Giá hời nhất', f.best_value.months, 'var(--color-sun)', '#fff')}
+            ${f.best_nutrition.note ? `<p style="font-size:14.5px;margin:14px 0 0"><b>Bổ nhất:</b> ${esc(f.best_nutrition.note)}</p>` : ''}
+            ${f.best_value.note ? `<p style="font-size:14.5px;margin:6px 0 0"><b>Giá hời:</b> ${esc(f.best_value.note)}</p>` : ''}
+        </div>
 
-            ${(f.grown_in ?? []).length ? `<h2 class="font-semibold mt-6">📍 Vùng trồng tiêu biểu</h2>
-            <ul class="text-sm text-neutral-700 mt-1">${f.grown_in.map(g => `<li>• <b>${esc(g.region)}</b>${g.note ? ' — ' + esc(g.note) : ''}</li>`).join('')}</ul>` : ''}
+        ${(f.grown_in ?? []).length ? `
+        <h2 class="ld-section-title">Vùng trồng tiêu biểu</h2>
+        <div class="ld-group">
+            ${f.grown_in.map(g => `<div class="ld-row"><span class="grow"><b>${esc(g.region)}</b>${g.note ? `<span class="sub">${esc(g.note)}</span>` : ''}</span></div>`).join('')}
+        </div>` : ''}
 
-            ${(f.pairing_cautions ?? []).length ? `<h2 class="font-semibold mt-6">⚠️ Lưu ý khi kết hợp</h2>
-            <ul class="text-sm mt-1 space-y-1">${f.pairing_cautions.map(c => `<li>• <b>${esc(c.with)}</b> — ${esc(c.note)} <span class="text-xs rounded-full px-2 py-0.5 ${c.level === 'co-so' ? 'bg-red-50 text-red-700 border border-red-200' : 'bg-neutral-100 text-neutral-500'}">${c.level === 'co-so' ? 'Có cơ sở' : 'Dân gian — chưa kiểm chứng'}</span></li>`).join('')}</ul>` : ''}
+        ${(f.pairing_cautions ?? []).length ? `
+        <h2 class="ld-section-title">Lưu ý khi kết hợp</h2>
+        <div class="ld-group">
+            ${f.pairing_cautions.map(c => `<div class="ld-row" style="align-items:flex-start"><span class="grow"><b>${esc(c.with)}</b><span class="sub" style="color:var(--color-sub)">${esc(c.note)}</span></span><span class="ld-badge ${c.level === 'co-so' ? '' : 'unv'}" style="${c.level === 'co-so' ? 'background:var(--color-danger-tint);color:var(--color-danger)' : ''}">${c.level === 'co-so' ? 'Có cơ sở' : 'Dân gian — chưa kiểm chứng'}</span></div>`).join('')}
+        </div>` : ''}
 
-            ${f.selection_note ? `<h2 class="font-semibold mt-6">🛒 Cách chọn</h2><p class="text-sm text-neutral-700 mt-1">${esc(f.selection_note)}</p>` : ''}
-            ${f.storage_note ? `<h2 class="font-semibold mt-4">🧊 Bảo quản</h2><p class="text-sm text-neutral-700 mt-1">${esc(f.storage_note)}</p>` : ''}
+        ${f.selection_note ? `<h2 class="ld-section-title">Cách chọn quả ngon</h2><p style="font-size:15.5px;margin:0">${esc(f.selection_note)}</p>` : ''}
+        ${f.storage_note ? `<h2 class="ld-section-title">Bảo quản</h2><p style="font-size:15.5px;margin:0">${esc(f.storage_note)}</p>` : ''}
 
-            <h2 class="font-semibold mt-6">💰 Giá tham khảo theo mùa vụ (VNĐ/kg)</h2>
-            ${(prices ?? []).length ? `
-            <div class="overflow-x-auto mt-2"><table class="text-sm border-collapse">
-                <tr><th class="border px-2 py-1 bg-neutral-50 text-left">Miền</th>${monthsWithPrices.map(m => `<th class="border px-2 py-1 bg-neutral-50">Th ${m}</th>`).join('')}</tr>
-                ${Object.keys(byRegion).map(r => `<tr><td class="border px-2 py-1 font-medium">${regionName[r]}</td>${monthsWithPrices.map(m => {
+        <h2 class="ld-section-title">Giá tham khảo theo mùa vụ <span style="font-size:14.5px;color:var(--color-faint);font-weight:500">(VNĐ/kg)</span></h2>
+        ${(prices ?? []).length ? `
+        <div class="ld-card" style="padding:8px 0;overflow-x:auto">
+            <table style="width:100%;border-collapse:collapse;font-size:14px;min-width:520px">
+                <tr><th style="text-align:left;padding:9px 16px;color:var(--color-sub);font-weight:600">Miền</th>${monthsWithPrices.map(m => `<th style="padding:9px 8px;color:var(--color-sub);font-weight:600">Th ${m}</th>`).join('')}</tr>
+                ${Object.keys(byRegion).map(r => `<tr style="border-top:1px solid var(--color-line)"><td style="padding:9px 16px;font-weight:600">${regionName[r]}</td>${monthsWithPrices.map(m => {
                     const p = byRegion[r][m];
-                    return `<td class="border px-2 py-1 text-center">${p ? fmt(p.price_min) + '–' + fmt(p.price_max) : '—'}</td>`;
+                    return `<td style="padding:9px 8px;text-align:center" class="ld-tnum">${p ? fmt(p.price_min) + '–' + fmt(p.price_max) : '—'}</td>`;
                 }).join('')}</tr>`).join('')}
-            </table></div>
-            <p class="text-xs text-neutral-400 mt-2">Giá tham khảo mùa vụ thu thập ngày ${esc(sources[0]?.collected_at ?? '')} — nguồn: ${sources.map(s => s.source_url ? `<a class="underline" href="${esc(s.source_url)}" target="_blank" rel="noopener">${esc(s.source_name.split(' — ')[0].split(':')[0])}</a>` : esc(s.source_name.split(' — ')[0].split(':')[0])).join('; ')}. Giá thực tế thay đổi theo chợ và ngày mua.</p>`
-            : '<p class="text-sm text-neutral-500 mt-1">Chưa có dữ liệu giá đủ tin cậy cho quả này.</p>'}
-        </div>`;
+            </table>
+        </div>
+        <p class="ld-note" style="margin-top:10px">Giá tham khảo mùa vụ thu thập ngày ${esc(sources[0]?.collected_at ?? '')} — nguồn: ${sources.map(s => s.source_url ? `<a href="${esc(s.source_url)}" target="_blank" rel="noopener" style="color:var(--color-link)">${esc(s.source_name.split(' — ')[0].split(':')[0])}</a>` : esc(s.source_name.split(' — ')[0].split(':')[0])).join('; ')}. Giá thực tế thay đổi theo chợ và ngày mua.</p>`
+        : '<p style="color:var(--color-faint)">Chưa có dữ liệu giá đủ tin cậy cho quả này.</p>'}`;
     })
     .catch(() => { document.getElementById('content').textContent = 'Không tải được hồ sơ quả.'; });
 </script>
-</body>
-</html>
+@endpush
