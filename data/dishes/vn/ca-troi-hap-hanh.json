@@ -106,7 +106,14 @@
       "note": "Cookpad — Cá hấp gừng hành của MinhLiên Lê: cá nguyên con, gừng tươi 25 g, đầu hành lá; hấp 15–20 phút, đối chiếu kỹ thuật hấp cá với gừng hành."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/ca-troi-hap-hanh.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): đã đối chiếu 3 nguồn công thức thật (Điện Máy Xanh, Sài Thành Foods, Cookpad). Định lượng: nguồn dùng cá nguyên con khoảng 2 kg cho 4 người (ăn kiểu mâm, tính cả đầu xương), file tính 200 g phần cá chặt khúc/khẩu phần trong phần ăn 260 g — khác cơ sở quy đổi nên giữ nguyên, chỉ ghi nhận; gừng 8 g thấp hơn nguồn (gừng phủ mặt cá nguyên con 20–25 g/khẩu phần) nhưng là gia vị thơm, không thuộc nguyên liệu chính nên không sửa. Ghi nhận: nguồn thường thêm hành tây, cà rốt và nước dừa tươi — file là bản rút gọn, không bổ sung dòng. Bước nấu viết lại 6 bước.",

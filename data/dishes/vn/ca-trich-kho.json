@@ -129,7 +129,14 @@
       "note": "Cá Kho Làng Vũ Đại: cá trích kho rục ba lửa — đối chiếu kỹ thuật kho nhiều lửa và nêm sau."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/ca-trich-kho.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — thêm hành lá 3 (3/3) và tỏi 3 (2/3), đường 5→4, hành tím 5→10; sửa bước kho: bản cũ ghi 15 phút là mâu thuẫn với chính mô tả mềm xương — nay kho liu riu 1,5–2 giờ theo BlueStone. Bất thường: 2/3 nguồn là biến thể kho thịt ba chỉ — giữ bản kho thường, ba chỉ ghi nhận là biến thể chờ phân xử.]",

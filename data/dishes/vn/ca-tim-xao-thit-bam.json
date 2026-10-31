@@ -129,7 +129,14 @@
       "note": "Gia đình & SKĐS: cà tím xào thịt băm — nước tương trong gia vị (2/3 nguồn)."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/ca-tim-xao-thit-bam.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — thịt băm 40→60, thêm tỏi 4, dầu hào 6, đường 2 (đều 3/3) và nước tương 5 (2/3).]",

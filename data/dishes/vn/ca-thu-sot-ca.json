@@ -130,7 +130,14 @@
       "note": "CookBeo: cá thu sốt cà chua cho 2 người (cá thu 300g, cà chua khoảng 300g) — đối chiếu đầu khoảng định lượng trên của cá và cà chua."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/ca-thu-sot-ca.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): đã đối chiếu 3 nguồn công thức đã mở kiểm chứng (Cookpad Nguyen Ha Anh, Cookpad Hoàng Ngọc, CookBeo). Cá mỗi khẩu phần: 100g so với 150g — hai nguồn bất đồng >30% nên giữ nguyên ca-thu 150g; cà chua 100g nằm trong khoảng các nguồn (khoảng 90–150g). recipe_steps viết lại hoàn toàn thành 6 bước. cooking_method giữ 'kho': nguồn CookBeo cũng gọi món này là kho cá thu trong phần nội dung, hai cách gọi sốt cà/rim sốt được xem là tương đương.",

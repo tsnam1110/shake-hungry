@@ -2,7 +2,7 @@
   "slug": "ca-troi-kho-tieu",
   "parent_dish_slug": null,
   "country_code": "VN",
-  "region_code": "vn-south",
+  "region_code": "vn-north",
   "names": [
     {
       "locale": "vi",
@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "kho",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -41,6 +41,14 @@
       "confidence": "low"
     },
     {
+      "ingredient_slug": "rieng",
+      "quantity": 15,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
       "ingredient_slug": "nuoc-mam-truyen-thong",
       "quantity": 10,
       "unit_name": "g",
@@ -49,7 +57,7 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "duong-thot-not",
+      "ingredient_slug": "duong-trang",
       "quantity": 8,
       "unit_name": "g",
       "is_optional": false,
@@ -71,42 +79,44 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
-    },
-    {
-      "ingredient_slug": "toi",
-      "quantity": 5,
-      "unit_name": "g",
-      "is_optional": false,
-      "source": "llm_suggested",
-      "confidence": "low"
-    },
-    {
-      "ingredient_slug": "dau-an",
-      "quantity": 5,
-      "unit_name": "g",
-      "is_optional": false,
-      "source": "llm_suggested",
-      "confidence": "low"
-    },
-    {
-      "ingredient_slug": "hanh-la",
-      "quantity": 3,
-      "unit_name": "g",
-      "is_optional": false,
-      "source": "llm_suggested",
-      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Cá trôi làm sạch, cắt khúc, ướp nước mắm, đường thốt nốt và tiêu xay.",
-    "Thắng đường làm nước màu, cho cá vào cùng hành, tỏi, thêm nước xâm xấp.",
-    "Kho lửa nhỏ đến khi cá săn, nước sệt bóng; rắc thêm tiêu và hành lá."
+    "Cá trôi đánh vảy, bỏ mang và ruột, xát muối rửa sạch cho hết nhớt rồi cắt khúc 3–4cm, để ráo khoảng 10 phút — thịt cá ráo mặt, không còn mùi tanh là đạt.",
+    "Riềng cạo vỏ, một nửa thái lát mỏng để lót đáy nồi, một nửa giã nhỏ để ướp; hành tím bóc vỏ, thái lát.",
+    "Ướp cá với nước mắm, đường trắng, tiêu xay, hành tím và riềng giã trong 30 phút, thỉnh thoảng trở mặt cho thấm đều — cá săn nhẹ, thơm mùi riềng là đạt.",
+    "Thắng đường trắng với chút nước trên lửa vừa khoảng 2–3 phút đến khi chuyển màu cánh gián làm nước màu; xếp riềng lát xuống đáy nồi, đặt cá lên trên và thêm nước sôi xâm xấp mặt cá.",
+    "Kho lửa lớn cho sôi bùng khoảng 5 phút rồi hạ lửa liu riu 30–40 phút, không đảo đũa để cá không nát — nước kho sệt dần, cá thấm màu nâu bóng là đạt.",
+    "Khi nước kho còn sền sệt, nêm lại cho vừa miệng, rắc thêm tiêu xay rồi tắt bếp, để cá nghỉ 5 phút trước khi dọn — miếng cá chắc, không vỡ, thơm nồng riềng và tiêu là đạt."
   ],
-  "recipe_sources": [],
-  "media": [],
+  "recipe_sources": [
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/25411434",
+      "accessed": "2026-10-31",
+      "note": "Đã mở và đối chiếu (tác giả Hoangtuanthu981): cá kho riềng kiểu miền Bắc — ướp cá với nước mắm, đường, nước màu, hành khô, tiêu ít nhất 30 phút, lót riềng dưới đáy nồi, kho 45–60 phút; ủng hộ vùng miền Bắc, riềng là gia vị cốt lõi và cách kho không dùng tỏi, dầu ăn, hành lá."
+    },
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/goi-y-cac-cach-kho-ca-tram-mien-bac-ngon-don-gian-chuan-vi-24212",
+      "accessed": "2026-10-31",
+      "note": "Đã mở và đối chiếu hai mục cá trắm kho riềng miền Bắc và cá trắm kho tiêu: cả hai đều nhấn ướp cá với riềng giã nát, tiêu, nước mắm và đường rồi kho liu riu — ủng hộ region vn-north, đường thường và tiêu là vị chính; cá trắm và cá trôi cùng họ cá chép, dùng chung kỹ thuật kho riềng miền Bắc."
+    },
+    {
+      "url": "https://www.cet.edu.vn/cach-kho-ca-tre-gung-nghe-rieng",
+      "accessed": "2026-10-31",
+      "note": "Đã mở và đối chiếu mục cá trê kho riềng (CET, tác giả Chef Lập): nguyên liệu phần kho riềng chỉ gồm riềng, nước mắm, tiêu, đường, nước màu — không có tỏi và hành lá; ủng hộ việc bổ sung riềng và bỏ các dòng không thuộc biến thể kho riềng."
+    }
+  ],
+  "media": [
+    {
+      "path": "media/dishes/ca-troi-kho-tieu.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-005 đợt 5: thử nâng Mức 2 — GIỮ Mức 1: lần mở nguồn đầu tiên bị chặn 429 — dừng ngay theo kỷ luật, chưa mở được nguồn nào. Thử lại khi hết chặn.]",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-005 đợt 5: thử nâng Mức 2 — GIỮ Mức 1: lần mở nguồn đầu tiên bị chặn 429 — dừng ngay theo kỷ luật, chưa mở được nguồn nào. Thử lại khi hết chặn.] [LV2-006 đợt 6: nâng Mức 2 — thử lại sau 429 đợt 5. Phân xử: vùng vn-south → vn-north (3/3 nguồn là kiểu kho Bắc — tiền lệ vùng = gốc xuất xứ); đường thốt nốt 8g → đường trắng 8g (0/3 nguồn dùng thốt nốt cho món này — phân xử cấp món theo tiền lệ LV2-004, không chạm quy ước cấp kho đang chờ chủ dự án); BỔ SUNG riềng 15g (3/3 nguồn, đồng thuận 9–18g cho 150g cá; slug rieng chưa có số dinh dưỡng — dòng gia vị này thuộc nhóm missing của engine, tỉ trọng nhỏ nên món vẫn tính được); BỎ tỏi, dầu ăn, hành lá (0/3 nguồn).]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
