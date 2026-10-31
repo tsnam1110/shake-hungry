@@ -36,6 +36,31 @@ class AuthController extends Controller
         return response()->json(['user' => $this->userPayload($request)]);
     }
 
+    /**
+     * Đăng nhập nhanh kiểm thử: vào thẳng tài khoản admin đầu tiên, KHÔNG mật khẩu.
+     * Chỉ hoạt động khi ADMIN_QUICK_LOGIN=true (mặc định tắt — xem config/admin.php).
+     * Mỗi lần dùng đều ghi log cảnh báo kèm IP.
+     */
+    public function quickLogin(Request $request): JsonResponse
+    {
+        abort_unless(config('admin.quick_login') === true, 403, 'Đăng nhập nhanh đang tắt.');
+        $admin = \App\Models\User::where('role', 'admin')->orderBy('id')->first();
+        abort_if($admin === null, 422, 'Chưa có tài khoản admin nào trong hệ thống.');
+        Auth::login($admin);
+        $request->session()->regenerate();
+        \Illuminate\Support\Facades\Log::warning('ADMIN QUICK-LOGIN đã được dùng', [
+            'admin' => $admin->email, 'ip' => $request->ip(), 'user_agent' => $request->userAgent(),
+        ]);
+
+        return response()->json(['user' => $this->userPayload($request)]);
+    }
+
+    /** Cho trang đăng nhập biết có hiện nút đăng nhập nhanh hay không. */
+    public function loginOptions(): JsonResponse
+    {
+        return response()->json(['quick_login' => config('admin.quick_login') === true]);
+    }
+
     public function logout(Request $request): JsonResponse
     {
         Auth::guard('web')->logout();

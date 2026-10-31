@@ -62,3 +62,10 @@ Công cụ biên soạn dữ liệu chạy tại `/admin` (React 19 + antd 6, đ
 email/mật khẩu, hai vai trò admin/editor). Tài khoản quản trị được tạo riêng
 tại từng máy phát triển — mật khẩu không nằm trong repo. Xem
 [ADM-001](docs/05-tasks/tasks/ADM-001.md).
+
+
+> **Đăng nhập nhanh kiểm thử (chỉ dev cục bộ):** đặt `ADMIN_QUICK_LOGIN=true`
+> trong `.env` để trang đăng nhập quản trị hiện nút "Vào thẳng quản trị" —
+> vào thẳng tài khoản admin đầu tiên **không cần mật khẩu**, phục vụ kiểm thử.
+> Mặc định tắt, mỗi lần dùng đều ghi log cảnh báo. **Tuyệt đối không bật ở
+> môi trường thật.**

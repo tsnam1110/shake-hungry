@@ -1,9 +1,27 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button, Card, Form, Input, Typography, message } from 'antd';
 import api from '../api';
 
 export default function Login({ onSuccess }) {
     const [loading, setLoading] = useState(false);
+    const [quickLogin, setQuickLogin] = useState(false);
+    const [quickLoading, setQuickLoading] = useState(false);
+
+    useEffect(() => {
+        api.get('/login-options').then(({ data }) => setQuickLogin(data.quick_login === true)).catch(() => {});
+    }, []);
+
+    const enterQuick = async () => {
+        setQuickLoading(true);
+        try {
+            const { data } = await api.post('/quick-login');
+            onSuccess(data.user);
+        } catch {
+            message.error('Đăng nhập nhanh đang tắt hoặc chưa có tài khoản admin.');
+        } finally {
+            setQuickLoading(false);
+        }
+    };
 
     const submit = async (values) => {
         setLoading(true);
@@ -34,6 +52,16 @@ export default function Login({ onSuccess }) {
                     </Form.Item>
                     <Button type="primary" htmlType="submit" block loading={loading}>Đăng nhập</Button>
                 </Form>
+                {quickLogin && (
+                    <>
+                        <Typography.Paragraph type="warning" style={{ textAlign: 'center', margin: '16px 0 8px', fontSize: 12 }}>
+                            ⚠️ Chế độ kiểm thử đang bật: nút dưới đây vào thẳng quản trị cấp cao nhất mà không cần mật khẩu. Đừng bật ở môi trường thật.
+                        </Typography.Paragraph>
+                        <Button danger block loading={quickLoading} onClick={enterQuick}>
+                            ⚡ Vào thẳng quản trị (kiểm thử)
+                        </Button>
+                    </>
+                )}
             </Card>
         </div>
     );

@@ -151,3 +151,18 @@ it('xem trước dinh dưỡng trực tiếp không ghi vào DB (ADM-004)', func
     expect($resp->json('kcal_max'))->toBeGreaterThan(200);
     $this->assertDatabaseCount('dish_nutrition', 0);
 });
+
+it('đăng nhập nhanh kiểm thử: tắt theo mặc định, bật thì vào thẳng admin và ghi log', function () {
+    // Mặc định tắt → 403 ngay cả khi đã có admin
+    adminUser();
+    $this->postJson('/admin/api/quick-login')->assertForbidden();
+    $this->getJson('/admin/api/login-options')->assertOk()->assertJsonPath('quick_login', false);
+
+    // Bật cờ → vào thẳng tài khoản admin, không cần mật khẩu
+    config(['admin.quick_login' => true]);
+    $this->getJson('/admin/api/login-options')->assertJsonPath('quick_login', true);
+    $this->postJson('/admin/api/quick-login')
+        ->assertOk()
+        ->assertJsonPath('user.role', 'admin');
+    $this->getJson('/admin/api/me')->assertOk()->assertJsonPath('user.role', 'admin');
+});

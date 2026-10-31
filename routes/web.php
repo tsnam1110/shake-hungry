@@ -42,6 +42,8 @@ Route::prefix('api')->group(function () {
 
 // --- Khu vực quản trị (ADM-001): SPA React + antd tại /admin, API nội bộ dùng phiên web ---
 Route::post('/admin/api/login', [AuthController::class, 'login']);
+Route::get('/admin/api/login-options', [AuthController::class, 'loginOptions']);
+Route::post('/admin/api/quick-login', [AuthController::class, 'quickLogin']);
 
 Route::middleware(['auth', 'admin'])->prefix('admin/api')->group(function () {
     Route::get('/me', [AuthController::class, 'me']);
