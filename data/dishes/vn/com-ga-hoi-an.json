@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -122,15 +122,36 @@
     }
   ],
   "recipe_steps": [
-    "Luộc gà với nghệ, dùng nước luộc nấu cơm cho hạt cơm vàng óng.",
-    "Xé gà, trộn gỏi với hành tây, rau răm, chanh, nước mắm và ớt.",
-    "Xới cơm ra đĩa, xếp gà trộn lên trên, rắc hành phi, dọn kèm nước mắm và tương ớt Hội An."
+    "Gà làm sạch, chà muối rồi rửa lại nhiều lần cho hết mùi; nghệ tươi giã hoặc xay nhuyễn, vắt lấy nước cốt để tạo màu vàng cho gà và cơm.",
+    "Xoa nước nghệ với chút muối đều lên da gà, để khoảng 10 phút cho màu bám đều.",
+    "Luộc gà trong nồi nước có hành và phần nghệ còn lại ở lửa vừa 20-25 phút đến khi gà chín tới (xiên đũa vào phần đùi không thấy nước hồng chảy ra), tắt bếp và ủ thêm 10 phút cho thịt chín đều, vớt gà ra để nguội.",
+    "Vo gạo, rang sơ gạo với chút dầu ăn cho hạt gạo săn lại và thơm, sau đó cho vào nồi, chế nước luộc gà vừa đủ và nấu chín; cơm đạt khi hạt vàng đều, tơi, không nhão.",
+    "Xé gà thành miếng vừa ăn, trộn gỏi với hành tây thái mỏng đã ngâm nước đá cho bớt hăng, rau răm, nước cốt chanh, muối và tiêu; trộn nhẹ tay rồi để 5-10 phút cho gà thấm vị.",
+    "Nếu ăn kèm gỏi, bào sợi đu đủ xanh và cà rốt, ngâm giấm đường chua ngọt nhẹ cho giòn. Nếu có lòng gà, xào lòng với hành và chút nước luộc gà làm nước mạ chan cơm.",
+    "Xới cơm ra đĩa, nén nhẹ cho thành khuôn đẹp, xếp gà trộn gỏi bên cạnh hoặc lên trên, rắc hành phi.",
+    "Dọn kèm chén nước mạ hoặc nước luộc gà và tương ớt; khi ăn rưới nước mạ lên cơm rồi trộn đều cơm, gà và gỏi."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-nau-com-ga-hoi-an-thom-ngon-chuan-vi-02035",
+      "accessed": "2026-10-31",
+      "note": "Điện máy XANH, cho 4 người, gồm 2 công thức: bản biên tập dùng gà ta 1 con, gạo 250g, hành tây 1 củ, luộc gà với nghệ 20 phút và nấu cơm bằng nước luộc gà, có nước mạ lòng gà; bản chia sẻ từ người dùng (Trúc Nguyen) dùng gà 800g, gạo 160g, rau răm 100g."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/8495090-c%C6%A1m-ga-h%E1%BB%99i-an",
+      "accessed": "2026-10-31",
+      "note": "Công thức của QUÂN NGUYỄN trên Cookpad: gà ta 1,8kg, gạo 2 lon, nghệ tươi, hành tây 1 củ, rau răm 10g; gà luộc xé trộn hành tây và rau răm, kèm gỏi đu đủ."
+    },
+    {
+      "url": "https://www.hoidaubepaau.com/com-ga-hoi-an/",
+      "accessed": "2026-10-31",
+      "note": "Công thức Hội Đầu Bếp Á Âu (tác giả Chef Dung): gà ta khoảng 1kg, gạo tẻ 500g, rau răm 50g, hành tây 1 củ, nửa quả đu đủ xanh; chà nước nghệ lên da gà trước khi luộc, xào lòng gà làm phần nước chan."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt DISH-004 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt DISH-004 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): Đã đối chiếu 3 nguồn công thức thật (Điện máy XANH, Cookpad/QUÂN NGUYỄN, Hội Đầu Bếp Á Âu). Định lượng: thịt gà có da 130g/khẩu phần tương đương phần thịt ăn được của 800g-1,2kg gà nguyên con cho 4 người ở các nguồn (khoảng 110-165g thịt có da mỗi người), giữ nguyên; hành tây 25g khớp nguồn (1 củ cho 4 người), giữ nguyên. Cơm chín 200g giữ nguyên dù các nguồn bất đồng về lượng gạo (160-500g mỗi mẻ, quy ra cơm chín khoảng 100-300g/người). Rau răm 5g thấp hơn một nguồn (100g/4 người ở bản người dùng của Điện máy XANH) nhưng các nguồn còn lại chỉ dùng 10-50g cho cả mẻ, nên giữ nguyên và ghi nhận. Phân loại (loai:com, nau, vn-quang-nam, trưa/tối) rà soát, không sai rõ ràng, giữ nguyên.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

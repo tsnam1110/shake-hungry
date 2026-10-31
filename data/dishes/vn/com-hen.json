@@ -162,16 +162,31 @@
     }
   ],
   "recipe_steps": [
-    "Luộc hến lấy thịt và giữ nước luộc trong (xem ghi chú thiếu nguyên liệu).",
-    "Rang tép, chiên bì giòn; hoa chuối thái mỏng ngâm nước chanh cho khỏi thâm.",
-    "Trộn cơm nguội với thịt hến, tép, bì, giá, hoa chuối, lạc rang, vừng, hành phi.",
-    "Chan nước hến nóng, nêm mắm ruốc, đường và ớt theo khẩu vị."
+    "Hến nguyên vỏ ngâm trong nước vo gạo có thêm vài lát ớt khoảng 1–2 giờ cho nhả hết cát, rửa sạch; luộc trong nước sôi đến khi hến vừa há miệng thì tắt bếp, đãi lấy thịt, giữ lại nước luộc, để lắng cát rồi gạn lấy phần nước trong.",
+    "Dùng cơm nguội hạt tơi để trộn; nếu là cơm mới nấu, trải cơm ra mâm cho nguội và ráo hơi nước trước khi dùng.",
+    "Xào thịt hến: phi hành tím và tỏi với dầu ăn cho thơm, cho thịt hến vào xào nhanh trên lửa lớn 2–3 phút, nêm muối, đường, tiêu và một chút mắm ruốc đã pha loãng; hến vừa săn lại, dậy mùi thì tắt bếp ngay để không bị dai.",
+    "Bì lợn chiên trong dầu nóng đến khi phồng giòn, vớt ra để ráo dầu rồi bẻ thành miếng vừa ăn; tép rang khô trên chảo cho thơm.",
+    "Lạc rang vàng, xát bỏ vỏ; vừng rang thơm; hành tím thái mỏng phi vàng giòn, vớt ra để ráo dầu.",
+    "Rau sống và giá đỗ rửa sạch, để ráo; bắp chuối bào mỏng, ngâm ngay vào nước có pha chanh loãng để không bị thâm, khi dùng vớt ra vắt ráo.",
+    "Đun nóng phần nước luộc hến đã gạn trong, nêm thật nhạt và thêm vài lát gừng; giữ nóng trên bếp nhỏ lửa để chan kèm khi ăn.",
+    "Trình bày: cho cơm vào tô, xếp hến xào, bì chiên, tép rang, rau, giá và bắp chuối lên trên; rắc lạc, vừng, hành phi, rưới mắm ruốc đã chưng; khi ăn chan thêm ít nước hến nóng và trộn đều."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://tailieu.duytan.edu.vn/tailieu/2013/20130109/hotmoingay2/monngonvn_34__4842.pdf?rand=354332",
+      "accessed": "2026-10-31",
+      "note": "Công thức cơm hến của Món Ngon Mỗi Ngày (tài liệu lưu tại Đại học Duy Tân): hến 500g, cơm trắng 1 chén, ruốc 1 thìa súp, mè trắng 1 thìa súp, ăn kèm rau chuối bào, khế, bạc hà — đối chiếu thành phần và cách trình bày."
+    },
+    {
+      "url": "https://nauankhongkho.vn/blog/cach-lam-com-hen-hue-voi-nuoc-mam-ruoc-chuan-vi-e9D6618JZ5EP",
+      "accessed": "2026-10-31",
+      "note": "Công thức cơm hến Huế chi tiết: hến 2kg nguyên vỏ (thịt sau luộc khoảng 300g), cơm nguội 450g, mắm ruốc 2 muỗng canh, da heo sấy 50g, đậu phộng 80g — đối chiếu kỹ thuật ngâm hến, xào hến, nấu nước hến và làm mắm ruốc."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu).",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu). Nâng Mức 2 đợt 1 (2026-10-31): Giữ Mức 1: chỉ tìm được 2 nguồn đạt chuẩn có định lượng và bước nấu đã mở kiểm chứng (xem recipe_sources). Một công thức Cookpad khác về cơm hến không có định lượng nên bị loại; Điện Máy XANH chỉ có bún hến, là món khác — không hạ chuẩn nguồn để đủ số. Định lượng: giữ nguyên toàn bộ — cả hai nguồn đều không ghi rõ số khẩu phần nên không quy đổi chắc chắn được; mẻ cơm nguội 450g và thịt hến khoảng 300g ở nguồn thứ hai tương thích với khẩu phần trong file. Bước nấu viết lại 8 bước theo kỹ thuật của hai nguồn.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

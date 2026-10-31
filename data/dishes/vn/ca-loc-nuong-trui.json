@@ -25,7 +25,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nuong",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -137,16 +137,36 @@
     }
   ],
   "recipe_steps": [
-    "Cá lóc để nguyên vảy, rửa sạch, xát muối.",
-    "Nướng trui trên rơm hoặc than đến khi da cháy đen, thịt chín thơm.",
-    "Cạo lớp cháy, rạch lưng cá, bày lên mẹt cùng rau sống và bún.",
-    "Cuốn bánh tráng, chấm nước mắm me chua ngọt."
+    "Cá lóc để nguyên con, không đánh vảy; chỉ mổ bỏ mang và ruột, rửa sạch, để ráo nước. Ướp nhẹ một chút muối vào bụng cá khoảng 15 phút cho bớt tanh.",
+    "Xiên một que tre hoặc cọc nhọn dọc từ miệng qua thân xuống đuôi cá, dựng đứng cá lên nền đất hoặc vỉ nướng chắc chắn.",
+    "Phủ rơm khô xung quanh cá và châm lửa đốt; nướng khoảng 8–15 phút tùy cỡ cá, đến khi rơm cháy hết và lớp vảy, da ngoài cháy đen đều.",
+    "Gạt bỏ tro rơm, dùng dao cạo sạch lớp vảy cháy đen bên ngoài cho lộ phần da vàng bên dưới; cá đạt khi thịt thơm mùi rơm, không còn mùi tanh sống.",
+    "Rạch một đường dọc theo sống lưng cá, tách thịt ra hai bên, gỡ bỏ xương sống; thịt cá chín đạt khi trắng đục, tơi thành thớ, không còn trong.",
+    "Pha nước mắm me: dằm me chín với nước ấm, lọc bỏ hạt và xơ; pha nước mắm, đường và ớt băm, nếm lại cho vị chua — ngọt — mặn cân bằng.",
+    "Rau sống và xà lách rửa sạch, để ráo; dưa leo cắt lát dài; bún tươi chần nhanh qua nước sôi nếu đã để nguội lâu.",
+    "Khi ăn, đặt thịt cá lên bánh tráng cùng bún, rau và dưa leo, cuốn lại, chấm nước mắm me; ăn ngay khi cá còn nóng để thịt không tanh."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.cet.edu.vn/cach-lam-mon-ca-loc-nuong-trui",
+      "accessed": "2026-10-31",
+      "note": "Cách làm của Chef Lập (CET): cá để nguyên vảy, xiên que từ miệng xuống đuôi, phủ rơm đốt, cạo lớp cháy, rọc dọc sống lưng; có công thức nước mắm me và nước mắm chua ngọt — đối chiếu kỹ thuật và nước chấm."
+    },
+    {
+      "url": "https://yummyday.vn/ca-loc-nuong-trui-589",
+      "accessed": "2026-10-31",
+      "note": "Cá lóc 1 con khoảng 1–1,2kg, nướng rơm 8–10 phút, ăn kèm bún, bánh tráng, rau sống và đậu phộng rang — đối chiếu định lượng theo con và cách ăn cuốn bánh tráng."
+    },
+    {
+      "url": "https://duyendangvietnam.net.vn/tu-lam-mon-ca-loc-nuong-trui-thom-ngon-ngay-via-than-tai/",
+      "accessed": "2026-10-31",
+      "note": "Cá lóc cỡ từ 1,2kg, ướp bụng cá với rượu gừng và muối 15–20 phút, xiên nướng đến khi da khô, cháy răn nứt là chín — đối chiếu kỹ thuật nướng trui truyền thống."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt).",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Nâng Mức 2 đợt 1 (2026-10-31): Đối chiếu 3 nguồn công thức đã mở kiểm chứng (xem recipe_sources). Định lượng: giữ nguyên toàn bộ. Cả 3 nguồn đều tính theo nguyên con khoảng 1–1,2kg cho cả nhà và không ghi số khẩu phần, nên không quy đổi được gram/khẩu phần đáng tin cậy để đối chiếu; giữ cá lóc 220g/khẩu phần. Ghi nhận bất thường: cả 3 nguồn đều rưới mỡ hành và rắc đậu phộng rang lên cá sau khi nướng, nhưng file chưa có hai nguyên liệu này (chỉ có hành qua rau ăn kèm) — không tự thêm dòng, chờ chủ dự án quyết. Bước nấu viết lại 8 bước.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

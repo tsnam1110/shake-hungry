@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "luoc",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -90,15 +90,35 @@
     }
   ],
   "recipe_steps": [
-    "Cho gà vào nồi nước lạnh cùng gừng đập dập và muối, đun sôi rồi hạ lửa luộc chín tới.",
-    "Vớt gà, ngâm nhanh nước lạnh cho da căng bóng, để ráo rồi chặt miếng.",
-    "Pha nước mắm gừng tỏi ớt; rắc lá chanh thái chỉ lên thịt gà."
+    "Sơ chế: gà làm sạch, chà xát muối hạt và gừng giã khắp da rồi rửa lại cho hết mùi; gừng đem thái lát.",
+    "Cho gà vào nồi, đổ nước lạnh ngập gà, thêm gừng thái lát và 1 thìa cà phê muối; đun lửa lớn đến khi nước sôi lăn tăn.",
+    "Hạ lửa nhỏ liu riu, hớt sạch bọt, luộc 15–20 phút tùy cỡ gà; châm đũa vào phần đùi thấy nước chảy ra trong, không còn hồng là gà đã chín.",
+    "Tắt bếp, đậy kín vung và ngâm gà trong nước luộc 20–30 phút để thịt chín đều tới xương, da căng bóng mà không nứt.",
+    "Vớt gà ra ngâm nhanh vào thau nước đá khoảng 5 phút cho da giòn, vớt ra để thật ráo rồi chặt miếng vừa ăn.",
+    "Pha nước mắm gừng: gừng, tỏi, ớt băm nhuyễn, pha cùng nước mắm, đường và vài thìa nước luộc gà còn ấm, nêm chua ngọt mặn hài hòa.",
+    "Bày gà ra đĩa, rắc lá chanh thái chỉ lên trên, dọn kèm chén nước mắm gừng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-luoc-ga-khong-bi-nut-da-vang-ong-thit-ngot-cho-mam-co-23706",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy Xanh (biên tập Nguyễn Cao Kiều Mi): gà ta 1 con 1,2–1,5 kg cho 4–6 người; luộc lửa nhỏ rồi ngâm cho da không nứt — đối chiếu định lượng gà và kỹ thuật luộc."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/24444140",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Gà Luộc của Pham Huyen: gà trống 2 kg, quy tắc luộc 10 phút/1 kg rồi ngâm; đối chiếu gia vị ướp và nước chấm."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/15588783",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Cơm Gà Luộc của Bếp mợ Tým: 1/2 con gà = 1 kg, luộc 15 phút ủ 20 phút, công thức nước mắm gừng; đối chiếu khẩu phần và nước chấm."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): đã đối chiếu 3 nguồn công thức thật (Điện Máy Xanh, 2 công thức Cookpad có tác giả). Định lượng: gà trong file 200 g/khẩu phần (thịt gà có da, bỏ xương) — nguồn cho 1 con 1,2–2 kg cho 4–6 người, quy về phần thịt ăn được sau bỏ xương tương đương khoảng 165–220 g/khẩu phần, khớp trong ngưỡng 30% nên giữ nguyên; gừng, muối, nước mắm chấm cũng khớp các nguồn, không đổi dòng nào. Bước nấu viết lại 7 bước theo kỹ thuật luộc–ngâm của các nguồn.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

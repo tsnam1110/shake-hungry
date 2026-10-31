@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "hap",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -122,15 +122,35 @@
     }
   ],
   "recipe_steps": [
-    "Cá nục làm sạch, ướp muối, hấp chín cùng gừng và hành lá.",
-    "Pha nước mắm chua ngọt tỏi ớt.",
-    "Cuốn cá với bánh tráng, xà lách, rau thơm; chấm nước mắm pha."
+    "Cá nục bỏ mang và ruột, rửa với nước muối loãng cho sạch nhớt, để ráo; khứa 2–3 đường xéo trên thân cá để cá dễ thấm gia vị và nhanh chín.",
+    "Ướp cá với một chút muối và gừng thái chỉ khoảng 15 phút; phần gừng còn lại thái lát để lót đĩa hấp.",
+    "Xếp gừng thái lát và một phần hành lá xuống đáy đĩa sâu, đặt cá lên trên, rắc phần hành lá cắt khúc còn lại lên mặt cá.",
+    "Đun nước trong xửng cho thật sôi rồi mới cho đĩa cá vào, hấp trên lửa lớn 13–15 phút; cá chín khi mắt cá trắng đục, thịt trắng và dễ tách khỏi xương.",
+    "Pha nước chấm: khuấy nước mắm với đường, nước cốt chanh, tỏi và ớt băm cùng một chút nước ấm cho tan đều, nếm lại vị mặn — ngọt — chua cân bằng.",
+    "Rau sống, xà lách và húng quế rửa sạch, để ráo; bánh tráng nhúng nhanh qua nước cho mềm dẻo, tránh ngâm lâu sẽ rách.",
+    "Khi ăn, gỡ thịt cá đặt lên bánh tráng cùng rau, cuốn lại và chấm nước mắm đã pha; ăn ngay khi cá còn nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/2-cach-lam-ca-nuc-hap-hanh-va-hap-sa-sieu-don-gian-va-dac-09030",
+      "accessed": "2026-10-31",
+      "note": "Ba cách cá nục hấp (biên tập Đinh Thị Bích Thảo); bản hấp với gừng và hành cho 4 người dùng cá nục 500g, ăn kèm cuốn bánh tráng, chấm mắm nêm hoặc nước cá hấp — đối chiếu định lượng và kỹ thuật hấp."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/15174996",
+      "accessed": "2026-10-31",
+      "note": "Cá nục hấp cuốn bánh tráng của Kim Dung cho 5 người: cá nục 1kg, hấp 13 phút rồi cho hành lá hấp thêm 2 phút, chấm nước mắm chua ngọt có chanh, đường, tỏi, ớt — đối chiếu định lượng và nước chấm."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/25173633",
+      "accessed": "2026-10-31",
+      "note": "Cá nục hấp cuốn rau muống và phở sắn của Bòn Bon cho 2 phần ăn: cá nục 300g (150g/khẩu phần, khớp file), gừng 10g, hấp cùng hành tây 15 phút, chấm nước mắm pha — đối chiếu định lượng."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): Đối chiếu 3 nguồn công thức đã mở kiểm chứng (xem recipe_sources). Định lượng: giữ nguyên toàn bộ. Cá nục mỗi khẩu phần ở 3 nguồn lần lượt là 125g, 200g và 150g — hai cực bất đồng >30% nên giữ 150g của file (khớp nguồn Bòn Bon); gừng và hành lá của file nằm trong khoảng các nguồn. Ghi nhận: biến thể miền Trung trong các nguồn thường ăn kèm rau muống và chấm mắm nêm, file dùng nước mắm pha và không có rau muống — coi là khác biệt biến thể, không sửa nguyên liệu. Bước nấu viết lại 7 bước.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "kho",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -70,7 +70,7 @@
     },
     {
       "ingredient_slug": "ca-chua",
-      "quantity": 40,
+      "quantity": 70,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -166,15 +166,36 @@
     }
   ],
   "recipe_steps": [
-    "Ướp thịt bò với tỏi, tiêu, chút bột mì; xào săn với bơ.",
-    "Thêm tương cà, cà chua và nước (bia, hoặc rượu vang nếu có — xem ghi chú thiếu nguyên liệu), hầm lửa nhỏ.",
-    "Cho khoai tây, cà rốt, hành tây vào hầm đến mềm, nêm nếm, ăn kèm bánh mì."
+    "Sơ chế: nạm bò rửa sạch, cắt khối vuông 3–4 cm, chần qua nước sôi khoảng 3 phút cho ra hết bọt bẩn rồi rửa lại, để ráo.",
+    "Ướp bò với hành tím, tỏi băm, nước mắm, tiêu và một phần rượu vang đỏ ít nhất 30 phút (ướp 2 giờ hoặc qua đêm thịt càng thấm).",
+    "Cà chua rửa sạch băm nhỏ; khoai tây, cà rốt gọt vỏ cắt miếng vừa ăn; hành tây bổ múi cau.",
+    "Đun chảy bơ trong nồi, phi thơm hành tỏi, cho bò vào xào lửa lớn 5–7 phút đến khi thịt săn lại và xém cạnh.",
+    "Cho cà chua và tương cà vào đảo đến khi ra màu đỏ sẫm, thêm lá nguyệt quế và phần rượu vang còn lại, đun cho bay bớt mùi cồn.",
+    "Chế nước ngập mặt thịt, đun sôi, hớt bọt rồi hạ lửa nhỏ hầm khoảng 60 phút đến khi bò mềm nhưng chưa nát.",
+    "Cho khoai tây và cà rốt vào hầm thêm 20–25 phút đến khi chín mềm; hòa bột mì với ít nước lạnh, xuống từ từ và khuấy đều cho nước sốt sánh nhẹ.",
+    "Nêm nếm lại cho vừa ăn, tắt bếp, múc ra tô, dùng nóng kèm bánh mì."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-nau-bo-sot-vang-mien-bac-thom-lung-ngon-dung-dieu-13488",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy Xanh — bò sốt vang miền Bắc cho 3 người: nạm bò 500 g, rượu vang 60 ml, cà chua 2 quả, cà rốt 70 g, khoai tây 70 g, bơ 30 g; hầm bò 60 phút."
+    },
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-nau-bo-sot-vang-kieu-phap-thom-ngon-chuan-vi-13496",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy Xanh — bò sốt vang kiểu Pháp cho 4 người: nạm bò 1 kg, rượu vang 200 ml, sốt cà chua hộp khoảng 227 g, bơ 40 g; ướp từ 2 giờ, hầm 60 + 30 phút."
+    },
+    {
+      "url": "http://www.savourydays.com/bo-sot-vang/",
+      "accessed": "2026-10-31",
+      "note": "Savoury Days (tác giả Linh Trang): thịt bò gân 500 g, cà chua 250 g + cà chua nghiền 50 g, bơ 1 thìa canh, lá nguyệt quế; ướp 2 giờ hoặc qua đêm."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu).",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu). Nâng Mức 2 đợt 1 (2026-10-31): đã đối chiếu 3 nguồn công thức thật (Điện Máy Xanh miền Bắc, Điện Máy Xanh kiểu Pháp, Savoury Days). Phân xử định lượng — ca-chua: 40 → 70 g: hai nguồn có cà chua tươi tương đối khớp nhau khi quy về khẩu phần (miền Bắc ≈67 g, Savoury Days ≈83 g), số cũ lệch hơn 30% so với cả hai nên nâng về gần đồng thuận nguồn. Giữ nguyên: thịt bò 180 g (nguồn 167–250 g/khẩu phần); bơ 8 g (nguồn đều ≈10 g); tương cà 20 g (hai nguồn bất đồng lớn: 5 g kiểu Bắc so với ≈57 g sốt cà hộp kiểu Pháp); rượu vang 30 g (nguồn dao động 20–50 ml); khoai tây 60 g và cà rốt 50 g chỉ 1 trong 3 nguồn có dùng (kiểu Bắc ≈23 g/khẩu phần) — không đủ 2 nguồn đối chiếu nên giữ, ghi nhận nguồn Bắc dùng ít rau củ hơn hẳn. Ghi nhận thêm: dòng bia tuỳ chọn không xuất hiện trong cả 3 nguồn (chuẩn là rượu vang đỏ), giữ nguyên theo bản đã duyệt. Bước nấu viết lại 8 bước.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

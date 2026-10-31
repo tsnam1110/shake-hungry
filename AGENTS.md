@@ -13,8 +13,8 @@ Hướng dẫn cho mọi AI agent (Claude Code, Codex, Cursor, Copilot Agent...)
 Nút "Lắc" gợi ý món chỉ là vài chục dòng code; giá trị nằm ở dữ liệu.
 
 **Trạng thái 2026-10-31: ứng dụng đã hoàn thiện end-to-end** (Laravel 13 + MySQL 8, admin antd 6
-tại `/admin`, 656 món / 406 nguyên liệu, 651/656 món tính được dinh dưỡng, engine gợi ý + tài khoản
-người dùng + đóng góp cộng đồng đều chạy thật). Trạng thái chi tiết: [CLAUDE.md](CLAUDE.md) §0 và
+tại `/admin`, 657 món / 406 nguyên liệu, 652/657 món tính được dinh dưỡng, 47 món đạt Mức 2
+(LV2-001 đợt 1), engine gợi ý + tài khoản người dùng + đóng góp cộng đồng đều chạy thật). Trạng thái chi tiết: [CLAUDE.md](CLAUDE.md) §0 và
 [docs/05-tasks/ROADMAP.md](docs/05-tasks/ROADMAP.md).
 
 ## Tám quy tắc tuyệt đối (bản rút gọn — bản đầy đủ ở CLAUDE.md §3)

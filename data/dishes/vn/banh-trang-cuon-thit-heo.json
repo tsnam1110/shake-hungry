@@ -24,8 +24,8 @@
   ],
   "is_eat_out": true,
   "is_home_cook": true,
-  "cooking_method": "song",
-  "completeness_level": 1,
+  "cooking_method": "luoc",
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -145,15 +145,36 @@
     }
   ],
   "recipe_steps": [
-    "Thịt ba chỉ luộc chín tới với hành, gừng; ngâm nguội rồi thái lát mỏng, giữ cả bì.",
-    "Pha mắm nêm với thơm băm, tỏi, ớt, đường cho dịu vị.",
-    "Khi ăn: trải bánh tráng (kèm bánh phở/bánh ướt nếu có), xếp thịt, rau sống, dưa leo, chuối chát, cuốn lại và chấm mắm nêm."
+    "Thịt ba chỉ rửa sạch, cạo sạch phần da, ngâm nước muối loãng 10–15 phút rồi rửa lại bằng nước sạch, để ráo.",
+    "Luộc thịt: cho thịt vào nồi nước lạnh cùng gừng đập dập và hành tím, đun sôi, hớt bọt; hạ lửa vừa, luộc 20–25 phút đến khi dùng đũa xiên qua miếng thịt không còn thấy nước hồng chảy ra.",
+    "Vớt thịt ra ngâm ngay vào thau nước lạnh 5–10 phút để thịt săn lại, da trong và không bị thâm; vớt ra để ráo rồi thái lát mỏng khoảng 3–5mm, mỗi lát gồm đủ da, mỡ và nạc.",
+    "Rau sống, xà lách, húng quế và tía tô nhặt rửa sạch, ngâm nước muối loãng 5 phút, để ráo; dưa leo, thơm và chuối chát cắt thành thanh dài vừa cuốn; giá đỗ rửa sạch, để ráo.",
+    "Pha mắm nêm: xay hoặc băm nhuyễn thơm cùng tỏi và ớt, trộn vào mắm nêm, nêm thêm đường và một chút nước cốt chanh cho dịu vị mặn — mắm đạt khi mặn, ngọt, chua, cay hài hòa và thơm mùi thơm (dứa).",
+    "Bánh phở tách từng lá, để sẵn; bánh tráng dẻo dùng trực tiếp, nếu là bánh tráng khô thì nhúng nước thật nhanh cho vừa mềm.",
+    "Cuốn: trải bánh tráng, đặt một lá bánh phở lên, xếp xà lách, rau thơm, dưa leo, thơm, chuối, giá đỗ và 1–2 lát thịt, cuốn chặt tay vừa phải để cuốn không bị bung.",
+    "Chấm cuốn với mắm nêm đã pha và ăn ngay khi bánh còn dẻo; thịt đạt khi lát cắt săn, da trong, không còn hồng ở giữa."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/16520223",
+      "accessed": "2026-10-31",
+      "note": "Công thức của Lan Vy cho 3 người: thịt ba rọi 250g luộc cùng sả và gừng rồi thái lát, cuốn với xà lách, tía tô, dưa leo — đối chiếu định lượng thịt và khẳng định thịt được luộc chín."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/14940215",
+      "accessed": "2026-10-31",
+      "note": "Công thức của Bách Hợp: thịt ba chỉ 500g ngâm nước muối rồi luộc chín với gừng, để nguội cho săn; mắm nêm Đà Nẵng pha với dứa xay và tỏi — đối chiếu kỹ thuật luộc thịt và pha mắm nêm."
+    },
+    {
+      "url": "https://tripi.vn/blog/vi/kinh-nghiem-hay/huong-dan-cach-lam-banh-trang-cuon-thit-heo-chuan-vi-dem-den-huong-vi-dam-da-kho-quen-tripi",
+      "accessed": "2026-10-31",
+      "note": "Công thức cho 4 người: thịt ba chỉ 1kg luộc cùng hành tím, hành tây và sả; cuốn cùng bánh phở, chấm mắm nêm pha thơm, tỏi, ớt, sả — đối chiếu định lượng và cấu trúc món. Lưu ý nguồn ghi bánh tráng 20g cho cả mẻ, một số bất thường của chính nguồn."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt)",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt) Nâng Mức 2 đợt 1 (2026-10-31): Đối chiếu 3 nguồn công thức đã mở kiểm chứng (xem recipe_sources). Định lượng: giữ nguyên toàn bộ. Thịt ba chỉ mỗi khẩu phần giữa các nguồn bất đồng rất lớn (≈83g ở Lan Vy so với 250g ở Tripi; nguồn Bách Hợp không ghi khẩu phần) nên giữ 150g của file. Sửa phân loại: cooking_method đổi từ 'song' sang 'luoc' — cả 3 nguồn đều luộc thịt chín rồi mới thái lát để cuốn, phần cuốn chỉ là công đoạn trình bày, ghi 'song' là sai rõ ràng. Ghi nhận: trong các nguồn Đà Nẵng, bánh phở là thành phần cốt lõi của cuốn, trong khi file đang để bánh phở là nguyên liệu tùy chọn (is_optional) — không tự sửa, chờ chủ dự án quyết. Bước nấu viết lại 8 bước.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

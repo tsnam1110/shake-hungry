@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "xao",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -130,16 +130,35 @@
     }
   ],
   "recipe_steps": [
-    "Ướp thịt bò với nước tương, dầu hào, tỏi, tiêu khoảng 15 phút.",
-    "Xào thịt bò lửa lớn cho săn mặt, vớt ra.",
-    "Xào ớt chuông, hành tây vừa chín tới, cho bò vào đảo nhanh tay.",
-    "Dọn lên đĩa lót xà lách, ăn kèm cơm nóng."
+    "Thịt bò rửa sạch, thấm thật khô, cắt khối vuông 2-2,5cm đều nhau để khi xào chín đều. Ớt chuông bỏ hạt, hành tây cắt miếng vuông cỡ miếng bò; cà chua cắt múi cau; xà lách rửa sạch, để ráo.",
+    "Ướp bò với nước tương, dầu hào, tỏi băm, đường và tiêu khoảng 20-30 phút cho thấm; trước khi xào trộn thêm chút dầu ăn để áo miếng bò, giúp bò không ra nước và mềm khi xào lửa lớn.",
+    "Pha sẵn sốt gồm dầu hào, nước tương, đường và tiêu trong một chén nhỏ để khi xào chỉ việc rưới vào, tránh bò bị chín quá trong lúc nêm nếm.",
+    "Bắc chảo lên lửa lớn cho thật nóng, cho dầu ăn và một nửa phần bơ vào; bơ vừa tan và dậy mùi thì cho bò vào đảo nhanh 1-2 phút cho các mặt xém vàng, bên trong còn hồng, rồi trút ra đĩa để riêng.",
+    "Dùng lại chảo, cho phần bơ còn lại vào, phi thơm tỏi rồi cho hành tây và ớt chuông vào xào lửa lớn 1-2 phút đến khi rau củ vừa chín tới, còn giòn và bóng mặt.",
+    "Trút bò trở lại chảo, rưới sốt đã pha, đảo đều tay khoảng 1 phút cho sốt hơi sánh và áo đều miếng bò; nếm lại vị mặn ngọt cân bằng thì tắt bếp ngay, xào lâu bò sẽ dai.",
+    "Lót xà lách ra đĩa, cho bò lúc lắc lên trên cùng cà chua, rắc thêm tiêu xay và dọn nóng kèm cơm trắng hoặc bánh mì."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/9534928",
+      "accessed": "2026-10-31",
+      "note": "Công thức của Trang Tran trên Cookpad, 2 phần ăn: 200g thịt bò, 1 quả ớt chuông, 1 củ hành tây; ướp khoảng 25 phút, xào bò lửa lớn rồi xào rau củ chín vừa."
+    },
+    {
+      "url": "https://daynauan.info.vn/bo-luc-lac",
+      "accessed": "2026-10-31",
+      "note": "Công thức Dạy Nấu Á Âu (tác giả Yến Huỳnh): mẻ 500g thăn bò, ớt chuông 3 màu 300g, hành tây 100g, xà lách 100g, bơ 20g, tỏi 30g; làm sốt dầu hào-nước tương, xào bò chín tái rồi xào chung rau củ."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/668290",
+      "accessed": "2026-10-31",
+      "note": "Công thức của Quỳnh Hương trên Cookpad, 4 phần ăn: 300g bò file, ớt chuông đỏ/vàng mỗi loại nửa quả, hành tây nửa củ; xào rau củ trước, xào bò lửa to cho săn."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt).",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Nâng Mức 2 đợt 1 (2026-10-31): Đã đối chiếu 3 nguồn công thức thật (Cookpad/Trang Tran, Dạy Nấu Á Âu, Cookpad/Quỳnh Hương). Định lượng: thịt bò/khẩu phần giữa các nguồn dao động 75-125g (300g/4 phần, 200g/2 phần, mẻ 500g) — hai nguồn bất đồng quá 30% nên theo quy tắc giữ nguyên 120g của file; ớt chuông (nguồn 25-75g) và hành tây (nguồn ~12-50g) cũng bất đồng lớn, giữ nguyên 40g mỗi loại. Phân loại (loai:mon-chinh, xao, vn-tp-hcm, trưa/tối) rà soát, không sai rõ ràng, giữ nguyên.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

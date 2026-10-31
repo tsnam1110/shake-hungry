@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "tron",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -34,7 +34,7 @@
   "ingredients": [
     {
       "ingredient_slug": "soi-mi-quang",
-      "quantity": 90,
+      "quantity": 180,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -138,15 +138,36 @@
     }
   ],
   "recipe_steps": [
-    "Rim thịt ba chỉ và tôm với bột nghệ, nước mắm thành nước nhưn đậm, ít nước.",
-    "Trụng sợi mì Quảng, chan ít nước nhưn, trộn đều.",
-    "Xếp thịt, tôm, trứng cút, rắc đậu phộng, thêm bắp chuối, rau thơm, bẻ bánh tráng nướng ăn kèm."
+    "Thịt ba chỉ rửa sạch, thái miếng vừa ăn; tôm bóc vỏ, rút chỉ lưng, rửa sạch để ráo. Ướp riêng từng loại với phần gia vị thơm giã nhuyễn (củ nén hoặc hành tỏi), bột nghệ, nước mắm và tiêu khoảng 20-30 phút cho thấm.",
+    "Chuẩn bị nước dùng nền từ xương heo hoặc nước luộc thịt, nêm nhạt, để làm nước nhân chan mì.",
+    "Rang đậu phộng trên chảo khô lửa vừa đến khi thơm và vỏ bắt đầu bong, để nguội, chà bỏ vỏ rồi giã dập sơ; bánh tráng nướng giòn, để riêng tránh ỉu.",
+    "Phi thơm phần gia vị thơm với dầu ăn cho vàng, cho thịt ba chỉ đã ướp vào rim lửa vừa 10-15 phút đến khi thịt săn, thấm vị và hơi xém cạnh.",
+    "Cho tôm vào rim cùng thêm 5-7 phút đến khi tôm cong lại, đỏ đều và săn; đổ nước dùng vào xâm xấp mặt nhân, nêm lại đậm hơn nước canh thông thường vì mì Quảng chỉ chan ít nước.",
+    "Sơ chế rau ăn kèm: bắp chuối bào mỏng ngâm nước pha chanh cho trắng và bớt chát, cải xanh và húng quế rửa sạch, để ráo.",
+    "Trụng sợi mì Quảng qua nước nóng cho sợi mềm và nóng đều, cho vào tô đã lót ít rau sống ở đáy.",
+    "Xếp thịt ba chỉ, tôm và trứng cút lên mì, chan nước nhân xâm xấp (không chan ngập), rắc đậu phộng rang và hành lá, bẻ bánh tráng nướng lên trên; khi ăn trộn đều, thêm ớt và chanh tùy khẩu vị."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-nau-mi-quang-tom-thit-thom-ngon-ai-cung-me-chuan-vi-don-06737",
+      "accessed": "2026-10-31",
+      "note": "Điện máy XANH (mì Quảng tôm thịt), cho 10 người: tôm 500g, thịt ba rọi 500g, trứng cút 20 quả, đậu phộng 100g, bánh đa 10 cái; rim tôm thịt với củ nén và nghệ, chan ít nước nhân."
+    },
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-nau-mi-quang-gio-heo-thom-bui-ngon-nuc-no-ngay-tai-nha-15548",
+      "accessed": "2026-10-31",
+      "note": "Điện máy XANH (mì Quảng giò heo), cho 5 người: sợi mì Quảng 1kg (200g/người), giò heo 1kg, đậu phộng 50g; ướp giò 30 phút, hầm 30-45 phút."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/11102642",
+      "accessed": "2026-10-31",
+      "note": "Công thức của Đoàn Văn Nhân trên Cookpad, 30 phần ăn: mì Quảng 6kg và ghi rõ mỗi tô 200g mì; nhân ba rọi, tôm, trứng cút rim dầu phộng với củ nén."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu).",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu). Nâng Mức 2 đợt 1 (2026-10-31): Đã đối chiếu 3 nguồn công thức thật (Điện máy XANH mì tôm thịt, Điện máy XANH mì giò heo, Cookpad/Đoàn Văn Nhân). Phân xử định lượng sợi mì: soi-mi-quang 90 → 180 (Điện máy XANH bản giò heo và Cookpad đều ở mức 200g mì mỗi khẩu phần/tô và khớp nhau; số cũ lệch trên 50%. Lấy 180g nằm trong khoảng đồng thuận 167-200g tính cả nguồn mì trộn tham khảo thêm. Riêng bản mì tôm thịt của Điện máy XANH ghi 400g cho 10 người, bất thường so với chính các công thức mì Quảng khác của cùng trang, nên không dùng số này). Tôm 30g, ba chỉ 50g, trứng cút 12g, đậu phộng 10g và bánh tráng 10g đều nằm trong khoảng của các nguồn, giữ nguyên. Phân loại (loai:bun-pho-mi, vn-quang-nam, sáng/trưa) rà soát, giữ nguyên; riêng cooking_method đang ghi tron được ghi nhận là điểm đáng xem lại ở báo cáo bàn giao (mì Quảng chan nước nhân rồi trộn khi ăn), không tự sửa vì chưa phải sai rõ ràng.",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

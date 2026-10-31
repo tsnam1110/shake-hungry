@@ -25,7 +25,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "luoc",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -73,15 +73,35 @@
     }
   ],
   "recipe_steps": [
-    "Lòng lợn bóp muối và dấm, rửa nhiều lần cho sạch, lộn lại rửa trong.",
-    "Luộc lòng trong nước sôi có gừng và hành, vớt ra ngâm ngay nước lạnh cho giòn trắng.",
-    "Cắt khúc vừa ăn, chấm mắm tôm hoặc nước mắm gừng."
+    "Chọn lòng non ống nhỏ, căng tròn, màu trắng hồng, phần dịch bên trong trắng sữa và không có mùi lạ; cắt lòng thành khúc 30–40cm cho dễ làm sạch.",
+    "Sơ chế: lộn trái lòng hoặc bơm nước vào trong ống, bóp kỹ với muối và bột mì (hoặc chanh) 5–10 phút, vuốt sạch phần dịch bên trong, rửa lại nhiều lần đến khi nước trong; bóp nhẹ tay, tránh làm rách lòng.",
+    "Đun một nồi nước thật sôi già cùng gừng đập dập, hành lá và một chút muối; đồng thời chuẩn bị sẵn một thau nước đá có vắt chanh.",
+    "Thả lòng vào khi nước đang sôi bùng, luộc trên lửa lớn; tính từ khi nước sôi trở lại, luộc 4–7 phút tùy độ dày của lòng — lòng chín đạt khi căng tròn, trắng đục, bấm nhẹ thấy săn giòn, không còn dịch hồng.",
+    "Vớt lòng ra ngâm ngay vào thau nước đá chanh 5–10 phút để lòng giữ màu trắng, giòn và không bị thâm.",
+    "Vớt lòng ra để ráo, cắt khúc xéo 3–4cm vừa ăn, bày ra đĩa cùng gừng thái chỉ và hành lá.",
+    "Dọn ăn ngay khi lòng còn giòn, chấm kèm nước mắm gừng hoặc mắm tôm pha tắc ớt theo khẩu vị."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/meo-chon-mua-so-che-cach-luoc-long-non-va-cac-mon-an-tu-long-06133?srsltid=AfmBOorTh4HyS1kW3xrZJHGqp691sVoPlJn3g4MSlW6QERpkCrvR_aqG",
+      "accessed": "2026-10-31",
+      "note": "Bài kỹ thuật của Điện Máy XANH (biên tập Nguyễn Ngọc Phương Trinh): chọn và sơ chế lòng non bằng bột mì/chanh, luộc lửa lớn với gừng và giấm, sôi lại 5–7 phút thì vớt ngâm nước đá chanh 3–5 phút — đối chiếu kỹ thuật."
+    },
+    {
+      "url": "https://phunutoday.vn/cach-luoc-long-trang-tinh-gion-san-sat-d508781.html",
+      "accessed": "2026-10-31",
+      "note": "Công thức luộc lòng trắng giòn (Phụ Nữ Today): 500g lòng non, 1 củ gừng, 2 củ hành tím, chanh/giấm; luộc 5–10 phút, ngâm nước đá 5–10 phút, ăn kèm nước mắm gừng — đối chiếu định lượng theo mẻ và kỹ thuật."
+    },
+    {
+      "url": "https://vietnamnet.vn/luoc-long-non-trong-bao-lau-cach-luoc-long-non-khong-bi-dai-2514460.html",
+      "accessed": "2026-10-31",
+      "note": "Bài của VietnamNet: lòng non luộc 4–5 phút tính từ khi nước sôi, phải thả vào nước đang sôi bùng, vớt ra ngâm ngay nước lạnh có chanh — đối chiếu thời gian luộc."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): Đối chiếu 3 nguồn báo/biên tập đã mở kiểm chứng (xem recipe_sources): 1 nguồn có định lượng mẻ đầy đủ (500g lòng non), 2 nguồn còn lại là bài kỹ thuật luộc lòng của Điện Máy XANH và VietnamNet — cả ba thống nhất quy trình sơ chế và thời gian luộc. Định lượng: giữ nguyên — mẻ 500g của nguồn thường dùng cho 2–3 người ăn, tương thích với 200g/khẩu phần trong file. Ghi nhận bất thường: nước chấm ăn kèm (mắm tôm hoặc nước mắm gừng) được nhắc trong bước nấu và cả 3 nguồn nhưng file chưa có dòng nguyên liệu riêng cho nước chấm — không tự thêm, chờ chủ dự án quyết. Bước nấu viết lại 7 bước.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

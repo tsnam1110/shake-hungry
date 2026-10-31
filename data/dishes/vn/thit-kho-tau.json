@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "kho",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -106,15 +106,35 @@
     }
   ],
   "recipe_steps": [
-    "Ướp thịt ba chỉ với nước mắm, đường, hành tỏi; thắng nước màu.",
-    "Kho thịt với nước dừa tươi lửa nhỏ đến khi thịt mềm, nước sệt.",
-    "Cho trứng vịt đã luộc, bóc vỏ vào kho tiếp cho thấm màu."
+    "Thịt ba chỉ rửa sạch, chần nhanh qua nước sôi khoảng 2 phút để ra bọt bẩn, vớt ra rửa lại và cắt miếng vuông vừa ăn khoảng 3–4 cm.",
+    "Trứng vịt luộc chín trong 10–12 phút, ngâm nước lạnh cho dễ bóc vỏ; có thể khứa nhẹ vài đường quanh lòng trắng để khi kho trứng thấm màu đều.",
+    "Hành tím và tỏi bóc vỏ, băm nhỏ. Ướp thịt với nước mắm, đường, hành tỏi băm và ít tiêu trong 20–30 phút cho thấm.",
+    "Cho chút dầu vào nồi, thắng đường đến khi chuyển màu cánh gián và hơi sủi bọt thì cho thịt vào đảo đều trên lửa vừa đến khi thịt săn lại, bề mặt áo màu nâu bóng.",
+    "Đổ nước dừa tươi vào xâm xấp mặt thịt, đun sôi rồi hạ lửa nhỏ, hớt bọt, kho liu riu khoảng 45–60 phút đến khi thịt mềm, dùng đũa xăm thấy dễ dàng xuyên qua.",
+    "Cho trứng đã bóc vỏ vào nồi, kho thêm 20–30 phút, thỉnh thoảng trở nhẹ để trứng ngấm màu đều các mặt; nêm lại nước mắm, đường cho vị mặn ngọt hài hòa.",
+    "Khi nước kho sệt lại và bóng mỡ, tắt bếp, rắc thêm tiêu xay. Dọn ăn nóng với cơm trắng, dưa chua hoặc rau luộc."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/2-cach-lam-thit-kho-trung-nuoc-dua-thom-ngon-dam-da-cho-bua-10234",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy Xanh: 2 cách thịt kho trứng nước dừa, định lượng cho 4 người (thịt 800g, trứng gà/vịt, nước dừa) — đối chiếu thịt, trứng, nước dừa mỗi khẩu phần."
+    },
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-thit-kho-tau-bang-noi-ap-suat-dien-da-nang-de-dang-08997",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy Xanh: thịt kho tàu bằng nồi áp suất (2,5kg thịt, 10 trứng vịt, nước dừa 2 trái cho 4 người) — cho thấy biên độ định lượng của mẻ Tết rất lớn."
+    },
+    {
+      "url": "https://thuvienso.com.vn/upload/library/263310/preview/thit-kho-tau-va-ca-kho-to-263310.pdf",
+      "accessed": "2026-10-31",
+      "note": "Sách dạy nấu ăn (thuvienso): thịt kho tàu 500g thịt ba rọi, 5 trứng vịt, 500ml nước dừa — đối chiếu tỉ lệ thịt : trứng : nước dừa."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): đã đối chiếu 3 nguồn công thức đã mở kiểm chứng (2 bài Điện Máy Xanh + 1 sách dạy nấu ăn). Định lượng thịt mỗi khẩu phần giữa các nguồn dao động rất lớn (khoảng 125–625g vì có mẻ Tết nấu nồi áp suất) — hai nguồn bất đồng >30% nên giữ nguyên mọi quantity trong file theo quy tắc phân xử. Trứng vịt 60g (khoảng 1 quả/khẩu phần) và nước dừa tươi 80g nằm trong khoảng các nguồn. recipe_steps viết lại hoàn toàn thành 7 bước. Không sửa phân loại.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "kho",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -106,15 +106,35 @@
     }
   ],
   "recipe_steps": [
-    "Cá bống làm sạch, ướp nước mắm, đường thốt nốt và tiêu xay 20 phút.",
-    "Thắng đường với dầu ăn cho lên màu cánh gián, cho hành tím và tỏi vào phi thơm.",
-    "Xếp cá vào nồi đất, kho lửa nhỏ đến khi nước keo lại, rắc tiêu và hành lá."
+    "Sơ chế cá bống: đánh vảy, cắt bỏ đầu và ruột, chà xát muối lên thân cá cho hết nhớt, rửa lại nhiều lần với nước sạch, để thật ráo.",
+    "Bóc vỏ hành tím và tỏi rồi băm nhỏ; hành lá rửa sạch cắt nhỏ; ớt rửa sạch, để nguyên trái hoặc cắt lát.",
+    "Ướp cá với nước mắm, đường thốt nốt, tiêu xay và một ít hành tỏi băm khoảng 15–20 phút (có thời gian thì ướp lâu hơn) cho cá thấm vị và săn thịt.",
+    "Cho dầu ăn và một ít đường vào nồi đất, đun lửa nhỏ thắng đến khi đường tan và chuyển màu cánh gián thì cho hành tím, tỏi vào phi thơm vàng.",
+    "Xếp cá đã ướp vào nồi, thêm ít nước xâm xấp mặt cá, đun lửa vừa đến khi sôi thì hạ lửa nhỏ, kho khoảng 20–30 phút; hạn chế đảo để cá không nát, chỉ lắc nhẹ nồi hoặc trở cá một lần.",
+    "Kho đến khi nước rút còn khoảng một phần ba, sánh sệt và áo đều quanh cá, thịt cá săn chắc, màu nâu bóng thì nêm nếm lại cho vừa miệng.",
+    "Tắt bếp, rắc thêm tiêu xay và hành lá lên mặt, dọn nồi cá còn nóng, ăn với cơm trắng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-nau-ca-bong-kho-tieu-don-gian-dam-vi-an-la-nghien-01363",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy Xanh: cho 2 người, cá bống 400g, nước mắm 3 muỗng canh, ướp 15–20 phút rồi kho đến khi nước còn khoảng 1/3 — đối chiếu cá theo khẩu phần (200g)."
+    },
+    {
+      "url": "https://vietnamnet.vn/cach-lam-ca-bong-kho-tieu-ngon-chuan-vi-2195212.html",
+      "accessed": "2026-10-31",
+      "note": "VietnamNet (2023): cá bống 500g, tiêu hạt 20g, hành tỏi 50g cho một mẻ, kho nồi đất lửa liu riu 30–40 phút — đối chiếu mẻ kho và kỹ thuật."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/17315502",
+      "accessed": "2026-10-31",
+      "note": "Của Kim Dung: cho 4 người, cá bống 600g, thắng đường màu cánh gián trong nồi đất — đối chiếu cá theo khẩu phần (150g)."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): Đã mở kiểm chứng 3 nguồn công thức thật (Điện Máy Xanh, VietnamNet, Cookpad của Kim Dung) và đối chiếu định lượng theo khẩu phần. Định lượng: cá bống theo khẩu phần ở Điện Máy Xanh là 200g và ở Cookpad là 150g — hai nguồn chênh nhau hơn 30% nên không tạo đồng thuận; file 180g nằm giữa khoảng nguồn, giữ nguyên toàn bộ định lượng, không sửa dòng nào. Ghi nhận: nhiều biến thể nguồn kho cá bống cùng thịt ba chỉ hoặc thịt vai (khoảng 75–100g mỗi mẻ) và đôi khi thêm nước dừa; file không có các dòng này — đây là biến thể hợp lệ (bản Điện Máy Xanh cũng không có thịt), không tự thêm dòng theo quy tắc. Viết lại hoàn toàn recipe_steps bằng lời riêng (7 bước). Rà phân loại: loai:mon-chinh, cooking_method kho, region vn-south, meal_slots trưa/tối đều phù hợp — không sửa. Đạt Mức 2.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

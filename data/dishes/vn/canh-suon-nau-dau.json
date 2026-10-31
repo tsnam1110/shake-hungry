@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -34,7 +34,7 @@
   "ingredients": [
     {
       "ingredient_slug": "suon-lon",
-      "quantity": 100,
+      "quantity": 180,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -106,15 +106,35 @@
     }
   ],
   "recipe_steps": [
-    "Sườn chần qua nước sôi, rửa sạch; đậu trắng ngâm nở trước vài giờ.",
-    "Hầm sườn với đậu trắng đến khi cả hai cùng mềm, hớt bọt cho nước trong.",
-    "Thêm cà rốt và hành tây nấu chín, nêm nước mắm, rắc hành lá và tiêu."
+    "Sơ chế đậu: đậu trắng khô ngâm nước 6–8 giờ (tốt nhất qua đêm) cho nở, rửa sạch, luộc sơ khoảng 15 phút rồi đổ bỏ nước luộc đầu.",
+    "Sơ chế sườn: sườn rửa sạch, chặt khúc vừa ăn, chần nước sôi 5 phút cho hết bọt bẩn, rửa lại; ướp sườn với nước mắm, muối và tiêu khoảng 15 phút.",
+    "Cà rốt gọt vỏ, rửa sạch, cắt khúc vừa ăn; hành tây bóc vỏ, bổ múi cau.",
+    "Phi thơm hành tím với dầu ăn, cho sườn vào xào lửa vừa khoảng 5 phút đến khi thịt săn và hơi xém cạnh.",
+    "Phi thơm một phần hành tây băm với dầu ăn, cho sườn vào xào lửa vừa khoảng 5 phút đến khi thịt săn và hơi xém cạnh.",
+    "Khi sườn và đậu gần mềm, cho cà rốt và hành tây vào nấu thêm 10–15 phút đến khi rau củ chín mềm.",
+    "Nêm lại nước mắm, muối và tiêu cho vừa ăn, rắc hành lá thái nhỏ, múc ra tô dùng nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/2-cach-lam-suon-heo-nau-dau-trang-thom-ngon-bo-duong-cho-ca-09791",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy Xanh — 2 cách, đều cho 3 người: sườn non 500 g; đậu trắng bi 100 g hoặc đậu thận trắng 50 g; hầm sườn với đậu 25–30 phút đến 1 giờ."
+    },
+    {
+      "url": "https://bepxua.vn/cong-thuc-mon-an-suon-nau-dau-trang-co-the-ban-chua-biet/",
+      "accessed": "2026-10-31",
+      "note": "Bếp Xưa — cho 4 người: sườn non 800 g, đậu trắng 300 g, nước dừa 800 ml; ngâm đậu 1 giờ rồi luộc, ninh sườn khoảng 40 phút trước khi cho đậu và rau củ."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/9745938",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Sườn non nấu đậu của QUÂN NGUYỄN: sườn non 500 g, đậu trắng tươi 200 g, sốt cà chua 50 g, nước dừa 1 trái; chiên sơ sườn rồi hầm chung đậu."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): đã đối chiếu 3 nguồn công thức thật (Điện Máy Xanh, Bếp Xưa, Cookpad). Phân xử định lượng — suon-lon: 100 → 180 g: hai nguồn ghi rõ số khẩu phần tương đối khớp nhau khi quy về khẩu phần (Điện Máy Xanh 500 g/3 người ≈ 167 g; Bếp Xưa 800 g/4 người = 200 g), số cũ lệch hơn 30% so với cả hai nên nâng về gần đồng thuận nguồn (180 g, và tổng nguyên liệu thô mỗi khẩu phần sau sửa ≈290 g, khớp phần ăn 300 g của file). Giữ nguyên đậu trắng 50 g: các nguồn bất đồng lớn (Điện Máy Xanh 17–33 g/khẩu phần tuỳ loại đậu, Bếp Xưa 75 g, Cookpad dùng đậu tươi 200 g/mẻ không ghi khẩu phần) và không thống nhất đậu khô hay tươi. Cà rốt 30 g và hành tây 20 g khớp khoảng nguồn (33–50 g và 17–33 g), giữ nguyên. Ghi nhận: nguồn thường hầm bằng nước dừa và nhiều bản có cà chua/tương cà tạo màu — file là bản canh trong, không bổ sung dòng. Bước nấu viết lại 7 bước.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

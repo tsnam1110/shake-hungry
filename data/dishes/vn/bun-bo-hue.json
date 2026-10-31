@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -46,7 +46,7 @@
     },
     {
       "ingredient_slug": "bap-bo",
-      "quantity": 40,
+      "quantity": 60,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -54,7 +54,7 @@
     },
     {
       "ingredient_slug": "thit-bo-nam",
-      "quantity": 40,
+      "quantity": 60,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -166,15 +166,36 @@
     }
   ],
   "recipe_steps": [
-    "Hầm bắp bò, nạm và giò heo với sả đập dập, vớt thịt thái lát.",
-    "Hòa mắm ruốc với nước lạnh, lắng trong, cho vào nồi nước dùng, nêm đường phèn, nước mắm, ớt bột.",
-    "Trụng bún, xếp thịt, giò, huyết, chan nước dùng, ăn kèm rau muống bào, bắp chuối và rau thơm."
+    "Bắp bò, nạm bò và giò heo rửa sạch, chần nước sôi 3-5 phút rồi rửa lại cho sạch bọt; bó chặt bắp bò bằng dây, chặt giò heo thành khoanh vừa ăn.",
+    "Cho thịt bò và giò heo vào nồi nước cùng sả đập dập và hành tây, đun sôi rồi hớt bọt, hạ lửa hầm 60-90 phút đến khi thịt mềm, giò vừa giòn sần sật thì vớt ra để nguội, thái lát mỏng.",
+    "Hòa mắm ruốc với nước lạnh, khuấy tan rồi để yên 20-30 phút cho lắng cặn, chỉ chắt lấy phần nước trong phía trên, bỏ phần cặn đáy.",
+    "Phi thơm sả băm với chút dầu ăn, cho ớt bột vào đảo nhanh cho lên màu đỏ rồi tắt bếp, để riêng làm phần sa tế tạo màu và vị cay cho nồi nước dùng.",
+    "Cho nước mắm ruốc đã lắng vào nồi nước dùng, nêm đường phèn, nước mắm và muối cho vị đậm đà; cho huyết heo đã luộc chín, cắt miếng vào nấu sôi lại khoảng 5 phút.",
+    "Cho phần sa tế sả ớt vào nồi, nêm nếm lại lần cuối sao cho nước dùng thơm rõ mùi sả và mắm ruốc, cay nhẹ, mặt nước có lớp màu đỏ đẹp.",
+    "Trụng bún sợi to qua nước sôi cho nóng và ráo, cho vào tô; xếp bắp bò, nạm bò, một khoanh giò heo và huyết lên trên, rắc hành lá và hành tây thái mỏng.",
+    "Chan nước dùng đang sôi ngập tô, dọn kèm rau muống bào, bắp chuối, húng quế, chanh và ớt; ăn nóng ngay sau khi chan."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-nau-bun-bo-hue-dam-da-dung-vi-cho-bua-sang-ngay-tet-00541",
+      "accessed": "2026-10-31",
+      "note": "Điện máy XANH, cho 4 người: chân giò heo 1kg, nạm bò 500g, mắm ruốc 2 muỗng canh, sả 7 cây; ninh giò với sả và hành tây, chắt phần nước trong của mắm ruốc đã hòa."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/10894646",
+      "accessed": "2026-10-31",
+      "note": "Công thức của Lê Hồ trên Cookpad, 4 người ăn: bắp bò 500g, giò heo 500g, bún 1kg, mắm ruốc Huế 2 muỗng canh; hầm nồi áp suất 45-60 phút."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/6656594",
+      "accessed": "2026-10-31",
+      "note": "Công thức của Trần Dzung trên Cookpad, 5 phần ăn: bắp bò 500g, 2 chân giò lợn trước, mắm ruốc Huế 2 muỗng canh, ớt khô Huế 50g; làm sa tế dầu điều với sả và riềng xay."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. THIẾU NGUYÊN LIỆU: chả cua (vai trò phụ, tùy chọn) — cần bổ sung vào kho.",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. THIẾU NGUYÊN LIỆU: chả cua (vai trò phụ, tùy chọn) — cần bổ sung vào kho. Nâng Mức 2 đợt 1 (2026-10-31): Đã đối chiếu 3 nguồn công thức thật (Điện máy XANH, Cookpad/Lê Hồ, Cookpad/Trần Dzung). Phân xử định lượng thịt bò: bap-bo 40 → 60 và thit-bo-nam 40 → 60 (tổng thịt bò mỗi tô của file là 80g, trong khi Điện máy XANH và Cookpad/Lê Hồ đều ở mức 125g thịt bò mỗi khẩu phần và tương đối khớp nhau, Cookpad/Trần Dzung ở mức 100g; đưa tổng lên 120g cho gần đồng thuận nguồn). Mắm ruốc 8g khớp cả ba nguồn (2 muỗng canh mỗi mẻ 4-5 phần, khoảng 7-9g/phần), giữ nguyên. Giò heo giữ nguyên 50g: các nguồn cân cả khoanh còn xương (125-250g/khẩu phần) nên không quy trực tiếp sang phần thịt ăn được trong tô của file. Bún giữ nguyên 150g: các nguồn bất đồng lớn (Điện máy XANH ghi 200g cho cả 4 người — nhiều khả năng là lỗi ghi của nguồn — so với 250g/người ở Cookpad/Lê Hồ). Phân loại (loai:bun-pho-mi, nau, vn-hue, sáng/trưa/tối) rà soát, không sai rõ ràng, giữ nguyên.",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

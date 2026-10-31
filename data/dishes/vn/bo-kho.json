@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "kho",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -150,15 +150,36 @@
     }
   ],
   "recipe_steps": [
-    "Ướp thịt bò với bột cà ri, ngũ vị hương, sả, tỏi, nước mắm.",
-    "Xào săn thịt, thêm nước (và nước cốt dừa) kho lửa nhỏ đến khi thịt mềm.",
-    "Cho cà rốt, hành tây vào kho tiếp đến chín, ăn nóng kèm bánh mì."
+    "Thịt bò chà muối và gừng đập dập, rửa sạch, chần qua nước sôi 2-3 phút rồi rửa lại cho hết bọt bẩn, cắt khối vuông 3-4cm vừa ăn.",
+    "Ướp bò với sả băm, hành tỏi băm, bột cà ri, ngũ vị hương, nước mắm và đường ít nhất 30 phút cho thấm; để ngăn mát qua đêm thì thịt càng thấm và thơm.",
+    "Cà rốt gọt vỏ, cắt khúc vừa ăn; hành tây cắt múi cau; phần sả còn lại đập dập, cắt khúc để thả vào nồi khi hầm.",
+    "Bắc nồi lên bếp, cho dầu ăn vào phi thơm hành tỏi và sả băm, cho bò đã ướp vào xào lửa lớn 5-7 phút đến khi thịt săn mặt và lên màu nâu đẹp.",
+    "Đổ nước lọc và nước cốt dừa (nếu dùng) cho ngập mặt thịt, thả sả đập dập vào, đun sôi rồi hớt bọt, hạ lửa nhỏ hầm liu riu 60-90 phút đến khi xiên đũa qua miếng thịt dễ dàng là thịt đã mềm.",
+    "Khi thịt gần mềm, cho cà rốt vào hầm tiếp 15-20 phút đến khi cà rốt chín mềm nhưng chưa nát, sau đó cho hành tây vào nấu thêm 3-5 phút cho vừa chín.",
+    "Nêm lại nước mắm và đường cho vị mặn ngọt hài hòa, nước kho hơi sánh nhẹ là đạt; tắt bếp và để nghỉ vài phút cho thịt ngấm thêm.",
+    "Múc bò kho ra tô, rắc húng quế và ớt thái lát, dùng nóng với bánh mì, cơm hoặc hủ tiếu, chấm kèm muối tiêu chanh."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-nau-bo-kho-banh-mi-dam-da-doi-vi-cho-nhung-ngay-chan-com-10087",
+      "accessed": "2026-10-31",
+      "note": "Điện máy XANH, cho 4 người: thịt thăn bò 500g, cà rốt 2 củ, bánh mì 5 ổ, húng quế 50g; ướp xốt gia vị bò kho, hầm nước dừa 40 phút rồi cho cà rốt hầm thêm 10 phút."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/11024889",
+      "accessed": "2026-10-31",
+      "note": "Công thức của Mỹ Hạnh trên Cookpad, cho 2 người: 500g nạm bò, 4 củ cà rốt, 1 trái dừa xiêm, hoa hồi và quế; ướp sả tỏi, hầm nồi áp suất cùng nước dừa."
+    },
+    {
+      "url": "https://tailieu.duytan.edu.vn/tailieu/2015/20150504/huynhthuy1702/cach_nau_bo_kho_7_4373.pdf?rand=567147",
+      "accessed": "2026-10-31",
+      "note": "Giáo trình dạy nấu ăn (thư viện Đại học Duy Tân): 1,2kg thịt bò, 1 gói gia vị bò kho 25g, 6-7 cọng sả; ướp 15-20 phút, hầm nồi áp suất 15 phút hoặc nồi thường 30-40 phút."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): Đã đối chiếu 3 nguồn công thức thật (Điện máy XANH, Cookpad/Mỹ Hạnh, giáo trình dạy nấu ăn Duy Tân). Định lượng: thịt bò/khẩu phần giữa hai nguồn có ghi số người bất đồng lớn (125g ở Điện máy XANH so với 250g ở Cookpad) nên theo quy tắc giữ nguyên 180g của file; cà rốt cũng bất đồng (khoảng 40g so với khoảng 160g/người), giữ nguyên 60g. Phân loại (loai:mon-chinh, kho, vn-south, sáng/trưa/tối) rà soát, không sai rõ ràng, giữ nguyên.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

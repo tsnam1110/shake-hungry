@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -190,15 +190,36 @@
     }
   ],
   "recipe_steps": [
-    "Hầm xương bò lấy nước dùng trong, nêm hồi, quế, thảo quả, gừng nướng.",
-    "Nạm và bắp bò luộc trong nước dùng, thái lát mỏng; thịt thăn thái mỏng để tái.",
-    "Trụng bánh phở, xếp thịt, chan nước dùng sôi cho thịt tái chín, thêm hành, rau thơm, giá."
+    "Xương bò rửa sạch, chần trong nước sôi khoảng 5 phút, đổ bỏ nước đầu và rửa lại xương cho sạch bọt bẩn. Thịt nạm rửa sạch; bắp bò buộc chặt bằng dây để khi luộc không bị bung thớ.",
+    "Nướng hành tây, hành tím và gừng trên bếp đến khi xém thơm; rang sơ hoa hồi, quế và thảo quả trên chảo khô 2-3 phút cho dậy mùi rồi cho vào túi vải buộc kín.",
+    "Cho xương vào nồi nước mới, đun sôi và hớt bọt kỹ, hạ lửa nhỏ hầm liu riu 2-3 giờ. Trong thời gian đó cho nạm và bắp bò vào luộc chung 60-90 phút đến khi thịt mềm thì vớt ra ngâm nước lạnh cho thịt không bị thâm, để nguội rồi thái lát mỏng.",
+    "Thả túi gia vị cùng hành, gừng đã nướng vào nồi nước dùng, hầm thêm 30-45 phút; nêm muối, đường phèn và nước mắm cho vị ngọt thanh, nước dùng trong và thơm nhẹ mùi hồi quế là đạt.",
+    "Thịt thăn bò thái lát thật mỏng ngang thớ, xếp riêng để làm thịt tái. Hành lá, rau mùi, ngò gai thái nhỏ; hành tây thái lát mỏng ngâm nước đá cho bớt hăng; giá và húng quế rửa sạch, để ráo.",
+    "Trụng bánh phở trong nước sôi 15-30 giây cho sợi vừa mềm mà vẫn dai, vớt ra cho ngay vào tô đã tráng nước nóng.",
+    "Xếp thịt nạm, bắp bò thái lát và thịt thăn sống lên trên bánh phở, rắc hành lá, rau mùi và hành tây thái mỏng.",
+    "Chan nước dùng đang sôi mạnh ngập tô để thịt tái vừa chín tới, thịt chuyển hồng đều; dọn ngay kèm giá, rau thơm, chanh và ớt, ăn nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-nau-pho-bo-ha-noi-chuan-vi-nuoc-dung-ngot-thanh-don-gian-22475?srsltid=AfmBOoqy2VBD0NYrw5Oqs_uq2YgYUDS3jcxpeqUmORul8PYEVBXfmsXD",
+      "accessed": "2026-10-31",
+      "note": "Điện máy XANH (phở bò Hà Nội), cho 6 người: bắp bò 800g, thịt bò tái 800g, thảo quả 2 quả, hoa hồi 10 cái; ninh xương 2 giờ, làm nguội bắp bò trong nước dùng rồi thái mỏng."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/24319506",
+      "accessed": "2026-10-31",
+      "note": "Công thức của Huỳnh Phát trên Cookpad, 10-12 người: bánh phở 2kg (ghi rõ 120-150g mỗi tô), thăn bò, nạm gầu và bắp bò mỗi loại 500g; hầm nước dùng nhiều giờ với túi gia vị rang."
+    },
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-nau-pho-bo-nam-dinh-thom-ngon-hap-dan-chuan-vi-quan-tai-14638",
+      "accessed": "2026-10-31",
+      "note": "Điện máy XANH (phở bò Nam Định), cho 10 người: bắp bò 800g, nạm bò 1,5kg, thịt bò 500g, xương ống 3kg; hầm nước dùng 8-12 giờ, luộc nạm và bắp trong nước dùng 30-40 phút."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): Đã đối chiếu 3 nguồn công thức thật (Điện máy XANH phở Hà Nội, Cookpad/Huỳnh Phát, Điện máy XANH phở Nam Định). Định lượng: tổng thịt bò mỗi tô giữa các nguồn bất đồng rất lớn (khoảng 135g ở Cookpad so với 265-280g ở hai công thức Điện máy XANH) nên theo quy tắc giữ nguyên các dòng thịt của file; bánh phở chỉ một nguồn (Cookpad) ghi theo tô là 120-150g, hai nguồn còn lại không ghi lượng bánh phở, chưa đủ cơ sở đổi 180g của file — giữ nguyên và ghi nhận độ lệch này. Phân loại (loai:bun-pho-mi, nau, vn-ha-noi, sáng/trưa/tối) rà soát, không sai rõ ràng, giữ nguyên.",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -106,15 +106,35 @@
     }
   ],
   "recipe_steps": [
-    "Măng tươi thái lát, luộc qua cho hết đắng rồi xả sạch; cá chép làm sạch, cắt khúc, ướp chút muối.",
-    "Phi hành tím, xào măng sơ, đổ nước vào đun sôi.",
-    "Cho cá vào nấu chín, nêm nước mắm, rắc hành lá, thì là và ớt, dùng nóng."
+    "Sơ chế cá: cá chép đánh vảy, bỏ mang, ruột và màng đen trong bụng, cắt khúc dày 2–3 cm, xát muối rửa sạch rồi để ráo.",
+    "Sơ chế măng: măng tươi thái lát mỏng, luộc với nước có chút muối 2 lần, mỗi lần khoảng 10 phút và mở vung cho bay hơi đắng, rửa lại nước sạch.",
+    "Rán sơ cá: đun nóng dầu, cho cá vào rán lửa vừa đến khi hai mặt săn và hơi vàng để cá không bị nát khi nấu và bớt tanh.",
+    "Phi thơm hành tím, cho măng vào xào 3–5 phút với chút nước mắm cho thấm gia vị.",
+    "Đổ nước sôi ngập măng, đun khoảng 10 phút rồi nhẹ nhàng thả cá đã rán vào nồi.",
+    "Hạ lửa nhỏ nấu thêm 10–15 phút đến khi cá chín nhừ, nước canh ngọt; nêm lại nước mắm và muối cho vừa miệng.",
+    "Tắt bếp, rắc hành lá và thì là thái nhỏ lên trên, múc ra tô dùng nóng với cơm."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://cakholangvudai.com/mon-ngon-moi-ngay/huong-dan-lam-mon-canh-ca-chep-nau-mang-ngon-tuyet/",
+      "accessed": "2026-10-31",
+      "note": "Cá kho làng Vũ Đại: cá chép 500 g, măng chua 300 g, cà chua 2 quả; rán sơ cá, luộc măng 5 phút, nấu nhỏ lửa 20 phút."
+    },
+    {
+      "url": "https://yummyday.vn/ca-chep-nau-canh-chua-661",
+      "accessed": "2026-10-31",
+      "note": "YummyDay — mục cá chép nấu măng chua: cá chép 600 g, măng chua 500 g, cà chua 1 quả to; phi hành, xào cà chua và măng trước khi thêm nước."
+    },
+    {
+      "url": "https://cdn.tailieu.vn/files/samples/2011/20111101/huongdanhoctot_7/canh_ca_nau_mang_cho_com_chieu_ngon_hon_666.pdf",
+      "accessed": "2026-10-31",
+      "note": "Tài liệu sách dạy nấu ăn (tailieu.vn): cá chép 600 g, măng chua 300 g, cà chua 3 quả; măng luộc kỹ 1–2 lần mở vung, nấu cá khoảng 15 phút."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): đã đối chiếu 3 nguồn công thức thật (Cá kho làng Vũ Đại, YummyDay, tài liệu sách dạy nấu ăn). Định lượng: cá chép nguồn 500–600 g/mẻ, quy về khẩu phần khoảng 125–150 g — file 120 g khớp trong ngưỡng, giữ; măng nguồn 300–500 g/mẻ → khoảng 75–125 g/khẩu phần — file 100 g nằm giữa khoảng, giữ. Bất thường ghi nhận, không tự sửa: cả 3 nguồn đều dùng măng chua và có cà chua, file dùng măng tươi và không có cà chua — tên món trong file là 'canh măng nấu cá chép' (không ghi chua) nên có thể là biến thể chủ ý, chờ chủ dự án quyết. Bước nấu viết theo măng tươi cho khớp nguyên liệu của file, 7 bước.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

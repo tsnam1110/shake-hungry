@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -114,15 +114,35 @@
     }
   ],
   "recipe_steps": [
-    "Tôm bóc vỏ; các loại rau tập tàng (rau muống, mồng tơi, rau ngót, rau dền) nhặt rửa sạch, cắt khúc; mướp cắt miếng.",
-    "Phi hành tím, xào tôm săn, đổ nước đun sôi.",
-    "Cho mướp vào trước, tiếp đến các loại rau, nấu vừa chín tới, nêm vừa ăn, dùng nóng."
+    "Tôm bóc vỏ, bỏ chỉ đen trên lưng, rửa sạch, ướp với một chút muối khoảng 10 phút; có thể giữ lại đầu và vỏ tôm, giã lọc lấy nước để nước canh thêm ngọt.",
+    "Các loại rau nhặt lấy lá và ngọn non, bỏ cọng già; mướp gọt vỏ, cắt miếng vừa ăn; rửa rau nhẹ tay nhiều lần cho sạch cát, để ráo. Hành tím bóc vỏ, đập dập, băm nhỏ.",
+    "Đặt nồi lên bếp, cho dầu ăn và hành tím vào phi trên lửa vừa khoảng 1 phút đến khi hành vàng, dậy mùi thơm.",
+    "Cho tôm vào xào nhanh 1–2 phút đến khi tôm săn lại, chuyển màu hồng cam thì đổ khoảng 1–1,2 lít nước vào, đun sôi và hớt bọt cho nước trong.",
+    "Nêm muối và nước mắm cho vừa ăn; cho phần rau lâu chín (rau muống, mướp) vào trước, nấu khoảng 1 phút.",
+    "Cho tiếp các rau mềm (mồng tơi, rau ngót, rau dền) vào, đảo nhẹ một lượt và nấu thêm 1–2 phút đến khi rau vừa chín tới, còn giữ màu xanh — tổng thời gian nấu rau không quá khoảng 3 phút.",
+    "Tắt bếp, múc canh ra tô và ăn nóng ngay với cơm; không đậy nắp nồi lâu sau khi nấu để rau không bị thâm và ra nước."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://vnexpress.net/cach-nau-canh-rau-tap-tang-xanh-trong-ngot-nuoc-5135179.html",
+      "accessed": "2026-10-31",
+      "note": "Công thức của đầu bếp Vũ Nhất Thông (VnExpress Cooking) cho 4 người: rau tập tàng 300g, tôm tươi 150g — đối chiếu định lượng và nguyên tắc thả rau cứng trước, rau mềm sau, tổng thời gian nấu rau tối đa 3 phút."
+    },
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/canh-tap-tang-nau-tom-ngot-ngon-dung-dieu-thanh-mat-giai-07685",
+      "accessed": "2026-10-31",
+      "note": "Hai công thức canh tập tàng nấu tôm (biên tập Đoan Nguyễn): bản 4 người dùng rau ngót 200g + mồng tơi 300g + rau dền 200g; bản 2 người dùng 300g rau tổng — đối chiếu tổ hợp rau và định lượng. Lưu ý bản 4 người ghi tôm khô 400g, bất thường so với mặt bằng chung."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/16404026-canh-rau-t%E1%BA%ADp-tang-n%E1%BA%A5u-tom",
+      "accessed": "2026-10-31",
+      "note": "Công thức của Rose Truong cho 2–3 người: tôm tươi 200g, rau tập tàng 400g (mồng tơi, rau đay, rau ngót...) — đối chiếu định lượng theo khẩu phần."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 300 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): Đối chiếu 3 nguồn công thức đã mở kiểm chứng (xem recipe_sources). Định lượng: giữ nguyên toàn bộ. Lượng rau mỗi khẩu phần giữa các nguồn bất đồng >30% (75g ở VnExpress so với 150–175g ở hai nguồn còn lại); tôm cũng bất đồng (37,5g tôm tươi ở VnExpress so với ≈80g ở Cookpad) nên giữ tôm 50g và tổng rau 190g như file. Ghi nhận: mướp và rau muống trong file không xuất hiện trong danh sách rau của 3 nguồn (rau tập tàng vốn là rau vườn tùy hứng nên coi là khác biệt biến thể); nguồn Điện Máy XANH ghi tôm khô 400g/4 người là số bất thường của chính nguồn. Bước nấu viết lại 7 bước.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

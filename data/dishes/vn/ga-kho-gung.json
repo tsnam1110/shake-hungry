@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "kho",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -98,15 +98,34 @@
     }
   ],
   "recipe_steps": [
-    "Chặt gà miếng vừa ăn, ướp nước mắm, đường, gừng thái sợi, hành tỏi.",
-    "Thắng nước màu, cho gà vào đảo săn.",
-    "Kho lửa nhỏ đến khi gà thấm, nước sệt bóng; rắc tiêu, ăn nóng với cơm."
+    "Gà rửa sạch với muối và ít gừng giã để khử mùi, chặt miếng vừa ăn khoảng 3–4 cm, để ráo nước.",
+    "Gừng cạo vỏ: một nửa thái sợi, một nửa giã hoặc băm nhỏ; hành tím, tỏi bóc vỏ, băm nhỏ.",
+    "Ướp gà với nước mắm, đường, gừng băm, hành tỏi băm và tiêu trong 15–20 phút cho thấm đều.",
+    "Cho dầu vào nồi, thắng ít đường đến màu vàng nâu nhạt, cho gà vào đảo trên lửa vừa 5–7 phút đến khi thịt săn lại và áo màu bóng.",
+    "Thêm gừng thái sợi và ít nước nóng xâm xấp nửa lượng gà, đun sôi rồi hạ lửa nhỏ, kho 15–20 phút đến khi gà chín mềm, nước kho sệt lại còn ít.",
+    "Nêm lại vị mặn ngọt, rắc thêm tiêu, tắt bếp; dọn nóng với cơm trắng, ăn kèm dưa leo hoặc rau luộc."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.knorr.com/vn/r/g-kho-gng-mn-ngon-d-lm.html/157843",
+      "accessed": "2026-10-31",
+      "note": "Knorr Việt Nam: gà kho gừng 300g thịt gà, ướp 15 phút, xào 5 phút rồi kho khoảng 10 phút — đối chiếu quy trình và thời gian kho."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/10993204",
+      "accessed": "2026-10-31",
+      "note": "Cookpad (Huỳnh Uyên Vũ): gà kho gừng sả kiểu miền Trung, 500g gà, gừng cắt sợi, ướp 15–20 phút — đối chiếu định lượng theo mẻ và cách sơ chế gừng."
+    },
+    {
+      "url": "https://thuvienso.com.vn/upload/library/511566/preview/ga-kho-gung-511566.pdf",
+      "accessed": "2026-10-31",
+      "note": "Sách dạy nấu ăn (thuvienso): gà kho gừng 300g thịt gà, 1 nhánh gừng, 3 muỗng canh nước mắm — đối chiếu định lượng theo mẻ."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): đã đối chiếu 3 nguồn công thức đã mở kiểm chứng (Knorr Việt Nam, Cookpad Huỳnh Uyên Vũ, sách dạy nấu ăn). Hai trong ba nguồn không ghi số khẩu phần nên không quy đổi định lượng mỗi khẩu phần một cách tin cậy; định lượng theo mẻ (300–500g gà) không mâu thuẫn với file nên giữ nguyên mọi quantity. Gừng 15g nằm trong khoảng suy từ các nguồn (1 muỗng canh gừng sợi đến 1 nhánh gừng mỗi mẻ). recipe_steps viết lại hoàn toàn thành 6 bước. Không sửa phân loại.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

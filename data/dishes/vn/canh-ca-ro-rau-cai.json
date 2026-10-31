@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -34,7 +34,7 @@
   "ingredients": [
     {
       "ingredient_slug": "ca-ro-dong",
-      "quantity": 120,
+      "quantity": 65,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -90,15 +90,35 @@
     }
   ],
   "recipe_steps": [
-    "Cá rô đồng làm sạch, luộc chín, gỡ lấy thịt, giữ lại nước luộc cá, lọc bỏ xương.",
-    "Phi gừng, xào sơ thịt cá cho thơm, đổ nước luộc cá vào đun sôi.",
-    "Thả rau cải vào nấu vừa chín, nêm nước mắm, muối, rắc hành lá, dùng nóng với cơm."
+    "Cá rô đồng đánh vảy, bỏ mang và ruột, chà muối cho sạch nhớt, rửa lại nhiều lần và để ráo; rau cải nhặt, rửa sạch, cắt khúc 3–4 cm.",
+    "Gừng cạo vỏ: một phần đập dập cho vào nước luộc cá, phần còn lại thái chỉ; hành lá rửa sạch, cắt nhỏ.",
+    "Đun sôi nước với gừng đập dập, cho cá vào luộc khoảng 5 phút đến khi cá vừa chín, vớt ra để nguội; giữ lại nước luộc và lọc qua rây để loại bỏ xương vụn.",
+    "Gỡ lấy thịt cá, bỏ hết xương và đầu; phần xương có thể giã nát rồi lọc lại với nước luộc để nước canh thêm ngọt. Ướp thịt cá với ít nước mắm cho thơm.",
+    "Phi hành và gừng thái chỉ với chút dầu cho thơm, cho thịt cá vào xào sơ 1–2 phút cho săn và dậy mùi, tránh đảo mạnh làm nát thịt.",
+    "Đổ nước luộc cá đã lọc vào, đun sôi, thả rau cải vào nấu 2–3 phút đến khi cải vừa chín, còn xanh; nêm nước mắm và muối cho vừa ăn.",
+    "Cho phần thịt cá trở lại nồi hoặc bày lên mặt tô khi múc ra, rắc hành lá, tắt bếp; dọn nóng với cơm trắng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/2-cach-nau-canh-ca-ro-rau-cai-va-rau-ngot-don-gian-thanh-mat-04625",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy Xanh: canh cá rô rau cải cho 4 người (cá rô 200g, cải bẹ xanh 500g, gừng) — đối chiếu cá và cải mỗi khẩu phần."
+    },
+    {
+      "url": "https://tailieu.duytan.edu.vn/tailieu/2012/20121220/tunhien11/canh_cai_xanh_ca_ro_537.pdf?rand=344366",
+      "accessed": "2026-10-31",
+      "note": "Sách dạy nấu ăn (thư viện ĐH Duy Tân): canh cải xanh cá rô — cá rô 300g (2 con), cải bẹ xanh 500g, gừng 50g, nước 800ml — đối chiếu định lượng theo nồi."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/7676452-canh-ca-ro-c%E1%BA%A3i-xanh",
+      "accessed": "2026-10-31",
+      "note": "Cookpad (Bòn Bon): canh cá rô cải xanh — quy trình luộc cá, giã xương lọc lấy nước ngọt, gỡ thịt riêng — đối chiếu thứ tự các bước."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Dùng nguyên liệu mới đề xuất: ca-ro-dong (chờ bổ sung file nguyên liệu vào data/ingredients/).",
+  "import_note": "Soạn nháp đợt mở rộng 300 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Dùng nguyên liệu mới đề xuất: ca-ro-dong (chờ bổ sung file nguyên liệu vào data/ingredients/). Nâng Mức 2 đợt 1 (2026-10-31): đã đối chiếu 3 nguồn công thức đã kiểm chứng (Điện Máy Xanh, sách dạy nấu ăn, Cookpad Bòn Bon). Phân xử định lượng: ca-ro-dong 120 → 65g mỗi khẩu phần — hai nguồn có định lượng rõ cho 50g (200g cho 4 người, Điện Máy Xanh) và khoảng 75g (300g mỗi nồi, sách dạy nấu ăn), số cũ cao hơn cả hai nguồn hơn 30%. Cai-ngot 100g so với 125g của cả hai nguồn chỉ lệch −20% nên giữ nguyên. Gừng giữ 5g vì hai nguồn bất đồng (1 nhánh so với 50g mỗi nồi). Lưu ý: cả hai nguồn định lượng đều dùng cải bẹ xanh trong khi file dùng cai-ngot — ghi nhận để chủ dự án phân xử, không tự đổi dòng nguyên liệu. recipe_steps viết lại hoàn toàn thành 7 bước. Không sửa phân loại.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

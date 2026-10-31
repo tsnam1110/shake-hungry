@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "kho",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -122,15 +122,35 @@
     }
   ],
   "recipe_steps": [
-    "Ướp cá chép với riềng giã, nghệ, tương, nước mắm cho thấm.",
-    "Xếp cá và thịt ba chỉ vào nồi, kho lửa nhỏ với ít nước đến khi nước sệt, cá thấm gia vị.",
-    "Rắc tiêu, dùng nóng với cơm."
+    "Cá chép đánh vảy, bỏ mang và ruột, rửa sạch, chà muối để khử nhớt và mùi tanh, rửa lại, cắt khúc dày 3–4 cm, để thật ráo nước.",
+    "Riềng cạo vỏ: một phần thái lát, phần còn lại giã nhuyễn cùng nghệ tươi; hành tím bóc vỏ thái lát. Thịt ba chỉ rửa sạch, cắt miếng mỏng vừa ăn.",
+    "Ướp cá với riềng giã, nghệ, tương bần, nước mắm, đường và tiêu trong 20–30 phút cho thấm; thịt ba chỉ ướp riêng với ít nước mắm và tiêu.",
+    "Lót một lớp riềng thái lát xuống đáy nồi (nồi đất hoặc nồi đáy dày), xếp thịt ba chỉ rồi đến cá lên trên, rưới phần nước ướp vào.",
+    "Đổ nước sôi vào xâm xấp mặt cá, thêm dầu ăn, đun lửa vừa đến khi sôi thì hạ lửa thật nhỏ, kho liu riu 45–60 phút; hạn chế đảo, chỉ lắc nhẹ nồi để cá không nát.",
+    "Khi nước kho sệt còn khoảng một phần ba, cá săn chắc và lên màu nâu đỏ, nêm lại vị mặn ngọt; nếu thích ăn cay, cho ớt tươi vào ở 10 phút cuối.",
+    "Tắt bếp, để cá nghỉ trong nồi khoảng 10 phút cho thấm thêm, rắc tiêu; dọn nóng với cơm trắng. Cá kho để nguội, hâm lại hôm sau ăn càng thấm vị."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://cachnaungon.com/cach-lam-ca-chep-kho-rieng-chuan-vi-mien-bac-11476/",
+      "accessed": "2026-10-31",
+      "note": "Cách Nấu Ngon: cá chép kho riềng chuẩn vị miền Bắc cho 4 người (cá 700g, thịt ba chỉ 200g, kho 45–60 phút) — đối chiếu cá và thịt mỗi khẩu phần."
+    },
+    {
+      "url": "https://bepmina.vn/mon-viet/ca-diec-kho-tuong/",
+      "accessed": "2026-10-31",
+      "note": "Bếp MiNa (tác giả Bếp MiNa): cá diếc kho tương bần cho 5 người (cá 500g, ba chỉ 150g, tương bần, riềng) — đối chiếu biến thể kho tương."
+    },
+    {
+      "url": "https://thuvienso.com.vn/upload/library/263310/preview/thit-kho-tau-va-ca-kho-to-263310.pdf",
+      "accessed": "2026-10-31",
+      "note": "Sách dạy nấu ăn (thuvienso): cá kho tộ 500g cá, 100g thịt ba rọi, ướp khoảng 1 giờ, kho riu riu đến cạn — đối chiếu định lượng theo mẻ."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): đã đối chiếu 3 nguồn công thức đã mở kiểm chứng (Cách Nấu Ngon, Bếp MiNa, sách dạy nấu ăn). Cá mỗi khẩu phần: 175g (cá chép kho riềng) so với 100g (cá diếc kho tương) — hai nguồn bất đồng >30% nên giữ nguyên ca-chep 150g; thit-lon-ba-chi 40g nằm giữa hai nguồn (50g và 30g). recipe_steps viết lại hoàn toàn thành 7 bước theo đúng hồ sơ kho riềng/tương bần của file. Không sửa phân loại; lưu ý region_code vẫn giữ 'vn' dù bộ nguyên liệu (tương bần, riềng, cá chép) thiên rõ về miền Bắc — chờ chủ dự án phân xử.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

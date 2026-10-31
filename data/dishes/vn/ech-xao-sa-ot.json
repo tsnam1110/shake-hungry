@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "xao",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -98,15 +98,35 @@
     }
   ],
   "recipe_steps": [
-    "Ếch làm sạch, chặt miếng, ướp nước mắm, sả băm, tỏi.",
-    "Phi sả tỏi ớt cho thơm, cho ếch vào xào lửa lớn.",
-    "Xào đến khi ếch săn, thấm vị; cho lá lốt thái sợi vào đảo đều."
+    "Sơ chế ếch: lột da, bỏ nội tạng cùng phần gân và xương sống; rửa ếch với nước muối loãng hoặc rượu gừng 2–3 lần cho hết nhớt và tanh, rửa lại nước sạch, để ráo rồi chặt miếng vừa ăn.",
+    "Sả bóc bỏ bẹ già, rửa sạch, băm nhỏ; ớt và tỏi cũng băm nhỏ; hành tím bóc vỏ, băm nhuyễn.",
+    "Ướp ếch với nước mắm, chút muối, đường, tiêu và một phần sả, tỏi, ớt băm khoảng 20–30 phút cho thấm vị.",
+    "Đặt chảo lên bếp lửa vừa, cho dầu ăn vào; dầu nóng thì cho hành tím, tỏi, sả và ớt còn lại vào phi đến khi vàng thơm, dậy mùi sả rõ rệt.",
+    "Cho ếch đã ướp vào, đảo đều và liên tục trên lửa lớn khoảng 3–5 phút đến khi thịt ếch săn lại, hơi xém cạnh.",
+    "Châm thêm ít nước xâm xấp mặt ếch, đun sôi rồi hạ lửa nhỏ, nấu thêm khoảng 5–10 phút, nêm lại hạt nêm, đường, nước mắm cho vừa; nấu đến khi nước cạn sệt, thịt ếch chín mềm, thấm vị và lên màu vàng đẹp.",
+    "Cho lá lốt thái sợi vào đảo nhanh khoảng 1 phút cho dậy mùi (nếu dùng), tắt bếp, bày ra đĩa, rắc chút tiêu xay và dùng nóng với cơm."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://vietnamnet.vn/cach-lam-ech-xao-sa-ot-hap-dan-don-gian-tai-nha-2168253.html",
+      "accessed": "2026-10-31",
+      "note": "VietnamNet (2023): thịt ếch 500g, sả 3 cây cho một mẻ, ướp ếch 30 phút — đối chiếu mẻ ếch và lượng sả."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/816489",
+      "accessed": "2026-10-31",
+      "note": "Của Hien Thai Nguyen: thịt ếch 300g, sả 3 cây, xào lửa riu riu 10–15 phút — đối chiếu định lượng mẻ nhỏ."
+    },
+    {
+      "url": "https://bepxua.vn/cach-lam-ech-xao-sa-ot-ngon-com/",
+      "accessed": "2026-10-31",
+      "note": "Bếp Xưa: cho 4 người, thịt ếch 500g, sả 4 cây, nước mắm 4 muỗng canh — đối chiếu ếch theo khẩu phần (125g)."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): Đã mở kiểm chứng 3 nguồn công thức thật (VietnamNet, Cookpad của Hien Thai Nguyen, Bếp Xưa) và đối chiếu định lượng theo khẩu phần. Định lượng: Bếp Xưa cho 125g ếch mỗi khẩu phần (500g cho 4 người); hai nguồn còn lại cho mẻ 300–500g không ghi khẩu phần, tương đương khoảng 100–167g mỗi khẩu phần. File 150g lệch +20% so với điểm quy chiếu 125g, nằm trong ngưỡng 30% — giữ nguyên toàn bộ. Sả 15g khớp tỉ lệ 3–4 cây sả cho mẻ 500g của nguồn. Ghi nhận bất thường: dòng lá lốt 5g trong file không xuất hiện ở cả 3 nguồn đối chiếu (lá lốt thuộc món riêng là ếch xào lá lốt) — giữ nguyên dòng theo quy tắc không thêm/bớt, đã đưa vào báo cáo đợt này. Viết lại hoàn toàn recipe_steps bằng lời riêng (7 bước). Rà phân loại: loai:mon-chinh, cooking_method xao, region vn, meal_slots trưa/tối đều phù hợp — không sửa. Đạt Mức 2.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -98,15 +98,35 @@
     }
   ],
   "recipe_steps": [
-    "Tôm bóc vỏ, bỏ chỉ lưng, giã dập sơ; rau muống nhặt khúc vừa ăn, rửa sạch.",
-    "Phi tỏi, xào tôm cho săn rồi đổ nước vào đun sôi (cho quả sấu vào nếu thích vị chua nhẹ).",
-    "Thả rau muống vào nấu vừa chín tới, nêm nước mắm, rắc tiêu, dùng nóng."
+    "Sơ chế rau muống: nhặt lấy cọng và lá non, bỏ phần già; ngâm nước muối loãng 7–10 phút, rửa lại nhiều lần cho sạch, cắt khúc khoảng 5 cm, để ráo.",
+    "Sơ chế tôm: bỏ đầu, bóc vỏ, rút chỉ đen ở lưng, rửa sạch; giã nhuyễn khoảng một phần ba số tôm, phần còn lại đập dập để nước canh ngọt mà vẫn còn thịt tôm để ăn.",
+    "Bóc vỏ hành tím rồi băm nhuyễn; hành lá và ngò rí rửa sạch, cắt khúc ngắn.",
+    "Đặt nồi lên bếp lửa vừa, cho dầu ăn vào; khi dầu nóng thì phi hành tím đến khi thơm vàng.",
+    "Cho tôm giã và tôm đập dập vào xào 2–3 phút đến khi tôm chuyển màu cam gạch và săn lại.",
+    "Đổ khoảng 500 ml đến 1 lít nước tùy khẩu phần, đun lửa lớn khoảng 5–10 phút cho tôm ra vị ngọt, hớt bọt, nêm nước mắm, muối và chút đường cho hài hòa.",
+    "Khi nước sôi bùng, thả rau muống vào, ấn nhẹ cho rau ngập nước, nấu thêm khoảng 3 phút đến khi rau vừa chín tới, còn xanh và giòn; cho hành lá và ngò rí vào, tắt bếp, dùng nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-nau-canh-rau-muong-nau-tom-tuoi-thanh-mat-cho-ngay-nang-13302",
+      "accessed": "2026-10-31",
+      "note": "Cho 3 người: rau muống 300g, tôm tươi 100g; giã nhuyễn một phần tôm cho ngọt nước — đối chiếu rau theo khẩu phần (100g)."
+    },
+    {
+      "url": "https://cookbeo.com/recipes/canh-rau-muong-nau-tom",
+      "accessed": "2026-10-31",
+      "note": "Khẩu phần 3: tôm tươi 200g, rau muống 1 bó; giã đầu tôm lọc lấy nước nấu canh — đối chiếu tôm theo khẩu phần (khoảng 67g)."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/15435007",
+      "accessed": "2026-10-31",
+      "note": "Của Rose Truong: rau muống 300g, tôm tươi 200g cho một mẻ canh gia đình — đối chiếu tỉ lệ rau và tôm của mẻ nấu."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Món thay thế cho canh-rau-nhut-tom vì kho chưa có nguyên liệu rau nhút.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Món thay thế cho canh-rau-nhut-tom vì kho chưa có nguyên liệu rau nhút. Nâng Mức 2 đợt 1 (2026-10-31): Đã mở kiểm chứng 3 nguồn công thức thật (Điện Máy Xanh, CookBeo, Cookpad của Rose Truong) và đối chiếu định lượng theo khẩu phần. Định lượng: rau muống nguồn 100g/khẩu phần, file 120g — khớp, giữ nguyên. Tôm: Điện Máy Xanh chỉ 33g/khẩu phần trong khi CookBeo và Cookpad quanh 67g/khẩu phần — các nguồn bất đồng hơn 30% nên theo quy tắc giữ nguyên số của file (60g, sát nhóm CookBeo/Cookpad), không sửa dòng nào. Viết lại hoàn toàn recipe_steps bằng lời riêng (7 bước). Rà phân loại: loai:canh, cooking_method nau, region vn, meal_slots trưa/tối đều phù hợp — không sửa. Đạt Mức 2.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

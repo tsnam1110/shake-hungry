@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -154,21 +154,41 @@
     }
   ],
   "recipe_steps": [
-    "Bóng bì ngâm nước vo gạo cho mềm, bóp rửa với gừng và rượu cho hết mùi, cắt miếng hình thoi; nấm hương ngâm nở.",
-    "Hầm sườn lấy nước dùng trong; thịt xay trộn nấm hương, mộc nhĩ thái chỉ (nếu có) viên mọc, thả vào nước dùng cho chín nổi.",
-    "Lần lượt cho su hào, cà rốt, đậu Hà Lan, trứng cút, tôm khô và bóng bì vào nấu chín tới, nêm thanh nhẹ, rắc hành, mùi, tiêu; món cỗ Hà Nội ăn nóng."
+    "Sơ chế bóng: ngâm bóng bì khô trong nước 30–60 phút cho nở mềm, bóp kỹ với rượu trắng và gừng giã để khử mùi, xả sạch, vắt ráo rồi cắt miếng hình thoi vừa ăn.",
+    "Ninh nước dùng: sườn chần qua nước sôi, rửa sạch, ninh với nước và vài lát gừng 30–40 phút, hớt bọt thường xuyên cho nước trong; tôm khô ngâm nước ấm cho mềm.",
+    "Thịt xay (giò sống) quết nhuyễn cho dai, nặn thành viên mọc tròn nhỏ; nấm hương khô ngâm nước ấm cho nở, cắt bỏ chân cứng.",
+    "Trứng cút luộc chín, bóc vỏ, chiên sơ ngập dầu cho vàng mặt rồi vớt ra để ráo (tùy thích, giúp trứng thơm và dai nhẹ).",
+    "Rau củ: su hào và cà rốt gọt vỏ, thái miếng, tỉa hoa cho đẹp; đậu Hà Lan tước bỏ xơ hai bên, rửa sạch.",
+    "Chần riêng từng loại rau củ trong nồi nước dùng đang sôi đến vừa chín tới thì vớt ra ngay để giữ màu và độ giòn.",
+    "Cho mọc, nấm hương, bóng bì và tôm khô vào nồi nước dùng, nấu 3–5 phút đến khi mọc nổi lên mặt nước là chín; nêm nước mắm, muối và tiêu cho vừa.",
+    "Xếp bóng, rau củ, mọc, nấm và trứng cút vào tô cho hài hòa, chan nước dùng thật nóng, rắc hành lá và rau mùi thái nhỏ, dùng ngay khi còn nóng."
   ],
   "recipe_sources": [
     {
       "url": "https://vi.wikipedia.org/wiki/B%C3%B3ng_b%C3%AC",
       "accessed": "2026-10-31",
       "note": "Bài Wikipedia 'Bóng bì' — mô tả món canh bóng trong mâm cỗ Hà Nội (bóng, vây, măng, miến)."
+    },
+    {
+      "url": "https://www.bachhoaxanh.com/kinh-nghiem-hay/cach-nau-canh-bong-thap-cam-vua-ngon-vua-nhieu-loi-ich-cho-suc-khoe-1272102",
+      "accessed": "2026-10-31",
+      "note": "Bách Hóa Xanh: bóng bì 200 g, giò sống 100 g, xương heo 200 g, nấm hương, đậu Hà Lan, cà rốt; có bản 'canh bóng thả Hà Nội' cho 2 người — đối chiếu thành phần mâm cỗ."
+    },
+    {
+      "url": "https://www.cet.edu.vn/nau-an/mon-an-ngon/canh/canh-bong-thap-cam",
+      "accessed": "2026-10-31",
+      "note": "CET (Chef Lập): da heo 200 g, giò sống 100 g, xương heo 200 g, súp lơ, su hào, trứng gà; kỹ thuật cuộn bóng với giò và phết mọc lên nấm hương."
+    },
+    {
+      "url": "https://thucthan.com/cach-nau-canh-bong-tha",
+      "accessed": "2026-10-31",
+      "note": "Thực Thần — canh bóng thả chuẩn vị Hà Nội: bóng 100 g, xương lợn 200 g, trứng cút 10 quả, su hào/cà rốt/súp lơ/đậu Hà Lan 50 g mỗi loại, giò sống; khớp với file ở chi tiết trứng cút."
     }
   ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Dùng nguyên liệu mới đề xuất: bong-bi (chờ bổ sung file nguyên liệu vào data/ingredients/).",
+  "import_note": "Soạn nháp đợt mở rộng 300 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Dùng nguyên liệu mới đề xuất: bong-bi (chờ bổ sung file nguyên liệu vào data/ingredients/). Nâng Mức 2 đợt 1 (2026-10-31): đã đối chiếu thêm 3 nguồn công thức thật (Bách Hóa Xanh, CET, Thực Thần) ngoài mục Wikipedia đã có (Wikipedia chỉ mô tả món, không tính là nguồn công thức). Định lượng: các nguồn cho theo mẻ cỗ và phần lớn không ghi số khẩu phần (bản Bách Hóa Xanh ghi 200 g bóng khô cho 2 người là số bất thường, thiếu tin cậy), không quy về khẩu phần một cách chắc chắn được nên giữ nguyên toàn bộ định lượng của file — bóng khô 20 g, sườn 60 g, mọc 40 g, trứng cút 20 g đều nằm trong khoảng hợp lý khi chia mẻ cỗ 5–6 tô; riêng trứng cút khớp trực tiếp nguồn Thực Thần (10 quả/mẻ). Ghi nhận: cả 3 nguồn đều có súp lơ và 2 nguồn dùng trứng gà tráng thay trứng cút — file không có dòng súp lơ, giữ nguyên không bổ sung. Bước nấu viết lại 8 bước.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

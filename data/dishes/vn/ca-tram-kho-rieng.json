@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "kho",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -106,15 +106,35 @@
     }
   ],
   "recipe_steps": [
-    "Cá trắm làm sạch, cắt khúc, ướp nước mắm, hành, tỏi và một phần riềng giã.",
-    "Thắng đường làm nước màu; lót riềng thái lát xuống đáy nồi, xếp cá lên, thêm nước màu và nước sôi xâm xấp.",
-    "Kho lửa nhỏ đến khi cá thấm, nước sệt lại; thêm ớt, rắc tiêu, ăn nóng với cơm."
+    "Sơ chế: cá trắm đánh vảy, bỏ ruột và màng đen, cắt khúc dày 3–4 cm, xát muối rửa sạch nhớt rồi để ráo; riềng cạo vỏ, một phần thái lát, một phần giã nhỏ.",
+    "Ướp cá với nước mắm, đường, tiêu, hành tím băm và phần riềng giã khoảng 30 phút cho thấm đều hai mặt khúc cá.",
+    "Lót riềng thái lát kín đáy nồi đất, xếp cá lên trên, rải phần riềng và ớt còn lại lên mặt cá.",
+    "Chế nước sôi vào ngập xăm xắp mặt cá, đun lửa lớn cho sôi bùng rồi hạ xuống lửa nhỏ nhất.",
+    "Kho liu riu 1,5–2 giờ; trong lúc kho không đảo cá, chỉ thỉnh thoảng nghiêng nồi rưới nước kho lên mặt để cá thấm đều và không nát.",
+    "Khi nước kho sánh lại còn một lớp mỏng, cá chắc thịt và lên màu cánh gián, nêm nếm lại cho vừa miệng.",
+    "Tắt bếp, để nồi cá nghỉ khoảng 10 phút cho nước kho ngấm ngược vào thịt, dọn ăn nóng với cơm trắng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://laodong.vn/gia-dinh-hon-nhan/bi-quyet-kho-ca-tram-chac-thit-dam-vi-thom-ngon-kho-cuong-1789824.ldo",
+      "accessed": "2026-10-31",
+      "note": "Báo Lao Động: cá trắm 1 kg, thịt ba chỉ 200 g, riềng 1 củ; ướp 30 phút, kho liu riu 45–60 phút."
+    },
+    {
+      "url": "https://daynauan.info.vn/ca-tram-kho-rieng",
+      "accessed": "2026-10-31",
+      "note": "Dạy Nấu Ăn (tác giả Yến Huỳnh): cá trắm đen 800 g, thịt ba rọi 300 g, riềng củ 50 g + riềng giã 150 g, khế chua; kho liu riu 1,5–2 giờ."
+    },
+    {
+      "url": "https://vinid.net/blog/cach-lam-ca-tram-kho-rieng/",
+      "accessed": "2026-10-31",
+      "note": "VinID — 3 cách kho cá trắm với riềng: cá 1 kg, thịt ba chỉ 200–300 g, riềng 1 củ, sả; đối chiếu tỉ lệ cá:thịt và thời gian kho."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): đã đối chiếu 3 nguồn công thức thật (Báo Lao Động, Dạy Nấu Ăn, VinID). Định lượng: cá trắm 150 g/khẩu phần nằm ở cận dưới của khoảng nguồn (mẻ 800 g–1 kg cho khoảng 5–6 khẩu phần → 160–200 g), không lệch >30% theo cách quy đổi thận trọng nên giữ; riềng 15 g khớp 2 nguồn ghi '1 củ/mẻ' quy về khẩu phần, nguồn Dạy Nấu Ăn dùng riềng nhiều đặc biệt (200 g/mẻ, gồm riềng giã phủ mặt) là ngoại lệ — giữ 15 g. Bất thường ghi nhận, không tự thêm dòng: cả 3 nguồn đều kho cá cùng thịt ba chỉ 200–300 g/mẻ (và thường có khế chua/sả), file hiện không có dòng thịt ba chỉ — chờ chủ dự án quyết. Bước nấu viết lại 7 bước.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

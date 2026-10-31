@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -62,15 +62,35 @@
     }
   ],
   "recipe_steps": [
-    "Vo gạo, cho vào niêu đất với nước vừa đủ, đậy vung.",
-    "Nấu lửa nhỏ đến khi cơm chín, cháy xém nhẹ quanh thành niêu tạo lớp cơm cháy.",
-    "Dọn nguyên niêu, ăn kèm món kho/mặn tuỳ bữa."
+    "Chuẩn bị niêu đất: rửa sạch niêu, lau khô; với niêu mới nên tôi niêu bằng mỡ heo trên lửa vừa, phết mỡ đều lòng niêu đến khi tóp mỡ đen lại rồi để nguội, giúp niêu bền và cơm thơm hơn.",
+    "Chọn gạo tẻ dẻo thơm (ví dụ gạo Tám xoan), vo nhẹ 2–3 lần nước cho sạch bụi, không vo quá kỹ để khỏi mất chất; có thể ngâm gạo 15–30 phút rồi để ráo.",
+    "Cho gạo vào niêu, thêm nước xâm xấp mặt gạo (gạo và nước chiếm khoảng nửa niêu) cùng một chút muối; nếu thích thơm, quét một lớp mỏng dầu ăn quanh đáy niêu, có thể thả thêm lá dứa.",
+    "Đặt niêu lên bếp, đậy nắp, đun lửa vừa đến khi cơm sôi và bắt đầu cạn nước, khoảng 10–15 phút.",
+    "Mở nắp, dùng đũa đảo nhẹ một lần cho cơm chín đều, đậy nắp lại, hạ lửa thật nhỏ (liu riu) nấu thêm khoảng 10 phút cho hạt cơm nở đều, chín ráo.",
+    "Muốn có lớp cháy: giữ niêu trên lửa nhỏ thêm 5–10 phút đến khi đáy niêu dậy mùi thơm, nghe tiếng nổ lách tách nhẹ và lớp cơm đáy vàng giòn; tắt bếp, ủ cơm trong niêu thêm khoảng 10 phút.",
+    "Dọn nguyên niêu còn nóng lên bàn, xới cơm bằng đũa hoặc muỗng tre; ăn kèm món kho, món mặn và canh tùy bữa."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://vinid.net/blog/cach-nau-com-nieu/",
+      "accessed": "2026-10-31",
+      "note": "Cho 2 người: gạo tẻ 250g, nước 300ml, nấu lửa vừa 10–15 phút rồi hạ lửa nhỏ 10 phút — đối chiếu gạo mỗi khẩu phần và thời gian nấu niêu (bản niêu có nhân xếp trên mặt)."
+    },
+    {
+      "url": "https://beptruong.edu.vn/cach-nau-com-nieu",
+      "accessed": "2026-10-31",
+      "note": "Bếp Trưởng Á Âu, tác giả Chương Minh Hiếu: 1 chén gạo mỗi niêu, tôi niêu bằng mỡ heo, nấu lửa liu riu khoảng 10 phút sau khi cạn nước — đối chiếu kỹ thuật niêu đất truyền thống."
+    },
+    {
+      "url": "https://daubepgiadinh.vn/hoc-cach-nau-com-nieu",
+      "accessed": "2026-10-31",
+      "note": "Đầu Bếp Gia Đình (Hướng Nghiệp Á Âu): gạo 200g mỗi niêu, nướng 150–180°C khoảng 30 phút hoặc nấu củi lửa vừa — đối chiếu định lượng gạo mỗi niêu."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): Đã mở kiểm chứng 3 nguồn công thức thật về đúng cách nấu cơm trong niêu đất (VinID, Bếp Trưởng Á Âu, Đầu Bếp Gia Đình) và đối chiếu. Định lượng: file ghi nguyên liệu là cơm trắng 250g (cơm đã nấu) trong khi các nguồn ghi gạo sống 125–200g mỗi niêu hoặc mỗi khẩu phần; quy đổi cơm chín 250g tương đương khoảng 105–115g gạo sống, nằm ở đầu thấp của khoảng nguồn và phụ thuộc cỡ niêu — giữ nguyên, không sửa dòng nào. Muối và lá dứa tuỳ chọn khớp thông lệ của nguồn. Viết lại hoàn toàn recipe_steps bằng lời riêng (7 bước). Rà phân loại: loai:com, cooking_method nau, region vn, meal_slots đều phù hợp — không sửa. Đạt Mức 2.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

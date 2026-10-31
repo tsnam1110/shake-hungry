@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "xao",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -114,15 +114,35 @@
     }
   ],
   "recipe_steps": [
-    "Chặt sườn miếng vừa ăn, chần qua, chiên sơ cho vàng cạnh.",
-    "Phi tỏi, xào ớt chuông và hành tây chín tới.",
-    "Pha sốt tương cà, giấm, đường, nước mắm; cho sườn vào đảo, xuống bột năng cho sốt sánh bám."
+    "Sườn chặt miếng vừa ăn 3–4 cm, rửa sạch, chần trong nước sôi 3–5 phút cho ra bọt bẩn, vớt ra rửa lại và để ráo.",
+    "Ớt chuông bỏ hạt, cắt miếng vuông; hành tây bóc vỏ, cắt múi cau; tỏi bóc vỏ, băm nhỏ.",
+    "Pha sốt trong chén gồm tương cà, giấm gạo, đường, nước mắm và ít nước lọc, khuấy cho tan; hòa bột năng với chút nước lạnh để riêng.",
+    "Đun nóng dầu, cho sườn vào chiên hoặc áp chảo trên lửa vừa 6–8 phút đến khi vàng xém các cạnh, thịt săn; gắp sườn ra và chắt bớt dầu.",
+    "Phi tỏi cho thơm, cho ớt chuông và hành tây vào xào nhanh trên lửa lớn 1–2 phút cho vừa chín tới, còn độ giòn, rồi trút ra đĩa.",
+    "Đổ chén sốt vào chảo, đun sôi, cho sườn vào đảo đều, rim lửa vừa 3–5 phút; xuống nước bột năng từ từ, đảo đều đến khi sốt sánh bóng và áo đều quanh miếng sườn.",
+    "Trả ớt chuông và hành tây vào đảo nhanh khoảng 30 giây, nếm lại vị chua ngọt cân bằng, tắt bếp; dọn nóng với cơm trắng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/2-cach-lam-suon-rim-mat-ong-va-chua-ngot-don-gian-ngon-kho-04852",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy Xanh: sườn rim chua ngọt cho 4 người (sườn non 700g, tương cà, giấm, bột bắp) — đối chiếu sườn và thành phần sốt mỗi khẩu phần."
+    },
+    {
+      "url": "https://www.huongnghiepaau.com/suon-xao-chua-ngot",
+      "accessed": "2026-10-31",
+      "note": "Hướng Nghiệp Á Âu (trường dạy nấu ăn): sườn xào chua ngọt 500g sườn, ớt chuông, hành tây, sốt pha sẵn riêng — đối chiếu rau củ kèm và cách pha sốt."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/16633827",
+      "accessed": "2026-10-31",
+      "note": "Cookpad (Dory): sườn xào chua ngọt cho 2 người (sườn non 400–500g, ớt chuông, hành tây, giấm, đường) — đối chiếu đầu khoảng định lượng trên của sườn."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): đã đối chiếu 3 nguồn công thức đã mở kiểm chứng (Điện Máy Xanh, Hướng Nghiệp Á Âu, Cookpad Dory). Sườn mỗi khẩu phần dao động khoảng 125–250g giữa các nguồn — bất đồng >30% nên giữ nguyên suon-lon 180g. Ớt chuông 40g và hành tây 30g nằm trong khoảng các nguồn. recipe_steps viết lại hoàn toàn thành 7 bước. Không sửa phân loại.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

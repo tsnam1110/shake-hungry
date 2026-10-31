@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -90,15 +90,35 @@
     }
   ],
   "recipe_steps": [
-    "Tôm bóc vỏ, bỏ chỉ lưng, ướp chút muối tiêu; bí đao gọt vỏ, bỏ ruột, cắt miếng vừa ăn.",
-    "Phi hành, xào tôm sơ cho săn, đổ nước vào đun sôi.",
-    "Thả bí đao vào nấu vừa chín tới (bí trong, còn giòn), nêm nước mắm, rắc hành lá và tiêu, dùng nóng."
+    "Sơ chế tôm: bóc vỏ, bỏ đầu và rút chỉ đen trên lưng, rửa sạch rồi băm nhỏ hoặc giã dập; ướp tôm với chút muối và tiêu khoảng 10 phút cho thấm và bớt tanh.",
+    "Sơ chế bí đao: gọt vỏ, bỏ phần ruột mềm, rửa sạch rồi cắt miếng vừa ăn dày khoảng 1 cm; hành lá rửa sạch cắt nhỏ, hành tím bóc vỏ băm nhuyễn.",
+    "Đặt nồi lên bếp với lửa vừa, cho dầu ăn vào; khi dầu nóng lăn tăn thì cho hành tím vào phi đến khi vàng thơm.",
+    "Cho tôm vào xào nhanh khoảng 2 phút đến khi tôm săn lại, chuyển màu hồng cam và dậy mùi thơm.",
+    "Đổ khoảng 1 lít nước (cho 2–3 người) vào nồi, tăng lửa lớn đun sôi, hớt sạch bọt để nước canh trong, nêm muối và hạt nêm.",
+    "Thả bí đao vào, nhấn nhẹ cho bí ngập nước, nấu lửa lớn thêm 2–3 phút đến khi bí chuyển trong, mềm vừa nhưng còn hơi giòn; tránh nấu lâu vì bí sẽ nát và ra vị chua.",
+    "Nêm nếm lại cho vừa ăn, tắt bếp, múc canh ra tô, rắc hành lá và chút tiêu xay, dùng nóng với cơm."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-nau-canh-bi-dao-nau-tom-tuoi-ngon-ngot-thanh-mat-don-11608",
+      "accessed": "2026-10-31",
+      "note": "Cho 2 người: tôm tươi 200g, bí đao 1 quả; xào tôm 2 phút rồi nấu bí thêm 2 phút — đối chiếu tôm theo khẩu phần và kỹ thuật nấu."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/12199877",
+      "accessed": "2026-10-31",
+      "note": "Của Nguyễn Hoàng Yến: tôm nõn 100g, bí xanh 1 trái, nước 500ml, giã dập tôm ướp muối tiêu — đối chiếu mẻ nhỏ và cách nấu thanh, ít dầu mỡ."
+    },
+    {
+      "url": "https://yummyday.vn/canh-bi-dao-nau-tom-528",
+      "accessed": "2026-10-31",
+      "note": "Cho 2 người: tôm 150g, bí đao 1 quả vừa; giã đầu tôm lấy nước cốt — đối chiếu tôm theo khẩu phần (75g)."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): Đã mở kiểm chứng 3 nguồn công thức thật (Điện Máy Xanh, Cookpad của Nguyễn Hoàng Yến, YummyDay) và đối chiếu định lượng theo khẩu phần. Định lượng: bí đao 180g khớp khoảng nguồn (1 quả cho 2–3 người). Tôm: hai nguồn có ghi khẩu phần rõ cho 100g (Điện Máy Xanh) và 75g (YummyDay) mỗi khẩu phần — hai nguồn này chênh nhau hơn 30% nên không tạo đồng thuận để sửa; nguồn Cookpad tính theo mẻ nhỏ 100g tôm. Giữ nguyên tôm 60g và toàn bộ định lượng, không sửa dòng nguyên liệu nào. Viết lại hoàn toàn recipe_steps bằng lời riêng (7 bước). Rà phân loại: loai:canh, cooking_method nau, region vn, meal_slots trưa/tối đều phù hợp — không sửa. Đạt Mức 2.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

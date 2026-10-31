@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -114,15 +114,35 @@
     }
   ],
   "recipe_steps": [
-    "Hến luộc tách ruột, giữ nước luộc lắng trong; dầm me lấy nước chua.",
-    "Phi hành, xào ruột hến săn, đổ nước luộc hến và nước me vào đun sôi, cho cà chua, giá đỗ.",
-    "Nêm nước mắm, đường cho chua ngọt hài hoà, tắt bếp, cho rau răm, hành lá, ớt, dùng nóng."
+    "Sơ chế hến: ngâm hến trong nước vo gạo có thả vài lát ớt 1–2 giờ cho nhả hết cát, rửa lại nhiều lần nước sạch.",
+    "Luộc hến với nước vừa ngập mặt, khuấy đều tay đến khi hến mở miệng; vớt ra đãi lấy thịt, phần nước luộc để lắng rồi gạn lấy nước trong.",
+    "Me chín dầm với nước nóng, lọc lấy nước cốt; cà chua rửa sạch bổ múi cau; giá đỗ nhặt rửa sạch, để ráo.",
+    "Đun nóng dầu ăn trong nồi, cho thịt hến vào xào nhanh lửa lớn khoảng 2 phút, nêm chút nước mắm rồi trút ra để riêng để hến không dai.",
+    "Xào một nửa lượng cà chua cho ra màu, đổ nước luộc hến và nước cốt me vào đun sôi, hớt bọt.",
+    "Cho phần cà chua còn lại và thịt hến vào, nấu thêm 2–3 phút; nêm nước mắm, đường cho vị chua ngọt vừa miệng.",
+    "Tắt bếp, cho giá đỗ, rau răm và hành lá vào đảo đều, múc ra tô dùng nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://eva.vn/bep-eva/goi-y-9-mon-canh-chua-giai-ngan-sau-ram-thang-7-mon-nao-cung-ngon-lai-de-nau-ca-nha-thi-nhau-xi-xup-c162a646569.html",
+      "accessed": "2026-10-31",
+      "note": "Bếp Eva — mục Canh hến nấu chua: hến 1 kg nguyên vỏ, cà chua, khế; ngâm hến với ớt, luộc khuấy tách thịt, xào thịt hến riêng."
+    },
+    {
+      "url": "https://www.cet.edu.vn/cach-nau-canh-hen",
+      "accessed": "2026-10-31",
+      "note": "CET (Chef Lập) — mục Canh hến chua: hến 1 kg, dứa, cà chua, khế; đối chiếu kỹ thuật sơ chế hến và nêm chua."
+    },
+    {
+      "url": "https://giadinh.suckhoedoisong.vn/mon-ngon-mua-he-canh-hen-nau-khe-172090609020255206.htm",
+      "accessed": "2026-10-31",
+      "note": "Gia đình & Sức khỏe Đời sống (theo Afamily): thịt hến 250 g, khế chua 200 g, cà chua 150 g, 800 ml nước; nguồn duy nhất ghi trực tiếp thịt hến."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 300 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): đã đối chiếu 3 nguồn công thức thật (Bếp Eva, CET, Gia đình & Sức khỏe Đời sống). Định lượng: 2 nguồn dùng hến nguyên vỏ 1 kg/mẻ, 1 nguồn dùng thịt hến 250 g/mẻ, cả ba đều không ghi số khẩu phần và tỉ lệ quy đổi vỏ → thịt dao động lớn, các nguồn bất đồng về cơ sở quy đổi nên giữ nguyên thịt hến 100 g và cà chua 60 g/khẩu phần của file, chỉ ghi nhận độ lệch. Lưu ý biến thể: cả 3 nguồn tạo chua bằng khế/dứa, file dùng me và giá đỗ (kiểu miền Nam) — giữ theo bản đã duyệt, không đổi nguyên liệu. Bước nấu viết lại 7 bước.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

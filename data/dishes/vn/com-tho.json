@@ -114,15 +114,35 @@
     }
   ],
   "recipe_steps": [
-    "Vo gạo, cho vào thố đất với lượng nước vừa, nấu cơm chín.",
-    "Xào thịt xay, tôm, lạp xưởng và nấm hương với nước tương.",
-    "Xếp phần xào lên cơm thố, đậy nắp ủ thêm vài phút, rắc hành lá và tiêu."
+    "Vo gạo nhẹ 2–3 lần nước, ngâm khoảng 30 phút cho hạt gạo nở đều rồi để ráo; cho gạo vào thố đất, châm nước xâm xấp mặt gạo cùng chút muối.",
+    "Đặt thố vào xửng, hấp cách thủy khoảng 30 phút với lửa vừa đến khi cơm chín ráo, hạt cơm mềm thơm mà không nhão — đây là cách làm cơm thố truyền thống của người Hoa ở Sài Gòn.",
+    "Trong lúc hấp cơm, sơ chế phần nhân: nấm hương khô ngâm nước ấm 10–15 phút cho nở mềm rồi cắt nhỏ; lạp xưởng cắt lát mỏng hoặc hạt lựu; tôm bóc vỏ, bỏ chỉ lưng, cắt nhỏ.",
+    "Đặt chảo lên bếp lửa vừa, cho dầu ăn vào, phi thơm hành tỏi; cho thịt xay vào xào trước khoảng 3 phút đến khi thịt săn và tơi.",
+    "Cho tôm và lạp xưởng vào xào cùng khoảng 2–3 phút đến khi tôm chuyển màu hồng, lạp xưởng ra mỡ thơm; thêm nấm hương, nêm nước tương và chút đường, đảo đều cho thấm.",
+    "Khi cơm trong thố đã chín, mở nắp, xếp đều phần nhân xào lên mặt cơm theo kiểu 'chồng núi' của cơm thố Sài Gòn, đậy nắp và hấp hoặc ủ thêm khoảng 5 phút cho nhân và cơm quyện hơi nóng.",
+    "Rắc hành lá cắt nhỏ và tiêu xay lên mặt, dọn nguyên thố còn nóng; khi ăn trộn nhẹ hoặc ăn từng lớp tùy thích, có thể chan thêm nước tương."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.huongnghiepaau.com/com-lap-vi-tay-cam",
+      "accessed": "2026-10-31",
+      "note": "Hướng Nghiệp Á Âu, tác giả Bùi Tiến Dũng: cơm tay cầm lạp vị nấu trong nồi đất và bày thố — gạo 200g, lạp xưởng 50g cùng các loại lạp thịt. Nguồn tương tự gần nhất, không phải đúng biến thể của file."
+    },
+    {
+      "url": "https://afamily.vn/tiem-com-tho-73-nam-luu-truyen-cua-mot-gia-dinh-nay-tro-thanh-mon-ngon-kho-tim-voi-cach-an-com-doc-la-con-sot-lai-cua-cong-dong-nguoi-hoa-o-khap-sai-gon-20210608122309773.chn",
+      "accessed": "2026-10-31",
+      "note": "Afamily về cơm thố Chuyên Ký (Sài Gòn): gạo đong vào từng thố, hấp cách thủy khoảng 30 phút; món mặn như lạp xưởng hấp riêng rồi chồng lên cơm. Đối chiếu kỹ thuật thố — bài không cho định lượng phần nhân."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/11597371",
+      "accessed": "2026-10-31",
+      "note": "Của Bòn Bon: cơm thập cẩm nấu cùng lạp xưởng 2 cây và tôm 8 con với 1,5 lon gạo — nguồn tương tự về tổ hợp gạo, lạp xưởng, tôm; nấu bằng nồi cơm điện chứ không phải thố đất."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 đợt 2 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 đợt 2 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): Đã tra cứu kỹ nguồn công thức cho đúng biến thể trong file (cơm nấu trong thố đất, nhân thịt xay, tôm, lạp xưởng, nấm hương xếp lên trên). Kết quả trung thực: KHÔNG tìm được 3 nguồn công thức có định lượng đầy đủ cho đúng biến thể này — cơm thố truyền thống (Chuyên Ký, Sài Gòn) là cơm trắng hấp cách thủy trong thố, món mặn hấp riêng rồi chồng lên; các nguồn định lượng tìm được chỉ là món tương tự (cơm tay cầm lạp vị của Hướng Nghiệp Á Âu; cơm thập cẩm nấu nồi cơm điện trên Cookpad; bài Afamily về cơm thố không cho định lượng nhân). Vì vậy GIỮ Mức 1 theo cổng V12, không hạ chuẩn; vẫn ghi lại 3 nguồn gần nhất đã mở kiểm chứng ở recipe_sources với ghi chú rõ mức độ tương tự. Định lượng giữ nguyên toàn bộ (chưa đủ căn cứ đối chiếu để sửa). Đã viết lại recipe_steps bằng lời riêng (7 bước) theo kỹ thuật hấp cách thủy của cơm thố kết hợp phần nhân của file. Rà phân loại: loai:com và region vn-south phù hợp; cooking_method hiện ghi 'nau' trong khi cơm thố truyền thống là hấp cách thủy — điểm đáng ngờ, ghi nhận chờ chủ dự án phân xử, chưa tự sửa ở đợt này.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

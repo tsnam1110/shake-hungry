@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -34,7 +34,7 @@
   "ingredients": [
     {
       "ingredient_slug": "cua-dong",
-      "quantity": 120,
+      "quantity": 70,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -90,15 +90,35 @@
     }
   ],
   "recipe_steps": [
-    "Cua đồng rửa sạch, giã nhỏ, lọc lấy nước, gạt gạch cua để riêng.",
-    "Đun nước cua lửa vừa, khuấy nhẹ tay cho riêu cua đóng tảng nổi lên, vớt gạch cua phi thơm với hành tím.",
-    "Cho mồng tơi (và mướp nếu có) vào nấu vừa chín, nêm nước mắm, muối, chan phần gạch cua lên mặt, dùng nóng với cơm."
+    "Cua đồng ngâm nước với ít muối hạt khoảng 30 phút cho nhả bùn đất, rửa sạch nhiều lần; bóc mai, khều gạch cua để riêng, phần thân rửa lại.",
+    "Cho thân cua vào cối với chút muối hạt, giã thật nhuyễn (muối giúp thịt cua kết dính khi nấu); thêm nước, bóp đều, để lắng rồi lọc lấy nước thịt cua, lọc lại 2–3 lần cho hết xác.",
+    "Mồng tơi nhặt lấy ngọn và lá non, rửa sạch; mướp gọt vỏ, cắt xéo miếng vừa ăn; hành tím bóc vỏ, băm nhỏ.",
+    "Phi hành tím với dầu ăn cho thơm, cho gạch cua vào xào nhanh 1–2 phút cho dậy mùi và lên màu vàng cam, trút ra chén riêng.",
+    "Bắc nồi nước lọc cua lên bếp, đun lửa vừa và khuấy nhẹ liên tục theo một chiều để thịt cua không bén đáy; khi nước gần sôi thì hạ lửa nhỏ để riêu cua kết tảng nổi lên mặt.",
+    "Khi riêu đã đóng tảng, nhẹ nhàng cho gạch cua đã phi cùng mồng tơi và mướp vào, nêm nước mắm và muối; đun sôi lại khoảng 1–2 phút cho rau vừa chín xanh thì tắt bếp, tránh nấu lâu làm rau nát và riêu vỡ.",
+    "Múc canh ra tô, giữ phần riêu cua nổi trên mặt; dọn nóng với cơm, ăn kèm cà pháo muối nếu thích."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://vietnamnet.vn/cach-nau-canh-cua-mong-toi-khong-tanh-thanh-mat-ngay-he-2290264.html",
+      "accessed": "2026-10-31",
+      "note": "VietnamNet: canh cua mồng tơi 250g cua đồng, 1 bó mồng tơi, có rau đay và mướp — đối chiếu định lượng cua theo nồi và quy trình giã, lọc cua."
+    },
+    {
+      "url": "https://bepxua.vn/?p=21052",
+      "accessed": "2026-10-31",
+      "note": "Bếp Xưa: canh cua rau đay mồng tơi cho 4 người, cua đồng 300g (75g/người), mướp hương 1 quả — căn cứ chính để hiệu chỉnh cua mỗi khẩu phần."
+    },
+    {
+      "url": "https://tailieu.duytan.edu.vn/tailieu/2013/20130503/goinguoitoiyeu15/canh_cua_rau_day_an_hoai_khong_ngan_8976.pdf?rand=926175",
+      "accessed": "2026-10-31",
+      "note": "Sách dạy nấu ăn (thư viện ĐH Duy Tân): canh cua rau đay 300g cua, 1 mớ mồng tơi, 1 quả mướp nhỏ — củng cố đồng thuận 250–300g cua mỗi nồi."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 300 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): đã đối chiếu 3 nguồn công thức đã mở kiểm chứng (VietnamNet, Bếp Xưa, sách dạy nấu ăn). Phân xử định lượng: cua-dong 120 → 70g mỗi khẩu phần — cả ba nguồn đều dùng 250–300g cua cho một nồi canh gia đình (Bếp Xưa ghi rõ phần ăn 4 người, tức 75g/người; VietnamNet dùng 250g/nồi), số cũ cao hơn đồng thuận nguồn hơn 30%. Muop 40g khớp các nguồn (1 quả mỗi nồi). Mong-toi giữ 100g vì các nguồn chỉ ghi theo bó/mớ, không quy đổi tin cậy được. Lưu ý: cả ba nguồn đều cho thêm rau đay vào canh, file hiện chưa có dòng rau đay — ghi nhận, không tự thêm dòng nguyên liệu. recipe_steps viết lại hoàn toàn thành 7 bước. Không sửa phân loại.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

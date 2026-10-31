@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "xao",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -98,15 +98,36 @@
     }
   ],
   "recipe_steps": [
-    "Cua biển làm sạch, chặt miếng, đập dập càng; áo lớp bột mỏng nếu thích.",
-    "Hoà me chín với nước ấm, lọc lấy nước cốt; pha đường, nước mắm.",
-    "Phi tỏi, cho cua vào rang lửa lớn, rưới sốt me, đảo đến khi sốt sệt bám quanh cua; rắc rau răm."
+    "Sơ chế cua: chà rửa sạch vỏ cua bằng bàn chải, tách mai, lấy gạch cua để riêng vào chén; bỏ yếm và phần trứng xốp, chặt thân cua làm 2–4 phần, dùng chày đập dập càng cho dễ thấm vị.",
+    "Ướp cua với chút hạt nêm, muối, tiêu và hành tỏi băm khoảng 15–20 phút cho thấm.",
+    "Làm nước cốt me: dầm me chín trong nước nóng khoảng 5 phút, bóp đều rồi lọc qua rây bỏ hạt và xơ, giữ lại phần nước cốt sánh.",
+    "Pha sốt me: khuấy nước cốt me với đường thốt nốt, nước mắm và chút tương ớt hoặc tương cà (nếu có) cho vị chua, ngọt, mặn hài hòa.",
+    "Đặt chảo sâu lên bếp lửa lớn, cho nhiều dầu ăn; khi dầu sôi già thì lăn cua qua một lớp bột mỏng (nếu thích) rồi chiên đến khi vỏ cua chuyển đỏ, vàng giòn, vớt ra để ráo dầu.",
+    "Chắt bớt dầu, giữ lại khoảng 1 muỗng canh, phi tỏi băm đến khi thơm vàng; cho gạch cua vào xào sơ cho dậy mùi béo.",
+    "Đổ sốt me vào chảo, đun sôi lửa vừa đến khi sốt hơi sánh; cho cua đã chiên vào, đảo và xóc đều khoảng 5–10 phút trên lửa nhỏ cho sốt bám đều và thấm vào thịt cua.",
+    "Khi sốt sệt lại, áo bóng quanh từng miếng cua thì tắt bếp; xếp cua ra đĩa, gắn lại mai cua lên trên, rắc rau răm và dùng nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.huongnghiepaau.com/cua-rang-me",
+      "accessed": "2026-10-31",
+      "note": "Hướng Nghiệp Á Âu, tác giả Bùi Tiến Dũng: cua 800g, me vắt 100g cho một mẻ; cua áo bột chiên giòn rồi rim sốt me — đối chiếu cua và me theo mẻ, cùng kỹ thuật chiên trước."
+    },
+    {
+      "url": "https://bepxua.vn/bi-quyet-lam-cua-rang-me-ngon-kho-cuong/",
+      "accessed": "2026-10-31",
+      "note": "Bếp Xưa: cho 4 người, cua biển 1kg, me Thái 100g — đối chiếu cua theo khẩu phần (250g) và me theo khẩu phần (25g)."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/10776385",
+      "accessed": "2026-10-31",
+      "note": "Của Ngoc Nu Nguyen: cho 4 người, cua 2–3 con, me khoảng 30g mỗi mẻ — đối chiếu số cua mỗi khẩu phần; lượng me nguồn này thấp hơn hẳn hai nguồn còn lại."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): Đã mở kiểm chứng 3 nguồn công thức thật (Hướng Nghiệp Á Âu, Bếp Xưa, Cookpad của Ngoc Nu Nguyen) và đối chiếu định lượng theo khẩu phần. Định lượng: cua theo khẩu phần ở nguồn là 200–250g, file 200g khớp đầu thấp — giữ nguyên. Me: Hướng Nghiệp Á Âu và Bếp Xưa cùng quanh 25g mỗi khẩu phần, nhưng Cookpad chỉ khoảng 7,5g mỗi khẩu phần — các nguồn bất đồng lớn nên giữ nguyên 20g của file. Không sửa dòng nguyên liệu nào. Viết lại hoàn toàn recipe_steps bằng lời riêng (8 bước) theo đúng kỹ thuật của nguồn: chiên cua trước rồi rim/xóc sốt me. Rà phân loại: loai:mon-chinh, region vn-south, meal_slots trưa/tối phù hợp; cooking_method 'xao' giữ nguyên dù nguồn gọi là rang (chiên rồi rim sốt) — ranh giới rang/xào không sai rõ ràng, không sửa. Đạt Mức 2.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

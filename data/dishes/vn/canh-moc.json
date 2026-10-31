@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -106,15 +106,35 @@
     }
   ],
   "recipe_steps": [
-    "Nấm hương, mộc nhĩ ngâm nở, thái chỉ; thịt xay quết dai với nước mắm, tiêu, trộn nấm và mộc nhĩ, viên mọc.",
-    "Hầm sườn lấy nước dùng trong, thả từng viên mọc vào, nấu đến khi mọc nổi là chín.",
-    "Cho nấm hương vào nấu thêm vài phút, nêm vừa ăn, rắc hành lá, dùng nóng."
+    "Ngâm nấm hương khô và mộc nhĩ trong nước ấm 20–30 phút cho nở mềm; nấm hương cắt bỏ chân cứng, chọn những tai nấm tròn đều để bao mọc, phần nấm còn lại băm nhỏ cùng mộc nhĩ đã vắt ráo.",
+    "Ninh sườn với khoảng 1,2 lít nước trong 30 phút trên lửa nhỏ, hớt bọt cho nước dùng trong; vớt sườn ra để riêng, giữ lại nước dùng.",
+    "Trộn thịt xay với nấm hương băm, mộc nhĩ băm, gừng băm, nước mắm, muối và tiêu; quết (đập) hỗn hợp 5–10 phút đến khi dẻo quánh, nhấc thìa lên thấy thịt kéo theo không rời là đạt.",
+    "Múc một phần thịt phết đều lên mặt trong của tai nấm hương, miết nhẹ cho bám chắc (mọc bao nấm); phần thịt còn lại vê thành viên tròn khoảng 20g bằng tay thấm nước.",
+    "Đun nước dùng sôi lăn tăn, thả mọc bao nấm vào nấu 3–4 phút đến khi mọc nổi lên mặt nước là chín, vớt ra; làm tương tự với mọc viên.",
+    "Cho sườn đã ninh trở lại nồi nước dùng, đun sôi lại, nêm nước mắm và muối cho vừa miệng — nước canh đạt khi trong, ngọt thanh, không đục.",
+    "Khi ăn, xếp mọc bao nấm, mọc viên và sườn vào tô, chan nước dùng nóng, rắc hành lá cắt nhỏ và tiêu xay; dùng ngay khi còn nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/2-cach-nau-canh-moc-ngu-sac-va-canh-moc-hat-sen-thom-ngon-bo-04373",
+      "accessed": "2026-10-31",
+      "note": "Hai công thức canh mọc cho 4 người (biên tập Phạm Minh Phú): mọc 150g/mẻ (ngũ sắc) và 100g/mẻ (hạt sen), kèm nấm hương khô, su hào, cà rốt, trứng cút — đối chiếu định lượng và kỹ thuật nhồi mọc vào nấm hương."
+    },
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-nau-canh-moc-nam-huong-ngot-thanh-chuan-vi-cho-mam-co-23415?itm_source=vaobep&itm_medium=banner&itm_content=bai-tin",
+      "accessed": "2026-10-31",
+      "note": "Canh mọc nấm hương mâm cỗ Tết cho 4 người: giò sống 300g + thịt vai băm 200g, nấm hương khô 70g, mộc nhĩ băm 30g, nước dùng lợn; quết mọc 10 phút, luộc mọc 3–4 phút đến khi nổi — khớp cấu trúc món trong file."
+    },
+    {
+      "url": "https://www.cet.edu.vn/cach-nau-canh-nam",
+      "accessed": "2026-10-31",
+      "note": "Canh mọc nấm hương của Chef Lập (CET): giò sống 150g, nấm hương 10 cái, nước hầm xương, ăn kèm cà rốt, súp lơ, đậu Hà Lan — đối chiếu kỹ thuật làm mọc."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 300 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): Đối chiếu 3 nguồn công thức đã mở kiểm chứng (xem recipe_sources). Định lượng: giữ nguyên toàn bộ. Các nguồn bất đồng lớn về lượng mọc/giò mỗi khẩu phần (25–125g, do khác nhau giữa cách làm mâm cỗ và bữa thường) nên không đủ đồng thuận để sửa; nấm hương khô dao động 5–17,5g/khẩu phần giữa các nguồn, giữ 10g; mộc nhĩ 8g khớp nguồn cỗ Tết (7,5g/khẩu phần). Ghi nhận bất thường: cả 3 nguồn đều có rau củ (su hào, cà rốt, súp lơ, đậu Hà Lan, trứng cút) mà file chưa có dòng nguyên liệu nào — không tự thêm, chờ chủ dự án quyết. Bước nấu viết lại 7 bước.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

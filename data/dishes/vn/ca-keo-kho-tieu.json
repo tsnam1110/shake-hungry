@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "kho",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -106,15 +106,36 @@
     }
   ],
   "recipe_steps": [
-    "Cá kèo làm sạch, để nguyên con, ướp nước mắm, đường thốt nốt và tiêu.",
-    "Thắng đường làm nước màu, xếp cá vào nồi đất, thêm hành, tỏi và nước xâm xấp.",
-    "Kho lửa nhỏ đến khi cá săn, nước sệt; thêm rau răm, ớt và rắc thêm tiêu."
+    "Cá kèo rửa với nước cốt chanh và muối, chà nhẹ cho hết nhớt, rửa lại nhiều lần bằng nước sạch rồi để ráo; giữ nguyên con, chỉ cắt bỏ đầu nếu thích.",
+    "Ướp cá với nước mắm, một phần đường thốt nốt, tiêu xay, hành tím và tỏi băm trong 20–30 phút cho thấm đều gia vị.",
+    "Thắng nước màu: cho phần đường còn lại cùng một chút nước vào nồi đất, đun lửa vừa đến khi đường chuyển màu cánh gián đậm thì tắt bếp ngay, tránh để cháy sẽ đắng.",
+    "Xếp cá đã ướp vào nồi, rưới nước màu và toàn bộ phần nước ướp lên trên; bật lửa lớn cho nồi cá sôi bùng khoảng 2–3 phút.",
+    "Hạ lửa nhỏ liu riu, kho 15–20 phút, không đậy kín nắp; thỉnh thoảng nghiêng nồi, rưới nước kho lên mặt cá thay vì đảo để cá không bị nát.",
+    "Khi nước kho sánh lại còn khoảng 1/3, cá săn chắc và có màu nâu bóng thì nêm lại cho vừa miệng rồi tắt bếp.",
+    "Rắc thêm tiêu xay, ớt cắt lát và rau răm cắt nhỏ lên trên, để nồi đất giữ nóng thêm vài phút cho dậy mùi.",
+    "Dọn ăn nóng cùng cơm trắng; cá đạt khi thịt săn, thấm vị mặn ngọt hài hòa và thơm nồng mùi tiêu."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/705807",
+      "accessed": "2026-10-31",
+      "note": "Cá kèo kho tiêu xanh của Phuong Lan Doan cho 4 phần ăn: cá kèo 500g, nước mắm 3 muỗng, đường 2 muỗng canh — đối chiếu định lượng cá và kỹ thuật làm sạch nhớt bằng chanh, muối."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/25245174",
+      "accessed": "2026-10-31",
+      "note": "Biến thể cá kèo kho tiêu chung thịt ba rọi của Huỳnh Phát cho 5–6 người: cá kèo 300g + thịt ba rọi 300g, kho đến khi nước sánh còn 1/2–1/3 — đối chiếu biến thể phổ biến của món."
+    },
+    {
+      "url": "https://giadinh.suckhoedoisong.vn/ca-keo-kho-tieu-ngon-com-an-lai-rai-ca-tuan-172180521095236791.htm",
+      "accessed": "2026-10-31",
+      "note": "Cá kèo kho tiêu (theo Ngôi sao): cá kèo 0,5kg, ướp 30 phút với đường, nước mắm, hành tỏi ớt và tiêu, thắng nước màu rồi kho, gần cạn mới cho rau răm — đối chiếu kỹ thuật."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): Đối chiếu 3 nguồn công thức đã mở kiểm chứng (xem recipe_sources). Định lượng: giữ nguyên toàn bộ. Cá kèo 150g/khẩu phần cao hơn nguồn thuần cá kèo (125g/khẩu phần) khoảng 20%, nằm trong ngưỡng 30%; nguồn thứ hai là biến thể kho chung thịt ba rọi (≈55g cá + ≈55g thịt mỗi khẩu phần) nên không đồng nhất để kết luận sửa. Ghi nhận bất thường: biến thể kho chung thịt ba rọi rất phổ biến trong các nguồn nhưng file không có thịt ba rọi — không tự thêm dòng. Bước nấu viết lại 8 bước.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
