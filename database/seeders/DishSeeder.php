@@ -120,6 +120,13 @@ class DishSeeder extends Seeder
                 ]);
             }
 
+            // Nhãn món (TAXONOMY.md): nhãn biên tập (loai:) nằm trong file;
+            // nhãn diet/protein/allergen SUY từ thành phần bằng DishTagDeriver —
+            // cùng hàm mà validate-data V16 dùng để đối chiếu, không chép tay.
+            $dish->load('dishIngredients.ingredient.tags');
+            $derivedTags = \App\Taxonomy\DishTagDeriver::deriveForDish($dish);
+            $dish->tags()->sync(\App\Models\Tag::idsFor([...($j['tags'] ?? []), ...$derivedTags]));
+
             DishRecipeSource::where('dish_id', $dish->id)->delete();
             foreach ($j['recipe_sources'] ?? [] as $src) {
                 DishRecipeSource::create([

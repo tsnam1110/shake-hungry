@@ -27,6 +27,7 @@ fetch('/api/dishes/' + encodeURIComponent(slug), { headers: { 'Accept': 'applica
             <h1 class="text-3xl font-bold">${name}</h1>
             ${aliases.length ? `<p class="text-neutral-400 text-sm">Còn gọi: ${aliases.join(', ')}</p>` : ''}
             <p class="text-neutral-500 mt-1">${d.region?.name ?? ''} ${d.cooking_method ? '· Cách làm: ' + d.cooking_method : ''} ${d.serving_desc ? '· ' + d.serving_desc : ''}</p>
+            ${(d.tags ?? []).length ? `<div class="flex flex-wrap gap-1.5 mt-2">${d.tags.map(t => `<span class="text-xs border rounded-full px-2.5 py-0.5 ${t.slug.startsWith('allergen:') ? 'border-red-300 text-red-700 bg-red-50' : 'border-neutral-300 text-neutral-600 bg-neutral-50'}">${t.name}</span>`).join('')}</div>` : ''}
             <p class="mt-1 text-sm">${(d.meal_slots ?? []).map(s => `<span class="inline-block bg-orange-100 text-orange-800 rounded-full px-2 py-0.5 mr-1">${slotName[s.slot] ?? s.slot}</span>`).join('')}</p>
             ${d.parent ? `<p class="text-sm mt-2">Biến thể của: <a class="text-orange-700 underline" href="/mon/${d.parent.slug}">${d.parent.names?.[0]?.name ?? ''}</a></p>` : ''}
             ${variants.length ? `<p class="text-sm mt-2">Biến thể: ${variants.map(v => `<a class="text-orange-700 underline" href="/mon/${v.slug}">${v.name}</a>`).join(', ')}</p>` : ''}

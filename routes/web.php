@@ -35,6 +35,8 @@ Route::prefix('api')->group(function () {
         Route::get('/contributions', [\App\Http\Controllers\PublicWeb\ContributionController::class, 'mine']);
     });
     Route::get('/regions', [\App\Http\Controllers\PublicWeb\CatalogController::class, 'regions']);
+    Route::get('/tags', [\App\Http\Controllers\PublicWeb\TaxonomyController::class, 'tags']);
+    Route::get('/ingredients', [\App\Http\Controllers\PublicWeb\TaxonomyController::class, 'ingredients']);
     Route::get('/dishes', [\App\Http\Controllers\PublicWeb\CatalogController::class, 'index']);
     Route::get('/dishes/{dish:slug}', [\App\Http\Controllers\PublicWeb\CatalogController::class, 'show']);
     Route::post('/shake', [\App\Http\Controllers\PublicWeb\CatalogController::class, 'shake']);

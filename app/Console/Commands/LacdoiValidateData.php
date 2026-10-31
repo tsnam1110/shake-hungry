@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\DB;
 use Throwable;
 
 /**
- * lacdoi:validate-data — 15 kiểm tra V1–V15 theo DATA-PIPELINE §5.
+ * lacdoi:validate-data — 16 kiểm tra V1–V16 theo DATA-PIPELINE §5.
  *
  * Chạy trước mỗi commit dữ liệu và trong CI. Lỗi 🔴 ⇒ exit code 1 (CI chặn được).
  * Kiểm tra được thực hiện trên FILE trong data/ (nguồn sự thật, QT-3); các kiểm tra
@@ -20,7 +20,7 @@ class LacdoiValidateData extends Command
 {
     protected $signature = 'lacdoi:validate-data';
 
-    protected $description = 'Kiểm tra toàn vẹn dữ liệu trong data/ và database (V1–V15, DATA-PIPELINE §5)';
+    protected $description = 'Kiểm tra toàn vẹn dữ liệu trong data/ và database (V1–V16, DATA-PIPELINE §5)';
 
     /** @var list<string> */
     private array $errors = [];
@@ -37,6 +37,7 @@ class LacdoiValidateData extends Command
 
         $this->validateIngredientFiles($ingredients);
         $this->validateDishFiles($dishes, array_keys($ingredients));
+        $this->validateTaxonomy($ingredients, $dishes);
         $this->validateMediaManifest();
         $this->validateDatabase();
 
@@ -246,6 +247,71 @@ class LacdoiValidateData extends Command
         }
     }
 
+    /**
+     * V16 — hệ nhãn phân loại (TAXONOMY.md).
+     * File nguyên liệu: bộ nhãn phải BẰNG ĐÚNG kết quả của TaggingRules (quy tắc
+     * là nguồn sự thật — nhãn gán tay lệch quy tắc là lỗi). File món: chỉ được
+     * mang đúng 1 nhãn loai: biên tập; nhãn suy được (diet/protein/allergen)
+     * cấm ghi tay vào file vì seeder suy từ thành phần.
+     */
+    private function validateTaxonomy(array $ingredients, array $dishes): void
+    {
+        $registry = array_keys(config('taxonomy.tags', []));
+
+        foreach ($ingredients as $slug => $j) {
+            $actual = $j['tags'] ?? [];
+            sort($actual);
+            $expected = \App\Taxonomy\TaggingRules::tagsFor($slug, (string) ($j['category'] ?? ''));
+            sort($expected);
+            if ($actual !== $expected) {
+                $this->errors[] = "V16 [{$slug}]: nhãn trong file lệch TaggingRules — file có ["
+                    .implode(', ', $actual).'], quy tắc cho ['.implode(', ', $expected).']';
+            }
+        }
+
+        foreach ($dishes as $slug => $j) {
+            $tags = $j['tags'] ?? [];
+            $loai = array_values(array_filter($tags, fn ($t) => str_starts_with((string) $t, 'loai:')));
+            if (count($loai) !== 1) {
+                $this->errors[] = "V16 [{$slug}]: món phải có đúng 1 nhãn loai: trong file (đang có ".count($loai).')';
+            }
+            foreach ($tags as $t) {
+                if (! in_array($t, $registry, true)) {
+                    $this->errors[] = "V16 [{$slug}]: nhãn '{$t}' không có trong đăng ký config/taxonomy.php";
+                } elseif (! str_starts_with((string) $t, 'loai:')) {
+                    $this->errors[] = "V16 [{$slug}]: nhãn '{$t}' là nhãn SUY TỪ THÀNH PHẦN — không ghi tay vào file món";
+                }
+            }
+        }
+    }
+
+    /** V16 (DB) — nhãn suy của món trong DB phải khớp phép suy lại từ thành phần. */
+    private function validateDishTagsDatabase(): void
+    {
+        if (! DB::getSchemaBuilder()->hasTable('ingredient_tags')) {
+            return;
+        }
+        $drift = [];
+        \App\Models\Dish::with(['tags', 'dishIngredients.ingredient.tags'])
+            ->chunkById(200, function ($chunk) use (&$drift) {
+                foreach ($chunk as $dish) {
+                    $expected = \App\Taxonomy\DishTagDeriver::deriveForDish($dish);
+                    sort($expected);
+                    $actual = $dish->tags->pluck('slug')
+                        ->filter(fn ($t) => preg_match('/^(diet|protein|allergen):/', (string) $t) === 1)
+                        ->values()->all();
+                    sort($actual);
+                    if ($actual !== $expected) {
+                        $drift[] = $dish->slug;
+                    }
+                }
+            });
+        if ($drift !== []) {
+            $this->errors[] = 'V16: '.count($drift).' món có nhãn suy trong DB lệch phép suy từ thành phần (ví dụ: '
+                .implode(', ', array_slice($drift, 0, 10)).') — chạy lại migrate:fresh --seed';
+        }
+    }
+
     private function validateDatabase(): void
     {
         try {
@@ -261,6 +327,8 @@ class LacdoiValidateData extends Command
 
             return;
         }
+
+        $this->validateDishTagsDatabase();
 
         // V1 — chốt chặn QT-1: không bản ghi dinh dưỡng nào do LLM sinh ra (🔴).
         $n = DB::table('dish_nutrition')->where('source', 'llm_suggested')->count();

@@ -44,7 +44,8 @@
 
         <section class="mt-8">
             <h2 class="font-semibold text-lg mb-2">Khám phá món</h2>
-            <input id="catalog-q" placeholder="Tìm món…" class="w-full border rounded-xl px-3 py-2 mb-3 bg-white">
+            <input id="catalog-q" placeholder="Tìm món…" class="w-full border rounded-xl px-3 py-2 mb-2 bg-white">
+            <div id="catalog-filters" class="flex flex-wrap gap-1.5 mb-3"></div>
             <div id="catalog" class="grid grid-cols-2 gap-3"></div>
         </section>
 
@@ -101,14 +102,33 @@ fetch('/api/regions').then(r => r.json()).then(rs => {
         rs.map(r => `<option value="${r.id}">${r.name}</option>`).join('');
 });
 
-async function loadCatalog(q = '') {
-    const data = await (await fetch('/api/dishes?per_page=24' + (q ? '&q=' + encodeURIComponent(q) : ''))).json();
+// Lọc danh mục theo nhãn (TAXONOMY.md): 1 lựa chọn mỗi facet, bấm lại để bỏ.
+const catalogTags = { loai: null, diet: null };
+fetch('/api/tags').then(r => r.json()).then(ts => {
+    const usable = ts.filter(t => (t.facet === 'loai' || t.facet === 'diet') && t.dishes > 0);
+    document.getElementById('catalog-filters').innerHTML = usable.map(t =>
+        `<button class="chip" style="padding:3px 10px;font-size:12px" data-facet="${t.facet}" data-slug="${t.slug}">${t.name} (${t.dishes})</button>`).join('');
+    document.querySelectorAll('#catalog-filters .chip').forEach(b => b.addEventListener('click', () => {
+        const f = b.dataset.facet;
+        catalogTags[f] = catalogTags[f] === b.dataset.slug ? null : b.dataset.slug;
+        document.querySelectorAll(`#catalog-filters .chip[data-facet="${f}"]`).forEach(x =>
+            x.classList.toggle('active', x.dataset.slug === catalogTags[f]));
+        loadCatalog();
+    }));
+});
+
+async function loadCatalog() {
+    const q = document.getElementById('catalog-q').value;
+    const params = new URLSearchParams({ per_page: 24 });
+    if (q) params.set('q', q);
+    Object.values(catalogTags).forEach(t => { if (t) params.append('tag', t); });
+    const data = await (await fetch('/api/dishes?' + params)).json();
     document.getElementById('catalog').innerHTML = data.data.map(d => {
         const n = d.nutrition;
         const kcal = n ? `${Math.round(n.kcal_min)}–${Math.round(n.kcal_max)} kcal` : 'Chưa đủ dữ liệu';
         return `<a href="/mon/${d.slug}" class="block bg-white rounded-xl shadow p-3 hover:shadow-md transition">
             <div class="font-semibold">${d.names?.[0]?.name ?? d.slug}</div>
-            <div class="text-sm text-neutral-500">${d.region?.name ?? ''}</div>
+            <div class="text-sm text-neutral-500">${d.region?.name ?? ''}${(d.tags ?? []).filter(t => t.slug.startsWith('loai:') || t.slug === 'diet:chay').map(t => ' · ' + t.name).join('')}</div>
             <div class="text-sm ${n ? 'text-orange-700 font-medium' : 'text-neutral-400'}">${kcal}</div>
             ${(n?.unverified_ingredients ?? []).length ? '<div class="text-xs text-amber-600 font-medium">⚠️ Chưa kiểm định (nguồn thứ cấp)</div>' : ''}
         </a>`;
@@ -117,7 +137,7 @@ async function loadCatalog(q = '') {
 loadCatalog();
 let qTimer;
 document.getElementById('catalog-q').addEventListener('input', e => {
-    clearTimeout(qTimer); qTimer = setTimeout(() => loadCatalog(e.target.value), 350);
+    clearTimeout(qTimer); qTimer = setTimeout(() => loadCatalog(), 350);
 });
 
 document.getElementById('shake-btn').addEventListener('click', async () => {

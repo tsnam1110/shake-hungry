@@ -348,6 +348,21 @@ Lý do 3 nguồn: [RESEARCH-PROTOCOL §11.2](../09-standards/RESEARCH-PROTOCOL.m
 | `attribution` | text null | bắt buộc khi license yêu cầu ghi công |
 | `is_primary` | boolean | |
 
+### `tags`, `dish_tags`, `ingredient_tags` — phân loại & nhãn (TAXONOMY.md)
+
+Hệ nhãn theo **facet** (khía cạnh): slug dạng `facet:value`, từ vựng có kiểm soát
+trong `config/taxonomy.php` — không nhãn tự do. Thiết kế đầy đủ, định nghĩa từng
+nhãn và API lọc: xem `docs/03-data-model/TAXONOMY.md`.
+
+| Bảng | Cột | Ghi chú |
+|---|---|---|
+| `tags` | `id`, `slug` (unique), `name` | 1 hàng/nhãn trong đăng ký |
+| `dish_tags` | `dish_id`, `tag_id` | nhãn món: `loai:` ghi trong file món; `diet:`/`protein:`/`allergen:` do seeder SUY từ thành phần (`App\Taxonomy\DishTagDeriver`) |
+| `ingredient_tags` | `ingredient_id`, `tag_id` | nhãn nguyên liệu ghi trong file, sinh bằng `App\Taxonomy\TaggingRules` |
+
+Toàn vẹn nhãn được kiểm bởi validate-data **V16**: nhãn file lệch quy tắc sinh,
+hoặc nhãn suy trong DB lệch phép suy lại từ thành phần, đều là lỗi 🔴.
+
 ### `dish_tcm_summary` (GĐ6)
 
 Kết quả tổng hợp tính vị từ nguyên liệu lên món. Do máy tính, không nhập tay.

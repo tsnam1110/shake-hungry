@@ -36,7 +36,7 @@ class LacdoiExportData extends Command
     {
         $index = [];
 
-        foreach (Ingredient::with('units')->orderBy('slug')->get() as $ing) {
+        foreach (Ingredient::with(['units', 'tags'])->orderBy('slug')->get() as $ing) {
             $payload = $this->ingredientPayload($ing);
             $this->writeJson(base_path("data/ingredients/{$ing->slug}.json"), $payload);
             $index[] = ['slug' => $ing->slug, 'name_vi' => $ing->name_vi, 'category' => $ing->category];
@@ -49,7 +49,7 @@ class LacdoiExportData extends Command
         ]);
 
         $dishIndex = [];
-        foreach (Dish::with(['names', 'mealSlots', 'dishIngredients.ingredient', 'recipeSources', 'media', 'parent'])->orderBy('slug')->get() as $dish) {
+        foreach (Dish::with(['names', 'mealSlots', 'dishIngredients.ingredient', 'recipeSources', 'media', 'parent', 'tags'])->orderBy('slug')->get() as $dish) {
             $payload = $this->dishPayload($dish);
             $country = mb_strtolower($dish->country_code);
             @mkdir(base_path("data/dishes/{$country}"), 0777, true);
@@ -121,7 +121,25 @@ class LacdoiExportData extends Command
             'reviewed_by' => $ing->reviewed_by,
             'reviewed_at' => $ing->reviewed_at?->toDateString(),
             'review_note' => $ing->review_note,
+            'tags' => $this->orderedIngredientTags($ing),
         ];
+    }
+
+    /**
+     * Nhãn nguyên liệu ra file theo đúng thứ tự của TaggingRules::tagsFor
+     * (origin, state, allergen...) để vòng seed → export là điểm cố định từng byte.
+     * Slug lạ ngoài khuôn (không thể xảy ra qua seeder) được xếp cuối theo alphabet.
+     *
+     * @return list<string>
+     */
+    private function orderedIngredientTags(Ingredient $ing): array
+    {
+        $owned = $ing->tags->pluck('slug')->all();
+        $ordered = array_values(array_intersect(\App\Taxonomy\TaggingRules::tagsFor($ing->slug, (string) $ing->category), $owned));
+        $rest = array_values(array_diff($owned, $ordered));
+        sort($rest);
+
+        return [...$ordered, ...$rest];
     }
 
     /** @return array<string, mixed> */
@@ -224,6 +242,9 @@ class LacdoiExportData extends Command
             'reviewed_by' => $dish->reviewed_by,
             'reviewed_at' => $dish->reviewed_at?->toDateString(),
             'review_note' => $dish->review_note,
+            'tags' => $dish->tags->pluck('slug')
+                ->filter(fn ($t) => str_starts_with((string) $t, 'loai:'))
+                ->sort()->values()->all(),
         ];
     }
 

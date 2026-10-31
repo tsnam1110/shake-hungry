@@ -23,7 +23,7 @@ class CatalogController extends Controller
     public function index(Request $request): JsonResponse
     {
         $query = Dish::query()
-            ->with(['names' => fn ($q) => $q->where('is_primary', true), 'region:id,name', 'nutrition', 'mealSlots']);
+            ->with(['names' => fn ($q) => $q->where('is_primary', true), 'region:id,name', 'nutrition', 'mealSlots', 'tags:id,slug,name']);
         if ($q = trim((string) $request->query('q', ''))) {
             $query->whereHas('names', fn ($w) => $w->where('name', 'like', "%{$q}%"));
         }
@@ -33,6 +33,18 @@ class CatalogController extends Controller
         if ($request->boolean('with_nutrition')) {
             $query->whereHas('nutrition');
         }
+        // Lọc theo nhãn (TAXONOMY.md §7): khác facet = AND, trong facet = OR.
+        foreach (\App\Taxonomy\TagFilter::slugsByFacet($request) as $slugs) {
+            $query->whereHas('tags', fn ($w) => $w->whereIn('tags.slug', $slugs));
+        }
+        // Loại món chứa chất gây dị ứng: allergen_free=ca,dau-phong
+        if ($request->filled('allergen_free')) {
+            $slugs = collect(explode(',', (string) $request->query('allergen_free')))
+                ->map(fn ($v) => 'allergen:'.trim($v))->filter(fn ($v) => $v !== 'allergen:')->all();
+            if ($slugs !== []) {
+                $query->whereDoesntHave('tags', fn ($w) => $w->whereIn('tags.slug', $slugs));
+            }
+        }
         $query->orderByDesc('id');
 
         return response()->json($query->paginate(24));
@@ -41,7 +53,7 @@ class CatalogController extends Controller
     public function show(Dish $dish): JsonResponse
     {
         $dish->load([
-            'names', 'region', 'mealSlots', 'nutrition',
+            'names', 'region', 'mealSlots', 'nutrition', 'tags:id,slug,name',
             'dishIngredients.ingredient:id,name_vi,slug',
             'parent.names' => fn ($q) => $q->where('is_primary', true),
         ]);

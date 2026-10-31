@@ -36,5 +36,9 @@
   "needs_review": true,
   "reviewed_by": null,
   "reviewed_at": null,
-  "review_note": null
+  "review_note": null,
+  "tags": [
+    "origin:dong-vat",
+    "state:dong-hop"
+  ]
 }

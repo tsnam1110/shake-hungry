@@ -79,6 +79,10 @@ class IngredientSeeder extends Seeder
                     'source' => $unit['source'],
                 ]);
             }
+
+            // Nhãn phân loại (TAXONOMY.md): file là nguồn sự thật; slug ngoài
+            // đăng ký config/taxonomy.php sẽ ném lỗi tại Tag::idsFor.
+            $ingredient->tags()->sync(\App\Models\Tag::idsFor($j['tags'] ?? []));
         }
 
         $this->command?->info('Đã seed '.count($files).' nguyên liệu từ data/ingredients/.');
