@@ -11,7 +11,7 @@
     "kcal_per_100g": 175,
     "kcal_min": 141,
     "kcal_max": null,
-    "protein_g": 21.0,
+    "protein_g": 21,
     "fat_g": 7.02,
     "carb_g": 7.02,
     "fiber_g": 0,
@@ -38,7 +38,14 @@
   "edible_portion_note": null,
   "is_ready_to_eat": true,
   "units": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/ingredients/bo-vien.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "low",
   "needs_review": true,

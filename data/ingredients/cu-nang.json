@@ -14,7 +14,7 @@
     "protein_g": 1.4,
     "fat_g": 0.1,
     "carb_g": 23.94,
-    "fiber_g": 3.0,
+    "fiber_g": 3,
     "water_g": 73.5,
     "sodium_mg": 14,
     "mapping_confidence": "high",
@@ -38,7 +38,14 @@
   "edible_portion_note": null,
   "is_ready_to_eat": false,
   "units": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/ingredients/cu-nang.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,
