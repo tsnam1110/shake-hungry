@@ -33,6 +33,7 @@ final class TaggingRules
         // Nấm — category rau-cu nhưng không phải thực vật
         'moc-nhi-kho' => 'nam', 'nam-rom' => 'nam', 'nam-huong-kho' => 'nam',
         'nam-kim-cham' => 'nam', 'nam-bao-ngu' => 'nam',
+        'nam-dui-ga' => 'nam', // nấm đùi gà Pleurotus eryngii (đợt DISH-005 đợt 3)
         // Mắm và chế phẩm từ động vật (category gia-vi)
         'nuoc-mam-cong-nghiep' => 'dong-vat', 'nuoc-mam-truyen-thong' => 'dong-vat',
         'mam-ca-linh' => 'dong-vat', 'mam-ca-sac' => 'dong-vat', 'mam-nem' => 'dong-vat',
@@ -74,6 +75,7 @@ final class TaggingRules
         'tom-kho' => 'kho', 'muc-kho' => 'kho', 'hat-sen-kho' => 'kho', 'rau-cau-kho' => 'kho',
         'mi-trung-kho' => 'kho', 'banh-pho-kho' => 'kho', 'bun-kho' => 'kho', 'hu-tieu-kho' => 'kho',
         'moc-nhi-kho' => 'kho', 'nam-huong-kho' => 'kho', 'banh-trang' => 'kho', 'banh-da-do' => 'kho', 'tau-hu-ky' => 'kho',
+        'suon-chay' => 'kho', // sườn non chay = đạm đậu nành ép dạng khô, ngâm nở trước khi nấu (đợt DISH-005 đợt 3)
         'banh-phong-tom-song' => 'kho', 'mang-kho' => 'kho', 'la-gai' => 'kho',
         'xa-bau' => 'kho', 'mien-dong' => 'kho', 'mi-an-lien' => 'kho',
         'vo-hoanh-thanh' => 'kho', 'nui-kho' => 'kho', 'bot-chien-xu' => 'kho',
@@ -112,6 +114,7 @@ final class TaggingRules
         'gio-lua' => 'che-bien', 'lap-xuong' => 'che-bien', 'xuc-xich' => 'che-bien',
         'pate-gan' => 'che-bien', 'thit-xong-khoi' => 'che-bien', 'cha-ca-vien' => 'che-bien',
         'dau-phu' => 'che-bien', 'dau-phu-chien' => 'che-bien', 'mi-can' => 'che-bien',
+        'cha-lua-chay' => 'che-bien', // chả chay thành phẩm hấp chín, bán dạng cây (đợt DISH-005 đợt 3)
         'banh-mi' => 'che-bien', 'com-trang' => 'che-bien',
         // tương cà/tương ớt công nghiệp không lên men; chân gà đã luộc; trà/cà phê trong kho là NƯỚC PHA (theo tên + kcal ≈ 1)
         'tuong-ca' => 'che-bien', 'tuong-ot' => 'che-bien', 'chan-ga' => 'che-bien',
@@ -153,6 +156,7 @@ final class TaggingRules
         'bot-mi' => ['lua-mi'], 'banh-mi' => ['lua-mi'], 'mi-an-lien' => ['lua-mi'],
         'nui-kho' => ['lua-mi'], 'bot-chien-xu' => ['lua-mi'], 'vo-hoanh-thanh' => ['trung', 'lua-mi'],
         'mi-can' => ['lua-mi'],
+        'suon-chay' => ['dau-nanh', 'lua-mi'], 'cha-lua-chay' => ['dau-nanh', 'lua-mi'], // đạm đậu nành + gluten/bột lúa mì — đợt DISH-005 đợt 3
         'vung' => ['me'], 'vung-rang' => ['me'], 'dau-me' => ['me'],
     ];
 

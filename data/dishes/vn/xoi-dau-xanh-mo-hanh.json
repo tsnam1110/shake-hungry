@@ -1,0 +1,92 @@
+{
+  "slug": "xoi-dau-xanh-mo-hanh",
+  "parent_dish_slug": "xoi-xeo",
+  "country_code": "VN",
+  "region_code": "vn-ha-noi",
+  "names": [
+    {
+      "locale": "vi",
+      "name": "Xôi đậu xanh mỡ hành",
+      "is_primary": true
+    },
+    {
+      "locale": "en",
+      "name": "Mung bean sticky rice with scallion oil",
+      "is_primary": true
+    }
+  ],
+  "is_eat_out": true,
+  "is_home_cook": true,
+  "cooking_method": "hap",
+  "completeness_level": 1,
+  "meal_slots": [
+    {
+      "slot": "sang",
+      "weight": 9
+    }
+  ],
+  "serving_desc": "1 đĩa xôi",
+  "serving_grams": 190,
+  "ingredients": [
+    {
+      "ingredient_slug": "gao-nep",
+      "quantity": 130,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dau-xanh-hat",
+      "quantity": 45,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "mo-lon-nuoc",
+      "quantity": 12,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-la",
+      "quantity": 10,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "muoi",
+      "quantity": 1,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    }
+  ],
+  "recipe_steps": [
+    "Gạo nếp ngâm qua đêm; đậu xanh ngâm mềm, hấp chín, giã tơi. Mỡ hành: đun nóng mỡ lợn nước, đổ vào hành lá thái nhỏ.",
+    "Trộn nếp với đậu xanh và muối, đồ hai lửa khoảng 30 phút cho xôi chín dẻo.",
+    "Xới xôi ra đĩa, rưới mỡ hành lên mặt, ăn nóng."
+  ],
+  "recipe_sources": [],
+  "media": [],
+  "estimated_kcal": null,
+  "external_ref": null,
+  "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. BIẾN THỂ của xoi-xeo (gắn parent_dish_slug theo cơ chế biến thể; phân xử lại sau rà soát độc lập G6): về cấu trúc, món này gần xoi-xeo hơn hẳn xoi-dau-xanh — cùng hệ nếp + đậu xanh + mỡ hành kiểu Hà Nội, chỉ khác ở chỗ không nhuộm nghệ và dùng mỡ hành thay hành phi; bản xoi-dau-xanh trong kho là bản ngọt với nước cốt dừa nên không làm parent.",
+  "status": "draft",
+  "source": "curated",
+  "confidence": "unknown",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "loai:xoi"
+  ]
+}

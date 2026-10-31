@@ -1,0 +1,108 @@
+{
+  "slug": "com-chien-dua-trung",
+  "parent_dish_slug": null,
+  "country_code": "VN",
+  "region_code": "vn",
+  "names": [
+    {
+      "locale": "vi",
+      "name": "Cơm chiên dưa chua trứng",
+      "is_primary": true
+    },
+    {
+      "locale": "en",
+      "name": "Fried rice with pickled mustard greens and egg",
+      "is_primary": true
+    }
+  ],
+  "is_eat_out": true,
+  "is_home_cook": true,
+  "cooking_method": "chien",
+  "completeness_level": 1,
+  "meal_slots": [
+    {
+      "slot": "sang",
+      "weight": 8
+    },
+    {
+      "slot": "trua",
+      "weight": 6
+    },
+    {
+      "slot": "toi",
+      "weight": 6
+    }
+  ],
+  "serving_desc": "1 đĩa cơm",
+  "serving_grams": 260,
+  "ingredients": [
+    {
+      "ingredient_slug": "com-trang",
+      "quantity": 200,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "trung-ga",
+      "quantity": 50,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dua-cai-muoi",
+      "quantity": 40,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dau-an",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-la",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nuoc-tuong",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    }
+  ],
+  "recipe_steps": [
+    "Cơm nguội tơi hạt; dưa cải muối rửa sơ, vắt ráo, cắt nhỏ; trứng đánh tan. Tổng thời gian làm ~12 phút.",
+    "Phi thơm dầu, chiên cơm lửa lớn 4 phút, cho dưa chua vào đảo 2 phút cho dậy mùi.",
+    "Đổ trứng vào đảo nhanh cho quyện cơm, nêm nước tương, rắc hành lá, ăn nóng."
+  ],
+  "recipe_sources": [],
+  "media": [],
+  "estimated_kcal": null,
+  "external_ref": null,
+  "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Cơm chiên thuộc nhóm tinh bột đã nấu chín rán lại: dầu chiên KÊ trong công thức theo đúng thiết kế CALC-004 (com-trang có hệ số hấp thụ 0 — dầu kê là cơ chế tính dầu duy nhất, không tính trùng); lượng dầu kê 3 g theo tiền lệ com-chien-trung-muoi của kho (rà soát G6).",
+  "status": "draft",
+  "source": "curated",
+  "confidence": "unknown",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "loai:com"
+  ]
+}

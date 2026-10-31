@@ -1,0 +1,104 @@
+{
+  "slug": "chao-thit-bam",
+  "parent_dish_slug": null,
+  "country_code": "VN",
+  "region_code": "vn",
+  "names": [
+    {
+      "locale": "vi",
+      "name": "Cháo thịt băm",
+      "is_primary": true
+    },
+    {
+      "locale": "en",
+      "name": "Rice porridge with minced pork",
+      "is_primary": true
+    }
+  ],
+  "is_eat_out": true,
+  "is_home_cook": true,
+  "cooking_method": "nau",
+  "completeness_level": 1,
+  "meal_slots": [
+    {
+      "slot": "sang",
+      "weight": 8
+    },
+    {
+      "slot": "toi",
+      "weight": 5
+    }
+  ],
+  "serving_desc": "1 tô cháo",
+  "serving_grams": 350,
+  "ingredients": [
+    {
+      "ingredient_slug": "gao-te",
+      "quantity": 40,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "thit-lon-xay",
+      "quantity": 40,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-la",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "gung",
+      "quantity": 2,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hat-tieu-den",
+      "quantity": 0.3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "muoi",
+      "quantity": 0.5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    }
+  ],
+  "recipe_steps": [
+    "Gạo vo sạch, nấu với khoảng 320 ml nước cho một khẩu phần, lửa nhỏ 20 phút cho nở mềm thành cháo. Tổng thời gian ~25 phút, có thể nấu bằng nồi cơm điện.",
+    "Cho thịt băm vào khuấy đều cho thịt tơi, nấu thêm 5 phút, nêm muối vừa ăn.",
+    "Múc ra tô, rắc hành lá, gừng thái chỉ và tiêu, ăn nóng."
+  ],
+  "recipe_sources": [],
+  "media": [],
+  "estimated_kcal": null,
+  "external_ref": null,
+  "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. MÓN THAY cho chao-trang-trung-muoi của kế hoạch §3.6: món chao-trang đã có trong kho có serving_desc 'kèm nửa quả trứng vịt muối' — tức chính là cháo trắng trứng muối, tạo thêm sẽ trùng theo phép thử EDITORIAL-GUIDE §3. Cháo thịt băm là bữa sáng tự nấu phổ biến còn thiếu, nguyên liệu sẵn có.",
+  "status": "draft",
+  "source": "curated",
+  "confidence": "unknown",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "loai:chao-sup"
+  ]
+}

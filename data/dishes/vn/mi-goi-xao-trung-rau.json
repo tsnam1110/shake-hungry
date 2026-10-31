@@ -1,0 +1,96 @@
+{
+  "slug": "mi-goi-xao-trung-rau",
+  "parent_dish_slug": null,
+  "country_code": "VN",
+  "region_code": "vn",
+  "names": [
+    {
+      "locale": "vi",
+      "name": "Mì gói xào trứng rau",
+      "is_primary": true
+    },
+    {
+      "locale": "en",
+      "name": "Stir-fried instant noodles with egg and greens",
+      "is_primary": true
+    }
+  ],
+  "is_eat_out": true,
+  "is_home_cook": true,
+  "cooking_method": "xao",
+  "completeness_level": 1,
+  "meal_slots": [
+    {
+      "slot": "sang",
+      "weight": 8
+    },
+    {
+      "slot": "toi",
+      "weight": 5
+    }
+  ],
+  "serving_desc": "1 đĩa",
+  "serving_grams": 200,
+  "ingredients": [
+    {
+      "ingredient_slug": "mi-an-lien",
+      "quantity": 65,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "trung-ga",
+      "quantity": 50,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "cai-ngot",
+      "quantity": 50,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dau-an",
+      "quantity": 8,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nuoc-tuong",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    }
+  ],
+  "recipe_steps": [
+    "Mì gói trụng nước sôi 2 phút, vớt để ráo (không dùng gói gia vị của mì). Tổng thời gian làm ~10 phút.",
+    "Phi thơm dầu, xào cải ngọt cho vừa chín tái, cho mì vào đảo đều lửa lớn.",
+    "Đổ trứng đã đánh tan vào, xào thêm 1–2 phút cho trứng chín quyện mì, nêm nước tương vừa ăn."
+  ],
+  "recipe_sources": [],
+  "media": [],
+  "estimated_kcal": null,
+  "external_ref": null,
+  "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Bữa sáng tự nấu tại nhà bằng mì gói sẵn có — gia vị dùng nước tương thay gói nêm của nhà sản xuất để kiểm soát được thành phần. Đổi tên/slug sau rà soát G6: bản soạn đầu tên 'Mì trứng xào rau' gây hiểu nhầm dùng mi-trung-kho, trong khi công thức dùng mì ăn liền (mi-an-lien) — tên đúng theo thành phần là mì gói xào trứng rau.",
+  "status": "draft",
+  "source": "curated",
+  "confidence": "unknown",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "loai:bun-pho-mi"
+  ]
+}

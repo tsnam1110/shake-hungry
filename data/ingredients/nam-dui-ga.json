@@ -1,0 +1,51 @@
+{
+  "slug": "nam-dui-ga",
+  "name_vi": "Nấm đùi gà (tươi)",
+  "name_en": "King oyster mushroom, raw",
+  "category": "rau-cu",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "168580",
+    "source_url": "https://fdc.nal.usda.gov/food-details/168580/nutrients",
+    "scientific_name": "Pleurotus ostreatus",
+    "kcal_per_100g": 33,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 3.31,
+    "fat_g": 0.41,
+    "carb_g": 6.09,
+    "fiber_g": 2.3,
+    "water_g": null,
+    "sodium_mg": null,
+    "mapping_confidence": "medium",
+    "mapping_note": "TRA 2026-10-31 (DISH-005 đợt 3): SR Legacy không có mục riêng cho Pleurotus eryngii (nấm đùi gà) — dùng 168580 'Mushrooms, oyster, raw' (Pleurotus ostreatus, cùng chi Pleurotus, dạng tươi) làm ánh xạ. Tra chéo độc lập: bảng MEXT Nhật cho P. eryngii tươi = 31 kcal / đạm 2,8 / béo 0,4 / carb 6,0 / xơ 3,4 — khớp ánh xạ trong ~6% ở kcal và gần như trùng ở béo/carb, nên độ lệch loài ở đây nhỏ; MEXT chỉ dùng để tra chéo trong ghi chú này, KHÔNG trộn số vào phép tính (QT-4). Bản trích SR Legacy trong repo chỉ có kcal/macro/xơ nên water_g và sodium_mg để null. Khi FCT có mục eryngii chính danh ở tầng cao hơn, thay ánh xạ và nâng confidence. scientific_name của reference_food ghi đúng loài của bản ghi tham chiếu (ostreatus); nguyên liệu là eryngii — ánh xạ cùng chi đã nêu ở trên (phân xử rà soát độc lập G6).",
+    "alternatives": [
+      {
+        "name": "MEXT (Nhật) — Pleurotus eryngii, raw",
+        "why_not": "Đúng loài (31 kcal) nhưng là nguồn tầng 6 và chưa kiểm chứng được trị số tại trang nguồn chính thức trong đợt tra này — chỉ dùng tra chéo, không làm reference chính",
+        "external_id": null,
+        "kcal_per_100g": 31
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "medium",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:nam",
+    "state:tuoi"
+  ]
+}

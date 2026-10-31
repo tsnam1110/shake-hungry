@@ -1,0 +1,72 @@
+{
+  "slug": "khoai-lang-luoc-trung",
+  "parent_dish_slug": null,
+  "country_code": "VN",
+  "region_code": "vn",
+  "names": [
+    {
+      "locale": "vi",
+      "name": "Khoai lang luộc và trứng luộc",
+      "is_primary": true
+    },
+    {
+      "locale": "en",
+      "name": "Boiled sweet potato with boiled egg",
+      "is_primary": true
+    }
+  ],
+  "is_eat_out": false,
+  "is_home_cook": true,
+  "cooking_method": "luoc",
+  "completeness_level": 1,
+  "meal_slots": [
+    {
+      "slot": "sang",
+      "weight": 9
+    },
+    {
+      "slot": "an-vat",
+      "weight": 4
+    }
+  ],
+  "serving_desc": "1 củ khoai vừa và 1 quả trứng",
+  "serving_grams": 230,
+  "ingredients": [
+    {
+      "ingredient_slug": "khoai-lang",
+      "quantity": 180,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "trung-ga",
+      "quantity": 50,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    }
+  ],
+  "recipe_steps": [
+    "Khoai lang rửa sạch, luộc cả củ 20–25 phút cho chín mềm (xiên đũa qua dễ dàng). Có thể luộc từ tối hôm trước.",
+    "Trứng luộc 8–10 phút, bóc vỏ.",
+    "Ăn kèm khoai và trứng, chấm muối vừng nếu thích. Tổng thời gian chủ động ~10 phút."
+  ],
+  "recipe_sources": [],
+  "media": [],
+  "estimated_kcal": null,
+  "external_ref": null,
+  "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.",
+  "status": "draft",
+  "source": "curated",
+  "confidence": "unknown",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "loai:mon-chinh"
+  ]
+}

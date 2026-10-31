@@ -1,0 +1,112 @@
+{
+  "slug": "mien-xao-chay",
+  "parent_dish_slug": null,
+  "country_code": "VN",
+  "region_code": "vn",
+  "names": [
+    {
+      "locale": "vi",
+      "name": "Miến xào chay",
+      "is_primary": true
+    },
+    {
+      "locale": "en",
+      "name": "Vegetarian stir-fried glass noodles",
+      "is_primary": true
+    }
+  ],
+  "is_eat_out": true,
+  "is_home_cook": true,
+  "cooking_method": "xao",
+  "completeness_level": 1,
+  "meal_slots": [
+    {
+      "slot": "trua",
+      "weight": 8
+    },
+    {
+      "slot": "toi",
+      "weight": 8
+    }
+  ],
+  "serving_desc": "1 đĩa",
+  "serving_grams": 180,
+  "ingredients": [
+    {
+      "ingredient_slug": "mien-dong",
+      "quantity": 45,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "ca-rot",
+      "quantity": 30,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nam-rom",
+      "quantity": 30,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "gia-do",
+      "quantity": 40,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dau-an",
+      "quantity": 7,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nuoc-tuong",
+      "quantity": 6,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-la",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    }
+  ],
+  "recipe_steps": [
+    "Miến dong ngâm nước ấm 10 phút, cắt ngắn, trộn với nửa phần nước tương cho lên màu; rau củ rửa sạch.",
+    "Phi thơm đầu hành, xào cà rốt và nấm rơm 2 phút, cho miến vào đảo đều lửa lớn.",
+    "Thêm giá đỗ và phần nước tương còn lại, xào thêm 1–2 phút cho miến mềm trong, rắc hành lá."
+  ],
+  "recipe_sources": [],
+  "media": [],
+  "estimated_kcal": null,
+  "external_ref": null,
+  "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món chay thuần: toàn bộ nguyên liệu có origin thực vật/nấm, gia vị chỉ dùng nước tương/muối/chao đậu — không nước mắm, không hạt nêm/bột canh (nhóm COMPOSITE_ANIMAL tính là mặn), không trứng/sữa; nhãn diet suy từ thành phần phải ra chay và đã kiểm chứng trực tiếp trong DB sau seed (cổng G3/G6 của đợt). loai theo tiền lệ TAXONOMY của các món miến/mì xào trong kho (bun-pho-mi) — vẫn tính vào quota món chính chay của đợt vì là món chính chay hoàn chỉnh cho bữa trưa/tối.",
+  "status": "draft",
+  "source": "curated",
+  "confidence": "unknown",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "loai:bun-pho-mi"
+  ]
+}

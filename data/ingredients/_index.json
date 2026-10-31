@@ -1,6 +1,6 @@
 {
   "_generated_by": "php artisan lacdoi:export-data — không sửa tay (DATA-REPOSITORY §2)",
-  "count": 403,
+  "count": 406,
   "ingredients": [
     {
       "slug": "bach-tuoc",
@@ -426,6 +426,11 @@
       "slug": "cha-la",
       "name_vi": "Chà là (khô)",
       "category": "trai-cay"
+    },
+    {
+      "slug": "cha-lua-chay",
+      "name_vi": "Chả lụa chay (thành phẩm, dạng cây)",
+      "category": "khac"
     },
     {
       "slug": "chan-ga",
@@ -1243,6 +1248,11 @@
       "category": "rau-cu"
     },
     {
+      "slug": "nam-dui-ga",
+      "name_vi": "Nấm đùi gà (tươi)",
+      "category": "rau-cu"
+    },
+    {
       "slug": "nam-huong-kho",
       "name_vi": "Nấm hương khô",
       "category": "rau-cu"
@@ -1665,6 +1675,11 @@
     {
       "slug": "sua-tuoi",
       "name_vi": "Sữa tươi nguyên kem (không đường)",
+      "category": "khac"
+    },
+    {
+      "slug": "suon-chay",
+      "name_vi": "Sườn non chay (đạm đậu nành ép, dạng khô)",
       "category": "khac"
     },
     {

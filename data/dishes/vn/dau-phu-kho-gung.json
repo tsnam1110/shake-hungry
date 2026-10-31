@@ -1,0 +1,106 @@
+{
+  "slug": "dau-phu-kho-gung",
+  "region_code": "vn",
+  "country_code": "VN",
+  "source": "llm_suggested",
+  "confidence": "medium",
+  "completeness_level": 1,
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "parent_dish_slug": null,
+  "is_variant": false,
+  "is_eat_out": false,
+  "is_home_cook": true,
+  "cooking_method": "kho",
+  "serving_grams": 150,
+  "serving_desc": "1 đĩa nhỏ đậu phụ kho gừng, ăn kèm cơm",
+  "tags": [
+    "loai:mon-chinh"
+  ],
+  "names": [
+    {
+      "locale": "vi",
+      "name": "Đậu phụ kho gừng",
+      "is_primary": true
+    },
+    {
+      "locale": "en",
+      "name": "Tofu braised with ginger",
+      "is_primary": true
+    }
+  ],
+  "meal_slots": [
+    {
+      "slot": "trua",
+      "weight": 8
+    },
+    {
+      "slot": "toi",
+      "weight": 8
+    }
+  ],
+  "ingredients": [
+    {
+      "ingredient_slug": "dau-phu",
+      "quantity": 110,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low",
+      "note": "cắt miếng vừa ăn, để ráo"
+    },
+    {
+      "ingredient_slug": "gung",
+      "quantity": 8,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low",
+      "note": "thái sợi"
+    },
+    {
+      "ingredient_slug": "nuoc-tuong",
+      "quantity": 8,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "duong-trang",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dau-an",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low",
+      "note": "phi gừng (lượng nhỏ, món kho không chiên ngập)"
+    },
+    {
+      "ingredient_slug": "hanh-la",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low",
+      "note": "thái nhỏ"
+    }
+  ],
+  "recipe_steps": [
+    "Đậu phụ cắt miếng vừa ăn, để thật ráo nước.",
+    "Phi gừng thái sợi với một ít dầu cho vàng thơm.",
+    "Cho đậu phụ vào, thêm nước tương, đường và khoảng 60 ml nước, kho lửa nhỏ 10 phút cho thấm, rắc hành lá."
+  ],
+  "recipe_sources": [],
+  "import_note": "Đợt 3 DISH-005: món chính chay (kho, dùng đậu phụ có sẵn). Định lượng llm_suggested, cần duyệt (QT-4). THAY THẾ cho bản soạn đầu 'Đậu phụ sốt nấm' — rà soát độc lập G6 kết luận món đó trùng cụm với cả dau-phu-kho-nam (đậu phụ + nấm hương khô) và dau-phu-rim-nam (đậu phụ + nấm rơm) đã có trong kho: hợp của hai món, không đủ khác biệt theo EDITORIAL-GUIDE §3. Bản thay đổi hẳn trục vị: gừng là gia vị dẫn, không dùng nấm. Gia vị chay hoàn toàn (nước tương, đường, muối ngầm trong nước tương) — nhãn diet suy từ thành phần là chay, đã kiểm chứng trong DB. Dầu phi gừng 5 g kê trong công thức theo thiết kế CALC-004 (dau-phu có hệ số hấp thụ 15 chỉ áp khi là chủ thể chiên; món này kho với 60 ml nước, dầu chỉ đóng vai phi gia vị).",
+  "media": []
+}

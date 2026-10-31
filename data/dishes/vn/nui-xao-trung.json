@@ -1,0 +1,104 @@
+{
+  "slug": "nui-xao-trung",
+  "parent_dish_slug": null,
+  "country_code": "VN",
+  "region_code": "vn",
+  "names": [
+    {
+      "locale": "vi",
+      "name": "Nui xào trứng",
+      "is_primary": true
+    },
+    {
+      "locale": "en",
+      "name": "Stir-fried macaroni with egg",
+      "is_primary": true
+    }
+  ],
+  "is_eat_out": true,
+  "is_home_cook": true,
+  "cooking_method": "xao",
+  "completeness_level": 1,
+  "meal_slots": [
+    {
+      "slot": "sang",
+      "weight": 8
+    },
+    {
+      "slot": "toi",
+      "weight": 5
+    }
+  ],
+  "serving_desc": "1 đĩa",
+  "serving_grams": 200,
+  "ingredients": [
+    {
+      "ingredient_slug": "nui-kho",
+      "quantity": 55,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "trung-ga",
+      "quantity": 50,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "ca-rot",
+      "quantity": 25,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dau-an",
+      "quantity": 8,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nuoc-tuong",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-la",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    }
+  ],
+  "recipe_steps": [
+    "Nui luộc chín theo thời gian trên bao bì (khoảng 8 phút), để ráo. Tổng thời gian làm ~15 phút.",
+    "Phi thơm dầu, xào cà rốt thái sợi 1 phút, cho nui vào đảo đều lửa lớn.",
+    "Đổ trứng đánh tan vào xào thêm 1–2 phút, nêm nước tương, rắc hành lá."
+  ],
+  "recipe_sources": [],
+  "media": [],
+  "estimated_kcal": null,
+  "external_ref": null,
+  "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.",
+  "status": "draft",
+  "source": "curated",
+  "confidence": "unknown",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "loai:bun-pho-mi"
+  ]
+}
