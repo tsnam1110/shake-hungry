@@ -2,7 +2,7 @@
   "slug": "ca-tram-hap-xi-dau",
   "parent_dish_slug": null,
   "country_code": "VN",
-  "region_code": "vn-south",
+  "region_code": "vn-north",
   "names": [
     {
       "locale": "vi",
@@ -148,7 +148,7 @@
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — thêm thì là 3, tỏi 4 (4/4 trang nghiên cứu) và dầu hào 5 (2/4); gừng 10→6, hành lá 10→6, dầu 8→2 (dầu chỉ để rưới mặt). Bất thường chờ chủ dự án: file ghi vùng vn-south/đặc sản TP.HCM nhưng cả 4 nguồn đều là cách hấp xì dầu kiểu Bắc — không đổi vùng ở đợt nâng.]",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — thêm thì là 3, tỏi 4 (4/4 trang nghiên cứu) và dầu hào 5 (2/4); gừng 10→6, hành lá 10→6, dầu 8→2 (dầu chỉ để rưới mặt). Bất thường chờ chủ dự án: file ghi vùng vn-south/đặc sản TP.HCM nhưng cả 4 nguồn đều là cách hấp xì dầu kiểu Bắc — không đổi vùng ở đợt nâng.] [Phân xử LV2-005 Phần A (2026-10-31): đổi region_code vn-south → vn-north và bỏ nhãn dac-san:tp-hcm. Căn cứ: quy ước vùng = gốc xuất xứ (EDITORIAL-GUIDE §4; tiền lệ bun-bo-nam-bo ở Phần A LV2-003); cả 4 trang nghiên cứu đợt 4 đều là cách hấp xì dầu kiểu Bắc — lót thì là + hành lá dưới cá, cá trắm là cá nước ngọt phổ biến miền Bắc; nguồn đã ghi trong recipe_sources (Đặc Sản Bá Kiến) là thương hiệu đặc sản miền Bắc (cá kho làng Vũ Đại, Hà Nam); không nguồn nào gắn món này với TP.HCM. Không gắn nhãn dac-san cấp tỉnh vì đây là món nhà phổ biến khắp miền Bắc, không phải đặc sản của một địa phương cụ thể.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
@@ -157,7 +157,6 @@
   "reviewed_at": null,
   "review_note": null,
   "tags": [
-    "dac-san:tp-hcm",
     "loai:mon-chinh"
   ]
 }

@@ -57,8 +57,8 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "gung",
-      "quantity": 2,
+      "ingredient_slug": "dau-an",
+      "quantity": 3,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -74,15 +74,17 @@
     }
   ],
   "recipe_steps": [
-    "Hến đãi sạch sạn; rau lang nhặt lá non rửa sạch.",
-    "Đun sôi nước, cho hến và gừng vào nấu, hớt bọt.",
-    "Thả rau lang nấu 2 phút, nêm nước mắm, dùng nóng."
+    "Hến ngâm nước vo gạo hoặc nước muối loãng 1–2 giờ cho nhả cát, rửa sạch, loại bỏ con chết/hỏng.",
+    "Luộc RIÊNG hến trong nước sôi tới khi mở miệng, đảo đều cho ruột tung ra; đãi lấy thịt hến, rửa lại cho sạch cát.",
+    "Nước luộc hến để lắng, gạn lấy phần nước trong, bỏ cặn đáy — đây là nước dùng của canh.",
+    "Phi hành tím với dầu ăn cho thơm, cho thịt hến vào xào nhanh với nước mắm khoảng 1 phút cho thấm.",
+    "Đổ nước hến đã gạn vào nồi, đun sôi, thả rau lang vào; canh sôi lại 1–2 phút, rau vừa chín xanh thì tắt bếp, dùng nóng."
   ],
   "recipe_sources": [],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-004 đợt 4: thử nâng Mức 2 — GIỮ MỨC 1: chỉ 1 nguồn đúng món và không định lượng (bluestone.com.vn/blogs/vao-bep/canh-hen-nau-rau-lang), 2 nguồn còn lại là biến thể rau đay/mồng tơi; thêm bất đồng: gừng 0 nguồn ủng hộ, và bước file đang để luộc hến trong cùng nồi canh (quy trình đúng là luộc–đãi thịt–gạn nước hến trong rồi mới nấu). Cần phân xử trước khi nâng.]",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-004 đợt 4: thử nâng Mức 2 — GIỮ MỨC 1: chỉ 1 nguồn đúng món và không định lượng (bluestone.com.vn/blogs/vao-bep/canh-hen-nau-rau-lang), 2 nguồn còn lại là biến thể rau đay/mồng tơi; thêm bất đồng: gừng 0 nguồn ủng hộ, và bước file đang để luộc hến trong cùng nồi canh (quy trình đúng là luộc–đãi thịt–gạn nước hến trong rồi mới nấu). Cần phân xử trước khi nâng.] [Phân xử LV2-005 Phần A (2026-10-31): sửa quy trình + bỏ dòng không có nguồn. BỎ gung 2 g — 0 nguồn ủng hộ (ghi nhận LV2-004 + danh sách nguyên liệu Cookpad đúng món + các nguồn quy trình hến đều không có gừng). THÊM dau-an 3 g để phi hành xào thịt hến theo quy trình nguồn. VIẾT LẠI BƯỚC: file cũ luộc hến ngay trong nồi canh là sai quy trình — quy trình đúng theo nguồn đã mở (Cookpad canh mồng tơi nấu hến, cùng quy trình xử lý hến; đối chiếu thêm 2 nguồn canh hến) là luộc riêng → đãi thịt → gạn nước trong → xào thịt hến với hành/mắm → nấu canh bằng nước hến đã gạn, rau sôi lại 1–2 phút là tắt. Số hen 60 g hiểu là thịt hến đã đãi. Món vẫn giữ Mức 1: chưa có nguồn đúng món nào có định lượng gram (nguồn đúng món duy nhất — BlueStone — không định lượng; lần mở lại đợt này trả 404).]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
