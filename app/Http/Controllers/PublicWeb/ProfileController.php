@@ -46,6 +46,25 @@ class ProfileController extends Controller
 
     public function mealLogs(Request $request): JsonResponse
     {
+        // Chế độ khoảng ngày (UI-015, trang Nhật ký): trả tổng theo từng ngày
+        // để vẽ tổng quan tuần. Không có from/to thì giữ hành vi theo ngày cũ.
+        if ($request->filled('from') && $request->filled('to')) {
+            $from = $request->query('from');
+            $to = $request->query('to');
+            $logs = MealLog::with(['dish.nutrition'])
+                ->where('user_id', $request->user()->id)
+                ->whereDate('eaten_at', '>=', $from)
+                ->whereDate('eaten_at', '<=', $to)
+                ->get()
+                ->groupBy(fn (MealLog $l) => $l->eaten_at->toDateString());
+            $days = [];
+            for ($d = strtotime($from); $d <= strtotime($to); $d += 86400) {
+                $key = date('Y-m-d', $d);
+                $days[$key] = $this->summarize($logs->get($key, collect()));
+            }
+
+            return response()->json(['from' => $from, 'to' => $to, 'days' => $days]);
+        }
         $date = $request->query('date', now()->toDateString());
         $logs = MealLog::with(['dish.names' => fn ($q) => $q->where('is_primary', true), 'dish.nutrition'])
             ->where('user_id', $request->user()->id)

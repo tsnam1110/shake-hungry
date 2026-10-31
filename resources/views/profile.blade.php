@@ -19,7 +19,10 @@
     <section id="nhat-ky" style="scroll-margin-top:80px">
         <div class="ld-section-head">
             <h2 class="ld-section-title">Nhật ký bữa ăn</h2>
-            <input id="log-date" type="date" class="ld-input" style="width:auto;padding:8px 11px;font-size:14.5px">
+            <span style="display:flex;align-items:center;gap:12px">
+                <a href="/nhat-ky" style="font-size:14.5px">Trang Nhật ký đầy đủ</a>
+                <input id="log-date" type="date" class="ld-input" style="width:auto;padding:8px 11px;font-size:14.5px">
+            </span>
         </div>
         <div id="summary" style="font-size:15px;margin-bottom:12px"></div>
         <div class="ld-group" id="logs"></div>

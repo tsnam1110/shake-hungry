@@ -18,9 +18,9 @@
     $initials = $user ? collect(explode(' ', trim($user->name)))->map(fn ($w) => mb_strtoupper(mb_substr($w, 0, 1)))->take(2)->implode('') : '';
     $navItems = [
         ['gợi ý', '/', 'Lắc món', 'dice', $path === '/'],
-        ['gợi ý', '/#kham-pha', 'Khám phá món', 'search', false],
+        ['gợi ý', '/kham-pha', 'Khám phá món', 'search', str_starts_with($path, 'kham-pha')],
         ['gợi ý', '/hoa-qua', 'Hoa quả theo mùa', 'fruit', str_starts_with($path, 'hoa-qua')],
-        ['của bạn', '/ho-so#nhat-ky', 'Nhật ký bữa ăn', 'book', false],
+        ['của bạn', '/nhat-ky', 'Nhật ký bữa ăn', 'book', $path === 'nhat-ky'],
         ['của bạn', '/ho-so', 'Hồ sơ của tôi', 'person', $path === 'ho-so'],
         ['của bạn', '/ho-so#dong-gop', 'Đóng góp cộng đồng', 'heart', false],
     ];
@@ -102,11 +102,11 @@
 <nav class="ld-tabbar" aria-label="Điều hướng chính">
     <a href="/" class="{{ $path === '/' ? 'active' : '' }}">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">{!! $icons['dice'] !!}</svg>Lắc món</a>
-    <a href="/#kham-pha">
+    <a href="/kham-pha" class="{{ str_starts_with($path, 'kham-pha') ? 'active' : '' }}">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">{!! $icons['search'] !!}</svg>Khám phá</a>
     <a href="/hoa-qua" class="{{ str_starts_with($path, 'hoa-qua') ? 'active' : '' }}">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">{!! $icons['fruit'] !!}</svg>Hoa quả</a>
-    <a href="/ho-so#nhat-ky">
+    <a href="/nhat-ky" class="{{ $path === 'nhat-ky' ? 'active' : '' }}">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">{!! $icons['book'] !!}</svg>Nhật ký</a>
     <a href="{{ $user ? '/ho-so' : '/tai-khoan' }}" class="{{ $path === 'ho-so' ? 'active' : '' }}">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">{!! $icons['person'] !!}</svg>Tôi</a>

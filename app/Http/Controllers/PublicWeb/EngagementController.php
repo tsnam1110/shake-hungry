@@ -93,6 +93,34 @@ class EngagementController extends Controller
         return response()->json($log, 201);
     }
 
+    /** Quả đã ăn trong một ngày (trang Nhật ký UI-015). */
+    public function fruitLogs(Request $request): JsonResponse
+    {
+        $date = $request->query('date', now()->toDateString());
+        $logs = $request->user()->fruitLogs()
+            ->with('fruit.ingredient:id,name_vi')
+            ->whereDate('eaten_at', $date)
+            ->orderBy('eaten_at')
+            ->get()
+            ->map(fn (FruitLog $l) => [
+                'id' => $l->id,
+                'fruit_id' => $l->fruit_id,
+                'slug' => $l->fruit?->slug,
+                'name' => $l->fruit?->ingredient?->name_vi,
+                'eaten_at' => $l->eaten_at?->toIso8601String(),
+            ]);
+
+        return response()->json(['date' => $date, 'logs' => $logs]);
+    }
+
+    public function destroyFruitLog(Request $request, FruitLog $fruitLog): JsonResponse
+    {
+        abort_unless($fruitLog->user_id === $request->user()->id, 404);
+        $fruitLog->delete();
+
+        return response()->json(['ok' => true]);
+    }
+
     public function stats(Request $request): JsonResponse
     {
         $user = $request->user();

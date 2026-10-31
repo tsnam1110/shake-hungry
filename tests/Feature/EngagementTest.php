@@ -67,3 +67,23 @@ it('thống kê: đếm số lượng món đã ăn và quả đã ăn theo từ
         ->assertJsonPath('fruits_distinct', 1)
         ->assertJsonPath('top_fruits.0.count', 2);
 });
+
+it('nhật ký: fruit-logs theo ngày + xoá của mình, meal-logs theo khoảng ngày (UI-015)', function () {
+    $user = engUser();
+    $this->actingAs($user);
+    $f = engFruit('qua-nhat-ky');
+    $logId = $this->postJson('/api/fruit-logs', ['fruit_id' => $f->id, 'eaten_at' => '2026-10-30T12:00:00'])->assertCreated()->json('id');
+    $this->postJson('/api/fruit-logs', ['fruit_id' => $f->id, 'eaten_at' => '2026-10-29T12:00:00'])->assertCreated();
+
+    $this->getJson('/api/fruit-logs?date=2026-10-30')
+        ->assertJsonCount(1, 'logs')
+        ->assertJsonPath('logs.0.name', 'qua-nhat-ky');
+    $this->deleteJson("/api/fruit-logs/{$logId}")->assertOk();
+    $this->getJson('/api/fruit-logs?date=2026-10-30')->assertJsonCount(0, 'logs');
+
+    $dish = engDish('mon-nhat-ky');
+    $this->postJson('/api/meal-logs', ['dish_id' => $dish->id, 'slot' => 'trua', 'source' => 'manual', 'eaten_at' => '2026-10-30T12:00:00'])->assertCreated();
+    $this->postJson('/api/meal-logs', ['dish_id' => $dish->id, 'slot' => 'toi', 'source' => 'manual', 'eaten_at' => '2026-10-31T19:00:00'])->assertCreated();
+    $days = $this->getJson('/api/meal-logs?from=2026-10-29&to=2026-10-31')->assertOk()->json('days');
+    expect($days)->toHaveKeys(['2026-10-29', '2026-10-30', '2026-10-31']);
+});

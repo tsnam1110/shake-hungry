@@ -66,21 +66,21 @@
 
     {{-- ===== Hôm nay đã ăn (chỉ khi đăng nhập và có ghi bữa) ===== --}}
     <section id="today-section" hidden>
-        <div class="ld-section-head"><h2 class="ld-section-title">Hôm nay bạn đã ăn</h2><a href="/ho-so#nhat-ky">Nhật ký</a></div>
+        <div class="ld-section-head"><h2 class="ld-section-title">Hôm nay bạn đã ăn</h2><a href="/nhat-ky">Nhật ký</a></div>
         <div class="ld-group" id="today-logs"></div>
         <p class="ld-note" id="today-summary" style="margin-top:10px"></p>
     </section>
 
     {{-- ===== Khám phá món (UI-006 + thẻ đồng nhất UI-012) ===== --}}
     <section id="kham-pha" style="scroll-margin-top:80px">
-        <div class="ld-section-head"><h2 class="ld-section-title">Khám phá món</h2></div>
+        <div class="ld-section-head"><h2 class="ld-section-title">Khám phá món</h2><a href="/kham-pha">Trang Khám phá đầy đủ</a></div>
         <div class="ld-search" role="search">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#86868b" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20.5 20.5 16.6 16.6"/></svg>
             <input id="catalog-q" type="search" placeholder="Tìm món ăn" aria-label="Tìm món ăn">
         </div>
         <div class="ld-chips-scroll" id="catalog-filters" style="margin-top:10px" role="group" aria-label="Lọc theo nhãn"></div>
         <div class="ld-grid" id="catalog"></div>
-        <p class="ld-note" style="margin-top:12px">Số calo luôn là khoảng kèm độ tin cậy. Món chưa đủ dữ liệu không hiện số. Ảnh món đang được bổ sung — ô ảnh sẽ giữ nguyên kích thước khi có ảnh thật.</p>
+        <p class="ld-note" style="margin-top:12px">Mục này là bản dùng nhanh ngay tại trang chủ — cần lọc sâu và xem toàn bộ kho món thì mở trang Khám phá đầy đủ. Số calo luôn là khoảng kèm độ tin cậy; món chưa đủ dữ liệu không hiện số.</p>
     </section>
 
     {{-- ===== Hoa quả tháng này (UI-009 + thẻ đồng nhất UI-012) ===== --}}

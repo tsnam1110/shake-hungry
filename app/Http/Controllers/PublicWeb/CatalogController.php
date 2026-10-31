@@ -23,7 +23,10 @@ class CatalogController extends Controller
     public function index(Request $request): JsonResponse
     {
         $query = Dish::query()
-            ->with(['names' => fn ($q) => $q->where('is_primary', true), 'region:id,name', 'nutrition', 'mealSlots', 'tags:id,slug,name']);
+            ->with(['names' => fn ($q) => $q->where('is_primary', true)
+                // Mỗi món có tên chính theo từng locale; giao diện tiếng Việt
+                // luôn lấy tên 'vi' làm names[0] (khớp với sort=name).
+                ->orderByRaw("CASE WHEN locale = 'vi' THEN 0 ELSE 1 END"), 'region:id,name', 'nutrition', 'mealSlots', 'tags:id,slug,name']);
         if ($q = trim((string) $request->query('q', ''))) {
             $query->whereHas('names', fn ($w) => $w->where('name', 'like', "%{$q}%"));
         }
@@ -45,9 +48,27 @@ class CatalogController extends Controller
                 $query->whereDoesntHave('tags', fn ($w) => $w->whereIn('tags.slug', $slugs));
             }
         }
-        $query->orderByDesc('id');
+        // Trang Khám phá chuyên dụng (UI-015): lọc vùng + sắp xếp + cỡ trang.
+        if ($regionId = $request->query('region_id')) {
+            $query->where('dishes.region_id', (int) $regionId);
+        }
+        match ($request->query('sort')) {
+            'name' => $query->leftJoin('dish_names', function ($j) {
+                // is_primary là theo từng locale (vi/en) — phải khoá locale vi
+                // kẻo mỗi món bị nhân đôi dòng và total phình lên.
+                $j->on('dish_names.dish_id', '=', 'dishes.id')
+                    ->where('dish_names.is_primary', true)
+                    ->where('dish_names.locale', 'vi');
+            })->orderBy('dish_names.name')->select('dishes.*'),
+            'kcal_asc', 'kcal_desc' => $query->leftJoin('dish_nutrition', 'dish_nutrition.dish_id', '=', 'dishes.id')
+                ->orderByRaw('dish_nutrition.kcal_min IS NULL')
+                ->orderBy('dish_nutrition.kcal_min', $request->query('sort') === 'kcal_asc' ? 'asc' : 'desc')
+                ->select('dishes.*'),
+            default => $query->orderByDesc('dishes.id'),
+        };
+        $perPage = max(1, min(48, (int) $request->query('per_page', 24)));
 
-        return response()->json($query->paginate(24));
+        return response()->json($query->paginate($perPage));
     }
 
     public function show(Dish $dish): JsonResponse

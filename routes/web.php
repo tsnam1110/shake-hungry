@@ -17,6 +17,8 @@ Route::get('/', function () {
 Route::get('/tai-khoan', fn () => view('account'))->name('login');
 Route::get('/ho-so', fn () => view('profile'))->middleware('auth');
 Route::get('/mon/{slug}', fn () => view('dish'));
+Route::get('/kham-pha', fn () => view('explore'));
+Route::get('/nhat-ky', fn () => view('diary'))->middleware('auth');
 Route::get('/hoa-qua', fn () => view('fruits'));
 Route::get('/hoa-qua/{slug}', fn () => view('fruit'));
 
@@ -40,6 +42,8 @@ Route::prefix('api')->group(function () {
         Route::get('/favorites/ids', [\App\Http\Controllers\PublicWeb\EngagementController::class, 'ids']);
         Route::post('/favorites/toggle', [\App\Http\Controllers\PublicWeb\EngagementController::class, 'toggle']);
         Route::post('/fruit-logs', [\App\Http\Controllers\PublicWeb\EngagementController::class, 'storeFruitLog']);
+        Route::get('/fruit-logs', [\App\Http\Controllers\PublicWeb\EngagementController::class, 'fruitLogs']);
+        Route::delete('/fruit-logs/{fruitLog}', [\App\Http\Controllers\PublicWeb\EngagementController::class, 'destroyFruitLog']);
         Route::get('/stats', [\App\Http\Controllers\PublicWeb\EngagementController::class, 'stats']);
     });
     Route::get('/regions', [\App\Http\Controllers\PublicWeb\CatalogController::class, 'regions']);
