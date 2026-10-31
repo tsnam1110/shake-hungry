@@ -55,7 +55,14 @@
     "Vớt ra để ráo, ăn kèm kho quẹt hoặc nước mắm."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/kho-qua-luoc.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-007 đợt 7: GIỮ Mức 1 — đã mở 3 họ nguồn (ĐMX kho quẹt, Cookpad Bòn Bon, Cookpad minh!) nhưng CẢ BA đều là mẹt rau luộc thập cẩm chấm kho quẹt; không có công thức độc lập đúng món 'khổ qua luộc đĩa đơn' có khẩu phần trên nguồn đạt chuẩn sau 2 vòng tìm kiếm (các bài độc lập đều là trang mẹo/SEO vô danh). Định lượng mướp đắng 130g không đối chiếu được cùng cơ sở (nguồn mẹt cho ~0,5 trái/người kèm 2–4 loại rau khác) → không qua cổng đối chiếu của Mức 2. KHÔNG hạ chuẩn: giữ Mức 1 kèm hồ sơ này; đường nâng để ngỏ cho quyết định điều phối/chủ dự án về tiền lệ nguồn-yếu-có-hồ-sơ. Phần chấm giữ ở steps (kho quẹt là món riêng đã có trong kho), không thêm dòng chấm. Ghi nhận chờ phân xử cấp kho: thẻ loai:mon-chinh cho đĩa rau phụ (giống dau-bap-luoc).]",

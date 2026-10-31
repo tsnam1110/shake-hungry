@@ -177,7 +177,14 @@
       "note": "Hướng Nghiệp Á Âu (giảng viên Bếp Nóng): gỏi ngó sen tôm thịt — ngó sen ~100g, hành tây 40g, lạc 20g theo tỉ lệ mẻ."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/goi-tom-thit.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 đợt 2 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-007 đợt 7: nâng Mức 2 — 3 nguồn đã mở. SỬA CẤU TRÚC BẮT BUỘC: bỏ củ sen 40g → ngó sen 90g (3/3 nguồn dùng ngó sen, 0/3 dùng củ sen). HỆ QUẢ: slug ngo-sen chưa có số dinh dưỡng (null có hồ sơ) nên món tạm mất khả năng tính calo cho tới khi ngó sen được biên soạn số — không dùng số của củ sen thay cho ngó sen (QT-1); đây là ca 'gỏi ngó sen không tính được' đã biết từ DISH-004. BỔ SUNG hành tây 30g (3 nguồn: 25–40g); SỬA đường 6→10g, lạc rang 15→20g (2 nguồn đồng thuận); serving 280→320g theo tổng nguyên liệu sau sửa. GIỮ dưa leo 60g (1 nguồn ủng hộ — thuộc biến thể nấm tuyết); ghi nhận mọi nguồn dùng giấm là acid chính, chanh chỉ phụ — file giữ chanh 12g, câu hỏi mở cho vòng sau.]",

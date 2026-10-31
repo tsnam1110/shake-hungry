@@ -161,7 +161,14 @@
       "note": "VietFoodShop — 'Gỏi xoài trộn tôm khô': đặc sản đường phố Sài Gòn; ghi rõ không cho chanh/dấm."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/goi-xoai.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-007 đợt 7: nâng Mức 2 — 3 nguồn đã mở. GIỮ toàn bộ định lượng chính (lạc 12g khớp gần tuyệt đối 2 nguồn: 12,5g). PHÂN XỬ CHANH: đổi chanh 5g sang dạng tuỳ chọn — 2/3 nguồn nói tường minh không cho chanh (xoài đã chua), 1 nguồn có dùng; tuỳ chọn là phân xử an toàn. Húng lũi là rau thơm thứ ba ở cả 3 nguồn nhưng kho chưa có slug — đưa vào hàng đợi biên soạn nguyên liệu, không thay bằng húng quế (khác loài).] [LV2-008 Phần A: BỔ SUNG dòng hung-lui 3g — húng lũi là rau thơm thứ ba ở cả 3 nguồn đã mở của món (ghi nhận treo từ LV2-007); slug hung-lui đã biên soạn đợt này từ USDA SR Legacy 173475 'Spearmint, fresh' (Mentha spicata, 44 kcal/100g, kiểm chứng mirror). Lượng 3g là đề xuất biên soạn theo tương quan hai rau thơm sẵn có trong file (hung-que 5g, rau-ram 5g; húng lũi vai trò phụ hơn) — không nguồn nào định lượng riêng, confidence low. Món giữ Mức 2.]",
