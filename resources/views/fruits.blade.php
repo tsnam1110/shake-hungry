@@ -56,6 +56,7 @@ monthSel.innerHTML = '<option value="">Tất cả các tháng</option>' + Array.
     `<option value="${i + 1}" ${i + 1 === now.getMonth() + 1 ? 'selected' : ''}>Tháng ${i + 1}</option>`).join('');
 const groupName = { 'co-mui': 'Có múi', mong: 'Quả mọng', hach: 'Quả hạch', 'nhiet-doi': 'Nhiệt đới', dua: 'Họ dưa', khac: 'Khác' };
 function esc(s) { return (s ?? '').toString().replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+const heartSvg = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"><path d="M12 20.5C7 16.5 3.8 13.3 3.8 9.6 3.8 7 5.7 5 8.1 5c1.6 0 3.1.9 3.9 2.3C12.8 5.9 14.3 5 15.9 5c2.4 0 4.3 2 4.3 4.6 0 3.7-3.2 6.9-8.2 10.9Z"/></svg>';
 function isOn(id) { return document.getElementById(id).getAttribute('aria-checked') === 'true'; }
 ['only-season', 'only-value'].forEach(id => {
     const el = document.getElementById(id);
@@ -79,6 +80,7 @@ async function load() {
     document.getElementById('list').innerHTML = (data.data ?? []).map(f => `
         <a href="/hoa-qua/${f.slug}" class="ld-dcard">
             <img class="ld-dcard-img" src="/images/placeholder-fruit.svg" alt="" loading="lazy">
+            <span class="ld-heart" data-fav-fruit="${f.id}" role="button" aria-label="Yêu thích quả này">${heartSvg}</span>
             <span class="ld-dcard-body">
                 <span class="ld-dcard-title">${esc(f.name_vi)}</span>
                 <span class="ld-dcard-meta">${groupName[f.classification_group] ?? ''} · ${f.kcal_per_100g != null ? Math.round(f.kcal_per_100g) + ' kcal/100g' : 'chưa có số calo'}${f.aliases?.length ? ' · ' + f.aliases.map(a => esc(a.name)).join(', ') : ''}</span>
@@ -87,6 +89,7 @@ async function load() {
                     `<i class="${(f.main_season_months ?? []).includes(i + 1) ? 'main' : (f.availability_months ?? []).includes(i + 1) ? 'on' : ''}"></i>`).join('')}</span></span>
             </span>
         </a>`).join('');
+    if (window.ldRefreshHearts) window.ldRefreshHearts();
     document.getElementById('empty').hidden = (data.data ?? []).length > 0;
 }
 ['q', 'group', 'origin'].forEach(id => document.getElementById(id).addEventListener('input', load));

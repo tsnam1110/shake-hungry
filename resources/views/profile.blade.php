@@ -35,6 +35,31 @@
         <div id="manual-results" class="ld-group" style="margin-top:10px"></div>
     </section>
 
+    {{-- Thống kê ăn uống (UI-014) --}}
+    <section id="thong-ke">
+        <h2 class="ld-section-title">Thống kê ăn uống</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3" id="stats-tiles"></div>
+        <div class="grid sm:grid-cols-2 gap-4" style="margin-top:16px">
+            <div>
+                <p class="ld-group-label" style="margin-top:0">Món ăn nhiều nhất</p>
+                <div class="ld-group" id="top-dishes"></div>
+            </div>
+            <div>
+                <p class="ld-group-label" style="margin-top:0">Quả ăn nhiều nhất</p>
+                <div class="ld-group" id="top-fruits"></div>
+            </div>
+        </div>
+    </section>
+
+    {{-- Yêu thích (UI-014) --}}
+    <section id="yeu-thich">
+        <h2 class="ld-section-title">Yêu thích</h2>
+        <p class="ld-group-label" style="margin-top:0">Món ăn</p>
+        <div class="ld-grid" id="fav-dishes"></div>
+        <p class="ld-group-label">Hoa quả</p>
+        <div class="ld-grid" id="fav-fruits"></div>
+    </section>
+
     {{-- Thể trạng & ăn uống --}}
     <section>
         <h2 class="ld-section-title">Thể trạng và ăn uống</h2>
@@ -67,9 +92,9 @@
                     </select></div>
                 <div><label class="ld-field-label" for="f-target">Kcal mục tiêu mỗi bữa (điền sẵn khi lắc)</label>
                     <input id="f-target" name="target_kcal_per_meal" type="number" min="100" max="2000" placeholder="Ví dụ: 600" class="ld-input"></div>
-                <div class="sm:col-span-2"><label class="ld-field-label" for="excluded">Không ăn được / dị ứng — chọn để lọc cứng khi lắc</label>
-                    <select id="excluded" multiple size="4" class="ld-select"></select>
-                    <p class="ld-note" style="margin-top:6px">Giữ Ctrl (hoặc Cmd) để chọn nhiều mục. Lọc dị ứng không bao giờ bị hệ thống tự nới lỏng.</p></div>
+                <div class="sm:col-span-2"><span class="ld-field-label">Không ăn được / dị ứng — lọc cứng khi lắc</span>
+                    <div class="ld-chips" id="excluded-chips"></div>
+                    <p class="ld-note" style="margin-top:8px">Chạm để bật hoặc tắt từng mục. Cấu hình này dùng chung cho khối Lắc ở trang chủ và không bao giờ bị hệ thống tự nới lỏng.</p></div>
             </div>
             <button class="ld-btn ld-btn-primary" style="width:100%;margin-top:18px">Lưu hồ sơ</button>
         </form>
@@ -108,8 +133,14 @@ const ALLERGEN_PRESETS = [
     ['Sữa', ['sua-tuoi','sua-dac','sua-chua']], ['Đậu nành', ['dau-nanh-hat','sua-dau-nanh','dau-phu','dau-phu-chien']],
     ['Lúa mì', ['bot-mi','banh-mi','mi-trung-kho','mi-an-lien']], ['Mắm tôm', ['mam-tom']],
 ];
-const excludedEl = document.getElementById('excluded');
-excludedEl.innerHTML = ALLERGEN_PRESETS.map(([l], i) => `<option value="${i}">${l}</option>`).join('');
+const excludedChips = document.getElementById('excluded-chips');
+const selectedPresets = new Set();
+excludedChips.innerHTML = ALLERGEN_PRESETS.map(([l], i) => `<button type="button" class="ld-chip allergen" data-i="${i}">${l}</button>`).join('');
+excludedChips.querySelectorAll('button').forEach(b => b.onclick = () => {
+    const i = +b.dataset.i;
+    const on = b.classList.toggle('active');
+    on ? selectedPresets.add(i) : selectedPresets.delete(i);
+});
 
 async function init() {
     const me = await (await fetch('/api/me')).json();
@@ -124,7 +155,10 @@ async function init() {
         const f = document.getElementById('profile-form');
         ['height_cm','weight_kg','birth_year','sex','activity_level','diet_type','preferred_region_id','target_kcal_per_meal'].forEach(k => { if (profile[k] != null && f.elements[k]) f.elements[k].value = profile[k]; });
         const ex = new Set(profile.excluded_ingredients || []);
-        [...excludedEl.options].forEach(o => { o.selected = ALLERGEN_PRESETS[+o.value][1].some(s => ex.has(s)); });
+        excludedChips.querySelectorAll('button').forEach(b => {
+            const i = +b.dataset.i;
+            if (ALLERGEN_PRESETS[i][1].some(s => ex.has(s))) { b.classList.add('active'); selectedPresets.add(i); }
+        });
     }
     renderTdee(tdee);
     document.getElementById('log-date').value = new Date().toISOString().slice(0, 10);
@@ -147,7 +181,7 @@ document.getElementById('profile-form').onsubmit = async (e) => {
     const body = {};
     ['height_cm','weight_kg','birth_year','preferred_region_id','target_kcal_per_meal'].forEach(k => body[k] = raw[k] === '' || raw[k] == null ? null : +raw[k]);
     ['sex','activity_level','diet_type'].forEach(k => body[k] = raw[k] === '' ? null : raw[k]);
-    body.excluded_ingredients = [...excludedEl.selectedOptions].flatMap(o => ALLERGEN_PRESETS[+o.value][1]);
+    body.excluded_ingredients = [...selectedPresets].flatMap(i => ALLERGEN_PRESETS[i][1]);
     const resp = await fetch('/api/profile', { method: 'PUT', headers, body: JSON.stringify(body) });
     const data = await resp.json();
     if (resp.ok) { renderTdee(data.tdee); ldToast('Đã lưu hồ sơ'); } else alert(data.message || 'Lưu thất bại');
@@ -202,6 +236,56 @@ document.getElementById('contrib-form').onsubmit = async (e) => {
     if (resp.ok) e.target.reset();
 };
 document.getElementById('logout').onclick = async () => { await fetch('/api/logout', { method: 'POST', headers }); location.href = '/'; };
-init();
+
+/* ===== Thống kê + Yêu thích (UI-014) ===== */
+const heartSvg = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"><path d="M12 20.5C7 16.5 3.8 13.3 3.8 9.6 3.8 7 5.7 5 8.1 5c1.6 0 3.1.9 3.9 2.3C12.8 5.9 14.3 5 15.9 5c2.4 0 4.3 2 4.3 4.6 0 3.7-3.2 6.9-8.2 10.9Z"/></svg>';
+const confShortP = { high: 'Tin cậy cao', medium: 'Tin cậy TB', low: 'Tin cậy thấp' };
+async function loadStats() {
+    try {
+        const s = await (await fetch('/api/stats')).json();
+        const tile = (v, l) => `<div class="ld-card" style="padding:16px;text-align:center"><div class="ld-tnum" style="font-size:26px;font-weight:800">${v}</div><div style="font-size:13px;color:var(--color-faint);margin-top:2px">${l}</div></div>`;
+        document.getElementById('stats-tiles').innerHTML =
+            tile(s.meals_total, 'Bữa đã ghi') + tile(s.dishes_distinct, 'Món khác nhau đã ăn') +
+            tile(s.fruits_total, 'Lần ăn quả') + tile(s.fruits_distinct, 'Loại quả đã ăn');
+        const topRow = (t, href) => `<a class="ld-row" href="${href}"><span class="grow" style="font-weight:600">${esc(t.name ?? '')}</span><span class="ld-badge vu">× ${t.count}</span></a>`;
+        document.getElementById('top-dishes').innerHTML = (s.top_dishes ?? []).map(t => topRow(t, '/mon/' + t.slug)).join('')
+            || '<p style="color:var(--color-faint);padding:14px 16px;margin:0">Chưa ghi bữa nào.</p>';
+        document.getElementById('top-fruits').innerHTML = (s.top_fruits ?? []).map(t => topRow(t, '/hoa-qua/' + t.slug)).join('')
+            || '<p style="color:var(--color-faint);padding:14px 16px;margin:0">Chưa ghi quả nào — bấm "Đã ăn quả này" ở trang quả.</p>';
+    } catch { /* khối phụ */ }
+}
+async function loadFavorites() {
+    try {
+        const { dishes, fruits } = await (await fetch('/api/favorites')).json();
+        document.getElementById('fav-dishes').innerHTML = (dishes ?? []).map(d => `
+            <a href="/mon/${d.slug}" class="ld-dcard">
+                <img class="ld-dcard-img" src="/images/placeholder-dish.svg" alt="" loading="lazy">
+                <span class="ld-heart" data-fav-dish="${d.id}" role="button" aria-label="Bỏ yêu thích">${heartSvg}</span>
+                <span class="ld-dcard-body">
+                    <span class="ld-dcard-title">${esc(d.name ?? d.slug)}</span>
+                    <span class="ld-dcard-meta">${esc(d.region ?? '')}</span>
+                    <span class="ld-dcard-badges"></span>
+                    <span class="ld-dcard-foot">${d.nutrition
+                        ? `<span class="ld-dcard-kcal ld-tnum">${Math.round(d.nutrition.kcal_min)}–${Math.round(d.nutrition.kcal_max)} kcal</span><span class="ld-dcard-conf">${confShortP[d.nutrition.confidence] ?? ''}</span>`
+                        : `<span class="ld-dcard-kcal none">Chưa đủ dữ liệu</span><span class="ld-dcard-conf">không hiện số</span>`}</span>
+                </span>
+            </a>`).join('') || '<p class="ld-note" style="margin:0">Chưa có món yêu thích — bấm biểu tượng tim trên thẻ món để lưu.</p>';
+        document.getElementById('fav-fruits').innerHTML = (fruits ?? []).map(f => `
+            <a href="/hoa-qua/${f.slug}" class="ld-dcard">
+                <img class="ld-dcard-img" src="/images/placeholder-fruit.svg" alt="" loading="lazy">
+                <span class="ld-heart" data-fav-fruit="${f.id}" role="button" aria-label="Bỏ yêu thích">${heartSvg}</span>
+                <span class="ld-dcard-body">
+                    <span class="ld-dcard-title">${esc(f.name_vi ?? f.slug)}</span>
+                    <span class="ld-dcard-meta">${f.kcal_per_100g != null ? Math.round(f.kcal_per_100g) + ' kcal/100g' : 'Chưa có số calo'}</span>
+                    <span class="ld-dcard-badges"></span>
+                    <span class="ld-dcard-foot"><span class="ld-seasonbar" aria-hidden="true">${Array.from({length: 12}, (_, i) =>
+                        `<i class="${(f.main_season_months ?? []).includes(i + 1) ? 'main' : (f.availability_months ?? []).includes(i + 1) ? 'on' : ''}"></i>`).join('')}</span></span>
+                </span>
+            </a>`).join('') || '<p class="ld-note" style="margin:0">Chưa có quả yêu thích.</p>';
+        if (window.ldRefreshHearts) window.ldRefreshHearts();
+    } catch { /* khối phụ */ }
+}
+document.addEventListener('fav-changed', () => loadFavorites());
+init().then(() => { loadStats(); loadFavorites(); });
 </script>
 @endpush

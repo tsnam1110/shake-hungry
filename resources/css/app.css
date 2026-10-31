@@ -213,8 +213,18 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 @media (min-width: 640px) { .ld-grid-ing { grid-template-columns: repeat(3, 1fr); } }
 @media (min-width: 1024px) { .ld-grid-ing { grid-template-columns: repeat(4, 1fr); } }
 .ld-dcard { display: flex; flex-direction: column; height: 100%; background: var(--color-surface);
-    border-radius: 20px; overflow: hidden; text-decoration: none; color: var(--color-ink);
+    border-radius: 20px; overflow: hidden; text-decoration: none; color: var(--color-ink); position: relative;
     box-shadow: 0 1px 2px rgba(0,0,0,.03), 0 10px 30px rgba(0,0,0,.045); }
+.ld-heart { position: absolute; top: 10px; right: 10px; z-index: 2; width: 36px; height: 36px; border-radius: 50%;
+    border: 0; background: rgba(255,255,255,.94); box-shadow: 0 2px 8px rgba(0,0,0,.14); cursor: pointer;
+    display: inline-flex; align-items: center; justify-content: center; color: #aeaeb2; padding: 0; }
+.ld-heart svg { width: 19px; height: 19px; }
+.ld-heart.on { color: #ff2d55; }
+.ld-heart.on svg path { fill: #ff2d55; }
+.ld-fav-btn { display: inline-flex; align-items: center; gap: 8px; }
+.ld-fav-btn .heart-ic { color: #aeaeb2; display: inline-flex; }
+.ld-fav-btn.on .heart-ic { color: #ff2d55; }
+.ld-fav-btn.on .heart-ic svg path { fill: #ff2d55; }
 a.ld-dcard:hover { box-shadow: 0 2px 4px rgba(0,0,0,.05), 0 14px 34px rgba(0,0,0,.09); }
 .ld-dcard-img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; flex: none; background: var(--color-fill); }
 .ld-dcard-body { display: flex; flex-direction: column; flex: 1; padding: 12px 14px 14px; min-width: 0; }

@@ -40,6 +40,16 @@ class User extends Authenticatable
         return $this->hasMany(MealLog::class);
     }
 
+    public function favorites(): \Illuminate\Database\Eloquent\Relations\HasMany
+    {
+        return $this->hasMany(Favorite::class);
+    }
+
+    public function fruitLogs(): \Illuminate\Database\Eloquent\Relations\HasMany
+    {
+        return $this->hasMany(FruitLog::class);
+    }
+
     /** Vai trò khu vực quản trị (ADM-001): admin toàn quyền, editor biên soạn. */
     public function isAdmin(): bool
     {

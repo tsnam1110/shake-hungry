@@ -17,6 +17,7 @@ const slotName = { sang: 'Sáng', trua: 'Trưa', chieu: 'Chiều', toi: 'Tối',
 const confLabel = { high: 'Tin cậy cao', medium: 'Tin cậy trung bình', low: 'Tin cậy thấp · số tham khảo' };
 const confClass = { high: '', medium: 'medium', low: 'low' };
 function esc(s) { return (s ?? '').toString().replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+const heartSvg = '<svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"><path d="M12 20.5C7 16.5 3.8 13.3 3.8 9.6 3.8 7 5.7 5 8.1 5c1.6 0 3.1.9 3.9 2.3C12.8 5.9 14.3 5 15.9 5c2.4 0 4.3 2 4.3 4.6 0 3.7-3.2 6.9-8.2 10.9Z"/></svg>';
 const chev = '<svg class="ld-chev" width="8" height="14" viewBox="0 0 8 14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M1 1l6 6-6 6"/></svg>';
 
 fetch('/api/dishes/' + encodeURIComponent(slug), { headers: { 'Accept': 'application/json' } })
@@ -57,6 +58,10 @@ fetch('/api/dishes/' + encodeURIComponent(slug), { headers: { 'Accept': 'applica
             : '<p style="color:var(--color-faint);margin:10px 0 0">Chưa đủ dữ liệu dinh dưỡng cho món này — hệ thống không hiện số thay vì đoán.</p>'}
         </div>
 
+        <div style="display:flex;gap:10px;margin-top:14px;flex-wrap:wrap">
+            <button type="button" class="ld-btn ld-btn-gray ld-fav-btn" data-fav-dish="${d.id}" style="padding:11px 20px;font-size:15px"><span class="heart-ic">${heartSvg}</span>Yêu thích món này</button>
+        </div>
+
         ${provenance ? `
         <h2 class="ld-section-title">Nguồn gốc con số</h2>
         <div class="ld-group">
@@ -91,6 +96,7 @@ fetch('/api/dishes/' + encodeURIComponent(slug), { headers: { 'Accept': 'applica
                 <span class="grow">${esc(s)}</span></div>`).join('')}
         </div>` : ''}
         ${d.needs_review ? '<div class="ld-warn" style="margin-top:18px"><span>Món đang trong giai đoạn biên soạn dữ liệu — thông tin có thể được cập nhật sau khi duyệt.</span></div>' : ''}`;
+        if (window.ldRefreshHearts) window.ldRefreshHearts();
     })
     .catch(() => { document.getElementById('content').textContent = 'Không tải được món này.'; });
 </script>

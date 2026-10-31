@@ -17,6 +17,7 @@ const regionName = { bac: 'Miền Bắc', trung: 'Miền Trung', nam: 'Miền Na
 const groupName = { 'co-mui': 'Có múi', mong: 'Quả mọng', hach: 'Quả hạch', 'nhiet-doi': 'Nhiệt đới', dua: 'Họ dưa', khac: 'Khác' };
 const originName = { 'trong-nuoc': 'Trồng trong nước', 'nhap-khau': 'Nhập khẩu', 'ca-hai': 'Cả trồng trong nước và nhập khẩu' };
 function esc(s) { return (s ?? '').toString().replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+const heartSvg = '<svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"><path d="M12 20.5C7 16.5 3.8 13.3 3.8 9.6 3.8 7 5.7 5 8.1 5c1.6 0 3.1.9 3.9 2.3C12.8 5.9 14.3 5 15.9 5c2.4 0 4.3 2 4.3 4.6 0 3.7-3.2 6.9-8.2 10.9Z"/></svg>';
 function fmt(v) { return v == null ? '—' : Math.round(v).toLocaleString('vi-VN'); }
 function seasonRow(label, months, bg, fg) {
     return `<div style="display:flex;align-items:center;gap:3px;margin-top:5px">
@@ -40,6 +41,11 @@ fetch('/api/fruits/' + encodeURIComponent(slug), { headers: { 'Accept': 'applica
         ${ing.aliases?.length ? `<p style="color:var(--color-faint);margin:0">Tên gọi khác: ${ing.aliases.map(a => a.note ? `${esc(a.name)} (${esc(a.note)})` : esc(a.name)).join(', ')}</p>` : ''}
         <p class="ld-subtitle" style="margin-top:4px">${groupName[f.classification_group] ?? ''}${f.family ? ' · ' + esc(f.family) : ''} · ${originName[f.origin] ?? ''}</p>
         ${allergenTags.length ? `<div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:10px">${allergenTags.map(t => `<span class="ld-badge" style="background:var(--color-danger-tint);color:var(--color-danger)">Dị ứng: ${esc(t.name)}</span>`).join('')}</div>` : ''}
+
+        <div style="display:flex;gap:10px;margin-top:16px;flex-wrap:wrap">
+            <button type="button" class="ld-btn ld-btn-gray ld-fav-btn" data-fav-fruit="${f.id}" style="padding:11px 20px;font-size:15px"><span class="heart-ic">${heartSvg}</span>Yêu thích</button>
+            <button type="button" class="ld-btn ld-btn-primary" id="fruit-eat-btn" style="padding:11px 20px;font-size:15px">Đã ăn quả này</button>
+        </div>
 
         <div class="ld-card" style="margin-top:18px">
             <p style="margin:0;color:var(--color-sub);font-size:14.5px;font-weight:600">Dinh dưỡng mỗi 100g phần ăn được</p>
@@ -97,6 +103,16 @@ fetch('/api/fruits/' + encodeURIComponent(slug), { headers: { 'Accept': 'applica
         </div>
         <p class="ld-note" style="margin-top:10px">Giá tham khảo mùa vụ thu thập ngày ${esc(sources[0]?.collected_at ?? '')} — nguồn: ${sources.map(s => s.source_url ? `<a href="${esc(s.source_url)}" target="_blank" rel="noopener" style="color:var(--color-link)">${esc(s.source_name.split(' — ')[0].split(':')[0])}</a>` : esc(s.source_name.split(' — ')[0].split(':')[0])).join('; ')}. Giá thực tế thay đổi theo chợ và ngày mua.</p>`
         : '<p style="color:var(--color-faint)">Chưa có dữ liệu giá đủ tin cậy cho quả này.</p>'}`;
+        if (window.ldRefreshHearts) window.ldRefreshHearts();
+        const eatBtn = document.getElementById('fruit-eat-btn');
+        if (eatBtn) eatBtn.addEventListener('click', async () => {
+            const resp = await fetch('/api/fruit-logs', { method: 'POST',
+                headers: { 'Content-Type': 'application/json', 'Accept': 'application/json', 'X-CSRF-TOKEN': document.querySelector('meta[name=csrf-token]').content },
+                body: JSON.stringify({ fruit_id: f.id }) });
+            if (resp.status === 401) { ldToast('Đăng nhập để ghi lại quả đã ăn'); return; }
+            if (resp.ok) { eatBtn.textContent = 'Đã ghi vào thống kê ✓'; eatBtn.disabled = true; ldToast('Đã ghi ' + f.name_vi + ' vào thống kê quả đã ăn'); }
+            else ldToast('Chưa ghi được — thử lại sau');
+        });
     })
     .catch(() => { document.getElementById('content').textContent = 'Không tải được hồ sơ quả.'; });
 </script>

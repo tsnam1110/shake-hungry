@@ -116,6 +116,7 @@ class FruitController extends Controller
         $snapshot = $ingredient->nutrition_snapshot ?? [];
 
         return [
+            'id' => $fruit->id,
             'slug' => $fruit->slug,
             'name_vi' => $ingredient->name_vi,
             'name_en' => $ingredient->name_en,

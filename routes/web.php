@@ -36,6 +36,11 @@ Route::prefix('api')->group(function () {
         Route::delete('/meal-logs/{mealLog}', [\App\Http\Controllers\PublicWeb\ProfileController::class, 'destroyMealLog']);
         Route::post('/contributions', [\App\Http\Controllers\PublicWeb\ContributionController::class, 'store']);
         Route::get('/contributions', [\App\Http\Controllers\PublicWeb\ContributionController::class, 'mine']);
+        Route::get('/favorites', [\App\Http\Controllers\PublicWeb\EngagementController::class, 'index']);
+        Route::get('/favorites/ids', [\App\Http\Controllers\PublicWeb\EngagementController::class, 'ids']);
+        Route::post('/favorites/toggle', [\App\Http\Controllers\PublicWeb\EngagementController::class, 'toggle']);
+        Route::post('/fruit-logs', [\App\Http\Controllers\PublicWeb\EngagementController::class, 'storeFruitLog']);
+        Route::get('/stats', [\App\Http\Controllers\PublicWeb\EngagementController::class, 'stats']);
     });
     Route::get('/regions', [\App\Http\Controllers\PublicWeb\CatalogController::class, 'regions']);
     Route::get('/tags', [\App\Http\Controllers\PublicWeb\TaxonomyController::class, 'tags']);

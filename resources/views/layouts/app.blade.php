@@ -126,6 +126,43 @@
         t.textContent = msg; t.classList.add('show');
         clearTimeout(t._h); t._h = setTimeout(() => t.classList.remove('show'), 2600);
     };
+
+    /* Yêu thích (UI-014): dùng chung mọi trang — nút tim mang data-fav-dish
+       hoặc data-fav-fruit; trạng thái lấy từ /api/favorites/ids. */
+    window.__fav = { user: false, dishes: new Set(), fruits: new Set() };
+    window.ldRefreshHearts = function () {
+        document.querySelectorAll('[data-fav-dish]').forEach(el =>
+            el.classList.toggle('on', window.__fav.dishes.has(+el.dataset.favDish)));
+        document.querySelectorAll('[data-fav-fruit]').forEach(el =>
+            el.classList.toggle('on', window.__fav.fruits.has(+el.dataset.favFruit)));
+    };
+    document.addEventListener('click', async (e) => {
+        const el = e.target.closest('[data-fav-dish], [data-fav-fruit]');
+        if (!el) return;
+        e.preventDefault(); e.stopPropagation();
+        if (!window.__fav.user) { ldToast('Đăng nhập để lưu mục yêu thích'); return; }
+        const isDish = el.hasAttribute('data-fav-dish');
+        const id = +(isDish ? el.dataset.favDish : el.dataset.favFruit);
+        const resp = await fetch('/api/favorites/toggle', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json', 'X-CSRF-TOKEN': document.querySelector('meta[name=csrf-token]').content },
+            body: JSON.stringify(isDish ? { dish_id: id } : { fruit_id: id }),
+        });
+        if (!resp.ok) { ldToast('Chưa lưu được — thử lại sau'); return; }
+        const { favored } = await resp.json();
+        (isDish ? window.__fav.dishes : window.__fav.fruits)[favored ? 'add' : 'delete'](id);
+        window.ldRefreshHearts();
+        ldToast(favored ? 'Đã thêm vào Yêu thích' : 'Đã bỏ khỏi Yêu thích');
+        document.dispatchEvent(new CustomEvent('fav-changed', { detail: { isDish, id, favored } }));
+    });
+    fetch('/api/me').then(r => r.json()).then(async ({ user }) => {
+        if (!user) return;
+        window.__fav.user = true;
+        const ids = await (await fetch('/api/favorites/ids')).json();
+        window.__fav.dishes = new Set(ids.dish_ids ?? []);
+        window.__fav.fruits = new Set(ids.fruit_ids ?? []);
+        window.ldRefreshHearts();
+    }).catch(() => {});
 </script>
 @stack('scripts')
 </body>
