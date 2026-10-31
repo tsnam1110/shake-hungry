@@ -1,6 +1,6 @@
 {
   "_generated_by": "php artisan lacdoi:export-data — không sửa tay (DATA-REPOSITORY §2)",
-  "count": 313,
+  "count": 333,
   "ingredients": [
     {
       "slug": "bach-tuoc",
@@ -193,8 +193,18 @@
       "category": "thuy-san"
     },
     {
+      "slug": "ca-bong",
+      "name_vi": "Cá bống (cá bống nhỏ, sống)",
+      "category": "thuy-san"
+    },
+    {
       "slug": "ca-chep",
       "name_vi": "Cá chép (sống)",
+      "category": "thuy-san"
+    },
+    {
+      "slug": "ca-chim",
+      "name_vi": "Cá chim trắng biển (sống)",
       "category": "thuy-san"
     },
     {
@@ -213,6 +223,11 @@
       "category": "thuy-san"
     },
     {
+      "slug": "ca-doi",
+      "name_vi": "Cá đối (sống)",
+      "category": "thuy-san"
+    },
+    {
       "slug": "ca-duoi",
       "name_vi": "Cá đuối (sống)",
       "category": "thuy-san"
@@ -228,6 +243,16 @@
       "category": "thuy-san"
     },
     {
+      "slug": "ca-kho",
+      "name_vi": "Khô cá mặn (nói chung)",
+      "category": "thuy-san"
+    },
+    {
+      "slug": "ca-linh",
+      "name_vi": "Cá linh (sống)",
+      "category": "thuy-san"
+    },
+    {
       "slug": "ca-loc",
       "name_vi": "Cá lóc (sống)",
       "category": "thuy-san"
@@ -235,6 +260,11 @@
     {
       "slug": "ca-mai",
       "name_vi": "Cá mai (sống)",
+      "category": "thuy-san"
+    },
+    {
+      "slug": "ca-me",
+      "name_vi": "Cá mè (sống)",
       "category": "thuy-san"
     },
     {
@@ -283,8 +313,18 @@
       "category": "rau-cu"
     },
     {
+      "slug": "ca-tram",
+      "name_vi": "Cá trắm cỏ (sống)",
+      "category": "thuy-san"
+    },
+    {
       "slug": "ca-trich",
       "name_vi": "Cá trích (sống)",
+      "category": "thuy-san"
+    },
+    {
+      "slug": "ca-troi",
+      "name_vi": "Cá trôi (sống)",
       "category": "thuy-san"
     },
     {
@@ -366,6 +406,11 @@
       "slug": "chuoi",
       "name_vi": "Chuối tiêu",
       "category": "trai-cay"
+    },
+    {
+      "slug": "chuoi-xanh",
+      "name_vi": "Chuối xanh (nấu)",
+      "category": "rau-cu"
     },
     {
       "slug": "com-trang",
@@ -643,6 +688,11 @@
       "category": "khac"
     },
     {
+      "slug": "hat-doi",
+      "name_vi": "Hạt dổi (khô)",
+      "category": "gia-vi"
+    },
+    {
       "slug": "hat-nem",
       "name_vi": "Hạt nêm",
       "category": "gia-vi"
@@ -710,6 +760,11 @@
     {
       "slug": "khoai-mon",
       "name_vi": "Khoai môn (sống, đã gọt vỏ)",
+      "category": "rau-cu"
+    },
+    {
+      "slug": "khoai-so",
+      "name_vi": "Khoai sọ (sống, đã gọt vỏ)",
       "category": "rau-cu"
     },
     {
@@ -798,6 +853,11 @@
       "category": "trai-cay"
     },
     {
+      "slug": "long-lon",
+      "name_vi": "Lòng lợn (ruột lợn làm sạch, sống)",
+      "category": "thit"
+    },
+    {
       "slug": "long-non-lon",
       "name_vi": "Lòng non lợn (ruột non, sống)",
       "category": "thit"
@@ -811,6 +871,11 @@
       "slug": "luon",
       "name_vi": "Lươn đồng (sống, làm sạch)",
       "category": "thuy-san"
+    },
+    {
+      "slug": "mac-khen",
+      "name_vi": "Mắc khén (khô)",
+      "category": "gia-vi"
     },
     {
       "slug": "mam-ca-linh",
@@ -896,6 +961,11 @@
       "slug": "mit-chin",
       "name_vi": "Mít chín",
       "category": "trai-cay"
+    },
+    {
+      "slug": "mit-non",
+      "name_vi": "Mít non",
+      "category": "rau-cu"
     },
     {
       "slug": "mo-lon-nuoc",
@@ -1103,6 +1173,16 @@
       "category": "trai-cay"
     },
     {
+      "slug": "qua-khe",
+      "name_vi": "Khế chua",
+      "category": "trai-cay"
+    },
+    {
+      "slug": "qua-quat",
+      "name_vi": "Quất (tắc)",
+      "category": "trai-cay"
+    },
+    {
       "slug": "qua-sau",
       "name_vi": "Quả sấu",
       "category": "trai-cay"
@@ -1175,6 +1255,11 @@
     {
       "slug": "rau-ngot",
       "name_vi": "Rau ngót (sống)",
+      "category": "rau-cu"
+    },
+    {
+      "slug": "rau-nhut",
+      "name_vi": "Rau nhút",
       "category": "rau-cu"
     },
     {
@@ -1403,6 +1488,11 @@
       "category": "thit"
     },
     {
+      "slug": "thit-ngan",
+      "name_vi": "Thịt ngan (sống)",
+      "category": "thit"
+    },
+    {
       "slug": "thit-vit-co-da",
       "name_vi": "Thịt vịt có da (sống)",
       "category": "thit"
@@ -1443,6 +1533,11 @@
       "category": "rau-cu"
     },
     {
+      "slug": "tom-cang-xanh",
+      "name_vi": "Tôm càng xanh (bỏ vỏ, sống)",
+      "category": "thuy-san"
+    },
+    {
       "slug": "tom-kho",
       "name_vi": "Tôm khô",
       "category": "thuy-san"
@@ -1450,6 +1545,11 @@
     {
       "slug": "tom-su",
       "name_vi": "Tôm sú (bỏ vỏ, sống)",
+      "category": "thuy-san"
+    },
+    {
+      "slug": "tom-the",
+      "name_vi": "Tôm thẻ chân trắng (bỏ vỏ, sống)",
       "category": "thuy-san"
     },
     {

@@ -1,0 +1,96 @@
+{
+  "slug": "che-hat-sen-long-nhan",
+  "parent_dish_slug": null,
+  "country_code": "VN",
+  "region_code": "vn",
+  "names": [
+    {
+      "locale": "vi",
+      "name": "Chè hạt sen long nhãn",
+      "is_primary": true
+    },
+    {
+      "locale": "en",
+      "name": "che hat sen long nhan (lotus seed and longan sweet soup)",
+      "is_primary": true
+    }
+  ],
+  "is_eat_out": true,
+  "is_home_cook": true,
+  "cooking_method": "nau",
+  "completeness_level": 1,
+  "meal_slots": [
+    {
+      "slot": "chieu",
+      "weight": 9
+    },
+    {
+      "slot": "an-vat",
+      "weight": 9
+    }
+  ],
+  "serving_desc": "1 ly",
+  "serving_grams": 250,
+  "ingredients": [
+    {
+      "ingredient_slug": "hat-sen-tuoi",
+      "quantity": 40,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "duong-phen",
+      "quantity": 25,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nhan-kho",
+      "quantity": 15,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "la-dua",
+      "quantity": 1,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "muoi",
+      "quantity": 0.5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    }
+  ],
+  "recipe_steps": [
+    "Hạt sen bỏ tim, luộc/nấu cho mềm nhưng không nát.",
+    "Long nhãn khô ngâm nước cho nở mềm.",
+    "Nấu nước đường phèn với lá dứa, cho hạt sen và long nhãn vào nấu thêm ít phút, ăn nóng hoặc lạnh."
+  ],
+  "recipe_sources": [],
+  "media": [],
+  "estimated_kcal": null,
+  "external_ref": null,
+  "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt)",
+  "status": "draft",
+  "source": "curated",
+  "confidence": "unknown",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "loai:che-trang-mieng"
+  ]
+}

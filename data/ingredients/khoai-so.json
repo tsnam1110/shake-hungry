@@ -1,0 +1,51 @@
+{
+  "slug": "khoai-so",
+  "name_vi": "Khoai sọ (sống, đã gọt vỏ)",
+  "name_en": "Taro, small-corm type (eddoe), raw",
+  "category": "rau-cu",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "169308",
+    "source_url": "https://fdc.nal.usda.gov/food-details/169308/nutrients",
+    "scientific_name": "Colocasia esculenta",
+    "kcal_per_100g": 112,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 1.5,
+    "fat_g": 0.2,
+    "carb_g": 26.46,
+    "fiber_g": 4.1,
+    "water_g": 70.64,
+    "sodium_mg": 11,
+    "mapping_confidence": "medium",
+    "mapping_note": "CÙNG LOÀI với khoai môn nhưng KHÁC GIỐNG — hạ xuống medium (khoai-mon dùng chính mục này với high). Khoai sọ và khoai môn đều là Colocasia esculenta; khoai sọ thuộc nhóm giống củ nhỏ (củ cái nhỏ, nhiều củ con — tiếng Anh 'eddoe', thường xếp C. esculenta var. antiquorum), củ bở và khô hơn khoai môn củ lớn. USDA chỉ có MỘT mục 'Taro, raw' chung cho cả loài, không tách giống củ nhỏ; truyền thống CoFID (Anh) có mục 'Eddoe' nhưng đợt tra này không kiểm chứng được bộ số trực tiếp từ CoFID — chỉ gặp số ~121 kcal qua trang tổng hợp nhãn bán lẻ (Tesco eddoes), chưa đủ chuẩn làm nguồn chính. Dùng chung bộ số theo loài là lựa chọn tốt nhất hiện có; năng lượng khoai sọ thật có thể nhỉnh hơn 112 đôi chút nếu hàm lượng nước thấp hơn như số nhãn kia gợi ý — chờ kiểm chứng CoFID/bản in trước khi tách mục riêng. Giá trị tính trên phần ăn được đã gọt vỏ; chưa tra được hệ số gọt vỏ có nguồn — công thức nên ghi khối lượng đã gọt (như khoai-mon).",
+    "alternatives": [
+      {
+        "name": "Taro, cooked, without salt",
+        "why_not": "Bản cooked — công thức ghi khối lượng sống",
+        "external_id": "168486",
+        "kcal_per_100g": 142
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "medium",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}

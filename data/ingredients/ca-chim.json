@@ -1,0 +1,52 @@
+{
+  "slug": "ca-chim",
+  "name_vi": "Cá chim trắng biển (sống)",
+  "name_en": "Silver pomfret, raw",
+  "category": "thuy-san",
+  "reference_food": {
+    "fct_source": "vn_nin",
+    "external_id": null,
+    "source_url": "https://fptshop.com.vn/tin-tuc/dien-may/ca-chim-bien-174017",
+    "scientific_name": "Pampus argenteus",
+    "kcal_per_100g": 126,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 19.4,
+    "fat_g": 5.4,
+    "carb_g": null,
+    "fiber_g": null,
+    "water_g": 75.2,
+    "sodium_mg": 145,
+    "mapping_confidence": "low",
+    "mapping_note": "Nguồn THỨ CẤP theo quyết định chủ dự án 2026-10-31 (chỉ dùng khi nguồn chính thống không có) — món dùng nó mang cờ CHƯA KIỂM ĐỊNH. TRA 2026-10-31: bộ số cá chim trắng biển 126 kcal / nước 75,2g / đạm 19,4g / béo 5,4g / natri 145mg khớp HỆT nhau trên ≥5 bản tái bản độc lập (FPT Shop, Dân Việt, Thành Khang Food, NauAnKhongKho, Phụ Nữ Today) — dấu ấn của một mục trong Bảng TPTP Việt Nam; chưa mở được bản gốc của bảng trong vòng tra này và mã mục chưa xác định → external_id để null (đúng tiền lệ ca-ro-dong). Kiểm chứng Atwater: 19,4×4 + 5,4×9 = 126,2 ≈ 126 ✓. Carb không được các bản tái bản liệt kê → để null, không tự điền 0. ĐÃ LOẠI: (1) USDA 'Fish, pompano, florida, raw' FDC 173682 là Trachinotus carolinus — khác họ/loài và béo 9,47g, 164 kcal, lệch hẳn cá chim trắng biển; (2) 'pampano' của PhilFCT (FNRI) không trích xuất được trong vòng này và ở Philippines thường chỉ Trachinotus. XUNG ĐỘT cần biết: nghiên cứu peer-review trên chính Pampus argenteus (Bangladesh, PMC4745544) cho béo chỉ ~1,6–2,0g (quy Atwater ≈97 kcal) — béo cá chim dao động mạnh theo mùa/vùng (1–5,4g trong văn liệu); bộ số Bảng VN là số đo gần địa lý nhất nên được chọn, nhưng béo là điểm không chắc chắn nhất của file này. ĐỪNG NHẦM với cá chim trắng NƯỚC NGỌT nuôi (Piaractus brachypomus) — có bộ số 247 kcal/béo 19,2g lưu hành trên web, là loài khác hoàn toàn.",
+    "alternatives": [
+      {
+        "name": "Fish, pompano, florida, raw (USDA SR Legacy)",
+        "why_not": "Trachinotus carolinus — cá chim Florida, khác loài với cá chim trắng biển Pampus argenteus; béo 9,47g vs 5,4g, kcal 164 vs 126",
+        "external_id": "173682",
+        "kcal_per_100g": 164
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": 9.0,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "low",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:dong-vat",
+    "state:tuoi",
+    "allergen:ca"
+  ]
+}

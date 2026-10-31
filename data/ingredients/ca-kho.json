@@ -1,0 +1,52 @@
+{
+  "slug": "ca-kho",
+  "name_vi": "Khô cá mặn (nói chung)",
+  "name_en": "Dried salted fish, generic",
+  "category": "thuy-san",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "174190",
+    "source_url": "https://fdc.nal.usda.gov/food-details/174190/nutrients",
+    "scientific_name": null,
+    "kcal_per_100g": 290,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 62.82,
+    "fat_g": 2.37,
+    "carb_g": 0,
+    "fiber_g": 0,
+    "water_g": 16.14,
+    "sodium_mg": 7027,
+    "mapping_confidence": "low",
+    "mapping_note": "ÁNH XẠ ĐẠI DIỆN THEO NHÓM SẢN PHẨM, KHÔNG PHẢI MỘT LOÀI — đây là điểm yếu chuyên môn lớn nhất của file, người duyệt cần đọc kỹ. 'Khô cá mặn' ở VN làm từ hàng chục loài (cá lóc, cá sặc, cá cơm, cá dứa...) với độ mặn và độ khô khác nhau rất xa; không bảng chuẩn nào (USDA/Bảng VN/FNRI) có mục 'khô cá nói chung' của VN. Mục được chọn làm neo là SR Legacy 'Fish, cod, Atlantic, dried and salted' FDC 174190 (đã kiểm chứng qua FoodData Central API 2026-10-31): cá tuyết Đại Tây Dương ướp muối nặng + phơi khô — cùng CẤU TRÚC sản phẩm (cá nạc + muối + mất nước sâu, ẩm chỉ 16,1%), 290 kcal nằm giữa khoảng 275–320 kcal mà các tổng hợp VN độc lập đưa cho khô cá nói chung, và đạm 62,82g của mục này cũng chính là con số các bài VN phổ biến đang dùng cho cá khô. GIỚI HẠN ĐẠI DIỆN: (1) chỉ hợp cho khô từ cá NẠC — khô cá béo (cá dứa, cá thu, cá basa) kcal cao hơn hẳn, không được dùng file này; (2) NATRI 7.027 mg/100g là mức muối nặng kiểu bacalao — nhiều khô VN (khô lạt, một nắng) mặn thấp hơn nhiều, nên natri suy từ file này là ƯỚC TRÊN, không phải số đo của khô VN; (3) độ khô khác nhau làm kcal dao động: các tổng hợp VN khác cho bộ 208 kcal/đạm 43,3g (sản phẩm ẩm hơn) — cùng một tên gọi, hai thực tế khác nhau. KHUYẾN NGHỊ: chỉ dùng file này cho lượng nhỏ kiểu nguyên liệu phụ (vd 60g trong nom-ca-kho); khi kho có món mà khô là nguyên liệu chính, nên tách file theo loài (kho-ca-loc, kho-ca-sac...) và thay thế dần.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "oz",
+      "grams": 28.35,
+      "note": null,
+      "source": "FDC 174190 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "low",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:dong-vat",
+    "state:kho",
+    "allergen:ca"
+  ]
+}

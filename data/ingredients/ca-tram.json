@@ -1,0 +1,52 @@
+{
+  "slug": "ca-tram",
+  "name_vi": "Cá trắm cỏ (sống)",
+  "name_en": "Grass carp, raw",
+  "category": "thuy-san",
+  "reference_food": {
+    "fct_source": "vn_nin",
+    "external_id": "08029",
+    "source_url": "https://www.slideshare.net/slideshow/s-038-thanh-phan-dinh-duong-thuc-pham-vn-300tr-27-4-17-pdf/282808144",
+    "scientific_name": "Ctenopharyngodon idella",
+    "kcal_per_100g": 91,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 17,
+    "fat_g": 2.6,
+    "carb_g": 0,
+    "fiber_g": 0,
+    "water_g": 79.4,
+    "sodium_mg": null,
+    "mapping_confidence": "low",
+    "mapping_note": "Nguồn THỨ CẤP theo quyết định chủ dự án 2026-10-31 (chỉ dùng khi nguồn chính thống không có) — hệ thống đánh dấu CHƯA KIỂM ĐỊNH khi hiển thị. TRA 2026-10-31: USDA không có dòng grass carp (tìm đủ 3 dạng tên: 'grass carp', tên khoa học, 'carp' — chỉ có cá chép thường Cyprinus carpio FDC 171952, đã dùng riêng cho ca-chep, không gán chéo loài). Mục 08029 \"Cá trắm cỏ – Grass carp\", Bảng thành phần thực phẩm Việt Nam (bản gốc Viện Dinh dưỡng, cập nhật 2014): 91 kcal, đạm 17,0g, béo 2,6g, carb 0,0g, xơ 0,0g, nước 79,4g, tro 1,0g (Atwater 91,4 ✓); Ca 57mg, P 145mg, Fe 0,10mg khớp các bản trích lại một phần trên web. Các bộ số lưu hành trên web Việt cho cá trắm (đạm/béo 17,4/5,8 và 19,5/5,2) mâu thuẫn nhau và không truy được về phép đo gốc → không dùng, theo bản gốc như tiền lệ hến/mực khô. Văn liệu Bangladesh (World J. Zool. 2012) cho grass carp đạm 14,6–17,2g, lipid 1,44–2,15g — cùng dải với bản gốc. Natri: hàng số trong bản số hoá kết thúc '...26 305 34' sau Fe (cột Zn trống) — đọc theo thứ tự cột là Na 26mg, K 305mg, Mg 34mg; Na 26 thấp bất thường so với cá nước ngọt thường gặp và chưa đối chiếu được bản số hoá có gắn nhãn cột (vikinutri) nên để null, đúng tiền lệ hến/mực khô ở vòng kiểm chứng đầu. Phần ăn được 65% lấy từ cột EDIBLE của chính mục này.",
+    "alternatives": [
+      {
+        "name": "Fish, carp, raw (USDA SR Legacy)",
+        "why_not": "Khác loài: Cyprinus carpio là cá chép, đã có file riêng ca-chep. Không gán số của loài khác khi Bảng VN có đúng loài grass carp.",
+        "external_id": "171952",
+        "kcal_per_100g": 127
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": 9.0,
+  "edible_portion_pct": 65.0,
+  "edible_portion_note": "Cột EDIBLE của mục 08029, Bảng thành phần thực phẩm Việt Nam: cá nguyên con ăn được 65% (bỏ đầu, xương, nội tạng). Áp cho khối lượng cá trắm cỏ nguyên con mua ở chợ.",
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "low",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:dong-vat",
+    "state:tuoi",
+    "allergen:ca"
+  ]
+}

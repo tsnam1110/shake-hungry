@@ -85,6 +85,7 @@ final class TaggingRules
         'bot-canh' => 'kho', 'bot-cari' => 'kho', 'bot-nghe' => 'kho', 'bot-que' => 'kho',
         'ngu-vi-huong' => 'kho', 'ot-bot' => 'kho', 'hat-tieu-den' => 'kho', 'hat-dieu-mau' => 'kho',
         'hoa-hoi' => 'kho', 'thao-qua' => 'kho', 'ky-tu' => 'kho', 'la-nguyet-que' => 'kho',
+        'mac-khen' => 'kho', 'hat-doi' => 'kho', // gia vị khô Tây Bắc — đợt mở rộng kho 2026-10-31
         'thinh-gao' => 'kho', 'duong-phen' => 'kho', 'duong-thot-not' => 'kho', 'duong-trang' => 'kho',
         'muoi' => 'kho', 'mi-chinh' => 'kho', 'hat-nem' => 'kho',
         'lac-song' => 'kho', 'lac-rang' => 'kho', 'vung' => 'kho', 'vung-rang' => 'kho',
@@ -120,6 +121,7 @@ final class TaggingRules
     public const ALLERGENS_BY_SLUG = [
         'lac-rang' => ['dau-phong'], 'lac-song' => ['dau-phong'],
         'tom-su' => ['tom'], 'tom-kho' => ['tom'], 'tep' => ['tom'], 'be-be' => ['tom'],
+        'tom-the' => ['tom'], 'tom-cang-xanh' => ['tom'], // đợt mở rộng kho 2026-10-31
         'mam-tom' => ['tom', 'mam-tom'], 'mam-ruoc' => ['tom', 'mam-tom'],
         'banh-phong-tom-chien' => ['tom'], 'banh-phong-tom-song' => ['tom'],
         'cua-bien' => ['cua'], 'cua-dong' => ['cua'], 'ghe' => ['cua'],

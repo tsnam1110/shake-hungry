@@ -1,0 +1,51 @@
+{
+  "slug": "chuoi-xanh",
+  "name_vi": "Chuối xanh (nấu)",
+  "name_en": "Plantains, green, raw",
+  "category": "rau-cu",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "168215",
+    "source_url": "https://fdc.nal.usda.gov/food-details/168215/nutrients",
+    "scientific_name": "Musa × paradisiaca",
+    "kcal_per_100g": 152,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 1.25,
+    "fat_g": 0.07,
+    "carb_g": 36.7,
+    "fiber_g": 2.2,
+    "water_g": 61.1,
+    "sodium_mg": null,
+    "mapping_confidence": "medium",
+    "mapping_note": "Chuối xanh trong món VN (ốc nấu chuối đậu, chuối xanh om) là chuối NẤU: quả còn xanh, cứng, giàu tinh bột, giữ nguyên miếng khi nấu — hồ sơ này khớp 'Plantains, green, raw' (chuối nấu/plantain xanh, Musa × paradisiaca) hơn hẳn chuối tráng miệng. USDA không có mục 'chuối tráng miệng còn xanh' nên plantain xanh là mục bảng chính thống sát nhất và cùng nhóm chuối sứ/chuối nấu VN. Điểm khác biệt: nếu món dùng chuối tiêu xanh (Musa acuminata chưa chín) thay vì chuối sứ xanh, hàm lượng nước có thể cao hơn và tinh bột thấp hơn đôi chút — chưa có bảng nào đo trạng thái đó nên giữ ánh xạ này ở mức medium. Đây là số liệu quả SỐNG; hao hụt/thay đổi khi nấu do engine xử lý qua hệ số yield như các nguyên liệu khác. Natri để null theo quy ước các file SR trong kho.",
+    "alternatives": [
+      {
+        "name": "Bananas, raw (SR Legacy) — nguyên liệu `chuoi`",
+        "why_not": "Chuối tiêu CHÍN ăn tráng miệng: 89 kcal, đường cao, mềm — không đại diện chuối xanh nấu (giàu tinh bột, 152 kcal ở plantain xanh). Dùng số này sẽ ước thấp mạnh năng lượng phần chuối trong món om/nấu",
+        "external_id": "173944",
+        "kcal_per_100g": 89
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "medium",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}

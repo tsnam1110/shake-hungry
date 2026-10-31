@@ -6,8 +6,13 @@
   "names": [
     {
       "locale": "vi",
-      "name": "cốm",
+      "name": "Cốm làng Vòng",
       "is_primary": true
+    },
+    {
+      "locale": "en",
+      "name": "com (young green rice flakes)",
+      "is_primary": false
     }
   ],
   "is_eat_out": true,

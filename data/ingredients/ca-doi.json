@@ -1,0 +1,58 @@
+{
+  "slug": "ca-doi",
+  "name_vi": "Cá đối (sống)",
+  "name_en": "Striped / flathead grey mullet, raw",
+  "category": "thuy-san",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "175123",
+    "source_url": "https://fdc.nal.usda.gov/food-details/175123/nutrients",
+    "scientific_name": "Mugil cephalus",
+    "kcal_per_100g": 117,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 19.35,
+    "fat_g": 3.79,
+    "carb_g": 0,
+    "fiber_g": 0,
+    "water_g": 77.01,
+    "sodium_mg": 65,
+    "mapping_confidence": "high",
+    "mapping_note": "Trùng loài chính xác: mục SR Legacy 'Fish, mullet, striped, raw' ghi tên khoa học Mugil cephalus L. — đúng là cá đối chính ở VN (cá đối mục/đối đầu dẹt, loài cá đối thương phẩm chủ lực ở cả ba miền). Đã kiểm chứng trực tiếp qua FoodData Central API 2026-10-31: 117 kcal, đạm 19,35g (16 mẫu), béo 3,79g (43 mẫu), nước 77,01g, natri 65mg. Lưu ý VN còn các loài đối khác (chi Chelon/Planiliza) thịt tương tự; khi công thức nói rõ loài khác thì tách file riêng.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": 9.0,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "oz",
+      "grams": 28.35,
+      "note": null,
+      "source": "FDC 175123 foodMeasures"
+    },
+    {
+      "unit_name": "phi lê",
+      "grams": 119.0,
+      "note": "CỠ PHƯƠNG TÂY — cần đo lại cho khẩu phần Việt Nam",
+      "source": "FDC 175123 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:dong-vat",
+    "state:tuoi",
+    "allergen:ca"
+  ]
+}

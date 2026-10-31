@@ -1,0 +1,58 @@
+{
+  "slug": "thit-ngan",
+  "name_vi": "Thịt ngan (sống)",
+  "name_en": "Muscovy duck, meat, raw",
+  "category": "thit",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "172410",
+    "source_url": "https://fdc.nal.usda.gov/food-details/172410/nutrients",
+    "scientific_name": "Cairina moschata; mục SR: Anas platyrhynchos domesticus",
+    "kcal_per_100g": 135,
+    "kcal_min": 127,
+    "kcal_max": 135,
+    "protein_g": 18.3,
+    "fat_g": 5.95,
+    "carb_g": 0.94,
+    "fiber_g": 0,
+    "water_g": 73.8,
+    "sodium_mg": 74,
+    "mapping_confidence": "medium",
+    "mapping_note": "ÁNH XẠ KHÁC LOÀI — hạ xuống medium. Ngan là Cairina moschata (vịt xiêm / Muscovy), USDA SR không có mục nào cho loài này: đã kiểm FDC (SR Legacy + Foundation) — toàn bộ nhóm vịt chỉ có Anas platyrhynchos domesticus (172408/172410...) và vịt trời. Ciqual cũng KHÔNG có mục riêng cho canard de Barbarie (= ngan): ngành Pháp tự ánh xạ thịt ngan về mã vịt chung 36201 'Canard, viande crue' (Open Food Facts gán ciqual_food_code 36201 cho đùi ngan Barbary) — và bộ số 36201 lại cùng gốc USDA (xem cảnh báo ở thit-vit-khong-da), nên không tạo thêm xác nhận độc lập. Dùng mục thịt-only 172410 vì sau khi bỏ da, khác biệt giữa các giống vịt thu hẹp (mục đáng tin nhất của nhóm — thit-vit-khong-da dùng high cho chính vịt nhà); ngan nổi tiếng nạc hơn vịt nhà nên 135 kcal nhiều khả năng là cận trên chứ không phải ước lượng thấp; khoảng 127–135 giữ theo chênh công thức năng lượng USDA/Ciqual của chính mục nguồn. LƯU Ý PHẠM VI: bộ số này là PHẦN THỊT BỎ DA — món ngan luộc/chặt cả da, hoặc phần đùi nhiều mỡ dưới da, sẽ cao hơn (tham chiếu: phiếu kỹ thuật đùi ngan Barbary có da của nhà cung cấp Pháp Pomona ~183 kcal/100g — phiếu nhà cung cấp, không phải bảng FCT, chỉ để minh họa độ lệch). TUYỆT ĐỐI không dùng mục có da 172408 (404 kcal, vịt Pekin công nghiệp) cho ngan — xem cảnh báo ở thit-vit-co-da.",
+    "alternatives": [
+      {
+        "name": "Canard, viande crue (Ciqual)",
+        "why_not": "Mã vịt chung 36201 — Ciqual không tách ngan (Barbarie); bộ số cùng gốc USDA (127 kcal chỉ khác do công thức năng lượng EU) — không phải xác nhận độc lập",
+        "external_id": "ciqual-36201",
+        "kcal_per_100g": 127
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": "CHƯA CÓ hệ số có nguồn: bảng USDA CY R2 không có vịt/ngan (xem thit-vit-co-da).",
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "nửa con",
+      "grams": 303.0,
+      "note": "CỠ PHƯƠNG TÂY — khối lượng từ foodMeasures của mục vịt nguồn FDC 172410, phần thịt nạc; ngan thực tế thường to hơn vịt, cần đo lại cho khẩu phần Việt Nam",
+      "source": "FDC 172410 foodMeasures"
+    }
+  ],
+  "source": "curated",
+  "confidence": "medium",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:dong-vat",
+    "state:tuoi"
+  ]
+}

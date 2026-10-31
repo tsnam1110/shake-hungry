@@ -1,0 +1,51 @@
+{
+  "slug": "mit-non",
+  "name_vi": "Mít non",
+  "name_en": "Jackfruit, unripe (young jackfruit)",
+  "category": "rau-cu",
+  "reference_food": {
+    "fct_source": "fnri_ph",
+    "external_id": "D104",
+    "source_url": "https://i.fnri.dost.gov.ph/fct/library/report/3383",
+    "scientific_name": "Artocarpus heterophyllus",
+    "kcal_per_100g": 58,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 2,
+    "fat_g": 0.6,
+    "carb_g": 11.1,
+    "fiber_g": 2.4,
+    "water_g": 85.6,
+    "sodium_mg": 3,
+    "mapping_confidence": "low",
+    "mapping_note": "Nguồn THỨ CẤP tầng 6 (quyết định chủ dự án 2026-10-31): Philippine FCT (DOST-FNRI, PhilFCT Release 1, 2019), mã D104 'Jackfruit fruit, unripe' (langka hilaw) — đúng loài Artocarpus heterophyllus và đúng trạng thái NON dùng làm rau (mít non kho, gỏi mít, mít non nấu canh), số liệu trên 100 g phần ăn được (FNRI ghi edible portion 60% trên quả nguyên). USDA SR chỉ có mít CHÍN (174687, 95 kcal, đường cao) — file `mit-chin` đã cảnh báo rõ KHÔNG dùng số mít chín cho mít non; FNRI là bảng chính thống duy nhất tìm được có mục mít non riêng. Để low vì: nguồn tầng 6, mẫu Philippines (giống mít Philippines có thể khác mít VN), và món dùng nó mang cờ CHƯA KIỂM ĐỊNH khi hiển thị.",
+    "alternatives": [
+      {
+        "name": "Jackfruit, raw (SR Legacy) — nguyên liệu `mit-chin`",
+        "why_not": "Là MÍT CHÍN ăn tráng miệng (95 kcal, carb 23,2 g chủ yếu là đường) — khác hẳn mít non dùng làm rau (58 kcal, carb 11,1 g). Dùng số này cho mít non sẽ ước cao gần gấp đôi năng lượng",
+        "external_id": "174687",
+        "kcal_per_100g": 95
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "low",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}
