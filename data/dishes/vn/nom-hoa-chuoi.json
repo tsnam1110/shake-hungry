@@ -25,7 +25,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "tron",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -118,14 +118,49 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-tay",
+      "quantity": 25,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "ca-rot",
+      "quantity": 25,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Thái hoa chuối mỏng, ngâm chanh.",
-    "Xé thịt gà luộc.",
-    "Trộn nước mắm chua ngọt, rắc lạc, hành phi."
+    "Hoa chuối thái mỏng ngang, ngâm ngay vào nước pha chanh và muối ít nhất 30 phút cho không thâm; xả lại nhiều lần với nước sạch rồi vắt ráo.",
+    "Hành tây thái mỏng, ngâm nước đá khoảng 10 phút cho bớt hăng và giòn; cà rốt gọt vỏ, bào sợi mảnh.",
+    "Luộc thịt gà trên lửa vừa đến khi chín (xăm đũa không ra nước hồng), để nguội rồi xé sợi vừa ăn theo thớ.",
+    "Pha nước trộn: khuấy nước mắm, đường và nước cốt chanh cho tan hết, thêm ớt thái nhỏ, nếm vị chua – mặn – ngọt hài hòa.",
+    "Cho hoa chuối, hành tây, cà rốt và thịt gà vào âu lớn, rưới nước trộn, trộn nhẹ tay khoảng 1–2 phút rồi để nghỉ 5 phút cho ngấm.",
+    "Bày nộm ra đĩa, rắc lạc rang giã dập, hành phi, rau răm và húng quế lên trên ngay trước khi ăn để giữ độ giòn."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-mon-goi-ga-hoa-chuoi-thom-ngon-don-gian-doi-vi-02906",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH (biên tập Nguyễn Thị Anh Thảo): đã đối chiếu gỏi gà hoa chuối có hành tây 1/4 củ và cà rốt 1/2 củ ngâm chua ngọt cùng hoa chuối — ủng hộ bổ sung hành tây và cà rốt, định lượng gốc giữ nguyên."
+    },
+    {
+      "url": "https://vnexpress.net/thoi-su/cach-lam-nom-ga-hoa-chuoi-4002515.html",
+      "accessed": "2026-10-31",
+      "note": "VnExpress: đã đối chiếu nộm gà hoa chuối có cà rốt thái chỉ và thịt gà luộc, trộn chua ngọt — ủng hộ bổ sung cà rốt; nguồn này không liệt kê hành tây."
+    },
+    {
+      "url": "https://nauankhongkho.vn/cong-thuc/nom-hoa-chuoi-thit-ga-YM35K8Y44lm7",
+      "accessed": "2026-10-31",
+      "note": "Nấu Ăn Không Khó: đã đối chiếu nộm hoa chuối thịt gà có hành tây thái mỏng ngâm cùng hoa chuối và lạc rang rắc sau cùng — ủng hộ bổ sung hành tây."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/nom-hoa-chuoi.webp",
@@ -140,7 +175,7 @@
     "source": "wikidata",
     "queried_at": "2026-08-31"
   },
-  "import_note": "Nhập tự động từ Wikidata Q68631373 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/N%E1%BB%99m%20hoa%20chu%E1%BB%91i.png Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Nhập tự động từ Wikidata Q68631373 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/N%E1%BB%99m%20hoa%20chu%E1%BB%91i.png Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-006 đợt 6: nâng Mức 2 — định lượng gốc giữ nguyên (các nguồn phân tán tới 5 lần, không có đồng thuận để sửa); bổ sung hành tây 25g và cà rốt 25g (3/4 công thức đã mở đều có).]",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

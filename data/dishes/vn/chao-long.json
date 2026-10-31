@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -38,7 +38,7 @@
   "ingredients": [
     {
       "ingredient_slug": "gao-te",
-      "quantity": 60,
+      "quantity": 40,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -142,11 +142,30 @@
     }
   ],
   "recipe_steps": [
-    "Sơ chế lòng, dạ dày, tim, gan thật sạch, luộc chín tới, thái mỏng.",
-    "Nấu cháo gạo cho nhừ, cho tiết vào khuấy đều thành cháo huyết.",
-    "Múc cháo ra tô, xếp lòng và nội tạng lên trên, rắc hành, rau mùi, tiêu, dùng nóng."
+    "Lộn rửa lòng non và dạ dày với muối, chà kỹ và xả 3–4 lần nước cho hết nhớt và mùi; tim và gan rửa sạch, để ráo nước.",
+    "Đun sôi nồi nước với gừng đập dập: luộc lòng non 3–5 phút đến khi vừa chín giòn, dạ dày luộc lâu hơn đến khi mềm, tim và gan luộc 15–17 phút đến khi xiên đũa không còn máu đỏ; vớt ra ngâm nước lạnh rồi thái lát mỏng, giữ lại nước luộc và lọc cho trong.",
+    "Vo sạch gạo tẻ, cho vào nước luộc lòng, đun sôi rồi hạ lửa nhỏ nấu 30–35 phút, khuấy thường xuyên đến khi hạt gạo nở bung và cháo loãng sánh vừa.",
+    "Đánh tan tiết lợn, rưới từ từ vào nồi cháo đang sôi và khuấy đều tay 3–5 phút cho cháo chuyển màu huyết đều, tiết chín mà không vón cục.",
+    "Nêm nước mắm và muối, nấu sôi lại 2–3 phút rồi nếm lại cho vừa ăn; giữ nồi cháo nóng trên lửa rất nhỏ, tránh để sôi mạnh làm lòng dai.",
+    "Múc cháo ra tô, xếp lòng non, dạ dày, tim và gan thái mỏng lên trên, rắc hành lá, rau mùi, ngò gai cắt nhỏ và tiêu xay, dùng nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-nau-chao-long-thom-ngon-sanh-dam-vi-nhu-ngoai-hang-00118?srsltid=AfmBOoqUQbBpa1NB_yAocnv4b8058_Lo6GbB22Nj9EhP2I5UC6bfN4pR",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH (biên tập Dương Trúc Phương): đã đối chiếu các biến thể cháo lòng ba miền — cháo nấu cùng huyết, bộ lòng rửa sạch với gừng, luộc chín cắt lát mỏng, ăn kèm hành và tiêu; cấu trúc món khớp file."
+    },
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-banh-hoi-chao-long-quy-nhon-thom-ngon-hap-dan-chuan-06938",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH (biên tập Đinh Thị Bích Thảo): đã đối chiếu gạo 1 chén cho 4 người — thấp hơn mức 60g/khẩu phần cũ của file — và bộ lòng gồm tim, gan, lòng non, huyết, luộc tim gan 15–17 phút; nguồn có thêm lưỡi heo, ghi nhận nhưng không bổ sung vì kho chưa có slug."
+    },
+    {
+      "url": "https://congthucgiadinh.com/mon-an/chao-long",
+      "accessed": "2026-10-31",
+      "note": "Công Thức Gia Đình, tác giả Felix: đã đối chiếu gạo tẻ nấu trong nước dùng xương tới nhừ, phần lòng gồm gan, lòng non, dạ dày luộc 10–15 phút rồi cho vào cháo, nêm muối, nước mắm và tiêu."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/chao-long.webp",
@@ -157,7 +176,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-006 đợt 6: nâng Mức 2 — gạo tẻ 60 → 40g: hai nguồn cùng chiều 20–25g nhưng một nguồn không rõ cơ sở cỡ nồi, lấy 40g là mức dung hoà có ghi hồ sơ. Dồi và lưỡi lợn xuất hiện ở nguồn nhưng kho chưa có slug nguyên liệu — ghi nhận chờ biên soạn, không bổ sung.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

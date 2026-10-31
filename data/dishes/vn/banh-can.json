@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nuong",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -34,7 +34,7 @@
   "ingredients": [
     {
       "ingredient_slug": "bot-gao",
-      "quantity": 70,
+      "quantity": 45,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -53,6 +53,14 @@
       "quantity": 25,
       "unit_name": "g",
       "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "tom-su",
+      "quantity": 20,
+      "unit_name": "g",
+      "is_optional": true,
       "source": "llm_suggested",
       "confidence": "low"
     },
@@ -106,12 +114,30 @@
     }
   ],
   "recipe_steps": [
-    "Xay bột gạo với cơm nguội, để bột lên men nhẹ qua đêm.",
-    "Đun nóng khuôn đất, phết dầu, đổ bột, đập trứng cút lên mặt.",
-    "Đậy nắp nướng đến khi bánh chín vàng rìa, rắc hành lá.",
-    "Gỡ bánh, chấm nước mắm pha loãng ấm."
+    "Pha bột: xay cơm nguội với nước cho nhuyễn mịn như hồ, hoà cùng bột gạo và muối, lược qua rây cho bột mịn rồi đậy kín, để bột nghỉ khoảng 2 giờ.",
+    "Sơ chế nhân: tôm sú bóc vỏ, bỏ chỉ đen, rửa sạch và để ráo; trứng cút đập sẵn ra chén; hành lá cắt nhỏ, một phần cho vào dầu nóng làm mỡ hành.",
+    "Làm nóng khuôn: đặt khuôn đất lên bếp, để lửa vừa cho khuôn thật nóng, quét một lớp dầu ăn mỏng vào từng khuôn để chống dính.",
+    "Đổ bánh: múc bột vào khoảng 2/3 khuôn, cho tôm sú (nếu dùng) và trứng cút lên mặt bánh, đậy nắp nướng 3–5 phút đến khi rìa bánh giòn, mặt bánh chín khô và tôm đỏ đều thì nạy bánh ra.",
+    "Pha nước mắm: khuấy nước mắm với đường, nước ấm và ớt băm đến khi đường tan hết, vị mặn ngọt hài hoà; rưới mỡ hành lên mặt chén nước chấm.",
+    "Thưởng thức: dọn bánh ra đĩa khi còn nóng, chấm ngập bánh trong chén nước mắm mỡ hành và dùng ngay khi bánh còn giòn nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/banh-can-la-gi-bao-nhieu-calo-banh-can-an-nhu-the-nao-09436",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH (biên tập Phạm Thị Phượng Nhiên) — tổng quan bánh căn Nam Trung Bộ: bột gạo xay cùng cơm khô, đổ khuôn đất nướng trên than hồng, nhân tôm, mực và trứng; phân biệt biến thể Phan Rang (thêm lớp trứng, tôm, mực, nhiều loại nước chấm) và Đà Lạt (nước chấm xíu mại) — file giữ dòng phổ thông chấm nước mắm pha."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/15352056",
+      "accessed": "2026-10-31",
+      "note": "Cookpad VN (Kim Dung) — bánh căn cho 4 người dùng 175g bột gạo (khoảng 44g/người) xay cùng cơm nguội, nhân trứng cút; đối chiếu định lượng bột gạo đã sửa (phần nước chấm xíu mại/mắm nêm của tác giả là biến thể Đà Lạt, không áp vào file)."
+    },
+    {
+      "url": "http://giavihanhphuc.com/bot-banh/banh-can-phan-rang-amp",
+      "accessed": "2026-10-31",
+      "note": "Gia Vị Hạnh Phúc (biên soạn lại từ công thức do thầy Toàn Tri chia sẻ) — bánh căn Phan Rang: 500g bột gạo pha với cơm nguội, đậy kín ủ bột 2 giờ; nhân có tôm đất 200g cùng thịt và mực; đối chiếu tôm là nhân phổ biến của bánh căn và kỹ thuật ủ bột cơm nguội."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/banh-can.webp",
@@ -122,7 +148,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt).",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [LV2-006 đợt 6: nâng Mức 2 — bột gạo 70 → 45g (2 nguồn ~40–44g); bổ sung tôm sú 20g tuỳ chọn. File giữ biến thể phổ thông Nam Trung Bộ (nước mắm pha); biến thể Phan Rang (nước cá kho) và Đà Lạt (xíu mại) là biến thể riêng — ghi hồ sơ biến thể, không trộn số.]",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

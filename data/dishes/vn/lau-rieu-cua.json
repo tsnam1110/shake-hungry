@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -34,7 +34,7 @@
   "ingredients": [
     {
       "ingredient_slug": "cua-dong",
-      "quantity": 80,
+      "quantity": 125,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -42,7 +42,7 @@
     },
     {
       "ingredient_slug": "bap-bo",
-      "quantity": 60,
+      "quantity": 125,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -90,7 +90,7 @@
     },
     {
       "ingredient_slug": "suon-lon",
-      "quantity": 50,
+      "quantity": 120,
       "unit_name": "g",
       "is_optional": true,
       "source": "llm_suggested",
@@ -98,7 +98,7 @@
     },
     {
       "ingredient_slug": "dam-gao",
-      "quantity": 5,
+      "quantity": 10,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -143,18 +143,45 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "banh-da-do",
+      "quantity": 125,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Giã cua đồng, lọc lấy nước, đun lửa nhỏ cho riêu cua nổi đóng tảng, vớt để riêng.",
-    "Phi cà chua với hành, đổ vào nước cua cùng dấm bỗng (dam-gao) và nước hầm sườn nếu có, nêm vừa ăn.",
-    "Khi ăn nhúng bắp bò thái mỏng, đậu phụ chiên, rau muống và hoa chuối; ăn kèm bún, chấm mắm tôm chưng."
+    "Cua đồng ngâm nước vài giờ cho nhả bùn đất, rửa sạch, gỡ mai và khều gạch cua để riêng; phần thân cua giã hoặc xay nhuyễn với một chút muối, hoà nước lọc khuấy nhẹ rồi lọc qua rây 2–3 lần để lấy nước cốt cua.",
+    "Sườn rửa sạch, chần nước sôi 2–3 phút rồi rửa lại và ninh lửa vừa khoảng 30 phút cho sườn mềm, lấy nước ngọt; bắp bò thái lát thật mỏng và giữ lạnh để khi nhúng không bị dai; cà chua bổ múi cau, hoa chuối thái mỏng ngâm nước muối loãng cho bớt chát và không bị thâm.",
+    "Đun nước cốt cua trên lửa nhỏ, khuấy nhẹ một chiều tay; nấu khoảng 15–20 phút đến khi riêu cua kết thành mảng và nổi lên mặt nước thì vớt riêu ra bát riêng, giữ lại phần nước cua trong.",
+    "Cho gạch cua vào chảo nóng cùng hành phi, chưng trên lửa nhỏ khoảng 5 phút đến khi gạch lên màu vàng cam và dậy mùi béo; xào sơ cà chua trên chảo đó cho cà mềm và ra màu.",
+    "Hoà nước cua với nước ninh sườn, cho cà chua xào, gạch cua chưng và dấm gạo vào (dấm gạo là ánh xạ tính được của giấm bỗng trong các nguồn), nêm nước mắm, đường và mắm tôm; đun sôi lại 3–5 phút đến khi nước lẩu có vị chua dịu thanh và nổi váng gạch đẹp.",
+    "Khi ăn đun nồi lẩu sôi, cho đậu phụ chiên, hành lá và phần sườn đã ninh mềm vào; nhúng bắp bò từng ít một, vừa chuyển màu là vớt ngay để thịt mềm, nhúng rau muống và hoa chuối vừa chín tới; ăn kèm bún tươi hoặc bánh đa đỏ đã chần mềm, rắc thêm hành phi."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://vietnamnet.vn/cach-nau-lau-rieu-cua-bap-bo-chuan-vi-tai-nha-2353516.html",
+      "accessed": "2026-10-31",
+      "note": "VietNamNet: đã đối chiếu cua đồng 1,5kg, bắp bò 500g, sườn sụn 600g và giấm bỗng 3 muỗng canh cho một nồi lẩu gia đình; ủng hộ tăng cua đồng, bắp bò, sườn và dấm. Nguồn dùng sườn sụn — kho chưa có slug suon-sun nên giữ slug sườn hiện tại trong file."
+    },
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-lau-rieu-cua-bap-bo-suon-sun-tai-nha-don-gian-24072",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH (cho 5–6 người): đã đối chiếu cua đồng 2kg, bắp bò 500g, cách đun riêu trên lửa nhỏ cho đóng bánh, chưng gạch cua và nêm dấm bỗng (khoảng 8 muỗng canh cho 8 lít nước dùng); riêng sườn sụn non 300g của nguồn này thấp hơn mức phân xử — đã ghi nhận, mức sườn giữ theo đồng thuận của nguồn VietNamNet."
+    },
+    {
+      "url": "https://Www.dienmayxanh.com/vao-bep/cach-nau-lau-bun-rieu-cua-thom-ngon-chuan-vi-cho-ca-nha-ngay-12360",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH, biến thể lẩu bún riêu cua (cho 4 người): đã đối chiếu cua xay 500g cho 4 người, tức 125g mỗi người — khớp mức cua đồng sau khi nâng; đồng thời đối chiếu khung món riêu cua, đậu hũ chiên, cà chua và mắm tôm. Lưu ý: cùng nhà xuất bản Điện Máy XANH với nguồn sườn sụn ở trên nhưng là bài công thức khác, được đối chiếu độc lập theo biến thể."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-006 đợt 6: nâng Mức 2 — cua đồng 80 → 125g, bắp bò 60 → 125g, sườn 50 → 120g (đồng thuận tuyệt đối của các nguồn đã mở; nguồn dùng sườn sụn, kho chưa có slug suon-sun nên giữ slug sườn hiện tại và ghi nhận tại đây); dấm gạo 5 → 10g (nguồn dùng giấm bỗng — slug chưa có số nên giữ dam-gao làm ánh xạ tính được, ghi rõ thay thế này); bổ sung bánh đa đỏ 125g tuỳ chọn (món ăn kèm chính ở 2 nguồn).]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

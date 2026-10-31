@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "song",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -122,15 +122,34 @@
     }
   ],
   "recipe_steps": [
-    "Thịt bò ướp, xào nhanh lửa lớn vừa chín.",
-    "Trải bánh phở lá, xếp xà lách, rau thơm, thịt bò, cuốn chặt tay.",
-    "Cắt khúc vừa ăn, chấm nước mắm chua ngọt tỏi ớt."
+    "Thịt bò thái lát mỏng ngang thớ, ướp với tỏi băm và chút nước mắm khoảng 15 phút cho thấm và thơm.",
+    "Xào thịt bò trên lửa lớn, đảo nhanh tay khoảng 2–3 phút đến khi thịt vừa chín tới, thịt mềm và không ra nước; trút ra đĩa để riêng.",
+    "Xà lách, rau mùi, húng quế và tía tô nhặt rửa sạch, ngâm nước muối loãng khoảng 10 phút rồi vớt ra vẩy thật ráo để bánh phở không bị ướt.",
+    "Pha nước chấm: khuấy nước mắm với đường và nước cốt chanh cho tan, thêm tỏi và ớt băm, nếm vị chua – mặn – ngọt thanh nhẹ.",
+    "Trải từng lá bánh phở tươi lên mặt phẳng sạch, xếp xà lách, rau thơm và thịt bò xào vào giữa, cuốn tròn chặt tay thành cuốn vừa ăn.",
+    "Bày phở cuốn ra đĩa, cắt khúc nếu thích, dọn kèm nước chấm; cuốn phải chắc, không rách bánh và nhân không rơi ra khi chấm."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/9-cach-lam-banh-pho-cuon-tu-truyen-thong-den-bien-tau-doc-dao-23851",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH (biên tập Nguyễn Bảo Khuyến): đã đối chiếu tổng quan phở cuốn — bản truyền thống là bánh phở ôm nhân thịt bò xào thơm với rau sống, chấm nước mắm chua ngọt — ủng hộ giữ nguyên định lượng và cấu trúc món của file."
+    },
+    {
+      "url": "https://bepxua.vn/cach-lam-pho-cuon-thit-bo-mem-ngot-khong-dai-cho-bua-an-cuoi-tuan/",
+      "accessed": "2026-10-31",
+      "note": "Bếp Xưa: đã đối chiếu phở cuốn thịt bò 4 người — thịt bò thái mỏng ướp 15–20 phút, xào nhanh lửa to với tỏi và hành, cuốn cùng xà lách và rau thơm, chấm nước mắm pha chanh đường tỏi ớt — ủng hộ giữ nguyên định lượng; nguồn xác nhận nhân bò được xào chín."
+    },
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/2-cach-lam-pho-cuon-thap-cam-va-ngu-sac-moi-la-doc-dao-cuc-04599?srsltid=AfmBOopQIde5w8EbwS-Ty44n7JIciX0hCua3tlE7C7F9O_9UPjG_M2vb",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH (biên tập Nguyễn Dạ Thu Thảo): đã đối chiếu phở cuốn thập cẩm và ngũ sắc — thịt bò đều xào nhanh lửa lớn đến vừa chín tới trước khi cuốn với xà lách, húng quế; biến thể thập cẩm có thêm trứng tráng cắt miếng — ghi nhận trứng chỉ thuộc biến thể, không bổ sung vào file."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. [LV2-006 đợt 6: nâng Mức 2 — định lượng giữ nguyên toàn bộ. Bất thường ghi nhận chờ phân xử: nhân bò thực tế được xào chín ở 3/3 nguồn trong khi cooking_method của file chưa phản ánh điều đó — không tự sửa phân loại trong đợt này. Trứng tráng sợi có ở 2/3 nguồn nhưng định lượng lệch nhau 3 lần — ghi nhận, không bổ sung.]",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

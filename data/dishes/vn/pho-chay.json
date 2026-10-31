@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -162,16 +162,35 @@
     }
   ],
   "recipe_steps": [
-    "Hầm nước dùng từ củ cải, cà rốt, hành tây nướng và nấm hương; nêm hồi, quế, gừng.",
-    "Nêm nước tương, muối, đường phèn (không dùng nước mắm).",
-    "Trụng bánh phở, xếp đậu phụ chiên và nấm rơm.",
-    "Chan nước dùng nóng, rắc hành lá, rau mùi, ngò gai."
+    "Ngâm nấm hương khô trong nước ấm khoảng 20 phút cho nở mềm, cắt bỏ chân; củ cải trắng và cà rốt gọt vỏ, cắt khúc; hành tây và gừng nướng sơ cho thơm.",
+    "Cho củ cải, cà rốt, hành tây và nấm hương vào nồi nước, đun sôi rồi hạ lửa nhỏ hầm 45–60 phút cho nước ngọt thanh, hớt bọt cho nước trong.",
+    "Rang hoa hồi và bột quế cho dậy mùi, cho vào nồi nước dùng cùng gừng nướng, hầm thêm khoảng 15 phút rồi lọc bỏ xác, giữ nước dùng trong.",
+    "Nêm nước dùng bằng nước tương, muối và đường phèn cho vừa ăn (tuyệt đối không dùng nước mắm để giữ tính chay), giữ nồi nước dùng sôi lăn tăn.",
+    "Cho nấm rơm vào nước dùng nấu 5–7 phút cho chín tới; đậu phụ chiên cắt miếng vừa ăn, để riêng.",
+    "Trụng bánh phở trong nước sôi khoảng 30 giây đến 1 phút cho sợi mềm mà vẫn dai, vớt ra cho vào tô.",
+    "Xếp đậu phụ chiên và nấm rơm lên bánh phở, chan nước dùng nóng, rắc hành lá, rau mùi và ngò gai cắt nhỏ; ăn nóng ngay."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.bluestone.com.vn/blogs/vao-bep/cach-nau-pho-chay?srsltid=AfmBOoqNCZ30kdtQUx8Jdd4BnFMdFnpNfVUKhV-ATdQfeNBozqR1J1cR",
+      "accessed": "2026-10-31",
+      "note": "BlueStone (trang biên tập hãng): đã đối chiếu phở chay hầm củ cải, cà rốt, nấm hương khô và đậu hũ chiên, nêm muối, đường phèn, hạt nêm chay và ghi rõ không nêm nước mắm mặn — ủng hộ giữ nguyên định lượng và tính thuần chay của file."
+    },
+    {
+      "url": "https://vegweb.com/recipes/vietnamese-noodle-soup-pho-chay?qt-sign_in_sign_up_block=0",
+      "accessed": "2026-10-31",
+      "note": "VegWeb (kho công thức chay): đã đối chiếu phở chay nêm bằng nước tương (soy sauce), dùng nấm hương khô, hồi, gừng và hành, không dùng nước mắm — ủng hộ nước tương là gia vị mặn duy nhất của file."
+    },
+    {
+      "url": "https://bloganngon.edu.vn/cach-nau-pho-chay-thanh-dam-cuc-don-gian/",
+      "accessed": "2026-10-31",
+      "note": "Blog Ăn Ngon: đã đối chiếu phở chay hầm củ cải, cà rốt, hành tây nướng cùng hồi, quế, gừng, dùng nấm rơm và đậu hũ chiên, nêm muối, đường phèn và hạt nêm chay, không dùng nước mắm thường — ủng hộ giữ nguyên toàn bộ định lượng."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt).",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [LV2-006 đợt 6: nâng Mức 2 — đã kiểm: file thuần chay (không nước mắm thường/trứng/sữa); nguồn 'phở chay' nào nêm nước mắm thường đều bị loại vì phá vỡ tính chay. Định lượng giữ nguyên toàn bộ.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

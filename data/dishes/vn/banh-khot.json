@@ -138,7 +138,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 8 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).]",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 8 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).] [LV2-006 đợt 6: GIỮ Mức 1 — bị chặn 429 ở nguồn thứ ba. File là biến thể Vũng Tàu; đợt sau cần nguồn đúng biến thể Vũng Tàu, không mở lại ngay trang đã 429.]",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

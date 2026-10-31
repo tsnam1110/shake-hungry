@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "hap",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -46,7 +46,7 @@
     },
     {
       "ingredient_slug": "duong-trang",
-      "quantity": 8,
+      "quantity": 4,
       "unit_name": "g",
       "is_optional": true,
       "source": "llm_suggested",
@@ -54,7 +54,7 @@
     },
     {
       "ingredient_slug": "ruou-trang",
-      "quantity": 5,
+      "quantity": 1,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -75,14 +75,41 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nuoc-cot-dua",
+      "quantity": 35,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Bổ gấc lấy thịt quả (xem ghi chú thiếu nguyên liệu), trộn với chút rượu trắng rồi bóp đều cùng nếp đã ngâm.",
-    "Đồ xôi đến chín dẻo, trộn đường nếu ăn ngọt.",
-    "Rắc vừng rang khi dùng."
+    "Vo nếp, ngâm nước có chút muối ít nhất 4 giờ hoặc qua đêm cho hạt nở đều; vớt ra để thật ráo để xôi không bị nhão khi đồ.",
+    "Bổ đôi quả gấc chín đỏ, nạo lấy thịt và màng quanh hạt cho vào tô; thêm khoảng 1 thìa cà phê rượu trắng (cho cả mẻ) rồi bóp nhẹ cho thịt gấc bong khỏi hạt và lên màu đỏ tươi.",
+    "Trộn gấc vào nếp đã ráo cùng chút muối, bóp nhẹ tay cho từng hạt nếp phủ đều màu đỏ cam; trộn thêm một phần nước cốt dừa cho xôi thơm béo.",
+    "Cho nếp vào xửng, dàn đều và chọc vài lỗ thoát hơi; đồ lửa vừa 20 phút đầu, mở nắp lau nước đọng, rưới nốt phần nước cốt dừa còn lại rồi đồ tiếp 15–20 phút đến khi hạt xôi chín mềm, căng bóng.",
+    "Khi xôi chín tới, rắc đường (khoảng 1 muỗng canh cho cả mẻ) trộn đều tay, đồ thêm 5–10 phút cho đường tan và thấm, hạt xôi vẫn tơi không bết.",
+    "Muốn xôi dẻo lâu: xới xôi ra hong nguội bớt rồi đồ lại lần 2 khoảng 10 phút; sau đó nén khuôn hoặc xới ra đĩa, rắc vừng rang nếu thích, dùng nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-nau-xoi-gac-ngon-do-tung-bung-cho-ngay-tet-00429",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH (4 người) — đối chiếu gấc 200g, nước cốt dừa 150ml, rượu trắng 5ml cho cả mẻ."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/15455999",
+      "accessed": "2026-10-31",
+      "note": "Cookpad VN (Bếp nhà Lin) — bộ số gần như trùng Điện Máy XANH (có thể cùng gốc công thức); có thêm lớp đậu xanh là biến thể riêng."
+    },
+    {
+      "url": "https://vietnamnet.vn/cach-nau-xoi-gac-thom-deo-de-lam-tai-nha-2359717.html",
+      "accessed": "2026-10-31",
+      "note": "VietnamNet — dòng độc lập: mẻ 2kg nếp, đường 50g, cốt dừa vắt từ 1 quả dừa xiêm rưới 2 lần khi hấp."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/xoi-gac.webp",
@@ -93,7 +120,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu).",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu). [LV2-006 đợt 6: nâng Mức 2 — đường 8 → 4g và rượu trắng 5 → 1g (3 nguồn đồng thuận rượu chỉ ~1,25ml/người — file cũ ghi lượng của cả mẻ 4 người); BỔ SUNG nước cốt dừa 35g — 3/3 nguồn đều có (~37g/người) mà file thiếu hẳn. Lớp đậu xanh chỉ 1/3 nguồn — biến thể riêng, không thêm.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

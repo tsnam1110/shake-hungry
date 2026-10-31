@@ -25,7 +25,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "tron",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -49,7 +49,7 @@
     },
     {
       "ingredient_slug": "hanh-tay",
-      "quantity": 40,
+      "quantity": 100,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -65,7 +65,7 @@
     },
     {
       "ingredient_slug": "lac-rang",
-      "quantity": 15,
+      "quantity": 25,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -118,18 +118,45 @@
       "is_optional": true,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "ca-rot",
+      "quantity": 25,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Luộc gà chín, xé sợi nhỏ theo thớ thịt.",
-    "Hành tây thái mỏng ngâm nước đá cho bớt hăng; pha nước mắm chua ngọt với chanh, đường, ớt.",
-    "Trộn gà xé với hành tây, rau răm và nước trộn; rắc lạc rang và hành phi khi dọn."
+    "Luộc gà trên lửa vừa khoảng 25–30 phút đến khi dùng đũa xăm không còn nước hồng; vớt ra để nguội rồi xé sợi nhỏ theo thớ thịt.",
+    "Hành tây thái lát mỏng, ngâm nước đá pha chút chanh 10–15 phút cho bớt hăng và giòn; cà rốt gọt vỏ, bào sợi mảnh.",
+    "Pha nước trộn: khuấy nước mắm với đường cho tan, thêm nước cốt chanh và ớt thái nhỏ, nếm vị chua – mặn – ngọt hài hòa.",
+    "Cho gà xé, hành tây đã vớt ráo và cà rốt vào âu lớn, rưới nước trộn rồi trộn nhẹ tay khoảng 1 phút cho thấm đều mà không nát rau.",
+    "Để gỏi nghỉ 5–10 phút cho ngấm vị, trộn lại một lần nữa cùng rau răm cắt rối.",
+    "Bày gỏi ra đĩa, rắc lạc rang giã dập và hành phi lên trên ngay trước khi ăn để giữ độ giòn và mùi thơm."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-goi-ga-hanh-tay-tron-tac-thom-ngon-02423",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH (biên tập Lê Minh Kha): đã đối chiếu gỏi gà hành tây có cà rốt bào sợi, đậu phộng rang 100g và hành tây 2 củ cho khẩu phần 3 người, rau răm và hành phi — ủng hộ tăng hành tây, tăng lạc rang và bổ sung cà rốt."
+    },
+    {
+      "url": "https://www.cet.edu.vn/cach-lam-goi-ga-xe-phay",
+      "accessed": "2026-10-31",
+      "note": "CET (tác giả Chef Lập): đã đối chiếu gỏi gà xé phay 500g gà với 1 củ hành tây, 1 củ cà rốt bào sợi và 100g đậu phộng rang — ủng hộ cà rốt và tỉ lệ lạc/hành cao hơn bản gốc."
+    },
+    {
+      "url": "https://giadinh.suckhoedoisong.vn/cach-lam-goi-ga-xe-phay-giai-cuu-ga-sau-tet-172260223074852696.htm",
+      "accessed": "2026-10-31",
+      "note": "Gia đình & Sức khỏe đời sống: đã đối chiếu gỏi gà xé phay có 1 củ hành tây, 1/2 củ cà rốt, rau răm và lạc rang giã dập rắc sau khi trộn — ủng hộ các thay đổi của đợt này."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-006 đợt 6: nâng Mức 2 — hành tây 40 → 100g (nguồn 130–150g thuộc biến thể lấy hành tây làm chính; file là bản gà làm chính với khẩu phần 250g nên lấy 100g là mức nén có ghi hồ sơ), lạc rang 15 → 25g, bổ sung cà rốt 25g (2 nguồn).]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

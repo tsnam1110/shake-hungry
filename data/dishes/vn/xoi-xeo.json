@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "hap",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -78,11 +78,30 @@
     }
   ],
   "recipe_steps": [
-    "Ngâm nếp với nước nghệ, đồ chín lần một.",
-    "Đậu xanh ngâm mềm, hấp chín, giã nhuyễn rồi nắm thành viên (đậu xéo).",
-    "Đồ xôi lần hai, thái đậu xéo lên trên, rưới mỡ hành và hành phi."
+    "Vo sạch nếp, ngâm với nghệ tươi giã nhỏ và chút muối 6–8 giờ cho hạt nếp ngấm màu vàng đều; đậu xanh cà vỏ vo sạch, ngâm riêng 2–4 giờ cho nở mềm, vớt ra để ráo.",
+    "Trộn đậu với chút muối, hấp chín 20–25 phút đến khi hạt đậu mềm bở, bóp nhẹ là nát; khi còn nóng cho ít mỡ vào, giã hoặc xay thật nhuyễn mịn, nắm ép chặt thành khối tròn, bọc kín để không khô mặt.",
+    "Hành khô bóc vỏ, thái lát mỏng đều; phi trong mỡ nóng lửa vừa, đảo liên tục đến khi hành vừa ngả vàng nhạt và thơm thì vớt ra ngay (hành sẽ vàng giòn thêm nhờ nhiệt dư), phần mỡ phi hành để riêng.",
+    "Đồ xôi lần 1: cho nếp đã ráo vào chõ, tạo lỗ thoát hơi ở giữa, đồ lửa vừa 20–25 phút đến khi hạt xôi chín tới, căng và dẻo; xới tơi, rưới ít mỡ phi hành trộn đều.",
+    "Đồ xôi lần 2 thêm 10–15 phút cho xôi dẻo sâu, hạt bóng mà không nát; kiểm tra bằng cách bóp thử hạt xôi thấy mềm dẻo, không còn lõi cứng là đạt.",
+    "Khi ăn: xới xôi nóng ra đĩa/gói lá, dùng dao sắc thái đậu xanh thành lát thật mỏng phủ kín mặt xôi (đúng thao tác 'xéo'), rắc hành phi và rưới 1–2 thìa mỡ phi hành lên trên; dùng nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/10883925",
+      "accessed": "2026-10-31",
+      "note": "Cookpad VN (Bảo Bình) — bản truyền thống thuần Hà Nội: chỉ xôi, đậu thái mỏng, rưới mỡ/dầu, hành phi, không topping; đối chiếu tỉ lệ đậu/nếp 0,50."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/12200536",
+      "accessed": "2026-10-31",
+      "note": "Cookpad VN (Mai Ro, Hà Nội) — đối chiếu mẻ 500g nếp, đồ xôi 2 lần; biến thể tạo màu bằng hạt dành dành và có ruốc ăn kèm."
+    },
+    {
+      "url": "https://giadinh.suckhoedoisong.vn/cach-nau-xoi-xeo-bang-noi-com-dien-don-gian-172220303085747122.htm",
+      "accessed": "2026-10-31",
+      "note": "Sức Khỏe & Đời Sống (Phương Anh) — đối chiếu hành khô 100g/mẻ và ruốc ăn kèm; biến thể nồi cơm điện."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/xoi-xeo.webp",
@@ -93,7 +112,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-006 đợt 6: nâng Mức 2 — định lượng giữ nguyên toàn bộ (tỉ lệ đậu/nếp 0,46 khớp nguồn truyền thống 0,50; các nguồn còn lại phân tán). Bất thường ghi nhận: ruốc/chà bông có ở 2/3 nguồn dạng ăn kèm nhưng không nguồn nào định lượng và nguồn truyền thống thuần khẳng định không thêm topping — file giữ bản thuần, không bổ sung; mỡ lợn của file không xuất hiện ở nguồn nào đã mở (cả 3 dùng dầu ăn/dầu phi hành) — lượng không bị phản bác nhưng loại chất béo khác số đông nguồn, chờ biên tập phân xử.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

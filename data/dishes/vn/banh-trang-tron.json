@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "tron",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "an-vat",
@@ -58,7 +58,7 @@
     },
     {
       "ingredient_slug": "bo-kho",
-      "quantity": 15,
+      "quantity": 20,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -103,14 +103,41 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "qua-quat",
+      "quantity": 10,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Bánh tráng cắt sợi vừa ăn; xoài xanh bào sợi.",
-    "Trộn bánh tráng với xoài, khô bò xé, tôm khô, sa tế, lạc rang, rau răm, hành phi.",
-    "Cho trứng cút luộc bổ đôi lên trên; trộn đều tay và ăn ngay để bánh không bị mềm nhũn."
+    "Sơ chế: dùng kéo cắt bánh tráng thành sợi hoặc khúc vừa ăn; xoài xanh gọt vỏ, bào sợi; rau răm nhặt lấy lá, rửa sạch, cắt khúc.",
+    "Luộc trứng và sơ chế topping: trứng cút luộc trong nước sôi 10–13 phút đến khi chín, vớt ra ngâm nước lạnh rồi bóc vỏ; bò khô xé sợi nhỏ, tôm khô rang sơ trên chảo khô cho thơm.",
+    "Chuẩn bị quất: quất rửa sạch, cắt đôi, vắt lấy nước cốt và loại bỏ hạt để sẵn trong chén.",
+    "Trộn lần một: cho bánh tráng vào thau lớn, rưới nước cốt quất và sa tế lên, đeo găng trộn đều 1–2 phút cho sợi bánh bắt đầu mềm và thấm đều vị chua cay.",
+    "Trộn lần hai: cho tiếp xoài sợi, bò khô, tôm khô, lạc rang, hành phi và rau răm vào, trộn nhanh và đều tay khoảng 1 phút; nếm lại cho vừa miệng.",
+    "Hoàn thiện: bày bánh ra đĩa hoặc bịch, xếp trứng cút lên trên và dùng ngay trong vài phút, khi sợi bánh còn dai mềm, chưa bị dính bết."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-banh-trang-tron-tay-ninh-thom-ngon-chuan-vi-an-vat-12956",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH — bánh tráng trộn Tây Ninh cho 2 người: khô bò 50g (khoảng 25g/người), tắc 2 trái vắt lấy nước cốt trộn trực tiếp cùng muối tôm; đối chiếu bò khô và quất/tắc là thành phần trộn chính thức."
+    },
+    {
+      "url": "https://giadinh.suckhoedoisong.vn/tu-lam-banh-trang-tron-ngon-ma-khong-kho-1722013070103434719.htm",
+      "accessed": "2026-10-31",
+      "note": "Sức Khỏe & Đời Sống (Gia đình, theo Trí thức trẻ) — bánh tráng trộn tự làm: nguyên liệu có quất (2 quả vắt lấy nước), bò khô xé sợi, tép khô, lạc rang, muối tôm và sa tế; đối chiếu quất và bò khô."
+    },
+    {
+      "url": "https://www.beemart.vn/cach-lam-banh-trang-tron-vua-ngon-va-vua-don-gian-tai-nha",
+      "accessed": "2026-10-31",
+      "note": "Beemart (Tống Thị Ngọc Ánh) — bánh tráng trộn Sài Gòn: bò khô 50g, quất tươi 4 quả cắt lấy nước cốt, trộn cùng muối tôm và sa tế; đối chiếu quất và bò khô."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/banh-trang-tron.webp",
@@ -121,7 +148,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt)",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-006 đợt 6: nâng Mức 2 — bò khô 15 → 20g; bổ sung quất 10g (2/3 nguồn; slug qua-quat có số). Muối tôm là nguyên liệu định danh nhưng kho chưa có slug — ghi nhận vào hàng đợi biên soạn nguyên liệu, không thay bằng muối thường.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

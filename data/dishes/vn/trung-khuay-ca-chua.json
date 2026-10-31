@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "xao",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -43,6 +43,14 @@
     {
       "ingredient_slug": "ca-chua",
       "quantity": 120,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-tim",
+      "quantity": 10,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -82,15 +90,34 @@
     }
   ],
   "recipe_steps": [
-    "Cà chua bổ múi cau; trứng đánh tan với nước mắm.",
-    "Phi thơm đầu hành với dầu, cho cà chua vào xào mềm, nêm đường (khoảng 4 phút).",
-    "Đổ trứng vào, khuấy nhanh tay cho trứng vừa chín tới còn mềm (khoảng 2 phút), rắc hành lá. Món mặn nhanh: tổng thời gian nấu ~10 phút, nguyên liệu phổ thông."
+    "Cà chua rửa sạch, bổ múi cau; hành tím bóc vỏ, băm nhỏ; hành lá rửa sạch, cắt nhỏ để rắc ở bước cuối.",
+    "Đánh tan trứng gà trong tô cùng nước mắm, khuấy đều tay khoảng 30 giây đến khi lòng đỏ và lòng trắng quyện đều, không còn vệt trắng.",
+    "Làm nóng dầu ăn trong chảo, phi thơm hành tím băm trên lửa vừa khoảng 1 phút đến khi dậy mùi và hơi vàng, tránh để cháy đắng.",
+    "Cho cà chua vào xào lửa vừa 3–4 phút, nêm đường trắng, đảo đến khi cà chua mềm, ra nước sốt đỏ sánh nhẹ nhưng chưa nát nhừ là đạt.",
+    "Đổ trứng vào chảo, để yên 10–15 giây cho trứng bắt đầu se mặt rồi khuấy nhẹ tay khoảng 1–2 phút đến khi trứng vừa chín tới, còn mềm ẩm và quyện đều sốt cà chua.",
+    "Rắc hành lá, đảo nhanh một lần rồi tắt bếp ngay — trứng mềm xốp, không khô xác và không ra nhiều nước là đạt, dọn nóng với cơm."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/2-cach-lam-trung-xao-ca-chua-va-trung-xao-ngao-ng-02417?srsltid=AfmBOorcKSiEYfy1palRN5yEkFjSGyUjPO4D5cJKQ4XMZpdhTqVBsZp3",
+      "accessed": "2026-10-31",
+      "note": "Đã mở và đối chiếu: trứng xào cà chua cho 1–2 người dùng hành tím đúng 10g, bước làm phi thơm hành tím băm trước khi cho cà chua vào xào — ủng hộ trực tiếp việc bổ sung hành tím 10g; file không theo phần trứng muối của nguồn này."
+    },
+    {
+      "url": "https://cookpad.com/vn/recipes/12557446/print",
+      "accessed": "2026-10-31",
+      "note": "Đã mở và đối chiếu (tác giả Nguyễn Dung): 2 quả trứng + 2 củ hành tím cho 2 người ăn, bước làm phi hành tím rồi cho cà chua và trứng vào xào chung — củng cố hành tím là nguyên liệu nền của món."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/293225",
+      "accessed": "2026-10-31",
+      "note": "Đã mở và đối chiếu (tác giả Hảo Hảo Bốn Mắt): nguyên liệu có hành củ (hành tím) và hành lá, bước đầu tiên là phi thơm hành băm rồi mới cho cà chua vào — khớp việc bước nấu của file vốn dùng hành tím nhưng trước đây thiếu dòng nguyên liệu."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món THAY cho dau-phu-sot-ca-chua của kế hoạch §3.3: món đó trùng dau-phu-sot-ca đã có (tên đầy đủ là 'Đậu phụ sốt cà chua'); ứng viên thay đầu tiên dau-phu-kho-nam-huong cũng trùng dau-phu-kho-nam đã có trong kho — cả hai đều do rà soát V7/G6 đợt 2 phát hiện. [LV2-005 đợt 5: thử nâng Mức 2 — GIỮ Mức 1: đã mở được 2 nguồn thì bị chặn 429 — chưa đủ 3 nguồn đã mở. Thử lại khi hết chặn.]",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món THAY cho dau-phu-sot-ca-chua của kế hoạch §3.3: món đó trùng dau-phu-sot-ca đã có (tên đầy đủ là 'Đậu phụ sốt cà chua'); ứng viên thay đầu tiên dau-phu-kho-nam-huong cũng trùng dau-phu-kho-nam đã có trong kho — cả hai đều do rà soát V7/G6 đợt 2 phát hiện. [LV2-005 đợt 5: thử nâng Mức 2 — GIỮ Mức 1: đã mở được 2 nguồn thì bị chặn 429 — chưa đủ 3 nguồn đã mở. Thử lại khi hết chặn.] [LV2-006 đợt 6: nâng Mức 2 — thử lại sau 429 đợt 5. Bổ sung hành tím 10g (2/3 nguồn; bước nấu vốn dùng hành tím nhưng file thiếu dòng nguyên liệu). Định lượng còn lại giữ nguyên.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

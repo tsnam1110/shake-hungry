@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -114,15 +114,34 @@
     }
   ],
   "recipe_steps": [
-    "Móng giò cạo sạch, chặt khúc, chần qua nước sôi với gừng rồi rửa lại.",
-    "Hầm móng giò khoảng 30–40 phút cho mềm; dưa cải xả bớt mặn, cắt khúc, xào sơ.",
-    "Cho dưa cải vào hầm tiếp 10 phút, nêm nước mắm và chút đường, rắc hành lá và tiêu."
+    "Cạo sạch lông móng giò, rửa với muối rồi chặt khúc vừa ăn; chần qua nước sôi có lát gừng khoảng 3–5 phút đến khi nổi bọt bẩn thì vớt ra rửa lại — thịt săn mặt, hết mùi hôi là đạt.",
+    "Dưa cải muối rửa 2–3 lần nước, vắt ráo cho bớt mặn chua rồi cắt khúc 2–3cm; hành tím băm nhỏ, hành lá cắt nhỏ để riêng.",
+    "Phi thơm hành tím với dầu ăn trên lửa vừa khoảng 1 phút đến khi dậy mùi, cho dưa cải vào xào 3–5 phút, nêm đường cho dịu vị chua — dưa săn lại và thơm là đạt.",
+    "Cho móng giò vào nồi cùng lượng nước ngập mặt thịt, hầm lửa nhỏ 30–40 phút và hớt bọt thường xuyên — thịt mềm nhưng da còn dai nhẹ, đũa xiên qua dễ dàng là đạt.",
+    "Cho dưa cải đã xào vào nồi móng giò, hầm tiếp khoảng 10 phút cho thấm vị, nêm nước mắm và muối cho vừa miệng — nước canh chua thanh, hài hoà là đạt.",
+    "Múc canh ra tô khi còn nóng, rắc hành lá và tiêu xay lên mặt, dùng ngay với cơm nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://saigonesebaguette.vn/huong-dan-chi-tiet-cach-nau-gio-heo-dua-cai-dam-da-chuan-vi/",
+      "accessed": "2026-10-31",
+      "note": "Đã mở và đối chiếu đúng món giò heo dưa cải: chân giò 800g–1kg cho 4–6 người và 400–500g dưa cải cho cả nồi, quy ra mỗi khẩu phần khớp móng giò 120g và dưa cải 80g của file; quy trình chần giò với gừng, xào dưa cải 3–5 phút rồi hầm chung 15–20 phút, nêm nước mắm, đường, tiêu khớp bước nấu."
+    },
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/2-cach-nau-canh-dua-chua-suon-heo-va-thit-heo-thom-ngon-don-04583?srsltid=AfmBOop5feCkQpD9ifFkllXx22NsdeSTHzZFJ5a0lIaeCmzdxD4UVg6D",
+      "accessed": "2026-10-31",
+      "note": "Đã mở và đối chiếu biến thể cùng họ canh cải chua với thịt heo (sườn non và thịt heo): cải chua rửa vắt, cắt khúc 2–3cm, xào với hành tím, chút đường và nước mắm khoảng 10 phút rồi mới cho vào nồi hầm — ủng hộ kỹ thuật xào dưa cải, thứ tự nấu và cách nêm của file; nguồn dùng sườn/thịt heo thay móng giò nên chỉ đối chiếu kỹ thuật và gia vị, không dùng đối chiếu định lượng móng giò."
+    },
+    {
+      "url": "https://nhaxinhplaza.vn/doi-song/tu-van/cach-nau-gio-heo-ngon.html",
+      "accessed": "2026-10-31",
+      "note": "Đã mở và đối chiếu mục chân giò lợn hầm cải chua: 400g chân giò + 200g dưa cải chua, có gừng, hành tím, nêm muối, đường, nước mắm — tỉ lệ giò/dưa 2:1 gần với file. Lưu ý mức tin cậy: đây là trang tổng hợp (Nấu Ăn Thường Thức/webnauan), không có biên tập viên ký tên riêng cho công thức này nên độ tin cậy thấp hơn hai nguồn còn lại, chỉ dùng làm nguồn đối chiếu thứ ba."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-005 đợt 5: thử nâng Mức 2 — GIỮ Mức 1: lần mở nguồn đầu tiên bị chặn 429 — dừng ngay theo kỷ luật, chưa mở được nguồn nào. Thử lại khi hết chặn.]",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-005 đợt 5: thử nâng Mức 2 — GIỮ Mức 1: lần mở nguồn đầu tiên bị chặn 429 — dừng ngay theo kỷ luật, chưa mở được nguồn nào. Thử lại khi hết chặn.] [LV2-006 đợt 6: nâng Mức 2 — thử lại sau 429 đợt 5; định lượng giữ nguyên toàn bộ sau đối chiếu ≥2 nguồn. Lưu ý nguồn: nếu một trong ba nguồn đối chiếu yếu hơn hai nguồn còn lại, ghi rõ mức tin cậy trong note của nguồn đó.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

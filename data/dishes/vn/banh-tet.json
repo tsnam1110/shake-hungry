@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "luoc",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -94,11 +94,30 @@
     }
   ],
   "recipe_steps": [
-    "Xào nếp với nước cốt dừa.",
-    "Gói lá chuối đòn dài với đậu và thịt.",
-    "Luộc 8-10 giờ."
+    "Sơ chế: gạo nếp vo sạch, ngâm 4–6 giờ hoặc qua đêm cho hạt nở đều, vớt ra để thật ráo; đậu xanh ngâm nước 2–4 giờ cho mềm, rửa sạch để ráo.",
+    "Nấu đậu: cho đậu xanh vào nồi với nước xâm xấp và chút muối, nấu lửa nhỏ khoảng 20 phút đến khi đậu chín nhừ, mềm bở; tán nhuyễn mịn khi đậu còn nóng.",
+    "Ướp thịt: thịt ba chỉ rửa sạch, cắt miếng dài dày khoảng 0,5–1cm, ướp với hành tím băm, muối và hạt tiêu trong 20–30 phút cho thấm gia vị.",
+    "Xào nếp: đun nước cốt dừa cho nóng, cho nếp đã ráo vào xào trên lửa vừa, đảo đều tay đến khi hạt nếp hút cạn nước cốt dừa, hơi nở và xào thấy nặng tay thì tắt bếp.",
+    "Gói bánh: trải lá chuối đã lau sạch, dàn nếp ở giữa, xếp đậu xanh, đặt thịt ba chỉ, phủ tiếp đậu xanh rồi phủ nếp kín nhân; cuộn chặt tay thành đòn tròn dài, gấp hai đầu và buộc lạt đều quanh thân bánh.",
+    "Luộc bánh: lót lá chuối dưới đáy nồi, xếp bánh vào, đổ nước ngập bánh và luộc 4–7 giờ với lửa đều (đòn to, dày luộc về phía 7 giờ), châm thêm nước sôi khi nước cạn; vớt bánh ra rửa qua nước lạnh, để ráo cho bánh rền rồi cắt khoanh."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://eva.vn/bep-eva/cach-lam-banh-tet-truyen-thong-don-tet-c162a505825.html",
+      "accessed": "2026-10-31",
+      "note": "Eva — bánh tét truyền thống: tỉ lệ 1kg gạo nếp : 300g đậu xanh : 500g thịt ba chỉ khớp tỉ lệ của file; luộc 4–6 giờ, đòn to dày luộc 6–8 giờ — cơ sở sửa thời gian luộc trong bước nấu thành 4–7 giờ."
+    },
+    {
+      "url": "https://vietnam.vnanet.vn/vietnamese/tin-tuc/vang-danh-banh-tet-la-cam-130219.html",
+      "accessed": "2026-10-31",
+      "note": "Thông tấn xã Việt Nam (bài Nguyễn Oanh, ảnh Nguyễn Luân) — bánh tét lá cẩm Cần Thơ của nghệ nhân Huỳnh Thị Trọng: nếp trộn với nước cốt dừa, nấu chín khoảng 30% trước khi gói (trường phái miền Nam mà file đang theo), luộc bằng củi 4–5 giờ thì chín."
+    },
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-banh-tet-nhan-ngot-thom-ngon-moi-la-hap-dan-don-gian-16434?srsltid=AfmBOooTzHAe1iZfyPbBuOBdXU4o4iyo-rpeYXNY3C47pyfqKrR3nIsx",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH — bánh tét nhân ngọt (biến thể): đối chiếu kỹ thuật xào nếp với nước cốt dừa cho hạt nếp hút cạn nước và hơi nở trước khi gói, cùng cách tạo hình và buộc đòn; không lấy số nhân ngọt áp cho file nhân mặn."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/banh-tet.webp",
@@ -113,7 +132,7 @@
     "source": "wikidata",
     "queried_at": "2026-08-31"
   },
-  "import_note": "Nhập tự động từ Wikidata Q5004813 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Gợi ý nguyên liệu từ Wikidata (tiếng Anh, CHƯA ánh xạ sang data/ingredients/): glutinous rice. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/Banh%20tet.jpg Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Nhập tự động từ Wikidata Q5004813 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Gợi ý nguyên liệu từ Wikidata (tiếng Anh, CHƯA ánh xạ sang data/ingredients/): glutinous rice. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/Banh%20tet.jpg Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-006 đợt 6: nâng Mức 2 — định lượng giữ nguyên (tỉ lệ nếp:đậu:thịt khớp đồng thuận 1000:300:500); SỬA thời gian luộc trong bước nấu thành 4–7 giờ theo nguồn. Nước cốt dừa xào nếp là trường phái miền Nam chỉ 1/3 nguồn — file vốn theo trường phái này, ghi nhận.]",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

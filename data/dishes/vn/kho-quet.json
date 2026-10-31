@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "kho",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -50,7 +50,7 @@
     },
     {
       "ingredient_slug": "nuoc-mam-truyen-thong",
-      "quantity": 12,
+      "quantity": 24,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -58,7 +58,7 @@
     },
     {
       "ingredient_slug": "duong-thot-not",
-      "quantity": 8,
+      "quantity": 13,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -87,14 +87,41 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-la",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Thắng đường, kho thịt ba chỉ với nước mắm.",
-    "Cho tôm khô, tiêu, hành tím.",
-    "Kho đến sệt, ăn kèm rau luộc."
+    "Thịt ba chỉ rửa với nước muối loãng, để ráo, cắt miếng nhỏ hạt lựu; tôm khô rửa sạch, ngâm nước khoảng 10–20 phút cho mềm rồi để ráo.",
+    "Cho thịt ba chỉ vào niêu hoặc chảo, rang trên lửa vừa khoảng 5–7 phút đến khi thịt ra mỡ, săn lại và hơi vàng xém cạnh; vớt thịt ra, giữ lại phần mỡ trong niêu.",
+    "Khuấy tan đường thốt nốt vào nước mắm cùng chút nước để sẵn; phi thơm hành tím trong mỡ thịt đến khi vàng thơm khoảng 2 phút.",
+    "Cho tôm khô vào xào nhanh khoảng 2–3 phút, cho thịt ba chỉ trở lại niêu, đảo đều cho thấm mỡ hành.",
+    "Rưới hỗn hợp nước mắm – đường thốt nốt vào, thêm hạt tiêu và ớt, kho lửa liu riu khoảng 10–15 phút đến khi nước kho keo lại, sánh sệt và có màu nâu óng.",
+    "Rắc hành lá cắt nhỏ lên trên, tắt bếp; dọn kho quẹt nóng trong niêu, ăn kèm rau củ luộc hoặc cơm cháy."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-thit-kho-quet-ngon-dam-da-chuan-vi-cho-bua-com-08204",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH (biên tập Trần Thuận Hưng): đã đối chiếu hai công thức kho quẹt đều có hành lá và tỉ lệ nước mắm cao (5 muỗng canh cho 3 người ở công thức 2; 2 muỗng canh mắm với 4 muỗng canh đường cho 2 người ở công thức 1) — ủng hộ tăng nước mắm, tăng đường và bổ sung hành lá."
+    },
+    {
+      "url": "https://bepmina.vn/mon-viet/cach-lam-kho-quet-tom-kho/",
+      "accessed": "2026-10-31",
+      "note": "Bếp Mina (tác giả Bếp MiNa): đã đối chiếu kho quẹt tôm khô 4 người với nước mắm 50g, đường 15g và hành lá thêm ở bước cuối — ủng hộ bổ sung hành lá và cặp mắm–đường; lượng mắm theo khẩu phần của nguồn này thấp hơn file, đã ghi nhận trong báo cáo đợt."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/13880642",
+      "accessed": "2026-10-31",
+      "note": "Cookpad VN (tác giả KHÂM Mr.): đã đối chiếu kho quẹt dùng 200ml nước mắm với 70g đường và đầu hành cho vào khi kho quẹt sánh lại — ủng hộ tỉ lệ mắm cao và bổ sung hành lá."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/kho-quet.webp",
@@ -109,7 +136,7 @@
     "source": "wikidata",
     "queried_at": "2026-08-31"
   },
-  "import_note": "Nhập tự động từ Wikidata Q10779336 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/Kho%20qu%E1%BA%B9t%202.jpg Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Nhập tự động từ Wikidata Q10779336 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/Kho%20qu%E1%BA%B9t%202.jpg Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-006 đợt 6: nâng Mức 2 — nước mắm 12 → 24g, đường thốt nốt 8 → 13g (chỉ sửa lượng; LOẠI đường giữ nguyên vì đang là quy ước chờ chủ dự án); bổ sung hành lá 3g (4/4 nguồn). Ghi nhận chờ chủ dự án: khẩu phần 55g của file so với nồi kho quẹt dùng chung ~105–115g/người ở các nguồn.]",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

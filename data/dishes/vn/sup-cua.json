@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "chieu",
@@ -37,6 +37,22 @@
       "quantity": 50,
       "unit_name": "g",
       "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "ngo-ngot",
+      "quantity": 35,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "ca-rot",
+      "quantity": 15,
+      "unit_name": "g",
+      "is_optional": true,
       "source": "llm_suggested",
       "confidence": "low"
     },
@@ -122,11 +138,30 @@
     }
   ],
   "recipe_steps": [
-    "Luộc cua, gỡ lấy thịt; nấu nước dùng từ vỏ cua/thịt gà.",
-    "Cho nấm hương và thịt cua vào, xuống bột năng khuấy cho sệt.",
-    "Rưới trứng đánh tan thành sợi, nêm nếm, rắc hành, rau mùi, tiêu và dầu mè."
+    "Luộc hoặc hấp cua 15 phút trên lửa vừa đến khi mai chuyển đỏ cam, để nguội rồi gỡ lấy thịt cua, bỏ lông và yếm; giữ lại nước luộc cua, lọc cho trong.",
+    "Luộc ức gà trong nước dùng 10–12 phút đến khi thịt chín trắng, vớt ra xé sợi; nấm hương khô ngâm nước ấm 20–30 phút cho nở, rửa sạch cắt sợi; ngô ngọt tách lấy hạt, cà rốt gọt vỏ cắt hạt lựu nhỏ.",
+    "Đun sôi nước dùng, cho ngô ngọt và cà rốt vào nấu lửa vừa 5–7 phút đến khi hạt ngô căng và cà rốt vừa mềm; cho nấm hương, thịt cua và gà xé vào, nấu sôi lại 2–3 phút.",
+    "Nêm nước mắm và đường, nếm lại cho vừa ăn; hoà bột năng với ít nước lạnh, rưới từ từ vào nồi và khuấy đều tay 1–2 phút đến khi súp sánh sệt vừa, không vón cục.",
+    "Đánh tan trứng gà, rưới qua rây thành dòng nhỏ vào nồi súp đang sôi lăn tăn, khuấy nhẹ một chiều khoảng 1 phút cho trứng thành sợi mảnh và chín đều.",
+    "Tắt bếp, nhỏ dầu mè, múc súp ra chén, rắc hành lá, rau mùi cắt nhỏ và tiêu xay; dùng nóng khi súp còn sánh và thơm mùi cua."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-nau-sup-cua-oc-heo-thom-ngon-bo-duong-cho-ca-nha-08091",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH (biên tập Đinh Duy Tân): đã đối chiếu súp cua nấu bằng nước dùng hầm bắp, cho bắp hạt cùng nấm đông cô, thịt cua và trứng cút vào nấu 7–8 phút rồi xuống bột năng và rưới trứng; ngô là thành phần cố định của súp cua ở nguồn này."
+    },
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/2-cach-nau-sup-cua-nam-thom-ngon-hap-dan-de-lam-ngay-tai-nha-14874",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH: đã đối chiếu cả hai công thức súp cua đều có cà rốt cắt hạt lựu (1 củ cho 4 người) và bản nấm đông cô có thêm bắp; bản nấm tuyết có nấm tuyết và trứng cút — ghi nhận theo phân xử, không bổ sung hai nguyên liệu này."
+    },
+    {
+      "url": "https://vnexpress.net/sup-ngo-cua-4311191.html",
+      "accessed": "2026-10-31",
+      "note": "VnExpress Cooking: đã đối chiếu súp ngô cua dùng 1 bắp ngô ngọt với thịt cua, xuống bột và rưới lòng trắng trứng; mẹo của nguồn ghi thêm chút nấm và cà rốt cho đẹp mắt — khớp việc bổ sung ngô bắt buộc và cà rốt dạng tuỳ chọn."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/sup-cua.webp",
@@ -137,7 +172,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-006 đợt 6: nâng Mức 2 — bổ sung ngô ngọt 35g (3/3 nguồn; khoảng trống lớn nhất của file) và cà rốt 15g dạng tuỳ chọn (2/3 nguồn). Nấm tuyết và trứng cút xuất hiện ở nguồn nhưng định lượng phân tán — ghi nhận, không bổ sung.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

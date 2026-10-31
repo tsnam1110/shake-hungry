@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "luoc",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -38,7 +38,7 @@
   "ingredients": [
     {
       "ingredient_slug": "gao-nep",
-      "quantity": 150,
+      "quantity": 95,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -46,7 +46,7 @@
     },
     {
       "ingredient_slug": "dau-xanh-hat",
-      "quantity": 60,
+      "quantity": 40,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -54,7 +54,7 @@
     },
     {
       "ingredient_slug": "thit-lon-ba-chi",
-      "quantity": 70,
+      "quantity": 40,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -86,11 +86,30 @@
     }
   ],
   "recipe_steps": [
-    "Ngâm nếp, đãi đậu xanh.",
-    "Gói lá dong với thịt ba chỉ ướp tiêu.",
-    "Luộc 10-12 giờ."
+    "Sơ chế đậu: đậu xanh ngâm nước ấm khoảng 2 giờ cho nở căng, đãi sạch, xóc với muối rồi hấp chín bở mềm; tán nhuyễn khi còn nóng, trộn hạt tiêu và nắm thành từng nắm đều nhau.",
+    "Sơ chế nếp: gạo nếp vo sạch, ngâm khoảng 3 giờ cho mềm hạt (không ngâm lâu hơn kẻo gạo bị chua, nhão), vớt ra để hơi ráo nước rồi xóc đều với muối.",
+    "Ướp thịt: thịt ba chỉ rửa sạch, cho vào ngăn đá khoảng 30 phút cho hơi cứng để dễ thái, cắt miếng to bản dày khoảng 1cm; ướp thịt với hành tím băm, hạt tiêu và muối rồi để trong ngăn mát vài giờ cho thấm.",
+    "Gói bánh: xếp lá dong vào khuôn, rải một lớp gạo dàn đều, rải đậu xanh (chừa mép khoảng 1,5cm), đặt thịt, phủ đậu kín thịt rồi phủ gạo kín mặt; nén nhẹ các góc, gấp lá và buộc lạt chắc tay cho bánh vuông vức.",
+    "Luộc bánh: xếp bánh đứng vào nồi, đổ nước ngập cao hơn mặt bánh, luộc khoảng 11–12 giờ với lửa đều; khi nước cạn phải châm thêm nước sôi để bánh luôn ngập nước.",
+    "Ép bánh: vớt bánh ra, rửa qua nước lạnh cho sạch nhớt, đặt lên mặt phẳng và dùng vật nặng ép vài giờ cho bánh ra bớt nước, chặt và rền; để bánh nguội hẳn rồi mới cắt miếng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://vietnamnet.vn/cach-goi-banh-chung-dep-cho-ngay-tet-285747.html",
+      "accessed": "2026-10-31",
+      "note": "VietnamNet (theo Emdep.vn) — 5 chiếc bánh 12×12cm dùng 2kg gạo nếp, 500g đậu xanh, 500g thịt ba chỉ; thịt ướp hành khô, nước mắm và tiêu, luộc 11–12 giờ rồi ép bánh; đối chiếu cơ sở quy đổi theo chiếc bánh và trường phái ướp hành."
+    },
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/amp/cach-lam-banh-chung-nep-cam-nhan-thit-heo-thom-ngon-cho-ngay-04900",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH — bánh chưng nếp cẩm nhân thịt heo: mỗi bánh gồm 380g nếp, 180g đậu xanh và thịt ba chỉ khoảng 167g (500g cho 3 bánh), hành tím 50g cho cả mẻ; quy về 1/4 bánh (khẩu phần của file) cho nếp khoảng 95g, đậu khoảng 45g, thịt khoảng 42g — nguồn neo cho định lượng đã sửa."
+    },
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-banh-chung-gu-dac-san-ha-giang-06902",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH (biên tập Tô Trần Thanh Tâm) — bánh chưng gù Hà Giang: 1kg nếp, 700g đậu xanh, 800g thịt ba chỉ cho 4 chiếc bánh nhỏ; thịt chỉ ướp muối và tiêu, không hành — đối chiếu thêm tỉ lệ và trường phái không hành trong tranh luận nhân bánh chưng."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/banh-chung.webp",
@@ -105,7 +124,7 @@
     "source": "wikidata",
     "queried_at": "2026-08-31"
   },
-  "import_note": "Nhập tự động từ Wikidata Q564567 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Gợi ý nguyên liệu từ Wikidata (tiếng Anh, CHƯA ánh xạ sang data/ingredients/): Phrynium placentarium, glutinous rice. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/Banh%20chung%20vuong.jpg Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Nhập tự động từ Wikidata Q564567 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Gợi ý nguyên liệu từ Wikidata (tiếng Anh, CHƯA ánh xạ sang data/ingredients/): Phrynium placentarium, glutinous rice. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/Banh%20chung%20vuong.jpg Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-006 đợt 6: nâng Mức 2 — quy về cơ sở bánh ~1kg theo 2 nguồn độc lập: gạo nếp 150 → 95g, đậu xanh 60 → 40g, thịt ba chỉ 70 → 40g. Hành tím GIỮ — tranh luận trường phái có thật (truyền thống: không hành/không nước mắm; nguồn khác dùng cả hai), ghi nhận không phân xử trong đợt này. Câu hỏi nhãn loai:xoi cho bánh chưng là vấn đề taxonomy cấp kho — ghi nhận cho chủ dự án, không tự đổi.]",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

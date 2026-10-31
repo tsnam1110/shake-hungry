@@ -18,11 +18,15 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "toi",
       "weight": 9
+    },
+    {
+      "slot": "trua",
+      "weight": 7
     }
   ],
   "serving_desc": "1 phần lẩu",
@@ -38,7 +42,7 @@
     },
     {
       "ingredient_slug": "bun-tuoi",
-      "quantity": 80,
+      "quantity": 125,
       "unit_name": "g",
       "is_optional": true,
       "source": "llm_suggested",
@@ -78,15 +82,15 @@
     },
     {
       "ingredient_slug": "muc-ong",
-      "quantity": 40,
+      "quantity": 60,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
     },
     {
-      "ingredient_slug": "nuoc-cot-dua",
-      "quantity": 30,
+      "ingredient_slug": "nuoc-dua-tuoi",
+      "quantity": 100,
       "unit_name": "g",
       "is_optional": true,
       "source": "llm_suggested",
@@ -123,18 +127,45 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dua-thom",
+      "quantity": 25,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Nấu mắm cá linh với sả, lọc lấy nước dùng lẩu (xem ghi chú thiếu nguyên liệu).",
-    "Cho thịt ba chỉ, cá, tôm, mực và các loại rau vào nhúng chín.",
-    "Ăn kèm bún, thêm ớt theo khẩu vị."
+    "Nấu nước cốt mắm: cho mắm cá linh cùng sả đập dập vào khoảng 500ml nước, nấu lửa vừa 5–7 phút đến khi thịt mắm rã hết, sau đó lọc qua rây bỏ phần xương, giữ lại nước cốt mắm trong và thơm.",
+    "Sơ chế nguyên liệu: cá basa cắt khúc, chà muối rửa sạch; tôm cắt râu rửa sạch; mực ngâm nước muối loãng khoảng 5 phút, rửa lại và cắt khoanh khía hoa; thịt ba chỉ cắt lát mỏng; cà tím cắt miếng vừa ăn, ngâm nước muối loãng 3–5 phút cho ra mủ và không bị thâm; dứa (thơm) gọt vỏ, bỏ mắt, cắt miếng vừa ăn.",
+    "Luộc sơ hải sản trong nước sôi: cho tôm vào luộc khoảng 3 phút đến khi tôm chuyển màu đỏ, vớt ra; luộc mực khoảng 2 phút đến khi mực săn và cong lại, vớt ra; chần cá basa khoảng 3 phút cho thịt săn, vớt ra để riêng và giữ lại phần nước luộc.",
+    "Bắc nồi lên bếp, cho thịt ba chỉ vào xào cùng sả băm trên lửa vừa khoảng 4 phút, đảo đều đến khi thịt săn lại, hơi xém cạnh và dậy mùi thơm của sả.",
+    "Đổ nước cốt mắm đã lọc, phần nước luộc hải sản và nước dừa tươi vào nồi thịt, cho dứa (thơm) và sả cắt khúc vào, nêm đường thốt nốt; đun lửa nhỏ khoảng 10 phút đến khi thịt mềm, nước lẩu đậm đà và dậy mùi mắm đặc trưng, cho cà tím vào nấu vừa chín tới.",
+    "Khi ăn đun nồi lẩu sôi lại, cho cá basa, tôm và mực đã luộc sơ vào; nhúng rau muống và bông điên điển vừa chín tới, còn giữ màu xanh; ăn kèm bún tươi và ớt thái lát."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/huong-dan-chi-tiet-cach-nau-lau-mam-ngon-ngat-ngay-de-lam-01015",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH (cho 4 người): đã đối chiếu mực 300g, bún tươi 500g, dứa (thơm) 100g và nước dừa tươi 500ml — quy về mỗi người lần lượt là 75g, 125g, 25g và 125ml; ủng hộ mực 60g, bún 125g, bổ sung dứa 25g và thay nước cốt dừa bằng nước dừa tươi 100g. Nguồn có dùng thịt heo quay nhưng không bổ sung theo phân xử."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/25298934",
+      "accessed": "2026-10-31",
+      "note": "Cookpad VN, tác giả chillylinh (4 người): đã đối chiếu cách nấu nước cốt từ mắm cá linh và mắm cá sặc, dùng 1 quả dừa tươi cho một nồi lẩu và ăn kèm bông điên điển; ủng hộ việc dùng nước dừa tươi thay nước cốt dừa."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/16834879",
+      "accessed": "2026-10-31",
+      "note": "Cookpad VN, tác giả QUÂN NGUYỄN (5 người): đã đối chiếu mực 300g cho 5 người, tức 60g mỗi người, nước dừa 500ml cho 5 người, tức 100ml mỗi người, và 1/2 trái thơm cho một nồi; khớp mức mực 60g, nước dừa tươi 100g và ủng hộ bổ sung dứa (thơm)."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. THIẾU NGUYÊN LIỆU: mắm cá linh (chính — nước dùng lẩu mắm) — cần bổ sung vào kho.",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. THIẾU NGUYÊN LIỆU: mắm cá linh (chính — nước dùng lẩu mắm) — cần bổ sung vào kho. [LV2-006 đợt 6: nâng Mức 2 — nâng KHÔNG có dòng mắm cá: slug mam-ca-linh/mam-ca-sac chưa có số dinh dưỡng (cùng tiền lệ bun-mam ở Phần A LV2-006), chờ biên soạn nguyên liệu. Mực ống 40 → 60g, bún tươi 80 → 125g; bổ sung dứa (thơm) 25g; nước cốt dừa tuỳ chọn thay bằng nước dừa tươi 100g (3/3 nguồn dùng nước dừa tươi ~100–125ml/người, slug có số); bổ sung buổi trưa vào meal_slots nếu thiếu. Heo quay xuất hiện ở nguồn nhưng slug chưa có số — ghi nhận, không bổ sung.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

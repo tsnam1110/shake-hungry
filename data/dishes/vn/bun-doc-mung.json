@@ -147,7 +147,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-005 đợt 5: thử nâng Mức 2 — GIỮ Mức 1: lần mở nguồn đầu tiên bị chặn 429 — dừng ngay theo kỷ luật, chưa mở được nguồn nào. Thử lại khi hết chặn.]",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-005 đợt 5: thử nâng Mức 2 — GIỮ Mức 1: lần mở nguồn đầu tiên bị chặn 429 — dừng ngay theo kỷ luật, chưa mở được nguồn nào. Thử lại khi hết chặn.] [LV2-006 đợt 6: GIỮ Mức 1 — thử lại sau 429 đợt 5: gom được 2 nguồn đã mở thì nhà cung cấp chặn 429 ở nguồn thứ ba, dừng ngay theo kỷ luật. Bất thường lớn ghi nhận cho đợt sau: file THIẾU hẳn mọc — nguyên liệu định danh của món — cần đối chiếu định lượng mọc khi đủ 3 nguồn.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -47,22 +47,6 @@
     {
       "ingredient_slug": "thit-bo-nam",
       "quantity": 90,
-      "unit_name": "g",
-      "is_optional": false,
-      "source": "llm_suggested",
-      "confidence": "low"
-    },
-    {
-      "ingredient_slug": "ca-rot",
-      "quantity": 40,
-      "unit_name": "g",
-      "is_optional": false,
-      "source": "llm_suggested",
-      "confidence": "low"
-    },
-    {
-      "ingredient_slug": "khoai-tay",
-      "quantity": 50,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -131,18 +115,69 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hoa-hoi",
+      "quantity": 0.5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "toi",
+      "quantity": 4,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-la",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "rau-mui",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Ướp thịt bò với rượu vang đỏ, quế, lá nguyệt quế; xào săn với hành tây và cà chua.",
-    "Hầm bò cùng cà rốt, khoai tây đến khi mềm, sốt sánh, nêm nước mắm và muối.",
-    "Trụng bánh phở, múc bò sốt vang chan lên, dùng nóng."
+    "Thịt bò rửa sạch, thấm khô, thái miếng vuông to vừa ăn; ướp với rượu vang đỏ, bột quế, lá nguyệt quế, nước mắm và muối trong 30 phút (tốt nhất 2–4 giờ trong ngăn mát) cho thấm gia vị.",
+    "Tỏi băm nhỏ, hành tây thái múi cau, cà chua bổ múi cau; hành lá và rau mùi rửa sạch, thái nhỏ, để riêng cho bước hoàn thiện.",
+    "Làm nóng dầu ăn trong nồi, phi thơm tỏi khoảng 30 giây đến khi dậy mùi, cho hành tây vào xào 2–3 phút đến khi hơi xém vàng, thêm cà chua vào đảo cho mềm và ra màu đỏ.",
+    "Cho thịt bò đã ướp vào nồi, đảo lửa vừa 5–7 phút đến khi thịt săn lại và thấm rượu vang, đổ nước sôi xâm xấp mặt thịt và hớt bọt cho nước dùng trong.",
+    "Thả hoa hồi vào nồi, đậy vung ninh lửa nhỏ 45–60 phút đến khi thịt bò mềm, nước sốt sánh nhẹ màu nâu đỏ, thơm mùi hồi quế; nêm lại nước mắm và muối cho vừa miệng.",
+    "Trụng bánh phở qua nước sôi 1–2 phút rồi cho vào tô, xếp thịt bò sốt vang lên trên, rắc hành lá và rau mùi, chan nước sốt đang sôi — thịt mềm mà không nát, sốt sánh nhẹ là đạt, dùng nóng ngay."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "http://www.savourydays.com/cach-lam-pho-sot-vang/",
+      "accessed": "2026-10-31",
+      "note": "Đã mở và đối chiếu công thức gốc: 500g thịt bò + 600g phở tươi, có 2 hoa hồi, tỏi 15g, hành lá 30g, rau mùi 30g, lá nguyệt quế, quế và rượu vang đỏ — hoàn toàn không có cà rốt, khoai tây; các định lượng bổ sung của file lấy ở mức thận trọng, thấp hơn tỉ lệ của nguồn."
+    },
+    {
+      "url": "https://phunutoday.vn/cach-nau-pho-bo-sot-vang-kieu-ha-noi-chuan-vi-d507542.html",
+      "accessed": "2026-10-31",
+      "note": "Đã mở và đối chiếu bản kiểu Hà Nội: 800g dẻ sườn bò, 3 cánh hoa hồi, có tỏi, hành lá và rau mùi ăn kèm; bài viết khẳng định rõ phở bò sốt vang kiểu Hà Nội không dùng khoai tây và cà rốt, khác món bò kho miền Nam — ủng hộ trực tiếp việc bỏ hai dòng cà rốt và khoai tây."
+    },
+    {
+      "url": "https://foodelivietnam.com/cach-nau-pho-sot-vang-ngon-nhu-an-truc-tiep-ngoai-hang.html",
+      "accessed": "2026-10-31",
+      "note": "Đã mở và đối chiếu: danh mục nguyên liệu có hoa hồi, tỏi 15g, hành lá 30g, rau mùi 30g cho 500g bò và cũng không có cà rốt, khoai tây. Lưu ý độc lập nguồn: nội dung trang này sao chép gần như nguyên văn công thức Savoury Days nên không tính là nguồn độc lập cho định lượng, chỉ dùng xác nhận biến thể Hà Nội không có khoai tây, cà rốt."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt DISH-004 đợt 2 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-005 đợt 5: thử nâng Mức 2 — GIỮ Mức 1: lần mở nguồn đầu tiên (Savoury Days) bị chặn 429 — dừng ngay theo kỷ luật, chưa mở được nguồn nào. Thử lại khi hết chặn.]",
+  "import_note": "Soạn nháp đợt DISH-004 đợt 2 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-005 đợt 5: thử nâng Mức 2 — GIỮ Mức 1: lần mở nguồn đầu tiên (Savoury Days) bị chặn 429 — dừng ngay theo kỷ luật, chưa mở được nguồn nào. Thử lại khi hết chặn.] [LV2-006 đợt 6: nâng Mức 2 — thử lại sau 429 đợt 5. Phân xử: BỎ cà rốt và khoai tây (0/3 nguồn; nguồn Hà Nội phủ định rõ — đây là lẫn từ món bò kho); BỔ SUNG hoa hồi 0,5g (3/3 nguồn), tỏi 4g, hành lá 5g và rau mùi 5g (3/3 nguồn có rau thơm cuối món, lấy mức thận trọng). Thảo quả: nguồn có nhắc nhưng không có căn cứ định lượng và slug chưa có số — ghi nhận, không bổ sung.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

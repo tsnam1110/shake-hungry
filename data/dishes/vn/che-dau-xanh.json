@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "chieu",
@@ -66,15 +66,34 @@
     }
   ],
   "recipe_steps": [
-    "Ngâm đậu xanh, đãi vỏ, nấu với nước và lá dứa cho đậu nở mềm.",
-    "Cho đường, khuấy tan; đánh hoặc để nguyên hạt tùy thích.",
-    "Chan nước cốt dừa khi ăn; ăn nóng hoặc lạnh."
+    "Vo đậu xanh, nhặt hạt lép/hỏng, ngâm nước 3–4 giờ (đậu nguyên vỏ ngâm qua đêm) cho hạt nở mềm; vớt ra rửa lại, để ráo.",
+    "Cho đậu vào nồi với nước ngập mặt và bó lá dứa, đun sôi lửa vừa rồi hạ nhỏ, hớt bọt; ninh 35–45 phút đến khi hạt đậu nở bung, mềm bở nhưng chưa nát nhừ.",
+    "Vớt bỏ lá dứa; cho đường vào khuấy nhẹ cho tan đều, nấu thêm 5–10 phút lửa nhỏ cho đậu thấm ngọt.",
+    "Tuỳ cách ăn: để nguyên hạt cho chè trong, hạt bùi rõ; hoặc dùng muỗng đánh nhẹ ngay trong nồi đến khi đậu sánh mịn một phần theo kiểu chè đánh.",
+    "Nấu riêng nước cốt dừa (với lá dứa nếu có) trên lửa nhỏ, khuấy đều đến khi vừa sôi lăn tăn thì tắt bếp ngay để cốt dừa không tách dầu.",
+    "Múc chè ra chén, chan nước cốt dừa lên trên; dùng nóng cho thơm bùi hoặc để nguội, thêm đá/làm lạnh đều ngon."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-che-dau-xanh-pho-tai-thom-ngon-thanh-mat-02225",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH (biến thể phổ tai, 5 người) — chỉ đối chiếu phần lõi đậu–đường–cốt dừa (đậu 250g/5 người); phổ tai là nguyên liệu định danh của biến thể, file bản thường không có là đúng."
+    },
+    {
+      "url": "https://cachnaungon.com/cach-nau-che-dau-xanh-nuoc-cot-dua-thom-ngon-ngay-he-02089/",
+      "accessed": "2026-10-31",
+      "note": "Cách Nấu Ngon (4 người) — đối chiếu đậu 200g, tổng đường 98g và cốt dừa 200ml."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/14859746",
+      "accessed": "2026-10-31",
+      "note": "Cookpad VN (Bí Đỏ Cà Rốt) — biến thể chè đánh; đối chiếu tỉ lệ đường/đậu 0,5."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt)",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-006 đợt 6: nâng Mức 2 — định lượng giữ nguyên toàn bộ (đậu 45g lệch −10% so với 50g/người của 2 nguồn, dưới ngưỡng sửa; đường 22g khớp hai nguồn độc lập 22,5–24,5g). Chất tạo sánh (bột sắn dây/bột năng) khác nhau giữa các biến thể sánh/đánh — không bổ sung dòng bắt buộc.]",
   "status": "draft",
   "source": "llm_suggested",
   "confidence": "unknown",

@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "xao",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -110,11 +110,30 @@
     }
   ],
   "recipe_steps": [
-    "Luộc nui ống cho chín tới, xả nước lạnh, để ráo.",
-    "Xào thịt bò với hành tây, tỏi; thêm tương cà, nêm nước tương, đường.",
-    "Cho nui vào đảo đều cho thấm sốt, rắc tiêu, dọn nóng."
+    "Luộc nui trong nước sôi có chút muối khoảng 8–10 phút đến khi nui chín tới còn hơi dai, vớt ra xả nước lạnh, để ráo và trộn với một ít dầu ăn cho sợi nui không dính vào nhau.",
+    "Thịt bò thái lát mỏng, ướp với nước tương, đường trắng, tiêu xay và một nửa phần tỏi băm trong 15 phút cho thấm — thịt đổi màu đều, thơm mùi tỏi tiêu là đạt.",
+    "Phi thơm phần tỏi còn lại với dầu ăn trên lửa vừa khoảng 30 giây, cho hành tây cắt múi cau vào xào 1–2 phút đến khi hành trong và dậy mùi thơm.",
+    "Cho thịt bò vào chảo, xào lửa lớn nhanh tay 2–3 phút đến khi thịt vừa chín tới, săn mặt nhưng còn mềm, rồi trút ra để riêng tránh xào lâu làm bò dai.",
+    "Cho nui đã luộc vào chảo cùng tương cà, đảo đều trên lửa vừa 2–3 phút cho nui thấm sốt và bóng mặt, nêm lại nước tương và đường cho vừa miệng.",
+    "Trả thịt bò và hành tây vào chảo, đảo nhanh khoảng 1 phút cho quyện sốt, rắc tiêu xay rồi tắt bếp — nui dai mềm, bò chín tới không ra nước là đạt, dọn nóng ngay."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.bachhoaxanh.com/kinh-nghiem-hay/cach-lam-nui-xao-thit-bo-ngon-mieng-cho-bua-sang-1003829",
+      "accessed": "2026-10-31",
+      "note": "Đã mở và đối chiếu: trang gồm 4 biến thể nui xào bò — biến thể với rau củ trộn nui với tương cà sau khi luộc, biến thể bằm sốt cà chua dùng cà chua tươi cắt múi cau, cho thấy hai cách tạo vị cà cùng tồn tại; định lượng giữa các biến thể dao động rộng (1 gói nui cho 2 người ở bản cơ bản, 100g nui cho 3–4 người ở bản bằm) nên không dùng để ép sửa định lượng của file."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/13317355",
+      "accessed": "2026-10-31",
+      "note": "Đã mở và đối chiếu (tác giả Ngọc Thường): 250g nui + 300g thăn bò cho 2 phần, dùng cả cà chua tươi 250g lẫn xốt cà chua đóng hộp — ủng hộ tương cà làm nền vị cà như file; quy trình luộc nui chín tới, xào bò riêng vừa chín rồi trộn chung khớp bước nấu. Đã kiểm tra độc lập nguồn: văn bản, tỉ lệ và cách làm của nguồn này khác hẳn Bách Hoá Xanh và Nấu Ăn Không Khó, không thấy dấu hiệu sao chép giữa ba nguồn đã mở."
+    },
+    {
+      "url": "https://nauankhongkho.vn/blog/cach-lam-nui-xao-bo-de-lam-bua-an-sang-rat-ngon-6KXwZe35OAJ8",
+      "accessed": "2026-10-31",
+      "note": "Đã mở và đối chiếu: nui ống 200g + thịt bò phi lê 200g, có hành tây, tỏi, xốt cà chua hộp và nước tương — khớp bộ nguyên liệu cốt lõi của file (nui, bò, hành tây, tỏi, tương cà, nước tương); biến thể này có thêm trứng gà và cải ngọt, file không theo."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/nui-xao-bo.webp",
@@ -125,7 +144,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-005 đợt 5: thử nâng Mức 2 — GIỮ Mức 1: lần mở nguồn đầu tiên bị chặn 429 — dừng ngay theo kỷ luật, chưa mở được nguồn nào. Thử lại khi hết chặn.]",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-005 đợt 5: thử nâng Mức 2 — GIỮ Mức 1: lần mở nguồn đầu tiên bị chặn 429 — dừng ngay theo kỷ luật, chưa mở được nguồn nào. Thử lại khi hết chặn.] [LV2-006 đợt 6: nâng Mức 2 — thử lại sau 429 đợt 5; định lượng giữ nguyên toàn bộ. Lưu ý độc lập nguồn: nếu phát hiện nguồn sao chép công thức của nhau, ghi rõ trong note của nguồn. Bất thường ghi nhận: tương cà (file) so với cà chua tươi ở một số nguồn — khác biệt biến thể, giữ nguyên chờ phân xử. (Đính chính khi rà soát LV2-006: bản phân xử ban đầu viết ngược 'cà chua tươi (file)' — file thực tế dùng tuong-ca 25g, đã sửa tại đây.)]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

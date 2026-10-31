@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "xao",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -30,7 +30,7 @@
     }
   ],
   "serving_desc": "1 đĩa",
-  "serving_grams": 190,
+  "serving_grams": 270,
   "ingredients": [
     {
       "ingredient_slug": "mi-an-lien",
@@ -87,18 +87,53 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nam-bao-ngu",
+      "quantity": 40,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dau-phu-chien",
+      "quantity": 40,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Mì ăn liền trụng nước sôi 2 phút cho mềm, để ráo (không dùng gói gia vị của nhà sản xuất); rau củ thái sợi.",
-    "Phi thơm đầu hành, xào cà rốt và bắp cải 2 phút lửa lớn.",
-    "Cho mì và giá đỗ vào, nêm nước tương, xào thêm 2 phút cho sợi mì thấm, rắc hành lá."
+    "Trụng mì ăn liền trong nước sôi khoảng 2 phút cho sợi vừa mềm, vớt ra để ráo và trộn với chút dầu để sợi tơi, không dính (không dùng gói gia vị của nhà sản xuất).",
+    "Nấm bào ngư rửa sạch, xé miếng vừa ăn; đậu phụ chiên cắt miếng vừa ăn; cà rốt gọt vỏ thái sợi, bắp cải thái sợi, giá đỗ rửa sạch để ráo.",
+    "Đun nóng dầu trong chảo, phi thơm đầu hành lá, cho nấm bào ngư vào xào lửa lớn khoảng 2–3 phút đến khi nấm săn lại và hơi xém cạnh.",
+    "Cho cà rốt và bắp cải vào xào thêm khoảng 2 phút trên lửa lớn cho chín tái mà vẫn giòn, cho đậu phụ chiên vào đảo đều cho nóng và thấm dầu.",
+    "Cho mì và giá đỗ vào chảo, rưới nước tương, đảo đều khoảng 2 phút trên lửa lớn đến khi sợi mì thấm gia vị và săn lại.",
+    "Rắc hành lá cắt nhỏ, nêm lại cho vừa ăn rồi tắt bếp; bày ra đĩa ăn nóng, sợi mì phải tơi và rau củ còn độ giòn."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/3-cach-lam-mi-xao-thap-cam-chay-ngon-mieng-hap-dan-cho-bua-08589?srsltid=AfmBOorFOfXqkufEf7MeDwbTNP9xmu_1bVnktfm1sUEji9b59QD7bd9C",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH: đã đối chiếu 3 công thức mì xào chay đều có đậu hũ chiên và nấm xào cùng rau củ, nước tương — ủng hộ bổ sung đậu phụ chiên; trang ghi nấm bào ngư là lựa chọn thay thế cho nấm đùi gà. Công thức gốc của trang dùng mì trứng — không áp dụng vào file vì món chay, file giữ mì ăn liền."
+    },
+    {
+      "url": "https://www.huongnghiepaau.com/mi-xao-chay",
+      "accessed": "2026-10-31",
+      "note": "Hướng Nghiệp Á Âu: đã đối chiếu mì xào giòn chay có nấm bào ngư 300g và đậu hũ cắt miếng chiên vàng cho 10 người — ủng hộ bổ sung cả nấm bào ngư và đậu phụ chiên."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/8739011",
+      "accessed": "2026-10-31",
+      "note": "Cookpad VN (tác giả Thi Đỗ): đã đối chiếu mì xào chay dùng mì gói với nấm và đậu hũ chiên vàng, nêm nước tương — ủng hộ đậu phụ chiên và cách giữ sợi mì chay, không dùng mì trứng."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món chay thuần: toàn bộ nguyên liệu có origin thực vật/nấm, gia vị chỉ dùng nước tương/muối/chao đậu — không nước mắm, không hạt nêm/bột canh (nhóm COMPOSITE_ANIMAL tính là mặn), không trứng/sữa; nhãn diet suy từ thành phần phải ra chay và đã kiểm chứng trực tiếp trong DB sau seed (cổng G3/G6 của đợt). Sợi mì: bản soạn đầu dùng mi-can — rà soát độc lập G6 phát hiện mi-can trong kho là MÌ CĂN (seitan, khối gluten ướt đã hấp), không phải sợi mì, nên đã đổi sang mi-an-lien (mì ăn liền): theo file nguyên liệu, mi-an-lien có origin thực vật và không mang allergen trứng nên nhãn diet vẫn suy ra chay (đã kiểm chứng trong DB); không dùng gói gia vị đi kèm. mi-trung-kho bị loại vì chỉ đạt chay-trứng-sữa (COMPOSITE_ANIMAL), không đạt chay thuần của quota này. loai theo tiền lệ TAXONOMY (bun-pho-mi), tính vào quota món chính chay.",
+  "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món chay thuần: toàn bộ nguyên liệu có origin thực vật/nấm, gia vị chỉ dùng nước tương/muối/chao đậu — không nước mắm, không hạt nêm/bột canh (nhóm COMPOSITE_ANIMAL tính là mặn), không trứng/sữa; nhãn diet suy từ thành phần phải ra chay và đã kiểm chứng trực tiếp trong DB sau seed (cổng G3/G6 của đợt). Sợi mì: bản soạn đầu dùng mi-can — rà soát độc lập G6 phát hiện mi-can trong kho là MÌ CĂN (seitan, khối gluten ướt đã hấp), không phải sợi mì, nên đã đổi sang mi-an-lien (mì ăn liền): theo file nguyên liệu, mi-an-lien có origin thực vật và không mang allergen trứng nên nhãn diet vẫn suy ra chay (đã kiểm chứng trong DB); không dùng gói gia vị đi kèm. mi-trung-kho bị loại vì chỉ đạt chay-trứng-sữa (COMPOSITE_ANIMAL), không đạt chay thuần của quota này. loai theo tiền lệ TAXONOMY (bun-pho-mi), tính vào quota món chính chay. [LV2-006 đợt 6: nâng Mức 2 — bổ sung nấm bào ngư 40g và đậu phụ chiên 40g (đều 2/3 nguồn); serving_grams 190 → 270 để giữ tỉ lệ khẩu phần/tổng nguyên liệu như trước khi bổ sung. Nguồn có tuỳ chọn mì trứng — không đưa vào file vì món chay.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

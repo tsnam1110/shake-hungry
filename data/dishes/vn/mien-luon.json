@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "xao",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -111,14 +111,66 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "ca-rot",
+      "quantity": 25,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nam-huong-kho",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "moc-nhi-kho",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "trung-ga",
+      "quantity": 12,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Lươn làm sạch, luộc sơ gỡ thịt; một phần chiên giòn, một phần để mềm.",
-    "Ngâm miến mềm, xào miến với thịt lươn, giá, nêm nước mắm, tiêu.",
-    "Bày ra đĩa, thêm lươn chiên giòn, rắc hành phi, rau răm, đậu phộng."
+    "Lươn làm sạch nhớt bằng muối, lọc bỏ xương, thái sợi hoặc khúc vừa ăn; ướp muối và tiêu khoảng 10 phút cho thấm và bớt tanh.",
+    "Một phần lươn chiên trên lửa vừa đến khi vàng giòn, vớt ra để ráo dầu; phần còn lại xào nhanh lửa lớn 2 phút rồi hạ lửa vừa xào thêm 3–5 phút đến khi chín mềm.",
+    "Ngâm miến dong trong nước khoảng 15 phút cho mềm, vớt ra để ráo; ngâm nấm hương và mộc nhĩ nước ấm 15–20 phút cho nở, cắt bỏ chân, thái sợi; cà rốt gọt vỏ thái sợi.",
+    "Đánh tan trứng gà (nếu dùng), trộn đều vào miến đã ráo cùng chút nước mắm để sợi miến tơi, không vón khi xào.",
+    "Xào nấm hương, mộc nhĩ và cà rốt trên lửa lớn khoảng 2 phút cho chín tái, cho giá đỗ vào đảo thêm 1 phút rồi trút ra đĩa riêng.",
+    "Cho miến vào chảo xào trên lửa lớn đến khi sợi săn lại, cho lươn mềm, rau củ đã xào vào đảo đều, nêm nước mắm và tiêu cho vừa ăn.",
+    "Bày miến ra đĩa, xếp lươn giòn lên trên, rắc hành phi, rau răm, hành lá và lạc rang (nếu dùng) ngay trước khi ăn."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/3-cach-lam-mien-luon-ngon-dam-vi-va-don-gian-ngon-mieng-01705",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH (biên tập Nguyễn Thị Anh Thảo): đã đối chiếu miến lươn xào 4 người có cà rốt 2 củ, nấm hương 10g, nấm mèo và trứng 1 quả trộn vào miến — ủng hộ cả bốn bổ sung của đợt này."
+    },
+    {
+      "url": "https://bepmina.vn/mon-viet/cach-lam-mien-xao-luon/",
+      "accessed": "2026-10-31",
+      "note": "Bếp Mina (tác giả Bếp MiNa): đã đối chiếu miến xào lươn Nghệ An có cà rốt 1 củ, nấm hương 20g, mộc nhĩ 3 tai và trứng gà 1 quả trộn miến — ủng hộ cả bốn bổ sung."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/17286266-mi%E1%BA%BFn-xao-l%C6%B0%C6%A1n-gion",
+      "accessed": "2026-10-31",
+      "note": "Cookpad VN (tác giả Nhà Vân): đã đối chiếu miến xào lươn giòn có cà rốt, mộc nhĩ 1 tai và nấm hương 4–5 cái xào cùng miến — ủng hộ cà rốt, nấm hương và mộc nhĩ; nguồn này không dùng trứng."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/mien-luon.webp",
@@ -129,7 +181,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. [LV2-006 đợt 6: nâng Mức 2 — bổ sung cà rốt 25g, nấm hương khô 3g, mộc nhĩ khô 3g (đều 3/3 nguồn) và trứng gà 12g tuỳ chọn (2/3 nguồn). Lạc rang giữ dạng tuỳ chọn dù 0/3 nguồn nhắc — thành phần ăn kèm phổ biến, ghi nhận tại đây.]",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

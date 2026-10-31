@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "hap",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "an-vat",
@@ -46,7 +46,7 @@
     },
     {
       "ingredient_slug": "dau-xanh-hat",
-      "quantity": 25,
+      "quantity": 35,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -54,7 +54,7 @@
     },
     {
       "ingredient_slug": "thit-lon-ba-chi",
-      "quantity": 20,
+      "quantity": 35,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -62,7 +62,15 @@
     },
     {
       "ingredient_slug": "tom-su",
-      "quantity": 15,
+      "quantity": 35,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "moc-nhi-kho",
+      "quantity": 10,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -102,15 +110,28 @@
     }
   ],
   "recipe_steps": [
-    "Nhân: đậu xanh nấu chín tán nhuyễn trộn thịt ba chỉ hạt lựu và tôm đã rim với hành, tiêu.",
-    "Nhào bột nếp với nước ấm thành khối dẻo, chia viên, bọc nhân, vo tròn.",
-    "Hấp bánh trên lá chuối phết dầu đến khi chín trong; rắc mỡ hành và chao tôm, chấm nước mắm pha chua cay."
+    "Sơ chế: đậu xanh ngâm nước 4–6 giờ cho nở mềm; mộc nhĩ khô ngâm nước khoảng 30 phút cho nở, rửa sạch, băm nhuyễn; tôm sú bóc vỏ, bỏ chỉ đen, băm nhỏ; thịt ba chỉ băm nhỏ.",
+    "Nấu đậu: cho đậu xanh vào nồi với nước xâm xấp mặt đậu, nấu khoảng 15 phút lửa vừa đến khi đậu mềm, vớt ra tán nhuyễn khi còn nóng.",
+    "Xào nhân: cho dầu ăn vào chảo, dầu nóng thì cho thịt, tôm và mộc nhĩ vào xào lửa lớn 5–7 phút, nêm nước mắm, đảo đến khi tôm thịt chín; cho đậu xanh tán nhuyễn vào trộn đều đến khi nhân khô ráo, tắt bếp, để nguội rồi vo thành viên tròn.",
+    "Nhồi bột: cho bột nếp vào tô, rót từ từ nước ấm và nhồi 10–15 phút đến khi khối bột dẻo mịn, không dính tay; bọc kín để bột nghỉ.",
+    "Nặn bánh: chia bột thành từng viên, vo tròn, ấn dẹt, đặt viên nhân vào giữa, gói miết thật kín không để lộ nhân rồi vo tròn lại; làm lần lượt cho đến hết bột và nhân.",
+    "Hấp bánh: thoa dầu mỏng vào xửng hoặc lót lá chuối, xếp bánh không chồng lên nhau, hấp 20–30 phút lửa vừa đến khi vỏ bánh chuyển màu trắng trong là chín; làm mỡ hành từ hành lá và dầu ăn, bày bánh ra đĩa, rưới mỡ hành, rắc tôm khô đã rang giã lên mặt và chấm nước mắm pha, dùng nóng."
   ],
   "recipe_sources": [
     {
-      "url": "https://fr.wikipedia.org/wiki/B%C3%A1nh_%C3%ADt_tr%E1%BA%A7n",
+      "url": "https://nhathuoclongchau.com.vn/bai-viet/cach-lam-banh-it-tran-mem-deo-thom-ngon-tai-nha-73058.html",
       "accessed": "2026-10-31",
-      "note": "Bánh ít trần — món đặc trưng Huế: viên bột nếp nhân đậu xanh, thịt lợn, tôm, hấp, ăn với mỡ hành và nước mắm."
+      "note": "Nhà thuốc Long Châu (Phúc Khang) — bánh ít trần nhân tôm thịt cho 4 người: bột nếp 400g, đậu xanh 200g, thịt băm 200g, tôm 200g, nấm mèo 100g — đậu, thịt và tôm đều bằng 0,5 lần bột nếp; đối chiếu tỉ lệ đã sửa và mộc nhĩ trong nhân."
+    },
+    {
+      "url": "https://vaobepwiki.com/cach-lam-banh-it-nhan-tom-thit-thom-ngon/",
+      "accessed": "2026-10-31",
+      "note": "Vào Bếp Wiki — bánh ít trần nhân tôm thịt (đặc trưng Huế) cho 4 phần ăn: bộ số trùng nguồn trên (bột nếp 400g, đậu 200g, thịt 200g, tôm 200g, nấm 100g), hấp 20–30 phút đến khi vỏ chuyển trắng trong; đối chiếu độc lập tỉ lệ nhân và thời gian hấp."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/17018842",
+      "accessed": "2026-10-31",
+      "note": "Cookpad VN (Quế Phi) — bánh ít trần: nhân xào chung thịt băm, tôm, mộc nhĩ 100g và đậu xanh, hấp khoảng 10 phút với bánh nhỏ; đối chiếu mộc nhĩ là thành phần nhân quen thuộc (bộ ba nguồn đã mở đợt này đều có mộc nhĩ trong nhân)."
     }
   ],
   "media": [
@@ -123,7 +144,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt)",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-006 đợt 6: nâng Mức 2 — đậu xanh 25 → 35g, thịt 20 → 35g, tôm sú 15 → 35g (cả ba cùng tỉ lệ 0,5 so với bột nếp ở các nguồn); bổ sung mộc nhĩ khô 10g (2/3 nguồn — nấm mèo chính là slug moc-nhi-kho). Thịt giữ slug của file dù nguồn nghiêng thịt nạc — ghi nhận.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

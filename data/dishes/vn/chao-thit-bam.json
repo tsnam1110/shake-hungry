@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -43,6 +43,22 @@
     {
       "ingredient_slug": "thit-lon-xay",
       "quantity": 40,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-tim",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dau-an",
+      "quantity": 3,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -82,15 +98,34 @@
     }
   ],
   "recipe_steps": [
-    "Gạo vo sạch, nấu với khoảng 320 ml nước cho một khẩu phần, lửa nhỏ 20 phút cho nở mềm thành cháo. Tổng thời gian ~25 phút, có thể nấu bằng nồi cơm điện.",
-    "Cho thịt băm vào khuấy đều cho thịt tơi, nấu thêm 5 phút, nêm muối vừa ăn.",
-    "Múc ra tô, rắc hành lá, gừng thái chỉ và tiêu, ăn nóng."
+    "Vo sạch gạo tẻ 2 lần, cho vào nồi với khoảng 320 ml nước cho một khẩu phần, đun sôi rồi hạ lửa nhỏ nấu 20 phút, khuấy đều tay đến khi hạt gạo nở mềm thành cháo.",
+    "Ướp thịt lợn xay với một nửa phần muối và tiêu trong 10 phút cho thấm; hành tím bóc vỏ băm nhỏ, hành lá rửa sạch cắt nhỏ, gừng thái chỉ.",
+    "Bắc chảo lên bếp, cho dầu ăn vào đun nóng trên lửa vừa, phi hành tím băm 1–2 phút đến khi vàng thơm; cho thịt đã ướp vào xào nhanh tay 3–4 phút đến khi thịt săn, tơi ra và chuyển màu trắng chín.",
+    "Cho thịt băm đã xào vào nồi cháo, khuấy đều và nấu thêm 5 phút trên lửa nhỏ cho thịt hoà quyện và cháo sôi lăn tăn trở lại.",
+    "Nêm phần muối còn lại cho vừa ăn, nấu thêm 1–2 phút; nếu cháo đặc quá thì châm thêm ít nước sôi, khuấy đều đến độ sánh mong muốn.",
+    "Múc cháo ra tô khi còn nóng, rắc hành lá, gừng thái chỉ và phần tiêu còn lại; cháo đạt khi hạt gạo nở nhừ, thịt tơi không vón cục."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/1695244",
+      "accessed": "2026-10-31",
+      "note": "Cookpad VN, tác giả Victoria Nguyen: đã đối chiếu thịt băm ướp hành tím băm, cho dầu ăn vào chảo phi hành tím đến khi dậy mùi rồi đổ thịt vào xào chín, sau đó mới cho thịt đã xào vào nồi cháo nhừ; khớp cả hai dòng bổ sung và cách xào."
+    },
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/2-cach-nau-chao-thit-bam-rau-cu-thom-ngon-bo-duong-don-gian-13667?srsltid=AfmBOopmB_Re4As7OcINHIy-uzLNpa5_1YMmrxYbOsh6NoTCGt9cBCwN",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH: đã đối chiếu công thức cháo thịt bằm thứ hai dùng hành tím 1 củ và dầu ăn 1 muỗng canh cho 4 người, phi phần hành tím còn lại rồi cho thịt băm vào đảo đến khi thịt chuyển trắng — quy về một khẩu phần khớp hành tím 5g và dầu ăn 3g."
+    },
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-nau-chao-thit-bam-cho-nguoi-om-mau-khoe-00879?srsltid=AfmBOooUUmVgHwRRUvr50AtwyZqUWJTZXqXTRncuAUR-277G4uJUEtEY",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH (biên tập Thạch Thị Mỷ Quyên): đã đối chiếu các biến thể cháo thịt băm phổ biến — thịt băm được xào chín trước khi cho vào cháo, khi dùng rắc hành lá, gừng và tiêu, ăn nóng."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. MÓN THAY cho chao-trang-trung-muoi của kế hoạch §3.6: món chao-trang đã có trong kho có serving_desc 'kèm nửa quả trứng vịt muối' — tức chính là cháo trắng trứng muối, tạo thêm sẽ trùng theo phép thử EDITORIAL-GUIDE §3. Cháo thịt băm là bữa sáng tự nấu phổ biến còn thiếu, nguyên liệu sẵn có.",
+  "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. MÓN THAY cho chao-trang-trung-muoi của kế hoạch §3.6: món chao-trang đã có trong kho có serving_desc 'kèm nửa quả trứng vịt muối' — tức chính là cháo trắng trứng muối, tạo thêm sẽ trùng theo phép thử EDITORIAL-GUIDE §3. Cháo thịt băm là bữa sáng tự nấu phổ biến còn thiếu, nguyên liệu sẵn có. [LV2-006 đợt 6: nâng Mức 2 — bổ sung hành tím 5g (3/3 nguồn) và dầu ăn 3g cho bước xào thịt; bước nấu thống nhất theo cách xào thịt băm trước khi cho vào cháo. Định lượng còn lại giữ nguyên.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

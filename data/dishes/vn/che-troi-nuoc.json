@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "an-vat",
@@ -50,7 +50,7 @@
     },
     {
       "ingredient_slug": "duong-thot-not",
-      "quantity": 15,
+      "quantity": 35,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -58,7 +58,7 @@
     },
     {
       "ingredient_slug": "nuoc-cot-dua",
-      "quantity": 25,
+      "quantity": 35,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -79,14 +79,42 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "lac-rang",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Nặn viên nhân đậu xanh.",
-    "Nấu nước đường thốt nốt gừng.",
-    "Chan nước cốt dừa, rắc vừng."
+    "Đậu xanh cà vỏ vo sạch, ngâm nước ấm 1–2 giờ cho nở; hấp chín 20–25 phút đến khi hạt mềm bở, tán nhuyễn khi còn nóng.",
+    "Sên nhân: cho đậu nhuyễn vào chảo với ít nước cốt dừa và chút đường, sên lửa vừa, khuấy liên tục 8–10 phút đến khi nhân dẻo thành khối, không dính chảo; để nguội, vo thành viên tròn 2–3cm.",
+    "Nhồi vỏ: rưới từ từ nước ấm vào bột nếp, nhồi đến khi khối bột mịn, dẻo, không dính tay; bọc kín ủ 20–30 phút cho bột nở đều, không bị khô mặt.",
+    "Nặn viên: lấy lượng bột gấp ~3 lần viên nhân, vo tròn ấn dẹt, đặt nhân vào giữa, gói miết thật kín không để lọt khí; phần bột dư vo thành viên nhỏ không nhân (viên ỉ).",
+    "Luộc viên: thả viên vào nồi nước đang sôi, luộc lửa vừa 5–7 phút đến khi viên nổi lên và vỏ hơi trong là chín; vớt ra thau nước lạnh 3–5 phút để viên không dính và dai vừa.",
+    "Nấu nước đường gừng: đun đường thốt nốt với nước và gừng thái sợi đến khi đường tan hết, nước thơm nồng mùi gừng; thả viên đã ráo vào, đun nhỏ lửa thêm 5–10 phút cho viên thấm ngọt.",
+    "Nấu nhanh nước cốt dừa với chút muối đến khi vừa sôi lăn tăn thì tắt bếp; múc chè ra chén, chan nước cốt dừa, rắc vừng rang và lạc rang nếu có, dùng nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-nau-che-troi-nuoc-troi-nuoc-bang-bot-nep-nhan-dau-xanh-14045",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH (4 người) — đối chiếu theo tỉ lệ bột nếp neo: đậu, tổng đường và cốt dừa; có đậu phộng rang ăn kèm."
+    },
+    {
+      "url": "https://vnexpress.net/cong-thuc-nau-che-troi-nuoc-ngon-deo-khong-bi-cung-4298453.html",
+      "accessed": "2026-10-31",
+      "note": "VnExpress (Trần Hảo, 4 người) — đối chiếu đường thốt nốt và cốt dừa theo tỉ lệ bột; biến thể trộn khoai lang vào vỏ bột chống cứng."
+    },
+    {
+      "url": "https://www.cet.edu.vn/hoc-cach-nau-che-troi-nuoc",
+      "accessed": "2026-10-31",
+      "note": "CET (Chef Lập) — công thức ghi rõ chuẩn miền Nam; đối chiếu đường thốt nốt; biến thể nhân xào hành tím phi."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": {
@@ -94,7 +122,7 @@
     "source": "wikidata",
     "queried_at": "2026-08-31"
   },
-  "import_note": "Nhập tự động từ Wikidata Q2468860 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Gợi ý nguyên liệu từ Wikidata (tiếng Anh, CHƯA ánh xạ sang data/ingredients/): bánh trôi, bánh chay. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/M%C3%B3n%20ch%C3%A8%20%E1%BB%9F%20B%C3%ACnh%20Long%20n%C4%83m%202020.jpg Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Nhập tự động từ Wikidata Q2468860 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Gợi ý nguyên liệu từ Wikidata (tiếng Anh, CHƯA ánh xạ sang data/ingredients/): bánh trôi, bánh chay. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/M%C3%B3n%20ch%C3%A8%20%E1%BB%9F%20B%C3%ACnh%20Long%20n%C4%83m%202020.jpg Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-006 đợt 6: nâng Mức 2 — quy đổi theo tỉ lệ bột nếp (nguyên liệu neo) vì khẩu phần 'người' của nguồn lớn hơn hẳn chén 240g/3 viên của file: đường thốt nốt 15 → 35g (VnExpress ~33g, CET ~37,5g quy đổi), nước cốt dừa 25 → 35g (33–41g quy đổi); bổ sung lạc rang 5g tuỳ chọn ăn kèm (2/3 nguồn; nguồn định lượng duy nhất quy đổi ~9g, lấy thận trọng 5g). Biến thể nhân xào hành tím (1/3 nguồn) và khoai lang trộn vỏ bột (1/3) — ghi nhận, không áp.]",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

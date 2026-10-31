@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "toi",
@@ -78,7 +78,7 @@
     },
     {
       "ingredient_slug": "ca-chua",
-      "quantity": 40,
+      "quantity": 80,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -94,7 +94,7 @@
     },
     {
       "ingredient_slug": "sa",
-      "quantity": 10,
+      "quantity": 20,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -126,7 +126,7 @@
     },
     {
       "ingredient_slug": "nuoc-mam-truyen-thong",
-      "quantity": 5,
+      "quantity": 10,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -134,7 +134,7 @@
     },
     {
       "ingredient_slug": "duong-trang",
-      "quantity": 4,
+      "quantity": 15,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -147,18 +147,45 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "me-chin",
+      "quantity": 15,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Nấu nước dùng với sả, riềng, lá chanh và cà chua; nêm nước mắm, đường, nước cốt chanh cho vị chua cay kiểu Thái.",
-    "Bày tôm, mực, nghêu, cá và nấm ra đĩa riêng.",
-    "Khi ăn nhúng hải sản, nấm và rau vào nồi lẩu sôi, ăn kèm bún tươi."
+    "Sơ chế hải sản và rau: tôm bóc vỏ chừa đuôi và rút chỉ lưng, mực làm sạch khía hoa cắt khoanh, nghêu ngâm nước muối pha ớt khoảng 30 phút cho nhả cát, cá basa cắt khúc vừa ăn; cà chua bổ múi cau, sả đập dập cắt khúc, riềng thái lát, lá chanh vò nhẹ cho dậy tinh dầu.",
+    "Dầm me chín với một ít nước ấm, bóp đều cho me tan rồi lọc qua rây lấy nước cốt, bỏ hạt và xơ; nấm rơm cắt gốc rửa sạch, rau muống nhặt khúc vừa ăn rửa sạch để ráo.",
+    "Đun khoảng 700ml nước cho sôi, cho sả, riềng, lá chanh và cà chua vào nấu lửa vừa 5–7 phút đến khi cà chua mềm, nước chuyển màu đỏ cam nhẹ và dậy mùi thơm đặc trưng.",
+    "Cho nước cốt me vào nồi, nêm nước mắm, đường và nước cốt chanh, đun sôi lại 2–3 phút rồi nếm thử: nước lẩu đạt khi vị chua cay mặn ngọt cân bằng, thơm mùi sả riềng và không còn vị gắt của me sống.",
+    "Bày tôm, mực, nghêu, cá basa và nấm rơm ra đĩa riêng; giữ nồi nước lẩu sôi lăn tăn trên bếp lẩu để chuẩn bị nhúng.",
+    "Khi ăn đun nước lẩu sôi mạnh, nhúng nghêu và cá trước 3–4 phút đến khi nghêu mở miệng và cá chín trắng, tiếp theo nhúng tôm và mực 2–3 phút đến khi tôm chuyển đỏ cong và mực săn lại; nhúng nấm rơm và rau muống vừa chín tới còn xanh giòn, ăn kèm bún tươi."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-nau-lau-thai-hai-san-khong-can-goi-gia-vi-ma-van-dam-da-23768?srsltid=AfmBOop_Jj_WdiDWsK5kbVveSVNLUWFGHoMf4z4eHBUbboprTnJQusDm",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH (cho 4–6 người): đã đối chiếu định lượng phần nước dùng — cà chua 400g, cốt me 80g, nước mắm 50g, đường phèn 100g và sả 6 cây cho nồi nước dùng; quy về một phần ăn ủng hộ cà chua 80g, me chín 15g, nước mắm 10g, đường 15g và tăng sả."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/10245921",
+      "accessed": "2026-10-31",
+      "note": "Cookpad VN, tác giả SaNy (2–3 người ăn): đã đối chiếu cấu trúc món — tôm, mực, cá basa, nghêu nhúng lẩu, cà chua bổ múi cau, sả cắt khúc đập dập và nêm đường, nước mắm; nguồn không định lượng chi tiết phần gia vị. Lưu ý độc lập nguồn: cùng nền tảng Cookpad với nguồn của Lê Thùy Linh nhưng khác tác giả, công thức độc lập."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/7838333",
+      "accessed": "2026-10-31",
+      "note": "Cookpad VN, tác giả Lê Thùy Linh: đã đối chiếu nền lẩu Thái Tom Yum — 6 quả cà chua, sả và lá chanh cho một nồi lẩu, phi thơm sả trước khi cho vào nước dùng; ủng hộ việc tăng cà chua và sả. Lưu ý độc lập nguồn: cùng nền tảng Cookpad với nguồn của SaNy nhưng khác tác giả, công thức độc lập."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-006 đợt 6: nâng Mức 2 — cà chua 40 → 80g, sả 10 → 20g, nước mắm 5 → 10g, đường 4 → 15g (nguồn dùng đường phèn 18–30g cho ~700ml nước dùng/người; lấy 15g đã chiết khấu và GIỮ loại đường của file vì loại đường đang là quy ước chờ chủ dự án); bổ sung me chín 15g tạo chua (slug me-chin có số; không dùng slug me chưa có số). Dứa chỉ 1 nguồn định lượng — ghi nhận, không bổ sung. Nếu hai nguồn đối chiếu cùng một nhà xuất bản, ghi rõ lưu ý độc lập nguồn trong note của nguồn.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

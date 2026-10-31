@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "hap",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -34,7 +34,7 @@
   "ingredients": [
     {
       "ingredient_slug": "bot-gao",
-      "quantity": 60,
+      "quantity": 45,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -42,7 +42,7 @@
     },
     {
       "ingredient_slug": "bot-nang",
-      "quantity": 10,
+      "quantity": 15,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -130,12 +130,30 @@
     }
   ],
   "recipe_steps": [
-    "Pha bột gạo + bột năng, để bột nghỉ 30 phút.",
-    "Xào nhân thịt xay với mộc nhĩ, hành tím, nêm nước mắm tiêu.",
-    "Tráng bánh mỏng trên vải hấp, cuốn nhân, cắt khúc.",
-    "Rắc hành phi, ăn kèm chả lụa và nước mắm pha chua ngọt."
+    "Ngâm mộc nhĩ khô trong nước ấm 20–30 phút cho nở mềm, rửa sạch rồi băm nhỏ; hành tím bóc vỏ, băm nhỏ, thịt xay trộn đều với mộc nhĩ và chút muối để sẵn.",
+    "Pha bột: hoà bột gạo, bột năng và muối với nước, khuấy đều cho tan hết lợn cợn rồi để bột nghỉ 30 phút cho bột nở; trước khi tráng khuấy lại và trộn dầu ăn vào bột.",
+    "Xào nhân: phi thơm hành tím với dầu ăn trên lửa vừa, cho thịt xay và mộc nhĩ vào xào 5–7 phút, nêm nước mắm, đảo đến khi thịt chín săn và nhân khô ráo, không ra nước thì tắt bếp.",
+    "Tráng bánh: đun nồi hơi sôi mạnh, căng vải trên miệng nồi, múc một vá bột dàn thật mỏng, đậy nắp hấp khoảng 1 phút đến khi mặt bánh trong và phồng nhẹ là chín; lấy bánh ra mâm đã phết dầu ăn.",
+    "Cuốn bánh: rải nhân thịt mộc nhĩ lên lá bánh, cuốn chặt tay thành cuốn dài, làm lần lượt cho đến hết bột; cắt khúc vừa ăn, xếp ra đĩa, rắc hành phi và xếp chả lụa cắt lát ăn kèm.",
+    "Pha nước chấm: khuấy nước mắm với đường, nước ấm và ớt băm đến khi đường tan hết, vị mặn ngọt hài hoà; chan lên bánh hoặc chấm riêng, dùng ngay khi bánh còn nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-banh-cuon-bang-bot-gao-mem-min-khong-bi-rach-khong-23764",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH — bánh cuốn bằng bột gạo cho 2–3 người: vỏ pha bột gạo với bột năng (phần năng cao), nhân thịt xay, nấm mèo, hành tím; đối chiếu tỉ lệ bột, cách tráng hấp và cuốn nhân."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/530116",
+      "accessed": "2026-10-31",
+      "note": "Cookpad VN (Nguyet Nguyen) — đối chiếu bột gạo 150g : bột năng 30g cho 3 phần ăn, nhân thịt xay, nấm mèo, hành tím; tỉ lệ gạo/năng 5:1."
+    },
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/tong-hop-20-cach-lam-banh-hap-tu-bot-gao-voi-xung-hap-don-17402?srsltid=AfmBOoqtfE2Frv7xqyjg7jWH0s_w00pod37drN-z-oPMWwD_eYC7bZaK",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH (biên tập Đoàn Trâm Anh) — mục bánh cuốn trong tổng hợp bánh hấp từ bột gạo: vỏ là hỗn hợp bột gạo và bột năng, tráng mỏng trên nồi hấp đến chín trong rồi cuốn nhân nấm thịt, ăn kèm chả lụa và nước mắm chua ngọt."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/banh-cuon.webp",
@@ -146,7 +164,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt).",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [LV2-006 đợt 6: nâng Mức 2 — bột gạo 60 → 45g, bột năng 10 → 15g: tổng bột của file vốn đúng nhưng tỉ lệ gạo/năng là ngoại lệ so với mọi nguồn đã mở; sửa tỉ lệ theo đồng thuận.]",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

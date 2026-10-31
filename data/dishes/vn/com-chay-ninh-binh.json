@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "chien",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "chieu",
@@ -61,14 +61,6 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "hanh-la",
-      "quantity": 8,
-      "unit_name": "g",
-      "is_optional": false,
-      "source": "llm_suggested",
-      "confidence": "low"
-    },
-    {
       "ingredient_slug": "hanh-phi",
       "quantity": 5,
       "unit_name": "g",
@@ -104,7 +96,7 @@
       "ingredient_slug": "sa",
       "quantity": 3,
       "unit_name": "g",
-      "is_optional": true,
+      "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
     },
@@ -115,14 +107,65 @@
       "is_optional": true,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "toi",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nuoc-tuong",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "ngo-gai",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "rau-ngo",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Nén cơm thành miếng mỏng, chiên vàng giòn hai mặt.",
-    "Xào thịt dê với gừng, hành, nêm nước mắm và tiêu.",
-    "Bẻ cơm cháy ra đĩa, chan thịt dê xào lên trên, rắc hành phi."
+    "Ép cơm trắng thành miếng mỏng khoảng 0,5cm, sấy hoặc phơi cho khô cứng bề mặt để khi chiên cơm phồng giòn mà không nát.",
+    "Chiên miếng cơm trong dầu nóng, lật đều hai mặt đến khi cơm nổi lên, vàng rơm và giòn rụm; vớt ra khay cho ráo dầu.",
+    "Thịt dê cắt bỏ da, thái mỏng rồi băm nhỏ; bóp với gừng đập dập khoảng 5 phút để khử mùi gây, rửa lại và để ráo.",
+    "Phi thơm tỏi băm và sả băm trong dầu đến khi vàng thơm, cho thịt dê vào xào lửa lớn khoảng 3–5 phút đến khi thịt săn lại.",
+    "Nêm nước mắm và nước tương, thêm chút nước, đun sôi 3–5 phút cho thịt chín mềm và sốt hơi sánh; nêm lại cùng hạt tiêu và ớt cho vừa ăn.",
+    "Bẻ cơm cháy thành miếng vừa ăn bày ra đĩa, chan sốt thịt dê nóng lên trên, rắc hành phi và bày ngò gai, rau ngổ ăn kèm; ăn ngay khi cơm còn giòn."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://anthinhfood.com.vn/cach-lam-com-chay-thit-de-ninh-binh-gion-rum-ngon-cuc-lai-rai-cuoi-tuan/",
+      "accessed": "2026-10-31",
+      "note": "Bản công thức Điện Máy XANH đăng lại: đã đối chiếu cơm cháy thịt dê 4 người có tỏi băm, sả băm, nước tương, nước mắm và ngò gai + rau ngổ (ngò ôm) bày kèm, không có hành lá — ủng hộ cả bốn bổ sung, sả bắt buộc và bỏ hành lá."
+    },
+    {
+      "url": "https://vaobepwiki.com/cach-lam-com-chay-thit-de-ninh-binh-gion-ngon/",
+      "accessed": "2026-10-31",
+      "note": "Vào Bếp Wiki (cùng họ công thức): đã đối chiếu thịt dê xào với tỏi, sả và nước tương trên lửa lớn, không có hành lá — ủng hộ bổ sung tỏi, nước tương và sả bắt buộc; bản này ghi rau mùi ăn kèm thay cho ngò gai/ngổ, đã ghi nhận khác biệt."
+    },
+    {
+      "url": "https://nhandan.vn/com-chay-mon-an-doc-dao-o-ninh-binh-post391621.html",
+      "accessed": "2026-10-31",
+      "note": "Báo Nhân Dân: đã đối chiếu bối cảnh món — cơm cháy Ninh Bình ăn nóng với nước sốt thịt dê núi, là món mặn đặc sản cố đô, không phải món chay — ủng hộ giữ tính mặn và không gắn nhãn chay."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/com-chay-ninh-binh.webp",
@@ -133,7 +176,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [Đính chính 2026-10-31 — Phương án A/QA-002: dau-an 10 g → 3 g. Chỉ giữ phần dầu cho bước phụ có thật trong công thức (xào thịt dê (thành phần riêng, chan lên cơm cháy)) — mức 3 g/khẩu phần là định lượng chế biến cho bước phi/xào nhanh, phần dầu này ăn vào cùng nhân/sốt. Dầu chiên chính không kê nữa: đã được engine mô hình hoá theo CALC-004.]",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [Đính chính 2026-10-31 — Phương án A/QA-002: dau-an 10 g → 3 g. Chỉ giữ phần dầu cho bước phụ có thật trong công thức (xào thịt dê (thành phần riêng, chan lên cơm cháy)) — mức 3 g/khẩu phần là định lượng chế biến cho bước phi/xào nhanh, phần dầu này ăn vào cùng nhân/sốt. Dầu chiên chính không kê nữa: đã được engine mô hình hoá theo CALC-004.] [LV2-006 đợt 6: nâng Mức 2 — xác nhận đây là món MẶN (sốt/nước chấm nguồn gốc dê Ninh Bình), không phải món chay dù tên dễ gây hiểu nhầm. Bổ sung tỏi 3g và nước tương 5g (cả hai họ nguồn); sả chuyển từ tuỳ chọn thành bắt buộc (mọi nguồn đều dùng); BỎ hành lá (0/2 họ nguồn); bổ sung ngò gai 3g và rau ngổ 3g (rau thơm ăn kèm theo nguồn; hai slug chưa có số, dòng rau nhỏ). Nhãn dac-san:ninh-binh chưa có trong taxonomy — không gán, ghi nhận tại đây.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
