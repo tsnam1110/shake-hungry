@@ -101,7 +101,14 @@
       "note": "Chè bưởi — đặc sản Tây Nam Bộ/An Giang, thành phần chính: cùi bưởi, đậu xanh, bột năng, nước cốt dừa, đường."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/che-buoi.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt)",

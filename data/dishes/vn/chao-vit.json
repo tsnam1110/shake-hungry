@@ -6,7 +6,7 @@
   "names": [
     {
       "locale": "vi",
-      "name": "cháo vịt",
+      "name": "Cháo vịt",
       "is_primary": true
     },
     {
@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -38,7 +38,7 @@
   "ingredients": [
     {
       "ingredient_slug": "gao-te",
-      "quantity": 60,
+      "quantity": 40,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -54,7 +54,7 @@
     },
     {
       "ingredient_slug": "bap-cai",
-      "quantity": 60,
+      "quantity": 100,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -69,8 +69,8 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "hanh-tay",
-      "quantity": 20,
+      "ingredient_slug": "hanh-tim",
+      "quantity": 15,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -139,18 +139,76 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "giam-bong",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "lac-rang",
+      "quantity": 10,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-phi",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nam-rom",
+      "quantity": 25,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Vịt làm sạch, chà gừng cho hết hôi, luộc chín, vớt ra chặt miếng hoặc xé; giữ nước luộc nấu cháo.",
-    "Nấu cháo gạo bằng nước luộc vịt cho nhừ, nêm vừa ăn.",
-    "Bắp cải, cà rốt, hành tây thái mỏng trộn gỏi với thịt vịt, rau răm, chan nước mắm gừng tỏi ớt chanh đường; ăn cháo kèm gỏi vịt và nước mắm gừng."
+    "Vịt chà gừng giã với rượu trắng (hoặc chanh) khử hôi, rửa sạch; luộc khoảng 30 phút tới khi đũa đâm xuyên thịt, không ra nước đỏ; vớt ra để nguội, chặt miếng vừa ăn, giữ nước luộc vịt.",
+    "Gạo tẻ rang vàng thơm, cho vào nước luộc vịt nấu lửa vừa–nhỏ, khuấy sát đáy tránh dính, tới khi cháo nhừ sánh.",
+    "Bắp cải thái sợi, hành tím bào mỏng; ngâm giấm bỗng pha đường ít nhất 30 phút cho giòn và dịu hăng.",
+    "Vớt rau đã ngâm, để ráo; trộn gỏi với thịt vịt chặt, cà rốt, rau răm, rắc lạc rang và hành phi.",
+    "Pha nước mắm gừng: giã gừng và ớt, pha nước mắm, đường, nước cốt chanh và ít nước lọc.",
+    "Múc cháo ra tô; dọn kèm đĩa gỏi vịt và chén mắm gừng."
   ],
-  "recipe_sources": [],
-  "media": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-nau-chao-vit-xiem-hoac-vit-co-ngon-khong-mui-hoi-01168",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH (4 người): cấu trúc cháo nước luộc vịt + gỏi bắp cải + mắm gừng; bắp cải ~110 g/khẩu phần, hành tím ngâm giấm đường."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/6589424",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Hoàng Ngọc (Đà Nẵng), 'Gỏi Vịt Bắp Cải & Cháo Vịt' (4 phần): gỏi có lạc rang + hành phi rắc mặt; ghi chú bản gốc Đà Nẵng là vịt luộc + chuối chát."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/6796787",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Hoàng Oanh, 'Cháo + Gỏi Vịt' (4 người): bắp cải ~110 g/khẩu phần, gạo rang, nấm rơm cho vào cháo."
+    }
+  ],
+  "media": [
+    {
+      "path": "media/dishes/chao-vit.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 300 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-007 đợt 7: nâng Mức 2 — 3 nguồn đã mở; cấu trúc bộ ba cháo + gỏi bắp cải + mắm gừng được cả 3 nguồn xác nhận. SỬA gạo tẻ 60→40g (3 nguồn đồng thuận 24–37g), bắp cải 60→100g (2 nguồn ~110g); BỎ hành tây 20g → BỔ SUNG hành tím 15g (3/3 nguồn dùng hành tím ngâm chua cho gỏi, không nguồn nào dùng hành tây); BỔ SUNG giấm bỗng 5g (2 nguồn — slug null, chưa tính vào calo), lạc rang 10g + hành phi 5g dạng tuỳ chọn (rắc mặt gỏi), nấm rơm 25g tuỳ chọn (1 nguồn). GIỮ thịt vịt 150g trong dải quy đổi nguồn (95–185g). Hồ sơ vùng: tác giả Đà Nẵng ghi bản gốc địa phương là vịt luộc + chuối chát chấm mắm gừng, gỏi bắp cải là biến thể phổ biến toàn quốc — giữ vn-central + dac-san:quang-nam, ghi nhận để chủ dự án biết.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

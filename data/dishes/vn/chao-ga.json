@@ -126,7 +126,14 @@
       "note": "Điện Máy XANH: đã đối chiếu tỉ lệ gạo nếp + gạo tẻ 200g cho 4 người ở biến thể lẩu cháo gà và mẹo trộn gạo nếp với gạo tẻ; định lượng gạo và thịt gà của file nằm trong khoảng các nguồn, giữ nguyên."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/chao-ga.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-006 đợt 6: nâng Mức 2 — định lượng giữ nguyên toàn bộ sau đối chiếu ≥2 nguồn. Biến thể trộn gạo nếp ở một số nguồn được ghi nhận là biến thể; file giữ bản gạo tẻ.]",
