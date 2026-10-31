@@ -2,7 +2,7 @@
   "slug": "cha-ruoi",
   "parent_dish_slug": null,
   "country_code": "VN",
-  "region_code": null,
+  "region_code": "vn-ha-noi",
   "names": [
     {
       "locale": "vi",
@@ -10,15 +10,122 @@
       "is_primary": true
     }
   ],
-  "is_eat_out": false,
-  "is_home_cook": false,
-  "cooking_method": null,
+  "is_eat_out": true,
+  "is_home_cook": true,
+  "cooking_method": "chien",
   "completeness_level": 1,
-  "meal_slots": [],
-  "serving_desc": null,
-  "serving_grams": null,
-  "ingredients": [],
-  "recipe_steps": null,
+  "meal_slots": [
+    {
+      "slot": "trua",
+      "weight": 8
+    },
+    {
+      "slot": "toi",
+      "weight": 8
+    },
+    {
+      "slot": "chieu",
+      "weight": 6
+    }
+  ],
+  "serving_desc": "1 đĩa",
+  "serving_grams": 190,
+  "ingredients": [
+    {
+      "ingredient_slug": "ruoi",
+      "quantity": 80,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "trung-ga",
+      "quantity": 50,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "thit-lon-xay",
+      "quantity": 40,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "la-lot",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-la",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "thi-la",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "gung",
+      "quantity": 2,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nuoc-mam-truyen-thong",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hat-tieu-den",
+      "quantity": 0.5,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "muoi",
+      "quantity": 1,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dau-an",
+      "quantity": 15,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    }
+  ],
+  "recipe_steps": [
+    "Rươi rửa sạch nhẹ tay, để thật ráo nước.",
+    "Đánh trứng với thịt lợn xay, cho rươi, lá lốt, hành lá, thì là thái nhỏ vào trộn đều; nêm nước mắm, muối, tiêu.",
+    "Đun nóng dầu trong chảo, múc từng thìa hỗn hợp vào chiên lửa vừa cho vàng đều hai mặt.",
+    "Ăn nóng với cơm hoặc bún, chấm nước mắm pha chua ngọt."
+  ],
   "recipe_sources": [],
   "media": [],
   "estimated_kcal": null,
@@ -27,7 +134,7 @@
     "source": "wikidata",
     "queried_at": "2026-08-31"
   },
-  "import_note": "Nhập tự động từ Wikidata Q7125094 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Gợi ý nguyên liệu từ Wikidata (tiếng Anh, CHƯA ánh xạ sang data/ingredients/): Tylorrhynchus heterochaetus. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/Cha%20ruoi.JPG Chưa soạn định lượng: nguyên liệu cốt lõi là con rươi — chưa có trong bộ 255 nguyên liệu. Cần task bổ sung nguyên liệu 'rươi' (theo quy trình ING) rồi mới soạn được.",
+  "import_note": "Nhập tự động từ Wikidata Q7125094 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Gợi ý nguyên liệu từ Wikidata (tiếng Anh, CHƯA ánh xạ sang data/ingredients/): Tylorrhynchus heterochaetus. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/Cha%20ruoi.JPG Chưa soạn định lượng: nguyên liệu cốt lõi là con rươi — chưa có trong bộ 255 nguyên liệu. Cần task bổ sung nguyên liệu 'rươi' (theo quy trình ING) rồi mới soạn được. Soạn thảo ngày 2026-10-31 sau khi nguyên liệu cốt lõi (rươi/don) có dữ liệu nguồn thứ cấp — chờ người duyệt.",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

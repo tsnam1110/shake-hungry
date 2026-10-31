@@ -1,0 +1,114 @@
+{
+  "slug": "bot-chien",
+  "parent_dish_slug": null,
+  "country_code": "VN",
+  "region_code": "vn-tp-hcm",
+  "names": [
+    {
+      "locale": "en",
+      "name": "bot chien (fried rice flour cake)",
+      "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "bột chiên",
+      "is_primary": true
+    }
+  ],
+  "is_eat_out": true,
+  "is_home_cook": true,
+  "cooking_method": "chien",
+  "completeness_level": 1,
+  "meal_slots": [
+    {
+      "slot": "chieu",
+      "weight": 8
+    },
+    {
+      "slot": "toi",
+      "weight": 6
+    },
+    {
+      "slot": "an-vat",
+      "weight": 8
+    }
+  ],
+  "serving_desc": "1 đĩa",
+  "serving_grams": 300,
+  "ingredients": [
+    {
+      "ingredient_slug": "bot-gao",
+      "quantity": 90,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "bot-nang",
+      "quantity": 15,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "trung-ga",
+      "quantity": 50,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-la",
+      "quantity": 8,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nuoc-tuong",
+      "quantity": 10,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "duong-trang",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dau-an",
+      "quantity": 12,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    }
+  ],
+  "recipe_steps": [
+    "Pha bột gạo và bột năng với nước, hấp chín thành bánh, để nguội rồi cắt miếng vừa ăn.",
+    "Chiên miếng bột trong chảo dầu đến khi vàng giòn hai mặt.",
+    "Đập trứng gà vào, rưới đều, chiên thêm cho trứng chín, rắc hành lá.",
+    "Pha nước tương với đường, dọn kèm đu đủ bào ngâm chua."
+  ],
+  "recipe_sources": [],
+  "media": [],
+  "estimated_kcal": null,
+  "external_ref": null,
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt) THIẾU NGUYÊN LIỆU: đu đủ xanh bào ngâm chua (phụ) — cần bổ sung vào kho",
+  "status": "draft",
+  "source": "llm_suggested",
+  "confidence": "unknown",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null
+}

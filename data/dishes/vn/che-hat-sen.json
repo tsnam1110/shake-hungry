@@ -1,0 +1,78 @@
+{
+  "slug": "che-hat-sen",
+  "parent_dish_slug": null,
+  "country_code": "VN",
+  "region_code": "vn",
+  "names": [
+    {
+      "locale": "en",
+      "name": "che hat sen (lotus seed sweet soup)",
+      "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "chè hạt sen",
+      "is_primary": true
+    }
+  ],
+  "is_eat_out": true,
+  "is_home_cook": true,
+  "cooking_method": "nau",
+  "completeness_level": 1,
+  "meal_slots": [
+    {
+      "slot": "chieu",
+      "weight": 8
+    },
+    {
+      "slot": "an-vat",
+      "weight": 8
+    }
+  ],
+  "serving_desc": "1 chén",
+  "serving_grams": 250,
+  "ingredients": [
+    {
+      "ingredient_slug": "hat-sen-tuoi",
+      "quantity": 50,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "duong-phen",
+      "quantity": 20,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "la-dua",
+      "quantity": 1,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
+    }
+  ],
+  "recipe_steps": [
+    "Bóc vỏ, bỏ tâm hạt sen tươi, rửa sạch.",
+    "Nấu hạt sen với nước cho chín bở nhưng không nát.",
+    "Cho đường phèn và lá dứa, nấu thêm cho thấm ngọt, để nguội.",
+    "Ăn lạnh, vị thanh mát."
+  ],
+  "recipe_sources": [],
+  "media": [],
+  "estimated_kcal": null,
+  "external_ref": null,
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt)",
+  "status": "draft",
+  "source": "llm_suggested",
+  "confidence": "unknown",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null
+}

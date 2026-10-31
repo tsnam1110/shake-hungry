@@ -1,0 +1,85 @@
+{
+  "slug": "che-nhan-boc-hat-sen",
+  "parent_dish_slug": null,
+  "country_code": "VN",
+  "region_code": "vn-hue",
+  "names": [
+    {
+      "locale": "en",
+      "name": "che nhan boc hat sen (longan lotus seed sweet soup)",
+      "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "chè nhãn bọc hạt sen",
+      "is_primary": true
+    }
+  ],
+  "is_eat_out": true,
+  "is_home_cook": true,
+  "cooking_method": "nau",
+  "completeness_level": 1,
+  "meal_slots": [
+    {
+      "slot": "chieu",
+      "weight": 8
+    },
+    {
+      "slot": "an-vat",
+      "weight": 8
+    }
+  ],
+  "serving_desc": "1 chén",
+  "serving_grams": 250,
+  "ingredients": [
+    {
+      "ingredient_slug": "nhan-kho",
+      "quantity": 15,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hat-sen-tuoi",
+      "quantity": 30,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "duong-phen",
+      "quantity": 20,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "la-dua",
+      "quantity": 1,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
+    }
+  ],
+  "recipe_steps": [
+    "Luộc hạt sen chín bở, để ráo.",
+    "Tách hạt nhãn khô (đang thiếu trong kho), nhồi hạt sen vào trong cùi nhãn.",
+    "Nấu nước đường phèn trong, thả nhãn bọc hạt sen vào nấu thấm nhẹ, để lạnh."
+  ],
+  "recipe_sources": [],
+  "media": [],
+  "estimated_kcal": null,
+  "external_ref": null,
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu).",
+  "status": "draft",
+  "source": "llm_suggested",
+  "confidence": "unknown",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null
+}

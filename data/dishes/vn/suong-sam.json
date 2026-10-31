@@ -1,0 +1,69 @@
+{
+  "slug": "suong-sam",
+  "parent_dish_slug": null,
+  "country_code": "VN",
+  "region_code": "vn-south",
+  "names": [
+    {
+      "locale": "en",
+      "name": "suong sam (green jelly leaf dessert)",
+      "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "sương sâm",
+      "is_primary": true
+    }
+  ],
+  "is_eat_out": true,
+  "is_home_cook": true,
+  "cooking_method": "song",
+  "completeness_level": 1,
+  "meal_slots": [
+    {
+      "slot": "chieu",
+      "weight": 8
+    },
+    {
+      "slot": "an-vat",
+      "weight": 8
+    }
+  ],
+  "serving_desc": "1 ly",
+  "serving_grams": 250,
+  "ingredients": [
+    {
+      "ingredient_slug": "duong-trang",
+      "quantity": 18,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "la-dua",
+      "quantity": 1,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
+    }
+  ],
+  "recipe_steps": [
+    "Vò lá sương sâm (đang thiếu trong kho) với nước, lọc và để đông thành thạch xanh.",
+    "Cắt thạch thành miếng.",
+    "Ăn với nước đường lá dứa và đá bào."
+  ],
+  "recipe_sources": [],
+  "media": [],
+  "estimated_kcal": null,
+  "external_ref": null,
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt) THIẾU NGUYÊN LIỆU: lá sương sâm (chính) — cần bổ sung vào kho",
+  "status": "draft",
+  "source": "llm_suggested",
+  "confidence": "unknown",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null
+}

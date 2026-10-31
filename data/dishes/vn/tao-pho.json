@@ -1,0 +1,78 @@
+{
+  "slug": "tao-pho",
+  "parent_dish_slug": null,
+  "country_code": "VN",
+  "region_code": "vn-ha-noi",
+  "names": [
+    {
+      "locale": "en",
+      "name": "tao pho (silken tofu pudding)",
+      "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "tào phớ",
+      "is_primary": true
+    }
+  ],
+  "is_eat_out": true,
+  "is_home_cook": true,
+  "cooking_method": "nau",
+  "completeness_level": 1,
+  "meal_slots": [
+    {
+      "slot": "chieu",
+      "weight": 8
+    },
+    {
+      "slot": "an-vat",
+      "weight": 8
+    }
+  ],
+  "serving_desc": "1 bát",
+  "serving_grams": 250,
+  "ingredients": [
+    {
+      "ingredient_slug": "dau-nanh-hat",
+      "quantity": 30,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "duong-trang",
+      "quantity": 18,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "gung",
+      "quantity": 2,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    }
+  ],
+  "recipe_steps": [
+    "Ngâm đậu nành, xay và lọc lấy sữa đậu nành, đun sôi.",
+    "Pha chất làm đông (thạch cao/nước chua), đổ vào sữa đậu để tào phớ đông mịn.",
+    "Thắng nước đường gừng.",
+    "Hớt tào phớ từng lớp mỏng vào bát, chan nước đường gừng; ăn nóng hoặc lạnh."
+  ],
+  "recipe_sources": [],
+  "media": [],
+  "estimated_kcal": null,
+  "external_ref": null,
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt) THIẾU NGUYÊN LIỆU: thạch cao (nước chua làm đông đậu) (phụ) — cần bổ sung vào kho",
+  "status": "draft",
+  "source": "llm_suggested",
+  "confidence": "unknown",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null
+}
