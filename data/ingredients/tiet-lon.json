@@ -10,7 +10,7 @@
     "scientific_name": null,
     "kcal_per_100g": 82.1,
     "kcal_min": 73,
-    "kcal_max": 82,
+    "kcal_max": 82.1,
     "protein_g": 19.5,
     "fat_g": 0.12,
     "carb_g": 0.8,
@@ -18,7 +18,7 @@
     "water_g": 80.5,
     "sodium_mg": 240,
     "mapping_confidence": "low",
-    "mapping_note": "⚠️ SAI LOÀI — KHÔNG CÓ NGUỒN ĐÚNG LOÀI TRONG BẤT KỲ BẢNG FCT NÀO. USDA SR Legacy/Foundation KHÔNG có tiết của loài nào (tra 'blood' chỉ ra đúng 1 kết quả: Blood sausage 171618). Ciqual chỉ có TIẾT BÒ (40600), không có tiết lợn. Độ tin cậy Ciqual cho dòng này = D (mức THẤP NHẤT, giá trị được suy chứ không đo). Đối chứng độc lập từ nhãn OFF (Pork Blood, Bahay-Kubo Canada): 72,7 kcal / đạm 16,4 / béo 0 — hội tụ đủ để tin biên độ 73–82 kcal nhưng KHÔNG đủ để chốt một con số. Ngoài ra tiết ở VN hầu như luôn ăn dạng đã đông/luộc, hoặc tiết canh có pha nước mắm — natri thực tế sẽ khác xa 240 mg.",
+    "mapping_note": "⚠️ SAI LOÀI — KHÔNG CÓ NGUỒN ĐÚNG LOÀI TRONG BẤT KỲ BẢNG FCT NÀO. USDA SR Legacy/Foundation KHÔNG có tiết của loài nào (tra 'blood' chỉ ra đúng 1 kết quả: Blood sausage 171618). Ciqual chỉ có TIẾT BÒ (40600), không có tiết lợn. Độ tin cậy Ciqual cho dòng này = D (mức THẤP NHẤT, giá trị được suy chứ không đo). Đối chứng độc lập từ nhãn OFF (Pork Blood, Bahay-Kubo Canada): 72,7 kcal / đạm 16,4 / béo 0 — hội tụ đủ để tin biên độ 73–82 kcal nhưng KHÔNG đủ để chốt một con số. Ngoài ra tiết ở VN hầu như luôn ăn dạng đã đông/luộc, hoặc tiết canh có pha nước mắm — natri thực tế sẽ khác xa 240 mg. ĐÍNH CHÍNH 2026-10-31 (tầm soát N-2): kcal_max sửa 82 → 82,1 (đúng số Ciqual 40600) để giá trị trung tâm 82,1 nằm trong khoảng tự khai; trước đó làm tròn xuống khiến giá trị trung tâm nằm ngoài khoảng 0,1.",
     "alternatives": [
       {
         "name": "Pork Blood (Bahay-Kubo, Canada)",

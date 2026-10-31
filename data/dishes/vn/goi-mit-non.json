@@ -2,7 +2,7 @@
   "slug": "goi-mit-non",
   "parent_dish_slug": null,
   "country_code": "VN",
-  "region_code": "vn-central",
+  "region_code": "vn-quang-nam",
   "names": [
     {
       "locale": "vi",
@@ -11,7 +11,7 @@
     },
     {
       "locale": "en",
-      "name": "young jackfruit salad, southern style",
+      "name": "young jackfruit salad, Quang Nam style",
       "is_primary": true
     },
     {
@@ -129,7 +129,7 @@
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. GỘP BIẾN THỂ 2026-10-31 (tầm soát dữ liệu + quyết định của chủ dự án): món này là món chuẩn của cặp gỏi/nộm mít non; nom-mit-non chuyển thành biến thể (parent_dish_slug trỏ về món này). Hai bản cùng lõi mít non 150 g và cùng cấu trúc trộn chua ngọt — theo phép thử EDITORIAL-GUIDE §3 là một món, không phải hai. Tên en cũ 'southern style' là SAI miền (đây là món miền Trung, đặc sản Quảng Nam) — đã sửa; region thống nhất về vn-quang-nam.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

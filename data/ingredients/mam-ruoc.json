@@ -1,7 +1,7 @@
 {
   "slug": "mam-ruoc",
   "name_vi": "Mắm ruốc",
-  "name_en": "Fermented shrimp paste",
+  "name_en": "Fermented acetes shrimp paste (mam ruoc)",
   "category": "gia-vi",
   "reference_food": {
     "fct_source": "usda_branded",
@@ -18,7 +18,7 @@
     "water_g": null,
     "sodium_mg": 9830,
     "mapping_confidence": "low",
-    "mapping_note": "KHÔNG có bản ghi SR Legacy/Foundation nào cho mắm ruốc ('shrimp paste' trong SR Legacy + Foundation → 0 kết quả). Đây là NHÃN sản phẩm Lee Kum Kee (GTIN 078895400014), thành phần 'SHRIMP (FERMENTED), SALT' — cùng họ sản phẩm với mắm ruốc. ⚠️ BẪY LƯỢNG TỬ HOÁ KHẨU PHẦN: khẩu phần nhãn là 6 g, nên 83 kcal/100g được tính ngược từ '5 kcal / 6 g'. Theo 21 CFR 101.9(c)(1) calo trên nhãn làm tròn theo bội số 5, nên giá trị THẬT của khẩu phần nằm trong 2,5–7,5 kcal → khoảng thật là 42–125 kcal/100g. Protein 16,7 cũng là tính ngược từ '1 g / 6 g' → thật ra 8–25 g/100g. CHỈ dùng để ước lượng, KHÔNG hiển thị con số chính xác. Con số này độc lập hoàn toàn với con số '73 kcal / 14,8 g' mà mẻ trước đã loại vì nghi chép từ bảng có bản quyền — trùng khoảng độ lớn là ngẫu nhiên, không dùng làm bằng chứng cho nhau.",
+    "mapping_note": "KHÔNG có bản ghi SR Legacy/Foundation nào cho mắm ruốc ('shrimp paste' trong SR Legacy + Foundation → 0 kết quả). Đây là NHÃN sản phẩm Lee Kum Kee (GTIN 078895400014), thành phần 'SHRIMP (FERMENTED), SALT' — cùng họ sản phẩm với mắm ruốc. ⚠️ BẪY LƯỢNG TỬ HOÁ KHẨU PHẦN: khẩu phần nhãn là 6 g, nên 83 kcal/100g được tính ngược từ '5 kcal / 6 g'. Theo 21 CFR 101.9(c)(1) calo trên nhãn làm tròn theo bội số 5, nên giá trị THẬT của khẩu phần nằm trong 2,5–7,5 kcal → khoảng thật là 42–125 kcal/100g. Protein 16,7 cũng là tính ngược từ '1 g / 6 g' → thật ra 8–25 g/100g. CHỈ dùng để ước lượng, KHÔNG hiển thị con số chính xác. Con số này độc lập hoàn toàn với con số '73 kcal / 14,8 g' mà mẻ trước đã loại vì nghi chép từ bảng có bản quyền — trùng khoảng độ lớn là ngẫu nhiên, không dùng làm bằng chứng cho nhau. ĐÍNH CHÍNH TÊN EN 2026-10-31 (tầm soát N-1): name_en đổi thành 'Fermented acetes shrimp paste (mam ruoc)' — mắm ruốc làm từ con ruốc (Acetes spp.), phân biệt với mắm tôm (mam-tom) vốn trùng tuyệt đối tên en.",
     "alternatives": [
       {
         "name": "NORTH SOUTH, BLACHEN DRIED SHRIMP PASTE (65% tôm / 35% muối)",

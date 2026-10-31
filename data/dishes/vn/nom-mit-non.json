@@ -1,6 +1,6 @@
 {
   "slug": "nom-mit-non",
-  "parent_dish_slug": null,
+  "parent_dish_slug": "goi-mit-non",
   "country_code": "VN",
   "region_code": "vn-quang-nam",
   "names": [
@@ -11,7 +11,7 @@
     },
     {
       "locale": "en",
-      "name": "young jackfruit salad, northern style",
+      "name": "young jackfruit salad with pork shoulder, Quang Nam style",
       "is_primary": true
     },
     {
@@ -153,7 +153,7 @@
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 đợt 2 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 đợt 2 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. GỘP BIẾN THỂ 2026-10-31 (tầm soát + quyết định của chủ dự án): chuyển thành BIẾN THỂ của goi-mit-non — gỏi/nộm là hai tên vùng cho cùng một dạng món mít non trộn (file này vốn đã alias 'gỏi mít non'). Khác biệt của biến thể này so với món chuẩn: đạm là thịt lợn nạc vai 60 g (món chuẩn dùng tai heo 60 g), tôm thẻ 50 g, ăn kèm bánh tráng 20 g, thêm vừng rang và húng quế; định lượng giữ nguyên bản gốc, không đổi số. Tên en cũ 'northern style' là SAI miền (Quảng Nam thuộc miền Trung) — đã sửa.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -1,6 +1,6 @@
 {
   "slug": "xoi-ngo",
-  "parent_dish_slug": null,
+  "parent_dish_slug": "xoi-bap",
   "country_code": "VN",
   "region_code": "vn-north",
   "names": [
@@ -11,7 +11,7 @@
     },
     {
       "locale": "en",
-      "name": "xoi ngo (corn sticky rice)",
+      "name": "sticky rice with corn, northern style",
       "is_primary": true
     },
     {
@@ -85,7 +85,7 @@
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt)",
+  "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) GỘP BIẾN THỂ 2026-10-31 (tầm soát + quyết định của chủ dự án): chuyển thành BIẾN THỂ miền Bắc của xoi-bap — bắp (Nam) và ngô (Bắc) là hai tên của cùng một món; hai file vốn đã alias qua lại. Khác biệt của biến thể Bắc: tối giản — không đậu xanh, không đường, nước cốt dừa 15 g (bản Nam của món chuẩn: đậu xanh 40 g, đường 8 g, cốt dừa 30 g), serving 230 g. Định lượng giữ nguyên bản gốc của biến thể.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

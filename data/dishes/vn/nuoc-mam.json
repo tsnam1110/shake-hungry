@@ -8,6 +8,67 @@
       "locale": "vi",
       "name": "nước mắm",
       "is_primary": true
+    },
+    {
+      "locale": "en",
+      "name": "fish sauce",
+      "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "nước mắm Phú Quốc",
+      "is_primary": false,
+      "is_alias": true,
+      "note": "tên địa danh — Phú Quốc (Kiên Giang); cùng sản phẩm nước mắm truyền thống, gộp vào món chuẩn 2026-10-31"
+    },
+    {
+      "locale": "en",
+      "name": "Phu Quoc fish sauce",
+      "is_primary": false,
+      "is_alias": true,
+      "note": "tên địa danh — Phú Quốc (Kiên Giang); cùng sản phẩm nước mắm truyền thống, gộp vào món chuẩn 2026-10-31"
+    },
+    {
+      "locale": "vi",
+      "name": "nước mắm Phan Thiết",
+      "is_primary": false,
+      "is_alias": true,
+      "note": "tên địa danh — Phan Thiết (Bình Thuận); cùng sản phẩm nước mắm truyền thống, gộp vào món chuẩn 2026-10-31"
+    },
+    {
+      "locale": "en",
+      "name": "Phan Thiet fish sauce",
+      "is_primary": false,
+      "is_alias": true,
+      "note": "tên địa danh — Phan Thiết (Bình Thuận); cùng sản phẩm nước mắm truyền thống, gộp vào món chuẩn 2026-10-31"
+    },
+    {
+      "locale": "vi",
+      "name": "nước mắm Cát Hải",
+      "is_primary": false,
+      "is_alias": true,
+      "note": "tên địa danh — Cát Hải (Hải Phòng); cùng sản phẩm nước mắm truyền thống, gộp vào món chuẩn 2026-10-31"
+    },
+    {
+      "locale": "en",
+      "name": "Cat Hai fish sauce",
+      "is_primary": false,
+      "is_alias": true,
+      "note": "tên địa danh — Cát Hải (Hải Phòng); cùng sản phẩm nước mắm truyền thống, gộp vào món chuẩn 2026-10-31"
+    },
+    {
+      "locale": "vi",
+      "name": "nước mắm Cửa Khè",
+      "is_primary": false,
+      "is_alias": true,
+      "note": "tên địa danh — Cửa Khè (Quảng Nam); cùng sản phẩm nước mắm truyền thống, gộp vào món chuẩn 2026-10-31"
+    },
+    {
+      "locale": "en",
+      "name": "Cua Khe fish sauce",
+      "is_primary": false,
+      "is_alias": true,
+      "note": "tên địa danh — Cửa Khè (Quảng Nam); cùng sản phẩm nước mắm truyền thống, gộp vào món chuẩn 2026-10-31"
     }
   ],
   "is_eat_out": false,
@@ -47,7 +108,7 @@
     "source": "wikidata",
     "queried_at": "2026-08-31"
   },
-  "import_note": "Nhập tự động từ Wikidata Q18456374 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/Sauce%20de%20poisson.jpg Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Nhập tự động từ Wikidata Q18456374 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/Sauce%20de%20poisson.jpg Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. HỢP NHẤT CỤM NƯỚC MẮM 2026-10-31 (tầm soát M-1 + quyết định của chủ dự án): bốn món địa danh nuoc-mam-phu-quoc (Wikidata Q7188272), nuoc-mam-phan-thiet (Q10802093), nuoc-mam-cat-hai (Q10802091), nuoc-mam-cua-khe (Q30919660) có công thức GIỐNG HỆT món này tuyệt đối (1 dòng nuoc-mam-truyen-thong 15 g, cùng serving/slot) — khác biệt duy nhất là xuất xứ sản phẩm, không đủ điều kiện là món độc lập theo EDITORIAL-GUIDE §3. Đã xoá 4 file; tên địa danh (vi + en) giữ làm alias của món này; mã Wikidata ghi lại tại đây để truy vết. Trọng số bữa của nhóm nuoc-cham (weight 8 — tầm soát M-4): GIỮ NGUYÊN chờ quyết định riêng, không tự đặt số; engine Lắc đã chặn món khẩu phần <80 g khỏi gợi ý bữa chính (Recommender::pool) nên rủi ro gợi ý nước chấm như bữa ăn hiện đã được chặn ở tầng engine — xem biên bản docs/04-data-sources/DATA-AUDIT-FIXES-2026-10-31.md.",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

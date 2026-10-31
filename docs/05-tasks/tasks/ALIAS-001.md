@@ -29,5 +29,15 @@
   (2) `xoi-bap` ↔ `xoi-ngo` — bắp (Nam) = ngô (Bắc), gần như chắc chắn một món hai file;
   (3) nghi nhẹ: `banh-phu-the` ↔ `banh-xu-xe`, `banh-bao-banh-vac` ↔ `banh-hoa-hong-trang`
   (nội dung gần như trùng nhưng không phải cặp tên vùng miền).
+- **✅ ĐÃ ĐÓNG mục (1) và (2) — 2026-10-31 (pha sửa dữ liệu sau tầm soát):** chủ dự án chốt
+  **gộp cả hai cặp**. (1) `nom-mit-non` → biến thể của `goi-mit-non`
+  (`parent_dish_slug = goi-mit-non`), sửa cả hai tên en sai miền ("southern/northern style" →
+  Quảng Nam — miền Trung), region của món chuẩn thống nhất `vn-quang-nam`; khác biệt biến thể
+  (nạc vai thay tai heo, bánh tráng ăn kèm) ghi trong `import_note`. (2) `xoi-ngo` → biến thể
+  miền Bắc của `xoi-bap` (gốc hồ sơ là bản đã duyệt), định lượng tối giản của miền Bắc giữ nguyên
+  trong file biến thể. Cùng đợt: cụm 5 món nước mắm địa danh giống hệt tuyệt đối hợp nhất còn
+  món chuẩn `nuoc-mam`, tên địa danh thành alias (kho món 500 → 496). Biên bản đầy đủ:
+  [DATA-AUDIT-FIXES-2026-10-31](../../04-data-sources/DATA-AUDIT-FIXES-2026-10-31.md). Mục (3)
+  giữ nguyên trạng thái nghi nhẹ, chưa xử lý.
 - Nguyên tắc: chỉ ghi tên gọi khác **có thật** — cùng một món/quả, khác tên theo vùng miền hoặc thời kỳ (vd khổ qua = mướp đắng; thơm = khóm = dứa). Không gộp đối tượng chỉ tương tự (bánh cuốn ≠ bánh ướt). Món/quả không có tên gọi khác đáng tin thì để trống.
 - Nguyên liệu ngoài nhóm quả: cơ chế áp dụng chung, điền dần theo nhu cầu.
