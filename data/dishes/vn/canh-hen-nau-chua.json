@@ -41,6 +41,22 @@
       "confidence": "low"
     },
     {
+      "ingredient_slug": "hanh-tim",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dau-an",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
       "ingredient_slug": "ca-chua",
       "quantity": 50,
       "unit_name": "g",
@@ -79,6 +95,14 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "rau-ram",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
@@ -86,9 +110,10 @@
     "Luộc hến với nước xâm xấp; khi sôi dùng đũa khuấy đều một chiều cho thịt bung khỏi vỏ, hến mở hết miệng thì tắt bếp.",
     "Đãi lấy thịt hến, rửa lại cho hết sạn, để ráo; nước luộc để lắng 15–20 phút, gạn lấy phần trong, bỏ cặn đáy.",
     "Cà chua bổ múi cau (một nửa có thể băm nhỏ để nấu lấy màu); khế gọt rìa, thái lát; hành lá cắt nhỏ.",
+    "Phi hành tím với dầu ăn (dòng dau-an) cho thơm, cho thịt hến vào xào nhanh lửa lớn 1–2 phút cho săn và dậy mùi, trút ra để riêng.",
     "Đổ nước luộc hến đã gạn vào nồi, cho phần cà chua băm vào nấu cho mềm ra màu, đun sôi.",
     "Cho cà chua múi cau và khế vào, nấu thêm 3–5 phút cho ra vị chua; nêm nước mắm và đường cho cân bằng chua–mặn–ngọt.",
-    "Cho thịt hến đã đãi trở lại, sôi lại là tắt bếp ngay (nấu lâu hến dai); rắc hành lá, dùng nóng."
+    "Cho thịt hến đã xào trở lại, sôi lại là tắt bếp ngay (nấu lâu hến dai); rắc hành lá và rau răm, dùng nóng."
   ],
   "recipe_sources": [
     {
@@ -115,7 +140,7 @@
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 4 nguồn. Phân xử định lượng: GIỮ NGUYÊN — cà chua 50 g và khế 30 g khớp đồng thuận nguồn (~45–60 g và ~28–55 g/khẩu phần); hen 60 g là thịt hến đã đãi theo định nghĩa ingredient (45 kcal/100 g), tương đương phần thịt thu được từ 250–375 g hến cả vỏ/khẩu phần của nguồn (tỉ lệ thịt hến nhỏ ~20–25%) nên không lệch như số thô cả vỏ gợi ý. Bất thường ghi nhận chờ pha phân xử: rau răm (4/4 nguồn — rau thơm định danh của món), hành tím (4/4) và dầu ăn cho bước xào thịt hến (4/4) đều thiếu trong file; bước đã bổ sung công đoạn luộc–đãi còn thiếu nhưng giữ kỹ thuật cho hến vào cuối không xào cho nhất quán với danh sách nguyên liệu hiện tại.",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 4 nguồn. Phân xử định lượng: GIỮ NGUYÊN — cà chua 50 g và khế 30 g khớp đồng thuận nguồn (~45–60 g và ~28–55 g/khẩu phần); hen 60 g là thịt hến đã đãi theo định nghĩa ingredient (45 kcal/100 g), tương đương phần thịt thu được từ 250–375 g hến cả vỏ/khẩu phần của nguồn (tỉ lệ thịt hến nhỏ ~20–25%) nên không lệch như số thô cả vỏ gợi ý. Bất thường ghi nhận chờ pha phân xử: rau răm (4/4 nguồn — rau thơm định danh của món), hành tím (4/4) và dầu ăn cho bước xào thịt hến (4/4) đều thiếu trong file; bước đã bổ sung công đoạn luộc–đãi còn thiếu nhưng giữ kỹ thuật cho hến vào cuối không xào cho nhất quán với danh sách nguyên liệu hiện tại. Phân xử bất thường LV2-003 (Phần A — LV2-004, 2026-10-31): Thêm hanh-tim 5 g, dau-an 3 g và rau-ram 3 g — cả ba đều có ở 4/4 nguồn đã mở ở đợt 3 (hành tím + dầu cho bước xào thịt hến; rau răm là rau thơm định danh của món) mà file thiếu hẳn; bước xào hến đã bổ sung cho khớp. rau-ram chưa có số dinh dưỡng — theo tiền lệ dòng rau thơm chưa có số (ngo-gai ở canh-khoai-mo, Phần A đợt 2), engine ghi vào missing[] phần rau thơm, món vẫn tính được từ các dòng còn lại.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

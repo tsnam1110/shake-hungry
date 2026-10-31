@@ -72,14 +72,6 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "dau-an",
-      "quantity": 5,
-      "unit_name": "g",
-      "is_optional": false,
-      "source": "llm_suggested",
-      "confidence": "low"
-    },
-    {
       "ingredient_slug": "nuoc-mam-truyen-thong",
       "quantity": 6,
       "unit_name": "g",
@@ -133,7 +125,7 @@
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Món thay thế cho canh-kho-qua-nhoi-thit vì món đó đã có trong kho. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 3 nguồn (không nguồn nào ghi số khẩu phần — quy theo mẻ gia đình 4). Phân xử định lượng: GIỮ NGUYÊN TOÀN BỘ — sườn 80 g nằm trong dải nguồn 67–100 g, khổ qua 120 g khớp cận dưới của 2/3 nguồn; đây là món khớp nguồn tốt nhất nhóm canh đợt 3. Bất thường ghi nhận chờ pha phân xử: dòng dau-an 5 g không gắn với bước nào và 2/3 nguồn không dùng dầu (chần sườn hầm trực tiếp) — đề xuất bỏ dòng dầu hoặc thêm bước xào sườn theo nguồn thiểu số; nước mắm chỉ 1/3 nguồn liệt kê (hai nguồn còn lại nêm muối + hạt nêm), giữ và ghi nhận.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Món thay thế cho canh-kho-qua-nhoi-thit vì món đó đã có trong kho. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 3 nguồn (không nguồn nào ghi số khẩu phần — quy theo mẻ gia đình 4). Phân xử định lượng: GIỮ NGUYÊN TOÀN BỘ — sườn 80 g nằm trong dải nguồn 67–100 g, khổ qua 120 g khớp cận dưới của 2/3 nguồn; đây là món khớp nguồn tốt nhất nhóm canh đợt 3. Bất thường ghi nhận chờ pha phân xử: dòng dau-an 5 g không gắn với bước nào và 2/3 nguồn không dùng dầu (chần sườn hầm trực tiếp) — đề xuất bỏ dòng dầu hoặc thêm bước xào sườn theo nguồn thiểu số; nước mắm chỉ 1/3 nguồn liệt kê (hai nguồn còn lại nêm muối + hạt nêm), giữ và ghi nhận. Phân xử bất thường LV2-003 (Phần A — LV2-004, 2026-10-31): BỎ dòng dau-an 5 g: dòng dầu không gắn với bước nào trong công thức và 2/3 nguồn đã mở ở đợt 3 không dùng dầu (chần sườn rồi hầm trực tiếp — đúng kỹ thuật các bước hiện tại của file). Nước mắm (1/3 nguồn) giữ nguyên như phân tích đợt 3.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

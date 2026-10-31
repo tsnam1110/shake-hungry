@@ -65,6 +65,14 @@
       "confidence": "low"
     },
     {
+      "ingredient_slug": "doc-mung",
+      "quantity": 40,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
       "ingredient_slug": "gia-do",
       "quantity": 10,
       "unit_name": "g",
@@ -139,10 +147,10 @@
   ],
   "recipe_steps": [
     "Tôm thẻ rửa sạch, cắt bỏ râu và chân, để nguyên vỏ, để ráo.",
-    "Me dầm với nước nóng, lọc lấy nước cốt bỏ hạt; cà chua bổ múi cau, dứa thái lát, đậu bắp cắt xéo.",
+    "Me dầm với nước nóng, lọc lấy nước cốt bỏ hạt; cà chua bổ múi cau, dứa thái lát, đậu bắp cắt xéo; dọc mùng (bạc hà) tước bỏ vỏ xơ, cắt khúc 4–5 cm, bóp muối, rửa sạch, chần nhanh vớt ra để ráo.",
     "Phi tỏi với dầu ăn (dòng dau-an) cho vàng, vớt tỏi phi để riêng; dùng dầu đó xào cà chua và dứa 2 phút cho mềm.",
     "Đổ ~300 ml nước/khẩu phần cùng nước cốt me vào, đun sôi, nêm trước nước mắm và đường cho nền chua–ngọt.",
-    "Nước sôi bùng, cho tôm vào nấu 2–3 phút đến khi tôm cong, vỏ đỏ đều là vừa chín; cho đậu bắp vào nấu thêm 1–2 phút.",
+    "Nước sôi bùng, cho tôm vào nấu 2–3 phút đến khi tôm cong, vỏ đỏ đều là vừa chín; cho đậu bắp và dọc mùng vào nấu thêm 1–2 phút.",
     "Cho giá vào, sôi lại thì tắt bếp ngay để giá còn giòn; nêm lại lần cuối.",
     "Múc ra tô, rắc rau ngổ, ngò gai, ớt lát và tỏi phi lên mặt, dùng nóng với cơm hoặc bún."
   ],
@@ -166,7 +174,7 @@
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 3 nguồn (nguồn dùng tôm sú/tôm đất — cùng khuôn canh chua tôm Nam Bộ). Phân xử định lượng: gia-do 25 → 10 g và dau-bap 30 → 15 g — cả hai nguồn có định lượng đều thấp hơn file 60–70% ở giá và ~2 lần ở đậu bắp; tôm 80 g, cà chua 60 g, dứa 40 g giữ nguyên (khớp dải nguồn); me 10 g giữ (nguồn phân tán hai chiều). Bất thường ghi nhận: bạc hà/dọc mùng có ở 3/3 nguồn mà file thiếu hẳn — kho chưa có ingredient này (đầu mối biên soạn nguyên liệu mới, cùng nhóm mẻ/giấm bỗng/nước màu/giò sống).",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 3 nguồn (nguồn dùng tôm sú/tôm đất — cùng khuôn canh chua tôm Nam Bộ). Phân xử định lượng: gia-do 25 → 10 g và dau-bap 30 → 15 g — cả hai nguồn có định lượng đều thấp hơn file 60–70% ở giá và ~2 lần ở đậu bắp; tôm 80 g, cà chua 60 g, dứa 40 g giữ nguyên (khớp dải nguồn); me 10 g giữ (nguồn phân tán hai chiều). Bất thường ghi nhận: bạc hà/dọc mùng có ở 3/3 nguồn mà file thiếu hẳn — kho chưa có ingredient này (đầu mối biên soạn nguyên liệu mới, cùng nhóm mẻ/giấm bỗng/nước màu/giò sống). Phân xử bất thường LV2-003 (Phần A — LV2-004, 2026-10-31): Thêm doc-mung (bạc hà) 40 g — rau định danh của canh chua có ở 3/3 nguồn đã mở ở đợt 3. Đính chính đầu mối ở LV2-003: ghi \"kho chưa có ingredient\" nay không còn đúng — doc-mung đã được biên soạn trong DISH-005 (13 kcal/100 g, Bảng TPTP VN tầng 6, Colocasia gigantea) nên thêm dòng trực tiếp, không cần biên soạn mới; lượng 40 g nằm trong dải công thức canh chua phổ biến 30–50 g/khẩu phần.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

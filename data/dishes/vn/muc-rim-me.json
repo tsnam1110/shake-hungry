@@ -42,7 +42,7 @@
     },
     {
       "ingredient_slug": "me-chin",
-      "quantity": 15,
+      "quantity": 12,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -67,6 +67,22 @@
     {
       "ingredient_slug": "toi",
       "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "sa",
+      "quantity": 4,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "gung",
+      "quantity": 2,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -107,7 +123,7 @@
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu). Nghiên cứu Mức 2 đợt 3 (LV2-003, 2026-10-31): GIỮ Mức 1 — mới mở kiểm chứng được 2 nguồn (Emdep; Hải Sản Cô Tô), các nguồn còn lại bị provider chặn 429 nên chỉ ở mức trích đoạn tìm kiếm, chưa đạt cổng ≥3 nguồn đã mở. Bất thường ghi nhận cho pha phân xử: sả và gừng có ở 2/2 nguồn đã mở, file thiếu cả hai; định lượng chính (mực khô 40, me 15, đường 10) nằm trong dải quy đổi của nguồn, không đề xuất đổi.",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu). Nghiên cứu Mức 2 đợt 3 (LV2-003, 2026-10-31): GIỮ Mức 1 — mới mở kiểm chứng được 2 nguồn (Emdep; Hải Sản Cô Tô), các nguồn còn lại bị provider chặn 429 nên chỉ ở mức trích đoạn tìm kiếm, chưa đạt cổng ≥3 nguồn đã mở. Bất thường ghi nhận cho pha phân xử: sả và gừng có ở 2/2 nguồn đã mở, file thiếu cả hai; định lượng chính (mực khô 40, me 15, đường 10) nằm trong dải quy đổi của nguồn, không đề xuất đổi. Phân xử thử lại LV2-004 (Phần A, 2026-10-31): đã mở thêm 2 nguồn (Hướng Nghiệp Á Âu — công thức mực khô rim me chuyên biệt; Saigonese Baguette) → tổng 4 nguồn đã mở. Sả có ở 3/4 nguồn (quy đổi 3–6 g/khẩu phần) → THÊM sa-tuoi 4 g; gừng có ở 3/4 nguồn (~2 g/khẩu phần) → THÊM gung-tuoi 2 g; me 15 g cao hơn +50% so với nguồn chuyên biệt nhất (HNAA 10 g/khẩu phần) → GIẢM còn 12 g (thận trọng, vẫn trong dải hai nguồn đợt 3). Hành tím có ở 2/4 nguồn (~5 g/khẩu phần) — bất thường mới ghi nhận, chưa thêm dòng ở pha này. Vừng rang tuỳ chọn: 0/4 nguồn nhắc tới — giữ optional theo bản thảo gốc. Nâng Mức 2 thực hiện ở Phần B đợt 4 (LV2-004).",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -49,6 +49,14 @@
       "confidence": "low"
     },
     {
+      "ingredient_slug": "hanh-tim",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
       "ingredient_slug": "hanh-la",
       "quantity": 5,
       "unit_name": "g",
@@ -98,7 +106,7 @@
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món chiên theo quy ước Phương án A (EDITORIAL-GUIDE §12): công thức KHÔNG kê dầu của bước chiên chính — dầu hấp thụ do engine mô hình hoá theo hệ số CALC-004 của nguyên liệu. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 4 nguồn (hai bài Bếp Xưa là hai công thức khác nhau trên cùng một trang — tính độc lập vừa phải). Phân xử định lượng: trung-ga 100 → 75 g — hai nguồn ghi rõ khẩu phần đều thấp hơn file (50 g và 75 g/khẩu phần), lấy mức cao nhất 75 g thận trọng; serving_grams 160 → 135 theo tổng dòng mới; thịt 50 g giữ nguyên (một nguồn khớp file). Ghi nhận tranh luận khẩu phần: nguồn là đĩa chung gia đình chia 4, file là đĩa chính 1 người — chủ dự án có thể quyết khác ở pha phân xử. Bất thường ghi nhận: hành tím/hành khô có ở 4/4 nguồn, file thiếu hẳn.",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món chiên theo quy ước Phương án A (EDITORIAL-GUIDE §12): công thức KHÔNG kê dầu của bước chiên chính — dầu hấp thụ do engine mô hình hoá theo hệ số CALC-004 của nguyên liệu. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 4 nguồn (hai bài Bếp Xưa là hai công thức khác nhau trên cùng một trang — tính độc lập vừa phải). Phân xử định lượng: trung-ga 100 → 75 g — hai nguồn ghi rõ khẩu phần đều thấp hơn file (50 g và 75 g/khẩu phần), lấy mức cao nhất 75 g thận trọng; serving_grams 160 → 135 theo tổng dòng mới; thịt 50 g giữ nguyên (một nguồn khớp file). Ghi nhận tranh luận khẩu phần: nguồn là đĩa chung gia đình chia 4, file là đĩa chính 1 người — chủ dự án có thể quyết khác ở pha phân xử. Bất thường ghi nhận: hành tím/hành khô có ở 4/4 nguồn, file thiếu hẳn. Phân xử bất thường LV2-003 (Phần A — LV2-004, 2026-10-31): Thêm hanh-tim 5 g: hành tím/hành khô có ở 4/4 nguồn đã mở ở đợt 3, file thiếu hẳn.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

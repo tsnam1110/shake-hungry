@@ -53,6 +53,22 @@
       "confidence": "low"
     },
     {
+      "ingredient_slug": "cu-cai-trang",
+      "quantity": 50,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "ca-rot",
+      "quantity": 30,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
       "ingredient_slug": "thit-lon-nac-vai",
       "quantity": 40,
       "unit_name": "g",
@@ -138,7 +154,7 @@
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt DISH-004 đợt 2 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 3 nguồn. Phân xử định lượng: soi-banh-canh 90 → 130 g — cả 3 nguồn dùng sợi TƯƠI 125–250 g/khẩu phần và ingredient soi-banh-canh của kho là dạng tươi (108 kcal/100 g) nên quy ước cân khớp; giò 100 g GIỮ NGUYÊN kèm cờ đỏ quy ước: nguồn cho 125–250 g sống có xương/khẩu phần, file chưa rõ cân theo khoanh có xương bày tô hay phần thịt ăn được — cần chốt quy ước cân của mong-gio trước khi phân xử dòng này; thịt nạc vai 40 g giữ (cùng cỡ thịt xay 50 g của một nguồn, khác dạng). Bất thường ghi nhận: củ cải trắng hầm nước dùng có ở 2/3 nguồn (~50 g/khẩu phần) và cà rốt ở 2/3 nguồn (~30 g), file thiếu cả hai; kỹ thuật trụng sợi riêng (2/3 nguồn) vs thả trực tiếp vào nước dùng (ĐMX + file) — giữ cách của file (nước dùng sánh bột đúng chất bánh canh), ghi nhận hai trường phái.",
+  "import_note": "Soạn nháp đợt DISH-004 đợt 2 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 3 nguồn. Phân xử định lượng: soi-banh-canh 90 → 130 g — cả 3 nguồn dùng sợi TƯƠI 125–250 g/khẩu phần và ingredient soi-banh-canh của kho là dạng tươi (108 kcal/100 g) nên quy ước cân khớp; giò 100 g GIỮ NGUYÊN kèm cờ đỏ quy ước: nguồn cho 125–250 g sống có xương/khẩu phần, file chưa rõ cân theo khoanh có xương bày tô hay phần thịt ăn được — cần chốt quy ước cân của mong-gio trước khi phân xử dòng này; thịt nạc vai 40 g giữ (cùng cỡ thịt xay 50 g của một nguồn, khác dạng). Bất thường ghi nhận: củ cải trắng hầm nước dùng có ở 2/3 nguồn (~50 g/khẩu phần) và cà rốt ở 2/3 nguồn (~30 g), file thiếu cả hai; kỹ thuật trụng sợi riêng (2/3 nguồn) vs thả trực tiếp vào nước dùng (ĐMX + file) — giữ cách của file (nước dùng sánh bột đúng chất bánh canh), ghi nhận hai trường phái. Phân xử bất thường LV2-003 (Phần A — LV2-004, 2026-10-31): Thêm cu-cai-trang 50 g và ca-rot 30 g hầm nước dùng (đều 2/3 nguồn đã mở ở đợt 3, ~50 g và ~30 g/khẩu phần). Dòng mong-gio 100 g GIỮ NGUYÊN: quy ước cân móng giò (khoanh có xương bày tô vs phần thịt ăn được) chưa được chủ dự án chốt — không phân xử dòng này trong pha này theo đúng cờ đỏ đã ghi ở đợt 3.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

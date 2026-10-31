@@ -69,6 +69,22 @@
       "confidence": "low"
     },
     {
+      "ingredient_slug": "mam-ruoc",
+      "quantity": 4,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "gung",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
       "ingredient_slug": "hanh-tay",
       "quantity": 20,
       "unit_name": "g",
@@ -123,12 +139,28 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "gio-lua",
+      "quantity": 25,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "tiet-lon",
+      "quantity": 30,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
     "Giò heo cạo rửa, chần sôi 3–4 phút, rửa lại; thịt bò rửa sạch, để nguyên miếng.",
     "Hầm giò và bò với sả đập dập và hành tây ở lửa nhỏ 40–50 phút, hớt bọt thường xuyên cho nước trong; bò mềm trước thì vớt trước, ngâm nước nguội 10 phút rồi thái lát mỏng.",
-    "Nêm nước dùng bằng nước mắm, muối, đường cho vừa miệng (mắm ruốc là dòng đang thiếu — xem ghi chú bất thường).",
+    "Hoà mắm ruốc với nước lạnh, để lắng 10–15 phút, gạn lấy phần nước trong cho vào nồi; nêm thêm nước mắm, muối, đường cho vừa miệng.",
     "Giò chín đạt khi xiên đũa qua da dễ dàng nhưng khoanh giò chưa rã; vớt ra để riêng.",
     "Trụng bún qua nước sôi, cho vào tô; xếp giò, thịt bò, hành tây thái mỏng, hành lá, rau mùi, ớt lát.",
     "Chan nước dùng đang sôi, ăn nóng kèm rau sống và sa tế sả ớt nếu thích cay."
@@ -158,7 +190,7 @@
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt DISH-004 đợt 2 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 4 nguồn. Phân xử định lượng: GIỮ NGUYÊN TOÀN BỘ — giò 90 g so với nguồn tin cậy nhất 100 g lệch +11%, bò bày tô 50 g khớp chính xác nguồn, bún 200 g so với 167 g lệch dưới ngưỡng (số thịt/bún theo cả nồi hầm của các nguồn còn lại là ngoại lệ không dùng phân xử). Bất thường lớn ghi nhận chờ pha phân xử: mắm ruốc — nguyên liệu định danh bún bò Huế — có ở 4/4 nguồn (~4 g/khẩu phần, pha nước lắng lọc lấy nước trong) mà file THIẾU HẲN (kho đã có ingredient mam-ruoc); huyết luộc (2 nguồn, tuỳ chọn ~30 g), chả lụa/chả bì (3 nguồn, tuỳ chọn ~25 g) và gừng cho nước dùng (3 nguồn) cũng thiếu.",
+  "import_note": "Soạn nháp đợt DISH-004 đợt 2 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 4 nguồn. Phân xử định lượng: GIỮ NGUYÊN TOÀN BỘ — giò 90 g so với nguồn tin cậy nhất 100 g lệch +11%, bò bày tô 50 g khớp chính xác nguồn, bún 200 g so với 167 g lệch dưới ngưỡng (số thịt/bún theo cả nồi hầm của các nguồn còn lại là ngoại lệ không dùng phân xử). Bất thường lớn ghi nhận chờ pha phân xử: mắm ruốc — nguyên liệu định danh bún bò Huế — có ở 4/4 nguồn (~4 g/khẩu phần, pha nước lắng lọc lấy nước trong) mà file THIẾU HẲN (kho đã có ingredient mam-ruoc); huyết luộc (2 nguồn, tuỳ chọn ~30 g), chả lụa/chả bì (3 nguồn, tuỳ chọn ~25 g) và gừng cho nước dùng (3 nguồn) cũng thiếu. Phân xử bất thường LV2-003 (Phần A — LV2-004, 2026-10-31): Thêm mam-ruoc 4 g (nguyên liệu định danh bún bò Huế, 4/4 nguồn đã mở ở đợt 3, ~4 g/khẩu phần pha nước lắng lấy nước trong — kho đã có ingredient mam-ruoc có số); thêm gung 3 g cho nước dùng (3 nguồn); thêm gio-lua 25 g và tiet-lon (huyết luộc) 30 g dạng TUỲ CHỌN (chả 3 nguồn, huyết 2 nguồn — phần ăn kèm phổ biến nhưng không bắt buộc của tô bún). Bước 3 đã viết lại cho khớp dòng mắm ruốc.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

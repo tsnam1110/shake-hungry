@@ -65,6 +65,14 @@
       "confidence": "low"
     },
     {
+      "ingredient_slug": "mien-dong",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
       "ingredient_slug": "hanh-tim",
       "quantity": 14,
       "unit_name": "g",
@@ -99,8 +107,8 @@
   ],
   "recipe_steps": [
     "Mực ống rút nang, bỏ túi mực và mắt, lột màng, rửa nước muối loãng, để ráo; tách đầu/râu, băm nhỏ râu để trộn nhân.",
-    "Mộc nhĩ và nấm hương ngâm nở, rửa sạch, băm nhỏ.",
-    "Trộn thịt xay với râu mực băm, mộc nhĩ, nấm hương, hành tím băm, trứng gà, nước mắm và tiêu; quết đều tay 2–3 phút cho nhân dẻo, kết dính, ướp 15 phút.",
+    "Mộc nhĩ và nấm hương ngâm nở, rửa sạch, băm nhỏ; miến dong ngâm mềm, cắt khúc 2–3 cm.",
+    "Trộn thịt xay với râu mực băm, mộc nhĩ, nấm hương, miến cắt khúc, hành tím băm, trứng gà, nước mắm và tiêu; quết đều tay 2–3 phút cho nhân dẻo, kết dính, ướp 15 phút.",
     "Nhồi nhân vào thân mực tới khoảng 4/5 ống — không nhồi chặt, nhân nở khi chiên sẽ làm rách mực; ghim miệng bằng tăm, khía một đường nhỏ ở đuôi cho thoát hơi.",
     "Làm nóng dầu trong chảo (dầu chiên không kê dòng riêng theo quy ước Phương án A), cho mực vào chiên lửa vừa 12–15 phút, trở đều tay đến khi thân mực vàng đều các mặt.",
     "Kiểm tra chín: cắt thử một khoanh thấy nhân hết hồng, chắc và không ra nước đục; vớt ra để ráo dầu 2–3 phút.",
@@ -131,7 +139,7 @@
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 8 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).] Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 4 nguồn. Phân xử định lượng: hanh-tim 8 → 14 g — hai nguồn định lượng được (Vào Bếp Wiki ~13 g, ĐMX ~15 g/khẩu phần) đều cao hơn file ~40–47%; mực 150 g giữ (đầu trên của dải nguồn 100–150); thịt xay 80 g giữ (nguồn chia rẽ 50–100, không đồng thuận một chiều); mộc nhĩ/nấm hương 5 g khớp ĐMX. Bất thường ghi nhận: miến có ở 2/4 nguồn (CET — chính biến thể chiên giòn; ĐMX kho me ~5 g khô/khẩu phần), file thiếu; dòng trung-ga căn cứ yếu — chỉ 1/4 nguồn có trứng (biến thể kho me, chỉ lòng đỏ), 3 nguồn chiên trực tiếp không dùng trứng — chờ pha phân xử quyết giữ/bỏ.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 8 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).] Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 4 nguồn. Phân xử định lượng: hanh-tim 8 → 14 g — hai nguồn định lượng được (Vào Bếp Wiki ~13 g, ĐMX ~15 g/khẩu phần) đều cao hơn file ~40–47%; mực 150 g giữ (đầu trên của dải nguồn 100–150); thịt xay 80 g giữ (nguồn chia rẽ 50–100, không đồng thuận một chiều); mộc nhĩ/nấm hương 5 g khớp ĐMX. Bất thường ghi nhận: miến có ở 2/4 nguồn (CET — chính biến thể chiên giòn; ĐMX kho me ~5 g khô/khẩu phần), file thiếu; dòng trung-ga căn cứ yếu — chỉ 1/4 nguồn có trứng (biến thể kho me, chỉ lòng đỏ), 3 nguồn chiên trực tiếp không dùng trứng — chờ pha phân xử quyết giữ/bỏ. Phân xử bất thường LV2-003 (Phần A — LV2-004, 2026-10-31): Thêm mien-dong 5 g (khô) vào nhân — 2/4 nguồn đã mở ở đợt 3 có miến, trong đó CET là đúng biến thể chiên giòn của món này và ĐMX cho ~5 g khô/khẩu phần. Dòng trung-ga GIỮ NGUYÊN có lý do: chỉ 1/4 nguồn dùng trứng (biến thể kho me, chỉ lòng đỏ) nhưng biến thể có trứng là có thật và trứng đóng vai trò kết dính nhân — bằng chứng chưa đủ mạnh để bỏ dòng, ghi nhận tranh chấp biến thể.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

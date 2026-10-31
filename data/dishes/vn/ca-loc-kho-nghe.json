@@ -41,8 +41,8 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "bot-nghe",
-      "quantity": 2,
+      "ingredient_slug": "nghe-tuoi",
+      "quantity": 6,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -131,7 +131,7 @@
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 4 nguồn. Phân xử định lượng: GIỮ NGUYÊN — cá 160 g khớp mốc 5 người của nguồn Tripi, các nguồn còn lại không ghi khẩu phần; nước mắm/đường/dầu/hành tím/ớt đều nằm trong khoảng tỉ lệ nguồn. Hai bất thường ghi nhận: (1) nghệ — 3/4 nguồn dùng nghệ tươi giã (5–8 g tươi/khẩu phần), file dùng bot-nghe 2 g; bột khô cô đặc hơn khoảng 3 lần nên độ mạnh tương đương, nhưng đúng nguyên liệu đa số là nghệ tươi (kho đã có ingredient nghe-tuoi) — chờ pha phân xử quyết đổi dòng hay giữ; (2) thời gian kho của file cũ (12 phút, gắn nhãn mặn nhanh) sai lệch lớn so với cả 3 nguồn có ghi thời gian (30–40 phút) — bước đã viết lại theo nguồn, nhãn \"mặn nhanh\" của món cần xem lại khi biên tập phân loại.",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 4 nguồn. Phân xử định lượng: GIỮ NGUYÊN — cá 160 g khớp mốc 5 người của nguồn Tripi, các nguồn còn lại không ghi khẩu phần; nước mắm/đường/dầu/hành tím/ớt đều nằm trong khoảng tỉ lệ nguồn. Hai bất thường ghi nhận: (1) nghệ — 3/4 nguồn dùng nghệ tươi giã (5–8 g tươi/khẩu phần), file dùng bot-nghe 2 g; bột khô cô đặc hơn khoảng 3 lần nên độ mạnh tương đương, nhưng đúng nguyên liệu đa số là nghệ tươi (kho đã có ingredient nghe-tuoi) — chờ pha phân xử quyết đổi dòng hay giữ; (2) thời gian kho của file cũ (12 phút, gắn nhãn mặn nhanh) sai lệch lớn so với cả 3 nguồn có ghi thời gian (30–40 phút) — bước đã viết lại theo nguồn, nhãn \"mặn nhanh\" của món cần xem lại khi biên tập phân loại. Phân xử bất thường LV2-003 (Phần A — LV2-004, 2026-10-31): Đổi bot-nghe 2 g → nghe-tuoi 6 g: 3/4 nguồn đã mở ở đợt 3 dùng nghệ tươi giã (5–8 g tươi/khẩu phần); bột khô cô đặc hơn ~3 lần nên 2 g bột tương đương độ mạnh, nhưng nguyên liệu đúng theo đa số nguồn là nghệ tươi (kho đã có ingredient nghe-tuoi có số). Về nhãn \"mặn nhanh\" ghi ở LV2-003: file món không lưu nhãn này (tags chỉ có loai:mon-chinh) — nhãn thuộc nhóm biên soạn DISH-005 đợt 2, không có gì để sửa trong file; thời gian kho 30–40 phút đã sửa ở bước từ đợt 3.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

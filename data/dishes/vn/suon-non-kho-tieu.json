@@ -30,11 +30,11 @@
     }
   ],
   "serving_desc": "1 đĩa",
-  "serving_grams": 220,
+  "serving_grams": 160,
   "ingredients": [
     {
       "ingredient_slug": "suon-lon",
-      "quantity": 180,
+      "quantity": 125,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -74,7 +74,15 @@
     },
     {
       "ingredient_slug": "duong-thot-not",
-      "quantity": 8,
+      "quantity": 4,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "ot-tuoi",
+      "quantity": 2,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -82,7 +90,7 @@
     },
     {
       "ingredient_slug": "hat-tieu-den",
-      "quantity": 1.5,
+      "quantity": 1.0,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -98,7 +106,7 @@
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Khác suon-rim cùng đợt ở gia vị chủ đạo (tiêu) và không thắng sốt rim ngọt — hai biến thể kho sườn phổ biến, giữ độc lập. Nghiên cứu Mức 2 đợt 3 (LV2-003, 2026-10-31): GIỮ Mức 1 — mới mở kiểm chứng được 2 nguồn độc lập (VinID; Công Thức Gia Đình); trang tổng hợp thứ ba có nội dung gần trùng VinID, nghi sao chép nên không tính độc lập. Tín hiệu phân xử chờ xác nhận khi có nguồn thứ ba: sườn 180 g cao hơn quy đổi của cả hai nguồn đã mở (100–125 g/khẩu phần theo mẻ gia đình 4), đường 8 g cao hơn số thắng màu của nguồn (3,8–4 g); ớt tươi có ở nguồn, file thiếu.",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Khác suon-rim cùng đợt ở gia vị chủ đạo (tiêu) và không thắng sốt rim ngọt — hai biến thể kho sườn phổ biến, giữ độc lập. Nghiên cứu Mức 2 đợt 3 (LV2-003, 2026-10-31): GIỮ Mức 1 — mới mở kiểm chứng được 2 nguồn độc lập (VinID; Công Thức Gia Đình); trang tổng hợp thứ ba có nội dung gần trùng VinID, nghi sao chép nên không tính độc lập. Tín hiệu phân xử chờ xác nhận khi có nguồn thứ ba: sườn 180 g cao hơn quy đổi của cả hai nguồn đã mở (100–125 g/khẩu phần theo mẻ gia đình 4), đường 8 g cao hơn số thắng màu của nguồn (3,8–4 g); ớt tươi có ở nguồn, file thiếu. Phân xử thử lại LV2-004 (Phần A, 2026-10-31): nguồn thứ ba độc lập đã mở (Saigonese Baguette) XÁC NHẬN cả 3 tín hiệu đợt 3: sườn quy đổi 100–125 g/khẩu phần ở cả 3 nguồn (VinID 400–500 g/mẻ; Công Thức Gia Đình 500 g; Saigonese 500 g/4 khẩu phần) → suon-lon 180 → 125 g; đường 3,75–4 g/khẩu phần ở cả 3 nguồn → duong-thot-not 8 → 4 g; ớt tươi có ở 3/3 nguồn → THÊM ot-tuoi 2 g. Phát sinh mới: tiêu đen 1,5 g cao hơn quy đổi nền của 3 nguồn (0,3–0,6 g/khẩu phần) 2,5–5 lần → GIẢM còn 1,0 g (giữ vị tiêu chủ đạo của tên món; các nguồn vẫn cho thêm tiêu tuỳ thích ở cuối). Hành tím/tỏi 5/5 giữ nguyên (chỉ 1 nguồn lượng hoá thấp hơn, độ tin cậy vừa). Serving 220 → 160 g theo tổng nguyên liệu thô mới (~157 g). Bước ướp 30 phút + kho 30–45 phút (3 nguồn) áp dụng khi nâng Mức 2 ở Phần B đợt 4 (LV2-004).",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

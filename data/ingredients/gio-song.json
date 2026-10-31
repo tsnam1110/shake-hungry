@@ -1,0 +1,58 @@
+{
+  "slug": "gio-song",
+  "name_vi": "Giò sống",
+  "name_en": "Raw pork paste (gio song)",
+  "category": "thit",
+  "reference_food": {
+    "fct_source": null,
+    "external_id": null,
+    "source_url": null,
+    "scientific_name": null,
+    "kcal_per_100g": null,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": null,
+    "fat_g": null,
+    "carb_g": null,
+    "fiber_g": null,
+    "water_g": null,
+    "sodium_mg": null,
+    "mapping_confidence": "low",
+    "mapping_note": "Biên soạn LV2-004 (2026-10-31) dạng null + hồ sơ: nhũ tương thịt lợn xay quết dai với mỡ, nước đá, nước mắm — nguyên liệu làm mọc (bún mọc, canh bóng thả) và chả. Sản phẩm VN có thật (Sagrifood/Nam Phong, Bakafood túi 500 g) nhưng không nơi nào công bố số dinh dưỡng. Bảng TPTP VN 2007 Nhóm 7 phần chế biến (mã 7062–7082) KHÔNG có 'giò sống' (chỉ có các dạng đã chín: giò lụa, chả...). Hai đối chiếu ở alternatives đều dính bẫy dạng chín ≠ sống nên không lấy làm số chính. VIỆC CẦN LÀM: nhãn giò sống đóng gói có công bố số (tầng 4). Trong lúc chờ, các món mọc giữ ánh xạ gio-lua (USDA branded) như bản rút gọn hiện tại để không mất phần calo đạm chính.",
+    "alternatives": [
+      {
+        "name": "Giò lụa — Bảng TPTP VN 2007, mã 7069",
+        "why_not": "Dạng đã hấp chín, nạc (nước 72 g, protein 21,5 g, fat 5,5 g) — khác xa hỗn hợp sống có mỡ/nước đá/nước mắm của giò sống; chỉ để đối chiếu.",
+        "external_id": "7069",
+        "kcal_per_100g": 136
+      },
+      {
+        "name": "Open Food Facts 'Pork Roll (gio So 1)' — Gio So Mot (Pháp), barcode 3447574604000",
+        "why_not": "Dạng chín đóng gói bán tại Pháp, không bán tại VN; cấu trúc nhũ tương có mỡ (thịt lợn 60%, mỡ lợn 14%) gần giò sống nhất nhưng vẫn là sản phẩm chín — chỉ để đối chiếu (218 kcal, fat 17 g, protein 15 g, carb 2,6 g).",
+        "external_id": "3447574604000",
+        "kcal_per_100g": 218
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "unknown",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:dong-vat",
+    "state:che-bien",
+    "allergen:ca"
+  ]
+}

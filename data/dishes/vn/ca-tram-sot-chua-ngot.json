@@ -73,6 +73,14 @@
       "confidence": "low"
     },
     {
+      "ingredient_slug": "gung",
+      "quantity": 4,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
       "ingredient_slug": "dam-gao",
       "quantity": 8,
       "unit_name": "g",
@@ -142,7 +150,7 @@
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [Đính chính 2026-10-31 — Phương án A/QA-002: dau-an 12 g → 3 g. Chỉ giữ phần dầu cho bước phụ có thật trong công thức (phi tỏi, xào cà chua/ớt chuông/hành tây làm sốt chua ngọt) — mức 3 g/khẩu phần là định lượng chế biến cho bước phi/xào nhanh, phần dầu này ăn vào cùng nhân/sốt. Dầu chiên chính không kê nữa: đã được engine mô hình hoá theo CALC-004.] Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 3 nguồn. Phân xử định lượng: GIỮ NGUYÊN toàn bộ — chỉ 1 nguồn ghi rõ khẩu phần cho cá 250 g/khẩu phần, chưa đủ ≥2 nguồn để đổi cá 180 g (ghi nhận tín hiệu để pha phân xử xem lại); cà chua, ớt chuông, hành tây, đường, bột năng đều có ít nhất 1 nguồn ủng hộ sát tỉ lệ. Bất thường ghi nhận: gừng có ở 3/3 nguồn (khử tanh + nền sốt, ~4 g/khẩu phần) mà file thiếu hẳn — chờ pha phân xử bổ sung dòng gung; dứa chỉ 1/3 nguồn, là biến thể.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [Đính chính 2026-10-31 — Phương án A/QA-002: dau-an 12 g → 3 g. Chỉ giữ phần dầu cho bước phụ có thật trong công thức (phi tỏi, xào cà chua/ớt chuông/hành tây làm sốt chua ngọt) — mức 3 g/khẩu phần là định lượng chế biến cho bước phi/xào nhanh, phần dầu này ăn vào cùng nhân/sốt. Dầu chiên chính không kê nữa: đã được engine mô hình hoá theo CALC-004.] Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 3 nguồn. Phân xử định lượng: GIỮ NGUYÊN toàn bộ — chỉ 1 nguồn ghi rõ khẩu phần cho cá 250 g/khẩu phần, chưa đủ ≥2 nguồn để đổi cá 180 g (ghi nhận tín hiệu để pha phân xử xem lại); cà chua, ớt chuông, hành tây, đường, bột năng đều có ít nhất 1 nguồn ủng hộ sát tỉ lệ. Bất thường ghi nhận: gừng có ở 3/3 nguồn (khử tanh + nền sốt, ~4 g/khẩu phần) mà file thiếu hẳn — chờ pha phân xử bổ sung dòng gung; dứa chỉ 1/3 nguồn, là biến thể. Phân xử bất thường LV2-003 (Phần A — LV2-004, 2026-10-31): Thêm gung 4 g (3/3 nguồn đã mở ở đợt 3 — khử tanh cá + nền sốt chua ngọt, ~4 g/khẩu phần) mà file thiếu hẳn.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

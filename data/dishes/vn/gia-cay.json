@@ -65,6 +65,14 @@
       "confidence": "low"
     },
     {
+      "ingredient_slug": "me",
+      "quantity": 8,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
       "ingredient_slug": "nghe-tuoi",
       "quantity": 8,
       "unit_name": "g",
@@ -116,7 +124,7 @@
   "recipe_steps": [
     "Thui hoặc khò chân giò tới khi da vàng sậm, cạo sạch lớp cháy, rửa lại nhiều lần rồi chặt miếng vừa ăn dày khoảng nửa gang tay.",
     "Riềng và nghệ cạo vỏ, giã nhuyễn; sả cắt lát hoặc băm; hành tím băm nhỏ.",
-    "Ướp chân giò với riềng, nghệ, mắm tôm, sả và gia vị trong 30–60 phút cho thấm; ướp càng kỹ món càng đượm mùi giả cầy.",
+    "Ướp chân giò với riềng, nghệ, mắm tôm, mẻ, sả và gia vị trong 30–60 phút cho thấm; ướp càng kỹ món càng đượm mùi giả cầy.",
     "Phi thơm hành tím với dầu, cho chân giò đã ướp vào xào trên lửa vừa tới khi thịt săn lại, da hơi xém và dậy mùi riềng, mắm tôm.",
     "Châm nước xâm xấp khoảng 2/3 lượng thịt, đun sôi và hớt bọt, hạ lửa nhỏ hầm khoảng 45–60 phút tới khi thịt mềm mà phần da còn dai nhẹ.",
     "Khi nước còn khoảng một nửa và hơi sánh, nêm lại mắm tôm, đường, muối cho vừa miệng, đảo đều và nấu thêm vài phút cho gia vị ngấm sâu.",
@@ -142,7 +150,7 @@
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. THIẾU NGUYÊN LIỆU: mẻ cơm (phụ — tạo vị chua lên men) — cần bổ sung vào kho. Nâng Mức 2 đợt 2 (2026-10-31): Đã đối chiếu 3 nguồn thật mở kiểm chứng (Điện máy XANH — 2 công thức trong 2 bài; VietNamNet qua congthucnauan.vn). Phân xử định lượng: giữ nguyên mọi dòng — móng giò 220 g nằm gần quy đổi của ĐMX công thức người dùng (500 g/2 người = 250 g/khẩu phần) trong khi ĐMX bản không mẻ quy đổi 440–550 g/khẩu phần và ĐMX công thức 2 ghi 3 kg chân giò/3 người (ngoại lệ bất thường ngay trong nguồn, đã loại khỏi phân xử), tức nguồn bất đồng nhau >30%; riềng (nguồn quy đổi khoảng 29–50 g/khẩu phần) và mắm tôm (khoảng 10–25 g/khẩu phần) ở mọi nguồn đều cao hơn file nhưng dao động giữa các nguồn >30%, và riềng giã phần lớn là chất xơ không ăn trực tiếp, nên giữ nguyên chờ phân xử riêng. Bất thường ghi nhận: 2/3 nguồn dùng mẻ (file đã ghi thiếu nguyên liệu mẻ từ trước); VietNamNet có đậu xanh và ĐMX công thức 2 có đậu phộng — file không có hai dòng này. Phân xử bất thường LV2-002 (Phần A, 2026-10-31): GIỮ NGUYÊN. Mẻ (2/3 nguồn): kho chưa có slug mẻ — chờ biên soạn nguyên liệu như ca cha-ca-la-vong. Đậu xanh (VietNamNet) và đậu phộng (ĐMX công thức 2) mỗi thứ 1/3 nguồn — không thêm. Riềng dùng rieng tươi như file (tổng hợp §5 nhắc \"bột riềng\" là không khớp note chi tiết).",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. THIẾU NGUYÊN LIỆU: mẻ cơm (phụ — tạo vị chua lên men) — cần bổ sung vào kho. Nâng Mức 2 đợt 2 (2026-10-31): Đã đối chiếu 3 nguồn thật mở kiểm chứng (Điện máy XANH — 2 công thức trong 2 bài; VietNamNet qua congthucnauan.vn). Phân xử định lượng: giữ nguyên mọi dòng — móng giò 220 g nằm gần quy đổi của ĐMX công thức người dùng (500 g/2 người = 250 g/khẩu phần) trong khi ĐMX bản không mẻ quy đổi 440–550 g/khẩu phần và ĐMX công thức 2 ghi 3 kg chân giò/3 người (ngoại lệ bất thường ngay trong nguồn, đã loại khỏi phân xử), tức nguồn bất đồng nhau >30%; riềng (nguồn quy đổi khoảng 29–50 g/khẩu phần) và mắm tôm (khoảng 10–25 g/khẩu phần) ở mọi nguồn đều cao hơn file nhưng dao động giữa các nguồn >30%, và riềng giã phần lớn là chất xơ không ăn trực tiếp, nên giữ nguyên chờ phân xử riêng. Bất thường ghi nhận: 2/3 nguồn dùng mẻ (file đã ghi thiếu nguyên liệu mẻ từ trước); VietNamNet có đậu xanh và ĐMX công thức 2 có đậu phộng — file không có hai dòng này. Phân xử bất thường LV2-002 (Phần A, 2026-10-31): GIỮ NGUYÊN. Mẻ (2/3 nguồn): kho chưa có slug mẻ — chờ biên soạn nguyên liệu như ca cha-ca-la-vong. Đậu xanh (VietNamNet) và đậu phộng (ĐMX công thức 2) mỗi thứ 1/3 nguồn — không thêm. Riềng dùng rieng tươi như file (tổng hợp §5 nhắc \"bột riềng\" là không khớp note chi tiết). Phân xử LV2-004 (Phần A, 2026-10-31): mẻ đã được biên soạn (slug 'me', null + hồ sơ) → THÊM dòng me 8 g (llm_suggested) cho khâu ướp theo 2/3 nguồn đã mở đợt 2 (cùng ca chả cá Lã Vọng 3/3); bước 3 đã bổ sung mẻ. Dòng chưa có số nên tạm không tính calo phần này, món mang cờ nguyên liệu chưa có số theo cơ chế hiện hành.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

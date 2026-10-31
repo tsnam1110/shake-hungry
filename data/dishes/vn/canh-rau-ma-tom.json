@@ -34,7 +34,7 @@
   "ingredients": [
     {
       "ingredient_slug": "rau-ma",
-      "quantity": 50,
+      "quantity": 65,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -50,6 +50,14 @@
     },
     {
       "ingredient_slug": "hanh-tim",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dau-an",
       "quantity": 3,
       "unit_name": "g",
       "is_optional": false,
@@ -74,7 +82,7 @@
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nghiên cứu Mức 2 đợt 3 (LV2-003, 2026-10-31): GIỮ Mức 1 — mới mở kiểm chứng được 2 nguồn (Lofita — khớp chính xác rau má 50 g + tôm 50 g của file; Đầu Bếp Gia Đình — lệch ngược chiều rau 75/tôm 37,5) do provider chặn 429 ở nguồn thứ ba; hai nguồn không đồng thuận một hướng nên không đề xuất đổi định lượng. Bất thường ghi nhận: cả 2 nguồn đã mở đều phi hành/tỏi bằng dầu và xào tôm trước khi cho nước — file không có dòng dau-an và bước đun nước thả tôm sống; cả 2 nguồn đều băm/giã dập tôm và ướp trước khi xào.",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nghiên cứu Mức 2 đợt 3 (LV2-003, 2026-10-31): GIỮ Mức 1 — mới mở kiểm chứng được 2 nguồn (Lofita — khớp chính xác rau má 50 g + tôm 50 g của file; Đầu Bếp Gia Đình — lệch ngược chiều rau 75/tôm 37,5) do provider chặn 429 ở nguồn thứ ba; hai nguồn không đồng thuận một hướng nên không đề xuất đổi định lượng. Bất thường ghi nhận: cả 2 nguồn đã mở đều phi hành/tỏi bằng dầu và xào tôm trước khi cho nước — file không có dòng dau-an và bước đun nước thả tôm sống; cả 2 nguồn đều băm/giã dập tôm và ướp trước khi xào. Phân xử thử lại LV2-004 (Phần A, 2026-10-31): nguồn thứ ba đã mở (Điện Máy XANH — mẻ 3 người tường minh) → đủ 3 nguồn đã mở. Dầu ăn + phi hành và xào tôm trước khi cho nước: 3/3 nguồn đồng thuận (dầu quy đổi 2–5 g/khẩu phần) → THÊM dau-an 3 g; kỹ thuật bước nấu sửa khi nâng Mức 2 ở Phần B. Rau má: 2/3 nguồn cao hơn file (66,7 và 75 g so với 50 g; Lofita khớp 50 g) → rau-ma 50 → 65 g. Hành tím → 5 g (ĐMX ~6,7 g; hai nguồn còn lại băm ít, không lượng hoá). Tôm GIỮ 50 g (ba nguồn phân tán 37,5–83,3 g; file nằm giữa dải và khớp chính xác Lofita). Nước mắm 5 g: 0/3 nguồn dùng trực tiếp (cả ba nêm muối/hạt nêm) — GIỮ dòng kèm ghi nhận tranh luận: đây là gia vị nêm hoán đổi tương đương chứ không phải dòng cấu trúc của món. Nâng Mức 2 ở Phần B đợt 4 (LV2-004).",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

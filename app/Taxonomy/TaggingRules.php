@@ -85,6 +85,7 @@ final class TaggingRules
         'gao-nep' => 'kho', 'gao-te' => 'kho', 'y-di' => 'kho',
         'bot-bang' => 'kho', 'bot-gao' => 'kho', 'bot-mi' => 'kho', 'bot-nang' => 'kho',
         'bot-nep' => 'kho', 'bot-ngo' => 'kho',
+        'bot-chien-gion' => 'kho', // bột trộn khô đóng gói — LV2-004
         'bot-canh' => 'kho', 'bot-cari' => 'kho', 'bot-nghe' => 'kho', 'bot-que' => 'kho',
         'ngu-vi-huong' => 'kho', 'ot-bot' => 'kho', 'hat-tieu-den' => 'kho', 'hat-dieu-mau' => 'kho',
         'hoa-hoi' => 'kho', 'thao-qua' => 'kho', 'ky-tu' => 'kho', 'la-nguyet-que' => 'kho',
@@ -105,6 +106,7 @@ final class TaggingRules
         'mam-tom-chua' => 'len-men', // tôm ủ chua lên men — đợt DISH-005 đợt 2
         'ruou-trang' => 'len-men', 'ruou-vang-do' => 'len-men', 'bia' => 'len-men',
         'dam-gao' => 'len-men', 'nuoc-tuong' => 'len-men', 'tuong-den' => 'len-men',
+        'me' => 'len-men', 'giam-bong' => 'len-men', // cơm mẻ + giấm bỗng lên men — LV2-004
         'dua-cai-muoi' => 'len-men',
         // Đóng hộp / đóng gói dạng lỏng
         'sua-dac' => 'dong-hop', 'sua-tuoi' => 'dong-hop', 'sua-dau-nanh' => 'dong-hop',
@@ -124,6 +126,7 @@ final class TaggingRules
         'trung-vit-muoi' => 'che-bien', 'banh-phong-tom-chien' => 'che-bien',
         'dau-hao' => 'che-bien', 'sa-te' => 'che-bien', 'xot-mayonnaise' => 'che-bien',
         'heo-quay' => 'che-bien', // thành phẩm quay sẵn — đợt DISH-005 đợt 2
+        'gio-song' => 'che-bien', 'nuoc-mau' => 'che-bien', // nhũ tương sống đóng gói + nước thắng đóng chai — LV2-004
     ];
 
     /** Nhãn dị ứng theo slug nguyên liệu (TAXONOMY.md §4). */
@@ -142,6 +145,7 @@ final class TaggingRules
         'muc-ong' => ['dong-vat-co-vo'], 'muc-kho' => ['dong-vat-co-vo'], 'bach-tuoc' => ['dong-vat-co-vo'],
         'dau-hao' => ['dong-vat-co-vo'],
         'luon' => ['ca'], 'cha-ca-vien' => ['ca', 'lua-mi'], 'gio-lua' => ['ca'],
+        'gio-song' => ['ca'], // có nước mắm trong thành phần — LV2-004
         'nuoc-mam-cong-nghiep' => ['ca'], 'nuoc-mam-truyen-thong' => ['ca'],
         'mam-ca-linh' => ['ca'], 'mam-ca-sac' => ['ca'], 'mam-nem' => ['ca'],
         'trung-ga' => ['trung'], 'trung-vit' => ['trung'], 'trung-cut' => ['trung'],
@@ -153,7 +157,7 @@ final class TaggingRules
         'dau-phu-chien' => ['dau-nanh'], 'tau-hu-ky' => ['dau-nanh'], 'chao' => ['dau-nanh'],
         'tuong-ban' => ['dau-nanh'], 'nuoc-tuong' => ['dau-nanh'], 'tuong-den' => ['dau-nanh', 'lua-mi'],
         'xuc-xich' => ['dau-nanh', 'lua-mi'], 'pate-gan' => ['sua', 'lua-mi'], 'bia' => ['lua-mi'],
-        'bot-mi' => ['lua-mi'], 'banh-mi' => ['lua-mi'], 'mi-an-lien' => ['lua-mi'],
+        'bot-mi' => ['lua-mi'], 'bot-chien-gion' => ['lua-mi'], 'banh-mi' => ['lua-mi'], 'mi-an-lien' => ['lua-mi'],
         'nui-kho' => ['lua-mi'], 'bot-chien-xu' => ['lua-mi'], 'vo-hoanh-thanh' => ['trung', 'lua-mi'],
         'mi-can' => ['lua-mi'],
         'suon-chay' => ['dau-nanh', 'lua-mi'], 'cha-lua-chay' => ['dau-nanh', 'lua-mi'], // đạm đậu nành + gluten/bột lúa mì — đợt DISH-005 đợt 3
