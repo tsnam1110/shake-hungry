@@ -34,9 +34,82 @@ class DishController extends Controller
         if ($request->filled('completeness_level')) {
             $query->where('completeness_level', (int) $request->query('completeness_level'));
         }
-        $query->latest('id');
+        // ADM-008: lọc theo vùng miền, cách chế biến, chế độ ăn (nhãn suy) và
+        // tình trạng đã tính được dinh dưỡng hay chưa.
+        if ($regionId = $request->query('region_id')) {
+            $query->where('region_id', (int) $regionId);
+        }
+        if ($method = $request->query('cooking_method')) {
+            $query->where('cooking_method', $method);
+        }
+        if ($diet = $request->query('diet')) {
+            $query->whereHas('tags', fn ($t) => $t->where('slug', 'diet:'.$diet));
+        }
+        if ($nutrition = $request->query('nutrition')) {
+            if ($nutrition === 'has') {
+                $query->whereHas('nutrition');
+            } elseif ($nutrition === 'missing') {
+                $query->whereDoesntHave('nutrition');
+            }
+        }
+        // ADM-008 (đợt 2): sắp xếp theo cột. Sắp theo tên phải JOIN tên chính
+        // tiếng Việt trong dish_names; các cột còn lại thuộc bảng dishes.
+        $sort = (string) $request->query('sort', '');
+        $dir = $request->query('dir') === 'desc' ? 'desc' : 'asc';
+        if ($sort === 'name') {
+            $query->select('dishes.*')
+                ->leftJoin('dish_names', function ($join) {
+                    $join->on('dish_names.dish_id', '=', 'dishes.id')
+                        ->where('dish_names.locale', 'vi')
+                        ->where('dish_names.is_primary', true);
+                })
+                ->orderBy('dish_names.name', $dir);
+        } elseif (in_array($sort, ['completeness_level', 'status', 'needs_review', 'created_at'], true)) {
+            $query->orderBy($sort, $dir);
+        } else {
+            $query->latest('id');
+        }
 
         return response()->json($query->paginate(min(100, max(1, (int) $request->query('per_page', 20)))));
+    }
+
+    /** ADM-008 (đợt 2): thao tác hàng loạt — duyệt / mở lại / tính calo / xoá. */
+    public function bulk(Request $request, DishNutritionService $service): JsonResponse
+    {
+        $data = $request->validate([
+            'action' => ['required', Rule::in(['approve', 'reopen', 'delete', 'compute'])],
+            'ids' => ['required', 'array', 'min:1', 'max:200'],
+            'ids.*' => ['integer'],
+        ]);
+        $affected = 0;
+        $skipped = 0;
+        foreach (Dish::whereIn('id', $data['ids'])->get() as $dish) {
+            if ($data['action'] === 'approve') {
+                $dish->update([
+                    'needs_review' => false,
+                    'reviewed_by' => $request->user()->email,
+                    'reviewed_at' => now(),
+                ]);
+            } elseif ($data['action'] === 'reopen') {
+                $dish->update(['needs_review' => true]);
+            } elseif ($data['action'] === 'delete') {
+                $dish->delete();
+            } else { // compute — bỏ qua món chưa có nguyên liệu hoặc engine chưa tính được
+                if ($dish->dishIngredients()->count() === 0) {
+                    $skipped++;
+                    continue;
+                }
+                $row = $service->computeAndStore($dish, $service->pickFctSource($dish));
+                if ($row === null) {
+                    $skipped++;
+                    continue;
+                }
+            }
+            AdminAuditLog::record($data['action'] === 'delete' ? 'delete' : $data['action'], $dish, ['bulk' => true]);
+            $affected++;
+        }
+
+        return response()->json(['affected' => $affected, 'skipped' => $skipped]);
     }
 
     public function show(Dish $dish): JsonResponse

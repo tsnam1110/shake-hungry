@@ -3,6 +3,7 @@ import {
     Button, Checkbox, Drawer, Form, Input, InputNumber, Popconfirm, Select, Space, Table, Tag, Typography, message,
 } from 'antd';
 import api from '../api';
+import FilterBar from '../components/FilterBar';
 
 // Module quản trị hồ sơ hoa quả (FRUIT-005) — mục riêng của nhánh hoa quả.
 // Dinh dưỡng/dị ứng không sửa ở đây: thuộc nguyên liệu liên kết (QT-3/FRUIT-MODULE §1).
@@ -39,6 +40,12 @@ export default function Fruits() {
     const [loading, setLoading] = useState(false);
     const [q, setQ] = useState('');
     const [reviewFilter, setReviewFilter] = useState(undefined);
+    const [groupFilter, setGroupFilter] = useState(undefined);
+    const [originFilter, setOriginFilter] = useState(undefined);
+    const [pricesFilter, setPricesFilter] = useState(undefined);
+    const [stats, setStats] = useState(null);
+    const [selected, setSelected] = useState([]);
+    const [sorter, setSorter] = useState({});
     const [drawer, setDrawer] = useState(null); // null | 'new' | fruit object
     const [ingredientOptions, setIngredientOptions] = useState([]);
     const [form] = Form.useForm();
@@ -49,15 +56,50 @@ export default function Fruits() {
             const params = { page, per_page: 20 };
             if (q) params.q = q;
             if (reviewFilter !== undefined) params.needs_review = reviewFilter;
+            if (groupFilter) params.group = groupFilter;
+            if (originFilter) params.origin = originFilter;
+            if (pricesFilter) params.prices = pricesFilter;
+            if (sorter.field) { params.sort = sorter.field; params.dir = sorter.dir; }
             const { data } = await api.get('/fruits', { params });
             setRows(data.data);
             setMeta({ current_page: data.current_page, per_page: data.per_page, total: data.total });
         } finally {
             setLoading(false);
         }
-    }, [q, reviewFilter]);
+    }, [q, reviewFilter, groupFilter, originFilter, pricesFilter, sorter]);
 
     useEffect(() => { load(1); }, [load]);
+
+    // ADM-008: số liệu tổng cho thanh thống kê đầu trang.
+    const loadStats = useCallback(() => {
+        api.get('/dashboard').then(({ data }) => setStats(data.fruits)).catch(() => {});
+    }, []);
+    useEffect(() => { loadStats(); }, [loadStats]);
+
+    // ADM-008 đợt 2: sắp xếp theo cột + thao tác hàng loạt.
+    const handleTableChange = (pag, _filters, sorterObj) => {
+        const next = sorterObj?.order
+            ? { field: sorterObj.field ?? sorterObj.columnKey, dir: sorterObj.order === 'descend' ? 'desc' : 'asc' }
+            : {};
+        if (next.field !== sorter.field || next.dir !== sorter.dir) {
+            setSorter(next);
+        } else {
+            load(pag.current);
+        }
+    };
+    const sortOrderFor = (field) => (sorter.field === field ? (sorter.dir === 'desc' ? 'descend' : 'ascend') : null);
+
+    const doBulk = async (action) => {
+        try {
+            const { data } = await api.post('/fruits/bulk', { action, ids: selected });
+            message.success(`Đã xử lý ${data.affected} hồ sơ quả`);
+            setSelected([]);
+            load(meta.current_page);
+            loadStats();
+        } catch (e) {
+            message.error(e.response?.data?.message ?? 'Thao tác hàng loạt thất bại');
+        }
+    };
 
     const openEdit = async (record) => {
         if (record) {
@@ -119,27 +161,70 @@ export default function Fruits() {
                 <Typography.Title level={4} style={{ margin: 0 }}>Hoa quả</Typography.Title>
                 <Button type="primary" onClick={() => openEdit(null)}>+ Thêm hồ sơ quả</Button>
             </Space>
-            <Space style={{ marginBottom: 12 }}>
-                <Input.Search placeholder="Tìm theo tên (kể cả tên gọi khác)…" allowClear style={{ width: 300 }}
-                    onSearch={(v) => setQ(v)} onChange={(e) => { if (!e.target.value) setQ(''); }} />
-                <Select placeholder="Trạng thái duyệt" allowClear style={{ width: 190 }} value={reviewFilter}
-                    onChange={setReviewFilter}
-                    options={[{ value: true, label: 'Chờ duyệt' }, { value: false, label: 'Đã duyệt' }]} />
-            </Space>
+            <FilterBar items={[
+                {
+                    key: 'q', active: !!q,
+                    node: <Input.Search placeholder="Tìm theo tên (kể cả tên gọi khác)…" allowClear style={{ width: 300 }}
+                        onSearch={(v) => setQ(v)} onChange={(e) => { if (!e.target.value) setQ(''); }} />,
+                },
+                {
+                    key: 'review', active: reviewFilter !== undefined,
+                    node: <Select placeholder="Trạng thái duyệt" allowClear style={{ width: 190 }} value={reviewFilter}
+                        onChange={setReviewFilter}
+                        options={[{ value: true, label: 'Chờ duyệt' }, { value: false, label: 'Đã duyệt' }]} />,
+                },
+                {
+                    key: 'group', active: !!groupFilter,
+                    node: <Select placeholder="Nhóm quả" allowClear style={{ width: 160 }} value={groupFilter}
+                        onChange={setGroupFilter} options={GROUPS} />,
+                },
+                {
+                    key: 'origin', active: !!originFilter,
+                    node: <Select placeholder="Nguồn gốc" allowClear style={{ width: 160 }} value={originFilter}
+                        onChange={setOriginFilter} options={ORIGINS} />,
+                },
+                {
+                    key: 'prices', active: !!pricesFilter,
+                    node: <Select placeholder="Dữ liệu giá" allowClear style={{ width: 170 }} value={pricesFilter}
+                        onChange={setPricesFilter}
+                        options={[{ value: 'has', label: 'Đã có giá' }, { value: 'none', label: 'Chưa có giá' }]} />,
+                },
+            ]} />
+            {stats && (
+                <Typography.Text type="secondary" style={{ display: 'block', marginBottom: 12 }}>
+                    Tổng <b>{stats.total}</b> hồ sơ · Chờ duyệt <b>{stats.pending_review}</b> · Đã có giá <b>{stats.with_prices}</b> · Chưa có giá <b>{stats.total - stats.with_prices}</b> · Tổng dòng giá <b>{stats.price_rows}</b> · Đang hiển thị <b>{meta.total}</b> theo bộ lọc
+                </Typography.Text>
+            )}
+            {selected.length > 0 && (
+                <Space style={{ marginBottom: 12 }}>
+                    <Typography.Text strong>Đã chọn {selected.length} bản ghi:</Typography.Text>
+                    <Button size="small" type="primary" onClick={() => doBulk('approve')}>Duyệt</Button>
+                    <Button size="small" onClick={() => doBulk('reopen')}>Mở lại</Button>
+                    <Popconfirm title={`Xoá ${selected.length} hồ sơ quả đã chọn?`} onConfirm={() => doBulk('delete')}>
+                        <Button size="small" danger>Xoá</Button>
+                    </Popconfirm>
+                    <Button size="small" type="text" onClick={() => setSelected([])}>Bỏ chọn</Button>
+                </Space>
+            )}
             <Table
                 rowKey="id" loading={loading} dataSource={rows}
-                pagination={{ current: meta.current_page, pageSize: meta.per_page, total: meta.total, onChange: load }}
+                rowSelection={{ selectedRowKeys: selected, onChange: setSelected }}
+                onChange={handleTableChange}
+                pagination={{
+                    current: meta.current_page, pageSize: meta.per_page, total: meta.total,
+                    showTotal: (total, range) => `Bản ghi ${range[0]}–${range[1]} · Theo bộ lọc: ${total} / Tổng: ${stats?.total ?? '—'}`,
+                }}
                 columns={[
-                    { title: 'Tên quả', render: (_, r) => r.ingredient?.name_vi ?? r.slug },
-                    { title: 'Nhóm', dataIndex: 'classification_group', render: groupLabel },
-                    { title: 'Nguồn gốc', dataIndex: 'origin', render: originLabel },
+                    { title: 'Tên quả', key: 'name', sorter: true, sortOrder: sortOrderFor('name'), render: (_, r) => r.ingredient?.name_vi ?? r.slug },
+                    { title: 'Nhóm', dataIndex: 'classification_group', sorter: true, sortOrder: sortOrderFor('classification_group'), render: groupLabel },
+                    { title: 'Nguồn gốc', dataIndex: 'origin', sorter: true, sortOrder: sortOrderFor('origin'), render: originLabel },
                     {
                         title: 'Tháng có hàng',
                         render: (_, r) => `${(r.availability_months ?? []).length} tháng${(r.main_season_months ?? []).length ? ` · vụ chính ${(r.main_season_months).join(', ')}` : ''}`,
                     },
                     { title: 'Dòng giá', render: (_, r) => (r.prices ?? []).length },
                     {
-                        title: 'Duyệt', dataIndex: 'needs_review',
+                        title: 'Duyệt', dataIndex: 'needs_review', sorter: true, sortOrder: sortOrderFor('needs_review'),
                         render: (v, r) => v
                             ? <Tag color="red">Chờ duyệt</Tag>
                             : <Tag color="green">Đã duyệt{r.reviewed_by ? ` · ${r.reviewed_by}` : ''}</Tag>,

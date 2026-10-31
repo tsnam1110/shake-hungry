@@ -59,17 +59,21 @@ Route::middleware(['auth', 'admin'])->prefix('admin/api')->group(function () {
     Route::get('/regions', [RegionController::class, 'index']);
     Route::get('/reference-foods', [ReferenceFoodController::class, 'index']);
 
+    Route::post('/ingredients/bulk', [IngredientController::class, 'bulk']);
     Route::apiResource('ingredients', IngredientController::class);
     Route::post('/ingredients/{ingredient}/review', [IngredientController::class, 'review']);
 
     Route::get('/dishes/similar', [DishController::class, 'similar']);
     Route::post('/dishes/preview-nutrition', [DishController::class, 'previewNutrition']);
+    Route::post('/dishes/bulk', [DishController::class, 'bulk']);
     Route::apiResource('dishes', DishController::class);
     Route::post('/dishes/{dish}/review', [DishController::class, 'review']);
 
+    Route::post('/fruits/bulk', [AdminFruitController::class, 'bulk']);
     Route::apiResource('fruits', AdminFruitController::class);
     Route::post('/fruits/{fruit}/review', [AdminFruitController::class, 'review']);
     Route::get('/contributions', [\App\Http\Controllers\Admin\ContributionController::class, 'index']);
+    Route::post('/contributions/bulk', [\App\Http\Controllers\Admin\ContributionController::class, 'bulk']);
     Route::post('/contributions/{contribution}/review', [\App\Http\Controllers\Admin\ContributionController::class, 'review']);
     Route::post('/dishes/{dish}/compute', [DishController::class, 'compute']);
 });

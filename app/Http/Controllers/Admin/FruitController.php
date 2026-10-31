@@ -36,9 +36,59 @@ class FruitController extends Controller
         if ($group = $request->query('group')) {
             $query->where('classification_group', $group);
         }
-        $query->orderBy('slug');
+        // ADM-008: lọc theo nguồn gốc + đã có dòng giá hay chưa.
+        if ($origin = $request->query('origin')) {
+            $query->where('origin', $origin);
+        }
+        if ($prices = $request->query('prices')) {
+            if ($prices === 'has') {
+                $query->has('prices');
+            } elseif ($prices === 'none') {
+                $query->doesntHave('prices');
+            }
+        }
+        // ADM-008 (đợt 2): sắp xếp theo cột; sắp theo tên JOIN sang nguyên liệu liên kết.
+        $sort = (string) $request->query('sort', '');
+        $dir = $request->query('dir') === 'desc' ? 'desc' : 'asc';
+        if ($sort === 'name') {
+            $query->select('fruits.*')
+                ->leftJoin('ingredients', 'ingredients.id', '=', 'fruits.ingredient_id')
+                ->orderBy('ingredients.name_vi', $dir);
+        } elseif (in_array($sort, ['classification_group', 'origin', 'needs_review', 'created_at'], true)) {
+            $query->orderBy($sort, $dir);
+        } else {
+            $query->orderBy('slug');
+        }
 
         return response()->json($query->paginate(min(100, max(1, (int) $request->query('per_page', 20)))));
+    }
+
+    /** ADM-008 (đợt 2): thao tác hàng loạt — duyệt / mở lại / xoá. */
+    public function bulk(Request $request): JsonResponse
+    {
+        $data = $request->validate([
+            'action' => ['required', Rule::in(['approve', 'reopen', 'delete'])],
+            'ids' => ['required', 'array', 'min:1', 'max:200'],
+            'ids.*' => ['integer'],
+        ]);
+        $affected = 0;
+        foreach (Fruit::whereIn('id', $data['ids'])->get() as $fruit) {
+            if ($data['action'] === 'approve') {
+                $fruit->update([
+                    'needs_review' => false,
+                    'reviewed_by' => $request->user()->email,
+                    'reviewed_at' => now()->toDateString(),
+                ]);
+            } elseif ($data['action'] === 'reopen') {
+                $fruit->update(['needs_review' => true]);
+            } else {
+                $fruit->delete();
+            }
+            AdminAuditLog::record($data['action'] === 'delete' ? 'delete' : $data['action'], $fruit, ['bulk' => true]);
+            $affected++;
+        }
+
+        return response()->json(['affected' => $affected]);
     }
 
     public function show(Fruit $fruit): JsonResponse

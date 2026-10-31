@@ -4,11 +4,25 @@ import {
     Table, Tag, Typography, message,
 } from 'antd';
 import api from '../api';
+import FilterBar from '../components/FilterBar';
 
 const CONFIDENCE = [
     { value: 'high', label: 'Cao (high)' },
     { value: 'medium', label: 'Trung bình (medium)' },
     { value: 'low', label: 'Thấp (low)' },
+];
+
+// ADM-008: 9 nhóm nguyên liệu theo phân loại dự án.
+const CATEGORIES = [
+    { value: 'thit', label: 'Thịt' },
+    { value: 'thuy-san', label: 'Thuỷ sản' },
+    { value: 'tinh-bot', label: 'Tinh bột' },
+    { value: 'rau-cu', label: 'Rau củ' },
+    { value: 'rau-gia-vi', label: 'Rau gia vị' },
+    { value: 'gia-vi', label: 'Gia vị' },
+    { value: 'dau-mo', label: 'Dầu mỡ' },
+    { value: 'trai-cay', label: 'Trái cây' },
+    { value: 'khac', label: 'Khác' },
 ];
 
 export default function Ingredients() {
@@ -17,6 +31,12 @@ export default function Ingredients() {
     const [loading, setLoading] = useState(false);
     const [q, setQ] = useState('');
     const [reviewFilter, setReviewFilter] = useState(undefined);
+    const [categoryFilter, setCategoryFilter] = useState(undefined);
+    const [confidenceFilter, setConfidenceFilter] = useState(undefined);
+    const [nutritionFilter, setNutritionFilter] = useState(undefined);
+    const [stats, setStats] = useState(null);
+    const [selected, setSelected] = useState([]);
+    const [sorter, setSorter] = useState({});
     const [drawer, setDrawer] = useState(null); // null | 'new' | ingredient object
     const [form] = Form.useForm();
     const confidence = Form.useWatch('mapping_confidence', form);
@@ -29,15 +49,51 @@ export default function Ingredients() {
             const params = { page, per_page: 20 };
             if (q) params.q = q;
             if (reviewFilter !== undefined) params.needs_review = reviewFilter ? 1 : 0;
+            if (categoryFilter) params.category = categoryFilter;
+            if (confidenceFilter) params.mapping_confidence = confidenceFilter;
+            if (nutritionFilter) params.nutrition = nutritionFilter;
+            if (sorter.field) { params.sort = sorter.field; params.dir = sorter.dir; }
             const { data } = await api.get('/ingredients', { params });
             setRows(data.data);
             setMeta(data);
         } finally {
             setLoading(false);
         }
-    }, [q, reviewFilter]);
+    }, [q, reviewFilter, categoryFilter, confidenceFilter, nutritionFilter, sorter]);
 
     useEffect(() => { load(1); }, [load]);
+
+    // ADM-008: số liệu tổng cho thanh thống kê đầu trang.
+    const loadStats = useCallback(() => {
+        api.get('/dashboard').then(({ data }) => setStats(data.ingredients)).catch(() => {});
+    }, []);
+    useEffect(() => { loadStats(); }, [loadStats]);
+
+    // ADM-008 đợt 2: đổi sắp xếp → tải lại từ trang 1; đổi trang → tải trang đó.
+    const handleTableChange = (pag, _filters, sorterObj) => {
+        const next = sorterObj?.order
+            ? { field: sorterObj.field ?? sorterObj.columnKey, dir: sorterObj.order === 'descend' ? 'desc' : 'asc' }
+            : {};
+        if (next.field !== sorter.field || next.dir !== sorter.dir) {
+            setSorter(next);
+        } else {
+            load(pag.current);
+        }
+    };
+    const sortOrderFor = (field) => (sorter.field === field ? (sorter.dir === 'desc' ? 'descend' : 'ascend') : null);
+
+    // ADM-008 đợt 2: thao tác hàng loạt trên các bản ghi đã chọn.
+    const doBulk = async (action) => {
+        try {
+            const { data } = await api.post('/ingredients/bulk', { action, ids: selected });
+            message.success(`Đã xử lý ${data.affected} nguyên liệu`);
+            setSelected([]);
+            load(meta.current_page);
+            loadStats();
+        } catch (e) {
+            message.error(e.response?.data?.message ?? 'Thao tác hàng loạt thất bại');
+        }
+    };
 
     const searchRef = (value) => {
         clearTimeout(refTimer.current);
@@ -94,23 +150,66 @@ export default function Ingredients() {
                 <Typography.Title level={4} style={{ margin: 0 }}>Nguyên liệu</Typography.Title>
                 <Button type="primary" onClick={() => openEdit(null)}>+ Thêm nguyên liệu</Button>
             </Space>
-            <Space style={{ marginBottom: 12 }}>
-                <Input.Search placeholder="Tìm theo tên…" allowClear style={{ width: 280 }}
-                    onSearch={(v) => setQ(v)} onChange={(e) => { if (!e.target.value) setQ(''); }} />
-                <Select placeholder="Trạng thái duyệt" allowClear style={{ width: 190 }} value={reviewFilter}
-                    onChange={setReviewFilter}
-                    options={[{ value: true, label: 'Chờ duyệt' }, { value: false, label: 'Đã duyệt' }]} />
-            </Space>
+            <FilterBar items={[
+                {
+                    key: 'q', active: !!q,
+                    node: <Input.Search placeholder="Tìm theo tên…" allowClear style={{ width: 280 }}
+                        onSearch={(v) => setQ(v)} onChange={(e) => { if (!e.target.value) setQ(''); }} />,
+                },
+                {
+                    key: 'review', active: reviewFilter !== undefined,
+                    node: <Select placeholder="Trạng thái duyệt" allowClear style={{ width: 190 }} value={reviewFilter}
+                        onChange={setReviewFilter}
+                        options={[{ value: true, label: 'Chờ duyệt' }, { value: false, label: 'Đã duyệt' }]} />,
+                },
+                {
+                    key: 'category', active: !!categoryFilter,
+                    node: <Select placeholder="Nhóm nguyên liệu" allowClear style={{ width: 170 }} value={categoryFilter}
+                        onChange={setCategoryFilter} options={CATEGORIES} />,
+                },
+                {
+                    key: 'confidence', active: !!confidenceFilter,
+                    node: <Select placeholder="Độ tin cậy ánh xạ" allowClear style={{ width: 180 }} value={confidenceFilter}
+                        onChange={setConfidenceFilter} options={CONFIDENCE} />,
+                },
+                {
+                    key: 'nutrition', active: !!nutritionFilter,
+                    node: <Select placeholder="Số dinh dưỡng" allowClear style={{ width: 180 }} value={nutritionFilter}
+                        onChange={setNutritionFilter}
+                        options={[{ value: 'has', label: 'Đã có số' }, { value: 'missing', label: 'Thiếu số' }]} />,
+                },
+            ]} />
+            {stats && (
+                <Typography.Text type="secondary" style={{ display: 'block', marginBottom: 12 }}>
+                    Tổng <b>{stats.total}</b> nguyên liệu · Chờ duyệt <b>{stats.pending_review}</b> · Thiếu số dinh dưỡng <b>{stats.missing_nutrition}</b> · Chưa kiểm định <b>{stats.unverified}</b> · Có tên gọi khác <b>{stats.aliases}</b> · Đang hiển thị <b>{meta.total}</b> theo bộ lọc
+                </Typography.Text>
+            )}
+            {selected.length > 0 && (
+                <Space style={{ marginBottom: 12 }}>
+                    <Typography.Text strong>Đã chọn {selected.length} bản ghi:</Typography.Text>
+                    <Button size="small" type="primary" onClick={() => doBulk('approve')}>Duyệt</Button>
+                    <Button size="small" onClick={() => doBulk('reopen')}>Mở lại</Button>
+                    <Popconfirm title={`Xoá ${selected.length} nguyên liệu đã chọn?`} onConfirm={() => doBulk('delete')}>
+                        <Button size="small" danger>Xoá</Button>
+                    </Popconfirm>
+                    <Button size="small" type="text" onClick={() => setSelected([])}>Bỏ chọn</Button>
+                </Space>
+            )}
             <Table
                 rowKey="id" loading={loading} dataSource={rows}
-                pagination={{ current: meta.current_page, pageSize: meta.per_page, total: meta.total, onChange: load }}
+                rowSelection={{ selectedRowKeys: selected, onChange: setSelected }}
+                onChange={handleTableChange}
+                pagination={{
+                    current: meta.current_page, pageSize: meta.per_page, total: meta.total,
+                    showTotal: (total, range) => `Bản ghi ${range[0]}–${range[1]} · Theo bộ lọc: ${total} / Tổng: ${stats?.total ?? '—'}`,
+                }}
                 columns={[
-                    { title: 'Tên tiếng Việt', dataIndex: 'name_vi' },
-                    { title: 'Tên tiếng Anh', dataIndex: 'name_en' },
-                    { title: 'Nhóm', dataIndex: 'category' },
+                    { title: 'Tên tiếng Việt', dataIndex: 'name_vi', sorter: true, sortOrder: sortOrderFor('name_vi') },
+                    { title: 'Tên tiếng Anh', dataIndex: 'name_en', sorter: true, sortOrder: sortOrderFor('name_en') },
+                    { title: 'Nhóm', dataIndex: 'category', sorter: true, sortOrder: sortOrderFor('category') },
                     { title: 'Kcal/100g (tham chiếu)', render: (_, r) => r.reference_food?.kcal_per_100g ?? '—' },
                     {
-                        title: 'Duyệt', dataIndex: 'needs_review',
+                        title: 'Duyệt', dataIndex: 'needs_review', sorter: true, sortOrder: sortOrderFor('needs_review'),
                         render: (v, r) => v
                             ? <Tag color="red">Chờ duyệt</Tag>
                             : <Tag color="green">Đã duyệt{r.reviewed_by ? ` · ${r.reviewed_by}` : ''}</Tag>,

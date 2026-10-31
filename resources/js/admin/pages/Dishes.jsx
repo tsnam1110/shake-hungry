@@ -4,6 +4,7 @@ import {
     Space, Table, Tag, Typography, message,
 } from 'antd';
 import api from '../api';
+import FilterBar from '../components/FilterBar';
 
 const SLOT_OPTIONS = [
     { value: 'sang', label: 'Sáng' },
@@ -13,11 +14,39 @@ const SLOT_OPTIONS = [
     { value: 'an-vat', label: 'Ăn vặt' },
 ];
 
+// ADM-008: cách chế biến có trong kho + chế độ ăn theo nhãn suy.
+const METHOD_OPTIONS = [
+    { value: 'nau', label: 'Nấu/canh' },
+    { value: 'hap', label: 'Hấp' },
+    { value: 'luoc', label: 'Luộc' },
+    { value: 'xao', label: 'Xào' },
+    { value: 'chien', label: 'Chiên' },
+    { value: 'chien-ngap-dau', label: 'Chiên ngập dầu' },
+    { value: 'nuong', label: 'Nướng' },
+    { value: 'kho', label: 'Kho' },
+    { value: 'tron', label: 'Trộn' },
+    { value: 'song', label: 'Sống/gỏi' },
+];
+const DIET_OPTIONS = [
+    { value: 'chay', label: 'Chay' },
+    { value: 'chay-trung-sua', label: 'Chay trứng–sữa' },
+    { value: 'man', label: 'Mặn' },
+];
+
 export default function Dishes() {
     const [rows, setRows] = useState([]);
     const [meta, setMeta] = useState({ current_page: 1, per_page: 20, total: 0 });
     const [loading, setLoading] = useState(false);
     const [q, setQ] = useState('');
+    const [reviewFilter, setReviewFilter] = useState(undefined);
+    const [regionFilter, setRegionFilter] = useState(undefined);
+    const [methodFilter, setMethodFilter] = useState(undefined);
+    const [dietFilter, setDietFilter] = useState(undefined);
+    const [levelFilter, setLevelFilter] = useState(undefined);
+    const [nutritionFilter, setNutritionFilter] = useState(undefined);
+    const [stats, setStats] = useState(null);
+    const [selected, setSelected] = useState([]);
+    const [sorter, setSorter] = useState({});
     const [drawer, setDrawer] = useState(null);
     const [form] = Form.useForm();
     const [regions, setRegions] = useState([]);
@@ -49,15 +78,55 @@ export default function Dishes() {
     const load = useCallback(async (page = 1) => {
         setLoading(true);
         try {
-            const { data } = await api.get('/dishes', { params: { page, per_page: 20, ...(q ? { q } : {}) } });
+            const params = { page, per_page: 20 };
+            if (q) params.q = q;
+            if (reviewFilter !== undefined) params.needs_review = reviewFilter ? 1 : 0;
+            if (regionFilter) params.region_id = regionFilter;
+            if (methodFilter) params.cooking_method = methodFilter;
+            if (dietFilter) params.diet = dietFilter;
+            if (levelFilter) params.completeness_level = levelFilter;
+            if (nutritionFilter) params.nutrition = nutritionFilter;
+            if (sorter.field) { params.sort = sorter.field; params.dir = sorter.dir; }
+            const { data } = await api.get('/dishes', { params });
             setRows(data.data);
             setMeta(data);
         } finally {
             setLoading(false);
         }
-    }, [q]);
+    }, [q, reviewFilter, regionFilter, methodFilter, dietFilter, levelFilter, nutritionFilter, sorter]);
 
     useEffect(() => { load(1); }, [load]);
+
+    // ADM-008: số liệu tổng cho thanh thống kê đầu trang.
+    const loadStats = useCallback(() => {
+        api.get('/dashboard').then(({ data }) => setStats(data.dishes)).catch(() => {});
+    }, []);
+    useEffect(() => { loadStats(); }, [loadStats]);
+
+    // ADM-008 đợt 2: sắp xếp theo cột + thao tác hàng loạt.
+    const handleTableChange = (pag, _filters, sorterObj) => {
+        const next = sorterObj?.order
+            ? { field: sorterObj.field ?? sorterObj.columnKey, dir: sorterObj.order === 'descend' ? 'desc' : 'asc' }
+            : {};
+        if (next.field !== sorter.field || next.dir !== sorter.dir) {
+            setSorter(next);
+        } else {
+            load(pag.current);
+        }
+    };
+    const sortOrderFor = (field) => (sorter.field === field ? (sorter.dir === 'desc' ? 'descend' : 'ascend') : null);
+
+    const doBulk = async (action) => {
+        try {
+            const { data } = await api.post('/dishes/bulk', { action, ids: selected });
+            message.success(`Đã xử lý ${data.affected} món${data.skipped ? `, bỏ qua ${data.skipped} món chưa tính được` : ''}`);
+            setSelected([]);
+            load(meta.current_page);
+            loadStats();
+        } catch (e) {
+            message.error(e.response?.data?.message ?? 'Thao tác hàng loạt thất bại');
+        }
+    };
     useEffect(() => {
         api.get('/regions').then(({ data }) => setRegions(data.map((r) => ({ value: r.id, label: r.name }))));
     }, []);
@@ -152,18 +221,78 @@ export default function Dishes() {
                 <Typography.Title level={4} style={{ margin: 0 }}>Món ăn</Typography.Title>
                 <Button type="primary" onClick={() => openEdit(null)}>+ Nhập món mới</Button>
             </Space>
-            <Input.Search placeholder="Tìm món theo tên…" allowClear style={{ width: 300, marginBottom: 12 }}
-                onSearch={setQ} onChange={(e) => { if (!e.target.value) setQ(''); }} />
+            <FilterBar items={[
+                {
+                    key: 'q', active: !!q,
+                    node: <Input.Search placeholder="Tìm món theo tên…" allowClear style={{ width: 300 }}
+                        onSearch={setQ} onChange={(e) => { if (!e.target.value) setQ(''); }} />,
+                },
+                {
+                    key: 'review', active: reviewFilter !== undefined,
+                    node: <Select placeholder="Trạng thái duyệt" allowClear style={{ width: 170 }} value={reviewFilter}
+                        onChange={setReviewFilter}
+                        options={[{ value: true, label: 'Chờ duyệt' }, { value: false, label: 'Đã duyệt' }]} />,
+                },
+                {
+                    key: 'region', active: !!regionFilter,
+                    node: <Select placeholder="Vùng miền" allowClear showSearch optionFilterProp="label" style={{ width: 190 }} value={regionFilter}
+                        onChange={setRegionFilter} options={regions} />,
+                },
+                {
+                    key: 'diet', active: !!dietFilter,
+                    node: <Select placeholder="Chế độ ăn" allowClear style={{ width: 170 }} value={dietFilter}
+                        onChange={setDietFilter} options={DIET_OPTIONS} />,
+                },
+                {
+                    key: 'method', active: !!methodFilter,
+                    node: <Select placeholder="Cách chế biến" allowClear style={{ width: 170 }} value={methodFilter}
+                        onChange={setMethodFilter} options={METHOD_OPTIONS} />,
+                },
+                {
+                    key: 'level', active: !!levelFilter,
+                    node: <Select placeholder="Mức hoàn thiện" allowClear style={{ width: 160 }} value={levelFilter}
+                        onChange={setLevelFilter}
+                        options={[{ value: 1, label: 'Mức 1' }, { value: 2, label: 'Mức 2' }, { value: 3, label: 'Mức 3' }]} />,
+                },
+                {
+                    key: 'nutrition', active: !!nutritionFilter,
+                    node: <Select placeholder="Dinh dưỡng" allowClear style={{ width: 190 }} value={nutritionFilter}
+                        onChange={setNutritionFilter}
+                        options={[{ value: 'has', label: 'Đã tính được calo' }, { value: 'missing', label: 'Chưa tính được' }]} />,
+                },
+            ]} />
+            {stats && (
+                <Typography.Text type="secondary" style={{ display: 'block', marginBottom: 12 }}>
+                    Tổng <b>{stats.total}</b> món · Chờ duyệt <b>{stats.pending_review}</b> · Đã tính được calo <b>{stats.computable}</b> · Chưa tính được <b>{stats.missing_nutrition}</b> · Có số chưa kiểm định <b>{stats.unverified}</b> · Có tên gọi khác <b>{stats.with_aliases}</b> · Đang hiển thị <b>{meta.total}</b> theo bộ lọc
+                </Typography.Text>
+            )}
+            {selected.length > 0 && (
+                <Space style={{ marginBottom: 12 }}>
+                    <Typography.Text strong>Đã chọn {selected.length} bản ghi:</Typography.Text>
+                    <Button size="small" type="primary" onClick={() => doBulk('approve')}>Duyệt</Button>
+                    <Button size="small" onClick={() => doBulk('reopen')}>Mở lại</Button>
+                    <Button size="small" onClick={() => doBulk('compute')}>Tính lại calo</Button>
+                    <Popconfirm title={`Xoá ${selected.length} món đã chọn?`} onConfirm={() => doBulk('delete')}>
+                        <Button size="small" danger>Xoá</Button>
+                    </Popconfirm>
+                    <Button size="small" type="text" onClick={() => setSelected([])}>Bỏ chọn</Button>
+                </Space>
+            )}
             <Table
                 rowKey="id" loading={loading} dataSource={rows}
-                pagination={{ current: meta.current_page, pageSize: meta.per_page, total: meta.total, onChange: load }}
+                rowSelection={{ selectedRowKeys: selected, onChange: setSelected }}
+                onChange={handleTableChange}
+                pagination={{
+                    current: meta.current_page, pageSize: meta.per_page, total: meta.total,
+                    showTotal: (total, range) => `Bản ghi ${range[0]}–${range[1]} · Theo bộ lọc: ${total} / Tổng: ${stats?.total ?? '—'}`,
+                }}
                 columns={[
-                    { title: 'Tên món', render: (_, r) => r.names?.[0]?.name ?? r.slug },
+                    { title: 'Tên món', key: 'name', sorter: true, sortOrder: sortOrderFor('name'), render: (_, r) => r.names?.[0]?.name ?? r.slug },
                     { title: 'Vùng miền', render: (_, r) => r.region?.name ?? '—' },
-                    { title: 'Mức hoàn thiện', dataIndex: 'completeness_level', render: (v) => <Tag>Mức {v}</Tag> },
-                    { title: 'Trạng thái', dataIndex: 'status' },
+                    { title: 'Mức hoàn thiện', dataIndex: 'completeness_level', sorter: true, sortOrder: sortOrderFor('completeness_level'), render: (v) => <Tag>Mức {v}</Tag> },
+                    { title: 'Trạng thái', dataIndex: 'status', sorter: true, sortOrder: sortOrderFor('status') },
                     {
-                        title: 'Duyệt', dataIndex: 'needs_review',
+                        title: 'Duyệt', dataIndex: 'needs_review', sorter: true, sortOrder: sortOrderFor('needs_review'),
                         render: (v) => v ? <Tag color="red">Chờ duyệt</Tag> : <Tag color="green">Đã duyệt</Tag>,
                     },
                     {

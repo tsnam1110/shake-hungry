@@ -37,9 +37,53 @@ class IngredientController extends Controller
         if ($category = $request->query('category')) {
             $query->where('category', $category);
         }
-        $query->orderBy('name_vi');
+        // ADM-008: lọc theo độ tin cậy ánh xạ + tình trạng số dinh dưỡng.
+        if ($confidence = $request->query('mapping_confidence')) {
+            $query->where('mapping_confidence', $confidence);
+        }
+        if ($nutrition = $request->query('nutrition')) {
+            // JSON_VALUE trả NULL cho cả khoá thiếu lẫn giá trị null trong snapshot.
+            $query->whereRaw(
+                "JSON_VALUE(nutrition_snapshot, '$.kcal_per_100g') IS ".($nutrition === 'missing' ? 'NULL' : 'NOT NULL')
+            );
+        }
+        // ADM-008 (đợt 2): sắp xếp theo cột — chỉ nhận các cột trong danh sách cho phép.
+        $sort = (string) $request->query('sort', '');
+        if (in_array($sort, ['name_vi', 'name_en', 'category', 'mapping_confidence', 'needs_review', 'created_at'], true)) {
+            $query->orderBy($sort, $request->query('dir') === 'desc' ? 'desc' : 'asc');
+        } else {
+            $query->orderBy('name_vi');
+        }
 
         return response()->json($query->paginate(min(100, max(1, (int) $request->query('per_page', 20)))));
+    }
+
+    /** ADM-008 (đợt 2): thao tác hàng loạt — duyệt / mở lại / xoá. */
+    public function bulk(Request $request): JsonResponse
+    {
+        $data = $request->validate([
+            'action' => ['required', Rule::in(['approve', 'reopen', 'delete'])],
+            'ids' => ['required', 'array', 'min:1', 'max:200'],
+            'ids.*' => ['integer'],
+        ]);
+        $affected = 0;
+        foreach (Ingredient::whereIn('id', $data['ids'])->get() as $ingredient) {
+            if ($data['action'] === 'approve') {
+                $ingredient->update([
+                    'needs_review' => false,
+                    'reviewed_by' => $request->user()->email,
+                    'reviewed_at' => now(),
+                ]);
+            } elseif ($data['action'] === 'reopen') {
+                $ingredient->update(['needs_review' => true]);
+            } else {
+                $ingredient->delete();
+            }
+            AdminAuditLog::record($data['action'] === 'delete' ? 'delete' : $data['action'], $ingredient, ['bulk' => true]);
+            $affected++;
+        }
+
+        return response()->json(['affected' => $affected]);
     }
 
     public function show(Ingredient $ingredient): JsonResponse

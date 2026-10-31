@@ -130,8 +130,8 @@ it('dashboard trả số liệu tổng quan', function () {
     adminMakeIngredient();
     $this->getJson('/admin/api/dashboard')
         ->assertOk()
-        ->assertJsonPath('ingredients_total', 1)
-        ->assertJsonPath('ingredients_pending_review', 1);
+        ->assertJsonPath('ingredients.total', 1)
+        ->assertJsonPath('ingredients.pending_review', 1);
 });
 
 it('xem trước dinh dưỡng trực tiếp không ghi vào DB (ADM-004)', function () {
