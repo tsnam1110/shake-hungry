@@ -252,6 +252,7 @@ kiểm chứng TEST-002**; `migrate:fresh --seed` dựng lại đúng toàn bộ
 | [UI-014](./tasks/UI-014.md) | Yêu thích + thống kê số lượng món/quả đã ăn | Frontend + Backend | ✅ | UI-012 | 2026-10-31 |
 | [UI-015](./tasks/UI-015.md) | Trang Khám phá và trang Nhật ký chuyên dụng (bản dùng chung chỉ để dùng nhanh) | Frontend + Backend | ✅ | UI-005, UI-008 | 2026-10-31 |
 | [UI-016](./tasks/UI-016.md) | Hồ sơ cho khách chưa đăng nhập + 4 trang chính sách theo luật | Frontend | ✅ | UI-008 | 2026-10-31 |
+| [UI-017](./tasks/UI-017.md) | Mục Nguyên liệu cho người dùng: danh sách tra cứu + trang chi tiết | Frontend + Backend | ✅ | UI-012, UI-015 | 2026-10-31 |
 
 **DoD GĐ4:** bấm Lắc ra món hợp bữa, không lặp món vừa ăn, hiển thị dinh dưỡng đúng quy tắc QT-5.
 

@@ -148,6 +148,15 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > không phải cam kết an toàn tuyệt đối). Giấy phép công bố ở `/nguon-du-lieu` theo
 > LEGAL-002 (MIT / CC BY 4.0 / ODbL 1.0 cho dòng OFF).
 
+> ## ⚠️ Đính chính lần 13, 2026-10-31 — nguyên liệu có mặt tiền người dùng (UI-017)
+>
+> Từ UI-017, nguyên liệu không còn chỉ là dữ liệu nền: người dùng tra cứu trực tiếp tại
+> `/nguyen-lieu` và `/nguyen-lieu/{slug}` (API `GET /api/ingredients/{slug}`). Mọi thay
+> đổi về cấu trúc `nutrition_snapshot` phải kiểm tra cả hai trang này. Hai cạm bẫy kỹ
+> thuật đã gặp và ghi lại trong UI-017: sắp xếp phụ trên JSON phải `reorder()` để bỏ
+> thứ tự mặc định, và kiểm "có số" trên JSON phải dùng `JSON_TYPE` (null trong JSON
+> không phải SQL NULL).
+
 **Trạng thái thực tế, kiểm ngày 2026-10-31 (đã chạy lại toàn bộ lệnh kiểm chứng):**
 
 | Hạng mục | Thực tế | Kiểm bằng |
