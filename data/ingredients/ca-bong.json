@@ -31,6 +31,14 @@
   "edible_portion_note": "Mục nguồn có edible portion 100% (cá nhỏ ăn nguyên con cả xương mềm) — khớp cách ăn cá bống kho/chiên giòn ở VN; nếu công thức chỉ dùng thịt phi lê thì cần hệ số riêng, chưa có nguồn.",
   "is_ready_to_eat": false,
   "units": [],
+  "media": [
+    {
+      "path": "media/ingredients/ca-bong.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "low",
   "needs_review": true,
