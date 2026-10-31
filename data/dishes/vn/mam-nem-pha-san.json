@@ -94,7 +94,14 @@
     "Trộn mắm nêm với thơm, đường và nước cốt chanh, khuấy đều; thêm sả, tỏi, ớt, nêm lại cho vừa miệng."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/mam-nem-pha-san.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt)",

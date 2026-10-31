@@ -53,7 +53,14 @@
     "Cáy là cua nhỏ nước lợ — tạm tính bằng cua đồng, xay lọc ướp muối lên men."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/mam-cay.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": {
     "id": "Q10796545",

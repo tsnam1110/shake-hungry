@@ -147,7 +147,14 @@
       "note": "Cookpad (Hoàng Phương Thảo): lươn 3 con làm sạch, thịt ba chỉ 150 g, đậu phụ 3 bìa, chuối xanh 3 quả, cà chua 2 quả, mắm tôm 2 muỗng, mẻ 3 muỗng; ba chỉ rang cháy cạnh trước, cho lươn và đậu vào om nhỏ lửa thêm 10 phút"
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/luon-om-chuoi-dau.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 2 (2026-10-31): Đã đối chiếu 3 nguồn thật mở kiểm chứng (Công Thức Gia Đình; VnExpress qua congthucnauan.vn; Cookpad Hoàng Phương Thảo). Phân xử định lượng: giữ nguyên mọi dòng — lươn 120 g khớp hai nguồn ghi 500 g/mẻ (quy đổi ≈125 g/khẩu phần); thịt ba chỉ 40 g nằm giữa VnExpress 200 g/mẻ (≈50 g/khẩu phần) và Cookpad 150 g/mẻ; chuối xanh giữ 80 g vì nguồn bất đồng nhau (Gia Đình 2 quả/mẻ so với VnExpress 6 quả/mẻ, trong đó 2 quả dùng xay làm sốt); đậu phụ giữ 60 g vì quy đổi từ các nguồn dao động khoảng 50–100 g/khẩu phần. Bất thường ghi nhận: Cookpad có cà chua — file không có; Gia Đình không dùng thịt ba chỉ và có nước tương — file có ba chỉ, không có nước tương; nguồn tạo chua chủ yếu bằng mẻ và mắm tôm, file dùng giấm bỗng — cùng vai trò tạo chua và được nguồn nêu như lựa chọn thay thế.",

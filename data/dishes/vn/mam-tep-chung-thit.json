@@ -78,7 +78,14 @@
     "Thêm hành tím, đường, ớt, chưng đến sệt."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/mam-tep-chung-thit.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": {
     "id": "Q16481351",
