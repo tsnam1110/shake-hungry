@@ -55,6 +55,7 @@ final class TaggingRules
         'vo-hoanh-thanh' => 'tong-hop', // bột mì + trứng (đợt DISH-003)
         // Khoáng chất
         'muoi' => 'khoang-chat',
+        'muoi-tom' => 'tong-hop', // hỗn hợp muối + tôm khô + ớt — LV2-007
     ];
 
     /**
@@ -63,6 +64,7 @@ final class TaggingRules
      */
     public const COMPOSITE_ANIMAL = [
         'bot-canh' => 'man', 'hat-nem' => 'man',
+        'muoi-tom' => 'man', // có bột tôm — LV2-007
         'banh-phong-tom-chien' => 'man', 'banh-phong-tom-song' => 'man',
         'xot-mayonnaise' => 'trung-sua',
         'mi-trung-kho' => 'trung-sua',
@@ -92,6 +94,7 @@ final class TaggingRules
         'mac-khen' => 'kho', 'hat-doi' => 'kho', // gia vị khô Tây Bắc — đợt mở rộng kho 2026-10-31
         'thinh-gao' => 'kho', 'duong-phen' => 'kho', 'duong-thot-not' => 'kho', 'duong-trang' => 'kho',
         'muoi' => 'kho', 'mi-chinh' => 'kho', 'hat-nem' => 'kho',
+        'muoi-tom' => 'kho', 'tran-chau' => 'kho', // gia vị khô + hạt tinh bột sắn khô — LV2-007
         'lac-song' => 'kho', 'lac-rang' => 'kho', 'vung' => 'kho', 'vung-rang' => 'kho',
         'hat-dieu-rang' => 'kho',
         'tao-tau-kho' => 'kho', 'nhan-kho' => 'kho', 'qua-danh-danh' => 'kho',
@@ -136,6 +139,7 @@ final class TaggingRules
         'tom-the' => ['tom'], 'tom-cang-xanh' => ['tom'], // đợt mở rộng kho 2026-10-31
         'mam-tom' => ['tom', 'mam-tom'], 'mam-ruoc' => ['tom', 'mam-tom'],
         'mam-tom-chua' => ['tom', 'mam-tom'], // tôm nguyên con ủ chua — đợt DISH-005 đợt 2
+        'muoi-tom' => ['tom'], // muối tôm Tây Ninh có bột tôm — LV2-007
         'oc-hut' => ['dong-vat-co-vo'], // ốc biển nhỏ — đợt DISH-005 đợt 2
         'banh-phong-tom-chien' => ['tom'], 'banh-phong-tom-song' => ['tom'],
         'cua-bien' => ['cua'], 'cua-dong' => ['cua'], 'ghe' => ['cua'],

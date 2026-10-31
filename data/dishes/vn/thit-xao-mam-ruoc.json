@@ -2,7 +2,7 @@
   "slug": "thit-xao-mam-ruoc",
   "parent_dish_slug": null,
   "country_code": "VN",
-  "region_code": "vn-south",
+  "region_code": "vn-central",
   "names": [
     {
       "locale": "vi",
@@ -57,6 +57,14 @@
       "confidence": "low"
     },
     {
+      "ingredient_slug": "toi",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
       "ingredient_slug": "dau-an",
       "quantity": 5,
       "unit_name": "g",
@@ -83,8 +91,8 @@
   ],
   "recipe_steps": [
     "Thái thịt ba chỉ thành miếng mỏng vừa ăn, tỉa đều tay tới khi các miếng gọn, không quá dày để lúc xào dễ săn và thấm mắm.",
-    "Băm nhuyễn sả cùng ớt; khuấy mắm ruốc với ít nước ấm trong 1–2 phút rồi lọc lại, tới khi hỗn hợp tan đều, mịn và không còn lợn cợn.",
-    "Đun dầu ăn nóng trên lửa vừa, cho sả và ớt vào phi 1–2 phút, đảo liên tục tới khi vàng và dậy mùi thơm rõ.",
+    "Băm nhuyễn sả cùng tỏi và ớt; khuấy mắm ruốc với ít nước ấm trong 1–2 phút rồi lọc lại, tới khi hỗn hợp tan đều, mịn và không còn lợn cợn.",
+    "Đun dầu ăn nóng trên lửa vừa, cho tỏi băm, sả và ớt vào phi 1–2 phút, đảo liên tục tới khi vàng và dậy mùi thơm rõ.",
     "Cho thịt ba chỉ vào chảo, xào trên lửa vừa khoảng 8–10 phút, đảo đều tay tới khi thịt săn, hơi cháy cạnh và bề mặt bóng lên.",
     "Đổ mắm ruốc đã lọc vào chảo thịt, hạ xuống lửa nhỏ và đảo đều 2–3 phút, tới khi mắm bám quanh từng miếng thịt và bắt đầu sánh lại.",
     "Nêm đường để cân lại độ mặn, tiếp tục xào lửa nhỏ 5–8 phút, đảo thường xuyên tới khi mắm sệt lại, thấm đều và thịt lên màu nâu bóng.",
@@ -115,7 +123,7 @@
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món THAY cho cha-trung-hap trong kế hoạch §3.3: cha-trung đã có trong kho (chả trứng hấp, vn-tp-hcm) — tạo thêm file cha-trung-hap là trùng món. Thay bằng món thịt xào nhanh đặc trưng Nam cùng quota. [LV2-005 đợt 5: nâng Mức 2 — đối chiếu 4 nguồn công thức đã mở đọc; sửa sa 10→20 g vì mọi nguồn đều dùng sả nhiều hơn hẳn file, lấy cận dưới đồng thuận thận trọng (~1 cây/người). Bất thường ghi nhận: tỉ lệ mắm ruốc:thịt phân tán rất mạnh giữa các nguồn và bị nhiễu bởi biến thể kho thêm nước cùng mẻ làm để dành nên giữ nguyên lượng mắm; file ghi vùng vn-south trong khi món gắn mạnh với miền Trung; file thiếu tỏi và hành tím mà 3/4 nguồn đều phi cùng sả — chờ pha phân xử.]",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món THAY cho cha-trung-hap trong kế hoạch §3.3: cha-trung đã có trong kho (chả trứng hấp, vn-tp-hcm) — tạo thêm file cha-trung-hap là trùng món. Thay bằng món thịt xào nhanh đặc trưng Nam cùng quota. [LV2-005 đợt 5: nâng Mức 2 — đối chiếu 4 nguồn công thức đã mở đọc; sửa sa 10→20 g vì mọi nguồn đều dùng sả nhiều hơn hẳn file, lấy cận dưới đồng thuận thận trọng (~1 cây/người). Bất thường ghi nhận: tỉ lệ mắm ruốc:thịt phân tán rất mạnh giữa các nguồn và bị nhiễu bởi biến thể kho thêm nước cùng mẻ làm để dành nên giữ nguyên lượng mắm; file ghi vùng vn-south trong khi món gắn mạnh với miền Trung; file thiếu tỏi và hành tím mà 3/4 nguồn đều phi cùng sả — chờ pha phân xử.] [LV2-007 Phần A: PHÂN XỬ vùng + gia vị phi — đổi region vn-south → vn-central theo quy ước region = gốc xuất xứ (EDITORIAL-GUIDE §4, tiền lệ bun-bo-nam-bo/ca-tram-hap-xi-dau): BepXua (nguồn trong file) ghi món 'từ vùng đất Nam Trung bộ', nguồn độc lập Saigonese Baguette gắn món với xứ Huế/mắm ruốc Huế; không nguồn đã mở nào khẳng định gốc miền Nam, và hồ sơ gốc của file cho thấy món được chọn trong quota lõi miền Trung của DISH-005 đợt 2. KHÔNG gán dac-san: nguồn chỉ khẳng định cấp miền Trung/Nam Trung Bộ, chưa phải đặc sản một tỉnh rõ ràng. Tỏi có ở 4/4 nguồn trong file → BỔ SUNG toi 5g (neo BepXua 20g/4 người). Đính chính ghi nhận cũ: hành tím tách riêng chỉ có ở 2/4 nguồn trong file (Điện Máy XANH công thức người dùng; Cookpad 15641084; ~10g/khẩu phần) — dưới ngưỡng 2/3, ghi nhận chờ nguồn thứ ba, chưa thêm (ghi nhận cũ gộp cụm 'tỏi và hành tím 3/4 nguồn' là không chính xác).]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

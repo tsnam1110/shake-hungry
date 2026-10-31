@@ -1,0 +1,51 @@
+{
+  "slug": "tran-chau",
+  "name_vi": "Trân châu (hạt tinh bột sắn, khô)",
+  "name_en": "Tapioca pearls, dry",
+  "category": "tinh-bot",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "169717",
+    "source_url": "https://fdc.nal.usda.gov/food-details/169717/nutrients",
+    "scientific_name": "Manihot esculenta",
+    "kcal_per_100g": 358,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 0.19,
+    "fat_g": 0.02,
+    "carb_g": 88.69,
+    "fiber_g": 0.9,
+    "water_g": 10.99,
+    "sodium_mg": 1,
+    "mapping_confidence": "high",
+    "mapping_note": "Ánh xạ USDA SR Legacy mục 169717 'Tapioca, pearl, dry' — hạt vo từ tinh bột sắn/khoai mì (Manihot esculenta), trạng thái KHÔ trước khi luộc. Kiểm chứng (LV2-007, 2026-10-31): bản trích SR Legacy trong repo (data/reference/usda-sr_legacy.csv) khớp từng số với hai trang mirror dữ liệu USDA đã mở (FreeFoodFacts; Medindia — 1 cup 152g = 544 kcal quy về 100g khớp). Nước 10,99g và natri 1mg lấy từ cùng mục USDA qua hai mirror. LƯU Ý BIÊN SOẠN: định lượng trong món (chè/trà sữa) phải ghi theo gram KHÔ trước luộc — hạt nở khoảng gấp đôi khi chín, không tính trùng nước.",
+    "alternatives": [
+      {
+        "name": "Tapioca starch ball (PhilFCT/FNRI Philippines, Food ID B035)",
+        "why_not": "341 kcal, béo 1,1g, Ca 88mg — lệch đáng kể với USDA (béo 0,02g); theo QT-4 chỉ chọn một bảng, ưu tiên USDA SR Legacy cho nhất quán với đa số kho",
+        "external_id": "B035",
+        "kcal_per_100g": 341
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": 0.0,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:thuc-vat",
+    "state:kho"
+  ]
+}

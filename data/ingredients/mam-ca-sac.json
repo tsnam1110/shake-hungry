@@ -7,7 +7,7 @@
     "fct_source": null,
     "external_id": null,
     "source_url": null,
-    "scientific_name": null,
+    "scientific_name": "Trichopodus pectoralis",
     "kcal_per_100g": null,
     "kcal_min": null,
     "kcal_max": null,
@@ -18,7 +18,7 @@
     "water_g": null,
     "sodium_mg": null,
     "mapping_confidence": "low",
-    "mapping_note": "CHƯA CÓ SỐ — đã tra 3 vòng đến 2026-10-31: không nhãn đầy đủ nào được công bố (vòng 2-B); Bảng VN bản gốc chưa trích xuất được nhóm gia vị/nước chấm (nhóm 13) để đối chiếu mục mắm cá; các trang ghi \"ước tính 100–150 kcal\" đều không nguồn — loại. KHÔNG ánh xạ sang \"Mắm tôm đặc\" (khác sản phẩm). VIỆC CẦN LÀM: đọc trực quan nhóm 13 của PDF Bảng VN, hoặc chụp nhãn hũ mắm tại điểm bán, hoặc tự đo (tầng tu_do).",
+    "mapping_note": "CHƯA CÓ SỐ — tra thêm vòng LV2-007 (2026-10-31), vẫn không có số đạt chuẩn: (1) Nhãn thương mại: trang sản phẩm Mắm Cá Sặc Bà Giáo Khỏe 55555 hũ 500g (vove.com.vn, đã mở) — thương hiệu mắm Châu Đốc lớn nhất — chỉ công bố THÀNH PHẦN (cá sặc đồng, muối, mắm, đường, thính), KHÔNG có bảng giá trị dinh dưỡng; các hãng khác (Sông Hương Foods...) cũng vậy. (2) Bảng TPTP VN: bản toàn văn 2017 mở được (SlideShare) bị cắt ở khoảng trang 100/300 của sách — nhóm 13 'Gia vị, nước chấm, mắm' (tr. 125) chưa trích xuất kiểm từng mục được; các bản rút gọn đã mở không có mục mắm cá. Hướng duy nhất còn mở: trích nhóm 13 từ bản PDF/số hoá ĐẦY ĐỦ của Bảng VN. (3) Văn liệu chỉ có analogue KHÁC LOÀI/khác công thức: prahoc Campuchia (Thanh et al. 2025, PLoS One — mẫu chợ gộp Trichopodus microlepis + Channa: đạm 16,1g, béo 2,1g, NaCl 21,4%/100g) — cùng chi cá sặc nhưng công thức không có thính/đường như mắm VN, chỉ tham chiếu độ lớn, KHÔNG gán số (QT-1). Các trang ghi 'ước tính 100–150 kcal' đều không nguồn — loại. ĐỊNH DANH: cá sặc làm mắm Châu Đốc chủ đạo là cá sặc rằn Trichopodus pectoralis (đồng danh Trichogaster pectoralis; Wikipedia 'Snakeskin gourami' đã mở) — tên thương mại có thể lẫn các loài Trichopodus khác nên độ chắc chắn cấp chi cao hơn cấp loài. KHÔNG ánh xạ sang 'Mắm tôm đặc' hay mắm khác (khác sản phẩm). VIỆC CẦN LÀM: trích nhóm 13 Bảng VN bản đầy đủ, hoặc chụp nhãn hũ mắm tại điểm bán khi có nhãn số, hoặc tự đo (tầng tu_do).",
     "alternatives": []
   },
   "secondary_sources": [],

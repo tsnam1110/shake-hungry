@@ -2,6 +2,16 @@
   "slug": "cu-dau",
   "name_vi": "Củ đậu (củ sắn nước, sống)",
   "name_en": "Jicama, raw",
+  "aliases": [
+    {
+      "name": "Củ sắn",
+      "note": "tên gọi miền Nam — cùng đối tượng củ đậu/củ sắn nước; phân biệt với 'củ sắn' miền Bắc là khoai mì (Manihot esculenta)"
+    },
+    {
+      "name": "Sắn nước",
+      "note": "tên gọi khác của củ đậu"
+    }
+  ],
   "category": "rau-cu",
   "reference_food": {
     "fct_source": "usda_sr_legacy",
@@ -18,7 +28,7 @@
     "water_g": 90.07,
     "sodium_mg": 4,
     "mapping_confidence": "high",
-    "mapping_note": "'Yambean (jicama), raw' — củ đậu/củ sắn nước (ăn sống, bò bía, nhân chả giò).",
+    "mapping_note": "'Yambean (jicama), raw' — củ đậu/củ sắn nước (ăn sống, bò bía, nhân chả giò). BỔ SUNG PHƯƠNG NGỮ (LV2-007, 2026-10-31): 'củ sắn' ở miền Nam = chính đối tượng này (Pachyrhizus erosus) — bằng chứng đã mở: công thức hủ tiếu chay miền Tây (cholaithieu.com) ghi tường minh 'Củ sắn (củ đậu)'; Wikipedia 'Sắn (định hướng)' xác nhận Pachyrhizus erosus được người miền Nam hiểu là củ sắn, trong khi Manihot esculenta được miền Nam gọi là khoai mì. CẢNH BÁO: 'củ sắn' ở miền Bắc = khoai mì (slug khoai-mi, 160 kcal/100g) — khác hẳn đối tượng này (38 kcal/100g); khi biên soạn món miền Bắc nhắc 'củ sắn' phải kiểm ngữ cảnh trước khi trỏ vào cu-dau.",
     "alternatives": []
   },
   "secondary_sources": [],

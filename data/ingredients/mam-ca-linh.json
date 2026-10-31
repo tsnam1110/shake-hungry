@@ -1,13 +1,13 @@
 {
   "slug": "mam-ca-linh",
   "name_vi": "Mắm cá linh (nguyên chất)",
-  "name_en": "Fermented pangasius/hemibagrus fish paste (mam ca linh)",
+  "name_en": "Fermented Siamese mud carp paste (mam ca linh)",
   "category": "gia-vi",
   "reference_food": {
     "fct_source": null,
     "external_id": null,
     "source_url": null,
-    "scientific_name": null,
+    "scientific_name": "Henicorhynchus siamensis",
     "kcal_per_100g": null,
     "kcal_min": null,
     "kcal_max": null,
@@ -18,7 +18,7 @@
     "water_g": null,
     "sodium_mg": null,
     "mapping_confidence": "low",
-    "mapping_note": "CHƯA CÓ SỐ — cùng tình trạng mắm cá sặc đến 2026-10-31: sản phẩm đóng hũ có bán nhưng không nơi nào công bố bảng dinh dưỡng; Bảng VN nhóm 13 chưa đối chiếu được. VIỆC CẦN LÀM: như mắm cá sặc.",
+    "mapping_note": "CHƯA CÓ SỐ — cùng tình trạng mắm cá sặc đến 2026-10-31, tra thêm vòng LV2-007 vẫn không có số đạt chuẩn: nhãn Mắm Cá Linh Bà Giáo Khỏe hũ 500g (vove.com.vn, đã mở) chỉ có thành phần (cá linh tươi 73%, đường, muối, mắm, thính), KHÔNG bảng dinh dưỡng; các hãng khác (Tám Dô/OCOP, Sông Hương Foods) chỉ có claims định tính. Bảng TPTP VN nhóm 13 chưa trích được từ bản toàn văn khả dụng (bản mở được bị cắt ~trang 100/300). Văn liệu chỉ có analogue prahoc khác loài — không gán (QT-1). ĐÍNH CHÍNH ĐỊNH DANH (LV2-007): name_en cũ ghi 'pangasius/hemibagrus' là SAI HOÀN TOÀN (đó là cá tra/cá lăng). Cá linh = Henicorhynchus siamensis (Sauvage, 1881), đồng danh Cirrhinus siamensis, họ Cyprinidae — cá nhỏ mùa lũ Mekong (Wikipedia 'Siamese mud carp' đã mở). Cá linh đánh bắt thực tế là hỗn hợp các loài cá chép nhỏ mùa lũ nên đây là loài CHỦ ĐẠO. VIỆC CẦN LÀM: như mắm cá sặc — trích nhóm 13 Bảng VN bản đầy đủ hoặc chờ nhãn số của nhà sản xuất.",
     "alternatives": []
   },
   "secondary_sources": [],

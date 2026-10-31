@@ -1,0 +1,58 @@
+{
+  "slug": "cu-nen",
+  "name_vi": "Củ nén (hành tăm)",
+  "name_en": "Chive bulb (hanh tam)",
+  "aliases": [
+    {
+      "name": "Củ ném",
+      "note": "tên gọi miền Trung"
+    },
+    {
+      "name": "Hành trắng",
+      "note": "tên gọi khác"
+    },
+    {
+      "name": "Hành tăm",
+      "note": "tên gọi miền Bắc"
+    }
+  ],
+  "category": "gia-vi",
+  "reference_food": {
+    "fct_source": null,
+    "external_id": null,
+    "source_url": null,
+    "scientific_name": "Allium schoenoprasum",
+    "kcal_per_100g": null,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": null,
+    "fat_g": null,
+    "carb_g": null,
+    "fiber_g": null,
+    "water_g": null,
+    "sodium_mg": null,
+    "mapping_confidence": "low",
+    "mapping_note": "CHƯA CÓ SỐ (LV2-007, 2026-10-31) — không bảng thành phần nào công bố bộ số/100g cho đối tượng này (Wikipedia tiếng Việt 'Hành tăm' và từ điển cây thuốc dieutri.vn, đã mở, đều không có số). ĐỊNH DANH: hành tăm (Bắc) = củ nén/củ ném/hành trắng (Trung); hai nguồn VN đã mở thống nhất tên loài Allium schoenoprasum. THẬN TRỌNG: trong phân loại quốc tế A. schoenoprasum là chives dùng LÁ, trong khi củ nén miền Trung dùng phần CỦ phi thơm — tên loài theo tài liệu VN ghi ở mức tin cậy trung bình; KHÔNG gán cho Allium chinense (đó là củ kiệu — đối tượng khác). Gia vị phi thơm, lượng dùng trong món rất nhỏ (vài gram/khẩu phần) nên thiếu số không đáng kể về calo. VIỆC CẦN LÀM: tra Bảng TPTP VN nhóm gia vị khi có bản đầy đủ, hoặc tự đo.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "unknown",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}

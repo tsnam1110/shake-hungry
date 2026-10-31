@@ -1,6 +1,6 @@
 {
   "_generated_by": "php artisan lacdoi:export-data — không sửa tay (DATA-REPOSITORY §2)",
-  "count": 411,
+  "count": 414,
   "ingredients": [
     {
       "slug": "bach-tuoc",
@@ -511,6 +511,11 @@
       "slug": "cu-dau",
       "name_vi": "Củ đậu (củ sắn nước, sống)",
       "category": "rau-cu"
+    },
+    {
+      "slug": "cu-nen",
+      "name_vi": "Củ nén (hành tăm)",
+      "category": "gia-vi"
     },
     {
       "slug": "cu-sen",
@@ -1253,6 +1258,11 @@
       "category": "gia-vi"
     },
     {
+      "slug": "muoi-tom",
+      "name_vi": "Muối tôm (muối ớt Tây Ninh, khô)",
+      "category": "gia-vi"
+    },
+    {
       "slug": "muop",
       "name_vi": "Mướp hương (sống)",
       "category": "rau-cu"
@@ -1936,6 +1946,11 @@
       "slug": "trai",
       "name_vi": "Trai nước ngọt (sống)",
       "category": "thuy-san"
+    },
+    {
+      "slug": "tran-chau",
+      "name_vi": "Trân châu (hạt tinh bột sắn, khô)",
+      "category": "tinh-bot"
     },
     {
       "slug": "trung-cut",

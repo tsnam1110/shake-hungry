@@ -57,6 +57,14 @@
       "confidence": "low"
     },
     {
+      "ingredient_slug": "rau-mui",
+      "quantity": 2,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
       "ingredient_slug": "nuoc-mam-truyen-thong",
       "quantity": 2,
       "unit_name": "g",
@@ -70,7 +78,7 @@
     "Sơ chế cá: cá lóc đánh vảy, làm sạch, cắt khúc vừa ăn, rửa lại cho hết nhớt và để ráo, thịt cá trắng, không còn mùi tanh.",
     "Nấu cá: đun sôi nước, thả cá khúc vào nấu lửa vừa khoảng 5–7 phút đến khi cá gần chín, hớt bọt liên tục cho nước canh trong.",
     "Cho khổ qua: thả khổ qua đã ráo vào sau khi cá gần chín, nấu thêm 2–3 phút trên lửa vừa đến khi lát khổ qua chuyển xanh trong và vừa mềm; không nấu lâu hơn kẻo khổ qua thêm đắng và nhũn.",
-    "Nêm và hoàn thiện: nêm nước mắm vừa ăn, nếm lại cho vị mặn thanh, đắng dịu; tắt bếp, rắc hành lá thái nhỏ và tiêu xay, múc ra tô ăn nóng với cơm."
+    "Nêm và hoàn thiện: nêm nước mắm vừa ăn, nếm lại cho vị mặn thanh, đắng dịu; tắt bếp, rắc hành lá, ngò rí thái nhỏ và tiêu xay, múc ra tô ăn nóng với cơm."
   ],
   "recipe_sources": [
     {
@@ -99,7 +107,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-004 đợt 4: thử nâng Mức 2 — GIỮ MỨC 1: chỉ 1 nguồn đúng món (dienmayxanh.com/vao-bep/cach-lam-canh-kho-qua-ca-loc-02571), 2 nguồn còn lại là biến thể chả cá thác lác (xaydungso.vn/blog/cach-lam-canh-kho-qua-ca-thac-lac-vi-cb; bluestone.com.vn/blogs/vao-bep/canh-kho-qua-ca-thac-lac) — không đủ 3 nguồn đúng món.] [LV2-005 đợt 5: nâng Mức 2 — bổ sung 2 nguồn đúng món đã mở (Saigonese Baguette công thức 2, Chợ Lại Thiêu mục 2) cùng nguồn Điện Máy XANH đã kiểm chứng ở LV2-004. Bất thường chờ phân xử: 2/3 nguồn đã mở dùng quy trình luộc gỡ thịt/xào cá trước khi nấu, file giữ biến thể cá khúc thả nồi theo nguồn Điện Máy XANH; cả 2 nguồn mới đều có ngò rí rắc mặt và nguồn Saigonese Baguette còn có tỏi phi xào cá — file chưa có hai nguyên liệu này. Điểm chung của nguồn đã áp vào bước: khổ qua thái lát mỏng ngâm nước muối loãng/nước đá, cho vào sau khi cá gần chín, nấu thêm 2–3 phút, hớt bọt giữ nước trong, rắc hành lá và tiêu cuối. Nước mắm giảm 5→2 g/khẩu phần theo đồng thuận 2 nguồn mới.]",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-004 đợt 4: thử nâng Mức 2 — GIỮ MỨC 1: chỉ 1 nguồn đúng món (dienmayxanh.com/vao-bep/cach-lam-canh-kho-qua-ca-loc-02571), 2 nguồn còn lại là biến thể chả cá thác lác (xaydungso.vn/blog/cach-lam-canh-kho-qua-ca-thac-lac-vi-cb; bluestone.com.vn/blogs/vao-bep/canh-kho-qua-ca-thac-lac) — không đủ 3 nguồn đúng món.] [LV2-005 đợt 5: nâng Mức 2 — bổ sung 2 nguồn đúng món đã mở (Saigonese Baguette công thức 2, Chợ Lại Thiêu mục 2) cùng nguồn Điện Máy XANH đã kiểm chứng ở LV2-004. Bất thường chờ phân xử: 2/3 nguồn đã mở dùng quy trình luộc gỡ thịt/xào cá trước khi nấu, file giữ biến thể cá khúc thả nồi theo nguồn Điện Máy XANH; cả 2 nguồn mới đều có ngò rí rắc mặt và nguồn Saigonese Baguette còn có tỏi phi xào cá — file chưa có hai nguyên liệu này. Điểm chung của nguồn đã áp vào bước: khổ qua thái lát mỏng ngâm nước muối loãng/nước đá, cho vào sau khi cá gần chín, nấu thêm 2–3 phút, hớt bọt giữ nước trong, rắc hành lá và tiêu cuối. Nước mắm giảm 5→2 g/khẩu phần theo đồng thuận 2 nguồn mới.] [LV2-007 Phần A: PHÂN XỬ trường phái quy trình — GIỮ biến thể cá khúc thả thẳng vào nồi theo Điện Máy XANH. Hai nguồn Saigonese Baguette và Chợ Lại Thiêu dùng trường phái sơ chế cá trước khi nấu (lần lượt: luộc gỡ thịt rồi xào; xào miếng cá cho săn rồi đổ nước) — là biến thể hợp lệ nhưng hai nguồn không thống nhất một quy trình chung, và đổi quy trình sẽ kéo theo đổi ngữ nghĩa định lượng cá (gỡ thịt vs khúc cả xương) — không áp. Ngò rí có ở 2/2 nguồn mở lại → BỔ SUNG rau-mui 2g (mức rắc mặt thận trọng). Tỏi phi xào cá chỉ có ở 1 nguồn (Saigonese, ~2g/khẩu phần quy đổi) — dưới ngưỡng 2/3 và gắn với trường phái xào cá nên chưa thêm; thì là ở Chợ Lại Thiêu cũng chỉ 1 nguồn. Lưu ý: trang Điện Máy XANH của món mở lại thất bại ở pha này (lỗi mạng) — vị trí nguồn này dựa trên hồ sơ đã kiểm chứng ở LV2-004/LV2-005.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -65,6 +65,14 @@
       "confidence": "low"
     },
     {
+      "ingredient_slug": "tran-chau",
+      "quantity": 20,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
       "ingredient_slug": "sua-tuoi",
       "quantity": 80,
       "unit_name": "g",
@@ -102,7 +110,7 @@
     "Làm sương sáo: hoà bột sương sáo với nước, đun sôi khuấy đều tay đến khi hỗn hợp sánh và sôi lăn tăn thì tắt bếp, đổ khuôn để đông; thạch đông thì cắt khối vuông hoặc sợi vừa ăn, rau câu cũng cắt miếng 1–2cm.",
     "Sơ chế trái cây: mít bỏ hạt, thái sợi; sầu riêng tách hạt, lấy cơm — để riêng một phần miếng nhỏ, phần còn lại đem xay/đánh nhuyễn làm nước chan.",
     "Pha nước chan: xay/đánh cơm sầu riêng với sữa tươi, sữa đặc và nước cốt dừa đến khi hỗn hợp mịn, thơm nồng mùi sầu riêng và béo đều; nếm lại độ ngọt, giữ lạnh.",
-    "Hoàn thiện: cho lần lượt thạch rau câu, sương sáo, mít và cơm sầu riêng vào ly, chan nước sữa dừa sầu riêng ngập vừa, thêm đá bào; trộn đều và dùng lạnh ngay."
+    "Hoàn thiện: cho lần lượt thạch rau câu, sương sáo, trân châu đã luộc chín trong, mít và cơm sầu riêng vào ly, chan nước sữa dừa sầu riêng ngập vừa, thêm đá bào; trộn đều và dùng lạnh ngay."
   ],
   "recipe_sources": [
     {
@@ -119,12 +127,17 @@
       "url": "https://vietnamnet.vn/3-cach-nau-che-sau-rieng-thanh-beo-don-gian-ngay-tai-nha-2046711.html",
       "accessed": "2026-10-31",
       "note": "VietnamNet — gần như cùng một gốc công thức với Eva, coi như một dòng khi xét đồng thuận."
+    },
+    {
+      "url": "https://nauankhongkho.vn/cach-nau-che/cach-nau-che-thai-sau-rieng-ngot-mat-theo-phong-cach-nhiet-doi",
+      "accessed": "2026-10-31",
+      "note": "Đã mở và đối chiếu (họ nguồn độc lập thứ ba — Túc Túc, 2019): sầu riêng + mít + bánh lọt + hạt lựu củ đậu; nước chan nền cốt dừa với sữa đặc 50ml/mẻ (≈10–16g/ly), đường tổng 130g/mẻ — dùng cho phân xử sữa đặc và định lượng trân châu ở LV2-007."
     }
   ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-006 đợt 6: nâng Mức 2 — file thuộc dòng chè Thái quán Sài Gòn (sầu riêng + mít + thạch + sữa dừa). Đường 15 → 25g (cả hai dòng công thức đều ~25g/ly cho phần thạch, cao hơn file >30%). Sữa đặc GIỮ 30g — điểm tranh chấp lớn nhất: dòng Eva/VietnamNet (cùng một gốc công thức) ~5g/ly so với Bách Hoá Xanh nguyên lon ~95–127g/ly, không có đồng thuận đáng tin — chờ biên tập/chủ dự án phân xử khi chốt biến thể. Topping dai (hạt lựu/trân châu) có ở 3/3 nguồn nhưng kho chưa có slug phù hợp — ghi nhận chờ biên soạn nguyên liệu; không trộn số của dòng trái cây hỗn hợp vào file.]",
+  "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-006 đợt 6: nâng Mức 2 — file thuộc dòng chè Thái quán Sài Gòn (sầu riêng + mít + thạch + sữa dừa). Đường 15 → 25g (cả hai dòng công thức đều ~25g/ly cho phần thạch, cao hơn file >30%). Sữa đặc GIỮ 30g — điểm tranh chấp lớn nhất: dòng Eva/VietnamNet (cùng một gốc công thức) ~5g/ly so với Bách Hoá Xanh nguyên lon ~95–127g/ly, không có đồng thuận đáng tin — chờ biên tập/chủ dự án phân xử khi chốt biến thể. Topping dai (hạt lựu/trân châu) có ở 3/3 nguồn nhưng kho chưa có slug phù hợp — ghi nhận chờ biên soạn nguyên liệu; không trộn số của dòng trái cây hỗn hợp vào file.] [LV2-007 Phần A: PHÂN XỬ sữa đặc — GIỮ sua-dac 30g/ly, không sửa số. Hai cực đều là họ nguồn đơn lẻ: họ '1 lon' (Bách Hoá Xanh = Eva c162a448490 chép nguyên văn; quy ra 95–127g/ly theo số người ghi trên trang nhưng thể tích nước chan của mẻ không nhất quán với số ly đó) và họ '20g/mẻ' (Eva/Yến Vỹ ≈ VietnamNet ≈ Hội Đầu Bếp Á Âu; ≈4–5g/ly). Hai họ độc lập bổ sung đã mở: Nấu Ăn Không Khó 50ml/mẻ ≈ 10–16g/ly với đường 130g/mẻ; Dân Việt biến tấu không cốt dừa, 0g sữa đặc. Giữ 30g vì tổng chất ngọt của file (đường 25g + sữa đặc 30g ≈ 41g/ly) khớp trần dải của họ độc lập dùng cốt dừa (32–41g/ly) và đúng định danh chè quán Sài Gòn; cắt về ~5g sẽ buộc tăng đường vượt mọi nguồn. Đã thêm nguồn Nấu Ăn Không Khó vào recipe_sources (họ độc lập thứ ba thật sự). BỔ SUNG tran-chau 20g (khô, trước luộc): topping dai có ở 3/3 họ nguồn (Eva + Hội Đầu Bếp Á Âu đều 100g trân châu khô/mẻ ≈ 20g/ly ở quy mô mẻ 4–5 ly); slug tran-chau vừa biên soạn ở LV2-007 theo USDA SR Legacy 169717 nên dòng tính được. Hạt lựu/bánh lọt vẫn chờ slug riêng.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
