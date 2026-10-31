@@ -2,7 +2,7 @@
   "slug": "che-com",
   "parent_dish_slug": null,
   "country_code": "VN",
-  "region_code": "vn-ha-noi",
+  "region_code": "vn-north",
   "names": [
     {
       "locale": "vi",
@@ -99,6 +99,7 @@
   "reviewed_at": null,
   "review_note": null,
   "tags": [
+    "dac-san:ha-noi",
     "loai:che-trang-mieng"
   ]
 }

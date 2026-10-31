@@ -141,6 +141,14 @@ Phân cấp địa lý, đệ quy.
 | `name` | text | |
 | `level` | varchar(16) | `country` / `macro_region` / `province` |
 
+> **DATA-010 (2026-10-31):** `dishes.region_id` chỉ còn trỏ tới mức `country`
+> hoặc `macro_region` (3 miền chính Bắc/Trung/Nam) — theo quyết định của chủ
+> dự án. Món gắn với một tỉnh/thành cụ thể giữ thông tin đó bằng nhãn phân
+> loại `dac-san:<tỉnh>` (facet biên tập trong TAXONOMY.md), không qua
+> `region_id`. Các dòng `province` vẫn ở trong bảng làm danh mục tham chiếu
+> cho facet đặc sản; API vùng miền công khai và form nhập món chỉ trả về
+> `country` + `macro_region`, và API quản trị chặn gán region cấp tỉnh cho món.
+
 ---
 
 ## 3. Nhóm nguyên liệu — nền móng hệ thống

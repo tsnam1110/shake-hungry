@@ -312,7 +312,9 @@ class DishController extends Controller
             'alias_names.*' => ['string', 'max:255'],
             'english_name' => ['nullable', 'string', 'max:255'],
             'country_code' => ['nullable', 'string', 'size:2'],
-            'region_id' => ['nullable', 'integer', 'exists:regions,id'],
+            // DATA-010: món chỉ thuộc cả nước hoặc 1 trong 3 miền chính —
+            // tỉnh/thành cụ thể đi qua nhãn dac-san, không qua region.
+            'region_id' => ['nullable', 'integer', Rule::exists('regions', 'id')->whereIn('level', ['country', 'macro_region'])],
             'is_eat_out' => ['nullable', 'boolean'],
             'is_home_cook' => ['nullable', 'boolean'],
             'cooking_method' => ['nullable', 'string', 'max:32'],

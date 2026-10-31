@@ -2,7 +2,7 @@
   "slug": "banh-hoa-hong-trang",
   "parent_dish_slug": "banh-beo",
   "country_code": "VN",
-  "region_code": "vn-hue",
+  "region_code": "vn-central",
   "names": [
     {
       "locale": "vi",
@@ -115,6 +115,7 @@
   "reviewed_at": null,
   "review_note": null,
   "tags": [
+    "dac-san:hue",
     "loai:banh"
   ]
 }

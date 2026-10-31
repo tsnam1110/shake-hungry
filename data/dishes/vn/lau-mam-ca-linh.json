@@ -2,7 +2,7 @@
   "slug": "lau-mam-ca-linh",
   "parent_dish_slug": null,
   "country_code": "VN",
-  "region_code": "vn-an-giang",
+  "region_code": "vn-south",
   "names": [
     {
       "locale": "vi",
@@ -135,6 +135,7 @@
   "reviewed_at": null,
   "review_note": null,
   "tags": [
+    "dac-san:an-giang",
     "loai:lau"
   ]
 }

@@ -14,7 +14,11 @@ class RegionController extends Controller
     public function index(): JsonResponse
     {
         return response()->json(
-            Region::query()->select(['id', 'parent_id', 'code', 'name', 'level'])->orderBy('name')->get()
+            // DATA-010: form nhập món chỉ chọn được cả nước + 3 miền chính;
+            // đặc sản tỉnh/thành gắn bằng nhãn dac-san, không qua region.
+            Region::query()->select(['id', 'parent_id', 'code', 'name', 'level'])
+                ->whereIn('level', ['country', 'macro_region'])
+                ->orderBy('name')->get()
         );
     }
 }

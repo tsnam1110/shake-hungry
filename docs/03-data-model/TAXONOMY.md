@@ -28,6 +28,7 @@ Phân loại sẵn có: `region_code`, `meal_slots`, `cooking_method`, `is_eat_o
 | Tiền tố | Tên nhóm | Giá trị | Cách gán |
 |---|---|---|---|
 | `loai:` | Loại món (hình thức) | `bun-pho-mi`, `com`, `banh`, `chao-sup`, `canh`, `lau`, `xoi`, `goi-nom`, `che-trang-mieng`, `mon-chinh`, `nuoc-cham` | **Biên tập** theo định nghĩa §5 — đúng 1 giá trị/món |
+| `dac-san:` | Đặc sản địa phương | `ha-noi`, `hai-phong`, `nam-dinh`, `thanh-hoa`, `nghe-an`, `hue`, `da-nang`, `quang-nam`, `tp-hcm`, `tien-giang`, `an-giang`, `can-tho`, `soc-trang`, `vung-tau` | **Biên tập** (DATA-010) — tối đa 1 giá trị/món; thay cho `region_code` cấp tỉnh |
 | `diet:` | Chế độ ăn | `chay` (thuần chay), `chay-trung-sua`, `man` | **Suy từ thành phần** (§6) — đúng 1 giá trị |
 | `protein:` | Đạm chính | `thit-bo`, `thit-lon`, `gia-cam`, `ca`, `tom-cua`, `muc`, `oc`, `trung`, `dau-phu-dau`, `hon-hop`, `khong` | **Suy từ thành phần** (§6) — đúng 1 giá trị |
 | `allergen:` | Chứa chất gây dị ứng | cùng từ vựng §4 | **Suy từ thành phần**: hợp nhất nhãn dị ứng của mọi nguyên liệu trong món |

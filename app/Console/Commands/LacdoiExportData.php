@@ -339,7 +339,9 @@ class LacdoiExportData extends Command
             'reviewed_at' => $dish->reviewed_at?->toDateString(),
             'review_note' => $dish->review_note,
             'tags' => $dish->tags->pluck('slug')
-                ->filter(fn ($t) => str_starts_with((string) $t, 'loai:'))
+                // Chỉ xuất ngược các nhãn BIÊN TẬP (loai + dac-san — DATA-010);
+                // nhãn suy từ thành phần không ghi vào file.
+                ->filter(fn ($t) => str_starts_with((string) $t, 'loai:') || str_starts_with((string) $t, 'dac-san:'))
                 ->sort()->values()->all(),
         ];
     }

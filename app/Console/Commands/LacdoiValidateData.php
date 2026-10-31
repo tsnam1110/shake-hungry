@@ -401,8 +401,9 @@ class LacdoiValidateData extends Command
      * V16 — hệ nhãn phân loại (TAXONOMY.md).
      * File nguyên liệu: bộ nhãn phải BẰNG ĐÚNG kết quả của TaggingRules (quy tắc
      * là nguồn sự thật — nhãn gán tay lệch quy tắc là lỗi). File món: chỉ được
-     * mang đúng 1 nhãn loai: biên tập; nhãn suy được (diet/protein/allergen)
-     * cấm ghi tay vào file vì seeder suy từ thành phần.
+     * mang các nhãn BIÊN TẬP — đúng 1 nhãn loai: và tối đa 1 nhãn dac-san:
+     * (DATA-010); nhãn suy được (diet/protein/allergen) cấm ghi tay vào file
+     * vì seeder suy từ thành phần.
      */
     private function validateTaxonomy(array $ingredients, array $dishes): void
     {
@@ -425,10 +426,14 @@ class LacdoiValidateData extends Command
             if (count($loai) !== 1) {
                 $this->errors[] = "V16 [{$slug}]: món phải có đúng 1 nhãn loai: trong file (đang có ".count($loai).')';
             }
+            $dacSan = array_values(array_filter($tags, fn ($t) => str_starts_with((string) $t, 'dac-san:')));
+            if (count($dacSan) > 1) {
+                $this->errors[] = "V16 [{$slug}]: món có tối đa 1 nhãn dac-san: trong file (đang có ".count($dacSan).')';
+            }
             foreach ($tags as $t) {
                 if (! in_array($t, $registry, true)) {
                     $this->errors[] = "V16 [{$slug}]: nhãn '{$t}' không có trong đăng ký config/taxonomy.php";
-                } elseif (! str_starts_with((string) $t, 'loai:')) {
+                } elseif (! str_starts_with((string) $t, 'loai:') && ! str_starts_with((string) $t, 'dac-san:')) {
                     $this->errors[] = "V16 [{$slug}]: nhãn '{$t}' là nhãn SUY TỪ THÀNH PHẦN — không ghi tay vào file món";
                 }
             }

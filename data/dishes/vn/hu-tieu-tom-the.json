@@ -2,7 +2,7 @@
   "slug": "hu-tieu-tom-the",
   "parent_dish_slug": "hu-tieu",
   "country_code": "VN",
-  "region_code": "vn-tien-giang",
+  "region_code": "vn-south",
   "names": [
     {
       "locale": "vi",
@@ -159,6 +159,7 @@
   "reviewed_at": null,
   "review_note": null,
   "tags": [
+    "dac-san:tien-giang",
     "loai:bun-pho-mi"
   ]
 }

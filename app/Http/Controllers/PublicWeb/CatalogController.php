@@ -15,8 +15,12 @@ class CatalogController extends Controller
 {
     public function regions(): JsonResponse
     {
+        // DATA-010: vùng miền của món chỉ còn 3 miền chính (+ cả nước) —
+        // tỉnh/thành cụ thể sống ở phân loại "Đặc sản" (facet dac-san).
         return response()->json(
-            \App\Models\Region::query()->select(['id', 'name'])->orderBy('name')->get()
+            \App\Models\Region::query()->select(['id', 'name'])
+                ->whereIn('level', ['country', 'macro_region'])
+                ->orderBy('name')->get()
         );
     }
 

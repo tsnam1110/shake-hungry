@@ -2,7 +2,7 @@
   "slug": "xoi-dau-xanh-mo-hanh",
   "parent_dish_slug": "xoi-xeo",
   "country_code": "VN",
-  "region_code": "vn-ha-noi",
+  "region_code": "vn-north",
   "names": [
     {
       "locale": "vi",
@@ -87,6 +87,7 @@
   "reviewed_at": null,
   "review_note": null,
   "tags": [
+    "dac-san:ha-noi",
     "loai:xoi"
   ]
 }

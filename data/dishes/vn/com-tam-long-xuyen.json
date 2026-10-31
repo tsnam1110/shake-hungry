@@ -2,7 +2,7 @@
   "slug": "com-tam-long-xuyen",
   "parent_dish_slug": "com-tam",
   "country_code": "VN",
-  "region_code": "vn-an-giang",
+  "region_code": "vn-south",
   "names": [
     {
       "locale": "vi",
@@ -143,6 +143,7 @@
   "reviewed_at": null,
   "review_note": null,
   "tags": [
+    "dac-san:an-giang",
     "loai:com"
   ]
 }

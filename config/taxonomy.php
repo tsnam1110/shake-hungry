@@ -52,6 +52,24 @@ return [
         'loai:nuoc-cham' => ['name' => 'Nước chấm · Mắm pha', 'facet' => 'loai'],
         'loai:mon-chinh' => ['name' => 'Món chính', 'facet' => 'loai'],
 
+        // — Đặc sản địa phương (biên tập, tối đa 1/món) — DATA-010:
+        // vùng miền của món chỉ còn 3 miền chính ở region_code; món gắn với
+        // một tỉnh/thành cụ thể giữ thông tin đó ở facet này để vẫn lọc/tìm được.
+        'dac-san:ha-noi' => ['name' => 'Đặc sản Hà Nội', 'facet' => 'dac-san'],
+        'dac-san:hai-phong' => ['name' => 'Đặc sản Hải Phòng', 'facet' => 'dac-san'],
+        'dac-san:nam-dinh' => ['name' => 'Đặc sản Nam Định', 'facet' => 'dac-san'],
+        'dac-san:thanh-hoa' => ['name' => 'Đặc sản Thanh Hoá', 'facet' => 'dac-san'],
+        'dac-san:nghe-an' => ['name' => 'Đặc sản Nghệ An', 'facet' => 'dac-san'],
+        'dac-san:hue' => ['name' => 'Đặc sản Huế', 'facet' => 'dac-san'],
+        'dac-san:da-nang' => ['name' => 'Đặc sản Đà Nẵng', 'facet' => 'dac-san'],
+        'dac-san:quang-nam' => ['name' => 'Đặc sản Quảng Nam', 'facet' => 'dac-san'],
+        'dac-san:tp-hcm' => ['name' => 'Đặc sản TP. Hồ Chí Minh', 'facet' => 'dac-san'],
+        'dac-san:tien-giang' => ['name' => 'Đặc sản Tiền Giang', 'facet' => 'dac-san'],
+        'dac-san:an-giang' => ['name' => 'Đặc sản An Giang', 'facet' => 'dac-san'],
+        'dac-san:can-tho' => ['name' => 'Đặc sản Cần Thơ', 'facet' => 'dac-san'],
+        'dac-san:soc-trang' => ['name' => 'Đặc sản Sóc Trăng', 'facet' => 'dac-san'],
+        'dac-san:vung-tau' => ['name' => 'Đặc sản Bà Rịa – Vũng Tàu', 'facet' => 'dac-san'],
+
         // — Chế độ ăn của món (suy từ thành phần, đúng 1/món) —
         'diet:chay' => ['name' => 'Chay (thuần)', 'facet' => 'diet'],
         'diet:chay-trung-sua' => ['name' => 'Chay trứng · sữa', 'facet' => 'diet'],

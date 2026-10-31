@@ -2,7 +2,7 @@
   "slug": "banh-canh-nam-pho",
   "parent_dish_slug": null,
   "country_code": "VN",
-  "region_code": "vn-hue",
+  "region_code": "vn-central",
   "names": [
     {
       "locale": "vi",
@@ -127,6 +127,7 @@
   "reviewed_at": null,
   "review_note": null,
   "tags": [
+    "dac-san:hue",
     "loai:bun-pho-mi"
   ]
 }

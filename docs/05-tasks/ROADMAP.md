@@ -115,6 +115,7 @@ thư mục `data/` đúng cấu trúc; câu hỏi Q1/Q2 ở [PRD §9](../01-prd/
 | [DATA-007](./tasks/DATA-007.md) | Lệnh `lacdoi:export-data` — JSON ổn định | Backend | ✅ | SETUP-003 | 2026-08-31 |
 | [DATA-008](./tasks/DATA-008.md) | Bảng hệ số phần ăn được (nguyên liệu có xương/vỏ) | Dữ liệu | ✅ khung + 3 hệ số có nguồn; 16 hệ số null chờ phép cân | — | 2026-08-31 |
 | [DATA-009](./tasks/DATA-009.md) | Chuẩn hoá tên món: tên chính tiếng Việt có dấu + tên tiếng Anh đúng nghĩa | Dữ liệu | ✅ | ALIAS-001 | 2026-10-31 |
+| [DATA-010](./tasks/DATA-010.md) | Vùng miền món chỉ còn 3 miền chính; đặc sản tỉnh/thành thành facet `dac-san:` | Dữ liệu | ✅ | TAXONOMY | 2026-10-31 (137 món cấp tỉnh → miền cha + nhãn đặc sản; API/admin chặn region cấp tỉnh cho món) |
 
 ### 1b. Nguyên liệu — phần tốn công nhất
 

@@ -2,7 +2,7 @@
   "slug": "mit-tron-thit",
   "parent_dish_slug": "goi-mit-non",
   "country_code": "VN",
-  "region_code": "vn-quang-nam",
+  "region_code": "vn-central",
   "names": [
     {
       "locale": "vi",
@@ -123,6 +123,7 @@
   "reviewed_at": null,
   "review_note": null,
   "tags": [
+    "dac-san:quang-nam",
     "loai:goi-nom"
   ]
 }

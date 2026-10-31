@@ -2,7 +2,7 @@
   "slug": "banh-ong-la-dua",
   "parent_dish_slug": null,
   "country_code": "VN",
-  "region_code": "vn-soc-trang",
+  "region_code": "vn-south",
   "names": [
     {
       "locale": "vi",
@@ -95,6 +95,7 @@
   "reviewed_at": null,
   "review_note": null,
   "tags": [
+    "dac-san:soc-trang",
     "loai:banh"
   ]
 }
