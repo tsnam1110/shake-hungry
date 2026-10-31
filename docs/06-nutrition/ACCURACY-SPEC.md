@@ -176,6 +176,7 @@ phần thực tế và cách nấu của từng quán/từng nhà làm thay đ�
 | 2026-08-31 | 1.0.0 | 204 Food Code FNDDS (`usda_sr_legacy`) | **89,7%** | 3,9% | −3,8% | ✅ tiêu chí chính đạt; **nhóm chiên chưa đo được** | [2026-08-31-fndds.md](accuracy-runs/2026-08-31-fndds.md) |
 | 2026-08-31 | 1.0.0 | 4.766 món Nutrition5k | 100% | 0,04% | +0,01% | ⚠️ **sanity check vòng tròn** — không phải độ chính xác (xem §4) | — |
 | 2026-09-01 | **1.1.0** | 204 Food Code FNDDS (`usda_sr_legacy`) | **89,7%** | 3,9% | −3,8% | ✅ tiêu chí chính giữ nguyên; **% tham chiếu trong khoảng 1,0% → 80,4%** | [2026-09-01-fndds.md](accuracy-runs/2026-09-01-fndds.md) |
+| 2026-10-31 | **1.1.0** | **160 món Việt của dự án, phân tầng theo cách chế biến (QA-002)** | **76,9%** | 11,5% | **+10,3%** | ❌ **CHƯA ĐẠT** — 4/5 nhóm đạt 100%; nhóm chiên/rán chỉ 7,5% (bias +39,8%): dầu bị tính hai lần (dòng `dau-an` trong công thức + mô hình hấp thụ CALC-004) | [2026-10-31-vn-dishes.md](accuracy-runs/2026-10-31-vn-dishes.md) |
 
 **Đọc bảng này cho đúng.** Lần đo đầu tiên nói được ba điều, không hơn:
 
@@ -227,3 +228,20 @@ Bổ sung 2026-09-01 sau khi soát lại thành phần bộ mẫu:
 > **Vẫn chưa được tuyên bố "độ chính xác >80%" ra bên ngoài.** Con số 89,7% là trên **món Mỹ của
 > FNDDS**, với nguyên liệu do chính USDA ánh xạ sẵn — không phải trên kho món Việt do dự án biên
 > soạn, và không có nhóm chiên. Đo trên kho món thật là việc của [QA-002](../05-tasks/tasks/QA-002.md) ở GĐ3.
+
+### Lần đo 3 (2026-10-31, QA-002 — lần đầu đo trên món Việt): 76,9%, chưa đạt
+
+Mẫu 160 món phân tầng (luộc/hấp 32 · xào 28 · chiên/rán 40 · nấu/canh 32 · nướng/kho 28), tham
+chiếu tính tay độc lập theo FAO/INFOODS từ chính bộ số nguyên liệu của dự án (xem giới hạn "chung
+một bảng thành phần" trong báo cáo). Kết quả tách nhóm cho thấy bức tranh rõ hơn mọi lần đo trước:
+
+- **Bốn nhóm không chiên đạt 100% trong ±20%** (MAPE 1,6–2,7%, bias −0,2…+1,2%) — đường biến đổi
+  nguyên liệu → món của engine khớp phép tính tay.
+- **Nhóm chiên/rán chỉ đạt 7,5%**, bias **+39,8%** một chiều: công thức đã kê sẵn dòng `dau-an`
+  8–20 g, engine lại cộng thêm dầu hấp thụ theo mô hình CALC-004 (trung vị +100,5 kcal/món) —
+  **dầu bị tính hai lần**. Đây là mâu thuẫn quy ước giữa dữ liệu và engine, không phải lỗi số học.
+- Tổng thể 76,9% < 80% ⇒ **mục tiêu chưa đạt, không nới định nghĩa**. Sửa xong nhóm chiên (chờ
+  chủ dự án chốt phương án — báo cáo QA-002 §5) phải đo lại trên cùng bộ mẫu mới được kết luận.
+
+> Sau lần đo này, câu cấm tuyên bố ở trên còn nguyên hiệu lực và có thêm lý do: con số trên chính
+> kho món Việt hiện là **76,9%**.

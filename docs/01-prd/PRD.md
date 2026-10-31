@@ -137,7 +137,7 @@ biết quán cho bao nhiêu dầu.
 
 | # | Câu hỏi | Ai quyết | Hạn |
 |---|---|---|---|
-| Q1 | Tên chính thức là "Lắc Đói" hay "Lắc Đối"? Tài liệu đang dùng **Lắc Đói** (khớp với tên thư mục `shake-hungry`) | Chủ dự án | Trước GĐ1 |
+| Q1 | Tên chính thức là "Lắc Đói" hay "Lắc Đối"? | Chủ dự án | ✅ **Đã chốt 2026-10-31: "Lắc Đói"** — lắc món ăn khi đói |
 | Q2 | Giấy phép mã nguồn của dự án? Ảnh hưởng tới việc dùng Open Food Facts (ODbL) và Wikibooks (CC BY-SA) | Chủ dự án | Trước khi nhập 2 nguồn đó |
 | Q3 | Có xin được dữ liệu Viện Dinh dưỡng không? | — | ✅ **Đóng 2026-08-31:** không xin phép nữa — [LEGAL-001](../05-tasks/tasks/LEGAL-001.md) huỷ, chuyển sang tự tra cứu + tầng 6 (2026-10-31) |
 | Q4 | Ảnh món ăn lấy từ đâu? Tự chụp / mua / CC BY? Ảnh hưởng tới kích thước repo | Chủ dự án | Trước GĐ3 |
