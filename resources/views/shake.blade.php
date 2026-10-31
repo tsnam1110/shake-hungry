@@ -36,6 +36,10 @@
                         <button type="button" data-count="3" aria-pressed="true">3 món</button>
                         <button type="button" data-count="4" aria-pressed="false">4 món</button>
                     </div>
+                    <div class="ld-row" style="padding:12px 2px 0">
+                        <span class="grow">Bữa cơm bình dân <span style="display:block;font-weight:400;color:var(--color-faint);font-size:13px;margin-top:1px">Chỉ món dễ nấu, nguyên liệu phổ biến dễ kiếm — như bữa cơm nhà hằng ngày</span></span>
+                        <button class="ld-switch" type="button" role="switch" aria-checked="false" id="binh-dan" aria-label="Bữa cơm bình dân"></button>
+                    </div>
                 </div>
             </div>
 
@@ -62,7 +66,7 @@
             </div>
             <div class="ld-chips" id="allergens" style="margin-top:8px"></div>
             <p class="ld-note" style="margin-top:8px">Món chứa các thành phần này không bao giờ xuất hiện khi lắc — lọc cứng, không bị nới lỏng kể cả khi các lọc khác được nới.</p>
-            <p class="ld-note" id="pref-note" hidden style="margin-top:12px">Các lựa chọn Chế độ lắc, Số món trong mâm, Ăn chay, Vùng miền, Kcal mục tiêu và Không ăn được được lấy từ hồ sơ của bạn và tự lưu lại khi bạn thay đổi. <span id="pref-saved" style="color:var(--color-mint-dark);font-weight:600"></span></p>
+            <p class="ld-note" id="pref-note" hidden style="margin-top:12px">Các lựa chọn Chế độ lắc, Số món trong mâm, Bữa cơm bình dân, Ăn chay, Vùng miền, Kcal mục tiêu và Không ăn được được lấy từ hồ sơ của bạn và tự lưu lại khi bạn thay đổi. <span id="pref-saved" style="color:var(--color-mint-dark);font-weight:600"></span></p>
         </div>
 
         <button id="shake-btn" class="ld-btn ld-btn-primary" style="width:100%;margin-top:18px;padding:16px 24px;font-size:18px">
@@ -184,6 +188,7 @@ function applyPrefs() {
     if (['chay', 'chay-truong'].includes(myProfile.diet_type)) setSw('vegetarian', true);
     if (myProfile.shake_mode) shakeMode = myProfile.shake_mode;
     if (myProfile.tray_dish_count) trayCount = myProfile.tray_dish_count;
+    if (myProfile.tray_binh_dan) setSw('binh-dan', true);
     renderShakeMode();
     if (myProfile.preferred_region_id) {
         const sel = document.getElementById('region');
@@ -240,6 +245,14 @@ vegEl.addEventListener('click', () => {
     if (myProfile?.diet_type !== 'low-carb') {
         savePref({ diet_type: swOn('vegetarian') ? 'chay' : null });
     }
+});
+
+/* REC-004: công tắc "Bữa cơm bình dân" — lưu ngược vào hồ sơ như các tuỳ chọn mâm. */
+const bdEl = document.getElementById('binh-dan');
+bdEl.addEventListener('click', () => {
+    const turningOn = bdEl.getAttribute('aria-checked') !== 'true';
+    bdEl.setAttribute('aria-checked', turningOn ? 'true' : 'false');
+    savePref({ tray_binh_dan: turningOn });
 });
 
 /* ===== Chế độ lắc hai loại (REC-003): ăn ngoài 1 món / mâm cơm tự nấu 1–4 món ===== */
@@ -369,6 +382,7 @@ document.getElementById('shake-btn').addEventListener('click', async () => {
                 vegetarian: swOn('vegetarian'),
                 mode: shakeMode,
                 dish_count: shakeMode === 'home' ? trayCount : 1,
+                binh_dan: shakeMode === 'home' ? swOn('binh-dan') : false,
                 region_id: document.getElementById('region').value || null,
                 target_kcal: document.getElementById('target_kcal').value || null,
                 allergens: [...allergenSlugs],
@@ -431,8 +445,8 @@ function renderTrayResult(data, box) {
     const tk = data.tray_kcal;
     const unvNames = [...new Set(dishes.flatMap(d => d.nutrition?.unverified_ingredients ?? []))];
     box.innerHTML = `<div style="padding-top:8px;border-top:1px solid var(--color-line);margin-top:18px">
-        <h2 style="font-size:26px;font-weight:800;letter-spacing:-.02em;line-height:1.2;margin:12px 0 2px">Mâm cơm gợi ý · ${dishes.length} món</h2>
-        <p style="color:var(--color-sub);font-size:15px;margin:0">Chưa tính cơm — cơm nhà mình tự đong theo khẩu phần quen thuộc.</p>
+        <h2 style="font-size:26px;font-weight:800;letter-spacing:-.02em;line-height:1.2;margin:12px 0 2px">${data.binh_dan ? 'Mâm cơm bình dân' : 'Mâm cơm gợi ý'} · ${dishes.length} món</h2>
+        <p style="color:var(--color-sub);font-size:15px;margin:0">${data.binh_dan ? 'Món dễ nấu, nguyên liệu phổ biến dễ kiếm. ' : ''}Chưa tính cơm — cơm nhà mình tự đong theo khẩu phần quen thuộc.</p>
         ${tk ? `<div style="display:flex;align-items:baseline;gap:9px;margin-top:12px;flex-wrap:wrap">
                 <span class="ld-kcal-so ld-tnum">${Math.round(tk.kcal_min)}–${Math.round(tk.kcal_max)}</span>
                 <span style="color:var(--color-sub);font-size:14.5px">kcal cả mâm (từ ${tk.dishes_counted} món có dữ liệu, chưa gồm cơm)</span></div>` : ''}

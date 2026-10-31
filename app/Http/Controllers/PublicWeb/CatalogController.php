@@ -122,6 +122,8 @@ class CatalogController extends Controller
             // REC-003: lắc hai chế độ — ăn ngoài (1 món) / mâm cơm tự nấu (1–4 món).
             'mode' => ['nullable', 'string', 'in:eat_out,home'],
             'dish_count' => ['nullable', 'integer', 'min:1', 'max:4'],
+            // REC-004: tuỳ chọn "Bữa cơm bình dân" cho mâm cơm tự nấu.
+            'binh_dan' => ['nullable', 'boolean'],
             'home_cook' => ['nullable', 'boolean'],
             'allergens' => ['nullable', 'array'],
             'allergens.*' => ['string', 'max:64'],
@@ -185,6 +187,8 @@ class CatalogController extends Controller
         }
         $dishCount = (int) ($data['dish_count'] ?? (($profile ?? null)?->tray_dish_count ?? 3));
         $dishCount = max(1, min(4, $dishCount));
+        // REC-004: bình dân — tham số tường minh > hồ sơ > tắt.
+        $binhDan = (bool) ($data['binh_dan'] ?? (($profile ?? null)?->tray_binh_dan ?? false));
 
         // Kho trống toàn cục = dữ liệu đang được dựng lại (seed), không phải do
         // bộ lọc của người dùng — phải báo đúng sự thật thay vì kêu nới bộ lọc.
@@ -202,7 +206,7 @@ class CatalogController extends Controller
         ];
 
         if ($mode === 'home') {
-            $result = $recommender->shakeTray([...$engineInput, 'dish_count' => $dishCount]);
+            $result = $recommender->shakeTray([...$engineInput, 'dish_count' => $dishCount, 'binh_dan' => $binhDan]);
             $dishes = [];
             foreach ($result['dishes'] as $row) {
                 $row['dish']->loadMissing('dishIngredients.ingredient:id,name_vi,slug');
@@ -213,6 +217,7 @@ class CatalogController extends Controller
             return response()->json([
                 'mode' => 'home',
                 'dish_count' => $dishCount,
+                'binh_dan' => $binhDan,
                 'dishes' => $dishes,
                 'dish' => $dishes[0] ?? null,
                 'tray_kcal' => $withNutrition === [] ? null : [

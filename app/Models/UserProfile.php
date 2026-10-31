@@ -17,6 +17,7 @@ class UserProfile extends Model
             'height_cm' => 'float',
             'weight_kg' => 'float',
             'tray_dish_count' => 'integer',
+            'tray_binh_dan' => 'boolean',
         ];
     }
 }

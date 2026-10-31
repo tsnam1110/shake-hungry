@@ -41,6 +41,8 @@ class ProfileController extends Controller
             // REC-003: chế độ lắc + số món mâm cơm lưu trong hồ sơ.
             'shake_mode' => ['nullable', Rule::in(['eat_out', 'home'])],
             'tray_dish_count' => ['nullable', 'integer', 'min:1', 'max:4'],
+            // REC-004: tuỳ chọn "Bữa cơm bình dân" lưu trong hồ sơ.
+            'tray_binh_dan' => ['sometimes', 'boolean'],
         ]);
         $profile = UserProfile::updateOrCreate(['user_id' => $request->user()->id], $data);
 

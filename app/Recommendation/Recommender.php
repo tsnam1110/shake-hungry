@@ -7,6 +7,7 @@ namespace App\Recommendation;
 use App\Models\Dish;
 use App\Models\RecommendationLog;
 use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 
 /**
@@ -102,6 +103,20 @@ class Recommender
     private const TRAY_KCAL_SHARE = ['chinh' => 0.52, 'canh' => 0.16, 'rau' => 0.14, 'phu' => 0.18];
 
     /**
+     * REC-004 "Bữa cơm bình dân": ngưỡng SUY từ chính kho dữ liệu (không gán
+     * tay từng món) — mọi nguyên liệu của món phải xuất hiện trong ít nhất
+     * ngần này món của kho (phổ biến = dễ kiếm, giá bình dân), và cách làm
+     * không quá ngần này bước (đơn giản, nấu nhanh hằng ngày). Đo trên kho
+     * 657 món (2026-10-31): 212/312 món đủ điều kiện mâm đạt cả hai ngưỡng.
+     */
+    private const BINH_DAN_MIN_INGREDIENT_FREQ = 4;
+
+    private const BINH_DAN_MAX_STEPS = 8;
+
+    /** @var array<int, int>|null ingredient_id => số món trong kho dùng tới */
+    private ?array $ingredientFreqCache = null;
+
+    /**
      * REC-003: lắc MÂM CƠM tự nấu — chọn 1–4 món (không tính cơm) theo vai trò
      * của mâm cơm Việt, dùng chung kho lọc cứng của REC-001: dị ứng không bao
      * giờ nới, nới dần vùng miền → chế độ ăn khi thiếu món như lắc đơn.
@@ -112,6 +127,8 @@ class Recommender
     public function shakeTray(array $input): array
     {
         $count = max(1, min(4, (int) ($input['dish_count'] ?? 3)));
+        // REC-004: tuỳ chọn "Bữa cơm bình dân" — lọc thêm trên kho mâm cơm.
+        $binhDan = (bool) ($input['binh_dan'] ?? false);
         $input['home_cook'] = true;
         $allergens = $input['allergens'] ?? [];
         $recentIds = $input['recent_dish_ids'] ?? [];
@@ -131,6 +148,11 @@ class Recommender
         for ($level = 0; $level <= 3; $level++) {
             $pool = $this->pool($input, $level, $allergens, tray: true)
                 ->filter(fn (Dish $d) => $this->trayEligible($d));
+            if ($binhDan) {
+                // Lọc bình dân KHÔNG nới theo level: đó là lựa chọn tường minh
+                // của người dùng; thiếu món thì trả mâm thiếu + gợi ý trung thực.
+                $pool = $pool->filter(fn (Dish $d) => $this->binhDanEligible($d));
+            }
             $excluded = $level === 0 ? array_slice($recentIds, -10) : array_slice($recentIds, -3);
             $picked = [];
             $pickedIds = [];
@@ -182,16 +204,20 @@ class Recommender
                 'seed' => $seed,
                 'dish_id' => $row['dish']->id,
                 'relaxed_level' => $bestLevel,
-                'context' => ['pool_size' => $bestPoolSize, 'allergens' => $allergens, 'mode' => 'home', 'role' => $row['role'], 'dish_count' => $count],
+                'context' => ['pool_size' => $bestPoolSize, 'allergens' => $allergens, 'mode' => 'home', 'role' => $row['role'], 'dish_count' => $count, 'binh_dan' => $binhDan],
             ]);
         }
         Log::info('shake-tray', ['seed' => $seed, 'dishes' => array_map(fn ($r) => $r['dish']->slug, $best), 'relaxed' => $bestLevel]);
 
-        $result = ['dishes' => $best, 'seed' => $seed, 'relaxed_level' => $bestLevel, 'pool_size' => $bestPoolSize];
+        $result = ['dishes' => $best, 'seed' => $seed, 'relaxed_level' => $bestLevel, 'pool_size' => $bestPoolSize, 'binh_dan' => $binhDan];
         if ($best === []) {
-            $result['suggestion'] = 'Không còn món tự nấu phù hợp — hãy nới bộ lọc (bỏ bớt vùng miền/chế độ ăn) hoặc lắc sang bữa khác.';
+            $result['suggestion'] = $binhDan
+                ? 'Chưa gom được mâm cơm bình dân phù hợp — thử nới bộ lọc (trừ dị ứng) hoặc tắt "Bữa cơm bình dân" để xem thêm món khác.'
+                : 'Không còn món tự nấu phù hợp — hãy nới bộ lọc (bỏ bớt vùng miền/chế độ ăn) hoặc lắc sang bữa khác.';
         } elseif (count($best) < $count) {
-            $result['suggestion'] = 'Kho món tự nấu phù hợp hiện chỉ gom được '.count($best).'/'.$count.' món cho mâm này.';
+            $result['suggestion'] = $binhDan
+                ? 'Kho món bình dân phù hợp hiện chỉ gom được '.count($best).'/'.$count.' món cho mâm này — nới bộ lọc hoặc tắt "Bữa cơm bình dân" để gom đủ mâm.'
+                : 'Kho món tự nấu phù hợp hiện chỉ gom được '.count($best).'/'.$count.' món cho mâm này.';
         }
 
         return $result;
@@ -210,6 +236,41 @@ class Recommender
     private function trayEligible(Dish $dish): bool
     {
         return array_intersect($this->dishLoai($dish), self::TRAY_EXCLUDED_LOAI) === [];
+    }
+
+    /**
+     * REC-004: món "bình dân" — cách làm không quá BINH_DAN_MAX_STEPS bước và
+     * MỌI nguyên liệu (trừ phần bỏ đi như xương/vỏ) đều phổ biến trong kho:
+     * nguyên liệu càng xuất hiện ở nhiều món càng là đồ chợ nào cũng có, giá
+     * bình dân; nguyên liệu chỉ 1–3 món dùng tới thường là đặc sản/đồ hiếm.
+     */
+    private function binhDanEligible(Dish $dish): bool
+    {
+        if (count($dish->recipe_steps ?? []) > self::BINH_DAN_MAX_STEPS) {
+            return false;
+        }
+        $freq = $this->ingredientFrequency();
+        foreach ($dish->dishIngredients as $line) {
+            if ($line->is_discarded) {
+                continue;
+            }
+            if (($freq[$line->ingredient_id] ?? 0) < self::BINH_DAN_MIN_INGREDIENT_FREQ) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    /** @return array<int, int> ingredient_id => số món trong kho dùng nguyên liệu đó */
+    private function ingredientFrequency(): array
+    {
+        return $this->ingredientFreqCache ??= DB::table('dish_ingredients')
+            ->selectRaw('ingredient_id, COUNT(DISTINCT dish_id) AS c')
+            ->groupBy('ingredient_id')
+            ->pluck('c', 'ingredient_id')
+            ->map(fn ($c) => (int) $c)
+            ->all();
     }
 
     private function dishRole(Dish $dish): string
