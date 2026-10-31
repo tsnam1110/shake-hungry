@@ -137,7 +137,14 @@
       "note": "Chợ Lái Thiêu (4 người, ghi rõ): hến 1 kg, cà chua 2 quả lớn, khế 1–2 quả, hành tím 2 củ, rau răm."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/canh-hen-nau-chua.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 4 nguồn. Phân xử định lượng: GIỮ NGUYÊN — cà chua 50 g và khế 30 g khớp đồng thuận nguồn (~45–60 g và ~28–55 g/khẩu phần); hen 60 g là thịt hến đã đãi theo định nghĩa ingredient (45 kcal/100 g), tương đương phần thịt thu được từ 250–375 g hến cả vỏ/khẩu phần của nguồn (tỉ lệ thịt hến nhỏ ~20–25%) nên không lệch như số thô cả vỏ gợi ý. Bất thường ghi nhận chờ pha phân xử: rau răm (4/4 nguồn — rau thơm định danh của món), hành tím (4/4) và dầu ăn cho bước xào thịt hến (4/4) đều thiếu trong file; bước đã bổ sung công đoạn luộc–đãi còn thiếu nhưng giữ kỹ thuật cho hến vào cuối không xào cho nhất quán với danh sách nguyên liệu hiện tại. Phân xử bất thường LV2-003 (Phần A — LV2-004, 2026-10-31): Thêm hanh-tim 5 g, dau-an 3 g và rau-ram 3 g — cả ba đều có ở 4/4 nguồn đã mở ở đợt 3 (hành tím + dầu cho bước xào thịt hến; rau răm là rau thơm định danh của món) mà file thiếu hẳn; bước xào hến đã bổ sung cho khớp. rau-ram chưa có số dinh dưỡng — theo tiền lệ dòng rau thơm chưa có số (ngo-gai ở canh-khoai-mo, Phần A đợt 2), engine ghi vào missing[] phần rau thơm, món vẫn tính được từ các dòng còn lại.",

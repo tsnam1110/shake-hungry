@@ -138,7 +138,14 @@
       "note": "Đã mở và đối chiếu mục chân giò lợn hầm cải chua: 400g chân giò + 200g dưa cải chua, có gừng, hành tím, nêm muối, đường, nước mắm — tỉ lệ giò/dưa 2:1 gần với file. Lưu ý mức tin cậy: đây là trang tổng hợp (Nấu Ăn Thường Thức/webnauan), không có biên tập viên ký tên riêng cho công thức này nên độ tin cậy thấp hơn hai nguồn còn lại, chỉ dùng làm nguồn đối chiếu thứ ba."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/canh-gio-heo-ham-dua-cai.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-005 đợt 5: thử nâng Mức 2 — GIỮ Mức 1: lần mở nguồn đầu tiên bị chặn 429 — dừng ngay theo kỷ luật, chưa mở được nguồn nào. Thử lại khi hết chặn.] [LV2-006 đợt 6: nâng Mức 2 — thử lại sau 429 đợt 5; định lượng giữ nguyên toàn bộ sau đối chiếu ≥2 nguồn. Lưu ý nguồn: nếu một trong ba nguồn đối chiếu yếu hơn hai nguồn còn lại, ghi rõ mức tin cậy trong note của nguồn đó.]",

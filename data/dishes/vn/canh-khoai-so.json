@@ -129,7 +129,14 @@
       "note": "Saigonese Baguette: đối chiếu bước xào thịt băm và nêm rau mùi, hành lá."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/canh-khoai-so.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Ghi chú: dùng nguyên liệu khoai-mon thay cho khoai sọ vì kho chưa có nguyên liệu khoai sọ riêng — chờ biên tập viên quyết định tách mục. Đính chính tích hợp DISH-004: bản soạn ban đầu trùng \"Canh khoai sọ nấu sườn\" (đã có file canh-khoai-so-suon dùng khoai sọ thật) — chuyển thành biến thể thịt băm và thay khoai môn (dùng tạm lúc khoai sọ chưa có file) bằng khoai-so.  [LV2-004 đợt 4: nâng Mức 2 — thịt băm 100→60 theo nguồn; viết lại recipe_steps: bản cũ viết cho món sườn (sai món), nay viết đúng quy trình thịt băm.]",

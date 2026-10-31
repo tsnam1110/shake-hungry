@@ -107,7 +107,14 @@
       "note": "Chợ Lái Thiêu: sườn non 400 g, khoai môn 500 g, hành tím 2 củ, nước 1,2–1,5 L; biến thể xào sườn với dầu + hành tím trước khi hầm."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/canh-khoai-mon-suon.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 3 nguồn. Phân xử định lượng: suon-lon 70 → 100 g — cả 3 nguồn đồng thuận 400 g sườn/mẻ gia đình (100 g/khẩu phần), file thấp hơn 30%; khoai môn 100 g giữ (2/3 nguồn khớp, nguồn còn lại 125 g lệch dưới ngưỡng). Bất thường ghi nhận: ngò gai có ở 3/3 nguồn mà file thiếu (ingredient ngo-gai chưa có số dinh dưỡng — tiền lệ canh-khoai-mo đợt 2 đã thêm dạng dòng rau thơm chưa có số, chờ pha phân xử quyết); hành tím có ở 2/3 nguồn, file thiếu. Phân xử bất thường LV2-003 (Phần A — LV2-004, 2026-10-31): Thêm ngo-gai 2 g (3/3 nguồn đã mở ở đợt 3; ingredient ngo-gai chưa có số — tiền lệ dòng rau thơm chưa có số như canh-khoai-mo đợt 2, engine ghi missing[] phần rau thơm) và hanh-tim 3 g (2/3 nguồn).",

@@ -115,7 +115,14 @@
       "note": "Công thức canh sườn hầm hạt sen: sườn non 500g, hạt sen tươi 200g, cà rốt 1 củ, khoai tây 1 củ; hầm sườn 25–30 phút, cho hạt sen hầm thêm 20–25 phút — đối chiếu kỹ thuật và định lượng."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/canh-hat-sen-suon.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt DISH-004 đợt 2 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): Đối chiếu 3 nguồn công thức đã mở kiểm chứng (xem recipe_sources). Định lượng: giữ nguyên toàn bộ. Sườn 90g/khẩu phần thấp hơn mức quy đổi của hai nguồn có số (≈125g) khoảng 28%, chưa vượt ngưỡng 30%; hạt sen 40g so với 50g ở hai nguồn (−20%); cà rốt hai nguồn bất đồng nhau (50g so với ≈25–38g/khẩu phần) nên giữ 30g. Bước nấu viết lại 7 bước theo kỹ thuật chung của các nguồn (chần sườn, bỏ tim sen, ninh theo giai đoạn).",
