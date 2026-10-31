@@ -111,7 +111,14 @@
       "note": "Cookpad — Anhchan Kitchen (đúng cá nục + cà chua, chỉ kỹ thuật): cá ướp mắm/muối/tiêu, cà chua + hành tím, cuối cho hành ngò + rau răm."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/canh-ca-nuc-nau-ngot.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món THAY cho canh cá lóc rau đắng trong kế hoạch: rau đắng chưa có số (hồ sơ tra cứu đã có) nên món gốc hoãn. Cá nục là nguyên liệu tầng 6 (FNRI) — món mang cờ chưa kiểm định. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 4 nguồn của món \"canh cá nấu ngót\" (cá + cà chua + cần tàu). Phân xử định lượng: ca-nuc 90 → 120 g và ca-chua 60 → 110 g — cả 3 nguồn có định lượng đều cho cá ≥100 g/khẩu phần và 2 nguồn cho cà chua 120–167 g/khẩu phần. Bất thường lớn ghi nhận chờ pha phân xử: món \"nấu ngót\" định danh bằng rau cần tàu — có ở 3/3 nguồn có định lượng (~15–50 g/khẩu phần) mà file THIẾU HẲN (kho đã có ingredient rau-can-ta); dầu ăn xào/rán cá có ở 2/3 nguồn, file không có dòng dau-an; thơm chỉ 1/3 nguồn và kho đã có món riêng canh-thom-ca-nuc nên không gộp thơm vào món này. Bước giữ kỹ thuật thả cá đã ướp vào nước cà chua cho nhất quán với danh sách nguyên liệu hiện tại (nguồn có thêm bước rán/áp chảo cá trước — gắn với dòng dầu đang thiếu). Phân xử bất thường LV2-003 (Phần A — LV2-004, 2026-10-31): Thêm rau-can-ta (cần tàu — rau định danh của món \"nấu ngót\") 20 g: 3/3 nguồn có định lượng ở đợt 3 đều có, dải 15–50 g/khẩu phần, lấy thận trọng 20 g. Dầu ăn rán cá (2/3 nguồn) KHÔNG thêm: không nguồn nào định lượng rõ dòng dầu và kỹ thuật thả cá đã ướp trực tiếp vào nước cà chua vẫn có nguồn ủng hộ — giữ kỹ thuật hiện tại, ghi nhận tranh chấp.",

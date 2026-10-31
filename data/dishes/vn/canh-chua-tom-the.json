@@ -171,7 +171,14 @@
       "note": "Cookpad — Emily Luu (cho 2 người, ghi rõ): 4–5 con tôm sú to, cà chua 1 trái, me 1 gói, đậu bắp, bạc hà."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/canh-chua-tom-the.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 3 nguồn (nguồn dùng tôm sú/tôm đất — cùng khuôn canh chua tôm Nam Bộ). Phân xử định lượng: gia-do 25 → 10 g và dau-bap 30 → 15 g — cả hai nguồn có định lượng đều thấp hơn file 60–70% ở giá và ~2 lần ở đậu bắp; tôm 80 g, cà chua 60 g, dứa 40 g giữ nguyên (khớp dải nguồn); me 10 g giữ (nguồn phân tán hai chiều). Bất thường ghi nhận: bạc hà/dọc mùng có ở 3/3 nguồn mà file thiếu hẳn — kho chưa có ingredient này (đầu mối biên soạn nguyên liệu mới, cùng nhóm mẻ/giấm bỗng/nước màu/giò sống). Phân xử bất thường LV2-003 (Phần A — LV2-004, 2026-10-31): Thêm doc-mung (bạc hà) 40 g — rau định danh của canh chua có ở 3/3 nguồn đã mở ở đợt 3. Đính chính đầu mối ở LV2-003: ghi \"kho chưa có ingredient\" nay không còn đúng — doc-mung đã được biên soạn trong DISH-005 (13 kcal/100 g, Bảng TPTP VN tầng 6, Colocasia gigantea) nên thêm dòng trực tiếp, không cần biên soạn mới; lượng 40 g nằm trong dải công thức canh chua phổ biến 30–50 g/khẩu phần.",

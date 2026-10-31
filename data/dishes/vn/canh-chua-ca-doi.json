@@ -155,7 +155,14 @@
       "note": "Cookpad (Emily Luu): canh chua cá diêu hồng cho 2 người (giá đỗ 100g, dọc mùng 1 cây, thơm 1/4 trái) — đối chiếu định lượng rau mỗi khẩu phần."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/canh-chua-ca-doi.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt DISH-004 đợt 2 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): đã đối chiếu 3 nguồn công thức đã mở kiểm chứng — 1 nguồn đúng cá đối (Saigonese Baguette: 500–700g cá mỗi nồi) và 2 nguồn Cookpad là canh chua cá diêu hồng, tức cùng một công thức canh chua cá miền Tây, chỉ khác loài cá. Cá đối 110g/khẩu phần tiệm cận mức quy đổi của nguồn cá đối (khoảng 125g). Lượng rau canh chua trong file cao hơn quy đổi của một số nguồn nhưng các nguồn bất đồng lớn với nhau (ví dụ giá đỗ 12,5–50g/khẩu phần) nên giữ nguyên mọi quantity theo quy tắc phân xử. recipe_steps viết lại hoàn toàn thành 7 bước. Không sửa phân loại.",

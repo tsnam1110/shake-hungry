@@ -146,7 +146,14 @@
       "note": "Đúng món canh cá trắm nấu dưa chua; đối chiếu thứ tự xào dưa và cà chua trước khi đổ nước, cách vắt bớt nước chua của dưa và bước cho hành lá, thì là sau cùng."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/canh-ca-tram.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-005 đợt 5: nâng Mức 2 — đối chiếu 3 nguồn công thức đã mở kiểm chứng. Phân xử định lượng: cà chua 50→30g vì cả 2 nguồn có định lượng đều thấp hơn file trên 30% (Tripi khoảng 25–30g/người, Điện Máy XANH khoảng 10g/người), lấy mức 30g thận trọng theo nguồn Tripi. Bất thường ghi nhận: 1/3 nguồn có thịt ba chỉ mà file không có (nhiều khả năng là biến thể); 2/3 nguồn chiên hoặc rán cá trước khi nấu trong khi file thả cá thẳng sau khi ướp; 2/3 nguồn lưu ý không nêm muối vì dưa đã mặn, file vẫn có muối 1g — chờ pha phân xử.]",

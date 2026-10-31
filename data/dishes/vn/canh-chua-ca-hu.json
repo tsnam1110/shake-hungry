@@ -169,7 +169,14 @@
       "note": "Cookpad: biến thể canh chua cá hú miền Tây, đối chiếu me và rau nêm."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/canh-chua-ca-hu.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nguyên liệu cá hú mới biên soạn đợt này từ nguồn literature (Nutraqua) — món mang cờ chưa kiểm định theo quy ước dự án.  [LV2-004 đợt 4: nâng Mức 2 — cá hú 100→150 (3/3 nguồn khớp tuyệt đối), dứa 40→100, me 8→12, thêm ngò om (dùng slug rau-ngo, chưa có số — dòng rau thơm theo tiền lệ) 3, ớt 2, tỏi 3, dầu 5; serving 350→450.]",

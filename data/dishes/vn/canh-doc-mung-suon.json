@@ -95,7 +95,14 @@
     "Thả dọc mùng nấu 2 phút, nêm nước mắm và đường, rắc ngò gai, dùng nóng."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/canh-doc-mung-suon.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-005 đợt 5: thử nâng Mức 2 — GIỮ Mức 1: đã mở được 2 nguồn thì bị chặn 429 — chưa đủ 3 nguồn đã mở. Thử lại khi hết chặn.] [LV2-006 đợt 6: GIỮ Mức 1 — bị chặn 429 ngay ở nguồn thứ nhất khi thử lại. Câu hỏi còn mở: tạo chua bằng sấu hay me. Lưu ý quy trình: ghi nhận ở LV2-005 không nêu tên 2 nguồn đã mở được trước đó — đợt sau cần ghi rõ nguồn ngay khi mở.]",

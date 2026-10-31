@@ -136,7 +136,14 @@
       "url": "https://monan3mien.com/canh-chua-ca-nuc/"
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/canh-chua-ca-nuc.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Cá nục là nguyên liệu tầng 6 (FNRI) — món mang cờ chưa kiểm định theo quy ước dự án. [LV2-005 đợt 5: nâng Mức 2 — đối chiếu 4 nguồn công thức. Định lượng: tăng me chín 8→13g (2 nguồn độc lập cho khoảng 12,5–14g/khẩu phần), dọc mùng 30→50g (2 nguồn cho khoảng 40–50g/khẩu phần) và giá đỗ 20→30g (lấy mức thấp bảo thủ trong các nguồn cho khoảng 29–50g/khẩu phần); không sửa cá nục vì lượng nguồn là trọng lượng nguyên/khúc chưa quy đổi phần ăn được. Bất thường ghi nhận: 2 nguồn có đậu bắp nhưng file chưa có dòng nguyên liệu này; một nguồn là biến thể Quảng Bình dùng khế thay me và không dùng dọc mùng, giá đỗ; kỹ thuật chiên sơ cá chỉ xuất hiện ở 1 nguồn nên không coi là bắt buộc — chờ pha phân xử.]",

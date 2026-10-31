@@ -155,7 +155,14 @@
       "note": "Món Ngon Mỗi Ngày / Ajinomoto (biến thể bông so đũa + me, đối chiếu cá/rau): cá kèo 300 g, cà chua 2 trái, giá 100 g, nước me, nước 1,2 L."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/canh-chua-ca-keo.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Món thay thế cho canh-chua-ca-bong vì kho chưa có nguyên liệu cá bống và không thuộc danh sách nguyên liệu mới được phép của lô này. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 3 trang thuộc 3 lineage (một lineage có hai trang đăng cùng văn bản). Phân xử định lượng: GIỮ NGUYÊN — cá kèo 100 g nằm giữa dải nguồn 75–125 g/khẩu phần, cà chua 60 g và giá 25 g khớp nguồn; lá giang 15 g thấp hơn nguồn duy nhất định lượng được (25 g/khẩu phần) nhưng chỉ 1 nguồn có số, chưa đạt ngưỡng phân xử — ghi nhận để pha phân xử cân nhắc 20–25 g. Bất thường ghi nhận: dứa/thơm có ở 2 lineage (1 trái nhỏ/mẻ hoặc 1 lát), file không có dòng dua-thom; dòng dau-bap của file chỉ được một lineage liệt kê dạng rau ăn kèm tuỳ chọn, hỗ trợ yếu nhưng giữ.",

@@ -115,7 +115,14 @@
       "note": "Cookpad (Bòn Bon): canh cá rô cải xanh — quy trình luộc cá, giã xương lọc lấy nước ngọt, gỡ thịt riêng — đối chiếu thứ tự các bước."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/canh-ca-ro-rau-cai.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Dùng nguyên liệu mới đề xuất: ca-ro-dong (chờ bổ sung file nguyên liệu vào data/ingredients/). Nâng Mức 2 đợt 1 (2026-10-31): đã đối chiếu 3 nguồn công thức đã kiểm chứng (Điện Máy Xanh, sách dạy nấu ăn, Cookpad Bòn Bon). Phân xử định lượng: ca-ro-dong 120 → 65g mỗi khẩu phần — hai nguồn có định lượng rõ cho 50g (200g cho 4 người, Điện Máy Xanh) và khoảng 75g (300g mỗi nồi, sách dạy nấu ăn), số cũ cao hơn cả hai nguồn hơn 30%. Cai-ngot 100g so với 125g của cả hai nguồn chỉ lệch −20% nên giữ nguyên. Gừng giữ 5g vì hai nguồn bất đồng (1 nhánh so với 50g mỗi nồi). Lưu ý: cả hai nguồn định lượng đều dùng cải bẹ xanh trong khi file dùng cai-ngot — ghi nhận để chủ dự án phân xử, không tự đổi dòng nguyên liệu. recipe_steps viết lại hoàn toàn thành 7 bước. Không sửa phân loại.",

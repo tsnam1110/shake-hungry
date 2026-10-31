@@ -123,7 +123,14 @@
       "note": "Sách dạy nấu ăn (thư viện ĐH Duy Tân): canh cua rau đay 300g cua, 1 mớ mồng tơi, 1 quả mướp nhỏ — củng cố đồng thuận 250–300g cua mỗi nồi."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/canh-cua-mong-toi.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): đã đối chiếu 3 nguồn công thức đã mở kiểm chứng (VietnamNet, Bếp Xưa, sách dạy nấu ăn). Phân xử định lượng: cua-dong 120 → 70g mỗi khẩu phần — cả ba nguồn đều dùng 250–300g cua cho một nồi canh gia đình (Bếp Xưa ghi rõ phần ăn 4 người, tức 75g/người; VietnamNet dùng 250g/nồi), số cũ cao hơn đồng thuận nguồn hơn 30%. Muop 40g khớp các nguồn (1 quả mỗi nồi). Mong-toi giữ 100g vì các nguồn chỉ ghi theo bó/mớ, không quy đổi tin cậy được. Lưu ý: cả ba nguồn đều cho thêm rau đay vào canh, file hiện chưa có dòng rau đay — ghi nhận, không tự thêm dòng nguyên liệu. recipe_steps viết lại hoàn toàn thành 7 bước. Không sửa phân loại. Phân xử bất thường LV2-001 (Phần A, 2026-10-31): thêm dòng rau-day 40 g/khẩu phần — cả 3 nguồn đều nấu kèm rau đay (VietnamNet xác nhận rau đay + mướp); nguồn ghi theo bó cho nồi khoảng 4 khẩu phần, quy về ~40 g/khẩu phần, ngang cỡ dòng mướp 40 g trong file.",
