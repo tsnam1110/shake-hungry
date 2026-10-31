@@ -1,8 +1,8 @@
 # Roadmap & Task Tracking — Lắc Đói
 
 **Ngày bắt đầu:** 2026-08-31
-**Cập nhật lần cuối:** 2026-10-31 — ứng dụng hoàn thiện end-to-end; kho dữ liệu **300 món /
-313 nguyên liệu**, công thức đã được chủ dự án duyệt toàn bộ; **CALC-004** (hệ số dầu theo nhóm)
+**Cập nhật lần cuối:** 2026-10-31 — ứng dụng hoàn thiện end-to-end; kho dữ liệu **500 món /
+333 nguyên liệu** (300 công thức đầu đã duyệt; 200 công thức DISH-004 chờ duyệt); **CALC-004** (hệ số dầu theo nhóm)
 và **LEGAL-002** (license MIT + CC BY 4.0/ODbL) đã chốt; repo chuyển hẳn sang **GitHub**
 (`origin` = github.com/tsnam1110/shake-hungry, không còn remote GitLab) — CI là GitHub Actions
 đã đúng nền nhưng chưa chạy vì code chưa push (chờ credential). 77 test Pest xanh.
@@ -34,7 +34,7 @@ và **LEGAL-002** (license MIT + CC BY 4.0/ODbL) đã chốt; repo chuyển hẳ
 | **0** | Thủ tục & khởi tạo | Gửi đề nghị cấp phép, chốt các quyết định nền, dựng repo | Repo chạy được, các quyết định đã chốt | 🔵 IN PROGRESS — repo chạy được (Laravel 13 + MySQL 8, `migrate:fresh --seed` xanh); còn Q1 chờ chủ dự án ([LEGAL-002](./tasks/LEGAL-002.md) đã chốt 2026-10-31) |
 | **1** | Xương sống dữ liệu | Schema + bảng tham chiếu + **250 nguyên liệu** + engine calo | Engine calo qua kiểm chứng FNDDS/Nutrition5k | ✅ DONE — schema, engine, **313 nguyên liệu**, SR Legacy, CY R2, FNDDS, Wikidata xong; kiểm chứng đạt 89,7%; nhóm chiên đã tính được sau CALC-004 (2026-10-31) |
 | **2** | Trình nhập liệu | Công cụ nhập món (trang quản trị antd) + trợ lý LLM | **≤5 phút/món** — cổng chặn cứng | 🔵 IN PROGRESS — lõi xong (ADM-001…005 ✅); còn ADM-006 (trợ lý LLM, chờ API key) và ADM-007 (đo giờ nhập — cổng ≤5 phút/món chưa đo chính thức) |
-| **3** | Sản xuất dữ liệu | 150 món (dùng được) → 500 món (đủ dùng) | ≥500 món Mức 1; đo độ chính xác đạt ≥80% | 🔵 IN PROGRESS — **300 món**, công thức đã duyệt (2026-10-31); còn DISH-004 lên 500 và QA-002 |
+| **3** | Sản xuất dữ liệu | 150 món (dùng được) → 500 món (đủ dùng) | ≥500 món Mức 1; đo độ chính xác đạt ≥80% | 🔵 IN PROGRESS — **500 món** (DISH-004 đạt mốc đủ dùng 2026-10-31); còn QA-002 + duyệt 200 công thức mới |
 | **4** | Engine gợi ý | Nút Lắc bản chính thức, 3 tầng, có embedding | Độ phủ kho món ≥60% trong 30 ngày | ✅ DONE — REC-001 3 tầng chạy thật ở trang chủ (embedding REC-002 hoãn sang giai đoạn sau, không chặn) |
 | **5** | Người dùng | Hồ sơ, TDEE, lịch sử bữa ăn | Gợi ý có tính tới bữa trước và TDEE | ✅ DONE — USR-001…004 chạy thật |
 | **6** | Lớp phụ | Đóng góp cộng đồng + ngũ hành (tuỳ chọn) | — | 🔵 IN PROGRESS — đóng góp cộng đồng ✅ (CTR-001); ngũ hành ⬜ (TCM-001…003, tuỳ chọn) |
@@ -169,7 +169,7 @@ kiểm chứng TEST-002**; `migrate:fresh --seed` dựng lại đúng toàn bộ
 | [DISH-001](./tasks/DISH-001.md) | 50 món đầu tiên | Dữ liệu | 🔶 | ADM-007 (cổng này được vượt theo chỉ đạo riêng của chủ dự án — kho món đã sản xuất trước khi đo giờ nhập) | 2026-10-31 (món đã có + đã duyệt) |
 | [DISH-002](./tasks/DISH-002.md) | Lên 150 món — **mốc app dùng được** | Dữ liệu | 🔶 | DISH-001 | 2026-10-31 (đã lên 200 món; công thức đã được chủ dự án duyệt 2026-10-31) |
 | [DISH-003](./tasks/DISH-003.md) | Lên 300 món | Dữ liệu | 🔶 | DISH-002 | 2026-10-31 (đã lên 300 món + hệ nhãn phân loại; công thức đã được chủ dự án duyệt 2026-10-31) |
-| [DISH-004](./tasks/DISH-004.md) | Lên 500 món — **mốc đủ dùng** | Dữ liệu | ⬜ | DISH-003 | — |
+| [DISH-004](./tasks/DISH-004.md) | Lên 500 món — **mốc đủ dùng** | Dữ liệu | 🔶 | DISH-003 | 2026-10-31 (đã lên 500 món + 20 nguyên liệu mới; chờ duyệt công thức) |
 | [QA-001](./tasks/QA-001.md) | Rà soát chất lượng định kỳ mỗi 50 món | QA | ⬜ | DISH-001 | — |
 | [QA-002](./tasks/QA-002.md) | Chạy đo độ chính xác calo theo ACCURACY-SPEC | QA | ⬜ | DISH-003 | — |
 

@@ -8,8 +8,8 @@ thành phần thực phẩm; món ăn ngoài có calo ước lượng kèm độ
 
 **Trạng thái (2026-10-31):** ✅ Ứng dụng hoàn chỉnh hai phía — trang người dùng (Lắc món 3 tầng,
 lọc theo nhãn phân loại và dị ứng, tài khoản + TDEE + nhật ký bữa ăn, đóng góp cộng đồng) và trang
-quản trị `/admin` (Ant Design 6 + React 19). Kho dữ liệu: **300 món đầy đủ công thức đã được duyệt,
-313 nguyên liệu** (289 có số dinh dưỡng có nguồn), **297/300 món tính được calo** bằng engine
+quản trị `/admin` (Ant Design 6 + React 19). Kho dữ liệu: **500 món đầy đủ công thức (300 đã duyệt, 200 của DISH-004 chờ duyệt),
+333 nguyên liệu** (306 có số dinh dưỡng có nguồn), **495/500 món tính được calo** bằng engine
 (CALC-004 đã bổ sung hệ số hấp thụ dầu theo nhóm cho món chiên). Xem [ROADMAP](docs/05-tasks/ROADMAP.md)
 và [nhật ký đo](docs/06-nutrition/ACCURACY-SPEC.md).
 

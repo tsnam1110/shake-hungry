@@ -103,8 +103,8 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 | Hạng mục | Thực tế | Kiểm bằng |
 |---|---|---|
 | Tài liệu | ✅ 23 tài liệu trong `docs/` + 52 task file | `find docs -name "*.md" -not -path "*/tasks/*" \| wc -l` |
-| **Dữ liệu nguyên liệu** | ✅ **313 file**: **289 có số dinh dưỡng có nguồn**, 24 để trống có hồ sơ lý do (13 nguyên liệu gốc tra đủ 3 vòng không có bảng đạt chuẩn + các mục phát sinh sau). Nguyên liệu gốc: **242/255 (94,9%) có số**. ⚠️ File nguyên liệu vẫn giữ `needs_review` — duyệt nguyên liệu là trục riêng, chưa duyệt (khác với món, xem dòng dưới) | `php artisan lacdoi:validate-data` |
-| Dữ liệu món ăn | ✅ **300 file đầy đủ công thức** (2.557 dòng nguyên liệu), kèm hệ nhãn phân loại (TAXONOMY.md); **297/300 tính được dinh dưỡng** (3 món còn lại vướng thiếu dữ liệu: gỏi ngó sen, mắm nêm, mắm ruột). **Chủ dự án đã duyệt toàn bộ công thức ngày 2026-10-31** (`needs_review=false` + `reviewed_by/at/note` trong từng file) | `ls data/dishes/vn` |
+| **Dữ liệu nguyên liệu** | ✅ **333 file**: **306 có số dinh dưỡng có nguồn**, 27 để trống có hồ sơ lý do (13 nguyên liệu gốc tra đủ 3 vòng không có bảng đạt chuẩn + các mục phát sinh sau, mới nhất: mắc khén, hạt dổi, rau nhút). Nguyên liệu gốc: **242/255 (94,9%) có số**. ⚠️ File nguyên liệu vẫn giữ `needs_review` — duyệt nguyên liệu là trục riêng, chưa duyệt (khác với món, xem dòng dưới) | `php artisan lacdoi:validate-data` |
+| Dữ liệu món ăn | ✅ **500 file đầy đủ công thức**, kèm hệ nhãn phân loại (TAXONOMY.md); **495/500 tính được dinh dưỡng** (5 món còn lại vướng thiếu dữ liệu thật: gỏi ngó sen, canh rau nhút, mắm nêm ×2, mắm ruột). **300 công thức đầu đã được chủ dự án duyệt ngày 2026-10-31**; 200 công thức của DISH-004 đang chờ duyệt (`needs_review=true`) | `ls data/dishes/vn` |
 | Bảng tham chiếu | ✅ SR Legacy **7.793** + Cooking Yields R2 **163** + FNDDS **333 Food Code / 1.810 SR Links** + `regions-vn.json` + `wikidata-vn-dishes.json`; **nguyên liệu gốc có số 242/255 (94,9%)** | `data/reference/MANIFEST.json` |
 | Hệ số DATA-004/008 | ✅ khung xong: `edible_portion_pct` (3 có nguồn, 16 null chờ cân), `default_yield_factor` (9 thịt suy có nguồn) | `edible_portion_note` / `default_yield_factor_note` từng file |
 | **Kiểm chứng engine** | 🔵 lần 2 (2026-09-01, engine **1.1.0**): **89,7% trong ±20%** (không đổi), MAPE 3,9%, và **% tham chiếu nằm trong khoảng 1,0% → 80,4%**. Hệ số hấp thụ dầu đã có theo nhóm (CALC-004, áp 2026-10-31) nên **nhóm chiên đã tính được**; vẫn chặn: **QA-002 chưa chạy** (chưa đo trên món Việt) và **nhóm hấp lệch −21%** (Cooking Yields R2 **0 dòng thuỷ sản**) | [nhật ký đo](docs/06-nutrition/ACCURACY-SPEC.md) |
@@ -137,9 +137,9 @@ Bảng trạng thái tổng quan — **bắt buộc cập nhật mỗi khi đón
 | Giai đoạn | Nội dung | Trạng thái | Ngày đóng |
 |---|---|---|---|
 | GĐ0 | Thủ tục pháp lý + chốt định nghĩa + khởi tạo repo | 🔵 IN PROGRESS — kỹ thuật xong (SETUP-001/002 ✅), LEGAL-002 ✅ (2026-10-31); còn Q1 chờ chủ dự án | — |
-| GĐ1 | Xương sống dữ liệu: schema + bảng nguyên liệu + engine calo | ✅ DONE — schema/engine/SR Legacy/validate/export xong; bảng nguyên liệu vượt mốc (313 file) | 2026-10-31 |
+| GĐ1 | Xương sống dữ liệu: schema + bảng nguyên liệu + engine calo | ✅ DONE — schema/engine/SR Legacy/validate/export xong; bảng nguyên liệu vượt mốc (333 file) | 2026-10-31 |
 | GĐ2 | Trình nhập liệu nội bộ (mục tiêu: 5 phút/món) | 🔵 IN PROGRESS — lõi xong (ADM-001…005 ✅, admin antd chạy thật); còn ADM-006 (LLM, chờ API key) + ADM-007 (đo giờ nhập) | — |
-| GĐ3 | Sản xuất dữ liệu: 150 → 500 món | 🔵 IN PROGRESS — đã đạt 300 món (DISH-003), công thức đã duyệt; tiếp tục DISH-004 lên 500 | — |
+| GĐ3 | Sản xuất dữ liệu: 150 → 500 món | 🔵 IN PROGRESS — **đã đạt 500 món (DISH-004)**; còn QA-002 đo độ chính xác + duyệt 200 công thức mới | — |
 | GĐ4 | Engine gợi ý + nút Lắc bản chính thức | ✅ DONE — REC-001 + UI-002/003 chạy thật ở trang chủ | 2026-10-31 |
 | GĐ5 | Hồ sơ người dùng + TDEE + lịch sử bữa ăn | ✅ DONE — USR-001…004 chạy thật | 2026-10-31 |
 | GĐ6 | Đóng góp cộng đồng + lớp ngũ hành (tuỳ chọn) | 🔵 IN PROGRESS — đóng góp cộng đồng ✅ (CTR-001); lớp ngũ hành ⬜ (TCM-001…003, tuỳ chọn) | — |
