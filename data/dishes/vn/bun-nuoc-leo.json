@@ -125,10 +125,10 @@
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",
-  "needs_review": true,
-  "reviewed_by": null,
-  "reviewed_at": null,
-  "review_note": null,
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-10-31",
+  "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này).",
   "tags": [
     "loai:bun-pho-mi"
   ]

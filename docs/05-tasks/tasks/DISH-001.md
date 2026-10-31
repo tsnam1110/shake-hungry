@@ -79,3 +79,9 @@ Toàn bộ 61 món vỏ Wikidata đã được xử lý trong `data/dishes/vn/`:
 - Đợt thu thập 3 vòng (chính thống → nhãn sản phẩm → nguồn thứ cấp có đánh dấu chưa kiểm định) đã lấp số cho hầu hết nguyên liệu từng chặn các món của task này: cá lóc, mắm tôm, nước mắm truyền thống... Sau tính lại: **54/57 món đã soạn tính được dinh dưỡng** (đầu đợt 48). Ba món còn lại: bánh rế và bim bim chờ hệ số hấp thụ dầu (CALC-004), mắm ruột An Giang vẫn là vỏ rỗng (nguyên liệu ruột cá lên men không có ở bất kỳ nguồn nào đã tra).
 - Ba món từng bị chặn vì thiếu nguyên liệu cốt lõi đã được soạn công thức: chả rươi, don, mắm rươi (rươi/don có dữ liệu nguồn thứ cấp — món mang cờ "chưa kiểm định"). Chả rươi là món chiên nên phần dinh dưỡng vẫn chờ CALC-004.
 - Trạng thái task giữ 🔶: toàn bộ định lượng vẫn là `llm_suggested`, chờ người duyệt trong admin.
+
+**Duyệt của chủ dự án 2026-10-31:** chủ dự án đã duyệt toàn bộ công thức trong kho
+(300 món) qua quyết định trực tiếp tại phiên làm việc — toàn bộ file món đã ghi
+`needs_review: false`, `reviewed_by`/`reviewed_at`/`review_note` theo đúng cơ chế
+duyệt của admin. Rào cản "chờ người duyệt" của task này coi như đã gỡ; task giữ 🔶
+chỉ vì các mục Definition of Done khác chưa thuộc đợt này (QA, dùng thử, đo thời gian nhập).

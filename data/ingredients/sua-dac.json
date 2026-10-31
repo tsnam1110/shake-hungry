@@ -40,7 +40,7 @@
       "confidence": "medium",
       "source_url": "https://world.openfoodfacts.org/api/v2/product/8934673218368",
       "external_id": "8934673218368",
-      "license_note": "Dữ liệu Open Food Facts, giấy phép ODbL 1.0 — bắt buộc ghi công. PHỤ THUỘC QUYẾT ĐỊNH LEGAL-002: nếu dự án không chấp nhận ràng buộc share-alike của ODbL thì phải thay bằng ảnh nhãn tự chụp trước khi phát hành.",
+      "license_note": "Dữ liệu Open Food Facts, giấy phép ODbL 1.0 — bắt buộc ghi công. ĐÃ CHỐT tại LEGAL-002 (2026-10-31): dự án phát hành dữ liệu dạng cơ sở dữ liệu tập hợp (collective database) — các dòng có nguồn OFF giữ nguyên ODbL 1.0 + ghi công Open Food Facts, phần tự biên soạn còn lại theo CC BY 4.0. Không cần thay bằng ảnh nhãn tự chụp.",
       "kcal_per_100g": 334
     }
   ],

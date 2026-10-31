@@ -37,3 +37,9 @@ Mở rộng chiều sâu vùng miền và món ít phổ biến hơn.
 ## Ghi chú
 
 **Bổ sung 2026-10-31 — mốc 300 món đã đạt:** theo chỉ thị của chủ dự án (tiếp tục mở rộng + phân loại/nhãn), kho món lên **300 món** và kho nguyên liệu lên **313**. 100 món mới chọn có chủ đích để lấp nhóm mỏng theo phân loại mới: canh 2→15, cháo/súp 2→12, lẩu 3→10, gỏi/nộm 7→16, cơm 7→9, món chính +28 (thịt đông, vịt om sấu, heo quay, bò nhúng dấm...). Mọi món mới mang nhãn `loai:` ngay từ khi soạn; nhãn diet/protein/allergen suy tự động. **269/300 món tính được dinh dưỡng**; 30 món chưa tính được gồm 28 món chiên chờ CALC-004, gỏi ngó sen (ngó sen không có bảng dinh dưỡng đạt chuẩn ở mọi tầng nguồn — số đang lưu hành trên web là của củ sen, khác bộ phận), mắm nêm và mắm ruột An Giang (treo từ trước). 21 nguyên liệu mới đã tra cứu theo thang nguồn §7.2: 5 MATCH tầng 1 (khoai mỡ, vỏ hoành thánh, nui khô, hạnh nhân, cá diêu hồng), 3 nguồn thứ cấp có cờ chưa kiểm định (cá nục FNRI, cá đuối FNRI, cá rô đồng + quả sấu Bảng VN), các NEAR đều ghi rõ khác biệt trong mapping_note (ghẹ→blue crab có đối chứng văn liệu gần như trùng khớp; bò khô→jerky định hình Mỹ béo hơn hẳn hàng VN — cần thay khi có nhãn VN), 2 mục để null có hồ sơ (rau đắng đất, ngó sen). Trạng thái giữ 🔶 vì toàn bộ công thức mới vẫn là `llm_suggested` chờ người duyệt. QA-002 (đo độ chính xác calo) chưa chạy — là việc riêng cần mẫu kiểm chứng, không thuộc đợt này.
+
+**Duyệt của chủ dự án 2026-10-31:** chủ dự án đã duyệt toàn bộ công thức trong kho
+(300 món) qua quyết định trực tiếp tại phiên làm việc — toàn bộ file món đã ghi
+`needs_review: false`, `reviewed_by`/`reviewed_at`/`review_note` theo đúng cơ chế
+duyệt của admin. Rào cản "chờ người duyệt" của task này coi như đã gỡ; task giữ 🔶
+chỉ vì các mục Definition of Done khác chưa thuộc đợt này (QA, dùng thử, đo thời gian nhập).

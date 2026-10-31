@@ -3,9 +3,9 @@
 **Mã task:** LEGAL-002
 **Giai đoạn:** GĐ0
 **Loại:** Quyết định
-**Status:** ⬜ TODO
+**Status:** ✅ DONE
 **Ngày tạo:** 2026-08-31
-**Ngày hoàn thành:** —
+**Ngày hoàn thành:** 2026-10-31
 **Phụ thuộc:** —
 
 ---
@@ -62,11 +62,11 @@ dự án tốn công biên soạn.
 
 ## Definition of Done
 
-- [ ] Đã chốt license mã nguồn, có file `LICENSE` ở gốc repo
-- [ ] Đã chốt license dữ liệu, ghi rõ trong `README.md` và `data/README.md`
-- [ ] Quyết định + lý do + các phương án bị loại đã ghi vào "Nhật ký quyết định" ở [ROADMAP](../ROADMAP.md)
-- [ ] Cập nhật [LICENSE-COMPLIANCE §5](../../04-data-sources/LICENSE-COMPLIANCE.md) với kết luận
-- [ ] Cập nhật trạng thái Open Food Facts và Wikibooks trong nhật ký thẩm định §7 (từ ⏸️ sang ✅ hoặc ❌)
+- [x] Đã chốt license mã nguồn, có file `LICENSE` ở gốc repo
+- [x] Đã chốt license dữ liệu, ghi rõ trong `README.md` và `data/README.md`
+- [x] Quyết định + lý do + các phương án bị loại đã ghi vào "Nhật ký quyết định" ở [ROADMAP](../ROADMAP.md)
+- [x] Cập nhật [LICENSE-COMPLIANCE §5](../../04-data-sources/LICENSE-COMPLIANCE.md) với kết luận
+- [x] Cập nhật trạng thái Open Food Facts và Wikibooks trong nhật ký thẩm định §7 (từ ⏸️ sang ✅ hoặc ❌)
 
 ---
 
@@ -81,7 +81,25 @@ dự án tốn công biên soạn.
 
 ## Ghi chú
 
-*(Ghi quyết định và lý do ở đây khi chốt.)*
+**Quyết định (chủ dự án duyệt 2026-10-31):**
+
+- **Mã nguồn: MIT** (file `LICENSE` ở gốc repo). Lý do: đơn giản nhất, không tốn chi phí
+  cho dự án cá nhân chuẩn bị công khai; AGPL-3.0 bị loại vì dự án không đặt mục tiêu
+  chống đóng mã ở giai đoạn này.
+- **Dữ liệu: mô hình cơ sở dữ liệu tập hợp (collective database).** Phần tự biên soạn
+  theo **CC BY 4.0**; các dòng có nguồn Open Food Facts giữ **ODbL 1.0** + ghi công
+  (nhận diện qua `license_note` trong từng file). Wikibooks: **không dùng**, chưa từng
+  nhập dòng nào.
+
+**Đính chính tiền đề của phụ lục kiểm kê (2026-10-30):** phụ lục viết "Open Food Facts /
+Wikibooks — chưa nhập dòng nào". Điều đó đúng với nghĩa *nhập hàng loạt*, nhưng nhật ký
+thẩm định (LICENSE-COMPLIANCE §7) đã ghi nhận từ trước: một số ít nguyên liệu
+(`mam-tom`, `sua-dac`, `tuong-ot`…) dùng số **chép từ nhãn sản phẩm tra qua OFF** ở đợt
+ING-001. Vì vậy phương án (b)/(c) thuần tuý ("không có dòng OFF nào") không còn đúng
+thực tế; quyết định cuối xử lý đúng thực tế đó bằng mô hình collective database thay vì
+xoá dữ liệu (nước mắm/mắm tôm là nguyên liệu trụ cột) hoặc ép toàn bộ dataset sang ODbL.
+Phương án dự phòng nếu sau này cần bề mặt ODbL bằng 0: thay các dòng đó bằng ảnh nhãn
+tự chụp — các file liên quan đã được cập nhật `license_note` trỏ về quyết định này.
 
 ---
 

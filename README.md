@@ -52,9 +52,15 @@ Livewire · Pest · Laragon trên Windows.
 
 ## Giấy phép
 
-Chưa chốt — xem [LICENSE-COMPLIANCE](docs/04-data-sources/LICENSE-COMPLIANCE.md) §6. Lưu ý: việc dùng
-Open Food Facts (ODbL) và Wikibooks (CC BY-SA) có ràng buộc share-alike ảnh hưởng tới lựa chọn này,
-nên phải quyết định **trước** khi nhập các nguồn đó.
+Đã chốt ngày 2026-10-31 tại [LEGAL-002](docs/05-tasks/tasks/LEGAL-002.md):
+
+- **Mã nguồn:** [MIT](LICENSE).
+- **Dữ liệu (`data/`):** cơ sở dữ liệu tập hợp (collective database). Phần do dự án tự biên soạn
+  theo **CC BY 4.0** (ghi công "Lắc Đói"). Một số ít dòng chép từ nhãn sản phẩm tra qua
+  Open Food Facts giữ **ODbL 1.0** kèm ghi công Open Food Facts — các dòng này nhận diện được
+  qua trường `license_note` trong từng file nguyên liệu. Dữ liệu USDA là public domain (CC0);
+  các nguồn thứ cấp (Bảng TPTP Việt Nam, FNRI, MEXT, IFCT…) chỉ tra cứu từng mục kèm trích dẫn,
+  không sao chép hàng loạt — xem [LICENSE-COMPLIANCE](docs/04-data-sources/LICENSE-COMPLIANCE.md).
 
 ## Trang quản trị
 

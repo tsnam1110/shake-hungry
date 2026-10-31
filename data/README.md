@@ -13,6 +13,20 @@
 | `dishes/vn/` | Món ăn do dự án biên soạn — mỗi món một file | Người biên soạn (hoặc `lacdoi:export-data`) |
 | `media/dishes/` | Ảnh món (WebP ≤150 KB, cạnh dài ≤1280 px) | Người, kèm mục trong `media/MANIFEST.json` |
 
+## Giấy phép dữ liệu
+
+Chốt tại [LEGAL-002](../docs/05-tasks/tasks/LEGAL-002.md) ngày 2026-10-31. Thư mục này là một
+**cơ sở dữ liệu tập hợp** (collective database) — giấy phép áp theo từng thành phần:
+
+- **Phần tự biên soạn** (toàn bộ file món và phần lớn file nguyên liệu): **CC BY 4.0**,
+  ghi công "Lắc Đói".
+- **Dòng có nguồn Open Food Facts** (nhận diện qua `license_note` trong file nguyên liệu):
+  **ODbL 1.0**, ghi công Open Food Facts.
+- **`reference/` nhập từ USDA:** public domain (CC0). **Wikidata:** CC0.
+- **Số tra cứu từng mục từ nguồn thứ cấp** (Bảng TPTP Việt Nam, FNRI, MEXT, IFCT, văn liệu):
+  ghi trích dẫn trong `mapping_note`/`source_url` của từng file; dự án chỉ dùng dữ kiện
+  dinh dưỡng tra cứu riêng lẻ, không sao chép bảng/dataset của các nguồn này.
+
 ## Quy tắc bắt buộc
 
 1. **Sửa dữ liệu = sửa file ở đây**, không sửa thẳng database. Database dựng lại bằng

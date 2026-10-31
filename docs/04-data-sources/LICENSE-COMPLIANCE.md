@@ -143,6 +143,15 @@ license của chính dự án là gì. Ba lựa chọn:
 
 Khuyến nghị cho v1: **(c) hoặc (a)**. Đừng nhập rồi mới nghĩ.
 
+**KẾT LUẬN — đã chốt tại [LEGAL-002](../05-tasks/tasks/LEGAL-002.md) ngày 2026-10-31:**
+mã nguồn theo **MIT**; cơ sở dữ liệu phát hành dạng **collective database**: phần tự biên
+soạn theo **CC BY 4.0**, các dòng có nguồn Open Food Facts (đã tra cứu từng nhãn từ trước,
+nhận diện qua `license_note` trong từng file nguyên liệu) giữ **ODbL 1.0** kèm ghi công.
+Dự án **chưa bao giờ nhập hàng loạt** OFF hay Wikibooks; Wikibooks không dùng cho v1.
+Phương án (b) thuần tuý (không dòng OFF nào) bị loại vì thực tế đã có vài dòng nhãn tra
+qua OFF từ đợt ING-001 — thay thế chúng bằng nhãn tự chụp được giữ làm phương án dự phòng
+nếu sau này cần loại bỏ hoàn toàn bề mặt ODbL.
+
 ---
 
 ## 6. Quy trình duyệt nguồn mới
@@ -176,11 +185,11 @@ Bất kỳ ai (người hay AI agent) muốn thêm một nguồn dữ liệu:
 | 2026-08-31 | Nutrition5k — **ĐÃ DÙNG** (metadata) | ✅ Ghi công xong | TEST-002 | Chỉ tải 3 file metadata (~2,3 MB) vào `storage/imports/` (không commit — không cần cho việc dựng lại). Ghi công đã thêm vào README §Ghi công nguồn dữ liệu kèm trích dẫn bài báo CVPR 2021. ⚠️ Phát hiện: calo của bộ này **không đo độc lập** mà tính từ chính bảng nguyên liệu của nó — xem đính chính [ACCURACY-SPEC §4](../06-nutrition/ACCURACY-SPEC.md) |
 | 2026-08-31 | USDA FDC **Survey (FNDDS) + SR Links — ĐÃ NHẬP** ([DATA-003](../05-tasks/tasks/DATA-003.md)) | ✅ Nhập 333 Food Code / 1.810 dòng | `lacdoi:import-usda --source=fndds` | Bản `survey_food_csv_2024-10-31`, CC0. Dùng **chỉ để kiểm chứng engine**, không phải món hiển thị |
 | 2026-08-31 | **Wikidata — ĐÃ NHẬP** ([DATA-005](../05-tasks/tasks/DATA-005.md)) | ✅ 61 món, status=draft | `lacdoi:import-wikidata` | CC0. Kết quả thô + câu SPARQL + ngày truy vấn lưu ở `data/reference/wikidata-vn-dishes.json`. **Ảnh chưa tải về** — license từng ảnh Commons khác nhau, chờ Q4 |
-| 2026-08-31 | Open Food Facts | ⚠️ **Đã dùng trước khi chốt Q2** | Đợt tra cứu ING-001 | ⚠️ **Ghi nhận sai quy trình:** OFF đang ở trạng thái "⏸️ hoãn chờ Q2" nhưng đã được dùng cho 4 nguyên liệu (`nuoc-mam-truyen-thong`, `nuoc-mam-cong-nghiep`, `tuong-ot`, `sua-dac`, `nem-chua`) — vì đây là nguyên liệu USDA không phủ được và nhãn sản phẩm Việt là nguồn duy nhất tra được. Mỗi file đã ghi `license_note` cảnh báo. **Phải chốt [LEGAL-002](../05-tasks/tasks/LEGAL-002.md) trước khi phát hành**, nếu không chấp nhận ODbL thì thay bằng ảnh nhãn tự chụp |
+| 2026-08-31 | Open Food Facts | ✅ **Đã chốt 2026-10-31 (LEGAL-002)**: giữ ODbL 1.0 cho các dòng có nguồn OFF trong mô hình collective database, ghi công OFF; trạng thái cũ: ⚠️ **Đã dùng trước khi chốt Q2** | Đợt tra cứu ING-001 | ⚠️ **Ghi nhận sai quy trình:** OFF đang ở trạng thái "⏸️ hoãn chờ Q2" nhưng đã được dùng cho 4 nguyên liệu (`nuoc-mam-truyen-thong`, `nuoc-mam-cong-nghiep`, `tuong-ot`, `sua-dac`, `nem-chua`) — vì đây là nguyên liệu USDA không phủ được và nhãn sản phẩm Việt là nguồn duy nhất tra được. Mỗi file đã ghi `license_note` cảnh báo. **Phải chốt [LEGAL-002](../05-tasks/tasks/LEGAL-002.md) trước khi phát hành**, nếu không chấp nhận ODbL thì thay bằng ảnh nhãn tự chụp |
 | 2026-08-31 | **ANSES-Ciqual** | ✅ Đã dùng (đã có trong danh sách trắng §3) | Đợt tra cứu ING-002 | Dùng làm nguồn CHÍNH cho 2 nguyên liệu mà USDA không có: `tiet-lon` (tiết bò — sai loài, độ tin cậy Ciqual D) và `pate-gan` (pâté de foie de porc — đúng loài, độ tin cậy A cho đạm/béo/natri). Licence Ouverte/Etalab, cho phép thương mại + phân phối lại, có ghi công. ⚠️ **Phát hiện quan trọng:** Ciqual đôi khi CHÉP LẠI USDA — vịt không da: Ciqual 36201 và USDA 172410 có đạm/béo/nước GIỐNG HỆT từng chữ số. Không coi là hai xác nhận độc lập |
 | 2026-08-31 | **MEXT Japan** — Standard Tables of Food Composition in Japan, 8th rev. (`fooddb.mext.go.jp`) | ⏸️ **Chờ thẩm định — CHƯA dùng** | Đợt tra cứu ING-002 | Agent tra cứu tìm được **5 nguyên liệu** chỉ có ở nguồn này: cá nục (*Decapterus muroadsi*, đúng chi), ghẹ (*Portunus trituberculatus*, đúng chi), mực khô, cá cơm khô (niboshi), sò huyết (*Anadara broughtonii*, đúng chi). Chất lượng ánh xạ loài **tốt hơn hẳn** mọi ứng viên USDA. **Số liệu đang GIỮ NGOÀI repo** cho tới khi đối chiếu 政府標準利用規約 (Điều khoản sử dụng chuẩn của Chính phủ Nhật). Đây là lần đầu quy trình §6 được tuân thủ đúng thứ tự — thẩm định **trước**, không phải sau |
 | 2026-08-31 | **UK CoFID** (McCance & Widdowson 2021) | ✅ Duyệt **hồi tố** | Đợt tra cứu ING-001 | ⚠️ **Ghi nhận sai quy trình:** đã dùng cho `ca-basa` **trước khi** qua quy trình duyệt nguồn ở §6. Thẩm định sau cho thấy license là **Open Government Licence (OGL)** — cho phép thương mại và phân phối lại, có ghi công → hợp lệ. Nhưng thứ tự làm ngược. Lưu ý thêm: giá trị đọc qua nutridex.org.uk (nguồn thứ cấp), **chưa đối chiếu file CoFID gốc** |
-| 2026-08-31 | Wikibooks Cookbook | ⏸️ Hoãn | — | Chờ Q2. Chỉ cần khi mở rộng quốc tế |
+| 2026-08-31 | Wikibooks Cookbook | ❌ **Không dùng cho v1** (chốt 2026-10-31, LEGAL-002) | — | Chưa từng nhập dòng nào. Chỉ xét lại khi mở rộng quốc tế |
 | 2026-08-31 | Bảng TPTP Việt Nam (Viện Dinh dưỡng) | ⏸️ Chờ giấy phép | — | Sách có bản quyền. Xem [LEGAL-001](../05-tasks/tasks/LEGAL-001.md) |
 | 2026-08-31 | VNeNUTRITION | ⏸️ Chờ giấy phép | — | Site không công bố điều khoản nào |
 | 2026-08-31 | ASEAN FCD 2014 (INMU) | ❌ Từ chối | — | © INMU, không có license mở, chỉ có PDF |

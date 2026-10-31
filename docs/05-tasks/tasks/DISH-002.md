@@ -36,3 +36,9 @@ Mở rộng từ 50 lên 150 món. Ưu tiên lấp **chỗ trống**, không ph�
 ## Ghi chú
 
 **Bổ sung 2026-10-31 — mốc số lượng đã vượt:** theo chỉ thị riêng của chủ dự án ("Nâng số lượng món lên 200 món"), kho món đã lên **200 món** (vượt mốc 150 của task này) với 139 món mới soạn thảo từ danh mục Wikipedia/Wikidata (CC0) + chọn lọc biên tập; **176/200 món tính được dinh dưỡng** sau đợt thu thập dữ liệu cùng ngày. 24 món chưa tính được: 22 món chiên chờ CALC-004, mắm nêm (nguyên liệu không có dữ liệu ở bất kỳ nguồn nào), mắm ruột An Giang (vỏ rỗng). Trạng thái giữ 🔶 vì toàn bộ công thức là `llm_suggested` chờ người duyệt — giống DISH-001. Mốc tiếp theo về số lượng là DISH-003 (300 món).
+
+**Duyệt của chủ dự án 2026-10-31:** chủ dự án đã duyệt toàn bộ công thức trong kho
+(300 món) qua quyết định trực tiếp tại phiên làm việc — toàn bộ file món đã ghi
+`needs_review: false`, `reviewed_by`/`reviewed_at`/`review_note` theo đúng cơ chế
+duyệt của admin. Rào cản "chờ người duyệt" của task này coi như đã gỡ; task giữ 🔶
+chỉ vì các mục Definition of Done khác chưa thuộc đợt này (QA, dùng thử, đo thời gian nhập).

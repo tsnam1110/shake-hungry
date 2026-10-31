@@ -31,7 +31,7 @@ GĐ1 còn: hệ số dầu (chặn TEST-002), hệ số hao hụt thuỷ sản, 
 
 | GĐ | Tên | Mục tiêu | Cổng chặn để sang giai đoạn sau | Trạng thái |
 |---|---|---|---|---|
-| **0** | Thủ tục & khởi tạo | Gửi đề nghị cấp phép, chốt các quyết định nền, dựng repo | Repo chạy được, các quyết định đã chốt | 🔵 IN PROGRESS — repo chạy được (Laravel 13 + MySQL 8, `migrate:fresh --seed` xanh); còn [LEGAL-002](./tasks/LEGAL-002.md) và Q1 chờ chủ dự án |
+| **0** | Thủ tục & khởi tạo | Gửi đề nghị cấp phép, chốt các quyết định nền, dựng repo | Repo chạy được, các quyết định đã chốt | 🔵 IN PROGRESS — repo chạy được (Laravel 13 + MySQL 8, `migrate:fresh --seed` xanh); còn Q1 chờ chủ dự án ([LEGAL-002](./tasks/LEGAL-002.md) đã chốt 2026-10-31) |
 | **1** | Xương sống dữ liệu | Schema + bảng tham chiếu + **250 nguyên liệu** + engine calo | Engine calo qua kiểm chứng FNDDS/Nutrition5k | 🔵 IN PROGRESS — schema, engine, **255/250 nguyên liệu**, SR Legacy, CY R2, FNDDS, Wikidata, DATA-008 xong; **kiểm chứng lần 1 đạt 89,7%**. Cổng chặn chưa mở: nhóm chiên chưa đo được |
 | **2** | Trình nhập liệu | Công cụ nhập món (trang quản trị antd) + trợ lý LLM | **≤5 phút/món** — cổng chặn cứng | ⬜ TODO |
 | **3** | Sản xuất dữ liệu | 150 món (dùng được) → 500 món (đủ dùng) | ≥500 món Mức 1; đo độ chính xác đạt ≥80% | ⬜ TODO |
@@ -65,7 +65,7 @@ thứ khác phụ thuộc vào.
 | [DOC-001](./tasks/DOC-001.md) | Viết bộ tài liệu nền của dự án | Tài liệu | ✅ | — | 2026-08-31 |
 | [DEC-001](./tasks/DEC-001.md) | Chốt định nghĩa "độ chính xác calo >80%" | Quyết định | ✅ | DOC-001 | 2026-08-31 |
 | [LEGAL-001](./tasks/LEGAL-001.md) | ~~Gửi đề nghị xin phép sử dụng dữ liệu Viện Dinh dưỡng~~ | Thủ tục | ❌ | — | Huỷ 2026-08-31 |
-| [LEGAL-002](./tasks/LEGAL-002.md) | Chốt giấy phép mã nguồn & dữ liệu của dự án | Quyết định | ⬜ | — | — |
+| [LEGAL-002](./tasks/LEGAL-002.md) | Chốt giấy phép mã nguồn & dữ liệu của dự án | Quyết định | ✅ | — | 2026-10-31 |
 | [SETUP-001](./tasks/SETUP-001.md) | Khởi tạo Laravel + MySQL | Backend | ✅ | — | 2026-08-31 |
 | [SETUP-002](./tasks/SETUP-002.md) | Dựng cấu trúc `data/` + `.gitignore` + MANIFEST | Backend | ✅ | SETUP-001 | 2026-08-31 |
 
@@ -167,8 +167,8 @@ kiểm chứng TEST-002**; `migrate:fresh --seed` dựng lại đúng toàn bộ
 | ID | Task | Loại | Status | Phụ thuộc | Ngày xong |
 |---|---|---|---|---|---|
 | [DISH-001](./tasks/DISH-001.md) | 50 món đầu tiên | Dữ liệu | 🔶 | ADM-007 | — |
-| [DISH-002](./tasks/DISH-002.md) | Lên 150 món — **mốc app dùng được** | Dữ liệu | 🔶 | DISH-001 | 2026-10-31 (đã lên 200 món, chờ duyệt) |
-| [DISH-003](./tasks/DISH-003.md) | Lên 300 món | Dữ liệu | 🔶 | DISH-002 | 2026-10-31 (đã lên 300 món + hệ nhãn phân loại, chờ duyệt) |
+| [DISH-002](./tasks/DISH-002.md) | Lên 150 món — **mốc app dùng được** | Dữ liệu | 🔶 | DISH-001 | 2026-10-31 (đã lên 200 món; công thức đã được chủ dự án duyệt 2026-10-31) |
+| [DISH-003](./tasks/DISH-003.md) | Lên 300 món | Dữ liệu | 🔶 | DISH-002 | 2026-10-31 (đã lên 300 món + hệ nhãn phân loại; công thức đã được chủ dự án duyệt 2026-10-31) |
 | [DISH-004](./tasks/DISH-004.md) | Lên 500 món — **mốc đủ dùng** | Dữ liệu | ⬜ | DISH-003 | — |
 | [QA-001](./tasks/QA-001.md) | Rà soát chất lượng định kỳ mỗi 50 món | QA | ⬜ | DISH-001 | — |
 | [QA-002](./tasks/QA-002.md) | Chạy đo độ chính xác calo theo ACCURACY-SPEC | QA | ⬜ | DISH-003 | — |
@@ -223,7 +223,7 @@ Ghi mọi câu hỏi chưa có lời giải ở đây. **Không đoán rồi là
 | # | Câu hỏi | Chặn task nào | Ai trả lời | Trạng thái |
 |---|---|---|---|---|
 | Q1 | Tên chính thức: "Lắc Đói" hay "Lắc Đối"? Tài liệu đang dùng **Lắc Đói** | — (chỉ ảnh hưởng hiển thị) | Chủ dự án | ⬜ Chờ |
-| Q2 | Giấy phép mã nguồn & dữ liệu của dự án? | Việc nhập Open Food Facts và Wikibooks | Chủ dự án | ⬜ Chờ ([LEGAL-002](./tasks/LEGAL-002.md)) |
+| Q2 | Giấy phép mã nguồn & dữ liệu của dự án? | Việc nhập Open Food Facts và Wikibooks | Chủ dự án | ✅ Đã chốt 2026-10-31 ([LEGAL-002](./tasks/LEGAL-002.md)): mã nguồn MIT; dữ liệu collective database — tự biên soạn CC BY 4.0, dòng có nguồn OFF giữ ODbL 1.0 |
 | ~~Q3~~ | ~~Viện Dinh dưỡng có cấp phép không?~~ | — | — | ❌ **Đã đóng 2026-08-31** — chọn hướng tự tra cứu, không xin phép. Xem [LEGAL-001](./tasks/LEGAL-001.md) |
 | Q4 | Ảnh món lấy từ đâu? Tự chụp / mua / CC BY? | DISH-001 trở đi; ảnh hưởng kích thước repo | Chủ dự án | ⬜ Chờ |
 | Q5 | Có cần Git LFS cho ảnh không? | Phụ thuộc Q4 | Chủ dự án | ⬜ Chờ |
@@ -260,6 +260,7 @@ Ghi lại các quyết định kỹ thuật quan trọng để người sau khô
 | 2026-08-31 | Nguyên liệu trước, món sau | ~250 nguyên liệu phủ hết món Việt thường ngày; làm ngược là lặp việc hàng trăm lần | [DATA-PIPELINE §1](../04-data-sources/DATA-PIPELINE.md) |
 | 2026-08-31 | Định nghĩa độ chính xác = ≥80% món trong ±20% | "±10% so với phân tích hoá học" không khả thi — nhãn menu nhà hàng Mỹ còn lệch trung bình 18% | [ACCURACY-SPEC §2](../06-nutrition/ACCURACY-SPEC.md) |
 | 2026-08-31 | **Không xin phép Viện Dinh dưỡng; tự tra cứu từng nguyên liệu từ nguồn công khai** | Chấp nhận đánh đổi thời gian lấy độ chính xác và quyền sở hữu dữ liệu. Giá trị dinh dưỡng là **dữ kiện**, biên soạn độc lập có ghi nguồn là hợp lệ; cái bị bảo hộ là **bảng biên soạn** của họ, và ta không chép nó | [LEGAL-001](./tasks/LEGAL-001.md) · [DATA-PIPELINE §7](../04-data-sources/DATA-PIPELINE.md) |
+| 2026-10-31 | **License: mã nguồn MIT; dữ liệu dạng collective database** (tự biên soạn CC BY 4.0, dòng có nguồn Open Food Facts giữ ODbL 1.0 + ghi công) | Phụ lục kiểm kê cho thấy chốt lúc này không tốn chi phí; thực tế đã có vài dòng nhãn tra qua OFF từ đợt ING-001 nên mô hình tập hợp xử lý đúng thực tế thay vì xoá dữ liệu trụ cột hay ép toàn bộ dataset sang share-alike | [LEGAL-002](./tasks/LEGAL-002.md) · [LICENSE-COMPLIANCE §5](../04-data-sources/LICENSE-COMPLIANCE.md) |
 | 2026-08-31 | MySQL 8 có sẵn trong Laragon, tài khoản mặc định `root`; **cột `embedding` hoãn tới GĐ4** | Không cần cài thêm CSDL ngoài mặc định của Laragon; GĐ1–GĐ3 không cần embedding | [SETUP-001](./tasks/SETUP-001.md) |
 | 2026-08-31 | Nguyên liệu tuỳ chọn chỉ tính vào cận trên; `fct_source='mixed'` ép confidence ≤ medium; món chiên thiếu hệ số dầu ⇒ nguyên liệu vào `missing[]` | Đặc tả gốc không định nghĩa — chọn cách bảo toàn QT-1/QT-5 (không bịa, khoảng phản ánh bất định thật) | [CALORIE-ENGINE §5b](../06-nutrition/CALORIE-ENGINE.md) |
 | 2026-08-31 | Lần export đầu chuẩn hoá lại 140 file nguyên liệu về định dạng canonical | Bắt buộc để export ổn định (DoD DATA-007). Kiểm chứng bằng so sánh ngữ nghĩa: 0 mất mát; phát hiện và sửa 1 lỗi tròn số (hạt sen 0,675 g) | [DATA-007](./tasks/DATA-007.md) |
