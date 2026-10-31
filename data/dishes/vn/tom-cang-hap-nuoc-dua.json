@@ -90,7 +90,14 @@
       "note": "Hải Sản Trung Nam — Cách làm tôm càng xanh hấp nước dừa — Đã mở đọc: tôm càng xanh 8 con, dừa xiêm 1 quả, hành tím 1 củ, gia vị bột canh/muối tiêu chanh; không dùng sả và lá chanh. Ướp tôm với hành tím và gia vị 15-20 phút, đun sôi nước dừa rồi cho tôm vào 2-3 phút (bản luộc trong nước dừa), vớt ra xếp quanh vỏ dừa và rưới nước dừa lên."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/tom-cang-hap-nuoc-dua.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-008 đợt 8: Nâng Mức 2 với 3 nguồn đã mở đọc (Chợ Lại Thiêu, Saigonese Baguette, Hải Sản Trung Nam). GIỮ cơ sở cân hiện tại theo chỉ đạo riêng của đợt: tôm càng xanh 200g là cân THÔ nguyên con nguyên vỏ (xem anomaly), nước dừa tươi 50g, sả 10g, muối 0,5g. Đối chiếu: các nguồn đều nấu mẻ 500g tôm (Hải Sản Trung Nam: 8 con) với 1 quả dừa và sả 3-4 cây ở 2/3 nguồn — quy về 200g tôm thì sả ~12-16g, file 10g thấp hơn chưa tới ngưỡng sửa khi nguồn thứ ba không dùng sả; nước dừa ở các nguồn là 300-500ml cho cả mẻ nhưng đóng vai trò môi trường hấp (đổ dưới vỉ, không ngập tôm theo Chợ Lại Thiêu) chứ không phải lượng ăn vào, nên giữ 50g là phần nước dừa thực tế rưới/phục vụ mỗi khẩu phần và ghi anomaly thay vì tăng theo lượng trong nồi. BỎ 2 dòng 0/3 nguồn ủng hộ: la-chanh 1g và nuoc-mam-truyen-thong 5g (mọi nguồn nêm muối/bột canh và chấm muối tiêu chanh). Method hap giữ nguyên (2/3 nguồn gọi là hấp dù Hải Sản Trung Nam luộc nhanh trong nước dừa sôi); region vn-south giữ nguyên (cả 3 nguồn đều gắn tôm càng xanh với Đông Nam Bộ/Đồng bằng sông Cửu Long). serving_grams 260g giữ nguyên.]",

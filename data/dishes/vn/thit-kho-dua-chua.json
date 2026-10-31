@@ -107,7 +107,14 @@
       "note": "Savoury Days: thịt ba chỉ 300–400 g, dưa cải 1 bát con (chọn phần nhiều bẹ), hành khô 2 củ, tỏi 2–3 tép, nước hàng 3 muỗng canh (không ghi khẩu phần); ướp thịt 30 phút, cho dưa vào khoảng 15 phút trước khi ăn để dưa không nát"
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/thit-kho-dua-chua.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nâng Mức 2 đợt 2 (2026-10-31): Đã đối chiếu 3 nguồn thật mở kiểm chứng (VietNamNet; Bếp Xưa; Savoury Days). Phân xử định lượng: giữ nguyên mọi dòng — thịt ba chỉ 140 g so với quy đổi của VietNamNet và Bếp Xưa cùng 125 g/khẩu phần (500 g/4 người) chỉ lệch khoảng 12%; dưa chua 100 g khớp đúng VietNamNet (400 g/4 người) nhưng Bếp Xưa chỉ 62,5 g/khẩu phần và Savoury Days khoảng 1 bát con cho cả mẻ — nguồn bất đồng nhau >30% nên giữ số khớp nguồn báo. Bất thường ghi nhận: thời gian kho ở nguồn dài hơn bản cũ ghi (VietNamNet kho thịt 20 phút rồi kho cùng dưa thêm 20–25 phút; bản cũ ghi tổng thời gian kho khoảng 18 phút kèm nhãn mặn nhanh ~30 phút là thấp so với nguồn) — bước nấu đã sửa lại thời lượng theo nguồn; nguồn có tỏi và nước màu hoặc dầu hào tuỳ bài — file không có các dòng này.",

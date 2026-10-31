@@ -145,7 +145,14 @@
       "note": "Tripi: biến thể bò xào chua ngọt — đối chiếu kỹ thuật xào bò với vị chua, không dùng cho định lượng khế."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/thit-bo-xao-khe.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 có điều kiện về họ nguồn — 2/3 trang thuộc cùng họ ToyenXin, trang Tripi là biến thể chua ngọt; thêm ớt tươi 3 (3/3 trang) và hành tím 5 (2/3), tỏi 8→5 theo tỉ lệ ướp của nguồn.]",

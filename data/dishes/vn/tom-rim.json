@@ -132,7 +132,14 @@
       "note": "Nấu Ăn Không Khó, tác giả Túc Túc: tôm 250g, thịt ba chỉ 250g cho một mẻ; nêm nước mắm sau khi tôm thịt đã săn — đối chiếu mẻ rim và kỹ thuật."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/tom-rim.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): Đã mở kiểm chứng 3 nguồn công thức thật (Gia đình & Xã hội/Afamily, VnExpress Cooking, Nấu Ăn Không Khó) và đối chiếu định lượng. Định lượng: các mẻ gia đình ở nguồn dùng tôm 250–300g và thịt 200–250g (thường cho 3–4 người, tức tôm khoảng 63–100g và thịt khoảng 50–83g mỗi khẩu phần) nhưng hai nguồn không ghi rõ khẩu phần; tỉ lệ tôm:thịt giữa các nguồn cũng bất đồng (3:2 và 1:1). File tôm 100g, thịt 60g nằm trong khoảng dao động suy ra từ nguồn — giữ nguyên toàn bộ, không sửa dòng nào. Ghi nhận: biến thể của Afamily rim cùng sả và sa tế, bản VnExpress rim với nước dừa; file không có các yếu tố này — là khác biệt biến thể, không tự thêm dòng. Viết lại hoàn toàn recipe_steps bằng lời riêng (8 bước). Rà phân loại: loai:mon-chinh, region vn-south, meal_slots trưa/tối phù hợp; cooking_method 'kho' giữ nguyên cho kỹ thuật rim — không sửa. Đạt Mức 2.",

@@ -112,7 +112,14 @@
     "Rắc lạc rang, ăn kèm rau thơm và chanh ớt."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/tiet-canh.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Lưu ý biên tập: món làm từ huyết lợn sống — cân nhắc bổ sung cảnh báo an toàn thực phẩm trước khi xuất bản.",
