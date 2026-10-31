@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -66,15 +66,34 @@
     }
   ],
   "recipe_steps": [
-    "Rau ngót tuốt lá, vò nhẹ cho mềm; thịt băm ướp chút nước mắm.",
-    "Đun sôi nước, cho thịt băm vào khuấy tan, hớt bọt.",
-    "Cho rau ngót vào nấu 2–3 phút vừa chín, nêm lại, dùng nóng."
+    "Sơ chế rau: rau ngót tuốt lấy lá, bỏ cọng và lá sâu, rửa sạch, vò nhẹ cho lá hơi dập và mềm — không vò nát, rau sẽ mất ngọt.",
+    "Sơ chế thịt: thịt băm ướp với nước mắm và hành tím băm khoảng 10–15 phút cho thấm.",
+    "Đun sôi khoảng 1 lít nước, cho thịt băm vào, khuấy đều cho thịt tan, không vón cục; hớt bọt cho nước canh trong.",
+    "Nêm nước mắm vừa ăn, khuấy tan.",
+    "Cho rau ngót vào, đảo cho rau ngập nước, nấu sôi lại 2–3 phút không đậy nắp đến khi rau vừa chín, còn xanh và mềm — đậy nắp hoặc nấu lâu rau sẽ ngả vàng.",
+    "Nêm nếm lại, tắt bếp, múc ra tô và ăn nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://vuonxanhpho.vn/blogs/rau-cu/cach-nau-canh-rau-ngot-thit-bam-thanh-mat-don-gian-cho-bua-com-gia-dinh/?p=1646",
+      "accessed": "2026-10-31",
+      "note": "Vườn Xanh Phố: rau ngót 200 g + thịt heo băm 150 g cho 3 người, nước 1 lít; ướp thịt 15 phút, cho thịt vào nước sôi, hớt bọt rồi cho rau ngót, sôi lại thì tắt bếp"
+    },
+    {
+      "url": "https://bepxua.vn/canh-rau-ngot-thit-bam-ban-biet-cach-nau-sao-cho-that-mem-rau-va-ngot-nuoc-chua/?noamp=mobile",
+      "accessed": "2026-10-31",
+      "note": "Bếp Xưa: rau ngót 1 bó + thịt nạc thăn bằm 150 g/mẻ; xào thịt 2 phút rồi xào chung rau ngót cho mềm mới chế nước sôi — kỹ thuật xào trước giúp rau ngọt, không dai"
+    },
+    {
+      "url": "https://bingofood.net/canh-rau-ngot-nau-thit-nac-bam",
+      "accessed": "2026-10-31",
+      "note": "Bingo Food: rau ngót 300 g + thịt nạc vai 150 g + nước 1 lít/mẻ; ướp thịt với nước mắm 15 phút, xào thịt và rau riêng với dầu rồi mới đổ nước đun cho rau chín mềm"
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nâng Mức 2 đợt 2 (2026-10-31): đã mở kiểm chứng 3 nguồn (Vườn Xanh Phố: rau ngót 200 g + thịt 150 g cho 3 người, nước 1 lít; Bếp Xưa: rau 1 bó + thịt 150 g; Bingo Food: rau 300 g + thịt 150 g, nước 1 lít). Phân xử định lượng: giữ nguyên toàn bộ — rau ngót quy đổi ~44–67 g/khẩu phần tùy đường quy đổi (theo khẩu phần ghi rõ hay theo tổng mẻ), số file 60 g nằm trong khoảng; thịt quy đổi ~31–50 g/khẩu phần, số file 40 g nằm trong khoảng. Bất thường ghi nhận (không tự thêm/bớt dòng, chờ pha phân xử riêng): 2/3 nguồn (Bếp Xưa, Bingo Food) xào thịt và rau với dầu ăn trước khi cho nước mà file không có dòng dầu ăn; về gia vị, Bếp Xưa chủ động khuyên không nêm nước mắm (sợ canh ám vị chua) trong khi Bingo Food ướp/nêm nước mắm như file — tranh luận gia vị đã ghi nhận, giữ nguyên nước mắm 5 g.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

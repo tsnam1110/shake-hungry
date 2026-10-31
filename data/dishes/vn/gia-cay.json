@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -114,15 +114,35 @@
     }
   ],
   "recipe_steps": [
-    "Thui chân giò cho vàng thơm, chặt miếng vừa ăn, ướp riềng giã, mắm tôm, nghệ, sả (và mẻ nếu có — xem ghi chú).",
-    "Xào săn thịt rồi thêm nước, nấu lửa nhỏ đến khi thịt mềm.",
-    "Nêm nếm vừa ăn, dùng nóng kèm bún hoặc cơm."
+    "Thui hoặc khò chân giò tới khi da vàng sậm, cạo sạch lớp cháy, rửa lại nhiều lần rồi chặt miếng vừa ăn dày khoảng nửa gang tay.",
+    "Riềng và nghệ cạo vỏ, giã nhuyễn; sả cắt lát hoặc băm; hành tím băm nhỏ.",
+    "Ướp chân giò với riềng, nghệ, mắm tôm, sả và gia vị trong 30–60 phút cho thấm; ướp càng kỹ món càng đượm mùi giả cầy.",
+    "Phi thơm hành tím với dầu, cho chân giò đã ướp vào xào trên lửa vừa tới khi thịt săn lại, da hơi xém và dậy mùi riềng, mắm tôm.",
+    "Châm nước xâm xấp khoảng 2/3 lượng thịt, đun sôi và hớt bọt, hạ lửa nhỏ hầm khoảng 45–60 phút tới khi thịt mềm mà phần da còn dai nhẹ.",
+    "Khi nước còn khoảng một nửa và hơi sánh, nêm lại mắm tôm, đường, muối cho vừa miệng, đảo đều và nấu thêm vài phút cho gia vị ngấm sâu.",
+    "Múc ra tô, dùng nóng với bún hoặc cơm; món đạt khi miếng thịt màu vàng nâu, nước sóng sánh và thơm rõ riềng, nghệ, mắm tôm."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-nau-gio-heo-gia-cay-tai-nha-cuc-ngon-an-hoai-khong-ngan-01947",
+      "accessed": "2026-10-31",
+      "note": "Điện máy XANH: công thức người dùng — giò heo 500 g, riềng xay 100 g, mắm tôm 50 g, cơm mẻ 50 g cho 2 người; công thức 2 — chân giò 3 kg cho 3 người (số bất thường trong nguồn); thui/khò, ướp 30–60 phút, hầm tới mềm"
+    },
+    {
+      "url": "https://congthucnauan.vn/cach-lam-chan-gio-nau-gia-cay-chuan-vi-mien-bac/",
+      "accessed": "2026-10-31",
+      "note": "VietNamNet (qua congthucnauan.vn): chân giò 1 kg, riềng 150 g, nghệ 100 g, sả 200 g, mắm tôm 70 g, đậu xanh 60 g, 1/3 bát cơm mẻ; thui vàng, ướp 20–30 phút, ninh tới khi nước sệt"
+    },
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-nau-chan-gio-gia-cay-khong-can-me-van-thom-beo-chuan-vi-24093",
+      "accessed": "2026-10-31",
+      "note": "Điện máy XANH (bản không cần mẻ): chân giò trước khoảng 2,2 kg, riềng 130 g, sả 50 g, hành tím 15 g, mắm tôm 3 muỗng canh cho 4–5 người; ướp tối thiểu 1 giờ, hầm hai lửa tới mềm nhừ, nước còn một nửa"
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. THIẾU NGUYÊN LIỆU: mẻ cơm (phụ — tạo vị chua lên men) — cần bổ sung vào kho.",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. THIẾU NGUYÊN LIỆU: mẻ cơm (phụ — tạo vị chua lên men) — cần bổ sung vào kho. Nâng Mức 2 đợt 2 (2026-10-31): Đã đối chiếu 3 nguồn thật mở kiểm chứng (Điện máy XANH — 2 công thức trong 2 bài; VietNamNet qua congthucnauan.vn). Phân xử định lượng: giữ nguyên mọi dòng — móng giò 220 g nằm gần quy đổi của ĐMX công thức người dùng (500 g/2 người = 250 g/khẩu phần) trong khi ĐMX bản không mẻ quy đổi 440–550 g/khẩu phần và ĐMX công thức 2 ghi 3 kg chân giò/3 người (ngoại lệ bất thường ngay trong nguồn, đã loại khỏi phân xử), tức nguồn bất đồng nhau >30%; riềng (nguồn quy đổi khoảng 29–50 g/khẩu phần) và mắm tôm (khoảng 10–25 g/khẩu phần) ở mọi nguồn đều cao hơn file nhưng dao động giữa các nguồn >30%, và riềng giã phần lớn là chất xơ không ăn trực tiếp, nên giữ nguyên chờ phân xử riêng. Bất thường ghi nhận: 2/3 nguồn dùng mẻ (file đã ghi thiếu nguyên liệu mẻ từ trước); VietNamNet có đậu xanh và ĐMX công thức 2 có đậu phộng — file không có hai dòng này.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

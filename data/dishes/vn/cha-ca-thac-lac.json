@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "chien",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -114,15 +114,34 @@
     }
   ],
   "recipe_steps": [
-    "Cá thác lác nạo lấy thịt, quết dai với nước mắm, tiêu, hành tím.",
-    "Trộn thì là, hành lá cắt nhỏ, vo viên hoặc nặn dẹt.",
-    "Chiên vàng hai mặt, ăn nóng với cơm hoặc bún."
+    "Sơ chế: cá thác lác nạo lấy thịt, để lạnh cho dễ quết; thì là và hành lá rửa sạch, cắt nhỏ; hành tím, tỏi bóc vỏ, băm nhuyễn.",
+    "Ướp cá với nước mắm, đường, tiêu và hành tỏi băm, trộn đều cho gia vị áo khắp khối cá.",
+    "Quết cá: dùng chày hoặc muỗng quết đều tay 10–15 phút theo một chiều tới khi khối cá dẻo, dính và kéo sợi không đứt rời — đó là dấu hiệu chả sẽ dai; trộn thì là, hành lá, thịt xay và bột năng (nếu dùng) vào ở cuối.",
+    "Để khối chả nghỉ trong ngăn mát ~15 phút cho săn lại, dễ nặn và giữ độ dai khi chiên.",
+    "Nặn và chiên: thoa lớp dầu mỏng lên tay, vo viên rồi ép dẹp dày khoảng 1cm; đun dầu nóng vừa, cho chả vào chiên mỗi mặt 5–7 phút tới khi vàng đều và chả phồng nhẹ.",
+    "Vớt chả ra giấy thấm dầu, để ráo; ăn nóng với cơm hoặc bún, chấm tương ớt hoặc nước mắm chua ngọt."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-cha-ca-thac-lac-chien-dai-ngon-thuc-hien-cuc-don-10209",
+      "accessed": "2026-10-31",
+      "note": "Điện máy XANH — chả cá thác lác chiên thường, cho 3 người: cá thác lác 350g (~117g/người), tỏi 2 tép, hành tím 2 củ, đường 1 muỗng canh khi ướp; giã quết cá ~15 phút tới khi dính dẻo, vo tròn ép dẹp, chiên mỗi mặt 5–7 phút — công thức thuần cá, không dùng thịt xay, không nước mắm."
+    },
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/3-cach-lam-cha-ca-thac-lac-chien-gion-dai-de-thuc-hien-tai-09831",
+      "accessed": "2026-10-31",
+      "note": "Điện máy XANH — chả cá thác lác chiên thì là, cho 4 người: cá thác lác 400g (100g/người), thịt xay 300g (75g/người), thì là 6 nhánh, hành tím 6 củ, tỏi 6 tép, hành lá 3 nhánh; tán cá quanh thành tô, cho thịt vào giữa, nhồi ~10 phút tới dai dẻo, vo viên chiên ~5 phút — nguồn duy nhất trộn thịt với tỉ lệ cao."
+    },
+    {
+      "url": "https://memart.vn/tin-tuc/blog3/lam-cha-ca-thac-lac-chien-vi-cb.html",
+      "accessed": "2026-10-31",
+      "note": "Memart — chả cá thác lác chiên: mẻ cá thác lác 500g, hành tím 1 củ, nước mắm 1 thìa cà phê, đường ½ thìa cà phê, thêm 1 quả trứng gà tạo kết dính; quết ~15 phút tới dẻo mịn, nặn miếng dày ~½ lóng tay, chiên mỗi mặt 5–7 phút — quy đổi theo serving 150g của file cho cá ~135g/khẩu phần."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu). [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 8 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).]",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu). [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 8 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).] Nâng Mức 2 đợt 2 (2026-10-31): Đối chiếu 3 nguồn công thức đã mở kiểm chứng (xem recipe_sources). Định lượng: giữ nguyên toàn bộ — cá thác lác 120g khớp khoảng nguồn 100–135g/khẩu phần (ĐMX chiên thường ~117g; ĐMX thì là 100g; Memart quy đổi ~135g). Thịt xay: nguồn bất đồng tuyệt đối (ĐMX thì là 75g/khẩu phần so với hai nguồn còn lại không dùng thịt) nên giữ 25g dạng tuỳ chọn của file. Bất thường ghi nhận: file có nuoc-mam và bot-nang — cả 3 nguồn đối chiếu đều không dùng hai dòng này (nguồn nêm bằng muối/hạt nêm/đường; Memart dùng 1 quả trứng gà tạo kết dính, file lại không có dòng trứng); ĐMX bản thì là dùng tiêu tới 1 muỗng canh/mẻ — cao bất thường so với các nguồn còn lại, không lấy làm mốc. Chờ pha phân xử riêng cho các dòng phụ. Bước nấu viết lại 6 bước.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

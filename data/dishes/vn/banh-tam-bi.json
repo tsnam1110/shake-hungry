@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "tron",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -114,16 +114,35 @@
     }
   ],
   "recipe_steps": [
-    "Nhào bột gạo và bột năng, xe thành sợi bánh tằm, luộc chín, xả nước lạnh.",
-    "Luộc da heo, thái sợi mỏng làm bì; luộc thịt nạc vai, thái lát.",
-    "Thắng nước cốt dừa sền sệt; pha nước mắm chua ngọt với tỏi.",
-    "Xếp bánh tằm, bì, thịt lên đĩa, chan nước cốt dừa và nước mắm."
+    "Trộn và nhào bột: trộn bột gạo, bột nếp và bột năng với nước ấm và chút muối, nhào 10–15 phút đến khi bột dẻo mịn, không dính tay; ủ bột 20–30 phút. (Cả 3 nguồn đều có bột nếp trong sợi bánh — xem bất thường ghi ở import_note.)",
+    "Se sợi: cán bột mỏng ~2–3 mm, cắt thành sợi nhỏ như con tằm; áo một lớp bột khô để các sợi không dính nhau.",
+    "Luộc sợi: đun nồi nước lớn thật sôi, thả sợi vào; khi sợi nổi lên và trong lại (khoảng 3–5 phút sau khi nổi) thì vớt ra ngâm ngay nước lạnh, xả lại, để ráo; trộn chút dầu hành phi để sợi bóng và không dính. (Một nguồn hấp sợi 4–6 phút thay cho luộc.)",
+    "Làm bì: da heo cạo sạch, luộc chín tới 15–20 phút, ngâm nước lạnh cho giòn, thái sợi thật mỏng; thịt nạc vai luộc hoặc khìa chín, thái lát mỏng; trộn da với một phần thịt, thính gạo rang và tỏi băm cho thơm đều.",
+    "Thắng nước cốt dừa: nấu nước cốt dừa lửa nhỏ với chút muối, đường và ít bột năng pha loãng, khuấy đều 5–7 phút đến khi sệt nhẹ, bóng mượt; không để sôi mạnh tránh tách dầu.",
+    "Pha nước mắm: hòa nước mắm với đường, nước ấm và chanh/giấm, thêm tỏi ớt băm — vị chua ngọt dịu, nhạt hơn nước chấm nem.",
+    "Trình bày: xếp bánh tằm ra đĩa cùng giá trụng, dưa leo thái sợi và rau thơm, phủ bì + thịt lên trên, chan đẫm nước cốt dừa rồi rưới nước mắm."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-banh-tam-bi-nuoc-cot-dua-dai-ngon-chuan-huong-vi-dac-24015",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH (6–8 người): bột gạo 400g + bột năng 200g + bột nếp 200g, thịt nạc đùi khìa 1,2kg, da bì 800g, thính 50g, nước cốt dừa 700ml; sợi bánh luộc ~10 phút, trộn dầu hành; thịt khìa nước dừa."
+    },
+    {
+      "url": "https://beptruong.edu.vn/cach-lam-banh-tam",
+      "accessed": "2026-10-31",
+      "note": "Bếp Trưởng Á Âu (không ghi khẩu phần): bột nếp 200g là bột chính + bột gạo 50g + bột năng 50g, thịt nạc vai 300g, da heo 150g, thính 150g, nước cốt dừa 300ml; sợi bánh HẤP 4–6 phút thay vì luộc."
+    },
+    {
+      "url": "https://tripi.vn/blog/vi/kinh-nghiem-hay/cach-che-bien-banh-tam-bi-beo-ngay-dai-ngon-chuan-vi-mien-tay-tripi",
+      "accessed": "2026-10-31",
+      "note": "Tripi (theo Cooky): bột gạo 200g + bột năng 50g + bột nếp 50g, thịt nạc vai 300g, da heo 150g, thính 150g, nước cốt dừa 300ml; luộc sợi đến khi nổi, vớt ngâm nước lạnh."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu).",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu). Nâng Mức 2 đợt 2 (2026-10-31): đã mở kiểm chứng 3 nguồn (Điện Máy XANH, Bếp Trưởng Á Âu, Tripi/Cooky). Phân xử định lượng: GIỮ NGUYÊN toàn bộ — hai nguồn không ghi khẩu phần và bất đồng nhau về tỉ lệ bột (Bếp Trưởng lấy bột nếp làm bột chính); số quy đổi của Điện Máy XANH (mẻ 6–8 người: thịt ~171g, bì ~114g, cốt dừa ~100ml/khẩu phần) cao hơn hẳn số file nhưng không có cơ sở độc lập thứ hai để đối chiếu nên chưa đủ điều kiện sửa; ghi nhận nước cốt dừa 40g có thể thấp so với cách ăn chan đẫm của món. BẤT THƯỜNG lớn ghi nhận cho pha phân xử: CẢ 3 NGUỒN đều dùng BỘT NẾP trong sợi bánh tằm mà file không có dòng bột nếp; cả 3 nguồn cũng ăn kèm giá/dưa leo/xà lách/rau thơm mà file không có; thính ở 2 nguồn là 150g/mẻ trong khi file chỉ để 10g dạng optional.",
   "status": "draft",
   "source": "llm_suggested",
   "confidence": "unknown",

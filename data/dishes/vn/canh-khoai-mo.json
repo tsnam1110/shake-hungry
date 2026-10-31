@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -90,15 +90,34 @@
     }
   ],
   "recipe_steps": [
-    "Khoai mỡ gọt vỏ, dùng muỗng cạo lấy phần thịt khoai; tôm bóc vỏ, băm sơ hoặc để nguyên con nhỏ.",
-    "Phi hành tím, xào tôm săn, đổ nước đun sôi rồi cho khoai mỡ vào, khuấy đều tay cho canh sánh mịn, không vón cục.",
-    "Nêm nước mắm, muối vừa ăn, tắt bếp, cho rau ngổ, dùng nóng với cơm."
+    "Sơ chế khoai: đeo găng tay, gọt vỏ khoai mỡ, rửa sạch, bổ dọc rồi dùng muỗng nạo lấy phần thịt khoai (hoặc băm nhuyễn).",
+    "Sơ chế tôm: tôm sú bóc vỏ, bỏ đầu, rút chỉ đen, rửa sạch, băm sơ hoặc để nguyên con nhỏ; ướp với chút nước mắm và tiêu.",
+    "Phi hành tím với dầu cho thơm, cho tôm vào xào lửa vừa đến khi tôm săn lại và chuyển màu hồng.",
+    "Đổ khoảng 600 ml–1 lít nước vào, đun sôi; cho khoai mỡ vào từ từ, khuấy đều tay để khoai tan đều, canh sánh mịn, không vón cục và không bén đáy nồi.",
+    "Nấu lửa vừa 5–10 phút đến khi khoai chín bở, canh sệt vừa; nêm nước mắm và muối vừa ăn.",
+    "Tắt bếp, rắc rau ngổ cắt nhỏ lên trên, múc ra tô và ăn nóng với cơm."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://giadinh.suckhoedoisong.vn/canh-khoai-mo-tom-tuoi-17210801.htm",
+      "accessed": "2026-10-31",
+      "note": "Sức khỏe & Đời sống (Gia đình): khoai mỡ 1/2 kg + tôm sú 200 g + nước ~600 ml/mẻ; nạo khoai bằng thìa, nấu khoai 5 phút rồi cho tôm băm, thêm rau ngổ và ngò gai"
+    },
+    {
+      "url": "https://daynauan.info.vn/canh-khoai-mo",
+      "accessed": "2026-10-31",
+      "note": "Dạy Nấu Ăn (daynauan.info.vn): khoai mỡ 500 g + tôm tươi 250 g + xương heo 300 g ninh nước dùng/mẻ; xào tôm với hành tím trước, cho khoai vào nấu đến khi canh sền sệt"
+    },
+    {
+      "url": "https://bloganngon.edu.vn/?p=34435",
+      "accessed": "2026-10-31",
+      "note": "Blog Ăn Ngon: khoai mỡ 300 g + tôm tươi 150 g/mẻ; phi hành khô, xào tôm rồi cho khoai, nấu lửa vừa thêm ~10 phút cho khoai chín mềm, thêm rau ngổ và mùi tàu"
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Dùng nguyên liệu mới đề xuất: khoai-mo (chờ bổ sung file nguyên liệu vào data/ingredients/).",
+  "import_note": "Soạn nháp đợt mở rộng 300 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Dùng nguyên liệu mới đề xuất: khoai-mo (chờ bổ sung file nguyên liệu vào data/ingredients/). Nâng Mức 2 đợt 2 (2026-10-31): đã mở kiểm chứng 3 nguồn (Sức khỏe & Đời sống: khoai 500 g + tôm sú 200 g, nước 600 ml; Dạy Nấu Ăn: khoai 500 g + tôm 250 g + xương heo ninh nước dùng; Blog Ăn Ngon: khoai 300 g + tôm 150 g). Phân xử định lượng: giữ nguyên toàn bộ — tôm quy đổi ~39–62 g/khẩu phần, số file 50 g nằm trong khoảng; khoai mỡ các nguồn bất đồng nhau về cỡ mẻ sau quy đổi (~79–125 g/khẩu phần tùy lượng nước và số khẩu phần suy ra), số file 150 g chỉ lệch ~+29% so với nguồn quy đổi chặt nhất (SKĐS ~116 g/khẩu phần, trong ngưỡng 30%) nên không đủ điều kiện sửa theo quy tắc đồng thuận. Bất thường ghi nhận (không tự thêm dòng, chờ pha phân xử riêng): cả 3 nguồn đều dùng thêm ngò gai/mùi tàu cùng rau ngổ mà file chỉ có rau ngổ; Dạy Nấu Ăn dùng nước ninh xương heo (300 g xương/mẻ) thay nước lọc.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

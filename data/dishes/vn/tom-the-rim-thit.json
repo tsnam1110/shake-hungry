@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "kho",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -106,15 +106,34 @@
     }
   ],
   "recipe_steps": [
-    "Thịt ba chỉ thái miếng nhỏ, rang cháy cạnh cho ra mỡ.",
-    "Cho tôm thẻ đã sơ chế vào rim cùng nước mắm, đường thốt nốt, hành và tỏi.",
-    "Rim lửa vừa đến khi tôm đỏ bóng, nước sệt; rắc hành lá và tiêu."
+    "Sơ chế: tôm thẻ cắt râu và đầu nhọn, rút chỉ đen trên lưng, rửa sạch, để ráo (giữ vỏ để rim giòn); thịt ba chỉ rửa sạch, cắt miếng mỏng vừa ăn.",
+    "Ướp tôm và thịt vào hai tô riêng, mỗi tô với nước mắm, đường thốt nốt, hành tím và tỏi băm, chút tiêu, khoảng 15–30 phút cho thấm.",
+    "Cho thịt vào nồi/chảo, đảo lửa vừa khoảng 5 phút cho thịt săn, ra bớt mỡ và xém cạnh; có thể thắng chút đường cho nước màu cánh gián.",
+    "Phi hành tím, tỏi với dầu, cho tôm vào lửa lớn đảo 3–4 phút đến khi vỏ tôm trong, đỏ và hơi xém thì trút ra để riêng.",
+    "Cho tôm trở lại nồi thịt, thêm ít nước nếu khô, đậy nắp rim lửa nhỏ 5–10 phút, đảo đều đến khi nước rim sệt, bóng và áo đều tôm thịt.",
+    "Nêm lại vị mặn–ngọt cho vừa, rắc hành lá cắt khúc và tiêu, tắt bếp; ăn nóng với cơm trắng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://yummyday.vn/tom-rim-344",
+      "accessed": "2026-10-31",
+      "note": "YummyDay (mục tôm rim thịt): tôm tươi 250 g + thịt ba chỉ 100 g/mẻ; ướp riêng 15–20 phút, xào thịt trước rồi cho tôm, rim lửa nhỏ đến khi nước sệt"
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/898284",
+      "accessed": "2026-10-31",
+      "note": "Cookpad (Hoàng Ngọc): tôm thịt rim, tác giả ghi rõ có thể dùng tôm thẻ con nhỏ; ướp 30 phút, rim tôm riêng cho vỏ trong và hơi xém rồi rim thịt riêng, sau đó rim chung"
+    },
+    {
+      "url": "https://lib.vn/upload/library/922164/preview/tom-rim-thit-ba-chi-922164.pdf",
+      "accessed": "2026-10-31",
+      "note": "Thư viện số (sách Món ăn miền Nam): tôm thẻ 1 lb (~454 g) + thịt ba chỉ 1 lb cho 4–6 người; thắng đường tạo màu, rim thịt lửa vừa-thấp, xào tôm lửa lớn 3–4 phút rồi rim chung 5 phút"
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 2 (2026-10-31): đã mở kiểm chứng 3 nguồn (YummyDay: tôm 250 g + ba chỉ 100 g/mẻ; Cookpad Hoàng Ngọc: công thức tôm thịt rim, ghi rõ dùng được tôm thẻ con nhỏ, định lượng gia vị theo muỗng; sách Món ăn miền Nam qua thư viện số: tôm thẻ ~454 g + ba chỉ ~454 g cho 4–6 người). Phân xử định lượng: tôm quy đổi ~76–135 g/khẩu phần tùy đường quy đổi, số file 100 g nằm trong khoảng nên giữ nguyên; thịt hai nguồn theo gram bất đồng nhau >30% về tỉ lệ tôm:thịt (YummyDay 2,5:1; sách miền Nam 1:1) nên giữ nguyên 60 g theo quy tắc nguồn bất đồng. Không phát hiện bất thường về nguyên liệu; file dùng đường thốt nốt thay đường cát/nước màu của nguồn — biến thể gia vị miền Nam, giữ nguyên.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

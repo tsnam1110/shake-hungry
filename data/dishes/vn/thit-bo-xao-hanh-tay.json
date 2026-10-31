@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "xao",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -82,15 +82,34 @@
     }
   ],
   "recipe_steps": [
-    "Bò thái lát mỏng ngang thớ, ướp nước mắm, tiêu, ít dầu 10 phút.",
-    "Xào bò lửa lớn thật nhanh cho vừa tái, trút ra đĩa.",
-    "Xào hành tây vừa chín tới, cho bò vào đảo đều 1 phút, tắt bếp. Món mặn nhanh: tổng thời gian nấu ~20 phút, nguyên liệu phổ thông."
+    "Sơ chế: thịt bò rửa sạch, thấm khô; cho vào ngăn đá ~20 phút cho thịt hơi cứng rồi thái lát mỏng ngang thớ; hành tây bóc vỏ, cắt múi cau; tỏi băm nhỏ.",
+    "Ướp bò với nước mắm, tiêu và một ít dầu ăn trong 15–20 phút (dầu giúp lát bò tơi, không dính chảo và mềm hơn khi xào nhanh).",
+    "Xào bò đợt một: đun chảo thật nóng, cho dầu ăn vào, phi tỏi thơm rồi cho bò vào đảo nhanh trên lửa lớn 1–2 phút tới khi thịt vừa tái và săn mặt; trút ra đĩa, giữ lại phần nước xào trong chảo.",
+    "Xào hành tây: dùng lại chảo, cho hành tây vào xào lửa lớn 1–2 phút tới khi mép hành trong lại nhưng vẫn còn giòn.",
+    "Hợp chảo: cho bò cùng nước xào trở lại, đảo đều khoảng 1 phút cho bò chín tới và thấm đều với hành; nêm nếm lại cho vừa miệng.",
+    "Rắc thêm tiêu, tắt bếp và dọn ngay khi còn nóng — để lâu trong chảo bò sẽ dai và hành ra nước."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.bachhoaxanh.com/kinh-nghiem-hay/cach-lam-thit-bo-xao-hanh-tay-thom-mem-nhanh-gon-1218206",
+      "accessed": "2026-10-31",
+      "note": "Bách hoá XANH: bản chính cho 1–2 người (danh sách nguyên liệu dạng ảnh; bước nấu dùng dầu ăn 2 muỗng canh, xào bò lửa lớn cho săn rồi trút ra, xào hành tây 2 phút, hợp lại 3 phút); bản cà rốt cho 3–4 người ghi rõ thịt bò 500g + hành tây 1 củ (quy đổi bò 125–167g/người) — đối chiếu kỹ thuật xào riêng hai đợt và khoảng thịt bò."
+    },
+    {
+      "url": "https://eva.vn/bep-eva/huong-dan-cach-lam-thit-bo-xao-hanh-tay-don-gian-ngon-dung-dieu-c162a365280.html",
+      "accessed": "2026-10-31",
+      "note": "Eva.vn — khẩu phần 4 người: thịt bò mềm 500g (125g/người), hành tây 2 củ (~60g/người), hành lá 200g, dầu ăn ~3 muỗng; bò thái mỏng ướp muối tiêu dầu 20–30 phút, xào sơ trút ra, xào hành tới hơi se rồi hợp lại, nêm nước tương + rượu trắng — đối chiếu định lượng chính."
+    },
+    {
+      "url": "https://toyenxin.com/blog-1/lam-thit-bo-xao-hanh-tay-vi-cb.html",
+      "accessed": "2026-10-31",
+      "note": "Tổ Yến Xịn: danh sách đầu bài — thịt bò 500g, hành tây 2 củ, tỏi 2–3 tép; phần chi tiết trong cùng bài lại ghi thịt bò 300g + hành tây 1 củ lớn (bất thường nội tại của nguồn, đã ghi nhận khi phân xử); ướp 15–20 phút, xào bò lửa lớn 2–3 phút rồi cho hành vào sau — đối chiếu tỉ lệ bò:hành theo mẻ."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nâng Mức 2 đợt 2 (2026-10-31): Đối chiếu 3 nguồn công thức đã mở kiểm chứng (xem recipe_sources). Định lượng: giữ nguyên toàn bộ — thịt bò 120g khớp Eva 125g/khẩu phần và khoảng 125–167g của Bách hoá XANH; hành tây nguồn bất đồng nhau (Eva ~60g/khẩu phần so với Bách hoá XANH ~35g/khẩu phần ở bản cà rốt; Toyenxin ghi hai danh sách khác nhau ngay trong cùng bài) nên giữ 80g. Bất thường ghi nhận: Eva dùng hành lá tới 200g/mẻ (~50g/khẩu phần — cao bất thường ngay trong nguồn so với thông lệ rắc mặt) và cả 3 nguồn đều nhắc hành lá/ngò rắc mặt trong khi file không có dòng hanh-la; sốt ướp của nguồn thường có thêm nước tương/dầu hào — file chỉ dùng nước mắm. Chờ pha phân xử riêng cho các dòng phụ này. Bước nấu viết lại 6 bước.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

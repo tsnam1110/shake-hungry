@@ -2,7 +2,7 @@
   "slug": "bun-cha",
   "parent_dish_slug": null,
   "country_code": "VN",
-  "region_code": "vn-ha-noi",
+  "region_code": "vn-north",
   "names": [
     {
       "locale": "vi",
@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nuong",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -142,11 +142,31 @@
     }
   ],
   "recipe_steps": [
-    "Ướp thịt, nướng chả viên và chả miếng.",
-    "Pha nước chấm chua ngọt với cà rốt, đu đủ ngâm.",
-    "Ăn kèm bún và rau thơm."
+    "Sơ chế: ba chỉ rửa sạch, thái miếng mỏng ~0,5 cm; thịt xay chọn loại có chút mỡ để chả không khô. Rau sống nhặt, rửa sạch, ngâm nước muối loãng 10 phút rồi để ráo.",
+    "Ướp thịt (tối thiểu 1 giờ, ngon nhất để qua đêm): ướp riêng hai loại thịt với hành tím và tỏi băm, nước mắm, đường, chút nước hàng cho màu, tiêu và dầu ăn; thịt xay trộn đều tay, bọc kín để lạnh cho thấm và dẻo.",
+    "Làm dưa góp: đu đủ xanh và cà rốt gọt vỏ, thái mỏng, bóp muối 10 phút, rửa lại, vắt ráo; ngâm với giấm, đường, tỏi ớt ít nhất 30 phút đến khi thấm chua ngọt và còn giòn.",
+    "Pha nước chấm: hòa nước ấm với đường cho tan, thêm nước mắm và giấm/chanh theo tỉ lệ chua ngọt mặn cân bằng (tham khảo khoảng 1 đường : 1 nước mắm : 5–7 nước); giữ nước chấm ấm khi ăn.",
+    "Nướng chả: kẹp thịt miếng lên vỉ, viên thịt xay thành viên dẹt; nướng trên than hoa lửa vừa, trở đều tay 8–12 phút đến khi chả xém cạnh, vàng nâu — chả đạt khi ấn vào đàn hồi, giữa không còn hồng.",
+    "Thả chả vào nước chấm: gắp chả đang nóng thả ngay vào bát nước chấm ấm cùng dưa góp để chả thấm vị và giữ nóng.",
+    "Trình bày: dọn bún và đĩa rau thơm kèm theo; ăn bằng cách gắp bún, rau chấm ngập vào bát chả nước chấm."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/huong-dan-cach-lam-bun-cha-ha-noi-thom-ngon-nhu-ngoai-hang-01018",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH (4 người): ba chỉ 700g, thịt xay 500g, bún 1kg, rau sống 500g, nước mắm ~220ml cho ướp + nước chấm; công thức người dùng trên cùng trang (3 người) dùng nạc vai 250g + thịt xay 250g."
+    },
+    {
+      "url": "http://www.savourydays.com/recipe/video-cach-lam-bun-cha/",
+      "accessed": "2026-10-31",
+      "note": "Savoury Days (6–8 phần): thịt miếng 450g, thịt xay 450g, bún tươi 1,5kg, dưa góp 400g (đu đủ xanh, cà rốt, su hào); nước chấm tỉ lệ 1 đường : 2/3 chanh : 1 nước mắm : 7 nước."
+    },
+    {
+      "url": "https://danviet.vn/cach-lam-bun-cha-don-gian-tai-nha-7777980508.htm",
+      "accessed": "2026-10-31",
+      "note": "Dân Việt: ba chỉ 500g, nạc vai xay 500g, bún 1kg; ướp có sả và sữa đặc, ướp tối thiểu 1 giờ; dưa góp su hào + cà rốt ngâm chua ngọt."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": {
@@ -154,7 +174,7 @@
     "source": "wikidata",
     "queried_at": "2026-08-31"
   },
-  "import_note": "Nhập tự động từ Wikidata Q50634 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Gợi ý nguyên liệu từ Wikidata (tiếng Anh, CHƯA ánh xạ sang data/ingredients/): vegetable, pork, fish sauce, rice vermicelli, nước chấm. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/B%C3%BAn%20ch%E1%BA%A3%20H%C3%A0ng%20M%C3%A0nh.jpg Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Nhập tự động từ Wikidata Q50634 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Gợi ý nguyên liệu từ Wikidata (tiếng Anh, CHƯA ánh xạ sang data/ingredients/): vegetable, pork, fish sauce, rice vermicelli, nước chấm. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/B%C3%BAn%20ch%E1%BA%A3%20H%C3%A0ng%20M%C3%A0nh.jpg Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 2 (2026-10-31): đã mở kiểm chứng 3 nguồn (Điện Máy XANH, Savoury Days, Dân Việt). Phân xử định lượng: GIỮ NGUYÊN toàn bộ — các nguồn BẤT ĐỒNG NHAU >30% về thịt và bún mỗi khẩu phần (thịt tổng: Điện Máy XANH ~300g/khẩu phần theo mẻ 4 người, Savoury Days ~112–150g theo mẻ 6–8 phần; bún 188–250g), theo quy tắc bất đồng thì giữ số file; riêng thịt xay 60g nằm ngay trong khoảng của Savoury Days (56–75g). BẤT THƯỜNG ghi nhận cho pha phân xử: (1) file dùng du-du-chin (đu đủ chín) 15g làm dưa góp trong khi cả 3 nguồn đều dùng ĐU ĐỦ XANH (thường kèm su hào) — nhiều khả năng ánh xạ nguyên liệu sai; (2) cả 3 nguồn đều ướp thịt với hành tím băm (Dân Việt thêm sả và sữa đặc) mà file không có dòng hành khô/sả. Không tự sửa vì thuộc phân xử nguyên liệu.",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",
@@ -163,6 +183,7 @@
   "reviewed_at": "2026-10-31",
   "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này).",
   "tags": [
+    "dac-san:ha-noi",
     "loai:bun-pho-mi"
   ]
 }

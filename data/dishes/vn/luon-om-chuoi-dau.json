@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "kho",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -122,15 +122,35 @@
     }
   ],
   "recipe_steps": [
-    "Lươn làm sạch nhớt, cắt khúc, ướp nghệ, nước mắm; chuối xanh tước vỏ, ngâm nước chua, chần qua.",
-    "Xào thịt ba chỉ và lươn săn, cho chuối và đậu phụ rán vào.",
-    "Om với nước và giấm bỗng (mẻ) lửa nhỏ đến khi chuối mềm; nêm lá lốt, tía tô."
+    "Làm sạch nhớt lươn bằng muối và chanh (hoặc tro bếp), mổ bỏ ruột, rửa sạch, cắt khúc khoảng 5 cm. Ướp lươn với nước cốt hành tỏi, nghệ, nước mắm và tiêu trong 15 phút.",
+    "Chuối xanh tước vỏ, cắt miếng con chì hoặc thái vát, ngâm nước muối loãng pha chút chua cho khỏi thâm, chần sơ với chút nghệ rồi vớt ra để ráo.",
+    "Đậu phụ cắt miếng vừa ăn, rán vàng các mặt để khi om giữ nguyên miếng. Thịt ba chỉ thái con chì, đảo trên chảo tới khi xém cạnh.",
+    "Chuẩn bị nước om: khuấy giấm bỗng cùng nước nghệ giã lọc, nêm trước một phần nước mắm để nước om có màu vàng và vị chua dịu.",
+    "Phi thơm hành tỏi, cho thịt ba chỉ và chuối vào đảo cho thấm gia vị, châm nước sôi xâm xấp mặt nguyên liệu, cho nước nghệ và giấm bỗng vào, om lửa nhỏ tới khi chuối gần mềm.",
+    "Cho lươn đã xào săn và đậu phụ rán vào, om tiếp khoảng 10 phút tới khi lươn chín mềm, nước rút bớt và hơi sánh lại; nêm lại mắm, muối cho vừa miệng.",
+    "Thả lá lốt và tía tô thái nhỏ vào, đảo đều rồi tắt bếp. Dùng nóng với cơm hoặc bún; món đạt khi nước om vàng sóng sánh, chuối bùi mềm, lươn thơm và không tanh."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://congthucgiadinh.com/mon-an/luon-om-chuoi-dau",
+      "accessed": "2026-10-31",
+      "note": "Công Thức Gia Đình: lươn tươi 500 g, đậu phụ 200 g, chuối xanh 2 quả, dầu ăn 2 muỗng canh, nước mắm 1 muỗng canh (bản này không có thịt ba chỉ); om lửa nhỏ khoảng 30 phút tới khi chuối và lươn mềm"
+    },
+    {
+      "url": "https://congthucnauan.vn/luon-om-chuoi-dau-nong-hoi-ngay-dong/",
+      "accessed": "2026-10-31",
+      "note": "VnExpress (qua congthucnauan.vn): lươn đồng 500 g, thịt ba chỉ 200 g, chuối xanh 6 quả (2 quả xay làm sốt sánh), đậu phụ 4 miếng; sốt mẻ-nghệ tạo màu vàng mơ, om tới khi nước hơi sánh"
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/17027677",
+      "accessed": "2026-10-31",
+      "note": "Cookpad (Hoàng Phương Thảo): lươn 3 con làm sạch, thịt ba chỉ 150 g, đậu phụ 3 bìa, chuối xanh 3 quả, cà chua 2 quả, mắm tôm 2 muỗng, mẻ 3 muỗng; ba chỉ rang cháy cạnh trước, cho lươn và đậu vào om nhỏ lửa thêm 10 phút"
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 2 (2026-10-31): Đã đối chiếu 3 nguồn thật mở kiểm chứng (Công Thức Gia Đình; VnExpress qua congthucnauan.vn; Cookpad Hoàng Phương Thảo). Phân xử định lượng: giữ nguyên mọi dòng — lươn 120 g khớp hai nguồn ghi 500 g/mẻ (quy đổi ≈125 g/khẩu phần); thịt ba chỉ 40 g nằm giữa VnExpress 200 g/mẻ (≈50 g/khẩu phần) và Cookpad 150 g/mẻ; chuối xanh giữ 80 g vì nguồn bất đồng nhau (Gia Đình 2 quả/mẻ so với VnExpress 6 quả/mẻ, trong đó 2 quả dùng xay làm sốt); đậu phụ giữ 60 g vì quy đổi từ các nguồn dao động khoảng 50–100 g/khẩu phần. Bất thường ghi nhận: Cookpad có cà chua — file không có; Gia Đình không dùng thịt ba chỉ và có nước tương — file có ba chỉ, không có nước tương; nguồn tạo chua chủ yếu bằng mẻ và mắm tôm, file dùng giấm bỗng — cùng vai trò tạo chua và được nguồn nêu như lựa chọn thay thế.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

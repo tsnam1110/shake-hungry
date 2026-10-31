@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -146,15 +146,35 @@
     }
   ],
   "recipe_steps": [
-    "Phi tỏi, đun nước sôi, dầm me lấy nước chua.",
-    "Cho cá vào nấu chín, thêm cà chua, dứa, đậu bắp, giá (và dọc mùng nếu có — xem ghi chú).",
-    "Nêm nước mắm, đường; tắt bếp cho rau ngổ, ngò gai, ớt."
+    "Sơ chế cá: cá lóc làm sạch, chà muối khử nhớt, rửa lại, cắt khúc vừa ăn; ướp cá với chút nước mắm, tiêu và hành tỏi băm 15–20 phút.",
+    "Sơ chế rau: cà chua bổ múi cau; dứa cắt lát mỏng; đậu bắp cắt xéo; dọc mùng tước vỏ, cắt xéo, bóp muối rồi rửa sạch; giá rửa sạch để ráo; rau ngổ, ngò gai cắt nhỏ; me dầm với nước nóng, lọc lấy nước cốt.",
+    "Phi tỏi với dầu cho thơm, cho cá vào đảo nhẹ cho săn mặt (hoặc chiên sơ) để cá không tanh và không nát khi nấu.",
+    "Đun sôi khoảng 1,5 lít nước, cho nước cốt me và cá vào nấu khoảng 5 phút, hớt bọt cho nước trong; cá vừa chín vớt ra để riêng.",
+    "Cho dứa và cà chua vào nấu 2–3 phút, nêm nước mắm và đường cho vị chua–ngọt–mặn hài hòa.",
+    "Cho đậu bắp và dọc mùng vào, nấu sôi lại khoảng 2 phút; cho giá và cá trở lại nồi, vừa sôi nhẹ thì tắt bếp — không nấu lâu, rau sẽ nhũn và cá nát.",
+    "Rắc rau ngổ, ngò gai, ớt cắt lát (và tỏi phi nếu có), ăn nóng với cơm hoặc bún, chấm cá với nước mắm ớt."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://nghebep.com/canh-chua-ca-loc",
+      "accessed": "2026-10-31",
+      "note": "Nghề Bếp Á Âu: cá lóc 1 con ~800 g + me chín 50 g + giá 100 g + đậu bắp 5 trái, nước 1,5 lít; ướp cá 15–20 phút, chiên sơ cá, nấu cá 5 phút rồi vớt ra, cho rau vào sau"
+    },
+    {
+      "url": "https://vietfoodshop.com/cach-nau-canh-chua-ca-loc-chuan-vi-mien-tay/",
+      "accessed": "2026-10-31",
+      "note": "VietFoodShop: cá lóc 350 g + me 30 g + đậu bắp 200 g + cà chua 2 quả/mẻ; phi tỏi, xào cá săn, nấu lửa vừa 5 phút, cho thơm/cà chua rồi bạc hà/đậu bắp, giá cho sau cùng"
+    },
+    {
+      "url": "https://tripi.vn/blog/vi/kinh-nghiem-hay/huong-dan-nau-canh-chua-ca-loc-dam-da-phong-vi-mien-tay-tripi",
+      "accessed": "2026-10-31",
+      "note": "Tripi (công thức bạn đọc Thúy Hằng): cá lóc 1 con ~800 g + giá 150 g + đậu bắp 10 trái + cà chua 3 quả/mẻ; ướp cá 20 phút, nấu sôi, cho đậu bắp và dọc mùng đun thêm 2–3 phút, giá cho cuối"
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu).",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu). Nâng Mức 2 đợt 2 (2026-10-31): đã mở kiểm chứng 3 nguồn canh chua cá lóc miền Tây (Nghề Bếp Á Âu: cá ~800 g + me 50 g + giá 100 g, nước 1,5 lít; VietFoodShop: cá 350 g + me 30 g + đậu bắp 200 g; Tripi: cá ~800 g + giá 150 g + đậu bắp 10 trái). Phân xử định lượng: giữ nguyên toàn bộ — nguồn cân cá theo nguyên con cả đầu/xương (350–800 g/mẻ) khác cơ sở với phần khúc cá trong tô của file nên không so trực tiếp theo gam thô; me quy đổi ~5–12 g và giá ~11–30 g/khẩu phần khớp số file (10 g, 25 g); đậu bắp các nguồn bất đồng lớn (5 trái so với 200 g/mẻ) nên giữ 30 g; cà chua và dọc mùng nằm ở biên trên của khoảng quy đổi nhưng chưa lệch >30% so với cả hai nguồn đồng thuận. Bất thường nhỏ ghi nhận: Nghề Bếp phi thêm sả băm cùng tỏi (1/3 nguồn) — file không có sả, không bổ sung vì chỉ 1 nguồn.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

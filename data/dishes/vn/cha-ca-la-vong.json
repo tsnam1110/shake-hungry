@@ -2,7 +2,7 @@
   "slug": "cha-ca-la-vong",
   "parent_dish_slug": null,
   "country_code": "VN",
-  "region_code": "vn-ha-noi",
+  "region_code": "vn-north",
   "names": [
     {
       "locale": "vi",
@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "xao",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -42,7 +42,7 @@
     },
     {
       "ingredient_slug": "bun-tuoi",
-      "quantity": 100,
+      "quantity": 160,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -114,11 +114,31 @@
     }
   ],
   "recipe_steps": [
-    "Ướp cá với nghệ, riềng, mắm tôm (bản gốc dùng cá lăng — tạm tính cá lóc).",
-    "Chiên rồi xào chảo với thì là, hành lá.",
-    "Ăn kèm bún, lạc rang."
+    "Sơ chế cá lóc: lọc bỏ xương, thấm thật khô, cắt miếng dày khoảng 1,5 cm vừa ăn. Riềng và nghệ cạo vỏ, giã hoặc xay nhỏ rồi vắt lấy nước cốt.",
+    "Ướp cá với nước cốt riềng, nghệ, mắm tôm, nước mắm và một chút đường trong 30–60 phút cho thấm đều và lên màu vàng.",
+    "Kẹp cá vào vỉ hoặc xếp lên chảo gang, nướng trên than hoặc áp chảo lửa vừa, phết thêm dầu/mỡ trong lúc nướng; lật đều tới khi hai mặt vàng xém, cá chín tới nhưng chưa khô.",
+    "Hành lá và thì là nhặt rửa sạch, cắt khúc 3–4 cm, phần đầu hành chẻ sợi. Lạc rang chín, xát bỏ vỏ, để nguyên hạt.",
+    "Pha mắm tôm chấm: đánh mắm tôm với đường và nước cốt chanh hoặc quất tới khi sủi bọt, thêm ớt thái nhỏ.",
+    "Khi ăn, đặt chảo nhỏ lên bếp giữa bàn, cho dầu hoặc mỡ thật nóng, thả cá đã nướng vào đảo nóng lại rồi rắc hành lá và thì là, đảo nhanh tới khi rau vừa tái và dậy mùi thơm.",
+    "Gắp cá và rau ra bát, ăn nóng cùng bún và lạc rang, chấm mắm tôm đã pha; ăn tới đâu đảo chảo tới đó để cá luôn nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://thanhnien.vn/bi-quyet-lam-mon-cha-ca-la-vong-cua-dau-bep-top-chef-hoang-van-duong-185633834.htm",
+      "accessed": "2026-10-31",
+      "note": "Thanh Niên (đầu bếp Hoàng Văn Dương): cá lóc 200 g, nghệ 5 g, riềng 10 g, thì là 10 g, hành lá 20 g cho 1 phần; ướp cá 30 phút, nướng than/chảo nóng, ăn kèm bún và mắm tôm"
+    },
+    {
+      "url": "https://www.24h.com.vn/am-thuc/cach-lam-mon-cha-ca-tru-danh-thet-dai-tong-thong-my-donald-trump-c460a1032060.html",
+      "accessed": "2026-10-31",
+      "note": "24h: phi lê cá lăng 1 kg, bún 1 kg (tỉ lệ bún:cá 1:1), nghệ 100 g, mắm tôm 1 muỗng canh, mẻ lọc; ướp 1 giờ, nướng than rồi đảo chảo nóng với hành/thì là khi ăn"
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/14331987-ch%E1%BA%A3-ca-la-v%E1%BB%8Dng",
+      "accessed": "2026-10-31",
+      "note": "Cookpad (Hoàng Ngọc): cá phi lê 500 g, bún tươi 500 g cho 3 phần ăn (≈167 g cá và 167 g bún/khẩu phần); ướp riềng-nghệ-mắm tôm-mẻ 30 phút, nướng rồi xào chảo với thì là/hành lá"
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": {
@@ -126,7 +146,7 @@
     "source": "wikidata",
     "queried_at": "2026-08-31"
   },
-  "import_note": "Nhập tự động từ Wikidata Q3274058 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/Cha%20ca%20La%20Vong.jpg Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Nhập tự động từ Wikidata Q3274058 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/Cha%20ca%20La%20Vong.jpg Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 2 (2026-10-31): Đã đối chiếu 3 nguồn thật mở kiểm chứng (Thanh Niên — công thức của đầu bếp Hoàng Văn Dương; 24h; Cookpad Hoàng Ngọc). Phân xử định lượng: bún tươi 100→160 g — Cookpad ghi 500 g bún/3 khẩu phần (≈167 g/khẩu phần) và 24h ghi tỉ lệ bún:cá 1:1 (1 kg bún cho mẻ 1 kg cá), cả hai đều cao hơn số cũ >30%; cá lóc giữ 150 g (Cookpad ≈167 g/khẩu phần, Thanh Niên 200 g/phần — lệch dưới 30% theo mốc nguồn hoặc chưa đồng thuận đủ để sửa); thì là, hành lá, lạc và gia vị giữ nguyên vì nguồn đong bằng nắm/thìa, dao động lớn. Bất thường ghi nhận chờ phân xử riêng: cả 3 nguồn đều ướp cá bằng mẻ lọc — file không có dòng mẻ; nguồn gốc dùng cá lăng, file dùng cá lóc thay thế như bản soạn hiện tại; Thanh Niên còn có hành tây ăn kèm mà file không có. cooking_method xao giữ nguyên: nguồn nướng sơ cá rồi hoàn thiện bằng đảo chảo nóng khi ăn, bước cuối tại bàn là xào.",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",
@@ -135,6 +155,7 @@
   "reviewed_at": "2026-10-31",
   "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này).",
   "tags": [
+    "dac-san:ha-noi",
     "loai:mon-chinh"
   ]
 }

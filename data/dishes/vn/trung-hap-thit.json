@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "hap",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -50,7 +50,7 @@
     },
     {
       "ingredient_slug": "moc-nhi-kho",
-      "quantity": 3,
+      "quantity": 8,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -82,15 +82,34 @@
     }
   ],
   "recipe_steps": [
-    "Mộc nhĩ ngâm nở, băm nhỏ; thịt xay trộn mộc nhĩ, nước mắm, tiêu.",
-    "Trứng đánh tan với ít nước ấm, lọc mịn, trộn cùng thịt, rắc hành lá.",
-    "Hấp cách thủy lửa nhỏ 15 phút tới khi mặt trứng mịn, đặc vừa. Món mặn nhanh: tổng thời gian nấu ~25 phút, nguyên liệu phổ thông."
+    "Ngâm mộc nhĩ khô trong nước ấm khoảng 20 phút cho nở, rửa sạch, cắt bỏ chân, thái sợi nhỏ; hành lá rửa sạch, cắt nhỏ.",
+    "Trộn thịt xay với mộc nhĩ, nước mắm và tiêu, trộn đều tay, để khoảng 10 phút cho thấm gia vị.",
+    "Đánh trứng: đập trứng vào tô, đánh tan cùng ít nước ấm (khoảng 1/3 lượng trứng), lọc qua rây cho hỗn hợp mịn; trộn nhẹ tay cùng hỗn hợp thịt, rắc hành lá lên mặt.",
+    "Chuẩn bị hấp: đun nồi nước tới sôi, đặt tô trứng vào xửng, phủ một khăn sạch dưới nắp nồi để nước không nhỏ xuống mặt trứng.",
+    "Hấp lửa nhỏ 15–18 phút tới khi mặt trứng đặc lại, lắc nhẹ chỉ còn rung nhẹ ở giữa; xăm tăm vào giữa, tăm rút ra không dính là chín.",
+    "Tắt bếp, để tô trứng yên trong nồi ~3 phút cho ổn định, rắc thêm tiêu; dọn nóng với cơm trắng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/amp/2-cach-lam-trung-hap-nam-rom-moi-la-don-gian-thom-ngon-an-la-11609",
+      "accessed": "2026-10-31",
+      "note": "Điện máy XANH — trứng hấp nấm rơm thịt băm (biến thể gần), cho 2 người: trứng gà 6 quả, thịt băm 150g (75g/người), nấm rơm 100g; thịt ướp rồi xào sơ, trứng đánh với 75ml nước, lọc, trộn thịt + nấm, hấp cách thuỷ lửa nhỏ 30 phút — đối chiếu trứng/khẩu phần ở mốc cao (3 quả/người) và kỹ thuật lọc trứng + hấp lửa nhỏ."
+    },
+    {
+      "url": "https://inauanngon.com/trung-hap-thit/",
+      "accessed": "2026-10-31",
+      "note": "I Nấu Ăn Ngon — trứng hấp thịt băm đúng món: thịt xay 200g, trứng gà 3 quả, mộc nhĩ 20g (khô, ngâm nước ấm 20 phút), nước mắm 1 thìa cà phê; trộn sống toàn bộ, nghỉ 15 phút, hấp ~20 phút, chín khi xăm tăm không dính — nguồn cơ sở để quy đổi theo serving_grams của file."
+    },
+    {
+      "url": "https://unie.com.vn/?p=7458",
+      "accessed": "2026-10-31",
+      "note": "Unie — trứng hấp thịt: trứng gà 6 quả, thịt lợn xay 200g, tôm khô 100g, mộc nhĩ 30g (khô), miến gạo 20g, hành tây 1 củ, cà rốt 1 củ; trộn đều nghỉ 10–15 phút, hấp 15 phút, quét lòng đỏ mặt, hấp thêm 10 phút — nguồn thứ hai có mộc nhĩ khô định lượng rõ."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Bản trứng hấp mềm dạng custard — khác cha-trung (khối trứng hấp chắc ăn kèm cơm tấm) và trung-duc-thit (đúc chảo, mặt chiên).",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Bản trứng hấp mềm dạng custard — khác cha-trung (khối trứng hấp chắc ăn kèm cơm tấm) và trung-duc-thit (đúc chảo, mặt chiên). Nâng Mức 2 đợt 2 (2026-10-31): Đối chiếu 3 nguồn công thức đã mở kiểm chứng (xem recipe_sources; nguồn ĐMX là biến thể nấm rơm của cùng món, đã ghi rõ). Định lượng: sửa moc-nhi-kho 3→8g — quy đổi theo serving_grams 180g của file: I Nấu Ăn Ngon (mẻ 200g thịt + 3 trứng + 20g mộc nhĩ khô, tổng mẻ ~410g ≈ 2,3 khẩu phần) cho ~8,8g/khẩu phần và Unie (mẻ 200g thịt + 6 trứng + 30g mộc nhĩ khô, tổng mẻ ~810g ≈ 4,5 khẩu phần) cho ~6,7g/khẩu phần; số cũ thấp hơn cả hai mốc >30%. Giữ trứng 100g và thịt xay 60g vì nguồn bất đồng (trứng quy đổi ~67g/khẩu phần ở hai nguồn trộn sống so với 150g/khẩu phần ở ĐMX; thịt ~44–88g/khẩu phần). Bất thường ghi nhận: 2/3 nguồn có mien-dong và hanh-tay (Unie thêm tôm khô và cà rốt; ĐMX dùng nấm rơm thay mộc nhĩ và xào thịt trước khi hấp) — file không có các dòng này, chờ pha phân xử riêng; bản của file là custard trộn sống, khớp kỹ thuật của I Nấu Ăn Ngon và Unie. Bước nấu viết lại 6 bước.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

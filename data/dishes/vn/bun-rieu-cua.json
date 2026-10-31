@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -150,15 +150,35 @@
     }
   ],
   "recipe_steps": [
-    "Giã cua đồng, lọc lấy nước, nấu nhỏ lửa cho riêu cua đóng váng, vớt riêng.",
-    "Xào cà chua tạo màu, cho vào nước cua cùng đậu rán, huyết, nêm mắm tôm và giấm.",
-    "Trụng bún, chan nước riêu, thêm riêu cua, rắc hành phi, ăn kèm rau muống chẻ, bắp chuối, kinh giới."
+    "Sơ chế cua: cua đồng rửa sạch, tách mai lấy gạch để riêng, bỏ yếm; thân cua giã nhuyễn với chút muối (hoặc xay), hòa ~1,5 lít nước, lọc qua rây 2–3 lần lấy nước cua, bỏ bã.",
+    "Nấu riêu: đun nước cua lửa vừa, khuấy nhẹ lúc đầu rồi để yên; khi riêu nổi thành tảng và nước sôi lăn tăn (khoảng 8–10 phút) thì vớt tảng riêu ra — không để sôi bùng vì riêu sẽ vỡ vụn.",
+    "Làm chả riêu: trộn tảng riêu với gạch cua, thịt xay và giò sống (thêm tôm khô/mực khô ngâm mềm xay nhuyễn nếu có), nêm tiêu; hấp cách thủy 15–20 phút đến khi chả đông chắc, hoặc thả từng muỗng vào nước dùng nấu chín.",
+    "Tạo màu: phi hành tím, cho cà chua cắt múi cau vào xào lửa vừa 3–4 phút đến khi cà mềm và ra màu đỏ cam; trút vào nồi nước cua.",
+    "Hoàn thiện nước dùng: cho đậu phụ chiên và huyết luộc cắt miếng vào nồi; nêm muối, đường và mắm tôm (hòa mắm tôm với chút nước dùng nóng, để lặng, gạn lấy phần nước trong cho vào); nước dùng đạt khi trong, thơm mùi riêu, không còn tanh gạch.",
+    "Sơ chế rau ăn kèm: rau muống chẻ ngâm nước cho cong giòn, bắp chuối bào ngâm nước chanh loãng chống thâm, kinh giới và tía tô rửa sạch để ráo.",
+    "Trình bày: trụng bún cho vào tô, xếp chả riêu, đậu, huyết lên trên, chan nước dùng nóng, rắc hành lá và hành phi; ăn kèm rau sống, thêm giấm tỏi ớt theo khẩu vị."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-nau-bun-rieu-cua-dong-ngon-tuyet-de-lam-tai-nha-00980",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH (4 người): cua đồng xay 1kg, bún 400g, giò sống 100g, huyết 200g, đậu hũ 150g, cà chua 500g, tôm khô 50g, mực khô 30g, mắm tôm 20g; lọc cua với ~3,5 lít nước, tảng riêu vớt ra trộn giò sống + tôm mực xay."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/8385607",
+      "accessed": "2026-10-31",
+      "note": "Cookpad (Van Tinh, 6 người): cua đồng 500g, thịt xay 100g, trứng gà 2 quả, tôm khô 50g, sườn non 500g, bún 1kg, đậu hũ 3 miếng, cà chua 4 quả, mắm tôm 50ml; riêu cua trộn thịt + trứng, chưng cách thủy."
+    },
+    {
+      "url": "https://amthucquan.net/cach-nau-bun-rieu-cua.html",
+      "accessed": "2026-10-31",
+      "note": "Ẩm Thực Quán: cua đồng 500g, xương ống 300g, đậu phụ 3 bìa, cà chua 300g, dọc mùng, giò tai; lọc cua 3 lần nước, nấu lửa vừa không để sôi mạnh để tảng riêu không vỡ."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. Nâng Mức 2 đợt 2 (2026-10-31): đã mở kiểm chứng 3 nguồn (Điện Máy XANH, Cookpad, Ẩm Thực Quán). Phân xử định lượng: GIỮ NGUYÊN toàn bộ — cua đồng là dòng tranh cãi nhất: Điện Máy XANH 250g/người (mẻ cua xay 1kg/4 người) bất đồng >30% với Cookpad ~83g/người (500g/6 người), theo quy tắc bất đồng giữ số file 80g (khớp Cookpad); cà chua file 60g nằm giữa hai nguồn (50g Cookpad, 125g Điện Máy XANH); mắm tôm file 5g khớp Điện Máy XANH quy đổi. BẤT THƯỜNG ghi nhận: cả Điện Máy XANH và Cookpad đều có tôm khô + mực khô ngâm xay và trứng gà trong chả riêu, hai nguồn còn hầm thêm sườn/xương ống lấy nước — file không có các dòng này; ghi nhận cho pha phân xử nguyên liệu, không tự thêm dòng.",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

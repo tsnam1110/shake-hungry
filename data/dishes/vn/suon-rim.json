@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "kho",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -82,15 +82,35 @@
     }
   ],
   "recipe_steps": [
-    "Sườn chặt miếng vừa ăn, chần nhanh qua nước sôi, để ráo.",
-    "Thắng đường với dầu cho vàng cánh gián, phi hành tỏi, cho sườn vào đảo săn.",
-    "Thêm nước mắm và ít nước, rim lửa nhỏ 15 phút tới khi nước keo bóng. Món mặn nhanh: tổng thời gian nấu ~30 phút, nguyên liệu phổ thông."
+    "Sườn chặt miếng vừa ăn, chần trong nước sôi khoảng 2–3 phút để ra bọt bẩn, vớt ra rửa sạch lại và để thật ráo.",
+    "Ướp sườn với hành tím và tỏi băm, nước mắm, một phần đường thốt nốt và tiêu trong khoảng 30 phút cho thấm.",
+    "Thắng phần đường thốt nốt còn lại với dầu trên lửa nhỏ tới khi đường tan và chuyển màu cánh gián nhạt; canh sát tay, thấy màu vừa tới là giảm lửa ngay để không cháy đắng.",
+    "Cho hành tỏi vào nước màu phi thơm, thả sườn đã ướp vào đảo trên lửa vừa tới khi thịt săn lại và bám màu đều các mặt.",
+    "Châm thêm ít nước xâm xấp mặt sườn, đun sôi rồi hạ lửa nhỏ, rim đậy nắp khoảng 20–30 phút tới khi sườn mềm.",
+    "Mở nắp, tiếp tục rim và đảo đều tay cho nước rút dần, sánh lại và bám thành lớp bóng quanh miếng sườn; giai đoạn này nước cạn nhanh nên không rời bếp.",
+    "Nêm lại vị mặn ngọt lần cuối rồi tắt bếp khi sườn mềm, màu nâu cánh gián, sốt keo nhẹ mà chưa khô quánh. Dùng nóng với cơm."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/2-cach-lam-suon-rim-mat-ong-va-chua-ngot-don-gian-ngon-kho-04852?srsltid=AfmBOorbNhZGFAcMi2TjnAGdDwqjrcxJa262zuI2oHVtGuj4RBWftpSk",
+      "accessed": "2026-10-31",
+      "note": "Điện máy XANH: sườn rim mật ong — sườn heo 500 g, hành tím 10 g, tỏi 10 g cho 4 người; sườn rim chua ngọt — sườn non 700 g cho 4 người (175 g/khẩu phần); chần sườn, ướp 15–30 phút, rim lửa nhỏ tới khi sốt sánh kẹo"
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/6352908",
+      "accessed": "2026-10-31",
+      "note": "Cookpad (Lê Thanh Tú): sườn non 500 g, ướp nước màu 1 muỗng canh, đường 1 muỗng canh, nước mắm 2 muỗng canh, tỏi 2 tép trong 30 phút–1 giờ (không ghi khẩu phần); chiên sơ sườn rồi nấu tới khi nước hơi sệt"
+    },
+    {
+      "url": "https://www.vietnam.vn/cuoi-tuan-lam-suon-non-rim-mam-toi-mieng-suon-ong-vang-dam-vi-hao-com",
+      "accessed": "2026-10-31",
+      "note": "Vietnam.vn (sườn rim mắm tỏi): sườn non 600 g, tỏi 4–5 tép, nước mắm 2 muỗng canh, đường 1–1,5 muỗng canh, dầu ăn 1 muỗng canh cho 3–4 người (150–200 g sườn/khẩu phần); chần 2–3 phút, áp chảo vàng nhẹ, rim nhỏ lửa 15–25 phút"
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nâng Mức 2 đợt 2 (2026-10-31): Đã đối chiếu 3 nguồn thật mở kiểm chứng (Điện máy XANH — sườn rim mật ong và chua ngọt; Cookpad Lê Thanh Tú; Vietnam.vn — sườn rim mắm tỏi). Phân xử định lượng: giữ nguyên mọi dòng — sườn 180 g nằm trong khoảng quy đổi của nguồn (ĐMX bản chua ngọt 700 g/4 người = 175 g; Vietnam.vn 600 g cho 3–4 người = 150–200 g/khẩu phần; ĐMX bản mật ong và Cookpad 500 g/mẻ, khoảng 125 g/khẩu phần) nên nguồn dao động >30%, không sửa; nước mắm 10 g so với quy đổi khoảng 8 g/khẩu phần chỉ lệch khoảng 25%; đường thốt nốt 10 g giữ nguyên vì gồm cả phần thắng nước màu, trong khi nguồn dao động lớn (Cookpad Lê Thanh Tú khoảng 4 g/khẩu phần chưa kể nước màu, nguồn khác thay đường bằng mật ong). Bất thường ghi nhận: hai biến thể ở ĐMX (rim mật ong; rim chua ngọt có trứng, bột bắp, tương cà) khác hẳn bản mặn ngọt gốc — chỉ dùng đối chiếu tỉ lệ sườn và kỹ thuật rim, không đưa nguyên liệu biến thể vào món; cả ba nguồn đều ướp sườn 15–60 phút trước khi rim trong khi bản cũ không có bước ướp — bước nấu đã bổ sung ướp bằng chính các gia vị sẵn có của file.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -2,7 +2,7 @@
   "slug": "banh-da-cua",
   "parent_dish_slug": null,
   "country_code": "VN",
-  "region_code": "vn-hai-phong",
+  "region_code": "vn-north",
   "names": [
     {
       "locale": "vi",
@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -34,7 +34,7 @@
   "ingredients": [
     {
       "ingredient_slug": "banh-da-do",
-      "quantity": 50,
+      "quantity": 90,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -114,15 +114,34 @@
     }
   ],
   "recipe_steps": [
-    "Giã cua đồng, lọc lấy nước, nấu sôi vớt gạch cua.",
-    "Vo thịt xay với lá lốt làm chả, chiên vàng; chả cá chiên sơ.",
-    "Trụng bánh đa và rau muống, xếp chả, chan nước cua với cà chua, rắc hành phi."
+    "Sơ chế cua: cua đồng xóc với muối hạt, rửa sạch nhiều lần, tách mai và khều gạch để riêng; thân cua giã hoặc xay với một ít muối, lọc 2-3 lần lấy nước cua, bỏ bã.",
+    "Làm chả lá lốt: thịt xay ướp hành khô, tiêu và nước mắm khoảng 15 phút, trộn lá lốt thái nhỏ, gói phần thịt vào lá lốt nguyên, rán lửa vừa cho chả chín và vàng đều các mặt.",
+    "Nấu nước cua ở lửa vừa, khuấy nhẹ một chiều đến khi thịt cua bắt đầu đóng tảng thì ngừng khuấy, hạ lửa nhỏ, vớt tảng cua ra bát riêng; nêm nước cua với nước mắm, muối và vị chua nhẹ vừa miệng.",
+    "Phi hành khô cho vàng giòn; dùng mỡ hành chưng gạch cua với cà chua băm đến khi gạch quánh lại và lên màu; chả cá rán vàng, thái miếng; rau muống chần chín tới rồi ngâm nước lạnh cho xanh và giòn.",
+    "Ngâm bánh đa đỏ khô trong nước lạnh khoảng 5 phút cho hơi mềm, trụng qua nước sôi khoảng 20 giây đến 2 phút cho sợi vừa mềm, cho vào tô.",
+    "Xếp chả lá lốt, chả cá, rau muống, tảng cua và gạch cua chưng lên trên, rắc hành phi, chan nước cua nóng, dùng ngay kèm rau sống và tương ớt."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-nau-banh-da-cua-ngon-dung-chuan-vi-hai-phong-01617",
+      "accessed": "2026-10-31",
+      "note": "Điện máy XANH, cho 4 người: bánh đa đỏ 400g, cua đồng xay 400g, sườn 300g, thịt lợn xay 150g, chả cá/mỡ phần/tôm khô gộp 100g, cà chua 6 quả, lá lốt 10g; lọc cua nấu cho đóng tảng, chả lá lốt rán, trụng bánh đa khoảng 2 phút ở nồi nước riêng."
+    },
+    {
+      "url": "https://vnexpress.net/doi-song-cooking-banh-da-cua-hai-phong-4574829.html",
+      "accessed": "2026-10-31",
+      "note": "VnExpress (tác giả Bùi Thủy), cho 4-6 người: cua đồng 800g, thịt vai xay 400g, tôm tươi 400g, chả cá 300g, mỡ phần 150g, cà chua 1 quả để chưng gạch; bí quyết canh nhiệt khi nấu nước cua để thịt cua đóng tảng, chưng gạch cua với cà chua băm."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/15438804",
+      "accessed": "2026-10-31",
+      "note": "Cookpad (Pham Huyen): cua xay 500g, bánh đa đỏ 500g, sườn thăn 300g, thịt nạc dăm xay 300g, chả cá 300g, tôm 300g, cà chua 5 quả; ninh sườn 20 phút rồi trộn nước sườn vào nước cua, chả lá lốt rán chín, tôm hấp rồi rim hai lần."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu).",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu). Nâng Mức 2 đợt 2 (2026-10-31): Đã đối chiếu 3 nguồn công thức thật đã mở kiểm chứng (Điện máy XANH, VnExpress, Cookpad). Sửa định lượng 1 dòng: banh-da-do 50 g → 90 g — Điện máy XANH ghi rõ 400 g bánh đa KHÔ cho 4 người (100 g/người), Cookpad dùng 500 g cho mẻ gia đình (quy đổi khoảng 83-100 g/người); số cũ thấp hơn cả hai nguồn hơn 30%. Các dòng còn lại giữ nguyên vì nguồn bất đồng lớn: cua đồng 80 g (Điện máy XANH 100 g/người; VnExpress 133-200 g/người; Cookpad khoảng 83-125 g/người — khoảng quá rộng), thịt xay 30 g (Điện máy XANH 37,5 g/người gần file; VnExpress và Cookpad 60-100 g/người), chả cá 30 g (khoảng nguồn 25-75 g/người), cà chua 40 g (VnExpress chỉ dùng 1 quả cho cả mẻ để chưng gạch, Điện máy XANH dùng tới 6 quả cho 4 người). Bất thường: cả 3 nguồn đều ninh sườn lấy nước dùng trộn vào nước cua và có tóp mỡ/mỡ phần, 2/3 nguồn có thêm tôm và me chua — file không có các dòng này (file dùng nước cua thuần); ghi nhận chờ phân xử, không thêm dòng. Phân loại (vn-hai-phong, nau) đúng, giữ nguyên.",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",
@@ -131,6 +150,7 @@
   "reviewed_at": "2026-10-31",
   "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này).",
   "tags": [
+    "dac-san:hai-phong",
     "loai:bun-pho-mi"
   ]
 }

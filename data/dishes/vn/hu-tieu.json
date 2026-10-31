@@ -2,7 +2,7 @@
   "slug": "hu-tieu",
   "parent_dish_slug": null,
   "country_code": "VN",
-  "region_code": "vn-tp-hcm",
+  "region_code": "vn-south",
   "names": [
     {
       "locale": "vi",
@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -70,7 +70,7 @@
     },
     {
       "ingredient_slug": "trung-cut",
-      "quantity": 12,
+      "quantity": 35,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -134,11 +134,31 @@
     }
   ],
   "recipe_steps": [
-    "Hầm xương nấu nước dùng trong, ngọt đường phèn.",
-    "Trụng sợi hủ tiếu.",
-    "Xếp thịt, tôm, gan, trứng cút, chan nước dùng."
+    "Hầm nước dùng: xương ống chần rửa sạch, hầm lửa nhỏ 1–1,5 giờ với củ cải trắng và hành tây cho ngọt trong; vớt xương, nêm đường phèn, muối và chút nước mắm — vị hủ tiếu Nam Vang ngọt thanh, hơi đậm hơn phở.",
+    "Sơ chế gan và tôm: gan lợn ngâm sữa tươi 30 phút cho hết tanh, luộc chín, thái lát mỏng; tôm luộc vừa đỏ vỏ, bóc vỏ chừa đuôi.",
+    "Luộc trứng cút: luộc 5 phút từ khi nước sôi, ngâm nước lạnh rồi bóc vỏ.",
+    "Luộc thịt và làm sốt thịt băm: thịt nạc luộc trong nước dùng đến chín, vớt ra thái lát; thịt băm xào với tỏi phi lửa lớn 3–4 phút, nêm nước mắm/xì dầu — sốt thịt băm là điểm khác biệt của hủ tiếu Nam Vang.",
+    "Trụng hủ tiếu: sợi hủ tiếu khô ngâm mềm (hoặc trụng trực tiếp) trong nước sôi 1–2 phút đến khi sợi trong và dai mềm; xả qua nước lạnh rồi trụng lại nhanh cho nóng, để ráo — sợi đạt khi dai, không bở.",
+    "Trụng rau: giá và cải cúc/xà lách trụng sơ trong nồi nước dùng hoặc để sống tùy khẩu vị.",
+    "Trình bày: cho hủ tiếu vào tô, xếp thịt lát, sốt thịt băm, tôm, gan, trứng cút; rắc hành lá, tỏi phi và tiêu; chan nước dùng sôi. Ăn kèm quẩy và tương ớt."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/amp/cach-nau-mon-hu-tieu-nam-vang-ngon-dung-dieu-nhu-ngoai-hang-00979",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH (hủ tiếu Nam Vang, 2 người): thịt băm làm sốt 200g, tôm 300g, trứng cút 15 quả, giò heo 800g; hầm xương 30 phút bằng nồi áp suất, thịt băm xào tỏi riêng làm sốt chan."
+    },
+    {
+      "url": "https://vnexpress.net/doi-song-cooking-hu-tieu-nam-vang-4605412.html",
+      "accessed": "2026-10-31",
+      "note": "VnExpress (Bùi Thủy, 4–6 người): thịt nạc thăn 300g, tôm 200g, tim lợn 200g, gan 150g, thịt xay 150g, trứng cút 20 quả, củ cải trắng 400g, tôm khô 50g; gan ngâm sữa 30 phút khử tanh."
+    },
+    {
+      "url": "https://cookpad.com/eng/recipes/12535992",
+      "accessed": "2026-10-31",
+      "note": "Cookpad (Hoàng Oanh, 4–5 phần): thịt thăn 200g, thịt xay 200g, gan 200g, tôm 300g, trứng cút 20 quả; nước dùng hầm xương + củ cải + hành tây, thịt băm xào tỏi."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": {
@@ -146,7 +166,7 @@
     "source": "wikidata",
     "queried_at": "2026-08-31"
   },
-  "import_note": "Nhập tự động từ Wikidata Q27909648 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/Hu-Tieu-Kho-2008.jpg Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Nhập tự động từ Wikidata Q27909648 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/Hu-Tieu-Kho-2008.jpg Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 2 (2026-10-31): đã mở kiểm chứng 3 nguồn (Điện Máy XANH, VnExpress, Cookpad). Phân xử định lượng: SỬA trung-cut 12 → 35g — VnExpress (20 quả/4–6 người) và Cookpad (20 quả/4–5 phần) đồng thuận ~4 quả/khẩu phần ≈ 32–40g, số file cũ (~1,5 quả) lệch >30% so với cả hai. Các dòng khác GIỮ NGUYÊN: thịt lát 40g nằm trong khoảng nguồn 44–60g/khẩu phần; tôm và gan các nguồn bất đồng nhau >30% (tôm 40–150g, gan 30–44g/khẩu phần — số file đang thấp hơn, ghi nhận) nên theo quy tắc giữ nguyên. BẤT THƯỜNG ghi nhận: cả 3 nguồn đều có THỊT BĂM/XAY xào tỏi (sốt thịt đặc trưng hủ tiếu Nam Vang) và 2/3 nguồn có tim lợn, tôm khô, củ cải trắng trong nước dùng — file thiếu các dòng này, ghi nhận cho pha phân xử nguyên liệu.",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",
@@ -155,6 +175,7 @@
   "reviewed_at": "2026-10-31",
   "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này).",
   "tags": [
+    "dac-san:tp-hcm",
     "loai:bun-pho-mi"
   ]
 }

@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -130,15 +130,35 @@
     }
   ],
   "recipe_steps": [
-    "Ngâm ốc cho nhả bẩn, luộc lấy thịt; đậu phụ chiên vàng; chuối xanh tước vỏ, ngâm nước chua cho khỏi thâm.",
-    "Xào thịt ba chỉ và thịt ốc với nghệ, mẻ.",
-    "Cho chuối và đậu vào nấu chín, nêm mắm tôm nếu thích, rắc lá lốt, tía tô."
+    "Ngâm ốc trong nước vo gạo thêm vài lát ớt khoảng 2–3 giờ cho nhả bùn đất, rửa sạch. Luộc ốc vừa chín, khêu lấy thịt, bỏ phần ruột đen, bóp với muối và giấm cho hết nhớt rồi rửa lại, để ráo.",
+    "Chuối xanh tước vỏ, cắt miếng vát vừa ăn, ngâm nước muối loãng cho khỏi thâm, luộc sơ cho bớt chát. Đậu phụ cắt miếng, chiên vàng. Thịt ba chỉ thái miếng mỏng.",
+    "Nghệ giã nhỏ lọc lấy nước; me chín dầm lọc lấy nước chua theo định lượng của file. Lá lốt, tía tô, hành rửa sạch, thái nhỏ.",
+    "Phi thơm hành với dầu, cho thịt ba chỉ vào đảo tới khi săn, thêm chuối xanh và nước nghệ vào xào cho chuối thấm màu và gia vị.",
+    "Châm nước luộc ốc đã lọc (hoặc nước lọc) xâm xấp mặt nguyên liệu, cho nước me vào, đun sôi rồi hạ lửa nhỏ om tới khi chuối mềm nhưng chưa nát.",
+    "Cho đậu phụ chiên vào nấu khoảng 5 phút cho thấm, sau đó cho thịt ốc vào, nấu sôi lại 2–3 phút — cho ốc vào sau để thịt ốc giữ độ giòn, không bị dai.",
+    "Nêm lại gia vị và mắm tôm (tuỳ chọn), thả lá lốt, tía tô và hành vào đảo đều rồi tắt bếp. Dùng nóng với cơm hoặc bún; món đạt khi ốc giòn, chuối bùi, nước om vàng và hơi sánh."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://giadinh.suckhoedoisong.vn/nhieu-nguoi-khong-duoc-an-oc-chuoi-dau-va-cach-nau-de-nhat-cho-mon-an-gay-thuong-nho-chuan-vi-bac-172221009164357879.htm",
+      "accessed": "2026-10-31",
+      "note": "Sức khỏe & Đời sống (Gia đình): ốc nhồi sống 1 kg (cân nguyên vỏ), thịt ba chỉ 200 g, chuối xanh 5–7 trái, đậu phụ 2–3 miếng, dấm bỗng 2 muôi hoặc 1/2 chén mẻ; ngâm nước vo gạo 3 giờ, ốc xào lửa to và cho vào nồi sau cùng"
+    },
+    {
+      "url": "https://laodong.vn/gia-dinh-hon-nhan/cach-lam-oc-om-chuoi-dau-dam-da-doi-vi-cho-bua-com-gia-dinh-1784436.ldo",
+      "accessed": "2026-10-31",
+      "note": "Lao Động: ốc nhồi/ốc bươu 500 g, thịt ba chỉ 150 g, chuối xanh 3 quả, đậu phụ 3 bìa, cà chua 2 quả, mẻ 1 muỗng canh, mắm tôm 1 muỗng canh; om tới khi chuối mềm chưa nát, đậu cho vào nấu thêm khoảng 5 phút"
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/9584229",
+      "accessed": "2026-10-31",
+      "note": "Cookpad (Trinh Ngọc): ruột ốc 0,5 kg, thịt ba chỉ 100 g, đậu phụ 2 bìa, chuối xanh 4 quả cho 4 phần ăn (ruột ốc 125 g/khẩu phần); chuối đun lửa nhỏ 15 phút rồi cho mẻ và đậu vào nấu thêm 5 phút"
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 2 (2026-10-31): Đã đối chiếu 3 nguồn thật mở kiểm chứng (Sức khỏe & Đời sống/Gia đình; Lao Động; Cookpad Trinh Ngọc). Phân xử định lượng: giữ nguyên mọi dòng — ốc giữ 150 g vì Cookpad ghi 0,5 kg ruột ốc/4 phần (125 g/khẩu phần, lệch dưới 30%) trong khi hai nguồn còn lại cân ốc nguyên vỏ (500 g–1 kg/mẻ, phần thịt quy đổi thấp hơn hẳn) nên khác cơ sở cân, không dùng để hạ số; thịt ba chỉ 50 g nằm gần quy đổi của SKĐS và Lao Động (≈60 g/khẩu phần) nhưng Cookpad chỉ 25 g/khẩu phần — nguồn bất đồng; chuối và đậu giữ nguyên vì quy đổi theo quả/bìa dao động lớn và 2/3 nguồn không ghi khẩu phần. Bất thường ghi nhận: 2/3 nguồn (SKĐS, Lao Động) đều có cà chua — file không có; nguồn tạo chua bằng mẻ hoặc dấm bỗng, file dùng me chín; SKĐS khuyên để mắm tôm riêng khi ăn thay vì nấu chung.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

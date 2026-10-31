@@ -25,7 +25,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "chien",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -125,15 +125,34 @@
     }
   ],
   "recipe_steps": [
-    "Để cơm nguội cho tơi hạt; chiên lạp xưởng và trứng rồi thái sợi.",
-    "Phi tỏi, rang cơm lửa lớn cùng đậu Hà Lan, cà rốt.",
-    "Nêm nước tương, cho trứng và lạp xưởng vào đảo đều, rắc hành lá và tiêu."
+    "Chuẩn bị cơm: dùng cơm nguội đã để lạnh, đánh tơi hạt; trộn cơm với một nửa phần trứng đã đánh tan để hạt cơm vàng đều khi rang. Lạp xưởng, cà rốt thái hạt lựu; đậu Hà Lan rửa sạch.",
+    "Chiên lạp xưởng ở lửa nhỏ 2-3 phút cho ra mỡ và săn cạnh, vớt ra để riêng; chần cà rốt và đậu Hà Lan trong nước sôi 2-4 phút, vớt ra để ráo.",
+    "Phi tỏi băm với ít dầu cho vàng thơm, cho cơm vào rang ở lửa lớn, đảo và xóc chảo liên tục 4-5 phút đến khi hạt cơm săn lại, tơi rời và hơi xém cạnh.",
+    "Cho lạp xưởng, cà rốt và đậu Hà Lan vào, đảo đều khoảng 2 phút; đẩy cơm sang một bên chảo, đổ phần trứng còn lại vào, đảo nhanh cho trứng chín thành miếng nhỏ rồi trộn đều với cơm.",
+    "Nêm nước tương, một ít đường và tiêu cho vừa miệng, đảo thêm khoảng 1 phút cho gia vị bám đều vào hạt cơm.",
+    "Rắc hành lá cắt nhỏ, tắt bếp, dọn cơm ra đĩa, dùng nóng, ăn kèm nước tương ớt nếu thích."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-com-rang-gion-thap-cam-vang-uom-thom-lung-don-gian-23250",
+      "accessed": "2026-10-31",
+      "note": "Điện máy XANH (cơm rang giòn thập cẩm), cho 2-3 người: cơm nguội 2 bát và cơm nguội phơi khô 1 bát, trứng 2 quả, lạp xưởng 50g, đậu que hoặc đậu Hà Lan 50g, cà rốt 30g, hành lá 10g; trộn cơm với trứng trước rồi rang lửa lớn đến khi hạt săn lại."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/16699845",
+      "accessed": "2026-10-31",
+      "note": "Cookpad (Hoàng Ngọc, cơm chiên Dương Châu), 2 phần ăn: cơm trắng 1,5 chén, rau củ cắt hạt lựu 1 chén (cà rốt, đậu Hà Lan, đậu cove, bắp ngọt), lạp xưởng 1 cây, trứng 2 quả; chiên lạp xưởng nhỏ lửa cho ra mỡ trước, trộn một nửa trứng vào cơm để hạt cơm vàng đều."
+    },
+    {
+      "url": "https://bepxua.vn/wprm_print/cach-lam-com-chien-duong-chau",
+      "accessed": "2026-10-31",
+      "note": "Bếp Xưa (cơm chiên Dương Châu): cơm trắng để ngăn mát qua đêm, lạp xưởng, chả lụa, cà rốt và đậu Hà Lan cắt hạt lựu, nước tương 2 muỗng canh, đường 1 muỗng cà phê, tỏi xay phi thơm; luộc rau củ 4 phút, rang cơm đến khi hạt khô, tơi và nổ lách tách."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 10 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).]",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 10 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).] Nâng Mức 2 đợt 2 (2026-10-31): Đã đối chiếu 3 nguồn công thức thật đã mở kiểm chứng (Điện máy XANH, Cookpad, Bếp Xưa). Định lượng: giữ nguyên toàn bộ — quy đổi mỗi khẩu phần: lạp xưởng 17-25 g ở hai nguồn định lượng so với 30 g của file chỉ chênh trong khoảng 20% ở mốc trên; trứng 1 quả/người khớp cả hai nguồn; cà rốt và đậu Hà Lan: Điện máy XANH ghi riêng cà rốt 10-15 g/người trong khi Cookpad ghi rau củ tổng khoảng 75 g/người, hai nguồn khác cơ sở nên bất đồng, giữ 25 g + 25 g của file; cơm 220 g nằm trong khoảng 1-1,5 bát/người. Dầu ăn: file đã bỏ dòng dau-an theo Phương án A/QA-002 (phần dầu hấp thụ do engine mô hình hoá) — giữ nguyên quy ước này. Bất thường: bản Dương Châu đầy đủ ở các nguồn còn có chả lụa (Bếp Xưa) và một số biến thể có tôm hoặc xá xíu — file là bản cơm rang thập cẩm cơ bản; ghi nhận chờ phân xử, không thêm dòng. Phân loại (chien) đúng, giữ nguyên.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

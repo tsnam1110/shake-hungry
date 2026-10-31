@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "kho",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -58,7 +58,7 @@
     },
     {
       "ingredient_slug": "ca-tim",
-      "quantity": 30,
+      "quantity": 50,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -98,11 +98,31 @@
     }
   ],
   "recipe_steps": [
-    "Lọc mắm lấy nước (bản gốc dùng mắm cá sặc/cá linh — tạm tính bằng mắm ruốc).",
-    "Kho với thịt, cá và rau củ.",
-    "Nêm đường thốt nốt."
+    "Sơ chế: thịt ba chỉ rửa sạch, cắt miếng vừa ăn; cá lóc cắt khúc, chà muối hoặc chanh rồi xả sạch; cà tím cắt khúc, ngâm nước muối loãng 5 phút chống thâm; khổ qua bỏ ruột, cắt miếng; sả đập dập và băm một phần.",
+    "Nấu mắm: cho mắm vào nồi với nước vừa ngập, đun sôi lửa nhỏ khoảng 10 phút tới khi thịt mắm rã ra, lọc qua rây bỏ xương, giữ lại nước cốt mắm.",
+    "Xào nền: phi tỏi và sả trong nồi cho thơm vàng, cho thịt ba chỉ vào xào lửa vừa tới khi thịt săn và xém nhẹ mặt.",
+    "Kho: đổ nước cốt mắm cùng nước cốt dừa vào nồi thịt, đun sôi, hớt bọt, hạ lửa nhỏ; nêm đường thốt nốt để cân vị mặn của mắm.",
+    "Cho cà tím và khổ qua vào kho khoảng 5 phút tới khi vừa mềm, còn giữ miếng, không để nát.",
+    "Cho cá lóc vào sau cùng, kho thêm 5–7 phút lửa nhỏ tới khi cá chín và thấm; hạn chế đảo mạnh để cá không vỡ, nêm nếm lại lần cuối.",
+    "Tắt bếp, múc ra tô, dọn nóng với cơm hoặc bún và rau sống ăn kèm (bông súng, rau đắng, bắp chuối bào) để chấm nước kho."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-mam-kho-chuan-vi-mien-tay-thom-ngon-don-gian-04555",
+      "accessed": "2026-10-31",
+      "note": "Điện máy XANH, 2 công thức: (1) mắm ruốc cho 3–4 người — mắm ruốc 3 muỗng canh hoà nước dừa 500ml rồi lọc, thịt ba chỉ 200g, cá basa 100g, tôm 200g, cà tím 1 trái, nấm rơm 100g; (2) mắm cá linh cho 2–3 người — mắm cá linh 100g nấu lọc bỏ xương, thịt ba chỉ 200g, cá basa 200g, tôm sú 300g, cà tím 1 trái — đây là nguồn khớp cách file dùng mắm ruốc đã lọc."
+    },
+    {
+      "url": "https://www.cet.edu.vn/cach-nau-mam-kho",
+      "accessed": "2026-10-31",
+      "note": "CET — Chef Lập: mẻ mắm cá linh/cá sặc 300g, thịt ba chỉ 200g, cá lóc ~700g, cà tím 1 trái, đậu bắp 200g; nấu mắm sôi cho rục rồi lược bỏ xương (có thể nấu 2–3 lần lấy nước), chiên sơ cá, xào thịt săn rồi mới kho chung — đối chiếu cấu trúc mẻ và kỹ thuật lọc mắm."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/16559719",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Huỳnh Phát, 5–6 người: mắm cá linh 150g + mắm cá sặc 150g, thịt ba chỉ 300g, cá hú 500g, cà tím 350g (2 trái), nước dừa xiêm 1 lít, sả băm 4 muỗng canh, đường 3 muỗng canh; lọc mắm bỏ xác, cho thịt vào trước, cà tím rồi cá vào sau — nguồn quy đổi khẩu phần rõ nhất (cà tím ~64g/người)."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": {
@@ -110,7 +130,7 @@
     "source": "wikidata",
     "queried_at": "2026-08-31"
   },
-  "import_note": "Nhập tự động từ Wikidata Q10796546 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Gợi ý nguyên liệu từ Wikidata (tiếng Anh, CHƯA ánh xạ sang data/ingredients/): prahok, snakehead paste. Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Nhập tự động từ Wikidata Q10796546 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Gợi ý nguyên liệu từ Wikidata (tiếng Anh, CHƯA ánh xạ sang data/ingredients/): prahok, snakehead paste. Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 2 (2026-10-31): Đối chiếu 3 nguồn công thức đã mở kiểm chứng (xem recipe_sources). Định lượng: sửa ca-tim 30→50g — Cookpad quy đổi ~64g/khẩu phần và ĐMX bản mắm cá linh (1 trái cho 2–3 người, trái ~175g theo Cookpad) ~60–70g/khẩu phần, cả hai đều cao hơn số cũ >30%; sau sửa, tổng rau nấu chín của file (cà tím 50 + khổ qua 20 = 70g) khớp khoảng rau/khẩu phần của nguồn. Các dòng khác giữ nguyên: thịt ba chỉ nguồn 55–80g/khẩu phần (file 40g chỉ thấp hơn mốc gần nhất ~27%, chưa quá ngưỡng 30%); cá nguồn bất đồng 29–91g/khẩu phần; mắm không cùng cơ sở so sánh — file dùng mắm ruốc đã lọc đúng theo bản mắm ruốc của ĐMX (3 muỗng canh/3–4 người), trong khi CET/Cookpad dùng mắm cá linh/sặc thô 40–55g/khẩu phần rồi lọc bỏ xác. Bất thường ghi nhận (chờ pha phân xử riêng): mọi nguồn đều có tôm (ĐMX cả hai bản; CET gợi ý thêm tép) và rau nấu kèm kiểu đậu bắp/nấm rơm — file không có dòng tôm/đậu bắp/nấm rơm; nguồn dùng nước dừa tươi 500ml–1 lít/mẻ, file dùng nuoc-cot-dua 20g (hai dạng loãng/đặc khác bản chất, không tự đổi dòng). Bước nấu viết lại 7 bước.",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

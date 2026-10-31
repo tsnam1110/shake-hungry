@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -66,15 +66,39 @@
     }
   ],
   "recipe_steps": [
-    "Bí đỏ gọt vỏ, cắt miếng; tôm bóc vỏ bỏ chỉ lưng.",
-    "Đun sôi nước, cho bí vào nấu gần mềm.",
-    "Thả tôm nấu vừa đỏ, nêm nước mắm, rắc hành lá."
+    "Sơ chế: bí đỏ gọt vỏ, bỏ ruột và hạt, rửa sạch, cắt miếng vuông 2-3 cm; tôm bóc vỏ, bỏ đầu, rút chỉ lưng, rửa sạch, đập dập nhẹ hoặc cắt đôi.",
+    "Ướp tôm với một ít hạt nêm hoặc nước mắm và tiêu khoảng 10 phút; hành lá và rau thơm rửa sạch, cắt nhỏ; tỏi hoặc hành băm sẵn.",
+    "Phi tỏi với ít dầu cho thơm, cho tôm vào xào lửa vừa 1-2 phút đến khi tôm săn lại và chuyển đỏ cam.",
+    "Đổ 1,2-1,5 lít nước vào nồi, đun sôi, hớt bọt; cho bí đỏ vào nấu ở lửa vừa.",
+    "Nấu 10-15 phút đến khi bí mềm nhưng còn nguyên miếng (dùng đũa xiên qua dễ dàng, miếng bí không nát), nêm nước mắm và muối vừa miệng.",
+    "Cho hành lá và rau thơm vào, tắt bếp, múc canh ra tô, rắc thêm tiêu, dùng nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://eva.vn/thuc-don-hang-ngay/6-cach-nau-canh-bi-do-voi-xuong-tom-thit-bam-thom-ngon-bo-duong-c348a520088.html",
+      "accessed": "2026-10-31",
+      "note": "Bếp Eva: bí đỏ 500g, tôm tươi 300g, tỏi, hành lá và mùi ta (mẻ gia đình, nước 1 lít); phi tỏi xào tôm qua, đổ nước, cho bí vào nấu, nêm nước mắm ở cuối."
+    },
+    {
+      "url": "https://yummyday.vn/canh-bi-do-nau-tom-324",
+      "accessed": "2026-10-31",
+      "note": "YummyDay: bí đỏ 500g, tôm tươi 200g, hành lá, ngò, tỏi; đảo tôm đến khi chuyển đỏ, đổ nước ngập mặt bí, nấu đến khi bí chín mềm."
+    },
+    {
+      "url": "https://giadinh.suckhoedoisong.vn/mon-ngon-cuoi-tuan-canh-bi-do-nau-tom-tuoi-1722009040303075761.htm",
+      "accessed": "2026-10-31",
+      "note": "Sức khỏe & Đời sống (Gia đình & Xã hội): bí đỏ 500g, tôm tươi 200g, rau om và hành lá, nước 1,5 lít; xào tôm chín, nấu sôi rồi thả bí khoảng 10 phút."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/9441437",
+      "accessed": "2026-10-31",
+      "note": "Cookpad (Nấu Nấu Nướng Nướng), 2 người: bí đỏ 200g, tôm to 6 con, nước lọc 300ml, nước mắm 1 thìa cà phê; phi tỏi xào tôm, nấu bí vừa chín tới, tránh nấu nhừ."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nâng Mức 2 đợt 2 (2026-10-31): Đã đối chiếu 4 nguồn công thức thật đã mở kiểm chứng (Bếp Eva, YummyDay, Sức khỏe & Đời sống, Cookpad). Định lượng: ba nguồn ghi mẻ bí đỏ 500 g và tôm 200-300 g; nguồn Cookpad ghi rõ theo khẩu phần 200 g bí cho 2 người (100 g/người) và tôm to 6 con cho 2 người (khoảng 45-60 g/người) — quy đổi chung cho khoảng bí 100-125 g và tôm 50-75 g mỗi khẩu phần, số của file (bí 120 g, tôm 50 g) nằm trong khoảng nên giữ nguyên toàn bộ. Thời gian nấu bí ở các nguồn dao động 10-20 phút; bước nấu lấy mốc bí vừa mềm, còn nguyên miếng. Bất thường: nhiều nguồn dùng thêm rau om/mùi tàu và tỏi — file chỉ có hành lá; thuộc nhóm rau thơm thay thế lẫn nhau, ghi nhận, không thêm dòng. Phân loại đã rà soát, giữ nguyên.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

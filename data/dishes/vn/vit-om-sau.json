@@ -2,7 +2,7 @@
   "slug": "vit-om-sau",
   "parent_dish_slug": null,
   "country_code": "VN",
-  "region_code": "vn-ha-noi",
+  "region_code": "vn-north",
   "names": [
     {
       "locale": "vi",
@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "kho",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -122,15 +122,35 @@
     }
   ],
   "recipe_steps": [
-    "Chặt vịt miếng vừa ăn, ướp nước mắm, hành tỏi, tiêu; xào săn với dầu.",
-    "Cho nước xâm xấp, thả sấu và khoai môn vào om lửa nhỏ đến khi vịt mềm, dầm sấu lấy vị chua.",
-    "Cho rau muống và nấm hương vào nấu chín tới, nêm lại vị chua mặn hài hoà."
+    "Khử mùi hôi của vịt: chà muối hạt và chanh (hoặc gừng, rượu) khắp thân vịt, rửa sạch nhiều lần, để ráo, bỏ phao câu rồi chặt miếng vừa ăn.",
+    "Sấu cạo vỏ, khía nhẹ quanh quả; hành tím, tỏi, sả, gừng băm hoặc thái lát; khoai môn gọt vỏ, cắt miếng vừa ăn, ngâm nước muối loãng cho khỏi thâm và bớt ngứa.",
+    "Ướp vịt với nước mắm, tiêu và một nửa lượng hành, tỏi, sả, gừng trong khoảng 30 phút cho thấm.",
+    "Phi thơm phần hành, tỏi, sả, gừng còn lại với dầu, cho vịt vào xào trên lửa vừa tới khi thịt săn lại và dậy mùi thơm.",
+    "Châm nước ngập mặt thịt, thả sấu vào, đun sôi rồi hạ lửa nhỏ om khoảng 25–30 phút tới khi vịt mềm.",
+    "Cho khoai môn vào om tiếp 10–15 phút tới khi khoai chín mềm nhưng chưa nát; cho nấm hương đã ngâm nở vào nấu chín tới.",
+    "Dầm sấu từ từ tới khi nước đạt độ chua vừa ý thì vớt bỏ xác sấu, nêm lại gia vị; nhúng rau muống cho vừa chín, rắc rau thơm và dùng nóng với bún hoặc cơm. Món đạt khi thịt mềm không dai, nước chua thanh, khoai giữ nguyên miếng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-nau-vit-om-sau-dac-san-ha-noi-00571",
+      "accessed": "2026-10-31",
+      "note": "Điện máy XANH: vịt làm sạch 1 con 1,5–1,7 kg, sấu xanh 7 quả, sả 5 cây cho 4 người; khử hôi bằng muối-chanh, ướp 30 phút, om tới khi vịt mềm (bản này không có khoai)"
+    },
+    {
+      "url": "https://vietnamnet.vn/cach-lam-lau-vit-om-sau-thom-ngon-don-gian-tai-nha-2304585.html",
+      "accessed": "2026-10-31",
+      "note": "VietNamNet (bản lẩu): vịt 1 con khoảng 1,3 kg, sấu 8 quả, khoai sọ 500 g, nấm hương 100 g, rau muống và rau thơm 500 g; ướp 30 phút, xào săn rồi om, dầm sấu lấy vị chua"
+    },
+    {
+      "url": "https://danviet.vn/cach-lam-vit-om-sau-chuan-vi-cho-bua-com-chieu-he-7777782853.htm",
+      "accessed": "2026-10-31",
+      "note": "Dân Việt: vịt 1 con, sấu xanh 10 quả, khoai sọ 0,5 kg, hành khô 5 củ, sả 5 củ; ướp 30 phút, om ngập nước, cho khoai vào khi vịt hơi mềm, dầm sấu từ từ tới độ chua vừa ý"
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 2 (2026-10-31): Đã đối chiếu 3 nguồn thật mở kiểm chứng (Điện máy XANH; VietNamNet — bản lẩu vịt om sấu; Dân Việt). Phân xử định lượng: giữ nguyên mọi dòng — thịt vịt 180 g: nguồn cân vịt nguyên con 1,3–1,7 kg/4 người (325–425 g/khẩu phần gồm xương và da), quy về phần thịt ăn được trong suất thì khớp khoảng 180–210 g của file; sấu 30 g khớp ĐMX 7 quả/4 người (≈1,75 quả/khẩu phần); khoai giữ 60 g và không đổi theo nguồn vì nguồn dùng khoai sọ (500 g cho 1 mẻ vịt) — khác nguyên liệu với khoai môn của file, chờ phân xử riêng. Bất thường ghi nhận: cả 3 nguồn đều có sả và gừng, 2/3 nguồn có rau ngổ và mùi tàu — file không có các dòng này; nguồn dùng khoai sọ thay cho khoai môn như đã nêu.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
@@ -139,6 +159,7 @@
   "reviewed_at": "2026-10-31",
   "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này).",
   "tags": [
+    "dac-san:ha-noi",
     "loai:mon-chinh"
   ]
 }

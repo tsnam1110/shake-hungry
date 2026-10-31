@@ -2,7 +2,7 @@
   "slug": "mi-van-than",
   "parent_dish_slug": null,
   "country_code": "VN",
-  "region_code": "vn-ha-noi",
+  "region_code": "vn-north",
   "names": [
     {
       "locale": "vi",
@@ -25,7 +25,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -133,15 +133,34 @@
     }
   ],
   "recipe_steps": [
-    "Nhân hoành thánh: thịt xay trộn tôm băm, gói trong vỏ hoành thánh, luộc chín.",
-    "Nấu nước dùng xương, nêm muối, nước tương; thịt nạc vai làm xá xíu thái lát.",
-    "Trụng mì và cải ngọt, bày tô với hoành thánh, xá xíu, tôm, chan nước dùng, rắc hành lá, tiêu."
+    "Ninh nước dùng: xương heo chần bỏ nước đầu, ninh lửa nhỏ 1,5-2 giờ cùng tôm khô và mực khô đã nướng thơm (cho vào túi vải), hành nướng và củ cải; hớt bọt thường xuyên, nêm muối và nước tương cho vị thanh.",
+    "Làm nhân hoành thánh: trộn thịt xay với tôm băm, hành và tỏi băm, nước tương, tiêu và một ít dầu mè; quết đều tay cho nhân dẻo, bọc kín để lạnh khoảng 15 phút.",
+    "Gói hoành thánh: đặt một ít nhân vào giữa vỏ, gấp mép lại, thấm chút nước để dán kín; xếp lên khay có rắc bột áo để các viên không dính nhau.",
+    "Chuẩn bị topping: thịt nạc vai ướp gia vị xá xíu rồi rim hoặc nướng đến khi chín và vàng cạnh, thái lát mỏng; tôm luộc vừa đỏ, bóc vỏ; cải ngọt chần chín tới.",
+    "Luộc hoành thánh ở nồi nước sôi riêng đến khi viên nổi lên và vỏ trở trong (thêm 1-2 phút), vớt ra; trụng mì trứng 1-2 phút cho sợi vừa chín, xả nhanh, để ráo.",
+    "Cho mì vào tô, xếp hoành thánh, thịt xá xíu, tôm và cải ngọt lên trên, rắc hành lá và tiêu, chan nước dùng đang sôi, dùng ngay."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-nau-mi-van-than-chuan-vi-pho-co-ha-noi-voi-nuoc-dung-23323",
+      "accessed": "2026-10-31",
+      "note": "Điện máy XANH (mì vằn thắn phố cổ Hà Nội), cho 6-8 người: mì trứng tươi 400g, tôm tươi 200g, thịt xá xíu 300g, sủi cảo 15-20 viên, gan heo 150g, trứng gà 3 quả, bóng bì và nấm hương; ninh xương nhiều giờ rồi nấu thêm 1 giờ với tôm khô, mực khô nướng và sá sùng."
+    },
+    {
+      "url": "https://www.huongnghiepaau.com/mi-hoanh-thanh",
+      "accessed": "2026-10-31",
+      "note": "Hướng Nghiệp Á Âu (mì hoành thánh): nhân hoành thánh gồm thịt xay 300g và tôm băm 200g (mẻ lớn, nước dùng 4 lít ninh từ 5kg xương); tôm khô và khô mực nướng thơm, cho túi vải ninh cùng xương 1,5 giờ; hoành thánh luộc đến khi nổi rồi luộc tiếp 3-4 phút, mì trụng 1-2 phút."
+    },
+    {
+      "url": "https://lofita.vn/vi/mi-van-than-sui-cao.html",
+      "accessed": "2026-10-31",
+      "note": "Lofita (mì vằn thắn sủi cảo), khoảng 8 bát: mì tươi 500g, thịt xá xíu làm từ 200g thịt nạc vai, nhân sủi cảo gồm thịt xay 200g, giò sống 200g và tôm 200g gói trong 50 vỏ hoành thánh, tôm tươi ăn kèm 200g, rau xanh 200g; nước dùng xương và tôm khô ninh 1,5-2 giờ."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 2 (2026-10-31): Đã đối chiếu 3 nguồn công thức thật đã mở kiểm chứng (Điện máy XANH, Hướng Nghiệp Á Âu, Lofita). Định lượng: giữ nguyên toàn bộ vì cơ sở quy đổi giữa các nguồn không thống nhất — nguồn ghi mì TƯƠI 50-67 g/bát trong khi dòng của file là mì trứng KHÔ 80 g (hai cơ sở trọng lượng khác nhau, không quy đổi chắc chắn); các dòng còn lại khớp khoảng nguồn: nhân hoành thánh quy đổi khoảng 70-75 g/bát so với tổng thịt xay + tôm 70 g của file, tôm ăn kèm 25-33 g/người so với 30 g của file, thịt xá xíu 25-50 g/người bao phủ dòng thịt nạc vai 30 g. Bất thường: bản phố cổ đầy đủ ở cả 3 nguồn còn có gan heo, bóng bì, trứng luộc, nấm hương và lá hẹ — file là bản rút gọn (dùng cải ngọt và hành lá); ghi nhận chờ phân xử, không thêm dòng. Phân loại đã rà soát, giữ nguyên.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
@@ -150,6 +169,7 @@
   "reviewed_at": "2026-10-31",
   "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này).",
   "tags": [
+    "dac-san:ha-noi",
     "loai:bun-pho-mi"
   ]
 }

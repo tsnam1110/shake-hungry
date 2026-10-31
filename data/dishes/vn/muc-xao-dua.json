@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "xao",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -90,15 +90,34 @@
     }
   ],
   "recipe_steps": [
-    "Mực khía hoa, cắt miếng; dứa cắt miếng vừa ăn; cần tây cắt khúc.",
-    "Phi tỏi, xào mực lửa lớn thật nhanh cho săn, trút ra.",
-    "Xào dứa và cần tây, cho mực vào đảo đều, nêm nước mắm, tiêu. Món mặn nhanh: tổng thời gian nấu ~15 phút, nguyên liệu phổ thông."
+    "Sơ chế mực: rút đầu, bỏ túi mực, nội tạng và xương sống, rửa sạch, khía vảy rồng hoặc cắt khoanh vừa ăn, để thật ráo nước.",
+    "Đun sôi nồi nước với vài lát gừng, chần mực 30 giây rồi vớt ra ngay để ráo — mực săn lại, bớt tanh và khi xào không ra nước.",
+    "Dứa gọt vỏ, bỏ mắt và cùi, cắt miếng dày khoảng 1 cm; cần tây cắt khúc 3 cm; tỏi bóc vỏ, băm nhỏ.",
+    "Ướp mực với nước mắm và tiêu khoảng 10–15 phút cho thấm.",
+    "Bắc chảo lửa lớn, phi tỏi với dầu cho thơm, cho mực vào đảo nhanh 2–3 phút đến khi mực cong, săn và chuyển đục thì trút ra đĩa — không xào lâu, mực sẽ dai.",
+    "Vẫn chảo đó, cho dứa và cần tây vào xào khoảng 2 phút cho dứa hơi trong, cho mực trở lại đảo đều 1 phút, nêm lại vừa ăn, rắc tiêu, tắt bếp và ăn nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-muc-xao-dua-thom-thom-ngon-hap-dan-dua-com-cho-ca-12107?srsltid=AfmBOopvg8Bbbiya4GoNw8uH4F4rzpiOgiuy3ac9HrYLgA0_mJ74eAXW",
+      "accessed": "2026-10-31",
+      "note": "Điện máy XANH: mực ống 500 g + dứa 1/4 quả cho 4 người; ướp mực 15 phút, xào mực 2 phút rồi cho dứa/hành tây vào đảo ~10 phút"
+    },
+    {
+      "url": "https://www.thatlangon.com/cong-thuc/cach-lam-muc-xao-dua/",
+      "accessed": "2026-10-31",
+      "note": "Thật Là Ngon: mực ống 300 g + dứa 100 g + cần tây 2 cây cho 3 người; chần mực nước gừng 30 giây, xào mực riêng rồi đảo chung với rau củ 1 phút"
+    },
+    {
+      "url": "https://www.bachhoaxanh.com/kinh-nghiem-hay/12-cach-xao-muc-ngon-chua-cay-thap-cam-don-gian-tai-nha-1420518",
+      "accessed": "2026-10-31",
+      "note": "Bách hóa XANH (mục mực xào dứa): mực 500 g + dứa 1/4 quả; ướp 15 phút, xào mực săn ~2 phút rồi cho dứa và hành tây vào"
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nâng Mức 2 đợt 2 (2026-10-31): đã mở kiểm chứng 3 nguồn (Điện máy XANH 500 g mực/4 người; Thật Là Ngon 300 g mực + 100 g dứa/3 người; Bách hóa XANH 500 g mực/mẻ). Phân xử định lượng: mực quy đổi 100–125 g/khẩu phần, số file 130 g nằm trong ngưỡng 30% nên giữ nguyên; dứa các nguồn bất đồng nhau >30% (Thật Là Ngon ~33 g/khẩu phần so với ~50 g/khẩu phần ở hai nguồn dùng 1/4 quả/mẻ 4 người) nên giữ nguyên 80 g theo quy tắc nguồn bất đồng; cần tây ~27 g/khẩu phần ở Thật Là Ngon, khớp số file 30 g. Bất thường ghi nhận (không tự thêm dòng, chờ pha phân xử riêng): cả 3 nguồn đều có hành tây (1 củ/mẻ) mà file không có dòng hành tây; hai nguồn ĐMX/BHX cũng không dùng cần tây, chỉ Thật Là Ngon dùng cần tây như file.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

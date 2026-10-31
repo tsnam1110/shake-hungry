@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "kho",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -98,15 +98,35 @@
     }
   ],
   "recipe_steps": [
-    "Đậu phụ cắt khối, khoét ruột; thịt xay trộn mộc nhĩ, hành tím, nước mắm, nhồi vào đậu.",
-    "Áp chảo đậu đã nhồi cho săn mặt (dầu chỉ dùng bước áp chảo nhẹ này), gắp ra.",
-    "Xào cà chua thành sốt, xếp đậu vào nấu 8 phút cho thấm, rắc hành lá. Món mặn nhanh: tổng thời gian nấu ~30 phút, nguyên liệu phổ thông."
+    "Mộc nhĩ ngâm nước cho nở, rửa sạch, băm nhỏ. Hành tím băm nhỏ. Trộn thịt xay với mộc nhĩ, hành tím, nước mắm và tiêu, để ướp khoảng 15 phút.",
+    "Đậu phụ cắt thành khối vuông khoảng 4 cm, dùng dao hoặc thìa khoét nhẹ phần ruột ở giữa miếng đậu, thao tác nhẹ tay để miếng đậu không vỡ; phần ruột khoét ra có thể trộn chung vào nhân.",
+    "Nhồi nhân thịt vào đậu vừa đầy miệng, không nén quá chặt để khi chín thịt nở không tràn ra ngoài.",
+    "Áp chảo đậu đã nhồi với ít dầu trên lửa nhỏ-vừa tới khi các mặt vàng săn, mặt nhân chín và bám chắc vào đậu, gắp ra để riêng.",
+    "Cà chua rửa sạch, thái múi cau hoặc hạt lựu. Phi thơm hành tím với dầu, cho cà chua vào xào và dầm nhừ thành sốt, nêm nước mắm và chút đường.",
+    "Xếp đậu nhồi vào chảo sốt, thêm nước xâm xấp khoảng nửa miếng đậu, đun lửa nhỏ 8–10 phút, thỉnh thoảng trở nhẹ hoặc rưới sốt lên mặt đậu tới khi nhân chín hẳn và đậu thấm sốt.",
+    "Khi nước sốt sệt lại, nêm nếm lần cuối, rắc hành lá thái nhỏ rồi tắt bếp. Dùng nóng với cơm; món đạt khi đậu giữ nguyên miếng, nhân chín thơm, sốt đỏ sánh bám đều."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/835707",
+      "accessed": "2026-10-31",
+      "note": "Cookpad (Hoàng Ngọc): đậu hũ chiên 6 miếng, thịt nạc dăm 150 g, cà chua 2 trái (không ghi khẩu phần); xẻ đậu thành túi nhồi thịt, chiên sơ lại rồi om nhỏ lửa trong sốt cà tới khi sệt"
+    },
+    {
+      "url": "https://diendanmevabe.com/dau-phu-nhoi-thit-sot-ca-chua-mon-an-hap-dan-trong-bua-com-gia-dinh-viet/",
+      "accessed": "2026-10-31",
+      "note": "Diễn Đàn Mẹ và Bé: đậu phụ 5 bìa, thịt nạc băm 300 g, nấm hương 6 cái, cà chua 200 g (không ghi khẩu phần); nhân trộn nấm hương thay mộc nhĩ, rán đậu lửa nhỏ rồi sốt cà 5–10 phút"
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/11807272",
+      "accessed": "2026-10-31",
+      "note": "Cookpad (Nguyễn Ngọc Phương Thảo): đậu phụ 2 bìa to, thịt lợn xay 100 g, mộc nhĩ 2 tai, cà chua 3 quả cho 2 người (thịt 50 g/khẩu phần, kèm món bò xào và bắp cải luộc trong cùng bài); khoét lỗ vuông giữa miếng đậu, chiên vàng rồi đun trong sốt tới khi sệt"
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Đậu phụ ở đây áp chảo nhẹ trong sốt cà (không chiên ngập) — phân loại kho theo tiền lệ dau-phu-sot-ca; dòng dầu 5 g là dầu áp chảo/xào sốt ăn vào, không phải dầu chiên chính theo §12.",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Đậu phụ ở đây áp chảo nhẹ trong sốt cà (không chiên ngập) — phân loại kho theo tiền lệ dau-phu-sot-ca; dòng dầu 5 g là dầu áp chảo/xào sốt ăn vào, không phải dầu chiên chính theo §12. Nâng Mức 2 đợt 2 (2026-10-31): Đã đối chiếu 3 nguồn thật mở kiểm chứng (Cookpad Hoàng Ngọc; Diễn Đàn Mẹ và Bé; Cookpad Nguyễn Ngọc Phương Thảo). Phân xử định lượng: giữ nguyên mọi dòng — thịt xay 60 g nằm giữa các quy đổi (Cookpad Hoàng Ngọc 150 g/mẻ không ghi khẩu phần; Mẹ và Bé 300 g/mẻ; Cookpad Phương Thảo 100 g/2 người = 50 g/khẩu phần); cà chua giữ 80 g vì nguồn bất đồng mạnh (200 g cho cả mẻ ở Mẹ và Bé so với 3 quả/2 người, khoảng 150 g/khẩu phần, ở Cookpad Phương Thảo); đậu phụ 120 g nằm trong khoảng quy đổi theo bìa của cả ba nguồn; mộc nhĩ 3 g khớp Cookpad Phương Thảo (2 tai/2 người). Bất thường ghi nhận: Mẹ và Bé dùng nấm hương trong nhân thay cho mộc nhĩ; Cookpad Hoàng Ngọc dùng đậu hũ chiên sẵn xẻ thành túi để nhồi — file dùng đậu tươi khoét ruột rồi áp chảo, khác kỹ thuật nhưng cùng cấu trúc món.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

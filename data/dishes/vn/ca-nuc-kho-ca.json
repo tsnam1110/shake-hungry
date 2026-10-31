@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "kho",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -98,15 +98,34 @@
     }
   ],
   "recipe_steps": [
-    "Cá nục làm sạch, ướp nước mắm, tiêu 10 phút; cà chua bổ cau.",
-    "Phi hành tím, xào cà chua mềm thành sốt, xếp cá vào, thêm ít nước nóng.",
-    "Kho lửa nhỏ 12–15 phút cho cá thấm, nêm lại, thêm ớt. Món mặn nhanh: tổng thời gian nấu ~30 phút, nguyên liệu phổ thông."
+    "Sơ chế: cá nục bỏ mang và ruột, rửa với muối hoặc giấm cho hết tanh, cắt khúc vừa ăn, để ráo; ướp cá với ít muối, tiêu và nước mắm khoảng 10–15 phút; cà chua bổ cau, hành tím đập dập.",
+    "Chiên sơ cá: đun dầu nóng, cho cá vào chiên lửa vừa mỗi mặt khoảng 2 phút tới khi vàng nhẹ và săn mặt (không chiên giòn khô), gắp ra đĩa.",
+    "Làm sốt cà: phi hành tím trong chảo cho thơm, cho cà chua vào xào lửa vừa tới khi mềm nhừ, ra màu đỏ; nêm chút muối và đường để dịu vị chua.",
+    "Kho: xếp cá đã chiên vào chảo sốt, thêm nước mắm, đường và ít nước nóng xâm xấp mặt cá; đun sôi rồi hạ lửa nhỏ.",
+    "Kho 12–15 phút tới khi nước sốt sệt lại và cá thấm vị; giữa chừng trở cá một lần thật nhẹ tay, nêm nếm lại, cho ớt vào ở cuối.",
+    "Rắc tiêu (và hành lá nếu dùng), tắt bếp; dọn cá nóng với cơm trắng, giữ lại ít sốt chan lên cá."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://bepxua.vn/cach-lam-ca-nuc-kho-ca-chua-ngon-dung-dieu/",
+      "accessed": "2026-10-31",
+      "note": "BepXua — phần ăn 4 người: cá nục 500g, cà chua 300g, hành tím 30g, nước mắm 5 muỗng canh, đường ½ muỗng canh; cá rửa muối giấm, chiên vừa vàng hai mặt rồi kho cùng cà chua đã xào mềm với 250ml nước tới khi sệt — nguồn quy đổi khẩu phần trực tiếp (cá 125g, cà chua 75g/người)."
+    },
+    {
+      "url": "https://casach.vn/news/bi-quyet-nau-ca-nuc-kho-ca-chua-thom-ngon/",
+      "accessed": "2026-10-31",
+      "note": "Cá Sạch (CK Frozen): mẻ cá nục 500g, cà chua 4–5 trái, hành củ 1 củ, ớt 1–2 trái, thêm nhánh gừng nhỏ và hành lá; chiên cá vàng trước, phi hành rồi cho cà chua và cá vào kho lửa nhỏ 10–20 phút — đối chiếu tỉ lệ cá:cà chua theo mẻ và kỹ thuật chiên trước khi kho."
+    },
+    {
+      "url": "https://toyenxin.com/blog-1/cach-kho-ca-nuc-sot-ca-chua-ngon-vi-cb.html",
+      "accessed": "2026-10-31",
+      "note": "Tổ Yến Xịn: mẻ cá nục 500g, cà chua 3 quả, hành tím 2 củ, tỏi 3 tép, nước mắm 2–3 thìa canh, đường 1 thìa canh, dầu ăn 2 thìa canh; ướp cá muối tiêu 15 phút, chiên sơ, làm sốt cà rồi kho nhỏ lửa 15–20 phút — đối chiếu gia vị theo mẻ (nước mắm quy đổi ~9–11g/khẩu phần, thấp hơn hẳn BepXua)."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nâng Mức 2 đợt 2 (2026-10-31): Đối chiếu 3 nguồn công thức đã mở kiểm chứng (xem recipe_sources). Định lượng: giữ nguyên toàn bộ — cá nục 150g so với BepXua 125g/khẩu phần (+20%, trong ngưỡng); cà chua 80g so với 75g/khẩu phần của BepXua và tỉ lệ cá:cà chua theo mẻ của hai nguồn còn lại; hành tím và đường nằm trong khoảng nguồn. Nước mắm: nguồn bất đồng nhau (BepXua ~19g/khẩu phần so với Toyenxin ~9–11g quy đổi theo mẻ) nên giữ 10g. Kỹ thuật đã đồng bộ theo đồng thuận nguồn: cả 3 nguồn đều chiên sơ cá trước khi kho — bước nấu viết lại 6 bước có bước chiên sơ (file cũ kho trực tiếp). Bất thường ghi nhận: cả 3 nguồn đều có hành lá và 1 nguồn có gừng — file không có dòng hanh-la/gung, chờ pha phân xử riêng.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

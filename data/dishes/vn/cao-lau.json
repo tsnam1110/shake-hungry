@@ -2,7 +2,7 @@
   "slug": "cao-lau",
   "parent_dish_slug": null,
   "country_code": "VN",
-  "region_code": "vn-quang-nam",
+  "region_code": "vn-central",
   "names": [
     {
       "locale": "vi",
@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "tron",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -46,7 +46,7 @@
     },
     {
       "ingredient_slug": "thit-lon-ba-chi",
-      "quantity": 70,
+      "quantity": 100,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -118,15 +118,34 @@
     }
   ],
   "recipe_steps": [
-    "Ướp thịt ba chỉ với nước tương, ngũ vị hương, đường; rim/kho thành thịt xá xíu, thái lát.",
-    "Trụng sợi cao lầu, trộn với ít nước rim thịt.",
-    "Xếp thịt xá xíu, giá, rau sống lên trên, ăn kèm bánh cao lầu chiên giòn."
+    "Hầm xương: xương heo chần bỏ nước đầu, hầm lửa vừa khoảng 1 giờ cùng hành tây và muối, hớt bọt cho nước dùng trong, giữ nóng để làm nước chan.",
+    "Ướp thịt ba chỉ nguyên miếng với nước tương, ngũ vị hương, tỏi băm, đường, muối và tiêu ít nhất 30 phút (để qua đêm càng thấm).",
+    "Áp chảo thịt ở lửa lớn cho xém vàng các mặt, chắt bỏ dầu dư, đổ phần nước ướp cùng ít nước hầm xương vào, rim lửa nhỏ khoảng 30 phút đến khi thịt mềm và nước rim sánh lại; vớt thịt ra để nguội, thái lát mỏng, giữ nước rim làm sốt chan.",
+    "Chuẩn bị sợi và rau: sợi cao lầu khô ngâm nở rồi hấp hoặc luộc đến khi sợi mềm và dai (hấp khoảng 10 phút), xả nhanh và trộn một ít dầu hành phi chống dính; giá chần khoảng 30 giây, rau sống rửa sạch, để ráo.",
+    "Pha nước chan: đun sôi phần nước rim thịt với thêm nước hầm xương, nêm nếm lại cho vừa miệng, giữ nóng.",
+    "Xếp rau sống và giá xuống đáy tô, cho sợi cao lầu lên, xếp thịt xá xíu thái lát, chan khoảng 5 muỗng canh nước sốt nóng rồi trộn đều khi ăn."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-cao-lau-dac-san-hoi-an-thom-ngon-chuan-vi-don-gian-05509",
+      "accessed": "2026-10-31",
+      "note": "Điện máy XANH, cho 4 người: thịt heo 500g, xương ống heo 500g, bột mì 200g, bột gạo 200g, bột năng 140g làm sợi (có phần bột áo để riêng), nước tương 3 muỗng canh, ngũ vị hương 1 muỗng cà phê, tỏi 6 tép; ướp thịt 30 phút, áp chảo xém mặt rồi rim 30 phút, mỗi tô chan khoảng 5 muỗng canh nước dùng."
+    },
+    {
+      "url": "https://vinid.net/blog/bi-quyet-nau-an/cach-lam-cao-lau-hoi-an/",
+      "accessed": "2026-10-31",
+      "note": "VinID: thịt heo 500g (ba rọi/vai/đùi), xương heo 500g, bột mì 200g, bột gạo 200g, bột năng 140g, nước tương 3 muỗng canh, ngũ vị hương 1 muỗng cà phê, tỏi băm 2 muỗng canh; nhào bột 30-40 phút, hấp sợi 10 phút, rim thịt 30 phút (bài không ghi số khẩu phần, cùng cỡ mẻ với công thức Điện máy XANH)."
+    },
+    {
+      "url": "https://cookpad.com/vn/recipes/12337546/print",
+      "accessed": "2026-10-31",
+      "note": "Cookpad (QUÂN NGUYỄN): thịt đùi heo hoặc ba rọi 500g, xương ống/đuôi heo 500g, sợi cao lầu khô 500g, giá 200g, hoành thánh 100g chiên giòn; rim thịt với nước dừa ở lửa nhỏ, mỗi tô chan 1 vá nước hầm xương và 1/2 vá nước sốt xá xíu (bài không ghi số khẩu phần)."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu).",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu). Nâng Mức 2 đợt 2 (2026-10-31): Đã đối chiếu 3 nguồn công thức thật đã mở kiểm chứng (Điện máy XANH, VinID, Cookpad). Sửa định lượng 1 dòng: thit-lon-ba-chi 70 g → 100 g — cả 3 nguồn đều dùng 500 g thịt cho một mẻ gia đình (Điện máy XANH ghi rõ cho 4 người, tức 125 g/người; hai nguồn còn lại cùng cỡ mẻ 500 g thịt và 500 g xương); số cũ thấp hơn mốc trên của khoảng nguồn (100-125 g) hơn 30%, lấy 100 g là mức thận trọng của khoảng và khớp tổng khẩu phần 350 g. Giữ nguyên sợi cao lầu 100 g: nguồn hoặc tự làm sợi từ bột (ĐMX/VinID có 60 + 60 g bột áo chống dính không ăn hết) hoặc dùng sợi khô 500 g/mẻ không ghi khẩu phần — không quy đổi chắc chắn ra trọng lượng sợi đã hấp theo khẩu phần nên chưa đủ cơ sở đổi. Giá 20 g cũng giữ nguyên (chỉ Cookpad định lượng 200 g/mẻ, một nguồn chưa đủ cơ sở). Bất thường: cả 3 nguồn đều hầm xương heo lấy nước chan và Cookpad có thêm hoành thánh chiên giòn ăn kèm — bước nấu cũ của file cũng nhắc bánh chiên giòn nhưng file không có dòng xương hay hoành thánh; ghi nhận chờ phân xử, không thêm dòng. Phân loại (tron — chan ít sốt rồi trộn tại tô) đúng với cả 3 nguồn, giữ nguyên.",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",
@@ -135,6 +154,7 @@
   "reviewed_at": "2026-10-31",
   "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này).",
   "tags": [
+    "dac-san:quang-nam",
     "loai:bun-pho-mi"
   ]
 }

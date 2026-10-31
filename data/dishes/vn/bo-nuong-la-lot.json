@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nuong",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "chieu",
@@ -130,16 +130,34 @@
     }
   ],
   "recipe_steps": [
-    "Trộn thịt bò xay với sả, tỏi, hành tím băm, nêm nước mắm, đường, tiêu.",
-    "Trải lá lốt, cho nhân vào cuộn chặt.",
-    "Nướng trên than hoặc chảo đến khi lá thơm, thịt chín.",
-    "Rắc mỡ hành, đậu phộng rang; chấm mắm nêm hoặc nước mắm chua ngọt."
+    "Sơ chế: thịt bò xay thấm khô; sả, tỏi, hành tím băm nhuyễn; lá lốt rửa sạch, để thật ráo — lấy vài lá non thái chỉ trộn vào nhân, phần lá còn lại để cuốn.",
+    "Trộn nhân: cho bò xay, thịt heo xay (nếu dùng), sả, tỏi, hành tím, nước mắm, đường, tiêu và ít dầu ăn vào tô, trộn một chiều tới khi nhân dẻo và dính; ướp ngăn mát 30–60 phút cho săn và thấm.",
+    "Cuốn: đặt lá lốt mặt gân lên trên, cho khoảng 1 muỗng cà phê nhân vào giữa, gấp hai mép lá rồi cuộn chặt từ cuống lên, ghim bằng cuống lá hoặc tăm; xiên 4–5 cuốn vào một que tre đã ngâm nước.",
+    "Làm mỡ hành và lạc: lạc rang vàng, bóc vỏ, giã dập; đun dầu nóng rồi rưới vào hành lá cắt nhỏ, đảo nhanh cho hành xanh và thơm.",
+    "Nướng: đặt xiên lên than hồng vừa (hoặc lò 200–225°C), phết lớp dầu mỏng, nướng 8–10 phút, trở đều tay tới khi lá se lại, chuyển xanh sậm và nhân chín thơm; tránh nướng quá lâu làm thịt khô.",
+    "Bày ra đĩa, rắc lạc rang và mỡ hành lên trên; ăn nóng, cuốn bánh tráng với rau sống, chấm mắm nêm hoặc nước mắm chua ngọt."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://vietnamnet.vn/cach-lam-bo-nuong-la-lot-thom-mem-don-gian-tai-nha-2173528.html",
+      "accessed": "2026-10-31",
+      "note": "VietnamNet (theo công thức Điện máy XANH): mẻ thịt bò 500g, lá lốt 120g, lạc 100g, sả 3 cây, dầu ăn 2 muỗng canh; ướp 60 phút trong ngăn mát, nướng lò 225°C trong 10 phút, ăn kèm lạc giã dập — đối chiếu tỉ lệ bò/lá lốt/lạc theo mẻ."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/9798781",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Bòn Bon, 4 phần ăn: bò xay 300g + heo xay có mỡ 300g, lá lốt 300g, đậu phộng 100g, sả băm 4 muỗng cà phê; cuốn xiên que tre ngâm nước, quét dầu, nướng than hồng chín tới, rắc đậu phộng + mỡ hành, chấm mắm nêm — nguồn duy nhất ghi rõ khẩu phần."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/13033502",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Thoa Nguyen: thịt bò xay 500g + thịt nạc xay kèm mỡ 500g (tỉ lệ 1:1), đậu phộng 100g, lá lốt 40–50 lá, sả 6 cây; ướp 30 phút, nướng 200°C trong 10 phút, rắc đậu phộng + mỡ hành — đối chiếu tỉ lệ trộn thịt theo mẻ."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt).",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Nâng Mức 2 đợt 2 (2026-10-31): Đối chiếu 3 nguồn công thức đã mở kiểm chứng (xem recipe_sources). Định lượng: giữ nguyên toàn bộ — các nguồn bất đồng nhau >30% ở hầu hết dòng chính: thịt bò/khẩu phần ~75g (Cookpad Bòn Bon, 4 phần ăn) so với mẻ 500g không ghi khẩu phần của VietnamNet; tỉ lệ bò:heo là 1:1 ở cả hai công thức Cookpad trong khi file để heo xay 20g dạng tuỳ chọn và VietnamNet không dùng thịt heo xay (chỉ gợi ý trộn chút mỡ lợn chống khô); lá lốt 300g/mẻ (Bòn Bon) so với 120g/mẻ (VietnamNet); lạc rang quy đổi ~14–25g/khẩu phần so với 8g của file. Bất thường ghi nhận: cả 3 nguồn đều phục vụ kèm mỡ hành + lạc rang + nước chấm (mắm nêm) và đồ cuốn bánh tráng/rau sống — file đã có lạc và mỡ hành trong bước nấu nhưng nước chấm chưa có dòng nguyên liệu riêng (tiền lệ long-lon-luoc đợt 1), chờ pha phân xử riêng. Bước nấu viết lại 6 bước.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

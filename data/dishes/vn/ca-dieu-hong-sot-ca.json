@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "kho",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -42,7 +42,7 @@
     },
     {
       "ingredient_slug": "ca-chua",
-      "quantity": 100,
+      "quantity": 140,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -98,15 +98,34 @@
     }
   ],
   "recipe_steps": [
-    "Cá diêu hồng làm sạch, khía mình, ướp muối tiêu; cà chua bổ cau.",
-    "Áp chảo cá với dầu cho săn hai mặt (bước sơ chế, không chiên giòn), gắp ra.",
-    "Xào cà chua thành sốt, đặt cá vào nấu 8 phút cho thấm, rắc hành lá. Món mặn nhanh: tổng thời gian nấu ~25 phút, nguyên liệu phổ thông."
+    "Sơ chế: cá diêu hồng đánh vảy, bỏ mang ruột, rửa với muối và gừng cho hết tanh, khía xéo hai mặt thân cá, thấm thật khô; cà chua cắt hạt lựu; hành tím, tỏi băm nhỏ.",
+    "Ướp cá với ít muối và tiêu khoảng 10 phút cho thấm và săn mặt.",
+    "Áp chảo cá: đun dầu nóng, cho cá vào áp lửa vừa mỗi mặt 3–4 phút tới khi mặt cá săn và vàng nhẹ (không chiên giòn sâu), gắp ra đĩa.",
+    "Làm sốt: phi hành tím, tỏi trong chảo cho thơm; cho cà chua vào xào lửa vừa tới khi mềm nhừ; nêm nước mắm, đường và thêm ít nước, nấu 4–5 phút cho sốt sệt nhẹ.",
+    "Sốt cá: đặt cá trở lại chảo sốt, dùng muỗng rưới sốt liên tục lên mình cá, đậy nắp nấu lửa nhỏ 7–8 phút cho cá thấm; trở cá một lần thật nhẹ tay.",
+    "Rắc hành lá cắt nhỏ và tiêu, tắt bếp; dọn cá ra đĩa, chan sốt phủ đều, ăn nóng với cơm trắng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://nauankhongkho.vn/blog/cach-lam-ca-dieu-hong-sot-ca-chua-cho-ngay-nang-ngon-com-wKjzk79YxaDK",
+      "accessed": "2026-10-31",
+      "note": "Nấu ăn không khó — tác giả Túc Túc: cá điêu hồng 1 con ~500g, cà chua 400g (tỉ lệ cà chua:cá = 0,8), đường 1 muỗng canh, dầu điều 2 muỗng canh; cá rửa rượu trắng khử tanh, chiên vàng giòn hai mặt, sốt cà nấu mềm rồi rưới lên cá — đối chiếu tỉ lệ cà chua theo cá."
+    },
+    {
+      "url": "http://giavihanhphuc.com/ca-dieu-hong/ca-dieu-hong-sot-ca-chua-amp",
+      "accessed": "2026-10-31",
+      "note": "Gia vị hạnh phúc (tổng hợp công thức Vành Khuyên): cá điêu hồng 1 con 500g, cà chua 4 quả thái hạt lựu (~400g, tỉ lệ 0,8), hành tây 1 củ, tỏi 4 tép, nước mắm 2 muỗng canh; cá khứa xéo, chiên vàng đều hai mặt với 5 muỗng canh dầu, xào hành tây + cà chua thành sốt sệt rồi rưới lên cá — đối chiếu tỉ lệ và ghi nhận hành tây."
+    },
+    {
+      "url": "https://canuocngot247.com/?p=1084",
+      "accessed": "2026-10-31",
+      "note": "Cá nước ngọt 247: cá điêu hồng 500g, cà chua 500g (tỉ lệ 1,0), hành lá, ngò rí, tỏi, hành tím; cá rửa gừng muối, thấm khô, chiên hai mặt vàng đều, sốt cà xào 2 phút rồi nấu tới chín mềm, rưới lên cá — nguồn thứ ba khẳng định cá được chiên trước khi sốt."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Phân loại kho theo tiền lệ ca-thu-sot-ca (cá sốt cà trong kho đều method kho); dầu 6 g là dầu áp chảo + làm sốt, ăn vào cùng sốt.",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Phân loại kho theo tiền lệ ca-thu-sot-ca (cá sốt cà trong kho đều method kho); dầu 6 g là dầu áp chảo + làm sốt, ăn vào cùng sốt. Nâng Mức 2 đợt 2 (2026-10-31): Đối chiếu 3 nguồn công thức đã mở kiểm chứng (xem recipe_sources). Định lượng: sửa ca-chua 100→140g — tỉ lệ cà chua:cá ở Nấu ăn không khó và Gia vị hạnh phúc đều là 0,8 (400g:500g và 4 quả:1 con 500g), nguồn thứ ba là 1,0 (500g:500g); tỉ lệ cũ của file 100:180 = 0,56, thấp hơn cả hai mốc đồng thuận 0,8–1,0 trên 30%; quy theo cá 180g/khẩu phần, cà chua nguồn ≈144–180g nên lấy 140g. Giữ cá 180g (mẻ 1 con 500g chia ~3 khẩu phần ≈167g, gần số file) và các gia vị khác (đường nguồn ~5g/khẩu phần theo Nấu ăn không khó, khớp file). Bất thường lớn ghi nhận, chờ chủ dự án phân xử: cả 3 nguồn đều CHIÊN cá vàng giòn rồi mới rưới sốt/cho vào sốt, trong khi file đang để cooking_method=kho với kỹ thuật áp chảo nhẹ (theo tiền lệ ca-thu-sot-ca đã ghi trong import_note cũ) — không tự đổi phân loại vì chuyển sang chien sẽ đổi mô hình hấp thụ dầu của engine (CALC-004) và kéo theo thay đổi calo toàn món; Gia vị hạnh phúc còn dùng hành tây 1 củ/mẻ — file không có dòng hanh-tay. Bước nấu viết lại 6 bước theo kỹ thuật hiện tại của file.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -2,7 +2,7 @@
   "slug": "com-ga-quang-nam",
   "parent_dish_slug": null,
   "country_code": "VN",
-  "region_code": "vn-quang-nam",
+  "region_code": "vn-central",
   "names": [
     {
       "locale": "vi",
@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -130,15 +130,34 @@
     }
   ],
   "recipe_steps": [
-    "Luộc gà với nghệ, lấy nước dùng nấu cơm cho vàng thơm.",
-    "Xé gà, trộn gỏi với hành tây, rau răm, chanh, nước mắm, ớt.",
-    "Xới cơm ra đĩa, xếp gà trộn lên trên, rắc hành phi và lạc rang."
+    "Luộc gà: gà làm sạch, cho vào nồi nước lạnh cùng gừng đập dập, hành tím, một ít muối và nghệ; đun sôi rồi hạ lửa, luộc khoảng 20-25 phút đến khi xiên vào đùi không còn ra nước hồng; vớt gà ra để nguội, giữ lại nước luộc.",
+    "Nấu cơm: gạo vo sạch, để ráo, trộn với nghệ, đảo sơ cùng ít dầu hoặc mỡ gà và tỏi phi cho hạt gạo săn và bóng; cho nước luộc gà xâm xấp mặt gạo, nấu chín thành cơm vàng và tơi.",
+    "Sơ chế rau trộn: hành tây thái mỏng, chần nhanh hoặc ngâm nước đá 10-15 phút cho hết hăng và giữ độ giòn; rau răm nhặt, rửa sạch.",
+    "Xé gà: gà đã nguội lọc bỏ xương, xé thành miếng vừa ăn, không xé quá nhỏ để gỏi không bị nhũn.",
+    "Trộn gỏi: trộn gà xé với hành tây, rau răm, nước mắm chua ngọt (nước mắm, đường, cốt chanh, ớt) và tiêu; nêm lại vừa miệng, để thấm 5-10 phút.",
+    "Trình bày: nén cơm ra đĩa, xếp gỏi gà bên cạnh, rắc hành phi (và lạc rang nếu dùng); dọn kèm một chén nước luộc gà nóng làm canh, dùng ngay."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.hoidaubepaau.com/com-ga-tam-ky/",
+      "accessed": "2026-10-31",
+      "note": "Hội Đầu Bếp Á Âu (cơm gà Tam Kỳ): gà ta 1 con khoảng 1kg, gạo tám thơm 1/2 lon, bột nghệ 1 thìa cà phê, chanh 1-2 trái, hành tây và rau răm ăn kèm; luộc gà với gừng, nấu cơm bằng nước luộc gà với nghệ và tỏi phi, gà xé trộn nước mắm chua ngọt, rắc hành phi."
+    },
+    {
+      "url": "https://beptruong.edu.vn/cach-nau-com-ga-tam-ky",
+      "accessed": "2026-10-31",
+      "note": "Bếp Trưởng Á Âu (cơm gà Tam Kỳ): gà mái dầu 1 con, gạo 2 lon và nếp 1/4 lon, hành tây 1/2 củ, chanh 1 trái, bột nghệ; cơm nấu bằng nước luộc gà chỉ xâm xấp mặt gạo, gỏi gà trộn với chanh, tiêu, hành tây và rau răm."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/12796131",
+      "accessed": "2026-10-31",
+      "note": "Cookpad (Bếp của Quỳnh, cơm gà xé trộn Quảng Nam), 6 người ăn: gà ta 1,2-1,4kg, gạo 2 lon, hành tây 1 củ, chanh 1,5 trái cho 1 con gà; luộc gà khoảng 25 phút, rang gạo với bột nghệ và mỡ gà trước khi nấu bằng nước luộc, chan nước lòng gà khi ăn."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 2 (2026-10-31): Đã đối chiếu 3 nguồn công thức thật đã mở kiểm chứng (Hội Đầu Bếp Á Âu, Bếp Trưởng Á Âu, Cookpad). Định lượng: giữ nguyên toàn bộ — Cookpad ghi rõ gà ta 1,2-1,4 kg cho 6 người, phần thịt và da ăn được quy đổi khoảng 130 g/người, khớp dòng thit-ga-co-da 130 g; hai nguồn còn lại cũng dùng gà nguyên con 1-1,5 kg cho mẻ gia đình; cơm 200 g, hành tây 20 g và chanh 10 g đều nằm trong khoảng suy ra từ các mẻ. Các nguồn dùng bột nghệ, file dùng nghệ tươi 5 g — cùng vai trò tạo màu, giữ nguyên. Bất thường: (1) lòng gà và nước mạ (nước chan từ lòng gà) xuất hiện ở Cookpad và được nhắc như thành phần đặc trưng của cơm gà Tam Kỳ — file không có dòng lòng gà; (2) dưa leo hoặc dưa chua ăn kèm có ở 2/3 nguồn — file không có; (3) ngược lại, dòng lạc rang (optional) của file không thấy ở cả 3 nguồn. Ghi nhận cả ba điểm chờ phân xử, không thêm/bớt dòng. Phân loại (nau — luộc gà và nấu cơm) giữ nguyên.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
@@ -147,6 +166,7 @@
   "reviewed_at": "2026-10-31",
   "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này).",
   "tags": [
+    "dac-san:quang-nam",
     "loai:com"
   ]
 }

@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -114,15 +114,34 @@
     }
   ],
   "recipe_steps": [
-    "Cá lóc làm sạch, cắt khúc, ướp chút muối; me dằm nước nóng lấy cốt.",
-    "Đun sôi nước, cho nước me, cà chua, thơm vào, nêm nước mắm và đường.",
-    "Thả cá nấu chín, thêm dọc mùng, đậu bắp và giá, tắt bếp, rắc ngò gai."
+    "Sơ chế cá: cá lóc làm sạch nhớt (chà muối hoặc dội nước ấm), cắt khúc 3–4 cm, ướp chút muối 10–15 phút; có thể khứa nhẹ trên thịt để cá không cong khi nấu.",
+    "Chuẩn bị vị chua và rau: me chín ngâm nước nóng, dằm và lọc lấy cốt; cà chua cắt múi cau; thơm thái miếng; đậu bắp cắt xéo; dọc mùng tước vỏ, bóp muối, rửa sạch; giá rửa để ráo.",
+    "Nấu nước chua: đun sôi ~1–1,2 lít nước, cho nước cốt me vào trước, nêm đường và muối để vị chua ngọt cân bằng trước khi thả cá.",
+    "Nấu cá: nhẹ nhàng thả từng khúc cá vào nước đang sôi lăn tăn, không khuấy mạnh; nấu lửa vừa 8–10 phút đến khi thịt cá trắng đục, vừa chín tới thì vớt cá ra đĩa riêng để cá không nát.",
+    "Nấu rau: cho cà chua và thơm vào nấu 2 phút, tiếp đến dọc mùng và đậu bắp nấu thêm 2–3 phút cho vừa mềm; cuối cùng cho giá vào, đảo nhẹ rồi tắt bếp ngay để giá còn giòn.",
+    "Nêm và hoàn thiện: trả cá vào nồi, nêm nước mắm gần cuối để giữ mùi thơm, rắc ngò gai/ngò om và ớt lát; ăn nóng với cơm hoặc bún."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-nau-canh-chua-ca-loc-chuan-nhat-ngon-00828",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH (4 người): cá lóc 500g, thơm 1/4 trái, cà chua 2 trái, đậu bắp + dọc mùng + giá mỗi loại 50g, me vắt 20g, nước mắm 1 muỗng canh; cá nấu ~10 phút, rau cho sau, giá và rau thơm cho cuối cùng."
+    },
+    {
+      "url": "https://vietnamnet.vn/cach-nau-canh-chua-ca-loc-tai-nha-don-gian-2386310.html",
+      "accessed": "2026-10-31",
+      "note": "VietnamNet (4 người, 1 lít nước): cùng bộ định lượng cá 500g, me 20g, đậu bắp/dọc mùng/giá mỗi loại 50g; cá ướp muối 15 phút, nấu 10 phút đến khi vừa chín tới."
+    },
+    {
+      "url": "https://daynauan.info.vn/canh-chua-ca-loc",
+      "accessed": "2026-10-31",
+      "note": "Dạy Nấu Ăn (đầu bếp Nguyễn Thanh Vũ): 2 khứa cá lóc ~250g, 1 vắt me, 1,5 lít nước; xóc cá trong nồi nóng 10–15 giây trước khi đổ nước, cho nước me trước cá, nêm sau khi tắt bếp, không dùng hành tím/hành lá."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món THAY cho canh rau đắng nấu cá lóc trong kế hoạch: rau đắng chưa có số nên món gốc hoãn.",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món THAY cho canh rau đắng nấu cá lóc trong kế hoạch: rau đắng chưa có số nên món gốc hoãn. Nâng Mức 2 đợt 2 (2026-10-31): đã mở kiểm chứng 3 nguồn (Điện Máy XANH, VietnamNet, Dạy Nấu Ăn). Lưu ý độc lập nguồn: VietnamNet dùng lại gần như nguyên bộ số của Điện Máy XANH (ảnh ghi nguồn dienmayxanh) nên đồng thuận định lượng thực chất có 2 cơ sở độc lập. Phân xử: GIỮ NGUYÊN toàn bộ — cá file 100g/khẩu phần nằm trong ngưỡng 30% so với nguồn (125g/người theo mẻ 4 người, cá nguyên khúc có xương; nguồn thứ ba 250g/2 khứa cho mẻ nhỏ tương thích); cà chua/thơm/đậu bắp/dọc mùng trong file cao hơn số quy đổi của Điện Máy XANH nhưng chỉ có một cơ sở nguồn định lượng cho rau (nguồn thứ ba không định lượng rau) nên chưa đủ điều kiện sửa, ghi nhận cho pha phân xử sau. Bất thường: nguồn thứ ba khuyến nghị không dùng hành tím/hành lá và cho nước me trước cá — đã phản ánh vào bước nấu.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
