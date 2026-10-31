@@ -1,0 +1,53 @@
+{
+  "slug": "bo-vien",
+  "name_vi": "Bò viên",
+  "name_en": "Beef meatballs (Vietnamese style)",
+  "category": "thit",
+  "reference_food": {
+    "fct_source": "usda_branded",
+    "external_id": "2623419",
+    "source_url": "https://fdc.nal.usda.gov/food-details/2623419/nutrients",
+    "scientific_name": null,
+    "kcal_per_100g": 175,
+    "kcal_min": 141,
+    "kcal_max": null,
+    "protein_g": 21.0,
+    "fat_g": 7.02,
+    "carb_g": 7.02,
+    "fiber_g": 0,
+    "water_g": null,
+    "sodium_mg": 1180,
+    "mapping_confidence": "low",
+    "mapping_note": "Biên soạn LV2-010 Phần A (2026-10-31): USDA Branded 2623419 — Wei-Chuan 'Beef & Beef Tendon Balls' (bò viên gân kiểu Đài Loan, họ hàng gần nhất của bò viên VN có nhãn đầy đủ). kcal_min 141 từ các lựa chọn Branded tương tự trong OFF. Cụm số SEO VN (165 kcal, carb 18,4g) bị loại: carb cao bất thường cho viên thịt, sao chép vô danh. Sản phẩm tham chiếu có lòng trắng trứng trong thành phần — đã gán allergen:trung theo chiều an toàn cho bộ lọc dị ứng cứng.",
+    "alternatives": [
+      {
+        "name": "Cụm số web VN bò viên (165 kcal, carb 18,4g)",
+        "why_not": "Sao chép vô danh, carb không hợp lý với viên thịt.",
+        "external_id": null,
+        "kcal_per_100g": 165
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": true,
+  "units": [],
+  "media": [],
+  "source": "curated",
+  "confidence": "low",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:dong-vat",
+    "state:che-bien",
+    "allergen:trung"
+  ]
+}

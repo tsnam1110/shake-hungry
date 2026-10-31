@@ -79,6 +79,14 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "vani",
+      "quantity": 1,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
@@ -116,7 +124,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-009 đợt 9: Nâng Mức 2 (bảo thủ — nâng bằng nguồn và bước nấu, KHÔNG sửa định lượng) — mở kiểm chứng 3 họ độc lập đúng nhánh cốm THUẦN (Gia Vị Hạnh Phúc, Công Thức Gia Đình, KinhDo Food; đã loại các bản cốm–hạt sen/cốm–đậu xanh cùng trang khỏi đối chiếu). Không dòng nào đạt ngưỡng sửa: bot-nang (tỉ lệ so với cốm 0,13) nằm trong dải nguồn 0,08–0,30; nuoc-cot-dua (tỉ lệ 1,0) khớp mô hình nấu-chung của Công Thức Gia Đình (hai họ còn lại chan riêng lượng nhỏ); duong-trang 25 g thuộc cực ít ngọt của dải tỉ lệ đường/cốm 0,50–1,50 — cả 3 họ đều cao hơn nhưng trải rộng gấp 3 lần, không đồng thuận một mức; com-xanh 60 g trong dải quy đổi rộng. Vani có ở 2/3 họ nhưng kho chưa có slug vani — không thêm, ghi vào hàng đợi nguyên liệu.]",
+  "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-009 đợt 9: Nâng Mức 2 (bảo thủ — nâng bằng nguồn và bước nấu, KHÔNG sửa định lượng) — mở kiểm chứng 3 họ độc lập đúng nhánh cốm THUẦN (Gia Vị Hạnh Phúc, Công Thức Gia Đình, KinhDo Food; đã loại các bản cốm–hạt sen/cốm–đậu xanh cùng trang khỏi đối chiếu). Không dòng nào đạt ngưỡng sửa: bot-nang (tỉ lệ so với cốm 0,13) nằm trong dải nguồn 0,08–0,30; nuoc-cot-dua (tỉ lệ 1,0) khớp mô hình nấu-chung của Công Thức Gia Đình (hai họ còn lại chan riêng lượng nhỏ); duong-trang 25 g thuộc cực ít ngọt của dải tỉ lệ đường/cốm 0,50–1,50 — cả 3 họ đều cao hơn nhưng trải rộng gấp 3 lần, không đồng thuận một mức; com-xanh 60 g trong dải quy đổi rộng. Vani có ở 2/3 họ nhưng kho chưa có slug vani — không thêm, ghi vào hàng đợi nguyên liệu.] [LV2-010 Phần A: thêm vani 1g tuỳ chọn (2/3 họ đợt 9 có; họ định lượng duy nhất: 1 muỗng cà phê chiết xuất ≈ 4,2g cho mẻ ≈ 4 khẩu phần). Dạng chiết xuất lỏng — công thức VN thường dùng ống vani bột, chỉ hợp lệ ở liều vết.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

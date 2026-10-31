@@ -1,0 +1,52 @@
+{
+  "slug": "mia",
+  "name_vi": "Mía (thân tươi)",
+  "name_en": "Sugarcane stalk, fresh",
+  "category": "khac",
+  "reference_food": {
+    "fct_source": null,
+    "external_id": null,
+    "source_url": null,
+    "scientific_name": null,
+    "kcal_per_100g": null,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": null,
+    "fat_g": null,
+    "carb_g": null,
+    "fiber_g": null,
+    "water_g": null,
+    "sodium_mg": null,
+    "mapping_confidence": "low",
+    "mapping_note": "Biên soạn LV2-010 Phần A (2026-10-31) dạng null + hồ sơ: không bảng FCT nào có mục thân mía tươi. Số của NƯỚC mía (nuoc-mia, 58 kcal/100g) KHÔNG được áp cho thân mía tính theo gram: khi ăn/nhai, phần xơ bị nhả bã và không có nguồn tỉ lệ chiết xuất đạt chuẩn để quy đổi. Trong món (vd bún chạo tôm nướng mía), mía chủ yếu là que nướng + vị ngọt mặt ngoài. VIỆC CẦN LÀM: nguồn tỉ lệ nước ép/thân đạt chuẩn hoặc tự đo (tầng tu_do).",
+    "alternatives": [
+      {
+        "name": "Nước mía (nuoc-mia, 58 kcal/100g)",
+        "why_not": "Dạng ép lỏng khác hẳn thân nhai nhả bã; áp số nước cho gram thân sẽ thổi phồng calo.",
+        "external_id": null,
+        "kcal_per_100g": 58
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "media": [],
+  "source": "curated",
+  "confidence": "low",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}

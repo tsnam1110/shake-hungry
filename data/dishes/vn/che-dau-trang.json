@@ -41,7 +41,7 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "bot-nep",
+      "ingredient_slug": "gao-nep",
       "quantity": 30,
       "unit_name": "g",
       "is_optional": false,
@@ -116,7 +116,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu). [LV2-009 đợt 9: Nâng Mức 2 — mở kiểm chứng 3 họ nguồn (Điện Máy XANH, Cookpad Rose Truong, Saigontourist). Thêm bot-nang 3 g (3/3 họ đều dùng để tạo sánh). GIỮ toàn bộ định lượng còn lại: các họ bất đồng >30% ở mọi dòng chính (đậu 75 so với ~45 g; đường ~87,5 so với ~21–25 và 60–75 g; cốt dừa 100 so với ~20 và 120–150 g) và số của file nằm trong cụm đa số; không tính phần nước dão 1,5 L của ĐMX là cốt dừa. Chuẩn hoá tên 'Chè đậu trắng'. Bất thường chờ phân xử (không tự sửa): cả 3 họ đều dùng GẠO nếp nguyên hạt trong khi file dùng bot-nep (bột) — đề xuất hoán đổi bot-nep 30 g → gao-nep 30 g (slug có số) ở pha phân xử riêng.]",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu). [LV2-009 đợt 9: Nâng Mức 2 — mở kiểm chứng 3 họ nguồn (Điện Máy XANH, Cookpad Rose Truong, Saigontourist). Thêm bot-nang 3 g (3/3 họ đều dùng để tạo sánh). GIỮ toàn bộ định lượng còn lại: các họ bất đồng >30% ở mọi dòng chính (đậu 75 so với ~45 g; đường ~87,5 so với ~21–25 và 60–75 g; cốt dừa 100 so với ~20 và 120–150 g) và số của file nằm trong cụm đa số; không tính phần nước dão 1,5 L của ĐMX là cốt dừa. Chuẩn hoá tên 'Chè đậu trắng'. Bất thường chờ phân xử (không tự sửa): cả 3 họ đều dùng GẠO nếp nguyên hạt trong khi file dùng bot-nep (bột) — đề xuất hoán đổi bot-nep 30 g → gao-nep 30 g (slug có số) ở pha phân xử riêng.] [LV2-010 đợt 10 — Phần A phân xử bất thường LV2-009 §B.3 mục 8: hoán đổi bot-nep 30 g → gao-nep 30 g — cả 3/3 họ nguồn đã mở ở đợt 9 đều dùng gạo nếp nguyên hạt ngâm, không họ nào dùng bột nếp; slug gao-nep có số nên món vẫn tính được.]",
   "status": "draft",
   "source": "llm_suggested",
   "confidence": "unknown",

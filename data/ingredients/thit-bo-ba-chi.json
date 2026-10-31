@@ -1,0 +1,52 @@
+{
+  "slug": "thit-bo-ba-chi",
+  "name_vi": "Ba chỉ bò",
+  "name_en": "Beef brisket plate (ba chi)",
+  "category": "thit",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "174740",
+    "source_url": "https://fdc.nal.usda.gov/food-details/174740/nutrients",
+    "scientific_name": "Bos taurus",
+    "kcal_per_100g": 345,
+    "kcal_min": 194,
+    "kcal_max": 371,
+    "protein_g": 15.8,
+    "fat_g": 31.3,
+    "carb_g": 0,
+    "fiber_g": 0,
+    "water_g": 53.3,
+    "sodium_mg": 54,
+    "mapping_confidence": "low",
+    "mapping_note": "Biên soạn LV2-010 Phần A (2026-10-31): USDA SR Legacy 174740 — brisket navel end (đầu mỡ của ba chỉ) nạc + mỡ, sống. Đây là đầu MỠ của dải: kcal_min 194 = phần nạc (174718), kcal_max 371 đối chiếu MEXT bara. Ba chỉ bò bán lẻ VN dao động mạnh theo tỉ lệ mỡ — con số điểm 345 là đầu mỡ, hiển thị luôn theo khoảng [194; 371]. Mục SR có dataPoints 0 nên độ tin cậy low.",
+    "alternatives": [
+      {
+        "name": "USDA SR 174718 brisket lean only",
+        "why_not": "Chỉ phần nạc — dùng làm kcal_min, không phải bản ghi chính.",
+        "external_id": "174718",
+        "kcal_per_100g": 194
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "media": [],
+  "source": "curated",
+  "confidence": "low",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:dong-vat",
+    "state:tuoi"
+  ]
+}

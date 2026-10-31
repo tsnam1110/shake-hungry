@@ -1,0 +1,52 @@
+{
+  "slug": "cu-nang",
+  "name_vi": "Củ năng (mã thầy)",
+  "name_en": "Water chestnut, Chinese, raw",
+  "category": "rau-cu",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "170066",
+    "source_url": "https://fdc.nal.usda.gov/food-details/170066/nutrients",
+    "scientific_name": "Eleocharis dulcis",
+    "kcal_per_100g": 97,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 1.4,
+    "fat_g": 0.1,
+    "carb_g": 23.94,
+    "fiber_g": 3.0,
+    "water_g": 73.5,
+    "sodium_mg": 14,
+    "mapping_confidence": "high",
+    "mapping_note": "Biên soạn LV2-010 Phần A (2026-10-31): USDA SR Legacy 'Water chestnuts, chinese, (matai), raw' (170066) — đúng loài Eleocharis dulcis. FNRI Philippines D264 (176 kcal) bị loại: lệch hệ thống so với USDA, tầng thứ cấp dưới tầng 1 theo thang nguồn.",
+    "alternatives": [
+      {
+        "name": "FNRI Philippines water chestnut D264",
+        "why_not": "176 kcal — lệch hệ thống, tầng thứ cấp.",
+        "external_id": null,
+        "kcal_per_100g": 176
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "media": [],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}

@@ -63,6 +63,14 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "vani",
+      "quantity": 0.5,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
@@ -100,7 +108,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-009 đợt 9: Nâng Mức 2 — mở kiểm chứng 3 họ nguồn (HC, Bếp Xưa, Bách Hoá XANH). BỎ la-dua (0/3 họ). Giữ hat-sen-tuoi 40 g, nhan-kho 15 g, duong-phen 25 g, muoi 0,5 g: định lượng các họ bất đồng rất lớn (riêng đường dao động 17–100 g/khẩu phần) và số của file nằm trong dải nguồn. Ghi nhận: vani có ở 2/3 họ nhưng kho chưa có slug — đưa vào hàng đợi biên soạn nguyên liệu, không chặn nâng vì là gia vị vết. Vùng 'vn' giữ nguyên (Huế và Hưng Yên đều nhận là đặc sản).]",
+  "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-009 đợt 9: Nâng Mức 2 — mở kiểm chứng 3 họ nguồn (HC, Bếp Xưa, Bách Hoá XANH). BỎ la-dua (0/3 họ). Giữ hat-sen-tuoi 40 g, nhan-kho 15 g, duong-phen 25 g, muoi 0,5 g: định lượng các họ bất đồng rất lớn (riêng đường dao động 17–100 g/khẩu phần) và số của file nằm trong dải nguồn. Ghi nhận: vani có ở 2/3 họ nhưng kho chưa có slug — đưa vào hàng đợi biên soạn nguyên liệu, không chặn nâng vì là gia vị vết. Vùng 'vn' giữ nguyên (Huế và Hưng Yên đều nhận là đặc sản).] [LV2-010 Phần A: thêm vani 0,5g tuỳ chọn theo quy ước đợt 10 (3 ống vani cho nồi 2 lít ≈ 8 khẩu phần theo serving_grams của file; khối lượng 1 ống không được công bố nên đây là quy ước liều vết — sai số tối đa < 1,5 kcal/khẩu phần).]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -1,0 +1,52 @@
+{
+  "slug": "sach-bo",
+  "name_vi": "Sách bò (lá sách)",
+  "name_en": "Beef omasum (tripe)",
+  "category": "thit",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "170599",
+    "source_url": "https://fdc.nal.usda.gov/food-details/170599/nutrients",
+    "scientific_name": "Bos taurus",
+    "kcal_per_100g": 85,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 12.1,
+    "fat_g": 3.69,
+    "carb_g": 0,
+    "fiber_g": 0,
+    "water_g": 84.2,
+    "sodium_mg": 97,
+    "mapping_confidence": "low",
+    "mapping_note": "Biên soạn LV2-010 Phần A (2026-10-31): USDA SR Legacy 'Beef, variety meats and by-products, tripe, raw' (170599). LƯU Ý ÁNH XẠ: mục USDA là dạ dày bò gộp (chủ yếu tổ ong + khăn, sách/lá sách chiếm phần nhỏ trong thương mại Mỹ) — sách bò VN là omasum thuần, cùng nhóm nội tạng dạ dày nên ánh xạ gần, độ tin cậy low. MEXT senmai (lá sách thật) chỉ tra được kcal 62 ở tầng thứ cấp, bộ số không đầy đủ nên không dùng làm cơ sở duy nhất.",
+    "alternatives": [
+      {
+        "name": "MEXT senmai (lá sách Nhật)",
+        "why_not": "Chỉ tra được kcal 62 qua nguồn thứ cấp, thiếu bộ số đầy đủ; giữ làm đối chiếu.",
+        "external_id": null,
+        "kcal_per_100g": 62
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "media": [],
+  "source": "curated",
+  "confidence": "low",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:dong-vat",
+    "state:tuoi"
+  ]
+}

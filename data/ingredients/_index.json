@@ -1,6 +1,6 @@
 {
   "_generated_by": "php artisan lacdoi:export-data — không sửa tay (DATA-REPOSITORY §2)",
-  "count": 425,
+  "count": 433,
   "ingredients": [
     {
       "slug": "bach-tuoc",
@@ -116,6 +116,11 @@
       "slug": "bo-thuc-vat",
       "name_vi": "Bơ thực vật (margarine)",
       "category": "dau-mo"
+    },
+    {
+      "slug": "bo-vien",
+      "name_vi": "Bò viên",
+      "category": "thit"
     },
     {
       "slug": "bon-bon",
@@ -538,6 +543,11 @@
       "category": "rau-cu"
     },
     {
+      "slug": "cu-nang",
+      "name_vi": "Củ năng (mã thầy)",
+      "category": "rau-cu"
+    },
+    {
       "slug": "cu-nen",
       "name_vi": "Củ nén (hành tăm)",
       "category": "gia-vi"
@@ -775,6 +785,11 @@
     {
       "slug": "gan-bo",
       "name_vi": "Gan bò (sống)",
+      "category": "thit"
+    },
+    {
+      "slug": "gan-bo-tendon",
+      "name_vi": "Gân bò",
       "category": "thit"
     },
     {
@@ -1243,6 +1258,11 @@
       "category": "tinh-bot"
     },
     {
+      "slug": "mia",
+      "name_vi": "Mía (thân tươi)",
+      "category": "khac"
+    },
+    {
       "slug": "mien-dong",
       "name_vi": "Miến dong",
       "category": "tinh-bot"
@@ -1698,6 +1718,11 @@
       "category": "gia-vi"
     },
     {
+      "slug": "sach-bo",
+      "name_vi": "Sách bò (lá sách)",
+      "category": "thit"
+    },
+    {
       "slug": "sau-rieng",
       "name_vi": "Sầu riêng (múi, tươi)",
       "category": "trai-cay"
@@ -1866,6 +1891,11 @@
       "slug": "thinh-gao",
       "name_vi": "Thính gạo (gạo rang xay)",
       "category": "gia-vi"
+    },
+    {
+      "slug": "thit-bo-ba-chi",
+      "name_vi": "Ba chỉ bò",
+      "category": "thit"
     },
     {
       "slug": "thit-bo-nam",
@@ -2053,6 +2083,11 @@
       "category": "gia-vi"
     },
     {
+      "slug": "tuong-hat",
+      "name_vi": "Tương hạt (tương hột)",
+      "category": "gia-vi"
+    },
+    {
       "slug": "tuong-ot",
       "name_vi": "Tương ớt",
       "category": "gia-vi"
@@ -2066,6 +2101,11 @@
       "slug": "vai",
       "name_vi": "Vải",
       "category": "trai-cay"
+    },
+    {
+      "slug": "vani",
+      "name_vi": "Vani (chiết xuất)",
+      "category": "gia-vi"
     },
     {
       "slug": "viet-quat",
