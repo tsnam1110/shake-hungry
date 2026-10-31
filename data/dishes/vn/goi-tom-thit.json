@@ -6,7 +6,7 @@
   "names": [
     {
       "locale": "vi",
-      "name": "gỏi tôm thịt",
+      "name": "Gỏi tôm thịt",
       "is_primary": true
     },
     {
@@ -25,7 +25,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "tron",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -37,7 +37,7 @@
     }
   ],
   "serving_desc": "1 đĩa",
-  "serving_grams": 280,
+  "serving_grams": 320,
   "ingredients": [
     {
       "ingredient_slug": "tom-su",
@@ -64,8 +64,8 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "cu-sen",
-      "quantity": 40,
+      "ingredient_slug": "ngo-sen",
+      "quantity": 90,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -80,8 +80,16 @@
       "confidence": "low"
     },
     {
+      "ingredient_slug": "hanh-tay",
+      "quantity": 30,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
       "ingredient_slug": "lac-rang",
-      "quantity": 15,
+      "quantity": 20,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -105,7 +113,7 @@
     },
     {
       "ingredient_slug": "duong-trang",
-      "quantity": 6,
+      "quantity": 10,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -145,15 +153,34 @@
     }
   ],
   "recipe_steps": [
-    "Tôm sú và thịt ba chỉ luộc chín; tôm bóc vỏ, thịt thái mỏng; củ sen thái lát ngâm chanh.",
-    "Pha nước mắm chua ngọt với chanh, đường và ớt.",
-    "Trộn tôm, thịt, củ sen, dưa chuột và cà rốt với nước trộn; rắc lạc rang và hành phi."
+    "Ngó sen cắt khúc 6–7 cm, chẻ đôi, ngâm nước muối pha giấm khoảng 10 phút rồi ngâm tiếp nước đường pha giấm với đá cho trắng giòn; gần trộn mới vớt ra, vắt ráo.",
+    "Thịt ba chỉ luộc 18–20 phút, ủ 5–10 phút, ngâm nước đá pha chanh cho trắng săn; để nguội hẳn rồi thái lát mỏng.",
+    "Tôm hấp khoảng 6 phút (hoặc luộc) tới khi chín, bóc vỏ, bỏ chỉ lưng.",
+    "Pha nước trộn: nước mắm, đường, giấm và nước cốt chanh theo tỉ lệ chua ngọt, thêm tỏi ớt giã.",
+    "Ướp tôm và thịt với một phần nước trộn trước; trộn ngó sen, hành tây, cà rốt với phần nước trộn tiếp theo 2–3 phút rồi chắt bỏ nước thừa.",
+    "Cho tôm thịt vào trộn đều cùng phần nước trộn còn lại; rắc lạc rang và hành phi sau cùng, dọn kèm bánh phồng tôm."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://cookbeo.com/recipes/goi-ngo-sen-tom-thit",
+      "accessed": "2026-10-31",
+      "note": "Cookbeo — 'Gỏi ngó sen tôm thịt' (5 người): ngó sen 90 g/khẩu phần, hành tây 40g, lạc 20g, đường ~10,5g."
+    },
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/2-cach-lam-goi-nam-tuyet-tom-thit-la-mieng-thom-ngon-kho-11206",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH — biến thể ngó sen (5 người) khẳng định ngó sen là nền của món; biến thể dưa leo–bắp cải trong cùng bài là nguồn duy nhất ủng hộ dưa leo của file."
+    },
+    {
+      "url": "https://www.huongnghiepaau.com/goi-ngo-sen-tom-thit",
+      "accessed": "2026-10-31",
+      "note": "Hướng Nghiệp Á Âu (giảng viên Bếp Nóng): gỏi ngó sen tôm thịt — ngó sen ~100g, hành tây 40g, lạc 20g theo tỉ lệ mẻ."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 đợt 2 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 đợt 2 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-007 đợt 7: nâng Mức 2 — 3 nguồn đã mở. SỬA CẤU TRÚC BẮT BUỘC: bỏ củ sen 40g → ngó sen 90g (3/3 nguồn dùng ngó sen, 0/3 dùng củ sen). HỆ QUẢ: slug ngo-sen chưa có số dinh dưỡng (null có hồ sơ) nên món tạm mất khả năng tính calo cho tới khi ngó sen được biên soạn số — không dùng số của củ sen thay cho ngó sen (QT-1); đây là ca 'gỏi ngó sen không tính được' đã biết từ DISH-004. BỔ SUNG hành tây 30g (3 nguồn: 25–40g); SỬA đường 6→10g, lạc rang 15→20g (2 nguồn đồng thuận); serving 280→320g theo tổng nguyên liệu sau sửa. GIỮ dưa leo 60g (1 nguồn ủng hộ — thuộc biến thể nấm tuyết); ghi nhận mọi nguồn dùng giấm là acid chính, chanh chỉ phụ — file giữ chanh 12g, câu hỏi mở cho vòng sau.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

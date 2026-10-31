@@ -6,7 +6,7 @@
   "names": [
     {
       "locale": "vi",
-      "name": "bánh flan",
+      "name": "Bánh flan",
       "is_primary": true
     },
     {
@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "hap",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "chieu",
@@ -34,7 +34,7 @@
   "ingredients": [
     {
       "ingredient_slug": "trung-ga",
-      "quantity": 40,
+      "quantity": 18,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -42,7 +42,7 @@
     },
     {
       "ingredient_slug": "sua-tuoi",
-      "quantity": 70,
+      "quantity": 45,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -66,12 +66,30 @@
     }
   ],
   "recipe_steps": [
-    "Thắng đường thành caramel, rót một lớp mỏng vào đáy hũ.",
-    "Đánh tan trứng với sữa tươi và sữa đặc, lọc qua rây cho mịn.",
-    "Rót hỗn hợp vào hũ, hấp cách thủy lửa nhỏ 20–25 phút đến khi flan đông mịn.",
-    "Để lạnh, úp ra đĩa khi ăn."
+    "Thắng toàn bộ đường với ít nước trên lửa nhỏ tới khi chuyển màu caramel vàng nâu; tráng đều đáy khuôn, để nguội — đường trong món này 100% là caramel, custard không có đường riêng (độ ngọt đến từ sữa đặc).",
+    "Đánh tan trứng gà nhẹ tay, tránh tạo bọt.",
+    "Đun sữa tươi và sữa đặc vừa ấm (không sôi), rót từ từ vào trứng, khuấy đều, lọc qua rây cho mịn.",
+    "Rót hỗn hợp vào khuôn đã có caramel.",
+    "Hấp lửa nhỏ 15–35 phút (hoặc hấp cách thuỷ nước 90–95 °C); hấp trực tiếp thì thỉnh thoảng mở vung thoát hơi.",
+    "Flan đạt khi cắm tăm vào giữa rút ra sạch/hơi ẩm, mặt bánh còn hơi sóng sánh; để lạnh tối thiểu 2–3 giờ trước khi ăn."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-banh-flan-bang-sua-dac-thom-ngon-mem-min-khong-bi-05055",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH — dùng cách 2 (sữa đặc + sữa tươi, khớp file nhất; 11 cái): quy đổi trứng 17,1g, sữa tươi 39,9g, sữa đặc 13,7g, đường caramel 9,1g/khẩu phần 90g."
+    },
+    {
+      "url": "http://www.savourydays.com/demo-flan-creme-caramel-kem-caramel/",
+      "accessed": "2026-10-31",
+      "note": "Savoury Days (Linh Trang) — công thức kiểu Việt Nam (8–10 bánh): trứng 18,1g, sữa tươi 47,6g, sữa đặc 14,3g, đường chỉ làm caramel."
+    },
+    {
+      "url": "https://giadinh.suckhoedoisong.vn/cong-thuc-lam-banh-flan-ngon-chuan-vi-172180426112713677.htm",
+      "accessed": "2026-10-31",
+      "note": "Sức Khỏe & Đời Sống / Gia đình: trứng 16,3g, sữa tươi 38,8g, sữa đặc 15,5g, đường 11,6g — cả 3 nguồn đều khẳng định đường 100% là caramel."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/banh-flan.webp",
@@ -82,7 +100,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt)",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-007 đợt 7: nâng Mức 2 — 3 nguồn đã mở. SỬA trứng gà 40→18g (3/3 nguồn 16,3–18,1g; file cũ lệch +122–150%) và sữa tươi 70→45g (3/3 nguồn 38,8–47,6g). GIỮ sữa đặc 15g (nguồn 13,7–15,5 — khớp gần tuyệt đối) và đường 12g (biên trên dải nguồn 6,7–11,6). Sau sửa tổng nguyên liệu = 90g = đúng serving (file cũ tổng 137g > serving 90g — bất thường tự hết). Vani có ở 3/3 nguồn nhưng kho chưa có slug → hàng đợi nguyên liệu; whipping cream chỉ 1/3 nguồn → không thêm.]",
   "status": "draft",
   "source": "llm_suggested",
   "confidence": "unknown",

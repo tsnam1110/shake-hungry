@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "chieu",
@@ -90,15 +90,28 @@
     }
   ],
   "recipe_steps": [
-    "Cùi bưởi (phần trắng) cắt hạt lựu, bóp muối và rửa xả nhiều lần cho hết đắng, áo bột năng rồi luộc đến khi trong.",
-    "Đậu xanh ngâm, nấu/hấp chín mềm.",
-    "Nấu nước đường với lá dứa, cho đậu xanh và cùi bưởi vào; múc ra ly, chan nước cốt dừa, ăn lạnh."
+    "Khử đắng cùi bưởi: cắt cùi trắng thành miếng nhỏ, bóp muối và xả/vắt 5–6 lần (hoặc chần nước muối 20 giây rồi bóp tiếp) tới khi nếm thử không còn đắng/the.",
+    "Sên cùi với đường tới khi cùi trong, ngậm nước căng; áo bột năng ngay lúc cùi còn nóng.",
+    "Luộc cùi đã áo bột tới khi nổi lên và trong (thêm ~40 giây sau khi nổi), vớt ngâm nước đá giữ giòn.",
+    "Đậu xanh ngâm 30 phút–4 giờ, hấp khoảng 15 phút tới khi nguyên hạt nhưng ấn vào mềm.",
+    "Nấu nước đường với lá dứa, cho bột năng tạo sánh; cho đậu xanh và cùi bưởi vào, đun sôi lại 1–5 phút.",
+    "Múc ra ly, chan nước cốt dừa lên trên khi ăn (cốt là phần chan riêng, không nấu chung toàn bộ)."
   ],
   "recipe_sources": [
     {
-      "url": "https://vi.wikipedia.org/wiki/Ch%C3%A8_b%C6%B0%E1%BB%9Fi",
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-che-buoi-khong-bi-dang-00639",
       "accessed": "2026-10-31",
-      "note": "Chè bưởi — đặc sản Tây Nam Bộ/An Giang, thành phần chính: cùi bưởi, đậu xanh, bột năng, nước cốt dừa, đường."
+      "note": "Điện Máy XANH (5 người): cùi bưởi ~50–60 g/khẩu phần, đậu xanh 40g, đường 29g — nguồn biên tập chuẩn khớp nhất với file."
+    },
+    {
+      "url": "https://www.bachhoaxanh.com/kinh-nghiem-hay/bi-quyet-nau-che-buoi-cui-gion-ngon-khong-dang-de-lam-tai-nha-1395384",
+      "accessed": "2026-10-31",
+      "note": "Bách Hoá Xanh (3–4 người): số lấy từ từng bước nấu (trang không có bảng tổng); biến thể nấu nguyên nồi nước cốt chan riêng — ngoại lệ về cốt dừa."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/11799192",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Quỳnh Phương (Hà Nội): biến thể truyền thống; đậu xanh 33 g/khẩu phần, cốt dừa 36g."
     }
   ],
   "media": [
@@ -111,7 +124,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt)",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-007 đợt 7: nâng Mức 2 — 3 nguồn đã mở (loại trừ bachhoaxelam.com nhái tên BHX và các aggregator). GIỮ toàn bộ định lượng: cùi bưởi 60g trong dải nguồn (27–85); đậu xanh 35g (nguồn 33–43); đường 25g (nguồn chuẩn 29; hai nguồn còn lại ngọt hơn hẳn do gồm đường sên cùi + nước cốt riêng); cốt dừa 30g (giữa 20 và 36 của 2 nguồn đáng tin; số 160 của BHX là ngoại lệ nấu nguyên nồi cốt chan). Bột năng 12g GIỮ kèm giải trình: mọi nguồn đều ghi tổng bột năng của mẻ cao (24–63g/người) nhưng phần lớn là bột ÁO cùi bị rây bỏ/rơi khi luộc và bột pha nước cốt — không có ≥2 nguồn đồng thuận về lượng ăn vào để sửa; 12g là ước lượng phần sánh + áo bám. BẤT THƯỜNG SLUG (chờ chủ dự án): file dùng slug buoi (múi bưởi, 38 kcal/100g) cho CÙI trắng — phần xốp chủ yếu xơ + nước, khác hẳn múi; kho chưa có slug cui-buoi. Việc tạo cui-buoi (null có hồ sơ — chưa có FCT đạt chuẩn cho cùi) hay chấp nhận ánh xạ buoi là quyết định của chủ dự án. Ghi nhận thêm: cả 3 nguồn dùng đậu xanh đã bóc vỏ trong khi file dùng dau-xanh-hat (hạt nguyên vỏ) — lệch ánh xạ nhẹ, kho chưa có slug đậu bóc vỏ.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

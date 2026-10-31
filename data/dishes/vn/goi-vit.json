@@ -6,7 +6,7 @@
   "names": [
     {
       "locale": "vi",
-      "name": "gỏi vịt",
+      "name": "Gỏi vịt",
       "is_primary": true
     },
     {
@@ -25,7 +25,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "tron",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -49,7 +49,7 @@
     },
     {
       "ingredient_slug": "bap-chuoi",
-      "quantity": 50,
+      "quantity": 90,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -58,6 +58,14 @@
     {
       "ingredient_slug": "hanh-tay",
       "quantity": 25,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "ca-rot",
+      "quantity": 20,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -129,15 +137,34 @@
     }
   ],
   "recipe_steps": [
-    "Luộc vịt với gừng cho thơm, chặt miếng hoặc xé sợi.",
-    "Hoa chuối bào mỏng ngâm nước chanh cho trắng; hành tây thái mỏng.",
-    "Trộn thịt vịt với hoa chuối, hành tây, rau răm và nước mắm gừng chua ngọt; rắc lạc rang, hành phi."
+    "Vịt chà muối và rượu trắng pha gừng khoảng 10 phút khử mùi, rửa sạch; luộc khoảng 30 phút tới khi đũa xăm không ra nước đỏ.",
+    "Vớt vịt ngâm nước đá khoảng 5 phút cho da giòn, để nguội, chặt hoặc xé miếng vừa ăn.",
+    "Hoa chuối tước bẹ già, thái sợi ngang thật mỏng, ngâm ngay nước muối loãng pha chanh ít nhất 30 phút, rửa nhiều lần, vắt ráo.",
+    "Hành tây thái khoanh, để tủ lạnh khoảng 20 phút cho giảm hăng, giữ giòn; cà rốt thái sợi.",
+    "Pha nước trộn theo tỉ lệ nước mắm : nước cốt chanh : đường ≈ 2 : 2 : 1; trộn vịt, hoa chuối, hành tây, cà rốt và rau răm, để ngấm khoảng 20 phút.",
+    "Rắc lạc rang và hành phi; dọn kèm chén mắm gừng (gừng thuộc phần mắm chấm này, không trộn trực tiếp vào gỏi)."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://cachnaungon.com/2-cach-lam-goi-vit-cuc-ngon-voi-bap-cai-hoa-chuoi-01534/",
+      "accessed": "2026-10-31",
+      "note": "Bản đăng lại nguyên văn bài Điện Máy XANH '2 cách làm gỏi vịt' (ảnh CDN tgdd.vn) — biến thể hoa chuối (3 người): phần hoa chuối bào ăn được ~85–100 g/khẩu phần; tính là nguồn ĐMX."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/6589424",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Hoàng Ngọc, 'Gỏi vịt bắp cải & cháo vịt' (4 phần): có cà rốt và bắp chuối bào; chấm mắm gừng."
+    },
+    {
+      "url": "https://tailieu.duytan.edu.vn/tailieu/2013/20130115/hotmoingay4/amthucvn_139__0721.pdf",
+      "accessed": "2026-10-31",
+      "note": "Công thức tạp chí Ẩm Thực VN (thư viện ĐH Duy Tân): gỏi hoa chuối trộn ức vịt theo tỉ lệ hoa chuối : thịt vịt = 1:1."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-007 đợt 7: nâng Mức 2 — 3 nguồn phân biệt đã mở (hai trang chép lại ĐMX đã khử trùng lặp). SỬA bắp chuối 50→90g (2 nguồn đồng thuận: ~85–100g và tỉ lệ 1:1 với thịt vịt; file cũ tỉ lệ 0,42:1). BỔ SUNG cà rốt 20g — 4/4 nguồn đã mở đều có, file thiếu hẳn. GIỮ thịt vịt 120g và bộ gia vị trộn theo dải nguồn; gừng 5g giữ với vai trò thuộc mắm gừng chấm (bước nấu đã ghi rõ). Biến thể bắp cải phổ biến ngang hoa chuối — file giữ bản hoa chuối thuần, không trộn bắp cải vào.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

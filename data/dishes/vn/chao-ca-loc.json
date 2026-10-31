@@ -6,7 +6,7 @@
   "names": [
     {
       "locale": "vi",
-      "name": "cháo cá lóc rau đắng",
+      "name": "Cháo cá lóc rau đắng",
       "is_primary": true
     },
     {
@@ -25,7 +25,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -60,7 +60,23 @@
       "confidence": "low"
     },
     {
+      "ingredient_slug": "nam-rom",
+      "quantity": 50,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
       "ingredient_slug": "rau-dang",
+      "quantity": 30,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "gia-do",
       "quantity": 30,
       "unit_name": "g",
       "is_optional": false,
@@ -106,14 +122,49 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-tim",
+      "quantity": 10,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dau-an",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Cá lóc luộc chín, gỡ thịt, bỏ xương; giữ nước luộc cá nấu cháo.",
-    "Nấu cháo gạo bằng nước luộc cá cho nhừ; phi hành, xào sơ thịt cá với nước mắm, tiêu.",
-    "Múc cháo ra tô, cho thịt cá lên, ăn kèm rau đắng đất tươi chấm nước mắm ớt, dùng nóng."
+    "Gạo tẻ vo sạch, rang vàng thơm trên chảo khô để hạt cháo nở mà không nát.",
+    "Cá lóc làm sạch, luộc chín trong nồi nước với gừng; vớt cá ra gỡ lấy thịt, bỏ xương, giữ lại nước luộc cá làm nước nấu cháo.",
+    "Ướp thịt cá với nước mắm và tiêu khoảng 15 phút cho thấm.",
+    "Cho gạo đã rang vào nước luộc cá, nấu lửa vừa khoảng 30–40 phút, khuấy đều tay tránh khê đáy, tới khi cháo nhừ sánh.",
+    "Phi thơm hành tím với dầu ăn, cho nấm rơm vào xào 2–3 phút rồi trút vào nồi cháo; cho thịt cá vào, nêm muối và nước mắm vừa ăn.",
+    "Múc cháo ra tô, rắc hành lá; dọn kèm rau đắng và giá đỗ để nhúng cháo nóng khi ăn, chấm cá với nước mắm ớt."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/3-cach-nau-chao-ca-loc-thom-ngon-va-bo-duong-cho-gia-dinh-01164",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH — dùng biến thể 'Cháo cá lóc rau đắng miền Tây' (3 người): nấm rơm 200 g/mẻ, giá, hành tím, dầu phi hành; biến thể nồi cơm điện trong cùng bài tính chung 1 nguồn."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/17132133",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Annie Vo, 'Cháo Cá Lóc Rau đắng' (3 người): nấm rơm và giá đỗ cùng mức với nguồn ĐMX."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/2855128",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Lớp Trưởng, 'Cháo Cá Lóc Trà Vinh' (8 khẩu phần): gạo rang trước khi nấu, rau đắng ruộng ăn kèm."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/chao-ca-loc.webp",
@@ -124,7 +175,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Dùng nguyên liệu mới đề xuất: rau-dang (chờ bổ sung file nguyên liệu vào data/ingredients/).",
+  "import_note": "Soạn nháp đợt mở rộng 300 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Dùng nguyên liệu mới đề xuất: rau-dang (chờ bổ sung file nguyên liệu vào data/ingredients/). [LV2-007 đợt 7: nâng Mức 2 — 3 nguồn độc lập đã mở (bản VinID sao chép nguyên danh sách của ĐMX nên gộp vào ĐMX). BỔ SUNG nấm rơm 50g, giá đỗ 30g, hành tím 10g, dầu ăn 5g — cả 4 dòng đều có ở ≥2 nguồn, file thiếu hẳn. GIỮ gạo tẻ 60g kèm bất thường: 2/3 nguồn cho 19–25g (cháo loãng kiểu miền Tây), 1 nguồn cho 100g; chuẩn nội bộ các món cháo Mức 2 hiện hành (chao-ga, chao-suon đều 60g/450g) ủng hộ giữ — đổi sang phong cách loãng là quyết định của chủ dự án. Cá lóc 120g và rau đắng 30g giữ ở biên dưới dải nguồn. Cà rốt chỉ 1 bài có — biến thể, không thêm.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

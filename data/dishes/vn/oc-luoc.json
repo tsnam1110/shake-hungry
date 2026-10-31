@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "luoc",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "chieu",
@@ -74,7 +74,7 @@
     },
     {
       "ingredient_slug": "duong-trang",
-      "quantity": 4,
+      "quantity": 8,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -106,16 +106,33 @@
     }
   ],
   "recipe_steps": [
-    "Ốc ngâm nước vo gạo cho nhả sạch bùn, rửa kỹ.",
-    "Luộc ốc với sả đập dập, lá chanh, gừng đến khi mày ốc bong.",
-    "Pha nước mắm gừng chua ngọt.",
-    "Dọn ốc nóng, lễ thịt ốc, chấm nước mắm gừng."
+    "Ngâm ốc trong nước vo gạo 1–3 giờ với ớt cắt cho nhả bùn, rửa lại khoảng 3 lần.",
+    "Luộc ốc với rất ít nước (khoảng 1 chén), sả đập dập cắt khúc, lá chanh và 1 nhúm muối; đậy vung, lửa lớn.",
+    "Chỉ khi sôi trào mới mở vung đảo một lần (đảo sớm làm ốc đứt ruột); sôi thêm vài phút, ốc mở miệng/mày bong là tắt bếp ngay — luộc kỹ thịt quắt, dai, ruột thụt khó khêu.",
+    "Pha nước chấm: giã gừng, sả, tỏi, ớt; pha nước mắm, đường và nước (có thể đun sôi để nguội), cho cốt chanh và lá chanh thái chỉ sau cùng.",
+    "Dọn ốc nóng kèm chén nước chấm; khêu ốc chấm ngập mắm."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.cet.edu.vn/cach-luoc-oc-ngon",
+      "accessed": "2026-10-31",
+      "note": "CET (Chef Lập) — mẻ 2 kg ốc nguyên vỏ: sả 5 cây, lá chanh 10 lá; nước chấm quy đổi đường ~7,5 g/khẩu phần."
+    },
+    {
+      "url": "https://danviet.vn/huong-dan-cach-luoc-oc-ngon-tai-nha-7777986989-d733573.html",
+      "accessed": "2026-10-31",
+      "note": "Dân Việt (báo) — mẻ 2 kg ốc mít nguyên vỏ: đường chấm ~9 g/khẩu phần; ngâm nước vo gạo 2–3 giờ."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/544370-%E1%BB%91c-lu%E1%BB%99c",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Thuý Ngân (4 phần, 1,5 kg nguyên vỏ): nguồn duy nhất cho khẩu phần trực tiếp — 375 g nguyên vỏ/khẩu phần, khẳng định serving 300g của file là cân đĩa nguyên vỏ."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt).",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [LV2-007 đợt 7: nâng Mức 2 — 3 họ nguồn đã mở. SỬA đường chấm 4→8g (2 nguồn độc lập đồng thuận ~7,5–9g, lệch >75%). GIỮ NGUYÊN dòng ốc 250g + hồ sơ quy ước: mọi nguồn đều kê NGUYÊN VỎ và serving 300g là cân đĩa nguyên vỏ (nguồn trực tiếp: 375g); tỉ lệ thịt ăn được của oc-buou (~20–25% cân nguyên vỏ) CHƯA có hệ số có nguồn trong kho (edible_portion_pct = null, hồ sơ nguyên liệu ghi 'cần tự cân') — đây là ca cân thô–tinh cùng lớp quy ước đang chờ chủ dự án ở LV2-005 §4 (tiền lệ giữ móng giò ở bun-doc-mung đợt này), không tự quy đổi xuống ~70g. Khi chủ dự án chốt hệ số, áp dụng đồng loạt cho nhóm món nguyên vỏ. Nước mắm 12g giữ kèm ghi nhận phân tán (quy đổi mẻ cho 3–6g nhưng chén chấm cá nhân thực tế ~1 muỗng canh). Ghi nhận: nguồn dùng ốc mít/ốc tuỳ loại, không nguồn nào khẳng định ốc bươu — giữ slug oc-buou (lựa chọn của file); tag loai:mon-chinh so với bản chất món ăn chơi — ghi nhận chờ phân xử.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

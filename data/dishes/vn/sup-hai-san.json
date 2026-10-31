@@ -6,7 +6,7 @@
   "names": [
     {
       "locale": "vi",
-      "name": "súp hải sản",
+      "name": "Súp hải sản",
       "is_primary": true
     },
     {
@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "chieu",
@@ -59,6 +59,14 @@
     {
       "ingredient_slug": "trung-cut",
       "quantity": 20,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "trung-ga",
+      "quantity": 15,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -130,15 +138,34 @@
     }
   ],
   "recipe_steps": [
-    "Luộc tôm, mực và cua, giữ nước luộc làm nước dùng; bóc vỏ, thái miếng vừa ăn, cua gỡ lấy thịt.",
-    "Nấu nước dùng với nấm hương, cà rốt; cho hải sản và trứng cút vào.",
-    "Xuống bột năng cho sệt, nêm nước mắm, rắc hành, rau mùi, tiêu và dầu mè."
+    "Hầm nước dùng gà hoặc xương khoảng 30–60 phút, hớt bọt, lọc lấy nước trong.",
+    "Cua biển luộc ít nước xâm xấp mặt, gỡ lấy thịt; tôm chần khoảng 2 phút tới khi săn và hồng; mực làm sạch cắt miếng vừa ăn.",
+    "Nấm hương khô ngâm nước ấm 10 phút, thái sợi; trứng cút luộc khoảng 3 phút, bóc vỏ.",
+    "Đun sôi nước dùng, cho nấm, thịt cua, tôm, mực và trứng cút vào, nấu 7–8 phút.",
+    "Hoà bột năng với nước lạnh, rót từ từ vào nồi, khuấy đều tay, đun thêm tới khi súp sánh lại.",
+    "Cho trứng gà đã đánh tan vào sau cùng, khuấy một chiều 1–2 phút cho trứng tạo vân sợi; tắt bếp, thêm dầu mè, rắc hành lá, rau mùi và tiêu, dùng nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/3-cach-nau-sup-hai-san-rong-bien-chua-cay-va-nam-tuyet-ngon-09839",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH — biến thể 'Súp hải sản nấm tuyết' (4 người): đúng định danh file (tôm sú + mực + cua + bột năng 12,5 g/khẩu phần); có trứng gà tạo vân."
+    },
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-nau-sup-cua-oc-heo-thom-ngon-bo-duong-cho-ca-nha-08091",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH — họ súp cua (4 người): cua biển nguyên con gỡ thịt, trứng cút, nấm đông cô, bột năng; phần óc heo là riêng của biến thể, không đưa vào file."
+    },
+    {
+      "url": "https://cookbeo.com/recipes/sup-cua",
+      "accessed": "2026-10-31",
+      "note": "Cookbeo — súp cua biển (4 khẩu phần): cua hấp gỡ thịt (~22–26 g thịt/khẩu phần), trứng gà tạo vân, xào nhân trước khi nấu."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-007 đợt 7: nâng Mức 2 — 3 nguồn đã mở. BỔ SUNG trứng gà 15g — 4/4 công thức đã mở đều có trứng gà tạo vân, file thiếu hẳn (bất thường lớn nhất của món). GIỮ cua biển 30g kèm cơ sở cân: slug cua-bien là THỊT đã gỡ; 30g thịt ≈ 100–120g cua nguyên con/khẩu phần, khớp 2 nguồn (~20–26g). GIỮ tôm sú 40g kèm ghi nhận: 2 biến thể của 1 bài ĐMX cho 25g — chỉ 1 nhà xuất bản, chưa đủ ≥2 nguồn độc lập để sửa; chờ nguồn tôm thứ ba.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

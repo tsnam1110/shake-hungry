@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -111,14 +111,46 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-tim",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Luộc gà với gừng, vớt ra chặt miếng; măng tươi luộc xả nước cho hết đắng.",
-    "Cho măng và nấm hương vào nước luộc gà nấu nước dùng, nêm vừa ăn.",
-    "Trụng bún, xếp thịt gà và măng, chan nước dùng, rắc hành lá, rau răm và tiêu."
+    "Gà ướp hành tím, nước mắm và tiêu khoảng 30 phút; luộc gà 20–30 phút tới khi chín, vớt ra ngâm nước lạnh cho da giòn, xé miếng vừa ăn, giữ nước luộc.",
+    "Măng tươi luộc 10–15 phút, luộc lại tới khi nước hết vàng, xả sạch, xé sợi.",
+    "Phi thơm hành tím, cho măng vào xào riêng khoảng 10 phút cho thấm gia vị.",
+    "Cho măng đã xào vào nồi nước luộc gà, nấu thêm khoảng 15 phút; nêm muối và nước mắm vừa ăn.",
+    "Trụng bún, xếp vào tô cùng thịt gà xé và nấm hương đã ngâm nở.",
+    "Chan nước dùng nóng, rắc hành lá, rau răm; dọn kèm gừng và nước mắm ớt."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://vaobepwiki.com/cach-nau-bun-sa-te-ga-va-bun-mang-ga-don-gian/",
+      "accessed": "2026-10-31",
+      "note": "Bản đăng lại công thức Bách Hoá Xanh (4 phần ăn) — tính là họ BHX/ĐMX: họ này tự chứa cả 2 biến thể măng khô (100 g/mẻ) và măng tươi muối chua (bản BlueStone)."
+    },
+    {
+      "url": "https://vinid.net/blog/cach-nau-bun-mang-ga/",
+      "accessed": "2026-10-31",
+      "note": "VinID (biên tập): dùng măng ngâm 300 g/mẻ — biến thể măng tươi/ngâm, có hành tím 4 củ/mẻ."
+    },
+    {
+      "url": "https://nauankhongkho.vn/blog/ranh-rang-hoc-cach-nau-bun-ga-mang-tuoi-sieu-ngon-chieu-dai-ca-nha-g6bJYw28PKM4",
+      "accessed": "2026-10-31",
+      "note": "Nấu Ăn Không Khó — biến thể ghi thẳng tên 'bún gà măng tươi', măng tươi 500 g/mẻ; xào măng riêng với hành tím trước khi cho vào nồi."
+    },
+    {
+      "url": "https://giadinh.suckhoedoisong.vn/mon-ngon-bun-mang-ga-172090331091233787.htm",
+      "accessed": "2026-10-31",
+      "note": "Gia đình & Sức Khỏe Đời Sống (báo chí): khẳng định 'đặc sản của miền Bắc' — giữ vùng vn-north."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/bun-mang-ga.webp",
@@ -129,7 +161,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt DISH-004 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-004 đợt 4: thử lại tra cứu — dienmayxanh.com bị chặn 429 ngay lần mở đầu, không gom được nguồn đã mở; giữ Mức 1, không truy vấn dồn dập theo kỷ luật chống 429.] [LV2-005 Phần A (2026-10-31): thử lại lần 2 — lần mở đầu tiên (Điện Máy XANH) lại trả 429, dừng ngay theo kỷ luật; chưa có nguồn đã mở nào (0/3). Giữ Mức 1. Ghi nhận từ trích đoạn (KHÔNG tính kiểm chứng): đa số công thức bún măng gà dùng măng KHÔ trong khi file dùng mang-tuoi 60 g — khác biệt định dạng nguyên liệu cốt lõi, cần phân xử khi mở được nguồn.] [LV2-006 đợt 6: GIỮ Mức 1 — bị chặn 429 ngay ở nguồn thứ nhất, lần thứ ba liên tiếp. Trích đoạn tìm kiếm (KHÔNG phải nguồn, không dùng phân xử) gợi ý dòng Hà Nội chủ yếu dùng măng KHÔ trong khi file dùng măng tươi — câu hỏi biến thể còn mở, tuyệt đối không phân xử trên trích đoạn.]",
+  "import_note": "Soạn nháp đợt DISH-004 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-004 đợt 4: thử lại tra cứu — dienmayxanh.com bị chặn 429 ngay lần mở đầu, không gom được nguồn đã mở; giữ Mức 1, không truy vấn dồn dập theo kỷ luật chống 429.] [LV2-005 Phần A (2026-10-31): thử lại lần 2 — lần mở đầu tiên (Điện Máy XANH) lại trả 429, dừng ngay theo kỷ luật; chưa có nguồn đã mở nào (0/3). Giữ Mức 1. Ghi nhận từ trích đoạn (KHÔNG tính kiểm chứng): đa số công thức bún măng gà dùng măng KHÔ trong khi file dùng mang-tuoi 60 g — khác biệt định dạng nguyên liệu cốt lõi, cần phân xử khi mở được nguồn.] [LV2-006 đợt 6: GIỮ Mức 1 — bị chặn 429 ngay ở nguồn thứ nhất, lần thứ ba liên tiếp. Trích đoạn tìm kiếm (KHÔNG phải nguồn, không dùng phân xử) gợi ý dòng Hà Nội chủ yếu dùng măng KHÔ trong khi file dùng măng tươi — câu hỏi biến thể còn mở, tuyệt đối không phân xử trên trích đoạn.] [LV2-007 đợt 7: nâng Mức 2 — thử lại sau 3 đợt 429 liên tiếp ở các đợt trước: gom 5 họ nguồn. KẾT LUẬN BIẾN THỂ: GIỮ măng tươi 60g — măng khô chỉ có ở một nửa họ BHX + 1 nguồn Cookpad (ngữ cảnh măng nứa Yên Bái/Tết), măng tươi/ngâm có ở nửa còn lại của họ BHX + VinID + Nấu Ăn Không Khó; nguồn khẳng định miền Bắc duy nhất không đứng về phía khô → không đạt đồng thuận đổi biến thể. Ghi quy đổi để chủ dự án tham chiếu nếu muốn biến thể khô sau này: 25g măng khô/khẩu phần (theo trọng lượng khô trước ngâm, slug mang-kho 229 kcal/100g khô) — tuyệt đối không ghi 60g khô. BỔ SUNG hành tím 5g (4/5 họ nguồn có, file thiếu hẳn) và bước xào măng riêng (3/5 nguồn có, file thiếu). GIỮ nấm hương khô 5g kèm ghi nhận: chỉ 1 nguồn ủng hộ hiện diện ở mức 1,25g — chưa đủ ≥2 nguồn để sửa, chờ phân xử sau (phương án dự phòng giảm 2–3g).]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -6,7 +6,7 @@
   "names": [
     {
       "locale": "vi",
-      "name": "gỏi xoài xanh tôm khô",
+      "name": "Gỏi xoài xanh tôm khô",
       "is_primary": true
     },
     {
@@ -25,7 +25,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "tron",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -99,7 +99,7 @@
       "ingredient_slug": "chanh",
       "quantity": 5,
       "unit_name": "g",
-      "is_optional": false,
+      "is_optional": true,
       "source": "llm_suggested",
       "confidence": "low"
     },
@@ -129,15 +129,34 @@
     }
   ],
   "recipe_steps": [
-    "Chọn xoài xanh chua, gọt vỏ bào sợi; cà rốt bào sợi.",
-    "Tôm khô rửa sạch, ngâm mềm, rang sơ cho thơm.",
-    "Trộn xoài, cà rốt, tôm khô với nước mắm chua ngọt; rắc lạc rang, hành phi và rau thơm."
+    "Xoài xanh gọt vỏ, bào sợi, ngâm ngay nước đá để ra nhựa và giữ giòn; xoài quá chua thì trộn chút đường, để 10–15 phút rồi vắt bỏ nước chua.",
+    "Tôm khô rửa sạch, ngâm nước ấm 10–15 phút cho mềm, để ráo.",
+    "Phi hành tím vừa hanh vàng, cho tôm khô vào rim nhanh với chút đường và 1 muỗng cà phê nước mắm tới khi săn — tôm khô đã mặn, nêm ít tay.",
+    "Pha nước trộn: nước mắm và đường tỉ lệ 1:1, thêm tỏi ớt băm (chanh chỉ dùng khi xoài chưa đủ chua).",
+    "Trộn xoài, cà rốt với nước trộn trước, chắt bớt nước; cho tôm khô vào trộn đều.",
+    "Rắc lạc rang, hành phi, húng quế và rau răm sau cùng, trộn nhẹ tay, dọn ngay."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/huong-dan-cach-lam-goi-muc-tuoi-xoai-xanh-la-mieng-01028",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH — nền gỏi xoài xanh + nước trộn (2 biến thể, 4 người): lạc 12,5 g/khẩu phần khớp file; mực là phần riêng của biến thể, không đưa vào file."
+    },
+    {
+      "url": "https://yummyday.vn/goi-xoai-tom-kho-401",
+      "accessed": "2026-10-31",
+      "note": "YummyDay (có biên tập) — 'Gỏi xoài tôm khô': đúng định danh file; ghi rõ không cần chanh vì xoài đã chua."
+    },
+    {
+      "url": "https://vietfoodshop.com/goi-xoai-tron-tom-kho/",
+      "accessed": "2026-10-31",
+      "note": "VietFoodShop — 'Gỏi xoài trộn tôm khô': đặc sản đường phố Sài Gòn; ghi rõ không cho chanh/dấm."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-007 đợt 7: nâng Mức 2 — 3 nguồn đã mở. GIỮ toàn bộ định lượng chính (lạc 12g khớp gần tuyệt đối 2 nguồn: 12,5g). PHÂN XỬ CHANH: đổi chanh 5g sang dạng tuỳ chọn — 2/3 nguồn nói tường minh không cho chanh (xoài đã chua), 1 nguồn có dùng; tuỳ chọn là phân xử an toàn. Húng lũi là rau thơm thứ ba ở cả 3 nguồn nhưng kho chưa có slug — đưa vào hàng đợi biên soạn nguyên liệu, không thay bằng húng quế (khác loài).]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

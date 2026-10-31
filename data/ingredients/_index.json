@@ -1,6 +1,6 @@
 {
   "_generated_by": "php artisan lacdoi:export-data — không sửa tay (DATA-REPOSITORY §2)",
-  "count": 414,
+  "count": 420,
   "ingredients": [
     {
       "slug": "bach-tuoc",
@@ -163,6 +163,11 @@
       "category": "tinh-bot"
     },
     {
+      "slug": "bot-khoai",
+      "name_vi": "Bột khoai (sợi tinh bột sắn, khô)",
+      "category": "tinh-bot"
+    },
+    {
       "slug": "bot-mi",
       "name_vi": "Bột mì đa dụng",
       "category": "tinh-bot"
@@ -186,6 +191,11 @@
       "slug": "bot-ngo",
       "name_vi": "Bột ngô (bột bắp)",
       "category": "tinh-bot"
+    },
+    {
+      "slug": "bot-no",
+      "name_vi": "Bột nở (baking powder)",
+      "category": "gia-vi"
     },
     {
       "slug": "bot-que",
@@ -420,6 +430,11 @@
     {
       "slug": "canh-ga",
       "name_vi": "Cánh gà (cả da, sống)",
+      "category": "thit"
+    },
+    {
+      "slug": "cha-bong",
+      "name_vi": "Chà bông (ruốc thịt lợn)",
       "category": "thit"
     },
     {
@@ -773,6 +788,11 @@
       "category": "tinh-bot"
     },
     {
+      "slug": "gelatin",
+      "name_vi": "Gelatin (bột, khô không đường)",
+      "category": "khac"
+    },
+    {
       "slug": "ghe",
       "name_vi": "Ghẹ xanh (sống)",
       "category": "thuy-san"
@@ -906,6 +926,11 @@
       "slug": "hung-que",
       "name_vi": "Húng quế",
       "category": "rau-gia-vi"
+    },
+    {
+      "slug": "kem-whipping",
+      "name_vi": "Kem whipping (kem sữa tươi béo, lỏng)",
+      "category": "khac"
     },
     {
       "slug": "khoai-lang",
@@ -1176,6 +1201,11 @@
       "slug": "me-ga",
       "name_vi": "Mề gà (sống)",
       "category": "thit"
+    },
+    {
+      "slug": "men-no",
+      "name_vi": "Men nở khô (men bánh mì)",
+      "category": "gia-vi"
     },
     {
       "slug": "mi-an-lien",

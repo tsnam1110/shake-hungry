@@ -2,11 +2,11 @@
   "slug": "banh-duc",
   "parent_dish_slug": null,
   "country_code": "VN",
-  "region_code": "vn",
+  "region_code": "vn-north",
   "names": [
     {
       "locale": "vi",
-      "name": "bánh đúc",
+      "name": "Bánh đúc",
       "is_primary": true
     },
     {
@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "chieu",
@@ -34,7 +34,7 @@
   "ingredients": [
     {
       "ingredient_slug": "bot-gao",
-      "quantity": 70,
+      "quantity": 60,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -42,7 +42,7 @@
     },
     {
       "ingredient_slug": "bot-nang",
-      "quantity": 8,
+      "quantity": 15,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -59,6 +59,14 @@
     {
       "ingredient_slug": "moc-nhi-kho",
       "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nam-huong-kho",
+      "quantity": 2,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -90,7 +98,7 @@
     },
     {
       "ingredient_slug": "dau-an",
-      "quantity": 5,
+      "quantity": 10,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -122,12 +130,35 @@
     }
   ],
   "recipe_steps": [
-    "Quấy bột gạo + bột năng với nước và chút muối đến khi đặc mịn, trong.",
-    "Đổ bột ra đĩa, để nguội, cắt miếng quân cờ.",
-    "Xào thịt xay với mộc nhĩ, hành tím làm topping.",
-    "Rưới topping và hành phi lên bánh, chan nước mắm pha ấm."
+    "Ngâm bột gạo và bột năng trong nước 1–2 giờ; lắng chắt nước trong, thay nước mới đúng lượng đã chắt (nếu dùng nước vôi trong thì pha ở bước này — xem import_note).",
+    "Quấy bột trên lửa vừa rồi hạ nhỏ nhất, khuấy liên tục một chiều tới khi bột trắng đục chuyển trong, dẻo quánh, nặng tay, nhấc phới bột đứt đoạn; nấu thêm 5–10 phút lửa nhỏ nhất.",
+    "Xào topping: phi hành tím, xào thịt lợn xay với mộc nhĩ và nấm hương đã ngâm nở, nêm vừa ăn.",
+    "Phi hành thơm để rắc mặt.",
+    "Pha nước chan: nước mắm, đường và nước ấm, đun sôi nhẹ.",
+    "Múc bánh NÓNG thẳng ra bát miệng loe, rắc topping và hành phi, chan nước mắm ấm, rắc rau mùi, ăn ngay — bánh đúc nóng không để nguội cắt miếng (đó là biến thể nguội)."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.huongnghiepaau.com/cach-lam-banh-duc-ha-noi",
+      "accessed": "2026-10-31",
+      "note": "Hướng Nghiệp Á Âu — 'Bánh đúc nóng chuẩn Hà Nội': tỉ lệ gạo : năng = 4:1, phân biệt tường minh bản nóng (múc nóng ra bát, chan mắm ấm) với bản nguội."
+    },
+    {
+      "url": "https://bepxua.vn/banh-duc-nong-mon-an-truyen-thong-binh-di-dac-biet-cua-ha-noi/",
+      "accessed": "2026-10-31",
+      "note": "Bếp Xưa — 'Bánh đúc nóng Hà Nội' (4 người): bột quy đổi 82,5 g/khẩu phần; dầu ~15 ml gồm dầu mè."
+    },
+    {
+      "url": "https://tiphay.vn/bai-viet/cach-lam-banh-duc-nong-ngon-khong-dung-voi-va-han-the-p1893.html",
+      "accessed": "2026-10-31",
+      "note": "Bản đăng lại nguyên văn bài Bách Hoá Xanh (3–5 người): bột quy đổi 50 g/khẩu phần, dầu ~11 ml/khẩu phần — tính là nguồn BHX."
+    },
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-banh-duc-bang-com-nguoi-beo-thom-ngon-bui-tai-nha-13937",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH — biến thể từ cơm nguội (4 người): chỉ dùng đối chiếu topping/nước chan (có nấm hương), không dùng phần bột."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/banh-duc.webp",
@@ -138,7 +169,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). THIẾU NGUYÊN LIỆU: nước vôi trong (phụ — ngâm bột theo cách truyền thống) — cần bổ sung vào kho.",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). THIẾU NGUYÊN LIỆU: nước vôi trong (phụ — ngâm bột theo cách truyền thống) — cần bổ sung vào kho. [LV2-007 đợt 7: nâng Mức 2 — món thực chất là bánh đúc NÓNG kiểu Bắc. SỬA CƠ CẤU BỘT: gạo 70→60g, năng 8→15g — giữ tổng bột ~75–78g (trong dải nguồn 50–82,5) nhưng tỉ lệ năng/gạo của file (0,11) thấp hơn mọi nguồn đúng biến thể (≥0,25); lấy mức bảo thủ 4:1 của HNAAu. SỬA dầu ăn 5→10g (2 nguồn có khẩu phần đồng thuận ~11–15 ml; dầu ở món này trộn vào bột + xào nhân, được ăn vào). BỔ SUNG nấm hương khô 2g — 4/4 nguồn đều có trong topping, file thiếu hẳn. SỬA region vn→vn-north (cả 3 nguồn đúng biến thể đều định danh Hà Nội/Bắc) và VIẾT LẠI toàn bộ bước nấu: bước cũ của file mô tả biến thể NGUỘI ('để nguội, cắt miếng quân cờ') — sai biến thể. Nước vôi trong: 2 nguồn nhắc nhưng kho chưa có slug → chỉ ghi ở bước nấu/hồ sơ, chờ biên soạn nguyên liệu. GIỮ thịt xay 40g kèm ghi nhận xu hướng thấp (1 nguồn 62,5g — chưa đủ 2 nguồn có khẩu phần để sửa). BẤT THƯỜNG CẤP KHO chờ chủ dự án: file con banh-duc-nong (parent = banh-duc) mô tả cùng một món với định lượng mâu thuẫn — cần phân xử gộp về một bản chuẩn hoặc định danh rõ biến thể, tránh nâng cả hai.]",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

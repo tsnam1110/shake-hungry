@@ -6,7 +6,7 @@
   "names": [
     {
       "locale": "vi",
-      "name": "tôm thẻ hấp sả",
+      "name": "Tôm thẻ hấp sả",
       "is_primary": true
     },
     {
@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "hap",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -73,16 +73,16 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "hanh-la",
-      "quantity": 5,
+      "ingredient_slug": "muoi",
+      "quantity": 1,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
     },
     {
-      "ingredient_slug": "muoi",
-      "quantity": 1,
+      "ingredient_slug": "hat-tieu-den",
+      "quantity": 0.5,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -90,15 +90,33 @@
     }
   ],
   "recipe_steps": [
-    "Sả đập dập, cắt khúc, lót đáy đĩa hoặc xửng hấp.",
-    "Xếp tôm lên trên, rắc gừng thái sợi, lá chanh, ớt và chút muối.",
-    "Hấp khoảng 6-8 phút đến khi tôm cong, đỏ đều; ăn kèm muối tiêu chanh."
+    "Tôm thẻ cắt bớt râu, chân, rút chỉ lưng, rửa nước muối loãng, để ráo.",
+    "Ướp tôm với muối và tiêu 5–20 phút cùng sả cắt khúc, lá chanh và gừng thái lát cho thấm và khử tanh.",
+    "Xếp tôm lên xửng, lót sả, gừng, lá chanh ở đáy và rắc mặt.",
+    "Hấp lửa vừa khoảng 10 phút từ khi nước sôi; tôm chín khi cong lại, vỏ chuyển đỏ đều — hấp quá lửa thịt bở, mất ngọt.",
+    "Dọn nóng nguyên vỏ, ăn kèm muối tiêu chanh (muối + cốt chanh + tiêu), bóc vỏ tại bàn."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://danviet.vn/cach-lam-tom-hap-sa-thom-ngon-day-mui-7777527840-d349436.html",
+      "accessed": "2026-10-31",
+      "note": "Dân Việt (báo) — mẻ 500 g tôm nguyên con: sả 50g, có tiêu trong ướp; không hành lá."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/13588294",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Bạch Thiên (3 phần, 500 g tôm nguyên con → ~167 g nguyên con/phần — khớp đĩa 200g của file): có tiêu; không hành lá."
+    },
+    {
+      "url": "https://toitainang.com.vn/tom-hap/",
+      "accessed": "2026-10-31",
+      "note": "Họ Điện Máy XANH (bản đã mở trên toitainang.com.vn; vaobepwiki là bản sao cùng họ — tính 1): mẻ 500 g tôm, hấp ~10 phút, có tiêu và muối; không hành lá."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-007 đợt 7: nâng Mức 2 — 3 họ nguồn đã mở. BỎ hành lá 5g (0/3 nguồn có — phần rắc mặt theo nguồn là sả, gừng, lá chanh, ớt lát); BỔ SUNG tiêu đen 0,5g (3/3 nguồn đều ướp tiêu, file thiếu hẳn). GIỮ NGUYÊN dòng tôm 150g + hồ sơ quy ước: món hấp nguyên vỏ ăn bóc tại bàn; nguồn cho khẩu phần nguyên con ~167g, khớp đĩa 200g của file; tỉ lệ thịt ăn được của tom-the (~55% cân nguyên con) chưa có hệ số có nguồn trong kho (edible_portion_pct = null) — ca cân thô–tinh chờ chủ dự án (LV2-005 §4), không tự quy đổi xuống ~85g. GIỮ sả 20g (= 1 cây, khớp cách đếm theo cây của 3 nguồn), gừng 5g, lá chanh 2g. Sửa viết hoa tên chính theo DATA-009. Ghi nhận: không nguồn nào ghi riêng loài tôm thẻ — giữ slug theo tên món.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

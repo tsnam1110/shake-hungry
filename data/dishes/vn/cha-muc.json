@@ -17,8 +17,8 @@
   ],
   "is_eat_out": true,
   "is_home_cook": true,
-  "cooking_method": "chien",
-  "completeness_level": 1,
+  "cooking_method": "chien-ngap-dau",
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -87,15 +87,41 @@
       "is_optional": true,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "toi",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Mực làm sạch, để ráo, giã hoặc xay rối để giữ độ giòn.",
-    "Trộn mực với hành tím, thì là, nước mắm, tiêu; quết cho dai.",
-    "Nặn miếng dẹt, chiên vàng giòn.",
-    "Ăn nóng, chấm nước mắm gừng hoặc tương ớt."
+    "Mực làm sạch (bỏ túi mực không làm vỡ, nội tạng, da), thấm thật ráo; thân thái dài 5–7 cm, râu và vây thái hạt lựu.",
+    "Ướp mực với hành tím, tỏi, thì là, nước mắm và tiêu 30 phút–1 giờ.",
+    "Giã tay bằng cối đá cho mực nhuyễn, dẻo, dính (cho từng ít một, quết liên tục); nếu xay máy chỉ chạy 5–7 giây rồi nghỉ, tránh nóng làm chín mực. Trộn thịt lợn xay và bột năng nếu dùng.",
+    "Thoa dầu lên tay chống dính, nặn miếng tròn dẹt cỡ 1 muỗng canh đầy.",
+    "Chiên ngập dầu sôi lăn tăn trong chảo sâu, nặn đến đâu thả đến đó; mới thả không gỡ/lật (chả bám đáy) — khi chín chả tự nổi, mặt dưới vàng ruộm mới lật mặt còn lại.",
+    "Vớt ra để ráo dầu, ăn nóng, chấm tương ớt hoặc nước mắm gừng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://pasgo.vn/blog/cach-lam-cha-muc-ngon-ngat-ngay-dung-chuan-ha-long-3365",
+      "accessed": "2026-10-31",
+      "note": "PasGo — 'Chả mực Hạ Long' (có biên tập): mẻ 1 kg mực mai + 100 g mỡ khổ; quy đổi neo theo mực — tỏi ~7g/khẩu phần của file."
+    },
+    {
+      "url": "https://vinid.net/tin-tong-hop/cach-lam-cha-muc-ngon-nhat-tai-nha-cong-thuc-lam-cha-muc-gia-tay-don-gian/",
+      "accessed": "2026-10-31",
+      "note": "VinID — 'Chả mực giã tay' (4 người): mực mai 500–600g, chiên ngập dầu ghi rõ; hành khô + tỏi 50 g/mẻ."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/25114164",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Nhu Quynh (5 người): biến thể tại gia dùng mực ống (như file) — chỉ dùng đối chiếu tỉ trọng mẻ trữ đông."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/cha-muc.webp",
@@ -106,7 +132,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 10 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).]",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 10 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).] [LV2-007 đợt 7: nâng Mức 2 — 3 họ nguồn đã mở. BỔ SUNG tỏi 3g (3/3 nguồn có, file thiếu hẳn; lấy thận trọng vì hành tím đã 5g). ĐỔI method chien → chien-ngap-dau (2 nguồn độc lập ghi rõ). GIỮ mực 120g (2/3 nguồn ủng hộ 120–150) và thịt lợn xay tuỳ chọn 20g (vai trò chất béo lợn có ở 3/3 nguồn ở mức 12–43g). BẤT THƯỜNG LOÀI (hàng đợi nguyên liệu): chuẩn Hạ Long là mực MAI (2 nguồn) — kho chưa có slug mực mai/nang nên giữ muc-ong (biến thể tại gia có nguồn ủng hộ); nhãn dac-san:quang-ninh chưa tồn tại trong taxonomy — không gán, chỉ ghi nhận (tiền lệ LV2-006).]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

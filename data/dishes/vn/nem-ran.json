@@ -25,7 +25,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "chien-ngap-dau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -69,7 +69,7 @@
     },
     {
       "ingredient_slug": "mien-dong",
-      "quantity": 15,
+      "quantity": 7,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -78,6 +78,14 @@
     {
       "ingredient_slug": "moc-nhi-kho",
       "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nam-huong-kho",
+      "quantity": 2,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -93,7 +101,15 @@
     },
     {
       "ingredient_slug": "cu-dau",
-      "quantity": 15,
+      "quantity": 20,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-tay",
+      "quantity": 12,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -165,12 +181,35 @@
     }
   ],
   "recipe_steps": [
-    "Trộn nhân: thịt xay, tôm, miến ngâm mềm cắt ngắn, mộc nhĩ, cà rốt, củ đậu, trứng; nêm nước mắm, tiêu.",
-    "Trải bánh tráng (bánh đa nem), cho nhân vào cuốn chặt.",
-    "Chiên ngập dầu hai lửa cho vỏ vàng giòn.",
-    "Cắt khúc, ăn kèm rau sống, chấm nước mắm chua ngọt."
+    "Ngâm miến dong nước lạnh 10 phút (hoặc nước ấm 15 phút), cắt khúc 2–3 cm; mộc nhĩ ngâm ~40 phút, nấm hương ngâm ~20 phút nước ấm, tất cả băm nhỏ.",
+    "Trộn nhân: thịt lợn xay, tôm (nếu dùng), miến, mộc nhĩ, nấm hương, cà rốt, củ đậu, hành tây, hành tím; trứng chỉ trộn ngay trước khi cuốn, ướp nhân 5–15 phút (trứng làm nhân chảy nước nếu trộn sớm).",
+    "Làm mềm bánh đa nem bằng khăn ẩm (hoặc phết giấm pha đường), cho nhân vào cuốn vừa tay — không cuốn chặt vì nhân nở, dễ bục.",
+    "Rán lần 1 trong dầu thật già rồi hạ lửa nhỏ–vừa; nem chín ~70% mới lật, rán tới khi vàng nhẹ.",
+    "Vớt nem dựng đứng trên giấy thấm cho ráo dầu.",
+    "Trước khi ăn rán lại lần 2 cho giòn; dọn kèm nước mắm chua ngọt pha loãng với tỏi ớt."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://vietnamnet.vn/bi-quyet-lam-nem-chuan-vi-ha-noi-cong-thuc-duoc-hang-nghin-nguoi-tan-dong-704296.html",
+      "accessed": "2026-10-31",
+      "note": "VietNamNet — công thức của chị Duyên Hoàng, nem rán truyền thống Hà Nội (mẻ 70–80 cái, quy đổi theo cái): miến 8g, củ đậu 26,7g, nấm hương và hành tây đều có."
+    },
+    {
+      "url": "https://www.nguyenkim.com/cach-lam-nem-ran-NKKD6974.b",
+      "accessed": "2026-10-31",
+      "note": "Nguyễn Kim — 'Nem rán Hà Nội/miền Bắc' (mẻ 30 cái): miến 6,7g, hành tây 13,3g, nấm hương ~2g (bản sao nguyên văn trên bloganngon.edu.vn không tính riêng)."
+    },
+    {
+      "url": "https://tailieu.duytan.edu.vn/tailieu/2013/20130502/nhokheo8/mon_chien_53__4062.pdf?rand=618118",
+      "accessed": "2026-10-31",
+      "note": "Tài liệu dạy nấu ăn ĐH Duy Tân — 'Nem rán kiểu Bắc' (quy đổi neo theo thịt): miến 3g, củ đậu ~20g, hành tây ~15g, nấm hương ~1,5–2g."
+    },
+    {
+      "url": "https://cookpad.com/us/recipes/552767/print",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Nguyễn Lê Hồng Hạnh: biến thể thiên Nam (khoai môn, không miến/trứng/củ đậu) — chỉ dùng làm đối chứng phân tán, không neo phân xử Bắc."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/nem-ran.webp",
@@ -181,7 +220,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 12 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).]",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 12 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).] [LV2-007 đợt 7: nâng Mức 2 — 4 họ nguồn độc lập đã mở. SỬA miến dong 15→7g (3 nguồn độc lập đồng thuận 3–8g — file cũ cao hơn >2 lần) và củ đậu 15→20g (2 nguồn trực tiếp 20–26,7g; lấy cận dưới). BỔ SUNG nấm hương khô 2g và hành tây 12g — hai dòng định danh thiếu hẳn, có ở 3/3 nguồn Bắc (1,5–2,7g và 10,7–15g). GIỮ thịt 50g, mộc nhĩ 5g, cà rốt 15g, trứng 10g (phân tán 5–27, file nằm trong dải), tôm tuỳ chọn 20g (chỉ 1 nguồn ủng hộ ở mức 27g — giữ tuỳ chọn, không sửa). Method chien-ngap-dau được 3 nguồn khẳng định. Tổng nguyên liệu thô sau vá ~178g so với serving 210g — phần chênh là nước pha loãng của chén chấm.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

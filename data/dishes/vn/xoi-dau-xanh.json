@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "hap",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -78,15 +78,39 @@
     }
   ],
   "recipe_steps": [
-    "Gạo nếp ngâm qua đêm; đậu xanh ngâm mềm, nấu/hấp chín, giã hoặc để nguyên hạt tuỳ thích.",
-    "Trộn nếp với đậu xanh, chút muối và nước cốt dừa, đồ hai lửa cho xôi chín dẻo.",
-    "Xới xôi ra gói/đĩa, rắc hành phi, ăn kèm đường nếu thích ngọt."
+    "Ngâm gạo nếp 8 giờ; đậu xanh ngâm 3–8 giờ (hoặc 60 phút nước ấm nếu nấu nồi cơm điện), vo sạch để ráo.",
+    "Hấp đậu xanh khoảng 8–20 phút tới khi hạt chín mềm, bóp nhẹ là nhừ.",
+    "Trộn nếp với nước cốt dừa và muối; hấp khoảng 20 phút, xới đều, hấp thêm 5 phút cho xôi chín đều, dẻo ráo (đồ hai lửa).",
+    "Xới xôi ra, trộn hoặc rải đậu xanh đã hấp lên mặt (tuỳ bản: xôi vò trộn đều khi xôi còn nóng).",
+    "Rắc hành phi nếu thích; đường chỉ thêm cho bản ngọt nhẹ.",
+    "Dọn nóng cho bữa sáng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-nau-xoi-hoa-dau-biec-dau-xanh-hinh-trai-tim-tang-me-ngay-13572",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH — biến thể hoa đậu biếc (lõi nếp–đậu–cốt giữ nguyên để đối chiếu tỉ lệ): tỉ lệ đậu/nếp = 0,30; ngâm nếp 8 giờ, hấp đậu 8 phút."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/24889287",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Bảo Bình (TP.HCM), đúng món (3 phần): tỉ lệ đậu/nếp = 0,28; bản mặn không cốt dừa, không đường."
+    },
+    {
+      "url": "http://eco-mart.vn/cach-nau-xoi-dau-xanh-bang-noi-com-dien-ngon-deo",
+      "accessed": "2026-10-31",
+      "note": "Eco-Mart (trang biên tập siêu thị): tỉ lệ đậu/nếp = 0,20, cốt dừa 0,50/nếp; đường ghi rõ 'không thêm cũng không sao' — khẳng định đường là tuỳ chọn."
+    },
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-nau-xoi-vo-mien-bac-don-gian-de-lam-ai-cung-thich-an-la-11524",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH — 'Xôi vò miền Bắc': chỉ dùng dữ kiện bước (trang mở bị cắt phần nguyên liệu) — hấp đậu 20 phút, hấp xôi 20 + 5 phút."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt)",
+  "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-007 đợt 7: nâng Mức 2 — 3 nguồn định lượng + 1 nguồn chỉ lấy bước. GIỮ toàn bộ định lượng theo cơ sở tỉ lệ trên nếp khô (thang serving các nguồn lệch nhau quá lớn): tỉ lệ đậu/nếp của file 0,333 chỉ cao hơn nguồn cao nhất (0,30) 11% — không đạt ngưỡng sửa; cốt dừa 20g là yếu tố phân biến thể Nam–Bắc (nguồn 0 / 0,05 / 0,50 theo nếp), file nằm giữa. BẤT THƯỜNG (ghi nhận): 3/3 nguồn định lượng dùng đậu xanh ĐÃI VỎ, file dùng slug dau-xanh-hat (hạt nguyên) — kho chưa có slug đậu đãi vỏ riêng, giữ slug hiện tại (quyết định cấp kho). Cùng bất thường thang xôi như xoi-ga: khô 200g (nếp 150 + đậu 50) cho thành phẩm ~400–430g ≈ gấp đôi serving 220g — chờ quy ước cấp kho. Giữ nguyên needs_review=true của file.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

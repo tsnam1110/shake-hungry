@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "xao",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -84,7 +84,7 @@
       "ingredient_slug": "rau-ram",
       "quantity": 5,
       "unit_name": "g",
-      "is_optional": true,
+      "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
     },
@@ -95,18 +95,61 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "toi",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-tay",
+      "quantity": 20,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "lac-rang",
+      "quantity": 8,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Hến đãi sạch, luộc tách thịt.",
-    "Phi sả, hành tím với dầu, cho thịt hến vào xào lửa lớn với nước mắm, ớt 4–5 phút.",
-    "Rắc rau răm; ăn nóng, xúc bằng bánh tráng nướng."
+    "Hến ngâm nước muối loãng 30 phút (hoặc rửa nước ấm) cho nhả cát, rửa sạch.",
+    "Luộc hến 5–7 phút tới khi mở miệng, vớt ra đãi lấy thịt, để ráo.",
+    "Phi thơm hành tím và tỏi trong dầu nóng; cho sả băm vào đảo cùng.",
+    "Cho thịt hến vào xào lửa lớn 3–5 phút tới khi săn và khô ráo; nêm nước mắm và ớt vừa ăn (có hành tây thì cho vào cùng lúc, xào nhanh tay vì hến và hành tây ra nước).",
+    "Cho rau răm vào sau cùng, đảo đều rồi tắt bếp ngay.",
+    "Dọn nóng, rắc lạc rang nếu thích, xúc bánh tráng ăn ngay khi bánh còn giòn."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://congthucgiadinh.com/mon-an/hen-xuc-banh-trang",
+      "accessed": "2026-10-31",
+      "note": "Công Thức Gia Đình — 'Hến Xúc Bánh Tráng' Huế: có tỏi (2 tép/mẻ), hành tím khớp file; biến thể dùng gừng thay sả."
+    },
+    {
+      "url": "https://bepxua.vn/hen-xuc-banh-da-xuc-hen-moi-tay-van-chua-muon-dung/",
+      "accessed": "2026-10-31",
+      "note": "BepXua — 'Hến xúc bánh đa' (4 người), xuất xứ duyên hải miền Trung: có tỏi, rau răm là thành phần hoàn thiện bắt buộc, đậu phộng rắc mặt."
+    },
+    {
+      "url": "https://bepxua.vn/cach-lam-hen-xuc-banh-da-kem-sot-cham-sa-te-ngon-dac-biet/",
+      "accessed": "2026-10-31",
+      "note": "BepXua — biến thể sa tế (cùng nhà xuất bản với nguồn trên, tính corroborate trong 1 họ): tỏi 10 g/mẻ, hành tây 100 g/mẻ, rau răm và lạc đều có."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món THAY cho tom-chua-thit-luoc trong kế hoạch §3.4: nguyên liệu mam-tom-chua (dạng nguyên liệu) chưa tra được số đạt chuẩn — hồ sơ null đã lập đợt này, món phụ thuộc HOÃN theo QT-1. Thay bằng hến xào Huế cùng miền, nguyên liệu sẵn có. Nghiên cứu Mức 2 đợt 3 (LV2-003, 2026-10-31): GIỮ Mức 1 — mới mở kiểm chứng được 1 nguồn (Công Thức Gia Đình) do provider chặn 429. Bất thường ghi nhận: đậu phộng rang xuất hiện ở nhiều trích đoạn nguồn (món hến xúc bánh tráng phổ biến có đậu phộng giã dập rắc mặt), file thiếu hẳn; nguồn đã mở dùng gừng thay sả (biến thể), file theo trường phái Huế sả ớt; số 120 g của file là thịt hến đã đãi — nguồn ghi theo hến nguyên vỏ nên không đối chiếu trực tiếp được. Thử lại LV2-004 (Phần A, 2026-10-31): vẫn bị nhà cung cấp chặn 429 ngay ở lần mở trang đầu tiên — dừng tra cứu theo kỷ luật chống chặn, GIỮ Mức 1. Trích đoạn tìm kiếm (KHÔNG tính là nguồn đã mở) từ Cookbeo, Bepxua, Nấu Chuẩn Ăn Ngon tiếp tục ủng hộ hướng 3 bất thường đợt 3 (đậu phộng rang, sả, tỉ lệ thịt hến/thể tích vỏ ~30–40%) — ưu tiên mở kiểm chứng ở đợt thử lại sau. [LV2-004 đợt 4: thử lại lần 2 các món 429 của đợt 3 — vẫn bị chặn 429 ngay lần mở đầu; giữ Mức 1, không truy vấn thêm.] [LV2-005 Phần A (2026-10-31): thử lại lần 3 — mở nguồn thứ hai (Bepxua) lại bị chặn 429, dừng ngay theo kỷ luật; vẫn chỉ 1 nguồn đã mở (Công Thức Gia Đình từ LV2-003). Giữ Mức 1; bất thường đậu phộng rang vẫn chờ ≥2 nguồn ĐÃ MỞ.] [LV2-006 đợt 6: GIỮ Mức 1 — bị chặn 429 ở nguồn thứ hai; cộng dồn các đợt đã có 2 nguồn đã mở (Điện Máy XANH đợt này và Công Thức Gia Đình ở LV2-003). Cập nhật bất thường cũ: nguồn Điện Máy XANH KHÔNG có đậu phộng — làm yếu ghi nhận đậu phộng trước đây; ứng viên dòng thiếu mạnh nhất hiện là tỏi và hành tây.]",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món THAY cho tom-chua-thit-luoc trong kế hoạch §3.4: nguyên liệu mam-tom-chua (dạng nguyên liệu) chưa tra được số đạt chuẩn — hồ sơ null đã lập đợt này, món phụ thuộc HOÃN theo QT-1. Thay bằng hến xào Huế cùng miền, nguyên liệu sẵn có. Nghiên cứu Mức 2 đợt 3 (LV2-003, 2026-10-31): GIỮ Mức 1 — mới mở kiểm chứng được 1 nguồn (Công Thức Gia Đình) do provider chặn 429. Bất thường ghi nhận: đậu phộng rang xuất hiện ở nhiều trích đoạn nguồn (món hến xúc bánh tráng phổ biến có đậu phộng giã dập rắc mặt), file thiếu hẳn; nguồn đã mở dùng gừng thay sả (biến thể), file theo trường phái Huế sả ớt; số 120 g của file là thịt hến đã đãi — nguồn ghi theo hến nguyên vỏ nên không đối chiếu trực tiếp được. Thử lại LV2-004 (Phần A, 2026-10-31): vẫn bị nhà cung cấp chặn 429 ngay ở lần mở trang đầu tiên — dừng tra cứu theo kỷ luật chống chặn, GIỮ Mức 1. Trích đoạn tìm kiếm (KHÔNG tính là nguồn đã mở) từ Cookbeo, Bepxua, Nấu Chuẩn Ăn Ngon tiếp tục ủng hộ hướng 3 bất thường đợt 3 (đậu phộng rang, sả, tỉ lệ thịt hến/thể tích vỏ ~30–40%) — ưu tiên mở kiểm chứng ở đợt thử lại sau. [LV2-004 đợt 4: thử lại lần 2 các món 429 của đợt 3 — vẫn bị chặn 429 ngay lần mở đầu; giữ Mức 1, không truy vấn thêm.] [LV2-005 Phần A (2026-10-31): thử lại lần 3 — mở nguồn thứ hai (Bepxua) lại bị chặn 429, dừng ngay theo kỷ luật; vẫn chỉ 1 nguồn đã mở (Công Thức Gia Đình từ LV2-003). Giữ Mức 1; bất thường đậu phộng rang vẫn chờ ≥2 nguồn ĐÃ MỞ.] [LV2-006 đợt 6: GIỮ Mức 1 — bị chặn 429 ở nguồn thứ hai; cộng dồn các đợt đã có 2 nguồn đã mở (Điện Máy XANH đợt này và Công Thức Gia Đình ở LV2-003). Cập nhật bất thường cũ: nguồn Điện Máy XANH KHÔNG có đậu phộng — làm yếu ghi nhận đậu phộng trước đây; ứng viên dòng thiếu mạnh nhất hiện là tỏi và hành tây.] [LV2-007 đợt 7: nâng Mức 2 — thử lại sau các đợt 429: gom đủ 3 họ nguồn (Công Thức Gia Đình; BepXua — 2 bài tính 1 họ; hồ sơ nguồn Điện Máy XANH từ LV2-006: không đậu phộng, ứng viên tỏi/hành tây; trang chi tiết ĐMX không định vị lại được đợt này). BỔ SUNG tỏi 3g (3/3 trang đã mở đều có), hành tây 20g dạng tuỳ chọn (3 tín hiệu hiện diện nhưng 2 nguồn chính không có), lạc rang 8g dạng tuỳ chọn — phân xử dứt điểm tranh cãi các đợt: đậu phộng có thật nhưng không phổ quát, đúng vị thế rắc mặt tuỳ chọn. ĐỔI rau răm 5g sang bắt buộc (cả 2 biến thể BepXua đều có). GIỮ hến 120g, sả 8g (trường phái Huế sả–ớt được nguồn miền Trung xác nhận), hành tím 8g (khớp chính xác 1 nguồn).]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

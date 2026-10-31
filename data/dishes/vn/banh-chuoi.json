@@ -6,7 +6,7 @@
   "names": [
     {
       "locale": "vi",
-      "name": "bánh chuối",
+      "name": "Bánh chuối",
       "is_primary": true
     },
     {
@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "hap",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "chieu",
@@ -34,7 +34,7 @@
   "ingredients": [
     {
       "ingredient_slug": "chuoi",
-      "quantity": 100,
+      "quantity": 55,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -90,12 +90,30 @@
     }
   ],
   "recipe_steps": [
-    "Lột vỏ chuối chín, ướp đường cho chuối ra nước và lên màu.",
-    "Trộn chuối với bột năng, bột gạo và nước cốt dừa.",
-    "Đổ vào khuôn lót lá, hấp chín trong, để nguội cắt miếng.",
-    "Chan thêm nước cốt dừa, rắc vừng rang."
+    "Chuối sứ/xiêm chín lột vỏ, cắt lát; ướp với đường 15–20 phút cho tan và ra nước ngọt.",
+    "Trộn bột năng và bột gạo với nước cốt dừa (và nước dão/nước) thành hỗn hợp sánh; để bột nghỉ khoảng 25 phút.",
+    "Trộn chuối đã ướp vào bột, dàn vào khuôn có lót lá dứa nếu thích.",
+    "Hấp 25–30 phút từ khi nước sôi (bản hai lớp: hấp 10 phút, rưới lớp cốt, hấp thêm 10 phút).",
+    "Bánh đạt khi trong lại, xiên tăm không dính bột; để nguội hoàn toàn mới cắt.",
+    "Rắc vừng rang, chan thêm nước cốt dừa khi ăn theo khẩu vị."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/thom-ngon-banh-chuoi-la-mieng-00237",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH — '3 cách làm bánh chuối hấp', cách 1 (5 người): chuối thịt quy đổi 57 g/khẩu phần 150g (chuối tính thịt sau lột vỏ, hệ số vỏ ~0,62)."
+    },
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-banh-chuoi-hap-bang-bot-nang-cham-nuoc-cot-dua-deo-23385",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH — 'Bánh chuối hấp bằng bột năng' (6–8 người): chuối thịt 45,6g, bột năng 28,7g, cốt dừa chan 36,5g."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/16126590",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Quân Nguyễn (TP.HCM): chuối sứ chín, chuối thịt ~54g/khẩu phần (ước lượng theo trái — tin cậy thấp hơn, chỉ corroborate)."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/banh-chuoi.webp",
@@ -106,7 +124,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt)",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-007 đợt 7: nâng Mức 2 — 3 nguồn đã mở. SỬA chuối 100→55g (3/3 nguồn cho thịt chuối 45,6–57g/khẩu phần theo cơ sở thịt sau lột vỏ; file cũ lệch +75–119%). GIỮ bột năng 25g (nguồn tản 14,5–28,7, không đồng thuận), bột gạo 10g (biến thể có/không: 0–15,2), cốt dừa 40g (3 nguồn hội tụ 36,2–38,0 khi tính cả nước dão — lệch chỉ +5–10%), đường 15g (trong dải 7,2–19,8). Ghi nhận ánh xạ: mọi nguồn dùng chuối sứ/xiêm, slug chuoi trong kho là chuối tiêu Cavendish — kho chưa có slug chuối sứ riêng, giữ ánh xạ gần đúng. Tổng file sau sửa ~138g + nước trộn bột hấp thụ ≈ serving 150g.]",
   "status": "draft",
   "source": "llm_suggested",
   "confidence": "unknown",

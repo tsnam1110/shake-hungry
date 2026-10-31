@@ -6,7 +6,7 @@
   "names": [
     {
       "locale": "vi",
-      "name": "bánh xèo",
+      "name": "Bánh xèo",
       "is_primary": true
     },
     {
@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "chien",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "chieu",
@@ -77,6 +77,22 @@
       "quantity": 40,
       "unit_name": "g",
       "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dau-xanh-hat",
+      "quantity": 10,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-tay",
+      "quantity": 15,
+      "unit_name": "g",
+      "is_optional": true,
       "source": "llm_suggested",
       "confidence": "low"
     },
@@ -154,13 +170,30 @@
     }
   ],
   "recipe_steps": [
-    "Pha bột gạo + bột nghệ + nước cốt dừa, để bột nghỉ 30 phút.",
-    "Đun chảo thật nóng, cho tôm và thịt ba chỉ vào xào săn.",
-    "Đổ bột tráng mỏng quanh chảo, thêm giá đỗ, đậy nắp cho chín.",
-    "Rưới dầu quanh rìa cho giòn, gập đôi bánh.",
-    "Cắt miếng, cuốn xà lách + rau thơm, chấm nước mắm chua ngọt."
+    "Pha bột gạo với nước cốt dừa, bột nghệ và muối; để bột nghỉ 30 phút–1 giờ (đậu xanh hấp chín để riêng nếu dùng).",
+    "Tôm làm sạch; thịt ba chỉ thái mỏng; giá đỗ rửa sạch để ráo.",
+    "Đun chảo lửa lớn thật nóng, quét lớp mỡ/dầu mỏng; cho thịt và tôm vào xào rám trước.",
+    "Múc 1 vá bột tráng đều quanh thành chảo thành lớp mỏng; thêm giá đỗ (và đậu xanh, hành tây nếu dùng), đậy nắp 2–3 phút, hạ lửa vừa.",
+    "Mở nắp, quét mỡ quanh rìa, gập đôi bánh, chiên thêm khoảng 30 giây mỗi mặt trên lửa lớn tới khi viền tróc chảo, vàng giòn.",
+    "Dọn nóng với xà lách, cải xanh, rau diếp cá và nước mắm chua ngọt pha từ nước mắm, đường, tỏi, ớt."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-banh-xeo-mien-tay-tu-bot-pha-san-thom-ngon-gion-lau-06721",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH — 'Bánh xèo miền Tây từ bột pha sẵn' (2 công thức, 5 và 4 người): ba chỉ và giá khớp chính xác file; cả 2 công thức đều có đậu xanh."
+    },
+    {
+      "url": "https://www.cet.edu.vn/cach-lam-banh-xeo",
+      "accessed": "2026-10-31",
+      "note": "CET — 'Bánh xèo 3 miền', chỉ dùng phần miền Nam (bánh lớn, cốt dừa, đậu xanh cà vỏ); số bột nghệ 15 g của nguồn này là bất thường biên tập, không dùng."
+    },
+    {
+      "url": "https://daylambanh.edu.vn/banh-xeo-mien-nam",
+      "accessed": "2026-10-31",
+      "note": "Dạy Làm Bánh Á Âu — 'Bánh xèo miền Tây nhân tôm thịt': tỉ lệ nhân/bột và hành tây trong nhân; bản này không có đậu xanh."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/banh-xeo.webp",
@@ -171,7 +204,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 8 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).]",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 8 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).] [LV2-007 đợt 7: nâng Mức 2 — 3 nguồn đúng biến thể miền Tây/Nam đã mở. GIỮ toàn bộ định lượng chính: đối chiếu theo tỉ lệ nhân/bột (nguồn tính theo khẩu phần người ăn ~2 cái, file tính theo 1 cái) — tôm 0,58, thịt 0,67, giá 0,67 đều trong dải nguồn 0,6–1,0; cốt dừa 30g khớp quy đổi ~32–37 ml/cái. BỔ SUNG đậu xanh hạt 10g dạng tuỳ chọn (ĐMX cả 2 công thức + CET coi là thành phần chuẩn miền Nam; nguồn thứ ba không có → để tuỳ chọn) và hành tây 15g dạng tuỳ chọn (2 nguồn có trong nhân). KHÔNG thêm nấm rơm (1 nguồn) và trứng trong bột (lượng/cái ~5g, nhiều công thức truyền thống không trứng). BẤT THƯỜNG CẤP KHO chờ chủ dự án: file con banh-xeo-mien-tay chồng lấn nặng với file này (cùng biến thể, khác định lượng) — cần phân xử quan hệ chuẩn/biến thể, tránh 2 bản Mức 2 mâu thuẫn.]",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

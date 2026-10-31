@@ -6,7 +6,7 @@
   "names": [
     {
       "locale": "vi",
-      "name": "nộm tai heo đu đủ",
+      "name": "Nộm tai heo đu đủ",
       "is_primary": true
     },
     {
@@ -25,7 +25,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "tron",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -37,7 +37,7 @@
     }
   ],
   "serving_desc": "1 đĩa",
-  "serving_grams": 200,
+  "serving_grams": 250,
   "ingredients": [
     {
       "ingredient_slug": "tai-lon",
@@ -49,7 +49,7 @@
     },
     {
       "ingredient_slug": "du-du-xanh",
-      "quantity": 60,
+      "quantity": 120,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -81,7 +81,7 @@
     },
     {
       "ingredient_slug": "lac-rang",
-      "quantity": 15,
+      "quantity": 25,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -126,18 +126,45 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-phi",
+      "quantity": 4,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Tai heo cạo sạch, luộc chín với gừng/hành, ngâm nước đá cho giòn rồi thái sợi mỏng.",
-    "Đu đủ xanh và cà rốt bào sợi, bóp muối nhẹ, rửa sạch vắt ráo.",
-    "Trộn tai heo với đu đủ, cà rốt và nước mắm chua ngọt; rắc lạc rang và rau thơm."
+    "Tai heo chà muối (hoặc rượu và gừng 3–5 phút), rửa 2–3 lần; luộc lửa vừa khoảng 30 phút, vớt ra ngâm nước đá cho trắng giòn, thái lát mỏng.",
+    "Đu đủ xanh gọt vỏ, rạch nhẹ 1–2 đường cho chảy mủ chống đắng, ngâm nước 15 phút, bỏ hạt, bào sợi; cà rốt bào sợi.",
+    "Trộn đu đủ và cà rốt với 1 muỗng cà phê muối, bóp vắt hết nước cho giòn.",
+    "Pha nước trộn theo tỉ lệ nước mắm : đường : nước cốt chanh = 3 : 3 : 2, thêm ít nước lọc; tỏi ớt băm cho sau cùng.",
+    "Trộn tai heo, đu đủ, cà rốt với nước trộn, có thể giã nhẹ tay cho thấm; nếm lại vị chua ngọt cân bằng.",
+    "Rắc lạc rang, hành phi và rau thơm; dọn kèm bánh phồng tôm."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://cachnaungon.com/cach-lam-goi-nom-du-du-tai-heo-dai-gion-chua-ngot-12887/",
+      "accessed": "2026-10-31",
+      "note": "Bản đăng lại định dạng Điện Máy XANH — 'Gỏi (nộm) đu đủ tai heo' (2 người), không tôm — đúng định danh file: đu đủ ~150–175 g/khẩu phần, lạc ~25g. Hai số nêm nếm của nguồn này bất thường (không nước mắm, đường quá cao) nên đã loại khỏi đối chiếu gia vị."
+    },
+    {
+      "url": "https://bepxua.vn/cach-lam-nom-du-du-tai-heo-gion-dai-thom-ngon-khong-so-bi-dang/",
+      "accessed": "2026-10-31",
+      "note": "Bếp Xưa — 'Nộm đu đủ tai heo' (4 người): đu đủ 125 g/khẩu phần, lạc 25g, tỉ lệ nước trộn mắm : đường : chanh = 3 : 3 : 2."
+    },
+    {
+      "url": "https://giadinh.suckhoedoisong.vn/huong-dan-lam-nom-du-du-tai-heo-172240629074839653.htm",
+      "accessed": "2026-10-31",
+      "note": "Gia đình & Sức Khỏe Đời Sống (báo chí): nộm đu đủ tai heo có hành tím phi — biến thể mở rộng có thêm tôm và xoài xanh, không đưa vào file."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. THIẾU NGUYÊN LIỆU: đu đủ xanh (slug du-du-xanh — kho hiện chỉ có đu đủ chín, không thay thế được) — cần bổ sung vào kho.",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. THIẾU NGUYÊN LIỆU: đu đủ xanh (slug du-du-xanh — kho hiện chỉ có đu đủ chín, không thay thế được) — cần bổ sung vào kho. [LV2-007 đợt 7: nâng Mức 2 — 3 nguồn phân biệt đã mở. SỬA đu đủ xanh 60→120g (2 nguồn độc lập đồng thuận ≥2 lần: 125 và ~150–175g), lạc rang 15→25g (đồng thuận tuyệt đối); BỔ SUNG hành phi 4g (2 nguồn có hành tím phi); serving 200→250g theo tổng nguyên liệu sau sửa. GIỮ tai heo 80g — nguồn phân kỳ mạnh (37,5 ở bản có tôm gánh đạm; ~125–150 ở mẻ 2 người/1 tai), 80 nằm giữa dải. KHÔNG thêm tôm: thuộc biến thể (nguồn đúng định danh nhất không có tôm). Ghi chú cũ trong file nói kho chỉ có đu đủ chín là đã lỗi thời — slug du-du-xanh nay đã có.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

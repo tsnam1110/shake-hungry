@@ -6,7 +6,7 @@
   "names": [
     {
       "locale": "vi",
-      "name": "bánh giò",
+      "name": "Bánh giò",
       "is_primary": true
     },
     {
@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "hap",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -30,11 +30,11 @@
     }
   ],
   "serving_desc": "1 cái",
-  "serving_grams": 200,
+  "serving_grams": 260,
   "ingredients": [
     {
       "ingredient_slug": "bot-gao",
-      "quantity": 60,
+      "quantity": 40,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -61,6 +61,14 @@
       "quantity": 6,
       "unit_name": "g",
       "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nam-huong-kho",
+      "quantity": 2,
+      "unit_name": "g",
+      "is_optional": true,
       "source": "llm_suggested",
       "confidence": "low"
     },
@@ -114,12 +122,30 @@
     }
   ],
   "recipe_steps": [
-    "Quấy bột gạo + bột năng với nước dùng, nấu sệt.",
-    "Xào nhân thịt xay, mộc nhĩ, hành tím, nêm tiêu và nước mắm.",
-    "Gói bột + nhân (thêm trứng cút nếu thích) trong lá chuối thành hình tháp.",
-    "Hấp 25-30 phút, ăn nóng."
+    "Ngâm bột gạo và bột năng trong nước hầm xương nguội 30 phút–1 giờ (tỉ lệ gạo : năng = 4:1).",
+    "Khuấy trùng bột trên lửa vừa rồi hạ nhỏ nhất, khuấy liên tục tới khi bột trắng đục, sệt như cháo đặc, nửa sống nửa chín thì tắt bếp, khuấy thêm ~2 phút cho mượt.",
+    "Xào nhân: thịt lợn xay với mộc nhĩ, nấm hương (nếu dùng), hành tím, nêm nước mắm và tiêu, xào săn khô ráo.",
+    "Gói lá chuối thành phễu hình chóp, cho bột – nhân – 1 quả trứng cút – bột, gói kín.",
+    "Hấp trên nước đã sôi 20–30 phút; bánh chín khi xiên tăm thấy khô, bột không dính tăm, lá chuyển xanh sẫm.",
+    "Dọn nóng, ăn kèm nước mắm hoặc tương ớt."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.bluestone.com.vn/blogs/vao-bep/cach-lam-banh-gio",
+      "accessed": "2026-10-31",
+      "note": "BlueStone (mẻ ~10 chiếc): bột gạo 40 g/cái — nguồn duy nhất ghi tường minh số chiếc; tỉ lệ gạo : năng = 4:1, nước dùng : bột ≈ 4:1."
+    },
+    {
+      "url": "https://danviet.vn/cach-lam-banh-gio-sieu-de-sieu-ngon-vung-den-may-cung-lam-duoc-7777823494-d570030.html",
+      "accessed": "2026-10-31",
+      "note": "Dân Việt (báo chí, mẻ ~7 cái): bột gạo ~28,6 g/cái, cùng tỉ lệ 4:1; bản không trứng cút."
+    },
+    {
+      "url": "https://daylambanh.edu.vn/banh-gio-bang-bot-gao",
+      "accessed": "2026-10-31",
+      "note": "Dạy Làm Bánh Á Âu (Baker Thanh Tuyền): bột gạo ~26,7 g/cái suy từ mẻ 400/100 + 15 trứng cút; ngâm bột và khuấy trùng nửa chín."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/banh-gio.webp",
@@ -130,7 +156,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt).",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [LV2-007 đợt 7: nâng Mức 2 — 3 nguồn đã mở. SỬA bột gạo 60→40g: cả 3 nguồn đều thấp hơn file +50% tới +125% (đồng thuận lệch >30%); lấy BlueStone làm neo (nguồn duy nhất ghi số chiếc tường minh). GIỮ bột năng 10g (khớp tỉ lệ 4:1 sau sửa). Hệ quả bắt buộc: serving 200→260g — với 50g bột khô + ~200 ml nước dùng/cái, khối lượng 1 cái thực tế ~250–280g; bộ ba (bột 70g khô + serving 200g + tỉ lệ nước 4:1) của file cũ không thể đồng thời đúng. BỔ SUNG nấm hương khô 2g dạng tuỳ chọn (2 nguồn). GIỮ thịt xay 45g (dải nguồn 28,6–50), mộc nhĩ khô 6g (≈35–50g sau ngâm — khớp '50g ngâm nở' của BlueStone, không so trực tiếp số ướt), trứng cút 12g dạng tuỳ chọn (2 nguồn coi 1 quả/cái là chuẩn, 1 nguồn báo chí làm bản không trứng).]",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

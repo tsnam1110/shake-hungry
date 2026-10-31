@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -34,7 +34,7 @@
   "ingredients": [
     {
       "ingredient_slug": "suon-lon",
-      "quantity": 70,
+      "quantity": 100,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -87,14 +87,49 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-tim",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-la",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Sườn chần, ninh mềm; dọc mùng tước vỏ, cắt xéo, bóp muối rửa sạch vắt ráo.",
-    "Cho cà chua và me vào nồi nước sườn, đun sôi, dằm me lấy vị chua.",
-    "Thả dọc mùng nấu 2 phút, nêm nước mắm và đường, rắc ngò gai, dùng nóng."
+    "Sườn chần 2 phút qua nước sôi, rửa sạch; phi hành tím, xào sườn cùng cà chua khoảng 1 phút cho xém cạnh.",
+    "Đổ nước, ninh sườn lửa nhỏ 30–40 phút tới khi mềm, hớt bọt giữ nước trong.",
+    "Dọc mùng tước vỏ, thái vát, bóp muối để 5–15 phút ra nhựa, rửa sạch, chần sơ và vắt ráo.",
+    "Dằm me chín với nước nóng, lọc lấy nước cốt chua, cho vào nồi khi sườn đã mềm; nêm nước mắm và đường vừa ăn.",
+    "Cho dọc mùng vào sau cùng, đun 2–3 phút rồi tắt bếp ngay để dọc mùng giữ độ giòn.",
+    "Múc ra tô, rắc hành lá và ngò gai, ăn nóng với cơm."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://tudienmonan.vn/cach-nau-canh-doc-mung-suon/",
+      "accessed": "2026-10-31",
+      "note": "Từ Điển Món Ăn (có biên tập), 4 người: sườn 400 g; tạo chua trung lập 'me hoặc sấu'."
+    },
+    {
+      "url": "https://cachnaumonngon.com/cach-nau-canh-suon-chua-doc-mung-3-1568.html",
+      "accessed": "2026-10-31",
+      "note": "Cách Nấu Món Ngon: biến thể sấu thuần (5 quả) — nguồn duy nhất nghiêng hẳn về sấu, không ghi khẩu phần."
+    },
+    {
+      "url": "https://hcem.edu.vn/wp-content/uploads/2025/10/de-cuong-bai-giang-Che-bien-mon-an-Viet-Nam.pdf",
+      "accessed": "2026-10-31",
+      "note": "Đề cương HCEM, mục Canh sườn dọc mùng: sườn 500 g cho 3–4 người; tạo chua bằng cốt me hoặc dấm bỗng."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/canh-doc-mung-suon.webp",
@@ -105,7 +140,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-005 đợt 5: thử nâng Mức 2 — GIỮ Mức 1: đã mở được 2 nguồn thì bị chặn 429 — chưa đủ 3 nguồn đã mở. Thử lại khi hết chặn.] [LV2-006 đợt 6: GIỮ Mức 1 — bị chặn 429 ngay ở nguồn thứ nhất khi thử lại. Câu hỏi còn mở: tạo chua bằng sấu hay me. Lưu ý quy trình: ghi nhận ở LV2-005 không nêu tên 2 nguồn đã mở được trước đó — đợt sau cần ghi rõ nguồn ngay khi mở.]",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-005 đợt 5: thử nâng Mức 2 — GIỮ Mức 1: đã mở được 2 nguồn thì bị chặn 429 — chưa đủ 3 nguồn đã mở. Thử lại khi hết chặn.] [LV2-006 đợt 6: GIỮ Mức 1 — bị chặn 429 ngay ở nguồn thứ nhất khi thử lại. Câu hỏi còn mở: tạo chua bằng sấu hay me. Lưu ý quy trình: ghi nhận ở LV2-005 không nêu tên 2 nguồn đã mở được trước đó — đợt sau cần ghi rõ nguồn ngay khi mở.] [LV2-007 đợt 7: nâng Mức 2 — 3 nguồn đã mở. SỬA sườn 70→100g (2 nguồn cân được đều ≥100g/khẩu phần). BỔ SUNG hành tím 5g và hành lá 3g (3/3 nguồn có). GIỮ me chín 5g làm chất chua: trường phái sấu chỉ đạt 1/3 nguồn (lại là nguồn yếu nhất, không khẩu phần) — không đủ đa số; phương án thay bằng sấu ~15g (slug qua-sau đã có số, nguồn thứ cấp) chờ chủ dự án chốt — xem LV2-007 §3.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

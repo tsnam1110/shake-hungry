@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "hap",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -50,7 +50,7 @@
     },
     {
       "ingredient_slug": "bot-nep",
-      "quantity": 30,
+      "quantity": 60,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -98,11 +98,35 @@
     }
   ],
   "recipe_steps": [
-    "Lá khúc rửa sạch, luộc sơ, giã/xay nhuyễn lấy nước và bã lá trộn vào bột nếp thành vỏ xanh.",
-    "Đậu xanh nấu chín giã nhuyễn, trộn thịt ba chỉ thái nhỏ đã xào với hành phi và tiêu làm nhân.",
-    "Bọc nhân bằng vỏ bột lá khúc, lăn qua gạo nếp đã ngâm, xếp vào chõ đồ chín; rắc hành phi khi dùng."
+    "Ngâm gạo nếp và đậu xanh 4–6 giờ hoặc qua đêm, vo sạch để ráo.",
+    "Nhào bột nếp với nước lá khúc (xay lá khúc với nước ấm, lọc) thành khối dẻo; để bột nghỉ 30–60 phút.",
+    "Hấp đậu xanh chín, giã nhuyễn; xào đậu với ba chỉ đã xào săn cùng hành tím, tiêu và chút nước mắm 4–5 phút; để nguội, vo viên nhân.",
+    "Bọc mỗi viên nhân bằng lớp bột nếp, nặn tròn đều.",
+    "Lót xửng bằng gạo nếp đã ngâm, xếp viên bột phủ nếp, hấp 20–30 phút; giữa chừng rưới ít nước nóng, hấp tiếp tới khi hạt nếp áo ngoài căng mọng, dẻo trong.",
+    "Dọn nóng, rắc hành phi."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-nau-xoi-khuc-la-dua-thom-deo-dep-mat-don-gian-tai-nha-16034",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH — 'Xôi khúc lá dứa' (6 cái): bản thay lá khúc bằng lá dứa; bột nếp 50 g/cái — khẳng định mức bột của nguồn khớp cỡ viên."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/1634609",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Thi Hoa Giang: bột và nhân chia 8 viên — bột nếp 31 g/viên, là nguồn khớp cỡ viên của file nhất; ba chỉ 12,5 g/viên khớp file."
+    },
+    {
+      "url": "https://www.bluestone.com.vn/blogs/vao-bep/cach-nau-xoi-khuc-dau-xanh",
+      "accessed": "2026-10-31",
+      "note": "BlueStone — công thức LÁ KHÚC THẬT: lá khúc tươi 200–300 g cho mẻ 500 g nếp (xay trộn cả lá vào nếp); biến thể không bột nếp."
+    },
+    {
+      "url": "http://giavihanhphuc.com/thap-cam/xoi-khuc-lam-anh-dao-amp",
+      "accessed": "2026-10-31",
+      "note": "Blog tác giả Lam Anh Dao: nhân vo viên ~60 g chín; thay lá khúc bằng cải bó xôi lọc bỏ bã — khẳng định việc thay lá là do lá khúc hiếm, chỉ có mùa tháng 2–3 âm lịch."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/xoi-khuc.webp",
@@ -113,7 +137,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt)",
+  "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-007 đợt 7: nâng Mức 2 về nguồn — 4 nguồn đã mở. SỬA bột nếp 30→60g/khẩu phần (15→30g/viên): nguồn khớp cỡ viên nhất dùng 31g/viên, nguồn còn lại 50g/cái; file cũ chỉ bằng ~½ mức thấp nhất, không đủ bọc viên nhân ~45–50g — sửa duy nhất của món đạt điều kiện ≥2 nguồn lệch >30%. GIỮ gạo nếp 120g (nguồn khớp viên cho 62,5g/viên), đậu xanh 40g (lệch trung vị nguồn ~−20%, chưa qua ngưỡng), ba chỉ 25g (khớp tuyệt đối nguồn), lá khúc 10g. HỆ QUẢ la-khuc NULL (đã kiểm hồ sơ nguyên liệu: không có bảng proximate/100g ở nguồn nào, chỉ có nghiên cứu phenolic/dược liệu): món KHÔNG tính được dinh dưỡng kể cả sau nâng Mức 2 — chờ chủ dự án: chấp nhận món không số, hoặc giao biên soạn số cho lá khúc khi có nguồn đạt chuẩn. Bất thường thang lá: nguồn dùng lá thật xay cả lá 200–300g/mẻ 500g nếp — khối lượng lá tươi không tương đương phần ăn vào (một nguồn xay rồi lọc bỏ bã) nên không lấy làm cơ sở sửa. File giữ lá khúc thật là đúng định danh, không đổi theo nguồn thay thế lá dứa.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

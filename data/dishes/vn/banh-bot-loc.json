@@ -6,7 +6,7 @@
   "names": [
     {
       "locale": "vi",
-      "name": "bánh bột lọc",
+      "name": "Bánh bột lọc",
       "is_primary": true
     },
     {
@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "luoc",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "chieu",
@@ -114,12 +114,35 @@
     }
   ],
   "recipe_steps": [
-    "Nhào bột năng với nước sôi thành khối dẻo, cán mỏng, cắt miếng.",
-    "Xào nhân tôm + thịt ba chỉ nêm nước mắm, tiêu.",
-    "Gói nhân, bóp mép, luộc đến khi bánh trong và nổi lên.",
-    "Trộn mỡ hành, chan nước mắm pha, ăn nóng."
+    "Nhào bột năng với nước sôi 100 °C đổ từ từ, nhồi tới khi khối bột dẻo, không dính tay; bọc kín tránh khô mặt.",
+    "Rim thịt ba chỉ khoảng 15 phút, cho tôm vào rim thêm 10–15 phút tới khi nhân cạn sệt, thấm vị.",
+    "Chia bột, cán mỏng, gói nhân tôm thịt, nặn mép kín thành hình bán nguyệt.",
+    "Luộc bánh trong nước sôi lửa vừa có chút dầu và muối 5–10 phút; bánh nổi lên và vỏ chuyển trong nhìn thấy nhân là chín.",
+    "Vớt bánh ngâm nước lạnh khoảng 2 phút, vớt ráo, trộn ngay với mỡ hành (dầu thật sôi đổ vào hành lá cắt nhỏ).",
+    "Dọn kèm nước mắm Huế (mắm ngon + ớt thái khoanh) hoặc nước mắm pha loãng chua ngọt."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-banh-bot-loc-bang-bot-nang-nhan-tom-thit-dai-ngon-09848",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH (2 người): chỉ dùng cho bước nấu + mỡ hành — số bột 800 g/2 người của nguồn là ngoại lệ sai tỉ lệ, đã loại khỏi đối chiếu định lượng (ghi rõ để người duyệt sau không dùng nhầm)."
+    },
+    {
+      "url": "https://kitchenaz.vn/cach-lam-banh-bot-loc-nhan-tom-thit-thom-ngon-kho-cuong/",
+      "accessed": "2026-10-31",
+      "note": "KitchenAZ (4 người) — cụm nguồn A: cùng bộ số với mangdoisong/nauankhongkho nên tính 1 nguồn; bột quy đổi 105 g/khẩu phần."
+    },
+    {
+      "url": "https://giadinh.suckhoedoisong.vn/5-cach-lam-banh-bot-loc-nhan-tom-thit-dau-xanh-tai-nha-ngon-chuan-vi-hue-172220525155840801.htm",
+      "accessed": "2026-10-31",
+      "note": "Bếp Eva / Gia đình & SKĐS (báo chí) — bánh bột lọc trần chuẩn Huế: rim nhân, luộc nổi + vỏ trong là chín; mỗi lần ăn 5–10 cái hậu thuẫn serving 1 đĩa 10 cái."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/11964546",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Nguyễn Hoàng Yến: bản trần luộc Huế; tỉ lệ tôm : thịt 1:1."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/banh-bot-loc.webp",
@@ -130,7 +153,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt).",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [LV2-007 đợt 7: nâng Mức 2 — 4 nguồn đã mở (cụm sao chép tính 1). GIỮ toàn bộ định lượng chính: bột năng 80g thấp hơn cụm A (105g) là −24%, chưa tới ngưỡng sửa 25–30% và 2 nguồn còn lại không có khẩu phần để tạo đồng thuận; tôm 40g và ba chỉ 30g đều −20% so với nguồn — tỉ lệ tôm:thịt giữa các nguồn không thống nhất (1:1 và 1:2) nên không ép đổi cơ cấu. GIỮ hành lá 3g kèm ghi nhận: cụm A cho tới 25g (mỡ hành rưới đẫm) nhưng chỉ 1 nguồn định lượng — cân nhắc nâng ~8g khi duyệt tay. Mỡ lợn nước 5g + dầu ăn 2g giữ cả hai (tổng chất béo mỡ hành 7g hợp lý; nguồn dùng dầu ăn — giữ mỡ là lựa chọn hương vị). Bột sắn dây xuất hiện ở 2 nguồn nhưng kho chưa có slug → ghi hàng đợi nguyên liệu.]",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -30,11 +30,11 @@
     }
   ],
   "serving_desc": "1 tô",
-  "serving_grams": 460,
+  "serving_grams": 540,
   "ingredients": [
     {
       "ingredient_slug": "hu-tieu-kho",
-      "quantity": 60,
+      "quantity": 100,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -43,14 +43,6 @@
     {
       "ingredient_slug": "dau-phu-chien",
       "quantity": 30,
-      "unit_name": "g",
-      "is_optional": false,
-      "source": "llm_suggested",
-      "confidence": "low"
-    },
-    {
-      "ingredient_slug": "mi-can",
-      "quantity": 25,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -73,8 +65,8 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "su-hao",
-      "quantity": 15,
+      "ingredient_slug": "cu-dau",
+      "quantity": 25,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -151,15 +143,46 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "tau-hu-ky",
+      "quantity": 10,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Hầm nước dùng từ củ cải trắng, su hào, cà rốt cho vị ngọt trong.",
-    "Nêm nước tương, đường phèn, muối (không dùng nước mắm).",
-    "Trụng hủ tiếu vừa dai mềm, xếp đậu phụ chiên, mì căn, nấm.",
-    "Chan nước dùng, thêm xà lách, giá, cần tây, hành lá."
+    "Hầm nước dùng: củ cải trắng, củ đậu (củ sắn) và cà rốt cắt khúc, hầm lửa nhỏ 30–45 phút sau khi sôi, hớt bọt, cho nước dùng trong ngọt.",
+    "Ngâm sợi hủ tiếu khô trong nước lạnh khoảng 30 phút cho mềm.",
+    "Nấm rơm làm sạch, xào nhanh với dầu và nước tương cho thấm; đậu phụ chiên cắt miếng vừa ăn.",
+    "Nêm nước dùng bằng muối, đường phèn và nước tương cho vị thanh ngọt; cho nấm vào nấu thêm 5–7 phút.",
+    "Trụng sợi hủ tiếu khoảng 2 phút tới vừa dai, xả nước lạnh để không bở; trụng giá đỗ.",
+    "Xếp hủ tiếu, đậu phụ chiên, tàu hủ ky, nấm vào tô; chan nước dùng nóng; dọn kèm xà lách, giá đỗ và cần tây."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-nau-hu-tieu-nam-vang-chay-ngon-de-thanh-dam-cho-ngay-vu-12037",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH — 'Hủ tiếu Nam Vang chay' (4 người): ghi rõ 'Sắn 1 củ (100 gr)' — chính là củ đậu theo phân xử LV2-007 Phần A; thuần chay."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/12404929",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Hien Thanh (TP.HCM): có cả củ sắn lẫn su hào — nhưng su hào chỉ thuộc nhóm củ hầm lấy nước rồi lọc bỏ."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/4921116",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Quân Nguyễn (TP.HCM): hủ tiếu khô 500 g cho ~5 tô (100 g/tô); dùng tàu hủ ky thay đạm dai (bản đăng lại ở VietFoodShop tính cùng 1 họ)."
+    },
+    {
+      "url": "https://www.bluestone.com.vn/blogs/vao-bep/cach-nau-hu-tieu-chay",
+      "accessed": "2026-10-31",
+      "note": "BlueStone (biên tập, 2025): 'Củ sắn (mía)' tạo ngọt cho nước dùng; hủ tiếu khô 400 g cho ~4 tô."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/hu-tieu-chay.webp",
@@ -170,7 +193,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [LV2-006 đợt 6: GIỮ Mức 1 — bị chặn 429 ở nguồn thứ ba. Đã kiểm: file thuần chay. Su hào và mì căn đều 0/2 nguồn đã mở dù slug có số; củ sắn chưa có trong kho. Hai nguồn Điện Máy XANH gợi ý tăng hủ tiếu khô 60 → 100g khi đủ nguồn đối chiếu — ghi nhận chờ đợt sau.]",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [LV2-006 đợt 6: GIỮ Mức 1 — bị chặn 429 ở nguồn thứ ba. Đã kiểm: file thuần chay. Su hào và mì căn đều 0/2 nguồn đã mở dù slug có số; củ sắn chưa có trong kho. Hai nguồn Điện Máy XANH gợi ý tăng hủ tiếu khô 60 → 100g khi đủ nguồn đối chiếu — ghi nhận chờ đợt sau.] [LV2-007 đợt 7: nâng Mức 2 — thử lại sau 429 đợt 6: gom 4 nguồn độc lập, cả 4 đều khẳng định thuần chay. SỬA sợi hủ tiếu khô 60→100g (3 nguồn có sợi khô đều cho 100g/tô, lệch +67%) và serving 460→540g hệ quả. BỔ SUNG củ đậu 25g — chính là 'củ sắn' miền Nam ở 4/4 nguồn (phân xử định danh LV2-007 Phần A: củ sắn = slug cu-dau). BỎ su hào 15g: chỉ 1/4 nguồn có và ở nguồn đó su hào là củ hầm lấy nước rồi lọc vớt bỏ, không phải thành phần ăn trong tô. BỎ mì căn 25g: 0/4 nguồn dùng (các nguồn dùng tàu hủ ky hoặc sườn chay) — thay bằng tàu hủ ky 10g dạng tuỳ chọn (2/4 nguồn). Đính chính ghi nhận đợt 6: su hào có xuất hiện ở 1 nguồn nhưng với vai trò củ hầm bỏ đi — kết luận bỏ dòng vẫn đứng vững, vì lý do khác.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -134,7 +134,7 @@
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 đợt 2 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 đợt 2 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-007 đợt 7: thử nâng Mức 2 — GIỮ MỨC 1. Không tồn tại nguồn công thức biên tập/tác giả rõ cho đúng định danh 'súp cá lóc + trứng vân + bột năng + nấm hương' của file; tra cứu mở rộng chỉ có nguồn HỌ món súp cá sánh–trứng (súp cá hồi trong sách số hoá tailieu.vn; 'Súp Cá Ngừ' thuvienso.com.vn; mẫu kỹ thuật súp cua nấm của Điện Máy XANH dienmayxanh.com/vao-bep/2-cach-nau-sup-cua-nam-thom-ngon-hap-dan-de-lam-ngay-tai-nha-14874). File thực chất là mẫu súp sánh kiểu Hoa–tiệc áp cho cá lóc. Phân xử dự phòng từ họ món (CHƯA áp): bột năng 15→10g, nấm hương khô 10→5g, +ngô ngọt 20g tuỳ chọn. Bất thường nền nước dùng: cả 3 nguồn họ món dùng nước hầm xương heo/gà, file dùng nước luộc cá — lựa chọn tự nhất quán cho biến thể cá lóc. Chờ chủ dự án quyết: giữ Mức 1 như món biên soạn, hay chấp nhận nâng theo họ món kèm ghi chú biến thể loài cá. Xem LV2-007 §3.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

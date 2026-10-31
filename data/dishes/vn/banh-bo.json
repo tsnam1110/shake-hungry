@@ -81,7 +81,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt)",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-007 đợt 7: thử nâng Mức 2 — GIỮ MỨC 1 dù đã đủ 3 nguồn đúng biến thể (bánh bò hấp đường cát trắng + cốt dừa; biến thể thốt nốt đã loại khỏi đối chiếu). Lý do: BẤT THƯỜNG CẤU TRÚC — bước nấu của file ghi 'nước cơm rượu (men)' nhưng danh sách nguyên liệu không có dòng tác nhân nở nào, mà kho chưa có slug cơm rượu lẫn men nở → không áp được phân xử. Phân xử dự phòng đã sẵn (chờ có slug): bột gạo 60→30g (3/3 nguồn 28,1–32,4g — file lệch ~+90–114%), +bột năng 6g (3/3 nguồn đều có, file thiếu hẳn), GIỮ đường 25g và cốt dừa 30g. Chờ chủ dự án quyết tạo nguyên liệu nở: men-no ~1g (2/3 nguồn hiện đại) hay com-ruou ~20g (truyền thống, khớp bước hiện tại của file). Xem LV2-007 §3.]",
   "status": "draft",
   "source": "llm_suggested",
   "confidence": "unknown",

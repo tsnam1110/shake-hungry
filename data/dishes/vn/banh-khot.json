@@ -6,7 +6,7 @@
   "names": [
     {
       "locale": "vi",
-      "name": "bánh khọt",
+      "name": "Bánh khọt",
       "is_primary": true
     },
     {
@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "chien",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "chieu",
@@ -119,15 +119,46 @@
       "is_optional": true,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "du-du-xanh",
+      "quantity": 15,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Pha bột gạo với nước cốt dừa và bột nghệ, để bột nghỉ.",
-    "Đun nóng khuôn bánh khọt, phết dầu, đổ bột, đặt tôm lên mặt.",
-    "Chiên đến khi rìa bánh giòn vàng, giữa còn mềm, rắc hành lá.",
-    "Cuốn rau sống, chấm nước mắm chua ngọt."
+    "Pha bột gạo với nước cốt dừa và nước, thêm bột nghệ và muối, khuấy đều, để bột nghỉ 10–60 phút (file theo trường phái bột pha cốt dừa + nước, bột vàng nghệ — xem import_note).",
+    "Tôm làm sạch, bỏ đầu và chỉ lưng, ướp chút muối tiêu.",
+    "Đun nóng khuôn bánh khọt trên lửa vừa–nhỏ, quét lớp dầu mỏng vào từng khuôn.",
+    "Đổ bột khoảng 2/3 khuôn, đặt tôm lên, đậy nắp 3–5 phút tới khi rìa bánh vàng giòn, giữa còn mềm xốp.",
+    "Khậy bánh ra bằng đũa dài hoặc muỗng nhỏ; làm tiếp tới hết bột.",
+    "Dọn nóng ngay với xà lách, rau diếp cá, đồ chua đu đủ và nước mắm chua ngọt pha từ nước mắm, đường và ớt."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://daylambanh.edu.vn/banh-khot-vung-tau",
+      "accessed": "2026-10-31",
+      "note": "Dạy Làm Bánh Á Âu (Baker Thanh Tuyền) — 'Bánh khọt đặc sản Vũng Tàu': bột gạo 300 g/mẻ khớp 60 g/khẩu phần; có nghệ ~0,5g và đồ chua đu đủ/cà rốt ăn kèm."
+    },
+    {
+      "url": "https://bepbtn.vn/cach-lam-banh-khot-vung-tau-thom-ngon-gion-rum/",
+      "accessed": "2026-10-31",
+      "note": "Bếp BTN — 'Bánh khọt Vũng Tàu' (bản thập cẩm): dùng cho tỉ lệ bột/cốt dừa/nghệ; bản sao ở NauChuanAnNgon tính cùng 1 họ."
+    },
+    {
+      "url": "https://beptruong.edu.vn/cach-lam-banh-khot-truyen-thong",
+      "accessed": "2026-10-31",
+      "note": "Bếp Trưởng / Hướng Nghiệp Á Âu — mục riêng 'bánh khọt Vũng Tàu': bột pha chỉ với nước cốt dừa, không nghệ (nghệ thuộc mục miền Trung của cùng bài)."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/6344782",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Phuong Nguyen 92 (sống tại Phước Hải, Vũng Tàu): nguồn hiện diện — trường phái truyền thống Gốc Cây Vú Sữa (bột trắng, không nghệ, không cốt dừa trong bột, rắc bột tôm chấy + mỡ hành); danh sách nguyên liệu không trích xuất được nên không dùng định lượng."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/banh-khot.webp",
@@ -138,7 +169,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 8 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).] [LV2-006 đợt 6: GIỮ Mức 1 — bị chặn 429 ở nguồn thứ ba. File là biến thể Vũng Tàu; đợt sau cần nguồn đúng biến thể Vũng Tàu, không mở lại ngay trang đã 429.]",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 8 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).] [LV2-006 đợt 6: GIỮ Mức 1 — bị chặn 429 ở nguồn thứ ba. File là biến thể Vũng Tàu; đợt sau cần nguồn đúng biến thể Vũng Tàu, không mở lại ngay trang đã 429.] [LV2-007 đợt 7: nâng Mức 2 — thử lại sau 429 đợt 6: gom 3 nguồn định lượng đúng biến thể Vũng Tàu + 1 nguồn hiện diện. GIỮ toàn bộ dòng chính: bột gạo 60g (1 nguồn khớp chính xác), cốt dừa 40g (3 nguồn cho 20/50/100 theo trường phái pha — 40 nằm trong dải, không đồng thuận sửa), tôm 35g, bột nghệ 0,5g (1 nguồn khớp chính xác). BỔ SUNG đu đủ xanh 15g dạng tuỳ chọn (đồ chua ăn kèm ở 2 nguồn). CẢNH BÁO BIẾN THỂ cho chủ dự án: bánh khọt Vũng Tàu có 2 trường phái — (i) truyền thống Gốc Vú Sữa: bột trắng không nghệ, không cốt dừa trong bột, rắc bột tôm chấy + mỡ hành; (ii) hiện đại phổ biến: bột vàng nghệ + cốt dừa, tôm tươi — file thuộc trường phái (ii) và giữ định danh này; cân nhắc tách biến thể con (trường phái i) ở đợt sau. KHÔNG thêm dòng dầu cho mỡ hành: file đã cố ý bỏ dòng dầu theo phân xử QA-002/Phương án A (dầu chiên chính do engine CALC-004 mô hình hoá). Ghi nhận: 100% nguồn dùng thêm một tinh bột phụ hoặc cơm xay để giòn — file dùng 100% bột gạo, không nguồn nào đồng thuận cùng một slug phụ nên không thêm.]",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

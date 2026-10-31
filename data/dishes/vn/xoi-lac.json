@@ -25,7 +25,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "hap",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -77,15 +77,39 @@
     }
   ],
   "recipe_steps": [
-    "Lạc ngâm nước vài giờ cho mềm vỏ; gạo nếp ngâm qua đêm.",
-    "Trộn nếp với lạc và chút muối, đồ chín; giữa chừng rưới nước cốt dừa, đồ tiếp cho xôi dẻo và lạc chín mềm.",
-    "Xới ra gói, rắc vừng rang hoặc muối vừng khi ăn."
+    "Ngâm gạo nếp 6–8 giờ hoặc qua đêm; lạc sống ngâm riêng 2–4 giờ, vo sạch.",
+    "Luộc lạc trước 15–45 phút tới khi chín mềm nhưng không nát (tuỳ cỡ hạt), vớt để ráo.",
+    "Trộn nếp với lạc đã luộc và muối; cho vào xửng hấp khoảng 30 phút.",
+    "Mở xửng, rưới nước cốt dừa (hoặc dầu dừa) đều mặt xôi, đảo nhẹ, hấp thêm khoảng 5 phút.",
+    "Xôi đạt khi hạt nếp dẻo mềm, lạc chín mềm không sượng.",
+    "Dọn nóng, rắc vừng rang hoặc muối vừng nếu thích."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/2-cach-nau-xoi-dau-phong-la-dua-va-xoi-man-dau-phong-thom-05253",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH — mục 'Xôi đậu phộng lá dứa' (4 người): lạc 37,5 g/khẩu phần khớp file; biến thể thơm–ngọt có cốt dừa 50g và đường."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/24578546",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Bòn Bon (6 người): xôi lạc nguyên bản không cốt dừa (dùng dầu dừa), lạc 25 g/khẩu phần."
+    },
+    {
+      "url": "https://dienmaycholon.com/mon-ngon/cach-nau-xoi-lac",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy Chợ Lớn (trang biên tập): bản nguyên bản + cốt dừa theo tỉ lệ nếp; ngâm lạc 2–3 giờ, luộc trước 15–20 phút."
+    },
+    {
+      "url": "https://www.nguyenkim.com/cach-nau-xoi-dau-phong-ngon-giu-tron-vi-tet-NKRL0876.b",
+      "accessed": "2026-10-31",
+      "note": "Nguyễn Kim (blog biên tập): dùng nước dừa tươi + mỡ gà thay cốt dừa — thêm một tiếng nói cho phía 'không cốt dừa' trong tranh chấp cốt dừa."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt)",
+  "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-007 đợt 7: nâng Mức 2 — 4 nguồn đã mở. GIỮ toàn bộ định lượng: lạc sống 40g nằm giữa dải nguồn 25–62g; muối 1g trong dải 0,3–1,5. TRANH CHẤP CỐT DỪA (ghi nhận, không sửa ràng buộc): 2 nguồn dùng ~50g/khẩu phần trong khi 2 nguồn không dùng cốt dừa (dầu dừa / nước dừa tươi) — đồng thuận bị chia đôi, không thỏa điều kiện ≥2 nguồn áp đảo lệch >25–30%; giữ 15g, chủ dự án có thể chốt chuẩn hoá độ béo sau. Ghi nhận cùng nhóm quy ước thang khô của xôi: tổng khô của file 209g so với serving 220g thành phẩm (150g nếp khô hấp chín cho ~330–360g xôi) — chờ quy ước cấp kho.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

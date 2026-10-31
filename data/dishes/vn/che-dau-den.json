@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "chieu",
@@ -82,11 +82,30 @@
     }
   ],
   "recipe_steps": [
-    "Đậu đen ngâm qua đêm, nấu với nước cho mềm, chắt bớt nước đầu nếu muốn chè trong.",
-    "Cho đường vào nấu nhỏ lửa cho đậu thấm ngọt.",
-    "Khuấy chút bột năng tạo độ sánh nhẹ, múc ra ly, chan nước cốt dừa, ăn kèm đá bào."
+    "Đậu đen nhặt bỏ hạt nổi (hạt hỏng), ngâm 5–8 giờ hoặc qua đêm.",
+    "Ninh đậu lửa nhỏ khoảng 1 giờ (nồi áp suất: 15 phút + ủ 10 phút) tới khi hạt mềm bở nhưng không nát; chắt bớt nước ninh cho chè trong.",
+    "Cho đường và muối vào SAU khi đậu đã mềm (cho sớm đậu cứng, sượng), sên/ướp 5–15 phút cho thấm, trả nước ninh vào, đun sôi lại 5–30 phút.",
+    "Nấu riêng nước cốt dừa lửa nhỏ với chút bột năng tới khi sánh lại.",
+    "Múc chè ra ly, chan nước cốt dừa lên trên (cốt là phần chan riêng, không nấu chung).",
+    "Dọn kèm đá bào; dừa nạo, dừa khô, lạc rang là topping ăn kèm ngoài, không tính vào khẩu phần."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-nau-che-do-den-dau-den-bang-noi-ap-suat-nhanh-chong-don-11924",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH (4 người, nồi áp suất): bản có bột khoai/bột báng kèm — chỉ dùng đối chiếu tỉ lệ và kỹ thuật ninh; định lượng đường của nguồn là ngoại lệ rất ngọt."
+    },
+    {
+      "url": "https://vietnamnet.vn/top-3-cach-nau-che-dau-den-ngon-nhanh-mem-tai-nha-2025350.html",
+      "accessed": "2026-10-31",
+      "note": "VietNamNet (báo chí) — công thức 'truyền thống' thuần: đối chiếu theo tỉ lệ trên đậu (đường ~17g, cốt ~44g suy theo đậu của file)."
+    },
+    {
+      "url": "https://giadinh.suckhoedoisong.vn/6-cach-nau-che-dau-den-do-den-ngon-nhanh-nhu-giup-thanh-nhiet-mua-he-172220606153802919.htm",
+      "accessed": "2026-10-31",
+      "note": "Gia đình & SKĐS (báo chí) — bản truyền thống: cho đường sau khi đậu mềm; cốt dừa nấu riêng chan lên ly."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/che-dau-den.webp",
@@ -97,7 +116,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt)",
+  "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-007 đợt 7: nâng Mức 2 — 3 nguồn đã mở, đối chiếu bằng tỉ lệ theo đậu (2 nguồn không ghi số người nên số người suy diễn không đáng tin bằng tỉ lệ). GIỮ toàn bộ định lượng: đậu đen 50g (số người của nguồn dao động 25–83 do khác biến thể — không có đồng thuận sửa; 50 nhất quán với tỉ lệ đường/cốt của 2 nguồn báo chí), đường 25g (dải truyền thống 17–29 suy theo tỉ lệ; số 75 của ĐMX là ngoại lệ gồm đường sên + đường phèn + đường trong cốt), cốt dừa 40g (dải 29–62, trung vị), bột năng 8g (giữa 4 và 11 — cảnh báo không lấy số của bản 'đậu đen bột năng' ở nguồn 3: đó là viên bột lọc nhào tay, khác bột tạo sánh). KHÔNG bổ sung bột khoai/bột báng: chỉ xuất hiện ở các biến thể có tên riêng; cả 2 bản truyền thống thuần đều không có — file là bản thuần.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

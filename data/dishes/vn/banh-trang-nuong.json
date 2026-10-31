@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nuong",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "an-vat",
@@ -30,7 +30,7 @@
     }
   ],
   "serving_desc": "1 cái",
-  "serving_grams": 80,
+  "serving_grams": 90,
   "ingredients": [
     {
       "ingredient_slug": "banh-trang",
@@ -41,8 +41,8 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "trung-ga",
-      "quantity": 25,
+      "ingredient_slug": "trung-cut",
+      "quantity": 22,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -50,6 +50,14 @@
     },
     {
       "ingredient_slug": "hanh-la",
+      "quantity": 8,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dau-an",
       "quantity": 8,
       "unit_name": "g",
       "is_optional": false,
@@ -87,14 +95,49 @@
       "is_optional": true,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "mam-ruoc",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-phi",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Đặt bánh tráng lên vỉ nướng than lửa nhỏ.",
-    "Đánh trứng với hành lá, tráng đều mặt bánh; thêm sa tế, xúc xích/tôm khô nếu thích.",
-    "Nướng đến khi bánh giòn, trứng chín; gập đôi, ăn nóng."
+    "Làm mỡ hành: đun dầu nóng, đổ vào hành lá cắt nhỏ, đảo đều.",
+    "Đặt bánh tráng lên vỉ nướng than lửa nhỏ–vừa (hoặc chảo chống dính lửa nhỏ nhất), xoay bánh liên tục cho nóng đều.",
+    "Phết mỡ hành, sa tế và mắm ruốc (nếu dùng) lên mặt bánh; nướng sơ tới khi bánh khô, rìa hơi cong.",
+    "Đập trứng cút dàn đều mặt bánh; trứng hơi se thì rắc tôm khô và hành phi.",
+    "Rưới tương ớt và mayonnaise, thêm xúc xích nếu thích; nướng thêm tới khi đế vàng giòn, viền cong cứng, trứng chín se mặt.",
+    "Gập đôi bánh, dọn ăn nóng ngay."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://vnexpress.net/banh-trang-nuong-ngon-dam-da-4601338.html",
+      "accessed": "2026-10-31",
+      "note": "VnExpress Cooking (báo chí, mẻ 5 miếng): bản đầy đủ kiểu Đà Lạt — mỡ hành (dầu ~10 g/cái), mắm ruốc ~5 g/cái, sa tế, trứng cút 2 quả/cái là phương án ưu tiên."
+    },
+    {
+      "url": "https://www.bluestone.com.vn/blogs/vao-bep/banh-trang-nuong-bang-chao-chong-dinh",
+      "accessed": "2026-10-31",
+      "note": "BlueStone — bản nướng chảo (mẻ 3–4 cái): trứng cút 2–3 quả/cái là định lượng theo cái rõ nhất; mỡ hành bằng dầu."
+    },
+    {
+      "url": "https://daylambanh.edu.vn/banh-trang-nuong-bang-chao",
+      "accessed": "2026-10-31",
+      "note": "Dạy Làm Bánh Á Âu (Baker Thanh Tuyền, mẻ 10 miếng): 2 trứng cút/cái, định danh nguồn gốc Đà Lạt, nướng than là nguyên bản; có hành phi trong nguyên liệu chuẩn."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/banh-trang-nuong.webp",
@@ -105,7 +148,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt)",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-007 đợt 7: nâng Mức 2 — 3 nguồn đã mở. XỬ LÝ DÒNG TRỨNG: đổi trứng gà 25g → trứng cút 22g — 3/3 nguồn đều ưu tiên 2 quả trứng cút/cái cho bản Đà Lạt; 'trứng gà 25g' cũ không nguồn nào ủng hộ (phương án trứng gà là 1 quả = 50g nguyên quả/cái). BỔ SUNG dầu ăn 8g — mỡ hành là thành phần lõi (2 nguồn định lượng ~10g/cái) mà file thiếu hẳn dòng dầu dù bước nấu nhắc mỡ hành; BỔ SUNG mắm ruốc 5g dạng tuỳ chọn (1 nguồn coi là lớp phết chuẩn; bản gốc thiên về mỡ hành + trứng nên để tuỳ chọn) và hành phi 3g dạng tuỳ chọn (2 nguồn). Serving 80→90g theo tổng sau bổ sung. GIỮ sa tế 5g (nguồn duy nhất định lượng cho 15g/cái — hào phóng bất thường; mức 1 muỗng cà phê phổ biến hơn). Ghi nhận: phổ topping 'chuẩn Đà Lạt' không tồn tại một bộ duy nhất — 3 nguồn cho 3 phổ khác nhau; file theo phổ 'trứng + mỡ hành + sa tế'. Nhãn dac-san:lam-dong chưa có trong taxonomy — không gán, chỉ ghi nhận.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

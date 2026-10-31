@@ -1,0 +1,51 @@
+{
+  "slug": "gelatin",
+  "name_vi": "Gelatin (bột, khô không đường)",
+  "name_en": "Gelatins, dry powder, unsweetened",
+  "category": "khac",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "169599",
+    "source_url": "https://fdc.nal.usda.gov/food-details/169599/nutrients",
+    "scientific_name": null,
+    "kcal_per_100g": 335,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 85.6,
+    "fat_g": 0.1,
+    "carb_g": 0,
+    "fiber_g": 0,
+    "water_g": null,
+    "sodium_mg": null,
+    "mapping_confidence": "high",
+    "mapping_note": "USDA SR Legacy mục 169599 'Gelatins, dry powder, unsweetened' — bột gelatin khô không đường, đúng dạng dùng làm chất đông cho chè khúc bạch/panna cotta (số lấy từ bản trích SR Legacy trong repo data/reference/usda-sr_legacy.csv, cùng nguồn đã kiểm chứng cho tran-chau ở LV2-007 Phần A). KHÔNG dùng mục 168775 'Gelatin desserts, dry mix' (hỗn hợp tráng miệng đã pha đường 381 kcal — khác đối tượng). Gelatin là collagen từ động vật → origin dong-vat trong TaggingRules; món chứa gelatin suy nhãn diet:man. Lượng dùng rất nhỏ (2–4g/khẩu phần) nhưng là thành phần định danh về kết cấu.",
+    "alternatives": [
+      {
+        "name": "Gelatin desserts, dry mix (USDA SR Legacy 168775)",
+        "why_not": "Hỗn hợp tráng miệng pha sẵn có đường (381 kcal, carb 90,5g) — không phải bột gelatin nguyên chất",
+        "external_id": "168775",
+        "kcal_per_100g": 381
+      }
+    ]
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:dong-vat",
+    "state:kho"
+  ]
+}

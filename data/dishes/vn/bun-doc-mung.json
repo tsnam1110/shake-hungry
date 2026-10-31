@@ -6,19 +6,26 @@
   "names": [
     {
       "locale": "vi",
-      "name": "bún dọc mùng",
+      "name": "Bún dọc mùng",
       "is_primary": true
     },
     {
       "locale": "en",
       "name": "Vermicelli soup with pork knuckle and taro stem",
       "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "Bún bung",
+      "is_primary": false,
+      "is_alias": true,
+      "note": "tên gọi khác"
     }
   ],
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -34,7 +41,7 @@
     }
   ],
   "serving_desc": "1 tô",
-  "serving_grams": 500,
+  "serving_grams": 550,
   "ingredients": [
     {
       "ingredient_slug": "bun-tuoi",
@@ -55,6 +62,38 @@
     {
       "ingredient_slug": "mong-gio",
       "quantity": 90,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "gio-song",
+      "quantity": 60,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "moc-nhi-kho",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nam-huong-kho",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-tim",
+      "quantity": 5,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -126,15 +165,34 @@
     }
   ],
   "recipe_steps": [
-    "Móng giò và sườn chặt miếng, chần sạch, ninh lấy nước dùng với nghệ tạo màu.",
-    "Dọc mùng tước vỏ, thái vát, bóp muối rửa sạch, trụng chín.",
-    "Cho bún, dọc mùng, cà chua vào tô, xếp móng giò, sườn, chan nước dùng, rắc hành, mùi."
+    "Chần sườn và móng giò qua nước sôi, rửa sạch; cho vào nồi nước mới ninh 40–60 phút, hớt bọt để nước dùng trong.",
+    "Giã nghệ tươi cho vào nồi nước dùng tạo màu vàng nhẹ; nấu tới khi móng giò mềm, đũa xăm qua được.",
+    "Dọc mùng tước vỏ, thái vát, bóp muối 15 phút, rửa và vắt kiệt nhiều lần cho hết ngứa; trụng sơ qua nước sôi.",
+    "Mộc nhĩ và nấm hương khô ngâm nở khoảng 1 giờ, băm nhỏ; trộn cùng giò sống và hành tím băm, ướp khoảng 15 phút cho thấm.",
+    "Cà chua bổ múi cau, xào sơ 3 phút với chút dầu cho ra màu rồi cho vào nồi nước dùng.",
+    "Thả từng viên mọc vào nước dùng đang sôi; mọc nổi lên là chín, đun thêm khoảng 2 phút.",
+    "Cho dọc mùng vào sau cùng, sôi lại là tắt bếp. Trụng bún riêng, xếp bún, sườn, móng giò và mọc vào tô, chan nước dùng nóng, rắc hành lá và rau mùi; dọn kèm mắm tôm nếu thích."
   ],
   "recipe_sources": [
     {
-      "url": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_m%C3%B3n_%C4%83n_Vi%E1%BB%87t_Nam",
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-nau-bun-moc-doc-mung-thanh-mat-giai-nhiet-cho-ngay-oi-10266",
       "accessed": "2026-10-31",
-      "note": "Đối chiếu: món có mặt trong Danh sách món ăn Việt Nam (Wikipedia tiếng Việt)."
+      "note": "Đúng món bún mọc dọc mùng; bài có 2 công thức (biên tập + người dùng) tính là một nhà xuất bản; đối chiếu mọc, dọc mùng, sườn và cách ninh."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/10063924",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Đào Diệu Loan (Hà Nội): đúng biến thể bún bung của file — bắp giò + sườn + mọc (thịt xay : giò sống = 1:1), nghệ giã luộc cùng thịt."
+    },
+    {
+      "url": "https://phunutoday.vn/tu-lam-bun-moc-doc-mung-ngon-nhu-ngoai-hang-d65351.html",
+      "accessed": "2026-10-31",
+      "note": "Phụ Nữ Today (báo chí): bún mọc dọc mùng với sườn + giò sống; quy đổi theo 1 kg bún ≈ 4–5 khẩu phần."
+    },
+    {
+      "url": "https://hcem.edu.vn/wp-content/uploads/2025/10/de-cuong-bai-giang-Che-bien-mon-an-Viet-Nam.pdf",
+      "accessed": "2026-10-31",
+      "note": "Đề cương bài giảng Chế biến món ăn Việt Nam (Trường CĐ Cơ Điện Hà Nội), mục Bún mọc: giò sống 300 g + sườn non/chân giò cho 4–5 người."
     }
   ],
   "media": [
@@ -147,7 +205,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-005 đợt 5: thử nâng Mức 2 — GIỮ Mức 1: lần mở nguồn đầu tiên bị chặn 429 — dừng ngay theo kỷ luật, chưa mở được nguồn nào. Thử lại khi hết chặn.] [LV2-006 đợt 6: GIỮ Mức 1 — thử lại sau 429 đợt 5: gom được 2 nguồn đã mở thì nhà cung cấp chặn 429 ở nguồn thứ ba, dừng ngay theo kỷ luật. Bất thường lớn ghi nhận cho đợt sau: file THIẾU hẳn mọc — nguyên liệu định danh của món — cần đối chiếu định lượng mọc khi đủ 3 nguồn.]",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-005 đợt 5: thử nâng Mức 2 — GIỮ Mức 1: lần mở nguồn đầu tiên bị chặn 429 — dừng ngay theo kỷ luật, chưa mở được nguồn nào. Thử lại khi hết chặn.] [LV2-006 đợt 6: GIỮ Mức 1 — thử lại sau 429 đợt 5: gom được 2 nguồn đã mở thì nhà cung cấp chặn 429 ở nguồn thứ ba, dừng ngay theo kỷ luật. Bất thường lớn ghi nhận cho đợt sau: file THIẾU hẳn mọc — nguyên liệu định danh của món — cần đối chiếu định lượng mọc khi đủ 3 nguồn.] [LV2-007 đợt 7: nâng Mức 2 — đối chiếu 4 nguồn đã mở (Điện Máy XANH tính 1 nhà xuất bản). BỔ SUNG mọc giò sống 60g — nguyên liệu định danh mà 4/4 nguồn đều có, file thiếu hẳn (slug gio-song chưa có số dinh dưỡng nên phần này chưa tính vào calo tới khi giò sống có số); +mộc nhĩ khô 5g (4/4 nguồn), +nấm hương khô 5g (3/4), +hành tím 5g. GIỮ móng giò 90g — không nguồn nào cân gram móng giò cho món này; đây là ca cân mong-gio đang chờ quy ước cấp kho của chủ dự án (LV2-005 §4). Mắm tôm 3g giữ dạng tuỳ chọn ăn kèm — 0/4 nguồn xác nhận trong món. Serving 500→550g theo tổng chất rắn sau bổ sung. Thêm tên gọi khác 'Bún bung'.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -6,7 +6,7 @@
   "names": [
     {
       "locale": "vi",
-      "name": "xôi gà",
+      "name": "Xôi gà",
       "is_primary": true
     },
     {
@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "hap",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -95,14 +95,41 @@
       "is_optional": true,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-la",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Ngâm nếp, đồ xôi chín dẻo.",
-    "Luộc gà, xé sợi, trộn chút nước mắm và tiêu.",
-    "Xới xôi ra đĩa, xếp gà xé, rưới mỡ hành, rắc hành phi."
+    "Ngâm gạo nếp 6–8 giờ (quá 8 giờ nếp chua), vo sạch, để ráo, trộn muối và lá dứa.",
+    "Hấp xôi khoảng 30 phút tới khi hạt nở mềm; xới đều, hấp thêm khoảng 15 phút cho chín đều và ráo mặt.",
+    "Gà luộc chín (hoặc chiên vàng), để nguội, xé sợi vừa ăn; trộn muối, tiêu và nước mắm vừa vị.",
+    "Làm mỡ hành: đun mỡ lợn (hoặc dầu) thật nóng, đổ vào hành lá cắt nhỏ.",
+    "Xới xôi ra đĩa, xếp gà xé lên trên, rưới mỡ hành, rắc hành phi.",
+    "Dọn nóng, ăn kèm nước mắm hoặc muối tiêu theo khẩu vị."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/2-cach-nau-xoi-ga-xe-thom-ngon-don-gian-cho-bua-sang-dinh-11896",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH — '2 cách nấu xôi gà xé': cách 2 có gram (5 người) cho nếp khô 120 g/người; cách 1 là bản gỏi gà luộc xé khớp tinh thần file."
+    },
+    {
+      "url": "https://daubepgiadinh.vn/xoi-ga-xe",
+      "accessed": "2026-10-31",
+      "note": "Đầu Bếp Gia Đình / Hướng Nghiệp Á Âu: nếp ngâm 6–8 giờ; mỡ hành làm từ hành lá + dầu nóng — khẳng định dòng hành lá mà bước của file nhắc nhưng nguyên liệu thiếu."
+    },
+    {
+      "url": "https://www.huongnghiepaau.com/xoi-ga",
+      "accessed": "2026-10-31",
+      "note": "Hướng Nghiệp Á Âu (giảng viên Bếp Nóng) — biến thể đùi gà chiên–rim xốt: chỉ dùng đối chiếu nếp (~125g/phần) và thời gian hấp 30 + 15 phút."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/xoi-ga.webp",
@@ -113,7 +140,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-007 đợt 7: nâng Mức 2 — 3 nguồn đã mở. GIỮ nếp khô 140g: hai nguồn có yield rõ cho 120–125g, file cao hơn 12–17% — chưa đạt ngưỡng đồng thuận sửa >25–30%. BỔ SUNG hành lá 5g (confidence low cho lượng — không nguồn nào định lượng; bất thường cấu trúc: bước của file ghi 'rưới mỡ hành' nhưng nguyên liệu thiếu hành lá, 2 nguồn làm mỡ hành bằng hành lá). GIỮ gà có da 80g (2/3 nguồn dùng đùi có da), mỡ lợn nước 8g, nước mắm 5g (không nguồn mở nào dùng nước mắm trộn gà xé — lượng nhỏ, ghi nhận khác biệt theo biến thể). BẤT THƯỜNG THANG XÔI (ghi nhận, chờ quy ước cấp kho — cùng ca xoi-xeo Phần A): nếp khô 140g cho thành phẩm ~295–310g, riêng xôi đã vượt serving 250g; file nhất quán nội bộ theo thang nguyên liệu khô/khẩu phần, không tự sửa.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

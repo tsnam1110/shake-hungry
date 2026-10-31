@@ -6,7 +6,7 @@
   "names": [
     {
       "locale": "vi",
-      "name": "chè chuối",
+      "name": "Chè chuối",
       "is_primary": true
     },
     {
@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "chieu",
@@ -42,7 +42,7 @@
     },
     {
       "ingredient_slug": "nuoc-cot-dua",
-      "quantity": 50,
+      "quantity": 70,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -74,19 +74,54 @@
     },
     {
       "ingredient_slug": "bot-bang",
-      "quantity": 15,
+      "quantity": 10,
       "unit_name": "g",
-      "is_optional": true,
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "bot-khoai",
+      "quantity": 8,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "muoi",
+      "quantity": 0.5,
+      "unit_name": "g",
+      "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Lột vỏ chuối sứ chín, cắt khoanh, ướp chút đường và muối.",
-    "Nấu nước cốt dừa với lá dứa, cho chuối vào nấu chín mềm (kèm bột báng nếu có).",
-    "Nêm đường vừa ngọt, rắc đậu phộng rang khi ăn; ăn nóng hoặc lạnh."
+    "Chuối sứ vừa chín tới, lột vỏ, ướp với đường và muối khoảng 20 phút (chuối quá chín sẽ nát, sống sẽ chát).",
+    "Ngâm bột báng và bột khoai 30 phút–2 giờ tới khi nở đều, trong suốt.",
+    "Đun nước cốt dừa với lá dứa, cho chuối vào nấu 5–15 phút tới khi mềm nhưng không nát.",
+    "Cho bột khoai vào nấu trước ít phút, rồi cho bột báng, nấu thêm 10–15 phút tới khi các hạt trong đều.",
+    "Nêm lại vị ngọt, tắt bếp.",
+    "Múc ra chén, rắc lạc rang khi ăn (lạc là phần ăn kèm ngoài, không nấu trong nồi); ăn nóng/ấm là chuẩn."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.huongnghiepaau.com/che-chuoi-bot-bang-nuoc-cot-dua",
+      "accessed": "2026-10-31",
+      "note": "Hướng Nghiệp Á Âu — công thức cơ bản 'chè chuối bột báng nước cốt dừa': chuối sứ quy sản lượng 89 g/khẩu phần khớp file; có cả bột báng + bột khoai."
+    },
+    {
+      "url": "https://bepmina.vn/mon-an-vat/cach-nau-che-chuoi-chung/",
+      "accessed": "2026-10-31",
+      "note": "Bếp Mina (recipe card 4 người): cốt dừa 100 g/khẩu phần, bột báng 10g, bột khoai 10g, ướp chuối với đường + muối 20 phút."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/14804359",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Bé Linh (Đà Nẵng, 6 người): cốt dừa 67g, bột báng 8g, bột khoai 8g — cả 3 nguồn độc lập đều có bột khoai đi cặp bột báng."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/che-chuoi.webp",
@@ -97,7 +132,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu).",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu). [LV2-007 đợt 7: nâng Mức 2 — 3 nguồn độc lập đã mở. SỬA nước cốt dừa 50→70g (cả 3 nguồn đều cao hơn ≥34%: 67/71/100 — đủ điều kiện ≥2 nguồn đồng thuận lệch >30%); SỬA bột báng 15→10g và ĐỔI sang bắt buộc (nguồn 7–10g; bột báng là nguyên liệu cốt lõi ở 3/3 nguồn, trạng thái tuỳ chọn cũ là sai bản chất món). BỔ SUNG bột khoai 8g (3/3 nguồn có, 5–10g — slug bot-khoai mới biên soạn đợt này theo USDA 169717) và muối 0,5g (3/3 nguồn ướp/nêm muối, file thiếu hẳn). GIỮ chuối 90g (1 nguồn quy sản lượng = 89g khớp tuyệt đối; 2 nguồn cao hơn do khẩu phần của họ lớn hơn 250g) và đường 18g (dải nguồn 17–30). Ghi nhận: lạc rang 5g tuỳ chọn giữ — số chuẩn bị trong nguồn (17–25g) là lạc rắc mặt, lượng thực rắc thấp hơn; cả 3 nguồn dùng chuối sứ/xiêm trong khi slug chuoi là chuối tiêu — kho chưa có slug chuối sứ.]",
   "status": "draft",
   "source": "llm_suggested",
   "confidence": "unknown",

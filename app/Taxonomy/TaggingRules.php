@@ -46,6 +46,7 @@ final class TaggingRules
         'bo-dong-vat' => 'dong-vat', 'mo-lon-nuoc' => 'dong-vat',
         // Sữa, trứng và chế phẩm (category khac)
         'pho-mai' => 'dong-vat', 'sua-chua' => 'dong-vat', 'sua-dac' => 'dong-vat',
+        'gelatin' => 'dong-vat', 'kem-whipping' => 'dong-vat', // collagen động vật + kem sữa — LV2-007 Phần B
         'sua-tuoi' => 'dong-vat', 'trung-vit-lon' => 'dong-vat', 'trung-vit-muoi' => 'dong-vat',
         // Sản phẩm công nghiệp phối trộn nhiều nguồn gốc
         'bot-canh' => 'tong-hop', 'hat-nem' => 'tong-hop', 'xot-mayonnaise' => 'tong-hop',
@@ -56,6 +57,7 @@ final class TaggingRules
         // Khoáng chất
         'muoi' => 'khoang-chat',
         'muoi-tom' => 'tong-hop', // hỗn hợp muối + tôm khô + ớt — LV2-007
+        'men-no' => 'tong-hop', 'bot-no' => 'khoang-chat', // men nuôi cấy công nghiệp + bột nở muối khoáng — LV2-007 Phần B
     ];
 
     /**
@@ -95,6 +97,9 @@ final class TaggingRules
         'thinh-gao' => 'kho', 'duong-phen' => 'kho', 'duong-thot-not' => 'kho', 'duong-trang' => 'kho',
         'muoi' => 'kho', 'mi-chinh' => 'kho', 'hat-nem' => 'kho',
         'muoi-tom' => 'kho', 'tran-chau' => 'kho', // gia vị khô + hạt tinh bột sắn khô — LV2-007
+        'bot-khoai' => 'kho', 'gelatin' => 'kho', // sợi tinh bột sắn khô + bột gelatin khô — LV2-007 Phần B
+        'kem-whipping' => 'dong-hop', 'cha-bong' => 'che-bien', // kem hộp lạnh + ruốc thịt thành phẩm — LV2-007 Phần B
+        'men-no' => 'kho', 'bot-no' => 'kho', // chất nở dạng bột khô — LV2-007 Phần B
         'lac-song' => 'kho', 'lac-rang' => 'kho', 'vung' => 'kho', 'vung-rang' => 'kho',
         'hat-dieu-rang' => 'kho',
         'tao-tau-kho' => 'kho', 'nhan-kho' => 'kho', 'qua-danh-danh' => 'kho',
@@ -117,7 +122,8 @@ final class TaggingRules
         'dau-an' => 'dong-hop', 'dau-me' => 'dong-hop', 'sua-bien' => 'dong-hop',
         // Chế biến sẵn
         'gio-lua' => 'che-bien', 'lap-xuong' => 'che-bien', 'xuc-xich' => 'che-bien',
-        'pate-gan' => 'che-bien', 'thit-xong-khoi' => 'che-bien', 'cha-ca-vien' => 'che-bien',
+        'pate-gan' => 'che-bien', 'cha-bong' => 'che-bien', // ruốc thịt lợn thành phẩm — LV2-007 Phần B
+        'thit-xong-khoi' => 'che-bien', 'cha-ca-vien' => 'che-bien',
         'dau-phu' => 'che-bien', 'dau-phu-chien' => 'che-bien', 'mi-can' => 'che-bien',
         'cha-lua-chay' => 'che-bien', // chả chay thành phẩm hấp chín, bán dạng cây (đợt DISH-005 đợt 3)
         'banh-mi' => 'che-bien', 'com-trang' => 'che-bien',
@@ -156,6 +162,7 @@ final class TaggingRules
         'trung-vit-lon' => ['trung'], 'trung-vit-muoi' => ['trung'], 'trung-ga-non' => ['trung'],
         'mi-trung-kho' => ['trung', 'lua-mi'], 'xot-mayonnaise' => ['trung'],
         'sua-tuoi' => ['sua'], 'sua-dac' => ['sua'], 'sua-chua' => ['sua'],
+        'kem-whipping' => ['sua'], // kem sữa tươi đánh bông — LV2-007 Phần B
         'pho-mai' => ['sua'], 'bo-dong-vat' => ['sua'],
         'dau-nanh-hat' => ['dau-nanh'], 'sua-dau-nanh' => ['dau-nanh'], 'dau-phu' => ['dau-nanh'],
         'dau-phu-chien' => ['dau-nanh'], 'tau-hu-ky' => ['dau-nanh'], 'chao' => ['dau-nanh'],
