@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "chieu",
@@ -34,7 +34,7 @@
   "ingredients": [
     {
       "ingredient_slug": "nhan-kho",
-      "quantity": 15,
+      "quantity": 20,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -50,27 +50,39 @@
     },
     {
       "ingredient_slug": "duong-phen",
-      "quantity": 20,
+      "quantity": 35,
       "unit_name": "g",
       "is_optional": false,
-      "source": "llm_suggested",
-      "confidence": "low"
-    },
-    {
-      "ingredient_slug": "la-dua",
-      "quantity": 1,
-      "unit_name": "g",
-      "is_optional": true,
       "source": "llm_suggested",
       "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Luộc hạt sen chín bở, để ráo.",
-    "Tách hạt nhãn khô (đang thiếu trong kho), nhồi hạt sen vào trong cùi nhãn.",
-    "Nấu nước đường phèn trong, thả nhãn bọc hạt sen vào nấu thấm nhẹ, để lạnh."
+    "Sơ chế hạt sen: bóc vỏ lụa, dùng tăm thông bỏ tim sen (tim còn sót sẽ làm chè đắng), rửa sạch, để ráo.",
+    "Luộc hạt sen: cho sen vào nồi nước lạnh, đun sôi rồi hạ lửa nhỏ liu riu 20-30 phút; đạt khi hạt bở mềm, ấn nhẹ vỡ nhưng không nát. Vớt sen ra để ráo, giữ lại nước luộc.",
+    "Ngâm nhãn khô: rửa nhanh qua nước cho sạch bụi, ngâm nước ấm 20-30 phút đến khi cùi nở căng, mềm mà không rách; vớt ra để ráo nước.",
+    "Bọc sen: đặt từng hạt sen đã luộc vào giữa cùi nhãn, nhẹ tay khép cùi ôm kín hạt sen; làm lần lượt cho hết phần nhãn.",
+    "Nấu nước đường: đun nước luộc sen (bổ sung nước cho đủ) với đường phèn trên lửa vừa, khuấy cho tan hết, hớt bọt; nấu sôi lăn tăn khoảng 5 phút đến khi nước trong.",
+    "Thả nhãn bọc sen vào nồi nước đường, đun vừa sôi tới khoảng 1-2 phút thì tắt bếp ngay; nấu lâu nhãn sẽ nhũn, mất độ giòn và chè dễ bị chua.",
+    "Để chè nguội hẳn, múc ra chén (mỗi chén khoảng 5-7 quả nhãn bọc sen cùng vài hạt sen rời), cho vào ngăn mát; dùng lạnh, có thể thêm đá khi ăn."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://pasgo.vn/blog/cach-nau-che-hat-sen-long-nhan-thom-ngon-ngot-mat-3165",
+      "accessed": "2026-10-31",
+      "note": "PasGo — Cách nấu chè hạt sen long nhãn thơm ngon, ngọt mát (Sương Mai sưu tầm) — Bộ số gốc: hạt sen tươi 100g, nhãn lồng tươi 500g hoặc long nhãn khô 100g, đường phèn 250g; có bước nhồi hạt sen vào cùi nhãn tươi và cả nhãn khô ngâm nước ấm. Công thức cho ~1,3-1,5 lít chè ≈ 5 chén 250g → quy đổi/khẩu phần: sen tươi ~20g, nhãn khô ~20g, đường phèn ~50g."
+    },
+    {
+      "url": "https://dayphache.edu.vn/cach-nau-che-hat-sen-nhan-nhuc",
+      "accessed": "2026-10-31",
+      "note": "Dạy Pha Chế Á Âu — Cách Nấu Chè Hạt Sen Long Nhãn (Nhãn Nhục) Tại Nhà (tác giả Châu Hương) — Bộ số gốc: hạt sen tươi 100g (hoặc khô 50g), long nhãn tươi 300g hoặc khô 100g, đường 200-250g; nhãn khô ngâm nước ấm 20-30 phút rồi đặt hạt sen vào lõi nhãn. Quy về ~5 chén 250g: sen ~20g, nhãn khô ~20g, đường ~40-50g/khẩu phần."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/241788",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Chè Nhãn Bọc Sen Tươi của Thế Vy — 6 phần ăn: nhãn tươi 1kg, hạt sen tươi 200-300g, đường phèn 150-200g; mỗi bát múc 5-7 quả nhãn bọc sen + ~10 hạt sen rời. Quy đổi/khẩu phần: sen tươi 33-50g, đường phèn 25-33g (biến thể nhãn tươi, ngọt nhẹ hơn)."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/che-nhan-boc-hat-sen.webp",
@@ -81,7 +93,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu).",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu). [LV2-012 đợt vét] Nâng Mức 2: đối chiếu 3 họ nguồn độc lập đã mở đọc thật (PasGo; Dạy Pha Chế Á Âu — Châu Hương; Cookpad Thế Vy), cả 3 đều có thao tác bọc hạt sen vào cùi nhãn; biến thể nhãn khô của file được PasGo và Dạy Pha Chế chấp nhận (ngâm nước ấm cho nở rồi nhồi sen). Sửa định lượng: nhan-kho 15→20g, duong-phen 20→35g; bỏ dòng la-dua (0/3 họ ủng hộ). hat-sen-tuoi giữ 30g (các họ cho 20-50g/khẩu phần, file nằm giữa dải).",
   "status": "draft",
   "source": "llm_suggested",
   "confidence": "unknown",

@@ -18,7 +18,7 @@
   "is_eat_out": false,
   "is_home_cook": true,
   "cooking_method": "tron",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -41,8 +41,8 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "vung",
-      "quantity": 12,
+      "ingredient_slug": "vung-rang",
+      "quantity": 8,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -58,19 +58,46 @@
     },
     {
       "ingredient_slug": "muoi",
-      "quantity": 0.5,
+      "quantity": 0.8,
       "unit_name": "g",
       "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "duong-trang",
+      "quantity": 2,
+      "unit_name": "g",
+      "is_optional": true,
       "source": "llm_suggested",
       "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Vừng và lạc rang giã dập, trộn đều với muối làm muối vừng (có thể làm sẵn để tủ lạnh dùng dần).",
-    "Cơm nóng nắm chặt tay thành từng nắm vừa ăn (hoặc ép khuôn), để nguội bớt cho định hình.",
-    "Chấm cơm nắm với muối vừng khi ăn. Tổng thời gian làm ~5 phút nếu đã có cơm và muối vừng sẵn."
+    "Vo gạo dẻo, nấu cơm chín mềm (cho nước nhỉnh hơn cơm thường một chút để cơm dẻo, dễ nắm); đạt khi hạt cơm chín trong, dẻo và hơi dính. Xới cơm ra, để nguội bớt đến còn ấm.",
+    "Rang lạc trên chảo lửa nhỏ, đảo đều tay 8-10 phút đến khi vỏ nứt, hạt thơm bùi; trút ra để nguội, xát bỏ vỏ lụa, giã dập (không giã nhuyễn hoàn toàn).",
+    "Rang vừng lửa nhỏ, đảo liên tục đến khi hạt nổ lách tách, dậy mùi thơm và hơi ngả vàng thì trút ra ngay để tránh cháy đắng.",
+    "Rang muối hạt đến khi khô, giòn; giã muối mịn rồi trộn đều với lạc, vừng và đường thành muối vừng — hỗn hợp đạt khi hạt còn dập vỡ, thơm bùi, mặn ngọt nhẹ cân bằng.",
+    "Khi cơm còn ấm, dùng khăn ẩm hoặc tay nhúng nước, nắm từng phần cơm ~100g thật chặt tay, lăn qua lại cho nắm cơm mịn, chắc, bề mặt không nứt.",
+    "Cắt nắm cơm thành miếng vừa ăn, chấm hoặc rắc muối vừng khi dùng; muối vừng thừa bảo quản hũ kín dùng dần."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/3-cach-lam-com-nam-thom-bui-ngon-mieng-don-gian-01508",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH — 3 cách làm cơm nắm thơm bùi (mục 1: Cơm nắm muối vừng) — Bộ số gốc (ghi cho 2 người): gạo dẻo 500g, vừng 50g, lạc 100g, đường 3 muỗng cà phê, muối 1 muỗng cà phê; ruốc và chả lụa là món ăn kèm. 500g gạo cho ~1.150g cơm; quy về khẩu phần 200g cơm của file: lạc ~17g, vừng ~9g, đường ~2g, muối ~0,9g. Tỉ lệ lạc:vừng = 2:1."
+    },
+    {
+      "url": "https://memart.vn/tin-tuc/blog3/com-trang-muoi-vung-vi-cb.html",
+      "accessed": "2026-10-31",
+      "note": "memart.vn — Cơm Trắng Muối Vừng – Hương Vị Dân Dã Gợi Nhớ Tuổi Thơ — Bộ số độc lập: gạo dẻo 400g, lạc 100g, vừng 50g, muối hạt 1 thìa canh, đường 1 thìa cà phê (tuỳ chọn). Tỉ lệ lạc:vừng vẫn 2:1; quy về 200g cơm (~920g cơm từ 400g gạo): lạc ~22g, vừng ~11g."
+    },
+    {
+      "url": "https://m.afamily.vn/nho-com-trang-muoi-vung-20241113161357866.chn",
+      "accessed": "2026-10-31",
+      "note": "aFamily — Nhớ cơm trắng muối vừng (tạp chí gia đình, 2024) — Nguồn định tính có tỉ lệ rõ: vừng dùng 'một phần ba so với lạc' (lạc:vừng = 3:1); lạc rang chảo gang, vừng rang lửa nhỏ đến nổ lách tách, muối hạt rang khô giòn, tất cả giã cối đất — không đường, chỉ chút mì chính."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/com-nam-muoi-vung.webp",
@@ -81,7 +108,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.",
+  "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-012 đợt vét] Nâng Mức 2: đối chiếu 3 họ nguồn độc lập đã mở đọc thật (Điện Máy XANH — bộ số 500/100/50, cùng họ với Thế Giới Ẩm Thực/Nấu Ăn Không Khó; memart — bộ số 400/100/50; aFamily — tỉ lệ vừng 1/3 lạc). Sửa theo tỉ lệ đồng thuận lạc:vừng 2:1-3:1: vung 12→8g, muoi 0,5→0,8g; thêm duong-trang 2g (optional, 2/3 họ có trong muối vừng). com-trang 180g và lac-rang 15g giữ nguyên (nằm trong dải quy đổi của các họ).",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

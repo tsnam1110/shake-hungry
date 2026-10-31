@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nuong",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -42,7 +42,7 @@
     },
     {
       "ingredient_slug": "pate-gan",
-      "quantity": 25,
+      "quantity": 4,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -71,14 +71,50 @@
       "is_optional": true,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "thit-lon-xay",
+      "quantity": 20,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-tay",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Cán bột mì thành vỏ ngàn lớp (hoặc dùng vỏ bánh ngàn lớp sẵn), cắt miếng vừa.",
-    "Cho nhân patê gan vào giữa, gấp mép, phết lòng đỏ trứng lên mặt.",
-    "Nướng ở 180°C khoảng 20 phút đến khi bánh phồng, vàng ruộm."
+    "Trộn nhân: thịt lợn xay với patê gan, hành tây băm nhỏ, chút muối, tiêu và nước mắm; trộn đều tay khoảng 2 phút đến khi nhân dẻo, quyện, không còn rời rạc; bọc kín và để lạnh 20-30 phút cho nhân firm, dễ gói và không làm chảy bơ trong vỏ.",
+    "Cán và cắt vỏ: cán mỏng vỏ bánh ngàn lớp (tự cán bột mì + bơ hoặc vỏ sẵn) còn lạnh, dày khoảng 3 mm; cắt thành các miếng tròn hoặc vuông đều nhau, chia làm hai phần đáy và nắp; giữ phần chưa dùng trong ngăn mát để lớp bơ không mềm.",
+    "Phi thử vị: lấy một viên nhân nhỏ bằng đầu ngón tay, áp chảo hoặc quay chín 30-40 giây để nếm; nhân đạt khi vừa mặn, thơm tiêu và béo patê nhưng không tanh — chỉnh gia vị ở bước này trước khi gói hàng loạt.",
+    "Gói bánh: đặt khoảng 20 g nhân vào giữa miếng đáy, phết một lớp mỏng lòng trắng/trứng đánh quanh mép, úp miếng nắp lên, ép chặt mép bằng tay rồi ấn viền bằng nĩa để kín hoàn toàn; khía một đường ngắn trên đỉnh mỗi bánh cho hơi thoát khi nướng.",
+    "Phết mặt và làm lạnh lại: phết lòng đỏ trứng đánh tan lên mặt bánh một lớp mỏng đều, rắc chút vừng nếu thích; xếp bánh lên khay lót giấy nến, cách nhau 2-3 cm, cho khay vào ngăn mát 10-15 phút để vỏ lạnh trở lại, nướng sẽ tách lớp rõ hơn.",
+    "Nướng: làm nóng lò trước ở 190°C; nướng bánh 20-25 phút ở lửa trên-dưới đến khi bánh phồng cao, các lớp tách rõ và mặt vàng ruộm đều; không mở lò trong 10 phút đầu để bánh không xẹp.",
+    "Nghỉ và dùng: lấy khay ra, để bánh nguội trên rack 5-10 phút cho vỏ giòn lại và nhân bớt bỏng; bánh đạt khi bẻ ra thấy vỏ nhiều lớp khô giòn, nhân chín hồng đều, không rỉ nước."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "http://www.muchadoaboutfooding.com/2014/09/recipe-pate-chaud-banh-pate-so.html?showComment=1502560082503",
+      "accessed": "2026-10-31",
+      "note": "Recipe - Pâté Chaud (Bánh Patê Sô) - Much Ado About Fooding — Yield 48 cái nhỏ 2,75 inch: thịt xay 1,25 lb (567 g, ~11,8 g/cái nhỏ), patê gan 1/2 cup (~120 g, ~2,5 g/cái nhỏ, tức patê ≈21% lượng thịt), 1 củ hành tây, 2 trứng, 30 lá puff. Tỉ lệ patê/thịt là cơ sở giảm patê."
+    },
+    {
+      "url": "https://whiteonricecouple.com/recipe_print/vietnamese-pate-chaud-pate-sho-meat-pastry-recipe",
+      "accessed": "2026-10-31",
+      "note": "Vietnamese Pate Chaud (Pate Sho) Meat Pastry - White On Rice Couple (bản in) — Yield 9 cái lớn: thịt xay 1/2 lb (227 g, 25,2 g/cái), hành băm 1 cup/cả mẻ, puff pastry 1 gói ~17 oz, trứng rửa mặt; nhân KHÔNG có patê. Quy về cái 70 g: thịt ~20 g."
+    },
+    {
+      "url": "https://nguyenfoodstall.com/blogs/vietnamese-food-recipes/banh-pate-so-vietnamese-savory-puff-pastry",
+      "accessed": "2026-10-31",
+      "note": "Bánh Patê Sô (Vietnamese Savory Puff Pastry) - Nguyen Food Stall — 4 lá puff, thịt xay 1 lb, 1/2 củ hành tây xào trước, 3 muỗng canh mộc nhĩ khô, 2-3 trứng; nhân KHÔNG có patê và không ghi yield — dùng xác nhận định danh nhân thịt + hành, không dùng định lượng."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/banh-pate-so.webp",
@@ -89,7 +125,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt)",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-012 đợt vét] Nâng Mức 2: đối chiếu 3 họ nguồn độc lập (Much Ado About Fooding, White On Rice Couple, Nguyen Food Stall). Phân xử: nhân patê sô đúng định danh là thịt xay + patê phụ — file gốc chỉ có patê 25 g là sai định danh, đã đề xuất giảm patê-gan 25→4 g, thêm thit-lon-xay 20 g và hanh-tay 5 g (llm_suggested, low). Vỏ giữ nguyên: cả 3 họ dùng puff pastry sẵn, file tách bột mì + bơ là quy đổi tương đương, không có cơ sở ≥2 họ để đổi tỉ lệ.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

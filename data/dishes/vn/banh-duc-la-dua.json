@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "an-vat",
@@ -30,7 +30,7 @@
   "ingredients": [
     {
       "ingredient_slug": "bot-gao",
-      "quantity": 55,
+      "quantity": 28,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -38,7 +38,7 @@
     },
     {
       "ingredient_slug": "bot-nang",
-      "quantity": 10,
+      "quantity": 22,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -46,7 +46,7 @@
     },
     {
       "ingredient_slug": "nuoc-cot-dua",
-      "quantity": 30,
+      "quantity": 45,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -54,7 +54,7 @@
     },
     {
       "ingredient_slug": "duong-thot-not",
-      "quantity": 12,
+      "quantity": 17,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -83,14 +83,47 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "duong-trang",
+      "quantity": 20,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Xay lá dứa lấy nước, pha với bột gạo, bột năng và chút muối.",
-    "Khuấy bột trên lửa nhỏ đến khi đặc, trong và róc nồi.",
-    "Đổ ra khuôn cho nguội, cắt miếng, chan nước cốt dừa thắng với đường thốt nốt, rắc vừng."
+    "Rửa sạch lá dứa, cắt khúc ngắn, xay nhuyễn với nước rồi lọc qua rây, vắt kiệt lấy nước cốt xanh; bỏ bã lá.",
+    "Hoà bột gạo, bột năng, đường cát và chút muối vào nước lá dứa cùng một phần nước cốt dừa, khuấy tan hẳn, để bột nghỉ khoảng 30 phút cho nở đều.",
+    "Bắc nồi bột lên bếp lửa vừa, khuấy liên tục; khi bột nóng và bắt đầu nặng tay thì hạ lửa thật nhỏ, khuấy tiếp đến khi bột đặc quánh, dẻo mịn và róc đáy nồi.",
+    "Thoa lớp dầu mỏng vào khuôn, đổ bột vào dàn phẳng, hấp cách thuỷ đến khi bánh chín trong; xiên tăm vào giữa bánh thấy tăm khô, không dính bột là đạt.",
+    "Lấy khuôn ra, để bánh nguội hoàn toàn cho khối bánh đứng và dai lại, rồi dùng dao thoa dầu cắt thành miếng vừa ăn.",
+    "Thắng nước cốt dừa với chút muối ở lửa vừa, sôi lăn tăn thì cho ít bột năng pha loãng vào khuấy cho hơi sệt; thắng riêng đường thốt nốt với nước và chút nước gừng đến khi tan hết và sánh nhẹ.",
+    "Bày bánh ra đĩa, chan nước cốt dừa và nước đường thốt nốt lên trên, rắc vừng rang vàng; bánh đạt khi miếng bánh xanh trong, dai dẻo, không bở và không còn mùi bột sống."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://daylambanhngon.com/bien-tau-cuc-la-voi-cong-thuc-lam-banh-duc-la-dua-cot-dua/",
+      "accessed": "2026-10-31",
+      "note": "Biến tấu cực lạ với công thức làm bánh đúc lá dứa cốt dừa - Dạy Làm Bánh Ngon (lớp dạy làm bánh) — Bột gạo 180g + bột năng 120g + cốt dừa 450ml + đường trắng 120g + lá dứa 100g cho phần bánh; chan thêm 250ml cốt dừa và siro 100g đường thốt nốt. Mẻ bánh ~1kg, quy về đĩa 180g (~6 đĩa): gạo ~30g, năng ~20g, đường trắng ~20g, thốt nốt ~17g, cốt dừa rất cao (biến tấu cốt dừa, ~115g/đĩa gồm cả nước chan)."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/5049497",
+      "accessed": "2026-10-31",
+      "note": "Bánh đúc lá dứa - Cookpad, tác giả Le Minh Trang — Bột gạo 70g + bột năng 70g (cộng ~20g năng ở lớp cốt dừa và nước chan), đường cát 100g + đường thốt nốt 50g, cốt dừa 250ml, mè rang rắc mặt; hấp 30 phút. Quy về đĩa 180g (~4 đĩa): gạo ~18g, năng ~22g, đường cát ~25g, thốt nốt ~13g, cốt dừa ~60g."
+    },
+    {
+      "url": "https://www.hoclammonngon.com/2015/12/banh-uc-la-dua.html",
+      "accessed": "2026-10-31",
+      "note": "Bánh đúc lá dứa - Học Làm Món Ngon — Bột gạo 200g + bột năng 200g (tỉ lệ 1:1), đường thốt nốt 250g thắng nước đường, mè trắng rang 50g, cốt dừa không ghi số. Mẻ ~1,4kg, quy về đĩa 180g (~8 đĩa): gạo ~25g, năng ~25g, thốt nốt ~31g, mè ~6g."
+    },
+    {
+      "url": "https://inauanngon.com/cach-lam-banh-duc-la-dua/",
+      "accessed": "2026-10-31",
+      "note": "Cách làm bánh đúc lá dứa - I Nấu Ăn Ngon — Bột gạo 100g + bột năng 100g (1:1), đường cát 100g trong bột, đường thốt nốt 100g thắng riêng, cốt dừa 100ml trong bánh, dùng 450ml nước vôi trong. Quy về đĩa 180g (~4 đĩa): gạo ~25g, năng ~25g, đường cát ~25g, thốt nốt ~25g, cốt dừa ~25g trong bánh (chan thêm tuỳ ý)."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/banh-duc-la-dua.webp",
@@ -101,7 +134,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-004 đợt 2 (lô bánh dân gian) mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp DISH-004 đợt 2 (lô bánh dân gian) mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] Đạt Mức 2: 4 họ độc lập đã mở đọc (Dạy Làm Bánh Ngon, Cookpad Le Minh Trang, Học Làm Món Ngon, I Nấu Ăn Ngon), quy về đĩa 180g. Sửa: bot-gao 55->28, bot-nang 10->22, nuoc-cot-dua 30->45, duong-thot-not 12->17; thêm duong-trang 20g (3/4 họ có trong phần bánh). Dòng sửa/thêm giữ source=llm_suggested, confidence=low.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

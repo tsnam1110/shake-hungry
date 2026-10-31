@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "toi",
@@ -30,7 +30,7 @@
   "ingredients": [
     {
       "ingredient_slug": "nam-rom",
-      "quantity": 40,
+      "quantity": 25,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -85,14 +85,6 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "bap-cai",
-      "quantity": 40,
-      "unit_name": "g",
-      "is_optional": false,
-      "source": "llm_suggested",
-      "confidence": "low"
-    },
-    {
       "ingredient_slug": "cai-thao",
       "quantity": 40,
       "unit_name": "g",
@@ -141,14 +133,6 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "sa",
-      "quantity": 5,
-      "unit_name": "g",
-      "is_optional": false,
-      "source": "llm_suggested",
-      "confidence": "low"
-    },
-    {
       "ingredient_slug": "nuoc-tuong",
       "quantity": 8,
       "unit_name": "g",
@@ -171,15 +155,57 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nam-dui-ga",
+      "quantity": 20,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Hầm nước dùng lẩu từ bắp ngọt, củ cải, cà rốt, sả; nêm nước tương, muối, đường phèn.",
-    "Bày các loại nấm, đậu phụ, tàu hũ ky và rau ra đĩa riêng.",
-    "Đun sôi nồi lẩu, nhúng lần lượt nấm, đậu phụ và rau.",
-    "Ăn kèm bún tươi, chấm nước tương ớt."
+    "Sơ chế nấm: cắt bỏ gốc nấm rơm, nấm kim châm, nấm bào ngư và nấm đùi gà, ngâm nước muối loãng khoảng 5 phút, rửa lại, để ráo; nấm rơm chẻ đôi, nấm đùi gà thái lát xéo dày vừa ăn, nấm bào ngư xé miếng. Nấm hương khô ngâm nước ấm 20-30 phút cho nở mềm, cắt bỏ chân cứng.",
+    "Sơ chế rau củ và đậu: ngô ngọt cắt khoanh, củ cải trắng và cà rốt gọt vỏ cắt khúc to để hầm nước dùng; cải thảo cắt khúc, rau muống nhặt rửa sạch; đậu phụ cắt khối vuông, tàu hũ ky cắt miếng vừa ăn; bày riêng nấm, rau và đậu ra đĩa.",
+    "Hầm nước dùng rau củ: cho khoảng 1,5-2 lít nước vào nồi cùng ngô, củ cải trắng và cà rốt, đun sôi rồi hạ lửa vừa hầm 30-40 phút, hớt bọt cho nước trong; rau củ mềm và nước có vị ngọt thanh là đạt, vớt bỏ phần củ hầm (giữ lại khoanh ngô nếu thích ăn).",
+    "Nêm nước lẩu: cho nấm hương đã ngâm vào nồi nước dùng, nêm nước tương, muối và đường phèn, khuấy tan và nếm lại — nước lẩu phải thanh, mặn nhẹ, ngọt hậu từ rau củ chứ không gắt; đun sôi trở lại trên lửa lớn.",
+    "Chuyển nồi nước dùng sang nồi lẩu đặt tại bàn, giữ sôi lăn tăn; cho đậu phụ, đậu phụ chiên và tàu hũ ky vào nấu trước khoảng 3-5 phút cho thấm nước dùng.",
+    "Khi ăn, nhúng lần lượt từng loại nấm vào nước đang sôi: nấm đùi gà và nấm rơm nhúng 3-5 phút cho chín mềm, nấm bào ngư 2-3 phút, nấm kim châm chỉ 1-2 phút cho vừa giòn — vớt ra ngay khi nấm vừa chín tới, không nấu lâu làm nấm dai và nước đục.",
+    "Nhúng cải thảo và rau muống sau cùng, rau vừa chuyển màu xanh tươi và mềm nhẹ là vớt ăn ngay. Ăn kèm bún tươi (80 g/khẩu phần), chấm nước tương pha ớt; chan thêm nước lẩu khi nồi cạn dần."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://kitchenaz.vn/3-cach-nau-lau-nam-chay-lau-thai-chay-va-lau-nam-la-e-thanh-dam-don-gian/",
+      "accessed": "2026-10-31",
+      "note": "3 cách nấu lẩu nấm chay, lẩu thái chay và lẩu nấm lá é (KitchenAZ — sao nguyên văn công thức Điện Máy XANH, biên tập Nguyen Huynh Phuong) — Họ A (ĐMX gốc, các bản sao tính 1 họ). Cho 4 người: nấm rơm 50g (12,5g/khẩu phần), nấm đông cô 50g, nấm đùi gà 50g (12,5), nấm bào ngư 50g + dòng bào ngư/kim châm 100g, tàu hũ ky 50g (12,5), ngô 1 quả, cà rốt 1 củ, mía lau 100g; nước dùng hầm mía+ngô 30-40 phút. Thuần chay."
+    },
+    {
+      "url": "https://www.huongnghiepaau.com/lau-thap-cam-chay",
+      "accessed": "2026-10-31",
+      "note": "Cách nấu lẩu thập cẩm chay — Hướng Nghiệp Á Âu — Họ B, biên tập nhà trường, không ghi số khẩu phần nên chỉ dùng kiểm hiện diện: nấm đông cô 100g, nấm rơm 50g, bào ngư 100g, đùi gà 100g, kim châm 100g, cải thảo 100g, bắp Mỹ 100g, củ cải trắng 100g, tàu hũ ky 50g, cà rốt 50g; nước dùng 1,5 lít hầm mía+bắp 15 phút, nêm muối/nước tương/đường. Thuần chay."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/16838839-l%E1%BA%A9u-n%E1%BA%A5m-chay-th%E1%BA%ADp-c%E1%BA%A9m",
+      "accessed": "2026-10-31",
+      "note": "Lẩu nấm chay thập cẩm — Cookpad QUÂN NGUYỄN — Họ C, tác giả cá nhân, 4-5 người: nấm kim châm 200g (~44g/khẩu phần), nấm bào ngư 100g (~22), nấm rơm 100g (~22), cải thảo 1/2 cây, củ cải trắng 1 củ, cà rốt 1 củ, bắp nếp+mỹ; nước hầm củ 3 lít, nêm đường phèn 30g (~6,7/khẩu phần), muối 2 muỗng cà phê (~2g/khẩu phần — khớp file). Thuần chay."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/16873804",
+      "accessed": "2026-10-31",
+      "note": "Lẩu nấm rau củ quả chay — Cookpad Lavender — Họ D, tác giả cá nhân, 4 phần: nấm hương khô 15g (3,75g/khẩu phần khô), nấm đùi gà 50g (12,5), nấm sò/bào ngư 50g (12,5), ngô 1 trái, củ cải 1 củ, cà rốt 1/2 củ, nước tương 1 muỗng canh (~4g/khẩu phần); nước dùng từ ngô+củ cải+cà rốt. Thuần chay."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/6154954",
+      "accessed": "2026-10-31",
+      "note": "Lẩu nấm (chay ngày rằm) — Cookpad Bếp của Quỳnh — Họ E, tác giả cá nhân, 5 người: nấm bào ngư 300g (60g/khẩu phần), nấm rơm tươi 200g (40), nấm kim châm 1 gói (~30-40/khẩu phần), đậu khuôn 1 lát, cải thảo; nước dùng cà rốt+củ cải. Là họ duy nhất ủng hộ nấm rơm 40g nhưng nồi chỉ có 3 loại nấm. Thuần chay."
+    },
+    {
+      "url": "https://amthucdochay.com/cach-nau-lau-nam-chay-thap-cam/",
+      "accessed": "2026-10-31",
+      "note": "5 cách nấu lẩu nấm chay thập cẩm — Ẩm Thực Đồ Chay (bản miền Nam) — Họ F, trang chuyên chay, 4 người: nấm rơm 100g (25/khẩu phần), nấm bào ngư 100g (25), nấm đông cô 100g (25), nấm kim châm 1 gói, đậu hũ 2 bìa (~50-75/khẩu phần — khớp tổng đậu phụ 50 + đậu phụ chiên 30 của file), bún tươi 300g (75/khẩu phần — sát quy ước 80g §14), rau mồng tơi/cải cúc 200g mỗi loại; nước dùng su hào+cà rốt+củ cải. Thuần chay."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/lau-nam-chay.webp",
@@ -190,7 +216,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [LV2-010 Phần C — gói quyết định chủ dự án 2026-10-31: A4.3 ÁP quy ước lượng sợi (EDITORIAL-GUIDE §14): bun-tuoi ăn kèm lẩu 40→80 g — toàn kho lẩu dùng thống nhất 80 g cho dòng bún ăn kèm; 40 g là ngoại lệ duy nhất không có căn cứ nguồn riêng.]",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [LV2-010 Phần C — gói quyết định chủ dự án 2026-10-31: A4.3 ÁP quy ước lượng sợi (EDITORIAL-GUIDE §14): bun-tuoi ăn kèm lẩu 40→80 g — toàn kho lẩu dùng thống nhất 80 g cho dòng bún ăn kèm; 40 g là ngoại lệ duy nhất không có căn cứ nguồn riêng.] [LV2-012 đợt vét] Nâng Mức 2: đối chiếu 5 họ nguồn độc lập đúng biến thể chay thuần (họ Điện Máy XANH qua bản sao KitchenAZ, Hướng Nghiệp Á Âu, Cookpad QUÂN NGUYỄN, Cookpad Lavender, Cookpad Bếp của Quỳnh, Ẩm Thực Đồ Chay) — mọi nguồn dùng nước dùng rau củ, không nước mắm/trứng/sữa/thịt. Sửa nam-rom 40→25 g (3 họ ở mức 12,5-25 g/khẩu phần), thêm nam-dui-ga 20 g (mọi họ đều có, file thiếu), bỏ sa (chỉ biến thể Thái/chua cay mới dùng) và bap-cai (0 họ ủng hộ; rau lá đồng thuận là cải thảo). Giữ bun-tuoi 80 g theo quy ước §14 A4.3. Viết lại 7 bước nấu.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

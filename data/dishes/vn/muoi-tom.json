@@ -18,7 +18,7 @@
   "is_eat_out": false,
   "is_home_cook": true,
   "cooking_method": "song",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "an-vat",
@@ -30,7 +30,7 @@
   "ingredients": [
     {
       "ingredient_slug": "muoi",
-      "quantity": 7,
+      "quantity": 4.5,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -46,7 +46,7 @@
     },
     {
       "ingredient_slug": "ot-tuoi",
-      "quantity": 0.6,
+      "quantity": 1.6,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -54,7 +54,7 @@
     },
     {
       "ingredient_slug": "duong-trang",
-      "quantity": 0.6,
+      "quantity": 1.6,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -67,12 +67,47 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "toi",
+      "quantity": 0.8,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Muối tôm Tây Ninh: rang muối với tôm khô xay, ớt, đường."
+    "Ngâm tôm khô trong nước lạnh 15-20 phút cho mềm và nhả bớt mặn, vớt ra để thật ráo nước; tôm còn ướt sẽ làm muối lâu khô và dễ ẩm mốc.",
+    "Ớt tươi rửa sạch, bỏ cuống, để ráo hẳn; tỏi bóc vỏ. Muối hột xay hoặc giã nhỏ vừa để hạt muối đều cỡ khi rang.",
+    "Xay tôm khô đã ráo đến khi tơi thành sợi nhỏ; xay riêng tỏi và ớt cho nhuyễn. Trộn đều muối, tôm, tỏi ớt và đường trong chảo khô khi chưa bật bếp, thấy màu cam phân bố đều là được.",
+    "Bắc chảo lên bếp, rang ở lửa nhỏ và đảo liên tục không ngừng tay để hỗn hợp không bén đáy; 10 phút đầu muối còn ẩm, nặng tay và dính đũa là bình thường.",
+    "Rang tiếp tổng cộng 25-30 phút: khi hạt muối bắt đầu tơi rời, nhẹ tay, mùi tôm và tỏi dậy thơm, múc lên đổ xuống thấy hạt tách rời nhau, không còn hơi ẩm bốc lên là muối đã khô đạt.",
+    "Tắt bếp, đảo thêm 2-3 phút cho muối nguội bớt rồi trộn mì chính vào (cho lúc nguội để bột ngọt không bị đắng); nếu muốn muối mịn thì xay lại một lượt ngắn.",
+    "Để muối nguội hoàn toàn mới cho vào hũ khô sạch, đậy kín, để nơi khô thoáng; muối đạt chuẩn bảo quản được 2-3 tháng, hạt vẫn tơi và thơm mùi tôm rang."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://vuonxanhpho.vn/blogs/trai-cay/cach-lam-muoi-tom-tay-ninh-chuan-vi-khong-chat-bao-quan-don-gian-tai-nha/",
+      "accessed": "2026-10-31",
+      "note": "Cách làm muối tôm Tây Ninh chuẩn vị - VuonXanhPho (bản Điện Máy XANH, biên tập Minh Phương) — Đã mở đọc toàn văn. Muối ăn 400g, tôm khô 200g, tỏi 2 củ, ớt tươi 150g, đường 150g; rang lửa nhỏ ~30 phút đến khô ráo. Họ 1."
+    },
+    {
+      "url": "https://mikiri.com.vn/bat-mi-cach-lam-muoi-tom-cay-nong-sieu-hap-dan/",
+      "accessed": "2026-10-31",
+      "note": "Bật mí cách làm muối tôm cay nồng - Mikiri — Đã mở đọc toàn văn (biên tập hãng sản xuất muối tôm). Muối hạt 300g, tôm khô nhỏ 150g, tỏi 80g, ớt tươi 100-120g, đường cát 100g; ngâm tôm 15-20 phút, xay, rang lửa nhỏ 25-30 phút đến tơi khô. Họ 2, tỉ lệ gần khớp họ 1."
+    },
+    {
+      "url": "http://giavihanhphuc.com/gia-vi/muoi-tom-tay-ninh-thu-thu-amp",
+      "accessed": "2026-10-31",
+      "note": "Muối tôm Tây Ninh - Chef Thư Thư (GiaViHanhPhuc) — Đã mở đọc toàn văn (công thức chef, biên soạn lại có ghi nguồn). Tôm khô 100g, tỏi 150g + ớt hiểm 150g, muối hột 300g, đường 150g, bột ngọt 75g; rang cạn, cho đường khi ráo mặt, bột ngọt trộn sau khi tắt bếp. Họ 3 — ủng hộ dòng mì chính và tỏi."
+    },
+    {
+      "url": "https://bepxua.vn/cach-lam-muoi-tom-tay-ninh-don-gian-len-mau-dep-va-cuc-thom-ngon/",
+      "accessed": "2026-10-31",
+      "note": "Cách làm muối tôm Tây Ninh đơn giản - BepXua — Đã mở đọc toàn văn. Tôm khô 80g, muối biển 1 chén, tỏi 1 củ, ớt sừng 3 trái, đường chỉ 2 thìa cà phê, tiêu 1 thìa cà phê; rang 30-40 phút. Họ 4 nhưng tỉ lệ đường là ngoại lệ thấp bất thường nên không dùng để chốt đường; vẫn ủng hộ có tỏi và kỹ thuật rang."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/muoi-tom.webp",
@@ -87,7 +122,7 @@
     "source": "wikidata",
     "queried_at": "2026-08-31"
   },
-  "import_note": "Nhập tự động từ Wikidata Q18459801 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Gợi ý nguyên liệu từ Wikidata (tiếng Anh, CHƯA ánh xạ sang data/ingredients/): carrot, Allium sativum, chili pepper, monosodium L-glutamate, dried shrimp, table salt, Cymbopogon. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/Mu%E1%BB%91i%20t%C3%B4m%20T%C3%A2y%20Ninh.png Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Nhập tự động từ Wikidata Q18459801 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Gợi ý nguyên liệu từ Wikidata (tiếng Anh, CHƯA ánh xạ sang data/ingredients/): carrot, Allium sativum, chili pepper, monosodium L-glutamate, dried shrimp, table salt, Cymbopogon. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/Mu%E1%BB%91i%20t%C3%B4m%20T%C3%A2y%20Ninh.png Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] NÂNG MỨC 2: 3 họ độc lập có định lượng đã mở đọc (Điện Máy XANH, Mikiri, Chef Thư Thư) đồng thuận tỉ lệ muối ~41%, tôm khô ~20%, ớt ~15%, đường ~15% — đã quy về khẩu phần 11g: sửa muối 7→4,5g, ớt 0,6→1,6g, đường 0,6→1,6g; thêm tỏi 0,8g (4/4 họ đều có, file thiếu); giữ tôm khô 2,5g và mì chính 0,2g. Mọi nguyên liệu đều có số dinh dưỡng. Dòng mới/sửa mang llm_suggested/low.",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

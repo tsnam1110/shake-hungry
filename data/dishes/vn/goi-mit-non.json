@@ -25,7 +25,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "tron",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -121,11 +121,31 @@
     }
   ],
   "recipe_steps": [
-    "Mít non gọt vỏ, luộc chín, xé sợi; tai heo luộc thái mỏng, tôm luộc bóc vỏ.",
-    "Pha nước mắm chua ngọt với chanh, đường và ớt.",
-    "Trộn mít, tai heo và tôm với nước trộn và rau răm; rắc lạc rang, hành phi khi dọn."
+    "Gọt vỏ xanh của mít non, bỏ cùi cứng, cắt khoanh dày khoảng 2 cm rồi ngâm nước muối loãng pha chút nước cốt chanh 15-20 phút; mít hết dính nhựa, giữ màu trắng ngà là đạt.",
+    "Luộc mít trong nước sôi ở lửa vừa 20-25 phút, vớt ra xả nước lạnh, để nguội hẳn rồi xé sợi nhỏ; dùng đũa xiên qua dễ dàng mà sợi mít vẫn dai, không nhão là đạt.",
+    "Luộc tai heo với chút muối ở lửa vừa 15-20 phút, vớt ra ngâm nước đá khoảng 5 phút rồi thái lát thật mỏng; tai chín trắng, giòn sần sật và không còn mùi hôi là đạt.",
+    "Luộc tôm sú trong nước sôi 3-4 phút đến khi tôm cong lại và đỏ đều, vớt ra ngâm nước lạnh, bóc vỏ, bỏ chỉ đen, chẻ đôi nếu tôm lớn.",
+    "Pha nước trộn: khuấy nước mắm với đường cho tan hết rồi mới cho nước cốt chanh và tỏi ớt băm; nếm thấy chua - ngọt - mặn cân bằng, không còn lợn cợn đường là đạt.",
+    "Cho mít, tai heo và tôm vào thố lớn, rưới khoảng 2/3 nước trộn, đảo nhẹ tay 1-2 phút cho thấm; tránh bóp mạnh để gỏi không ra nước.",
+    "Thêm rau răm cắt nhỏ và phần nước trộn còn lại, trộn nhanh lần cuối, bày ra đĩa, rắc lạc rang giã dập và hành phi lên trên; gỏi ráo, sợi mít tơi, dọn ăn ngay trong vòng 10 phút là ngon nhất."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/2-cach-lam-goi-mit-non-tai-heo-va-thit-ba-chi-ngon-la-mieng-02844",
+      "accessed": "2026-10-31",
+      "note": "2 cách làm gỏi mít non tai heo và thịt ba chỉ ngon, lạ miệng, dễ làm — Hai biến thể trên cùng trang (biên tập Phạm Ngọc Ánh): (a) tai heo cho 3 người — mít non 1 trái ~500g, tai heo 1 cái, da heo 100g, nước trộn 4 muỗng canh nước mắm + 4 muỗng canh đường + cốt 4 trái chanh, hành phi 1 muỗng canh, đậu phộng 1 chén gia vị; (b) thịt ba chỉ cho 2 người — mít 300g, thịt heo 200g, đậu phộng 50g, húng lủi 50g, nước mắm 2 muỗng canh, đường 1 muỗng canh. Quy về 1 khẩu phần: mít ~150-167g thô, đạm ~70-100g, lạc ~25g ở bản ba chỉ."
+    },
+    {
+      "url": "https://bepxua.vn/5-cach-lam-goi-mit-non-mien-trung-chay-man-ngon-san-sat/",
+      "accessed": "2026-10-31",
+      "note": "5 cách làm gỏi mít non miền Trung chay, mặn ngon sần sật — Bản 1 đúng tổ hợp của file (tai heo + tôm sú): mít non 500g, tai heo 300g, tôm sú 200g, cà rốt 1 củ, rau răm 50g, mè trắng 10g, đậu phộng rang 10g, nước trộn 3 muỗng canh nước mắm + 2,5 muỗng canh đường + 1 muỗng canh cốt chanh. Trang không ghi số khẩu phần; quy ước đĩa gia đình ~4 khẩu phần: mít 125g, tai 75g, tôm 50g, rau răm ~12g/khẩu phần."
+    },
+    {
+      "url": "https://www.bluestone.com.vn/blogs/vao-bep/cach-lam-goi-mit-non-tom-thit",
+      "accessed": "2026-10-31",
+      "note": "Cách làm gỏi mít non tôm thịt đậm đà hương vị đồng quê khó quên — Mít non 1 quả nhỏ ~1kg (phần xé ăn được sau bỏ vỏ/cùi ~500g), tôm sú 200g, thịt ba chỉ 200g, đậu phộng 3 muỗng canh, hành phi 2 muỗng canh, nước trộn 3 muỗng canh nước mắm + 2,5 muỗng canh đường + cốt 1 trái chanh. Quy ước ~4 khẩu phần: mít ~125g, tôm 50g, thịt 50g/khẩu phần."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/goi-mit-non.webp",
@@ -136,7 +156,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. GỘP BIẾN THỂ 2026-10-31 (tầm soát dữ liệu + quyết định của chủ dự án): món này là món chuẩn của cặp gỏi/nộm mít non; nom-mit-non chuyển thành biến thể (parent_dish_slug trỏ về món này). Hai bản cùng lõi mít non 150 g và cùng cấu trúc trộn chua ngọt — theo phép thử EDITORIAL-GUIDE §3 là một món, không phải hai. Tên en cũ 'southern style' là SAI miền (đây là món miền Trung, đặc sản Quảng Nam) — đã sửa; region thống nhất về vn-quang-nam.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. GỘP BIẾN THỂ 2026-10-31 (tầm soát dữ liệu + quyết định của chủ dự án): món này là món chuẩn của cặp gỏi/nộm mít non; nom-mit-non chuyển thành biến thể (parent_dish_slug trỏ về món này). Hai bản cùng lõi mít non 150 g và cùng cấu trúc trộn chua ngọt — theo phép thử EDITORIAL-GUIDE §3 là một món, không phải hai. Tên en cũ 'southern style' là SAI miền (đây là món miền Trung, đặc sản Quảng Nam) — đã sửa; region thống nhất về vn-quang-nam. [LV2-012 đợt vét] Đạt Mức 2: đã đối chiếu 3 họ nguồn độc lập đã mở đọc thật (Điện Máy XANH, Bếp Xưa, BlueStone). Cả 3 họ đồng thuận cấu trúc mít non luộc xé sợi trộn đạm luộc (tai heo và/hoặc tôm - thịt) với nước mắm chua ngọt, rau răm, lạc rang, hành phi. Định lượng file quy về 1 khẩu phần (mít 150g, tai heo 60g, tôm 40g) nằm trong khoảng đồng thuận nên giữ nguyên toàn bộ dòng, không sửa/thêm/bớt.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

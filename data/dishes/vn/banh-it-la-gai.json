@@ -93,7 +93,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Đặc sản Bình Định (region vn-central — cây vùng chưa có mã Bình Định). Lá gai là lá tạo màu/vỏ bánh, slug la-gai chưa có số dinh dưỡng (hồ sơ null) — để dòng tùy chọn lượng nhỏ theo tiền lệ gia vị chưa có số; phần chính của bánh tính được đầy đủ.",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Đặc sản Bình Định (region vn-central — cây vùng chưa có mã Bình Định). Lá gai là lá tạo màu/vỏ bánh, slug la-gai chưa có số dinh dưỡng (hồ sơ null) — để dòng tùy chọn lượng nhỏ theo tiền lệ gia vị chưa có số; phần chính của bánh tính được đầy đủ. [LV2-012 đợt vét] Giữ Mức 1 (TRAN-NL): la-gai — nguyên liệu định danh tạo màu vỏ đen — chưa có kcal/carb trong kho (kcal_per_100g=null) nên món chưa tính trọn được; đồng thời 2 họ đã mở (Tiệm Chả Chị Cả, Sachi) cho tỉ lệ dừa 0,50 và đường 0,60–0,88 theo bột nếp, cao hơn hẳn file (0,21 cho cả hai), chờ có số cái thành phẩm hoặc quyết định cấp kho mới chốt sửa.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "song",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "chieu",
@@ -57,14 +57,6 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "rieng",
-      "quantity": 3,
-      "unit_name": "g",
-      "is_optional": false,
-      "source": "llm_suggested",
-      "confidence": "low"
-    },
-    {
       "ingredient_slug": "muoi",
       "quantity": 2,
       "unit_name": "g",
@@ -87,15 +79,42 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "ot-tuoi",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Thịt lợn luộc tái, thái mỏng; bì lợn luộc chín, thái chỉ.",
-    "Trộn thịt, bì với tỏi, riềng, muối, đường.",
-    "Áo đều thính gạo rang xay, nén vào lọ, lên men 3–5 ngày đến khi chua dịu.",
-    "Ăn kèm lá sung, lá đinh lăng, chấm tương ớt."
+    "Chọn thịt mông (hoặc ba chỉ/nạc vai) thật tươi và bì lợn cạo sạch lông; rửa nhanh, để thật ráo nước rồi thui/nướng thịt trên than hoặc áp chảo nóng cho bề mặt xém và chín tái khoảng 30%, phần trong vẫn sống; bì thui kỹ hơn cho săn giòn. Dấu hiệu đạt: mặt thịt xém vàng thơm, ấn vào còn đàn hồi mềm, không chảy nước đục.",
+    "Thái thịt thành miếng mỏng to bản hoặc thái chỉ vừa ăn; bì thái sợi mỏng. Tỏi và ớt tươi băm hoặc xay nhuyễn. Dấu hiệu đạt: lát thịt mỏng đều để thính bám kín, bì sợi giòn không còn mỡ dính cục.",
+    "Bóp thịt và bì với tỏi, ớt, muối và chút đường trong khoảng 30 phút cho ngấm và thịt ra bớt nước; chắt bỏ phần nước tiết ra. Dấu hiệu đạt: thịt se mặt, khô ráo — thịt còn ướt sẽ làm thính vón và ủ bị chua gắt.",
+    "Rắc thính gạo rang xay vào, trộn đều tay cho thính phủ kín từng miếng thịt và bì. Dấu hiệu đạt: mọi bề mặt đều áo một lớp thính khô mỏng, không còn chỗ thịt trần bóng nước.",
+    "Lót lá ổi (hoặc lá sung/lá đinh lăng) khô ráo xuống đáy hũ sạch, cho thịt đã trộn thính vào và nén thật chặt để đẩy hết không khí ra, phủ thêm một lớp lá lên trên rồi đậy kín. Dấu hiệu đạt: khối thịt nén chắc, không còn khe hở, mặt trên được lá che kín.",
+    "Ủ hũ ở nơi khô ráo, thoáng mát: trời nóng khoảng 3 ngày, trời lạnh 5–7 ngày. Dấu hiệu đạt: thịt chuyển màu hồng nhạt đều, thơm mùi thính và chua dịu thanh, miếng thịt săn giòn; nếu có mùi hôi, nhớt hoặc chua gắt là hỏng, phải bỏ.",
+    "Khi đạt, lấy thịt ra đĩa, ăn kèm lá sung, lá đinh lăng và rau thơm, chấm tương ớt. Phần chưa dùng hết bảo quản ngăn mát tủ lạnh để hãm lên men và dùng trong 2–3 ngày sau khi mở hũ."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.lorca.vn/?p=36026",
+      "accessed": "2026-10-31",
+      "note": "Lorca — Cách làm thịt chua Phú Thọ — Đã mở đọc thật. Mẻ: thịt lợn 1 kg, bì lợn 300 g, thính gạo 180 g, tỏi 7 củ, ớt 6 trái, đường 2 thìa canh, lá ổi 500 g lót hũ; thịt nướng sơ chín ~30% (không luộc), bì nướng kỹ, thái mỏng, ướp tỏi ớt 30 phút rồi trộn thính, nén chặt, ủ 3 ngày trời nóng / 5 ngày trời lạnh. Quy về đĩa 130 g (mẻ ~1,5 kg): thịt ~87 g, bì ~26 g, thính ~16 g, tỏi ~5 g, ớt ~3 g, đường ~2 g."
+    },
+    {
+      "url": "https://tiphay.vn/bai-viet/cach-lam-thit-chua-don-gian-thom-ngon-chuan-vi-phu-tho-p1658.html",
+      "accessed": "2026-10-31",
+      "note": "Bách Hóa XANH (bản đăng tại TipHay, mục Kinh nghiệm hay Bách Hóa XANH) — Cách làm thịt chua đơn giản thơm ngon chuẩn vị Phú Thọ — Đã mở đọc thật. Cho 3–4 người: thịt heo (mông, ba chỉ hoặc nạc vai) 800 g, thính gạo–ngô–đậu xanh 200 g, lá ổi/sung/đinh lăng để lót và ăn kèm, gia vị muối/tiêu/bột ngọt; thịt nướng tái bề mặt trên than (trong giữ sống), da khò kỹ, thái chỉ, trộn thính phủ đều, nén hũ lót lá, ủ 3–4 ngày nắng / 5–7 ngày lạnh. Quy về 130 g: thịt ~104 g, thính ~26 g (tỉ lệ thính/thịt 25%, cao hơn họ Lorca 18% — file 15 g nằm sát họ Lorca nên giữ nguyên)."
+    },
+    {
+      "url": "https://thanhnien.vn/say-long-mon-thit-chua-cua-nguoi-muong-phu-tho-185471030.htm",
+      "accessed": "2026-10-31",
+      "note": "Báo Thanh Niên (iHay) — Say lòng món thịt chua của người Mường Phú Thọ — Đã mở đọc thật. Nguồn báo chí xác nhận bản truyền thống Thanh Sơn: thịt ba chỉ/mông/nạc thăn/nạc vai nướng thui trên than hoa tới chín tái rồi thái mỏng, ướp gia vị, trộn thính (gạo + ngô + đậu tương rang xay), nén ống nứa/hộp lót lá ổi, ủ 5–7 ngày; ăn kèm lá sung, lá đinh lăng, rau thơm và chấm tương ớt, thành phẩm có vị cay của ớt. Không định lượng gram — dùng xác nhận cấu trúc và bác bỏ chi tiết 'luộc tái' trong bước làm hiện tại của file."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/thit-chua.webp",
@@ -106,7 +125,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). THIẾU NGUYÊN LIỆU: lá sung (phụ — ăn kèm) — cần bổ sung vào kho. Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu).",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). THIẾU NGUYÊN LIỆU: lá sung (phụ — ăn kèm) — cần bổ sung vào kho. Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu). [LV2-012 đợt vét] NÂNG Mức 2: đã mở đọc 3 họ độc lập cho thịt chua Thanh Sơn, Phú Thọ (Lorca và Bách Hóa XANH có định lượng, Thanh Niên xác nhận bản truyền thống Mường); định lượng file (thịt 110 g, bì 20 g, thính 15 g, tỏi 4 g cho đĩa 130 g) nằm trong vùng quy đổi của 2 họ định lượng nên giữ nguyên, chỉ bỏ dòng rieng (0/3 họ ủng hộ) và thêm ot-tuoi 3 g (Lorca định lượng, Thanh Niên xác nhận). Bước làm viết lại theo đúng kỹ thuật thui/nướng tái thay cho 'luộc tái' trước đây.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

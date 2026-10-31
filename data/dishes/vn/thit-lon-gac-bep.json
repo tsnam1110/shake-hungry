@@ -104,7 +104,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] Giữ Mức 1 - THIEU-NGUON: tra cứu mở rộng chỉ được 1 họ có gram (Tây Bắc TV, nhà bán hàng, số tự mâu thuẫn giữa các bài của họ); Cookpad (Thu Mèo) và Nhà hàng Quá Ngon xác nhận cấu trúc/gia vị nhưng không định lượng. Sản phẩm chế biến truyền thống, công thức gram chuẩn hoá gần như không tồn tại ngoài kênh bán hàng.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

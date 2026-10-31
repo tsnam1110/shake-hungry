@@ -105,7 +105,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt)",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-012 đợt vét] GIỮ Mức 1 — BIEN-THE/trùng lặp: file tên chung nhưng nội dung là biến thể nướng đã có slug banh-khoai-mi-nuong (đợt này đạt Mức 2 riêng); biến thể phân biệt của tên chung là bản hấp (Hướng Nghiệp Á Âu: 500g khoai bào, 200ml cốt dừa, 50g bột năng, 120g đường, hấp 20–30 phút). Đề xuất chủ dự án quyết: gộp file này vào slug nướng, hoặc định danh lại thành bánh khoai mì hấp rồi biên soạn theo họ hấp.",
   "status": "draft",
   "source": "llm_suggested",
   "confidence": "unknown",

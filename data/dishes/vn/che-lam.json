@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "song",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "chieu",
@@ -33,14 +33,6 @@
   "serving_grams": 60,
   "ingredients": [
     {
-      "ingredient_slug": "gao-nep",
-      "quantity": 45,
-      "unit_name": "g",
-      "is_optional": false,
-      "source": "llm_suggested",
-      "confidence": "low"
-    },
-    {
       "ingredient_slug": "duong-trang",
       "quantity": 30,
       "unit_name": "g",
@@ -50,7 +42,7 @@
     },
     {
       "ingredient_slug": "lac-rang",
-      "quantity": 15,
+      "quantity": 8,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -63,15 +55,42 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "bot-nep",
+      "quantity": 20,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Rang nếp, xay thành bột mịn; rang lạc, bỏ vỏ.",
-    "Thắng đường (hoặc mật mía) với nước gừng đến độ keo.",
-    "Đổ bột nếp rang và lạc vào, đảo nhanh tay cho quyện dẻo.",
-    "Ép vào khuôn, để nguội, cắt miếng; ăn kèm trà nóng."
+    "Rang lạc trên chảo khô lửa vừa 8–10 phút tới khi vỏ lụa nứt, hạt thơm và vàng đều; để nguội, xát sạch vỏ lụa rồi giã dập thô. Gừng cạo vỏ, giã nhuyễn.",
+    "Rang bột nếp trong chảo sạch trên lửa nhỏ, đảo liên tục 7–10 phút tới khi bột thơm, hơi ngả vàng nhạt và không còn mùi bột sống; trút ra, để nguội và rây mịn, để riêng khoảng 1/4 làm bột áo.",
+    "Cho phần chất ngọt (mật mía/đường cùng mạch nha nếu có) với khoảng 80–100 ml nước và một nhúm muối vào nồi đế dày, đun lửa nhỏ, khuấy đều tới khi tan hoàn toàn và sôi lăn tăn.",
+    "Cho gừng giã vào nồi mật, nấu thêm 2–3 phút; kiểm tra độ tới bằng cách nhúng đũa rồi nhấc lên — mật kéo thành sợi mảnh, sáng là đạt, tắt lửa ngay để mật không bị đắng.",
+    "Rắc từ từ 3/4 lượng bột nếp rang vào nồi mật, vừa rắc vừa khuấy nhanh và đều tay trên lửa thật nhỏ tới khi hỗn hợp đặc, dẻo, quyện thành khối và róc thành nồi.",
+    "Trộn lạc rang giã dập vào khối bột, đảo nhanh cho lạc phân bố đều rồi trút khối chè ra mâm đã rải bột áo, nhào nhanh khi còn nóng tới khi khối mịn và hơi cứng tay.",
+    "Ép khối chè vào khuôn hoặc cán phẳng dày khoảng 1–1,5 cm, để nguội hẳn 20–30 phút rồi cắt miếng vừa ăn, lăn qua bột áo cho các mặt không dính nhau; ăn kèm trà nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://thucthan.com/cach-lam-che-lam",
+      "accessed": "2026-10-31",
+      "note": "Thức Thần (thucthan.com) — Cách làm chè lam truyền thống (cùng họ số với FPT Shop và daylambanh.edu.vn, tính 1 họ) — Đã mở đọc. Bột nếp rang 200g, đường mật 200g + đường vàng 50g + mạch nha 50g, lạc bóc vỏ 100g, gừng 1 củ, muối. Mẻ thành phẩm ~620g → quy về 60g: bột ~19g, chất ngọt ~29g, lạc ~10g, gừng ~2g. FPT Shop (đã mở đọc) chép đúng bộ số này nên không tính họ riêng."
+    },
+    {
+      "url": "https://www.beemart.vn/cach-lam-banh-che-lam-truyen-thong-cho-dem-trung-thu",
+      "accessed": "2026-10-31",
+      "note": "Beemart — Cách làm bánh chè lam truyền thống (Tống Thị Ngọc Ánh) — Đã mở đọc, gồm 2 công thức trong bài (tính 1 họ). Bản truyền thống: bột nếp 180g, đường đen 50g + đường vàng 150g + mạch nha 40g, lạc 30g, gừng 1 củ → quy về 60g (mẻ ~500g): bột ~22g, chất ngọt ~29g, lạc ~4g. Bản Bắc Giang trong cùng bài: bột 200g, đường mật 125g + đường vàng 50g, lạc 20g, gừng 30g — cùng khung tỉ lệ."
+    },
+    {
+      "url": "https://trihung.com/blog/cach-lam-che-lam/",
+      "accessed": "2026-10-31",
+      "note": "Trí Hưng (trihung.com) — Cách làm chè lam — Đã mở đọc. Bột nếp 200g, đường mật 100g + đường trắng 50g, lạc rang 50g, gừng tươi 100g (lượng gừng cao bất thường, xem anomalies), muối, vani. Mẻ ~500g → quy về 60g: bột ~24g, chất ngọt ~18g, lạc ~6g. Khớp 2 họ trên ở bột nếp ~20–24g và lạc dưới 10g/khẩu phần."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/che-lam.webp",
@@ -82,7 +101,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt)",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-012 đợt vét] Nâng Mức 2: đối chiếu 3 họ độc lập đã mở đọc (Thức Thần — cùng họ số với FPT Shop/daylambanh; Beemart; Trí Hưng), thống nhất bột nếp rang là nguyên liệu nền. Thay dòng gao-nep 45g bằng bot-nep 20g/khẩu phần 60g và giảm lac-rang 15g → 8g theo dải 19–24g bột và 4–10g lạc của 3 họ; đường giữ 30g vì khớp 2/3 họ (~29g). Viết lại recipe_steps 7 bước. cooking_method hiện ghi 'song' chưa đúng bản chất thắng mật — đề xuất đội triển khai cân nhắc đổi khi áp dụng.",
   "status": "draft",
   "source": "llm_suggested",
   "confidence": "unknown",

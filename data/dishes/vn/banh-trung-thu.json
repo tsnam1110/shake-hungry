@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nuong",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "chieu",
@@ -34,7 +34,7 @@
   "ingredients": [
     {
       "ingredient_slug": "bot-mi",
-      "quantity": 45,
+      "quantity": 28,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -42,7 +42,7 @@
     },
     {
       "ingredient_slug": "dau-xanh-hat",
-      "quantity": 45,
+      "quantity": 30,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -58,23 +58,15 @@
     },
     {
       "ingredient_slug": "trung-vit-muoi",
-      "quantity": 20,
+      "quantity": 15,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
     },
     {
-      "ingredient_slug": "hat-sen-kho",
-      "quantity": 10,
-      "unit_name": "g",
-      "is_optional": true,
-      "source": "llm_suggested",
-      "confidence": "low"
-    },
-    {
       "ingredient_slug": "dau-an",
-      "quantity": 8,
+      "quantity": 12,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -90,11 +82,32 @@
     }
   ],
   "recipe_steps": [
-    "Đậu xanh ngâm mềm, nấu chín, xay nhuyễn rồi sên với đường và dầu cho dẻo; hạt sen nấu mềm trộn vào nhân, bọc lòng đỏ trứng muối đã nướng sơ.",
-    "Nhào bột mì với nước đường và dầu, để bột nghỉ, cán mỏng bọc nhân, ép khuôn.",
-    "Nướng bánh, phết mặt bằng lòng đỏ trứng pha loãng, nướng tiếp đến khi vỏ vàng đều."
+    "Ngâm đậu xanh đã cà vỏ trong nước ấm 2-3 giờ cho nở, đãi sạch, cho vào nồi ngập nước nấu lửa vừa khoảng 20-25 phút đến khi đậu chín nhừ, bóp nhẹ là vỡ nát.",
+    "Xay đậu đã nấu thật nhuyễn, lọc qua rây cho mịn rồi cho vào chảo chống dính cùng đường; sên lửa nhỏ, đảo liên tục và cho dầu ăn vào từng ít một, sên 30-45 phút đến khi nhân thành khối dẻo mịn, không dính chảo, vo thử một viên thấy đứng thẳng không chảy xệ là đạt.",
+    "Tách lấy lòng đỏ trứng muối, rửa qua rượu trắng cho hết tanh, phết một lớp dầu mỏng rồi nướng 150-170°C trong 5-7 phút đến khi lòng đỏ vừa chín tới, mặt hơi ráo nhưng không khô cứng; để nguội, bọc mỗi lòng đỏ trong phần nhân đậu xanh đã chia (nhân gồm cả trứng ~100g cho bánh 150g) và vo tròn.",
+    "Trộn nước đường bánh nướng với dầu ăn, lòng đỏ trứng gà và bơ đậu phộng cho hoà quyện, rây bột mì vào trộn nhanh tay thành khối dẻo mịn, bọc kín để bột nghỉ 30-60 phút; bột đạt khi mềm, không dính tay và không còn vệt bột khô.",
+    "Chia bột vỏ thành viên 50g, cán mỏng với mép hơi dày hơn giữa, đặt viên nhân vào giữa, túm mép bột bao kín nhân và vo tròn; áo khuôn một lớp dầu hoặc bột mỏng, cho bánh vào ép chặt để hoa văn sắc nét rồi nhẹ nhàng lấy ra xếp lên khay lót giấy nến.",
+    "Làm nóng lò 180-190°C trước 10-15 phút; nướng lần 1 khoảng 8-10 phút đến khi mặt bánh chuyển trắng đục và thành bánh cứng lại, lấy ra xịt phun sương nước, để nguội hẳn 10-15 phút.",
+    "Đánh tan lòng đỏ trứng gà với ít sữa tươi và dầu, quét một lớp thật mỏng lên mặt bánh đã nguội; nướng lần 2 ở 170-180°C khoảng 8-10 phút, có thể quét và nướng thêm lần 3 ngắn đến khi mặt bánh vàng nâu bóng đều, không nứt mặt.",
+    "Lấy bánh ra để nguội hoàn toàn trên rack; bánh mới nướng còn cứng, cần để 1-2 ngày cho dầu từ nhân thấm ngược ra vỏ (xuống dầu) đến khi vỏ mềm, màu sậm bóng mới ăn hoặc đóng gói."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-banh-trung-thu-nhan-dau-xanh-bang-noi-chien-khong-13041",
+      "accessed": "2026-10-31",
+      "note": "2 cách làm bánh trung thu nhân đậu xanh - Điện Máy XANH — Đã mở đọc. Cách 2 đúng biến thể đậu xanh trứng muối, 7 cái: bột mì 255g (bước làm dùng 240g), đậu xanh 240g, đường cát 240g (toàn bộ vào nhân), nước đường 160g, dầu ăn 116ml, trứng muối 7 quả (1 quả/cái), chia vỏ 66g : nhân 135g (bánh ~200g). Quy về cái 150g: bột ~26g, đậu khô ~26g, dầu ~12g, trứng muối 1 lòng đỏ. Cách 1 (6 cái, vỏ 65 : nhân 85 cho bánh 150g) cho bột ~29g, đậu ~27g, dầu ~15g/cái."
+    },
+    {
+      "url": "http://www.savourydays.com/banh-trung-thu-cach-lam-banh-nuong/",
+      "accessed": "2026-10-31",
+      "note": "{Bánh trung thu} Cách làm bánh nướng + Cách sên nhân đậu xanh - Savoury Days — Đã mở đọc cả bài vỏ và bài nhân (savourydays.com/banh-trung-thu-cach-lam-nhan-dau-xanh-tra-xanh-la-dua/). Vỏ: 240g bột mì + 160g nước đường + 30g dầu + 1 lòng đỏ + 10g bơ đậu phộng = ~450g bột vỏ, vỏ = 1/3 bánh. Nhân: 200g đậu xanh khô + 80g đường + 70-75g dầu + 10g bột mì -> ~550g nhân; lòng đỏ trứng muối 8-12g/cái. Quy về cái 150g (vỏ 50g, nhân 100g gồm ~10g trứng): bột ~27g, đậu khô ~33g, đường tổng ~27g, dầu ~15g."
+    },
+    {
+      "url": "https://beptruong.edu.vn/cach-lam-banh-trung-thu-nhan-dau-xanh",
+      "accessed": "2026-10-31",
+      "note": "Cách Làm Bánh Trung Thu Nướng Đậu Xanh - Bếp Trưởng Á Âu (Thanh Baker) — Đã mở đọc. Vỏ: bột mì 300g + nước đường 210g + dầu 40g + bơ đậu phộng 15g + mật ong 5g, chia viên vỏ 50g; nhân: đậu xanh 200g + đường 150g + dầu 50g + mạch nha 50g + bột bánh dẻo 30g, vo viên nhân 100g — tức bánh 150g tỉ lệ vỏ 50 : nhân 100. Quy về 1 cái: bột ~26g, đậu khô ~30g, dầu ~11g. (Nhiều trang khác sao chép nguyên bộ số này — chỉ tính 1 họ.)"
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/banh-trung-thu.webp",
@@ -105,7 +118,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt)",
+  "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-012 đợt vét] Nâng Mức 2: đối chiếu 3 họ đã mở (ĐMX, Savoury Days, Bếp Trưởng Á Âu) cho bánh nướng nhân đậu xanh trứng muối 150g, tỉ lệ vỏ 50g : nhân 100g. Sửa: bot-mi 45->28, dau-xanh-hat 45->30, dau-an 8->12, trung-vit-muoi 20->15; bỏ dòng hat-sen-kho tuỳ chọn (0/3 họ của biến thể này có hạt sen). Đường tổng 30g giữ nguyên vì nằm trong dải các họ (~27-42g, gồm phần đường trong nước đường vỏ bánh quy đổi sang duong-trang như cách hạch toán hiện tại của file). Viết lại recipe_steps 8 bước.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

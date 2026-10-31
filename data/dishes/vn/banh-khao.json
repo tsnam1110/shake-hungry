@@ -77,7 +77,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-004 đợt 2 (lô bánh dân gian) mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp DISH-004 đợt 2 (lô bánh dân gian) mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] GIỮ Mức 1 — BIEN-THE: chỉ có 2 họ độc lập đã mở (nhân đậu xanh/mứt bí của Dạy Làm Bánh Á Âu và nhân đậu phộng/mỡ đường của Điện Máy XANH), các trang còn lại sao chép bộ số của một trong hai họ. File chưa chọn biến thể nhân và thiếu hẳn dòng nhân; cần chủ dự án chốt biến thể (đậu xanh hay đậu phộng/mỡ đường) rồi mới đối chiếu định lượng và nâng cấp được.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

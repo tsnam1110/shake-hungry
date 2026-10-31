@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": false,
   "cooking_method": "hap",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "an-vat",
@@ -30,7 +30,7 @@
   "ingredients": [
     {
       "ingredient_slug": "bot-nang",
-      "quantity": 40,
+      "quantity": 24,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -38,7 +38,7 @@
     },
     {
       "ingredient_slug": "dau-xanh-hat",
-      "quantity": 25,
+      "quantity": 15,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -78,11 +78,31 @@
     }
   ],
   "recipe_steps": [
-    "Đồ chín đậu xanh, sên với đường và dừa nạo làm nhân.",
-    "Khuấy bột năng với nước lá dứa và đường, nấu nửa chín cho bột hơi trong.",
-    "Bọc nhân vào bột, gói lá, hấp chín đến khi bánh trong suốt."
+    "Ngâm đậu xanh đã cà vỏ trong nước 2-3 giờ cho nở, rửa sạch rồi hấp cách thuỷ lửa vừa 20-30 phút đến khi đậu chín mềm, bở tơi, bóp nhẹ là nát.",
+    "Khi đậu còn nóng, nghiền hoặc xay nhuyễn; cho vào chảo cùng đường, dừa nạo sợi và ít dầu, sên lửa nhỏ 10-15 phút, đảo liên tục đến khi nhân thành khối dẻo mịn, không dính chảo và vo viên được; để nguội rồi chia thành viên 15-25g, vo tròn và đậy kín tránh khô mặt.",
+    "Xay lá dứa với phần nước của công thức, lọc bỏ bã lấy nước màu; hoà bột năng (và bột ngô nếu dùng) với đường, chút muối và nước lá dứa, khuấy tan hoàn toàn không vón cục.",
+    "Cho hỗn hợp bột vào chảo chống dính, khuấy trên lửa nhỏ liên tục đến khi bột sánh lại, hơi đặc và nhấc phới thấy bột chảy thành dòng đặc (chín một phần) thì nhắc xuống, khuấy mạnh thêm 2-3 phút cho bột đồng nhất, mịn và hơi trong.",
+    "Quét lớp dầu mỏng vào khuôn nhỏ chịu nhiệt; múc khoảng 20-25g bột vỏ vào khuôn, đặt viên nhân vào giữa, múc tiếp 20-25g bột phủ kín nhân, gõ nhẹ khuôn cho bột dàn đều và không còn bọt khí.",
+    "Xếp khuôn vào xửng nước đang sôi, lót khăn dưới vung tránh nước nhỏ mặt bánh, hấp lửa vừa 15-20 phút (bánh nhỏ 5-7 phút tuỳ khuôn) đến khi vỏ chuyển trong suốt, nhìn rõ nhân bên trong là bánh chín.",
+    "Lấy bánh ra để nguội hoàn toàn trong khuôn cho vỏ đứng và giòn hơn; trải màng bọc thực phẩm, rắc vừng rang, úp bánh lên, bóc khuôn và gói chặt tay cho bánh căng tròn, để nguội hẳn trước khi ăn."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://nauchuananngon.vn/cach-lam-banh-phu-the",
+      "accessed": "2026-10-31",
+      "note": "Cách Làm Bánh Phu Thê Đậu Xanh Dừa - Nấu Chuẩn Ăn Ngon (cùng bộ số Hướng Nghiệp Á Âu) — Đã mở đọc (bản huongnghiepaau.com dùng cùng bộ số — tính 1 họ). Vỏ: bột năng 150g + bột ngô 20g + đường 40g + 450ml nước; nhân: đậu xanh 70g + đường 50g + dừa nạo 30g; viên nhân 15-20g, vỏ 20-25g x 2 mặt/bánh -> bánh ~60-70g. Quy về 2 cái 120g: bột năng ~21g, đậu xanh khô ~11g, đường tổng ~14g, dừa ~5g."
+    },
+    {
+      "url": "http://giavihanhphuc.com/bot-banh/banh-xu-xe-banh-phu-the-nghis-kitchen-amp",
+      "accessed": "2026-10-31",
+      "note": "Bánh xu xê - Bánh phu thê - Nghi's Kitchen (Gia Vị Hạnh Phúc đăng lại có ghi nguồn) — Đã mở đọc. Vỏ: bột năng 300g + đường 140g + nước 750ml + dầu 25ml; nhân: đậu xanh 200g + đường 160g + dừa nạo 70-100g; tỉ lệ vỏ 40-50g : nhân 25-30g, bánh 65-80g, được 20-22 cái. Quy về 2 cái 120g: bột năng ~24g, đậu xanh khô ~16g, đường tổng ~24g, dừa ~7g."
+    },
+    {
+      "url": "https://digifood.vn/blog/cach-lam-banh-phu-the/",
+      "accessed": "2026-10-31",
+      "note": "Cách làm bánh phu thê thơm dẻo đủ màu sắc - Digifood — Đã mở đọc. Công thức truyền thống: bột năng 250g, đậu xanh 100g, dừa nạo 1/2 quả, mè vàng 10g, hấp 20-30 phút đến khi vỏ trong thấy nhân; công thức lá dừa: bột năng 200g, đậu xanh 50g, đường 120g. Không ghi số bánh nên chỉ dùng đối chiếu tỉ lệ bột:đậu (2,5-4,0 — cao hơn 2 họ còn lại) và thời gian hấp."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/banh-xu-xe.webp",
@@ -93,7 +113,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-004 đợt 2 (lô bánh dân gian) mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp DISH-004 đợt 2 (lô bánh dân gian) mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] Nâng Mức 2: đối chiếu 3 họ đã mở (HNAu/Nấu Chuẩn Ăn Ngon, Nghi's Kitchen, Digifood) cho bánh xu xê/phu thê, quy về khẩu phần 2 cái 120g. Sửa: bot-nang 40->24, dau-xanh-hat 25->15 (file cũ hạch toán khô quá cao so với cả 2 họ có yield rõ). Giữ duong-trang 18 (dải họ 14-24), cui-dua-nao 8 (Nghi's ~7), vung-rang 1 và la-dua 1 (mọi họ đều dùng nước lá dứa tạo màu; la-dua là nguyên liệu phụ null, vào missing, không chặn). Viết lại recipe_steps 7 bước.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

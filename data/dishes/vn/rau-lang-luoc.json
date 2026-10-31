@@ -65,7 +65,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-012 đợt vét] GIỮ Mức 1 (429): lỗi 429 khi mở nguồn rau lang luộc, dừng tra cứu theo quy tắc đợt; chưa có họ nào được mở đọc thật, cần tra lại ở đợt sau (ứng viên: Inauanngon 200g, Nông Sản Dũng Hà 300-500g, Cookpad Rose Truong — mới qua trích đoạn tìm kiếm, chưa tính).",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

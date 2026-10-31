@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nuong",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "chieu",
@@ -74,7 +74,7 @@
     },
     {
       "ingredient_slug": "trung-vit",
-      "quantity": 10,
+      "quantity": 3,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -90,12 +90,31 @@
     }
   ],
   "recipe_steps": [
-    "Nhào bột mì với mỡ và nước thành vỏ dầu và vỏ nước, cán lớp nhiều tầng.",
-    "Đồ đậu xanh, xay nhuyễn, xào với đường và sầu riêng làm nhân; đặt lòng đỏ trứng muối vào giữa.",
-    "Gói nhân vào vỏ, ấn dẹt, đóng dấu đỏ.",
-    "Nướng đến khi vỏ vàng, tách lớp."
+    "Sơ chế trứng muối và đậu: tách lòng đỏ trứng muối, rửa nhẹ với rượu trắng, hấp 10 phút cho chín và để nguội; đậu xanh ngâm 3-4 giờ, hấp chín mềm rồi xay hoặc nghiền nhuyễn khi còn nóng.",
+    "Sên nhân: cho đậu đã xay vào chảo cùng đường, sên lửa nhỏ và cho dầu/mỡ vào từ từ từng phần; đảo liên tục 15-20 phút đến khi nhân dẻo, quyện, không dính chảo; trộn hoặc gói phần sầu riêng vào nhân, chia nhân thành viên, đặt lòng đỏ trứng muối vào giữa mỗi viên và vo tròn, đậy kín.",
+    "Làm bột nước (vỏ ngoài): trộn bột mì với đường, muối, nước và một phần dầu/mỡ, nhồi đến khi khối bột dẻo mịn, không dính tay; bọc kín, để bột nghỉ 20-30 phút.",
+    "Làm bột dầu (vỏ ruột): trộn phần bột mì còn lại với dầu/mỡ đến khi thành khối mềm đồng nhất, không chảy; để nghỉ 15-20 phút, sau đó chia bột nước và bột dầu thành các phần bằng nhau theo số bánh.",
+    "Cán tạo lớp: cán dẹt viên bột nước, đặt viên bột dầu vào giữa, gói kín; cán dài, cuộn tròn, xoay dọc cán lại và cuộn lần hai để tạo nhiều lớp; làm lần lượt hết các viên, để bột nghỉ 10 phút giữa các lần cán nếu bột co.",
+    "Gói và đóng dấu: cán viên bột thành miếng tròn, đặt viên nhân vào giữa, túm mép bột bao kín nhân, ấn dẹt nhẹ thành bánh tròn dẹt; đóng dấu đỏ lên mặt bánh và để mực khô hẳn.",
+    "Nướng: làm nóng lò 180-200°C, nướng bánh 15-20 phút đến khi vỏ chuyển đục và bắt đầu tách lớp; lấy ra phết một lớp mỏng lòng đỏ trứng đánh tan, nướng tiếp 5-10 phút đến khi mặt vàng đều, vỏ khô và tách lớp rõ; để nguội trên rack — vỏ sẽ mềm ngon hơn sau 1-2 ngày."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "http://giavihanhphuc.com/banh-trung-thu/banh-pia-bepcuatui-amp",
+      "accessed": "2026-10-31",
+      "note": "Bánh Pía - Bepcuatui (qua Gia Vị Hạnh Phúc) — Vỏ cho 30 bánh (40 g vỏ/bánh): bột mì tổng 790 g (26,3 g/bánh), dầu vỏ 235 g (7,8 g/bánh), mạch nha 125 g, trứng gà 1/2 quả cho cả mẻ. Nhân cho 20 bánh (70 g nhân/bánh): đậu xanh xào 1,2 kg (60 g ướt/bánh, đậu khô ước ~25-30 g), sầu riêng sên 100 g (5 g/bánh), mỡ đường 50 g, trứng muối 1/4 quả/bánh."
+    },
+    {
+      "url": "https://daylambanh.edu.vn/banh-pia-dau-xanh",
+      "accessed": "2026-10-31",
+      "note": "Hướng Dẫn Cách Làm Bánh Pía Đậu Xanh - Dạy Làm Bánh Á Âu (Trần Văn Vinh) — 12 bánh (vỏ và nhân đều chia 12): bột mì 400 g (33,3 g/bánh), đậu xanh cà vỏ 300 g (25 g/bánh), đường tổng 190 g (15,8 g/bánh), mỡ nước 100 g (8,3 g/bánh), 12 lòng đỏ trứng muối (1/bánh), 1 quả trứng gà rửa mặt cho cả mẻ. Nhân của công thức này không có sầu riêng."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/13378507",
+      "accessed": "2026-10-31",
+      "note": "Bánh Pía Nhân đậu Xanh Sầu Riêng - Cookpad (Điệp Vũ) — 10 bánh: bột mì 320 g (32 g/bánh), dầu ăn 75 g (7,5 g/bánh), đường vỏ 35 g, nhân đậu xanh sầu riêng cân 60 g ướt/bánh; nướng 200°C 20 phút rồi phết lòng đỏ nướng thêm 10 phút ở 180°C."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/banh-pia.webp",
@@ -106,7 +125,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu).",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu). [LV2-012 đợt vét] Nâng Mức 2: đối chiếu 3 họ độc lập (Bepcuatui, Dạy Làm Bánh Á Âu, Cookpad Điệp Vũ). Phân xử: đề xuất trung-vit 10→3 g (phần trứng phết mặt/vỏ theo 2 họ chỉ 1-4 g/bánh). Giữ nguyên: bot-mi 35 g (nguồn 26-33 g/bánh), dau-xanh-hat 30 g (DayLam 25 g khô; Bepcuatui 60 g nhân ướt ≈ 25-30 g khô), duong-trang 15 g (DayLam 15,8 g), mo-lon-nuoc 10 g (tổng chất béo nguồn 7,5-10,3 g), trung-vit-muoi 15 g tuỳ chọn (DayLam đúng 1 lòng đỏ/bánh).",
   "status": "draft",
   "source": "llm_suggested",
   "confidence": "unknown",

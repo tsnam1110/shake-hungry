@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "song",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "an-vat",
@@ -38,7 +38,7 @@
     },
     {
       "ingredient_slug": "duong-trang",
-      "quantity": 18,
+      "quantity": 10,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -62,11 +62,31 @@
     }
   ],
   "recipe_steps": [
-    "Rang bột năng với lá dứa đến khi bột chín, thơm và tơi.",
-    "Thắng nước cốt dừa với đường, rưới từ từ vào bột, trộn cho bột vừa ẩm.",
-    "Ép bột vào khuôn nhỏ, gõ lấy bánh, để nguội."
+    "Rang bột: cắt lá dứa thành khúc 3-4 cm, cho vào chảo cùng bột năng, rang lửa nhỏ và đảo đều tay liên tục khoảng 20 phút; bột chín khi thơm rõ, lá dứa bóp thấy khô giòn và bột nếm thử tan ngay trên lưỡi, không còn dẻo như bột sống.",
+    "Lọc và nguội bột: đổ bột ra khay, để nguội bớt rồi rây qua rây mịn để bỏ xác lá dứa và làm bột tơi; bột còn ấm hoặc vón sẽ làm bánh không mịn nên phải để nguội hẳn.",
+    "Thắng nước cốt dừa đường: cho nước cốt dừa và đường vào nồi, nấu lửa nhỏ, khuấy đều đến khi đường tan hết và hỗn hợp hơi sánh; tắt bếp, để nguội hoàn toàn — nếu thích bánh xanh, pha nước cốt lá dứa vào hỗn hợp ở bước này.",
+    "Áo khuôn: rửa sạch và lau thật khô khuôn in; rắc một lớp mỏng bột năng khô vào khuôn rồi gõ/trút bỏ phần thừa để chống dính; chuẩn bị khay rộng có lót bột áo.",
+    "Trộn bột ẩm: cho bột đã rang ra khay, rưới nước cốt dừa đường từ từ từng ít một, vừa rưới vừa bóp trộn đều; bột đạt khi vẫn ở dạng hạt rời nhưng nắm chặt trong lòng bàn tay thì kết dính chắc, chạm nhẹ lại vỡ ra — không nhồi thành khối dẻo mịn.",
+    "In bánh: nén bột thật chắc tay vào từng lỗ khuôn, dùng dao gạt phẳng phần bột thừa trên mặt, úp khuôn xuống khay và gõ nhẹ cho bánh rời ra nguyên hình.",
+    "Để ráo và bảo quản: để bánh trên khay 2-3 giờ cho ráo và firm lại rồi mới cho vào hộp kín; bánh đạt khi mặt khô mịn, cầm chắc, ăn vào tan ngay đầu lưỡi với vị béo cốt dừa và thơm lá dứa."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dieutri.vn/songkhoe/banh-phuc-linh-huong-dan-cach-lam",
+      "accessed": "2026-10-31",
+      "note": "Bánh phục linh (hướng dẫn cách làm) - dieutri.vn (Biên tập viên: Trần Tiến Phong) — 200 g bột năng, 50 g đường, dùng khoảng 100 cc nước cốt dừa (từ 200 g dừa nạo), 10 cọng lá dứa. Tỉ lệ đường/bột = 0,25; cốt/bột = 0,5. Quy theo 35 g bột của file: đường 8,75 g, cốt 17,5 g."
+    },
+    {
+      "url": "https://vinid.net/blog/cach-lam-banh-phuc-linh/",
+      "accessed": "2026-10-31",
+      "note": "TOP 2 cách làm bánh phục linh - VinID — Công thức 1: 200 g bột năng, 150 ml cốt dừa, 120 g đường (tỉ lệ đường 0,6 — outlier). Công thức 2: 400 g bột năng, 337 ml cốt dừa, 1/2 chén đường (~100 g, tỉ lệ 0,25). Rang bột với lá dứa ~20 phút ở cả hai công thức."
+    },
+    {
+      "url": "http://giavihanhphuc.com/bot-banh/banh-phuc-linh-amp",
+      "accessed": "2026-10-31",
+      "note": "Bánh phục linh - Gia Vị Hạnh Phúc (biên soạn từ Chef Thư Thư) — 600 g bột năng, 300 g nước cốt dừa (vắt từ 500 g dừa nạo), 150 g đường, lá dứa rang cùng bột. Tỉ lệ đường/bột = 0,25; cốt/bột = 0,5 — khớp họ dieutri.vn."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/banh-phuc-linh.webp",
@@ -77,7 +97,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-004 đợt 2 (lô bánh dân gian) mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp DISH-004 đợt 2 (lô bánh dân gian) mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] Nâng Mức 2: đối chiếu 3 họ độc lập (dieutri.vn — biên tập viên nêu tên; VinID; Gia Vị Hạnh Phúc/Chef Thư Thư). Phân xử: đề xuất duong-trang 18→10 g theo tỉ lệ đường/bột 0,25 đồng thuận ở 2/3 họ; bot-nang 35 g và nuoc-cot-dua 15 g giữ nguyên (cốt đồng thuận 17,5 g theo tỉ lệ 0,5 — lệch ~15%, trong ngưỡng). la-dua là nguyên liệu phụ không có số dinh dưỡng, không chặn tính calo. Trang DayLamBanh về món này sao chép họ dieutri.vn nên không tính họ riêng.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

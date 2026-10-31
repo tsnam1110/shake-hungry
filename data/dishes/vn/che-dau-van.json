@@ -97,7 +97,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt)",
+  "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-012 đợt vét] Giữ Mức 1 — TRAN-NL: đậu ván thật không có file nguyên liệu; dòng dau-trang 50g trong file là proxy khác loài (Phaseolus vulgaris) chưa được duyệt ánh xạ. Đã mở đọc 2 họ độc lập (Điện Máy XANH cho 4 người: 150g đậu/140g đường/35g bột năng/200ml cốt; Cookpad Anna: 500g đậu/250g đường/100g bột năng/400g cốt, quy theo khối lượng nồi) — đậu và bột năng đối chiếu được (~38–42g và ~9g/khẩu phần) nhưng đường/cốt dừa lệch >30% giữa các họ và giữa dạng đặc/nước. Trang foodvn.net bị loại khỏi đếm họ vì cuối bài còn sót văn bản prompt AI. Cần: tạo nguyên liệu đậu ván có số đạt chuẩn hoặc duyệt chính thức ánh xạ dau-trang, rồi mới nâng.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

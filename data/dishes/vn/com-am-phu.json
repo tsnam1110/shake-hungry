@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -58,7 +58,7 @@
     },
     {
       "ingredient_slug": "tom-su",
-      "quantity": 40,
+      "quantity": 70,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -66,7 +66,7 @@
     },
     {
       "ingredient_slug": "trung-ga",
-      "quantity": 40,
+      "quantity": 20,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -105,14 +105,6 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "hanh-phi",
-      "quantity": 5,
-      "unit_name": "g",
-      "is_optional": false,
-      "source": "llm_suggested",
-      "confidence": "low"
-    },
-    {
       "ingredient_slug": "duong-trang",
       "quantity": 3,
       "unit_name": "g",
@@ -135,14 +127,56 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nem-chua",
+      "quantity": 20,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "sa",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Nướng thịt nạc thái lát; chiên trứng thái sợi; luộc tôm bóc vỏ.",
-    "Pha nước mắm chua ngọt với chanh, đường, ớt.",
-    "Xới cơm ra đĩa, xếp thịt nướng, chả lụa, tôm, trứng, dưa leo xung quanh, rưới nước mắm."
+    "Nấu cơm hơi khô, xới cho tơi rồi để nguội; đạt khi hạt cơm ráo, rời, không nát — cơm nguội giúp đĩa cơm không bị ướt khi trộn.",
+    "Làm tôm chấy: tôm luộc chín, bóc vỏ bỏ chỉ đen, giã rối; cho lên chảo khô lửa vừa, đảo đều tay đến khi thịt tôm tơi, khô và dậy mùi thơm thì tắt bếp.",
+    "Thái thịt nạc vai thành lát bản lớn, ướp nước mắm, đường, sả băm, nước màu, dầu ăn và vừng 30-60 phút; nướng trên than hoặc lò đến khi hai mặt vàng xém cạnh, thái lát mỏng hoặc sợi.",
+    "Tráng trứng: đánh tan trứng với chút muối, tráng thật mỏng trên chảo ít dầu lửa vừa, cuộn lại và thái chỉ mảnh.",
+    "Thái chả lụa và nem chua thành sợi hoặc khoanh nhỏ; dưa leo thái khoanh mỏng, bóp chút muối, vắt ráo rồi trộn chanh, đường, tỏi cho thấm khoảng 10 phút.",
+    "Pha nước mắm chua ngọt: khuấy nước mắm với đường, nước cốt chanh, tỏi ớt băm cho tan; nếm lại vị chua - ngọt - mặn cân bằng, hơi đậm để chan cơm.",
+    "Trình bày: xới cơm ra giữa đĩa, xếp vòng quanh lần lượt thịt nướng, tôm chấy, chả lụa, nem chua, trứng thái chỉ và dưa leo; rắc rau thơm lên trên.",
+    "Khi ăn chan nước mắm chua ngọt và trộn đều; đĩa đạt chuẩn khi đủ màu sắc của từng thành phần và hạt cơm vẫn rời, không bết."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://thanhnien.vn/lam-com-am-phu-tuyet-ngon-cua-xu-hue-185465490.htm",
+      "accessed": "2026-10-31",
+      "note": "Thanh Niên (iHay) — Làm cơm âm phủ tuyệt ngon của xứ Huế; cùng họ: Bếp Xưa (4 người) và Bếp Trưởng — Bộ số họ A (Bếp Xưa ghi rõ 4 người): gạo 1 lon/300g, tôm tươi 300g, thịt nạc dăm 200-250g, chả lụa 50g, nem chua 2 cây, trứng vịt 1 quả, dưa leo 1 quả. Quy đổi/đĩa: tôm 75g, thịt 50-62g, chả lụa ~12g, trứng ~16g, nem chua 0,5 cây; thịt ướp sả băm + nước mắm + đường + nước màu."
+    },
+    {
+      "url": "https://bepxua.vn/cach-lam-mon-com-am-phu-xu-hue-doc-dao-thom-ngon/?amp=1",
+      "accessed": "2026-10-31",
+      "note": "Bếp Xưa — Cách làm món cơm âm phủ xứ Huế độc đáo, thơm ngon (4 người) — Cùng họ với Thanh Niên (bộ số gần trùng, tính chung 1 họ): 300g gạo thơm, 300g tôm sú, 250g thịt nạc dăm, 50g giò lụa, 2 nem chua, 1 trứng vịt, 1 dưa leo, nước mắm 3 muỗng canh, đường vàng 2 muỗng canh, dầu ăn 30ml cho 4 người."
+    },
+    {
+      "url": "https://vi.wikipedia.org/wiki/C%C6%A1m_%C3%A2m_ph%E1%BB%A7",
+      "accessed": "2026-10-31",
+      "note": "Wikipedia tiếng Việt — Cơm âm phủ (2 công thức ví dụ) — Công thức 1 tính theo 1 đĩa: 1 chén cơm, chả cá 50g, thịt mỡ 50g, nem chua 2 cây lớn, 1/2 trái dưa leo, nước mắm 1 muỗng canh. Công thức 2 (1 lon gạo ≈ 4 đĩa): thịt nạc dăm 100g, chả lụa 100g, tôm tươi 100g, thịt ba rọi 100g, trứng vịt 1 quả, nem chua 1 cây, sả bằm 50g → /đĩa: tôm 25g, chả 25g, trứng ~16g, sả ~12g."
+    },
+    {
+      "url": "https://tailieu.duytan.edu.vn/tailieu/2013/20130401/hoalan_5/16_0855_971.pdf?rand=456375",
+      "accessed": "2026-10-31",
+      "note": "Giáo trình/báo (PDF, tailieu.duytan.edu.vn) — Đổi món cho cả nhà với cơm âm phủ từ Cố Đô Huế — 1 thố cơm (~4 đĩa): tôm 300g (75g/đĩa, làm tôm chấy khô), thịt nạc 300g (75g/đĩa, ướp sả bằm nướng than), trứng gà 2 quả (~25g/đĩa, tráng mỏng thái sợi), giò lụa vài khoanh, dưa leo 2 quả. Không có nem chua."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/com-am-phu.webp",
@@ -153,7 +187,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] Nâng Mức 2: đối chiếu 3 họ nguồn độc lập đã mở đọc thật (họ công thức Thanh Niên/Bếp Xưa/Bếp Trưởng; Wikipedia — 2 công thức; giáo trình PDF tailieu.duytan.edu.vn). Sửa: trung-ga 40→20g, tom-su 40→70g (theo trọng lượng tôm nguyên con). Thêm: nem-chua 20g (thành phần đặc trưng file đang thiếu, 2/3 họ có), sa 5g (cả 3 họ ướp thịt bằng sả băm). Bỏ: hanh-phi (0/3 họ ủng hộ).",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

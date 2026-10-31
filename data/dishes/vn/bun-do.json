@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -42,15 +42,7 @@
     },
     {
       "ingredient_slug": "cua-dong",
-      "quantity": 50,
-      "unit_name": "g",
-      "is_optional": false,
-      "source": "llm_suggested",
-      "confidence": "low"
-    },
-    {
-      "ingredient_slug": "dau-phu-chien",
-      "quantity": 30,
+      "quantity": 125,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -58,15 +50,7 @@
     },
     {
       "ingredient_slug": "trung-cut",
-      "quantity": 12,
-      "unit_name": "g",
-      "is_optional": false,
-      "source": "llm_suggested",
-      "confidence": "low"
-    },
-    {
-      "ingredient_slug": "ca-chua",
-      "quantity": 40,
+      "quantity": 25,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -95,14 +79,82 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "thit-lon-xay",
+      "quantity": 55,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "tom-kho",
+      "quantity": 12,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "trung-ga",
+      "quantity": 15,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "cai-ngot",
+      "quantity": 50,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "gia-do",
+      "quantity": 25,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hat-dieu-mau",
+      "quantity": 1,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Giã cua, lọc nước, nấu riêu cua như bún riêu; cà chua xào tạo màu.",
-    "Trụng sợi bún to, chan nước riêu cua.",
-    "Thêm đậu rán, trứng cút, rắc hành lá, ăn kèm rau sống."
+    "Sơ chế cua đồng: ngâm rửa sạch, giã hoặc xay nhuyễn, hoà với nước rồi lọc kỹ qua rây 2-3 lần bỏ bã vỏ, giữ nước cua; phần gạch cua để riêng. Tôm khô ngâm nước ấm 15 phút cho mềm rồi xay nhuyễn; trứng cút luộc chín, bóc vỏ.",
+    "Nấu riêu: bắc nồi nước cua lên bếp lửa vừa, khuấy nhẹ một chiều lúc đầu để riêu không lắng đáy; khi nước gần sôi và riêu đóng mảng nổi lên thì hạ lửa, vớt toàn bộ riêu ra để riêng — dấu hiệu đạt là mảng riêu đông chắc, nước vẫn trong.",
+    "Trộn và viên chả riêu: trộn riêu cua với thịt xay, tôm khô xay, trứng, hành tím băm, muối, tiêu và chút đường; nhồi đều đến khi hỗn hợp dẻo, vo thành viên vừa ăn. Thả từng viên vào nồi nước cua đang sôi lăn tăn, viên nổi lên và săn mặt là chín.",
+    "Hoàn thiện nước dùng: cho trứng cút đã bóc vỏ vào nồi, nêm muối, đường và mắm tôm cho vừa miệng; giữ lửa nhỏ 10-15 phút cho chả thấm vị, hớt bọt để nước trong — nước dùng đạt khi ngọt thanh mùi cua, không gắt mắm tôm.",
+    "Thắng dầu điều và nhuộm bún: đun nóng dầu ăn, cho hạt điều màu vào thắng lửa nhỏ đến khi dầu chuyển đỏ gạch thì vớt bỏ hạt ngay (để lâu sẽ đắng). Cho dầu điều vào nồi nước nóng, trụng sợi bún to khoảng 2 phút (với sợi bún khô cứng có thể đun tới 10 phút) đến khi sợi bún ngấm màu đỏ đều, vớt ra để ráo.",
+    "Trụng rau: chần cải ngọt cắt khúc và giá trong nước sôi 30-60 giây rồi vớt ra ngay để rau còn giòn và xanh; hành tím phi vàng với chút tóp mỡ (nếu có) để rắc mặt.",
+    "Trình bày: cho bún đỏ vào tô, xếp chả riêu, trứng cút, cải ngọt và giá lên trên, chan nước dùng nóng, rắc hành phi. Dọn kèm chanh, ớt và mắm tôm để người ăn tự gia giảm; ăn ngay khi còn nóng để sợi bún giữ độ dai giòn."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://tripi.vn/blog/vi/kinh-nghiem-hay/kham-pha-cach-che-bien-bun-do-buon-me-thuot-dac-san-noi-tieng-cua-pho-nui-tripi",
+      "accessed": "2026-10-31",
+      "note": "Khám phá cách chế biến bún đỏ Buôn Mê Thuột — Tripi (nội dung Bách Hoá XANH) — Đã mở đọc. Cho 3-4 người: bún tươi 1kg, xương ống 700g, thịt cua đồng 500g, thịt xay 250g, tôm khô 50g, trứng vịt 1 quả, trứng cút 10 quả, cải ngọt + giá, mắm tôm, dầu điều. Quy về 1 khẩu phần (chia 4): cua ~125g, thịt xay ~62g, tôm khô ~12g, trứng cút ~2,5 quả (~25g), trứng (kết dính chả) ~15g. Bún 1kg/4 = 250g nhưng giữ quy ước kho bún tươi 150g/khẩu phần."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/9119752-bun-d%E1%BB%8F-buon-ma-thu%E1%BB%99t",
+      "accessed": "2026-10-31",
+      "note": "Bún đỏ Buôn Ma Thuột — Cookpad, tác giả Quân Nguyễn (Bích Châu) — Đã mở đọc. Định lượng theo mẻ cùng cỡ (1kg bún): cua đồng xay 500g, thịt nạc xay 200g, tôm khô 50g, trứng gà 1 quả, trứng cút 15 cái, giá 100g, cải ngọt 200g, ba rọi 200g (thắng tóp mỡ hành), hạt điều màu 1 muỗng cà phê thắng dầu, mắm tôm 1 muỗng canh. Quy về 1 khẩu phần (chia 4): cua ~125g, thịt xay ~50g, tôm khô ~12g, trứng cút ~3-4 quả (~30g), cải ngọt 50g, giá 25g. Phần mô tả ghi rõ nước dùng KHÔNG hầm xương và KHÔNG có cà chua."
+    },
+    {
+      "url": "https://danviet.vn/print-7777728775.htm",
+      "accessed": "2026-10-31",
+      "note": "Thưởng thức bún đỏ — món ăn bình dân nổi tiếng chỉ có về đêm ở Ban Mê — Dân Việt (theo Ngôi Sao) — Đã mở đọc. Bài báo biên tập mô tả món tại quán gốc Buôn Ma Thuột (không định lượng gram): màu đỏ từ hạt điều màu chấy dầu; nước lèo CHỈ dùng cua đồng giã nhuyễn, không xương heo/bò, giống bún riêu nhưng KHÔNG có cà chua, chỉ có trứng cút; rau ăn kèm duy nhất là cải ngọt + giá; có chả cua thịt (thịt bằm + gạch cua + hành tím + lòng trắng trứng), hành phi, tóp mỡ, mắm tôm cho thêm khi ăn. Họ thứ 3 xác nhận cấu trúc và phủ định cà chua/đậu phụ."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/bun-do.webp",
@@ -113,7 +165,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. THIẾU NGUYÊN LIỆU: hạt điều màu (tạo màu đỏ cho sợi bún) (vai trò phụ) — cần bổ sung vào kho.",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. THIẾU NGUYÊN LIỆU: hạt điều màu (tạo màu đỏ cho sợi bún) (vai trò phụ) — cần bổ sung vào kho. [LV2-012 đợt vét] Nâng Mức 2: đối chiếu 3 họ độc lập (Tripi/BHX, Cookpad Quân Nguyễn, Dân Việt/Ngôi Sao) — xem recipe_sources. Đã sửa cua-dong 50→125g, trung-cut 12→25g; thêm thit-lon-xay, tom-kho, trung-ga (kết dính chả), cai-ngot, gia-do, hat-dieu-mau; bỏ ca-chua và dau-phu-chien (0/3 họ). Các dòng mới/sửa giữ source=llm_suggested, confidence=low. Bún tươi giữ 150g/khẩu phần theo quy ước kho dù 2 họ dùng 1kg bún/mẻ (~250g/khẩu phần) — sợi bún đỏ là sợi to kiểu bánh canh, cân nhắc quy ước riêng nếu chủ dự án muốn.",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

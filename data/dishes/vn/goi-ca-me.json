@@ -137,7 +137,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] Giữ Mức 1 — 429: mở nguồn Tripi bị giới hạn 429, dừng tra cứu theo quy tắc đợt. Bằng chứng sơ bộ từ tìm kiếm: nguồn định lượng chủ yếu thuộc 1 họ sao chép (Tripi/DayHocNghe cùng khuôn chẻo), cộng 1 blog định lượng mơ hồ và 1 bài phóng sự Dân Việt (biến thể Cẩm Hoàng, thính đậu nành + nước tương). Cá mè có số (144 kcal/100g), không phải trần nguyên liệu. Cần chạy lại khi hết 429.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

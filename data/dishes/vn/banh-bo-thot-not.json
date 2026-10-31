@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "hap",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "an-vat",
@@ -54,17 +54,9 @@
     },
     {
       "ingredient_slug": "nuoc-cot-dua",
-      "quantity": 15,
+      "quantity": 25,
       "unit_name": "g",
       "is_optional": false,
-      "source": "llm_suggested",
-      "confidence": "low"
-    },
-    {
-      "ingredient_slug": "trung-ga",
-      "quantity": 10,
-      "unit_name": "g",
-      "is_optional": true,
       "source": "llm_suggested",
       "confidence": "low"
     },
@@ -75,14 +67,55 @@
       "is_optional": true,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "bot-nang",
+      "quantity": 9,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "men-no",
+      "quantity": 1,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Nấu đường thốt nốt với nước cốt dừa cho tan, để ấm.",
-    "Trộn bột gạo (đã ủ men) với nước đường thốt nốt, ủ cho bột nở xốp tổ ong.",
-    "Đổ khuôn, hấp chín; bánh chín có màu vàng nâu, ruột xốp rễ tre, rắc dừa nạo nếu thích."
+    "Hòa men nở với ít nước ấm và một chút đường, để yên khoảng 10 phút đến khi men sủi bọt như gạch cua; men không nổi bọt là men đã hỏng, phải thay.",
+    "Đun đường thốt nốt với nước cốt dừa trên lửa nhỏ, khuấy đều đến khi đường tan hết và hỗn hợp sánh nhẹ; tắt bếp, để nguội còn ấm khoảng 35-40 độ C (sờ ấm tay, không nóng bỏng) để không làm chết men.",
+    "Rây bột gạo và bột năng vào âu lớn, thêm chút muối, rót từ từ nước đường dừa còn ấm vào khuấy đều tay đến khi bột mịn, không vón cục, hơi sệt như sữa đặc loãng.",
+    "Cho men đã kích hoạt vào bột, khuấy đều, đậy kín âu và ủ nơi ấm 1,5-2 giờ; bột đạt khi nở gần gấp rưỡi, mặt bột sủi tăm li ti và có mùi men chua dịu.",
+    "Quét lớp dầu mỏng vào khuôn hoặc chén nhỏ, đặt khuôn vào xửng nước đang sôi cho nóng trước khoảng 5 phút để bánh nở rễ tre đều.",
+    "Rót bột vào khoảng 2/3 khuôn, hấp lửa lớn 20-25 phút và không mở nắp trong lúc hấp; bánh chín khi mặt khô ráo, ấn nhẹ thấy đàn hồi, xiên tăm rút ra sạch và ruột bánh xốp dọc kiểu rễ tre, màu vàng nâu của đường thốt nốt.",
+    "Để bánh nguội bớt khoảng 5 phút rồi lấy ra khỏi khuôn, rắc dừa nạo lên mặt nếu thích và ăn khi còn ấm."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/528183",
+      "accessed": "2026-10-31",
+      "note": "Bánh Bò Thốt Nốt — Cookpad, Nguyễn Lê Hồng Hạnh — Đã mở đọc: 5 khẩu phần — 300g bột gạo, 60g bột năng, 200g cơm rượu, 150g nước dừa tươi, 200g đường thốt nốt, 200g nước cốt dừa; ủ qua đêm + 4 giờ, hấp ~30 phút lửa lớn, không trứng. Tỉ lệ trên bột gạo: bột năng 0,20, đường 0,67, cốt dừa 0,67."
+    },
+    {
+      "url": "https://eva.vn/lam-banh-ngon/cach-lam-banh-bo-thot-not-don-gian-tai-nha-khong-len-men-bang-com-ruou-cua-trai-dam-sai-gon-c274a597490.html",
+      "accessed": "2026-10-31",
+      "note": "Cách làm bánh bò thốt nốt đơn giản tại nhà (Eric Nguyễn) — Eva.vn — Đã mở đọc: 500g bột gạo, 30-50g bột năng, 220-300g đường thốt nốt, 200-250g nước cốt dừa, 10-15g men bánh mì, ủ 1-1,5 giờ, hấp lửa lớn 20-25 phút, không trứng."
+    },
+    {
+      "url": "https://tripi.vn/blog/vi/kinh-nghiem-hay/kham-pha-cong-thuc-lam-banh-bo-thot-not-an-giang-mon-banh-thom-ngon-dam-da-huong-vi-truyen-thong-tripi",
+      "accessed": "2026-10-31",
+      "note": "Công thức bánh bò thốt nốt An Giang — Tripi (cùng họ với emvaobep/blogtonghop24h, tính 1 họ) — Đã mở đọc: cho 3-4 người — 200g bột gạo, 60g bột năng, 200g đường thốt nốt, 350ml nước dừa tươi, 8g men nở; ủ 60 phút + 120 phút, hấp 20 phút; cốt dừa chỉ chan thêm khi ăn, không trứng."
+    },
+    {
+      "url": "http://saigontourist.edu.vn/cach-lam-banh-bo.html",
+      "accessed": "2026-10-31",
+      "note": "Cách làm bánh bò thốt nốt (mục 1) — Trường Saigontourist — Đã mở đọc: 200g bột gạo, 150g đường thốt nốt, 200ml nước cốt dừa, bột nở 1 muỗng cà phê + men nở 1 muỗng cà phê, ủ 1-2 giờ, hấp 20-25 phút; biến thể này không bột năng, không trứng."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/banh-bo-thot-not.webp",
@@ -93,7 +126,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt)",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-012 đợt vét] Nâng Mức 2: 4 họ độc lập đã mở đọc (Cookpad Nguyễn Lê Hồng Hạnh — bản truyền thống ủ cơm rượu; Eva/Eric Nguyễn — men khô; họ Tripi/emvaobep; Trường Saigontourist). Quy đổi theo tỉ lệ trên mốc bột gạo 45g của file: thêm bột năng 9g và men nở 1g (file thiếu hẳn chất nở), nước cốt dừa 15→25g, bỏ trứng gà (0/4 họ bản hấp dùng — trứng thuộc biến thể nướng). Đường thốt nốt giữ nguyên vì là định danh món và tỉ lệ 25/45 nằm trong dải các họ (0,44-1,0).",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

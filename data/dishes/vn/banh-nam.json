@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "hap",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "chieu",
@@ -34,7 +34,7 @@
   "ingredients": [
     {
       "ingredient_slug": "bot-gao",
-      "quantity": 65,
+      "quantity": 50,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -59,14 +59,6 @@
     {
       "ingredient_slug": "thit-lon-xay",
       "quantity": 25,
-      "unit_name": "g",
-      "is_optional": false,
-      "source": "llm_suggested",
-      "confidence": "low"
-    },
-    {
-      "ingredient_slug": "moc-nhi-kho",
-      "quantity": 4,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -106,7 +98,7 @@
     },
     {
       "ingredient_slug": "dau-an",
-      "quantity": 3,
+      "quantity": 8,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -122,12 +114,31 @@
     }
   ],
   "recipe_steps": [
-    "Pha bột gạo + bột năng, quấy sệt nhẹ.",
-    "Xào nhân tôm, thịt xay, mộc nhĩ, nêm nước mắm tiêu.",
-    "Trải bột mỏng lên lá chuối, đặt nhân, gấp dẹp.",
-    "Hấp 15-20 phút, ăn kèm nước mắm pha."
+    "Tôm bóc vỏ, bỏ đầu, rút chỉ đen, rửa sạch rồi giã hoặc băm nhỏ (không xay nhuyễn nát); thịt nạc vai xay trộn chung với tôm, ướp hạt nêm, nước mắm, tiêu và hành tím băm khoảng 15 phút cho thấm.",
+    "Phi thơm hành tím băm với dầu ăn (thêm dầu màu điều cho nhân màu đỏ gạch), cho hỗn hợp tôm thịt vào xào nhanh tay trên lửa vừa, dằm tơi để nhân không vón cục; xào đến khi nhân săn lại, tơi xốp và ráo nước, nêm hơi đậm hơn bình thường rồi tắt bếp, để nguội.",
+    "Hoà bột gạo với bột năng, muối và một ít dầu ăn trong nước lạnh, khuấy tan hoàn toàn rồi rây qua rây cho mịn; để bột nghỉ (có thể ngâm khoảng 2 giờ, gạn bỏ nước trong và bù đúng lượng nước mới như cách làm truyền thống) để bột bớt mùi.",
+    "Bắc nồi bột lên bếp lửa nhỏ, khuấy liên tục đều tay theo một chiều; khi bột sánh lại, chuyển trắng đục và sền sệt như cháo đặc nhưng chưa chín hẳn thì tắt bếp, tiếp tục khuấy thêm vài phút cho bột mượt và nguội bớt.",
+    "Lá chuối rửa sạch, trụng nhanh qua nước sôi cho mềm, lau khô, cắt miếng khoảng 15×20 cm; thoa một lớp dầu mỏng lên mặt lá, múc khoảng 1 thìa canh bột dàn mỏng dọc theo lá, rải nhân tôm thịt dọc giữa lớp bột.",
+    "Gấp hai mép lá dài che kín bột, bẻ hai đầu lá tạo hình chữ nhật, vuốt nhẹ tay cho bột dàn đều thành lớp mỏng; làm lần lượt đến hết bột và nhân.",
+    "Xếp bánh vào xửng, hấp lửa vừa 15–20 phút đến khi lá chuối sẫm màu và bánh chín trong; ăn nóng, chan nước mắm ngọt pha loãng (tỉ lệ khoảng 1 mắm : 1 đường : 3 nước) với ớt xanh cắt lát."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.bluestone.com.vn/blogs/vao-bep/banh-nam-hue",
+      "accessed": "2026-10-31",
+      "note": "BlueStone — Cách làm bánh nậm Huế nhân tôm thịt, bột mềm mịn — BlueStone (mở vòng 2): mẻ 20–25 cái — bột gạo 300, bột năng 50, tôm đất 200, thịt nạc vai xay 150, dầu ăn 2 muỗng canh + dầu điều 2 muỗng canh; quy đổi 1 phần 4 cái: bột 48–60, năng 8–10, tôm 32–40, thịt 24–30 — họ 1"
+    },
+    {
+      "url": "https://saigonesebaguette.vn/cach-lam-banh-nam-hue/",
+      "accessed": "2026-10-31",
+      "note": "Saigonese Baguette — Bí quyết cách làm bánh nậm Huế — Saigonese Baguette (mở vòng 2): mẻ 20–25 cái — bột gạo 250, bột năng 25, tôm 200, thịt xay 150, dầu ăn 2 thìa súp vào bột + 1–2 thìa súp xào nhân; quy đổi 1 phần 4 cái: bột 40–50, năng 4–5, tôm 32–40, thịt 24–30 — họ 2"
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/10831223",
+      "accessed": "2026-10-31",
+      "note": "Cookpad Lavender — Bánh nậm xứ Huế — Cookpad Lavender (mở vòng 2): 6 phần ăn — bột gạo 300, bột năng 50, tôm rảo 250, thịt vai xay 200, dầu màu điều 50 ml; quy đổi 1 phần: bột 50, năng 8, tôm 42, thịt 33 — họ 3 (họ quy đổi được thứ ba mà LV2-011 còn thiếu)"
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/banh-nam.webp",
@@ -138,7 +149,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [LV2-010 đợt 10: GIỮ Mức 1 do 429 toàn đợt trước khi tới món này — chưa tra cứu, làm lại ở vòng sau.] [LV2-011 đợt 11: GIU-THIEU-NGUON — đã mở 5 họ (Cookpad Phan Bao Van 400/50/250/300 g, Cookpad Quân Nguyễn 300/50/200/300 g, BlueStone, Saigonese Baguette, bản sao ĐMX bánh nậm khuôn 400/30 g) nhưng chỉ BlueStone và Saigonese ghi sản lượng 20–25 cái; quy đổi 1 phần 4 cái: bột gạo 40–60 g, bột năng 4–10 g, tôm 32–40 g, thịt 24–30 g — file nằm sát dải này, không đủ căn cứ sửa >30%. Các họ Cookpad không ghi số cái/khẩu phần nên chưa đủ 3 họ quy đổi được. Bất thường: dòng moc-nhi-kho 4 g không được họ nào trong 5 họ ủng hộ — ghi nhận chờ phân xử, chưa tự bớt.]",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [LV2-010 đợt 10: GIỮ Mức 1 do 429 toàn đợt trước khi tới món này — chưa tra cứu, làm lại ở vòng sau.] [LV2-011 đợt 11: GIU-THIEU-NGUON — đã mở 5 họ (Cookpad Phan Bao Van 400/50/250/300 g, Cookpad Quân Nguyễn 300/50/200/300 g, BlueStone, Saigonese Baguette, bản sao ĐMX bánh nậm khuôn 400/30 g) nhưng chỉ BlueStone và Saigonese ghi sản lượng 20–25 cái; quy đổi 1 phần 4 cái: bột gạo 40–60 g, bột năng 4–10 g, tôm 32–40 g, thịt 24–30 g — file nằm sát dải này, không đủ căn cứ sửa >30%. Các họ Cookpad không ghi số cái/khẩu phần nên chưa đủ 3 họ quy đổi được. Bất thường: dòng moc-nhi-kho 4 g không được họ nào trong 5 họ ủng hộ — ghi nhận chờ phân xử, chưa tự bớt.] [LV2-012 thu lai] Dung do 429 khi mo cac ho moi (Cookpad Lavender, Mon An 3 Mien) de kiem chung; giu Muc 1, thu lai o vong sau khi het chan. [LV2-012 vòng 2] NÂNG Mức 2: LV2-011 đã mở 5 họ nhưng chỉ 2 họ quy đổi được về phần 4 cái; vòng 2 mở thêm Cookpad Lavender (6 phần ăn — họ quy đổi được thứ ba) và mở lại BlueStone + Saigonese Baguette để kiểm chứng: đồng thuận 3 họ bột gạo 40–60 g/phần, tôm 32–42, thịt 24–33. Sửa bot-gao 65->50 (file cao hơn trần cả 3 họ), dau-an 3->8, bỏ moc-nhi-kho (0/5 họ ủng hộ); giữ tom-su 30 và thit-lon-xay 25 (lệch <25% so với điểm giữa đồng thuận), bot-nang 8 trong dải. Món Ăn 3 Miền đã mở nhưng loại khỏi đếm: đầu bài ghi 5 cái/2 người trong khi định lượng 250 g bột + 200 g nhân — mâu thuẫn nội tại, không quy đổi được. Các dòng thêm/sửa mang source=llm_suggested, confidence=low; giữ needs_review.",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

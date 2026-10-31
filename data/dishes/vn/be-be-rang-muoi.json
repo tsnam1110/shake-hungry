@@ -24,8 +24,8 @@
   ],
   "is_eat_out": true,
   "is_home_cook": true,
-  "cooking_method": "xao",
-  "completeness_level": 1,
+  "cooking_method": "chien-ngap-dau",
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -49,7 +49,7 @@
     },
     {
       "ingredient_slug": "muoi",
-      "quantity": 5,
+      "quantity": 1,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -80,28 +80,52 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "dau-an",
-      "quantity": 10,
-      "unit_name": "g",
-      "is_optional": false,
-      "source": "llm_suggested",
-      "confidence": "low"
-    },
-    {
       "ingredient_slug": "la-chanh",
       "quantity": 1,
       "unit_name": "g",
       "is_optional": true,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "bot-rang-muoi",
+      "quantity": 8,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Bề bề rửa sạch, để ráo, chiên sơ qua dầu cho săn vỏ.",
-    "Rang muối với sả, tỏi, ớt băm trên chảo khô cho thơm.",
-    "Cho bề bề vào đảo đều với hỗn hợp muối rang đến khi áo đều, dậy mùi; ăn nóng, chấm muối tiêu chanh."
+    "Rửa bề bề thật sạch, để ráo nước; dùng kéo cắt một đường dọc phần vỏ cứng trên sống lưng mỗi con để muối dễ thấm và khi ăn dễ bóc vỏ, giữ nguyên con không cắt khúc.",
+    "Chuẩn bị bột rang muối: rang khô lần lượt gạo nếp, gạo tẻ, đậu xanh đã cà vỏ và muối hạt trên chảo không dầu, lửa nhỏ, đảo đều đến khi hạt gạo đậu thơm vàng nhẹ và muối chuyển màu trắng đục; giã hoặc xay vừa nhỏ, không xay mịn như bột.",
+    "Thái sả thành lát mỏng hoặc đập dập, lá chanh rửa sạch để ráo, ớt thái lát; đun chảo sâu lòng với dầu ngập, dầu thật nóng thì cho lá chanh, ớt và sả vào chiên nhanh 20-30 giây cho dậy mùi rồi vớt ra để ráo.",
+    "Giữ dầu sôi già, thả bề bề vào chiên ngập dầu 2-3 phút, đảo nhẹ một lần, đến khi vỏ chuyển màu đỏ cam và giòn, thịt vừa chín tới thì vớt ra ngay, để ráo dầu 1-2 phút — chiên lâu hơn thịt sẽ khô và mất nước ngọt.",
+    "Khi bề bề còn nóng hổi, cho vào tô hoặc hộp khô, rắc bột rang muối và phần muối còn lại lên, đậy nắp và xóc đều 20-30 giây cho bột bám đều quanh vỏ từng con; bột chỉ bám tốt khi bề bề còn nóng.",
+    "Trộn phần sả, lá chanh, ớt đã chiên vào cùng, đảo nhẹ tay; bày bề bề ra đĩa trên lớp sả chiên, ăn nóng ngay, chấm muối tiêu chanh nếu thích và bóc vỏ theo đường đã rạch."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://chefdzung.com.vn/cach-lam-be-be-rang-muoi-gion-ngon-don-gian-tai-nha.html",
+      "accessed": "2026-10-31",
+      "note": "Cách làm bề bề rang muối giòn ngon đơn giản tại nhà - Chef Dzung — Đã mở đọc. Bề bề 1kg, sả 10 cây, lá chanh 20-30 lá, ớt 5 quả; bột muối tự làm từ 1 bát gạo nếp + 1 bát gạo tẻ + 3 thìa đậu xanh + 1 thìa muối, rang khô giã nhỏ; chiên ngập dầu: lá chanh, ớt, sả trước rồi bề bề 2-3 phút, vớt ráo và xóc muối rang ngay. Quy về 250g bề bề: 1/4 mẻ."
+    },
+    {
+      "url": "https://congthucnauan.vn/cuoi-tuan-lam-be-be-rang-muoi-gion-ngon-dai-ca-nha-ai-an-cung-phai-gat-gu-khen-ngoi/",
+      "accessed": "2026-10-31",
+      "note": "Cuối tuần làm bề bề rang muối giòn ngon - Công Thức Nấu Ăn (theo Em Đẹp) — Đã mở đọc. Bề bề 1kg, sả 4 củ, lá chanh 4-5 lá, ớt sừng 2 quả; bột muối: 1 bát gạo tẻ + 1 bát gạo nếp + 3 thìa đậu xanh + 1 thìa canh muối hạt + 1 thìa cà phê tiêu; chiên bề bề vàng giòn rồi trộn với muối rang, ớt và lá chanh."
+    },
+    {
+      "url": "https://zinfood.com/blogs/news/cach-che-bien-mon-be-be-rang-muoi-sieu-ngon-ma-lai-don-gian",
+      "accessed": "2026-10-31",
+      "note": "Cách chế biến món bề bề rang muối - Zin Food — Đã mở đọc. Bề bề 500g + bột rang muối 50g (tức ~25g bột cho mỗi 250g bề bề nếu dùng hết — lượng áo thực tế bám vào món thấp hơn nhiều, xem quyết định A4.5), kèm gạo nếp/gạo tẻ mỗi thứ 1 chén + đậu xanh 3 muỗng canh để tự làm bột; chiên bề bề 2-3 phút trong dầu nóng, vớt ráo rồi cho vào hộp xốc với muối rang."
+    },
+    {
+      "url": "https://camudo.com/blogs/mon-ngon-moi-ngay/be-be-rang-muoi",
+      "accessed": "2026-10-31",
+      "note": "Bề bề rang muối - Cá Mú Đỏ — Đã mở đọc. Không định lượng gram nhưng xác nhận biến thể áo bột: hấp sơ bề bề, áo lớp bột chiên tổng hợp mỏng, chiên vàng giòn, cho bột rang muối vào xóc đều ngay khi bề bề còn nóng hổi — khớp cơ chế A4.5 (áo mỏng -> chiên -> xóc bột lúc nóng)."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/be-be-rang-muoi.webp",
@@ -112,7 +136,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt)",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-012 đợt vét] Nâng Mức 2: đối chiếu 4 họ đã mở (Chef Dzung, Công Thức Nấu Ăn/Em Đẹp, Zin Food, Cá Mú Đỏ) — đồng thuận rạch lưng, chiên ngập dầu 2-3 phút, xóc bột rang muối lúc nóng. Áp quyết định A4.5 như tiền lệ LV2-010 Phần C: thêm bot-rang-muoi 8g, bỏ dòng dau-an 10 (dầu chiên chính không kê; engine tính hấp thụ nhóm hải sản 9), muoi 5->1; cooking_method cần đổi xao -> chien-ngap-dau khi tích hợp. Bề bề 250g/khẩu phần khớp Zin Food (500g/2 phần) và các họ 1kg/4 phần. Viết lại recipe_steps 6 bước. [LV2-012 kiểm chứng: bổ sung oil_absorption_pct=9 cho nguyên liệu be-be theo nhóm hải sản của CALC-004 (như cua-bien/tom-su) — trước đó be-be thiếu hệ số nên engine xếp 250 g vào missing và món không tính được dinh dưỡng.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "hap",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -42,7 +42,7 @@
     },
     {
       "ingredient_slug": "thit-lon-xay",
-      "quantity": 35,
+      "quantity": 60,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -95,15 +95,42 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nam-huong-kho",
+      "quantity": 4,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Quấy bột gạo với nước, nấu sệt thành khối dẻo.",
-    "Xào nhân thịt xay, mộc nhĩ, hành tím, nêm nước mắm tiêu.",
-    "Gói bột + nhân trong lá dong thành đòn dài, buộc lạt.",
-    "Hấp 25-30 phút, để nguội bớt, cắt khoanh khi ăn."
+    "Ngâm mộc nhĩ và nấm hương trong nước ấm khoảng 15 phút cho nở mềm, rửa sạch, để ráo rồi thái sợi nhỏ; hành tím bóc vỏ, băm nhỏ.",
+    "Phi hành tím với dầu ăn trên lửa vừa đến thơm vàng, cho thịt xay vào xào 5-7 phút đến khi thịt săn và tơi; thêm mộc nhĩ, nấm hương, nêm nước mắm, muối và tiêu, xào thêm 3-4 phút cho nhân khô ráo rồi để nguội.",
+    "Hoà bột gạo với nước và chút muối, để bột nghỉ 1-2 giờ; cho bột lên bếp lửa nhỏ, khuấy liên tục 10-15 phút đến khi bột đặc lại, nặng tay và hết mùi bột sống thì tắt bếp, khuấy thêm 1-2 phút cho khối bột mịn.",
+    "Lá dong hoặc lá chuối rửa sạch, trụng qua nước sôi hoặc hơ mềm, lau khô; phết một lớp bột dọc giữa lá, rải nhân thịt lên trên, phủ thêm một lớp bột kín nhân.",
+    "Gói bánh thành đòn dài, hai đầu thuôn, phần giữa gồ lên hình răng bừa, gấp mép lá và buộc lạt chắc tay; gói nhanh trong lúc bột còn nóng để bánh không nứt mặt.",
+    "Xếp bánh vào xửng, hấp lửa vừa 20-25 phút tính từ khi nước sôi (với bánh khoảng 100g/cái như khẩu phần file); bánh chín khi vỏ chuyển trong, dùng đũa xiên vào không dính bột ướt.",
+    "Vớt bánh ra, để nguội bớt 10-15 phút cho vỏ định hình; ăn nóng hoặc nguội đều được, có thể chấm thêm nước mắm ớt hoặc tương ớt."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-banh-te-thom-ngon-deo-min-don-gian-chuan-01857",
+      "accessed": "2026-10-31",
+      "note": "Cách làm bánh răng bừa (bánh tẻ) thơm ngon đơn giản chuẩn vị miền Bắc — Điện Máy XANH — Cho 4 người, biên tập Nguyễn Thị Anh Thảo: bột gạo 200g, thịt xay 150g, nấm mèo 3 cái, nấm hương 6 cái, hành tím 2 củ, dầu ăn 2,5 muỗng canh. Tỉ lệ thịt/bột 75/100; quy theo neo bột 80g/khẩu phần của file: thịt 60g, nấm hương khô ~4-5g. Hấp 15-20 phút."
+    },
+    {
+      "url": "https://congthucgiadinh.com/mon-an/banh-te",
+      "accessed": "2026-10-31",
+      "note": "Bánh Tẻ — Công Thức Gia Đình — Vỏ: bột gạo tẻ 250g, nước 400ml; nhân: thịt lợn xay 200g, mộc nhĩ 50g (đã ngâm nở), nấm hương 50g (đã ngâm nở), hành tím 1 củ, nước mắm 2 thìa cà phê, tiêu 1/2 thìa cà phê. Tỉ lệ thịt/bột 80/100; quy theo neo bột 80g: thịt 64g, nấm hương đã ngâm ~16g (tương đương ~3-4g khô). Hấp 45-60 phút cho đòn bánh lớn."
+    },
+    {
+      "url": "https://timnhanh.com.vn/banh-te-mon-banh-la-mieng-khong-phai-ai-cung-biet-cach-lam/",
+      "accessed": "2026-10-31",
+      "note": "Bánh tẻ: Món bánh lạ miệng, không phải ai cũng biết cách làm! — TimNhanh (công thức Cooky TV) — Bột gạo 250g, bột bắp 50g, nước 900ml, thịt ba chỉ 200g, nấm hương 50g, mộc nhĩ 50g, hành tím 20g, hành lá 20g. Tỉ lệ thịt/bột 80/100; quy theo neo bột 80g: thịt 64g, hành tím 6,4g (khớp dòng 5g của file). Hấp lửa to 20 phút."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/banh-te.webp",
@@ -114,7 +141,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt).",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [LV2-012 đợt vét] Nâng Mức 2: đối chiếu 3 họ độc lập đã mở (Điện Máy XANH; Công Thức Gia Đình; TimNhanh nguồn Cooky TV). Sửa thit-lon-xay 35→60g vì cả 3 họ đồng thuận tỉ lệ thịt/bột 75-80/100 trong khi file chỉ đạt 43,8/100 (lệch trên 40%). Thêm nam-huong-kho 4g (cả 3 họ đều có nấm hương trong nhân; lượng đã quy đổi từ dạng ngâm nở/cái về khô). Các dòng còn lại (hành tím, nước mắm, tiêu, muối) đều khớp ít nhất 2 họ nên giữ nguyên. Viết lại recipe_steps 7 bước.",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

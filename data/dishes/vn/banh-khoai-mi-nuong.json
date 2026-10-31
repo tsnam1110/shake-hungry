@@ -25,7 +25,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nuong",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "chieu",
@@ -49,7 +49,7 @@
     },
     {
       "ingredient_slug": "nuoc-cot-dua",
-      "quantity": 40,
+      "quantity": 50,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -73,7 +73,7 @@
     },
     {
       "ingredient_slug": "sua-dac",
-      "quantity": 10,
+      "quantity": 15,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -102,14 +102,47 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "bot-nang",
+      "quantity": 10,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Khoai mì lột vỏ, ngâm nước cho ra nhựa, bào nhuyễn rồi vắt bớt nước.",
-    "Trộn khoai với nước cốt dừa, đường, trứng, sữa đặc và bơ tan chảy.",
-    "Đổ khuôn, nướng đến khi mặt bánh vàng, để nguội rồi cắt miếng."
+    "Lột sạch vỏ nâu và vỏ hồng của khoai mì, cắt khúc, ngâm nước muối loãng 6–12 giờ (thay nước vài lần) để ra nhựa và giảm đắng; rửa lại nhiều lần cho nước trong.",
+    "Bào hoặc xay nhuyễn khoai, bỏ lõi xơ ở giữa; cho vào khăn vải vắt thật ráo, để phần nước vắt lắng 15–20 phút rồi chắt bỏ nước vàng, giữ lại tinh bột lắng ở đáy.",
+    "Trộn khoai đã vắt với phần tinh bột, đường, bột năng và muối; cho từ từ nước cốt dừa, sữa đặc, bơ đã đun chảy và trứng đánh tan vào, trộn đều thành hỗn hợp sệt đồng nhất rồi để nghỉ 10–15 phút.",
+    "Làm nóng lò ở 180°C trong 10 phút; phết bơ hoặc dầu mỏng vào khuôn, lót giấy nến, đổ hỗn hợp dày khoảng 3–4 cm, dàn phẳng mặt và rắc vừng rang lên trên.",
+    "Nướng ở 180°C trong 45–50 phút với lửa trên và dưới; bánh đạt khi rìa bánh se lại, mặt bắt đầu vàng và không còn ướt bóng.",
+    "Nướng thêm 5–10 phút chỉ lửa trên cho mặt bánh vàng nâu đều; xăm tăm vào giữa bánh, tăm rút ra khô và không dính bột sống là bánh đã chín hẳn.",
+    "Lấy khuôn ra, để bánh nguội hẳn trong khuôn khoảng 20–30 phút cho định hình rồi mới cắt miếng; bánh đạt khi dẻo, thơm cốt dừa, mặt vàng đều và không bị cháy cạnh."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-banh-khoai-mi-nuong-bang-noi-chien-khong-dau-thom-05474",
+      "accessed": "2026-10-31",
+      "note": "2 cách làm bánh khoai mì nướng bằng nồi chiên không dầu — Điện Máy XANH (biên tập Đoàn Trâm Anh) — Đã mở đọc, tính 1 họ biên tập gồm 2 công thức: (1) cho 4 người: khoai mì 400g, nước cốt dừa 200ml, đường 200g, mè rang 1 muỗng cà phê — bản rất ngọt, coi là ngoại lai khi lấy đồng thuận đường; (2) nguyên ổ cho 6 người: khoai mì tươi 1kg, nước cốt dừa 400ml, đậu xanh 50g, bột năng 110g, sữa đặc 80g, đường 40g. Quy tỉ lệ về tổng mẻ của file (217,5g): cốt dừa ~47–54g, bột năng ~13g."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/15540960",
+      "accessed": "2026-10-31",
+      "note": "Cách Làm Món Bánh Khoai Mì Nướng của Nguyen Thanh Mai — Cookpad (tác giả) — Đã mở đọc. 1kg củ cho ~800g khoai đã bào; bản chuẩn tác giả ghi trong bước làm: cốt dừa 360ml, bột năng 30g, đường 80g, sữa đặc 100g, bơ chảy 30g, 1 quả trứng. Quy tỉ lệ về 217,5g: khoai ~120g (khớp file), cốt dừa ~54g, sữa đặc ~15g, bột năng ~4,5g, trứng ~7,5g."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/3785442?ref=search&search_term=b%C3%A1nh+khoai+m%C3%AC+n%C6%B0%E1%BB%9Bng",
+      "accessed": "2026-10-31",
+      "note": "Cách Làm Món Bánh Khoai Mì Nướng (Kiểu 1) của Hoàng Thị Tố Hà — Cookpad (tác giả) — Đã mở đọc. Khoai mì đã mài nhuyễn 500g, đường 120g, nước cốt dừa 300g, sữa đặc 100g, bơ lạt 50g, bột năng 75g; nướng 180°C trong 60 phút. Quy tỉ lệ về 217,5g: khoai ~95g, cốt dừa ~57g, đường ~23g, sữa đặc ~19g, bơ ~9,5g, bột năng ~14g."
+    },
+    {
+      "url": "https://www.huongnghiepaau.com/banh-khoai-mi-hap",
+      "accessed": "2026-10-31",
+      "note": "Cách Làm Bánh Khoai Mì Hấp — Hướng Nghiệp Á Âu (họ phụ trợ, chỉ đối chiếu tỉ lệ bột) — Đã mở đọc. Biến thể hấp: khoai bào 500g, cốt dừa 200ml, bột năng 50g, đường 120g — tỉ lệ bột năng ~5,7% và cốt dừa ~23% khối lượng mẻ, nhất quán với các họ nướng; không dùng để chốt cách làm chín của món nướng."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/banh-khoai-mi-nuong.webp",
@@ -120,7 +153,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt)",
+  "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-012 đợt vét] Nâng Mức 2: đối chiếu 3 họ độc lập đã mở cho đúng biến thể nướng (Điện Máy XANH 2 công thức, Cookpad Nguyen Thanh Mai, Cookpad Hoàng Thị Tố Hà) + họ hấp Hướng Nghiệp Á Âu đối chiếu tỉ lệ bột. Sửa nước cốt dừa 40→50g và sữa đặc 10→15g theo đồng thuận tỉ lệ ≥2 họ; thêm bột năng 10g (có ở 4/4 họ, file thiếu). Viết lại recipe_steps 7 bước. Định lượng quy theo tỉ lệ tổng khối lượng mẻ vì các nguồn không thống nhất cách ghi khẩu phần.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

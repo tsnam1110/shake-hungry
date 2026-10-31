@@ -137,7 +137,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt DISH-004 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt DISH-004 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] Giữ Mức 1 — THIEU-NGUON: đã tra cứu nhiều vòng (bún cá mè, cá mè nấu dọc mùng, riêu cá mè) — không có họ biên tập định lượng nào cho đúng cá mè; các nguồn định lượng đều là bún cá rô phi/rô đồng/thu/lóc. Chờ nguồn cho đúng loài hoặc quyết định của chủ dự án về việc đối chiếu theo mẫu bún cá dọc mùng generic.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

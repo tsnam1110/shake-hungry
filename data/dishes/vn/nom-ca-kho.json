@@ -144,7 +144,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 đợt 2 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 đợt 2 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] GIỮ Mức 1 — THIEU-NGUON: chỉ 1 họ biên tập có định lượng cho đúng món (naumonngon/Món Ngon Mỗi Ngày: đu đủ 200g + khô cá lóc 100g/đĩa); họ còn lại là blog vô danh, Cookpad đúng món thì không gram. Nguyên liệu định danh ca-kho có số (USDA 174190, 290 kcal/100g) nên không phải trần nguyên liệu. Lưu ý chờ phân xử: dòng ca-rot 30g của file được 0/2 nguồn đã mở ủng hộ.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

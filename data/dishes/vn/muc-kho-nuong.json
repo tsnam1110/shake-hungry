@@ -85,7 +85,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu).",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu). [LV2-012 đợt vét] GIỮ Mức 1 — 429: lượt mở đọc nguồn bị chặn 429, dừng ngay theo quy tắc. Ghi nhận sơ bộ: các nguồn mực khô nướng (ĐMX, tài liệu Duy Tân, các trang nồi chiên) đều định lượng theo con và tập trung vào mẹo nướng/đập mềm/xé sợi + chấm tương ớt, không có bộ số gram để đối chiếu; khả năng cao kết luận cuối là THIEU-NGUON khi mở lại ở đợt sau. Nguyên liệu định danh muc-kho có số (291 kcal/100g, Bảng TPTP VN mã 8039), không bị trần.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

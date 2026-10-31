@@ -73,7 +73,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu).",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu). [LV2-012 đợt vét] GIỮ Mức 1 — mã 429: hai lượt mở nguồn (Heritage Vietnam Airlines, VnExpress) đều bị 429 nên dừng theo quy tắc đợt, chưa kiểm chứng được họ nào bằng mở đọc thật. Quan sát mức tìm kiếm (chưa tính là bằng chứng): các bài biên tập về cốm Hà Nội đều mô tả cốm tươi ăn kèm chuối tiêu chín, không thấy công thức định lượng theo gram cho món ăn sống này; dòng dừa nạo tuỳ chọn trong file cũng chưa đối chiếu được. Cần tra lại ở đợt sau khi hết chặn.",
   "status": "draft",
   "source": "llm_suggested",
   "confidence": "unknown",

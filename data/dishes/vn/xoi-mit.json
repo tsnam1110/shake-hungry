@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "hap",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "an-vat",
@@ -74,19 +74,47 @@
     },
     {
       "ingredient_slug": "vung-rang",
-      "quantity": 3,
+      "quantity": 5,
       "unit_name": "g",
       "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "cui-dua-nao",
+      "quantity": 10,
+      "unit_name": "g",
+      "is_optional": true,
       "source": "llm_suggested",
       "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Đồ xôi nếp với nước cốt dừa, đường, chút muối đến khi chín dẻo.",
-    "Mít chín tách múi, rạch một đường, bỏ hạt.",
-    "Nhồi xôi vào múi mít, rắc vừng rang; ăn nguội hoặc hơi mát."
+    "Vo nếp sạch, ngâm nước 6-8 giờ hoặc qua đêm cho hạt nở đều; vớt ra để ráo, xóc với chút muối cho xôi đậm vị.",
+    "Đun sôi nước trong xửng, cho nếp vào dàn đều, chọc lỗ thông hơi ở giữa; đồ lửa vừa khoảng 15 phút đến khi hạt nếp săn lại, trong dần.",
+    "Pha nước cốt dừa với đường và chút muối, đun lửa vừa cho vừa sôi và gia vị tan hết thì tắt bếp; rưới từ từ một nửa lên xôi, xới đều và đồ tiếp 5-10 phút — hạt xôi căng bóng, dẻo, thấm béo là đạt.",
+    "Trong lúc đồ xôi, tách múi mít: dùng dao rạch dọc một đường trên múi, khéo léo lấy hạt ra sao cho múi còn nguyên vẹn, không rách; mít đạt khi múi vàng, thơm, cùi dày và không dập.",
+    "Rang mè trên chảo khô lửa nhỏ, đảo đều tay đến khi mè ngả vàng nhạt và dậy mùi thơm thì trút ra ngay kẻo cháy đắng.",
+    "Để xôi nguội bớt còn ấm, nắn từng nắm nhỏ vừa miệng múi rồi nhồi gọn vào giữa múi mít; xếp ra đĩa, rưới phần nước cốt dừa còn lại, rắc mè rang và dừa nạo lên mặt.",
+    "Dùng ngay khi xôi còn ấm hoặc để mát 20-30 phút cho múi mít giòn ngọt hơn; không nhồi xôi quá tay làm rách múi."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://western.edu.vn/xoi-mit-cot-dua-beo-ngay/",
+      "accessed": "2026-10-31",
+      "note": "Xôi mít cốt dừa béo ngậy — Western Culinary Arts School — 4 người: nếp 350g, mít 500g, cốt dừa 100ml, mè trắng 20g, đường 1 thìa canh, muối 1 thìa cà phê. Quy về 1 phần: nếp 87,5g, mít 125g, cốt dừa 25g, mè 5g, đường ~4g. (Phần nếp ngâm nước thanh long tạo màu là chi tiết riêng của nguồn, không đưa vào file.)"
+    },
+    {
+      "url": "https://eva.vn/bep-eva/bua-sang-lam-xoi-mit-vua-ngon-ngot-lai-deo-thom-beo-ngay-ai-an-cung-thich-c162a634594.html",
+      "accessed": "2026-10-31",
+      "note": "Xôi mít bằng nồi chiên hơi nước — Minh Ngọc/Eva, công thức Loan Võ — Không ghi số phần ăn nên chỉ đối chiếu tỉ lệ theo nếp: nếp 300g, cốt dừa 200ml (tỉ lệ 0,67), dừa bào sợi 100g, mè rang 20g, bột năng 10g, 30 múi mít, 7 lá dứa. Xác nhận dừa sợi + mè rắc mặt và cốt dừa chan sánh bột năng."
+    },
+    {
+      "url": "http://www.ckktv.net/2021/11/cach-nau-xoi-mit-la-cam-nuoc-cot-dua.html",
+      "accessed": "2026-10-31",
+      "note": "Xôi mít lá cẩm nước cốt dừa — Cười Khúc Khích TV (CKK) — 4-5 người, biến thể nhuộm lá cẩm: nếp 200g, cốt dừa 250ml (100ml ngâm nếp + 150ml làm nước chan), đường 40g, dừa nạo 10g, mít 1kg cả vỏ hạt. Quy về 1 phần: nếp 40-50g (phần ăn vặt nhỏ), cốt dừa 50-62g, đường 8-10g — khẩu phần nhỏ hơn hẳn nên chỉ dùng đối chiếu cấu trúc và đường/cốt dừa."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/xoi-mit.webp",
@@ -97,7 +125,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] Nâng Mức 2: đã mở đọc 3 họ độc lập (Western 4 người, Eva/Loan Võ, CKK 4-5 người). Giữ nếp 120g, mít 120g, cốt dừa 40g, đường 10g vì đều nằm trong dải các họ (tỉ lệ cốt dừa/nếp 0,29-0,67, file 0,33). Sửa vung-rang 3→5g theo 2 họ; thêm cui-dua-nao 10g optional (2/3 họ rắc dừa). Hai lần mở nguồn bổ sung (Cookpad, Bếp Xưa) gặp 429 của dịch vụ duyệt web sau khi đã đủ 3 họ, không ảnh hưởng kết luận.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

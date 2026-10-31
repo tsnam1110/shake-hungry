@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "chien-ngap-dau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "an-vat",
@@ -58,31 +58,63 @@
     },
     {
       "ingredient_slug": "duong-trang",
-      "quantity": 3,
+      "quantity": 20,
       "unit_name": "g",
       "is_optional": true,
       "source": "llm_suggested",
       "confidence": "low"
     },
     {
-      "ingredient_slug": "vung-rang",
-      "quantity": 3,
+      "ingredient_slug": "dau-xanh-hat",
+      "quantity": 50,
       "unit_name": "g",
-      "is_optional": true,
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nuoc-cot-dua",
+      "quantity": 25,
+      "unit_name": "g",
+      "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Đồ xôi nếp chín, nêm chút muối.",
-    "Ấn xôi thành từng bánh dẹt tròn khi còn nóng, để nguội se mặt.",
-    "Chiên ngập dầu đến khi bánh phồng, vàng giòn hai mặt."
+    "Ngâm nguyên liệu: vo sạch gạo nếp, ngâm nước 5-6 giờ (hoặc qua đêm); đậu xanh đãi vỏ ngâm riêng khoảng 3 giờ; vớt cả hai ra để ráo.",
+    "Hấp đậu xanh: cho đậu vào xửng hấp cách thuỷ khoảng 15-20 phút đến khi hạt chín mềm, bóp nát được; lấy ra giã nhuyễn hoặc xay mịn khi còn nóng.",
+    "Đồ xôi: trộn đều gạo nếp với đậu xanh đã giã và chút muối, cho vào xửng, tạo một lỗ giữa mặt nếp cho hơi thoát; đồ lửa vừa khoảng 25 phút đến khi hạt nếp nở mềm.",
+    "Trộn cốt dừa và đường: khi xôi vừa chín tới, rưới đều nước cốt dừa đã hoà đường lên mặt xôi, xới nhẹ cho thấm, đậy nắp đồ thêm 3-5 phút đến khi hạt xôi trong, dẻo và không còn lõi cứng.",
+    "Nhào xôi: cho xôi ra thau khi còn nóng, rưới phần dầu ăn đã kê trong công thức, đeo găng tay nhào thật mạnh và đều tay đến khi xôi thành một khối mịn, dẻo, không dính tay (nhào lúc nguội xôi sẽ cứng và kém phồng).",
+    "Tạo hình: cán khối xôi trên mặt phẳng sạch thành lớp dày khoảng 1 cm, dùng khuôn tròn hoặc miệng cốc cắt thành từng bánh đều nhau; hoặc bó xôi thành trụ, để ngăn mát vài giờ rồi cắt lát dày ~1 cm.",
+    "Chiên phồng: đun dầu ngập mặt bánh cho nóng già (đầu đũa sủi tăm mạnh), thả từng bánh vào chiên lửa vừa, mỗi lần ít bánh và không để dính nhau; trở đều tay đến khi bánh nổi lên, phồng căng, vàng giòn cả hai mặt thì vớt ra để ráo dầu trên giấy thấm, ăn nóng."
   ],
   "recipe_sources": [
     {
       "url": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_m%C3%B3n_%C4%83n_Vi%E1%BB%87t_Nam",
       "accessed": "2026-10-31",
       "note": "Đối chiếu: món có mặt trong Danh sách món ăn Việt Nam (Wikipedia tiếng Việt)."
+    },
+    {
+      "url": "https://www.cet.edu.vn/cach-lam-mon-xoi-chien-phong",
+      "accessed": "2026-10-31",
+      "note": "Cách làm món xôi chiên phồng - CET (Chef Lập) — Đã mở đọc thật. Gạo nếp 300 g, đậu xanh 90 g (30% nếp), đường trắng 40 g (~13% nếp), dừa nạo vắt cốt (không gram), dầu ăn và muối không gram; ngâm nếp 5-6 giờ, đậu 3 giờ, đồ 40 phút, nhào nóng, cán cắt khuôn tròn, chiên ngập dầu. Quy về file (nếp 180 g): đậu xanh ~54 g, đường ~24 g."
+    },
+    {
+      "url": "https://giadinh.suckhoedoisong.vn/xoi-chien-phong-gion-thom-tuong-khong-de-ma-de-khong-tuong-172171211111855257.htm",
+      "accessed": "2026-10-31",
+      "note": "Xôi chiên phồng giòn thơm - Gia đình & Sức khoẻ đời sống (theo aFamily/Tri thức trẻ) — Đã mở đọc thật. Gạo nếp 150 g, đậu xanh không vỏ 100 g, đường 30 g (20% nếp), dầu ăn 25 g, bột cốt dừa/nước cốt dừa 30 g (20% nếp), chút muối; đồ ~25 phút + 2-3 phút sau khi trộn cốt dừa-đường, nhồi mịn, cán dày 1 cm cắt khuôn, chiên dầu sôi. Quy về nếp 180 g: đường ~36 g, cốt dừa ~36 g (đậu xanh 100/150 là tỉ lệ cao nhất trong 3 họ)."
+    },
+    {
+      "url": "https://bepxua.vn/lam-xoi-chien-the-nao-de-phong-cang-gion-rum/",
+      "accessed": "2026-10-31",
+      "note": "Làm xôi chiên thế nào để phồng căng, giòn rụm? - Bếp Xưa (BepX) — Đã mở đọc thật. Gạo nếp 500 g, nước cốt dừa 40 g, đường 30 g (6% nếp), đậu xanh 100 g ghi 'có thể cho thêm nếu thích' (20% nếp); nhào/giã xôi nóng cho mịn, bó trụ để lạnh cắt lát, chiên ngập dầu mỗi lần ~4 miếng. Là họ thứ ba xác nhận bộ khung nếp-đường-cốt dừa-đậu xanh."
+    },
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/2-cach-lam-xoi-chien-cha-bong-gion-ngon-hap-dan-de-lam-tai-12407?srsltid=AfmBOor6U-yzX0pLnJ0Hfj0p9wK9T0kPGmupkmh95sUzBiZjRa_zq6Ze",
+      "accessed": "2026-10-31",
+      "note": "2 cách làm xôi chiên chà bông - Điện Máy XANH (biến thể đối chứng) — Đã mở đọc thật, dùng làm đối chứng biến thể: xôi chiên chà bông (nếp 500 g, chà bông 50 g, dầu ăn 100 ml, muối 1/2 muỗng cà phê cho 4 người) là biến thể khác, không áp cho file; chỉ xác nhận kỹ thuật ép bánh dẹt và chiên lửa vừa hai mặt."
     }
   ],
   "media": [
@@ -95,7 +127,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [Ghi chú 2026-10-31 — Phương án A/QA-002: GIỮ NGUYÊN dòng dau-an 15 g, KHÔNG phải tính trùng. Chủ thể chiên của món là tinh bột đã nấu chín (gạo nếp) — nguyên liệu có oil_absorption_pct = 0 theo thiết kế CALC-004 ('tinh bột đã nấu chín rán lại với dầu đã kê trong công thức'), nên dòng dầu này là cơ chế tính dầu duy nhất của món; bỏ đi là engine tính 0 g dầu cho một món chiên. Đưa món này về quy ước A thuần tuý đòi hỏi gán hệ số hấp thụ cho gao-nep đã nấu — thay đổi phía engine/dữ liệu nguyên liệu, ngoài phạm vi Phương án A, chờ quyết định riêng.]",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [Ghi chú 2026-10-31 — Phương án A/QA-002: GIỮ NGUYÊN dòng dau-an 15 g, KHÔNG phải tính trùng. Chủ thể chiên của món là tinh bột đã nấu chín (gạo nếp) — nguyên liệu có oil_absorption_pct = 0 theo thiết kế CALC-004 ('tinh bột đã nấu chín rán lại với dầu đã kê trong công thức'), nên dòng dầu này là cơ chế tính dầu duy nhất của món; bỏ đi là engine tính 0 g dầu cho một món chiên. Đưa món này về quy ước A thuần tuý đòi hỏi gán hệ số hấp thụ cho gao-nep đã nấu — thay đổi phía engine/dữ liệu nguyên liệu, ngoài phạm vi Phương án A, chờ quyết định riêng.] [LV2-012 đợt vét] Nâng Mức 2 theo biến thể xôi chiên phồng (file tự ghi 'bánh phồng' ở bước chiên): đối chiếu 3 họ độc lập CET/Chef Lập, SKĐS-aFamily, Bếp Xưa. Thêm dau-xanh-hat 50 g và nuoc-cot-dua 25 g (3/3 họ đều có), duong-trang 3 g optional -> 20 g thành phần chính, bỏ vung-rang (0/3 họ). GIỮ NGUYÊN dau-an 15 g theo ngoại lệ Phương án A đã ghi: gạo nếp đã nấu có hệ số hấp thụ 0, dòng dầu kê trong công thức là cơ chế tính dầu duy nhất của món. Viết lại recipe_steps 7 bước.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

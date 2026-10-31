@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -95,14 +95,50 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "cai-xanh",
+      "quantity": 40,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-tim",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Cá rô luộc lấy thịt, gỡ xương; giữ nước luộc cá làm nước dùng, thêm cà chua và gừng.",
-    "Ướp thịt cá với nước mắm, chiên sơ cho săn mặt.",
-    "Trụng bánh đa đỏ, xếp cá, chan nước dùng, rắc hành lá và thì là."
+    "Sơ chế cá rô: đánh vảy, bỏ mang ruột, chà muối và gừng rồi rửa sạch để khử nhớt và mùi tanh; rau cải nhặt rửa, cắt khúc 3-5cm; cà chua bổ múi cau.",
+    "Luộc cá trong nước có gừng và hành khoảng 10-15 phút từ khi sôi đến khi thịt cá chín trắng, vớt ra để nguội bớt rồi gỡ lấy thịt, giữ lại toàn bộ nước luộc và phần xương đầu.",
+    "Cho xương và đầu cá vào lại nồi nước luộc (hoặc giã/xay rồi lọc qua rây 2-3 lần) ninh thêm khoảng 10 phút cho ngọt nước, lọc bỏ xương vụn để nước dùng trong.",
+    "Ướp thịt cá đã gỡ với nước mắm, muối, tiêu và gừng băm khoảng 10-15 phút, sau đó chiên trên chảo nóng cho hai mặt vàng săn; theo quy ước món chiên, dầu của bước chiên chính này không kê vào định lượng.",
+    "Phi hành tím cho thơm, xào cà chua đến khi mềm và ra màu, đổ vào nồi nước dùng, đun sôi lại và nêm muối, nước mắm cho vừa miệng, vị hơi đằm.",
+    "Trụng bánh đa đỏ trong nước sôi đến khi sợi mềm dai, không nát; chần rau cải nhanh khoảng 2 phút cho xanh giòn rồi xếp cả hai vào tô cùng thịt cá chiên.",
+    "Chan nước dùng đang sôi ngập tô, rắc hành lá và thì là cắt nhỏ cùng chút tiêu; dùng nóng ngay khi sợi bánh đa còn dai và cá còn giòn mặt."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/23868230",
+      "accessed": "2026-10-31",
+      "note": "Cách Làm Món Bánh đa Cá Rô đồng của Pham Huyen — Cookpad (Hải Phòng) — Cho 4 người: cá rô đồng 500g (≈125g nguyên con/người, thịt gỡ ra ~65-70g), chả cá 200g (nếu có), rau cải đắng 1 mớ, cà chua 2 quả (≈30g/người), me/mẻ tạo chua, hành lá/rau răm/thì là. Cá dùng set gỡ sẵn, xào trong nước dùng thay vì chiên. Không ghi lượng bánh đa."
+    },
+    {
+      "url": "https://danviet.vn/chan-bun-pho-hay-chao-thu-nau-banh-da-ca-ro-cho-ca-nha-an-sang-cuc-ngon-ma-de-lam-d1345682.html",
+      "accessed": "2026-10-31",
+      "note": "Chán bún, phở hay cháo, thử nấu bánh đa cá rô cho cả nhà ăn sáng — Dân Việt (tác giả món: Hường Nguyễn) — Cá rô phi 1kg cho cả nhà (~4 người, ≈250g nguyên con/người), rau cải, cà chua 2 quả, hành lá/hành khô/gừng/thì là. Thịt cá lọc ướp gừng tỏi 30 phút rồi rán; xương ninh cùng cà chua khoảng 1 giờ làm nước dùng. Không ghi lượng bánh đa và rau."
+    },
+    {
+      "url": "https://kinhdofood.com/cach-nau-banh-da-ca-ro-an-kem-voi-rau-cai/",
+      "accessed": "2026-10-31",
+      "note": "Cách nấu bánh đa cá rô ăn kèm với rau cải (công thức Điện Máy XANH) — KinhDoFood đăng lại — Công thức 1: bánh đa 300g, cá rô 3 con, cải xanh 1 bó, hành lá 5 nhánh, hành tím 4 củ, gừng 1 củ, thì là — ước lượng 4 tô: bánh đa ~75g/tô, cải ~50g/tô, hành tím ~7g/tô. Cá luộc 10-15 phút, gỡ thịt, ướp nghệ/muối/hạt nêm rồi chiên vàng; xương ninh lại trong nước luộc. Hai công thức phụ trong cùng trang cũng đều có rau cải (2 mớ) và bánh đa trắng 300g."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/banh-da-ca.webp",
@@ -113,7 +149,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt DISH-004 đợt 2 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt DISH-004 đợt 2 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] Nâng Mức 2: đối chiếu 3 họ độc lập (Cookpad Pham Huyen, Dân Việt, DMX qua KinhDoFood). Đề xuất thêm cai-xanh 40 (3/3 họ đều có rau cải, file thiếu hẳn) và hanh-tim 5 (3/3 họ đều phi hành khô). Giữ nguyên banh-da-do 70 (họ có số cho ~75g/tô), ca-ro-dong 90 (thịt gỡ từ 125-250g cá nguyên con/người ở các họ cho khoảng 65-110g thịt), ca-chua 40. Không thêm chả cá vì chỉ 1 họ ghi 'nếu có'; không thêm dầu ăn vì cá chiên là bước chiên chính theo quy ước biên tập.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

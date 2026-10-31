@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "chien",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -118,12 +118,30 @@
     }
   ],
   "recipe_steps": [
-    "Rươi rửa sạch nhẹ tay, để thật ráo nước.",
-    "Đánh trứng với thịt lợn xay, cho rươi, lá lốt, hành lá, thì là thái nhỏ vào trộn đều; nêm nước mắm, muối, tiêu.",
-    "Đun nóng dầu trong chảo, múc từng thìa hỗn hợp vào chiên lửa vừa cho vàng đều hai mặt.",
-    "Ăn nóng với cơm hoặc bún, chấm nước mắm pha chua ngọt."
+    "Sơ chế rươi: thả rươi vào chậu nước sạch, khuấy thật nhẹ tay và nhặt bỏ rác, con chết nát; đun nước nóng già khoảng 75-80°C (không dùng nước sôi vì rươi vỡ, mất chất sữa trong bụng) trút vào tô rươi, khuấy nhẹ cho lông rụng, xả lại nước lạnh 2-3 lần rồi để thật ráo.",
+    "Thái nhỏ hành lá, thì là và lá lốt; nếu có vỏ quýt thì thái chỉ thật nhỏ (cho nhiều sẽ đắng). Gừng đập dập để riêng khử tanh khi cần.",
+    "Cho rươi vào tô lớn, dùng đũa đánh cho thân rươi dập và quyện thành khối dẻo (không cần đánh nhuyễn hoàn toàn, còn lợn cợn đoạn rươi là đạt), sau đó cho thịt lợn xay vào đánh đều tiếp.",
+    "Đập trứng vào hỗn hợp, thêm rau thơm đã thái, nêm nước mắm, muối và tiêu; trộn đều đến khi hỗn hợp dẻo quánh, dậy mùi thơm của rươi và rau gia vị là đạt.",
+    "Đun dầu trong chảo cho nóng già rồi hạ xuống lửa vừa-nhỏ; múc từng thìa hỗn hợp dàn thành miếng tròn dày khoảng 1cm, chiên khoảng 5-7 phút, lật đều cho vàng cả hai mặt; miếng chả đạt khi vỏ vàng, trong vẫn mềm và không khô xác.",
+    "Vớt chả ra để ráo dầu, rắc thêm chút tiêu; pha nước mắm chua ngọt với chanh và ớt, dọn chả nóng ăn kèm bún hoặc cơm và rau thơm."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://vietnamnet.vn/cach-chon-ruoi-tuoi-ngon-che-bien-thanh-nhung-mon-mien-che-687932.html",
+      "accessed": "2026-10-31",
+      "note": "VietnamNet (theo Phụ nữ Việt Nam) — Chọn rươi tươi ngon, cách chế biến và các món ngon từ rươi — Đã mở đọc. Mẻ: rươi 300g + thịt lợn xay 150g + 2 quả trứng + vỏ 1 quả quýt + hành lá/thì là; quy về đĩa 190g (~1/3 mẻ): rươi ~100g, thịt ~50g, trứng ~33g."
+    },
+    {
+      "url": "https://vi.wikipedia.org/wiki/Ch%E1%BA%A3_r%C6%B0%C6%A1i",
+      "accessed": "2026-10-31",
+      "note": "Wikipedia tiếng Việt — Chả rươi — Đã mở đọc. Quy ước truyền thống: lượng rươi thường gấp 3 lần thịt; ~0,5kg rươi dùng 3-4 quả trứng; vỏ quýt là gia vị không thể thiếu; quy về khẩu phần core ~170g: rươi ~100g, thịt ~35g, trứng ~35g — đồng thuận với VietnamNet về rươi chủ đạo."
+    },
+    {
+      "url": "https://congthucnauan.vn/nhanh-tay-lam-cha-ruoi/",
+      "accessed": "2026-10-31",
+      "note": "Công Thức Nấu Ăn — Nhanh tay làm chả rươi (Nguyễn Mạnh Hùng) — Đã mở đọc. Cho 4 người: thịt nạc vai xay 300g + rươi 150g + 4 quả trứng + vỏ quýt hôi 1/2 quả; quy về 1 khẩu phần: rươi 37,5g, thịt 75g, trứng ~50g — họ thiểu số thiên thịt, dùng làm biên dưới cho rươi/biên trên cho thịt."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/cha-ruoi.webp",
@@ -138,7 +156,7 @@
     "source": "wikidata",
     "queried_at": "2026-08-31"
   },
-  "import_note": "Nhập tự động từ Wikidata Q7125094 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Gợi ý nguyên liệu từ Wikidata (tiếng Anh, CHƯA ánh xạ sang data/ingredients/): Tylorrhynchus heterochaetus. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/Cha%20ruoi.JPG Chưa soạn định lượng: nguyên liệu cốt lõi là con rươi — chưa có trong bộ 255 nguyên liệu. Cần task bổ sung nguyên liệu 'rươi' (theo quy trình ING) rồi mới soạn được. Soạn thảo ngày 2026-10-31 sau khi nguyên liệu cốt lõi (rươi/don) có dữ liệu nguồn thứ cấp — chờ người duyệt. [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 15 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).]",
+  "import_note": "Nhập tự động từ Wikidata Q7125094 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Gợi ý nguyên liệu từ Wikidata (tiếng Anh, CHƯA ánh xạ sang data/ingredients/): Tylorrhynchus heterochaetus. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/Cha%20ruoi.JPG Chưa soạn định lượng: nguyên liệu cốt lõi là con rươi — chưa có trong bộ 255 nguyên liệu. Cần task bổ sung nguyên liệu 'rươi' (theo quy trình ING) rồi mới soạn được. Soạn thảo ngày 2026-10-31 sau khi nguyên liệu cốt lõi (rươi/don) có dữ liệu nguồn thứ cấp — chờ người duyệt. [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 15 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).] [LV2-012 đợt vét] ĐẠT Mức 2: đã mở đọc 3 họ độc lập (VietnamNet, Wikipedia, Công Thức Nấu Ăn) — rươi chủ đạo theo đồng thuận 2/3 họ, định lượng file nằm trong dải đối chiếu nên giữ nguyên mọi dòng. Thiếu vỏ quýt (gia vị định danh ở cả 3 họ) vì kho chưa có slug nguyên liệu vỏ quýt — xem anomalies.",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

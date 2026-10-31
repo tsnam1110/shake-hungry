@@ -174,7 +174,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt).",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [LV2-012 đợt vét] Giữ Mức 1 — trần nguyên liệu định danh: 3 họ độc lập (Dân Việt, Nấu Ăn Không Khó, VnExpress/Liên Ròm) đều xác nhận nước lèo bún mắm chay = tương đậu nành/tương hột + chao xay nhuyễn phi sả, nhưng tuong-ban và tuong-hat đều chưa có số dinh dưỡng (kcal=null) nên phần nền lèo không tính được calo. Khi nào tương có số đạt chuẩn, bộ sửa đã sẵn: thêm dòng chao ~8-12g/khẩu phần (3/3 họ đều có, file đang thiếu hẳn), tăng dòng tương từ 15g lên ~25-50g/khẩu phần, và rà lại mi-can 25g (chỉ 1 họ nhắc mì căn).",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

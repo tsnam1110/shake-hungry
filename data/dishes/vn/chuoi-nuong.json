@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nuong",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "chieu",
@@ -79,15 +79,41 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "bot-bang",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Ngâm và đồ nếp chín dẻo, trộn chút nước cốt dừa.",
-    "Bọc nếp quanh trái chuối, gói lá chuối.",
-    "Nướng trên than đến khi lá cháy xém, nếp vàng thơm.",
-    "Cắt khoanh, chan nước cốt dừa, rắc đậu phộng rang."
+    "Ngâm gạo nếp 4 giờ đến qua đêm, vo sạch, để ráo. Chuối sứ chín bóc vỏ, gỡ bỏ chỉ, ướp với đường và chút muối 30 phút đến 1 giờ cho chuối ra bớt nước (nướng sẽ thơm, không sượng).",
+    "Nấu/đồ nếp với phần nước cốt dừa pha nước và chút muối khoảng 20 phút; đạt khi hạt nếp trong, dẻo, ráo mặt không nhão. Xới đều, để nếp nguội bớt còn ấm.",
+    "Chia nếp thành từng phần (khoảng 80-90g nếp chín/phần), dàn mỏng trên lá chuối hoặc màng sạch, đặt trái chuối vào giữa, cuốn chặt tay cho nếp bọc kín chuối rồi gói lá chuối 2 lớp, túm hai đầu.",
+    "Nướng trên than lửa vừa hoặc lò 200°C trong 25-40 phút, trở đều các mặt; đạt khi lá chuối cháy xém, lớp nếp se mặt, vàng giòn và dậy mùi thơm.",
+    "Làm nước cốt chan: ngâm bột báng 30 phút, luộc lửa vừa đến khi hạt trong, chỉ còn chấm trắng nhỏ ở giữa thì vớt ra xả nước lạnh. Đun phần nước cốt dừa còn lại với đường và chút muối, pha ít bột năng loãng cho vào khuấy đến khi sôi nhẹ, hơi sánh thì cho bột báng vào và tắt bếp.",
+    "Gỡ bỏ lá, cắt chuối nướng thành khoanh 2-3cm, xếp ra đĩa, chan nước cốt dừa bột báng, rắc đậu phộng rang giã dập; ăn nóng là ngon nhất."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "http://giavihanhphuc.com/bot-banh/banh-chuoi-nep-nuong-natha-food-amp",
+      "accessed": "2026-10-31",
+      "note": "Natha Food — Bánh chuối nếp nướng (giavihanhphuc.com) — 12 trái chuối sứ: nếp 500g, nước cốt dừa 300ml (nấu nếp) + 100ml (nước cốt chan), đường 100g ướp chuối. Quy đổi/trái: nếp sống ~42g, cốt dừa ~33ml, đường ~8g; mỗi phần nếp chín dàn bọc chuối 80-90g. Không rắc đậu phộng, không bột báng."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/15696932",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Chuối Nếp Nướng Cốt Dừa của Anne Tran — 8 trái: nếp 400g (50g/trái — khớp file), cốt dừa 1 lon 350ml + sữa tươi 200-300ml cho phần nước cốt, có ít bột báng trong nước cốt và đậu phộng giã rắc khi ăn; đường ướp chuối 1 muỗng canh + trộn nếp 2-3 muỗng canh."
+    },
+    {
+      "url": "https://tailieu.duytan.edu.vn/tailieu/2009/20091127/womanhood911_11/chuoi_nuong_5391.pdf?rand=383843",
+      "accessed": "2026-10-31",
+      "note": "Giáo trình dạy nấu ăn (PDF, tailieu.duytan.edu.vn) — Chuối nướng — 10 trái chuối sứ: gạo nếp 300g (30g/trái), bột báng 50g (5g/trái), đậu phộng rang giã nhỏ 100g (10g/trái), 1 trái dừa khô lớn vắt cốt (~30-40ml/trái), nước cốt pha bột năng + 4 thìa cà phê đường + 1/2 thìa muối."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/chuoi-nuong.webp",
@@ -98,7 +124,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt)",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-012 đợt vét] Nâng Mức 2: đối chiếu 3 họ nguồn độc lập đã mở đọc thật (Natha Food; Cookpad Anne Tran; giáo trình PDF tailieu.duytan.edu.vn). Định lượng/khẩu phần của 3 họ: nếp sống 30-50g, cốt dừa ~33-44ml, đường ~8-10g, đậu phộng 0-10g — số file (50/35/10/8g) nằm trong dải đồng thuận nên giữ nguyên. Thêm dòng bot-bang 5g (2/3 họ có trong nước cốt, giáo trình cho số rõ 5g/trái).",
   "status": "draft",
   "source": "llm_suggested",
   "confidence": "unknown",

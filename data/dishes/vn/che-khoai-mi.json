@@ -25,7 +25,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "an-vat",
@@ -97,11 +97,31 @@
     }
   ],
   "recipe_steps": [
-    "Khoai mì lột vỏ, ngâm nước muối loãng cho ra nhựa, cắt khúc vừa ăn.",
-    "Nấu khoai mì với nước và lá dứa đến khi trong và mềm, cho đường và chút muối.",
-    "Cho nước cốt dừa, pha chút bột năng cho sánh nhẹ; rắc vừng rang khi ăn."
+    "Lột sạch vỏ nâu và lớp vỏ lụa của khoai mì, bỏ lõi xơ, cắt khúc 3–4 cm rồi ngâm nước muối loãng 2–4 giờ (thay nước 1–2 lần) để ra nhựa; vớt ra rửa lại nhiều lần cho nước trong.",
+    "Luộc hoặc hấp khoai mì khoảng 20–25 phút tới khi xiên đũa qua dễ dàng, miếng khoai trong dần ở rìa và mềm nhưng chưa nát; chắt bỏ toàn bộ nước luộc.",
+    "Cho nước cốt dừa cùng khoảng 150 ml nước, lá dứa đã buộc gọn và một nhúm muối vào nồi, đun lửa nhỏ 5 phút tới khi bốc hơi và thơm mùi dứa, không để sôi bùng làm cốt dừa tách dầu.",
+    "Cho khoai mì đã chín vào nồi cốt dừa, đun liu riu 10 phút, trở nhẹ tay 1–2 lần cho khoai thấm mà không vỡ miếng.",
+    "Rắc đường vào, khuấy nhẹ cho tan hết rồi nấu thêm 5 phút; nếm lại — vị ngọt vừa, béo và khoai vẫn giữ được độ bở ở giữa.",
+    "Hoà bột năng với 2–3 muỗng nước lạnh, rót từ từ vào nồi, khuấy một chiều tới khi nước chè sánh nhẹ, trong và bám mỏng quanh miếng khoai thì tắt bếp, vớt bỏ lá dứa.",
+    "Múc chè ra chén khi còn ấm, rắc vừng rang lên mặt; ăn nóng thấy rõ vị bùi béo, để nguội lạnh chè sẽ sánh hơn."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "http://anngon3mien.com/cach-nau-che-khoai-mi.html",
+      "accessed": "2026-10-31",
+      "note": "Ăn Ngon 3 Miền — Cách nấu chè khoai mì nước cốt dừa lá dứa — Đã mở đọc. Khoai mì 500g cắt khúc ngâm muối, nước cốt dừa 200ml, nước 100ml, đường 100g, lá dứa, muối — không khai khẩu phần; quy theo tổng khối lượng ~900g / 280g ≈ 3,2 khẩu phần: khoai ~156g, cốt dừa ~62g, đường ~31g/khẩu phần, khớp file (150/70/30)."
+    },
+    {
+      "url": "https://www.beemart.vn/huong-dan-cach-nau-che-khoai-mi-deo-ngot-cho-ngay-lanh",
+      "accessed": "2026-10-31",
+      "note": "Beemart — Hướng dẫn cách nấu chè khoai mì dẻo ngọt (Tống Thị Ngọc Ánh) — Đã mở đọc. Bài tách rõ 2 cách: mài vo viên và hấp cắt miếng; bản cắt miếng (đúng biến thể file): khoai mì 600g hấp chín cắt vuông, đường 100g, nước cốt vắt từ dừa nạo, lá dứa, muối, ăn kèm mè rang/đậu phộng. Quy theo mẻ ~900–1000g: khoai ~150–165g, đường ~25–28g/khẩu phần."
+    },
+    {
+      "url": "https://laodong.vn/gia-dinh-hon-nhan/cach-nau-che-san-co-truyen-deo-bui-thom-mui-gung-1782878.ldo",
+      "accessed": "2026-10-31",
+      "note": "Báo Lao Động — Cách nấu chè sắn cổ truyền dẻo bùi, thơm mùi gừng (Thùy Dương) — Đã mở đọc. Chè sắn (= khoai mì, tên miền Bắc đã ghi alias trong file) cho 4 người: sắn 500g cắt khúc, đường vàng 100g, bột năng 30g, gừng, 1 lít nước, cốt dừa tuỳ thích chan thêm. Quy về 1 khẩu phần: khoai 125g, đường 25g, bột năng 7,5g — phiên bản Bắc thiên gừng, ít cốt; làm họ thứ ba xác nhận khung khoai/đường/bột năng của biến thể cắt khúc."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/che-khoai-mi.webp",
@@ -112,7 +132,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt)",
+  "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-012 đợt vét] Nâng Mức 2: đối chiếu 3 họ độc lập đã mở đọc cho biến thể cắt khúc (Ăn Ngon 3 Miền 500g khoai/200ml cốt/100g đường; Beemart bản hấp cắt miếng 600g khoai/100g đường; Lao Động chè sắn 4 người 500g sắn/100g đường/30g bột năng). Quy về khẩu phần 280g, mọi dòng hiện tại nằm trong ±20% của ít nhất 2 họ nên giữ nguyên định lượng; viết lại recipe_steps 7 bước. Biến thể mài vo viên phổ biến trên mạng là món khác về thao tác, không áp cho file này.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "chien",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -130,11 +130,31 @@
     }
   ],
   "recipe_steps": [
-    "Xay/quết tôm với mỡ lợn, trứng và gia vị cho thật dai thành chạo.",
-    "Quết chạo quanh đoạn mía (xem ghi chú thiếu nguyên liệu), hấp sơ rồi chiên vàng.",
-    "Ăn kèm bánh tráng, rau sống, chấm nước mắm chua ngọt."
+    "Sơ chế tôm: bóc vỏ, bỏ đầu, rút chỉ lưng, chà nhẹ với muối rồi rửa sạch, dùng khăn thấm thật khô; ướp tôm với chút muối và để ngăn mát 20-30 phút cho tôm lạnh và săn, khi quết mới dai.",
+    "Sơ chế phụ liệu: mỡ lợn luộc chín, cắt hạt lựu nhỏ, ướp chút đường rồi sấy sơ trên lửa nhỏ cho mỡ trong và giòn; mía róc vỏ, cắt khúc 7-10cm và chẻ thành thanh vừa tay cầm.",
+    "Làm chạo: xay hoặc giã tôm thật nhuyễn, quết mạnh đến khi tôm dẻo quánh và dính; trộn mỡ hạt lựu, trứng, hành tím và tỏi băm, nêm nước mắm, đường và tiêu, quết đều rồi để ngăn mát khoảng 30 phút cho hỗn hợp săn lại.",
+    "Tạo hình: thoa ít dầu lên tay, lấy khoảng 40-45g nhân nắn quanh 2/3 thanh mía, nén chặt tay và vuốt cho lớp chạo dày đều khoảng 1cm, không để hở hay nứt vì sẽ bung khi nấu.",
+    "Hấp sơ: xếp chạo vào xửng nước đang sôi, hấp 7-10 phút đến khi mặt chạo se lại và giữ form; bước này giúp chạo không vỡ ở bước nướng/chiên sau.",
+    "Nướng hoặc chiên: nướng trên than hay lò 200-250°C khoảng 20-30 phút, lật đều và quét lớp dầu mỏng cho mặt chạo vàng đều, dậy mùi thơm (hoặc chiên ngập dầu đến vàng nâu); chạo đạt khi vỏ vàng, dai mà không khô, thơm mùi tôm quyện mùi mía.",
+    "Dọn ăn: xếp chạo ra đĩa cùng bánh tráng, xà lách, dưa leo và tía tô; pha nước mắm chua ngọt tỏi ớt để chấm, cuốn bánh tráng ăn nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.hoidaubepaau.com/chao-tom/",
+      "accessed": "2026-10-31",
+      "note": "Hội Đầu Bếp Á Âu — Cách làm chạo tôm dai ngon, hấp dẫn (Chef Dung) — Đã mở đọc. Mẻ: tôm 300g + thịt heo xay 100g + mỡ heo 50g + bột năng 100g + lòng trắng trứng, 5 thanh mía; hấp 7-10 phút rồi nướng (hoặc chiên). Quy về đĩa nhân 200g: tôm ~106g, thịt xay ~35g, mỡ ~18g."
+    },
+    {
+      "url": "http://giavihanhphuc.com/tom/chao-tom-ryan-pham-amp",
+      "accessed": "2026-10-31",
+      "note": "Gia Vị Hạnh Phúc — Chạo tôm (Chef Ryan Phạm) — Đã mở đọc. Mẻ: tôm sú 800g + mỡ heo 200g + giò sống 250g, nắn 40-45g nhân/cây mía, nướng than hoặc lò 185°C 15-17 phút. Quy về đĩa 200g nhân: tôm ~128g, mỡ ~32g, giò sống ~40g."
+    },
+    {
+      "url": "https://tailieu.duytan.edu.vn/tailieu/2009/20091215/cangghexaotoi/chao_tom_168.pdf?rand=398783",
+      "accessed": "2026-10-31",
+      "note": "Sách Món ăn miền Trung (thư viện ĐH Duy Tân) — Chạo tôm — Đã mở đọc. Bản tối giản: tôm thẻ 300g + 1 quả trứng + bột bắp 1 thìa cà phê, chia 8 khúc mía (~44g nhân/cây, khớp cỡ cây của Ryan Phạm); nướng hoặc chiên đều được — ủng hộ method chien của file như biến thể hợp lệ."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/chao-tom.webp",
@@ -145,7 +165,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. THIẾU NGUYÊN LIỆU: cây mía (phụ — que quết tôm) — cần bổ sung vào kho. [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 15 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%). Dòng mo-lon-nuoc GIỮ NGUYÊN: đó là mỡ trộn trong chạo (nguyên liệu ăn vào), không phải dầu chiên.]",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. THIẾU NGUYÊN LIỆU: cây mía (phụ — que quết tôm) — cần bổ sung vào kho. [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 15 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%). Dòng mo-lon-nuoc GIỮ NGUYÊN: đó là mỡ trộn trong chạo (nguyên liệu ăn vào), không phải dầu chiên.] [LV2-012 đợt vét] ĐẠT Mức 2: đã mở đọc 3 họ độc lập (Hội Đầu Bếp Á Âu/Chef Dung, Chef Ryan Phạm, sách Món ăn miền Trung) — cỡ nhân 40-45g/cây và lượng tôm/khẩu phần đối chiếu khớp file, giữ nguyên mọi định lượng. Mía vẫn là phụ không kê dòng (chỉ đếm cây ở nguồn, không có gram) như ghi chú cũ.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

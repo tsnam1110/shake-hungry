@@ -136,7 +136,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] GIỮ Mức 1 — THIEU-NGUON: đúng biến thể nộm khế tai heo chỉ có 1 họ (Cookpad Chinh Nguyễn) và họ này không định lượng gram/khẩu phần; các công thức khác đưa khế vào như phụ liệu của nộm sứa/hoa chuối tai heo. Nguyên liệu định danh qua-khe (USDA 171715, 31 kcal/100g) và tai-lon đều có số nên không phải trần nguyên liệu. Chờ thêm họ có định lượng hoặc sách dạy nấu ghi món này rồi nâng sau.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "song",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -82,7 +82,7 @@
     },
     {
       "ingredient_slug": "me-chin",
-      "quantity": 10,
+      "quantity": 18,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -135,14 +135,42 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "sa",
+      "quantity": 10,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Cá mai làm sạch, rút xương, phi lê mỏng; bóp với nước cốt chanh cho thịt cá tái chín, vắt ráo.",
-    "Trộn cá với hành tây thái mỏng, rau răm, húng quế và lạc rang.",
-    "Pha nước chấm từ me, chuối chín, nước mắm, đường và ớt; ăn cuốn bánh tráng với rau sống."
+    "Sơ chế cá mai: đánh vảy, cắt bỏ đầu và đuôi, mổ bụng lấy ruột rồi lật bụng rút xương sống; rửa nhanh qua nước muối loãng, xả lại nước lạnh và để ráo hoàn toàn — cá khô ráo, thân trong, không còn nhớt là đạt.",
+    "Tái chanh: vắt nước cốt chanh (loại bỏ hạt để không đắng), trộn nhẹ tay với cá khoảng 5–10 phút cho đến khi thịt cá chuyển trắng đục đều; sau đó ép/vắt ráo nước để thịt giòn, không bở.",
+    "Chuẩn bị rau củ: hành tây thái khoanh mỏng, ngâm nước đá khoảng 10 phút cho bớt hăng rồi vớt ra để ráo; sả thái lát mỏng; rau thơm (húng quế, rau răm) nhặt, rửa sạch, để ráo nước.",
+    "Pha hỗn hợp trộn: dầm me chín với ít nước ấm, lọc lấy nước cốt; trộn cốt me với tỏi ớt băm, một chút muối, đường và nước mắm, nếm lại cho chua – mặn – ngọt cân bằng.",
+    "Trộn gỏi: cho hỗn hợp trộn vào cá đã vắt ráo, trộn nhẹ tay 1–2 phút cho cá thấm đều mà không nát; cho vào ngăn mát 10–15 phút trước khi ăn để gỏi săn và mát.",
+    "Làm nước chấm: pha nước mắm, đường, nước cốt me (hoặc chanh) với tỏi ớt băm và đậu phộng rang giã nhuyễn, khuấy cho sánh; có thể đun trên lửa vừa đến khi sôi liu riu thì tắt bếp, để nguội — nước chấm sánh nhẹ, thơm bùi đậu phộng là đạt.",
+    "Trình bày: xếp cá ra đĩa, phủ hành tây và sả thái lát lên trên, rắc đậu phộng rang giã dập và ớt cắt lát; dọn kèm bánh tráng, rau sống, chuối chát và khế thái mỏng, chấm nước chấm đậu phộng – me."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.huongnghiepaau.com/goi-ca-mai",
+      "accessed": "2026-10-31",
+      "note": "Hướng Nghiệp Á Âu — Cách làm gỏi cá mai ngon không tanh — Đã mở đọc. Mẻ 300g cá mai: me chua 50g, chanh 5 quả (3 tái cá + 2 vào nước chấm), đậu phộng rang 2 bát (1,5 chén xay vào nước chấm + 0,5 bát rắc mặt), bánh tráng nướng 1 cái, rau xà lách/húng quế. Quy về khẩu phần 120g cá: me ~20g/khẩu phần."
+    },
+    {
+      "url": "https://yummyday.vn/goi-ca-mai-845",
+      "accessed": "2026-10-31",
+      "note": "YummyDay — Bí quyết làm gỏi cá mai thơm ngon đậm vị biển — Đã mở đọc. Mẻ 200g cá mai: hành tây 50g, me chín 30g (lấy cốt pha nước chấm), sả 5 nhánh, tỏi 6 tép, chanh 2 quả, dưa leo 2 trái ăn kèm, đậu phộng 1 muỗng canh giã vào nước chấm + rắc mặt. Quy về khẩu phần 120g cá: me ~18g, hành tây ~30g, sả ~15g/khẩu phần."
+    },
+    {
+      "url": "https://nauankhongkho.vn/blog/cach-lam-goi-ca-mai-quy-nhon-ngon-nhuc-nhoi-bBD0YJVq5Kob",
+      "accessed": "2026-10-31",
+      "note": "Nấu Ăn Không Khó (Túc Túc) — Cách làm gỏi cá mai Quy Nhơn — Đã mở đọc. Mẻ 150g cá mai: hành tây 1/4 củ (~15g), hành tím 1 củ, sả 2 nhánh, nước mắm 1 muỗng cà phê, nước chanh 1 muỗng cà phê; nước chấm riêng từ thịt xay 50g + bơ đậu phộng 50g (biến thể Quy Nhơn, không dùng me). Quy về khẩu phần: hành tây ~12g, sả ~8g/khẩu phần."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/goi-ca-mai.webp",
@@ -153,7 +181,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. THIẾU NGUYÊN LIỆU: cá mai (slug ca-mai — nguyên liệu chính của món) — cần bổ sung vào kho.",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. THIẾU NGUYÊN LIỆU: cá mai (slug ca-mai — nguyên liệu chính của món) — cần bổ sung vào kho. [LV2-012 đợt vét] Đạt Mức 2: 3 họ nguồn độc lập đã mở đọc (Hướng Nghiệp Á Âu — Phan Thiết; YummyDay — Phan Thiết, bộ số khác; Nấu Ăn Không Khó/Túc Túc — Quy Nhơn). Sửa me-chin 10→18g (2 họ đồng thuận ~18–20g/khẩu phần quy đổi theo 120g cá), thêm dòng sả 10g (2/3 họ có). Đã viết lại 7 bước công thức.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

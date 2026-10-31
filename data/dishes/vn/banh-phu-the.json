@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "hap",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "an-vat",
@@ -30,7 +30,7 @@
   "ingredients": [
     {
       "ingredient_slug": "bot-nang",
-      "quantity": 45,
+      "quantity": 22,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -38,14 +38,6 @@
     },
     {
       "ingredient_slug": "dau-xanh-hat",
-      "quantity": 25,
-      "unit_name": "g",
-      "is_optional": false,
-      "source": "llm_suggested",
-      "confidence": "low"
-    },
-    {
-      "ingredient_slug": "cui-dua-nao",
       "quantity": 10,
       "unit_name": "g",
       "is_optional": false,
@@ -53,8 +45,16 @@
       "confidence": "low"
     },
     {
+      "ingredient_slug": "cui-dua-nao",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
       "ingredient_slug": "duong-trang",
-      "quantity": 18,
+      "quantity": 14,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -70,11 +70,31 @@
     }
   ],
   "recipe_steps": [
-    "Nhào bột năng với nước đường.",
-    "Gói nhân đậu xanh, dừa nạo.",
-    "Hấp trong, rắc vừng."
+    "Ngâm và hấp đậu: vo sạch đậu xanh, ngâm nước ấm 2-3 giờ cho nở, hấp lửa vừa 20-30 phút đến khi hạt chín mềm, bở tơi; nghiền nhuyễn ngay khi đậu còn nóng để nhân mịn, không lợn cợn.",
+    "Sên nhân: cho đậu đã nghiền vào chảo chống dính cùng phần đường của nhân, dừa nạo sợi và chút dầu; sên lửa nhỏ 10-15 phút, đảo liên tục đến khi nhân quyện thành khối mềm dẻo, không dính chảo; chia nhân thành viên 15-20 g, vo tròn, đậy kín tránh khô mặt.",
+    "Pha bột vỏ: trộn bột năng với phần đường còn lại và chút muối, rót từ từ nước vào khuấy tan; nếu làm nhiều màu, chia bột và pha nước màu lá dứa/gấc/dành dành ở bước này.",
+    "Hồ hoá bột: cho hỗn hợp bột lên bếp lửa nhỏ, khuấy đều tay 5-8 phút đến khi bột đặc, quyện thành khối nửa chín nửa sống, kéo lên thấy dẻo và trong dần; tắt bếp, bọc kín cho bột không khô mặt.",
+    "Gói bánh: quét lớp dầu mỏng vào khuôn/cốc nhỏ, cho khoảng 20-25 g bột vỏ vào, đặt viên nhân vào giữa, phủ thêm 20-25 g bột kín nhân; hoặc ấn dẹt bột trên màng bọc, đặt nhân, vo kín rồi ép nhẹ thành hình vuông.",
+    "Hấp bánh: xếp bánh vào xửng nước đang sôi, hấp lửa vừa 15-20 phút; bánh chín khi lớp vỏ chuyển trong veo, nhìn rõ nhân vàng bên trong và mặt bánh không còn đục trắng.",
+    "Hoàn thiện: lấy bánh ra để nguội bớt, rắc vừng rang lên mặt, gói bằng màng bọc hoặc lá theo kiểu truyền thống; bánh đạt khi vỏ dai giòn nhẹ, trong, nhân đậu dừa bùi ngọt và không bị chảy nước."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.beemart.vn/cach-lam-banh-xu-xe-banh-phu-the-truyen-thong-thom-ngon-tai-nha",
+      "accessed": "2026-10-31",
+      "note": "Cách làm bánh xu xê (bánh phu thê) truyền thống - Beemart (Nguyễn Nguyệt Ánh) — Yield rõ: 20 bánh x 50 g; phần nhân đậu xanh cho 10 bánh: 80 g bột năng, 100 g nhân đậu xanh sên sẵn, 40 g đường vỏ, thêm 5 g vừng và 10 g dầu cho cả mẻ. Quy về 2 chiếc: bột năng 16 g, nhân sên 20 g (đậu khô ước ~9-10 g), đường vỏ 8 g."
+    },
+    {
+      "url": "https://digifood.vn/blog/cach-lam-banh-phu-the/",
+      "accessed": "2026-10-31",
+      "note": "Cách làm bánh phu thê thơm dẻo đủ màu sắc - Digifood — Hai công thức trong 1 bài: (1) 250 g bột năng, 100 g đậu xanh, 450 ml nước, mè 10 g, dừa nạo 1/2 quả; (2) 200 g bột năng, 50 g đậu xanh, 120 g đường, 400 ml nước. Tỉ lệ bột:đậu 2,5-4 (file đang 1,8); quy theo cỡ bánh ~55 g/cái: bột ~28 g, đậu ~11 g cho 2 chiếc."
+    },
+    {
+      "url": "https://daylambanh.edu.vn/banh-xu-xe",
+      "accessed": "2026-10-31",
+      "note": "Nghệ Nhân Tiết Lộ Cách Làm Bánh Xu Xê (Phu Thê) - Dạy Làm Bánh Á Âu (Baker Thanh Tuyền) — 500 g bột năng, 150 g đậu xanh cà vỏ, 200 g đường, 50 g dừa nạo; nhân chia viên ~10 g. Tỉ lệ bột:đậu:đường:dừa = 10:3:4:1 — dùng đối chiếu tỉ lệ (số tuyệt đối của nguồn không nhất quán với viên nhân 10 g nên không dùng trực tiếp)."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/banh-phu-the.webp",
@@ -89,7 +109,7 @@
     "source": "wikidata",
     "queried_at": "2026-08-31"
   },
-  "import_note": "Nhập tự động từ Wikidata Q564560 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/Breakfast%20at%20Trung%20K%C3%ADnh%20H%E1%BA%A1%20Village%2003-03-2026.%20Phu%20Th%C3%AA%20Cakes.jpg Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Nhập tự động từ Wikidata Q564560 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/Breakfast%20at%20Trung%20K%C3%ADnh%20H%E1%BA%A1%20Village%2003-03-2026.%20Phu%20Th%C3%AA%20Cakes.jpg Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] Nâng Mức 2: đối chiếu 3 họ độc lập (Beemart — yield rõ 20 bánh x 50 g; Digifood 2 công thức; Dạy Làm Bánh Á Âu). Phân xử: tổng khô của file (100 g) gần bằng serving 110 g là không thực tế vì vỏ bột năng ngậm nhiều nước; đề xuất bot-nang 45→22 g, dau-xanh-hat 25→10 g, cui-dua-nao 10→5 g, duong-trang 18→14 g (llm_suggested, low). vung-rang 2 g giữ nguyên (trong khoảng các nguồn). Bột ngô chỉ xuất hiện ở 1 họ sao chép lẫn nhau (Bibi/Hướng Nghiệp Á Âu) nên không thêm.",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

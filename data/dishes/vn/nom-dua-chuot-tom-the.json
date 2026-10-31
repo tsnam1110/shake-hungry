@@ -136,7 +136,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] GIỮ Mức 1 — BIEN-THE: họ biên tập chuẩn duy nhất có định lượng (Điện Máy XANH, nhiều trang sao chép cùng bộ số = 1 họ) là gỏi dưa leo tôm-thịt với thịt heo 75g + cà rốt ~38g mỗi người; file là biến thể chỉ tôm thẻ, không thịt/cà rốt, chỉ được 1 họ Cookpad cá nhân (Dory, tôm 100g + dưa ~150g/người) ủng hộ. Nguyên liệu định danh tom-the và dua-leo đều có số. Cần quyết định: đổi định danh món thành gỏi dưa leo tôm thịt hay giữ biến thể tôm thẻ và chờ thêm họ.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

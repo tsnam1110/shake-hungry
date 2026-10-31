@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "song",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "chieu",
@@ -50,7 +50,7 @@
     },
     {
       "ingredient_slug": "cui-dua-nao",
-      "quantity": 10,
+      "quantity": 4,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -58,7 +58,7 @@
     },
     {
       "ingredient_slug": "duong-trang",
-      "quantity": 12,
+      "quantity": 17,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -71,14 +71,58 @@
       "is_optional": true,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nuoc-cot-dua",
+      "quantity": 20,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "gao-nep",
+      "quantity": 7,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dau-an",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Ngâm cốm cho mềm dẻo (phần cốm đang thiếu trong kho).",
-    "Đồ đậu xanh chín, giã nhuyễn, xào với đường và dừa nạo làm nhân.",
-    "Gói nhân vào lớp vỏ cốm, ép thành bánh vuông, gói lá."
+    "Ngâm đậu xanh đã đãi vỏ 3-4 giờ, nấu hoặc hấp khoảng 20 phút đến khi hạt mềm tơi nhưng không nát; xay hoặc giã nhuyễn lúc còn ấm.",
+    "Tráng dừa sợi qua nước sôi, để ráo; sên đậu với đường và một phần nước cốt dừa trên lửa nhỏ, đảo liên tục khoảng 10-15 phút đến khi nhân khô dẻo, vo viên được không dính tay; chia nhân thành viên khoảng 25g.",
+    "Rửa cốm nhanh cho sạch bụi, ngâm với nước lá dứa khoảng 1 giờ cho hạt nở mềm; nấu cùng gạo nếp đã ngâm đến khi hỗn hợp sánh lại.",
+    "Cho phần nước cốt dừa còn lại, đường và dầu ăn vào cốm, sên trên lửa vừa và đảo liên tục đến khi vỏ cốm đặc, dẻo mịn, kéo sợi nhẹ và không còn chảy nước.",
+    "Để vỏ cốm nguội bớt đến khi sờ ấm tay; cân khoảng 50g vỏ, ấn dẹt trên giấy gói đã thoa dầu, đặt viên nhân vào giữa và bọc kín.",
+    "Gói bánh trong giấy bóng kính hoặc lá, gấp bốn mép thành hình vuông, ấn nhẹ cho bánh dàn đều các góc với độ dày đồng nhất.",
+    "Để bánh nghỉ khoảng 4 giờ cho vỏ ôm chặt nhân và hương vị hòa quyện rồi mới dùng; bánh đạt là vỏ xanh dẻo mềm, nhân vàng bùi, không bị chảy đường."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.bluestone.com.vn/blogs/vao-bep/cach-lam-banh-com-dau-xanh",
+      "accessed": "2026-10-31",
+      "note": "Cách làm bánh cốm đậu xanh dẻo ngọt truyền thống tại nhà — BlueStone (nguồn video Sukie's Kitchen) — Cho từng bánh rõ ràng: vỏ 50g + nhân viên 25g ≈ khẩu phần 80g của file. Mẻ: cốm khô 260g, đậu 80g, đường 120g (40 nhân + 80 vỏ), dừa non sợi 20g, nước cốt dừa 210g, dầu ăn 40g → mỗi bánh ≈ cốm 43g, đậu khô ~13g, đường ~20g, dừa ~3g, cốt dừa ~35g."
+    },
+    {
+      "url": "https://honglam.vn/cach-lam-banh-com-nhan-dau-xanh-thom-deo-chuan-vi-ha-noi?srsltid=AfmBOop_SA5SFBGcSbiJRWQWUtwxKeCFmbK7ASUrSewASRNJqKgIDsTr",
+      "accessed": "2026-10-31",
+      "note": "Cách làm bánh cốm nhân đậu xanh thơm dẻo chuẩn vị Hà Nội — Hồng Lam — Mẻ: cốm dẹp khô 200g, gạo nếp 50g nấu cùng cốm, đậu xanh 200g, đường 160g (80 sên nhân + 80 nấu vỏ), nước cốt dừa 80g, lá dứa 100g. Tỉ lệ đậu/cốm 1:1 — cao nhất trong 3 họ; không ghi số bánh thành phẩm nên chỉ dùng đối chiếu tỉ lệ và sự hiện diện của gạo nếp + cốt dừa."
+    },
+    {
+      "url": "https://bibihealthybread.vn/?p=8078",
+      "accessed": "2026-10-31",
+      "note": "Làm Bánh Cốm Nhân đậu Xanh — Bibi Healthy Bread (DLBAAu) — Mẻ: cốm khô 500g, đậu cà vỏ 200g, đường 150g (50 nhân + 100 vỏ), bột gạo nếp 100g trộn vỏ, dừa sợi 20g, lá dứa 1 bó. Ước lượng ~10 bánh 80g: mỗi bánh ≈ cốm 50g, đậu 20g, đường 15g, dừa 2g, bột nếp 10g."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/banh-com.webp",
@@ -89,7 +133,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu).",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu). [LV2-012 đợt vét] Nâng Mức 2: đối chiếu 3 họ độc lập (BlueStone/Sukie's Kitchen, Hồng Lam, Bibi-DLBAAu). Đề xuất sửa cui-dua-nao 10→4 (cả hai họ có số đều chỉ 2-3g/bánh), duong-trang 12→17 (3 họ ở khoảng 15-20g/bánh); thêm nuoc-cot-dua 20, gao-nep 7, dau-an 5 — đều có ở ≥2 họ mà file đang thiếu. Giữ com-xanh 50 và dau-xanh-hat 25 vì tỉ lệ đậu/cốm giữa các họ dao động 0,3-1,0 và số file nằm trong khoảng đó.",
   "status": "draft",
   "source": "llm_suggested",
   "confidence": "unknown",

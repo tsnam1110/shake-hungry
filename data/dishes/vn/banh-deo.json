@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "song",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "an-vat",
@@ -30,7 +30,7 @@
   "ingredients": [
     {
       "ingredient_slug": "bot-nep",
-      "quantity": 40,
+      "quantity": 25,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -38,7 +38,7 @@
     },
     {
       "ingredient_slug": "duong-trang",
-      "quantity": 25,
+      "quantity": 33,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -53,16 +53,8 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "cui-dua-nao",
-      "quantity": 5,
-      "unit_name": "g",
-      "is_optional": false,
-      "source": "llm_suggested",
-      "confidence": "low"
-    },
-    {
       "ingredient_slug": "dau-an",
-      "quantity": 1,
+      "quantity": 6,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -70,11 +62,31 @@
     }
   ],
   "recipe_steps": [
-    "Đồ chín đậu xanh, sên với đường và dừa nạo làm nhân.",
-    "Khuấy nước đường nguội vào bột bánh dẻo (bột nếp chín) đến khi dẻo mịn.",
-    "Chia bột, bọc nhân, ép khuôn trung thu, để vài giờ cho bánh trong và dẻo."
+    "Ngâm đậu xanh đã đãi vỏ 3-4 giờ cho nở, vo sạch, để ráo; đậu mềm đều là đạt.",
+    "Nấu đậu với nước ngập mặt ở lửa nhỏ khoảng 20 phút đến khi hạt bở tơi, rồi xay nhuyễn lúc còn nóng và lọc qua rây cho nhân thật mịn.",
+    "Sên nhân trên chảo chống dính lửa vừa rồi hạ nhỏ, cho dầu ăn làm 2-3 đợt, đảo liên tục 30-40 phút; nhân đạt khi quyện thành khối, vo viên đứng form, không dính tay và không dính chảo.",
+    "Nấu nước đường tỉ lệ đường:nước 1:1, sôi thì thêm vài giọt nước cốt chanh, đun thêm khoảng 1 phút rồi tắt bếp, để nguội hoàn toàn; siro trong, không còn cặn đường là đạt.",
+    "Rây bột nếp chín (bột bánh dẻo) vào âu, rót từ từ nước đường nguội cùng nước hoa bưởi và chút dầu, khuấy đều, để bột nghỉ 10 phút rồi nhồi miết ngắn tay đến khi khối bột dẻo mịn, không vón cục; nhồi lâu bột sẽ chai.",
+    "Chia vỏ và nhân theo tỉ lệ khoảng 2 phần vỏ : 1 phần nhân, cán dẹt miếng vỏ (mép mỏng hơn giữa), đặt viên nhân vào, túm kín và vo tròn sao cho không hở nhân.",
+    "Áo một lớp bột khô thật mỏng, đặt bánh vào khuôn, nén chặt 15-18 giây rồi đẩy bánh ra; để bánh nghỉ 1-2 ngày ở nhiệt độ phòng cho vỏ chuyển trong và dẻo đều rồi mới dùng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://vietnamnet.vn/cach-lam-banh-trung-thu-deo-nhan-dau-xanh-truyen-thong-don-gian-2446716.html",
+      "accessed": "2026-10-31",
+      "note": "Cách làm bánh Trung thu dẻo nhân đậu xanh truyền thống đơn giản - VietnamNet — Vỏ: 250g bột nếp chín + 450ml nước đường + 15ml dầu; nhân: 100g đậu xanh + 60g đường + 45g dầu + 10g bột nếp, chia 6 phần; bài ghi tỉ lệ vỏ:nhân 2:1. Quy về cái 100g (nhân ~33g, vỏ ~67g): bột nếp ~21g, đường ~34g (đường trong siro vỏ + nhân), đậu khô ~15g, dầu ~7g."
+    },
+    {
+      "url": "https://www.btaskee.com/kinh-nghiem-hay/cach-lam-banh-trung-thu-deo-thom-ngon/",
+      "accessed": "2026-10-31",
+      "note": "Cách làm bánh Trung thu dẻo tại nhà (nhân đậu xanh truyền thống) - bTaskee — Khuôn 150g, nhân chiếm 35-40%, chia nhân 60g/cái; vỏ: 500g bột bánh dẻo + nước đường nấu từ 500g đường/500ml nước; nhân: 200g đậu + 120g đường + 2 thìa dầu dừa + 5g bột. Quy về 100g: bột nếp ~22g, đường ~32g, đậu khô ~17g, dầu ~3g. Cùng trang có nhân sữa dừa riêng (biến thể khác, có dừa) - không dùng cho file nhân đậu xanh."
+    },
+    {
+      "url": "https://vinid.net/blog/cach-lam-banh-deo-nhan-dau-xanh/",
+      "accessed": "2026-10-31",
+      "note": "Cách làm bánh dẻo nhân đậu xanh thơm ngon chuẩn vị - VinID — Bảng tỉ lệ khuôn: nhân:vỏ = 3:2 ở mọi cỡ (150g: nhân 90g/vỏ 60g); vỏ: 300g bột + siro từ 100g đường; nhân: 100g đậu + 150g đường (bước làm) + 40-50ml dầu + 30g bột bánh dẻo (bước sên). Quy về 100g theo tỉ lệ của bài: bột nếp ~29g, đường ~35g, đậu khô ~18g, dầu ~8g."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/banh-deo.webp",
@@ -85,7 +97,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-004 đợt 2 (lô bánh dân gian) mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp DISH-004 đợt 2 (lô bánh dân gian) mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] Đạt Mức 2: 3 họ độc lập (VietnamNet, bTaskee, VinID) đã mở đọc, quy định lượng về 1 cái 100g theo tỉ lệ vỏ/nhân từng nguồn. Sửa: bot-nep 40->25, duong-trang 25->33, dau-an 1->6; bỏ cui-dua-nao (0/3 họ ủng hộ trong nhân đậu xanh; dừa thuộc biến thể nhân sữa dừa). dau-xanh-hat 20g giữ nguyên (3 họ cho ~15-18g, lệch <30%). Dòng sửa giữ source=llm_suggested, confidence=low.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

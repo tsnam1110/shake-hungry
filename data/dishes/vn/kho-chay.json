@@ -121,7 +121,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] GIỮ Mức 1 — BIEN-THE: 'kho chay thập cẩm' là tên gọi chung, không có định danh công thức cố định; các nguồn có định lượng dùng tổ hợp nguyên liệu khác hẳn nhau và khác file. Cần chủ dự án chốt một biến thể chuẩn (ví dụ khổ qua + đậu phụ + nấm rơm + cà rốt như file) thì mới biên soạn Mức 2 theo biến thể đó được. Kiểm cứng thuần chay: đạt (không nước mắm/trứng/sữa); đường trắng đúng quy ước, không dùng đường thốt nốt.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

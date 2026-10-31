@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": false,
   "cooking_method": "hap",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "an-vat",
@@ -38,7 +38,7 @@
     },
     {
       "ingredient_slug": "duong-trang",
-      "quantity": 20,
+      "quantity": 30,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -70,11 +70,31 @@
     }
   ],
   "recipe_steps": [
-    "Ngâm gạo nếp, xay thành bột nước; nấu đường với gừng thành nước đường đậm.",
-    "Trộn bột với nước đường, khuấy đều, đổ vào khuôn lót lá, rắc vừng.",
-    "Hấp cách thủy nhiều giờ đến khi bánh đặc, thơm mùi gừng; để nguội cắt miếng."
+    "Bào vụn đường bát (hoặc đường nâu); gừng gọt vỏ, giã nhuyễn, vắt lấy nước cốt để nước đường trong và thơm mà không lợn cợn bã.",
+    "Đun đường với nước và nước cốt gừng trên lửa vừa đến khi đường tan hết và sôi nhẹ; tắt bếp, để nguội bớt đến còn ấm khoảng 50-60 độ C, lọc bỏ cặn.",
+    "Rót từ từ nước đường ấm vào bột nếp, vừa rót vừa khuấy và nhồi 8-10 phút đến khi hỗn hợp sánh mịn, nhấc lên chảy thành dòng đặc, không còn lợn cợn bột khô.",
+    "Xếp 2-3 lớp lá chuối vào khuôn hoặc rọ tre, ghim cố định, quết một lớp dầu mỏng chống dính; đổ bột vào, chừa cách miệng khuôn khoảng 1cm.",
+    "Hấp bánh trên lửa vừa với hơi đều: khoảng 2 giờ cho ổ vừa theo truyền thống (ổ nhỏ 40-60 phút); hạn chế mở nắp, khi cần thì lau nước đọng trên nắp để mặt bánh không bị nhão.",
+    "Kiểm tra chín bằng cách xiên đũa vào giữa bánh — rút ra khô, không trào bột ướt là đạt; rắc mè rang lên mặt ngay khi bánh còn nóng để mè bám chặt.",
+    "Để bánh nguội hoàn toàn và nghỉ ít nhất 1 ngày cho bánh dẻo chắc lại; cắt lát ăn trực tiếp hoặc chiên/nướng lại, lát bánh đạt khi có màu nâu vàng, thơm gừng, dẻo dai."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.huongnghiepaau.com/banh-to",
+      "accessed": "2026-10-31",
+      "note": "Cách Làm Bánh Tổ Truyền Thống Đơn Giản, Thơm Ngon Tại Nhà — Hướng Nghiệp Á Âu — Bản Quảng Nam: bột nếp 500g, đường bát 330g, gừng 100g, mè 50g — tỉ lệ đường/bột 0,66, mè/bột 0,10. Quy theo neo bột 50g/khẩu phần (1 miếng 100g) của file: đường 33g, mè 5g. Hấp 2 giờ lửa vừa. Các trang Tip Hay/Nấu Chuẩn Ăn Ngon đăng cùng bộ số này nên tính chung 1 họ."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/527349",
+      "accessed": "2026-10-31",
+      "note": "Cách Làm Món Bánh Tổ Quảng Nam của Hoàng Thị Tố Hà — Cookpad — Bột nếp 250g, đường bát 150g, nước 300ml, mè 20g, gừng 1 củ lớn — tỉ lệ đường/bột 0,60, mè/bột 0,08. Quy theo neo bột 50g: đường 30g, mè 4g. Hấp 40 phút cho khuôn nhỏ, rắc mè ngay khi bánh còn nóng."
+    },
+    {
+      "url": "https://fptshop.com.vn/tin-tuc/dien-may/cach-lam-banh-to-186592",
+      "accessed": "2026-10-31",
+      "note": "Mách bạn cách làm bánh tổ truyền thống của người Quảng — FPT Shop — Cho 2 người: bột nếp 270g, đường nâu 150g, mè trắng 30g, gừng 1 củ — tỉ lệ đường/bột 0,56, mè/bột 0,11. Quy theo neo bột 50g: đường ~28g, mè ~5,5g. Hấp 30-45 phút cho ổ nhỏ, quết dầu vào khuôn lá chuối."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/banh-to.webp",
@@ -85,7 +105,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-004 đợt 2 (lô bánh dân gian) mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp DISH-004 đợt 2 (lô bánh dân gian) mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] Nâng Mức 2: đối chiếu 3 họ độc lập đã mở (Hướng Nghiệp Á Âu — các bản sao Tip Hay/Nấu Chuẩn dùng chung bộ số tính 1 họ; Cookpad Hoàng Thị Tố Hà; FPT Shop). Sửa duong-trang 20→30g vì tỉ lệ đường/bột của file (0,40) thấp hơn dải đồng thuận 0,56-0,66 trên 30%. Giữ gao-nep (các nguồn truyền thống cũng bắt đầu từ gạo nếp xay/giã thành bột nước như steps của file) và giữ các dòng gừng/vừng/dầu trong dải tham khảo. Viết lại recipe_steps 7 bước.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

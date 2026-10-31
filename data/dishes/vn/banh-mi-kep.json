@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "song",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -50,7 +50,7 @@
     },
     {
       "ingredient_slug": "gio-lua",
-      "quantity": 30,
+      "quantity": 40,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -66,7 +66,7 @@
     },
     {
       "ingredient_slug": "xot-mayonnaise",
-      "quantity": 10,
+      "quantity": 15,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -119,15 +119,41 @@
       "is_optional": true,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nuoc-tuong",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Nướng sơ ổ bánh mì cho vỏ giòn.",
-    "Phết bơ, mayonnaise và pate đều hai mặt bánh.",
-    "Xếp chả lụa, thịt nguội, dưa leo, đồ chua cà rốt + củ cải.",
-    "Rắc rau mùi, thêm tương ớt nếu thích, kẹp lại và dùng ngay."
+    "Làm đồ chua trước ít nhất 30 phút: cà rốt và củ cải trắng thái sợi, bóp nhẹ với chút muối rồi ngâm giấm đường pha loãng; khi sợi rau mềm, hơi trong và nếm có vị chua ngọt cân bằng thì vớt ra vắt ráo.",
+    "Thái chả lụa và thịt nguội thành lát mỏng khoảng 3–4 mm; dưa leo thái lát xéo mỏng, rau mùi nhặt rửa để ráo, ớt thái lát nếu dùng.",
+    "Xẻ dọc ổ bánh mì (không cắt đứt hẳn), nướng lại ở 170–180°C khoảng 3–4 phút đến khi vỏ nóng giòn, tay bóp nhẹ nghe tiếng lách tách và ruột bánh ấm mềm.",
+    "Khi bánh còn nóng, phết đều mayonnaise lên một mặt trong, phết pate lên mặt còn lại thành lớp phủ kín; rưới vài giọt nước tương/Maggi lên lớp pate.",
+    "Xếp lần lượt chả lụa, thịt nguội, dưa leo, rồi nhồi đồ chua đã vắt ráo và rau mùi lên trên; thêm tương ớt hoặc ớt lát tùy khẩu vị cay.",
+    "Ép nhẹ ổ bánh cho nhân dàn đều, cắt đôi nếu thích và dùng ngay trong lúc vỏ còn giòn, nhân còn mát — để lâu vỏ sẽ ỉu và đồ chua làm ướt ruột bánh."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.saveur.com/classic-sausage-and-pate-banh-mi-sandwiches-recipe/?dom=rss-default&src=syn",
+      "accessed": "2026-10-31",
+      "note": "Banh Mi Recipe (Vietnamese Sausage and Pâté Sandwiches) — Saveur — Đã mở đọc, số lắp ráp cho 1 ổ: bơ 2 muỗng canh (~28 g), pate 2 muỗng canh (~30 g), Maggi 1/2 muỗng cà phê, chả lụa 10 lát = 2 oz (~57 g), đồ chua 1/4 cup, dưa leo 6 lát, rau mùi 1/4 cup. Quy thẳng về 1 khẩu phần (serving của file = 1 ổ)."
+    },
+    {
+      "url": "https://howtofeedaloon.com/banh-mi/",
+      "accessed": "2026-10-31",
+      "note": "Banh Mi Sandwich — HowToFeedALoon — Đã mở đọc, công thức 4 ổ: pate 4,5 oz (→ ~32 g/ổ), mayonnaise 1/4 cup (→ ~15 g/ổ), chả lụa 12 lát dày 1/4 inch (→ 3 lát/ổ, ~40–45 g), salami 12 lát (→ 3 lát/ổ), Maggi 4 muỗng cà phê (→ 1 muỗng cà phê/ổ), đồ chua từ 1/2 cup cà rốt + 1/2 cup củ cải cho 4 ổ."
+    },
+    {
+      "url": "https://saigonesebaguette.vn/banh-mi-pate-cha-lua/",
+      "accessed": "2026-10-31",
+      "note": "Bánh Mì Pâté Chả Lụa: Hương Vị Chuẩn Sài Gòn Tại Gia — Saigonese Baguette — Đã mở đọc, số lắp ráp cho 1 ổ: pate ~1,5 muỗng canh (~22 g), mayonnaise ~1,5 muỗng canh (~22 g), Maggi ~1/2 muỗng cà phê; nhân chả lụa + thịt nguội + dưa leo + đồ chua cà rốt/củ cải + rau ngò + ớt — đúng biến thể của file."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/banh-mi-kep.webp",
@@ -138,7 +164,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt).",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [LV2-012 đợt vét] Nâng Mức 2: 3 họ độc lập (Saveur, HowToFeedALoon, Saigonese Baguette) cùng biến thể pate + chả lụa + thịt nguội; định lượng đối chiếu ≥2 họ cho pate/mayo/chả/Maggi. Sửa mayonnaise 10→15 g, giò lụa 30→40 g; thêm nước tương (Maggi) 3 g tùy chọn. Các dòng còn lại của file nằm trong dải các nguồn nên giữ nguyên.",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "chien-ngap-dau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -34,7 +34,7 @@
   "ingredients": [
     {
       "ingredient_slug": "bot-mi",
-      "quantity": 55,
+      "quantity": 30,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -42,7 +42,7 @@
     },
     {
       "ingredient_slug": "thit-lon-xay",
-      "quantity": 30,
+      "quantity": 20,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -58,7 +58,7 @@
     },
     {
       "ingredient_slug": "sua-tuoi",
-      "quantity": 8,
+      "quantity": 18,
       "unit_name": "g",
       "is_optional": true,
       "source": "llm_suggested",
@@ -87,14 +87,42 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "men-no",
+      "quantity": 0.5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Nhào bột mì với men và sữa tươi, ủ nở; nhân: thịt xay trộn mộc nhĩ, hành tím, gia vị, kèm trứng cút luộc.",
-    "Chia bột, cán mỏng, gói nhân thành bánh bao nhỏ.",
-    "Chiên ngập dầu lửa vừa đến khi bánh phồng, vàng đều; ăn nóng."
+    "Kích hoạt và trộn bột: khuấy đường với sữa tươi hơi ấm (khoảng 35–40°C, ấm tay nhưng không nóng) cùng men nở, để 5 phút cho men nổi như gạch cua; trộn bột mì với chút muối, đổ hỗn hợp sữa men vào nhào 8–10 phút đến khi khối bột mịn, dẻo, không dính tay.",
+    "Ủ bột lần một: cho bột vào tô thoa mỏng dầu, bọc kín, ủ nơi ấm 60–90 phút đến khi bột nở gấp đôi; ấn ngón tay vào thấy vết lõm giữ nguyên, không đàn hồi lại ngay là đạt.",
+    "Sơ chế nhân: trứng cút luộc 6–8 phút, bóc vỏ; mộc nhĩ khô ngâm nước 15–20 phút cho nở, rửa sạch, thái sợi nhuyễn; hành tím băm nhỏ.",
+    "Xào nhân cho ráo: phi thơm hành tím với ít dầu (chỉ cho bước phụ này), cho thịt xay vào xào lửa vừa 4–5 phút đến khi thịt săn, tơi và ráo nước; cho mộc nhĩ vào đảo thêm 1–2 phút, nêm hạt nêm, tiêu, chút đường rồi tắt bếp, để nguội hẳn — nhân còn ướt sẽ làm bung vỏ khi chiên.",
+    "Tạo hình: nhào sơ lại bột 1–2 phút cho hết bọt khí, chia phần bột cho 1 chiếc, cán mỏng với mép ngoài mỏng hơn giữa; đặt nhân đã nguội và 1 quả trứng cút vào giữa, túm kín các mép bột, vo tròn, để bánh nghỉ thêm 10 phút cho se mặt.",
+    "Chiên ngập dầu: đun dầu lửa vừa đến khi sủi tăm nhẹ quanh đũa gỗ (khoảng 160–170°C), thả bánh vào chiên và lật đều tay liên tục 4–6 phút đến khi bánh phồng, vàng giòn đều các mặt; lửa lớn sẽ cháy vỏ mà nhân chưa nóng, lửa nhỏ bánh hút dầu và xẹp.",
+    "Vớt bánh ra giấy thấm dầu, để ráo 1–2 phút cho vỏ giữ độ giòn; ăn nóng ngay khi vỏ còn giòn rụm và nhân bốc hơi thơm mùi tiêu."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.bluestone.com.vn/blogs/vao-bep/banh-bao-chien-gion",
+      "accessed": "2026-10-31",
+      "note": "Hướng dẫn làm bánh bao chiên giòn nở bung hấp dẫn tại nhà — BlueStone (nguồn video Cô Ba Bình Dương) — Lô 16 chiếc mini: bột mì 250g, sữa 150g, đường 40g, men 3g, bột nở 2g, thịt xay 150g, củ sắn 100g, mộc nhĩ khô 10g, bún tàu 50g, trứng cút 16 quả (1 quả/chiếc). Tổng nguyên liệu ~935g → ~58g/chiếc; quy về chiếc 110g (×1,9): bột ~30g, thịt ~18g, sữa ~17g, đường ~4,8g, trứng cút 1 quả ~12g."
+    },
+    {
+      "url": "https://vietnamnet.vn/cach-lam-banh-bao-chien-gion-ngon-don-gian-tai-nha-2176348.html",
+      "accessed": "2026-10-31",
+      "note": "Cách làm bánh bao chiên giòn ngon, đơn giản tại nhà — VietNamNet (ảnh/nguồn Điện Máy XANH) — Lô 8 chiếc: bột mì 130g, sữa 80ml, đường 20g, men 1,5g, bột nở 1g, thịt xay 50g + giò sống 50g, cà rốt 30g, bắp cải 30g, mộc nhĩ 20g, trứng gà 2 quả cắt tư (1/4 quả/chiếc). Tổng ~525g → ~66g/chiếc; quy về 110g (×1,67): bột ~27g, thịt+giò ~21g, sữa ~17g, đường ~4,2g."
+    },
+    {
+      "url": "https://pasgo.vn/blog/mach-ban-cach-lam-banh-bao-chien-nong-hoi--thom-ngon-3462",
+      "accessed": "2026-10-31",
+      "note": "Mách bạn cách làm bánh bao chiên nóng hổi, thơm ngon — PasGo (Vương Hoài tổng hợp, nhà hàng Sài Gòn Xưa Và Nay) — Bột mì 300g, men 10g, đường+muối 30g, nước/sữa 100ml, thịt lợn xay 250g, trứng cút 5–6 quả, miến + nấm + hành lá; ghi rõ bánh chiên làm nhỏ bằng nửa bánh bao thường, 1 trứng cút/chiếc. Không nêu tổng số chiếc nên chỉ dùng đối chiếu tỉ lệ và cấu trúc (men bắt buộc, trứng cút nguyên quả), không dùng số tuyệt đối."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/banh-bao-chien.webp",
@@ -105,7 +133,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt) [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 8 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).]",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt) [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 8 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).] [LV2-012 đợt vét] Đạt Mức 2: 3 họ độc lập đã mở đọc (BlueStone/Cô Ba Bình Dương, VietNamNet–ĐMX, PasGo) cho đúng bánh bao chiên nhân thịt–trứng cút. Quy về chiếc 110g của file (hai lô mini 58–66g/chiếc được nhân hệ số theo tổng khối lượng lô): bột mì 55→30, thịt xay 30→20, sữa 8→18 (2 họ đồng thuận, lệch >30%); thêm men-no 0,5g (3/3 họ có men, file thiếu hẳn). Đường 4g, trứng cút 12g (1 quả/chiếc), mộc nhĩ 4g, hành tím 5g nằm trong dải các họ nên giữ. Không kê dau-an cho bước chiên chính theo quy ước QA-002/CALC-004 (dầu hấp thụ do engine mô hình hoá); dầu phi/xào nhân phụ không tách dòng riêng trong đợt này.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

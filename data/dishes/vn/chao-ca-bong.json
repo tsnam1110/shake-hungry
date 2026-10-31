@@ -117,7 +117,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 đợt 2 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 đợt 2 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] GIỮ Mức 1 — KHONG-CO-CT: xét độc lập với canh-ca-bong đã xoá theo chỉ đạo đợt; tra cứu mở rộng chỉ thấy (1) cháo trắng + cá bống kho tiêu ăn kèm (Cookpad, đã mở), (2) cháo ăn dặm cá bống gỡ thịt trên các trang SEO vô danh (đã mở 1 trang, không đạt chuẩn), (3) cháo cá bống mú là loài khác. Không có ≥3 họ biên tập cho biến thể cháo cá bống người lớn nấu nguyên con như file. Cần chủ dự án xác nhận món/biến thể có thật trước khi biên soạn tiếp.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

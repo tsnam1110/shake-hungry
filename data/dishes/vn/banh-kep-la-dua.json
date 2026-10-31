@@ -93,7 +93,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-004 đợt 2 (lô bánh dân gian) mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp DISH-004 đợt 2 (lô bánh dân gian) mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] Giữ Mức 1: nguồn định lượng chia 2 biến thể — waffle dày bột năng chủ đạo (3 họ độc lập đã mở: SugarYums, BunBoBae, Hungry Huy) và kẹp mỏng giòn kiểu Việt (chỉ 1 họ sao chép, trang mở kiểm chứng gặp 429). File chỉ dùng bột mì, thiếu bột năng/bột gạo của cả hai biến thể, cần chủ dự án chốt biến thể (kẹp mỏng đường phố VN hay waffle dày) trước khi biên soạn lại.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -130,7 +130,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [Đính chính 2026-10-31 — Phương án A/QA-002: dau-an 10 g → 3 g. Chỉ giữ phần dầu cho bước phụ có thật trong công thức (xào nhân tôm + thịt xay trước khi gói) — mức 3 g/khẩu phần là định lượng chế biến cho bước phi/xào nhanh, phần dầu này ăn vào cùng nhân/sốt. Dầu chiên chính không kê nữa: đã được engine mô hình hoá theo CALC-004.]",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [Đính chính 2026-10-31 — Phương án A/QA-002: dau-an 10 g → 3 g. Chỉ giữ phần dầu cho bước phụ có thật trong công thức (xào nhân tôm + thịt xay trước khi gói) — mức 3 g/khẩu phần là định lượng chế biến cho bước phi/xào nhanh, phần dầu này ăn vào cùng nhân/sốt. Dầu chiên chính không kê nữa: đã được engine mô hình hoá theo CALC-004.] [LV2-012 đợt vét] Giữ Mức 1 (BIEN-THE): đã mở đọc MIA.vn (bản Phan Thiết gốc: luộc, vỏ bột năng, nhân tôm thịt rim) và Dạy Làm Bánh Á Âu (bản chiên: vỏ bột mì, nhân thịt + nấm mèo, không tôm). File hiện tại (chiên + bột gạo/năng + tôm thịt) không khớp trọn vẹn họ biên tập nào; các trang khớp cả ba thuộc tính chỉ là aggregator SEO vô danh, không đạt chuẩn nguồn. Cần chủ dự án chốt: (a) chuẩn hoá về bản Phan Thiết luộc — đổi cooking_method, bỏ dau-an, vỏ chỉ bột năng; hoặc (b) giữ bản chiên — đổi vỏ sang bột mì và xem lại nhân tôm.",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

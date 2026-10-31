@@ -89,7 +89,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt) [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 10 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).]",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt) [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 10 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).] [LV2-012 đợt vét] Giữ Mức 1 - 429: mới mở được 1 họ (Điện Máy XANH) thì lần mở họ thứ hai (Eva) trả lỗi 429; dừng theo quy tắc đợt. Họ đã mở cho thấy file thiếu lớp bột chiên giòn áo ngoài và tỉ lệ bột năng lệch lớn, nhưng chưa đủ >=2 họ để sửa - để lại cho đợt làm lại.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

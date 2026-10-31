@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "chien",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "chieu",
@@ -46,7 +46,7 @@
     },
     {
       "ingredient_slug": "bot-nang",
-      "quantity": 15,
+      "quantity": 10,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -78,7 +78,15 @@
     },
     {
       "ingredient_slug": "duong-trang",
-      "quantity": 3,
+      "quantity": 8,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "du-du-xanh",
+      "quantity": 40,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -86,12 +94,31 @@
     }
   ],
   "recipe_steps": [
-    "Pha bột gạo và bột năng với nước, hấp chín thành bánh, để nguội rồi cắt miếng vừa ăn.",
-    "Chiên miếng bột trong chảo dầu đến khi vàng giòn hai mặt.",
-    "Đập trứng gà vào, rưới đều, chiên thêm cho trứng chín, rắc hành lá.",
-    "Pha nước tương với đường, dọn kèm đu đủ bào ngâm chua."
+    "Trộn bột: khuấy tan 90g bột gạo và 10g bột năng với chút muối trong nước lạnh, rót tiếp nước sôi vào khuấy đều tay cho bột mịn, không vón; để bột nghỉ 15–30 phút cho nở đều.",
+    "Hồ bột: bắc nồi bột lên bếp lửa nhỏ, khuấy liên tục 5–8 phút đến khi bột sệt lại, nhấc phới thấy nặng tay và bột chuyển hơi trong thì tắt bếp, khuấy thêm cho dẻo mịn.",
+    "Hấp và làm nguội: thoa lớp dầu mỏng chống dính vào khuôn, đổ bột vào nén chặt mặt, hấp 30 phút; lấy tăm xiên thử không dính bột trắng là chín. Để nguội hẳn rồi bọc kín, cho tủ lạnh ít nhất 4 giờ (tốt nhất qua đêm) cho khối bột săn, cắt không nát.",
+    "Cắt bột và pha chấm: cắt khối bột thành miếng vuông vừa ăn dày khoảng 1–1,5cm, áo nhẹ chút nước tương cho lên màu khi chiên. Pha nước chấm từ nước tương, đường, giấm hoặc chanh và ớt tỏi băm; đu đủ xanh bào sợi ngâm chua ngọt, vắt ráo để sẵn.",
+    "Chiên bột (không kê dầu của bước chiên chính vào công thức — phần dầu hấp thụ do engine tính): làm nóng chảo, chiên miếng bột lửa vừa khoảng 5 phút cho vàng giòn một mặt, lật chiên mặt còn lại 3 phút đến khi rìa giòn, trong còn dẻo.",
+    "Tráng trứng: đập 1 quả trứng lên phần bột đang chiên, tráng đều mặt, chiên thêm 2–3 phút cho trứng chín hẳn và bám vào bột, rắc hành lá cắt nhỏ lên trên rồi tắt bếp.",
+    "Dọn đĩa: gắp bột chiên ra đĩa, xếp đu đủ xanh ngâm chua lên trên, chan hoặc chấm kèm nước tương chua ngọt; ăn ngay khi vỏ còn giòn và trứng còn nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/2-cach-lam-bot-chien-gion-ngon-hap-dan-cuc-de-lam-tai-nha--01541?srsltid=AfmBOoopF7y8H7X0GqV1tdYI9CafUCvj_4u1dULDjOYDiUOEVOTCePRs",
+      "accessed": "2026-10-31",
+      "note": "3 cách làm bột chiên bằng bột gạo, bột nếp, bột năng giòn ngon hấp dẫn — Điện Máy XANH (biên tập Ngọc Xuân) — Đã mở: chỉ lấy biến thể 3 (bột gạo + bột năng) đúng định danh file, cho 2 người: bột gạo 200g → 100g/khẩu phần, bột năng 20g → 10g, trứng 2 quả → 1 quả (~50g), hành lá 3 nhánh; nước chấm 2 muỗng canh nước tương + 2 muỗng canh đường cho 2 người. Hai biến thể còn lại (gạo xay, bột nếp) là họ công thức khác, không dùng. Mọi biến thể đều dọn kèm đu đủ xanh bào."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/15808621",
+      "accessed": "2026-10-31",
+      "note": "Cách Làm Món Bột Chiên của Rose Truong — Cookpad — Đã mở: tác giả ghi rõ bộ bột cho 4 phần ăn: bột gạo 200g → 50g/phần, bột năng 20g → 5g/phần, cộng cơm nguội 100g → 25g/phần và khoai môn 30g → 7,5g/phần (tổng tinh bột ~82,5g/phần, sát file 105g ở mức chấp nhận được khi cộng cả bột năng); đu đủ xanh ngâm chua 300g/4 phần; nước chấm xì dầu 30ml/4 phần (~7,5g/phần), đường 30g/4 phần (7,5g/phần). Trứng 2–3 quả/phần theo tác giả là ngoại lệ khẩu vị, không áp."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/15403676",
+      "accessed": "2026-10-31",
+      "note": "Cách Làm Món Bột Chiên Sài Gòn của Khanh Linh — Cookpad — Đã mở: batch 250g bột gạo + 20g bột năng + 360ml nước + 1 quả trứng, không ghi số phần; khối bột hấp thành phẩm ~630g ≈ 2 đĩa theo serving 300g của file → quy về ~125g bột gạo, ~10g bột năng, ~0,5 quả trứng/đĩa. Nước chấm 2 muỗng canh xì dầu/đĩa; ăn kèm cà rốt/đu đủ xanh ngâm chua. Bộ số 250/20/360ml này bị nhiều trang SEO sao chép nguyên văn — chỉ tính 1 họ (họ của tác giả này)."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/bot-chien.webp",
@@ -102,7 +129,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt) THIẾU NGUYÊN LIỆU: đu đủ xanh bào ngâm chua (phụ) — cần bổ sung vào kho [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 12 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).]",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt) THIẾU NGUYÊN LIỆU: đu đủ xanh bào ngâm chua (phụ) — cần bổ sung vào kho [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 12 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).] [LV2-012 đợt vét] Nâng Mức 2: 3 họ độc lập đã mở kiểm chứng (Điện Máy XANH biến thể bột gạo+bột năng, Cookpad Rose Truong, Cookpad Khanh Linh). Sửa bot-nang 15→10g và duong-trang 3→8g theo đồng thuận ≥2 họ; thêm du-du-xanh 40g (ăn kèm có ở cả 3 họ, vốn đã ghi thiếu trong import_note). Giữ bot-gao 90g và trung-ga 50g vì nằm trong dải đồng thuận. Dòng dau-an tiếp tục không kê cho bước chiên chính theo Phương án A/QA-002.",
   "status": "draft",
   "source": "llm_suggested",
   "confidence": "unknown",

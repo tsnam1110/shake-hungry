@@ -105,7 +105,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món thuộc quota sáng tự nấu nhưng dùng mi-trung-kho nên nhãn diet suy là chay-trung-sua — món này KHÔNG thuộc quota chay, không ảnh hưởng cổng diet của nhóm chay.",
+  "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món thuộc quota sáng tự nấu nhưng dùng mi-trung-kho nên nhãn diet suy là chay-trung-sua — món này KHÔNG thuộc quota chay, không ảnh hưởng cổng diet của nhóm chay. [LV2-012 đợt vét] GIỮ Mức 1 — 429: lượt mở đọc nguồn bị chặn 429, dừng ngay theo quy tắc. Ghi nhận sơ bộ: nguồn mì trộn phổ biến đều là mì ăn liền nhiều topping hoặc mì hoành thánh khô (BIEN-THE so với file mì trứng khô + trứng luộc + sốt nước tương); cần tra lại nguồn đúng biến thể ở đợt sau. Lưu ý §14: mì trứng khô chuẩn 70g/khẩu phần, file đang để 60g — điểm cần đối chiếu khi có đủ họ. Nguyên liệu định danh mi-trung-kho có số (384 kcal/100g), không bị trần.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

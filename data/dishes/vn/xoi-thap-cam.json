@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "hap",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -95,14 +95,50 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "tom-kho",
+      "quantity": 15,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nam-huong-kho",
+      "quantity": 10,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Gạo nếp ngâm qua đêm, trộn chút muối, đồ chín dẻo; lạp xưởng chiên hoặc hấp chín, thái lát; trứng cút luộc bóc vỏ; giò lụa thái sợi.",
-    "Xới xôi ra đĩa, xếp lạp xưởng, giò lụa, trứng cút và pate lên trên.",
-    "Rắc hành phi, rưới chút nước tương khi ăn."
+    "Vo nếp sạch, ngâm ít nhất 4-6 giờ hoặc qua đêm cho hạt nở; vớt ra để ráo, xóc đều với muối. Tôm khô ngâm nước ấm 20 phút cho mềm, nấm hương khô ngâm nở rồi thái nhỏ.",
+    "Đồ xôi lần 1: cho nếp vào xửng dàn đều, chọc lỗ thông hơi, đồ lửa vừa 25-30 phút đến khi hạt nếp chín khoảng 80%, trong dần; xới ra mẹt tãi mỏng cho thoát hơi 5 phút để xôi không bết.",
+    "Trong lúc đồ, luộc trứng cút 10 phút, bóc vỏ cắt đôi; lạp xưởng chiên sơ lửa nhỏ khoảng 10 phút cho chín và xém mặt (không kê thêm dầu của bước chiên vào định lượng), thái lát mỏng; giò lụa thái sợi hoặc miếng nhỏ.",
+    "Xào nhân: phi thơm hành tỏi, cho tôm khô và nấm hương vào xào nhanh tay, nêm nước tương cho thấm, đảo đến khi nhân săn và ráo — nhân đạt khi khô tơi, không ra nước làm nhão xôi.",
+    "Làm xốt pate: đun pate gan với chút nước tương và nước lọc trên lửa nhỏ, khuấy đều đến khi xốt sánh mịn, nêm lại vừa miệng rồi tắt bếp.",
+    "Đồ xôi lần 2: cho xôi trở lại xửng, rưới chút nước hoặc mỡ hành, đồ tiếp 10 phút đến khi hạt căng bóng, dẻo đều; tắt bếp và giữ ấm trong xửng.",
+    "Xới xôi ra đĩa, xếp lạp xưởng, giò lụa, trứng cút và nhân tôm nấm lên mặt, chan xốt pate, rắc hành phi và rưới chút nước tương khi ăn; dùng nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-nau-xoi-man-thap-cam-don-gian-cho-bua-sang-tai-nha-cuc-13425?itm_source=vaobep&itm_medium=banner&itm_content=bai-tin",
+      "accessed": "2026-10-31",
+      "note": "Xôi mặn thập cẩm — Điện Máy XANH — 3-4 người: nếp 500g, tôm khô 100g (xay làm ruốc tôm), chả lụa 200g, lạp xưởng 2 cây, trứng cút 10 quả, hành phi 50g, chà bông 50g. Quy về 1 phần (÷3,5): nếp ~143g, tôm khô ~29g, chả lụa ~57g, lạp xưởng ~29g, trứng cút ~29g, hành phi ~14g, chà bông ~14g. Bài trên dayhocnghe.edu.vn sao chép nguyên văn bài này nên chỉ tính 1 họ."
+    },
+    {
+      "url": "https://www.cet.edu.vn/cach-lam-xoi-man-thap-cam",
+      "accessed": "2026-10-31",
+      "note": "Xôi mặn thập cẩm bằng nồi cơm điện — CET, Chef Lập — Mẻ nếp 500g (không ghi số phần): tôm khô 30g, lạp xưởng 2 cây, thịt nạc 50g, nấm đông cô 20g, đậu phộng 50g, củ cải muối; nước xốt riêng gồm pate gan 100g + nước tương 2 thìa. Quy về phần ăn ~125g nếp: tôm khô ~7,5g, nấm ~5g, pate ~25g. Xác nhận pate + nước tương thuộc món (dạng xốt) như file."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/10006901",
+      "accessed": "2026-10-31",
+      "note": "Xôi… Thập Cẩm — Hoàng Kim Thu (Cookpad) — 4 người, trường phái trộn nhân vào xôi: nếp 500g, lạp xưởng 2 cây, tôm khô 50-70g, nấm hương 50g, nêm nước tương. Quy về 1 phần: nếp 125g, tôm khô 12,5-17,5g, nấm hương 12,5g, lạp xưởng ~25g."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/xoi-thap-cam.webp",
@@ -113,7 +149,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt)",
+  "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-012 đợt vét] Nâng Mức 2: đã mở đọc 3 họ độc lập (Điện Máy XANH, CET/Chef Lập, Cookpad/Hoàng Kim Thu; bài dayhocnghe sao chép ĐMX nên loại khỏi đếm họ). Thêm tom-kho 15g (3/3 họ đều có, file thiếu hẳn) và nam-huong-kho 10g optional (2/3 họ). Giữ nguyên các dòng sẵn có: lạp xưởng 30g khớp cả 3 họ (~25-29g), pate 15g và nước tương 5g được họ CET xác nhận ở dạng xốt. Các dòng chỉ 1 họ định lượng (giò lụa, trứng cút, hành phi, chà bông) giữ nguyên theo quy tắc ≥2 họ — chi tiết ở anomalies.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

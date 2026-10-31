@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "hap",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -155,14 +155,42 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "gia-do",
+      "quantity": 20,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Pha bột gạo với bột năng, tráng bánh ướt mỏng, cắt miếng vừa ăn.",
-    "Luộc thịt gà xé phay; mề và gan gà làm sạch, luộc/xào chín thái miếng; trộn gỏi với hành tây và rau thơm.",
-    "Xếp bánh ướt ra đĩa, cho gỏi gà và lòng gà lên trên, rắc hành phi; ăn kèm nước mắm chua ngọt."
+    "Rây bột gạo và bột năng vào tô, thêm chút muối và khoảng 700ml nước, khuấy tan hoàn toàn rồi để bột nghỉ ít nhất 30 phút (tốt nhất 2 giờ); gạn bỏ lớp nước trong bên trên, bù lại lượng nước mới tương đương và thêm 2 muỗng canh dầu ăn, khuấy đều — bột đạt khi loãng đều, không vón cục.",
+    "Rửa đùi gà và lòng gà với muối và giấm 3-5 phút, xả sạch; đun nồi nước với gừng đập dập và muối, cho đùi gà vào luộc trước, nước sôi 5 phút thì cho mề, gan và trứng non vào luộc thêm khoảng 15 phút đến khi thịt gà chín trắng, lòng vừa chín giòn không dai.",
+    "Vớt gà và lòng ra ngâm nước lạnh vài phút cho thịt trắng và giữ độ giòn, để ráo; xé nhỏ thịt đùi gà, thái mề và gan thành miếng vừa ăn, giữ trứng non nguyên hoặc cắt đôi.",
+    "Hành tây thái lát mỏng, trộn với đường và giấm rồi ướp lạnh 15-20 phút cho giòn và bớt hăng, vớt ra để ráo; rau răm và húng quế nhặt rửa sạch, cắt nhỏ; giá đỗ trụng nhanh qua nước sôi rồi để ráo.",
+    "Tráng bánh ướt bằng chảo chống dính hoặc nồi hơi: phết lớp dầu thật mỏng, múc một vá bột láng đều, đậy nắp hấp lửa vừa 1-2 phút đến khi bánh trong và đặc lại thì cuộn lấy ra; làm lần lượt đến hết bột rồi cắt bánh thành khúc vừa ăn.",
+    "Cho thịt gà xé, lòng gà, trứng non và hành tây vào tô lớn, nêm đường, nước cốt chanh, ít nước mắm và tiêu, trộn đều tay cho thấm; cuối cùng cho rau răm, húng quế vào trộn nhẹ — gỏi đạt khi chua ngọt mặn hài hoà và hành tây còn giòn.",
+    "Pha nước mắm chua ngọt: đun nhẹ 200ml nước với đường và nước mắm cho tan, để nguội rồi thêm cốt chanh, tỏi và ớt băm; xếp bánh ướt ra đĩa, cho gỏi gà lòng gà và giá trụng lên trên, rắc hành phi, chan nước mắm khi ăn."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://dienmaycholon.com/mon-ngon/cach-lam-banh-uot-long-ga",
+      "accessed": "2026-10-31",
+      "note": "Cách làm bánh ướt lòng gà chuẩn Đà Lạt - Điện Máy Chợ Lớn — Đã mở đọc (bản sao nguyên bộ số của công thức Điện Máy XANH; các bản Bibi/Kinhdofood sao cùng bộ số — tính 1 họ). Cả mẻ: bột gạo 200g + bột năng 70g + 700ml nước; đùi gà 200g; lòng gà (mề, tim, gan, trứng non) 300g; hành tây 100g; hành phi 50g; nước chấm 50g nước mắm + 100g đường + 200ml nước. Quy mẻ ~4 đĩa: bột gạo 50, bột năng ~18, thịt gà 50, lòng+trứng 75, hành tây 25, hành phi 12,5 mỗi đĩa."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/14295294",
+      "accessed": "2026-10-31",
+      "note": "Cách Làm Món Bánh Ướt Lòng Gà của Kim Dung - Cookpad — Đã mở đọc. 5 người: 2 đùi gà, 2 bộ lòng gà, 1 bộ trứng non, bột bánh cuốn pha sẵn 200g + 500ml nước; nước mắm trộn gỏi 3 muỗng canh nước mắm + 1 muỗng canh đường + 3 muỗng canh cốt chanh; nước mắm chua ngọt 50ml nước mắm + 30g đường; ăn kèm giá trụng, dưa leo, xà lách. Quy 1 phần: bột pha sẵn ~40g, thịt gà ~50g (phần thịt), lòng ~50g, trứng non ~20g."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/17028619",
+      "accessed": "2026-10-31",
+      "note": "Cách Làm Món Bánh Ướt Lòng Gà của Annie Vo - Cookpad — Đã mở đọc. 4 người: bánh ướt sẵn 1kg (250g/người), 1 con gà luộc xé/chặt, 1 bộ lòng gà, 1 bộ trứng non, hành tây 4 củ, giá 100g (25g/người), dưa leo 2 trái, rau răm, hành phi, nước mắm tỏi ớt. Khớp cấu trúc gỏi của file và lượng bánh ướt thành phẩm ~225-250g/đĩa suy ra từ bột của họ ĐMX."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/banh-uot-long-ga.webp",
@@ -173,7 +201,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. THIẾU NGUYÊN LIỆU: trứng gà non (slug trung-ga-non — thành phần đặc trưng ăn kèm, ghi là tuỳ chọn) — cần bổ sung vào kho.",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. THIẾU NGUYÊN LIỆU: trứng gà non (slug trung-ga-non — thành phần đặc trưng ăn kèm, ghi là tuỳ chọn) — cần bổ sung vào kho. [LV2-012 đợt vét] Nâng Mức 2: đối chiếu 3 họ đã mở (Điện Máy Chợ Lớn/ĐMX, Cookpad Kim Dung, Cookpad Annie Vo) — biến thể gỏi gà xé + lòng gà Đà Lạt. Mọi định lượng chính của file nằm trong dải các họ khi quy về đĩa 300g (bột gạo 60 so với 50 của họ ĐMX; thịt gà 60 so với ~50; mề 30 + gan 25 so với lòng gộp 37-75; trứng non 20 khớp cả 2 họ Cookpad) nên giữ nguyên; thêm dòng gia-do 20g tuỳ chọn (cả 3 họ đều có giá trụng). Viết lại recipe_steps 7 bước.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

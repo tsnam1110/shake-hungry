@@ -129,7 +129,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt DISH-004 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt DISH-004 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] Giữ Mức 1 — thiếu nguồn cho biến thể: đã tra nhiều vòng ('bún tôm càng', 'bún tôm càng xanh'), kết quả chỉ trả về bún tôm Hải Phòng (tôm nhỏ), bún tôm Huế và 1 ghi chép món nhà dùng tôm càng xanh không định lượng (Ngôi Sao). Chưa đủ 3 họ độc lập cho đúng hồ sơ của file (tôm càng nguyên con + thịt ba chỉ luộc + giá, nước dùng trong). Cần nguồn công thức biên tập riêng cho bún tôm càng, hoặc chủ dự án quyết định đây là biến thể biên tập DISH-004 và chấp nhận định danh lại theo bún tôm (tôm nhỏ).",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

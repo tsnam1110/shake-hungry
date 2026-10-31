@@ -73,7 +73,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nhóm mắm/nước chấm: meal weight để THẤP (2) ngay từ khi tạo theo quyết định xử lý M-4 của pha tầm soát — Lắc không gợi ý mắm như món chính của bữa. Định lượng công thức ghi theo 100 g cá đầu vào; serving là 1 chén mắm thành phẩm ~50 g.",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nhóm mắm/nước chấm: meal weight để THẤP (2) ngay từ khi tạo theo quyết định xử lý M-4 của pha tầm soát — Lắc không gợi ý mắm như món chính của bữa. Định lượng công thức ghi theo 100 g cá đầu vào; serving là 1 chén mắm thành phẩm ~50 g. [LV2-012 đợt vét] GIỮ Mức 1 - reason 429 khi mở nguồn + KHONG-CO-CT: đã tra, mắm cá rò chỉ có quy trình ủ sản xuất theo mẻ (tỉ lệ cá:muối 6:1, 1 họ nội dung sao chép qua các trang du lịch/Kỷ lục) và 1 trang SEO cho bộ số mâu thuẫn; không có ≥3 họ công thức biên tập định lượng theo khẩu phần cho đúng định danh. Cần nghiên cứu lại khi hết chặn 429.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

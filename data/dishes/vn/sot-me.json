@@ -18,7 +18,7 @@
   "is_eat_out": false,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -34,7 +34,7 @@
   "ingredients": [
     {
       "ingredient_slug": "me-chin",
-      "quantity": 12,
+      "quantity": 10,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -42,7 +42,7 @@
     },
     {
       "ingredient_slug": "duong-trang",
-      "quantity": 8,
+      "quantity": 16,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -50,7 +50,7 @@
     },
     {
       "ingredient_slug": "nuoc-mam-truyen-thong",
-      "quantity": 5,
+      "quantity": 2,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -82,10 +82,30 @@
     }
   ],
   "recipe_steps": [
-    "Me chín ngâm nước nóng, dầm và lọc lấy nước cốt, bỏ hạt và xơ.",
-    "Phi tỏi với chút dầu, cho nước me, đường và nước mắm vào nấu sôi nhẹ đến khi sốt sánh, nêm lại chua ngọt mặn hài hoà."
+    "Cho 10g me chín vào chén, thêm khoảng 40ml nước nóng, ngâm 10 phút cho me mềm rồi dầm kỹ, lọc qua rây bỏ hạt và xơ, giữ nước cốt sánh.",
+    "Băm nhuyễn 1g tỏi và 0,5g ớt tươi; bắc chảo nhỏ lên bếp lửa vừa, cho 2g dầu ăn vào phi tỏi ớt khoảng 30 giây đến khi vàng nhẹ và dậy mùi, chưa để cháy.",
+    "Đổ nước cốt me vào chảo tỏi phi, thêm 16g đường và 2g nước mắm, khuấy đều cho đường tan hoàn toàn.",
+    "Hạ lửa nhỏ, nấu liu riu 5-7 phút, khuấy liên tục để sốt không bén đáy; sốt đạt khi sánh lại, kéo vá thấy chảy chậm và mặt sốt bóng.",
+    "Nếm lại: vị chua của me đi trước, ngọt theo sau và mặn nhẹ cuối; nếu quá chua thêm chút đường, quá ngọt thêm vài giọt nước cốt me, tránh thêm nước mắm làm sốt gắt mặn.",
+    "Tắt bếp, để nguội khoảng 10 phút cho sốt đặc thêm, rót ra chén 30g dùng ngay hoặc đậy kín bảo quản ngăn mát 1-2 tuần; khi dùng lại khuấy đều vì sốt có thể tách lớp nhẹ."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://digifood.vn/blog/cach-lam-sot-chua-ngot",
+      "accessed": "2026-10-31",
+      "note": "Cách làm sốt chua ngọt từ me — Digifood — Me vắt 200g, đường 300g (gấp 1,5 lần me), nước mắm 2 muỗng canh (~30g), nước ấm 400ml, ớt 2 quả, muối 1 muỗng cà phê, tương cà/tương ớt; nấu lửa vừa đến sôi rồi liu riu 5-7 phút. Quy về 30g sốt cô đặc: me ~10g, đường ~15g, nước mắm ~1,5g."
+    },
+    {
+      "url": "https://bokhocomai.com/nhung-cong-thuc-tu-tay-lam-nuoc-sot-than-thanh-an-kem-ai-cung-phai-biet-phan-1/",
+      "accessed": "2026-10-31",
+      "note": "Sốt me chua ngọt — Bò Kho Cô Mai (công thức nước sốt thần thánh, phần 1) — Me chín 500g, đường trắng 1.000g (gấp 2 lần me), nước mắm 50ml, ớt xay 20g, tương cà 30g, nước lọc 500ml; đun đến khi kẹo lại, quấy nặng tay. Quy về 30g: me ~9-10g, đường ~19g, nước mắm ~1g."
+    },
+    {
+      "url": "https://saigonesebaguette.vn/cach-lam-banh-trang-cuon-sot-me/",
+      "accessed": "2026-10-31",
+      "note": "Sốt me chấm bánh tráng cuốn — Saigonese Baguette — Biến thể không nước mắm: me vắt 50g dầm 150g nước sôi lấy 100g cốt, đường 50g (bằng me), tương ớt 1 muỗng canh, phi hành tỏi bằng ~2 muỗng canh dầu, nấu 5-7 phút cho sánh. Khẳng định thêm: đường tối thiểu bằng me và sốt phải có bước phi tỏi bằng dầu như file."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/sot-me.webp",
@@ -96,7 +116,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt)",
+  "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-012 đợt vét] Nâng Mức 2: đối chiếu 3 họ độc lập (Digifood, Bò Kho Cô Mai, Saigonese Baguette); sửa me 12→10g, đường 8→16g, nước mắm 5→2g theo đồng thuận tỉ lệ đường gấp 1,5-2 lần me và nước mắm rất ít khi quy về chén 30g; giữ tỏi/ớt/dầu vì có họ ủng hộ và lượng khớp dải nguồn; viết lại 6 bước.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

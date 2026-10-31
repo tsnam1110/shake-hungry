@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "hap",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -83,14 +83,50 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "la-cam",
+      "quantity": 2,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "qua-gac",
+      "quantity": 10,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Ngâm nếp thành nhiều phần với nước lá dứa (xanh), nghệ (vàng) và các nước màu lá quả tự nhiên khác.",
-    "Đồ riêng từng phần xôi cho chín (xem ghi chú thiếu nguyên liệu tạo màu).",
-    "Xếp các màu xôi cạnh nhau thành đĩa ngũ sắc, ăn kèm vừng đường."
+    "Làm nước màu: lá cẩm rửa sạch, đun với nước 15 phút lửa vừa cho ra màu tím rồi lọc bỏ lá; lá dứa xay nhuyễn với ít nước, lọc lấy cốt xanh; nghệ giã/xay lọc lấy nước vàng; thịt gấc bóp với chút rượu trắng cho tan màu đỏ, bỏ hạt đen.",
+    "Vo nếp sạch, chia đều thành 5 phần: ngâm 3 phần trong nước lá cẩm, nước lá dứa và nước nghệ; 1 phần ngâm nước lọc làm màu trắng; phần còn lại để ráo rồi trộn đều với thịt gấc. Ngâm 6-8 giờ hoặc qua đêm cho nếp ngấm màu và nở đều.",
+    "Vớt từng phần nếp ra để thật ráo, xóc mỗi phần với chút muối và ít nước cốt dừa pha đường; phần trộn gấc trộn nhẹ tay cho màu bám đều hạt mà không nát.",
+    "Đun sôi nước trong xửng lớn, xếp 5 phần nếp vào xửng, ngăn cách bằng lá chuối hoặc giấy nến để màu không lem nhau; đậy nắp đồ lửa vừa 25-30 phút, thỉnh thoảng mở nắp xả hơi nước đọng.",
+    "Khi hạt nếp trong và mềm, rưới đều phần nước cốt dừa còn lại lên các phần xôi, xới nhẹ từng phần riêng và đồ tiếp 5 phút — xôi đạt khi hạt căng bóng, dẻo, màu tươi và không lẫn màu.",
+    "Tắt bếp, để xôi nguội bớt 5 phút rồi gỡ từng màu ra đĩa hoặc ép khuôn thành tầng/khoanh 5 màu rõ rệt; rắc vừng rang (hoặc muối vừng) khi dùng.",
+    "Dùng trong ngày; hâm lại bằng xửng hấp 5-7 phút, tránh hâm lâu làm màu lá tự nhiên xỉn."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://giadinh.suckhoedoisong.vn/cach-nau-xoi-ngu-sac-don-gian-dam-da-sac-vi-cho-nam-moi-172170111084143949.htm",
+      "accessed": "2026-10-31",
+      "note": "Cách nấu xôi ngũ sắc đơn giản đậm đà sắc vị — Gia đình & Sức Khỏe Đời Sống (nguồn Giadinhvietnam) — Mẻ 2kg nếp: lá cẩm đỏ + lá cẩm tím mỗi loại 200g, lá nếp 500g, nghệ tươi/bột nghệ, gấc là phương án màu đỏ thay lá cẩm đỏ, cốt dừa + 1 thìa đường + 1/2 thìa cà phê muối cho mỗi phần nếp. Bài cùng bộ số đăng lại ở congthucnauan.vn được tính là cùng 1 họ."
+    },
+    {
+      "url": "https://danviet.vn/mach-ban-cach-nau-xoi-ngu-sac-cung-tet-de-nam-moi-them-may-man-20230108085752199-d1068243.html",
+      "accessed": "2026-10-31",
+      "note": "Cách nấu xôi ngũ sắc cúng Tết — Dân Việt, tác giả Loan Trần — Mẻ 1kg nếp cái hoa vàng chia 5 phần: xanh = ép lá dứa, vàng = bột nghệ, hồng = thanh long (có thể thay lá cẩm), đỏ = thịt gấc trộn chút rượu, trắng = rưới 2-3 thìa cốt dừa. Hấp 30-45 phút; đường + dầu ăn trộn sau hấp cho bóng. Không định lượng chi tiết từng màu."
+    },
+    {
+      "url": "https://vietgiaitri.com/3-cach-nau-xoi-ngu-sac-len-mau-dep-mat-hat-xoi-thom-deo-an-la-ghien-20220528i6466568/",
+      "accessed": "2026-10-31",
+      "note": "3 cách nấu xôi ngũ sắc — Yeutre.vn đăng trên VietGiaTri — Cách tự nhiên, mẻ 1kg nếp: lá dứa 200g, lá cẩm 200g, gấc 1/2 quả, nghệ tươi 100g, cốt dừa ~10 thìa canh + 2 thìa canh mỗi phần, đường 5 thìa canh. Quy về khẩu phần 150g nếp: cốt dừa ~22-30g, đường ~9g, thịt gấc ~11-15g cho toàn mẻ (~1/5 phần đỏ). Cách bột tạo màu trong cùng bài: cốt dừa 100ml/1kg."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/xoi-ngu-sac.webp",
@@ -101,7 +137,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. THIẾU NGUYÊN LIỆU: lá cẩm (phụ — tạo màu tím) — cần bổ sung vào kho. THIẾU NGUYÊN LIỆU: quả dành dành (phụ — tạo màu vàng/đỏ) — cần bổ sung vào kho.",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. THIẾU NGUYÊN LIỆU: lá cẩm (phụ — tạo màu tím) — cần bổ sung vào kho. THIẾU NGUYÊN LIỆU: quả dành dành (phụ — tạo màu vàng/đỏ) — cần bổ sung vào kho. [LV2-012 đợt vét] Nâng Mức 2: đã mở đọc 3 họ độc lập (SKĐS/Giadinhvietnam, Dân Việt/Loan Trần, Yeutre). Bổ sung 2 dòng tạo màu còn thiếu mà 3/3 họ đều có: la-cam 2g (phụ null, vào missing) và qua-gac 10g. Giữ nguyên các định lượng hiện có: cốt dừa 30g khớp Yeutre (~22-30g/khẩu phần), đường 10g khớp Yeutre ~9g, bột nghệ 2g hợp lý vì chỉ nhuộm 1/5 phần nếp. Ghi chú cũ về quả dành dành được đính chính ở anomalies. Một lần mở Tripi gặp 429, không dùng nguồn đó.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -136,7 +136,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] GIỮ Mức 1 — TRAN-NL: đã mở đọc 3 họ độc lập (Điện Máy XANH bản sườn, Tây Bắc TV, BlueStone) và định lượng file nằm trong vùng các họ (sườn 180 g nằm giữa 125–250 g/người của các họ; mật ong/nước mắm/dầu/sả/hành/tỏi khớp họ Tây Bắc TV–BlueStone), nhưng nguyên liệu định danh mac-khen chưa có số dinh dưỡng ở bất kỳ bảng tham chiếu nào (mac-khen.json để null có hồ sơ) nên món chưa tính được calo đầy đủ; chờ hàng đợi nghiên cứu nguyên liệu cho mắc khén.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -137,7 +137,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] Giữ Mức 1 — KHONG-CO-CT: không có công thức gỏi cá trôi định lượng nào; chỉ có phóng sự Dân Việt về 'cá gỏi' người Thái dùng chung 3 loài cá (chép/trắm/trôi) với nước măng chua và hoa chuối, không số liệu. Hồ sơ file (thính + chanh + nước mắm chua ngọt) là khuôn sao chép từ goi-ca-me/goi-ca-tram, không có nguồn riêng xác nhận.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

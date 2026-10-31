@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "chien-ngap-dau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "an-vat",
@@ -54,11 +54,31 @@
     }
   ],
   "recipe_steps": [
-    "Gọt khoai tây, cắt thanh dài, ngâm nước muối loãng rồi thấm khô.",
-    "Chiên lần một cho khoai chín mềm, vớt ra để nguội.",
-    "Chiên lần hai lửa lớn đến khi vàng giòn, rắc muối, chấm tương ớt."
+    "Gọt vỏ khoai tây, cắt thành que đều nhau khoảng 1×1 cm, dài 6–7 cm; que đều cỡ giúp khoai chín và vàng cùng lúc.",
+    "Ngâm khoai trong nước muối loãng 15–30 phút cho ra bớt tinh bột thừa, rửa lại đến khi nước trong để khoai không bị thâm và đỡ dính.",
+    "Chần nhanh khoai 2–3 phút trong nước sôi có chút muối rồi vớt ra ngâm nước lạnh, hoặc bỏ qua bước chần nếu thấm khô kỹ; để ráo và thấm thật khô bằng khăn sạch vì khoai ướt sẽ bắn dầu và kém giòn.",
+    "Chiên lần một trong dầu ngập ở 150–160°C khoảng 4–6 phút, khoai chín mềm, màu vàng nhạt và chưa giòn; vớt ra để trên rổ cho ráo, để nguội 15–20 phút (có thể cấp đông 20 phút để giòn lâu hơn).",
+    "Chiên lần hai ở 175–180°C khoảng 2–4 phút, đảo nhẹ tay; bánh đạt khi que khoai vàng rụm, vỏ cứng và bọt dầu quanh khoai giảm hẳn.",
+    "Vớt khoai ra rổ lưới cho ráo dầu, rắc muối ngay khi còn nóng và xóc đều; không để lâu trên giấy thấm vì hơi nước làm khoai mềm lại.",
+    "Dọn ăn nóng kèm tương ớt; khoai đạt khi ngoài giòn, trong bùi mềm và không ngấm dầu."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-khoai-tay-chien-nuoc-mam-thom-ngon-gion-rum-02331?srsltid=AfmBOopbWbZ59_gGS-j7MUMLHnkhiJK4-H_dM-_NRWlVguRkP4SLRreq",
+      "accessed": "2026-10-31",
+      "note": "2 cách làm khoai tây chiên nước mắm / chiên trứng phô mai — Điện Máy XANH (biên tập Lương Thị Thanh Trúc) — Đã mở đọc. Công thức nền chiên cho 3 người: khoai tây 500g (≈167g/người, khớp file 150g), cắt thanh dày 1–1,5 cm, ngâm nước muối loãng 10–15 phút, chiên lửa vừa đến vàng đều; phần nước mắm là bước áo vị sau chiên, không thuộc bản gốc của file."
+    },
+    {
+      "url": "https://monngondongian.com/cach-lam-khoai-tay-chien-gion-thom/",
+      "accessed": "2026-10-31",
+      "note": "Cách làm khoai tây chiên giòn thơm ai cũng thích — Món Ngon Đơn Giản — Đã mở đọc. Mẻ khoai tây 500g: gọt vỏ, cắt miếng dài, ngâm nước muối 15 phút, luộc chín tới rồi ngâm nước lạnh 5 phút, để ráo trước khi chiên ngập dầu đến vàng giòn; biến thể bơ trong cùng bài chiên hai lần (lần 1 lửa vừa, để nguội/cấp đông 20 phút, lần 2 lửa lớn). Ăn kèm tương ớt/mayonnaise khớp dòng tương ớt tuỳ chọn của file."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/9875629",
+      "accessed": "2026-10-31",
+      "note": "Cách Làm Món Khoai Tây Chiên Giòn của Jimmy Nguyen — Cookpad (tác giả) — Đã mở đọc. Họ kỹ thuật không ghi gram: cắt cọng vừa, rửa đến khi nước trong, ngâm 10 phút, thấm ráo; chiên lần 1 ở 140°C trong 10 phút, để nguội; chiên lần 2 ở 170°C trong 15–20 phút đến khi gần hết bọt dầu sôi — neo nhiệt độ/thời gian cho bước chiên hai lần."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/banh-khoai-tay-chien.webp",
@@ -69,7 +89,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-004 đợt 2 (lô bánh dân gian) mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 10 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).]",
+  "import_note": "Soạn nháp DISH-004 đợt 2 (lô bánh dân gian) mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 10 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).] [LV2-012 đợt vét] Nâng Mức 2: đối chiếu 3 họ độc lập đã mở (Điện Máy XANH 500g/3 người ≈ 167g/người, Món Ngon Đơn Giản mẻ 500g, Cookpad Jimmy Nguyen về nhiệt độ chiên hai lần 140°C/170°C). Định lượng file (khoai tây 150g, muối 0,5g, tương ớt tuỳ chọn 10g) nằm trong đồng thuận nên giữ nguyên; viết lại recipe_steps 7 bước. Tiếp tục KHÔNG kê dầu của bước chiên chính theo Phương án A/QA-002 — dầu hấp thụ do engine mô hình hoá (khoai tây có oil_absorption_pct 9%).",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "luoc",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -71,14 +71,50 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-tim",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hat-tieu-den",
+      "quantity": 1,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Ba chỉ luộc chín tới với ít muối, vớt ra để nguội và thật ráo.",
-    "Nấu nước mắm với đường cho tan, để nguội hoàn toàn, thêm tỏi ớt.",
-    "Ngâm thịt trong nước mắm 2–3 ngày cho thấm; khi ăn thái lát mỏng, ăn với cơm hoặc cuốn rau."
+    "Sơ chế thịt: cạo sạch lông ở bì, chà muối hột rồi rửa lại, cắt thịt ba chỉ thành khúc dài 8-15 cm theo kích thước lọ ngâm; để thật ráo nước.",
+    "Luộc thịt: cho thịt vào nồi nước cùng vài củ hành tím cắt lát và chút muối, lửa vừa, hớt bọt; luộc khoảng 25-30 phút từ khi sôi đến khi xiên đũa qua thịt dễ dàng, không còn nước hồng.",
+    "Làm săn thịt: vớt thịt ra ngâm ngay vào nước lạnh/nước đá 10-15 phút cho bì giòn và thớ săn, sau đó vớt ra để ráo, thấm khô hẳn bề mặt bằng khăn sạch.",
+    "Nấu nước mắm ngâm: cho nước mắm và đường vào nồi, khuấy cho tan bớt rồi đun lửa vừa đến khi sôi, hạ lửa nhỏ nấu liu riu khoảng 5 phút cho hơi sánh, hớt bọt; tắt bếp và để nguội hoàn toàn (mắm còn ấm sẽ làm thịt đổ nhớt).",
+    "Chuẩn bị lọ: tráng lọ thuỷ tinh bằng nước sôi, lau thật khô; tỏi bóc vỏ để nguyên tép hoặc thái lát, ớt rửa sạch để nguyên quả hoặc cắt lát.",
+    "Ngâm thịt: xếp thịt vào lọ cùng tỏi, ớt và tiêu sọ, rót nước mắm đường đã nguội vào cho ngập hẳn mặt thịt, dùng nan tre sạch chèn giữ thịt luôn chìm dưới mặt mắm, đậy kín nắp.",
+    "Chờ thấm và dùng: để lọ nơi thoáng mát ít nhất 3 ngày (ngâm lâu hơn thịt càng thấm và bì càng trong); khi ăn lấy thịt ra thái lát thật mỏng, ăn với cơm nóng, bánh chưng hoặc cuốn rau sống; phần thịt chưa dùng bảo quản ngăn mát tủ lạnh."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-thit-heo-ngam-nuoc-mam-ngon-dam-da-de-lam-cuc-ngon-00446",
+      "accessed": "2026-10-31",
+      "note": "Cách làm thịt heo ngâm nước mắm - Điện Máy XANH — Đã mở đọc thật. Cho 4 người: ba chỉ 500 g, nước mắm 500 ml, đường vàng 300 g (tỉ lệ mắm:đường 1:0,6), ớt 3 trái, hành tím 4 củ, tỏi 3 tép; luộc với hành tím, ngâm 3 ngày. Công thức người dùng trong cùng bài: mắm 450 ml : đường 450 g (1:1) cho 500 g thịt. Quy về khẩu phần file (150 g thịt): đây là lượng nước ngâm của cả hũ, không ăn hết - chỉ đối chiếu tỉ lệ."
+    },
+    {
+      "url": "http://www.savourydays.com/cach-lam-ba-chi-ngam-mam/",
+      "accessed": "2026-10-31",
+      "note": "[Món Tết] Cách làm BA CHỈ NGÂM MẮM - Savoury Days — Đã mở đọc thật. 1 kg ba chỉ, nước mắm 350 ml, đường 350 g (1:1), tỏi 8 g, hành khô 6 g, tiêu sọ 3 g, ớt 3 quả; luộc với muối + hành khô, nấu mắm đường liu riu ~5 phút, ngâm ~2 tuần. Quy về 150 g thịt: mắm ~52 ml, đường ~52 g, tỏi ~1,2 g, tiêu ~0,5 g (lượng hũ ngâm)."
+    },
+    {
+      "url": "https://giaoducthoidai.vn/3-mon-thit-ngam-mam-ngon-mien-che-an-1-muon-10-post8115.html",
+      "accessed": "2026-10-31",
+      "note": "3 món thịt ngâm mắm ngon miễn chê - Giáo dục & Thời đại (theo phunutoday.vn) — Đã mở đọc thật. 1 kg thịt ba chỉ/đùi/chân giò dùng ~1,5 lít nước mắm; pha theo tỉ lệ 1 bát mắm : 1 bát đường cát : 1/2 bát đường phèn; tỏi, củ kiệu, hoa hồi, hạt tiêu sọ, ớt tươi cho vào bình; ngâm 3 ngày. Xác nhận tỉ lệ mắm:đường ~1:1 và tiêu sọ là thành phần lặp lại."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/thit-ngam-mam.webp",
@@ -89,7 +125,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món Tết miền Trung: định lượng ghi cho phần thịt của 1 khẩu phần ăn; nước mắm ngâm kê đủ lượng dùng ngâm cho phần thịt đó, phần nước ngâm còn lại không ăn hết — ghi rõ để người duyệt lưu ý khi rà định lượng.",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món Tết miền Trung: định lượng ghi cho phần thịt của 1 khẩu phần ăn; nước mắm ngâm kê đủ lượng dùng ngâm cho phần thịt đó, phần nước ngâm còn lại không ăn hết — ghi rõ để người duyệt lưu ý khi rà định lượng. [LV2-012 đợt vét] Nâng Mức 2: đối chiếu 3 họ độc lập (Điện Máy XANH, Savoury Days, Giáo dục & Thời đại/phunutoday). Tỉ lệ mắm:đường của file (30:20 = 1:0,67) nằm trong dải đồng thuận 1:0,6-1:1 nên giữ nguyên lượng phân bổ nước ngâm (nước ngâm không ăn hết, như ghi chú cũ); bổ sung hành tím và tiêu sọ theo >=2 họ. Viết lại recipe_steps 7 bước.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

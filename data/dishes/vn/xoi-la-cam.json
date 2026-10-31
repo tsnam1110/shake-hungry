@@ -97,7 +97,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. THIẾU NGUYÊN LIỆU: lá cẩm (phụ — tạo màu tím) — cần bổ sung vào kho.",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. THIẾU NGUYÊN LIỆU: lá cẩm (phụ — tạo màu tím) — cần bổ sung vào kho. [LV2-012 đợt vét] Giữ Mức 1 - TRAN-NL: đã đủ 3 họ công thức (KitchenAZ/họ ĐMX, SUNHOUSE, sách Tứ sắc xôi) và tỉ lệ cốt dừa/đường của file nằm gần dải nguồn, nhưng la-cam là nguyên liệu định danh null số (chỉ có nghiên cứu sắc tố anthocyanin, không nguồn macro nào) nên không nâng. File hiện cũng chưa có dòng la-cam - khi có số đạt chuẩn, bổ sung dòng la-cam ~20-35 g lá tươi/khẩu phần (nguồn: 100 g lá cho 250-300 g nếp ở SUNHOUSE, 200 g lá cho 1 kg nếp ở họ ĐMX) rồi nâng sau.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

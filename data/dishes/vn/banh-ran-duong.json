@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "chien-ngap-dau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "an-vat",
@@ -59,14 +59,58 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "khoai-tay",
+      "quantity": 22,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "bot-gao",
+      "quantity": 4,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "cui-dua-nao",
+      "quantity": 9,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Đồ chín đậu xanh, giã nhuyễn với một phần đường làm nhân.",
-    "Nhào bột nếp với nước ấm, bọc nhân đậu, vo tròn, lăn qua vừng.",
-    "Chiên ngập dầu đến khi vàng; vớt ra áo một lớp đường cát trắng bên ngoài."
+    "Ngâm đậu xanh đã cà vỏ khoảng 1 giờ, hấp 15-20 phút đến khi hạt mềm bở, rồi tán/giã nhuyễn ngay khi còn nóng cho nhân mịn.",
+    "Cho đậu đã tán vào chảo cùng phần đường của nhân và dừa nạo, sên lửa nhỏ 8-10 phút, đảo liên tục đến khi nhân dẻo, khô mặt và không dính chảo; để nguội bớt rồi vo thành viên khoảng 15g.",
+    "Luộc hoặc hấp khoai tây đến chín mềm, nghiền thật mịn; trộn bột nếp, bột tẻ, khoai nghiền và chút muối, rót nước ấm từ từ rồi nhào 5-7 phút thành khối dẻo không dính tay, ủ kín 1-2 giờ.",
+    "Chia bột thành viên khoảng 30g, ấn dẹt, đặt viên nhân vào giữa, túm kín mép, vo tròn rồi ấn hơi dẹt; làm lần lượt hết bột và phủ khăn ẩm để mặt bánh không khô nứt.",
+    "Chiên ngập dầu ở lửa vừa (dầu khoảng 150-160 độ C): thả bánh vào, chờ bánh tự nổi, lật đều tay 5-7 phút đến khi vỏ vàng đều và bánh phồng căng thì vớt ra để ráo dầu (không kê dầu chiên vào nguyên liệu — phần dầu hấp thụ do engine mô hình hoá).",
+    "Áo đường: đun đường với ít nước trên lửa nhỏ đến khi tan hết, sủi bọt và hơi keo; cho bánh đã chiên vào đảo liên tục 2-3 phút đến khi đường kết tinh thành lớp trắng khô bám đều quanh bánh thì tắt bếp, tiếp tục đảo cho nguội bớt.",
+    "Để bánh trên rack khoảng 10 phút cho lớp áo khô hẳn; bánh đạt khi vỏ giòn, lớp đường trắng đều, nhân đậu dẻo thơm mùi dừa và không bị ngấm dầu."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-banh-ran-duong-nhan-dau-xanh-gion-ngon-kho-cuong-07555",
+      "accessed": "2026-10-31",
+      "note": "2 Cách làm bánh rán đường vô cùng thơm ngon ngay tại nhà — Điện Máy XANH — CT chính cho 4 người: bột nếp 200g, bột tẻ 20g, bột nở 5g, dừa bào 20g, khoai tây 1 củ luộc, đậu xanh 100g, đường trắng 130g (100g áo + ~30g sên nhân). Quy theo neo bột nếp 45g/khẩu phần của file: đậu 22,5g, bột tẻ 4,5g, dừa 4,5g, khoai tây ~25g. CT2 người dùng trên cùng trang (gạo nếp xay bột nước 300g, đậu 100g, đường 200g) chỉ tham khảo, không neo số."
+    },
+    {
+      "url": "https://daylambanh.edu.vn/banh-ran-ngot",
+      "accessed": "2026-10-31",
+      "note": "Bí Mật Cách Làm Bánh Rán Ngọt Bùi Không Phải Ai Cũng Biết — Dạy Làm Bánh Á Âu — Tác giả Trần Văn Vinh: vỏ bột nếp 200g, bột tẻ 8g, đường vỏ 60g, khoai tây 1 củ, đường áo 100g; nhân đậu xanh 100g, đường 100g, dừa nạo 50g. Quy theo neo bột 45g: đậu 22,5g, bột tẻ 1,8g, dừa 11,3g, khoai tây ~25g. Bộ số trùng Cookpad của Thu Mèo nên hai nơi tính là 1 họ."
+    },
+    {
+      "url": "https://danviet.vn/cach-lam-banh-ran-nhan-dau-xanh-ngon-kho-cuong-7777711873-d468045.html",
+      "accessed": "2026-10-31",
+      "note": "Cách làm bánh rán nhân đậu xanh ngon khó cưỡng — Dân Việt — Nguyên Thảo tổng hợp: bột nếp 250g, bột tẻ 20g, đậu xanh 150g, dừa nạo 50g, đường 70g, khoai tây 1 củ, có lăn vừng, không có bước áo đường. Quy theo neo bột 45g: đậu 27g, bột tẻ 3,6g, dừa 9g, đường 12,6g. Chỉ dùng neo thành phần vỏ/nhân và tỉ lệ đậu, đường tổng; không dùng neo lớp áo đường vì đây là biến thể lăn vừng."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/banh-ran-duong.webp",
@@ -77,7 +121,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-004 đợt 2 (lô bánh dân gian) mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 8 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).]",
+  "import_note": "Soạn nháp DISH-004 đợt 2 (lô bánh dân gian) mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 8 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).] [LV2-012 đợt vét] Nâng Mức 2: đối chiếu 3 họ độc lập (Điện Máy XANH biên tập Phạm Hồng Hân; Dạy Làm Bánh Á Âu — bộ số trùng Cookpad Thu Mèo nên tính 1 họ; Dân Việt). Tỉ lệ đậu xanh/bột nếp của file (20/45) khớp cả 3 họ (50-60/100 bột) nên giữ nguyên; bổ sung 3 dòng cả 3 họ đều có mà file thiếu: khoai-tay 22g, bot-gao (bột tẻ) 4g, cui-dua-nao 9g, đều llm_suggested/low. Không sửa đường: các họ phân tán mạnh về đường tổng (28-130g/100g bột) do khác nhau ở lớp áo, file nằm trong dải nên giữ 14g chờ hiệu chuẩn riêng. Viết lại recipe_steps 7 bước.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

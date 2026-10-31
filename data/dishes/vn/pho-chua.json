@@ -204,7 +204,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] GIỮ Mức 1 — THIEU-NGUON: đã mở đọc thật Bếp BTN (họ định lượng duy nhất, gốc Điện Máy XANH — VinID/PackVN/Tây Bắc/Toyenxin đều sao chép cùng bộ số) và Tạp chí Ẩm thực (xác nhận định tính bản đầy đủ có vịt quay, gan rán, dạ dày, lạp xưởng, sốt mỡ vịt). Bản định lượng duy nhất là bản rút gọn thiếu 4 topping định danh của file nên không thể đối chiếu; cần tìm nguồn định lượng cho bản đầy đủ (sách ẩm thực Lạng Sơn/Cao Bằng hoặc Cooky/Cookpad có tác giả) ở đợt sau.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

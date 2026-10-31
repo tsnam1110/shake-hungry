@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "chieu",
@@ -58,7 +58,7 @@
     },
     {
       "ingredient_slug": "rau-cau-kho",
-      "quantity": 6,
+      "quantity": 1,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -74,11 +74,31 @@
     }
   ],
   "recipe_steps": [
-    "Ngâm bột rau câu với nước dừa tươi, đun sôi cùng đường và lá dứa, khuấy tan.",
-    "Cho cùi dừa nạo sợi vào, đổ ra khuôn/trái dừa, để nguội và làm lạnh.",
-    "Ăn lạnh, có thể cắt miếng vừa ăn."
+    "Trộn khô 1g bột rau câu với 18g đường cho thật đều trong nồi khô; bước trộn khô này giúp bột không vón khi gặp nước dừa.",
+    "Rót 120g nước dừa tươi vào, khuấy tan, để ngâm 10-15 phút cho bột nở; cùi dừa nạo cắt sợi ngắn vừa ăn, để riêng.",
+    "Đun nồi trên lửa vừa, khuấy liên tục theo một chiều 5-7 phút đến khi hỗn hợp sôi lăn tăn, chuyển trong và không còn hạt bột lợn cợn bám vá.",
+    "Cho bó lá dứa đã rửa sạch vào nấu thêm khoảng 1 phút cho thơm nhẹ rồi vớt ra; nếm lại, hỗn hợp phải ngọt thanh, không gắt.",
+    "Thả 25g cùi dừa nạo sợi vào, khuấy đều khoảng 30 giây rồi tắt bếp ngay để sợi dừa còn giòn, không nấu lâu làm dừa mềm nhũn.",
+    "Rót rau câu còn nóng vào khuôn hoặc trái dừa, hớt bọt mặt, để nguội ở nhiệt độ phòng khoảng 20-30 phút đến khi mặt se và không còn rung lỏng.",
+    "Đậy kín, cho ngăn mát tủ lạnh 2-3 giờ cho đông hoàn toàn; đạt khi ấn nhẹ mặt rau câu đàn hồi, cắt ra miếng trong, sợi dừa phân bố đều và không tách nước."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-rau-cau-soi-gion-kho-dai-gion-sun-sut-thom-ngon-06632",
+      "accessed": "2026-10-31",
+      "note": "3 cách làm rau câu dừa sợi — Điện Máy XANH (biên tập Đoàn Trâm Anh), công thức 1 Rau câu dừa sợi — Cho 6 người: nước dừa tươi 1,8 lít, bột rau câu dẻo 10g, cơm dừa non 300g, đường phèn 200g, lá dứa. Quy về 150g: nước dừa ~128g, bột rau câu ~0,7g, đường ~14g, cơm dừa ~21g."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/13670784",
+      "accessed": "2026-10-31",
+      "note": "Rau Câu Dừa Nguyên Chất — Cookpad, tác giả Serik Nguyễn — 40 ly nhỏ: nước dừa tươi 3 lít, rau câu 25g, đường cát 50g + đường phèn 300g, thịt dừa 100g, không nước cốt dừa. Quy về 150g: nước dừa ~129g, bột rau câu ~1,1g, đường ~15g, thịt dừa ~4g (phần dừa trong ly ít hơn bản sợi)."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/16673105",
+      "accessed": "2026-10-31",
+      "note": "Rau Câu Dừa — Cookpad, tác giả Thý Phương — Cho 4 người: nước dừa 1 lít, bột rau câu dẻo 5g, đường cát 150g, nước cốt dừa 200ml cho lớp mặt. Lớp nước dừa trong quy về 150g: bột rau câu ~0,6-0,8g, đường ~17g — tiếp tục khẳng định nồng độ rau câu <1%, khác xa 6g của file."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/rau-cau-dua.webp",
@@ -89,7 +109,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt)",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-012 đợt vét] Nâng Mức 2: đối chiếu 3 họ độc lập (Điện Máy XANH rau câu dừa sợi, Cookpad Serik nguyên chất, Cookpad Thý Phương) cho biến thể nước dừa trong; sửa bột rau câu 6g→1g theo đồng thuận nồng độ 0,3-0,8% ở cả 3 họ, các dòng khác giữ nguyên vì nằm trong dải nguồn; viết lại 7 bước.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

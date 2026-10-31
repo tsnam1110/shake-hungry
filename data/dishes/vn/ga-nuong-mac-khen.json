@@ -121,7 +121,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] GIỮ Mức 1 — mã TRAN-NL: mac-khen là nguyên liệu định danh nhưng chưa có số dinh dưỡng đạt chuẩn ở nguồn công khai nào (hồ sơ null 2 vòng tra cứu đã ghi trong data/ingredients/mac-khen.json); đưa vào hàng đợi nghiên cứu nguyên liệu riêng. Công thức bản thân có nguồn tốt: đã mở BlueStone (gà 1 con 1,2–1,5 kg, mắc khén 10 g/con) — khi mac-khen có số, món này thuộc nhóm nâng được ngay, chỉ cần gom thêm 2 họ và đối chiếu lại lượng mắc khén/muối (file đang cao hơn tỉ lệ BlueStone).",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
