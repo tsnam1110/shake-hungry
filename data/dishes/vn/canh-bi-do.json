@@ -114,7 +114,14 @@
       "note": "Nấu Ăn Không Khó (tác giả Túc Túc): bí đỏ 300g, thịt heo băm 200g; ướp thịt 10 phút, phi tỏi, xào thịt săn rồi cho bí vào nấu chín, thêm hành lá."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/canh-bi-do.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): Đã đối chiếu 3 nguồn công thức thật (Bếp Eva, Digifood, Nấu Ăn Không Khó). Định lượng: bí đỏ/khẩu phần giữa các nguồn dao động khoảng 100-200g và thịt xay khoảng 62-100g (Eva và Nấu Ăn Không Khó ở đầu thấp, Digifood ghi rõ 2-3 người nên ở đầu cao) — các nguồn bất đồng quá 30% nên theo quy tắc giữ nguyên bí đỏ 150g và thịt xay 60g của file, ghi nhận thịt xay của file nằm ở cận dưới của khoảng nguồn. Phân loại (loai:canh, nau, vn, trưa/tối) rà soát, không sai rõ ràng, giữ nguyên.",

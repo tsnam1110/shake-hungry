@@ -179,7 +179,14 @@
       "note": "CET (tác giả Chef Lập): đã đối chiếu canh chua cá dọc mùng có giá đỗ 100g, đậu bắp 300g, dứa 1/4 quả và ngò gai — ủng hộ cả bốn bổ sung; nguồn này còn dùng cần tây, file không bổ sung theo phân xử."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/canh-ca-nau-doc-mung.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-006 đợt 6: nâng Mức 2 — bổ sung dứa 35g, giá đỗ 25g, đậu bắp 25g và ngò gai 2g (đều 2/3 nguồn; ngò gai là dòng rau nhỏ chưa có số). Cần tây dạng tuỳ chọn chỉ ghi nhận — câu hỏi định danh 'nấu ngót' của món còn mở, chờ phân xử.]",

@@ -89,7 +89,14 @@
       "note": "Memart: bầu ~500 g, tôm khô 50 g, hành tím băm, nước 1 L; phi hành tím, xào tôm khô rồi mới cho nước."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/canh-bau-tom-kho.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 3 nguồn (không nguồn nào ghi số khẩu phần — quy theo mẻ gia đình 4). Phân xử định lượng: GIỮ NGUYÊN — bầu 130 g khớp đồng thuận 125 g; tôm khô 15 g so với đồng thuận 2 nguồn 12,5 g lệch 20%, dưới ngưỡng (số 200 g của PasGo là ngoại lệ bất hợp lý, đã loại). Bất thường ghi nhận chờ pha phân xử: hành tím có ở 2/3 nguồn và kỹ thuật phi hành + xào tôm khô trước khi cho nước cũng ở 2/3 nguồn, file thiếu cả dòng hanh-tim lẫn dau-an — bước hiện tại giữ kỹ thuật đun nước thả tôm của file cho nhất quán với danh sách nguyên liệu.",

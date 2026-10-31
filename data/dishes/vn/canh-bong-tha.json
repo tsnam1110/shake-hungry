@@ -169,7 +169,14 @@
       "note": "Blog Ăn Ngon: canh bóng thả cổ truyền — bóng tẩy rượu gừng, ninh nước dùng xương (trang có đoạn trùng văn bản với Thực Thần, đã ghi nhận)."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/canh-bong-tha.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt DISH-004 đợt 2 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — thêm giò sống 35 (3/3 nguồn; chưa có số nên phần calo chờ nguyên liệu) và trứng cút 20 (2/3); su hào 40→15, súp lơ 40→25, cà rốt 30→20 theo tỉ lệ tô của nguồn; viết lại bước theo đúng kỹ thuật canh bóng thả.]",

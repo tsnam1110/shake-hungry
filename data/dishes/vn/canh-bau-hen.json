@@ -79,7 +79,14 @@
     "Thả bầu nấu vừa trong, nêm nước mắm, rắc hành lá, dùng nóng."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/canh-bau-hen.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món THAY cho canh cá dìa nấu thơm trong kế hoạch: cá dìa chưa tra được số đạt chuẩn nên món gốc hoãn (xem file nguyên liệu ca-dia). [LV2-006 đợt 6: GIỮ Mức 1 — bị chặn 429 ở nguồn thứ hai; nguồn Bách Hoá Xanh mở được nhưng trang không hiển thị định lượng gram. Vùng vn-central của file chưa được nguồn nào khẳng định — ghi nhận mở.]",

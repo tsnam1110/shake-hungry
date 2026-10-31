@@ -103,7 +103,14 @@
       "url": "https://cookpad.com/vn/cong-thuc/8981167-canh-la-giang-ca-basa"
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/canh-ca-nuc-la-giang.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Cá nục là nguyên liệu tầng 6 (FNRI) — món mang cờ chưa kiểm định theo quy ước dự án. [LV2-005 đợt 5: nâng Mức 2 — đối chiếu 4 nguồn, trong đó 2 nguồn đúng cá nục và 2 nguồn là biến thể cá basa cùng phương pháp canh lá giang. Định lượng: không thay đổi dòng nào; riêng lá giang mâu thuẫn cực mạnh giữa các nguồn (khoảng 25g/khẩu phần khi tính lá đã nhặt so với khoảng 150g/khẩu phần khi tính cả bó) và không có 2 nguồn đồng thuận cùng một quy ước cân, nên giữ nguyên 15g và cần chủ dự án phân xử quy ước cân lá giang — chờ pha phân xử. Bất thường ghi nhận: file thiếu các nguyên liệu phi thơm mà 3/4 nguồn có, cách xào sơ cá xuất hiện ở 2/4 nguồn trong khi file theo trường phái cho cá thẳng vào nước sôi, và vùng miền của món chưa thống nhất giữa miền Trung và miền Nam/Tây — chờ pha phân xử.]",
