@@ -146,7 +146,14 @@
       "note": "Điện Máy XANH (biên tập Nguyễn Dạ Thu Thảo): đã đối chiếu phở cuốn thập cẩm và ngũ sắc — thịt bò đều xào nhanh lửa lớn đến vừa chín tới trước khi cuốn với xà lách, húng quế; biến thể thập cẩm có thêm trứng tráng cắt miếng — ghi nhận trứng chỉ thuộc biến thể, không bổ sung vào file."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/pho-cuon.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. [LV2-006 đợt 6: nâng Mức 2 — định lượng giữ nguyên toàn bộ. Bất thường ghi nhận chờ phân xử: nhân bò thực tế được xào chín ở 3/3 nguồn trong khi cooking_method của file chưa phản ánh điều đó — không tự sửa phân loại trong đợt này. Trứng tráng sợi có ở 2/3 nguồn nhưng định lượng lệch nhau 3 lần — ghi nhận, không bổ sung.]",

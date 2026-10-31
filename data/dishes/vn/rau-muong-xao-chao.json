@@ -103,7 +103,14 @@
       "note": "Cookpad — Huyen le Tran (chỉ kỹ thuật, bản đọc thiếu mục nguyên liệu): tán chao + đường, phi tỏi, xào rau rồi cho chao."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/rau-muong-xao-chao.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 4 nguồn (1 nguồn chỉ dùng kỹ thuật). Phân xử định lượng: GIỮ NGUYÊN TOÀN BỘ — nguồn duy nhất ghi rõ khẩu phần cho rau 150 g/khẩu phần ≈ file 140 g; lượng chao giữa các nguồn dao động rất rộng (2 viên cho cả bó lớn đến ~22 g/khẩu phần), file 15 g nằm giữa khoảng; dầu 7 g thấp hơn chiều hướng nguồn nhưng chỉ 1 nguồn có khẩu phần nên chưa đủ chuẩn phân xử, ghi nhận để pha phân xử xem lại. Biến thể kỹ thuật ghi nhận: chần rau trước khi xào (1 nguồn) và phi chao trước khi cho rau (1 nguồn) — file theo đa số xào trực tiếp, cho chao sau.",

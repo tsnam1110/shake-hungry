@@ -187,7 +187,14 @@
       "note": "Blog Ăn Ngon: đã đối chiếu phở chay hầm củ cải, cà rốt, hành tây nướng cùng hồi, quế, gừng, dùng nấm rơm và đậu hũ chiên, nêm muối, đường phèn và hạt nêm chay, không dùng nước mắm thường — ủng hộ giữ nguyên toàn bộ định lượng."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/pho-chay.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [LV2-006 đợt 6: nâng Mức 2 — đã kiểm: file thuần chay (không nước mắm thường/trứng/sữa); nguồn 'phở chay' nào nêm nước mắm thường đều bị loại vì phá vỡ tính chay. Định lượng giữ nguyên toàn bộ.]",
