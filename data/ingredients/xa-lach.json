@@ -75,6 +75,14 @@
       "source": "FDC 169249 foodMeasures"
     }
   ],
+  "media": [
+    {
+      "path": "media/ingredients/xa-lach.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "medium",
   "needs_review": true,
