@@ -1,0 +1,118 @@
+{
+  "slug": "che-buoi",
+  "parent_dish_slug": null,
+  "country_code": "VN",
+  "region_code": "vn-an-giang",
+  "names": [
+    {
+      "locale": "en",
+      "name": "che buoi (pomelo sweet soup)",
+      "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "Chè bưởi",
+      "is_primary": true
+    }
+  ],
+  "is_eat_out": true,
+  "is_home_cook": true,
+  "cooking_method": "nau",
+  "completeness_level": 1,
+  "meal_slots": [
+    {
+      "slot": "chieu",
+      "weight": 9
+    },
+    {
+      "slot": "an-vat",
+      "weight": 9
+    }
+  ],
+  "serving_desc": "1 ly",
+  "serving_grams": 250,
+  "ingredients": [
+    {
+      "ingredient_slug": "buoi",
+      "quantity": 60,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dau-xanh-hat",
+      "quantity": 35,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "bot-nang",
+      "quantity": 12,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "duong-trang",
+      "quantity": 25,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nuoc-cot-dua",
+      "quantity": 30,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "muoi",
+      "quantity": 1,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "la-dua",
+      "quantity": 1,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
+    }
+  ],
+  "recipe_steps": [
+    "Cùi bưởi (phần trắng) cắt hạt lựu, bóp muối và rửa xả nhiều lần cho hết đắng, áo bột năng rồi luộc đến khi trong.",
+    "Đậu xanh ngâm, nấu/hấp chín mềm.",
+    "Nấu nước đường với lá dứa, cho đậu xanh và cùi bưởi vào; múc ra ly, chan nước cốt dừa, ăn lạnh."
+  ],
+  "recipe_sources": [
+    {
+      "url": "https://vi.wikipedia.org/wiki/Ch%C3%A8_b%C6%B0%E1%BB%9Fi",
+      "accessed": "2026-10-31",
+      "note": "Chè bưởi — đặc sản Tây Nam Bộ/An Giang, thành phần chính: cùi bưởi, đậu xanh, bột năng, nước cốt dừa, đường."
+    }
+  ],
+  "media": [],
+  "estimated_kcal": null,
+  "external_ref": null,
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt)",
+  "status": "draft",
+  "source": "curated",
+  "confidence": "unknown",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "loai:che-trang-mieng"
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "slug": "oc-len-xao-dua",
+  "parent_dish_slug": null,
+  "country_code": "VN",
+  "region_code": "vn-south",
+  "names": [
+    {
+      "locale": "en",
+      "name": "mud creepers stir-fried in coconut milk",
+      "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "Ốc len xào dừa",
+      "is_primary": true
+    }
+  ],
+  "is_eat_out": true,
+  "is_home_cook": true,
+  "cooking_method": "xao",
+  "completeness_level": 1,
+  "meal_slots": [
+    {
+      "slot": "toi",
+      "weight": 8
+    },
+    {
+      "slot": "an-vat",
+      "weight": 8
+    }
+  ],
+  "serving_desc": "1 đĩa",
+  "serving_grams": 300,
+  "ingredients": [
+    {
+      "ingredient_slug": "oc-len",
+      "quantity": 300,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nuoc-cot-dua",
+      "quantity": 100,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "sa",
+      "quantity": 10,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "toi",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "ot-tuoi",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "rau-ram",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "duong-trang",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "muoi",
+      "quantity": 2,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    }
+  ],
+  "recipe_steps": [
+    "Ốc len ngâm nước vo gạo với ớt cho nhả nhớt, rửa sạch, chặt bỏ phần đuôi.",
+    "Phi thơm sả, tỏi; cho nước cốt dừa vào nấu với đường, muối cho sánh nhẹ.",
+    "Cho ốc vào xào/nấu khoảng 5 phút cho thấm, rắc rau răm; ăn bằng cách hút thịt ốc, chấm muối tiêu chanh."
+  ],
+  "recipe_sources": [],
+  "media": [],
+  "estimated_kcal": null,
+  "external_ref": null,
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt)",
+  "status": "draft",
+  "source": "curated",
+  "confidence": "unknown",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "loai:mon-chinh"
+  ]
+}

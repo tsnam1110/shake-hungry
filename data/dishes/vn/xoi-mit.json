@@ -1,0 +1,104 @@
+{
+  "slug": "xoi-mit",
+  "parent_dish_slug": null,
+  "country_code": "VN",
+  "region_code": "vn-south",
+  "names": [
+    {
+      "locale": "vi",
+      "name": "xôi mít",
+      "is_primary": true
+    },
+    {
+      "locale": "en",
+      "name": "jackfruit sticky rice",
+      "is_primary": true
+    }
+  ],
+  "is_eat_out": true,
+  "is_home_cook": true,
+  "cooking_method": "hap",
+  "completeness_level": 1,
+  "meal_slots": [
+    {
+      "slot": "an-vat",
+      "weight": 9
+    },
+    {
+      "slot": "chieu",
+      "weight": 6
+    }
+  ],
+  "serving_desc": "1 phần",
+  "serving_grams": 250,
+  "ingredients": [
+    {
+      "ingredient_slug": "gao-nep",
+      "quantity": 120,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "mit-chin",
+      "quantity": 120,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nuoc-cot-dua",
+      "quantity": 40,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "duong-trang",
+      "quantity": 10,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "muoi",
+      "quantity": 0.5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "vung-rang",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    }
+  ],
+  "recipe_steps": [
+    "Đồ xôi nếp với nước cốt dừa, đường, chút muối đến khi chín dẻo.",
+    "Mít chín tách múi, rạch một đường, bỏ hạt.",
+    "Nhồi xôi vào múi mít, rắc vừng rang; ăn nguội hoặc hơi mát."
+  ],
+  "recipe_sources": [],
+  "media": [],
+  "estimated_kcal": null,
+  "external_ref": null,
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "status": "draft",
+  "source": "curated",
+  "confidence": "unknown",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "loai:xoi"
+  ]
+}

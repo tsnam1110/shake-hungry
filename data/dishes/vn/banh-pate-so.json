@@ -1,0 +1,96 @@
+{
+  "slug": "banh-pate-so",
+  "parent_dish_slug": null,
+  "country_code": "VN",
+  "region_code": "vn",
+  "names": [
+    {
+      "locale": "en",
+      "name": "pate chaud (Vietnamese meat pastry)",
+      "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "Bánh patê sô",
+      "is_primary": true
+    }
+  ],
+  "is_eat_out": true,
+  "is_home_cook": true,
+  "cooking_method": "nuong",
+  "completeness_level": 1,
+  "meal_slots": [
+    {
+      "slot": "sang",
+      "weight": 8
+    },
+    {
+      "slot": "an-vat",
+      "weight": 8
+    }
+  ],
+  "serving_desc": "1 cái",
+  "serving_grams": 70,
+  "ingredients": [
+    {
+      "ingredient_slug": "bot-mi",
+      "quantity": 40,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "pate-gan",
+      "quantity": 25,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "bo-dong-vat",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "trung-ga",
+      "quantity": 8,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "vung",
+      "quantity": 1,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
+    }
+  ],
+  "recipe_steps": [
+    "Cán bột mì thành vỏ ngàn lớp (hoặc dùng vỏ bánh ngàn lớp sẵn), cắt miếng vừa.",
+    "Cho nhân patê gan vào giữa, gấp mép, phết lòng đỏ trứng lên mặt.",
+    "Nướng ở 180°C khoảng 20 phút đến khi bánh phồng, vàng ruộm."
+  ],
+  "recipe_sources": [],
+  "media": [],
+  "estimated_kcal": null,
+  "external_ref": null,
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt)",
+  "status": "draft",
+  "source": "curated",
+  "confidence": "unknown",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "loai:banh"
+  ]
+}

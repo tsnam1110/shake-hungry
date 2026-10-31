@@ -50,6 +50,7 @@ final class TaggingRules
         'mi-trung-kho' => 'tong-hop', // mì trứng = bột mì + trứng
         'banh-phong-tom-chien' => 'tong-hop', 'banh-phong-tom-song' => 'tong-hop', // tôm + tinh bột sắn
         'nuoc-ngot-cola' => 'tong-hop', 'mi-chinh' => 'tong-hop',
+        'vo-hoanh-thanh' => 'tong-hop', // bột mì + trứng (đợt DISH-003)
         // Khoáng chất
         'muoi' => 'khoang-chat',
     ];
@@ -63,6 +64,7 @@ final class TaggingRules
         'banh-phong-tom-chien' => 'man', 'banh-phong-tom-song' => 'man',
         'xot-mayonnaise' => 'trung-sua',
         'mi-trung-kho' => 'trung-sua',
+        'vo-hoanh-thanh' => 'trung-sua', // vỏ hoành thánh = bột mì + trứng
     ];
 
     /** State tường minh theo slug; slug không có trong bảng ⇒ 'tuoi'. */
@@ -73,6 +75,8 @@ final class TaggingRules
         'moc-nhi-kho' => 'kho', 'nam-huong-kho' => 'kho', 'banh-trang' => 'kho', 'banh-da-do' => 'kho', 'tau-hu-ky' => 'kho',
         'banh-phong-tom-song' => 'kho', 'mang-kho' => 'kho', 'la-gai' => 'kho',
         'xa-bau' => 'kho', 'mien-dong' => 'kho', 'mi-an-lien' => 'kho',
+        'vo-hoanh-thanh' => 'kho', 'nui-kho' => 'kho', 'bot-chien-xu' => 'kho',
+        'hanh-nhan' => 'kho', 'bong-bi' => 'kho',
         'dau-den-hat' => 'kho', 'dau-do-hat' => 'kho', 'dau-nanh-hat' => 'kho', 'dau-xanh-hat' => 'kho',
         'dau-ngu' => 'kho', 'dau-trang' => 'kho', 'hat-sen-tuoi' => 'tuoi',
         'gao-nep' => 'kho', 'gao-te' => 'kho', 'y-di' => 'kho',
@@ -118,16 +122,17 @@ final class TaggingRules
         'tom-su' => ['tom'], 'tom-kho' => ['tom'], 'tep' => ['tom'], 'be-be' => ['tom'],
         'mam-tom' => ['tom', 'mam-tom'], 'mam-ruoc' => ['tom', 'mam-tom'],
         'banh-phong-tom-chien' => ['tom'], 'banh-phong-tom-song' => ['tom'],
-        'cua-bien' => ['cua'], 'cua-dong' => ['cua'],
+        'cua-bien' => ['cua'], 'cua-dong' => ['cua'], 'ghe' => ['cua'],
         'ngheu' => ['dong-vat-co-vo'], 'hau' => ['dong-vat-co-vo'], 'so-diep' => ['dong-vat-co-vo'],
         'oc-buou' => ['dong-vat-co-vo'], 'hen' => ['dong-vat-co-vo'], 'don' => ['dong-vat-co-vo'],
+        'oc-len' => ['dong-vat-co-vo'], 'trai' => ['dong-vat-co-vo'],
         'muc-ong' => ['dong-vat-co-vo'], 'muc-kho' => ['dong-vat-co-vo'], 'bach-tuoc' => ['dong-vat-co-vo'],
         'dau-hao' => ['dong-vat-co-vo'],
         'luon' => ['ca'], 'cha-ca-vien' => ['ca', 'lua-mi'], 'gio-lua' => ['ca'],
         'nuoc-mam-cong-nghiep' => ['ca'], 'nuoc-mam-truyen-thong' => ['ca'],
         'mam-ca-linh' => ['ca'], 'mam-ca-sac' => ['ca'], 'mam-nem' => ['ca'],
         'trung-ga' => ['trung'], 'trung-vit' => ['trung'], 'trung-cut' => ['trung'],
-        'trung-vit-lon' => ['trung'], 'trung-vit-muoi' => ['trung'],
+        'trung-vit-lon' => ['trung'], 'trung-vit-muoi' => ['trung'], 'trung-ga-non' => ['trung'],
         'mi-trung-kho' => ['trung', 'lua-mi'], 'xot-mayonnaise' => ['trung'],
         'sua-tuoi' => ['sua'], 'sua-dac' => ['sua'], 'sua-chua' => ['sua'],
         'pho-mai' => ['sua'], 'bo-dong-vat' => ['sua'],
@@ -136,6 +141,7 @@ final class TaggingRules
         'tuong-ban' => ['dau-nanh'], 'nuoc-tuong' => ['dau-nanh'], 'tuong-den' => ['dau-nanh', 'lua-mi'],
         'xuc-xich' => ['dau-nanh', 'lua-mi'], 'pate-gan' => ['sua', 'lua-mi'], 'bia' => ['lua-mi'],
         'bot-mi' => ['lua-mi'], 'banh-mi' => ['lua-mi'], 'mi-an-lien' => ['lua-mi'],
+        'nui-kho' => ['lua-mi'], 'bot-chien-xu' => ['lua-mi'], 'vo-hoanh-thanh' => ['trung', 'lua-mi'],
         'mi-can' => ['lua-mi'],
         'vung' => ['me'], 'vung-rang' => ['me'], 'dau-me' => ['me'],
     ];

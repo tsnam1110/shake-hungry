@@ -1,0 +1,150 @@
+{
+  "slug": "chao-canh",
+  "parent_dish_slug": null,
+  "country_code": "VN",
+  "region_code": "vn-central",
+  "names": [
+    {
+      "locale": "vi",
+      "name": "cháo canh Quảng Bình",
+      "is_primary": true
+    },
+    {
+      "locale": "en",
+      "name": "Quang Binh 'chao canh' thick noodle soup",
+      "is_primary": true
+    }
+  ],
+  "is_eat_out": true,
+  "is_home_cook": true,
+  "cooking_method": "nau",
+  "completeness_level": 1,
+  "meal_slots": [
+    {
+      "slot": "sang",
+      "weight": 9
+    },
+    {
+      "slot": "trua",
+      "weight": 7
+    }
+  ],
+  "serving_desc": "1 tô",
+  "serving_grams": 500,
+  "ingredients": [
+    {
+      "ingredient_slug": "soi-banh-canh",
+      "quantity": 150,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "ca-loc",
+      "quantity": 80,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "tom-su",
+      "quantity": 40,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "thit-lon-nac-vai",
+      "quantity": 40,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "cai-xanh",
+      "quantity": 30,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-la",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "rau-mui",
+      "quantity": 2,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nuoc-mam-truyen-thong",
+      "quantity": 8,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "muoi",
+      "quantity": 1,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hat-tieu-den",
+      "quantity": 0.3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "ot-bot",
+      "quantity": 1,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
+    }
+  ],
+  "recipe_steps": [
+    "Ninh xương/thịt lấy nước dùng; cá lóc luộc gỡ thịt, xào săn với hành, tiêu.",
+    "Thả sợi bánh canh vào nồi nước dùng nấu chín — bột áo sợi làm nước hơi sánh như cháo.",
+    "Múc ra tô với cá lóc, tôm, thịt; thêm rau cải xanh thái nhỏ, hành, mùi; ăn kèm chén nước mắm ớt."
+  ],
+  "recipe_sources": [
+    {
+      "url": "https://danviet.vn/am-thuc-quang-binh-chao-canh-banh-xeo-ten-goi-la-lam-nhung-thom-ngon-ngot-20231227063036615-d1137010.html",
+      "accessed": "2026-10-31",
+      "note": "Dân Việt: cháo canh Quảng Bình — món sợi bánh canh nấu trong nước dùng, cá lóc là thành phần không thể thiếu (đối chiếu món thật)."
+    }
+  ],
+  "media": [],
+  "estimated_kcal": null,
+  "external_ref": null,
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "status": "draft",
+  "source": "curated",
+  "confidence": "unknown",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "loai:bun-pho-mi"
+  ]
+}

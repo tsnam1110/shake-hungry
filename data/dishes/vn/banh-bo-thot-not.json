@@ -1,0 +1,100 @@
+{
+  "slug": "banh-bo-thot-not",
+  "parent_dish_slug": null,
+  "country_code": "VN",
+  "region_code": "vn-an-giang",
+  "names": [
+    {
+      "locale": "en",
+      "name": "palm sugar honeycomb cake",
+      "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "Bánh bò thốt nốt",
+      "is_primary": true
+    }
+  ],
+  "is_eat_out": true,
+  "is_home_cook": true,
+  "cooking_method": "hap",
+  "completeness_level": 1,
+  "meal_slots": [
+    {
+      "slot": "an-vat",
+      "weight": 9
+    },
+    {
+      "slot": "chieu",
+      "weight": 8
+    },
+    {
+      "slot": "sang",
+      "weight": 6
+    }
+  ],
+  "serving_desc": "1 cái",
+  "serving_grams": 90,
+  "ingredients": [
+    {
+      "ingredient_slug": "bot-gao",
+      "quantity": 45,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "duong-thot-not",
+      "quantity": 25,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nuoc-cot-dua",
+      "quantity": 15,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "trung-ga",
+      "quantity": 10,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "cui-dua-nao",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
+    }
+  ],
+  "recipe_steps": [
+    "Nấu đường thốt nốt với nước cốt dừa cho tan, để ấm.",
+    "Trộn bột gạo (đã ủ men) với nước đường thốt nốt, ủ cho bột nở xốp tổ ong.",
+    "Đổ khuôn, hấp chín; bánh chín có màu vàng nâu, ruột xốp rễ tre, rắc dừa nạo nếu thích."
+  ],
+  "recipe_sources": [],
+  "media": [],
+  "estimated_kcal": null,
+  "external_ref": null,
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt)",
+  "status": "draft",
+  "source": "curated",
+  "confidence": "unknown",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "loai:banh"
+  ]
+}

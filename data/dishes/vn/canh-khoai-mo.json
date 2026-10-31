@@ -1,0 +1,112 @@
+{
+  "slug": "canh-khoai-mo",
+  "parent_dish_slug": null,
+  "country_code": "VN",
+  "region_code": "vn-south",
+  "names": [
+    {
+      "locale": "vi",
+      "name": "canh khoai mỡ nấu tôm",
+      "is_primary": true
+    },
+    {
+      "locale": "en",
+      "name": "purple yam soup with shrimp",
+      "is_primary": true
+    }
+  ],
+  "is_eat_out": true,
+  "is_home_cook": true,
+  "cooking_method": "nau",
+  "completeness_level": 1,
+  "meal_slots": [
+    {
+      "slot": "trua",
+      "weight": 8
+    },
+    {
+      "slot": "toi",
+      "weight": 8
+    }
+  ],
+  "serving_desc": "1 tô (phần canh)",
+  "serving_grams": 300,
+  "ingredients": [
+    {
+      "ingredient_slug": "khoai-mo",
+      "quantity": 150,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "tom-su",
+      "quantity": 50,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-tim",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "rau-ngo",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dau-an",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nuoc-mam-truyen-thong",
+      "quantity": 6,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "muoi",
+      "quantity": 1,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    }
+  ],
+  "recipe_steps": [
+    "Khoai mỡ gọt vỏ, dùng muỗng cạo lấy phần thịt khoai; tôm bóc vỏ, băm sơ hoặc để nguyên con nhỏ.",
+    "Phi hành tím, xào tôm săn, đổ nước đun sôi rồi cho khoai mỡ vào, khuấy đều tay cho canh sánh mịn, không vón cục.",
+    "Nêm nước mắm, muối vừa ăn, tắt bếp, cho rau ngổ, dùng nóng với cơm."
+  ],
+  "recipe_sources": [],
+  "media": [],
+  "estimated_kcal": null,
+  "external_ref": null,
+  "import_note": "Soạn nháp đợt mở rộng 300 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Dùng nguyên liệu mới đề xuất: khoai-mo (chờ bổ sung file nguyên liệu vào data/ingredients/).",
+  "status": "draft",
+  "source": "curated",
+  "confidence": "unknown",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "loai:canh"
+  ]
+}

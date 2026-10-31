@@ -73,6 +73,8 @@ công thức), bột canh (bột tôm chỉ ở biến thể bột canh tôm).
 `lua-mi` hiểu theo nghĩa gluten: bia (gluten lúa mạch) cũng mang nhãn này.
 Rươi gây dị ứng theo kinh nghiệm dân gian nhưng là giun nhiều tơ (annelid) —
 không thuộc 9 nhóm trên, nên KHÔNG gắn nhãn; ghi nhận tại đây để khỏi tranh luận lại.
+Tương tự, hạnh nhân và các hạt cây (tree nuts) nằm ngoài từ vựng 9 nhóm hiện tại
+(chỉ đậu phộng có nhóm riêng) — chưa gắn nhãn, cân nhắc bổ sung facet khi có nhu cầu lọc thật.
 
 ## 5. Định nghĩa loại món (biên tập)
 

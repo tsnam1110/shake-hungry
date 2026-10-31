@@ -1,0 +1,112 @@
+{
+  "slug": "che-khuc-bach",
+  "parent_dish_slug": null,
+  "country_code": "VN",
+  "region_code": "vn",
+  "names": [
+    {
+      "locale": "en",
+      "name": "che khuc bach (milk jelly sweet soup with lychee)",
+      "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "Chè khúc bạch",
+      "is_primary": true
+    }
+  ],
+  "is_eat_out": true,
+  "is_home_cook": true,
+  "cooking_method": "nau",
+  "completeness_level": 1,
+  "meal_slots": [
+    {
+      "slot": "chieu",
+      "weight": 9
+    },
+    {
+      "slot": "an-vat",
+      "weight": 9
+    }
+  ],
+  "serving_desc": "1 ly",
+  "serving_grams": 250,
+  "ingredients": [
+    {
+      "ingredient_slug": "sua-tuoi",
+      "quantity": 80,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "vai",
+      "quantity": 40,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "duong-trang",
+      "quantity": 25,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "pho-mai",
+      "quantity": 20,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "rau-cau-kho",
+      "quantity": 4,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-nhan",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "la-dua",
+      "quantity": 1,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
+    }
+  ],
+  "recipe_steps": [
+    "Đun sữa tươi với phô mai (cream cheese) và đường cho tan, cho bột rau câu đã ngâm vào khuấy tan; đổ khuôn, để lạnh và cắt khối vuông.",
+    "Nấu nước đường lá dứa, để nguội.",
+    "Cho khúc bạch vào ly cùng vải (hoặc nhãn), chan nước đường, thêm hạnh nhân lát rang; ăn lạnh."
+  ],
+  "recipe_sources": [],
+  "media": [],
+  "estimated_kcal": null,
+  "external_ref": null,
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt)",
+  "status": "draft",
+  "source": "curated",
+  "confidence": "unknown",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "loai:che-trang-mieng"
+  ]
+}

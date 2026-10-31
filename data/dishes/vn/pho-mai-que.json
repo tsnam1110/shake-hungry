@@ -1,0 +1,104 @@
+{
+  "slug": "pho-mai-que",
+  "parent_dish_slug": null,
+  "country_code": "VN",
+  "region_code": "vn",
+  "names": [
+    {
+      "locale": "en",
+      "name": "fried cheese sticks",
+      "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "Phô mai que",
+      "is_primary": true
+    }
+  ],
+  "is_eat_out": true,
+  "is_home_cook": true,
+  "cooking_method": "chien-ngap-dau",
+  "completeness_level": 1,
+  "meal_slots": [
+    {
+      "slot": "an-vat",
+      "weight": 9
+    },
+    {
+      "slot": "chieu",
+      "weight": 8
+    }
+  ],
+  "serving_desc": "1 phần (5 que)",
+  "serving_grams": 120,
+  "ingredients": [
+    {
+      "ingredient_slug": "pho-mai",
+      "quantity": 70,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "bot-chien-xu",
+      "quantity": 25,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "bot-mi",
+      "quantity": 25,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "trung-ga",
+      "quantity": 15,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "sua-tuoi",
+      "quantity": 10,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "tuong-ot",
+      "quantity": 15,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
+    }
+  ],
+  "recipe_steps": [
+    "Phô mai cắt que dài, để lạnh cho cứng.",
+    "Lăn phô mai qua bột mì, nhúng trứng đánh (pha chút sữa), rồi lăn bột chiên xù; lặp lại một lớp nếu muốn vỏ dày.",
+    "Chiên ngập dầu nhanh đến khi vàng giòn, ăn nóng chấm tương ớt."
+  ],
+  "recipe_sources": [],
+  "media": [],
+  "estimated_kcal": null,
+  "external_ref": null,
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt)",
+  "status": "draft",
+  "source": "curated",
+  "confidence": "unknown",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "loai:banh"
+  ]
+}

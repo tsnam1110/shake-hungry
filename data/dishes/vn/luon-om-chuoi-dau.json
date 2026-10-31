@@ -1,0 +1,144 @@
+{
+  "slug": "luon-om-chuoi-dau",
+  "parent_dish_slug": null,
+  "country_code": "VN",
+  "region_code": "vn-north",
+  "names": [
+    {
+      "locale": "vi",
+      "name": "lươn om chuối đậu",
+      "is_primary": true
+    },
+    {
+      "locale": "en",
+      "name": "eel braised with green banana and tofu",
+      "is_primary": true
+    }
+  ],
+  "is_eat_out": true,
+  "is_home_cook": true,
+  "cooking_method": "kho",
+  "completeness_level": 1,
+  "meal_slots": [
+    {
+      "slot": "trua",
+      "weight": 8
+    },
+    {
+      "slot": "toi",
+      "weight": 8
+    }
+  ],
+  "serving_desc": "1 phần",
+  "serving_grams": 280,
+  "ingredients": [
+    {
+      "ingredient_slug": "luon",
+      "quantity": 120,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "chuoi",
+      "quantity": 80,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dau-phu",
+      "quantity": 60,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "thit-lon-ba-chi",
+      "quantity": 40,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dam-gao",
+      "quantity": 10,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nuoc-mam-truyen-thong",
+      "quantity": 10,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "la-lot",
+      "quantity": 10,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-tim",
+      "quantity": 8,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dau-an",
+      "quantity": 8,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nghe-tuoi",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "tia-to",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    }
+  ],
+  "recipe_steps": [
+    "Lươn làm sạch nhớt, cắt khúc, ướp nghệ, nước mắm; chuối xanh tước vỏ, ngâm nước chua, chần qua.",
+    "Xào thịt ba chỉ và lươn săn, cho chuối và đậu phụ rán vào.",
+    "Om với nước và giấm bỗng (mẻ) lửa nhỏ đến khi chuối mềm; nêm lá lốt, tía tô."
+  ],
+  "recipe_sources": [],
+  "media": [],
+  "estimated_kcal": null,
+  "external_ref": null,
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "status": "draft",
+  "source": "curated",
+  "confidence": "unknown",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "loai:mon-chinh"
+  ]
+}

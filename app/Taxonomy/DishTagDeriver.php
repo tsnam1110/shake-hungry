@@ -22,7 +22,7 @@ final class DishTagDeriver
     public static function proteinGroupOf(string $slug, string $category): ?string
     {
         // Trứng tách trước: trung-ga/trung-vit nằm trong category 'thit'.
-        if (in_array($slug, ['trung-ga', 'trung-vit', 'trung-cut', 'trung-vit-lon', 'trung-vit-muoi'], true)) {
+        if (in_array($slug, ['trung-ga', 'trung-vit', 'trung-cut', 'trung-vit-lon', 'trung-vit-muoi', 'trung-ga-non'], true)) {
             return 'trung';
         }
         // Không có nhóm trong từ vựng — để null thay vì gán sai (TAXONOMY.md §6):
@@ -40,9 +40,9 @@ final class DishTagDeriver
         }
         if ($category === 'thuy-san') {
             return match (true) {
-                str_starts_with($slug, 'tom') || str_starts_with($slug, 'tep') || str_starts_with($slug, 'cua') || $slug === 'be-be' => 'tom-cua',
+                str_starts_with($slug, 'tom') || str_starts_with($slug, 'tep') || str_starts_with($slug, 'cua') || $slug === 'be-be' || $slug === 'ghe' => 'tom-cua',
                 str_starts_with($slug, 'muc') || $slug === 'bach-tuoc' => 'muc',
-                in_array($slug, ['oc-buou', 'ngheu', 'hen', 'don', 'so-diep', 'hau', 'sua-bien'], true) => 'oc',
+                in_array($slug, ['oc-buou', 'oc-len', 'ngheu', 'hen', 'don', 'so-diep', 'hau', 'sua-bien', 'trai'], true) => 'oc',
                 default => 'ca', // cá các loại + lươn + chả cá
             };
         }

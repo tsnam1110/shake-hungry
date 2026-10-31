@@ -1,0 +1,92 @@
+{
+  "slug": "nem-chua-ran",
+  "parent_dish_slug": null,
+  "country_code": "VN",
+  "region_code": "vn-ha-noi",
+  "names": [
+    {
+      "locale": "en",
+      "name": "fried fermented pork (nem chua ran)",
+      "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "Nem chua rán",
+      "is_primary": true
+    }
+  ],
+  "is_eat_out": true,
+  "is_home_cook": true,
+  "cooking_method": "chien",
+  "completeness_level": 1,
+  "meal_slots": [
+    {
+      "slot": "an-vat",
+      "weight": 9
+    },
+    {
+      "slot": "chieu",
+      "weight": 8
+    },
+    {
+      "slot": "toi",
+      "weight": 6
+    }
+  ],
+  "serving_desc": "1 đĩa",
+  "serving_grams": 150,
+  "ingredients": [
+    {
+      "ingredient_slug": "nem-chua",
+      "quantity": 140,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dau-an",
+      "quantity": 10,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "tuong-ot",
+      "quantity": 15,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dua-leo",
+      "quantity": 30,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
+    }
+  ],
+  "recipe_steps": [
+    "Nem chua bóc lá, cắt khúc vừa ăn (có thể lăn qua bột chiên nếu thích vỏ giòn).",
+    "Chiên dầu nóng đến khi nem vàng ruộm, bì trong và giòn.",
+    "Ăn nóng chấm tương ớt, kèm dưa leo."
+  ],
+  "recipe_sources": [],
+  "media": [],
+  "estimated_kcal": null,
+  "external_ref": null,
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt)",
+  "status": "draft",
+  "source": "curated",
+  "confidence": "unknown",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "loai:mon-chinh"
+  ]
+}

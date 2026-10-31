@@ -1,0 +1,211 @@
+{
+  "slug": "pho-chua",
+  "parent_dish_slug": null,
+  "country_code": "VN",
+  "region_code": "vn-north",
+  "names": [
+    {
+      "locale": "vi",
+      "name": "phở chua Lạng Sơn",
+      "is_primary": true
+    },
+    {
+      "locale": "en",
+      "name": "Lang Son sour pho (mixed, brothless)",
+      "is_primary": true
+    }
+  ],
+  "is_eat_out": true,
+  "is_home_cook": true,
+  "cooking_method": "tron",
+  "completeness_level": 1,
+  "meal_slots": [
+    {
+      "slot": "trua",
+      "weight": 8
+    },
+    {
+      "slot": "chieu",
+      "weight": 7
+    },
+    {
+      "slot": "toi",
+      "weight": 7
+    }
+  ],
+  "serving_desc": "1 đĩa",
+  "serving_grams": 450,
+  "ingredients": [
+    {
+      "ingredient_slug": "banh-pho-tuoi",
+      "quantity": 180,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "thit-vit-co-da",
+      "quantity": 60,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "thit-lon-nac-vai",
+      "quantity": 40,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "thit-lon-ba-chi",
+      "quantity": 30,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "gan-lon",
+      "quantity": 25,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "da-day-lon",
+      "quantity": 25,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "khoai-lang",
+      "quantity": 40,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "lac-rang",
+      "quantity": 15,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "lap-xuong",
+      "quantity": 15,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-phi",
+      "quantity": 8,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dua-leo",
+      "quantity": 30,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hung-que",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dam-gao",
+      "quantity": 15,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "duong-trang",
+      "quantity": 12,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nuoc-mam-truyen-thong",
+      "quantity": 8,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "toi",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "ot-tuoi",
+      "quantity": 2,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "bot-nang",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    }
+  ],
+  "recipe_steps": [
+    "Trụng bánh phở, để ráo, bày ra đĩa sâu lòng.",
+    "Vịt quay và xá xíu thái lát; gan, dạ dày, ba chỉ rán/xào chín thái miếng; khoai lang thái chỉ chiên giòn.",
+    "Nấu nước trộn chua ngọt từ giấm, đường, nước mắm, tỏi ớt, khuấy bột năng cho hơi sánh.",
+    "Xếp các nguyên liệu lên phở, rắc lạc rang, hành phi, chan nước trộn, trộn đều khi ăn."
+  ],
+  "recipe_sources": [
+    {
+      "url": "https://vietnamnet.vn/en/brothless-pho-in-lang-son-keeps-diners-cool-and-refreshed-2371191.html",
+      "accessed": "2026-10-31",
+      "note": "VietnamNet: phở chua Lạng Sơn — thành phần và nước trộn chua ngọt (đối chiếu món thật)."
+    }
+  ],
+  "media": [],
+  "estimated_kcal": null,
+  "external_ref": null,
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "status": "draft",
+  "source": "curated",
+  "confidence": "unknown",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "loai:bun-pho-mi"
+  ]
+}

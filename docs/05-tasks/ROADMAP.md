@@ -167,7 +167,7 @@ kiểm chứng TEST-002**; `migrate:fresh --seed` dựng lại đúng toàn bộ
 |---|---|---|---|---|---|
 | [DISH-001](./tasks/DISH-001.md) | 50 món đầu tiên | Dữ liệu | 🔶 | ADM-007 | — |
 | [DISH-002](./tasks/DISH-002.md) | Lên 150 món — **mốc app dùng được** | Dữ liệu | 🔶 | DISH-001 | 2026-10-31 (đã lên 200 món, chờ duyệt) |
-| [DISH-003](./tasks/DISH-003.md) | Lên 300 món | Dữ liệu | ⬜ | DISH-002 | — |
+| [DISH-003](./tasks/DISH-003.md) | Lên 300 món | Dữ liệu | 🔶 | DISH-002 | 2026-10-31 (đã lên 300 món + hệ nhãn phân loại, chờ duyệt) |
 | [DISH-004](./tasks/DISH-004.md) | Lên 500 món — **mốc đủ dùng** | Dữ liệu | ⬜ | DISH-003 | — |
 | [QA-001](./tasks/QA-001.md) | Rà soát chất lượng định kỳ mỗi 50 món | QA | ⬜ | DISH-001 | — |
 | [QA-002](./tasks/QA-002.md) | Chạy đo độ chính xác calo theo ACCURACY-SPEC | QA | ⬜ | DISH-003 | — |

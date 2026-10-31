@@ -1,0 +1,104 @@
+{
+  "slug": "canh-kho-qua-ca-thac-lac",
+  "parent_dish_slug": null,
+  "country_code": "VN",
+  "region_code": "vn-south",
+  "names": [
+    {
+      "locale": "vi",
+      "name": "canh khổ qua cá thác lác",
+      "is_primary": true
+    },
+    {
+      "locale": "en",
+      "name": "bitter melon soup with featherback fish paste",
+      "is_primary": true
+    }
+  ],
+  "is_eat_out": true,
+  "is_home_cook": true,
+  "cooking_method": "nau",
+  "completeness_level": 1,
+  "meal_slots": [
+    {
+      "slot": "trua",
+      "weight": 8
+    },
+    {
+      "slot": "toi",
+      "weight": 8
+    }
+  ],
+  "serving_desc": "1 tô (phần canh)",
+  "serving_grams": 300,
+  "ingredients": [
+    {
+      "ingredient_slug": "ca-thac-lac",
+      "quantity": 100,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "muop-dang",
+      "quantity": 120,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-la",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nuoc-mam-truyen-thong",
+      "quantity": 6,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "muoi",
+      "quantity": 1,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hat-tieu-den",
+      "quantity": 0.5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    }
+  ],
+  "recipe_steps": [
+    "Cá thác lác quết dai với nước mắm, tiêu, vo viên; khổ qua bỏ ruột, cắt khoanh hoặc chẻ miếng.",
+    "Đun nước sôi, thả từng viên cá vào, nấu đến khi viên cá nổi.",
+    "Cho khổ qua vào nấu vừa chín (còn hơi giòn, không nấu nhừ để bớt đắng gắt), nêm vừa ăn, rắc hành lá, dùng nóng."
+  ],
+  "recipe_sources": [],
+  "media": [],
+  "estimated_kcal": null,
+  "external_ref": null,
+  "import_note": "Soạn nháp đợt mở rộng 300 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "status": "draft",
+  "source": "curated",
+  "confidence": "unknown",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "loai:canh"
+  ]
+}

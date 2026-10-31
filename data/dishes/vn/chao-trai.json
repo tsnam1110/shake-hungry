@@ -1,0 +1,132 @@
+{
+  "slug": "chao-trai",
+  "parent_dish_slug": null,
+  "country_code": "VN",
+  "region_code": "vn-ha-noi",
+  "names": [
+    {
+      "locale": "vi",
+      "name": "cháo trai",
+      "is_primary": true
+    },
+    {
+      "locale": "en",
+      "name": "freshwater clam porridge, Hanoi style",
+      "is_primary": true
+    }
+  ],
+  "is_eat_out": true,
+  "is_home_cook": true,
+  "cooking_method": "nau",
+  "completeness_level": 1,
+  "meal_slots": [
+    {
+      "slot": "sang",
+      "weight": 8
+    },
+    {
+      "slot": "chieu",
+      "weight": 6
+    },
+    {
+      "slot": "toi",
+      "weight": 6
+    }
+  ],
+  "serving_desc": "1 tô",
+  "serving_grams": 450,
+  "ingredients": [
+    {
+      "ingredient_slug": "trai",
+      "quantity": 100,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "gao-te",
+      "quantity": 50,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "gao-nep",
+      "quantity": 15,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-phi",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-la",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "rau-ram",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dau-an",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nuoc-mam-truyen-thong",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hat-tieu-den",
+      "quantity": 0.5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    }
+  ],
+  "recipe_steps": [
+    "Trai ngâm rửa sạch bùn, luộc há miệng, tách lấy thịt, bỏ phần ruột đen, thái miếng; giữ nước luộc trai lắng trong.",
+    "Gạo tẻ và gạo nếp nấu cháo bằng nước luộc trai (pha thêm nước/nước dùng nếu cần) cho sánh mịn.",
+    "Phi hành, xào thịt trai nhanh tay với nước mắm, tiêu (xào lâu trai sẽ dai), trút vào cháo, nêm vừa ăn; múc ra tô, thêm hành lá, rau răm, hành phi, dùng nóng."
+  ],
+  "recipe_sources": [],
+  "media": [],
+  "estimated_kcal": null,
+  "external_ref": null,
+  "import_note": "Soạn nháp đợt mở rộng 300 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Dùng nguyên liệu mới đề xuất: trai (chờ bổ sung file nguyên liệu vào data/ingredients/).",
+  "status": "draft",
+  "source": "curated",
+  "confidence": "unknown",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "loai:chao-sup"
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "slug": "canh-bong",
+  "parent_dish_slug": null,
+  "country_code": "VN",
+  "region_code": "vn-ha-noi",
+  "names": [
+    {
+      "locale": "vi",
+      "name": "canh bóng thập cẩm",
+      "is_primary": true
+    },
+    {
+      "locale": "en",
+      "name": "pork skin jelly soup, Hanoi festive style",
+      "is_primary": true
+    }
+  ],
+  "is_eat_out": true,
+  "is_home_cook": true,
+  "cooking_method": "nau",
+  "completeness_level": 1,
+  "meal_slots": [
+    {
+      "slot": "trua",
+      "weight": 7
+    },
+    {
+      "slot": "toi",
+      "weight": 7
+    }
+  ],
+  "serving_desc": "1 tô (phần canh, mâm cỗ)",
+  "serving_grams": 300,
+  "ingredients": [
+    {
+      "ingredient_slug": "bong-bi",
+      "quantity": 20,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "suon-lon",
+      "quantity": 60,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "thit-lon-xay",
+      "quantity": 40,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nam-huong-kho",
+      "quantity": 8,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "ca-rot",
+      "quantity": 30,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "su-hao",
+      "quantity": 40,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dau-ha-lan",
+      "quantity": 20,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "trung-cut",
+      "quantity": 20,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "tom-kho",
+      "quantity": 10,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "gung",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-la",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "rau-mui",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nuoc-mam-truyen-thong",
+      "quantity": 6,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "muoi",
+      "quantity": 1,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hat-tieu-den",
+      "quantity": 0.5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    }
+  ],
+  "recipe_steps": [
+    "Bóng bì ngâm nước vo gạo cho mềm, bóp rửa với gừng và rượu cho hết mùi, cắt miếng hình thoi; nấm hương ngâm nở.",
+    "Hầm sườn lấy nước dùng trong; thịt xay trộn nấm hương, mộc nhĩ thái chỉ (nếu có) viên mọc, thả vào nước dùng cho chín nổi.",
+    "Lần lượt cho su hào, cà rốt, đậu Hà Lan, trứng cút, tôm khô và bóng bì vào nấu chín tới, nêm thanh nhẹ, rắc hành, mùi, tiêu; món cỗ Hà Nội ăn nóng."
+  ],
+  "recipe_sources": [
+    {
+      "url": "https://vi.wikipedia.org/wiki/B%C3%B3ng_b%C3%AC",
+      "accessed": "2026-10-31",
+      "note": "Bài Wikipedia 'Bóng bì' — mô tả món canh bóng trong mâm cỗ Hà Nội (bóng, vây, măng, miến)."
+    }
+  ],
+  "media": [],
+  "estimated_kcal": null,
+  "external_ref": null,
+  "import_note": "Soạn nháp đợt mở rộng 300 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Dùng nguyên liệu mới đề xuất: bong-bi (chờ bổ sung file nguyên liệu vào data/ingredients/).",
+  "status": "draft",
+  "source": "curated",
+  "confidence": "unknown",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "loai:canh"
+  ]
+}

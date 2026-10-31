@@ -1,0 +1,112 @@
+{
+  "slug": "banh-trang-nuong",
+  "parent_dish_slug": null,
+  "country_code": "VN",
+  "region_code": "vn-central",
+  "names": [
+    {
+      "locale": "en",
+      "name": "grilled rice paper (Da Lat pizza)",
+      "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "Bánh tráng nướng",
+      "is_primary": true
+    }
+  ],
+  "is_eat_out": true,
+  "is_home_cook": true,
+  "cooking_method": "nuong",
+  "completeness_level": 1,
+  "meal_slots": [
+    {
+      "slot": "an-vat",
+      "weight": 10
+    },
+    {
+      "slot": "chieu",
+      "weight": 8
+    }
+  ],
+  "serving_desc": "1 cái",
+  "serving_grams": 80,
+  "ingredients": [
+    {
+      "ingredient_slug": "banh-trang",
+      "quantity": 15,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "trung-ga",
+      "quantity": 25,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-la",
+      "quantity": 8,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "sa-te",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "xuc-xich",
+      "quantity": 15,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "tom-kho",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "xot-mayonnaise",
+      "quantity": 8,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
+    }
+  ],
+  "recipe_steps": [
+    "Đặt bánh tráng lên vỉ nướng than lửa nhỏ.",
+    "Đánh trứng với hành lá, tráng đều mặt bánh; thêm sa tế, xúc xích/tôm khô nếu thích.",
+    "Nướng đến khi bánh giòn, trứng chín; gập đôi, ăn nóng."
+  ],
+  "recipe_sources": [],
+  "media": [],
+  "estimated_kcal": null,
+  "external_ref": null,
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt)",
+  "status": "draft",
+  "source": "curated",
+  "confidence": "unknown",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "loai:banh"
+  ]
+}

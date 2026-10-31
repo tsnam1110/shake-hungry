@@ -1,0 +1,104 @@
+{
+  "slug": "hau-nuong",
+  "parent_dish_slug": null,
+  "country_code": "VN",
+  "region_code": "vn",
+  "names": [
+    {
+      "locale": "en",
+      "name": "grilled oysters with scallion oil",
+      "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "Hàu nướng mỡ hành",
+      "is_primary": true
+    }
+  ],
+  "is_eat_out": true,
+  "is_home_cook": true,
+  "cooking_method": "nuong",
+  "completeness_level": 1,
+  "meal_slots": [
+    {
+      "slot": "toi",
+      "weight": 9
+    },
+    {
+      "slot": "an-vat",
+      "weight": 8
+    }
+  ],
+  "serving_desc": "1 đĩa (6 con)",
+  "serving_grams": 200,
+  "ingredients": [
+    {
+      "ingredient_slug": "hau",
+      "quantity": 200,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "mo-lon-nuoc",
+      "quantity": 12,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-la",
+      "quantity": 10,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "lac-rang",
+      "quantity": 8,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dau-an",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "pho-mai",
+      "quantity": 15,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
+    }
+  ],
+  "recipe_steps": [
+    "Hàu tách vỏ trên, rửa nhẹ, để ráo.",
+    "Làm mỡ hành bằng mỡ lợn nóng và hành lá cắt nhỏ.",
+    "Chan mỡ hành (hoặc phủ phô mai) lên hàu, nướng than đến khi hàu vừa chín tới, rắc lạc rang."
+  ],
+  "recipe_sources": [],
+  "media": [],
+  "estimated_kcal": null,
+  "external_ref": null,
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt)",
+  "status": "draft",
+  "source": "curated",
+  "confidence": "unknown",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "loai:mon-chinh"
+  ]
+}

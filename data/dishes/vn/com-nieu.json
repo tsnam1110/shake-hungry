@@ -1,0 +1,84 @@
+{
+  "slug": "com-nieu",
+  "parent_dish_slug": null,
+  "country_code": "VN",
+  "region_code": "vn",
+  "names": [
+    {
+      "locale": "vi",
+      "name": "cơm niêu",
+      "is_primary": true
+    },
+    {
+      "locale": "en",
+      "name": "clay-pot rice",
+      "is_primary": true
+    }
+  ],
+  "is_eat_out": true,
+  "is_home_cook": true,
+  "cooking_method": "nau",
+  "completeness_level": 1,
+  "meal_slots": [
+    {
+      "slot": "trua",
+      "weight": 9
+    },
+    {
+      "slot": "toi",
+      "weight": 9
+    },
+    {
+      "slot": "sang",
+      "weight": 5
+    }
+  ],
+  "serving_desc": "1 niêu",
+  "serving_grams": 380,
+  "ingredients": [
+    {
+      "ingredient_slug": "com-trang",
+      "quantity": 250,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "muoi",
+      "quantity": 1,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "la-dua",
+      "quantity": 2,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
+    }
+  ],
+  "recipe_steps": [
+    "Vo gạo, cho vào niêu đất với nước vừa đủ, đậy vung.",
+    "Nấu lửa nhỏ đến khi cơm chín, cháy xém nhẹ quanh thành niêu tạo lớp cơm cháy.",
+    "Dọn nguyên niêu, ăn kèm món kho/mặn tuỳ bữa."
+  ],
+  "recipe_sources": [],
+  "media": [],
+  "estimated_kcal": null,
+  "external_ref": null,
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "status": "draft",
+  "source": "curated",
+  "confidence": "unknown",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "loai:com"
+  ]
+}

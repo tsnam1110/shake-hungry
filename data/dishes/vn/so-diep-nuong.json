@@ -1,0 +1,100 @@
+{
+  "slug": "so-diep-nuong",
+  "parent_dish_slug": null,
+  "country_code": "VN",
+  "region_code": "vn",
+  "names": [
+    {
+      "locale": "en",
+      "name": "grilled scallops with scallion oil",
+      "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "Sò điệp nướng mỡ hành",
+      "is_primary": true
+    }
+  ],
+  "is_eat_out": true,
+  "is_home_cook": true,
+  "cooking_method": "nuong",
+  "completeness_level": 1,
+  "meal_slots": [
+    {
+      "slot": "trua",
+      "weight": 7
+    },
+    {
+      "slot": "toi",
+      "weight": 9
+    },
+    {
+      "slot": "an-vat",
+      "weight": 7
+    }
+  ],
+  "serving_desc": "1 đĩa (6 con)",
+  "serving_grams": 180,
+  "ingredients": [
+    {
+      "ingredient_slug": "so-diep",
+      "quantity": 180,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "mo-lon-nuoc",
+      "quantity": 15,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-la",
+      "quantity": 10,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "lac-rang",
+      "quantity": 10,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dau-an",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    }
+  ],
+  "recipe_steps": [
+    "Sò điệp rửa sạch, tách một bên vỏ, để ráo.",
+    "Đun mỡ lợn cho nóng, rưới vào hành lá cắt nhỏ làm mỡ hành.",
+    "Chan mỡ hành lên sò, nướng trên than đến khi sò vừa chín, rắc lạc rang giã dập."
+  ],
+  "recipe_sources": [],
+  "media": [],
+  "estimated_kcal": null,
+  "external_ref": null,
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt)",
+  "status": "draft",
+  "source": "curated",
+  "confidence": "unknown",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "loai:mon-chinh"
+  ]
+}
