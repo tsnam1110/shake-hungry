@@ -6,7 +6,7 @@
   "names": [
     {
       "locale": "vi",
-      "name": "nộm hoa chuối tôm thẻ",
+      "name": "Nộm hoa chuối tôm thẻ",
       "is_primary": true
     },
     {
@@ -25,7 +25,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "tron",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -37,7 +37,7 @@
     }
   ],
   "serving_desc": "1 đĩa",
-  "serving_grams": 260,
+  "serving_grams": 340,
   "ingredients": [
     {
       "ingredient_slug": "bap-chuoi",
@@ -49,7 +49,7 @@
     },
     {
       "ingredient_slug": "tom-the",
-      "quantity": 100,
+      "quantity": 50,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -58,6 +58,30 @@
     {
       "ingredient_slug": "tai-lon",
       "quantity": 40,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "thit-lon-ba-chi",
+      "quantity": 30,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-tay",
+      "quantity": 20,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "ca-rot",
+      "quantity": 20,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -126,14 +150,41 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "toi",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Hoa chuối thái mỏng ngâm nước chanh; tôm thẻ luộc chín bóc vỏ; tai lợn luộc thái mỏng.",
-    "Pha nước mắm chua ngọt với chanh, đường và ớt.",
-    "Trộn hoa chuối, tôm và tai lợn với nước trộn, rau thơm; rắc lạc rang và hành phi."
+    "Bắp chuối bỏ bẹ già, bào mỏng, ngâm ngay vào nước pha cốt chanh và chút muối 10–15 phút cho trắng giòn, vớt ra vắt ráo; hành tây bào mỏng ngâm giấm–đường cho bớt hăng; cà rốt bào sợi.",
+    "Tôm thẻ luộc vừa chín tới (nước sôi, tôm cong và chuyển hồng, khoảng 3–5 phút), vớt ra nước lạnh, bóc vỏ, bỏ chỉ lưng, chẻ đôi nếu tôm to.",
+    "Ba chỉ và tai heo luộc chín (tai luộc riêng cho giòn, ngâm nước đá rồi thái sợi mỏng); ba chỉ để nguội, thái lát mỏng vừa ăn.",
+    "Pha nước trộn: nước mắm, đường và cốt chanh tỉ lệ gần 1:1:1, khuấy tan, cho tỏi ớt băm vào sau cùng; nếm chua–ngọt–mặn cân bằng.",
+    "Cho bắp chuối, cà rốt và hành tây vào tô lớn, rưới hai phần ba nước trộn, trộn nhẹ tay khoảng 3 phút cho thấm; cho tôm, ba chỉ, tai heo, rau răm và húng quế vào, rưới phần nước trộn còn lại, trộn đều lần nữa.",
+    "Bày ra đĩa, xếp vài con tôm lên mặt, rắc lạc rang giã dập và hành phi ngay trước khi ăn để giữ giòn; dùng kèm bánh phồng tôm nếu thích."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-goi-bap-chuoi-hoa-chuoi-tom-thit-gion-ngon-hap-dan-09819",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH: CT1 sốt chua ngọt, 4 người — tôm 300 g → 75 g/khẩu phần, ba chỉ 300 g → 75 g, bắp chuối 1 cái, cà rốt 1 củ, hành tây 2 củ, đậu phộng 50 g → 12,5 g, đường ~19 g; CT2 sốt ớt, 4 người — bắp chuối bào 200 g → 50 g, tôm 100 g → 25 g, ba chỉ 100 g → 25 g, lạc 20 g → 5 g."
+    },
+    {
+      "url": "http://giavihanhphuc.com/thap-cam/goi-bap-chuoi-tom-thit-amp",
+      "accessed": "2026-10-31",
+      "note": "Gia Vị Hạnh Phúc (Nghi's Kitchen; không ghi khẩu phần — dùng theo tỉ lệ): hoa chuối hột 400 g, tôm bạc thẻ 300 g, thịt ba chỉ/đùi 300 g, tai heo 300 g (ba đạm ngang nhau), đậu phộng rang 100 g, hành tím phi 100 g, hành tây 1 củ ngâm giấm đường; nước trộn mắm:đường:chanh = 3:3:3 muỗng."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/287511-g%E1%BB%8Fi-tom-th%E1%BB%8Bt-d%C6%A1n-gi%E1%BA%A3n-d%E1%BA%B9p-m%E1%BA%AFt-ngon-me-ly",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — An Định Viên (Huế), 6 phần: tôm 200 g → 33 g/khẩu phần, ba chỉ 200 g → 33 g, hoa chuối + cà rốt + rau thơm; nước mắm pha tỉ lệ 1:1:1 mắm/đường/chanh. (Trang vaobepwiki là bản gương của ĐMX — đã loại.)"
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/nom-hoa-chuoi-tom-the.webp",
@@ -144,7 +195,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 đợt 2 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 đợt 2 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-009 đợt 9: Nâng Mức 2 — mở kiểm chứng 3 họ độc lập (Điện Máy XANH — vòng 1; Gia Vị Hạnh Phúc, Cookpad An Định Viên — vòng 2). Thêm 4 dòng file thiếu mà ≥2/3 họ có: thit-lon-ba-chi 30 g (3/3 họ — Cookpad 33 g + ĐMX CT2 25 g/khẩu phần; file trước đó chỉ có tai heo), hanh-tay 20 g (2/3 họ), ca-rot 20 g (2/3 họ), toi 3 g (3/3 họ đều có tỏi trong nước trộn). Sửa tom-the 100→50 g (mọi nguồn theo khẩu phần đều 25–75 g — file cao hơn cả cực trên của nguồn). Giữ tai-lon 40 g: Gia Vị Hạnh Phúc dùng tai heo làm đạm thứ ba ngang tôm/thịt — là biến thể có nguồn thật, không phải dòng thừa. Giữ bap-chuoi 120 g (chỉ 1 họ định lượng chắc theo khẩu phần ở mức 50 g — không đủ đồng thuận để sửa, ghi nhận nghi cao) và duong-trang 6 g (hai cách pha nước trộn đối nhau giữa các họ). Serving 260→340 g cho khớp tổng dòng mới (~339 g; bản cũ serving đã thấp hơn tổng dòng 316 g — bất thường vòng 1). Chuẩn hoá tên 'Nộm hoa chuối tôm thẻ'.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -25,7 +25,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "tron",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -57,7 +57,7 @@
     },
     {
       "ingredient_slug": "thit-lon-xay",
-      "quantity": 50,
+      "quantity": 70,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -80,6 +80,14 @@
       "confidence": "low"
     },
     {
+      "ingredient_slug": "hanh-tim",
+      "quantity": 10,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
       "ingredient_slug": "ca-rot",
       "quantity": 15,
       "unit_name": "g",
@@ -89,7 +97,7 @@
     },
     {
       "ingredient_slug": "trung-ga",
-      "quantity": 10,
+      "quantity": 20,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -100,6 +108,22 @@
       "quantity": 20,
       "unit_name": "g",
       "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "lac-rang",
+      "quantity": 10,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dua-leo",
+      "quantity": 15,
+      "unit_name": "g",
+      "is_optional": true,
       "source": "llm_suggested",
       "confidence": "low"
     },
@@ -161,11 +185,31 @@
     }
   ],
   "recipe_steps": [
-    "Trộn thịt xay, mộc nhĩ, miến, cà rốt, trứng làm nhân; cuốn bánh tráng, rán nem vàng giòn.",
-    "Pha nước mắm chua ngọt tỏi ớt.",
-    "Cắt nem, dọn cùng bún, giá và rau thơm, chan nước mắm."
+    "Ngâm mộc nhĩ và miến dong trong nước ấm 15 phút cho nở mềm, cắt ngắn; cà rốt gọt vỏ bào sợi; hành tím băm nhỏ.",
+    "Trộn thịt xay với miến, mộc nhĩ, cà rốt, hành tím và trứng, nêm nước mắm và tiêu; để nhân nghỉ 15–20 phút cho thấm và ráo.",
+    "Trải bánh tráng, cho nhân vào cuốn chặt tay thành cuốn vừa ăn, mép cuối phết chút lòng trắng trứng cho dính.",
+    "Chiên nem lần một lửa vừa 5–6 phút tới khi vỏ vàng nhẹ, vớt ra để ráo và nguội bớt.",
+    "Chiên lần hai lửa lớn 1–2 phút tới khi vỏ vàng giòn đều, vớt ra thấm dầu.",
+    "Pha nước mắm theo tỉ lệ mắm:đường:nước = 1:1:3, thêm tỏi ớt băm, nếm vị chua ngọt vừa.",
+    "Xếp bún ra đĩa cùng giá, xà lách, dưa leo và rau thơm; cắt nem thành miếng vừa ăn bày lên trên, rắc đậu phộng rang, chan nước mắm khi ăn."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/2-cach-lam-bun-nem-nuong-thom-ngon-hap-dan-de-lam-chuan-vi-13210",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH (phần bún nem nướng chả giò), 4 người: thịt heo 500 g → 125 g/khẩu phần, miến khô 50 g → 12,5 g, mộc nhĩ khô 50 g → 12,5 g, cà rốt ~25 g, trứng 2 quả → 25 g, bánh tráng 100 g → 25 g; đậu phộng rang 50 g → 12,5 g. Trang có mâu thuẫn nội bộ (miến ghi 50 g ở danh sách, 100 g trong bước làm) — ghi nhận."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/5982339",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Rose Truong (không ghi khẩu phần): thịt nạc vai 600 g, tôm đất 150 g, hành tím 300 g, củ sắn 100 g, miến dong 10 g, mộc nhĩ 3 tai, bánh tráng 20 cái — đối chiếu thành phần."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/16855317",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Mimi Nguyen, 3 người: thịt xay 200 g → 67 g/khẩu phần + giò sống 200 g → 67 g, trứng 1–2 quả → 17–33 g, bún 1 kg → 333 g; nước mắm pha tỉ lệ 1:1:3 ≈ 20 g mắm + 20 g đường/khẩu phần."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/bun-nem.webp",
@@ -176,7 +220,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. [LV2-009 đợt 9: Nâng Mức 2 — mở kiểm chứng 3 họ nguồn (Điện Máy XANH, Cookpad Rose Truong, Cookpad Mimi Nguyen). Sửa thit-lon-xay 50→70 g (hai nguồn định lượng đều ≥67 g cho riêng phần thịt; phần giò sống trong nguồn Mimi KHÔNG gộp vào vì gio-song null) và trung-ga 10→20 g (nguồn 17–33 g); thêm hanh-tim 10 g (2/3 họ), lac-rang 10 g (2/3 họ), dua-leo 15 g tuỳ chọn (2/3 họ). Giữ bun-tuoi 150 g theo quy ước lượng sợi, moc-nhi-kho 5 g và mien-dong 10 g (nguồn bất đồng 3 so với 12,5 g). Slug nem-chua trong kho là nem lên men — KHÔNG phải nem rán của món này; file mô hình hoá bằng bánh tráng + nhân là đúng. Bất thường cấp dự án (ghi nhận, không tự sửa): nem được chiên ngập dầu nhưng method của món là tron và không có dòng dau-an — engine chưa mô hình hoá dầu hấp thụ cho thành phần chiên trong món trộn.]",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

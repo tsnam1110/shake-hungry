@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "chieu",
@@ -34,7 +34,7 @@
   "ingredients": [
     {
       "ingredient_slug": "khoai-mon",
-      "quantity": 80,
+      "quantity": 120,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -50,7 +50,7 @@
     },
     {
       "ingredient_slug": "duong-trang",
-      "quantity": 25,
+      "quantity": 35,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -59,6 +59,14 @@
     {
       "ingredient_slug": "bot-bang",
       "quantity": 15,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "bot-khoai",
+      "quantity": 25,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -82,11 +90,30 @@
     }
   ],
   "recipe_steps": [
-    "Khoai môn gọt vỏ, cắt khối, hấp hoặc luộc chín tới.",
-    "Bột báng luộc riêng đến khi trong, vớt ra xả nước lạnh.",
-    "Nấu nước cốt dừa với đường và lá dứa, cho khoai môn và bột báng vào, múc ra ly ăn nóng hoặc lạnh."
+    "Bột báng và bột khoai rửa sạch, ngâm nước 40 phút cho nở; vớt ra để ráo.",
+    "Khoai môn đeo găng gọt vỏ, cắt khối 2 cm, ngâm nước muối loãng 10 phút chống ngứa và thâm, rửa sạch.",
+    "Luộc bột báng riêng tới khi hạt trong, còn chấm trắng nhỏ ở tâm; vớt ra xả nước lạnh chống dính. Bột khoai luộc tới khi trong và mềm.",
+    "Nấu khoảng 170 ml nước mỗi khẩu phần với lá dứa và đường cho tan; cho khoai vào nấu lửa vừa 10–12 phút tới khi khoai mềm mà chưa nát.",
+    "Cho bột báng và bột khoai đã luộc vào, nấu thêm 3–4 phút cho quyện; nêm chút muối để tôn vị ngọt.",
+    "Cuối cùng mới cho nước cốt dừa, khuấy nhẹ, vừa sôi lăn tăn thì tắt bếp ngay (đun lâu cốt dừa tách dầu); ăn nóng hoặc lạnh."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://tripi.vn/blog/vi/kinh-nghiem-hay/kham-pha-cach-che-bien-che-khoai-mon-bot-bang-deo-thom-ngon-kho-choi-tu-tripi",
+      "accessed": "2026-10-31",
+      "note": "Tripi: ghi '2–3 người' nhưng tổng khối ~2,15 kg không thể là 2–3 ly 250 g — quy lại ~8 khẩu phần khi đối chiếu (khoai ~125 g, cốt dừa ~50 g, bột báng ~13 g, bột khoai ~19 g, đường ~44 g/khẩu phần). Số người của trang không đáng tin, đã ghi rõ."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/5054395",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Le Minh Trang: biến thể NẾP (khoai 350 g, nếp 200 g, cốt dừa 400 ml + dão 900 ml, đường 250 g; không ghi khẩu phần) — chỉ đối chiếu nền khoai/cốt/đường, không dùng cho phần bột báng."
+    },
+    {
+      "url": "https://kinhdofood.com/cach-nau-che-khoai-mon-bot-bang/",
+      "accessed": "2026-10-31",
+      "note": "KinhDo Food (cách 1), 3 người: khoai 400 g → 133 g/khẩu phần, bột báng 50 g, bột khoai 100 g → 33 g, cốt dừa 150 ml → 50 g, đường 100 g → 33 g, lá dứa. Cùng dòng văn bản lưu hành ở dayhocnghe/ĐMX — tính chung 1 họ."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/che-khoai-mon.webp",
@@ -97,7 +124,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt)",
+  "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-009 đợt 9: Nâng Mức 2 — mở kiểm chứng 3 họ nguồn (Tripi, Cookpad Le Minh Trang — biến thể nếp, KinhDo Food — vòng 2; dòng văn bản dayhocnghe/ĐMX tính cùng họ KinhDo). File là biến thể BỘT BÁNG: thêm bot-khoai 25 g (2/2 họ đúng biến thể đều có: 33 g/khẩu phần và ~19 g quy đổi), sửa khoai-mon 80→120 g (hai họ bột báng đồng thuận ~125–133 g) và duong-trang 25→35 g (33–44 g). nuoc-cot-dua 50 g giữ nguyên — khớp tuyệt đối cả hai họ bột báng; bot-bang 15 g trong dải 13–17 g. Không thêm bột sắn tạo sánh (1 họ) và không dùng biến thể nếp để đối chiếu.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

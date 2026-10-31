@@ -57,8 +57,12 @@ tiếp theo. **LV2-009:** Phần A phân xử bất thường LV2-008 §3 (biên
 null + hồ sơ; bổ sung dòng cho `bun-dau-mam-tom` và
 `canh-ca-linh-bong-dien-dien`; thay dòng sai loài `ngo-gai` → `ngai-bun`
 ở `bun-nuoc-leo`; cần tàu dùng slug sẵn có `rau-can-ta`) — kho 425
-nguyên liệu; Phần B (đợt 9) đang triển khai — xem
-[tasks/LV2-009.md](./tasks/LV2-009.md).
+nguyên liệu. **Phần B đợt 9: 27/55 món xét đạt Mức 2** (2 vòng tra cứu vì
+429 ở vòng 1) — **tổng 373/657 món Mức 2, còn 284 món Mức 1**; 28 món giữ
+có hồ sơ theo nhóm (12 GIỮ-429 làm lại được, 5 thiếu nguồn đúng biến thể,
+3 chờ quyết định danh, 3 trần nguyên liệu/thiếu họ nguồn, 5 không đủ nguồn
+đạt chuẩn); bất thường mới + 3 ca chờ quyết định danh mới gom tại
+[tasks/LV2-009.md](./tasks/LV2-009.md) §B.3.
 
 > Mỗi task có file chi tiết riêng tại [`tasks/`](./tasks/). Click mã task để xem đầy đủ.
 > Tạo task mới: copy [`TASK-TEMPLATE.md`](./TASK-TEMPLATE.md) vào `tasks/`, đặt tên theo mã task.

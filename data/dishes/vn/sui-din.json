@@ -98,7 +98,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt)",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-009 đợt 9: GIỮ Mức 1 — tra cứu bị chặn 429. Ghi nhận bất thường quan hệ món: parent_dish_slug trỏ banh-troi trong khi kho có món riêng banh-troi-tau — quan hệ biến thể cần rà lại ở đợt sau.]",
   "status": "draft",
   "source": "llm_suggested",
   "confidence": "unknown",

@@ -6,7 +6,7 @@
   "names": [
     {
       "locale": "vi",
-      "name": "cháo canh Quảng Bình",
+      "name": "Cháo canh Quảng Bình",
       "is_primary": true
     },
     {
@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -51,6 +51,22 @@
     {
       "ingredient_slug": "tom-su",
       "quantity": 40,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-tim",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dau-an",
+      "quantity": 3,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -122,15 +138,34 @@
     }
   ],
   "recipe_steps": [
-    "Ninh xương/thịt lấy nước dùng; cá lóc luộc gỡ thịt, xào săn với hành, tiêu.",
-    "Thả sợi bánh canh vào nồi nước dùng nấu chín — bột áo sợi làm nước hơi sánh như cháo.",
-    "Múc ra tô với cá lóc, tôm, thịt; thêm rau cải xanh thái nhỏ, hành, mùi; ăn kèm chén nước mắm ớt."
+    "Xương ống heo rửa sạch, chần nước sôi 3–5 phút, rửa lại rồi hầm lửa nhỏ khoảng 1 giờ, hớt bọt thường xuyên — nước dùng trong, ngọt thanh (xương chỉ dùng lấy nước dùng).",
+    "Cá lóc làm sạch, luộc vừa chín trong nước dùng, vớt ra gỡ lấy thịt, bỏ xương; tôm bóc vỏ, bỏ chỉ đen, rửa sạch.",
+    "Phi thơm hành tím băm với dầu ăn, cho thịt cá và tôm vào xào nhanh 2–3 phút với chút nước mắm cho săn và thơm, trút ra để riêng.",
+    "Thịt heo rửa sạch, thái lát mỏng; cải xanh rửa sạch thái nhỏ; hành lá và rau mùi cắt nhỏ.",
+    "Đun sôi lại nước dùng, cho sợi bánh canh vào nấu 5–7 phút tới khi sợi nổi lên, mềm dai và nước hơi sánh lại.",
+    "Cho thịt heo, cá và tôm đã xào vào, nêm muối và nước mắm, nấu thêm 2 phút cho thấm, nếm lại vừa ăn.",
+    "Múc ra tô, rắc hành lá, rau mùi và tiêu, thêm ớt bột nếu ăn cay, dùng nóng."
   ],
   "recipe_sources": [
     {
       "url": "https://danviet.vn/am-thuc-quang-binh-chao-canh-banh-xeo-ten-goi-la-lam-nhung-thom-ngon-ngot-20231227063036615-d1137010.html",
       "accessed": "2026-10-31",
       "note": "Dân Việt: cháo canh Quảng Bình — món sợi bánh canh nấu trong nước dùng, cá lóc là thành phần không thể thiếu (đối chiếu món thật)."
+    },
+    {
+      "url": "https://monngon.edu.vn/webstories/chao-canh-quang-binh-527",
+      "accessed": "2026-10-31",
+      "note": "Món Ngon (Đông Nguyễn), 4–5 người: bột mì 300 g, xương heo 500 g, cá lóc ~500 g, tôm 200 g."
+    },
+    {
+      "url": "https://cholaithieu.com/cach-nau-chao-banh-canh-quang-binh-dam-da-huong-vi-que-nha",
+      "accessed": "2026-10-31",
+      "note": "Chợ Lái Thiêu, 4 người: sợi tươi 1 kg (hoặc 500 g bột gạo + 200 g bột năng), xương 1 kg, tôm 300 g hoặc cá 300 g hoặc chả cá 200 g, thịt 200 g, hành lá 50 g, ngò rí 30 g, ngò gai 30 g, cải 200 g, giá 100 g."
+    },
+    {
+      "url": "https://buulong.com.vn/cach-nau-banh-canh-quang-binh.html",
+      "accessed": "2026-10-31",
+      "note": "Bửu Long: sợi 1 kg/4 người, xương 1 kg, topping 100–200 g/loại."
     }
   ],
   "media": [
@@ -143,7 +178,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-009 đợt 9: Nâng Mức 2 — mở kiểm chứng 3 họ nguồn (Món Ngon/Đông Nguyễn, Chợ Lái Thiêu, Bửu Long; nguồn Dân Việt sẵn có trong file khẳng định cá lóc là thành phần cốt lõi và cải xanh thái nhỏ ăn kèm). Thêm hanh-tim 5 g (2/3 họ phi hành xào cá/tơm) và dau-an 3 g cho bước phi theo Phương án A. Giữ soi-banh-canh 150 g (nguồn bất đồng 130–250 g sợi tươi/khẩu phần) và toàn bộ định lượng còn lại vì nguồn bất đồng >30% hoặc file nằm trong dải đa số. Chuẩn hoá tên chính tiếng Việt 'Cháo canh Quảng Bình'. Ghi nhận: xương ống heo chưa có slug trong kho — chỉ xuất hiện ở bước hầm nước dùng, không có dòng nguyên liệu.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

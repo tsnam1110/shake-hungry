@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "tron",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -30,7 +30,7 @@
     }
   ],
   "serving_desc": "1 tô",
-  "serving_grams": 320,
+  "serving_grams": 390,
   "ingredients": [
     {
       "ingredient_slug": "bun-tuoi",
@@ -49,7 +49,7 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "gia-do",
+      "ingredient_slug": "doc-mung",
       "quantity": 30,
       "unit_name": "g",
       "is_optional": false,
@@ -57,8 +57,16 @@
       "confidence": "low"
     },
     {
+      "ingredient_slug": "gia-do",
+      "quantity": 50,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
       "ingredient_slug": "lac-rang",
-      "quantity": 10,
+      "quantity": 20,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -73,7 +81,31 @@
       "confidence": "low"
     },
     {
+      "ingredient_slug": "dau-an",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-tim",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
       "ingredient_slug": "nuoc-mam-truyen-thong",
+      "quantity": 8,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "mam-ruoc",
       "quantity": 8,
       "unit_name": "g",
       "is_optional": false,
@@ -98,11 +130,36 @@
     }
   ],
   "recipe_steps": [
-    "Hến luộc tách thịt, giữ lại nước luộc hến trong, lắng cặn.",
-    "Xào thịt hến với hành tím và nước mắm cho thơm.",
-    "Xếp bún, giá, thịt hến vào tô, rắc lạc rang, hành phi; chan nước hến nóng, trộn đều khi ăn."
+    "Hến ngâm nước vo gạo hoặc nước ớt 30–60 phút cho nhả cát, rửa sạch; luộc tới khi há vỏ, đãi lấy thịt, lắng nước luộc lấy phần trong, giữ nóng.",
+    "Dọc mùng tước vỏ, bào sợi, bóp muối, vắt ráo, chần nhanh; giá đỗ chần 30 giây; rau thơm rửa sạch cắt nhỏ.",
+    "Phi thơm hành tím với dầu ăn, cho thịt hến vào xào lửa lớn 2–3 phút, nêm nước mắm, đảo tới khi hến săn và ráo.",
+    "Pha mắm ruốc: hoà mắm ruốc với ít nước luộc hến nóng và chút đường, khuấy tan, lọc bỏ cặn.",
+    "Phi ớt bột với ít dầu làm sa tế (hoặc dùng sa tế sẵn), để riêng.",
+    "Xếp bún vào tô, bày dọc mùng, giá và rau thơm; cho hến xào lên trên, rắc lạc rang giã dập và hành phi.",
+    "Rưới mắm ruốc và sa tế, chan kèm chén nước hến nóng riêng; trộn đều khi ăn."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/2-cach-nau-bun-hen-bun-tom-thom-ngon-chuan-vi-a-01895",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH, 3 người: hến sống 1 kg, lạc rang 100 g → 33 g/khẩu phần, giá 200 g → 67 g, xà lách 200 g, dưa leo 1 quả, sa tế 150 g, dầu xào hến 2 muỗng canh."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/6194600",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Bếp của Quỳnh, 4 người: hến 2 kg, bún 1 kg, giá 200 g → 50 g/khẩu phần, dọc mùng 300 g → 75 g, xoài xanh, mắm ruốc Huế."
+    },
+    {
+      "url": "https://nauankhongkho.vn/blog/cach-lam-com-hen-hue-voi-nuoc-mam-ruoc-chuan-vi-e9D6618JZ5EP",
+      "accessed": "2026-10-31",
+      "note": "Nấu Ăn Không Khó — biến thể CƠM hến (cùng hệ topping/nước hến/mắm ruốc, chỉ khác nền cơm): hến 2 kg vỏ cho ~300 g thịt, dọc mùng 60 g, giá 60 g, lạc 80 g, mắm ruốc 2 muỗng canh, hành tím 10 g, dầu ăn 4 muỗng canh."
+    },
+    {
+      "url": "https://emvaobep.com/cach-lam-bun-hen-hue-ngon-tai-nha-va-dung-vi-hue-chi-voi-10-buoc/",
+      "accessed": "2026-10-31",
+      "note": "Em Vào Bếp (bản gương amthucvn/thuvienso tính cùng họ): hến 300 g, bún 500 g, giá 100 g, mắm ruốc 3 muỗng cà phê, dọc mùng, hoa chuối, khế, tóp mỡ, lạc 1/2 chén (không ghi khẩu phần)."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/bun-hen.webp",
@@ -113,7 +170,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-009 đợt 9: Nâng Mức 2 — mở kiểm chứng 4 họ nguồn (Điện Máy XANH, Cookpad Bếp của Quỳnh — vòng 1; Nấu Ăn Không Khó, Em Vào Bếp — vòng 2; NAKK là biến thể cơm hến, chỉ đối chiếu hệ topping/mắm ruốc/nước hến). Thêm mam-ruoc 8 g (3/4 họ có, dải 5–10 g/khẩu phần), doc-mung 30 g (Cookpad 75 g/khẩu phần, NAKK 60 g/mẻ — lấy thận trọng), dau-an 5 g chỉ cho bước xào hến theo Phương án A, hanh-tim 5 g (bước nấu của file vốn nhắc hành tím nhưng thiếu dòng — mâu thuẫn nội bộ đã khép). Sửa gia-do 30→50 g (ĐMX 67, Cookpad 50), lac-rang 10→20 g. Giữ bun-tuoi 150 g theo quy ước sợi và hen 80 g (quy đổi thịt từ nguồn 67–100 g — file trong dải). Serving 320→390 g theo tổng dòng mới + nước hến chan. Không thêm: xà lách/dưa leo (chỉ ĐMX định lượng rõ), dòng sa-te riêng (2/4 họ), trái chua (hai họ dùng hai loại khác nhau — xoài/khế).]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

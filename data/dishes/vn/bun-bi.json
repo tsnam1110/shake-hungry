@@ -6,7 +6,7 @@
   "names": [
     {
       "locale": "vi",
-      "name": "bún bì",
+      "name": "Bún bì",
       "is_primary": true
     },
     {
@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "tron",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -34,7 +34,7 @@
     }
   ],
   "serving_desc": "1 tô",
-  "serving_grams": 400,
+  "serving_grams": 450,
   "ingredients": [
     {
       "ingredient_slug": "bun-tuoi",
@@ -46,15 +46,15 @@
     },
     {
       "ingredient_slug": "bi-lon",
-      "quantity": 50,
+      "quantity": 60,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
     },
     {
-      "ingredient_slug": "thit-lon-nac-vai",
-      "quantity": 50,
+      "ingredient_slug": "thit-lon-ba-chi",
+      "quantity": 90,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -117,10 +117,10 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "nuoc-cot-dua",
-      "quantity": 30,
+      "ingredient_slug": "nuoc-dua-tuoi",
+      "quantity": 40,
       "unit_name": "g",
-      "is_optional": true,
+      "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
     },
@@ -128,17 +128,42 @@
       "ingredient_slug": "lac-rang",
       "quantity": 8,
       "unit_name": "g",
-      "is_optional": true,
+      "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Bì lợn và thịt nạc thái chỉ, trộn thính gạo rang và tỏi phi.",
-    "Bày bún với xà lách, dưa leo thái sợi.",
-    "Cho bì lên trên, rắc hành phi; chan nước mắm chua ngọt (có thể thêm nước cốt dừa) khi ăn."
+    "Bì heo luộc chín, lọc bỏ mỡ, thái sợi khi còn ấm; để thật ráo — bì ướt sẽ làm thính bết.",
+    "Thịt ba rọi rửa sạch, ướp nước mắm, tỏi và chút đường 15 phút; khìa với nước dừa tươi lửa nhỏ 20–25 phút tới khi thịt chín, nước sệt lại; để nguội, thái sợi.",
+    "Trộn bì, thịt sợi và tỏi băm; gần ăn mới rắc thính gạo, trộn đều cho thính áo khô từng sợi.",
+    "Pha nước mắm chua ngọt: nước mắm, đường, nước ấm và tỏi ớt băm (thêm chanh/giấm theo khẩu vị).",
+    "Xà lách và dưa leo rửa sạch, thái sợi; lạc rang giã dập; hành phi để riêng.",
+    "Xếp bún vào tô, bày xà lách, dưa leo; cho bì trộn thính lên trên.",
+    "Rắc lạc rang và hành phi, chan nước mắm chua ngọt khi ăn."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/558760-bun-bi",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Nguyễn Lê Hồng Hạnh, 5 phần: thịt nạc 300 g luộc nước dừa → 60 g/khẩu phần, bì 300 g → 60 g, bún 1 kg, thính 50 g; có cà rốt ngâm chua."
+    },
+    {
+      "url": "https://cookingwithlane.com/vietnamese-shredded-pork-skin-vermicelli-noodle-bun-bi/",
+      "accessed": "2026-10-31",
+      "note": "Cooking With Lane, 4 khẩu phần: thịt ba chỉ 454 g → 113 g/khẩu phần, bì 1 túi đông lạnh (không cân), thính 3 muỗng canh."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/15144924",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Shan Wu 'Bún bì thịt khìa', 4 người: ba rọi 450 g khìa nước dừa → 112 g/khẩu phần, bì 300 g → 75 g, bún 1 kg, thính 25 g."
+    },
+    {
+      "url": "https://runawayrice.com/noodles-rice/shredded-pork-and-rice-vermicelli/",
+      "accessed": "2026-10-31",
+      "note": "RunAwayRice (Trang): tô lắp ráp — bì trộn sẵn 2 cups, bún chín 20 oz, xà lách, dưa leo, mỡ hành, cà rốt + củ cải chua, đậu phộng, nước mắm pha (chỉ đối chiếu cấu trúc/topping)."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/bun-bi.webp",
@@ -149,7 +174,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-009 đợt 9: Nâng Mức 2 — mở kiểm chứng 4 họ nguồn (Cookpad Nguyễn Lê Hồng Hạnh, Cooking With Lane — vòng 1; Cookpad Shan Wu, RunAwayRice — vòng 2). Phân xử dạng thịt: 2/3 họ định lượng dùng BA RỌI (Lane 113 g, Shan Wu 112 g/khẩu phần) — ĐỔI thit-lon-nac-vai 50 g thành thit-lon-ba-chi 90 g (quy theo thang tô của file); bản nạc của Hạnh là thiểu số 1/3. Sửa bi-lon 50→60 g (Hạnh 60, Shan Wu 75). BỎ nuoc-cot-dua (0/4 họ dùng cốt dừa — cả 3 họ nấu thịt đều dùng NƯỚC DỪA TƯƠI luộc/khìa) và thêm nuoc-dua-tuoi 40 g. lac-rang chuyển từ tuỳ chọn thành dòng chính (4/4 họ đều rắc). Giữ bun-tuoi 180 g theo quy ước sợi, thinh-gao 8 g (dải nguồn 4–10 g). Serving 400→450 g. Không thêm ca-rot chua (2/4 họ — dưới ngưỡng) và mo-hanh (1/4 họ). Chuẩn hoá tên 'Bún bì'.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -6,7 +6,7 @@
   "names": [
     {
       "locale": "vi",
-      "name": "lẩu dê",
+      "name": "Lẩu dê",
       "is_primary": true
     },
     {
@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "toi",
@@ -53,26 +53,10 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "nam-rom",
-      "quantity": 30,
-      "unit_name": "g",
-      "is_optional": false,
-      "source": "llm_suggested",
-      "confidence": "low"
-    },
-    {
       "ingredient_slug": "rau-muong",
       "quantity": 40,
       "unit_name": "g",
       "is_optional": false,
-      "source": "llm_suggested",
-      "confidence": "low"
-    },
-    {
-      "ingredient_slug": "cai-thao",
-      "quantity": 40,
-      "unit_name": "g",
-      "is_optional": true,
       "source": "llm_suggested",
       "confidence": "low"
     },
@@ -95,6 +79,14 @@
     {
       "ingredient_slug": "sa",
       "quantity": 10,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "gung",
+      "quantity": 5,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -126,11 +118,31 @@
     }
   ],
   "recipe_steps": [
-    "Thịt dê thui/chặt miếng, ướp riềng, sả khử mùi; xào săn rồi đổ nước nấu nước lẩu.",
-    "Bày đậu phụ chiên, khoai môn, nấm và rau để nhúng kèm.",
-    "Khi ăn nhúng thịt dê và rau củ; chấm chao pha đường và ớt, ăn kèm bún."
+    "Thịt dê chà gừng giã và rượu trắng để khử mùi, rửa sạch, thái miếng vừa ăn; ướp nước mắm, đường và sa tế 30–60 phút cho thấm.",
+    "Khoai môn gọt vỏ, cắt miếng, chiên sơ cho vàng mặt để khi hầm không bị nát.",
+    "Phi thơm sả và riềng, cho thịt dê vào xào săn, thêm nước và gói gia vị thuốc bắc (quế, hồi, thảo quả) vào hầm lửa nhỏ khoảng 30 phút, hớt bọt.",
+    "Cho khoai môn và củ sen vào hầm tiếp tới khi mềm mà không nát; nêm lại vừa ăn.",
+    "Pha nước chấm: đánh tan chao với đường và sả băm, thêm ớt — chao là nước chấm riêng, không cho vào nồi.",
+    "Chuyển sang nồi lẩu giữ sôi trên bàn, bày đậu phụ chiên và bún ra đĩa riêng.",
+    "Khi ăn nhúng thêm rau nếu thích, chấm thịt dê với chao, ăn kèm bún."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://tripi.vn/blog/vi/kinh-nghiem-hay/kham-pha-cong-thuc-nau-lau-de-dam-da-huong-vi-ngon-nhu-mon-an-tai-nha-hang-cao-cap-tripi",
+      "accessed": "2026-10-31",
+      "note": "Tripi, 3–4 người: thịt dê 1 kg → 250–333 g/khẩu phần, khoai môn 200 g → ~57 g, củ sen 200 g, chao làm nước chấm 2 muỗng canh."
+    },
+    {
+      "url": "https://www.huongnghiepaau.com/lau-de",
+      "accessed": "2026-10-31",
+      "note": "Hướng Nghiệp Á Âu (không ghi khẩu phần): 2 công thức; riềng xuất hiện trong sa tế, nấm dùng là nấm đông cô cùng gói thuốc bắc."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/10431495",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Phương Dung, 5 người: thịt dê 3 kg → 600 g/khẩu phần (mẻ tiệc — ngoại lệ cao)."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/lau-de.webp",
@@ -141,7 +153,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-009 đợt 9: Nâng Mức 2 — mở kiểm chứng 3 họ nguồn (Tripi, Hướng Nghiệp Á Âu, Cookpad Phương Dung). Thêm gung 5 g (3/3 họ — bước khử mùi dê); BỎ nam-rom 30 g và cai-thao 40 g tuỳ chọn (0/3 họ — nguồn dùng nấm đông cô/thuốc bắc và tần ô/cải bẹ/mồng tơi). Giữ thit-de 150 g dù nguồn cho 250–600 g/khẩu phần: các họ bất đồng >30% và khác mô hình hầm/nhúng — ghi nhận là bất thường chờ chủ dự án quyết định vị (ứng viên 250 g theo Tripi). Giữ dau-phu-chien 30 g (nguồn chủ yếu dùng đậu trắng/non — không hoán đổi slug khi chưa đồng thuận) và chao 15 g (3/3 họ dùng làm nước chấm riêng, bước nấu đã ghi đúng). Chuẩn hoá tên 'Lẩu dê'.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

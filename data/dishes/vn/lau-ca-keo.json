@@ -6,7 +6,7 @@
   "names": [
     {
       "locale": "vi",
-      "name": "lẩu cá kèo",
+      "name": "Lẩu cá kèo",
       "is_primary": true
     },
     {
@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "toi",
@@ -26,7 +26,7 @@
     }
   ],
   "serving_desc": "1 phần lẩu",
-  "serving_grams": 450,
+  "serving_grams": 500,
   "ingredients": [
     {
       "ingredient_slug": "ca-keo",
@@ -54,7 +54,7 @@
     },
     {
       "ingredient_slug": "ca-chua",
-      "quantity": 50,
+      "quantity": 80,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -85,14 +85,6 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "sa",
-      "quantity": 5,
-      "unit_name": "g",
-      "is_optional": false,
-      "source": "llm_suggested",
-      "confidence": "low"
-    },
-    {
       "ingredient_slug": "duong-trang",
       "quantity": 5,
       "unit_name": "g",
@@ -117,8 +109,24 @@
       "confidence": "low"
     },
     {
+      "ingredient_slug": "hanh-tim",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dau-an",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
       "ingredient_slug": "la-giang",
-      "quantity": 20,
+      "quantity": 50,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -126,11 +134,31 @@
     }
   ],
   "recipe_steps": [
-    "Nấu nước lẩu chua thơm với sả, cà chua (lá giang nếu có — xem ghi chú thiếu nguyên liệu).",
-    "Nhúng cá kèo nguyên con cùng rau muống, giá vào nước lẩu sôi.",
-    "Chấm nước mắm ớt, ăn kèm bún."
+    "Cá kèo tuốt nhớt bằng muối/chanh hoặc lá chuối, bỏ hai vảy tanh ở đầu và sợi chỉ dọc sống lưng, rửa sạch, để nguyên con trong tô đậy kín.",
+    "Xương ống chần, hầm 1–1,5 giờ với khoảng 1,5 L nước, hớt bọt — nước dùng trong, ngọt nhẹ (có thể dùng nước lọc nếu không hầm xương).",
+    "Lá giang nhặt bỏ dây, rửa sạch, vò nát; cà chua bổ múi cau; rau đắng, rau muống và giá đỗ rửa sạch để ráo.",
+    "Phi thơm hành tím và tỏi băm với dầu ăn, cho cà chua vào xào 2 phút cho mềm và ra màu, trút nước hầm vào đun sôi.",
+    "Cho lá giang vào, nêm nước mắm và đường; sôi lại 2–3 phút — nước chua thanh, không gắt; nêm lại lần cuối.",
+    "Chuyển sang nồi lẩu giữ sôi; khi ăn thả cá kèo vào, đậy nắp 3–4 phút — cá vừa chín trắng, thịt không rã.",
+    "Nhúng rau đắng, rau muống và giá ăn tới đâu nhúng tới đó; ăn kèm bún tươi, chấm cá với nước mắm ớt nguyên chất."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.huongnghiepaau.com/lau-ca-keo",
+      "accessed": "2026-10-31",
+      "note": "Hướng Nghiệp Á Âu (tác giả Bùi Tiến Dũng — họ giáo trình; bản CET của Chef Lập và AEON cùng họ), 3–4 người: cá kèo 500 g → ~143 g/khẩu phần, lá giang 300 g → ~86 g, rau đắng 500 g, cà chua 4 quả ~110 g, bún 1 kg, nước 1,5 L."
+    },
+    {
+      "url": "https://nauco29.com/tin-am-thuc/meo-che-bien-lau-ca-keo-thom-ngon-de-lam.html",
+      "accessed": "2026-10-31",
+      "note": "Nấu Cỗ 29, 4 người: cá kèo 1 kg → 250 g/khẩu phần, lá giang 200 g → 50 g, cà chua 3 quả ~85 g, rau sống 1 kg, bún 1 kg."
+    },
+    {
+      "url": "https://tripi.vn/blog/vi/kinh-nghiem-hay/huong-dan-nau-lau-ca-keo-la-giang-dam-da-thom-ngat-lam-bua-an-gia-dinh-them-tron-ven-tripi",
+      "accessed": "2026-10-31",
+      "note": "Tripi (không ghi khẩu phần): cá kèo 500 g, lá giang 200 g, cà chua 2 quả, khóm ½ trái, bún 500 g; phi hành tím + tỏi với dầu ăn; rau ăn kèm rau nhút/kèo nèo/bạc hà/bông súng/rau muống."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/lau-ca-keo.webp",
@@ -141,7 +169,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu).",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu). [LV2-009 đợt 9: Nâng Mức 2 — mở kiểm chứng 3 họ nguồn độc lập (họ giáo trình HNAAu/CET/AEON, Nấu Cỗ 29, Tripi). Cá kèo có số tầng 6 nên món tính được, mang cờ chưa kiểm định. Sửa la-giang 20→50 g (hai họ cho 200 g/mẻ, họ giáo trình 300 g — file cũ thấp hơn hẳn, lấy đầu thấp) và ca-chua 50→80 g; thêm dau-an 5 g cho bước phi nền và hanh-tim 5 g (2/3 họ phi hành tím + tỏi trước khi nấu nước lẩu — Phương án A). BỎ sa 5 g (0/3 họ dùng sả trong lẩu cá kèo lá giang). KHÔNG thêm rau-dang: chỉ họ giáo trình dùng (500 g/mẻ, cả bản rau đắng) = 1/3 họ sau khi đủ 3 họ — dưới ngưỡng 2/3, ghi nhận chờ phân xử. Giữ ca-keo 150 g (nguồn bất đồng 143 so với 250 g/khẩu phần; file sát họ giáo trình). Serving 450→500 g. Bất thường chờ phân xử: me-chin đang để tuỳ chọn song song với lá giang trong khi nguồn xem me là phương án THAY THẾ lá giang; khóm có ở 1/3 họ (Tripi) — chưa thêm. Rau nhút và bông súng chưa thêm (slug null/không có). Chuẩn hoá tên 'Lẩu cá kèo'.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

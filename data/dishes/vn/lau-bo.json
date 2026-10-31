@@ -6,7 +6,7 @@
   "names": [
     {
       "locale": "vi",
-      "name": "lẩu bò",
+      "name": "Lẩu bò",
       "is_primary": true
     },
     {
@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "toi",
@@ -47,6 +47,14 @@
     {
       "ingredient_slug": "dau-phu-chien",
       "quantity": 30,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "khoai-mon",
+      "quantity": 40,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -126,11 +134,31 @@
     }
   ],
   "recipe_steps": [
-    "Hầm xương bò với sả và hành tây làm nước dùng; nêm nước mắm, thêm sa tế nếu thích cay.",
-    "Bày bắp bò và thịt bò nạm/gầu thái mỏng, đậu phụ chiên, nấm và rau ra đĩa.",
-    "Khi ăn nhúng thịt bò, đậu, nấm và rau vào nồi lẩu sôi, ăn kèm bún tươi."
+    "Bắp bò và nạm chà gừng và rượu, rửa sạch, thái lát mỏng ngang thớ; xếp ra đĩa, giữ lạnh tới khi ăn.",
+    "Rang hành tây và gừng trên chảo khô 3–5 phút cho xém thơm; rang nhanh quế, hồi, thảo quả rồi cho vào túi lọc gia vị.",
+    "Hầm xương hoặc thịt vụn với sả đập dập, hành gừng đã rang và túi gia vị 40–60 phút lửa nhỏ, hớt bọt thường xuyên — nước trong, thơm nhẹ mùi hồi quế.",
+    "Vớt túi gia vị, nêm nước mắm và đường phèn; cho khoai môn vào nấu 8–10 phút tới khi khoai mềm mà không nát, cho hành tây bổ múi vào sau cùng.",
+    "Phi sả băm với chút dầu và sa tế cho dậy mùi, trút vào nồi lẩu (chỉ dầu của bước phụ theo Phương án A — file không có dòng dầu riêng).",
+    "Chuyển nước lẩu sang nồi lẩu, giữ sôi lăn tăn trên bàn; bày thịt, đậu phụ chiên, nấm kim châm, cải thảo, rau muống và bún ra đĩa riêng.",
+    "Khi ăn nhúng thịt từng ít một 10–20 giây cho vừa chín tới, nhúng rau và nấm sau; ăn kèm bún, chấm chao sa tế nếu thích."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/amp/cach-nau-lau-bo-thap-cam-hap-dan-thom-lung-don-gian-tai-nha-12127",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH (lẩu bò thập cẩm), 4 người: bắp bò 600 g → 150 g/khẩu phần, gân 400 g → 100 g, ba chỉ bò 400 g, bò viên 200 g, khoai môn 150 g → ~38 g, củ cải 200 g → 50 g, hành tây 2 củ, sả 6 cây, tàu hũ ky."
+    },
+    {
+      "url": "https://tripi.vn/blog/vi/kinh-nghiem-hay/cong-thuc-lau-bo-thap-cam-thom-ngon-khong-the-cuong-lai-duoc-tripi",
+      "accessed": "2026-10-31",
+      "note": "Tripi (lẩu bò thập cẩm), 3–4 người: thịt bò 400 g → ~114 g/khẩu phần, gân 300 g → ~86 g, sách 300 g → ~86 g, đậu hũ 3 miếng, bún 1 kg."
+    },
+    {
+      "url": "https://bepxua.vn/cach-nau-lau-bo-thap-cam-ngon-tuyet-voi/",
+      "accessed": "2026-10-31",
+      "note": "Bếp Xưa, 4 người: bắp bò 900 g → 225 g/khẩu phần, gân 400 g → 100 g, bò viên 200 g, khoai môn 500 g → 125 g, củ cải 250 g, đậu hũ trắng 2 miếng, chao làm nước chấm."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/lau-bo.webp",
@@ -141,7 +169,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-009 đợt 9: Nâng Mức 2 — mở kiểm chứng 3 họ nguồn, đều là bản thập cẩm (Điện Máy XANH, Tripi, Bếp Xưa). Thêm khoai-mon 40 g (có ở 3/3 họ — điểm đồng thuận cao nhất của món; lượng bất đồng 38–125 g/khẩu phần nên lấy đầu thấp của ĐMX). GIỮ định lượng thịt (bap-bo 80 g, thit-bo-nam 60 g): nguồn bất đồng >30% theo từng phần thịt và tổng lượng dao động 120–400 g/khẩu phần tuỳ bản nhẹ/thập cẩm — chờ chủ dự án quyết định vị lại món, không tự nâng ồ ạt. Trần ghi nhận: gân bò (~86–100 g/khẩu phần ở 3/3 họ), sách bò, bò viên, ba chỉ bò đều chưa có slug trong kho (LƯU Ý gan-bo là GAN, tuyệt đối không ánh xạ cho gân) — đưa vào hàng đợi biên soạn nguyên liệu. Nước chấm chao có ở 2/3 họ nhưng là nước chấm riêng — không thêm dòng (liên quan câu hỏi mở Q10 nhóm chấm). Chuẩn hoá tên 'Lẩu bò'.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "chieu",
@@ -57,14 +57,6 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "la-dua",
-      "quantity": 1,
-      "unit_name": "g",
-      "is_optional": true,
-      "source": "llm_suggested",
-      "confidence": "low"
-    },
-    {
       "ingredient_slug": "muoi",
       "quantity": 0.5,
       "unit_name": "g",
@@ -74,11 +66,30 @@
     }
   ],
   "recipe_steps": [
-    "Hạt sen bỏ tim, luộc/nấu cho mềm nhưng không nát.",
-    "Long nhãn khô ngâm nước cho nở mềm.",
-    "Nấu nước đường phèn với lá dứa, cho hạt sen và long nhãn vào nấu thêm ít phút, ăn nóng hoặc lạnh."
+    "Hạt sen tươi bỏ tâm sen (phần xanh đắng), rửa sạch; long nhãn khô ngâm nước ấm 15 phút cho nở mềm, rửa lại.",
+    "Luộc hạt sen với nước khoảng 30 phút lửa vừa tới khi sen mềm bở mà không nát, vớt ra để riêng, giữ lại nước luộc.",
+    "Cho một phần đường phèn vào hạt sen, rim 5 phút lửa nhỏ cho sen thấm ngọt.",
+    "Nhẹ nhàng lồng từng hạt sen vào trong từng quả long nhãn, xếp ra bát.",
+    "Đun phần nước luộc sen với đường phèn còn lại và chút muối, vừa sôi thì cho long nhãn đã lồng sen vào, đun thêm 2–3 phút rồi tắt bếp ngay — đun lâu long nhãn sẽ dai và nước bị đục.",
+    "Để nguội rồi ướp lạnh; múc ra ly, ăn lạnh. Không dùng con số calo in sẵn trên thẻ công thức của nguồn (QT-1)."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://hc.com.vn/ords/nnews/che-hat-sen-long-nhan",
+      "accessed": "2026-10-31",
+      "note": "HC (không ghi khẩu phần, mẻ 2 L): hạt sen tươi 200 g (khô 100 g), nhãn khô 200 g, đường phèn 500 g."
+    },
+    {
+      "url": "https://bepxua.vn/cach-nau-che-long-nhan-hat-sen-thanh-mat-bo-duong/?amp=1",
+      "accessed": "2026-10-31",
+      "note": "Bếp Xưa, 4 người: sen 400 g → 100 g/khẩu phần, nhãn tươi 1 kg, đường phèn 400 g → 100 g (bản đặc, ngoại lệ cao)."
+    },
+    {
+      "url": "https://bachhoaxanh.com/cach-nau-che-hat-sen-long-nhan",
+      "accessed": "2026-10-31",
+      "note": "Bách Hoá XANH (không ghi khẩu phần, mẻ 4 L): sen khô 100 g, nhãn khô 100 g, đường phèn 270–350 g."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/che-hat-sen-long-nhan.webp",
@@ -89,7 +100,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt)",
+  "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-009 đợt 9: Nâng Mức 2 — mở kiểm chứng 3 họ nguồn (HC, Bếp Xưa, Bách Hoá XANH). BỎ la-dua (0/3 họ). Giữ hat-sen-tuoi 40 g, nhan-kho 15 g, duong-phen 25 g, muoi 0,5 g: định lượng các họ bất đồng rất lớn (riêng đường dao động 17–100 g/khẩu phần) và số của file nằm trong dải nguồn. Ghi nhận: vani có ở 2/3 họ nhưng kho chưa có slug — đưa vào hàng đợi biên soạn nguyên liệu, không chặn nâng vì là gia vị vết. Vùng 'vn' giữ nguyên (Huế và Hưng Yên đều nhận là đặc sản).]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

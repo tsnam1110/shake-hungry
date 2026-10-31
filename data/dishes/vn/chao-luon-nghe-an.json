@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -38,7 +38,15 @@
   "ingredients": [
     {
       "ingredient_slug": "gao-te",
-      "quantity": 50,
+      "quantity": 40,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "gao-nep",
+      "quantity": 10,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -63,6 +71,30 @@
     {
       "ingredient_slug": "hanh-tim",
       "quantity": 8,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-la",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "cu-nen",
+      "quantity": 4,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "gung",
+      "quantity": 3,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -102,11 +134,30 @@
     }
   ],
   "recipe_steps": [
-    "Lươn làm sạch nhớt, luộc chín, tuốt thịt; giữ nước luộc.",
-    "Gạo rang thơm, nấu cháo bằng nước luộc lươn tới khi cháo sánh.",
-    "Phi hành tím và bột nghệ, xào thịt lươn với nước mắm; múc cháo ra tô, đặt lươn lên, rắc rau răm, tiêu."
+    "Lươn bóp muối và chanh cho hết nhớt, rửa sạch; luộc lươn với vài lát gừng khoảng 10 phút tới khi thịt vừa chín, vớt ra để nguội, gỡ lấy thịt, giữ lại nước luộc và phần xương.",
+    "Cho xương lươn vào nước luộc hầm thêm 15–20 phút lửa nhỏ để lấy nước dùng, vớt bỏ xương, lọc nước trong.",
+    "Gạo tẻ và gạo nếp vo sạch, rang trên chảo khô 3–5 phút tới khi hạt gạo thơm và hơi vàng.",
+    "Cho gạo đã rang vào nước dùng, nấu lửa vừa khoảng 30 phút, khuấy đều tay tới khi hạt gạo nở bung, cháo sánh nhẹ; nêm muối vừa ăn.",
+    "Phi thơm củ nén và hành tím với dầu ăn, cho thịt lươn vào xào cùng bột nghệ 5 phút lửa vừa tới khi lươn săn, vàng đều và thấm gia vị; nêm nước mắm.",
+    "Múc cháo ra tô, cho lươn xào nghệ lên trên, rắc hành lá, rau răm và tiêu, ăn nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.bluestone.com.vn/blogs/vao-bep/cach-nau-chao-luon",
+      "accessed": "2026-10-31",
+      "note": "Bluestone: lươn 500–600 g, gạo tẻ 120 g, gạo nếp 30 g, nước mắm 1–2 muỗng canh, dầu 1 muỗng canh, nước 1–1,2 L (không ghi khẩu phần)."
+    },
+    {
+      "url": "https://tripi.vn/blog/vi/kinh-nghiem-hay/kham-pha-cong-thuc-nau-chao-luon-voi-nghe-chuan-vi-nghe-an-mon-an-dam-da-huong-sac-va-cuc-ky-bo-duong-tripi",
+      "accessed": "2026-10-31",
+      "note": "Tripi: lươn 500 g, gạo tẻ 100 g, gạo nếp 50 g, nghệ tươi 30 g, củ nén 15 g, rau răm 50 g (không ghi khẩu phần; bản Hawonkoo trùng số liệu = cùng một họ)."
+    },
+    {
+      "url": "https://www.dieutri.vn/songkhoe/chao-luon",
+      "accessed": "2026-10-31",
+      "note": "Điều Trị (sổ tay nấu ăn): tỉ lệ theo chén — ướp 500 g lươn với 1 muỗng canh nước mắm; xào 1 chén lươn với dầu 2 muỗng canh + hành tím + nghệ; gạo:nước = 1:4–5."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/chao-luon-nghe-an.webp",
@@ -117,7 +168,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-009 đợt 9: Nâng Mức 2 — mở kiểm chứng 3 họ nguồn (Bluestone, Tripi — bản Hawonkoo trùng số liệu tính cùng họ, Điều Trị). Cả 3 họ đều KHÔNG ghi khẩu phần: mọi quy đổi đều giả định mẻ = 4 khẩu phần và đã ghi rõ ở đây theo kỷ luật đợt. Sửa gao-te 50→40 g và THÊM gao-nep 10 g (3/3 họ đều trộn nếp, tổng gạo không đổi); thêm hanh-la 5 g (4/4 họ tính cả bản cùng họ), cu-nen 4 g (slug null — gia vị phụ, engine ghi missing) và gung 3 g. Giữ luon 100 g (nguồn 125–150 g sống → ~100–120 g sau làm sạch), bot-nghe 2 g (nguồn dùng nghệ tươi, tương đương bột ~2–2,5 g), dau-an 5 g chỉ cho bước xào lươn theo Phương án A.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

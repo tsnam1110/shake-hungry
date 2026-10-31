@@ -6,7 +6,7 @@
   "names": [
     {
       "locale": "vi",
-      "name": "chè đậu trắng",
+      "name": "Chè đậu trắng",
       "is_primary": true
     },
     {
@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "chieu",
@@ -43,6 +43,14 @@
     {
       "ingredient_slug": "bot-nep",
       "quantity": 30,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "bot-nang",
+      "quantity": 3,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -74,11 +82,30 @@
     }
   ],
   "recipe_steps": [
-    "Ngâm đậu trắng (đang thiếu trong kho) và nếp qua đêm.",
-    "Nấu đậu trắng và nếp với nước, lá dứa cho chín mềm, dẻo.",
-    "Cho đường, khuấy đều; chan nước cốt dừa khi ăn."
+    "Đậu trắng ngâm với chút muối nở 5–6 giờ cho mềm vỏ, đãi sạch; gạo nếp vo sạch, ngâm riêng 1–2 giờ.",
+    "Luộc đậu trong nước mới 30–40 phút lửa vừa tới khi hạt đậu mềm bở mà còn nguyên hạt, vớt ra để ráo.",
+    "Nấu nếp với lá dứa và nước khoảng 20 phút lửa nhỏ, khuấy đều tay tới khi nếp nở mềm, sánh nhẹ.",
+    "Pha bột năng với ít nước lạnh, rót từ từ vào nồi nếp, khuấy liên tục 1–2 phút tới khi chè sánh trong.",
+    "Cho đường và đậu đã luộc vào, rim thêm 5 phút lửa nhỏ cho đậu thấm ngọt, nếm lại vừa ăn.",
+    "Thắng nước cốt dừa với chút muối cho vừa sôi lăn tăn thì tắt bếp; múc chè ra chén, chan cốt dừa lên mặt, ăn ấm hoặc lạnh."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/2-cach-nau-che-dau-trang-va-che-dau-van-don-gian-va-thom-ngon-04837",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH, 4 người: đậu trắng 300 g → 75 g/khẩu phần, nếp 250 g → 62,5 g, đường ~87,5 g, bột năng 15 g → 3,8 g, nước cốt dừa nhất 400 ml (phần dão 1,5 L là nước nấu, không tính cốt)."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/15910239",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Rose Truong (không ghi khẩu phần; quy đổi theo mẻ, độ tin cậy thấp): đậu ~42–50 g, nếp ~8–10 g, đường ~21–25 g, cốt dừa ~17–20 g/khẩu phần."
+    },
+    {
+      "url": "https://saigontourist.edu.vn/cach-nau-che-dau-trang-ngon.html",
+      "accessed": "2026-10-31",
+      "note": "Trường Saigontourist, 2 biến thể (không ghi khẩu phần): đậu 200 g, nếp 150 g; bản 2 dùng đường phèn 300 g, cốt dừa 600 ml."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/che-dau-trang.webp",
@@ -89,7 +116,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu).",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu). [LV2-009 đợt 9: Nâng Mức 2 — mở kiểm chứng 3 họ nguồn (Điện Máy XANH, Cookpad Rose Truong, Saigontourist). Thêm bot-nang 3 g (3/3 họ đều dùng để tạo sánh). GIỮ toàn bộ định lượng còn lại: các họ bất đồng >30% ở mọi dòng chính (đậu 75 so với ~45 g; đường ~87,5 so với ~21–25 và 60–75 g; cốt dừa 100 so với ~20 và 120–150 g) và số của file nằm trong cụm đa số; không tính phần nước dão 1,5 L của ĐMX là cốt dừa. Chuẩn hoá tên 'Chè đậu trắng'. Bất thường chờ phân xử (không tự sửa): cả 3 họ đều dùng GẠO nếp nguyên hạt trong khi file dùng bot-nep (bột) — đề xuất hoán đổi bot-nep 30 g → gao-nep 30 g (slug có số) ở pha phân xử riêng.]",
   "status": "draft",
   "source": "llm_suggested",
   "confidence": "unknown",

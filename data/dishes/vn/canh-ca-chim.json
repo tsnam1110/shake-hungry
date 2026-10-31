@@ -11,14 +11,14 @@
     },
     {
       "locale": "en",
-      "name": "Pomfret soup with tomato and pineapple",
+      "name": "Pomfret soup with tomato and water celery",
       "is_primary": true
     }
   ],
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -42,15 +42,15 @@
     },
     {
       "ingredient_slug": "ca-chua",
-      "quantity": 50,
+      "quantity": 80,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
     },
     {
-      "ingredient_slug": "dua-thom",
-      "quantity": 30,
+      "ingredient_slug": "rau-can-ta",
+      "quantity": 20,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -81,6 +81,22 @@
       "confidence": "low"
     },
     {
+      "ingredient_slug": "duong-trang",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dau-an",
+      "quantity": 4,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
       "ingredient_slug": "muoi",
       "quantity": 1,
       "unit_name": "g",
@@ -90,11 +106,35 @@
     }
   ],
   "recipe_steps": [
-    "Cá chim làm sạch, khứa thân, ướp nước mắm và muối.",
-    "Nấu cà chua và thơm với nước cho ra vị chua dịu, nêm vừa ăn.",
-    "Thả cá vào nấu chín tới, rắc hành lá, thì là, dùng nóng."
+    "Cá chim làm sạch, chà muối và chanh để khử tanh, rửa lại, để ráo; khứa nhẹ hai mặt cho thịt cá thấm đều khi nấu.",
+    "Cà chua rửa sạch: ba phần tư bổ múi cau, một phần tư băm nhỏ để xào lấy màu; cần tàu, hành lá và thì là rửa sạch, cắt khúc 3–4 cm.",
+    "Cho dầu ăn vào nồi, cho phần cà chua băm vào xào lửa vừa khoảng 3 phút đến khi cà mềm, ra màu đỏ và dầu nổi váng màu.",
+    "Đổ khoảng 250 ml nước mỗi khẩu phần vào nồi, đun sôi, nêm muối và đường rồi thả cá vào nấu 8–10 phút lửa vừa, không đảo để cá không nát — cá chín khi thịt trắng, dễ tách khỏi xương.",
+    "Cho cà chua bổ múi cau vào nấu thêm 2 phút cho vừa mềm mà không nát, nêm nước mắm, nếm lại vị chua thanh, mặn nhẹ.",
+    "Tắt bếp, cho cần tàu, hành lá và thì là vào, đậy nắp 1 phút cho rau vừa héo; múc ra tô, ăn nóng với cơm."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://cachnaungon.com/cach-lam-canh-ca-chim-nau-ngot-thom-ngon-don-gian-07776",
+      "accessed": "2026-10-31",
+      "note": "Bản gương Điện Máy XANH, 4 người: cá chim 2 con, cà chua ~100 g/khẩu phần, cần tàu 3 nhánh, dầu xào cà chua ~4 g/khẩu phần — đối chiếu định lượng chính."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/10572416",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — BẾP CỦA TUI, 3–4 người: cá 1 kg, cà chua 300 g (75–100 g/khẩu phần), cần tàu 100 g (25–33 g/khẩu phần)."
+    },
+    {
+      "url": "https://bepmina.vn/mon-viet/ca-chim-lam-mon-gi-ngon",
+      "accessed": "2026-10-31",
+      "note": "Bếp MiNa: khẳng định thành phần nấu ngót chuẩn là cà chua + cần tàu (không định lượng)."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/12128111",
+      "accessed": "2026-10-31",
+      "note": "Cookpad: biến thể thiểu số có thơm, không định lượng — đã mở để phân xử, không theo."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/canh-ca-chim.webp",
@@ -105,7 +145,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt DISH-004 đợt 2 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-008 đợt 8: HOLD do 429. Đã mở đọc 2 nguồn nhưng một nguồn thuộc họ sao chép Điện Máy XANH và nguồn Cookpad còn lại không có định lượng gram; khi mở nguồn Cookpad thứ ba để đủ ≥3 nguồn độc lập thì gặp HTTP 429 → dừng theo brief. Chưa đủ cơ sở đối chiếu định lượng ≥2 nguồn độc lập cho mọi dòng. Điểm cần phân xử ở lần chạy lại: file dùng thơm (dua-thom 30g) + thì là, trong khi họ ĐMX/Món Ngon Mỗi Ngày dùng cần tàu và không thơm — hai biến thể nấu ngót khác nhau, cần nguồn thứ ba có định lượng để chốt biến thể chuẩn.]",
+  "import_note": "Soạn nháp đợt DISH-004 đợt 2 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-008 đợt 8: HOLD do 429. Đã mở đọc 2 nguồn nhưng một nguồn thuộc họ sao chép Điện Máy XANH và nguồn Cookpad còn lại không có định lượng gram; khi mở nguồn Cookpad thứ ba để đủ ≥3 nguồn độc lập thì gặp HTTP 429 → dừng theo brief. Chưa đủ cơ sở đối chiếu định lượng ≥2 nguồn độc lập cho mọi dòng. Điểm cần phân xử ở lần chạy lại: file dùng thơm (dua-thom 30g) + thì là, trong khi họ ĐMX/Món Ngon Mỗi Ngày dùng cần tàu và không thơm — hai biến thể nấu ngót khác nhau, cần nguồn thứ ba có định lượng để chốt biến thể chuẩn.] [LV2-009 đợt 9: Nâng Mức 2 — thử lại món bị 429 ở đợt 8, đã mở kiểm chứng 3 họ nguồn (Cách Nấu Ngon/ĐMX, Cookpad BẾP CỦA TUI, Bếp MiNa; kèm 1 bản Cookpad biến thể thơm đã mở để phân xử). Phân xử biến thể: nấu ngót chuẩn là cà chua + cần tàu, KHÔNG thơm — BỎ dua-thom 30 g (0/3 họ chính; bản có thơm là thiểu số không định lượng) và sửa tên Anh bỏ 'pineapple'. Sửa ca-chua 50→80 g (nguồn 75–100 g/khẩu phần); thêm rau-can-ta 20 g (cần tàu — slug có từ LV2-004), duong-trang 3 g, dau-an 4 g chỉ cho bước xào cà chua theo Phương án A (không chiên cá trước như một bản Cookpad). Giữ ca-chim 120 g: nguồn cân cá nguyên con và bất đồng >30%, khác cơ sở cân thô–tinh của kho (câu hỏi cấp kho đang chờ quyết).]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -6,7 +6,7 @@
   "names": [
     {
       "locale": "vi",
-      "name": "thịt đông",
+      "name": "Thịt đông",
       "is_primary": true
     },
     {
@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -30,11 +30,11 @@
     }
   ],
   "serving_desc": "1 phần",
-  "serving_grams": 200,
+  "serving_grams": 240,
   "ingredients": [
     {
-      "ingredient_slug": "thit-lon-mong",
-      "quantity": 80,
+      "ingredient_slug": "mong-gio",
+      "quantity": 125,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -42,7 +42,7 @@
     },
     {
       "ingredient_slug": "bi-lon",
-      "quantity": 50,
+      "quantity": 25,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -58,6 +58,14 @@
     },
     {
       "ingredient_slug": "moc-nhi-kho",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nam-huong-kho",
       "quantity": 5,
       "unit_name": "g",
       "is_optional": false,
@@ -82,7 +90,7 @@
     },
     {
       "ingredient_slug": "hanh-tim",
-      "quantity": 5,
+      "quantity": 10,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -106,11 +114,31 @@
     }
   ],
   "recipe_steps": [
-    "Chần bì lợn, thịt và tai lợn, cạo sạch; ninh bì với thịt lửa nhỏ cho ra keo.",
-    "Cho tai lợn và mộc nhĩ vào ninh tiếp, nêm nước mắm, muối, tiêu; hớt bọt cho nước trong.",
-    "Múc ra bát/khuôn, để nguội rồi cho vào tủ lạnh đến khi đông; úp ra đĩa, ăn kèm dưa hành."
+    "Chân giò, bì và tai heo cạo sạch lông, xát muối rửa kỹ; chần nhanh nước sôi, vớt ra rửa lại cho nước nấu trong; thái miếng vuông vừa ăn, bì thái sợi.",
+    "Nấm hương khô và mộc nhĩ khô ngâm nước ấm cho nở, cắt bỏ chân, thái sợi; hành tím băm nhỏ; cà rốt tỉa hoa, chần sơ (chỉ để lót đáy khuôn).",
+    "Ướp chân giò, bì và tai heo với nước mắm, muối, tiêu và một phần ba hành tím khoảng 30 phút cho thấm.",
+    "Phi thơm một phần hành tím, cho nấm hương và mộc nhĩ vào xào săn với chút nước mắm, múc ra để riêng (không cho nấm vào ninh từ đầu để giữ giòn và hương).",
+    "Phi phần hành còn lại, cho thịt đã ướp vào xào săn; đổ nước ngập mặt, đun sôi, hớt bọt liên tục, hạ lửa nhỏ ninh 40–60 phút tới khi thịt và bì mềm, nước hơi sánh keo.",
+    "Cho nấm đã xào vào, nấu thêm 5 phút, nêm lại, rắc tiêu đập dập; xếp hoa cà rốt xuống đáy bát/khuôn rồi múc thịt đông lên trên.",
+    "Để nguội hoàn toàn rồi cho vào ngăn mát 4–6 giờ cho đông chắc; khi ăn úp ngược ra đĩa, thái miếng, dùng kèm dưa hành hoặc cải chua."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-nau-thit-kho-dong-ngon-cho-nhung-ngay-tet-00424",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH: CT1, 4 người — chân giò 500 g → 125 g/khẩu phần, da heo 200 g → 50 g, nấm hương ngâm nở 50 g (≈5 g khô), mộc nhĩ ngâm nở 50 g (≈5 g khô), hành tây ~25 g, hành tím ~11 g; CT2 cùng họ — chân giò 125 g, da heo 100 g → 25 g."
+    },
+    {
+      "url": "https://eva.vn/mon-ngon-tu-thit-lon/2-cach-nau-thit-dong-ga-va-lon-trong-veo-ngon-mem-chuan-vi-voi-moc-nhi-c343a529418.html",
+      "accessed": "2026-10-31",
+      "note": "Bếp Eva (không ghi khẩu phần): chân giò nguyên bì 1 kg, tai heo 500 g, mộc nhĩ 30 g, nấm hương 20 g, cà rốt 1 củ tỉa hoa lót đáy khuôn, hành khô 2 củ; dầu chỉ để phi hành/xào (bước phụ)."
+    },
+    {
+      "url": "https://giavichinsu.com/thit-dong-ha-noi-net-dep-thuc-ngay-tet.html",
+      "accessed": "2026-10-31",
+      "note": "Gia vị CHIN-SU: CT truyền thống 4 người — chân giò 500 g → 125 g/khẩu phần, bì 100 g → 25 g, nấm hương khô 20 g → 5 g, mộc nhĩ khô 20 g → 5 g, hành khô 5 củ, nước mắm 1 muỗng canh; CT Tết 3–4 người thêm tai heo 500 g và cà rốt."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/thit-dong.webp",
@@ -121,7 +149,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-009 đợt 9: Nâng Mức 2 — mở kiểm chứng 3 họ độc lập (Điện Máy XANH — vòng 1; Eva, CHIN-SU — vòng 2; một trang trong kết quả tìm kiếm có số giống hệt ĐMX bị loại vì nghi bản sao). THAY thit-lon-mong 80 g bằng mong-gio 125 g: cả 3/3 họ đều dùng CHÂN GIÒ (ĐMX và CHIN-SU đều đúng 125 g/khẩu phần, đồng thuận tuyệt đối) — file vừa sai phần thịt vừa lệch −36%. Thêm nam-huong-kho 5 g (3/3 họ đều có, file thiếu hẳn). Sửa bi-lon 50→25 g (CHIN-SU cả 2 CT ~23–25 g + ĐMX CT2 25 g; riêng ĐMX CT1 là 50 g — họ ĐMX tự chia đôi, ghi rõ tranh chấp) và hanh-tim 5→10 g (hai họ ~11 g). Giữ tai-lon 40 g (biến thể có thật ở Eva và CHIN-SU CT Tết) và ca-rot 20 g (vai trò tỉa hoa lót khuôn ở 2 họ, lượng không thống nhất). Dầu phi/xào có ở 2 họ nhưng không nguồn nào định lượng — không thêm dòng dau-an theo tiền lệ LV2-003/004. Serving 200→240 g theo tổng dòng mới. Lượng chân giò của nguồn là cân mua (có xương/da) — phần ăn được xử lý qua hệ số của nguyên liệu, thuộc quy ước cân mong-gio đang chờ quyết toàn kho. Chuẩn hoá tên 'Thịt đông'.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

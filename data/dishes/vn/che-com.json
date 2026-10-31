@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "an-vat",
@@ -82,11 +82,30 @@
     }
   ],
   "recipe_steps": [
-    "Đun nước với lá dứa, cho đường và chút muối.",
-    "Pha bột năng rót vào cho nước chè sánh trong, cho cốm xanh vào khuấy nhẹ rồi tắt bếp ngay để cốm không nát.",
-    "Múc ra chén, chan nước cốt dừa; ăn nóng."
+    "Cốm nhặt sạn, đãi nhanh qua nước sạch rồi vớt ra ngay để ráo — không ngâm cốm, ngâm lâu cốm nát và vữa khi nguội.",
+    "Đun nước với lá dứa bó gọn khoảng 10 phút cho thơm, vớt lá dứa ra; cho đường và chút muối, khuấy tan hoàn toàn.",
+    "Hoà bột năng với ít nước lạnh cho tan hết; rót từ từ vào nồi đang sôi, vừa rót vừa khuấy đều tay tới khi nước chè sánh trong.",
+    "Cho cốm vào, khuấy nhẹ một chiều; vừa sôi trở lại thì tắt bếp ngay — để sôi lâu cốm nát và mất hạt căng.",
+    "Để chè nghỉ vài phút, thỉnh thoảng khuấy vòng tròn nhẹ một chiều cho hạt cốm nở căng đều.",
+    "Múc ra chén, chan nước cốt dừa lên trên; ăn nóng hoặc để nguội thêm đá bào."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "http://giavihanhphuc.com/com/che-com-nuoc-cot-dua-gvhp-amp",
+      "accessed": "2026-10-31",
+      "note": "Gia Vị Hạnh Phúc: cốm 100 g, đường trắng 150 g, bột năng 30 g + bột béo 10 g, nước 600 ml, lá nếp 2 lá; nước cốt dừa chan riêng khi trình bày (không định lượng). Kỹ thuật: cốm cho vào cuối, sôi lại là tắt, không ngâm cốm, khuấy một chiều."
+    },
+    {
+      "url": "https://congthucgiadinh.com/mon-an/che-com",
+      "accessed": "2026-10-31",
+      "note": "Công Thức Gia Đình (không ghi khẩu phần): cốm tươi 200 g, nước cốt dừa 200 ml nấu chung ở cuối, đường thốt nốt 150 g, bột năng 2 muỗng canh, nước 1 lít, lá dứa tuỳ chọn, vani."
+    },
+    {
+      "url": "https://kinhdofood.com/cach-nau-che-com-nuoc-cot-dua-deo/",
+      "accessed": "2026-10-31",
+      "note": "KinhDo Food (công thức chính), 5 người: cốm xanh 400 g → 80 g/khẩu phần, đường nâu 200 g → 40 g, bột năng 100 g → 20 g, nước cốt dừa 70 ml nấu riêng để chan. Các công thức cốm–hạt sen/cốm–đậu xanh trên cùng trang KHÔNG dùng đối chiếu (khác biến thể)."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/che-com.webp",
@@ -97,7 +116,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt)",
+  "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-009 đợt 9: Nâng Mức 2 (bảo thủ — nâng bằng nguồn và bước nấu, KHÔNG sửa định lượng) — mở kiểm chứng 3 họ độc lập đúng nhánh cốm THUẦN (Gia Vị Hạnh Phúc, Công Thức Gia Đình, KinhDo Food; đã loại các bản cốm–hạt sen/cốm–đậu xanh cùng trang khỏi đối chiếu). Không dòng nào đạt ngưỡng sửa: bot-nang (tỉ lệ so với cốm 0,13) nằm trong dải nguồn 0,08–0,30; nuoc-cot-dua (tỉ lệ 1,0) khớp mô hình nấu-chung của Công Thức Gia Đình (hai họ còn lại chan riêng lượng nhỏ); duong-trang 25 g thuộc cực ít ngọt của dải tỉ lệ đường/cốm 0,50–1,50 — cả 3 họ đều cao hơn nhưng trải rộng gấp 3 lần, không đồng thuận một mức; com-xanh 60 g trong dải quy đổi rộng. Vani có ở 2/3 họ nhưng kho chưa có slug vani — không thêm, ghi vào hàng đợi nguyên liệu.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

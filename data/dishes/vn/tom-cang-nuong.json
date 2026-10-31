@@ -89,7 +89,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-009 đợt 9: GIỮ Mức 1 — thiếu nguồn đúng biến thể: đã mở 3 họ (Bách Hoá XANH bản sa tế qua bản gương, Điện Máy XANH bản tôm thường bơ tỏi/muối ớt, DaoHaiSan không khẩu phần) — không họ nào là biến thể nướng mọi + mỡ hành của file; lượng tôm cũng bất đồng 133–250 g/khẩu phần. Câu hỏi cho chủ dự án: món là 'nướng mọi + mỡ hành' hay bản ướp gia vị? Ghi nhận thêm: serving 200 g so với tổng dòng 173 g; tên chính tiếng Việt đang viết thường.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

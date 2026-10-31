@@ -6,7 +6,7 @@
   "names": [
     {
       "locale": "vi",
-      "name": "lẩu ếch măng cay",
+      "name": "Lẩu ếch măng cay",
       "is_primary": true
     },
     {
@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "toi",
@@ -30,7 +30,7 @@
   "ingredients": [
     {
       "ingredient_slug": "ech",
-      "quantity": 120,
+      "quantity": 250,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -39,6 +39,30 @@
     {
       "ingredient_slug": "mang-tuoi",
       "quantity": 60,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "ca-chua",
+      "quantity": 50,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dau-phu",
+      "quantity": 50,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nam-huong-kho",
+      "quantity": 5,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -118,11 +142,31 @@
     }
   ],
   "recipe_steps": [
-    "Làm sạch ếch, chặt miếng, ướp nước mắm, tiêu; xào săn với sả, tỏi, ớt và lá lốt.",
-    "Đổ nước nấu thành nước lẩu cùng măng (thường dùng măng chua), nêm vị cay mặn vừa ăn.",
-    "Khi ăn nhúng thêm rau muống, ăn kèm bún tươi."
+    "Ếch làm sạch, chặt miếng vừa ăn, ướp muối, tiêu và chút nước mắm 15 phút; măng tươi tước sợi, luộc 2–3 lần nước cho hết đắng, vắt ráo; nấm hương khô ngâm nở, cắt đôi.",
+    "Chiên sơ ếch trong dầu nóng 2–3 phút tới khi thịt săn và hơi vàng mặt, vớt ra để riêng (dầu là môi trường chiên — không tính dòng dầu riêng, theo tiền lệ đợt 3).",
+    "Phi thơm tỏi và sả băm, cho cà chua vào xào 2 phút cho mềm và ra màu.",
+    "Cho măng vào xào cùng 3–4 phút cho thấm, thêm nước dùng hoặc nước lọc, đun sôi, nêm nước mắm và đường.",
+    "Cho đậu phụ và nấm hương vào nồi, nấu 5 phút; cho ếch đã chiên vào, nấu thêm 3–4 phút tới khi ếch chín hẳn.",
+    "Nêm lại vị cay mặn vừa ăn, thêm lá lốt thái sợi và ớt, chuyển sang nồi lẩu giữ sôi lăn tăn trên bàn.",
+    "Khi ăn nhúng rau muống tới đâu ăn tới đó, ăn kèm bún tươi."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/3-cach-lam-lau-ech-cay-thom-dam-da-ca-nha-deu-thich-01614",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH (Hoàng Lê Tuyết Minh), 4 người: ếch 1 kg → 250 g/khẩu phần, măng tươi 300 g → 75 g, đậu hũ 200 g → 50 g, cà chua 2 quả ~50 g, dầu 4 muỗng canh."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/25062472",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Bòn Bon, 4 phần: ếch 1 kg → 250 g/khẩu phần, măng 300 g → 75 g, cà chua 2 quả ~50 g, bún 500 g → 125 g, rau 500 g → 125 g."
+    },
+    {
+      "url": "https://www.cet.edu.vn/cach-nau-lau-ech-mang-chua",
+      "accessed": "2026-10-31",
+      "note": "CET (giáo trình, không ghi khẩu phần): kỹ thuật ếch chiên vàng trước, măng xào sa tế."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/lau-ech.webp",
@@ -133,7 +177,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-009 đợt 9: Nâng Mức 2 — mở kiểm chứng 3 họ nguồn (Điện Máy XANH, Cookpad Bòn Bon, CET). Sửa ech 120→250 g (2/2 nguồn định lượng đồng thuận chính xác 1 kg/4 người, file thấp hơn 52%); thêm ca-chua 50 g, dau-phu 50 g, nam-huong-kho 5 g (≥2/3 họ có). Giữ mang-tuoi 60 g (nguồn 75 g — lệch 20%, dưới ngưỡng sửa) và bun-tuoi 80 g tuỳ chọn (chỉ 1 họ định lượng). Không thêm dòng dau-an dù 3/3 họ dùng dầu chiên/xào ếch (lượng không nhất quán — kỹ thuật ghi ở bước nấu, tiền lệ LV2-003). Đính chính bước nấu cũ nói 'măng chua' trong khi slug là măng tươi và nguồn nghiêng về măng tươi — giữ slug mang-tuoi. Ghi nhận: tía tô/mùi tàu có ở 2/3 họ nhưng không định lượng — chưa thêm (tia-to 5 g là ứng viên cho pha phân xử). Chuẩn hoá tên 'Lẩu ếch măng cay'.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

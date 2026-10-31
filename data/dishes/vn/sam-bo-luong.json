@@ -6,7 +6,7 @@
   "names": [
     {
       "locale": "vi",
-      "name": "sâm bổ lượng",
+      "name": "Sâm bổ lượng",
       "is_primary": true
     },
     {
@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "chieu",
@@ -58,17 +58,9 @@
     },
     {
       "ingredient_slug": "duong-phen",
-      "quantity": 22,
+      "quantity": 45,
       "unit_name": "g",
       "is_optional": false,
-      "source": "llm_suggested",
-      "confidence": "low"
-    },
-    {
-      "ingredient_slug": "la-dua",
-      "quantity": 1,
-      "unit_name": "g",
-      "is_optional": true,
       "source": "llm_suggested",
       "confidence": "low"
     },
@@ -98,11 +90,35 @@
     }
   ],
   "recipe_steps": [
-    "Ngâm hạt sen khô, phổ tai (rong biển); cắt củ sen thành lát.",
-    "Nấu hạt sen và củ sen với nước, lá dứa cho chín mềm.",
-    "Cho đường phèn và phổ tai, nấu thêm ít phút; để nguội, thêm đá khi uống."
+    "Phổ tai ngâm nước ấm khoảng 10 phút, xả nhiều lần cho sạch và hết tanh; táo tàu ngâm ấm 10 phút; hạt sen khô ngâm ấm 15 phút (sen tươi chỉ rửa, bỏ tâm); bo bo và nhãn nhục rửa kỹ, để ráo.",
+    "Ngâm nhãn nhục với đường phèn trong khoảng 2 lít nước lọc 30 phút cho nhãn ngấm ngọt; lọc lại nước ngâm qua rây để nước trong.",
+    "Luộc riêng bo bo khoảng 20 phút cho mềm; cho hạt sen và củ sen thái lát vào luộc thêm 15 phút tới khi hạt sen nứt nhẹ, củ sen chín tới — vớt ra để riêng, không ninh nhừ.",
+    "Đun nước ngâm nhãn cùng táo tàu khoảng 15 phút cho táo mềm; nêm chút muối dằn vị ngọt.",
+    "Lần lượt cho bo bo, củ sen, hạt sen và nhãn nhục vào, nấu thêm 5 phút; cho phổ tai vào cuối, nấu 2–3 phút rồi tắt bếp ngay để phổ tai còn giòn.",
+    "Để nguội, ướp lạnh; múc ra ly hoặc chén, thêm đá khi uống."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.bachhoaxanh.com/kinh-nghiem-hay/cach-nau-sam-bo-luong-vua-thom-ngon-vua-bo-duong-cuc-ky-don-gian-1212395",
+      "accessed": "2026-10-31",
+      "note": "Bách Hoá XANH, 5–6 người, 2 L nước: đường phèn 250 g → 41,7–50 g/khẩu phần, phổ tai 20 g, táo tàu 50 g, hạt sen 50 g, củ sen 100 g, nhãn nhục 200 g, bo bo 100 g, củ năng 150 g. (Bản Tripi và Điện Máy Chợ Lớn là bản gương cùng họ — không tính thêm.)"
+    },
+    {
+      "url": "https://nhathuoclongchau.com.vn/bai-viet/sam-bo-luong-la-gi-tac-dung-cua-sam-bo-luong-doi-voi-suc-khoe.html",
+      "accessed": "2026-10-31",
+      "note": "Long Châu (2 L, không ghi khẩu phần): nhãn khô 50 g, hạt sen khô 50 g, táo tàu 50 g, bo bo 30 g, phổ tai 10 g, kỷ tử 10 g, đường phèn theo khẩu vị."
+    },
+    {
+      "url": "https://dayphache.edu.vn/cach-nau-che-sam-bo-luong",
+      "accessed": "2026-10-31",
+      "note": "Dạy Pha Chế Á Âu (không ghi khẩu phần): củ sen 300 g, hạt sen tươi 200 g, bạch quả 200 g, táo đen 100 g, đẳng sâm 50 g, nhãn 200 g, kỷ tử 50 g, đường phèn 150 g, phổ tai 50 g; không có bo bo."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/690612-che-sam-b%E1%BB%95-l%C6%B0%E1%BB%A3ng",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Nguyễn Lê Hồng Hạnh, 10 phần (định lượng qua bản tiếng Anh cùng recipe): phổ tai ~5 g, táo ~10 g, củ sen ~30 g, nhãn ~20 g, đường phèn 50–68 g/khẩu phần; hạt sen/bo bo là tuỳ chọn thêm; tác giả ghi rõ không cần lá dứa."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/sam-bo-luong.webp",
@@ -113,7 +129,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu).",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu). [LV2-009 đợt 9: Nâng Mức 2 — mở kiểm chứng 4 họ độc lập (Bách Hoá XANH — vòng 1; Long Châu, Dạy Pha Chế Á Âu, Cookpad Nguyễn Lê Hồng Hạnh — vòng 2). Sửa duong-phen 22→45 g (BHX 41,7–50 g và Cookpad 50–68 g/khẩu phần đồng thuận cao hơn hẳn, file lệch >50% — lấy cận dưới dải đồng thuận). BỎ la-dua (0/4 họ; Cookpad còn ghi rõ không cần). Giữ nhan-kho 10 g dù hai họ định lượng cao hơn (20–40 g) vì Long Châu chỉ dùng 50 g cho cả mẻ — dải nguồn không đồng thuận; giữ cu-sen 25 g (file nằm giữa hai họ 17–30 g), tao-tau-kho 10 g và rong-bien 5 g trong vai phổ tai (khớp cận trên nguồn). Không thêm cu-nang: chỉ 1/4 họ có trong công thức chính và kho chưa có slug; ky-tu và bo-qua mỗi thứ 2/4 họ — dưới ngưỡng 2/3 (cả hai slug đều có số, là ứng viên nếu chủ dự án muốn mở rộng thành phần). Chuẩn hoá tên 'Sâm bổ lượng'.]",
   "status": "draft",
   "source": "llm_suggested",
   "confidence": "unknown",

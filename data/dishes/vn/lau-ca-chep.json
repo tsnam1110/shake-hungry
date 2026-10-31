@@ -6,7 +6,7 @@
   "names": [
     {
       "locale": "vi",
-      "name": "lẩu cá chép",
+      "name": "Lẩu cá chép",
       "is_primary": true
     },
     {
@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "toi",
@@ -38,15 +38,7 @@
     },
     {
       "ingredient_slug": "ca-chua",
-      "quantity": 40,
-      "unit_name": "g",
-      "is_optional": false,
-      "source": "llm_suggested",
-      "confidence": "low"
-    },
-    {
-      "ingredient_slug": "doc-mung",
-      "quantity": 40,
+      "quantity": 100,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -61,8 +53,32 @@
       "confidence": "low"
     },
     {
+      "ingredient_slug": "rau-can-ta",
+      "quantity": 40,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dau-phu",
+      "quantity": 30,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "me",
+      "quantity": 25,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
       "ingredient_slug": "bun-tuoi",
-      "quantity": 80,
+      "quantity": 250,
       "unit_name": "g",
       "is_optional": true,
       "source": "llm_suggested",
@@ -115,22 +131,34 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
-    },
-    {
-      "ingredient_slug": "chanh",
-      "quantity": 10,
-      "unit_name": "g",
-      "is_optional": false,
-      "source": "llm_suggested",
-      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Cá chép làm sạch, cắt khúc; nấu nước dùng với cà chua và gừng, nêm nước mắm, đường, chanh cho vị chua nhẹ.",
-    "Bày cá, dọc mùng và rau muống ra đĩa riêng.",
-    "Khi ăn nhúng cá và rau vào nồi lẩu sôi, ăn kèm bún tươi, rắc hành lá và thì là."
+    "Cá chép làm sạch, chà muối và gừng cho hết nhớt và tanh, cắt khúc vừa ăn, để ráo.",
+    "Cơm mẻ lọc qua rây lấy nước chua, bỏ bã; cà chua bổ múi cau; đậu phụ cắt miếng; rau cần ta, rau muống rửa sạch cắt khúc.",
+    "Hầm đầu và xương cá với nước 20–30 phút lửa nhỏ, hớt bọt, lọc lấy nước dùng trong.",
+    "Xào cà chua với chút dầu cho ra màu, trút nước dùng vào đun sôi.",
+    "Từ từ cho nước mẻ vào, nêm nước mắm và đường — vị chua thanh, không gắt; nếm lại trước khi thả cá.",
+    "Cho cá và đậu phụ vào nấu 6–10 phút tới khi cá vừa chín, thịt trắng và không nát.",
+    "Rắc hành lá và thì là, chuyển sang nồi lẩu giữ sôi; khi ăn nhúng rau cần và rau muống, ăn kèm bún."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-lau-ca-chep-nau-rieu-thom-ngon-bo-duong-cho-ca-nha-13077",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH, 4 người: cá 1–1,5 kg (cân nguyên con), cà chua 500 g → 125 g/khẩu phần, cơm mẻ 100 g → 25 g, thì là 200 g, hành lá 100 g, cần ta 200 g → 50 g, bún 1 kg → 250 g."
+    },
+    {
+      "url": "https://vietnamnet.vn/cach-don-gian-de-noi-lau-ca-thom-ngon-khong-beo-va-khong-tanh-797479.html",
+      "accessed": "2026-10-31",
+      "note": "VietNamNet (một họ, hai công thức), 4 người: cá 2 kg hoặc 1,5 kg/khẩu phần, mẻ 100 g → 25 g, bún 1 kg → 250 g."
+    },
+    {
+      "url": "https://www.bluestone.com.vn/blogs/vao-bep/lau-ca-chep-om-dua",
+      "accessed": "2026-10-31",
+      "note": "Bluestone (không ghi khẩu phần): biến thể om dưa — đối chiếu thành phần và kỹ thuật."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/lau-ca-chep.webp",
@@ -141,7 +169,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Món thay cho lau-ca-bong: nguyên liệu cá bống chưa có file và không nằm trong danh sách nguyên liệu mới được phép của đợt này. Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Món thay cho lau-ca-bong: nguyên liệu cá bống chưa có file và không nằm trong danh sách nguyên liệu mới được phép của đợt này. Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-009 đợt 9: Nâng Mức 2 — mở kiểm chứng 3 họ nguồn (Điện Máy XANH, VietNamNet, Bluestone). Sửa ca-chua 40→100 g (nguồn 85–125 g/khẩu phần) và bun-tuoi 80→250 g (hai họ định lượng độc lập đều đúng 1 kg/4 người — tiền lệ LV2-002 chả cá lã vọng; đây là dòng bún ăn kèm của nồi lẩu, ghi rõ để phân biệt với quy ước sợi trong tô đang chờ quyết). Thêm rau-can-ta 40 g, dau-phu 30 g và me 25 g (slug null có hồ sơ từ LV2-004 — cơm mẻ là chất tạo chua phụ 25 g/khẩu phần, không phải thành phần định danh duy nhất, tiền lệ bổ sung dòng me ở LV2-004). BỎ doc-mung 40 g và chanh 10 g (0/3 họ cho vào nồi; chanh chỉ có trong nước chấm của một nguồn). GIỮ ca-chep 150 g: nguồn cân cá nguyên con (250–500 g/khẩu phần) khác cơ sở phần ăn được của kho — không nâng theo cân thô (cùng phân xử như canh-ca-chim đợt này; chờ quy ước thô–tinh cấp kho). Giữ thi-la/hanh-la vì hai họ bất đồng thang rau thơm >30%. Serving giữ 500 g và ghi nhận câu hỏi quy ước serving lẩu toàn kho. Chuẩn hoá tên 'Lẩu cá chép'.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

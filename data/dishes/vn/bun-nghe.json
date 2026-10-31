@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "xao",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -49,6 +49,14 @@
       "confidence": "low"
     },
     {
+      "ingredient_slug": "gan-lon",
+      "quantity": 12,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
       "ingredient_slug": "bot-nghe",
       "quantity": 3,
       "unit_name": "g",
@@ -59,6 +67,22 @@
     {
       "ingredient_slug": "hanh-tim",
       "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-tay",
+      "quantity": 15,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "la-he",
+      "quantity": 10,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -90,11 +114,35 @@
     }
   ],
   "recipe_steps": [
-    "Lòng heo luộc sơ, thái miếng, ướp bột nghệ.",
-    "Phi hành tím, xào lòng cho săn vàng.",
-    "Cho bún vào đảo đều 2–3 phút cho bún thấm nghệ, nêm lại, rắc rau mùi."
+    "Lòng lợn bóp muối và giấm (hoặc chanh), chà sạch, rửa nhiều lần; luộc sơ 5 phút với gừng và muối, vớt ra ngâm nước lạnh rồi cắt khúc 2–3 cm — lòng trắng, hết nhớt, không còn mùi.",
+    "Gan luộc chín tới, thái lát mỏng; nghệ tươi giã nhuyễn (hoặc dùng bột nghệ hoà ít nước); hành tây thái múi cau, hành tím băm nhỏ, hẹ cắt khúc.",
+    "Phi thơm hành tím với dầu ăn, cho nghệ vào xào lửa vừa 1–2 phút tới khi dậy mùi và dầu lên màu vàng đậm.",
+    "Cho lòng và gan vào đảo lửa lớn 4–5 phút, nêm nước mắm — lòng săn, ngấm màu vàng đều, không ra nước lõng bõng.",
+    "Cho bún vào đảo nhẹ tay 2–3 phút cho sợi bún tơi, thấm nghệ đều mà không nát; nêm lại vừa ăn.",
+    "Cho hành tây và hẹ vào đảo nhanh 30 giây, tắt bếp, bày ra đĩa, rắc rau mùi và tiêu, dùng nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://vietexplorer.com/lifestyle/bun-nghe-xao-long-a-unique-dish-of-hue/",
+      "accessed": "2026-10-31",
+      "note": "VietExplorer (bản tin VNS, nhân vật Hoàng Thị Thuý — Huế), 4 người: bún 300 g, nghệ tươi 100 g, lòng 200 g, gan 50 g → 12,5 g/khẩu phần, tiết 100 g, hành tây ~15 g, hẹ 15 g, rau mùi 50 g."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/16888743",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Kim Dung, 5 người: lòng non 1 kg → 200 g/khẩu phần, nghệ tươi 50 g, hẹ 100 g → 20 g, hành tây 100 g → 20 g, rau răm 15 g, bún 1 kg, dầu ~8 g/khẩu phần."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/12655437",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Phuong Nguyen 92 (người Huế), 4 người: phèo 200 g + lòng già 100 g → lòng 75 g/khẩu phần, gan 50 g → 12,5 g, nghệ 100 g, hẹ 100 g → 25 g, giá 100 g, bún 500 g."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/25234370",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Hoàng Thị Tố Hà (Huế), 5 người: lòng 800 g → 160 g/khẩu phần, hẹ 150 g → 30 g, bún 1 kg, dầu ~5,4 g/khẩu phần."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/bun-nghe.webp",
@@ -105,7 +153,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-009 đợt 9: Nâng Mức 2 — mở kiểm chứng 4 nguồn/4 họ (VietExplorer/VNS, Cookpad Kim Dung, Cookpad Phuong Nguyen 92, Cookpad Hoàng Thị Tố Hà). Thêm gan-lon 12 g (2/2 nguồn có gan đều cho đúng 12,5 g/khẩu phần — thành phần đặc trưng bản Huế mà file thiếu hẳn) và hanh-tay 15 g (3/4 nguồn, hội tụ 15–20 g). Thêm la-he 10 g: hẹ có ở 4/4 nguồn (dải lượng rộng 4–30 g/khẩu phần nên lấy mức biên soạn bảo thủ 10 g); slug la-he hiện null (chờ kiểm chứng MEXT — xem hàng đợi nguyên liệu) nên engine ghi missing, không chặn nâng vì là rau thơm phụ. Giữ long-lon 80 g và bun-tuoi 150 g (nguồn bất đồng >30%: lòng 50–200 g, bún 75–200 g/khẩu phần; lượng sợi chờ quy ước toàn kho). Giữ bot-nghe 3 g: mọi nguồn dùng nghệ TƯƠI 10–25 g/khẩu phần, 3 g bột khô tương đương ~16 g tươi theo chất khô — nằm trong dải nguồn. Bất thường chờ phân xử: tiết lợn bản Huế chỉ 1/4 nguồn định lượng nên chưa thêm dòng.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

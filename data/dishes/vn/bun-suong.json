@@ -125,7 +125,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. [LV2-009 đợt 9: GIỮ Mức 1 — trần nguyên liệu định danh + không nguồn nào cho khẩu phần đáng tin. Đã mở 4 họ (Cookpad QUÂN NGUYỄN; Bếp Trưởng Á Âu — bản Tripi và Bếp Của Mẹ là cùng họ; Bluestone; Tripi): nước lèo bún suông định danh bằng me + TƯƠNG HẠT (2/3 họ truyền thống khẳng định) nhưng file thiếu cả hai và kho CHƯA CÓ slug tuong-hat; định lượng me duy nhất là '1/4 vắt cho cả mẻ không khẩu phần' — không quy đổi được. Thịt của file (nạc vai thái lát luộc) bất đồng với truyền thống (ba chỉ thái lát hoặc giò heo; Bluestone lại xay nạc vai vào suông) — chưa đủ cơ sở đổi. Điều kiện nâng lại: (a) biên soạn slug tuong-hat kèm tra số; (b) có ≥1 nguồn khẩu phần rõ ràng cho mẻ truyền thống. Ghi nhận thêm: file thiếu tom-kho (2 họ có nhưng lượng bất đồng lớn), bot-nang trong suông và hành phi khi trình bày.]",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

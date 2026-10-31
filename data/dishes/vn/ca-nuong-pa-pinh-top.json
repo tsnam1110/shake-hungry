@@ -2,11 +2,11 @@
   "slug": "ca-nuong-pa-pinh-top",
   "parent_dish_slug": null,
   "country_code": "VN",
-  "region_code": "vn",
+  "region_code": "vn-north",
   "names": [
     {
       "locale": "vi",
-      "name": "cá nướng pa pỉnh tộp",
+      "name": "Cá nướng pa pỉnh tộp",
       "is_primary": true
     },
     {
@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nuong",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -30,7 +30,7 @@
     }
   ],
   "serving_desc": "1 phần",
-  "serving_grams": 250,
+  "serving_grams": 205,
   "ingredients": [
     {
       "ingredient_slug": "ca-tram",
@@ -81,6 +81,14 @@
       "confidence": "low"
     },
     {
+      "ingredient_slug": "toi",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
       "ingredient_slug": "hanh-la",
       "quantity": 5,
       "unit_name": "g",
@@ -89,7 +97,15 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "rau-mui",
+      "ingredient_slug": "thi-la",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hung-que",
       "quantity": 5,
       "unit_name": "g",
       "is_optional": false,
@@ -114,11 +130,30 @@
     }
   ],
   "recipe_steps": [
-    "Cá mổ bụng, làm sạch, giữ nguyên con; khứa nhẹ hai bên thân.",
-    "Giã mắc khén, hạt dổi, sả, gừng, hành, rau thơm, ớt và muối thành hỗn hợp nhân; nhồi vào bụng cá và xát lên thân.",
-    "Gập cá, kẹp bằng que tre, nướng trên than, lật đều đến khi cá chín và dậy mùi thơm."
+    "Mắc khén và hạt dổi rang thơm trên chảo khô, giã nhuyễn cùng muối; sả, gừng, hành tím, tỏi băm nhỏ; hành lá, thì là, húng quế thái nhỏ — trộn tất cả thành hỗn hợp nhân dồn.",
+    "Cá làm sạch, mổ dọc theo sống lưng (không mổ bụng), bỏ ruột và mang, khứa nhẹ dọc thân; chà muối, rửa sạch, để thật ráo.",
+    "Xoa một phần nhân vào bụng và các khứa cá, phần còn lại nhồi đầy bụng cá; ướp 30 phút cho thấm.",
+    "Gập cá theo kiểu truyền thống (đầu chụm về phía đuôi), kẹp cá vào nẹp tre hoặc vỉ nướng, buộc cố định.",
+    "Nướng trên than lửa vừa 10–15 phút, lật đều tay tới khi da cá vàng giòn, thịt trắng và thơm mùi mắc khén — lửa quá lớn sẽ cháy gia vị trước khi cá chín.",
+    "Gỡ nẹp, bày cá nguyên con ra mẹt hoặc đĩa lớn, ăn nóng kèm cơm và rau rừng nếu có."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/2-cach-lam-ca-nuong-pa-pinh-top-moi-la-thom-ngon-dam-vi-tay-08606",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH (Đoan Nguyễn): CT1 nướng than 2 người — cá chép 1,5 kg, sả ~15 g/khẩu phần, hành tím ~22 g, tỏi ~7 g, hành lá ~12 g, thì là, dầu 1 muỗng canh; CT2 nướng lò 2 người — cá rô phi 1 kg, mắc khén ~2,5 g/khẩu phần, húng quế. Số in trên trang 'mắc khén 200 g + hạt dổi 100 g/mẻ' là lỗi dữ liệu nguồn (khối lượng gói gia vị) — loại khỏi đối chiếu."
+    },
+    {
+      "url": "https://dacsantaybac.vn/cach-lam-mon-pa-pinh-top",
+      "accessed": "2026-10-31",
+      "note": "Đặc Sản Tây Bắc (không ghi khẩu phần): cá suối 1 con 500 g–1 kg — đối chiếu thành phần và kỹ thuật gập cá, kẹp nẹp tre."
+    },
+    {
+      "url": "https://eva.vn/di-dau-xem-gi/mon-dac-san-tren-rung-ten-cuc-la-nhieu-nguoi-muon-nem-thu-bang-duoc-c40a493029.html",
+      "accessed": "2026-10-31",
+      "note": "Eva.vn: cá trắm/chép/rô/trôi đều dùng được cho pa pỉnh tộp — đối chiếu loài cá (không định lượng)."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/ca-nuong-pa-pinh-top.webp",
@@ -129,7 +164,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-009 đợt 9: Nâng Mức 2 — mở kiểm chứng 3 họ nguồn (Điện Máy XANH, Đặc Sản Tây Bắc, Eva.vn). BỎ rau-mui 5 g (0/3 họ — phổ rau thơm của món là thì là + húng); thêm toi 5 g (3/3 họ), thi-la 5 g (2 họ), hung-que 5 g (3/3 họ). Vùng vn→vn-north theo gốc Thái Tây Bắc (EDITORIAL-GUIDE §4); không gán nhãn dac-san vì cây TAXONOMY chưa có tỉnh Tây Bắc. Serving 250→205 g cho khớp tổng dòng sau sửa. Giữ ca-tram 150 g: nguồn cân cá nguyên con 500–750 g/khẩu phần trong khi file theo cơ sở phần ăn được — tranh chấp thô–tinh ghi vào hồ sơ quy ước cấp kho đang chờ (cùng nhóm mong-gio). mac-khen và hat-doi giữ dạng dòng null lượng vết. Chuẩn hoá tên 'Cá nướng pa pỉnh tộp'.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -117,7 +117,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt DISH-004 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt DISH-004 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-009 đợt 9: GIỮ Mức 1 — thiếu nguồn đúng định danh: mọi công thức tôm càng xanh nấu cháo tìm được đều là cháo ăn dặm cho bé (tôm bóc vỏ băm 30–50 g + gạo 30 g + rau củ, không gia vị người lớn — ví dụ bản DaoHaiSan). Bản người lớn của file (tôm nguyên con bày trên mặt, serving 450 g, gừng và nước mắm) không có nguồn biên tập nào. Nguyên liệu đều có số — đây là trần nguồn, không phải trần nguyên liệu.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

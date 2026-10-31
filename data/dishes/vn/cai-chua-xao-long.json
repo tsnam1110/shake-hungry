@@ -2,7 +2,7 @@
   "slug": "cai-chua-xao-long",
   "parent_dish_slug": null,
   "country_code": "VN",
-  "region_code": "vn-south",
+  "region_code": "vn-north",
   "names": [
     {
       "locale": "vi",
@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "xao",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -29,12 +29,20 @@
       "weight": 7
     }
   ],
-  "serving_desc": "1 đĩa rau",
-  "serving_grams": 140,
+  "serving_desc": "1 đĩa",
+  "serving_grams": 180,
   "ingredients": [
     {
       "ingredient_slug": "dua-cai-muoi",
-      "quantity": 110,
+      "quantity": 90,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "ca-chua",
+      "quantity": 40,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -42,7 +50,7 @@
     },
     {
       "ingredient_slug": "long-lon",
-      "quantity": 60,
+      "quantity": 80,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -51,6 +59,22 @@
     {
       "ingredient_slug": "toi",
       "quantity": 4,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-la",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "rau-ram",
+      "quantity": 10,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -74,11 +98,36 @@
     }
   ],
   "recipe_steps": [
-    "Lòng lợn làm sạch, luộc chín, thái miếng; cải chua rửa bớt mặn, vắt ráo, cắt khúc.",
-    "Phi tỏi, xào lòng săn.",
-    "Cho cải chua vào xào chung, nêm chút đường, xào khô ráo là được."
+    "Lòng lợn bóp kỹ với muối và giấm (hoặc chanh), lộn trái bỏ lớp màng, rửa lại nhiều lần tới khi nước trong và hết mùi.",
+    "Đun nước sôi với vài lát gừng, chần lòng 1 phút cho săn, vớt ra ngâm ngay nước lạnh rồi cắt khúc 3–4 cm — lòng giòn, không dai.",
+    "Dưa cải chua rửa sơ, vắt ráo, cắt khúc vừa ăn; cà chua bổ múi cau; tỏi băm nhỏ; hành lá và rau răm cắt khúc.",
+    "Phi thơm tỏi với dầu, cho lòng vào xào lửa lớn 2 phút cho săn và ráo nước, trút ra để riêng.",
+    "Dùng lại chảo, cho cà chua vào xào 1 phút rồi cho dưa cải vào đảo 2–3 phút tới khi dưa săn, thấm dầu và dậy mùi chua nhẹ.",
+    "Trút lòng trở lại chảo, đảo đều 1–2 phút, nêm đường cho dịu vị chua, nếm lại vừa ăn.",
+    "Tắt bếp, cho hành lá và rau răm vào đảo nhanh tay, bày ra đĩa, rắc tiêu, ăn nóng với cơm."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/10105342",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — An Thúy Nguyễn, 4 người: lòng non 300 g → 75 g/khẩu phần, dưa cải 300 g → 75 g/khẩu phần."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/25228694",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Trần Thị Tuyết Trinh (Hà Nội), 4 người: lòng già 400 g → 100 g/khẩu phần, dưa cải 400 g → 100 g, rau răm 50 g → 12,5 g."
+    },
+    {
+      "url": "https://eva.vn/bep-eva/cach-lam-long-xao-dua-gion-ngon-thom-sach-ma-khong-he-bi-dai-nhach-cho-ngay-mua-gio-c162a683381",
+      "accessed": "2026-10-31",
+      "note": "Eva.vn: lòng non 500 g + dưa cải 300 g (tỉ lệ 5:3), cà chua 2 quả; không ghi khẩu phần."
+    },
+    {
+      "url": "https://yummyday.vn/long-heo-xao-cai-chua-448",
+      "accessed": "2026-10-31",
+      "note": "YummyDay: đối chiếu thành phần; ghi món đậm hương vị miền Bắc."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/cai-chua-xao-long.webp",
@@ -89,7 +138,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-008 đợt 8: HOLD do HTTP 429 — hai lần mở trang nguồn cho món này (Cookpad VN và Eva) đều bị dịch vụ trình duyệt trả 429 (rate limit phía upstream) ngay khi mở. Theo brief, gặp 429 thì dừng món ngay, không retry dồn dập và không dùng trích đoạn kết quả tìm kiếm thay cho trang đã mở đọc, nên món này chưa gom được nguồn nào đạt chuẩn 'đã mở đọc'. Giữ nguyên Mức 1, làm lại ở đợt sau khi hết chặn.]",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-008 đợt 8: HOLD do HTTP 429 — hai lần mở trang nguồn cho món này (Cookpad VN và Eva) đều bị dịch vụ trình duyệt trả 429 (rate limit phía upstream) ngay khi mở. Theo brief, gặp 429 thì dừng món ngay, không retry dồn dập và không dùng trích đoạn kết quả tìm kiếm thay cho trang đã mở đọc, nên món này chưa gom được nguồn nào đạt chuẩn 'đã mở đọc'. Giữ nguyên Mức 1, làm lại ở đợt sau khi hết chặn.] [LV2-009 đợt 9: Nâng Mức 2 — thử lại món bị 429 ở đợt 8, mở kiểm chứng 4 nguồn (Cookpad An Thúy Nguyễn, Cookpad Trần Thị Tuyết Trinh, Eva.vn, YummyDay). Sửa dua-cai-muoi 110→90 g và long-lon 60→80 g (hai nguồn định lượng đều cho 75–100 g mỗi loại/khẩu phần, tỉ lệ dưa:lòng ~1:1); thêm ca-chua 40 g (3/4 nguồn), hanh-la 5 g và rau-ram 10 g (slug null có hồ sơ — nguyên liệu phụ, engine ghi missing). Vùng vn-south→vn-north: hai họ độc lập ghi gốc Bắc. Serving 140→180 g cho khớp tổng dòng sau sửa. Bất thường chờ phân xử: nguồn đa số dùng lòng non (slug long-non-lon có số) trong khi file dùng long-lon — chưa đổi slug trong đợt nâng. Không thêm nước mắm dù nguồn có dùng — quy ước nêm mắm món xào đang chờ quyết toàn kho (LV2-005 §4).]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

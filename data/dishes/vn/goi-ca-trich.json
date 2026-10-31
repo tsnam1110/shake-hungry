@@ -2,7 +2,7 @@
   "slug": "goi-ca-trich",
   "parent_dish_slug": null,
   "country_code": "VN",
-  "region_code": "vn-central",
+  "region_code": "vn-south",
   "names": [
     {
       "locale": "vi",
@@ -11,14 +11,14 @@
     },
     {
       "locale": "en",
-      "name": "Herring salad with coconut, Central style",
+      "name": "Phu Quoc herring salad with coconut",
       "is_primary": true
     }
   ],
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "tron",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -34,11 +34,19 @@
     }
   ],
   "serving_desc": "1 đĩa",
-  "serving_grams": 200,
+  "serving_grams": 250,
   "ingredients": [
     {
       "ingredient_slug": "ca-trich",
       "quantity": 120,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-tay",
+      "quantity": 25,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -65,6 +73,14 @@
       "quantity": 5,
       "unit_name": "g",
       "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "banh-trang",
+      "quantity": 20,
+      "unit_name": "g",
+      "is_optional": true,
       "source": "llm_suggested",
       "confidence": "low"
     },
@@ -110,11 +126,31 @@
     }
   ],
   "recipe_steps": [
-    "Cá trích phi lê, thái mỏng, tái bằng nước cốt chanh.",
-    "Vắt ráo cá, trộn với cùi dừa nạo và nước trộn chua ngọt.",
-    "Rắc lạc rang, hành phi, rau thơm; cuốn bánh tráng khi ăn."
+    "Cá trích đánh vảy, bỏ đầu, mang và ruột, dùng dao mỏng lóc bỏ xương lấy phi lê hai bên, thái lát vừa ăn.",
+    "Cho cá vào nước cốt chanh pha loãng, trộn đều, ướp khoảng 5 phút cho thịt cá tái và hết tanh (tối đa 15 phút — ướp lâu cá sẽ bở), chắt bỏ nước.",
+    "Hành tây thái mỏng, ngâm nước đá 10 phút cho giòn và bớt hăng, vớt ra để ráo.",
+    "Đun nước mắm với đường lửa nhỏ cho tan, để nguội; chia một phần trộn cá, một phần làm nước chấm thêm chanh, tỏi ớt.",
+    "Cho cá đã tái vào tô, rưới phần nước mắm trộn, ướp 10–15 phút cho thấm.",
+    "Trộn dừa nạo và hành tây vào cá, bày ra đĩa, rắc đậu phộng rang giã dập và hành phi lên trên.",
+    "Ăn kèm bánh tráng cuốn với rau sống và bún, chấm nước mắm đã pha."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://tripi.vn/blog/vi/kinh-nghiem-hay/kham-pha-cach-che-bien-mon-goi-ca-trich-phu-quoc-ngon-tuyet-de-lam-ngay-tai-nha-tripi",
+      "accessed": "2026-10-31",
+      "note": "Tripi, 3–4 người: cá trích 500 g → 125–167 g/khẩu phần, lạc rang 100 g → 25–33 g, hành tây 1 củ ~25 g; bản này không có dừa."
+    },
+    {
+      "url": "https://bepxua.vn/cong-thuc-che-bien-mon-goi-ca-trich-tru-danh-phu-quoc/?noamp=mobile",
+      "accessed": "2026-10-31",
+      "note": "Bếp Xưa (không ghi khẩu phần): cá 500 g, dừa nạo 100 g, lạc 50 g, hành tây 1 củ, chanh 3 quả, bún 500 g, bánh tráng cuốn kèm."
+    },
+    {
+      "url": "https://saigonstartravel.com/cach-lam-goi-ca-trich-phu-quoc-ngon",
+      "accessed": "2026-10-31",
+      "note": "Saigon Star Travel (không ghi khẩu phần): cá 500 g, dừa nạo 200 g, lạc 50 g, hành tím 50 g, chanh 3 quả."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/goi-ca-trich.webp",
@@ -125,7 +161,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-009 đợt 9: Nâng Mức 2 — mở kiểm chứng 3 họ nguồn (Tripi, Bếp Xưa, Saigon Star Travel), cả 3 đều khẳng định gốc Phú Quốc. Sửa vùng vn-central→vn-south và tên Anh thành bản Phú Quốc; không gán nhãn dac-san vì TAXONOMY chưa có mã cho Phú Quốc/Kiên Giang (đề xuất thêm nhãn — chờ quyết cấp kho). Thêm hanh-tay 25 g (3/3 họ) và banh-trang 20 g tuỳ chọn (3/3 họ dọn kèm; lượng là ước biên soạn theo tiền lệ hung-lui — cờ biên tập rà lại). Serving 200→250 g cho khớp tổng dòng (~247 g). Giữ ca-trich 120 g (nguồn 125–167 g/khẩu phần theo cân thô, file thấp hơn 4–16% — trong ngưỡng) và cui-dua-nao 40 g (nguồn bất đồng: bản Tripi không có dừa, hai họ còn lại ~29 g/khẩu phần trở lên). Rau cuốn và bún ăn kèm chỉ ghi ở bước nấu vì nguồn không định lượng.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

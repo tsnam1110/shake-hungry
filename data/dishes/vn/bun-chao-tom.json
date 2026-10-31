@@ -137,7 +137,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. THIẾU NGUYÊN LIỆU: mía cây (que quấn chạo tôm) (vai trò phụ) — cần bổ sung vào kho.",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. THIẾU NGUYÊN LIỆU: mía cây (que quấn chạo tôm) (vai trò phụ) — cần bổ sung vào kho. [LV2-009 đợt 9: GIỮ Mức 1 — chỉ mở được 1 họ nguồn (Bếp MiNa, không ghi khẩu phần: tôm sú 500 g + thác lác/nạc xay 100 g + giò sống 100 g + bột bắp 50 g; tỉ lệ tôm:phần phụ 500:200 so với file tôm 70 g + thịt xay 20 g) trước khi dịch vụ mở trang bị chặn. Thêm trần: chạo tôm quấn MÍA nhưng kho không có slug mia (nuoc-mia là nước ép, không thay thế được); gio-song null. Làm lại khi gom đủ 3 họ.]",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -85,6 +85,14 @@
       "confidence": "low"
     },
     {
+      "ingredient_slug": "la-he",
+      "quantity": 15,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
       "ingredient_slug": "nuoc-mam-truyen-thong",
       "quantity": 8,
       "unit_name": "g",
@@ -142,11 +150,30 @@
     }
   ],
   "recipe_steps": [
-    "Nấu nước dùng từ xương heo, nêm nước mắm, đường phèn cho vị ngọt trong.",
-    "Luộc tôm thẻ và thịt nạc trong nước dùng, thịt vớt ra thái lát mỏng.",
-    "Trụng sợi hủ tiếu và giá, xếp tôm, thịt, trứng cút, xà lách; chan nước dùng, thêm tỏi phi và tiêu."
+    "Tôm thẻ rửa sạch, bóc vỏ, rút chỉ đen; thịt heo rửa sạch, thái lát mỏng, ướp chút muối và tiêu 10 phút.",
+    "Trứng cút luộc 8–10 phút, bóc vỏ; giá đỗ và xà lách rửa sạch để ráo; lá hẹ rửa sạch cắt khúc 3–4 cm; hành lá cắt nhỏ, tỏi băm.",
+    "Nấu nước dùng từ xương heo với hành tím nướng 45–60 phút lửa nhỏ, hớt bọt — nước trong, ngọt thanh (xương chỉ dùng lấy nước dùng); nêm muối, đường phèn và nước mắm.",
+    "Phi thơm tỏi băm với dầu ăn, cho thịt heo vào xào nhanh 2 phút cho săn rồi trút vào nồi nước dùng.",
+    "Trụng sợi hủ tiếu trong nước sôi 1–2 phút tới khi sợi mềm dai, xóc ráo nước; trụng tôm trong nồi nước dùng tới khi tôm vừa đỏ và cong lại.",
+    "Cho sợi vào tô, xếp tôm, thịt, trứng cút, giá, xà lách và lá hẹ lên trên, chan nước dùng sôi, rắc hành lá và tiêu, ăn nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/amp/cach-nau-mon-hu-tieu-nam-vang-ngon-dung-dieu-nhu-ngoai-hang-00979",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH (hủ tiếu Nam Vang), 2 người: tôm 300 g → 150 g/khẩu phần, thịt nạc dăm 200 g → 100 g, trứng cút 15 quả → 7,5 quả — bản đầy đủ, đối chiếu phía trên."
+    },
+    {
+      "url": "https://bachhoaxanh.com/kinh-nghiem-hay/cach-lam-hu-tieu-kho-don-gian-ma-ngon-mieng-980028",
+      "accessed": "2026-10-31",
+      "note": "Bách Hoá XANH, 3–4 người: tôm 200 g → 50–67 g/khẩu phần, thịt băm 200 g → 50–67 g, sợi 300 g → 75–100 g, giá 100 g, hẹ 50 g → 13–17 g."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/554591",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Nguyễn Lê Hồng Hạnh, 5 phần: tôm 300 g → 60 g/khẩu phần, thịt nạc 500 g → 100 g, trứng cút 30 quả → 6 quả/phần, đường phèn trong nước dùng."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/hu-tieu-tom-the.webp",
@@ -157,7 +184,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt DISH-004 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt DISH-004 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-009 đợt 9: Nâng Mức 2 — mở kiểm chứng 3 họ nguồn (Điện Máy XANH bản Nam Vang, Bách Hoá XANH, Cookpad Nguyễn Lê Hồng Hạnh; một trang ĐMX thứ hai cùng họ chỉ dùng hỗ trợ). KHÔNG sửa định lượng: tôm bất đồng 60–150 g/khẩu phần (>30%), thịt 50 g của file khớp đầu thấp của Bách Hoá XANH. Thêm la-he 15 g (≥2/3 họ có, dải 13–17 g/khẩu phần ở nguồn định lượng; slug la-he null — rau thơm phụ, engine ghi missing). Giữ hu-tieu-kho 70 g theo quy ước lượng sợi (ghi nhận lệch so với nguồn, chờ quy ước toàn kho); giữ trung-cut 20 g cho biến thể gọn tôm thẻ (bản Nam Vang đầy đủ dùng 6–7,5 quả — ghi nhận bất thường, không nâng theo).]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

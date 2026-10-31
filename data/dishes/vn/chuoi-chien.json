@@ -6,7 +6,7 @@
   "names": [
     {
       "locale": "vi",
-      "name": "chuối chiên",
+      "name": "Chuối chiên",
       "is_primary": true
     },
     {
@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "chien",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "chieu",
@@ -29,7 +29,7 @@
       "weight": 8
     }
   ],
-  "serving_desc": "1 phần",
+  "serving_desc": "1 cái",
   "serving_grams": 120,
   "ingredients": [
     {
@@ -74,12 +74,30 @@
     }
   ],
   "recipe_steps": [
-    "Pha bột mì, bột gạo với nước và đường thành bột áo sền sệt, để bột nghỉ.",
-    "Lột vỏ chuối, ép dẹt, nhúng vào bột áo.",
-    "Chiên ngập dầu đến khi vỏ phồng vàng giòn.",
-    "Ăn nóng khi vỏ còn giòn."
+    "Pha bột mì và bột gạo với nước và đường thành hỗn hợp sánh mịn, để bột nghỉ 30 phút cho nở đều.",
+    "Chuối chín bóc vỏ, ép dẹt nhẹ tay theo chiều dọc tới khi quả chuối mỏng đều mà không rách.",
+    "Nhúng chuối vào bột cho áo đều một lớp, rắc thêm vừng lên mặt nếu thích.",
+    "Thả vào dầu nóng, chiên lửa vừa 2–3 phút tới khi lớp bột se mặt và hơi vàng, vớt ra để ráo.",
+    "Nhúng nhanh chuối vào bột lần hai cho lớp vỏ dày thêm, thả lại vào dầu chiên tới khi vàng giòn đều hai mặt.",
+    "Vớt ra để ráo dầu trên giấy thấm, ăn ngay khi còn nóng và giòn."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/3-cach-lam-banh-chuoi-chien-gion-rum-cuc-de-ai-an-cung-me-01526",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH (CT2 bột pha), 4 người/8 quả: mỗi quả bột mì 25 g, bột gạo 6,3 g, bột nếp 6,3 g, đường 6,3 g, mè 12,5 g — là lượng của cả tô bột pha, không phải lượng bột bám vào quả."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/15735709",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Poppy Cookery, 2 người/4 quả: mỗi quả bột gạo 55 g, bột mì 12,5 g, bột nếp 7,5 g, bột năng 6,3 g, đường 17,5 g (cả tô bột)."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/9763467",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Apple's Kitchen, 10 quả: mỗi quả bột mì 10 g, bột gạo 10 g, đường 3 g, mè ~0,9 g."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/chuoi-chien.webp",
@@ -90,7 +108,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt) [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 10 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).]",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt) [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 10 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).] [LV2-009 đợt 9: Nâng Mức 2 — mở kiểm chứng 3 họ nguồn (Điện Máy XANH, Cookpad Poppy Cookery, Cookpad Apple's Kitchen). KHÔNG sửa định lượng: số bột của mọi nguồn là lượng CẢ TÔ bột pha (nhúng hai lần, phần thừa bỏ đi — không phải lượng bám vào quả) và bất đồng >30% ở mọi dòng; số của file nằm trong dải nguồn. Không có dòng dau-an là đúng Phương án A (toàn bộ dầu là môi trường chiên, engine mô hình hoá qua method chien). Bột vỏ giữ bot-mi + bot-gao (đều có số) thay vì hỗn hợp bột pha sẵn ≈ bot-chien-gion null — theo tiền lệ LV2-008. Serving giữ 120 g, mô tả đổi '1 phần' → '1 cái'; chuẩn hoá tên 'Chuối chiên'. Bất thường chờ phân xử (không tự sửa): bột nếp có ở 2/3 họ nhưng file không có — nếu chủ dự án duyệt, đề xuất + bot-nep 5 g và bot-mi 25→20 g.]",
   "status": "draft",
   "source": "llm_suggested",
   "confidence": "unknown",
