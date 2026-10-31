@@ -146,7 +146,14 @@
       "url": "https://cookpad.com/vn/recipes/25459950/print"
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/bun-ca.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu). [LV2-004 đợt 4: thử nâng Mức 2 — GIỮ MỨC 1: chỉ 1 nguồn đã mở (eva.vn/cach-nau-bun-ca), các lượt mở tiếp theo bị chặn 429 — không đủ 3 nguồn đã mở.] [LV2-005 đợt 5: nâng Mức 2 — 3 nguồn đã mở (Eva mang sang từ LV2-004, TodayIBake và Cookpad mở mới đợt này). NGUYÊN LIỆU GIỮ NGUYÊN theo file, quantity_changes để rỗng. Ba bất thường chờ phân xử: (1) thiếu dòng bột tẩm chiên cá — 3/3 nguồn đều tẩm cá bằng bột năng/bột chiên giòn trước khi chiên trong khi bước của file chỉ chiên trực tiếp; nguyên liệu bot-chien-gion đã tồn tại trong kho nên có thể bổ sung dòng khi phân xử xong; (2) thiếu nguyên liệu tạo chua me/giấm bỗng — 3/3 nguồn đều có me hoặc giấm bỗng ngoài cà chua, là vị chua đặc trưng của bún cá Hà Nội; (3) rau cần có ở 3/3 nguồn trong khi file dùng dọc mùng (0/3 nguồn đợt này) — khác biệt trường phái, ghi nhận, chưa đề xuất thay thế. Vì (1) và (2) chưa phân xử, recipe_steps KHÔNG nhắc bột tẩm hay giấm bỗng như nguyên liệu có sẵn.]",

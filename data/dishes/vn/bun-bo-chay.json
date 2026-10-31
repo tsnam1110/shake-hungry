@@ -168,7 +168,14 @@
     "Trụng bún, chan nước dùng; ăn kèm bắp cải, giá, húng quế."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/bun-bo-chay.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt).",

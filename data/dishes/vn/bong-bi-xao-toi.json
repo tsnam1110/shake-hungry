@@ -95,7 +95,14 @@
       "url": "https://tripi.vn/blog/vi/kinh-nghiem-hay/huong-dan-ban-cach-lam-mon-bong-bi-xao-toi-thom-lung-de-thuc-hien-chac-chan-se-khien-ca-gia-dinh-phai-yeu-thich-tripi"
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/bong-bi-xao-toi.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Dùng nguyên liệu hoa-bi mới biên soạn đợt này (USDA pumpkin flowers). Lưu ý slug bong-bi trong kho là bóng bì lợn — nguyên liệu của món này là hoa-bi. [LV2-005 đợt 5: nâng Mức 2 — đối chiếu 4 nguồn đã mở; không sửa định lượng vì lượng bông bí theo người phân kỳ rất rộng và file chỉ lệch khoảng −20% so với nguồn biên tập đáng tin nhất, dưới ngưỡng sửa. Bất thường ghi nhận: nguồn có dầu hào, tiêu và cách chia tỏi làm hai phần mà file chưa có; nguồn bất đồng về việc thêm nước khi xào và về thời gian xào (mức 7 phút là ngoại lệ) — chờ pha phân xử.]",

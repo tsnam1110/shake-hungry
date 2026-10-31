@@ -95,7 +95,14 @@
       "url": "https://giavichinsu.com/cong-thuc-lam-bong-cai-xao.html"
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/bong-cai-xanh-xao-toi.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-005 đợt 5: nâng Mức 2 — đối chiếu 4 nguồn đã mở, trong đó 1 nguồn trùng dẫn Điện Máy XANH; không sửa định lượng vì khẩu phần các nguồn mâu thuẫn trực diện và file nằm giữa hai cực, không có đồng thuận độc lập. Bất thường ghi nhận: cả 4 nguồn đều không nêm bằng nước mắm (dùng muối/hạt nêm) trong khi file nêm nước mắm; thời gian chần phân kỳ 1–2 phút so với 5 phút và lượng dầu ăn theo người chưa đồng thuận — chờ pha phân xử.]",
