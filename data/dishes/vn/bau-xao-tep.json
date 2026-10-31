@@ -79,7 +79,14 @@
     "Cho bầu vào xào vừa trong, nêm nước mắm, rắc hành lá."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/bau-xao-tep.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-004 đợt 4: thử nâng Mức 2 — GIỮ MỨC 1 chờ phân xử: 3/3 nguồn (bluestone.com.vn/blogs/vao-bep/bau-xao-tep; saigonesebaguette.vn/cach-lam-bau-xao-tep-kho; toyenxin.com/blog-1/cach-lam-bau-xao-tep-kho-vi-cb) đều dùng tép/tôm KHÔ trong khi file dùng tép tươi — đổi nguyên liệu là quyết định định danh; ngoài ra tép khô quy về khẩu phần 30 g tươi tương đương thấp hơn nguồn 25–50% theo chất khô, và bước nấu file nhắc phi hành nhưng không có dòng hành tím.] [Phân tích LV2-005 Phần A (2026-10-31) — GIỮ NGUYÊN, chờ chủ dự án quyết: mâu thuẫn nằm giữa KẾ HOẠCH ĐÃ DUYỆT và NGUỒN NGOÀI. Kế hoạch DISH-005 §3.2 (chủ dự án đã duyệt) ghi rõ bau-xao-tep dùng tep (tép tươi); nhưng 3/3 nguồn công thức đã mở ở LV2-004 (BlueStone; Saigonese Baguette; ToyenXin) đều là \"bầu xào tép KHÔ\" — không tìm được nguồn công thức đúng món dùng tép tươi. Hai lựa chọn: (1) giữ tép tươi theo kế hoạch đã duyệt, chấp nhận món là biến thể gia đình ít tài liệu — giữ Mức 1 lâu dài; (2) đổi sang tom-kho theo đồng thuận nguồn, món thành \"bầu xào tép khô\" và đủ đường nâng Mức 2. Vì định danh này do chính kế hoạch đã duyệt ấn định, không tự ý đổi ở pha biên tập.]",

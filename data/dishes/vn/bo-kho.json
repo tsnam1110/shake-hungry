@@ -192,7 +192,14 @@
       "note": "Giáo trình dạy nấu ăn (thư viện Đại học Duy Tân): 1,2kg thịt bò, 1 gói gia vị bò kho 25g, 6-7 cọng sả; ướp 15-20 phút, hầm nồi áp suất 15 phút hoặc nồi thường 30-40 phút."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/bo-kho.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): Đã đối chiếu 3 nguồn công thức thật (Điện máy XANH, Cookpad/Mỹ Hạnh, giáo trình dạy nấu ăn Duy Tân). Định lượng: thịt bò/khẩu phần giữa hai nguồn có ghi số người bất đồng lớn (125g ở Điện máy XANH so với 250g ở Cookpad) nên theo quy tắc giữ nguyên 180g của file; cà rốt cũng bất đồng (khoảng 40g so với khoảng 160g/người), giữ nguyên 60g. Phân loại (loai:mon-chinh, kho, vn-south, sáng/trưa/tối) rà soát, không sai rõ ràng, giữ nguyên. Phân xử bất thường LV2-001 (Phần A, 2026-10-31): thêm hoa-hoi 1 g và bot-que 1 g — cả 3 nguồn đều dùng hoa hồi và quế riêng (Cookpad ghi tường minh; giáo trình Duy Tân dùng gói gia vị bò kho có hai vị này), file trước chỉ có bot-cari và ngu-vi-huong. Định lượng gia vị khô khoảng 2 bông hồi + 1 thanh quế cho mẻ 2–4 khẩu phần, quy về ~1 g/khẩu phần mỗi loại.",

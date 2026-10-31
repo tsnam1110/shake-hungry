@@ -131,7 +131,14 @@
       "note": "VietFoodShop: bò phi lê 150 g, hành tây 1/2 củ, cần tây, tỏi tây 1–2 cây, tỏi, ớt sừng — đối chiếu thành phần (không ghi khẩu phần)."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/bo-xao-can-toi.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 3 nguồn. Phân xử định lượng: thit-bo-nam 120 → 60 g và can-tay 80 → 50 g — hai nguồn ghi rõ khẩu phần đồng thuận 50–75 g bò và 40–50 g cần tây mỗi người, file cao hơn 60–140%; serving_grams 220 → 130 theo tổng dòng mới. Bất thường lớn ghi nhận chờ pha phân xử: tên món \"cần tỏi\" trong cả 3/3 nguồn là cần tây + TỎI TÂY (hành boa rô) — file không có dòng toi-tay (kho đã có ingredient này), thay bằng tỏi củ; hành tây có ở 3/3 nguồn và hành tím ở 2/3 nguồn, file đều thiếu. Phân xử bất thường LV2-003 (Phần A — LV2-004, 2026-10-31): Thêm toi-tay (tỏi tây/hành boa rô) 30 g — đây là thành phần định danh của tên món \"bò xào cần tỏi\": cả 3/3 nguồn đã mở ở đợt 3 đều hiểu \"cần tỏi\" là cần tây + tỏi tây, file trước chỉ có tỏi củ; thêm hanh-tay 20 g (3/3 nguồn) và hanh-tim 5 g (2/3 nguồn). Tỏi củ giữ nguyên (nguồn vẫn dùng tỏi băm ướp/xào cùng).",
