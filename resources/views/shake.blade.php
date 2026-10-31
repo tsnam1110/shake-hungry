@@ -22,12 +22,7 @@
 
         <div class="ld-seg" id="slots" role="group" aria-label="Chọn bữa" style="margin-top:16px"></div>
 
-        <div style="margin-top:8px">
-            <div class="ld-row" style="padding-left:2px;padding-right:2px">
-                <span class="grow">Ăn chay</span>
-                <button class="ld-switch" type="button" role="switch" aria-checked="false" id="vegetarian" aria-label="Ăn chay"></button>
-            </div>
-            <div style="padding:10px 2px 0">
+            <div style="padding:16px 2px 0">
                 <p class="ld-field-label" style="margin:0">Chế độ lắc</p>
                 <div class="ld-seg" id="shake-mode" role="group" aria-label="Chọn chế độ lắc" style="margin-top:8px">
                     <button type="button" data-mode="eat_out" aria-pressed="true">Ăn ngoài · 1 món</button>
@@ -42,6 +37,13 @@
                         <button type="button" data-count="4" aria-pressed="false">4 món</button>
                     </div>
                 </div>
+            </div>
+
+        <div style="margin-top:16px;border-top:1px solid var(--color-line);padding-top:12px">
+            <p class="ld-field-label" style="margin:0">Tuỳ chọn chung <span style="font-weight:400;color:var(--color-faint)">— áp dụng cho cả Ăn ngoài và Tự nấu</span></p>
+            <div class="ld-row" style="padding-left:2px;padding-right:2px">
+                <span class="grow">Ăn chay</span>
+                <button class="ld-switch" type="button" role="switch" aria-checked="false" id="vegetarian" aria-label="Ăn chay"></button>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3" style="padding:12px 2px 4px">
                 <div>

@@ -182,6 +182,11 @@ class CatalogController extends Controller
         $dishCount = (int) ($data['dish_count'] ?? (($profile ?? null)?->tray_dish_count ?? 3));
         $dishCount = max(1, min(4, $dishCount));
 
+        // Kho trống toàn cục = dữ liệu đang được dựng lại (seed), không phải do
+        // bộ lọc của người dùng — phải báo đúng sự thật thay vì kêu nới bộ lọc.
+        $catalogEmpty = \App\Models\Dish::whereHas('nutrition')->count() === 0;
+        $updatingSuggestion = 'Hệ thống đang cập nhật lại dữ liệu món ăn — vui lòng thử lại sau ít phút.';
+
         $engineInput = [
             ...$data,
             'user_id' => $user?->id,
@@ -214,7 +219,7 @@ class CatalogController extends Controller
                 'seed' => $result['seed'],
                 'relaxed_level' => $result['relaxed_level'],
                 'pool_size' => $result['pool_size'],
-                'suggestion' => $result['suggestion'] ?? null,
+                'suggestion' => $dishes === [] && $catalogEmpty ? $updatingSuggestion : ($result['suggestion'] ?? null),
             ]);
         }
 
@@ -233,7 +238,7 @@ class CatalogController extends Controller
             'seed' => $result['seed'],
             'relaxed_level' => $result['relaxed_level'],
             'pool_size' => $result['pool_size'],
-            'suggestion' => $result['suggestion'] ?? null,
+            'suggestion' => $presented === null && $catalogEmpty ? $updatingSuggestion : ($result['suggestion'] ?? null),
         ]);
     }
 

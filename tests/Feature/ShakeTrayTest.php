@@ -130,6 +130,17 @@ test('mâm chay loại món bị gắn nhãn diet:man dù nguyên liệu thuộc
     expect(array_column($resp->json('dishes'), 'slug'))->not->toContain('ca-cham-mam');
 });
 
+test('kho đang trống (dữ liệu đang dựng lại) thì báo đang cập nhật, không kêu nới bộ lọc', function () {
+    // Không tạo món nào: kho rỗng toàn cục — tình huống gặp khi hệ thống seed lại dữ liệu.
+    $home = $this->postJson('/api/shake', ['slot' => 'trua', 'mode' => 'home']);
+    $home->assertOk()->assertJsonCount(0, 'dishes');
+    expect($home->json('suggestion'))->toContain('đang cập nhật lại dữ liệu');
+
+    $out = $this->postJson('/api/shake', ['slot' => 'trua', 'mode' => 'eat_out']);
+    $out->assertOk()->assertJsonPath('dish', null);
+    expect($out->json('suggestion'))->toContain('đang cập nhật lại dữ liệu');
+});
+
 test('hồ sơ lưu chế độ lắc + số món và lắc tự áp dụng khi không truyền tham số', function () {
     trayFixtures();
     $user = User::factory()->create();
