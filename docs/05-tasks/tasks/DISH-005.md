@@ -216,6 +216,13 @@ banh-cuon-trung, mi-tron-kho, com-chien-dua-trung, trung-cuon-com. Đều là m�
 - `dau-phu-chien-sa-ot` HOÃN: kiểm tham chiếu độc lập lệch **+24%** — hệ số hấp thụ dầu của đậu
   phụ (15) chưa được hậu thuẫn (cặp SR Legacy 172475↔172451 suy cân bằng protein ≈ 9,8). Để lại
   cho quy trình hiệu chuẩn CALC-004/QA-002; thay bằng `dau-phu-rim-sa-ot` (kho).
+  → **ĐÃ XỬ LÝ SAU KHI ĐÓNG TASK (2026-10-31, đợt hiệu chuẩn đậu phụ của CALC-004):** hệ số
+  `dau-phu` đã hiệu chuẩn 15 → **10** theo đúng ngưỡng đăng ký (tỉ lệ 15/9,80 = 1,53, ngoài
+  [0,80; 1,25]; neo cặp trực tiếp của đúng thực phẩm). Món đã được biên soạn (Mức 1,
+  `llm_suggested`, `needs_review`): engine lệch **+8,9%** so với tham chiếu độc lập
+  310,3 kcal (phản chứng ở hệ số cũ 15: **+31,9%**); 0 món cũ đổi số. Kho thành **657 món**,
+  công thức chờ duyệt thành **361**. Xem [CALC-004](./CALC-004.md) mục bổ sung hiệu chuẩn
+  đậu phụ.
 - `mi-xao-chay`: bản soạn đầu dùng nhầm `mi-can` — G6 phát hiện `mi-can` trong kho là MÌ CĂN
   (seitan, khối gluten ướt đã hấp), không phải sợi mì → đổi sợi sang `mi-an-lien`, diet vẫn chay.
 - `mi-trung-xao-rau` đổi tên/slug thành `mi-goi-xao-trung-rau` (thành phần là mì ăn liền, tên cũ

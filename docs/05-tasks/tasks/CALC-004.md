@@ -115,3 +115,53 @@ ngưỡng; gán hệ số cho `gao-nep`/`com-trang` có rủi ro tính hai lần
 Kiểm chứng sau hiệu chuẩn: validate-data 0 🔴, recompute 491/496 món, Pest 106/106;
 QA-002 lần 4 (kiểm tra hiệu chuẩn, cùng tham chiếu độc lập): **98,8% trong ±20%**, nhóm
 chiên 95,0% — hai món còn lệch đều là cá chiên trần sốt (điểm mở của nhóm hải sản ở trên).
+
+## Bổ sung 2026-10-31 — Hiệu chuẩn đậu phụ tươi (`dau-phu`): 15 → 10
+
+"Quy tắc để dành" ở trên (đậu phụ tươi trong món chiên dùng hệ số nhóm xốp **15**) vốn
+**không có số đo nào sau lưng** — nó là ước đoán thận trọng lúc chưa có món nào áp dụng.
+DISH-005 đợt 3 là nơi đầu tiên cần tới nó, và phép kiểm tham chiếu độc lập kiểu QA-002
+lần 3 trên bản nháp `dau-phu-chien-sa-ot` cho lệch **+24%** → món bị hoãn, chờ hiệu chuẩn
+này. Áp đúng phương pháp và ngưỡng đã đăng ký ở đợt hiệu chuẩn trên:
+
+- **Neo độc lập (không dùng hai nguồn neo gốc của CALC-004):** cặp USDA SR Legacy đậu
+  phụ sống firm (FDC **172475**: đạm 17,27, béo 8,72) → đậu phụ chiên (FDC **172451**:
+  đạm 18,82, béo 20,18). Cân bằng protein: Y = 17,27/18,82 = 0,9176; dầu hấp thụ =
+  20,18 × 0,9176 − 8,72 = **9,80 g/100 g sống**. (Cặp này đã có trong bảng neo của
+  [báo cáo QA-002 lần 3](../../06-nutrition/accuracy-runs/2026-10-31-vn-dishes-lan-3.md)
+  §2 với đúng số 9,80 — lúc đó chỉ để đối chứng vì `dau-phu-chien` thành phẩm có hệ số 0.)
+- **Tỉ lệ engine/tham chiếu:** 15 / 9,80 = **1,53** — nằm ngoài dải [0,80; 1,25] đã đăng
+  ký, theo hướng engine cao hơn hệ thống.
+- **Đủ vật chất:** neo là **cặp đo trực tiếp của đúng thực phẩm** (đậu phụ → đậu phụ
+  chiên) — cùng loại neo cặp trực tiếp đã quyết định giá trị của trứng (4,19) ở đợt
+  trước; và hệ số này là điều kiện mở khoá của một món đã duyệt trong kế hoạch
+  (DISH-005 §3.5) chứ không phải ca lý thuyết: bản nháp món đó lệch +24% với hệ số 15.
+- **Phán quyết: SỬA `dau-phu` 15 → 10** (làm tròn từ tâm neo 9,80 theo cùng quy ước làm
+  tròn của đợt trước). Phạm vi áp dụng không đổi: chỉ khi `dau-phu` (đậu phụ **tươi**)
+  là chủ thể trong món `chien`/`chien-ngap-dau`. **`dau-phu-chien` thành phẩm giữ hệ số
+  0** — số USDA "Tofu, fried" của nó đã gồm dầu lần chiên sản xuất; hai slug là hai
+  phạm vi khác nhau, không gộp.
+
+**Kiểm chứng sau sửa** (validate-data 1.145 bản ghi 0 🔴; `migrate:fresh --seed` +
+`recompute-calories --with-ingredients` 652/657 món):
+
+- `dau-phu-chien-sa-ot` được biên soạn (Mức 1, `llm_suggested`, `needs_review`, diet suy
+  ra `chay` đúng trong DB). Engine (hệ số 10): điểm giữa **337,8 kcal**; tham chiếu độc
+  lập theo đúng phương pháp lần 3 (base nguyên văn từ file nguyên liệu **178,0** + dầu
+  ở hệ số neo 9,8% = 132,3 → **310,3 kcal**) → lệch **+8,9%** — trong ±20%, và xấp xỉ
+  đúng phần cấu trúc điểm giữa +9,6 điểm % của món chiên đã phân rã ở lần 3, tức phần
+  dầu nay đã khớp neo độc lập.
+- **Đo phản chứng bằng chính engine:** tạm đặt hệ số 15 trong DB rồi recompute, món
+  cho điểm giữa **409,3 kcal → lệch +31,9%** (ngoài ngưỡng) — khớp chiều và độ lớn của
+  con số +24% ở bản nháp đợt 3 (khác định lượng nên khác số tuyệt đối). Đã khôi phục
+  10 và recompute lại sau khi đo.
+- **Không món cũ nào đổi số:** đối chiếu dish_nutrition trước/sau trên toàn kho — ngoài
+  món mới, **0 món thay đổi**, vì chưa món chiên nào trong kho dùng `dau-phu` tươi làm
+  chủ thể (nhóm chiên liên quan đậu phụ tươi trước nay chỉ có món hoãn này); bộ mẫu
+  QA-002 lần 3/4 vì thế không bị chạm (`bun-dau-mam-tom` dùng `dau-phu-chien`, hệ số 0).
+
+Giới hạn ghi rõ: neo 9,80 suy từ đậu phụ firm ép chặt kiểu Mỹ (đạm 17,3) trong khi
+`dau-phu` của dự án ánh xạ mục mềm nhiều nước hơn (174290, đạm 9,98) — hệ số là tính
+chất của quá trình chiên trên nền đậu phụ, được chuyển giao theo đúng cách các cặp neo
+khác đã được dùng ở lần 3; khi có dữ liệu thành phẩm đậu phụ chiên của Việt Nam, đây là
+hệ số cần rà lại đầu tiên trong nhóm.

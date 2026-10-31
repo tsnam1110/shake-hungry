@@ -162,6 +162,16 @@ bản chất mô hình** — không phải số đo. Bảng đầy đủ và cá
 > 0 🔴, recompute 491/496, Pest 106/106, đo lại (lần 4, kiểm tra hiệu chuẩn): **98,8%**,
 > nhóm chiên 95,0%. Chi tiết: [báo cáo lần 3 + 4](accuracy-runs/2026-10-31-vn-dishes-lan-3.md)
 > và [CALC-004](../05-tasks/tasks/CALC-004.md) mục bổ sung.
+>
+> **Bổ sung 2026-10-31 (tiếp) — hiệu chuẩn đậu phụ tươi: 15 → 10.** "Quy tắc để dành" cho
+> `dau-phu` khi chiên (nhóm xốp 15) vốn không có số đo sau lưng; DISH-005 đợt 3 kiểm bằng
+> tham chiếu độc lập thấy món nháp lệch +24% nên đã hoãn món. Áp ngưỡng đăng ký (tỉ lệ
+> dầu engine/tham chiếu ngoài [0,80; 1,25] + đủ vật chất): neo độc lập là cặp SR Legacy
+> 172475 → 172451 suy bằng cân bằng protein = **9,80** → tỉ lệ 15/9,80 = **1,53**, sửa
+> `dau-phu` thành **10**. `dau-phu-chien` thành phẩm giữ 0 (số đã gồm dầu sản xuất).
+> Sau sửa: món `dau-phu-chien-sa-ot` lệch **+8,9%** so với tham chiếu độc lập (phản
+> chứng ở hệ số 15: **+31,9%**), 0 món cũ đổi số. Chi tiết:
+> [CALC-004](../05-tasks/tasks/CALC-004.md) mục bổ sung hiệu chuẩn đậu phụ.
 
 > **Cảnh báo cho người kế nhiệm:** nếu bỏ qua mục này, calo món chiên sẽ **thấp hơn thực tế 30–50%**.
 > Đây là lỗi âm thầm — không có gì báo sai, chỉ là mọi con số đều thấp.

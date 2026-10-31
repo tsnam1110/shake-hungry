@@ -1,0 +1,104 @@
+{
+  "slug": "dau-phu-chien-sa-ot",
+  "parent_dish_slug": null,
+  "country_code": "VN",
+  "region_code": "vn",
+  "names": [
+    {
+      "locale": "vi",
+      "name": "Đậu phụ chiên sả ớt",
+      "is_primary": true
+    },
+    {
+      "locale": "en",
+      "name": "Fried tofu with lemongrass and chilli",
+      "is_primary": true
+    }
+  ],
+  "is_eat_out": true,
+  "is_home_cook": true,
+  "cooking_method": "chien",
+  "completeness_level": 1,
+  "meal_slots": [
+    {
+      "slot": "trua",
+      "weight": 8
+    },
+    {
+      "slot": "toi",
+      "weight": 8
+    }
+  ],
+  "serving_desc": "1 đĩa",
+  "serving_grams": 150,
+  "ingredients": [
+    {
+      "ingredient_slug": "dau-phu",
+      "quantity": 150,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "sa",
+      "quantity": 10,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "ot-tuoi",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nuoc-tuong",
+      "quantity": 8,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "duong-trang",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dau-an",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    }
+  ],
+  "recipe_steps": [
+    "Đậu phụ thấm khô, cắt miếng dày khoảng 1,5 cm; sả và ớt băm nhỏ.",
+    "Chiên đậu phụ ngập dầu lửa vừa tới khi vàng đều hai mặt, vớt ra để ráo dầu.",
+    "Phi thơm sả ớt với ít dầu, cho đậu đã chiên vào đảo nhanh với nước tương pha đường khoảng 1 phút cho áo đều, dùng nóng với cơm."
+  ],
+  "recipe_sources": [],
+  "media": [],
+  "estimated_kcal": null,
+  "external_ref": null,
+  "import_note": "Biên soạn 2026-10-31 ở đợt hiệu chuẩn hệ số dầu đậu phụ (CALC-004) — món này bị HOÃN ở DISH-005 đợt 3 vì hệ số hấp thụ dầu 15 của dau-phu (quy tắc để dành chưa có số đo) không được tham chiếu độc lập hậu thuẫn (lệch +24% ở bản nháp đợt 3). Hiệu chuẩn đã chốt hệ số dau-phu = 10 (neo độc lập: cặp SR Legacy 172475 sống ↔ 172451 chiên, cân bằng protein suy ra 9,80 g dầu/100 g; tỉ lệ engine/tham chiếu ở hệ số cũ 15/9,8 = 1,53 — ngoài dải [0,80; 1,25] đăng ký trước) nên món được biên soạn nay. Mọi dòng nguyên liệu mang source=llm_suggested, needs_review=true, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12 (≥3 recipe_sources sẽ bổ sung ở đợt nâng Mức 2). Dòng dau-an 3 g chỉ là dầu phi sả ớt (bước phụ) theo quy ước Phương án A — dầu hấp thụ của bước chiên chính do hệ số oil_absorption_pct của dau-phu đảm nhiệm, không kê trong công thức. Món chay thuần: không nước mắm, không hạt nêm/bột canh; gia vị chỉ nước tương/đường; nhãn diet suy từ thành phần phải ra chay, kiểm chứng trong DB sau seed.",
+  "status": "draft",
+  "source": "curated",
+  "confidence": "unknown",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "loai:mon-chinh"
+  ]
+}
