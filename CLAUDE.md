@@ -131,6 +131,14 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > lẫn nhau; kcal mục tiêu khi chưa cấu hình trong hồ sơ thì hiển thị **gợi ý suy từ TDEE**
 > (chỉ là giá trị hiển thị/đầu vào mềm — không ghi vào hồ sơ nếu người dùng không đặt).
 
+> ## ⚠️ Đính chính lần 11, 2026-10-31 — trang chuyên dụng Khám phá/Nhật ký (UI-015) + lưu ý tên món đa locale
+>
+> Từ UI-015, điều hướng chính trỏ tới trang chuyên dụng `/kham-pha` và `/nhat-ky`; mục
+> Khám phá ở trang chủ và Nhật ký trong hồ sơ chỉ còn vai trò **dùng nhanh**. Lưu ý dữ
+> liệu quan trọng: `dish_names` có tên chính (is_primary) **theo từng locale** (vi đủ
+> 500, en 453) — mọi JOIN/sắp xếp theo tên phải khoá `locale='vi'`, và API danh mục luôn
+> ưu tiên tên vi làm `names[0]`.
+
 **Trạng thái thực tế, kiểm ngày 2026-10-31 (đã chạy lại toàn bộ lệnh kiểm chứng):**
 
 | Hạng mục | Thực tế | Kiểm bằng |

@@ -208,6 +208,7 @@ kiểm chứng TEST-002**; `migrate:fresh --seed` dựng lại đúng toàn bộ
 | [UI-012](./tasks/UI-012.md) | Thẻ đồng nhất cho món ăn, nguyên liệu, hoa quả (sẵn sàng cho ảnh thật) | Frontend | ✅ | UI-004 | 2026-10-31 |
 | [UI-013](./tasks/UI-013.md) | Khối Lắc: lựa chọn loại trừ, chip Không ăn được, kcal gợi ý theo TDEE | Frontend | ✅ | UI-011 | 2026-10-31 |
 | [UI-014](./tasks/UI-014.md) | Yêu thích + thống kê số lượng món/quả đã ăn | Frontend + Backend | ✅ | UI-012 | 2026-10-31 |
+| [UI-015](./tasks/UI-015.md) | Trang Khám phá và trang Nhật ký chuyên dụng (bản dùng chung chỉ để dùng nhanh) | Frontend + Backend | ✅ | UI-005, UI-008 | 2026-10-31 |
 
 **DoD GĐ4:** bấm Lắc ra món hợp bữa, không lặp món vừa ăn, hiển thị dinh dưỡng đúng quy tắc QT-5.
 
