@@ -31,6 +31,14 @@
   "edible_portion_note": "Số nguồn là phi lê còn da; cá linh non ăn nguyên con (xương mềm) sẽ khác về canxi và hao hụt — chưa có hệ số có nguồn, chờ tự cân khi biên soạn món cá linh chiên giòn/kho.",
   "is_ready_to_eat": false,
   "units": [],
+  "media": [
+    {
+      "path": "media/ingredients/ca-linh.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "low",
   "needs_review": true,
