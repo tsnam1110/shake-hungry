@@ -196,3 +196,4 @@ Bất kỳ ai (người hay AI agent) muốn thêm một nguồn dữ liệu:
 | 2026-08-31 | Tandoor (fork) | ❌ Từ chối | — | AGPL + Commons Clause |
 | 2026-08-31 | Mealie / KitchenOwl / Nextcloud Cookbook (fork) | ❌ Từ chối | — | AGPL-3.0 |
 | 2026-08-31 | RecipeSage (fork) | ❌ Từ chối | — | Phi thương mại + CLA |
+| 2026-10-31 | Bảng TPTP Việt Nam (Viện Dinh dưỡng), MEXT (Nhật), IFCT (Ấn Độ), Thai FCT, FNRI (Philippines), văn liệu khoa học | 🔶 **Duyệt có điều kiện — tầng thứ cấp** theo quyết định chủ dự án | Chủ dự án + đợt thu thập 2026-10-31 | Chỉ tra TỪNG nguyên liệu khi nguồn chính thống không có; ghi trích dẫn từng số; đánh dấu "chưa kiểm định" và hiển thị cảnh báo trên giao diện. Vẫn CẤM nhập/chép hàng loạt toàn bộ bảng (mục §2 giữ nguyên cho hành vi sao chép có hệ thống). Số liệu dinh dưỡng là dữ kiện thực tế; việc biên soạn độc lập từng mục có xuất xứ riêng là cơ sở pháp lý của việc dùng này (xem §7.1 DATA-PIPELINE) |

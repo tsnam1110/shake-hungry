@@ -1,7 +1,7 @@
 # [DISH-002] — Lên 150 món (mốc app dùng được)
 
 **Mã task:** DISH-002 · **Giai đoạn:** GĐ3 · **Loại:** Dữ liệu
-**Status:** ⬜ TODO · **Ngày tạo:** 2026-08-31 · **Phụ thuộc:** DISH-001
+**Status:** 🔶 ĐANG LÀM (đã vượt mốc số lượng, chờ người duyệt công thức) · **Ngày tạo:** 2026-08-31 · **Phụ thuộc:** DISH-001
 
 ---
 
@@ -34,3 +34,5 @@ Mở rộng từ 50 lên 150 món. Ưu tiên lấp **chỗ trống**, không ph�
 - Bắt đầu dùng thử thật từ mốc này — lỗi trải nghiệm chỉ lộ ra khi dùng thật.
 
 ## Ghi chú
+
+**Bổ sung 2026-10-31 — mốc số lượng đã vượt:** theo chỉ thị riêng của chủ dự án ("Nâng số lượng món lên 200 món"), kho món đã lên **200 món** (vượt mốc 150 của task này) với 139 món mới soạn thảo từ danh mục Wikipedia/Wikidata (CC0) + chọn lọc biên tập; **176/200 món tính được dinh dưỡng** sau đợt thu thập dữ liệu cùng ngày. 24 món chưa tính được: 22 món chiên chờ CALC-004, mắm nêm (nguyên liệu không có dữ liệu ở bất kỳ nguồn nào), mắm ruột An Giang (vỏ rỗng). Trạng thái giữ 🔶 vì toàn bộ công thức là `llm_suggested` chờ người duyệt — giống DISH-001. Mốc tiếp theo về số lượng là DISH-003 (300 món).

@@ -74,3 +74,8 @@ Toàn bộ 61 món vỏ Wikidata đã được xử lý trong `data/dishes/vn/`:
 - Tra lại vẫn KHÔNG có nguồn đạt chuẩn, giữ null và đã ghi phụ chú ngày 2026-10-31 vào `mapping_note` từng file: ca-loc (FDC mọi dataType 0 kết quả "snakehead"), bap-chuoi (chỉ có hoa bí/hoa điên điển — khác loài), mam-tom (Branded chỉ có bagoong xào Philippines), chom-chom (chỉ có bản đóng hộp siro), nuoc-mia (Branded GOYA pha loãng 35%).
 - Các kết luận LOẠI của đợt gốc được xác nhận lại là đúng và giữ nguyên: luon ≠ Anguilla (khác bộ), tuong-ban ≠ miso (tương loãng hơn nhiều), cua-dong (đã quét USDA/Ciqual/MEXT), ruou-trang ≠ sake (chênh độ cồn có hệ thống).
 - Sau nạp lại: validate-data 0 🔴, 66/66 test đạt; số món tính được giữ nguyên 48 (đợt này nâng CHẤT LƯỢNG số của 2 món, không tăng số lượng — các món còn "chưa đủ dữ liệu" đều vướng nguyên liệu đặc thù VN chưa có bảng license sạch, đúng kết luận LEGAL-001).
+
+**Bổ sung 2026-10-31 (đợt thu thập dữ liệu + mở rộng kho món, theo lệnh chủ dự án):**
+- Đợt thu thập 3 vòng (chính thống → nhãn sản phẩm → nguồn thứ cấp có đánh dấu chưa kiểm định) đã lấp số cho hầu hết nguyên liệu từng chặn các món của task này: cá lóc, mắm tôm, nước mắm truyền thống... Sau tính lại: **54/57 món đã soạn tính được dinh dưỡng** (đầu đợt 48). Ba món còn lại: bánh rế và bim bim chờ hệ số hấp thụ dầu (CALC-004), mắm ruột An Giang vẫn là vỏ rỗng (nguyên liệu ruột cá lên men không có ở bất kỳ nguồn nào đã tra).
+- Ba món từng bị chặn vì thiếu nguyên liệu cốt lõi đã được soạn công thức: chả rươi, don, mắm rươi (rươi/don có dữ liệu nguồn thứ cấp — món mang cờ "chưa kiểm định"). Chả rươi là món chiên nên phần dinh dưỡng vẫn chờ CALC-004.
+- Trạng thái task giữ 🔶: toàn bộ định lượng vẫn là `llm_suggested`, chờ người duyệt trong admin.

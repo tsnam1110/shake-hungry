@@ -239,12 +239,24 @@ riêng, là hoạt động hợp lệ và cho ra một cơ sở dữ liệu mà 
 | 3 | **Canadian Nutrient File** (OGL-Canada) | `cnf` | `high`–`medium` |
 | 4 | **Nhãn dinh dưỡng sản phẩm thương mại** bán tại VN — bắt buộc ghi **tên thương hiệu + URL** | `nhan_san_pham` | `medium` |
 | 5 | **Tự đo / tự cân** — ghi rõ phương pháp, ngày, dụng cụ | `tu_do` | `medium` |
-| 6 | Không tra được | `null` | — |
+| 6 | **Nguồn THỨ CẤP — không ưu tiên** (xem ghi chú ngay dưới): Bảng TPTP Việt Nam (Viện Dinh dưỡng), bảng FCT nước ngoài khác (MEXT Nhật, IFCT Ấn Độ, Thai FCT, FNRI), bài báo/tài liệu khoa học có phân tích thành phần | `vn_nin`, `mext_jp`, `ifct_in`, `thai_fct`, `fnri_ph`, `literature` | `low` — và bị đánh dấu **chưa kiểm định** |
+| 7 | Không tra được | `null` | — |
 
 > ⚠️ **Nguồn 4 và 5 là ngoại lệ có kiểm soát của QT-4.** Chúng phá nguyên tắc "một bảng thành phần
 > duy nhất", nên chỉ dùng cho **nguyên liệu đặc thù Việt Nam mà các bảng ở mục 1–3 không phủ** (nước
 > mắm, mắm tôm, bánh phở, giò lụa, cá lóc…). Món dùng chúng phải hạ `confidence`, và
 > `dish_nutrition.fct_source` ghi là `mixed` kèm danh sách nguồn đã dùng.
+
+> ⚠️ **Tầng 6 — nguồn thứ cấp (quyết định của chủ dự án, 2026-10-31).** Các nguồn ở §2.2 của
+> [LICENSE-COMPLIANCE](LICENSE-COMPLIANCE.md) và Bảng TPTP Việt Nam **được mở lại ở chế độ
+> không ưu tiên**: chỉ được tra **từng nguyên liệu một** cho nguyên liệu mà tầng 1–5 đã xác nhận
+> không có, mỗi con số ghi rõ bảng gốc + trang đã mở trong `mapping_note`. Ba ranh giới KHÔNG đổi:
+> (1) vẫn **cấm nhập/chép hàng loạt** bất kỳ bảng hay dataset nào (kể cả Bảng TPTP VN và các
+> dataset ở §2.1–2.2) — đây là tra cứu từng mục có trích dẫn, không phải sao chép có hệ thống;
+> (2) số thứ cấp **không bao giờ thay thế** số đã có từ tầng cao hơn; (3) mọi nguyên liệu thuộc
+> tầng này bị hệ thống đánh dấu **"chưa kiểm định"** (`App\Nutrition\SourceTier` là nơi định
+> nghĩa duy nhất): `dish_nutrition.unverified_ingredients` ghi lại và giao diện công khai hiển
+> thị cảnh báo trên món dùng chúng, cho đến khi được thay bằng nguồn chính thống.
 
 ### 7.3 Quy tắc bắt buộc khi tra cứu
 

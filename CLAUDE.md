@@ -83,6 +83,21 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > Đồng bộ trong cùng commit: §3, §6 của file này, [AGENTS.md](AGENTS.md) và
 > [TASK-TEMPLATE](docs/05-tasks/TASK-TEMPLATE.md).
 
+> ## ⚠️ Đính chính lần 7, 2026-10-31 — mở lại nguồn thứ cấp ở chế độ không ưu tiên + cờ "chưa kiểm định"
+>
+> Theo quyết định của **chủ dự án**, các nguồn từng bị hạn chế (Bảng thành phần thực
+> phẩm Việt Nam, các bảng FCT nước ngoài như MEXT/IFCT/Thai FCT/FNRI, văn liệu khoa
+> học) **được dùng lại làm tầng 6 — nguồn thứ cấp, KHÔNG ưu tiên** trong thang nguồn
+> của [DATA-PIPELINE §7.2](docs/04-data-sources/DATA-PIPELINE.md): chỉ tra từng nguyên
+> liệu khi tầng 1–5 không có dữ liệu, mỗi số có trích dẫn bảng gốc. **Lệnh cấm nhập/
+> chép hàng loạt dataset và bảng số (QT-2, LICENSE-COMPLIANCE §2) vẫn nguyên hiệu
+> lực** — thay đổi này chỉ mở đường tra cứu từng mục có ghi xuất xứ. Điều kiện bắt
+> buộc đi kèm: dữ liệu tầng 6 bị đánh dấu **chưa kiểm định** trong hệ thống
+> (`App\Nutrition\SourceTier`, cột `dish_nutrition.unverified_ingredients`) và
+> **hiển thị cảnh báo trên giao diện người dùng** ở mọi món dùng chúng. QT-1 không
+> đổi: vẫn cấm số từ trí nhớ và cấm gán số của loài/trạng thái khác cho nguyên liệu
+> chính mà không ghi rõ.
+
 **Trạng thái thực tế, kiểm ngày 2026-09-01 (đã chạy lại toàn bộ lệnh kiểm chứng):**
 
 | Hạng mục | Thực tế | Kiểm bằng |
