@@ -44,6 +44,14 @@
   "edible_portion_note": "Thịt quả chiếm 69–82% khối lượng quả nguyên (vỏ 7–15%, hạt 8–14% — theo tài liệu kỹ thuật Peru về lucuma); lấy điểm giữa ~75%. Bộ số dinh dưỡng tính trên 100 g phần thịt quả.",
   "is_ready_to_eat": false,
   "units": [],
+  "media": [
+    {
+      "path": "media/ingredients/lekima.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "medium",
   "needs_review": true,

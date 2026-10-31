@@ -44,6 +44,14 @@
   "edible_portion_note": "Phần dùng = 100% quả khô: khi hãm/sắc, cả quả (vỏ mỏng, thịt, hạt) được đập dập cho vào nước, bã bỏ sau khi chiết — không có phần thải bỏ trước khi dùng",
   "is_ready_to_eat": false,
   "units": [],
+  "media": [
+    {
+      "path": "media/ingredients/la-han.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "low",
   "needs_review": true,

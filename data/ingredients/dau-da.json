@@ -38,6 +38,14 @@
   "edible_portion_note": "Thai FCT không công bố tỉ lệ phần ăn được cho mục này. Quả nhỏ 2–4 cm, ăn phần cơm trong sau khi bóc vỏ mỏng và bỏ hạt; vỏ + hạt ước chiếm ~35–40% — cần đo lại trước khi gán số.",
   "is_ready_to_eat": false,
   "units": [],
+  "media": [
+    {
+      "path": "media/ingredients/dau-da.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "low",
   "needs_review": true,
