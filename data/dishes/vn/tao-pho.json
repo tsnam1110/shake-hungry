@@ -13,6 +13,13 @@
       "locale": "vi",
       "name": "tào phớ",
       "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "tàu hũ",
+      "is_primary": false,
+      "is_alias": true,
+      "note": "miền Nam"
     }
   ],
   "is_eat_out": true,

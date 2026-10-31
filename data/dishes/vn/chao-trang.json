@@ -13,6 +13,13 @@
       "locale": "en",
       "name": "plain rice porridge with salted duck egg",
       "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "cháo trắng trứng vịt muối",
+      "is_primary": false,
+      "is_alias": true,
+      "note": "miền Bắc"
     }
   ],
   "is_eat_out": true,

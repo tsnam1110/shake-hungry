@@ -13,6 +13,13 @@
       "locale": "en",
       "name": "green papaya salad with shrimp and pork",
       "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "nộm đu đủ tôm thịt",
+      "is_primary": false,
+      "is_alias": true,
+      "note": "miền Bắc"
     }
   ],
   "is_eat_out": true,

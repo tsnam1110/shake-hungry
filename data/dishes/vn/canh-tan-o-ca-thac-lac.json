@@ -13,6 +13,13 @@
       "locale": "en",
       "name": "garland chrysanthemum soup with featherback fish paste",
       "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "canh cải cúc cá thác lác",
+      "is_primary": false,
+      "is_alias": true,
+      "note": "miền Bắc"
     }
   ],
   "is_eat_out": true,

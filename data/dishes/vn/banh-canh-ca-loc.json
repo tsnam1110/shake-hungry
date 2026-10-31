@@ -13,6 +13,13 @@
       "locale": "vi",
       "name": "Bánh canh cá lóc",
       "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "Bánh canh cá quả",
+      "is_primary": false,
+      "is_alias": true,
+      "note": "miền Bắc"
     }
   ],
   "is_eat_out": true,

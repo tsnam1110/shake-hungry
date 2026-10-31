@@ -13,6 +13,13 @@
       "locale": "en",
       "name": "duck salad with banana blossom",
       "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "nộm vịt",
+      "is_primary": false,
+      "is_alias": true,
+      "note": "miền Bắc"
     }
   ],
   "is_eat_out": true,

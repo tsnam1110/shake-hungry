@@ -2,6 +2,12 @@
   "slug": "nho",
   "name_vi": "Nho (tươi)",
   "name_en": "Grapes, raw",
+  "aliases": [
+    {
+      "name": "Bồ đào",
+      "note": "tên cũ"
+    }
+  ],
   "category": "trai-cay",
   "reference_food": {
     "fct_source": "usda_sr_legacy",

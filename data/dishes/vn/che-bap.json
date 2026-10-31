@@ -13,6 +13,13 @@
       "locale": "en",
       "name": "che bap (sweet corn dessert soup)",
       "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "Chè ngô",
+      "is_primary": false,
+      "is_alias": true,
+      "note": "miền Bắc"
     }
   ],
   "is_eat_out": true,

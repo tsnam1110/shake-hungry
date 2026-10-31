@@ -2,6 +2,12 @@
   "slug": "tao",
   "name_vi": "Táo tây (cả vỏ, tươi)",
   "name_en": "Apple, raw, with skin",
+  "aliases": [
+    {
+      "name": "Bom",
+      "note": "miền Nam"
+    }
+  ],
   "category": "trai-cay",
   "reference_food": {
     "fct_source": "usda_sr_legacy",

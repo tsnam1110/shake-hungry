@@ -13,6 +13,13 @@
       "locale": "en",
       "name": "chicken and sweet corn soup",
       "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "súp gà bắp",
+      "is_primary": false,
+      "is_alias": true,
+      "note": "miền Nam"
     }
   ],
   "is_eat_out": true,

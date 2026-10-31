@@ -13,6 +13,13 @@
       "locale": "en",
       "name": "smoked pork (Tay Bac style)",
       "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "thịt heo gác bếp",
+      "is_primary": false,
+      "is_alias": true,
+      "note": "miền Nam"
     }
   ],
   "is_eat_out": true,

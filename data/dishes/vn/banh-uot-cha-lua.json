@@ -13,6 +13,13 @@
       "locale": "en",
       "name": "banh uot cha lua (wet rice rolls with pork sausage)",
       "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "Bánh ướt giò lụa",
+      "is_primary": false,
+      "is_alias": true,
+      "note": "miền Bắc"
     }
   ],
   "is_eat_out": true,

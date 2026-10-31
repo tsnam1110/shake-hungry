@@ -13,6 +13,13 @@
       "locale": "en",
       "name": "young jackfruit salad, northern style",
       "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "gỏi mít non",
+      "is_primary": false,
+      "is_alias": true,
+      "note": "miền Nam"
     }
   ],
   "is_eat_out": true,

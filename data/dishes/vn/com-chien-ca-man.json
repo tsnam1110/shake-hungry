@@ -13,6 +13,13 @@
       "locale": "en",
       "name": "salted fish fried rice",
       "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "cơm rang cá mặn",
+      "is_primary": false,
+      "is_alias": true,
+      "note": "miền Bắc"
     }
   ],
   "is_eat_out": true,

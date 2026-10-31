@@ -13,6 +13,13 @@
       "locale": "en",
       "name": "boiled muscovy duck",
       "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "vịt xiêm luộc",
+      "is_primary": false,
+      "is_alias": true,
+      "note": "miền Nam"
     }
   ],
   "is_eat_out": true,

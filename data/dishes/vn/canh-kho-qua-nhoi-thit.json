@@ -13,6 +13,13 @@
       "locale": "en",
       "name": "stuffed bitter melon soup",
       "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "canh mướp đắng nhồi thịt",
+      "is_primary": false,
+      "is_alias": true,
+      "note": "miền Bắc"
     }
   ],
   "is_eat_out": true,

@@ -13,6 +13,13 @@
       "locale": "en",
       "name": "stir-fried pork intestines with pickled mustard greens",
       "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "lòng heo xào dưa chua",
+      "is_primary": false,
+      "is_alias": true,
+      "note": "miền Nam"
     }
   ],
   "is_eat_out": true,

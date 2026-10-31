@@ -13,6 +13,13 @@
       "locale": "en",
       "name": "cucumber and whiteleg shrimp salad",
       "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "gỏi dưa leo tôm thẻ",
+      "is_primary": false,
+      "is_alias": true,
+      "note": "miền Nam"
     }
   ],
   "is_eat_out": true,

@@ -2,6 +2,12 @@
   "slug": "qua-dieu",
   "name_vi": "Quả điều (cuống quả)",
   "name_en": "Cashew apple, raw",
+  "aliases": [
+    {
+      "name": "Đào lộn hột",
+      "note": "miền Nam"
+    }
+  ],
   "category": "trai-cay",
   "reference_food": {
     "fct_source": "ifct_in",

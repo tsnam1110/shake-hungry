@@ -13,6 +13,13 @@
       "locale": "vi",
       "name": "Nem rán (chả giò)",
       "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "Chả giò",
+      "is_primary": false,
+      "is_alias": true,
+      "note": "miền Nam"
     }
   ],
   "is_eat_out": true,

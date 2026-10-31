@@ -13,6 +13,13 @@
       "locale": "en",
       "name": "boiled pork intestines",
       "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "lòng heo luộc",
+      "is_primary": false,
+      "is_alias": true,
+      "note": "miền Nam"
     }
   ],
   "is_eat_out": true,

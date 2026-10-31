@@ -2,6 +2,12 @@
   "slug": "chanh",
   "name_vi": "Chanh",
   "name_en": "Lime, raw",
+  "aliases": [
+    {
+      "name": "Chanh không hạt",
+      "note": "tên thương mại"
+    }
+  ],
   "category": "trai-cay",
   "reference_food": {
     "fct_source": "usda_sr_legacy",

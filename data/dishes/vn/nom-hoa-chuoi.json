@@ -8,6 +8,13 @@
       "locale": "vi",
       "name": "Nộm hoa chuối",
       "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "Gỏi hoa chuối",
+      "is_primary": false,
+      "is_alias": true,
+      "note": "miền Nam"
     }
   ],
   "is_eat_out": true,

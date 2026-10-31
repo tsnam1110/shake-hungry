@@ -108,7 +108,7 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 | Bảng tham chiếu | ✅ SR Legacy **7.793** + Cooking Yields R2 **163** + FNDDS **333 Food Code / 1.810 SR Links** + `regions-vn.json` + `wikidata-vn-dishes.json`; **nguyên liệu gốc có số 242/255 (94,9%)** | `data/reference/MANIFEST.json` |
 | Hệ số DATA-004/008 | ✅ khung xong: `edible_portion_pct` (3 có nguồn, 16 null chờ cân), `default_yield_factor` (9 thịt suy có nguồn) | `edible_portion_note` / `default_yield_factor_note` từng file |
 | **Kiểm chứng engine** | 🔵 lần 2 (2026-09-01, engine **1.1.0**): **89,7% trong ±20%** (không đổi), MAPE 3,9%, và **% tham chiếu nằm trong khoảng 1,0% → 80,4%**. Hệ số hấp thụ dầu đã có theo nhóm (CALC-004, áp 2026-10-31) nên **nhóm chiên đã tính được**; vẫn chặn: **QA-002 chưa chạy** (chưa đo trên món Việt) và **nhóm hấp lệch −21%** (Cooking Yields R2 **0 dòng thuỷ sản**) | [nhật ký đo](docs/06-nutrition/ACCURACY-SPEC.md) |
-| **Code** | ✅ **Laravel 13.29 + MySQL 8.0** — 19 migration (đủ R1–**R10**), engine calo **1.1.0**, **trang quản trị antd 6 + React 19 tại `/admin`**, **trang người dùng hoàn chỉnh** (Lắc + lọc theo nhãn + tài khoản + TDEE + nhật ký + đóng góp), **77 test Pest xanh** | `php artisan migrate:fresh --seed; vendor\bin\pest --no-coverage` |
+| **Code** | ✅ **Laravel 13.29 + MySQL 8.0** — 19 migration (đủ R1–**R10**), engine calo **1.1.0**, **trang quản trị antd 6 + React 19 tại `/admin`**, **trang người dùng hoàn chỉnh** (Lắc + lọc theo nhãn + tài khoản + TDEE + nhật ký + đóng góp), **85 test Pest xanh** | `php artisan migrate:fresh --seed; vendor\bin\pest --no-coverage` |
 | **CI** | 🔵 `.github/workflows/tests.yml` (GitHub Actions) — repo nay ở **GitHub** nên đã đúng nền; **chưa chạy lần nào vì code chưa push** (đang chờ chủ dự án cấp credential push) | `git remote -v` |
 | Chưa có | cột embedding (REC-002), Foundation Foods, rà soát độc lập ING-003, tích hợp LLM trong trang quản trị (ADM-006 — chờ chủ dự án chốt nhà cung cấp/API key) | [ROADMAP](docs/05-tasks/ROADMAP.md) |
 | Sao lưu | 🔵 `origin` = `https://github.com/tsnam1110/shake-hungry.git`, branch `dev`; nhánh local đang ahead origin nhiều commit (toàn bộ đợt 2026-10-30/31) — **push chờ chủ dự án cấp credential** (token hoặc khoá SSH) | `git status -sb` |
@@ -142,7 +142,7 @@ Bảng trạng thái tổng quan — **bắt buộc cập nhật mỗi khi đón
 | GĐ3 | Sản xuất dữ liệu: 150 → 500 món | 🔵 IN PROGRESS — **đã đạt 500 món (DISH-004)**; còn QA-002 đo độ chính xác + duyệt 200 công thức mới | — |
 | GĐ4 | Engine gợi ý + nút Lắc bản chính thức | ✅ DONE — REC-001 + UI-002/003 chạy thật ở trang chủ | 2026-10-31 |
 | GĐ5 | Hồ sơ người dùng + TDEE + lịch sử bữa ăn | ✅ DONE — USR-001…004 chạy thật | 2026-10-31 |
-| Nhánh hoa quả | Hồ sơ quả: mùa vụ + giá theo miền/mùa + vùng trồng + kết hợp thực phẩm; admin riêng `/admin/hoa-qua` | 🔵 THIẾT KẾ — đã soạn FRUIT-MODULE.md + FRUIT-001…006, chờ chủ dự án chốt (QT-8) | — |
+| Nhánh hoa quả | Hồ sơ quả: mùa vụ + giá theo miền/mùa + vùng trồng + kết hợp thực phẩm; admin riêng `/admin/hoa-qua`; trang người dùng `/hoa-qua` | ✅ XONG (2026-10-31) — FRUIT-001…006: 82 hồ sơ, 1.387 dòng giá có nguồn, admin + trang người dùng + khối trang chủ | — |
 | GĐ6 | Đóng góp cộng đồng + lớp ngũ hành (tuỳ chọn) | 🔵 IN PROGRESS — đóng góp cộng đồng ✅ (CTR-001); lớp ngũ hành ⬜ (TCM-001…003, tuỳ chọn) | — |
 
 ---

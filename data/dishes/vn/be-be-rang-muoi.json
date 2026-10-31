@@ -13,6 +13,13 @@
       "locale": "vi",
       "name": "Bề bề rang muối",
       "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "Tôm tít rang muối",
+      "is_primary": false,
+      "is_alias": true,
+      "note": "miền Nam"
     }
   ],
   "is_eat_out": true,

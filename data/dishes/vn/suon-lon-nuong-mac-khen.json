@@ -13,6 +13,13 @@
       "locale": "en",
       "name": "grilled pork ribs with mac khen pepper",
       "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "sườn heo nướng mắc khén",
+      "is_primary": false,
+      "is_alias": true,
+      "note": "miền Nam"
     }
   ],
   "is_eat_out": true,

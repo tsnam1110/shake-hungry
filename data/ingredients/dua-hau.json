@@ -2,6 +2,12 @@
   "slug": "dua-hau",
   "name_vi": "Dưa hấu",
   "name_en": "Watermelon, raw",
+  "aliases": [
+    {
+      "name": "Dưa đỏ",
+      "note": "miền Bắc, tên cũ"
+    }
+  ],
   "category": "trai-cay",
   "reference_food": {
     "fct_source": "usda_sr_legacy",

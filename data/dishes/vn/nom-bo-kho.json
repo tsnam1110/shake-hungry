@@ -13,6 +13,13 @@
       "locale": "en",
       "name": "green papaya salad with beef jerky",
       "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "gỏi đu đủ bò khô",
+      "is_primary": false,
+      "is_alias": true,
+      "note": "miền Nam"
     }
   ],
   "is_eat_out": true,

@@ -13,6 +13,13 @@
       "locale": "en",
       "name": "green mango salad with dried shrimp",
       "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "nộm xoài xanh tôm khô",
+      "is_primary": false,
+      "is_alias": true,
+      "note": "miền Bắc"
     }
   ],
   "is_eat_out": true,

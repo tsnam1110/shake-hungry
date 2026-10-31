@@ -13,6 +13,13 @@
       "locale": "vi",
       "name": "Bún nem",
       "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "Bún chả giò",
+      "is_primary": false,
+      "is_alias": true,
+      "note": "miền Nam"
     }
   ],
   "is_eat_out": true,

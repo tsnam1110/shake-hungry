@@ -178,7 +178,7 @@ kiểm chứng TEST-002**; `migrate:fresh --seed` dựng lại đúng toàn bộ
 | [FRUIT-004](./tasks/FRUIT-004.md) | Thu thập giá mùa vụ 3 miền × 12 tháng | Dữ liệu | ✅ | FRUIT-003 | 2026-10-31 (1.387 dòng giá có nguồn, 78/82 hồ sơ; 4 hồ sơ để trống có lý do) |
 | [FRUIT-005](./tasks/FRUIT-005.md) | Module quản trị /admin/hoa-qua | Backend | ✅ | FRUIT-001 | 2026-10-31 |
 | [FRUIT-006](./tasks/FRUIT-006.md) | Trang người dùng /hoa-qua | Frontend | ✅ | FRUIT-003, FRUIT-004 | 2026-10-31 (+ khối "Tháng này nên ăn gì") |
-| [ALIAS-001](./tasks/ALIAS-001.md) | Tên gọi khác (tên vùng miền) cho món + nguyên liệu/quả, tìm kiếm được | Dữ liệu | 🔶 | — | Hạ tầng + V18 xong 2026-10-31; đang điền 85 quả + 500 món |
+| [ALIAS-001](./tasks/ALIAS-001.md) | Tên gọi khác (tên vùng miền) cho món + nguyên liệu/quả, tìm kiếm được | Dữ liệu | ✅ | — | 2026-10-31 (19 quả + 66 món có tên gọi khác; 2 cặp nghi trùng chờ chủ dự án quyết gộp) |
 
 **DoD GĐ3:** ≥500 món Mức 1; QA-002 cho kết quả ≥80% số món trong ±20%; nhật ký đo đã ghi vào
 [ACCURACY-SPEC §6](../06-nutrition/ACCURACY-SPEC.md).

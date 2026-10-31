@@ -13,6 +13,13 @@
       "locale": "en",
       "name": "malabar spinach soup with clams",
       "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "canh mồng tơi nấu ngao",
+      "is_primary": false,
+      "is_alias": true,
+      "note": "miền Bắc"
     }
   ],
   "is_eat_out": true,

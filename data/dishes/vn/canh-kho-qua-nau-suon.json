@@ -13,6 +13,13 @@
       "locale": "en",
       "name": "bitter melon soup with pork ribs",
       "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "canh mướp đắng nấu sườn",
+      "is_primary": false,
+      "is_alias": true,
+      "note": "miền Bắc"
     }
   ],
   "is_eat_out": true,

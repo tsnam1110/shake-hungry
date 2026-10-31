@@ -2,6 +2,12 @@
   "slug": "dao-phang",
   "name_vi": "Đào phẳng (donut peach, tươi)",
   "name_en": "Flat peach (donut peach), raw",
+  "aliases": [
+    {
+      "name": "Đào dẹt",
+      "note": "tên gọi phổ biến"
+    }
+  ],
   "category": "trai-cay",
   "reference_food": {
     "fct_source": "usda_sr_legacy",

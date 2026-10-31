@@ -2,6 +2,12 @@
   "slug": "viet-quat",
   "name_vi": "Việt quất",
   "name_en": "Blueberries, raw",
+  "aliases": [
+    {
+      "name": "Blueberry",
+      "note": "tên thương mại"
+    }
+  ],
   "category": "trai-cay",
   "reference_food": {
     "fct_source": "usda_sr_legacy",

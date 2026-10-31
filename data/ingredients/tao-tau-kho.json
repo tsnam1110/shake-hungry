@@ -2,6 +2,12 @@
   "slug": "tao-tau-kho",
   "name_vi": "Táo tàu khô (hồng táo)",
   "name_en": "Jujube, Chinese, dried",
+  "aliases": [
+    {
+      "name": "Đại táo",
+      "note": "tên gọi phổ biến"
+    }
+  ],
   "category": "trai-cay",
   "reference_food": {
     "fct_source": "usda_sr_legacy",

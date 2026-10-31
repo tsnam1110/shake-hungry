@@ -2,6 +2,12 @@
   "slug": "dau-den",
   "name_vi": "Dâu đen (mâm xôi đen)",
   "name_en": "Blackberries, raw",
+  "aliases": [
+    {
+      "name": "Blackberry",
+      "note": "tên thương mại"
+    }
+  ],
   "category": "trai-cay",
   "reference_food": {
     "fct_source": "usda_sr_legacy",

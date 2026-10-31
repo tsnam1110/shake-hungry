@@ -2,6 +2,12 @@
   "slug": "mam-xoi",
   "name_vi": "Mâm xôi đỏ",
   "name_en": "Raspberries, raw",
+  "aliases": [
+    {
+      "name": "Phúc bồn tử",
+      "note": "tên gọi phổ biến"
+    }
+  ],
   "category": "trai-cay",
   "reference_food": {
     "fct_source": "usda_sr_legacy",

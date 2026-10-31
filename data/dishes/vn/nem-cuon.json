@@ -13,6 +13,13 @@
       "locale": "vi",
       "name": "Nem cuốn",
       "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "Gỏi cuốn",
+      "is_primary": false,
+      "is_alias": true,
+      "note": "miền Nam"
     }
   ],
   "is_eat_out": true,

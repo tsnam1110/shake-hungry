@@ -13,6 +13,13 @@
       "locale": "vi",
       "name": "Bánh tráng cuốn thịt heo",
       "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "Bánh tráng cuốn thịt lợn",
+      "is_primary": false,
+      "is_alias": true,
+      "note": "miền Bắc"
     }
   ],
   "is_eat_out": true,

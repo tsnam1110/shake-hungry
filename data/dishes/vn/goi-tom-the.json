@@ -13,6 +13,13 @@
       "locale": "en",
       "name": "whiteleg shrimp salad",
       "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "nộm tôm thẻ",
+      "is_primary": false,
+      "is_alias": true,
+      "note": "miền Bắc"
     }
   ],
   "is_eat_out": true,

@@ -13,6 +13,13 @@
       "locale": "en",
       "name": "tofu braised with shiitake mushrooms",
       "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "đậu hũ kho nấm",
+      "is_primary": false,
+      "is_alias": true,
+      "note": "miền Nam"
     }
   ],
   "is_eat_out": true,

@@ -13,6 +13,13 @@
       "locale": "en",
       "name": "sticky rice with cassava",
       "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "xôi khoai mì",
+      "is_primary": false,
+      "is_alias": true,
+      "note": "miền Nam"
     }
   ],
   "is_eat_out": true,

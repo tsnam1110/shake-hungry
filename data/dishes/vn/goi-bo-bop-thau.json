@@ -13,6 +13,13 @@
       "locale": "en",
       "name": "rare beef salad with herbs",
       "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "nộm bò bóp thấu",
+      "is_primary": false,
+      "is_alias": true,
+      "note": "miền Bắc"
     }
   ],
   "is_eat_out": true,

@@ -2,6 +2,12 @@
   "slug": "xuan-dao",
   "name_vi": "Xuân đào (nectarine, tươi)",
   "name_en": "Nectarine, raw",
+  "aliases": [
+    {
+      "name": "Đào trơn",
+      "note": "tên gọi phổ biến"
+    }
+  ],
   "category": "trai-cay",
   "reference_food": {
     "fct_source": "usda_sr_legacy",

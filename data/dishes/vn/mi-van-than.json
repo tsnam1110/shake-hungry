@@ -13,6 +13,13 @@
       "locale": "en",
       "name": "wonton egg noodle soup",
       "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "mì hoành thánh",
+      "is_primary": false,
+      "is_alias": true,
+      "note": "miền Nam"
     }
   ],
   "is_eat_out": true,

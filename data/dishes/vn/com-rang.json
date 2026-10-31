@@ -13,6 +13,13 @@
       "locale": "en",
       "name": "fried rice",
       "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "Cơm chiên",
+      "is_primary": false,
+      "is_alias": true,
+      "note": "miền Nam"
     }
   ],
   "is_eat_out": true,

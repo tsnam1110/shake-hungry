@@ -13,6 +13,13 @@
       "locale": "en",
       "name": "snakehead fish porridge with bitter leaf",
       "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "cháo cá quả rau đắng",
+      "is_primary": false,
+      "is_alias": true,
+      "note": "miền Bắc"
     }
   ],
   "is_eat_out": true,

@@ -2,6 +2,12 @@
   "slug": "vai",
   "name_vi": "Vải",
   "name_en": "Litchi, raw",
+  "aliases": [
+    {
+      "name": "Lệ chi",
+      "note": "tên cũ"
+    }
+  ],
   "category": "trai-cay",
   "reference_food": {
     "fct_source": "usda_sr_legacy",

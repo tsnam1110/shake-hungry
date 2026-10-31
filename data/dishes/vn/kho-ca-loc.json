@@ -8,6 +8,13 @@
       "locale": "vi",
       "name": "Khô cá lóc",
       "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "Khô cá quả",
+      "is_primary": false,
+      "is_alias": true,
+      "note": "miền Bắc"
     }
   ],
   "is_eat_out": true,

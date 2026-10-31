@@ -2,6 +2,12 @@
   "slug": "kiwi",
   "name_vi": "Kiwi xanh",
   "name_en": "Kiwifruit, green, raw",
+  "aliases": [
+    {
+      "name": "Dương đào",
+      "note": "tên cũ"
+    }
+  ],
   "category": "trai-cay",
   "reference_food": {
     "fct_source": "usda_foundation",

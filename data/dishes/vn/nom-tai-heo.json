@@ -13,6 +13,13 @@
       "locale": "en",
       "name": "pig ear and green papaya salad",
       "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "gỏi tai heo đu đủ",
+      "is_primary": false,
+      "is_alias": true,
+      "note": "miền Nam"
     }
   ],
   "is_eat_out": true,

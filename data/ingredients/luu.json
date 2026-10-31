@@ -2,6 +2,12 @@
   "slug": "luu",
   "name_vi": "Lựu (tươi)",
   "name_en": "Pomegranate, raw",
+  "aliases": [
+    {
+      "name": "Thạch lựu",
+      "note": "tên gọi phổ biến"
+    }
+  ],
   "category": "trai-cay",
   "reference_food": {
     "fct_source": "usda_sr_legacy",

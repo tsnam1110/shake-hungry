@@ -13,6 +13,13 @@
       "locale": "en",
       "name": "pennywort and beef salad",
       "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "nộm rau má thịt bò",
+      "is_primary": false,
+      "is_alias": true,
+      "note": "miền Bắc"
     }
   ],
   "is_eat_out": true,

@@ -2,6 +2,12 @@
   "slug": "thot-not",
   "name_vi": "Thốt nốt (cơm quả non)",
   "name_en": "Palmyra fruit, tender kernel (ice apple), raw",
+  "aliases": [
+    {
+      "name": "Thốt lốt",
+      "note": "miền Nam"
+    }
+  ],
   "category": "trai-cay",
   "reference_food": {
     "fct_source": "ifct_in",

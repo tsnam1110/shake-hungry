@@ -13,6 +13,13 @@
       "locale": "en",
       "name": "salted egg fried rice",
       "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "cơm rang trứng muối",
+      "is_primary": false,
+      "is_alias": true,
+      "note": "miền Bắc"
     }
   ],
   "is_eat_out": true,

@@ -13,6 +13,13 @@
       "locale": "en",
       "name": "muscovy duck stir-fried with lemongrass and chili",
       "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "vịt xiêm xào sả ớt",
+      "is_primary": false,
+      "is_alias": true,
+      "note": "miền Nam"
     }
   ],
   "is_eat_out": true,

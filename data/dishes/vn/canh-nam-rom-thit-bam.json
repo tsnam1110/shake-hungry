@@ -13,6 +13,13 @@
       "locale": "en",
       "name": "straw mushroom soup with minced pork",
       "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "canh nấm rơm thịt xay",
+      "is_primary": false,
+      "is_alias": true,
+      "note": "miền Nam"
     }
   ],
   "is_eat_out": true,

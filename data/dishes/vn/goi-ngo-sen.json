@@ -13,6 +13,13 @@
       "locale": "en",
       "name": "lotus stem salad with shrimp and pork",
       "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "nộm ngó sen tôm thịt",
+      "is_primary": false,
+      "is_alias": true,
+      "note": "miền Bắc"
     }
   ],
   "is_eat_out": true,

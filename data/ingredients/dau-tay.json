@@ -2,6 +2,12 @@
   "slug": "dau-tay",
   "name_vi": "Dâu tây",
   "name_en": "Strawberries, raw",
+  "aliases": [
+    {
+      "name": "Strawberry",
+      "note": "tên thương mại"
+    }
+  ],
   "category": "trai-cay",
   "reference_food": {
     "fct_source": "usda_sr_legacy",

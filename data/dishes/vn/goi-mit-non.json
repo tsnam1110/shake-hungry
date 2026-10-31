@@ -13,6 +13,13 @@
       "locale": "en",
       "name": "young jackfruit salad, southern style",
       "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "nộm mít non",
+      "is_primary": false,
+      "is_alias": true,
+      "note": "miền Bắc"
     }
   ],
   "is_eat_out": true,

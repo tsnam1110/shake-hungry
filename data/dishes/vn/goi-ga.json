@@ -13,6 +13,13 @@
       "locale": "en",
       "name": "shredded chicken salad",
       "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "nộm gà xé phay",
+      "is_primary": false,
+      "is_alias": true,
+      "note": "miền Bắc"
     }
   ],
   "is_eat_out": true,
