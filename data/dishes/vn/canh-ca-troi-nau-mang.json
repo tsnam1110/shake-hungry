@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -65,22 +65,6 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "la-lot",
-      "quantity": 3,
-      "unit_name": "g",
-      "is_optional": false,
-      "source": "llm_suggested",
-      "confidence": "low"
-    },
-    {
-      "ingredient_slug": "rau-mui",
-      "quantity": 2,
-      "unit_name": "g",
-      "is_optional": false,
-      "source": "llm_suggested",
-      "confidence": "low"
-    },
-    {
       "ingredient_slug": "dau-an",
       "quantity": 5,
       "unit_name": "g",
@@ -103,14 +87,49 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "ca-chua",
+      "quantity": 50,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "gung",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Măng tươi thái lát, luộc qua 1–2 lần nước rồi xả sạch để bỏ vị đắng.",
-    "Cá trôi làm sạch, cắt khúc, ướp chút muối; phi hành tím, xào măng sơ.",
-    "Đổ nước đun sôi, cho cá vào nấu chín, nêm nước mắm, thêm lá lốt, hành lá và rau mùi, dùng nóng."
+    "Măng tươi thái lát vừa ăn, luộc trong nước sôi 5-7 phút rồi đổ bỏ nước, luộc lại lần hai và xả sạch — măng hết đắng, nước luộc trong và không còn mùi hăng.",
+    "Cá trôi làm sạch, cạo vảy, bỏ mang ruột, chà muối và gừng đập dập cho bớt tanh, rửa lại, cắt khúc; ướp cá với muối khoảng 10 phút cho thịt săn.",
+    "Cà chua bổ múi cau; hành tím thái lát; hành lá cắt khúc để riêng phần đầu hành trắng.",
+    "Đun nóng dầu ăn, phi hành tím vàng thơm rồi cho cà chua vào xào 1-2 phút đến khi mềm và ra màu; trút măng vào xào tiếp khoảng 3 phút cho măng thấm dầu và gia vị.",
+    "Đổ nước sôi vào nồi măng, đun lửa lớn cho sôi bùng, hớt bọt, nêm nước mắm; khi nước sôi già mới nhẹ nhàng thả cá vào, hạ lửa vừa nấu 8-10 phút, tránh khuấy để cá không nát — cá chín khi thịt trắng, săn và róc xương.",
+    "Nếm lại cho vừa vị mặn, tắt bếp, rắc hành lá lên mặt, đậy nắp 1 phút cho dậy mùi rồi múc ra tô, dùng nóng với cơm."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://vnexpress.net/doi-song-cooking-6-mon-canh-am-nong-ngay-dong-4826483.html",
+      "accessed": "2026-10-31",
+      "note": "VnExpress Cooking — 6 món canh ấm nóng ngày đông (Bùi Thủy) — Mục 'Canh cá nấu măng chua': miền Bắc hay dùng đầu cá trôi/chép/mè; măng nấu hai lần, phi hành khô xào măng + cà chua, thả cá khi nước sôi già, hoàn thiện bằng hành lá + mùi tàu + ớt. Không định lượng gram"
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/14245190",
+      "accessed": "2026-10-31",
+      "note": "Cookpad VN — Canh cá nấu măng chua của Hoàng Ngọc — 3 phần ăn: cá thịt trắng 500g, măng chua 200g, cà chua 2-3 trái, nước mắm 3 muỗng canh (xào măng), đường phèn 1/2 muỗng cà phê, dầu phi đầu hành"
+    },
+    {
+      "url": "https://cachnaumonngon.com/cach-nau-canh-mang-tuoi-gio-heo-cuc-bo-3-2030.html",
+      "accessed": "2026-10-31",
+      "note": "Cách Nấu Món Ngon — Canh cá nấu măng tươi — Đúng biến thể măng tươi của file, không ghi số người: cá trắm 400g, măng tươi 300g, cà chua 1 quả, dầu 1-2 muỗng canh, gừng 1 củ nhỏ, hành tím + tỏi mỗi loại 1 củ, nước mắm/đường mỗi loại 1 thìa cà phê"
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/canh-ca-troi-nau-mang.webp",
@@ -121,7 +140,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-008 đợt 8: Nâng Mức 2 với 3 nguồn đã mở đọc (VnExpress Cooking — tác giả Bùi Thủy, xác nhận đầu cá trôi là lựa chọn chuẩn miền Bắc cho canh cá nấu măng, khớp region vn-north và nguyên liệu cá trôi của file; Cookpad Hoàng Ngọc 3 phần ăn, biến thể măng chua; Cách Nấu Món Ngon, đúng biến thể măng tươi). Thêm 2 dòng: ca-chua 50g (3/3 nguồn có, file thiếu hẳn) và gung 5g (2/3 nguồn dùng khử tanh/ướp cá). Bỏ 2 dòng: la-lot và rau-mui (đều 0/3 nguồn ủng hộ). Giữ nguyên: ca-troi 120g (Cookpad ~167g/khẩu phần, Cách Nấu Món Ngon 400g/mẻ — file nằm trong dải); mang-tuoi 100g (tỉ lệ măng:cá của nguồn măng tươi là 300:400 = 0,75, quy theo 120g cá cho ~90g, sát file; biến thể măng chua dùng ít măng hơn, 200:500 = 0,4, không áp cho file măng tươi); hanh-tim 5g, hanh-la 5g, dau-an 5g, nuoc-mam 6g, muoi 1g đều có mặt ở các nguồn và nằm trong dải định lượng. Bước nấu viết lại 6 bước, nhấn kỹ thuật luộc măng hai lần bỏ đắng và thả cá khi nước sôi già.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

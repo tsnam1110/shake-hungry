@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -43,14 +43,6 @@
     {
       "ingredient_slug": "suon-lon",
       "quantity": 80,
-      "unit_name": "g",
-      "is_optional": false,
-      "source": "llm_suggested",
-      "confidence": "low"
-    },
-    {
-      "ingredient_slug": "bap-chuoi",
-      "quantity": 40,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -95,14 +87,66 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "doc-mung",
+      "quantity": 50,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "gio-song",
+      "quantity": 50,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "moc-nhi-kho",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nam-huong-kho",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Hầm sườn với cà chua, nghệ.",
-    "Cho hoa chuối, dọc mùng (thay bằng hoa chuối trong bản nháp).",
-    "Chan lên bún, rắc hành mùi."
+    "Chần sườn qua nước sôi 2–3 phút, rửa lại cho sạch bọt bẩn rồi ninh trên lửa vừa khoảng 30–40 phút đến khi thịt mềm; hớt bọt thường xuyên cho nước trong.",
+    "Tước vỏ dọc mùng, cắt xéo mỏng, bóp với muối khoảng 10–15 phút rồi rửa và vắt kiệt 2–3 lần nước — bước này bắt buộc để dọc mùng giòn và không gây ngứa.",
+    "Trộn giò sống với mộc nhĩ và nấm hương đã ngâm nở, băm nhỏ, nêm chút nước mắm và tiêu; quết đều tay cho nhân dai, kết dính.",
+    "Xào cà chua bổ múi cau với nghệ giã cho lên màu vàng cam, đổ vào nồi nước sườn và nêm nước mắm vừa miệng.",
+    "Thả từng viên mọc vào nồi nước đang sôi lăn tăn; viên mọc chín khi nổi lên mặt nước, vớt ra để riêng để không bị bở.",
+    "Trụng dọc mùng nhanh trong nồi nước dùng khoảng 1 phút cho vừa chín giòn rồi vớt ra, không nấu lâu để tránh bị nhũn.",
+    "Trụng bún, xếp bún vào tô cùng sườn, mọc, dọc mùng và cà chua; chan nước dùng nóng, rắc hành lá và rau mùi, dọn kèm chanh ớt."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-nau-bun-moc-doc-mung-thanh-mat-giai-nhiet-cho-ngay-oi-10266",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH — 2 cách nấu bún mọc dọc mùng (2 công thức trong bài) — Công thức 1 cho 2 người: bún tươi 300g, thịt băm 300g làm mọc, dọc mùng 5 nhánh, cà chua 4 quả, nấm đông cô 5 cái, mộc nhĩ 4 cái. Công thức 2 (người dùng chia sẻ) cho 4 người: xương heo 500g, mọc/giò sống 400g, dọc mùng 150g, cà chua 2 trái, bún tươi 1kg, mộc nhĩ 30g"
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/10063924",
+      "accessed": "2026-10-31",
+      "note": "Cookpad VN — Bún bung (bún dọc mùng) của Đào Diệu Loan — Không ghi số người ăn và không ghi gram — thành phần: thịt bắp giò heo, sườn non, dọc mùng, thịt xay + giò sống tỉ lệ 1:1 làm mọc, nấm hương, mộc nhĩ, cà chua, nghệ giã cho vào nước luộc"
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/13305540",
+      "accessed": "2026-10-31",
+      "note": "Cookpad VN — Bún bung dọc mùng của Annie Vo — Cho 4 người: sườn non 1 vỉ, thịt xay 1 vỉ, giò sống 100g, cà chua 2 trái, dọc mùng 1 bó, bún tươi 500g, mộc nhĩ, nấm hương — mọc trộn thịt xay + giò sống + nấm"
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/bun-bung.webp",
@@ -117,7 +161,7 @@
     "source": "wikidata",
     "queried_at": "2026-08-31"
   },
-  "import_note": "Nhập tự động từ Wikidata Q10742887 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Gợi ý nguyên liệu từ Wikidata (tiếng Anh, CHƯA ánh xạ sang data/ingredients/): banana flower, pork broth, noodle, onion. Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Nhập tự động từ Wikidata Q10742887 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Gợi ý nguyên liệu từ Wikidata (tiếng Anh, CHƯA ánh xạ sang data/ingredients/): banana flower, pork broth, noodle, onion. Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-008 đợt 8: Nâng Mức 2 với 3 nguồn đã mở đọc (Điện Máy XANH — 2 công thức trong cùng bài, Cookpad Đào Diệu Loan, Cookpad Annie Vo 4 người). SỬA CẤU TRÚC LỚN: file hiện tại thay dọc mùng bằng hoa chuối và thiếu hẳn mọc — cả hai đều sai so với 3/3 nguồn. BỎ bap-chuoi 40g (0/3 nguồn ủng hộ; chính import_note của file cũng ghi đây là thay thế tạm trong bản nháp). THÊM doc-mung 50g, gio-song 50g (mọc), moc-nhi-kho 3g và nam-huong-kho 3g theo basis từng dòng. GIỮ: bun-tuoi 150g (Điện Máy XANH bản 2 người 300g/2 = 150g; Annie Vo 500g/4 = 125g; bản 4 người của Điện Máy XANH 1kg/4 = 250g là ngoại lệ cao — trung vị quanh 150g); suon-lon 80g (chỉ Annie Vo định lượng được sườn, 1 vỉ/4 người ≈ 100–125g — chỉ 1 nguồn có số nên chưa đủ ngưỡng ≥2 nguồn để sửa, giữ 80g); ca-chua 40g (Điện Máy XANH bản 4 người và Annie Vo đều 2 quả/4 người ≈ 30g, bản 2 người 4 quả là bản chỉ-mọc — 40g nằm trong dải); nghe-tuoi 2g (Đào Diệu Loan giã nghệ vào nước luộc tạo màu/mùi đặc trưng của bún bung, giữ làm gia vị nhỏ); hanh-la 5g, rau-mui 2g, nuoc-mam 5g giữ nguyên theo cả 3 nguồn. serving_grams 480g và method 'nau', region vn-north giữ nguyên.]",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

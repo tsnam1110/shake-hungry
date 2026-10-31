@@ -117,7 +117,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 đợt 2 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 đợt 2 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-008 đợt 8: HOLD do 429 khi mở nguồn thứ ba (vaobepwiki) — dừng theo brief, không retry, không dùng trích đoạn tìm kiếm thay trang đã mở. Mới có 1 nguồn đạt chuẩn đã mở (NauAnKhongKho). Cần làm lại ở đợt sau khi hết chặn để gom đủ >=3 nguồn đạt chuẩn rồi mới phân xử định lượng.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "kho",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -42,7 +42,7 @@
     },
     {
       "ingredient_slug": "hanh-tim",
-      "quantity": 5,
+      "quantity": 10,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -79,14 +79,41 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "ot-tuoi",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Cá bống làm sạch, ướp nước mắm, đường, tiêu 15 phút.",
-    "Phi hành tím, xếp cá vào nồi đất, thêm ít nước nóng.",
-    "Kho lửa nhỏ 15 phút tới khi nước sệt, cá chắc thơm mùi tiêu."
+    "Cá bống bỏ mang và ruột, cắt vây, đuôi, chà muối hạt cho hết nhớt rồi rửa lại nước sạch và để ráo — cá ráo nước thì ướp mới thấm và kho không bị tanh.",
+    "Ướp cá với nước mắm, đường, tiêu xay và hành tím đập dập khoảng 20-30 phút; giữ lại phần nước ướp để kho cùng cá.",
+    "Thắng đường với một ít dầu trên lửa nhỏ đến khi chuyển màu cánh gián thì hạ lửa, cho hành tím vào phi thơm — dừng tay ngay khi đường vừa tới màu để nước kho không bị đắng.",
+    "Xếp cá và ớt nguyên trái vào nồi đất, chế phần nước ướp cùng ít nước nóng vừa xâm xấp mặt cá, đun lửa vừa đến khi sôi.",
+    "Hạ lửa liu riu kho khoảng 30-45 phút, không đảo mạnh tay vì cá nhỏ dễ nát, chỉ thỉnh thoảng nghiêng nồi cho nước kho phủ đều; nếu nước cạn thì châm thêm nước sôi, không cho nước lạnh.",
+    "Khi nước kho sệt lại còn một lớp mỏng dưới đáy nồi, cá săn chắc, cong nhẹ và bóng màu cánh gián thì rắc thêm tiêu xay rồi tắt bếp; ăn nóng với cơm trắng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://beptruong.edu.vn/cach-nau-ca-bong-kho-tieu",
+      "accessed": "2026-10-31",
+      "note": "Bếp Trưởng Á Âu — Cách nấu cá bống kho tiêu — Cá bống 500 g; ướp 1 muỗng muối + 1 muỗng đường + 1 muỗng nước mắm + 1/2 muỗng tiêu xay trong 15 phút; thắng thêm 1 muỗng đường làm màu, phi hành tím, kho liu riu ~1 tiếng. Bài khẳng định cá bống là đặc sản Quảng Nam/Quảng Ngãi (cá bống sông Trà)."
+    },
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-nau-ca-bong-kho-tieu-don-gian-dam-vi-an-la-nghien-01363",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH — Cách làm cá bống kho tiêu — Biến thể 1 cho 2 người: cá 400 gr, nước mắm 3 muỗng canh, đường 1.5 muỗng canh, tiêu xay 2 muỗng cà phê, dầu ăn 1 muỗng canh, ớt bột 2 muỗng cà phê, ướp 15-20 phút, kho đến khi nước còn 1/3. Biến thể 2 (1-2 người): cá 500 gr, hành tím 4 củ, ớt 5 trái."
+    },
+    {
+      "url": "https://www.huongnghiepaau.com/ca-bong-kho-tieu",
+      "accessed": "2026-10-31",
+      "note": "Hướng Nghiệp Á Âu — Cách làm cá bống kho tiêu đậm đà — Cá bống 500 g, hành khô + tỏi 50 g, ớt sừng 10 trái, tiêu xanh 2 nhánh; ướp đường 1.5 muỗng + nước mắm 2 muỗng + tiêu 1 muỗng trong 1 giờ; thắng đường cánh gián, kho lửa liu riu 30-40 phút. Dẫn ca dao cá bống sông Trà kho tiêu (Quảng Ngãi)."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/ca-bong-kho-tieu-quang.webp",
@@ -97,7 +124,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Biến thể vùng của ca-bong-kho-tieu (bản Nam) theo cơ chế parent_dish_slug — phép thử §3 áp dụng: cùng lõi món, khác vùng và tỉ lệ tiêu/đường theo khẩu vị Quảng Nam; tạo dạng biến thể thay vì món độc lập mới.",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Biến thể vùng của ca-bong-kho-tieu (bản Nam) theo cơ chế parent_dish_slug — phép thử §3 áp dụng: cùng lõi món, khác vùng và tỉ lệ tiêu/đường theo khẩu vị Quảng Nam; tạo dạng biến thể thay vì món độc lập mới. [LV2-008 đợt 8: Đối chiếu 3 nguồn đã mở đọc (Bếp Trưởng Á Âu, Điện Máy XANH, Hướng Nghiệp Á Âu — cả ba đều đặt món trong truyền thống miền Trung Quảng Nam/Quảng Ngãi, khớp region vn-central và nhãn dac-san:quang-nam; method kho không tranh chấp). Sửa hanh-tim 5→10 g (HNAAu ~7.5 g và ĐMX ~12 g quy theo 150 g cá). Thêm ot-tuoi 5 g vì 3/3 nguồn đều có ớt mà file thiếu hẳn. Giữ: ca-bong 150 g (ĐMX 200 g/người là điểm cao; hai nguồn còn lại nấu mẻ 500 g cho gia đình ~3 người ≈ 167 g/người — 150 g nằm trong dải); nuoc-mam-truyen-thong 10 g (quy theo 150 g cá: ĐMX ~17 g, HNAAu ~9 g, BTAAu ~4.5 g — phân tán rộng, file nằm giữa dải); duong-trang 5 g (nguồn quy đổi 5.4-7.2 g, file lệch <30%); hat-tieu-den 1.5 g (ĐMX quy đổi đúng 1.5 g; HNAAu/BTAAu ~1.8 g); dau-an 5 g (ĐMX quy đổi ~5.3 g, khớp). serving_grams 190 giữ nguyên vì tổng mới 186.5 g đã khớp.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

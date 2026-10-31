@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "xao",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -74,11 +74,30 @@
     }
   ],
   "recipe_steps": [
-    "Dọc mùng tước vỏ, cắt xéo, bóp muối rửa sạch vắt ráo; tép rửa sạch.",
-    "Phi tỏi, xào tép săn.",
-    "Cho dọc mùng vào xào nhanh 2 phút, nêm nước mắm, dùng nóng."
+    "Đeo găng tay, tước sạch lớp vỏ xanh của dọc mùng, cắt xéo miếng dày khoảng 1,5 cm; bước này tránh nhựa làm ngứa tay và giúp miếng dọc mùng thấm vị đều.",
+    "Cho dọc mùng vào thau, rắc muối và bóp kỹ khoảng 2–3 phút, để yên 10–15 phút rồi xả lại nhiều lần với nước lạnh, vắt thật ráo — dọc mùng hết nhớt, hết ngứa và khi xào không ra nước.",
+    "Tép rửa sạch, cắt bỏ râu, để ráo; tỏi bóc vỏ và băm nhỏ, chuẩn bị sẵn vì món xào diễn ra rất nhanh trên lửa lớn.",
+    "Làm nóng chảo với dầu ăn, phi tỏi đến khi vàng thơm thì cho tép vào xào lửa lớn khoảng 1–2 phút, đảo đều đến khi tép chuyển màu hồng đỏ và săn lại.",
+    "Cho dọc mùng đã vắt ráo vào chảo, đảo nhanh tay trên lửa lớn khoảng 2 phút cho dọc mùng vừa chín tới, vẫn giữ độ giòn và màu xanh nhạt.",
+    "Nêm nước mắm vừa ăn, đảo thêm khoảng 30 giây cho tép và dọc mùng quyện đều rồi tắt bếp, dọn ra đĩa dùng nóng với cơm."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://fptshop.com.vn/tin-tuc/dien-may/doc-mung-xao-174640",
+      "accessed": "2026-10-31",
+      "note": "FPT Shop — Dọc mùng xào tôm tươi (cùng họ bản Tin Tức Online, tác giả Hàn Giang) — Không ghi số người ăn: dọc mùng 4 cây, tôm tươi 30g, cà rốt 1 củ, hành khô; bóp muối vắt khô, ướp tôm 15–20 phút, xào tôm chuyển đỏ trút ra rồi xào dọc mùng nêm nước mắm, cho tôm lại đảo 2–3 phút"
+    },
+    {
+      "url": "https://giadinh.suckhoedoisong.vn/3-mon-an-ngon-giai-nhiet-ngay-he-voi-doc-mung-khi-che-bien-can-chu-y-de-tranh-bi-ngua-172240522084655754.htm",
+      "accessed": "2026-10-31",
+      "note": "Sức Khỏe & Đời Sống (Gia đình) — Dọc mùng xào tôm tươi — Không ghi số người ăn: dọc mùng 5 nhánh, tôm 200g, hành lá, tỏi băm; ngâm/bóp muối 15 phút cho hết ngứa, tôm ướp muối 5 phút, xào tôm lửa lớn 2 phút rồi cho dọc mùng xào chung 3 phút"
+    },
+    {
+      "url": "https://danviet.vn/loai-rau-ngua-moc-day-vuon-nha-giup-thanh-nhiet-giai-doc-tang-cuong-mien-dich-xao-tom-ngon-qua-d1352862.html",
+      "accessed": "2026-10-31",
+      "note": "Dân Việt — Dọc mùng xào tôm mực khô — Không định lượng: dọc mùng, tôm khô, mực khô, tỏi; đeo găng tay khi tước vỏ tránh ngứa, phi tỏi, xào hải sản khô trước rồi cho dọc mùng, nêm dầu hào và muối"
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/doc-mung-xao-tep.webp",
@@ -89,7 +108,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món dự phòng chính thức của kế hoạch, kích hoạt vì rau nhút chưa có số (rau-nhut-xao-toi hoãn).",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món dự phòng chính thức của kế hoạch, kích hoạt vì rau nhút chưa có số (rau-nhut-xao-toi hoãn). [LV2-008 đợt 8: Nâng Mức 2 với 3 họ nguồn đã mở đọc về dọc mùng xào tôm/tép (FPT Shop — cùng họ bản Tin Tức Online của tác giả Hàn Giang, tính 1 họ; Sức Khỏe & Đời Sống; Dân Việt). Định lượng GIỮ NGUYÊN cả 5 dòng: dọc mùng 130g/phần — nguồn tính theo cây (4–5 cây cho một nồi khoảng 3 phần), sau tước vỏ, bóp muối và vắt ráo còn khoảng 110–140g/phần, khớp file; tép 30g/phần — hai nguồn có định lượng nằm ở hai cực (họ FPT 30g tôm cho cả nồi; SKĐS 200g tôm cho nồi 5 nhánh, quy ra khoảng 55–65g/phần), file nằm giữa hai cực nên không có đồng thuận ≥2 nguồn để sửa theo một hướng; tỏi 4g và dầu ăn 7g nằm trong khoảng thông dụng của cả 3 nguồn (phi tỏi/hành bằng 1–2 muỗng dầu cho cả nồi); nước mắm 4g — họ FPT nêm nước mắm trực tiếp trong chảo, SKĐS và Dân Việt nêm muối là chính, dòng này có 1/3 họ nguồn ủng hộ trực tiếp nên không thuộc diện bỏ (chỉ bỏ khi 0/3), giữ nguyên và ghi vào anomalies gắn với câu hỏi mở về quy ước nêm rau xào. Không thêm cà rốt (chỉ họ FPT có) và hành lá (chỉ SKĐS có) vì mỗi thứ chỉ đạt 1/3 họ nguồn, dưới ngưỡng thêm 2/3. Kỹ thuật thống nhất 3/3: tước vỏ, cắt xéo, bóp muối kỹ, xả sạch, vắt thật ráo; xào tôm/tép trước cho săn rồi mới cho dọc mùng, xào lửa lớn 2–3 phút. serving_grams 140 và region vn-north giữ nguyên.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

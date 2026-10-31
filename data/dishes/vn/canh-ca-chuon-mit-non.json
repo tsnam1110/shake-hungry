@@ -89,7 +89,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nguyên liệu cá chuồn mới biên soạn đợt này từ nhãn sản phẩm (usda_branded).",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nguyên liệu cá chuồn mới biên soạn đợt này từ nhãn sản phẩm (usda_branded). [LV2-008 đợt 8: HOLD vì thiếu nguồn định lượng. Ba bài báo xứ Quảng (Báo Đắk Lắk, Báo Đà Nẵng, lucbat.com) thống nhất định tính: cá chuồn nhỏ + mít non luộc trước, nêm mắm cái, ớt xanh, lá lốt, tiêu xanh — nhưng không bài nào cho gram/số người ăn, và không có trang công thức đạt chuẩn (Điện Máy XANH/Cookpad/báo ẩm thực) nào đăng công thức canh này. Giữ Mức 1 + hồ sơ này thay vì hạ chuẩn hay bịa định lượng; tương tự tiền lệ canh-nghe-ca-ro ở LV2-001.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

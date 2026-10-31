@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "kho",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -66,7 +66,7 @@
     },
     {
       "ingredient_slug": "hanh-tim",
-      "quantity": 5,
+      "quantity": 7,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -82,11 +82,30 @@
     }
   ],
   "recipe_steps": [
-    "Đậu phụ chiên mua sẵn cắt miếng vừa ăn; phi thơm hành tím với dầu.",
-    "Cho nước dừa tươi, nước tương và đường vào đun sôi, thả đậu phụ chiên vào.",
-    "Kho lửa nhỏ 8–10 phút cho đậu ngấm nước dừa và nước kho sánh nhẹ, dùng với cơm."
+    "Đậu phụ chiên sẵn cắt miếng vuông vừa ăn; hành tím bóc vỏ, băm nhỏ. Nếu đậu mới chiên còn nhiều dầu, để ráo trên giấy thấm vài phút cho mặt đậu khô ráo.",
+    "Cho dầu ăn vào nồi/chảo sâu, phi hành tím trên lửa vừa khoảng 1 phút đến khi vàng thơm và dậy mùi, tránh để hành cháy sẽ đắng.",
+    "Đổ nước dừa tươi vào, thêm nước tương và đường, khuấy tan rồi đun lửa vừa đến khi nước dừa sôi lăn tăn và bắt đầu thơm ngọt.",
+    "Thả đậu phụ chiên vào, đảo nhẹ tay cho đậu ngập nước kho; hạ lửa nhỏ, đậy nắp kho liu riu 10–12 phút, giữa chừng trở mặt đậu một lần cho thấm đều.",
+    "Mở nắp, tăng lửa vừa kho thêm 2–3 phút cho nước kho rút bớt, sánh nhẹ và bám quanh miếng đậu; nêm lại cân bằng mặn–ngọt của nước dừa rồi tắt bếp.",
+    "Múc đậu ra đĩa sâu lòng, chan phần nước kho còn lại lên trên và dùng nóng với cơm trắng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/15379908",
+      "accessed": "2026-10-31",
+      "note": "Cookpad VN — Đậu hũ khìa nước dừa (Tu Anh) — 4 người: đậu hũ 5 miếng nhỏ hoặc 3 miếng to (~300g, ≈75g/người), nước dừa xiêm 350ml (≈88ml/người), hành tím 3 củ + tỏi 5 tép, nước mắm 20g + nước tương 6g (bản mặn), đường chỉ thêm 3g nếu nước dừa nhạt; khìa nhỏ lửa 25 phút."
+    },
+    {
+      "url": "https://vaobepwiki.com/cach-lam-dau-phu-ngon-voi-nuoc-dua-cho-bua/",
+      "accessed": "2026-10-31",
+      "note": "Vào Bếp Wiki — Đậu phụ ngon với nước dừa (họ Điện Máy XANH) — 2 suất, bản chay: đậu hũ trắng 2 miếng (chiên tại chỗ, ≈100g/người), nước dừa tươi 120ml (60ml/người), nước tương 2 thìa canh (15ml/người), hành tím 1 củ, tỏi 2 tép, tương ớt 2 thìa canh; dầu chiên 100ml nhưng khi kho chỉ chừa lại ~2 thìa canh trong chảo."
+    },
+    {
+      "url": "https://fptshop.com.vn/tin-tuc/dien-may/tau-hu-khia-nuoc-dua-168421",
+      "accessed": "2026-10-31",
+      "note": "FPT Shop — Tàu hũ khìa nước dừa — Không ghi số người ăn (mẻ nấu): đậu hũ 500g, nước dừa tươi ~300ml (tỉ lệ nước dừa/đậu ≈0,6), nước mắm 1,5 thìa canh, đường 1/2 thìa canh (bản mặn); đậu chiên vàng nhẹ rồi khìa đến khi sốt sệt bám mặt đậu."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/dau-phu-chien-kho-dua.webp",
@@ -97,7 +116,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món chay thuần: toàn bộ nguyên liệu có origin thực vật/nấm, gia vị chỉ dùng nước tương/muối/chao đậu — không nước mắm, không hạt nêm/bột canh (nhóm COMPOSITE_ANIMAL tính là mặn), không trứng/sữa; nhãn diet suy từ thành phần phải ra chay và đã kiểm chứng trực tiếp trong DB sau seed (cổng G3/G6 của đợt). MÓN THAY cho cha-chay-kho-dua của kế hoạch §3.5: nguyên liệu cha-lua-chay tra không được số đạt chuẩn (để null + hồ sơ trong đợt này) nên theo đúng phương án dự phòng của kế hoạch, thay bằng đậu phụ chiên — nguyên liệu đã có số (USDA 'Tofu, fried').",
+  "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món chay thuần: toàn bộ nguyên liệu có origin thực vật/nấm, gia vị chỉ dùng nước tương/muối/chao đậu — không nước mắm, không hạt nêm/bột canh (nhóm COMPOSITE_ANIMAL tính là mặn), không trứng/sữa; nhãn diet suy từ thành phần phải ra chay và đã kiểm chứng trực tiếp trong DB sau seed (cổng G3/G6 của đợt). MÓN THAY cho cha-chay-kho-dua của kế hoạch §3.5: nguyên liệu cha-lua-chay tra không được số đạt chuẩn (để null + hồ sơ trong đợt này) nên theo đúng phương án dự phòng của kế hoạch, thay bằng đậu phụ chiên — nguyên liệu đã có số (USDA 'Tofu, fried'). [LV2-008 đợt 8: 3 nguồn đã mở đọc — Cookpad Tu Anh (khìa nước dừa, 4 người), Vào Bếp Wiki họ DMX (đậu phụ nước dừa chay, 2 suất), FPT Shop (tàu hũ khìa nước dừa). GIỮ đậu phụ chiên 80g/người (Cookpad ≈75g/người, Vào Bếp Wiki ≈100g/người — file nằm trong khoảng đồng thuận), nước dừa 80g/người (Cookpad ≈88ml/người, Vào Bếp Wiki 60ml/người, FPT Shop tỉ lệ 0,6 ml/g đậu → file ở tỉ lệ 1,0 vẫn trong dải các nguồn), nước tương 8g (bản chay của file thay cho nước mắm+nước tương của 2 bản mặn; Vào Bếp Wiki chay dùng 15ml/người là nguồn chay duy nhất định lượng được nên chưa đủ ≥2 nguồn để đổi), đường 4g (Cookpad 0–3g cho cả mẻ 4 người khi dừa ngọt, FPT Shop 1/2 thìa canh/mẻ — file ở mức vừa), dầu ăn 3g (chỉ để phi hành vì slug đậu đã chiên sẵn; cả 3 nguồn đều chiên đậu tươi tại chỗ nên lượng dầu chiên của nguồn không áp cho file). SỬA duy nhất: hành tím 5→7g theo 2 nguồn định lượng 6–8g/người. Serving 160g giữ nguyên: tổng dòng nguyên liệu ~183g nhưng nước dừa rút/bám một phần khi khìa nên khối lượng dọn đĩa ~160g là hợp lý. Giữ method kho, region vn.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

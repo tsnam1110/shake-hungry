@@ -121,7 +121,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-008 đợt 8: HOLD — tra cứu 2 lượt (cá bống om chuối đậu; cá bống nấu/kho chuối xanh) không ra công thức nào dùng cá bống cho họ om/kho chuối. Mọi nguồn om chuối đậu đã kiểm chứng (ĐMX và các trang công thức khác) đều dùng cá khúc lớn + thịt ba chỉ + mẻ + riềng + mắm tôm và thuộc phong cách miền Bắc. File hiện tại thiếu toàn bộ dấu ấn định danh của họ món và ghi region vn-south ngược với gốc Bắc của họ món — không đủ bằng chứng nâng Mức 2, giữ Mức 1 và chờ chủ dự án xác nhận món có thật.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "chien",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -50,7 +50,7 @@
     },
     {
       "ingredient_slug": "thit-lon-ba-chi",
-      "quantity": 60,
+      "quantity": 80,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -66,7 +66,7 @@
     },
     {
       "ingredient_slug": "dua-leo",
-      "quantity": 30,
+      "quantity": 50,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -111,14 +111,41 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "duong-trang",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Đậu phụ rán vàng giòn; thịt ba chỉ luộc chín, thái lát.",
-    "Đánh mắm tôm với chanh (hoặc quất) và ớt cho sủi bọt.",
-    "Bày bún lá, đậu rán, thịt luộc, dưa leo và rau thơm lên mẹt, chấm mắm tôm."
+    "Rửa thịt ba chỉ, chần sơ qua nước sôi rồi luộc với chút muối khoảng 25–30 phút đến khi chín; vớt ra để nguội và thái lát mỏng vừa ăn.",
+    "Cắt đậu phụ thành miếng vuông, để ráo rồi chiên trong dầu nóng đến khi các mặt vàng giòn; vớt ra để trên giấy thấm dầu và dọn ngay khi còn nóng.",
+    "Nhặt và rửa sạch tía tô, kinh giới, rau mùi; ngâm nước muối loãng khoảng 10 phút, rửa lại và để ráo; dưa leo rửa sạch, thái lát mỏng.",
+    "Cho mắm tôm vào bát, thêm đường, nước cốt chanh (hoặc quất) và ớt thái lát; đánh đều tay đến khi mắm nổi bọt nhẹ và dậy mùi.",
+    "Có thể rưới thêm một thìa dầu nóng vừa chiên đậu vào bát mắm tôm rồi đánh lại — dầu nóng giúp mắm bớt nồng và bóng hơn.",
+    "Cắt bún lá thành miếng vừa ăn, bày lên mẹt cùng đậu chiên, thịt luộc, dưa leo và rau thơm; đặt bát mắm tôm ở giữa và ăn ngay."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-bun-dau-mam-tom-ngon-ngat-ngay-an-mot-lan-la-ghien-01020",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH — Cách làm bún đậu mắm tôm mẹt đầy đủ — Cho 6 người, bản mẹt đầy đủ: đậu hũ 1kg, thịt heo 500g, thêm phèo non 600g, gan 200g, dạ dày 300g, lưỡi, huyết, ram thịt — dưa leo 3 quả, mắm tôm liệt kê 500g (số bất thường, xem anomalies)"
+    },
+    {
+      "url": "https://laodong.vn/gia-dinh-hon-nhan/cach-lam-bun-dau-mam-tom-chuan-vi-cho-bua-trua-cuoi-tuan-1787837.ldo",
+      "accessed": "2026-10-31",
+      "note": "Báo Lao Động — Cách làm bún đậu mắm tôm chuẩn vị cho bữa trưa cuối tuần — Cho 4 người: bún lá 1kg, đậu phụ 4 bìa, thịt chân giò 400g, chả cốm 300g, dồi heo 200g tuỳ thích, dưa chuột 1 quả, mắm tôm 4 thìa + chanh/quất, đường, ớt"
+    },
+    {
+      "url": "https://vietnamnet.vn/cach-lam-bun-dau-mam-tom-chuan-vi-don-gian-tai-nha-2266902.html",
+      "accessed": "2026-10-31",
+      "note": "VietNamNet — Cách làm bún đậu mắm tôm chuẩn vị, đơn giản tại nhà — Không ghi số người ăn, định lượng kiểu mẻ gia đình: bún lá 500g, đậu phụ 3–5 bìa, thịt chân giò 300g + thịt ba chỉ 300g, chả cốm 300g, mắm tôm 50g, quất 2 quả, đường 1 thìa cho phần pha mắm"
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/bun-dau-mam-tom.webp",
@@ -129,7 +156,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. THIẾU NGUYÊN LIỆU: chả cốm (vai trò phụ) — cần bổ sung vào kho.",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. THIẾU NGUYÊN LIỆU: chả cốm (vai trò phụ) — cần bổ sung vào kho. [LV2-008 đợt 8: Nâng Mức 2 với 3 nguồn đã mở đọc (Điện Máy XANH cho 6 người — bản mẹt đầy đủ có thêm lòng/lưỡi/ram, Báo Lao Động cho 4 người, VietNamNet). SỬA 2 dòng: thit-lon-ba-chi 60→80g (Lao Động thịt chân giò 400g/4 = 100g/người; Điện Máy XANH thịt heo 500g/6 ≈ 83g/người; VietNamNet dùng 300g ba chỉ + 300g chân giò cho một mẻ gia đình — cả 3 đều cao hơn file trên 30%, lấy mức bảo thủ 80g theo Điện Máy XANH, giữ slug ba chỉ vì VietNamNet có ba chỉ, chân giò là cắt thay thế); dua-leo 30→50g (Lao Động 1 quả/4 người ≈ 50g/người; Điện Máy XANH 3 quả/6 người ≈ 75g/người — đồng thuận ≥2 nguồn cao hơn file trên 30%). THÊM duong-trang 3g để pha mắm tôm (3/3 nguồn). GIỮ: bun-tuoi 120g (VietNamNet 500g bún lá cho mẻ gia đình ≈ 125g/người, khớp; Lao Động 250g/người là mẹt gia đình ngoại lệ cao); dau-phu-chien 80g (Lao Động 4 bìa đậu/4 người = 1 bìa/người, chiên xong ≈ 80g; Điện Máy XANH 1kg đậu/6 người là bản mẹt đầy đủ ngoại lệ cao); mam-tom 20g (Lao Động 4 thìa/4 người = 1 thìa/người ≈ 15–18g; VietNamNet 50g cho cả mẻ ≈ 12,5g/người nếu 4 người — file cao hơn nhẹ nhưng chưa vượt ngưỡng kèm bằng chứng mạnh cho gia vị); tia-to 5g, kinh-gioi 5g, rau-mui 3g, ot-tuoi 2g, chanh 5g giữ nguyên (rau thơm và chanh/quất pha mắm có ở 3/3 nguồn, lượng nhỏ). Method 'chien' giữ nguyên: thành phần định hình của mẹt là đậu (và chả) chiên, và file dùng slug dau-phu-chien đã chiên sẵn với oil_absorption_pct = 0 nên không phát sinh dòng dau-an cho chiên chính — đúng quy ước Phương án A. Region vn-north giữ nguyên.]",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

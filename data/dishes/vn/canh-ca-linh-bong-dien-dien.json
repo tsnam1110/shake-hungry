@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -42,7 +42,7 @@
     },
     {
       "ingredient_slug": "bong-dien-dien",
-      "quantity": 40,
+      "quantity": 80,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -90,7 +90,7 @@
     },
     {
       "ingredient_slug": "nuoc-mam-truyen-thong",
-      "quantity": 6,
+      "quantity": 10,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -114,11 +114,30 @@
     }
   ],
   "recipe_steps": [
-    "Dầm me với nước nóng, lọc lấy nước me; đun sôi cùng cà chua, nêm nước mắm, đường, muối.",
-    "Thả cá linh vào nấu vừa chín, thêm giá đỗ.",
-    "Cho bông điên điển và ngò gai vào sau cùng, cá chín tới thì tắt bếp để cá không nát."
+    "Cá linh rửa nhẹ tay với nước muối loãng cho hết nhớt, bỏ ruột nếu cá lớn, để ráo; bông điên điển nhặt bỏ cuống già và bông dập, rửa nhẹ, để ráo; giá đỗ rửa sạch, cà chua bổ múi cau.",
+    "Dằm me chín với khoảng 200ml nước nóng, lọc bỏ hạt lấy nước cốt; tỏi băm nhỏ, phi vàng với chút dầu rồi vớt ra để riêng.",
+    "Đun sôi khoảng 1–1,2 lít nước, cho nước cốt me và cà chua vào, nêm nước mắm, đường và muối cho vị chua ngọt vừa miệng trước khi thả cá.",
+    "Khi nước sôi mạnh, thả cá linh vào, hớt bọt đều tay và nấu lửa vừa khoảng 3–5 phút đến khi mắt cá đục, thịt vừa chín tới thì vớt cá ra tô để cá không rã.",
+    "Cho giá đỗ và bông điên điển vào nồi nước canh, nấu sôi lại khoảng 1 phút cho bông vừa xẹp xuống, còn giữ màu vàng và độ giòn nhẹ.",
+    "Trả cá linh vào nồi, rắc ngò gai cắt nhỏ và tỏi phi, nấu thêm chừng 1 phút cho sôi lại rồi tắt bếp ngay; dùng nóng với cơm, chấm cá bằng nước mắm ớt."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://bepxua.vn/cach-nau-canh-chua-ca-linh-bong-dien-dien-dam-vi-kho-quen/",
+      "accessed": "2026-10-31",
+      "note": "Bếp Xưa — Cách nấu canh chua cá linh bông điên điển đậm vị khó quên — 4 người ăn: cá linh non 300g, bông điên điển 400g, bông súng 200g, me non 100g, tỏi 50g, nước mắm tổng ~3 muỗng canh, đường 1 muỗng canh; cá ướp tỏi phi + nước mắm, nấu sôi 5 phút vớt ra, cho bông vào sau rồi trả cá lại 1–2 phút."
+    },
+    {
+      "url": "https://tripi.vn/blog/vi/kinh-nghiem-hay/huong-dan-nau-canh-chua-ca-linh-bong-dien-dien-chuan-vi-que-huong-mien-tay-tripi",
+      "accessed": "2026-10-31",
+      "note": "Tripi — Hướng dẫn nấu canh chua cá linh bông điên điển chuẩn vị miền Tây — 2–3 người ăn (đối chiếu theo trung điểm 2,5): cá linh 300g, bông súng 200g, bông điên điển 200g, me 20g, nước mắm 2 muỗng canh; luộc cá riêng trước, bông điên điển cho trước bông súng."
+    },
+    {
+      "url": "https://www.bluestone.com.vn/blogs/vao-bep/canh-chua-ca-linh-va-ca-chot",
+      "accessed": "2026-10-31",
+      "note": "Bluestone — Canh chua cá linh và cá chốt — Không công bố số người ăn; nồi 1,2 lít nước, đối chiếu theo quy ước 4 người: cá linh 400g, bông điên điển 150g, giá đỗ 100g, me 30g, cà chua 2 quả, nước mắm 2 muỗng canh, đường 1 muỗng canh; biến thể có thêm thơm, đậu bắp, bạc hà."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/canh-ca-linh-bong-dien-dien.webp",
@@ -129,7 +148,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt DISH-004 đợt 2 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt DISH-004 đợt 2 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-008 đợt 8: Nâng Mức 2 với 3 nguồn đã mở đọc — Bếp Xưa (4 người), Tripi (2–3 người), Bluestone (quy ước 4 người theo nồi 1,2 lít). Sửa 2 dòng: bông điên điển 40→80g (nguồn: 100/80/~38g mỗi người, trung vị 80) và nước mắm 6→10g (nguồn: ~11/12/7,5g mỗi người). Giữ nguyên: cá linh 90g (nguồn 75/120/100 — nằm trong dải), me chín 8g (2/3 nguồn me vắt quy đổi 7,5–8g/người; nguồn còn lại dùng me non tươi 25g gồm vỏ hạt), cà chua 40g (Bluestone ~30g/người, lệch trong ngưỡng), giá đỗ 30g (Bluestone 25g/người), đường 3g và muối 1g (khớp 2/3 nguồn), ngò gai 2g (Bếp Xưa có dùng, lượng nêm nhỏ), tỏi 3g (giữ theo đa số — xem anomalies). Không thêm bông súng dù xuất hiện 3/3 nguồn vì kho chưa có slug nguyên liệu. serving 380g, method nau và region vn-south giữ nguyên.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

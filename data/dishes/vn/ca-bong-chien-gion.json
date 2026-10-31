@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "chien-ngap-dau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -30,11 +30,11 @@
     }
   ],
   "serving_desc": "1 phần",
-  "serving_grams": 200,
+  "serving_grams": 160,
   "ingredients": [
     {
       "ingredient_slug": "ca-bong",
-      "quantity": 180,
+      "quantity": 140,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -66,11 +66,30 @@
     }
   ],
   "recipe_steps": [
-    "Cá bống làm sạch, để ráo, ướp muối và tiêu.",
-    "Lăn cá qua lớp bột mì mỏng, rũ bỏ bột thừa.",
-    "Chiên ngập dầu nóng đến khi cá vàng giòn, vớt ra để ráo dầu, chấm nước mắm me hoặc mắm tỏi ớt."
+    "Cá bống cắt bỏ đầu và lấy ruột qua đường cắt đầu (không mổ bụng để cá không vỡ khi chiên), chà muối hạt cho sạch nhớt, rửa lại 1-2 lần nước rồi để thật ráo — bề mặt cá khô thì bột mới bám đều và ít bắn dầu.",
+    "Ướp cá với muối và tiêu khoảng 10-15 phút cho thấm nhẹ; nếu chưa chiên ngay thì để ngăn mát để cá giữ độ chắc.",
+    "Cho bột vào hộp có nắp, cho cá vào từng ít một, đậy nắp và xốc đều để bột áo một lớp mỏng quanh từng con; rũ bỏ bột thừa, tránh dùng tay lăn vì cá nhỏ rất dễ nát.",
+    "Đun dầu đủ ngập cá đến khi nóng già (thử đầu đũa thấy sủi bọt lăn tăn), thả cá vào chiên ở lửa vừa, không cho quá nhiều cá cùng lúc để nhiệt dầu không bị tụt.",
+    "Chiên khoảng 5-7 phút đến khi cá vàng đều, vỏ cứng giòn, con cá nhẹ và nổi lên; vớt ra để trên giấy thấm dầu. Muốn cá giòn lâu, chiên lại lần hai nhanh 1-2 phút trước khi ăn.",
+    "Ăn nóng ngay khi còn giòn rụm, chấm nước mắm tỏi ớt hoặc nước mắm me, kèm dưa leo và rau sống."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/2-cach-lam-ca-bong-chien-gion-va-chien-toi-ot-gion-rum-02199?srsltid=AfmBOoqgxK5SwjGhlVlz7YLe8DXJ6d2p1h1a0CVjdOY_rMplDVxOCscT",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH — 4 cách làm cá bống chiên giòn — 4 biến thể đều cho 3 người: chiên giòn thường cá 400 gr + bột chiên giòn 100 gr; lá lốt cá 500 gr + bột mì 2 muỗng canh + bột chiên giòn 2 muỗng canh; bơ tỏi cá 300 gr; tỏi ớt cá 400 gr + bột chiên giòn 200 gr."
+    },
+    {
+      "url": "https://yummyday.vn/ca-bong-chien-gion-567",
+      "accessed": "2026-10-31",
+      "note": "YummyDay — Cách làm cá bống chiên giòn — Mẻ cá 500 g (không ghi số người ăn): bột chiên giòn hải sản 100 g, bột năng 2 muỗng cà phê, ướp tiêu 1/3 muỗng cà phê + hạt nêm; xốc bột trong hộp đậy nắp, chiên lửa nhỏ."
+    },
+    {
+      "url": "https://tripi.vn/blog/vi/kinh-nghiem-hay/kham-pha-bi-quyet-chien-ca-bong-gion-tan-dam-vi-nhu-tai-nha-hang-sang-trong-tripi",
+      "accessed": "2026-10-31",
+      "note": "Tripi — Bí quyết chiên cá bống giòn tan — Cho 3 người: cá bống 400 g, bột chiên giòn 100 g; ướp cả mẻ với muối 1/2 muỗng, tiêu 1 muỗng, bột sư tử 1 muỗng trong 15 phút; chiên 7-10 phút."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/ca-bong-chien-gion.webp",
@@ -81,7 +100,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 15 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).]",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 15 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).] [LV2-008 đợt 8: Đối chiếu 3 nguồn đã mở đọc (Điện Máy XANH — 4 biến thể/3 người, YummyDay — mẻ 500 g, Tripi — 3 người). Sửa ca-bong 180→140 g: ĐMX thường 133 g/người, ĐMX tỏi ớt 133 g/người, Tripi 133 g/người đồng thuận; ĐMX lá lốt 167 g/người là điểm cao nhất — file cũ 180 g vượt cả dải. Giữ bot-mi 15 g: đây là phần bột bám thực tế sau khi xốc và rũ thừa (lượng bột chuẩn bị theo nguồn 25-33 g/người nhưng phần lớn rơi lại trong hộp); ĐMX lá lốt dùng tổng ~38 g bột (mì + chiên giòn) cho 500 g cá ≈ 11 g/140 g cá — 15 g nằm trong dải hợp lý. Giữ muoi 1 g (Tripi ~0.8 g/người) và hat-tieu-den 0.5 g (Tripi ~0.7 g/người; YummyDay 1/3 muỗng cà phê cho cả mẻ 500 g). Phương án A: file đã bỏ dòng dau-an từ đợt QA-002 (dầu chiên chính do engine mô hình hoá); nguyên liệu ca-bong có oil_absorption_pct = 9% — đạt quy ước, không cần thêm dòng dầu. serving_grams 200→160 theo tổng mới 156.5 g. Giữ method chien-ngap-dau và region vn-south, không nguồn nào tranh chấp.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

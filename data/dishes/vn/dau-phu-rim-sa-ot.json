@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "kho",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -42,7 +42,7 @@
     },
     {
       "ingredient_slug": "sa",
-      "quantity": 10,
+      "quantity": 15,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -82,11 +82,30 @@
     }
   ],
   "recipe_steps": [
-    "Đậu phụ cắt miếng dày 1,5 cm; sả và ớt băm nhỏ; pha nước tương với đường và 50 ml nước.",
-    "Phi thơm sả ớt với dầu, cho đậu phụ vào áp chảo săn hai mặt khoảng 3 phút.",
-    "Rưới hỗn hợp nước tương vào, rim lửa nhỏ 6–8 phút cho đậu thấm và nước rim sánh nhẹ, dùng nóng với cơm."
+    "Đậu phụ thấm khô mặt, cắt miếng dày khoảng 1,5 cm; sả bỏ gốc cứng và lá già, đập dập rồi băm nhuyễn; ớt bỏ cuống, băm nhỏ.",
+    "Pha sẵn sốt rim: nước tương, đường và khoảng 50 ml nước lọc, khuấy cho đường tan hẳn để khi rim không bị cháy đường ở đáy chảo.",
+    "Cho dầu ăn vào chảo, áp chảo đậu phụ trên lửa vừa 2–3 phút mỗi mặt đến khi hai mặt săn vàng nhẹ, gắp ra đĩa để riêng.",
+    "Giữ lại chút dầu trong chảo, cho sả và ớt băm vào phi lửa vừa khoảng 1–2 phút, đảo đều đến khi sả dậy mùi thơm và hơi se khô, không để cháy vàng đậm.",
+    "Trả đậu phụ vào chảo, rưới sốt rim lên, hạ lửa nhỏ và rim 6–8 phút; trở đậu nhẹ tay 1–2 lần cho sốt thấm đều các mặt.",
+    "Khi nước rim cạn sệt, sả ớt bám đều quanh miếng đậu và mặt đậu bóng nhẹ thì tắt bếp, múc ra đĩa dùng nóng với cơm."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/3-cach-dau-hu-kho-sa-ot-cai-muoi-va-cai-chua-thom-ngon-don-05136?srsltid=AfmBOorpJKCj4K0Y0QmitNNFOsjKHzKWJAvMz3-s83iFr4rySy_ycg-O",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH — Đậu hũ kho sả ớt — 3 người, bản chay: đậu hũ trắng 600g (200g/người, chiên vàng trước khi kho), sả 6 cây (2 cây/người), ớt sừng 1 trái, nước tương 1 thìa canh (5ml/người), nước mắm chay 1 thìa canh, nước màu dừa 1 thìa canh, đường 1 thìa cà phê cho cả mẻ (ướp đậu)."
+    },
+    {
+      "url": "https://vnexpress.net/doi-song-cooking-dau-phu-chien-sa-ot-4867165.html",
+      "accessed": "2026-10-31",
+      "note": "VnExpress Cooking — Đậu phụ chiên sả ớt (tác giả Bùi Thủy) — 4–5 người, bản mặn: 6 bìa đậu phụ (≈600g, ≈120–150g/người, rán 2 lửa cho giòn), sả 6 cây (≈1,3 cây/người), ớt sừng 2 quả + ớt cay 1–2 quả, tỏi 3 tép; sốt sả ớt: nước mắm 2 thìa cà phê, đường 1/2 thìa canh, tương ớt 1 thìa canh cho cả mẻ."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/25010954",
+      "accessed": "2026-10-31",
+      "note": "Cookpad VN — Đậu hũ và tàu hũ ky cuộn rim sả ớt, món chay (Dibee) — 2 người, bản chay rim đúng tên món: 1 hộp đậu hũ ta (kèm 2 cuộn tàu hũ ky), sả 2 cây (1 cây/người), ớt 2 trái; sốt rim: nước tương 2 thìa canh (15ml/người), đường 1 thìa canh (6g/người), tương ớt 1 thìa canh, nước lọc 4 thìa canh; rim đến cạn sốt, sả ớt khô ráo bám đậu."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/dau-phu-rim-sa-ot.webp",
@@ -97,7 +116,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món chay thuần: toàn bộ nguyên liệu có origin thực vật/nấm, gia vị chỉ dùng nước tương/muối/chao đậu — không nước mắm, không hạt nêm/bột canh (nhóm COMPOSITE_ANIMAL tính là mặn), không trứng/sữa; nhãn diet suy từ thành phần phải ra chay và đã kiểm chứng trực tiếp trong DB sau seed (cổng G3/G6 của đợt). MÓN THAY cho dau-phu-chien-sa-ot của kế hoạch §3.5: phép kiểm tham chiếu độc lập kiểu QA-002 lần 3 cho món chiên đậu phụ tươi lệch +24% — hệ số hấp thụ 15 (quy tắc để dành của CALC-004, áp dụng cho dau-phu nhân đợt này) chưa được tham chiếu độc lập hậu thuẫn: cặp SR Legacy đậu phụ sống firm (172475) ↔ đậu phụ chiên (172451) suy bằng cân bằng protein cho hệ số tham chiếu ≈9,8. Theo tiền lệ đợt 2 (món chiên chưa sẵn sàng đường tính thì thay), đổi sang bản rim (method kho, dầu rim kê trong công thức) và HOÃN bản chiên tới khi hệ số đậu phụ được hiệu chuẩn ở quy trình CALC-004/QA-002.",
+  "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món chay thuần: toàn bộ nguyên liệu có origin thực vật/nấm, gia vị chỉ dùng nước tương/muối/chao đậu — không nước mắm, không hạt nêm/bột canh (nhóm COMPOSITE_ANIMAL tính là mặn), không trứng/sữa; nhãn diet suy từ thành phần phải ra chay và đã kiểm chứng trực tiếp trong DB sau seed (cổng G3/G6 của đợt). MÓN THAY cho dau-phu-chien-sa-ot của kế hoạch §3.5: phép kiểm tham chiếu độc lập kiểu QA-002 lần 3 cho món chiên đậu phụ tươi lệch +24% — hệ số hấp thụ 15 (quy tắc để dành của CALC-004, áp dụng cho dau-phu nhân đợt này) chưa được tham chiếu độc lập hậu thuẫn: cặp SR Legacy đậu phụ sống firm (172475) ↔ đậu phụ chiên (172451) suy bằng cân bằng protein cho hệ số tham chiếu ≈9,8. Theo tiền lệ đợt 2 (món chiên chưa sẵn sàng đường tính thì thay), đổi sang bản rim (method kho, dầu rim kê trong công thức) và HOÃN bản chiên tới khi hệ số đậu phụ được hiệu chuẩn ở quy trình CALC-004/QA-002. [LV2-008 đợt 8: 3 nguồn đã mở đọc — Điện Máy XANH (kho sả ớt chay, 3 người), VnExpress Cooking (chiên sả ớt mặn, 4–5 người), Cookpad Dibee (rim sả ớt chay, 2 người). SỬA sả 10→15g: 3/3 nguồn dùng 1–2 cây/người (≈15–30g phần băm ăn được), file thấp hơn ngưỡng dưới trên 30%. GIỮ đậu phụ 120g/người: VnExpress ≈120–150g/người và Cookpad (1 hộp đậu chia 2 người, còn kèm tàu hũ ky) hậu thuẫn mức này; ĐMX 200g/người là điểm cao cá biệt nên không đủ đồng thuận để nâng, và file chỉ lệch dưới 25% so với trung vị ~150g của 3 nguồn. GIỮ nước tương 8g (ĐMX 5ml/người, Cookpad 15ml/người với nước tương Nhật nhạt — file nằm giữa), đường 3g (ĐMX ~1,3g/người, VnExpress ~1,3g/người, Cookpad 6g/người — file ở giữa khoảng), ớt 3g (ĐMX ~3g/người, Cookpad ~5g/người, VnExpress ~8g/người — file ở ngưỡng dưới nhưng chưa lệch quá 30% so với 2 nguồn gần nhất), dầu ăn 5g (file là bản rim áp chảo, không chiên ngập như 2/3 nguồn — xem anomalies). Serving 140g giữ nguyên vì tổng dòng sau sửa ~151g, rim cạn sốt nên khối lượng dọn đĩa ~140g hợp lý. Giữ method kho (rim) và region vn.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "xao",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -90,15 +90,41 @@
     }
   ],
   "recipe_steps": [
-    "Bắp cải cắt miếng, cà rốt lát mỏng, đậu que cắt đoạn, nấm rơm cắt đôi.",
-    "Phi thơm tỏi với dầu, xào đậu que và cà rốt trước 2 phút lửa lớn.",
-    "Cho bắp cải và nấm vào xào thêm 2–3 phút, nêm nước tương, rau vừa chín tới thì tắt bếp."
+    "Bắp cải cắt miếng vừa ăn, cà rốt gọt vỏ thái lát mỏng, đậu que cắt bỏ hai đầu rồi cắt khúc 4-5cm, nấm rơm cắt bỏ chân và chẻ đôi; rửa sạch tất cả và để thật ráo nước.",
+    "Đun một nồi nước sôi có chút muối, trụng đậu que và cà rốt khoảng 2 phút cho vừa chín tới, vớt ra xả nhanh nước lạnh để giữ màu và độ giòn rồi để ráo.",
+    "Làm nóng chảo trên lửa lớn, cho dầu ăn vào và phi tỏi băm đến khi vàng thơm, dậy mùi nhưng chưa cháy.",
+    "Cho đậu que và cà rốt đã trụng vào xào trước khoảng 1-2 phút trên lửa lớn, đảo nhanh tay để rau không ra nước.",
+    "Thêm bắp cải và nấm rơm vào, tiếp tục xào 2-3 phút đến khi bắp cải vừa xẹp xuống và nấm săn lại, rau vẫn còn độ giòn.",
+    "Nêm nước tương, nếm lại cho vừa ăn, đảo đều một lượt cuối rồi tắt bếp ngay; dọn ra đĩa dùng nóng với cơm trắng."
   ],
-  "recipe_sources": [],
-  "media": [],
+  "recipe_sources": [
+    {
+      "url": "https://amthucdochay.com/?p=8388",
+      "accessed": "2026-10-31",
+      "note": "Ẩm Thực Đồ Chay — 3 cách làm rau củ xào thập cẩm chay — Đã mở đọc cả 2 công thức xào trong bài: (1) thập cẩm — cải thìa 200g, bông cải xanh 150g, cà rốt 100g, nấm rơm 100g, nấm đông cô 100g, bắp non 150g, măng 50g, nêm xì dầu/dầu hào chay (mẻ lớn, không ghi số người); (2) 'rau củ xào chay thanh tịnh' cho 4 người — súp lơ xanh 1 cây + súp lơ trắng 1 cây, cải thảo 1/2 cây, cà rốt 1 củ, đậu cô ve 50g, ngô bao tử 50g, mộc nhĩ 3-4 tai, phi đầu hành boa rô với dầu ăn."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/10747848",
+      "accessed": "2026-10-31",
+      "note": "Cookpad VN — Mì xào rau củ chay của BẾP CỦA TUI — Đã mở đọc: 2-3 người — bắp cải trắng 100g, bông cải trắng 100g, đậu cô ve 50g, cà rốt 1/2 củ (kèm mì chay và đậu hũ chiên nên rau chỉ là một phần đĩa). Rau được luộc sơ từng loại (cà rốt 4 phút, bông cải 3 phút, đậu 3 phút, bắp cải 2 phút), ngâm nước lạnh rồi mới xào lửa lớn — xác nhận tỉ lệ bắp cải/đậu/cà rốt và trình tự xào rau cứng trước."
+    },
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/amp/2-cach-lam-rau-cu-xao-thap-cam-ca-ri-va-bo-toi-don-gian-bat-04499",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH — 2 cách làm rau củ xào thập cẩm cà ri và bơ tỏi — Đã mở đọc cả 2 công thức, đều cho 3 người: (1) bơ tỏi — cà rốt 50g, đậu cô ve 50g, bắp hạt 100g, xúc xích 100g, tỏi 10g; (2) cà ri chay — cà rốt 150g, đậu đũa 50g, cà tím 200g, su su 200g, củ sắn 150g, nước mắm chay 10g, dầu ăn trong sốt 3 muỗng canh. Dùng đối chiếu mức cà rốt/đậu/tỏi mỗi khẩu phần (cà rốt 17-50g, đậu 17g, tỏi ~3,3g/người)."
+    }
+  ],
+  "media": [
+    {
+      "path": "media/dishes/rau-cu-xao-chay.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món chay thuần: toàn bộ nguyên liệu có origin thực vật/nấm, gia vị chỉ dùng nước tương/muối/chao đậu — không nước mắm, không hạt nêm/bột canh (nhóm COMPOSITE_ANIMAL tính là mặn), không trứng/sữa; nhãn diet suy từ thành phần phải ra chay và đã kiểm chứng trực tiếp trong DB sau seed (cổng G3/G6 của đợt). Khẩu phần và trọng số bữa đã chỉnh sau rà soát G6 theo tiền lệ nhóm rau xào phụ của kho (đĩa ~140–150 g, weight 7 — weight 8 chỉ dành cho món có đạm chính làm trung tâm).",
+  "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món chay thuần: toàn bộ nguyên liệu có origin thực vật/nấm, gia vị chỉ dùng nước tương/muối/chao đậu — không nước mắm, không hạt nêm/bột canh (nhóm COMPOSITE_ANIMAL tính là mặn), không trứng/sữa; nhãn diet suy từ thành phần phải ra chay và đã kiểm chứng trực tiếp trong DB sau seed (cổng G3/G6 của đợt). Khẩu phần và trọng số bữa đã chỉnh sau rà soát G6 theo tiền lệ nhóm rau xào phụ của kho (đĩa ~140–150 g, weight 7 — weight 8 chỉ dành cho món có đạm chính làm trung tâm). [LV2-008 đợt 8: Nâng Mức 2 với 3 nguồn đã mở đọc (Ẩm Thực Đồ Chay — 2 công thức trong bài, Cookpad BẾP CỦA TUI, Điện Máy XANH — 2 công thức trong bài). GIỮ TOÀN BỘ định lượng hiện tại: món là đĩa xào thập cẩm có thành phần biên tập tự chọn (bắp cải 70g, đậu que 35g, cà rốt 25g, nấm rơm 20g, dầu ăn 6g, nước tương 5g, tỏi 3g; tổng 164g so với serving 150g — hợp lý sau hao hụt xào), không nguồn nào dùng đúng tổ hợp 4 loại rau này nên phân xử theo tỉ lệ và mức mỗi khẩu phần suy từ các nguồn: cà rốt 17-50g/người (ĐMX) và ~20g/người (Ẩm Thực Đồ Chay bản 4 người, 1 củ) — file 25g nằm trong dải; tỏi ~3,3g/người (ĐMX 10g/3 người) khớp file 3g; bắp cải là rau nền chiếm tỉ trọng lớn nhất trong các bản có bắp cải/cải thảo (Cookpad 100g cho 2-3 người kèm mì, Ẩm Thực Đồ Chay cải thảo 1/2 cây cho 4 người ~60g/người) — file 70g hợp lý cho đĩa độc lập 150g; nấm rơm 100g trong mẻ thập cẩm lớn của Ẩm Thực Đồ Chay xác nhận hiện diện và vai trò phụ. Không dòng nào lệch >25-30% đồng thời ở ≥2 nguồn độc lập nên không sửa. Method xao và region vn (toàn quốc) giữ nguyên; món giữ đúng tính chay thuần (chỉ nước tương, không nước mắm/hạt nêm động vật) như ghi chú DISH-005.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

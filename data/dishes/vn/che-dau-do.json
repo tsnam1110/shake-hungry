@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "chieu",
@@ -42,7 +42,7 @@
     },
     {
       "ingredient_slug": "duong-trang",
-      "quantity": 22,
+      "quantity": 30,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -66,11 +66,34 @@
     }
   ],
   "recipe_steps": [
-    "Ngâm đậu đỏ qua đêm, nấu với nước và lá dứa cho đậu mềm bở.",
-    "Cho đường, khuấy tan, nấu thêm vài phút cho đậu thấm ngọt.",
-    "Chan nước cốt dừa khi ăn; ăn nóng hoặc lạnh."
+    "Đãi đậu đỏ, bỏ hạt lép và hạt sâu, ngâm nước 6–8 tiếng hoặc qua đêm cho hạt nở mềm rồi rửa lại và để ráo.",
+    "Cho đậu vào nồi với nước ngập mặt đậu cùng bó lá dứa, đun sôi rồi hạ lửa nhỏ ninh khoảng 45–60 phút; bóp thử thấy hạt mềm bở, không còn sượng là đạt, vớt bỏ lá dứa.",
+    "Cho đường vào nồi đậu, khuấy nhẹ tay cho tan hết rồi đun thêm chừng 10 phút trên lửa nhỏ để đậu thấm ngọt mà hạt không bị nát.",
+    "Đun riêng nước cốt dừa với một nhúm muối trên lửa nhỏ, khuấy đều đến khi vừa sôi lăn tăn thì tắt bếp — không đun lâu để cốt dừa không bị tách dầu.",
+    "Múc chè ra chén, chan nước cốt dừa lên mặt; dọn nóng hoặc để nguội thêm đá bào đều ngon."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/mach-ban-cach-nau-che-dau-do-thom-ngon-don-gian-vao-ngay-that-04603?srsltid=AfmBOop5CIi53R6n5UEeIh1vbkOraQUqBXeIyKVo60biq2Pcb23mLEtv",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH — Chè đậu đỏ truyền thống (Thất Tịch) — Cho 2 người: đậu đỏ 300g, đường 80g (nêm trong nồi), bột năng 20g tạo sánh, nước cốt dừa 1 hộp chan khi ăn, nước nấu chỉ 500ml — bản chè đặc, tỉ lệ đậu rất cao (xem anomalies)."
+    },
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-che-dau-do-suong-sao-bot-bang-cau-may-man-trong-ngay-11186?srsltid=AfmBOorliE81wM9dPGB1M-asCiIFDSqWUTNp197RGYqnFRhsqk1n_g_Z",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH — 3 cách làm chè đậu đỏ sương sáo — Ba công thức đều cho 4 người, cùng cho đậu đỏ nấu lá dứa: bản 1 đậu 200g + đường phèn 200g + nước cốt dừa 100ml (trong sữa dừa) + lá dứa 5 lá; bản 2 đậu 100g + nước cốt dừa 200ml + đường tổng 150g + lá dứa 1 bó; bản 3 đậu 200g + nước cốt dừa 160g + đường 190g. Chỉ lấy phần chè đậu đỏ để đối chiếu, không tính thạch sương sáo/củ năng."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/15383263",
+      "accessed": "2026-10-31",
+      "note": "Cookpad VN — Chè đậu đỏ Cốt Dừa Trân Châu của Thu Mèo — Không ghi số người ăn: đậu đỏ 300g, đường tổng 400g (300g xào rim với đậu + 100g nấu vào nước cốt dừa), nước cốt dừa 150ml, trân châu trắng 100g, bột béo 1 muỗng canh — dùng đối chiếu tỉ lệ đường : đậu ≈ 1,33."
+    },
+    {
+      "url": "https://nauankhongkho.vn/cong-thuc/che-dau-do-nuoc-cot-dua-DKjZ22lvxZ1v",
+      "accessed": "2026-10-31",
+      "note": "Nấu Ăn Không Khó — Chè đậu đỏ nước cốt dừa — Trang chỉ hiển thị phần bước làm (không có bảng gram): đậu đỏ ngâm nước ấm 2 tiếng, nấu cùng một nửa nước cốt dừa, cho bột báng và đường phèn; nửa cốt dừa còn lại sánh bằng 30g bột nếp để chan mặt — xác nhận cấu trúc đậu + đường phèn + cốt dừa chan mặt."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/che-dau-do.webp",
@@ -81,7 +104,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt)",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-008 đợt 8: Nâng Mức 2 với 4 nguồn đã mở đọc (Điện Máy XANH — công thức truyền thống 2 người + 3 công thức sương sáo 4 người trong bài thứ hai; Cookpad Thu Mèo; Nấu Ăn Không Khó). SỬA 1 dòng: duong-trang 22→30g (cả 4 công thức ĐMX có số người đều cho 37,5–50g đường/khẩu phần và tỉ lệ đường:đậu của Cookpad là 1,33 — file cũ thấp rõ; chỉ lấy 30g vì chén file 250g nhỏ hơn khẩu phần nguồn). GIỮ: dau-do-hat 45g (ĐMX cho 50g/khẩu phần ở hai bản 4 người; bản truyền thống 150g/người và bản sương sáo 2 chỉ 25g/người là hai cực ngoại lệ — trung vị quanh 50g, file lệch −10%); nuoc-cot-dua 25g (bản sương sáo 1 cho đúng 100ml/4 người = 25ml/người; các bản khác 40–50ml chan kèm thạch); la-dua 1g optional (2/3 công thức trong bài sương sáo nấu đậu cùng lá dứa, Nấu Ăn Không Khó và bản truyền thống không bắt buộc). serving_grams 250g giữ nguyên (chất rắn ~100g + nước chè ~150g); method 'nau', region 'vn' giữ nguyên.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

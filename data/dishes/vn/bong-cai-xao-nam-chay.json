@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "xao",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -82,11 +82,30 @@
     }
   ],
   "recipe_steps": [
-    "Súp lơ tách bông nhỏ, chần nước sôi 1 phút; cà rốt tỉa lát mỏng; nấm rơm cắt đôi.",
-    "Phi thơm tỏi với dầu, xào nấm rơm và cà rốt lửa lớn 2 phút.",
-    "Cho súp lơ vào xào thêm 2–3 phút, nêm nước tương vừa ăn, dùng nóng."
+    "Súp lơ xanh tách thành bông nhỏ vừa ăn, ngâm nước muối loãng khoảng 10 phút, rửa sạch và để ráo; nấm rơm cắt bỏ chân, chẻ đôi; cà rốt gọt vỏ thái lát mỏng.",
+    "Đun sôi nồi nước có chút muối, trụng súp lơ khoảng 1 phút cho vừa chuyển màu xanh đậm, vớt ra xả nhanh nước lạnh để giữ độ giòn rồi để ráo hẳn.",
+    "Làm nóng chảo trên lửa lớn, cho dầu ăn vào phi tỏi băm đến khi thơm vàng nhẹ, chưa cháy.",
+    "Cho nấm rơm và cà rốt vào xào trước khoảng 2 phút trên lửa lớn đến khi nấm săn lại và cà rốt vừa mềm cạnh.",
+    "Cho súp lơ đã trụng vào, đảo nhanh tay 2-3 phút cho rau thấm đều dầu và nóng đều, tránh xào lâu làm súp lơ mềm nhũn và mất màu.",
+    "Nêm nước tương, nếm lại cho vừa ăn rồi tắt bếp ngay khi súp lơ còn giòn; dọn ra đĩa dùng nóng với cơm trắng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-nam-mo-xao-chay-voi-can-tay-bong-cai-doi-mon-cho-bua-06937?srsltid=AfmBOopMDYUL5TCdpXQHFXXNXsN7dz6t6tkl6u4_2n_NKyy_vfkXVDH6",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH — Nấm mỡ xào bông cải chay (trong bài 4 cách làm nấm mỡ xào chay) — Đã mở đọc: cho 3 người — nấm mỡ 250g, bông cải xanh 1 cái (700g, cân cả cuống dày), hành tây 1/2 củ, tỏi 3 tép, dầu ăn 1 muỗng canh, hạt nêm chay 1 muỗng canh. Bông cải chần sơ 2-3 phút trong nước sôi rồi xả lạnh trước khi xào; xào nấm 1 phút rồi cho bông cải đảo 2-3 phút."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/13323903",
+      "accessed": "2026-10-31",
+      "note": "Cookpad VN — Bông cải xanh xào nấm chay của Bòn Bon — Đã mở đọc: 2 phần ăn — bông cải xanh 1 cây, nấm đùi gà 3 cây vừa, cà rốt 1/2 củ bào mỏng, dầu thực vật, hạt nêm nấm chay, tiêu. Bông cải trụng nước sôi có muối rồi ngâm nước đá; phi hành tỏi (hoặc boa rô) xào nấm chín trước, cho bông cải và cà rốt vào đảo đều."
+    },
+    {
+      "url": "https://www.bluestone.com.vn/blogs/vao-bep/sup-lo-xao-nam-chay",
+      "accessed": "2026-10-31",
+      "note": "Bluestone — Cách làm súp lơ xào nấm chay — Đã mở đọc: mẻ gia đình (không ghi số người) — súp lơ xanh 300g + súp lơ trắng 150g, nấm hương tươi 100g + nấm bào ngư 100g + nấm đùi gà 80g, cà rốt 1/2 củ (50g), dầu ăn 2 muỗng canh, nước tương 1 muỗng canh, tỏi băm 1 muỗng cà phê. Súp lơ trụng nhanh 1 phút, xào cà rốt 1-2 phút rồi cho nấm lửa lớn, cuối cùng cho súp lơ đảo 2-3 phút."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/bong-cai-xao-nam-chay.webp",
@@ -97,7 +116,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món chay thuần: toàn bộ nguyên liệu có origin thực vật/nấm, gia vị chỉ dùng nước tương/muối/chao đậu — không nước mắm, không hạt nêm/bột canh (nhóm COMPOSITE_ANIMAL tính là mặn), không trứng/sữa; nhãn diet suy từ thành phần phải ra chay và đã kiểm chứng trực tiếp trong DB sau seed (cổng G3/G6 của đợt). Khẩu phần và trọng số bữa đã chỉnh sau rà soát G6 theo tiền lệ nhóm rau xào phụ của kho (đĩa ~140–150 g, weight 7 — weight 8 chỉ dành cho món có đạm chính làm trung tâm).",
+  "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món chay thuần: toàn bộ nguyên liệu có origin thực vật/nấm, gia vị chỉ dùng nước tương/muối/chao đậu — không nước mắm, không hạt nêm/bột canh (nhóm COMPOSITE_ANIMAL tính là mặn), không trứng/sữa; nhãn diet suy từ thành phần phải ra chay và đã kiểm chứng trực tiếp trong DB sau seed (cổng G3/G6 của đợt). Khẩu phần và trọng số bữa đã chỉnh sau rà soát G6 theo tiền lệ nhóm rau xào phụ của kho (đĩa ~140–150 g, weight 7 — weight 8 chỉ dành cho món có đạm chính làm trung tâm). [LV2-008 đợt 8: Nâng Mức 2 với 3 nguồn đã mở đọc (Điện Máy XANH, Cookpad Bòn Bon, Bluestone). GIỮ TOÀN BỘ định lượng hiện tại (súp lơ xanh 90g, nấm rơm 35g, cà rốt 20g, dầu ăn 6g, nước tương 5g, tỏi 3g; tổng 159g so với serving 150g): phân xử theo tỉ lệ trong đĩa vì các nguồn cân theo mẻ rất khác nhau — tỉ lệ nấm:súp lơ của file là 35:90 (~0,39) nằm giữa ĐMX (250g nấm : 700g bông cải cả cuống, phần bông ăn được chỉ khoảng một nửa nên tỉ lệ thực tế ~0,5-0,7) và Bluestone (280g nấm : 450g súp lơ ~0,62, mẻ gồm 3 loại nấm) và Cookpad (3 cây nấm đùi gà : 1 cây bông cải cho 2 phần); cà rốt 20g khớp Cookpad (1/2 củ cho 2 phần ~25g/người) và Bluestone (50g cho mẻ ~4 người ~12g/người); dầu ăn ĐMX 1 muỗng canh/3 người ~4,7g/người và Bluestone 2 muỗng canh/mẻ ~7g/người — file 6g nằm giữa; nước tương Bluestone 1 muỗng canh/mẻ ~4-5g/người khớp file 5g; tỏi 3g khớp ĐMX 3 tép/3 người. Không dòng nào lệch >25-30% với đồng thuận ≥2 nguồn. Cả 3 nguồn đều trụng/chần súp lơ trước khi xào và xào nấm trước súp lơ — steps đã viết lại theo đúng trình tự này. Method xao, region vn giữ nguyên; món giữ chay thuần.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

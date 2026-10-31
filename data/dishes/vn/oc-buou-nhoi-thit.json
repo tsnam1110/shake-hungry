@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "hap",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -42,7 +42,7 @@
     },
     {
       "ingredient_slug": "thit-lon-xay",
-      "quantity": 50,
+      "quantity": 30,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -50,7 +50,7 @@
     },
     {
       "ingredient_slug": "moc-nhi-kho",
-      "quantity": 5,
+      "quantity": 10,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -103,15 +103,42 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "gio-song",
+      "quantity": 20,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Ốc luộc sơ, lễ lấy thịt, băm nhỏ; giữ lại vỏ ốc.",
-    "Trộn thịt ốc với thịt lợn xay, mộc nhĩ, sả, hành tím; nêm nước mắm, tiêu.",
-    "Nhồi hỗn hợp trở lại vào vỏ, đặt một lát gừng/lá sả lên miệng vỏ.",
-    "Hấp chín khoảng 15 phút, ăn nóng, chấm nước mắm gừng."
+    "Ngâm ốc trong nước vo gạo cùng vài lát ớt ít nhất 1 giờ (tốt nhất 3–4 giờ) cho nhả nhớt và bùn đất, chà sạch vỏ, rửa lại nhiều lần.",
+    "Luộc sơ ốc trong nước sôi 3–5 phút đến khi mày ốc bong ra, vớt ra để nguội bớt rồi khều lấy thịt, bỏ phần đuôi đen, giữ lại vỏ và rửa sạch vỏ để ráo.",
+    "Băm nhỏ thịt ốc; mộc nhĩ ngâm nở, rửa sạch, băm nhỏ; sả, hành tím và gừng băm nhuyễn.",
+    "Trộn thịt ốc với thịt heo xay, giò sống, mộc nhĩ, sả, hành tím và gừng; nêm nước mắm, đường và tiêu, quết đều cho nhân dẻo và kết dính, ướp khoảng 15 phút.",
+    "Đặt một lát sả hoặc lá gừng vào miệng vỏ ốc, nhồi nhân thật chặt trở lại vào vỏ, ấn mặt nhân phẳng và hơi nén để không bung khi hấp.",
+    "Xếp ốc vào xửng, hấp trên lửa lớn khoảng 15–20 phút đến khi nhân chín săn, thơm mùi sả và không còn hồng ở giữa.",
+    "Dọn ăn nóng ngay khi hấp xong, chấm nước mắm gừng; tránh hấp quá lâu khiến thịt ốc dai và nhân khô."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://vinid.net/blog/cach-lam-oc-buou-nhoi-thit/",
+      "accessed": "2026-10-31",
+      "note": "VinID — Ốc bươu nhồi thịt hấp sả — 1,5kg ốc bươu, giò sống 300g (không thịt xay riêng), nấm mèo 3 tai, sả băm 1 muỗng canh + sả khúc 20g, hành tím 1 muỗng canh, tỏi 1 muỗng canh, gừng 1 thìa cà phê; hấp 15 phút"
+    },
+    {
+      "url": "https://nauankhongkho.vn/blog/cach-lam-mon-oc-nhoi-thit-hap-sa-3bKxMoDx1Aaw",
+      "accessed": "2026-10-31",
+      "note": "Nấu Ăn Không Khó (Túc Túc) — Ốc bươu nhồi thịt hấp sả — 1kg ốc bươu, thịt xay 300g, giò sống 100g, mộc nhĩ 3–4 tai, sả 7 củ, hành tím 3 củ, nước mắm 1 muỗng canh, tiêu 1/2 muỗng cà phê"
+    },
+    {
+      "url": "https://www.bluestone.com.vn/blogs/vao-bep/oc-buou-nhoi-thit",
+      "accessed": "2026-10-31",
+      "note": "Bluestone — Ốc bươu nhồi thịt hấp sả — 1kg ốc bươu, thịt heo xay 200g, giò sống 100g, nấm mèo 3 tai, miến dong 30g, sả 3 cây, hành tím 3 củ, nước mắm 1 thìa canh; hấp 20–25 phút"
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/oc-buou-nhoi-thit.webp",
@@ -122,7 +149,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt).",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [LV2-008 đợt 8: Nâng Mức 2 với 3 nguồn đã mở đọc (VinID, Nấu Ăn Không Khó, Bluestone) — cả 3 đều dùng giò sống trong nhân, file hiện thiếu hoàn toàn. Giữ tổng nhân (thịt + giò) = 50g theo cơ sở cân hiện tại của file: thêm giò sống 20g, thịt xay 50→30g. Sửa mộc nhĩ 5→10g (3/3 nguồn đều ghi 3 tai nấm mèo ≈ 10g khô). Giữ: sả 8g, gừng 3g, hành tím 5g, nước mắm 6g, đường 2g, tiêu 0,3g — nằm trong khoảng quy đổi của nguồn theo cơ sở cân của file. Phương pháp hấp giữ nguyên (3/3 nguồn hấp 15–25 phút).]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

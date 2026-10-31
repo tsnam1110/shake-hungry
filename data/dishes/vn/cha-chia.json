@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "hap",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -35,14 +35,6 @@
     {
       "ingredient_slug": "thit-lon-xay",
       "quantity": 95,
-      "unit_name": "g",
-      "is_optional": false,
-      "source": "llm_suggested",
-      "confidence": "low"
-    },
-    {
-      "ingredient_slug": "sa",
-      "quantity": 12,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -95,15 +87,42 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "muc-kho",
+      "quantity": 12,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Trộn thịt xay với mộc nhĩ, hành tím, sả băm; nêm nước mắm, đường, tiêu.",
-    "Nặn thịt quanh từng cọng sả thành hình chiếc chìa.",
-    "Hấp chín khoảng 15 phút.",
-    "Ăn nóng, chấm nước mắm chua ngọt hoặc tương ớt."
+    "Ngâm mực khô trong nước ấm khoảng 20 phút cho mềm, rửa sạch, để ráo rồi cắt hạt lựu thật nhỏ; mộc nhĩ và nấm hương ngâm nở, rửa sạch và băm nhỏ.",
+    "Róc vỏ mía, chẻ thành 4 dẻ nhỏ cỡ ngón tay, dài khoảng 10cm; để mặt mía ráo để paste bám chắc, phần đầu dưới giữ làm tay cầm.",
+    "Cho thịt lợn xay (chọn thịt nạc, lọc bỏ mỡ) vào tô cùng mực khô, mộc nhĩ, nấm hương và hành tím băm; nêm nước mắm, đường và tiêu rồi trộn đều.",
+    "Quết hỗn hợp thịt theo một chiều khoảng 5 phút đến khi paste dẻo, quánh và nhấc lên không rời — paste đạt là khi phết thử lên dẻ mía vẫn bám chặt, không tuột.",
+    "Thoa một lớp nước mỏng lên tay, phết paste bọc quanh đầu trên của từng dẻ mía thành lớp dày đều khoảng 1,5cm, chừa lại 3–4cm mía ở đầu dưới để cầm.",
+    "Xếp chả vào xửng, hấp ở lửa vừa khoảng 15 phút từ khi nước sôi đến khi paste chín trắng đục, mặt chả săn và không còn hồng ở giữa.",
+    "Trước khi ăn, chao nhanh từng chiếc qua chảo mỡ hoặc dầu nóng khoảng 1–2 phút, lật đều đến khi mặt ngoài vàng ruộm; ăn nóng, cầm ở đoạn mía và chấm nước mắm tỏi ớt."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://vi.wikipedia.org/wiki/Ch%E1%BA%A3_ch%C3%ACa",
+      "accessed": "2026-10-31",
+      "note": "Wikipedia tiếng Việt — Chả chìa (tổng hợp từ VnExpress, Tuổi Trẻ, Thanh Niên) — Biến thể Hạ Lũng (đúng nhãn dac-san:hai-phong của file): thịt lợn nạc xay nhuyễn với mực khô, phết lên dẻ MÍA chẻ nhỏ, hấp chín rồi chao mỡ sôi hoặc nướng than trước khi ăn. Biến thể Hội An phết lên thân sả; bản chả chìa phổ thông là sườn/ba chỉ tuốt trên xương, ướp tỏi/hành/nước mắm/đường/tiêu."
+    },
+    {
+      "url": "https://mia.vn/cam-nang-du-lich/mon-cha-chia-ha-lung-va-su-tich-ra-doi-co-1-0-2-tren-dat-cang-4380",
+      "accessed": "2026-10-31",
+      "note": "MIA.vn — Chả chìa Hạ Lũng và sự tích ra đời — Hạ Lũng: 3 nguyên liệu chính là mực, thịt heo và mía; thịt lọc hết mỡ, xay nhuyễn; mực Cát Bà/Cát Hải cắt nhỏ xay cùng thịt; ướp nước mắm, mì chính, nấm hương, hạt tiêu, mộc nhĩ; phết lên dẻ mía chừa đoạn cầm tay, hấp chín với lửa vừa."
+    },
+    {
+      "url": "https://giadinh.suckhoedoisong.vn/mon-cha-dat-khach-nhat-hai-phong-duoc-sang-che-ra-trong-tinh-huong-het-suc-bat-ngo-172210603164247474.htm",
+      "accessed": "2026-10-31",
+      "note": "Sức khỏe & Đời sống (Gia đình) — Món chả đắt khách nhất Hải Phòng — Phỏng vấn bác Lê Khắc Hoạt, người được cho là sáng chế chả chìa Hạ Lũng: mực khô một nắng là thành phần làm nên vị riêng; 3 nguyên liệu chính mực + thịt lợn + mía; mực cắt nhỏ xay nhuyễn cùng thịt lợn nạc, ướp nước mắm, mì chính, nấm hương, mộc nhĩ, hạt tiêu."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/cha-chia.webp",
@@ -114,7 +133,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt).",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [LV2-008 đợt 8: nâng Mức 2 — 3 nguồn đã mở (Wikipedia tổng hợp VnExpress/Tuổi Trẻ/Thanh Niên; MIA.vn; Sức khỏe & Đời sống phỏng vấn người sáng chế), cả 3 thống nhất về biến thể Hạ Lũng, đúng nhãn dac-san:hai-phong của file. SỬA CẤU TRÚC 2 điểm: (1) BỔ SUNG mực khô 12g — nguyên liệu định danh có ở 3/3 nguồn mà file thiếu hẳn (lượng là ước lượng bảo thủ, chờ duyệt tay — xem add_lines); (2) BỎ dòng sả 12g — que cầm chuẩn Hạ Lũng là mía ở 3/3 nguồn, sả là của biến thể Hội An; mía không có slug và là phần không ăn nên chỉ ghi trong bước nấu. GIỮ thịt lợn xay 95g (3/3 nguồn: thịt nạc lọc mỡ đem xay nhuyễn — file dùng slug thịt xay sẵn, yêu cầu chọn thịt nạc đã ghi vào bước nấu), mộc nhĩ 5g và nấm hương 3g (2/3 nguồn liệt kê trong phần ướp), hành tím 5g và đường 2g (bản chả chìa phổ thông trên Wikipedia ướp hành và đường), nước mắm 5g và tiêu 0,3g (3/3 nguồn đều có) — không nguồn nào công bố gram cho các dòng này nên giữ nguyên định lượng của file thay vì tạo số mới. Method hap GIỮ: hấp là công đoạn làm chín chính ở 3/3 nguồn, chao mỡ/nướng chỉ là bước hoàn thiện 1–2 phút trước khi ăn và đã đưa vào bước nấu. Region vn-north và nhãn dac-san:hai-phong giữ nguyên. Tên Anh hiện tại của file ('Pork paste on lemongrass stalks') sai biến thể — đề xuất sửa thành 'Pork and dried-squid paste on sugarcane sticks (Ha Lung, Hai Phong)' khi tích hợp.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

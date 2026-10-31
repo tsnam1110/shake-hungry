@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "xao",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -74,11 +74,30 @@
     }
   ],
   "recipe_steps": [
-    "Cải thìa tách bẹ rửa sạch; nấm rơm cạo gốc, chẻ đôi.",
-    "Phi tỏi với dầu, cho nấm vào xào săn.",
-    "Cho cải thìa vào xào nhanh, nêm nước tương, vừa chín tới là tắt bếp."
+    "Cải thìa cắt bỏ gốc, tách từng bẹ, rửa sạch nhiều lần rồi cắt khúc vừa ăn và để ráo; nấm rơm cạo sạch phần gốc, rửa nhanh, để ráo và chẻ đôi những nấm to.",
+    "Tỏi bóc vỏ, đập dập và băm nhỏ; chuẩn bị sẵn chảo thật nóng vì món xào rau cần lửa lớn và thao tác nhanh.",
+    "Cho dầu ăn vào chảo nóng, phi tỏi đến khi vàng nhẹ và dậy mùi thơm, tránh để tỏi cháy sẽ đắng.",
+    "Cho nấm rơm vào xào trước trên lửa lớn khoảng 2 phút, đảo đều tay đến khi nấm săn lại và hơi xém cạnh.",
+    "Cho cải thìa vào xào cùng, đảo nhanh tay 2–3 phút cho cọng cải vừa chín tới nhưng vẫn xanh và giòn.",
+    "Nêm nước tương, đảo thêm khoảng 30 giây cho gia vị áo đều, nếm lại vừa ăn rồi tắt bếp và dọn ra đĩa dùng nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/2-cach-lam-cai-thia-xao-nam-dong-co-oc-giac-va-thit-cua-moi-06285?srsltid=AfmBOopuTTpjxuzkDuorf_2Idv6E_ZGgGWwvlGDNIoo1twkXFdPESvjU",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH (Vào bếp) — 3 cách làm cải thìa xào nấm đông cô — Công thức 1 cho 2 người: cải thìa 200g, nấm đông cô 100g, tỏi 4 tép, dầu ăn 1 muỗng canh; công thức 3 cùng trang pha sốt có nước tương cho cải thìa xào nấm"
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/829980",
+      "accessed": "2026-10-31",
+      "note": "Cookpad VN — Nấm đông cô xào cải thìa (Choi EunSu) — 3 phần ăn: cải thìa 1kg, nấm đông cô tươi 250g, tỏi băm 1 thìa; chần cải và nấm qua nước sôi có muối trước khi xào"
+    },
+    {
+      "url": "https://lib.vn/upload/library/805525/preview/cai-thia-xao-nam-dong-co-tuoi-805525.pdf",
+      "accessed": "2026-10-31",
+      "note": "Thư viện số (thuvienso) — Cải thìa xào nấm đông cô tươi — Không ghi số người ăn: cải thìa 200g, nấm đông cô tươi 200g, cà rốt 100g, dầu ăn 1 thìa súp; luộc sơ cải và nấm rồi mới xào"
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/cai-thia-xao-nam.webp",
@@ -89,7 +108,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-008 đợt 8: Nâng Mức 2 với 3 họ nguồn độc lập đã mở đọc (Điện Máy XANH, Cookpad VN, thư viện số). Định lượng GIỮ NGUYÊN cả 5 dòng vì đều nằm trong dải nguồn hoặc dưới ngưỡng sửa 25–30%: cải thìa 120g/phần — ĐMX cho 100g/phần (200g/2 người) và 150g/phần ở công thức thịt cua cùng trang, file nằm giữa; nấm 40g/phần — ĐMX cho 50g/phần, file thấp hơn 20%, chưa vượt ngưỡng sửa và tỉ lệ nấm:cải giữa các nguồn phân kỳ rất rộng (1:1 ở thư viện số, 1:2 ở ĐMX, 1:4 ở Cookpad) nên không có đồng thuận để đổi; tỏi 4g — nguồn cho khoảng 3–6g/phần; dầu ăn 8g — ĐMX dùng 1 muỗng canh cho 2 người (khoảng 7g/phần), khớp file; nước tương 5g — được công thức 'cải thìa xào nấm đông cô thịt cua' cùng trang ĐMX ủng hộ (nước tương pha trong sốt xào, khoảng 7g/phần) nên giữ, không thuộc diện bỏ (chỉ bỏ khi 0/3 nguồn ủng hộ). Không thêm dầu hào/hành lá dù xuất hiện ở một số nguồn vì không đạt đồng thuận 2/3 họ nguồn có định lượng và file chọn hướng nêm nước tương. serving_grams 140 giữ nguyên, khớp tổng 120+40 trừ hao hụt nước khi xào.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -25,7 +25,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -41,7 +41,7 @@
   "ingredients": [
     {
       "ingredient_slug": "dua-thom",
-      "quantity": 80,
+      "quantity": 50,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -49,7 +49,7 @@
     },
     {
       "ingredient_slug": "ca-nuc",
-      "quantity": 90,
+      "quantity": 120,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -78,14 +78,41 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "ca-chua",
+      "quantity": 50,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Thơm gọt vỏ bỏ mắt, cắt miếng; cá nục làm sạch cắt khúc.",
-    "Đun sôi nước, cho thơm vào nấu 3 phút, nêm đường và nước mắm.",
-    "Thả cá nấu chín, rắc hành lá, dùng nóng."
+    "Cá nục bỏ mang, ruột, cạo vảy, chà muối rồi rửa sạch, cắt khúc 2-3cm; ướp cá với chút muối và nước mắm khoảng 15 phút cho thịt cá đậm và bớt tanh.",
+    "Thơm gọt vỏ, bỏ mắt, cắt lát vừa ăn; cà chua bổ múi cau; hành lá cắt nhỏ, để riêng đầu hành trắng.",
+    "Đun nóng ít dầu, cho cá vào áp chảo/xào sơ trên lửa vừa đến khi hai mặt săn lại và dậy mùi thơm thì gắp ra — cá sẽ không nát khi nấu canh.",
+    "Dùng lại nồi, phi đầu hành trắng cho thơm, cho cà chua và thơm vào xào 2-3 phút đến khi cà chua mềm, ra màu đỏ đẹp và thơm dậy mùi.",
+    "Đổ nước vào đun sôi, nêm đường và nước mắm cho vị chua-ngọt-mặn cân bằng; khi nước sôi bùng, nhẹ nhàng thả cá vào, hạ lửa vừa nấu 5-7 phút — cá chín khi thịt trắng, chắc, không để lâu cá sẽ khô và nát.",
+    "Nếm lại lần cuối, tắt bếp, rắc hành lá lên mặt và múc ra tô dùng nóng với cơm; chấm cá với nước mắm ớt nếu thích đậm vị."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://cholaithieu.com/cach-nau-canh-chua-ca-nuc-ngon-chuan-vi/",
+      "accessed": "2026-10-31",
+      "note": "Chợ Lái Thiêu — Cách nấu canh chua cá nục ngon chuẩn vị — Khẩu phần 3-4 người: cá nục 500g, thơm 1/4 quả, cà chua 2 quả, me vắt 50g, đậu bắp 100g, giá đỗ 100g, đường 2 muỗng canh, dầu ăn 2 muỗng canh để chiên sơ cá; bài xác định món là đặc trưng miền Trung"
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/8068748",
+      "accessed": "2026-10-31",
+      "note": "Cookpad VN — Canh chua cá nục của Rose Truong — Tác giả Nha Trang, không ghi số người: cá nục 1/2kg, thơm 1/4 trái, cà chua 1 trái, me tươi 3 trái, giá đỗ 200g, bạc hà 1 cây, nước mắm 1 muỗng, đường 1/2 muỗng, thêm tỏi phi"
+    },
+    {
+      "url": "https://saigonesebaguette.vn/cach-nau-canh-ca-nuc-la-giang-chua-diu-dam-da-chuan-vi/",
+      "accessed": "2026-10-31",
+      "note": "Saigonese Baguette — Canh cá nục lá giang — Biến thể lá giang: xác nhận cấu trúc chung cá nục + thơm + cà chua (xào sơ cá với tỏi và dầu, xào cà chua-thơm 2-3 phút cho ra màu, nấu cá 5-7 phút, hoàn thiện hành lá/ngò gai); định lượng gia vị cho nồi 1-1,5 lít: nước mắm 1 muỗng canh, đường 1 muỗng cà phê"
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/canh-thom-ca-nuc.webp",
@@ -96,7 +123,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Cá nục là nguyên liệu tầng 6 (FNRI) — món mang cờ chưa kiểm định theo quy ước dự án.",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Cá nục là nguyên liệu tầng 6 (FNRI) — món mang cờ chưa kiểm định theo quy ước dự án. [LV2-008 đợt 8: Nâng Mức 2 với 3 nguồn độc lập đã mở đọc (Chợ Lái Thiêu 3-4 người; Cookpad Rose Truong, tác giả Nha Trang; Saigonese Baguette, biến thể lá giang dùng để đối chiếu cấu trúc thơm + cà chua). Trang memart về canh chua cá nục đã loại, không tính nguồn vì là trang tổng hợp SEO vô danh. Sửa 2 dòng: dua-thom 80→50g và ca-nuc 90→120g (cả hai nguồn định lượng đều dùng 1/4 quả thơm và 500g cá cho mẻ 3-4 người). Thêm 1 dòng: ca-chua 50g (3/3 nguồn có, file thiếu hẳn). Giữ nguyên: hanh-la 5g (3/3 nguồn), nuoc-mam 5g và duong-trang 3g (định lượng gia vị giữa các nguồn trải rộng: đường từ 1 muỗng cà phê/nồi tới ~7g/khẩu phần — file nằm trong dải). region vn-central được hậu thuẫn (Chợ Lái Thiêu xác định món đặc trưng miền Trung, tác giả Cookpad ở Nha Trang). Bước nấu viết lại 6 bước theo kỹ thuật số đông: áp/xào sơ cá, xào thơm-cà chua lấy màu, nấu cá 5-7 phút.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

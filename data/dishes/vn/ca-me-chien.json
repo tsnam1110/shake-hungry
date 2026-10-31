@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "chien",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -74,11 +74,30 @@
     }
   ],
   "recipe_steps": [
-    "Cá mè làm sạch, khứa vài đường trên thân, ướp muối, gừng và tỏi băm.",
-    "Lăn cá qua lớp bột năng mỏng cho da giòn.",
-    "Chiên dầu nóng đến khi cá vàng giòn; chấm nước mắm gừng."
+    "Đánh vảy cá mè, bỏ mang và ruột, cạo sạch lớp màng đen trong bụng rồi rửa lại nhiều lần cho hết máu tanh; cắt cá thành khúc dày khoảng 2cm và khứa 2–3 đường nông trên mặt khúc để cá mau chín và thấm vị.",
+    "Chà muối và một ít gừng giã lên khắp khúc cá, để 10 phút để khử tanh, sau đó rửa lại và thấm thật khô bằng khăn giấy — cá thật khô là điều kiện để da giòn và không bắn dầu khi chiên.",
+    "Ướp cá với muối và tỏi băm khoảng 15 phút cho thấm; ngay trước khi chiên mới lăn cá qua một lớp bột năng thật mỏng và giũ bớt bột thừa để da có lớp áo giòn nhẹ.",
+    "Đun dầu trong chảo sâu đến khi nóng già (đầu đũa cho vào sủi tăm mạnh), nhẹ nhàng thả cá vào, giữ lửa lớn và không trở cá trong 3–4 phút đầu để mặt dưới kịp vàng và không bị nát.",
+    "Lật cá một lần duy nhất, chiên tiếp khoảng 4 phút nữa đến khi cả hai mặt vàng ruộm, da căng giòn và thịt cá trắng đục, không còn trong ở giữa khúc.",
+    "Vớt cá ra giá cho ráo dầu 1–2 phút rồi bày ra đĩa; ăn nóng với nước mắm tỏi ớt và rau sống để lớp da giữ được độ giòn."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://cachnaungon.com/2-cach-lam-ca-me-chien-gion-va-chien-sa-ot-ngon-dam-da-05774/",
+      "accessed": "2026-10-31",
+      "note": "Cách Nấu Ngon — 2 cách làm cá mè chiên giòn và chiên sả ớt — Cho 5 người; biến thể chiên giòn đúng món: cá mè 6kg chiên trần không áo bột, ướp muối + nước cốt chanh 10 phút, chiên lửa lớn 8 phút/mặt, rưới nước mắm tỏi ớt sau chiên. Biến thể sả ớt trong cùng bài là món khác, không dùng đối chiếu."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/6225865",
+      "accessed": "2026-10-31",
+      "note": "Cookpad VN — Ú Còiii, Cá chiên giòn — Không ghi số người ăn và không định lượng; cá lát áo bột mì + bột chiên giòn thật mỏng, giũ bớt bột, ướp tiêu/gia vị ít nhất 15 phút — bằng chứng cho lớp áo bột mỏng của file."
+    },
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/2-cach-lam-ca-doi-chien-gion-va-chien-xu-thom-ngon-de-lam-07717?srsltid=AfmBOopexHiDcybp4_e-IznFJWlUT_JsPfrswR7Y0JASiPiLxevYZljp",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH — Cá đối chiên giòn chấm mắm me — Cho 4 người; mẫu cá chiên giòn trần cùng họ kỹ thuật: không áo bột, tỏi đập dập phi trong dầu trước khi chiên 5–7 phút, nước chấm pha riêng."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/ca-me-chien.webp",
@@ -89,7 +108,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 10 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).]",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 10 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).] [LV2-008 đợt 8: nâng Mức 2 — 3 nguồn đã mở thuộc 3 họ (Cách Nấu Ngon đúng loài cá mè; Cookpad cá chiên giòn; Điện Máy XANH cá đối chiên giòn làm mẫu kỹ thuật cùng họ). GIỮ toàn bộ định lượng: cá mè 150g (nguồn đúng loài dùng cá nguyên con 6kg/5 người — khẩu phần nguyên con không quy đổi trực tiếp sang khúc cá của file nên không đủ cơ sở sửa); bột năng 10g giữ dạng áo mỏng — nguồn đúng loài và mẫu Điện Máy XANH chiên trần không bột, nhưng Cookpad chứng minh áo bột mỏng/giũ bớt bột là biến thể gia đình hợp lệ và quy tắc bỏ dòng cần 0/3 nguồn ủng hộ nên không bỏ, ghi nhận đây là lựa chọn biên tập của file; gừng 5g giữ ở vai trò khử tanh (nguồn đúng loài chỉ dẫn ngâm cá bằng nước gừng); tỏi 5g giữ (nguồn đúng loài: tỏi trong nước mắm rưới sau chiên; mẫu Điện Máy XANH: tỏi phi dầu trước chiên — tỏi hiện diện quanh món ở 2/3 nguồn); muối 1g khớp cả 3 nguồn. Phương án A: file đã không có dòng dau-an, chủ thể chiên ca-me đã có oil_absorption_pct 9% nên dầu hấp thụ do engine mô hình hoá, không kê thêm dầu. Method chien và region vn-north giữ nguyên.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

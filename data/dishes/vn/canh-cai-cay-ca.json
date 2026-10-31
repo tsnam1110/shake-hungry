@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -42,7 +42,7 @@
     },
     {
       "ingredient_slug": "cai-cay",
-      "quantity": 70,
+      "quantity": 120,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -63,14 +63,54 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "gung",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dau-an",
+      "quantity": 4,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Cá rô làm sạch, luộc sơ trong nồi nước, gỡ lấy thịt, giữ nước luộc lắng trong.",
-    "Đun lại nước luộc, cho cải cay cắt khúc vào nấu mềm.",
-    "Cho thịt cá vào, nêm nước mắm, dùng nóng."
+    "Cá rô đồng đánh vảy, bỏ mang và ruột, chà muối cho sạch nhớt rồi rửa lại; cải cay nhặt bỏ lá già, rửa sạch, cắt khúc 2-3cm; gừng cạo vỏ thái lát và băm nhỏ một phần, hành tím băm nhỏ.",
+    "Đun sôi nước với vài lát gừng và chút muối, cho cá vào luộc khoảng 5 phút đến khi thịt cá vừa chín trắng; vớt cá ra để nguội, giữ lại nước luộc và lắng lọc cho trong.",
+    "Gỡ lấy thịt cá, bỏ xương cẩn thận; ướp thịt cá với nước mắm khoảng 10 phút. Phần đầu và xương cá giã nhuyễn, hoà với nước luộc nóng rồi lọc qua rây lấy nước dùng ngọt, bỏ bã.",
+    "Đun nóng dầu ăn, phi hành tím thơm rồi cho thịt cá vào đảo nhẹ tay 2-3 phút đến khi thịt săn và thấm gia vị, tránh đảo mạnh làm nát cá.",
+    "Đổ nước dùng xương cá vào nồi thịt cá, đun sôi và hớt bọt; cho cải cay vào, nhấn rau chìm trong nước sôi, nấu 3-5 phút đến khi cọng cải vừa mềm mà lá còn xanh.",
+    "Nêm lại nước mắm cho vừa, rắc gừng băm lên mặt, tắt bếp ngay để gừng giữ mùi thơm ấm; múc ra tô và dùng nóng — canh để nguội sẽ tanh."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/2-cach-nau-canh-ca-ro-rau-cai-va-rau-ngot-don-gian-thanh-mat-04625?itm_source=vaobep&itm_medium=banner&itm_content=bai-tin",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH (Vào bếp, biên tập Phạm Minh Phú) — Canh cải cá rô — Cho 4 người: cá rô ta 200g, cải bẹ xanh 500g, nước mắm 2 muỗng canh, dầu ăn 1 muỗng canh, gừng 1 nhánh, bột canh 1 muỗng cà phê; cá nướng/luộc gỡ thịt, xương xay lọc lấy nước dùng"
+    },
+    {
+      "url": "https://www.lorca.vn/2024/10/15/cach-nau-canh-ca-ro-dong-rau-cai-xanh-kieu-bac/",
+      "accessed": "2026-10-31",
+      "note": "Lorca — Canh cá rô đồng rau cải xanh kiểu Bắc — Không ghi số người: cá rô đồng 500g, cải xanh 1 bó, gừng 1 củ nhỏ, hành khô 2 củ, lá gừng 3-4 lá, dầu ăn xào thịt cá; luộc cá gỡ thịt, giã xương lọc nước cốt"
+    },
+    {
+      "url": "https://tailieu.duytan.edu.vn/tailieu/2012/20121220/tunhien11/canh_cai_xanh_ca_ro_537.pdf?rand=344366",
+      "accessed": "2026-10-31",
+      "note": "Tài liệu ĐH Duy Tân — Canh cải xanh cá rô — Cải bẹ xanh 500g, cá rô 2 con 300g, gừng non 50g, nước 800ml; luộc cá với gừng, gỡ thịt, nấu cải trong nước luộc cá (khác họ với tài liệu khế bị sao chép ở món canh-ca-ro-khe)"
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/7676452-canh-ca-ro-c%E1%BA%A3i-xanh",
+      "accessed": "2026-10-31",
+      "note": "Cookpad VN — Canh cá rô cải xanh của Bòn Bon — Không định lượng: luộc cá với lát gừng 5 phút, gỡ thịt ướp nước mắm, phi hành tím xào sơ, đầu và xương giã lọc lấy nước canh, cho cải cắt nhỏ nấu sôi lại là đạt"
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/canh-cai-cay-ca.webp",
@@ -81,7 +121,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nguyên liệu cải cay mới biên soạn đợt này từ USDA SR Legacy (mustard greens).",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nguyên liệu cải cay mới biên soạn đợt này từ USDA SR Legacy (mustard greens). [LV2-008 đợt 8: Nâng Mức 2 với 4 nguồn đã mở đọc (Điện Máy XANH 4 người, biên tập rõ; Lorca kiểu Bắc; tài liệu ĐH Duy Tân — khác họ với tài liệu khế bị sao chép ở món canh-ca-ro-khe; Cookpad Bòn Bon). Sửa 1 dòng: cai-cay 70→120g (hai nguồn định lượng đều dùng 500g cải/mẻ ≈ 125g/khẩu phần). Thêm 2 dòng: gung 5g (4/4 nguồn có, là thành phần khử tanh định danh) và dau-an 4g (3/4 nguồn, theo Điện Máy XANH 1 muỗng canh/4 người). Giữ nguyên: ca-ro-dong 80g (Điện Máy XANH 50g/khẩu phần, ĐH Duy Tân ~75g/khẩu phần nếu tính 4 người, Lorca 500g/mẻ không ghi số người — file nằm trong dải); hanh-tim 3g (Lorca 2 củ hành khô/mẻ, Cookpad phi hành tím); nuoc-mam 5g (Điện Máy XANH 7,5g/khẩu phần gồm cả phần ướp cá — chỉ 1 nguồn định lượng nên không sửa). Kỹ thuật chung 4/4 nguồn: luộc cá với gừng, gỡ thịt, giã xương lọc nước dùng, xào thịt cá rồi mới nấu cải. Bước nấu viết lại 6 bước.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

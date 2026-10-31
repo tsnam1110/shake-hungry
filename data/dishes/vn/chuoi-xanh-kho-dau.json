@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "kho",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -87,14 +87,50 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nam-rom",
+      "quantity": 25,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "ca-chua",
+      "quantity": 20,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Chuối xanh tước vỏ, cắt khúc ngâm nước chanh loãng cho không thâm; đậu phụ cắt miếng.",
-    "Phi thơm hành tím, xào chuối với bột nghệ cho đều màu, thêm nước tương, đường và 120 ml nước, kho lửa nhỏ 10 phút.",
-    "Cho đậu phụ vào kho thêm 5 phút cho thấm, dùng nóng với cơm."
+    "Chuối xanh tước vỏ, cắt khúc dày khoảng 2 cm rồi ngâm ngay vào nước muối loãng pha vài giọt chanh 10–15 phút để ra bớt mủ, không thâm; rửa lại nhiều lần cho sạch nhựa.",
+    "Luộc sơ chuối trong nước sôi có chút muối và bột nghệ khoảng 5 phút đến khi mặt chuối se lại, vớt ra để ráo — bước này giảm vị chát và giúp chuối lên màu vàng đều khi kho.",
+    "Đậu phụ cắt miếng vuông vừa ăn; nếu dùng đậu trắng mềm, chiên sơ 2–3 phút cho mặt ngoài săn lại để khi kho không vỡ, rồi để ráo dầu.",
+    "Phi thơm hành tím với dầu ăn trên lửa vừa, cho bột nghệ vào đảo nhanh vài giây cho dậy màu, tránh để nghệ cháy sẽ đắng.",
+    "Cho chuối đã luộc vào đảo nhẹ tay 1–2 phút cho áo nghệ, thêm nước tương, đường và khoảng 120 ml nước nóng, hạ lửa nhỏ và đậy nắp kho liu riu 10 phút đến khi chuối mềm bở nhưng còn nguyên miếng.",
+    "Cho đậu phụ vào kho thêm 5 phút, trở nhẹ một lần cho đậu thấm nước kho; nêm lại cho vừa, khi nước kho sánh nhẹ và bám quanh miếng chuối là đạt.",
+    "Tắt bếp, để món kho nghỉ 2–3 phút cho ngấm vị rồi múc ra đĩa, dùng nóng với cơm trắng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.bluestone.com.vn/blogs/vao-bep/chuoi-xanh-kho-chay",
+      "accessed": "2026-10-31",
+      "note": "Bluestone — Chuối xanh kho chay — Không ghi số người ăn (mẻ nấu): chuối xanh ~400g, đậu hũ 200g (tỉ lệ chuối:đậu 2:1), nấm rơm 100g, cà chua 1 quả, bột nghệ 1 thìa cà phê, nước tương 2 thìa canh, đường 1 thìa cà phê, dầu ăn 2 thìa canh, nước 200ml; kho nhỏ lửa 15–20 phút."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/25217165",
+      "accessed": "2026-10-31",
+      "note": "Cookpad VN — Chuối đậu om khế (Bảo Bình) — 4 người: chuối xanh 200g, đậu hũ chiên 100g, nấm rơm 100g, nghệ tươi 1 củ nhỏ, nước mắm chay 1 thìa canh. Biến thể om khế chua, dọn kiểu canh/lẩu kèm bắp chuối bào và tía tô/lá lốt nên định lượng chính/người thấp hơn hẳn món kho đĩa."
+    },
+    {
+      "url": "https://eva.vn/bep-eva/loai-qua-giau-kali-bac-nhat-qua-chin-mem-thom-phuc-qua-xanh-dem-kho-kieu-nay-an-chay-hay-man-deu-ngon-c162a687078.html",
+      "accessed": "2026-10-31",
+      "note": "Eva — Chuối xanh kho (theo Dân Việt, công thức Bếp Dì Hường) — Không ghi số người ăn; nước kho tính cho 500g chuối xanh: nước mắm 30g, mật mía 20g, hành 10g, tỏi 10g, mỡ heo 20g, nước 150ml; chần chuối với nước nghệ, kho 30–40 phút. Có ghi rõ bản chay: thay nước mắm bằng nước mắm chay/nước tương, mỡ heo bằng dầu ăn. Biến thể này không có đậu phụ."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/chuoi-xanh-kho-dau.webp",
@@ -105,7 +141,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món chay thuần: toàn bộ nguyên liệu có origin thực vật/nấm, gia vị chỉ dùng nước tương/muối/chao đậu — không nước mắm, không hạt nêm/bột canh (nhóm COMPOSITE_ANIMAL tính là mặn), không trứng/sữa; nhãn diet suy từ thành phần phải ra chay và đã kiểm chứng trực tiếp trong DB sau seed (cổng G3/G6 của đợt).",
+  "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món chay thuần: toàn bộ nguyên liệu có origin thực vật/nấm, gia vị chỉ dùng nước tương/muối/chao đậu — không nước mắm, không hạt nêm/bột canh (nhóm COMPOSITE_ANIMAL tính là mặn), không trứng/sữa; nhãn diet suy từ thành phần phải ra chay và đã kiểm chứng trực tiếp trong DB sau seed (cổng G3/G6 của đợt). [LV2-008 đợt 8: 3 nguồn đã mở đọc — Bluestone (chuối kho chay, mẻ 400g chuối + 200g đậu), Cookpad Bảo Bình (chuối đậu om khế, 4 người), Eva/Dân Việt (nước kho cho 500g chuối, có bản chay). GIỮ toàn bộ định lượng hiện tại vì đều khớp ít nhất 2 nguồn theo tỉ lệ: chuối 120g và đậu 60g giữ tỉ lệ 2:1 đúng cả Bluestone (400:200) lẫn Cookpad (200:100/4 người); nước tương 8g khớp Bluestone 2 thìa canh/mẻ (≈7,5g/người) và Eva quy đổi 30g nước mắm→nước tương cho 500g chuối ≈ 7,2g cho 120g chuối; đường 3g nằm giữa Bluestone (~1g/người) và Eva (~4,8g/120g chuối); dầu ăn 5g khớp Eva 20g mỡ/dầu cho 500g chuối (≈4,8g/120g) và thấp hơn Bluestone (2 thìa canh/mẻ) theo hướng ít dầu; bột nghệ 1g và hành tím 5g được cả 3 nguồn hậu thuẫn về hiện diện (Bluestone 1 thìa cà phê bột nghệ/mẻ, Cookpad nghệ tươi, Eva chần nước nghệ + hành 10g/500g chuối). THÊM 2 dòng optional theo ngưỡng ≥2/3 nguồn: nấm rơm 25g (Bluestone + Cookpad khớp 25g/người) và cà chua 20g (Bluestone + Cookpad). Tổng khối lượng các dòng chính 202g ≈ serving 200g nên giữ nguyên serving. Giữ method kho và region vn-north (chuối đậu là món gốc Bắc; không nguồn nào đủ mạnh để đổi).]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

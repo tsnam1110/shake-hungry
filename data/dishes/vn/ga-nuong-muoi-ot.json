@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nuong",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -95,14 +95,41 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-tim",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Giã muối, ớt, sả, tỏi thành hỗn hợp ướp; xát đều lên gà, ướp cho thấm.",
-    "Nướng gà trên than hoa (hoặc lò nướng), phết dầu và mật ong cho da vàng giòn.",
-    "Chặt miếng vừa ăn, chấm muối ớt chanh."
+    "Chà xát gà với muối và chanh khoảng 10 phút để khử mùi, rửa lại nhiều lần, để thật ráo rồi khía vài đường nông ở phần thịt dày để gia vị dễ thấm.",
+    "Giã muối cùng ớt cho nhuyễn; băm nhỏ sả, tỏi và hành tím rồi trộn tất cả thành hỗn hợp ướp, thêm chút dầu ăn và mật ong để hỗn hợp dễ bám đều lên da gà.",
+    "Xoa hỗn hợp ướp khắp trong và ngoài con gà, xoa kỹ phần đã khía; bọc lại và ướp ít nhất 1 giờ trong ngăn mát, tốt nhất 2 giờ cho thấm sâu.",
+    "Kẹp gà vào vỉ hoặc đặt lên khay, nướng trên than hồng lửa vừa (hoặc lò khoảng 170–180°C); cứ 10–15 phút trở mặt một lần để gà chín đều mà da không cháy.",
+    "Khi gà gần chín, phết thêm lớp ướp còn lại hoặc chút mật ong pha dầu lên da, nướng tiếp đến khi da vàng ươm, xiên vào đùi thấy nước chảy ra trong, không còn hồng.",
+    "Để gà nghỉ vài phút rồi chặt miếng vừa ăn; dọn kèm phần muối ớt giã còn lại vắt thêm chanh để chấm."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/2-cach-lam-ga-nuong-muoi-ot-bang-lo-nuong-va-noi-chien-khong-05325",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH — 2 cách làm gà nướng muối ớt (biên tập Nguyễn Ngọc Phương Trinh) — 2 biến thể trong 1 bài: lò nướng cho 4 người — gà 1 con 1,5kg, chanh 1 trái, hành tím 3 củ, tỏi 3 tép, ớt 10 trái, muối 2 muỗng canh (một phần làm muối chấm); nồi chiên cho 5 người — tỏi 6 tép, sả 3 cây, mật ong 3 muỗng cà phê, dầu ăn 5 muỗng canh, muối 2 muỗng cà phê"
+    },
+    {
+      "url": "https://eva.vn/bep-eva/ga-nuong-muoi-ot-ngon-da-gion-voi-cach-lam-don-gian-tai-nha-c162a428816.html",
+      "accessed": "2026-10-31",
+      "note": "Eva (Bếp Eva) — Gà nướng muối ớt ngon, da giòn — Không ghi số người ăn; gà nguyên con 1,5–2kg, chanh 1 quả, ớt hiểm 4 quả, hành tím 2 củ (giã với nghệ lấy nước quét), ướp muối 1 muỗng cà phê + dầu ăn 2 muỗng canh + nước mắm/đường/hạt nêm/tiêu, ướp 30 phút, nướng than khoảng 2 giờ"
+    },
+    {
+      "url": "http://giavihanhphuc.com/thit-ga/ga-nuong-muoi-ot-thu-thu",
+      "accessed": "2026-10-31",
+      "note": "Gia Vị Hạnh Phúc — Gà nướng muối ớt, Chef Thư Thư (công thức kinh doanh) — Không ghi số người ăn; gà thả vườn 1,5kg, ướp muối 10g, ớt hiểm bằm 30–50g, tỏi bằm 100g, hành tím bằm 100g, sả bằm 50g, ớt bột 5g; ướp ít nhất 2 giờ; muối chấm riêng 50g muối hạt (không tính vào ướp)"
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/ga-nuong-muoi-ot.webp",
@@ -113,7 +140,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-008 đợt 8: nâng Mức 2 — 3 nguồn đã mở đọc (Điện Máy XANH 2 biến thể, Eva, Chef Thư Thư/Gia Vị Hạnh Phúc). Gà: cả 3 nguồn dùng nguyên con 1,5–2kg cho 4–5 người; theo tiền lệ ga-luoc, quy về phần thịt ăn được sau bỏ xương tương đương ~165–220g/khẩu phần nên giữ 200g. Giữ nguyên mọi định lượng hiện tại vì không dòng nào đạt đồng thuận ≥2 nguồn lệch >25–30% theo một chiều: sả file 10g so với DMX biến thể 2 (~4–6g/khẩu phần) và Thư Thư 50g/1,5kg (~6,7g) — cao hơn nhưng Eva không dùng sả, chưa đủ đồng thuận đổi; ớt file 8g nằm trên dải nguồn rất rộng (Eva 4 quả/con tới Thư Thư 30–50g/con, quy đổi ~1–6,7g/khẩu phần, riêng Thư Thư chỉ lệch ~19%); tỏi file 5g nằm giữa DMX (~1,2–2,4g) và Thư Thư (~13g); muối file 3g bao gồm cả phần muối chấm như bước cuối của file, các nguồn tách muối ướp (0,6–1,3g/khẩu phần) và muối chấm riêng nên không so trực tiếp được; dầu file 3g khớp Eva 2 muỗng canh/1,75kg (~3,2g); mật ong giữ optional (chỉ DMX biến thể 2 dùng, 3 muỗng cà phê/con); chanh giữ (DMX + Eva đều 1 quả/con, dùng khử mùi và làm muối chấm). THÊM hành tím 5g: nguyên liệu duy nhất có mặt 3/3 nguồn mà file thiếu hẳn. Tổng nguyên liệu sau thêm ~244g, khớp serving_grams 250 nên giữ. Giữ method nuong và region vn (không nguồn nào gắn xuất xứ vùng cụ thể). Steps viết lại 6 bước.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

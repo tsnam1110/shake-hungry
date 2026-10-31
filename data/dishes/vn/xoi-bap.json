@@ -25,7 +25,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "hap",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -97,11 +97,30 @@
     }
   ],
   "recipe_steps": [
-    "Ngâm gạo nếp, đãi đậu xanh; tách hạt bắp.",
-    "Đồ gạo nếp cùng đậu xanh và hạt bắp với nước cốt dừa, nêm muối, đường.",
-    "Xới ra đĩa, rắc hành phi."
+    "Ngâm gạo nếp trong nước 6–8 tiếng hoặc qua đêm cho hạt nở, vo lại rồi để thật ráo; đậu xanh ngâm riêng 2–4 tiếng, bắp ngọt tách hạt và rửa sạch.",
+    "Hấp đậu xanh khoảng 15–20 phút đến khi chín mềm, tán tơi với chút muối và đường rồi nắm chặt thành khối để khi dọn thái lát hoặc rắc lên mặt xôi.",
+    "Trộn nếp đã ráo với hạt bắp và chút muối, cho vào xửng đồ lần thứ nhất trên lửa vừa khoảng 20–25 phút, đến khi hạt nếp trong và hạt bắp chín mềm.",
+    "Lấy xôi ra thau, rưới nước cốt dừa và rắc đường, xới nhẹ tay cho thấm đều rồi cho trở lại xửng đồ lần thứ hai thêm 10–15 phút — xôi chín dẻo, hạt bóng và dậy mùi dừa là đạt.",
+    "Phi hành tím thái mỏng trong dầu nóng, đảo đều tay đến khi hành vàng ruộm thì vớt ra để ráo dầu cho giòn, giữ lại phần dầu thơm.",
+    "Xới xôi ra đĩa, phủ đậu xanh lên mặt, rưới chút dầu hành và rắc hành phi giòn; dọn nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/2-cach-nau-xoi-bap-bang-noi-com-dien-thom-ngon-de-lam-03714",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH — Xôi bắp bằng nồi cơm điện (công thức 1 trong bài) — Cho 2 người: gạo nếp 300g, bắp Mỹ 1 trái (100g hạt), muối một ít, dầu ăn 1 muỗng cà phê; nước cốt dừa chỉ là gợi ý ăn kèm. Công thức 2 trong cùng bài là xôi bắp nhão (bắp chiếm đa số, topping muối mè) — biến thể khác, không dùng đối chiếu chính."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/7555762",
+      "accessed": "2026-10-31",
+      "note": "Cookpad VN — Xôi Bắp Nhà Làm của binh yen — Không ghi số người ăn: bắp khô hoặc bắp tươi tách hạt 200g, nếp 100g, đậu xanh 100g, đậu phộng rang 100g, mè rang 50g, hành tím 1 củ — biến thể bắp khô tỉ lệ bắp cao, đậu xanh nấu riêng trộn đường, rắc muối đậu mè; dùng đối chiếu cấu trúc (có đậu xanh, hành phi)."
+    },
+    {
+      "url": "https://saigonesebaguette.vn/cach-nau-xoi-bap-tuoi-deo-thom-chuan-vi-tai-nha/",
+      "accessed": "2026-10-31",
+      "note": "Saigonesebaguette — Cách nấu xôi bắp tươi dẻo thơm chuẩn vị tại nhà — Không ghi số người ăn: gạo nếp 500g, hạt bắp tươi 300–400g, nước cốt dừa 100ml, đậu xanh không vỏ 100g, hành tím 2–3 củ, đường 1–2 muỗng canh trộn sau lần đồ thứ nhất — dùng đối chiếu theo tỉ lệ trên gạo nếp; phương pháp đồ 2 lần."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/xoi-bap.webp",
@@ -112,7 +131,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. GỘP BIẾN THỂ 2026-10-31: món này là GỐC HỒ SƠ của cặp xôi bắp/xôi ngô (bản đã được chủ dự án duyệt 2026-10-31, giữ nguyên dấu vết duyệt); xoi-ngo trở thành biến thể miền Bắc (parent_dish_slug trỏ về món này) với định lượng tối giản riêng — xem import_note của biến thể.",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. GỘP BIẾN THỂ 2026-10-31: món này là GỐC HỒ SƠ của cặp xôi bắp/xôi ngô (bản đã được chủ dự án duyệt 2026-10-31, giữ nguyên dấu vết duyệt); xoi-ngo trở thành biến thể miền Bắc (parent_dish_slug trỏ về món này) với định lượng tối giản riêng — xem import_note của biến thể. [LV2-008 đợt 8: Nâng Mức 2 với 3 nguồn đã mở đọc (Điện Máy XANH công thức nồi cơm điện cho 2 người; Cookpad binh yen — bản bắp khô; Saigonesebaguette — bản bắp tươi đồ 2 lần). GIỮ TOÀN BỘ định lượng vì không dòng nào có ≥2 nguồn độc lập đồng thuận lệch quá ngưỡng: gao-nep 150g (ĐMX 300g/2 người = đúng 150g); ngo-ngot 80g (ĐMX 100g/2 = 50g; Saigonesebaguette tỉ lệ hạt bắp/nếp 0,6–0,8, quy theo 150g nếp = 90–120g; Cookpad bản bắp khô tỉ lệ 2:1 — nguồn tản mát 50–120g, file nằm giữa dải); dau-xanh-hat 40g (Saigonesebaguette tỉ lệ đậu/nếp 0,2 → ~30g cho 150g nếp; Cookpad dùng đậu làm lớp phủ riêng với tỉ lệ cao hơn — 40g nằm trong dải biến thiên); nuoc-cot-dua 30g (Saigonesebaguette tỉ lệ cốt dừa/nếp 100ml/500g = 0,2 → đúng 30g cho 150g nếp); duong-trang 8g (Saigonesebaguette 1–2 muỗng canh cho 500g nếp ≈ 5–9g mỗi 150g nếp); hanh-phi 8g (cả 3 nguồn đều có hành phi/mỡ hành); muoi 1g giữ nguyên. serving_grams 300g khớp tổng khối lượng nguyên liệu thô (317g); method 'hap' giữ nguyên (Saigonesebaguette đồ 2 lần bằng xửng; ĐMX nấu nồi cơm điện là biến thể dụng cụ); region vn-south giữ nguyên — bản xôi bắp cốt dừa + đậu xanh là bản miền Nam, biến thể Bắc xoi-ngo đã tách hồ sơ riêng.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

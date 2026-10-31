@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nuong",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -42,15 +42,7 @@
     },
     {
       "ingredient_slug": "chao",
-      "quantity": 25,
-      "unit_name": "g",
-      "is_optional": false,
-      "source": "llm_suggested",
-      "confidence": "low"
-    },
-    {
-      "ingredient_slug": "sa",
-      "quantity": 10,
+      "quantity": 15,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -66,7 +58,7 @@
     },
     {
       "ingredient_slug": "duong-trang",
-      "quantity": 8,
+      "quantity": 5,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -87,18 +79,50 @@
       "is_optional": true,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-tim",
+      "quantity": 8,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Tán nhuyễn chao với đường, sả tỏi băm, sa tế; ướp vịt chặt miếng cho thấm.",
-    "Nướng vịt trên than hoa, trở đều cho chín vàng, da hơi cháy cạnh.",
-    "Pha chao loãng làm nước chấm; ăn kèm rau thơm và bún hoặc cơm."
+    "Thịt vịt chà xát với muối và gừng đập dập khoảng 5 phút để khử mùi hôi, rửa lại thật sạch, để ráo rồi chặt miếng vừa ăn và khứa vài đường nông trên phần thịt dày.",
+    "Tán nhuyễn chao trong chén, cho đường, hành tím và tỏi băm, sa tế và dầu ăn vào trộn đều thành hỗn hợp ướp sánh mịn.",
+    "Cho vịt vào âu, đổ hỗn hợp chao lên và xoa đều khắp các miếng thịt, nhất là vào các đường khứa; ướp ít nhất 45 phút, tốt nhất 1-2 giờ trong ngăn mát cho thấm.",
+    "Làm nóng bếp than hoa (hoặc lò nướng ở khoảng 200°C), xếp vịt lên vỉ với mặt da hướng xuống trước để mỡ chảy bớt và da săn lại.",
+    "Nướng khoảng 20-30 phút với thịt chặt miếng, trở đều các mặt và phết lại nước ướp còn lại lên thịt giữa chừng để thịt không khô và lên màu đều.",
+    "Khi da vịt vàng sậm, hơi xém cạnh, thịt chọc đũa vào không còn ra nước hồng và dậy mùi chao thơm là đã chín; chặt miếng vừa ăn, dọn nóng kèm rau sống và chao pha loãng làm nước chấm."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/amp/cach-lam-vit-quay-chao-thom-lung-sieu-dinh-an-la-ghien-tai-19146",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH — Cách làm vịt quay chao (công thức ướp định lượng theo gram) — Đã mở đọc: hỗn hợp ướp cho 2 đùi vịt khoảng 800g — chao đỏ 60g, sa tế cay 20g, hành tím 40g, dầu ăn 40g, dầu hào 20g, đường vàng 20g, ướp 1-2 giờ; nướng lò 220°C trong 25-30 phút. Quy về khẩu phần 180g thịt vịt: chao ~13,5g, sa tế ~4,5g, hành tím ~9g, dầu ăn ~9g, đường ~4,5g. Sả chỉ có trong sốt chấm chao riêng (150g chao + 2 nhánh sả cho cả mẻ sốt), không có trong ướp."
+    },
+    {
+      "url": "https://nauankhongkho.vn/blog/cach-lam-vit-nuong-chao-mem-thom-khong-lo-com-thua-r6rz47DZJxgQ",
+      "accessed": "2026-10-31",
+      "note": "Nấu Ăn Không Khó (Túc Túc) — Cách làm vịt nướng chao — Đã mở đọc: thịt vịt 1,2kg (nguyên con chặt miếng), chao 5 miếng (khoảng 55g theo đơn vị 11g/miếng trong kho), đường 1 muỗng canh, hành tím 2 củ, tỏi 5 tép, sa tế 1/2 muỗng cà phê, nước cốt chanh 15ml; nướng lò 170°C 30 phút rồi 200°C thêm 10-15 phút cho da vàng giòn. Không dùng sả."
+    },
+    {
+      "url": "https://www.cet.edu.vn/cach-lam-vit-nuong-chao-la-mac-mat-va-sa-te",
+      "accessed": "2026-10-31",
+      "note": "CET.edu.vn (Chef Lập) — Cách làm vịt nướng chao, lá mắc mật và sa tế — Đã mở đọc phần vịt nướng chao: 1 con vịt, chao trắng 1 hũ nhỏ, hành tím 5 củ, gừng 1 củ, chanh 2 quả; ướp gồm chao tán nhuyễn + hành tỏi băm + đường 1 muỗng cà phê + dầu điều 1 muỗng cà phê + sa tế 1 muỗng cà phê, ướp 30-45 phút trong tủ mát; nướng than hoa, thịt chặt miếng nướng khoảng 20 phút (nguyên con 40 phút). Không dùng sả trong ướp."
+    },
+    {
+      "url": "https://congthucnauan.vn/cuoi-tuan-ranh-roi-lam-5-mon-ngon-nay-ca-nha-me-tit-khong-an-qua-phi/",
+      "accessed": "2026-10-31",
+      "note": "Công Thức Nấu Ăn (theo Eva) — Vịt nướng chao (trong bài 5 món ngon cuối tuần) — Đã mở đọc: vịt 1kg, chao 1 muỗng canh, đường 1 muỗng canh, dầu hào 1/2 muỗng canh, sa tế một ít, dầu màu điều 2 muỗng cà phê, hành và tỏi băm; ướp 2-3 tiếng, nướng lò hoặc than, phết lại nước ướp trong khi nướng, thịt chín khi vàng ruộm/vàng đỏ sậm và chọc đũa không ra nước hồng. Không dùng sả."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-008 đợt 8: Nâng Mức 2 với 4 nguồn đã mở đọc (Điện Máy XANH — công thức ướp định lượng gram cho 800g đùi vịt, Nấu Ăn Không Khó — 1,2kg vịt, CET.edu.vn, Công Thức Nấu Ăn/Eva — 1kg vịt). SỬA 2 dòng theo đồng thuận ≥2 nguồn và lệch >25-30%: chao 25→15g (ĐMX quy đổi 13,5g/180g thịt; NAKK ~15-17g sau khi trừ phần xương của vịt nguyên con) và duong-trang 8→5g (ĐMX 4,5g, NAKK và Công Thức Nấu Ăn cùng ~5g/khẩu phần thịt). THÊM hanh-tim 8g (4/4 nguồn có trong ướp, ĐMX định lượng 9g/180g). BỎ sa 10g (0/4 nguồn dùng sả trong ướp). GIỮ: thit-vit-co-da 180g làm gốc quy đổi; toi 8g (3/4 nguồn có tỏi băm trong ướp, lượng nhỏ không có đồng thuận gram để sửa); sa-te 5g tuỳ chọn (ĐMX quy đổi 4,5g/180g — khớp); dau-an 5g (ĐMX quy đổi 9g nhưng CET/Công Thức Nấu Ăn chỉ dùng dầu điều ~1-2 muỗng cà phê cho cả con vịt, tín hiệu trái chiều nên giữ). Method nuong giữ nguyên (4/4 nguồn nướng than hoặc lò); region vn-south giữ nguyên (các nguồn đều gắn món với miền Tây sông nước). serving_grams 260g giữ nguyên dù tổng nguyên liệu thô sau sửa là ~226g, vì khẩu phần vịt nướng phục vụ theo miếng có xương/da và hao hụt nướng chưa có cơ sở cân riêng — ghi anomaly.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

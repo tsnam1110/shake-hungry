@@ -105,7 +105,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt DISH-004 đợt 2 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt DISH-004 đợt 2 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-008 đợt 8: HOLD do 429. Đã mở đọc 2 nguồn nhưng một nguồn thuộc họ sao chép Điện Máy XANH và nguồn Cookpad còn lại không có định lượng gram; khi mở nguồn Cookpad thứ ba để đủ ≥3 nguồn độc lập thì gặp HTTP 429 → dừng theo brief. Chưa đủ cơ sở đối chiếu định lượng ≥2 nguồn độc lập cho mọi dòng. Điểm cần phân xử ở lần chạy lại: file dùng thơm (dua-thom 30g) + thì là, trong khi họ ĐMX/Món Ngon Mỗi Ngày dùng cần tàu và không thơm — hai biến thể nấu ngót khác nhau, cần nguồn thứ ba có định lượng để chốt biến thể chuẩn.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -34,7 +34,7 @@
   "ingredients": [
     {
       "ingredient_slug": "bun-tuoi",
-      "quantity": 150,
+      "quantity": 200,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -50,7 +50,7 @@
     },
     {
       "ingredient_slug": "dau-phu-chien",
-      "quantity": 35,
+      "quantity": 50,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -58,7 +58,7 @@
     },
     {
       "ingredient_slug": "sua-dau-nanh",
-      "quantity": 50,
+      "quantity": 200,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -130,7 +130,7 @@
     },
     {
       "ingredient_slug": "duong-trang",
-      "quantity": 3,
+      "quantity": 6,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -151,23 +151,33 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
-    },
-    {
-      "ingredient_slug": "bot-nghe",
-      "quantity": 0.5,
-      "unit_name": "g",
-      "is_optional": true,
-      "source": "llm_suggested",
-      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Đậu phụ bóp nát trộn sữa đậu nành, đun nhỏ lửa cho kết thành riêu, vớt để riêng.",
-    "Xào cà chua tạo màu, đổ nước dùng rau củ, nêm giấm gạo cho chua dịu.",
-    "Thả nấm rơm, đậu phụ chiên; cho riêu đậu vào sau cùng.",
-    "Trụng bún, chan nước dùng; ăn kèm rau muống, kinh giới, tía tô."
+    "Hầm nước ngọt rau củ: cho củ cải trắng, cà rốt và su su cắt khúc vào khoảng 1,5 lít nước, đun sôi rồi hạ lửa hầm chừng 30 phút đến khi rau củ mềm và nước có vị ngọt thanh.",
+    "Làm riêu đậu: tán nhuyễn đậu phụ non, trộn đều với nấm rơm và nấm hương đã băm nhỏ, nêm chút muối và đường; xào hỗn hợp trên chảo dầu nóng cùng hành boa rô đến khi săn lại và dậy mùi thơm.",
+    "Kết tủa sữa đậu nành: đổ sữa vào nồi nước hầm rau củ, đun lửa vừa đến khi vừa sôi thì hạ nhỏ lửa, cho nước me (hoặc giấm gạo) vào và khuấy thật nhẹ một chiều — sữa sẽ đông thành từng mảng riêu trắng nổi lên mặt nước; tránh khuấy mạnh làm riêu vỡ nát.",
+    "Xào cà chua bổ múi cau với chút dầu đến khi mềm và ra màu, đổ vào nồi nước dùng cùng nấm rơm cắt đôi và đậu phụ chiên; nêm nước tương, đường và muối sao cho vị chua dịu, mặn ngọt cân bằng, đun sôi lăn tăn vài phút.",
+    "Cho phần riêu đậu đã xào vào nồi sau cùng, giữ lửa nhỏ thêm 2–3 phút cho riêu thấm vị rồi tắt bếp, để riêu nổi nguyên mảng trên mặt nước dùng.",
+    "Trụng bún cho nóng, xếp vào tô, múc riêu, đậu phụ chiên, nấm và cà chua lên trên rồi chan nước dùng ngập bún; dọn kèm rau muống bào, kinh giới, tía tô và hành lá cắt nhỏ."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-bun-rieu-chay-don-gian-dam-da-le-vu-lan-03182",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH — 3 cách nấu bún riêu chay từ đậu hũ (công thức chính + công thức người dùng trong cùng bài) — Công thức chính (biên tập) cho 4 người: sữa đậu nành 1 lít, đậu hũ chiên 200g, đậu hũ non 1 miếng, nấm rơm 150g, nấm đông cô 5 cái, cà chua 3 trái, bún 1kg, nước me 1 muỗng canh, dầu điều 2 muỗng canh, rau sống ăn kèm 100g. Công thức người dùng chia sẻ cho 6 người: sữa đậu nành 1 lít, bún tươi 300g (bất thường — xem anomalies), nấm rơm 200g, đậu hũ chiên 1 miếng, chả chay 100g, nước cốt chanh 1 muỗng canh."
+    },
+    {
+      "url": "https://giadinh.suckhoedoisong.vn/cach-nau-bun-rieu-chay-thom-ngon-don-gian-tai-nha-172230902071234029.htm",
+      "accessed": "2026-10-31",
+      "note": "Sức Khỏe & Đời Sống (Gia đình) — Cách nấu bún riêu chay thơm ngon, đơn giản tại nhà — Nội dung đồng văn với công thức chính của Điện Máy XANH (ảnh trong bài ghi nguồn dienmayxanh) — tính CÙNG 1 họ nguồn, chỉ dùng để corroboration, không tính nguồn độc lập thứ hai."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/16596116",
+      "accessed": "2026-10-31",
+      "note": "Cookpad VN — Bún Riêu Chay của Huỳnh Phát — Cho 2–3 người: bún tươi 500g, cà chua 350g, đậu hũ bi chiên vàng 150g, nấm đùi gà 150g, nấm bào ngư 150g, chả chay 150g, óc đậu làm từ 1 lít sữa đậu nành kết tủa bằng 2 muỗng canh giấm gạo, chao 3 viên, dầu điều 4 muỗng canh; rau ăn kèm có rau muống bào, tía tô, kinh giới."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/bun-rieu-chay.webp",
@@ -178,7 +188,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt).",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [LV2-008 đợt 8: Nâng Mức 2 với 3 công thức đã mở đọc thuộc 2 họ độc lập — Điện Máy XANH (công thức chính cho 4 người + công thức người dùng cho 6 người trong cùng bài) và Cookpad Huỳnh Phát (2–3 người); bài Sức Khỏe & Đời Sống đồng văn với công thức chính ĐMX nên chỉ tính corroboration. SỬA 4 dòng: bun-tuoi 150→200g (ĐMX 250, Cookpad ~200), sua-dau-nanh 50→200g (cả 3 công thức đều dùng 1 lít sữa cho 4–6 người, tức ≥167ml/người — file cũ thấp bất thường), dau-phu-chien 35→50g (ĐMX 50, Cookpad ~60), duong-trang 3→6g (hai nguồn cùng ~6g/người). BỎ bot-nghe 0,5g (0/3 nguồn; màu lấy từ cà chua và dầu điều). GIỮ: dau-phu 45g (ĐMX đậu hũ non 1 miếng/4 người ≈ 30–40g cộng phần riêu từ sữa kết tủa); ca-chua 60g (ĐMX 3 trái/4 ≈ 75g — lệch −20% chưa tới ngưỡng; Cookpad 350g/2,5 = 140g là cực cao, nguồn tản mát nên giữ); nam-rom 30g (ĐMX 150/4 = 37,5 và 200/6 ≈ 33); dam-gao 5g (chất chua thay thế lẫn nhau giữa các nguồn: ĐMX dùng nước me/nước cốt chanh, Cookpad dùng giấm gạo — giữ mức chua dịu); rau-muong 30g (ĐMX rau sống ăn kèm 100g/4 = 25g/người); kinh-gioi và tia-to 3g (có trong rau ăn kèm của Cookpad); nuoc-tuong 6g (Cookpad nêm nước mắm chay, ĐMX nêm hạt nêm chay — gia vị mặn tương đương); dau-an 6g (nguồn dùng dầu điều 2–4 muỗng canh/nồi ≈ 7–15ml/người cho khâu xào/phi, file dùng dầu ăn thường ở mức tương đương); muoi 1,5g và hanh-la 3g giữ nguyên. serving_grams 480g, method 'nau', region 'vn' giữ nguyên.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

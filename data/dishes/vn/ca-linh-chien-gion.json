@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "chien-ngap-dau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -30,7 +30,7 @@
     }
   ],
   "serving_desc": "1 phần",
-  "serving_grams": 180,
+  "serving_grams": 165,
   "ingredients": [
     {
       "ingredient_slug": "ca-linh",
@@ -63,22 +63,33 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
-    },
-    {
-      "ingredient_slug": "la-lot",
-      "quantity": 5,
-      "unit_name": "g",
-      "is_optional": true,
-      "source": "llm_suggested",
-      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Cá linh làm sạch, để nguyên con nhỏ, ướp muối tiêu.",
-    "Lăn cá qua lớp bột mì mỏng.",
-    "Chiên ngập dầu đến khi vàng giòn cả xương, ăn kèm lá lốt và nước mắm me."
+    "Cá linh moi bỏ ruột, rửa nhanh qua nước muối loãng rồi rửa lại nước sạch; để ráo và thấm thật khô bề mặt bằng giấy ăn — cá càng khô, chiên càng giòn và càng ít bắn dầu.",
+    "Ướp cá với muối và tiêu khoảng 10-15 phút cho thấm nhẹ; không ướp lâu để giữ vị ngọt tự nhiên của cá mùa nước nổi.",
+    "Áo cá qua một lớp bột thật mỏng, rũ bỏ phần bột thừa — lớp bột mỏng chỉ giúp vỏ giòn mà không lấn mất thịt cá.",
+    "Đun dầu đủ ngập cá đến khi nóng già, hạ xuống lửa vừa rồi thả cá vào từng mẻ nhỏ để nhiệt dầu không tụt; chờ cá se mặt mới trở để cá không nát.",
+    "Chiên khoảng 3-5 phút đến khi cá vàng óng, thân cứng giòn, ăn được cả xương mềm; vớt ra để trên giấy thấm dầu và ăn ngay khi còn nóng.",
+    "Dọn kèm rau sống, dưa leo và chấm nước mắm me hoặc nước mắm chua ngọt pha tỏi ớt."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://giadinh.suckhoedoisong.vn/cach-lam-ca-linh-chien-gion-172181029095921904.htm",
+      "accessed": "2026-10-31",
+      "note": "Gia đình & Xã hội (suckhoedoisong.vn, theo Ngôi Sao) — Cách làm cá linh chiên giòn — Cá linh 0.5 kg, bột chiên giòn hoà nước cho sệt (áo ướt), ăn kèm rau thơm, chấm nước mắm chua ngọt pha tỏi ớt, ăn với cơm hoặc cuốn bánh tráng."
+    },
+    {
+      "url": "https://aquatechvn.com/ca-linh-mien-tay-huong-dan-chi-tiet-cac-mon-ngon-chuan-vi-mua-nuoc-noi.html",
+      "accessed": "2026-10-31",
+      "note": "AquatechVN — Cá linh miền Tây: các món ngon chuẩn vị mùa nước nổi (mục Cá linh chiên giòn) — Cá linh 500 g, bột chiên giòn hoặc bột năng 50 g, ướp muối/tiêu 10-15 phút, chiên ngập dầu từng mẻ, ăn kèm xà lách, dưa chuột, rau thơm, chấm nước mắm chua ngọt hoặc tương ớt."
+    },
+    {
+      "url": "http://beplua.com/ca-linh-mua-nuoc-noi-cach-lua-chon-va-3-mon-an-de-nau-81.html",
+      "accessed": "2026-10-31",
+      "note": "Bếp Lửa (beplua.com) — Cá linh mùa nước nổi: cách lựa chọn và 3 món ăn dễ nấu (mục Cá linh chiên giòn) — Không định lượng: thấm khô cá, áo một lớp bột mỏng hoặc chiên trần, giữ nhiệt dầu ổn định; ăn kèm dưa leo/rau sống, chấm nước mắm pha chanh đường ớt."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/ca-linh-chien-gion.webp",
@@ -89,7 +100,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 15 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).]",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 15 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).] [LV2-008 đợt 8: Đối chiếu 3 nguồn đã mở đọc (Gia đình & Xã hội/Sức khoẻ & Đời sống, AquatechVN, Bếp Lửa; Điện Máy XANH cũng có mục cá linh chiên giòn chấm mắm me trong bài tổng hợp cá linh). Bỏ dòng la-lot (optional, 5 g): 0/3 nguồn nhắc lá lốt — rau kèm theo nguồn là rau thơm, xà lách, dưa leo. Giữ ca-linh 150 g (hai nguồn định lượng đều nấu mẻ 500 g cho khoảng 3-4 người ≈ 125-167 g/người, file nằm trong dải). Giữ bot-mi 12 g: AquatechVN dùng 50 g bột/500 g cá = 15 g quy theo 150 g cá, file lệch -20% chưa tới ngưỡng sửa; SKĐS áo bột ướt không định lượng. Giữ muoi 1 g và hat-tieu-den 0.5 g (nguồn chỉ ghi ướp muối tiêu, không cho số). Phương án A: file đã bỏ dòng dau-an từ đợt QA-002; nguyên liệu ca-linh có oil_absorption_pct = 9% — đạt quy ước, không cần dòng dầu. serving_grams 180→165 theo tổng mới 163.5 g sau khi bỏ lá lốt. Giữ method chien-ngap-dau, region vn-south và nhãn dac-san:an-giang.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

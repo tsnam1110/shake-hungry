@@ -25,7 +25,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -36,7 +36,7 @@
       "weight": 5
     }
   ],
-  "serving_desc": "1 tô cháo kèm nửa quả trứng vịt muối",
+  "serving_desc": "1 tô cháo kèm 1 quả trứng vịt muối",
   "serving_grams": 400,
   "ingredients": [
     {
@@ -57,7 +57,7 @@
     },
     {
       "ingredient_slug": "trung-vit-muoi",
-      "quantity": 30,
+      "quantity": 50,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -72,14 +72,6 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "gung",
-      "quantity": 2,
-      "unit_name": "g",
-      "is_optional": false,
-      "source": "llm_suggested",
-      "confidence": "low"
-    },
-    {
       "ingredient_slug": "muoi",
       "quantity": 0.5,
       "unit_name": "g",
@@ -89,11 +81,30 @@
     }
   ],
   "recipe_steps": [
-    "Gạo tẻ pha chút gạo nếp, nấu cháo loãng trắng, sánh nhẹ, không nêm đậm.",
-    "Trứng vịt muối luộc chín, bổ đôi.",
-    "Múc cháo ra tô, ăn kèm trứng vịt muối và dưa cải muối (nếu có), vị mặn của đồ kèm làm vừa miệng cháo nhạt."
+    "Vo sạch gạo tẻ và gạo nếp, ngâm nước khoảng 30 phút cho hạt gạo mềm và nở nhẹ, vớt ra để ráo.",
+    "Cho gạo vào nồi cùng lượng nước gấp khoảng 6-8 lần gạo, đun lửa lớn đến khi sôi, hớt bọt, rồi hạ lửa nhỏ ninh 30-40 phút, thỉnh thoảng khuấy đều để cháo không bén đáy.",
+    "Khi hạt gạo nở bung, cháo sánh nhẹ mà vẫn còn loãng vừa phải, nêm rất ít muối rồi tắt bếp và đậy vung ủ thêm khoảng 5 phút; cháo cố ý nấu nhạt vì ăn kèm trứng vịt muối đã mặn.",
+    "Trứng vịt muối rửa sạch vỏ, cho vào nồi nước luộc khoảng 10-12 phút từ khi nước sôi cho chín chắc, vớt ra để nguội bớt, bóc vỏ và bổ đôi.",
+    "Dưa cải muối rửa qua nước cho bớt mặn, vắt ráo, cắt miếng vừa ăn và bày riêng ra đĩa nhỏ.",
+    "Múc cháo nóng ra tô, đặt trứng vịt muối đã bổ đôi lên trên, ăn kèm dưa cải muối; vị mặn béo của trứng làm vừa miệng phần cháo nhạt."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.cet.edu.vn/cach-nau-chao-trang-bang-noi-com-dien",
+      "accessed": "2026-10-31",
+      "note": "CET.edu.vn (Hướng Nghiệp Á Âu) — Cách nấu cháo trắng, mục cháo lá dứa hột vịt muối (Chef Lập) — Biến thể hột vịt muối: 1/2 chén gạo tẻ + 1 nắm gạo nếp + 4-5 quả trứng vịt muối/nồi; phần cháo trắng chung ghi nồi cho 4 người ăn. Cháo nấu nhạt vì trứng muối đã mặn; có dùng lá dứa tạo thơm."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/10873258",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Hoàng Oanh, Cháo Trắng (Hột Vịt Muối + Cá Bống Kho Tiêu + Dưa Món) — 3 người. Gạo 1/2 lon, trứng vịt muối 3 quả (1 quả/người), dưa món ăn kèm, lá dứa nấu cùng cháo. Phần cá bống kho tiêu là món ăn kèm riêng, không thuộc định danh cháo trắng hột vịt muối."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/13425881-chao-tr%E1%BA%AFng-tr%E1%BB%A9ng-mu%E1%BB%91i",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Cô chủ Lee, Cháo Trắng Trứng Muối — Không ghi số người ăn. Gạo tẻ 100g, gạo nếp 100g, trứng vịt muối 4 quả, ăn kèm cải cay xào 300g (tác giả gợi ý thay bằng củ cải khô khi không có cải cay)."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/chao-trang.webp",
@@ -104,7 +115,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 300 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-008 đợt 8: nâng Mức 2 với 3 nguồn đã mở độc lập (CET/Hướng Nghiệp Á Âu, Cookpad Hoàng Oanh 3 người, Cookpad Cô chủ Lee). SỬA trứng vịt muối 30g -> 50g vì 3/3 nguồn dùng khoảng 1 quả/người, file lệch -40%. BỎ gừng 2g vì 0/3 nguồn ủng hộ. GIỮ gạo tẻ 55g (Hoàng Oanh xấp xỉ 53g/người từ 1/2 lon/3 người; hai nguồn còn lại không quy được khẩu phần rõ), gạo nếp 10g (tỉ lệ nếp giữa các nguồn phân tán mạnh), dưa cải muối 20g dạng optional (dưa món/cải muối ăn kèm có ở 2/3 nguồn), muối 0,5g (cháo nấu nhạt có chủ đích). Giữ region vn-south: món cháo trắng hột vịt muối là món Nam Bộ, nguồn Hoàng Oanh từ TP.HCM. Viết lại 6 bước nấu.] Đồng bộ serving_desc: trứng vịt muối đã sửa 30→50g (≈1 quả) nên mô tả khẩu phần đổi \"nửa quả\" → \"1 quả\" cho nhất quán nội bộ.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

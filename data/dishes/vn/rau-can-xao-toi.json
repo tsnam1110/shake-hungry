@@ -71,10 +71,17 @@
     "Cho rau cần vào xào lửa lớn 2 phút vừa chín, nêm nước mắm."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/rau-can-xao-toi.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-008 đợt 8: GIỮ MỨC 1 — chỉ gom được 2 nguồn đạt chuẩn đã mở đọc cho đúng món cần nước xào tỏi, đều là Cookpad VN có tác giả: Pi Ha (1 bó rau cần, 3 tép tỏi, nêm hạt nêm/muối/đường, đảo nhanh 30 giây — 'cần xào tái') và Trần Nguyên (2 người, 1/2–1 bó cần nước, 2 tép tỏi, dầu hào 1 thìa, muối/hạt nêm). Hai nguồn này nhất quán với file hiện tại (rau 120g/khẩu phần nằm trong dải 1 bó 200–300g chia 2 người = 100–150g; tỏi 5g ở cận trên của 2–3 tép/mẻ) nhưng chưa đủ 3 nguồn theo tiêu chí Mức 2. Các ứng viên nguồn thứ ba đều không đạt: cụm memart.vn / saigonesebaguette.vn / toyenxin.com là một họ nội dung SEO sao chép lẫn nhau (cùng văn bản, cùng định lượng) nên brief loại và chỉ tính tối đa 1 họ vô danh; suckhoedoisong.vn có rau cần xào mắm ruốc — biến thể khác về gia vị định danh, không tính cho bản xào tỏi; nauchuananngon.vn có công thức đúng món nhưng browser.open lỗi fetch (không có HTTP status, không retry theo quy định). Làm lại được ở đợt sau khi mở được thêm 1 nguồn biên tập độc lập.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

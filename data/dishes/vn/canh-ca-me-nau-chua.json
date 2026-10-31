@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -34,7 +34,7 @@
   "ingredients": [
     {
       "ingredient_slug": "ca-me",
-      "quantity": 120,
+      "quantity": 150,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -114,11 +114,36 @@
     }
   ],
   "recipe_steps": [
-    "Cá mè làm sạch, khía nhẹ, ướp muối và chút nước chanh cho bớt tanh.",
-    "Đun sôi nước, cho khế thái lát và cà chua vào tạo vị chua, nêm đường và nước mắm.",
-    "Thả cá vào nấu chín tới, rắc hành lá và thì là, dùng nóng với cơm."
+    "Cá mè làm sạch vảy, bỏ mang và ruột, chà muối hạt khắp thân rồi rửa lại cho hết nhớt; cắt khúc vừa ăn, ướp với muối và một phần nước mắm khoảng 15 phút cho thịt cá đậm và bớt tanh.",
+    "Khế chua gọt bỏ rìa cạnh, thái lát ngang dày khoảng 0,5cm rồi ngâm nhanh vào nước pha chút muối để không thâm; cà chua bổ múi cau, hành tím thái lát, hành lá và thì là cắt khúc.",
+    "Đun nóng dầu ăn trong nồi, phi hành tím đến khi vàng thơm rồi cho một nửa cà chua và phần khế vào xào trên lửa vừa khoảng 2 phút, đến khi khế hơi mềm và cà chua ra màu.",
+    "Đổ khoảng 300ml nước nóng vào nồi, đun sôi bùng, nêm nước mắm và đường cho vị chua dịu cân bằng; hớt bọt để nước canh trong.",
+    "Nhẹ nhàng thả từng khúc cá mè vào nước đang sôi, hạ lửa vừa và nấu 6-8 phút không khuấy mạnh; cá chín khi thịt trắng đục, săn lại và không còn máu đỏ ở xương.",
+    "Thả nốt phần cà chua còn lại, nấu thêm khoảng 1 phút cho cà vừa chín tới còn nguyên miếng, nếm lại vị chua-mặn-ngọt cho vừa.",
+    "Tắt bếp, rắc hành lá và thì là lên mặt, đậy nắp 1 phút cho rau thơm dậy mùi rồi múc ra tô, dùng nóng với cơm."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://cookbeo.com/recipes/ca-nau-khe-chua",
+      "accessed": "2026-10-31",
+      "note": "Cookbeo — Cá nấu khế chua — 2 khẩu phần: cá lóc 370g, khế 4-5 quả, cà chua 2 quả, hành khô 3 củ; trang ghi rõ có thể thay bằng cá đồng khác (chép, rô...) — mẫu công thức cá nấu khế dùng để đối chiếu tỉ lệ cho cá mè"
+    },
+    {
+      "url": "https://cachnaumonngon.com/cach-nau-canh-chua-khe-ca-3-2085.html",
+      "accessed": "2026-10-31",
+      "note": "Cách Nấu Món Ngon — Canh cá nấu khế — Không ghi số người: cá lóc 400g, khế chua 250g, cà chua 80g, hành lá 5g, ngò gai 10g, nước mắm 3 muỗng canh, đường 2 muỗng; FAQ ghi thay được bằng cá chép/cá rô"
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/10269274",
+      "accessed": "2026-10-31",
+      "note": "Cookpad VN — Canh cá nấu khế của Phuong Nguyen 92 — 3 người, kiểu miền Trung (tác giả gốc Huế): cá 500g, khế chua 3 trái, hành ngò; xào hành cho cá vào dậy mùi trước khi nấu"
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/23980346",
+      "accessed": "2026-10-31",
+      "note": "Cookpad VN — Canh cá nấu khế & húng chanh của Hoàng Thị Tố Hà — 4 người: cá điêu hồng 1kg, khế chua 150g, hành tím 2 củ, đường 1 muỗng canh, nước mắm 1/2 muỗng canh; biến thể rau nêm húng chanh"
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/canh-ca-me-nau-chua.webp",
@@ -129,7 +154,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-008 đợt 8: Nâng Mức 2 với 4 nguồn công thức cá nấu khế đã mở đọc (Cookbeo 2 khẩu phần; Cách Nấu Món Ngon không ghi số người; Cookpad Phuong Nguyen 3 người kiểu miền Trung; Cookpad Hoàng Thị Tố Hà 4 người). Không có công thức định lượng riêng cho cá mè nấu khế, nên phân xử theo mẫu món cá nấu khế — Cookbeo và Cách Nấu Món Ngon đều ghi cá có thể thay bằng cá đồng khác; cá mè giữ nguyên theo định danh món. Sửa 1 dòng: ca-me 120→150g (nguồn cho 167-250g cá nguyên con/khẩu phần, file thấp hơn >30%). Giữ nguyên: qua-khe 60g (nguồn trải rộng 37-140g/khẩu phần, file nằm giữa); ca-chua 50g (Cookbeo ~80g/khẩu phần, Cách Nấu Món Ngon tỉ lệ 80g/400g cá); hanh-tim 5g (Cookbeo 3 củ/2 khẩu phần, Tố Hà 2 củ/4 người); dau-an 5g, nuoc-mam 6g, duong-trang 3g, muoi 1g, hanh-la 5g đều nằm trong dải các nguồn. Không thêm ngò gai/mùi tàu dù 2/4 nguồn dùng làm rau nêm chính (chưa đạt ngưỡng 2/3). Bước nấu viết lại 7 bước theo kỹ thuật chung: ướp cá, xào khế-cà chua lấy vị chua, cho nước sôi, thả cá nấu chín tới, hoàn thiện rau thơm.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

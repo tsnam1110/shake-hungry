@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "xao",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -98,15 +98,34 @@
     }
   ],
   "recipe_steps": [
-    "Tôm càng chiên sơ cho vỏ đỏ, vớt ra để ráo.",
-    "Phi tỏi thơm, cho nước me, đường thốt nốt và nước mắm vào nấu thành sốt sệt.",
-    "Cho tôm vào đảo đều lửa lớn cho áo sốt; rắc hành lá, ớt."
+    "Rửa tôm càng, cắt bớt râu và chân, rút chỉ đen ở lưng rồi để thật ráo; tôm còn ướt sẽ bắn dầu và lâu săn vỏ.",
+    "Dầm me chín với nước nóng khoảng 5 phút, bóp cho thịt me rã rồi lọc qua rây bỏ hạt; pha nước cốt me với đường thốt nốt và nước mắm, khuấy tan hẳn.",
+    "Đun dầu nóng, cho tôm vào rang/chiên sơ trên lửa lớn khoảng 3–5 phút đến khi vỏ chuyển đỏ cam đều và thịt vừa săn, vớt ra để riêng.",
+    "Chắt bớt dầu, giữ lại một lớp mỏng trong chảo, hạ lửa vừa và phi tỏi băm đến khi vàng thơm, dậy mùi mà chưa cháy.",
+    "Cho tôm trở lại chảo, rưới sốt me vào, đảo đều tay trên lửa vừa khoảng 2–3 phút cho sốt sôi và bám quanh thân tôm.",
+    "Khi sốt sánh lại, bóng và áo đều vỏ tôm thì cho ớt và hành lá vào đảo nhanh một lượt rồi tắt bếp; dọn nóng, ăn kèm cơm trắng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://yummyday.vn/tom-rang-me-339",
+      "accessed": "2026-10-31",
+      "note": "YummyDay — Cách làm tôm rang me (3 biến thể trong 1 bài) — Không ghi số người ăn; các mẻ 500g tôm + 3 trái me chín, 600g tôm + 4 quả me, và biến thể chua cay 300g tôm + 50g me vắt — dùng tỉ lệ theo khối lượng tôm để quy về 1 khẩu phần 150g tôm"
+    },
+    {
+      "url": "http://daohaisan.vn/blogs/mon-ngon/tom-cang-xanh-lam-mon-gi-ngon-5-cach-che-bien-dam-da-tai-nha",
+      "accessed": "2026-10-31",
+      "note": "Đảo Hải Sản — Tôm càng xanh rang me — Không ghi số người ăn; mẻ 500g tôm càng xanh, me chín/nước cốt me, tỏi băm, ớt, đường, nước mắm, dầu ăn — xác nhận thành phần, không có gram cho gia vị"
+    },
+    {
+      "url": "https://bloganngon.edu.vn/cach-lam-tom-rang-me-chua-ngot-don-gian-nhung-ngon-het-y/",
+      "accessed": "2026-10-31",
+      "note": "Blog Ăn Ngon — Cách làm tôm rang me chua ngọt (tôm càng xanh) — 1 đĩa đãi khách: tôm càng xanh 5 con (khoảng 450–500g), nước me pha sẵn 150g, đường 3 muỗng, nước mắm 1 muỗng, tỏi, hành lá, ớt, ngò — tôm chiên ngập dầu trước rồi mới áo sốt"
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-008 đợt 8: Nâng Mức 2 với 3 nguồn đã mở đọc (YummyDay — 3 biến thể trong bài, Đảo Hải Sản, Blog Ăn Ngon). GIỮ TOÀN BỘ định lượng hiện tại vì mọi dòng đều nằm trong dải của nguồn khi quy theo tỉ lệ khối lượng tôm: tôm càng 150g/khẩu phần là gốc quy đổi (các mẻ nguồn đều 300–600g tôm); me-chin 20g — YummyDay biến thể chua cay dùng 50g me vắt/300g tôm, quy về 25g/150g tôm, lệch +25% chưa vượt ngưỡng 25–30% và nguồn còn lại không cho gram me nên không đủ đồng thuận để sửa; đường thốt nốt 12g — Blog Ăn Ngon 3 muỗng đường/~500g tôm quy về ~11–13g/150g, khớp; nước mắm 8g và tỏi 8g — nguồn dao động theo muỗng (1 muỗng nước mắm/~500g tôm; tỏi từ 1 muỗng canh băm đến 1 củ to/~500g tôm), file nằm trong dải, gia vị nhỏ cần bằng chứng mạnh hơn mới sửa; dầu ăn 8g chỉ là dầu phi/rang trong chảo — các nguồn chiên tôm ngập dầu trước nhưng lượng dầu ăn vào món không tính theo dầu chiên (xem anomalies), giữ 8g cho bước phi tỏi và rang áo sốt; ớt 3g, hành lá 3g có mặt ở cả 3 nguồn. serving_grams 200g giữ nguyên: tổng nguyên liệu thô 212g, hao hụt khi rang hợp lý. Method 'xao' và region vn-south giữ nguyên.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

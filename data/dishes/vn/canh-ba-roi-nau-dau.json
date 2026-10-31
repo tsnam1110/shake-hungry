@@ -129,7 +129,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-008 đợt 8: HOLD do 429 khi mở nguồn. Ghi nhận từ vòng tìm kiếm (chưa tính là nguồn đã mở): biến thể thịt heo nấu đậu trắng vốn đã thưa nguồn đạt chuẩn — các trang tiếng Việt đúng biến thể chủ yếu là trang tổng hợp SEO vô danh (memart.vn, saigonesebaguette.vn) không tính nguồn theo brief; nguồn có tác giả rõ ràng tìm được là biến thể thịt heo (nạc vai) + đậu cannellini đóng hộp kiểu kho/hầm và công thức Cookpad thịt heo nấu đậu/cassoulet đậu trắng kiểu Pháp — khác cắt thịt (ba rọi) và khác dạng đậu so với file. Cần chạy lại khi hết 429 để mở đọc và phân xử dứt điểm.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

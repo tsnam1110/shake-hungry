@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nuong",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "toi",
@@ -77,14 +77,6 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "ruou-trang",
-      "quantity": 5,
-      "unit_name": "g",
-      "is_optional": true,
-      "source": "llm_suggested",
-      "confidence": "low"
-    },
-    {
       "ingredient_slug": "muoi",
       "quantity": 2,
       "unit_name": "g",
@@ -99,15 +91,50 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-tim",
+      "quantity": 8,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "la-e",
+      "quantity": 2,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Ướp gà với sả giã, tỏi, ớt, lá chanh, muối, tiêu ít nhất 1 giờ.",
-    "Kẹp gà vào phên tre hoặc đặt lên vỉ nướng.",
-    "Nướng trên than hồng, trở đều, phết mật ong cho da vàng thơm.",
-    "Chặt miếng vừa ăn, chấm muối ớt chanh; ăn kèm cơm lam hoặc cơm nóng."
+    "Làm sạch gà, mổ dọc phần ức, lấy bỏ nội tạng rồi bẻ dẹt con gà ra; xát muối rửa lại, để thật ráo và khía nhẹ vài đường ở phần thịt dày.",
+    "Rang muối hạt cho khô rồi giã nhuyễn cùng ớt xanh và lá é; trộn thêm sả băm (hoặc nước sả) và tỏi, hành tím băm để thành hỗn hợp ướp thơm cay.",
+    "Xoa đều hỗn hợp ướp lên cả hai mặt và phần đã khía, để khoảng 30 phút đến 1 giờ cho gà thấm gia vị; nếu có mật ong chỉ phết một lớp mỏng ở giai đoạn sau.",
+    "Kẹp gà vào phên tre hoặc vỉ kẹp, kèm vài lá chanh, rồi đặt trên bếp than hồng sao cho gà chín dần bằng hơi lửa chứ không áp sát than, tránh cháy ngoài sống trong.",
+    "Nướng khoảng 45–60 phút, cứ chừng 10 phút lại lật một lần; khi da bắt đầu vàng ươm thì phết lớp mật ong mỏng để da bóng và lên màu sậm đẹp.",
+    "Kiểm tra phần đùi: xiên vào thấy nước chảy ra trong là gà đã chín; lấy xuống để nghỉ ít phút cho ráo mỡ.",
+    "Xé hoặc chặt gà thành miếng vừa ăn, dọn kèm muối hạt giã với lá é và ớt xanh vắt thêm chanh để chấm; ăn nóng cùng cơm lam hoặc cơm trắng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://vi.wikipedia.org/wiki/Gà_sa_lửa",
+      "accessed": "2026-10-31",
+      "note": "Wikipedia tiếng Việt — Gà sa lửa (tổng hợp có trích dẫn VnExpress, Tiền Phong, Báo Đắk Lắk) — Nguồn định danh đúng tên món: xuất xứ Tây Nguyên, món của người Êđê ở Buôn Đôn, tên khác gà nướng Buôn Đôn; thành phần chính thịt gà vườn, muối ớt, mật ong, nước sả, lá é; gà tơ trên dưới 1kg (khoảng 1,5kg), ướp muối ớt giã + nước sả + mật ong nếu có khoảng 30 phút, kẹp tre cùng ít lá chanh, lật mỗi 10 phút, chấm muối lá é/muối hột ớt xanh chanh, ăn kèm cơm lam"
+    },
+    {
+      "url": "https://www.bluestone.com.vn/blogs/vao-bep/ga-nuong-ban-don",
+      "accessed": "2026-10-31",
+      "note": "BlueStone — Cách làm gà nướng bản Đôn chuẩn vị đặc sản Tây Nguyên — Gà nướng Bản Đôn là tên khác của gà sa lửa; không ghi số người ăn, công thức cho 1 con 1,2–1,5kg: sả 2–3 cây, ớt tươi 1–2 quả, hành tím 3–4 củ, lá chanh 3–4 lá (tùy chọn), muối/tiêu/đường vừa đủ; ướp 1–2 giờ, nướng than 45–60 phút, lật mỗi 10–15 phút"
+    },
+    {
+      "url": "https://vietnam.vnanet.vn/vietnamese/print/ga-nuong-com-lam-dac-san-dan-da-cua-nui-rung-tay-nguyen-315012.html",
+      "accessed": "2026-10-31",
+      "note": "Báo Ảnh Việt Nam (TTXVN) — Gà nướng cơm lam đặc sản núi rừng Tây Nguyên — Không định lượng; gà tơ trên dưới 1kg, ướp tỏi, hành tím, sả, ngũ vị hương, tiêu, nước mắm, muối, mật ong và các loại lá rừng; kẹp thân tre nướng than củi, trở tay liên tục tới vàng cánh gián; chấm muối lá é, ăn kèm cơm lam"
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/ga-sa-lua.webp",
@@ -118,7 +145,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt).",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [LV2-008 đợt 8: nâng Mức 2 — 3 nguồn đã mở đọc gồm 1 nguồn định danh chuyên biệt cho đúng tên món (Wikipedia 'Gà sa lửa', tổng hợp từ VnExpress/Tiền Phong/Báo Đắk Lắk), BlueStone (gà nướng Bản Đôn — tên khác của chính món này) và Báo Ảnh Việt Nam/TTXVN. Cả 3 thống nhất: gà tơ thả vườn ~1–1,5kg để nguyên con, mổ phanh bẻ dẹt, ướp muối ớt giã với sả (và lá é), mật ong nếu có, kẹp tre/phên nướng bằng hơi lửa than, lật mỗi ~10 phút, chấm muối lá é. Quy đổi theo serving_desc '1/4 con': sả BlueStone 2–3 cây/con → 7,5–11g mỗi phần tư, file 10g khớp nên giữ; lá chanh BlueStone 3–4 lá/con và Wikipedia kẹp lá chanh khi nướng → ~1g, file 1g giữ; ớt BlueStone chỉ 1–2 quả/con (~1–2g mỗi phần tư) nhưng chỉ 1 nguồn định lượng được nên chưa đủ ≥2 nguồn để sửa file 3g; gà file 160g là phần thịt ăn được của 1/4 con 1–1,5kg sau bỏ xương, nằm trong dải quy đổi theo tiền lệ ga-luoc, giữ; muối 2g, tiêu 0,3g (BlueStone + Báo Ảnh VN đều liệt tiêu), tỏi 5g (chỉ Báo Ảnh VN liệt, chưa đạt ngưỡng bỏ 0/3) và mật ong optional 5g (Wikipedia 'một ít nếu có' + Báo Ảnh VN) đều giữ. THÊM hành tím 8g (2/3 nguồn, file thiếu) và lá é 2g (thành phần định danh của món, file thiếu). BỎ rượu trắng: 0/3 nguồn nhắc tới trong ướp hay sơ chế món này. Tổng nguyên liệu sau sửa ~191g phần ăn được, phần còn lại của serving_grams 230 là xương của khẩu phần 1/4 con nên giữ serving. Giữ method nuong; region giữ 'vn' — xem anomalies.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

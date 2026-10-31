@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -118,11 +118,40 @@
     }
   ],
   "recipe_steps": [
-    "Gạo vo sạch, nấu cháo nhừ; các loại nấm rửa sạch, nấm rơm chẻ đôi, nấm bào ngư xé sợi.",
-    "Xào sơ nấm với gừng cho thơm, trút vào nồi cháo, nấu thêm vài phút.",
-    "Nêm muối, nước tương vừa ăn, múc ra tô, rưới dầu mè, rắc hành lá và tiêu, dùng nóng."
+    "Sơ chế nấm: nấm rơm cắt bỏ chân, ngâm nước muối loãng khoảng 10 phút rồi rửa lại và chẻ đôi; nấm bào ngư xé sợi vừa ăn; nấm kim châm cắt gốc, tách nhỏ, rửa nhanh và để ráo.",
+    "Vo sạch gạo, cho vào nồi cùng lượng nước gấp khoảng 8-10 lần gạo, đun sôi rồi hạ lửa nhỏ, ninh 25-30 phút, thỉnh thoảng khuấy để cháo không bén đáy, đến khi hạt gạo nở bung và cháo sánh nhẹ.",
+    "Trong lúc ninh cháo, thái gừng thành sợi nhỏ và cắt nhỏ hành lá, để riêng dùng ở bước cuối.",
+    "Bắc chảo lên bếp, cho các loại nấm vào xào trên lửa lớn khoảng 3-5 phút cùng gừng cho nấm săn lại, ra bớt nước và dậy mùi thơm; nêm một chút muối trong lúc xào.",
+    "Trút phần nấm đã xào vào nồi cháo, nấu thêm 5-7 phút cho nấm chín hẳn và hòa vị; nêm nước tương và muối cho vừa ăn, cháo đạt khi sánh mịn nhưng vẫn loãng vừa phải.",
+    "Múc cháo ra tô, rưới dầu mè, rắc hành lá và tiêu xay lên trên, dùng ngay khi còn nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://yummyday.vn/chao-chay-1017",
+      "accessed": "2026-10-31",
+      "note": "Yummyday — 3 cách nấu cháo chay (mục Cháo nấm chay) — Không ghi số người ăn. Gạo tẻ 100g, gạo nếp 50g, nấm rơm 50g, nấm bào ngư 50g, nấm hương 10g, đỗ xanh 100g. Công thức trùng khớp gần như nguyên văn với bài Saigonese Baguette đã mở — tính chung 1 họ nguồn."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/16957477-chao-n%E1%BA%A5m-chay-th%C6%A1m-ngon-mat-b%E1%BB%95-ngay-1",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Lavender, Cháo nấm chay thơm ngon, mát bổ (ngày 1) — 4 phần ăn. Nấm rơm 100g, nấm đùi gà 100g, cơm nguội 1 bát con + 1 nắm gạo nếp, đậu xanh 30g, hạt sen 50g, bí đỏ 100g, dầu mè 1 thìa cà phê, nước tương 1 thìa cà phê, hành phi ăn kèm."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/918904",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Ngoc Dung, Cháo Nấm Chay — Không ghi số người ăn. Gạo 150g, nấm rơm búp 250g, cà rốt 100g, hành tây 1 củ, nước 3 lít; rang gạo với tỏi trước khi nấu, xào nấm riêng rồi cho vào cháo."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/9898672",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Bòn Bon, Cháo Nấm Chay — 4 người. Nấm bạch tuyết 100g, nấm tiểu yến nâu 100g (tổng nấm 50g/người), cơm nguội 1 chén, gừng sợi 1 muỗng cà phê, nước tương 1 muỗng cà phê, ngò và tiêu."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/10303303-chao-n%E1%BA%A5m-rau-c%E1%BB%A7",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Bảo Bình, Cháo Nấm Rau Củ — 2 phần. Nấm kim châm 50g (25g/người, hoặc thay bằng nấm rơm), mộc nhĩ 3 tai, cà rốt 1 khoanh nhỏ, gạo 1 nắm; nguồn ủng hộ dòng nấm kim châm của file."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/chao-nam.webp",
@@ -133,7 +162,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 300 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-008 đợt 8: nâng Mức 2 với 5 nguồn đã mở thuộc 4 họ độc lập (Yummyday — họ này trùng công thức với Saigonese Baguette nên tính 1; Cookpad Lavender; Cookpad Ngoc Dung; Cookpad Bòn Bon; Cookpad Bảo Bình). GIỮ nguyên toàn bộ định lượng: tỉ lệ nấm/gạo của file (120g nấm : 55g gạo) nằm trong khoảng các nguồn (Yummyday 110:150 kèm đậu xanh; Ngoc Dung 250:150; Lavender 200g nấm/4 phần; Bòn Bon 50g nấm/người), nấm kim châm 30g được Bảo Bình ủng hộ (25g/người), gừng và nước tương có ở Bòn Bon, dầu mè có ở Lavender. Các nguồn không thống nhất số người ăn và cỡ tô nên không đủ cơ sở đổi từng dòng theo ngưỡng 25-30%. Viết lại 6 bước nấu.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

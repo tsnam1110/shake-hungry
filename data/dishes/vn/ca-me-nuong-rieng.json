@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nuong",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -98,11 +98,40 @@
     }
   ],
   "recipe_steps": [
-    "Cá mè làm sạch, cắt khúc, ướp riềng giã, nghệ, sả, hành và nước mắm ít nhất 30 phút.",
-    "Kẹp cá vào vỉ, nướng trên than hoa, lật đều và phết dầu.",
-    "Nướng đến khi cá chín vàng, thơm mùi riềng, ăn kèm rau thơm và nước mắm gừng."
+    "Đánh vảy cá mè, bỏ mang và ruột, rửa với nước muối loãng cho bớt nhớt và tanh, cắt cá thành khúc dày khoảng 2cm rồi khứa 2–3 đường chéo trên mặt cá để sốt ướp thấm sâu.",
+    "Giã nhuyễn riềng, sả, hành tím và nghệ tươi thành hỗn hợp sệt; trộn đều với nước mắm, dầu ăn và ớt bột để được sốt ướp thơm nồng, có màu vàng nhẹ.",
+    "Xoa đều sốt lên khắp khúc cá, cả trong các đường khứa, rồi ướp ít nhất 30 phút (tốt nhất khoảng 1 giờ trong ngăn mát) cho cá thấm gia vị.",
+    "Phết một lớp dầu mỏng lên vỉ, kẹp cá vào vỉ và đặt lên than hồng vừa; nướng khoảng 10 phút cho mặt đầu săn lại và hơi xém cạnh.",
+    "Lật vỉ, phết thêm phần sốt ướp còn lại lên mặt cá và nướng tiếp 8–10 phút đến khi cá chín vàng đều, thơm mùi riềng, thịt cá trắng đục và dễ tách khỏi xương.",
+    "Gắp cá ra đĩa, ăn nóng kèm rau sống, bún hoặc cơm và nước mắm gừng để cân bằng vị béo của cá."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.amthucmoimien.com/Cach-lam-Ca-me-nuong-muoi-ot-mon-an-10914.html",
+      "accessed": "2026-10-31",
+      "note": "Ẩm Thực Mọi Miền — Cá mè nướng riềng sả (trong bài Cá mè nướng muối ớt) — Cho 4 người; ĐÚNG loài cá mè và ĐÚNG biến thể riềng sả ghi trong tên món của file: cá mè 1 con, riềng 2 củ, sả 5 cây, hành tím 3 củ, ớt 2 quả, bột ớt 2 thìa cà phê, dầu ớt 2 thìa cà phê, gia vị muối/bột ngọt/hạt nêm; không mẻ, không mắm tôm, không nghệ."
+    },
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/amp/3-cach-lam-ca-lang-nuong-muoi-ot-sa-nghe-va-rieng-me-thom-05294",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH — Cá lăng nướng riềng mẻ — Cho 3 người; họ riềng mẻ: cá lăng 1 con khoảng 1kg, riềng 1 củ, hành tím 3 củ, tỏi 3 tép, mẻ 2 muỗng canh, mắm tôm 1 muỗng canh, nước nghệ xay 2 muỗng canh, dầu ăn 2 muỗng canh, dầu màu điều 1 muỗng canh."
+    },
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/3-cach-lam-ca-tam-nuong-ngon-mieng-de-lam-dam-da-06715",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH — Cá tầm nướng riềng mẻ — Cho 2 người; họ riềng mẻ: cá tầm 1 con (phần thịt thăn), riềng băm 2 muỗng canh, mẻ 1 muỗng canh, mắm tôm 2 muỗng canh, nước nghệ 2 muỗng canh, hành tím 3 củ, tỏi 3 tép, nước mắm 1 muỗng canh, dầu ăn 2 muỗng canh."
+    },
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-ca-loc-nuong-rieng-me-don-gian-thom-ngon-nong-hoi-12126",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH — Cá lóc nướng riềng mẻ — Không ghi số người ăn trong bản đã mở; họ riềng mẻ: riềng + nghệ + sả + hành tím + tỏi giã nhuyễn, trộn mẻ 1 muỗng canh, đường 1 muỗng canh, nước mắm 1 muỗng canh, mắm tôm 1/2 muỗng canh, ướp 30 phút, nướng 30–40 phút lật mỗi 7–10 phút."
+    },
+    {
+      "url": "https://www.huongnghiepaau.com/cach-lam-ca-nheo-nuong-rieng-me",
+      "accessed": "2026-10-31",
+      "note": "Hướng Nghiệp Á Âu — Cá nheo nướng riềng mẻ — Không ghi số người ăn; họ riềng mẻ: cá nheo 2kg, riềng xay 100g, sả 10 cây (3 gốc giã vào ướp, phần còn lại lót vỉ), mẻ 3 muỗng canh, nước mắm 1 muỗng canh, ớt 2 trái, mắc khén 1 muỗng canh."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/ca-me-nuong-rieng.webp",
@@ -113,7 +142,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-008 đợt 8: nâng Mức 2 — 5 nguồn đã mở thuộc 3 họ độc lập (Ẩm Thực Mọi Miền đúng loài cá mè + đúng biến thể riềng sả; Điện Máy XANH 3 bài cá khác họ riềng mẻ; Hướng Nghiệp Á Âu cá nheo riềng mẻ). PHÂN XỬ BIẾN THỂ: tên món của file là 'nướng riềng' (không phải 'riềng mẻ') và nguồn đúng loài làm riềng sả — không mẻ, không mắm tôm, không đường — nên giữ đúng hồ sơ biến thể của file, không ép sang riềng mẻ. GIỮ toàn bộ định lượng vì đều nằm trong dải nguồn quy đổi theo khẩu phần: riềng 15g (nguồn 10–20g), sả 10g (nguồn đúng loài ~18g/khẩu phần, Hướng Nghiệp Á Âu phần giã ướp ~5g — file ở giữa dải), nghệ tươi 5g (họ riềng mẻ dùng nước nghệ ~10–15ml/khẩu phần, biến thể đúng loài không có nghệ — giữ mức thấp của file), hành tím 8g (nguồn 8–15g, nguồn đúng loài ~8g khớp), nước mắm 8g (họ riềng mẻ 5–8g/khẩu phần), dầu ăn 5g (nguồn tản 2,5–14g — không đồng thuận sửa), ớt bột 1g (nguồn đúng loài 2 thìa cà phê/4 người ≈ 1g/khẩu phần — khớp). KHÔNG thêm mẻ (slug me chưa có số dinh dưỡng và không thuộc biến thể này), mắm tôm và đường (chỉ thuộc họ riềng mẻ, không có ủng hộ ở biến thể riềng sả), tỏi (chỉ 1 họ Điện Máy XANH có). Dòng rieng vốn đã có trong file từ trước và slug chưa có số dinh dưỡng — giữ nguyên theo ngoại lệ của brief, không phải dòng thêm mới của đợt này. Method nuong và region vn-north giữ nguyên (phong cách ướp riềng là miền Bắc ở cả 3 họ nguồn).]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

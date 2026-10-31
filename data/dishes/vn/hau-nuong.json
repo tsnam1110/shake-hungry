@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nuong",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "toi",
@@ -58,7 +58,7 @@
     },
     {
       "ingredient_slug": "lac-rang",
-      "quantity": 8,
+      "quantity": 15,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -73,20 +73,45 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "pho-mai",
-      "quantity": 15,
+      "ingredient_slug": "hanh-tim",
+      "quantity": 10,
       "unit_name": "g",
-      "is_optional": true,
+      "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Hàu tách vỏ trên, rửa nhẹ, để ráo.",
-    "Làm mỡ hành bằng mỡ lợn nóng và hành lá cắt nhỏ.",
-    "Chan mỡ hành (hoặc phủ phô mai) lên hàu, nướng than đến khi hàu vừa chín tới, rắc lạc rang."
+    "Ngâm hàu trong nước sạch khoảng 1–2 giờ cho nhả bớt cát, dùng bàn chải chà sạch vỏ dưới vòi nước, để ráo.",
+    "Tách bỏ vỏ trên của hàu bằng dao tách hàu hoặc quay lò vi sóng 1–2 phút cho hé miệng; giữ phần thịt nằm trên vỏ lõm, bỏ mảnh vỏ vụn.",
+    "Rang đậu phộng trên lửa nhỏ khoảng 4 phút đến khi thơm, để nguội, đãi vỏ và giã dập; hành lá cắt nhỏ, hành tím thái lát mỏng.",
+    "Thắng mỡ lợn cho ra mỡ nước (hoặc đun nóng dầu ăn), phi hành tím đến khi vàng thơm, tắt bếp rồi trút mỡ nóng vào bát hành lá, đảo đều cho hành chín tái và giữ màu xanh.",
+    "Xếp hàu lên vỉ than hồng (hoặc lò 200°C), nướng sơ 2–3 phút đến khi nước trong hàu bắt đầu sủi.",
+    "Chan đều mỡ hành lên từng con, nướng tiếp 3–5 phút đến khi mỡ hành sôi lăn tăn, thịt hàu săn lại và chuyển màu đục.",
+    "Rắc đậu phộng giã dập lên mặt, dọn ăn ngay khi còn nóng, chấm muối tiêu chanh hoặc nước mắm tỏi ớt."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/2-cach-lam-hau-nuong-trung-cut-beo-ngon-hap-dan-de-lam-an-la-14054",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH — Hàu nướng trứng cút (phần mỡ hành dùng chung cho hàu nướng) — Cho 4 người: 1kg hàu sống, dầu ăn 80ml, đậu phộng 50g, hành lá 5 nhánh, hành tím 3 củ; biến thể có trứng cút — chỉ đối chiếu phần mỡ hành/đậu phộng"
+    },
+    {
+      "url": "https://laodong.vn/gia-dinh-hon-nhan/cach-lam-hau-nuong-mo-hanh-beo-thom-don-gian-tai-nha-1788366.ldo",
+      "accessed": "2026-10-31",
+      "note": "Báo Lao Động — Cách làm hàu nướng mỡ hành — 1kg hàu tươi, hành lá 100g, lạc rang 50g, dầu ăn 3 muỗng canh, hành khô 1 củ"
+    },
+    {
+      "url": "https://nauankhongkho.vn/blog/3-cach-lam-hao-nuong-mo-hanh-la-lam-ngon-me-ly-VV1naJbJZ1pb",
+      "accessed": "2026-10-31",
+      "note": "Nấu Ăn Không Khó (Túc Túc) — Hàu nướng mỡ hành — 10 con hàu sữa, mỡ heo 150g (thắng lấy mỡ nước — lượng mỡ thực dùng thấp hơn), hành lá 5 nhánh, hành tím 2 củ, đậu phộng 2 muỗng canh"
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/6592902",
+      "accessed": "2026-10-31",
+      "note": "Cookpad VN — Bếp của Quỳnh, Hàu nướng mỡ hành — 2kg hàu sữa; hành lá, hành củ, đậu phộng, dầu ăn (không định lượng gram — chỉ đối chiếu hiện diện nguyên liệu)"
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/hau-nuong.webp",
@@ -97,7 +122,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt)",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-008 đợt 8: Nâng Mức 2 với 4 nguồn đã mở đọc (Điện Máy XANH, Báo Lao Động, Nấu Ăn Không Khó, Cookpad VN). Giữ: hàu 200g (giữ nguyên cơ sở cân hiện tại — xem anomalies), tổng chất béo mỡ hành 17g (mỡ lợn 12 + dầu 5) nằm trong khoảng nguồn quy về 6 con (Lao Động ~8g dầu, ĐMX ~22g dầu, NAKK mỡ heo thắng tóp là ngoại lệ cao), hành lá 10g (nguồn 8–30g/6 con). Sửa: lạc rang 8→15g (2 nguồn độc lập cùng cho ~15g/6 con). Thêm: hành tím 10g (3/3 nguồn có trong mỡ hành). Bỏ: phô mai 15g tuỳ chọn (0/3 nguồn mỡ hành; là biến thể riêng).]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

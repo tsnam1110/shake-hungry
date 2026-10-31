@@ -25,7 +25,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "tron",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -37,7 +37,7 @@
     }
   ],
   "serving_desc": "1 đĩa",
-  "serving_grams": 250,
+  "serving_grams": 310,
   "ingredients": [
     {
       "ingredient_slug": "tom-the",
@@ -49,7 +49,7 @@
     },
     {
       "ingredient_slug": "dua-leo",
-      "quantity": 60,
+      "quantity": 150,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -58,14 +58,6 @@
     {
       "ingredient_slug": "rau-ram",
       "quantity": 8,
-      "unit_name": "g",
-      "is_optional": false,
-      "source": "llm_suggested",
-      "confidence": "low"
-    },
-    {
-      "ingredient_slug": "lac-rang",
-      "quantity": 15,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -121,11 +113,29 @@
     }
   ],
   "recipe_steps": [
-    "Tôm thẻ luộc vừa chín, bóc vỏ bỏ đầu, chẻ đôi con lớn; dưa chuột thái lát.",
-    "Pha nước mắm chua ngọt với chanh, đường và ớt.",
-    "Trộn tôm và dưa chuột với nước trộn, rau răm; rắc lạc rang và hành phi khi dọn."
+    "Rửa tôm thẻ, cắt bỏ râu và rút chỉ lưng; luộc hoặc hấp trong nước sôi khoảng 2–3 phút đến khi tôm cong lại, vỏ chuyển màu cam hồng thì vớt ra ngâm nhanh vào nước đá cho thịt giòn, rồi bóc vỏ và chẻ đôi con lớn theo chiều dọc.",
+    "Dưa leo rửa sạch, chẻ đôi, nạo bỏ ruột, thái lát xéo dày khoảng 3–4mm; xóc với chút muối chừng 10 phút rồi xả lại, vắt nhẹ cho ráo để lát dưa giòn và không ra nước khi trộn.",
+    "Pha nước trộn gỏi: khuấy tan đường trong nước mắm và nước cốt chanh, thêm ớt băm, nếm lại cho đủ vị chua – mặn – ngọt cân bằng.",
+    "Cho tôm và dưa leo vào tô lớn, rưới khoảng hai phần ba nước trộn, trộn nhẹ tay chừng 1 phút cho thấm đều rồi chắt bỏ phần nước đọng ở đáy tô.",
+    "Thêm rau răm cắt khúc và phần nước trộn còn lại, đảo đều lần cuối; bày gỏi ra đĩa, rắc hành phi lên trên và dọn ngay khi gỏi còn giòn."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/2-cach-lam-goi-dua-leo-tom-thit-va-uc-ga-chua-ngot-gion-ngon-04314",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH — Gỏi dưa leo tôm thịt — Cho 4 người: tôm 500g, dưa leo 1kg, thịt heo 300g, cà rốt 150g, rau thơm 50g, đường 4 muỗng canh, nước mắm 3 muỗng canh, nước cốt chanh 4 muỗng canh, tỏi 3 tép, ớt sừng 1/2 quả. Biến thể có thịt — chỉ đối chiếu các dòng tôm/dưa leo/gia vị."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/23922647",
+      "accessed": "2026-10-31",
+      "note": "Cookpad VN — Gỏi Tôm Dưa Leo Ớt Chuông của Dory — Cho 2 người: tôm 200g, dưa leo 2 trái, nước mắm 2 muỗng canh, đường vàng 1 muỗng canh, ngò rí 1 nắm, tía tô vài lá. Biến thể tôm + dưa leo thuần, gần nhất với cấu trúc file (không thịt)."
+    },
+    {
+      "url": "https://tailieu.duytan.edu.vn/tailieu/2011/20110124/emily000/goi_tom_dua_leo_6409.pdf?rand=531215",
+      "accessed": "2026-10-31",
+      "note": "Tài liệu dạy nấu ăn — Đại học Duy Tân (Gỏi tôm dưa leo) — Không ghi số người ăn: tôm bạc 600g, dưa leo 600g, thịt đùi heo 600g, hạt điều 100g, cà chua 5 trái, chanh 2 trái, tỏi phi — dùng đối chiếu tỉ lệ tôm : dưa leo = 1 : 1."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/goi-tom-the.webp",
@@ -136,7 +146,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-008 đợt 8: Nâng Mức 2 với 3 nguồn đã mở đọc (Điện Máy XANH gỏi dưa leo tôm thịt 4 người; Cookpad Dory gỏi tôm dưa leo 2 người — biến thể tôm thuần gần nhất với file; tài liệu dạy nấu Đại học Duy Tân). SỬA 1 dòng chính: dua-leo 60→150g (ĐMX 250g/người, Cookpad ~150g/người, Duy Tân tỉ lệ 1:1 với tôm — file cũ thấp bất thường so với cả ba). BỎ lac-rang 15g (0/3 nguồn; Duy Tân dùng hạt điều thay thế). serving_grams 250→310g theo tổng khối lượng sau sửa (120+150+8+5+12+8+6+2+3 = 314g, trừ phần nước trộn đọng lại đáy tô). GIỮ: tom-the 120g (ĐMX 500/4 = 125g; Cookpad 200/2 = 100g — file nằm giữa hai nguồn); nuoc-mam 8g (ĐMX 3 muỗng canh/4 ≈ 11g, Cookpad 2 muỗng canh/2 = 15g — file thấp hơn nhưng nước trộn thừa ở lại tô, chưa đủ cơ sở sửa dòng gia vị lỏng); duong-trang 6g (Cookpad 1 muỗng canh/2 ≈ 7,5g/người; ĐMX 15g/người cho bản có thịt); chanh 12g (ĐMX 4 muỗng canh/4 = 15ml/người); rau-ram 8g (rau thơm ĐMX 50g/4 = 12,5g/người tính chung các loại); hanh-phi 5g (ĐMX gợi ý rắc hành phi ở bước thành phẩm, Duy Tân dùng tỏi phi cùng vai trò); ot-tuoi 2g; rau-mui 3g optional (Cookpad dùng ngò rí 1 nắm/2 người). method 'tron' và region vn-south giữ nguyên.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

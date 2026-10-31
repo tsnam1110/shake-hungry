@@ -89,7 +89,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt DISH-004 đợt 2 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt DISH-004 đợt 2 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-008 đợt 8: HOLD do 429 khi mở nguồn. Ghi nhận từ vòng tìm kiếm (chưa tính là nguồn đã mở): không tìm thấy công thức nào đúng định danh cá bống + rau ngót có định lượng — kết quả khả dụng đều là cá rô/cá lóc/cá chép nấu rau ngót (Điện Máy XANH, Bluestone, Cookpad) hoặc cá bống nấu lá lốt/chiên/kho. Cá bống là loài cá định danh khác hẳn cá rô nên không thể mượn định lượng chéo để nâng Mức 2 mà không hạ chuẩn; cần chạy lại khi hết 429 và tìm thêm nguồn đúng loài cá.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

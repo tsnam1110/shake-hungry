@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -30,11 +30,11 @@
     }
   ],
   "serving_desc": "1 phần",
-  "serving_grams": 320,
+  "serving_grams": 450,
   "ingredients": [
     {
       "ingredient_slug": "thit-bo-than",
-      "quantity": 150,
+      "quantity": 250,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -74,7 +74,7 @@
     },
     {
       "ingredient_slug": "dua-thom",
-      "quantity": 30,
+      "quantity": 60,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -114,11 +114,36 @@
     }
   ],
   "recipe_steps": [
-    "Đun nước dừa tươi với giấm, sả, dứa thành nồi nước nhúng chua thơm.",
-    "Thịt bò thái mỏng; nhúng tái từng lát trong nước giấm sôi.",
-    "Cuốn bò với bánh tráng, bún, rau sống, dưa leo; chấm mắm nêm pha dứa."
+    "Thịt bò rửa nhanh, thấm khô rồi thái lát thật mỏng ngang thớ, xếp ra đĩa và phủ vài lát hành tây thái mỏng, để trong ngăn mát trong lúc chuẩn bị các phần khác — lát càng mỏng nhúng càng nhanh chín và mềm.",
+    "Dứa gọt vỏ, bỏ mắt: một phần thái lát mỏng để cho vào nồi nước nhúng, phần còn lại băm nhuyễn để pha mắm nêm. Sả cắt khúc đập dập; tỏi, hành tím, ớt băm nhỏ; rau sống và dưa leo rửa sạch, để ráo.",
+    "Phi sả với một ít dầu trên lửa vừa khoảng 1-2 phút cho dậy mùi, cho tiếp tỏi, hành tím và ớt băm vào xào thêm khoảng 2 phút đến khi thơm vàng nhẹ.",
+    "Đổ nước dừa tươi và giấm vào nồi cùng dứa thái lát, hành tây cắt múi cau và một ít đường, đun sôi khoảng 5 phút rồi nêm lại cho vị chua thanh, ngọt dịu và hơi gắt nhẹ ở đầu lưỡi.",
+    "Pha mắm nêm: khuấy đều mắm nêm với dứa băm, đường, tỏi ớt băm và ít nước cốt chanh đến khi sánh, vị mặn - ngọt - chua hài hoà.",
+    "Dọn nồi nước giấm đang sôi lăn tăn trên bếp mini giữa bàn cùng đĩa bò, bánh tráng, bún và rau. Nhúng từng lát bò khoảng 20-30 giây, thịt vừa chuyển sang màu hồng tái là vớt ra ngay để không bị dai.",
+    "Trải bánh tráng, đặt bò nhúng cùng bún, dưa leo, dứa và rau sống, cuốn chặt tay, chấm đẫm mắm nêm pha dứa và ăn ngay khi cuốn còn tươi giòn."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://tasteofvietnam.vn/?p=2318",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH — Cách nấu lẩu bò nhúng giấm (dấm) (bản đăng lại nguyên văn trên tasteofvietnam.vn) — Cho 4 người: thịt bò 1 kg, giấm 100 ml, nước dừa tươi 1.5 lít, thơm 1/2 quả, mắm nêm 4 muỗng canh, sả 2 nhánh, đường phèn 30 gr."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/9622374-bo-nhung-d%E1%BA%A5m",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Bò Nhúng Dấm của Vân Anh (Củ Dền) — Cho 4 người: thịt bò 1 kg, dấm 400-500 ml (dị biệt chua gắt), nước dừa 1 trái, thơm 1 trái, rau 1 kg các loại, mắm nêm 1 hũ."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/13323810",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Bò Nhúng Giấm (Dấm) của Nguyễn Hoàng Yến — Không định lượng: nước dừa tươi + 1 chén giấm nuôi + sả/tỏi phi; cuốn bánh tráng, bún, rau (xà lách, dưa leo, thơm, tía tô); mắm nêm pha thơm bằm, tỏi ớt, chanh. Xác nhận cấu trúc món."
+    },
+    {
+      "url": "https://digifood.vn/blog/lau-bo-nhung-giam/",
+      "accessed": "2026-10-31",
+      "note": "Digifood — Cách làm bò nhúng dấm (giấm) ngon và đơn giản — Cho 3-4 người: thịt bò 800 gr, giấm 100 ml + dấm gạo non 1/3 bát, nước dừa 1.5 lít, dứa 1/2 quả, bún rối 0.5 kg, bánh tráng 1 tập, mắm nêm."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/bo-nhung-dam.webp",
@@ -129,7 +154,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-008 đợt 8: Đối chiếu 4 nguồn đã mở đọc (Điện Máy XANH 4 người, Cookpad Vân Anh 4 người, Cookpad Nguyễn Hoàng Yến — không định lượng, Digifood 3-4 người). Sửa 2 dòng: thit-bo-than 150→250 g (ĐMX và Cookpad Vân Anh đều 1 kg/4 người = 250 g/người; Digifood 800 g/3-4 người ≈ 229 g/người — file cũ thấp hơn đồng thuận ~40%); dua-thom 30→60 g (ĐMX 1/2 quả/4 ≈ 62 g/người, Digifood 1/2 quả/3-4 ≈ 63-83 g/người). Giữ nguyên: dam-gao 40 g (ĐMX 100 ml/4 = 25 ml/người, Digifood ~49 ml/người; Cookpad Vân Anh 400-500 ml/4 là dị biệt chua gắt, không theo); nuoc-dua-tuoi 60 g (lượng trong nồi 375-430 ml/người theo ĐMX/Digifood nhưng là nước dùng chung không ăn hết — file kê phần húp kèm tượng trưng, giữ quy ước); mam-nem 20 g (chỉ ĐMX định lượng 4 muỗng canh/4 ≈ 15 g/người, chưa đủ 2 nguồn định lượng để sửa); sa 10 g (ĐMX 2 nhánh/4 ≈ 8-10 g/người, khớp); bun-tuoi 60 g, banh-trang 30 g, xa-lach 30 g, dua-leo 30 g (nguồn không định lượng riêng từng món ăn kèm; Digifood định lượng bún 0.5 kg/3-4 người nhưng chỉ 1 nguồn, chưa đủ ngưỡng). serving_grams 320→450 theo tổng nguyên liệu mới 590 g trừ phần nước nhúng còn thừa trong nồi và hao hụt khi cuốn (serving cũ 320 vốn đã thấp hơn cả tổng cũ 460 g). Giữ method nau và region vn: nguồn không chốt gốc xuất xứ đủ mạnh để đổi vùng.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

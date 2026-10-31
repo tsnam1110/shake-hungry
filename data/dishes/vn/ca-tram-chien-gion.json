@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "chien",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -71,14 +71,41 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "gung",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Cá trắm cắt khúc, ướp muối, tiêu và tỏi băm cho thấm.",
-    "Lăn cá qua lớp bột năng mỏng, rũ bớt bột thừa.",
-    "Chiên dầu nóng đến khi vàng giòn hai mặt; ăn kèm nước mắm gừng."
+    "Cá trắm đánh vảy, bỏ mang và ruột, rửa sạch với nước muối loãng rồi cắt khúc hoặc phi lê dày khoảng 1,5cm; thấm khô từng miếng để khi chiên không bắn dầu.",
+    "Ướp cá với muối, tiêu, tỏi băm và gừng băm khoảng 20–30 phút cho thấm và khử tanh; gạt bỏ phần nước ướp thừa trước khi áo bột.",
+    "Lăn từng miếng cá qua một lớp bột năng thật mỏng, phủ đều hai mặt rồi giũ nhẹ cho rơi bớt bột — lớp áo chỉ vừa đủ tạo độ giòn, không dày như tẩm bột chiên xù.",
+    "Đun dầu trong chảo sâu đến khi nóng già, thả cá vào chiên ở lửa vừa–lớn và giữ nguyên 3–4 phút cho mặt dưới vàng giòn mới lật, tránh trở nhiều lần làm vỡ lớp áo.",
+    "Chiên mặt còn lại thêm khoảng 3 phút đến khi cả hai mặt vàng ruộm, miếng cá nhẹ và thịt bên trong trắng đục, không còn trong.",
+    "Vớt cá lên giá hoặc giấy thấm dầu 1–2 phút cho ráo; dọn ăn nóng với nước mắm gừng hoặc tương ớt để giữ độ giòn của lớp áo."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://congthucgiadinh.com/mon-an/ca-tram-tam-bot-chien-gion",
+      "accessed": "2026-10-31",
+      "note": "Công Thức Gia Đình — Cá trắm tẩm bột chiên giòn — Không ghi số người ăn; mẻ 500g cá trắm với bột mì 100g + bột chiên giòn 100g + trứng gà 2 quả (biến thể tẩm bột dày), ướp muối/tiêu/tỏi băm/hành tím băm 15 phút, chiên dầu 180°C khoảng 5–7 phút mỗi mặt."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/10959905",
+      "accessed": "2026-10-31",
+      "note": "Cookpad VN — Điệp Vũ, Cá trắm phi lê chiên giòn — Không ghi định lượng; phi lê cá trắm thái mỏng, ướp gừng băm + muối + tiêu 30 phút, áo một lớp bột mì mỏng rồi rũ bớt bột thừa, chiên vàng — đúng kỹ thuật áo mỏng của file."
+    },
+    {
+      "url": "https://cachnaungon.com/cach-lam-ca-tram-chien-gion-sot-chua-ngot-thom-ngon-02775/",
+      "accessed": "2026-10-31",
+      "note": "Cách Nấu Ngon — Cá trắm chiên giòn sốt chua ngọt — Cho 4 người; cá trắm 1kg chiên trần không áo bột trong 100ml dầu (phần sốt chua ngọt làm riêng có gừng 15g, tỏi 10g, hành 15g cho cả mẻ). Trang mở được một phần nội dung, định lượng lấy từ danh sách nguyên liệu của chính trang."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/ca-tram-chien-gion.webp",
@@ -89,7 +116,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 10 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).]",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 10 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).] [LV2-008 đợt 8: nâng Mức 2 — 3 nguồn đã mở. BỔ SUNG gừng 3g (hiện diện 2/3 nguồn — xem add_lines). GIỮ các dòng còn lại: cá trắm 150g (nguồn chiên trần dùng 1kg/4 người là cá nguyên con, không quy đổi trực tiếp sang khúc/phi lê của file; hai nguồn còn lại không ghi khẩu phần); bột năng 15g giữ dạng áo mỏng — ba nguồn chia ba kiểu áo khác nhau (tẩm bột dày ~40g bột/100g cá; áo bột mì mỏng; chiên trần), file thuộc nhóm áo mỏng được Cookpad ủng hộ trực tiếp, không kiểu áo nào đạt đồng thuận để đổi lượng hay đổi loại bột; tỏi 5g giữ (1/3 nguồn ướp tỏi, 1/3 nguồn dùng tỏi trong phần sốt của món chiên); muối 1g và tiêu 0,5g giữ (3/3 nguồn đều ướp muối + tiêu). KHÔNG thêm trứng và bột chiên giòn (chỉ biến thể tẩm bột dày 1/3 nguồn ủng hộ; riêng slug bot-chien-gion chưa có số dinh dưỡng) và không thêm hành tím (1/3 nguồn). Phương án A: file đã không có dòng dau-an, chủ thể chiên ca-tram đã có oil_absorption_pct 9% nên dầu hấp thụ do engine mô hình hoá, không kê dầu chiên. Method chien và region vn-north giữ nguyên.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

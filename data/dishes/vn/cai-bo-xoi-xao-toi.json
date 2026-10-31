@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "xao",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -34,7 +34,7 @@
   "ingredients": [
     {
       "ingredient_slug": "rau-bina",
-      "quantity": 130,
+      "quantity": 200,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -42,7 +42,7 @@
     },
     {
       "ingredient_slug": "toi",
-      "quantity": 5,
+      "quantity": 10,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -66,11 +66,35 @@
     }
   ],
   "recipe_steps": [
-    "Cải bó xôi (rau bina) nhặt rửa sạch, cắt khúc.",
-    "Phi thơm tỏi với dầu.",
-    "Cho rau vào xào lửa lớn 2 phút vừa chín, nêm nước mắm, dùng nóng."
+    "Cải bó xôi cắt bỏ gốc già và lá dập, rửa nhiều lần cho sạch cát, cắt khúc khoảng 5–7 cm; tách riêng phần cuống dày và phần lá để xào lệch thời gian. Tỏi bóc vỏ, đập dập.",
+    "Để rau thật ráo nước — rau còn ướt sẽ ra nước khi xào, làm món xào bị luộc và nhạt vị.",
+    "Đun nóng dầu ăn trong chảo lớn trên lửa lớn, cho tỏi vào phi khoảng 30 giây đến khi vàng nhẹ và dậy mùi thơm, không để tỏi cháy.",
+    "Cho phần cuống cải vào xào trước khoảng 30 giây, đảo đều tay cho cuống vừa mềm xuống.",
+    "Cho tiếp phần lá vào, đảo nhanh và đều trên lửa lớn 1–2 phút đến khi lá vừa xộp xuống, còn xanh mướt và bóng dầu.",
+    "Nêm nước mắm vừa ăn, đảo thêm vài giây rồi tắt bếp ngay khi rau vừa chín tới; trút ra đĩa và dùng nóng để rau không ra nước thêm."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/8537499",
+      "accessed": "2026-10-31",
+      "note": "Cookpad VN — Cải bó xôi xào tỏi (Bòn Bon) — 1 phần ăn: cải bó xôi 200g, tỏi 5 tép đập dập, dầu ăn và gia vị thông thường; xào nhanh tay cho rau vừa mềm xuống là đạt, rắc tiêu xay."
+    },
+    {
+      "url": "https://vuonxanhpho.vn/blogs/rau-cu/cach-lam-cai-bo-xoi-rau-chan-vit-xao-toi-thom-ngon-don-gian-tai-nha/?p=1670",
+      "accessed": "2026-10-31",
+      "note": "Vườn Xanh Phố — Cải bó xôi (rau chân vịt) xào tỏi (họ Điện Máy XANH) — 2 người: cải bó xôi 400g (200g/người), tỏi 6 tép (3 tép/người), dầu ăn 3 thìa canh (≈22g/người), nêm muối/hạt nêm/bột ngọt; có bước chần sơ rau 2 phút rồi ngâm nước đá trước khi xào."
+    },
+    {
+      "url": "https://nongsandungha.com/cai-bo-xoi-nau-gi-hom-nay-cho-mon-an-them-la-va-hap-dan/",
+      "accessed": "2026-10-31",
+      "note": "Nông sản Dũng Hà — Cải bó xôi xào tỏi (mục 1.9) — Không ghi số người ăn (1 đĩa): cải bó xôi 300g, tỏi 5 tép băm, dầu ăn, gia vị có mắm/muối/hạt nêm/tiêu; xào lửa lớn 1–2 phút."
+    },
+    {
+      "url": "https://danviet.vn/3-loai-rau-xanh-bo-than-trang-duong-chi-5-phut-la-co-mon-ngon-khien-cac-anh-thich-me-20230322020424967.htm",
+      "accessed": "2026-10-31",
+      "note": "Dân Việt — Cải bó xôi xào tỏi (công thức gợi ý) — Không định lượng: kỹ thuật tách riêng phần thân và lá — phi tỏi, xào thân trước 30 giây rồi mới cho lá, xào lửa lớn, nêm hạt nêm. Dùng đối chiếu kỹ thuật, không dùng đối chiếu định lượng."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/cai-bo-xoi-xao-toi.webp",
@@ -81,7 +105,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Theo §4 của kế hoạch: rau-bina trong kho đã xác nhận là spinach (Spinacia oleracea) nên dùng slug rau-bina, không tạo slug cai-bo-xoi mới.",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Theo §4 của kế hoạch: rau-bina trong kho đã xác nhận là spinach (Spinacia oleracea) nên dùng slug rau-bina, không tạo slug cai-bo-xoi mới. [LV2-008 đợt 8: 4 nguồn đã mở đọc — Cookpad Bòn Bon (1 phần ăn), Vườn Xanh Phố họ DMX (2 người), Nông sản Dũng Hà (1 đĩa, không ghi khẩu phần), Dân Việt (chỉ kỹ thuật). SỬA rau-bina 130→200g theo đồng thuận 200g/người của 2 nguồn có khẩu phần rõ (file lệch −35%); serving 140g GIỮ NGUYÊN vì rau bina co mạnh khi xào, 200g rau sống cho ~120g rau chín cộng dầu/gia vị ≈ 140g dọn đĩa. SỬA tỏi 5→10g theo khoảng 3–5 tép/người của 3 nguồn định lượng. GIỮ dầu ăn 8g: chỉ Vườn Xanh Phố định lượng (≈22g/người, mức cao kiểu công thức DMX) — 1 nguồn duy nhất nên không đủ ngưỡng đổi, và 8g đủ cho 1 đĩa rau xào thực tế. GIỮ nước mắm 4g: Dũng Hà có mắm trong gia vị xào, các nguồn khác nêm muối/hạt nêm — vấn đề nêm nước mắm cho rau xào là câu hỏi quy ước cấp kho đang chờ chủ dự án (đã ghi ở LV2-005 §4) nên không tự đổi ở cấp món. Giữ method xao, region vn.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

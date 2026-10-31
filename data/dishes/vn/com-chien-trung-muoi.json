@@ -25,7 +25,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "chien",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -106,14 +106,41 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "toi",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Lòng đỏ trứng muối hấp chín, tán nhuyễn; cơm nguội đánh tơi.",
-    "Phi phần trứng muối với dầu cho nổi bọt, xào thịt xay và đậu Hà Lan.",
-    "Rang cơm cùng trứng gà và hỗn hợp trứng muối, rắc hành lá và tiêu."
+    "Đánh tơi cơm nguội và để cơm khô mặt; nếu dùng cơm mới nấu thì xới ra khay cho bay hơi và nguội hẳn để khi chiên hạt cơm không dính vào nhau.",
+    "Hấp lòng đỏ trứng muối khoảng 7-10 phút cho chín chắc, để nguội rồi dùng thìa tán nhuyễn; đánh tan trứng gà trong một chén riêng.",
+    "Bắc chảo trên lửa vừa, cho phần dầu phi vào đun nóng, phi tỏi băm đến khi thơm và vàng nhẹ, rồi cho trứng muối đã tán vào đảo nhanh tay đến khi trứng nổi bọt và tơi như cát.",
+    "Cho thịt xay vào đảo cùng khoảng 2-3 phút cho thịt săn lại và tơi hạt, tiếp tục cho đậu Hà Lan vào xào thêm khoảng 2 phút cho chín tới.",
+    "Cho cơm vào chảo, rưới trứng gà đã đánh tan quanh chảo, đảo đều tay trên lửa lớn 4-5 phút đến khi hạt cơm khô, tơi, áo vàng đều.",
+    "Nêm tiêu cho thơm, rắc hành lá cắt nhỏ, đảo thêm vài lượt rồi tắt bếp; xúc cơm ra đĩa và dùng nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/3-cach-lam-com-chien-trung-muoi-gion-ngon-beo-ngay-hap-dan-06760?srsltid=AfmBOophIz6jA1VSKuLpHZ6Kyc4ZH-J00jIMI4I4I-wOZPGeL-QcXhyO",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH — 3 cách làm cơm chiên trứng muối (biên tập Lê Nguyễn Ngọc Lam) — 3 biến thể đạm: tôm (3 người: cơm nguội 100g, trứng muối 4 quả, trứng gà 1 quả, dầu ăn 2 muỗng canh), thịt heo (4 người: cơm 500g, thịt heo 400g, trứng muối 5 quả, trứng gà 3 quả, dầu ăn 1 muỗng canh + dầu điều 1 muỗng canh), mực (3 người: cơm 200g, trứng muối 6 quả, trứng gà 2 quả, dầu ăn 2 muỗng canh). Chỉ dùng lòng đỏ trứng muối."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/15406121",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Bếp Thị Say, Cơm Chiên Tôm Trứng Muối — 1 người. 1 bát cơm nguội, 1 quả trứng muối (dùng cả lòng trắng và lòng đỏ), 4 con tôm, tỏi và hành lá; dầu ăn dùng ở 4 bước nhỏ, tổng khoảng 1,8 muỗng canh."
+    },
+    {
+      "url": "https://eva.vn/mon-ngon-cuoi-tuan/9-cach-lam-com-chien-trung-ngon-don-gian-chi-vai-phut-la-xong-c347a526274.html",
+      "accessed": "2026-10-31",
+      "note": "Eva (Bếp Eva) — 9 cách làm cơm chiên trứng, mục Cơm chiên trứng muối — Không ghi số người ăn. 1 bát cơm nguội, 3 lòng đỏ trứng muối, 1 quả trứng gà, 2 cây lạp xưởng, tỏi 2 tép, hành tây, hành lá, tiêu."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/com-chien-trung-muoi.webp",
@@ -124,7 +151,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 đợt 2 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [Đính chính 2026-10-31 — Phương án A/QA-002: dau-an 10 g → 3 g. Chỉ giữ phần dầu cho bước phụ có thật trong công thức (phi trứng muối với dầu (phần dầu phi ăn cùng cơm)) — mức 3 g/khẩu phần là định lượng chế biến cho bước phi/xào nhanh, phần dầu này ăn vào cùng nhân/sốt. Dầu chiên chính không kê nữa: đã được engine mô hình hoá theo CALC-004.]",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 đợt 2 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [Đính chính 2026-10-31 — Phương án A/QA-002: dau-an 10 g → 3 g. Chỉ giữ phần dầu cho bước phụ có thật trong công thức (phi trứng muối với dầu (phần dầu phi ăn cùng cơm)) — mức 3 g/khẩu phần là định lượng chế biến cho bước phi/xào nhanh, phần dầu này ăn vào cùng nhân/sốt. Dầu chiên chính không kê nữa: đã được engine mô hình hoá theo CALC-004.] [LV2-008 đợt 8: nâng Mức 2 với 3 nguồn đã mở độc lập (Điện Máy XANH 3 biến thể, Cookpad Bếp Thị Say 1 người, Eva). THÊM tỏi 3g vì 3/3 nguồn đều phi tỏi mà file thiếu hẳn. GIỮ cơm 220g (Bếp Thị Say 1 bát cơm nguội/người; số cơm của ĐMX phân tán 33-125g/người, không đồng thuận), trứng vịt muối 50g (Eva 3 lòng đỏ/bát cơm xấp xỉ 50g lòng đỏ; Bếp Thị Say 1 quả nguyên/người), trứng gà 30g (ĐMX 0,3-0,75 quả/người), thịt xay 40g và đậu Hà Lan 25g (đạm và rau củ thay đổi theo biến thể, chưa đủ >=2 họ đồng thuận để sửa). PHÂN XỬ DẦU theo Phương án A: GIỮ dau-an 3g đúng đính chính QA-002 đã ghi trong file — cơm không phải chủ thể chiên ngập dầu (com-trang có oil_absorption_pct = 0), dòng dầu chỉ đại diện phần dầu phi trứng muối ăn cùng cơm; các nguồn cho dầu xào/chiên cơm cao hơn (ĐMX biến thể thịt heo khoảng 7g/người gồm dầu điều, Bếp Thị Say cộng dồn nhiều bước khoảng 25g/người) nhưng đó là dầu xào thực tế, việc có phản ánh thêm vào dòng dầu hay không là quyết định cấp kho, không tự sửa ở đợt này. Viết lại 6 bước nấu.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

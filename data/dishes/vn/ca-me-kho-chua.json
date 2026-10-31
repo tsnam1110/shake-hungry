@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "kho",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -42,7 +42,7 @@
     },
     {
       "ingredient_slug": "me-chin",
-      "quantity": 15,
+      "quantity": 8,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -106,11 +106,30 @@
     }
   ],
   "recipe_steps": [
-    "Cá mè làm sạch, cắt khúc, ướp nước mắm và hành, tỏi.",
-    "Me dằm với nước ấm, lọc lấy nước chua; cho cá vào nồi cùng nước me, nêm đường cân bằng vị chua.",
-    "Kho lửa nhỏ đến khi cá thấm, nước sệt; thêm ớt và hành lá."
+    "Cá mè đánh vảy, bỏ mang và ruột, cạo sạch màng đen trong bụng, rửa lại rồi cắt khúc vừa ăn; xát một ít muối lên cá, để 10 phút rồi rửa lại cho bớt tanh và thấm khô.",
+    "Ướp cá với một nửa phần hành tím và tỏi băm cùng một ít nước mắm khoảng 15 phút cho thịt cá săn lại và thấm vị mặn nền.",
+    "Cho me chín vào bát, thêm khoảng 100ml nước ấm, dằm nát rồi lọc qua rây lấy nước cốt, bỏ hạt và xơ me.",
+    "Đun nóng dầu ăn trong nồi đất, phi hành tím và tỏi còn lại đến khi thơm và vàng nhẹ thì xếp cá vào, trở nhẹ tay khoảng 2 phút cho mặt cá se lại.",
+    "Rưới nước cốt me và phần nước mắm còn lại vào nồi, thêm nước nóng xăm xắp mặt cá, đun sôi rồi hạ lửa nhỏ kho liu riu 25–30 phút; giữa chừng trở cá một lần và nêm đường cho vị chua — ngọt cân bằng.",
+    "Khi nước kho sệt lại, bóng và bám đều quanh khúc cá thì rắc hành lá cắt khúc và ớt lát lên trên, đậy nắp để cá nghỉ 5 phút rồi dọn ăn nóng với cơm."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/4502943",
+      "accessed": "2026-10-31",
+      "note": "Cookpad VN — Winnie Nguyen, Cá diêu hồng kho me — Mẫu cá kho me đúng cấu trúc chua của file, không ghi số người ăn: 2 khứa cá, me vắt 1 muỗng canh + 1/2 cup nước ấm, đường vàng 2 muỗng canh, tỏi 2 tép + hành tím 2 củ, ớt 4–5 trái, dầu ăn 1 muỗng canh, nước mắm 1/3 cup."
+    },
+    {
+      "url": "https://vaobepwiki.com/cach-nau-mon-ca-loc-kho-khe-va-kho-me-thay/",
+      "accessed": "2026-10-31",
+      "note": "Vào Bếp Wiki — Cá lóc kho khế và kho me (phần cá lóc kho me) — Cho 4 phần ăn: cá lóc 700g, me ép 30g, hành tím 5 củ, hành lá 10g, ớt tươi 1 trái, ớt bột 1/2 thìa cà phê, nước mắm 2 muỗng canh, dầu ăn 2 muỗng canh, nước màu 1 muỗng canh; kho 2 lửa 30 + 15 phút."
+    },
+    {
+      "url": "https://etime.danviet.vn/kho-ca-thom-phuc-nhanh-du-len-mau-dep-chi-can-cho-them-loai-qua-dan-da-nay-20250113130503083.htm",
+      "accessed": "2026-10-31",
+      "note": "Dân Việt — Kho cá thịt với me — Mẫu kho cá với me, không ghi số người ăn: 500g cá, me chín 1–2 quả, hành tím 2–3 củ, tỏi 1–2 nhánh, ớt tươi 2–3 quả, kèm nước mắm/đường/dầu ăn/hành lá; kho lửa nhỏ 30–40 phút."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/ca-me-kho-chua.webp",
@@ -121,7 +140,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-008 đợt 8: nâng Mức 2 — 3 nguồn đã mở, cả 3 đều là mẫu cá kho ME đúng cấu trúc chua của file (me chín dằm nước cốt, không phải kho dưa chua/khế). SỬA me-chin 15→8g (2 nguồn độc lập hội tụ ~7,5g/khẩu phần, file lệch +100% — xem quantity_changes). GIỮ các dòng còn lại: cá mè 150g (Vào Bếp Wiki 700g/4 phần = 175g/khẩu phần — file thấp hơn 14%, dưới ngưỡng sửa); nước mắm 10g (nguồn 2 muỗng canh/4 phần ≈ 8g — khớp); đường 8g (các nguồn tản 5–12g/khẩu phần, file ở giữa dải nên không có đồng thuận sửa); hành tím 8g (nguồn ~10–13g/khẩu phần — xu hướng cao hơn nhưng chưa đủ 2 nguồn vượt ngưỡng 30% một cách rõ ràng); tỏi 5g (2/3 nguồn có tỏi); ớt tươi 5g và dầu ăn 5g (nguồn dầu ~7g/khẩu phần — lệch dưới 30%); hành lá 3g (nguồn 10g/4 phần = 2,5g — khớp). Nước màu xuất hiện ở 1/3 nguồn và slug nuoc-mau chưa có số dinh dưỡng nên không thêm dòng, chỉ nhắc trong bước nấu. Method kho và region vn-north giữ nguyên: không nguồn nào đủ đồng thuận để đổi vùng cho riêng món này.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
