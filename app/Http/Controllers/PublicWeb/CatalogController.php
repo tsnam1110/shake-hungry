@@ -73,6 +73,8 @@ class CatalogController extends Controller
 
     public function show(Dish $dish): JsonResponse
     {
+        // Nhãn cách làm có dấu để giao diện không hiển thị mã slug thô (nau, luoc…).
+        $dish->setAttribute('cooking_method_label', $dish->cookingMethodLabel());
         $dish->load([
             'names', 'region', 'mealSlots', 'nutrition', 'tags:id,slug,name',
             'dishIngredients.ingredient:id,name_vi,slug',
@@ -188,6 +190,7 @@ class CatalogController extends Controller
                 'name' => $dish->displayName(),
                 'region' => $dish->region?->name,
                 'cooking_method' => $dish->cooking_method,
+                'cooking_method_label' => $dish->cookingMethodLabel(),
                 'serving_desc' => $dish->serving_desc,
                 'slots' => $dish->mealSlots->pluck('slot'),
                 'nutrition' => $dish->nutrition === null ? null : [

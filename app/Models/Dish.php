@@ -43,6 +43,30 @@ class Dish extends Model
         return $this->hasMany(DishName::class);
     }
 
+    /** Nhãn tiếng Việt có dấu cho mã cách chế biến lưu dạng slug trong CSDL. */
+    public const COOKING_METHOD_LABELS = [
+        'nau' => 'Nấu',
+        'luoc' => 'Luộc',
+        'hap' => 'Hấp',
+        'kho' => 'Kho',
+        'xao' => 'Xào',
+        'chien' => 'Chiên',
+        'chien-ngap-dau' => 'Chiên ngập dầu',
+        'ran' => 'Rán',
+        'nuong' => 'Nướng',
+        'tron' => 'Trộn',
+        'song' => 'Sống',
+    ];
+
+    public function cookingMethodLabel(): ?string
+    {
+        if ($this->cooking_method === null) {
+            return null;
+        }
+
+        return self::COOKING_METHOD_LABELS[$this->cooking_method] ?? $this->cooking_method;
+    }
+
     /**
      * Tên hiển thị cho người dùng Việt: luôn ưu tiên tên chính tiếng Việt có
      * dấu, không phụ thuộc thứ tự dòng tên trong dữ liệu (DATA-009).

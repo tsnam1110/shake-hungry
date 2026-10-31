@@ -14,6 +14,7 @@
 <script>
 const slug = location.pathname.split('/').pop();
 const slotName = { sang: 'Sáng', trua: 'Trưa', chieu: 'Chiều', toi: 'Tối', 'an-vat': 'Ăn vặt' };
+const methodName = { nau: 'Nấu', luoc: 'Luộc', hap: 'Hấp', kho: 'Kho', xao: 'Xào', chien: 'Chiên', 'chien-ngap-dau': 'Chiên ngập dầu', ran: 'Rán', nuong: 'Nướng', tron: 'Trộn', song: 'Sống' };
 const confLabel = { high: 'Tin cậy cao', medium: 'Tin cậy trung bình', low: 'Tin cậy thấp · số tham khảo' };
 const confClass = { high: '', medium: 'medium', low: 'low' };
 function esc(s) { return (s ?? '').toString().replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
@@ -24,7 +25,7 @@ fetch('/api/dishes/' + encodeURIComponent(slug), { headers: { 'Accept': 'applica
     .then(r => r.json())
     .then(({ dish: d, variants, provenance }) => {
         const n = d.nutrition;
-        const name = d.names?.find(x => x.is_primary)?.name ?? d.slug;
+        const name = d.names?.find(x => x.is_primary && x.locale === 'vi')?.name ?? d.names?.find(x => x.is_primary)?.name ?? d.slug;
         const aliases = (d.names ?? []).filter(x => !x.is_primary).map(x => x.name);
         document.title = name + ' — Lắc Đói';
         const unv = provenance?.unverified_ingredients ?? [];
@@ -33,7 +34,7 @@ fetch('/api/dishes/' + encodeURIComponent(slug), { headers: { 'Accept': 'applica
         document.getElementById('content').innerHTML = `
         <h1 class="ld-title" style="margin-top:6px">${esc(name)}</h1>
         ${aliases.length ? `<p style="color:var(--color-faint);margin:0">Tên gọi khác: ${aliases.map(esc).join(' · ')}</p>` : ''}
-        <p class="ld-subtitle" style="margin-top:4px">${esc(d.region?.name ?? '')}${d.cooking_method ? ' · Cách làm: ' + esc(d.cooking_method) : ''}${d.serving_desc ? ' · ' + esc(d.serving_desc) : ''}</p>
+        <p class="ld-subtitle" style="margin-top:4px">${esc(d.region?.name ?? '')}${d.cooking_method ? ' · Cách làm: ' + esc(d.cooking_method_label ?? methodName[d.cooking_method] ?? d.cooking_method) : ''}${d.serving_desc ? ' · ' + esc(d.serving_desc) : ''}</p>
         <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:12px">
             ${(d.meal_slots ?? []).map(s => `<span class="ld-badge vu">${slotName[s.slot] ?? esc(s.slot)}</span>`).join('')}
             ${otherTags.map(t => `<span class="ld-badge">${esc(t.name)}</span>`).join('')}

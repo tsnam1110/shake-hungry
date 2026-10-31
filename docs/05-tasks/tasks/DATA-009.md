@@ -50,3 +50,16 @@ nhìn thấy là các tên tiếng Anh phiên âm ở vị trí tên hiển th�
   biết từ trước, không phát sinh từ đợt này).
 - Pest **106/106**. Đã đồng bộ `dish_names` vào CSDL đang chạy theo đúng logic
   của DishSeeder cho mọi file thay đổi.
+
+## Bổ sung cùng ngày — nhãn "Cách làm" hiển thị mã slug
+
+Chủ dự án phát hiện thêm: ở trang chi tiết món, dòng "Cách làm" hiển thị mã
+slug thô (`nau`, `luoc`) thay vì nhãn tiếng Việt (`Nấu`, `Luộc`) — đây mới là
+phần "cách làm không dấu" dễ thấy nhất. Đã sửa:
+
+- `Dish::COOKING_METHOD_LABELS` + `Dish::cookingMethodLabel()` là nguồn nhãn
+  duy nhất (Nấu, Luộc, Hấp, Kho, Xào, Chiên, Chiên ngập dầu, Rán, Nướng, Trộn,
+  Sống); API chi tiết món và API Lắc trả thêm `cooking_method_label`.
+- `dish.blade.php` hiển thị nhãn từ API (kèm bản đồ nhãn dự phòng phía giao
+  diện) và ưu tiên tên chính locale `vi` khi chọn tên hiển thị.
+- Test hồi quy: `tests/Feature/DishDisplayTest.php` (2 test).
