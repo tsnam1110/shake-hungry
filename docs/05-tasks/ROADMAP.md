@@ -172,6 +172,12 @@ kiểm chứng TEST-002**; `migrate:fresh --seed` dựng lại đúng toàn bộ
 | [DISH-004](./tasks/DISH-004.md) | Lên 500 món — **mốc đủ dùng** | Dữ liệu | 🔶 | DISH-003 | 2026-10-31 (đã lên 500 món + 20 nguyên liệu mới; chờ duyệt công thức) |
 | [QA-001](./tasks/QA-001.md) | Rà soát chất lượng định kỳ mỗi 50 món | QA | ⬜ | DISH-001 | — |
 | [QA-002](./tasks/QA-002.md) | Chạy đo độ chính xác calo theo ACCURACY-SPEC | QA | ⬜ | DISH-003 | — |
+| [FRUIT-001](./tasks/FRUIT-001.md) | Schema + hạ tầng dữ liệu nhánh hoa quả | Dữ liệu | ⬜ | — | Thiết kế: FRUIT-MODULE.md (chờ chốt QT-8) |
+| [FRUIT-002](./tasks/FRUIT-002.md) | Bổ sung nguyên liệu quả còn thiếu (~78 loại) | Dữ liệu | ⬜ | — | Gồm quả nhập khẩu lưu hành tại VN |
+| [FRUIT-003](./tasks/FRUIT-003.md) | Soạn hồ sơ hoa quả (~110 quả) | Dữ liệu | ⬜ | FRUIT-001, FRUIT-002 | Mùa vụ + 2 cửa sổ + kết hợp có mức bằng chứng |
+| [FRUIT-004](./tasks/FRUIT-004.md) | Thu thập giá mùa vụ 3 miền × 12 tháng | Dữ liệu | ⬜ | FRUIT-003 | Mỗi dòng giá có nguồn + ngày thu thập |
+| [FRUIT-005](./tasks/FRUIT-005.md) | Module quản trị /admin/hoa-qua | Backend | ⬜ | FRUIT-001 | Mục riêng trong SPA admin |
+| [FRUIT-006](./tasks/FRUIT-006.md) | Trang người dùng /hoa-qua | Frontend | ⬜ | FRUIT-003, FRUIT-004 | + khối "Tháng này nên ăn gì" |
 
 **DoD GĐ3:** ≥500 món Mức 1; QA-002 cho kết quả ≥80% số món trong ±20%; nhật ký đo đã ghi vào
 [ACCURACY-SPEC §6](../06-nutrition/ACCURACY-SPEC.md).

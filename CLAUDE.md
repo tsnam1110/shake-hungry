@@ -142,6 +142,7 @@ Bảng trạng thái tổng quan — **bắt buộc cập nhật mỗi khi đón
 | GĐ3 | Sản xuất dữ liệu: 150 → 500 món | 🔵 IN PROGRESS — **đã đạt 500 món (DISH-004)**; còn QA-002 đo độ chính xác + duyệt 200 công thức mới | — |
 | GĐ4 | Engine gợi ý + nút Lắc bản chính thức | ✅ DONE — REC-001 + UI-002/003 chạy thật ở trang chủ | 2026-10-31 |
 | GĐ5 | Hồ sơ người dùng + TDEE + lịch sử bữa ăn | ✅ DONE — USR-001…004 chạy thật | 2026-10-31 |
+| Nhánh hoa quả | Hồ sơ quả: mùa vụ + giá theo miền/mùa + vùng trồng + kết hợp thực phẩm; admin riêng `/admin/hoa-qua` | 🔵 THIẾT KẾ — đã soạn FRUIT-MODULE.md + FRUIT-001…006, chờ chủ dự án chốt (QT-8) | — |
 | GĐ6 | Đóng góp cộng đồng + lớp ngũ hành (tuỳ chọn) | 🔵 IN PROGRESS — đóng góp cộng đồng ✅ (CTR-001); lớp ngũ hành ⬜ (TCM-001…003, tuỳ chọn) | — |
 
 ---
