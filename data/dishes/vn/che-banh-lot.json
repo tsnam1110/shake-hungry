@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "chieu",
@@ -71,15 +71,47 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "muoi",
+      "quantity": 0.5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Xay lá dứa lấy nước xanh, pha với bột gạo và bột năng, khuấy chín thành bột dẻo.",
-    "Ép bột qua khuôn/rổ thủng vào nước lạnh thành sợi bánh lọt, luộc lại cho trong.",
-    "Thắng nước đường thốt nốt; cho bánh lọt vào ly, thêm đá.",
-    "Chan nước cốt dừa và nước đường."
+    "Lá dứa rửa sạch, cắt nhỏ, xay với nước rồi lọc qua rây lấy nước cốt xanh, bỏ bã.",
+    "Hoà bột gạo và bột năng vào nước lá dứa, lọc lại cho mịn và để bột nghỉ khoảng 10–15 phút.",
+    "Khuấy bột trên lửa nhỏ liên tục đến khi bột đặc lại, chuyển trong và dẻo, múc lên chảy chậm, thì tắt bếp và khuấy thêm một lúc cho sợi dai.",
+    "Ép bột còn nóng qua rổ thưa hoặc khuôn bánh lọt vào thau nước đá, ngâm khoảng 5 phút cho sợi se lại và dai, rồi vớt ra để ráo.",
+    "Thắng đường thốt nốt với chút nước và vài cọng lá dứa trên lửa vừa đến khi đường tan, sôi và hơi sánh thì tắt bếp, để nguội.",
+    "Nấu nước cốt dừa với một nhúm muối trên lửa nhỏ, khuấy đều, vừa sôi lăn tăn thì tắt bếp ngay để cốt dừa không tách dầu.",
+    "Cho bánh lọt vào ly, chan nước đường và nước cốt dừa, thêm đá đập nhỏ và dùng ngay khi còn lạnh."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://bepxua.vn/cach-nau-che-banh-lot-dep-mat-lai-vo-cung-ngon-ngot/",
+      "accessed": "2026-10-31",
+      "note": "Bếp Xưa — bột gạo 100 + bột năng 100 + bột bắp 50, lá dứa 200, cốt dừa 200 ml + đường 50. Không ghi số phần ăn → chỉ dùng tỉ lệ/quy trình."
+    },
+    {
+      "url": "https://vietnamnet.vn/cach-lam-che-banh-lot-thom-beo-don-gian-tai-nha-2151823.html",
+      "accessed": "2026-10-31",
+      "note": "VietNamNet (bộ số Điện Máy XANH — ảnh ghi nguồn dienmayxanh, số trùng hệt nên tính chung 1 họ) — bột gạo 200 + bột năng 400, lá dứa 100, đường thốt nốt 120 + đường cát 50, cốt dừa vắt ~200 ml. Không ghi phần ăn."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/541025",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — NgaDung Dang, 15 phần ăn (họ duy nhất ghi rõ phần ăn): bột củ năng 1 gói; phương án thay thế ghi rõ bột gạo 300 + bột năng 100 (tỉ lệ 3:1, khớp tỉ lệ file); cốt dừa 400 ml/15 ≈ 27 ml; thốt nốt 300–400 g/15 ≈ 20–27 g (file 20 g khớp)."
+    },
+    {
+      "url": "http://www.savourydays.com/cach-lam-che-banh-lot-dau-xanh/",
+      "accessed": "2026-10-31",
+      "note": "Savoury Days — biến thể bánh lọt đậu xanh + hạt lựu, chỉ đối chiếu phần sợi: bột năng 100 + bột gạo 50, lá dứa 50, cốt dừa 400 + sữa 100 + đường 70–100. Không ghi phần ăn."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/che-banh-lot.webp",
@@ -90,7 +122,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt)",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-010 đợt 10: Đạt Mức 2 — đối chiếu 4 họ nguồn đã mở (Bếp Xưa; VietNamNet/Điện Máy XANH cùng một bộ số tính 1 họ; Cookpad NgaDung Dang 15 phần; Savoury Days chỉ đối chiếu phần sợi). Tỉ lệ bột giữa các họ bất đồng >30% nên giữ nguyên định lượng file theo quy tắc bất đồng; thêm muối 0,5 g (3/4 họ có). Steps viết lại 7 bước.]",
   "status": "draft",
   "source": "llm_suggested",
   "confidence": "unknown",

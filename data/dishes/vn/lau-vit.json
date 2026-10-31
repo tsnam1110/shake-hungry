@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "toi",
@@ -69,14 +69,6 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "nuoc-cot-dua",
-      "quantity": 30,
-      "unit_name": "g",
-      "is_optional": false,
-      "source": "llm_suggested",
-      "confidence": "low"
-    },
-    {
       "ingredient_slug": "sa",
       "quantity": 10,
       "unit_name": "g",
@@ -115,14 +107,50 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "chao",
+      "quantity": 35,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nuoc-dua-tuoi",
+      "quantity": 100,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Vịt chặt miếng, ướp sả, gừng và nước mắm; xào săn rồi đổ nước và nước cốt dừa vào nấu thành nước lẩu.",
-    "Khoai môn gọt vỏ cắt miếng, chiên sơ cho săn mặt.",
-    "Khi ăn nhúng vịt, khoai môn, nấm và rau muống vào nồi lẩu sôi, ăn kèm bún tươi."
+    "Khử mùi vịt: chà muối và gừng đập dập (thêm chút rượu trắng nếu có) khắp mình vịt khoảng 5 phút, rửa lại nhiều lần, chặt miếng vừa ăn và để ráo.",
+    "Tán nhuyễn chao cùng đường và ít nước chao, trộn với vịt, hành tím và gừng băm, ướp ít nhất 30–60 phút cho thấm (chao đã mặn nên chưa nêm thêm muối ở bước này).",
+    "Khoai môn gọt vỏ, cắt miếng vừa ăn, ngâm nước 15–20 phút cho hết nhựa; chiên hoặc xào sơ khoảng 5 phút cho xém cạnh, săn mặt để khi nấu không bị nát (dầu chiên khoai không kê vào định lượng — Phương án A).",
+    "Phi thơm hành tím, tỏi và gừng trong nồi lẩu, cho vịt đã ướp vào xào lửa lớn khoảng 10 phút đến khi thịt săn lại và dậy mùi chao.",
+    "Thêm nước và nước dừa tươi ngập mặt thịt, đun sôi, hớt bọt, hạ lửa nhỏ hầm khoảng 30 phút đến khi vịt mềm.",
+    "Cho khoai môn đã chiên sơ vào nấu thêm khoảng 10 phút cho khoai mềm; nêm nếm lại vừa ăn, cho nấm rơm vào nấu sôi lại.",
+    "Giữ nồi lẩu sôi lăn tăn trên bếp mini, nhúng rau muống ăn kèm bún tươi, chấm thêm chao pha đường và ớt nếu thích đậm vị."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-mon-vit-nau-chao-mem-ngon-bui-beo-don-gian-tai-nha-01283",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH — vịt nấu chao (biên tập Tạ Thị Diễm), 4 người: vịt 1 con ~1,5 kg, khoai môn 500 (125/khẩu phần), chao đỏ 350 (87,5/khẩu phần — mức cao ngoại lệ), rau muống 50, cải thìa 50, bún 125. Công thức 2 cùng trang (cùng họ): thêm măng tươi 200/4 = 50."
+    },
+    {
+      "url": "https://tiphay.vn/bai-viet/cach-lam-lau-vit-nau-chao-thom-lung-hap-dan-tai-nha-p2634.html",
+      "accessed": "2026-10-31",
+      "note": "Bách Hoá XANH (bản đăng lại trên tiphay.vn, nội dung ghi rõ của BHX), 3–4 người: vịt ~1,5 kg, chao 75 g ướp + 50 g chấm = 125 g (31–42/khẩu phần), khoai môn xào sơ, nước dừa xiêm 1 trái, rau muống/cải xanh/nấm rơm nhúng."
+    },
+    {
+      "url": "https://nauankhongkho.vn/blog/cach-nau-lau-vit-nau-chao-ngon-me-say-doi-vi-com-nha-5KXb2o985wm5",
+      "accessed": "2026-10-31",
+      "note": "Nấu Ăn Không Khó (Túc Túc), mẻ ~4 người: vịt 1,5 kg, chao 8 muỗng canh ≈ 130–160 g (32–40/khẩu phần), khoai môn 500 (125), nước dừa tươi 500 ml (125) + nước 1 lít, bún 500 (125), gừng 50, hành tím 50, tỏi 50."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/lau-vit.webp",
@@ -133,7 +161,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-010 đợt 10: Đạt Mức 2 với định danh biến thể NẤU CHAO — đối chiếu 3 họ đã mở (ĐMX 4 người; Bách Hoá XANH 3–4 người; Nấu Ăn Không Khó, tác giả Túc Túc). File tên 'lẩu vịt' trung tính nhưng mọi dấu hiệu cấu trúc đều là biến thể nấu chao (khoai môn chiên sơ ở 3/3 họ chao, nấm rơm + rau muống nhúng, bún) — chỉ thiếu chao và sai nền cốt dừa. Bổ sung chao 35 g (định danh, 3/3 họ; lượng theo đồng thuận BHX + Nấu Ăn Không Khó 31–42 g/khẩu phần, ĐMX 87,5 là ngoại lệ) và nước dừa tươi 100 g; bỏ nước cốt dừa 30 g (0/3 họ dùng). Khoai môn/bún giữ nguyên do khác thang khẩu phần nồi chung. Sả 10 g của file: 0/3 họ chính dùng (thuộc biến thể hầm sả) — giữ và ghi nhận. Steps viết lại 7 bước.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

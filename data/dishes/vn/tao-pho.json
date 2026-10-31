@@ -25,7 +25,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "chieu",
@@ -62,15 +62,42 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "la-dua",
+      "quantity": 2,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Ngâm đậu nành, xay và lọc lấy sữa đậu nành, đun sôi.",
-    "Pha chất làm đông (thạch cao/nước chua), đổ vào sữa đậu để tào phớ đông mịn.",
-    "Thắng nước đường gừng.",
-    "Hớt tào phớ từng lớp mỏng vào bát, chan nước đường gừng; ăn nóng hoặc lạnh."
+    "Ngâm đậu nành 4–6 giờ (trời lạnh tới 8 giờ) cho hạt nở mềm, đãi sạch vỏ, rửa lại nhiều lần.",
+    "Xay đậu với nước theo nhiều mẻ nhỏ cho thật mịn, đổ qua túi vải vắt kiệt lấy sữa, bỏ bã.",
+    "Đun sữa đậu trên lửa nhỏ khoảng 10–20 phút, khuấy đều và hớt bọt liên tục; sữa sôi lăn tăn, thơm mùi đậu và không còn mùi sống là đạt.",
+    "Hoà chất kết đông với chút nước, tráng đều đáy nồi/âu; đổ sữa đang nóng vào thật dứt khoát một lần, hớt bọt mặt, đậy kín và để yên tuyệt đối 30–40 phút (ủ thêm khăn nếu trời lạnh) cho phớ đông mịn, mặt phẳng, lắc nhẹ không sóng.",
+    "Trong lúc chờ, nấu nước đường: đun đường với nước và gừng thái lát/lá dứa trên lửa nhỏ 5–10 phút tới khi đường tan hết, nước hơi sánh và thơm gừng.",
+    "Dùng muỗng dẹt hớt tào phớ thành từng lớp thật mỏng vào bát (hớt ngang, không múc sâu để phớ không vỡ).",
+    "Chan nước đường gừng ấm hoặc để nguội thêm đá; phớ đạt là mềm tan, không chua, không vữa, nước đường ngọt thanh."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.bachhoaxanh.com/kinh-nghiem-hay/mach-ban-cach-lam-tao-pho-bang-yen-mach-vua-ngon-vua-chang-lo-tang-can-1308857",
+      "accessed": "2026-10-31",
+      "note": "Bách Hoá XANH, bài 5 biến thể — biến thể thạch cao (truyền thống): đậu nành 200 g, bột gạo 50 g, thạch cao phi 5 g, gừng 30 g, nước 1,5 L, 2–3 người; biến thể lá dứa: đậu 100 g/600 ml nước. Quy khẩu phần 250 g theo tỉ lệ mẻ: đậu ≈30–35 g."
+    },
+    {
+      "url": "https://tripi.vn/blog/vi/kinh-nghiem-hay/duong-nho-la-gi-cong-dung-va-cach-lam-tao-pho-voi-duong-nho-tripi",
+      "accessed": "2026-10-31",
+      "note": "Tripi — đậu khô 150 g, đường nho 1 thìa, 800 ml nước, 2–4 người; đường hoa mai 300 g cho toàn bộ nồi nước đường. Quy theo tỉ lệ mẻ: đậu ≈40 g/250 g."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/6784980",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Yuni Tran: đậu khô 100 g/1 L nước, đường nho 0,5 thìa cà phê; nước đường lá dứa + gừng. Quy theo tỉ lệ mẻ: đậu ≈23 g/250 g."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/tao-pho.webp",
@@ -81,7 +108,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt) THIẾU NGUYÊN LIỆU: thạch cao (nước chua làm đông đậu) (phụ) — cần bổ sung vào kho [LV2-009 đợt 9: GIỮ Mức 1 — tra cứu bị chặn 429. Trần một phần: chất đông (thạch cao/đường nho) chưa có slug trong kho — chỉ chặn riêng dòng đó, không chặn món; khi đối chiếu lại phải tách lượng đường của phớ và của nước đường.]",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt) THIẾU NGUYÊN LIỆU: thạch cao (nước chua làm đông đậu) (phụ) — cần bổ sung vào kho [LV2-009 đợt 9: GIỮ Mức 1 — tra cứu bị chặn 429. Trần một phần: chất đông (thạch cao/đường nho) chưa có slug trong kho — chỉ chặn riêng dòng đó, không chặn món; khi đối chiếu lại phải tách lượng đường của phớ và của nước đường.] [LV2-010 đợt 10: ĐẠT Mức 2 — 3 họ đã mở (Bách Hoá XANH biến thể thạch cao/lá dứa, Tripi đường nho, Cookpad Yuni Tran). Đậu nành quy về khẩu phần 23–40 g theo tỉ lệ mẻ, file 30 g nằm giữa nên giữ nguyên cả 3 dòng; thêm lá dứa 2 g phụ vết (3/3 họ, slug null vớt bỏ). Trần còn lại: chất kết đông (đường nho/thạch cao ~1 g/khẩu phần) chưa có slug trong kho — chờ biên soạn, không chặn nâng cấp vì là phụ vết.]",
   "status": "draft",
   "source": "llm_suggested",
   "confidence": "unknown",

@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nuong",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -119,14 +119,75 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "mia",
+      "quantity": 25,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "gio-song",
+      "quantity": 10,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "ca-thac-lac",
+      "quantity": 8,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "mo-lon-nuoc",
+      "quantity": 8,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "trung-ga",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Quết tôm xay với thịt xay, sả tỏi băm, nêm vừa, bọc quanh que mía thành chạo.",
-    "Nướng chạo tôm trên than cho thơm vàng.",
-    "Dọn chạo với bún, dưa leo, rau sống, đậu phộng rang, chấm nước mắm chua ngọt."
+    "Tôm bóc vỏ, rút chỉ lưng, rửa sạch, thấm thật khô rồi ướp 1/2 muỗng cà phê muối, để ngăn mát 20–30 phút cho tôm lạnh sâu — tôm lạnh khi quết mới dai, không bị bở.",
+    "Quết/xay tôm thật nhuyễn, trộn thịt xay, giò sống, cá thác lác, mỡ hạt lựu, lòng trắng trứng, sả tỏi băm, nước mắm và đường; quết đều tay đến khi hỗn hợp dẻo, kéo sợi và không dính thành tô là đạt.",
+    "Mía róc vỏ, chẻ thanh dài 7–10 cm; thoa chút dầu lên tay, nắn chạo bọc kín 2/3 thanh mía, dày khoảng 1 cm, nén chặt tay để khi nướng không bung.",
+    "Hấp chạo 5–7 phút trên nước sôi cho bề mặt se và định hình, lấy ra để ráo mặt trước khi nướng.",
+    "Nướng chạo trên than hoặc lò 200–250°C, lật đều các mặt khoảng 10–15 phút đến khi chạo vàng đều, thơm mùi mía nướng và chắc tay là chín.",
+    "Pha nước mắm chua ngọt: khuấy tan đường với nước ấm, thêm nước mắm và nước cốt chanh, thả tỏi ớt băm — vị chua ngọt dịu, không gắt mặn.",
+    "Trụng nhanh bún cho tơi, bày vào tô cùng xà lách, dưa leo thái lát, húng quế và giá (nếu có); đặt chạo tôm lên trên, rắc lạc rang giã dập.",
+    "Chan nước mắm chua ngọt khi ăn; có thể rút chạo khỏi que mía, cắt miếng vừa ăn và cuốn rau — chạo đạt là dai giòn, ngọt tôm, thơm nhẹ mùi mía."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://bepmina.vn/mon-viet/cach-lam-chao-tom/",
+      "accessed": "2026-10-31",
+      "note": "Bếp MiNa, bản bọc mía, không ghi khẩu phần — quy theo tỉ lệ trên tôm file 70 g: tôm 500 g, cá thác lác/nạc xay 100 g, giò sống 100 g, bột bắp 50 g."
+    },
+    {
+      "url": "https://www.hoidaubepaau.com/chao-tom/",
+      "accessed": "2026-10-31",
+      "note": "Hội Đầu Bếp Á Âu (Chef Dung), không ghi khẩu phần — quy theo tỉ lệ trên tôm 70 g: tôm 300 g, thịt heo xay 100 g, mỡ heo 50 g, bột năng 100 g, lòng trắng trứng 1 muỗng, mía 5 thanh; hấp 7–10 phút rồi nướng."
+    },
+    {
+      "url": "https://tripi.vn/blog/vi/kinh-nghiem-hay/cach-che-bien-chao-tom-boc-mia-dai-mem-ngot-ngao-khien-me-chong-phai-tam-tac-khen-ngoi-tripi",
+      "accessed": "2026-10-31",
+      "note": "Tripi — quy theo tỉ lệ trên tôm 70 g: tôm 400 g, giò sống 40 g, cá thác lác 40 g, mỡ heo 40 g, 1/2 lòng trắng, mía 1/2 kg. Bộ số trùng vuahaisanloccantho.com nên hai trang chỉ tính 1 họ."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/bun-chao-tom.webp",
@@ -137,7 +198,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. THIẾU NGUYÊN LIỆU: mía cây (que quấn chạo tôm) (vai trò phụ) — cần bổ sung vào kho. [LV2-009 đợt 9: GIỮ Mức 1 — chỉ mở được 1 họ nguồn (Bếp MiNa, không ghi khẩu phần: tôm sú 500 g + thác lác/nạc xay 100 g + giò sống 100 g + bột bắp 50 g; tỉ lệ tôm:phần phụ 500:200 so với file tôm 70 g + thịt xay 20 g) trước khi dịch vụ mở trang bị chặn. Thêm trần: chạo tôm quấn MÍA nhưng kho không có slug mia (nuoc-mia là nước ép, không thay thế được); gio-song null. Làm lại khi gom đủ 3 họ.]",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. THIẾU NGUYÊN LIỆU: mía cây (que quấn chạo tôm) (vai trò phụ) — cần bổ sung vào kho. [LV2-009 đợt 9: GIỮ Mức 1 — chỉ mở được 1 họ nguồn (Bếp MiNa, không ghi khẩu phần: tôm sú 500 g + thác lác/nạc xay 100 g + giò sống 100 g + bột bắp 50 g; tỉ lệ tôm:phần phụ 500:200 so với file tôm 70 g + thịt xay 20 g) trước khi dịch vụ mở trang bị chặn. Thêm trần: chạo tôm quấn MÍA nhưng kho không có slug mia (nuoc-mia là nước ép, không thay thế được); gio-song null. Làm lại khi gom đủ 3 họ.] [LV2-010 đợt 10: NÂNG MỨC 2 — đã mở trực tiếp 3 họ nguồn độc lập (Bếp MiNa bản bọc mía; Hội Đầu Bếp Á Âu/Chef Dung; Tripi — bộ số Tripi trùng vuahaisanloccantho nên chỉ tính 1 họ). Cả 3 họ đều không ghi khẩu phần nên quy đổi theo tỉ lệ trên neo tôm 70 g của file. Không sửa dòng nào (thịt xay 20 g lệch họ Á Âu ~13%, dưới ngưỡng). Thêm 5 dòng: mia 25 g (3/3 họ; slug mia đã biên soạn ở Phần A đợt này — null + hồ sơ nên vào missing theo quy tắc phụ null), gio-song 10 g (2/3 họ, slug null nhưng là phụ kết dính), ca-thac-lac 8 g (2/3 họ), mo-lon-nuoc 8 g (2/3 họ, mỡ trộn nhân theo tiền lệ chao-tom, không phải dầu chiên), trung-ga 3 g (2/3 họ dùng lòng trắng). Không thêm tinh bột: 2 họ bất đồng loại (bột bắp/bột năng) và lượng (>30%). Bất thường ghi nhận: dòng sa 5 g không họ bọc mía nào dùng (nghi lẫn bản bọc sả); bản chiên phổ biến ngang bản nướng của file.]",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

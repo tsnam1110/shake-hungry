@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nuong",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -151,15 +151,55 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "suon-chay",
+      "quantity": 15,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "thinh-gao",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Tàu hũ ky ngâm mềm, ướp nước tương, nướng làm sườn chay; đậu phụ trộn mộc nhĩ, hấp làm chả chay.",
-    "Miến ngâm mềm trộn tàu hũ ky thái sợi làm bì chay; làm mỡ hành bằng dầu ăn và hành lá.",
-    "Nấu cơm tấm, xới ra đĩa cùng sườn chay, bì chay, chả chay.",
-    "Dọn kèm đồ chua, dưa leo, cà chua; chan nước tương pha chua ngọt (thay nước mắm)."
+    "Nấu cơm tấm: vo gạo tấm, ngâm 30 phút, nấu với tỉ lệ nước khoảng 1 gạo : 1,3 nước; cơm chín xới tơi, ủ thêm 10 phút cho ráo hơi.",
+    "Ngâm sườn non chay trong nước ấm 20–30 phút cho nở, vắt thật ráo, khứa nhẹ mặt, ướp nước tương, chút đường, tiêu và dầu điều khoảng 15–30 phút cho thấm.",
+    "Áp chảo hoặc nướng sườn chay lửa vừa đến khi hai mặt vàng nâu và săn; nếu rim, cho ít nước vào rim đến khi sốt sệt bám đều, miếng sườn khô ráo.",
+    "Làm chả chay: đậu phụ luộc sơ, ép ráo, nghiền nhuyễn, trộn tàu hũ ky băm, mộc nhĩ và bún tàu cắt khúc, bột nghệ lấy màu; nén vào khuôn, hấp 20–25 phút đến khi mặt chả ráo, để nguội hẳn mới cắt miếng.",
+    "Làm bì chay: trụng miến/bún tàu 1 phút, xả lạnh, để ráo, cắt khúc; trộn cùng tàu hũ ky và mì căn thái sợi, nêm nhẹ rồi trộn thính gạo sau cùng cho sợi bì tơi, không vón.",
+    "Làm đồ chua: cà rốt (và củ cải nếu có) thái sợi, ướp muối đường 15 phút, vắt ráo, trộn giấm/chanh và đường, để ít nhất 20 phút cho giòn thấm; làm mỡ hành chay bằng dầu nóng rưới hành lá cắt nhỏ.",
+    "Pha nước chấm chua ngọt từ nước tương (không ánh xạ sang nước mắm — giữ quy ước đợt 9), đường, chanh và ớt; bày cơm ra đĩa, rưới mỡ hành, xếp sườn, bì, chả, đồ chua, dưa leo và cà chua, dọn kèm chén nước chấm."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.huongnghiepaau.com/com-tam-suon-bi-cha-chay",
+      "accessed": "2026-10-31",
+      "note": "Hướng Nghiệp Á Âu — mẻ không ghi số đĩa: chả gồm đậu hũ 400 g, tàu hũ ky 30 g, mộc nhĩ khô 10 g, bún tàu 40 g; bì: miến 40 g + thính; sườn non chay 80 g; đồ chua củ cải trắng 350 g + cà rốt 100 g; hấp chả 20+5 phút."
+    },
+    {
+      "url": "https://www.bluestone.com.vn/blogs/vao-bep/com-tam-suon-bi-cha-chay",
+      "accessed": "2026-10-31",
+      "note": "Bluestone — gạo tấm 400 g, sườn non chay 200 g, tàu hũ ky khô 50 g, mì căn 50 g, đậu hũ 150 g, đồ chua 150 g; chả hấp 20 phút; cơm tỉ lệ 1 gạo : 1,3 nước. Chả 'trứng' chay từ đậu hũ + bột nghệ, trứng muối chay tuỳ chọn."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/17041720",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Shan Wu (Sơn Panda), ghi rõ 10 người: 10 miếng sườn non chay (≈1 miếng/người), thính gạo rang 30 g (3 g/người), bún tàu 1 gói, nấm đông cô khô 20 g; bản sườn + bì, không chả."
+    },
+    {
+      "url": "https://cachnaungon.com/cach-lam-com-tam-suon-bi-cha-chay-sieu-don-gian-03151",
+      "accessed": "2026-10-31",
+      "note": "Họ phụ đối chiếu (bản đăng lại công thức Natha Food, tính 1 họ với Natha), 4 người: chả đậu hũ 200 g (50 g/đĩa), tàu hũ ky 200 g (50 g/đĩa), mộc nhĩ 15 g, bún tàu tổng 80 g."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/com-tam-chay.webp",
@@ -170,7 +210,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [LV2-009 đợt 9: GIỮ Mức 1 — tra cứu bị chặn 429. Đã kiểm chứng file sạch chay (dùng nuoc-tuong, không trứng/sữa/thịt). LƯU Ý cho đợt sau: không ánh xạ 'nước mắm chay' của nguồn sang nuoc-mam-truyen-thong/nuoc-mam-cong-nghiep (kho không có slug nước mắm chay) — giữ nuoc-tuong. Ứng viên nguồn: Hướng Nghiệp Á Âu (cơm tấm sườn bì chả chay), Bluestone.]",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [LV2-009 đợt 9: GIỮ Mức 1 — tra cứu bị chặn 429. Đã kiểm chứng file sạch chay (dùng nuoc-tuong, không trứng/sữa/thịt). LƯU Ý cho đợt sau: không ánh xạ 'nước mắm chay' của nguồn sang nuoc-mam-truyen-thong/nuoc-mam-cong-nghiep (kho không có slug nước mắm chay) — giữ nuoc-tuong. Ứng viên nguồn: Hướng Nghiệp Á Âu (cơm tấm sườn bì chả chay), Bluestone.] [LV2-010 đợt 10: ĐẠT Mức 2 — 3 họ nguồn đã mở (Hướng Nghiệp Á Âu, Bluestone, Cookpad Shan Wu; đối chiếu thêm họ Natha qua bản đăng lại). Thuần chay xác nhận: chả 'trứng' chay = đậu hũ + bột nghệ, không trứng thật ở mọi họ; không thêm mật ong của 2 họ để giữ thuần chay. Thêm suon-chay 15 g + thinh-gao 5 g (4/4 họ có, file thiếu); giữ nguyên mọi định lượng cũ vì các họ bất đồng >30%.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -38,15 +38,7 @@
     },
     {
       "ingredient_slug": "tom-su",
-      "quantity": 60,
-      "unit_name": "g",
-      "is_optional": false,
-      "source": "llm_suggested",
-      "confidence": "low"
-    },
-    {
-      "ingredient_slug": "thit-lon-nac-vai",
-      "quantity": 40,
+      "quantity": 140,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -107,14 +99,80 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "thit-lon-ba-chi",
+      "quantity": 70,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "tuong-hat",
+      "quantity": 7,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "me-chin",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "bot-nang",
+      "quantity": 2,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "tom-kho",
+      "quantity": 8,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Quết tôm xay thật dai, nặn thành sợi suông dài, luộc trong nước dùng cho nổi lên.",
-    "Thịt nạc vai luộc trong nước dùng, thái lát.",
-    "Trụng bún, xếp suông tôm, thịt, chan nước dùng, thêm giá, xà lách, hành lá và tiêu."
+    "Ninh nước dùng: xương ống chần rửa sạch, hầm cùng tôm khô, củ cải trắng và hành tây trong khoảng 1,5–2 giờ lửa nhỏ, vớt bọt thường xuyên cho nước ngọt trong; thịt ba chỉ cho vào luộc chung, chín thì vớt ra thái lát mỏng để riêng.",
+    "Làm suông: tôm bóc vỏ bỏ chỉ, ướp chút nước mắm, hành tỏi băm rồi xay nhuyễn; trộn bột năng, chút tiêu và đường, quết thật dai khoảng 10 phút rồi bọc kín để lạnh 1–2 giờ cho suông dai giòn.",
+    "Tôm nguyên con để bày tô: luộc chín trong nước dùng, vớt ra bóc vỏ chừa đuôi; giữ nồi nước dùng sôi lăn tăn trên bếp.",
+    "Tạo vị định danh: phi thơm hành tím với ít dầu, cho tương hột vào xào dậy mùi rồi trút vào nồi nước dùng cùng nước me đã dầm lọc — cho me ít, chỉ lấy vị chua thanh và màu nâu nhẹ; nêm nước mắm, muối, đường phèn, nấu thêm ~20 phút lửa nhỏ.",
+    "Nặn suông: cho tôm quết vào túi cắt đầu, nặn thành sợi dài như con suông thả thẳng vào nồi nước dùng đang sôi; suông nổi lên mặt nước và nước sôi lại là suông chín.",
+    "Trụng bún tươi cho nóng, chia vào tô; xếp thịt ba chỉ thái lát, suông tôm và tôm luộc lên trên cùng giá, xà lách và hành lá cắt nhỏ.",
+    "Chan nước dùng nóng ngập bún, rắc tiêu xay; dọn kèm chén tương hột xào ớt (và nước mắm ớt) để chấm thịt/tôm như cách ăn Trà Vinh.",
+    "Đạt khi: suông dai mà mềm ngọt không bở, nước lèo nâu nhẹ, ngọt xương–tôm khô, chua thanh rất nhẹ của me và thơm tương hột, không chua gắt."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/5212714",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — QUÂN NGUYỄN: mẻ truyền thống: tôm tươi 500 g (toàn bộ xay làm suông), thịt ba chỉ 300 g luộc thái mỏng, tôm khô 50 g, xương ống ~800 g, bún 1 kg, nước 2 lít. Tương hột DUY NHẤT có số: 2 muỗng canh xào với hành tím cho vào nước lèo. Me '1/4 vắt cho cả mẻ — me làm nước dùng thanh chứ không chua'. Bột năng 1 muỗng canh trong suông; quết lạnh ~2 giờ. Quy mô mẻ suy ra 4–5 tô."
+    },
+    {
+      "url": "https://blogamthuc365.edu.vn/bun-suong-tinh-hoa-am-thuc-tra-vinh-niu-chan-du-khach/",
+      "accessed": "2026-10-31",
+      "note": "BlogAnChoi (qua blogamthuc365, trang biên tập) — MẺ TRUYỀN THỐNG CÓ KHẨU PHẦN RÕ 'dành cho khoảng 5 người': tôm sú 700 g (= 140 g/người), thịt ba rọi 300 g (= 60 g/người), me 100 g (= 20 g/người), bún 2 kg, đậu phộng rang 100 g, hành tím 100 g. Nước lèo khẳng định có me + tương hột nhưng tương không ghi lượng."
+    },
+    {
+      "url": "https://blogkhoedep.edu.vn/tro-tai-lam-bun-suong-don-gian-dam-vi-mien-tay/",
+      "accessed": "2026-10-31",
+      "note": "Bách Hoá XANH (bản gương blogkhoedep — cùng họ BHX), 3–4 người: tôm sú 500 g (= ~143 g/người; 300 g làm suông + 200 g nguyên vỏ), thịt ba chỉ 300 g (= ~86 g/người), giò heo 800 g, tôm khô 25 g (= ~7 g/người), bún 3 kg (bất hợp lý), củ cải 100 g. Bản RÚT GỌN: không me, không tương hột — chỉ dùng cho tôm/thịt/tôm khô."
+    },
+    {
+      "url": "https://beptruong.edu.vn/cach-nau-bun-suong",
+      "accessed": "2026-10-31",
+      "note": "Bếp Trưởng Á Âu (Nguyễn Richard) — mẻ truyền thống, không khẩu phần: xương ống 2 kg, tôm sú 500 g + tôm làm suông 500 g riêng, tôm khô 200 g, giò heo 500 g, bún 3 kg; tương hạt + nước me cho vào nước hầm (không số); khẳng định định danh me + tương hạt."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/bun-suong.webp",
@@ -125,7 +183,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. [LV2-009 đợt 9: GIỮ Mức 1 — trần nguyên liệu định danh + không nguồn nào cho khẩu phần đáng tin. Đã mở 4 họ (Cookpad QUÂN NGUYỄN; Bếp Trưởng Á Âu — bản Tripi và Bếp Của Mẹ là cùng họ; Bluestone; Tripi): nước lèo bún suông định danh bằng me + TƯƠNG HẠT (2/3 họ truyền thống khẳng định) nhưng file thiếu cả hai và kho CHƯA CÓ slug tuong-hat; định lượng me duy nhất là '1/4 vắt cho cả mẻ không khẩu phần' — không quy đổi được. Thịt của file (nạc vai thái lát luộc) bất đồng với truyền thống (ba chỉ thái lát hoặc giò heo; Bluestone lại xay nạc vai vào suông) — chưa đủ cơ sở đổi. Điều kiện nâng lại: (a) biên soạn slug tuong-hat kèm tra số; (b) có ≥1 nguồn khẩu phần rõ ràng cho mẻ truyền thống. Ghi nhận thêm: file thiếu tom-kho (2 họ có nhưng lượng bất đồng lớn), bot-nang trong suông và hành phi khi trình bày.]",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. [LV2-009 đợt 9: GIỮ Mức 1 — trần nguyên liệu định danh + không nguồn nào cho khẩu phần đáng tin. Đã mở 4 họ (Cookpad QUÂN NGUYỄN; Bếp Trưởng Á Âu — bản Tripi và Bếp Của Mẹ là cùng họ; Bluestone; Tripi): nước lèo bún suông định danh bằng me + TƯƠNG HẠT (2/3 họ truyền thống khẳng định) nhưng file thiếu cả hai và kho CHƯA CÓ slug tuong-hat; định lượng me duy nhất là '1/4 vắt cho cả mẻ không khẩu phần' — không quy đổi được. Thịt của file (nạc vai thái lát luộc) bất đồng với truyền thống (ba chỉ thái lát hoặc giò heo; Bluestone lại xay nạc vai vào suông) — chưa đủ cơ sở đổi. Điều kiện nâng lại: (a) biên soạn slug tuong-hat kèm tra số; (b) có ≥1 nguồn khẩu phần rõ ràng cho mẻ truyền thống. Ghi nhận thêm: file thiếu tom-kho (2 họ có nhưng lượng bất đồng lớn), bot-nang trong suông và hành phi khi trình bày.] [LV2-010 đợt 10: GIỮ Mức 1 — GIU-TRAN-NGUYEN-LIEU, nhưng đã áp toàn bộ thay đổi định lượng/bước/nguồn đã kiểm chứng theo tiền lệ com-hen (LV2-005). Đã mở 4 họ: Cookpad QUÂN NGUYỄN (truyền thống, tương hột 2 muỗng canh/mẻ, me 1/4 vắt/mẻ), BlogAnChoi ~5 người (tôm 140 g, ba rọi 60 g, me 20 g mỗi người), bản BHX 3–4 người (rút gọn, không me/tương; tôm ~143 g, ba chỉ ~86 g mỗi người), Bếp Trưởng Á Âu (truyền thống, không khẩu phần). Sửa: tom-su 60→140 (2 họ khẩu phần đồng thuận); thay thit-lon-nac-vai 40 bằng thit-lon-ba-chi 70 (3/3 họ truyền thống); thêm tuong-hat 7, me-chin 5 (CHÚ Ý slug me-chin, không phải me = mẻ cơm lên men), bot-nang 2, tom-kho 8; steps viết lại 8 bước. LÝ DO GIỮ MỨC 1: tương hột là nguyên liệu ĐỊNH DANH của nước lèo và slug tuong-hat đã chốt NULL + hồ sơ ở Phần A đợt này — theo quy tắc đã xác lập, định danh null thì món giữ Mức 1 (tiền lệ bún mắm/lẩu mắm). Giữ bún 150 (họ bất đồng 250–857 g/tô, chờ quy ước cấp kho) và không thêm giò heo (chỉ 2 họ, khác lõi Trà Vinh). Khi tuong-hat có số, món đủ điều kiện nâng ngay không cần tra cứu lại.]",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

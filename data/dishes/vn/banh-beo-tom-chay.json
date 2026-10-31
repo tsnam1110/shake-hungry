@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "hap",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "an-vat",
@@ -79,14 +79,42 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "bot-nang",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Tôm luộc, giã/xay thành chấy tôm khô tơi; bột gạo khuấy lỏng.",
-    "Đổ bột vào chén nhỏ, hấp 7–8 phút tới khi bánh trong, lõm giữa.",
-    "Rắc tôm chấy và mỡ hành lên bánh; chan nước mắm pha loãng khi ăn."
+    "Pha bột: trộn bột gạo với bột năng và chút muối, cho nước lạnh vào khuấy tan rồi chế thêm nước sôi, khuấy đều đến khi bột mịn; để bột nghỉ ít nhất 4–6 giờ (tốt nhất qua đêm), trước khi đổ gạn bỏ nước trong trên mặt và bù lại lượng nước ấm tương đương.",
+    "Tôm rửa sạch, luộc chín — giữ lại nước luộc và vỏ tôm để nấu nước mắm; bóc vỏ, bỏ chỉ lưng, giã hoặc xay nhuyễn thịt tôm.",
+    "Làm tôm chấy: phi thơm hành tím với dầu, cho tôm đã xay vào chấy trên lửa nhỏ 10–15 phút, đảo đều tay đến khi tôm khô tơi, chuyển màu vàng cam và dậy mùi là đạt.",
+    "Làm mỡ hành: đun dầu thật nóng rồi rưới vào hành lá thái nhỏ, trộn nhanh cho hành vừa chín tới và giữ màu xanh.",
+    "Nấu nước mắm chan: lọc nước luộc vỏ tôm cho trong, đun với nước mắm và đường đến khi tan, vị mặn ngọt dịu; thêm ớt thái lát khi ăn.",
+    "Hấp bánh: xếp chén vào xửng, đun nước sôi mạnh và làm nóng chén trước, láng một lớp dầu thật mỏng, đổ bột vào 1/3–2/3 chén, hấp lửa lớn 4–8 phút đến khi bánh trắng đục, mặt hơi xoáy là chín.",
+    "Bày bánh trong chén, rắc tôm chấy, rưới mỡ hành, thêm topping giòn (da heo chiên hoặc bánh mì chiên) nếu có, chan nước mắm và ăn nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/15642221",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — QUÂN NGUYỄN (tác giả). Mẻ không ghi số phần ăn: bột gạo 200 g, bột năng 30 g (15% bột gạo), tôm tươi 200 g + tôm khô 50 g, hành tím 200 g (50 g phi chấy), bánh mì sandwich chiên giòn làm topping, mỡ hành từ dầu chiên bánh mì; nước mắm nấu từ nước luộc tôm + 50 g nước mắm + 70 g đường."
+    },
+    {
+      "url": "https://bepxua.vn/cach-lam-banh-beo-hue-thom-ngon-tron-vi/?noamp=mobile",
+      "accessed": "2026-10-31",
+      "note": "Bếp Xưa, 4 người — quy 1 người: bột gạo 62,5 g (≈ file 60 g), bột năng 2,5 g, tôm sú 75 g nguyên con, hành lá 5 g, da heo khô 25 g (topping chiên); hấp 1/3 chén 4–5 phút."
+    },
+    {
+      "url": "https://saigonesebaguette.vn/cach-lam-banh-beo-hue/",
+      "accessed": "2026-10-31",
+      "note": "Saigonese Baguette — bộ số lưu hành chung với dacsanvietnam.co nên tính là 1 họ sao chép (mở trực tiếp tại đây ở vòng 2 đợt 10 sau khi dacsanvietnam.co bị 429 ở vòng 1): bột gạo tẻ 125 g, bột năng 20 g (16% bột gạo), tôm đất tươi 300 g, khoảng 30 chén; ngâm bột qua đêm, hấp lửa lớn 8 phút; nước mắm nấu từ nước luộc vỏ tôm."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/banh-beo-tom-chay.webp",
@@ -97,7 +125,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Khác banh-beo-bi đã có (nhân bì) ở nhân tôm chấy — độc lập theo ghi chú kế hoạch. Nước mắm chan kê trong thành phần theo tiền lệ kho.",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Khác banh-beo-bi đã có (nhân bì) ở nhân tôm chấy — độc lập theo ghi chú kế hoạch. Nước mắm chan kê trong thành phần theo tiền lệ kho. [LV2-010 đợt 10: GIỮ Mức 1 do 429 — mới mở được 2 họ (Cookpad QUÂN NGUYỄN, Bếp Xưa); họ thứ 3 (bộ số 125 g bột gạo/20 g bột năng/300 g tôm lưu hành ở dacsanvietnam.co và saigonesebaguette.vn — tính là 1 họ sao chép) chưa mở trực tiếp được. Tín hiệu chờ xác nhận: file thiếu bot-nang; dòng nước mắm + đường trong file xung đột quy định nước chấm riêng (Q10).] [LV2-010 đợt 10 — VÒNG 2: ĐẠT Mức 2. Mở thêm họ thứ 3 (bộ số 125 g bột gạo/20 g bột năng/300 g tôm của cụm saigonesebaguette.vn + dacsanvietnam.co, tính 1 họ sao chép) trực tiếp tại saigonesebaguette.vn. Ba họ đồng thuận: bột năng có ở 3/3 họ (tỉ lệ 4–16% của bột gạo) mà file thiếu — thêm bot-nang 5 g; bột gạo 60 g khớp Bếp Xưa 62,5 g/người; tôm 50 g khớp phần thịt của Bếp Xưa (75 g nguyên con). Dòng nước mắm + đường trong file được GIỮ theo tiền lệ bun-thit-xao/bun-chao-tom của chính đợt này (nước chan tính trong món; câu hỏi Q10 về nhóm chấm vẫn mở ở cấp kho). Topping giòn là thành phần luân phiên (da heo/bánh mì), không thêm dòng.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

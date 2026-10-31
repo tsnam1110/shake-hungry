@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "chien",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -75,15 +75,51 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "bot-gao",
+      "quantity": 7,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "khoai-tay",
+      "quantity": 12,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Nhào bột nếp với nước ấm thành vỏ dẻo.",
-    "Đồ đậu xanh, giã với đường và dừa nạo làm nhân, vo viên.",
-    "Gói nhân vào vỏ, lăn qua vừng.",
-    "Chiên ngập dầu lửa vừa đến khi bánh vàng, vỏ giòn."
+    "Đậu xanh đãi sạch vỏ, ngâm nước 6–8 giờ cho nở mềm, hấp/đồ khoảng 20–25 phút đến khi đậu chín bở, hạt vỡ nhuyễn khi bóp nhẹ.",
+    "Giã/xay đậu lúc còn nóng, cho lên chảo sên lửa nhỏ với phần đường của nhân và dừa nạo, đảo đều tay đến khi nhân khô ráo, đứng khối, vo viên không dính tay là đạt; để nguội rồi chia viên đều nhau.",
+    "Trộn bột nếp với bột gạo và đường vỏ, cho khoai tây đã hấp chín nghiền mịn vào, rót từ từ nước ấm và nhào đến khi khối bột dẻo mịn, không dính tay; bọc kín, để bột nghỉ khoảng 1 giờ.",
+    "Chia bột thành phần đều nhau, dàn mỏng với phần giữa dày hơn mép, đặt viên nhân vào giữa, túm kín và ép sát vỏ vào nhân — không để lọt không khí, nếu không bánh sẽ nổ khi rán.",
+    "Làm ẩm nhẹ mặt bánh rồi lăn qua vừng, nắn nhẹ cho vừng bám chặt; làm lần lượt đến hết, xếp bánh cách nhau trên khay khô.",
+    "Đun dầu ngập trong chảo sâu lòng đến khoảng 150°C (nhúng đũa khô thấy sủi tăm li ti), thả bánh nhẹ nhàng, giữ lửa vừa và đảo/lăn liên tục để bánh nở đều, không hở mặt khỏi dầu lâu.",
+    "Rán đến khi bánh phồng to, nổi lên, vỏ vàng đều và cứng giòn (cái lớn khoảng 10–14 phút); vớt ra giấy thấm dầu, lắc nhẹ nghe nhân rời bên trong là đạt kiểu bánh rán lúc lắc.",
+    "Ăn nóng là ngon nhất; nếu cần giòn lại, rán nhanh lần hai trên lửa lớn 2–3 phút trước khi ăn."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "http://www.savourydays.com/cach-lam-banh-ran-vung-banh-cam-banh-ran-luc-lac-va-banh-ran-mat-video/",
+      "accessed": "2026-10-31",
+      "note": "Savoury Days (Linh Trang; công thức vỏ của cô Nguyễn Mai), bánh rán lúc lắc/vừng, 20 cái mini — tỉ lệ trên bột nếp: bột tẻ 15%, khoai nghiền 30–35% (ghi rõ thay khoai tây được), đậu xanh 70%, vừng 50 g/20 cái."
+    },
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/2-cach-lam-banh-nhan-banh-dau-xanh-gion-tan-thom-lung-01575",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH (biên tập Ngọc Xuân), 'bánh nếp rán đậu xanh', mẻ 30 cái — bột gạo/bột nếp = 15%, đậu/bột = 50%, đường/bột = 25%, khoai tây 1 củ/mẻ. phunutoday.vn sao chép nguyên văn nên không tính họ riêng."
+    },
+    {
+      "url": "https://danviet.vn/cach-lam-banh-ran-nhan-dau-xanh-ngon-kho-cuong-7777711873-d468045.html",
+      "accessed": "2026-10-31",
+      "note": "Dân Việt (Nguyên Thảo), không ghi số cái — bột nếp 250 g, bột tẻ 8%, đậu xanh 60%, dừa nạo 20%, đường 28%, khoai tây 1 củ; ngâm đậu 6–8 giờ, bột nghỉ 1 giờ."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/banh-ran.webp",
@@ -94,7 +130,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt) [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 8 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).] [LV2-009 đợt 9: GIỮ Mức 1 — tra cứu bị chặn 429, chưa mở được nguồn. Đợt sau cần kiểm tra hai điểm: file không có dòng khoai và không có bot-gao trong khi nhiều công thức có. Không có dòng dầu cho chiên ngập trong file hiện tại là đúng Phương án A.]",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt) [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 8 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).] [LV2-009 đợt 9: GIỮ Mức 1 — tra cứu bị chặn 429, chưa mở được nguồn. Đợt sau cần kiểm tra hai điểm: file không có dòng khoai và không có bot-gao trong khi nhiều công thức có. Không có dòng dầu cho chiên ngập trong file hiện tại là đúng Phương án A.] [LV2-010 đợt 10: NÂNG MỨC 2 — đã mở trực tiếp 3 họ độc lập (Savoury Days/Linh Trang, 20 cái mini; Điện Máy XANH/Biên tập Ngọc Xuân, mẻ 30 cái; Dân Việt/Nguyên Thảo). Đã kiểm tra hai điểm đợt 9 dặn: file thiếu CẢ khoai và bột gạo trong khi 3/3 họ đều có — thêm bot-gao 7 g (ĐMX và Savoury Days cùng cho tỉ lệ 15% bột nếp) và khoai-tay 12 g (3/3 họ trộn khoai nghiền vào vỏ). Không sửa dòng cũ: đậu xanh các họ quy đổi 22,5–31,5 g bất đồng >30% (file 20 g lệch họ thấp nhất ~11%), đường và dừa file khớp Dân Việt. Không có dòng dầu chiên là đúng Phương án A. Bất thường lớn chờ phân xử: serving 1 cái/70 g mâu thuẫn tổng dòng khô 88 g (sau thêm: ~107 g) — tỉ lệ khớp nguồn nhưng quy mô tuyệt đối tương ứng cái ~130–150 g. Đã loại phunutoday.vn (sao chép nguyên văn ĐMX).]",
   "status": "draft",
   "source": "llm_suggested",
   "confidence": "unknown",

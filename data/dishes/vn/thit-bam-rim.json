@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "kho",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -90,11 +90,31 @@
     }
   ],
   "recipe_steps": [
-    "Phi thơm hành tím, tỏi với dầu; cho thịt xay vào đảo tơi, săn mặt.",
-    "Nêm nước mắm, đường thốt nốt, rim lửa nhỏ 8–10 phút cho thịt thấm và hơi keo.",
-    "Rắc tiêu, dùng nóng. Món mặn nhanh: tổng thời gian nấu ~20 phút, nguyên liệu phổ thông."
+    "Băm nhỏ hành tím và tỏi; trộn thịt xay với một phần hành tỏi, chút tiêu và để ướp khoảng 15 phút cho thấm (thịt vai/nạc vai lẫn mỡ ~30% thì rim không khô).",
+    "Bắc chảo lửa vừa, cho dầu ăn vào đun nóng, phi phần hành tím và tỏi còn lại đến vàng thơm, dậy mùi mà không cháy.",
+    "Cho thịt đã ướp vào, dàn đều mặt chảo và để yên 1–2 phút cho thịt săn mặt, sau đó mới đảo và dằm cho thịt tơi rời, không vón cục.",
+    "Khi thịt tơi, săn và bắt đầu xém nhẹ cạnh, cho nước mắm và đường thốt nốt vào, đảo đều để gia vị áo quanh từng hạt thịt.",
+    "Hạ lửa nhỏ, rim thêm khoảng 8–10 phút, đảo thỉnh thoảng; nếu thịt ra nước thì rim đến khi nước keo lại, thịt bóng và chuyển màu nâu cánh gián nhẹ.",
+    "Nếm lại mặn–ngọt cho cân, tắt bếp, rắc tiêu xay lên mặt.",
+    "Dọn nóng với cơm trắng; đạt khi thịt tơi rời, săn mà không khô, vị mặn ngọt đậm, thơm hành tỏi phi và tiêu."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://saigonesebaguette.vn/cach-lam-thit-bam-rang-nuoc-mam/",
+      "accessed": "2026-10-31",
+      "note": "Saigonese Baguette (mở lại đợt này), dạng RỜI đúng định danh — 3 công thức cùng tỉ lệ cho mẻ 300 g thịt băm: nước mắm 2 muỗng canh (~30 g), đường 1 muỗng canh (~12 g), dầu ăn 2 muỗng canh, hành tím 1 củ, tỏi 3 tép, tiêu, hạt nêm; ướp 15–20 phút. Không ghi khẩu phần — dùng theo tỉ lệ mẻ."
+    },
+    {
+      "url": "https://fptshop.com.vn/tin-tuc/dien-may/4-cach-lam-thit-bam-rang-164742",
+      "accessed": "2026-10-31",
+      "note": "FPT Shop (trang biên tập) — HỌ MỚI đợt 10, bản 'thịt băm rang cháy cạnh' dạng rời, mẻ 300 g thịt: đường 2 muỗng cà phê (~8 g), nước mắm 2 muỗng cà phê + 1/2 khi rang (~12,5 g), dầu ăn 2 muỗng cà phê (~10 g), hành tím 2 củ, tiêu; ướp 20 phút."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/858392",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — huongiangbui, bản VIÊN: 200 g thịt xay, 3 phần ăn → thịt ~67 g/phần, nước mắm 2 muỗng canh/mẻ = 10 g/phần — khớp đúng dòng nước mắm của file ở mức khẩu phần. Vai trò họ thứ ba theo tiền lệ phân xử LV2-005."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/thit-bam-rim.webp",
@@ -105,7 +125,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-004 đợt 4: thử nâng Mức 2 — GIỮ MỨC 1 chờ phân xử định danh: 2/3 nguồn mở được (monngonmoingay.com/cong-thuc/thit-rim-mam-ruoc; cakholangvudai.com/thit-ba-chi-rim) nấu ba chỉ cắt MIẾNG rim cùng nồi; PATO Recipes ghi nền xay nhưng lượng mắm/dầu vượt xa tỉ lệ đĩa. File là thịt băm rim — cần chủ dự án quyết giữ định danh băm hay mở rộng.] [Phân xử LV2-005 Phần A (2026-10-31): ĐỊNH DANH ĐÃ XÁC NHẬN — \"thịt băm rim nước mắm\" theo kế hoạch DISH-005 §3.3 là món có thật và phân biệt được với thịt rim miếng: 3 nguồn đã mở đều dùng thịt xay/băm rim nước mắm (Cookpad thịt băm viên rim nước mắm; Kenh14 thịt xay rim dạng băm rời; Thế Giới Ẩm Thực thịt băm rim mặn). KHÔNG cần chủ dự án quyết lại định danh. Món vẫn giữ Mức 1 vì lý do khác: 2 nguồn đúng dạng băm rời có định lượng đầy đủ (Saigonese Baguette, Nấu Chuẩn Ăn Ngon) bị chặn 429 khi mở — chờ mở lại khi hết chặn để chốt định lượng rồi nâng. Ghi nhận: nước mắm theo tỉ lệ 2 nguồn đã mở cao hơn file; đường thốt nốt 8 g không nguồn đã mở nào ủng hộ ở bản nguyên bản.] [LV2-006 đợt 6: GIỮ Mức 1 — chỉ tìm được 1 nguồn đạt chuẩn có định lượng (Saigonese Baguette, đã mở — khi quy về khẩu phần thì ỦNG HỘ định lượng hiện tại của file). Kenh14 đúng dạng món nhưng không định lượng gia vị; Homnayangi bị loại (trang tổng hợp vô danh). Cần thêm 2 nguồn định lượng dạng thịt băm rời từ nhà xuất bản có biên tập. Đường thốt nốt không có nguồn ủng hộ — cùng mẫu hình quy ước đang chờ chủ dự án.] [LV2-009 đợt 9: GIỮ Mức 1 — thiếu họ nguồn định lượng thứ ba cho dạng băm rời (giữ nguyên kết luận LV2-006). Đã mở: Saigonese Baguette (dạng rời đúng định danh: thịt 300 g, nước mắm 30 g = 10 g/100 g thịt, đường ~4 g/100 g, dầu rang 30 g — ủng hộ file), Cookpad huongiangbui (bản viên — mắm 10 g/phần khớp file), Cookpad Annie Vo (dạng rời, không trích xuất được định lượng); một nguồn nữa lỗi tải, không phải 429. Bằng chứng nghiêng về phía file đúng (nước mắm 10 g khớp). Dòng duong-thot-not 8 g: không nguồn đã mở nào dùng thốt nốt — thuộc quy ước cấp kho đang chờ quyết (LV2-005 §4). Dầu 5 g giữ theo Phương án A.]",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-004 đợt 4: thử nâng Mức 2 — GIỮ MỨC 1 chờ phân xử định danh: 2/3 nguồn mở được (monngonmoingay.com/cong-thuc/thit-rim-mam-ruoc; cakholangvudai.com/thit-ba-chi-rim) nấu ba chỉ cắt MIẾNG rim cùng nồi; PATO Recipes ghi nền xay nhưng lượng mắm/dầu vượt xa tỉ lệ đĩa. File là thịt băm rim — cần chủ dự án quyết giữ định danh băm hay mở rộng.] [Phân xử LV2-005 Phần A (2026-10-31): ĐỊNH DANH ĐÃ XÁC NHẬN — \"thịt băm rim nước mắm\" theo kế hoạch DISH-005 §3.3 là món có thật và phân biệt được với thịt rim miếng: 3 nguồn đã mở đều dùng thịt xay/băm rim nước mắm (Cookpad thịt băm viên rim nước mắm; Kenh14 thịt xay rim dạng băm rời; Thế Giới Ẩm Thực thịt băm rim mặn). KHÔNG cần chủ dự án quyết lại định danh. Món vẫn giữ Mức 1 vì lý do khác: 2 nguồn đúng dạng băm rời có định lượng đầy đủ (Saigonese Baguette, Nấu Chuẩn Ăn Ngon) bị chặn 429 khi mở — chờ mở lại khi hết chặn để chốt định lượng rồi nâng. Ghi nhận: nước mắm theo tỉ lệ 2 nguồn đã mở cao hơn file; đường thốt nốt 8 g không nguồn đã mở nào ủng hộ ở bản nguyên bản.] [LV2-006 đợt 6: GIỮ Mức 1 — chỉ tìm được 1 nguồn đạt chuẩn có định lượng (Saigonese Baguette, đã mở — khi quy về khẩu phần thì ỦNG HỘ định lượng hiện tại của file). Kenh14 đúng dạng món nhưng không định lượng gia vị; Homnayangi bị loại (trang tổng hợp vô danh). Cần thêm 2 nguồn định lượng dạng thịt băm rời từ nhà xuất bản có biên tập. Đường thốt nốt không có nguồn ủng hộ — cùng mẫu hình quy ước đang chờ chủ dự án.] [LV2-009 đợt 9: GIỮ Mức 1 — thiếu họ nguồn định lượng thứ ba cho dạng băm rời (giữ nguyên kết luận LV2-006). Đã mở: Saigonese Baguette (dạng rời đúng định danh: thịt 300 g, nước mắm 30 g = 10 g/100 g thịt, đường ~4 g/100 g, dầu rang 30 g — ủng hộ file), Cookpad huongiangbui (bản viên — mắm 10 g/phần khớp file), Cookpad Annie Vo (dạng rời, không trích xuất được định lượng); một nguồn nữa lỗi tải, không phải 429. Bằng chứng nghiêng về phía file đúng (nước mắm 10 g khớp). Dòng duong-thot-not 8 g: không nguồn đã mở nào dùng thốt nốt — thuộc quy ước cấp kho đang chờ quyết (LV2-005 §4). Dầu 5 g giữ theo Phương án A.] [LV2-010 đợt 10: ĐẠT Mức 2 — KHÔNG sửa dòng nào. Họ định lượng dạng rời: Saigonese Baguette (mẻ 300 g: mắm 30 g, đường cát ~12 g, dầu 30 g) + FPT Shop MỚI (mẻ 300 g cháy cạnh: mắm ~12,5 g, đường ~8 g, dầu ~10 g, hành tím 2 củ) + Cookpad huongiangbui (viên, 3 phần: mắm 10 g/phần khớp file). Tỉ lệ mắm các họ trải 4,2–15 g/100 g thịt (bất đồng >30% → giữ file 10 g nằm giữa dải); dầu file 4,2 g/100 g gần FPT 3,3 và đúng Phương án A; hành/tỏi/tiêu đều trong ±30%. Đường thốt nốt 8 g: không họ nào dùng thốt nốt, tỉ lệ đường cát của họ thấp hơn — GHI NHẬN thuộc quy ước cấp kho chờ quyết (LV2-005 §4), không tự đổi. Bước viết lại 7 bước theo 2 họ rời.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

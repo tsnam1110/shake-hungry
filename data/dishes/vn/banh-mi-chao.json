@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "chien",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -26,7 +26,7 @@
     }
   ],
   "serving_desc": "1 phần chảo kèm 1 ổ bánh mì",
-  "serving_grams": 180,
+  "serving_grams": 310,
   "ingredients": [
     {
       "ingredient_slug": "banh-mi",
@@ -67,14 +67,58 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "pate-gan",
+      "quantity": 50,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "ca-chua",
+      "quantity": 60,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-tay",
+      "quantity": 20,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Xúc xích khía nhẹ, áp chảo cho xém mặt; đập trứng ốp la cùng chảo (khoảng 4 phút).",
-    "Bánh mì nướng giòn, cắt miếng chấm kèm hoặc xẻ ổ cho trứng và xúc xích vào.",
-    "Rắc hành lá, rưới nước tương, ăn ngay trên chảo hoặc dọn ra đĩa. Tổng thời gian làm ~10 phút."
+    "Khía chéo nông vài đường trên thân xúc xích; pate để lạnh cắt miếng dày ~1 cm; hành tây thái sợi, cà chua thái hạt lựu; bánh mì nướng lại 3–4 phút cho vỏ giòn.",
+    "Đun nóng chảo gang/chảo nhỏ trên lửa vừa, cho chút dầu hoặc bơ, áp chảo xúc xích 3–5 phút đến khi xém vàng các mặt thì gạt sang một góc chảo.",
+    "Cho hành tây vào đảo 30 giây–1 phút cho thơm và hơi mềm, thêm cà chua hạt lựu, xào 3–5 phút đến khi cà nhuyễn thành sốt sệt, nêm chút đường, nước mắm và tiêu.",
+    "Xếp pate vào chảo cạnh xúc xích, làm nóng 1–2 phút mỗi mặt cho pate thơm và se mặt, tránh đảo nát.",
+    "Đập trứng gà trực tiếp vào khoảng trống trong chảo, hạ lửa vừa–nhỏ, đậy nắp 2–3 phút đến khi lòng trắng chín hẳn và lòng đỏ còn sánh (hoặc chín kỹ tuỳ khẩu vị).",
+    "Rưới đều sốt cà chua lên các nguyên liệu, rắc hành lá và tiêu xay, giữ chảo trên bếp thêm ~1 phút cho mọi thứ sôi lăn tăn.",
+    "Bắc nguyên chảo xuống lót đĩa cách nhiệt, dọn ngay khi còn nóng xèo kèm ổ bánh mì giòn để xé chấm sốt và pate."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.cet.edu.vn/cach-lam-banh-mi-chao",
+      "accessed": "2026-10-31",
+      "note": "CET — trường đào tạo bếp (Chef Lập), cho 1 người: xúc xích 1 cái, trứng gà 1 quả, pate 50 g, cà chua 2 quả, hành tây 1 củ, bánh mì 1–2 cái; sốt cà chua xào nhuyễn trong chảo gang."
+    },
+    {
+      "url": "https://phunutoday.vn/cach-lam-banh-mi-chao-sieu-don-gian-thom-ngon-ai-an-cung-me-d497067.html",
+      "accessed": "2026-10-31",
+      "note": "Phụ Nữ Today (báo), 2 người: bánh mì 2 ổ, trứng 2 quả, xúc xích 2 cây, pate gan 100 g, thịt nguội 50 g, cà chua 1 quả, hành tây 1/2 củ, tương cà. Quy khẩu phần: pate 50 g, cà chua ~30 g, hành tây ~20 g."
+    },
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-banh-mi-chao-don-gian-thom-ngon-nhanh-chong-01800",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH — biến thể thập cẩm, 2 người: bánh mì 2 cái, xúc xích 2 cây, trứng 1 quả, cà chua 5 quả làm sốt, phô mai 100 g, hành tây 1/2 củ. Họ này không có pate (biến thể khác) nhưng đồng thuận 1 cây xúc xích + 1 ổ bánh mì/khẩu phần và sốt nền cà chua trong chảo."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/banh-mi-chao.webp",
@@ -85,7 +129,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món chiên theo quy ước Phương án A (EDITORIAL-GUIDE §12): công thức KHÔNG kê dầu của bước chiên chính — dầu hấp thụ do engine mô hình hoá theo hệ số CALC-004 của nguyên liệu. Xúc xích là thành phẩm đã chín (chỉ áp chảo hâm nóng) nên nhận hệ số hấp thụ 0 theo tiền lệ CALC-004 cho thành phẩm chế biến sẵn (áp dụng nhân đợt này); bánh mì cũng không phải chủ thể chiên.",
+  "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món chiên theo quy ước Phương án A (EDITORIAL-GUIDE §12): công thức KHÔNG kê dầu của bước chiên chính — dầu hấp thụ do engine mô hình hoá theo hệ số CALC-004 của nguyên liệu. Xúc xích là thành phẩm đã chín (chỉ áp chảo hâm nóng) nên nhận hệ số hấp thụ 0 theo tiền lệ CALC-004 cho thành phẩm chế biến sẵn (áp dụng nhân đợt này); bánh mì cũng không phải chủ thể chiên. [LV2-010 đợt 10: ĐẠT Mức 2 — 3 họ đã mở (CET/Chef Lập, Phụ Nữ Today, Điện Máy XANH); thêm pate-gan 50 g (đồng thuận tuyệt đối CET + Phụ Nữ Today, là thành phần định danh bị thiếu hẳn), ca-chua 60 g làm sốt nền (3/3 họ có, lượng bất đồng nên lấy mức thận trọng) và hanh-tay 20 g; trung-ga/xuc-xich/banh-mi giữ nguyên vì khớp 1 quả/1 cây/1 ổ ở cả 3 họ; serving_grams 180 → 310 vì file gốc đặt serving đúng bằng tổng các dòng (80+50+40+5+5 = 180) và tổng mới là 310 g — giữ nhất quán quy ước của chính file; steps viết lại 7 bước.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

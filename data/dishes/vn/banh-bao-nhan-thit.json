@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "hap",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -34,7 +34,7 @@
   "ingredients": [
     {
       "ingredient_slug": "bot-mi",
-      "quantity": 55,
+      "quantity": 30,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -74,7 +74,7 @@
     },
     {
       "ingredient_slug": "moc-nhi-kho",
-      "quantity": 4,
+      "quantity": 2,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -103,14 +103,74 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "men-no",
+      "quantity": 0.4,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "bot-no",
+      "quantity": 0.3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "sua-tuoi",
+      "quantity": 18,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "bot-ngo",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dau-an",
+      "quantity": 1.5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Nhào bột mì với men và đường, ủ cho bột nở gấp đôi (men tính trong bột).",
-    "Trộn thịt xay với mộc nhĩ, miến, hành tây, nêm muối tiêu; bọc cùng trứng cút.",
-    "Cán bột, gói nhân, hấp khoảng 15 phút đến khi bánh chín trắng xốp."
+    "Kích hoạt men: hâm sữa tươi ấm khoảng 35–40°C, cho men nở và một phần đường vào khuấy nhẹ, để yên 10 phút cho men nổi như gạch cua (men instant tốt có thể trộn thẳng, nhưng kích hoạt giúp chắc chắn men còn sống).",
+    "Trộn bột mì, bột ngô, bột nở, muối và phần đường còn lại; đổ sữa men và dầu ăn vào, nhào 15–20 phút đến khi khối bột mịn, dẻo, không dính tay; bọc kín, ủ nơi ấm khoảng 1 giờ cho bột nở gấp đôi.",
+    "Làm nhân trong lúc chờ bột: mộc nhĩ và miến ngâm nở, băm/cắt nhỏ; trộn thịt xay với mộc nhĩ, miến, hành tây và hành tím băm, nêm nước mắm, hạt nêm, đường, tiêu; quết đều tay cho nhân dẻo và kết dính.",
+    "Chia nhân thành các viên đều nhau, ấn dẹt, đặt 1 quả trứng cút đã luộc bóc vỏ vào giữa, vo tròn cho thịt bao kín trứng.",
+    "Bột ủ xong lấy ra nhào sơ khoảng 5 phút để ép hết bọt khí, chia viên đều nhau, cán mỏng với phần rìa mỏng hơn phần giữa; đặt viên nhân vào, túm mép gấp nếp và xoắn kín miệng bánh, đặt lên giấy nến.",
+    "Ủ bánh lần hai 15–20 phút cho bánh nở nhẹ trở lại; đun nước hấp đến sôi (có thể thêm chút giấm vào nước cho vỏ trắng), phủ khăn sạch dưới nắp để nước không nhỏ xuống làm rỗ mặt bánh.",
+    "Hấp lửa vừa 15–20 phút; tắt bếp và để yên 5 phút mới mở nắp để bánh không xẹp; ăn nóng — vỏ đạt là trắng, xốp mềm, nhân chín thơm, trứng cút nguyên quả ở giữa."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-banh-bao-khong-can-bot-no-thom-ngon-mem-xop-tai-nha-23545",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH — 'bánh bao không cần bột nở', cho 10 cái, quy 1 cái: bột mì 26 g, bột bắp 4 g, men nở 0,3 g, sữa tươi 17 ml, đường 4 g, dầu ăn ~0,8 ml; nhân: thịt xay 20 g/cái, nấm mèo đã ngâm 5 g, củ sắn 5 g, viên nhân ~30 g; hấp 25 phút + ủ nồi 10 phút."
+    },
+    {
+      "url": "https://danviet.vn/bat-mi-cach-lam-banh-bao-nhan-thit-xop-mem-khong-can-may-tron-bot-20220822074233705-d1038774.html",
+      "accessed": "2026-10-31",
+      "note": "Dân Việt (Lien Meo), cho 12 chiếc, quy 1 chiếc: bột mì 28,3 g, bột ngô 5,8 g, men nở 0,33 g, bột nở ~0,3 g, sữa 18,3 ml, dầu 1,7 ml, đường 2,5 g; nhân 50 g/chiếc (thịt 33,3 g, miến dong 3,3 g, mộc nhĩ khô 1,7 g, hành tím 2,9 g) + 1 trứng cút/chiếc; vỏ dough 55 g/chiếc; hấp 15 phút + ủ 5 phút."
+    },
+    {
+      "url": "https://www.bluestone.com.vn/blogs/vao-bep/cach-lam-banh-bao-nhan-thit",
+      "accessed": "2026-10-31",
+      "note": "Bluestone — khoảng 8–10 chiếc, quy 1 chiếc: bột mì 40–50 g, men nở 0,5–0,63 g, bột nở 0,4–0,5 g, sữa tươi 25–31 ml, đường 3–3,75 g, dầu ăn 2–2,5 ml, thịt nạc vai xay 30–37,5 g, trứng cút 1 quả/chiếc, mộc nhĩ 3 tai/mẻ, hành tây 1/2 củ/mẻ. Họ thứ ba mở được ở vòng 2 đợt 10 (vòng 1 bị 429)."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/banh-bao-nhan-thit.webp",
@@ -121,7 +181,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-004 đợt 2 (lô bánh dân gian) mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-009 đợt 9 (bổ sung): GIỮ Mức 1 — GIỮ-429: lần mở nguồn đầu tiên (Điện Máy XANH) bị chặn 429 sau 3 lần thử, dừng ngay theo quy tắc đợt, chưa mở được nguồn nào đạt chuẩn; trích đoạn tìm kiếm không tính là nguồn. Ứng viên đã định vị để làm lại: ĐMX (mẻ 10 cái), Bluestone (2 bài, cùng họ), Dân Việt (12 chiếc), Cookpad Susu. Quan sát nội bộ chờ kiểm chứng khi làm lại: steps ghi 'men tính trong bột' nhưng file không có dòng men-no (slug đã có số), cũng không có sua-tuoi/dau-an/bot-no mà các trích đoạn đều nhắc; tỉ lệ vỏ 55 g bột : nhân ~62 g và serving 130 g cần đối chiếu lại.]",
+  "import_note": "Soạn nháp DISH-004 đợt 2 (lô bánh dân gian) mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-009 đợt 9 (bổ sung): GIỮ Mức 1 — GIỮ-429: lần mở nguồn đầu tiên (Điện Máy XANH) bị chặn 429 sau 3 lần thử, dừng ngay theo quy tắc đợt, chưa mở được nguồn nào đạt chuẩn; trích đoạn tìm kiếm không tính là nguồn. Ứng viên đã định vị để làm lại: ĐMX (mẻ 10 cái), Bluestone (2 bài, cùng họ), Dân Việt (12 chiếc), Cookpad Susu. Quan sát nội bộ chờ kiểm chứng khi làm lại: steps ghi 'men tính trong bột' nhưng file không có dòng men-no (slug đã có số), cũng không có sua-tuoi/dau-an/bot-no mà các trích đoạn đều nhắc; tỉ lệ vỏ 55 g bột : nhân ~62 g và serving 130 g cần đối chiếu lại.] [LV2-010 đợt 10: GIỮ Mức 1 — GIỮ-429: đã mở đạt chuẩn 2 họ (Điện Máy XANH mẻ 10 cái, Dân Việt 12 chiếc), lần mở họ thứ 3 (Bluestone) bị chặn 429 sau 3 lần thử, dừng ngay theo quy tắc đợt. Quan sát sẵn sàng áp khi mở được họ thứ 3: men-no ~0,4 g/cái (2/2 họ đã mở xác nhận), bot-mi file 55 g là dough-weight (bột khô thật ~26–28 g/cái ở cả 2 họ), thiếu sua-tuoi ~18 g/cái và bot-no ~0,3 g/cái; moc-nhi-kho có thể thừa ~2 lần.] [LV2-010 đợt 10 — VÒNG 2: ĐẠT Mức 2. Mở được họ thứ ba (Bluestone) sau khi vòng 1 bị 429, áp toàn bộ quan sát đã soạn ở vòng 1 và được họ thứ ba xác nhận: bot-mi 55→30 g (file cũ lấy nhầm trọng lượng dough 55 g/chiếc của Dân Việt làm bột khô; bột khô thật: ĐMX 26, Dân Việt 28,3, Bluestone 40–50 cho bánh lớn hơn); thêm men-no 0,4 g (3/3 họ: 0,3/0,33/0,5–0,63), bot-no 0,3 g (2/3 họ), sua-tuoi 18 g (ĐMX 17 + Dân Việt 18,3 đồng thuận chặt), bot-ngo 5 g (ĐMX bột bắp 4 + Dân Việt bột ngô 5,8), dau-an 1,5 g (cho vỏ); moc-nhi-kho 4→2 g (3 họ đều ~1,5–2 g khô/cái). Giữ thit-lon-xay 35 g (Dân Việt 33,3 + Bluestone 30–37,5 đồng thuận), trung-cut 12 g (1 quả/cái ở 3/3 họ). Củ sắn chỉ ĐMX định lượng (5 g/cái) — 1/3 họ, không thêm.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

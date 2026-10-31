@@ -97,7 +97,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt)",
+  "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-010 đợt 10: GIỮ Mức 1 — GIU-BIEN-THE. Đã mở ĐMX ('chè hoa cau bột sắn dây (chè táo xọn)') và sách dạy nấu ăn 'Chè Táo Xọn Củ Năng': táo xọn thật = củ năng + đậu xanh cà vỏ + bột sắn dây/bột năng sánh + đường phèn + nước cốt dừa. File hiện tại là chè táo tàu + hạt sen + long nhãn (món khác, đã có che-hat-sen-long-nhan trong kho) — cần chủ dự án quyết sửa định danh. Cập nhật đợt này: củ năng đã biên soạn ở Phần A (slug cu-nang có số USDA SR 170066) nên trần nguyên liệu đã gỡ; bột sắn dây vẫn chưa có slug. Bộ số tham chiếu sẵn khi chủ dự án quyết sửa định danh (quy ly 250 g theo ĐMX/5 người, đối chiếu họ sách): củ năng 20, đậu xanh tách vỏ 40, bột sắn dây 15, bột năng 17, đường phèn 60, nước cốt dừa 80, lá dứa ~1, muối 0,5.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

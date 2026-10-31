@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "xao",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -139,14 +139,43 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-la",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Ướp thịt lợn với sả, tỏi, nước mắm, đường; xào lửa lớn cùng hành tây cho săn.",
-    "Bày bún với xà lách, dưa leo, giá đỗ trụng.",
-    "Cho thịt xào lên trên, rắc lạc rang, hành phi; chan nước mắm chua ngọt khi ăn."
+    "Thịt thái lát mỏng ngang thớ, ướp sả và tỏi băm với nước mắm, đường, chút hạt nêm trong 20–30 phút cho thấm đều.",
+    "Xà lách, rau thơm nhặt rửa sạch để ráo; dưa leo thái lát mỏng; giá rửa sạch; hành tây lột vỏ, cắt múi cau vừa ăn.",
+    "Làm mỡ hành: đun dầu thật nóng rồi rưới ngay vào chén hành lá cắt nhỏ — hành vừa chín tới, vẫn giữ màu xanh, không để hành cháy.",
+    "Phi thơm sả và tỏi băm còn lại trên lửa lớn, cho thịt vào đảo nhanh tay 5–7 phút đến khi thịt săn, hơi xém cạnh và không ra nước.",
+    "Cho hành tây vào đảo thêm khoảng 2 phút — hành vừa trong, còn độ giòn là đạt; nêm lại cho vừa vị rồi tắt bếp, tránh xào lâu làm thịt khô.",
+    "Pha nước mắm chua ngọt: khuấy tan đường trong nước ấm, thêm nước mắm, nước cốt chanh (hoặc giấm), tỏi ớt băm — vị chua ngọt cân bằng, mặn dịu.",
+    "Trụng bún qua nước sôi khoảng 20 giây cho tơi sợi, vớt ra để ráo; bày bún vào tô, xếp giá, xà lách và dưa leo quanh thành tô.",
+    "Cho thịt xào hành tây lên trên, rắc lạc rang giã dập, hành phi, rưới mỡ hành; chan nước mắm chua ngọt khi ăn và trộn đều."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/3-cach-lam-bun-thit-xao-sa-ot-hanh-tay-va-ngu-vi-huong-thom-01801?srsltid=AfmBOoqzEdV-V4D7YJzFXfnBawsMv2HjW6Pq5O2_LEn50QQ38FhBa8B0",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH (biên tập Nguyễn Võ Dương Oai), bản bún thịt xào sả ớt, 4 người — quy 1 người: thịt nạc dăm 75 g, bún 200 g, giá 25 g, đậu phộng 12,5 g, dầu ~11 g, nước mắm ~9 g. Khớp file ở mọi dòng chính."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/2916723",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Mợ Ngố, 3–4 người — quy 1 người (mẫu số 3,5): thịt heo ~114 g, bún ~286 g, giá ~57 g, cà rốt 1 củ, dưa leo 2 quả. Là cực trên của khoảng nguồn."
+    },
+    {
+      "url": "https://congthucnauan.vn/bun-thit-xao-kieu-mien-tay-cho-ngay-mua/",
+      "accessed": "2026-10-31",
+      "note": "VnExpress (bản đăng lại ghi rõ 'Theo VnExpress'), bún thịt xào kiểu miền Tây — không ghi khẩu phần/lượng bún; tỉ lệ giá/thịt = 0,5; có mỡ hành, đậu phộng rang, đồ chua cà rốt/củ cải."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/bun-thit-xao.webp",
@@ -157,7 +186,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-009 đợt 9: GIỮ Mức 1 — tra cứu bị chặn 429, chưa mở được nguồn nào đạt chuẩn. Ghi nhận tên chính tiếng Việt đang viết thường — chuẩn hoá ở đợt dữ liệu tên. Làm lại đợt sau.]",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-009 đợt 9: GIỮ Mức 1 — tra cứu bị chặn 429, chưa mở được nguồn nào đạt chuẩn. Ghi nhận tên chính tiếng Việt đang viết thường — chuẩn hoá ở đợt dữ liệu tên. Làm lại đợt sau.] [LV2-010 đợt 10: NÂNG MỨC 2 — đã mở trực tiếp 3 họ độc lập (Điện Máy XANH bản sả ớt cho 4 người, biên tập Nguyễn Võ Dương Oai; Cookpad tác giả Mợ Ngố, 3–4 người; VnExpress qua congthucnauan.vn ghi rõ nguồn). File khớp ĐMX ở mọi dòng chính (thịt 80 vs 75 g, bún 180 vs 200 g, giá 30 vs 25 g, lạc 10 vs 12,5 g, dầu 10 vs ~11 g, mắm 8 vs ~9 g/người). Cookpad và tỉ lệ VnExpress cho thịt/bún/giá cao hơn hẳn nhưng các họ bất đồng nhau >30% nên giữ nguyên toàn bộ số file. Thêm 1 dòng: hanh-la 5 g (2/3 họ làm mỡ hành; file đã có dầu nhưng thiếu hành). Đã loại diachiamthuc.vn vì sao chép nguyên văn ĐMX. Bất thường chờ phân xử: hành phi không họ nào dùng (các họ dùng mỡ hành); cà rốt có ở 2 họ nhưng khác dạng (xào sợi/đồ chua).]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

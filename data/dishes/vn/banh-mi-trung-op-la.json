@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "chien",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -30,7 +30,7 @@
     }
   ],
   "serving_desc": "1 ổ bánh mì kèm 2 trứng",
-  "serving_grams": 185,
+  "serving_grams": 208,
   "ingredients": [
     {
       "ingredient_slug": "banh-mi",
@@ -58,7 +58,15 @@
     },
     {
       "ingredient_slug": "nuoc-tuong",
-      "quantity": 5,
+      "quantity": 7.5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "xot-mayonnaise",
+      "quantity": 15,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -66,11 +74,31 @@
     }
   ],
   "recipe_steps": [
-    "Trứng ốp la trong chảo chống dính lửa vừa, lòng đỏ chín tới tùy thích (khoảng 3 phút).",
-    "Bánh mì nướng lại cho giòn, xẻ dọc, cho trứng ốp la vào, rắc hành lá.",
-    "Rưới ít nước tương, ăn ngay khi nóng. Tổng thời gian làm ~8 phút."
+    "Dưa leo rửa sạch, thái lát mỏng dọc; hành lá rửa sạch, thái nhỏ. Bánh mì nướng lại 2–3 phút cho vỏ giòn, ruột còn mềm, rồi xẻ dọc một bên hông, giữ bản lề không cắt rời.",
+    "Phết đều mayonnaise vào mặt trong ổ bánh mì để sẵn sàng kẹp nhân.",
+    "Đặt chảo chống dính lên bếp lửa vừa, cho rất ít dầu tráng mặt chảo (dầu chiên chính không kê — engine mô hình hoá); chảo nóng thì đập 2 quả trứng vào, giữ nguyên lòng đỏ không vỡ.",
+    "Ốp la lửa nhỏ–vừa khoảng 2–3 phút đến khi lòng trắng đông hẳn, mép hơi xém vàng, lòng đỏ còn sệt lòng đào; rắc chút muối tiêu. Muốn chín kỹ thì đậy nắp thêm 1 phút.",
+    "Cho ngay 2 trứng ốp la còn nóng vào ổ bánh mì, xếp dưa leo lát lên trên, rắc hành lá thái nhỏ.",
+    "Rưới đều khoảng 1,5 muỗng cà phê nước tương lên phần trứng, ép nhẹ ổ bánh cho nhân ôm bánh.",
+    "Ăn ngay khi bánh còn giòn và trứng còn nóng; để lâu vỏ bánh ỉu và lòng đỏ đặc lại mất ngon."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.cooking-therapy.com/banh-mi-op-la/",
+      "accessed": "2026-10-31",
+      "note": "Cooking Therapy (Becca, blog có tác giả) — yield 4 phần; quy 1 phần: 1 ổ bánh mì nhỏ, 2 trứng, pate 1 tbsp ≈15 g, mayonnaise 1 tbsp ≈14–15 g, nước tương 2 tbsp/4 = 7,5 g, đồ chua mỗi loại 1 tbsp."
+    },
+    {
+      "url": "https://cheftu.com/recipelibrary/banhmitrung",
+      "accessed": "2026-10-31",
+      "note": "Chef Tu David Phu (đầu bếp) — yield 2 phần; quy 1 phần: 1 ổ bánh mì, 2 trứng lớn, Kewpie mayo 1 tbsp ≈14 g, pate 2 oz ≈57 g, Maggi 1 tbsp/2 = 7,5 g, đồ chua 1/8 cup. Dầu chiên chính không kê theo Phương án A."
+    },
+    {
+      "url": "https://yummyday.vn/banh-mi-trung-1073",
+      "accessed": "2026-10-31",
+      "note": "YummyDay (trang công thức biên tập) — bản xe bánh mì truyền thống: trứng gà 2 quả/1 bánh; có hành lá + rau mùi, dưa chuột, cà chua, mayonnaise/tương ớt là thành phần quầy hàng chuẩn. Ủng hộ lõi 1 ổ + 2 trứng."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/banh-mi-trung-op-la.webp",
@@ -81,7 +109,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món chiên theo quy ước Phương án A (EDITORIAL-GUIDE §12): công thức KHÔNG kê dầu của bước chiên chính — dầu hấp thụ do engine mô hình hoá theo hệ số CALC-004 của nguyên liệu. Bánh mì không phải chủ thể chiên (chỉ trứng được chiên) nên banh-mi nhận hệ số hấp thụ 0 theo bản chất (áp dụng nhân đợt này, cùng tiền lệ CALC-004).",
+  "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món chiên theo quy ước Phương án A (EDITORIAL-GUIDE §12): công thức KHÔNG kê dầu của bước chiên chính — dầu hấp thụ do engine mô hình hoá theo hệ số CALC-004 của nguyên liệu. Bánh mì không phải chủ thể chiên (chỉ trứng được chiên) nên banh-mi nhận hệ số hấp thụ 0 theo bản chất (áp dụng nhân đợt này, cùng tiền lệ CALC-004). [LV2-010 đợt 10: Nâng Mức 2 — đối chiếu 3 họ nguồn đã mở trực tiếp (Cooking Therapy, Chef Tu David Phu, YummyDay), đồng thuận lõi 1 ổ + 2 trứng; thêm xot-mayonnaise 15 g (3/3 họ, 2 họ định lượng 1 tbsp/phần), sửa nuoc-tuong 5→7,5 g (2 họ đồng thuận 7,5 g/phần); serving_grams 185 → 208 theo tổng dòng mới (quy ước của file). Pate không thêm do 2 họ bất đồng 15 g vs 57 g/phần — chờ chủ dự án phân xử biến thể; dưa leo/đồ chua có mặt ở nguồn nhưng không họ nào định lượng gram nên chưa thêm dòng. Dầu chiên chính không kê theo Phương án A.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

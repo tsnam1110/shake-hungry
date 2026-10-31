@@ -145,7 +145,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. THIẾU NGUYÊN LIỆU: cá đuối (slug ca-duoi — nguyên liệu chính của món) — cần bổ sung vào kho.",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. THIẾU NGUYÊN LIỆU: cá đuối (slug ca-duoi — nguyên liệu chính của món) — cần bổ sung vào kho. [LV2-010 đợt 10: GIU-BIEN-THE — đã mở DMX, Bluestone, Hướng Nghiệp Á Âu. File lai me/măng chua nhưng dòng măng là mang-tuoi, thiếu la-giang; định lượng cá giữa các họ măng chua 117–250 g/người, bất đồng >30% nên giữ nguyên định lượng. Chờ phân xử biến thể + slug măng chua (kcal null) rồi làm lại.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

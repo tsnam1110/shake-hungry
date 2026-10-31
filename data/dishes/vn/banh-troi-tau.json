@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "chieu",
@@ -42,7 +42,7 @@
     },
     {
       "ingredient_slug": "vung-rang",
-      "quantity": 10,
+      "quantity": 18,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -79,14 +79,51 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nuoc-cot-dua",
+      "quantity": 20,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "duong-phen",
+      "quantity": 12,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Giã vừng đen với đường và lạc rang làm nhân; nhào bột nếp, bọc nhân, vo viên lớn.",
-    "Luộc viên bánh đến khi nổi, vớt sang nồi nước đường gừng đang sôi nhẹ.",
-    "Múc ra bát, rắc dừa nạo, ăn nóng."
+    "Rang mè đen trên lửa vừa 10–15 phút, đảo đều đến khi hạt nổ lách tách và thơm; lạc rang chín, đãi vỏ; xay/giã nhuyễn mè và lạc cùng đường.",
+    "Trộn hỗn hợp nhân với nước cốt dừa, sên lửa nhỏ 5–7 phút (hoặc trộn rồi làm lạnh) đến khi nhân quyện thành khối dẻo, không chảy; chia nhân thành viên nhỏ và vo tròn.",
+    "Nhồi bột nếp với nước ấm (rót từ từ, phần nước nóng trước cho bột chín sơ) 5–7 phút đến khi bột mịn, kéo không đứt đoạn; bọc kín cho bột nghỉ 30 phút.",
+    "Chia bột thành khối ~30–35 g, ấn dẹt, đặt viên nhân vào giữa, túm kín mép rồi vo tròn đều; làm lần lượt đến hết và phủ khăn ẩm tránh khô mặt.",
+    "Nấu nước đường gừng: đun nước với đường phèn và gừng đập dập lửa vừa 7–10 phút đến sôi và dậy mùi gừng.",
+    "Luộc bánh trong nồi nước sôi riêng 5–6 phút; bánh chín khi nổi lên và vỏ hơi trong — vớt ra để ráo nhanh.",
+    "Thả bánh vào nồi nước đường gừng, đun sôi lại 1–2 phút rồi tắt bếp ngay để bánh ngấm mà không nát.",
+    "Múc bánh ra bát nhỏ cùng nước chan, rắc dừa nạo và ít lạc/vừng giã rối, ăn nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-banh-troi-tau-me-den-thom-ngon-de-lam-chu-02273?srsltid=AfmBOooB8mT28uoI8U5ujT4WVmQ5Juvk5iiNGC5LkgqSoI3yXGYMvdYn",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH (biên tập Nguyễn Thị Anh Thảo, tác giả Nguyễn Thu Huyền) — CT1 nhân vừng đen, 4 người: bột nếp 220 g, mè đen 75 g, đường cát 80 g (nhân), đường phèn 60 g + gừng 20 g (nước chan 1,2 lít), nước cốt dừa 50 ml, mỡ heo 1 muỗng canh. Quy khẩu phần: mè 18,8 g."
+    },
+    {
+      "url": "https://giadinh.suckhoedoisong.vn/mon-sui-din-ngon-noi-tieng-hai-phong-va-cach-lam-ngon-nhu-o-thanh-pho-cang-172231106145619851.htm",
+      "accessed": "2026-10-31",
+      "note": "Sức khỏe & Đời sống / Gia đình (chị Oải Hương, Hà Nội — sủi dìn Hải Phòng) — vỏ 200 g bột nếp chia viên ~30 g; nhân: vừng đen 50 g + lạc 50 g + đường trắng 60 g sên với nước cốt dừa 150 ml; nước chan đường thốt nốt 120 g + gừng. Quy bát ~3 viên: vừng ~15–17 g."
+    },
+    {
+      "url": "http://giavihanhphuc.com/bot-banh/banh-troi-tau-sui-din-thu-trang-nguyen-amp",
+      "accessed": "2026-10-31",
+      "note": "Gia Vị Hạnh Phúc (từ công thức Thu Trang Nguyen) — vỏ 230 g nếp + 20 g tẻ + 20 g năng; nhân vừng đen rang 150 g + lạc 50 g + cốt dừa 150 ml + đường 40 g sên; nước chan đường vàng 200 g + thốt nốt 20 g + gừng sợi. Họ này thiên vừng/đường cao hơn hẳn."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/banh-troi-tau.webp",
@@ -97,7 +134,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-004 đợt 2 (lô bánh dân gian) mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp DISH-004 đợt 2 (lô bánh dân gian) mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-010 đợt 10: ĐẠT Mức 2 — 3 họ sủi dìn/trôi tàu nhân mè đen (Điện Máy XANH, Sức khỏe & Đời sống, Gia Vị Hạnh Phúc/Thu Trang Nguyen) đã mở trực tiếp; sửa vung-rang 10→18 g theo đồng thuận 2 họ, thêm nuoc-cot-dua 20 g (3/3 họ có, lượng bất đồng nên lấy mức thận trọng) và duong-phen 12 g cho nước chan vốn thiếu hẳn; steps viết lại 8 bước. Ghi nhận: tổng nguyên liệu sau patch ≈132 g so với serving 180 g — giữ serving vì không họ nào cân bát thành phẩm.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

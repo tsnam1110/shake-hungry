@@ -97,7 +97,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.",
+  "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-010 đợt 10: GIỮ MỨC 1 — GIU-BIEN-THE/GIU-THIEU-NGUON: đã mở 3 họ (ĐMX nui chiên trứng, biên tập Trần Thuận Hưng, 4 người: nui 150 g/trứng 2 quả/cà rốt làm đồ chua; Tripi nui xào trứng 2–3 người: 1/2 chén nui không quy đổi được/2 trứng; Cookpad Ngọc Bảo Hân nui xào rau củ với trứng: 200 g nui/3 trứng — không ghi khẩu phần). 2/3 họ là biến thể nui CHIÊN giòn khác bản xào mềm của file, họ còn lại thiếu khẩu phần nên không có đồng thuận định lượng ≥2 họ cho bất kỳ dòng nào. Cần tìm nguồn biên tập đúng biến thể xào mềm, có khẩu phần rõ, ở đợt sau.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

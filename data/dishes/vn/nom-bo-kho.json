@@ -136,7 +136,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. THIẾU NGUYÊN LIỆU: bò khô (slug bo-kho) và đu đủ xanh (slug du-du-xanh) — cần bổ sung vào kho.",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. THIẾU NGUYÊN LIỆU: bò khô (slug bo-kho) và đu đủ xanh (slug du-du-xanh) — cần bổ sung vào kho. [LV2-010 đợt 10: GIU-429 — mở VietNamNet bị chặn 429, dừng ngay không retry; chưa mở được ≥3 họ nên giữ Mức 1. Đã xác minh bo-kho và du-du-xanh đều đã có số trong kho. Làm lại khi hết chặn; lưu ý TipHay là bản sao của cùng bộ số VietNamNet/BHX, chỉ tính 1 họ.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

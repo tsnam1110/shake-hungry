@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "chieu",
@@ -49,7 +49,7 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "duong-trang",
+      "ingredient_slug": "duong-phen",
       "quantity": 28,
       "unit_name": "g",
       "is_optional": false,
@@ -69,14 +69,6 @@
       "quantity": 12,
       "unit_name": "g",
       "is_optional": false,
-      "source": "llm_suggested",
-      "confidence": "low"
-    },
-    {
-      "ingredient_slug": "lac-rang",
-      "quantity": 5,
-      "unit_name": "g",
-      "is_optional": true,
       "source": "llm_suggested",
       "confidence": "low"
     },
@@ -111,14 +103,63 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "khoai-lang",
+      "quantity": 30,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "bot-khoai",
+      "quantity": 12,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "lac-song",
+      "quantity": 20,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Đậu xanh ngâm, nấu/hấp chín mềm; khoai môn cắt khối, hấp chín; bột báng luộc trong; mộc nhĩ và phổ tai ngâm nở, thái sợi.",
-    "Nấu nước cốt dừa với đường và lá dứa cho thơm.",
-    "Cho lần lượt đậu xanh, khoai môn, bột báng, mộc nhĩ, phổ tai vào nồi nước cốt dừa, nấu sôi lại rồi múc ra ly, rắc lạc rang nếu thích."
+    "Ngâm đậu xanh và đậu phộng trong nước 2 giờ đến qua đêm cho nở mềm; phổ tai ngâm khoảng 15 phút cho nở, rửa sạch, cắt khúc ngắn; bột khoai và bột báng ngâm riêng cho nở.",
+    "Luộc đậu phộng trên lửa nhỏ khoảng 45–60 phút đến khi hạt mềm bùi; nấu đậu xanh đến khi nhừ, tán hoặc xay một phần cho nước chè sánh, phần còn lại giữ nguyên hạt.",
+    "Luộc riêng bột báng và bột khoai trong nước sôi đến khi hạt/sợi chuyển trong, vớt ra để ráo để nước chè không bị đục.",
+    "Khoai lang và khoai môn gọt vỏ, cắt khối vuông vừa ăn; hấp hoặc nấu vừa chín tới để miếng khoai giữ nguyên khối, không nát.",
+    "Nấu nước cùng phần nước cốt dừa dão và bó lá dứa, cho đậu xanh, đậu phộng và các loại khoai vào, nấu sôi lại trên lửa vừa khoảng 5 phút.",
+    "Cho bột khoai, bột báng, đường phèn và chút muối vào, khuấy nhẹ 3–5 phút; cho phổ tai và mộc nhĩ thái sợi vào sau cùng vì hai thứ này chỉ cần chín giòn, nấu lâu sẽ nhũn.",
+    "Rưới phần nước cốt dừa nhất lên trên, chờ sôi lăn tăn thì tắt bếp; múc ra chén/ly, ăn nóng hoặc để lạnh đều được."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://bepxua.vn/cach-nau-che-thung-thom-ngot-kho-cuong/?noamp=mobile",
+      "accessed": "2026-10-31",
+      "note": "Bếp Xưa, 4 người — quy phần: đậu xanh 50, đậu phộng 62,5, bột khoai 17,5, bột báng 12,5, phổ tai khô 5, khoai lang 50, cốt dừa 300 ml, đường phèn 100. Không có khoai môn/mộc nhĩ. Khẩu phần nguồn là bát lớn ~500–600 g, không phải ly 250 g."
+    },
+    {
+      "url": "https://yeutre.vn/bai-viet/4-cach-nau-che-thung-thom-ngot-thanh-mat-dam-chat-nam-bo.26366/",
+      "accessed": "2026-10-31",
+      "note": "YeuTre (Ngọc Hân) — cùng bộ số với bản Blackmoon sao chép, tính 1 họ. Công thức 1: đậu xanh 100, đậu phộng 150, bột khoai 70, bột báng 35, phổ tai 15, đường phèn 170 (bước nấu; danh sách ghi 200 — mâu thuẫn nội bộ), cốt dừa 1 chén + bột cốt dừa 50."
+    },
+    {
+      "url": "https://kitchenaz.vn/?p=2252",
+      "accessed": "2026-10-31",
+      "note": "KitchenAZ (bản sao định dạng Điện Máy XANH, biên tập Khương Linh) — công thức 2, 4 người: khoai lang 50, đậu xanh 50, đậu phộng 25, bột báng 12,5, bột khoai 12,5, phổ tai 50 g/mẻ, cốt dừa 75, đường 100."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/13034343",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Nguyễn Ngân, 4 phần ăn, định lượng theo 'nắm' — chỉ đối chiếu cấu trúc: khoai lang + khoai môn + khoai mỡ, đậu xanh, đậu phộng, bột báng, bột khoai, phổ tai, nấm mèo 2 tai, đường phèn, muối 2 g. Tỉ lệ khoai lang:khoai môn ~1:1."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/che-thung.webp",
@@ -129,7 +170,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt)",
+  "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-010 đợt 10: Đạt Mức 2 — đối chiếu 4 họ đã mở (Bếp Xưa 4 người; họ YeuTre/Blackmoon sao chép tính 1 họ; KitchenAZ/ĐMX ct2 4 người; Cookpad Nguyễn Ngân 4 phần). Thêm khoai lang 30 g + bột khoai 12 g (4/4 họ có, file thiếu); thay lạc rang rắc mặt bằng lạc sống 20 g luộc trong chè; đổi đường trắng → đường phèn giữ 28 g (3/4 họ). Các dòng còn lại giữ do thang khẩu phần nguồn khác ly 250 g và họ bất đồng >30%. Ghi nhận: dòng rong-bien 3 g đang đóng vai phổ tai (rong tươi) trong khi phổ tai của nguồn là khô — lượng nhỏ không chặn Mức 2, cân nhắc slug phổ tai khô riêng ở đợt nguyên liệu sau.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

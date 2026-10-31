@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -73,14 +73,6 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "rau-ram",
-      "quantity": 3,
-      "unit_name": "g",
-      "is_optional": true,
-      "source": "llm_suggested",
-      "confidence": "low"
-    },
-    {
       "ingredient_slug": "ot-tuoi",
       "quantity": 2,
       "unit_name": "g",
@@ -95,14 +87,42 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "cu-nen",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Cá lóc hấp chín, gỡ thịt, giữ nước hấp làm nước dùng.",
-    "Phi hành tím, xào thịt cá với nước mắm cho thơm; nấu nước dùng trong, nêm vừa.",
-    "Trụng sợi bánh canh bột gạo, chan nước dùng và cá, rắc rau răm, tiêu, ớt."
+    "Sơ chế cá lóc: đánh vảy, bỏ mang và ruột, chà muối (hoặc ngâm nước vo gạo pha muối 15–20 phút) để khử nhớt và mùi tanh, rửa lại nhiều lần, cắt khúc vừa ăn.",
+    "Luộc cá trong nước sôi khoảng 15 phút đến khi chín; vớt ra để nguội bớt, gỡ lấy thịt, bỏ xương; giữ lại nước luộc, phần đầu và xương giã nát lọc lấy nước dùng cho ngọt.",
+    "Ướp thịt cá với muối, tiêu, ớt, chút nước mắm và củ nén giã nhỏ trong 10–15 phút cho thấm đều.",
+    "Phi hạt/củ nén với dầu ăn cho thơm, cho cá đã ướp vào um lửa nhỏ với ít nước luộc, đảo nhẹ đến khi cá vàng nhẹ, thấm gia vị và dậy mùi nén đặc trưng.",
+    "Trụng sợi bánh canh qua nước sôi cho rời sợi, xả nhanh qua nước lạnh để sợi không dính nhau.",
+    "Đun sôi nước dùng cá, cho sợi bánh canh vào nấu 10–15 phút đến khi sợi chín trong và dai mềm; cho cá đã um vào, nêm lại nước mắm và muối cho vừa ăn.",
+    "Múc ra tô, rắc lá nén thái nhỏ, tiêu xay và ớt; ăn nóng bằng đũa — tô đạt là sợi dai mềm, thịt cá thấm vị, nước dùng ngọt thanh và thơm nồng mùi nén."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/1622294",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Thủy Hoàng, 2 phần ăn: cá lóc 1 con, bột bánh canh làm sẵn 3 lạng (300 g → 150 g/người), lá nén và hạt nén; quy trình luộc cá → um cá với hạt nén phi + nước mắm/ớt bột → trụng sợi → nấu chung 10–15 phút, rắc lá nén + tiêu. Bài Eva/Gia đình đăng cùng một công thức nguyên văn nên tính chung 1 họ với nguồn này."
+    },
+    {
+      "url": "https://tripi.vn/blog/vi/kinh-nghiem-hay/banh-canh-ca-loc-quang-tri-mon-an-dac-trung-mien-trung-mang-den-huong-vi-dam-da-va-cuon-hut-tripi",
+      "accessed": "2026-10-31",
+      "note": "Tripi, 3–4 người: cá lóc 1 con, bột bánh canh xắt sẵn 300 g (75–100 g/người), hạt nén + lá nén, giá đỗ và ngò rí ăn kèm; luộc cá 15 phút, gỡ thịt ướp với củ nén, luộc sợi riêng 10 phút, phi củ nén rồi cho cá + nước luộc + sợi vào nấu chung."
+    },
+    {
+      "url": "https://bazantravel.com/chao-banh-canh-mon-chao-vat-giuong/",
+      "accessed": "2026-10-31",
+      "note": "Bazan Travel (du lịch Quảng Trị) — chỉ xác nhận định danh/quy trình cháo vạt giường, không định lượng: sợi bột gạo cán thái nhỏ như vạt giường; cá lóc hấp chín, lọc thịt xé miếng, ướp tiêu ớt hành phi; đầu và xương cá giã nhuyễn chắt lấy nước dùng; dùng cả lòng cá."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/banh-canh-ca-loc-quang-tri.webp",
@@ -113,7 +133,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Biến thể vùng của banh-canh-ca-loc theo đúng cơ chế parent_dish_slug: bản Quảng Trị dùng sợi bột gạo, cá hấp gỡ thịt xào hành, nước dùng trong — ghi region vn-central vì cây vùng của dự án chưa có mã Quảng Trị riêng.",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Biến thể vùng của banh-canh-ca-loc theo đúng cơ chế parent_dish_slug: bản Quảng Trị dùng sợi bột gạo, cá hấp gỡ thịt xào hành, nước dùng trong — ghi region vn-central vì cây vùng của dự án chưa có mã Quảng Trị riêng. [LV2-010 đợt 10: GIU-429 — chưa mở được nguồn nào do phiên bị chặn 429, giữ Mức 1, làm lại ở đợt sau.] [LV2-010 đợt 10 — VÒNG 2: ĐẠT Mức 2 (vòng 1 bị 429 trước khi mở được nguồn nào). Đã mở 3 họ: Cookpad Thủy Hoàng (2 phần; bài Eva/Gia đình trùng nguyên văn công thức nên tính chung 1 họ), Tripi (3–4 người), Bazan Travel (định danh/quy trình). Món còn có tên cháo bột/cháo vạt giường. Thay đổi: thêm cu-nen 3 g — củ/hạt nén là gia vị ĐỊNH DANH Quảng Trị ở 3/3 họ ('đứng mơ mùi nén') mà file thiếu hẳn (slug null + hồ sơ nên vào missing theo quy tắc phụ null; lá nén là lá cùng cây, ghi nhận không tách dòng); XOÁ rau-ram 3 g (0/3 họ Quảng Trị dùng rau răm — Eva chỉ nhắc rau răm cho biến thể miền Bắc). Sợi 150 g giữ: Cookpad đúng 150 g/người, Tripi 75–100 g/người — họ bất đồng nên giữ file theo quy tắc. Cá 100 g giữ (các họ chỉ ghi '1 con', không cân).]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -129,7 +129,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt DISH-004 đợt 2 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt DISH-004 đợt 2 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-010 đợt 10: GIỮ Mức 1 — GIU-429: tra cứu bị chặn 429 khi mở nguồn thứ hai (amthuchuongque.com) → dừng ngay theo quy định, chưa gom đủ 3 họ đã mở. Đã mở được 1 họ: Cookpad Mẹ Xí Muội (hủ tíu mỳ cá — không định lượng; xác nhận cấu trúc xương cá chiên + xương heo hầm, hẹ, hành phi, tương đen chấm cá; file đang thiếu hẹ). Làm lại ở đợt sau.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

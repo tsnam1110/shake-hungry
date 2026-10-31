@@ -25,7 +25,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nuong",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -97,11 +97,30 @@
     }
   ],
   "recipe_steps": [
-    "Thịt ba chỉ cạo sạch bì, luộc sơ mặt da, xâm bì và ướp gia vị phần thịt.",
-    "Phết giấm và muối lên bì, để khô lạnh cho bì thật ráo.",
-    "Quay/nướng đến khi bì nổ giòn vàng; chặt miếng, ăn kèm nước tương hoặc nước mắm pha."
+    "Ba chỉ cạo sạch lông, chà muối rửa sạch; luộc úp mặt da xuống nước sôi 10–15 phút đến khi da chuyển trong và nở nhẹ, vớt ra ngâm nước lạnh 10 phút rồi thấm thật khô.",
+    "Dùng nĩa/tăm xăm đều khắp mặt da (xăm càng dày bì càng nổ), phết một lớp giấm mỏng rồi xát muối lên da, để 10–15 phút cho da ráo.",
+    "Trộn muối, đường, ngũ vị hương, tiêu và tỏi băm; xoa đều lên phần thịt và các mặt cắt, tuyệt đối không để gia vị dính lên mặt da; ướp ngăn mát tối thiểu 2 giờ, tốt nhất qua đêm với mặt da hướng lên cho da khô.",
+    "Làm nóng lò 200–230°C; đặt thịt da hướng lên trên khay (có thể phủ muối kín mặt da ở lượt đầu), nướng khoảng 30 phút cho thịt chín và da bắt đầu khô.",
+    "Gạt bỏ lớp muối trên da (nếu phủ), phết lại giấm pha muối, đưa khay lên rãnh cao gần thanh nhiệt, nướng tiếp 20–30 phút ở 220–230°C đến khi bì nổ đều, vàng giòn, gõ vào nghe rỗng.",
+    "Lấy thịt ra nghỉ ít nhất 15 phút cho nước thịt ổn định, chặt miếng vừa ăn; ăn kèm nước mắm tỏi ớt hoặc nước tương, dưa muối/rau sống."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/amp/kinh-nghiem-lam-heo-quay-bang-lo-vi-song-don-gian-ngay-tai-18077",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH (biên tập Trương Thị Hồng Trang) — bài kinh nghiệm, KHÔNG có bảng định lượng, chỉ dùng cho phương pháp: luộc thịt chín ~70% (sôi 15 phút), ngâm nước lạnh 10–15 phút, xăm da, ướp thịt tách riêng ướp da (muối + giấm), ướp lạnh 5–6 giờ, nướng 200°C ~60 phút."
+    },
+    {
+      "url": "http://www.savourydays.com/recipe/cach-lam-thit-quay-gion-bi-kieu-anh/comment-page-1/",
+      "accessed": "2026-10-31",
+      "note": "Savoury Days (Linh Trang) — 500 g ba chỉ: ngũ vị 1/2 tsp (~1 g), tỏi quy đổi 10 g, muối ướp 1/2 tsp (~3 g), muối phủ da 30–50 g (gỡ bỏ sau nướng, không tính ăn vào). Quy khẩu phần file 180 g: tỏi ~3,6 g, ngũ vị ~0,4 g, muối ướp ~1,1 g. Nướng 2 lửa 230°C rồi 220–230°C."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/1423843",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Nguyễn Hoàng Cẩm Linh: 500 g ba chỉ: đường 1 tbsp (~12 g), tiêu 1 tsp (~2 g), ngũ vị 1 gói, giấm phết da. Quy khẩu phần: đường ~4,3 g, tiêu ~0,7 g. Luộc úp mặt da 10–15 phút, xăm da, phết giấm, ướp ≥15 phút, nướng 200°C 40 phút + 10–15 phút rãnh trên."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/heo-quay.webp",
@@ -112,7 +131,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-010 đợt 10: Nâng Mức 2 — đối chiếu 3 họ nguồn đã mở trực tiếp (Điện Máy XANH, Savoury Days, Cookpad/Cẩm Linh): phương pháp luộc sơ mặt da + xăm da + phết giấm-muối + ướp tách da/thịt + nướng 2 lửa khớp cả 3 họ; định lượng giữ nguyên toàn bộ (ngũ vị 2 họ bất đồng >30%, đường/muối chỉ 1 họ có số đạt ngưỡng) — viết lại 6 bước. Nguyên liệu heo-quay (thành phẩm) trong kho vẫn null — không chặn món này vì món biên soạn từ thit-lon-ba-chi tươi (có số).]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

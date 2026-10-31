@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -46,15 +46,7 @@
     },
     {
       "ingredient_slug": "bot-nang",
-      "quantity": 10,
-      "unit_name": "g",
-      "is_optional": false,
-      "source": "llm_suggested",
-      "confidence": "low"
-    },
-    {
-      "ingredient_slug": "moc-nhi-kho",
-      "quantity": 3,
+      "quantity": 5,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -85,7 +77,15 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "rau-mui",
+      "ingredient_slug": "hat-tieu-den",
+      "quantity": 0.5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "rau-ram",
       "quantity": 3,
       "unit_name": "g",
       "is_optional": false,
@@ -93,8 +93,16 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "hat-tieu-den",
-      "quantity": 0.5,
+      "ingredient_slug": "nghe-tuoi",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "ot-tuoi",
+      "quantity": 2,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -102,11 +110,31 @@
     }
   ],
   "recipe_steps": [
-    "Lươn luộc, tuốt thịt sợi; mộc nhĩ ngâm nở thái chỉ.",
-    "Nấu nước dùng từ nước luộc lươn, cho mộc nhĩ và thịt lươn vào, nêm nước mắm.",
-    "Khuấy bột năng cho súp sánh trong, rắc rau mùi, tiêu; ăn kèm bánh mì hoặc bánh mướt."
+    "Lươn chà muối (hoặc ngâm giấm pha gừng 5 phút) cho sạch nhớt, rửa lại nhiều lần; cắt bỏ đầu, luộc khoảng 5 phút với vài lát gừng đến khi thịt vừa chín tới.",
+    "Vớt lươn để nguội bớt, tuốt thịt theo thớ dài, giữ lại xương và nước luộc; ninh xương lươn (hoặc xương ống) lấy nước dùng, hớt bọt cho nước trong.",
+    "Nghệ tươi giã nhỏ lọc lấy cốt; hành tăm (hoặc hành tím) băm nhỏ; rau răm nhặt rửa, thái nhỏ.",
+    "Phi thơm hành tăm với dầu ăn và chút dầu điều trên lửa vừa, cho thịt lươn vào xào nhanh tay khoảng 2–3 phút với nước mắm, tiêu và cốt nghệ đến khi thịt săn, thấm màu vàng — đảo nhẹ để thịt không nát.",
+    "Đun sôi nước dùng, cho lươn đã xào vào nấu sôi lại 3–5 phút, nêm lại nước mắm/muối vừa ăn.",
+    "Pha bột năng với ít nước lạnh, rót từ từ vào nồi đang sôi nhẹ, khuấy đều tay đến khi súp sánh nhẹ, trong — không đặc như chè; nấu thêm ~1 phút rồi tắt bếp.",
+    "Múc súp ra tô, rắc rau răm, ớt thái lát và tiêu xay; ăn nóng kèm bánh mì, bánh mướt hoặc bánh đa."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://beptruong.edu.vn/cach-nau-sup-luon",
+      "accessed": "2026-10-31",
+      "note": "Bếp Trưởng Á Âu (Beth Huỳnh) — mẻ 1 kg lươn đồng: bột năng 15 g + bột ngô 15 g, nghệ tươi 1 củ, hành khô 2 củ, rau răm, xương ống ninh nước dùng, ớt; KHÔNG mộc nhĩ/nấm hương. Tổng bột sánh ~30 g/mẻ ≈ 5 g/tô. daynauan.info.vn chép cùng bộ số = cùng 1 họ."
+    },
+    {
+      "url": "https://giadinh.suckhoedoisong.vn/cach-nau-sup-luon-ngon-chuan-vi-cho-bua-sang-172160121093229774.htm",
+      "accessed": "2026-10-31",
+      "note": "Sức Khỏe & Đời Sống — Gia đình. Cách 3 (theo Khỏe và Đẹp), 500 g lươn/4 người: hành tăm BẮT BUỘC, dầu điều, rau răm, KHÔNG mộc nhĩ, KHÔNG bột sánh. Cách 2 trong cùng bài (mộc nhĩ 10 g, nấm hương 20 g) trùng nguyên văn giáo trình Duy Tân = họ sách giáo khoa phổ thông riêng, không phải chuẩn Nghệ An."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/16977420",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Rothy, 'Súp lươn xứ Nghệ': 500 g lươn nguyên con/2 phần ăn: hành tăm, bột nghệ, dầu điều, rau răm, nước mắm 1 thìa/2 phần (~7,5 g/phần), bột năng 1 thìa pha nước/2 phần (~4 g/phần); KHÔNG mộc nhĩ. Thịt gỡ từ 250 g lươn nguyên con/phần ≈ 100 g thịt — khớp dòng lươn của file."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/sup-luon.webp",
@@ -117,7 +145,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Đôi với chao-luon-nghe-an cùng quota: hai món độc lập (nền gạo cháo vs nền súp sánh bột năng) theo đúng ghi chú kế hoạch §3.4.",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Đôi với chao-luon-nghe-an cùng quota: hai món độc lập (nền gạo cháo vs nền súp sánh bột năng) theo đúng ghi chú kế hoạch §3.4. [LV2-010 đợt 10: Nâng Mức 2 — đối chiếu 3 họ nguồn đã mở trực tiếp (Bếp Trưởng Á Âu/Beth Huỳnh, Sức Khỏe & Đời Sống, Cookpad/Rothy): bột năng 10→5 g (2 họ có số đồng thuận thấp hơn >50%); thay rau mùi bằng rau răm (3/3 họ); thêm nghệ tươi 5 g và ớt tươi 2 g (3/3 họ có, file thiếu — nghệ là định danh món); XOÁ mộc nhĩ 3 g theo phân xử của điều phối khi áp: file mang định danh xứ Nghệ (nhãn dac-san:nghe-an sẵn có) trong khi 0/3 họ Nghệ An có mộc nhĩ — mộc nhĩ chỉ thuộc biến thể giáo trình phổ thông; viết lại 7 bước. Ghi nhận daynauan.info.vn chép cùng bộ số Bếp Trưởng nên tính chung 1 họ.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

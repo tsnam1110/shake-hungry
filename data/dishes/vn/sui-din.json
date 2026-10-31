@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "chieu",
@@ -41,8 +41,8 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "vung",
-      "quantity": 6,
+      "ingredient_slug": "vung-rang",
+      "quantity": 15,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -79,15 +79,51 @@
       "is_optional": true,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "duong-phen",
+      "quantity": 15,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nuoc-cot-dua",
+      "quantity": 10,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Rang vừng đen và lạc, giã với đường làm nhân.",
-    "Nhào bột nếp, gói nhân, vo viên tròn.",
-    "Luộc viên đến khi nổi; nấu nước đường gừng.",
-    "Cho viên vào nước đường gừng, ăn nóng."
+    "Rang mè đen trên lửa vừa 10–15 phút, đảo đều tay đến khi hạt nổ lách tách và thơm nồng; để nguội bớt rồi giã/xay nhuyễn mịn.",
+    "Trộn mè đã xay với lạc rang giã dập, dừa nạo, đường cát và một phần nước cốt dừa, cho lên chảo sên lửa nhỏ đến khi hỗn hợp kết thành khối dẻo, không dính chảo; để nguội và chia viên nhân đều nhau.",
+    "Nhào bột nếp với nước ấm từ từ đến khi khối bột dẻo mịn, không dính tay; bọc kín, để bột nghỉ 20–30 phút cho bột nở đều.",
+    "Chia bột thành viên khoảng 30–35 g, dàn mỏng, đặt viên nhân vào giữa, túm kín mép và vo tròn — vỏ phải ôm sát nhân, không hở khe để khi luộc không bung.",
+    "Nấu nước đường gừng: đun đường phèn với nước và gừng đập dập/thái sợi 7–10 phút trên lửa vừa đến khi đường tan hết, nước thơm mùi gừng và hơi sánh nhẹ.",
+    "Luộc bánh trong nồi nước sôi 5–7 phút; khi bánh nổi lên và vỏ chuyển hơi trong là chín — vớt ra thả nhanh vào bát nước lạnh 1–2 phút để bánh không dính và giữ dáng tròn.",
+    "Cho bánh vào nồi nước đường gừng, đun lửa nhỏ thêm 1–2 phút cho bánh thấm ngọt; nếu dùng nước cốt dừa, đun riêng cốt dừa với chút đường cho vừa sôi lăn tăn.",
+    "Múc bánh ra bát cùng nước đường gừng nóng, chan cốt dừa (nếu dùng), rắc thêm lạc rang và dừa nạo; ăn nóng — viên bánh đạt là vỏ dẻo dai, nhân mè đen bùi thơm, nước gừng ngọt thanh cay nhẹ."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-banh-troi-tau-me-den-thom-ngon-de-lam-chu-02273?srsltid=AfmBOooB8mT28uoI8U5ujT4WVmQ5Juvk5iiNGC5LkgqSoI3yXGYMvdYn",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH (Nguyễn Thu Huyền, biên tập Nguyễn Thị Anh Thảo), 'bánh trôi tàu nhân vừng đen' — trang đặt tiêu đề/keyword trực tiếp là 'sủi dìn — bánh trôi tàu', 4 người: bột nếp 220 g, mè đen 75 g, đường cát 80 g (nhân), đường phèn 60 g + gừng 20 g (nước), nước cốt dừa 50 ml."
+    },
+    {
+      "url": "https://vietgiaitri.com/cach-lam-sui-din-hai-phong-nhieu-mau-mem-ngon-don-gian-tai-nha-20220618i6498840/",
+      "accessed": "2026-10-31",
+      "note": "Việt Giải Trí (2022), 'sủi dìn Hải Phòng' — bản Hải Phòng: vừng đen 100/300 g bột = 33%, lạc rang 50/300, đường phèn 300 g + đường cát 50 g; nhân = mè + lạc + dừa + đường sên chung; có chan nước cốt dừa khi ăn."
+    },
+    {
+      "url": "https://daylambanh.edu.vn/banh-troi-tau-ha-noi",
+      "accessed": "2026-10-31",
+      "note": "Dạy Làm Bánh Á Âu (Baker Thanh Tuyền), bánh trôi tàu Hà Nội — bột nếp 250 g, vừng đen 100 g = 40% bột, đường cát 100 g + đường phên đỏ 100 g (nước), nhân vừng đen giã với lạc rang + đường."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/sui-din.webp",
@@ -98,7 +134,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-009 đợt 9: GIỮ Mức 1 — tra cứu bị chặn 429. Ghi nhận bất thường quan hệ món: parent_dish_slug trỏ banh-troi trong khi kho có món riêng banh-troi-tau — quan hệ biến thể cần rà lại ở đợt sau.]",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-009 đợt 9: GIỮ Mức 1 — tra cứu bị chặn 429. Ghi nhận bất thường quan hệ món: parent_dish_slug trỏ banh-troi trong khi kho có món riêng banh-troi-tau — quan hệ biến thể cần rà lại ở đợt sau.] [LV2-010 đợt 10: NÂNG MỨC 2 — đã mở trực tiếp 3 họ độc lập cho đúng sủi dìn nhân mè đen + nước gừng (Điện Máy XANH — bài đặt tên trực tiếp 'sủi dìn — bánh trôi tàu', cho 4 người; Việt Giải Trí — bản sủi dìn Hải Phòng; Dạy Làm Bánh Á Âu/Baker Thanh Tuyền — trôi tàu Hà Nội). Sửa 1 dòng: vung 6 g → 15 g (3 họ đồng thuận tỉ lệ mè/bột 33–40%, file chỉ 13%) và đổi slug sang vung-rang theo tiền lệ banh-troi-tau (nhân là mè đen rang; kho chưa có slug vung-den). Thêm 2 dòng: duong-phen 15 g (3/3 họ nấu nước dùng bằng phèn/phên; ĐMX đúng 15 g/người — phần đường cát 20 g của file giữ nguyên vì khớp đúng đường nhân của ĐMX) và nuoc-cot-dua 10 g tuỳ chọn (2/3 họ). Giữ bột 45 g (lệch ĐMX 18%), lạc 8 g (khớp Việt Giải Trí quy đổi ~7,5 g), gừng/dừa (nguồn bất đồng hoặc thiếu định lượng). BẤT THƯỜNG QUAN HỆ MÓN: parent đang trỏ banh-troi nhưng 3/3 nguồn xác nhận sủi dìn = bánh trôi tàu, và kho đã có banh-troi-tau gần như trùng thành phần — chờ chủ dự án phân xử đổi parent/gộp ở đợt riêng, patch này không tự sửa.]",
   "status": "draft",
   "source": "llm_suggested",
   "confidence": "unknown",

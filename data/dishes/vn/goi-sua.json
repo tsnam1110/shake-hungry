@@ -161,7 +161,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu).",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu). [LV2-010 đợt 10: GIU-429 — mở nguồn biến thể bắp chuối bị chặn 429, dừng ngay không retry; chưa mở được ≥3 họ nên giữ Mức 1. Đã xác minh sua-bien có số (USDA 168129, 36 kcal) nên không bị trần nguyên liệu. Làm lại khi hết chặn, ưu tiên biến thể bắp chuối.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -25,7 +25,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "luoc",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -70,14 +70,42 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-tim",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Ngan làm sạch, xát muối và gừng giã để khử hôi, rửa lại.",
-    "Luộc ngan trong nước sôi có gừng đập dập đến khi chín mềm.",
-    "Vớt ra để nguội bớt, chặt miếng vừa ăn, ăn kèm nước mắm gừng và lá chanh thái chỉ."
+    "Bỏ tuyến nhờn ở phao câu, nhổ sạch lông tơ; xát muối hạt và gừng đập dập (thêm chút rượu trắng nếu có) khắp trong ngoài, để 5–10 phút rồi rửa sạch, để ráo.",
+    "Nướng hành khô và một củ gừng cho thơm, đập dập; hành giúp nước luộc thơm và thịt hết hôi.",
+    "Cho ngan vào nồi, đổ nước ngập thân, thêm gừng, hành nướng và chút muối; đun lửa lớn đến sôi, hớt sạch bọt để nước trong.",
+    "Hạ lửa sôi lăn tăn, đậy vung luộc 30–45 phút với con 2–3 kg (con nhỏ hơn khoảng 25–30 phút); sôi mạnh sẽ làm thịt khô ngoài, sống trong.",
+    "Kiểm tra chín: xiên đũa vào phần đùi dày nhất, nước chảy ra trong, không đỏ (hoặc tâm thịt ~74°C) là đạt.",
+    "Tắt bếp, ngâm ngan trong nước luộc thêm 10–15 phút cho thịt mọng và chín đều (ngan già ngâm lâu hơn tới khi nguội bớt).",
+    "Vớt ra để ráo và nguội bớt rồi chặt miếng mỏng, dài vừa ăn; dọn kèm nước mắm gừng pha riêng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://laodong.vn/gia-dinh-hon-nhan/cach-luoc-ngan-ngot-thit-da-gion-va-khong-con-mui-tanh-1789465.ldo",
+      "accessed": "2026-10-31",
+      "note": "Báo Lao Động — 1 con 2–3 kg; gừng + hành khô nướng + muối + rượu; luộc 30–45 phút sau sôi nhẹ, ngâm thêm 10–15 phút; chín khi thịt dày nhất đạt ~74°C; chấm mắm gừng."
+    },
+    {
+      "url": "https://giadinh.suckhoedoisong.vn/cach-luoc-cac-loai-thit-thom-ngon-chuan-vi-172160302155758768.htm",
+      "accessed": "2026-10-31",
+      "note": "Gia đình & Sức Khỏe Đời Sống (nguồn Khỏe và Đẹp), mục Thịt ngan: xát muối/gừng/rượu, hành khô nướng, gừng đập, 1 muỗng bột canh; sôi lăn tăn 25–30 phút; ngan già thì tắt bếp ngâm tới nguội."
+    },
+    {
+      "url": "https://gocnhinphaply.nguoiduatin.vn/cach-luoc-thit-ngan-mem-mong-thom-ngon-nhu-nha-hang-quan-nhau-52506.html",
+      "accessed": "2026-10-31",
+      "note": "Người Đưa Tin (Góc nhìn pháp lý) — gừng nướng + hành tím nướng + 1 thìa bột canh + 1 thìa rượu; luộc liu riu 30–45 phút, ngâm 10–15 phút; nước chấm mắm gừng pha riêng."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/ngan-luoc.webp",
@@ -88,7 +116,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-009 đợt 9: GIỮ Mức 1 — tra cứu bị chặn 429. Tín hiệu ở mức tìm kiếm (chưa mở, không tính là nguồn): nước luộc thường có hành khô nướng và gừng mà file chưa có dòng; cân nguyên con là vấn đề quy ước thô–tinh cùng nhóm với ca-nuong-pa-pinh-top. Dòng la-chanh 1 g null lượng vết giữ nguyên.]",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-009 đợt 9: GIỮ Mức 1 — tra cứu bị chặn 429. Tín hiệu ở mức tìm kiếm (chưa mở, không tính là nguồn): nước luộc thường có hành khô nướng và gừng mà file chưa có dòng; cân nguyên con là vấn đề quy ước thô–tinh cùng nhóm với ca-nuong-pa-pinh-top. Dòng la-chanh 1 g null lượng vết giữ nguyên.] [LV2-010 đợt 10: ĐẠT Mức 2 — 3 họ báo đã mở (Lao Động, Sức Khỏe & Đời Sống, Người Đưa Tin) đồng thuận kỹ thuật luộc và hành khô nướng + gừng trong nước luộc. Thêm hanh-tim 5 g; nước mắm gừng là món chấm riêng, không thêm dòng (tiền lệ Q10). Các bản sao chép cùng chữ của họ SKĐS trên trang tin khác không tính thêm họ.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

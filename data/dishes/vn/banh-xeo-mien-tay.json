@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "chien",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -119,14 +119,43 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-tay",
+      "quantity": 10,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Pha bột gạo với nước cốt dừa, bột nghệ và hành lá, để bột nghỉ 30 phút.",
-    "Đun chảo thật nóng với dầu, cho thịt và tôm vào xào sơ, đổ một vá bột tráng đều chảo.",
-    "Rắc giá và đậu xanh, đậy nắp cho chín, gập đôi bánh; ăn kèm rau sống và nước mắm chua ngọt."
+    "Ngâm đậu xanh 1 giờ, hấp cách thuỷ ~30 phút (hoặc luộc 20 phút đến cạn nước) cho đậu chín mềm nhưng còn nguyên hạt; tôm rửa sạch cắt râu, thịt ba chỉ thái lát mỏng và ướp chút hạt nêm, tiêu 15 phút.",
+    "Pha bột gạo với nước cốt dừa, nước lọc, bột nghệ và hành lá cắt nhỏ, khuấy tan hết vón cục; để bột nghỉ 30 phút cho bột nở đều.",
+    "Làm nóng chảo lớn trên lửa lớn đến thật nóng, quét một lớp mỡ/dầu thật mỏng đều lòng chảo.",
+    "Xếp 3 miếng thịt ba chỉ và 2 con tôm vào chảo, áp cho thịt xém và tôm chuyển hồng trong 1–2 phút.",
+    "Rắc đậu xanh đã hấp, múc một vá bột đổ vòng quanh thành chảo rồi nghiêng chảo cho bột chảy tráng mỏng đều, thêm bột lấp chỗ trống.",
+    "Rải giá và hành tây lên một nửa bánh, đậy nắp 2–3 phút lửa vừa cho vỏ và nhân chín, mép bánh bắt đầu bong khỏi chảo.",
+    "Mở nắp, gập đôi bánh, tăng lửa chiên thêm ~30 giây mỗi mặt đến khi vỏ vàng rụm và kêu giòn; gắp ra vỉ/giấy thấm, làm tiếp đến hết bột.",
+    "Cắt bánh thành miếng vừa cuốn, ăn nóng với xà lách, rau thơm và nước mắm chua ngọt — vỏ đạt khi khô, giòn, không ỉu ở giữa."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-banh-xeo-mien-tay-tu-bot-pha-san-thom-ngon-gion-lau-06721?srsltid=AfmBOoosuU3ll-5rzk72ssEb_Hb1Y2WcXKGKBfMxQahNnnQL4JylWItt",
+      "accessed": "2026-10-31",
+      "note": "Họ MWG / Điện Máy XANH (biên tập Nguyễn Dạ Thu Thảo) — CT2, 4 người: bột pha sẵn 400 g + bột chiên giòn 150 g, cốt dừa 300 ml, tôm 300 g, thịt 250 g, giá 200 g; CT1 theo cái: 3 miếng ba chỉ + 2 con tôm/cái, đậu xanh hạt 2 muỗng cà phê/cái. Bản Bách Hoá XANH trùng nguyên công thức (cùng tập đoàn MWG) nên chỉ tính 1 họ."
+    },
+    {
+      "url": "https://soctrangtourism.vn/cach-lam-banh-xeo-tai-nha/",
+      "accessed": "2026-10-31",
+      "note": "Du lịch Sóc Trăng (cơ quan du lịch tỉnh) — bột gạo tự pha 200 g, cốt dừa 200 ml, thịt 200 g, tôm 200 g, giá 300 g, đậu xanh cà vỏ 50 g, hành tây 1 củ; bánh miền Tây đường kính >30 cm."
+    },
+    {
+      "url": "https://pasgo.vn/blog/giai-ma-mon-dac-san-banh-xeo-mien-tay-noi-tieng-ca-nuoc-4060",
+      "accessed": "2026-10-31",
+      "note": "PasGo (Minh Phương) — bột gạo 500 g, dừa nạo 250 g (vắt cốt), tôm sú 300 g, ba chỉ 300 g, giá 300 g, nấm rơm 400 g, trứng gà 2 quả, hành tây 1 củ."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/banh-xeo-mien-tay.webp",
@@ -137,7 +166,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-004 đợt 2 (lô bánh dân gian) mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 8 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).]",
+  "import_note": "Soạn nháp DISH-004 đợt 2 (lô bánh dân gian) mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 8 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).] [LV2-010 đợt 10: ĐẠT Mức 2 — 3 họ độc lập đã mở (MWG/Điện Máy XANH — bản Bách Hoá XANH trùng công thức nên gộp 1 họ, Du lịch Sóc Trăng, PasGo); tỉ lệ nhân/bột giữa các họ bất đồng >30% nên giữ nguyên mọi dòng hiện tại theo quy tắc đợt, chỉ thêm hanh-tay 10 g vì 3/3 họ đều có mà file thiếu; dầu chiên chính tiếp tục không kê theo Phương án A; steps viết lại 8 bước. Ghi nhận: serving 260 g nhỏ hơn món cha banh-xeo (280 g) dù bánh miền Tây lớn hơn theo các họ — không họ nào cân gram/cái nên không sửa.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

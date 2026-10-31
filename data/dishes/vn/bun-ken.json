@@ -133,7 +133,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. [LV2-010 đợt 10: GIỮ Mức 1 — GIU-BIEN-THE + trần nguyên liệu định danh: đã mở 3 họ (Tripi Phú Quốc 4 người — cá sòng, cốt dừa 600 ml, giá 300 g, ăn kèm đu đủ xanh/bắp chuối, bột cà ri; Hai Thụy — bản Nam Bộ cá lóc 800 g/1,5 kg bún, dừa nạo 300 g vắt 1 chén cốt + 3 tô dão, tôm khô, khóm; NYT/Diep Tran qua Dining&Cooking — Kiên Giang, cá nguyên con 1 lb, coconut cream 1/2 cup, topping đu đủ xanh/giá/dưa leo/rau răm). Không họ nào dùng cá thu như file; cá Phú Quốc (sòng/ngân/nhàu) chưa có slug + chưa có số dinh dưỡng nên định danh trần; bản cá lóc là biến thể Hà Tiên/Châu Đốc đất liền, cần chủ dự án chốt biến thể. Cốt dừa các họ lệch >30% (30–150 g/người) nên giữ 50 g. File cũng thiếu đu đủ xanh + bắp chuối (≥2 họ có, slug đã có số) và bột cà ri — chỉ áp khi chốt biến thể. Vùng vn-south giữ nguyên; không đề xuất nhãn dac-san vì TAXONOMY chưa có phu-quoc.]",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",
