@@ -38,6 +38,14 @@
   "edible_portion_note": "CHƯA CÓ hệ số có nguồn: foodMeasures FDC 167853 không có mục yield xương/thịt. Sườn ở chợ bán CẢ XƯƠNG trong khi giá trị dinh dưỡng tính trên phần nạc+mỡ đã lọc — đây chính là ví dụ gốc của DATA-008 (300 g sườn ≠ 300 g thịt). Cần tự cân: mua, cân cả xương, lọc, cân lại, ghi ngày + phương pháp.",
   "is_ready_to_eat": false,
   "units": [],
+  "media": [
+    {
+      "path": "media/ingredients/suon-lon.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "medium",
   "needs_review": true,
