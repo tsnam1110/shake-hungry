@@ -17,7 +17,7 @@
     "fiber_g": null,
     "water_g": null,
     "mapping_confidence": "low",
-    "mapping_note": "KHÔNG TRA ĐƯỢC — để null theo QT-1, không đoán. Đã tìm: USDA FDC với 'snakehead', 'murrel', 'fish snakehead' trên cả 4 dataType (0 kết quả); ANSES-Ciqual với 'snakehead' (0 kết quả). Các bảng có thể có đều vướng: FAO/INFOODS ASEAN là NC (cấm theo QT-2), Bảng TPTP Việt Nam có bản quyền (không dùng — xem LEGAL-001), FNRI Philippines và Thai FCT chưa xác minh license. Có bài báo khoa học đưa số proximate (ẩm 77,2% / protein 13,9% / lipid 5,9%) nhưng phân tán rất lớn giữa cá tự nhiên và cá nuôi, không đủ tư cách làm bảng tham chiếu. VIỆC CẦN LÀM: tra nhãn sản phẩm cá lóc đóng gói, hoặc tự đo — xem DATA-PIPELINE §7.2 nguồn cấp 4–5. Món chứa cá lóc hiện hiển thị 'chưa đủ dữ liệu'.",
+    "mapping_note": "KHÔNG TRA ĐƯỢC — để null theo QT-1, không đoán. Đã tìm: USDA FDC với 'snakehead', 'murrel', 'fish snakehead' trên cả 4 dataType (0 kết quả); ANSES-Ciqual với 'snakehead' (0 kết quả). Các bảng có thể có đều vướng: FAO/INFOODS ASEAN là NC (cấm theo QT-2), Bảng TPTP Việt Nam có bản quyền (không dùng — xem LEGAL-001), FNRI Philippines và Thai FCT chưa xác minh license. Có bài báo khoa học đưa số proximate (ẩm 77,2% / protein 13,9% / lipid 5,9%) nhưng phân tán rất lớn giữa cá tự nhiên và cá nuôi, không đủ tư cách làm bảng tham chiếu. VIỆC CẦN LÀM: tra nhãn sản phẩm cá lóc đóng gói, hoặc tự đo — xem DATA-PIPELINE §7.2 nguồn cấp 4–5. Món chứa cá lóc hiện hiển thị 'chưa đủ dữ liệu'. TRA LẠI 2026-10-31: FDC toàn bộ dataType (SR Legacy + Foundation + Survey/FNDDS bản 2024-10-31) vẫn 0 kết quả cho \"snakehead\" và \"Channa striata\" — giữ null, kết luận cũ nguyên hiệu lực.",
     "alternatives": []
   },
   "secondary_sources": [],

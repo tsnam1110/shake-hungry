@@ -18,7 +18,7 @@
     "water_g": null,
     "sodium_mg": null,
     "mapping_confidence": "low",
-    "mapping_note": "KHÔNG TRA ĐƯỢC trong SR Legacy (bản 2018-04, tra cục bộ): 'banana flower' 0 kết quả. Không suy từ quả chuối — hoa và quả khác hẳn thành phần. VIỆC CẦN LÀM: tra Ciqual/CNF online. Nộm hoa chuối, bún riêu có bắp chuối hiện 'chưa đủ dữ liệu' cho phần này (thường là rau kèm — cân nhắc is_optional).",
+    "mapping_note": "KHÔNG TRA ĐƯỢC trong SR Legacy (bản 2018-04, tra cục bộ): 'banana flower' 0 kết quả. Không suy từ quả chuối — hoa và quả khác hẳn thành phần. VIỆC CẦN LÀM: tra Ciqual/CNF online. Nộm hoa chuối, bún riêu có bắp chuối hiện 'chưa đủ dữ liệu' cho phần này (thường là rau kèm — cân nhắc is_optional). TRA LẠI 2026-10-31: FDC (mọi dataType) với \"banana flower\" và \"banana blossom\" vẫn không có hoa chuối (Musa): kết quả gần nhất là hoa bí (Pumpkin flowers, SR), hoa điên điển (Sesbania flower, SR) và nhóm gộp \"flowers of sesbania, squash, or lily\" (FNDDS) — khác loài, không dùng. Giữ null.",
     "alternatives": []
   },
   "secondary_sources": [],

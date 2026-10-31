@@ -18,7 +18,7 @@
     "water_g": null,
     "sodium_mg": null,
     "mapping_confidence": "low",
-    "mapping_note": "KHÔNG TRA ĐƯỢC trong SR Legacy (bản 2018-04, tra cục bộ): 'sugarcane'/'sugar cane' 0 kết quả. KHÔNG suy từ 'Sugars, granulated' — nước mía ~80% nước, suy từ đường tinh là sai mẫu số. VIỆC CẦN LÀM: tra Ciqual/CNF online hoặc nhãn nước mía đóng chai (cấp 4); có bài phân tích Brix nước mía nhưng phân tán theo giống/máy ép. Món dùng nước mía hiện 'chưa đủ dữ liệu'.",
+    "mapping_note": "KHÔNG TRA ĐƯỢC trong SR Legacy (bản 2018-04, tra cục bộ): 'sugarcane'/'sugar cane' 0 kết quả. KHÔNG suy từ 'Sugars, granulated' — nước mía ~80% nước, suy từ đường tinh là sai mẫu số. VIỆC CẦN LÀM: tra Ciqual/CNF online hoặc nhãn nước mía đóng chai (cấp 4); có bài phân tích Brix nước mía nhưng phân tán theo giống/máy ép. Món dùng nước mía hiện 'chưa đủ dữ liệu'. TRA LẠI 2026-10-31: FDC Branded có \"Sugarcane Juice Drink\" của GOYA nhưng chỉ 35% nước mía + nước + đường thêm (43 kcal/100ml) — là nước giải khát pha loãng, không phải nước mía ép nguyên chất (VN ~70–80 kcal/100ml). Giữ null.",
     "alternatives": []
   },
   "secondary_sources": [],

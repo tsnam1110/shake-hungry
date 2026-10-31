@@ -18,7 +18,7 @@
     "water_g": null,
     "sodium_mg": null,
     "mapping_confidence": "low",
-    "mapping_note": "KHÔNG TRA ĐƯỢC bản tươi trong SR Legacy (bản 2018-04, tra cục bộ): chỉ có 'Rambutan, canned, syrup pack' 168167 — ngâm siro đường, không dùng được cho quả tươi. VIỆC CẦN LÀM: tra Ciqual/CNF online. Trái cây tráng miệng, ưu tiên trung bình.",
+    "mapping_note": "KHÔNG TRA ĐƯỢC bản tươi trong SR Legacy (bản 2018-04, tra cục bộ): chỉ có 'Rambutan, canned, syrup pack' 168167 — ngâm siro đường, không dùng được cho quả tươi. VIỆC CẦN LÀM: tra Ciqual/CNF online. Trái cây tráng miệng, ưu tiên trung bình. TRA LẠI 2026-10-31: FDC vẫn chỉ có chôm chôm ĐÓNG HỘP ngâm siro (SR 168167, 82 kcal — siro cộng thêm ~5g đường/100g so với quả tươi) và bản Branded ngâm siro tương tự; không có dòng quả tươi ở SR/Foundation/FNDDS. Dùng số đóng hộp cho quả tươi sẽ sai có hệ thống về đường — giữ null.",
     "alternatives": [
       {
         "name": "Rambutan, canned, syrup pack",

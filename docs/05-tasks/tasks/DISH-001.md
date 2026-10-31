@@ -68,3 +68,9 @@ Toàn bộ 61 món vỏ Wikidata đã được xử lý trong `data/dishes/vn/`:
   viên tra cứu nguồn thật và nhập vào, món mới lên Mức 2.
 - Cảnh báo V9 cho 5 mục nước mắm là dương tính giả theo thiết kế khoảng
   50–2000 kcal: khẩu phần gia vị 15g cho ≈8 kcal là đúng thực tế.
+
+**Bổ sung 2026-10-31 — tra lại nguồn cho nhóm nguyên liệu chưa có số (theo yêu cầu chủ dự án: kiến thức phải chính thức, nằm trong repo, dùng lại khi golive/chuyển máy):** tra trực tiếp USDA FoodData Central (API, mọi dataType gồm bản Survey/FNDDS phát hành 2024-10-31 — bản này ra SAU đợt biên soạn gốc nên có dòng mới):
+- ** thanh-long: CÓ NGUỒN MỚI** — "Dragon fruit" FNDDS FDC 2709234 (68 kcal/100g) → đã điền `reference_food` (fct_source `usda_survey`, tin cậy medium). Hai món dùng thanh long (banh-mi-thanh-long, mi-thanh-long) tăng độ tin cậy low → medium sau tính lại.
+- Tra lại vẫn KHÔNG có nguồn đạt chuẩn, giữ null và đã ghi phụ chú ngày 2026-10-31 vào `mapping_note` từng file: ca-loc (FDC mọi dataType 0 kết quả "snakehead"), bap-chuoi (chỉ có hoa bí/hoa điên điển — khác loài), mam-tom (Branded chỉ có bagoong xào Philippines), chom-chom (chỉ có bản đóng hộp siro), nuoc-mia (Branded GOYA pha loãng 35%).
+- Các kết luận LOẠI của đợt gốc được xác nhận lại là đúng và giữ nguyên: luon ≠ Anguilla (khác bộ), tuong-ban ≠ miso (tương loãng hơn nhiều), cua-dong (đã quét USDA/Ciqual/MEXT), ruou-trang ≠ sake (chênh độ cồn có hệ thống).
+- Sau nạp lại: validate-data 0 🔴, 66/66 test đạt; số món tính được giữ nguyên 48 (đợt này nâng CHẤT LƯỢNG số của 2 món, không tăng số lượng — các món còn "chưa đủ dữ liệu" đều vướng nguyên liệu đặc thù VN chưa có bảng license sạch, đúng kết luận LEGAL-001).
