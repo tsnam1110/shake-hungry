@@ -57,6 +57,14 @@
       "source": "FDC 172233 foodMeasures"
     }
   ],
+  "media": [
+    {
+      "path": "media/ingredients/thi-la.webp",
+      "license": "cc0",
+      "attribution": "AnRo0002 / Wikimedia Commons (CC0)",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "medium",
   "needs_review": true,

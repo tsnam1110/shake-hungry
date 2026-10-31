@@ -52,7 +52,14 @@
     "Khô cá lóc là cá lóc ướp muối phơi khô — định lượng là phần khô ăn trực tiếp; engine hiện tính theo cá tươi nên kcal sẽ THẤP hơn thực tế khô, ghi chú để người duyệt cân nhắc bổ sung nguyên liệu 'khô cá lóc' riêng."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/kho-ca-loc.webp",
+      "license": "public-domain",
+      "attribution": "Phương Huy (thảo luận) / Wikimedia Commons (Public domain)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": {
     "id": "Q10779714",

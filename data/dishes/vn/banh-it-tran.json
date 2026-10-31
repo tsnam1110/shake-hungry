@@ -113,7 +113,14 @@
       "note": "Bánh ít trần — món đặc trưng Huế: viên bột nếp nhân đậu xanh, thịt lợn, tôm, hấp, ăn với mỡ hành và nước mắm."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/banh-it-tran.webp",
+      "license": "cc-by-sa-3.0",
+      "attribution": "Memberofc1 / Wikimedia Commons (CC BY-SA 3.0)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt)",

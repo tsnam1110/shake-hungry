@@ -103,7 +103,14 @@
     "Bọc nhân bằng vỏ bột lá khúc, lăn qua gạo nếp đã ngâm, xếp vào chõ đồ chín; rắc hành phi khi dùng."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/xoi-khuc.webp",
+      "license": "cc-by-sa-3.0",
+      "attribution": "Memberofc1 / Wikimedia Commons (CC BY-SA 3.0)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt)",

@@ -120,7 +120,14 @@
     "Cho rươi vào kho/chưng nhỏ lửa đến khi sệt lại, nêm vừa ăn; ăn nóng với cơm trắng."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/mam-ruoi.webp",
+      "license": "public-domain",
+      "attribution": "Việt Hà (thảo luận) / Wikimedia Commons (Public domain)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": {
     "id": "Q10796550",

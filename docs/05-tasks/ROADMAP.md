@@ -214,6 +214,7 @@ kiểm chứng TEST-002**; `migrate:fresh --seed` dựng lại đúng toàn bộ
 | [REC-002](./tasks/REC-002.md) | Sinh embedding + tìm món tương tự bằng embedding vector | Backend | ⬜ | REC-001 | — |
 | [REC-003](./tasks/REC-003.md) | Lắc hai chế độ: ăn ngoài 1 món / mâm cơm tự nấu 1–4 món (mặc định 3, không tính cơm) | Backend + Frontend | ✅ | REC-001 | 2026-10-31 (theo yêu cầu trực tiếp của chủ dự án: mâm gom theo vai trò chính + canh + rau; tuỳ chọn lưu trong hồ sơ; lọc chay dùng thêm nhãn diet:man) |
 | [REC-004](./tasks/REC-004.md) | Tuỳ chọn "Bữa cơm bình dân" cho mâm cơm: chỉ món dễ nấu, nguyên liệu phổ biến dễ kiếm | Backend + Frontend | ✅ | REC-003 | 2026-10-31 (tiêu chí suy từ kho: mọi nguyên liệu có mặt ở ≥4 món + ≤8 bước nấu; pool thật 209/306 món; lưu hồ sơ tray_binh_dan) |
+| [IMG-001](./tasks/IMG-001.md) | Ảnh cho mọi sản phẩm (món/nguyên liệu/hoa quả): Wikimedia CC đã kiểm chứng trực quan + AI minh hoạ gắn nhãn cho phần thiếu | Backend + Frontend + Dữ liệu | 🔶 | DATA-010, UI-012 | 2026-10-31 (chủ dự án chốt hướng Wikimedia + AI; hạ tầng media mở rộng cho nguyên liệu, route /media, validator V19, hiển thị + ghi công; đợt 1 Wikimedia đã rà soát loại 379 ảnh sai/không tin được từ search; đợt AI lấp phần còn lại chạy theo đợt con) |
 | [UI-002](./tasks/UI-002.md) | Nút Lắc bản chính thức | Frontend | ✅ | REC-001 | — |
 | [UI-003](./tasks/UI-003.md) | Trang chi tiết món (công thức, dinh dưỡng, độ tin cậy) | Frontend | ✅ | UI-002 | — |
 | [UI-004](./tasks/UI-004.md) | Vỏ ứng dụng + hệ thiết kế v2 (Apple HIG) | Frontend | ✅ | UI-003 | 2026-10-31 |

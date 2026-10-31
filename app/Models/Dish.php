@@ -100,6 +100,28 @@ class Dish extends Model
         return $this->hasMany(DishMedia::class);
     }
 
+    /**
+     * IMG-001: ảnh chính để hiển thị — URL phục vụ từ data/media/ qua route
+     * /media, kèm license + ghi công; is_ai=true khi là ảnh AI minh hoạ
+     * (license 'ai-minh-hoa') để giao diện gắn nhãn trung thực.
+     *
+     * @return array{url: string, license: string, attribution: ?string, is_ai: bool}|null
+     */
+    public function primaryImage(): ?array
+    {
+        $media = $this->media->firstWhere('is_primary', true) ?? $this->media->first();
+        if ($media === null) {
+            return null;
+        }
+
+        return [
+            'url' => '/'.$media->path,
+            'license' => $media->license,
+            'attribution' => $media->attribution,
+            'is_ai' => $media->license === 'ai-minh-hoa',
+        ];
+    }
+
     public function recipeSources(): HasMany
     {
         return $this->hasMany(DishRecipeSource::class);

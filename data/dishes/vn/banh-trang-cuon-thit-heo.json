@@ -171,7 +171,14 @@
       "note": "Công thức cho 4 người: thịt ba chỉ 1kg luộc cùng hành tím, hành tây và sả; cuốn cùng bánh phở, chấm mắm nêm pha thơm, tỏi, ớt, sả — đối chiếu định lượng và cấu trúc món. Lưu ý nguồn ghi bánh tráng 20g cho cả mẻ, một số bất thường của chính nguồn."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/banh-trang-cuon-thit-heo.webp",
+      "license": "cc-by-sa-4.0",
+      "attribution": "Lê Huỳnh Bộ / Wikimedia Commons (CC BY-SA 4.0)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt) Nâng Mức 2 đợt 1 (2026-10-31): Đối chiếu 3 nguồn công thức đã mở kiểm chứng (xem recipe_sources). Định lượng: giữ nguyên toàn bộ. Thịt ba chỉ mỗi khẩu phần giữa các nguồn bất đồng rất lớn (≈83g ở Lan Vy so với 250g ở Tripi; nguồn Bách Hợp không ghi khẩu phần) nên giữ 150g của file. Sửa phân loại: cooking_method đổi từ 'song' sang 'luoc' — cả 3 nguồn đều luộc thịt chín rồi mới thái lát để cuốn, phần cuốn chỉ là công đoạn trình bày, ghi 'song' là sai rõ ràng. Ghi nhận: trong các nguồn Đà Nẵng, bánh phở là thành phần cốt lõi của cuốn, trong khi file đang để bánh phở là nguyên liệu tùy chọn (is_optional) — không tự sửa, chờ chủ dự án quyết. Bước nấu viết lại 8 bước.",

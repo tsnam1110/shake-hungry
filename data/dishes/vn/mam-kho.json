@@ -147,7 +147,14 @@
       "note": "Cookpad — Huỳnh Phát, 5–6 người: mắm cá linh 150g + mắm cá sặc 150g, thịt ba chỉ 300g, cá hú 500g, cà tím 350g (2 trái), nước dừa xiêm 1 lít, sả băm 4 muỗng canh, đường 3 muỗng canh; lọc mắm bỏ xác, cho thịt vào trước, cà tím rồi cá vào sau — nguồn quy đổi khẩu phần rõ nhất (cà tím ~64g/người)."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/mam-kho.webp",
+      "license": "cc-by-sa-4.0",
+      "attribution": "Viethavvh / Wikimedia Commons (CC BY-SA 4.0)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": {
     "id": "Q10796546",

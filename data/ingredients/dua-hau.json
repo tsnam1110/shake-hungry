@@ -57,6 +57,14 @@
       "source": "FDC 167765 foodMeasures"
     }
   ],
+  "media": [
+    {
+      "path": "media/ingredients/dua-hau.webp",
+      "license": "public-domain",
+      "attribution": "Albert Eckhout / Wikimedia Commons (Public domain)",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

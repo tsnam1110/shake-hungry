@@ -51,6 +51,14 @@
       "source": "FDC 169714 foodMeasures"
     }
   ],
+  "media": [
+    {
+      "path": "media/ingredients/bot-gao.webp",
+      "license": "cc-by-sa-2.0",
+      "attribution": "FotoosVanRobin / Wikimedia Commons (CC BY-SA 2.0)",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

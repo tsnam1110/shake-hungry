@@ -37,6 +37,14 @@
       "source": "servingSize nhãn FDC 2033684"
     }
   ],
+  "media": [
+    {
+      "path": "media/ingredients/gio-lua.webp",
+      "license": "cc-by-sa-4.0",
+      "attribution": "Ser Amantio di Nicolao / Wikimedia Commons (CC BY-SA 4.0)",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "low",
   "needs_review": true,

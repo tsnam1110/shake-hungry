@@ -71,7 +71,14 @@
     "Chan nước cốt dừa khi ăn; ăn nóng hoặc lạnh."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/che-dau-do.webp",
+      "license": "cc-by-sa-2.0",
+      "attribution": "stu_spivack / Wikimedia Commons (CC BY-SA 2.0)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt)",

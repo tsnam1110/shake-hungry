@@ -20,7 +20,7 @@ class LacdoiValidateData extends Command
 {
     protected $signature = 'lacdoi:validate-data';
 
-    protected $description = 'Kiểm tra toàn vẹn dữ liệu trong data/ và database (V1–V18, DATA-PIPELINE §5)';
+    protected $description = 'Kiểm tra toàn vẹn dữ liệu trong data/ và database (V1–V19, DATA-PIPELINE §5)';
 
     /** @var list<string> */
     private array $errors = [];
@@ -41,6 +41,7 @@ class LacdoiValidateData extends Command
         $this->validateFruitFiles($fruits, $ingredients);
         $this->validateTaxonomy($ingredients, $dishes);
         $this->validateMediaManifest();
+        $this->validateMediaEntries($ingredients, $dishes);
         $this->validateDatabase();
 
         $this->newLine();
@@ -393,6 +394,50 @@ class LacdoiValidateData extends Command
             // V2 — ảnh không có mục MANIFEST kèm license thì không được commit (🔴, R4/QT-2).
             if ($entry === null || blank($entry['license'] ?? null)) {
                 $this->errors[] = "V2 [{$rel}]: ảnh không có mục trong media/MANIFEST.json kèm license";
+            }
+        }
+    }
+
+    /**
+     * V19 — mục media trong file món/nguyên liệu (IMG-001): mỗi mục phải có
+     * license (R4), file ảnh phải tồn tại trong data/, tối đa 1 ảnh chính,
+     * và license phải khớp mục MANIFEST của cùng ảnh (V2 soi chiều file →
+     * manifest, V19 soi chiều mục khai báo → file + manifest).
+     */
+    private function validateMediaEntries(array $ingredients, array $dishes): void
+    {
+        $manifestPath = base_path('data/media/MANIFEST.json');
+        $manifest = is_file($manifestPath)
+            ? (json_decode((string) file_get_contents($manifestPath), true) ?? [])
+            : [];
+
+        foreach (['món' => $dishes, 'nguyên liệu' => $ingredients] as $kind => $items) {
+            foreach ($items as $slug => $j) {
+                $primary = 0;
+                foreach ($j['media'] ?? [] as $media) {
+                    $this->checked++;
+                    $path = (string) ($media['path'] ?? '');
+                    $license = (string) ($media['license'] ?? '');
+                    if ($license === '') {
+                        $this->errors[] = "V19 [{$slug}]: mục media của {$kind} thiếu license (R4)";
+                    }
+                    if ($path === '' || ! is_file(base_path('data/'.$path))) {
+                        $this->errors[] = "V19 [{$slug}]: file ảnh '{$path}' không tồn tại trong data/";
+                    }
+                    $manifestKey = preg_replace('#^media/#', '', $path);
+                    $entry = $manifest[$manifestKey] ?? null;
+                    if ($entry === null) {
+                        $this->errors[] = "V19 [{$slug}]: ảnh '{$path}' chưa có mục trong media/MANIFEST.json (R4)";
+                    } elseif (($entry['license'] ?? null) !== $license) {
+                        $this->errors[] = "V19 [{$slug}]: license của '{$path}' lệch MANIFEST ({$license} ≠ ".($entry['license'] ?? '∅').')';
+                    }
+                    if (! empty($media['is_primary'])) {
+                        $primary++;
+                    }
+                }
+                if ($primary > 1) {
+                    $this->errors[] = "V19 [{$slug}]: {$kind} có {$primary} ảnh chính — tối đa 1";
+                }
             }
         }
     }

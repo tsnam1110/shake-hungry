@@ -45,6 +45,14 @@
       "source": "FDC 173033 foodMeasures"
     }
   ],
+  "media": [
+    {
+      "path": "media/ingredients/buoi-chum.webp",
+      "license": "cc-by-sa-2.5",
+      "attribution": "Citrus_paradisi_(Grapefruit,_pink).jpg: א (Aleph)\nderivative work: — raeky / Wikimedia Commons (CC BY-SA 2.5)",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

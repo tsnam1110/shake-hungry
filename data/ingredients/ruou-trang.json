@@ -38,6 +38,14 @@
   "edible_portion_note": null,
   "is_ready_to_eat": false,
   "units": [],
+  "media": [
+    {
+      "path": "media/ingredients/ruou-trang.webp",
+      "license": "public-domain",
+      "attribution": "Khương Việt Hà / Wikimedia Commons (Public domain)",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "low",
   "needs_review": true,

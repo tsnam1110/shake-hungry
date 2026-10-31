@@ -87,7 +87,14 @@
     "Chiên ngập dầu nhanh đến khi vàng giòn, ăn nóng chấm tương ớt."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/pho-mai-que.webp",
+      "license": "cc-by-2.0",
+      "attribution": "@joefoodie / Wikimedia Commons (CC BY 2.0)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt)",

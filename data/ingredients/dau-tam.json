@@ -44,6 +44,14 @@
       "source": "FDC 169913 foodMeasures"
     }
   ],
+  "media": [
+    {
+      "path": "media/ingredients/dau-tam.webp",
+      "license": "cc-by-sa-4.0",
+      "attribution": "Didier Descouens / Wikimedia Commons (CC BY-SA 4.0)",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "medium",
   "needs_review": true,

@@ -95,7 +95,14 @@
     "Nướng bánh, phết mặt bằng lòng đỏ trứng pha loãng, nướng tiếp đến khi vỏ vàng đều."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/banh-trung-thu.webp",
+      "license": "cc-by-sa-4.0",
+      "attribution": "Popo le Chien / Wikimedia Commons (CC BY-SA 4.0)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt)",

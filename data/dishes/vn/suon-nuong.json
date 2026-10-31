@@ -126,7 +126,14 @@
       "note": "Điện máy XANH — cơm tấm sườn nướng cho 8 người: thịt sườn 2kg, sả cây 30g, nước mắm 3 muỗng canh, sữa tươi 6 muỗng canh; ướp 8–12 giờ, nướng ~20 phút rồi phết mật ong (2 muỗng canh/mẻ, ~5g/người) nướng thêm 5–7 phút tới vàng nâu sẫm — đối chiếu kỹ thuật phết mật ong ở cuối và định lượng sả ~4g/người."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/suon-nuong.webp",
+      "license": "cc-by-2.0",
+      "attribution": "나무늘보하루~ / Wikimedia Commons (CC BY 2.0 kr)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": {
     "id": "Q46070600",

@@ -134,7 +134,14 @@
       "note": "Mạnh Hoạch: 2 đùi gà, gạo 250g nấu bằng nước luộc gà với bột nghệ, dưa leo 1 quả, cà chua 1 quả, hành tím 3 củ, tỏi 5 tép; ướp đùi 30 phút, luộc sơ 5 phút, chiên và liên tục xối dầu nóng lên da đến khi vàng giòn, cơm chiên cho hạt săn lại."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/com-ga-xoi-mo.webp",
+      "license": "cc-by-2.0",
+      "attribution": "Guilhem Vellut from Paris, France / Wikimedia Commons (CC BY 2.0)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 15 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).] Nâng Mức 2 đợt 2 (2026-10-31): Đã đối chiếu 3 nguồn công thức thật đã mở kiểm chứng (Cookpad, Nấu Ăn Không Khó, Mạnh Hoạch). Định lượng: giữ nguyên toàn bộ — đùi gà: Cookpad dùng 1 đùi to cho 1 phần, Nấu Ăn Không Khó ghi đùi 200 g/phần (trọng lượng nguyên chiếc có xương, quy đổi phần thịt và da ăn được khoảng 130-150 g, khớp dòng thit-ga-co-da 150 g); cơm 220 g khớp 1 chén cơm (Nấu Ăn Không Khó) và phần cơm nấu từ 250 g gạo cho 2 phần (Mạnh Hoạch). Dưa leo và cà chua: Nấu Ăn Không Khó ghi 200 g mỗi loại cho 1 phần — con số bất thường ngay trong nguồn, không thực tế cho phần rau xếp đĩa, loại khỏi phân xử theo tiền lệ loại ngoại lệ của nguồn; Mạnh Hoạch quy đổi khoảng 40-50 g/người, gần file (30 g và 20 g), nên giữ nguyên. Dầu ăn: cả 3 nguồn đều chiên ngập hoặc xối dầu (Nấu Ăn Không Khó ghi 150 ml) — đó là dầu dùng làm môi trường chiên; theo quy ước Phương án A/QA-002, file KHÔNG kê dòng dau-an cho bước chiên chính, phần dầu hấp thụ vào da gà do engine mô hình hoá theo CALC-004 (nhóm chiên đã đạt ở QA-002 lần 3-4) — giữ nguyên, không thêm dòng dầu và không đổi định lượng dầu nào khác vì file không có dòng dầu. Bất thường: 1/3 nguồn định lượng (Nấu Ăn Không Khó) có trứng ốp la ăn kèm và cả 3 nguồn đều nấu cơm bằng nước luộc gà (thường chiên lại) trong khi file ghi cơm trắng thuần — ghi nhận chờ phân xử, không thêm dòng hay đổi cấu trúc. Phân loại (chien) đúng, giữ nguyên.",

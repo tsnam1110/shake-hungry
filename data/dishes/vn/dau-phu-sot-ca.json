@@ -121,7 +121,14 @@
       "note": "Saigonese Baguette: đậu hũ khoảng 500 g, cà chua khoảng 500 g cho 4 người (125 g đậu và 125 g cà/khẩu phần), nước mắm 2–3 muỗng canh, đường 1–2 muỗng canh; chiên đậu vàng, sốt cà đun liu riu 7–10 phút cho đậu thấm"
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/dau-phu-sot-ca.webp",
+      "license": "cc-by-2.0",
+      "attribution": "HungryHuy / Wikimedia Commons (CC BY 2.0)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 2 (2026-10-31): Đã đối chiếu 3 nguồn thật mở kiểm chứng (Bách Hóa XANH; Cookpad Lâm Lâmm; Saigonese Baguette). Phân xử định lượng: giữ nguyên mọi dòng — đậu chiên 120 g khớp Saigonese Baguette (500 g/4 người = 125 g/khẩu phần) nhưng Cookpad chỉ ghi 3 bìa/4 người (quy đổi khoảng 75 g/khẩu phần) nên nguồn bất đồng nhau; cà chua 100 g nằm giữa Bách Hóa XANH (300 g cho 2–3 người ở biến thể đậu sốt đơn giản) và Saigonese (125 g/khẩu phần), trong khi Cookpad thấp hơn (2 quả to/4 người) — không có đồng thuận để sửa. Bất thường ghi nhận: cả 3 nguồn đều chiên đậu tươi tại chỗ rồi mới sốt, file dùng slug đậu phụ chiên sẵn — cùng sản phẩm cuối nhưng khác điểm bắt đầu, ghi nhận để thống nhất cách mô tả về sau; Bách Hóa XANH có biến thể chay dùng nước tương thay nước mắm, file là bản mặn dùng nước mắm như Saigonese.",

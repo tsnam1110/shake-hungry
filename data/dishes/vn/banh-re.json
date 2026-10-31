@@ -67,7 +67,14 @@
     "Chiên giòn."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/banh-re.webp",
+      "license": "cc-by-sa-3.0",
+      "attribution": "Liftold / Wikimedia Commons (CC BY-SA 3.0)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": {
     "id": "Q5004810",

@@ -155,7 +155,14 @@
       "note": "Công thức của Quỳnh Hương trên Cookpad, 4 phần ăn: 300g bò file, ớt chuông đỏ/vàng mỗi loại nửa quả, hành tây nửa củ; xào rau củ trước, xào bò lửa to cho săn."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/bo-luc-lac.webp",
+      "license": "cc0",
+      "attribution": "Alexandersingh9 / Wikimedia Commons (CC0)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Nâng Mức 2 đợt 1 (2026-10-31): Đã đối chiếu 3 nguồn công thức thật (Cookpad/Trang Tran, Dạy Nấu Á Âu, Cookpad/Quỳnh Hương). Định lượng: thịt bò/khẩu phần giữa các nguồn dao động 75-125g (300g/4 phần, 200g/2 phần, mẻ 500g) — hai nguồn bất đồng quá 30% nên theo quy tắc giữ nguyên 120g của file; ớt chuông (nguồn 25-75g) và hành tây (nguồn ~12-50g) cũng bất đồng lớn, giữ nguyên 40g mỗi loại. Phân loại (loai:mon-chinh, xao, vn-tp-hcm, trưa/tối) rà soát, không sai rõ ràng, giữ nguyên.",

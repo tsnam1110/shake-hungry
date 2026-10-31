@@ -31,6 +31,14 @@
   "edible_portion_note": "CHƯA CÓ hệ số có nguồn: tôm càng xanh đầu và càng rất to, phần thịt đuôi ăn được chiếm tỉ lệ thấp hơn hẳn tôm biển; giá trị dinh dưỡng tính trên phần thịt đã bóc. Cần tự cân trước khi chốt hệ số.",
   "is_ready_to_eat": false,
   "units": [],
+  "media": [
+    {
+      "path": "media/ingredients/tom-cang-xanh.webp",
+      "license": "cc-by-sa-3.0",
+      "attribution": "This illustration was made by Citron\nYou must credit this : Citron / CC-BY-SA-3.0 / Wikimedia Commons (CC BY-SA 3.0)",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "low",
   "needs_review": true,

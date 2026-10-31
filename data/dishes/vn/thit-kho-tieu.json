@@ -122,7 +122,14 @@
       "note": "Tạp chí Món Ngon Việt Nam/Knorr đăng lại (thuvienso): thịt ba chỉ kho tiêu xanh 300g thịt, 100g tiêu xanh, kho 20 phút — đối chiếu định lượng theo mẻ."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/thit-kho-tieu.webp",
+      "license": "cc-by-sa-3.0",
+      "attribution": "Mkat / Wikimedia Commons (CC BY-SA 3.0)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): đã đối chiếu 3 nguồn công thức đã mở kiểm chứng (Điện Máy Xanh, Cookpad Huỳnh Phát, Món Ngon Việt Nam/Knorr). Thịt mỗi khẩu phần giữa các nguồn dao động 50–167g (các nguồn dùng khác nhau cả phần thịt nạc/ba chỉ và tiêu xay/tiêu xanh) — bất đồng >30% nên giữ nguyên mọi quantity. Tiêu đen 2g/khẩu phần khớp mức tiêu xay của nguồn Điện Máy Xanh (khoảng 1,8g). recipe_steps viết lại hoàn toàn thành 6 bước. Không sửa phân loại.",

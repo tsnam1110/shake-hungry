@@ -139,7 +139,14 @@
       "note": "Cookpad (Dory): sườn xào chua ngọt cho 2 người (sườn non 400–500g, ớt chuông, hành tây, giấm, đường) — đối chiếu đầu khoảng định lượng trên của sườn."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/suon-xao-chua-ngot.webp",
+      "license": "cc-by-3.0",
+      "attribution": "Nguyen Thi Quynh Tram / Wikimedia Commons (CC BY 3.0)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): đã đối chiếu 3 nguồn công thức đã mở kiểm chứng (Điện Máy Xanh, Hướng Nghiệp Á Âu, Cookpad Dory). Sườn mỗi khẩu phần dao động khoảng 125–250g giữa các nguồn — bất đồng >30% nên giữ nguyên suon-lon 180g. Ớt chuông 40g và hành tây 30g nằm trong khoảng các nguồn. recipe_steps viết lại hoàn toàn thành 7 bước. Không sửa phân loại.",

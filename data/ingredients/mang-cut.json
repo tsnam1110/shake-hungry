@@ -51,6 +51,14 @@
       "source": "ước lượng theo MEXT"
     }
   ],
+  "media": [
+    {
+      "path": "media/ingredients/mang-cut.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "low",
   "needs_review": true,

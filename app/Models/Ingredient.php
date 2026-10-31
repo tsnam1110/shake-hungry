@@ -45,6 +45,28 @@ class Ingredient extends Model
         return $this->hasMany(IngredientAlias::class);
     }
 
+    /** Ảnh nguyên liệu (IMG-001) — hoa quả dùng chung media của nguyên liệu này. */
+    public function media(): HasMany
+    {
+        return $this->hasMany(IngredientMedia::class);
+    }
+
+    /** IMG-001: ảnh chính để hiển thị — cùng khuôn với Dish::primaryImage(). */
+    public function primaryImage(): ?array
+    {
+        $media = $this->media->firstWhere('is_primary', true) ?? $this->media->first();
+        if ($media === null) {
+            return null;
+        }
+
+        return [
+            'url' => '/'.$media->path,
+            'license' => $media->license,
+            'attribution' => $media->attribution,
+            'is_ai' => $media->license === 'ai-minh-hoa',
+        ];
+    }
+
     public function tags(): BelongsToMany
     {
         return $this->belongsToMany(Tag::class, 'ingredient_tags');

@@ -38,6 +38,14 @@
       "source": "suy từ FDC 169698 foodMeasures: 1 cup = 128 g, 1 cup = 16 tbsp"
     }
   ],
+  "media": [
+    {
+      "path": "media/ingredients/bot-ngo.webp",
+      "license": "cc0",
+      "attribution": "Fumikas Sagisavas / Wikimedia Commons (CC0)",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

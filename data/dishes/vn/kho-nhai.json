@@ -49,7 +49,14 @@
     "Khô nhái là nhái đồng phơi khô — tạm tính bằng thịt ếch với cùng lưu ý về độ khô như khô cá lóc."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/kho-nhai.webp",
+      "license": "cc-by-3.0",
+      "attribution": "Phổ Minh / Wikimedia Commons (CC BY 3.0)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": {
     "id": "Q117862884",

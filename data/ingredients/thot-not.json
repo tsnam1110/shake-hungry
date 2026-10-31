@@ -44,6 +44,14 @@
   "edible_portion_note": "ƯỚC TÍNH: phần cơm (3 múi thạch trong mỗi quả, gồm cả dịch trong múi) ≈ 25% trọng lượng quả nguyên (phần còn lại là vỏ xơ dày, vỏ cứng và hạt). Dao động theo cỡ quả; cần đo lại trên quả thốt nốt An Giang",
   "is_ready_to_eat": false,
   "units": [],
+  "media": [
+    {
+      "path": "media/ingredients/thot-not.webp",
+      "license": "cc-by-sa-4.0",
+      "attribution": "AntanO / Wikimedia Commons (CC BY-SA 4.0)",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "low",
   "needs_review": true,

@@ -38,6 +38,14 @@
       "source": "FDC 171697 foodMeasures"
     }
   ],
+  "media": [
+    {
+      "path": "media/ingredients/mo.webp",
+      "license": "cc-by-sa-3.0",
+      "attribution": "Fir0002 / Wikimedia Commons (CC BY-SA 3.0)",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

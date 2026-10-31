@@ -38,6 +38,14 @@
       "source": "ước lượng"
     }
   ],
+  "media": [
+    {
+      "path": "media/ingredients/binh-bat.webp",
+      "license": "cc-by-sa-3.0",
+      "attribution": "CiXeL at English Wikipedia / Wikimedia Commons (CC BY-SA 3.0)",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "medium",
   "needs_review": true,

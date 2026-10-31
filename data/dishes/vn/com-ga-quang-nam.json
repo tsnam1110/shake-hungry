@@ -162,7 +162,14 @@
       "note": "Cookpad (Bếp của Quỳnh, cơm gà xé trộn Quảng Nam), 6 người ăn: gà ta 1,2-1,4kg, gạo 2 lon, hành tây 1 củ, chanh 1,5 trái cho 1 con gà; luộc gà khoảng 25 phút, rang gạo với bột nghệ và mỡ gà trước khi nấu bằng nước luộc, chan nước lòng gà khi ăn."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/com-ga-quang-nam.webp",
+      "license": "cc-by-sa-3.0",
+      "attribution": "Đông Sơn (thảo luận) / Wikimedia Commons (CC BY-SA 3.0)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 2 (2026-10-31): Đã đối chiếu 3 nguồn công thức thật đã mở kiểm chứng (Hội Đầu Bếp Á Âu, Bếp Trưởng Á Âu, Cookpad). Định lượng: giữ nguyên toàn bộ — Cookpad ghi rõ gà ta 1,2-1,4 kg cho 6 người, phần thịt và da ăn được quy đổi khoảng 130 g/người, khớp dòng thit-ga-co-da 130 g; hai nguồn còn lại cũng dùng gà nguyên con 1-1,5 kg cho mẻ gia đình; cơm 200 g, hành tây 20 g và chanh 10 g đều nằm trong khoảng suy ra từ các mẻ. Các nguồn dùng bột nghệ, file dùng nghệ tươi 5 g — cùng vai trò tạo màu, giữ nguyên. Bất thường: (1) lòng gà và nước mạ (nước chan từ lòng gà) xuất hiện ở Cookpad và được nhắc như thành phần đặc trưng của cơm gà Tam Kỳ — file không có dòng lòng gà; (2) dưa leo hoặc dưa chua ăn kèm có ở 2/3 nguồn — file không có; (3) ngược lại, dòng lạc rang (optional) của file không thấy ở cả 3 nguồn. Ghi nhận cả ba điểm chờ phân xử, không thêm/bớt dòng. Phân loại (nau — luộc gà và nấu cơm) giữ nguyên. Phân xử bất thường LV2-002 (Phần A, 2026-10-31): Thêm long-ga 25 g (Cookpad có lòng gà + nước mạ, và đây là thành phần đặc trưng của cơm gà Tam Kỳ; lượng theo tiền lệ com-ga-hoi-an Phần A đợt 1) + dua-leo 20 g ăn kèm (2/3 nguồn). BỎ dòng lac-rang tuỳ chọn — 0/3 nguồn có (tiền lệ ech-xao-sa-ot đợt 1 bỏ dòng 0/3 nguồn).",

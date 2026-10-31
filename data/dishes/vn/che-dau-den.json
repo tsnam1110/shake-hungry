@@ -87,7 +87,14 @@
     "Khuấy chút bột năng tạo độ sánh nhẹ, múc ra ly, chan nước cốt dừa, ăn kèm đá bào."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/che-dau-den.webp",
+      "license": "public-domain",
+      "attribution": "Phương Huy (thảo luận) / Wikimedia Commons (Public domain)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt)",

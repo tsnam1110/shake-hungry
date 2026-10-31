@@ -147,7 +147,14 @@
       "note": "Cookpad (Hoàng Ngọc): cá phi lê 500 g, bún tươi 500 g cho 3 phần ăn (≈167 g cá và 167 g bún/khẩu phần); ướp riềng-nghệ-mắm tôm-mẻ 30 phút, nướng rồi xào chảo với thì là/hành lá"
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/cha-ca-la-vong.webp",
+      "license": "cc-by-sa-4.0",
+      "attribution": "tuhang / Wikimedia Commons (CC BY-SA 4.0)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": {
     "id": "Q3274058",

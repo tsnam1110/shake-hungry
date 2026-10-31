@@ -77,7 +77,14 @@
     "Cá ướp muối đường, lên men chua tự nhiên, trộn tỏi ớt."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/mam-chua.webp",
+      "license": "cc-by-sa-3.0",
+      "attribution": "Hungda / Wikimedia Commons (CC BY-SA 3.0)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": {
     "id": "Q10796544",

@@ -44,6 +44,14 @@
       "source": "FDC 169914 foodMeasures"
     }
   ],
+  "media": [
+    {
+      "path": "media/ingredients/xuan-dao.webp",
+      "license": "public-domain",
+      "attribution": "Jack Dykinga, USDA / Wikimedia Commons (Public domain)",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

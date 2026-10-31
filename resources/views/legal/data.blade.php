@@ -29,7 +29,14 @@
         <h2>3. Ghi công Open Food Facts</h2>
         <p>Một phần nhỏ dữ liệu nhãn sản phẩm trong Lắc Đói có nguồn từ Open Food Facts (https://world.openfoodfacts.org), cơ sở dữ liệu mở theo giấy phép Open Database License (ODbL 1.0). Nội dung từng sản phẩm thuộc về các cộng tác viên của Open Food Facts theo giấy phép CC BY-SA 3.0.</p>
 
-        <h2>4. Khiếu nại bản quyền và đính chính dữ liệu</h2>
+        <h2>4. Hình ảnh</h2>
+        <p>Ảnh món ăn, nguyên liệu và hoa quả trên Lắc Đói gồm hai loại, luôn ghi rõ ngay tại ảnh:</p>
+        <ul>
+            <li><strong>Ảnh thật từ Wikimedia Commons / Wikipedia</strong>: mỗi ảnh giữ nguyên giấy phép tự do của nguồn (CC0, Public Domain, CC BY hoặc CC BY-SA) và ghi tên tác giả ngay dưới ảnh; danh mục đầy đủ từng ảnh (tác giả, giấy phép, liên kết nguồn) được công khai trong kho dữ liệu của dự án tại <em>data/media/MANIFEST.json</em>.</li>
+            <li><strong>Ảnh minh hoạ do AI tạo</strong>: dùng cho các món/nguyên liệu chưa có ảnh thật đạt chuẩn giấy phép, luôn gắn nhãn "Ảnh minh hoạ" để người xem không nhầm với ảnh chụp món thật.</li>
+        </ul>
+
+        <h2>5. Khiếu nại bản quyền và đính chính dữ liệu</h2>
         <p>Nếu bạn là chủ sở hữu quyền đối với nội dung xuất hiện trên Lắc Đói và muốn yêu cầu ghi công, sửa đổi hoặc gỡ bỏ, hoặc nếu bạn phát hiện số liệu sai, hãy gửi qua tính năng Đóng góp trong ứng dụng. Chúng tôi sẽ rà soát và xử lý: đính chính có ghi rõ trong tài liệu dự án, gỡ bỏ khi yêu cầu hợp lệ.</p>
     </div>
 @endsection

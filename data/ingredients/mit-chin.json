@@ -38,6 +38,14 @@
       "source": "FDC 174687 foodMeasures"
     }
   ],
+  "media": [
+    {
+      "path": "media/ingredients/mit-chin.webp",
+      "license": "cc-by-sa-3.0",
+      "attribution": "Mullookkaaran / Wikimedia Commons (CC BY-SA 3.0)",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "medium",
   "needs_review": true,

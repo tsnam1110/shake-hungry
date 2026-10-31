@@ -40,6 +40,10 @@ fetch('/api/dishes/' + encodeURIComponent(slug), { headers: { 'Accept': 'applica
             ${otherTags.map(t => `<span class="ld-badge">${esc(t.name)}</span>`).join('')}
             ${allergenTags.map(t => `<span class="ld-badge" style="background:var(--color-danger-tint);color:var(--color-danger)">Dị ứng: ${esc(t.name)}</span>`).join('')}
         </div>
+        ${d.image ? `<figure style="margin:18px 0 0">
+            <img src="${esc(d.image.url)}" alt="${esc(name)}" style="width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:18px;display:block">
+            <figcaption style="color:var(--color-faint);font-size:12.5px;margin-top:6px">${d.image.is_ai ? 'Ảnh minh hoạ do AI tạo — chỉ để hình dung món ăn, không phải ảnh chụp món thật.' : 'Ảnh: ' + esc(d.image.attribution ?? '')}</figcaption>
+        </figure>` : ''}
         ${d.parent ? `<div class="ld-group" style="margin-top:16px"><a class="ld-row" href="/mon/${d.parent.slug}"><span class="grow">Biến thể của <b>${esc(d.parent.names?.[0]?.name ?? '')}</b></span>${chev}</a></div>` : ''}
         ${variants.length ? `<div class="ld-group" style="margin-top:12px">${variants.map(v => `<a class="ld-row" href="/mon/${v.slug}"><span class="grow">Biến thể: <b>${esc(v.name)}</b></span>${chev}</a>`).join('')}</div>` : ''}
 
@@ -78,7 +82,7 @@ fetch('/api/dishes/' + encodeURIComponent(slug), { headers: { 'Accept': 'applica
         <h2 class="ld-section-title">Nguyên liệu · một khẩu phần</h2>
         <div class="ld-grid-ing">
             ${(d.dish_ingredients ?? []).map(di => `<div class="ld-dcard">
-                <img class="ld-dcard-img" src="/images/placeholder-ingredient.svg" alt="" loading="lazy">
+                <img class="ld-dcard-img" src="${di.ingredient?.image?.url ?? '/images/placeholder-ingredient.svg'}" alt="${esc(di.ingredient?.name_vi ?? '')}" loading="lazy">
                 <span class="ld-dcard-body">
                     <span class="ld-dcard-title">${esc(di.ingredient?.name_vi ?? '')}</span>
                     <span class="ld-dcard-meta ld-tnum">${esc(di.quantity ?? '')} ${esc(di.unit_name ?? '')}</span>

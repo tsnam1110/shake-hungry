@@ -79,7 +79,14 @@
     "Nướng ở 180°C khoảng 20 phút đến khi bánh phồng, vàng ruộm."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/banh-pate-so.webp",
+      "license": "cc-by-2.0",
+      "attribution": "Incase / Wikimedia Commons (CC BY 2.0)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt)",

@@ -78,12 +78,12 @@ function cardHtml(d) {
     const unv = (n?.unverified_ingredients ?? []).length > 0;
     const chay = (d.tags ?? []).some(t => t.slug === 'diet:chay');
     return `<a href="/mon/${d.slug}" class="ld-dcard">
-        <img class="ld-dcard-img" src="/images/placeholder-dish.svg" alt="" loading="lazy">
+        <img class="ld-dcard-img" src="${d.image?.url ?? '/images/placeholder-dish.svg'}" alt="${esc(name)}" loading="lazy">
         <span class="ld-heart" data-fav-dish="${d.id}" role="button" aria-label="Yêu thích món này">${heartSvg}</span>
         <span class="ld-dcard-body">
             <span class="ld-dcard-title">${esc(name)}</span>
             <span class="ld-dcard-meta">${esc(d.region?.name ?? '')}${tagList.filter(t => t.slug.startsWith('loai:')).map(t => ' · ' + esc(t.name)).join('')}</span>
-            <span class="ld-dcard-badges">${chay ? '<span class="ld-badge chay">Chay</span>' : ''}${unv ? '<span class="ld-badge unv">Chưa kiểm định</span>' : ''}</span>
+            <span class="ld-dcard-badges">${chay ? '<span class="ld-badge chay">Chay</span>' : ''}${unv ? '<span class="ld-badge unv">Chưa kiểm định</span>' : ''}${d.image?.is_ai ? '<span class="ld-badge">Ảnh minh hoạ</span>' : ''}</span>
             <span class="ld-dcard-foot">${n
                 ? `<span class="ld-dcard-kcal ld-tnum">${Math.round(n.kcal_min)}–${Math.round(n.kcal_max)} kcal</span><span class="ld-dcard-conf">${confShort[n.confidence] ?? ''}</span>`
                 : `<span class="ld-dcard-kcal none">Chưa đủ dữ liệu</span><span class="ld-dcard-conf">không hiện số</span>`}</span>

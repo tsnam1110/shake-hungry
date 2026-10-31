@@ -78,7 +78,14 @@
     "Vắt nước cốt chanh vào trộn đều; có thể thái chỉ lá chanh rắc lên; thường dùng chấm hải sản, gà luộc."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/muoi-ot-chanh.webp",
+      "license": "cc-by-sa-4.0",
+      "attribution": "Phương Huy / Wikimedia Commons (CC BY-SA 4.0)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt)",

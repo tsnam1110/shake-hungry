@@ -103,7 +103,14 @@
     "Cho đường phèn và phổ tai, nấu thêm ít phút; để nguội, thêm đá khi uống."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/sam-bo-luong.webp",
+      "license": "cc-by-sa-2.0",
+      "attribution": "stu_spivack / Wikimedia Commons (CC BY-SA 2.0)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu).",

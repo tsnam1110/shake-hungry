@@ -63,6 +63,14 @@
       "source": "suy từ density 1,031"
     }
   ],
+  "media": [
+    {
+      "path": "media/ingredients/sua-tuoi.webp",
+      "license": "cc-by-sa-4.0",
+      "attribution": "Oleg Bor / Wikimedia Commons (CC BY-SA 4.0)",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

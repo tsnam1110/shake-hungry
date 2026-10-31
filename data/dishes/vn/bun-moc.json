@@ -139,7 +139,14 @@
       "note": "Thư Viện Số (Hương vị quê nhà — bún mọc làng Mọc): thành phần cổ truyền gồm sườn non, chả quế, giò sống, nấm mèo, mắm tôm, hành phi; hầm xương ~2 lít nước, giò sống quết với nấm mèo thả sau sườn."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/bun-moc.webp",
+      "license": "cc-by-sa-4.0",
+      "attribution": "Viethavvh / Wikimedia Commons (CC BY-SA 4.0)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": {
     "id": "Q10742893",

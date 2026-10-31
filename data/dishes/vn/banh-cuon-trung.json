@@ -91,7 +91,14 @@
     "Dọn bánh ra đĩa, rắc hành phi (từ hành tím phi với dầu), chấm nước mắm pha loãng."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/banh-cuon-trung.webp",
+      "license": "cc0",
+      "attribution": "Phương Huy / Wikimedia Commons (CC0)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Phân xử độc lập với banh-cuon đã có: bánh cuốn trứng (đặc sản Cao Bằng) đập trứng trực tiếp lên mặt bánh khi tráng — trứng là thành phần cấu trúc của bánh, khác bánh cuốn nhân thịt thông thường, nên tạo món độc lập thay vì biến thể.",

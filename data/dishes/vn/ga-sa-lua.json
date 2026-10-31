@@ -108,7 +108,14 @@
     "Chặt miếng vừa ăn, chấm muối ớt chanh; ăn kèm cơm lam hoặc cơm nóng."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/ga-sa-lua.webp",
+      "license": "cc-by-sa-3.0",
+      "attribution": "vi:User:Alohaohana1994 / Wikimedia Commons (CC BY-SA 3.0)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt).",

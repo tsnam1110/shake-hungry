@@ -114,7 +114,14 @@
       "note": "Tổ Yến Xịn: danh sách đầu bài — thịt bò 500g, hành tây 2 củ, tỏi 2–3 tép; phần chi tiết trong cùng bài lại ghi thịt bò 300g + hành tây 1 củ lớn (bất thường nội tại của nguồn, đã ghi nhận khi phân xử); ướp 15–20 phút, xào bò lửa lớn 2–3 phút rồi cho hành vào sau — đối chiếu tỉ lệ bò:hành theo mẻ."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/thit-bo-xao-hanh-tay.webp",
+      "license": "cc-by-sa-4.0",
+      "attribution": "Phương Huy / Wikimedia Commons (CC BY-SA 4.0)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nâng Mức 2 đợt 2 (2026-10-31): Đối chiếu 3 nguồn công thức đã mở kiểm chứng (xem recipe_sources). Định lượng: giữ nguyên toàn bộ — thịt bò 120g khớp Eva 125g/khẩu phần và khoảng 125–167g của Bách hoá XANH; hành tây nguồn bất đồng nhau (Eva ~60g/khẩu phần so với Bách hoá XANH ~35g/khẩu phần ở bản cà rốt; Toyenxin ghi hai danh sách khác nhau ngay trong cùng bài) nên giữ 80g. Bất thường ghi nhận: Eva dùng hành lá tới 200g/mẻ (~50g/khẩu phần — cao bất thường ngay trong nguồn so với thông lệ rắc mặt) và cả 3 nguồn đều nhắc hành lá/ngò rắc mặt trong khi file không có dòng hanh-la; sốt ướp của nguồn thường có thêm nước tương/dầu hào — file chỉ dùng nước mắm. Chờ pha phân xử riêng cho các dòng phụ này. Bước nấu viết lại 6 bước. Phân xử bất thường LV2-002 (Phần A, 2026-10-31): Thêm hanh-la 5 g rắc mặt — cả 3 nguồn đều nhắc hành lá/ngò rắc mặt. Nước tương/dầu hào trong sốt ướp của nguồn là biến thể sốt — giữ nước mắm như hiện tại, chỉ ghi nhận. (Điểm \"bò tái + củ cải trắng ăn kèm\" ở tổng hợp §5 không có trong note chi tiết của 3 nguồn đã đối chiếu — không xử lý theo tóm tắt.)",

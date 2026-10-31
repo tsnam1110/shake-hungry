@@ -124,7 +124,14 @@
     "Ăn nóng với cơm hoặc bún, chấm nước mắm pha chua ngọt."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/cha-ruoi.webp",
+      "license": "public-domain",
+      "attribution": "Viethavvh at vi.wikipedia / Wikimedia Commons (Public domain)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": {
     "id": "Q7125094",

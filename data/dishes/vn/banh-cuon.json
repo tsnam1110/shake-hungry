@@ -136,7 +136,14 @@
     "Rắc hành phi, ăn kèm chả lụa và nước mắm pha chua ngọt."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/banh-cuon.webp",
+      "license": "public-domain",
+      "attribution": "Casablanca1911 at vi.wikipedia / Wikimedia Commons (Public domain)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt).",

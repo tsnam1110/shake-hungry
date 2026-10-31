@@ -31,6 +31,14 @@
   "edible_portion_note": null,
   "is_ready_to_eat": false,
   "units": [],
+  "media": [
+    {
+      "path": "media/ingredients/qua-quat.webp",
+      "license": "cc-by-sa-4.0",
+      "attribution": "Photo by David J. Stang / Wikimedia Commons (CC BY-SA 4.0)",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "medium",
   "needs_review": true,

@@ -31,6 +31,14 @@
   "edible_portion_note": null,
   "is_ready_to_eat": false,
   "units": [],
+  "media": [
+    {
+      "path": "media/ingredients/ruou-vang-do.webp",
+      "license": "cc-by-3.0",
+      "attribution": "Stefan Krause, Germany / Wikimedia Commons (CC BY 3.0 de)",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

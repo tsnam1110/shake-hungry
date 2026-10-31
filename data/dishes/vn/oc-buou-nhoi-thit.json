@@ -112,7 +112,14 @@
     "Hấp chín khoảng 15 phút, ăn nóng, chấm nước mắm gừng."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/oc-buou-nhoi-thit.webp",
+      "license": "cc-by-sa-2.0",
+      "attribution": "Charles Haynes / Wikimedia Commons (CC BY-SA 2.0)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt).",

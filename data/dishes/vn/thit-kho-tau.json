@@ -131,7 +131,14 @@
       "note": "Sách dạy nấu ăn (thuvienso): thịt kho tàu 500g thịt ba rọi, 5 trứng vịt, 500ml nước dừa — đối chiếu tỉ lệ thịt : trứng : nước dừa."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/thit-kho-tau.webp",
+      "license": "cc-by-sa-4.0",
+      "attribution": "Viethavvh / Wikimedia Commons (CC BY-SA 4.0)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): đã đối chiếu 3 nguồn công thức đã mở kiểm chứng (2 bài Điện Máy Xanh + 1 sách dạy nấu ăn). Định lượng thịt mỗi khẩu phần giữa các nguồn dao động rất lớn (khoảng 125–625g vì có mẻ Tết nấu nồi áp suất) — hai nguồn bất đồng >30% nên giữ nguyên mọi quantity trong file theo quy tắc phân xử. Trứng vịt 60g (khoảng 1 quả/khẩu phần) và nước dừa tươi 80g nằm trong khoảng các nguồn. recipe_steps viết lại hoàn toàn thành 7 bước. Không sửa phân loại.",

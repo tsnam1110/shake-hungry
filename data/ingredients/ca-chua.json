@@ -61,6 +61,14 @@
       "source": "FDC 170457 foodMeasures"
     }
   ],
+  "media": [
+    {
+      "path": "media/ingredients/ca-chua.webp",
+      "license": "cc-by-4.0",
+      "attribution": "George Chernilevsky / Wikimedia Commons (CC BY 4.0)",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

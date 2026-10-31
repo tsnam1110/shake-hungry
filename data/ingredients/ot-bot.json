@@ -38,6 +38,14 @@
   "edible_portion_note": null,
   "is_ready_to_eat": false,
   "units": [],
+  "media": [
+    {
+      "path": "media/ingredients/ot-bot.webp",
+      "license": "cc-by-sa-4.0",
+      "attribution": "Basile Morin / Wikimedia Commons (CC BY-SA 4.0)",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

@@ -51,6 +51,14 @@
       "source": "FDC 174210 foodMeasures"
     }
   ],
+  "media": [
+    {
+      "path": "media/ingredients/tep.webp",
+      "license": "public-domain",
+      "attribution": "Etrusko25 / Wikimedia Commons (Public domain)",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "low",
   "needs_review": true,

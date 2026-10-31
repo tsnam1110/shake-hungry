@@ -171,7 +171,14 @@
       "note": "Tripi (công thức bạn đọc Thúy Hằng): cá lóc 1 con ~800 g + giá 150 g + đậu bắp 10 trái + cà chua 3 quả/mẻ; ướp cá 20 phút, nấu sôi, cho đậu bắp và dọc mùng đun thêm 2–3 phút, giá cho cuối"
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/canh-chua.webp",
+      "license": "public-domain",
+      "attribution": "Phương Huy (thảo luận) / Wikimedia Commons (Public domain)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu). Nâng Mức 2 đợt 2 (2026-10-31): đã mở kiểm chứng 3 nguồn canh chua cá lóc miền Tây (Nghề Bếp Á Âu: cá ~800 g + me 50 g + giá 100 g, nước 1,5 lít; VietFoodShop: cá 350 g + me 30 g + đậu bắp 200 g; Tripi: cá ~800 g + giá 150 g + đậu bắp 10 trái). Phân xử định lượng: giữ nguyên toàn bộ — nguồn cân cá theo nguyên con cả đầu/xương (350–800 g/mẻ) khác cơ sở với phần khúc cá trong tô của file nên không so trực tiếp theo gam thô; me quy đổi ~5–12 g và giá ~11–30 g/khẩu phần khớp số file (10 g, 25 g); đậu bắp các nguồn bất đồng lớn (5 trái so với 200 g/mẻ) nên giữ 30 g; cà chua và dọc mùng nằm ở biên trên của khoảng quy đổi nhưng chưa lệch >30% so với cả hai nguồn đồng thuận. Bất thường nhỏ ghi nhận: Nghề Bếp phi thêm sả băm cùng tỏi (1/3 nguồn) — file không có sả, không bổ sung vì chỉ 1 nguồn.",

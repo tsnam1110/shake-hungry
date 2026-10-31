@@ -86,7 +86,14 @@
     "Cho tỏi ớt băm vào khuấy đều; có thể thêm cá cơm khô rim sơ khi dùng chấm bánh căn, bánh xèo."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/nuoc-cham-ca-com.webp",
+      "license": "public-domain",
+      "attribution": "Phương Huy (thảo luận) / Wikimedia Commons (Public domain)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt)",

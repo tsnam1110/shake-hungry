@@ -49,7 +49,14 @@
     "Bánh phở tươi tráng hấp — định lượng cho một tô phở thông thường."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/banh-pho.webp",
+      "license": "cc-by-sa-4.0",
+      "attribution": "Horakvlado / Wikimedia Commons (CC BY-SA 4.0)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": {
     "id": "Q61127179",

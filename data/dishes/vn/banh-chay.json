@@ -75,7 +75,14 @@
     "Rắc vừng rang."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/banh-chay.webp",
+      "license": "public-domain",
+      "attribution": "Conbo at vi.wikipedia / Wikimedia Commons (Public domain)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": {
     "id": "Q110834827",

@@ -94,7 +94,14 @@
     "Pha bột năng với nước lạnh, rót từ từ vào khuấy đều cho chè sánh nhẹ; chan nước cốt dừa khi ăn."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/che-bap.webp",
+      "license": "cc-by-sa-3.0",
+      "attribution": "Zxcvasdfqwer888 / Wikimedia Commons (CC BY-SA 3.0)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt)",

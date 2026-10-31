@@ -50,6 +50,14 @@
       "source": "FDC 169086 foodMeasures"
     }
   ],
+  "media": [
+    {
+      "path": "media/ingredients/vai.webp",
+      "license": "public-domain",
+      "attribution": "Michał Boym / Wikimedia Commons (Public domain)",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

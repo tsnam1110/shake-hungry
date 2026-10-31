@@ -12,6 +12,7 @@
 | `ingredients/` | Nguyên liệu do dự án biên soạn — mỗi nguyên liệu một file | Người biên soạn (hoặc `lacdoi:export-data`) |
 | `dishes/vn/` | Món ăn do dự án biên soạn — mỗi món một file | Người biên soạn (hoặc `lacdoi:export-data`) |
 | `media/dishes/` | Ảnh món (WebP ≤150 KB, cạnh dài ≤1280 px) | Người, kèm mục trong `media/MANIFEST.json` |
+| `media/ingredients/` | Ảnh nguyên liệu — hoa quả dùng chung ảnh của nguyên liệu liên kết (IMG-001) | Người, kèm mục trong `media/MANIFEST.json` |
 
 ## Giấy phép dữ liệu
 

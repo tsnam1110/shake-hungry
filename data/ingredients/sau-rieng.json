@@ -38,6 +38,14 @@
       "source": "FDC 168192 foodMeasures"
     }
   ],
+  "media": [
+    {
+      "path": "media/ingredients/sau-rieng.webp",
+      "license": "cc-by-sa-4.0",
+      "attribution": "Jonashtand / Wikimedia Commons (CC BY-SA 4.0)",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

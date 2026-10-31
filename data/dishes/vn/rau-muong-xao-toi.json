@@ -106,7 +106,14 @@
       "note": "Công thức của Bòn Bon trên Cookpad: 300g rau muống, 8 tép tỏi; luộc rau vừa chín tới, xả nước lạnh rồi xào lửa lớn."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/rau-muong-xao-toi.webp",
+      "license": "public-domain",
+      "attribution": "Phương Huy (thảo luận) / Wikimedia Commons (Public domain)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): Đã đối chiếu 3 nguồn công thức thật (Hướng Nghiệp Á Âu, báo Lao Động, Cookpad/Bòn Bon). Định lượng: rau muống trong file 180g/khẩu phần nằm giữa các nguồn (Lao Động ~200-250g/người; hai nguồn còn lại là mẻ 300-500g không ghi số người, quy ra khoảng 125-250g/người) nên giữ nguyên; tỏi 8g và dầu ăn 10g khớp khoảng của các nguồn, giữ nguyên. Phân loại (loai:mon-chinh, xao, vn, trưa/tối) rà soát, không có điểm sai rõ ràng nên giữ nguyên.",

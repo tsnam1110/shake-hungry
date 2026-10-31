@@ -63,6 +63,14 @@
       "source": "FDC 170172 foodMeasures"
     }
   ],
+  "media": [
+    {
+      "path": "media/ingredients/nuoc-cot-dua.webp",
+      "license": "cc-by-sa-3.0",
+      "attribution": "Meursault2004 / Wikimedia Commons (CC BY-SA 3.0)",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "medium",
   "needs_review": true,

@@ -21,7 +21,7 @@ class FruitController extends Controller
     public function index(Request $request): JsonResponse
     {
         $query = Fruit::query()
-            ->with(['ingredient:id,slug,name_vi,name_en', 'ingredient.aliases:id,ingredient_id,name,note'])
+            ->with(['ingredient:id,slug,name_vi,name_en', 'ingredient.aliases:id,ingredient_id,name,note', 'ingredient.media'])
             ->orderBy('slug');
 
         if ($q = trim((string) $request->query('q', ''))) {
@@ -56,6 +56,7 @@ class FruitController extends Controller
         $fruit->load([
             'ingredient.aliases:id,ingredient_id,name,note',
             'ingredient.tags:id,slug,name',
+            'ingredient.media',
             'prices' => fn ($q) => $q->orderBy('region_code')->orderBy('month'),
         ]);
         $ingredient = $fruit->ingredient;
@@ -128,6 +129,8 @@ class FruitController extends Controller
             'best_nutrition_months' => $fruit->best_nutrition_months ?? [],
             'best_value_months' => $fruit->best_value_months ?? [],
             'kcal_per_100g' => $snapshot['kcal_per_100g'] ?? null,
+            // IMG-001: ảnh của quả = ảnh của nguyên liệu liên kết.
+            'image' => $ingredient->primaryImage(),
             'unverified' => SourceTier::isSecondary($snapshot['fct_source'] ?? null),
             'needs_review' => $fruit->needs_review,
         ];

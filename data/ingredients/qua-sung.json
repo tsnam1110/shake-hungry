@@ -45,6 +45,14 @@
       "source": "FDC 173021 foodMeasures"
     }
   ],
+  "media": [
+    {
+      "path": "media/ingredients/qua-sung.webp",
+      "license": "cc-by-sa-3.0",
+      "attribution": "Prashanthns / Wikimedia Commons (CC BY-SA 3.0)",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "medium",
   "needs_review": true,

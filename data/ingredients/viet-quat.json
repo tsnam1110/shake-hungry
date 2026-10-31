@@ -44,6 +44,14 @@
       "source": "FDC 171711 foodMeasures"
     }
   ],
+  "media": [
+    {
+      "path": "media/ingredients/viet-quat.webp",
+      "license": "cc-by-sa-2.5",
+      "attribution": "Darkone (talk · contribs) / Wikimedia Commons (CC BY-SA 2.5)",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

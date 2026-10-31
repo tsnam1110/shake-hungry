@@ -36,7 +36,7 @@ class LacdoiExportData extends Command
     {
         $index = [];
 
-        foreach (Ingredient::with(['units', 'tags', 'aliases'])->orderBy('slug')->get() as $ing) {
+        foreach (Ingredient::with(['units', 'tags', 'aliases', 'media'])->orderBy('slug')->get() as $ing) {
             $payload = $this->ingredientPayload($ing);
             $this->writeJson(base_path("data/ingredients/{$ing->slug}.json"), $payload);
             $index[] = ['slug' => $ing->slug, 'name_vi' => $ing->name_vi, 'category' => $ing->category];
@@ -213,6 +213,27 @@ class LacdoiExportData extends Command
             ->all();
         if ($aliases !== []) {
             $payload = array_merge(array_slice($payload, 0, 3), ['aliases' => $aliases], array_slice($payload, 3));
+        }
+
+        // Ảnh nguyên liệu (IMG-001): chỉ ghi khi có (file chưa có ảnh giữ
+        // nguyên từng byte); chèn ngay sau 'units' cho gần nhóm định lượng.
+        $media = $ing->media
+            ->sortBy('path', SORT_STRING)
+            ->values()
+            ->map(fn ($m) => [
+                'path' => $m->path,
+                'license' => $m->license,
+                'attribution' => $m->attribution,
+                'is_primary' => $m->is_primary,
+            ])
+            ->all();
+        if ($media !== []) {
+            $pos = array_search('units', array_keys($payload), true);
+            $payload = array_merge(
+                array_slice($payload, 0, $pos + 1),
+                ['media' => $media],
+                array_slice($payload, $pos + 1),
+            );
         }
 
         return $payload;

@@ -115,7 +115,14 @@
       "note": "Cookpad — Cơm Gà Luộc của Bếp mợ Tým: 1/2 con gà = 1 kg, luộc 15 phút ủ 20 phút, công thức nước mắm gừng; đối chiếu khẩu phần và nước chấm."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/ga-luoc.webp",
+      "license": "cc-by-sa-3.0",
+      "attribution": "Sjschen / Wikimedia Commons (CC BY-SA 3.0)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): đã đối chiếu 3 nguồn công thức thật (Điện Máy Xanh, 2 công thức Cookpad có tác giả). Định lượng: gà trong file 200 g/khẩu phần (thịt gà có da, bỏ xương) — nguồn cho 1 con 1,2–2 kg cho 4–6 người, quy về phần thịt ăn được sau bỏ xương tương đương khoảng 165–220 g/khẩu phần, khớp trong ngưỡng 30% nên giữ nguyên; gừng, muối, nước mắm chấm cũng khớp các nguồn, không đổi dòng nào. Bước nấu viết lại 7 bước theo kỹ thuật luộc–ngâm của các nguồn.",

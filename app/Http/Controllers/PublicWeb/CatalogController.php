@@ -30,7 +30,7 @@ class CatalogController extends Controller
             ->with(['names' => fn ($q) => $q->where('is_primary', true)
                 // Mỗi món có tên chính theo từng locale; giao diện tiếng Việt
                 // luôn lấy tên 'vi' làm names[0] (khớp với sort=name).
-                ->orderByRaw("CASE WHEN locale = 'vi' THEN 0 ELSE 1 END"), 'region:id,name', 'nutrition', 'mealSlots', 'tags:id,slug,name']);
+                ->orderByRaw("CASE WHEN locale = 'vi' THEN 0 ELSE 1 END"), 'region:id,name', 'nutrition', 'mealSlots', 'tags:id,slug,name', 'media']);
         if ($q = trim((string) $request->query('q', ''))) {
             $query->whereHas('names', fn ($w) => $w->where('name', 'like', "%{$q}%"));
         }
@@ -72,7 +72,15 @@ class CatalogController extends Controller
         };
         $perPage = max(1, min(48, (int) $request->query('per_page', 24)));
 
-        return response()->json($query->paginate($perPage));
+        $page = $query->paginate($perPage);
+        // IMG-001: ảnh chính của món (nếu có) để thẻ món hiển thị.
+        $page->getCollection()->transform(function (Dish $d) {
+            $d->setAttribute('image', $d->primaryImage());
+
+            return $d;
+        });
+
+        return response()->json($page);
     }
 
     public function show(Dish $dish): JsonResponse
@@ -83,7 +91,13 @@ class CatalogController extends Controller
             'names', 'region', 'mealSlots', 'nutrition', 'tags:id,slug,name',
             'dishIngredients.ingredient:id,name_vi,slug',
             'parent.names' => fn ($q) => $q->where('is_primary', true),
+            // IMG-001: ảnh món + ảnh của từng nguyên liệu trong món.
+            'media', 'dishIngredients.ingredient.media',
         ]);
+        $dish->setAttribute('image', $dish->primaryImage());
+        foreach ($dish->dishIngredients as $line) {
+            $line->ingredient->setAttribute('image', $line->ingredient->primaryImage());
+        }
         $variants = Dish::where('parent_dish_id', $dish->id)
             ->with(['names' => fn ($q) => $q->where('is_primary', true)])
             ->get()
@@ -265,6 +279,8 @@ class CatalogController extends Controller
             'slots' => $dish->mealSlots->pluck('slot'),
             'role' => $role,
             'role_label' => $role === null ? null : (\App\Recommendation\Recommender::TRAY_ROLE_LABELS[$role] ?? $role),
+            // IMG-001: ảnh chính của món lắc (nếu có).
+            'image' => $dish->primaryImage(),
             'nutrition' => $dish->nutrition === null ? null : [
                 'kcal_min' => $dish->nutrition->kcal_min,
                 'kcal_max' => $dish->nutrition->kcal_max,

@@ -46,7 +46,14 @@
     "Nặn dẹt, kẹp chả hoặc ăn không."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/banh-giay.webp",
+      "license": "cc-by-sa-3.0",
+      "attribution": "Nguyễn Thanh Quang / Wikimedia Commons (CC BY-SA 3.0)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": {
     "id": "Q10742207",

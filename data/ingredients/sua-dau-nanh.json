@@ -38,6 +38,14 @@
   "edible_portion_note": null,
   "is_ready_to_eat": true,
   "units": [],
+  "media": [
+    {
+      "path": "media/ingredients/sua-dau-nanh.webp",
+      "license": "cc-by-sa-2.0",
+      "attribution": "Kjokkenutstyr / Wikimedia Commons (CC BY-SA 2.0)",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "medium",
   "needs_review": true,

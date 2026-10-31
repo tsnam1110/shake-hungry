@@ -69,6 +69,14 @@
       "source": "FDC 169124 foodMeasures"
     }
   ],
+  "media": [
+    {
+      "path": "media/ingredients/dua-thom.webp",
+      "license": "cc-by-sa-3.0",
+      "attribution": "Markus Leupold-Löwenthal / Wikimedia Commons (CC BY-SA 3.0)",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

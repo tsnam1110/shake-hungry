@@ -44,6 +44,14 @@
   "edible_portion_note": "Theo MEXT 06106: tỉ lệ thải bỏ (廃棄率) 25% (vỏ + hạt) → phần ăn được 75% trên quả nguyên",
   "is_ready_to_eat": false,
   "units": [],
+  "media": [
+    {
+      "path": "media/ingredients/dua-gang.webp",
+      "license": "public-domain",
+      "attribution": "Sangfroid / Wikimedia Commons (Public domain)",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "low",
   "needs_review": true,

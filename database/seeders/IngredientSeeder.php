@@ -93,6 +93,18 @@ class IngredientSeeder extends Seeder
             // Nhãn phân loại (TAXONOMY.md): file là nguồn sự thật; slug ngoài
             // đăng ký config/taxonomy.php sẽ ném lỗi tại Tag::idsFor.
             $ingredient->tags()->sync(\App\Models\Tag::idsFor($j['tags'] ?? []));
+
+            // Ảnh nguyên liệu (IMG-001): file là nguồn sự thật, cùng khuôn dish_media.
+            \App\Models\IngredientMedia::where('ingredient_id', $ingredient->id)->delete();
+            foreach ($j['media'] ?? [] as $media) {
+                \App\Models\IngredientMedia::create([
+                    'ingredient_id' => $ingredient->id,
+                    'path' => $media['path'],
+                    'license' => $media['license'], // R4: thiếu license thì fail ngay tại đây
+                    'attribution' => $media['attribution'] ?? null,
+                    'is_primary' => $media['is_primary'] ?? false,
+                ]);
+            }
         }
 
         $this->command?->info('Đã seed '.count($files).' nguyên liệu từ data/ingredients/.');

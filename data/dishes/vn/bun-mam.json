@@ -135,7 +135,14 @@
     "Trụng bún và rau, xếp hải sản, cà tím, chan nước dùng, ăn kèm rau thơm và bắp chuối."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/bun-mam.webp",
+      "license": "cc-by-sa-2.0",
+      "attribution": "Alpha / Wikimedia Commons (CC BY-SA 2.0)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. THIẾU NGUYÊN LIỆU: mắm cá sặc (nước dùng bún mắm) (vai trò chính) — cần bổ sung vào kho. THIẾU NGUYÊN LIỆU: rau đắng (vai trò phụ) — cần bổ sung vào kho.",

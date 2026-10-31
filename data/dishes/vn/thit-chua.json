@@ -96,7 +96,14 @@
     "Ăn kèm lá sung, lá đinh lăng, chấm tương ớt."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/thit-chua.webp",
+      "license": "cc-by-2.0",
+      "attribution": "Ron Diggity / Wikimedia Commons (CC BY 2.0)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). THIẾU NGUYÊN LIỆU: lá sung (phụ — ăn kèm) — cần bổ sung vào kho. Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu).",

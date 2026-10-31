@@ -45,6 +45,14 @@
       "source": "ước lượng theo PhilFCT"
     }
   ],
+  "media": [
+    {
+      "path": "media/ingredients/bon-bon.webp",
+      "license": "cc0",
+      "attribution": "Judgefloro / Wikimedia Commons (CC0)",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "low",
   "needs_review": true,

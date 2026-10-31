@@ -21,6 +21,8 @@ Route::view('/chinh-sach-bao-mat', 'legal.privacy');
 Route::view('/mien-tru-y-te', 'legal.disclaimer');
 Route::view('/nguon-du-lieu', 'legal.data');
 Route::get('/mon/{slug}', fn () => view('dish'));
+// IMG-001: ảnh trong data/media/ (đã qua kiểm license R4) — chỉ .webp ở hai nhóm dishes/ingredients.
+Route::get('/media/{path}', [\App\Http\Controllers\PublicWeb\MediaController::class, 'show'])->where('path', '.*');
 Route::get('/kham-pha', fn () => view('explore'));
 Route::get('/nhat-ky', fn () => view('diary'))->middleware('auth');
 Route::get('/hoa-qua', fn () => view('fruits'));

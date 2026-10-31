@@ -102,5 +102,12 @@
   ],
   "recipe_sources": [],
   "import_note": "Đợt 3 DISH-005: món chính chay (kho, dùng đậu phụ có sẵn). Định lượng llm_suggested, cần duyệt (QT-4). THAY THẾ cho bản soạn đầu 'Đậu phụ sốt nấm' — rà soát độc lập G6 kết luận món đó trùng cụm với cả dau-phu-kho-nam (đậu phụ + nấm hương khô) và dau-phu-rim-nam (đậu phụ + nấm rơm) đã có trong kho: hợp của hai món, không đủ khác biệt theo EDITORIAL-GUIDE §3. Bản thay đổi hẳn trục vị: gừng là gia vị dẫn, không dùng nấm. Gia vị chay hoàn toàn (nước tương, đường, muối ngầm trong nước tương) — nhãn diet suy từ thành phần là chay, đã kiểm chứng trong DB. Dầu phi gừng 5 g kê trong công thức theo thiết kế CALC-004 (dau-phu có hệ số hấp thụ 15 chỉ áp khi là chủ thể chiên; món này kho với 60 ml nước, dầu chỉ đóng vai phi gia vị).",
-  "media": []
+  "media": [
+    {
+      "path": "media/dishes/dau-phu-kho-gung.webp",
+      "license": "cc-by-2.0",
+      "attribution": "Dan Zen from Dundas, Canada / Wikimedia Commons (CC BY 2.0)",
+      "is_primary": true
+    }
+  ]
 }

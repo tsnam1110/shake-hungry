@@ -87,7 +87,14 @@
       "note": "Đầu Bếp Gia Đình (Hướng Nghiệp Á Âu): gạo 200g mỗi niêu, nướng 150–180°C khoảng 30 phút hoặc nấu củi lửa vừa — đối chiếu định lượng gạo mỗi niêu."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/com-nieu.webp",
+      "license": "cc-by-sa-4.0",
+      "attribution": "Tuantq89 / Wikimedia Commons (CC BY-SA 4.0)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): Đã mở kiểm chứng 3 nguồn công thức thật về đúng cách nấu cơm trong niêu đất (VinID, Bếp Trưởng Á Âu, Đầu Bếp Gia Đình) và đối chiếu. Định lượng: file ghi nguyên liệu là cơm trắng 250g (cơm đã nấu) trong khi các nguồn ghi gạo sống 125–200g mỗi niêu hoặc mỗi khẩu phần; quy đổi cơm chín 250g tương đương khoảng 105–115g gạo sống, nằm ở đầu thấp của khoảng nguồn và phụ thuộc cỡ niêu — giữ nguyên, không sửa dòng nào. Muối và lá dứa tuỳ chọn khớp thông lệ của nguồn. Viết lại hoàn toàn recipe_steps bằng lời riêng (7 bước). Rà phân loại: loai:com, cooking_method nau, region vn, meal_slots đều phù hợp — không sửa. Đạt Mức 2.",

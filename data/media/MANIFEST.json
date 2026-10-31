@@ -1,3 +1,1707 @@
 {
-  "_comment": "License + ghi công cho TỪNG ảnh trong data/media/. Ảnh không có mục ở đây thì không được commit (ràng buộc R4). Schema mỗi mục: license (own/cc-by-4.0/cc0…), author, captured_at hoặc source_url, attribution (bắt buộc khi license yêu cầu ghi công)."
+  "_comment": "License + ghi công cho TỪNG ảnh trong data/media/. Ảnh không có mục ở đây thì không được commit (ràng buộc R4). Schema mỗi mục: license (own/cc-by-4.0/cc0…), author, captured_at hoặc source_url, attribution (bắt buộc khi license yêu cầu ghi công).",
+  "dishes/banh-bao-banh-vac.webp": {
+    "license": "cc-by-4.0",
+    "author": "Chainwit.",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%A1nh_bao_b%C3%A1nh_v%E1%BA%A1c_-_hoi_an_(2024).jpg",
+    "attribution": "Chainwit. / Wikimedia Commons (CC BY 4.0)"
+  },
+  "dishes/banh-beo.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Vietcuongdao",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%A1nh_b%C3%A8o_sucr%C3%A9.jpg",
+    "attribution": "Vietcuongdao / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/banh-bong-lan-trung-muoi.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Phương Huy",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%A1nh_b%C3%B4ng_lan_tr%E1%BB%A9ng_mu%E1%BB%91i_t%E1%BA%A1i_nh%C3%A0_Mheo_ng%C3%A0y_19_th%C3%A1ng_01_n%C4%83m_2020_(3).jpg",
+    "attribution": "Phương Huy / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/banh-bot-loc.webp": {
+    "license": "cc-by-sa-2.0",
+    "author": "Thang Nguyen from Nottingham, United Kingdom",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%A1nh_b%C3%A8o,_b%E1%BB%99t_l%E1%BB%8Dc,_nem_chua.jpg",
+    "attribution": "Thang Nguyen from Nottingham, United Kingdom / Wikimedia Commons (CC BY-SA 2.0)"
+  },
+  "dishes/banh-cam.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Francesc Fort",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Banh_R%C3%A1n.jpg",
+    "attribution": "Francesc Fort / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/banh-can.webp": {
+    "license": "cc0",
+    "author": "Saigon Time",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%A1nh_c%C4%83n_in_phan_rang,_vietnam.jpg",
+    "attribution": "Saigon Time / Wikimedia Commons (CC0)"
+  },
+  "dishes/banh-canh-ca-loc-quang-tri.webp": {
+    "license": "public-domain",
+    "author": "Phương Huy (thảo luận)",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Ch%C3%A1o_c%C3%A1_Qu%E1%BA%A3ng_Tr%E1%BB%8B_(b%C3%A1nh_canh_c%C3%A1_l%C3%B3c)_%C4%83n_%E1%BB%9F_nh%C3%A0_m%E1%BB%87_T%E1%BA%BFt_2018_(2).jpg",
+    "attribution": "Phương Huy (thảo luận) / Wikimedia Commons (Public domain)"
+  },
+  "dishes/banh-canh-ca-loc.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Phương Huy",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%A1nh_canh_c%C3%A1_l%C3%B3c_(b%C3%A1nh_canh_b%E1%BB%99t_m%C3%AC)_%E1%BB%9F_P1_%C4%90%C3%B4ng_H%C3%A0,_T%E1%BA%BFt_n%C4%83m_2019_(1).jpg",
+    "attribution": "Phương Huy / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/banh-canh-cua.webp": {
+    "license": "cc0",
+    "author": "Phương Huy",
+    "source_url": "https://commons.wikimedia.org/wiki/File:T%C3%B4_b%C3%A1nh_canh_cua_%E1%BB%9F_Q1_ng6th1n2022_(b%C3%A1nh_canh_b%E1%BB%99t_g%E1%BA%A1o_n%C4%83ng)_(1).jpg",
+    "attribution": "Phương Huy / Wikimedia Commons (CC0)"
+  },
+  "dishes/banh-canh-ghe.webp": {
+    "license": "cc0",
+    "author": "bánh canh cu",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%A1nh_Canh_Cua.jpg",
+    "attribution": "bánh canh cu / Wikimedia Commons (CC0)"
+  },
+  "dishes/banh-canh-gio-heo.webp": {
+    "license": "cc-by-2.0",
+    "author": "SauceSupreme",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%A1nh_canh_gi%C3%B2_heo.jpg",
+    "attribution": "SauceSupreme / Wikimedia Commons (CC BY 2.0)"
+  },
+  "dishes/banh-canh-nam-pho.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Christopher Crouzet",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%A1nh_Canh_Nam_Ph%E1%BB%95,_Da_Nang,_Vietnam.jpg",
+    "attribution": "Christopher Crouzet / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/banh-canh.webp": {
+    "license": "cc-by-3.0",
+    "author": "Kham Tran - www.khamtran.com",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Banh-Canh-Noodle-Soup.jpg",
+    "attribution": "Kham Tran - www.khamtran.com / Wikimedia Commons (CC BY 3.0)"
+  },
+  "dishes/banh-cay.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Nguyễn Thanh Quang",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%A1nh_c%C3%A1y.JPG",
+    "attribution": "Nguyễn Thanh Quang / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/banh-chay.webp": {
+    "license": "public-domain",
+    "author": "Conbo at vi.wikipedia",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Banhchay.JPG",
+    "attribution": "Conbo at vi.wikipedia / Wikimedia Commons (Public domain)"
+  },
+  "dishes/banh-chung.webp": {
+    "license": "public-domain",
+    "author": "vi:user:Viethavvh",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Banh_chung_vuong.jpg",
+    "attribution": "vi:user:Viethavvh / Wikimedia Commons (Public domain)"
+  },
+  "dishes/banh-chuoi.webp": {
+    "license": "cc-by-3.0",
+    "author": "Photo by ChildofMidnight.",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Banana_cake_(b%C3%A1nh_tet_chu%E1%BB%91i).jpg",
+    "attribution": "Photo by ChildofMidnight. / Wikimedia Commons (CC BY 3.0)"
+  },
+  "dishes/banh-cong.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Vietcuongdao",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%A1nh_c%E1%BB%91ng_de_C%E1%BA%A7n_Th%C6%A1.jpg",
+    "attribution": "Vietcuongdao / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/banh-cuon-trung.webp": {
+    "license": "cc0",
+    "author": "Phương Huy",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%A1nh_cu%E1%BB%91n_tr%E1%BB%A9ng_%E1%BB%9F_BL_ng30th10n2020_(3).jpg",
+    "attribution": "Phương Huy / Wikimedia Commons (CC0)"
+  },
+  "dishes/banh-cuon.webp": {
+    "license": "public-domain",
+    "author": "Casablanca1911 at vi.wikipedia",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%A1nh_cu%E1%BB%91n_Thanh_Tr%C3%AC.jpg",
+    "attribution": "Casablanca1911 at vi.wikipedia / Wikimedia Commons (Public domain)"
+  },
+  "dishes/banh-da-cua.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "HoangTuanAnh",
+    "source_url": "https://commons.wikimedia.org/wiki/File:BANH_DA_CUA_1.jpg",
+    "attribution": "HoangTuanAnh / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "dishes/banh-da-lon.webp": {
+    "license": "cc-by-3.0",
+    "author": "ChildofMidnight at English Wikipedia",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Green_Leaf_Cake_b%C3%A1nh_da_l%E1%BB%A3n.jpg",
+    "attribution": "ChildofMidnight at English Wikipedia / Wikimedia Commons (CC BY 3.0)"
+  },
+  "dishes/banh-dau-xanh.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "MrMaThaMi",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Banh-Dau-Xanh.jpg",
+    "attribution": "MrMaThaMi / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/banh-deo.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Khương Việt Hà",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%A1nh_d%E1%BA%BBo_2.JPG",
+    "attribution": "Khương Việt Hà / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/banh-duc-la-dua.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Tim WikiPuluran - WikiBanua",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Bingka_Tapai.jpg",
+    "attribution": "Tim WikiPuluran - WikiBanua / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/banh-duc.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "Viethavvh (thảo luận)",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%A1nh_%C4%91%C3%BAc_l%E1%BA%A1c.jpg",
+    "attribution": "Viethavvh (thảo luận) / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "dishes/banh-gai.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "Hungda",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Banh_gai_Tu_Tru_-_a_Vietnamese_traditional_dumpling_(3).JPG",
+    "attribution": "Hungda / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "dishes/banh-gat-gu.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "HPDQ BĐBS QN",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%A1nh_G%E1%BA%ADt_g%C3%B9_Ti%C3%AAn_Y%C3%AAn_Qu%E1%BA%A3ng_Ninh.png",
+    "attribution": "HPDQ BĐBS QN / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/banh-giay.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "Nguyễn Thanh Quang",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%A1nh_gi%E1%BA%A7y_gi%C3%B2.JPG",
+    "attribution": "Nguyễn Thanh Quang / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "dishes/banh-gio.webp": {
+    "license": "cc-by-sa-2.0",
+    "author": "Thang Nguyen from Nottingham, United Kingdom",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%A1nh_gi%C3%B2.jpg",
+    "attribution": "Thang Nguyen from Nottingham, United Kingdom / Wikimedia Commons (CC BY-SA 2.0)"
+  },
+  "dishes/banh-goi.webp": {
+    "license": "public-domain",
+    "author": "Binh Giang",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Banh_goi_03.JPG",
+    "attribution": "Binh Giang / Wikimedia Commons (Public domain)"
+  },
+  "dishes/banh-hoa-hong-trang.webp": {
+    "license": "cc-by-4.0",
+    "author": "Chainwit.",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%A1nh_bao_b%C3%A1nh_v%E1%BA%A1c_-_hoi_an_(2024).jpg",
+    "attribution": "Chainwit. / Wikimedia Commons (CC BY 4.0)"
+  },
+  "dishes/banh-it-tran.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "Memberofc1",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%A1nh_%C3%ADt_tr%E1%BA%A7n.JPG",
+    "attribution": "Memberofc1 / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "dishes/banh-it.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "Memberofc1",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%A1nh_%C3%ADt_tr%E1%BA%A7n.JPG",
+    "attribution": "Memberofc1 / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "dishes/banh-in.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "ChildofMidnight at English Wikipedia",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%A1nh_in_nh%C3%A2n_s%E1%BA%A7u_ri%C3%AAng.jpg",
+    "attribution": "ChildofMidnight at English Wikipedia / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "dishes/banh-hoi.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "Memberofc1",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Banh_hoi.jpg",
+    "attribution": "Memberofc1 / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "dishes/banh-khao.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Hoangkid",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%A1nh_kh%E1%BA%A3o.jpg",
+    "attribution": "Hoangkid / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/banh-khoai-mi-nuong.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Phương Huy",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Khu_ngh%E1%BB%89_d%C6%B0%E1%BB%A1ng_%E1%BB%9F_C%C3%A1i_B%C3%A8_(%C4%90%E1%BB%93_%C4%83n,_ti%E1%BB%87c_%C4%91%E1%BB%A9ng,_b%C3%A1nh_khoai_m%C3%AC_n%C6%B0%E1%BB%9Bng).jpg",
+    "attribution": "Phương Huy / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/banh-khoai.webp": {
+    "license": "cc-by-sa-2.0",
+    "author": "Kent Wang from Austin, TX",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%A1nh_x%C3%A8o_1.jpg",
+    "attribution": "Kent Wang from Austin, TX / Wikimedia Commons (CC BY-SA 2.0)"
+  },
+  "dishes/banh-khot.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Nguyenhai314",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%A1nh_kh%E1%BB%8Dt_by_Nguyenhai314.jpg",
+    "attribution": "Nguyenhai314 / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/banh-khoai-tay-chien.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Sumit Surai",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Hash_Browns.jpg",
+    "attribution": "Sumit Surai / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/banh-loc-tran.webp": {
+    "license": "cc-by-sa-2.0",
+    "author": "Alpha",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%A1nh_b%C3%A8o,_B%C3%A1nh_%C3%ADt_tr%E1%BA%A7n,_B%C3%A1nh_b%E1%BB%99t_l%E1%BB%8Dc_tr%E1%BA%A7n.jpg",
+    "attribution": "Alpha / Wikimedia Commons (CC BY-SA 2.0)"
+  },
+  "dishes/banh-mat.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "EAT&ART TARO",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%A1nh_m%E1%BA%ADt02.jpg",
+    "attribution": "EAT&ART TARO / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/banh-mi-que.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Baoothersks",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%A1nh_m%C3%AC_que_v%E1%BB%9Bi_th%E1%BB%8Bt_x%C3%B4ng_kh%C3%B3i.jpg",
+    "attribution": "Baoothersks / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/banh-mi-chao.webp": {
+    "license": "cc-by-2.0",
+    "author": "Vinnie Cartabiano",
+    "source_url": "https://commons.wikimedia.org/wiki/File:M%E1%BB%99t_ph%E1%BA%A7n_b%C3%A1nh_m%C3%AC_ch%E1%BA%A3o_v%E1%BB%9Bi_tr%E1%BB%A9ng_v%C3%A0_ch%E1%BA%A3_(38657217774).jpg",
+    "attribution": "Vinnie Cartabiano / Wikimedia Commons (CC BY 2.0)"
+  },
+  "dishes/banh-mi-ca-sau.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Baoothersks",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%A1nh_m%C3%AC_c%C3%A1_s%E1%BA%A5u.jpg",
+    "attribution": "Baoothersks / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/banh-mi-trung-op-la.webp": {
+    "license": "cc-by-2.0",
+    "author": "Kenny Louie from Vancouver, Canada",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Jumpstarting_Monday_(3361525231).jpg",
+    "attribution": "Kenny Louie from Vancouver, Canada / Wikimedia Commons (CC BY 2.0)"
+  },
+  "dishes/banh-mi-thanh-long.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Phương Huy",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%A1nh_m%C3%AC_thanh_long_20200524_193247.jpg",
+    "attribution": "Phương Huy / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/banh-ngao.webp": {
+    "license": "public-domain",
+    "author": "Phó Nháy",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%A1nh_r%C3%A1n.JPG",
+    "attribution": "Phó Nháy / Wikimedia Commons (Public domain)"
+  },
+  "dishes/banh-pate-so.webp": {
+    "license": "cc-by-2.0",
+    "author": "Incase",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Pate_Chaud.jpg",
+    "attribution": "Incase / Wikimedia Commons (CC BY 2.0)"
+  },
+  "dishes/banh-pho.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Horakvlado",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Vietnamsk%C3%A9_%C5%A1irok%C3%A9_r%C3%BD%C5%BEov%C3%A9_nudle_b%C3%A1nh_ph%E1%BB%9F_01.JPG",
+    "attribution": "Horakvlado / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/banh-phu-the.webp": {
+    "license": "cc-by-sa-2.0",
+    "author": "Lucas Jans from USA",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%A1nh_phu_th%C3%AA.jpg",
+    "attribution": "Lucas Jans from USA / Wikimedia Commons (CC BY-SA 2.0)"
+  },
+  "dishes/banh-pia.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "Nguyễn Thanh Quang",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%A1nh_p%C3%ADa.JPG",
+    "attribution": "Nguyễn Thanh Quang / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "dishes/banh-quai-vac.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "Homkinsming",
+    "source_url": "https://commons.wikimedia.org/wiki/File:HK_Tsuen_Wan_%E5%BB%BA%E6%98%8E%E8%A1%97_Kin_Ming_Street_sign_Cheong_Wah_Building_Tasty_Bakery_08_chinese_cookies_%E6%B2%B9%E7%82%B8%E8%A7%92%E4%BB%94_Cantonese_Peanut_puffs_Kok_Chai_a.jpg",
+    "attribution": "Homkinsming / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "dishes/banh-ran-duong.webp": {
+    "license": "public-domain",
+    "author": "Phó Nháy",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%A1nh_r%C3%A1n.JPG",
+    "attribution": "Phó Nháy / Wikimedia Commons (Public domain)"
+  },
+  "dishes/banh-ran.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Francesc Fort",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Banh_R%C3%A1n.jpg",
+    "attribution": "Francesc Fort / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/banh-re.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "Liftold",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%A1nh_r%E1%BA%BF_v%C3%A0ng.jpg",
+    "attribution": "Liftold / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "dishes/banh-tam-khoai-mi.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Phương Huy",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%A1nh_t%E1%BA%B1m_khoai_m%C3%AC_ng%C3%A0y_22_th%C3%A1ng_02_n%C4%83m_2020_(3).jpg",
+    "attribution": "Phương Huy / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/banh-te.webp": {
+    "license": "cc0",
+    "author": "Nam Nguyen",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%A1nh_t%E1%BA%BB.jpg",
+    "attribution": "Nam Nguyen / Wikimedia Commons (CC0)"
+  },
+  "dishes/banh-tet.webp": {
+    "license": "cc-by-sa-2.0",
+    "author": "viviandnguyen_",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Banh_tet.jpg",
+    "attribution": "viviandnguyen_ / Wikimedia Commons (CC BY-SA 2.0)"
+  },
+  "dishes/banh-to.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Peachyeung316",
+    "source_url": "https://commons.wikimedia.org/wiki/File:4_mini_Nian_Gao_on_the_table.jpg",
+    "attribution": "Peachyeung316 / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/banh-trang-cuon-thit-heo.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Lê Huỳnh Bộ",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%A1nh_tr%C3%A1ng_cu%E1%BB%91n_th%E1%BB%8Bt_heo_(18521).jpg",
+    "attribution": "Lê Huỳnh Bộ / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/banh-trang-nuong.webp": {
+    "license": "cc-by-sa-2.0",
+    "author": "Light Write",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%A1nh_tr%C3%A1ng_n%C6%B0%E1%BB%9Bng_TP._H%E1%BB%93_Ch%C3%AD_Minh_-_street_food_in_Ho_Chi_Minh_City,_Vietnam.jpg",
+    "attribution": "Light Write / Wikimedia Commons (CC BY-SA 2.0)"
+  },
+  "dishes/banh-tom-ho-tay.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Phương Huy",
+    "source_url": "https://commons.wikimedia.org/wiki/File:L%E1%BB%85_h%E1%BB%99i_%E1%BA%A9m_th%E1%BB%B1c_C%E1%BB%ADa_Vi%E1%BB%87t_th4n2023_%C4%91%E1%BA%B7c_s%E1%BA%A3n_b%C3%A1nh_t%C3%B4m_H%E1%BB%93_T%C3%A2y_(2).jpg",
+    "attribution": "Phương Huy / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/banh-uot-cha-lua.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "Stran",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Typical_serving_of_B%C3%A1nh_%C6%B0%E1%BB%9Bt.jpg",
+    "attribution": "Stran / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "dishes/banh-uot.webp": {
+    "license": "public-domain",
+    "author": "Casablanca1911 at vi.wikipedia",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%A1nh_cu%E1%BB%91n_Thanh_Tr%C3%AC.jpg",
+    "attribution": "Casablanca1911 at vi.wikipedia / Wikimedia Commons (Public domain)"
+  },
+  "dishes/banh-xeo.webp": {
+    "license": "cc-by-sa-2.0",
+    "author": "Kent Wang from Austin, TX",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%A1nh_x%C3%A8o_1.jpg",
+    "attribution": "Kent Wang from Austin, TX / Wikimedia Commons (CC BY-SA 2.0)"
+  },
+  "dishes/banh.webp": {
+    "license": "cc-by-sa-2.0",
+    "author": "Thang Nguyen from Nottingham, United Kingdom",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%A1nh_b%C3%A8o,_b%E1%BB%99t_l%E1%BB%8Dc,_nem_chua.jpg",
+    "attribution": "Thang Nguyen from Nottingham, United Kingdom / Wikimedia Commons (CC BY-SA 2.0)"
+  },
+  "dishes/bi-cuon-chay.webp": {
+    "license": "cc-by-3.0",
+    "author": "Nguyen Thi Quynh Tram",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Bi_cuon_chay.jpg",
+    "attribution": "Nguyen Thi Quynh Tram / Wikimedia Commons (CC BY 3.0)"
+  },
+  "dishes/bo-bia.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "Sjschen.",
+    "source_url": "https://commons.wikimedia.org/wiki/File:LunBhia.jpg",
+    "attribution": "Sjschen. / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "dishes/bo-luc-lac.webp": {
+    "license": "cc0",
+    "author": "Alexandersingh9",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Sachko_lok_lak_-_beef_lok_lak_th%E1%BB%8Bt_b%C3%B2_l%C3%BAc_l%E1%BA%AFc_Khmer_food.jpg",
+    "attribution": "Alexandersingh9 / Wikimedia Commons (CC0)"
+  },
+  "dishes/bo-nuong-la-lot.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Minh28397",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%B2_n%C6%B0%E1%BB%9Bng_l%C3%A1_l%E1%BB%91t_t%E1%BA%A1i_Manchester.jpg",
+    "attribution": "Minh28397 / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/bot-chien.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Phương Huy",
+    "source_url": "https://commons.wikimedia.org/wiki/File:M%C3%AC_x%C3%A0o_tr%E1%BB%A9ng_v%C3%A0_b%E1%BB%99t_chi%C3%AAn_%E1%BB%9F_B%C3%ACnh_T%C3%A2n_ng%C3%A0y_26_th%C3%A1ng_4_n%C4%83m_2020_%E1%BB%9F_B%C3%ACnh_T%C3%A2n_(4).jpg",
+    "attribution": "Phương Huy / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/bun-be-be.webp": {
+    "license": "public-domain",
+    "author": "Phương Huy (thảo luận)",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%BAn_b%C3%B2_ch%E1%BA%A3_v%C3%A0_m%E1%BB%B1c_lu%E1%BB%99c_cho_b%C3%A9_Na_(Cropped).jpg",
+    "attribution": "Phương Huy (thảo luận) / Wikimedia Commons (Public domain)"
+  },
+  "dishes/bun-bo-hue.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Minh28397",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%BAn_b%C3%B2_Hu%E1%BA%BF_minh28397.jpg",
+    "attribution": "Minh28397 / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/bun-bo-nam-bo.webp": {
+    "license": "cc-by-2.0",
+    "author": "fabulousfabs",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Bun_Bo_Nam_Bo.jpg",
+    "attribution": "fabulousfabs / Wikimedia Commons (CC BY 2.0)"
+  },
+  "dishes/bun-ca-tram.webp": {
+    "license": "cc-by-3.0",
+    "author": "Nguyen Thi Quynh Tram",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Bun_cha_ca_rau_can.jpg",
+    "attribution": "Nguyen Thi Quynh Tram / Wikimedia Commons (CC BY 3.0)"
+  },
+  "dishes/bun-cha-ca.webp": {
+    "license": "public-domain",
+    "author": "Phương Huy (thảo luận)",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%BAn_ch%E1%BA%A3_c%C3%A1,_th%C3%A1ng_8_n%C4%83m_2018.JPG",
+    "attribution": "Phương Huy (thảo luận) / Wikimedia Commons (Public domain)"
+  },
+  "dishes/bun-cha.webp": {
+    "license": "cc-by-sa-2.0",
+    "author": "Larry",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%BAn_ch%E1%BA%A3_H%C3%A0ng_M%C3%A0nh.jpg",
+    "attribution": "Larry / Wikimedia Commons (CC BY-SA 2.0)"
+  },
+  "dishes/bun-dau-mam-tom.webp": {
+    "license": "cc-by-sa-2.0",
+    "author": "trungnguyen299",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%BAn_%C4%91%E1%BA%ADu_m%E1%BA%AFm_t%C3%B4m.jpg",
+    "attribution": "trungnguyen299 / Wikimedia Commons (CC BY-SA 2.0)"
+  },
+  "dishes/bun-chao-tom.webp": {
+    "license": "cc-by-2.0",
+    "author": "SauceSupreme",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Ch%E1%BA%A1o_t%C3%B4m.jpg",
+    "attribution": "SauceSupreme / Wikimedia Commons (CC BY 2.0)"
+  },
+  "dishes/bun-do.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "TarnishedPath",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%BAn_ri%C3%AAu_%C4%91%E1%BA%B7c_bi%E1%BB%87t.jpg",
+    "attribution": "TarnishedPath / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/bun-doc-mung.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "Viethavvh",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%BAn_c%C3%A1.JPG",
+    "attribution": "Viethavvh / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "dishes/bun-hen.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Phương Huy",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%BAn_h%E1%BA%BFn_Mai_X%C3%A1_n%C4%83m_2017_(1).jpg",
+    "attribution": "Phương Huy / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/bun-mam.webp": {
+    "license": "cc-by-sa-2.0",
+    "author": "Alpha",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%BAn_M%E1%BA%AFm_S%C3%B3c_Tr%C4%83ng.jpg",
+    "attribution": "Alpha / Wikimedia Commons (CC BY-SA 2.0)"
+  },
+  "dishes/bun-mang-vit.webp": {
+    "license": "cc-by-2.0",
+    "author": "yuchinkay",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%BAn_m%C4%83ng_th%E1%BB%8Bt_v%E1%BB%8Bt.jpg",
+    "attribution": "yuchinkay / Wikimedia Commons (CC BY 2.0)"
+  },
+  "dishes/bun-moc.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Viethavvh",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%BAn_m%E1%BB%8Dc_s%C6%B0%E1%BB%9Dn.jpg",
+    "attribution": "Viethavvh / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/bun-nem.webp": {
+    "license": "cc-by-2.0",
+    "author": "letsgoeverywhere",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%BAn_nem.jpg",
+    "attribution": "letsgoeverywhere / Wikimedia Commons (CC BY 2.0)"
+  },
+  "dishes/bun-oc.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "vi:thành viên:Rungbachduong",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Bun_oc_Hoe_Nhai.JPG",
+    "attribution": "vi:thành viên:Rungbachduong / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "dishes/bun-rieu-cua.webp": {
+    "license": "cc-by-sa-2.0",
+    "author": "Alpha",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%BAn_ri%C3%AAu_cua_n%C6%B0%E1%BB%9Bc.jpg",
+    "attribution": "Alpha / Wikimedia Commons (CC BY-SA 2.0)"
+  },
+  "dishes/bun-rieu-chay.webp": {
+    "license": "cc0",
+    "author": "Mx. Granger",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Vietnamese_vegetarian_crab_noodle_soup.jpg",
+    "attribution": "Mx. Granger / Wikimedia Commons (CC0)"
+  },
+  "dishes/bun-rieu-tom.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Trannguyenhoavl",
+    "source_url": "https://commons.wikimedia.org/wiki/File:BUN_RIEU_TOM_1.jpg",
+    "attribution": "Trannguyenhoavl / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/bun-nuoc-leo.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Phương Huy",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Nh%C3%A0_m%C3%ACnh_L%E1%BB%85_30th4n2023_(t%C3%B4_n%C6%B0%E1%BB%9Bc_l%C3%A8o_chan_b%C3%BAn).jpg",
+    "attribution": "Phương Huy / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/bun-thit-xao.webp": {
+    "license": "cc-by-sa-2.0",
+    "author": "Jamie",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Viet-Nomie%27s_Bun_Xao_Thit_Bo_with_a_Sweetwater_IPA_Tallboy_(21178755820).jpg",
+    "attribution": "Jamie / Wikimedia Commons (CC BY-SA 2.0)"
+  },
+  "dishes/bun-thit-xao-sa.webp": {
+    "license": "cc-by-sa-2.0",
+    "author": "Jamie",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Viet-Nomie%27s_Bun_Xao_Thit_Bo_with_a_Sweetwater_IPA_Tallboy_(21178755820).jpg",
+    "attribution": "Jamie / Wikimedia Commons (CC BY-SA 2.0)"
+  },
+  "dishes/bun-thit-nuong.webp": {
+    "license": "public-domain",
+    "author": "Lưu Ly",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Bun_thit_nuong.jpg",
+    "attribution": "Lưu Ly / Wikimedia Commons (Public domain)"
+  },
+  "dishes/bun-thang.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "Nguyễn Thanh Quang",
+    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%BAn_thang.JPG",
+    "attribution": "Nguyễn Thanh Quang / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "dishes/canh-bap-cai-cuon-thit.webp": {
+    "license": "cc-by-3.0",
+    "author": "Nguyen Thi Quynh Tram",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Canh_bap_cai_cuon_thit.jpg",
+    "attribution": "Nguyen Thi Quynh Tram / Wikimedia Commons (CC BY 3.0)"
+  },
+  "dishes/canh-chua-ca-loc.webp": {
+    "license": "public-domain",
+    "author": "Phương Huy (thảo luận)",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Canh_chua_c%C3%A1_l%C3%B3c_%E1%BB%9F_Th%E1%BB%A7y_Tr%C3%BAc_Qu%C3%A1n,_%C4%91%C6%B0%E1%BB%9Dng_Nguy%E1%BB%85n_Nh%E1%BB%AF_L%C3%A3m_(4).jpg",
+    "attribution": "Phương Huy (thảo luận) / Wikimedia Commons (Public domain)"
+  },
+  "dishes/canh-chua.webp": {
+    "license": "public-domain",
+    "author": "Phương Huy (thảo luận)",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Canh_chua_%C4%90%C3%B4ng_H%C3%A0.jpg",
+    "attribution": "Phương Huy (thảo luận) / Wikimedia Commons (Public domain)"
+  },
+  "dishes/canh-trung-ca-chua.webp": {
+    "license": "cc-by-3.0",
+    "author": "Nguyen Thi Quynh Tram",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Canh_ca_chua_trung.png",
+    "attribution": "Nguyen Thi Quynh Tram / Wikimedia Commons (CC BY 3.0)"
+  },
+  "dishes/cha-ca-la-vong.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "tuhang",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Cha_ca_La_Vong.jpg",
+    "attribution": "tuhang / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/cao-lau.webp": {
+    "license": "cc-by-4.0",
+    "author": "Chainwit.",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Cao_l%E1%BA%A7u_H%E1%BB%99i_An_(2024).jpg",
+    "attribution": "Chainwit. / Wikimedia Commons (CC BY 4.0)"
+  },
+  "dishes/cha-la-lot.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Phương Huy",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Nh%C3%A0_m%E1%BB%87_d%E1%BB%8Bp_L%E1%BB%85_2_th%C3%A1ng_9_n2023_(m%C3%B3n_ch%E1%BA%A3_cu%E1%BB%91n_l%C3%A1_l%E1%BB%91t)_(1).jpg",
+    "attribution": "Phương Huy / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/com-bo-kho.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Gody Mago",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Beef_Stew_with_Rice_with_peanut_butter.jpg",
+    "attribution": "Gody Mago / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/com-chien-ca-man.webp": {
+    "license": "cc0",
+    "author": "Andy Li",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Fried_Rice_with_Salted_Fish_%26_Chicken_-_Stir_Fry_by_CK_2025-02-03.jpg",
+    "attribution": "Andy Li / Wikimedia Commons (CC0)"
+  },
+  "dishes/com-chay-ninh-binh.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "Nguyễn Thanh Quang",
+    "source_url": "https://commons.wikimedia.org/wiki/File:C%C6%A1m_ch%C3%A1y_Ninh_B%C3%ACnh.JPG",
+    "attribution": "Nguyễn Thanh Quang / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "dishes/com-ca-kho.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "MNXANL",
+    "source_url": "https://commons.wikimedia.org/wiki/File:202403_Braised_Rice-Fish_from_Qingtian.jpg",
+    "attribution": "MNXANL / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/com-ga-quang-nam.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "Đông Sơn (thảo luận)",
+    "source_url": "https://commons.wikimedia.org/wiki/File:C%C6%A1m_g%C3%A0_Tam_K%E1%BB%B3,_Qu%E1%BA%A3ng_Nam.JPG",
+    "attribution": "Đông Sơn (thảo luận) / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "dishes/com-ga-tam-ky.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "Đông Sơn (thảo luận)",
+    "source_url": "https://commons.wikimedia.org/wiki/File:C%C6%A1m_g%C3%A0_Tam_K%E1%BB%B3,_Qu%E1%BA%A3ng_Nam.JPG",
+    "attribution": "Đông Sơn (thảo luận) / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "dishes/com-ga-xoi-mo.webp": {
+    "license": "cc-by-2.0",
+    "author": "Guilhem Vellut from Paris, France",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Crispy_fried_chicken_with_rice,_T%C3%AAte_%C3%A0_T%C3%AAte,_Paris_001.jpg",
+    "attribution": "Guilhem Vellut from Paris, France / Wikimedia Commons (CC BY 2.0)"
+  },
+  "dishes/com-hen.webp": {
+    "license": "cc-by-sa-2.0",
+    "author": "Lucas Jans from USA",
+    "source_url": "https://commons.wikimedia.org/wiki/File:H%E1%BA%BFn_tr%E1%BB%99n.jpg",
+    "attribution": "Lucas Jans from USA / Wikimedia Commons (CC BY-SA 2.0)"
+  },
+  "dishes/com-lam.webp": {
+    "license": "cc-by-2.0",
+    "author": "Lam Nguyen from Ho Chi Minh City, Vietnam",
+    "source_url": "https://commons.wikimedia.org/wiki/File:C%C6%A1m_lam_T%C3%A2y_Nguy%C3%AAn.jpg",
+    "attribution": "Lam Nguyen from Ho Chi Minh City, Vietnam / Wikimedia Commons (CC BY 2.0)"
+  },
+  "dishes/com-nam-muoi-vung.webp": {
+    "license": "cc0",
+    "author": "MinWuHwang",
+    "source_url": "https://commons.wikimedia.org/wiki/File:C%C6%A1m_n%E1%BA%AFm_mu%E1%BB%91i_v%E1%BB%ABng_03.jpg",
+    "attribution": "MinWuHwang / Wikimedia Commons (CC0)"
+  },
+  "dishes/com-nieu.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Tuantq89",
+    "source_url": "https://commons.wikimedia.org/wiki/File:C%C6%A1m_ni%C3%AAu_Kombo.jpg",
+    "attribution": "Tuantq89 / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/com-tam.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Christopher Crouzet",
+    "source_url": "https://commons.wikimedia.org/wiki/File:C%C6%A1m_T%E1%BA%A5m,_Da_Nang,_Vietnam.jpg",
+    "attribution": "Christopher Crouzet / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/com.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "D.Thiên",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Com-lang-vong.jpg",
+    "attribution": "D.Thiên / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/cua-rang-muoi.webp": {
+    "license": "public-domain",
+    "author": "Phương Huy (thảo luận)",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Cua_rang_mu%E1%BB%91i_t%E1%BA%A1i_R%E1%BA%A1n_Bi%E1%BB%83n_qu%C3%A1n_n%C4%83m_2016_(1).jpg",
+    "attribution": "Phương Huy (thảo luận) / Wikimedia Commons (Public domain)"
+  },
+  "dishes/dau-bap-xao-toi.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "Kham Tran - www.khamtran.com",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Stir-Fried-Okra-2008.jpg",
+    "attribution": "Kham Tran - www.khamtran.com / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "dishes/dau-phu-kho-gung.webp": {
+    "license": "cc-by-2.0",
+    "author": "Dan Zen from Dundas, Canada",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Noodles_with_Onion,_Nuts_and_Tofu_Braised_in_Sesame_oil_with_Honey_Ginger_Sauce_(155698982).jpg",
+    "attribution": "Dan Zen from Dundas, Canada / Wikimedia Commons (CC BY 2.0)"
+  },
+  "dishes/dau-phu-sot-ca.webp": {
+    "license": "cc-by-2.0",
+    "author": "HungryHuy",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Dau_sot_ca,_tofu_stuffed_with_pork,_in_tomato_sauce.jpg",
+    "attribution": "HungryHuy / Wikimedia Commons (CC BY 2.0)"
+  },
+  "dishes/ga-luoc.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "Sjschen",
+    "source_url": "https://commons.wikimedia.org/wiki/File:BeiQieJi-WhiteCutChicken.jpg",
+    "attribution": "Sjschen / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "dishes/ga-nuong-muoi-ot.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Baoothersks",
+    "source_url": "https://commons.wikimedia.org/wiki/File:G%C3%A0_n%C6%B0%E1%BB%9Bng_mu%E1%BB%91i_%E1%BB%9Bt_(2).jpg",
+    "attribution": "Baoothersks / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/ga-sa-lua.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "vi:User:Alohaohana1994",
+    "source_url": "https://commons.wikimedia.org/wiki/File:G%C3%A0_sa_l%E1%BB%ADa_3.jpg",
+    "attribution": "vi:User:Alohaohana1994 / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "dishes/gia-cay.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Viethavvh",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Ch%C3%A2n_gi%C3%B2_n%E1%BA%A5u_gi%E1%BA%A3_c%E1%BA%A7y_2.JPG",
+    "attribution": "Viethavvh / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/goi-bo-bop-thau.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "Takeaway",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Sa_nuea_sadung.jpg",
+    "attribution": "Takeaway / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "dishes/goi-ca-trich.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "OlBoes",
+    "source_url": "https://commons.wikimedia.org/wiki/File:G%E1%BB%8Fi_C%C3%A1_Tr%C3%ADch.jpg",
+    "attribution": "OlBoes / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/lau-ca-tram.webp": {
+    "license": "cc0",
+    "author": "LAHN wui Hoezhong",
+    "source_url": "https://commons.wikimedia.org/wiki/File:GD_%E5%BB%A3%E6%9D%B1_Guangdong_%E4%B8%AD%E5%B1%B1_Zhongshan_%E9%9D%92%E6%BA%AA%E8%B7%AF_QingXi_Road_%E7%A8%BB%E9%A6%99%E5%9C%92%E7%81%AB%E9%8D%8B%E5%BA%97_Dao_Xiang_Yuan_Hot_Pot_Restaurant_buffet_September_2024_R12S_32.jpg",
+    "attribution": "LAHN wui Hoezhong / Wikimedia Commons (CC0)"
+  },
+  "dishes/long-lon-luoc.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "Viethavvh at Vietnamese Wikipedia",
+    "source_url": "https://commons.wikimedia.org/wiki/File:L%E1%BB%A3n_m%C3%A1n_m%E1%BA%B9t.jpg",
+    "attribution": "Viethavvh at Vietnamese Wikipedia / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "dishes/mam-ba-khia.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "Memberofc1",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Mam_ba_khia_(Vietnamese).jpg",
+    "attribution": "Memberofc1 / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "dishes/mam-ca-loc.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "Bùi Thụy Đào Nguyên",
+    "source_url": "https://commons.wikimedia.org/wiki/File:M%E1%BA%AFm_c%C3%A1_l%C3%B3c.JPG",
+    "attribution": "Bùi Thụy Đào Nguyên / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "dishes/mam-chua.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "Hungda",
+    "source_url": "https://commons.wikimedia.org/wiki/File:M%E1%BA%AFm_chua_Thanh_H%C3%B3a_-_Acetes_paste_from_Vietnam_-1.JPG",
+    "attribution": "Hungda / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "dishes/mam-gung.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Phương Huy",
+    "source_url": "https://commons.wikimedia.org/wiki/File:M%C3%B3n_%C4%83n_nh%C3%A0_m%C3%ACnh_T%E1%BA%BFt_2022_(ch%C3%A9n_n%C6%B0%E1%BB%9Bc_m%E1%BA%AFm_g%E1%BB%ABng).jpg",
+    "attribution": "Phương Huy / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/mam-ruoi.webp": {
+    "license": "public-domain",
+    "author": "Việt Hà (thảo luận)",
+    "source_url": "https://commons.wikimedia.org/wiki/File:M%E1%BA%AFm_r%C6%B0%C6%A1i.jpg",
+    "attribution": "Việt Hà (thảo luận) / Wikimedia Commons (Public domain)"
+  },
+  "dishes/mam-kho.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Viethavvh",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Kho_qu%E1%BA%B9t_2.jpg",
+    "attribution": "Viethavvh / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/mam-tom-chua.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Blemo25",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Mam_tom_chua_di_Can.jpg",
+    "attribution": "Blemo25 / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/mi-quang.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Jpatokal",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Mi_Quang_1A_Danang.jpg",
+    "attribution": "Jpatokal / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/mi-van-than.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "N509FZ",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Wonton_noodles_at_Yunshan_Caf%C3%A9,_Beijing_Guangdong_Hotel_(20240128125129).jpg",
+    "attribution": "N509FZ / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/mien-luon.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "vi:User:Rungbachduong",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Mien_luon_Hang_Dieu.JPG",
+    "attribution": "vi:User:Rungbachduong / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "dishes/mi-xao-gion.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "HungryKya",
+    "source_url": "https://commons.wikimedia.org/wiki/File:IndianFriedNoodles.jpg",
+    "attribution": "HungryKya / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/mien-xao-chay.webp": {
+    "license": "cc0",
+    "author": "Phương Huy",
+    "source_url": "https://commons.wikimedia.org/wiki/File:M%C5%A9i_N%C3%A9_th7n2023,_Khu_ND_(mi%E1%BA%BFn_x%C3%A0o_chay)_(3).jpg",
+    "attribution": "Phương Huy / Wikimedia Commons (CC0)"
+  },
+  "dishes/muoi-tom.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Khangdora2809",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Mu%E1%BB%91i_t%C3%B4m_T%C3%A2y_Ninh.png",
+    "attribution": "Khangdora2809 / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/muoi-ot-chanh.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Phương Huy",
+    "source_url": "https://commons.wikimedia.org/wiki/File:V%C3%B9ng_C%C3%B9a_%E1%BB%9F_Cam_L%E1%BB%99_th5n2023-Ph%C6%B0%C6%A1ng_Gia_Trang_(ch%C3%A9n_mu%E1%BB%91i_%E1%BB%9Bt_chanh)_(13).jpg",
+    "attribution": "Phương Huy / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/nem-chua-ran.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Group6gma04",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Nem-chua-ran2.jpg",
+    "attribution": "Group6gma04 / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/nem-chua-lai-vung.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "TUIBAJAVE",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Nem_chua_Lai_Vung.jpg",
+    "attribution": "TUIBAJAVE / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/nem-ran.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Phương Huy",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Ch%E1%BA%A3_gi%C3%B2_SG_(nem_r%C3%A1n_gi%C3%B2n)_%E1%BB%9F_qu%C3%A1n_b%C3%BAn_ri%C3%AAu_B%C3%A0_Ti_ng26th7n2023_(3).jpg",
+    "attribution": "Phương Huy / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/nom-hoa-chuoi.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Jicara Foodie Traveller",
+    "source_url": "https://commons.wikimedia.org/wiki/File:N%E1%BB%99m_hoa_chu%E1%BB%91i.png",
+    "attribution": "Jicara Foodie Traveller / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/nuoc-cham-ca-com.webp": {
+    "license": "public-domain",
+    "author": "Phương Huy (thảo luận)",
+    "source_url": "https://commons.wikimedia.org/wiki/File:M%C3%B3n_d%E1%BB%93i_(n%C6%B0%E1%BB%9Bc_m%E1%BA%AFm,_rau,_%E1%BB%9Bt,_m%E1%BA%AFm_c%C3%A0)_t%E1%BA%A1i_nh%C3%A0_h%C3%A0ng_c%C6%A1m_ni%C3%AAu_Vi%E1%BB%87t_Nam_%E1%BB%9F_%C4%90%C3%B4ng_H%C3%A0_(3).jpg",
+    "attribution": "Phương Huy (thảo luận) / Wikimedia Commons (Public domain)"
+  },
+  "dishes/nui-xao-bo.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Meiko21",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Nui_x%C3%A0o_b%C3%B2.jpg",
+    "attribution": "Meiko21 / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/oc-buou-nhoi-thit.webp": {
+    "license": "cc-by-sa-2.0",
+    "author": "Charles Haynes",
+    "source_url": "https://commons.wikimedia.org/wiki/File:%E1%BB%90c_b%C6%B0%C6%A1u_nh%E1%BB%93i_th%E1%BB%8Bt_1.jpg",
+    "attribution": "Charles Haynes / Wikimedia Commons (CC BY-SA 2.0)"
+  },
+  "dishes/oc-nau-chuoi-dau.webp": {
+    "license": "cc-by-sa-2.0",
+    "author": "Thang Nguyen from Nottingham, United Kingdom",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Chu%E1%BB%91i_%E1%BB%91c_%C4%91%E1%BA%ADu.jpg",
+    "attribution": "Thang Nguyen from Nottingham, United Kingdom / Wikimedia Commons (CC BY-SA 2.0)"
+  },
+  "dishes/pho-ga.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Nowforever",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Vietnamese_Pho.jpg",
+    "attribution": "Nowforever / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/pho-mai-que.webp": {
+    "license": "cc-by-2.0",
+    "author": "@joefoodie",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Pepper_Jack_cheese_sticks.jpg",
+    "attribution": "@joefoodie / Wikimedia Commons (CC BY 2.0)"
+  },
+  "dishes/pho-xao.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "Codename5281",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Ph%E1%BB%9F_x%C3%A0o_b%C3%B2.jpg",
+    "attribution": "Codename5281 / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "dishes/rau-cau-dua.webp": {
+    "license": "public-domain",
+    "author": "Phương Huy (thảo luận)",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Rau_c%C3%A2u_d%E1%BB%ABa_t%C6%B0%C6%A1i_%E1%BB%9F_BiC_Ph%C3%BA_Th%E1%BA%A1nh_th%C3%A1ng_10_n%C4%83m_2018_(1).jpg",
+    "attribution": "Phương Huy (thảo luận) / Wikimedia Commons (Public domain)"
+  },
+  "dishes/rau-muong-luoc.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "Buileducanh (thảo luận)",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Noi_rau_muong_luoc.jpg",
+    "attribution": "Buileducanh (thảo luận) / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "dishes/rau-muong-xao-toi.webp": {
+    "license": "public-domain",
+    "author": "Phương Huy (thảo luận)",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Rau_mu%E1%BB%91ng_x%C3%A0o_t%E1%BB%8Fi,_th%C3%A1ng_4_n%C4%83m_2018.jpg",
+    "attribution": "Phương Huy (thảo luận) / Wikimedia Commons (Public domain)"
+  },
+  "dishes/sam-bo-luong.webp": {
+    "license": "cc-by-sa-2.0",
+    "author": "stu_spivack",
+    "source_url": "https://commons.wikimedia.org/wiki/File:S%C3%A2m_b%E1%BB%95_l%C6%B0%E1%BB%A3ng.jpg",
+    "attribution": "stu_spivack / Wikimedia Commons (CC BY-SA 2.0)"
+  },
+  "dishes/suon-nuong.webp": {
+    "license": "cc-by-2.0",
+    "author": "나무늘보하루~",
+    "source_url": "https://commons.wikimedia.org/wiki/File:S%C6%B0%E1%BB%9Dn_n%C6%B0%E1%BB%9Bng.jpg",
+    "attribution": "나무늘보하루~ / Wikimedia Commons (CC BY 2.0 kr)"
+  },
+  "dishes/suon-xao-chua-ngot.webp": {
+    "license": "cc-by-3.0",
+    "author": "Nguyen Thi Quynh Tram",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Suon_xao_chua_ngot.png",
+    "attribution": "Nguyen Thi Quynh Tram / Wikimedia Commons (CC BY 3.0)"
+  },
+  "dishes/sup-cua.webp": {
+    "license": "public-domain",
+    "author": "Phương Huy (thảo luận)",
+    "source_url": "https://commons.wikimedia.org/wiki/File:S%C3%BAp_cua_Vi%E1%BB%87t_Nam.jpg",
+    "attribution": "Phương Huy (thảo luận) / Wikimedia Commons (Public domain)"
+  },
+  "dishes/sup-ga-ngo.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Vo2126753vn",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Sup_ga_nong_Viet_Nam_voi_trung_cut_va_ngo_ngot.jpg",
+    "attribution": "Vo2126753vn / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/sup-luon.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Hoangkid",
+    "source_url": "https://commons.wikimedia.org/wiki/File:S%C3%BAp_l%C6%B0%C6%A1n_%26_b%C3%A1nh_m%C6%B0%E1%BB%9Bt.jpg",
+    "attribution": "Hoangkid / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/thit-bo-xao-hanh-tay.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Phương Huy",
+    "source_url": "https://commons.wikimedia.org/wiki/File:M%C3%B3n_c%C3%BAng_T%E1%BA%BFt_n%C4%83m_2019_t%E1%BA%A1i_%C4%90%C3%B4ng_H%C3%A0_(th%E1%BB%8Bt_b%C3%B2_x%C3%A0o_h%C3%A0nh_t%C3%A2y).jpg",
+    "attribution": "Phương Huy / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/thit-chua.webp": {
+    "license": "cc-by-2.0",
+    "author": "Ron Diggity",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Nem_chua.jpg",
+    "attribution": "Ron Diggity / Wikimedia Commons (CC BY 2.0)"
+  },
+  "dishes/thit-dong.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Viethavvh",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Gi%C3%B2_th%E1%BB%A7.jpg",
+    "attribution": "Viethavvh / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/thit-kho-tau.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Viethavvh",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Th%E1%BB%8Bt_kho_T%C3%A0u.jpg",
+    "attribution": "Viethavvh / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/thit-kho-tieu.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "Mkat",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Thit-kho-tieu-1.jpg",
+    "attribution": "Mkat / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "dishes/xoi-san.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Hoangkid",
+    "source_url": "https://commons.wikimedia.org/wiki/File:X%C3%B4i_s%E1%BA%AFn.jpg",
+    "attribution": "Hoangkid / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/xoi-thap-cam.webp": {
+    "license": "cc0",
+    "author": "Blueconcorde",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Xoi_thap_cam.jpg",
+    "attribution": "Blueconcorde / Wikimedia Commons (CC0)"
+  },
+  "dishes/xoi-ngu-sac.webp": {
+    "license": "public-domain",
+    "author": "Khương Việt Hà",
+    "source_url": "https://commons.wikimedia.org/wiki/File:X%C3%B4i_ng%C5%A9_s%E1%BA%AFc.JPG",
+    "attribution": "Khương Việt Hà / Wikimedia Commons (Public domain)"
+  },
+  "dishes/xoi-xeo.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Viethavvh",
+    "source_url": "https://commons.wikimedia.org/wiki/File:X%C3%B4i_x%C3%A9o.jpg",
+    "attribution": "Viethavvh / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "ingredients/binh-bat.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "CiXeL at English Wikipedia",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Annona_glabra_FL.jpg",
+    "attribution": "CiXeL at English Wikipedia / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "ingredients/bo-qua.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "B.navez",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Persea_americana_fruit_2.JPG",
+    "attribution": "B.navez / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "ingredients/bo-thuc-vat.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "Kagor",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Margaryn_022.jpg",
+    "attribution": "Kagor / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "ingredients/bot-bang.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Linason Blessing",
+    "source_url": "https://commons.wikimedia.org/wiki/File:A_plate_of_Tapioca.jpg",
+    "attribution": "Linason Blessing / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "ingredients/bot-gao.webp": {
+    "license": "cc-by-sa-2.0",
+    "author": "FotoosVanRobin",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Two_kinds_of_rice_flour.jpg",
+    "attribution": "FotoosVanRobin / Wikimedia Commons (CC BY-SA 2.0)"
+  },
+  "ingredients/bot-ngo.webp": {
+    "license": "cc0",
+    "author": "Fumikas Sagisavas",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Corn_flour_(20240709).jpg",
+    "attribution": "Fumikas Sagisavas / Wikimedia Commons (CC0)"
+  },
+  "ingredients/buoi-chum.webp": {
+    "license": "cc-by-sa-2.5",
+    "author": "Citrus_paradisi_(Grapefruit,_pink).jpg: א (Aleph)\nderivative work: — raeky",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Citrus_paradisi_(Grapefruit,_pink)_white_bg.jpg",
+    "attribution": "Citrus_paradisi_(Grapefruit,_pink).jpg: א (Aleph)\nderivative work: — raeky / Wikimedia Commons (CC BY-SA 2.5)"
+  },
+  "ingredients/buoi.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Ivar Leidus",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Pomelo_fruit.jpg",
+    "attribution": "Ivar Leidus / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "ingredients/ca-chua.webp": {
+    "license": "cc-by-4.0",
+    "author": "George Chernilevsky",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Tomato_plant_2026_G2.jpg",
+    "attribution": "George Chernilevsky / Wikimedia Commons (CC BY 4.0)"
+  },
+  "ingredients/ca-ro-phi.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "Bjørn Christian Tørrissen",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Oreochromis-niloticus-Nairobi.JPG",
+    "attribution": "Bjørn Christian Tørrissen / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "ingredients/cai-thia.webp": {
+    "license": "cc-by-2.5",
+    "author": "おむこさん志望",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Brassica_rapa_var._chinensis_(leaf).jpg",
+    "attribution": "おむこさん志望 / Wikimedia Commons (CC BY 2.5)"
+  },
+  "ingredients/chanh-vang.webp": {
+    "license": "cc-by-sa-2.5",
+    "author": "André Karwath aka Aka",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Lemon.jpg",
+    "attribution": "André Karwath aka Aka / Wikimedia Commons (CC BY-SA 2.5)"
+  },
+  "ingredients/chanh-day.webp": {
+    "license": "cc-by-3.0",
+    "author": "Alexander Klink",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Passiflora_Edulis_Open_Fruit2.jpg",
+    "attribution": "Alexander Klink / Wikimedia Commons (CC BY 3.0)"
+  },
+  "ingredients/cherry.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "Benjamint444, edited by Fir0002",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Cherry_Stella444.jpg",
+    "attribution": "Benjamint444, edited by Fir0002 / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "ingredients/chom-chom.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Kdejkrnsnmockecedshgla",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Qua-chom-chom-viet-nam-tuoi.jpg",
+    "attribution": "Kdejkrnsnmockecedshgla / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "ingredients/dau-den.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Ivar Leidus",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Blackberries_(Rubus_fruticosus).jpg",
+    "attribution": "Ivar Leidus / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "ingredients/dau-tay.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Ivar Leidus",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Garden_strawberry_(Fragaria_%C3%97_ananassa)_single2.jpg",
+    "attribution": "Ivar Leidus / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "ingredients/doc-mung.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Photo by David J. Stang",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Alocasia_macrorrhizos_Black_Stem_2zz.jpg",
+    "attribution": "Photo by David J. Stang / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "ingredients/dua-bo.webp": {
+    "license": "cc-by-4.0",
+    "author": "Anaxibia",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Cucumis_melo_var._Queen_Anne%E2%80%99s_Pocket.jpg",
+    "attribution": "Anaxibia / Wikimedia Commons (CC BY 4.0)"
+  },
+  "ingredients/dua-le.webp": {
+    "license": "public-domain",
+    "author": "Yotoen",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Honeydew.jpg",
+    "attribution": "Yotoen / Wikimedia Commons (Public domain)"
+  },
+  "ingredients/dua-thom.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "Markus Leupold-Löwenthal",
+    "source_url": "https://commons.wikimedia.org/wiki/File:AnanasComosusOnPlant.jpg",
+    "attribution": "Markus Leupold-Löwenthal / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "ingredients/gio-lua.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Ser Amantio di Nicolao",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Banh_cuon_nhan_thit_cha_lua,_Banh_Cuon_Thang_Long.jpg",
+    "attribution": "Ser Amantio di Nicolao / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "ingredients/hong-xiem.webp": {
+    "license": "public-domain",
+    "author": "Richard Stanway",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Sapodilla_tree.jpg",
+    "attribution": "Richard Stanway / Wikimedia Commons (Public domain)"
+  },
+  "ingredients/mit-chin.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "Mullookkaaran",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Jackfruit_Flesh.jpg",
+    "attribution": "Mullookkaaran / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "ingredients/mo.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "Fir0002",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Apricots.jpg",
+    "attribution": "Fir0002 / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "ingredients/mong-toi.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "Joydeep",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Basella_alba_leaves_27052014.jpg",
+    "attribution": "Joydeep / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "ingredients/nam-huong-kho.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Phương Huy",
+    "source_url": "https://commons.wikimedia.org/wiki/File:N%E1%BA%A5m_h%C6%B0%C6%A1ng_s%E1%BA%A5y_kh%C3%B4_20201106.jpg",
+    "attribution": "Phương Huy / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "ingredients/nho-than-go.webp": {
+    "license": "cc-by-3.0",
+    "author": "Alexandre CampolinaCampola",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Jabuticaba_fruto.jpg",
+    "attribution": "Alexandre CampolinaCampola / Wikimedia Commons (CC BY 3.0)"
+  },
+  "ingredients/nhan.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "Bùi Thụy Đào Nguyên",
+    "source_url": "https://commons.wikimedia.org/wiki/File:C%C3%A2y_nh%C3%A3n.jpg",
+    "attribution": "Bùi Thụy Đào Nguyên / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "ingredients/nuoc-cot-dua.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "Meursault2004",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Coconut_milk_from_can01.JPG",
+    "attribution": "Meursault2004 / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "ingredients/nhot.webp": {
+    "license": "public-domain",
+    "author": "Wikimedia Commons",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Elaeagnus_latifolia_Bra46.png",
+    "attribution": "Wikimedia Commons / Wikimedia Commons (Public domain)"
+  },
+  "ingredients/ot-bot.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Basile Morin",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Red_chili_peppers_drying_on_a_footbridge.jpg",
+    "attribution": "Basile Morin / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "ingredients/qua-gac.webp": {
+    "license": "cc-by-3.0",
+    "author": "Andrew Grygus",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Exterior_and_cross-sectional_interior_of_gac.jpg",
+    "attribution": "Andrew Grygus / Wikimedia Commons (CC BY 3.0)"
+  },
+  "ingredients/qua-quat.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Photo by David J. Stang",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Citrofortunella_microcarpa_3zz.jpg",
+    "attribution": "Photo by David J. Stang / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "ingredients/qua-sung.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "Prashanthns",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Syconium_ficus_glomerata.JPG",
+    "attribution": "Prashanthns / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "ingredients/rau-bina.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "Rasbak",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Spinacia_oleracea_Spinazie_bloeiend.jpg",
+    "attribution": "Rasbak / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "ingredients/tam-bop.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Ivar Leidus",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Physalis_peruviana_calix_open_close-up.jpg",
+    "attribution": "Ivar Leidus / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "ingredients/tep.webp": {
+    "license": "public-domain",
+    "author": "Etrusko25",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Palaemon_serratus_Croazia.jpg",
+    "attribution": "Etrusko25 / Wikimedia Commons (Public domain)"
+  },
+  "ingredients/than-lon.webp": {
+    "license": "cc0",
+    "author": "Fumikas Sagisavas",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Pork_kidneys.jpg",
+    "attribution": "Fumikas Sagisavas / Wikimedia Commons (CC0)"
+  },
+  "ingredients/thanh-tra.webp": {
+    "license": "cc-by-2.0",
+    "author": "Sharon Hahn Darlin",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Bouea_macrophylla_or_Bouea_macrophylla_Griffith.jpg",
+    "attribution": "Sharon Hahn Darlin / Wikimedia Commons (CC BY 2.0)"
+  },
+  "ingredients/thot-not.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "AntanO",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Asian_palmyra_(Borassus_flabellifer).JPG",
+    "attribution": "AntanO / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "ingredients/tom-cang-xanh.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "This illustration was made by Citron\nYou must credit this : Citron / CC-BY-SA-3.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Macrobrachium_rosenbergii.jpg",
+    "attribution": "This illustration was made by Citron\nYou must credit this : Citron / CC-BY-SA-3.0 / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "ingredients/trung-vit-muoi.webp": {
+    "license": "cc0",
+    "author": "Fumikas Sagisavas",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Salted_duck_egg_yolk.jpg",
+    "attribution": "Fumikas Sagisavas / Wikimedia Commons (CC0)"
+  },
+  "ingredients/tuong-ot.webp": {
+    "license": "public-domain",
+    "author": "Phương Huy (thảo luận)",
+    "source_url": "https://commons.wikimedia.org/wiki/File:T%C6%B0%C6%A1ng_%E1%BB%9Bt,_L%E1%BB%8D_t%C6%B0%C6%A1ng_%E1%BB%9Bt_nh%C3%A0_l%C3%A0m_2018_(1).jpg",
+    "attribution": "Phương Huy (thảo luận) / Wikimedia Commons (Public domain)"
+  },
+  "ingredients/viet-quat.webp": {
+    "license": "cc-by-sa-2.5",
+    "author": "Darkone (talk · contribs)",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Vaccinium_corymbosum_Beeren.jpg",
+    "attribution": "Darkone (talk · contribs) / Wikimedia Commons (CC BY-SA 2.5)"
+  },
+  "ingredients/xuan-dao.webp": {
+    "license": "public-domain",
+    "author": "Jack Dykinga, USDA",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Autumn_Red_peaches.jpg",
+    "attribution": "Jack Dykinga, USDA / Wikimedia Commons (Public domain)"
+  },
+  "ingredients/xoai.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Ivar Leidus",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Mangos_-_single_and_halved.jpg",
+    "attribution": "Ivar Leidus / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/banh-flan.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "Joseolgon",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Abade_de_Priscos.JPG",
+    "attribution": "Joseolgon / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "dishes/banh-mi-kep.webp": {
+    "license": "cc-by-sa-2.0",
+    "author": "jasonlam",
+    "source_url": "https://commons.wikimedia.org/wiki/File:01_Baoguette_Pork_Banh_Mi.jpg",
+    "attribution": "jasonlam / Wikimedia Commons (CC BY-SA 2.0)"
+  },
+  "dishes/banh-trung-thu.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Popo le Chien",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Brown_sugar_griddle_buns_chengdu.jpg",
+    "attribution": "Popo le Chien / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/cha-ruoi.webp": {
+    "license": "public-domain",
+    "author": "Viethavvh at vi.wikipedia",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Cha_ruoi.JPG",
+    "attribution": "Viethavvh at vi.wikipedia / Wikimedia Commons (Public domain)"
+  },
+  "dishes/chao-canh.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Nhân Quảng",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Ch%C3%A1o_canh_h%C3%A0u_-_%C4%90%E1%BB%93ng_H%E1%BB%9Bi.jpg",
+    "attribution": "Nhân Quảng / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/chao-khoai.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "Ngô Trung",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Ch%C3%A1o_c%E1%BB%A7_qu%E1%BA%A3.jpg",
+    "attribution": "Ngô Trung / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "dishes/chao-long.webp": {
+    "license": "cc-by-2.0",
+    "author": "hongnhung106",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Ch%C3%A1o_l%C3%B2ng.jpg",
+    "attribution": "hongnhung106 / Wikimedia Commons (CC BY 2.0)"
+  },
+  "dishes/chao-trang.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "Memberofc1",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Ch%C3%A1o_tr%E1%BA%AFng_h%E1%BB%99t_v%E1%BB%8Bt_mu%E1%BB%91i.JPG",
+    "attribution": "Memberofc1 / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "dishes/chao-tom.webp": {
+    "license": "cc-by-sa-2.0",
+    "author": "Charles Haynes",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Chao_tom.jpg",
+    "attribution": "Charles Haynes / Wikimedia Commons (CC BY-SA 2.0)"
+  },
+  "dishes/che-banh-lot.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Supardisahabu",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Es_Cendol_Susu.jpg",
+    "attribution": "Supardisahabu / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/che-bap.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "Zxcvasdfqwer888",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Ch%C3%A8_B%E1%BA%AFp.jpg",
+    "attribution": "Zxcvasdfqwer888 / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "dishes/che-ba-ba.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "Zxcvasdfqwer888",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Ch%C3%A8_b%C3%A0_ba.jpg",
+    "attribution": "Zxcvasdfqwer888 / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "dishes/che-dau-den.webp": {
+    "license": "public-domain",
+    "author": "Phương Huy (thảo luận)",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Ch%C3%A8_%C4%91%E1%BA%ADu_%C4%91en_nh%C3%A0_l%C3%A0m_(th%C3%A1ng_1_n%C4%83m_2018)_(1).jpg",
+    "attribution": "Phương Huy (thảo luận) / Wikimedia Commons (Public domain)"
+  },
+  "dishes/che-dau-do.webp": {
+    "license": "cc-by-sa-2.0",
+    "author": "stu_spivack",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Redbeansoupdessert.jpg",
+    "attribution": "stu_spivack / Wikimedia Commons (CC BY-SA 2.0)"
+  },
+  "dishes/hu-tieu-chay.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Phương Huy",
+    "source_url": "https://commons.wikimedia.org/wiki/File:%C4%82n_h%E1%BB%A7_ti%E1%BA%BFu_chay_v%E1%BB%9Bi_eHy_%E1%BB%9F_%C4%91%C6%B0%E1%BB%9Dng_Nguy%E1%BB%85n_S%C6%A1n_ng%C3%A0y_26_th%C3%A1ng_6_n%C4%83m_2016.jpg",
+    "attribution": "Phương Huy / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/kho-ca-loc.webp": {
+    "license": "public-domain",
+    "author": "Phương Huy (thảo luận)",
+    "source_url": "https://commons.wikimedia.org/wiki/File:C%C3%A1_tr%C3%A0u_Gio_Linh.jpg",
+    "attribution": "Phương Huy (thảo luận) / Wikimedia Commons (Public domain)"
+  },
+  "dishes/heo-quay.webp": {
+    "license": "cc0",
+    "author": "Daderot",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Crispy_roasted_pork_belly_-_San_Francisco,_CA.jpg",
+    "attribution": "Daderot / Wikimedia Commons (CC0)"
+  },
+  "dishes/hu-tieu.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Tonbi ko",
+    "source_url": "https://commons.wikimedia.org/wiki/File:H%E1%BB%A7_ti%E1%BA%BFu_b%C3%B2_kho.jpg",
+    "attribution": "Tonbi ko / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/kho-nhai.webp": {
+    "license": "cc-by-3.0",
+    "author": "Phổ Minh",
+    "source_url": "https://commons.wikimedia.org/wiki/File:%C4%90%C4%A9a_nh%C3%A1i_kh%C3%B4.png",
+    "attribution": "Phổ Minh / Wikimedia Commons (CC BY 3.0)"
+  },
+  "dishes/kho-quet.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Viethavvh",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Kho_qu%E1%BA%B9t_2.jpg",
+    "attribution": "Viethavvh / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/lau-bo.webp": {
+    "license": "public-domain",
+    "author": "Phương Huy (thảo luận)",
+    "source_url": "https://commons.wikimedia.org/wiki/File:L%E1%BA%A9u_b%C3%B2_t%E1%BA%A1i_qu%C3%A1n_B%C3%B2_c%C6%B0%E1%BB%9Di_(3).jpg",
+    "attribution": "Phương Huy (thảo luận) / Wikimedia Commons (Public domain)"
+  },
+  "dishes/xoi-bap.webp": {
+    "license": "cc-by-2.0",
+    "author": "Debbie Tingzon",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Ginataang_mais_(Sweet_corn_rice_porridge,_Philippines).jpg",
+    "attribution": "Debbie Tingzon / Wikimedia Commons (CC BY 2.0)"
+  },
+  "dishes/xoi-chien.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Viethavvh",
+    "source_url": "https://commons.wikimedia.org/wiki/File:X%C3%B4i_chi%C3%AAn.JPG",
+    "attribution": "Viethavvh / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/xoi-dau-xanh-mo-hanh.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Viethavvh",
+    "source_url": "https://commons.wikimedia.org/wiki/File:X%C3%B4i_x%C3%A9o.jpg",
+    "attribution": "Viethavvh / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/xoi-ga.webp": {
+    "license": "cc0",
+    "author": "Souradeep.Dasgupta",
+    "source_url": "https://commons.wikimedia.org/wiki/File:X%C3%B4i_G%C3%A0_Tr%E1%BB%A9ng_Non_L%E1%BA%A1p_X%C6%B0%E1%BB%9Bng_(Sticky_rice_with_chicken_and_eggs,_and_chinese_sausages).jpg",
+    "attribution": "Souradeep.Dasgupta / Wikimedia Commons (CC0)"
+  },
+  "dishes/xoi-gac.webp": {
+    "license": "public-domain",
+    "author": "Nguyễn Thanh Quang 07:20, 3 December 2007 (UTC)",
+    "source_url": "https://commons.wikimedia.org/wiki/File:X%C3%B4i_g%E1%BA%A5c.JPG",
+    "attribution": "Nguyễn Thanh Quang 07:20, 3 December 2007 (UTC) / Wikimedia Commons (Public domain)"
+  },
+  "dishes/xoi-la-cam.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Baoothersks",
+    "source_url": "https://commons.wikimedia.org/wiki/File:X%C3%B4i_l%C3%A1_c%E1%BA%A9m_c%E1%BA%AFt_ngang.jpg",
+    "attribution": "Baoothersks / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "dishes/xoi-khuc.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "Memberofc1",
+    "source_url": "https://commons.wikimedia.org/wiki/File:X%C3%B4i_kh%C3%BAc_2.jpg",
+    "attribution": "Memberofc1 / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "ingredients/bon-bon.webp": {
+    "license": "cc0",
+    "author": "Judgefloro",
+    "source_url": "https://commons.wikimedia.org/wiki/File:9796Longkong_Lanzones_10.jpg",
+    "attribution": "Judgefloro / Wikimedia Commons (CC0)"
+  },
+  "ingredients/ca-thac-lac.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Parkourprincess",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Chitala_Ornata.jpg",
+    "attribution": "Parkourprincess / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "ingredients/coc.webp": {
+    "license": "cc-by-3.0",
+    "author": "Anagoria",
+    "source_url": "https://commons.wikimedia.org/wiki/File:2014-10-11_Spondias_dulcis_Goldpflaume_anagoria.JPG",
+    "attribution": "Anagoria / Wikimedia Commons (CC BY 3.0)"
+  },
+  "ingredients/dau-tam.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Didier Descouens",
+    "source_url": "https://commons.wikimedia.org/wiki/File:(MHNT)_Morus_alba_-_immatures_inflorescences_and_flowers.jpg",
+    "attribution": "Didier Descouens / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "ingredients/dua-gang.webp": {
+    "license": "public-domain",
+    "author": "Sangfroid",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Cantaloupe_Melon_cross_section.png",
+    "attribution": "Sangfroid / Wikimedia Commons (Public domain)"
+  },
+  "ingredients/gung.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Sanu N",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Flower_of_Ginger1.jpg",
+    "attribution": "Sanu N / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "ingredients/dua-hau.webp": {
+    "license": "public-domain",
+    "author": "Albert Eckhout",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Albert_Eckhout_1610-1666_Brazilian_fruits.jpg",
+    "attribution": "Albert Eckhout / Wikimedia Commons (Public domain)"
+  },
+  "ingredients/hung-que.webp": {
+    "license": "cc-by-sa-1.0",
+    "author": "Wikimedia Commons",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Basilic-spice.jpg",
+    "attribution": "Wikimedia Commons / Wikimedia Commons (CC BY-SA 1.0)"
+  },
+  "ingredients/kinh-gioi.webp": {
+    "license": "cc-by-3.0",
+    "author": "Leslie J. Mehrhoff, University of Connecticut, Bugwood.org",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Elsholtzia_ciliata_LJM-5450558.jpg",
+    "attribution": "Leslie J. Mehrhoff, University of Connecticut, Bugwood.org / Wikimedia Commons (CC BY 3.0)"
+  },
+  "ingredients/rau-ngo.webp": {
+    "license": "cc-by-sa-2.0",
+    "author": "Emilia Murray",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Rice_Paddy_Herb.jpg",
+    "attribution": "Emilia Murray / Wikimedia Commons (CC BY-SA 2.0)"
+  },
+  "ingredients/rau-ngot.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "Mokkie",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Star_Gooseberry_(Sauropus_androgynus).jpg",
+    "attribution": "Mokkie / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "ingredients/rong-bien.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "Gabriele Kothe-Heinrich",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Porphyra_umbilicalis_Helgoland.JPG",
+    "attribution": "Gabriele Kothe-Heinrich / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "ingredients/ruou-vang-do.webp": {
+    "license": "cc-by-3.0",
+    "author": "Stefan Krause, Germany",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Schwappender_Wein.jpg",
+    "attribution": "Stefan Krause, Germany / Wikimedia Commons (CC BY 3.0 de)"
+  },
+  "ingredients/rau-muong.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "SarKaLay စာကလေး",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Water_Spinach_-_Chinese_Convolvulus_-_Kangkong.jpg",
+    "attribution": "SarKaLay စာကလေး / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "ingredients/rieng.webp": {
+    "license": "public-domain",
+    "author": "Franz Eugen Köhler, Köhler's Medizinal-Pflanzen",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Alpinia_officinarum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-156.jpg",
+    "attribution": "Franz Eugen Köhler, Köhler's Medizinal-Pflanzen / Wikimedia Commons (Public domain)"
+  },
+  "ingredients/ruoi.webp": {
+    "license": "public-domain",
+    "author": "Nguyễn Công Tiễu (1931).",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Con_r%C6%B0%C6%A1i_(tranh_c%E1%BB%A7a_Nguy%E1%BB%85n_C%C3%B4ng_Ti%E1%BB%85u).png",
+    "attribution": "Nguyễn Công Tiễu (1931). / Wikimedia Commons (Public domain)"
+  },
+  "ingredients/ruou-trang.webp": {
+    "license": "public-domain",
+    "author": "Khương Việt Hà",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Khap_ruou.jpg",
+    "attribution": "Khương Việt Hà / Wikimedia Commons (Public domain)"
+  },
+  "ingredients/so-diep.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "No machine-readable author provided. Weitbrecht assumed (based on copyright claims).",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Aequipecten_opercularis_gelb.jpg",
+    "attribution": "No machine-readable author provided. Weitbrecht assumed (based on copyright claims). / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "ingredients/sau-rieng.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Jonashtand",
+    "source_url": "https://commons.wikimedia.org/wiki/File:201906_Durian_vendor_in_Forest_City,_Johor,_Malaysia_(cropped).jpg",
+    "attribution": "Jonashtand / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "ingredients/sua-bien.webp": {
+    "license": "cc-by-3.0",
+    "author": "Andreas Augstein",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Aurelia_aurita_(auge24eu).jpg",
+    "attribution": "Andreas Augstein / Wikimedia Commons (CC BY 3.0)"
+  },
+  "ingredients/sa.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "Obsidian Soul",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Cymbopogon_citratus_leaves.jpg",
+    "attribution": "Obsidian Soul / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "ingredients/su-hao.webp": {
+    "license": "cc0",
+    "author": "Unknown",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Brassica_oleracea_var._gongylodes_(kohlrabi).jpg",
+    "attribution": "Unknown / Wikimedia Commons (CC0)"
+  },
+  "ingredients/sua-dau-nanh.webp": {
+    "license": "cc-by-sa-2.0",
+    "author": "Kjokkenutstyr",
+    "source_url": "https://commons.wikimedia.org/wiki/File:004-soymilk.jpg",
+    "attribution": "Kjokkenutstyr / Wikimedia Commons (CC BY-SA 2.0)"
+  },
+  "ingredients/sua-tuoi.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Oleg Bor",
+    "source_url": "https://commons.wikimedia.org/wiki/File:A_bowl_of_milk_for_the_shaman_rite._Buryatia._Russia.png",
+    "attribution": "Oleg Bor / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "ingredients/sua-dac.webp": {
+    "license": "cc-by-sa-4.0",
+    "author": "Superbass",
+    "source_url": "https://commons.wikimedia.org/wiki/File:2016-03-26-Gezuckerte_Kondensmilch-4699.jpg",
+    "attribution": "Superbass / Wikimedia Commons (CC BY-SA 4.0)"
+  },
+  "ingredients/thach-suong-sao.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "Takeaway",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Chao_guay_thai_grass_jelly.jpg",
+    "attribution": "Takeaway / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "ingredients/sup-lo-trang.webp": {
+    "license": "cc-by-sa-3.0",
+    "author": "Malte",
+    "source_url": "https://commons.wikimedia.org/wiki/File:7367-Brassica_oleracea_var._botrytis.JPG",
+    "attribution": "Malte / Wikimedia Commons (CC BY-SA 3.0)"
+  },
+  "ingredients/thi-la.webp": {
+    "license": "cc0",
+    "author": "AnRo0002",
+    "source_url": "https://commons.wikimedia.org/wiki/File:20141003Anethum_graveolens.jpg",
+    "attribution": "AnRo0002 / Wikimedia Commons (CC0)"
+  },
+  "ingredients/vai.webp": {
+    "license": "public-domain",
+    "author": "Michał Boym",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Flora_Sinensis_1656_(2950635)_(cropped).jpg",
+    "attribution": "Michał Boym / Wikimedia Commons (Public domain)"
+  },
+  "ingredients/vu-sua.webp": {
+    "license": "public-domain",
+    "author": "No machine-readable author provided. Hans B.~commonswiki assumed (based on copyright claims).",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Chrusophyllum_cainito.jpg",
+    "attribution": "No machine-readable author provided. Hans B.~commonswiki assumed (based on copyright claims). / Wikimedia Commons (Public domain)"
+  },
+  "ingredients/chuoi.webp": {
+    "license": "ai-minh-hoa",
+    "author": "Lắc Đói (AI minh hoạ)",
+    "source_url": null,
+    "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói"
+  },
+  "ingredients/dao-phang.webp": {
+    "license": "ai-minh-hoa",
+    "author": "Lắc Đói (AI minh hoạ)",
+    "source_url": null,
+    "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói"
+  },
+  "ingredients/kiwi.webp": {
+    "license": "ai-minh-hoa",
+    "author": "Lắc Đói (AI minh hoạ)",
+    "source_url": null,
+    "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói"
+  },
+  "ingredients/le.webp": {
+    "license": "ai-minh-hoa",
+    "author": "Lắc Đói (AI minh hoạ)",
+    "source_url": null,
+    "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói"
+  },
+  "ingredients/luu.webp": {
+    "license": "ai-minh-hoa",
+    "author": "Lắc Đói (AI minh hoạ)",
+    "source_url": null,
+    "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói"
+  },
+  "ingredients/mang-cut.webp": {
+    "license": "ai-minh-hoa",
+    "author": "Lắc Đói (AI minh hoạ)",
+    "source_url": null,
+    "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói"
+  },
+  "ingredients/oi.webp": {
+    "license": "ai-minh-hoa",
+    "author": "Lắc Đói (AI minh hoạ)",
+    "source_url": null,
+    "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói"
+  }
 }

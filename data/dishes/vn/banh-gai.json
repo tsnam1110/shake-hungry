@@ -80,7 +80,14 @@
     "Hấp chín khoảng 30 phút."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/banh-gai.webp",
+      "license": "cc-by-sa-3.0",
+      "attribution": "Hungda / Wikimedia Commons (CC BY-SA 3.0)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt) THIẾU NGUYÊN LIỆU: lá gai (chính) — cần bổ sung vào kho",

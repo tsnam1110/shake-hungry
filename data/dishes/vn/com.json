@@ -41,7 +41,14 @@
     "Cốm làm từ lúa nếp non rang giã — tạm tính bằng gạo nếp, chờ bổ sung nguyên liệu 'cốm' riêng."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/com.webp",
+      "license": "cc-by-sa-4.0",
+      "attribution": "D.Thiên / Wikimedia Commons (CC BY-SA 4.0)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": {
     "id": "Q5202996",

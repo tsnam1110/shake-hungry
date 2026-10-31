@@ -126,7 +126,14 @@
     "Trộn nước mắm chua ngọt, rắc lạc, hành phi."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/nom-hoa-chuoi.webp",
+      "license": "cc-by-sa-4.0",
+      "attribution": "Jicara Foodie Traveller / Wikimedia Commons (CC BY-SA 4.0)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": {
     "id": "Q68631373",

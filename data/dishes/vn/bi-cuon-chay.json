@@ -144,7 +144,14 @@
     "Chấm tương bần pha đậu phộng và đường."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/bi-cuon-chay.webp",
+      "license": "cc-by-3.0",
+      "attribution": "Nguyen Thi Quynh Tram / Wikimedia Commons (CC BY 3.0)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt).",

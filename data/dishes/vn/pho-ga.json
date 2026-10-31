@@ -159,7 +159,14 @@
       "note": "Dân Việt: gà 1/2 con 1kg, xương lợn 300g, bánh phở 500g; có hoa hồi + quế + thảo quả rang thơm, ninh nước dùng 30 phút–1 giờ, ăn kèm lá chanh thái chỉ và quẩy."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/pho-ga.webp",
+      "license": "cc-by-sa-4.0",
+      "attribution": "Nowforever / Wikimedia Commons (CC BY-SA 4.0)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": {
     "id": "Q79059164",

@@ -44,6 +44,14 @@
       "source": "FDC 169231 foodMeasures"
     }
   ],
+  "media": [
+    {
+      "path": "media/ingredients/gung.webp",
+      "license": "cc-by-sa-4.0",
+      "attribution": "Sanu N / Wikimedia Commons (CC BY-SA 4.0)",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

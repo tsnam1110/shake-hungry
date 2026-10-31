@@ -186,7 +186,14 @@
       "note": "Sức khỏe & Đời sống: phi hành trước và giữ dầu phi hành để xào bò; nước trộn thiên ngọt hơn nước chấm nem miền Bắc, đun hơi ấm trước khi rưới; giá có thể chần hoặc ăn sống."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/bun-bo-nam-bo.webp",
+      "license": "cc-by-2.0",
+      "attribution": "fabulousfabs / Wikimedia Commons (CC BY 2.0)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. Nâng Mức 2 đợt 2 (2026-10-31): đã mở kiểm chứng 3 nguồn (VietFoodShop, Dân Việt, Sức khỏe & Đời sống). Phân xử định lượng: GIỮ NGUYÊN toàn bộ — chỉ VietFoodShop định lượng theo mẻ (bò 500g, bún 1kg) nhưng KHÔNG ghi khẩu phần nên không quy đổi chắc chắn được; nếu mẻ 4 người thì bò ~125g và bún ~250g/khẩu phần, cao hơn số file (70g/150g) — ghi nhận để pha phân xử xem lại quy ước khẩu phần món trộn; hai nguồn còn lại chỉ cho tỉ lệ ướp và nước trộn. BẤT THƯỜNG ghi nhận: (1) nguồn gốc món — Dân Việt và Sức khỏe & Đời sống đều nói món xuất phát từ HÀ NỘI (phố Nam Bộ, nay thuộc Lê Duẩn) trong khi file đang để region_code vn-south và tên Anh 'Southern...' dịch theo tên món — đề xuất pha phân xử xem lại region; (2) 2/3 nguồn có hành tây xào cùng bò và đồ chua su hào/cà rốt, file không có các dòng này. Phân xử bất thường LV2-002 (Phần A, 2026-10-31): PHÂN XỬ VÙNG: quy ước vùng của dự án (EDITORIAL-GUIDE §4) là vùng GỐC của món, không phải miền trong tên gọi. Bằng chứng xuất xứ Hà Nội: Dân Việt + Sức khỏe & Đời sống (đã đối chiếu đợt 2) và hai nguồn độc lập bổ sung mở kiểm chứng ở pha này — SKĐS \"Vì sao có tên gọi bún bò Nam Bộ\" (thông tin phổ biến nhất: món xuất xứ Hà Nội, quán bà Can trên đường Nam Bộ, nay là Lê Duẩn) và TTXVN (vietnam.vnanet.vn) cùng kể giai thoại phố Nam Bộ; Wikipedia ghi nhận tranh cãi và tiền thân bún thịt xào miền Nam (1926) — tiền thân khác với chính món mang tên \"Nam Bộ\" ra đời tại Hà Nội. Kết luận: region_code vn-south → vn-north, gắn nhãn dac-san:ha-noi theo quy ước DATA-010 như các đặc sản Hà Nội khác, tên Anh bỏ \"Southern\" → \"Hanoi-style beef noodle salad\". Tên món \"Nam Bộ\" giữ nguyên — đó là tên phố, không phải chỉ miền. Thêm 3 dòng theo ghi nhận 2/3 nguồn: hanh-tay 20 g (xào cùng bò — bước 4 đã nhắc), ca-rot 15 g + su-hao 15 g (đồ chua ăn kèm — bước 3 đã nhắc).",

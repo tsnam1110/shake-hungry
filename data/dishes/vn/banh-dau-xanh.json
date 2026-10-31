@@ -67,7 +67,14 @@
     "Đóng khuôn, cắt viên."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/banh-dau-xanh.webp",
+      "license": "cc-by-sa-4.0",
+      "attribution": "MrMaThaMi / Wikimedia Commons (CC BY-SA 4.0)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": {
     "id": "Q48880901",

@@ -51,6 +51,14 @@
       "source": "FDC 169108 foodMeasures"
     }
   ],
+  "media": [
+    {
+      "path": "media/ingredients/chanh-day.webp",
+      "license": "cc-by-3.0",
+      "attribution": "Alexander Klink / Wikimedia Commons (CC BY 3.0)",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

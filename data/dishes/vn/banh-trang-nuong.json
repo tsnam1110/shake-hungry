@@ -95,7 +95,14 @@
     "Nướng đến khi bánh giòn, trứng chín; gập đôi, ăn nóng."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/banh-trang-nuong.webp",
+      "license": "cc-by-sa-2.0",
+      "attribution": "Light Write / Wikimedia Commons (CC BY-SA 2.0)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt)",

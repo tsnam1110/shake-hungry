@@ -91,7 +91,14 @@
     "Xếp các màu xôi cạnh nhau thành đĩa ngũ sắc, ăn kèm vừng đường."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/xoi-ngu-sac.webp",
+      "license": "public-domain",
+      "attribution": "Khương Việt Hà / Wikimedia Commons (Public domain)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. THIẾU NGUYÊN LIỆU: lá cẩm (phụ — tạo màu tím) — cần bổ sung vào kho. THIẾU NGUYÊN LIỆU: quả dành dành (phụ — tạo màu vàng/đỏ) — cần bổ sung vào kho.",

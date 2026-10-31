@@ -38,6 +38,14 @@
       "source": "ước lượng theo PhilFCT"
     }
   ],
+  "media": [
+    {
+      "path": "media/ingredients/vu-sua.webp",
+      "license": "public-domain",
+      "attribution": "No machine-readable author provided. Hans B.~commonswiki assumed (based on copyright claims). / Wikimedia Commons (Public domain)",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "low",
   "needs_review": true,

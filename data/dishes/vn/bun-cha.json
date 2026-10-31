@@ -175,7 +175,14 @@
       "note": "Dân Việt: ba chỉ 500g, nạc vai xay 500g, bún 1kg; ướp có sả và sữa đặc, ướp tối thiểu 1 giờ; dưa góp su hào + cà rốt ngâm chua ngọt."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/bun-cha.webp",
+      "license": "cc-by-sa-2.0",
+      "attribution": "Larry / Wikimedia Commons (CC BY-SA 2.0)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": {
     "id": "Q50634",

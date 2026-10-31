@@ -99,7 +99,14 @@
     "Luộc 8-10 giờ."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/banh-tet.webp",
+      "license": "cc-by-sa-2.0",
+      "attribution": "viviandnguyen_ / Wikimedia Commons (CC BY-SA 2.0)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": {
     "id": "Q5004813",

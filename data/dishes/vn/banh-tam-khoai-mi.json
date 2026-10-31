@@ -88,7 +88,14 @@
     "Rắc muối vừng đường lên trên khi ăn."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/banh-tam-khoai-mi.webp",
+      "license": "cc-by-sa-4.0",
+      "attribution": "Phương Huy / Wikimedia Commons (CC BY-SA 4.0)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt)",

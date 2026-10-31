@@ -38,6 +38,14 @@
   "edible_portion_note": null,
   "is_ready_to_eat": false,
   "units": [],
+  "media": [
+    {
+      "path": "media/ingredients/thanh-tra.webp",
+      "license": "cc-by-2.0",
+      "attribution": "Sharon Hahn Darlin / Wikimedia Commons (CC BY 2.0)",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "low",
   "needs_review": true,

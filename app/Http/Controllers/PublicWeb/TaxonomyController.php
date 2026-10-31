@@ -36,7 +36,7 @@ class TaxonomyController extends Controller
     /** Danh mục nguyên liệu công khai: lọc theo category, nhãn, từ khoá. */
     public function ingredients(Request $request): JsonResponse
     {
-        $query = Ingredient::query()->with(['tags:id,slug,name', 'aliases:id,ingredient_id,name,note'])->orderBy('name_vi');
+        $query = Ingredient::query()->with(['tags:id,slug,name', 'aliases:id,ingredient_id,name,note', 'media'])->orderBy('name_vi');
         if ($q = trim((string) $request->query('q', ''))) {
             // Tìm cả tên gọi khác / tên vùng miền (ALIAS-001).
             $query->where(fn ($w) => $w->where('name_vi', 'like', "%{$q}%")
@@ -49,6 +49,14 @@ class TaxonomyController extends Controller
             $query->whereHas('tags', fn ($w) => $w->whereIn('tags.slug', $slugs));
         }
 
-        return response()->json($query->paginate(50));
+        $page = $query->paginate(50);
+        // IMG-001: ảnh chính của nguyên liệu (nếu có).
+        $page->getCollection()->transform(function (Ingredient $ing) {
+            $ing->setAttribute('image', $ing->primaryImage());
+
+            return $ing;
+        });
+
+        return response()->json($page);
     }
 }

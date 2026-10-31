@@ -157,7 +157,14 @@
       "note": "Lofita (mì vằn thắn sủi cảo), khoảng 8 bát: mì tươi 500g, thịt xá xíu làm từ 200g thịt nạc vai, nhân sủi cảo gồm thịt xay 200g, giò sống 200g và tôm 200g gói trong 50 vỏ hoành thánh, tôm tươi ăn kèm 200g, rau xanh 200g; nước dùng xương và tôm khô ninh 1,5-2 giờ."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/mi-van-than.webp",
+      "license": "cc-by-sa-4.0",
+      "attribution": "N509FZ / Wikimedia Commons (CC BY-SA 4.0)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 2 (2026-10-31): Đã đối chiếu 3 nguồn công thức thật đã mở kiểm chứng (Điện máy XANH, Hướng Nghiệp Á Âu, Lofita). Định lượng: giữ nguyên toàn bộ vì cơ sở quy đổi giữa các nguồn không thống nhất — nguồn ghi mì TƯƠI 50-67 g/bát trong khi dòng của file là mì trứng KHÔ 80 g (hai cơ sở trọng lượng khác nhau, không quy đổi chắc chắn); các dòng còn lại khớp khoảng nguồn: nhân hoành thánh quy đổi khoảng 70-75 g/bát so với tổng thịt xay + tôm 70 g của file, tôm ăn kèm 25-33 g/người so với 30 g của file, thịt xá xíu 25-50 g/người bao phủ dòng thịt nạc vai 30 g. Bất thường: bản phố cổ đầy đủ ở cả 3 nguồn còn có gan heo, bóng bì, trứng luộc, nấm hương và lá hẹ — file là bản rút gọn (dùng cải ngọt và hành lá); ghi nhận chờ phân xử, không thêm dòng. Phân loại đã rà soát, giữ nguyên. Phân xử bất thường LV2-002 (Phần A, 2026-10-31): GIỮ NGUYÊN — rà lại file: tôm và cải ngọt ĐÃ có dòng (điểm ở tổng hợp §5 là lỗi thời). Gan heo/bóng bì/trứng luộc/nấm hương/lá hẹ thuộc bản phố cổ đầy đủ ở cả 3 nguồn; file là bản rút gọn gia đình đã ghi nhận ở đợt 2 — giữ bản rút gọn, không thêm dòng biến thể.",
