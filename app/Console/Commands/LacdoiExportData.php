@@ -66,9 +66,91 @@ class LacdoiExportData extends Command
             ]);
         }
 
-        $this->info(sprintf('Đã xuất %d nguyên liệu, %d món.', count($index), count($dishIndex)));
+        // Hồ sơ hoa quả (FRUIT-005): định dạng riêng — JSON compact, khoá sắp
+        // xếp theo bảng chữ cái ở mọi cấp, không newline cuối file.
+        $fruitCount = 0;
+        foreach (\App\Models\Fruit::with(['ingredient', 'prices'])->orderBy('slug')->get() as $fruit) {
+            $this->writeCompactJson(base_path("data/fruits/{$fruit->slug}.json"), $this->fruitPayload($fruit));
+            $fruitCount++;
+        }
+
+        $this->info(sprintf('Đã xuất %d nguyên liệu, %d món, %d hồ sơ quả.', count($index), count($dishIndex), $fruitCount));
 
         return self::SUCCESS;
+    }
+
+    /** @return array<string, mixed> */
+    private function fruitPayload(\App\Models\Fruit $fruit): array
+    {
+        $prices = $fruit->prices->sortBy('id')->values()->map(function ($p) {
+            $row = [
+                'region_code' => $p->region_code,
+                'month' => $p->month,
+                'price_min' => $p->price_min,
+                'price_max' => $p->price_max,
+                'source_name' => $p->source_name,
+                'collected_at' => $p->collected_at?->toDateString(),
+            ];
+            if ($p->source_url !== null) {
+                $row['source_url'] = $p->source_url;
+            }
+
+            return $row;
+        })->all();
+
+        return [
+            'slug' => $fruit->slug,
+            'ingredient_slug' => $fruit->ingredient->slug,
+            'classification' => [
+                'group' => $fruit->classification_group,
+                'family' => $fruit->family,
+                'origin' => $fruit->origin,
+            ],
+            'grown_in' => $fruit->grown_in ?? [],
+            'availability' => [
+                'months' => $fruit->availability_months ?? [],
+                'main_season_months' => $fruit->main_season_months ?? [],
+                'availability_type' => $fruit->availability_type,
+            ],
+            'best_nutrition_window' => [
+                'months' => $fruit->best_nutrition_months ?? [],
+                'note' => $fruit->best_nutrition_note,
+            ],
+            'best_value_window' => [
+                'months' => $fruit->best_value_months ?? [],
+                'note' => $fruit->best_value_note,
+            ],
+            'pairing_cautions' => $fruit->pairing_cautions ?? [],
+            'selection_note' => $fruit->selection_note,
+            'storage_note' => $fruit->storage_note,
+            'prices' => $prices,
+            'needs_review' => $fruit->needs_review,
+            'reviewed_by' => $fruit->reviewed_by,
+            'reviewed_at' => $fruit->reviewed_at?->toDateString(),
+            'review_note' => $fruit->review_note,
+        ];
+    }
+
+    /** @param array<string, mixed> $payload */
+    private function writeCompactJson(string $path, array $payload): void
+    {
+        $sort = function ($value) use (&$sort) {
+            if (is_array($value)) {
+                if (! array_is_list($value)) {
+                    ksort($value);
+                }
+                return array_map($sort, $value);
+            }
+
+            return $value;
+        };
+
+        $json = json_encode(
+            $sort($payload),
+            JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_THROW_ON_ERROR,
+        );
+
+        file_put_contents($path, $json);
     }
 
     /** @return array<string, mixed> */

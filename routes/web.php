@@ -3,6 +3,7 @@
 use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\DishController;
+use App\Http\Controllers\Admin\FruitController as AdminFruitController;
 use App\Http\Controllers\Admin\IngredientController;
 use App\Http\Controllers\Admin\ReferenceFoodController;
 use App\Http\Controllers\Admin\RegionController;
@@ -16,6 +17,8 @@ Route::get('/', function () {
 Route::get('/tai-khoan', fn () => view('account'))->name('login');
 Route::get('/ho-so', fn () => view('profile'))->middleware('auth');
 Route::get('/mon/{slug}', fn () => view('dish'));
+Route::get('/hoa-qua', fn () => view('fruits'));
+Route::get('/hoa-qua/{slug}', fn () => view('fruit'));
 
 Route::prefix('api')->group(function () {
     Route::post('/register', [\App\Http\Controllers\PublicWeb\UserAuthController::class, 'register']);
@@ -39,6 +42,8 @@ Route::prefix('api')->group(function () {
     Route::get('/ingredients', [\App\Http\Controllers\PublicWeb\TaxonomyController::class, 'ingredients']);
     Route::get('/dishes', [\App\Http\Controllers\PublicWeb\CatalogController::class, 'index']);
     Route::get('/dishes/{dish:slug}', [\App\Http\Controllers\PublicWeb\CatalogController::class, 'show']);
+    Route::get('/fruits', [\App\Http\Controllers\PublicWeb\FruitController::class, 'index']);
+    Route::get('/fruits/{fruit:slug}', [\App\Http\Controllers\PublicWeb\FruitController::class, 'show']);
     Route::post('/shake', [\App\Http\Controllers\PublicWeb\CatalogController::class, 'shake']);
 });
 
@@ -61,6 +66,9 @@ Route::middleware(['auth', 'admin'])->prefix('admin/api')->group(function () {
     Route::post('/dishes/preview-nutrition', [DishController::class, 'previewNutrition']);
     Route::apiResource('dishes', DishController::class);
     Route::post('/dishes/{dish}/review', [DishController::class, 'review']);
+
+    Route::apiResource('fruits', AdminFruitController::class);
+    Route::post('/fruits/{fruit}/review', [AdminFruitController::class, 'review']);
     Route::get('/contributions', [\App\Http\Controllers\Admin\ContributionController::class, 'index']);
     Route::post('/contributions/{contribution}/review', [\App\Http\Controllers\Admin\ContributionController::class, 'review']);
     Route::post('/dishes/{dish}/compute', [DishController::class, 'compute']);

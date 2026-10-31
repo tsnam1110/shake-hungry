@@ -49,6 +49,12 @@
             <div id="catalog" class="grid grid-cols-2 gap-3"></div>
         </section>
 
+        <section class="mt-8">
+            <h2 class="font-semibold text-lg mb-2">🍎 Tháng này nên ăn quả gì?</h2>
+            <p class="text-sm text-neutral-500 mb-3">Quả đang vào vụ và giá hời nhất tháng này — vừa bổ vừa rẻ. <a href="/hoa-qua" class="text-orange-700 underline">Xem cả năm →</a></p>
+            <div id="fruit-month" class="grid grid-cols-2 gap-3"></div>
+        </section>
+
         <footer class="text-center text-xs text-neutral-400 mt-10">
             Số calo là khoảng ước tính từ dữ liệu USDA qua engine của Lắc Đói, kèm độ tin cậy — món chưa đủ dữ liệu sẽ không hiện số.
         </footer>
@@ -193,6 +199,33 @@ document.getElementById('shake-btn').addEventListener('click', async () => {
         btn.disabled = false; btn.textContent = '🎲 LẮC MÓN KHÁC';
     }
 });
+</script>
+<script>
+(async () => {
+    const m = new Date().getMonth() + 1;
+    const box = document.getElementById('fruit-month');
+    if (!box) return;
+    try {
+        let res = await fetch(`/api/fruits?month=${m}&value_month=${m}&per_page=60`, { headers: { 'Accept': 'application/json' } });
+        let data = await res.json();
+        let list = data.data ?? [];
+        if (list.length < 4) {
+            res = await fetch(`/api/fruits?month=${m}&per_page=60`, { headers: { 'Accept': 'application/json' } });
+            data = await res.json();
+            const extra = (data.data ?? []).filter(f => (f.main_season_months ?? []).includes(m) && !list.some(x => x.slug === f.slug));
+            list = [...list, ...extra];
+        }
+        box.innerHTML = list.slice(0, 8).map(f => `
+            <a href="/hoa-qua/${f.slug}" class="bg-white rounded-2xl shadow p-3 block hover:ring-2 hover:ring-orange-300 transition">
+                <div class="font-semibold text-sm">${f.name_vi}</div>
+                <div class="flex flex-wrap gap-1 mt-1">
+                    ${(f.main_season_months ?? []).includes(m) ? '<span class="text-xs bg-green-100 text-green-800 rounded-full px-2 py-0.5">Đang vụ chính</span>' : ''}
+                    ${(f.best_value_months ?? []).includes(m) ? '<span class="text-xs bg-amber-100 text-amber-800 rounded-full px-2 py-0.5">💰 Giá hời</span>' : ''}
+                    ${f.kcal_per_100g != null ? `<span class="text-xs text-neutral-500">${Math.round(f.kcal_per_100g)} kcal/100g</span>` : ''}
+                </div>
+            </a>`).join('') || '<p class="text-sm text-neutral-400">Chưa có dữ liệu quả cho tháng này.</p>';
+    } catch { /* khối phụ — lỗi thì bỏ qua, không ảnh hưởng phần Lắc */ }
+})();
 </script>
 </body>
 </html>
