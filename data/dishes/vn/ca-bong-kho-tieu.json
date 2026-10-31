@@ -131,7 +131,14 @@
       "note": "Của Kim Dung: cho 4 người, cá bống 600g, thắng đường màu cánh gián trong nồi đất — đối chiếu cá theo khẩu phần (150g)."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/ca-bong-kho-tieu.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): Đã mở kiểm chứng 3 nguồn công thức thật (Điện Máy Xanh, VietnamNet, Cookpad của Kim Dung) và đối chiếu định lượng theo khẩu phần. Định lượng: cá bống theo khẩu phần ở Điện Máy Xanh là 200g và ở Cookpad là 150g — hai nguồn chênh nhau hơn 30% nên không tạo đồng thuận; file 180g nằm giữa khoảng nguồn, giữ nguyên toàn bộ định lượng, không sửa dòng nào. Ghi nhận: nhiều biến thể nguồn kho cá bống cùng thịt ba chỉ hoặc thịt vai (khoảng 75–100g mỗi mẻ) và đôi khi thêm nước dừa; file không có các dòng này — đây là biến thể hợp lệ (bản Điện Máy Xanh cũng không có thịt), không tự thêm dòng theo quy tắc. Viết lại hoàn toàn recipe_steps bằng lời riêng (7 bước). Rà phân loại: loai:mon-chinh, cooking_method kho, region vn-south, meal_slots trưa/tối đều phù hợp — không sửa. Đạt Mức 2.",

@@ -128,7 +128,14 @@
       "note": "Công Thức Gia Đình: cá 500 g, cà chua 4 quả, hành tím, tỏi, nước mắm, đường; biến thể cho cá sống vào sốt nấu 20 phút, không chiên trước."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/ca-chim-sot-ca-chua.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [Đính chính 2026-10-31 — Phương án A/QA-002: dau-an 8 g → 3 g. Chỉ giữ phần dầu cho bước phụ có thật trong công thức (phi tỏi, xào cà chua + hành tây làm sốt rưới lên cá) — mức 3 g/khẩu phần là định lượng chế biến cho bước phi/xào nhanh, phần dầu này ăn vào cùng nhân/sốt. Dầu chiên chính không kê nữa: đã được engine mô hình hoá theo CALC-004.] Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 4 nguồn (xem recipe_sources). Phân xử định lượng: ca-chua 80 → 120 g — hai nguồn ghi rõ khẩu phần đều cao hơn file trên 50% (Cookbeo ~200 g/khẩu phần, ĐMX 125 g/khẩu phần), lấy 120 g thận trọng sát ĐMX; cá 200 g giữ nguyên (hai nguồn lệch ngược chiều quanh file). Bất thường ghi nhận chờ pha phân xử: dòng hanh-tay không nguồn nào dùng — 3/4 nguồn phi sốt bằng hành tím/hành khô mà file không có dòng hanh-tim; thì là có ở 2/4 nguồn, file thiếu. Phân xử bất thường LV2-003 (Phần A — LV2-004, 2026-10-31): BỎ dòng hanh-tay 20 g: 0/4 nguồn đã mở ở đợt 3 dùng hành tây cho món này. Thêm hanh-tim 5 g — 3/4 nguồn phi sốt bằng hành tím/hành khô. Thì là (2/4 nguồn) chưa thêm trong pha này — ghi nhận, chờ thêm bằng chứng.",

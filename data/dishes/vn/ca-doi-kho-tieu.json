@@ -145,7 +145,14 @@
       "note": "Bếp Xưa: cá đối kho nước dừa cho 4 người — 600 g cá, 300 ml nước dừa, đường trắng 1,5 muỗng canh (trang ghi nhận bằng chứng yếu hơn hai nguồn trên)."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/ca-doi-kho-tieu.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — đổi đường thốt nốt 8 thành đường trắng 3 (thốt nốt 0/3 nguồn và lệch +120–470% so với tỉ lệ nguồn), ớt 2→4, tiêu 1→1,5, mắm 10→12, thêm nước dừa 60 (2/2 họ nguồn chính), hành lá 3 và nước màu 3 (chưa có số).] [Đính chính LV2-004: recipe_sources[0] ban đầu ghi nhầm một URL Điện Máy XANH không kiểm chứng được — đã thay bằng nguồn Tripi đã mở trong vòng nghiên cứu.]",

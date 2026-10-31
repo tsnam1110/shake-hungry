@@ -107,7 +107,14 @@
       "note": "Gia Vị Hạnh Phúc: cá cơm 300 g; nước mắm 3 thìa canh, đường 3 thìa canh (tỉ lệ ~15 g mắm và ~12 g đường/100 g cá); cá áo bột chiên giòn trước khi rim."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/ca-com-rim.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 3 nguồn (cả 3 không ghi số khẩu phần — phân xử theo tỉ lệ trên 100 g cá). Phân xử định lượng: nuoc-mam-truyen-thong 8 → 15 g — 2/3 nguồn đồng thuận ~15 g/100 g cá, file thấp hơn ~47%; đường thốt nốt 10 g giữ nguyên (dải nguồn 6–12 g; nguồn dùng đường trắng, file dùng thốt nốt là thay thế hợp lệ). Bất thường ghi nhận: hành tím có ở 2/3 nguồn và tiêu ở 2/3 nguồn, file thiếu cả hai; kỹ thuật cũ của file thiếu bước ướp + chiên sơ (3/3 nguồn đều có) — bước đã viết lại.",
