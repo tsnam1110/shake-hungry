@@ -129,7 +129,14 @@
       "note": "Thực Thần: ghẹ rang me, chiên ghẹ trước khi rang sốt me cho thịt săn."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/ghe-rang-me.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — nước mắm 8→15, đổi ớt bột 1 thành ớt tươi 5, thêm tiêu 1 theo nguồn. Giữ đường thốt nốt dù nguồn dùng đường trắng/nâu — lượng nhỏ, ghi nhận để rà soát sau.]",

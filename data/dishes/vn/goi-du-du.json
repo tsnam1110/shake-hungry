@@ -169,7 +169,14 @@
       "note": "Hội Đầu Bếp Á Âu: đã đối chiếu tôm sú 300g, thịt ba chỉ 300g, rau răm, húng quế và hành phi, không có đậu que — ủng hộ các thay đổi của đợt này."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/goi-du-du.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. THIẾU NGUYÊN LIỆU: đu đủ xanh (slug du-du-xanh — kho hiện chỉ có đu đủ chín, không thay thế được) — cần bổ sung vào kho. [LV2-006 đợt 6: nâng Mức 2 — tôm sú 40 → 50g, thịt 30 → 50g (giữ slug nạc vai của file; nguồn nghiêng về ba chỉ nhưng nạc vẫn có căn cứ nguồn — ghi nhận khác biệt); BỎ đậu que (0/4 nguồn — lẫn từ som-tum Thái); bổ sung rau răm 5g (slug chưa có số, dòng rau thơm nhỏ thuộc nhóm missing của engine) và hành phi 5g.]",

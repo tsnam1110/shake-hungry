@@ -114,7 +114,14 @@
       "note": "Ẩm thực 10 phút — bếp trưởng Trần Thanh Mai, cho 2–3 người: thịt gà (đùi/má đùi) 500g, sả 3 cây, ớt 2–3 quả, hành khô 1 củ, tỏi 2 tép; ướp nước mắm, đường, bột nghệ và một nửa sả ớt băm 15–20 phút, xào lửa lớn cho săn, không ra nước — đối chiếu gà 167–250g/người (còn xương)."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/ga-xao-sa-ot.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nâng Mức 2 đợt 2 (2026-10-31): Đối chiếu 3 nguồn công thức đã mở kiểm chứng (xem recipe_sources). Định lượng: giữ nguyên toàn bộ — nguồn dùng đùi gà/thịt gà còn xương 167–250g/khẩu phần; quy về phần ăn được (trừ xương ~30%) còn ~115–175g, bao phủ ức gà không xương 150g của file (khác cơ sở cân, theo tiền lệ đợt 1 không so trực tiếp số còn xương với số thịt lọc). Sả 15g khớp Cookbeo (~5 nhánh/3 người); nước mắm, đường, dầu ăn nằm trong khoảng nguồn. Bất thường ghi nhận: cả 3 nguồn dùng gà đùi/có da thay vì ức gà; 3/3 nguồn có gừng hoặc bột nghệ/bột cà ri tạo màu và 1 nguồn có lá chanh — file không có các dòng gung/bot-nghe/la-chanh, chờ pha phân xử riêng. Bước nấu viết lại 6 bước. Phân xử bất thường LV2-002 (Phần A, 2026-10-31): GIỮ NGUYÊN. Ba nguồn dùng gừng HOẶC bột nghệ/bột cà ri tạo màu — ba lựa chọn khác nhau, không nguyên liệu nào đạt đồng thuận để thêm; lá chanh 1 nguồn. Đậu phộng rang ở tổng hợp §5 không có trong note chi tiết của 3 nguồn đã đối chiếu — không xử lý theo tóm tắt. Ức gà không xương so với đùi gà có da của nguồn: khác cơ sở cân, theo tiền lệ không đổi ánh xạ.",

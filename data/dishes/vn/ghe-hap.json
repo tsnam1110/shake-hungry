@@ -114,7 +114,14 @@
       "note": "Nấu Ăn Không Khó (tác giả Túc Túc): ghẹ 500 g, bia 1 lon, sả 4 nhánh; kèm công thức muối ớt đỏ chấm ghẹ."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/ghe-hap.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt) Nâng Mức 2 đợt 1 (2026-10-31): đã đối chiếu 3 nguồn công thức thật (Cookbeo, Đảo Hải Sản, Nấu Ăn Không Khó). Định lượng: ghẹ 300 g/khẩu phần (2 con) khớp Cookbeo (600–700 g cho 2 khẩu phần → 300–350 g); sả 10 g tương đương 1–3 nhánh/khẩu phần theo 2 nguồn còn lại — giữ nguyên mọi định lượng. Thời gian hấp trong bước nấu lấy theo đa số nguồn (10–15 phút tuỳ cỡ ghẹ) thay cho mức 15–20 phút ở bản cũ. Bước nấu viết lại 6 bước.",

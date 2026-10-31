@@ -153,7 +153,14 @@
       "note": "Gia đình & Sức khỏe đời sống: đã đối chiếu gỏi gà xé phay có 1 củ hành tây, 1/2 củ cà rốt, rau răm và lạc rang giã dập rắc sau khi trộn — ủng hộ các thay đổi của đợt này."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/goi-ga.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-006 đợt 6: nâng Mức 2 — hành tây 40 → 100g (nguồn 130–150g thuộc biến thể lấy hành tây làm chính; file là bản gà làm chính với khẩu phần 250g nên lấy 100g là mức nén có ghi hồ sơ), lạc rang 15 → 25g, bổ sung cà rốt 25g (2 nguồn).]",

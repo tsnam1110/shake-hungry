@@ -105,7 +105,14 @@
       "url": "https://blogthanhcong.edu.vn/top-16-mon-rim-kho-ngon-va-cach-che-bien-don-gian-chi-em-noi-tro-kho-long-bo-qua/"
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/ga-rim-nuoc-dua.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-004 đợt 4: thử nâng Mức 2 — GIỮ MỨC 1 vì lệch định danh: file là gà rim nước mắm/nước màu, nhưng 3/3 nguồn mở được (dienmayxanh.com/vao-bep/cach-nau-ga-roti-nuoc-dua-01672; saigonesebaguette.vn/cach-nau-ga-roti-nuoc-dua; congthucgiadinh.com/mon-an/ga-roti-nuoc-dua) đều là gà rôti nước dừa ướp nước tương 20–30 phút không có nước mắm; 2 trang rim-mắm thật (monngonmoingay.com/cong-thuc/ga-rim-nuoc-mam; daotaobeptruong.vn/cach-lam-ga-rim-nuoc-mam) bị chặn 429 ở vòng tra cứu. Chờ phân xử hoặc thử lại khi hết chặn.] [LV2-005 đợt 5: nâng Mức 2 — 3 nguồn đã mở kiểm chứng. Phân xử định danh: tên 'gà rim nước dừa' trong nguồn gồm nhánh ướp nước mắm (BlueStone, Toplist — đúng hồ sơ vị của file) và nhánh ướp nước tương kiểu rôti (Tripi); file thuộc nhánh mắm nên giữ định danh 'Đùi gà rim nước dừa', không đổi sang rôti. Sửa định lượng theo đồng thuận nguồn: nước dừa tươi 100→70 g/khẩu phần, nước mắm 10→6 g/khẩu phần; đường giữ nguyên vì không có đồng thuận ≥2 nguồn cho thấy lệch quá ngưỡng.]",
