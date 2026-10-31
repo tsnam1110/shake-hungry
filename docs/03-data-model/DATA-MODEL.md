@@ -404,6 +404,8 @@ Kết quả tổng hợp tính vị từ nguyên liệu lên món. Do máy tính
 | `activity_level` | varchar(16) | ánh xạ sang PAL, xem CALORIE-ENGINE §5 |
 | `diet_type` | varchar(24) null | `chay`, `chay-truong`, `low-carb`… |
 | `excluded_ingredients` | json | dị ứng / không ăn được — **lọc cứng** ở engine gợi ý |
+| `preferred_region_id` | bigint null | vùng miền yêu thích — điền sẵn bộ lọc vùng khi lắc (UI-011, migration 2026_10_31_100005) |
+| `target_kcal_per_meal` | smallint unsigned null | kcal mục tiêu mỗi bữa — điền sẵn khi lắc, là đầu vào mềm của engine (UI-011) |
 
 > **Về `sex`:** công thức Mifflin–St Jeor có hệ số khác nhau theo giới tính sinh học. Khi người dùng
 > chọn `unspecified`, dùng công thức Katch–McArdle nếu có % mỡ, nếu không thì lấy trung bình hai hệ

@@ -112,6 +112,17 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > **sai** — đã sửa ở UI-010: dự án dùng Blade + JavaScript thuần, chưa từng
 > dùng Livewire.
 
+> ## ⚠️ Đính chính lần 9, 2026-10-31 — tuỳ chọn lắc lưu ở hồ sơ (UI-011) + thẻ đồng nhất (UI-012)
+>
+> Theo yêu cầu của chủ dự án: khối Lắc đưa toàn bộ lựa chọn lên trên nút Lắc, hiển thị
+> giờ hiện tại và tự gợi ý bữa theo giờ. `user_profiles` có thêm `preferred_region_id`
+> và `target_kcal_per_meal` (migration `2026_10_31_100005`, DATA-MODEL đã cập nhật) —
+> trang chủ điền sẵn tuỳ chọn từ hồ sơ và lưu ngược khi người dùng đổi tại khối Lắc;
+> các trường này là đầu vào mềm của engine, **không** thay đổi lọc cứng dị ứng (QT-5/
+> engine 3 tầng giữ nguyên). Component món ăn/nguyên liệu/hoa quả chuyển sang hệ thẻ
+> đồng nhất `ld-dcard` với ô ảnh 4:3 (đang dùng ảnh mẫu SVG trong `public/images/`,
+> thay 1-1 khi có ảnh thật theo quyết định Q4/Q5).
+
 **Trạng thái thực tế, kiểm ngày 2026-10-31 (đã chạy lại toàn bộ lệnh kiểm chứng):**
 
 | Hạng mục | Thực tế | Kiểm bằng |
@@ -122,7 +133,7 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 | Bảng tham chiếu | ✅ SR Legacy **7.793** + Cooking Yields R2 **163** + FNDDS **333 Food Code / 1.810 SR Links** + `regions-vn.json` + `wikidata-vn-dishes.json`; **nguyên liệu gốc có số 242/255 (94,9%)** | `data/reference/MANIFEST.json` |
 | Hệ số DATA-004/008 | ✅ khung xong: `edible_portion_pct` (3 có nguồn, 16 null chờ cân), `default_yield_factor` (9 thịt suy có nguồn) | `edible_portion_note` / `default_yield_factor_note` từng file |
 | **Kiểm chứng engine** | 🔵 lần 2 (2026-09-01, engine **1.1.0**): **89,7% trong ±20%** (không đổi), MAPE 3,9%, và **% tham chiếu nằm trong khoảng 1,0% → 80,4%**. Hệ số hấp thụ dầu đã có theo nhóm (CALC-004, áp 2026-10-31) nên **nhóm chiên đã tính được**; vẫn chặn: **QA-002 chưa chạy** (chưa đo trên món Việt) và **nhóm hấp lệch −21%** (Cooking Yields R2 **0 dòng thuỷ sản**) | [nhật ký đo](docs/06-nutrition/ACCURACY-SPEC.md) |
-| **Code** | ✅ **Laravel 13.29 + MySQL 8.0** — 19 migration (đủ R1–**R10**), engine calo **1.1.0**, **trang quản trị antd 6 + React 19 tại `/admin`**, **trang người dùng hoàn chỉnh** (Lắc + lọc theo nhãn + tài khoản + TDEE + nhật ký + đóng góp), **85 test Pest xanh** | `php artisan migrate:fresh --seed; vendor\bin\pest --no-coverage` |
+| **Code** | ✅ **Laravel 13.29 + MySQL 8.0** — 19 migration (đủ R1–**R10**), engine calo **1.1.0**, **trang quản trị antd 6 + React 19 tại `/admin`**, **trang người dùng hoàn chỉnh** (Lắc + lọc theo nhãn + tài khoản + TDEE + nhật ký + đóng góp), **90 test Pest xanh** | `php artisan migrate:fresh --seed; vendor\bin\pest --no-coverage` |
 | **CI** | 🔵 `.github/workflows/tests.yml` (GitHub Actions) — repo nay ở **GitHub** nên đã đúng nền; **chưa chạy lần nào vì code chưa push** (đang chờ chủ dự án cấp credential push) | `git remote -v` |
 | Chưa có | cột embedding (REC-002), Foundation Foods, rà soát độc lập ING-003, tích hợp LLM trong trang quản trị (ADM-006 — chờ chủ dự án chốt nhà cung cấp/API key) | [ROADMAP](docs/05-tasks/ROADMAP.md) |
 | Sao lưu | 🔵 `origin` = `https://github.com/tsnam1110/shake-hungry.git`, branch `dev`; nhánh local đang ahead origin nhiều commit (toàn bộ đợt 2026-10-30/31) — **push chờ chủ dự án cấp credential** (token hoặc khoá SSH) | `git status -sb` |

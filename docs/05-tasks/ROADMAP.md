@@ -156,6 +156,7 @@ kiểm chứng TEST-002**; `migrate:fresh --seed` dựng lại đúng toàn bộ
 | [ADM-005](./tasks/ADM-005.md) | Cảnh báo trùng món bằng độ giống trigram ngay khi gõ | Backend | ✅ | ADM-003 | 2026-10-30 |
 | [ADM-006](./tasks/ADM-006.md) | Tích hợp LLM đề xuất nguyên liệu + ánh xạ | Backend | ⬜ | ADM-004 | — |
 | [ADM-007](./tasks/ADM-007.md) | **Đo và đạt ≤5 phút/món** — cổng chặn sang GĐ3 | Nghiệm thu | ⬜ | ADM-006 | — |
+| [ADM-008](./tasks/ADM-008.md) | Thống kê số lượng bản ghi + bộ lọc danh sách + trang tổng quan | Backend | ✅ | ADM-001 | 2026-10-31 |
 
 **DoD GĐ2:** đạt toàn bộ 8 yêu cầu Y1–Y8 ở [DATA-PIPELINE §4](../04-data-sources/DATA-PIPELINE.md).
 **Chưa đạt Y1 (≤5 phút/món) thì không được mở GĐ3.**
@@ -203,6 +204,8 @@ kiểm chứng TEST-002**; `migrate:fresh --seed` dựng lại đúng toàn bộ
 | [UI-008](./tasks/UI-008.md) | Hồ sơ — trung tâm quản trị của người dùng | Frontend | ✅ | UI-004 | 2026-10-31 |
 | [UI-009](./tasks/UI-009.md) | Trang Hoa quả theo cùng hệ thiết kế | Frontend | ✅ | UI-004 | 2026-10-31 |
 | [UI-010](./tasks/UI-010.md) | QA giao diện v2 + tài liệu | Frontend | ✅ | UI-005…UI-009 | 2026-10-31 |
+| [UI-011](./tasks/UI-011.md) | Khối Lắc: tuỳ chọn trên nút, gợi ý bữa theo giờ, tuỳ chọn lưu ở hồ sơ | Frontend + Backend | ✅ | UI-005, UI-008 | 2026-10-31 |
+| [UI-012](./tasks/UI-012.md) | Thẻ đồng nhất cho món ăn, nguyên liệu, hoa quả (sẵn sàng cho ảnh thật) | Frontend | ✅ | UI-004 | 2026-10-31 |
 
 **DoD GĐ4:** bấm Lắc ra món hợp bữa, không lặp món vừa ăn, hiển thị dinh dưỡng đúng quy tắc QT-5.
 
