@@ -162,7 +162,14 @@
       "note": "Cookbeo — súp cua biển (4 khẩu phần): cua hấp gỡ thịt (~22–26 g thịt/khẩu phần), trứng gà tạo vân, xào nhân trước khi nấu."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/sup-hai-san.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-007 đợt 7: nâng Mức 2 — 3 nguồn đã mở. BỔ SUNG trứng gà 15g — 4/4 công thức đã mở đều có trứng gà tạo vân, file thiếu hẳn (bất thường lớn nhất của món). GIỮ cua biển 30g kèm cơ sở cân: slug cua-bien là THỊT đã gỡ; 30g thịt ≈ 100–120g cua nguyên con/khẩu phần, khớp 2 nguồn (~20–26g). GIỮ tôm sú 40g kèm ghi nhận: 2 biến thể của 1 bài ĐMX cho 25g — chỉ 1 nhà xuất bản, chưa đủ ≥2 nguồn độc lập để sửa; chờ nguồn tôm thứ ba.]",
