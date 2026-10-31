@@ -132,9 +132,9 @@
       "note": "PasGo: đối chiếu tỉ lệ trứng cút/thịt và nước dừa theo nồi kho."
     },
     {
-      "url": "https://thuvienso.com.vn/upload/library/260875/preview/thit-kho-trung-cut-260875.pdf",
-      "accessed": "2026-10-31",
-      "note": "Thư Viện Số (tài liệu công thức): thịt kho trứng cút có tỏi và hành lá."
+      "url": "https://bepxua.vn/cach-lam-thit-kho-trung-cut-an-la-me/",
+      "accessed": "2026-11-01",
+      "note": "Bếp Xưa: thịt kho trứng cút với nước dừa, 4 người — thịt ba rọi 500g (125g/khẩu phần), trứng cút 30 quả (7,5 quả/khẩu phần), nước dừa tươi 400ml (100ml/khẩu phần — khớp file 90g)."
     }
   ],
   "media": [
@@ -147,7 +147,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — trứng cút 80→40 (số cũ cao gấp đôi tỉ lệ nguồn), mắm 10→5, nước dừa 60→90, thêm tỏi 3, hành lá 3, dầu 5 và ớt 2 tuỳ chọn.]",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — trứng cút 80→40 (số cũ cao gấp đôi tỉ lệ nguồn), mắm 10→5, nước dừa 60→90, thêm tỏi 3, hành lá 3, dầu 5 và ớt 2 tuỳ chọn.] [AUDIT-FIX 2026-11-01 — PX-12 (AUDIT-002): nguồn PDF Thư Viện Số đã chết 404 (gỡ) — thay bằng Bếp Xưa (đã mở kiểm chứng). Cộng Hướng Nghiệp Á Âu + PasGo còn sống = 3 nguồn, cổng khôi phục. Đối chiếu lại định lượng: GIỮ NGUYÊN — nước dừa 90g khớp nguồn thay thế; thịt 100g (nguồn thay thế 125g, lệch 25% trong ngưỡng); trứng cút giữ 40g (~4 quả) dù Bếp Xưa cho 7,5 quả/khẩu phần — hai nguồn sống còn lại (đặc biệt PasGo, vốn là căn cứ tỉ lệ trứng của file) ủng hộ mức file, một nguồn mới đơn lẻ không lật phân xử của hai nguồn; ghi nhận chênh lệch tại đây. Giữ Mức 2.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -111,14 +111,14 @@
       "note": "VinID: canh khoai tây sườn, hầm sườn trước cho mềm rồi mới cho khoai."
     },
     {
-      "url": "https://bunbobae.com/cach-nau-canh-khoai-tay-suon",
-      "accessed": "2026-10-31",
-      "note": "Bún Bò Bae (bản nồi chậm): tỉ lệ sườn/khoai/cà rốt theo nồi canh gia đình."
+      "url": "https://cookidoo.es/recipes/recipe/es/r667725",
+      "accessed": "2026-11-01",
+      "note": "Cookidoo (Vorwerk) 'Canh khoai tây nấu sườn', 4 khẩu phần: khoai tây 500g (125g/khẩu phần), sườn heo 400g (100g — khớp tuyệt đối với file), cà rốt 100g (25g)."
     },
     {
-      "url": "https://thuvienso.com.vn/upload/library/511497/preview/canh-khoai-tay-suon-511497.pdf",
-      "accessed": "2026-10-31",
-      "note": "Thư Viện Số (tài liệu công thức): canh khoai tây sườn có hành tím phi và rau mùi."
+      "url": "https://tripi.vn/blog/vi/kinh-nghiem-hay/huong-dan-nau-canh-suon-khoai-tay-ngon-mieng-bo-duong-cho-ca-gia-dinh-tripi",
+      "accessed": "2026-11-01",
+      "note": "Tripi: canh sườn khoai tây cho 3–4 người — khoai tây 1.000g (250–333g/khẩu phần, cao bất thường), sườn 500g (125–167g), cà rốt 200g (50–67g)."
     }
   ],
   "media": [
@@ -131,7 +131,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — sườn 70→100, cà rốt 30→50, thêm hành tím 3 (3/3), dầu 3 (2/3) và rau mùi 2 (2/3) theo tỉ lệ nồi canh của các nguồn.]",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — sườn 70→100, cà rốt 30→50, thêm hành tím 3 (3/3), dầu 3 (2/3) và rau mùi 2 (2/3) theo tỉ lệ nồi canh của các nguồn.] [AUDIT-FIX 2026-11-01 — PX-04 (AUDIT-002): hai nguồn Bún Bò Bae và PDF Thư Viện Số đã chết 404 — thay bằng Cookidoo + Tripi (cộng VinID còn sống = 3 nguồn). Đối chiếu lại định lượng: GIỮ NGUYÊN — sườn 100g khớp tuyệt đối Cookidoo; khoai tây 100g (Cookidoo 125g lệch 25% trong ngưỡng giữ; Tripi là ngoại lệ cao bất thường); cà rốt 50g được Tripi + VinID ủng hộ (Cookidoo thấp hơn ở 25g, thiểu số). Cổng 3 nguồn khôi phục, giữ Mức 2.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

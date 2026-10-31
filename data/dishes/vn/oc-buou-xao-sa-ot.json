@@ -135,14 +135,14 @@
       "note": "Bếp Trưởng Á Âu: ốc bươu xào sả ớt — lượng ốc trong nguồn là theo đĩa, không phải cả công thức như số cũ."
     },
     {
-      "url": "https://www.bluestone.com.vn/blogs/vao-bep/oc-buou-xao-sa-ot",
-      "accessed": "2026-10-31",
-      "note": "BlueStone: ốc bươu xào sả ớt có gừng và nghệ tạo màu."
+      "url": "https://bloganngon.edu.vn/cach-lam-oc-buou-xao-sa-ot-lai-rai-ngay-cuoi-tuan/",
+      "accessed": "2026-11-01",
+      "note": "Blog Ăn Ngon 'Ốc bươu xào sả ớt lai rai ngày cuối tuần' — slug cũ /oc-xao-sa-ot không mở được ở cả AUDIT-002 và AUDIT-FIX (lỗi fetch, không mã HTTP) nên thay bằng trang chuyên biệt này của cùng site (đã mở kiểm chứng): mục 3 'xào sả ớt bột nghệ' dùng thịt ốc bươu 300g, sả 3 cây, gừng 3g, lá chanh 2g, bột nghệ. Cùng huyết thống công thức với Nấu Chuẩn Ăn Ngon — ghi nhận minh bạch."
     },
     {
-      "url": "https://bloganngon.edu.vn/oc-xao-sa-ot",
-      "accessed": "2026-10-31",
-      "note": "Blog Ăn Ngon: đối chiếu tỉ lệ sả và thời gian xào ốc vừa chín tới."
+      "url": "https://nauchuananngon.vn/cach-xao-oc-buou",
+      "accessed": "2026-11-01",
+      "note": "Nấu Chuẩn Ăn Ngon: thịt ốc bươu xào sả ớt cho ~4 người — thịt ốc 300g (75g/khẩu phần), sả 3 cây (0,75 cây/khẩu phần), gừng 3g/mẻ. Cùng huyết thống với mục 3 của Blog Ăn Ngon nên hai nguồn tính là một dòng đối chiếu cho lượng thịt ốc."
     }
   ],
   "media": [
@@ -155,7 +155,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — ốc 250→100 (số cũ là lượng cả công thức, nguồn tính theo đĩa), sả 15→20, thêm gừng 4 và bột nghệ 1 (2/3); serving 260→170.]",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — ốc 250→100 (số cũ là lượng cả công thức, nguồn tính theo đĩa), sả 15→20, thêm gừng 4 và bột nghệ 1 (2/3); serving 260→170.] [AUDIT-FIX 2026-11-01 — PX-06 (AUDIT-002): nguồn BlueStone đã chết 404 (gỡ); nguồn Blog Ăn Ngon đổi sang trang chuyên biệt mở được của cùng site; bổ sung Nấu Chuẩn Ăn Ngon. Cộng Bếp Trưởng còn sống = cổng 3 nguồn khôi phục (hai nguồn mới cùng một huyết thống — đã công khai ở ghi chú nguồn). Đối chiếu lại định lượng: GIỮ NGUYÊN — thịt ốc 100g (dòng nguồn mới cho 75g/khẩu phần, lệch 25% trong ngưỡng giữ; phân xử theo đĩa của Bếp Trưởng giữ nguyên), sả 20g (nguồn mới tính theo cây, không quy đổi gram được), gừng 4g giữ dù dòng nguồn mới ghi 3g/mẻ (số theo mẻ bất thường thấp so với chính trang Blog Ăn Ngon ở mục ốc nguyên con: 10g/1kg ốc — ghi nhận chênh lệch, không sửa theo một dòng nguồn đơn lẻ). Giữ Mức 2.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

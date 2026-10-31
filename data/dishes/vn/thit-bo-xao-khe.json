@@ -140,9 +140,9 @@
       "note": "ToyenXin (trang 2, cùng họ nguồn với trang 1): đối chiếu trong họ — có ớt và hành tím."
     },
     {
-      "url": "https://tripi.vn/blog/vi/kinh-nghiem-hay/cach-lam-mon-bo-xao-chua-ngot",
-      "accessed": "2026-10-31",
-      "note": "Tripi: biến thể bò xào chua ngọt — đối chiếu kỹ thuật xào bò với vị chua, không dùng cho định lượng khế."
+      "url": "https://cookpad.com/vn/cong-thuc/6662579",
+      "accessed": "2026-11-01",
+      "note": "Cookpad (Bếp của Quỳnh) 'Bò Xào Khế': thịt bò thăn 200g, khế 5 trái vừa (trang ghi theo trái, không gram, không ghi số khẩu phần) — đúng biến thể bò xào khế; chỉ đối chiếu cấu trúc món và lượng bò theo mẻ, không dùng đối chiếu gram khế."
     }
   ],
   "media": [
@@ -155,7 +155,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 có điều kiện về họ nguồn — 2/3 trang thuộc cùng họ ToyenXin, trang Tripi là biến thể chua ngọt; thêm ớt tươi 3 (3/3 trang) và hành tím 5 (2/3), tỏi 8→5 theo tỉ lệ ướp của nguồn.]",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 có điều kiện về họ nguồn — 2/3 trang thuộc cùng họ ToyenXin, trang Tripi là biến thể chua ngọt; thêm ớt tươi 3 (3/3 trang) và hành tím 5 (2/3), tỏi 8→5 theo tỉ lệ ướp của nguồn.] [AUDIT-FIX 2026-11-01 — PX-09 (AUDIT-002): nguồn Tripi đã chết 404 (gỡ) — thay bằng Cookpad 'Bò Xào Khế' (đã mở kiểm chứng, độc lập với họ ToyenXin). Cộng 2 nguồn ToyenXin còn sống = 3 nguồn đã ghi, cổng khôi phục. Đối chiếu lại định lượng: GIỮ NGUYÊN — bò 120g (mẻ Cookpad 200g, nếu tính 2 khẩu phần → 100g, lệch 17% trong ngưỡng); khế 80g giữ vì nguồn thay thế không cho gram khế. Giữ Mức 2.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

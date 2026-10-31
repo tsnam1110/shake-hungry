@@ -142,25 +142,32 @@
   ],
   "recipe_sources": [
     {
-      "url": "https://cookpad.com/vn/recipes/496998",
-      "accessed": "2026-10-31",
-      "note": "Cookpad (bản tiếng Anh): bánh canh Nam Phổ — nhân tôm thịt có giò sống, nêm mắm ruốc Huế."
-    },
-    {
-      "url": "https://tranbichnga.com/banh-canh-nam-pho",
-      "accessed": "2026-10-31",
-      "note": "Trần Bích Nga: bánh canh Nam Phổ chuẩn Huế, chả tôm thịt quết giò sống, nước dùng tôm cua."
-    },
-    {
       "url": "https://kinhdoamthuc.com/?p=2420",
       "accessed": "2026-10-31",
       "note": "Kinh Đô Ẩm Thực: đối chiếu tỉ lệ bột năng trong sợi và mắm ruốc trong nước dùng."
+    },
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-nau-banh-canh-nam-pho-thom-ngon-la-mieng-dam-da-vi-hue-07914",
+      "accessed": "2026-11-01",
+      "note": "Điện Máy XANH: bánh canh Nam Phổ cho 5 người — tôm 200g (40g/khẩu phần), thịt băm 300g (60g), giò sống 200g (40g), sợi từ bột gạo 200g + bột năng 130g; bản này không có cua. Trang Tripi đăng cùng một công thức (sao chép) nên chỉ ghi ĐMX làm đại diện họ này."
+    },
+    {
+      "url": "https://pasgo.vn/blog/banh-canh-nam-pho-co-do---phuc-tieng-thom-ngon-2206",
+      "accessed": "2026-11-01",
+      "note": "PasGo: bánh canh Nam Phổ cổ truyền làng Nam Phổ (Phú Vang, Huế) — tôm 300g, cua 300g, thịt ba chỉ 300g (tỉ lệ 1:1:1), sợi bột gạo : bột lọc 3:1; trang không ghi số người ăn nên chỉ đối chiếu tỉ lệ, không quy đổi khẩu phần. Nguồn độc lập duy nhất có cua với định lượng gram."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/banh-canh-nam-pho.webp",
+      "license": "cc-by-sa-4.0",
+      "attribution": "Christopher Crouzet / Wikimedia Commons (CC BY-SA 4.0)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — tách thịt xay 40 thành thịt xay 25 + giò sống 25 (3/3 nguồn đều quết giò sống; giò sống chưa có số nên món tạm mất phần calo của dòng này đến khi nguyên liệu có số), thêm mắm ruốc 2 (4/5 trang nghiên cứu) và cua bể 50 tuỳ chọn (3/5), bột năng 8→12. Dầu điều: giữ dầu ăn, ghi nhận nguồn thắng dầu từ hạt điều màu (slug hat-dieu-mau) — chưa đổi dòng.]",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — tách thịt xay 40 thành thịt xay 25 + giò sống 25 (3/3 nguồn đều quết giò sống; giò sống chưa có số nên món tạm mất phần calo của dòng này đến khi nguyên liệu có số), thêm mắm ruốc 2 (4/5 trang nghiên cứu) và cua bể 50 tuỳ chọn (3/5), bột năng 8→12. Dầu điều: giữ dầu ăn, ghi nhận nguồn thắng dầu từ hạt điều màu (slug hat-dieu-mau) — chưa đổi dòng.] [AUDIT-FIX 2026-11-01 — PX-03 (AUDIT-002): hai nguồn Cookpad 496998 (đã xoá bài) và Trần Bích Nga đã chết 404 — thay bằng Điện Máy XANH + PasGo (cộng nguồn Kinh Đô Ẩm Thực còn sống = 3 họ độc lập). Đối chiếu lại định lượng: GIỮ NGUYÊN — tôm 50g (ĐMX 40g, lệch 20%, trong ngưỡng; họ công thức gốc của file quy đổi 4 người cũng cho 50g), thịt xay 25g + giò sống 25g (ĐMX cho tổng thịt+giò 100g/khẩu phần nhưng không có cua; file có cua 50g nên tổng đạm/khẩu phần hai bộ tương đương ~140–150g), cua 50g được tỉ lệ 1:1:1 của PasGo ủng hộ. Cổng 3 nguồn khôi phục, giữ Mức 2.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

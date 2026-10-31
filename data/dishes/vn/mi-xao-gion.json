@@ -164,7 +164,7 @@
     {
       "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-mi-xao-gion-23356",
       "accessed": "2026-10-31",
-      "note": "Điện Máy XANH: kỹ thuật chiên mì giòn và xào topping hải sản chan lên mì."
+      "note": "Điện Máy XANH: kỹ thuật chiên mì giòn và xào topping hải sản chan lên mì. — AUDIT-FIX 2026-11-01: mở lại vẫn lỗi fetch không mã HTTP (như AUDIT-002) — CHƯA KẾT LUẬN, không tính vào số nguồn sống xác nhận."
     },
     {
       "url": "https://bepxua.vn/cong-thuc-lam-mi-xao-gion-hai-san-ngon-tuyet/",
@@ -172,15 +172,27 @@
       "note": "Bếp Xưa: mì xào giòn hải sản — lượng tôm, mực theo đĩa lớn cao hơn hẳn bản cũ của kho."
     },
     {
-      "url": "https://xaydungso.vn/blog/cach-lam-mi-xao-gion-vi-cb.html",
-      "accessed": "2026-10-31",
-      "note": "Xây Dựng Số: đối chiếu tỉ lệ dầu hào trong sốt xào."
+      "url": "https://besttorontopho.medium.com/how-to-prepare-stir-fried-crispy-egg-noodle-with-seafood-m%C3%AC-x%C3%A0o-gi%C3%B2n-%C4%91%E1%BB%83-bi%E1%BB%83n-8c3f27a0c19e",
+      "accessed": "2026-11-01",
+      "note": "Toronto Pho (Medium, 2025): mì xào giòn hải sản cho 2–3 người — mì trứng tươi 200g, tôm 100g, mực 100g (33–50g/khẩu phần). Biến thể chỉ hải sản (không thịt/gan) nên chỉ đối chiếu mì/tôm/mực. Các bản tripi.vn và sachnauan.net trùng nguyên văn họ công thức ĐMX/BHX nên không ghi — không độc lập."
+    },
+    {
+      "url": "https://nauankhongkho.vn/blog/cach-lam-mi-xao-gion-hai-san-day-ap-thit-tha-rau-qua-an-cho-da-them-zljzd7mMVVYA",
+      "accessed": "2026-11-01",
+      "note": "Nấu Ăn Không Khó: mì xào giòn hải sản có tim + gan heo — tôm 200g, mực 200g, tim heo 200g, gan heo 100g/mẻ (trang không ghi số khẩu phần; chỉ đối chiếu tỉ lệ và biến thể có gan)."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/mi-xao-gion.webp",
+      "license": "cc-by-sa-4.0",
+      "attribution": "HungryKya / Wikimedia Commons (CC BY-SA 4.0)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt).  [LV2-004 đợt 4: nâng Mức 2 — tôm 30→75, mực 25→75, dầu hào 6→15 theo đĩa hải sản của nguồn (bằng chứng định lượng của món này mỏng hơn mặt bằng đợt — 1 nguồn lượng hoá rõ — đã đối chiếu chéo tỉ lệ sốt). Bất thường giữ nguyên: súp lơ 0/3 nguồn (giữ vì phổ biến trong thực tế quán ăn) và gan heo tuỳ chọn 0/3 nguồn lượng hoá.]",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt).  [LV2-004 đợt 4: nâng Mức 2 — tôm 30→75, mực 25→75, dầu hào 6→15 theo đĩa hải sản của nguồn (bằng chứng định lượng của món này mỏng hơn mặt bằng đợt — 1 nguồn lượng hoá rõ — đã đối chiếu chéo tỉ lệ sốt). Bất thường giữ nguyên: súp lơ 0/3 nguồn (giữ vì phổ biến trong thực tế quán ăn) và gan heo tuỳ chọn 0/3 nguồn lượng hoá.] [AUDIT-FIX 2026-11-01 — PX-07 (AUDIT-002): nguồn Xây Dựng Số đã chết 404 (gỡ); nguồn Điện Máy XANH mở lại vẫn lỗi fetch không mã HTTP — chưa kết luận, không tính vào nguồn sống. Bổ sung Toronto Pho (Medium) + Nấu Ăn Không Khó; cộng Bếp Xưa còn sống = 3 nguồn sống xác nhận, cổng khôi phục. Đối chiếu lại định lượng: GIỮ NGUYÊN — tôm/mực 75g theo phân xử Bếp Xưa (lượng theo đĩa lớn); Toronto Pho cho khẩu phần hải sản nhẹ hơn (33–50g) và thiếu thịt/gan, Nấu Ăn Không Khó không có số khẩu phần — cả hai không đủ sức lật phân xử của nguồn sống còn lại. Giữ Mức 2.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

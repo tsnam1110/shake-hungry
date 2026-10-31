@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "kho",
-  "completeness_level": 2,
+  "completeness_level": 1,
   "meal_slots": [
     {
       "slot": "trua",
@@ -103,11 +103,6 @@
       "note": "Gia đình & SKĐS: đậu hũ kho chao (bản kèm cà tím) — neo tỉ lệ chao/đường cho sốt kho chao."
     },
     {
-      "url": "https://memart.vn/tin-tuc/blog2/dau-hu-nau-chao-vi-cb.html",
-      "accessed": "2026-10-31",
-      "note": "Memart: đậu hũ nấu chao — nguồn đúng món thứ hai."
-    },
-    {
       "url": "https://cachnaungon.com/2-cach-lam-nam-rom-kho-dau-hu-va-kho-chao-bat-com-thom-ngon-04316/",
       "accessed": "2026-10-31",
       "note": "Cách Nấu Ngon: nấm rơm kho chao — chỉ đối chiếu tỉ lệ chao trong món kho chao chay, không phải cùng món."
@@ -123,7 +118,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món chay thuần: toàn bộ nguyên liệu có origin thực vật/nấm, gia vị chỉ dùng nước tương/muối/chao đậu — không nước mắm, không hạt nêm/bột canh (nhóm COMPOSITE_ANIMAL tính là mặn), không trứng/sữa; nhãn diet suy từ thành phần phải ra chay và đã kiểm chứng trực tiếp trong DB sau seed (cổng G3/G6 của đợt).  [LV2-004 đợt 4: nâng Mức 2 CÓ ĐIỀU KIỆN về nguồn — chỉ 2/3 nguồn là đúng món đậu phụ kho chao, nguồn thứ ba là nấm kho chao dùng đối chiếu tỉ lệ chao; thêm hành tím 4 và ớt 2, đường 4→5.]",
+  "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món chay thuần: toàn bộ nguyên liệu có origin thực vật/nấm, gia vị chỉ dùng nước tương/muối/chao đậu — không nước mắm, không hạt nêm/bột canh (nhóm COMPOSITE_ANIMAL tính là mặn), không trứng/sữa; nhãn diet suy từ thành phần phải ra chay và đã kiểm chứng trực tiếp trong DB sau seed (cổng G3/G6 của đợt).  [LV2-004 đợt 4: nâng Mức 2 CÓ ĐIỀU KIỆN về nguồn — chỉ 2/3 nguồn là đúng món đậu phụ kho chao, nguồn thứ ba là nấm kho chao dùng đối chiếu tỉ lệ chao; thêm hành tím 4 và ớt 2, đường 4→5.] [AUDIT-FIX 2026-11-01 — PX-14 (AUDIT-002): HẠ MỨC 2 → 1. Nguồn Memart đã chết 404 (gỡ khỏi recipe_sources, giữ truy vết tại đây). Tìm nguồn thay thế đúng món đậu hũ KHO chao (có gram + số khẩu phần, độc lập): KHÔNG tìm được — trang Memart blog3 cùng tên món chỉ cho định lượng theo miếng/viên (không gram, không khẩu phần) nên không đạt chuẩn căn cứ; trang Điện Máy XANH 'đậu hũ hấp chao' sai phương pháp (hấp ≠ kho). Hai nguồn còn lại gồm một nguồn chỉ là họ kỹ thuật kho chao (Cách Nấu Ngon — nấm rơm kho chao) → không đủ 3 nguồn đúng món. Định lượng giữ nguyên; nâng lại khi có nguồn đúng món đạt chuẩn.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

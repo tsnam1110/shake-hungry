@@ -111,14 +111,14 @@
       "note": "Bếp Trưởng Á Âu: canh nghêu nấu bầu, luộc nghêu lấy nước trong rồi mới nấu bầu."
     },
     {
-      "url": "https://tripi.vn/blog/vi/kinh-nghiem-hay/top-10-cach-nau-canh-bau",
-      "accessed": "2026-10-31",
-      "note": "Tripi: tổng hợp canh bầu — bản nghêu dùng nghêu cả vỏ lượng lớn, quy về thịt nghêu theo hồ sơ nguyên liệu."
-    },
-    {
       "url": "https://cookpad.com/vn/cong-thuc/5077324",
       "accessed": "2026-10-31",
       "note": "Cookpad: canh bầu nấu nghêu, phi hành tím với dầu trước khi nấu."
+    },
+    {
+      "url": "https://tiphay.vn/bai-viet/cach-lam-canh-ngao-nau-bau-ngon-ngot-kho-quen-p3945.html",
+      "accessed": "2026-11-01",
+      "note": "TipHay (đăng lại nội dung Bách Hóa XANH — ghi nhận minh bạch): canh ngao nấu bầu cho 3–4 người — ngao nguyên vỏ 500g (125–167g cả vỏ/khẩu phần; quy về thịt theo hệ số tách vỏ của kho ~25–30% → ~31–50g thịt, bao phủ số file 37g)."
     }
   ],
   "media": [
@@ -131,7 +131,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — nghêu 70→37 (số cũ tính cả vỏ; nguồn dùng ~250 g nghêu cả vỏ/khẩu phần, tỉ lệ thịt 15% theo chính hồ sơ nguyên liệu nghêu), bầu 130→200, thêm hành tím/dầu/rau mùi (3/3 và 2/3 nguồn), mắm 5→4.]",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — nghêu 70→37 (số cũ tính cả vỏ; nguồn dùng ~250 g nghêu cả vỏ/khẩu phần, tỉ lệ thịt 15% theo chính hồ sơ nguyên liệu nghêu), bầu 130→200, thêm hành tím/dầu/rau mùi (3/3 và 2/3 nguồn), mắm 5→4.] [AUDIT-FIX 2026-11-01 — PX-10 (AUDIT-002): nguồn Tripi (trang tổng hợp) đã chết 404 (gỡ) — thay bằng TipHay/Bách Hóa XANH (đã mở kiểm chứng). Cộng Bếp Trưởng + Cookpad còn sống = 3 nguồn, cổng khôi phục. Định lượng giữ nguyên — lượng nghêu cả vỏ của nguồn thay thế quy về thịt bao phủ số file 37g. Giữ Mức 2.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

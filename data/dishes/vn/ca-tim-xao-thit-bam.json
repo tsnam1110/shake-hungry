@@ -119,14 +119,14 @@
       "note": "VietnamNet: cà tím xào thịt băm có tỏi, dầu hào và đường trong sốt xào."
     },
     {
-      "url": "https://bepxua.vn/ca-tim-xao-thit-bam-top-mo",
-      "accessed": "2026-10-31",
-      "note": "Bếp Xưa: cà tím xào thịt băm tóp mỡ — đối chiếu tỉ lệ thịt cao hơn bản cũ."
-    },
-    {
       "url": "https://giadinh.suckhoedoisong.vn/ca-tim-xao-thit-bam-172090703052440290.htm",
       "accessed": "2026-10-31",
       "note": "Gia đình & SKĐS: cà tím xào thịt băm — nước tương trong gia vị (2/3 nguồn)."
+    },
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/3-cach-lam-mon-ca-tim-xao-de-lam-an-voi-com-ngon-tuyet-01543",
+      "accessed": "2026-11-01",
+      "note": "Điện Máy XANH (mục 2 'Cà tím xào thịt bằm', cho 4 người): cà tím 500g (125g/khẩu phần — khớp file 130g), thịt bằm 200g (50g), dầu ăn 2,5 muỗng canh (~8–9g/khẩu phần — khớp file), dầu hào 2 muỗng canh (~7–8g). Bản ĐMX không dùng nước tương; dòng nước tương 5g của file theo nguồn SKĐS (2/3 nguồn sống) — giữ."
     }
   ],
   "media": [
@@ -139,7 +139,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — thịt băm 40→60, thêm tỏi 4, dầu hào 6, đường 2 (đều 3/3) và nước tương 5 (2/3).]",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — thịt băm 40→60, thêm tỏi 4, dầu hào 6, đường 2 (đều 3/3) và nước tương 5 (2/3).] [AUDIT-FIX 2026-11-01 — PX-11 (AUDIT-002): nguồn Bếp Xưa đã chết 404 (gỡ) — thay bằng Điện Máy XANH (đã mở kiểm chứng). Cộng VietnamNet + SKĐS còn sống = 3 nguồn, cổng khôi phục. Đối chiếu lại định lượng: GIỮ NGUYÊN — cà tím 130g và dầu ăn 8g khớp sát nguồn thay thế; thịt xay 60g (nguồn thay thế 50g, lệch 17% trong ngưỡng). Giữ Mức 2.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

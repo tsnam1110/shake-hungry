@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 2,
+  "completeness_level": 1,
   "meal_slots": [
     {
       "slot": "trua",
@@ -100,17 +100,22 @@
     {
       "url": "https://www.dienmayxanh.com/vao-bep/cach-nau-canh-rau-lang-nau-tom-09295",
       "accessed": "2026-10-31",
-      "note": "Điện Máy XANH: canh rau lang nấu tôm, phi hành xào tôm trước, rau nấu vừa chín tới."
+      "note": "Điện Máy XANH: canh rau lang nấu tôm, phi hành xào tôm trước, rau nấu vừa chín tới. — AUDIT-FIX 2026-11-01: mở lại lần 3 vẫn lỗi fetch phía công cụ, không mã HTTP — CHƯA KẾT LUẬN (không tính chết, không tính nguồn sống xác nhận)."
     },
     {
       "url": "https://giaothonghanoi.kinhtedothi.vn/canh-rau-lang-nau-tom-d35585.amp",
       "accessed": "2026-10-31",
-      "note": "VOV Giao thông (bản AMP): đối chiếu tỉ lệ rau/tôm theo tô và nêm ớt bột kiểu miền Trung."
+      "note": "VOV Giao thông (bản AMP): đối chiếu tỉ lệ rau/tôm theo tô và nêm ớt bột kiểu miền Trung. — AUDIT-FIX 2026-11-01: mở lại lần 3 vẫn lỗi fetch phía công cụ, không mã HTTP — CHƯA KẾT LUẬN (không tính chết, không tính nguồn sống xác nhận)."
     },
     {
-      "url": "https://memart.vn/tin-tuc/blog2/canh-rau-lang-nau-tom-vi-cb.html",
-      "accessed": "2026-10-31",
-      "note": "Memart: canh rau lang nấu tôm — xác nhận dầu phi hành và hành tím lượng khá trong bản miền Trung."
+      "url": "https://cholaithieu.com/huong-dan-chi-tiet-cach-nau-canh-rau-lang-voi-tom-ngon-chuan-vi/",
+      "accessed": "2026-11-01",
+      "note": "Chợ Lái Thiêu: canh rau lang nấu tôm cho ~3–4 người — rau lang 1 bó 300–400g (75–133g/khẩu phần), tôm tươi 200–300g (50–100g/khẩu phần). Khoảng định lượng bao phủ số file (rau 100g, tôm 60g)."
+    },
+    {
+      "url": "https://danviet.vn/cach-lam-mon-canh-rau-lang-nau-tom-ngot-mat-chuan-ngon-bo-re-7777745853-d498750.html",
+      "accessed": "2026-11-01",
+      "note": "Dân Việt (2017): canh rau lang nấu tôm sú — tôm 200g/mẻ, rau tính theo mớ (không gram, không ghi số khẩu phần); chỉ làm bằng chứng món và nguyên liệu tôm sú, không dùng đối chiếu định lượng."
     }
   ],
   "media": [
@@ -123,7 +128,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — co tỉ lệ theo tô 300 g của kho: rau lang 70→100, tôm 50→60, hành tím 3→6, thêm dầu 5 (3/3), ớt bột 0,5 (2/3) và mắm ruốc 2 tuỳ chọn (1/3 nguồn, nét miền Trung).]",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — co tỉ lệ theo tô 300 g của kho: rau lang 70→100, tôm 50→60, hành tím 3→6, thêm dầu 5 (3/3), ớt bột 0,5 (2/3) và mắm ruốc 2 tuỳ chọn (1/3 nguồn, nét miền Trung).] [AUDIT-FIX 2026-11-01 — PX-16 (AUDIT-002): HẠ MỨC 2 → 1. Nguồn Memart đã chết 404 (gỡ). Hai nguồn Điện Máy XANH và VOV Giao thông (bản AMP) mở lại 3 lượt (AUDIT-002 + 2 lượt AUDIT-FIX) đều lỗi fetch phía công cụ, không mã HTTP — giữ trạng thái CHƯA KẾT LUẬN (không tuyên bố chết). Đã bổ sung 2 nguồn mở kiểm chứng được (Chợ Lái Thiêu — đối chiếu được định lượng theo khoảng; Dân Việt — bằng chứng món) nhưng tổng nguồn sống xác nhận mới đạt 2 < 3 → không giữ Mức 2 hình thức. Định lượng giữ nguyên (khoảng của Chợ Lái Thiêu bao phủ số file). Nâng lại ngay khi một trong hai nguồn chưa kết luận được xác nhận sống bằng trình duyệt thật, hoặc có thêm một nguồn đầy đủ đạt chuẩn.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -129,11 +129,6 @@
   ],
   "recipe_sources": [
     {
-      "url": "https://cholaithieu.com/canh-nam-rom-thit-bam",
-      "accessed": "2026-10-31",
-      "note": "Chợ Lái Thiêu: canh nấm rơm thịt băm có hành tím phi, xào thịt trước khi nấu."
-    },
-    {
       "url": "https://memart.vn/tin-tuc/blog2/canh-nam-rom-thit-bam-vi-cb.html",
       "accessed": "2026-10-31",
       "note": "Memart: đối chiếu tỉ lệ nấm/thịt theo tô canh."
@@ -142,6 +137,11 @@
       "url": "https://cachnaumonngon.com/canh-nam-rom-thit-bam-3-1972.html",
       "accessed": "2026-10-31",
       "note": "Cách Nấu Món Ngon: canh nấm rơm thịt băm — hành tím là thành phần nền 3/3 nguồn."
+    },
+    {
+      "url": "https://tailieu.duytan.edu.vn/tailieu/2011/20110120/dalatthanhphobuon/96_8967.pdf?rand=757097",
+      "accessed": "2026-11-01",
+      "note": "Thư viện số ĐH Duy Tân (tư liệu sách nấu ăn, 2011) 'Canh nấm rơm đậu hũ non': nấm rơm 200g, thịt heo băm 100g/mẻ — biến thể có thêm đậu hũ non + hẹ (file không có hai nguyên liệu này), trang không ghi số khẩu phần; chỉ dùng đối chiếu TỈ LỆ nấm : thịt = 2:1, khớp tuyệt đối định lượng file (100 : 50). Ghi nhận minh bạch: đây là nguồn biến thể đã công khai, cùng loại vấn đề đang chờ quy ước PX-25."
     }
   ],
   "media": [
@@ -154,7 +154,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — thêm hành tím 5 (3/3 nguồn), thịt băm 60→50 theo tỉ lệ tô của nguồn.]",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — thêm hành tím 5 (3/3 nguồn), thịt băm 60→50 theo tỉ lệ tô của nguồn.] [AUDIT-FIX 2026-11-01 — PX-08 (AUDIT-002): nguồn Chợ Lái Thiêu đã chết 404 (gỡ) — thay bằng bản tư liệu sách nấu ăn tại Thư viện số ĐH Duy Tân (đã mở kiểm chứng). Cộng Memart + Cách Nấu Món Ngon còn sống = 3 nguồn đã ghi, cổng khôi phục với một nguồn biến thể đã công khai (xem ghi chú nguồn). Định lượng giữ nguyên — tỉ lệ nấm:thịt 2:1 của nguồn thay thế khớp tuyệt đối file. Giữ Mức 2.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

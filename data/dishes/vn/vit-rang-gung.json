@@ -124,9 +124,9 @@
       "note": "Cookpad: vịt rang gừng có ớt và dầu hào trong gia vị rang."
     },
     {
-      "url": "https://bepxua.vn/vit-rang-sa-gung",
-      "accessed": "2026-10-31",
-      "note": "Bếp Xưa: biến thể vịt rang sả gừng — chỉ đối chiếu kỹ thuật rang, không dùng cho định lượng bản gừng."
+      "url": "https://congthucgiadinh.com/mon-an/vit-kho-gung",
+      "accessed": "2026-11-01",
+      "note": "Công Thức Gia Đình 'Vịt kho gừng': vịt 1 con ~1,5kg, gừng 100g (tỉ lệ gừng/vịt 6,7%), KHÔNG có sả trong toàn bộ nguyên liệu và bước làm. Tên gọi kho/rang dùng lẫn cho cùng kỹ thuật (rang vịt săn rồi kho cạn); trang không ghi số khẩu phần nên chỉ đối chiếu tỉ lệ — file hiện tại 15g gừng/180g vịt = 8,3%, cùng bậc độ lớn."
     }
   ],
   "media": [
@@ -139,7 +139,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — thêm dầu hào 5 và ớt tươi 3 (2/3 nguồn). Bất thường giữ nguyên: hạt tiêu 0,5 trong file nhưng 0/3 nguồn nhắc tiêu — giữ vì lượng nhỏ và hợp khẩu vị rang gừng, chờ chủ dự án phân xử nếu rà soát lại.]",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — thêm dầu hào 5 và ớt tươi 3 (2/3 nguồn). Bất thường giữ nguyên: hạt tiêu 0,5 trong file nhưng 0/3 nguồn nhắc tiêu — giữ vì lượng nhỏ và hợp khẩu vị rang gừng, chờ chủ dự án phân xử nếu rà soát lại.] [AUDIT-FIX 2026-11-01 — PX-13 (AUDIT-002): nguồn Bếp Xưa đã chết 404 (gỡ; nguồn đó vốn là biến thể sả gừng) — thay bằng Công Thức Gia Đình (đã mở kiểm chứng, bản gừng thuần không sả). Cộng Ẩm Thực Hương Quê + Cookpad còn sống = 3 nguồn, cổng khôi phục. Định lượng giữ nguyên — tỉ lệ gừng của nguồn thay thế tương corroborate mức file. Giữ Mức 2.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
