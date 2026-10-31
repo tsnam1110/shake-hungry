@@ -31,6 +31,14 @@
   "edible_portion_note": "Ruột đã làm sạch thì ăn toàn bộ, không còn phần bỏ đi ở khâu chế biến — hệ số 100% theo quy ước phần ăn được 1.0 của dự án (trường này ghi theo thang %).",
   "is_ready_to_eat": false,
   "units": [],
+  "media": [
+    {
+      "path": "media/ingredients/long-lon.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "medium",
   "needs_review": true,

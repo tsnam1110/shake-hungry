@@ -57,6 +57,14 @@
       "source": "FDC 173806 foodMeasures"
     }
   ],
+  "media": [
+    {
+      "path": "media/ingredients/lac-rang.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "medium",
   "needs_review": true,

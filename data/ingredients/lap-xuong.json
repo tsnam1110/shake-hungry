@@ -50,6 +50,14 @@
       "source": "servingSize nhãn FDC 1863087"
     }
   ],
+  "media": [
+    {
+      "path": "media/ingredients/lap-xuong.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "low",
   "needs_review": true,
