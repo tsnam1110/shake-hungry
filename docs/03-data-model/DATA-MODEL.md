@@ -411,6 +411,17 @@ Kết quả tổng hợp tính vị từ nguyên liệu lên món. Do máy tính
 > chọn `unspecified`, dùng công thức Katch–McArdle nếu có % mỡ, nếu không thì lấy trung bình hai hệ
 > số và **hạ `confidence` xuống `low`**, đồng thời nói rõ trên giao diện.
 
+### `favorites` (UI-014)
+
+| Cột | Kiểu | Ghi chú |
+|---|---|---|
+| `user_id` | bigint | |
+| `dish_id` / `fruit_id` | bigint null | đúng một trong hai có giá trị; unique theo (user_id, dish_id) và (user_id, fruit_id) |
+
+### `fruit_logs` (UI-014)
+
+Bản ghi mỗi lần người dùng ăn một quả — đối tác của `meal_logs` ở phía món ăn, dùng cho thống kê số lượng quả đã ăn: `user_id`, `fruit_id`, `eaten_at`, `source`.
+
 ### `meal_logs`
 
 | Cột | Kiểu | Ghi chú |

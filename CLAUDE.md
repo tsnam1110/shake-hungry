@@ -123,6 +123,14 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > đồng nhất `ld-dcard` với ô ảnh 4:3 (đang dùng ảnh mẫu SVG trong `public/images/`,
 > thay 1-1 khi có ảnh thật theo quyết định Q4/Q5).
 
+> ## ⚠️ Đính chính lần 10, 2026-10-31 — yêu thích + thống kê (UI-014) và tinh chỉnh tuỳ chọn (UI-013)
+>
+> Hai bảng mới `favorites` và `fruit_logs` (migration `2026_10_31_100006`, DATA-MODEL đã
+> cập nhật) phục vụ tính năng yêu thích món/quả và thống kê số lượng đã ăn theo yêu cầu
+> của chủ dự án; API nằm ở `EngagementController`. Khối Lắc: Ăn ngoài và Tự nấu loại trừ
+> lẫn nhau; kcal mục tiêu khi chưa cấu hình trong hồ sơ thì hiển thị **gợi ý suy từ TDEE**
+> (chỉ là giá trị hiển thị/đầu vào mềm — không ghi vào hồ sơ nếu người dùng không đặt).
+
 **Trạng thái thực tế, kiểm ngày 2026-10-31 (đã chạy lại toàn bộ lệnh kiểm chứng):**
 
 | Hạng mục | Thực tế | Kiểm bằng |
