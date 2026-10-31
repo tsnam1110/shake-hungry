@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "kho",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -82,15 +82,35 @@
     }
   ],
   "recipe_steps": [
-    "Nấm rơm gọt chân, rửa nhanh, để ráo; ướp nước tương, đường, tiêu 10 phút.",
-    "Phi hành tím với dầu, cho nấm vào kho lửa vừa.",
-    "Kho 8–10 phút cho nấm thấm và nước kho sệt, rắc thêm tiêu. Món mặn nhanh: tổng thời gian nấu ~20 phút, nguyên liệu phổ thông."
+    "Gọt bỏ phần chân nấm rơm, rửa nhanh dưới nước rồi để ráo 5–10 phút cho bề mặt nấm khô ráo, tránh ngâm lâu làm nấm ngấm nước.",
+    "Khứa một đường chữ thập nông trên đầu từng cây nấm, khứa đều tay trong khoảng 1 phút cho cả mẻ; vết khứa vừa mở để nấm dễ thấm gia vị khi kho.",
+    "Ướp nấm với nước tương, đường trắng và một nửa lượng tiêu đen trong 10–15 phút, đảo nhẹ một lần cho gia vị phủ đều và nấm bắt đầu thấm màu.",
+    "Đun dầu ăn nóng vừa, phi hành tím băm 1–2 phút trên lửa vừa, đảo đều đến khi hành vàng nhẹ và dậy mùi thơm.",
+    "Cho nấm đã ướp vào nồi, đảo đều 2 phút trên lửa vừa cho nấm nóng đều và mặt nấm hơi săn lại, không đảo mạnh tay làm nấm nát.",
+    "Hạ lửa nhỏ và kho 8–10 phút, thỉnh thoảng đảo nhẹ, đến khi nấm thấm đều, nước kho chỉ sệt nhẹ và vẫn còn một ít để chan; không kho cạn keo quá.",
+    "Rắc phần tiêu đen còn lại vào, đảo đều khoảng 30 giây trên lửa nhỏ rồi tắt bếp; tiêu dậy mùi thơm rõ mà không bị đun lâu đến mất mùi là đạt."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-nam-rom-kho-tieu-don-gian-lai-vo-cung-dam-da-bat-com-08440",
+      "accessed": "2026-10-31",
+      "note": "Đúng món nấm rơm kho tiêu bản chay; đối chiếu kỹ thuật xào nấm trước rồi hạ lửa kho đến thấm (bản đọc thiếu tổng lượng nấm nên không dùng để quy đổi định lượng)."
+    },
+    {
+      "url": "https://giavichinsu.com/cach-lam-nam-rom-kho-nuoc-tuong.html",
+      "accessed": "2026-10-31",
+      "note": "Đúng công thức nấm rơm kho tiêu; đối chiếu khứa chữ thập trên đầu nấm, thời gian ướp, định lượng nước tương/đường/tiêu quy về 150g nấm và cách cho tiêu làm hai đợt."
+    },
+    {
+      "url": "https://yummyday.vn/nam-rom-kho-tieu-368",
+      "accessed": "2026-10-31",
+      "note": "Món nấm rơm kho tiêu xanh — biến thể tiêu xanh, không phải tiêu đen; chỉ đối chiếu kỹ thuật ướp trước, cho tiêu sau cùng để giữ mùi và kho không keo quá để còn nước chan."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món THAY cho tom-rim-thit của kế hoạch §3.3: món đó đã có trong kho ở slug tom-rim (tên 'tôm rim thịt ba chỉ', thành phần gần như trùng — rà soát V7/G6 đợt 2 phát hiện). Thay bằng nấm rơm kho tiêu cùng quota mặn nhanh, đồng thời là món chay (nêm nước tương).",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món THAY cho tom-rim-thit của kế hoạch §3.3: món đó đã có trong kho ở slug tom-rim (tên 'tôm rim thịt ba chỉ', thành phần gần như trùng — rà soát V7/G6 đợt 2 phát hiện). Thay bằng nấm rơm kho tiêu cùng quota mặn nhanh, đồng thời là món chay (nêm nước tương). [LV2-005 đợt 5: nâng Mức 2 — đối chiếu 3 nguồn công thức đã mở đọc; không sửa định lượng vì công thức đúng tên kho tiêu của CHIN-SU cho nước tương ~11g/150g nấm, khớp file 10g, và các dòng còn lại chưa đủ 2 nguồn độc lập đúng biến thể để sửa. Bất thường ghi nhận: nước tương ở hai biến thể khác cao ~22,5g/150g, đường và tiêu đen có nguồn cao hơn file >30% nhưng chưa đủ đồng thuận đúng biến thể, dầu ăn có nguồn cao hơn nhưng một nguồn là biến thể khác và một nguồn không rõ tổng lượng nấm, Điện Máy XANH còn dùng nước mắm chay và tương ớt mà file không có — chờ pha phân xử.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

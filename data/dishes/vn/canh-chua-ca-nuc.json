@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -58,7 +58,7 @@
     },
     {
       "ingredient_slug": "doc-mung",
-      "quantity": 30,
+      "quantity": 50,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -66,7 +66,7 @@
     },
     {
       "ingredient_slug": "gia-do",
-      "quantity": 20,
+      "quantity": 30,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -74,7 +74,7 @@
     },
     {
       "ingredient_slug": "me-chin",
-      "quantity": 8,
+      "quantity": 13,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -106,15 +106,40 @@
     }
   ],
   "recipe_steps": [
-    "Cá nục làm sạch, ướp chút muối; me dằm nước nóng lấy nước cốt.",
-    "Đun sôi nước, cho nước me, cà chua, thơm vào, nêm nước mắm và đường.",
-    "Thả cá nấu chín, thêm dọc mùng và giá, tắt bếp, rắc ngò gai."
+    "Dằm me chín trong nước nóng 5–10 phút, bóp nhẹ cho me ra chua rồi lọc bỏ bã, giữ lại phần nước cốt sánh.",
+    "Làm sạch cá nục, để ráo 10–15 phút cho bề mặt khô, giúp cá vào nồi không bị tanh và giữ nguyên miếng.",
+    "Đun sôi nước, cho nước cốt me cùng cà chua và dứa vào nấu lửa vừa 3–4 phút, đảo nhẹ đến khi cà chua mềm và dứa tiết vị chua ngọt.",
+    "Nêm nước mắm và đường vào nước canh đang sôi, khuấy tan 1 phút rồi nếm lại cho vị chua, mặn, ngọt cân bằng trước khi cho cá.",
+    "Thả cá nục vào, nấu lửa vừa 5–7 phút mà không khuấy mạnh, đến khi thịt cá chuyển trắng, chín tới và không bị nát.",
+    "Cho dọc mùng vào nấu 1–2 phút trên lửa vừa, đảo nhẹ đến khi dọc mùng vừa chín, vẫn giữ màu xanh và độ xốp.",
+    "Cho giá đỗ vào, đảo nhanh khoảng 30 giây rồi tắt bếp ngay để giá giữ độ giòn, sau đó rắc ngò gai lên mặt canh khi hơi nóng còn bốc lên."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "accessed": "2026-10-31",
+      "note": "Canh chua cá nục, công thức đầy đủ — đối chiếu dằm me lấy cốt, cá nấu 5–7 phút và thứ tự cho rau cuối.",
+      "url": "https://cholaithieu.com/cach-nau-canh-chua-ca-nuc-ngon-chuan-vi/"
+    },
+    {
+      "accessed": "2026-10-31",
+      "note": "Canh chua cá nục — đối chiếu lượng me và dọc mùng, cá nấu 5–7 phút không khuấy mạnh.",
+      "url": "https://saigonesebaguette.vn/ca-nuc-nau-mon-gi-ngon-5-cach-che-bien-ca-nuc-hap-dan/"
+    },
+    {
+      "accessed": "2026-10-31",
+      "note": "Canh chua cá nục trên Cookpad — đối chiếu nước cốt me, lượng giá đỗ và dọc mùng.",
+      "url": "https://cookpad.com/vn/cong-thuc/8068748"
+    },
+    {
+      "accessed": "2026-10-31",
+      "note": "Biến thể canh chua cá nục Quảng Bình dùng khế — chỉ đối chiếu lượng cá theo khẩu phần và cách nấu cá, không dùng để sửa me, dọc mùng, giá đỗ.",
+      "url": "https://monan3mien.com/canh-chua-ca-nuc/"
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Cá nục là nguyên liệu tầng 6 (FNRI) — món mang cờ chưa kiểm định theo quy ước dự án.",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Cá nục là nguyên liệu tầng 6 (FNRI) — món mang cờ chưa kiểm định theo quy ước dự án. [LV2-005 đợt 5: nâng Mức 2 — đối chiếu 4 nguồn công thức. Định lượng: tăng me chín 8→13g (2 nguồn độc lập cho khoảng 12,5–14g/khẩu phần), dọc mùng 30→50g (2 nguồn cho khoảng 40–50g/khẩu phần) và giá đỗ 20→30g (lấy mức thấp bảo thủ trong các nguồn cho khoảng 29–50g/khẩu phần); không sửa cá nục vì lượng nguồn là trọng lượng nguyên/khúc chưa quy đổi phần ăn được. Bất thường ghi nhận: 2 nguồn có đậu bắp nhưng file chưa có dòng nguyên liệu này; một nguồn là biến thể Quảng Bình dùng khế thay me và không dùng dọc mùng, giá đỗ; kỹ thuật chiên sơ cá chỉ xuất hiện ở 1 nguồn nên không coi là bắt buộc — chờ pha phân xử.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

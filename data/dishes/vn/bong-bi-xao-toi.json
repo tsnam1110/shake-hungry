@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "xao",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -66,15 +66,39 @@
     }
   ],
   "recipe_steps": [
-    "Bông bí tước cuống xơ, bỏ nhuỵ đắng, rửa nhẹ tay, để ráo.",
-    "Phi thơm tỏi với dầu.",
-    "Cho bông bí vào xào nhanh 2 phút vừa chín, nêm nước mắm, dùng nóng."
+    "Tước bỏ xơ và đoạn cuống già cứng của bông bí, bỏ nhụy vàng bên trong hoa, ngắt khúc 4–7 cm; rửa nhẹ tay nhiều lần cho sạch rồi để ráo hẳn để hoa không bị dập nát.",
+    "Bóc vỏ tỏi và đập dập vừa, không băm quá nhỏ để tỏi khó cháy khi phi; tỏi đạt khi dập nát nhẹ và dậy mùi thơm.",
+    "Đun nóng dầu ăn trên lửa vừa, cho tỏi vào phi khoảng 30–60 giây đến vàng thơm, tỏi chuyển vàng nhạt là đạt, tránh để sậm màu.",
+    "Cho bông bí vào chảo, xào trên lửa lớn và đảo nhanh tay; cho phần cuống vào trước khoảng 30–60 giây rồi mới cho phần hoa để cả hai chín đều.",
+    "Nêm nước mắm khi bông bắt đầu săn lại, tiếp tục đảo nhanh trên lửa lớn, tổng thời gian xào khoảng 3 phút cho thấm vị.",
+    "Tắt bếp khi bông vừa chín tới, còn giòn ngọt, màu xanh tươi và đĩa ráo ít nước; dọn nóng ngay, tránh xào lâu thêm vì bông sẽ nhũn."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "accessed": "2026-10-31",
+      "note": "Đúng món bông bí xào tỏi — đối chiếu định lượng bông bí theo khẩu phần và kỹ thuật tỏi chia hai phần, xào nhanh trên lửa lớn.",
+      "url": "https://cachnaungon.com/3-cach-lam-bong-bi-xao-nam-rom-xao-toi-thom-ngon-03977/"
+    },
+    {
+      "accessed": "2026-10-31",
+      "note": "Đúng món bông bí xào tỏi, khẩu phần 4 người — đối chiếu kỹ thuật tỏi chỉ đập dập, xào lửa to đảo nhanh khoảng 3 phút để giữ độ giòn.",
+      "url": "https://bepmina.vn/mon-viet/cach-lam-bong-bi-xao-toi/"
+    },
+    {
+      "accessed": "2026-10-31",
+      "note": "Đúng món bông bí xào tỏi — đối chiếu kỹ thuật cắt khúc, sơ chế bông bí và dấu hiệu chín tới; thời gian xào của nguồn dài hơn hẳn đa số.",
+      "url": "https://nongsandungha.com/bong-bi-xao-mot-mon-tu-bong-bi-khoai-khau-cua-nhieu-nguoi/"
+    },
+    {
+      "accessed": "2026-10-31",
+      "note": "Đúng món bông bí xào tỏi — đối chiếu kỹ thuật tỏi hai phần và xào với ít nước; định lượng bông bí theo người của nguồn là ngoại lệ cao.",
+      "url": "https://tripi.vn/blog/vi/kinh-nghiem-hay/huong-dan-ban-cach-lam-mon-bong-bi-xao-toi-thom-lung-de-thuc-hien-chac-chan-se-khien-ca-gia-dinh-phai-yeu-thich-tripi"
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Dùng nguyên liệu hoa-bi mới biên soạn đợt này (USDA pumpkin flowers). Lưu ý slug bong-bi trong kho là bóng bì lợn — nguyên liệu của món này là hoa-bi.",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Dùng nguyên liệu hoa-bi mới biên soạn đợt này (USDA pumpkin flowers). Lưu ý slug bong-bi trong kho là bóng bì lợn — nguyên liệu của món này là hoa-bi. [LV2-005 đợt 5: nâng Mức 2 — đối chiếu 4 nguồn đã mở; không sửa định lượng vì lượng bông bí theo người phân kỳ rất rộng và file chỉ lệch khoảng −20% so với nguồn biên tập đáng tin nhất, dưới ngưỡng sửa. Bất thường ghi nhận: nguồn có dầu hào, tiêu và cách chia tỏi làm hai phần mà file chưa có; nguồn bất đồng về việc thêm nước khi xào và về thời gian xào (mức 7 phút là ngoại lệ) — chờ pha phân xử.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

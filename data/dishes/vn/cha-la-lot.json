@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "chien",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -82,11 +82,30 @@
     }
   ],
   "recipe_steps": [
-    "Thịt xay trộn hành tím, nước mắm, đường, tiêu; lá lốt rửa sạch để ráo.",
-    "Trải lá lốt, cho nhân thịt vào cuộn chặt từng cuốn nhỏ.",
-    "Chiên áp chảo lửa vừa tới khi lá xanh sậm, nhân chín (khoảng 8 phút), vớt để ráo. Món mặn nhanh: tổng thời gian nấu ~30 phút, nguyên liệu phổ thông."
+    "Trộn thịt lợn xay với hành tím băm, nước mắm, đường trắng và hạt tiêu đen, đảo đều tay khoảng 2 phút rồi ướp 10–20 phút; nhân thấm, hơi dẻo và dậy mùi tiêu là đạt.",
+    "Chần lá lốt qua nước sôi khoảng 1 giây rồi ngâm ngay vào nước lạnh, vớt ra vẩy thật khô trong 2–3 phút; lá giữ màu xanh tươi và bề mặt ráo nước là đạt.",
+    "Trải lá lốt với mặt xanh bóng quay ra ngoài, gấp hai mép lá, đặt nhân thịt vào giữa rồi cuộn chặt tay và ghim lại bằng cuống lá; cuốn đều, kín nhân, không hở mép là đạt, làm lần lượt đến hết trong khoảng 10 phút.",
+    "Đặt chảo lên bếp lửa lớn, xếp các cuốn lá lốt vào chiên khoảng 1–2 phút cho mặt dưới se lại và định hình; lá bắt đầu xanh sậm và cuốn không bung là đạt.",
+    "Hạ xuống lửa vừa và chiên tiếp, lật đều các mặt, tổng thời gian chiên 8–12 phút; lá xanh sậm đều, nhân chín chắc và không cháy đen là đạt.",
+    "Vớt chả ra để ráo khoảng 2–3 phút cho bớt dầu bám trên mặt, xếp ra đĩa và dùng nóng; bề mặt cuốn khô ráo, thơm mùi lá lốt và tiêu là đạt."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.mocquan.vn/blogs/news/meo-lam-cha-la-lot-xanh-muot-khong-bi-tham-den",
+      "accessed": "2026-10-31",
+      "note": "Đúng món chả lá lốt thịt heo xay cuốn lá lốt chiên; đối chiếu tỉ lệ thịt/lá lốt, ướp 10–20 phút, chần lá giữ xanh và cách rán hai giai đoạn lửa."
+    },
+    {
+      "url": "https://giaitri.thoibaovhnt.com.vn/cach-lam-cha-la-lot-xanh-muot-10-cai-nhu-1-nhin-la-muon-an-ngay-1421016.html",
+      "accessed": "2026-10-31",
+      "note": "Đúng món chả lá lốt thịt heo, nguồn duy nhất ghi rõ khẩu phần 3–4 người; đối chiếu định lượng thịt theo khẩu phần và thời gian chiên 8–12 phút."
+    },
+    {
+      "url": "https://phunutoday.vn/3-cong-thuc-lam-cha-la-lot-vua-ngon-vua-nhanh-ca-nha-nuc-no-khen-ngon-d150825.html",
+      "accessed": "2026-10-31",
+      "note": "Đúng biến thể thịt lợn cuốn lá lốt chiên (Cách 1 và Cách 3); đối chiếu thành phần nhân thịt, lá lốt, hành tím và cách cuốn chiên."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/cha-la-lot.webp",
@@ -97,7 +116,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món chiên theo quy ước Phương án A (EDITORIAL-GUIDE §12): công thức KHÔNG kê dầu của bước chiên chính — dầu hấp thụ do engine mô hình hoá theo hệ số CALC-004 của nguyên liệu.",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món chiên theo quy ước Phương án A (EDITORIAL-GUIDE §12): công thức KHÔNG kê dầu của bước chiên chính — dầu hấp thụ do engine mô hình hoá theo hệ số CALC-004 của nguyên liệu. [LV2-005 đợt 5: nâng Mức 2 — đối chiếu 3 nguồn công thức đã mở đọc, đều đúng biến thể thịt heo xay cuốn lá lốt chiên. Định lượng: giữ nguyên toàn bộ — tỉ lệ thịt trong mẻ của nguồn Mộc Quán/VTC (~85%) và tỉ lệ lá/thịt của file (15/120 = 12,5%) cùng nằm trong dải các nguồn, thời gian chiên của file khớp nguồn Thời báo VHNT. Bất thường ghi nhận: khẩu phần thịt 120g/người trong file cao hơn mức 75–100g/người của nguồn duy nhất ghi khẩu phần (1/3 nguồn, chưa đủ ngưỡng ≥2 nguồn đồng thuận để sửa) — chờ pha phân xử.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

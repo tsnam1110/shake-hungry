@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "xao",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -90,15 +90,40 @@
     }
   ],
   "recipe_steps": [
-    "Tôm khô ngâm mềm; ba chỉ thái miếng mỏng.",
-    "Phi hành tím với ít dầu, cho ba chỉ vào rang tới khi ra mỡ, xém cạnh.",
-    "Thêm tôm khô, nêm nước mắm, đường, rang thêm 3 phút cho keo, rắc tiêu. Món mặn nhanh: tổng thời gian nấu ~25 phút, nguyên liệu phổ thông."
+    "Rửa sơ tôm khô rồi ngâm nước ấm 15–20 phút cho tôm mềm, gắp ra để ráo; tôm đạt khi bóp nhẹ thấy mềm, không còn cứng lõi.",
+    "Cạo sạch bì thịt ba chỉ, rửa sạch, thấm khô rồi thái miếng mỏng vừa ăn; thái đều tay giúp thịt chín cùng lúc và dễ vàng xém cạnh khi rang.",
+    "Đun nóng dầu ăn trên lửa vừa, cho hành tím vào phi khoảng 1 phút đến vàng thơm, hành chuyển vàng nhạt và dậy mùi là đạt.",
+    "Cho thịt ba chỉ vào chảo, rang trên lửa vừa và đảo đều tay cho thịt săn lại, tiết mỡ và vàng xém cạnh; nếu mỡ tiết ra nhiều thì gạn phần thừa để thịt không ngấy.",
+    "Cho tôm khô đã ngâm vào đảo chung 2–3 phút trên lửa vừa, đảo đều đến khi tôm săn lại và dậy mùi thơm đặc trưng.",
+    "Nêm nước mắm và đường thốt nốt, hạ lửa nhỏ đảo rim thêm khoảng 3–5 phút cho gia vị tan và keo lại, áo đều quanh thịt và tôm thành lớp nâu óng.",
+    "Rắc tiêu đen, đảo nhẹ một lượt rồi tắt bếp; dọn nóng khi thịt còn bóng nhẹ, tôm và thịt đều thấm vị mặn ngọt."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "accessed": "2026-10-31",
+      "note": "Đúng món thịt rim tôm khô, nguồn có khẩu phần rõ duy nhất — đối chiếu định lượng ba chỉ, tôm khô và kỹ thuật rim lửa nhỏ đến sệt, thắng màu cánh gián.",
+      "url": "https://www.bluestone.com.vn/blogs/vao-bep/cach-lam-thit-rim-tom-kho"
+    },
+    {
+      "accessed": "2026-10-31",
+      "note": "Đúng cặp tôm khô rim thịt heo — đối chiếu tỉ lệ tôm/thịt và kỹ thuật ngâm tôm cho mềm, rim lửa nhỏ, nêm cuối.",
+      "url": "https://eva.vn/bep-eva/tom-rim-thit-ngon-dam-da-cho-bua-com-gia-dinh-c162a399784.html"
+    },
+    {
+      "accessed": "2026-10-31",
+      "note": "Biến thể kho quẹt ba chỉ rang tôm khô — đối chiếu tỉ lệ tôm/thịt và kỹ thuật rang thịt ra mỡ rồi rim keo với nước mắm, đường.",
+      "url": "https://cookpad.com/vn/cong-thuc/16052124-mon-kho-qu%E1%BA%B9t-k%E1%BA%BFt-h%E1%BB%A3p-rau-lu%E1%BB%99c-c%C6%A1m-chay"
+    },
+    {
+      "accessed": "2026-10-31",
+      "note": "Biến thể kho quẹt ba chỉ tôm khô — đối chiếu tỉ lệ tôm/thịt và kỹ thuật giữ nước ngâm tôm, rang thịt ra mỡ trước khi rim.",
+      "url": "https://cookpad.com/vn/cong-thuc/3454020"
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Method xao như thit-rang-chay-canh: rang bằng mỡ tự thân là chính, dầu 3 g chỉ để phi hành đầu chảo.",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Method xao như thit-rang-chay-canh: rang bằng mỡ tự thân là chính, dầu 3 g chỉ để phi hành đầu chảo. [LV2-005 đợt 5: nâng Mức 2 — đối chiếu 4 nguồn đã mở; không sửa định lượng vì chỉ 1/4 nguồn ghi khẩu phần rõ và tỉ lệ tôm/thịt của file nằm trong cụm đa số nguồn. Bất thường ghi nhận: các nguồn đều có tỏi, hành lá, ớt tươi và chất lỏng rim (nước dừa hoặc nước ngâm tôm) mà file chưa có dòng tương ứng; nguồn dùng đường cát và có thắng màu trước, file dùng đường thốt nốt — chờ pha phân xử.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -42,7 +42,7 @@
     },
     {
       "ingredient_slug": "thit-bo-xay",
-      "quantity": 60,
+      "quantity": 40,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -98,15 +98,34 @@
     }
   ],
   "recipe_steps": [
-    "Rau má nhặt bỏ gốc, rửa sạch để ráo; thịt bò xay ướp tiêu và tỏi băm.",
-    "Đun nước thật sôi, cho thịt bò vào khuấy đều cho thịt tơi, hớt bọt.",
-    "Thả rau má vào nấu vừa chín tới (giữ màu xanh), nêm nước mắm và chút đường, dùng ngay."
+    "Nhặt bỏ gốc rau má, rửa nhiều lần dưới nước sạch rồi để ráo, đến khi nước rửa trong và lá không còn lẫn cát.",
+    "Ướp thịt bò xay với tỏi băm, hạt tiêu đen và dầu ăn trong 10–20 phút, trộn đều tay cho đến khi thịt thấm gia vị và tỏi, tiêu bám đều.",
+    "Đun nồi nước ở lửa lớn đến khi sôi mạnh, cho thịt bò xay vào khuấy nhanh 1–2 phút cho thịt tơi, hớt bọt liên tục đến khi nước trong và thịt chuyển màu chín đều.",
+    "Thả rau má vào khi nước đang sôi, đảo nhẹ tay khoảng 1 phút cho đến khi nước sôi lại, lá rau vừa chín tới và chuyển xanh sẫm mà chưa nát.",
+    "Nêm nước mắm, muối và đường ngay khi rau vừa chín, khuấy nhẹ rồi tắt bếp khi nước sôi lại lăn tăn, nếm thấy vị mặn ngọt dịu cân bằng.",
+    "Múc canh ra tô và dùng ngay lúc còn nóng, khi rau má vẫn giữ màu xanh và thịt bò chưa bị dai lại."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://daubepgiadinh.vn/canh-rau-ma",
+      "accessed": "2026-10-31",
+      "note": "Đúng món canh rau má thịt bò; đối chiếu tỉ lệ rau:bò, cách ướp thịt trước và nguyên tắc cho rau vào nước sôi, nấu vừa chín tới."
+    },
+    {
+      "url": "https://digifood.vn/blog/canh-rau-ma-thit-bo/",
+      "accessed": "2026-10-31",
+      "note": "Đúng món canh rau má thịt bò, nguồn duy nhất ghi rõ khẩu phần 4 người; đối chiếu định lượng per-serving của rau má và thịt bò, thời gian ướp 10–20 phút."
+    },
+    {
+      "url": "https://www.avakids.com/me-va-be/thit-bo-cho-ba-bau-1484453",
+      "accessed": "2026-10-31",
+      "note": "Đúng món canh rau má nấu thịt bò xay (dạng viên); đối chiếu tỉ lệ rau:tổng thịt xay và bước hớt bọt khi cho thịt vào nước sôi."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-005 đợt 5: nâng Mức 2 — đối chiếu 3 nguồn công thức đã mở kiểm chứng. Phân xử định lượng: thịt bò xay 60→40g vì nguồn duy nhất ghi khẩu phần (Digifood) cho 37,5g/người, thấp hơn file 37,5%, và tỉ lệ rau:bò ở cả 3 nguồn đều ≥2,0 so với tỉ lệ file 1,33; giữ rau má 80g vì khớp nguồn trong ngưỡng. Bất thường ghi nhận: 2/3 nguồn dùng bò thái lát mỏng thay vì bò xay, và cả 3/3 nguồn đều có hành tím trong khi file không có — chờ pha phân xử.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

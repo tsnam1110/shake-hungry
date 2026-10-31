@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "xao",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -50,7 +50,7 @@
     },
     {
       "ingredient_slug": "sa",
-      "quantity": 10,
+      "quantity": 20,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -82,15 +82,40 @@
     }
   ],
   "recipe_steps": [
-    "Ba chỉ thái miếng mỏng; mắm ruốc khuấy tan với ít nước ấm, lọc.",
-    "Phi sả, ớt với dầu, cho thịt vào xào săn.",
-    "Đổ mắm ruốc vào, nêm đường, xào 5 phút cho thấm và dậy mùi. Món mặn nhanh: tổng thời gian nấu ~20 phút, nguyên liệu phổ thông."
+    "Thái thịt ba chỉ thành miếng mỏng vừa ăn, tỉa đều tay tới khi các miếng gọn, không quá dày để lúc xào dễ săn và thấm mắm.",
+    "Băm nhuyễn sả cùng ớt; khuấy mắm ruốc với ít nước ấm trong 1–2 phút rồi lọc lại, tới khi hỗn hợp tan đều, mịn và không còn lợn cợn.",
+    "Đun dầu ăn nóng trên lửa vừa, cho sả và ớt vào phi 1–2 phút, đảo liên tục tới khi vàng và dậy mùi thơm rõ.",
+    "Cho thịt ba chỉ vào chảo, xào trên lửa vừa khoảng 8–10 phút, đảo đều tay tới khi thịt săn, hơi cháy cạnh và bề mặt bóng lên.",
+    "Đổ mắm ruốc đã lọc vào chảo thịt, hạ xuống lửa nhỏ và đảo đều 2–3 phút, tới khi mắm bám quanh từng miếng thịt và bắt đầu sánh lại.",
+    "Nêm đường để cân lại độ mặn, tiếp tục xào lửa nhỏ 5–8 phút, đảo thường xuyên tới khi mắm sệt lại, thấm đều và thịt lên màu nâu bóng.",
+    "Tắt bếp khi hỗn hợp đã sệt hẳn và không còn loãng, đảo thêm một lượt cho sả và ớt bám đều lên thịt, bày ra đĩa và dùng nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-thit-kho-mam-ruoc-hap-dan-cho-bua-com-gia-dinh-07862",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH — thịt kho mắm ruốc, biến thể kho cùng lõi nguyên liệu với món xào; đối chiếu sả 1,25–1,5 cây/người và thời gian xào thịt, nấu mắm tới sánh."
+    },
+    {
+      "url": "https://bepxua.vn/cach-lam-thit-xao-mam-ruoc-chuan-khoi-chinh/",
+      "accessed": "2026-10-31",
+      "note": "BepXua — đúng món thịt xào mắm ruốc; đối chiếu sả 2,5 cây/người và kỹ thuật khuấy mắm tan với nước, xào tới sệt; lưu ý đây là mẻ để dành nên khẩu phần mắm không dùng làm neo."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/882891",
+      "accessed": "2026-10-31",
+      "note": "Cookpad VN — mắm ruốc xào thịt, không ghi khẩu phần; đối chiếu sả 3 cây/mẻ và thứ tự phi sả vàng trước, cho mắm vào khi thịt đã xào khô."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/15641084",
+      "accessed": "2026-10-31",
+      "note": "Cookpad VN — thịt heo xào mắm ruốc, không ghi khẩu phần; đối chiếu sả 7 cây/mẻ và cách khuấy mắm ruốc với ít nước cho sệt, tránh làm loãng."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món THAY cho cha-trung-hap trong kế hoạch §3.3: cha-trung đã có trong kho (chả trứng hấp, vn-tp-hcm) — tạo thêm file cha-trung-hap là trùng món. Thay bằng món thịt xào nhanh đặc trưng Nam cùng quota.",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món THAY cho cha-trung-hap trong kế hoạch §3.3: cha-trung đã có trong kho (chả trứng hấp, vn-tp-hcm) — tạo thêm file cha-trung-hap là trùng món. Thay bằng món thịt xào nhanh đặc trưng Nam cùng quota. [LV2-005 đợt 5: nâng Mức 2 — đối chiếu 4 nguồn công thức đã mở đọc; sửa sa 10→20 g vì mọi nguồn đều dùng sả nhiều hơn hẳn file, lấy cận dưới đồng thuận thận trọng (~1 cây/người). Bất thường ghi nhận: tỉ lệ mắm ruốc:thịt phân tán rất mạnh giữa các nguồn và bị nhiễu bởi biến thể kho thêm nước cùng mẻ làm để dành nên giữ nguyên lượng mắm; file ghi vùng vn-south trong khi món gắn mạnh với miền Trung; file thiếu tỏi và hành tím mà 3/4 nguồn đều phi cùng sả — chờ pha phân xử.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

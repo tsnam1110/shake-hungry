@@ -82,7 +82,7 @@
     },
     {
       "ingredient_slug": "lac-rang",
-      "quantity": 15,
+      "quantity": 30,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -162,25 +162,30 @@
     }
   ],
   "recipe_steps": [
-    "Hến nguyên vỏ ngâm trong nước vo gạo có thêm vài lát ớt khoảng 1–2 giờ cho nhả hết cát, rửa sạch; luộc trong nước sôi đến khi hến vừa há miệng thì tắt bếp, đãi lấy thịt, giữ lại nước luộc, để lắng cát rồi gạn lấy phần nước trong.",
-    "Dùng cơm nguội hạt tơi để trộn; nếu là cơm mới nấu, trải cơm ra mâm cho nguội và ráo hơi nước trước khi dùng.",
-    "Xào thịt hến: phi hành tím và tỏi với dầu ăn cho thơm, cho thịt hến vào xào nhanh trên lửa lớn 2–3 phút, nêm muối, đường, tiêu và một chút mắm ruốc đã pha loãng; hến vừa săn lại, dậy mùi thì tắt bếp ngay để không bị dai.",
-    "Bì lợn chiên trong dầu nóng đến khi phồng giòn, vớt ra để ráo dầu rồi bẻ thành miếng vừa ăn; tép rang khô trên chảo cho thơm.",
-    "Lạc rang vàng, xát bỏ vỏ; vừng rang thơm; hành tím thái mỏng phi vàng giòn, vớt ra để ráo dầu.",
-    "Rau sống và giá đỗ rửa sạch, để ráo; bắp chuối bào mỏng, ngâm ngay vào nước có pha chanh loãng để không bị thâm, khi dùng vớt ra vắt ráo.",
-    "Đun nóng phần nước luộc hến đã gạn trong, nêm thật nhạt và thêm vài lát gừng; giữ nóng trên bếp nhỏ lửa để chan kèm khi ăn.",
-    "Trình bày: cho cơm vào tô, xếp hến xào, bì chiên, tép rang, rau, giá và bắp chuối lên trên; rắc lạc, vừng, hành phi, rưới mắm ruốc đã chưng; khi ăn chan thêm ít nước hến nóng và trộn đều."
+    "Ngâm hến trong nước vo gạo 30 phút đến 2 giờ cho nhả hết cát, rửa sạch rồi luộc trong nước nóng khoảng 80°C đến khi hến vừa há miệng; đãi lấy thịt, gạn giữ lại phần nước luộc trong, thịt hến rời vỏ và nước luộc trong là đạt.",
+    "Dùng cơm trắng nguội hạt tơi; nếu cơm mới nấu thì trải ra mâm 15–20 phút cho nguội và ráo hơi nước, hạt cơm rời nhau không bết là đạt.",
+    "Xào thịt hến trên lửa lớn 2–3 phút cùng mắm ruốc đã pha loãng, đường trắng và ít rau thơm, đảo nhanh tay; hến vừa săn lại, dậy mùi và tắt bếp ngay để thịt không dai là đạt.",
+    "Làm nóng bì lợn đến khi phồng giòn đều, vớt ra để ráo 2–3 phút rồi bẻ thành miếng vừa ăn; rang tép trên chảo khô lửa vừa 2–3 phút đến khi tép khô và thơm là đạt.",
+    "Rang lạc đến khi vàng thơm rồi xát bỏ vỏ, rang vừng rang đến khi dậy mùi; để sẵn hành phi giòn, các topping khô ráo và không bị mềm lại là đạt.",
+    "Rửa sạch giá đỗ và bắp chuối đã bào mỏng, ngâm bắp chuối trong nước sạch khoảng 10 phút rồi vớt ra vắt ráo; chuẩn bị rau thơm gồm rau mùi, húng quế và hành lá rửa sạch để ráo, rau còn tươi xanh và ráo nước là đạt.",
+    "Đun nóng phần nước luộc hến đã gạn trên lửa nhỏ và nêm thật nhạt, giữ nóng để chan kèm; chưng mắm ruốc bằng cách đun mắm ruốc với ít nước luộc hến, đường trắng và ớt tươi đến khi sôi 1–2 phút, hỗn hợp dậy mùi và không dùng mắm ruốc sống là đạt.",
+    "Cho cơm vào tô, xếp hến xào, bì lợn, tép, bắp chuối và giá đỗ lên trên, rắc lạc rang, vừng rang, hành phi và sa tế nếu thích, rưới mắm ruốc đã chưng; khi ăn chan thêm ít nước luộc hến nóng và trộn đều, các thành phần quyện nhau mà rau vẫn tươi là đạt."
   ],
   "recipe_sources": [
     {
       "url": "https://tailieu.duytan.edu.vn/tailieu/2013/20130109/hotmoingay2/monngonvn_34__4842.pdf?rand=354332",
       "accessed": "2026-10-31",
-      "note": "Công thức cơm hến của Món Ngon Mỗi Ngày (tài liệu lưu tại Đại học Duy Tân): hến 500g, cơm trắng 1 chén, ruốc 1 thìa súp, mè trắng 1 thìa súp, ăn kèm rau chuối bào, khế, bạc hà — đối chiếu thành phần và cách trình bày."
+      "note": "Đúng món cơm hến Huế của Món Ngon Mỗi Ngày; đối chiếu hến, cơm trắng 1 chén, mắm ruốc và vừng rang theo khẩu phần, cùng rau ăn kèm và cách trình bày."
     },
     {
       "url": "https://nauankhongkho.vn/blog/cach-lam-com-hen-hue-voi-nuoc-mam-ruoc-chuan-vi-e9D6618JZ5EP",
       "accessed": "2026-10-31",
-      "note": "Công thức cơm hến Huế chi tiết: hến 2kg nguyên vỏ (thịt sau luộc khoảng 300g), cơm nguội 450g, mắm ruốc 2 muỗng canh, da heo sấy 50g, đậu phộng 80g — đối chiếu kỹ thuật ngâm hến, xào hến, nấu nước hến và làm mắm ruốc."
+      "note": "Đúng biến thể cơm hến Huế đầy đủ; đối chiếu lạc rang ~32g và bì lợn ~20g khi quy theo tỉ lệ cơm của mẻ, cùng kỹ thuật ngâm luộc hến, chưng mắm ruốc và chan nước luộc hến."
+    },
+    {
+      "url": "https://forum.dtu.edu.vn/sites/index.aspx/phongkhamdakhoadaidong.vn/index.aspx?p=forum_thread&forum=427&thread=863619",
+      "accessed": "2026-10-31",
+      "note": "Nguồn thứ ba độc lập (Disney Cooking), đúng biến thể cơm hến Huế đầy đủ; đối chiếu lạc rang ~28g khi quy theo tỉ lệ cơm của mẻ, xào hến nhanh lửa lớn và nước luộc hến chan kèm."
     }
   ],
   "media": [
@@ -193,7 +198,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu). Nâng Mức 2 đợt 1 (2026-10-31): Giữ Mức 1: chỉ tìm được 2 nguồn đạt chuẩn có định lượng và bước nấu đã mở kiểm chứng (xem recipe_sources). Một công thức Cookpad khác về cơm hến không có định lượng nên bị loại; Điện Máy XANH chỉ có bún hến, là món khác — không hạ chuẩn nguồn để đủ số. Định lượng: giữ nguyên toàn bộ — cả hai nguồn đều không ghi rõ số khẩu phần nên không quy đổi chắc chắn được; mẻ cơm nguội 450g và thịt hến khoảng 300g ở nguồn thứ hai tương thích với khẩu phần trong file. Bước nấu viết lại 8 bước theo kỹ thuật của hai nguồn.",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu). Nâng Mức 2 đợt 1 (2026-10-31): Giữ Mức 1: chỉ tìm được 2 nguồn đạt chuẩn có định lượng và bước nấu đã mở kiểm chứng (xem recipe_sources). Một công thức Cookpad khác về cơm hến không có định lượng nên bị loại; Điện Máy XANH chỉ có bún hến, là món khác — không hạ chuẩn nguồn để đủ số. Định lượng: giữ nguyên toàn bộ — cả hai nguồn đều không ghi rõ số khẩu phần nên không quy đổi chắc chắn được; mẻ cơm nguội 450g và thịt hến khoảng 300g ở nguồn thứ hai tương thích với khẩu phần trong file. Bước nấu viết lại 8 bước theo kỹ thuật của hai nguồn. [LV2-005 đợt 5: nâng Mức 2 — đối chiếu 3 nguồn công thức đạt chuẩn đã mở đọc, đều đúng biến thể cơm hến Huế đầy đủ; nguồn yếu congthucgiadinh (bản rút gọn thiếu mắm ruốc, bì lợn, tép và nước luộc hến) đã bị loại, không đưa vào recipe_sources. Món từng giữ Mức 1 từ LV2-001 đợt 1 vì thiếu nguồn đạt chuẩn, đợt này đã đủ 3 nguồn. Định lượng: sửa lạc rang 15→30g vì 2/2 nguồn có định lượng lạc đều cho ~28–32g khi quy theo lượng cơm 180g của file (lệch >30%, đồng thuận 2/2), lấy mức giữa thận trọng 30g; giữ nguyên hến 60g và bì lợn 20g vì hai nguồn mẻ lớn bất đồng tỉ lệ, mắm ruốc 5g lệch <30% theo nguồn gần nhất nên không sửa. Bất thường ghi nhận: dọc mùng/bạc hà xuất hiện ở cả 3 nguồn nhưng file chưa có dòng nguyên liệu này, tép 20g của file không xuất hiện ở nguồn đạt chuẩn nào (0/3) — chờ pha phân xử.] [Phân xử điều phối LV2-005 (2026-10-31): GIỮ Mức 1 dù đã gom được 3 nguồn — nguồn thứ ba (bài đăng \"Disney Cooking\" trên forum ĐH Duy Tân) có nội dung đúng biến thể và đã mở kiểm chứng, nhưng URL nằm trên đường dẫn bị chèn spam SEO (tên miền phòng khám lạ trong path của forum) — không tính là nguồn ĐẠT CHUẨN để qua cổng V12 vì rủi ro xuất xứ/độ bền liên kết. Hai nguồn đạt chuẩn (sách Món Ngon Mỗi Ngày — bản lưu ĐH Duy Tân; Nấu Ăn Không Khó) + định lượng đã phân xử và bước viết lại ở đợt này được giữ nguyên trong file; món chỉ còn thiếu 1 nguồn sạch nữa là đủ nâng — ưu tiên bổ sung ở đợt tra cứu sau. Chủ dự án có thể phân xử khác (chấp nhận nguồn forum) thì nâng ngay.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

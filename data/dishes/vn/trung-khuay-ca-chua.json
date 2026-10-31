@@ -90,7 +90,7 @@
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món THAY cho dau-phu-sot-ca-chua của kế hoạch §3.3: món đó trùng dau-phu-sot-ca đã có (tên đầy đủ là 'Đậu phụ sốt cà chua'); ứng viên thay đầu tiên dau-phu-kho-nam-huong cũng trùng dau-phu-kho-nam đã có trong kho — cả hai đều do rà soát V7/G6 đợt 2 phát hiện.",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món THAY cho dau-phu-sot-ca-chua của kế hoạch §3.3: món đó trùng dau-phu-sot-ca đã có (tên đầy đủ là 'Đậu phụ sốt cà chua'); ứng viên thay đầu tiên dau-phu-kho-nam-huong cũng trùng dau-phu-kho-nam đã có trong kho — cả hai đều do rà soát V7/G6 đợt 2 phát hiện. [LV2-005 đợt 5: thử nâng Mức 2 — GIỮ Mức 1: đã mở được 2 nguồn thì bị chặn 429 — chưa đủ 3 nguồn đã mở. Thử lại khi hết chặn.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

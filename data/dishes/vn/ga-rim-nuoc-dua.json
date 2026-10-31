@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "kho",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -42,7 +42,7 @@
     },
     {
       "ingredient_slug": "nuoc-dua-tuoi",
-      "quantity": 100,
+      "quantity": 70,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -66,7 +66,7 @@
     },
     {
       "ingredient_slug": "nuoc-mam-truyen-thong",
-      "quantity": 10,
+      "quantity": 6,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -82,15 +82,33 @@
     }
   ],
   "recipe_steps": [
-    "Đùi gà chặt miếng, ướp nước mắm 15 phút.",
-    "Phi hành tím, cho gà vào đảo săn, đổ nước dừa vào.",
-    "Rim lửa nhỏ 15 phút tới khi nước dừa keo, gà thấm ngọt. Món mặn nhanh: tổng thời gian nấu ~30 phút, nguyên liệu phổ thông."
+    "Chặt đùi gà thành miếng vừa ăn, rửa sạch và để thật ráo; trộn ướp với nước mắm, đường và hành tím băm, để khoảng 30 phút đến khi thịt thấm đều và bề mặt se lại.",
+    "Đun nóng dầu ăn trên lửa vừa, phi hành tím đến thơm và hơi vàng; cho gà vào đảo lửa lớn 3–4 phút đến khi các mặt săn lại, cạnh thịt hơi xém.",
+    "Đổ nước dừa tươi vào xâm xấp mặt thịt, đun sôi lửa lớn rồi hạ lửa nhỏ, hớt bọt; rim liu riu khoảng 25–30 phút, thỉnh thoảng trở miếng cho thấm đều hai mặt.",
+    "Khi nước rim rút còn khoảng một phần ba, nếm lại cho hài hoà mặn ngọt, tiếp tục rim lửa nhỏ đến khi sốt sánh lại và bắt đầu keo quanh miếng gà.",
+    "Tắt bếp khi sốt áo bóng đều, thịt gà chín mềm nhưng không nát; để nghỉ vài phút cho sốt bám chặt rồi bày ra đĩa, ăn nóng với cơm."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "accessed": "2026-10-31",
+      "note": "Đúng món gà rim nước dừa, nhánh ướp nước mắm (không nước tương); đã đối chiếu tỉ lệ nước dừa ~37 ml/100 g gà và nước mắm ~3,3 ml/100 g gà, rim đến khi sốt sền sệt.",
+      "url": "https://www.bluestone.com.vn/blogs/vao-bep/lam-ga-rim-nuoc-dua"
+    },
+    {
+      "accessed": "2026-10-31",
+      "note": "Mang tên gà rim nước dừa nhưng ướp nước tương (nhánh rôti); đã đối chiếu tỉ lệ nước dừa 40 ml/100 g gà và điểm chồng lấn tên gọi rim/rôti.",
+      "url": "https://tripi.vn/blog/vi/kinh-nghiem-hay/mon-ga-rim-nuoc-dua-dam-da-huong-vi-khien-ai-thuong-thuc-cung-khong-the-quen-duoc-tripi"
+    },
+    {
+      "accessed": "2026-10-31",
+      "note": "Mục đùi gà rim mật ong nước dừa: đúng phần đùi gà, rim bằng nước mắm, lửa nhỏ đến cạn sền sệt; đã đối chiếu tỉ lệ nước dừa và nước mắm theo 100 g gà.",
+      "url": "https://blogthanhcong.edu.vn/top-16-mon-rim-kho-ngon-va-cach-che-bien-don-gian-chi-em-noi-tro-kho-long-bo-qua/"
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-004 đợt 4: thử nâng Mức 2 — GIỮ MỨC 1 vì lệch định danh: file là gà rim nước mắm/nước màu, nhưng 3/3 nguồn mở được (dienmayxanh.com/vao-bep/cach-nau-ga-roti-nuoc-dua-01672; saigonesebaguette.vn/cach-nau-ga-roti-nuoc-dua; congthucgiadinh.com/mon-an/ga-roti-nuoc-dua) đều là gà rôti nước dừa ướp nước tương 20–30 phút không có nước mắm; 2 trang rim-mắm thật (monngonmoingay.com/cong-thuc/ga-rim-nuoc-mam; daotaobeptruong.vn/cach-lam-ga-rim-nuoc-mam) bị chặn 429 ở vòng tra cứu. Chờ phân xử hoặc thử lại khi hết chặn.]",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-004 đợt 4: thử nâng Mức 2 — GIỮ MỨC 1 vì lệch định danh: file là gà rim nước mắm/nước màu, nhưng 3/3 nguồn mở được (dienmayxanh.com/vao-bep/cach-nau-ga-roti-nuoc-dua-01672; saigonesebaguette.vn/cach-nau-ga-roti-nuoc-dua; congthucgiadinh.com/mon-an/ga-roti-nuoc-dua) đều là gà rôti nước dừa ướp nước tương 20–30 phút không có nước mắm; 2 trang rim-mắm thật (monngonmoingay.com/cong-thuc/ga-rim-nuoc-mam; daotaobeptruong.vn/cach-lam-ga-rim-nuoc-mam) bị chặn 429 ở vòng tra cứu. Chờ phân xử hoặc thử lại khi hết chặn.] [LV2-005 đợt 5: nâng Mức 2 — 3 nguồn đã mở kiểm chứng. Phân xử định danh: tên 'gà rim nước dừa' trong nguồn gồm nhánh ướp nước mắm (BlueStone, Toplist — đúng hồ sơ vị của file) và nhánh ướp nước tương kiểu rôti (Tripi); file thuộc nhánh mắm nên giữ định danh 'Đùi gà rim nước dừa', không đổi sang rôti. Sửa định lượng theo đồng thuận nguồn: nước dừa tươi 100→70 g/khẩu phần, nước mắm 10→6 g/khẩu phần; đường giữ nguyên vì không có đồng thuận ≥2 nguồn cho thấy lệch quá ngưỡng.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

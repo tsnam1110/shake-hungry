@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "xao",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -90,15 +90,35 @@
     }
   ],
   "recipe_steps": [
-    "Vịt chặt miếng, xát gừng muối khử hôi, ướp nước mắm; măng tươi luộc bỏ nước đắng.",
-    "Phi hành tím, xào vịt săn, cho măng vào đảo cùng.",
-    "Thêm ít nước, nấu 12 phút cho vịt mềm và măng thấm, rắc hành lá, tiêu."
+    "Chặt thịt vịt thành miếng vừa ăn, rửa sạch và để thật ráo khoảng 10 phút, rồi ướp với nước mắm và hạt tiêu đen 30 phút cho thịt thấm và săn mặt.",
+    "Luộc măng tươi trong nước sôi 7–10 phút, đổ bỏ nước đắng rồi xả lại và để ráo; lặp lại thêm một lần nếu măng còn đắng, đến khi măng mềm mà vẫn giữ độ giòn.",
+    "Phi hành tím với dầu ăn trên lửa vừa 1–2 phút, đảo đều tay đến khi hành thơm và chuyển vàng nhạt.",
+    "Cho vịt đã ướp vào xào trên lửa lớn 5–7 phút, đảo cho thịt săn, mặt thịt xém nhẹ và ra bớt mỡ thì giảm lửa.",
+    "Xào riêng măng với một ít dầu ăn và hành tím trên lửa vừa 3–4 phút, đảo đều đến khi măng thấm và dậy mùi thơm.",
+    "Cho măng vào nồi vịt, thêm nước vừa xâm xấp, đun sôi rồi hạ lửa nhỏ nấu 20–25 phút không đậy kín nắp, hớt bọt thường xuyên đến khi vịt mềm và nước nấu trong.",
+    "Nêm lại bằng nước mắm, nấu thêm khoảng 2 phút cho vị mặn thấm đều, rồi tắt bếp, rắc hành lá và hạt tiêu đen khi hành vừa xanh và dậy mùi."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "accessed": "2026-10-31",
+      "note": "Vịt nấu măng tươi, đúng loại măng của file — đối chiếu ướp vịt, áp chảo cho ra bớt mỡ, xào măng riêng rồi nấu chung.",
+      "url": "https://www.dienmayxanh.com/vao-bep/3-cach-lam-mon-vit-nau-mang-thom-ngon-dung-dieu-don-gian-01346"
+    },
+    {
+      "accessed": "2026-10-31",
+      "note": "Đúng tên vịt xáo măng, măng tươi — đối chiếu luộc măng nhiều lần nước, chiên sơ vịt và nấu chung 15–20 phút.",
+      "url": "https://vinid.net/blog/bi-quyet-nau-an/cach-lam-vit-xao-mang/"
+    },
+    {
+      "accessed": "2026-10-31",
+      "note": "Biến thể vịt om măng chua (khác loại măng) — chỉ đối chiếu kỹ thuật ướp, xào săn, om lửa nhỏ và hớt bọt cho nước trong.",
+      "url": "https://cookbeo.com/recipes/vit-nau-mang-chua"
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-005 đợt 5: nâng Mức 2 — đối chiếu 3 nguồn công thức. Định lượng: không thay đổi dòng nào vì hồ sơ không có đề xuất đạt đồng thuận để sửa. Bất thường ghi nhận: cả 3 nguồn đều mô tả món nấu/om nhiều nước ăn kèm thay vì xáo dạng đĩa như file, thời gian làm mềm vịt dài hơn hẳn mức 12 phút ở bước cũ, và đều dùng thêm nguyên liệu khử hôi cùng rau thơm cuối món không có trong file; kèm ghi nhận vùng miền vn-central chưa được nguồn khẳng định rõ — chờ pha phân xử.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

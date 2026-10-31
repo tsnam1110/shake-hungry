@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "xao",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -114,15 +114,34 @@
     }
   ],
   "recipe_steps": [
-    "Hấp cua, gỡ thịt; ngâm miến mềm, cắt ngắn.",
-    "Xào tỏi, thịt cua, cà rốt; cho miến và trứng vào xào đều, nêm nước tương.",
-    "Thêm giá đỗ, hành lá, rắc tiêu; dọn nóng."
+    "Hấp cua trên lửa lớn đến khi vỏ chuyển đỏ và thịt chín tới, để nguội bớt rồi gỡ lấy thịt cua nhẹ tay cho thịt giữ thớ, không nát vụn.",
+    "Ngâm miến trong nước ấm 5–10 phút cho sợi mềm, vớt ra để ráo rồi trộn với một ít dầu ăn và cắt ngắn vừa ăn để sợi miến tơi, không dính bết khi xào.",
+    "Phi tỏi với dầu ăn trên lửa vừa cho vàng thơm, cho thịt cua vào xào nhanh 1–2 phút đến khi thịt săn và dậy mùi gạch cua rồi trút ra đĩa để riêng, tránh xào lâu làm cua dai và nát.",
+    "Xào cà rốt thái sợi trên lửa vừa 2–3 phút cho vừa mềm nhưng còn giòn, rồi cho miến vào đảo đều; rưới thêm 2–3 muỗng nước quanh chảo và đảo nhẹ cho sợi miến mềm đều mà không khô.",
+    "Đánh tan trứng gà, rưới đều lên mặt miến và đảo nhẹ trên lửa vừa cho trứng chín, áo mỏng quanh sợi miến; cho thịt cua trở lại chảo, nêm nước tương và đảo nhanh cho thấm đều.",
+    "Cho giá đỗ và hành lá vào sau cùng, đảo nhanh khoảng 30 giây trên lửa lớn rồi tắt bếp ngay khi giá vừa chín tới và còn giòn; rắc hạt tiêu đen, dọn ra đĩa và ăn nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "accessed": "2026-10-31",
+      "note": "Miến xào cua — đối chiếu xào thịt cua riêng, xào rau củ trước miến và rưới trứng áo sợi miến.",
+      "url": "https://www.bluestone.com.vn/blogs/vao-bep/cach-lam-mien-xao-cua"
+    },
+    {
+      "accessed": "2026-10-31",
+      "note": "Miến xào cua biển — đối chiếu ướp và xào thịt cua riêng, cho miến vào sau và thêm ít nước cho sợi mềm đều.",
+      "url": "https://pasgo.vn/blog/cach-lam-mien-xao-cua-bien-dang-cap-chuan-cong-thuc-nha-hang-3099"
+    },
+    {
+      "accessed": "2026-10-31",
+      "note": "Miến xào cua bể Hải Phòng — đối chiếu trộn miến với dầu trước khi xào và cho giá đỗ vào cuối đảo nhanh.",
+      "url": "https://cookpad.com/vn/cong-thuc/472096"
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-005 đợt 5: nâng Mức 2 — đối chiếu 3 nguồn công thức đã mở đọc toàn văn (BlueStone, PasGo, Cookpad). Định lượng: giữ nguyên toàn bộ, không sửa — miến 70g nằm trong dải của các nguồn, trứng gà khớp biến thể 1 nguồn, giá đỗ và thịt cua không đủ cơ sở quy đổi (nguồn cân cua nguyên con, kho tính theo thịt cua đã gỡ) nên không kết luận lệch. Bất thường ghi nhận chờ pha phân xử: thiếu hành tây (2/3 nguồn dùng), thiếu nấm mèo (1/3 nguồn), và gia vị nêm chính trong file là nước tương trong khi cả 3 nguồn đều nêm bằng nước mắm/dầu hào.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

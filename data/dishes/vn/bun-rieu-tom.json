@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -146,11 +146,31 @@
     }
   ],
   "recipe_steps": [
-    "Tôm khô ngâm mềm, xay nhuyễn, trộn trứng gà làm riêu; nấu nước dùng, thả riêu cho nổi từng mảng.",
-    "Cho cà chua vào nước dùng tạo màu, nêm mắm tôm, nước mắm vừa ăn.",
-    "Trụng bún, xếp đậu phụ chiên, chan nước dùng riêu và cà chua, ăn kèm rau thơm, giá, xà lách."
+    "Rửa tôm khô, ngâm nước ấm khoảng 20–30 phút đến khi tôm nở mềm, vớt ra xay hoặc giã nhuyễn; giữ lại nước ngâm để cho vào nước dùng.",
+    "Trộn tôm khô đã xay với trứng gà, nêm chút mắm tôm và muối, quết đều tay như đánh trứng khoảng 3–5 phút đến khi hỗn hợp bông mịn, để nghỉ chừng 20 phút cho thấm.",
+    "Cho cà chua vào nồi nước dùng, nấu lửa vừa khoảng 8–10 phút, dằm nhẹ đến khi cà mềm nhừ và nước chuyển màu đỏ cam.",
+    "Hạ lửa nhỏ cho nước dùng chỉ sôi lăn tăn, múc từng muỗng hỗn hợp riêu thả nhẹ vào nồi; đun khoảng 3–5 phút đến khi viên riêu nổi lên mặt là chín, tránh khuấy mạnh kẻo vỡ riêu.",
+    "Cho đậu phụ chiên vào nồi sau cùng, nấu thêm khoảng 5 phút trên lửa nhỏ để đậu thấm nước dùng mà vẫn giữ được lớp vỏ giòn.",
+    "Nêm mắm tôm, nước mắm và dấm gạo ở bước cuối, nếm lại cho vừa chua mặn rồi tắt bếp ngay để nước dùng thơm mà không bị chua gắt.",
+    "Trụng bún tươi qua nước sôi cho sợi tơi, xếp vào tô cùng giá đỗ và xà lách, chan nước dùng cùng riêu và cà chua, rắc hành lá, kinh giới và tía tô thái nhỏ; dùng nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH — đúng món bún riêu tôm khô, trang chứa 2 công thức cho 4 người cùng họ tôm khô + trứng với file; đối chiếu trứng gà ~25g/người và kỹ thuật ngâm tôm khô, quết riêu, nêm gia vị ở bước cuối.",
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-nau-bun-rieu-tom-cuc-ngon-moi-la-dam-da-cho-bua-sang-04449?srsltid=AfmBOopOEk7DgfSx2NJ1fTk4LMMrIM3zVKEF9OoYWs7vamkBnfyGwH0J"
+    },
+    {
+      "accessed": "2026-10-31",
+      "note": "VnExpress Cooking — đúng món bún riêu tôm cho 5 tô nhưng là biến thể khác căn bản (riêu từ tôm tươi giã lọc lấy váng, không trứng); đối chiếu kỹ thuật hầm tôm khô lửa nhỏ trong nước dùng và lưu ý về nước mắm gây chua.",
+      "url": "https://vnexpress.net/bun-rieu-tom-de-nau-4338888.html"
+    },
+    {
+      "accessed": "2026-10-31",
+      "note": "Tập Làm Bánh — đúng món bún riêu tôm khô cho 10 tô; đối chiếu mắm tôm 5g/tô và trứng gà ~25g/người khớp file, cùng cách xào cà chua thật nhừ và thả riêu từng muỗng vào nồi lửa nhỏ.",
+      "url": "http://taplambanh.com/bun-rieu-tom-kho/"
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/bun-rieu-tom.webp",
@@ -161,7 +181,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt DISH-004 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt DISH-004 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-005 đợt 5: nâng Mức 2 — đối chiếu 3 nguồn công thức bún riêu tôm đã mở đọc (Điện Máy XANH — 2 công thức, VnExpress Cooking, Tập Làm Bánh); định lượng giữ nguyên toàn bộ: trứng gà 25g và mắm tôm 5g được 2 nguồn ủng hộ chính xác, tôm khô 30g và cà chua 80g dao động hai chiều giữa các nguồn, không đạt đồng thuận lệch >25–30%. Bất thường ghi nhận: riêu trong các nguồn luôn trộn thêm thịt xay/bằm (2/3 nguồn, 30–63g/người) mà file không có — khác biệt cấu trúc lớn nhất của món; hai họ biến thể riêu mâu thuẫn nhau (tôm khô + thịt + trứng ở Điện Máy XANH/Tập Làm Bánh so với tôm tươi giã lọc lấy váng ở VnExpress) và các nguồn mâu thuẫn về việc nêm nước mắm có gây chua hay không — chờ pha phân xử.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -54,7 +54,7 @@
     },
     {
       "ingredient_slug": "mang-tuoi",
-      "quantity": 30,
+      "quantity": 50,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -110,15 +110,40 @@
     }
   ],
   "recipe_steps": [
-    "Luộc gà với gừng, lấy nước dùng; thịt gà xé sợi.",
-    "Ngâm nấm hương, thái sợi; xào măng tươi với nấm cho thơm rồi cho vào nước dùng.",
-    "Trụng bún, xếp thịt gà xé, chan nước dùng măng nấm, rắc hành lá, rau mùi."
+    "Ngâm nấm hương khô trong nước ấm 20–30 phút, đảo nhẹ vài lần đến khi nấm nở mềm hoàn toàn, rồi vớt ra thái sợi và giữ lại nấm để xào.",
+    "Luộc măng tươi 2–3 lần nước, mỗi lần 5–7 phút trên lửa vừa và không đậy kín nắp, xả sạch sau mỗi lần đến khi măng hết vị đắng gắt, rồi để ráo.",
+    "Đun gà với gừng và muối trong nước, hớt bọt khi sôi, rồi hạ lửa nấu 20–25 phút đến khi thịt gà chín mềm và nước dùng trong.",
+    "Vớt gà ra để nguội khoảng 10 phút cho thịt săn lại, rồi xé thành sợi vừa ăn, tránh xé quá vụn làm thịt bị khô.",
+    "Xào măng tươi cùng nấm hương trên lửa vừa 3–5 phút, đảo đều tay và nêm một ít nước mắm, đến khi măng nấm thấm và dậy mùi thơm.",
+    "Cho măng và nấm đã xào vào nồi nước dùng gà, đun sôi lại 3–4 phút trên lửa vừa, nêm nước mắm và muối đến khi vị mặn vừa và nước dùng thơm mùi măng.",
+    "Trụng bún tươi trong nước sôi 30 giây đến 1 phút, vớt ra khi sợi bún mềm mà còn dai, xếp thịt gà xé lên trên, chan nước dùng nóng cùng măng nấm, rồi rắc hành lá và rau mùi khi hành vừa xanh."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "accessed": "2026-10-31",
+      "note": "Bún gà nấm măng, dùng măng tươi và nấm hương khô như file — đối chiếu luộc măng 3 lần nước, hầm gà và xào măng nấm riêng.",
+      "url": "https://www.dienmayxanh.com/vao-bep/2-cach-nau-bun-ga-nam-thom-ngon-hap-dan-de-lam-cho-bua-sang-11777"
+    },
+    {
+      "accessed": "2026-10-31",
+      "note": "Bún măng gà (dùng măng ngâm, cùng họ công thức với VinID) — đối chiếu tỉ lệ măng, luộc măng không đậy nắp và xào măng nấm trước khi cho vào nước dùng.",
+      "url": "https://nongsanphuvinh.com/cach-nau-bun-mang-ga-don-gian-thom-ngon-cho-bua-sang/"
+    },
+    {
+      "accessed": "2026-10-31",
+      "note": "Bún măng gà — bản cùng công thức với Nông Sản Phú Vinh, đã mở để xác nhận trùng lặp, không tính là họ nguồn độc lập riêng.",
+      "url": "https://vinid.net/blog/cach-nau-bun-mang-ga/"
+    },
+    {
+      "accessed": "2026-10-31",
+      "note": "Bún măng gà kiểu Bắc — đối chiếu tỉ lệ măng/gà cao hơn file và cách dùng nước luộc gà làm nước dùng với gừng.",
+      "url": "https://giadinh.suckhoedoisong.vn/mon-ngon-bun-mang-ga-172090331091233787.htm"
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt DISH-004 đợt 2 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt DISH-004 đợt 2 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-005 đợt 5: nâng Mức 2 — đối chiếu 3 họ nguồn công thức (VinID và Nông Sản Phú Vinh là cùng một họ công thức). Định lượng: tăng măng tươi 30→50g theo nguồn dùng đúng măng tươi (50g/khẩu phần), được họ nguồn còn lại và tỉ lệ măng/gà của nguồn thứ ba ủng hộ; không sửa thịt gà và gừng vì số nguồn là gà nguyên con và gừng nấu nước dùng bỏ đi, không quy đổi thẳng sang phần ăn được, và không sửa nấm hương khô vì các nguồn mâu thuẫn nhau. Bất thường ghi nhận: lượng bún 1,5kg cho 2 người ở một nguồn bị nghi là lỗi biên tập; 2 họ nguồn có nấm đùi gà và rau răm nhưng file chưa có hai dòng nguyên liệu này — chờ pha phân xử.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

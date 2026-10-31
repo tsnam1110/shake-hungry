@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "xao",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -66,15 +66,39 @@
     }
   ],
   "recipe_steps": [
-    "Súp lơ xanh tách nhánh nhỏ, chần sơ nước sôi.",
-    "Phi thơm tỏi với dầu.",
-    "Cho súp lơ vào xào nhanh, nêm nước mắm, vừa chín giòn là tắt bếp."
+    "Tách súp lơ xanh thành nhánh nhỏ vừa ăn, rửa sạch nhiều lần rồi để ráo; băm nhỏ tỏi để sẵn, nhánh tách đều nhau giúp chần và xào chín cùng lúc.",
+    "Chần súp lơ trong nước sôi 1–2 phút trên lửa lớn, gắp ra ngâm ngay vào nước lạnh khoảng 5 phút rồi để ráo; súp lơ đạt khi giữ màu xanh mướt và còn giòn.",
+    "Đun nóng dầu ăn trên lửa vừa, cho tỏi vào phi khoảng 30–60 giây đến vàng nhẹ và dậy mùi thơm, tránh để tỏi cháy sậm màu.",
+    "Cho súp lơ đã chần vào chảo, xào nhanh tay trên lửa lớn khoảng 1 phút cho rau nóng đều và bám dầu tỏi.",
+    "Nêm nước mắm, đảo đều trên lửa lớn thêm 2–3 phút cho thấm vị; nếu rau khô có thể thêm một ít nước để đảo dễ và không cháy đáy chảo.",
+    "Tắt bếp khi súp lơ chín tới, màu xanh mướt và vẫn giòn, không mềm nhũn; trút ra đĩa và dùng ngay khi còn nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "accessed": "2026-10-31",
+      "note": "Đúng món bông cải xanh xào tỏi — đối chiếu định lượng bông cải, tỏi, dầu ăn và kỹ thuật luộc rồi ngâm nước đá để giữ màu xanh giòn.",
+      "url": "https://www.dienmayxanh.com/vao-bep/2-cach-lam-bong-cai-xao-toi-va-bong-cai-xao-thit-bo-thom-ngon-03953?srsltid=AfmBOoqpoW-w_i-_4pA-JqaduN9MiKPGlYewFmCKoOtZW-fTzbrcXoxt"
+    },
+    {
+      "accessed": "2026-10-31",
+      "note": "Đúng món bông cải xanh xào tỏi — đối chiếu kỹ thuật chần nhanh 1–2 phút và xào khoảng 2 phút để giữ độ giòn, tránh luộc kĩ.",
+      "url": "https://baoangiang.com.vn/7-mon-an-de-nau-giup-kiem-soat-duong-huyet-cho-nguoi-benh-tieu-duong-a425851.html"
+    },
+    {
+      "accessed": "2026-10-31",
+      "note": "Đúng món súp lơ xanh xào tỏi — đối chiếu kỹ thuật chần 1–2 phút, ngâm nước lạnh để ráo và xào nhanh tay trên lửa lớn 2–3 phút.",
+      "url": "https://cholaithieu.com/7-cach-nau-sup-lo-xanh-ngon-mieng-giu-tron-dinh-duong/"
+    },
+    {
+      "accessed": "2026-10-31",
+      "note": "Đúng món bông cải xanh xào tỏi nhưng là nguồn trùng dẫn Điện Máy XANH (cùng công thức, khác số khẩu phần ghi) — chỉ dùng chỉ ra mâu thuẫn khẩu phần, không tính là nguồn độc lập cho định lượng.",
+      "url": "https://giavichinsu.com/cong-thuc-lam-bong-cai-xao.html"
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-005 đợt 5: nâng Mức 2 — đối chiếu 4 nguồn đã mở, trong đó 1 nguồn trùng dẫn Điện Máy XANH; không sửa định lượng vì khẩu phần các nguồn mâu thuẫn trực diện và file nằm giữa hai cực, không có đồng thuận độc lập. Bất thường ghi nhận: cả 4 nguồn đều không nêm bằng nước mắm (dùng muối/hạt nêm) trong khi file nêm nước mắm; thời gian chần phân kỳ 1–2 phút so với 5 phút và lượng dầu ăn theo người chưa đồng thuận — chờ pha phân xử.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

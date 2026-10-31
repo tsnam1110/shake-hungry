@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -74,15 +74,39 @@
     }
   ],
   "recipe_steps": [
-    "Cá nục làm sạch; lá giang rửa sạch, vò nhẹ cho ra vị chua.",
-    "Đun sôi nước với cà chua, cho lá giang vào lấy vị chua, nêm nước mắm.",
-    "Thả cá nấu chín, rắc hành lá, dùng nóng."
+    "Làm sạch cá nục, để ráo 10 phút cho bề mặt khô, rồi ướp với nước mắm 10–15 phút cho thịt cá thấm và săn lại.",
+    "Rửa sạch lá giang, để ráo khoảng 5 phút rồi vò nhẹ cho lá hơi dập, giúp lá tiết vị chua khi nấu mà không bị nát vụn.",
+    "Đun sôi nước cùng cà chua trên lửa vừa 3–4 phút, đảo nhẹ đến khi cà chua mềm và nước bắt đầu lên màu.",
+    "Thả cá nục vào nồi, nấu lửa vừa 5–7 phút mà không khuấy mạnh, đến khi thịt cá chuyển trắng, chín tới và giữ nguyên miếng, rồi nêm nước mắm.",
+    "Cho lá giang vào từ từ khi cá đã gần chín, nấu thêm 2–3 phút trên lửa vừa và nếm lại, đến khi lá chuyển xanh sậm và nước canh có vị chua dịu, không nấu lâu hơn kẻo lá bị đắng.",
+    "Tắt bếp, rắc hành lá lên mặt canh và để yên khoảng 1 phút cho hành vừa xanh và dậy mùi, dùng ngay khi canh còn nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "accessed": "2026-10-31",
+      "note": "Canh lá giang cá nục, nguồn có định lượng gam rõ nhất — đối chiếu cá nấu 5–7 phút và cho lá giang vào cuối, nấu thêm khoảng 5 phút.",
+      "url": "https://memart.vn/tin-tuc/blog3/cach-nau-canh-la-giang-voi-ca-nuc-vi-cb.html"
+    },
+    {
+      "accessed": "2026-10-31",
+      "note": "Canh cá nục lá giang — đối chiếu vò lá giang sau khi cá chín, cho từ từ và nếm lại độ chua, chỉ nấu thêm 2–3 phút.",
+      "url": "https://saigonesebaguette.vn/cach-nau-canh-ca-nuc-la-giang-chua-diu-dam-da-chuan-vi/"
+    },
+    {
+      "accessed": "2026-10-31",
+      "note": "Biến thể canh chua lá giang cá basa (khác loại cá) — chỉ đối chiếu phương pháp cho lá giang vào khi nước sôi và thứ tự rau cuối.",
+      "url": "https://cachnaungon.com/cach-lam-canh-chua-la-giang-ca-basa-dac-san-mien-trung-08680/"
+    },
+    {
+      "accessed": "2026-10-31",
+      "note": "Biến thể canh lá giang cá basa trên Cookpad (khác loại cá) — chỉ đối chiếu cá nấu 5–7 phút và vò nhẹ lá giang cho vào khi cá đã chín.",
+      "url": "https://cookpad.com/vn/cong-thuc/8981167-canh-la-giang-ca-basa"
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Cá nục là nguyên liệu tầng 6 (FNRI) — món mang cờ chưa kiểm định theo quy ước dự án.",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Cá nục là nguyên liệu tầng 6 (FNRI) — món mang cờ chưa kiểm định theo quy ước dự án. [LV2-005 đợt 5: nâng Mức 2 — đối chiếu 4 nguồn, trong đó 2 nguồn đúng cá nục và 2 nguồn là biến thể cá basa cùng phương pháp canh lá giang. Định lượng: không thay đổi dòng nào; riêng lá giang mâu thuẫn cực mạnh giữa các nguồn (khoảng 25g/khẩu phần khi tính lá đã nhặt so với khoảng 150g/khẩu phần khi tính cả bó) và không có 2 nguồn đồng thuận cùng một quy ước cân, nên giữ nguyên 15g và cần chủ dự án phân xử quy ước cân lá giang — chờ pha phân xử. Bất thường ghi nhận: file thiếu các nguyên liệu phi thơm mà 3/4 nguồn có, cách xào sơ cá xuất hiện ở 2/4 nguồn trong khi file theo trường phái cho cá thẳng vào nước sôi, và vùng miền của món chưa thống nhất giữa miền Trung và miền Nam/Tây — chờ pha phân xử.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

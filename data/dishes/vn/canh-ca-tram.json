@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -50,7 +50,7 @@
     },
     {
       "ingredient_slug": "ca-chua",
-      "quantity": 50,
+      "quantity": 30,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -122,15 +122,34 @@
     }
   ],
   "recipe_steps": [
-    "Cá trắm làm sạch, cắt khúc, ướp muối và gừng đập dập cho bớt tanh.",
-    "Phi hành tím, xào dưa cải với cà chua cho mềm và ra vị chua dịu.",
-    "Đổ nước vào đun sôi, thả cá nấu chín tới, nêm nước mắm, rắc hành lá, thì là và ớt, dùng nóng."
+    "Làm sạch cá trắm, cắt khúc vừa ăn, ướp với muối và gừng đập dập khoảng 15 phút, đến khi thịt cá săn lại và mùi tanh giảm rõ.",
+    "Vắt nhẹ dưa cải cho bớt nước chua, rửa tráng nhanh nếu muốn vị dịu hơn, để ráo đến khi dưa không còn nhỏ giọt.",
+    "Phi hành tím với dầu ăn ở lửa vừa 1–2 phút đến khi hành thơm và vàng nhẹ; cho dưa cải và cà chua vào xào 3–4 phút, đến khi dưa mềm, cà chua ra màu và vị chua dịu lại.",
+    "Đổ nước vào đun sôi ở lửa lớn, thả cá vào cho ngập nước, hạ lửa vừa nấu 10–15 phút, đến khi thịt cá chín trắng đều mà không nấu lâu hơn kẻo cá nát.",
+    "Nêm nước mắm, đun thêm 1–2 phút ở lửa nhỏ cho cá thấm vị, nếm thấy vị chua mặn cân bằng.",
+    "Tắt bếp, rắc hành lá, thì là và ớt lên trên, đậy nắp khoảng 1 phút cho rau thơm dậy mùi mà vẫn giữ màu xanh rồi dùng nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/2-cach-nau-canh-chua-ca-tram-ngon-thanh-mat-giai-nhiet-ngay-05762",
+      "accessed": "2026-10-31",
+      "note": "Đúng món canh chua cá trắm nấu dưa chua (biến thể có thêm thịt ba chỉ); đối chiếu định lượng per-serving của cá, dưa và cà chua, thời gian nấu cá 10 phút."
+    },
+    {
+      "url": "https://tripi.vn/blog/vi/kinh-nghiem-hay/huong-dan-cach-nau-canh-chua-ca-tram-ket-hop-dua-chua-don-gian-va-ngon-mieng-tai-nha-tripi",
+      "accessed": "2026-10-31",
+      "note": "Đúng món canh chua cá trắm với dưa chua, ghi rõ khẩu phần 4 người và khớp khung nguyên liệu của file nhất; đối chiếu định lượng per-serving và thời gian nấu cá 10–15 phút."
+    },
+    {
+      "url": "https://sotaynauan.com/tuyet-chieu-mon-canh-ca-nau-dua-chua-thom-ngon-tron-vi/",
+      "accessed": "2026-10-31",
+      "note": "Đúng món canh cá trắm nấu dưa chua; đối chiếu thứ tự xào dưa và cà chua trước khi đổ nước, cách vắt bớt nước chua của dưa và bước cho hành lá, thì là sau cùng."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-005 đợt 5: nâng Mức 2 — đối chiếu 3 nguồn công thức đã mở kiểm chứng. Phân xử định lượng: cà chua 50→30g vì cả 2 nguồn có định lượng đều thấp hơn file trên 30% (Tripi khoảng 25–30g/người, Điện Máy XANH khoảng 10g/người), lấy mức 30g thận trọng theo nguồn Tripi. Bất thường ghi nhận: 1/3 nguồn có thịt ba chỉ mà file không có (nhiều khả năng là biến thể); 2/3 nguồn chiên hoặc rán cá trước khi nấu trong khi file thả cá thẳng sau khi ướp; 2/3 nguồn lưu ý không nêm muối vì dưa đã mặn, file vẫn có muối 1g — chờ pha phân xử.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

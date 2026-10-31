@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -134,15 +134,34 @@
     }
   ],
   "recipe_steps": [
-    "Ướp gà với nghệ và nước mắm, rim với ít nước cho gà thấm, nước dùng sánh vàng.",
-    "Trụng sợi mì Quảng, xếp rau ghém gồm bắp chuối, xà lách, húng quế.",
-    "Chan ít nước rim gà, thêm trứng cút, lạc rang và bánh tráng nướng bẻ nhỏ."
+    "Ướp thịt gà với bột nghệ và nước mắm trong 20–30 phút, đảo đều cho gà thấm màu vàng và gia vị trước khi nấu.",
+    "Làm nóng dầu ăn trên lửa vừa, cho thịt gà vào xào 5–10 phút đến khi thịt săn lại, bề mặt se và dậy mùi nghệ.",
+    "Chan ít nước vào nồi gà, hạ lửa nhỏ và rim khoảng 30–45 phút cho thịt mềm, nước rim sánh lại và đậm vị; nêm lại nước mắm cho vừa mặn.",
+    "Luộc chín trứng cút, bóc vỏ và để riêng; trụng sợi mì Quảng trong nước sôi khoảng 2 phút rồi vớt ra để ráo, sợi mì mềm nhưng còn dai, không nát.",
+    "Xếp bắp chuối, xà lách và húng quế vào tô, đặt sợi mì lên trên rồi xếp thịt gà rim và trứng cút vào, giữ rau còn tươi giòn khi chan nước nóng.",
+    "Chan nước rim gà xăm xắp mặt mì — chỉ chan rất ít như cách ăn mì Quảng — rắc hành lá và lạc rang, bẻ nhỏ bánh tráng đặt lên trên và dọn ngay khi còn nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "accessed": "2026-10-31",
+      "note": "Mì Quảng gà Đà Nẵng — đối chiếu ướp gà với nghệ, rim nhân riêng và chan rất ít nước xăm xắp mặt mì.",
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-nau-mi-quang-ga-da-nang-chuan-vi-ngon-mieng-de-lam-tai-06752?srsltid=AfmBOowOOEFPGlnMO2-GLSCr-JCS22uAbZfzrsWiOlCb8CgmrN1vhbL"
+    },
+    {
+      "accessed": "2026-10-31",
+      "note": "Mì Quảng gà miền Trung — đối chiếu cách xào gà riêng, rim cùng trứng cút và trình bày với lạc rang, bánh tráng.",
+      "url": "https://www.bluestone.com.vn/blogs/vao-bep/nau-mi-quang-ga-mien-trung"
+    },
+    {
+      "accessed": "2026-10-31",
+      "note": "Mì Quảng gà — đối chiếu hầm nước dùng riêng, kho nhân gà đậm vị và nguyên tắc chan ít nước khi ăn.",
+      "url": "https://cookpad.com/vn/cong-thuc/3628271"
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt DISH-004 đợt 2 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt DISH-004 đợt 2 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-005 đợt 5: nâng Mức 2 — đối chiếu 3 nguồn công thức đã mở đọc toàn văn (Điện Máy XANH, BlueStone, Cookpad). Định lượng: giữ nguyên toàn bộ, không sửa — sợi mì 90g gần khớp nguồn (100g, lệch −10% trong ngưỡng) và các chênh lệch còn lại chỉ có 1 nguồn định lượng được nên không đủ cơ sở sửa. Bất thường ghi nhận chờ pha phân xử: thiếu sả (3/3 nguồn đều dùng), thiếu củ nén/hành tăm (2/3 nguồn), dầu đậu phộng đặc trưng bị ghi chung là dầu ăn (3/3 nguồn nhấn mạnh), trứng cút 20g có thể thấp so với 1 nguồn, thịt ba chỉ chỉ xuất hiện ở 1/3 nguồn như biến thể.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

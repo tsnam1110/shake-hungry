@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "xao",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -114,11 +114,31 @@
     }
   ],
   "recipe_steps": [
-    "Ướp thịt bò với dầu hào, nước tương, tỏi.",
-    "Xào thịt bò lửa lớn, để riêng; xào bánh phở cho săn, hơi xém cạnh.",
-    "Cho rau cải, hành tây, cà rốt và thịt bò vào đảo chung, nêm lại, rắc tiêu."
+    "Thái thịt bò mỏng ngang thớ, ướp với dầu hào, nước tương, tỏi băm và hạt tiêu đen trong 15–20 phút, trộn đều tay tới khi thịt thấm và bề mặt hơi se.",
+    "Gỡ tơi bánh phở bằng tay; nếu sợi dính nhau, trụng nhanh khoảng 10 giây trong nước nóng rồi vớt ra để ráo 2–3 phút, tới khi sợi rời nhau và không còn đọng nước.",
+    "Pha dầu hào với nước tương thành phần sốt riêng, khuấy đều khoảng 30 giây cho hai phần hoà quyện, để sẵn cạnh bếp trước khi xào.",
+    "Đun dầu ăn nóng trên lửa lớn, cho thịt bò vào xào nhanh 1–2 phút, đảo liên tục tới khi thịt chín tái khoảng 70% và còn hồng nhẹ thì trút riêng ra đĩa.",
+    "Dùng lại chảo trên lửa lớn, cho hành tây và cà rốt vào xào 1–2 phút tới khi vừa mềm mà còn giòn, thêm phần cọng cải ngọt đảo khoảng 1 phút, rồi cho phần lá cải vào đảo 30 giây–1 phút tới khi lá vừa xẹp và còn xanh, trút rau ra cùng thịt bò.",
+    "Cho bánh phở vào chảo với dầu ăn, xào trên lửa lớn 1–2 phút, đảo nhẹ tay tới khi sợi áo dầu, săn lại và hơi xém cạnh; rưới phần sốt đã pha vào, đảo đều khoảng 30 giây cho sợi thấm đều.",
+    "Trả thịt bò và rau vào chảo phở, trộn đều trên lửa lớn khoảng 1 phút tới khi thịt chín hẳn và mọi phần đều nóng, rắc hạt tiêu đen, tắt bếp và dùng nóng ngay."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/2-cach-lam-pho-xao-bo-ngon-mieng-de-lam-cuc-hap-dan-08539?srsltid=AfmBOorYew8xCfEuRRgpwytuSFSYHGYlCnuYvzrZlQeGIP0ck2D-EdwR",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH — đúng món phở xào bò (2 công thức rau cải và cần tây); đối chiếu tỉ lệ phở:bò theo khẩu phần, cách ướp bò và thứ tự xào riêng bò, rau, phở rồi mới trộn."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/22677482",
+      "accessed": "2026-10-31",
+      "note": "Cookpad VN — phở áp chảo thịt bò xào (biến thể giòn, khác biến thể xào mềm trong file); đối chiếu cải ngọt 50 g/người khớp file và kỹ thuật cho cọng cải vào trước, lá vào sau."
+    },
+    {
+      "url": "https://www.bluestone.com.vn/blogs/vao-bep/pho-xao-bo?srsltid=AfmBOoqbvwLJSSlZEe7jdyCedjsNd9JMOyL1sjL8kVVtmWy1pwwOG6Uu",
+      "accessed": "2026-10-31",
+      "note": "BlueStone — đúng món phở xào bò; đối chiếu tỉ lệ phở:bò của cả mẻ và kỹ thuật gỡ tơi/trụng phở, xào bò lửa lớn rồi trút riêng."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/pho-xao.webp",
@@ -129,7 +149,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. [LV2-005 đợt 5: nâng Mức 2 — đối chiếu 3 nguồn công thức đã mở đọc; giữ nguyên toàn bộ định lượng vì tỉ lệ phở:bò phân tán mạnh giữa các nguồn (chỉ 1 nguồn ủng hộ tăng thịt bò rõ, 1 nguồn khớp file) và lượng dầu không so trực tiếp được do khác kỹ thuật xào mềm/áp chảo. Bất thường ghi nhận: rau đi kèm không thống nhất giữa các nguồn (file dùng cải ngọt, khớp đúng 1 nguồn) và 1 nguồn ghi trùng hai lượng cải khác nhau trong cùng bài — chờ pha phân xử.]",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

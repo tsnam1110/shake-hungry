@@ -25,7 +25,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "chien",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -109,11 +109,31 @@
     }
   ],
   "recipe_steps": [
-    "Cá mặn gỡ xương, xé nhỏ, chiên sơ cho thơm; trứng đánh tan.",
-    "Phi tỏi, rang cơm nguội lửa lớn cho tơi hạt cùng cải ngọt.",
-    "Cho cá mặn và trứng vào đảo đều, nêm nước tương, rắc hành lá và tiêu."
+    "Tơi cơm trắng nguội cho rời hạt rồi để trong tủ lạnh qua đêm hoặc ít nhất vài giờ; hạt cơm se mặt, không bết dính khi bóp nhẹ là đạt.",
+    "Ngâm cá thu (cá mặn) trong nước khoảng 30–60 phút cho nhả bớt mặn, vớt ra để ráo rồi gỡ bỏ xương và xé nhỏ; thịt cá tơi thành miếng nhỏ, không còn xương dăm là đạt.",
+    "Đánh tan trứng gà trong bát khoảng 1 phút đến khi lòng đỏ và lòng trắng quyện đều, để sẵn cạnh bếp để cho vào cơm thành hai đợt khi rang.",
+    "Làm nóng chảo trên lửa vừa, phi tỏi băm 1–2 phút đến khi tỏi vàng nhẹ và dậy mùi thơm, rồi cho cá mặn đã xé vào đảo nhanh 2–3 phút cho cá săn và thơm.",
+    "Cho cơm đã tơi vào chảo, rang trên lửa lớn 4–5 phút và đảo liên tục; hạt cơm nóng đều, tơi rời và hơi săn mặt là đạt, cho trứng đã đánh vào làm hai đợt và đảo nhanh cho trứng áo đều hạt cơm.",
+    "Cho cải ngọt vào đảo trên lửa lớn 1–2 phút đến khi cải vừa chín, thân còn xanh và giữ độ giòn, rồi nêm nước tương thật nhẹ và đảo đều; không nêm thêm gia vị mặn vì cá đã mặn sẵn.",
+    "Tắt bếp, rắc hành lá cắt nhỏ và hạt tiêu đen lên mặt, đảo thêm khoảng 30 giây cho hành vừa xanh và tiêu dậy mùi, dọn ra đĩa dùng nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://eva.vn/bep-eva/cach-lam-com-chien-ca-man-ngon-don-gian-nhat-c162a448215.html",
+      "accessed": "2026-10-31",
+      "note": "Đúng món cơm chiên cá mặn; đối chiếu cá mặn làm từ cá thu/cá chét, cá 50g và trứng ~50g mỗi phần, cùng kỹ thuật dùng cơm nguội để lạnh cho hạt se."
+    },
+    {
+      "url": "https://bepxua.vn/bien-tau-com-nguoi-thanh-mon-com-chien-ca-man-ngon-nuc-mui/?noamp=mobile",
+      "accessed": "2026-10-31",
+      "note": "Đúng món cơm chiên cá mặn, ghi rõ 4 phần ăn; đối chiếu lượng trứng ~40g/người, xử lý khử mặn cho cá và cách trộn trứng vào cơm khi rang."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/15058319",
+      "accessed": "2026-10-31",
+      "note": "Đúng món cơm chiên cá mặn, ghi rõ 2 người; đối chiếu phần cá sau gỡ xương ~50–60g/người và trứng 50g/người, lõi món cơm + cá mặn + trứng khớp file."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/com-chien-ca-man.webp",
@@ -124,7 +144,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 đợt 2 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 12 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).]",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 đợt 2 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 12 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).] [LV2-005 đợt 5: nâng Mức 2 — đối chiếu 3 nguồn công thức đã mở đọc, đều đúng món cơm chiên cá mặn. Định lượng: giữ nguyên toàn bộ — cá 50g và trứng 50g mỗi phần khớp cả 3 nguồn khi quy về khẩu phần, lượng cơm 220g nằm trong dải dao động rộng của các nguồn nên không đủ đồng thuận để sửa. Bất thường ghi nhận: cả 3 nguồn mô tả cá mặn là cá thu/cá chét ướp muối phơi nắng (nửa khô) trong khi file ánh xạ sang ca-thu (cá thu tươi) — loài đúng nhưng trạng thái khác, natri thực tế cao hơn hồ sơ cá tươi; ức gà chỉ có ở 1/3 nguồn, lạp xưởng và nấm đông cô chỉ ở biến thể Cookpad 1/3 nguồn, cải ngọt 40g của file không xuất hiện trong công thức lõi của cả 3 nguồn — chờ pha phân xử.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

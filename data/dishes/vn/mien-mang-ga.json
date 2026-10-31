@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -50,7 +50,7 @@
     },
     {
       "ingredient_slug": "mang-kho",
-      "quantity": 12,
+      "quantity": 35,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -106,15 +106,35 @@
     }
   ],
   "recipe_steps": [
-    "Ngâm măng khô, luộc bỏ nước đắng, xé sợi; luộc gà với gừng lấy nước dùng, thịt xé sợi.",
-    "Xào măng với nấm hương cho thơm, cho vào nước dùng, nêm vừa ăn.",
-    "Trụng miến, xếp thịt gà, chan nước dùng măng nấm, rắc hành lá, rau mùi."
+    "Ngâm măng khô qua đêm cho nở mềm, rửa lại nhiều lần cho bớt mùi chua; luộc măng rồi thay nước 2 lần, mỗi lần luộc vài phút đến khi nước trong hơn và măng hết vị đắng gắt.",
+    "Xé măng thành sợi vừa ăn, không xé quá mịn để sợi măng vẫn dai giòn sau khi nấu; ngâm nấm hương khô cho nở mềm rồi thái miếng vừa.",
+    "Luộc thịt gà với gừng trong nước có pha muối khoảng 35–40 phút trên lửa vừa đến khi thịt chín tới, da căng và nước luộc trong; vớt gà ra để nguội rồi xé sợi vừa ăn.",
+    "Xào măng đã xé với nấm hương trên lửa vừa 3–5 phút cùng chút muối và nước mắm cho măng thấm vị, sợi măng bóng và dậy mùi thơm.",
+    "Cho măng và nấm hương đã xào vào nồi nước luộc gà, nấu lửa nhỏ thêm 10–15 phút cho măng mềm, ngấm vị ngọt của nước dùng và nước dùng dậy mùi nấm.",
+    "Ngâm miến trong nước lạnh 5–7 phút cho sợi mềm, chần riêng trong nước sôi 2–3 phút rồi vớt ra ngay khi sợi trong và còn dai, không nấu miến chung trong nồi nước dùng.",
+    "Cho miến vào tô, xếp thịt gà xé lên trên, chan nước dùng nóng cùng măng và nấm hương, nêm lại nước mắm cho vừa ăn rồi rắc hành lá và rau mùi, dọn nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "accessed": "2026-10-31",
+      "note": "Miến măng gà — đối chiếu tỉ lệ măng khô/miến, cách ngâm và xào măng riêng trước khi nấu nước dùng.",
+      "url": "https://www.dienmayxanh.com/vao-bep/goi-y-mam-cung-man-ram-thang-7-day-du-cac-mon-04063?srsltid=AfmBOoq6SPs0olCkWOuHE8PI2YZm_7Qb0F_1ePbSSYYH7myLqg8nhUcV"
+    },
+    {
+      "accessed": "2026-10-31",
+      "note": "Miến gà nấu măng — đối chiếu luộc gà rồi ủ chín, xào măng trước và chỉ trụng miến riêng rất ngắn.",
+      "url": "https://www.huongnghiepaau.com/mien-ga"
+    },
+    {
+      "accessed": "2026-10-31",
+      "note": "Miến măng gà — đối chiếu ngâm măng thay nước nhiều lần, xé sợi và nấu măng trong nước luộc gà.",
+      "url": "https://thegioiamthuc.com/mon-mien-mang-ga/"
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt DISH-004 đợt 2 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt DISH-004 đợt 2 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-005 đợt 5: nâng Mức 2 — đối chiếu 3 nguồn công thức đã mở đọc toàn văn (Điện Máy XANH, Hướng Nghiệp Á Âu, Thế Giới Ẩm Thực). Định lượng: sửa măng khô 12g → 35g/khẩu phần — 3/3 nguồn đồng thuận tỉ lệ măng khô/miến khô 0,67–0,80 trong khi file cũ là 0,24, với miến giữ nguyên 50g thì măng tương ứng 33–40g, chọn 35g ở cận dưới thận trọng; thịt gà và miến giữ nguyên vì khớp nguồn sau quy đổi. Bất thường ghi nhận chờ pha phân xử: rau răm — rau ký tên của miến gà Bắc ở 2/3 nguồn — bị thay bằng rau mùi trong file, nấm hương chỉ xuất hiện ở 1/3 nguồn nên giữ nguyên.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

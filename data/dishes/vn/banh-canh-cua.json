@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -106,11 +106,31 @@
     }
   ],
   "recipe_steps": [
-    "Cua đồng xay, lọc lấy nước; đun nước cua đến khi riêu đóng bánh, vớt riêu để riêng.",
-    "Phi hành với dầu, xào riêu cua cho thơm; nấu sợi bánh canh trong nước cua đến khi chín.",
-    "Múc ra tô, thêm trứng cút, rắc hành phi, hành lá, rau mùi."
+    "Cho cua đồng đã xay vào nước, bóp nhồi đều tay rồi gạn lọc qua rây, lặp lại 2–3 lần đến khi nước cua trong, không còn lợn cợn xác cua.",
+    "Đun nồi nước cua trên lửa nhỏ, khuấy nhẹ một chiều khoảng 5–7 phút đến khi nước nóng già thì ngừng khuấy, giữ lửa liu riu cho riêu từ từ kết thành bánh dày và nổi lên mặt.",
+    "Vớt bánh riêu ra để riêng, giữ lại nồi nước cua làm nước dùng; hớt bỏ bọt trên mặt để nước dùng trong, không bị đục.",
+    "Làm nóng dầu ăn, cho phần riêu cua vào xào trên lửa vừa khoảng 2–3 phút đến khi riêu săn lại, dậy mùi thơm và lên màu vàng cam, rồi trút trở lại nồi nước dùng.",
+    "Luộc trứng cút trong nước sôi khoảng 8–10 phút đến khi trứng chín cứng, vớt ra ngâm nước lạnh cho dễ bóc vỏ.",
+    "Thả sợi bánh canh vào nồi nước dùng đang sôi nhẹ, nấu khoảng 4–5 phút đến khi sợi chuyển trong và nổi lên là chín; nêm muối và nước mắm cho vừa miệng.",
+    "Múc bánh canh ra tô, xếp riêu cua và trứng cút lên trên, rắc hành phi, hành lá và rau mùi thái nhỏ; dùng ngay khi còn nóng để sợi không bị nở nát."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "accessed": "2026-10-31",
+      "note": "Cookpad VN — đúng biến thể bánh canh cua đồng với sợi tự làm từ bột gạo; đối chiếu cách lọc cua lặp 2–3 lần và đun nước cua khuấy một chiều rồi ngừng khuấy cho riêu đóng bánh.",
+      "url": "https://cookpad.com/vn/cong-thuc/9286163"
+    },
+    {
+      "accessed": "2026-10-31",
+      "note": "Sóc Trăng Tourism — đúng món bánh canh cua miền Tây dùng cua đồng tươi; đối chiếu bước xào gạch cua tạo màu và cách trần sơ sợi bánh canh riêng trước khi dọn.",
+      "url": "https://soctrangtourism.vn/cach-lam-mon-banh-canh-cua/"
+    },
+    {
+      "accessed": "2026-10-31",
+      "note": "Hải Sản Mr.D — chỉ dùng phần bánh canh cua đồng (cho 3 người); đối chiếu định lượng cua đồng ~67g/người và sợi 100g/người, cùng nguyên tắc vớt riêu ra riêng, giữ nước cua làm nước dùng.",
+      "url": "https://haisanmrd.com/cach-nau-banh-canh-cua-don-gian-cho-ca-nha/"
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/banh-canh-cua.webp",
@@ -121,7 +141,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt DISH-004 đợt 2 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt DISH-004 đợt 2 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-005 đợt 5: nâng Mức 2 — đối chiếu 3 nguồn công thức bánh canh cua đồng đã mở đọc (Cookpad VN, Sóc Trăng Tourism, Hải Sản Mr.D — chỉ dùng biến thể cua đồng); định lượng giữ nguyên toàn bộ vì không đạt đồng thuận ≥2 nguồn lệch >25–30%: cua đồng 100g/khẩu phần dao động rất rộng giữa các nguồn (Mr.D ~67g/người; Sóc Trăng tỉ lệ cua:sợi 2,0 so với file 1,11). Bất thường ghi nhận: 2/3 nguồn có nền nước dùng thịt heo/xương/sườn, tôm và cà chua mà file không có; trứng cút 20g chỉ xuất hiện dạng tuỳ chọn ở 1/3 nguồn (định lượng rõ chỉ có ở biến thể cua biển) — cần biên tập xác nhận biến thể; 1/3 nguồn nêm mắm ruốc Huế vào nước cua — chờ pha phân xử.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
