@@ -157,7 +157,14 @@
       "note": "Cookpad VN, tác giả Hoàng Ngọc (4 phần ăn): đã đối chiếu măng 300g cho 4 phần, tức 75g mỗi phần, và nấm bào ngư 200g cho 4 phần; ủng hộ măng 75g và nấm bào ngư tuỳ chọn 40g. Nguồn này xào gà không dầu — khác biệt đã ghi nhận; hai nguồn còn lại đều dùng dầu để phi hành và xào gà."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/lau-ga-la-e.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. THIẾU NGUYÊN LIỆU: lá é (slug la-e — nguyên liệu chính tạo hương vị đặc trưng của món) — cần bổ sung vào kho. [LV2-006 đợt 6: nâng Mức 2 — măng 50 → 75g (giữ slug mang-tuoi vì slug mang-chua chưa có số; bước nấu mô tả đúng măng chua và ghi rõ ánh xạ này); đường 2 → 5g; bổ sung hành tím 8g (3/3 nguồn) và dầu ăn 5g (2/3 nguồn); nấm rơm tuỳ chọn thay bằng nấm bào ngư 40g tuỳ chọn (0/3 nguồn ủng hộ nấm rơm, đồng thuận nấm bào ngư; slug nam-bao-ngu có số). Gà GIỮ 150g — đề xuất tăng theo cân cả con thuộc nhóm quy ước cân thô–tinh đang chờ chủ dự án (cùng lớp mong-gio), không tự quyết. Nhãn dac-san:phu-yen chưa tồn tại trong taxonomy nên không gán, ghi nhận tại đây.]",

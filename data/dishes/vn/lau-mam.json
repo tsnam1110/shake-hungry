@@ -162,7 +162,14 @@
       "note": "Cookpad VN, tác giả QUÂN NGUYỄN (5 người): đã đối chiếu mực 300g cho 5 người, tức 60g mỗi người, nước dừa 500ml cho 5 người, tức 100ml mỗi người, và 1/2 trái thơm cho một nồi; khớp mức mực 60g, nước dừa tươi 100g và ủng hộ bổ sung dứa (thơm)."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/lau-mam.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. THIẾU NGUYÊN LIỆU: mắm cá linh (chính — nước dùng lẩu mắm) — cần bổ sung vào kho. [LV2-006 đợt 6: nâng Mức 2 — nâng KHÔNG có dòng mắm cá: slug mam-ca-linh/mam-ca-sac chưa có số dinh dưỡng (cùng tiền lệ bun-mam ở Phần A LV2-006), chờ biên soạn nguyên liệu. Mực ống 40 → 60g, bún tươi 80 → 125g; bổ sung dứa (thơm) 25g; nước cốt dừa tuỳ chọn thay bằng nước dừa tươi 100g (3/3 nguồn dùng nước dừa tươi ~100–125ml/người, slug có số); bổ sung buổi trưa vào meal_slots nếu thiếu. Heo quay xuất hiện ở nguồn nhưng slug chưa có số — ghi nhận, không bổ sung.]",

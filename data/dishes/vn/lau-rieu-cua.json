@@ -178,7 +178,14 @@
       "note": "Điện Máy XANH, biến thể lẩu bún riêu cua (cho 4 người): đã đối chiếu cua xay 500g cho 4 người, tức 125g mỗi người — khớp mức cua đồng sau khi nâng; đồng thời đối chiếu khung món riêu cua, đậu hũ chiên, cà chua và mắm tôm. Lưu ý: cùng nhà xuất bản Điện Máy XANH với nguồn sườn sụn ở trên nhưng là bài công thức khác, được đối chiếu độc lập theo biến thể."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/lau-rieu-cua.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-006 đợt 6: nâng Mức 2 — cua đồng 80 → 125g, bắp bò 60 → 125g, sườn 50 → 120g (đồng thuận tuyệt đối của các nguồn đã mở; nguồn dùng sườn sụn, kho chưa có slug suon-sun nên giữ slug sườn hiện tại và ghi nhận tại đây); dấm gạo 5 → 10g (nguồn dùng giấm bỗng — slug chưa có số nên giữ dam-gao làm ánh xạ tính được, ghi rõ thay thế này); bổ sung bánh đa đỏ 125g tuỳ chọn (món ăn kèm chính ở 2 nguồn).]",

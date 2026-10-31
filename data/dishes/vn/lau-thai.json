@@ -182,7 +182,14 @@
       "note": "Cookpad VN, tác giả Lê Thùy Linh: đã đối chiếu nền lẩu Thái Tom Yum — 6 quả cà chua, sả và lá chanh cho một nồi lẩu, phi thơm sả trước khi cho vào nước dùng; ủng hộ việc tăng cà chua và sả. Lưu ý độc lập nguồn: cùng nền tảng Cookpad với nguồn của SaNy nhưng khác tác giả, công thức độc lập."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/lau-thai.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-006 đợt 6: nâng Mức 2 — cà chua 40 → 80g, sả 10 → 20g, nước mắm 5 → 10g, đường 4 → 15g (nguồn dùng đường phèn 18–30g cho ~700ml nước dùng/người; lấy 15g đã chiết khấu và GIỮ loại đường của file vì loại đường đang là quy ước chờ chủ dự án); bổ sung me chín 15g tạo chua (slug me-chin có số; không dùng slug me chưa có số). Dứa chỉ 1 nguồn định lượng — ghi nhận, không bổ sung. Nếu hai nguồn đối chiếu cùng một nhà xuất bản, ghi rõ lưu ý độc lập nguồn trong note của nguồn.]",
