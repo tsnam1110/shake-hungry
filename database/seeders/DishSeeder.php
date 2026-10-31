@@ -88,6 +88,7 @@ class DishSeeder extends Seeder
                     'name' => $name['name'],
                     'is_primary' => $name['is_primary'] ?? false,
                     'is_alias' => $name['is_alias'] ?? false,
+                    'note' => $name['note'] ?? null,
                 ]);
             }
 

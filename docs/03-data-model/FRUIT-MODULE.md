@@ -31,6 +31,8 @@ Mọi dữ liệu vẫn là file trong `data/` (QT-3): `data/fruits/<slug>.json`
 | Trường | Nội dung |
 |---|---|
 | `ingredient_slug` | trỏ sang nguyên liệu (nguồn dinh dưỡng/dị ứng duy nhất) |
+
+> **Tên gọi khác của quả** (tên vùng miền: thơm/khóm, roi/mận...) không nằm trong hồ sơ quả — chúng thuộc về nguyên liệu liên kết (`aliases` trong `data/ingredients/<slug>.json`, cơ chế ALIAS-001 tại DATA-MODEL). Trang hoa quả và tìm kiếm dùng chung nguồn tên đó, tránh hai nơi lệch nhau.
 | `classification` | `group`: cit-xit/có múi, mong (quả mọng), hach (quả hạch), nhiet-doi, dua (họ dưa), le-thao...; `family` họ thực vật; `origin`: `trong-nuoc` / `nhap-khau` / `ca-hai` |
 | `grown_in` | vùng/tỉnh trồng tiêu biểu ở VN (quả nhập: nước xuất xứ chính) — mảng chuỗi có cấu trúc `{region, note}` |
 | `availability` | `months`: 1–12 tháng có hàng trên thị trường VN; `main_season_months`: vụ chính; `availability_type`: `theo-mua` / `quanh-nam` / `quanh-nam-nhap-khau` |

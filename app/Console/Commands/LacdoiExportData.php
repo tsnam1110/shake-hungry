@@ -36,7 +36,7 @@ class LacdoiExportData extends Command
     {
         $index = [];
 
-        foreach (Ingredient::with(['units', 'tags'])->orderBy('slug')->get() as $ing) {
+        foreach (Ingredient::with(['units', 'tags', 'aliases'])->orderBy('slug')->get() as $ing) {
             $payload = $this->ingredientPayload($ing);
             $this->writeJson(base_path("data/ingredients/{$ing->slug}.json"), $payload);
             $index[] = ['slug' => $ing->slug, 'name_vi' => $ing->name_vi, 'category' => $ing->category];
@@ -99,7 +99,7 @@ class LacdoiExportData extends Command
             ])
             ->all();
 
-        return [
+        $payload = [
             'slug' => $ing->slug,
             'name_vi' => $ing->name_vi,
             'name_en' => $ing->name_en,
@@ -123,6 +123,17 @@ class LacdoiExportData extends Command
             'review_note' => $ing->review_note,
             'tags' => $this->orderedIngredientTags($ing),
         ];
+
+        // Tên gọi khác (ALIAS-001): chỉ ghi khi có, để file không có alias
+        // giữ nguyên từng byte; chèn sau name_en cho gần nhóm tên.
+        $aliases = $ing->aliases->sortBy('name', SORT_STRING)->values()
+            ->map(fn ($a) => array_filter(['name' => $a->name, 'note' => $a->note], fn ($v) => $v !== null))
+            ->all();
+        if ($aliases !== []) {
+            $payload = array_merge(array_slice($payload, 0, 3), ['aliases' => $aliases], array_slice($payload, 3));
+        }
+
+        return $payload;
     }
 
     /**
@@ -152,6 +163,9 @@ class LacdoiExportData extends Command
                 $row = ['locale' => $n->locale, 'name' => $n->name, 'is_primary' => $n->is_primary];
                 if ($n->is_alias) {
                     $row['is_alias'] = true;
+                }
+                if ($n->note !== null) {
+                    $row['note'] = $n->note;
                 }
 
                 return $row;

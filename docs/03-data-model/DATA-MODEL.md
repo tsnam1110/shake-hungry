@@ -212,6 +212,18 @@ Quy đổi đơn vị đời thường sang gram. Không có bảng này thì c�
 | `note` | text null | vd "quả cỡ vừa ~150 g" |
 | `source` | varchar(16) | phải ghi rõ đo được hay tra được ở đâu |
 
+### `ingredient_aliases` — tên gọi khác của nguyên liệu (ALIAS-001, 2026-10-31)
+
+Nhiều nguyên liệu/quả có tên gọi khác theo vùng miền (dứa thơm = thơm = khóm; roi = mận ở miền Nam). Tên chính giữ nguyên ở `ingredients.name_vi`; tên gọi khác nằm ở bảng riêng mô phỏng `dish_names`, để tìm kiếm tra được theo mọi tên:
+
+| Cột | Kiểu | Ghi chú |
+|---|---|---|
+| `ingredient_id` | bigint | |
+| `name` | varchar(255) | tên gọi khác, vd `Khóm` |
+| `note` | varchar(255) null | nhãn vùng miền, vd `miền Nam`, `miền Trung, miền Nam`, `tên cũ` |
+
+Quy ước chung cho cả món và nguyên liệu (validator **V18**): tên gọi khác không trùng tên chính, không trùng nhau trong cùng một món/nguyên liệu; chỉ ghi tên gọi khác **có thật** — cùng một đối tượng, khác tên theo vùng miền/thời kỳ, không gộp món/nguyên liệu chỉ tương tự. Trong file dữ liệu: nguyên liệu dùng khoá `aliases: [{name, note?}]`; món dùng dòng `names[]` với `is_alias: true` và `note` tuỳ chọn. Mọi bề mặt tìm kiếm (danh mục món, API nguyên liệu, quản trị, trang hoa quả) đều tra cả tên gọi khác.
+
 ### `ingredient_tcm_traits` (GĐ6, tuỳ chọn)
 
 Tính vị theo y học cổ truyền. **Gán ở tầng nguyên liệu, không phải tầng món** (QT-6).
@@ -269,6 +281,7 @@ với phân loại này, và mâu thuẫn phải được hiển thị chứ kh�
 | `name` | text | |
 | `is_primary` | boolean | mỗi (dish, locale) đúng một dòng primary |
 | `is_alias` | boolean | tên gọi dân gian khác — dùng cho tìm kiếm và chống trùng |
+| `note` | varchar(255) null | nhãn vùng miền của tên gọi khác, vd `miền Nam`, `tên cũ` (bổ sung 2026-10-31, ALIAS-001) |
 
 ### `dish_meal_slots`
 

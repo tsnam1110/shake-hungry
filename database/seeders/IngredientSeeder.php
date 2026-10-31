@@ -80,6 +80,16 @@ class IngredientSeeder extends Seeder
                 ]);
             }
 
+            // Tên gọi khác / tên vùng miền (ALIAS-001): file là nguồn sự thật.
+            \App\Models\IngredientAlias::where('ingredient_id', $ingredient->id)->delete();
+            foreach ($j['aliases'] ?? [] as $alias) {
+                \App\Models\IngredientAlias::create([
+                    'ingredient_id' => $ingredient->id,
+                    'name' => $alias['name'],
+                    'note' => $alias['note'] ?? null,
+                ]);
+            }
+
             // Nhãn phân loại (TAXONOMY.md): file là nguồn sự thật; slug ngoài
             // đăng ký config/taxonomy.php sẽ ném lỗi tại Tag::idsFor.
             $ingredient->tags()->sync(\App\Models\Tag::idsFor($j['tags'] ?? []));

@@ -285,12 +285,16 @@ class DishController extends Controller
                 'is_primary' => false, 'is_alias' => false,
             ]);
         }
+        // Giữ nhãn vùng miền (note, ALIAS-001) của alias còn tồn tại sau khi sửa:
+        // form quản trị chỉ sửa danh sách tên, note được biên soạn trong file dữ liệu.
+        $aliasNotes = $dish->names()->where('is_alias', true)->pluck('note', 'name');
         $dish->names()->where('is_alias', true)->delete();
         foreach ($data['alias_names'] ?? [] as $alias) {
             if (trim($alias) !== '') {
                 $dish->names()->create([
                     'locale' => 'vi', 'name' => $alias,
                     'is_primary' => false, 'is_alias' => true,
+                    'note' => $aliasNotes[$alias] ?? null,
                 ]);
             }
         }

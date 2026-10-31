@@ -20,7 +20,7 @@ class LacdoiValidateData extends Command
 {
     protected $signature = 'lacdoi:validate-data';
 
-    protected $description = 'Kiểm tra toàn vẹn dữ liệu trong data/ và database (V1–V17, DATA-PIPELINE §5)';
+    protected $description = 'Kiểm tra toàn vẹn dữ liệu trong data/ và database (V1–V18, DATA-PIPELINE §5)';
 
     /** @var list<string> */
     private array $errors = [];
@@ -81,6 +81,12 @@ class LacdoiValidateData extends Command
     }
 
     /** @param array<string, array<string, mixed>> $ingredients */
+    /** Khoá so trùng tên cho V18: thường hoá, bỏ khoảng trắng thừa (giữ dấu). */
+    private static function nameKey(string $name): string
+    {
+        return mb_strtolower(trim((string) preg_replace('/\s+/u', ' ', $name)));
+    }
+
     private function validateIngredientFiles(array $ingredients): void
     {
         $seenNames = [];
@@ -92,6 +98,29 @@ class LacdoiValidateData extends Command
             $mc = $ref['mapping_confidence'] ?? null;
             if ($mc !== null && $mc !== 'high' && blank($ref['mapping_note'] ?? null)) {
                 $this->errors[] = "V3 [{$slug}]: mapping_confidence='{$mc}' nhưng thiếu mapping_note";
+            }
+
+            // V18 — tên gọi khác của nguyên liệu (🔴, ALIAS-001): mỗi alias là
+            // {name, note?}; tên không trống, không trùng tên chính, không trùng nhau.
+            $primaryKey = self::nameKey((string) ($j['name_vi'] ?? ''));
+            $seenAliases = [];
+            foreach ($j['aliases'] ?? [] as $alias) {
+                $aliasName = is_array($alias) ? trim((string) ($alias['name'] ?? '')) : '';
+                if ($aliasName === '') {
+                    $this->errors[] = "V18 [{$slug}]: aliases có mục thiếu name";
+                    continue;
+                }
+                $key = self::nameKey($aliasName);
+                if ($key === $primaryKey) {
+                    $this->errors[] = "V18 [{$slug}]: alias '{$aliasName}' trùng tên chính";
+                }
+                if (isset($seenAliases[$key])) {
+                    $this->errors[] = "V18 [{$slug}]: alias '{$aliasName}' bị trùng trong cùng nguyên liệu";
+                }
+                $seenAliases[$key] = true;
+                if (isset($alias['note']) && (! is_string($alias['note']) || mb_strlen($alias['note']) > 255)) {
+                    $this->errors[] = "V18 [{$slug}]: note của alias '{$aliasName}' phải là chuỗi ≤255 ký tự";
+                }
             }
 
             // V5 (tầng file) — khoảng kcal ngược trong bản chụp.
@@ -163,6 +192,38 @@ class LacdoiValidateData extends Command
             // V4 — Mức ≥2 mà không có nguyên liệu (🔴, ràng buộc R6).
             if ($level >= 2 && $rows === []) {
                 $this->errors[] = "V4 [{$slug}]: completeness_level={$level} nhưng không có nguyên liệu nào";
+            }
+
+            // V18 — tên gọi khác của món (🔴, ALIAS-001): dòng names có
+            // is_alias=true phải is_primary=false, tên không trùng tên chính
+            // (locale vi) và không trùng nhau; note (nhãn vùng miền) ≤255 ký tự.
+            $dishNames = $j['names'] ?? [];
+            $primaryVi = collect($dishNames)->first(fn ($n) => ($n['locale'] ?? '') === 'vi' && ($n['is_primary'] ?? false));
+            $primaryKey = $primaryVi ? self::nameKey((string) $primaryVi['name']) : null;
+            $seenAliases = [];
+            foreach ($dishNames as $n) {
+                if (! ($n['is_alias'] ?? false)) {
+                    continue;
+                }
+                $aliasName = trim((string) ($n['name'] ?? ''));
+                if (($n['is_primary'] ?? false)) {
+                    $this->errors[] = "V18 [{$slug}]: alias '{$aliasName}' không được đồng thời là tên chính";
+                }
+                if ($aliasName === '') {
+                    $this->errors[] = "V18 [{$slug}]: alias thiếu name";
+                    continue;
+                }
+                $key = self::nameKey($aliasName);
+                if ($primaryKey !== null && $key === $primaryKey) {
+                    $this->errors[] = "V18 [{$slug}]: alias '{$aliasName}' trùng tên chính";
+                }
+                if (isset($seenAliases[$key])) {
+                    $this->errors[] = "V18 [{$slug}]: alias '{$aliasName}' bị trùng trong cùng món";
+                }
+                $seenAliases[$key] = true;
+                if (isset($n['note']) && (! is_string($n['note']) || mb_strlen($n['note']) > 255)) {
+                    $this->errors[] = "V18 [{$slug}]: note của alias '{$aliasName}' phải là chuỗi ≤255 ký tự";
+                }
             }
 
             // V11 — ingredient_slug không tồn tại (🔴): bắt slug lỗi thời sau khi tách/đổi tên.

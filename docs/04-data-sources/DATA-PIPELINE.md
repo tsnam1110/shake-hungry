@@ -182,6 +182,9 @@ Chạy trước mỗi commit dữ liệu, và trong CI:
 | V13 | Nguyên liệu có `density_g_per_ml` mà thiếu `density_note` | 🔴 Lỗi — phải ghi rõ đo hay suy ra |
 | V14 | Giá trị dinh dưỡng có mà thiếu `source_url` | 🔴 Lỗi — mọi con số phải truy nguyên được |
 | V15 | `needs_review = false` mà thiếu `reviewed_by` / `reviewed_at`, hoặc chỉ có một trong hai, hoặc `reviewed_at` sai dạng `YYYY-MM-DD` | 🔴 Lỗi (ràng buộc R10) — duyệt không có bằng chứng thì không phải duyệt |
+| V16 | Nhãn trong file nguyên liệu/món khác nhãn suy ra từ `TaggingRules`/`DishTagDeriver` | 🔴 Lỗi — nhãn là suy ra, không gán tay (TAXONOMY.md) |
+| V17 | Hồ sơ hoa quả `data/fruits/` sai cấu trúc (slug/nhóm/nguồn gốc, cửa sổ không nằm trong tháng có hàng, dòng giá thiếu nguồn/ngày thu thập) | 🔴 Lỗi (FRUIT-MODULE.md) |
+| V18 | Tên gọi khác (ALIAS-001): alias trùng tên chính, trùng nhau trong cùng món/nguyên liệu, alias món đồng thời là tên chính, hoặc thiếu tên | 🔴 Lỗi |
 
 ### Thủ công — rà soát định kỳ
 

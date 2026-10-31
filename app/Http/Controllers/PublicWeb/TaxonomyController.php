@@ -36,9 +36,11 @@ class TaxonomyController extends Controller
     /** Danh mục nguyên liệu công khai: lọc theo category, nhãn, từ khoá. */
     public function ingredients(Request $request): JsonResponse
     {
-        $query = Ingredient::query()->with('tags:id,slug,name')->orderBy('name_vi');
+        $query = Ingredient::query()->with(['tags:id,slug,name', 'aliases:id,ingredient_id,name,note'])->orderBy('name_vi');
         if ($q = trim((string) $request->query('q', ''))) {
-            $query->where('name_vi', 'like', "%{$q}%");
+            // Tìm cả tên gọi khác / tên vùng miền (ALIAS-001).
+            $query->where(fn ($w) => $w->where('name_vi', 'like', "%{$q}%")
+                ->orWhereHas('aliases', fn ($a) => $a->where('name', 'like', "%{$q}%")));
         }
         if ($category = $request->query('category')) {
             $query->where('category', $category);

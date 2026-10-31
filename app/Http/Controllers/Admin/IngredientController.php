@@ -26,7 +26,9 @@ class IngredientController extends Controller
             $query->where(function ($w) use ($q) {
                 $w->where('name_vi', 'like', "%{$q}%")
                     ->orWhere('name_en', 'like', "%{$q}%")
-                    ->orWhere('slug', 'like', "%{$q}%");
+                    ->orWhere('slug', 'like', "%{$q}%")
+                    // Tên gọi khác / tên vùng miền (ALIAS-001).
+                    ->orWhereHas('aliases', fn ($a) => $a->where('name', 'like', "%{$q}%"));
             });
         }
         if ($request->has('needs_review')) {
@@ -42,7 +44,7 @@ class IngredientController extends Controller
 
     public function show(Ingredient $ingredient): JsonResponse
     {
-        return response()->json($ingredient->load(['units', 'referenceFood']));
+        return response()->json($ingredient->load(['units', 'referenceFood', 'aliases']));
     }
 
     public function store(Request $request): JsonResponse
@@ -54,9 +56,12 @@ class IngredientController extends Controller
         $data['needs_review'] = true;
         $ingredient = Ingredient::create($data);
         $this->syncUnits($ingredient, $request->input('units', []));
+        if ($request->has('aliases')) {
+            $this->syncAliases($ingredient, $request->input('aliases', []));
+        }
         AdminAuditLog::record('create', $ingredient, ['name_vi' => $ingredient->name_vi]);
 
-        return response()->json($ingredient->load(['units', 'referenceFood']), 201);
+        return response()->json($ingredient->load(['units', 'referenceFood', 'aliases']), 201);
     }
 
     public function update(Request $request, Ingredient $ingredient): JsonResponse
@@ -67,9 +72,12 @@ class IngredientController extends Controller
         if ($request->has('units')) {
             $this->syncUnits($ingredient, $request->input('units', []));
         }
+        if ($request->has('aliases')) {
+            $this->syncAliases($ingredient, $request->input('aliases', []));
+        }
         AdminAuditLog::record('update', $ingredient, ['before' => $before, 'after' => $data]);
 
-        return response()->json($ingredient->load(['units', 'referenceFood']));
+        return response()->json($ingredient->load(['units', 'referenceFood', 'aliases']));
     }
 
     public function destroy(Ingredient $ingredient): JsonResponse
@@ -131,7 +139,26 @@ class IngredientController extends Controller
             ],
             'source' => ['nullable', Rule::in(['curated', 'llm_suggested', 'imported', 'user_submitted'])],
             'confidence_note' => ['nullable', 'string'],
+            // Tên gọi khác / tên vùng miền (ALIAS-001).
+            'aliases' => ['nullable', 'array'],
+            'aliases.*.name' => ['required', 'string', 'max:255'],
+            'aliases.*.note' => ['nullable', 'string', 'max:255'],
         ]);
+    }
+
+    /** Đồng bộ tên gọi khác (ALIAS-001) từ form quản trị. */
+    private function syncAliases(Ingredient $ingredient, array $aliases): void
+    {
+        $ingredient->aliases()->delete();
+        foreach ($aliases as $alias) {
+            if (trim((string) ($alias['name'] ?? '')) === '') {
+                continue;
+            }
+            $ingredient->aliases()->create([
+                'name' => trim((string) $alias['name']),
+                'note' => isset($alias['note']) && trim((string) $alias['note']) !== '' ? trim((string) $alias['note']) : null,
+            ]);
+        }
     }
 
     /** Đồng bộ bảng con ingredient_units từ form (ADM-002 mục 2). */

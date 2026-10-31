@@ -175,6 +175,25 @@ export default function Ingredients() {
                         <Form.Item label="% hút dầu" name="oil_absorption_pct"><InputNumber min={0} max={100} /></Form.Item>
                         <Form.Item label="Ăn liền" name="is_ready_to_eat" valuePropName="checked"><Switch /></Form.Item>
                     </Space>
+                    <Typography.Text strong>Tên gọi khác (tên vùng miền)</Typography.Text>
+                    <Form.List name="aliases">
+                        {(fields, { add, remove }) => (
+                            <>
+                                {fields.map((field) => (
+                                    <Space key={field.key} style={{ display: 'flex', marginTop: 8 }} align="baseline">
+                                        <Form.Item {...field} name={[field.name, 'name']} rules={[{ required: true, message: 'Tên gọi khác' }]}>
+                                            <Input placeholder="VD: Khóm" />
+                                        </Form.Item>
+                                        <Form.Item {...field} name={[field.name, 'note']}>
+                                            <Input placeholder="Nhãn vùng: miền Nam, tên cũ…" />
+                                        </Form.Item>
+                                        <Button danger size="small" onClick={() => remove(field.name)}>Xoá</Button>
+                                    </Space>
+                                ))}
+                                <Button type="dashed" onClick={() => add()} block style={{ marginTop: 8, marginBottom: 16 }}>+ Thêm tên gọi khác</Button>
+                            </>
+                        )}
+                    </Form.List>
                     <Typography.Text strong>Đơn vị quy đổi</Typography.Text>
                     <Form.List name="units">
                         {(fields, { add, remove }) => (

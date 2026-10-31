@@ -39,6 +39,12 @@ class Ingredient extends Model
         return $this->hasMany(IngredientUnit::class);
     }
 
+    /** Tên gọi khác / tên vùng miền (ALIAS-001). */
+    public function aliases(): HasMany
+    {
+        return $this->hasMany(IngredientAlias::class);
+    }
+
     public function tags(): BelongsToMany
     {
         return $this->belongsToMany(Tag::class, 'ingredient_tags');
