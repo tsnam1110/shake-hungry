@@ -123,7 +123,14 @@
       "note": "Của Rose Truong: rau muống 300g, tôm tươi 200g cho một mẻ canh gia đình — đối chiếu tỉ lệ rau và tôm của mẻ nấu."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/canh-rau-muong-nau-tom.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Món thay thế cho canh-rau-nhut-tom vì kho chưa có nguyên liệu rau nhút. Nâng Mức 2 đợt 1 (2026-10-31): Đã mở kiểm chứng 3 nguồn công thức thật (Điện Máy Xanh, CookBeo, Cookpad của Rose Truong) và đối chiếu định lượng theo khẩu phần. Định lượng: rau muống nguồn 100g/khẩu phần, file 120g — khớp, giữ nguyên. Tôm: Điện Máy Xanh chỉ 33g/khẩu phần trong khi CookBeo và Cookpad quanh 67g/khẩu phần — các nguồn bất đồng hơn 30% nên theo quy tắc giữ nguyên số của file (60g, sát nhóm CookBeo/Cookpad), không sửa dòng nào. Viết lại hoàn toàn recipe_steps bằng lời riêng (7 bước). Rà phân loại: loai:canh, cooking_method nau, region vn, meal_slots trưa/tối đều phù hợp — không sửa. Đạt Mức 2.",

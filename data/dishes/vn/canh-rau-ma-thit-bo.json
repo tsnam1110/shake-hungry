@@ -6,7 +6,7 @@
   "names": [
     {
       "locale": "vi",
-      "name": "canh rau má thịt bò",
+      "name": "Canh rau má thịt bò",
       "is_primary": true
     },
     {
@@ -41,7 +41,7 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "thit-bo-xay",
+      "ingredient_slug": "thit-bo-than",
       "quantity": 40,
       "unit_name": "g",
       "is_optional": false,
@@ -51,6 +51,14 @@
     {
       "ingredient_slug": "toi",
       "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-tim",
+      "quantity": 5,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -99,8 +107,8 @@
   ],
   "recipe_steps": [
     "Nhặt bỏ gốc rau má, rửa nhiều lần dưới nước sạch rồi để ráo, đến khi nước rửa trong và lá không còn lẫn cát.",
-    "Ướp thịt bò xay với tỏi băm, hạt tiêu đen và dầu ăn trong 10–20 phút, trộn đều tay cho đến khi thịt thấm gia vị và tỏi, tiêu bám đều.",
-    "Đun nồi nước ở lửa lớn đến khi sôi mạnh, cho thịt bò xay vào khuấy nhanh 1–2 phút cho thịt tơi, hớt bọt liên tục đến khi nước trong và thịt chuyển màu chín đều.",
+    "Ướp thịt bò thăn thái lát mỏng với hành tím băm, tỏi băm, hạt tiêu đen và dầu ăn trong 10–20 phút, trộn đều tay cho đến khi thịt thấm gia vị và hành tỏi, tiêu bám đều.",
+    "Đun nồi nước ở lửa lớn đến khi sôi mạnh, cho thịt bò lát vào khuấy nhanh 1–2 phút cho từng lát vừa chín tới, hớt bọt liên tục đến khi nước trong và thịt chuyển màu chín đều.",
     "Thả rau má vào khi nước đang sôi, đảo nhẹ tay khoảng 1 phút cho đến khi nước sôi lại, lá rau vừa chín tới và chuyển xanh sẫm mà chưa nát.",
     "Nêm nước mắm, muối và đường ngay khi rau vừa chín, khuấy nhẹ rồi tắt bếp khi nước sôi lại lăn tăn, nếm thấy vị mặn ngọt dịu cân bằng.",
     "Múc canh ra tô và dùng ngay lúc còn nóng, khi rau má vẫn giữ màu xanh và thịt bò chưa bị dai lại."
@@ -122,10 +130,17 @@
       "note": "Đúng món canh rau má nấu thịt bò xay (dạng viên); đối chiếu tỉ lệ rau:tổng thịt xay và bước hớt bọt khi cho thịt vào nước sôi."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/canh-rau-ma-thit-bo.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-005 đợt 5: nâng Mức 2 — đối chiếu 3 nguồn công thức đã mở kiểm chứng. Phân xử định lượng: thịt bò xay 60→40g vì nguồn duy nhất ghi khẩu phần (Digifood) cho 37,5g/người, thấp hơn file 37,5%, và tỉ lệ rau:bò ở cả 3 nguồn đều ≥2,0 so với tỉ lệ file 1,33; giữ rau má 80g vì khớp nguồn trong ngưỡng. Bất thường ghi nhận: 2/3 nguồn dùng bò thái lát mỏng thay vì bò xay, và cả 3/3 nguồn đều có hành tím trong khi file không có — chờ pha phân xử.]",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-005 đợt 5: nâng Mức 2 — đối chiếu 3 nguồn công thức đã mở kiểm chứng. Phân xử định lượng: thịt bò xay 60→40g vì nguồn duy nhất ghi khẩu phần (Digifood) cho 37,5g/người, thấp hơn file 37,5%, và tỉ lệ rau:bò ở cả 3 nguồn đều ≥2,0 so với tỉ lệ file 1,33; giữ rau má 80g vì khớp nguồn trong ngưỡng. Bất thường ghi nhận: 2/3 nguồn dùng bò thái lát mỏng thay vì bò xay, và cả 3/3 nguồn đều có hành tím trong khi file không có — chờ pha phân xử.] [LV2-007 Phần A: PHÂN XỬ dạng bò + hành tím — hành tím có ở 3/3 nguồn đã mở → BỔ SUNG hanh-tim 5g. Dạng bò: lát mỏng đạt 2/3 nguồn (Đầu bếp gia đình; Digifood ghi đích danh 'thịt thăn bò' thái lát mỏng 150g/4 người = 37,5g/người — cũng là neo cho lượng 40g đã phân xử ở LV2-005); nguồn bò xay duy nhất (AVAKids) là biến thể 'canh rau má thịt bò viên' trộn thêm heo xay cho bà bầu mà file không theo (không heo, không vo viên) — dạng xay hiện tại không khớp trọn vẹn nguồn nào → ĐỔI thit-bo-xay 40g thành thit-bo-than 40g (giữ nguyên lượng; calo dòng bò giảm ~13 kcal do thăn nạc hơn xay). Nếu muốn giữ biến thể bò viên trộn heo thì tách thành món biến thể riêng. Đồng thời sửa tên chính tiếng Việt viết hoa chữ đầu theo quy ước DATA-009.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

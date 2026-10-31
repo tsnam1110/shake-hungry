@@ -114,7 +114,14 @@
       "note": "Sổ Tay Nấu Ăn: cua đồng 300 g + rau đay 1 mớ + mướp 1 quả/mẻ; giã cua với vài hạt muối, lọc với hai bát nước, thả mướp và rau đay khi nước cua sôi, gạch cua xếp lên trên"
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/canh-rau-day.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 2 (2026-10-31): đã mở kiểm chứng 3 nguồn (Elmich: cua 200 g + rau đay 1 bó + mướp 2 quả; VinID: cua 200 g + rau đay 300 g + mướp 2 quả; Sổ Tay Nấu Ăn: cua 300 g + rau đay 1 mớ + mướp 1 quả). Phân xử định lượng: cua đồng SỬA 120 → 55 g — nguồn đồng thuận mẻ 200–300 g cua, nồi ~1,25–1,5 kg, quy đổi ~44–66 g/khẩu phần, số cũ lệch >30% so với mọi nguồn; rau đay SỬA 100 → 70 g — nguồn đồng thuận ~300 g/mẻ, quy đổi ~66–70 g/khẩu phần. Bất thường ghi nhận (không tự thêm dòng, chờ pha phân xử riêng): cả 3 nguồn đều nấu cùng mướp (1–2 quả/mẻ) mà file không có dòng mướp; Sổ Tay Nấu Ăn còn nấu kèm mồng tơi (1/3 nguồn). Phân xử bất thường LV2-002 (Phần A, 2026-10-31): Thêm muop 50 g — cả 3 nguồn đều nấu canh cua rau đay cùng mướp (Elmich 2 quả, VinID 2 quả, Sổ Tay 1 quả cho mẻ ~4 khẩu phần; quả mướp ~180–250 g → khoảng 45–60 g/khẩu phần, lấy 50 g); bước 6 bổ sung mướp. Mồng tơi của Sổ Tay chỉ 1/3 nguồn — không thêm.",

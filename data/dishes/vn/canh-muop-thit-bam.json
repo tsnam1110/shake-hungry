@@ -90,7 +90,14 @@
       "note": "Digifood (canh thịt băm, nhiều biến thể): thịt nạc thăn băm, có biến thể trộn giò sống viên; mướp bào vỏ để ráo nhựa, nấu 2–3 phút tránh bị thâm."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/canh-muop-thit-bam.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nâng Mức 2 đợt 2 (2026-10-31): đã mở kiểm chứng 3 nguồn (Memart, Cookpad, Digifood). Phân xử định lượng: GIỮ NGUYÊN toàn bộ — thịt băm file 40g nằm trong khoảng nguồn quy đổi (Memart ~37g/khẩu phần theo mẻ 4 người; Cookpad ~25–33g theo mẻ 3–4 người), mướp file 120g khớp khoảng 100–150g/khẩu phần của hai nguồn định lượng. Bất thường: một số biến thể nguồn dùng giò sống viên trộn thịt (Digifood) hoặc ướp muối mướp trước (Memart), file dùng thịt băm rời dạng phổ thông — giữ nguyên. Bước nấu viết lại 6 bước theo kỹ thuật chung của 3 nguồn.",
