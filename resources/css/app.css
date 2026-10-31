@@ -240,6 +240,9 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .ld-prose li { margin-bottom: 5px; }
 .ld-prose a { color: var(--color-link); }
 .ld-prose .updated { color: var(--color-faint); font-size: 13.5px; }
+.ld-seg a { flex: 1; text-align: center; padding: 8px 4px; border-radius: 999px; font-size: 14px;
+    font-weight: 600; color: var(--color-sub); text-decoration: none; }
+.ld-seg a.on { background: var(--color-ink); color: #fff; }
 a.ld-dcard:hover { box-shadow: 0 2px 4px rgba(0,0,0,.05), 0 14px 34px rgba(0,0,0,.09); }
 .ld-dcard-img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; flex: none; background: var(--color-fill); }
 .ld-dcard-body { display: flex; flex-direction: column; flex: 1; padding: 12px 14px 14px; min-width: 0; }

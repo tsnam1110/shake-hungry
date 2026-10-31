@@ -24,6 +24,8 @@ Route::get('/mon/{slug}', fn () => view('dish'));
 // IMG-001: ảnh trong data/media/ (đã qua kiểm license R4) — chỉ .webp ở hai nhóm dishes/ingredients.
 Route::get('/media/{path}', [\App\Http\Controllers\PublicWeb\MediaController::class, 'show'])->where('path', '.*');
 Route::get('/kham-pha', fn () => view('explore'));
+Route::get('/nguyen-lieu', fn () => view('ingredients'));
+Route::get('/nguyen-lieu/{slug}', fn () => view('ingredient'));
 Route::get('/nhat-ky', fn () => view('diary'))->middleware('auth');
 Route::get('/hoa-qua', fn () => view('fruits'));
 Route::get('/hoa-qua/{slug}', fn () => view('fruit'));
@@ -55,6 +57,7 @@ Route::prefix('api')->group(function () {
     Route::get('/regions', [\App\Http\Controllers\PublicWeb\CatalogController::class, 'regions']);
     Route::get('/tags', [\App\Http\Controllers\PublicWeb\TaxonomyController::class, 'tags']);
     Route::get('/ingredients', [\App\Http\Controllers\PublicWeb\TaxonomyController::class, 'ingredients']);
+    Route::get('/ingredients/{ingredient:slug}', [\App\Http\Controllers\PublicWeb\TaxonomyController::class, 'ingredient']);
     Route::get('/dishes', [\App\Http\Controllers\PublicWeb\CatalogController::class, 'index']);
     Route::get('/dishes/{dish:slug}', [\App\Http\Controllers\PublicWeb\CatalogController::class, 'show']);
     Route::get('/fruits', [\App\Http\Controllers\PublicWeb\FruitController::class, 'index']);

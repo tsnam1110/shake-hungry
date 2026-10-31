@@ -49,14 +49,63 @@ class TaxonomyController extends Controller
             $query->whereHas('tags', fn ($w) => $w->whereIn('tags.slug', $slugs));
         }
 
-        $page = $query->paginate(50);
+        // Trang Nguyên liệu (UI-017): chỉ nguyên liệu đã có số + sắp xếp theo kcal.
+        if ($request->boolean('with_nutrition')) {
+            // kcal để null trong JSON vẫn là một giá trị JSON null chứ không
+            // phải SQL NULL — phải kiểm cả JSON_TYPE mới lọc đúng.
+            $query->whereRaw("JSON_TYPE(JSON_EXTRACT(nutrition_snapshot, '$.kcal_per_100g')) NOT IN ('NULL')");
+        }
+        match ($request->query('sort')) {
+            // reorder(): bỏ orderBy('name_vi') mặc định phía trên, nếu không
+            // thứ tự theo tên sẽ lấn át thứ tự kcal.
+            'kcal_asc', 'kcal_desc' => $query->reorder()
+                ->orderByRaw("COALESCE(JSON_TYPE(JSON_EXTRACT(nutrition_snapshot, '$.kcal_per_100g')) IN ('NULL'), 1)")
+                ->orderByRaw("CAST(JSON_EXTRACT(nutrition_snapshot, '$.kcal_per_100g') AS DECIMAL(10,2)) ".($request->query('sort') === 'kcal_asc' ? 'ASC' : 'DESC'))
+                ->orderBy('name_vi'),
+            default => null,
+        };
+        $page = $query->paginate(min(60, max(1, (int) $request->query('per_page', 50))));
         // IMG-001: ảnh chính của nguyên liệu (nếu có).
         $page->getCollection()->transform(function (Ingredient $ing) {
             $ing->setAttribute('image', $ing->primaryImage());
+            $ing->setAttribute('unverified', \App\Nutrition\SourceTier::isSecondary($ing->nutrition_snapshot['fct_source'] ?? null));
 
             return $ing;
         });
 
         return response()->json($page);
+    }
+
+    /** Chi tiết một nguyên liệu (UI-017): dinh dưỡng/100g, nhãn, món có dùng. */
+    public function ingredient(Ingredient $ingredient): JsonResponse
+    {
+        $ingredient->load(['tags:id,slug,name', 'aliases:id,ingredient_id,name,note', 'media']);
+        $ingredient->setAttribute('image', $ingredient->primaryImage());
+        $ingredient->setAttribute('unverified', \App\Nutrition\SourceTier::isSecondary($ingredient->nutrition_snapshot['fct_source'] ?? null));
+        $fruit = \App\Models\Fruit::where('ingredient_id', $ingredient->id)->first(['slug']);
+        $dishes = \App\Models\Dish::query()
+            ->whereHas('dishIngredients', fn ($w) => $w->where('ingredient_id', $ingredient->id))
+            ->with([
+                'names' => fn ($q) => $q->where('is_primary', true)->orderByRaw("CASE WHEN locale = 'vi' THEN 0 ELSE 1 END"),
+                'nutrition', 'media',
+            ])
+            ->limit(12)
+            ->get()
+            ->map(fn (\App\Models\Dish $d) => [
+                'slug' => $d->slug,
+                'name' => $d->names->first()?->name,
+                'image' => $d->primaryImage(),
+                'nutrition' => $d->nutrition === null ? null : [
+                    'kcal_min' => $d->nutrition->kcal_min,
+                    'kcal_max' => $d->nutrition->kcal_max,
+                    'confidence' => $d->nutrition->confidence,
+                ],
+            ]);
+
+        return response()->json([
+            'ingredient' => $ingredient,
+            'fruit_slug' => $fruit?->slug,
+            'dishes' => $dishes,
+        ]);
     }
 }

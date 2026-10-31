@@ -81,7 +81,7 @@ fetch('/api/dishes/' + encodeURIComponent(slug), { headers: { 'Accept': 'applica
 
         <h2 class="ld-section-title">Nguyên liệu · một khẩu phần</h2>
         <div class="ld-grid-ing">
-            ${(d.dish_ingredients ?? []).map(di => `<div class="ld-dcard">
+            ${(d.dish_ingredients ?? []).map(di => `<a href="/nguyen-lieu/${di.ingredient?.slug ?? ''}" class="ld-dcard">
                 <img class="ld-dcard-img" src="${di.ingredient?.image?.url ?? '/images/placeholder-ingredient.svg'}" alt="${esc(di.ingredient?.name_vi ?? '')}" loading="lazy">
                 <span class="ld-dcard-body">
                     <span class="ld-dcard-title">${esc(di.ingredient?.name_vi ?? '')}</span>
@@ -89,7 +89,7 @@ fetch('/api/dishes/' + encodeURIComponent(slug), { headers: { 'Accept': 'applica
                     <span class="ld-dcard-badges">${di.is_optional ? '<span class="ld-badge">Tuỳ chọn</span>' : ''}</span>
                     <span class="ld-dcard-foot"><span class="ld-dcard-conf">${di.ingredient?.nutrition?.kcal_per_100g != null ? Math.round(di.ingredient.nutrition.kcal_per_100g) + ' kcal/100g' : ''}</span></span>
                 </span>
-            </div>`).join('')
+            </a>`).join('')
               || '<p style="color:var(--color-faint);margin:0">Chưa có định lượng.</p>'}
         </div>
 
