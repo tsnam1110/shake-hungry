@@ -44,6 +44,14 @@
       "source": "FDC 170174 foodMeasures"
     }
   ],
+  "media": [
+    {
+      "path": "media/ingredients/nuoc-dua-tuoi.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

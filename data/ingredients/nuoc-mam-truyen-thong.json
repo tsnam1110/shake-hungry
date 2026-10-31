@@ -45,6 +45,14 @@
       "source": "FDC 174531 foodMeasures"
     }
   ],
+  "media": [
+    {
+      "path": "media/ingredients/nuoc-mam-truyen-thong.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "medium",
   "needs_review": true,
