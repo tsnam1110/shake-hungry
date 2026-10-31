@@ -139,7 +139,14 @@
       "note": "Công thức của Rose Truong cho 2–3 người: tôm tươi 200g, rau tập tàng 400g (mồng tơi, rau đay, rau ngót...) — đối chiếu định lượng theo khẩu phần."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/canh-tap-tang.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): Đối chiếu 3 nguồn công thức đã mở kiểm chứng (xem recipe_sources). Định lượng: giữ nguyên toàn bộ. Lượng rau mỗi khẩu phần giữa các nguồn bất đồng >30% (75g ở VnExpress so với 150–175g ở hai nguồn còn lại); tôm cũng bất đồng (37,5g tôm tươi ở VnExpress so với ≈80g ở Cookpad) nên giữ tôm 50g và tổng rau 190g như file. Ghi nhận: mướp và rau muống trong file không xuất hiện trong danh sách rau của 3 nguồn (rau tập tàng vốn là rau vườn tùy hứng nên coi là khác biệt biến thể); nguồn Điện Máy XANH ghi tôm khô 400g/4 người là số bất thường của chính nguồn. Bước nấu viết lại 7 bước.",

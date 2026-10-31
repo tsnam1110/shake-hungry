@@ -135,7 +135,14 @@
       "note": "Cookpad — Hoàng Oanh (chỉ kỹ thuật): quết cá với đầu hành lá, hạt nêm, tiêu, ít dầu ăn; phi đầu hành; rau nấu ~3 phút."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/canh-tan-o-ca-thac-lac.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 4 nguồn (3 nguồn có định lượng đều dùng đúng 200 g cá/mẻ). Phân xử định lượng: ca-thac-lac 80 → 60 g (nguồn đồng thuận ~50 g/khẩu phần theo mẻ 4, lấy 60 g chừa khả năng mẻ 3 người) và cai-cuc (tần ô) 80 → 100 g (hai nguồn 100–125 g/khẩu phần). Bất thường ghi nhận: dòng gung 3 g không nguồn nào của đúng biến thể tần ô sử dụng (gừng chỉ có ở biến thể cải bẹ xanh) — chờ pha phân xử quyết bỏ hay chuyển tuỳ chọn; hành tím có ở 2/4 nguồn, file thiếu. Phân xử bất thường LV2-003 (Phần A — LV2-004, 2026-10-31): BỎ dòng gung 3 g: 0/3 nguồn có định lượng của đúng biến thể tần ô dùng gừng (gừng chỉ xuất hiện ở biến thể cải bẹ xanh) — theo tiền lệ bỏ dòng 0 nguồn ủng hộ. Thêm hanh-tim 3 g (2/4 nguồn đã mở ở đợt 3).",

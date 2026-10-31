@@ -71,7 +71,14 @@
     "Nêm đường, rưới nước cốt dừa, ăn nóng hoặc nguội đều được."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/chao-dau-den.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nguyên liệu đậu dùng slug dau-den-hat (đậu đen hạt khô) — KHÔNG dùng slug dau-den vì đó là quả dâu đen (blackberry) thuộc nhóm trái cây. Phân loại sau rà soát G6: món là cháo NGỌT (đường + nước cốt dừa, không gia vị mặn) nên loai là che-trang-mieng theo quy ước hoà giải TAXONOMY §5 (cháo ngọt ăn bằng muỗng thuộc nhóm tráng miệng), không phải chao-sup; vẫn tính vào quota sáng tự nấu của đợt (cháo ngọt là bữa sáng/ăn nhẹ phổ biến). Lượng nước trong bước nấu đã sửa về ~300 ml/khẩu phần theo EDITORIAL-GUIDE §6.",

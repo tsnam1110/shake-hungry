@@ -129,7 +129,14 @@
       "note": "The Waterman: chả trứng cơm tấm Sài Gòn — 150 g thịt, 4 trứng vịt, mộc nhĩ khô 25 g, hấp 30 phút."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/cha-trung.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": {
     "id": "Q54371849",

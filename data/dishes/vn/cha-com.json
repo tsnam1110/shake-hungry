@@ -107,7 +107,14 @@
       "note": "tailieu.vn (blog gia đình): giò sống 250 g + thịt xay 150 g + cốm 100 g = mẻ 500 g."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/cha-com.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu). Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 3 nguồn (không nguồn nào ghi số khẩu phần — chuẩn hoá về khẩu phần 140 g như file). Phân xử định lượng: com-xanh 60 → 40 g (hai nguồn quy đổi 28 g, nguồn còn lại 47 g; 40 g đưa tỉ lệ cốm về ~29%, trong dải nguồn 20–33%) và thit-lon-xay 85 → 100 g (tổng thịt quy đổi của nguồn 93–112 g/khẩu phần). Bất thường lớn ghi nhận chờ pha phân xử: 3/3 nguồn tách riêng GIÒ SỐNG + thịt xay (giò chiếm 33–62% phần thịt) — kho chưa có ingredient giò sống (cùng đầu mối với bun-moc ở Phần A), dòng thịt hiện tại là proxy gộp; method hap giữ nguyên nhưng bước đã ghi chiên sau hấp là bước chuẩn theo 3/3 nguồn — việc đổi method sang chien cần quyết ở pha phân xử vì đổi mô hình dầu của engine.",

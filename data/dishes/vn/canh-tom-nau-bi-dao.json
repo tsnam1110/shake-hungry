@@ -115,7 +115,14 @@
       "note": "Cho 2 người: tôm 150g, bí đao 1 quả vừa; giã đầu tôm lấy nước cốt — đối chiếu tôm theo khẩu phần (75g)."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/canh-tom-nau-bi-dao.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): Đã mở kiểm chứng 3 nguồn công thức thật (Điện Máy Xanh, Cookpad của Nguyễn Hoàng Yến, YummyDay) và đối chiếu định lượng theo khẩu phần. Định lượng: bí đao 180g khớp khoảng nguồn (1 quả cho 2–3 người). Tôm: hai nguồn có ghi khẩu phần rõ cho 100g (Điện Máy Xanh) và 75g (YummyDay) mỗi khẩu phần — hai nguồn này chênh nhau hơn 30% nên không tạo đồng thuận để sửa; nguồn Cookpad tính theo mẻ nhỏ 100g tôm. Giữ nguyên tôm 60g và toàn bộ định lượng, không sửa dòng nguyên liệu nào. Viết lại hoàn toàn recipe_steps bằng lời riêng (7 bước). Rà phân loại: loai:canh, cooking_method nau, region vn, meal_slots trưa/tối đều phù hợp — không sửa. Đạt Mức 2.",
