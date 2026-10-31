@@ -75,9 +75,10 @@ Dùng nguồn cao nhất tra được. Bảng đầy đủ kèm `fct_source` tư
 | 3 | **USDA Branded** | Sản phẩm chế biến không có trong bảng thành phần |
 | 4 | **Nhãn sản phẩm thương mại bán tại VN** | Nguyên liệu đặc thù Việt Nam |
 | 5 | **Tự đo / tự cân** | Không nguồn nào có |
-| 6 | `null` | Không tra được |
+| 6 | **Nguồn thứ cấp** — Bảng TPTP Việt Nam (tra từng mục), FNRI, MEXT, Thai FCT, IFCT, văn liệu khoa học | Chỉ khi cấp 1–5 đều không có (quyết định chủ dự án 2026-10-31). Số lấy ở cấp này bị đánh dấu **"chưa kiểm định"** trong hệ thống và hiển thị cảnh báo trên giao diện. Vẫn **cấm sao chép hàng loạt** bất kỳ bảng nào |
+| 7 | `null` | Không tra được |
 
-> Nguồn 3–5 phá nguyên tắc "một bảng duy nhất" của QT-4. Chỉ dùng cho nguyên liệu mà nguồn 1–2 không
+> Nguồn 3–6 phá nguyên tắc "một bảng duy nhất" của QT-4. Chỉ dùng cho nguyên liệu mà nguồn 1–2 không
 > phủ, và phải hạ `confidence` của món dùng chúng.
 
 ---

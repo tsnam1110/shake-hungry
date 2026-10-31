@@ -85,7 +85,7 @@ cập nhật tài liệu (QT-7). Nguyên liệu mới (don, rươi) tạo file m
 | M4 | Chất lượng | — | validate-data **0 🔴** (492 bản ghi), Pest **70/70**, mọi số đều có external_id/URL đã mở | ✅ |
 | — | Kho món (chỉ thị riêng của chủ dự án) | 61 món | **200 món**, 176/200 tính được dinh dưỡng | ✅ |
 | — | Kho nguyên liệu | 255 | **292** (thêm 37: 29 có số, 1 có số một phần, 7 hồ sơ trống có lý do) | ✅ |
-| — | Cờ "chưa kiểm định" (yêu cầu 2026-10-31) | — | 31 nguyên liệu tầng thứ cấp; **46/176 món** tính được mang cờ; cảnh báo hiển thị ở trang món + thẻ Lắc + danh mục; 4 test riêng | ✅ |
+| — | Cờ "chưa kiểm định" (yêu cầu 2026-10-31) | — | 31 nguyên liệu tầng thứ cấp; **46/176 món** tính được mang cờ *(số tại thời điểm đóng đợt — sau mở rộng 300 món + CALC-004, hiện trạng là **73/297**)*; cảnh báo hiển thị ở trang món + thẻ Lắc + danh mục; 4 test riêng | ✅ |
 
 **Ghi chú M1:** 13 nguyên liệu gốc còn trống — bột canh, đuôi bò, hạt nêm, kinh giới, lá chanh, lá dứa, mắm nêm, ngò gai, rau ngổ, rau răm, riềng, thảo quả, tương bần — đều đã tra đủ 3 vòng (chính thống → nhãn → thứ cấp) và có hồ sơ lý do trong `mapping_note` của từng file. Phần lớn là rau thơm/gia vị dùng 1–5g/món (ảnh hưởng calo không đáng kể) hoặc sản phẩm pha chế không nơi nào công bố bảng số (mắm nêm, hạt nêm, bột canh). Không hạ chuẩn để lấp số: nhiều bộ số lưu hành trên web đã bị loại vì sai loài (số "hoa hồi" phổ biến trên web thực ra là hồi hạt Pimpinella anisum — hoa hồi thật Illicium verum cuối cùng lấy được từ nhãn EU), sai trạng thái (bột riềng khô ≠ riềng tươi; măng ngâm ≠ măng khô) hoặc do chính trang bán hàng tự ghi "ước tính".
 

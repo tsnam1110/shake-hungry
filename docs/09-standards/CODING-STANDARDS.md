@@ -23,7 +23,7 @@
 
 - Khoá ngoại: `<bảng_số_ít>_id` (`dish_id`, `ingredient_id`).
 - Boolean: `is_*` hoặc `has_*` (`is_eat_out`, `needs_review`).
-- Thời gian: `*_at`, kiểu `timestamptz`.
+- Thời gian: `*_at`, kiểu `timestamp`.
 
 ## 3. Ba cột bắt buộc trên mọi bảng dữ liệu biên soạn
 

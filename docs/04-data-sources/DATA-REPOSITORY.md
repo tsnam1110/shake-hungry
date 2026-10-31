@@ -166,7 +166,7 @@ tra trùng lặp nhanh. Không sửa tay file này.
 |---|---|---|
 | `slug` | ✅ | Tên file, không dấu, gạch ngang |
 | `name_vi` / `name_en` | `name_vi` ✅ | Tên nguyên liệu |
-| `category` | ✅ | `thit`, `thuy-san`, `rau-cu`, `gia-vi`, `tinh-bot`, `dau-mo`, `khac` |
+| `category` | ✅ | `thit`, `thuy-san`, `rau-cu`, `rau-gia-vi`, `gia-vi`, `tinh-bot`, `dau-mo`, `trai-cay`, `khac` |
 | `reference_food` | ✅ | Khối nguồn dinh dưỡng — xem dưới |
 | `secondary_sources[]` | | Nguồn **bổ sung** (nhãn sản phẩm VN). Khác `alternatives` là các dòng đã bị **loại** |
 | `density_g_per_ml` | | Quy đổi thể tích → khối lượng |

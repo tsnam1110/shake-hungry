@@ -75,5 +75,5 @@ chúng là chặn cả khi code có lỗi.
   đang được dùng.
 - 4 chỗ lệch với DATA-MODEL bản đầu (đã đính chính ở đó): `unit_name` 32→64,
   `ingredient_units.grams` (8,2)→(8,3), `ingredient_units.source` varchar(16)→text,
-  danh mục category có thêm `trai-cay`/`rau-gia-vi`; thêm cột `dishes.estimated_kcal jsonb`
+  danh mục category có thêm `trai-cay`/`rau-gia-vi`; thêm cột `dishes.estimated_kcal json`
   (định dạng file đã có mà bảng thiếu).

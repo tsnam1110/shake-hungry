@@ -70,7 +70,14 @@ Giai đoạn 2.
 - Nút Lắc: gợi ý ngẫu nhiên có điều kiện, loại trừ N món vừa ăn.
 - Hồ sơ người dùng: chiều cao, cân nặng, tuổi, giới tính, mức vận động → khoảng TDEE.
 - Lịch sử bữa ăn (người dùng tự đánh dấu "đã ăn món này").
-- Khu vực quản trị: công cụ nhập liệu tối ưu tốc độ, có trợ lý LLM.
+- Khu vực quản trị: công cụ nhập liệu tối ưu tốc độ, có trợ lý LLM (trợ lý LLM là ADM-006 — chưa
+  hiện thực, chờ chốt API key; admin hiện vận hành không có LLM).
+- **Hệ phân loại + nhãn cho món và nguyên liệu** (đã hiện thực 2026-10-31): món có nhãn loại món
+  (11 loại), nhãn chay/mặn, nhóm đạm chính và chất gây dị ứng **suy từ thành phần**; nguyên liệu có
+  nhãn nguồn gốc/trạng thái/dị ứng. Người dùng lọc và tìm kiếm theo nhãn — xem
+  [TAXONOMY](../03-data-model/TAXONOMY.md).
+- **Cờ "chưa kiểm định"**: món dùng nguyên liệu có số từ nguồn thứ cấp (tầng 6) hiển thị cảnh báo
+  rõ ràng cho người dùng.
 
 ### Không có ở v1 — và lý do
 
@@ -119,7 +126,7 @@ biết quán cho bao nhiêu dầu.
 
 | Rủi ro | Mức | Cách xử lý |
 |---|---|---|
-| Không có dữ liệu thành phần thực phẩm Việt Nam hợp pháp | **Cao** | Xin phép Viện Dinh dưỡng ngay GĐ0 ([LEGAL-001](../05-tasks/tasks/LEGAL-001.md)). Phương án dự phòng: dùng USDA + tự đo, chấp nhận sai số cao hơn cho nguyên liệu đặc thù Việt |
+| Không có dữ liệu thành phần thực phẩm Việt Nam hợp pháp | **Cao** | ~~Xin phép Viện Dinh dưỡng (LEGAL-001)~~ — **đã đổi hướng 2026-08-31:** LEGAL-001 huỷ, dự án tự tra cứu từng nguyên liệu từ nguồn công khai; từ 2026-10-31 bổ sung **tầng 6** (Bảng TPTP VN tra từng mục, FNRI, MEXT, IFCT, văn liệu — kèm cờ "chưa kiểm định"). Xem [DATA-PIPELINE §7.2](../04-data-sources/DATA-PIPELINE.md) |
 | Bỏ cuộc giữa chừng vì nhập liệu quá mệt | **Cao** | GĐ2 bắt buộc đạt ≤5 phút/món trước khi sang GĐ3. Có mốc dùng được sớm ở 150 món |
 | Dùng nhầm dữ liệu license bẩn | Trung bình | [LICENSE-COMPLIANCE](../04-data-sources/LICENSE-COMPLIANCE.md) + quy trình duyệt nguồn mới |
 | Calo sai nhiều ở món chiên rán | Trung bình | Hệ số hấp thụ dầu riêng — xem [CALORIE-ENGINE §4](../06-nutrition/CALORIE-ENGINE.md) |
@@ -132,5 +139,5 @@ biết quán cho bao nhiêu dầu.
 |---|---|---|---|
 | Q1 | Tên chính thức là "Lắc Đói" hay "Lắc Đối"? Tài liệu đang dùng **Lắc Đói** (khớp với tên thư mục `shake-hungry`) | Chủ dự án | Trước GĐ1 |
 | Q2 | Giấy phép mã nguồn của dự án? Ảnh hưởng tới việc dùng Open Food Facts (ODbL) và Wikibooks (CC BY-SA) | Chủ dự án | Trước khi nhập 2 nguồn đó |
-| Q3 | Có xin được dữ liệu Viện Dinh dưỡng không? | Viện Dinh dưỡng | Theo dõi ở [LEGAL-001](../05-tasks/tasks/LEGAL-001.md) |
+| Q3 | Có xin được dữ liệu Viện Dinh dưỡng không? | — | ✅ **Đóng 2026-08-31:** không xin phép nữa — [LEGAL-001](../05-tasks/tasks/LEGAL-001.md) huỷ, chuyển sang tự tra cứu + tầng 6 (2026-10-31) |
 | Q4 | Ảnh món ăn lấy từ đâu? Tự chụp / mua / CC BY? Ảnh hưởng tới kích thước repo | Chủ dự án | Trước GĐ3 |

@@ -1,6 +1,6 @@
 # Tài liệu dự án Lắc Đói
 
-**Cập nhật lần cuối:** 2026-08-31
+**Cập nhật lần cuối:** 2026-10-31
 
 Thư mục này là **nguồn sự thật về thiết kế** của dự án. Code phải khớp tài liệu; khi lệch nhau thì
 một trong hai là sai và phải sửa ngay, không để tồn tại song song.
@@ -36,6 +36,7 @@ Khi dự án đổi bản chất (ví dụ mở API công khai ở v2), hãy th�
 | [01-prd/PRD.md](01-prd/PRD.md) | Dự án làm gì, cho ai, phạm vi v1, cái gì **không** làm |
 | [02-architecture/ARCHITECTURE.md](02-architecture/ARCHITECTURE.md) | Stack, các khối hệ thống, quyết định kỹ thuật và lý do |
 | [03-data-model/DATA-MODEL.md](03-data-model/DATA-MODEL.md) | Toàn bộ bảng, cột, quan hệ, ràng buộc |
+| [03-data-model/TAXONOMY.md](03-data-model/TAXONOMY.md) | Hệ phân loại + nhãn cho món và nguyên liệu (suy nhãn, V16, API lọc) |
 
 ### Dữ liệu — phần quan trọng nhất của dự án
 
@@ -45,6 +46,7 @@ Khi dự án đổi bản chất (ví dụ mở API công khai ở v2), hãy th�
 | [04-data-sources/LICENSE-COMPLIANCE.md](04-data-sources/LICENSE-COMPLIANCE.md) | Danh sách trắng / danh sách đen, quy trình duyệt nguồn mới |
 | [04-data-sources/DATA-REPOSITORY.md](04-data-sources/DATA-REPOSITORY.md) | Quy tắc lưu trữ tài nguyên trong repo, định dạng file, quy trình đồng bộ |
 | [04-data-sources/DATA-PIPELINE.md](04-data-sources/DATA-PIPELINE.md) | Quy trình nhập một món từ đầu đến cuối, vai trò của LLM |
+| [04-data-sources/DATA-COLLECTION-PLAN-2026-10-31.md](04-data-sources/DATA-COLLECTION-PLAN-2026-10-31.md) | Kế hoạch + bảng điểm đợt thu thập dữ liệu 2026-10-31 (đã đóng) |
 
 ### Dinh dưỡng và thuật toán
 

@@ -112,6 +112,6 @@ Người bàn giao chạy hết danh sách này trước khi bàn giao:
 
 ## 6. Môi trường production
 
-⚠️ **Chưa thiết kế.** Sẽ bổ sung khi tới GĐ4. Những thứ cần quyết khi đó: hosting, cách chạy migration
+⚠️ **Chưa thiết kế.** GĐ4 đã qua nhưng production vẫn chưa chốt — đang chờ chủ dự án chọn phương án go-live (VPS + subdomain / Laravel Cloud / PC cá nhân + Tailscale Funnel). Những thứ cần quyết khi đó: hosting, cách chạy migration
 và seed trên môi trường thật, sao lưu, và cách đồng bộ `data/` với database production (một chiều —
 production **không** được là nguồn sự thật).

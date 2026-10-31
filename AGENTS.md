@@ -12,7 +12,9 @@ Hướng dẫn cho mọi AI agent (Claude Code, Codex, Cursor, Copilot Agent...)
 **Đây là dự án biên soạn cơ sở dữ liệu món ăn, có kèm web app ở đầu ra.** Không phải dự án web app.
 Nút "Lắc" gợi ý món chỉ là vài chục dòng code; giá trị nằm ở dữ liệu.
 
-**Trạng thái 2026-08-31: repo mới chỉ có tài liệu, chưa có code.** Việc tiếp theo xem
+**Trạng thái 2026-10-31: ứng dụng đã hoàn thiện end-to-end** (Laravel 13 + MySQL 8, admin antd 6
+tại `/admin`, 300 món / 313 nguyên liệu, 297/300 món tính được dinh dưỡng, engine gợi ý + tài khoản
+người dùng + đóng góp cộng đồng đều chạy thật). Trạng thái chi tiết: [CLAUDE.md](CLAUDE.md) §0 và
 [docs/05-tasks/ROADMAP.md](docs/05-tasks/ROADMAP.md).
 
 ## Tám quy tắc tuyệt đối (bản rút gọn — bản đầy đủ ở CLAUDE.md §3)

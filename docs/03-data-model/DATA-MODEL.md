@@ -1,7 +1,7 @@
 # Mô hình dữ liệu — Lắc Đói
 
 **Cập nhật lần cuối:** 2026-09-01 — thêm dấu vết duyệt + ràng buộc R10 ([ING-004](../05-tasks/tasks/ING-004.md))
-**Trạng thái:** ✅ **ĐÃ HIỆN THỰC** — 14 migration trong `database/migrations/`, 10 ràng buộc
+**Trạng thái:** ✅ **ĐÃ HIỆN THỰC** — 19 migration trong `database/migrations/`, 10 ràng buộc
 R1–R10 có test ở `tests/Feature/IntegrityConstraintsTest.php`.
 
 Khi hiện thực, migration phải khớp tài liệu này. Nếu thực tế buộc phải khác, **sửa tài liệu trong
@@ -18,7 +18,7 @@ cùng commit** (QT-7) và ghi lý do.
 > 4. **`ingredients.category`** thực tế có thêm `trai-cay` và `rau-gia-vi` so với danh mục trong
 >    DATA-REPOSITORY §3 (bảng CHECK trong migration là danh sách đúng: `thit`, `thuy-san`,
 >    `rau-cu`, `rau-gia-vi`, `gia-vi`, `tinh-bot`, `dau-mo`, `trai-cay`, `khac`).
-> 5. **Bảng `dishes` thiếu cột `estimated_kcal jsonb`** trong khi định dạng file món
+> 5. **Bảng `dishes` thiếu cột `estimated_kcal json`** trong khi định dạng file món
 >    (DATA-REPOSITORY §3) đã có — cột đã thêm, chứa `{min, max, confidence, source_note}`
 >    cho món ăn ngoài Mức 1.
 >
@@ -52,8 +52,8 @@ cùng commit** (QT-7) và ghi lý do.
 - Cột: `snake_case`, **không dùng prefix theo tên bảng**.
   > Lý do: dự án `edu-crm-v2` dùng prefix (`brh_`, `cls_`) nhưng áp dụng không đều, dẫn tới tài liệu
   > ghi sai tên cột trong nhiều tháng. Dự án này bỏ hẳn prefix để không tái diễn.
-- Khoá chính: `id` (`bigserial`).
-- Thời gian: `timestamptz`, luôn lưu UTC.
+- Khoá chính: `id` (`bigint tự tăng`).
+- Thời gian: `timestamp`, luôn lưu UTC.
 - Enum: dùng bảng tra cứu hoặc `varchar` + `CHECK`, **không** dùng kiểu `ENUM` (khó
   migrate).
 - Mọi bảng dữ liệu biên soạn có: `source`, `confidence`, `needs_review`, `created_at`, `updated_at`.
@@ -112,16 +112,16 @@ Thành phần thực phẩm nhập từ nguồn ngoài. **Không sửa tay.** N�
 
 | Cột | Kiểu | Ghi chú |
 |---|---|---|
-| `id` | bigserial | |
+| `id` | bigint tự tăng | |
 | `fct_source` | varchar(32) | `usda_foundation`, `usda_sr_legacy`, `usda_fndds`, `vn_nin`, `off` |
 | `external_id` | varchar(64) | Mã gốc ở nguồn (vd `fdc_id`) |
 | `name_en` | text | |
 | `name_vi` | text | nullable — dịch ở tầng biên soạn |
 | `kcal_per_100g` | numeric(8,2) | |
 | `protein_g` / `fat_g` / `carb_g` / `fiber_g` | numeric(8,2) | trên 100 g |
-| `micronutrients` | jsonb | các vi chất khác, giữ nguyên tên nguồn |
-| `raw_payload` | jsonb | bản gốc, để truy nguyên |
-| `imported_at` | timestamptz | |
+| `micronutrients` | json | các vi chất khác, giữ nguyên tên nguồn |
+| `raw_payload` | json | bản gốc, để truy nguyên |
+| `imported_at` | timestamp | |
 
 **Ràng buộc:** `UNIQUE (fct_source, external_id)`.
 
@@ -134,7 +134,7 @@ Phân cấp địa lý, đệ quy.
 
 | Cột | Kiểu | Ghi chú |
 |---|---|---|
-| `id` | bigserial | |
+| `id` | bigint tự tăng | |
 | `parent_id` | bigint null | tự tham chiếu |
 | `country_code` | char(2) | ISO 3166-1 alpha-2 |
 | `code` | varchar(32) | `vn-north`, `vn-central`, `vn-south`, `vn-hue`… |
@@ -152,7 +152,7 @@ lớn nhất** — làm xong thì món tự tính được calo.
 
 | Cột | Kiểu | Ghi chú |
 |---|---|---|
-| `id` | bigserial | |
+| `id` | bigint tự tăng | |
 | `slug` | varchar(64) | `nuoc-mam`, `thit-ba-chi` — dùng làm tên file trong `data/ingredients/` |
 | `name_vi` | text | |
 | `name_en` | text null | |
@@ -167,9 +167,9 @@ lớn nhất** — làm xong thì món tự tính được calo.
 | `density_note` | text null | **Bắt buộc khi có `density_g_per_ml`** — ghi rõ đo được hay suy ra, suy từ đâu |
 | `source_url` | text null | URL đã truy cập — bắt buộc khi có số liệu |
 | `scientific_name` | text null | Tên khoa học, để không nhầm loài |
-| `nutrition_snapshot` | jsonb null | Bản chụp dinh dưỡng lúc tra cứu — xem §3.1 |
-| `alternatives` | jsonb | Các dòng ứng viên đã bị loại, kèm lý do |
-| `secondary_sources` | jsonb | Nguồn bổ sung (nhãn sản phẩm VN) |
+| `nutrition_snapshot` | json null | Bản chụp dinh dưỡng lúc tra cứu — xem §3.1 |
+| `alternatives` | json | Các dòng ứng viên đã bị loại, kèm lý do |
+| `secondary_sources` | json | Nguồn bổ sung (nhãn sản phẩm VN) |
 | `source` / `confidence` / `needs_review` | | |
 
 #### 3.1 Vì sao có `nutrition_snapshot` — quyết định 2026-08-31
@@ -236,7 +236,7 @@ với phân loại này, và mâu thuẫn phải được hiển thị chứ kh�
 
 | Cột | Kiểu | Ghi chú |
 |---|---|---|
-| `id` | bigserial | |
+| `id` | bigint tự tăng | |
 | `slug` | varchar(96) | tên file trong `data/dishes/` |
 | `parent_dish_id` | bigint null | **null = món chuẩn; có giá trị = biến thể** |
 | `country_code` | char(2) | |
@@ -245,7 +245,7 @@ với phân loại này, và mâu thuẫn phải được hiển thị chứ kh�
 | `is_home_cook` | boolean | có thể tự nấu — một món có thể cả hai |
 | `cooking_method` | varchar(24) null | `luoc`, `hap`, `xao`, `chien`, `nuong`, `kho`, `nau`, `song` — **quyết định hệ số calo** |
 | `completeness_level` | smallint | 1 / 2 / 3 — xem [PRD §7](../01-prd/PRD.md) |
-| `recipe_steps` | jsonb null | mảng bước nấu; null nếu chỉ Mức 1 |
+| `recipe_steps` | json null | mảng bước nấu; null nếu chỉ Mức 1 |
 | `serving_desc` | text null | "1 tô cỡ vừa" |
 | `serving_grams` | numeric(8,2) null | khối lượng khẩu phần |
 | `status` | varchar(16) | `draft`, `published`, `archived` |
@@ -312,8 +312,9 @@ Kết quả tính. **Chỉ được ghi bởi engine calo, không bao giờ nh�
 | `protein_g` / `fat_g` / `carb_g` / `fiber_g` | numeric(8,2) null | |
 | `confidence` | varchar(8) | |
 | `fct_source` | varchar(32) | bảng thành phần đã dùng — QT-4 |
-| `missing_ingredients` | jsonb | danh sách nguyên liệu chưa ánh xạ; **không rỗng ⇒ `confidence` ≤ `medium`** |
-| `computed_at` | timestamptz | |
+| `missing_ingredients` | json | danh sách nguyên liệu chưa ánh xạ; **không rỗng ⇒ `confidence` ≤ `medium`** |
+| `unverified_ingredients` | json null | slug các nguyên liệu dùng **nguồn thứ cấp** (tầng 6) thực sự tham gia phép tính — nền của cờ "chưa kiểm định" hiển thị cho người dùng (migration `2026_10_31_100001`, `App\Nutrition\SourceTier`) |
+| `computed_at` | timestamp | |
 | `engine_version` | varchar(16) | để biết cần tính lại khi engine đổi |
 
 **Ràng buộc CHECK bắt buộc:**
@@ -331,9 +332,9 @@ Nguồn đã đọc để tổng hợp công thức. **Bắt buộc với món `
 | `accessed_at` | date | Ngày truy cập — trang web thay đổi |
 | `note` | text | Nguồn này cho định lượng bao nhiêu người, khác nguồn khác ở chỗ nào |
 
-> **Vì sao là bảng riêng chứ không phải `jsonb`:** đây là danh sách có cấu trúc lặp, cần truy vấn
+> **Vì sao là bảng riêng chứ không phải `json`:** đây là danh sách có cấu trúc lặp, cần truy vấn
 > được ("món nào chỉ có 1 nguồn?", "nguồn nào bị dùng nhiều nhất?"). `alternatives` của nguyên liệu
-> để `jsonb` vì nó là ghi chú tra cứu, không cần truy vấn.
+> để `json` vì nó là ghi chú tra cứu, không cần truy vấn.
 
 **Ràng buộc R8:** `dishes.completeness_level >= 2` ⇒ tồn tại **≥3** dòng `dish_recipe_sources`.
 Lý do 3 nguồn: [RESEARCH-PROTOCOL §11.2](../09-standards/RESEARCH-PROTOCOL.md).
@@ -389,7 +390,7 @@ Kết quả tổng hợp tính vị từ nguyên liệu lên món. Do máy tính
 | `sex` | varchar(16) | `male`, `female`, `unspecified` — dùng cho công thức BMR. (`unspecified` dài 11 ký tự nên không dùng varchar(8) — xem SETUP-004) |
 | `activity_level` | varchar(16) | ánh xạ sang PAL, xem CALORIE-ENGINE §5 |
 | `diet_type` | varchar(24) null | `chay`, `chay-truong`, `low-carb`… |
-| `excluded_ingredients` | jsonb | dị ứng / không ăn được — **lọc cứng** ở engine gợi ý |
+| `excluded_ingredients` | json | dị ứng / không ăn được — **lọc cứng** ở engine gợi ý |
 
 > **Về `sex`:** công thức Mifflin–St Jeor có hệ số khác nhau theo giới tính sinh học. Khi người dùng
 > chọn `unspecified`, dùng công thức Katch–McArdle nếu có % mỡ, nếu không thì lấy trung bình hai hệ
@@ -402,7 +403,7 @@ Kết quả tổng hợp tính vị từ nguyên liệu lên món. Do máy tính
 | `user_id` | bigint | |
 | `dish_id` | bigint | |
 | `slot` | varchar(8) | |
-| `eaten_at` | timestamptz | |
+| `eaten_at` | timestamp | |
 | `source` | varchar(16) | `shake_accepted`, `manual` |
 
 Đây là đầu vào cho hai chức năng: loại trừ món vừa ăn, và gợi ý dựa trên bữa trước.
@@ -413,9 +414,9 @@ Hàng đợi đóng góp từ người dùng. Ở v1 đây là **kênh phụ**, 
 
 | Cột | Kiểu | Ghi chú |
 |---|---|---|
-| `id` | bigserial | |
+| `id` | bigint tự tăng | |
 | `type` | varchar(24) | `new_dish`, `fix_dish`, `new_place` |
-| `payload` | jsonb | nội dung đề xuất |
+| `payload` | json | nội dung đề xuất |
 | `status` | varchar(16) | `pending`, `approved`, `rejected` |
 | `reviewed_by` / `reviewed_at` / `reject_reason` | | |
 

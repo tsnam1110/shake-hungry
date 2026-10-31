@@ -1,7 +1,8 @@
 # Nguồn dữ liệu — Lắc Đói
 
-**Cập nhật lần cuối:** 2026-08-31 — bản đầu tiên, dựa trên khảo sát ngày 2026-08-31
-**Trạng thái:** ⚠️ Chưa nhập nguồn nào. Đây là kế hoạch đã thẩm định license.
+**Cập nhật lần cuối:** 2026-10-31
+**Trạng thái:** ✅ Đang vận hành — các nguồn chính đã nhập/tra cứu xong (xem §6). Tài liệu gốc là
+kế hoạch thẩm định license ngày 2026-08-31; các đính chính theo thời gian nằm ở §1.1 và §6.
 
 > **Trước khi thêm bất kỳ nguồn mới nào**, đọc [LICENSE-COMPLIANCE](LICENSE-COMPLIANCE.md) và làm
 > theo quy trình duyệt nguồn ở §5 của tài liệu đó. Không có ngoại lệ, kể cả cho "chỉ tham khảo".
@@ -19,7 +20,7 @@ Khảo sát ngày 2026-08-31 kết luận:
 
 | Nguồn Việt Nam | Thực trạng license | Kết luận |
 |---|---|---|
-| **Bảng Thành phần Thực phẩm Việt Nam** (Viện Dinh dưỡng – Bộ Y tế). Bản 2007: 501 thực phẩm × 15 thành phần. Bản 2017: ~600 thực phẩm, tới 86 thành phần/100g | Sách có bản quyền, xuất bản qua NXB Y học. **Không có license mở, không có tuyên bố dữ liệu mở nào.** PDF trôi nổi trên mạng (kể cả bản FAO mirror) **không đồng nghĩa được phép dùng** | 🚫 **Không dùng.** Quyết định 2026-08-31: không xin phép, chuyển sang **tự tra cứu từng nguyên liệu** — xem đính chính §1.1 |
+| **Bảng Thành phần Thực phẩm Việt Nam** (Viện Dinh dưỡng – Bộ Y tế). Bản 2007: 501 thực phẩm × 15 thành phần. Bản 2017: ~600 thực phẩm, tới 86 thành phần/100g | Sách có bản quyền, xuất bản qua NXB Y học. **Không có license mở, không có tuyên bố dữ liệu mở nào.** PDF trôi nổi trên mạng (kể cả bản FAO mirror) **không đồng nghĩa được phép dùng** | 🚫 **Không sao chép/nhập hàng loạt.** Quyết định 2026-08-31: không xin phép, chuyển sang **tự tra cứu từng nguyên liệu** — xem đính chính §1.1. **Đính chính 2026-10-31:** được dùng ở **tầng 6** (tra từng mục kèm trích dẫn, gắn cờ "chưa kiểm định") khi nguồn chính thống không có — xem [DATA-PIPELINE §7.2](DATA-PIPELINE.md) |
 | **VNeNUTRITION** (web của Viện Dinh dưỡng, có sẵn tra cứu thực phẩm và tra cứu món ăn) | Site **không công bố điều khoản sử dụng, license, hay chính sách API nào** | 🚫 Không có điều khoản = không được phép. Không dùng |
 | **ASEAN Food Composition Database e-v1 (2014)**, Mahidol INMU — 616 thực phẩm | © INMU, tải miễn phí nhưng **không nêu license mở**. Chỉ có PDF | ⚠️ Đọc được, không phân phối lại được. Và PDF thì phải bóc tay |
 | **Wikidata — món Việt** | CC0 | ✅ Dùng được, nhưng **chỉ ~58 món** có `cuisine = ẩm thực Việt Nam` (79 nếu tính cả ẩm thực vùng) |
@@ -165,19 +166,19 @@ Cập nhật bảng này mỗi lần nhập một nguồn.
 
 | Nguồn | Trạng thái | Ngày nhập | Phiên bản/ảnh chụp | File trong `data/reference/` | Task |
 |---|---|---|---|---|---|
-| USDA SR Legacy | ⬜ Chưa nhập | — | — | — | [DATA-002](../05-tasks/tasks/DATA-002.md) |
-| USDA Foundation Foods | ⬜ Chưa nhập | — | — | — | [DATA-002](../05-tasks/tasks/DATA-002.md) |
-| USDA FNDDS + SR Links | ⬜ Chưa nhập | — | — | — | [DATA-003](../05-tasks/tasks/DATA-003.md) |
-| USDA Cooking Yields | ⬜ Chưa nhập | — | — | — | [DATA-004](../05-tasks/tasks/DATA-004.md) |
-| Wikidata — món Việt | ⬜ Chưa nhập | — | — | — | [DATA-005](../05-tasks/tasks/DATA-005.md) |
-| Nutrition5k (hiệu chuẩn) | ⬜ Chưa nhập | — | — | — | [TEST-002](../05-tasks/tasks/TEST-002.md) |
-| Viện Dinh dưỡng | ❌ Không dùng | — | — | — | [LEGAL-001](../05-tasks/tasks/LEGAL-001.md) — huỷ, chuyển sang tự tra cứu |
+| USDA SR Legacy | ✅ Đã nhập **7.793 dòng** | 2026-08-31 | `sr_legacy_food_csv_2018-04` | `reference/MANIFEST.json` | [DATA-002](../05-tasks/tasks/DATA-002.md) |
+| USDA Foundation Foods | ⬜ Chưa nhập (chưa cần — SR Legacy phủ đủ) | — | — | — | [DATA-002](../05-tasks/tasks/DATA-002.md) |
+| USDA FNDDS + SR Links | ✅ Đã nhập **333 Food Code / 1.810 dòng SR Links** (chỉ để kiểm chứng engine) | 2026-08-31 | `survey_food_csv_2024-10-31` | `reference/MANIFEST.json` | [DATA-003](../05-tasks/tasks/DATA-003.md) |
+| USDA Cooking Yields | ✅ Đã nhập **163 dòng** | 2026-08-31 | — | `reference/` | [DATA-004](../05-tasks/tasks/DATA-004.md) |
+| Wikidata — món Việt | ✅ Đã nhập **61 món** (làm vỏ khởi đầu cho DISH-001) | 2026-08-31 | — | `reference/wikidata-vn-dishes.json` | [DATA-005](../05-tasks/tasks/DATA-005.md) |
+| Nutrition5k (hiệu chuẩn) | 🔵 Đã dùng **metadata** cho TEST-002 (không lưu vào repo) | 2026-08-31 | — | — (storage/imports) | [TEST-002](../05-tasks/tasks/TEST-002.md) |
+| Viện Dinh dưỡng (Bảng TPTP VN) | 🔶 Không nhập hàng loạt; **tra cứu từng mục ở tầng 6** kèm trích dẫn + cờ chưa kiểm định (quyết định 2026-10-31) | 2026-10-31 | — | — | [LEGAL-001](../05-tasks/tasks/LEGAL-001.md) — huỷ; [DATA-PIPELINE §7.2](DATA-PIPELINE.md) |
 | ANSES-Ciqual | 🔵 **Chỉ dùng đối chiếu chéo** — không có nguyên liệu nào lấy Ciqual làm nguồn chính | 2026-08-31 | — | — | [ING-001](../05-tasks/tasks/ING-001.md) |
 | USDA Branded (nhãn nhà sản xuất) | ✅ Đã dùng cho **3** nguyên liệu | 2026-08-31 | — | — | giò lụa, lạp xưởng, bánh tráng |
-| Open Food Facts | ⚠️ **Đã dùng cho 4 nguyên liệu TRƯỚC khi chốt Q2** | 2026-08-31 | — | — | [LEGAL-002](../05-tasks/tasks/LEGAL-002.md) — chặn phát hành |
+| Open Food Facts | ✅ Đã dùng tra cứu nhãn từng sản phẩm **trước khi chốt Q2**; LEGAL-002 đã chốt 2026-10-31: các dòng có nguồn OFF giữ ODbL 1.0 + ghi công trong mô hình collective database | 2026-08-31 | — | — | [LEGAL-002](../05-tasks/tasks/LEGAL-002.md) ✅ |
 | UK CoFID | ✅ Đã dùng cho **1** nguyên liệu (cá basa), OGL, duyệt hồi tố | 2026-08-31 | — | — | Chưa đối chiếu file gốc |
 
-> **Lưu ý về bảng này:** cột "File trong `data/reference/`" còn trống cho mọi dòng vì
-> **chưa nhập nguồn nào hàng loạt**. Dữ liệu ING-001 lấy bằng **tra cứu từng nguyên liệu**, giá trị
+> **Lưu ý về bảng này:** các nguồn nhập hàng loạt (USDA, Wikidata) có file + checksum trong
+> `data/reference/MANIFEST.json`. Phần còn lại của kho lấy bằng **tra cứu từng nguyên liệu**, giá trị
 > lưu thẳng vào `data/ingredients/*.json` dạng bản chụp kèm `external_id` + `source_url`. Xem
-> [DATA-MODEL §3.1](../03-data-model/DATA-MODEL.md) về việc đối chiếu lại khi DATA-002 xong.
+> [DATA-MODEL §3.1](../03-data-model/DATA-MODEL.md).

@@ -1,11 +1,11 @@
 # Roadmap & Task Tracking — Lắc Đói
 
 **Ngày bắt đầu:** 2026-08-31
-**Cập nhật lần cuối:** 2026-09-01 (lần 2) — repo đã có remote GitLab (Q8 đóng), phát sinh Q9 (CI
-sai nền). Trước đó: soát toàn dự án, sửa **hai lỗi engine/schema chưa ai bắt**:
-khoảng tin cậy rộng bằng 0 (vi phạm QT-5, đã hiệu chuẩn → engine 1.1.0) và `needs_review` không có
-cơ chế duyệt + mặc định sai chiều (→ R10 + ING-004). 40 test xanh.
-GĐ1 còn: hệ số dầu (chặn TEST-002), hệ số hao hụt thuỷ sản, duyệt 255 nguyên liệu, Foundation
+**Cập nhật lần cuối:** 2026-10-31 — ứng dụng hoàn thiện end-to-end; kho dữ liệu **300 món /
+313 nguyên liệu**, công thức đã được chủ dự án duyệt toàn bộ; **CALC-004** (hệ số dầu theo nhóm)
+và **LEGAL-002** (license MIT + CC BY 4.0/ODbL) đã chốt; repo chuyển hẳn sang **GitHub**
+(`origin` = github.com/tsnam1110/shake-hungry, không còn remote GitLab) — CI là GitHub Actions
+đã đúng nền nhưng chưa chạy vì code chưa push (chờ credential). 77 test Pest xanh.
 
 > Mỗi task có file chi tiết riêng tại [`tasks/`](./tasks/). Click mã task để xem đầy đủ.
 > Tạo task mới: copy [`TASK-TEMPLATE.md`](./TASK-TEMPLATE.md) vào `tasks/`, đặt tên theo mã task.
@@ -32,12 +32,12 @@ GĐ1 còn: hệ số dầu (chặn TEST-002), hệ số hao hụt thuỷ sản, 
 | GĐ | Tên | Mục tiêu | Cổng chặn để sang giai đoạn sau | Trạng thái |
 |---|---|---|---|---|
 | **0** | Thủ tục & khởi tạo | Gửi đề nghị cấp phép, chốt các quyết định nền, dựng repo | Repo chạy được, các quyết định đã chốt | 🔵 IN PROGRESS — repo chạy được (Laravel 13 + MySQL 8, `migrate:fresh --seed` xanh); còn Q1 chờ chủ dự án ([LEGAL-002](./tasks/LEGAL-002.md) đã chốt 2026-10-31) |
-| **1** | Xương sống dữ liệu | Schema + bảng tham chiếu + **250 nguyên liệu** + engine calo | Engine calo qua kiểm chứng FNDDS/Nutrition5k | 🔵 IN PROGRESS — schema, engine, **255/250 nguyên liệu**, SR Legacy, CY R2, FNDDS, Wikidata, DATA-008 xong; **kiểm chứng lần 1 đạt 89,7%**. Cổng chặn chưa mở: nhóm chiên chưa đo được |
-| **2** | Trình nhập liệu | Công cụ nhập món (trang quản trị antd) + trợ lý LLM | **≤5 phút/món** — cổng chặn cứng | ⬜ TODO |
-| **3** | Sản xuất dữ liệu | 150 món (dùng được) → 500 món (đủ dùng) | ≥500 món Mức 1; đo độ chính xác đạt ≥80% | ⬜ TODO |
-| **4** | Engine gợi ý | Nút Lắc bản chính thức, 3 tầng, có embedding | Độ phủ kho món ≥60% trong 30 ngày | ⬜ TODO |
-| **5** | Người dùng | Hồ sơ, TDEE, lịch sử bữa ăn | Gợi ý có tính tới bữa trước và TDEE | ⬜ TODO |
-| **6** | Lớp phụ | Đóng góp cộng đồng + ngũ hành (tuỳ chọn) | — | ⬜ TODO |
+| **1** | Xương sống dữ liệu | Schema + bảng tham chiếu + **250 nguyên liệu** + engine calo | Engine calo qua kiểm chứng FNDDS/Nutrition5k | ✅ DONE — schema, engine, **313 nguyên liệu**, SR Legacy, CY R2, FNDDS, Wikidata xong; kiểm chứng đạt 89,7%; nhóm chiên đã tính được sau CALC-004 (2026-10-31) |
+| **2** | Trình nhập liệu | Công cụ nhập món (trang quản trị antd) + trợ lý LLM | **≤5 phút/món** — cổng chặn cứng | 🔵 IN PROGRESS — lõi xong (ADM-001…005 ✅); còn ADM-006 (trợ lý LLM, chờ API key) và ADM-007 (đo giờ nhập — cổng ≤5 phút/món chưa đo chính thức) |
+| **3** | Sản xuất dữ liệu | 150 món (dùng được) → 500 món (đủ dùng) | ≥500 món Mức 1; đo độ chính xác đạt ≥80% | 🔵 IN PROGRESS — **300 món**, công thức đã duyệt (2026-10-31); còn DISH-004 lên 500 và QA-002 |
+| **4** | Engine gợi ý | Nút Lắc bản chính thức, 3 tầng, có embedding | Độ phủ kho món ≥60% trong 30 ngày | ✅ DONE — REC-001 3 tầng chạy thật ở trang chủ (embedding REC-002 hoãn sang giai đoạn sau, không chặn) |
+| **5** | Người dùng | Hồ sơ, TDEE, lịch sử bữa ăn | Gợi ý có tính tới bữa trước và TDEE | ✅ DONE — USR-001…004 chạy thật |
+| **6** | Lớp phụ | Đóng góp cộng đồng + ngũ hành (tuỳ chọn) | — | 🔵 IN PROGRESS — đóng góp cộng đồng ✅ (CTR-001); ngũ hành ⬜ (TCM-001…003, tuỳ chọn) |
 
 ### Vì sao thứ tự này
 
@@ -125,7 +125,7 @@ thư mục `data/` đúng cấu trúc; câu hỏi Q1/Q2 ở [PRD §9](../01-prd/
 | [CALC-002](./tasks/CALC-002.md) | Hệ số hao hụt khi nấu + hấp thụ dầu khi chiên | Backend | 🔵 code xong, chờ dữ liệu DATA-004/008 | CALC-001, DATA-004 | — |
 | [CALC-003](./tasks/CALC-003.md) | Hiệu chuẩn khoảng min–max (QT-5) — engine 1.1.0 | Backend | ✅ 1,0% → 80,4% tham chiếu nằm trong khoảng | CALC-001, TEST-002 | 2026-09-01 |
 | [CALC-004](./tasks/CALC-004.md) | Hệ số hấp thụ dầu theo nhóm thực phẩm cho món chiên | Backend/Dữ liệu | ✅ | CALC-002 | 2026-10-31 (297/300 món tính được) |
-| [TEST-001](./tasks/TEST-001.md) | Test các ràng buộc toàn vẹn R1–R9 | Test | ✅ (CI chưa kiểm trên GitHub — chưa có remote) | SETUP-003 | 2026-08-31 |
+| [TEST-001](./tasks/TEST-001.md) | Test các ràng buộc toàn vẹn R1–R9 | Test | ✅ (remote GitHub đã có; CI sẽ kiểm khi code được push) | SETUP-003 | 2026-08-31 |
 | [TEST-002](./tasks/TEST-002.md) | Kiểm chứng engine trên FNDDS + Nutrition5k | Test | 🔵 lần 1 xong: **89,7% trong ±20%** (tiêu chí chính ĐẠT); nhóm chiên chưa đo được → chưa đóng | CALC-002, DATA-003 | — |
 
 ### 1d. Có thứ nhìn thấy được
@@ -166,7 +166,7 @@ kiểm chứng TEST-002**; `migrate:fresh --seed` dựng lại đúng toàn bộ
 
 | ID | Task | Loại | Status | Phụ thuộc | Ngày xong |
 |---|---|---|---|---|---|
-| [DISH-001](./tasks/DISH-001.md) | 50 món đầu tiên | Dữ liệu | 🔶 | ADM-007 | — |
+| [DISH-001](./tasks/DISH-001.md) | 50 món đầu tiên | Dữ liệu | 🔶 | ADM-007 (cổng này được vượt theo chỉ đạo riêng của chủ dự án — kho món đã sản xuất trước khi đo giờ nhập) | 2026-10-31 (món đã có + đã duyệt) |
 | [DISH-002](./tasks/DISH-002.md) | Lên 150 món — **mốc app dùng được** | Dữ liệu | 🔶 | DISH-001 | 2026-10-31 (đã lên 200 món; công thức đã được chủ dự án duyệt 2026-10-31) |
 | [DISH-003](./tasks/DISH-003.md) | Lên 300 món | Dữ liệu | 🔶 | DISH-002 | 2026-10-31 (đã lên 300 món + hệ nhãn phân loại; công thức đã được chủ dự án duyệt 2026-10-31) |
 | [DISH-004](./tasks/DISH-004.md) | Lên 500 món — **mốc đủ dùng** | Dữ liệu | ⬜ | DISH-003 | — |
@@ -229,8 +229,8 @@ Ghi mọi câu hỏi chưa có lời giải ở đây. **Không đoán rồi là
 | Q5 | Có cần Git LFS cho ảnh không? | Phụ thuộc Q4 | Chủ dự án | ⬜ Chờ |
 | **Q7** | **Nguồn nào cho hệ số hao hụt khi nấu của THUỶ SẢN?** Bảng USDA Cooking Yields R2 đã nhập chỉ có thịt và gia cầm — **0 dòng thuỷ sản**. Không thể suy từ SR Legacy (raw ÷ cooked) vì chính USDA là vế tham chiếu của TEST-002 ⇒ phép kiểm thành vòng tròn. Ứng viên: USDA Agriculture Handbook 102 (bản quét 1975, chưa có lớp text) | Nhóm `hap` của TEST-002; mọi món cá hấp/luộc VN | Chủ dự án + tra cứu | ⬜ Chờ ([DATA-004](./tasks/DATA-004.md)) |
 | ~~Q8~~ | ~~Repo có đẩy lên remote không, và ở đâu?~~ | — | — | ✅ **Đã đóng 2026-09-01** — `origin` = `git@gitlab.com:Tran-Son-Nam/shake-hungry.git`, branch `dev` đã đẩy (8 commit, 513 file). Rủi ro mất trắng đã gỡ |
-| **Q9** | **CI chạy trên nền nào?** Repo đang ở **GitLab**, nhưng file CI duy nhất là `.github/workflows/tests.yml` — cú pháp **GitHub Actions**, GitLab **bỏ qua hoàn toàn**. Nên dù đã có remote, CI vẫn chưa chạy lần nào. Chọn một: (a) viết `.gitlab-ci.yml` tương đương — tốn compute minutes của tài khoản GitLab; (b) mirror sang GitHub để dùng Actions; (c) chấp nhận chạy tay trước mỗi commit | Chặn merge khi test đỏ; branch protection | Chủ dự án | ⬜ Chờ |
-| **Q6** | **Có chấp nhận bảng MEXT (Nhật) làm nguồn thứ hai không?** 5 nguyên liệu thuỷ sản (cá nục, ghẹ, mực khô, cá cơm khô, sò huyết) chỉ MEXT có, và **đúng chi** trong khi USDA sai chi tới 43% kcal. Nhưng nhận MEXT là có hai bảng song song → xung đột QT-4 | 5 nguyên liệu thuỷ sản; món có ghẹ/mực khô/cá cơm khô | Chủ dự án | ⬜ Chờ ([ING-002](./tasks/ING-002.md)) |
+| ~~Q9~~ | ~~CI chạy trên nền nào?~~ | — | — | ✅ **Đã đóng 2026-10-31** — tiền đề đã đảo ngược: repo nay ở **GitHub** (không còn remote GitLab) nên `.github/workflows/tests.yml` đã đúng nền. CI vẫn chưa chạy lần nào vì code **chưa push** — sẽ tự chạy ở lần push đầu (đang chờ credential) |
+| ~~Q6~~ | ~~Có chấp nhận bảng MEXT (Nhật) làm nguồn thứ hai không?~~ | — | — | ✅ **Đã đóng 2026-10-31** — quyết định **tầng 6** của chủ dự án bao quát cả MEXT/FNRI/IFCT/Bảng VN/văn liệu: chỉ tra từng mục khi nguồn chính thống không có, kèm trích dẫn + cờ "chưa kiểm định" (xem [DATA-PIPELINE §7.2](../04-data-sources/DATA-PIPELINE.md)). Xung đột QT-4 được xử lý bằng cơ chế `mixed` có kiểm soát + hạ confidence |
 
 ---
 

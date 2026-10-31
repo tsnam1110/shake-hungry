@@ -1,7 +1,8 @@
 # Engine gợi ý — nút Lắc
 
-**Cập nhật lần cuối:** 2026-08-31 — bản đầu tiên
-**Trạng thái:** ⚠️ **CHƯA HIỆN THỰC.** Đặc tả cho GĐ4, task [REC-001](../05-tasks/tasks/REC-001.md).
+**Cập nhật lần cuối:** 2026-10-31
+**Trạng thái:** ✅ **ĐÃ HIỆN THỰC** — engine gợi ý 3 tầng (task [REC-001](../05-tasks/tasks/REC-001.md)
+✅ DONE) đang chạy ở trang chủ, dị ứng là lọc cứng không bao giờ nới, có test chứng minh.
 
 ---
 

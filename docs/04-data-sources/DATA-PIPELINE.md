@@ -1,7 +1,8 @@
 # Quy trình sản xuất dữ liệu — Lắc Đói
 
-**Cập nhật lần cuối:** 2026-08-31 — bản đầu tiên
-**Trạng thái:** ⚠️ Quy trình đã thiết kế, công cụ **chưa hiện thực** (GĐ2)
+**Cập nhật lần cuối:** 2026-10-31
+**Trạng thái:** ✅ Quy trình đang vận hành thật — công cụ nhập liệu (admin antd) đã xong
+(ADM-001…005), các lệnh `lacdoi:*` chạy trong quy trình hằng ngày.
 
 Đây là tài liệu quan trọng nhất về vận hành dự án. Nếu quy trình này chậm hoặc mệt, dự án sẽ chết ở
 giai đoạn sản xuất dữ liệu — đó là cách các dự án cùng loại chết.

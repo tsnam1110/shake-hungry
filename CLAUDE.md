@@ -98,32 +98,33 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > đổi: vẫn cấm số từ trí nhớ và cấm gán số của loài/trạng thái khác cho nguyên liệu
 > chính mà không ghi rõ.
 
-**Trạng thái thực tế, kiểm ngày 2026-09-01 (đã chạy lại toàn bộ lệnh kiểm chứng):**
+**Trạng thái thực tế, kiểm ngày 2026-10-31 (đã chạy lại toàn bộ lệnh kiểm chứng):**
 
 | Hạng mục | Thực tế | Kiểm bằng |
 |---|---|---|
-| Tài liệu | ✅ 19 tài liệu trong `docs/` + 47 task file | `find docs -name "*.md" -not -path "*/tasks/*" \| wc -l` |
-| **Dữ liệu nguyên liệu** | ✅ **255 file** (mốc 250 của GĐ1 đã đạt): 125 high / 64 medium / 28 low / **38 "không tra được"** có tài liệu. ⚠️ **255/255 đang `needs_review`** — nay đã có chỗ ghi kết quả duyệt (R10), còn chờ **người** | `php artisan lacdoi:validate-data` |
-| Dữ liệu món ăn | 🔵 **61 file nháp** gieo mầm từ Wikidata (`status=draft`, vỏ rỗng: chưa vùng miền/bữa/nguyên liệu) — GĐ3 mới biên soạn thật | `ls data/dishes/vn` |
-| Bảng tham chiếu | ✅ SR Legacy **7.793** + Cooking Yields R2 **163** + FNDDS **333 Food Code / 1.810 SR Links** + `regions-vn.json` + `wikidata-vn-dishes.json`; **197/255 nguyên liệu ánh xạ, 0 lệch** | `data/reference/MANIFEST.json` |
+| Tài liệu | ✅ 23 tài liệu trong `docs/` + 52 task file | `find docs -name "*.md" -not -path "*/tasks/*" \| wc -l` |
+| **Dữ liệu nguyên liệu** | ✅ **313 file**: **289 có số dinh dưỡng có nguồn**, 24 để trống có hồ sơ lý do (13 nguyên liệu gốc tra đủ 3 vòng không có bảng đạt chuẩn + các mục phát sinh sau). Nguyên liệu gốc: **242/255 (94,9%) có số**. ⚠️ File nguyên liệu vẫn giữ `needs_review` — duyệt nguyên liệu là trục riêng, chưa duyệt (khác với món, xem dòng dưới) | `php artisan lacdoi:validate-data` |
+| Dữ liệu món ăn | ✅ **300 file đầy đủ công thức** (2.557 dòng nguyên liệu), kèm hệ nhãn phân loại (TAXONOMY.md); **297/300 tính được dinh dưỡng** (3 món còn lại vướng thiếu dữ liệu: gỏi ngó sen, mắm nêm, mắm ruột). **Chủ dự án đã duyệt toàn bộ công thức ngày 2026-10-31** (`needs_review=false` + `reviewed_by/at/note` trong từng file) | `ls data/dishes/vn` |
+| Bảng tham chiếu | ✅ SR Legacy **7.793** + Cooking Yields R2 **163** + FNDDS **333 Food Code / 1.810 SR Links** + `regions-vn.json` + `wikidata-vn-dishes.json`; **nguyên liệu gốc có số 242/255 (94,9%)** | `data/reference/MANIFEST.json` |
 | Hệ số DATA-004/008 | ✅ khung xong: `edible_portion_pct` (3 có nguồn, 16 null chờ cân), `default_yield_factor` (9 thịt suy có nguồn) | `edible_portion_note` / `default_yield_factor_note` từng file |
-| **Kiểm chứng engine** | 🔵 lần 2 (2026-09-01, engine **1.1.0**): **89,7% trong ±20%** (không đổi), MAPE 3,9%, và **% tham chiếu nằm trong khoảng 1,0% → 80,4%**. Vẫn chặn: **nhóm chiên chưa đo được** (0/255 có hệ số dầu) và **nhóm hấp lệch −21%** (Cooking Yields R2 **0 dòng thuỷ sản**) | [nhật ký đo](docs/06-nutrition/ACCURACY-SPEC.md) |
-| **Code** | ✅ **Laravel 13.29 + MySQL 8.0** — 17 migration (đủ R1–**R10**), engine calo **1.1.0**, **trang quản trị antd 6 + React 19 tại `/admin`**, **trang người dùng hoàn chỉnh** (Lắc + tài khoản + TDEE + nhật ký + đóng góp), **64 test Pest xanh** | `php artisan migrate:fresh --seed; vendor\bin\pest --no-coverage` |
-| **CI** | ⚠️ `.github/workflows/tests.yml` viết xong và hợp lệ, nhưng đó là cú pháp **GitHub Actions** trong khi repo nằm ở **GitLab** — GitLab bỏ qua hoàn toàn, nên CI **vẫn chưa chạy lần nào**. Cần `.gitlab-ci.yml` hoặc mirror sang GitHub (Q9) | `ls .gitlab-ci.yml` (không có) |
+| **Kiểm chứng engine** | 🔵 lần 2 (2026-09-01, engine **1.1.0**): **89,7% trong ±20%** (không đổi), MAPE 3,9%, và **% tham chiếu nằm trong khoảng 1,0% → 80,4%**. Hệ số hấp thụ dầu đã có theo nhóm (CALC-004, áp 2026-10-31) nên **nhóm chiên đã tính được**; vẫn chặn: **QA-002 chưa chạy** (chưa đo trên món Việt) và **nhóm hấp lệch −21%** (Cooking Yields R2 **0 dòng thuỷ sản**) | [nhật ký đo](docs/06-nutrition/ACCURACY-SPEC.md) |
+| **Code** | ✅ **Laravel 13.29 + MySQL 8.0** — 19 migration (đủ R1–**R10**), engine calo **1.1.0**, **trang quản trị antd 6 + React 19 tại `/admin`**, **trang người dùng hoàn chỉnh** (Lắc + lọc theo nhãn + tài khoản + TDEE + nhật ký + đóng góp), **77 test Pest xanh** | `php artisan migrate:fresh --seed; vendor\bin\pest --no-coverage` |
+| **CI** | 🔵 `.github/workflows/tests.yml` (GitHub Actions) — repo nay ở **GitHub** nên đã đúng nền; **chưa chạy lần nào vì code chưa push** (đang chờ chủ dự án cấp credential push) | `git remote -v` |
 | Chưa có | cột embedding (REC-002), Foundation Foods, rà soát độc lập ING-003, tích hợp LLM trong trang quản trị (ADM-006 — chờ chủ dự án chốt nhà cung cấp/API key) | [ROADMAP](docs/05-tasks/ROADMAP.md) |
-| Sao lưu | ✅ `origin` = `git@gitlab.com:Tran-Son-Nam/shake-hungry.git`, branch `dev` (8 commit, 513 file) — đẩy lần đầu 2026-09-01 | `git status -sb` |
+| Sao lưu | 🔵 `origin` = `https://github.com/tsnam1110/shake-hungry.git`, branch `dev`; nhánh local đang ahead origin nhiều commit (toàn bộ đợt 2026-10-30/31) — **push chờ chủ dự án cấp credential** (token hoặc khoá SSH) | `git status -sb` |
 
-> Việc tiếp theo theo thứ tự ưu tiên: ~~(0) đẩy repo lên remote~~ ✅ **xong 2026-09-01**;
-> **(1) hệ số hấp thụ dầu có nguồn** (chặn TEST-002, làm mọi món chiên VN hiển thị
-> "chưa đủ dữ liệu"); **(2) hệ số hao hụt cho thuỷ sản từ nguồn ĐỘC LẬP với USDA** (Q7 — nhóm hấp
-> lệch −21%); **(3) duyệt 255 nguyên liệu** (người — nay đã có chỗ ghi kết quả); **(4) cân 16 hệ số
-> phần ăn được** (ưu tiên sườn lợn); rồi mở GĐ2 (ADM-001 trang quản trị antd).
-> Việc chờ chủ dự án: **LEGAL-002**, **Q1**, **Q6**, **Q7**, **Q9** (CI đang sai nền — xem bảng trên).
-
-> ⚠️ **Repo đã nằm trên GitLab nhưng [LEGAL-002](docs/05-tasks/tasks/LEGAL-002.md) vẫn ⬜ TODO** —
-> tức 255 file dữ liệu tự biên soạn hiện **chưa có tuyên bố giấy phép nào**. Nếu repo để chế độ
-> public thì cần chốt LEGAL-002 sớm; nếu private thì chưa gấp, nhưng vẫn phải chốt trước khi có
-> người đóng góp thứ hai (CTR-001).
+> Việc tiếp theo theo thứ tự ưu tiên: **(1) đẩy code lên GitHub** (đã duyệt, chờ
+> credential); **(2) chốt phương án go-live** (VPS + subdomain / Laravel Cloud / PC +
+> Tailscale Funnel — chờ chủ dự án chọn); **(3) QA-002** — đo độ chính xác trên món Việt
+> khi đã đủ mẫu; **(4) hệ số hao hụt cho thuỷ sản từ nguồn độc lập với USDA** (Q7 — nhóm
+> hấp lệch −21%); **(5) cân 16 hệ số phần ăn được** (ưu tiên sườn lợn); **(6) DISH-004**
+> mở rộng lên 500 món theo nhu cầu. Việc chờ chủ dự án: **Q1**, **go-live**, **ADM-006**
+> (chọn nhà cung cấp/API key cho LLM trong admin), **tắt nút đăng nhập nhanh admin**
+> (đang bật trên môi trường dev kèm cảnh báo bảo mật).
+>
+> ✅ **[LEGAL-002](docs/05-tasks/tasks/LEGAL-002.md) đã chốt 2026-10-31:** mã nguồn theo
+> **MIT** (file `LICENSE` ở gốc repo); dữ liệu dạng **collective database** — phần tự biên
+> soạn **CC BY 4.0**, các dòng có nguồn Open Food Facts giữ **ODbL 1.0** + ghi công.
 >
 > ⚠️ **Chưa được tuyên bố "độ chính xác >80%" ra ngoài.** 89,7% là trên món Mỹ của FNDDS với ánh
 > xạ do USDA cung cấp sẵn, không có nhóm chiên — không phải trên kho món Việt. Soát bộ mẫu ngày
@@ -135,13 +136,13 @@ Bảng trạng thái tổng quan — **bắt buộc cập nhật mỗi khi đón
 
 | Giai đoạn | Nội dung | Trạng thái | Ngày đóng |
 |---|---|---|---|
-| GĐ0 | Thủ tục pháp lý + chốt định nghĩa + khởi tạo repo | 🔵 IN PROGRESS — kỹ thuật xong (SETUP-001/002 ✅); còn LEGAL-002 + Q1 chờ chủ dự án | — |
-| GĐ1 | Xương sống dữ liệu: schema + bảng nguyên liệu + engine calo | 🔵 IN PROGRESS — schema ✅, engine ✅, SR Legacy ✅, validate/export ✅; còn 150/250 nguyên liệu, DATA-003/004/005/008, TEST-002 | — |
-| GĐ2 | Trình nhập liệu nội bộ (mục tiêu: 5 phút/món) | ⬜ TODO | — |
-| GĐ3 | Sản xuất dữ liệu: 150 → 500 món | ⬜ TODO | — |
-| GĐ4 | Engine gợi ý + nút Lắc bản chính thức | ⬜ TODO | — |
-| GĐ5 | Hồ sơ người dùng + TDEE + lịch sử bữa ăn | ⬜ TODO | — |
-| GĐ6 | Đóng góp cộng đồng + lớp ngũ hành (tuỳ chọn) | ⬜ TODO | — |
+| GĐ0 | Thủ tục pháp lý + chốt định nghĩa + khởi tạo repo | 🔵 IN PROGRESS — kỹ thuật xong (SETUP-001/002 ✅), LEGAL-002 ✅ (2026-10-31); còn Q1 chờ chủ dự án | — |
+| GĐ1 | Xương sống dữ liệu: schema + bảng nguyên liệu + engine calo | ✅ DONE — schema/engine/SR Legacy/validate/export xong; bảng nguyên liệu vượt mốc (313 file) | 2026-10-31 |
+| GĐ2 | Trình nhập liệu nội bộ (mục tiêu: 5 phút/món) | 🔵 IN PROGRESS — lõi xong (ADM-001…005 ✅, admin antd chạy thật); còn ADM-006 (LLM, chờ API key) + ADM-007 (đo giờ nhập) | — |
+| GĐ3 | Sản xuất dữ liệu: 150 → 500 món | 🔵 IN PROGRESS — đã đạt 300 món (DISH-003), công thức đã duyệt; tiếp tục DISH-004 lên 500 | — |
+| GĐ4 | Engine gợi ý + nút Lắc bản chính thức | ✅ DONE — REC-001 + UI-002/003 chạy thật ở trang chủ | 2026-10-31 |
+| GĐ5 | Hồ sơ người dùng + TDEE + lịch sử bữa ăn | ✅ DONE — USR-001…004 chạy thật | 2026-10-31 |
+| GĐ6 | Đóng góp cộng đồng + lớp ngũ hành (tuỳ chọn) | 🔵 IN PROGRESS — đóng góp cộng đồng ✅ (CTR-001); lớp ngũ hành ⬜ (TCM-001…003, tuỳ chọn) | — |
 
 ---
 
@@ -159,7 +160,7 @@ php artisan db:seed --class=IngredientSeeder
 php artisan lacdoi:import-usda          # nạp USDA FoodData Central vào bảng tham chiếu
 php artisan lacdoi:recompute-calories   # tính lại calo toàn bộ món sau khi sửa nguyên liệu
 php artisan lacdoi:export-data          # xuất DB ngược ra data/*.json (xem mục 4)
-php artisan lacdoi:validate-data        # kiểm tra toàn vẹn dữ liệu V1-V15, chạy trước mỗi commit dữ liệu
+php artisan lacdoi:validate-data        # kiểm tra toàn vẹn dữ liệu V1-V16, chạy trước mỗi commit dữ liệu
 php artisan lacdoi:accuracy-run --dataset=fndds   # đo lại độ chính xác engine (TEST-002)
 vendor\bin\pest --no-coverage           # chạy test
 ```
@@ -397,6 +398,6 @@ Ghi lại để người kế nhiệm không lặp lại. Đây là kết luận
 | Bỏ qua công cụ nhập liệu, "nhập tay cho nhanh" | 15 phút/món × 500 món = 125 giờ → bỏ cuộc ở món thứ 80 | Đầu tư GĐ2 tới khi đạt **≤5 phút/món** rồi mới sản xuất hàng loạt |
 | Fork Tandoor/Mealie cho nhanh | Tandoor có Commons Clause (không phải OSS); Mealie AGPL kéo theo cả app | Đọc thiết kế, tự viết lại. Chỉ dùng thư viện MIT/Apache/CC0 |
 | Dùng RecipeNLG vì có 2,2 triệu công thức | Điều khoản phi thương mại, **ràng buộc cả công ty của người dùng** | Xem [LICENSE-COMPLIANCE](docs/04-data-sources/LICENSE-COMPLIANCE.md) |
-| Tải PDF bảng thành phần thực phẩm VN về nhập luôn | Sách có bản quyền của Viện Dinh dưỡng; tải được ≠ được phép dùng | Xin phép chính thức (task [LEGAL-001](docs/05-tasks/tasks/LEGAL-001.md)) |
+| Tải PDF bảng thành phần thực phẩm VN về nhập luôn | Sách có bản quyền của Viện Dinh dưỡng; tải được ≠ được phép dùng | Tra cứu **từng nguyên liệu** khi nguồn chính thống không có (tầng 6, DATA-PIPELINE §7.2) kèm trích dẫn + cờ chưa kiểm định; LEGAL-001 (xin phép) đã huỷ |
 | Để LLM điền calo cho nhanh | Phá thẳng mục tiêu chính của dự án, và không phát hiện được về sau | QT-1 |
 | Lưu dữ liệu chỉ trong database | Máy khác clone về là mất sạch | QT-3 |

@@ -1,7 +1,9 @@
 # Kiến trúc hệ thống — Lắc Đói
 
-**Cập nhật lần cuối:** 2026-08-31 — bản đầu tiên
-**Trạng thái:** ⚠️ Toàn bộ tài liệu này là **thiết kế dự kiến**. Chưa có dòng code nào được viết.
+**Cập nhật lần cuối:** 2026-10-31
+**Trạng thái:** ✅ **ĐÃ HIỆN THỰC** — kiến trúc dưới đây là kiến trúc đang chạy của hệ thống
+(Laravel 13 + MySQL 8, admin antd tại `/admin`); tài liệu được cập nhật đồng bộ theo các quyết định
+đính chính ghi trong thân bài.
 
 ---
 
@@ -24,7 +26,7 @@
 | Lớp | Công nghệ | Ghi chú |
 |---|---|---|
 | Runtime | PHP 8.3+ trên Laragon (Windows) | Không dùng Docker cho dev hằng ngày |
-| Framework | Laravel 12+ | |
+| Framework | Laravel 13 | |
 | Database | **MySQL 8.0+** | Xem §4 |
 | Tìm kiếm tên | FULLTEXT ngram + độ giống trigram ở tầng PHP | |
 | Admin / nhập liệu | Ant Design (antd) 6 + React 19 | Công cụ sản xuất dữ liệu chính — quyết định 2026-10-30, xem §5.6 |
@@ -100,7 +102,7 @@ migration `100008` và [SETUP-004](../05-tasks/tasks/SETUP-004.md).
 │  ┌────────────┐  ┌────────────┐  ┌─────────────────────────┐ │
 │  │ Bảng tham  │  │ Nguyên     │  │ Món ăn                  │ │
 │  │ chiếu      │◄─┤ liệu       │◄─┤ + dish_ingredients      │ │
-│  │ (USDA/VN)  │  │ (~250)     │  │ + nutrition (đã tính)   │ │
+│  │ (USDA/VN)  │  │ (313)      │  │ + nutrition (đã tính)   │ │
 │  └────────────┘  └────────────┘  └─────────────────────────┘ │
 └────────┬──────────────────┬──────────────────┬───────────────┘
          │                  │                  │
@@ -182,6 +184,10 @@ gói vá như thời v5).
 ---
 
 ## 6. Vai trò của LLM trong hệ thống
+
+> **Trạng thái 2026-10-31:** luồng trợ lý LLM dưới đây là **thiết kế dự kiến** — tích hợp LLM trong
+> trang quản trị (ADM-006) vẫn chưa làm, đang chờ chủ dự án chốt nhà cung cấp/API key. Hiện tại
+> admin vận hành không có LLM: người biên soạn nhập tay, engine tính calo tức thời.
 
 LLM **nằm ngoài đường đi của mọi con số**. Sơ đồ luồng:
 

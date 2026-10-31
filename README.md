@@ -6,10 +6,12 @@
 tự nấu), món đã ăn bữa trước, và thể trạng người dùng. Món tự nấu có công thức và calo tính từ bảng
 thành phần thực phẩm; món ăn ngoài có calo ước lượng kèm độ tin cậy.
 
-**Trạng thái (2026-08-31):** 🚧 Giai đoạn 1 — **255/250 nguyên liệu** đã biên soạn, engine calo đã
-chạy và **qua kiểm chứng đầu tiên** (89,7% số món FNDDS trong ±20%; nhóm chiên chưa đo được), 61 món
-gieo mầm từ Wikidata ở trạng thái nháp. Xem [ROADMAP](docs/05-tasks/ROADMAP.md) và
-[nhật ký đo](docs/06-nutrition/ACCURACY-SPEC.md).
+**Trạng thái (2026-10-31):** ✅ Ứng dụng hoàn chỉnh hai phía — trang người dùng (Lắc món 3 tầng,
+lọc theo nhãn phân loại và dị ứng, tài khoản + TDEE + nhật ký bữa ăn, đóng góp cộng đồng) và trang
+quản trị `/admin` (Ant Design 6 + React 19). Kho dữ liệu: **300 món đầy đủ công thức đã được duyệt,
+313 nguyên liệu** (289 có số dinh dưỡng có nguồn), **297/300 món tính được calo** bằng engine
+(CALC-004 đã bổ sung hệ số hấp thụ dầu theo nhóm cho món chiên). Xem [ROADMAP](docs/05-tasks/ROADMAP.md)
+và [nhật ký đo](docs/06-nutrition/ACCURACY-SPEC.md).
 
 ---
 
