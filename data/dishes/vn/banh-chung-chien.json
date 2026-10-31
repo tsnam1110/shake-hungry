@@ -87,7 +87,14 @@
     "Dọn nóng, ăn kèm hành muối hoặc chấm nước mắm, tương ớt."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/banh-chung-chien.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) [Ghi chú 2026-10-31 — Phương án A/QA-002: GIỮ NGUYÊN dòng dau-an 10 g, KHÔNG phải tính trùng. Chủ thể chiên của món là tinh bột đã nấu chín (gạo nếp) — nguyên liệu có oil_absorption_pct = 0 theo thiết kế CALC-004 ('tinh bột đã nấu chín rán lại với dầu đã kê trong công thức'), nên dòng dầu này là cơ chế tính dầu duy nhất của món; bỏ đi là engine tính 0 g dầu cho một món chiên. Đưa món này về quy ước A thuần tuý đòi hỏi gán hệ số hấp thụ cho gao-nep đã nấu — thay đổi phía engine/dữ liệu nguyên liệu, ngoài phạm vi Phương án A, chờ quyết định riêng.]",

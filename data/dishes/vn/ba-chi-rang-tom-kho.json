@@ -120,7 +120,14 @@
       "url": "https://cookpad.com/vn/cong-thuc/3454020"
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/ba-chi-rang-tom-kho.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Method xao như thit-rang-chay-canh: rang bằng mỡ tự thân là chính, dầu 3 g chỉ để phi hành đầu chảo. [LV2-005 đợt 5: nâng Mức 2 — đối chiếu 4 nguồn đã mở; không sửa định lượng vì chỉ 1/4 nguồn ghi khẩu phần rõ và tỉ lệ tôm/thịt của file nằm trong cụm đa số nguồn. Bất thường ghi nhận: các nguồn đều có tỏi, hành lá, ớt tươi và chất lỏng rim (nước dừa hoặc nước ngâm tôm) mà file chưa có dòng tương ứng; nguồn dùng đường cát và có thắng màu trước, file dùng đường thốt nốt — chờ pha phân xử.]",
