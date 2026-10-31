@@ -36,6 +36,8 @@ class ProfileController extends Controller
             'diet_type' => ['nullable', Rule::in(['chay', 'chay-truong', 'low-carb'])],
             'excluded_ingredients' => ['nullable', 'array'],
             'excluded_ingredients.*' => ['string', 'max:64'],
+            'preferred_region_id' => ['nullable', 'integer', 'exists:regions,id'],
+            'target_kcal_per_meal' => ['nullable', 'integer', 'min:100', 'max:2000'],
         ]);
         $profile = UserProfile::updateOrCreate(['user_id' => $request->user()->id], $data);
 

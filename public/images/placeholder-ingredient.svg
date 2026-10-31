@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#EDF0F7"/>
+  <circle cx="400" cy="300" r="150" fill="#DDE4F0"/>
+  <g fill="none" stroke="#3D5A96" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" opacity="0.9">
+    <path d="M400 410c0-70 10-130 60-180-75 5-125 30-140 95-10 42 15 75 50 85" fill="#3D5A96" stroke="none" opacity="0.8"/>
+    <path d="M400 410c-5-55 12-100 48-138"/>
+  </g>
+  <text x="400" y="505" font-family="Arial, sans-serif" font-size="30" font-weight="600" fill="#5D6E8C" text-anchor="middle">Ảnh nguyên liệu đang được bổ sung</text>
+</svg>

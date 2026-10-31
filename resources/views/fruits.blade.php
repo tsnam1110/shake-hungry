@@ -44,7 +44,7 @@
         </div>
     </div>
 
-    <div id="list" class="grid grid-cols-1 sm:grid-cols-2 gap-3" style="margin-top:16px"></div>
+    <div id="list" class="ld-grid" style="margin-top:16px"></div>
     <p id="empty" class="ld-note" style="margin-top:20px" hidden>Không có quả nào khớp bộ lọc.</p>
 @endsection
 
@@ -77,18 +77,15 @@ async function load() {
     const data = await res.json();
     const m = month ? parseInt(month, 10) : null;
     document.getElementById('list').innerHTML = (data.data ?? []).map(f => `
-        <a href="/hoa-qua/${f.slug}" class="ld-card" style="padding:16px;display:block;text-decoration:none;color:inherit">
-            <span style="font-size:17px;font-weight:700">${esc(f.name_vi)}</span>
-            ${f.aliases?.length ? `<span style="display:block;font-size:13px;color:var(--color-faint)">${f.aliases.map(a => esc(a.name)).join(' · ')}</span>` : ''}
-            <span style="display:block;font-size:13.5px;color:var(--color-sub);margin-top:3px">${groupName[f.classification_group] ?? ''} · ${f.kcal_per_100g != null ? Math.round(f.kcal_per_100g) + ' kcal/100g' : 'chưa có số calo'}</span>
-            <span style="display:flex;flex-wrap:wrap;gap:5px;margin-top:9px">
-                ${m && (f.main_season_months ?? []).includes(m) ? '<span class="ld-badge vu">Đang vụ chính</span>' : ''}
-                ${m && (f.best_value_months ?? []).includes(m) ? '<span class="ld-badge hoi">Hời nhất tháng này</span>' : ''}
-                ${m && (f.best_nutrition_months ?? []).includes(m) ? '<span class="ld-badge bo">Bổ nhất lúc này</span>' : ''}
-                ${f.unverified ? '<span class="ld-badge unv">Số chưa kiểm định</span>' : ''}
+        <a href="/hoa-qua/${f.slug}" class="ld-dcard">
+            <img class="ld-dcard-img" src="/images/placeholder-fruit.svg" alt="" loading="lazy">
+            <span class="ld-dcard-body">
+                <span class="ld-dcard-title">${esc(f.name_vi)}</span>
+                <span class="ld-dcard-meta">${groupName[f.classification_group] ?? ''} · ${f.kcal_per_100g != null ? Math.round(f.kcal_per_100g) + ' kcal/100g' : 'chưa có số calo'}${f.aliases?.length ? ' · ' + f.aliases.map(a => esc(a.name)).join(', ') : ''}</span>
+                <span class="ld-dcard-badges">${m && (f.main_season_months ?? []).includes(m) ? '<span class="ld-badge vu">Đang vụ chính</span>' : ''}${m && (f.best_value_months ?? []).includes(m) ? '<span class="ld-badge hoi">Hời nhất tháng này</span>' : ''}${m && (f.best_nutrition_months ?? []).includes(m) ? '<span class="ld-badge bo">Bổ nhất lúc này</span>' : ''}${f.unverified ? '<span class="ld-badge unv">Số chưa kiểm định</span>' : ''}</span>
+                <span class="ld-dcard-foot"><span class="ld-seasonbar" aria-hidden="true">${Array.from({length: 12}, (_, i) =>
+                    `<i class="${(f.main_season_months ?? []).includes(i + 1) ? 'main' : (f.availability_months ?? []).includes(i + 1) ? 'on' : ''}"></i>`).join('')}</span></span>
             </span>
-            <span style="display:flex;gap:3px;margin-top:11px" aria-hidden="true">${Array.from({length: 12}, (_, i) =>
-                `<span style="height:6px;flex:1;border-radius:3px;background:${(f.availability_months ?? []).includes(i + 1) ? ((f.main_season_months ?? []).includes(i + 1) ? 'var(--color-mint)' : '#bfe8cb') : 'var(--color-fill)'}"></span>`).join('')}</span>
         </a>`).join('');
     document.getElementById('empty').hidden = (data.data ?? []).length > 0;
 }

@@ -201,3 +201,41 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 @keyframes ld-shake { 0%,100% { transform: rotate(0); } 25% { transform: rotate(-2.5deg); } 75% { transform: rotate(2.5deg); } }
 .ld-shaking { animation: ld-shake .18s ease-in-out infinite; display: inline-block; }
 @media (prefers-reduced-motion: reduce) { .ld-shaking { animation: none; } html { scroll-behavior: auto; } }
+
+/* ---------- Thẻ đồng nhất (UI-012) ----------
+ * Món ăn / hoa quả / nguyên liệu dùng chung một khung thẻ: ô ảnh tỉ lệ cố
+ * định (ảnh mẫu SVG, thay 1-1 bằng ảnh thật sau), các dòng nội dung có
+ * chiều cao cố định và luôn được render (kể cả khi rỗng) — mọi thẻ cao
+ * bằng nhau, vị trí nội dung không bao giờ xê dịch vì nội dung dài/ngắn. */
+.ld-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; align-items: stretch; }
+@media (min-width: 1024px) { .ld-grid { grid-template-columns: repeat(3, 1fr); } }
+.ld-grid-ing { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; align-items: stretch; }
+@media (min-width: 640px) { .ld-grid-ing { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 1024px) { .ld-grid-ing { grid-template-columns: repeat(4, 1fr); } }
+.ld-dcard { display: flex; flex-direction: column; height: 100%; background: var(--color-surface);
+    border-radius: 20px; overflow: hidden; text-decoration: none; color: var(--color-ink);
+    box-shadow: 0 1px 2px rgba(0,0,0,.03), 0 10px 30px rgba(0,0,0,.045); }
+a.ld-dcard:hover { box-shadow: 0 2px 4px rgba(0,0,0,.05), 0 14px 34px rgba(0,0,0,.09); }
+.ld-dcard-img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; flex: none; background: var(--color-fill); }
+.ld-dcard-body { display: flex; flex-direction: column; flex: 1; padding: 12px 14px 14px; min-width: 0; }
+.ld-dcard-title { font-size: 15.5px; font-weight: 700; line-height: 20px; height: 20px;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ld-dcard-meta { font-size: 13px; color: var(--color-sub); line-height: 18px; height: 18px; margin-top: 3px;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ld-dcard-badges { height: 24px; margin-top: 8px; overflow: hidden; white-space: nowrap; }
+.ld-dcard-foot { margin-top: auto; padding-top: 10px; min-height: 24px; display: flex;
+    align-items: center; justify-content: space-between; gap: 8px; }
+.ld-dcard-kcal { font-size: 15.5px; font-weight: 800; color: var(--color-energy); white-space: nowrap; }
+.ld-dcard-kcal.none { color: var(--color-faint); font-weight: 600; font-size: 14px; }
+.ld-dcard-conf { font-size: 12px; color: var(--color-faint); white-space: nowrap; }
+.ld-seasonbar { display: flex; gap: 3px; flex: 1; }
+.ld-seasonbar i { height: 6px; flex: 1; border-radius: 3px; background: var(--color-fill); }
+.ld-seasonbar i.on { background: #bfe8cb; }
+.ld-seasonbar i.main { background: var(--color-mint); }
+.ld-scroll-cards { display: flex; gap: 12px; overflow-x: auto; padding: 2px 0 10px;
+    scroll-snap-type: x mandatory; scrollbar-width: none; align-items: stretch; }
+.ld-scroll-cards::-webkit-scrollbar { display: none; }
+.ld-scroll-cards .ld-dcard { flex: 0 0 218px; scroll-snap-align: start; }
+
+/* ---------- Đồng hồ khối Lắc (UI-011) ---------- */
+.ld-clock { font-size: 31px; font-weight: 800; letter-spacing: -.02em; line-height: 1; }

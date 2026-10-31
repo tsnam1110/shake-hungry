@@ -8,24 +8,21 @@
     <p class="ld-subtitle">Lắc một món hợp bữa, đúng vùng miền bạn thích và tránh những gì bạn không ăn được.
         <span id="auth-area"></span></p>
 
-    {{-- ===== Sân khấu Lắc (UI-005) ===== --}}
+    {{-- ===== Khối Lắc (UI-011): giờ hiện tại + gợi ý bữa, lựa chọn ở trên nút Lắc ===== --}}
     <section class="ld-card" style="margin-top:20px" aria-label="Lắc món">
-        <div class="ld-seg" id="slots" role="group" aria-label="Chọn bữa"></div>
-
-        <div id="result" aria-live="polite">
-            <div style="text-align:center;color:var(--color-faint);padding:26px 10px 8px">
-                <span id="shake-icon" class="ld-tile" style="width:52px;height:52px;border-radius:14px;margin-bottom:8px">
-                    <svg width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 12h16a8 8 0 0 1-16 0Z"/><path d="M9 8c1-1.6 4.5-1.8 6-.5"/><path d="M15.5 5.5c1.2-1 2.7-1.3 4-1"/></svg>
-                </span>
-                <p style="margin:6px 0 0">Bấm <b>Lắc một món</b> để nhận gợi ý cho bữa này.</p>
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px">
+            <div>
+                <div class="ld-clock ld-tnum" id="clock">--:--</div>
+                <p id="slot-hint" style="color:var(--color-sub);font-size:14.5px;margin:5px 0 0">Đang xem giờ để gợi ý bữa phù hợp…</p>
             </div>
+            <span id="shake-icon" class="ld-tile green" style="width:52px;height:52px;border-radius:14px">
+                <svg width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 12h16a8 8 0 0 1-16 0Z"/><path d="M9 8c1-1.6 4.5-1.8 6-.5"/><path d="M15.5 5.5c1.2-1 2.7-1.3 4-1"/></svg>
+            </span>
         </div>
 
-        <button id="shake-btn" class="ld-btn ld-btn-primary" style="width:100%;margin-top:14px;padding:16px 24px;font-size:18px">
-            Lắc một món
-        </button>
+        <div class="ld-seg" id="slots" role="group" aria-label="Chọn bữa" style="margin-top:16px"></div>
 
-        <div style="margin-top:18px;border-top:1px solid var(--color-line);padding-top:6px">
+        <div style="margin-top:8px">
             <div class="ld-row" style="padding-left:2px;padding-right:2px">
                 <span class="grow">Ăn chay</span>
                 <button class="ld-switch" type="button" role="switch" aria-checked="false" id="vegetarian" aria-label="Ăn chay"></button>
@@ -50,6 +47,15 @@
             </div>
             <p class="ld-field-label" style="margin-top:12px">Không ăn được — lọc này không bao giờ bị nới lỏng</p>
             <div class="ld-chips" id="allergens"></div>
+            <p class="ld-note" id="pref-note" hidden style="margin-top:12px">Các lựa chọn Ăn chay, Vùng miền, Kcal mục tiêu và Không ăn được được lấy từ hồ sơ của bạn và tự lưu lại khi bạn thay đổi. <span id="pref-saved" style="color:var(--color-mint-dark);font-weight:600"></span></p>
+        </div>
+
+        <button id="shake-btn" class="ld-btn ld-btn-primary" style="width:100%;margin-top:18px;padding:16px 24px;font-size:18px">
+            Lắc một món
+        </button>
+
+        <div id="result" aria-live="polite">
+            <p style="text-align:center;color:var(--color-faint);margin:18px 0 2px">Chọn bữa và khẩu vị ở trên, rồi bấm <b>Lắc một món</b>.</p>
         </div>
     </section>
 
@@ -60,7 +66,7 @@
         <p class="ld-note" id="today-summary" style="margin-top:10px"></p>
     </section>
 
-    {{-- ===== Khám phá món (UI-006) ===== --}}
+    {{-- ===== Khám phá món (UI-006 + thẻ đồng nhất UI-012) ===== --}}
     <section id="kham-pha" style="scroll-margin-top:80px">
         <div class="ld-section-head"><h2 class="ld-section-title">Khám phá món</h2></div>
         <div class="ld-search" role="search">
@@ -68,18 +74,18 @@
             <input id="catalog-q" type="search" placeholder="Tìm món ăn" aria-label="Tìm món ăn">
         </div>
         <div class="ld-chips-scroll" id="catalog-filters" style="margin-top:10px" role="group" aria-label="Lọc theo nhãn"></div>
-        <div class="ld-group" id="catalog"></div>
-        <p class="ld-note" style="margin-top:10px">Số calo luôn là khoảng kèm độ tin cậy. Món chưa đủ dữ liệu không hiện số.</p>
+        <div class="ld-grid" id="catalog"></div>
+        <p class="ld-note" style="margin-top:12px">Số calo luôn là khoảng kèm độ tin cậy. Món chưa đủ dữ liệu không hiện số. Ảnh món đang được bổ sung — ô ảnh sẽ giữ nguyên kích thước khi có ảnh thật.</p>
     </section>
 
-    {{-- ===== Hoa quả tháng này (UI-009, khối trang chủ) ===== --}}
+    {{-- ===== Hoa quả tháng này (UI-009 + thẻ đồng nhất UI-012) ===== --}}
     <section>
         <div class="ld-section-head">
             <h2 class="ld-section-title">Tháng này nên ăn quả gì</h2>
             <a href="/hoa-qua">Xem cả năm</a>
         </div>
         <p class="ld-subtitle" style="font-size:15px;margin-top:-4px">Quả đang vào vụ và giá hời nhất tháng này — vừa bổ vừa rẻ.</p>
-        <div class="ld-fruit-scroll" id="fruit-month" style="margin-top:14px"></div>
+        <div class="ld-scroll-cards" id="fruit-month" style="margin-top:14px"></div>
     </section>
 @endsection
 
@@ -96,20 +102,23 @@ const ALLERGENS = [
     ['Lúa mì', ['bot-mi','banh-mi','mi-trung-kho','mi-an-lien']],
     ['Mắm tôm', ['mam-tom']],
 ];
-let slot = (() => { const h = new Date().getHours();
-    if (h < 10) return 'sang'; if (h < 14) return 'trua'; if (h < 17) return 'chieu'; if (h < 21) return 'toi'; return 'an-vat'; })();
+function suggestedSlot(h) { if (h < 10) return 'sang'; if (h < 14) return 'trua'; if (h < 17) return 'chieu'; if (h < 21) return 'toi'; return 'an-vat'; }
+let slot = suggestedSlot(new Date().getHours());
 let allergenSlugs = new Set();
 let shakeIndex = 0;
 const recent = JSON.parse(localStorage.getItem('lacdoi_recent') || '[]');
 const csrf = document.querySelector('meta[name=csrf-token]').content;
 let currentUser = null;
+let myProfile = null;
 const confLabel = { high: 'Tin cậy cao', medium: 'Tin cậy trung bình', low: 'Tin cậy thấp · số tham khảo' };
+const confShort = { high: 'Tin cậy cao', medium: 'Tin cậy TB', low: 'Tin cậy thấp' };
 const confClass = { high: '', medium: 'medium', low: 'low' };
 const slotName = { sang: 'Sáng', trua: 'Trưa', chieu: 'Chiều', toi: 'Tối', 'an-vat': 'Ăn vặt' };
 function esc(s) { return (s ?? '').toString().replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
 function swOn(id) { return document.getElementById(id).getAttribute('aria-checked') === 'true'; }
+function setSw(id, on) { document.getElementById(id).setAttribute('aria-checked', on ? 'true' : 'false'); }
 
-/* Lời chào + ngày theo giờ thật */
+/* Lời chào + ngày + đồng hồ + gợi ý bữa theo giờ hiện tại */
 (() => {
     const now = new Date();
     const h = now.getHours();
@@ -117,14 +126,56 @@ function swOn(id) { return document.getElementById(id).getAttribute('aria-checke
     document.getElementById('greeting').textContent = greet;
     document.getElementById('date-line').textContent =
         now.toLocaleDateString('vi-VN', { weekday: 'long', day: 'numeric', month: 'long' }).replace(/^./, c => c.toUpperCase());
+    function tick() {
+        const t = new Date();
+        document.getElementById('clock').textContent =
+            String(t.getHours()).padStart(2, '0') + ':' + String(t.getMinutes()).padStart(2, '0');
+        document.getElementById('slot-hint').textContent =
+            `Theo giờ hiện tại, gợi ý bữa ${slotName[suggestedSlot(t.getHours())]} — bạn vẫn đổi sang bữa khác được.`;
+    }
+    tick(); setInterval(tick, 15000);
 })();
 
-fetch('/api/me').then(r => r.json()).then(({ user }) => {
+/* ===== Hồ sơ: điền sẵn tuỳ chọn lắc + lưu ngược khi đổi (UI-011) ===== */
+function flashSaved() {
+    const el = document.getElementById('pref-saved');
+    el.textContent = 'Đã lưu vào hồ sơ ✓';
+    clearTimeout(el._h); el._h = setTimeout(() => el.textContent = '', 2200);
+}
+async function savePref(partial) {
+    if (!currentUser) return;
+    try {
+        const resp = await fetch('/api/profile', { method: 'PUT',
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json', 'X-CSRF-TOKEN': csrf },
+            body: JSON.stringify(partial) });
+        if (resp.ok) { const data = await resp.json(); myProfile = data.profile; flashSaved(); }
+    } catch { /* lưu tuỳ chọn là phụ — lỗi thì bỏ qua */ }
+}
+function applyPrefs() {
+    if (!myProfile) return;
+    if (['chay', 'chay-truong'].includes(myProfile.diet_type)) setSw('vegetarian', true);
+    if (myProfile.preferred_region_id) {
+        const sel = document.getElementById('region');
+        if ([...sel.options].some(o => +o.value === myProfile.preferred_region_id)) sel.value = myProfile.preferred_region_id;
+    }
+    if (myProfile.target_kcal_per_meal) document.getElementById('target_kcal').value = myProfile.target_kcal_per_meal;
+    const ex = new Set(myProfile.excluded_ingredients || []);
+    document.querySelectorAll('#allergens .ld-chip').forEach(b => {
+        const slugs = ALLERGENS[+b.dataset.i][1];
+        if (slugs.some(s => ex.has(s))) { b.classList.add('active'); slugs.forEach(s => allergenSlugs.add(s)); }
+    });
+}
+
+fetch('/api/me').then(r => r.json()).then(async ({ user }) => {
     currentUser = user;
     document.getElementById('auth-area').innerHTML = user
         ? `Xin chào <b>${esc(user.name)}</b> — <a href="/ho-so" style="color:var(--color-link)">hồ sơ và nhật ký</a> của bạn đã sẵn sàng.`
         : `<a href="/tai-khoan" style="color:var(--color-link)">Đăng nhập</a> để lưu bữa ăn và lắc theo khẩu vị của bạn — khách vẫn lắc thoải mái.`;
-    if (user) loadToday();
+    if (user) {
+        document.getElementById('pref-note').hidden = false;
+        try { const data = await (await fetch('/api/profile')).json(); myProfile = data.profile; applyPrefs(); } catch { /* bỏ qua */ }
+        loadToday();
+    }
 });
 
 const slotsEl = document.getElementById('slots');
@@ -141,16 +192,32 @@ algEl.querySelectorAll('button').forEach(b => b.onclick = () => {
     const slugs = ALLERGENS[+b.dataset.i][1];
     const on = b.classList.toggle('active');
     slugs.forEach(s => on ? allergenSlugs.add(s) : allergenSlugs.delete(s));
+    savePref({ excluded_ingredients: [...allergenSlugs] });
 });
 
 ['vegetarian', 'eat_out', 'home_cook'].forEach(id => {
     const el = document.getElementById(id);
-    el.addEventListener('click', () => el.setAttribute('aria-checked', el.getAttribute('aria-checked') === 'true' ? 'false' : 'true'));
+    el.addEventListener('click', () => {
+        el.setAttribute('aria-checked', el.getAttribute('aria-checked') === 'true' ? 'false' : 'true');
+        if (id === 'vegetarian' && myProfile?.diet_type !== 'low-carb') {
+            savePref({ diet_type: swOn('vegetarian') ? 'chay' : null });
+        }
+    });
 });
 
 fetch('/api/regions').then(r => r.json()).then(rs => {
     document.getElementById('region').innerHTML = '<option value="">Mọi vùng miền</option>' +
         rs.map(r => `<option value="${r.id}">${esc(r.name)}</option>`).join('');
+    applyPrefs();
+});
+document.getElementById('region').addEventListener('change', (e) => {
+    savePref({ preferred_region_id: e.target.value ? +e.target.value : null });
+});
+document.getElementById('target_kcal').addEventListener('change', (e) => {
+    const v = e.target.value;
+    if (v === '') { savePref({ target_kcal_per_meal: null }); return; }
+    const n = +v;
+    if (n >= 100 && n <= 2000) savePref({ target_kcal_per_meal: n });
 });
 
 /* ===== Khám phá: lọc theo nhãn (TAXONOMY) — 1 lựa chọn mỗi facet ===== */
@@ -168,27 +235,31 @@ fetch('/api/tags').then(r => r.json()).then(ts => {
     }));
 });
 
-const tileColors = ['blue', 'orange', 'green', 'purple', 'red'];
+/* Thẻ món đồng nhất (UI-012): mọi dòng có chiều cao cố định, render cả khi rỗng */
 async function loadCatalog() {
     const q = document.getElementById('catalog-q').value;
     const params = new URLSearchParams({ per_page: 24 });
     if (q) params.set('q', q);
     Object.values(catalogTags).forEach(t => { if (t) params.append('tag', t); });
     const data = await (await fetch('/api/dishes?' + params)).json();
-    document.getElementById('catalog').innerHTML = (data.data ?? []).map((d, i) => {
+    document.getElementById('catalog').innerHTML = (data.data ?? []).map(d => {
         const n = d.nutrition;
         const name = d.names?.[0]?.name ?? d.slug;
         const tags = (d.tags ?? []).filter(t => t.slug.startsWith('loai:') || t.slug === 'diet:chay');
         const unv = (n?.unverified_ingredients ?? []).length > 0;
-        return `<a href="/mon/${d.slug}" class="ld-row sep-icon">
-            <span class="ld-tile ${tileColors[i % tileColors.length]}">${esc(name.trim().charAt(0).toUpperCase())}</span>
-            <span class="grow"><span style="font-weight:600">${esc(name)}</span>
-                <span class="sub">${esc(d.region?.name ?? '')}${tags.map(t => ' · ' + esc(t.name)).join('')}${unv ? ' <span class="ld-badge unv">Chưa kiểm định</span>' : ''}</span></span>
-            ${n ? `<span class="ld-price"><span class="so ld-tnum">${Math.round(n.kcal_min)}–${Math.round(n.kcal_max)}</span><small>kcal · ${(confLabel[n.confidence] ?? '').replace('Tin cậy ', '')}</small></span>`
-                 : `<span class="ld-price"><span class="so" style="color:var(--color-faint);font-weight:600">Chưa đủ dữ liệu</span><small>không hiện số</small></span>`}
-            <svg class="ld-chev" width="8" height="14" viewBox="0 0 8 14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M1 1l6 6-6 6"/></svg>
+        const chay = (d.tags ?? []).some(t => t.slug === 'diet:chay');
+        return `<a href="/mon/${d.slug}" class="ld-dcard">
+            <img class="ld-dcard-img" src="/images/placeholder-dish.svg" alt="" loading="lazy">
+            <span class="ld-dcard-body">
+                <span class="ld-dcard-title">${esc(name)}</span>
+                <span class="ld-dcard-meta">${esc(d.region?.name ?? '')}${tags.filter(t => t.slug.startsWith('loai:')).map(t => ' · ' + esc(t.name)).join('')}</span>
+                <span class="ld-dcard-badges">${chay ? '<span class="ld-badge chay">Chay</span>' : ''}${unv ? '<span class="ld-badge unv">Chưa kiểm định</span>' : ''}</span>
+                <span class="ld-dcard-foot">${n
+                    ? `<span class="ld-dcard-kcal ld-tnum">${Math.round(n.kcal_min)}–${Math.round(n.kcal_max)} kcal</span><span class="ld-dcard-conf">${confShort[n.confidence] ?? ''}</span>`
+                    : `<span class="ld-dcard-kcal none">Chưa đủ dữ liệu</span><span class="ld-dcard-conf">không hiện số</span>`}</span>
+            </span>
         </a>`;
-    }).join('') || '<p style="color:var(--color-faint);padding:18px 16px;margin:0">Không thấy món nào khớp bộ lọc.</p>';
+    }).join('') || '<p style="color:var(--color-faint);margin:0">Không thấy món nào khớp bộ lọc.</p>';
 }
 loadCatalog();
 let qTimer;
@@ -197,6 +268,7 @@ document.getElementById('catalog-q').addEventListener('input', () => {
 });
 
 /* ===== Hôm nay đã ăn ===== */
+const tileColors = ['blue', 'orange', 'green', 'purple', 'red'];
 async function loadToday() {
     try {
         const date = new Date().toISOString().slice(0, 10);
@@ -222,7 +294,7 @@ async function loadToday() {
 /* ===== Lắc món ===== */
 document.getElementById('shake-btn').addEventListener('click', async () => {
     const icon = document.getElementById('shake-icon');
-    if (icon) { icon.classList.remove('ld-shaking'); void icon.offsetWidth; icon.classList.add('ld-shaking'); }
+    icon.classList.remove('ld-shaking'); void icon.offsetWidth; icon.classList.add('ld-shaking');
     const btn = document.getElementById('shake-btn'); btn.disabled = true; btn.textContent = 'Đang lắc…';
     try {
         const resp = await fetch('/api/shake', {
@@ -250,7 +322,7 @@ document.getElementById('shake-btn').addEventListener('click', async () => {
         recent.push(d.id); localStorage.setItem('lacdoi_recent', JSON.stringify(recent.slice(-15)));
         const n = d.nutrition;
         const unv = (n?.unverified_ingredients ?? []);
-        box.innerHTML = `<div style="padding-top:8px">
+        box.innerHTML = `<div style="padding-top:8px;border-top:1px solid var(--color-line);margin-top:18px">
             <h2 style="font-size:29px;font-weight:800;letter-spacing:-.02em;line-height:1.2;margin:12px 0 2px">
                 <a href="/mon/${d.slug}" style="color:inherit;text-decoration:none">${esc(d.name)}</a></h2>
             <p style="color:var(--color-sub);font-size:15px;margin:0">${esc(d.region ?? '')}${d.serving_desc ? ' · ' + esc(d.serving_desc) : ''}</p>
@@ -280,11 +352,11 @@ document.getElementById('shake-btn').addEventListener('click', async () => {
         };
     } finally {
         btn.disabled = false; btn.textContent = 'Lắc món khác';
-        if (icon) setTimeout(() => icon.classList.remove('ld-shaking'), 600);
+        setTimeout(() => icon.classList.remove('ld-shaking'), 600);
     }
 });
 
-/* ===== Khối hoa quả tháng này ===== */
+/* ===== Khối hoa quả tháng này — thẻ quả đồng nhất (UI-012) ===== */
 (async () => {
     const m = new Date().getMonth() + 1;
     const box = document.getElementById('fruit-month');
@@ -299,15 +371,16 @@ document.getElementById('shake-btn').addEventListener('click', async () => {
             const extra = (data.data ?? []).filter(f => (f.main_season_months ?? []).includes(m) && !list.some(x => x.slug === f.slug));
             list = [...list, ...extra];
         }
-        box.innerHTML = list.slice(0, 8).map((f, i) => `
-            <a href="/hoa-qua/${f.slug}" class="ld-fruit-card">
-                <span class="ld-tile ${tileColors[i % tileColors.length]}" style="width:44px;height:44px;border-radius:12px;font-size:19px;margin-bottom:11px">${esc(f.name_vi.trim().charAt(0).toUpperCase())}</span>
-                <span style="display:block;font-size:16.5px;font-weight:700">${esc(f.name_vi)}</span>
-                <span style="display:block;margin-top:6px">
-                    ${(f.main_season_months ?? []).includes(m) ? '<span class="ld-badge vu">Đang vụ chính</span>' : ''}
-                    ${(f.best_value_months ?? []).includes(m) ? '<span class="ld-badge hoi">Giá hời</span>' : ''}
+        box.innerHTML = list.slice(0, 8).map(f => `
+            <a href="/hoa-qua/${f.slug}" class="ld-dcard">
+                <img class="ld-dcard-img" src="/images/placeholder-fruit.svg" alt="" loading="lazy">
+                <span class="ld-dcard-body">
+                    <span class="ld-dcard-title">${esc(f.name_vi)}</span>
+                    <span class="ld-dcard-meta">${f.kcal_per_100g != null ? Math.round(f.kcal_per_100g) + ' kcal/100g' : 'Chưa có số calo'}</span>
+                    <span class="ld-dcard-badges">${(f.main_season_months ?? []).includes(m) ? '<span class="ld-badge vu">Đang vụ chính</span>' : ''}${(f.best_value_months ?? []).includes(m) ? '<span class="ld-badge hoi">Giá hời</span>' : ''}</span>
+                    <span class="ld-dcard-foot"><span class="ld-seasonbar" aria-hidden="true">${Array.from({length: 12}, (_, i) =>
+                        `<i class="${(f.main_season_months ?? []).includes(i + 1) ? 'main' : (f.availability_months ?? []).includes(i + 1) ? 'on' : ''}"></i>`).join('')}</span></span>
                 </span>
-                ${f.kcal_per_100g != null ? `<span class="ld-note" style="display:block;margin-top:6px">${Math.round(f.kcal_per_100g)} kcal/100g</span>` : ''}
             </a>`).join('') || '<p class="ld-note">Chưa có dữ liệu quả cho tháng này.</p>';
     } catch { /* khối phụ — lỗi thì bỏ qua, không ảnh hưởng phần Lắc */ }
 })();

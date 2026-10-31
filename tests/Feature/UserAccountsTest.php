@@ -113,3 +113,25 @@ it('lắc cá nhân hoá: dị ứng trong hồ sơ là lọc cứng và món v�
     $resp = $this->postJson('/api/shake', ['slot' => 'trua', 'shake_index' => 0])->assertOk();
     expect($resp->json('dish.id'))->toBe($safe->id);
 });
+
+it('hồ sơ lưu tuỳ chọn lắc: vùng miền yêu thích + kcal mục tiêu mỗi bữa (UI-011)', function () {
+    $user = endUser();
+    $this->actingAs($user);
+    $regionId = \App\Models\Region::create(['country_code' => 'VN', 'code' => 'vn-test', 'name' => 'Miền Test', 'level' => 'macro_region'])->id;
+
+    $this->putJson('/api/profile', [
+        'preferred_region_id' => $regionId,
+        'target_kcal_per_meal' => 650,
+    ])->assertOk()
+        ->assertJsonPath('profile.preferred_region_id', $regionId)
+        ->assertJsonPath('profile.target_kcal_per_meal', 650);
+
+    // Cập nhật từng phần (trang chủ lưu ngược từng tuỳ chọn) không xoá trường còn lại
+    $this->putJson('/api/profile', ['target_kcal_per_meal' => 700])->assertOk();
+    $this->getJson('/api/profile')
+        ->assertJsonPath('profile.preferred_region_id', $regionId)
+        ->assertJsonPath('profile.target_kcal_per_meal', 700);
+
+    $this->putJson('/api/profile', ['target_kcal_per_meal' => 50])->assertUnprocessable();
+    $this->putJson('/api/profile', ['preferred_region_id' => 999999])->assertUnprocessable();
+});

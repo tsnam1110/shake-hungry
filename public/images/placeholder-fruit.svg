@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#FDF1E0"/>
+  <circle cx="400" cy="300" r="150" fill="#F9E3C4"/>
+  <g fill="none" stroke="#C93400" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" opacity="0.9">
+    <path d="M400 268c-16-20-42-26-64-16-30 13-40 52-27 96 10 34 27 58 47 51 10-4 20-4 30 0 20 7 37-17 47-51 13-44-3-83-33-96-22-10-48-4-64 16Z" fill="#C93400" stroke="none" opacity="0.85"/>
+    <path d="M400 262c0-24 11-41 32-49"/>
+  </g>
+  <text x="400" y="505" font-family="Arial, sans-serif" font-size="30" font-weight="600" fill="#96683C" text-anchor="middle">Ảnh hoa quả đang được bổ sung</text>
+</svg>

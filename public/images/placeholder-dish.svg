@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#EAF3EC"/>
+  <circle cx="400" cy="300" r="150" fill="#DCEBDF"/>
+  <g fill="none" stroke="#248A3D" stroke-width="16" stroke-linecap="round" opacity="0.85">
+    <path d="M290 320h220a110 110 0 0 1-220 0Z" fill="#248A3D" stroke="none" opacity="0.9"/>
+    <path d="M355 265c14-22 62-25 84-7"/>
+    <path d="M455 235c17-14 38-18 58-14"/>
+  </g>
+  <text x="400" y="505" font-family="Arial, sans-serif" font-size="30" font-weight="600" fill="#5B7A61" text-anchor="middle">Ảnh món ăn đang được bổ sung</text>
+</svg>

@@ -70,9 +70,17 @@ fetch('/api/dishes/' + encodeURIComponent(slug), { headers: { 'Accept': 'applica
         <p class="ld-note" style="margin-top:10px">Khối này luôn mở sẵn — minh bạch nguồn là điểm khác biệt của Lắc Đói, bạn kiểm chứng được mọi con số ngay tại trang này.</p>` : ''}
 
         <h2 class="ld-section-title">Nguyên liệu · một khẩu phần</h2>
-        <div class="ld-group">
-            ${(d.dish_ingredients ?? []).map(di => `<div class="ld-row"><span class="grow">${esc(di.ingredient?.name_vi ?? '')}${di.is_optional ? ' <span style="color:var(--color-faint);font-size:13.5px">(tuỳ chọn)</span>' : ''}</span><span class="value ld-tnum" style="color:var(--color-ink);font-weight:600">${esc(di.quantity ?? '')} ${esc(di.unit_name ?? '')}</span></div>`).join('')
-              || '<div class="ld-row"><span style="color:var(--color-faint)">Chưa có định lượng.</span></div>'}
+        <div class="ld-grid-ing">
+            ${(d.dish_ingredients ?? []).map(di => `<div class="ld-dcard">
+                <img class="ld-dcard-img" src="/images/placeholder-ingredient.svg" alt="" loading="lazy">
+                <span class="ld-dcard-body">
+                    <span class="ld-dcard-title">${esc(di.ingredient?.name_vi ?? '')}</span>
+                    <span class="ld-dcard-meta ld-tnum">${esc(di.quantity ?? '')} ${esc(di.unit_name ?? '')}</span>
+                    <span class="ld-dcard-badges">${di.is_optional ? '<span class="ld-badge">Tuỳ chọn</span>' : ''}</span>
+                    <span class="ld-dcard-foot"><span class="ld-dcard-conf">${di.ingredient?.nutrition?.kcal_per_100g != null ? Math.round(di.ingredient.nutrition.kcal_per_100g) + ' kcal/100g' : ''}</span></span>
+                </span>
+            </div>`).join('')
+              || '<p style="color:var(--color-faint);margin:0">Chưa có định lượng.</p>'}
         </div>
 
         ${d.recipe_steps?.length ? `

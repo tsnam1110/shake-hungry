@@ -61,6 +61,12 @@
                         <option value="">Ăn thường</option><option value="chay">Ăn chay</option>
                         <option value="chay-truong">Chay trường (thuần chay)</option><option value="low-carb">Low-carb</option>
                     </select></div>
+                <div><label class="ld-field-label" for="f-region">Vùng miền yêu thích (điền sẵn khi lắc)</label>
+                    <select id="f-region" name="preferred_region_id" class="ld-select">
+                        <option value="">Mọi vùng miền</option>
+                    </select></div>
+                <div><label class="ld-field-label" for="f-target">Kcal mục tiêu mỗi bữa (điền sẵn khi lắc)</label>
+                    <input id="f-target" name="target_kcal_per_meal" type="number" min="100" max="2000" placeholder="Ví dụ: 600" class="ld-input"></div>
                 <div class="sm:col-span-2"><label class="ld-field-label" for="excluded">Không ăn được / dị ứng — chọn để lọc cứng khi lắc</label>
                     <select id="excluded" multiple size="4" class="ld-select"></select>
                     <p class="ld-note" style="margin-top:6px">Giữ Ctrl (hoặc Cmd) để chọn nhiều mục. Lọc dị ứng không bao giờ bị hệ thống tự nới lỏng.</p></div>
@@ -109,10 +115,14 @@ async function init() {
     const me = await (await fetch('/api/me')).json();
     if (!me.user) { location.href = '/tai-khoan'; return; }
     document.getElementById('whoami').textContent = `${me.user.name} · ${me.user.email}`;
+    const regions = await (await fetch('/api/regions')).json().catch(() => []);
+    const f0 = document.getElementById('profile-form');
+    f0.elements['preferred_region_id'].innerHTML = '<option value="">Mọi vùng miền</option>' +
+        regions.map(r => `<option value="${r.id}">${esc(r.name)}</option>`).join('');
     const { profile, tdee } = await (await fetch('/api/profile')).json();
     if (profile) {
         const f = document.getElementById('profile-form');
-        ['height_cm','weight_kg','birth_year','sex','activity_level','diet_type'].forEach(k => { if (profile[k] != null && f.elements[k]) f.elements[k].value = profile[k]; });
+        ['height_cm','weight_kg','birth_year','sex','activity_level','diet_type','preferred_region_id','target_kcal_per_meal'].forEach(k => { if (profile[k] != null && f.elements[k]) f.elements[k].value = profile[k]; });
         const ex = new Set(profile.excluded_ingredients || []);
         [...excludedEl.options].forEach(o => { o.selected = ALLERGEN_PRESETS[+o.value][1].some(s => ex.has(s)); });
     }
@@ -135,7 +145,7 @@ document.getElementById('profile-form').onsubmit = async (e) => {
     e.preventDefault();
     const raw = Object.fromEntries(new FormData(e.target).entries());
     const body = {};
-    ['height_cm','weight_kg','birth_year'].forEach(k => body[k] = raw[k] === '' ? null : +raw[k]);
+    ['height_cm','weight_kg','birth_year','preferred_region_id','target_kcal_per_meal'].forEach(k => body[k] = raw[k] === '' || raw[k] == null ? null : +raw[k]);
     ['sex','activity_level','diet_type'].forEach(k => body[k] = raw[k] === '' ? null : raw[k]);
     body.excluded_ingredients = [...excludedEl.selectedOptions].flatMap(o => ALLERGEN_PRESETS[+o.value][1]);
     const resp = await fetch('/api/profile', { method: 'PUT', headers, body: JSON.stringify(body) });
