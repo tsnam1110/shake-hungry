@@ -179,13 +179,37 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "thit-lon-nac-vai",
+      "quantity": 35,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "mien-dong",
+      "quantity": 6,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "moc-nhi-kho",
+      "quantity": 6,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
     "Sườn cốt lết rửa sạch, dần nhẹ cho mềm, ướp với sả, hành tỏi băm, nước mắm, đường, mật ong và chút dầu ăn ít nhất 1 giờ cho thấm, để qua đêm trong ngăn mát càng ngon.",
     "Nấu cơm tấm: vo gạo tấm, nấu với lượng nước ít hơn cơm thường một chút để hạt cơm chín tơi, khô ráo; cơm chín xới tơi và giữ nóng.",
     "Làm bì: bì lợn luộc chín, thái sợi mỏng; thịt nạc luộc hoặc ram mặn ngọt rồi xé sợi nhỏ, trộn đều bì với thịt xé và thính gạo rang cho thơm bùi, các sợi tơi rời không vón cục.",
-    "Làm chả trứng: trộn thịt xay với trứng gà, nước mắm, tiêu và hành băm (có thể thêm mộc nhĩ, miến đã ngâm mềm cắt ngắn nếu có), đổ vào khuôn, hấp 25-30 phút đến khi chả đông chắc và mặt khô ráo; phết một lớp lòng đỏ trứng lên mặt, hấp thêm 3-5 phút cho mặt chả vàng đẹp.",
+    "Làm chả trứng: trộn thịt xay với trứng gà, miến dong đã ngâm mềm cắt ngắn, mộc nhĩ ngâm nở thái sợi, nước mắm, tiêu và hành băm, đổ vào khuôn, hấp 25-30 phút đến khi chả đông chắc và mặt khô ráo; phết một lớp lòng đỏ trứng lên mặt, hấp thêm 3-5 phút cho mặt chả vàng đẹp.",
     "Làm đồ chua: củ cải trắng và cà rốt thái sợi, bóp muối khoảng 10 phút cho ra nước rồi xả sạch, ngâm giấm đường pha loãng ít nhất 30 phút cho giòn và chua ngọt nhẹ.",
     "Làm mỡ hành: hành lá thái nhỏ cho vào chén với chút muối, rưới dầu hoặc mỡ đun thật nóng vào, đảo đều cho hành vừa chín tái, còn xanh và dậy mùi thơm.",
     "Pha nước mắm: khuấy tan đường với nước ấm và nước mắm, nếm vị chua ngọt mặn cân bằng, để nguội rồi mới cho tỏi ớt băm vào để tỏi ớt nổi trên mặt.",
@@ -213,7 +237,7 @@
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): Đã đối chiếu 3 nguồn công thức thật (Panasonic Việt Nam, Cookpad/Phan Bao Van, Dạy Nấu Á Âu), đối chiếu theo từng thành phần của đĩa cơm tổ hợp. Phân xử định lượng phần chả trứng: thit-lon-xay 20 → 40 (Panasonic ghi rõ 160g thịt cho 4 khẩu phần = 40g/người; Cookpad dùng 200g cho một ổ chả 4 quả trứng, cùng cỡ 40-50g/người; số cũ lệch trên 30% so với cả hai), trung-ga 25 → 50 (cả hai nguồn đều dùng 4 quả trứng cho ổ chả 4 khẩu phần, tức khoảng 1 quả ~50g/người). Sườn 120g khớp khoảng nguồn (100-125g/người), cơm chín 200g khớp 400g gạo/4 khẩu phần của Panasonic, bì 30g khớp phần da heo khoảng 25g/người của Cookpad — giữ nguyên. Phân loại (loai:com, nuong, vn-tp-hcm, sáng/trưa/tối) rà soát, không sai rõ ràng, giữ nguyên.",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): Đã đối chiếu 3 nguồn công thức thật (Panasonic Việt Nam, Cookpad/Phan Bao Van, Dạy Nấu Á Âu), đối chiếu theo từng thành phần của đĩa cơm tổ hợp. Phân xử định lượng phần chả trứng: thit-lon-xay 20 → 40 (Panasonic ghi rõ 160g thịt cho 4 khẩu phần = 40g/người; Cookpad dùng 200g cho một ổ chả 4 quả trứng, cùng cỡ 40-50g/người; số cũ lệch trên 30% so với cả hai), trung-ga 25 → 50 (cả hai nguồn đều dùng 4 quả trứng cho ổ chả 4 khẩu phần, tức khoảng 1 quả ~50g/người). Sườn 120g khớp khoảng nguồn (100-125g/người), cơm chín 200g khớp 400g gạo/4 khẩu phần của Panasonic, bì 30g khớp phần da heo khoảng 25g/người của Cookpad — giữ nguyên. Phân loại (loai:com, nuong, vn-tp-hcm, sáng/trưa/tối) rà soát, không sai rõ ràng, giữ nguyên. Phân xử bất thường LV2-001 (Phần A, 2026-10-31): thêm 3 dòng còn thiếu: thit-lon-nac-vai 35 g cho phần bì (Cookpad: 150 g thịt nạc vai trộn 100 g bì cho 4 khẩu phần ≈ 37 g/khẩu phần; Dạy Nấu Á Âu cũng trộn thịt với bì — bước 3 của file vốn đã mô tả thịt nạc xé sợi), mien-dong 6 g và moc-nhi-kho 6 g cho phần chả (cả 3 nguồn đều có; Panasonic ghi 25 g mỗi loại cho mẻ 4 khẩu phần ≈ 6 g/khẩu phần).",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

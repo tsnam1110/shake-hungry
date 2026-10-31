@@ -103,12 +103,20 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "thit-lon-ba-chi",
+      "quantity": 40,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Sơ chế: cá trắm đánh vảy, bỏ ruột và màng đen, cắt khúc dày 3–4 cm, xát muối rửa sạch nhớt rồi để ráo; riềng cạo vỏ, một phần thái lát, một phần giã nhỏ.",
+    "Sơ chế: cá trắm đánh vảy, bỏ ruột và màng đen, cắt khúc dày 3–4 cm, xát muối rửa sạch nhớt rồi để ráo; thịt ba chỉ rửa sạch, thái miếng dày khoảng 1 cm, chần sơ nước sôi rồi rửa lại; riềng cạo vỏ, một phần thái lát, một phần giã nhỏ.",
     "Ướp cá với nước mắm, đường, tiêu, hành tím băm và phần riềng giã khoảng 30 phút cho thấm đều hai mặt khúc cá.",
-    "Lót riềng thái lát kín đáy nồi đất, xếp cá lên trên, rải phần riềng và ớt còn lại lên mặt cá.",
+    "Lót riềng thái lát kín đáy nồi đất, xếp cá xen kẽ thịt ba chỉ lên trên, rải phần riềng và ớt còn lại lên mặt cá.",
     "Chế nước sôi vào ngập xăm xắp mặt cá, đun lửa lớn cho sôi bùng rồi hạ xuống lửa nhỏ nhất.",
     "Kho liu riu 1,5–2 giờ; trong lúc kho không đảo cá, chỉ thỉnh thoảng nghiêng nồi rưới nước kho lên mặt để cá thấm đều và không nát.",
     "Khi nước kho sánh lại còn một lớp mỏng, cá chắc thịt và lên màu cánh gián, nêm nếm lại cho vừa miệng.",
@@ -134,7 +142,7 @@
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): đã đối chiếu 3 nguồn công thức thật (Báo Lao Động, Dạy Nấu Ăn, VinID). Định lượng: cá trắm 150 g/khẩu phần nằm ở cận dưới của khoảng nguồn (mẻ 800 g–1 kg cho khoảng 5–6 khẩu phần → 160–200 g), không lệch >30% theo cách quy đổi thận trọng nên giữ; riềng 15 g khớp 2 nguồn ghi '1 củ/mẻ' quy về khẩu phần, nguồn Dạy Nấu Ăn dùng riềng nhiều đặc biệt (200 g/mẻ, gồm riềng giã phủ mặt) là ngoại lệ — giữ 15 g. Bất thường ghi nhận, không tự thêm dòng: cả 3 nguồn đều kho cá cùng thịt ba chỉ 200–300 g/mẻ (và thường có khế chua/sả), file hiện không có dòng thịt ba chỉ — chờ chủ dự án quyết. Bước nấu viết lại 7 bước.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): đã đối chiếu 3 nguồn công thức thật (Báo Lao Động, Dạy Nấu Ăn, VinID). Định lượng: cá trắm 150 g/khẩu phần nằm ở cận dưới của khoảng nguồn (mẻ 800 g–1 kg cho khoảng 5–6 khẩu phần → 160–200 g), không lệch >30% theo cách quy đổi thận trọng nên giữ; riềng 15 g khớp 2 nguồn ghi '1 củ/mẻ' quy về khẩu phần, nguồn Dạy Nấu Ăn dùng riềng nhiều đặc biệt (200 g/mẻ, gồm riềng giã phủ mặt) là ngoại lệ — giữ 15 g. Bất thường ghi nhận, không tự thêm dòng: cả 3 nguồn đều kho cá cùng thịt ba chỉ 200–300 g/mẻ (và thường có khế chua/sả), file hiện không có dòng thịt ba chỉ — chờ chủ dự án quyết. Bước nấu viết lại 7 bước. Phân xử bất thường LV2-001 (Phần A, 2026-10-31): thêm dòng thit-lon-ba-chi 40 g/khẩu phần — cả 3 nguồn đều kho cá cùng thịt ba chỉ 200–300 g cho mẻ cá 800 g–1 kg, tỉ lệ thịt:cá 0,20–0,375 quy theo 150 g cá/khẩu phần cho khoảng 30–56 g, lấy 40 g giữa khoảng; bước 1 và 3 bổ sung thịt ba chỉ cho khớp. Khế chua/sả chỉ xuất hiện ở 1/3 nguồn nên không thêm.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -49,22 +49,6 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "gia-do",
-      "quantity": 30,
-      "unit_name": "g",
-      "is_optional": false,
-      "source": "llm_suggested",
-      "confidence": "low"
-    },
-    {
-      "ingredient_slug": "me-chin",
-      "quantity": 10,
-      "unit_name": "g",
-      "is_optional": false,
-      "source": "llm_suggested",
-      "confidence": "low"
-    },
-    {
       "ingredient_slug": "rau-ram",
       "quantity": 5,
       "unit_name": "g",
@@ -111,16 +95,24 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "qua-khe",
+      "quantity": 60,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
     "Sơ chế hến: ngâm hến trong nước vo gạo có thả vài lát ớt 1–2 giờ cho nhả hết cát, rửa lại nhiều lần nước sạch.",
     "Luộc hến với nước vừa ngập mặt, khuấy đều tay đến khi hến mở miệng; vớt ra đãi lấy thịt, phần nước luộc để lắng rồi gạn lấy nước trong.",
-    "Me chín dầm với nước nóng, lọc lấy nước cốt; cà chua rửa sạch bổ múi cau; giá đỗ nhặt rửa sạch, để ráo.",
+    "Khế chua rửa sạch, cắt bỏ rìa, thái lát hình sao dày khoảng 0,5 cm; cà chua rửa sạch bổ múi cau.",
     "Đun nóng dầu ăn trong nồi, cho thịt hến vào xào nhanh lửa lớn khoảng 2 phút, nêm chút nước mắm rồi trút ra để riêng để hến không dai.",
-    "Xào một nửa lượng cà chua cho ra màu, đổ nước luộc hến và nước cốt me vào đun sôi, hớt bọt.",
+    "Xào một nửa lượng cà chua cho ra màu, đổ nước luộc hến vào đun sôi, hớt bọt; cho khế vào nấu 2–3 phút cho ra vị chua dịu.",
     "Cho phần cà chua còn lại và thịt hến vào, nấu thêm 2–3 phút; nêm nước mắm, đường cho vị chua ngọt vừa miệng.",
-    "Tắt bếp, cho giá đỗ, rau răm và hành lá vào đảo đều, múc ra tô dùng nóng."
+    "Tắt bếp, cho rau răm và hành lá vào đảo đều, múc ra tô dùng nóng."
   ],
   "recipe_sources": [
     {
@@ -142,7 +134,7 @@
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): đã đối chiếu 3 nguồn công thức thật (Bếp Eva, CET, Gia đình & Sức khỏe Đời sống). Định lượng: 2 nguồn dùng hến nguyên vỏ 1 kg/mẻ, 1 nguồn dùng thịt hến 250 g/mẻ, cả ba đều không ghi số khẩu phần và tỉ lệ quy đổi vỏ → thịt dao động lớn, các nguồn bất đồng về cơ sở quy đổi nên giữ nguyên thịt hến 100 g và cà chua 60 g/khẩu phần của file, chỉ ghi nhận độ lệch. Lưu ý biến thể: cả 3 nguồn tạo chua bằng khế/dứa, file dùng me và giá đỗ (kiểu miền Nam) — giữ theo bản đã duyệt, không đổi nguyên liệu. Bước nấu viết lại 7 bước.",
+  "import_note": "Soạn nháp đợt mở rộng 300 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): đã đối chiếu 3 nguồn công thức thật (Bếp Eva, CET, Gia đình & Sức khỏe Đời sống). Định lượng: 2 nguồn dùng hến nguyên vỏ 1 kg/mẻ, 1 nguồn dùng thịt hến 250 g/mẻ, cả ba đều không ghi số khẩu phần và tỉ lệ quy đổi vỏ → thịt dao động lớn, các nguồn bất đồng về cơ sở quy đổi nên giữ nguyên thịt hến 100 g và cà chua 60 g/khẩu phần của file, chỉ ghi nhận độ lệch. Lưu ý biến thể: cả 3 nguồn tạo chua bằng khế/dứa, file dùng me và giá đỗ (kiểu miền Nam) — giữ theo bản đã duyệt, không đổi nguyên liệu. Bước nấu viết lại 7 bước. Phân xử bất thường LV2-001 (Phần A, 2026-10-31): đổi nền tạo chua theo cả 3 nguồn đã ghi: bỏ me-chin và gia-do (biến thể miền Nam trước đây), thêm qua-khe 60 g/khẩu phần — 3/3 nguồn đều tạo chua bằng khế (Gia đình & Sức khỏe Đời sống: khế 200 g cho mẻ 250 g thịt hến, quy theo 100 g thịt hến/khẩu phần ≈ 80 g; hai nguồn còn lại không định lượng khế theo khẩu phần nên lấy 60 g thận trọng trong khoảng 60–80 g). Dứa chỉ 1/3 nguồn (CET) nên không thêm. Bước 3, 5, 7 viết lại theo khế. Region giữ vn-south theo bản đã duyệt; nếu chủ dự án muốn chuyển hẳn sang bản nấu khế miền Trung thì quyết lại region sau.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

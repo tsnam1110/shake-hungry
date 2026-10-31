@@ -103,13 +103,21 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "ca-chua",
+      "quantity": 40,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
     "Sơ chế cá: cá chép đánh vảy, bỏ mang, ruột và màng đen trong bụng, cắt khúc dày 2–3 cm, xát muối rửa sạch rồi để ráo.",
     "Sơ chế măng: măng tươi thái lát mỏng, luộc với nước có chút muối 2 lần, mỗi lần khoảng 10 phút và mở vung cho bay hơi đắng, rửa lại nước sạch.",
     "Rán sơ cá: đun nóng dầu, cho cá vào rán lửa vừa đến khi hai mặt săn và hơi vàng để cá không bị nát khi nấu và bớt tanh.",
-    "Phi thơm hành tím, cho măng vào xào 3–5 phút với chút nước mắm cho thấm gia vị.",
+    "Phi thơm hành tím, cho cà chua vào xào 2–3 phút cho mềm và ra màu, thêm măng vào xào 3–5 phút với chút nước mắm cho thấm gia vị.",
     "Đổ nước sôi ngập măng, đun khoảng 10 phút rồi nhẹ nhàng thả cá đã rán vào nồi.",
     "Hạ lửa nhỏ nấu thêm 10–15 phút đến khi cá chín nhừ, nước canh ngọt; nêm lại nước mắm và muối cho vừa miệng.",
     "Tắt bếp, rắc hành lá và thì là thái nhỏ lên trên, múc ra tô dùng nóng với cơm."
@@ -134,7 +142,7 @@
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): đã đối chiếu 3 nguồn công thức thật (Cá kho làng Vũ Đại, YummyDay, tài liệu sách dạy nấu ăn). Định lượng: cá chép nguồn 500–600 g/mẻ, quy về khẩu phần khoảng 125–150 g — file 120 g khớp trong ngưỡng, giữ; măng nguồn 300–500 g/mẻ → khoảng 75–125 g/khẩu phần — file 100 g nằm giữa khoảng, giữ. Bất thường ghi nhận, không tự sửa: cả 3 nguồn đều dùng măng chua và có cà chua, file dùng măng tươi và không có cà chua — tên món trong file là 'canh măng nấu cá chép' (không ghi chua) nên có thể là biến thể chủ ý, chờ chủ dự án quyết. Bước nấu viết theo măng tươi cho khớp nguyên liệu của file, 7 bước.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): đã đối chiếu 3 nguồn công thức thật (Cá kho làng Vũ Đại, YummyDay, tài liệu sách dạy nấu ăn). Định lượng: cá chép nguồn 500–600 g/mẻ, quy về khẩu phần khoảng 125–150 g — file 120 g khớp trong ngưỡng, giữ; măng nguồn 300–500 g/mẻ → khoảng 75–125 g/khẩu phần — file 100 g nằm giữa khoảng, giữ. Bất thường ghi nhận, không tự sửa: cả 3 nguồn đều dùng măng chua và có cà chua, file dùng măng tươi và không có cà chua — tên món trong file là 'canh măng nấu cá chép' (không ghi chua) nên có thể là biến thể chủ ý, chờ chủ dự án quyết. Bước nấu viết theo măng tươi cho khớp nguyên liệu của file, 7 bước. Phân xử bất thường LV2-001 (Phần A, 2026-10-31): thêm dòng ca-chua 40 g/khẩu phần — cả 3 nguồn đều có cà chua (1–3 quả cho mẻ 4–5 khẩu phần, khoảng 30–60 g/khẩu phần, lấy 40 g). Về măng: cả 3 nguồn dùng măng chua, nhưng slug mang-chua hiện chưa có dữ liệu dinh dưỡng đạt chuẩn (để null theo QT-1 sau đợt tra cứu 2026-10-31) — đổi sang măng chua lúc này sẽ làm món mất khả năng tính calo cho nguyên liệu chính 100 g, nên giữ mang-tuoi, chờ khi mang-chua có số sẽ đổi và viết lại bước sơ chế măng.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

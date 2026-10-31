@@ -119,6 +119,22 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "du-du-xanh",
+      "quantity": 40,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "long-ga",
+      "quantity": 25,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
@@ -127,7 +143,7 @@
     "Luộc gà trong nồi nước có hành và phần nghệ còn lại ở lửa vừa 20-25 phút đến khi gà chín tới (xiên đũa vào phần đùi không thấy nước hồng chảy ra), tắt bếp và ủ thêm 10 phút cho thịt chín đều, vớt gà ra để nguội.",
     "Vo gạo, rang sơ gạo với chút dầu ăn cho hạt gạo săn lại và thơm, sau đó cho vào nồi, chế nước luộc gà vừa đủ và nấu chín; cơm đạt khi hạt vàng đều, tơi, không nhão.",
     "Xé gà thành miếng vừa ăn, trộn gỏi với hành tây thái mỏng đã ngâm nước đá cho bớt hăng, rau răm, nước cốt chanh, muối và tiêu; trộn nhẹ tay rồi để 5-10 phút cho gà thấm vị.",
-    "Nếu ăn kèm gỏi, bào sợi đu đủ xanh và cà rốt, ngâm giấm đường chua ngọt nhẹ cho giòn. Nếu có lòng gà, xào lòng với hành và chút nước luộc gà làm nước mạ chan cơm.",
+    "Bào sợi đu đủ xanh và cà rốt, ngâm giấm đường chua ngọt nhẹ cho giòn làm gỏi ăn kèm. Xào lòng gà với hành và chút nước luộc gà làm nước mạ chan cơm.",
     "Xới cơm ra đĩa, nén nhẹ cho thành khuôn đẹp, xếp gà trộn gỏi bên cạnh hoặc lên trên, rắc hành phi.",
     "Dọn kèm chén nước mạ hoặc nước luộc gà và tương ớt; khi ăn rưới nước mạ lên cơm rồi trộn đều cơm, gà và gỏi."
   ],
@@ -151,7 +167,7 @@
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt DISH-004 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): Đã đối chiếu 3 nguồn công thức thật (Điện máy XANH, Cookpad/QUÂN NGUYỄN, Hội Đầu Bếp Á Âu). Định lượng: thịt gà có da 130g/khẩu phần tương đương phần thịt ăn được của 800g-1,2kg gà nguyên con cho 4 người ở các nguồn (khoảng 110-165g thịt có da mỗi người), giữ nguyên; hành tây 25g khớp nguồn (1 củ cho 4 người), giữ nguyên. Cơm chín 200g giữ nguyên dù các nguồn bất đồng về lượng gạo (160-500g mỗi mẻ, quy ra cơm chín khoảng 100-300g/người). Rau răm 5g thấp hơn một nguồn (100g/4 người ở bản người dùng của Điện máy XANH) nhưng các nguồn còn lại chỉ dùng 10-50g cho cả mẻ, nên giữ nguyên và ghi nhận. Phân loại (loai:com, nau, vn-quang-nam, trưa/tối) rà soát, không sai rõ ràng, giữ nguyên.",
+  "import_note": "Soạn nháp đợt DISH-004 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): Đã đối chiếu 3 nguồn công thức thật (Điện máy XANH, Cookpad/QUÂN NGUYỄN, Hội Đầu Bếp Á Âu). Định lượng: thịt gà có da 130g/khẩu phần tương đương phần thịt ăn được của 800g-1,2kg gà nguyên con cho 4 người ở các nguồn (khoảng 110-165g thịt có da mỗi người), giữ nguyên; hành tây 25g khớp nguồn (1 củ cho 4 người), giữ nguyên. Cơm chín 200g giữ nguyên dù các nguồn bất đồng về lượng gạo (160-500g mỗi mẻ, quy ra cơm chín khoảng 100-300g/người). Rau răm 5g thấp hơn một nguồn (100g/4 người ở bản người dùng của Điện máy XANH) nhưng các nguồn còn lại chỉ dùng 10-50g cho cả mẻ, nên giữ nguyên và ghi nhận. Phân loại (loai:com, nau, vn-quang-nam, trưa/tối) rà soát, không sai rõ ràng, giữ nguyên. Phân xử bất thường LV2-001 (Phần A, 2026-10-31): thêm du-du-xanh 40 g (gỏi ăn kèm — Hội Đầu Bếp Á Âu dùng nửa quả đu đủ xanh cho mẻ 4 người, khoảng 40–50 g/khẩu phần; Cookpad cũng kèm gỏi đu đủ) và long-ga 25 g (nước mạ — Điện máy XANH có nước mạ lòng gà, Hội Đầu Bếp Á Âu xào lòng gà làm phần nước chan; 1 bộ lòng ~100 g cho mẻ 4 người ≈ 25 g/khẩu phần). Bước 6 của file vốn đã mô tả hai thành phần này ở dạng điều kiện, nay ghi thành dòng nguyên liệu chính thức.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

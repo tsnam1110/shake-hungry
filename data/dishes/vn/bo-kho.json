@@ -147,11 +147,27 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hoa-hoi",
+      "quantity": 1,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "bot-que",
+      "quantity": 1,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
     "Thịt bò chà muối và gừng đập dập, rửa sạch, chần qua nước sôi 2-3 phút rồi rửa lại cho hết bọt bẩn, cắt khối vuông 3-4cm vừa ăn.",
-    "Ướp bò với sả băm, hành tỏi băm, bột cà ri, ngũ vị hương, nước mắm và đường ít nhất 30 phút cho thấm; để ngăn mát qua đêm thì thịt càng thấm và thơm.",
+    "Ướp bò với sả băm, hành tỏi băm, bột cà ri, ngũ vị hương, hoa hồi và bột quế, nước mắm và đường ít nhất 30 phút cho thấm; để ngăn mát qua đêm thì thịt càng thấm và thơm.",
     "Cà rốt gọt vỏ, cắt khúc vừa ăn; hành tây cắt múi cau; phần sả còn lại đập dập, cắt khúc để thả vào nồi khi hầm.",
     "Bắc nồi lên bếp, cho dầu ăn vào phi thơm hành tỏi và sả băm, cho bò đã ướp vào xào lửa lớn 5-7 phút đến khi thịt săn mặt và lên màu nâu đẹp.",
     "Đổ nước lọc và nước cốt dừa (nếu dùng) cho ngập mặt thịt, thả sả đập dập vào, đun sôi rồi hớt bọt, hạ lửa nhỏ hầm liu riu 60-90 phút đến khi xiên đũa qua miếng thịt dễ dàng là thịt đã mềm.",
@@ -179,7 +195,7 @@
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): Đã đối chiếu 3 nguồn công thức thật (Điện máy XANH, Cookpad/Mỹ Hạnh, giáo trình dạy nấu ăn Duy Tân). Định lượng: thịt bò/khẩu phần giữa hai nguồn có ghi số người bất đồng lớn (125g ở Điện máy XANH so với 250g ở Cookpad) nên theo quy tắc giữ nguyên 180g của file; cà rốt cũng bất đồng (khoảng 40g so với khoảng 160g/người), giữ nguyên 60g. Phân loại (loai:mon-chinh, kho, vn-south, sáng/trưa/tối) rà soát, không sai rõ ràng, giữ nguyên.",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): Đã đối chiếu 3 nguồn công thức thật (Điện máy XANH, Cookpad/Mỹ Hạnh, giáo trình dạy nấu ăn Duy Tân). Định lượng: thịt bò/khẩu phần giữa hai nguồn có ghi số người bất đồng lớn (125g ở Điện máy XANH so với 250g ở Cookpad) nên theo quy tắc giữ nguyên 180g của file; cà rốt cũng bất đồng (khoảng 40g so với khoảng 160g/người), giữ nguyên 60g. Phân loại (loai:mon-chinh, kho, vn-south, sáng/trưa/tối) rà soát, không sai rõ ràng, giữ nguyên. Phân xử bất thường LV2-001 (Phần A, 2026-10-31): thêm hoa-hoi 1 g và bot-que 1 g — cả 3 nguồn đều dùng hoa hồi và quế riêng (Cookpad ghi tường minh; giáo trình Duy Tân dùng gói gia vị bò kho có hai vị này), file trước chỉ có bot-cari và ngu-vi-huong. Định lượng gia vị khô khoảng 2 bông hồi + 1 thanh quế cho mẻ 2–4 khẩu phần, quy về ~1 g/khẩu phần mỗi loại.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
