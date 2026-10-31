@@ -16,9 +16,9 @@
     "carb_g": 2.5,
     "fiber_g": 0,
     "water_g": 26.2,
-    "sodium_mg": null,
+    "sodium_mg": 445,
     "mapping_confidence": "low",
-    "mapping_note": "Nguồn THỨ CẤP theo quyết định chủ dự án 2026-10-31 (chỉ dùng khi nguồn chính thống không có) — hệ thống đánh dấu CHƯA KIỂM ĐỊNH khi hiển thị. TRA 2026-10-31: mục 08039 \"Mực khô – Dried cuttle fish squid\", Bảng thành phần thực phẩm Việt Nam (bản gốc): 291 kcal, đạm 60,1g, béo 4,5g, carb 2,5g, nước 26,2g (Atwater 290,9 ✓). Bản đăng lại mytour sai 3 chỗ so với bản gốc (hoán đổi béo/carb, nước 32,6) — dùng bản gốc. Nhãn mực khô tẩm ngọt của Nhật (OFF) đã loại ở vòng 2. Natri bản gốc đọc theo thứ tự cột là 445mg, chưa đối chiếu bản in nên để null.",
+    "mapping_note": "Nguồn THỨ CẤP theo quyết định chủ dự án 2026-10-31 (chỉ dùng khi nguồn chính thống không có) — hệ thống đánh dấu CHƯA KIỂM ĐỊNH khi hiển thị. TRA 2026-10-31: mục 08039 \"Mực khô – Dried cuttle fish squid\", Bảng thành phần thực phẩm Việt Nam (bản gốc): 291 kcal, đạm 60,1g, béo 4,5g, carb 2,5g, nước 26,2g (Atwater 290,9 ✓). Bản đăng lại mytour sai 3 chỗ so với bản gốc (hoán đổi béo/carb, nước 32,6) — dùng bản gốc. Nhãn mực khô tẩm ngọt của Nhật (OFF) đã loại ở vòng 2. Natri bản gốc đọc theo thứ tự cột là 445mg, chưa đối chiếu bản in nên để null. NATRI ĐÃ KIỂM CHỨNG 2026-10-31: bản số hoá có gắn nhãn cột của chính Bảng TPTP VN (Nutri ALL/vikinutri, mã mục 8039) ghi rõ 'Na-tri (Na) | 445 mg' và toàn bộ hàng số khớp bản in — số 445 mg được xác nhận, hết lý do để trống.",
     "alternatives": []
   },
   "secondary_sources": [],

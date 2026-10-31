@@ -16,9 +16,9 @@
     "carb_g": 5.1,
     "fiber_g": 0,
     "water_g": 88.8,
-    "sodium_mg": null,
+    "sodium_mg": 86,
     "mapping_confidence": "low",
-    "mapping_note": "Nguồn THỨ CẤP theo quyết định chủ dự án 2026-10-31 (chỉ dùng khi nguồn chính thống không có) — hệ thống đánh dấu CHƯA KIỂM ĐỊNH khi hiển thị. TRA 2026-10-31: mục 08037 \"Hến – Clam\", Bảng thành phần thực phẩm Việt Nam (bản gốc Viện Dinh dưỡng, cập nhật 2014): 45 kcal, đạm 4,5g, béo 0,7g, carb 5,1g, nước 88,8g (Atwater 44,7 ✓). Cảnh báo: các bản đăng lại trên web (mytour) hoán đổi cột béo/carb của mục này — số tại đây theo bản gốc. Natri đọc theo thứ tự cột là 86mg, chưa đối chiếu bản in nên để null.",
+    "mapping_note": "Nguồn THỨ CẤP theo quyết định chủ dự án 2026-10-31 (chỉ dùng khi nguồn chính thống không có) — hệ thống đánh dấu CHƯA KIỂM ĐỊNH khi hiển thị. TRA 2026-10-31: mục 08037 \"Hến – Clam\", Bảng thành phần thực phẩm Việt Nam (bản gốc Viện Dinh dưỡng, cập nhật 2014): 45 kcal, đạm 4,5g, béo 0,7g, carb 5,1g, nước 88,8g (Atwater 44,7 ✓). Cảnh báo: các bản đăng lại trên web (mytour) hoán đổi cột béo/carb của mục này — số tại đây theo bản gốc. Natri đọc theo thứ tự cột là 86mg, chưa đối chiếu bản in nên để null. NATRI ĐÃ KIỂM CHỨNG 2026-10-31: bản số hoá có gắn nhãn cột của chính Bảng TPTP VN (Nutri ALL/vikinutri, mã mục 8037) ghi rõ 'Na-tri (Na) | 86 mg' và toàn bộ hàng số khớp bản in — số 86 mg được xác nhận, hết lý do để trống.",
     "alternatives": []
   },
   "secondary_sources": [],
