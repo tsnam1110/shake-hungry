@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "xao",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -66,15 +66,41 @@
     }
   ],
   "recipe_steps": [
-    "Ngọn bí tước xơ, ngắt khúc, rửa sạch để ráo; tỏi đập dập.",
-    "Phi thơm tỏi với dầu.",
-    "Cho ngọn bí vào xào lửa lớn 3–4 phút vừa chín, nêm nước mắm."
+    "Tước bỏ lớp vỏ xơ bên ngoài cuống ngọn bí, bẻ thành khúc ngắn vừa ăn; phần lá rửa riêng và vò nhẹ cho rụng lông non, rửa lại nhiều lần rồi để thật ráo nước.",
+    "Chia tỏi làm hai phần: một phần phi trước, một phần giã dập để cho vào cuối; nếu cuống bí hơi già, trụng sơ cuống trong nước sôi khoảng 1 phút rồi vớt ra để ráo.",
+    "Đun nóng dầu trên lửa lớn, cho phần tỏi thứ nhất vào phi đến khi vàng nhẹ và dậy mùi thơm, có thể múc bớt một ít tỏi phi ra để rắc mặt sau.",
+    "Cho cuống ngọn bí vào trước, đảo nhanh tay trên lửa lớn khoảng 1 phút cho cuống vừa mềm, rồi cho phần lá vào đảo cùng.",
+    "Nêm muối cho vừa ăn, tiếp tục đảo nhanh — toàn bộ thời gian rau ở trên chảo không quá 2 phút — đến khi rau chuyển xanh đậm và vừa tái chín.",
+    "Cho phần tỏi giã dập còn lại vào đảo một lượt, tắt bếp ngay khi rau còn độ giòn; dọn ra đĩa, rắc tỏi phi lên trên và ăn nóng."
   ],
-  "recipe_sources": [],
-  "media": [],
+  "recipe_sources": [
+    {
+      "url": "https://danviet.vn/loai-rau-mua-he-ngon-ngot-bo-mau-dep-da-sach-ruot-an-nhieu-ma-khong-co-cam-giac-toi-loi-d1431301.html",
+      "accessed": "2026-10-31",
+      "note": "Dân Việt — Loại rau mùa hè ngon ngọt... (công thức rau bí xào tỏi, tác giả Yên Nhiên) — Không ghi số người ăn; mẻ 0,5kg ngọn rau bí, 3–4 tép tỏi, dầu ăn, muối, ớt khô; nhấn xào lửa lớn toàn quá trình không quá 2 phút, cuống cho trước lá sau"
+    },
+    {
+      "url": "https://thanhnien.vn/ngon-bi-xao-toi-185468752.htm",
+      "accessed": "2026-10-31",
+      "note": "Thanh Niên — Ngọn bí xào tỏi (Trang Thy, 2015) — Bài ký sự ẩm thực có tác giả, không định lượng: tước vỏ mỏng, bẻ đoạn, rửa riêng lá và vò sơ cho rụng lông non; tỏi giã dập phi vàng, cho cuống trước lá sau, cuối cho thêm tỏi giã dập"
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/16930465",
+      "accessed": "2026-10-31",
+      "note": "Cookpad VN — Đọt Bí Xào Tỏi của Nguyễn Hoàng Yến — Không ghi số người ăn; 1 bó đọt bí, tỏi, nêm nước tương 1 muỗng canh + dầu hào 1 muỗng canh + hạt nêm 1 muỗng cà phê + muối 1/3 muỗng cà phê cho cả mẻ; kỹ thuật trụng sơ hoặc xào sống, phi tỏi rồi múc bớt ra rắc mặt"
+    }
+  ],
+  "media": [
+    {
+      "path": "media/dishes/ngon-bi-xao-toi.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nguyên liệu ngọn bí mới biên soạn đợt này từ USDA SR Legacy (pumpkin leaves).",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nguyên liệu ngọn bí mới biên soạn đợt này từ USDA SR Legacy (pumpkin leaves). [LV2-008 đợt 8: nâng Mức 2 — 3 nguồn đã mở đọc (Dân Việt, Thanh Niên/Trang Thy, Cookpad Nguyễn Hoàng Yến). Ngọn bí: Dân Việt dùng 0,5kg cho một đĩa gia đình (không ghi số người, quy ~4 khẩu phần → ~125g/khẩu phần), Cookpad dùng 1 bó (tương đương ~400–500g) — file 120g/khẩu phần khớp cả hai, giữ. Tỏi: chỉ Dân Việt định lượng (3–4 tép cho 500g rau → ~2–3g/khẩu phần), 2 nguồn còn lại không ghi gram nên chưa đủ ≥2 nguồn định lượng để sửa file 5g — giữ, ghi nhận tỏi ở file nằm ở cận trên. Dầu ăn: các nguồn chỉ ghi phi tỏi bằng dầu, không định lượng thống nhất (1 nguồn nói rõ không cần thêm dầu khi xào) — giữ 8g. Nước mắm: giữ dù 0/3 nguồn dùng (xem anomalies). Kỹ thuật đồng thuận 3/3: tước xơ vỏ cuống, bẻ khúc, rửa ráo; phi tỏi trước và cho thêm tỏi sống giã dập ở cuối (Thanh Niên + Cookpad); xào lửa lớn rất nhanh — Dân Việt nhấn toàn quá trình không quá 2 phút, file cũ ghi 3–4 phút là quá lâu, steps đã sửa. Giữ method xao, region vn, serving_grams 140 (tổng nguyên liệu 137g). Steps viết lại 6 bước.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -79,10 +79,17 @@
     "Cho mướp vào xào 2–3 phút vừa chín, nêm nước mắm, rắc hành lá."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/muop-xao-tep.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-004 đợt 4: thử nâng Mức 2 — GIỮ MỨC 1 vì không gom được nguồn đúng món có định lượng: Memart bị chặn 429; nguồn mở được chỉ là biến thể mướp xào tôm (congthucgiadinh.com/mon-an/muop-xao-tom-tuoi; toyenxin biến thể) — không đủ tiêu chí Mức 2.]",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-004 đợt 4: thử nâng Mức 2 — GIỮ MỨC 1 vì không gom được nguồn đúng món có định lượng: Memart bị chặn 429; nguồn mở được chỉ là biến thể mướp xào tôm (congthucgiadinh.com/mon-an/muop-xao-tom-tuoi; toyenxin biến thể) — không đủ tiêu chí Mức 2.] [LV2-008 đợt 8: GIỮ MỨC 1 — tái tra cứu mở rộng xác nhận lại kết luận LV2-004. Đã tìm bằng nhiều biến thể truy vấn ('mướp xào tép', 'mướp hương xào tép', 'tép đồng xào mướp', kèm tên các trang biên tập trong brief như Điện Máy XANH/Bách Hoá Xanh/Cookpad/Mon Ngon Moi Ngay/nauankhongkho/YummyDay): trang duy nhất viết đúng món xào tép là memart.vn — trang tổng hợp SEO vô danh, không tác giả, không định lượng gram, thuộc diện brief không tính nguồn. Các kết quả còn lại đều là món khác hoặc biến thể khác định danh: canh mướp nấu tép/tép khô (Bách Hoá Xanh, Chợ Lái Thiêu, cụm saigonesebaguette), mướp xào tôm tươi/tôm khô (Cookpad, 2 tác giả — tôm khác tép theo phân xử LV2-004), mướp xào lòng gà. Không có dù 1 nguồn đạt chuẩn đã mở đọc cho đúng món, nên không thể đối chiếu định lượng ≥2 nguồn; giữ nguyên toàn bộ file hiện tại, không sửa dòng nào.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

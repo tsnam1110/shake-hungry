@@ -107,7 +107,14 @@
       "note": "Món nấm rơm kho tiêu xanh — biến thể tiêu xanh, không phải tiêu đen; chỉ đối chiếu kỹ thuật ướp trước, cho tiêu sau cùng để giữ mùi và kho không keo quá để còn nước chan."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/nam-kho-tieu.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món THAY cho tom-rim-thit của kế hoạch §3.3: món đó đã có trong kho ở slug tom-rim (tên 'tôm rim thịt ba chỉ', thành phần gần như trùng — rà soát V7/G6 đợt 2 phát hiện). Thay bằng nấm rơm kho tiêu cùng quota mặn nhanh, đồng thời là món chay (nêm nước tương). [LV2-005 đợt 5: nâng Mức 2 — đối chiếu 3 nguồn công thức đã mở đọc; không sửa định lượng vì công thức đúng tên kho tiêu của CHIN-SU cho nước tương ~11g/150g nấm, khớp file 10g, và các dòng còn lại chưa đủ 2 nguồn độc lập đúng biến thể để sửa. Bất thường ghi nhận: nước tương ở hai biến thể khác cao ~22,5g/150g, đường và tiêu đen có nguồn cao hơn file >30% nhưng chưa đủ đồng thuận đúng biến thể, dầu ăn có nguồn cao hơn nhưng một nguồn là biến thể khác và một nguồn không rõ tổng lượng nấm, Điện Máy XANH còn dùng nước mắm chay và tương ớt mà file không có — chờ pha phân xử.]",

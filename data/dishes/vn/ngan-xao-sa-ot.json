@@ -145,7 +145,14 @@
       "note": "PasGo (có biên tập): vừng rang 10 g/mẻ nửa con, sả 4 cây, ớt 3 quả; khung bài có nét song song CET nhưng định lượng là riêng."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/ngan-xao-sa-ot.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-005 đợt 5: thử nâng Mức 2 — GIỮ Mức 1: đã mở được 2 nguồn (CET; Cookpad) thì lần mở thứ ba bị chặn 429 — chưa đủ 3 nguồn đã mở. Thử lại khi hết chặn.] [LV2-006 đợt 6: GIỮ Mức 1 — bị chặn 429 ngay ở nguồn thứ nhất. Quan sát CHƯA kiểm chứng: có vừng rang và không dùng lá chanh — chờ kiểm chứng khi mở được nguồn.] [LV2-007 đợt 7: nâng Mức 2 — 3 nguồn độc lập đã mở (bản sao công thức CET trên Cookpad/Phụ Nữ Today đã gộp vào CET, không tính riêng). Kiểm chứng quan sát cũ: BỔ SUNG vừng rang 3g (2 nguồn độc lập) và dầu hào 5g (3/3 nguồn đều ướp dầu hào); BỔ SUNG hành lá 5g dạng tuỳ chọn (chỉ CET có); BỎ lá chanh 1g và đường 2g (0/3 nguồn dùng). GIỮ thịt ngan 180g và sả 15g theo dải nguồn.]",

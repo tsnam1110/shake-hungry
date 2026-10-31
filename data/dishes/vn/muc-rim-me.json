@@ -151,7 +151,14 @@
       "note": "Đã mở và đối chiếu ở pha phân xử LV2-007: cả 3 công thức rim trong bài đều dùng tương ớt; mục 'mực khô rim tương ớt' cho 200g mực khô + 5 muỗng cà phê tương ớt ≈ 5g/khẩu phần — điểm quy đổi độc lập hội tụ với Saigonese Baguette (2 muỗng canh/mẻ 200g mực ≈ 6g/khẩu phần)."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/muc-rim-me.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu). Nghiên cứu Mức 2 đợt 3 (LV2-003, 2026-10-31): GIỮ Mức 1 — mới mở kiểm chứng được 2 nguồn (Emdep; Hải Sản Cô Tô), các nguồn còn lại bị provider chặn 429 nên chỉ ở mức trích đoạn tìm kiếm, chưa đạt cổng ≥3 nguồn đã mở. Bất thường ghi nhận cho pha phân xử: sả và gừng có ở 2/2 nguồn đã mở, file thiếu cả hai; định lượng chính (mực khô 40, me 15, đường 10) nằm trong dải quy đổi của nguồn, không đề xuất đổi. Phân xử thử lại LV2-004 (Phần A, 2026-10-31): đã mở thêm 2 nguồn (Hướng Nghiệp Á Âu — công thức mực khô rim me chuyên biệt; Saigonese Baguette) → tổng 4 nguồn đã mở. Sả có ở 3/4 nguồn (quy đổi 3–6 g/khẩu phần) → THÊM sa-tuoi 4 g; gừng có ở 3/4 nguồn (~2 g/khẩu phần) → THÊM gung-tuoi 2 g; me 15 g cao hơn +50% so với nguồn chuyên biệt nhất (HNAA 10 g/khẩu phần) → GIẢM còn 12 g (thận trọng, vẫn trong dải hai nguồn đợt 3). Hành tím có ở 2/4 nguồn (~5 g/khẩu phần) — bất thường mới ghi nhận, chưa thêm dòng ở pha này. Vừng rang tuỳ chọn: 0/4 nguồn nhắc tới — giữ optional theo bản thảo gốc. Nâng Mức 2 thực hiện ở Phần B đợt 4 (LV2-004).  [LV2-004 đợt 4: nâng Mức 2 — định lượng đã phân xử ở Phần A (thêm sả, gừng; me 15→12); bước viết lại theo 3 nguồn.] [LV2-007 Phần A: PHÂN XỬ tương ớt — ghi nhận cũ '3/3 nguồn có tương ớt' KHÔNG đứng vững khi mở lại: nguồn chuyên biệt nhất cho đúng biến thể rim me (Hướng Nghiệp Á Âu) dùng sa tế + ớt bột thay tương ớt (sa tế không tự ý ánh xạ thành tuong-ot). Tuy nhiên tương ớt có ở 2/3 trang đã mở đợt này (Saigonese Baguette; Yeutre — đã thêm vào recipe_sources) với hai điểm quy đổi độc lập hội tụ 5–6g/khẩu phần → BỔ SUNG tuong-ot 5g (cận dưới thận trọng) và thêm tương ớt vào bước rim. Trang haisancoto.com mở thất bại ở pha này (lỗi fetch) nên không tính bằng chứng. Hành tím nay đạt 2/3 trên nguồn đã mở đợt này — ghi nhận cho pha phân xử riêng, không gộp đợt này. Không đụng dòng duong-thot-not (chờ quy ước cấp kho của chủ dự án).]",

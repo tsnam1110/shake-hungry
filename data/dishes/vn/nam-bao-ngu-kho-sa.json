@@ -95,7 +95,14 @@
     "Nêm nước tương và đường, hạ lửa kho 7–8 phút cho nấm thấm, cho ớt vào đảo đều, dùng nóng với cơm."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/nam-bao-ngu-kho-sa.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món chay thuần: toàn bộ nguyên liệu có origin thực vật/nấm, gia vị chỉ dùng nước tương/muối/chao đậu — không nước mắm, không hạt nêm/bột canh (nhóm COMPOSITE_ANIMAL tính là mặn), không trứng/sữa; nhãn diet suy từ thành phần phải ra chay và đã kiểm chứng trực tiếp trong DB sau seed (cổng G3/G6 của đợt). MÓN THAY cho nam-rom-kho-tieu của kế hoạch §3.5: vòng validate V7 phát hiện món nam-kho-tieu của đợt 2 chính là 'Nấm rơm kho tiêu' với thành phần gần như trùng — huỷ bản trùng theo phép thử EDITORIAL-GUIDE §3, thay bằng nấm bào ngư kho sả ớt (nguyên liệu nam-bao-ngu đã có số trong kho).",

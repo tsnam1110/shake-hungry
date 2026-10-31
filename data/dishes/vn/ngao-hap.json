@@ -25,7 +25,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "hap",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -53,7 +53,7 @@
     },
     {
       "ingredient_slug": "sa",
-      "quantity": 15,
+      "quantity": 30,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -69,7 +69,7 @@
     },
     {
       "ingredient_slug": "ot-tuoi",
-      "quantity": 3,
+      "quantity": 5,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -77,7 +77,15 @@
     },
     {
       "ingredient_slug": "rau-ram",
-      "quantity": 5,
+      "quantity": 10,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "la-chanh",
+      "quantity": 2,
       "unit_name": "g",
       "is_optional": true,
       "source": "llm_suggested",
@@ -85,15 +93,41 @@
     }
   ],
   "recipe_steps": [
-    "Nghêu ngâm nước vo gạo/ớt cho nhả cát, rửa sạch.",
-    "Lót sả đập dập và gừng vào nồi, cho nghêu vào hấp với ít nước đến khi nghêu vừa mở miệng.",
-    "Ăn nóng kèm rau răm, chấm nước mắm gừng hoặc muối tiêu chanh."
+    "Ngâm nghêu trong nước muối loãng hoặc nước vo gạo cùng vài lát ớt khoảng 1–2 giờ cho nhả sạch cát, rửa lại nhiều lần và loại bỏ con chết (vỏ hở, gõ không khép).",
+    "Sả cắt bỏ gốc và lá già, rửa sạch, cắt khúc khoảng 5cm rồi đập dập; gừng thái sợi, ớt thái lát, lá chanh rửa sạch để ráo.",
+    "Xếp một lớp sả và lá chanh xuống đáy nồi, cho nghêu lên trên, rắc gừng và ớt, thêm khoảng 100ml nước để tạo hơi.",
+    "Đậy kín nắp, đun lửa lớn đến khi nước sôi và nghêu bắt đầu mở miệng, đảo nhẹ một lần cho chín đều.",
+    "Hấp thêm khoảng 2 phút sau khi nghêu mở hết miệng thì tắt bếp ngay — đun lâu thịt nghêu teo và dai.",
+    "Múc nghêu ra tô cùng nước hấp, rắc rau răm, ăn nóng và chấm nước mắm gừng hoặc muối tiêu chanh."
   ],
-  "recipe_sources": [],
-  "media": [],
+  "recipe_sources": [
+    {
+      "url": "https://eva.vn/bep-eva/ngheu-hap-sa-tuyet-ngon-voi-cach-lam-don-gian-cua-dan-mien-bien-c162a428108.html",
+      "accessed": "2026-10-31",
+      "note": "Eva (Bếp Eva) — Nghêu hấp sả của dân miền biển — 1,5kg nghêu, sả 10 cây, gừng 3 củ, ớt sừng 5 quả + ớt tươi 3 quả, rau răm 1 bó; nêm nước mắm 3 thìa cà phê + đường 3 thìa cà phê vào nồi hấp"
+    },
+    {
+      "url": "https://phunutoday.vn/ngheu-hap-sa-ngot-ngon-thom-lung-danh-thuc-vi-giac-nguoi-thuong-thuc-chi-voi-3-buoc-don-gian-nhat-d255288.html",
+      "accessed": "2026-10-31",
+      "note": "Phụ Nữ Today — Nghêu hấp sả — 1kg nghêu, sả 10 cây, ớt sừng 8 quả, rau răm 50g, lá chanh 10 lá, nước hấp 200ml"
+    },
+    {
+      "url": "https://pasgo.vn/blog/bat-mi-3-cach-hap-ngheu-thom-ngon-chi-trong-5-phut-4551",
+      "accessed": "2026-10-31",
+      "note": "PasGo — Nghêu hấp sả (cho 3 người) — Nghêu 500g, sả 4 củ, ớt tươi 4 quả, muối/đường theo muỗng; hấp đến khi nghêu mở miệng"
+    }
+  ],
+  "media": [
+    {
+      "path": "media/dishes/ngao-hap.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt)",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-008 đợt 8: Nâng Mức 2 với 3 nguồn đã mở đọc (Eva, Phụ Nữ Today, PasGo). Sửa theo quy đổi về suất 300g nghêu: sả 15→30g (nguồn 30–45g), ớt 3→5g, rau răm 5→10g (vẫn tuỳ chọn). Thêm: lá chanh 2g tuỳ chọn (2/3 nguồn). Giữ: nghêu 300g (giữ nguyên cơ sở cân hiện tại — xem anomalies), gừng 5g (chỉ Eva định lượng rõ ~12g/300g, 2 nguồn còn lại không dùng gừng trong nồi nên không đủ đồng thuận tăng). Phương pháp hấp và vùng 'vn' giữ nguyên.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

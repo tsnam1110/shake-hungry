@@ -131,7 +131,14 @@
       "note": "Đảo Hải Sản: mực ống 500g, cần tây 2 cây, tỏi tây 2 cây cho một mẻ; nhúng mực qua nước sôi có gừng vài giây rồi mới xào — đối chiếu kỹ thuật chần và tỉ lệ rau."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/muc-xao-can-toi.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): Đã mở kiểm chứng 3 nguồn công thức thật (Cookpad của Nhà Vân, Bếp Xưa, Đảo Hải Sản) và đối chiếu định lượng theo khẩu phần. Định lượng: mực theo khẩu phần ở Cookpad (2 người) là 150g, khớp đúng file; ở Bếp Xưa (4 người) chỉ 75g — hai nguồn chênh nhau gấp đôi, bất đồng hơn 30% nên theo quy tắc giữ nguyên 150g của file. Cần tây và tỏi tây ở nguồn tính theo cây/cọng, dao động lớn và không quy đổi chắc chắn được — giữ nguyên cần tây 60g, tỏi tây 20g. Không sửa dòng nguyên liệu nào. Ghi nhận bất thường: file thiếu hành tây — nguyên liệu hầu hết nguồn đều dùng (Bếp Xưa, Đảo Hải Sản) — đã đưa vào báo cáo đợt này, không tự thêm dòng theo quy tắc. Viết lại hoàn toàn recipe_steps bằng lời riêng (7 bước). Rà phân loại: loai:mon-chinh, cooking_method xao, region vn, meal_slots trưa/tối đều phù hợp — không sửa. Đạt Mức 2. Phân xử bất thường LV2-001 (Phần A, 2026-10-31): thêm dòng hanh-tay 25 g/khẩu phần — cả 3 nguồn đều dùng hành tây (Bếp Xưa và Đảo Hải Sản ghi rõ trong định lượng); khoảng 1 củ ~100 g cho mẻ 4 khẩu phần quy về ~25 g/khẩu phần.",

@@ -136,7 +136,14 @@
       "note": "Điện Máy XANH (biến thể kho, đối chiếu nhân): rim nước dừa 3 người — mực 300 g, thịt 300 g, nấm mèo 10 g; kho me 2 người — thịt xay 100 g, trứng gà chỉ lòng đỏ, miến 10 g, nấm hương, hành tím 30 g; hấp chín 70–80% rồi chiên."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/muc-nhoi-thit.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 8 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).] Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 4 nguồn. Phân xử định lượng: hanh-tim 8 → 14 g — hai nguồn định lượng được (Vào Bếp Wiki ~13 g, ĐMX ~15 g/khẩu phần) đều cao hơn file ~40–47%; mực 150 g giữ (đầu trên của dải nguồn 100–150); thịt xay 80 g giữ (nguồn chia rẽ 50–100, không đồng thuận một chiều); mộc nhĩ/nấm hương 5 g khớp ĐMX. Bất thường ghi nhận: miến có ở 2/4 nguồn (CET — chính biến thể chiên giòn; ĐMX kho me ~5 g khô/khẩu phần), file thiếu; dòng trung-ga căn cứ yếu — chỉ 1/4 nguồn có trứng (biến thể kho me, chỉ lòng đỏ), 3 nguồn chiên trực tiếp không dùng trứng — chờ pha phân xử quyết giữ/bỏ. Phân xử bất thường LV2-003 (Phần A — LV2-004, 2026-10-31): Thêm mien-dong 5 g (khô) vào nhân — 2/4 nguồn đã mở ở đợt 3 có miến, trong đó CET là đúng biến thể chiên giòn của món này và ĐMX cho ~5 g khô/khẩu phần. Dòng trung-ga GIỮ NGUYÊN có lý do: chỉ 1/4 nguồn dùng trứng (biến thể kho me, chỉ lòng đỏ) nhưng biến thể có trứng là có thật và trứng đóng vai trò kết dính nhân — bằng chứng chưa đủ mạnh để bỏ dòng, ghi nhận tranh chấp biến thể.",

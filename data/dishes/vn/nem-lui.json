@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nuong",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -38,7 +38,7 @@
   "ingredients": [
     {
       "ingredient_slug": "thit-lon-xay",
-      "quantity": 130,
+      "quantity": 180,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -46,7 +46,7 @@
     },
     {
       "ingredient_slug": "mo-lon-nuoc",
-      "quantity": 15,
+      "quantity": 20,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -99,18 +99,53 @@
       "is_optional": true,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "toi",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Thịt xay trộn mỡ nước, hành tím, nước mắm, đường, tiêu; quết cho dai, ướp 20 phút.",
-    "Bọc thịt quanh cọng sả thành từng xiên nem.",
-    "Nướng than hoặc nồi chiên tới khi nem vàng thơm; ăn cuốn bánh tráng, rau sống, chấm nước lèo."
+    "Sả cây rửa sạch, cắt khúc khoảng 15cm làm que lụi; phần sả băm, tỏi và hành tím băm nhuyễn để trộn nhân.",
+    "Cho thịt heo xay và mỡ vào tô, trộn đều rồi để ngăn đá khoảng 15 phút cho hỗn hợp thật lạnh, giúp quết dẻo và không bị bở.",
+    "Thêm sả băm, tỏi, hành tím, nước mắm, đường và tiêu vào thịt, quết đều tay 5–7 phút đến khi hỗn hợp dẻo, kết dính và đổi màu sáng hơn; bọc kín, ướp ngăn mát 30 phút đến 2 giờ.",
+    "Thoa một lớp dầu mỏng lên tay, lấy khoảng 40g nhân bọc quanh đầu que sả, nắn chặt thành hình thuôn đều để nem không rơi khi nướng.",
+    "Nướng nem trên than hoa lửa vừa (hoặc lò 180°C khoảng 15–20 phút), trở đều tay và phết nhẹ dầu lên mặt để nem không khô.",
+    "Nướng đến khi nem vàng đều, hơi xém cạnh và tỏa mùi sả thơm; rút nem khỏi que hoặc để nguyên xiên, cắt khúc vừa ăn.",
+    "Dọn nem cuốn bánh tráng cùng rau sống, dưa leo, khế/chuối chát, chấm nước lèo đậu phộng hoặc nước mắm tỏi ớt, ăn ngay khi nóng."
   ],
-  "recipe_sources": [],
-  "media": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.bluestone.com.vn/blogs/vao-bep/cach-lam-nem-lui",
+      "accessed": "2026-10-31",
+      "note": "Bluestone — Hướng dẫn làm nem lụi chuẩn vị Huế — 15–20 que: thịt heo xay 500g, ba chỉ băm 150g, mỡ gáy 80g, sả băm 2 muỗng canh, tỏi 1 muỗng canh, hành tím 1 muỗng canh, nước mắm 1,5 muỗng canh, đường 1 muỗng canh — dạng thuần thịt xay, không giò sống"
+    },
+    {
+      "url": "https://giadinh.suckhoedoisong.vn/lam-nem-lui-nuong-gion-dai-thom-phuc-172190604113514547.htm",
+      "accessed": "2026-10-31",
+      "note": "Sức Khỏe & Đời Sống / Gia đình (aFamily) — Nem lụi nướng giòn dai — Giò sống 400g, thịt lợn xay 150g, mỡ phần 250g, tôm tươi 150g, bì 50g, bột năng 25g, tỏi 20g, hành tím 3 củ — họ công thức dùng giò sống làm thành phần lớn nhất"
+    },
+    {
+      "url": "https://tailieu.duytan.edu.vn/tailieu/2015/20150423/huynhthuy1702/mon_ngon_cuoi_tuan_de_lam_7604.pdf?rand=881767",
+      "accessed": "2026-10-31",
+      "note": "Đại học Duy Tân (Món ngon cuối tuần) — Nem lụi Huế — Giò sống 400g + thịt heo xay 200g, hành khô băm, nước mắm 1 thìa nhỏ, tiêu, dầu ăn 2 muỗng canh; chấm nước lèo tương đậu nành — cùng họ giò sống với nguồn SKĐS về tỉ lệ nhưng công thức độc lập về chi tiết"
+    }
+  ],
+  "media": [
+    {
+      "path": "media/dishes/nem-lui.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món THAY cho tre-tron trong kế hoạch §3.4: rieng — gia vị chính của tré — chưa có số dinh dưỡng (hồ sơ null), tré phụ thuộc vào riềng theo khối lượng đáng kể nên HOÃN theo kỷ luật đợt 1; thay bằng nem lụi Huế cùng miền, nguyên liệu sẵn có.",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món THAY cho tre-tron trong kế hoạch §3.4: rieng — gia vị chính của tré — chưa có số dinh dưỡng (hồ sơ null), tré phụ thuộc vào riềng theo khối lượng đáng kể nên HOÃN theo kỷ luật đợt 1; thay bằng nem lụi Huế cùng miền, nguyên liệu sẵn có. [LV2-008 đợt 8: Nâng Mức 2 với 3 họ nguồn đã mở đọc (Bluestone; Sức Khỏe & Đời Sống/aFamily; tài liệu Đại học Duy Tân). Giữ dạng nhân thuần thịt xay theo Bluestone (xem anomalies về giò sống). Sửa: thịt xay 130→180g và mỡ 15→20g vì file chỉ đạt 29g nhân/xiên so với đồng thuận ~40g/xiên (Bluestone 37–49g/que). Thêm: tỏi 3g (2 họ nguồn có trong nhân). Giữ: sả 10g, hành tím 5g, nước mắm 5g, đường 3g, tiêu 0,5g — đều nằm trong khoảng quy đổi của nguồn; bánh tráng 20g tuỳ chọn giữ vì 2/3 nguồn dọn kèm bánh tráng cuốn. Vùng vn-central + đặc sản Huế giữ nguyên (3/3 nguồn xác nhận gốc Huế).]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
