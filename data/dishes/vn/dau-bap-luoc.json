@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "luoc",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -50,15 +50,39 @@
     }
   ],
   "recipe_steps": [
-    "Đậu bắp rửa sạch, giữ nguyên quả để đỡ nhớt.",
-    "Đun nước sôi với chút muối, luộc đậu 3–4 phút.",
-    "Vớt ra để ráo, cắt bỏ cuống khi ăn, chấm kho quẹt hoặc nước mắm."
+    "Đậu bắp để nguyên quả, không cắt cuống (cắt trước làm tiết nhớt khi luộc), ngâm nước muối loãng 5 phút, rửa sạch.",
+    "Đun nước thật sôi với chút muối, thả đậu bắp vào luộc 3–4 phút, không đậy nắp để giữ màu xanh.",
+    "Vớt đậu ra ngâm ngay nước đá cho giòn và giữ màu.",
+    "Cắt bỏ cuống ngay trước khi ăn; bày đĩa, ăn kèm kho quẹt hoặc nước mắm (phần chấm là món riêng, không tính trong nguyên liệu luộc)."
   ],
-  "recipe_sources": [],
-  "media": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.bachhoaxanh.com/kinh-nghiem-hay/cach-luoc-dau-bap-ngon-ngot-xanh-tu-nhien-1171622",
+      "accessed": "2026-10-31",
+      "note": "Bách Hoá Xanh (họ MWG) — công thức ĐỘC LẬP đúng món, 300 g cho 2–4 người → 75–150 g/khẩu phần: file 130 nằm trong dải; chấm tách mục riêng ngoài nguyên liệu luộc."
+    },
+    {
+      "url": "https://bepxua.vn/tuyet-chieu-luoc-dau-bap-xanh-muot-gion-ngon-cham-chao-dam-da/?amp=1",
+      "accessed": "2026-10-31",
+      "note": "Bếp Xưa — 'Đậu bắp luộc chấm chao': kỹ thuật giữ cuống khi luộc chống nhớt, luộc 3–4 phút, ngâm nước đá; không gram — chỉ dùng dữ kiện bước."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/17231549",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Bảo Bình, 'Đậu bắp xốt tương' (2 phần, 200 g → 100 g/khẩu phần): biến thể chần rưới xốt — đối chiếu gram + kỹ thuật luộc nguyên trái."
+    }
+  ],
+  "media": [
+    {
+      "path": "media/dishes/dau-bap-luoc.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-007 đợt 7: nâng Mức 2 theo diện MÓN ĐƠN GIẢN THẬT (4 bước đầy đủ — linh hoạt LV2-006 §0). GIỮ NGUYÊN định lượng: đậu bắp 130g nằm trong dải nguồn độc lập đúng món (BHX 75–150); Cookpad 100 là biến thể chần cho món xốt, nguồn mẹt ĐMX là thập cẩm — không tạo đồng thuận sửa. Muối tuỳ chọn 1g được 3 họ ủng hộ. Phần chấm KHÔNG thêm dòng (cả 3 họ đều tách chấm khỏi nguyên liệu luộc; kho quẹt/nước mắm là món riêng). Ghi nhận chờ phân xử cấp kho: thẻ loai:mon-chinh cho đĩa rau phụ (giống kho-qua-luoc).]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

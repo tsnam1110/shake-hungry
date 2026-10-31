@@ -97,7 +97,14 @@
       "note": "ToyenXin (mục đậu đũa xào thịt băm 2.2): đối chiếu kỹ thuật — đậu làm sạch cắt 3–4 cm, xào thịt nêm dầu hào hoặc nước mắm tuỳ khẩu vị."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/dau-dua-xao-thit-bam.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nguyên liệu đậu đũa mới biên soạn đợt này từ USDA SR Legacy (yardlong bean).  [LV2-004 đợt 4: nâng Mức 2 — giữ nguyên định lượng (nguồn quy về khẩu phần: đậu 67–150, thịt 33–75 — bản kho nằm trong dải); ghi bất thường nhẹ: nguồn nêm muối/dầu hào là chính — mắm 4 giữ theo tiền lệ và theo một phần nguồn. Bản cay của Saigonese là biến thể, không đưa ớt vào bản chuẩn.]",

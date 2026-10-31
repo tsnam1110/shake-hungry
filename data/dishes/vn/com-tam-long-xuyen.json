@@ -172,7 +172,14 @@
       "url": "https://kyluc.vn/tin-tuc/ky-luc-chau-a/top-50-ky-luc-chau-a-trong-linh-vuc-am-thuc-cua-viet-nam-p-33-com-tam-long-xuyen-mon-ngon-quen-ma-la"
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/com-tam-long-xuyen.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt DISH-004 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-004 đợt 4: thử nâng Mức 2 — GIỮ MỨC 1 vì lệch định danh biến thể: cơm tấm Long Xuyên theo 2/3 nguồn (monngonmoingay.com/cong-thuc/com-tam-long-xuyen; bepbanh.vn/cach-lam/com-tam-long-xuyen) dùng trứng KHO và thịt khìa/cắt nhỏ, có bì và nước mắm kẹo; file hiện là biến thể Sài Gòn (sườn nguyên miếng nướng, trứng ốp la, không bì) — đổi cấu trúc là việc định danh cần chủ dự án quyết.] [Phân xử LV2-005 Phần A (2026-10-31): SỬA ĐỊNH DANH theo bằng chứng nguồn — file cũ là cấu trúc cơm tấm Sài Gòn (sườn nướng nguyên miếng + trứng ốp la + nước mắm pha) dưới tên Long Xuyên. 4 nguồn đã mở (VietKings/kyluc.vn — nguồn định danh; Diễm Nauy — công thức kinh doanh học từ chủ quán Long Xuyên; họ công thức Tripi/Vào Bếp Wiki) nhất quán: cơm tấm Long Xuyên dùng tấm nhuyễn hấp, thịt KHÌA thái sợi/lát mỏng, trứng KHO thái lát, bì cọng nhỏ trộn thính, nước mắm NẤU sánh (kẹo); KHÔNG nguồn nào ủng hộ sườn nguyên miếng + trứng ốp la. Áp dụng: bỏ suon-lon 120 → thit-lon-nac-vai 70 (khìa; 2 họ nguồn độc lập 55–89 g/phần); thêm nuoc-dua-tuoi 50 (khìa thịt + kho trứng) và hanh-tim 3; cooking_method nuong → kho; trứng giữ trung-ga 50 nhưng đổi cách làm sang KHO thái lát ở bước viết lại Phần B. Ghi nhận chưa sửa: đường của nước mắm kẹo theo Diễm ~17 g/phần cao hơn hẳn file (3 g) nhưng chỉ 1 họ nguồn quy được tỉ lệ sốt theo phần — chờ phân xử tiếp.] [LV2-005 đợt 5: PHÂN XỬ ĐỊNH DANH — file cũ lệch định danh Long Xuyên (sườn nướng nguyên miếng + trứng ốp la là cấu trúc cơm tấm Sài Gòn, không nguồn Long Xuyên nào đã mở ủng hộ). Thay đổi định danh do Phần A xử lý riêng (patch này quantity_changes để rỗng): BỎ dòng suon-lon 120 g, THAY bằng thit-lon-nac-vai 70 g khìa nước dừa rồi thái sợi; THÊM nuoc-dua-tuoi 50 g và hanh-tim 3 g; các dòng còn lại giữ nguyên (com-trang 200, trung-ga 50, bi-lon 30, ca-rot 20, cu-cai-trang 20, nuoc-mam-truyen-thong 10, mo-lon-nuoc 5, hanh-la 3, duong-trang 3, muoi 0,5). Trứng gà giữ khối lượng 50 g nhưng đổi cách làm ốp la → kho thái lát; nước mắm đổi pha chua ngọt loãng → nấu sánh/kẹo; cooking_method cần đổi nuong → kho (khìa) khi áp dụng. recipe_steps đã viết theo danh sách nguyên liệu SAU sửa định danh này, không đưa sườn vào bước. Ghi nhận chờ phân xử: đường trong sốt mắm theo Diễm Nauy ~17 g/phần, cao hơn hẳn 3 g của file, nhưng chỉ 1 họ nguồn có tỉ lệ sốt quy phần rõ ràng nên chưa đưa vào quantity_changes.]",

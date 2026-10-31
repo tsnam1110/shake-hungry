@@ -106,7 +106,14 @@
       "note": "Đúng biến thể chay đậu phụ chiên muối sả ớt; đối chiếu lượng đậu ~150g/người nếu mẻ 4 người, cắt miếng vuông ~3x3cm và xóc sả ớt sau khi chiên."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/dau-phu-chien-sa-ot.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Biên soạn 2026-10-31 ở đợt hiệu chuẩn hệ số dầu đậu phụ (CALC-004) — món này bị HOÃN ở DISH-005 đợt 3 vì hệ số hấp thụ dầu 15 của dau-phu (quy tắc để dành chưa có số đo) không được tham chiếu độc lập hậu thuẫn (lệch +24% ở bản nháp đợt 3). Hiệu chuẩn đã chốt hệ số dau-phu = 10 (neo độc lập: cặp SR Legacy 172475 sống ↔ 172451 chiên, cân bằng protein suy ra 9,80 g dầu/100 g; tỉ lệ engine/tham chiếu ở hệ số cũ 15/9,8 = 1,53 — ngoài dải [0,80; 1,25] đăng ký trước) nên món được biên soạn nay. Mọi dòng nguyên liệu mang source=llm_suggested, needs_review=true, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12 (≥3 recipe_sources sẽ bổ sung ở đợt nâng Mức 2). Dòng dau-an 3 g chỉ là dầu phi sả ớt (bước phụ) theo quy ước Phương án A — dầu hấp thụ của bước chiên chính do hệ số oil_absorption_pct của dau-phu đảm nhiệm, không kê trong công thức. Món chay thuần: không nước mắm, không hạt nêm/bột canh; gia vị chỉ nước tương/đường; nhãn diet suy từ thành phần phải ra chay, kiểm chứng trong DB sau seed. [LV2-005 đợt 5: nâng Mức 2 — đối chiếu 3 nguồn công thức đã mở đọc, đều đúng món đậu phụ chiên sả ớt. Định lượng: giữ nguyên toàn bộ — đậu phụ 150g nằm giữa dải 100–200g/người của các nguồn, không nguồn nào đồng thuận lệch >30% cùng một hướng; sả và ớt của file được 2/3 nguồn (VnExpress, BlueStone) ủng hộ, bản gốc Điện Máy XANH cao hơn hẳn là ngoại lệ. Hệ gia vị nước tương + đường (bản chay thuần của file) được bản người dùng của Điện Máy XANH và bản chay BlueStone ủng hộ, không đổi sang bản mặn nước mắm/dầu hào của VnExpress. Dầu ăn 3g giữ nguyên theo quy ước Phương án A (chỉ là dầu phi sả ớt; nguồn Điện Máy XANH dùng nhiều hơn nhưng phi xong vớt sả ớt ra để ráo nên dầu thực ăn vào thấp hơn nhiều). Bất thường ghi nhận: kỹ thuật rán đậu hai lần lửa của VnExpress chưa ghi trong bước cũ — đã bổ sung tinh thần kỹ thuật chiên kỹ trong bước mới, không phát sinh bất thường định lượng chờ phân xử.]",

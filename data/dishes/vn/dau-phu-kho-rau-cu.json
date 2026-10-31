@@ -137,7 +137,14 @@
       "note": "Paradise Food: đậu hũ kho chay với rau củ — tỏi phi thơm là bước nền (2/3 họ nguồn)."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/dau-phu-kho-rau-cu.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món chay thuần: toàn bộ nguyên liệu có origin thực vật/nấm, gia vị chỉ dùng nước tương/muối/chao đậu — không nước mắm, không hạt nêm/bột canh (nhóm COMPOSITE_ANIMAL tính là mặn), không trứng/sữa; nhãn diet suy từ thành phần phải ra chay và đã kiểm chứng trực tiếp trong DB sau seed (cổng G3/G6 của đợt).  [LV2-004 đợt 4: nâng Mức 2 — thêm tỏi 3 (2/3 họ nguồn có tỏi trong phần xào nền); giữ nguyên định lượng còn lại vì nguồn phân tán theo khẩu phần chay khác nhau, không đủ đồng thuận để sửa.]",

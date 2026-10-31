@@ -127,7 +127,14 @@
     "Xới cơm ra đĩa (hoặc trộn cơm với nấm xào), rắc hành lá và tiêu, dùng nóng."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/com-nam-huong.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt DISH-004 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-004 đợt 4: thử nâng Mức 2 — GIỮ MỨC 1 vì lệch định danh: nguồn mở được là cơm nấu CÙNG nấm kiểu Nhật (justonecookbook.com/shiitake-gohan) hoặc cơm chiên nấm/oyster (enjoyfoodie.eu/what-is-shiitake-mushroom-rice; thatspicychick.com/oyster-mushroom-fried-rice) — không nguồn nào khớp cấu trúc cơm trắng + topping xào của file; thêm bất đồng: đậu phụ nguồn cao hơn file ~140%, đậu Hà Lan và nấm rơm 0/3 nguồn.] [Phân tích LV2-005 Phần A (2026-10-31) — GIỮ NGUYÊN, chờ chủ dự án quyết: khác 4 ca định danh còn lại, món này KHÔNG có dạng chuẩn được tài liệu hoá để đối chiếu — tên \"cơm nấm hương\" trong file (cơm trắng + topping đậu phụ/nấm xào, soạn ở DISH-004) không khớp họ nguồn nào đã mở: nguồn mở được là cơm nấu cùng nấm kiểu Nhật (shiitake gohan — nấm là thành phần nấu trong cơm, không có topping đậu phụ) hoặc cơm chiên nấm. Tức là món trong file nhiều khả năng là món biên soạn tự do chứ không phải món có thật bị ghi sai. Ba lựa chọn cho chủ dự án: (1) định danh lại thành cơm chiên nấm hương (đổi method nau → chien, viết lại theo họ nguồn cơm chiên); (2) định danh lại theo dạng cơm nấu cùng nấm kiểu Nhật (bỏ topping, đổi cấu trúc); (3) giữ nguyên như món chay biên soạn của dự án và chấp nhận Mức 1 vĩnh viễn. Không tự ý chọn vì cả 3 đều là quyết định định danh sản phẩm.]",

@@ -110,7 +110,14 @@
     "Kho đậu phụ với nấm, nước tương, đường và gừng lửa nhỏ cho thấm; rắc tiêu trước khi tắt bếp."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/dau-phu-kho-nam.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nghiên cứu Mức 2 đợt 3 (LV2-003, 2026-10-31): GIỮ Mức 1 — đã mở 3 nguồn nhưng không nguồn nào đúng biến thể của file (tiền lệ com-tho đợt 1): hai nguồn kho đúng nghĩa đều dùng nấm rơm TƯƠI, nguồn dùng nấm hương/đông cô lại là món sốt rưới (đậu luộc/chần, không chiên, không kho chung). Cần quyết định biên tập: giữ nấm hương khô như file (tên Anh ghi shiitake) hay chuyển biến thể nấm rơm — không tự quyết trong đợt nâng. Ghi nhận thêm: hành lá/boa rô/hành tím phi thơm có ở 3/3 nguồn, file không có dòng thơm nào ngoài gừng; định lượng đậu 120 g và nước tương 12 g của file nằm trong dải nguồn. [LV2-004 đợt 4: không xử lý theo chỉ đạo — món là biến thể của đậu phụ kho, chờ chủ dự án quyết.]",
