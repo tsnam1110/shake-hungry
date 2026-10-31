@@ -6,7 +6,7 @@
   "reference_food": {
     "fct_source": "usda_sr_legacy",
     "external_id": "168419",
-    "source_url": "https://fdc.nal.usda.gov/food-details/168419/nutrients",
+    "source_url": "https://api.nal.usda.gov/fdc/v1/food/168419?api_key=DEMO_KEY",
     "scientific_name": "Corchorus olitorius",
     "kcal_per_100g": 34,
     "kcal_min": null,

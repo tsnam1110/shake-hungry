@@ -6,7 +6,7 @@
   "reference_food": {
     "fct_source": "usda_foundation",
     "external_id": "325430",
-    "source_url": "https://fdc.nal.usda.gov/food-details/325430/nutrients",
+    "source_url": "https://api.nal.usda.gov/fdc/v1/food/325430?api_key=DEMO_KEY",
     "scientific_name": "Prunus persica",
     "kcal_per_100g": 42,
     "kcal_min": null,

@@ -12,7 +12,7 @@
   "reference_food": {
     "fct_source": "usda_sr_legacy",
     "external_id": "174683",
-    "source_url": "https://fdc.nal.usda.gov/food-details/174683/nutrients",
+    "source_url": "https://api.nal.usda.gov/fdc/v1/food/174683?api_key=DEMO_KEY",
     "scientific_name": "Vitis vinifera",
     "kcal_per_100g": 69,
     "kcal_min": null,

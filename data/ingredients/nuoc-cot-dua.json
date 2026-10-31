@@ -6,7 +6,7 @@
   "reference_food": {
     "fct_source": "usda_sr_legacy",
     "external_id": "170172",
-    "source_url": "https://fdc.nal.usda.gov/food-details/170172/nutrients",
+    "source_url": "https://api.nal.usda.gov/fdc/v1/food/170172?api_key=DEMO_KEY",
     "scientific_name": "Cocos nucifera",
     "kcal_per_100g": 230,
     "kcal_min": 197,

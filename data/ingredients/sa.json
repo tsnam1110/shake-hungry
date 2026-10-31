@@ -6,7 +6,7 @@
   "reference_food": {
     "fct_source": "usda_sr_legacy",
     "external_id": "168573",
-    "source_url": "https://fdc.nal.usda.gov/food-details/168573/nutrients",
+    "source_url": "https://api.nal.usda.gov/fdc/v1/food/168573?api_key=DEMO_KEY",
     "scientific_name": "Cymbopogon citratus",
     "kcal_per_100g": 99,
     "kcal_min": null,

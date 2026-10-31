@@ -6,7 +6,7 @@
   "reference_food": {
     "fct_source": "usda_sr_legacy",
     "external_id": "172410",
-    "source_url": "https://fdc.nal.usda.gov/food-details/172410/nutrients",
+    "source_url": "https://api.nal.usda.gov/fdc/v1/food/172410?api_key=DEMO_KEY",
     "scientific_name": "Cairina moschata; mục SR: Anas platyrhynchos domesticus",
     "kcal_per_100g": 135,
     "kcal_min": 127,

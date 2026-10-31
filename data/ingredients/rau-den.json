@@ -6,7 +6,7 @@
   "reference_food": {
     "fct_source": "usda_sr_legacy",
     "external_id": "168385",
-    "source_url": "https://fdc.nal.usda.gov/food-details/168385/nutrients",
+    "source_url": "https://api.nal.usda.gov/fdc/v1/food/168385?api_key=DEMO_KEY",
     "scientific_name": "Amaranthus spp.",
     "kcal_per_100g": 23,
     "kcal_min": null,

@@ -6,7 +6,7 @@
   "reference_food": {
     "fct_source": "usda_sr_legacy",
     "external_id": "174256",
-    "source_url": "https://fdc.nal.usda.gov/food-details/174256/nutrients",
+    "source_url": "https://api.nal.usda.gov/fdc/v1/food/174256?api_key=DEMO_KEY",
     "scientific_name": "Vigna radiata",
     "kcal_per_100g": 347,
     "kcal_min": null,

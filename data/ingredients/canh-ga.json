@@ -6,7 +6,7 @@
   "reference_food": {
     "fct_source": "usda_sr_legacy",
     "external_id": "172390",
-    "source_url": "https://fdc.nal.usda.gov/food-details/172390/nutrients",
+    "source_url": "https://api.nal.usda.gov/fdc/v1/food/172390?api_key=DEMO_KEY",
     "scientific_name": "Gallus gallus domesticus",
     "kcal_per_100g": 191,
     "kcal_min": null,

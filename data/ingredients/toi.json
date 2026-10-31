@@ -6,7 +6,7 @@
   "reference_food": {
     "fct_source": "usda_sr_legacy",
     "external_id": "169230",
-    "source_url": "https://fdc.nal.usda.gov/food-details/169230/nutrients",
+    "source_url": "https://api.nal.usda.gov/fdc/v1/food/169230?api_key=DEMO_KEY",
     "scientific_name": "Allium sativum",
     "kcal_per_100g": 149,
     "kcal_min": null,

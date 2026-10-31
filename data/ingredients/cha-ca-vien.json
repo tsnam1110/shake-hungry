@@ -6,7 +6,7 @@
   "reference_food": {
     "fct_source": "usda_branded",
     "external_id": "1913804",
-    "source_url": "https://fdc.nal.usda.gov/food-details/1913804/nutrients",
+    "source_url": "https://api.nal.usda.gov/fdc/v1/food/1913804?api_key=DEMO_KEY",
     "scientific_name": "Nemipterus japonicus (cá đổng, ghi trong bảng thành phần nhãn)",
     "kcal_per_100g": 70,
     "kcal_min": 70,

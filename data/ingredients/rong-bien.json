@@ -6,7 +6,7 @@
   "reference_food": {
     "fct_source": "usda_sr_legacy",
     "external_id": "168458",
-    "source_url": "https://fdc.nal.usda.gov/food-details/168458/nutrients",
+    "source_url": "https://api.nal.usda.gov/fdc/v1/food/168458?api_key=DEMO_KEY",
     "scientific_name": "Porphyra spp.",
     "kcal_per_100g": 35,
     "kcal_min": null,

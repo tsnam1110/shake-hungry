@@ -12,7 +12,7 @@
   "reference_food": {
     "fct_source": "usda_sr_legacy",
     "external_id": "168152",
-    "source_url": "https://fdc.nal.usda.gov/food-details/168152/nutrients",
+    "source_url": "https://api.nal.usda.gov/fdc/v1/food/168152?api_key=DEMO_KEY",
     "scientific_name": "Ziziphus jujuba",
     "kcal_per_100g": 281,
     "kcal_min": null,

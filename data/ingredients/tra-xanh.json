@@ -6,7 +6,7 @@
   "reference_food": {
     "fct_source": "usda_sr_legacy",
     "external_id": "171917",
-    "source_url": "https://fdc.nal.usda.gov/food-details/171917/nutrients",
+    "source_url": "https://api.nal.usda.gov/fdc/v1/food/171917?api_key=DEMO_KEY",
     "scientific_name": "Camellia sinensis",
     "kcal_per_100g": 1,
     "kcal_min": null,

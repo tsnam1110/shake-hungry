@@ -6,7 +6,7 @@
   "reference_food": {
     "fct_source": "usda_sr_legacy",
     "external_id": "175176",
-    "source_url": "https://fdc.nal.usda.gov/food-details/175176/nutrients",
+    "source_url": "https://api.nal.usda.gov/fdc/v1/food/175176?api_key=DEMO_KEY",
     "scientific_name": "Oreochromis spp. (dòng lai diêu hồng); mục SR: Oreochromis niloticus",
     "kcal_per_100g": 96,
     "kcal_min": null,

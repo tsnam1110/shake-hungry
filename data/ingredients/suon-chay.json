@@ -6,7 +6,7 @@
   "reference_food": {
     "fct_source": "usda_sr_legacy",
     "external_id": "174268",
-    "source_url": "https://fdc.nal.usda.gov/food-details/174268/nutrients",
+    "source_url": "https://api.nal.usda.gov/fdc/v1/food/174268?api_key=DEMO_KEY",
     "scientific_name": null,
     "kcal_per_100g": 311,
     "kcal_min": null,

@@ -6,7 +6,7 @@
   "reference_food": {
     "fct_source": "usda_sr_legacy",
     "external_id": "168451",
-    "source_url": "https://fdc.nal.usda.gov/food-details/168451/nutrients",
+    "source_url": "https://api.nal.usda.gov/fdc/v1/food/168451?api_key=DEMO_KEY",
     "scientific_name": "Raphanus sativus var. longipinnatus",
     "kcal_per_100g": 18,
     "kcal_min": null,

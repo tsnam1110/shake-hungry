@@ -12,7 +12,7 @@
   "reference_food": {
     "fct_source": "usda_sr_legacy",
     "external_id": "167755",
-    "source_url": "https://fdc.nal.usda.gov/food-details/167755/nutrients",
+    "source_url": "https://api.nal.usda.gov/fdc/v1/food/167755?api_key=DEMO_KEY",
     "scientific_name": "Rubus idaeus",
     "kcal_per_100g": 52,
     "kcal_min": null,

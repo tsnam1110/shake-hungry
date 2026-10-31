@@ -6,7 +6,7 @@
   "reference_food": {
     "fct_source": "usda_sr_legacy",
     "external_id": "173475",
-    "source_url": "https://fdc.nal.usda.gov/food-details/173475/nutrients",
+    "source_url": "https://api.nal.usda.gov/fdc/v1/food/173475?api_key=DEMO_KEY",
     "scientific_name": "Mentha spicata",
     "kcal_per_100g": 44,
     "kcal_min": null,

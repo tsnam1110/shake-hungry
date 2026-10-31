@@ -6,7 +6,7 @@
   "reference_food": {
     "fct_source": "usda_sr_legacy",
     "external_id": "175303",
-    "source_url": "https://fdc.nal.usda.gov/food-details/175303/nutrients",
+    "source_url": "https://api.nal.usda.gov/fdc/v1/food/175303?api_key=DEMO_KEY",
     "scientific_name": "Capra hircus",
     "kcal_per_100g": 109,
     "kcal_min": null,

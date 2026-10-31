@@ -12,7 +12,7 @@
   "reference_food": {
     "fct_source": "usda_foundation",
     "external_id": "327046",
-    "source_url": "https://fdc.nal.usda.gov/food-details/327046/nutrients",
+    "source_url": "https://api.nal.usda.gov/fdc/v1/food/327046?api_key=DEMO_KEY",
     "scientific_name": "Actinidia deliciosa",
     "kcal_per_100g": 58,
     "kcal_min": null,

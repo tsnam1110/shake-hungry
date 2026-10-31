@@ -12,7 +12,7 @@
   "reference_food": {
     "fct_source": "usda_sr_legacy",
     "external_id": "168171",
-    "source_url": "https://fdc.nal.usda.gov/food-details/168171/nutrients",
+    "source_url": "https://api.nal.usda.gov/fdc/v1/food/168171?api_key=DEMO_KEY",
     "scientific_name": "Syzygium jambos (loài của bản ghi nguồn; roi VN chủ yếu là S. samarangense và S. aqueum)",
     "kcal_per_100g": 25,
     "kcal_min": null,

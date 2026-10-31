@@ -6,7 +6,7 @@
   "reference_food": {
     "fct_source": "usda_sr_legacy",
     "external_id": "170499",
-    "source_url": "https://fdc.nal.usda.gov/food-details/170499/nutrients",
+    "source_url": "https://api.nal.usda.gov/fdc/v1/food/170499?api_key=DEMO_KEY",
     "scientific_name": "Allium cepa var. aggregatum",
     "kcal_per_100g": 72,
     "kcal_min": null,

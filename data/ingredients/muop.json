@@ -6,7 +6,7 @@
   "reference_food": {
     "fct_source": "usda_sr_legacy",
     "external_id": "168414",
-    "source_url": "https://fdc.nal.usda.gov/food-details/168414/nutrients",
+    "source_url": "https://api.nal.usda.gov/fdc/v1/food/168414?api_key=DEMO_KEY",
     "scientific_name": "Luffa aegyptiaca",
     "kcal_per_100g": 20,
     "kcal_min": null,

@@ -6,7 +6,7 @@
   "reference_food": {
     "fct_source": "usda_sr_legacy",
     "external_id": "169698",
-    "source_url": "https://fdc.nal.usda.gov/food-details/169698/nutrients",
+    "source_url": "https://api.nal.usda.gov/fdc/v1/food/169698?api_key=DEMO_KEY",
     "scientific_name": "Zea mays",
     "kcal_per_100g": 381,
     "kcal_min": null,

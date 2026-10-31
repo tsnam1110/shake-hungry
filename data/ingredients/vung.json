@@ -6,7 +6,7 @@
   "reference_food": {
     "fct_source": "usda_sr_legacy",
     "external_id": "170150",
-    "source_url": "https://fdc.nal.usda.gov/food-details/170150/nutrients",
+    "source_url": "https://api.nal.usda.gov/fdc/v1/food/170150?api_key=DEMO_KEY",
     "scientific_name": "Sesamum indicum",
     "kcal_per_100g": 573,
     "kcal_min": null,

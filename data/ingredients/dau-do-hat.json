@@ -6,7 +6,7 @@
   "reference_food": {
     "fct_source": "usda_sr_legacy",
     "external_id": "173727",
-    "source_url": "https://fdc.nal.usda.gov/food-details/173727/nutrients",
+    "source_url": "https://api.nal.usda.gov/fdc/v1/food/173727?api_key=DEMO_KEY",
     "scientific_name": "Vigna angularis",
     "kcal_per_100g": 329,
     "kcal_min": null,

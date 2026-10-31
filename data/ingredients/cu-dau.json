@@ -16,7 +16,7 @@
   "reference_food": {
     "fct_source": "usda_sr_legacy",
     "external_id": "170073",
-    "source_url": "https://fdc.nal.usda.gov/food-details/170073/nutrients",
+    "source_url": "https://api.nal.usda.gov/fdc/v1/food/170073?api_key=DEMO_KEY",
     "scientific_name": "Pachyrhizus erosus",
     "kcal_per_100g": 38,
     "kcal_min": null,

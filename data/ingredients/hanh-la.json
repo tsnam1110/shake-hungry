@@ -6,7 +6,7 @@
   "reference_food": {
     "fct_source": "usda_sr_legacy",
     "external_id": "170005",
-    "source_url": "https://fdc.nal.usda.gov/food-details/170005/nutrients",
+    "source_url": "https://api.nal.usda.gov/fdc/v1/food/170005?api_key=DEMO_KEY",
     "scientific_name": "Allium cepa hoặc Allium fistulosum",
     "kcal_per_100g": 32,
     "kcal_min": null,

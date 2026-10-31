@@ -6,7 +6,7 @@
   "reference_food": {
     "fct_source": "usda_sr_legacy",
     "external_id": "167759",
-    "source_url": "https://fdc.nal.usda.gov/food-details/167759/nutrients",
+    "source_url": "https://api.nal.usda.gov/fdc/v1/food/167759?api_key=DEMO_KEY",
     "scientific_name": "Manilkara zapota",
     "kcal_per_100g": 83,
     "kcal_min": null,

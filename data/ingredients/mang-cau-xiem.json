@@ -12,7 +12,7 @@
   "reference_food": {
     "fct_source": "usda_sr_legacy",
     "external_id": "167761",
-    "source_url": "https://fdc.nal.usda.gov/food-details/167761/nutrients",
+    "source_url": "https://api.nal.usda.gov/fdc/v1/food/167761?api_key=DEMO_KEY",
     "scientific_name": "Annona muricata",
     "kcal_per_100g": 66,
     "kcal_min": null,

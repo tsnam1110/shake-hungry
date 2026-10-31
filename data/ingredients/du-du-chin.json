@@ -6,7 +6,7 @@
   "reference_food": {
     "fct_source": "usda_sr_legacy",
     "external_id": "169926",
-    "source_url": "https://fdc.nal.usda.gov/food-details/169926/nutrients",
+    "source_url": "https://api.nal.usda.gov/fdc/v1/food/169926?api_key=DEMO_KEY",
     "scientific_name": "Carica papaya",
     "kcal_per_100g": 43,
     "kcal_min": null,

@@ -12,7 +12,7 @@
   "reference_food": {
     "fct_source": "usda_sr_legacy",
     "external_id": "167765",
-    "source_url": "https://fdc.nal.usda.gov/food-details/167765/nutrients",
+    "source_url": "https://api.nal.usda.gov/fdc/v1/food/167765?api_key=DEMO_KEY",
     "scientific_name": "Citrullus lanatus",
     "kcal_per_100g": 30,
     "kcal_min": null,

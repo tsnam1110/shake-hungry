@@ -6,7 +6,7 @@
   "reference_food": {
     "fct_source": "usda_sr_legacy",
     "external_id": "172446",
-    "source_url": "https://fdc.nal.usda.gov/food-details/172446/nutrients",
+    "source_url": "https://api.nal.usda.gov/fdc/v1/food/172446?api_key=DEMO_KEY",
     "scientific_name": "Glycine max",
     "kcal_per_100g": 54,
     "kcal_min": null,

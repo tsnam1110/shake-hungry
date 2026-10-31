@@ -6,7 +6,7 @@
   "reference_food": {
     "fct_source": "usda_sr_legacy",
     "external_id": "175123",
-    "source_url": "https://fdc.nal.usda.gov/food-details/175123/nutrients",
+    "source_url": "https://api.nal.usda.gov/fdc/v1/food/175123?api_key=DEMO_KEY",
     "scientific_name": "Mugil cephalus",
     "kcal_per_100g": 117,
     "kcal_min": null,

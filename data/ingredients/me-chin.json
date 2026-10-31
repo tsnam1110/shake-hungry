@@ -6,7 +6,7 @@
   "reference_food": {
     "fct_source": "usda_sr_legacy",
     "external_id": "167763",
-    "source_url": "https://fdc.nal.usda.gov/food-details/167763/nutrients",
+    "source_url": "https://api.nal.usda.gov/fdc/v1/food/167763?api_key=DEMO_KEY",
     "scientific_name": "Tamarindus indica",
     "kcal_per_100g": 239,
     "kcal_min": null,

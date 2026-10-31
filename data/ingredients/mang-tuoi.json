@@ -6,7 +6,7 @@
   "reference_food": {
     "fct_source": "usda_sr_legacy",
     "external_id": "169210",
-    "source_url": "https://fdc.nal.usda.gov/food-details/169210/nutrients",
+    "source_url": "https://api.nal.usda.gov/fdc/v1/food/169210?api_key=DEMO_KEY",
     "scientific_name": "Phyllostachys spp.",
     "kcal_per_100g": 27,
     "kcal_min": null,

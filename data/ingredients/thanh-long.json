@@ -6,7 +6,7 @@
   "reference_food": {
     "fct_source": "usda_survey",
     "external_id": "2709234",
-    "source_url": "https://fdc.nal.usda.gov/food-details/2709234/nutrients",
+    "source_url": "https://api.nal.usda.gov/fdc/v1/food/2709234?api_key=DEMO_KEY",
     "scientific_name": "Selenicereus undatus (đồng nghĩa Hylocereus undatus)",
     "kcal_per_100g": 68,
     "kcal_min": null,

@@ -6,7 +6,7 @@
   "reference_food": {
     "fct_source": "usda_sr_legacy",
     "external_id": "168582",
-    "source_url": "https://fdc.nal.usda.gov/food-details/168582/nutrients",
+    "source_url": "https://api.nal.usda.gov/fdc/v1/food/168582?api_key=DEMO_KEY",
     "scientific_name": "Volvariella volvacea",
     "kcal_per_100g": 32,
     "kcal_min": null,

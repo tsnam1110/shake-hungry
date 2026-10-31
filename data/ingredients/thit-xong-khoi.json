@@ -6,7 +6,7 @@
   "reference_food": {
     "fct_source": "usda_sr_legacy",
     "external_id": "168277",
-    "source_url": "https://fdc.nal.usda.gov/food-details/168277/nutrients",
+    "source_url": "https://api.nal.usda.gov/fdc/v1/food/168277?api_key=DEMO_KEY",
     "scientific_name": "Sus scrofa domesticus",
     "kcal_per_100g": 393,
     "kcal_min": null,

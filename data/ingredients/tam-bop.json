@@ -6,7 +6,7 @@
   "reference_food": {
     "fct_source": "usda_sr_legacy",
     "external_id": "173043",
-    "source_url": "https://fdc.nal.usda.gov/food-details/173043/nutrients",
+    "source_url": "https://api.nal.usda.gov/fdc/v1/food/173043?api_key=DEMO_KEY",
     "scientific_name": "Physalis peruviana",
     "kcal_per_100g": 53,
     "kcal_min": null,

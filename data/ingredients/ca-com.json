@@ -6,7 +6,7 @@
   "reference_food": {
     "fct_source": "usda_sr_legacy",
     "external_id": "174182",
-    "source_url": "https://fdc.nal.usda.gov/food-details/174182/nutrients",
+    "source_url": "https://api.nal.usda.gov/fdc/v1/food/174182?api_key=DEMO_KEY",
     "scientific_name": "Engraulis encrasicolus (dòng USDA) — cá cơm VN chủ yếu Stolephorus spp.",
     "kcal_per_100g": 131,
     "kcal_min": null,

@@ -6,7 +6,7 @@
   "reference_food": {
     "fct_source": "usda_sr_legacy",
     "external_id": "168192",
-    "source_url": "https://fdc.nal.usda.gov/food-details/168192/nutrients",
+    "source_url": "https://api.nal.usda.gov/fdc/v1/food/168192?api_key=DEMO_KEY",
     "scientific_name": "Durio zibethinus",
     "kcal_per_100g": 147,
     "kcal_min": null,

@@ -6,7 +6,7 @@
   "reference_food": {
     "fct_source": "usda_sr_legacy",
     "external_id": "172231",
-    "source_url": "https://fdc.nal.usda.gov/food-details/172231/nutrients",
+    "source_url": "https://api.nal.usda.gov/fdc/v1/food/172231?api_key=DEMO_KEY",
     "scientific_name": "Curcuma longa",
     "kcal_per_100g": 312,
     "kcal_min": null,

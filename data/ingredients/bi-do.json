@@ -6,7 +6,7 @@
   "reference_food": {
     "fct_source": "usda_sr_legacy",
     "external_id": "168448",
-    "source_url": "https://fdc.nal.usda.gov/food-details/168448/nutrients",
+    "source_url": "https://api.nal.usda.gov/fdc/v1/food/168448?api_key=DEMO_KEY",
     "scientific_name": "Cucurbita spp.",
     "kcal_per_100g": 26,
     "kcal_min": 26,

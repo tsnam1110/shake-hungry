@@ -6,7 +6,7 @@
   "reference_food": {
     "fct_source": "usda_sr_legacy",
     "external_id": "175179",
-    "source_url": "https://fdc.nal.usda.gov/food-details/175179/nutrients",
+    "source_url": "https://api.nal.usda.gov/fdc/v1/food/175179?api_key=DEMO_KEY",
     "scientific_name": "Macrobrachium rosenbergii (USDA không có mục cho loài này — dùng bản ghi tôm sống chung làm proxy)",
     "kcal_per_100g": 85,
     "kcal_min": null,
