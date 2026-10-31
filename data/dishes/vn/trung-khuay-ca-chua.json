@@ -114,7 +114,14 @@
       "note": "Đã mở và đối chiếu (tác giả Hảo Hảo Bốn Mắt): nguyên liệu có hành củ (hành tím) và hành lá, bước đầu tiên là phi thơm hành băm rồi mới cho cà chua vào — khớp việc bước nấu của file vốn dùng hành tím nhưng trước đây thiếu dòng nguyên liệu."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/trung-khuay-ca-chua.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món THAY cho dau-phu-sot-ca-chua của kế hoạch §3.3: món đó trùng dau-phu-sot-ca đã có (tên đầy đủ là 'Đậu phụ sốt cà chua'); ứng viên thay đầu tiên dau-phu-kho-nam-huong cũng trùng dau-phu-kho-nam đã có trong kho — cả hai đều do rà soát V7/G6 đợt 2 phát hiện. [LV2-005 đợt 5: thử nâng Mức 2 — GIỮ Mức 1: đã mở được 2 nguồn thì bị chặn 429 — chưa đủ 3 nguồn đã mở. Thử lại khi hết chặn.] [LV2-006 đợt 6: nâng Mức 2 — thử lại sau 429 đợt 5. Bổ sung hành tím 10g (2/3 nguồn; bước nấu vốn dùng hành tím nhưng file thiếu dòng nguyên liệu). Định lượng còn lại giữ nguyên.]",

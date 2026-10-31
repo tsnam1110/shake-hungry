@@ -122,7 +122,14 @@
       "note": "Unie — trứng hấp thịt: trứng gà 6 quả, thịt lợn xay 200g, tôm khô 100g, mộc nhĩ 30g (khô), miến gạo 20g, hành tây 1 củ, cà rốt 1 củ; trộn đều nghỉ 10–15 phút, hấp 15 phút, quét lòng đỏ mặt, hấp thêm 10 phút — nguồn thứ hai có mộc nhĩ khô định lượng rõ."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/trung-hap-thit.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Bản trứng hấp mềm dạng custard — khác cha-trung (khối trứng hấp chắc ăn kèm cơm tấm) và trung-duc-thit (đúc chảo, mặt chiên). Nâng Mức 2 đợt 2 (2026-10-31): Đối chiếu 3 nguồn công thức đã mở kiểm chứng (xem recipe_sources; nguồn ĐMX là biến thể nấm rơm của cùng món, đã ghi rõ). Định lượng: sửa moc-nhi-kho 3→8g — quy đổi theo serving_grams 180g của file: I Nấu Ăn Ngon (mẻ 200g thịt + 3 trứng + 20g mộc nhĩ khô, tổng mẻ ~410g ≈ 2,3 khẩu phần) cho ~8,8g/khẩu phần và Unie (mẻ 200g thịt + 6 trứng + 30g mộc nhĩ khô, tổng mẻ ~810g ≈ 4,5 khẩu phần) cho ~6,7g/khẩu phần; số cũ thấp hơn cả hai mốc >30%. Giữ trứng 100g và thịt xay 60g vì nguồn bất đồng (trứng quy đổi ~67g/khẩu phần ở hai nguồn trộn sống so với 150g/khẩu phần ở ĐMX; thịt ~44–88g/khẩu phần). Bất thường ghi nhận: 2/3 nguồn có mien-dong và hanh-tay (Unie thêm tôm khô và cà rốt; ĐMX dùng nấm rơm thay mộc nhĩ và xào thịt trước khi hấp) — file không có các dòng này, chờ pha phân xử riêng; bản của file là custard trộn sống, khớp kỹ thuật của I Nấu Ăn Ngon và Unie. Bước nấu viết lại 6 bước. Phân xử bất thường LV2-002 (Phần A, 2026-10-31): Thêm mien-dong 5 g + hanh-tay 15 g (2/3 nguồn đều có cả hai trong nhân hấp; miến khô ~20 g/mẻ 2,3–4,5 khẩu phần theo hai nguồn đã đối chiếu đợt 2 quy về ~5 g, hành tây ~1/2 củ/mẻ quy về ~15 g). Tôm khô + cà rốt của Unie chỉ 1/3 nguồn — không thêm.",

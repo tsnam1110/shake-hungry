@@ -131,7 +131,14 @@
       "url": "https://cookbeo.com/recipes/vit-nau-mang-chua"
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/vit-xao-mang.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-005 đợt 5: nâng Mức 2 — đối chiếu 3 nguồn công thức. Định lượng: không thay đổi dòng nào vì hồ sơ không có đề xuất đạt đồng thuận để sửa. Bất thường ghi nhận: cả 3 nguồn đều mô tả món nấu/om nhiều nước ăn kèm thay vì xáo dạng đĩa như file, thời gian làm mềm vịt dài hơn hẳn mức 12 phút ở bước cũ, và đều dùng thêm nguyên liệu khử hôi cùng rau thơm cuối món không có trong file; kèm ghi nhận vùng miền vn-central chưa được nguồn khẳng định rõ — chờ pha phân xử.] [Phân xử LV2-006 Phần A (2026-10-31): SỬA cooking_method xao → nau (3/3 nguồn đều là món nấu/om nhiều nước ăn kèm bún/cơm, không phải xáo dạng đĩa); TÊN món GIỮ 'Vịt xáo măng' vì chính nguồn VinID dùng tên này cho đúng món nấu đó — 'xáo' là tên gọi đã chứng thực của món, không phải mô tả kỹ thuật. serving_desc '1 đĩa' → '1 phần (ăn kèm bún/cơm)', serving_grams giữ 250. BỔ SUNG gừng 5g (3/3 nguồn đều dùng gừng khử hôi vịt) và ngò gai 3g (3/3 nguồn có rau thơm cuối món; VinID định lượng 10g/mẻ) — ngò gai là dòng gia vị nhỏ, slug ngo-gai hiện chưa có số dinh dưỡng nên không đổi kết quả tính calo. Măng tươi giữ 120g (khớp nguồn ~125g/khẩu phần). Vùng vn-central GIỮ theo gán biên tập DISH-005 vì nguồn không khẳng định vùng — ghi nhận mở.]",

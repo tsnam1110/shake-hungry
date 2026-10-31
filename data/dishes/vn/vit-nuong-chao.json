@@ -119,7 +119,14 @@
       "note": "Công Thức Nấu Ăn (theo Eva) — Vịt nướng chao (trong bài 5 món ngon cuối tuần) — Đã mở đọc: vịt 1kg, chao 1 muỗng canh, đường 1 muỗng canh, dầu hào 1/2 muỗng canh, sa tế một ít, dầu màu điều 2 muỗng cà phê, hành và tỏi băm; ướp 2-3 tiếng, nướng lò hoặc than, phết lại nước ướp trong khi nướng, thịt chín khi vàng ruộm/vàng đỏ sậm và chọc đũa không ra nước hồng. Không dùng sả."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/vit-nuong-chao.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-008 đợt 8: Nâng Mức 2 với 4 nguồn đã mở đọc (Điện Máy XANH — công thức ướp định lượng gram cho 800g đùi vịt, Nấu Ăn Không Khó — 1,2kg vịt, CET.edu.vn, Công Thức Nấu Ăn/Eva — 1kg vịt). SỬA 2 dòng theo đồng thuận ≥2 nguồn và lệch >25-30%: chao 25→15g (ĐMX quy đổi 13,5g/180g thịt; NAKK ~15-17g sau khi trừ phần xương của vịt nguyên con) và duong-trang 8→5g (ĐMX 4,5g, NAKK và Công Thức Nấu Ăn cùng ~5g/khẩu phần thịt). THÊM hanh-tim 8g (4/4 nguồn có trong ướp, ĐMX định lượng 9g/180g). BỎ sa 10g (0/4 nguồn dùng sả trong ướp). GIỮ: thit-vit-co-da 180g làm gốc quy đổi; toi 8g (3/4 nguồn có tỏi băm trong ướp, lượng nhỏ không có đồng thuận gram để sửa); sa-te 5g tuỳ chọn (ĐMX quy đổi 4,5g/180g — khớp); dau-an 5g (ĐMX quy đổi 9g nhưng CET/Công Thức Nấu Ăn chỉ dùng dầu điều ~1-2 muỗng cà phê cho cả con vịt, tín hiệu trái chiều nên giữ). Method nuong giữ nguyên (4/4 nguồn nướng than hoặc lò); region vn-south giữ nguyên (các nguồn đều gắn món với miền Tây sông nước). serving_grams 260g giữ nguyên dù tổng nguyên liệu thô sau sửa là ~226g, vì khẩu phần vịt nướng phục vụ theo miếng có xương/da và hao hụt nướng chưa có cơ sở cân riêng — ghi anomaly.]",

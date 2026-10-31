@@ -131,7 +131,14 @@
       "note": "Ẩm Thực Muôn Nơi: thịt vịt 500 g, gừng 1 củ (nửa sợi, nửa băm), nước mắm, đường, nước màu dừa; ướp 20–30 phút, xào săn lửa lớn rồi kho lửa nhỏ đến sệt."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/vit-kho-gung.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 3 nguồn. Phân xử định lượng: gung 20 → 12 g — quy theo 150 g vịt/khẩu phần, cả 3 nguồn đều cho gừng thấp hơn file 35–60% (~8–13 g); nước mắm 10 g giữ nguyên dù tỉ lệ nguồn thấp hơn ~2 lần, vì 2/3 nguồn còn nêm thêm mắm/muối không định lượng khi kho (ghi nhận file nghiêng mặn để pha phân xử xem lại cùng tổng muối). Sửa kỹ thuật trong bước: file cũ không thắng nước màu và không ghi thời lượng kho — bước đã bổ sung thắng đường và kho 40–50 phút theo nguồn; rượu trắng khử hôi (3/3 nguồn) là chất sơ chế không ăn vào, chỉ thể hiện trong bước, không thành dòng nguyên liệu.",

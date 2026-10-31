@@ -130,7 +130,14 @@
       "note": "Thư viện số (sách Món ăn miền Nam): tôm thẻ 1 lb (~454 g) + thịt ba chỉ 1 lb cho 4–6 người; thắng đường tạo màu, rim thịt lửa vừa-thấp, xào tôm lửa lớn 3–4 phút rồi rim chung 5 phút"
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/tom-the-rim-thit.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 2 (2026-10-31): đã mở kiểm chứng 3 nguồn (YummyDay: tôm 250 g + ba chỉ 100 g/mẻ; Cookpad Hoàng Ngọc: công thức tôm thịt rim, ghi rõ dùng được tôm thẻ con nhỏ, định lượng gia vị theo muỗng; sách Món ăn miền Nam qua thư viện số: tôm thẻ ~454 g + ba chỉ ~454 g cho 4–6 người). Phân xử định lượng: tôm quy đổi ~76–135 g/khẩu phần tùy đường quy đổi, số file 100 g nằm trong khoảng nên giữ nguyên; thịt hai nguồn theo gram bất đồng nhau >30% về tỉ lệ tôm:thịt (YummyDay 2,5:1; sách miền Nam 1:1) nên giữ nguyên 60 g theo quy tắc nguồn bất đồng. Không phát hiện bất thường về nguyên liệu; file dùng đường thốt nốt thay đường cát/nước màu của nguồn — biến thể gia vị miền Nam, giữ nguyên.",

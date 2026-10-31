@@ -89,7 +89,14 @@
       "note": "Gia đình & SKĐS: trứng chiên hành kiểu truyền thống — đối chiếu lượng hành lá khá lớn trong đĩa trứng."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/trung-chien-hanh.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món chiên theo quy ước Phương án A (EDITORIAL-GUIDE §12): công thức KHÔNG kê dầu của bước chiên chính — dầu hấp thụ do engine mô hình hoá theo hệ số CALC-004 của nguyên liệu.  [LV2-004 đợt 4: nâng Mức 2 — trứng 100→75 và hành lá 10→20 theo tỉ lệ đĩa của nguồn (tiền lệ trung-chien-thit-bam ở Phần A đợt 3), thêm tiêu 0,3 (3/3). Giữ nước mắm 5 dù có nguồn nêm muối — lượng tương đương, ghi nhận tranh luận nhẹ.]",

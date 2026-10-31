@@ -137,7 +137,14 @@
       "note": "Thư Viện Số (tài liệu công thức): thịt kho trứng cút có tỏi và hành lá."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/trung-cut-kho-thit.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — trứng cút 80→40 (số cũ cao gấp đôi tỉ lệ nguồn), mắm 10→5, nước dừa 60→90, thêm tỏi 3, hành lá 3, dầu 5 và ớt 2 tuỳ chọn.]",

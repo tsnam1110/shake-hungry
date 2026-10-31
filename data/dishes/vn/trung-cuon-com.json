@@ -98,7 +98,14 @@
       "note": "Tài liệu dạy nấu ĐH Duy Tân — 'Cơm rang cuộn trứng' (họ omurice): cơm rang trước, trứng tráng mỏng bọc cơm; 3 trứng/mẻ — khẳng định quy trình."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/trung-cuon-com.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món chiên theo quy ước Phương án A (EDITORIAL-GUIDE §12): công thức KHÔNG kê dầu của bước chiên chính — dầu hấp thụ do engine mô hình hoá theo hệ số CALC-004 của nguyên liệu. [LV2-007 đợt 7: nâng Mức 2 Ở MỨC TỐI THIỂU kèm hồ sơ nguồn yếu — 3 họ độc lập đã mở, đúng biến thể trứng-bọc-cơm (đã loại các trang kimbap rong biển sai biến thể), nhưng chỉ họ ĐMX có khẩu phần + gram; 2 họ còn lại khẳng định cấu trúc/số trứng theo mẻ. GIỮ NGUYÊN mọi định lượng: trứng 100 (ĐMX cá ngừ = 100 và Hương Sen 100/cuộn ủng hộ trực tiếp), cơm 90 (ĐMX 100, lệch 10% trong ngưỡng), cà rốt 20, hành lá 5, nước tương 5. SỬA serving 190→220 cho nhất quán nội bộ (tổng nguyên liệu = 220g; đây là hiệu chỉnh nội bộ, không phải số nguồn). Viết lại steps: cơm xào trước theo đồng thuận 3/3 họ. LƯU Ý dạng món: file là cuộn lớn cắt khoanh (Hương Sen khẳng định) trong khi họ ĐMX làm viên nhỏ — tỉ lệ trứng:cơm tương đương nên đối chiếu vẫn dùng được.]",

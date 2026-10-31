@@ -113,7 +113,14 @@
       "note": "Họ Điện Máy XANH (bản đã mở trên toitainang.com.vn; vaobepwiki là bản sao cùng họ — tính 1): mẻ 500 g tôm, hấp ~10 phút, có tiêu và muối; không hành lá."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/tom-the-hap-sa.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-007 đợt 7: nâng Mức 2 — 3 họ nguồn đã mở. BỎ hành lá 5g (0/3 nguồn có — phần rắc mặt theo nguồn là sả, gừng, lá chanh, ớt lát); BỔ SUNG tiêu đen 0,5g (3/3 nguồn đều ướp tiêu, file thiếu hẳn). GIỮ NGUYÊN dòng tôm 150g + hồ sơ quy ước: món hấp nguyên vỏ ăn bóc tại bàn; nguồn cho khẩu phần nguyên con ~167g, khớp đĩa 200g của file; tỉ lệ thịt ăn được của tom-the (~55% cân nguyên con) chưa có hệ số có nguồn trong kho (edible_portion_pct = null) — ca cân thô–tinh chờ chủ dự án (LV2-005 §4), không tự quy đổi xuống ~85g. GIỮ sả 20g (= 1 cây, khớp cách đếm theo cây của 3 nguồn), gừng 5g, lá chanh 2g. Sửa viết hoa tên chính theo DATA-009. Ghi nhận: không nguồn nào ghi riêng loài tôm thẻ — giữ slug theo tên món.]",
