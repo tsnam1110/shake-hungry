@@ -41,6 +41,19 @@ jobs:
           cp .env.example .env
           php artisan key:generate
 
+      # Giao diện (cả trang người dùng lẫn admin) nạp tài nguyên qua @vite —
+      # public/build bị gitignore nên clone sạch không có manifest, trang chủ
+      # trả 500 và ExampleTest đỏ. CI phải build frontend như production.
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Build frontend (Vite)
+        run: |
+          npm ci
+          npm run build
+
       - name: Chuẩn bị database MySQL (collation tiếng Việt + quyền tạo trigger)
         run: |
           mysql -h 127.0.0.1 -uroot -proot -e "ALTER DATABASE shake_hungry_test CHARACTER SET utf8mb4 COLLATE utf8mb4_vi_0900_ai_ci; SET GLOBAL log_bin_trust_function_creators = 1;"
@@ -55,7 +68,7 @@ jobs:
           DB_PASSWORD: root
         run: vendor/bin/pest --no-coverage
 
-      - name: Kiểm tra toàn vẹn dữ liệu (V1–V15)
+      - name: Kiểm tra toàn vẹn dữ liệu (V1–V16)
         env:
           DB_CONNECTION: mysql
           DB_HOST: 127.0.0.1
