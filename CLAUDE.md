@@ -137,7 +137,16 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > Khám phá ở trang chủ và Nhật ký trong hồ sơ chỉ còn vai trò **dùng nhanh**. Lưu ý dữ
 > liệu quan trọng: `dish_names` có tên chính (is_primary) **theo từng locale** (vi đủ
 > 500, en 453) — mọi JOIN/sắp xếp theo tên phải khoá `locale='vi'`, và API danh mục luôn
-> ưu tiên tên vi làm `names[0]`.
+> ưu tiên tên vi làm `names[0]`).
+
+> ## ⚠️ Đính chính lần 12, 2026-10-31 — trang chính sách là nguồn sự thật pháp lý phía người dùng (UI-016)
+>
+> Từ UI-016, `/ho-so` không còn ép đăng nhập: khách thấy bản giới thiệu; tính năng nào
+> thay đổi cách xử lý dữ liệu cá nhân (thêm trường hồ sơ, đổi mục đích dùng dữ liệu)
+> phải cập nhật đồng thời trang `/chinh-sach-bao-mat`, và mọi khẳng định dinh dưỡng mới
+> trên giao diện phải khớp trang `/mien-tru-y-te` (số = khoảng ước tính; lọc dị ứng
+> không phải cam kết an toàn tuyệt đối). Giấy phép công bố ở `/nguon-du-lieu` theo
+> LEGAL-002 (MIT / CC BY 4.0 / ODbL 1.0 cho dòng OFF).
 
 **Trạng thái thực tế, kiểm ngày 2026-10-31 (đã chạy lại toàn bộ lệnh kiểm chứng):**
 
