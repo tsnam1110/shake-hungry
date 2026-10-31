@@ -171,7 +171,14 @@
       "note": "Tripi (theo Cooky): bột gạo 200g + bột năng 50g + bột nếp 50g, thịt nạc vai 300g, da heo 150g, thính 150g, nước cốt dừa 300ml; luộc sợi đến khi nổi, vớt ngâm nước lạnh."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/banh-tam-bi.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu). Nâng Mức 2 đợt 2 (2026-10-31): đã mở kiểm chứng 3 nguồn (Điện Máy XANH, Bếp Trưởng Á Âu, Tripi/Cooky). Phân xử định lượng: GIỮ NGUYÊN toàn bộ — hai nguồn không ghi khẩu phần và bất đồng nhau về tỉ lệ bột (Bếp Trưởng lấy bột nếp làm bột chính); số quy đổi của Điện Máy XANH (mẻ 6–8 người: thịt ~171g, bì ~114g, cốt dừa ~100ml/khẩu phần) cao hơn hẳn số file nhưng không có cơ sở độc lập thứ hai để đối chiếu nên chưa đủ điều kiện sửa; ghi nhận nước cốt dừa 40g có thể thấp so với cách ăn chan đẫm của món. BẤT THƯỜNG lớn ghi nhận cho pha phân xử: CẢ 3 NGUỒN đều dùng BỘT NẾP trong sợi bánh tằm mà file không có dòng bột nếp; cả 3 nguồn cũng ăn kèm giá/dưa leo/xà lách/rau thơm mà file không có; thính ở 2 nguồn là 150g/mẻ trong khi file chỉ để 10g dạng optional. Phân xử bất thường LV2-002 (Phần A, 2026-10-31): Thêm bot-nep 15 g — cả 3 nguồn đều có bột nếp trong hỗn hợp bột sợi (bước 1 của file đã viết sẵn bột nếp), lấy tỉ lệ thận trọng ~15% tổng bột. Thêm giá 15 g, dưa leo 20 g, xà lách 10 g — cả 3 nguồn đều ăn kèm (bước 7 đã viết sẵn). Rau thơm hỗn hợp không thêm vì kho không có slug rau thơm tổng hợp, không tự ánh xạ sang một loại rau thơm đơn lẻ. Thính gạo: 10 g optional → 20 g bắt buộc — 2 nguồn ghi 150 g/mẻ (mẻ 6–8 khẩu phần → ~19–25 g/khẩu phần) và thính là thành phần cốt lõi trộn bì (bước 4), không phải tuỳ chọn.",

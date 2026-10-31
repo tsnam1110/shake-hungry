@@ -84,7 +84,14 @@
     "Hấp 30-40 phút đến khi nếp chín dẻo."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/banh-khuc.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). THIẾU NGUYÊN LIỆU: lá khúc (rau khúc) (chính — làm vỏ bánh, tạo màu và mùi đặc trưng) — cần bổ sung vào kho.",
