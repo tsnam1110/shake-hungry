@@ -38,6 +38,14 @@
   "edible_portion_note": "CHƯA CÓ hệ số có nguồn: foodMeasures FDC 172390 ghi '1 piece = 107 g' không nói rõ có xương hay không. Cánh gà chợ bán cả xương. Cần tự cân.",
   "is_ready_to_eat": false,
   "units": [],
+  "media": [
+    {
+      "path": "media/ingredients/canh-ga.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

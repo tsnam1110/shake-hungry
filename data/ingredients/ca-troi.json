@@ -31,6 +31,14 @@
   "edible_portion_note": "Cột EDIBLE của mục 08032, Bảng thành phần thực phẩm Việt Nam: cá nguyên con ăn được 72% (bỏ đầu, xương, nội tạng). Áp cho khối lượng cá trôi nguyên con mua ở chợ.",
   "is_ready_to_eat": false,
   "units": [],
+  "media": [
+    {
+      "path": "media/ingredients/ca-troi.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "low",
   "needs_review": true,

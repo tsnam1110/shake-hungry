@@ -31,6 +31,14 @@
   "edible_portion_note": "CHƯA CÓ hệ số có nguồn: chân gà bán theo con cả xương, giá trị dinh dưỡng trên phần ăn được (da+gân). Cần tự cân sau khi rút xương.",
   "is_ready_to_eat": true,
   "units": [],
+  "media": [
+    {
+      "path": "media/ingredients/chan-ga.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "medium",
   "needs_review": true,

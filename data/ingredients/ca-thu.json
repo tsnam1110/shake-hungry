@@ -43,6 +43,14 @@
       "source": "FDC 173673 foodMeasures"
     }
   ],
+  "media": [
+    {
+      "path": "media/ingredients/ca-thu.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "medium",
   "needs_review": true,

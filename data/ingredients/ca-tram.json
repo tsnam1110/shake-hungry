@@ -38,6 +38,14 @@
   "edible_portion_note": "Cột EDIBLE của mục 08029, Bảng thành phần thực phẩm Việt Nam: cá nguyên con ăn được 65% (bỏ đầu, xương, nội tạng). Áp cho khối lượng cá trắm cỏ nguyên con mua ở chợ.",
   "is_ready_to_eat": false,
   "units": [],
+  "media": [
+    {
+      "path": "media/ingredients/ca-tram.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "low",
   "needs_review": true,
