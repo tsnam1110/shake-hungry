@@ -178,6 +178,8 @@ phần thực tế và cách nấu của từng quán/từng nhà làm thay đ�
 | 2026-09-01 | **1.1.0** | 204 Food Code FNDDS (`usda_sr_legacy`) | **89,7%** | 3,9% | −3,8% | ✅ tiêu chí chính giữ nguyên; **% tham chiếu trong khoảng 1,0% → 80,4%** | [2026-09-01-fndds.md](accuracy-runs/2026-09-01-fndds.md) |
 | 2026-10-31 | **1.1.0** | **160 món Việt của dự án, phân tầng theo cách chế biến (QA-002)** | **76,9%** | 11,5% | **+10,3%** | ❌ **CHƯA ĐẠT** — 4/5 nhóm đạt 100%; nhóm chiên/rán chỉ 7,5% (bias +39,8%): dầu bị tính hai lần (dòng `dau-an` trong công thức + mô hình hấp thụ CALC-004) | [2026-10-31-vn-dishes.md](accuracy-runs/2026-10-31-vn-dishes.md) |
 | 2026-10-31 | **1.1.0** (không đổi) | **160 món Việt, cùng thiết kế mẫu (QA-002 lần 2 — sau Phương án A: bỏ/giảm dòng dầu chiên trong công thức)** | **77,5%** | 13,8% | **+12,6%** | ❌ **CHƯA ĐẠT** — 4/5 nhóm vẫn 100%; nhóm chiên/rán 10,0% (bias +49,0%): chênh lệch tuyệt đối nhóm chiên gần như không đổi (+143,7 → +137,0 kcal) vì phía tham chiếu nguyên văn không chứa dầu hấp thụ mà engine mô hình hoá — cặp (quy ước A + tham chiếu nguyên văn) không tương thích về định nghĩa; chờ chủ dự án chốt bước tiếp (báo cáo §7) | [2026-10-31-vn-dishes-lan-2.md](accuracy-runs/2026-10-31-vn-dishes-lan-2.md) |
+| 2026-10-31 | **1.1.0** (không đổi) | **160 món Việt, cùng mẫu (QA-002 lần 3 — tham chiếu chiên ĐỘC LẬP: cộng dầu hấp thụ bằng hệ số suy từ cặp sống→chiên USDA SR Legacy, không dùng hệ số engine, không dùng 2 nguồn neo của CALC-004)** | **98,1%** | 4,6% | **+3,4%** | ✅ **ĐẠT** — 4/5 nhóm vẫn 100%; nhóm chiên 92,5% (bias +12,2%, trong đó +9,6 điểm % là cấu trúc điểm giữa khoảng; tham chiếu nằm trong khoảng engine 40/40 món chiên). Biến thể đối chứng (quy dầu về hệ thống): 93,8% tổng, chiên 75,0% — vẫn đạt | [2026-10-31-vn-dishes-lan-3.md](accuracy-runs/2026-10-31-vn-dishes-lan-3.md) |
+| 2026-10-31 | **1.1.0** (không đổi; chỉ sửa hệ số dữ liệu CALC-004) | **160 món Việt, cùng mẫu + cùng tham chiếu độc lập (QA-002 lần 4 — sau hiệu chuẩn: thịt/đạm 8→4, củ/quả 12→9)** | **98,8%** | 3,8% | **+2,6%** | ✅ **ĐẠT** (kiểm tra hiệu chuẩn — không phải kiểm chứng độc lập mới) — nhóm chiên 95,0% (38/40), bias +8,8% ≈ sàn cấu trúc điểm giữa; 2 món còn lệch đều là cá chiên trần sốt, đã ghi hồ sơ mở (hải sản chiên trần) | [2026-10-31-vn-dishes-lan-3.md](accuracy-runs/2026-10-31-vn-dishes-lan-3.md) |
 
 **Đọc bảng này cho đúng.** Lần đo đầu tiên nói được ba điều, không hơn:
 
@@ -223,6 +225,37 @@ mục tiêu không đổi**; việc cần quyết tiếp là phương pháp dự
 (phương án C ở phía tham chiếu) và/hoặc độ lớn hệ số CALC-004 — đều chờ chủ dự án. Chi tiết:
 [báo cáo lần 1](accuracy-runs/2026-10-31-vn-dishes.md) ·
 [báo cáo lần 2](accuracy-runs/2026-10-31-vn-dishes-lan-2.md).
+
+### Lần đo 5 + 6 (2026-10-31, QA-002 lần 3 + 4 — tham chiếu chiên độc lập, hiệu chuẩn CALC-004)
+
+Chủ dự án duyệt cả hai bước tiếp theo của báo cáo lần 2 §7. **Lần 5 (QA-002 lần 3)** đổi đúng
+một thứ ở phía đo: tham chiếu nhóm chiên cộng dầu hấp thụ tường minh bằng hệ số **suy từ dữ
+liệu thành phẩm USDA SR Legacy** (cặp sống → chiên, cân bằng protein/khối lượng) — độc lập
+với hệ số engine ở cả ba nghĩa: không đọc từ `oil_absorption_pct`, không suy ngược từ kết
+quả engine, không dùng hai nguồn neo của CALC-004. Đường ống được kiểm chứng trước bằng
+tái lập chính xác toàn bộ số lần 2. Kết quả: **98,1% — ĐẠT**, nhóm chiên 92,5%.
+
+Ba điều lần đo này nói được mà các lần trước không nói được:
+
+1. **Mô hình dầu của engine về tổng thể là đúng cỡ.** Khi tham chiếu cũng chứa dầu (từ
+   nguồn ngoài dự án), nhóm chiên đi từ 10,0% lên 92,5% mà engine không đổi một dòng code.
+   Kết luận lần 2 — "lệch là do không tương thích định nghĩa" — được xác nhận bằng số.
+2. **Phần bias còn lại của nhóm chiên (+12,2%) phân rã được:** +9,6 điểm % là *cấu trúc
+   điểm giữa khoảng* (khoảng món chiên nới không đối xứng ×0,80/×1,25 rồi ×0,85/×1,15 nên
+   điểm giữa nằm trên ước lượng trung tâm của chính engine) — tính chất của cách công bố
+   số theo QT-5, không phải sai số mô hình; chỉ +3,9 điểm % là chênh dầu ròng, và nó tập
+   trung ở hai nhóm hệ số (thịt/đạm gấp đôi tham chiếu; củ/quả cao ~1,3 lần).
+3. **Hiệu chuẩn có kỷ luật (lần 6 / QA-002 lần 4):** chỉ hai nhóm vượt ngưỡng đăng ký trước
+   mới bị sửa (thịt/đạm 8→4, củ/quả 12→9); hải sản giữ nguyên vì bằng chứng hai cách quy
+   dầu mâu thuẫn nhau. Sau sửa: **98,8%**, nhóm chiên 95,0% — và báo cáo ghi rõ lần này là
+   *kiểm tra hiệu chuẩn*, giá trị kiểm chứng độc lập nằm ở lần 5. Hai món còn lệch
+   (`ca-tram-sot-chua-ngot`, `ca-chim-sot-ca-chua`) đều là cá chiên trần nguyên con — hồ sơ
+   mở "hải sản chiên trần", chờ thêm neo độc lập, không bịa hệ số.
+
+> Tuyên bố ra ngoài được cập nhật theo lần đo này: trên kho món Việt của dự án, engine đạt
+> **98,1% trong ±20%** (mẫu 160 món phân tầng) so với tham chiếu tính từ bảng thành phần của
+> dự án cộng mô hình dầu neo USDA — **vẫn không** được rút gọn thành "chính xác 98%" và
+> vẫn chưa phải đối chiếu phân tích hoá học (xem các giới hạn ở báo cáo lần 3 §1).
 
 ### Ba giới hạn của bộ mẫu — phải đọc trước khi trích con số 89,7%
 

@@ -86,3 +86,32 @@ hấp thụ của dạng snack. Giữ cả hai cách tính sẽ tính dầu hai 
   không có bảng đạt chuẩn), mắm nêm (không nguồn nào có số), mắm ruột An Giang
   (vỏ rỗng chưa có công thức). Kiểm chứng: validate-data 0 🔴, Pest 77/77;
   bim bim cho béo 4,8 g/khẩu phần — đúng tay tính 40 g × 12%.
+
+## Bổ sung 2026-10-31 — Hiệu chuẩn sau QA-002 lần 3 (tham chiếu độc lập)
+
+Bảng hệ số ở trên được rà lại bằng tham chiếu **độc lập với hai nguồn neo gốc**: hệ số hấp
+thụ suy từ cặp sống → chiên và hệ thống áo bột trong **USDA SR Legacy** (cân bằng
+protein/khối lượng; FDC ids và số suy ra đầy đủ ở Phụ lục/Bảng §2 của
+[báo cáo QA-002 lần 3](../../06-nutrition/accuracy-runs/2026-10-31-vn-dishes-lan-3.md)).
+Ngưỡng sửa đăng ký trước: tỉ lệ dầu engine/tham chiếu ngoài [0,80; 1,25] **và** nhóm đủ
+vật chất trong mẫu. Kết quả:
+
+| Nhóm | Cũ | Mới | Lý do (neo độc lập) |
+|---|---|---|---|
+| Thịt/đạm | 8 | **4** | Tỉ lệ dầu engine/tham chiếu 1,97. Gà không da chiên 3,30; gà ức+cả da áo bột 2,30; áo bột mì mỏng **−3,41** (mất béo ròng); trứng có cặp trực tiếp 4,19 ⇒ cả nhóm gồm trứng về 4. Hệ số 8 cũ neo vào điểm uptake 8,53% trong môi trường oleogel — không điển hình |
+| Củ/quả chiên miếng | 12 | **9** | Tỉ lệ 1,31. Fries 8,07/8,40 (hai chuỗi), plantain 6,53–9,77. Dạng lát mỏng (chips 10,81) dùng chung slug khoai-tay — 9 là giá trị dung hoà; bim bim sau sửa lệch −3,3% so với tham chiếu dạng chips |
+| Hải sản | 9 | giữ 9 | Theo dòng thì cao (1,29) nhưng theo hệ thống áo bột (9,84–11,72) thì khớp — bằng chứng chưa kết luận. Điểm yếu thật: cá chiên trần (xem hồ sơ mở ở báo cáo lần 3 §8) |
+| Phô mai | 10 | giữ 10 | Tỉ lệ 0,79 nhưng n = 1 nguyên liệu/1 món — chưa đủ bằng chứng |
+| Bột/vỏ chiên ngập | 15 | giữ 15 | Tỉ lệ 0,89 — trong dải |
+| Bột gạo/tinh bột áo | 12 | giữ 12 | Tỉ lệ 0,83 — trong dải |
+
+**Phán quyết bim bim được giữ nguyên cơ chế** (bỏ dòng `dau-an`, hệ số đảm nhiệm) nhưng số
+học đổi theo hệ số mới: 40 g khoai-tay × 9% = **3,6 g dầu** (trước: 4,8 g ở hệ số 12).
+
+**Hai món ngoại lệ gạo nếp giữ nguyên** (hệ số 0 + dầu kê trong công thức): lệch so với
+tham chiếu độc lập lần 3 là +6,2% (`xoi-chien`) và +8,4% (`banh-chung-chien`) — trong
+ngưỡng; gán hệ số cho `gao-nep`/`com-trang` có rủi ro tính hai lần ở hàng loạt món khác.
+
+Kiểm chứng sau hiệu chuẩn: validate-data 0 🔴, recompute 491/496 món, Pest 106/106;
+QA-002 lần 4 (kiểm tra hiệu chuẩn, cùng tham chiếu độc lập): **98,8% trong ±20%**, nhóm
+chiên 95,0% — hai món còn lệch đều là cá chiên trần sốt (điểm mở của nhóm hải sản ở trên).

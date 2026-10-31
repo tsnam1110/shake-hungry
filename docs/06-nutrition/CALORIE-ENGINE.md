@@ -144,6 +144,25 @@ bản chất mô hình** — không phải số đo. Bảng đầy đủ và cá
 > mô hình này cộng. Phân tích và lựa chọn tiếp theo (chờ chủ dự án):
 > [accuracy-runs/2026-10-31-vn-dishes-lan-2.md](accuracy-runs/2026-10-31-vn-dishes-lan-2.md).
 
+> **Đính chính 2026-10-31 (tiếp) — QA-002 lần 3: tham chiếu chiên độc lập, hiệu chuẩn 2 nhóm
+> hệ số.** Chủ dự án duyệt làm cả hai việc tiếp theo: (1) dựng phía tham chiếu nhóm chiên có
+> cộng dầu hấp thụ tường minh bằng hệ số suy từ **dữ liệu thành phẩm USDA SR Legacy** (cặp
+> sống → chiên, cân bằng protein/khối lượng — CC0) và văn liệu ngoài hai nguồn neo của
+> CALC-004 — tuyệt đối không dùng chính hệ số engine làm tham chiếu (đo vòng tròn). Kết quả
+> lần 3: **98,1% trong ±20% — ĐẠT** (nhóm chiên 92,5%, bias +12,2%, trong đó +9,6 điểm % là
+> cấu trúc điểm giữa của khoảng nới không đối xứng ở mục này — tính chất của cách công bố
+> số, không phải sai số mô hình). (2) Rà hệ số theo nhóm với ngưỡng đăng ký trước (tỉ lệ
+> dầu engine/tham chiếu ngoài [0,80; 1,25] và đủ vật chất): **thịt/đạm 8 → 4** (tỉ lệ 1,97;
+> neo SR: gà chiên 2,3–3,3, gà còn da có thể mất béo ròng, trứng 4,19) và **củ/quả 12 → 9**
+> (tỉ lệ 1,31; neo fries 8,07/8,40, plantain 6,53–9,77); **giữ nguyên** hải sản 9 (bằng
+> chứng hai chiều mâu thuẫn — theo hệ thống áo bột thì khớp; điểm yếu chỉ ở cá chiên trần,
+> đã ghi hồ sơ mở), phô mai 10 (n = 1, chưa đủ bằng chứng), bột/vỏ 15 và bột gạo 12 (đều
+> trong dải). Hai món ngoại lệ gạo nếp (hệ số 0, dầu kê trong công thức) **giữ nguyên** —
+> cả hai lệch +6,2%/+8,4% so với tham chiếu độc lập, nằm trong ngưỡng. Sau sửa: validate
+> 0 🔴, recompute 491/496, Pest 106/106, đo lại (lần 4, kiểm tra hiệu chuẩn): **98,8%**,
+> nhóm chiên 95,0%. Chi tiết: [báo cáo lần 3 + 4](accuracy-runs/2026-10-31-vn-dishes-lan-3.md)
+> và [CALC-004](../05-tasks/tasks/CALC-004.md) mục bổ sung.
+
 > **Cảnh báo cho người kế nhiệm:** nếu bỏ qua mục này, calo món chiên sẽ **thấp hơn thực tế 30–50%**.
 > Đây là lỗi âm thầm — không có gì báo sai, chỉ là mọi con số đều thấp.
 
