@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "chien-ngap-dau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "chieu",
@@ -49,6 +49,14 @@
       "confidence": "low"
     },
     {
+      "ingredient_slug": "bot-nang",
+      "quantity": 20,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
       "ingredient_slug": "khoai-lang",
       "quantity": 50,
       "unit_name": "g",
@@ -58,7 +66,7 @@
     },
     {
       "ingredient_slug": "tom-su",
-      "quantity": 40,
+      "quantity": 80,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -66,7 +74,7 @@
     },
     {
       "ingredient_slug": "trung-ga",
-      "quantity": 12,
+      "quantity": 20,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -90,9 +98,25 @@
     },
     {
       "ingredient_slug": "xa-lach",
-      "quantity": 25,
+      "quantity": 50,
       "unit_name": "g",
       "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "su-hao",
+      "quantity": 20,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "ca-rot",
+      "quantity": 15,
+      "unit_name": "g",
+      "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
     },
@@ -106,7 +130,7 @@
     },
     {
       "ingredient_slug": "nuoc-mam-truyen-thong",
-      "quantity": 12,
+      "quantity": 8,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -130,12 +154,32 @@
     }
   ],
   "recipe_steps": [
-    "Khoai lang gọt vỏ, bào sợi; pha bột mì + bột gạo + trứng thành hỗn hợp sệt.",
-    "Trộn khoai vào bột, múc vào muôi, đặt tôm lên mặt.",
-    "Chiên ngập dầu đến khi bánh vàng giòn, vớt ráo dầu.",
-    "Ăn kèm rau sống, chấm nước mắm chua ngọt."
+    "Khoai lang gọt vỏ, bào sợi nhỏ, ngâm nước muối loãng 15–30 phút cho ra bớt nhựa, vớt ra xóc thật ráo — khoai ướt là nguyên nhân bánh nhanh ỉu.",
+    "Tôm rửa sạch, cắt râu và ngạnh cứng, để ráo; ướp chút muối, tiêu 10–15 phút cho thấm.",
+    "Pha bột: bột mì, bột gạo, bột năng, bột nghệ và muối với nước lạnh thành hỗn hợp sệt chảy chậm khỏi muôi, ủ 30 phút cho bột nở đều.",
+    "Làm đồ chua: su hào và cà rốt thái lát mỏng, bóp chút muối 5 phút, xả sạch, trộn giấm đường, để 30 phút cho giòn chua ngọt.",
+    "Pha nước chấm: nước mắm, đường, nước và chanh/giấm khuấy tan, thả tỏi ớt băm; vị chua ngọt, mặn dịu.",
+    "Trộn khoai đã ráo vào bột; đun dầu ngập chảo ở 170–190 °C, nhúng muôi/khuôn vào dầu nóng trước để chống dính.",
+    "Múc bột và khoai lên muôi, đặt 1–2 con tôm lên mặt, gạt nhẹ xuống chảo; chiên lửa vừa tới khi bánh vàng giòn hai mặt, tôm đỏ au, vớt lên giấy thấm dầu (có thể chiên hai lần cho giòn lâu).",
+    "Bày bánh nóng với xà lách, tía tô và đồ chua, chấm nước mắm chua ngọt, ăn ngay khi bánh còn giòn rụm."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-banh-tom-ho-tay-thom-ngon-gion-rum-01626",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH — Phạm Ngọc Ánh, 4 người: tôm 500 g, bột mì 200 g, bột năng 100 g, khoai lang 300 g, trứng 2 quả, su hào 100 g + cà rốt 100 g làm đồ chua, xà lách 200 g; chấm mắm 2 muỗng canh + đường 2 muỗng canh."
+    },
+    {
+      "url": "http://www.savourydays.com/cach-lam-banh-tom-ho-tay/",
+      "accessed": "2026-10-31",
+      "note": "Savoury Days — Linh Trang, 4 người: khoai lang 450 g, tôm 500 g, bột mì/gạo/năng mỗi loại 100 g, nghệ ~1 g; tác giả tự ghi đây là bản biến tấu nhiều khoai, tôm to hơn cổ truyền; rau sống 300 g, đu đủ/su hào 120 g + cà rốt 120 g."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/490665",
+      "accessed": "2026-10-31",
+      "note": "Cookpad — Bếp Hien Dang (Hà Nội), 6 phần: tôm đất 500 g, bột mì 200 g, bột gạo hoặc năng 100 g, trứng 2 quả, khoai lang 200 g; ăn kèm xà lách, tía tô, rau mùi và dưa góp đu đủ/cà rốt."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/banh-tom-ho-tay.webp",
@@ -146,7 +190,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 12 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).]",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 12 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).] [LV2-009 đợt 9 (bổ sung): Nâng Mức 2 — mở kiểm chứng 3 họ nguồn (Điện Máy XANH, Savoury Days, Cookpad Hien Dang). Thêm bot-nang 20 g (hai họ định lượng 25 g; tổng bột thành 75 g khớp cả hai) và đồ chua su-hao 20 g + ca-rot 15 g (3/3 họ đều có ăn kèm, file thiếu hẳn; lấy dưới mức nguồn vì đồ chua thường không ăn hết); sửa tom-su 40→80 g (3/3 họ 83–125 g/khẩu phần — lấy thận trọng vì một họ tự nhận tôm to hơn cổ truyền), trung-ga 12→20 g, xa-lach 25→50 g, nuoc-mam-truyen-thong 12→8 g (3/3 họ hội tụ ~7,5 g). Giữ khoai-lang 50 g vì nguồn bất đồng 33–112 g. Phương án A: file vốn không có dòng dau-an — đúng quy ước, dầu chiên ngập do engine mô hình hoá theo CALC-004, món không có bước phụ nên không thêm dòng dầu. Ghi nhận chờ quyết (LV2-009 §B.5): cả 3 họ dùng tôm nhỏ nguyên con còn vỏ đặt lên mặt bánh, file dùng slug tom-su — đổi slug là quyết định định danh, đợt này chỉ sửa lượng.]",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

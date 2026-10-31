@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "chien-ngap-dau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "chieu",
@@ -34,7 +34,15 @@
   "ingredients": [
     {
       "ingredient_slug": "bot-mi",
-      "quantity": 55,
+      "quantity": 50,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "bot-gao",
+      "quantity": 10,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -43,6 +51,14 @@
     {
       "ingredient_slug": "trung-ga",
       "quantity": 10,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "trung-cut",
+      "quantity": 24,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -65,6 +81,14 @@
       "confidence": "low"
     },
     {
+      "ingredient_slug": "nam-huong-kho",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
       "ingredient_slug": "mien-dong",
       "quantity": 8,
       "unit_name": "g",
@@ -75,6 +99,14 @@
     {
       "ingredient_slug": "ca-rot",
       "quantity": 15,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-tay",
+      "quantity": 5,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -130,12 +162,32 @@
     }
   ],
   "recipe_steps": [
-    "Nhào bột mì + trứng, cán mỏng, cắt khoanh tròn làm vỏ.",
-    "Xào nhân thịt, mộc nhĩ, miến, cà rốt, nêm vừa ăn.",
-    "Gói nhân vào vỏ, gấp mép xoắn kiểu gối.",
-    "Chiên ngập dầu vàng giòn, chấm nước mắm chua ngọt."
+    "Trộn bột mì và bột gạo với muối, cho trứng và dầu ăn vào, thêm nước từ từ, nhào 10–15 phút tới khi bột mịn, không dính tay; bọc kín, ủ 30–60 phút.",
+    "Trong lúc ủ bột: mộc nhĩ ngâm nở, thái sợi nhỏ; miến ngâm mềm, cắt khúc 1–2 cm; cà rốt và hành tây thái nhỏ; trứng cút luộc 10 phút, bóc vỏ.",
+    "Trộn nhân sống: thịt xay, mộc nhĩ, miến, cà rốt, hành, nêm nước mắm, đường, tiêu; trộn đều tay cho nhân kết dính, ướp 15–20 phút — không xào trước để nhân giữ nước ngọt khi chiên.",
+    "Chia bột thành cục khoảng 50 g, cán mỏng 2–3 mm thành khoanh tròn đường kính 10–15 cm, rìa mỏng hơn tâm.",
+    "Cho khoảng 40 g nhân vào giữa mỗi khoanh, đặt 1 quả trứng cút lên trên, gấp đôi vỏ, miết chặt mép rồi xoắn viền kiểu gối; mép hở sẽ làm bánh bung và hút dầu khi chiên.",
+    "Đun dầu ngập chảo cho nóng già, hạ lửa vừa, thả bánh vào chiên tới khi vỏ vàng ruộm, phồng giòn đều hai mặt (có thể chiên hai lần: lần 1 vừa chín, lần 2 sát giờ ăn cho giòn lại).",
+    "Vớt bánh ra vỉ hoặc giấy thấm dầu, để đứng cho ráo bớt dầu mặt.",
+    "Pha nước mắm chua ngọt với tỏi ớt và đồ chua cà rốt/đu đủ; dọn bánh nóng kèm rau sống, chấm ngập — ăn ngay khi vỏ còn giòn."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.bluestone.com.vn/blogs/vao-bep/lam-banh-xep-banh-goi-nhan-thit-bang-noi-chien-khong-dau",
+      "accessed": "2026-10-31",
+      "note": "Bluestone (tham khảo Bếp Nhà Tôm; biến thể nồi chiên không dầu): vỏ bột mì 190 g + bột gạo 95 g; nhân thịt 200 g, trứng cút 10–15 quả, miến 50 g, mộc nhĩ khô 10 g, cà rốt 50 g; nhân trộn sống."
+    },
+    {
+      "url": "http://giavihanhphuc.com/bot-banh/banh-goi-nghis-kitchen",
+      "accessed": "2026-10-31",
+      "note": "Nghi's Kitchen qua Gia Vị Hạnh Phúc: vỏ bột mì 250 g + bột gạo 30 g + trứng 1 quả + dầu 10 g, chia cục 50 g; nhân 40 g/cái + 1 trứng cút/cái (mẻ 10 cái: thịt 200 g); nhân trộn sống, chiên ngập dầu lửa vừa."
+    },
+    {
+      "url": "https://nauankhongkho.vn/blog/tong-hop-2-cach-lam-banh-goi-don-gian-cho-mon-an-vat-tai-nha-0nX11JozPD8z",
+      "accessed": "2026-10-31",
+      "note": "Nấu Ăn Không Khó: vỏ bột mì 250 g + bột gạo 50 g + trứng 2 quả; nhân thịt 500 g, nấm mèo 30 g, nấm đông cô 30 g, củ sắn 30 g, cà rốt 30 g, hành tây 30 g; nhân trộn sống, chiên ngập dầu."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/banh-goi.webp",
@@ -146,7 +198,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [Đính chính 2026-10-31 — Phương án A/QA-002: dau-an 10 g → 3 g. Chỉ giữ phần dầu cho bước phụ có thật trong công thức (xào nhân thịt/mộc nhĩ/miến/cà rốt trước khi gói) — mức 3 g/khẩu phần là định lượng chế biến cho bước phi/xào nhanh, phần dầu này ăn vào cùng nhân/sốt. Dầu chiên chính không kê nữa: đã được engine mô hình hoá theo CALC-004.]",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [Đính chính 2026-10-31 — Phương án A/QA-002: dau-an 10 g → 3 g. Chỉ giữ phần dầu cho bước phụ có thật trong công thức (xào nhân thịt/mộc nhĩ/miến/cà rốt trước khi gói) — mức 3 g/khẩu phần là định lượng chế biến cho bước phi/xào nhanh, phần dầu này ăn vào cùng nhân/sốt. Dầu chiên chính không kê nữa: đã được engine mô hình hoá theo CALC-004.] [LV2-009 đợt 9 (bổ sung): Nâng Mức 2 — mở kiểm chứng 3 họ nguồn (Bluestone, Nghi's Kitchen, Nấu Ăn Không Khó). Thêm bot-gao 10 g vào vỏ (3/3 họ vỏ đều là mì + gạo) kèm bot-mi 55→50 g; thêm trung-cut 24 g (hai họ đúng 1 quả/cái — file thiếu hẳn thành phần nhân định danh), hanh-tay 5 g, nam-huong-kho 3 g (tuỳ chọn). SỬA CĂN CỨ dau-an 3 g: ghi chú cũ nói giữ cho bước xào nhân, nhưng 3/3 họ đều trộn nhân SỐNG — 3 g này là dầu trộn trong vỏ (nguồn 2–2,5 g/khẩu phần), steps viết lại theo nhân sống; dầu chiên ngập không kê theo Phương án A. Vùng giữ 'vn': bánh gối gắn với Hà Nội nhưng 3 họ đã mở không ghi xuất xứ tường minh — đề xuất vn-north + dac-san:ha-noi ghi tại LV2-009 §B.5 chờ chủ dự án. Không thêm cu-dau (chỉ 1/3 họ).]",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

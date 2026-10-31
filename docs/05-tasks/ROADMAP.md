@@ -58,7 +58,9 @@ null + hồ sơ; bổ sung dòng cho `bun-dau-mam-tom` và
 `canh-ca-linh-bong-dien-dien`; thay dòng sai loài `ngo-gai` → `ngai-bun`
 ở `bun-nuoc-leo`; cần tàu dùng slug sẵn có `rau-can-ta`) — kho 425
 nguyên liệu. **Phần B đợt 9: 27/55 món xét đạt Mức 2** (2 vòng tra cứu vì
-429 ở vòng 1) — **tổng 373/657 món Mức 2, còn 284 món Mức 1**; 28 món giữ
+429 ở vòng 1) — **tổng 373/657 món Mức 2, còn 284 món Mức 1**; bổ sung
+5 món bánh (4 đạt, 1 giữ-429) → **tổng cuối 377/657, còn 280 món Mức 1**;
+28+1 món giữ
 có hồ sơ theo nhóm (12 GIỮ-429 làm lại được, 5 thiếu nguồn đúng biến thể,
 3 chờ quyết định danh, 3 trần nguyên liệu/thiếu họ nguồn, 5 không đủ nguồn
 đạt chuẩn); bất thường mới + 3 ca chờ quyết định danh mới gom tại

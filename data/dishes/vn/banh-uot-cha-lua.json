@@ -25,7 +25,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "hap",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -49,7 +49,7 @@
     },
     {
       "ingredient_slug": "bot-nang",
-      "quantity": 10,
+      "quantity": 15,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -121,11 +121,30 @@
     }
   ],
   "recipe_steps": [
-    "Pha bột gạo với bột năng, tráng mỏng trên vải căng nồi hơi, lấy bánh ra phết dầu, cuộn hoặc gấp lại.",
-    "Xếp bánh ra đĩa cùng chả lụa thái lát, giá trụng và húng quế.",
-    "Rắc hành phi, chan nước mắm pha chua ngọt khi ăn."
+    "Hoà bột gạo và bột năng với nước lạnh và chút muối, khuấy tan, để bột lắng 1 giờ; chắt bỏ nước trong, bù nước mới đúng mực cũ — bánh sẽ trong và dẻo hơn.",
+    "Giá đỗ rửa sạch, trụng nhanh nước sôi 20–30 giây, vớt ra xả nước lạnh, để ráo; chả lụa thái lát mỏng vừa ăn.",
+    "Pha nước chấm: nước mắm, đường, nước lọc và nước cốt chanh khuấy tan đường, thả tỏi ớt băm — vị chua ngọt dịu, mặn nhẹ.",
+    "Đun nồi tráng cho nước sôi già, căng vải, quét lớp dầu thật mỏng; múc một vá bột dàn đều thành lớp mỏng, đậy nắp hấp 1–2 phút tới khi mặt bánh trong suốt là chín.",
+    "Dùng thanh tre nhúng nước gỡ bánh ra khay đã quét dầu, cuộn sơ hoặc gấp lại; lặp lại tới hết bột, thỉnh thoảng khuấy lại bột vì bột lắng nhanh.",
+    "Xếp bánh ra đĩa cùng chả lụa, giá trụng và húng quế, rắc hành phi giòn; chan hoặc chấm nước mắm pha, ăn ngay khi bánh còn mềm ấm."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://daylambanh.edu.vn/banh-uot-cha-lua",
+      "accessed": "2026-10-31",
+      "note": "Dạy Làm Bánh Á Âu — Trần Văn Vinh: bột gạo 200 g, tinh bột bắp 75 g, nước 620 ml, chả lụa 200 g (không ghi khẩu phần); chấm mắm 2 muỗng canh + đường 2 muỗng canh. (Bản Cookpad Bạch Thiên sao chép nguyên công thức — cùng họ, không tính thêm.)"
+    },
+    {
+      "url": "http://giavihanhphuc.com/bot-banh/banh-uot-thit-ga-nuong-thu-thu-amp",
+      "accessed": "2026-10-31",
+      "note": "Chef Thư Thư qua Gia Vị Hạnh Phúc: bột gạo 400 g + bột năng 100 g + dầu ăn 50 g + muối 10 g; chấm mắm 100 g + đường 100–120 g; ăn kèm chả lụa, giá trụng, hành phi, húng quế (không ghi khẩu phần)."
+    },
+    {
+      "url": "https://noiphodien123.vn/cach-lam-banh-uot-cha-lua-sieu-ngon-5-new.html",
+      "accessed": "2026-10-31",
+      "note": "Quang Huy, 4–6 người: bột gạo 400 g, bột năng 100 g, chả lụa 200 g (≈40 g chả/khẩu phần ở mốc 5 người)."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/banh-uot-cha-lua.webp",
@@ -136,7 +155,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt)",
+  "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-009 đợt 9 (bổ sung): Nâng Mức 2 — mở kiểm chứng 3 họ nguồn (Dạy Làm Bánh Á Âu — bản Cookpad Bạch Thiên là cùng họ sao chép; Chef Thư Thư/Gia Vị Hạnh Phúc; Quang Huy). Sửa 1 dòng: bot-nang 10→15 g (tỉ lệ tinh bột phụ/tổng bột ở 3/3 họ là 20–27%, file chỉ 12,5% — lấy thận trọng vì một họ dùng tinh bột bắp thay bột năng). Giữ bot-gao 70 g (dải nguồn 50–80 bất đồng lớn) và gio-lua 40 g (khớp tuyệt đối họ Quang Huy 200 g/5 người). Tranh chấp ghi nhận, giữ số file: dầu trong bột (Thư Thư ~10 g/khẩu phần gồm phần quét từng lớp bánh) và đường chấm (hai họ ~6 vs ~22 g). Không thêm dua-leo (chỉ 1 họ liệt kê rõ) và moc-nhi (thuộc phiên bản bánh cuốn — món khác).]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

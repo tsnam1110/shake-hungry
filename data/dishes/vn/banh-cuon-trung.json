@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "hap",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -37,6 +37,14 @@
       "confidence": "low"
     },
     {
+      "ingredient_slug": "bot-nang",
+      "quantity": 20,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
       "ingredient_slug": "trung-ga",
       "quantity": 50,
       "unit_name": "g",
@@ -46,7 +54,7 @@
     },
     {
       "ingredient_slug": "thit-lon-xay",
-      "quantity": 25,
+      "quantity": 35,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -54,7 +62,7 @@
     },
     {
       "ingredient_slug": "moc-nhi-kho",
-      "quantity": 3,
+      "quantity": 5,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -70,7 +78,15 @@
     },
     {
       "ingredient_slug": "nuoc-mam-truyen-thong",
-      "quantity": 8,
+      "quantity": 10,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "duong-trang",
+      "quantity": 4,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -86,11 +102,31 @@
     }
   ],
   "recipe_steps": [
-    "Bột gạo pha nước loãng, để nghỉ 30 phút (có thể pha từ tối hôm trước); nhân thịt xay xào chín với mộc nhĩ. Tổng thời gian làm ~40 phút gồm cả nghỉ bột.",
-    "Tráng bánh trên nồi hơi: đổ bột mỏng, đập trứng lên mặt bánh, đậy nắp hấp khoảng 1 phút cho trứng vừa chín, cuốn lại.",
-    "Dọn bánh ra đĩa, rắc hành phi (từ hành tím phi với dầu), chấm nước mắm pha loãng."
+    "Ngâm mộc nhĩ nước ấm 15–20 phút cho nở, rửa sạch, băm nhỏ; hành tím băm; thịt xay ướp chút nước mắm và tiêu 10 phút.",
+    "Hoà bột gạo và bột năng với nước (tỉ lệ khoảng 3 phần nước : 1 phần bột), để nghỉ ít nhất 30 phút, tốt nhất 1 giờ; trước khi tráng chắt bỏ lớp nước trong trên mặt, bù nước mới và khuấy đều.",
+    "Phi hành tím với dầu cho vàng thơm, cho thịt vào xào lửa lớn 3–4 phút tới khi thịt săn và ráo nước, cho mộc nhĩ vào đảo thêm 1–2 phút, nêm lại rồi tắt bếp — nhân khô ráo mới không làm rách bánh.",
+    "Pha nước chấm: nước mắm, đường, nước ấm và chanh khuấy tan, thả ớt băm; vị mặn ngọt dịu để chấm ngập cuốn.",
+    "Căng vải trên nồi hơi nước sôi già (hoặc chảo chống dính lửa nhỏ quét dầu mỏng), múc một vá bột dàn thật mỏng, đậy nắp khoảng 30 giây cho mặt bánh se lại.",
+    "Đập trứng lên mặt bánh (hoặc rưới trứng đánh tan thành lớp mỏng), đậy nắp thêm khoảng 1 phút — lòng trắng vừa đục, lòng đỏ còn hơi lòng đào, mặt bánh trong là đạt; gỡ bánh ra mâm quét dầu.",
+    "Cho nhân thịt mộc nhĩ vào, cuốn chặt tay thành cuốn vừa ăn; xếp 3–4 cuốn ra đĩa, rắc hành phi nếu có, ăn nóng với nước mắm pha."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://tripi.vn/blog/vi/kinh-nghiem-hay/kham-pha-cong-thuc-lam-banh-cuon-trung-thom-ngon-khong-thua-kem-gi-mon-an-tai-cac-quan-tripi",
+      "accessed": "2026-10-31",
+      "note": "Tripi, 2–4 người: bột gạo 300 g, bột năng 150 g, trứng 4 quả, thịt 200 g, củ sắn 300 g, mộc nhĩ khô 20 g; trứng đánh tan tráng thành lớp trên mặt bánh, nhân thịt–củ sắn, chấm mắm pha. (Bản Cách Nấu Ngon là cùng họ.)"
+    },
+    {
+      "url": "https://eva.vn/bep-eva/bua-sang-nhanh-gon-voi-mon-banh-cuon-trung-c162a319656.html",
+      "accessed": "2026-10-31",
+      "note": "Bếp Eva — Linh Đan: bột gạo 200 g + bột năng 100 g + 4 trứng đập vào bột; nhân thịt, nấm mèo, hành; chấm tỉ lệ đường:mắm 1:1,5 (không ghi khẩu phần)."
+    },
+    {
+      "url": "https://bepxua.vn/lam-banh-cuon-cao-bang-chuan-vi-la-mieng-tai-nha/",
+      "accessed": "2026-10-31",
+      "note": "Bếp Xưa — bánh cuốn Cao Bằng, 4 người: bột gạo 250 g, bột năng 150 g, thịt 400 g; chan nước ninh xương, trứng chần riêng trong bát — khác cách ăn của file, chỉ đối chiếu bột/nhân."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/banh-cuon-trung.webp",
@@ -101,7 +137,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Phân xử độc lập với banh-cuon đã có: bánh cuốn trứng (đặc sản Cao Bằng) đập trứng trực tiếp lên mặt bánh khi tráng — trứng là thành phần cấu trúc của bánh, khác bánh cuốn nhân thịt thông thường, nên tạo món độc lập thay vì biến thể.",
+  "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Phân xử độc lập với banh-cuon đã có: bánh cuốn trứng (đặc sản Cao Bằng) đập trứng trực tiếp lên mặt bánh khi tráng — trứng là thành phần cấu trúc của bánh, khác bánh cuốn nhân thịt thông thường, nên tạo món độc lập thay vì biến thể. [LV2-009 đợt 9 (bổ sung): Nâng Mức 2 — mở kiểm chứng 3 họ nguồn (Tripi, Bếp Eva, Bếp Xưa/Cao Bằng). Thêm bot-nang 20 g (3/3 họ đều có, file thiếu hẳn — lỗi cấu trúc công thức) và duong-trang 4 g (đường của nước chấm — file trước ghi 'mắm pha loãng' mà thiếu đường); sửa thit-lon-xay 25→35 g, moc-nhi-kho 3→5 g, nuoc-mam-truyen-thong 8→10 g sau khi quy đổi về đĩa 200 g của file (mẻ nguồn cho đĩa 350–450 g). trung-ga 50 g giữ nguyên — đồng thuận mạnh nhất: 3/3 họ đều 1 quả/khẩu phần. dau-an giữ 3 g kèm ghi nhận nguồn ghi 11–12 g (gồm dầu pha bột và quét khuôn, phần ăn vào thực tế thấp hơn). BẤT THƯỜNG ĐỊNH DANH chờ chủ dự án (ghi tại LV2-009 §B.5): khẳng định 'đặc sản Cao Bằng' trong ghi chú cũ mâu thuẫn nguồn Cao Bằng đã mở — chuẩn Cao Bằng là chan nước ninh xương + trứng chần riêng, còn kỹ thuật trứng trên mặt bánh + chấm mắm gần với bánh cuốn trứng Lạng Sơn/bản phổ thông. Không thêm cu-dau (củ sắn) dù Tripi dùng 75 g/khẩu phần — chỉ 1/3 họ có.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
