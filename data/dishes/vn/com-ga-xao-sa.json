@@ -131,7 +131,14 @@
       "note": "Cookpad — Phan Bình (gà xào sả ớt): gà ta 300 g, sả 2 củ, gừng 1 nhánh nhỏ, ớt, tỏi; làm 1 đĩa."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/com-ga-xao-sa.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 đợt 2 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 3 nguồn. Phân xử định lượng: GIỮ NGUYÊN TOÀN BỘ — thịt gà 120 g khớp sát hai nguồn mẻ 500 g (~125 g/khẩu phần), đường 3 g khớp nguồn, nước mắm/dầu nằm trong dải nguồn, sả 15 g ở cận trên của dải 7–15 g nhưng số theo \"cây\" sai số lớn. Đây là món khớp nguồn tốt nhất đợt 3. Bất thường nhỏ ghi nhận: hành tím chỉ 1/3 nguồn, gừng chỉ 1/3 nguồn — không bổ sung; biến thể thêm nước nấu cạn của 1 nguồn là thiểu số, file giữ xào khô theo đa số.",

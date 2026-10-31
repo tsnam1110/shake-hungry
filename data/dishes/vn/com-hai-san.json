@@ -164,7 +164,14 @@
       "note": "Nghi's Kitchen qua Gia Vị Hạnh Phúc (5 người, kiểu nhà hàng hải sản điểm xuyết — ngoại lệ thấp): cơm thành phẩm 1000 g, tôm 70 g, mực 70 g, trứng 1 quả, đậu cove."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/com-hai-san.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 đợt 2 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 3 gốc nguồn độc lập (ĐMX và BlueStone trùng một gốc công thức, tính một). Phân xử định lượng: GIỮ NGUYÊN — tôm 60 g và mực 50 g không có đồng thuận đổi (nguồn trải 33–86 g), cơm 200 g nằm giữa dải nguồn. Bất thường ghi nhận chờ pha phân xử: (1) trứng có ở 3/3 gốc nguồn (33–43 g/khẩu phần), file không có dòng trung-ga; (2) tên gọi nguồn là \"cơm chiên\" trong khi file để method xao — GIỮ xao có chủ đích: nếu đổi sang chien, engine sẽ cộng dầu hấp thụ trên tôm/mực theo CALC-004 trong khi dầu xào đã là dòng nguyên liệu ăn vào, gây tính dầu hai lần kiểu Phương án A; (3) dòng bach-tuoc tuỳ chọn không nguồn nào có; hành tây chỉ ở biến thể phụ (nguồn chính phi hành tím + tỏi, file thiếu cả hai); đậu Hà Lan/cove có ở 3 nguồn dạng tuỳ chọn. Phân xử bất thường LV2-003 (Phần A — LV2-004, 2026-10-31): Thêm trung-ga 35 g (3/3 gốc nguồn độc lập đã mở ở đợt 3, dải 33–43 g/khẩu phần) và hanh-tim 5 g + toi 3 g (cả 3 gốc nguồn đều phi thơm bằng hành tím + tỏi, file trước thiếu cả hai). BỎ dòng bach-tuoc tuỳ chọn: 0/3 gốc nguồn có bạch tuộc — dòng không nguồn nào ủng hộ; bước 2–3 đã sửa bỏ bạch tuộc, bước trứng đã bổ sung. Method xao giữ có chủ đích như phân tích đợt 3 (đổi chien sẽ tính dầu hai lần).",

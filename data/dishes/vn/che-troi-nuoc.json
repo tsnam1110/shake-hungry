@@ -115,7 +115,14 @@
       "note": "CET (Chef Lập) — công thức ghi rõ chuẩn miền Nam; đối chiếu đường thốt nốt; biến thể nhân xào hành tím phi."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/che-troi-nuoc.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": {
     "id": "Q2468860",

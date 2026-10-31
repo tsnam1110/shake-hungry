@@ -111,7 +111,14 @@
       "note": "Nồi Phở Điện 123 / Quang Huy (biến thể cơm chiên trứng tỏi): cơm nguội 1 bát, trứng 2 quả, tỏi 1 củ, dầu 1 thìa canh, nước mắm 1 thìa canh."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/com-chien-trung-toi.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Cơm chiên thuộc nhóm tinh bột đã nấu chín rán lại: dầu chiên KÊ trong công thức theo đúng thiết kế CALC-004 (com-trang có hệ số hấp thụ 0 — dầu kê là cơ chế tính dầu duy nhất, không tính trùng); lượng dầu kê 3 g theo tiền lệ com-chien-trung-muoi của kho (rà soát G6). Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 3 nguồn. Phân xử định lượng: toi 5 → 15 g — hai nguồn chuyên biến thể tỏi đồng thuận tỏi phải cao hơn file ít nhất gấp đôi (tỏi là nguyên liệu định danh của món), lấy cận dưới 15 g; dau-an 3 → 8 g — mọi nguồn đều dùng ~7–12 g/khẩu phần để phi tỏi + chiên cơm, và khác với dầu chiên ngập của Phương án A, dầu cơm chiên là nguyên liệu ăn vào trực tiếp nên ghi đè ghi chú cũ của file về mức 3 g; trứng 50 g và cơm 200 g giữ nguyên (không đồng thuận đổi — biến thể tỏi dùng tỉ lệ trứng/cơm còn cao hơn file). Bất thường ghi nhận: 3/3 nguồn nêm nước mắm, 0 nguồn dùng nước tương như file — giữ nước tương của file và ghi nhận để pha phân xử quyết có đổi gia vị nêm hay không.",

@@ -103,7 +103,14 @@
     "Cho cơm vào đảo cùng hến 3–4 phút, nêm lại, rắc rau răm; ăn kèm bánh tráng nướng nếu có."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/com-hen-xao.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Phân xử biến thể: com-hen đã có là cơm hến TRỘN nguội (method tron); bản XÀO nóng là món khác trong thực đơn Huế (cơm hến xào bán phổ biến buổi sáng) — khác method và khác cách ăn, giữ độc lập theo phép thử §3, ghi rõ ở đây để khỏi nhầm trùng.",

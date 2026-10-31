@@ -119,7 +119,14 @@
     "Cho lần lượt đậu xanh, khoai môn, bột báng, mộc nhĩ, phổ tai vào nồi nước cốt dừa, nấu sôi lại rồi múc ra ly, rắc lạc rang nếu thích."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/che-thung.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt)",

@@ -164,7 +164,14 @@
       "note": "Công thức Hội Đầu Bếp Á Âu (tác giả Chef Dung): gà ta khoảng 1kg, gạo tẻ 500g, rau răm 50g, hành tây 1 củ, nửa quả đu đủ xanh; chà nước nghệ lên da gà trước khi luộc, xào lòng gà làm phần nước chan."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/com-ga-hoi-an.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt DISH-004 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): Đã đối chiếu 3 nguồn công thức thật (Điện máy XANH, Cookpad/QUÂN NGUYỄN, Hội Đầu Bếp Á Âu). Định lượng: thịt gà có da 130g/khẩu phần tương đương phần thịt ăn được của 800g-1,2kg gà nguyên con cho 4 người ở các nguồn (khoảng 110-165g thịt có da mỗi người), giữ nguyên; hành tây 25g khớp nguồn (1 củ cho 4 người), giữ nguyên. Cơm chín 200g giữ nguyên dù các nguồn bất đồng về lượng gạo (160-500g mỗi mẻ, quy ra cơm chín khoảng 100-300g/người). Rau răm 5g thấp hơn một nguồn (100g/4 người ở bản người dùng của Điện máy XANH) nhưng các nguồn còn lại chỉ dùng 10-50g cho cả mẻ, nên giữ nguyên và ghi nhận. Phân loại (loai:com, nau, vn-quang-nam, trưa/tối) rà soát, không sai rõ ràng, giữ nguyên. Phân xử bất thường LV2-001 (Phần A, 2026-10-31): thêm du-du-xanh 40 g (gỏi ăn kèm — Hội Đầu Bếp Á Âu dùng nửa quả đu đủ xanh cho mẻ 4 người, khoảng 40–50 g/khẩu phần; Cookpad cũng kèm gỏi đu đủ) và long-ga 25 g (nước mạ — Điện máy XANH có nước mạ lòng gà, Hội Đầu Bếp Á Âu xào lòng gà làm phần nước chan; 1 bộ lòng ~100 g cho mẻ 4 người ≈ 25 g/khẩu phần). Bước 6 của file vốn đã mô tả hai thành phần này ở dạng điều kiện, nay ghi thành dòng nguyên liệu chính thức.",

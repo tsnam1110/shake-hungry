@@ -91,7 +91,14 @@
     "Đổ trứng vào đảo nhanh cho quyện cơm, nêm nước tương, rắc hành lá, ăn nóng."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/com-chien-dua-trung.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Cơm chiên thuộc nhóm tinh bột đã nấu chín rán lại: dầu chiên KÊ trong công thức theo đúng thiết kế CALC-004 (com-trang có hệ số hấp thụ 0 — dầu kê là cơ chế tính dầu duy nhất, không tính trùng); lượng dầu kê 3 g theo tiền lệ com-chien-trung-muoi của kho (rà soát G6). Nghiên cứu Mức 2 đợt 3 (LV2-003, 2026-10-31): GIỮ Mức 1 — không tìm thấy công thức độc lập đúng nguyên dạng \"cơm chiên dưa chua + trứng, không thịt\" có định lượng đầy đủ sau tra cứu mở rộng; các nguồn đã mở chỉ là họ hàng gần nhất (cơm rang dưa bò; biến thể có ngao) dùng đối chiếu tỉ lệ — theo các nguồn đó, dưa 40 g của file ở biên thấp của dải 38–100 g/khẩu phần nhưng trong khoảng, trứng 50 g hợp lý vì là đạm chính duy nhất của món. Ghi nhận kỹ thuật đồng thuận của họ nguồn: xào dưa riêng cho ráo và bớt chua trước khi trộn cơm (bước hiện tại của file đã được đề xuất tách theo hướng này khi có nguồn đúng món); tỏi/hành tím phi thơm có ở các nguồn họ hàng, file thiếu.",
