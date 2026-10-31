@@ -31,6 +31,14 @@
   "edible_portion_note": null,
   "is_ready_to_eat": false,
   "units": [],
+  "media": [
+    {
+      "path": "media/ingredients/ngong-cai.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "low",
   "needs_review": true,
