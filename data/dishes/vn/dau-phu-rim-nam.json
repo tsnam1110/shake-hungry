@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "kho",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -33,7 +33,7 @@
   "serving_grams": 210,
   "ingredients": [
     {
-      "ingredient_slug": "dau-phu",
+      "ingredient_slug": "dau-phu-chien",
       "quantity": 130,
       "unit_name": "g",
       "is_optional": false,
@@ -74,7 +74,7 @@
     },
     {
       "ingredient_slug": "duong-trang",
-      "quantity": 5,
+      "quantity": 7,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -87,18 +87,52 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hat-tieu-den",
+      "quantity": 0.5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "ot-tuoi",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Đậu phụ cắt khối; nấm rơm rửa sạch, cắt đôi quả to.",
-    "Phi hành tím, xào nấm cho thơm, thêm đậu phụ và ít nước.",
-    "Nêm nước tương, đường, rim 8 phút cho thấm, rắc hành lá. Món mặn nhanh: tổng thời gian nấu ~20 phút, nguyên liệu phổ thông."
+    "Nấm rơm gọt chân, ngâm nước muối loãng 5–10 phút, rửa sạch, cắt đôi quả to; đậu phụ chiên cắt miếng vừa ăn.",
+    "Ướp nấm với hành tím băm, nước tương, đường và tiêu khoảng 10 phút cho thấm.",
+    "Phi thơm hành tím với dầu ăn, cho nấm vào xào săn 2–3 phút cho nấm ra nước ngọt.",
+    "Cho đậu phụ chiên vào, châm chút nước, rim lửa nhỏ 7–10 phút đến khi nước rim sánh và áo đều đậu nấm.",
+    "Cho ớt thái lát và hành lá vào, đảo đều, nêm lại vừa ăn rồi tắt bếp."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://vietnamnet.vn/cach-lam-nam-rom-kho-dau-hu-bo-duong-ma-cuc-hao-com-2316847.html",
+      "accessed": "2026-10-31",
+      "note": "VietnamNet: nấm rơm kho đậu hũ dùng đậu hũ chiên sẵn, có ớt và tiêu — neo cho việc đổi sang đậu phụ chiên."
+    },
+    {
+      "url": "https://cachnaungon.com/2-cach-lam-nam-rom-kho-dau-hu-va-kho-chao-bat-com-thom-ngon-04316/",
+      "accessed": "2026-10-31",
+      "note": "Cách Nấu Ngon (đăng lại công thức ĐMX): nấm rơm kho đậu hũ cho 2 người — tỉ lệ đường cao hơn bản cũ."
+    },
+    {
+      "url": "https://www.huongnghiepaau.com/dau-hu-kho-nam-chay",
+      "accessed": "2026-10-31",
+      "note": "Hướng Nghiệp Á Âu: đậu hũ kho nấm rơm — ướp nấm trước với nước tương và đường."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món chay (nước tương, không nước mắm) — bổ sung độ phủ món chính chay.",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món chay (nước tương, không nước mắm) — bổ sung độ phủ món chính chay.  [LV2-004 đợt 4: nâng Mức 2 — đổi dau-phu thành dau-phu-chien (3/3 nguồn đều dùng đậu đã chiên), thêm tiêu 0,5 và ớt tươi 3 (2/2 họ nguồn lượng hoá), đường 5→7. Ghi nhận: 2 trang VietnamNet/Cách Nấu Ngon có đoạn văn gần trùng nhau — tính là 2 họ độc lập có dè dặt.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

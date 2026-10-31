@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "kho",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -42,7 +42,7 @@
     },
     {
       "ingredient_slug": "hanh-tim",
-      "quantity": 5,
+      "quantity": 10,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -66,7 +66,7 @@
     },
     {
       "ingredient_slug": "duong-trang",
-      "quantity": 5,
+      "quantity": 4,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -87,18 +87,52 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-la",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "toi",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Cá trích làm sạch, ướp nước mắm, tiêu 15 phút.",
-    "Phi hành tím, xếp cá vào, thêm ít nước nóng.",
-    "Kho lửa nhỏ 15 phút cho cá thấm; cá trích xương mềm, ăn được cả xương khi kho lâu."
+    "Cá trích cắt bỏ đầu, đánh vảy, móc ruột, rửa sạch, ướp muối khoảng 20–30 phút cho thân cá săn cứng, rửa lại và để ráo.",
+    "Ướp cá với nước mắm, đường, hành tím, tỏi và tiêu khoảng 15 phút.",
+    "Xếp cá vào nồi đất, châm nước sôi xâm xấp, đun sôi rồi hạ lửa nhỏ nhất, kho liu riu.",
+    "Kho 1,5–2 giờ cho xương cá mềm rục; khi nước cạn thì châm thêm nước sôi, không dùng đũa đảo, chỉ nghiêng nồi cho nước kho thấm đều.",
+    "Khi nước kho sệt lại, màu cánh gián, nêm lại vừa ăn, rắc hành lá và tiêu, tắt bếp."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.bluestone.com.vn/blogs/vao-bep/ca-trich-kho-thit-ba-chi",
+      "accessed": "2026-10-31",
+      "note": "BlueStone: cá trích kho (bản thịt ba chỉ) — kho liu riu 1,5–2 giờ cho mềm xương, không đảo cá."
+    },
+    {
+      "url": "https://haisan.online/ca-trich-kho-122329.html",
+      "accessed": "2026-10-31",
+      "note": "Hải Sản Online: cá trích kho rục — kho lâu, châm nước khi cạn, cá mềm xương mà không nát."
+    },
+    {
+      "url": "https://cakholangvudai.com/?p=2835",
+      "accessed": "2026-10-31",
+      "note": "Cá Kho Làng Vũ Đại: cá trích kho rục ba lửa — đối chiếu kỹ thuật kho nhiều lửa và nêm sau."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — thêm hành lá 3 (3/3) và tỏi 3 (2/3), đường 5→4, hành tím 5→10; sửa bước kho: bản cũ ghi 15 phút là mâu thuẫn với chính mô tả mềm xương — nay kho liu riu 1,5–2 giờ theo BlueStone. Bất thường: 2/3 nguồn là biến thể kho thịt ba chỉ — giữ bản kho thường, ba chỉ ghi nhận là biến thể chờ phân xử.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "xao",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -30,11 +30,11 @@
     }
   ],
   "serving_desc": "1 đĩa rau",
-  "serving_grams": 140,
+  "serving_grams": 180,
   "ingredients": [
     {
       "ingredient_slug": "cai-ngot",
-      "quantity": 140,
+      "quantity": 200,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -42,7 +42,7 @@
     },
     {
       "ingredient_slug": "toi",
-      "quantity": 5,
+      "quantity": 8,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -57,8 +57,8 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "nuoc-mam-truyen-thong",
-      "quantity": 4,
+      "ingredient_slug": "muoi",
+      "quantity": 1.5,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -66,15 +66,33 @@
     }
   ],
   "recipe_steps": [
-    "Cải ngọt cắt khúc, tách phần cọng và lá; tỏi đập dập.",
-    "Phi thơm tỏi với dầu, cho cọng cải vào xào trước, nêm nước mắm.",
-    "Cho lá vào xào nhanh tay vừa chín, bày đĩa dùng nóng."
+    "Cải ngọt nhặt, ngâm rửa sạch, cắt khúc, tách riêng phần cọng và phần lá; tỏi đập dập hoặc băm thô.",
+    "Đun chảo thật nóng, cho dầu ăn vào, phi thơm tỏi đến vàng nhẹ.",
+    "Cho phần cọng cải vào xào lửa lớn trước khoảng 1 phút, đảo đều tay.",
+    "Cho phần lá vào, nêm muối, xào nhanh thêm 1–2 phút đến khi cải vừa chín tới, còn xanh giòn.",
+    "Nêm lại vừa ăn, tắt bếp, cho ra đĩa, dùng nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://nauchuananngon.vn/cach-xao-rau-cai-ngot",
+      "accessed": "2026-10-31",
+      "note": "Nấu Chuẩn Ăn Ngon: cải ngọt xào tỏi cho 3–4 người dùng 1 kg rau — nêm muối và hạt nêm, xào lửa lớn khoảng 2 phút."
+    },
+    {
+      "url": "https://saigonesebaguette.vn/cach-xao-rau-cai-ngot/",
+      "accessed": "2026-10-31",
+      "note": "Saigonese Baguette: cải ngọt xào tỏi truyền thống — gia vị nền là muối, hạt nêm, không dùng nước mắm."
+    },
+    {
+      "url": "https://toyenxin.com/blog-1/xao-rau-cai-ngot-vi-cb.html",
+      "accessed": "2026-10-31",
+      "note": "ToyenXin: cải ngọt xào — cho phần cọng vào xào trước, lá vào sau."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — cải 140→200 (bản cũ lấy trọng lượng đĩa chín; nguồn tính rau sống theo khẩu phần cao hơn hẳn), serving→180; tỏi 5→8; bỏ nước mắm (0/3 nguồn) và thêm muối 1,5 — thuộc mẫu hình bất thường hệ thống rau xào ghi ở mục bất thường.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

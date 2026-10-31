@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "xao",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -34,7 +34,7 @@
   "ingredients": [
     {
       "ingredient_slug": "su-su",
-      "quantity": 140,
+      "quantity": 180,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -57,24 +57,58 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "nuoc-mam-truyen-thong",
-      "quantity": 4,
+      "ingredient_slug": "hanh-la",
+      "quantity": 3,
       "unit_name": "g",
       "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "muoi",
+      "quantity": 1,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dau-hao",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": true,
       "source": "llm_suggested",
       "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Su su gọt vỏ, bỏ hạt, thái lát mỏng; tỏi đập dập.",
-    "Phi thơm tỏi với dầu.",
-    "Cho su su vào xào 4–5 phút vừa giòn, nêm nước mắm, dùng nóng."
+    "Su su gọt vỏ, bỏ hạt, thái lát mỏng; ngâm nước muối loãng ít phút cho khỏi thâm và ra bớt nhựa, rửa lại, để ráo; tỏi băm, hành lá cắt nhỏ.",
+    "Phi thơm một phần tỏi với dầu ăn đến vàng nhẹ.",
+    "Cho su su vào xào lửa lớn, đảo đều tay 4–5 phút đến khi su su vừa chín tới, còn giòn.",
+    "Nêm muối (và dầu hào nếu thích), cho phần tỏi còn lại và hành lá vào, đảo nhanh cho dậy mùi.",
+    "Tắt bếp, cho ra đĩa, dùng nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://toyenxin.com/blog-1/xao-su-su-vi-cb.html",
+      "accessed": "2026-10-31",
+      "note": "ToyenXin (mục su su quả xào tỏi): su su gọt vỏ thái lát, nêm muối và hạt nêm, không dùng nước mắm."
+    },
+    {
+      "url": "https://bepmina.vn/mon-viet/ngon-su-su-xao-toi/",
+      "accessed": "2026-10-31",
+      "note": "Bếp Mina: bản ngọn su su — chỉ đối chiếu kỹ thuật tỏi phi hai đợt và nêm muối/bột nêm/nước tương."
+    },
+    {
+      "url": "https://phunutoday.vn/amp/them-1-buoc-ngon-su-su-xao-toi-xanh-muot-gion-ngon-d486356.html",
+      "accessed": "2026-10-31",
+      "note": "Phụ Nữ Today: bản ngọn su su — đối chiếu kỹ thuật chần nhanh qua nước sôi có muối rồi sốc lạnh trước khi xào."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nguyên liệu su su mới biên soạn đợt này từ USDA SR Legacy.",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nguyên liệu su su mới biên soạn đợt này từ USDA SR Legacy.  [LV2-004 đợt 4: nâng Mức 2 — su su 140→180; bỏ nước mắm (0/3 nguồn; thuộc mẫu hình rau xào), thêm muối 1, hành lá 3 và dầu hào 5 tuỳ chọn. Ghi nhận: định lượng neo chính ở nguồn su su quả (ToyenXin), hai nguồn còn lại là biến thể ngọn su su chỉ dùng đối chiếu kỹ thuật.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

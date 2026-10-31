@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "xao",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -58,7 +58,7 @@
     },
     {
       "ingredient_slug": "dau-an",
-      "quantity": 6,
+      "quantity": 10,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -66,7 +66,7 @@
     },
     {
       "ingredient_slug": "nuoc-mam-truyen-thong",
-      "quantity": 8,
+      "quantity": 6,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -87,18 +87,60 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-tim",
+      "quantity": 8,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-la",
+      "quantity": 4,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dau-hao",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Sả băm thật nhuyễn; thịt xay ướp nước mắm.",
-    "Phi sả, tỏi, ớt với dầu cho vàng thơm.",
-    "Cho thịt vào xào lửa lớn, đảo tơi, 7 phút tới khi thịt săn và khô ráo. Món mặn nhanh: tổng thời gian nấu ~15 phút, nguyên liệu phổ thông."
+    "Thịt băm ướp với hành tím băm, tỏi, nước mắm, đường và tiêu khoảng 10 phút.",
+    "Phi thơm sả băm và hành tím với dầu ăn ở lửa vừa cho vàng thơm.",
+    "Cho thịt băm vào xào lửa lớn, đảo tơi cho thịt săn và ra bớt nước.",
+    "Nêm dầu hào, đảo đều, xào thêm 3–4 phút đến khi thịt chín, hơi xém cạnh và thấm sả.",
+    "Rắc hành lá, đảo qua rồi tắt bếp, dùng nóng với cơm."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-thit-bam-xao-sa-10413",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH: thịt băm xào sả có hành tím và hành lá, dầu hào trong gia vị xào."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/8068515",
+      "accessed": "2026-10-31",
+      "note": "Cookpad: thịt băm xào sả ớt — đối chiếu tỉ lệ sả và dầu."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/15367122",
+      "accessed": "2026-10-31",
+      "note": "Cookpad: biến thể thịt băm xào sả, nêm nước mắm thấp hơn bản cũ."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — thêm hành tím 8, hành lá 4 (3/3) và dầu hào 5 (2/3); dầu 6→10, mắm 8→6 theo nguồn.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

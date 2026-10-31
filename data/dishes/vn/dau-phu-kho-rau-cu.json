@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "kho",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -103,18 +103,44 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "toi",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Đậu phụ cắt miếng vừa ăn, chiên sơ hoặc để nguyên tùy thích; khoai tây, cà rốt gọt vỏ cắt khúc, nấm rơm rửa sạch.",
-    "Phi thơm hành tím với dầu, cho khoai tây và cà rốt vào xào săn, thêm nước tương, đường và khoảng 150 ml nước, kho lửa nhỏ 10 phút.",
-    "Cho đậu phụ và nấm rơm vào kho thêm 7–8 phút cho thấm, rắc tiêu, dùng nóng với cơm."
+    "Đậu phụ cắt miếng vừa ăn, chiên sơ cho săn mặt (hoặc để nguyên nếu thích mềm); khoai tây, cà rốt gọt vỏ cắt khúc, nấm rơm rửa sạch cắt đôi.",
+    "Phi thơm hành tím và tỏi với dầu ăn, cho khoai tây và cà rốt vào xào săn 3–4 phút.",
+    "Cho nấm rơm và đậu phụ vào, nêm nước tương, đường và tiêu, đảo nhẹ tay.",
+    "Châm nước xâm xấp, kho lửa nhỏ 15–20 phút đến khi rau củ mềm và đậu thấm gia vị.",
+    "Nêm lại vừa ăn, tắt bếp, dùng nóng với cơm."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://congthucgiadinh.com/mon-an/dau-hu-kho-rau-cu-chay",
+      "accessed": "2026-10-31",
+      "note": "Công Thức Gia Đình: đậu hũ kho rau củ chay — xào hành tím, tỏi, gừng trước, kho 15–20 phút."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/10645594",
+      "accessed": "2026-10-31",
+      "note": "Cookpad (Đậu Hũ Kho Chay, 4 người): phi hành tỏi, rau củ xào săn trước khi kho cùng đậu."
+    },
+    {
+      "url": "https://paradisefood.vn/cach-lam-dau-hu-kho-chay-voi-rau-cu/",
+      "accessed": "2026-10-31",
+      "note": "Paradise Food: đậu hũ kho chay với rau củ — tỏi phi thơm là bước nền (2/3 họ nguồn)."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món chay thuần: toàn bộ nguyên liệu có origin thực vật/nấm, gia vị chỉ dùng nước tương/muối/chao đậu — không nước mắm, không hạt nêm/bột canh (nhóm COMPOSITE_ANIMAL tính là mặn), không trứng/sữa; nhãn diet suy từ thành phần phải ra chay và đã kiểm chứng trực tiếp trong DB sau seed (cổng G3/G6 của đợt).",
+  "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món chay thuần: toàn bộ nguyên liệu có origin thực vật/nấm, gia vị chỉ dùng nước tương/muối/chao đậu — không nước mắm, không hạt nêm/bột canh (nhóm COMPOSITE_ANIMAL tính là mặn), không trứng/sữa; nhãn diet suy từ thành phần phải ra chay và đã kiểm chứng trực tiếp trong DB sau seed (cổng G3/G6 của đợt).  [LV2-004 đợt 4: nâng Mức 2 — thêm tỏi 3 (2/3 họ nguồn có tỏi trong phần xào nền); giữ nguyên định lượng còn lại vì nguồn phân tán theo khẩu phần chay khác nhau, không đủ đồng thuận để sửa.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

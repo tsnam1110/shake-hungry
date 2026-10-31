@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -34,7 +34,7 @@
   "ingredients": [
     {
       "ingredient_slug": "bap-cai",
-      "quantity": 100,
+      "quantity": 120,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -42,7 +42,7 @@
     },
     {
       "ingredient_slug": "thit-lon-xay",
-      "quantity": 70,
+      "quantity": 50,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -50,7 +50,7 @@
     },
     {
       "ingredient_slug": "moc-nhi-kho",
-      "quantity": 5,
+      "quantity": 4,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -103,18 +103,44 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "gio-song",
+      "quantity": 25,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Lá bắp cải tách nguyên lá, trụng nước sôi cho mềm; hành lá trụng riêng làm dây buộc.",
-    "Trộn thịt băm với mộc nhĩ ngâm nở băm nhỏ, hành tím, muối và tiêu; gói vào lá bắp cải, buộc lại.",
-    "Đun nước dùng sôi nhẹ, thả cuốn bắp cải vào nấu chín, nêm nước mắm, dùng nóng."
+    "Lá bắp cải tách nguyên lá, chần nước sôi cho mềm dẻo, vớt ra để ráo, cắt bỏ phần cuống dày.",
+    "Trộn nhân: thịt xay, giò sống, mộc nhĩ băm, hành tím băm, nêm nước mắm, muối và tiêu, quết đều cho nhân dai.",
+    "Trải lá bắp cải, cho nhân vào giữa, cuộn chặt tay thành cuốn vừa ăn; buộc bằng hành lá chần nếu cần.",
+    "Đun sôi nước, phi thơm hành tím với dầu ăn, thả các cuốn bắp cải vào nấu lửa vừa 12–15 phút cho nhân chín.",
+    "Nêm lại nước canh vừa ăn, tắt bếp, dùng nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://toyenxin.com/blog-1/cach-lam-canh-bap-cai-cuon-thit-vi-cb.html",
+      "accessed": "2026-10-31",
+      "note": "ToyenXin: canh bắp cải cuộn thịt — 500 g bắp cải, nhân thịt 200 g trộn giò sống 100 g; khối công thức thứ hai ghi thịt 300 g, nấm mèo khô 20 g sau ngâm."
+    },
+    {
+      "url": "https://toyenxin.com/blog-1/bap-cai-cuon-thit-canh-vi-cb.html",
+      "accessed": "2026-10-31",
+      "note": "ToyenXin (khối công thức chính): bắp cải cuộn thịt — thịt 200 g trộn giò sống 200 g, nước dùng nấu trực tiếp bằng nước lọc với hành tím."
+    },
+    {
+      "url": "https://anngon3mien.com/cach-nau-canh-bap-cai.html",
+      "accessed": "2026-10-31",
+      "note": "Ăn Ngon 3 Miền: bắp cải cuộn thịt bản SỐT CÀ CHUA (biến thể) — thịt 400 g không giò sống; chỉ đối chiếu định lượng bắp cải và mộc nhĩ, không theo biến thể sốt."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 CÓ ĐIỀU KIỆN về nguồn — nhà ToyenXin chiếm đa số trong các nguồn đã mở, biến thể AnNgon sốt cà chua không tính là cùng món; bắp cải 100→120, tách nhân thịt 70 thành thịt 50 + giò sống 25 (2/3 khối công thức họ nguồn chính trộn giò sống — tiền lệ banh-canh-nam-pho), mộc nhĩ 5→4. Giò sống chưa có số (hồ sơ Phần A) nên phần calo chờ.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "xao",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -87,18 +87,52 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dau-hao",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "ot-tuoi",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Vịt chặt miếng, xát gừng và muối cho bớt hôi, rửa sạch, ướp nước mắm.",
-    "Phi hành tím, gừng thái sợi với dầu.",
-    "Cho vịt vào rang lửa vừa 15 phút tới khi thịt săn, hơi xém, nêm lại. Món mặn nhanh: tổng thời gian nấu ~30 phút, nguyên liệu phổ thông."
+    "Vịt làm sạch, chà muối và gừng giã để khử mùi, rửa lại, chặt miếng vừa ăn, để ráo.",
+    "Ướp vịt với nước mắm, đường, hành tím băm và một phần gừng băm khoảng 15–20 phút.",
+    "Cho vịt vào chảo rang lửa vừa, đảo đều cho vịt săn lại và ra bớt mỡ, chắt bỏ mỡ thừa nếu nhiều.",
+    "Thêm phần gừng còn lại, dầu hào và ớt, tiếp tục rang đến khi vịt chín vàng cạnh, nước rang keo lại.",
+    "Nêm lại vừa ăn, rắc tiêu nếu thích, tắt bếp và dùng nóng với cơm."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://amthuchuongque.com/cach-lam/vit-rang-gung",
+      "accessed": "2026-10-31",
+      "note": "Ẩm Thực Hương Quê: vịt rang gừng, rang cho vịt săn và ra bớt mỡ trước khi nêm."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/6640195",
+      "accessed": "2026-10-31",
+      "note": "Cookpad: vịt rang gừng có ớt và dầu hào trong gia vị rang."
+    },
+    {
+      "url": "https://bepxua.vn/vit-rang-sa-gung",
+      "accessed": "2026-10-31",
+      "note": "Bếp Xưa: biến thể vịt rang sả gừng — chỉ đối chiếu kỹ thuật rang, không dùng cho định lượng bản gừng."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — thêm dầu hào 5 và ớt tươi 3 (2/3 nguồn). Bất thường giữ nguyên: hạt tiêu 0,5 trong file nhưng 0/3 nguồn nhắc tiêu — giữ vì lượng nhỏ và hợp khẩu vị rang gừng, chờ chủ dự án phân xử nếu rà soát lại.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

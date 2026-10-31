@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -42,7 +42,7 @@
     },
     {
       "ingredient_slug": "thit-ga-co-da",
-      "quantity": 50,
+      "quantity": 75,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -89,14 +89,6 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "rau-mui",
-      "quantity": 2,
-      "unit_name": "g",
-      "is_optional": false,
-      "source": "llm_suggested",
-      "confidence": "low"
-    },
-    {
       "ingredient_slug": "gung",
       "quantity": 2,
       "unit_name": "g",
@@ -119,18 +111,60 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "tom-kho",
+      "quantity": 12,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "xa-bau",
+      "quantity": 10,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "rau-ram",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Luộc gà lấy nước dùng trong, xé thịt nhỏ; nấm hương ngâm nở thái chỉ.",
-    "Tráng trứng mỏng thái chỉ; giò lụa thái chỉ.",
-    "Trụng bún, xếp gà, giò, trứng, nấm lên trên, chan nước dùng, thêm vài giọt mắm tôm."
+    "Ninh nước dùng: xương heo và gà luộc cùng hành nướng, hớt bọt cho thật trong; cho tôm khô và mực khô nướng vào ninh tiếp cho ngọt thơm, nêm muối và nước mắm nhẹ.",
+    "Gà vớt ra xé sợi; trứng tráng mỏng thái chỉ; giò lụa thái chỉ; tôm khô ngâm mềm, giã bông làm ruốc tôm.",
+    "Củ cải khô (xá bấu) ngâm nở, vắt ráo, trộn với nước mắm, đường, giấm, gừng và ớt, để thấm ít nhất 30 phút.",
+    "Trụng bún cho vào tô, xếp gà, giò, trứng, ruốc tôm và xá bấu quanh tô, rắc hành lá và rau răm.",
+    "Chan nước dùng thật nóng, thêm chút mắm tôm ở giữa tô nếu thích, dùng ngay."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://nauankhongkho.vn/blog/cach-nau-bun-thang-dam-da-chuan-vi-am-thuc-ha-thanh-r6rooYxZ3YXg",
+      "accessed": "2026-10-31",
+      "note": "Nấu Ăn Không Khó: bún thang Hà Nội — ruốc tôm khô, củ cải khô (xá bấu) ướp, rau răm; nước dùng ninh gà, xương, tôm khô và mực khô."
+    },
+    {
+      "url": "https://eva.vn/bep-eva/cach-nau-bun-thang-ngon-dung-vi-ha-noi-don-gian-de-lam-tai-nha-c162a441776.html",
+      "accessed": "2026-10-31",
+      "note": "Bếp Eva: bún thang — tôm khô chia phần ninh nước dùng và phần giã ruốc, củ cải khô 50 g cho nồi."
+    },
+    {
+      "url": "https://daynauan.info.vn/bun-thang",
+      "accessed": "2026-10-31",
+      "note": "Dạy Nấu Ăn: bún thang chuẩn vị — xếp gà, giò, trứng, ruốc tôm quanh tô, rau răm và hành lá rắc mặt."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. THIẾU NGUYÊN LIỆU: củ cải khô muối (xá bấu) (vai trò phụ) — cần bổ sung vào kho.",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. THIẾU NGUYÊN LIỆU: củ cải khô muối (xá bấu) (vai trò phụ) — cần bổ sung vào kho.  [LV2-004 đợt 4: nâng Mức 2 — thêm tôm khô 12, xá bấu 10, rau răm 3 (đều 4/4 nguồn mở được) và bỏ rau mùi (0/4); gà 50→75. Giữ bún 120 theo quy ước sợi hiện tại của kho — quy ước lượng sợi toàn kho vẫn là câu hỏi mở chờ chủ dự án.]",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

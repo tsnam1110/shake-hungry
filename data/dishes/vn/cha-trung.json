@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "hap",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -30,11 +30,11 @@
     }
   ],
   "serving_desc": "1 miếng (suất cơm tấm)",
-  "serving_grams": 110,
+  "serving_grams": 125,
   "ingredients": [
     {
       "ingredient_slug": "trung-ga",
-      "quantity": 50,
+      "quantity": 70,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -87,14 +87,48 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-tim",
+      "quantity": 6,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "mien-dong",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Trộn thịt xay, trứng, mộc nhĩ.",
-    "Hấp chín, phết lòng đỏ.",
-    "Cắt miếng."
+    "Mộc nhĩ ngâm nở, rửa sạch, băm nhỏ; miến ngâm mềm, cắt khúc ngắn; hành tím băm nhuyễn.",
+    "Trộn thịt xay với mộc nhĩ, miến, hành tím, hành lá, nước mắm, đường và tiêu; cho trứng vào trộn đều nhẹ tay.",
+    "Quét dầu mỏng vào khuôn hoặc đĩa sâu, đổ hỗn hợp vào, dàn phẳng mặt.",
+    "Hấp cách thuỷ 20–30 phút đến khi chả chín, mặt se lại, xăm tăm thấy không dính.",
+    "Để chả nguội bớt rồi cắt miếng vừa ăn; biến thể cơm tấm có thể quét thêm lòng đỏ lên mặt và hấp vài phút cho vàng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://giadinh.suckhoedoisong.vn/trung-pha-thit-roi-dem-hap-theo-cach-nay-cuc-ngon-de-lam-bat-mat-172211130175624769.htm",
+      "accessed": "2026-10-31",
+      "note": "Gia đình & SKĐS: chả trứng thịt cho 3 người (bản thịt gà) — 5 trứng, 150 g thịt, mộc nhĩ khô 15 g, bún tàu khô 10 g, hành tím 20 g."
+    },
+    {
+      "url": "https://saigonesebaguette.vn/cach-lam-cha-trung-thit-hap/",
+      "accessed": "2026-10-31",
+      "note": "Saigonese Baguette: chả trứng hấp — 6 trứng, 180 g thịt, mộc nhĩ khô 18 g, miến 12 g, hành tím 25 g; hấp 20–25 phút."
+    },
+    {
+      "url": "https://thewaterman.vn/blogs/mon-ngon/cach-nau-cha-trung-com-tam-sai-gon",
+      "accessed": "2026-10-31",
+      "note": "The Waterman: chả trứng cơm tấm Sài Gòn — 150 g thịt, 4 trứng vịt, mộc nhĩ khô 25 g, hấp 30 phút."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": {
@@ -102,7 +136,7 @@
     "source": "wikidata",
     "queried_at": "2026-08-31"
   },
-  "import_note": "Nhập tự động từ Wikidata Q54371849 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Gợi ý nguyên liệu từ Wikidata (tiếng Anh, CHƯA ánh xạ sang data/ingredients/): egg as food, pork. Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Nhập tự động từ Wikidata Q54371849 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Gợi ý nguyên liệu từ Wikidata (tiếng Anh, CHƯA ánh xạ sang data/ingredients/): egg as food, pork. Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — trứng 50→70 (nguồn quy về khẩu phần 75–83 g), thêm hành tím 6 và miến dong 3 (đều 3/3 nguồn), serving 110→125. Ghi nhận: 1 nguồn dùng trứng vịt — giữ trứng gà theo định danh món.]",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

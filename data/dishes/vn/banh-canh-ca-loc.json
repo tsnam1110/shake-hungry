@@ -25,7 +25,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -50,14 +50,6 @@
     {
       "ingredient_slug": "ca-loc",
       "quantity": 100,
-      "unit_name": "g",
-      "is_optional": false,
-      "source": "llm_suggested",
-      "confidence": "low"
-    },
-    {
-      "ingredient_slug": "cha-ca-vien",
-      "quantity": 20,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -110,18 +102,52 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-tim",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hat-dieu-mau",
+      "quantity": 1,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Luộc cá lóc, gỡ thịt, giữ lại nước luộc làm nước dùng, nêm vừa ăn.",
-    "Trụng sợi bánh canh cho vào tô.",
-    "Xếp thịt cá và chả cá, chan nước dùng, rắc hành ngò và tiêu."
+    "Cá lóc làm sạch, chà muối và rượu trắng khử tanh; luộc hoặc hấp cá trong nồi nước dùng, vớt ra gỡ thịt, giữ xương và đầu cá ninh tiếp lấy nước ngọt, lọc trong.",
+    "Ướp thịt cá với nước mắm, tiêu, hành tím băm khoảng 10–15 phút; xào sơ cho cá săn và thơm.",
+    "Phi thơm hành tím, cho hạt điều màu vào thắng lấy dầu màu, trút vào nồi nước dùng, nêm muối, đường phèn và nước mắm vừa ăn.",
+    "Trụng sợi bánh canh đến khi sợi trong và nổi, cho vào tô.",
+    "Xếp thịt cá lên trên, chan nước dùng nóng, rắc hành lá, rau mùi và tiêu, dùng nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://anngon3mien.com/cach-nau-banh-canh-ca-loc.html",
+      "accessed": "2026-10-31",
+      "note": "Ăn Ngon 3 Miền: bánh canh cá lóc miền Tây — hành tím 50 g cho 1 kg cá, cá ướp rồi chiên hoặc nấu trực tiếp, không có chả cá viên."
+    },
+    {
+      "url": "https://lppetrol.vn/mon-ngon-3-mien/hoc-ngay-cach-nau-banh-canh-ca-loc-thom-ngon-duom-vi",
+      "accessed": "2026-10-31",
+      "note": "LP Petrol: bánh canh cá lóc — phi hành, cho bột điều (hạt điều màu) tạo màu nước dùng."
+    },
+    {
+      "url": "https://banhngotphap.vn/cach-nau-banh-canh-ca-loc-mien-tay/",
+      "accessed": "2026-10-31",
+      "note": "Bánh Ngọt Pháp: bánh canh cá lóc miền Tây — nước dùng ninh đầu và xương cá, thịt cá ướp nước mắm tiêu."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu).",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu).  [LV2-004 đợt 4: nâng Mức 2 — bỏ chả cá viên 20 (0/3 nguồn — bản cũ lẫn thành phần của món khác), thêm hành tím 5 (3/3) và hạt điều màu 1 (3/3 nguồn dùng điều màu tạo màu nước dùng).]",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

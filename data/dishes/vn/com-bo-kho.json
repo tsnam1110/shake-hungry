@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "kho",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -42,7 +42,7 @@
     },
     {
       "ingredient_slug": "thit-bo-nam",
-      "quantity": 120,
+      "quantity": 160,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -119,18 +119,84 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hoa-hoi",
+      "quantity": 0.5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "bot-que",
+      "quantity": 0.5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "toi",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-tim",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nuoc-dua-tuoi",
+      "quantity": 60,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hung-que",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Ướp thịt bò nạm với nước mắm, đường, ngũ vị hương và sả.",
-    "Kho bò với cà rốt và hành tây đến khi thịt mềm, nước sánh.",
-    "Chan bò kho lên cơm trắng, rắc rau mùi và tiêu."
+    "Thịt bò nạm cắt miếng vừa ăn, ướp với nước mắm, đường, tỏi băm, hành tím, sả băm, ngũ vị hương và chút dầu ăn 30 phút.",
+    "Phi thơm sả, tỏi, hành tím; cho hoa hồi và quế vào rang thơm, cho thịt bò vào xào săn cho thấm gia vị.",
+    "Châm nước dừa tươi và nước lọc xâm xấp, kho lửa nhỏ 45–60 phút đến khi bò mềm.",
+    "Cho cà rốt và hành tây vào kho thêm 15 phút cho chín mềm, nêm lại vừa ăn, nước kho hơi sánh.",
+    "Múc bò kho ra tô, rắc rau mùi, húng quế và tiêu; dùng với cơm trắng (món cơm bò kho) hoặc bánh mì."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://monngon.tv/cach-nau-bo-kho.html",
+      "accessed": "2026-10-31",
+      "note": "Món Ngon TV: bò kho có hoa hồi, quế, nước dừa và rau húng quế ăn kèm."
+    },
+    {
+      "url": "https://www.wokme.com/recipe/bo-kho.htm",
+      "accessed": "2026-10-31",
+      "note": "Wok Me (Bo Kho): đối chiếu gia vị hồi/quế và thời gian kho bò mềm."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/11024889",
+      "accessed": "2026-10-31",
+      "note": "Cookpad: bò kho gia đình — tỏi, hành tím trong phần ướp 3/3 nguồn."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 đợt 2 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 đợt 2 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — bò 120→160, thêm hoa hồi 0,5 và bột quế 0,5 (3/3 nguồn dùng hồi/quế nguyên cây — kho ghi bằng bột quế tương đương), tỏi 5, hành tím 5 (3/3), nước dừa 60 (2/3), húng quế 3 ăn kèm. Dầu điều tạo màu: giữ dầu ăn, ghi nhận như bánh canh Nam Phổ.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

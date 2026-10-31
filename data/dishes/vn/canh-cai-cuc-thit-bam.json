@@ -25,7 +25,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -70,18 +70,44 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dau-an",
+      "quantity": 4,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Cải cúc nhặt rửa sạch, cắt khúc; thịt băm ướp chút nước mắm.",
-    "Đun sôi nước, cho thịt băm vào khuấy tan, hớt bọt.",
-    "Cho cải cúc vào nấu 1–2 phút vừa chín tới, nêm lại, dùng nóng."
+    "Cải cúc nhặt, ngâm rửa sạch, cắt khúc vừa ăn; thịt băm ướp chút nước mắm và tiêu.",
+    "Phi thơm hành tím với dầu ăn, cho thịt băm vào xào tơi cho săn.",
+    "Châm nước vừa tô, đun sôi, hớt bọt.",
+    "Cho cải cúc vào nấu 2–3 phút đến khi cải vừa mềm, còn xanh.",
+    "Nêm lại vừa ăn, tắt bếp ngay để cải không úa và ra nước."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://bepmina.vn/mon-viet/canh-cai-cuc-thit-bam/",
+      "accessed": "2026-10-31",
+      "note": "Bếp Mina: canh cải cúc thịt băm — phi hành, xào thịt băm trước khi nấu nước."
+    },
+    {
+      "url": "https://www.bluestone.com.vn/blogs/vao-bep/canh-cai-cuc-thit-bam",
+      "accessed": "2026-10-31",
+      "note": "BlueStone: đối chiếu bước xào thịt với dầu và lượng cải theo tô."
+    },
+    {
+      "url": "https://cachnaumonngon.com/canh-cai-cuc-thit-bam-3-1972.html",
+      "accessed": "2026-10-31",
+      "note": "Cách Nấu Món Ngon: canh cải cúc thịt băm, cải cho sau cùng nấu vừa chín tới."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — thêm dầu ăn 4 (3/3 nguồn đều phi hành/xào thịt bằng dầu; bản cũ thiếu hẳn dòng dầu).]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

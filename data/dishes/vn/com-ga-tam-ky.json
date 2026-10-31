@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -50,7 +50,7 @@
     },
     {
       "ingredient_slug": "sa",
-      "quantity": 10,
+      "quantity": 3,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -58,7 +58,7 @@
     },
     {
       "ingredient_slug": "hanh-tim",
-      "quantity": 10,
+      "quantity": 6,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -74,7 +74,7 @@
     },
     {
       "ingredient_slug": "dau-an",
-      "quantity": 8,
+      "quantity": 5,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -105,16 +105,64 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "la-chanh",
-      "quantity": 1,
+      "ingredient_slug": "bot-nghe",
+      "quantity": 0.5,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
     },
     {
-      "ingredient_slug": "bot-nghe",
-      "quantity": 0.5,
+      "ingredient_slug": "hanh-tay",
+      "quantity": 30,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "gung",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "chanh",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "duong-trang",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dua-leo",
+      "quantity": 30,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "ca-chua",
+      "quantity": 30,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "rau-mui",
+      "quantity": 2,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -122,15 +170,33 @@
     }
   ],
   "recipe_steps": [
-    "Luộc gà với sả và nghệ, lấy nước dùng nấu cơm cho thơm vàng nhẹ.",
-    "Xé gà, trộn với hành tím, rau răm, lá chanh thái chỉ, nước mắm và ớt kiểu Tam Kỳ.",
-    "Xới cơm ra đĩa, xếp gà trộn lên trên, dọn kèm nước mắm gừng."
+    "Gà làm sạch, luộc trong nước có gừng, sả và muối đến khi chín; vớt gà ra ngâm nước lạnh cho da giòn, xé miếng vừa ăn, giữ lại nước luộc.",
+    "Gạo vo sạch, nấu cơm bằng nước luộc gà pha bột nghệ cho cơm vàng thơm.",
+    "Gà xé trộn với hành tây thái mỏng, rau răm, muối tiêu và nước cốt chanh cho thấm vị.",
+    "Pha nước mắm gừng: nước mắm, đường, chanh, gừng giã và ớt, nêm chua mặn ngọt hài hoà.",
+    "Xới cơm ra đĩa, xếp gà trộn lên trên, ăn kèm dưa leo, cà chua và rau mùi, chan nước mắm gừng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://hoidaubepaau.com/com-ga-tam-ky/",
+      "accessed": "2026-10-31",
+      "note": "Hội Đầu Bếp Á Âu: cơm gà Tam Kỳ — gà luộc nước gừng sả, cơm nấu nước luộc gà với nghệ, ăn kèm dưa leo, cà chua và nước mắm gừng chanh."
+    },
+    {
+      "url": "https://nauankhongkho.vn/blog/cach-nau-com-ga-tam-ky-9KX3Y1DQv1oD",
+      "accessed": "2026-10-31",
+      "note": "Nấu Ăn Không Khó: đối chiếu thành phần đĩa cơm gà Tam Kỳ."
+    },
+    {
+      "url": "https://tunaucom123.com.vn/cach-nau-com-ga-tam-ky-2029.html",
+      "accessed": "2026-10-31",
+      "note": "Tự Nấu Cơm 123: cơm gà Tam Kỳ có hành tây trộn gà xé và rau răm."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt DISH-004 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt DISH-004 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — bỏ lá chanh (0/3 nguồn), thêm hành tây 30, gừng 5, chanh 5, đường 3, dưa leo 30 (đều 3/3), cà chua 30 và rau mùi 2 (2/3); sả 10→3, hành tím 10→6, dầu 8→5 theo tỉ lệ nguồn.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

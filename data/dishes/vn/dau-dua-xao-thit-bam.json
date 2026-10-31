@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "xao",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -74,15 +74,33 @@
     }
   ],
   "recipe_steps": [
-    "Đậu đũa bẻ khúc 4–5 cm, rửa sạch; thịt băm ướp nước mắm.",
-    "Phi tỏi, xào thịt băm tơi và săn.",
-    "Cho đậu đũa vào xào 4–5 phút vừa chín, nêm lại, dùng nóng."
+    "Đậu đũa tước xơ, cắt khúc 3–4 cm, rửa sạch; trụng sơ trong nước sôi 1–3 phút cho đậu xanh và bớt hăng, vớt ra ngâm lạnh, để ráo. Thịt băm ướp chút nước mắm và tiêu.",
+    "Phi thơm tỏi với dầu ăn, cho thịt băm vào xào lửa lớn, đảo tơi đến khi thịt săn và chín.",
+    "Cho đậu đũa vào xào cùng 5–7 phút, đảo đều tay cho đậu chín tới mà vẫn giòn.",
+    "Nêm nước mắm vừa ăn (có thể thêm chút đường cân vị), đảo đều thêm ít giây.",
+    "Tắt bếp, cho ra đĩa, dùng nóng với cơm."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://memart.vn/tin-tuc/blog2/dau-dua-xao-thit-bam-vi-cb.html",
+      "accessed": "2026-10-31",
+      "note": "Memart: đậu đũa 300 g xào thịt băm 150 g — trụng đậu trước, xào thịt với lửa lớn 5–7 phút."
+    },
+    {
+      "url": "https://saigonesebaguette.vn/cach-xao-dau-dua-ngon/",
+      "accessed": "2026-10-31",
+      "note": "Saigonese Baguette: bản đậu đũa xào thịt băm CAY cho 3 người — đậu 200 g, thịt 100 g, dầu 2 muỗng canh."
+    },
+    {
+      "url": "https://toyenxin.com/blog-1/xao-dau-dua-vi-cb.html",
+      "accessed": "2026-10-31",
+      "note": "ToyenXin (mục đậu đũa xào thịt băm 2.2): đối chiếu kỹ thuật — đậu làm sạch cắt 3–4 cm, xào thịt nêm dầu hào hoặc nước mắm tuỳ khẩu vị."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nguyên liệu đậu đũa mới biên soạn đợt này từ USDA SR Legacy (yardlong bean).",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nguyên liệu đậu đũa mới biên soạn đợt này từ USDA SR Legacy (yardlong bean).  [LV2-004 đợt 4: nâng Mức 2 — giữ nguyên định lượng (nguồn quy về khẩu phần: đậu 67–150, thịt 33–75 — bản kho nằm trong dải); ghi bất thường nhẹ: nguồn nêm muối/dầu hào là chính — mắm 4 giữ theo tiền lệ và theo một phần nguồn. Bản cay của Saigonese là biến thể, không đưa ớt vào bản chuẩn.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

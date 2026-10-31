@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "kho",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -30,11 +30,11 @@
     }
   ],
   "serving_desc": "1 phần",
-  "serving_grams": 200,
+  "serving_grams": 130,
   "ingredients": [
     {
       "ingredient_slug": "ca-linh",
-      "quantity": 150,
+      "quantity": 75,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -66,7 +66,7 @@
     },
     {
       "ingredient_slug": "hanh-tim",
-      "quantity": 8,
+      "quantity": 3,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -95,18 +95,52 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dau-an",
+      "quantity": 8,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nuoc-mau",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Cá linh làm sạch ruột, rửa nhẹ tay, ướp nước mắm, đường và tiêu.",
-    "Thắng đường, phi hành tỏi rồi xếp cá vào nồi đất.",
-    "Kho lửa liu riu đến khi cá thấm và nước keo lại, rắc hành lá và tiêu."
+    "Cá linh cắt mang, bỏ ruột nhẹ tay, rửa sạch với nước muối, để ráo (cá nhỏ, thao tác nhẹ để không nát).",
+    "Ướp cá với nước mắm, đường, tiêu, hành tím, tỏi băm, ớt và nước màu trong 15–20 phút.",
+    "Phi thơm tỏi với dầu ăn trong nồi đất, xếp cá vào cho săn mặt.",
+    "Châm chút nước, kho lửa liu riu 15–20 phút, không đảo mạnh tay, chỉ nghiêng nồi cho cá thấm đều.",
+    "Khi nước kho sệt và cá bóng màu cánh gián, rắc hành lá và thêm tiêu, tắt bếp."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://tiphay.vn/bai-viet/chia-se-cach-lam-ca-linh-kho-tieu-chuan-vi-mien-song-nuoc-p2958.html",
+      "accessed": "2026-10-31",
+      "note": "Tip Hay: cá linh kho tiêu — ướp có nước màu, kho với dầu ăn phi tỏi (trang ghi yếu về khẩu phần)."
+    },
+    {
+      "url": "https://www.cet.edu.vn/cach-kho-ca-linh",
+      "accessed": "2026-10-31",
+      "note": "CET: cá linh kho tiêu 300 g, ướp hành tỏi tiêu, kho liu riu đến khi sánh."
+    },
+    {
+      "url": "https://nuocmamantoan.com/cach-chon/cach-kho-ca-linh-noi-tieng-thom-ngon.html",
+      "accessed": "2026-10-31",
+      "note": "Nước Mắm An Toàn: cá linh kho tiêu miền Tây — thắng nước màu trước, kho đến khi keo lại."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — cá linh 150→75 và serving 200→130 (cá linh khẩu phần nhỏ theo nguồn; bằng chứng khẩu phần của món này mỏng — 1 họ nguồn ghi yếu, đã ghi nhận), thêm dầu ăn 8 (3/3) và nước màu 5 (2/3; nước màu chưa có số — dòng chờ theo tiền lệ Phần A), hành tím 8→3.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "kho",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -42,15 +42,15 @@
     },
     {
       "ingredient_slug": "nuoc-mam-truyen-thong",
-      "quantity": 10,
+      "quantity": 12,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
     },
     {
-      "ingredient_slug": "duong-thot-not",
-      "quantity": 8,
+      "ingredient_slug": "duong-trang",
+      "quantity": 3,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -58,7 +58,7 @@
     },
     {
       "ingredient_slug": "hat-tieu-den",
-      "quantity": 1,
+      "quantity": 1.5,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -82,7 +82,7 @@
     },
     {
       "ingredient_slug": "ot-tuoi",
-      "quantity": 2,
+      "quantity": 4,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -95,18 +95,60 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nuoc-dua-tuoi",
+      "quantity": 60,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-la",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nuoc-mau",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Cá đối làm sạch, cắt khúc, ướp nước mắm, đường và tiêu 20 phút.",
-    "Thắng đường tạo màu, phi thơm hành tỏi rồi cho cá vào.",
-    "Kho lửa nhỏ đến khi nước sánh keo, rắc thêm tiêu xay trước khi tắt bếp."
+    "Cá đối đánh vảy, bỏ mang và ruột, cắt khúc, chà muối và chanh khử nhớt tanh, rửa sạch, để ráo.",
+    "Ướp cá với nước mắm, nước màu, đường trắng, một phần tiêu, hành tím và tỏi băm trong 15–20 phút.",
+    "Phi thơm hành tím và tỏi, xếp cá vào nồi cho săn mặt.",
+    "Châm nước dừa tươi, đun sôi rồi hạ lửa nhỏ, kho 25–30 phút cho cá thấm; rưới nước kho lên mặt cá thay vì lật nhiều lần.",
+    "Khi nước kho sánh lại, rắc phần tiêu còn lại và hành lá, tắt bếp."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://tripi.vn/blog/vi/kinh-nghiem-hay/doi-gio-bua-com-gia-dinh-voi-mon-ca-doi-kho-tieu-thom-lung-dam-vi-mien-tay-tripi",
+      "accessed": "2026-10-31",
+      "note": "Tripi: cá đối kho tiêu miền Tây — 600 g cá kho với 500 ml nước dừa, nêm đường trắng và nước màu, tiêu rắc hai phần."
+    },
+    {
+      "url": "https://cakholangvudai.com/ca-kho/mon-ngon-de-lam-voi-ca-doi-kho-tieu/",
+      "accessed": "2026-10-31",
+      "note": "Cá Kho Làng Vũ Đại: cá đối kho tiêu — nước dừa 100–150 ml cho nồi, kho 25–30 phút, tiêu chia hai phần ướp và rắc cuối."
+    },
+    {
+      "url": "https://bepxua.vn/cach-lam-ca-doi-kho-nuoc-dua-dam-da-beo-ngon/",
+      "accessed": "2026-10-31",
+      "note": "Bếp Xưa: cá đối kho nước dừa cho 4 người — 600 g cá, 300 ml nước dừa, đường trắng 1,5 muỗng canh (trang ghi nhận bằng chứng yếu hơn hai nguồn trên)."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — đổi đường thốt nốt 8 thành đường trắng 3 (thốt nốt 0/3 nguồn và lệch +120–470% so với tỉ lệ nguồn), ớt 2→4, tiêu 1→1,5, mắm 10→12, thêm nước dừa 60 (2/2 họ nguồn chính), hành lá 3 và nước màu 3 (chưa có số).] [Đính chính LV2-004: recipe_sources[0] ban đầu ghi nhầm một URL Điện Máy XANH không kiểm chứng được — đã thay bằng nguồn Tripi đã mở trong vòng nghiên cứu.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

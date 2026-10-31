@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "xao",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -30,11 +30,11 @@
     }
   ],
   "serving_desc": "1 phần",
-  "serving_grams": 260,
+  "serving_grams": 170,
   "ingredients": [
     {
       "ingredient_slug": "oc-buou",
-      "quantity": 250,
+      "quantity": 100,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -42,7 +42,7 @@
     },
     {
       "ingredient_slug": "sa",
-      "quantity": 15,
+      "quantity": 20,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -103,18 +103,52 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "gung",
+      "quantity": 4,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "bot-nghe",
+      "quantity": 1,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Ốc bươu ngâm nước vo gạo cho nhả bùn, rửa sạch, luộc sơ rồi khêu lấy thịt.",
-    "Phi thơm sả, hành và tỏi trong dầu nóng.",
-    "Cho thịt ốc vào xào lửa lớn, nêm nước mắm, đường và ớt, đảo đến khi săn giòn, rắc lá chanh."
+    "Ốc bươu ngâm nước vo gạo với ớt 2–3 giờ cho nhả nhớt, rửa sạch, luộc sơ, lấy thịt ốc, cắt bỏ phần ruột đen, rửa lại với muối và chanh.",
+    "Ướp thịt ốc với nước mắm, bột nghệ, hành tím, tỏi và gừng băm khoảng 10 phút.",
+    "Phi thơm sả băm và sả cây đập dập với dầu ăn, cho ốc vào xào lửa lớn.",
+    "Xào nhanh 4–5 phút đến khi ốc săn giòn, nêm lại vừa ăn, cho ớt và lá chanh thái chỉ vào đảo đều.",
+    "Tắt bếp, dùng nóng; ốc đạt khi giòn, thơm sả và không bị dai."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://beptruong.edu.vn/cach-lam-oc-xao-sa-ot",
+      "accessed": "2026-10-31",
+      "note": "Bếp Trưởng Á Âu: ốc bươu xào sả ớt — lượng ốc trong nguồn là theo đĩa, không phải cả công thức như số cũ."
+    },
+    {
+      "url": "https://www.bluestone.com.vn/blogs/vao-bep/oc-buou-xao-sa-ot",
+      "accessed": "2026-10-31",
+      "note": "BlueStone: ốc bươu xào sả ớt có gừng và nghệ tạo màu."
+    },
+    {
+      "url": "https://bloganngon.edu.vn/oc-xao-sa-ot",
+      "accessed": "2026-10-31",
+      "note": "Blog Ăn Ngon: đối chiếu tỉ lệ sả và thời gian xào ốc vừa chín tới."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — ốc 250→100 (số cũ là lượng cả công thức, nguồn tính theo đĩa), sả 15→20, thêm gừng 4 và bột nghệ 1 (2/3); serving 260→170.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "kho",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -87,18 +87,52 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-la",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "toi",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Cá bạc má làm sạch, ướp nước mắm 10 phút; cà chua bổ cau.",
-    "Phi hành tím, xào cà chua mềm, xếp cá vào, thêm ít nước nóng.",
-    "Kho lửa nhỏ 12 phút cho cá thấm, nêm lại. Món mặn nhanh: tổng thời gian nấu ~25 phút, nguyên liệu phổ thông."
+    "Cá bạc má làm sạch, bỏ mang và ruột, rửa nước muối loãng, để ráo; ướp nước mắm, đường, hành tím và tiêu 15 phút.",
+    "Rán sơ cá trong dầu cho vàng nhẹ hai mặt, vớt ra để riêng (cá chắc thịt, không nát khi kho).",
+    "Phi thơm hành tím và tỏi, cho cà chua vào xào đến khi mềm nhừ thành sốt, nêm chút muối cho cà nhanh nhừ.",
+    "Xếp cá vào nồi sốt, châm nước xâm xấp, kho lửa nhỏ 12–15 phút đến khi cá thấm và nước kho sánh.",
+    "Rắc hành lá, nêm lại vừa ăn, tắt bếp, dùng nóng với cơm."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://laodong.vn/suc-khoe/3-cach-che-bien-ca-bac-ma-ngon-cho-bua-com-gia-dinh-1787875.ldo",
+      "accessed": "2026-10-31",
+      "note": "Lao Động: cá bạc má 500 g kho cà chua — định lượng đĩa của kho khớp nguồn nhất trong đợt."
+    },
+    {
+      "url": "https://bloganngon.edu.vn/cach-lam-mon-ca-bac-ma-kho-ca-chua-thom-ngon-tron-vi/",
+      "accessed": "2026-10-31",
+      "note": "Blog Ăn Ngon: cá bạc má kho cà — rán sơ cá, xào cà thành sốt rồi mới kho."
+    },
+    {
+      "url": "https://danviet.vn/loai-ca-gia-re-giau-omega-3-tot-cho-tim-duong-tri-nao-dem-kho-voi-ca-chua-danh-bay-ca-noi-com-20250217152734875-d1211116.html",
+      "accessed": "2026-10-31",
+      "note": "Dân Việt: cá bạc má kho cà với tóp mỡ (biến thể) — đối chiếu bước rán sơ và xào sốt cà."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Dùng nguyên liệu ca-bac-ma mới biên soạn đợt này (TKPI/DKBM, tầng 6 — món mang cờ chưa kiểm định).",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Dùng nguyên liệu ca-bac-ma mới biên soạn đợt này (TKPI/DKBM, tầng 6 — món mang cờ chưa kiểm định).  [LV2-004 đợt 4: nâng Mức 2 — thêm hành lá 3 (3/3) và tỏi 3 (2/3); giữ nguyên định lượng chính vì bản kho khớp nguồn tốt nhất đợt; viết lại bước có rán sơ và xào cà thành sốt, bỏ mốc thời gian không nguồn của bản cũ.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

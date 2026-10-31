@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "kho",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -98,15 +98,34 @@
     }
   ],
   "recipe_steps": [
-    "Sườn non chặt miếng, chần qua nước sôi.",
-    "Thắng đường, phi hành tỏi, cho sườn vào đảo săn với nước mắm.",
-    "Thêm nước, kho 15 phút; cuối cùng cho tiêu xay, kho thêm 2 phút cho dậy mùi. Món mặn nhanh: tổng thời gian nấu ~30 phút, nguyên liệu phổ thông."
+    "Sườn non chặt khúc vừa ăn, chần qua nước sôi có gừng và muối 2–3 phút, rửa sạch, để ráo.",
+    "Ướp sườn với nước mắm, đường thốt nốt, hành tím, tỏi băm và một phần tiêu xay trong 30 phút.",
+    "Thắng đường trong nồi cho màu cánh gián, phi thơm hành tím và tỏi băm.",
+    "Cho sườn vào đảo lửa vừa 5–7 phút đến khi săn mặt và thấm màu.",
+    "Châm nước nóng xâm xấp, kho liu riu 30–45 phút đến khi sườn mềm, nước kho sánh lại.",
+    "Cho ớt và phần tiêu còn lại vào, đảo đều, nêm lại vừa ăn rồi tắt bếp."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://vinid.net/blog/bi-quyet-nau-an/cach-lam-suon-non-kho/",
+      "accessed": "2026-10-31",
+      "note": "VinID: sườn non kho tiêu, ướp trước khi kho, kho liu riu cho mềm."
+    },
+    {
+      "url": "https://congthucgiadinh.com/mon-an/suon-non-kho-tieu",
+      "accessed": "2026-10-31",
+      "note": "Công Thức Gia Đình: đối chiếu tỉ lệ sườn/đường/tiêu theo khẩu phần."
+    },
+    {
+      "url": "https://saigonesebaguette.vn/cach-nau-suon-non-kho-tieu-dam-da-thom-lung-chuan-vi-gia-dinh/",
+      "accessed": "2026-10-31",
+      "note": "Saigonese Baguette: sườn kho tiêu đậm đà, thắng màu và kho nhỏ lửa."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Khác suon-rim cùng đợt ở gia vị chủ đạo (tiêu) và không thắng sốt rim ngọt — hai biến thể kho sườn phổ biến, giữ độc lập. Nghiên cứu Mức 2 đợt 3 (LV2-003, 2026-10-31): GIỮ Mức 1 — mới mở kiểm chứng được 2 nguồn độc lập (VinID; Công Thức Gia Đình); trang tổng hợp thứ ba có nội dung gần trùng VinID, nghi sao chép nên không tính độc lập. Tín hiệu phân xử chờ xác nhận khi có nguồn thứ ba: sườn 180 g cao hơn quy đổi của cả hai nguồn đã mở (100–125 g/khẩu phần theo mẻ gia đình 4), đường 8 g cao hơn số thắng màu của nguồn (3,8–4 g); ớt tươi có ở nguồn, file thiếu. Phân xử thử lại LV2-004 (Phần A, 2026-10-31): nguồn thứ ba độc lập đã mở (Saigonese Baguette) XÁC NHẬN cả 3 tín hiệu đợt 3: sườn quy đổi 100–125 g/khẩu phần ở cả 3 nguồn (VinID 400–500 g/mẻ; Công Thức Gia Đình 500 g; Saigonese 500 g/4 khẩu phần) → suon-lon 180 → 125 g; đường 3,75–4 g/khẩu phần ở cả 3 nguồn → duong-thot-not 8 → 4 g; ớt tươi có ở 3/3 nguồn → THÊM ot-tuoi 2 g. Phát sinh mới: tiêu đen 1,5 g cao hơn quy đổi nền của 3 nguồn (0,3–0,6 g/khẩu phần) 2,5–5 lần → GIẢM còn 1,0 g (giữ vị tiêu chủ đạo của tên món; các nguồn vẫn cho thêm tiêu tuỳ thích ở cuối). Hành tím/tỏi 5/5 giữ nguyên (chỉ 1 nguồn lượng hoá thấp hơn, độ tin cậy vừa). Serving 220 → 160 g theo tổng nguyên liệu thô mới (~157 g). Bước ướp 30 phút + kho 30–45 phút (3 nguồn) áp dụng khi nâng Mức 2 ở Phần B đợt 4 (LV2-004).",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Khác suon-rim cùng đợt ở gia vị chủ đạo (tiêu) và không thắng sốt rim ngọt — hai biến thể kho sườn phổ biến, giữ độc lập. Nghiên cứu Mức 2 đợt 3 (LV2-003, 2026-10-31): GIỮ Mức 1 — mới mở kiểm chứng được 2 nguồn độc lập (VinID; Công Thức Gia Đình); trang tổng hợp thứ ba có nội dung gần trùng VinID, nghi sao chép nên không tính độc lập. Tín hiệu phân xử chờ xác nhận khi có nguồn thứ ba: sườn 180 g cao hơn quy đổi của cả hai nguồn đã mở (100–125 g/khẩu phần theo mẻ gia đình 4), đường 8 g cao hơn số thắng màu của nguồn (3,8–4 g); ớt tươi có ở nguồn, file thiếu. Phân xử thử lại LV2-004 (Phần A, 2026-10-31): nguồn thứ ba độc lập đã mở (Saigonese Baguette) XÁC NHẬN cả 3 tín hiệu đợt 3: sườn quy đổi 100–125 g/khẩu phần ở cả 3 nguồn (VinID 400–500 g/mẻ; Công Thức Gia Đình 500 g; Saigonese 500 g/4 khẩu phần) → suon-lon 180 → 125 g; đường 3,75–4 g/khẩu phần ở cả 3 nguồn → duong-thot-not 8 → 4 g; ớt tươi có ở 3/3 nguồn → THÊM ot-tuoi 2 g. Phát sinh mới: tiêu đen 1,5 g cao hơn quy đổi nền của 3 nguồn (0,3–0,6 g/khẩu phần) 2,5–5 lần → GIẢM còn 1,0 g (giữ vị tiêu chủ đạo của tên món; các nguồn vẫn cho thêm tiêu tuỳ thích ở cuối). Hành tím/tỏi 5/5 giữ nguyên (chỉ 1 nguồn lượng hoá thấp hơn, độ tin cậy vừa). Serving 220 → 160 g theo tổng nguyên liệu thô mới (~157 g). Bước ướp 30 phút + kho 30–45 phút (3 nguồn) áp dụng khi nâng Mức 2 ở Phần B đợt 4 (LV2-004).  [LV2-004 đợt 4: nâng Mức 2 — định lượng đã phân xử ở Phần A (sườn 180→125, đường 8→4, thêm ớt; serving 220→160).]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

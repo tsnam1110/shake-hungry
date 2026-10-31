@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "xao",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -50,7 +50,7 @@
     },
     {
       "ingredient_slug": "tom-su",
-      "quantity": 30,
+      "quantity": 75,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -58,7 +58,7 @@
     },
     {
       "ingredient_slug": "muc-ong",
-      "quantity": 25,
+      "quantity": 75,
       "unit_name": "g",
       "is_optional": true,
       "source": "llm_suggested",
@@ -114,7 +114,7 @@
     },
     {
       "ingredient_slug": "dau-hao",
-      "quantity": 6,
+      "quantity": 15,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -154,16 +154,33 @@
     }
   ],
   "recipe_steps": [
-    "Trụng mì, để ráo, chiên thành bánh mì vàng giòn.",
-    "Xào thịt, tôm, mực, gan với tỏi; cho rau củ vào xào chín tới.",
-    "Pha sốt nước tương, dầu hào, bột năng; rưới vào chảo cho sệt.",
-    "Đổ phần xào lên bánh mì giòn, ăn ngay."
+    "Mì trứng chần sơ cho rã sợi, để thật ráo, chiên trong chảo dầu nóng thành bánh mì vàng giòn hai mặt, để riêng.",
+    "Tôm bóc nõn, mực làm sạch khứa hoa; thịt thăn thái mỏng ướp chút nước tương và tiêu.",
+    "Phi thơm tỏi, xào thịt, tôm, mực ở lửa lớn cho vừa chín săn, trút ra để riêng.",
+    "Xào cải thìa, cà rốt và súp lơ với nước dùng, nêm dầu hào, nước tương, đường; pha bột năng với nước, rưới vào cho sốt sánh.",
+    "Cho hải sản trở lại chảo, đảo nhanh cho áo sốt rồi chan toàn bộ lên bánh mì giòn, rắc tiêu, dùng ngay khi mì còn giòn."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-lam-mi-xao-gion-23356",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH: kỹ thuật chiên mì giòn và xào topping hải sản chan lên mì."
+    },
+    {
+      "url": "https://bepxua.vn/cong-thuc-lam-mi-xao-gion-hai-san-ngon-tuyet/",
+      "accessed": "2026-10-31",
+      "note": "Bếp Xưa: mì xào giòn hải sản — lượng tôm, mực theo đĩa lớn cao hơn hẳn bản cũ của kho."
+    },
+    {
+      "url": "https://xaydungso.vn/blog/cach-lam-mi-xao-gion-vi-cb.html",
+      "accessed": "2026-10-31",
+      "note": "Xây Dựng Số: đối chiếu tỉ lệ dầu hào trong sốt xào."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt).",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt).  [LV2-004 đợt 4: nâng Mức 2 — tôm 30→75, mực 25→75, dầu hào 6→15 theo đĩa hải sản của nguồn (bằng chứng định lượng của món này mỏng hơn mặt bằng đợt — 1 nguồn lượng hoá rõ — đã đối chiếu chéo tỉ lệ sốt). Bất thường giữ nguyên: súp lơ 0/3 nguồn (giữ vì phổ biến trong thực tế quán ăn) và gan heo tuỳ chọn 0/3 nguồn lượng hoá.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

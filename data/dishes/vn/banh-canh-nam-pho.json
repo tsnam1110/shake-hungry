@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -54,7 +54,7 @@
     },
     {
       "ingredient_slug": "thit-lon-xay",
-      "quantity": 40,
+      "quantity": 25,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -62,7 +62,7 @@
     },
     {
       "ingredient_slug": "bot-nang",
-      "quantity": 8,
+      "quantity": 12,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -107,18 +107,60 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "gio-song",
+      "quantity": 25,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "mam-ruoc",
+      "quantity": 2,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "cua-bien",
+      "quantity": 50,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Tôm bóc vỏ, thịt xay viên nhỏ; nấu nước dùng từ vỏ tôm cho ngọt.",
-    "Cho thịt viên, tôm vào nước dùng, khuấy bột năng cho nước sánh nhẹ đặc trưng Nam Phổ.",
-    "Trụng sợi bánh canh, chan nước dùng tôm thịt, rắc hành lá, tiêu."
+    "Tôm bóc nõn băm nhuyễn, cua bể luộc gỡ thịt (nếu dùng); thịt xay trộn giò sống, quết dai với hành tím, tiêu và nước mắm, chia phần làm chả.",
+    "Nấu nước dùng từ vỏ tôm và xương, hớt bọt cho trong; nêm chút mắm ruốc Huế đã lọc cho dậy mùi đặc trưng.",
+    "Thả từng viên chả tôm thịt vào nồi, nấu đến khi chả nổi và chín.",
+    "Sợi bánh canh (bột gạo pha bột năng) trụng hoặc thả trực tiếp vào nồi cho sợi trong và dai, nấu thêm vài phút.",
+    "Nêm lại vừa ăn, múc ra tô, rắc hành lá và tiêu, dùng nóng với ớt."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://cookpad.com/vn/recipes/496998",
+      "accessed": "2026-10-31",
+      "note": "Cookpad (bản tiếng Anh): bánh canh Nam Phổ — nhân tôm thịt có giò sống, nêm mắm ruốc Huế."
+    },
+    {
+      "url": "https://tranbichnga.com/banh-canh-nam-pho",
+      "accessed": "2026-10-31",
+      "note": "Trần Bích Nga: bánh canh Nam Phổ chuẩn Huế, chả tôm thịt quết giò sống, nước dùng tôm cua."
+    },
+    {
+      "url": "https://kinhdoamthuc.com/?p=2420",
+      "accessed": "2026-10-31",
+      "note": "Kinh Đô Ẩm Thực: đối chiếu tỉ lệ bột năng trong sợi và mắm ruốc trong nước dùng."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — tách thịt xay 40 thành thịt xay 25 + giò sống 25 (3/3 nguồn đều quết giò sống; giò sống chưa có số nên món tạm mất phần calo của dòng này đến khi nguyên liệu có số), thêm mắm ruốc 2 (4/5 trang nghiên cứu) và cua bể 50 tuỳ chọn (3/5), bột năng 8→12. Dầu điều: giữ dầu ăn, ghi nhận nguồn thắng dầu từ hạt điều màu (slug hat-dieu-mau) — chưa đổi dòng.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

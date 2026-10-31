@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "xao",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -66,15 +66,33 @@
     }
   ],
   "recipe_steps": [
-    "Đậu bắp rửa sạch, cắt xéo khúc dày.",
-    "Phi thơm tỏi với dầu.",
-    "Cho đậu bắp vào xào 3–4 phút vừa chín, nêm nước mắm, dùng nóng."
+    "Đậu bắp rửa sạch, cắt bỏ cuống, ngâm nước muối loãng, để ráo; chần nhanh đậu bắp 2–3 phút rồi vớt ra ngâm nước lạnh cho xanh và bớt nhớt, để ráo.",
+    "Phi thơm tỏi với dầu ăn đến vàng nhẹ, vớt một phần tỏi phi ra để riêng.",
+    "Cho đậu bắp vào xào lửa vừa đến lớn 3–5 phút cho đậu chín tới, còn giòn.",
+    "Nêm nước mắm và muối cho vừa miệng, đảo đều cho thấm.",
+    "Cho phần tỏi phi để riêng trở lại, đảo qua rồi tắt bếp, dùng nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://bepmina.vn/mon-viet/cach-che-bien-dau-bap/",
+      "accessed": "2026-10-31",
+      "note": "Bếp Mina: đậu bắp 500 g xào tỏi — muối và bột nêm là gia vị nền, xào 5 phút lửa vừa."
+    },
+    {
+      "url": "https://saigonesebaguette.vn/cach-nau-dau-bap-xao-toi/",
+      "accessed": "2026-10-31",
+      "note": "Saigonese Baguette: đậu bắp xào tỏi cho 3 người — 200 g đậu, chần trước khi xào, lượng dầu theo 2 muỗng canh."
+    },
+    {
+      "url": "https://toyenxin.com/blog-1/cach-lam-dau-bap-xao-toi-vi-cb.html",
+      "accessed": "2026-10-31",
+      "note": "ToyenXin: đậu bắp xào tỏi — có nước mắm 1 muỗng, chần trước; tỏi phi vớt ra cho lại cuối cho giòn thơm."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món THAY cho giá xào hẹ trong kế hoạch: hẹ (la-he) chưa kiểm chứng được số tại nguồn đạt chuẩn nên món gốc hoãn (xem file nguyên liệu la-he).",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món THAY cho giá xào hẹ trong kế hoạch: hẹ (la-he) chưa kiểm chứng được số tại nguồn đạt chuẩn nên món gốc hoãn (xem file nguyên liệu la-he).  [LV2-004 đợt 4: nâng Mức 2 — giữ nguyên toàn bộ định lượng (nằm trong dải nguồn); ghi bất thường nhẹ: nước mắm 4 chỉ 1/3 họ nguồn có — ngược với mẫu hình bỏ mắm ở nhóm rau xào đợt này, giữ theo ToyenXin. Bước viết lại có chần trước (2/3 nguồn).]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

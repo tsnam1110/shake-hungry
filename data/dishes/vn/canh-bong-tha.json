@@ -18,7 +18,7 @@
   "is_eat_out": false,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -66,7 +66,7 @@
     },
     {
       "ingredient_slug": "su-hao",
-      "quantity": 40,
+      "quantity": 15,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -74,7 +74,7 @@
     },
     {
       "ingredient_slug": "ca-rot",
-      "quantity": 30,
+      "quantity": 20,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -82,7 +82,7 @@
     },
     {
       "ingredient_slug": "sup-lo-trang",
-      "quantity": 40,
+      "quantity": 25,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -127,18 +127,52 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "gio-song",
+      "quantity": 35,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "trung-cut",
+      "quantity": 20,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Hầm sườn với gừng lấy nước dùng trong; bóng bì ngâm mềm, cắt miếng vừa ăn.",
-    "Thả su hào, cà rốt, súp lơ, đậu Hà Lan vào nấu chín tới, nêm nước mắm, muối.",
-    "Cho bóng bì, tôm khô và nấm hương vào, nước sôi lại thì tắt bếp, rắc hành lá."
+    "Bóng bì ngâm mềm, tẩy với rượu và gừng cho hết mùi, rửa sạch, cắt miếng vừa ăn, vắt ráo.",
+    "Ninh suờn lấy nước dùng trong, hớt bọt; nêm muối và nước mắm nhẹ.",
+    "Giò sống quết dai, viên thành mọc nhỏ, thả vào nồi nước dùng sôi đến khi mọc nổi; cho trứng cút luộc bóc vỏ vào.",
+    "Cho su hào, cà rốt, súp lơ và đậu Hà Lan vào nấu vừa chín tới, cuối cùng cho bóng bì và tôm khô, nấm hương, nấu sôi lại.",
+    "Múc canh ra tô theo lối xếp bát: rau củ và mọc dưới, bóng bì trên mặt, chan nước dùng trong, rắc hành lá, dùng nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.bachhoaxanh.com/kinh-nghiem-hay/cach-nau-canh-bong-tha-1272102",
+      "accessed": "2026-10-31",
+      "note": "Bách Hoá XANH: canh bóng thả — mọc giò sống là thành phần cốt lõi, có trứng cút."
+    },
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-nau-canh-bong-moc-son-22394",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH: canh bóng mọc — tỉ lệ rau củ trong tô nhỏ hơn bản cũ của kho."
+    },
+    {
+      "url": "https://bloganngon.edu.vn/canh-bong-tha",
+      "accessed": "2026-10-31",
+      "note": "Blog Ăn Ngon: canh bóng thả cổ truyền — bóng tẩy rượu gừng, ninh nước dùng xương (trang có đoạn trùng văn bản với Thực Thần, đã ghi nhận)."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt DISH-004 đợt 2 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt DISH-004 đợt 2 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — thêm giò sống 35 (3/3 nguồn; chưa có số nên phần calo chờ nguyên liệu) và trứng cút 20 (2/3); su hào 40→15, súp lơ 40→25, cà rốt 30→20 theo tỉ lệ tô của nguồn; viết lại bước theo đúng kỹ thuật canh bóng thả.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

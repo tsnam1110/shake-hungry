@@ -74,7 +74,7 @@
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-004 đợt 4: thử nâng Mức 2 — GIỮ MỨC 1: chỉ 1 nguồn đúng món (dienmayxanh.com/vao-bep/cach-lam-canh-kho-qua-ca-loc-02571), 2 nguồn còn lại là biến thể chả cá thác lác (xaydungso.vn/blog/cach-lam-canh-kho-qua-ca-thac-lac-vi-cb; bluestone.com.vn/blogs/vao-bep/canh-kho-qua-ca-thac-lac) — không đủ 3 nguồn đúng món.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

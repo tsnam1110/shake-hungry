@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "luoc",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -50,15 +50,33 @@
     }
   ],
   "recipe_steps": [
-    "Rau muống nhặt khúc vừa ăn, rửa sạch.",
-    "Đun nước thật sôi với chút muối, cho rau vào luộc 2–3 phút.",
-    "Vớt rau ra để ráo, bày đĩa, ăn kèm nước mắm hoặc kho quẹt."
+    "Rau muống nhặt lấy phần non, ngắt khúc vừa ăn bằng tay, ngâm nước muối loãng, rửa sạch, để ráo.",
+    "Đun nồi nước thật nhiều cho sôi già, cho muối vào nước trước khi thả rau.",
+    "Thả rau vào, mở vung, để lửa lớn, dùng đũa lật đều cho rau chín đều; luộc khoảng 2–3 phút đến khi rau vừa chín tới.",
+    "Vớt rau ra ngâm ngay vào thau nước lạnh (có đá càng tốt) vài phút cho rau xanh và giòn.",
+    "Vớt rau ra để ráo, tãi ra đĩa, dùng kèm nước mắm tỏi ớt hoặc tương."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://bepmina.vn/mon-viet/cach-lam-nom-rau-muong/",
+      "accessed": "2026-10-31",
+      "note": "Bếp Mina: kỹ thuật luộc rau muống — nước sôi già, thêm muối, luộc mở vung khoảng 2 phút, vớt ra ngâm nước đá cho xanh giòn."
+    },
+    {
+      "url": "https://giadinh.suckhoedoisong.vn/luoc-rau-nen-day-vung-hay-mo-vung-de-rau-giu-mau-xanh-tuoi-172261019193107642.htm",
+      "accessed": "2026-10-31",
+      "note": "Gia đình & SKĐS: cơ sở kỹ thuật mở vung khi luộc rau lá xanh và vai trò của muối trong nước luộc."
+    },
+    {
+      "url": "https://memart.vn/tin-tuc/blog3/cach-luoc-rau-ngon-nhat-vi-cb.html",
+      "accessed": "2026-10-31",
+      "note": "Memart: luộc rau muống lửa lớn 3–5 phút, ngâm nước đá ngay sau khi vớt."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — giữ nguyên định lượng (rau 150, muối 1 tuỳ chọn trong nước luộc); viết lại bước theo kỹ thuật mở vung + sốc nước đá (3/3 nguồn kỹ thuật). Ghi nhận: neo định lượng của món luộc đơn giản này mỏng — chỉ 1 nguồn có khẩu phần rõ — nhưng định lượng file nằm trong dải thông thường của kho.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

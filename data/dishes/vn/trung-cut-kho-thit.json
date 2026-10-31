@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "kho",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -42,7 +42,7 @@
     },
     {
       "ingredient_slug": "trung-cut",
-      "quantity": 80,
+      "quantity": 40,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -50,7 +50,7 @@
     },
     {
       "ingredient_slug": "nuoc-dua-tuoi",
-      "quantity": 60,
+      "quantity": 90,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -66,7 +66,7 @@
     },
     {
       "ingredient_slug": "nuoc-mam-truyen-thong",
-      "quantity": 10,
+      "quantity": 5,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -79,18 +79,68 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "toi",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-la",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "ot-tuoi",
+      "quantity": 2,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dau-an",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Trứng cút luộc chín, bóc vỏ; ba chỉ cắt miếng vừa ăn.",
-    "Thắng đường, cho thịt vào đảo săn, thêm nước dừa và nước mắm.",
-    "Kho 10 phút, thả trứng cút vào kho thêm 5 phút cho thấm. Món mặn nhanh: tổng thời gian nấu ~30 phút, nguyên liệu phổ thông."
+    "Thịt ba chỉ cắt miếng vừa ăn, ướp với nước mắm, đường thốt nốt, tỏi và hành tím băm 20–30 phút; trứng cút luộc chín, bóc vỏ.",
+    "Thắng chút dầu ăn với đường cho màu cánh gián nhạt, cho thịt vào xào săn.",
+    "Châm nước dừa tươi xâm xấp, kho lửa nhỏ 25–35 phút cho thịt mềm và thấm.",
+    "Cho trứng cút (và ớt nếu thích) vào kho tiếp 10–15 phút cho trứng thấm màu và vị.",
+    "Nêm lại vừa ăn, rắc hành lá, tắt bếp; nước kho đạt khi hơi sánh, thịt mềm mà không nát."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.huongnghiepaau.com/thit-kho-trung-cut",
+      "accessed": "2026-10-31",
+      "note": "Hướng Nghiệp Á Âu: thịt kho trứng cút — kho thịt 25–35 phút, trứng cho sau kho tiếp 10–15 phút."
+    },
+    {
+      "url": "https://pasgo.vn/blog/cach-lam-thit-kho-trung-cut-4705",
+      "accessed": "2026-10-31",
+      "note": "PasGo: đối chiếu tỉ lệ trứng cút/thịt và nước dừa theo nồi kho."
+    },
+    {
+      "url": "https://thuvienso.com.vn/upload/library/260875/preview/thit-kho-trung-cut-260875.pdf",
+      "accessed": "2026-10-31",
+      "note": "Thư Viện Số (tài liệu công thức): thịt kho trứng cút có tỏi và hành lá."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — trứng cút 80→40 (số cũ cao gấp đôi tỉ lệ nguồn), mắm 10→5, nước dừa 60→90, thêm tỏi 3, hành lá 3, dầu 5 và ớt 2 tuỳ chọn.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -63,18 +63,52 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-tim",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dau-an",
+      "quantity": 2,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Sườn chần, ninh gần mềm; bí rợ (bí đỏ) gọt vỏ, cắt miếng.",
-    "Cho bí vào nồi sườn nấu chín bở.",
-    "Nêm nước mắm, rắc hành lá, dùng nóng."
+    "Sườn rửa sạch, chần qua nước sôi 2–3 phút, rửa lại cho hết bọt bẩn; bí đỏ gọt vỏ, bỏ ruột, cắt miếng vừa ăn.",
+    "Phi thơm hành tím với dầu ăn, cho sườn vào xào săn, châm nước, đun sôi và hớt bọt.",
+    "Hạ lửa, hầm sườn 25–30 phút đến khi gần mềm.",
+    "Cho bí đỏ vào nấu thêm 8–10 phút đến khi bí mềm mà không nát, nêm nước mắm vừa ăn.",
+    "Rắc hành lá, tắt bếp, dùng nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://tripi.vn/blog/vi/kinh-nghiem-hay/cach-nau-canh-suon-non-bi-do-suon-mem-nuoc-canh-trong-vi-ngot-thanh-de-chiu-tripi",
+      "accessed": "2026-10-31",
+      "note": "Tripi: canh sườn bí đỏ — chần sườn, phi hành tím xào sườn trước, hầm bí 8–10 phút (lượng 700 g sườn/800 g bí cho 2–3 người là ngoại lệ thương mại, ghi nhận)."
+    },
+    {
+      "url": "https://www.bluestone.com.vn/blogs/vao-bep/canh-bi-do-nau-suon-heo",
+      "accessed": "2026-10-31",
+      "note": "BlueStone: canh bí đỏ sườn — bí 400 g, sườn 400 g, có cà rốt (biến thể màu)."
+    },
+    {
+      "url": "https://thegioiamthuc.com/mon-canh-bi-do-suon-non-2/",
+      "accessed": "2026-10-31",
+      "note": "Thế Giới Ẩm Thực: canh bí đỏ sườn non — bí 400 g, sườn 300 g, có đậu phộng 50 g (biến thể)."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Điều chỉnh so với kế hoạch (kế hoạch ghi canh bí rợ nấu tôm): bản nấu tôm đã được biên soạn ở quota Trung (canh-bi-do-tom) với cùng nguyên liệu chính bí đỏ + tôm — theo phép thử biến thể EDITORIAL-GUIDE §3, bản Nam đổi sang nấu sườn để là món độc lập thật, tránh hai file gần như trùng nhau chỉ khác nhãn miền.",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Điều chỉnh so với kế hoạch (kế hoạch ghi canh bí rợ nấu tôm): bản nấu tôm đã được biên soạn ở quota Trung (canh-bi-do-tom) với cùng nguyên liệu chính bí đỏ + tôm — theo phép thử biến thể EDITORIAL-GUIDE §3, bản Nam đổi sang nấu sườn để là món độc lập thật, tránh hai file gần như trùng nhau chỉ khác nhãn miền.  [LV2-004 đợt 4: nâng Mức 2 — thêm hành tím 3 và dầu ăn 2 (3/3 nguồn đều phi hành, xào sườn); giữ nguyên định lượng bí/sườn vì nằm trong dải nguồn quy về tô 350 g. Biến thể nguồn: đậu phộng (TGAT) và cà rốt (BlueStone) — không đưa vào bản chuẩn.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

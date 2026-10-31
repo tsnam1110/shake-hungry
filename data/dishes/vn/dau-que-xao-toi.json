@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "xao",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -50,7 +50,7 @@
     },
     {
       "ingredient_slug": "dau-an",
-      "quantity": 8,
+      "quantity": 12,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -63,18 +63,44 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "muoi",
+      "quantity": 1,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Đậu que tước xơ, bẻ khúc, chần sơ nước sôi.",
-    "Phi thơm tỏi với dầu.",
-    "Cho đậu vào xào nhanh, nêm nước mắm, vừa chín giòn là tắt bếp."
+    "Đậu que tước bỏ xơ hai bên, bẻ khúc vừa ăn, rửa sạch; chần sơ trong nước sôi có chút muối 1–2 phút, vớt ra ngâm nước lạnh cho xanh giòn, để ráo.",
+    "Phi thơm tỏi với dầu ăn đến khi tỏi vàng nhẹ, dậy mùi.",
+    "Cho đậu que vào xào lửa lớn, đảo nhanh tay 3–4 phút cho đậu chín tới mà vẫn giòn.",
+    "Nêm muối và chút nước mắm cho vừa miệng, đảo đều thêm ít giây.",
+    "Tắt bếp, cho ra đĩa, dùng nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://saigonesebaguette.vn/cach-xao-dau-que-don-gian/",
+      "accessed": "2026-10-31",
+      "note": "Saigonese Baguette: đậu que xào tỏi — chần sơ 1–2 phút, xào lửa lớn 3–5 phút."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/16001703",
+      "accessed": "2026-10-31",
+      "note": "Cookpad: đậu cô ve xào tỏi 300 g — dầu 2 muỗng, nêm muối là chính, mắm chỉ 1 muỗng cà phê."
+    },
+    {
+      "url": "https://toyenxin.com/blog-1/do-cove-xao-vi-cb.html",
+      "accessed": "2026-10-31",
+      "note": "ToyenXin: đỗ cove xào tỏi — nêm muối, hạt nêm, nước mắm nhẹ."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — dầu 8→12 và thêm muối 1 (3/3 nguồn nêm muối/hạt nêm làm chính); giữ nước mắm 4 như gia vị phụ theo Cookpad.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

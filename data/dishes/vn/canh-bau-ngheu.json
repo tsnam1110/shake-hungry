@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -34,7 +34,7 @@
   "ingredients": [
     {
       "ingredient_slug": "bau",
-      "quantity": 130,
+      "quantity": 200,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -42,7 +42,7 @@
     },
     {
       "ingredient_slug": "ngheu",
-      "quantity": 70,
+      "quantity": 37,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -66,7 +66,31 @@
     },
     {
       "ingredient_slug": "nuoc-mam-truyen-thong",
-      "quantity": 5,
+      "quantity": 4,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-tim",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dau-an",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "rau-mui",
+      "quantity": 2,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -74,15 +98,33 @@
     }
   ],
   "recipe_steps": [
-    "Nghêu ngâm nhả cát, luộc vừa há miệng, lấy thịt, giữ nước luộc lắng trong.",
-    "Đun nước luộc nghêu, cho bầu cắt miếng vào nấu gần chín.",
-    "Cho thịt nghêu và gừng vào, nêm nước mắm, rắc hành lá, dùng nóng."
+    "Nghêu ngâm nước vo gạo 1–2 giờ cho nhả cát, rửa sạch; bầu gọt vỏ, bỏ ruột, cắt miếng vừa ăn.",
+    "Luộc nghêu với nước vừa đủ đến khi há miệng, vớt nghêu tách lấy thịt, gạn nước luộc cho trong.",
+    "Phi thơm hành tím với dầu ăn, cho thịt nghêu vào xào sơ, trút ra để riêng.",
+    "Đun sôi nước luộc nghêu, cho bầu vào nấu 3–4 phút đến khi bầu mềm trong.",
+    "Cho thịt nghêu trở lại, nêm nước mắm vừa ăn, rắc hành lá và rau mùi, tắt bếp ngay để nghêu không dai."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://beptruong.edu.vn/cach-nau-canh-ngao-voi-bau",
+      "accessed": "2026-10-31",
+      "note": "Bếp Trưởng Á Âu: canh nghêu nấu bầu, luộc nghêu lấy nước trong rồi mới nấu bầu."
+    },
+    {
+      "url": "https://tripi.vn/blog/vi/kinh-nghiem-hay/top-10-cach-nau-canh-bau",
+      "accessed": "2026-10-31",
+      "note": "Tripi: tổng hợp canh bầu — bản nghêu dùng nghêu cả vỏ lượng lớn, quy về thịt nghêu theo hồ sơ nguyên liệu."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/5077324",
+      "accessed": "2026-10-31",
+      "note": "Cookpad: canh bầu nấu nghêu, phi hành tím với dầu trước khi nấu."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — nghêu 70→37 (số cũ tính cả vỏ; nguồn dùng ~250 g nghêu cả vỏ/khẩu phần, tỉ lệ thịt 15% theo chính hồ sơ nguyên liệu nghêu), bầu 130→200, thêm hành tím/dầu/rau mùi (3/3 và 2/3 nguồn), mắm 5→4.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

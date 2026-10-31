@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "hap",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -50,7 +50,7 @@
     },
     {
       "ingredient_slug": "gung",
-      "quantity": 10,
+      "quantity": 6,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -58,7 +58,7 @@
     },
     {
       "ingredient_slug": "hanh-la",
-      "quantity": 10,
+      "quantity": 6,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -74,7 +74,7 @@
     },
     {
       "ingredient_slug": "dau-an",
-      "quantity": 8,
+      "quantity": 2,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -95,18 +95,60 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "thi-la",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "toi",
+      "quantity": 4,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dau-hao",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Cá trắm làm sạch, khứa nhẹ, ướp chút muối và tiêu, để thấm.",
-    "Hấp cá chín tới; rắc gừng thái sợi, hành lá và ớt lên trên.",
-    "Đun dầu thật nóng rưới lên cá, chan xì dầu pha đường, ăn nóng."
+    "Cá trắm làm sạch, cạo sạch màng đen trong bụng, khứa nhẹ hai bên mình cá, chà muối và chanh khử tanh, để ráo.",
+    "Ướp cá với nước tương (xì dầu), dầu hào, đường, tỏi băm, gừng một phần và tiêu trong 15–20 phút.",
+    "Lót hành lá và thì là dưới đĩa hấp, đặt cá lên, rưới nước ướp, hấp cách thuỷ 15–20 phút đến khi thịt cá trắng và chín tới.",
+    "Đun nóng dầu ăn, rưới lên mình cá cho dậy mùi; rắc thêm gừng thái sợi, hành lá, thì là và ớt lên trên.",
+    "Dùng nóng, chấm kèm nước tương gừng nếu thích."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/17023931",
+      "accessed": "2026-10-31",
+      "note": "Cookpad: cá trắm hấp xì dầu — ướp dầu hào và xì dầu, rắc thì là khi hoàn thành."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/17214845",
+      "accessed": "2026-10-31",
+      "note": "Cookpad: biến thể cá hấp xì dầu — đối chiếu tỏi và gừng trong phần ướp."
+    },
+    {
+      "url": "https://dacsanbakien.com/cach-hap-ca-tram/",
+      "accessed": "2026-10-31",
+      "note": "Đặc Sản Ba Kiến: cá trắm hấp xì dầu — lót hành lá, thì là dưới cá, sốt xì dầu có dầu hào và tỏi phi."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — thêm thì là 3, tỏi 4 (4/4 trang nghiên cứu) và dầu hào 5 (2/4); gừng 10→6, hành lá 10→6, dầu 8→2 (dầu chỉ để rưới mặt). Bất thường chờ chủ dự án: file ghi vùng vn-south/đặc sản TP.HCM nhưng cả 4 nguồn đều là cách hấp xì dầu kiểu Bắc — không đổi vùng ở đợt nâng.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "kho",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -65,8 +65,8 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "duong-thot-not",
-      "quantity": 8,
+      "ingredient_slug": "duong-trang",
+      "quantity": 5,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -74,7 +74,7 @@
     },
     {
       "ingredient_slug": "ot-tuoi",
-      "quantity": 3,
+      "quantity": 5,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -82,7 +82,23 @@
     },
     {
       "ingredient_slug": "hat-tieu-den",
-      "quantity": 0.5,
+      "quantity": 0.3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "toi",
+      "quantity": 6,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nuoc-mau",
+      "quantity": 3,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -90,15 +106,33 @@
     }
   ],
   "recipe_steps": [
-    "Cá nục làm sạch, ướp nước mắm, tiêu 15 phút.",
-    "Phi hành tím, xếp cá vào, thêm rất ít nước, kho lửa nhỏ.",
-    "Kho rim 15 phút tới khi nước cạn keo, cá chắc và thấm (khác bản kho cà chua ở quota mặn nhanh: bản này không cà chua, rim khô)."
+    "Cá nục làm sạch, cắt khúc vừa ăn, rửa nước muối, để ráo; ướp nước mắm, đường, tiêu, hành tím và tỏi băm 15–20 phút.",
+    "Chiên sơ cá trong dầu cho săn và vàng nhẹ các mặt, vớt ra.",
+    "Phi thơm tỏi và hành tím, cho nước mắm, đường và nước màu vào nấu sôi thành nước rim.",
+    "Cho cá vào rim lửa nhỏ 15–20 phút, trở nhẹ tay cho cá thấm đều, nước rim keo lại áo quanh miếng cá.",
+    "Cho ớt vào, rim thêm ít phút đến khi nước cạn sệt, cá bóng màu cánh gián, tắt bếp."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/12859070",
+      "accessed": "2026-10-31",
+      "note": "Cookpad: cá nục kho rim — chiên cá trước khi rim, tỏi trong phần ướp và phi."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/10225131",
+      "accessed": "2026-10-31",
+      "note": "Cookpad: cá nục kho — đối chiếu đường trắng và nước màu trong nồi kho rim."
+    },
+    {
+      "url": "https://xaydungso.vn/blog/cam-nang-cach-kho-ca-rim-ngon-tips-va-bi-kip-tu-dau-bep-chuyen-nghiep-vi-cb.html",
+      "accessed": "2026-10-31",
+      "note": "Xây Dựng Số: cá nục kho rim dân dã 500 g — đường trắng 1 muỗng súp, tỏi 1 tép lớn, rim 15–20 phút."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — thêm tỏi 6 (3/3); đổi đường thốt nốt 8 thành đường trắng 5 (thốt nốt 0/3 nguồn ủng hộ — cùng mẫu hình với ca-doi-kho-tieu, ghi nhận ở mục bất thường hệ thống), ớt 3→5, tiêu 0,5→0,3, thêm nước màu 3 (2/3; chưa có số).]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

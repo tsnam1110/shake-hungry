@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -42,7 +42,7 @@
     },
     {
       "ingredient_slug": "suon-lon",
-      "quantity": 70,
+      "quantity": 100,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -50,7 +50,7 @@
     },
     {
       "ingredient_slug": "ca-rot",
-      "quantity": 30,
+      "quantity": 50,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -71,18 +71,60 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-tim",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dau-an",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "rau-mui",
+      "quantity": 2,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Sườn chặt khúc, chần qua nước sôi; khoai tây, cà rốt gọt vỏ cắt miếng.",
-    "Ninh sườn với nước khoảng 20 phút cho mềm, hớt bọt.",
-    "Cho khoai tây, cà rốt vào nấu chín mềm, nêm nước mắm, rắc hành lá."
+    "Sườn chặt khúc, chần nước sôi 2–3 phút, rửa sạch; khoai tây và cà rốt gọt vỏ, cắt miếng vừa ăn.",
+    "Phi thơm hành tím với dầu ăn, cho sườn vào xào săn, nêm chút nước mắm.",
+    "Châm nước, hầm sườn lửa nhỏ 25–30 phút, hớt bọt cho nước trong.",
+    "Cho cà rốt vào nấu 5 phút, tiếp đến cho khoai tây, nấu thêm 10–12 phút cho khoai mềm mà không nát.",
+    "Nêm lại vừa ăn, rắc hành lá và rau mùi, tắt bếp."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://vinid.net/blog/cach-lam-canh-khoai-tay/",
+      "accessed": "2026-10-31",
+      "note": "VinID: canh khoai tây sườn, hầm sườn trước cho mềm rồi mới cho khoai."
+    },
+    {
+      "url": "https://bunbobae.com/cach-nau-canh-khoai-tay-suon",
+      "accessed": "2026-10-31",
+      "note": "Bún Bò Bae (bản nồi chậm): tỉ lệ sườn/khoai/cà rốt theo nồi canh gia đình."
+    },
+    {
+      "url": "https://thuvienso.com.vn/upload/library/511497/preview/canh-khoai-tay-suon-511497.pdf",
+      "accessed": "2026-10-31",
+      "note": "Thư Viện Số (tài liệu công thức): canh khoai tây sườn có hành tím phi và rau mùi."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — sườn 70→100, cà rốt 30→50, thêm hành tím 3 (3/3), dầu 3 (2/3) và rau mùi 2 (2/3) theo tỉ lệ nồi canh của các nguồn.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

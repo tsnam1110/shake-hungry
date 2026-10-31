@@ -1,6 +1,6 @@
 {
   "_generated_by": "php artisan lacdoi:export-data — không sửa tay (DATA-REPOSITORY §2)",
-  "count": 406,
+  "count": 411,
   "ingredients": [
     {
       "slug": "bach-tuoc",
@@ -146,6 +146,11 @@
       "slug": "bot-cari",
       "name_vi": "Bột cà ri",
       "category": "gia-vi"
+    },
+    {
+      "slug": "bot-chien-gion",
+      "name_vi": "Bột chiên giòn",
+      "category": "tinh-bot"
     },
     {
       "slug": "bot-chien-xu",
@@ -773,8 +778,18 @@
       "category": "rau-cu"
     },
     {
+      "slug": "giam-bong",
+      "name_vi": "Giấm bỗng",
+      "category": "gia-vi"
+    },
+    {
       "slug": "gio-lua",
       "name_vi": "Giò lụa (chả lụa)",
+      "category": "thit"
+    },
+    {
+      "slug": "gio-song",
+      "name_vi": "Giò sống",
       "category": "thit"
     },
     {
@@ -1143,6 +1158,11 @@
       "category": "trai-cay"
     },
     {
+      "slug": "me",
+      "name_vi": "Mẻ (cơm mẻ)",
+      "category": "gia-vi"
+    },
+    {
       "slug": "me-chin",
       "name_vi": "Me chín",
       "category": "trai-cay"
@@ -1360,6 +1380,11 @@
     {
       "slug": "nuoc-mam-truyen-thong",
       "name_vi": "Nước mắm truyền thống (cốt cá cơm, độ đạm cao)",
+      "category": "gia-vi"
+    },
+    {
+      "slug": "nuoc-mau",
+      "name_vi": "Nước màu (nước hàng)",
       "category": "gia-vi"
     },
     {

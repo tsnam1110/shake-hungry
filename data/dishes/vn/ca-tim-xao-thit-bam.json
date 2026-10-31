@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "xao",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -42,7 +42,7 @@
     },
     {
       "ingredient_slug": "thit-lon-xay",
-      "quantity": 40,
+      "quantity": 60,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -71,18 +71,68 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "toi",
+      "quantity": 4,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dau-hao",
+      "quantity": 6,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "duong-trang",
+      "quantity": 2,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nuoc-tuong",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Cà tím cắt miếng, ngâm nước muối loãng chống thâm; thịt băm ướp nước mắm.",
-    "Phi hành, xào thịt băm tơi.",
-    "Cho cà tím vào xào mềm, nêm lại, rắc hành lá."
+    "Cà tím rửa sạch, cắt miếng vừa ăn, ngâm nước muối loãng 10 phút cho khỏi thâm, vớt ra để ráo; thịt băm ướp chút nước mắm và tiêu.",
+    "Phi thơm tỏi với dầu ăn, cho thịt băm vào xào tơi cho săn, trút ra để riêng.",
+    "Dùng lại chảo, cho cà tím vào xào lửa lớn 3–4 phút cho cà mềm và hơi xém mặt.",
+    "Cho thịt trở lại, nêm dầu hào, nước tương, nước mắm và đường, đảo đều thêm 2 phút cho thấm.",
+    "Rắc hành lá, tắt bếp, dùng nóng với cơm."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://vietnamnet.vn/ca-tim-xao-thit-bam-2546168.html",
+      "accessed": "2026-10-31",
+      "note": "VietnamNet: cà tím xào thịt băm có tỏi, dầu hào và đường trong sốt xào."
+    },
+    {
+      "url": "https://bepxua.vn/ca-tim-xao-thit-bam-top-mo",
+      "accessed": "2026-10-31",
+      "note": "Bếp Xưa: cà tím xào thịt băm tóp mỡ — đối chiếu tỉ lệ thịt cao hơn bản cũ."
+    },
+    {
+      "url": "https://giadinh.suckhoedoisong.vn/ca-tim-xao-thit-bam-172090703052440290.htm",
+      "accessed": "2026-10-31",
+      "note": "Gia đình & SKĐS: cà tím xào thịt băm — nước tương trong gia vị (2/3 nguồn)."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — thịt băm 40→60, thêm tỏi 4, dầu hào 6, đường 2 (đều 3/3) và nước tương 5 (2/3).]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

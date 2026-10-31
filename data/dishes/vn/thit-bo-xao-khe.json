@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "xao",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -58,7 +58,7 @@
     },
     {
       "ingredient_slug": "toi",
-      "quantity": 8,
+      "quantity": 5,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -103,18 +103,52 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "ot-tuoi",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-tim",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Thịt bò thái mỏng, ướp tỏi, nước mắm và chút đường.",
-    "Khế chua rửa sạch, thái lát ngang, bỏ hạt; hành tây thái múi cau.",
-    "Xào thịt bò lửa lớn vừa chín tới, cho khế và hành tây vào đảo nhanh; rắc hành lá, tiêu."
+    "Thịt bò thái lát mỏng ngược thớ, ướp với tỏi băm, hành tím, nước mắm, đường và chút dầu ăn 10–15 phút.",
+    "Khế chua rửa sạch, cắt bỏ rìa, thái lát hình sao vừa ăn; hành tây thái múi cau, ớt thái lát.",
+    "Phi thơm tỏi và hành tím với dầu ăn, cho thịt bò vào xào lửa lớn thật nhanh đến khi bò vừa tái săn, trút ra đĩa.",
+    "Dùng lại chảo, xào khế và hành tây 1–2 phút cho vừa mềm, cho thịt bò trở lại chảo.",
+    "Đảo nhanh tay cho bò chín tới và thấm vị chua của khế, rắc hành lá và tiêu, tắt bếp ngay, dùng nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://toyenxin.com/blog-1/khe-xao-thit-bo-vi-cb.html",
+      "accessed": "2026-10-31",
+      "note": "ToyenXin (trang 1): bò xào khế chua, ướp bò trước, xào lửa lớn nhanh tay."
+    },
+    {
+      "url": "https://toyenxin.com/blog-1/bo-xao-khe-chua-vi-cb.html",
+      "accessed": "2026-10-31",
+      "note": "ToyenXin (trang 2, cùng họ nguồn với trang 1): đối chiếu trong họ — có ớt và hành tím."
+    },
+    {
+      "url": "https://tripi.vn/blog/vi/kinh-nghiem-hay/cach-lam-mon-bo-xao-chua-ngot",
+      "accessed": "2026-10-31",
+      "note": "Tripi: biến thể bò xào chua ngọt — đối chiếu kỹ thuật xào bò với vị chua, không dùng cho định lượng khế."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 có điều kiện về họ nguồn — 2/3 trang thuộc cùng họ ToyenXin, trang Tripi là biến thể chua ngọt; thêm ớt tươi 3 (3/3 trang) và hành tím 5 (2/3), tỏi 8→5 theo tỉ lệ ướp của nguồn.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

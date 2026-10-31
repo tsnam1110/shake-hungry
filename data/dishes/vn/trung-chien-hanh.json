@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "chien",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -34,7 +34,7 @@
   "ingredients": [
     {
       "ingredient_slug": "trung-ga",
-      "quantity": 100,
+      "quantity": 75,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -42,7 +42,7 @@
     },
     {
       "ingredient_slug": "hanh-la",
-      "quantity": 10,
+      "quantity": 20,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -55,18 +55,44 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hat-tieu-den",
+      "quantity": 0.3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Trứng đánh tan với nước mắm, trộn hành lá cắt nhỏ.",
-    "Chiên chảo lửa vừa tới khi hai mặt vàng, giữa còn mềm (khoảng 5 phút).",
-    "Cắt miếng, dùng nóng. Món mặn nhanh: tổng thời gian nấu ~10 phút, nguyên liệu phổ thông."
+    "Hành lá rửa sạch, thái nhỏ; trứng đập ra tô, đánh tan đều với nước mắm và tiêu xay.",
+    "Cho hành lá vào trứng, khuấy đều; để chảo thật nóng rồi mới cho dầu ăn vào láng đều mặt chảo.",
+    "Đổ trứng vào chảo, nghiêng chảo cho trứng trải đều, hạ lửa vừa.",
+    "Chiên 2–3 phút đến khi mặt dưới vàng, mặt trên se lại; lật mặt chiên thêm khoảng 1 phút.",
+    "Cho trứng ra đĩa, cắt miếng vừa ăn, dùng nóng với cơm."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://inauanngon.com/cach-lam-trung-chien/",
+      "accessed": "2026-10-31",
+      "note": "I Nấu Ăn Ngon: trứng chiên hành — tỉ lệ trứng/hành lá theo đĩa, có tiêu xay trong trứng."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/7624326",
+      "accessed": "2026-10-31",
+      "note": "Cookpad: trứng chiên hành lá, chiên lửa vừa cho mặt trứng vàng xốp."
+    },
+    {
+      "url": "https://giadinh.suckhoedoisong.vn/trung-chien-thoi-bao-cap-172090703052440290.htm",
+      "accessed": "2026-10-31",
+      "note": "Gia đình & SKĐS: trứng chiên hành kiểu truyền thống — đối chiếu lượng hành lá khá lớn trong đĩa trứng."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món chiên theo quy ước Phương án A (EDITORIAL-GUIDE §12): công thức KHÔNG kê dầu của bước chiên chính — dầu hấp thụ do engine mô hình hoá theo hệ số CALC-004 của nguyên liệu.",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món chiên theo quy ước Phương án A (EDITORIAL-GUIDE §12): công thức KHÔNG kê dầu của bước chiên chính — dầu hấp thụ do engine mô hình hoá theo hệ số CALC-004 của nguyên liệu.  [LV2-004 đợt 4: nâng Mức 2 — trứng 100→75 và hành lá 10→20 theo tỉ lệ đĩa của nguồn (tiền lệ trung-chien-thit-bam ở Phần A đợt 3), thêm tiêu 0,3 (3/3). Giữ nước mắm 5 dù có nguồn nêm muối — lượng tương đương, ghi nhận tranh luận nhẹ.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "xao",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -74,15 +74,15 @@
     },
     {
       "ingredient_slug": "nuoc-mam-truyen-thong",
-      "quantity": 8,
+      "quantity": 15,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
     },
     {
-      "ingredient_slug": "ot-bot",
-      "quantity": 1,
+      "ingredient_slug": "ot-tuoi",
+      "quantity": 5,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -95,18 +95,44 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hat-tieu-den",
+      "quantity": 1,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Ghẹ làm sạch, bẻ đôi, ướp chút muối tiêu.",
-    "Me chín dầm nước nóng lấy nước cốt; phi tỏi hành, cho nước me, đường thốt nốt và nước mắm vào nấu sánh.",
-    "Cho ghẹ vào đảo đều trên lửa lớn đến khi chín đỏ và áo đều sốt me."
+    "Ghẹ làm sạch, bỏ yếm và mang, chặt đôi, đập dập càng; ướp chút muối tiêu cho thấm.",
+    "Chiên ghẹ trong dầu nóng đến khi vỏ đỏ và thịt săn, vớt ra để ráo.",
+    "Me chín dầm nước nóng, lọc lấy cốt; phi thơm tỏi và hành tím, cho cốt me, nước mắm, đường vào nấu thành sốt sánh.",
+    "Cho ghẹ vào chảo sốt, rang lửa vừa 5–7 phút, đảo đều cho sốt áo kín vỏ ghẹ.",
+    "Cho ớt tươi thái lát và tiêu xay vào, đảo thêm 1 phút rồi tắt bếp, dùng nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://congthucgiadinh.com/mon-an/ghe-rang-me",
+      "accessed": "2026-10-31",
+      "note": "Công Thức Gia Đình: ghẹ rang me — nước mắm lượng cao hơn hẳn bản cũ, dùng ớt tươi."
+    },
+    {
+      "url": "https://nauankhongkho.vn/blog/cach-lam-ghe-rang-me-4BXDPoJrQAMQ",
+      "accessed": "2026-10-31",
+      "note": "Nấu Ăn Không Khó: đối chiếu sốt me rang ghẹ và tiêu xay khi hoàn thành."
+    },
+    {
+      "url": "https://thucthan.com/cach-lam-ghe-rang-me",
+      "accessed": "2026-10-31",
+      "note": "Thực Thần: ghẹ rang me, chiên ghẹ trước khi rang sốt me cho thịt săn."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — nước mắm 8→15, đổi ớt bột 1 thành ớt tươi 5, thêm tiêu 1 theo nguồn. Giữ đường thốt nốt dù nguồn dùng đường trắng/nâu — lượng nhỏ, ghi nhận để rà soát sau.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

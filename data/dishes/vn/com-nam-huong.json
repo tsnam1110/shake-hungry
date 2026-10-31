@@ -130,7 +130,7 @@
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt DISH-004 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt DISH-004 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-004 đợt 4: thử nâng Mức 2 — GIỮ MỨC 1 vì lệch định danh: nguồn mở được là cơm nấu CÙNG nấm kiểu Nhật (justonecookbook.com/shiitake-gohan) hoặc cơm chiên nấm/oyster (enjoyfoodie.eu/what-is-shiitake-mushroom-rice; thatspicychick.com/oyster-mushroom-fried-rice) — không nguồn nào khớp cấu trúc cơm trắng + topping xào của file; thêm bất đồng: đậu phụ nguồn cao hơn file ~140%, đậu Hà Lan và nấm rơm 0/3 nguồn.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

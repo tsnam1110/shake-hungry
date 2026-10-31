@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "chien",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -30,7 +30,7 @@
     }
   ],
   "serving_desc": "1 đĩa",
-  "serving_grams": 170,
+  "serving_grams": 225,
   "ingredients": [
     {
       "ingredient_slug": "trung-ga",
@@ -42,7 +42,7 @@
     },
     {
       "ingredient_slug": "thit-lon-xay",
-      "quantity": 60,
+      "quantity": 110,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -71,18 +71,44 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-tim",
+      "quantity": 6,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Trứng đánh tan, trộn thịt xay, hành lá, nước mắm, tiêu.",
-    "Đổ hỗn hợp vào chảo, chiên lửa vừa thành bánh dày, lật mặt chiên vàng đều (khoảng 8 phút).",
-    "Cắt miếng tam giác, dùng nóng. Món mặn nhanh: tổng thời gian nấu ~15 phút, nguyên liệu phổ thông."
+    "Thịt băm ướp với hành tím băm, nước mắm và tiêu khoảng 10–15 phút cho thấm.",
+    "Đập trứng vào tô, đánh tan; cho thịt đã ướp và hành lá vào trộn đều.",
+    "Làm nóng dầu trong chảo, đổ hỗn hợp trứng thịt vào, dàn đều mặt chảo.",
+    "Chiên lửa nhỏ, đậy nắp 4–5 phút cho mặt dưới vàng và trứng se lại.",
+    "Lật mặt, chiên tiếp 3–4 phút cho chín đều; cắt miếng vừa ăn, dùng nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://saigonesebaguette.vn/cach-lam-trung-duc-thit/",
+      "accessed": "2026-10-31",
+      "note": "Saigonese Baguette: 300 g thịt băm với 5–6 quả trứng — tỉ lệ thịt cao, rán lửa nhỏ mỗi mặt 4–5 phút."
+    },
+    {
+      "url": "https://dayhocnghe.edu.vn/cach-nau-thit-bam-voi-trung-don-gian-hap-dan-va-day-du-dinh-duong/",
+      "accessed": "2026-10-31",
+      "note": "Dạy Học Nghề: trứng chiên thịt băm có hành tím 2 củ, chiên mỗi mặt khoảng 5 phút."
+    },
+    {
+      "url": "https://toyenxin.com/blog-1/cac-buoc-lam-mon-trung-duc-thit-vi-cb.html",
+      "accessed": "2026-10-31",
+      "note": "ToyenXin: 200 g thịt băm, 4 quả trứng, ướp thịt với hành tím trước khi đúc trứng."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Trứng đúc thịt miền Bắc là bánh trứng-thịt chiên chảo, mặt xém — khác trung-hap-thit (custard hấp mềm). Món chiên theo quy ước Phương án A (EDITORIAL-GUIDE §12): công thức KHÔNG kê dầu của bước chiên chính — dầu hấp thụ do engine mô hình hoá theo hệ số CALC-004 của nguyên liệu. Nghiên cứu Mức 2 đợt 3 (LV2-003, 2026-10-31): GIỮ Mức 1 — không mở kiểm chứng được nguồn nào do provider chặn 429 (chỉ có trích đoạn tìm kiếm). Tín hiệu phân xử mạnh chờ mở xác nhận: tỉ lệ thịt/trứng ở 4 trích đoạn nguồn là 100–150 g thịt trên 100 g trứng, file chỉ 60 g thịt trên 100 g trứng (thấp hơn 40–60%); hành khô/hành tím có ở 4/4 trích đoạn, file chỉ có hành lá.",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Trứng đúc thịt miền Bắc là bánh trứng-thịt chiên chảo, mặt xém — khác trung-hap-thit (custard hấp mềm). Món chiên theo quy ước Phương án A (EDITORIAL-GUIDE §12): công thức KHÔNG kê dầu của bước chiên chính — dầu hấp thụ do engine mô hình hoá theo hệ số CALC-004 của nguyên liệu. Nghiên cứu Mức 2 đợt 3 (LV2-003, 2026-10-31): GIỮ Mức 1 — không mở kiểm chứng được nguồn nào do provider chặn 429 (chỉ có trích đoạn tìm kiếm). Tín hiệu phân xử mạnh chờ mở xác nhận: tỉ lệ thịt/trứng ở 4 trích đoạn nguồn là 100–150 g thịt trên 100 g trứng, file chỉ 60 g thịt trên 100 g trứng (thấp hơn 40–60%); hành khô/hành tím có ở 4/4 trích đoạn, file chỉ có hành lá.  [LV2-004 đợt 4: nâng Mức 2 — thịt xay 60→110 và thêm hành tím 6 (tỉ lệ thịt:trứng của cả 3 nguồn đều cao hơn hẳn bản cũ); serving 170→225.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

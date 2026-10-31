@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "sang",
@@ -52,7 +52,7 @@
       "ingredient_slug": "trung-cut",
       "quantity": 20,
       "unit_name": "g",
-      "is_optional": false,
+      "is_optional": true,
       "source": "llm_suggested",
       "confidence": "low"
     },
@@ -111,18 +111,44 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "ca-rot",
+      "quantity": 25,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Luộc gà lấy nước dùng, thịt gà xé sợi hoặc thái lát.",
-    "Trụng hủ tiếu và giá, xếp thịt gà và trứng cút vào tô.",
-    "Chan nước dùng nóng, thêm xà lách và hành lá."
+    "Gà làm sạch, luộc cùng hành tây và củ cải trắng cho nước dùng ngọt trong; vớt gà ra, xé hoặc chặt miếng vừa ăn, lọc lại nước dùng.",
+    "Cà rốt gọt vỏ cắt khoanh, cho vào nồi nước dùng nấu chín tới để tăng vị ngọt.",
+    "Tỏi băm phi vàng giòn để riêng làm tỏi phi.",
+    "Trụng sợi hủ tiếu trong nước sôi cho mềm dai, cho vào tô cùng giá đỗ và xà lách.",
+    "Xếp thịt gà (và trứng cút nếu thích) lên trên, chan nước dùng nóng, rắc hành lá và tỏi phi, nêm chút nước mắm và đường phèn cho vừa miệng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-nau-hu-tieu-ga-02245",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH: hủ tiếu gà — nước dùng ninh gà cùng củ cải, hành tây; có cà rốt trong nồi nước dùng."
+    },
+    {
+      "url": "https://comgiaotannoi.net/cach-nau-hu-tieu-ga/",
+      "accessed": "2026-10-31",
+      "note": "Cơm Giao Tận Nơi: đối chiếu thành phần tô hủ tiếu gà, trứng cút thuộc biến thể."
+    },
+    {
+      "url": "https://nhaxinhplaza.vn/gia-dinh/cach-nau-hu-tieu-ga.html",
+      "accessed": "2026-10-31",
+      "note": "Nhà Xinh Plaza: hủ tiếu gà gia đình, trứng cút không bắt buộc."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt DISH-004 đợt 2 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.",
+  "import_note": "Soạn nháp đợt DISH-004 đợt 2 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — trứng cút chuyển thành tuỳ chọn (chỉ xuất hiện ở biến thể, không phải cốt lõi hủ tiếu gà), thêm cà rốt 25 (2/3 nguồn có trong nước dùng). Ghi nhận chờ quy ước chung toàn kho: nguồn dùng ~125 g sợi khô cho tô ~750 g, không khớp serving 530 của kho — giữ sợi 60 theo quy ước hiện tại.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

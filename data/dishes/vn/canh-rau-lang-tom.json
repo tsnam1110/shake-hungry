@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "trua",
@@ -34,7 +34,7 @@
   "ingredients": [
     {
       "ingredient_slug": "rau-lang",
-      "quantity": 70,
+      "quantity": 100,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -42,7 +42,7 @@
     },
     {
       "ingredient_slug": "tom-su",
-      "quantity": 50,
+      "quantity": 60,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -50,7 +50,7 @@
     },
     {
       "ingredient_slug": "hanh-tim",
-      "quantity": 3,
+      "quantity": 6,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -63,18 +63,60 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dau-an",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "ot-bot",
+      "quantity": 0.5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "mam-ruoc",
+      "quantity": 2,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Rau lang nhặt ngọn và lá non, rửa sạch; tôm bóc vỏ bỏ chỉ lưng.",
-    "Đun sôi nước, cho tôm vào nấu vừa đỏ.",
-    "Thả rau lang nấu 2 phút, nêm nước mắm, dùng nóng."
+    "Rau lang nhặt lấy lá và ngọn non, ngâm rửa sạch, để ráo; tôm bóc nõn, rút chỉ, ướp chút muối và tiêu.",
+    "Phi thơm hành tím với dầu ăn, cho tôm vào xào nhanh đến khi đỏ săn.",
+    "Châm nước vừa tô, đun sôi, hớt bọt.",
+    "Cho rau lang vào, nấu sôi lại 2–3 phút cho rau vừa mềm, còn xanh.",
+    "Nêm nước mắm và ớt bột vừa ăn (có thể thêm chút mắm ruốc cho đúng vị miền Trung), tắt bếp."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-nau-canh-rau-lang-nau-tom-09295",
+      "accessed": "2026-10-31",
+      "note": "Điện Máy XANH: canh rau lang nấu tôm, phi hành xào tôm trước, rau nấu vừa chín tới."
+    },
+    {
+      "url": "https://giaothonghanoi.kinhtedothi.vn/canh-rau-lang-nau-tom-d35585.amp",
+      "accessed": "2026-10-31",
+      "note": "VOV Giao thông (bản AMP): đối chiếu tỉ lệ rau/tôm theo tô và nêm ớt bột kiểu miền Trung."
+    },
+    {
+      "url": "https://memart.vn/tin-tuc/blog2/canh-rau-lang-nau-tom-vi-cb.html",
+      "accessed": "2026-10-31",
+      "note": "Memart: canh rau lang nấu tôm — xác nhận dầu phi hành và hành tím lượng khá trong bản miền Trung."
+    }
+  ],
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — co tỉ lệ theo tô 300 g của kho: rau lang 70→100, tôm 50→60, hành tím 3→6, thêm dầu 5 (3/3), ớt bột 0,5 (2/3) và mắm ruốc 2 tuỳ chọn (1/3 nguồn, nét miền Trung).]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
