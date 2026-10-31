@@ -38,6 +38,14 @@
   "edible_portion_note": "CHƯA CÓ hệ số có nguồn: cua biển bán nguyên con cả mai; giá trị trên phần thịt. Cần tự cân (mai+yếm cua chiếm phần lớn khối lượng).",
   "is_ready_to_eat": false,
   "units": [],
+  "media": [
+    {
+      "path": "media/ingredients/cua-bien.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "low",
   "needs_review": true,

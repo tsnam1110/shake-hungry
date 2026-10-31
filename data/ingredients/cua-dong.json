@@ -38,6 +38,14 @@
   "edible_portion_note": "CHƯA CÓ hệ số: cua đồng giã lọc lấy riêu — khái niệm phần ăn được phức tạp hơn (lọc bã). Ghi nhận để xử lý riêng khi nhập món canh cua.",
   "is_ready_to_eat": false,
   "units": [],
+  "media": [
+    {
+      "path": "media/ingredients/cua-dong.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "source": "curated",
   "confidence": "low",
   "needs_review": true,
