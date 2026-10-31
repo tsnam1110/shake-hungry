@@ -11,13 +11,13 @@
     },
     {
       "locale": "en",
-      "name": "Duck stir-braised with fresh bamboo shoots",
+      "name": "Duck simmered with fresh bamboo shoots (vit xao mang)",
       "is_primary": true
     }
   ],
   "is_eat_out": true,
   "is_home_cook": true,
-  "cooking_method": "xao",
+  "cooking_method": "nau",
   "completeness_level": 2,
   "meal_slots": [
     {
@@ -29,7 +29,7 @@
       "weight": 8
     }
   ],
-  "serving_desc": "1 đĩa",
+  "serving_desc": "1 phần (ăn kèm bún/cơm)",
   "serving_grams": 250,
   "ingredients": [
     {
@@ -50,6 +50,14 @@
     },
     {
       "ingredient_slug": "hanh-tim",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "gung",
       "quantity": 5,
       "unit_name": "g",
       "is_optional": false,
@@ -87,16 +95,24 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "ngo-gai",
+      "quantity": 3,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Chặt thịt vịt thành miếng vừa ăn, rửa sạch và để thật ráo khoảng 10 phút, rồi ướp với nước mắm và hạt tiêu đen 30 phút cho thịt thấm và săn mặt.",
+    "Chặt thịt vịt thành miếng vừa ăn, rửa sạch và để thật ráo khoảng 10 phút, rồi ướp với gừng đập dập, nước mắm và hạt tiêu đen 30 phút cho thịt thấm, săn mặt và bớt mùi hôi.",
     "Luộc măng tươi trong nước sôi 7–10 phút, đổ bỏ nước đắng rồi xả lại và để ráo; lặp lại thêm một lần nếu măng còn đắng, đến khi măng mềm mà vẫn giữ độ giòn.",
     "Phi hành tím với dầu ăn trên lửa vừa 1–2 phút, đảo đều tay đến khi hành thơm và chuyển vàng nhạt.",
     "Cho vịt đã ướp vào xào trên lửa lớn 5–7 phút, đảo cho thịt săn, mặt thịt xém nhẹ và ra bớt mỡ thì giảm lửa.",
     "Xào riêng măng với một ít dầu ăn và hành tím trên lửa vừa 3–4 phút, đảo đều đến khi măng thấm và dậy mùi thơm.",
     "Cho măng vào nồi vịt, thêm nước vừa xâm xấp, đun sôi rồi hạ lửa nhỏ nấu 20–25 phút không đậy kín nắp, hớt bọt thường xuyên đến khi vịt mềm và nước nấu trong.",
-    "Nêm lại bằng nước mắm, nấu thêm khoảng 2 phút cho vị mặn thấm đều, rồi tắt bếp, rắc hành lá và hạt tiêu đen khi hành vừa xanh và dậy mùi."
+    "Nêm lại bằng nước mắm, nấu thêm khoảng 2 phút cho vị mặn thấm đều, rồi tắt bếp, rắc hành lá, ngò gai thái nhỏ và hạt tiêu đen khi hành vừa xanh và dậy mùi."
   ],
   "recipe_sources": [
     {
@@ -118,7 +134,7 @@
   "media": [],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-005 đợt 5: nâng Mức 2 — đối chiếu 3 nguồn công thức. Định lượng: không thay đổi dòng nào vì hồ sơ không có đề xuất đạt đồng thuận để sửa. Bất thường ghi nhận: cả 3 nguồn đều mô tả món nấu/om nhiều nước ăn kèm thay vì xáo dạng đĩa như file, thời gian làm mềm vịt dài hơn hẳn mức 12 phút ở bước cũ, và đều dùng thêm nguyên liệu khử hôi cùng rau thơm cuối món không có trong file; kèm ghi nhận vùng miền vn-central chưa được nguồn khẳng định rõ — chờ pha phân xử.]",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-005 đợt 5: nâng Mức 2 — đối chiếu 3 nguồn công thức. Định lượng: không thay đổi dòng nào vì hồ sơ không có đề xuất đạt đồng thuận để sửa. Bất thường ghi nhận: cả 3 nguồn đều mô tả món nấu/om nhiều nước ăn kèm thay vì xáo dạng đĩa như file, thời gian làm mềm vịt dài hơn hẳn mức 12 phút ở bước cũ, và đều dùng thêm nguyên liệu khử hôi cùng rau thơm cuối món không có trong file; kèm ghi nhận vùng miền vn-central chưa được nguồn khẳng định rõ — chờ pha phân xử.] [Phân xử LV2-006 Phần A (2026-10-31): SỬA cooking_method xao → nau (3/3 nguồn đều là món nấu/om nhiều nước ăn kèm bún/cơm, không phải xáo dạng đĩa); TÊN món GIỮ 'Vịt xáo măng' vì chính nguồn VinID dùng tên này cho đúng món nấu đó — 'xáo' là tên gọi đã chứng thực của món, không phải mô tả kỹ thuật. serving_desc '1 đĩa' → '1 phần (ăn kèm bún/cơm)', serving_grams giữ 250. BỔ SUNG gừng 5g (3/3 nguồn đều dùng gừng khử hôi vịt) và ngò gai 3g (3/3 nguồn có rau thơm cuối món; VinID định lượng 10g/mẻ) — ngò gai là dòng gia vị nhỏ, slug ngo-gai hiện chưa có số dinh dưỡng nên không đổi kết quả tính calo. Măng tươi giữ 120g (khớp nguồn ~125g/khẩu phần). Vùng vn-central GIỮ theo gán biên tập DISH-005 vì nguồn không khẳng định vùng — ghi nhận mở.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
