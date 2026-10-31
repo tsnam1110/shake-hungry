@@ -161,7 +161,14 @@
       "note": "Gia đình & Sức Khỏe Đời Sống (báo chí): nộm đu đủ tai heo có hành tím phi — biến thể mở rộng có thêm tôm và xoài xanh, không đưa vào file."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/nom-tai-heo.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. THIẾU NGUYÊN LIỆU: đu đủ xanh (slug du-du-xanh — kho hiện chỉ có đu đủ chín, không thay thế được) — cần bổ sung vào kho. [LV2-007 đợt 7: nâng Mức 2 — 3 nguồn phân biệt đã mở. SỬA đu đủ xanh 60→120g (2 nguồn độc lập đồng thuận ≥2 lần: 125 và ~150–175g), lạc rang 15→25g (đồng thuận tuyệt đối); BỔ SUNG hành phi 4g (2 nguồn có hành tím phi); serving 200→250g theo tổng nguyên liệu sau sửa. GIỮ tai heo 80g — nguồn phân kỳ mạnh (37,5 ở bản có tôm gánh đạm; ~125–150 ở mẻ 2 người/1 tai), 80 nằm giữa dải. KHÔNG thêm tôm: thuộc biến thể (nguồn đúng định danh nhất không có tôm). Ghi chú cũ trong file nói kho chỉ có đu đủ chín là đã lỗi thời — slug du-du-xanh nay đã có.]",

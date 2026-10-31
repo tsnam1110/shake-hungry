@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "xao",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "toi",
@@ -95,18 +95,58 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dau-an",
+      "quantity": 8,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Ốc len ngâm nước vo gạo với ớt cho nhả nhớt, rửa sạch, chặt bỏ phần đuôi.",
-    "Phi thơm sả, tỏi; cho nước cốt dừa vào nấu với đường, muối cho sánh nhẹ.",
-    "Cho ốc vào xào/nấu khoảng 5 phút cho thấm, rắc rau răm; ăn bằng cách hút thịt ốc, chấm muối tiêu chanh."
+    "Ngâm ốc len trong nước vo gạo cùng vài lát ớt ít nhất 3 giờ (tốt nhất qua đêm) cho nhả sạch bùn nhớt, rửa lại 2–3 lần nước sạch và để ráo.",
+    "Chặt bỏ phần trôn (đuôi) của từng con ốc khoảng 2–3 mắt vỏ để khi ăn hút được thịt ra, rửa lại cho hết dăm vỏ.",
+    "Đun nóng dầu ăn trong chảo sâu lòng, cho sả băm và tỏi băm vào phi trên lửa vừa đến khi vàng thơm.",
+    "Cho ốc vào đảo đều khoảng 1 phút, đổ nước dão dừa (hoặc nước cốt dừa pha loãng) xâm xấp mặt ốc, thêm vài cây sả đập dập, đậy nắp đun sôi.",
+    "Nêm muối và đường, hạ lửa nhỏ nấu khoảng 5 phút cho thịt ốc thấm vị và nước dão hơi sắc lại.",
+    "Cho nước cốt dừa đặc, ớt băm và rau răm cắt nhỏ vào, đảo nhẹ thêm 1–2 phút đến khi nước cốt sánh quyện quanh ốc thì tắt bếp — không đun lâu làm cốt dừa tách dầu.",
+    "Múc ra đĩa sâu lòng, ăn nóng bằng cách hút thịt ốc kèm nước cốt dừa, chấm muối tiêu chanh nếu muốn đậm vị."
   ],
-  "recipe_sources": [],
-  "media": [],
+  "recipe_sources": [
+    {
+      "url": "https://beptruong.edu.vn/cach-lam-oc-len-xao-dua",
+      "accessed": "2026-10-31",
+      "note": "Bếp Trưởng Á Âu (beptruong.edu.vn) — Ốc len xào dừa — 500g ốc len, nước cốt dừa 1 chén + nước dão 1 tô, sả băm 2 muỗng canh, ớt băm 1 muỗng canh, muối 1/4 muỗng cà phê + đường 2 muỗng cà phê, dầu ăn 2 muỗng canh. VinID đăng cùng một công thức truyền thống này — tính chung 1 họ nguồn"
+    },
+    {
+      "url": "https://vinid.net/blog/cach-lam-oc-len-xao-dua/",
+      "accessed": "2026-10-31",
+      "note": "VinID — Ốc len xào dừa truyền thống — Cùng họ công thức với Bếp Trưởng (500g ốc, cốt 1 chén + dão 1 tô) — chỉ dùng đối chiếu phụ, không tính nguồn độc lập riêng"
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/8619018",
+      "accessed": "2026-10-31",
+      "note": "Cookpad VN — Yến Trần, Ốc len xào dừa/ốc hút — 1kg ốc len, nước cốt dừa 300g + nước dão 500g, đường 4 muỗng canh, nước mắm 2 muỗng canh, sả 2–4 cây, dầu ăn 2 muỗng canh, rau răm 1 nhúm"
+    },
+    {
+      "url": "https://tripi.vn/blog/vi/kinh-nghiem-hay/kham-pha-2-cong-thuc-che-bien-oc-len-xao-dua-va-xao-sa-ot-nhung-mon-an-thom-ngon-beo-ngay-de-lam-ngay-tai-nha-tripi",
+      "accessed": "2026-10-31",
+      "note": "Tripi — Ốc len xào dừa (cho 4 người) — 1kg ốc len, nước cốt dừa 300ml (cho vào 2 lần), dầu ăn 2 muỗng canh, đường 6 muỗng canh, muối 2 muỗng cà phê; có bước xóc rượu trắng 120ml khử tanh"
+    }
+  ],
+  "media": [
+    {
+      "path": "media/dishes/oc-len-xao-dua.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt)",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-008 đợt 8: Nâng Mức 2 với 3 họ nguồn đã mở đọc (Bếp Trưởng Á Âu — VinID dùng cùng một công thức truyền thống, tính 1 họ; Cookpad VN; Tripi). Thêm: dầu ăn 8g phi sả (3/3 họ nguồn đều có, file đang thiếu). Giữ: nước cốt dừa 100g (cốt đặc quy về 300g ốc: Cookpad 90g, Tripi 90g, họ Bếp Trưởng/VinID ~145g — file nằm trong khoảng); sả 10g, tỏi 5g, ớt 3g, rau răm 5g, đường 5g (khớp họ Bếp Trưởng/VinID 2 thìa cà phê/500g), muối 2g. Không thêm nước mắm (chỉ Cookpad có, 1/3 họ). Vùng vn-south và phương pháp xào giữ nguyên.]",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

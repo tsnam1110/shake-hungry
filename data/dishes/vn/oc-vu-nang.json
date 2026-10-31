@@ -69,7 +69,14 @@
     "Ốc vú nàng nướng mỡ hành (tạm tính bằng ốc bươu — chờ bổ sung nguyên liệu riêng)."
   ],
   "recipe_sources": [],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/oc-vu-nang.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": {
     "id": "Q25418402",
