@@ -85,7 +85,7 @@
     {
       "url": "https://vuonxanhpho.vn/blogs/rau-cu/cach-nau-canh-rau-ngot-thit-bam-thanh-mat-don-gian-cho-bua-com-gia-dinh/?p=1646",
       "accessed": "2026-10-31",
-      "note": "Vườn Xanh Phố: rau ngót 200 g + thịt heo băm 150 g cho 3 người, nước 1 lít; ướp thịt 15 phút, cho thịt vào nước sôi, hớt bọt rồi cho rau ngót, sôi lại thì tắt bếp"
+      "note": "Vườn Xanh Phố: rau ngót 200 g + thịt heo băm 150 g cho 3 người, nước 1 lít; ướp thịt 15 phút, cho thịt vào nước sôi, hớt bọt rồi cho rau ngót, sôi lại thì tắt bếp. (Tái kiểm chứng LINK-ROT 2026-11-01: máy chủ chặn kết nối của mọi công cụ kiểm tra — curl bị ngắt giữa chừng, trình duyệt chỉ lấy được bản lưu chỉ mục — nên trạng thái sống CHƯA KẾT LUẬN; nội dung khớp bản lưu. Nguồn này không tính vào cổng 3 nguồn sống của món; cổng do 3 nguồn xác nhận sống còn lại bảo đảm — xem import_note.)"
     },
     {
       "url": "https://bepxua.vn/canh-rau-ngot-thit-bam-ban-biet-cach-nau-sao-cho-that-mem-rau-va-ngot-nuoc-chua/?noamp=mobile",
@@ -93,9 +93,14 @@
       "note": "Bếp Xưa: rau ngót 1 bó + thịt nạc thăn bằm 150 g/mẻ; xào thịt 2 phút rồi xào chung rau ngót cho mềm mới chế nước sôi — kỹ thuật xào trước giúp rau ngọt, không dai"
     },
     {
-      "url": "https://bingofood.net/canh-rau-ngot-nau-thit-nac-bam",
-      "accessed": "2026-10-31",
-      "note": "Bingo Food: rau ngót 300 g + thịt nạc vai 150 g + nước 1 lít/mẻ; ướp thịt với nước mắm 15 phút, xào thịt và rau riêng với dầu rồi mới đổ nước đun cho rau chín mềm"
+      "url": "https://www.bluestone.com.vn/blogs/vao-bep/canh-rau-ngot-thit-bam",
+      "accessed": "2026-11-01",
+      "note": "BlueStone: canh rau ngót thịt băm — Đã mở đọc trực tiếp 2026-11-01 (nguồn thay thế cho bản Bingo Food đã chết link, xem import_note). Rau ngót 1 bó lớn + thịt heo xay 150 g + hành tím 2 củ + dầu ăn 1 muỗng canh, nước khoảng 1 lít; ướp thịt với hành tím băm và chút nước mắm, xào thịt săn bằng dầu trước rồi đổ nước, cho rau ngót đã vò vào nấu sôi lại 1–2 phút."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/25590433",
+      "accessed": "2026-11-01",
+      "note": "Cách Làm Món Canh Rau Ngót Thịt Băm của Bòn Bon - Cookpad — Đã mở đọc trực tiếp 2026-11-01 (nguồn bổ sung để món có đủ 3 nguồn xác nhận sống, xem import_note). 1 tô: rau ngót 200 g + thịt heo băm 100 g + hành tím 1 củ + nước 800 ml + dầu ăn 1 muỗng canh + nước mắm 1 muỗng cà phê; phi hành tím với dầu, xào thịt săn, xào sơ rau ngót cho ngấm vị rồi đổ nước, nấu thêm 3–5 phút."
     }
   ],
   "media": [
@@ -108,7 +113,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nâng Mức 2 đợt 2 (2026-10-31): đã mở kiểm chứng 3 nguồn (Vườn Xanh Phố: rau ngót 200 g + thịt 150 g cho 3 người, nước 1 lít; Bếp Xưa: rau 1 bó + thịt 150 g; Bingo Food: rau 300 g + thịt 150 g, nước 1 lít). Phân xử định lượng: giữ nguyên toàn bộ — rau ngót quy đổi ~44–67 g/khẩu phần tùy đường quy đổi (theo khẩu phần ghi rõ hay theo tổng mẻ), số file 60 g nằm trong khoảng; thịt quy đổi ~31–50 g/khẩu phần, số file 40 g nằm trong khoảng. Bất thường ghi nhận (không tự thêm/bớt dòng, chờ pha phân xử riêng): 2/3 nguồn (Bếp Xưa, Bingo Food) xào thịt và rau với dầu ăn trước khi cho nước mà file không có dòng dầu ăn; về gia vị, Bếp Xưa chủ động khuyên không nêm nước mắm (sợ canh ám vị chua) trong khi Bingo Food ướp/nêm nước mắm như file — tranh luận gia vị đã ghi nhận, giữ nguyên nước mắm 5 g. Phân xử bất thường LV2-002 (Phần A, 2026-10-31): Thêm dau-an 3 g — 2/3 nguồn (Bếp Xưa, Bingo Food) xào thịt và rau với dầu trước khi cho nước, file chưa có dòng dầu. Lưu ý đối chiếu: hành tím file ĐÃ có sẵn 3 g (điểm \"thiếu hành tím\" ở tổng hợp LV2-002 §5 là lỗi thời so với note chi tiết); tranh luận nước mắm (Bếp Xưa khuyên không nêm) giữ nguyên như ghi nhận đợt 2.",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nâng Mức 2 đợt 2 (2026-10-31): đã mở kiểm chứng 3 nguồn (Vườn Xanh Phố: rau ngót 200 g + thịt 150 g cho 3 người, nước 1 lít; Bếp Xưa: rau 1 bó + thịt 150 g; Bingo Food: rau 300 g + thịt 150 g, nước 1 lít). Phân xử định lượng: giữ nguyên toàn bộ — rau ngót quy đổi ~44–67 g/khẩu phần tùy đường quy đổi (theo khẩu phần ghi rõ hay theo tổng mẻ), số file 60 g nằm trong khoảng; thịt quy đổi ~31–50 g/khẩu phần, số file 40 g nằm trong khoảng. Bất thường ghi nhận (không tự thêm/bớt dòng, chờ pha phân xử riêng): 2/3 nguồn (Bếp Xưa, Bingo Food) xào thịt và rau với dầu ăn trước khi cho nước mà file không có dòng dầu ăn; về gia vị, Bếp Xưa chủ động khuyên không nêm nước mắm (sợ canh ám vị chua) trong khi Bingo Food ướp/nêm nước mắm như file — tranh luận gia vị đã ghi nhận, giữ nguyên nước mắm 5 g. Phân xử bất thường LV2-002 (Phần A, 2026-10-31): Thêm dau-an 3 g — 2/3 nguồn (Bếp Xưa, Bingo Food) xào thịt và rau với dầu trước khi cho nước, file chưa có dòng dầu. Lưu ý đối chiếu: hành tím file ĐÃ có sẵn 3 g (điểm \"thiếu hành tím\" ở tổng hợp LV2-002 §5 là lỗi thời so với note chi tiết); tranh luận nước mắm (Bếp Xưa khuyên không nêm) giữ nguyên như ghi nhận đợt 2. [LINK-ROT-FIX 2026-11-01] Nguồn cũ chết link — https://bingofood.net/canh-rau-ngot-nau-thit-nac-bam (HTTP 404, xác nhận qua 2 lượt quét LINK-ROT và mở trực tiếp ngày 2026-11-01) — phát hiện LINK-ROT 2026-11-01, đã thay bằng BlueStone và bổ sung Cookpad Bòn Bon (25590433), cả hai đều mở đọc trực tiếp cùng ngày. Sau đợt này món có 3 nguồn xác nhận sống bằng mở trực tiếp (Bếp Xưa, BlueStone, Cookpad Bòn Bon); nguồn Vườn Xanh Phố chưa kết luận được trạng thái sống (máy chủ chặn kết nối của công cụ kiểm tra ở cả 2 lượt quét LINK-ROT và lượt rà này; nội dung khớp bản lưu chỉ mục) nên giữ trong danh sách kèm ghi chú trạng thái, không tính vào cổng. Đối chiếu lại định lượng với bộ nguồn sau thay: thịt của các nguồn sống 100–150 g/mẻ (Bếp Xưa 150, BlueStone 150, Cookpad 100 — trung vị 150), rau ngót 200 g hoặc 1 bó; định lượng file (rau 60 g, thịt 40 g/khẩu phần) nằm trong dải đã phân xử ở LV2-002, giữ nguyên. Dòng dầu ăn 3 g nay được 3/4 nguồn ủng hộ (Bếp Xưa, BlueStone, Cookpad đều xào thịt bằng dầu trước khi cho nước). Món giữ Mức 2.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

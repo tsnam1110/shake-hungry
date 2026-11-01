@@ -100,3 +100,63 @@ canh-rau-lang-tom (2), banh-xu-xe (2) và các URL rải rác còn lại từ PX
 
 Kiểm chứng đợt: validate trên DB kiểm chứng riêng 0 🔴, recompute đủ, Pest xanh (chi tiết ở commit
 của đợt).
+
+## 8. LINK-ROT-FIX — thay nguồn cho 4 món rớt cổng vì rot MỚI (baseline LINK-ROT 2026-11-01)
+
+Baseline đầu tiên của cơ chế quét định kỳ LINK-ROT (commit `a44dd5c`, báo cáo
+`tools/link-rot-check/reports/2026-11-01.md`: 1.994 URL duy nhất — 1.572 sống, 10 chết xác nhận,
+412 chưa kết luận) phát hiện rot MỚI sau pha AUDIT-FIX: **4 món Mức 2 rớt xuống dưới 3 nguồn sống**.
+Đợt này xử lý đúng 4 món đó theo quy trình nhóm A §1: xác nhận lại từng URL chết bằng mở trực tiếp
+(cả 4 URL đều HTTP 404 khi mở ngày 2026-11-01, khớp kết quả 2 lượt quét của baseline; không URL nào
+thuộc domain chặn bot đã biết), nguồn thay thế phải mở đọc được thật + đúng món/biến thể + độc lập
+với nguồn còn sống và không phải bản sao của nguồn đã chết, đối chiếu lại định lượng theo bộ nguồn
+sau thay, truy vết nguồn chết vào `import_note` từng món. **Kết quả: cả 4 món khôi phục cổng,
+0 món hạ mức, 0 món đổi định lượng → tổng Mức 2 giữ nguyên 472/654.**
+
+| Món | Trước | Nguồn chết (đã xác nhận lại) | Nguồn thay thế / bổ sung (mở đọc trực tiếp 2026-11-01) | Đối chiếu định lượng |
+|---|---|---|---|---|
+| `banh-uot-long-ga` | 2/3 | dienmaycholon.com/mon-ngon/cach-lam-banh-uot-long-ga (404; bản sao của công thức ĐMX) | Cookpad Hoàng Thị Tố Hà `22556298` — bột gạo 100 g + bột năng 75 g, gà và lòng 500 g cho 3 người; bộ số và cấu trúc khác hẳn họ đã chết → độc lập | Tổng bột file 75 g/đĩa so với trung vị nguồn sống ~58 g/người (Kim Dung ~40, Tố Hà ~58, Annie Vo quy đổi ~83): lệch +29%, trong ngưỡng 30% → giữ nguyên toàn bộ |
+| `canh-bi-ro-suon` | 2/3 | thegioiamthuc.com/mon-canh-bi-do-suon-non-2/ (404; cụm thegioiamthuc.com chết cả cụm 3/3 URL) | Bếp Mina (bepmina.vn) — sườn heo 400 g + bí đỏ 500 g, khẩu phần 4 người | Bí 120 g/tô nằm trong dải nguồn sống quy đổi; sườn 70 g/tô ở cận dưới (Bếp Mina 100 g/người → −30%, đúng ngưỡng chưa vượt) → giữ nguyên, ghi nhận cận sườn để rà ở đợt hiệu chuẩn sau |
+| `canh-rau-ngot-thit-bam` | 1/3 | bingofood.net/canh-rau-ngot-nau-thit-nac-bam (404) | BlueStone — thịt heo xay 150 g + rau ngót 1 bó lớn + dầu 1 muỗng canh; **bổ sung** Cookpad Bòn Bon `25590433` — rau 200 g + thịt 100 g + dầu 1 muỗng canh | Thịt các nguồn sống 100–150 g/mẻ (trung vị 150), rau 200 g/1 bó — số file nằm trong dải đã phân xử LV2-002 → giữ nguyên; dầu ăn 3 g nay được 3/4 nguồn ủng hộ |
+| `mien-mang-ga` | 1/3 | thegioiamthuc.com/mon-mien-mang-ga/ (404; cùng cụm chết) | Tripi — miến dong 300 g + măng khô 200 g (tỉ lệ măng/miến 0,67), có rau răm | Tỉ lệ măng/miến của nguồn sống 0,67–0,80 (trung vị 0,75); file 35/50 = 0,70 lệch −7% → giữ nguyên |
+
+Hai điểm trạng thái nguồn phải ghi rõ:
+
+- **`canh-rau-ngot-thit-bam` — nguồn Vườn Xanh Phố CHƯA KẾT LUẬN trạng thái sống:** máy chủ ngắt
+  kết nối với mọi công cụ kiểm tra (curl "empty reply" sau bắt tay TLS; dịch vụ đọc trang chỉ trả
+  bản lưu chỉ mục) ở cả 2 lượt quét baseline và lượt rà này; nội dung khớp bản lưu, đúng bộ số đã
+  ghi trong file. Nguồn này **giữ trong `recipe_sources` kèm ghi chú trạng thái, không tính vào
+  cổng**; cổng của món do 3 nguồn xác nhận sống bằng mở trực tiếp bảo đảm (Bếp Xưa — đọc tươi lại
+  cùng ngày; BlueStone; Cookpad Bòn Bon). Tổng mục ghi nhận của món là 4.
+- **`mien-mang-ga` — nguồn Điện Máy XANH tính là nguồn sống theo tiền lệ AUDIT-002:** domain chặn
+  bot (curl 000 ở cả 2 lượt quét) nên kết luận bằng mở trang: mục 5 "Miến măng gà" đúng món, đúng
+  bộ số (gà ~800 g, măng khô 200 g, miến 250 g, nấm hương 100 g cho 5 người), đã ghi vào ghi chú
+  nguồn. Nguồn Hướng Nghiệp Á Âu cũng mở đọc tươi lại cùng ngày (mục miến gà nấu măng: măng khô
+  300 g/miến 400 g). Sau thay thế món có đủ 3 nguồn.
+
+**Không rớt cổng giả / không sửa thừa:** không món nào trong 4 món là dương tính giả của baseline —
+cả 4 URL chết đều xác nhận lại được. 6 URL chết còn lại của baseline (`xoi-lac`, `cai-chua-xao-long`,
+`canh-chua-ca-nuc`, `canh-cai-cay-ca`, `muc-nhoi-thit`, nguồn của nguyên liệu `rau-ngot`) không làm
+món nào khác rớt cổng theo phân tích tác động của baseline nên ngoài phạm vi đợt này; cơ chế quét
+định kỳ tiếp tục theo dõi.
+
+Kiểm chứng đợt (DB kiểm chứng riêng `shake_hungry_linkrot`, seed từ `data/` — **không seed DB dev**):
+
+- **Validate: 0 🔴 / 11 🟡** (3.344 bản ghi; 11 🟡 đúng các lớp đã biết như §5: V10 mỡ nguyên chất,
+  V9 món nhỏ, V8 nguyên liệu chưa dùng, V7 hai cặp tên gồm PX-26).
+- **Recompute: 472 món tính đủ, 0 món chưa đủ dữ liệu**, 182 món Mức 1 — khớp đếm
+  `completeness_level` trên file (472/654) và giữ nguyên tổng Mức 2 trước đợt: khớp 3 cách.
+- **Đối chiếu calo cách ly: không áp dụng** — 0 món đổi định lượng/nguyên liệu ở đợt này (chỉ đổi
+  `recipe_sources` + nối truy vết `import_note`), khoảng kcal không thể thay đổi.
+- **Pest: 149/149 (580 assertions)** ở lượt chạy cửa sổ sạch. Ghi nhận vận hành: hai lượt chạy
+  trước đó fail rải rác/hàng loạt vì **va chạm DB test với phiên song song** đang triển khai
+  TCM-000 trên cùng VM (đúng mối nguy đã ghi ở §6 và UI-014 — phiên đó chạy migrate/tinker/Pest
+  đồng thời); test fail khi chạy đơn lẻ đều PASS, lượt cuối không va chạm xanh toàn bộ. Lượt chạy
+  đầu của đợt (trước khi phiên song song hoạt động mạnh) đạt 132/134 với 2 fail đều trỏ vào
+  migration mới `2026_11_01_100010_tcm000_foundation.php` của phiên đó — ngoài phạm vi đợt này.
+- **Rà độc lập nguồn thay thế: 100% (5/5) entry nguồn mới** (Cookpad 22556298, Bếp Mina, BlueStone
+  canh rau ngót, Cookpad 25590433, Tripi miến măng gà) đều là bản đọc tươi trực tiếp trong đợt,
+  không dùng bản lưu; nguồn còn sống của 4 món cũng kiểm lại cùng ngày (Cookpad 14295294 và
+  17028619 HTTP 200; Bếp Xưa, Hướng Nghiệp Á Âu đọc tươi toàn văn; ĐMX kết luận theo đoạn trên).
+- Tài liệu cùng commit (QT-7): mục này + CLAUDE §0 (dòng dữ liệu món ăn) + ROADMAP (dòng LINK-ROT).
+  Tổng Mức 2 không đổi nên không có số liệu nào phải sửa — chỉ ghi bổ sung.

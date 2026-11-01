@@ -176,9 +176,9 @@
   ],
   "recipe_sources": [
     {
-      "url": "https://dienmaycholon.com/mon-ngon/cach-lam-banh-uot-long-ga",
-      "accessed": "2026-10-31",
-      "note": "Cách làm bánh ướt lòng gà chuẩn Đà Lạt - Điện Máy Chợ Lớn — Đã mở đọc (bản sao nguyên bộ số của công thức Điện Máy XANH; các bản Bibi/Kinhdofood sao cùng bộ số — tính 1 họ). Cả mẻ: bột gạo 200g + bột năng 70g + 700ml nước; đùi gà 200g; lòng gà (mề, tim, gan, trứng non) 300g; hành tây 100g; hành phi 50g; nước chấm 50g nước mắm + 100g đường + 200ml nước. Quy mẻ ~4 đĩa: bột gạo 50, bột năng ~18, thịt gà 50, lòng+trứng 75, hành tây 25, hành phi 12,5 mỗi đĩa."
+      "url": "https://cookpad.com/vn/cong-thuc/22556298",
+      "accessed": "2026-11-01",
+      "note": "Cách Làm Món Bánh ướt Lòng Gà đà Lạt của Hoàng Thị Tố Hà - Cookpad — Đã mở đọc trực tiếp 2026-11-01 (nguồn thay thế cho bản Điện Máy Chợ Lớn đã chết link, xem import_note). 3 người: gà 500g (ức, đùi và lòng gà); bột bánh ướt tự tráng bằng chảo: bột gạo 100g + bột năng 75g + 450g nước, muối, dầu ăn (tráng được 14 bánh); hành tây 1/2 củ; rau húng quế 30g; sốt trộn gỏi 2 muỗng canh nước mắm + 2 muỗng canh đường + 1 muỗng canh nước + 1 muỗng canh cốt chanh; lòng có trứng non để riêng trộn nhẹ tay. Quy 1 phần: bột ~58g, gà và lòng ~167g (tính cả xương da). Bộ số và cấu trúc khác hẳn họ ĐMX/Điện Máy Chợ Lớn đã chết (bột gạo 200g + bột năng 70g/mẻ) — nguồn độc lập, không phải bản sao."
     },
     {
       "url": "https://cookpad.com/vn/cong-thuc/14295294",
@@ -201,7 +201,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. THIẾU NGUYÊN LIỆU: trứng gà non (slug trung-ga-non — thành phần đặc trưng ăn kèm, ghi là tuỳ chọn) — cần bổ sung vào kho. [LV2-012 đợt vét] Nâng Mức 2: đối chiếu 3 họ đã mở (Điện Máy Chợ Lớn/ĐMX, Cookpad Kim Dung, Cookpad Annie Vo) — biến thể gỏi gà xé + lòng gà Đà Lạt. Mọi định lượng chính của file nằm trong dải các họ khi quy về đĩa 300g (bột gạo 60 so với 50 của họ ĐMX; thịt gà 60 so với ~50; mề 30 + gan 25 so với lòng gộp 37-75; trứng non 20 khớp cả 2 họ Cookpad) nên giữ nguyên; thêm dòng gia-do 20g tuỳ chọn (cả 3 họ đều có giá trụng). Viết lại recipe_steps 7 bước.",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. THIẾU NGUYÊN LIỆU: trứng gà non (slug trung-ga-non — thành phần đặc trưng ăn kèm, ghi là tuỳ chọn) — cần bổ sung vào kho. [LV2-012 đợt vét] Nâng Mức 2: đối chiếu 3 họ đã mở (Điện Máy Chợ Lớn/ĐMX, Cookpad Kim Dung, Cookpad Annie Vo) — biến thể gỏi gà xé + lòng gà Đà Lạt. Mọi định lượng chính của file nằm trong dải các họ khi quy về đĩa 300g (bột gạo 60 so với 50 của họ ĐMX; thịt gà 60 so với ~50; mề 30 + gan 25 so với lòng gộp 37-75; trứng non 20 khớp cả 2 họ Cookpad) nên giữ nguyên; thêm dòng gia-do 20g tuỳ chọn (cả 3 họ đều có giá trụng). Viết lại recipe_steps 7 bước. [LINK-ROT-FIX 2026-11-01] Nguồn cũ chết link — https://dienmaycholon.com/mon-ngon/cach-lam-banh-uot-long-ga (HTTP 404, xác nhận qua 2 lượt quét LINK-ROT và mở trực tiếp ngày 2026-11-01) — phát hiện LINK-ROT 2026-11-01, đã thay bằng Cookpad Hoàng Thị Tố Hà (22556298, mở đọc trực tiếp cùng ngày). Hai nguồn Cookpad còn lại (Kim Dung, Annie Vo) tái kiểm chứng sống cùng ngày (HTTP 200). Đối chiếu lại định lượng với bộ nguồn sau thay: tổng bột của file 75g/đĩa (gạo 60 + năng 15) so với nguồn sống quy về 1 phần — Kim Dung bột pha sẵn ~40g, Tố Hà ~58g, Annie Vo bánh ướt sẵn 250g (quy đổi bột ~83g) — lệch +29% so với trung vị ~58g, trong ngưỡng 30% nên giữ; gà + lòng + trứng non 115–135g/đĩa nằm trong dải nguồn (Tố Hà ~167g tính cả xương da, Kim Dung ~120g). Giữ nguyên toàn bộ định lượng; món giữ Mức 2.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

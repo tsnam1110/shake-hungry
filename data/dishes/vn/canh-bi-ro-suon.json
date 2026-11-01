@@ -100,9 +100,9 @@
       "note": "BlueStone: canh bí đỏ sườn — bí 400 g, sườn 400 g, có cà rốt (biến thể màu)."
     },
     {
-      "url": "https://thegioiamthuc.com/mon-canh-bi-do-suon-non-2/",
-      "accessed": "2026-10-31",
-      "note": "Thế Giới Ẩm Thực: canh bí đỏ sườn non — bí 400 g, sườn 300 g, có đậu phộng 50 g (biến thể)."
+      "url": "https://bepmina.vn/mon-viet/cach-nau-canh-xuong-bi-do/",
+      "accessed": "2026-11-01",
+      "note": "Bếp Mina: canh xương/sườn bí đỏ — Đã mở đọc trực tiếp 2026-11-01 (nguồn thay thế cho bản Thế Giới Ẩm Thực đã chết link, xem import_note). Sườn heo 400 g, bí đỏ 500 g, khẩu phần 4 người (quy về 1 người: bí 125 g, sườn 100 g); hành tím 1 củ, hành lá, ngò gai; phi hành tím với chút dầu ăn, xào sườn săn, ninh 20–25 phút rồi cho bí đỏ vào nấu 6–7 phút. Tác giả ghi rõ có thể dùng xương cổ, xương cục hay sườn non — bản thân bài dùng sườn non."
     }
   ],
   "media": [
@@ -115,7 +115,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Điều chỉnh so với kế hoạch (kế hoạch ghi canh bí rợ nấu tôm): bản nấu tôm đã được biên soạn ở quota Trung (canh-bi-do-tom) với cùng nguyên liệu chính bí đỏ + tôm — theo phép thử biến thể EDITORIAL-GUIDE §3, bản Nam đổi sang nấu sườn để là món độc lập thật, tránh hai file gần như trùng nhau chỉ khác nhãn miền.  [LV2-004 đợt 4: nâng Mức 2 — thêm hành tím 3 và dầu ăn 2 (3/3 nguồn đều phi hành, xào sườn); giữ nguyên định lượng bí/sườn vì nằm trong dải nguồn quy về tô 350 g. Biến thể nguồn: đậu phộng (TGAT) và cà rốt (BlueStone) — không đưa vào bản chuẩn.]",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Điều chỉnh so với kế hoạch (kế hoạch ghi canh bí rợ nấu tôm): bản nấu tôm đã được biên soạn ở quota Trung (canh-bi-do-tom) với cùng nguyên liệu chính bí đỏ + tôm — theo phép thử biến thể EDITORIAL-GUIDE §3, bản Nam đổi sang nấu sườn để là món độc lập thật, tránh hai file gần như trùng nhau chỉ khác nhãn miền.  [LV2-004 đợt 4: nâng Mức 2 — thêm hành tím 3 và dầu ăn 2 (3/3 nguồn đều phi hành, xào sườn); giữ nguyên định lượng bí/sườn vì nằm trong dải nguồn quy về tô 350 g. Biến thể nguồn: đậu phộng (TGAT) và cà rốt (BlueStone) — không đưa vào bản chuẩn.] [LINK-ROT-FIX 2026-11-01] Nguồn cũ chết link — https://thegioiamthuc.com/mon-canh-bi-do-suon-non-2/ (HTTP 404; cụm thegioiamthuc.com chết cả cụm 3/3 URL; xác nhận qua 2 lượt quét LINK-ROT và mở trực tiếp ngày 2026-11-01) — phát hiện LINK-ROT 2026-11-01, đã thay bằng Bếp Mina (bepmina.vn, mở đọc trực tiếp cùng ngày). Đối chiếu lại định lượng với bộ nguồn sau thay: bí đỏ file 120 g/tô nằm trong dải nguồn sống quy đổi (BlueStone 400 g/mẻ; Bếp Mina 125 g/người; Tripi 267–400 g/người là ngoại lệ thương mại đã ghi nhận ở LV2-004); sườn file 70 g/tô ở cận dưới của dải (Bếp Mina 100 g/người → −30%, đúng ngưỡng chưa vượt; BlueStone 400 g/mẻ) — theo quy tắc chỉ sửa khi lệch quá 30% so với đồng thuận nguồn sống, giữ nguyên toàn bộ định lượng và ghi nhận cận sườn để rà soát ở đợt hiệu chuẩn sau. Biến thể đậu phộng của nguồn đã chết vẫn không đưa vào bản chuẩn. Món giữ Mức 2.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
