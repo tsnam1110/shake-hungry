@@ -40,3 +40,46 @@
 ## 5. Kiểm chứng cuối
 
 Census lượt cuối chạy lại toàn bộ sau sự cố VM thay mới giữa đợt (khôi phục PHP/MySQL, seed lại DB kiểm chứng): 434/654/82, 0 lệch cơ học, validate 0 🔴, số liệu hai phương pháp khớp nhau. Không chạy Pest (không cần cho kết luận + tránh tranh tiến trình với AUDIT-003/AUDIT-004 song song). Không seed DB dev, không chạm 7 file món dở của phiên song song. Script rà lưu tại `~/workspace/goals/l-c-i-shake-hungry-development/hidden_files/audit-allergen/` (census.php, census_files.py, analyze.py, identity_scan.py, preset_gap.py, pool_check.php).
+
+## 6. Khắc phục ALLERGEN-FIX — ĐÃ XONG (2026-11-01)
+
+Chỉ các mục đã kết luận; ALG-Q1…Q4 giữ nguyên chờ chủ dự án.
+
+- **FIX-A1 ✅** — Xoá preset slug viết tay ở `shake.blade.php`/`profile.blade.php`;
+  thêm `App\Taxonomy\AllergenPreset` sinh danh sách loại trừ **từ `TaggingRules`**
+  trên toàn bộ catalog nguyên liệu (nguồn sự thật duy nhất; thứ tự + tên chip lấy
+  từ `config/taxonomy.php` — trùng tên badge "Dị ứng: ..." ở trang chi tiết).
+  Cả hai trang nay hiển thị **đủ 11 chip** (có thêm Cá, Động vật có vỏ, Mè) và mọi
+  slug có nhãn (nhóm đậu nành 12 slug gồm `nuoc-tuong`; tôm 12 gồm
+  `tom-cang-xanh`; cua có `ghe`...). Cơ chế preset của hồ sơ
+  (`excluded_ingredients`) và cách `Recommender` nhận danh sách slug giữ nguyên —
+  chỉ thay NGUỒN danh sách. Khoá bằng `tests/Feature/AllergenExclusionTest.php`:
+  preset sinh ra ≡ tập slug có nhãn theo `TaggingRules` cho từng nhóm (chệch là
+  test đỏ) và hai trang nhúng đúng danh sách đó.
+- **Đo lại rò rỉ (mục tiêu của §5):** test hành vi chạy `Recommender::pool()` thật
+  trên toàn kho đã seed — với danh sách sinh ra, **0 món mang cờ của nhóm còn lọt
+  cho cả 11 nhóm** (trước: đậu nành 36, tôm 22, lúa mì 11, mắm tôm 9, trứng 7,
+  sữa 5, cua 3; nhóm Cá/Động vật có vỏ/Mè trước đó không chọn được). Loại oan = 0
+  theo cấu trúc (preset = đúng tập slug có nhãn; kiểm đối chứng ở đợt rà: danh
+  sách đầy đủ cho rò 0 và preset ⊆ nhãn). Ca hồi quy `banh-canh-tom-cang` bị
+  loại đúng khi chọn Tôm.
+- **FIX-A2 ✅** — `cha-bong` thêm `['ca']` vào `ALLERGENS_BY_SLUG` + `allergen:ca`
+  vào tags của `data/ingredients/cha-bong.json` (đúng thứ tự `tagsFor`, validator
+  V16 khớp). Kiểm trên DB kiểm chứng seed mới: cha-bong mang đủ 3 tags, **0 món
+  dùng cha-bong → 0 món bị ảnh hưởng**; tổng nguyên liệu có cờ cá 38 → 39.
+- **FIX-A3 ✅** — Báo cáo đề xuất giữ luật tiền tố + test liệt kê phủ ca biên
+  (không đổi sang bảng tường minh toàn phần cho cá — xem §phân tích lượt 1):
+  test chạy trên toàn catalog thật — mọi slug `ca-` thuộc `thuy-san` đều có cờ
+  `ca`; mọi slug `ca-` ngoài thuỷ sản (gồm ca biên `ca-chua`, `ca-rot`, `ca-tim`,
+  `ca-na`, `ca-phe-den`) không bao giờ có cờ `ca`; thuỷ sản không bắt đầu bằng
+  `ca-` chỉ có cờ `ca` khi nằm tường minh trong bảng luật (`luon`, `cha-ca-vien`).
+  Luật trong `TaggingRules` không đổi.
+- **FIX-A4 ✅** — TAXONOMY §4: bỏ "mắm nêm lên men từ tôm/ruốc" khỏi nhóm
+  `mam-tom`; ghi mắm nêm (lên men từ cá cơm) vào câu nguyên liệu lên men từ cá
+  mang `allergen:ca`. Chỉ sửa câu chữ, không đổi dữ liệu (dữ liệu vốn đã đúng).
+
+**Kiểm chứng đợt khắc phục:** validate 0 🔴 trên DB kiểm chứng riêng seed mới
+(3.344 bản ghi); `ExportStabilityTest` đạt (export tái lập đúng cả file
+cha-bong mới); **Pest 167/167 xanh** (162 cũ + 5 test mới) trong cửa sổ không
+tiến trình PHP tranh chấp. Không cần `npm run build` (chỉ đổi JS inline trong
+Blade, không chạm `resources/css|js`).

@@ -58,9 +58,10 @@ trong `STATE_BY_SLUG` của `TaggingRules` — đừng để rơi về mặc đ�
 — nhóm vỏ cứng và thân mềm), `ca` (mọi cá + nước mắm + mắm cá), `trung`, `sua`
 (sữa và chế phẩm), `dau-nanh` (đậu nành, đậu phụ, tàu hũ, tương đậu nành, nước
 tương), `lua-mi` (bột mì, mì, bánh mì, mì căn — gluten), `me` (vừng/mè, dầu mè),
-`mam-tom` (nhóm riêng theo thói quen VN: mắm tôm, mắm ruốc, mắm nêm lên men từ
-tôm/ruốc). Nguyên liệu lên men từ cá (nước mắm, các loại mắm cá) mang `allergen:ca`;
-mắm tôm mang cả `allergen:tom` và `allergen:mam-tom`.
+`mam-tom` (nhóm riêng theo thói quen VN: mắm tôm, mắm ruốc — lên men từ
+tôm/ruốc nhỏ). Nguyên liệu lên men từ cá (nước mắm, các loại mắm cá, mắm nêm —
+lên men từ cá cơm) mang `allergen:ca`; mắm tôm mang cả `allergen:tom` và
+`allergen:mam-tom`.
 
 Quy ước chiều an toàn cho **chế phẩm phối trộn** (đã phân xử sau rà soát độc lập
 2026-10-31): gắn allergen theo thành phần ĐIỂN HÌNH của nhóm sản phẩm, vì thiếu

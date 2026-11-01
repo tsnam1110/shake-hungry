@@ -163,6 +163,7 @@ final class TaggingRules
         'luon' => ['ca'], 'cha-ca-vien' => ['ca', 'lua-mi'], 'gio-lua' => ['ca'],
         'gio-song' => ['ca'], // có nước mắm trong thành phần — LV2-004
         'cha-com' => ['ca'], // ướp nước mắm trong thành phần — LV2-009 Phần A
+        'cha-bong' => ['ca'], // thành phần có nước mắm (hồ sơ + components tự ghi) — AUDIT-ALLERGEN FIX-A2
         'bo-vien' => ['trung'], // sản phẩm tham chiếu USDA Branded 2623419 có lòng trắng trứng — LV2-010 Phần A
         'tuong-hat' => ['dau-nanh'], // đậu nành nguyên hạt lên men — LV2-010 Phần A
         'nuoc-mam-cong-nghiep' => ['ca'], 'nuoc-mam-truyen-thong' => ['ca'],

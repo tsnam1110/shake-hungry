@@ -576,6 +576,24 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > (FIX-TCM4-4). Chưa sửa dữ liệu/code trong đợt. Chi tiết:
 > [AUDIT-004](docs/05-tasks/tasks/AUDIT-004.md).
 
+> ## ⚠️ Đính chính lần 34, 2026-11-01 — ALLERGEN-FIX: lọc cứng hết rò — preset dị ứng nay SINH TỪ TaggingRules
+>
+> Khắc phục các mục đã kết luận của AUDIT-ALLERGEN (ALG-Q1…Q4 giữ nguyên chờ chủ dự án): **xoá preset
+> slug viết tay đóng băng từ REC-001** ở `shake.blade.php`/`profile.blade.php`, thay bằng
+> `App\Taxonomy\AllergenPreset` sinh danh sách loại trừ từ `TaggingRules` trên toàn bộ catalog —
+> cả hai trang đủ **11 chip dị ứng** (trước thiếu Cá/Động vật có vỏ/Mè) và đủ mọi slug có nhãn
+> (`nuoc-tuong`, `tom-cang-xanh`, `ghe`...). **Đo lại bằng `Recommender::pool()` trên toàn kho:
+> rò 0 cho cả 11 nhóm** (trước: đậu nành 36, tôm 22, lúa mì 11, mắm tôm 9, trứng 7, sữa 5, cua 3),
+> loại oan 0; `AllergenExclusionTest` (5 test) khoá tính chất preset ≡ tập slug có nhãn + hành vi
+> pool để không tái phát. `cha-bong` đã gắn cờ `ca` ở bảng luật + file (0 món dùng → 0 món bị ảnh
+> hưởng; nguyên liệu có cờ cá 38 → 39). Luật tiền tố `ca-` trong `TaggingRules` **không đổi** nhưng
+> nay có test liệt kê toàn catalog phủ ca biên (cá thật đều có cờ; `ca-chua`/`ca-rot`/`ca-tim`/
+> `ca-na`/`ca-phe-den` không bao giờ thành cá; thuỷ sản không-`ca-` chỉ có cờ qua bảng tường minh:
+> `luon`, `cha-ca-vien`). TAXONOMY §4 sửa câu chữ: mắm nêm lên men từ **cá cơm** → thuộc nhóm cá,
+> không thuộc nhóm `mam-tom` (dữ liệu vốn đã đúng, chỉ câu chữ sai). Kiểm chứng: validate 0 🔴 trên
+> DB kiểm chứng seed mới, ExportStabilityTest đạt, **Pest 167/167**. Chi tiết:
+> [AUDIT-ALLERGEN](docs/05-tasks/tasks/AUDIT-ALLERGEN.md) §6.
+
 **Trạng thái thực tế, kiểm ngày 2026-10-31 (đã chạy lại toàn bộ lệnh kiểm chứng):**
 
 | Hạng mục | Thực tế | Kiểm bằng |

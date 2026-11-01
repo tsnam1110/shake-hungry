@@ -191,12 +191,8 @@
 const csrf = document.querySelector('meta[name=csrf-token]').content;
 const headers = { 'Content-Type': 'application/json', 'Accept': 'application/json', 'X-CSRF-TOKEN': csrf };
 function esc(s) { return (s ?? '').toString().replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
-const ALLERGEN_PRESETS = [
-    ['Đậu phộng', ['lac-rang','lac-song']], ['Tôm/tép', ['tom-su','tom-kho','tep']],
-    ['Cua', ['cua-bien','cua-dong']], ['Trứng', ['trung-ga','trung-vit','trung-cut','trung-vit-lon']],
-    ['Sữa', ['sua-tuoi','sua-dac','sua-chua']], ['Đậu nành', ['dau-nanh-hat','sua-dau-nanh','dau-phu','dau-phu-chien']],
-    ['Lúa mì', ['bot-mi','banh-mi','mi-trung-kho','mi-an-lien']], ['Mắm tôm', ['mam-tom']],
-];
+{{-- FIX-A1 (AUDIT-ALLERGEN): dùng chung danh sách sinh từ TaggingRules với trang Lắc (AllergenPreset). --}}
+const ALLERGEN_PRESETS = @json(\App\Taxonomy\AllergenPreset::chips());
 const excludedChips = document.getElementById('excluded-chips');
 const selectedPresets = new Set();
 excludedChips.innerHTML = ALLERGEN_PRESETS.map(([l], i) => `<button type="button" class="ld-chip allergen" data-i="${i}">${l}</button>`).join('');

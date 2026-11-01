@@ -140,16 +140,8 @@
 @push('scripts')
 <script>
 const SLOTS = [['sang','Sáng'],['trua','Trưa'],['chieu','Chiều'],['toi','Tối'],['an-vat','Ăn vặt']];
-const ALLERGENS = [
-    ['Đậu phộng', ['lac-rang','lac-song']],
-    ['Tôm/tép', ['tom-su','tom-kho','tep']],
-    ['Cua', ['cua-bien','cua-dong']],
-    ['Trứng', ['trung-ga','trung-vit','trung-cut','trung-vit-lon']],
-    ['Sữa', ['sua-tuoi','sua-dac','sua-chua']],
-    ['Đậu nành', ['dau-nanh-hat','sua-dau-nanh','dau-phu','dau-phu-chien']],
-    ['Lúa mì', ['bot-mi','banh-mi','mi-trung-kho','mi-an-lien']],
-    ['Mắm tôm', ['mam-tom']],
-];
+{{-- FIX-A1 (AUDIT-ALLERGEN): danh sách loại trừ SINH TỪ TaggingRules (AllergenPreset) — không viết tay, đủ 11 nhóm. --}}
+const ALLERGENS = @json(\App\Taxonomy\AllergenPreset::chips());
 function suggestedSlot(h) { if (h < 10) return 'sang'; if (h < 14) return 'trua'; if (h < 17) return 'chieu'; if (h < 21) return 'toi'; return 'an-vat'; }
 let slot = suggestedSlot(new Date().getHours());
 let allergenSlugs = new Set();
