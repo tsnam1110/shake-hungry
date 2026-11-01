@@ -4,9 +4,10 @@
 @section('page_class', 'ld-page-wide')
 
 @section('content')
-    <div class="ld-seg" role="navigation" aria-label="Chuyển mục khám phá" style="max-width:340px;margin-top:14px">
+    <div class="ld-seg" role="navigation" aria-label="Chuyển mục khám phá" style="max-width:440px;margin-top:14px">
         <a href="/thu-vien">Món ăn</a>
         <a href="/nguyen-lieu" class="on" aria-current="page">Nguyên liệu</a>
+        <a href="/thu-vien/hoa-qua">Hoa quả</a>
     </div>
 
     <h1 class="ld-title" style="margin-top:16px">Nguyên liệu</h1>

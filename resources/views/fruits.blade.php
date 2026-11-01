@@ -1,10 +1,21 @@
 @extends('layouts.app')
 
-@section('title', 'Hoa quả theo mùa — Lắc Đói')
+@section('title', !empty($library) ? 'Thư viện · Hoa quả — Lắc Đói' : 'Hoa quả theo mùa — Lắc Đói')
 @section('page_class', 'ld-page-wide')
 
 @section('content')
+    @if(!empty($library))
+    {{-- Tab Hoa quả trong Thư viện (UI-023): dùng chung trang hoa quả, thêm thanh chuyển mục --}}
+    <div class="ld-seg" role="navigation" aria-label="Chuyển mục khám phá" style="max-width:440px;margin-top:14px">
+        <a href="/thu-vien">Món ăn</a>
+        <a href="/nguyen-lieu">Nguyên liệu</a>
+        <a href="/thu-vien/hoa-qua" class="on" aria-current="page">Hoa quả</a>
+    </div>
+    <h1 class="ld-title" style="margin-top:16px">Thư viện</h1>
+    <h2 class="ld-section-title" style="margin-top:10px">Hoa quả theo mùa</h2>
+    @else
     <h1 class="ld-title" style="margin-top:14px">Hoa quả theo mùa</h1>
+    @endif
     <p class="ld-subtitle">Tháng nào nên ăn quả gì — cân bằng cả dinh dưỡng lẫn giá. Giá là khoảng tham khảo theo mùa vụ, không phải giá hôm nay.</p>
 
     <div class="ld-card" style="margin-top:18px">
