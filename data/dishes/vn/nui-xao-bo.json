@@ -145,6 +145,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-005 đợt 5: thử nâng Mức 2 — GIỮ Mức 1: lần mở nguồn đầu tiên bị chặn 429 — dừng ngay theo kỷ luật, chưa mở được nguồn nào. Thử lại khi hết chặn.] [LV2-006 đợt 6: nâng Mức 2 — thử lại sau 429 đợt 5; định lượng giữ nguyên toàn bộ. Lưu ý độc lập nguồn: nếu phát hiện nguồn sao chép công thức của nhau, ghi rõ trong note của nguồn. Bất thường ghi nhận: tương cà (file) so với cà chua tươi ở một số nguồn — khác biệt biến thể, giữ nguyên chờ phân xử. (Đính chính khi rà soát LV2-006: bản phân xử ban đầu viết ngược 'cà chua tươi (file)' — file thực tế dùng tuong-ca 25g, đã sửa tại đây.)] [LV2-007 Phần A: PHÂN XỬ bất thường tương cà — cả 3 nguồn đã mở đều có tương cà/xốt cà chua hộp trong ít nhất một biến thể (Bách Hoá Xanh: biến thể rau củ trộn tương cà; Cookpad: cà chua tươi + xốt cà chua hộp; Nấu Ăn Không Khó: xốt cà chua hộp), chỉ một biến thể phụ của Bách Hoá Xanh dùng cà chua tươi bằm làm nền. File dùng tuong-ca 25g là biến thể được nguồn ủng hộ đa số — GIỮ NGUYÊN, đóng bất thường; cà chua tươi là biến thể phụ, không đổi.]",
+  "cultural_note": {
+    "text": "Chữ \"nui\" trong tiếng Việt bắt nguồn từ tiếng Pháp \"nouille\", và ở Việt Nam, nui dùng để gọi các loại mì phương Tây (chủ yếu từ ẩm thực Ý) không có hình sợi dài, như dạng ống, ống cong, hình nơ hay hình xoắn. Sau khi du nhập, nui được nấu theo kiểu Việt với thịt bò, thịt gà, hải sản, cà chua, cà rốt, có thể xào hoặc nấu thành món nước. Nui xào bò cùng sốt cà chua là một trong những cách chế biến quen thuộc nhất của nguyên liệu \"Tây\" này trong bếp Việt.",
+    "sources": [
+      {
+        "ref": "Wikipedia tiếng Việt — Nui",
+        "url": "https://vi.wikipedia.org/wiki/Nui"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

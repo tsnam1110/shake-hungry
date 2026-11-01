@@ -149,6 +149,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-006 đợt 6: nâng Mức 2 — bò khô 15 → 20g; bổ sung quất 10g (2/3 nguồn; slug qua-quat có số). Muối tôm là nguyên liệu định danh nhưng kho chưa có slug — ghi nhận vào hàng đợi biên soạn nguyên liệu, không thay bằng muối thường.]",
+  "cultural_note": {
+    "text": "Bánh tráng trộn có xuất xứ từ Tây Ninh, ban đầu chỉ gồm bánh tráng cắt sợi trộn với muối tôm, dầu và tắc. Món ăn theo chân người bán vào Thành phố Hồ Chí Minh, được biến tấu thêm bò khô, trứng cút, xoài, tôm khô, rau răm... rồi lan ra khắp miền Nam và cả nước. Bán trong những túi ni lông nhỏ giá rẻ, bánh tráng trộn trở thành một trong những món ăn vặt phổ biến nhất của học sinh, sinh viên và là biểu tượng của ẩm thực đường phố miền Nam.",
+    "sources": [
+      {
+        "ref": "Wikipedia tiếng Việt — Bánh tráng trộn",
+        "url": "https://vi.wikipedia.org/wiki/B%C3%A1nh_tr%C3%A1ng_tr%E1%BB%99n"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

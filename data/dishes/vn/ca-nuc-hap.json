@@ -158,6 +158,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): Đối chiếu 3 nguồn công thức đã mở kiểm chứng (xem recipe_sources). Định lượng: giữ nguyên toàn bộ. Cá nục mỗi khẩu phần ở 3 nguồn lần lượt là 125g, 200g và 150g — hai cực bất đồng >30% nên giữ 150g của file (khớp nguồn Bòn Bon); gừng và hành lá của file nằm trong khoảng các nguồn. Ghi nhận: biến thể miền Trung trong các nguồn thường ăn kèm rau muống và chấm mắm nêm, file dùng nước mắm pha và không có rau muống — coi là khác biệt biến thể, không sửa nguyên liệu. Bước nấu viết lại 7 bước.",
+  "cultural_note": {
+    "text": "Cá hấp cuốn bánh tráng là món ăn gợi nhớ quê nhà của người miền Trung xa xứ, được nhắc đến nhiều mỗi độ gần Tết trong bữa cơm sum vầy. Linh hồn của món là cá biển tươi, trong đó cá nục nhỏ — vừa nằm gọn trong cuốn bánh tráng — là một trong hai loài cá đã làm nên tên tuổi của món, hấp cùng hành, ớt, cà chua. Cá chín được cuốn với rau muống trong bánh tráng bột sắn của xứ Quảng, chấm chén nước mắm pha — kiểu ăn đơn giản đã làm nức lòng bao thế hệ.",
+    "sources": [
+      {
+        "ref": "Thanh Niên — Nhớ da diết cá hấp cuốn bánh tráng",
+        "url": "https://thanhnien.vn/nho-da-diet-ca-hap-cuon-banh-trang-185446071.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

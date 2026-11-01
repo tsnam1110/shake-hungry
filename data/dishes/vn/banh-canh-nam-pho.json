@@ -168,6 +168,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — tách thịt xay 40 thành thịt xay 25 + giò sống 25 (3/3 nguồn đều quết giò sống; giò sống chưa có số nên món tạm mất phần calo của dòng này đến khi nguyên liệu có số), thêm mắm ruốc 2 (4/5 trang nghiên cứu) và cua bể 50 tuỳ chọn (3/5), bột năng 8→12. Dầu điều: giữ dầu ăn, ghi nhận nguồn thắng dầu từ hạt điều màu (slug hat-dieu-mau) — chưa đổi dòng.] [AUDIT-FIX 2026-11-01 — PX-03 (AUDIT-002): hai nguồn Cookpad 496998 (đã xoá bài) và Trần Bích Nga đã chết 404 — thay bằng Điện Máy XANH + PasGo (cộng nguồn Kinh Đô Ẩm Thực còn sống = 3 họ độc lập). Đối chiếu lại định lượng: GIỮ NGUYÊN — tôm 50g (ĐMX 40g, lệch 20%, trong ngưỡng; họ công thức gốc của file quy đổi 4 người cũng cho 50g), thịt xay 25g + giò sống 25g (ĐMX cho tổng thịt+giò 100g/khẩu phần nhưng không có cua; file có cua 50g nên tổng đạm/khẩu phần hai bộ tương đương ~140–150g), cua 50g được tỉ lệ 1:1:1 của PasGo ủng hộ. Cổng 3 nguồn khôi phục, giữ Mức 2.]",
+  "cultural_note": {
+    "text": "Bánh canh Nam Phổ là món hàng rong gia truyền của làng Nam Phổ (Phú Vang), cách trung tâm Huế chừng mười cây số. Nghề nấu bánh canh truyền qua nhiều đời trong các gia đình của làng; xưa kia cả làng có gần bảy mươi gánh, do các mẹ, các chị gánh vào phố bán vào buổi chiều. Sợi bột pha bột gạo với bột lọc theo tỉ lệ ba–một, không cán cắt mà “ria” thẳng xuống nồi nước sôi; nhân tôm và thịt ba chỉ giã nhuyễn sóng sánh phủ lên mặt nồi. Món ăn từng được nhà thơ Ưng Bình Thúc Giạ Thị nhắc trong thơ.",
+    "sources": [
+      {
+        "ref": "Thanh Niên — Thương nhớ gánh bánh canh Nam Phổ",
+        "url": "https://thanhnien.vn/thuong-nho-ganh-banh-canh-nam-pho-185217494.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

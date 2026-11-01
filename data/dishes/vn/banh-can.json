@@ -149,6 +149,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [LV2-006 đợt 6: nâng Mức 2 — bột gạo 70 → 45g (2 nguồn ~40–44g); bổ sung tôm sú 20g tuỳ chọn. File giữ biến thể phổ thông Nam Trung Bộ (nước mắm pha); biến thể Phan Rang (nước cá kho) và Đà Lạt (xíu mại) là biến thể riêng — ghi hồ sơ biến thể, không trộn số.]",
+  "cultural_note": {
+    "text": "Bánh căn bắt nguồn từ ẩm thực của người Chăm ở Ninh Thuận. Bánh đúc bằng bột gạo — thường pha thêm ít cơm nguội cho bánh giòn — trong những chiếc khuôn đất nung trên lò than; khuôn đất truyền thống gắn với làng gốm Bàu Trúc. Bánh ăn nóng ngay khi gỡ khuôn, chấm cùng nước mắm pha.",
+    "sources": [
+      {
+        "ref": "VnExpress — Món ăn không thể bỏ qua khi đến xứ nắng Phan Rang",
+        "url": "https://vnexpress.net/mon-an-khong-the-bo-qua-khi-den-xu-nang-phan-rang-2893597.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

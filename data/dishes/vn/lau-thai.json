@@ -193,6 +193,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-006 đợt 6: nâng Mức 2 — cà chua 40 → 80g, sả 10 → 20g, nước mắm 5 → 10g, đường 4 → 15g (nguồn dùng đường phèn 18–30g cho ~700ml nước dùng/người; lấy 15g đã chiết khấu và GIỮ loại đường của file vì loại đường đang là quy ước chờ chủ dự án); bổ sung me chín 15g tạo chua (slug me-chin có số; không dùng slug me chưa có số). Dứa chỉ 1 nguồn định lượng — ghi nhận, không bổ sung. Nếu hai nguồn đối chiếu cùng một nhà xuất bản, ghi rõ lưu ý độc lập nguồn trong note của nguồn.]",
+  "cultural_note": {
+    "text": "Lẩu Thái hải sản là dạng lẩu của tom yum — món súp chua cay được xem là món ăn quốc dân của Thái Lan, xuất xứ từ miền trung nước này và gắn với lối sống sông nước của đồng bằng Chao Phraya. Tên gọi tom yum ghép từ hai tiếng Thái: tom là đun sôi, yum là hỗn hợp — chỉ nồi nước dùng chua cay nấu với sả, riềng và lá chanh. Trong các biến thể của tom yum có bản hải sản hỗn hợp gồm tôm, mực, nghêu và cá, và các bản phổ biến hiện đại thường nấu cùng nấm rơm — đúng hình hài của nồi lẩu Thái hải sản quen thuộc trên bàn ăn Việt.",
+    "sources": [
+      {
+        "ref": "Wikipedia tiếng Việt — Tom yum",
+        "url": "https://vi.wikipedia.org/wiki/Tom_yum"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

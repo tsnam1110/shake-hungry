@@ -189,6 +189,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-006 đợt 6: nâng Mức 2 — cua đồng 80 → 125g, bắp bò 60 → 125g, sườn 50 → 120g (đồng thuận tuyệt đối của các nguồn đã mở; nguồn dùng sườn sụn, kho chưa có slug suon-sun nên giữ slug sườn hiện tại và ghi nhận tại đây); dấm gạo 5 → 10g (nguồn dùng giấm bỗng — slug chưa có số nên giữ dam-gao làm ánh xạ tính được, ghi rõ thay thế này); bổ sung bánh đa đỏ 125g tuỳ chọn (món ăn kèm chính ở 2 nguồn).]",
+  "cultural_note": {
+    "text": "Lẩu riêu cua làm từ cua đồng — nguyên liệu dân dã của đồng quê Bắc Bộ — và hành trình của nó là từ món ăn mộc mạc quê mùa bước vào nhà hàng, quán ăn, trở thành một phần của danh mục ẩm thực Hà Nội. Người làm lẩu riêu cua cầu kỳ thường chọn cua giã tay để giữ phần gạch bông, mịn, và nồi lẩu được dọn kèm các loại rau dân dã như hoa chuối, tía tô, xà lách và hành lá. Món ăn đặc trưng Bắc Bộ này được thực khách cả ba miền ưa chuộng, nhất là trong những buổi liên hoan, sum họp.",
+    "sources": [
+      {
+        "ref": "VietnamNet — Lẩu riêu cua, món ăn từ “tâm” của ông chủ yêu Hà Nội (Doãn Phong)",
+        "url": "https://vietnamnet.vn/lau-rieu-cua-mon-an-tu-tam-cua-ong-chu-yeu-ha-noi-2088749.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

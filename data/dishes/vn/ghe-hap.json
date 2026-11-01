@@ -125,6 +125,19 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt) Nâng Mức 2 đợt 1 (2026-10-31): đã đối chiếu 3 nguồn công thức thật (Cookbeo, Đảo Hải Sản, Nấu Ăn Không Khó). Định lượng: ghẹ 300 g/khẩu phần (2 con) khớp Cookbeo (600–700 g cho 2 khẩu phần → 300–350 g); sả 10 g tương đương 1–3 nhánh/khẩu phần theo 2 nguồn còn lại — giữ nguyên mọi định lượng. Thời gian hấp trong bước nấu lấy theo đa số nguồn (10–15 phút tuỳ cỡ ghẹ) thay cho mức 15–20 phút ở bản cũ. Bước nấu viết lại 6 bước.",
+  "cultural_note": {
+    "text": "Ghẹ Hàm Ninh là đặc sản biển gắn với đảo Phú Quốc: năm 2022, thương hiệu ghẹ Hàm Ninh được cấp nhãn hiệu tập thể, và năm 2023 Phú Quốc xác lập kỷ lục quốc gia với 100 món ăn chế biến từ ghẹ Hàm Ninh. Giữa hàng trăm cách biến tấu ấy, cách ăn giản dị và nguyên bản nhất vẫn là luộc nguyên con để giữ trọn vị ngọt của thịt ghẹ.",
+    "sources": [
+      {
+        "ref": "Thanh Niên — Phú Quốc sẽ xác lập kỷ lục 100 món ăn từ ghẹ",
+        "url": "https://thanhnien.vn/phu-quoc-se-xac-lap-ky-luc-100-mon-an-tu-ghe-185230310140846099.htm"
+      },
+      {
+        "ref": "Thanh Niên — Xác lập kỷ lục 100 món ăn từ ghẹ Hàm Ninh, Phú Quốc",
+        "url": "https://thanhnien.vn/xac-lap-ky-luc-100-mon-an-tu-ghe-ham-ninh-phu-quoc-185230412183856476.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

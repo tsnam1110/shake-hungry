@@ -150,6 +150,19 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): đã đối chiếu 3 nguồn công thức thật (Báo Lao Động, Dạy Nấu Ăn, VinID). Định lượng: cá trắm 150 g/khẩu phần nằm ở cận dưới của khoảng nguồn (mẻ 800 g–1 kg cho khoảng 5–6 khẩu phần → 160–200 g), không lệch >30% theo cách quy đổi thận trọng nên giữ; riềng 15 g khớp 2 nguồn ghi '1 củ/mẻ' quy về khẩu phần, nguồn Dạy Nấu Ăn dùng riềng nhiều đặc biệt (200 g/mẻ, gồm riềng giã phủ mặt) là ngoại lệ — giữ 15 g. Bất thường ghi nhận, không tự thêm dòng: cả 3 nguồn đều kho cá cùng thịt ba chỉ 200–300 g/mẻ (và thường có khế chua/sả), file hiện không có dòng thịt ba chỉ — chờ chủ dự án quyết. Bước nấu viết lại 7 bước. Phân xử bất thường LV2-001 (Phần A, 2026-10-31): thêm dòng thit-lon-ba-chi 40 g/khẩu phần — cả 3 nguồn đều kho cá cùng thịt ba chỉ 200–300 g cho mẻ cá 800 g–1 kg, tỉ lệ thịt:cá 0,20–0,375 quy theo 150 g cá/khẩu phần cho khoảng 30–56 g, lấy 40 g giữa khoảng; bước 1 và 3 bổ sung thịt ba chỉ cho khớp. Khế chua/sả chỉ xuất hiện ở 1/3 nguồn nên không thêm.",
+  "cultural_note": {
+    "text": "Cá trắm đen kho riềng là món đặc trưng trong mâm cỗ Tết truyền thống của người Hà Nội xưa. Cá phải là trắm đen — không phải trắm trắng — cắt khúc xếp vào niêu, kho cùng gừng, riềng, tiêu, lá chè xanh và ít mỡ gà, kho kỹ trong nhiều giờ đồng hồ.",
+    "sources": [
+      {
+        "ref": "Báo Hà Nội Mới (Nhịp sống Hà Nội) — Nét tinh hoa trong mâm cỗ Tết truyền thống của người Hà Nội (Hoàng Lân)",
+        "url": "https://nhipsonghanoi.hanoimoi.vn/net-tinh-hoa-trong-mam-co-tet-truyen-thong-cua-nguoi-ha-noi-627460.html"
+      },
+      {
+        "ref": "Hà Nội Online (Đài PT-TH Hà Nội) — Mâm cỗ Tết xưa của người Hà Nội như thế nào",
+        "url": "https://hanoionline.vn/mam-co-tet-xua-cua-nguoi-ha-noi-nhu-the-nao-246218774.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

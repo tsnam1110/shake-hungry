@@ -173,6 +173,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-006 đợt 6: nâng Mức 2 — bổ sung ngô ngọt 35g (3/3 nguồn; khoảng trống lớn nhất của file) và cà rốt 15g dạng tuỳ chọn (2/3 nguồn). Nấm tuyết và trứng cút xuất hiện ở nguồn nhưng định lượng phân tán — ghi nhận, không bổ sung.]",
+  "cultural_note": {
+    "text": "Súp cua thuộc họ súp khai vị mở đầu tiệc cưới Nam Bộ, nơi thực đơn tiệc theo một trình tự gần như cố định và món đầu tiên dọn lên bàn luôn là một chén súp — tiệc sang trọng dùng súp vi cá hay súp măng tây cua, tiệc thường thì thay bằng lòng trứng gà, măng tre xắt nhuyễn, đôi khi có trứng cút. Khác súp phương Tây loãng, súp trong tiệc cưới được pha bột năng, bột bắp cho sền sệt, sợi trứng quyện vào trông như áng mây hay rồng phượng giao nhau. Người chế biến gọi món súp khai vị này là “Phong vân hội tụ” hay “Loan phượng hòa mình”, với ý chúc mừng cho cô dâu, chú rể.",
+    "sources": [
+      {
+        "ref": "Báo Đắk Lắk — Món ăn tiệc cưới Nam Bộ xưa và nay (theo Báo Du lịch)",
+        "url": "https://baodaklak.vn/channel/3522/201103/mon-an-tiec-cuoi-nam-bo-xua-va-nay-1980941/"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -145,6 +145,15 @@
     "queried_at": "2026-08-31"
   },
   "import_note": "Nhập tự động từ Wikidata Q5004794 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Gợi ý nguyên liệu từ Wikidata (tiếng Anh, CHƯA ánh xạ sang data/ingredients/): rice flour, tapioca flour. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/Rice%20flour%20cake%20with%20shrimp%20-%20Vietnam%20Kitchen%2C%20Louisville%2C%20KY%20%282011-05-28%20by%20Navin75%29.jpg Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-006 đợt 6: nâng Mức 2 — SỬA CẤU TRÚC: bổ sung tôm thẻ 50g làm chấy tôm chính (4/4 nguồn dùng tôm tươi; dòng tôm khô của file giữ làm thành phần phụ) và bánh mì 10g (4/4 nguồn — vụn bánh mì chiên giòn rắc mặt). Tiền lệ sửa cấu trúc theo định danh món: com-tam-long-xuyen ở LV2-005.] [Ghi chú rà soát LV2-006: con số '4/4 nguồn' ở đoạn trên là kết quả pha nghiên cứu (đã mở 4 nguồn); ở pha vá, 2 trang dự kiến bị lỗi 429 của dịch vụ trình duyệt nên bộ nguồn ghi trong recipe_sources là bộ mở thay thế, trong đó 2/3 nguồn xác nhận trực tiếp tôm tươi + bánh mì — kết luận bổ sung không đổi.]",
+  "cultural_note": {
+    "text": "Bánh bèo là món bánh bột gạo hấp trong chén nhỏ của miền Trung, chan nhân và nước mắm pha loãng. Bản xứ Huế nổi tiếng với chén bánh nhỏ xíu, lớp bột mỏng, nhân tôm chấy khô kèm hành phi và da heo chiên giòn; bản xứ Quảng lại dùng chén lớn hơn với nhân thịt, tôm và nấm mèo rim sệt. Theo chân người miền Trung đi xa, chiếc bánh dân dã này trở thành món ăn gợi nhớ quê nhà.",
+    "sources": [
+      {
+        "ref": "Thanh Niên — Thương nhớ bánh bèo miền Trung",
+        "url": "https://thanhnien.vn/thuong-nho-banh-beo-mien-trung-1851396282.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

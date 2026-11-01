@@ -198,6 +198,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [LV2-006 đợt 6: nâng Mức 2 — đã kiểm: file thuần chay (không nước mắm thường/trứng/sữa); nguồn 'phở chay' nào nêm nước mắm thường đều bị loại vì phá vỡ tính chay. Định lượng giữ nguyên toàn bộ.]",
+  "cultural_note": {
+    "text": "Phở chay hình thành cùng đời sống ẩm thực chay của người Việt, đặc biệt tại TP.HCM, nơi có những quán phở chay lâu đời như quán Như trên đường Trương Quyền, mở từ năm 1986 bởi một phật tử và được xem là một trong những quán phở chay \"đời đầu\" còn tồn tại. Nước phở chay lấy vị ngọt từ rau củ quả, ăn cùng tàu hủ ky và các loại nấm, nhưng vẫn giữ khung gia vị quế, thảo quả, đinh hương của phở truyền thống.",
+    "sources": [
+      {
+        "ref": "Thanh Niên — Quán phở chay 40 năm ở TP.HCM",
+        "url": "https://thanhnien.vn/quan-pho-chay-40-nam-o-tphcm-ba-chu-co-the-toi-la-the-he-cuoi-cung-185260820120325742.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

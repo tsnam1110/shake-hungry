@@ -137,6 +137,19 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-012 đợt vét] Nâng Mức 2: đối chiếu 4 họ đã mở (Chef Dzung, Công Thức Nấu Ăn/Em Đẹp, Zin Food, Cá Mú Đỏ) — đồng thuận rạch lưng, chiên ngập dầu 2-3 phút, xóc bột rang muối lúc nóng. Áp quyết định A4.5 như tiền lệ LV2-010 Phần C: thêm bot-rang-muoi 8g, bỏ dòng dau-an 10 (dầu chiên chính không kê; engine tính hấp thụ nhóm hải sản 9), muoi 5->1; cooking_method cần đổi xao -> chien-ngap-dau khi tích hợp. Bề bề 250g/khẩu phần khớp Zin Food (500g/2 phần) và các họ 1kg/4 phần. Viết lại recipe_steps 6 bước. [LV2-012 kiểm chứng: bổ sung oil_absorption_pct=9 cho nguyên liệu be-be theo nhóm hải sản của CALC-004 (như cua-bien/tom-su) — trước đó be-be thiếu hệ số nên engine xếp 250 g vào missing và món không tính được dinh dưỡng.]",
+  "cultural_note": {
+    "text": "Bề bề — còn gọi là tôm tít hay tôm tích — là hải sản quen thuộc của Hạ Long (Quảng Ninh), con to và có giá khá cao. Trong các cách chế biến bề bề ở Hạ Long có món rang muối; riêng việc bóc vỏ bề bề sao cho phần thịt còn nguyên vẹn đã là thao tác khó, cần khéo tay.",
+    "sources": [
+      {
+        "ref": "Ngôi Sao (VnExpress) — 6 món Hạ Long (Hiếu Châu)",
+        "url": "https://ngoisao.vnexpress.net/den-tuan-cry-lan-dau-thu-canh-sa-sung-sam-bien-6-mon-ha-long-5124551.html"
+      },
+      {
+        "ref": "Tạp chí Duyên Dáng Việt Nam (theo Thanh Niên) — Bề bề là gì mà nhất định phải ăn ở Hạ Long",
+        "url": "https://duyendangvietnam.net.vn/bun-cu-ky-be-be-la-gi-ma-nhat-dinh-phai-an-o-ha-long/"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

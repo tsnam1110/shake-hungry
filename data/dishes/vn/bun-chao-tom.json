@@ -199,6 +199,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. THIẾU NGUYÊN LIỆU: mía cây (que quấn chạo tôm) (vai trò phụ) — cần bổ sung vào kho. [LV2-009 đợt 9: GIỮ Mức 1 — chỉ mở được 1 họ nguồn (Bếp MiNa, không ghi khẩu phần: tôm sú 500 g + thác lác/nạc xay 100 g + giò sống 100 g + bột bắp 50 g; tỉ lệ tôm:phần phụ 500:200 so với file tôm 70 g + thịt xay 20 g) trước khi dịch vụ mở trang bị chặn. Thêm trần: chạo tôm quấn MÍA nhưng kho không có slug mia (nuoc-mia là nước ép, không thay thế được); gio-song null. Làm lại khi gom đủ 3 họ.] [LV2-010 đợt 10: NÂNG MỨC 2 — đã mở trực tiếp 3 họ nguồn độc lập (Bếp MiNa bản bọc mía; Hội Đầu Bếp Á Âu/Chef Dung; Tripi — bộ số Tripi trùng vuahaisanloccantho nên chỉ tính 1 họ). Cả 3 họ đều không ghi khẩu phần nên quy đổi theo tỉ lệ trên neo tôm 70 g của file. Không sửa dòng nào (thịt xay 20 g lệch họ Á Âu ~13%, dưới ngưỡng). Thêm 5 dòng: mia 25 g (3/3 họ; slug mia đã biên soạn ở Phần A đợt này — null + hồ sơ nên vào missing theo quy tắc phụ null), gio-song 10 g (2/3 họ, slug null nhưng là phụ kết dính), ca-thac-lac 8 g (2/3 họ), mo-lon-nuoc 8 g (2/3 họ, mỡ trộn nhân theo tiền lệ chao-tom, không phải dầu chiên), trung-ga 3 g (2/3 họ dùng lòng trắng). Không thêm tinh bột: 2 họ bất đồng loại (bột bắp/bột năng) và lượng (>30%). Bất thường ghi nhận: dòng sa 5 g không họ bọc mía nào dùng (nghi lẫn bản bọc sả); bản chiên phổ biến ngang bản nướng của file.]",
+  "cultural_note": {
+    "text": "Chạo tôm xuất phát từ Huế, ra đời trong những bếp ăn cung đình xưa, nơi các đầu bếp khéo tay tạo nên món ăn để dâng lên vua quan; ngày nay chạo tôm đã trở thành món ăn bình dân quen thuộc. Tôm được quết dai cùng giò sống rồi ém quanh cây mía lau, hấp chín và nướng vàng — khi ăn cùng bún, món ăn gợi lại không khí ẩm thực triều đình của cố đô.",
+    "sources": [
+      {
+        "ref": "Wikipedia (vi) — Chạo tôm",
+        "url": "https://vi.wikipedia.org/wiki/Ch%E1%BA%A1o_t%C3%B4m"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

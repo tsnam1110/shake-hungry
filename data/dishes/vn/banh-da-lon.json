@@ -126,6 +126,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-012 đợt vét] Nâng Mức 2: đối chiếu 3 họ độc lập (CET, Beemart, Cookpad). Cả 3 họ đều cho bột năng và đậu xanh theo khẩu phần 120g thấp hơn file — đề xuất bot-nang 35→25, dau-xanh-hat 25→14, bot-gao 10→8. Giữ duong-trang 22 và nuoc-cot-dua 40 vì nằm ngay trong khoảng đồng thuận của 3 họ (đường 22-27g, cốt dừa 42-55ml). la-dua là nguyên liệu phụ không có số (vớt bỏ sau khi lấy nước cốt) nên không chặn tính calo.",
+  "cultural_note": {
+    "text": "Dù mang tên “da lợn”, món bánh này hoàn toàn không dùng thịt lợn: tên gọi bắt nguồn từ kết cấu nhiều lớp mỏng xếp chồng, mềm dẻo và hơi trong, gợi liên tưởng lớp da lợn sau khi luộc. Đây là món bánh truyền thống gắn với ẩm thực Nam Bộ, gồm lớp bột nhuộm xanh lá dứa xen lớp đậu xanh vàng, phải đổ và hấp từng lớp mỏng một cách kiên nhẫn. Bánh da lợn từng được chuyên trang ẩm thực TasteAtlas đưa vào danh sách 100 món bánh ngọt ngon nhất thế giới.",
+    "sources": [
+      {
+        "ref": "Báo Cao Bằng — Dẻo thơm hương vị bánh da lợn",
+        "url": "https://baocaobang.vn/deo-thom-huong-vi-banh-da-lon-3193095.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "llm_suggested",
   "confidence": "unknown",

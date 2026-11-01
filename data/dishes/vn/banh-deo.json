@@ -98,6 +98,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-004 đợt 2 (lô bánh dân gian) mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] Đạt Mức 2: 3 họ độc lập (VietnamNet, bTaskee, VinID) đã mở đọc, quy định lượng về 1 cái 100g theo tỉ lệ vỏ/nhân từng nguồn. Sửa: bot-nep 40->25, duong-trang 25->33, dau-an 1->6; bỏ cui-dua-nao (0/3 họ ủng hộ trong nhân đậu xanh; dừa thuộc biến thể nhân sữa dừa). dau-xanh-hat 20g giữ nguyên (3 họ cho ~15-18g, lệch <30%). Dòng sửa giữ source=llm_suggested, confidence=low.",
+  "cultural_note": {
+    "text": "Bánh dẻo là một trong hai loại bánh trung thu đặc trưng của người Việt, bên cạnh bánh nướng; hai loại thường được bày cùng nhau trong đêm rằm tháng Tám như biểu tượng của sự hài hòa đất trời. Vỏ bánh làm từ bột nếp rang nhào với nước đường và nước hoa bưởi, không qua nướng mà ép trong khuôn gỗ thành hình tròn gợi vầng trăng; nhân truyền thống là đậu xanh hoặc hạt sen sên nhuyễn. Dân gian gắn sự ra đời của bánh dẻo với ước vọng cầu cho mùa màng bội thu.",
+    "sources": [
+      {
+        "ref": "Wikipedia tiếng Việt — Bánh dẻo",
+        "url": "https://vi.wikipedia.org/wiki/B%C3%A1nh_d%E1%BA%BBo"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

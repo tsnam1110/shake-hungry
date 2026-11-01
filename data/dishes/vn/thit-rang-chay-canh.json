@@ -117,6 +117,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Rang bằng mỡ tự thân của ba chỉ, đảo liên tục như xào và không dùng dầu ngoài — phân loại method xao; không áp mô hình dầu chiên cho món không thêm dầu. Nâng Mức 2 đợt 2 (2026-10-31): Đã đối chiếu 3 nguồn thật mở kiểm chứng (Sức khỏe & Đời sống/Gia đình; Cookpad Đỗ Hải Giang; Cleanipedia). Phân xử định lượng: giữ nguyên mọi dòng — thịt ba chỉ 150 g nằm trong khoảng quy đổi 125–167 g/khẩu phần của cả ba nguồn (500 g cho 3–4 người hoặc 4 phần ăn); nước mắm 10 g cao hơn quy đổi của nguồn (khoảng 5–8 g/khẩu phần) nhưng nguồn đong bằng muỗng canh với sai số lớn và Cleanipedia không ghi khẩu phần nên chưa đủ đồng thuận để sửa; đường 5 g khớp Cookpad (5 g nêm trực tiếp cho mẻ 4 phần, chưa kể phần làm nước hàng). Bất thường ghi nhận: 2/3 nguồn có hành lá và SKĐS có tỏi — file không có hai dòng này; nguồn thống nhất kỹ thuật rang khô cho xém cạnh trước rồi mới nêm mắm, đường — bước nấu đã viết lại theo kỹ thuật này, khác trình tự ướp trước của bản cũ. Phân xử bất thường LV2-002 (Phần A, 2026-10-31): Thêm hanh-la 3 g (2/3 nguồn rắc/cho hành lá ở bước cuối); tỏi của SKĐS chỉ 1/3 nguồn — không thêm.",
+  "cultural_note": {
+    "text": "Thịt rang cháy cạnh là món mặn quen thuộc của mâm cơm mùa hè miền Bắc, thường dọn cùng canh cua đồng, cà muối và đậu phụ rán vàng — tổ hợp dân dã mà nhiều gia đình xem là “công thức vàng” tròn vị của bữa cơm ngày nóng. Món ăn không cầu kỳ; cái quý nằm ở cách những món đơn giản tôn vị cho nhau trong cùng một mâm.",
+    "sources": [
+      {
+        "ref": "Báo Phụ nữ Thủ đô — Đậm đà vị canh cua của nội",
+        "url": "https://baophunuthudo.vn/phu-san-doi-song-gia-dinh/dam-da-vi-canh-cua-cua-noi-109021.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

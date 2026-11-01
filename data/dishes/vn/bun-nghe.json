@@ -154,6 +154,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-009 đợt 9: Nâng Mức 2 — mở kiểm chứng 4 nguồn/4 họ (VietExplorer/VNS, Cookpad Kim Dung, Cookpad Phuong Nguyen 92, Cookpad Hoàng Thị Tố Hà). Thêm gan-lon 12 g (2/2 nguồn có gan đều cho đúng 12,5 g/khẩu phần — thành phần đặc trưng bản Huế mà file thiếu hẳn) và hanh-tay 15 g (3/4 nguồn, hội tụ 15–20 g). Thêm la-he 10 g: hẹ có ở 4/4 nguồn (dải lượng rộng 4–30 g/khẩu phần nên lấy mức biên soạn bảo thủ 10 g); slug la-he hiện null (chờ kiểm chứng MEXT — xem hàng đợi nguyên liệu) nên engine ghi missing, không chặn nâng vì là rau thơm phụ. Giữ long-lon 80 g và bun-tuoi 150 g (nguồn bất đồng >30%: lòng 50–200 g, bún 75–200 g/khẩu phần; lượng sợi chờ quy ước toàn kho). Giữ bot-nghe 3 g: mọi nguồn dùng nghệ TƯƠI 10–25 g/khẩu phần, 3 g bột khô tương đương ~16 g tươi theo chất khô — nằm trong dải nguồn. Bất thường chờ phân xử: tiết lợn bản Huế chỉ 1/4 nguồn định lượng nên chưa thêm dòng.]",
+  "cultural_note": {
+    "text": "Bún nghệ xào lòng — hay bún lòng xào nghệ — là món ăn dân dã của người Huế, lâu dần trở thành đặc sản và lan sang Đà Nẵng, Quảng Trị. Nghệ tươi nhuộm cho sợi bún và lòng một màu vàng cam bắt mắt, và đây là thức quà chiều quen thuộc: ở các quán, bún xào và lòng được để riêng, khách gọi mới bày lên đĩa. Phần bún cháy giòn dưới đáy nồi được nhiều thực khách ưa thích đến mức thường xin thêm.",
+    "sources": [
+      {
+        "ref": "Eva.vn — Đặc sản Huế chế biến kiểu lạ cùng lòng lợn (bún lòng xào nghệ)",
+        "url": "https://eva.vn/di-dau-xem-gi/dac-san-hue-che-bien-kieu-la-cung-long-lon-mau-sac-bat-mat-vi-thom-ngon-c40a657877.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

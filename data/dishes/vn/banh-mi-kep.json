@@ -165,6 +165,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [LV2-012 đợt vét] Nâng Mức 2: 3 họ độc lập (Saveur, HowToFeedALoon, Saigonese Baguette) cùng biến thể pate + chả lụa + thịt nguội; định lượng đối chiếu ≥2 họ cho pate/mayo/chả/Maggi. Sửa mayonnaise 10→15 g, giò lụa 30→40 g; thêm nước tương (Maggi) 3 g tùy chọn. Các dòng còn lại của file nằm trong dải các nguồn nên giữ nguyên.",
+  "cultural_note": {
+    "text": "Bánh mì theo chân người Pháp vào Việt Nam từ giữa thế kỷ 19, thuở đầu là món ăn xa xỉ với ổ bánh vỏ dày, ruột đặc, ăn kèm bơ, mứt hay phô mai. Thợ bánh Việt ở Sài Gòn dần Việt hoá ổ bánh bằng cách pha thêm bột gạo, giảm men, làm ổ ngắn lại với vỏ mỏng giòn và ruột xốp. Bước ngoặt đến năm 1958, khi tiệm Hoà Mã ở Sài Gòn kẹp thịt nguội, chả lụa và patê vào giữa ổ bánh để khách tiện mang theo — cách ăn định hình nên bánh mì kẹp kiểu Sài Gòn, lan khắp thành phố qua các xe đẩy và sạp vỉa hè. Năm 2011, từ 'banh mi' được đưa vào Từ điển Oxford.",
+    "sources": [
+      {
+        "ref": "VOV Giao thông — Bánh mì Sài Gòn: Hành trình từ ổ bánh Tây đến biểu tượng phố Việt",
+        "url": "https://vovgiaothong.vn/newsaudio/banh-mi-sai-gon-hanh-trinh-tu-o-banh-tay-den-bieu-tuong-pho-viet-d45911.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

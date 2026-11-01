@@ -126,6 +126,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). THIẾU NGUYÊN LIỆU: lá sung (phụ — ăn kèm) — cần bổ sung vào kho. Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu). [LV2-012 đợt vét] NÂNG Mức 2: đã mở đọc 3 họ độc lập cho thịt chua Thanh Sơn, Phú Thọ (Lorca và Bách Hóa XANH có định lượng, Thanh Niên xác nhận bản truyền thống Mường); định lượng file (thịt 110 g, bì 20 g, thính 15 g, tỏi 4 g cho đĩa 130 g) nằm trong vùng quy đổi của 2 họ định lượng nên giữ nguyên, chỉ bỏ dòng rieng (0/3 họ ủng hộ) và thêm ot-tuoi 3 g (Lorca định lượng, Thanh Niên xác nhận). Bước làm viết lại theo đúng kỹ thuật thui/nướng tái thay cho 'luộc tái' trước đây.",
+  "cultural_note": {
+    "text": "Thịt chua là món ăn bình dị của người Mường sống ở Thanh Sơn (Phú Thọ), ra đời từ nhu cầu giữ thịt được lâu để dùng dần mỗi khi mổ lợn — thịt được muối chua trong ống tre, ống nứa làm “của để dành”. Thịt lợn thui trên than hoa cho chín tái, thái mỏng rồi trộn thính rang xay từ gạo, ngô và đậu tương, nén chặt trong ống nứa lót lá ổi để lên men tự nhiên chừng 5–7 ngày. Khi ăn, thịt chua thường cuốn cùng rau mơ, lá sung, đinh lăng và chấm tương ớt; từ món riêng của người Mường, món ăn đã trở thành niềm tự hào của người Mường nói riêng và người Phú Thọ nói chung.",
+    "sources": [
+      {
+        "ref": "Thanh Niên — Say lòng món thịt chua của người Mường Phú Thọ",
+        "url": "https://thanhnien.vn/say-long-mon-thit-chua-cua-nguoi-muong-phu-tho-185471030.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -117,6 +117,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-007 đợt 7: nâng Mức 2 — 3 nguồn đã mở, đối chiếu bằng tỉ lệ theo đậu (2 nguồn không ghi số người nên số người suy diễn không đáng tin bằng tỉ lệ). GIỮ toàn bộ định lượng: đậu đen 50g (số người của nguồn dao động 25–83 do khác biến thể — không có đồng thuận sửa; 50 nhất quán với tỉ lệ đường/cốt của 2 nguồn báo chí), đường 25g (dải truyền thống 17–29 suy theo tỉ lệ; số 75 của ĐMX là ngoại lệ gồm đường sên + đường phèn + đường trong cốt), cốt dừa 40g (dải 29–62, trung vị), bột năng 8g (giữa 4 và 11 — cảnh báo không lấy số của bản 'đậu đen bột năng' ở nguồn 3: đó là viên bột lọc nhào tay, khác bột tạo sánh). KHÔNG bổ sung bột khoai/bột báng: chỉ xuất hiện ở các biến thể có tên riêng; cả 2 bản truyền thống thuần đều không có — file là bản thuần.]",
+  "cultural_note": {
+    "text": "Chè đậu đen là thức quà mùa hè quen thuộc của làng quê Bắc Bộ, đến hẹn lại lên vào đúng kỳ thu hoạch đậu đen khi nắng bắt đầu gay gắt. Trong ký ức nhiều gia đình nông thôn những năm 80 của thế kỷ trước, đậu được trồng xen canh trên đất bãi ven sông, phơi khô trên sân gạch rồi cất vào vò đất nung ăn dần; chè ninh nhừ, ngọt bằng mật mía cô thành khuôn và điểm thêm vài hạt muối cho đậm đà. Thời chưa có tủ lạnh, người ta làm mát chè bằng cách ngâm nồi vào chậu nước giếng hay thả bi đông chè xuống giếng, nên cốc chè đậu đen mát lạnh cũng là ký ức tuổi thơ của cả một thế hệ.",
+    "sources": [
+      {
+        "ref": "Hà Nội Mới — Ký ức chè đậu đen",
+        "url": "https://nhipsonghanoi.hanoimoi.vn/print/623953.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

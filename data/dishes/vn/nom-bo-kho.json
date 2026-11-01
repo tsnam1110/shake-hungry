@@ -169,6 +169,19 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. THIẾU NGUYÊN LIỆU: bò khô (slug bo-kho) và đu đủ xanh (slug du-du-xanh) — cần bổ sung vào kho. [LV2-010 đợt 10: GIU-429 — mở VietNamNet bị chặn 429, dừng ngay không retry; chưa mở được ≥3 họ nên giữ Mức 1. Đã xác minh bo-kho và du-du-xanh đều đã có số trong kho. Làm lại khi hết chặn; lưu ý TipHay là bản sao của cùng bộ số VietNamNet/BHX, chỉ tính 1 họ.] [LV2-011 đợt 11: NÂNG Mức 2 — 4 họ độc lập đã mở đọc thật (Bluestone, Yeutre/Mỹ Lệ, Cookpad QUÂN NGUYỄN, VietNamNet; VietNamNet mở được, không còn 429). Sửa duong-trang 5→10g (3/4 họ quy đổi đường ~8-16g/khẩu phần, lệch >30% so với file). Thêm dòng toi 3g (4/4 họ đều có tỏi trong nguyên liệu/nước trộn mà file thiếu hẳn; quy đổi ~2-5g/khẩu phần, llm_suggested/low). bo-kho và du-du-xanh đã xác minh có số. Bất thường ghi nhận không sửa: lượng đu đủ các họ chia hai phe (1/2 quả ~250-300g/mẻ ở Yeutre/Cookpad vs 500g/mẻ ở Bluestone/VietNamNet) nên giữ 80g; vị chua ở Bluestone/VietNamNet chủ yếu từ giấm, file dùng chanh (Yeutre/Cookpad có ủng hộ chanh) nên giữ nguyên.]",
+  "cultural_note": {
+    "text": "Nộm bò khô là món quà vặt gắn với phố cổ Hà Nội, nổi tiếng nhất ở phố Hồ Hoàn Kiếm ven hồ Gươm — con phố ngắn chỉ 52 mét được xem là ngắn nhất Hà Nội. Đĩa nộm gồm đu đủ xanh và cà rốt thái sợi còn giòn, bò khô thái lát, lạc rang và rau thơm — người Hà Nội chuộng rau kinh giới — trộn nước trộn chua ngọt, ăn kèm bánh bột lọc.",
+    "sources": [
+      {
+        "ref": "Báo Thanh Niên — Những khác biệt thú vị giữa gỏi khô bò Sài Gòn và Hà Nội (Giang Vũ)",
+        "url": "https://thanhnien.vn/nhung-khac-biet-thu-vi-giua-goi-kho-bo-sai-gon-va-ha-noi-185633850.htm"
+      },
+      {
+        "ref": "VnExpress — Phố đi bộ hồ Gươm: gợi ý ăn chơi (Tâm Anh)",
+        "url": "https://vnexpress.net/goi-y-an-choi-o-pho-di-bo-ho-hoan-kiem-4633127.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

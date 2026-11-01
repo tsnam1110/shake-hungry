@@ -149,6 +149,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-005 đợt 5: nâng Mức 2 — đối chiếu 3 nguồn công thức đã mở đọc toàn văn (BlueStone, PasGo, Cookpad). Định lượng: giữ nguyên toàn bộ, không sửa — miến 70g nằm trong dải của các nguồn, trứng gà khớp biến thể 1 nguồn, giá đỗ và thịt cua không đủ cơ sở quy đổi (nguồn cân cua nguyên con, kho tính theo thịt cua đã gỡ) nên không kết luận lệch. Bất thường ghi nhận chờ pha phân xử: thiếu hành tây (2/3 nguồn dùng), thiếu nấm mèo (1/3 nguồn), và gia vị nêm chính trong file là nước tương trong khi cả 3 nguồn đều nêm bằng nước mắm/dầu hào.]",
+  "cultural_note": {
+    "text": "Miến xào cua đã được TasteAtlas xếp vào nhóm 100 món ăn từ giáp xác ngon nhất thế giới, ở vị trí 76, theo ghi nhận của VietnamNet. Theo đầu bếp Phạm Tuấn Hải, ngày trước món thường chỉ được nấu tại nhà vào những dịp đặc biệt như Tết hay tiệc tùng; ngày nay, miến xào cua xuất hiện từ thực đơn nhà hàng, khách sạn đến các quán ăn bình dân. Sợi miến mềm quyện thịt cua biển ngọt thanh, xào cùng mộc nhĩ, nấm hương, cà rốt và giá đỗ.",
+    "sources": [
+      {
+        "ref": "VietnamNet — Vietnamese dishes recognised among top 100 best crustacean dishes in the world",
+        "url": "https://vietnamnet.vn/en/vietnamese-dishes-recognised-among-top-100-best-crustacean-dishes-in-the-world-2350764.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

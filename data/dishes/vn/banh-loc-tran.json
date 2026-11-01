@@ -142,6 +142,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-010 đợt 10: GIỮ Mức 1 do 429 toàn đợt trước khi tới món này — chưa tra cứu, làm lại ở vòng sau. Lưu ý sẵn: nước mắm chan là món riêng — file hiện đang kê nuoc-mam-truyen-thong 12 g + duong-trang 4 g, cần trình phân xử remove theo Q10 khi làm spec chính; mỡ hành (mo-lon-nuoc 5 g + hanh-la 3 g) là dòng hợp lệ giữ lại.] [LV2-011 đợt 11: NÂNG Mức 2 — 3 họ độc lập đã mở đọc thật (Điện Máy XANH; Dạy Làm Bánh Á Âu — Baker Thanh Tuyền; Cookpad Huỳnh Ngân), định lượng file đối chiếu ≥2 họ theo tỉ lệ bột:tôm:thịt (file 80:40:25 nằm trong dải nguồn, từ 200:100:100 đến 800:200:200), không dòng nào lệch >30% theo đồng thuận ≥2 họ nên giữ nguyên định lượng; bước nấu viết lại 7 bước. Bất thường ghi nhận: ĐMX ghi 'cho 2 người' nhưng dùng 800 g bột — khẩu phần trong nguồn bất nhất nội bộ nên chỉ đối chiếu theo tỉ lệ; nước mắm + đường trong file là phần nước chấm pha ăn kèm (mọi họ đều pha nước mắm riêng khi ăn) — giữ dòng theo kỷ luật 0 họ phản đối, vẫn chờ phân xử Q10 như đã ghi đợt 10; mộc nhĩ chỉ xuất hiện ở 1 họ phụ (Cookpad Song Phương, mới qua trích đoạn tìm kiếm) nên không thêm; nguồn dùng tôm sông/tôm nhỏ trong khi file dùng slug tom-su — ghi nhận chờ phân xử slug.]",
+  "cultural_note": {
+    "text": "Các món bánh bột lọc của Huế ra đời trong những giai đoạn khó khăn, khi gạo thiếu hụt và củ sắn trở thành lương thực chính: người dân xay củ sắn, lọc lấy tinh bột — khởi nguồn của bột lọc ngày nay — rồi kết hợp với tôm cá đánh bắt từ sông và phá Tam Giang để gói bánh ăn thay cơm. Bánh lọc trần là biến thể không gói lá của họ bánh này: viên bột trong suốt ôm nhân tôm thịt, chan nước mắm, rắc mỡ hành. Từ món ăn chống đói của dân nghèo, bánh bột lọc về sau được các đầu bếp cung đình Huế tiếp nhận và tinh chỉnh thành món ăn thanh tao.",
+    "sources": [
+      {
+        "ref": "Thanh Niên — Cơm hến, bánh ép: Từ món ăn thời khó thành đặc sản ẩm thực Huế",
+        "url": "https://thanhnien.vn/com-hen-banh-ep-tu-mon-an-thoi-kho-thanh-dac-san-am-thuc-hue-185260922132318399.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

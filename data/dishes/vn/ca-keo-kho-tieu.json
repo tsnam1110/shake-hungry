@@ -143,6 +143,23 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): Đối chiếu 3 nguồn công thức đã mở kiểm chứng (xem recipe_sources). Định lượng: giữ nguyên toàn bộ. Cá kèo 150g/khẩu phần cao hơn nguồn thuần cá kèo (125g/khẩu phần) khoảng 20%, nằm trong ngưỡng 30%; nguồn thứ hai là biến thể kho chung thịt ba rọi (≈55g cá + ≈55g thịt mỗi khẩu phần) nên không đồng nhất để kết luận sửa. Ghi nhận bất thường: biến thể kho chung thịt ba rọi rất phổ biến trong các nguồn nhưng file không có thịt ba rọi — không tự thêm dòng. Bước nấu viết lại 8 bước. [LV2-010 Phần C — gói quyết định chủ dự án 2026-10-31: A4.2 ÁP quy ước cá kho: duong-thot-not 8 g → duong-trang 8 g. Căn cứ: hồ sơ đợt nâng không ghi họ nào dùng thốt nốt.]",
+  "cultural_note": {
+    "text": "Cá kèo là loài cá nhỏ của vùng nước lợ miền Tây Nam Bộ — phân bố nhiều ở Cà Mau, Bạc Liêu, Sóc Trăng — xưa được mặc định là “cá nhà nghèo” vì rẻ và dễ bắt. Kho là cách chế biến truyền thống nhất của cá kèo: kho tộ, kho cùng tiêu xay, lá hành và ớt, dọn trong bữa cơm quây quần của gia đình miền Tây; nay cá kèo khan hiếm dần nên món kho quê xưa càng được nhớ tới.",
+    "sources": [
+      {
+        "ref": "Báo Dân Việt — Cá kèo chế biến nhiều món ngon (An Nguyên)",
+        "url": "https://danviet.vn/ca-keo-che-bien-nhieu-mon-ngon-ngon-mat-la-mieng-phai-ke-den-ca-keo-nuong-ong-say-mien-tay-20240628101512811-d1169896.html"
+      },
+      {
+        "ref": "Báo Thanh Niên — Cá kèo kho, món ăn gợi nhớ quê xưa",
+        "url": "https://thanhnien.vn/ca-keo-kho-mon-an-goi-nho-que-xua-1851507805.htm"
+      },
+      {
+        "ref": "Wikipedia tiếng Việt — Cá kèo",
+        "url": "https://vi.m.wikipedia.org/wiki/C%C3%A1_k%C3%A8o"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

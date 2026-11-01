@@ -125,6 +125,19 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-009 đợt 9: Nâng Mức 2 (bảo thủ — nâng bằng nguồn và bước nấu, KHÔNG sửa định lượng) — mở kiểm chứng 3 họ độc lập đúng nhánh cốm THUẦN (Gia Vị Hạnh Phúc, Công Thức Gia Đình, KinhDo Food; đã loại các bản cốm–hạt sen/cốm–đậu xanh cùng trang khỏi đối chiếu). Không dòng nào đạt ngưỡng sửa: bot-nang (tỉ lệ so với cốm 0,13) nằm trong dải nguồn 0,08–0,30; nuoc-cot-dua (tỉ lệ 1,0) khớp mô hình nấu-chung của Công Thức Gia Đình (hai họ còn lại chan riêng lượng nhỏ); duong-trang 25 g thuộc cực ít ngọt của dải tỉ lệ đường/cốm 0,50–1,50 — cả 3 họ đều cao hơn nhưng trải rộng gấp 3 lần, không đồng thuận một mức; com-xanh 60 g trong dải quy đổi rộng. Vani có ở 2/3 họ nhưng kho chưa có slug vani — không thêm, ghi vào hàng đợi nguyên liệu.] [LV2-010 Phần A: thêm vani 1g tuỳ chọn (2/3 họ đợt 9 có; họ định lượng duy nhất: 1 muỗng cà phê chiết xuất ≈ 4,2g cho mẻ ≈ 4 khẩu phần). Dạng chiết xuất lỏng — công thức VN thường dùng ống vani bột, chỉ hợp lệ ở liều vết.]",
+  "cultural_note": {
+    "text": "Chè cốm là thức quà của mùa thu Hà Nội, nấu từ cốm — hạt lúa nếp non còn ngậm sữa — mà mùa vụ chỉ kéo dài chừng ba tháng, nức tiếng nhất là cốm làng Vòng ở phía tây bắc thành phố. Người Hà Nội chọn cốm theo thời điểm trong mùa: cốm đầu thu hạt mỏng, mềm hợp để ăn chơi, còn cốm giữa thu hạt dày và chắc hơn mới hợp đem nấu chè. Hình ảnh những gánh cốm xanh gói trong lá sen đi khắp phố mỗi độ thu về cũng gắn liền với món chè này.",
+    "sources": [
+      {
+        "ref": "Sức khỏe & Đời sống (Gia đình) — Mùa thu Hà Nội không ăn chè cốm sen thật đáng tiếc",
+        "url": "https://giadinh.suckhoedoisong.vn/mua-thu-ha-noi-khong-an-che-com-sen-that-dang-tiec-dang-cung-ram-thang-8-cang-an-yen-172220908174000082.htm"
+      },
+      {
+        "ref": "Viet Nam News — The taste of Hà Nội's autumn",
+        "url": "https://vietnamnews.vn/life-style/393116/the-taste-of-ha-noi-s-autumn.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

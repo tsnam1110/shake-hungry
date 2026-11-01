@@ -135,6 +135,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): Đã mở kiểm chứng 3 nguồn công thức thật (Hướng Nghiệp Á Âu, Bếp Xưa, Cookpad của Ngoc Nu Nguyen) và đối chiếu định lượng theo khẩu phần. Định lượng: cua theo khẩu phần ở nguồn là 200–250g, file 200g khớp đầu thấp — giữ nguyên. Me: Hướng Nghiệp Á Âu và Bếp Xưa cùng quanh 25g mỗi khẩu phần, nhưng Cookpad chỉ khoảng 7,5g mỗi khẩu phần — các nguồn bất đồng lớn nên giữ nguyên 20g của file. Không sửa dòng nguyên liệu nào. Viết lại hoàn toàn recipe_steps bằng lời riêng (8 bước) theo đúng kỹ thuật của nguồn: chiên cua trước rồi rim/xóc sốt me. Rà phân loại: loai:mon-chinh, region vn-south, meal_slots trưa/tối phù hợp; cooking_method 'xao' giữ nguyên dù nguồn gọi là rang (chiên rồi rim sốt) — ranh giới rang/xào không sai rõ ràng, không sửa. Đạt Mức 2.",
+  "cultural_note": {
+    "text": "Cua biển là sản vật làm nên tên tuổi của Cà Mau — con cua sống tự nhiên trong các vuông tôm của người dân địa phương. Theo cẩm nang du lịch Cà Mau của VnExpress, cua được chế biến từ những cách giản dị như luộc, hấp, nướng than đến cầu kỳ hơn như rang me, lẩu hay bánh canh cua.",
+    "sources": [
+      {
+        "ref": "VnExpress — Cẩm nang du lịch Cà Mau (mục Đặc sản: cua Cà Mau)",
+        "url": "https://vnexpress.net/cam-nang-du-lich-ca-mau-4447395.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

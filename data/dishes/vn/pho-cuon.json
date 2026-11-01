@@ -157,6 +157,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. [LV2-006 đợt 6: nâng Mức 2 — định lượng giữ nguyên toàn bộ. Bất thường ghi nhận chờ phân xử: nhân bò thực tế được xào chín ở 3/3 nguồn trong khi cooking_method của file chưa phản ánh điều đó — không tự sửa phân loại trong đợt này. Trứng tráng sợi có ở 2/3 nguồn nhưng định lượng lệch nhau 3 lần — ghi nhận, không bổ sung.]",
+  "cultural_note": {
+    "text": "Phở cuốn là món ăn trẻ tuổi của Hà Nội, ra đời khoảng năm 2000 tại làng Ngũ Xã bên hồ Trúc Bạch, vùng đất xưa nổi danh với nghề đúc đồng. Chuyện kể rằng trong một ngày hè nóng bức, bà Vũ Thị Chinh lấy bánh phở còn thừa cuộn thịt bò và rau mùi cho khách đỡ ngán phở nước, kèm bát nước chấm chua ngọt như chấm nem; món ăn được khách khen ngợi và được bà đặt tên là \"phở cuốn\". Hơn hai mươi năm sau, phở cuốn đã trở thành món quen của phố phường Hà Nội.",
+    "sources": [
+      {
+        "ref": "CafeF — Về làng Ngũ Xã xưa tìm 'mẹ đẻ' của món phở cuốn",
+        "url": "https://cafef.vn/ve-lang-ngu-xa-xua-tim-me-de-cua-mon-pho-cuon-moi-khai-sinh-tron-20-nam-ma-nay-da-thanh-tinh-hoa-am-thuc-vang-danh-ca-nuoc-ngoai-2021012811170883.chn"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

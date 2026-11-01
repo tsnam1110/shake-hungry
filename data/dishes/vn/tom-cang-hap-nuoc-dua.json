@@ -101,6 +101,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-008 đợt 8: Nâng Mức 2 với 3 nguồn đã mở đọc (Chợ Lại Thiêu, Saigonese Baguette, Hải Sản Trung Nam). GIỮ cơ sở cân hiện tại theo chỉ đạo riêng của đợt: tôm càng xanh 200g là cân THÔ nguyên con nguyên vỏ (xem anomaly), nước dừa tươi 50g, sả 10g, muối 0,5g. Đối chiếu: các nguồn đều nấu mẻ 500g tôm (Hải Sản Trung Nam: 8 con) với 1 quả dừa và sả 3-4 cây ở 2/3 nguồn — quy về 200g tôm thì sả ~12-16g, file 10g thấp hơn chưa tới ngưỡng sửa khi nguồn thứ ba không dùng sả; nước dừa ở các nguồn là 300-500ml cho cả mẻ nhưng đóng vai trò môi trường hấp (đổ dưới vỉ, không ngập tôm theo Chợ Lại Thiêu) chứ không phải lượng ăn vào, nên giữ 50g là phần nước dừa thực tế rưới/phục vụ mỗi khẩu phần và ghi anomaly thay vì tăng theo lượng trong nồi. BỎ 2 dòng 0/3 nguồn ủng hộ: la-chanh 1g và nuoc-mam-truyen-thong 5g (mọi nguồn nêm muối/bột canh và chấm muối tiêu chanh). Method hap giữ nguyên (2/3 nguồn gọi là hấp dù Hải Sản Trung Nam luộc nhanh trong nước dừa sôi); region vn-south giữ nguyên (cả 3 nguồn đều gắn tôm càng xanh với Đông Nam Bộ/Đồng bằng sông Cửu Long). serving_grams 260g giữ nguyên.]",
+  "cultural_note": {
+    "text": "Ở xứ dừa Bến Tre, tôm càng xanh là món quà dân dã của sông rạch miền Tây, thường được chế biến thật giản dị để giữ nguyên vị ngọt của thịt tôm. Cẩm nang du lịch Bến Tre của VnExpress nhắc tới cách luộc tôm càng với nước dừa xiêm — một lối nấu gắn với vùng đất dừa. Bản hấp trong hồ sơ này đi theo đúng lối ấy: tôm hấp cách hơi nước dừa, lót sả và chấm muối tiêu chanh.",
+    "sources": [
+      {
+        "ref": "VnExpress — Cẩm nang du lịch Bến Tre (mục Đặc sản: tôm càng xanh luộc với nước dừa xiêm)",
+        "url": "https://vnexpress.net/cam-nang-du-lich-ben-tre-4447138.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

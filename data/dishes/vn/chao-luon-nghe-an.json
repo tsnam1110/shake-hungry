@@ -169,6 +169,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-009 đợt 9: Nâng Mức 2 — mở kiểm chứng 3 họ nguồn (Bluestone, Tripi — bản Hawonkoo trùng số liệu tính cùng họ, Điều Trị). Cả 3 họ đều KHÔNG ghi khẩu phần: mọi quy đổi đều giả định mẻ = 4 khẩu phần và đã ghi rõ ở đây theo kỷ luật đợt. Sửa gao-te 50→40 g và THÊM gao-nep 10 g (3/3 họ đều trộn nếp, tổng gạo không đổi); thêm hanh-la 5 g (4/4 họ tính cả bản cùng họ), cu-nen 4 g (slug null — gia vị phụ, engine ghi missing) và gung 3 g. Giữ luon 100 g (nguồn 125–150 g sống → ~100–120 g sau làm sạch), bot-nghe 2 g (nguồn dùng nghệ tươi, tương đương bột ~2–2,5 g), dau-an 5 g chỉ cho bước xào lươn theo Phương án A.] [LV2-010 Phần A: PHÂN XỬ tía tô — hàng đợi LV2-009 ghi 2/3 họ, đợt này mở lại cả 3 nguồn đã ghi thì chỉ Tripi có tía tô (50g/mẻ) = 1/3 họ, KHÔNG đủ ngưỡng ≥2 họ nên không thêm dòng; giữ nguyên file.]",
+  "cultural_note": {
+    "text": "Cháo lươn là một trong hai \"đặc sản\" được người Nghệ An tự hào nhắc đến: theo giai thoại địa phương, lãnh đạo tỉnh từng trả lời hóm hỉnh rằng Nghệ An có hai đặc sản nức tiếng gần xa là \"bóng đá và cháo lươn\". Lươn đồng lấy từ vùng đồng chiêm trũng Yên Thành, nơi được mệnh danh là \"thủ phủ lươn đồng\", còn thành phố Vinh là \"thủ phủ cháo lươn\" với cả một \"phố cháo lươn\" đông khách mỗi sớm chiều. Món súp lươn xứ Nghệ từng được Great Big Story thuộc kênh CNN xếp vào danh sách 7 món ăn sáng độc đáo trên thế giới.",
+    "sources": [
+      {
+        "ref": "VietnamNet — Lươn đồng xứ Nghệ: Thưởng thức một lần rồi nhớ mãi",
+        "url": "https://vietnamnet.vn/luon-dong-xu-nghe-thuong-thuc-mot-lan-roi-nho-mai-cu-muon-quay-tro-lai-2217508.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

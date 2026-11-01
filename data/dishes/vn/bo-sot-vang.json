@@ -203,6 +203,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu). Nâng Mức 2 đợt 1 (2026-10-31): đã đối chiếu 3 nguồn công thức thật (Điện Máy Xanh miền Bắc, Điện Máy Xanh kiểu Pháp, Savoury Days). Phân xử định lượng — ca-chua: 40 → 70 g: hai nguồn có cà chua tươi tương đối khớp nhau khi quy về khẩu phần (miền Bắc ≈67 g, Savoury Days ≈83 g), số cũ lệch hơn 30% so với cả hai nên nâng về gần đồng thuận nguồn. Giữ nguyên: thịt bò 180 g (nguồn 167–250 g/khẩu phần); bơ 8 g (nguồn đều ≈10 g); tương cà 20 g (hai nguồn bất đồng lớn: 5 g kiểu Bắc so với ≈57 g sốt cà hộp kiểu Pháp); rượu vang 30 g (nguồn dao động 20–50 ml); khoai tây 60 g và cà rốt 50 g chỉ 1 trong 3 nguồn có dùng (kiểu Bắc ≈23 g/khẩu phần) — không đủ 2 nguồn đối chiếu nên giữ, ghi nhận nguồn Bắc dùng ít rau củ hơn hẳn. Ghi nhận thêm: dòng bia tuỳ chọn không xuất hiện trong cả 3 nguồn (chuẩn là rượu vang đỏ), giữ nguyên theo bản đã duyệt. Bước nấu viết lại 8 bước.",
+  "cultural_note": {
+    "text": "Bò sốt vang là món bò hầm mang ảnh hưởng văn hóa phương Tây dưới thời Pháp thuộc, gắn với bếp Hà Nội: thịt bò — thường là bắp hoặc nạm — được xào với bơ rồi hầm cùng lá thơm và rượu vang. Cách nêm nếm của món đến nay vẫn gây nhiều tranh luận, vì có trường phái chỉ dùng lá thơm và đinh hương cho đúng gu sốt vang Pháp và dứt khoát không cho ngũ vị hương kẻo thành bò kho, có nơi lại nấu kèm xốt cà để lấy màu và vị chua thoảng. Từ Hà Nội, món theo chân những người Bắc di cư vào Sài Gòn từ những năm 40 của thế kỷ trước, và phần nước bò sốt vang cũng là nền cho biến thể phở sốt vang nổi tiếng.",
+    "sources": [
+      {
+        "ref": "Thanh Niên — Những biến tấu thú vị của phở Bắc",
+        "url": "https://thanhnien.vn/nhung-bien-tau-thu-vi-cua-pho-bac-185597793.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

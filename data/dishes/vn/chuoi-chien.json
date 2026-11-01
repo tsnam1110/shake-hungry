@@ -109,6 +109,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt) [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 10 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).] [LV2-009 đợt 9: Nâng Mức 2 — mở kiểm chứng 3 họ nguồn (Điện Máy XANH, Cookpad Poppy Cookery, Cookpad Apple's Kitchen). KHÔNG sửa định lượng: số bột của mọi nguồn là lượng CẢ TÔ bột pha (nhúng hai lần, phần thừa bỏ đi — không phải lượng bám vào quả) và bất đồng >30% ở mọi dòng; số của file nằm trong dải nguồn. Không có dòng dau-an là đúng Phương án A (toàn bộ dầu là môi trường chiên, engine mô hình hoá qua method chien). Bột vỏ giữ bot-mi + bot-gao (đều có số) thay vì hỗn hợp bột pha sẵn ≈ bot-chien-gion null — theo tiền lệ LV2-008. Serving giữ 120 g, mô tả đổi '1 phần' → '1 cái'; chuẩn hoá tên 'Chuối chiên'. Bất thường chờ phân xử (không tự sửa): bột nếp có ở 2/3 họ nhưng file không có — nếu chủ dự án duyệt, đề xuất + bot-nep 5 g và bot-mi 25→20 g.]",
+  "cultural_note": {
+    "text": "Chuối chiên là món ăn vặt đường phố quen thuộc khắp Đông Nam Á, và bản Việt được cho là có nguồn gốc từ miền Nam, cụ thể là các tỉnh miền Tây sông nước. Từ những hàng quán vỉa hè ở Sài Gòn và các khu chợ miền Tây, món bánh theo chân người bán lan ra nhiều nơi — ở Hà Nội, hàng chuối chiên thường xuất hiện vào mùa đông, bán kèm bánh khoai, bánh ngô nóng hổi bên chảo dầu sôi. Mỗi vùng lại có dáng bánh riêng, như bánh chuối An Giang thon dài hơn hẳn bánh chuối Hà Nội.",
+    "sources": [
+      {
+        "ref": "Wikipedia tiếng Việt — Chuối chiên",
+        "url": "https://vi.wikipedia.org/wiki/Chu%E1%BB%91i_chi%C3%AAn"
+      }
+    ]
+  },
   "status": "draft",
   "source": "llm_suggested",
   "confidence": "unknown",

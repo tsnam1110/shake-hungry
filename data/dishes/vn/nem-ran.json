@@ -221,6 +221,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 12 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).] [LV2-007 đợt 7: nâng Mức 2 — 4 họ nguồn độc lập đã mở. SỬA miến dong 15→7g (3 nguồn độc lập đồng thuận 3–8g — file cũ cao hơn >2 lần) và củ đậu 15→20g (2 nguồn trực tiếp 20–26,7g; lấy cận dưới). BỔ SUNG nấm hương khô 2g và hành tây 12g — hai dòng định danh thiếu hẳn, có ở 3/3 nguồn Bắc (1,5–2,7g và 10,7–15g). GIỮ thịt 50g, mộc nhĩ 5g, cà rốt 15g, trứng 10g (phân tán 5–27, file nằm trong dải), tôm tuỳ chọn 20g (chỉ 1 nguồn ủng hộ ở mức 27g — giữ tuỳ chọn, không sửa). Method chien-ngap-dau được 3 nguồn khẳng định. Tổng nguyên liệu thô sau vá ~178g so với serving 210g — phần chênh là nước pha loãng của chén chấm.]",
+  "cultural_note": {
+    "text": "Nem rán là món ăn có mặt trong mâm cỗ cúng gia tiên ngày Tết của cả ba miền, nhưng mỗi miền lại gọi bằng một tên khác: miền Bắc là nem rán với cuốn to, miền Trung là chả ram cuốn nhỏ thon dài, miền Nam là chả giò. Nhân nem gồm thịt xay, miến, cà rốt và mộc nhĩ; nước chấm cũng đổi theo vùng — miền Bắc pha loãng ăn kèm dưa góp, miền Trung và miền Nam chuộng vị chua ngọt tỏi ớt. Chính sự phong phú ấy khiến nem rán trở thành một trong những món ăn Việt được bạn bè quốc tế biết đến nhiều nhất.",
+    "sources": [
+      {
+        "ref": "TTXVN (Báo ảnh Việt Nam) – Nem rán, món ngon dân dã ba miền",
+        "url": "https://vietnam.vnanet.vn/vietnamese/tin-tuc/nem-ran-mon-ngon-dan-da-ba-mien-143566.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

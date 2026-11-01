@@ -180,6 +180,19 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt DISH-004 đợt 2 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — thêm giò sống 35 (3/3 nguồn; chưa có số nên phần calo chờ nguyên liệu) và trứng cút 20 (2/3); su hào 40→15, súp lơ 40→25, cà rốt 30→20 theo tỉ lệ tô của nguồn; viết lại bước theo đúng kỹ thuật canh bóng thả.] [AUDIT-FIX 2026-11-01 — PX-34 (AUDIT-002): mở lại toàn bộ URL chưa kết luận của món. CẢ 3 URL vẫn chưa kết luận sau thử lại 2026-11-01: bachhoaxanh trả HTTP 200 nhưng thân trang rỗng (server sống, không đọc được nội dung để xác nhận đúng món); ĐMX và bloganngon lỗi mạng qua dịch vụ fetch. Không URL nào xác nhận chết nên không hạ mức theo quy tắc PX-34, nhưng đây là hồ sơ yếu nhất kho — ưu tiên số 1 để thử lại đợt sau.] [Thử lại 2026-11-01 — đợt sau AUDIT-FIX (kèm QA-002 lần 5): CẢ 3 URL thử lại vẫn CHƯA KẾT LUẬN — bachhoaxanh trả HTTP 200 thân trang rỗng như các vòng trước (server sống, không đọc được nội dung xác nhận đúng món); ĐMX và bloganngon lỗi mạng qua dịch vụ fetch, không mã HTTP. Không URL nào xác nhận chết; giữ trạng thái hồ sơ yếu 0/3 đọc được, ưu tiên thử lại khi có kênh fetch khác.]",
+  "cultural_note": {
+    "text": "Canh bóng thả là món canh truyền thống của người Hà Nội, thường chỉ xuất hiện trong mâm cỗ Tết. Từ sau rằm tháng Chạp, nhiều gia đình đã lo dành sẵn bóng bì loại thăn cùng tôm khô, nấm hương; đến ngày nấu lại tỉa su hào, cà rốt, súp lơ, đậu Hà Lan làm “chân tẩy” cho bát canh. Trong mâm cỗ Tết Hà Nội theo lối bốn bát, bóng thả là một bát không thể thiếu, và sự cầu kỳ của món canh được xem là thước đo sự khéo léo, vén khéo của người phụ nữ trong nhà.",
+    "sources": [
+      {
+        "ref": "Tuổi Trẻ — Luyến lưu canh bóng nấu thả ngày xuân",
+        "url": "https://tuoitre.vn/dulichtphcm/luyen-luu-canh-bong-nau-tha-ngay-xuan-10747138.htm"
+      },
+      {
+        "ref": "VnExpress — Mâm cỗ Tết ba miền có gì?",
+        "url": "https://vnexpress.net/mam-co-tet-ba-mien-co-gi-4558827.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

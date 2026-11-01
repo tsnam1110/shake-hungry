@@ -142,6 +142,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): đã đối chiếu 3 nguồn công thức đã mở kiểm chứng (2 bài Điện Máy Xanh + 1 sách dạy nấu ăn). Định lượng thịt mỗi khẩu phần giữa các nguồn dao động rất lớn (khoảng 125–625g vì có mẻ Tết nấu nồi áp suất) — hai nguồn bất đồng >30% nên giữ nguyên mọi quantity trong file theo quy tắc phân xử. Trứng vịt 60g (khoảng 1 quả/khẩu phần) và nước dừa tươi 80g nằm trong khoảng các nguồn. recipe_steps viết lại hoàn toàn thành 7 bước. Không sửa phân loại.",
+  "cultural_note": {
+    "text": "Thịt kho tàu — còn gọi là thịt kho hột vịt — là món không thể thiếu trong mâm cơm Tết Nam Bộ, kho bằng nước dừa tươi với miếng thịt cắt vuông và quả trứng vịt để nguyên tròn. Hình ảnh ấy được người miền Nam gửi gắm triết lý “trời tròn đất vuông”, và nồi thịt kho còn là món dâng cúng tổ tiên trong lễ “rước ông bà” ngày cuối năm và “tiễn ông bà” vào mùng 3 Tết. Vì nồi thịt phải ăn suốt mấy ngày Tết và hâm đi hâm lại, nước kho được nêm vị lờ lợ — không mặn, không lạt — và theo cách giải thích của người miền Tây, chữ “tàu” trong tên món chính là chỉ thứ nước có vị lờ lợ ấy.",
+    "sources": [
+      {
+        "ref": "Heritage (Vietnam Airlines) — Nồi thịt kho hột vịt của ngày Tết Nam bộ (Thu Hà)",
+        "url": "https://heritagevietnamairlines.com/noi-thit-kho-hot-vit-cua-ngay-tet-nam-bo/"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

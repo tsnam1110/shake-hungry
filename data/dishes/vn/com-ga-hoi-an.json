@@ -175,6 +175,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt DISH-004 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): Đã đối chiếu 3 nguồn công thức thật (Điện máy XANH, Cookpad/QUÂN NGUYỄN, Hội Đầu Bếp Á Âu). Định lượng: thịt gà có da 130g/khẩu phần tương đương phần thịt ăn được của 800g-1,2kg gà nguyên con cho 4 người ở các nguồn (khoảng 110-165g thịt có da mỗi người), giữ nguyên; hành tây 25g khớp nguồn (1 củ cho 4 người), giữ nguyên. Cơm chín 200g giữ nguyên dù các nguồn bất đồng về lượng gạo (160-500g mỗi mẻ, quy ra cơm chín khoảng 100-300g/người). Rau răm 5g thấp hơn một nguồn (100g/4 người ở bản người dùng của Điện máy XANH) nhưng các nguồn còn lại chỉ dùng 10-50g cho cả mẻ, nên giữ nguyên và ghi nhận. Phân loại (loai:com, nau, vn-quang-nam, trưa/tối) rà soát, không sai rõ ràng, giữ nguyên. Phân xử bất thường LV2-001 (Phần A, 2026-10-31): thêm du-du-xanh 40 g (gỏi ăn kèm — Hội Đầu Bếp Á Âu dùng nửa quả đu đủ xanh cho mẻ 4 người, khoảng 40–50 g/khẩu phần; Cookpad cũng kèm gỏi đu đủ) và long-ga 25 g (nước mạ — Điện máy XANH có nước mạ lòng gà, Hội Đầu Bếp Á Âu xào lòng gà làm phần nước chan; 1 bộ lòng ~100 g cho mẻ 4 người ≈ 25 g/khẩu phần). Bước 6 của file vốn đã mô tả hai thành phần này ở dạng điều kiện, nay ghi thành dòng nguyên liệu chính thức.",
+  "cultural_note": {
+    "text": "Cơm gà Hội An xuất hiện khoảng những năm 1950: món cơm gà vốn gắn với vùng Tam Kỳ nổi tiếng có gà ngon, được người Hội An sáng tạo lại thành đặc sản của riêng phố Hội, xưa kia theo những gánh hàng rong len lỏi khắp ngõ phố. Gà luộc xé phay trộn với hành tây, rau răm, chanh và ớt; cơm nấu bằng nước luộc gà cùng lá dứa và nghệ cho hạt cơm vàng thơm. Ngày nay món ăn đã được cấp chứng nhận chỉ dẫn địa lý gắn với du lịch Hội An.",
+    "sources": [
+      {
+        "ref": "TTXVN / VietnamPlus (Báo ảnh Việt Nam) — Cơm gà Hội An",
+        "url": "https://vietnam.vnanet.vn/vietnamese/tin-tuc/com-ga-hoi-an-238890.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -137,6 +137,19 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-006 đợt 6: nâng Mức 2 — định lượng giữ nguyên toàn bộ sau đối chiếu ≥2 nguồn. Biến thể trộn gạo nếp ở một số nguồn được ghi nhận là biến thể; file giữ bản gạo tẻ.]",
+  "cultural_note": {
+    "text": "Cháo từng là món ăn thay cơm của nhà nông nghèo xưa — dễ nấu, lại không tốn nhiều gạo. Với cháo gà, ký ức Tết của nhiều gia đình quê gắn với con gà luộc trong bữa cơm tất niên: nước luộc gà được giữ lại để mẹ nấu nồi cháo gà trong đêm giao thừa cho cả nhà.",
+    "sources": [
+      {
+        "ref": "Tạp chí Người Hà Nội — Ngọt ngào cháo hến ngày xưa",
+        "url": "https://nguoihanoi.vn/ngot-ngao-chao-hen-ngay-xua-23343.html"
+      },
+      {
+        "ref": "VietNamNet — Nhớ bát cháo mẹ nấu từ nước luộc con gà duy nhất (mục Ký ức Tết)",
+        "url": "https://vietnamnet.vn/nho-bat-chao-me-nau-tu-nuoc-luoc-con-ga-duy-nhat-2481536.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

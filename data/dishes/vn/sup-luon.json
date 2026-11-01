@@ -146,6 +146,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Đôi với chao-luon-nghe-an cùng quota: hai món độc lập (nền gạo cháo vs nền súp sánh bột năng) theo đúng ghi chú kế hoạch §3.4. [LV2-010 đợt 10: Nâng Mức 2 — đối chiếu 3 họ nguồn đã mở trực tiếp (Bếp Trưởng Á Âu/Beth Huỳnh, Sức Khỏe & Đời Sống, Cookpad/Rothy): bột năng 10→5 g (2 họ có số đồng thuận thấp hơn >50%); thay rau mùi bằng rau răm (3/3 họ); thêm nghệ tươi 5 g và ớt tươi 2 g (3/3 họ có, file thiếu — nghệ là định danh món); XOÁ mộc nhĩ 3 g theo phân xử của điều phối khi áp: file mang định danh xứ Nghệ (nhãn dac-san:nghe-an sẵn có) trong khi 0/3 họ Nghệ An có mộc nhĩ — mộc nhĩ chỉ thuộc biến thể giáo trình phổ thông; viết lại 7 bước. Ghi nhận daynauan.info.vn chép cùng bộ số Bếp Trưởng nên tính chung 1 họ.]",
+  "cultural_note": {
+    "text": "Súp lươn là một nửa của cặp “cháo lươn/lươn cháo” mà người Nghệ An vẫn đùa là đặc sản nức tiếng gần xa của tỉnh, bên cạnh bóng đá. Lươn đồng lấy từ vùng đồng chiêm trũng Yên Thành — nơi được gọi là “thủ phủ lươn đồng” — đưa về Vinh chế biến thành cháo lươn, súp lươn ăn kèm bánh mì hay bánh mướt, và món súp lươn xứ Nghệ từng được Great Big Story của CNN xếp vào 7 món ăn sáng độc đáo trên thế giới. Với người Nghệ xa quê, về đến Vinh mà chưa ăn một bát lươn cháo hay súp lươn thì coi như chưa trọn chuyến về.",
+    "sources": [
+      {
+        "ref": "VietnamNet — Lươn đồng xứ Nghệ: Thưởng thức một lần rồi nhớ mãi, cứ muốn quay trở lại",
+        "url": "https://vietnamnet.vn/luon-dong-xu-nghe-thuong-thuc-mot-lan-roi-nho-mai-cu-muon-quay-tro-lai-2217508.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -174,6 +174,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 2 (2026-10-31): Đã đối chiếu 3 nguồn thật mở kiểm chứng (Sức khỏe & Đời sống/Gia đình; Lao Động; Cookpad Trinh Ngọc). Phân xử định lượng: giữ nguyên mọi dòng — ốc giữ 150 g vì Cookpad ghi 0,5 kg ruột ốc/4 phần (125 g/khẩu phần, lệch dưới 30%) trong khi hai nguồn còn lại cân ốc nguyên vỏ (500 g–1 kg/mẻ, phần thịt quy đổi thấp hơn hẳn) nên khác cơ sở cân, không dùng để hạ số; thịt ba chỉ 50 g nằm gần quy đổi của SKĐS và Lao Động (≈60 g/khẩu phần) nhưng Cookpad chỉ 25 g/khẩu phần — nguồn bất đồng; chuối và đậu giữ nguyên vì quy đổi theo quả/bìa dao động lớn và 2/3 nguồn không ghi khẩu phần. Bất thường ghi nhận: 2/3 nguồn (SKĐS, Lao Động) đều có cà chua — file không có; nguồn tạo chua bằng mẻ hoặc dấm bỗng, file dùng me chín; SKĐS khuyên để mắm tôm riêng khi ăn thay vì nấu chung. Phân xử bất thường LV2-002 (Phần A, 2026-10-31): Thêm ca-chua 40 g — 2/3 nguồn (SKĐS, Lao Động) đều nấu cùng cà chua. Tạo chua: nguồn dùng mẻ/dấm bỗng, kho chưa có cả hai slug — giữ me-chin như hiện tại, chờ biên soạn nguyên liệu (không tự thay bằng slug chua khác).",
+  "cultural_note": {
+    "text": "Ốc om chuối đậu được xem là món ăn hội tụ hồn cốt của đồng bằng Bắc Bộ: ốc bắt từ ruộng, ao làng sau những cơn mưa đầu mùa, chuối xanh hái ngoài vườn nhà, thêm đậu phụ và thịt ba chỉ — tất cả đều là sản vật quen thuộc của làng quê. Món thường được nấu vào những ngày đầu hè, khi ốc đồng béo mẩy, om nhỏ lửa trong nồi đất rồi rắc lá lốt, tía tô trước khi bắc ra. Từ mâm cơm gia đình, món nay đã thành món chủ lực của nhiều quán ốc ở Hà Nội.",
+    "sources": [
+      {
+        "ref": "VietnamPlus — Ốc om chuối đậu: Hương vị hội tụ trọn vẹn bản sắc Việt",
+        "url": "https://baomoi.com/oc-om-chuoi-dau-huong-vi-hoi-tu-tron-ven-ban-sac-viet-c56355126.epi"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

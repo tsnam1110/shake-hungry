@@ -190,6 +190,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt DISH-004 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-009 đợt 9: Nâng Mức 2 — mở kiểm chứng 3 họ nguồn (Điện Máy XANH, Bluestone, Long Phương). KHÔNG sửa định lượng: ba chỉ 50 g và lạc 10 g khớp đúng Điện Máy XANH, trứng cút 20 g = 2 quả khớp, nước mắm ~7,5 g khớp. Thêm cu-nen 10 g (2/3 họ có — 10–12,5 g/khẩu phần ở Long Phương; slug null có hồ sơ, gia vị phụ nên engine ghi missing, không chặn nâng; Bluestone làm được món không có củ nén nên đây không phải thành phần định danh). Giữ soi-mi-quang 90 g theo quy ước lượng sợi; dau-an 8 g giữ nguyên (kho chưa có slug dầu đậu phộng).]",
+  "cultural_note": {
+    "text": "Trong các làng mì Quảng nổi tiếng, Phú Chiêm (Thanh Chiêm, Điện Bàn) đã đi vào thơ ca như một biểu tượng: \"Tiếng đồn mì Quảng Phú Chiêm/ Cao lầu phố Hội, mắm nêm Cẩm Hà...\". Nước nhưn theo lối Phú Chiêm rim tôm cho săn để hở phần vỏ, thịt ba chỉ xắt miếng rim thấm trong nước tôm, khác với cách làm ở Đại Lộc, Duy Xuyên hay Túy Loan. Nghề gánh mì ở làng đã truyền qua ba đời, và tháng 8/2024 tri thức dân gian mì Quảng được ghi vào Danh mục Di sản văn hoá phi vật thể quốc gia.",
+    "sources": [
+      {
+        "ref": "Người Lao Động — Nức tiếng mì Quảng Phú Chiêm",
+        "url": "https://nld.com.vn/print/nuc-tieng-mi-quang-phu-chiem-196250124135121708.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

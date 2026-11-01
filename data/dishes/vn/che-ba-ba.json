@@ -193,6 +193,19 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-007 đợt 7: nâng Mức 2 — 4 nguồn đã mở (đối chiếu theo tỉ trọng trong tổng khối rắn vì không nguồn nào ghi khẩu phần). SỬA khoai lang 50→30g (4/4 nguồn tỉ trọng chỉ 15–21%, file 36%) và khoai mì 40→30g (sau bổ sung, giữ 40 sẽ áp đảo ngoài dải đa số). BỔ SUNG khoai môn 15g (3/4 nguồn), khoai mỡ 10g (3/4), bột báng 5g (2 nguồn), bột năng 5g (3 nguồn dùng lượng lớn cho bánh lọt/áo khoai — 5g là phần tối thiểu cho bản rút gọn), bột khoai 5g (2 nguồn — slug bot-khoai mới biên soạn đợt này theo USDA 169717, xem hồ sơ nguyên liệu), rong biển 3g dạng tuỳ chọn, lá dứa 1g (3 nguồn — file thiếu hẳn dù là thành phần chuẩn). ĐỔI lạc rang 8g tuỳ chọn → lạc sống 10g bắt buộc: cả 3 nguồn có lạc đều dùng lạc sống/tươi luộc trong chè, không nguồn nào dùng lạc rang rắc. GIỮ đậu xanh 15g (chỉ 2 nguồn có, ở mức thấp hơn — ước lượng yield không đủ chắc để sửa), đường 22g, cốt dừa 45g (gánh cả vai trò cốt + dão), mộc nhĩ tuỳ chọn (tư liệu gốc món ghi mộc nhĩ là thành phần bà Ba thêm vào). Thêm tên gọi khác 'Chè thưng'. Bất thường gốc: file là bản rút gọn 7 dòng trong khi món chuẩn có 9–10 thành phần — các bổ sung trên là hệ quả trực tiếp.]",
+  "cultural_note": {
+    "text": "Chè bà ba là món chè thập cẩm đặc trưng của Nam Bộ, gom nhiều sản vật vườn nhà như khoai lang, khoai mì, khoai môn và đậu xanh trong nước cốt dừa. Tên món còn nhiều giai thoại: có thuyết kể món được biến tấu từ chè bột khoai đường cát của bà Ba bán chè nổi tiếng ở chợ Bình Tây (Sài Gòn) khoảng nửa thế kỷ trước, có thuyết lại gắn tên gọi với hình ảnh người phụ nữ Nam Bộ trong tà áo bà ba. Trong nhiều gia đình miền Tây, nồi chè bà ba còn là món cúng Phật, cúng ông bà vào dịp Tết và đêm giao thừa, nấu xong dâng lên bàn thờ trước khi cả nhà cùng thưởng thức.",
+    "sources": [
+      {
+        "ref": "Dân Việt — Chè bà ba trong ký ức tuổi thơ",
+        "url": "https://danviet.vn/che-ba-ba-trong-ky-uc-tuoi-tho-7777528308-d349608.html"
+      },
+      {
+        "ref": "Wikipedia tiếng Việt — Chè bà ba",
+        "url": "https://vi.wikipedia.org/wiki/Ch%C3%A8_b%C3%A0_ba"
+      }
+    ]
+  },
   "status": "draft",
   "source": "llm_suggested",
   "confidence": "unknown",

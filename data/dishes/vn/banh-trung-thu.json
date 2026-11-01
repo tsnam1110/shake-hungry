@@ -119,6 +119,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-012 đợt vét] Nâng Mức 2: đối chiếu 3 họ đã mở (ĐMX, Savoury Days, Bếp Trưởng Á Âu) cho bánh nướng nhân đậu xanh trứng muối 150g, tỉ lệ vỏ 50g : nhân 100g. Sửa: bot-mi 45->28, dau-xanh-hat 45->30, dau-an 8->12, trung-vit-muoi 20->15; bỏ dòng hat-sen-kho tuỳ chọn (0/3 họ của biến thể này có hạt sen). Đường tổng 30g giữ nguyên vì nằm trong dải các họ (~27-42g, gồm phần đường trong nước đường vỏ bánh quy đổi sang duong-trang như cách hạch toán hiện tại của file). Viết lại recipe_steps 8 bước.",
+  "cultural_note": {
+    "text": "Bánh trung thu là món ăn không thể thiếu của Tết Trung thu — rằm tháng 8 âm lịch — ngày tết còn được gọi là Tết Thiếu nhi, Tết Trông trăng hay Tết Đoàn viên. Bánh còn có tên là bánh mặt trăng hay bánh đoàn viên: người lớn thưởng trăng, ăn bánh, uống trà, trẻ con rước đèn, xem múa lân và phá cỗ. Ở một nền văn minh lúa nước, Trung thu rơi vào lúc công việc gieo trồng đã hoàn tất, là dịp gia đình sum họp và cúng gia tiên sau một vụ mùa.",
+    "sources": [
+      {
+        "ref": "Thanh Niên — Tết Trung thu và muôn vàn câu hỏi của người Việt",
+        "url": "https://thanhnien.vn/tet-trung-thu-va-muon-van-cau-hoi-cua-nguoi-viet-185788549.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

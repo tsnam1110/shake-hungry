@@ -182,6 +182,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt) Nâng Mức 2 đợt 1 (2026-10-31): Đối chiếu 3 nguồn công thức đã mở kiểm chứng (xem recipe_sources). Định lượng: giữ nguyên toàn bộ. Thịt ba chỉ mỗi khẩu phần giữa các nguồn bất đồng rất lớn (≈83g ở Lan Vy so với 250g ở Tripi; nguồn Bách Hợp không ghi khẩu phần) nên giữ 150g của file. Sửa phân loại: cooking_method đổi từ 'song' sang 'luoc' — cả 3 nguồn đều luộc thịt chín rồi mới thái lát để cuốn, phần cuốn chỉ là công đoạn trình bày, ghi 'song' là sai rõ ràng. Ghi nhận: trong các nguồn Đà Nẵng, bánh phở là thành phần cốt lõi của cuốn, trong khi file đang để bánh phở là nguyên liệu tùy chọn (is_optional) — không tự sửa, chờ chủ dự án quyết. Bước nấu viết lại 8 bước.",
+  "cultural_note": {
+    "text": "Bánh tráng cuốn thịt heo là món ăn dân dã của xứ Quảng đã trở thành đặc sản tiêu biểu của Đà Nẵng. Mâm bánh gồm thịt luộc thái mỏng — cầu kỳ nhất là kiểu thịt 'hai đầu da' lấy từ phần mông, đùi sau, lát cắt có da ở cả hai đầu — bánh tráng, mì lá, rau sống và chén mắm nêm pha thơm, tỏi, ớt. Chưa có cứ liệu xác định món ăn ra đời đầu tiên ở đâu, nhưng cách người xứ Quảng nâng những nguyên liệu bình thường thành món cuốn có phong cách riêng, cùng kiểu ăn chung mỗi người tự cuốn lấy phần mình, đã làm nên bản sắc của món ăn này.",
+    "sources": [
+      {
+        "ref": "Tạp chí Thương hiệu & Công luận — Bánh tráng cuốn thịt heo thương hiệu Đà Nẵng: Cái khéo trong món ăn dân dã",
+        "url": "https://thuonghieucongluan.com.vn/banh-trang-cuon-thit-heo-thuong-hieu-da-nang-cai-kheo-trong-mon-an-dan-da-a339493.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

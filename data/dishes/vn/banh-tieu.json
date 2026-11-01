@@ -130,6 +130,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt) [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 8 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).] [LV2-007 đợt 7: nâng Mức 2 — PHƯƠNG ÁN A theo hồ sơ nghiên cứu (giữ serving 60g/cái). Bất thường lớn của bản cũ: serving và định lượng không tương thích — 3/3 họ đồng thuận tỉ lệ bột mì ≈0,56 khối bột, nên cái 60g chỉ chứa ~36g bột, không phải 55g (giữ 55g thì cái phải ~90g — cỡ nguồn ghi là 'rất to'). SỬA bột mì 55→36, đường 8→6 (tỉ lệ đường/bột nguồn 8–20%), vừng 4→3; muối 0,3 GIỮ (khớp họ B 0,33). BỔ SUNG 3 dòng định danh thiếu hẳn: men nở 0,4g + bột nở 0,5g (3/3 nguồn đều có cả hai; steps bản cũ đã nhắc men mà ingredients không có — dùng 2 slug mới biên soạn đợt này từ USDA SR Legacy 175043/172803) và dầu ăn 2g TRỘN TRONG BỘT (khác dầu chiên chính do engine mô hình hoá). needs_review giữ nguyên false theo trạng thái duyệt toàn kho 2026-10-31.]",
+  "cultural_note": {
+    "text": "Bánh tiêu theo chân cộng đồng người Hoa Phúc Kiến và Triều Châu vào Việt Nam, tập trung nhiều ở khu Chợ Lớn. Tên gọi được cho là bắt nguồn từ 'hồ tiêu bính' — món bánh có nhân thịt tẩm nhiều hạt tiêu ở quê nhà — nhưng khi Việt hoá, bánh đã bỏ hẳn nhân thịt và hạt tiêu, chỉ giữ lại vỏ bột chiên phồng rỗng ruột, rắc mè và mang vị ngọt thanh. Từ một món ăn của người Hoa, bánh tiêu trở thành món quà vặt bình dân trên các xe đẩy đường phố Nam Bộ, thường được bán kèm bánh bò, xôi hay quẩy.",
+    "sources": [
+      {
+        "ref": "aFamily — Vì sao gọi là bánh tiêu?",
+        "url": "https://afamily.vn/vi-sao-goi-la-banh-tieu-236260703113416252.chn"
+      }
+    ]
+  },
   "status": "draft",
   "source": "llm_suggested",
   "confidence": "unknown",

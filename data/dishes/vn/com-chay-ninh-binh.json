@@ -177,6 +177,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [Đính chính 2026-10-31 — Phương án A/QA-002: dau-an 10 g → 3 g. Chỉ giữ phần dầu cho bước phụ có thật trong công thức (xào thịt dê (thành phần riêng, chan lên cơm cháy)) — mức 3 g/khẩu phần là định lượng chế biến cho bước phi/xào nhanh, phần dầu này ăn vào cùng nhân/sốt. Dầu chiên chính không kê nữa: đã được engine mô hình hoá theo CALC-004.] [LV2-006 đợt 6: nâng Mức 2 — xác nhận đây là món MẶN (sốt/nước chấm nguồn gốc dê Ninh Bình), không phải món chay dù tên dễ gây hiểu nhầm. Bổ sung tỏi 3g và nước tương 5g (cả hai họ nguồn); sả chuyển từ tuỳ chọn thành bắt buộc (mọi nguồn đều dùng); BỎ hành lá (0/2 họ nguồn); bổ sung ngò gai 3g và rau ngổ 3g (rau thơm ăn kèm theo nguồn; hai slug chưa có số, dòng rau nhỏ). Nhãn dac-san:ninh-binh chưa có trong taxonomy — không gán, ghi nhận tại đây.]",
+  "cultural_note": {
+    "text": "Cơm cháy Ninh Bình ra đời vào cuối thế kỷ 19 từ tay ông Đinh Hoàng Thăng, người Ninh Bình từng làm việc tại một quán ăn của người Hoa ở Thăng Long, trở về quê và gây dựng tiếng tăm bằng chính món ăn này. Cơm nấu trong nồi gang, phần cháy ở đáy được lấy ra phơi khô rồi chiên giòn, ăn kèm món xào chan sốt thay đổi theo mùa. Ở Ninh Bình, cơm cháy thường đi cùng thịt dê núi và rượu Kim Sơn, làm thành bộ ba đặc sản trứ danh của vùng cố đô Hoa Lư.",
+    "sources": [
+      {
+        "ref": "Lao Động — Giòn ngon cơm cháy Ninh Bình",
+        "url": "https://laodong.vn/dl/gion-ngon-com-chay-ninh-binh-523610.ldo"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

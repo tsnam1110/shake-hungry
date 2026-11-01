@@ -166,6 +166,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. THIẾU NGUYÊN LIỆU: hạt điều màu (tạo màu đỏ cho sợi bún) (vai trò phụ) — cần bổ sung vào kho. [LV2-012 đợt vét] Nâng Mức 2: đối chiếu 3 họ độc lập (Tripi/BHX, Cookpad Quân Nguyễn, Dân Việt/Ngôi Sao) — xem recipe_sources. Đã sửa cua-dong 50→125g, trung-cut 12→25g; thêm thit-lon-xay, tom-kho, trung-ga (kết dính chả), cai-ngot, gia-do, hat-dieu-mau; bỏ ca-chua và dau-phu-chien (0/3 họ). Các dòng mới/sửa giữ source=llm_suggested, confidence=low. Bún tươi giữ 150g/khẩu phần theo quy ước kho dù 2 họ dùng 1kg bún/mẻ (~250g/khẩu phần) — sợi bún đỏ là sợi to kiểu bánh canh, cân nhắc quy ước riêng nếu chủ dự án muốn.",
+  "cultural_note": {
+    "text": "Bún đỏ là món ăn dân dã gắn với Buôn Ma Thuột, phổ biến ở thành phố cao nguyên này như phở ở Hà Nội. Tên gọi của món ăn bắt nguồn từ sợi bún to được nhuộm màu đỏ cam bằng dầu điều — màu sắc gợi liên tưởng đến đất bazan đỏ của Tây Nguyên — và phần riêu tôm là điểm nhấn quen thuộc trên mặt tô. Về sau, món ăn theo chân người Buôn Ma Thuột có mặt ở nhiều thành phố khác, trong đó có Hà Nội.",
+    "sources": [
+      {
+        "ref": "VnExpress — Đặc sản bún đỏ Buôn Ma Thuột ở Hà Nội",
+        "url": "https://vnexpress.net/dac-san-bun-do-buon-ma-thuot-o-ha-noi-4622811.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

@@ -109,6 +109,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nguyên liệu ngọn bí mới biên soạn đợt này từ USDA SR Legacy (pumpkin leaves). [LV2-008 đợt 8: nâng Mức 2 — 3 nguồn đã mở đọc (Dân Việt, Thanh Niên/Trang Thy, Cookpad Nguyễn Hoàng Yến). Ngọn bí: Dân Việt dùng 0,5kg cho một đĩa gia đình (không ghi số người, quy ~4 khẩu phần → ~125g/khẩu phần), Cookpad dùng 1 bó (tương đương ~400–500g) — file 120g/khẩu phần khớp cả hai, giữ. Tỏi: chỉ Dân Việt định lượng (3–4 tép cho 500g rau → ~2–3g/khẩu phần), 2 nguồn còn lại không ghi gram nên chưa đủ ≥2 nguồn định lượng để sửa file 5g — giữ, ghi nhận tỏi ở file nằm ở cận trên. Dầu ăn: các nguồn chỉ ghi phi tỏi bằng dầu, không định lượng thống nhất (1 nguồn nói rõ không cần thêm dầu khi xào) — giữ 8g. Nước mắm: giữ dù 0/3 nguồn dùng (xem anomalies). Kỹ thuật đồng thuận 3/3: tước xơ vỏ cuống, bẻ khúc, rửa ráo; phi tỏi trước và cho thêm tỏi sống giã dập ở cuối (Thanh Niên + Cookpad); xào lửa lớn rất nhanh — Dân Việt nhấn toàn quá trình không quá 2 phút, file cũ ghi 3–4 phút là quá lâu, steps đã sửa. Giữ method xao, region vn, serving_grams 140 (tổng nguyên liệu 137g). Steps viết lại 6 bước.] [LV2-010 Phần C — gói quyết định chủ dự án 2026-10-31: A4.1 ÁP quy ước rau xào: bỏ dòng nuoc-mam-truyen-thong 4 g, chuẩn nêm thành muoi 1 g + hat-nem 2 g (± dầu hào nếu đã có). Căn cứ riêng của món: 0/3 họ đã mở dùng nước mắm (đã ghi nhận ở đợt nâng).]",
+  "cultural_note": {
+    "text": "Ngọn bí xào tỏi là món rau dân dã của những ngày hè: khi nắng nóng làm hoa trái héo rũ, những ngọn bí xanh non hái ngoài vườn vẫn được mang vào bếp làm món xào cho bữa cơm gia đình. Người nấu phải tước bỏ lớp vỏ mỏng bên ngoài ngọn bí và vò sơ lá cho rụng lông non, rồi xào nhanh với tỏi. Từ rau vườn quê, ngọn bí nay đã có mặt ở chợ và siêu thị nơi đô thành, món xào cũng hiện diện trong nhiều nhà hàng, gợi hình bóng quê nhà cho những người con tha hương.",
+    "sources": [
+      {
+        "ref": "Thanh Niên — Ngọn bí xào tỏi (Trang Thy)",
+        "url": "https://thanhnien.vn/ngon-bi-xao-toi-185468752.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

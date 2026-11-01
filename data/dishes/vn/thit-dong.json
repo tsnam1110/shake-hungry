@@ -150,6 +150,19 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-009 đợt 9: Nâng Mức 2 — mở kiểm chứng 3 họ độc lập (Điện Máy XANH — vòng 1; Eva, CHIN-SU — vòng 2; một trang trong kết quả tìm kiếm có số giống hệt ĐMX bị loại vì nghi bản sao). THAY thit-lon-mong 80 g bằng mong-gio 125 g: cả 3/3 họ đều dùng CHÂN GIÒ (ĐMX và CHIN-SU đều đúng 125 g/khẩu phần, đồng thuận tuyệt đối) — file vừa sai phần thịt vừa lệch −36%. Thêm nam-huong-kho 5 g (3/3 họ đều có, file thiếu hẳn). Sửa bi-lon 50→25 g (CHIN-SU cả 2 CT ~23–25 g + ĐMX CT2 25 g; riêng ĐMX CT1 là 50 g — họ ĐMX tự chia đôi, ghi rõ tranh chấp) và hanh-tim 5→10 g (hai họ ~11 g). Giữ tai-lon 40 g (biến thể có thật ở Eva và CHIN-SU CT Tết) và ca-rot 20 g (vai trò tỉa hoa lót khuôn ở 2 họ, lượng không thống nhất). Dầu phi/xào có ở 2 họ nhưng không nguồn nào định lượng — không thêm dòng dau-an theo tiền lệ LV2-003/004. Serving 200→240 g theo tổng dòng mới. Lượng chân giò của nguồn là cân mua (có xương/da) — phần ăn được xử lý qua hệ số của nguyên liệu, thuộc quy ước cân mong-gio đang chờ quyết toàn kho. Chuẩn hoá tên 'Thịt đông'.]",
+  "cultural_note": {
+    "text": "Thịt đông là món ăn truyền thống trong mâm cỗ Tết của các gia đình miền Bắc, gắn với tiết trời rét đậm của những ngày Tết gió mùa Đông Bắc. Dân gian truyền miệng rằng món ăn bắt đầu từ nồi canh chân giò hầm để ngoài trời lạnh mà đông lại bất đắc dĩ, rồi thành món Tết quen thuộc; các bà, các mẹ xưa còn đặt thịt đông ra sân cho thấm sương giá lúc giao mùa. Trong cỗ chiều 30 Tết của người Hà Nội theo lối 4 bát 6 đĩa, đĩa thịt đông trong veo như thạch gửi gắm ước muốn về một khởi đầu năm mới tinh khôi, trong trẻo, thường ăn kèm bánh chưng và hành củ muối.",
+    "sources": [
+      {
+        "ref": "Sài Gòn Tiếp Thị — Tinh tế món thịt đông trong mâm cỗ tết Bắc",
+        "url": "https://www.sgtiepthi.vn/tinh-te-mon-thit-dong-trong-mam-co-tet-bac/"
+      },
+      {
+        "ref": "VnExpress — Mâm cỗ 30 Tết truyền thống của người Hà Nội (Bùi Thủy)",
+        "url": "https://vnexpress.net/doi-song-cooking-mam-co-30-tet-truyen-thong-cua-nguoi-ha-noi-4709863.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

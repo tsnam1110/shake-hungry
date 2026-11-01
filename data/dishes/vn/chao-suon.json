@@ -137,6 +137,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-006 đợt 6: nâng Mức 2 — bổ sung hành tím 8g (3/3 nguồn đều phi hành tím cho cháo sườn mà file thiếu dòng). Định lượng còn lại giữ nguyên.]",
+  "cultural_note": {
+    "text": "Cháo sườn được coi là một trong những món quà vặt kinh điển của người Hà Nội: cháo nấu từ gạo xay mịn cùng nước xương, sánh mịn như bột, ăn kèm quẩy cắt nhỏ, chút tiêu và ớt. Nhiều thế hệ người phố cổ gắn tuổi thơ với hàng cháo sườn Hàng Bồ buổi sáng, nơi gia tài của quán gói gọn trong một chiếc thúng cuốn vải giữ cho cháo luôn nóng hổi, hay hàng cháo phố Lý Quốc Sư cho bữa lót dạ buổi chiều. Phần cháy cháo ở đáy nồi, chỉ có khi gần hết hàng, là miếng được thực khách chờ đợi nhất.",
+    "sources": [
+      {
+        "ref": "Sức khỏe & Đời sống — Ăn cháo sườn Hàng Bồ, lưu luyến vị tuổi thơ",
+        "url": "https://giadinh.suckhoedoisong.vn/an-chao-suon-hang-bo-luu-luyen-vi-tuoi-tho-172140828022215447.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

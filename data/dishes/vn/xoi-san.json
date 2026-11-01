@@ -141,6 +141,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] Nâng Mức 2: đã mở đọc 3 họ độc lập (VnExpress/Bùi Thủy, CET/Chef Lập, Nấu Ăn Không Khó/Túc Túc). Giữ khoai-mi 120g: tỉ lệ sắn/nếp các họ phân tán 0,6 (CET, NAKK) đến 1,0 (VnExpress lối cũ hợp định danh Bắc nhất), file 0,8 nằm giữa nên không họ nào bị bác bỏ ở ngưỡng >25-30% theo cả hai phía. Thêm hanh-phi 5g (2-3 họ đều có). Không thêm cốt dừa/lạp xưởng: chỉ là optional hoặc thuộc biến thể Nam.",
+  "cultural_note": {
+    "text": "Xôi sắn mỡ hành là món quà sáng bình dị của Hà Nội, thường được các bà các mẹ nấu vào cuối thu đầu đông — vừa đến vụ sắn, khi sắn tươi được mua từ vùng đồi trung du. Nếp nương trộn cùng sắn cắt miếng nhỏ đồ trong chõ, xới ra bát lót lá chuối rồi rưới thìa mỡ hành xanh mướt. Người bán xôi đất Hà thành còn có lệ riêng với món này: xôi sắn tuyệt đối không để qua đêm, mọi thứ phải đồ vào buổi sáng và bán ngay trong ngày.",
+    "sources": [
+      {
+        "ref": "Lao Động Thủ Đô — Dẻo thơm xôi sắn mỡ hành",
+        "url": "https://laodongthudo.vn/deo-thom-xoi-san-mo-hanh-131953.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

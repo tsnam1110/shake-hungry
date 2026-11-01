@@ -144,6 +144,15 @@
     "queried_at": "2026-08-31"
   },
   "import_note": "Nhập tự động từ Wikidata Q54371849 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Gợi ý nguyên liệu từ Wikidata (tiếng Anh, CHƯA ánh xạ sang data/ingredients/): egg as food, pork. Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — trứng 50→70 (nguồn quy về khẩu phần 75–83 g), thêm hành tím 6 và miến dong 3 (đều 3/3 nguồn), serving 110→125. Ghi nhận: 1 nguồn dùng trứng vịt — giữ trứng gà theo định danh món.]",
+  "cultural_note": {
+    "text": "Chả trứng là một phần không thể tách rời của bộ ba 'sườn – bì – chả' trong đĩa cơm tấm Sài Gòn — món ăn khởi nguồn từ giới lao động và sinh viên nghèo của thành phố. Miếng chả làm từ thịt heo xay trộn trứng, miến và mộc nhĩ, hấp cách thủy rồi phủ lớp lòng đỏ vàng óng, mang dấu ấn giao thoa ẩm thực người Hoa trong lòng Sài Gòn. Cùng sườn nướng và bì trộn thính, chả trứng đã theo cơm tấm đi vào tiềm thức của nhiều thế hệ người Sài thành.",
+    "sources": [
+      {
+        "ref": "Sức khỏe & Đời sống (Gia đình) – Cơm tấm Sài Gòn: Biểu tượng giao thoa văn hóa ẩm thực giữa phương Đông và phương Tây",
+        "url": "https://giadinh.suckhoedoisong.vn/com-tam-sai-gon-bieu-tuong-giao-thoa-van-hoa-am-thuc-giua-phuong-dong-va-phuong-tay-172221208115238092.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

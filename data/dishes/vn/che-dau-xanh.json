@@ -101,6 +101,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-006 đợt 6: nâng Mức 2 — định lượng giữ nguyên toàn bộ (đậu 45g lệch −10% so với 50g/người của 2 nguồn, dưới ngưỡng sửa; đường 22g khớp hai nguồn độc lập 22,5–24,5g). Chất tạo sánh (bột sắn dây/bột năng) khác nhau giữa các biến thể sánh/đánh — không bổ sung dòng bắt buộc.]",
+  "cultural_note": {
+    "text": "Chè đậu xanh là một trong những món chè đậu nền tảng của bếp Việt, hiện diện từ gánh chè hẻm tới mâm cúng gia đình. Riêng ở Huế, món này còn được người bán rao là 'chè xanh đánh' và gắn chặt với tín ngưỡng thờ Phật tại gia: cứ đến rằm, mùng một hằng tháng, nhiều gia đình lại nấu chè xanh đánh cùng xôi trắng để cúng, nên hầu hết phụ nữ Huế đều thạo món chè này dù cách làm tốn nhiều thời gian và công sức. Ở các hàng chè hẻm Huế, chè đậu xanh thuộc nhóm chè lạnh, được múc lưng lửng ly để khách trộn thêm đá bào khi ăn.",
+    "sources": [
+      {
+        "ref": "Thanh Niên — Chè hẻm, nét duyên của ẩm thực Huế",
+        "url": "https://thanhnien.vn/che-hem-net-duyen-cua-am-thuc-hue-185633344.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "llm_suggested",
   "confidence": "unknown",

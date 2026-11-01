@@ -123,6 +123,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-010 đợt 10: Đạt Mức 2 — đối chiếu 4 họ nguồn đã mở (Bếp Xưa; VietNamNet/Điện Máy XANH cùng một bộ số tính 1 họ; Cookpad NgaDung Dang 15 phần; Savoury Days chỉ đối chiếu phần sợi). Tỉ lệ bột giữa các họ bất đồng >30% nên giữ nguyên định lượng file theo quy tắc bất đồng; thêm muối 0,5 g (3/4 họ có). Steps viết lại 7 bước.]",
+  "cultural_note": {
+    "text": "Chè bánh lọt thuộc họ món ngọt Đông Nam Á có gốc từ cendol của Indonesia, mang nhiều tên gọi theo từng nước như lot chong ở Thái Lan. Về đến Việt Nam, bánh lọt thành món dân dã của miền Tây Nam Bộ — phổ biến ở Kiên Giang, Sóc Trăng, Bạc Liêu, Cà Mau — với sợi bột gạo pha bột năng được ép lọt qua rổ xuống nước lạnh, nhuộm xanh bằng lá dứa hoặc giữ màu trắng tự nhiên. Bản ngọt truyền thống chan nước cốt dừa và nước đường thắng, thường được rao bán ở vỉa hè như một thức ăn đường phố.",
+    "sources": [
+      {
+        "ref": "Wikipedia tiếng Việt — Bánh lọt",
+        "url": "https://vi.wikipedia.org/wiki/B%C3%A1nh_l%E1%BB%8Dt"
+      }
+    ]
+  },
   "status": "draft",
   "source": "llm_suggested",
   "confidence": "unknown",

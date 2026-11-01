@@ -118,6 +118,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu). Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 3 nguồn (không nguồn nào ghi số khẩu phần — chuẩn hoá về khẩu phần 140 g như file). Phân xử định lượng: com-xanh 60 → 40 g (hai nguồn quy đổi 28 g, nguồn còn lại 47 g; 40 g đưa tỉ lệ cốm về ~29%, trong dải nguồn 20–33%) và thit-lon-xay 85 → 100 g (tổng thịt quy đổi của nguồn 93–112 g/khẩu phần). Bất thường lớn ghi nhận chờ pha phân xử: 3/3 nguồn tách riêng GIÒ SỐNG + thịt xay (giò chiếm 33–62% phần thịt) — kho chưa có ingredient giò sống (cùng đầu mối với bun-moc ở Phần A), dòng thịt hiện tại là proxy gộp; method hap giữ nguyên nhưng bước đã ghi chiên sau hấp là bước chuẩn theo 3/3 nguồn — việc đổi method sang chien cần quyết ở pha phân xử vì đổi mô hình dầu của engine.",
+  "cultural_note": {
+    "text": "Chả cốm là thức quà gắn liền với mùa thu Hà Nội, khi những hạt cốm mới — ngon nhất là cốm làng Vòng — được trộn cùng thịt lợn và giò sống, hấp chín rồi chiên vàng. Người làm thường chọn cốm giữa mùa, hạt dày và đậm vị, để miếng chả vừa thơm mùi lúa non vừa có độ dẻo dai đặc trưng. Chả cốm thường được bày trên lá sen, ăn cùng bún đậu mắm tôm, xưa chỉ xuất hiện trong mùa cốm ngắn ngủi mỗi độ thu về, nay nhờ cốm được cấp đông mà có mặt quanh năm.",
+    "sources": [
+      {
+        "ref": "Viet Nam News – The taste of Ha Noi's autumn",
+        "url": "https://vietnamnews.vn/life-style/393116/the-taste-of-ha-noi-s-autumn.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

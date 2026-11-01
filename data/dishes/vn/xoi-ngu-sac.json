@@ -138,6 +138,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. THIẾU NGUYÊN LIỆU: lá cẩm (phụ — tạo màu tím) — cần bổ sung vào kho. THIẾU NGUYÊN LIỆU: quả dành dành (phụ — tạo màu vàng/đỏ) — cần bổ sung vào kho. [LV2-012 đợt vét] Nâng Mức 2: đã mở đọc 3 họ độc lập (SKĐS/Giadinhvietnam, Dân Việt/Loan Trần, Yeutre). Bổ sung 2 dòng tạo màu còn thiếu mà 3/3 họ đều có: la-cam 2g (phụ null, vào missing) và qua-gac 10g. Giữ nguyên các định lượng hiện có: cốt dừa 30g khớp Yeutre (~22-30g/khẩu phần), đường 10g khớp Yeutre ~9g, bột nghệ 2g hợp lý vì chỉ nhuộm 1/5 phần nếp. Ghi chú cũ về quả dành dành được đính chính ở anomalies. Một lần mở Tripi gặp 429, không dùng nguồn đó.",
+  "cultural_note": {
+    "text": "Xôi ngũ sắc là món ăn truyền thống không thể thiếu trong các dịp lễ, Tết của nhiều dân tộc vùng cao Tây Bắc như Tày, Mường, Thái và Dao. Năm màu của xôi đều lấy từ cỏ cây núi rừng — lá cây cơm đen, cơm đỏ, củ nghệ — nhuộm vào hạt nếp nương trước khi đồ. Năm sắc xôi tượng trưng cho triết lý âm dương ngũ hành, cho tình đoàn kết của cộng đồng và ước vọng về một cuộc sống hài hòa với trời đất, mùa màng tốt tươi, gia đình sum vầy.",
+    "sources": [
+      {
+        "ref": "Tạp chí Công Thương — Xôi ngũ sắc – Nét văn hoá của người vùng cao",
+        "url": "https://tapchicongthuong.vn/xoi-ngu-sac---net-van-hoa-cua-nguoi-vung-cao-113625.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

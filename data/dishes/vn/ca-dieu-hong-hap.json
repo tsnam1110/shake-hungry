@@ -134,6 +134,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): Đã mở kiểm chứng 3 nguồn công thức thật (Bách Hóa XANH, CET/Chef Lập, Cookpad của Kim Dung) và đối chiếu định lượng theo khẩu phần. Định lượng: các nguồn dùng cá nguyên con khoảng 1kg cho 3–4 người (250–330g cá nguyên con mỗi khẩu phần, phần thịt ăn được thấp hơn sau khi bỏ xương và đầu); file ghi 180g thịt cá, nằm trong khoảng tương đương — giữ nguyên. Gừng: Cookpad 12,5g/khẩu phần, file 8g — trong ngưỡng. Xì dầu các nguồn dao động rất mạnh (khoảng 4–23g/khẩu phần) nên không có đồng thuận, giữ nguyên 12g. Không sửa dòng nguyên liệu nào. Viết lại hoàn toàn recipe_steps bằng lời riêng (7 bước). Rà phân loại: loai:mon-chinh, cooking_method hap, region vn, meal_slots trưa/tối đều phù hợp — không sửa. Đạt Mức 2.",
+  "cultural_note": {
+    "text": "Ghi chú ở cấp loài: cá diêu hồng — còn gọi là rô phi đỏ — là loài cá hình thành từ lai tạo, có xuất xứ từ Đài Loan; tên gọi dịch từ tiếng Trung, lấy theo hình dáng và màu đỏ giống cá tráp đỏ ở biển. Trường Đại học Cần Thơ nhập một đàn cá về nuôi thử nghiệm năm 1990, và từ năm 1997 cá được nuôi thương phẩm, trở nên phổ biến đặc biệt ở vùng Đồng bằng sông Cửu Long. Trong các cách chế biến thông dụng của loài cá nuôi này có các món hấp; bản hấp xì dầu trong kho thuộc nhóm món hấp ấy.",
+    "sources": [
+      {
+        "ref": "Wikipedia tiếng Việt — Cá diêu hồng",
+        "url": "https://vi.wikipedia.org/wiki/Cá_diêu_hồng"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

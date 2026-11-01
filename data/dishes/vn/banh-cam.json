@@ -119,6 +119,19 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-004 đợt 2 (lô bánh dân gian) mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 8 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).] [LV2-011 đợt 11: NÂNG Mức 2 — đã mở đọc thật 4 họ độc lập (Savoury Days; SKĐS/Nuleha Vo; Cookpad Lavender; Eva.vn), đối chiếu theo tỉ lệ lõi nếp/tẻ/khoai/đậu và theo cái ở họ có cỡ bánh gần file nhất (SKĐS: vỏ 40 g + nhân 20 g/cái): mọi dòng file lệch <30% so với dải nguồn nên KHÔNG sửa định lượng dòng nào. Bất thường ghi nhận, không tự sửa: nhân của 3/4 họ có dừa nạo (Savoury 30–40 g/mẻ, SKĐS 80 g/mẻ, Lavender 50 g/mẻ) còn Eva dùng nước cốt dừa xay nhân — không đồng thuận tuyệt đối về dạng dừa nên không thêm dòng cui-dua-nao/nuoc-cot-dua; đường là dòng phân tán nhất giữa các họ (biến thể ngọt đậm của SKĐS/Eva cao hơn hẳn Savoury/Lavender) nên giữ file 12 g. Bước nấu viết lại 7 bước.]",
+  "cultural_note": {
+    "text": "Bánh cam là tên gọi ở miền Nam của loại bánh rán vừng: vỏ bột nếp bọc nhân đậu xanh ngọt, vo tròn, lăn vừng rồi rán vàng; khác với bánh rán miền Bắc, nhân bánh cam không tách rời khỏi vỏ và bánh không chan nước đường khi ăn. Tên gọi không liên quan đến hương vị cam mà bắt nguồn từ hình dáng tròn trịa giống quả cam của chiếc bánh. Món bánh dân dã này từng được các biên tập viên CNN xếp vào danh sách những món rán ngon nhất thế giới.",
+    "sources": [
+      {
+        "ref": "Tạp chí Du lịch TP.HCM — Bánh cam của Việt Nam lọt top đồ rán ngon nhất thế giới",
+        "url": "https://tcdulichtphcm.vn/an-gi/banh-cam-cua-viet-nam-lot-top-do-ran-ngon-nhat-the-gioi-c12a32034.html"
+      },
+      {
+        "ref": "Wikipedia (tiếng Anh) — Bánh rán",
+        "url": "https://en.wikipedia.org/wiki/B%C3%A1nh_r%C3%A1n"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

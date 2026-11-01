@@ -125,6 +125,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-007 đợt 7: nâng Mức 2 — 3 nguồn đã mở (loại trừ bachhoaxelam.com nhái tên BHX và các aggregator). GIỮ toàn bộ định lượng: cùi bưởi 60g trong dải nguồn (27–85); đậu xanh 35g (nguồn 33–43); đường 25g (nguồn chuẩn 29; hai nguồn còn lại ngọt hơn hẳn do gồm đường sên cùi + nước cốt riêng); cốt dừa 30g (giữa 20 và 36 của 2 nguồn đáng tin; số 160 của BHX là ngoại lệ nấu nguyên nồi cốt chan). Bột năng 12g GIỮ kèm giải trình: mọi nguồn đều ghi tổng bột năng của mẻ cao (24–63g/người) nhưng phần lớn là bột ÁO cùi bị rây bỏ/rơi khi luộc và bột pha nước cốt — không có ≥2 nguồn đồng thuận về lượng ăn vào để sửa; 12g là ước lượng phần sánh + áo bám. BẤT THƯỜNG SLUG (chờ chủ dự án): file dùng slug buoi (múi bưởi, 38 kcal/100g) cho CÙI trắng — phần xốp chủ yếu xơ + nước, khác hẳn múi; kho chưa có slug cui-buoi. Việc tạo cui-buoi (null có hồ sơ — chưa có FCT đạt chuẩn cho cùi) hay chấp nhận ánh xạ buoi là quyết định của chủ dự án. Ghi nhận thêm: cả 3 nguồn dùng đậu xanh đã bóc vỏ trong khi file dùng dau-xanh-hat (hạt nguyên vỏ) — lệch ánh xạ nhẹ, kho chưa có slug đậu bóc vỏ.]",
+  "cultural_note": {
+    "text": "Chè bưởi có nguồn gốc từ Tây Nam Bộ và đặc biệt phổ biến ở vùng Long Xuyên, nay thuộc tỉnh An Giang. Điểm riêng của món chè là nguyên liệu chính không phải phần múi mà là cùi bưởi — lớp trắng xốp bên trong vỏ, vốn thường bị bỏ đi — được xử lý hết vị the đắng, áo bột năng cho giòn dai rồi nấu cùng đậu xanh và chan sữa dừa. Chè thường ăn lạnh, có nơi còn đặt thêm hoa bưởi lên trên chén cho thơm trước khi dọn ra.",
+    "sources": [
+      {
+        "ref": "Wikipedia tiếng Việt — Chè bưởi",
+        "url": "https://vi.wikipedia.org/wiki/Ch%C3%A8_b%C6%B0%E1%BB%9Fi"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

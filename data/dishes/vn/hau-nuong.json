@@ -123,6 +123,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-008 đợt 8: Nâng Mức 2 với 4 nguồn đã mở đọc (Điện Máy XANH, Báo Lao Động, Nấu Ăn Không Khó, Cookpad VN). Giữ: hàu 200g (giữ nguyên cơ sở cân hiện tại — xem anomalies), tổng chất béo mỡ hành 17g (mỡ lợn 12 + dầu 5) nằm trong khoảng nguồn quy về 6 con (Lao Động ~8g dầu, ĐMX ~22g dầu, NAKK mỡ heo thắng tóp là ngoại lệ cao), hành lá 10g (nguồn 8–30g/6 con). Sửa: lạc rang 8→15g (2 nguồn độc lập cùng cho ~15g/6 con). Thêm: hành tím 10g (3/3 nguồn có trong mỡ hành). Bỏ: phô mai 15g tuỳ chọn (0/3 nguồn mỡ hành; là biến thể riêng).]",
+  "cultural_note": {
+    "text": "Xã đảo Long Sơn (Vũng Tàu) nổi tiếng với nghề nuôi hàu trên các làng bè giữa sông — hàu được xem là một trong những đặc sản nổi tiếng nhất của đảo. Thực khách đến Long Sơn thường ngồi ăn ngay trên bè, nơi hải sản được bắt lên và chế biến tại chỗ.",
+    "sources": [
+      {
+        "ref": "Người Lao Động — Ra Long Sơn ăn hải sản",
+        "url": "https://tuoitre.vn/nld/phong-cach-song/ra-long-son-an-hai-san-20150521162957395.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

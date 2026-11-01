@@ -149,6 +149,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-007 đợt 7: nâng Mức 2 — 3 nguồn đã mở. XỬ LÝ DÒNG TRỨNG: đổi trứng gà 25g → trứng cút 22g — 3/3 nguồn đều ưu tiên 2 quả trứng cút/cái cho bản Đà Lạt; 'trứng gà 25g' cũ không nguồn nào ủng hộ (phương án trứng gà là 1 quả = 50g nguyên quả/cái). BỔ SUNG dầu ăn 8g — mỡ hành là thành phần lõi (2 nguồn định lượng ~10g/cái) mà file thiếu hẳn dòng dầu dù bước nấu nhắc mỡ hành; BỔ SUNG mắm ruốc 5g dạng tuỳ chọn (1 nguồn coi là lớp phết chuẩn; bản gốc thiên về mỡ hành + trứng nên để tuỳ chọn) và hành phi 3g dạng tuỳ chọn (2 nguồn). Serving 80→90g theo tổng sau bổ sung. GIỮ sa tế 5g (nguồn duy nhất định lượng cho 15g/cái — hào phóng bất thường; mức 1 muỗng cà phê phổ biến hơn). Ghi nhận: phổ topping 'chuẩn Đà Lạt' không tồn tại một bộ duy nhất — 3 nguồn cho 3 phổ khác nhau; file theo phổ 'trứng + mỡ hành + sa tế'. Nhãn dac-san:lam-dong chưa có trong taxonomy — không gán, chỉ ghi nhận.]",
+  "cultural_note": {
+    "text": "Bánh tráng nướng gắn liền với chợ đêm Đà Lạt: theo lời những người bán hàng tại chợ, món ăn do chính người Đà Lạt sáng tạo ra. Tấm bánh tráng được nướng trên than hồng, phết trứng, thịt, hành, tôm khô, mayonnaise hay phô mai, và là món được du khách ưa chuộng nhất ở chợ đêm — có người ví von gọi là 'pizza Việt Nam'. Trong cái lạnh của phố núi về đêm, ngồi quanh bếp than chờ chiếc bánh nóng giòn là một trải nghiệm quen thuộc của du khách đến Đà Lạt.",
+    "sources": [
+      {
+        "ref": "VOV World (VOV5) — Da Lat's delicious night market",
+        "url": "https://vovworld.vn/en-US/discovery-vietnam/da-lats-delicious-night-market-131332.vov"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

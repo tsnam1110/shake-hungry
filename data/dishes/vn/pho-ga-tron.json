@@ -174,6 +174,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-009 đợt 9: Nâng Mức 2 — mở kiểm chứng 4 họ nguồn (Điện Máy XANH, Cookpad Châu Kiến Hào — bản đúng 1 khẩu phần, Bếp MiNa, Ông Già IKA; hai vòng tra cứu, vòng 1 bị 429 ở lần mở thứ tư). Sửa thit-ga-co-da 90→120 g (hai họ đồng thuận 150 g/khẩu phần, file lệch −40% — lấy mức thận trọng dưới dải vì một họ không định lượng gà), gia-do 30→50 g, lac-rang 12→16 g. Giữ banh-pho-tuoi 180 g theo quy ước lượng sợi (các họ cho 100/167 g tươi hoặc 70 g khô — không đồng thuận chính xác một số). Ghi nhận tranh chấp: dầu hào chỉ 1/4 họ (~7 g) nên không thêm dòng; Ông Già IKA dùng chanh thay giấm. Chuẩn hoá tên 'Phở gà trộn'.]",
+  "cultural_note": {
+    "text": "Phở trộn là biến tấu khô của phở nước truyền thống, gắn bó nhất với phở gà: bánh phở chần được trộn cùng thịt gà xé, rau sống, hành phi và lạc rang, dọn kèm một bát nước dùng luộc gà. Ở Hà Nội, quán Phở Hạnh trên phố Lãn Ông được xem là một trong những địa chỉ lâu đời đưa phở trộn vào danh sách ẩm thực Hà Thành, và các quán phở trộn vỉa hè khu phố cổ thường tấp nập nhất vào buổi tối.",
+    "sources": [
+      {
+        "ref": "EVA — Thèm phở trộn, đến ngay 6 quán ngon nức tiếng phố cổ Hà Nội",
+        "url": "https://eva.vn/di-dau-xem-gi/them-pho-tron-den-ngay-6-quan-ngon-nuc-tieng-pho-co-ha-noi-ngoi-an-via-he-gia-ca-binh-dan-c40a654991.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

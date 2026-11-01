@@ -156,6 +156,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-009 đợt 9 (bổ sung): Nâng Mức 2 — mở kiểm chứng 3 họ nguồn (Dạy Làm Bánh Á Âu — bản Cookpad Bạch Thiên là cùng họ sao chép; Chef Thư Thư/Gia Vị Hạnh Phúc; Quang Huy). Sửa 1 dòng: bot-nang 10→15 g (tỉ lệ tinh bột phụ/tổng bột ở 3/3 họ là 20–27%, file chỉ 12,5% — lấy thận trọng vì một họ dùng tinh bột bắp thay bột năng). Giữ bot-gao 70 g (dải nguồn 50–80 bất đồng lớn) và gio-lua 40 g (khớp tuyệt đối họ Quang Huy 200 g/5 người). Tranh chấp ghi nhận, giữ số file: dầu trong bột (Thư Thư ~10 g/khẩu phần gồm phần quét từng lớp bánh) và đường chấm (hai họ ~6 vs ~22 g). Không thêm dua-leo (chỉ 1 họ liệt kê rõ) và moc-nhi (thuộc phiên bản bánh cuốn — món khác).]",
+  "cultural_note": {
+    "text": "Xuôi về phương Nam, đĩa bánh ướt mang phong cách phồn thực hơn hẳn: bánh để nguội, cắt miếng, phủ lên trên chả lụa, chả quế, nem chua, bánh tôm chiên, giá trụng và rau thơm, chan nước mắm chua ngọt pha loãng có vị ngọt đặc trưng của người Nam Bộ. Khác với cách ăn nóng tại lò ở miền Trung, bản phương Nam để bánh nguội hẳn rồi mới cắt miếng và phủ chả lên trên.",
+    "sources": [
+      {
+        "ref": "aFamily — Khám phá bánh ướt",
+        "url": "https://afamily.vn/vi-sao-goi-la-banh-uot-236260716112535951.chn"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

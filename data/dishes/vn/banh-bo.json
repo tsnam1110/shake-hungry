@@ -118,6 +118,19 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-007 đợt 7: thử nâng Mức 2 — GIỮ MỨC 1 dù đã đủ 3 nguồn đúng biến thể (bánh bò hấp đường cát trắng + cốt dừa; biến thể thốt nốt đã loại khỏi đối chiếu). Lý do: BẤT THƯỜNG CẤU TRÚC — bước nấu của file ghi 'nước cơm rượu (men)' nhưng danh sách nguyên liệu không có dòng tác nhân nở nào, mà kho chưa có slug cơm rượu lẫn men nở → không áp được phân xử. Phân xử dự phòng đã sẵn (chờ có slug): bột gạo 60→30g (3/3 nguồn 28,1–32,4g — file lệch ~+90–114%), +bột năng 6g (3/3 nguồn đều có, file thiếu hẳn), GIỮ đường 25g và cốt dừa 30g. Chờ chủ dự án quyết tạo nguyên liệu nở: men-no ~1g (2/3 nguồn hiện đại) hay com-ruou ~20g (truyền thống, khớp bước hiện tại của file). Xem LV2-007 §3.] [LV2-010 Phần C — gói quyết định chủ dự án 2026-10-31: A3 ÁP quyết định chất nở: dùng MEN NỞ KHÔ ~1 g (slug men-no, USDA SR 175043) thay cơm rượu trong bước ủ. Áp phân xử định lượng đã soạn sẵn ở LV2-007: bot-gao 60→30 g, thêm bot-nang 6 g, giữ duong-trang 25 g và nuoc-cot-dua 30 g; steps viết lại 7 bước theo kỹ thuật men nở. NÂNG MỨC 2: LV2-007 đã mở đủ 3 họ đúng biến thể; Phần C đối chiếu lại 3 họ (Bếp Nhà Tôi/Beemart/Cookpad Bòn Bon): bột gạo quy về khẩu phần 23–37 g, bột năng 6–10 g, men 0,5–1 g — khớp bộ số áp dụng.]",
+  "cultural_note": {
+    "text": "Bánh bò là món bánh dân gian Nam Bộ làm từ bột gạo lên men, khi chín mặt cắt xốp như rễ tre. Tên “bò” được giải thích theo hai cách: từ điển Đại Nam quấc âm tự vị của Huỳnh Tịnh Của (1895) cho rằng bánh giống vú bò, còn theo dân gian thì bột nở “bò” dần lên miệng chén khi hấp. Ở Nam Bộ, bánh bò nằm trong nhóm bánh dùng vào ngày giỗ, ngày Tết và dâng cúng, từng được nhắc trong ca dao.",
+    "sources": [
+      {
+        "ref": "Báo Cần Thơ — Bánh trong đời sống văn hóa dân gian Nam bộ",
+        "url": "https://baocantho.com.vn/banh-trong-doi-song-van-hoa-dan-gian-nam-bo-a109919.html"
+      },
+      {
+        "ref": "Wikipedia (tiếng Anh) — Bánh bò",
+        "url": "https://en.wikipedia.org/wiki/B%C3%A1nh_b%C3%B2"
+      }
+    ]
+  },
   "status": "draft",
   "source": "llm_suggested",
   "confidence": "unknown",

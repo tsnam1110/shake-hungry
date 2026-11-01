@@ -158,6 +158,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt DISH-004 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-008 đợt 8: Nâng Mức 2 với 3 nguồn đã mở đọc (Điện Máy XANH cho 3 người — biến thể măng chua, Tripi cho 5 người — măng khô + mọc, Lâm Thương Food — măng khô). SỬA LOÀI THỊT: file dùng thit-vit-khong-da (vịt nhà) cho món ngan — cả 3 nguồn đều nấu ngan (vịt xiêm/Muscovy). Bỏ dòng vịt, thêm thit-ngan 110g: lượng thịt giữ nguyên vì Điện Máy XANH dùng 1/4 con ngan cho 3 người (≈ 500–600g nguyên con có xương/da, phần thịt ăn được ≈ 110g/người) và slug thit-ngan trong kho là bộ số phần thịt bỏ da nên 110g thịt là nhất quán; Tripi dùng 1 con/5 người và Lâm Thương 1 con 2,5kg cho mẻ lớn hơn nhưng phần xương còn ninh nước dùng, không quy thẳng thành thịt ăn được. SỬA mang-kho 15→20g: Tripi 100g măng khô/5 người = 20g/người trực tiếp; Điện Máy XANH dùng măng tươi/chua 300g/3 = 100g/người dạng tươi, quy khô tương đương ~20–25g — đồng thuận ≥2 nguồn, lệch +33% vượt ngưỡng. THÊM tuỳ chọn gio-song 40g (mọc) theo basis. GIỮ: bun-tuoi 150g (Điện Máy XANH 500g/3 ≈ 167g/người, lệch chưa tới ngưỡng); nam-huong-kho 5g (Lâm Thương có nấm hương khô trộn mọc và ngâm vào canh măng; Tripi dùng mộc nhĩ trong mọc thay thế — 5g nằm trong dải); nuoc-mam 8g, gung 5g (Tripi 1 củ/5 người, Điện Máy XANH 1 nhánh/3 người — file ở giữa), hanh-la 5g, rau-mui 2g, muoi 1g, hat-tieu-den 0,3g giữ nguyên. serving_grams 520g, method 'nau', region vn-north giữ nguyên.]",
+  "cultural_note": {
+    "text": "Bún ngan là món bún nước được ưa chuộng quanh năm ở Hà Nội. Thịt ngan luộc chín tới, chặt miếng bày trên bún cùng măng, chan nước dùng trong; khi ăn chấm kèm chén nước mắm tỏi ớt chua cay. Những địa chỉ được nhắc tới có hàng ở phố Phùng Hưng, phố Nguyễn Du và chợ Châu Long.",
+    "sources": [
+      {
+        "ref": "Đài PT-TH Bắc Ninh (Nguồn: NDO/VNA) — 'Bun ngan' – A favourite dish all year round",
+        "url": "https://en.baobacninhtv.vn/bun-ngan-–-a-favourite-dish-all-year-round.bbg"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

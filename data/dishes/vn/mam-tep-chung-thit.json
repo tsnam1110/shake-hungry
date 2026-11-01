@@ -146,6 +146,15 @@
     "queried_at": "2026-08-31"
   },
   "import_note": "Nhập tự động từ Wikidata Q16481351 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] NÂNG Mức 2: đối chiếu 3 họ độc lập (Lorca, Bluestone, Cookpad Pham Huyen) — sửa tep 30->13g và thịt 80->100g theo tỉ lệ đồng thuận, thêm sả/riềng/tỏi/dầu ăn (source=llm_suggested, confidence=low), viết lại 7 bước. Lưu ý: món dùng tep làm proxy cho mắm tép thành phẩm như ghi chú duyệt gốc.",
+  "cultural_note": {
+    "text": "Mắm tép chưng thịt là món ăn bình dân trong bữa cơm hằng ngày, gắn liền với chợ Hàng Bè ở Hà Nội: chợ cũ nay không còn, nhưng các hộ trên phố Hàng Bè và quanh khu chợ cũ vẫn bày bán món này, và nó đã trở thành một nét đặc sắc của ẩm thực Hà Thành. Thịt nạc vai xay được chưng cùng mắm tép và hành khô đến khi săn, khô và lên màu nâu sậm, ăn với cơm và dưa leo, đặc biệt hợp trong những ngày thời tiết lạnh. Vì làm sẵn để được lâu, hũ mắm tép chưng thịt cũng là món các gia đình Hà Nội hay chuẩn bị sẵn trong bếp và mang theo khi đi xa.",
+    "sources": [
+      {
+        "ref": "Wikipedia tiếng Việt — Mắm tép chưng thịt",
+        "url": "https://vi.wikipedia.org/wiki/M%E1%BA%AFm_t%C3%A9p_ch%C6%B0ng_th%E1%BB%8Bt"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

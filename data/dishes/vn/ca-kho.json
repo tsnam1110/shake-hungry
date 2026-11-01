@@ -158,6 +158,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): đã đối chiếu 3 nguồn công thức đã mở kiểm chứng (Cách Nấu Ngon, Bếp MiNa, sách dạy nấu ăn). Cá mỗi khẩu phần: 175g (cá chép kho riềng) so với 100g (cá diếc kho tương) — hai nguồn bất đồng >30% nên giữ nguyên ca-chep 150g; thit-lon-ba-chi 40g nằm giữa hai nguồn (50g và 30g). recipe_steps viết lại hoàn toàn thành 7 bước theo đúng hồ sơ kho riềng/tương bần của file. Không sửa phân loại; lưu ý region_code vẫn giữ 'vn' dù bộ nguyên liệu (tương bần, riềng, cá chép) thiên rõ về miền Bắc — chờ chủ dự án phân xử. [LV2-010 Phần C — gói quyết định chủ dự án 2026-10-31: A4.2 ÁP quy ước cá kho: duong-thot-not 5 g → duong-trang 5 g. Căn cứ: hồ sơ đợt nâng không ghi họ nào dùng thốt nốt.]",
+  "cultural_note": {
+    "text": "Cá kho tương Bần thuộc họ cá kho của người miền Bắc: cá ướp gừng, sả, nghệ cùng chút tương Bần, kho trong niêu đất với riềng già và vài miếng thịt ba chỉ, um lửa thật lâu cho cá nhừ và thấm vị. Ở Phố Hiến (Hưng Yên), cá kho tương Bần là món quen thuộc trong mâm cơm ngày Tết.",
+    "sources": [
+      {
+        "ref": "Báo Hưng Yên — Đặc sản Phố Hiến trong mâm cơm ngày Tết (Minh Huế – Vi Ngoan)",
+        "url": "https://baohungyen.vn/dac-san-pho-hien-trong-mam-com-ngay-tet-18349.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -94,6 +94,15 @@
     "queried_at": "2026-08-31"
   },
   "import_note": "Nhập tự động từ Wikidata Q48880901 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/Banh%20dau%20xanh.jpg Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] Nâng Mức 2 cho biến thể khô Hải Dương: đối chiếu 3 họ độc lập (I Nấu Ăn Ngon, Memart, Toyenxin). Đề xuất mo-lon-nuoc 3→10 theo tỉ lệ mỡ/đậu 0,17-0,30 của cả 3 họ, và bỏ nuoc-cot-dua vì 0/3 họ khô có (cốt dừa thuộc biến thể ướt). Giữ dau-xanh-hat 40 và duong-trang 25 (tỉ lệ đường/đậu 0,625 nằm trong khoảng 0,47-1,0 của các họ). cooking_method trong file đang là 'nau' — quy trình đúng là rang khô, xay bột, trộn và ép khuôn, cần đổi khi áp dụng.",
+  "cultural_note": {
+    "text": "Bánh đậu xanh là đặc sản nổi tiếng của Hải Dương, gắn với hiệu Bảo Hiên — nơi mang công thức làm bánh từ Kiến An về mở tiệm đầu tiên tại Hải Dương năm 1922. Năm 1932, bánh dự hội chợ ẩm thực tại Sài Gòn, được vua Bảo Đại khen ngợi và ban chứng nhận in hình rồng; từ đó bánh mang thương hiệu “Rồng Vàng” và được xem là thứ “bánh tiến” dâng vua. Ngày nay, bánh đậu xanh Hải Dương là món quà quê được người Việt xa xứ thường xuyên gửi mua, ăn kèm với trà xanh.",
+    "sources": [
+      {
+        "ref": "Viet Nam News — Hải Dương specialties satisfies nostalgic cravings",
+        "url": "https://vietnamnews.vn/life-style/374298/hai-duong-specialties-satisfies-nostalgic-cravings.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

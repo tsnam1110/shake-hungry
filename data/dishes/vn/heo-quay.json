@@ -132,6 +132,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-010 đợt 10: Nâng Mức 2 — đối chiếu 3 họ nguồn đã mở trực tiếp (Điện Máy XANH, Savoury Days, Cookpad/Cẩm Linh): phương pháp luộc sơ mặt da + xăm da + phết giấm-muối + ướp tách da/thịt + nướng 2 lửa khớp cả 3 họ; định lượng giữ nguyên toàn bộ (ngũ vị 2 họ bất đồng >30%, đường/muối chỉ 1 họ có số đạt ngưỡng) — viết lại 6 bước. Nguyên liệu heo-quay (thành phẩm) trong kho vẫn null — không chặn món này vì món biên soạn từ thit-lon-ba-chi tươi (có số).]",
+  "cultural_note": {
+    "text": "Heo quay là lễ vật không thể thiếu trong các ngày lễ cúng ở đình, miếu miền Tây Nam Bộ, nơi cư dân khai hoang dựng đình thờ Thần hoàng bổn cảnh. Heo được ướp ngũ vị hương rồi quay nguyên con trong lò kín cho da vàng giòn, bày trang trọng trên mâm lễ cùng bánh hỏi; về sau tục làm heo quay cũng theo về các dịp thôi nôi, đầy tháng, khánh thành của gia đình. Cúng xong, heo quay được chặt ra đãi tiệc với bánh hỏi, rau sống và nước mắm pha chanh, tỏi, ớt; phần nhiều xương như đầu, chân giò còn được kho với nước dừa tươi để dành ăn dần.",
+    "sources": [
+      {
+        "ref": "Dân Việt — Món heo quay trong mâm lễ ở miền Tây Nam bộ (bài, ảnh: Hồng Khuyên)",
+        "url": "https://danviet.vn/mon-heo-quay-trong-mam-le-o-mien-tay-nam-bo-7777630883-d396296.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

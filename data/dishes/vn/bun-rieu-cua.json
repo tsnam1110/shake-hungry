@@ -218,6 +218,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. Nâng Mức 2 đợt 2 (2026-10-31): đã mở kiểm chứng 3 nguồn (Điện Máy XANH, Cookpad, Ẩm Thực Quán). Phân xử định lượng: GIỮ NGUYÊN toàn bộ — cua đồng là dòng tranh cãi nhất: Điện Máy XANH 250g/người (mẻ cua xay 1kg/4 người) bất đồng >30% với Cookpad ~83g/người (500g/6 người), theo quy tắc bất đồng giữ số file 80g (khớp Cookpad); cà chua file 60g nằm giữa hai nguồn (50g Cookpad, 125g Điện Máy XANH); mắm tôm file 5g khớp Điện Máy XANH quy đổi. BẤT THƯỜNG ghi nhận: cả Điện Máy XANH và Cookpad đều có tôm khô + mực khô ngâm xay và trứng gà trong chả riêu, hai nguồn còn hầm thêm sườn/xương ống lấy nước — file không có các dòng này; ghi nhận cho pha phân xử nguyên liệu, không tự thêm dòng. Phân xử bất thường LV2-002 (Phần A, 2026-10-31): Thêm tom-kho 5 g + muc-kho 5 g + trung-ga 15 g vào chả riêu và suon-lon 30 g hầm nước dùng — ĐMX và Cookpad (2/3 nguồn) đều có đủ bốn dòng này (bước 3 của file đã nhắc tôm khô/mực khô \"nếu có\"); lượng quy về khẩu phần từ mẻ 4–6 người của hai nguồn, lấy thận trọng (trứng ~1 quả/mẻ, sườn ninh lấy nước + phần thịt ăn kèm).",
+  "cultural_note": {
+    "text": "Tên gọi \"bún riêu\" bắt nguồn từ chính nguyên liệu làm nên món ăn: theo nhà nghiên cứu Nguyễn Hùng Vĩ, \"riêu\" vốn chỉ loài cua nhỏ, và canh riêu là canh nấu từ cua đồng giã nhuyễn, lọc lấy nước — về sau \"riêu\" còn chỉ lớp gạch cua đông tụ nổi trên mặt bát. Bún riêu cua có nguồn gốc từ vùng đồng bằng sông Hồng, nơi cua đồng là sản vật dân dã của ruộng đồng, ao hồ. Bản Hà Nội giữ sự mộc mạc với riêu cua tơi xốp và chút mắm tôm dậy mùi, trong khi tô bún riêu khi vào Nam được biến tấu thêm nhiều nguyên liệu cho đầy đặn.",
+    "sources": [
+      {
+        "ref": "CafeF — Vì sao gọi là \"bún riêu\"?",
+        "url": "https://cafef.vn/vi-sao-goi-la-bun-rieu-188260729223407632.chn"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

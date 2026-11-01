@@ -206,6 +206,15 @@
     "queried_at": "2026-08-31"
   },
   "import_note": "Nhập tự động từ Wikidata Q27909648 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/Hu-Tieu-Kho-2008.jpg Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 2 (2026-10-31): đã mở kiểm chứng 3 nguồn (Điện Máy XANH, VnExpress, Cookpad). Phân xử định lượng: SỬA trung-cut 12 → 35g — VnExpress (20 quả/4–6 người) và Cookpad (20 quả/4–5 phần) đồng thuận ~4 quả/khẩu phần ≈ 32–40g, số file cũ (~1,5 quả) lệch >30% so với cả hai. Các dòng khác GIỮ NGUYÊN: thịt lát 40g nằm trong khoảng nguồn 44–60g/khẩu phần; tôm và gan các nguồn bất đồng nhau >30% (tôm 40–150g, gan 30–44g/khẩu phần — số file đang thấp hơn, ghi nhận) nên theo quy tắc giữ nguyên. BẤT THƯỜNG ghi nhận: cả 3 nguồn đều có THỊT BĂM/XAY xào tỏi (sốt thịt đặc trưng hủ tiếu Nam Vang) và 2/3 nguồn có tim lợn, tôm khô, củ cải trắng trong nước dùng — file thiếu các dòng này, ghi nhận cho pha phân xử nguyên liệu. Phân xử bất thường LV2-002 (Phần A, 2026-10-31): Thêm thit-lon-xay 35 g — sốt thịt băm xào tỏi là điểm đặc trưng của hủ tiếu Nam Vang, cả 3 nguồn đều có và bước 4 của file đã mô tả; ĐMX cho thịt băm 200 g/2 người là mốc cao bất thường theo khẩu phần quán, lấy 35 g thận trọng theo khẩu phần tô. Thêm tim-lon 20 g, tom-kho 5 g, cu-cai-trang 30 g (2/3 nguồn; củ cải trắng bước 1 của file đã hầm trong nước dùng mà chưa có dòng).",
+  "cultural_note": {
+    "text": "Hủ tiếu Nam Vang được cho là do người Hoa chế biến và bán đầu tiên tại Nam Vang — tên gọi xưa của thủ đô Phnôm Pênh, Campuchia — rồi được người Việt mang về, biến đổi với sợi hủ tiếu nhỏ hơn. Điểm nhận biết của một tô hủ tiếu Nam Vang chính gốc là phần thịt bằm ninh cùng nước dùng tạo vị ngọt béo, ăn kèm lòng heo; nhiều nơi thêm tôm, mực hay cá nhưng thịt bằm thì không thể thiếu. Món ăn là một phần của họ hủ tiếu miền Tây Nam Bộ, bên cạnh hủ tiếu Mỹ Tho hay hủ tiếu Sa Đéc với nghề làm bột gạo hơn trăm năm.",
+    "sources": [
+      {
+        "ref": "VnExpress — 5 thương hiệu hủ tiếu trứ danh miền Tây",
+        "url": "https://vnexpress.net/5-thuong-hieu-hu-tieu-tru-danh-mien-tay-3780852.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

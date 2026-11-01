@@ -148,6 +148,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — cá linh 150→75 và serving 200→130 (cá linh khẩu phần nhỏ theo nguồn; bằng chứng khẩu phần của món này mỏng — 1 họ nguồn ghi yếu, đã ghi nhận), thêm dầu ăn 8 (3/3) và nước màu 5 (2/3; nước màu chưa có số — dòng chờ theo tiền lệ Phần A), hành tím 8→3.] [LV2-010 Phần C — gói quyết định chủ dự án 2026-10-31: A4.2 ÁP quy ước cá kho: duong-thot-not 8 g → duong-trang 8 g. Căn cứ: hồ sơ đợt nâng không ghi họ nào dùng thốt nốt.]",
+  "cultural_note": {
+    "text": "Ghi chú ở cấp loài: cá linh được người miền Tây gọi là “quà tặng của dòng sông” và là “linh hồn” ẩm thực mùa nước nổi ở đầu nguồn An Giang. Khi nước đỏ nặng phù sa từ thượng nguồn sông Mê Kông đổ về, khoảng tháng tám đến tháng mười một âm lịch, cá linh non chỉ to bằng đầu đũa theo con nước vào đồng, được bà con giăng lưới, dỡ dớn bắt về. Từ nguyên liệu theo mùa ấy, người miền Tây làm nhiều món kho ăn cơm như kho mía hay kho nước dừa; nồi kho tiêu trong kho cũng là một cách kho nhà làm từ con cá của mùa nước nổi.",
+    "sources": [
+      {
+        "ref": "Dân Việt — Đến An Giang mùa nước nổi, “linh hồn” là giống cá này đây",
+        "url": "https://danviet.vn/den-an-giang-mua-nuoc-noi-du-khach-say-sua-giang-luoi-bat-ca-dong-xuc-u-luon-linh-hon-la-giong-ca-nay-day-d1457656.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

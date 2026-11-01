@@ -142,6 +142,19 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt DISH-004 đợt 2 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-005 đợt 5: nâng Mức 2 — đối chiếu 3 nguồn công thức đã mở đọc toàn văn (Điện Máy XANH, Hướng Nghiệp Á Âu, Thế Giới Ẩm Thực). Định lượng: sửa măng khô 12g → 35g/khẩu phần — 3/3 nguồn đồng thuận tỉ lệ măng khô/miến khô 0,67–0,80 trong khi file cũ là 0,24, với miến giữ nguyên 50g thì măng tương ứng 33–40g, chọn 35g ở cận dưới thận trọng; thịt gà và miến giữ nguyên vì khớp nguồn sau quy đổi. Bất thường ghi nhận chờ pha phân xử: rau răm — rau ký tên của miến gà Bắc ở 2/3 nguồn — bị thay bằng rau mùi trong file, nấm hương chỉ xuất hiện ở 1/3 nguồn nên giữ nguyên.] [LINK-ROT-FIX 2026-11-01] Nguồn cũ chết link — https://thegioiamthuc.com/mon-mien-mang-ga/ (HTTP 404; cụm thegioiamthuc.com chết cả cụm 3/3 URL; xác nhận qua 2 lượt quét LINK-ROT và mở trực tiếp ngày 2026-11-01) — phát hiện LINK-ROT 2026-11-01, đã thay bằng Tripi (mở đọc trực tiếp cùng ngày). Đối chiếu lại tỉ lệ măng khô/miến với bộ nguồn sau thay: Điện Máy XANH 0,80, Hướng Nghiệp Á Âu 0,75, Tripi 0,67 (trung vị 0,75) — file 35/50 = 0,70 lệch −7% so với trung vị, giữ nguyên toàn bộ định lượng. Bất thường rau răm/nấm hương ghi nhận ở LV2-005 giữ nguyên trạng. Món giữ Mức 2.",
+  "cultural_note": {
+    "text": "Trong mâm cỗ tất niên của người miền Bắc, măng khô và miến dong là hai nguyên liệu canh quen thuộc: măng khô được ngâm kỹ trong nước vo gạo, luộc vài lượt cho mềm, còn miến dong nấu bằng nước gà cùng mộc nhĩ, nấm hương và hành hoa. Miến măng gà trong hồ sơ này gom cả hai vào một bát canh gà — lối ăn đậm đà mà không ngán của những ngày Tết.",
+    "sources": [
+      {
+        "ref": "Báo Hà Nội Mới (Nhịp sống Hà Nội) — Nhớ mâm cỗ tất niên của mẹ",
+        "url": "https://nhipsonghanoi.hanoimoi.vn/nho-mam-co-tat-nien-cua-me-625619.html"
+      },
+      {
+        "ref": "Báo Hưng Yên — Đặc sản Phố Hiến trong mâm cơm ngày Tết (Minh Huế – Vi Ngoan)",
+        "url": "https://baohungyen.vn/dac-san-pho-hien-trong-mam-com-ngay-tet-18349.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -163,6 +163,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-008 đợt 8: nâng Mức 2 với 5 nguồn đã mở thuộc 4 họ độc lập (Yummyday — họ này trùng công thức với Saigonese Baguette nên tính 1; Cookpad Lavender; Cookpad Ngoc Dung; Cookpad Bòn Bon; Cookpad Bảo Bình). GIỮ nguyên toàn bộ định lượng: tỉ lệ nấm/gạo của file (120g nấm : 55g gạo) nằm trong khoảng các nguồn (Yummyday 110:150 kèm đậu xanh; Ngoc Dung 250:150; Lavender 200g nấm/4 phần; Bòn Bon 50g nấm/người), nấm kim châm 30g được Bảo Bình ủng hộ (25g/người), gừng và nước tương có ở Bòn Bon, dầu mè có ở Lavender. Các nguồn không thống nhất số người ăn và cỡ tô nên không đủ cơ sở đổi từng dòng theo ngưỡng 25-30%. Viết lại 6 bước nấu.]",
+  "cultural_note": {
+    "text": "Cháo nấm gắn liền với truyền thống cỗ chay nhà chùa, mà nổi tiếng nhất là cháo nấm của chùa Phụng Thánh (Hà Nội) do sư cụ Đàm Ánh sáng tạo. Vào các ngày lễ lớn như Thượng nguyên, Hạ nguyên, vào hạ, ra hạ hay giỗ tổ, chùa làm cỗ chay cúng Phật, cúng Mẫu với hàng mươi món, và cháo nấm luôn là món được dọn lên đầu tiên trên mâm. Món cháo gạo nấu với nấm này được xem là độc đáo riêng của chùa Phụng Thánh, ít gặp ở ngôi chùa hay nhà hàng nào khác.",
+    "sources": [
+      {
+        "ref": "Sách số hoá (thuvienso.net) — Cháo nấm chùa Phụng Thánh",
+        "url": "https://thuvienso.net/upload/library/1296632/preview/chao-nam-chua-phung-thanh-1296632.pdf"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

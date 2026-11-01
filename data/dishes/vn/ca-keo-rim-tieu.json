@@ -140,6 +140,23 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — cá kèo 150→125 (khẩu phần nguồn 125 g/người), thêm tỏi 4, ớt 3 (3/3) và nước dừa 50 (2/3); bước kho sửa 12 phút→20–30 phút theo cả 3 nguồn.] [LV2-010 Phần C — gói quyết định chủ dự án 2026-10-31: A4.2 ÁP quy ước cá kho: duong-thot-not 8 g → duong-trang 8 g. Căn cứ: hồ sơ đợt nâng không ghi họ nào dùng thốt nốt.]",
+  "cultural_note": {
+    "text": "Cá kèo là loài cá nhỏ của vùng nước lợ miền Tây Nam Bộ — phân bố nhiều ở Cà Mau, Bạc Liêu, Sóc Trăng — xưa được mặc định là “cá nhà nghèo” vì rẻ và dễ bắt. Bản rim tiêu trong hồ sơ này đi theo lối kho truyền thống của cá kèo — rim cá cùng tiêu và hành cho thấm vị — cách ăn gắn với bữa cơm gia đình miền Tây.",
+    "sources": [
+      {
+        "ref": "Báo Dân Việt — Cá kèo chế biến nhiều món ngon (An Nguyên)",
+        "url": "https://danviet.vn/ca-keo-che-bien-nhieu-mon-ngon-ngon-mat-la-mieng-phai-ke-den-ca-keo-nuong-ong-say-mien-tay-20240628101512811-d1169896.html"
+      },
+      {
+        "ref": "Báo Thanh Niên — Cá kèo kho, món ăn gợi nhớ quê xưa",
+        "url": "https://thanhnien.vn/ca-keo-kho-mon-an-goi-nho-que-xua-1851507805.htm"
+      },
+      {
+        "ref": "Wikipedia tiếng Việt — Cá kèo",
+        "url": "https://vi.m.wikipedia.org/wiki/C%C3%A1_k%C3%A8o"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

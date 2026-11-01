@@ -156,6 +156,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-011 đợt 11: NÂNG Mức 2. 3 họ độc lập (ĐMX 4 người; Cookpad Bếp của Quỳnh 3 người; BlueStone). Sửa theo đồng thuận 2 họ có khẩu phần tường minh lệch >30%: thit-lon-ba-chi 50→70 (ĐMX 75g/người, Quỳnh ~67g/người), duong-trang 6→12 (ĐMX ~15g/người, Quỳnh ~12g/người). Bất thường ghi nhận không sửa: file thiếu ca-rot + hanh-tay (ĐMX và Quỳnh đều có nhưng BlueStone không có nên chưa đạt điều kiện mọi họ để thêm dòng); rau thơm ở ĐMX là húng lủi, ở Quỳnh là rau húng — file dùng rau-ram (BlueStone có rau răm) nên giữ nguyên chờ phân xử; rau-ram chưa có số dinh dưỡng nhưng là nguyên liệu phụ, không chặn nâng.]",
+  "cultural_note": {
+    "text": "Đây là bản tôm thịt của món hoa chuối trộn mà miền Nam gọi là gỏi bắp chuối (miền Bắc gọi là nộm hoa chuối). Hoa chuối được xử lý theo lối cũ — để gác bếp cho ráo nhựa chát, thái mỏng ngâm nước chua — rồi trộn với tôm, thịt ba chỉ, rau răm và lạc rang trong nước trộn hài hoà bốn vị mặn, ngọt, chua, cay. Cách thêm tôm thịt vào nền hoa chuối vườn nhà cho thấy món gỏi dân dã này luôn được biến tấu theo nguyên liệu sẵn có của từng gia đình, từng vùng.",
+    "sources": [
+      {
+        "ref": "Wikipedia tiếng Việt — Nộm hoa chuối",
+        "url": "https://vi.wikipedia.org/wiki/N%E1%BB%99m_hoa_chu%E1%BB%91i"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

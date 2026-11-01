@@ -134,6 +134,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [LV2-008 đợt 8: nâng Mức 2 — 3 nguồn đã mở (Wikipedia tổng hợp VnExpress/Tuổi Trẻ/Thanh Niên; MIA.vn; Sức khỏe & Đời sống phỏng vấn người sáng chế), cả 3 thống nhất về biến thể Hạ Lũng, đúng nhãn dac-san:hai-phong của file. SỬA CẤU TRÚC 2 điểm: (1) BỔ SUNG mực khô 12g — nguyên liệu định danh có ở 3/3 nguồn mà file thiếu hẳn (lượng là ước lượng bảo thủ, chờ duyệt tay — xem add_lines); (2) BỎ dòng sả 12g — que cầm chuẩn Hạ Lũng là mía ở 3/3 nguồn, sả là của biến thể Hội An; mía không có slug và là phần không ăn nên chỉ ghi trong bước nấu. GIỮ thịt lợn xay 95g (3/3 nguồn: thịt nạc lọc mỡ đem xay nhuyễn — file dùng slug thịt xay sẵn, yêu cầu chọn thịt nạc đã ghi vào bước nấu), mộc nhĩ 5g và nấm hương 3g (2/3 nguồn liệt kê trong phần ướp), hành tím 5g và đường 2g (bản chả chìa phổ thông trên Wikipedia ướp hành và đường), nước mắm 5g và tiêu 0,3g (3/3 nguồn đều có) — không nguồn nào công bố gram cho các dòng này nên giữ nguyên định lượng của file thay vì tạo số mới. Method hap GIỮ: hấp là công đoạn làm chín chính ở 3/3 nguồn, chao mỡ/nướng chỉ là bước hoàn thiện 1–2 phút trước khi ăn và đã đưa vào bước nấu. Region vn-north và nhãn dac-san:hai-phong giữ nguyên. Tên Anh hiện tại của file ('Pork paste on lemongrass stalks') sai biến thể — đề xuất sửa thành 'Pork and dried-squid paste on sugarcane sticks (Ha Lung, Hai Phong)' khi tích hợp.]",
+  "cultural_note": {
+    "text": "Chả chìa là đặc sản của làng Hạ Lũng, Hải Phòng, do ông Lê Khắc Hoạt sáng tạo từ những năm 1990 khi còn làm nghề giò chả, nấu cỗ thuê. Ý tưởng đến từ một lần ăn mía nướng trong đêm lạnh: phần nhân thịt lợn trộn mực khô Cát Bà được cuốn quanh thanh mía nhỏ, hấp rồi rán vàng, để lộ đoạn mía chìa ra ngoài — cũng là nguồn gốc của tên gọi. Từ món bán ở chợ Lũng buổi đầu, chả chìa nay đã thành thức quà quen thuộc trong mâm cỗ lễ, Tết của người Hải Phòng.",
+    "sources": [
+      {
+        "ref": "Báo Hải Phòng – Chả chìa Hạ Lũng, vị riêng đất Cảng",
+        "url": "https://baohaiphong.vn/cha-chia-ha-lung-vi-rieng-dat-cang-538245.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

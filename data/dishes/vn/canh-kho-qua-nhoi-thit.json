@@ -141,6 +141,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): đã đối chiếu 3 nguồn công thức đã mở kiểm chứng (VietnamNet, Cookpad Hoàng Oanh, PasGo). Tỉ lệ khổ qua : thịt của PasGo là 2:1, tiệm cận tỉ lệ trong file (150:80); thịt mỗi khẩu phần giữa các nguồn dao động 50–125g — bất đồng >30% nên giữ nguyên mọi quantity. Lưu ý: nguồn Cookpad trộn thêm mọc (giò sống) vào nhân cho dai, file hiện chỉ có thịt xay với mộc nhĩ — ghi nhận, không tự thêm dòng nguyên liệu. recipe_steps viết lại hoàn toàn thành 7 bước. Không sửa phân loại.",
+  "cultural_note": {
+    "text": "Canh khổ qua nhồi thịt là món ăn của người miền Nam, không thể thiếu trong những ngày Tết của người Nam Bộ. Tên gọi “khổ qua” được gửi gắm ước vọng ngày Tết: mọi chuyện “khổ” của năm cũ sẽ trôi “qua”, nhường chỗ cho may mắn và hạnh phúc của năm mới. Món canh cũng từng được tờ The New York Times nhắc tới như một phần của văn hoá Tết Nguyên Đán Việt Nam.",
+    "sources": [
+      {
+        "ref": "Wikipedia tiếng Việt — Canh khổ qua nhồi thịt",
+        "url": "https://vi.wikipedia.org/wiki/Canh_khổ_qua_nhồi_thịt"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

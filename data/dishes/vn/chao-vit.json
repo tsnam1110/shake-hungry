@@ -209,6 +209,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-007 đợt 7: nâng Mức 2 — 3 nguồn đã mở; cấu trúc bộ ba cháo + gỏi bắp cải + mắm gừng được cả 3 nguồn xác nhận. SỬA gạo tẻ 60→40g (3 nguồn đồng thuận 24–37g), bắp cải 60→100g (2 nguồn ~110g); BỎ hành tây 20g → BỔ SUNG hành tím 15g (3/3 nguồn dùng hành tím ngâm chua cho gỏi, không nguồn nào dùng hành tây); BỔ SUNG giấm bỗng 5g (2 nguồn — slug null, chưa tính vào calo), lạc rang 10g + hành phi 5g dạng tuỳ chọn (rắc mặt gỏi), nấm rơm 25g tuỳ chọn (1 nguồn). GIỮ thịt vịt 150g trong dải quy đổi nguồn (95–185g). Hồ sơ vùng: tác giả Đà Nẵng ghi bản gốc địa phương là vịt luộc + chuối chát chấm mắm gừng, gỏi bắp cải là biến thể phổ biến toàn quốc — giữ vn-central + dac-san:quang-nam, ghi nhận để chủ dự án biết.]",
+  "cultural_note": {
+    "text": "Cháo vịt là món ăn quen thuộc của người xứ Quảng, thường gắn với những quán ven đường mở về đêm. Tại Tam Kỳ, khi đêm xuống, các quán cháo vịt bắt đầu thơm mùi gạo, gừng và hành, phục vụ người dân địa phương, sinh viên và người đi làm về muộn. Vịt được chọn là giống vịt nuôi bằng lúa trên đồng đất xứ Quảng; thịt vịt luộc dọn kèm tô cháo nóng hổi, chấm chén nước mắm gừng cay nồng.",
+    "sources": [
+      {
+        "ref": "Vietnam.vn (Bộ Văn hóa, Thể thao và Du lịch) — Đêm ở Tam Kỳ, ghé quán ven đường ăn cháo vịt nóng hổi",
+        "url": "https://www.vietnam.vn/dem-o-tam-ky-ghe-quan-ven-duong-an-chao-vit-nong-hoi"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

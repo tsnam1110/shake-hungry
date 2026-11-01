@@ -146,6 +146,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [LV2-008 đợt 8: nâng Mức 2 — 3 nguồn đã mở đọc gồm 1 nguồn định danh chuyên biệt cho đúng tên món (Wikipedia 'Gà sa lửa', tổng hợp từ VnExpress/Tiền Phong/Báo Đắk Lắk), BlueStone (gà nướng Bản Đôn — tên khác của chính món này) và Báo Ảnh Việt Nam/TTXVN. Cả 3 thống nhất: gà tơ thả vườn ~1–1,5kg để nguyên con, mổ phanh bẻ dẹt, ướp muối ớt giã với sả (và lá é), mật ong nếu có, kẹp tre/phên nướng bằng hơi lửa than, lật mỗi ~10 phút, chấm muối lá é. Quy đổi theo serving_desc '1/4 con': sả BlueStone 2–3 cây/con → 7,5–11g mỗi phần tư, file 10g khớp nên giữ; lá chanh BlueStone 3–4 lá/con và Wikipedia kẹp lá chanh khi nướng → ~1g, file 1g giữ; ớt BlueStone chỉ 1–2 quả/con (~1–2g mỗi phần tư) nhưng chỉ 1 nguồn định lượng được nên chưa đủ ≥2 nguồn để sửa file 3g; gà file 160g là phần thịt ăn được của 1/4 con 1–1,5kg sau bỏ xương, nằm trong dải quy đổi theo tiền lệ ga-luoc, giữ; muối 2g, tiêu 0,3g (BlueStone + Báo Ảnh VN đều liệt tiêu), tỏi 5g (chỉ Báo Ảnh VN liệt, chưa đạt ngưỡng bỏ 0/3) và mật ong optional 5g (Wikipedia 'một ít nếu có' + Báo Ảnh VN) đều giữ. THÊM hành tím 8g (2/3 nguồn, file thiếu) và lá é 2g (thành phần định danh của món, file thiếu). BỎ rượu trắng: 0/3 nguồn nhắc tới trong ướp hay sơ chế món này. Tổng nguyên liệu sau sửa ~191g phần ăn được, phần còn lại của serving_grams 230 là xương của khẩu phần 1/4 con nên giữ serving. Giữ method nuong; region giữ 'vn' — xem anomalies.]",
+  "cultural_note": {
+    "text": "Gà sa lửa là món ăn dân dã của người Êđê ở Buôn Đôn, Tây Nguyên, ra đời từ nếp sống gần gũi với núi rừng. Con gà được mổ phanh, bẻ dẹt, ướp muối ớt giã cùng nước sả, lá é và chút mật ong, kẹp vào thanh tre rồi nướng bằng hơi lửa — 'sa lửa' — chứ không đặt trực tiếp trên than. Món ăn thường dùng kèm cơm lam, chấm muối lá é, giữ trọn phong vị của bếp lửa vùng cao nguyên.",
+    "sources": [
+      {
+        "ref": "Wikipedia tiếng Việt – Gà sa lửa",
+        "url": "https://vi.wikipedia.org/wiki/G%C3%A0_sa_l%E1%BB%ADa"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

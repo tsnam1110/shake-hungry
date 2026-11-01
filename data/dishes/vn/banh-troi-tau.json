@@ -135,6 +135,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-004 đợt 2 (lô bánh dân gian) mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-010 đợt 10: ĐẠT Mức 2 — 3 họ sủi dìn/trôi tàu nhân mè đen (Điện Máy XANH, Sức khỏe & Đời sống, Gia Vị Hạnh Phúc/Thu Trang Nguyen) đã mở trực tiếp; sửa vung-rang 10→18 g theo đồng thuận 2 họ, thêm nuoc-cot-dua 20 g (3/3 họ có, lượng bất đồng nên lấy mức thận trọng) và duong-phen 12 g cho nước chan vốn thiếu hẳn; steps viết lại 8 bước. Ghi nhận: tổng nguyên liệu sau patch ≈132 g so với serving 180 g — giữ serving vì không họ nào cân bát thành phẩm.]",
+  "cultural_note": {
+    "text": "Bánh trôi tàu là món ăn mùa đông của Hà Nội: những viên bột nếp nhân vừng đen hoặc dừa, chan nước đường gừng nóng, thường chỉ bán từ khoảng tháng 10 đến tháng 3 năm sau. Cùng với lục tàu xá và chí mà phù, bánh trôi tàu gắn với dấu ấn của cộng đồng người Hoa từng sinh sống ở khu phố cổ, nhất là phố Hàng Giầy. Hàng bánh trôi tàu của cố nghệ sĩ Phạm Bằng trên phố Hàng Giấy, nay do con cháu tiếp nối, là một trong những địa chỉ lâu năm giữ nguyên thực đơn ba món truyền thống này.",
+    "sources": [
+      {
+        "ref": "Ngôi Sao (VnExpress) — Quán bánh trôi tàu bác Phạm Bằng mỗi năm chỉ bán 6 tháng",
+        "url": "https://ngoisao.vnexpress.net/quan-banh-troi-tau-bac-pham-bang-moi-nam-chi-ban-6-thang-dong-khach-ngay-mo-cua-5129238.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

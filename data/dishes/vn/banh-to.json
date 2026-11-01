@@ -106,6 +106,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-004 đợt 2 (lô bánh dân gian) mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] Nâng Mức 2: đối chiếu 3 họ độc lập đã mở (Hướng Nghiệp Á Âu — các bản sao Tip Hay/Nấu Chuẩn dùng chung bộ số tính 1 họ; Cookpad Hoàng Thị Tố Hà; FPT Shop). Sửa duong-trang 20→30g vì tỉ lệ đường/bột của file (0,40) thấp hơn dải đồng thuận 0,56-0,66 trên 30%. Giữ gao-nep (các nguồn truyền thống cũng bắt đầu từ gạo nếp xay/giã thành bột nước như steps của file) và giữ các dòng gừng/vừng/dầu trong dải tham khảo. Viết lại recipe_steps 7 bước.",
+  "cultural_note": {
+    "text": "Bánh tổ là một trong bốn loại bánh chủ lực ngày Tết của xứ Quảng Nam – Đà Nẵng, bên cạnh bánh tét, bánh nổ và bánh in. Theo cách kể của người Quảng, bánh ra đời từ thời Lê Thánh Tôn, khi những người miền Bắc di cư vào vùng đất mới làm bánh bằng nguyên liệu sẵn có để dâng cúng tổ tiên vào dịp Tết. Bánh được làm từ nếp và đường bát, pha chút nước gừng, hấp trong chiếc giỏ tre lót lá chuối — hình dáng như một cái ổ, nên còn được gọi là bánh ổ — rồi rắc mè lên mặt.",
+    "sources": [
+      {
+        "ref": "Người Lao Động — Bánh Tết xứ Quảng",
+        "url": "https://nld.com.vn/print/dia-phuong/banh-tet-xu-quang-20150220145509132.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

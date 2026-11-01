@@ -168,6 +168,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. THIẾU NGUYÊN LIỆU: lá é (slug la-e — nguyên liệu chính tạo hương vị đặc trưng của món) — cần bổ sung vào kho. [LV2-006 đợt 6: nâng Mức 2 — măng 50 → 75g (giữ slug mang-tuoi vì slug mang-chua chưa có số; bước nấu mô tả đúng măng chua và ghi rõ ánh xạ này); đường 2 → 5g; bổ sung hành tím 8g (3/3 nguồn) và dầu ăn 5g (2/3 nguồn); nấm rơm tuỳ chọn thay bằng nấm bào ngư 40g tuỳ chọn (0/3 nguồn ủng hộ nấm rơm, đồng thuận nấm bào ngư; slug nam-bao-ngu có số). Gà GIỮ 150g — đề xuất tăng theo cân cả con thuộc nhóm quy ước cân thô–tinh đang chờ chủ dự án (cùng lớp mong-gio), không tự quyết. Nhãn dac-san:phu-yen chưa tồn tại trong taxonomy nên không gán, ghi nhận tại đây.]",
+  "cultural_note": {
+    "text": "Lẩu gà lá é có gốc ở Phú Yên, bắt nguồn từ món gà nấu mọi — sau gọi là gà nấu miền sơn cước — của vùng Nam Trung Bộ. Lá é trồng trên đất Phú Yên được nắng và gió biển hun nên thơm nồng, cay nhẹ khó nơi nào giữ được, và món lẩu đã lan rộng trong các bàn tiệc, nổi lên thành xu hướng ẩm thực trong những năm 1995–2010. Vì hợp với khí trời lành lạnh, lẩu gà lá é đặc biệt thịnh hành ở Đà Lạt với nhiều quán chuyên món này, dù quê gốc của nó là xứ Nẫu Phú Yên.",
+    "sources": [
+      {
+        "ref": "Vietnam.vn (Bộ Văn hoá, Thể thao và Du lịch, nguồn Tuổi Trẻ) — Ba cách nấu lẩu gà lá é Phú Yên",
+        "url": "https://www.vietnam.vn/ba-cach-nau-lau-ga-la-e-phu-yen-ngot-thit-day-huong-la-e"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

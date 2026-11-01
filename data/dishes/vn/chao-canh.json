@@ -179,6 +179,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-009 đợt 9: Nâng Mức 2 — mở kiểm chứng 3 họ nguồn (Món Ngon/Đông Nguyễn, Chợ Lái Thiêu, Bửu Long; nguồn Dân Việt sẵn có trong file khẳng định cá lóc là thành phần cốt lõi và cải xanh thái nhỏ ăn kèm). Thêm hanh-tim 5 g (2/3 họ phi hành xào cá/tơm) và dau-an 3 g cho bước phi theo Phương án A. Giữ soi-banh-canh 150 g (nguồn bất đồng 130–250 g sợi tươi/khẩu phần) và toàn bộ định lượng còn lại vì nguồn bất đồng >30% hoặc file nằm trong dải đa số. Chuẩn hoá tên chính tiếng Việt 'Cháo canh Quảng Bình'. Ghi nhận: xương ống heo chưa có slug trong kho — chỉ xuất hiện ở bước hầm nước dùng, không có dòng nguyên liệu.]",
+  "cultural_note": {
+    "text": "Cháo canh là món ăn bình dân đặc trưng của Quảng Bình, từng được vinh danh trong danh sách Ẩm thực tiêu biểu Việt Nam. Dù mang tên \"cháo\", món ăn thực chất là bánh canh, với sợi bột gạo tự nhồi thả thẳng vào nồi nước dùng đang sôi, nấu cùng cá lóc, tôm và thịt heo nạc. Điểm lạ của cháo canh Quảng Bình là ăn kèm rau cải xanh thái nhỏ và một chén nước mắm ớt cay, thay vì các loại rau thơm thường thấy ở món nước khác.",
+    "sources": [
+      {
+        "ref": "Dân Việt — Đi tìm món ăn Quảng Bình được vinh danh ẩm thực tiêu biểu Việt Nam",
+        "url": "https://danviet.vn/am-thuc-quang-binh-chao-canh-banh-xeo-ten-goi-la-lam-nhung-thom-ngon-ngot-20231227063036615.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

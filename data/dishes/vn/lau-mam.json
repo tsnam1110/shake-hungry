@@ -173,6 +173,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. THIẾU NGUYÊN LIỆU: mắm cá linh (chính — nước dùng lẩu mắm) — cần bổ sung vào kho. [LV2-006 đợt 6: nâng Mức 2 — nâng KHÔNG có dòng mắm cá: slug mam-ca-linh/mam-ca-sac chưa có số dinh dưỡng (cùng tiền lệ bun-mam ở Phần A LV2-006), chờ biên soạn nguyên liệu. Mực ống 40 → 60g, bún tươi 80 → 125g; bổ sung dứa (thơm) 25g; nước cốt dừa tuỳ chọn thay bằng nước dừa tươi 100g (3/3 nguồn dùng nước dừa tươi ~100–125ml/người, slug có số); bổ sung buổi trưa vào meal_slots nếu thiếu. Heo quay xuất hiện ở nguồn nhưng slug chưa có số — ghi nhận, không bổ sung.]",
+  "cultural_note": {
+    "text": "Lẩu mắm xuất phát từ Châu Đốc (An Giang), khởi đầu là món ăn của người nghèo: cá đánh bắt dư thừa được ủ muối lên men thành mắm, rồi nấu thành nồi lẩu dùng chung cho cả nhà. Nước lẩu nấu từ mắm cá sông lên men, ăn kèm cá sông và một mâm rau đồng đặc trưng như cà tím, kèo nèo, bông súng và bông điên điển. Ngày nay lẩu mắm được xem là tinh hoa ẩm thực Nam Bộ — món của những buổi sum họp bạn bè, gia đình và thường xuyên xuất hiện trong đám cưới ở miền Tây Nam Bộ, có nơi còn dùng nồi lẩu cù lao đốt than ở giữa như thói quen từ thập niên 1990.",
+    "sources": [
+      {
+        "ref": "VietnamNet — Lẩu mắm, the symbol of southern food",
+        "url": "https://vietnamnet.vn/en/lau-mam-the-symbol-of-southern-food-2056532.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

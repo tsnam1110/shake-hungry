@@ -154,6 +154,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 3 nguồn. Phân xử định lượng: cai-ngot 50 → 100 g — cả 3 nguồn đều dùng 100–150 g rau lá/bắp cải mỗi khẩu phần (file thấp hơn 2–3 lần), lấy cận dưới 100 g; bò 90 g giữ (chỉ 1 nguồn lệch trên ngưỡng); hành tây/dầu hào/nước tương giữ (chỉ 1 nguồn định lượng lệch). Sửa kỹ thuật trong bước: file cũ xào bò và rau chung một lượt — cả 3/3 nguồn đều xào bò riêng lửa lớn, trút ra, xào rau và mì riêng, trộn lại ở cuối; bước đã viết lại theo nguồn. Bất thường nhẹ ghi nhận: cà chua và gừng ướp bò mỗi thứ chỉ 1 nguồn.",
+  "cultural_note": {
+    "text": "Mì xào bò thuộc nhóm món xào quen thuộc trong các quán ăn người Hoa lâu đời ở Sài Gòn. Nhóm món này gắn với cộng đồng người Hẹ — có quán ăn tồn tại gần 80 năm trong con hẻm trên đường Lý Thường Kiệt; đầu bếp người Hẹ xưa nay nổi tiếng với lối kết hợp nhuần nhuyễn ẩm thực Tây - Tàu, dùng nhiều hành tây và ớt chuông.",
+    "sources": [
+      {
+        "ref": "VnTravelLive (Tạp chí Du lịch) — Những người Hoa góp vị cho Sài Gòn (P1)",
+        "url": "https://vntravellive.com/nhung-nguoi-hoa-gop-vi-cho-sai-gon-p1-d32302.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

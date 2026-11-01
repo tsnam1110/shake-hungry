@@ -102,6 +102,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-012 đợt vét] Nâng Mức 2: đối chiếu 3 họ độc lập đã mở đọc (Thức Thần — cùng họ số với FPT Shop/daylambanh; Beemart; Trí Hưng), thống nhất bột nếp rang là nguyên liệu nền. Thay dòng gao-nep 45g bằng bot-nep 20g/khẩu phần 60g và giảm lac-rang 15g → 8g theo dải 19–24g bột và 4–10g lạc của 3 họ; đường giữ 30g vì khớp 2/3 họ (~29g). Viết lại recipe_steps 7 bước. cooking_method hiện ghi 'song' chưa đúng bản chất thắng mật — đề xuất đội triển khai cân nhắc đổi khi áp dụng.",
+  "cultural_note": {
+    "text": "Chè lam là đặc sản của làng Thạch Xá, huyện Thạch Thất (Hà Nội), vùng đất xứ Đoài còn nổi tiếng với chùa Tây Phương. Dù mang tên 'chè', đây là một loại bánh dẻo làm từ bỏng gạo nếp cái hoa vàng rang nở, xay thành bột rồi quấy cùng mật mía (hoặc đường), gừng, quế và lạc rang — nghề được người làng giữ qua nhiều thế hệ với những tay rang bỏng thiện nghệ riêng. Vào những tháng cuối năm, hầu như gia đình nào ở Thạch Xá cũng nổi lửa làm vài mẻ chè lam để dùng trong những ngày đông lạnh, đón Tết và làm quà gửi phương xa; miếng bánh thường được thưởng thức cùng chén trà nóng.",
+    "sources": [
+      {
+        "ref": "Tạp chí Người Hà Nội — Hương chè lam Thạch Xá nồng ấm vị quê hương",
+        "url": "https://nguoihanoi.vn/huong-che-lam-thach-xa-nong-am-vi-que-huong-43112.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "llm_suggested",
   "confidence": "unknown",

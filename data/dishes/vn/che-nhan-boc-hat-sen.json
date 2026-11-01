@@ -94,6 +94,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu). [LV2-012 đợt vét] Nâng Mức 2: đối chiếu 3 họ nguồn độc lập đã mở đọc thật (PasGo; Dạy Pha Chế Á Âu — Châu Hương; Cookpad Thế Vy), cả 3 đều có thao tác bọc hạt sen vào cùi nhãn; biến thể nhãn khô của file được PasGo và Dạy Pha Chế chấp nhận (ngâm nước ấm cho nở rồi nhồi sen). Sửa định lượng: nhan-kho 15→20g, duong-phen 20→35g; bỏ dòng la-dua (0/3 họ ủng hộ). hat-sen-tuoi giữ 30g (các họ cho 20-50g/khẩu phần, file nằm giữa dải).",
+  "cultural_note": {
+    "text": "Chè hạt sen nhãn lồng là món đại diện cho ẩm thực cung đình Huế — ngày nay đã phổ biến đại trà, nhưng trong quá khứ chỉ được phục vụ trong phạm vi hoàng thất. Sen dùng cho bếp cung đình phải lấy từ hồ Tịnh Tâm và phải là sen tươi; hạt sen được nấu cho ngấm đường trước khi lồng vào cùi nhãn, chuộng nhãn vùng Kim Long quả nhỏ, cùi chắc và giòn. Công đoạn khó nhất là dùng dao khía nhẹ quanh đầu nhãn để tách hạt mà không làm nát thịt nhãn; viên nhãn lồng sen trắng trong như ngọc bội mới đạt chuẩn.",
+    "sources": [
+      {
+        "ref": "aFamily — Các món ngon từ sen trong ẩm thực cung đình Huế",
+        "url": "https://afamily.vn/cac-mon-ngon-tu-sen-trong-am-thuc-cung-dinh-hue-20140426061941164.chn"
+      }
+    ]
+  },
   "status": "draft",
   "source": "llm_suggested",
   "confidence": "unknown",

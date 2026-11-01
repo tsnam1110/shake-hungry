@@ -125,6 +125,19 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): Đã đối chiếu 3 nguồn công thức thật (Hướng Nghiệp Á Âu, báo Lao Động, Cookpad/Bòn Bon). Định lượng: rau muống trong file 180g/khẩu phần nằm giữa các nguồn (Lao Động ~200-250g/người; hai nguồn còn lại là mẻ 300-500g không ghi số người, quy ra khoảng 125-250g/người) nên giữ nguyên; tỏi 8g và dầu ăn 10g khớp khoảng của các nguồn, giữ nguyên. Phân loại (loai:mon-chinh, xao, vn, trưa/tối) rà soát, không có điểm sai rõ ràng nên giữ nguyên. [LV2-010 Phần C — gói quyết định chủ dự án 2026-10-31: A4.1 ÁP quy ước rau xào: bỏ dòng nuoc-mam-truyen-thong 5 g, chuẩn nêm thành muoi 1 g + hat-nem 2 g (± dầu hào nếu đã có). Căn cứ riêng của món: hồ sơ đợt nâng không ghi họ nào ủng hộ nêm mắm — dòng mắm là khuôn mẫu soạn nháp.]",
+  "cultural_note": {
+    "text": "Rau muống xào tỏi là món rau xào dân dã bậc nhất trong bữa cơm Việt, thường được gọi vui là món ăn “quốc dân” vì nguyên liệu dễ tìm, cách làm đơn giản mà gần như ai nấu cũng ngon. Trong mâm cơm truyền thống, đĩa rau muống xào tỏi ăn nóng cùng cơm trắng thường giữ vai trò món xào bên cạnh món luộc và món canh. Rau muống đã đi vào thơ ca từ lâu — Nguyễn Trãi từng nhắc ao rau muống trong “Thuật hứng” — và năm 2024 món xào này được chuyên trang TasteAtlas xếp hạng 17 trong 100 món xào ngon nhất thế giới.",
+    "sources": [
+      {
+        "ref": "Báo Đà Nẵng — Lên hạng “rau muống xào tỏi”",
+        "url": "https://baodanang.vn/len-hang-rau-muong-xao-toi-3139367.html"
+      },
+      {
+        "ref": "Sức khỏe & Đời sống (Gia đình) — 2 món ăn cực phổ biến trong mâm cơm Việt lọt top 'món xào ngon nhất thế giới'",
+        "url": "https://giadinh.suckhoedoisong.vn/2-mon-an-cuc-pho-bien-trong-mam-com-viet-lot-top-mon-xao-ngon-nhat-the-gioi-172240804165744254.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

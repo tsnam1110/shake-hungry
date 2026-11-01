@@ -109,6 +109,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt) THIẾU NGUYÊN LIỆU: thạch cao (nước chua làm đông đậu) (phụ) — cần bổ sung vào kho [LV2-009 đợt 9: GIỮ Mức 1 — tra cứu bị chặn 429. Trần một phần: chất đông (thạch cao/đường nho) chưa có slug trong kho — chỉ chặn riêng dòng đó, không chặn món; khi đối chiếu lại phải tách lượng đường của phớ và của nước đường.] [LV2-010 đợt 10: ĐẠT Mức 2 — 3 họ đã mở (Bách Hoá XANH biến thể thạch cao/lá dứa, Tripi đường nho, Cookpad Yuni Tran). Đậu nành quy về khẩu phần 23–40 g theo tỉ lệ mẻ, file 30 g nằm giữa nên giữ nguyên cả 3 dòng; thêm lá dứa 2 g phụ vết (3/3 họ, slug null vớt bỏ). Trần còn lại: chất kết đông (đường nho/thạch cao ~1 g/khẩu phần) chưa có slug trong kho — chờ biên soạn, không chặn nâng cấp vì là phụ vết.]",
+  "cultural_note": {
+    "text": "Tào phớ là thức quà mùa hè gắn với hình ảnh những gánh hàng rong Hà Nội: một đầu gánh là thùng gỗ đựng phớ, đầu kia là chạn bát và bình nước đường ướp hoa nhài. Người bán hớt từng lát phớ mỏng bằng mảnh vỏ chai hay miếng tôn, chan nước đường, và tiếng rao 'Ai phớ đây' từng làm lũ trẻ trong ngõ ùa ra xin ăn. Món ăn còn có tên gọi khác là đậu hoa; ngày nay gánh phớ dần được thay bằng xe đạp, nhưng cách ăn truyền thống với nước đường hoa nhài vẫn được người Hà Nội ưa chuộng.",
+    "sources": [
+      {
+        "ref": "Dân Việt — Tào Phớ, thứ ăn khó bỏ của người Hà Thành",
+        "url": "https://danviet.vn/tao-pho-thu-an-kho-bo-cua-nguoi-ha-thanh-7777448316-d321233.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "llm_suggested",
   "confidence": "unknown",

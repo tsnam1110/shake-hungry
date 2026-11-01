@@ -137,6 +137,15 @@
     "queried_at": "2026-08-31"
   },
   "import_note": "Nhập tự động từ Wikidata Q10779336 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/Kho%20qu%E1%BA%B9t%202.jpg Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-006 đợt 6: nâng Mức 2 — nước mắm 12 → 24g, đường thốt nốt 8 → 13g (chỉ sửa lượng; LOẠI đường giữ nguyên vì đang là quy ước chờ chủ dự án); bổ sung hành lá 3g (4/4 nguồn). Ghi nhận chờ chủ dự án: khẩu phần 55g của file so với nồi kho quẹt dùng chung ~105–115g/người ở các nguồn.]",
+  "cultural_note": {
+    "text": "Kho quẹt là món chấm dân dã của miền Tây Nam Bộ, từng được coi là “món ăn nhà nghèo” của người dân bản xứ. Tên món đến từ chính cách làm và cách ăn: nước mắm được kho cho cô đặc, bám vào thành chảo, khi ăn người ta “quẹt” lấy phần mắm sệt ấy để chan cháo trắng hay chấm rau ăn cơm. Ngày nay kho quẹt đã vào thực đơn nhà hàng, thường kho thêm tôm khô và thịt băm, và vẫn là món chấm quen thuộc cho đĩa rau luộc tập tàng cùng cơm cháy.",
+    "sources": [
+      {
+        "ref": "Sức khỏe & Đời sống (Gia đình) — Những món ngon đậm chất miền Tây ở Cần Thơ",
+        "url": "https://giadinh.suckhoedoisong.vn/nhung-mon-ngon-dam-chat-mien-tay-o-can-tho-172151118144548892.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

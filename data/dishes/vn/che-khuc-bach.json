@@ -141,6 +141,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-007 đợt 7: nâng Mức 2 — 3 nguồn đã mở; đây là món lệch cấu trúc nhiều nhất đợt. File cũ là bản 'khúc bạch rau câu toàn sữa' không tồn tại trong bất kỳ nguồn chuẩn nào: 3/3 nguồn dùng GELATIN (không nguồn nào dùng rau câu làm chất đông chính) và 3/3 dùng WHIPPING CREAM. THAY rau câu khô 4g → gelatin 3g (tỉ lệ đồng thuận 2,5–3,5% lượng sữa+kem; slug gelatin mới biên soạn đợt này theo USDA 169599); BỔ SUNG kem whipping 50g (slug mới, USDA 170859) và sữa đặc 10g (2/3 nguồn, 7,2–11,6g); SỬA sữa tươi 80→50g và phô mai 20→8g (2 nguồn có phô mai: 5,4–8,7g — file cũ cao gấp 2,3–3,7 lần). GIỮ đường 25g (tổng đường nguồn ~35–37 gồm nước đường chan dư không ăn hết), vải 40g, hạnh nhân 5g, lá dứa 1g. Tổng sau vá ≈ 192g + ~58g nước đường ≈ serving 250g. Diet suy ra vẫn man (sữa/kem/phô mai/gelatin động vật). Bất thường phân loại ghi nhận: cooking_method nau chỉ gần đúng (món chỉ đun ấm 60–65 °C + đông lạnh) — giữ mã hiện có, taxonomy chưa có mã phù hợp.]",
+  "cultural_note": {
+    "text": "Chè khúc bạch được xem là món cải tiến từ đậu phụ hạnh nhân của người Hoa ở Sài Gòn — món tráng miệng vốn chuyên dùng trong các tiệc cưới, sinh nhật — khi phần thạch được làm béo và thơm hơn bằng sữa tươi, kem tươi và gelatin. Tên gọi Hán Việt của món mô tả đúng hình dạng thành phẩm: những viên thạch trắng được cắt thành khúc nhỏ vừa ăn, ăn cùng nước đường phèn, vải hoặc nhãn và hạnh nhân lát. Khoảng năm 2013, món chè này tạo thành một trào lưu ăn vặt mới của giới trẻ, với những con phố tập trung nhiều hàng bán như Châu Văn Liêm (quận 5, TP.HCM).",
+    "sources": [
+      {
+        "ref": "Wikipedia tiếng Việt — Chè khúc bạch",
+        "url": "https://vi.wikipedia.org/wiki/Ch%C3%A8_kh%C3%BAc_b%E1%BA%A1ch"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

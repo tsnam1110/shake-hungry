@@ -98,6 +98,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-004 đợt 2 (lô bánh dân gian) mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] Nâng Mức 2: đối chiếu 3 họ độc lập (dieutri.vn — biên tập viên nêu tên; VinID; Gia Vị Hạnh Phúc/Chef Thư Thư). Phân xử: đề xuất duong-trang 18→10 g theo tỉ lệ đường/bột 0,25 đồng thuận ở 2/3 họ; bot-nang 35 g và nuoc-cot-dua 15 g giữ nguyên (cốt đồng thuận 17,5 g theo tỉ lệ 0,5 — lệch ~15%, trong ngưỡng). la-dua là nguyên liệu phụ không có số dinh dưỡng, không chặn tính calo. Trang DayLamBanh về món này sao chép họ dieutri.vn nên không tính họ riêng.",
+  "cultural_note": {
+    "text": "Bánh phục linh có gốc từ Quảng Ngãi với màu trắng thuần, khi vào miền Tây được thêm lá dứa, củ dền, củ nghệ thành nhiều màu rực rỡ. Chiếc bánh toàn bột ép khuôn, không nhân, là món quà vặt và món 'nhấm trà' quen thuộc của người miền Tây xưa, đặc biệt phổ biến gần dịp Tết khi bánh được bày trên bàn thờ cúng tổ tiên. Với nhiều người thuộc thế hệ 9x, phục linh là một ký ức tuổi thơ: chờ cúng xong để được ăn những chiếc bánh xanh đỏ bắt mắt.",
+    "sources": [
+      {
+        "ref": "Kenh14 — Khám phá chiếc bánh Phục Linh khiến 9x ngày xưa phải mê mẩn",
+        "url": "https://kenh14.vn/mien-tay-co-chiec-banh-chan-om-nhung-van-khien-ta-thuo-be-tho-phai-nhay-cang-len-thich-thu-20190118193103006.chn"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

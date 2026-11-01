@@ -134,6 +134,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Biến thể vùng của banh-canh-ca-loc theo đúng cơ chế parent_dish_slug: bản Quảng Trị dùng sợi bột gạo, cá hấp gỡ thịt xào hành, nước dùng trong — ghi region vn-central vì cây vùng của dự án chưa có mã Quảng Trị riêng. [LV2-010 đợt 10: GIU-429 — chưa mở được nguồn nào do phiên bị chặn 429, giữ Mức 1, làm lại ở đợt sau.] [LV2-010 đợt 10 — VÒNG 2: ĐẠT Mức 2 (vòng 1 bị 429 trước khi mở được nguồn nào). Đã mở 3 họ: Cookpad Thủy Hoàng (2 phần; bài Eva/Gia đình trùng nguyên văn công thức nên tính chung 1 họ), Tripi (3–4 người), Bazan Travel (định danh/quy trình). Món còn có tên cháo bột/cháo vạt giường. Thay đổi: thêm cu-nen 3 g — củ/hạt nén là gia vị ĐỊNH DANH Quảng Trị ở 3/3 họ ('đứng mơ mùi nén') mà file thiếu hẳn (slug null + hồ sơ nên vào missing theo quy tắc phụ null; lá nén là lá cùng cây, ghi nhận không tách dòng); XOÁ rau-ram 3 g (0/3 họ Quảng Trị dùng rau răm — Eva chỉ nhắc rau răm cho biến thể miền Bắc). Sợi 150 g giữ: Cookpad đúng 150 g/người, Tripi 75–100 g/người — họ bất đồng nên giữ file theo quy tắc. Cá 100 g giữ (các họ chỉ ghi '1 con', không cân).]",
+  "cultural_note": {
+    "text": "Tại Quảng Trị, món bánh canh cá lóc còn được gọi là cháo bột Hải Lăng hay cháo cá vạt giường, và từng lọt Top 100 món ăn đặc sản Việt Nam 2020–2021. Tên gọi “vạt giường” xuất phát từ sợi bột gạo cán mỏng, thái thành sợi dài trông như những thanh tre của chiếc vạt giường. Nước dùng nấu hoàn toàn từ cá lóc chứ không dùng xương heo; cá hấp gỡ thịt, xào với củ nén, ăn nóng cùng tiêu và ớt cay.",
+    "sources": [
+      {
+        "ref": "Tuổi Trẻ (đăng lại từ Người Lao Động) — Đặc sản Quảng Trị có tên lạ, khách Hà Nội toát mồ hôi vẫn xuýt xoa khen",
+        "url": "https://tuoitre.vn/nld/dac-san-quang-tri-co-ten-la-khach-ha-noi-toat-mo-hoi-van-xuyt-xoa-khen-196251024082047153.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

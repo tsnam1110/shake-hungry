@@ -164,6 +164,19 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-006 đợt 6: nâng Mức 2 — hành tây 40 → 100g (nguồn 130–150g thuộc biến thể lấy hành tây làm chính; file là bản gà làm chính với khẩu phần 250g nên lấy 100g là mức nén có ghi hồ sơ), lạc rang 15 → 25g, bổ sung cà rốt 25g (2 nguồn).]",
+  "cultural_note": {
+    "text": "Gỏi gà thuộc họ nộm — tên gọi miền Bắc của các món rau trộn chua ngọt, mà miền Nam gọi là gỏi — với nguyên liệu và cách trộn linh động theo khẩu vị từng vùng miền. Nộm gà xé phay, với thịt gà luộc xé cùng bắp cải, hành tây, rau răm, xuất hiện từ bàn tiệc trang trọng đến mâm cơm thường ngày; nộm cũng là món truyền thống trong cỗ Tết của người miền Bắc.",
+    "sources": [
+      {
+        "ref": "VietnamPlus / Báo Ảnh Việt Nam — Nộm, món ăn truyền thống mang đậm tâm hồn và văn hóa Việt Nam (Vy Thảo)",
+        "url": "https://www.vietnamplus.vn/nom-mon-an-truyen-thong-mang-dam-tam-hon-va-van-hoa-viet-nam-post534552.vnp"
+      },
+      {
+        "ref": "Wikipedia tiếng Việt — Nộm",
+        "url": "https://vi.wikipedia.org/wiki/N%E1%BB%99m"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

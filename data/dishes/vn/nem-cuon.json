@@ -173,6 +173,15 @@
     "queried_at": "2026-08-31"
   },
   "import_note": "Nhập tự động từ Wikidata Q7799573 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Gợi ý nguyên liệu từ Wikidata (tiếng Anh, CHƯA ánh xạ sang data/ingredients/): Lactuca sativa, pork, rice vermicelli, rice paper, shrimp, Thai basil. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/Summer%20roll.jpg Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-007 đợt 7: nâng Mức 2 — 4 họ nguồn đã mở. BỎ hành lá 2g → BỔ SUNG lá hẹ 3g: lá hẹ là dòng định danh của gỏi cuốn (5/5 nguồn đều có, cọng hẹ ló ra ngoài cuốn), hành lá 0/5 nguồn có trong cuốn. ĐỔI slug thịt lợn mỏng → thịt ba chỉ, giữ 30g (4/5 nguồn dùng ba chỉ/ba rọi). GIỮ tôm 25g, bún 40g theo dải tỉ lệ nguồn. BẤT THƯỜNG ghi nhận chờ phân xử: (i) tên chính tiếng Việt là 'Nem cuốn' trong khi vùng Nam + Wikidata + tên Anh đều là 'Gỏi cuốn' — đề xuất đổi primary sang 'Gỏi cuốn', 'Nem cuốn' xuống alias ở pha phân xử tên; (ii) method song — cùng ca pho-cuon đang chờ phân xử ở LV2-006; (iii) bơ đậu phộng trong tương (2 nguồn) — kho chưa có slug, không ánh xạ sang lac-rang.]",
+  "cultural_note": {
+    "text": "Món cuốn bánh tráng với thịt heo, tôm, bún và rau thơm này có nhiều tên gọi theo vùng miền: người miền Nam gọi là gỏi cuốn, miền Bắc gọi nem cuốn, miền Trung đơn giản là cuốn bánh tráng. Khác với chả giò chiên giòn, cuốn được ăn tươi ngay khi cuốn xong ở nhiệt độ phòng, giữ trọn vị mát lành của rau sống. Đây cũng là món ăn đề cao tính quây quần — cả nhà cùng ngồi cuốn, chấm tương xào hay nước chấm rồi thưởng thức ngay tại bàn.",
+    "sources": [
+      {
+        "ref": "Wikipedia tiếng Anh – Gỏi cuốn",
+        "url": "https://en.wikipedia.org/wiki/G%E1%BB%8Fi_cu%E1%BB%91n"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

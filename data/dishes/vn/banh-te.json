@@ -142,6 +142,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [LV2-012 đợt vét] Nâng Mức 2: đối chiếu 3 họ độc lập đã mở (Điện Máy XANH; Công Thức Gia Đình; TimNhanh nguồn Cooky TV). Sửa thit-lon-xay 35→60g vì cả 3 họ đồng thuận tỉ lệ thịt/bột 75-80/100 trong khi file chỉ đạt 43,8/100 (lệch trên 40%). Thêm nam-huong-kho 4g (cả 3 họ đều có nấm hương trong nhân; lượng đã quy đổi từ dạng ngâm nở/cái về khô). Các dòng còn lại (hành tím, nước mắm, tiêu, muối) đều khớp ít nhất 2 họ nên giữ nguyên. Viết lại recipe_steps 7 bước.",
+  "cultural_note": {
+    "text": "Bánh tẻ của làng Phụng Công (Văn Giang, Hưng Yên) được người dân gọi là bánh răng bừa, vì chiếc bánh gói trong lá dong có hình dáng phình giữa, thuôn hai đầu giống chiếc răng bừa. Món bánh đã tồn tại ở làng hàng trăm năm; xưa kia, vào mỗi mùa lễ hội, giỗ chạp, Tết hay cưới hỏi, cả làng lại vang tiếng chày giã bột. Bánh làm từ gạo tám xoan, tám lim của vùng đất phù sa sông Hồng, nhân thịt, mộc nhĩ và hành — là thứ quà dân dã biểu trưng của làng quê Bắc Bộ.",
+    "sources": [
+      {
+        "ref": "VOV World (VOV5) — Bánh răng bừa, món quà dân dã của làng quê bắc bộ",
+        "url": "https://vovworld.vn/vi-VN/huong-vi-que-nha/banh-rang-bua-mon-qua-dan-da-cua-lang-que-bac-bo-59618.vov"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

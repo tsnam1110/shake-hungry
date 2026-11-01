@@ -175,6 +175,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu). Nâng Mức 2 đợt 1 (2026-10-31): Đã đối chiếu 3 nguồn công thức thật (Điện máy XANH mì tôm thịt, Điện máy XANH mì giò heo, Cookpad/Đoàn Văn Nhân). Phân xử định lượng sợi mì: soi-mi-quang 90 → 180 (Điện máy XANH bản giò heo và Cookpad đều ở mức 200g mì mỗi khẩu phần/tô và khớp nhau; số cũ lệch trên 50%. Lấy 180g nằm trong khoảng đồng thuận 167-200g tính cả nguồn mì trộn tham khảo thêm. Riêng bản mì tôm thịt của Điện máy XANH ghi 400g cho 10 người, bất thường so với chính các công thức mì Quảng khác của cùng trang, nên không dùng số này). Tôm 30g, ba chỉ 50g, trứng cút 12g, đậu phộng 10g và bánh tráng 10g đều nằm trong khoảng của các nguồn, giữ nguyên. Phân loại (loai:bun-pho-mi, vn-quang-nam, sáng/trưa) rà soát, giữ nguyên; riêng cooking_method đang ghi tron được ghi nhận là điểm đáng xem lại ở báo cáo bàn giao (mì Quảng chan nước nhân rồi trộn khi ăn), không tự sửa vì chưa phải sai rõ ràng.",
+  "cultural_note": {
+    "text": "Mì Quảng được ví là \"hồn cốt\" của ẩm thực Quảng Nam và Đà Nẵng. Món ăn ra đời trong bối cảnh Hội An là thương cảng quốc tế sầm uất khoảng thế kỷ XVI: người Hoa mang món mì làm từ bột mì đến, người đất Quảng thay bằng sợi bột gạo của mình nhưng vẫn giữ tên gọi \"mì\", rồi đặt tên món theo quê hương. Tô mì chỉ chan nước dùng xăm xắp vừa chạm sợi, ăn kèm nhiều rau sống, bánh tráng nướng giòn và đậu phộng rang.",
+    "sources": [
+      {
+        "ref": "Dân Việt — Mì Quảng được ví là 'hồn cốt' của ẩm thực Quảng Nam và Đà Nẵng",
+        "url": "https://danviet.vn/mi-quang-duoc-vi-la-hon-cot-cua-am-thuc-quang-nam-va-da-nang-20211119215921417-d987680.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

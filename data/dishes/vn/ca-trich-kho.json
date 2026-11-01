@@ -140,6 +140,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — thêm hành lá 3 (3/3) và tỏi 3 (2/3), đường 5→4, hành tím 5→10; sửa bước kho: bản cũ ghi 15 phút là mâu thuẫn với chính mô tả mềm xương — nay kho liu riu 1,5–2 giờ theo BlueStone. Bất thường: 2/3 nguồn là biến thể kho thịt ba chỉ — giữ bản kho thường, ba chỉ ghi nhận là biến thể chờ phân xử.]",
+  "cultural_note": {
+    "text": "Ghi chú ở cấp loài: cá trích là loài cá nhỏ sống thành đàn ở tầng nước mặt, xuất hiện nhiều ở vùng biển miền Trung và Tây Nam Bộ, với mùa đánh bắt thường kéo dài từ tháng hai đến tháng sáu âm lịch. Cá trích vốn là món ăn bình dân của cư dân miền biển — những ngày đánh bắt được mùa, ăn tươi không hết, người dân thường đem phơi khô hoặc làm mắm để bảo quản lâu dài. Trong mâm cơm nhà, cá trích ướp nước mắm, hành, tiêu rồi kho liu riu cho thịt săn chắc, ngấm đều gia vị là món kho quen thuộc đưa cơm; bản kho trong kho thuộc dòng món kho ấy.",
+    "sources": [
+      {
+        "ref": "Đời sống & Pháp luật (Người Đưa Tin) — Loài cá nhỏ làm nên món gỏi trứ danh Phú Quốc",
+        "url": "https://doisongphapluat.nguoiduatin.vn/loai-ca-nho-lam-nen-mon-goi-tru-danh-phu-quoc-thit-trang-thom-beo-gia-binh-dan-de-mua-ve-oi-vi-a673644.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

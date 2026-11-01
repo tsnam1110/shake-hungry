@@ -194,6 +194,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 đợt 2 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. GỘP BIẾN THỂ 2026-10-31 (tầm soát + quyết định của chủ dự án): chuyển thành BIẾN THỂ của goi-mit-non — gỏi/nộm là hai tên vùng cho cùng một dạng món mít non trộn (file này vốn đã alias 'gỏi mít non'). Khác biệt của biến thể này so với món chuẩn: đạm là thịt lợn nạc vai 60 g (món chuẩn dùng tai heo 60 g), tôm thẻ 50 g, ăn kèm bánh tráng 20 g, thêm vừng rang và húng quế; định lượng giữ nguyên bản gốc, không đổi số. Tên en cũ 'northern style' là SAI miền (Quảng Nam thuộc miền Trung) — đã sửa. [LV2-012 đợt vét] Đạt Mức 2: 3 họ độc lập đã mở/đối chiếu (Bếp Xưa, BlueStone, sách Gỏi mít cổ điển) đồng thuận khung mít non 125–175g, tôm 50g, thịt 50–60g cho 1 đĩa 260g; đề xuất hạ lạc rang 15→10g và thêm dòng tỏi 2g (nước trộn của mọi nguồn đều có tỏi, file đang thiếu).",
+  "cultural_note": {
+    "text": "Đây là biến thể của món mít non trộn xứ Quảng miền Trung, ghi dưới tên “nộm” — cách gọi phổ biến cho các món trộn chua ngọt. Bản trong hồ sơ này trộn mít non luộc xé sợi cùng tôm và thịt, rau răm và lạc rang, dọn kèm bánh tráng để xúc ăn. Lõi món vẫn là cách tận dụng trái mít non vườn nhà của người miền Trung từ thời khó khăn, khi đĩa gỏi truyền thống chỉ gồm mít non, lạc và rau thơm.",
+    "sources": [
+      {
+        "ref": "Báo Ảnh Việt Nam (TTXVN) — Về miền Trung nhớ gỏi mít non (Sơn Nghĩa, Nguyễn Luân)",
+        "url": "https://vietnam.vnanet.vn/vietnamese/print/ve-mien-trung-nho-goi-mit-non-58995.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

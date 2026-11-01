@@ -176,6 +176,15 @@
     "queried_at": "2026-08-31"
   },
   "import_note": "Nhập tự động từ Wikidata Q68631373 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/N%E1%BB%99m%20hoa%20chu%E1%BB%91i.png Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-006 đợt 6: nâng Mức 2 — định lượng gốc giữ nguyên (các nguồn phân tán tới 5 lần, không có đồng thuận để sửa); bổ sung hành tây 25g và cà rốt 25g (3/4 công thức đã mở đều có).]",
+  "cultural_note": {
+    "text": "Cùng một món hoa chuối trộn, miền Bắc gọi là nộm hoa chuối còn miền Nam gọi là gỏi bắp chuối — tên gọi theo vùng miền là dấu ấn dễ nhận ra nhất của món ăn này. Theo cách làm được ghi trong các sách văn hoá ẩm thực, hoa chuối sau khi bổ đôi, bỏ vỏ già và ruột non thường được để trên gác bếp một ngày cho chảy hết nhựa chát, rồi mới thái mỏng ngâm nước chanh hoặc nước khế chua để không thâm đen. Từ nền hoa chuối ấy, mỗi vùng lại thêm thắt khác nhau — miền Bắc thường có tôm khô, thịt ba chỉ, giá đỗ và khế chua, miền Nam có thể dùng thịt gà xé phay, da heo hay tép luộc.",
+    "sources": [
+      {
+        "ref": "Wikipedia tiếng Việt — Nộm hoa chuối",
+        "url": "https://vi.wikipedia.org/wiki/N%E1%BB%99m_hoa_chu%E1%BB%91i"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

@@ -102,6 +102,15 @@
     "queried_at": "2026-08-31"
   },
   "import_note": "Nhập tự động từ Wikidata Q110834778 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Gợi ý nguyên liệu từ Wikidata (tiếng Anh, CHƯA ánh xạ sang data/ingredients/): glutinous rice, panela. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/Banhtroi.JPG Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-010 đợt 10: ĐẠT Mức 2 — 3 họ nguồn bánh trôi Bắc ăn khô (Điện Máy XANH, Viet Times, Sức khỏe & Đời sống/Võ Quốc) đã mở trực tiếp; thêm bot-gao 6 g theo tỉ lệ tẻ 10% đồng thuận 2 họ, bỏ dòng gung do lẫn biến thể bánh chay/trôi nước, steps viết lại 7 bước; bot-nep 55 g và duong-phen 10 g được đối chiếu khớp quy đổi theo viên nên giữ nguyên.]",
+  "cultural_note": {
+    "text": "Bánh trôi là món ăn của Tết Hàn thực, mùng 3 tháng 3 âm lịch — ngày mà người Việt còn gọi là Tết bánh trôi, bánh chay. Tết này được tiếp nhận từ thời Lý nhưng đã được Việt hoá: người Việt không kiêng lửa như tích Giới Tử Thôi của Trung Hoa, mà làm bánh trôi, bánh chay làm món nguội dâng cúng tổ tiên. Đây là ngày lễ trọng ở nhiều tỉnh đồng bằng Bắc Bộ, gắn với nền nông nghiệp lúa nước và ước mong mùa màng bội thu; các gia đình quây quần cùng nặn bánh, sắp mâm lễ rồi mới hạ lễ cùng thưởng thức.",
+    "sources": [
+      {
+        "ref": "Dân Việt — Nguồn gốc Tết bánh trôi, bánh chay trong phong tục Việt",
+        "url": "https://danviet.vn/nguon-goc-tet-banh-troi-banh-chay-trong-phong-tuc-viet-7777671987-d431661.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

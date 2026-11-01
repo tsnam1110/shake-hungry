@@ -150,6 +150,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [LV2-010 đợt 10: GIỮ Mức 1 do 429 toàn đợt trước khi tới món này — chưa tra cứu, làm lại ở vòng sau.] [LV2-011 đợt 11: GIU-THIEU-NGUON — đã mở 5 họ (Cookpad Phan Bao Van 400/50/250/300 g, Cookpad Quân Nguyễn 300/50/200/300 g, BlueStone, Saigonese Baguette, bản sao ĐMX bánh nậm khuôn 400/30 g) nhưng chỉ BlueStone và Saigonese ghi sản lượng 20–25 cái; quy đổi 1 phần 4 cái: bột gạo 40–60 g, bột năng 4–10 g, tôm 32–40 g, thịt 24–30 g — file nằm sát dải này, không đủ căn cứ sửa >30%. Các họ Cookpad không ghi số cái/khẩu phần nên chưa đủ 3 họ quy đổi được. Bất thường: dòng moc-nhi-kho 4 g không được họ nào trong 5 họ ủng hộ — ghi nhận chờ phân xử, chưa tự bớt.] [LV2-012 thu lai] Dung do 429 khi mo cac ho moi (Cookpad Lavender, Mon An 3 Mien) de kiem chung; giu Muc 1, thu lai o vong sau khi het chan. [LV2-012 vòng 2] NÂNG Mức 2: LV2-011 đã mở 5 họ nhưng chỉ 2 họ quy đổi được về phần 4 cái; vòng 2 mở thêm Cookpad Lavender (6 phần ăn — họ quy đổi được thứ ba) và mở lại BlueStone + Saigonese Baguette để kiểm chứng: đồng thuận 3 họ bột gạo 40–60 g/phần, tôm 32–42, thịt 24–33. Sửa bot-gao 65->50 (file cao hơn trần cả 3 họ), dau-an 3->8, bỏ moc-nhi-kho (0/5 họ ủng hộ); giữ tom-su 30 và thit-lon-xay 25 (lệch <25% so với điểm giữa đồng thuận), bot-nang 8 trong dải. Món Ăn 3 Miền đã mở nhưng loại khỏi đếm: đầu bài ghi 5 cái/2 người trong khi định lượng 250 g bột + 200 g nhân — mâu thuẫn nội tại, không quy đổi được. Các dòng thêm/sửa mang source=llm_suggested, confidence=low; giữ needs_review.",
+  "cultural_note": {
+    "text": "Trong họ bánh Huế làm từ bột và nhân tôm thịt, bánh nậm là chiếc bánh mềm mại nhất: bột gạo xay mịn được tráng mỏng, phết nhân tôm thịt rồi gói trong lá chuối đem hấp, khi chín bánh mềm tan. Cùng với bánh bèo và bánh bột lọc, bánh nậm sinh ra từ thời cơ cực ở Huế, khi người dân dùng bột từ củ sắn và tôm cá sông, phá Tam Giang để làm bánh ăn thay cơm. Những nhà túng thiếu hơn thay nhân tôm thịt bằng đậu xanh, còn về sau các đầu bếp cung đình đã tinh chỉnh họ bánh này thành món ăn tao nhã của ẩm thực Huế.",
+    "sources": [
+      {
+        "ref": "Thanh Niên — Cơm hến, bánh ép: Từ món ăn thời khó thành đặc sản ẩm thực Huế",
+        "url": "https://thanhnien.vn/com-hen-banh-ep-tu-mon-an-thoi-kho-thanh-dac-san-am-thuc-hue-185260922132318399.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

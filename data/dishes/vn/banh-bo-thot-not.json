@@ -127,6 +127,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-012 đợt vét] Nâng Mức 2: 4 họ độc lập đã mở đọc (Cookpad Nguyễn Lê Hồng Hạnh — bản truyền thống ủ cơm rượu; Eva/Eric Nguyễn — men khô; họ Tripi/emvaobep; Trường Saigontourist). Quy đổi theo tỉ lệ trên mốc bột gạo 45g của file: thêm bột năng 9g và men nở 1g (file thiếu hẳn chất nở), nước cốt dừa 15→25g, bỏ trứng gà (0/4 họ bản hấp dùng — trứng thuộc biến thể nướng). Đường thốt nốt giữ nguyên vì là định danh món và tỉ lệ 25/45 nằm trong dải các họ (0,44-1,0).",
+  "cultural_note": {
+    "text": "Bánh bò thốt nốt là đặc sản của vùng Bảy Núi, An Giang, gắn với đời sống người Khmer Nam Bộ — cộng đồng coi cây thốt nốt là cây đa dụng. Bánh làm từ bột gạo, truyền thống dùng gạo nàng Nhen của vùng Bảy Núi, trộn bột và đường thốt nốt cùng nước cốt dừa rồi hấp chín, cho màu vàng lợt và hương thốt nốt rất riêng. Bánh vừa là món ăn chơi đãi khách, vừa có mặt trong các tiệc tùng, giỗ chạp ở địa phương.",
+    "sources": [
+      {
+        "ref": "Dân Việt — Ẩm thực An Giang với món bánh ngọt khiến mọi du khách gật gù khen ngợi",
+        "url": "https://danviet.vn/am-thuc-an-giang-voi-mon-banh-ngot-khien-moi-du-khach-gat-gu-khen-ngoi-20220315130922678-d1007149.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -133,6 +133,15 @@
     "queried_at": "2026-08-31"
   },
   "import_note": "Nhập tự động từ Wikidata Q5004813 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Gợi ý nguyên liệu từ Wikidata (tiếng Anh, CHƯA ánh xạ sang data/ingredients/): glutinous rice. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/Banh%20tet.jpg Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-006 đợt 6: nâng Mức 2 — định lượng giữ nguyên (tỉ lệ nếp:đậu:thịt khớp đồng thuận 1000:300:500); SỬA thời gian luộc trong bước nấu thành 4–7 giờ theo nguồn. Nước cốt dừa xào nếp là trường phái miền Nam chỉ 1/3 nguồn — file vốn theo trường phái này, ghi nhận.]",
+  "cultural_note": {
+    "text": "Nếu miền Bắc có bánh chưng thì người miền Nam gói bánh tét để cúng gia tiên, biếu người thân và cùng nhau ăn trong dịp Tết. Tên gọi 'bánh tét' được truyền miệng là do đọc chệch từ 'bánh Tết'; bánh còn được gọi là bánh đòn vì hình trụ tròn. Đòn bánh nếp gói lá chuối với nhân đậu xanh, thịt heo thể hiện mong ước về cuộc sống ấm no, đủ đầy của người dân Nam Bộ. Mỗi địa phương lại có biến thể riêng, như bánh tét Trà Cuôn (Trà Vinh) hay bánh tét cốm dẹp (Sóc Trăng).",
+    "sources": [
+      {
+        "ref": "Thông tấn xã Việt Nam / Vietnam Pictorial — Bánh tét Nam Bộ",
+        "url": "https://vietnam.vnanet.vn/vietnamese/tin-tuc/banh-tet-nam-bo-88942.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

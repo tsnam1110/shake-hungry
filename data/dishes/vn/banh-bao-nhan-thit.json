@@ -182,6 +182,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-004 đợt 2 (lô bánh dân gian) mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-009 đợt 9 (bổ sung): GIỮ Mức 1 — GIỮ-429: lần mở nguồn đầu tiên (Điện Máy XANH) bị chặn 429 sau 3 lần thử, dừng ngay theo quy tắc đợt, chưa mở được nguồn nào đạt chuẩn; trích đoạn tìm kiếm không tính là nguồn. Ứng viên đã định vị để làm lại: ĐMX (mẻ 10 cái), Bluestone (2 bài, cùng họ), Dân Việt (12 chiếc), Cookpad Susu. Quan sát nội bộ chờ kiểm chứng khi làm lại: steps ghi 'men tính trong bột' nhưng file không có dòng men-no (slug đã có số), cũng không có sua-tuoi/dau-an/bot-no mà các trích đoạn đều nhắc; tỉ lệ vỏ 55 g bột : nhân ~62 g và serving 130 g cần đối chiếu lại.] [LV2-010 đợt 10: GIỮ Mức 1 — GIỮ-429: đã mở đạt chuẩn 2 họ (Điện Máy XANH mẻ 10 cái, Dân Việt 12 chiếc), lần mở họ thứ 3 (Bluestone) bị chặn 429 sau 3 lần thử, dừng ngay theo quy tắc đợt. Quan sát sẵn sàng áp khi mở được họ thứ 3: men-no ~0,4 g/cái (2/2 họ đã mở xác nhận), bot-mi file 55 g là dough-weight (bột khô thật ~26–28 g/cái ở cả 2 họ), thiếu sua-tuoi ~18 g/cái và bot-no ~0,3 g/cái; moc-nhi-kho có thể thừa ~2 lần.] [LV2-010 đợt 10 — VÒNG 2: ĐẠT Mức 2. Mở được họ thứ ba (Bluestone) sau khi vòng 1 bị 429, áp toàn bộ quan sát đã soạn ở vòng 1 và được họ thứ ba xác nhận: bot-mi 55→30 g (file cũ lấy nhầm trọng lượng dough 55 g/chiếc của Dân Việt làm bột khô; bột khô thật: ĐMX 26, Dân Việt 28,3, Bluestone 40–50 cho bánh lớn hơn); thêm men-no 0,4 g (3/3 họ: 0,3/0,33/0,5–0,63), bot-no 0,3 g (2/3 họ), sua-tuoi 18 g (ĐMX 17 + Dân Việt 18,3 đồng thuận chặt), bot-ngo 5 g (ĐMX bột bắp 4 + Dân Việt bột ngô 5,8), dau-an 1,5 g (cho vỏ); moc-nhi-kho 4→2 g (3 họ đều ~1,5–2 g khô/cái). Giữ thit-lon-xay 35 g (Dân Việt 33,3 + Bluestone 30–37,5 đồng thuận), trung-cut 12 g (1 quả/cái ở 3/3 họ). Củ sắn chỉ ĐMX định lượng (5 g/cái) — 1/3 họ, không thêm.]",
+  "cultural_note": {
+    "text": "Bánh bao ở Việt Nam phát triển từ chiếc “đại bao” Quảng Đông do người Hoa nhập cư mang vào. Nhân mặn phổ biến nhất là thịt heo xay nêm nếm cùng hành, nấm và rau củ, điểm thêm lạp xưởng và một phần trứng luộc — bản Việt thường dùng trứng cút. Từ lâu bánh bao đã là món ăn đường phố quen thuộc, thường được ăn vào bữa sáng hoặc làm món ăn vặt.",
+    "sources": [
+      {
+        "ref": "Wikipedia (tiếng Anh) — Bánh bao",
+        "url": "https://en.wikipedia.org/wiki/B%C3%A1nh_bao"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

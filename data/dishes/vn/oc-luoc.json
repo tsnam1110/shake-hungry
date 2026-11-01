@@ -140,6 +140,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [LV2-007 đợt 7: nâng Mức 2 — 3 họ nguồn đã mở. SỬA đường chấm 4→8g (2 nguồn độc lập đồng thuận ~7,5–9g, lệch >75%). GIỮ NGUYÊN dòng ốc 250g + hồ sơ quy ước: mọi nguồn đều kê NGUYÊN VỎ và serving 300g là cân đĩa nguyên vỏ (nguồn trực tiếp: 375g); tỉ lệ thịt ăn được của oc-buou (~20–25% cân nguyên vỏ) CHƯA có hệ số có nguồn trong kho (edible_portion_pct = null, hồ sơ nguyên liệu ghi 'cần tự cân') — đây là ca cân thô–tinh cùng lớp quy ước đang chờ chủ dự án ở LV2-005 §4 (tiền lệ giữ móng giò ở bun-doc-mung đợt này), không tự quy đổi xuống ~70g. Khi chủ dự án chốt hệ số, áp dụng đồng loạt cho nhóm món nguyên vỏ. Nước mắm 12g giữ kèm ghi nhận phân tán (quy đổi mẻ cho 3–6g nhưng chén chấm cá nhân thực tế ~1 muỗng canh). Ghi nhận: nguồn dùng ốc mít/ốc tuỳ loại, không nguồn nào khẳng định ốc bươu — giữ slug oc-buou (lựa chọn của file); tag loai:mon-chinh so với bản chất món ăn chơi — ghi nhận chờ phân xử.]",
+  "cultural_note": {
+    "text": "Ốc luộc là món quà vặt gắn với ký ức phố phường Hà Nội: nồi ốc bốc hơi nghi ngút phải ăn lúc còn nóng, nhể bằng gai bưởi và chấm chén nước mắm gừng, sả, lá chanh mằn mặn. Người Hà Nội còn ăn kèm sung muối xổi, và những quán ốc lâu năm ở khu Thành Công, Kim Liên hay Đặng Văn Ngữ vẫn giữ đúng lối luộc giản dị ấy. Với người xa quê, đây là một trong những món được nhớ đến quay quắt nhất.",
+    "sources": [
+      {
+        "ref": "Hanoionline — Về Hà Nội ăn ốc luộc với sung",
+        "url": "https://hanoionline.vn/ve-ha-noi-an-oc-luoc-voi-sung-291093.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

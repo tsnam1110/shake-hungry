@@ -126,6 +126,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món Tết miền Trung: định lượng ghi cho phần thịt của 1 khẩu phần ăn; nước mắm ngâm kê đủ lượng dùng ngâm cho phần thịt đó, phần nước ngâm còn lại không ăn hết — ghi rõ để người duyệt lưu ý khi rà định lượng. [LV2-012 đợt vét] Nâng Mức 2: đối chiếu 3 họ độc lập (Điện Máy XANH, Savoury Days, Giáo dục & Thời đại/phunutoday). Tỉ lệ mắm:đường của file (30:20 = 1:0,67) nằm trong dải đồng thuận 1:0,6-1:1 nên giữ nguyên lượng phân bổ nước ngâm (nước ngâm không ăn hết, như ghi chú cũ); bổ sung hành tím và tiêu sọ theo >=2 họ. Viết lại recipe_steps 7 bước.",
+  "cultural_note": {
+    "text": "Đối với người miền Trung, thịt heo ngâm mắm là món ăn không thể thiếu mỗi độ xuân về. Theo nếp nhà xưa, cứ khoảng 27 tháng Chạp, sau khi vài nhà chung nhau mổ một con lợn đón Tết, người mẹ lại chọn miếng thịt ngon từ mông, đùi hoặc ba chỉ, luộc chín tới rồi xếp vào hũ, đổ nước mắm nấu với đường cho ngập mặt và dùng vỉ tre nén chặt. Ngâm khoảng 5 ngày, thấy lớp mỡ và thịt ngả sang màu trong là dùng được; ngày Tết, thịt được thái lát cuốn bánh tráng cùng rau sống, dưa chua — hương vị sum họp mà con cháu xa nhà trở về vẫn trông đợi.",
+    "sources": [
+      {
+        "ref": "VOV5 (Đài Tiếng nói Việt Nam) — Hũ thịt mẹ ngâm ngày Tết",
+        "url": "https://vovworld.vn/vi-VN/huong-vi-que-nha/hu-thit-me-ngam-ngay-tet-417445.vov"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

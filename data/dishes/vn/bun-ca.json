@@ -173,6 +173,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu). [LV2-004 đợt 4: thử nâng Mức 2 — GIỮ MỨC 1: chỉ 1 nguồn đã mở (eva.vn/cach-nau-bun-ca), các lượt mở tiếp theo bị chặn 429 — không đủ 3 nguồn đã mở.] [LV2-005 đợt 5: nâng Mức 2 — 3 nguồn đã mở (Eva mang sang từ LV2-004, TodayIBake và Cookpad mở mới đợt này). NGUYÊN LIỆU GIỮ NGUYÊN theo file, quantity_changes để rỗng. Ba bất thường chờ phân xử: (1) thiếu dòng bột tẩm chiên cá — 3/3 nguồn đều tẩm cá bằng bột năng/bột chiên giòn trước khi chiên trong khi bước của file chỉ chiên trực tiếp; nguyên liệu bot-chien-gion đã tồn tại trong kho nên có thể bổ sung dòng khi phân xử xong; (2) thiếu nguyên liệu tạo chua me/giấm bỗng — 3/3 nguồn đều có me hoặc giấm bỗng ngoài cà chua, là vị chua đặc trưng của bún cá Hà Nội; (3) rau cần có ở 3/3 nguồn trong khi file dùng dọc mùng (0/3 nguồn đợt này) — khác biệt trường phái, ghi nhận, chưa đề xuất thay thế. Vì (1) và (2) chưa phân xử, recipe_steps KHÔNG nhắc bột tẩm hay giấm bỗng như nguyên liệu có sẵn.] [Phân xử LV2-006 Phần A (2026-10-31): BỔ SUNG bột năng 8g — 3/3 nguồn đều tẩm bột trước khi chiên cá; chọn bột năng vì slug có số dinh dưỡng và 2/3 nguồn dùng/cho phép bột năng (tỉ lệ Eva ~100g bột/1kg cá, quy theo 80g cá của file); không dùng mức bột chiên giòn 12,5g/tô của Cookpad vì slug bot-chien-gion chưa có số. BỔ SUNG giấm bỗng 8g — 2/3 nguồn dùng giấm bỗng tạo chua (Cookpad ~0,5 muỗng canh/tô); đây là dòng gia vị nhỏ, slug giam-bong chưa có số nên không đổi kết quả tính calo (tiền lệ dòng gia vị null ở các đợt trước). Đã cập nhật bước chiên cá và bước nước dùng cho khớp hai dòng mới. Bất thường (3) rau cần vs dọc mùng: GIỮ NGUYÊN dọc mùng của file — khác biệt trường phái đã ghi nhận (trường phái Hà Nội dùng rau cần nước, trường phái dùng dọc mùng cũng phổ biến), không thay thế khi cả hai đều có căn cứ thực hành.]",
+  "cultural_note": {
+    "text": "Bún cá là món ăn dân dã quen thuộc của người Hà Nội: cá được lọc xương, thái miếng to bản rồi rán vàng từng mẻ nhỏ để khi chan nước dùng vẫn giữ được độ giòn và nóng hổi. Nước chan có cà chua, dọc mùng và thì là, mang vị chua nhẹ đặc trưng của ẩm thực miền Bắc. Cái tên \"bún cá\" cũng gắn với nhiều địa phương khác như Nha Trang, Kiên Giang hay Hải Phòng, mỗi nơi một biến tấu riêng theo sản vật địa phương.",
+    "sources": [
+      {
+        "ref": "VnExpress — Bún cá ấm lòng giữa tiết lạnh Hà Nội",
+        "url": "https://vnexpress.net/bun-ca-am-long-giua-tiet-lanh-ha-noi-2274172.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

@@ -138,6 +138,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Phân xử độc lập với banh-cuon đã có: bánh cuốn trứng (đặc sản Cao Bằng) đập trứng trực tiếp lên mặt bánh khi tráng — trứng là thành phần cấu trúc của bánh, khác bánh cuốn nhân thịt thông thường, nên tạo món độc lập thay vì biến thể. [LV2-009 đợt 9 (bổ sung): Nâng Mức 2 — mở kiểm chứng 3 họ nguồn (Tripi, Bếp Eva, Bếp Xưa/Cao Bằng). Thêm bot-nang 20 g (3/3 họ đều có, file thiếu hẳn — lỗi cấu trúc công thức) và duong-trang 4 g (đường của nước chấm — file trước ghi 'mắm pha loãng' mà thiếu đường); sửa thit-lon-xay 25→35 g, moc-nhi-kho 3→5 g, nuoc-mam-truyen-thong 8→10 g sau khi quy đổi về đĩa 200 g của file (mẻ nguồn cho đĩa 350–450 g). trung-ga 50 g giữ nguyên — đồng thuận mạnh nhất: 3/3 họ đều 1 quả/khẩu phần. dau-an giữ 3 g kèm ghi nhận nguồn ghi 11–12 g (gồm dầu pha bột và quét khuôn, phần ăn vào thực tế thấp hơn). BẤT THƯỜNG ĐỊNH DANH chờ chủ dự án (ghi tại LV2-009 §B.5): khẳng định 'đặc sản Cao Bằng' trong ghi chú cũ mâu thuẫn nguồn Cao Bằng đã mở — chuẩn Cao Bằng là chan nước ninh xương + trứng chần riêng, còn kỹ thuật trứng trên mặt bánh + chấm mắm gần với bánh cuốn trứng Lạng Sơn/bản phổ thông. Không thêm cu-dau (củ sắn) dù Tripi dùng 75 g/khẩu phần — chỉ 1/3 họ có.] [LV2-010 Phần C — gói quyết định chủ dự án 2026-10-31: A3 PHÂN XỬ theo hồ sơ LV2-009 §B.5 — chọn phương án (a): món đứng như BÁNH CUỐN TRỨNG PHỔ THÔNG (trứng đập trên mặt bánh khi tráng, chấm nước mắm pha), KHÔNG khẳng định đặc sản Cao Bằng: tên món, nhãn và vùng của file không mang khẳng định Cao Bằng nào (không nhãn dac-san, region vn-north chung); trang 'Cao Bằng' đã mở ở LV2-009 chỉ dùng làm một trong 3 họ đối chiếu định lượng. Dạng chuẩn Cao Bằng (chan nước ninh xương, trứng chần riêng) là món khác — nếu làm, phải là món/biến thể riêng ở đợt sau. Câu hỏi củ sắn (1/3 họ) giữ nguyên trạng: không thêm.]",
+  "cultural_note": {
+    "text": "Bánh cuốn trứng là biến thể đặc sắc của bánh cuốn Cao Bằng, vùng đất địa đầu phía Bắc. Điểm khác biệt nằm ở chỗ quả trứng được cho thẳng vào lớp bánh ngay trong lúc tráng, và bánh không chấm nước mắm pha như miền xuôi mà ăn ngập trong bát nước ninh xương trong veo. Người Cao Bằng cho rằng bánh đạt vị ngon nhất khi tráng từ gạo Đoàn Kết trồng trên chính đất Cao Bằng.",
+    "sources": [
+      {
+        "ref": "Người Lao Động — Tuyệt vời bánh cuốn Cao Bằng",
+        "url": "https://nld.com.vn/print/hap-dan-viet-nam/tuyet-voi-banh-cuon-cao-bang-20190425205300688.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

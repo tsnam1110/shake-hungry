@@ -133,6 +133,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 10 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).] [LV2-007 đợt 7: nâng Mức 2 — 3 họ nguồn đã mở. BỔ SUNG tỏi 3g (3/3 nguồn có, file thiếu hẳn; lấy thận trọng vì hành tím đã 5g). ĐỔI method chien → chien-ngap-dau (2 nguồn độc lập ghi rõ). GIỮ mực 120g (2/3 nguồn ủng hộ 120–150) và thịt lợn xay tuỳ chọn 20g (vai trò chất béo lợn có ở 3/3 nguồn ở mức 12–43g). BẤT THƯỜNG LOÀI (hàng đợi nguyên liệu): chuẩn Hạ Long là mực MAI (2 nguồn) — kho chưa có slug mực mai/nang nên giữ muc-ong (biến thể tại gia có nguồn ủng hộ); nhãn dac-san:quang-ninh chưa tồn tại trong taxonomy — không gán, chỉ ghi nhận (tiền lệ LV2-006).]",
+  "cultural_note": {
+    "text": "Chả mực Hạ Long là đặc sản trứ danh của Quảng Ninh, gắn với câu nói truyền miệng 'chả mực giã tay – ngon say lòng người'. Mực tươi vừa đánh bắt từ biển Hạ Long được giã tay và nặn thủ công, rán lên vàng ruộm, thơm nức. Món ăn thường được dùng kèm xôi trắng hay bánh cuốn, và là thức quà mà du khách ghé Hạ Long gần như ai cũng mua mang về.",
+    "sources": [
+      {
+        "ref": "VnExpress – 10 đặc sản Quảng Ninh níu chân khách du lịch",
+        "url": "https://vnexpress.net/10-dac-san-quang-ninh-niu-chan-khach-du-lich-3449924.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

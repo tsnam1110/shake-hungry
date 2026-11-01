@@ -121,6 +121,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu). [LV2-006 đợt 6: nâng Mức 2 — đường 8 → 4g và rượu trắng 5 → 1g (3 nguồn đồng thuận rượu chỉ ~1,25ml/người — file cũ ghi lượng của cả mẻ 4 người); BỔ SUNG nước cốt dừa 35g — 3/3 nguồn đều có (~37g/người) mà file thiếu hẳn. Lớp đậu xanh chỉ 1/3 nguồn — biến thể riêng, không thêm.]",
+  "cultural_note": {
+    "text": "Trên mâm cỗ Tết của người Việt, xôi gấc đỏ luôn đi đôi với bánh chưng xanh. Người Việt quan niệm màu đỏ là màu của may mắn, của hạnh phúc và những điều tốt lành, nên sắc đỏ thắm của xôi gấc được xem như lời chúc đầu năm. Cuối tháng Chạp, khi những trái gấc trên giàn chín thắm cũng là lúc nhà nhà đồ xôi gấc để dâng lên mâm cỗ cúng tổ tiên và đãi khách ngày xuân.",
+    "sources": [
+      {
+        "ref": "Thanh Niên — Sắc màu trong mâm cỗ tết",
+        "url": "https://thanhnien.vn/sac-mau-trong-mam-co-tet-185271567.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

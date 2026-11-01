@@ -147,6 +147,23 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-008 đợt 8: Nâng Mức 2 với 3 họ nguồn đã mở đọc (Bếp Trưởng Á Âu — VinID dùng cùng một công thức truyền thống, tính 1 họ; Cookpad VN; Tripi). Thêm: dầu ăn 8g phi sả (3/3 họ nguồn đều có, file đang thiếu). Giữ: nước cốt dừa 100g (cốt đặc quy về 300g ốc: Cookpad 90g, Tripi 90g, họ Bếp Trưởng/VinID ~145g — file nằm trong khoảng); sả 10g, tỏi 5g, ớt 3g, rau răm 5g, đường 5g (khớp họ Bếp Trưởng/VinID 2 thìa cà phê/500g), muối 2g. Không thêm nước mắm (chỉ Cookpad có, 1/3 họ). Vùng vn-south và phương pháp xào giữ nguyên.]",
+  "cultural_note": {
+    "text": "Ốc len — còn gọi là ốc linh hoa — sống ở rừng ngập mặn và bãi bồi ven biển, là đặc sản nức tiếng của Cà Mau, phân bố nhiều ở vùng Năm Căn, Gành Hào. Cách chế biến quen thuộc nhất là ốc len xào nước cốt dừa: ốc được chặt bỏ phần đuôi nhọn trước khi xào, và khi ăn chỉ cần hút nhẹ là thịt ốc theo nước dừa trôi vào miệng.",
+    "sources": [
+      {
+        "ref": "Báo Cà Mau — Tăng thu nhập từ nghề bắt ốc len (Thanh Chính)",
+        "url": "https://baocamau.vn/tang-thu-nhap-tu-nghe-bat-oc-len-a133494.html"
+      },
+      {
+        "ref": "Wikipedia tiếng Việt — Ốc len",
+        "url": "https://vi.wikipedia.org/wiki/%E1%BB%90c_len"
+      },
+      {
+        "ref": "aFamily — Ốc len xào dừa Cà Mau (dẫn Cổng TTĐT tỉnh Cà Mau)",
+        "url": "https://afamily.vn/khach-nga-tron-mat-ngac-nhien-khi-an-mon-binh-dan-ban-day-via-he-viet-nam-thot-len-toi-muon-an-them-236260409195125462.chn"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

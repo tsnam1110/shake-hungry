@@ -177,6 +177,19 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt DISH-004 đợt 2 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-005 đợt 5: nâng Mức 2 — đối chiếu 3 nguồn công thức đã mở đọc toàn văn (Điện Máy XANH, BlueStone, Cookpad). Định lượng: giữ nguyên toàn bộ, không sửa — sợi mì 90g gần khớp nguồn (100g, lệch −10% trong ngưỡng) và các chênh lệch còn lại chỉ có 1 nguồn định lượng được nên không đủ cơ sở sửa. Bất thường ghi nhận chờ pha phân xử: thiếu sả (3/3 nguồn đều dùng), thiếu củ nén/hành tăm (2/3 nguồn), dầu đậu phộng đặc trưng bị ghi chung là dầu ăn (3/3 nguồn nhấn mạnh), trứng cút 20g có thể thấp so với 1 nguồn, thịt ba chỉ chỉ xuất hiện ở 1/3 nguồn như biến thể.] [Phân xử LV2-006 Phần A (2026-10-31): BỔ SUNG sả 8g — cả 3 nguồn LV2-005 đều dùng sả; pha nghiên cứu LV2-006 mở lại được 2/3 nguồn (BlueStone, Cookpad) đều khẳng định sả trong phần ướp/rim gà, nguồn Điện Máy XANH lỗi mạng khi mở lại (không phải chặn 429) nên không tính là phản bác. GIỮ + hồ sơ: củ nén/hành tăm và dầu đậu phộng — kho chưa có slug nguyên liệu cho hai nguyên liệu này (hành tăm/củ nén là gia vị định danh miền Trung, dầu đậu phộng là biến thể của dầu ăn), chờ đợt biên soạn nguyên liệu; không thay dầu ăn bằng suy đoán.] [AUDIT-FIX 2026-11-01 — PX-34 (AUDIT-002): mở lại toàn bộ URL chưa kết luận của món. URL ĐMX chưa kết luận (thử lại 2026-11-01: dịch vụ fetch lỗi mạng/không phân giải được, không có HTTP status — không kết luận chết); 2 nguồn còn lại HTTP 200 vòng này.] [Thử lại 2026-11-01 — đợt sau AUDIT-FIX (kèm QA-002 lần 5): URL ĐMX thử lại vẫn CHƯA KẾT LUẬN (lỗi mạng qua dịch vụ fetch, không mã HTTP — không tính chết); 2 nguồn còn lại giữ xác nhận sống.]",
+  "cultural_note": {
+    "text": "Mì Quảng gà là một trong những bản nhân quen thuộc của mì Quảng xứ Quảng, bên cạnh tôm, thịt heo hay cá lóc. Dù phần nhân thay đổi theo mùa và theo từng nhà, khung của món ăn vẫn giữ nguyên: sợi mì gạo chan nước nhưn cô đặc chỉ vừa xăm xắp mặt sợi, ăn kèm rau sống nhiều vị, bánh tráng nướng và đậu phộng rang. Tháng 8/2024, tri thức dân gian mì Quảng đã được đưa vào Danh mục Di sản văn hoá phi vật thể quốc gia.",
+    "sources": [
+      {
+        "ref": "Người Lao Động — Nức tiếng mì Quảng Phú Chiêm",
+        "url": "https://nld.com.vn/print/nuc-tieng-mi-quang-phu-chiem-196250124135121708.htm"
+      },
+      {
+        "ref": "Wikipedia tiếng Việt — Mì Quảng",
+        "url": "https://vi.wikipedia.org/wiki/M%C3%AC_Qu%E1%BA%A3ng"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

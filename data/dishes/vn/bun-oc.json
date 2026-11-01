@@ -166,6 +166,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. Nâng Mức 2 đợt 2 (2026-10-31): đã mở kiểm chứng 3 nguồn (Điện Máy XANH, Savoury Days, Cookpad). Phân xử định lượng: SỬA oc-buou 60 → 100g — hai nguồn độc lập đồng thuận thịt ốc 100–125g/khẩu phần (Savoury Days 400–500g thịt/4 người; Cookpad 300g thịt làm sẵn cho mẻ gia đình ~3 người; Điện Máy XANH 2kg ốc nguyên vỏ/4 người quy ra thịt tương đương), số file cũ thấp hơn cả hai cơ sở >30%. Các dòng còn lại GIỮ NGUYÊN: cà chua các nguồn bất đồng nhau (50–100g/khẩu phần), bún chỉ một nguồn định lượng sạch theo khẩu phần. BẤT THƯỜNG ghi nhận: (1) file có chuối xanh + tiết lợn + đậu phụ, thuộc biến thể bún ốc chuối đậu, trong khi 2/3 nguồn là bản cổ truyền chỉ có ốc (Cookpad có đậu phụ); (2) các nguồn dùng giấm bỗng ~55ml/khẩu phần, file thay bằng dam-gao 5g — chênh lệch cách tạo chua, ghi nhận cho pha phân xử. Phân xử bất thường LV2-002 (Phần A, 2026-10-31): GIỮ NGUYÊN. File là biến thể bún ốc chuối đậu có thật (chuối + tiết đã để tuỳ chọn), 2/3 nguồn là bản cổ truyền — khác biệt biến thể, không phải lỗi. Giấm bỗng (~55 ml/khẩu phần ở nguồn): kho chưa có slug giấm bỗng — giữ dam-gao, chờ biên soạn nguyên liệu. Phân xử LV2-004 (Phần A, 2026-10-31): giấm bỗng đã được biên soạn (slug 'giam-bong', null + hồ sơ — Bảng TPTP VN không có mục giấm, nhãn chưa đọc được số) → THAY dòng dam-gao 5 g bằng giam-bong 55 g theo đúng định lượng ~55 ml/khẩu phần của 3 nguồn đã mở đợt 2; bước 5 vốn đã ghi giấm bỗng là lựa chọn chính. Dòng chưa có số nên phần calo tạo chua tạm không tính (nếu quy theo dam-gao cũng chỉ ~10 kcal/khẩu phần) và món mang cờ nguyên liệu chưa có số — đánh đổi lấy đúng định danh nguyên liệu tạo chua chuẩn của món.",
+  "cultural_note": {
+    "text": "Bún ốc là món quà sáng lâu đời của Hà Nội, gắn với những gánh hàng rong: ốc bươu được nhể ngay tại chỗ, chan nước dùng dậy mùi bỗng rượu — thứ bỗng làm từ rượu nếp cái hoa vàng — cùng cà chua và tía tô. Nhiều làng nghề quanh Hà Nội gắn tên tuổi với món ăn này, như bún lá làng Tứ Kỳ ở Pháp Vân hay nghề bún ốc truyền trong gia đình ở Khương Thượng. Ở Phủ Tây Hồ, bún ốc từng được làm từ chính những con ốc bắt tại hồ Tây.",
+    "sources": [
+      {
+        "ref": "Tạp chí Đẹp — Bún ốc Hà Nội",
+        "url": "https://dep.com.vn/bun-oc-ha-noi/"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

@@ -165,6 +165,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Nâng Mức 2 đợt 2 (2026-10-31): Đối chiếu 3 nguồn công thức đã mở kiểm chứng (xem recipe_sources). Định lượng: giữ nguyên toàn bộ — các nguồn bất đồng nhau >30% ở hầu hết dòng chính: thịt bò/khẩu phần ~75g (Cookpad Bòn Bon, 4 phần ăn) so với mẻ 500g không ghi khẩu phần của VietnamNet; tỉ lệ bò:heo là 1:1 ở cả hai công thức Cookpad trong khi file để heo xay 20g dạng tuỳ chọn và VietnamNet không dùng thịt heo xay (chỉ gợi ý trộn chút mỡ lợn chống khô); lá lốt 300g/mẻ (Bòn Bon) so với 120g/mẻ (VietnamNet); lạc rang quy đổi ~14–25g/khẩu phần so với 8g của file. Bất thường ghi nhận: cả 3 nguồn đều phục vụ kèm mỡ hành + lạc rang + nước chấm (mắm nêm) và đồ cuốn bánh tráng/rau sống — file đã có lạc và mỡ hành trong bước nấu nhưng nước chấm chưa có dòng nguyên liệu riêng (tiền lệ long-lon-luoc đợt 1), chờ pha phân xử riêng. Bước nấu viết lại 6 bước. Phân xử bất thường LV2-002 (Phần A, 2026-10-31): GIỮ NGUYÊN các dòng. Nước chấm mắm nêm ăn kèm chưa có dòng riêng (tiền lệ long-lon-luoc đợt 1): slug mam-nem hiện chưa có số dinh dưỡng (null) — thêm vào sẽ làm món mất tính được calo, không đánh đổi; chờ biên soạn số cho mắm nêm. Mỡ hành + lạc rang đã có dòng (hanh-la, lac-rang) và bước nấu. Điểm \"sa tế 2/3\" ở tổng hợp §5 không có trong note chi tiết — không xử lý theo tóm tắt.",
+  "cultural_note": {
+    "text": "Bò nướng lá lốt là phiên bản miền Nam của họ món cuốn lá lốt: thịt bò băm ướp sả, tỏi, cuốn trong lá lốt rồi nướng trên than hoa cho lá cháy xém, dậy hương thơm rất riêng không loại rau gia vị nào thay thế được. Ở Sài Gòn, nhiều quán bò lá lốt đã thành địa chỉ quen thuộc, nơi thực khách quây quần bên bếp than, tự tay cuốn bánh tráng ăn kèm bún và rau sống. Từ mâm cơm gia đình, món ăn bước ra ẩm thực đường phố và bàn nhậu cuối tuần; cuối năm 2023, cây bút ẩm thực của tờ Sydney Morning Herald còn gọi bò nướng lá lốt là một trong những món ăn ngon nhất hành tinh.",
+    "sources": [
+      {
+        "ref": "Báo Thanh Hóa (theo TTXVN) — Chả lá lốt: Từ món ăn dân dã đến đại diện ẩm thực và văn hóa Việt",
+        "url": "https://vhds.baothanhhoa.vn/cha-la-lot-tu-mon-an-dan-da-den-dai-dien-am-thuc-va-van-hoa-viet-45578.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

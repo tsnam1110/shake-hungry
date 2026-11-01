@@ -157,6 +157,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [LV2-007 đợt 7: nâng Mức 2 — 3 nguồn đã mở. SỬA bột gạo 60→40g: cả 3 nguồn đều thấp hơn file +50% tới +125% (đồng thuận lệch >30%); lấy BlueStone làm neo (nguồn duy nhất ghi số chiếc tường minh). GIỮ bột năng 10g (khớp tỉ lệ 4:1 sau sửa). Hệ quả bắt buộc: serving 200→260g — với 50g bột khô + ~200 ml nước dùng/cái, khối lượng 1 cái thực tế ~250–280g; bộ ba (bột 70g khô + serving 200g + tỉ lệ nước 4:1) của file cũ không thể đồng thời đúng. BỔ SUNG nấm hương khô 2g dạng tuỳ chọn (2 nguồn). GIỮ thịt xay 45g (dải nguồn 28,6–50), mộc nhĩ khô 6g (≈35–50g sau ngâm — khớp '50g ngâm nở' của BlueStone, không so trực tiếp số ướt), trứng cút 12g dạng tuỳ chọn (2 nguồn coi 1 quả/cái là chuẩn, 1 nguồn báo chí làm bản không trứng).]",
+  "cultural_note": {
+    "text": "Bánh giò là thức quà bình dị đã đi vào đời sống phố phường Hà Nội từ rất lâu, gắn với tiếng rao buổi chiều quen thuộc. Chiếc bánh gói trong lá chuối thành hình chóp gợi dáng mái nhà cổ, vỏ làm từ bột gạo tẻ, nhân là thịt nạc vai băm cùng mộc nhĩ, nấm hương và hạt tiêu. Người Hà Nội ăn bánh giò vào bất cứ thời điểm nào trong ngày — bữa sáng nhanh gọn, thức quà chiều lót dạ hay món ăn đêm.",
+    "sources": [
+      {
+        "ref": "Báo Ảnh Việt Nam — Bánh giò, món quà bình dị của phố phường Hà Nội",
+        "url": "https://vietnam.vnanet.vn/vietnamese/long-form/banh-gio-mon-qua-binh-di-cua-pho-phuong-ha-noi-454442.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

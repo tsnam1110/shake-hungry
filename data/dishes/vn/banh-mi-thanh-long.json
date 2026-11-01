@@ -122,6 +122,15 @@
     "queried_at": "2026-08-31"
   },
   "import_note": "Nhập tự động từ Wikidata Q106906025 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/B%C3%A1nh%20m%C3%AC%20thanh%20long%2020200524%20193247.jpg Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] Nâng Mức 2: 3 họ độc lập (SKĐS/Gia Đình, Dạy Làm Bánh Ngon, Khimfood họ Anny) cho biến thể trơn; định lượng đối chiếu ≥2 họ. Sửa thanh long 25→32 g; bỏ sữa tươi (0/3 họ) thay bằng sữa đặc 8 g; thêm men nở 1 g (file thiếu, 3/3 họ có). Bột mì 55 g, đường 6 g, bơ 4 g của file nằm trong dải các nguồn nên giữ nguyên.",
+  "cultural_note": {
+    "text": "Bánh mì thanh long ra đời năm 2020 trong đại dịch COVID-19, khi thanh long tồn đọng vì xuất khẩu đình trệ. Ông Kao Siêu Lực của ABC Bakery đã dùng sinh tố thanh long ruột đỏ thay phần lớn lượng nước nhào bột, tạo ra ổ bánh có vỏ hồng tươi; sản lượng nhanh chóng tăng lên tới 20.000 ổ mỗi ngày, nhiều người xếp hàng chờ mua. Ông công bố công thức để cả nước cùng làm, và từ ý tưởng 'giải cứu nông sản' này, nhiều món biến tấu từ thanh long khác đã ra đời.",
+    "sources": [
+      {
+        "ref": "Wikipedia tiếng Việt — Bánh mì thanh long",
+        "url": "https://vi.wikipedia.org/wiki/B%C3%A1nh_m%C3%AC_thanh_long"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

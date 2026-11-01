@@ -124,6 +124,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — giữ nguyên định lượng (tép tươi 120 khớp SKĐS ~125/khẩu phần; khế ~60 nằm trong dải của bản tươi; Cookbeo là bản tép khô chỉ đối chiếu kỹ thuật). Ghi tranh luận: mắm 8/đường 5 của kho cao hơn tỉ lệ SKĐS (~4 g mắm/khẩu phần) nhưng chỉ 1 nguồn có số nêm — không đủ đồng thuận để sửa, giữ nguyên và ghi hồ sơ.]",
+  "cultural_note": {
+    "text": "Tép rang khế chua là món ăn của ký ức tuổi thơ trong nhiều gia đình. Những ngày hè nóng gắt, mẹ ra chợ chọn từng lạng tép nhỏ — ở quê còn gọi là tôm riu — cùng vài trái khế xanh chua, về rang trên chiếc chảo gang cho săn lại cùng hành phi và chút nước mắm. Đĩa tép rang khế thường xuất hiện bên canh rau dền đỏ và chén cà muối xổi, giản dị mà khiến anh em trong nhà xơi liền mấy bát cơm.",
+    "sources": [
+      {
+        "ref": "Sức khỏe & Đời sống (Gia đình & Xã hội) — Tép rang khế chua, món ngon tuổi thơ trong tôi",
+        "url": "https://giadinh.suckhoedoisong.vn/tep-rang-khe-chua-mon-ngon-tuoi-tho-trong-toi-va-cach-me-toi-lam-ngon-dung-vi-chi-ton-30-nghin-dong-172250726165750937.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -166,6 +166,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. THIẾU NGUYÊN LIỆU: cây mía (phụ — que quết tôm) — cần bổ sung vào kho. [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 15 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%). Dòng mo-lon-nuoc GIỮ NGUYÊN: đó là mỡ trộn trong chạo (nguyên liệu ăn vào), không phải dầu chiên.] [LV2-012 đợt vét] ĐẠT Mức 2: đã mở đọc 3 họ độc lập (Hội Đầu Bếp Á Âu/Chef Dung, Chef Ryan Phạm, sách Món ăn miền Trung) — cỡ nhân 40-45g/cây và lượng tôm/khẩu phần đối chiếu khớp file, giữ nguyên mọi định lượng. Mía vẫn là phụ không kê dòng (chỉ đếm cây ở nguồn, không có gram) như ghi chú cũ.",
+  "cultural_note": {
+    "text": "Chạo tôm xuất xứ từ Huế, tương truyền do các đầu bếp cung đình xưa sáng tạo nên để dâng lên vua và quan tướng. Từ món ăn chốn cung đình, chạo tôm ngày nay trở thành món bình dân quen thuộc: tôm quết dai, nướng thơm, dọn cuốn cùng bánh tráng, rau sống và dưa leo. Ăn một cuốn chạo tôm là nếm lại một mảnh không khí ẩm thực triều đình cố đô trong hình hài món ăn dân dã.",
+    "sources": [
+      {
+        "ref": "Wikipedia tiếng Việt — Chạo tôm",
+        "url": "https://vi.wikipedia.org/wiki/Ch%E1%BA%A1o_t%C3%B4m"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

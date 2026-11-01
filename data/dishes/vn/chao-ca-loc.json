@@ -176,6 +176,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Dùng nguyên liệu mới đề xuất: rau-dang (chờ bổ sung file nguyên liệu vào data/ingredients/). [LV2-007 đợt 7: nâng Mức 2 — 3 nguồn độc lập đã mở (bản VinID sao chép nguyên danh sách của ĐMX nên gộp vào ĐMX). BỔ SUNG nấm rơm 50g, giá đỗ 30g, hành tím 10g, dầu ăn 5g — cả 4 dòng đều có ở ≥2 nguồn, file thiếu hẳn. GIỮ gạo tẻ 60g kèm bất thường: 2/3 nguồn cho 19–25g (cháo loãng kiểu miền Tây), 1 nguồn cho 100g; chuẩn nội bộ các món cháo Mức 2 hiện hành (chao-ga, chao-suon đều 60g/450g) ủng hộ giữ — đổi sang phong cách loãng là quyết định của chủ dự án. Cá lóc 120g và rau đắng 30g giữ ở biên dưới dải nguồn. Cà rốt chỉ 1 bài có — biến thể, không thêm.]",
+  "cultural_note": {
+    "text": "Cháo cá lóc rau đắng là món ăn dân dã của miền Tây Nam Bộ, hay có mặt trong những ngày mưa ở vùng sông nước. Gạo thường được rang sơ trước khi nấu cho nồi cháo thơm, cá lóc nấu cùng nấm rơm, và rau đắng - thứ rau mọc quanh nhà, ven đồng ruộng - được cho vào sau cùng. Vị đắng rồi ngọt hậu của rau đắng gắn liền với hình ảnh quê nhà miền Tây, từng đi vào ca khúc \"Còn thương rau đắng mọc sau hè\".",
+    "sources": [
+      {
+        "ref": "CafeBiz — Cháo cá lóc rau đắng, món ăn 'đại diện tính cách của người miền Tây'",
+        "url": "https://cafebiz.vn/chao-ca-loc-rau-dang-mon-an-dac-san-duoc-menh-danh-la-dai-dien-tinh-cach-cua-nguoi-mien-tay-20220726201902037.chn"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -171,6 +171,19 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-009 đợt 9: Nâng Mức 2 — mở kiểm chứng 4 họ nguồn (Điện Máy XANH, Cookpad Bếp của Quỳnh — vòng 1; Nấu Ăn Không Khó, Em Vào Bếp — vòng 2; NAKK là biến thể cơm hến, chỉ đối chiếu hệ topping/mắm ruốc/nước hến). Thêm mam-ruoc 8 g (3/4 họ có, dải 5–10 g/khẩu phần), doc-mung 30 g (Cookpad 75 g/khẩu phần, NAKK 60 g/mẻ — lấy thận trọng), dau-an 5 g chỉ cho bước xào hến theo Phương án A, hanh-tim 5 g (bước nấu của file vốn nhắc hành tím nhưng thiếu dòng — mâu thuẫn nội bộ đã khép). Sửa gia-do 30→50 g (ĐMX 67, Cookpad 50), lac-rang 10→20 g. Giữ bun-tuoi 150 g theo quy ước sợi và hen 80 g (quy đổi thịt từ nguồn 67–100 g — file trong dải). Serving 320→390 g theo tổng dòng mới + nước hến chan. Không thêm: xà lách/dưa leo (chỉ ĐMX định lượng rõ), dòng sa-te riêng (2/4 họ), trái chua (hai họ dùng hai loại khác nhau — xoài/khế).]",
+  "cultural_note": {
+    "text": "Bún hến là biến thể của cơm hến Huế — thay cơm bằng bún — gắn với Cồn Hến, cù lao nhỏ giữa dòng sông Hương, nơi hến được xem là ngon nhất. Một phần bún hến gồm hến xào, ruốc sống, đậu phộng rang, bì heo chiên giòn, khế chua hoặc xoài xanh và dọc mùng, dọn kèm chén nước luộc hến nóng để riêng. Họ món hến của Cồn Hến đã đi vào thơ của Tố Hữu và tản văn của Hoàng Phủ Ngọc Tường.",
+    "sources": [
+      {
+        "ref": "Cục Du lịch Quốc gia Việt Nam — Com Hen, soul of Hue street cuisine",
+        "url": "https://vietnamtourism.vn/en/index.php/news/items/15525"
+      },
+      {
+        "ref": "Tập san Thông tin – Khoa học, Trường Cao đẳng Du lịch Huế, Số 2/2023 — Cơm hến, đặc sản Huế (Dương Thu Hiền)",
+        "url": "https://huetc.edu.vn/wp-content/uploads/2023/11/C%C6%A0M-H%E1%BA%BEN-%C4%90%E1%BA%B6C-S%E1%BA%A2N-HU%E1%BA%BE-%C4%90%E1%BA%B6M-GIA-V%E1%BB%8A-V%C3%80-%C4%90%E1%BA%A6Y-T%C3%8CNH-TH%C6%AF%C6%A0NG.pdf"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

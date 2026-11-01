@@ -182,6 +182,19 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. [LV2-006 đợt 6: nâng Mức 2 — bổ sung cà rốt 25g, nấm hương khô 3g, mộc nhĩ khô 3g (đều 3/3 nguồn) và trứng gà 12g tuỳ chọn (2/3 nguồn). Lạc rang giữ dạng tuỳ chọn dù 0/3 nguồn nhắc — thành phần ăn kèm phổ biến, ghi nhận tại đây.]",
+  "cultural_note": {
+    "text": "Miến lươn là một trong những món làm nên danh tiếng ẩm thực xứ Nghệ. VnExpress xếp 'miến lươn trộn' vào nhóm đặc sản Nghệ An đáng thử: sợi miến dong chần qua nước dùng, trộn cùng lươn chiên giòn hoặc lươn xào mềm, thêm hành phi, lạc rang và rau thơm. Ở các quán lươn tại Vinh, lươn đồng thường được lấy từ Yên Thành và xào cùng hành tăm với nghệ — dấu ấn cay thơm rất riêng của miền Trung.",
+    "sources": [
+      {
+        "ref": "Dân Việt — Quán miến lươn, bánh mướt ngon nức tiếng ở Nghệ An",
+        "url": "https://danviet.vn/quan-mien-luon-banh-muot-ngon-nuc-tieng-o-nghe-an-7777961022-d700513.html"
+      },
+      {
+        "ref": "VnExpress — 5 đặc sản Nghệ An cho runner (mục Miến lươn trộn)",
+        "url": "https://vnexpress.net/5-dac-san-nghe-an-cho-runner-5118254.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

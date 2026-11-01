@@ -141,6 +141,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-007 đợt 7: nâng Mức 2 — 3 nguồn đã mở. GIỮ nếp khô 140g: hai nguồn có yield rõ cho 120–125g, file cao hơn 12–17% — chưa đạt ngưỡng đồng thuận sửa >25–30%. BỔ SUNG hành lá 5g (confidence low cho lượng — không nguồn nào định lượng; bất thường cấu trúc: bước của file ghi 'rưới mỡ hành' nhưng nguyên liệu thiếu hành lá, 2 nguồn làm mỡ hành bằng hành lá). GIỮ gà có da 80g (2/3 nguồn dùng đùi có da), mỡ lợn nước 8g, nước mắm 5g (không nguồn mở nào dùng nước mắm trộn gà xé — lượng nhỏ, ghi nhận khác biệt theo biến thể). BẤT THƯỜNG THANG XÔI (ghi nhận, chờ quy ước cấp kho — cùng ca xoi-xeo Phần A): nếp khô 140g cho thành phẩm ~295–310g, riêng xôi đã vượt serving 250g; file nhất quán nội bộ theo thang nguyên liệu khô/khẩu phần, không tự sửa.]",
+  "cultural_note": {
+    "text": "Trong thế giới xôi mặn Sài Gòn, xôi gà là món nhiều biến tấu và nổi tiếng hơn cả: đùi hay ức gà chiên hoặc hấp, để nguyên miếng hoặc xé phay, ăn cùng hành phi và mỡ hành. Cùng nếp sống xôi sáng, xôi chiều của thành phố, gói xôi gà là lựa chọn điểm tâm và ăn xế chắc bụng, tiện lợi cho nhịp sống đô thị gấp gáp.",
+    "sources": [
+      {
+        "ref": "Tin tức Online (VietnamNet JSC) — Nét độc đáo trong các món xôi Sài Gòn",
+        "url": "https://tintuconline.com.vn/net-doc-dao-trong-cac-mon-xoi-sai-gon-206076.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

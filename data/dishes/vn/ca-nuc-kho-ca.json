@@ -141,6 +141,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nâng Mức 2 đợt 2 (2026-10-31): Đối chiếu 3 nguồn công thức đã mở kiểm chứng (xem recipe_sources). Định lượng: giữ nguyên toàn bộ — cá nục 150g so với BepXua 125g/khẩu phần (+20%, trong ngưỡng); cà chua 80g so với 75g/khẩu phần của BepXua và tỉ lệ cá:cà chua theo mẻ của hai nguồn còn lại; hành tím và đường nằm trong khoảng nguồn. Nước mắm: nguồn bất đồng nhau (BepXua ~19g/khẩu phần so với Toyenxin ~9–11g quy đổi theo mẻ) nên giữ 10g. Kỹ thuật đã đồng bộ theo đồng thuận nguồn: cả 3 nguồn đều chiên sơ cá trước khi kho — bước nấu viết lại 6 bước có bước chiên sơ (file cũ kho trực tiếp). Bất thường ghi nhận: cả 3 nguồn đều có hành lá và 1 nguồn có gừng — file không có dòng hanh-la/gung, chờ pha phân xử riêng. Phân xử bất thường LV2-002 (Phần A, 2026-10-31): Thêm hanh-la 3 g — cả 3 nguồn đều có hành lá (theo note chi tiết đợt 2). Gừng chỉ 1 nguồn — không thêm. (Điểm \"me/chanh tạo chua\" ở tổng hợp §5 không xuất hiện trong note chi tiết của 3 nguồn đã đối chiếu — không xử lý theo tóm tắt.)",
+  "cultural_note": {
+    "text": "Cá nục là loài cá biển quen thuộc của ngư dân Việt Nam, phân bố từ Vịnh Bắc Bộ qua vùng biển miền Trung đến Đông, Tây Nam Bộ; vào khoảng tháng 7, khi miền Trung bắt đầu có gió nam, cá nục vào mùa rộ. Cá nục kho cà là một trong những món ăn từ loài cá này được tư liệu ghi nhận; vào vụ rộ, cá nục còn được chế biến thành cá khô và làm nước mắm.",
+    "sources": [
+      {
+        "ref": "Wikipedia tiếng Việt — Chi Cá nục",
+        "url": "https://vi.wikipedia.org/wiki/Chi_C%C3%A1_n%E1%BB%A5c"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

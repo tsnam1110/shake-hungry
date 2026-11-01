@@ -126,6 +126,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] Nâng Mức 2: đã mở đọc 3 họ độc lập (Western 4 người, Eva/Loan Võ, CKK 4-5 người). Giữ nếp 120g, mít 120g, cốt dừa 40g, đường 10g vì đều nằm trong dải các họ (tỉ lệ cốt dừa/nếp 0,29-0,67, file 0,33). Sửa vung-rang 3→5g theo 2 họ; thêm cui-dua-nao 10g optional (2/3 họ rắc dừa). Hai lần mở nguồn bổ sung (Cookpad, Bếp Xưa) gặp 429 của dịch vụ duyệt web sau khi đã đủ 3 họ, không ảnh hưởng kết luận.",
+  "cultural_note": {
+    "text": "Xôi mít có nguồn gốc từ ẩm thực Thái Lan, du nhập vào TP.HCM rồi được chế biến lại cho hợp khẩu vị người Việt: xôi nếp đồ cùng nước cốt dừa được nhồi vào từng múi mít chín vàng, rắc thêm dừa nạo. Từ một món ăn lạ, xôi mít dần trở thành món ăn vặt được giới trẻ thành phố đặc biệt yêu thích và là gương mặt mới của ẩm thực đường phố nơi đây.",
+    "sources": [
+      {
+        "ref": "Kenh14 — Món xôi ngọt nổi tiếng của ẩm thực TP.HCM",
+        "url": "https://m.kenh14.vn/mon-xoi-ngot-noi-tieng-cua-am-thuc-tphcm-20240305113734963.chn"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

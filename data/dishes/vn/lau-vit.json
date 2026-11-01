@@ -162,6 +162,19 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-010 đợt 10: Đạt Mức 2 với định danh biến thể NẤU CHAO — đối chiếu 3 họ đã mở (ĐMX 4 người; Bách Hoá XANH 3–4 người; Nấu Ăn Không Khó, tác giả Túc Túc). File tên 'lẩu vịt' trung tính nhưng mọi dấu hiệu cấu trúc đều là biến thể nấu chao (khoai môn chiên sơ ở 3/3 họ chao, nấm rơm + rau muống nhúng, bún) — chỉ thiếu chao và sai nền cốt dừa. Bổ sung chao 35 g (định danh, 3/3 họ; lượng theo đồng thuận BHX + Nấu Ăn Không Khó 31–42 g/khẩu phần, ĐMX 87,5 là ngoại lệ) và nước dừa tươi 100 g; bỏ nước cốt dừa 30 g (0/3 họ dùng). Khoai môn/bún giữ nguyên do khác thang khẩu phần nồi chung. Sả 10 g của file: 0/3 họ chính dùng (thuộc biến thể hầm sả) — giữ và ghi nhận. Steps viết lại 7 bước.]",
+  "cultural_note": {
+    "text": "Vịt nấu chao là đặc sản trứ danh của Cần Thơ, từng được xếp vào Top 100 món ăn, đặc sản tiêu biểu của Việt Nam. Món ăn theo lối lẩu: thịt vịt nấu cùng khoai môn trong nước dùng sền sệt vị chao, dọn kèm bún tươi, rau muống và chén chao đỏ tán nhuyễn pha đường, chanh để chấm. Đây là món của những bữa ăn gia đình, họp mặt bạn bè và đám tiệc ở miền Tây Nam Bộ.",
+    "sources": [
+      {
+        "ref": "Eva (Báo Phụ Nữ TP.HCM điện tử) — Nghệ nhân ẩm thực Thành Giao (Linh San)",
+        "url": "https://eva.vn/bep-eva/nghe-nhan-am-thuc-vua-dot-ngot-qua-doi-khien-hang-loat-sao-viet-dinh-dam-thuong-xot-la-ai-c162a403186.html"
+      },
+      {
+        "ref": "Wikipedia tiếng Việt — Vịt nấu chao",
+        "url": "https://vi.wikipedia.org/wiki/V%E1%BB%8Bt_n%E1%BA%A5u_chao"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

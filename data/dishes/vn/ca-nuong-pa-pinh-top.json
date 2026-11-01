@@ -165,6 +165,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-009 đợt 9: Nâng Mức 2 — mở kiểm chứng 3 họ nguồn (Điện Máy XANH, Đặc Sản Tây Bắc, Eva.vn). BỎ rau-mui 5 g (0/3 họ — phổ rau thơm của món là thì là + húng); thêm toi 5 g (3/3 họ), thi-la 5 g (2 họ), hung-que 5 g (3/3 họ). Vùng vn→vn-north theo gốc Thái Tây Bắc (EDITORIAL-GUIDE §4); không gán nhãn dac-san vì cây TAXONOMY chưa có tỉnh Tây Bắc. Serving 250→205 g cho khớp tổng dòng sau sửa. Giữ ca-tram 150 g: nguồn cân cá nguyên con 500–750 g/khẩu phần trong khi file theo cơ sở phần ăn được — tranh chấp thô–tinh ghi vào hồ sơ quy ước cấp kho đang chờ (cùng nhóm mong-gio). mac-khen và hat-doi giữ dạng dòng null lượng vết. Chuẩn hoá tên 'Cá nướng pa pỉnh tộp'.]",
+  "cultural_note": {
+    "text": "Pa pỉnh tộp — tức cá nướng gập nguyên con trong tiếng Thái — là món cá nướng cầu kỳ của đồng bào Thái ở Tây Bắc, cộng đồng vốn sống gần sông, suối, ao hồ và quen nghề đánh bắt cá. Cá được mổ dọc sống lưng, nhồi đầy rau thơm cùng mắc khén — thứ hạt tiêu rừng không thể thiếu — rồi gập đôi, kẹp bằng thanh tre tươi và nướng trên than củi đỏ rực. Món cá này dùng để đãi khách quý, có mặt trong đám cưới hỏi, và mỗi dịp Tết đến xuân về, gia đình người Thái dù giàu hay nghèo cũng có cá pỉnh tộp đặt lên bàn thờ tổ tiên.",
+    "sources": [
+      {
+        "ref": "VOV5 — Pa pỉnh tộp, món ăn đặc biệt của người Thái ở Tây Bắc",
+        "url": "https://vovworld.vn/vi-VN/huong-vi-que-nha/pa-pinh-top-mon-an-dac-biet-cua-nguoi-thai-o-tay-bac-827521.vov"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -125,6 +125,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): Đã đối chiếu 3 nguồn công thức thật (Điện máy XANH, sách dạy nấu ăn trên Thư viện số, Thực Thần). Định lượng: tôm 60g/khẩu phần khớp khoảng nguồn (khoảng 50-62g/người), giữ nguyên. Bầu giữ nguyên 180g: Điện máy XANH ở mức 250g/người trong khi hai nguồn còn lại nấu cả nồi 500g bầu cho một mẻ gia đình (quy ra thấp hơn hẳn) — các nguồn bất đồng quá 30% nên theo quy tắc không đổi số của file, ghi nhận độ lệch tại đây. Phân loại (loai:canh, nau, vn, trưa/tối) rà soát, không sai rõ ràng, giữ nguyên.",
+  "cultural_note": {
+    "text": "Canh bầu nấu tôm gắn với câu ca dao quen thuộc “Râu tôm nấu với ruột bầu / Chồng chan vợ húp gật đầu khen ngon” — hình ảnh bữa cơm đạm bạc mà đầm ấm tình nghĩa vợ chồng trong đời sống dân gian. Câu ca dao lấy chính những phần thường bị bỏ đi khi chế biến để nói rằng cái ngon của bữa ăn nằm ở tình thân chia sẻ cùng nhau. Nhờ đó, cặp nguyên liệu bầu — tôm trở thành một trong những kết hợp được nhắc nhớ nhiều nhất của bếp Việt.",
+    "sources": [
+      {
+        "ref": "Chiếc Thìa Vàng — Đầu bếp 5 sao lưu luyến hương vị quê nhà (Nguyên Trang)",
+        "url": "http://chiecthiavang.com/doi-doat-giai-2016/dau-bep-5-sao-luu-luyen-huong-vi-que-nha-c1065a20161008022816523.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

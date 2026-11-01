@@ -150,6 +150,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. [LV2-005 đợt 5: nâng Mức 2 — đối chiếu 3 nguồn công thức đã mở đọc; giữ nguyên toàn bộ định lượng vì tỉ lệ phở:bò phân tán mạnh giữa các nguồn (chỉ 1 nguồn ủng hộ tăng thịt bò rõ, 1 nguồn khớp file) và lượng dầu không so trực tiếp được do khác kỹ thuật xào mềm/áp chảo. Bất thường ghi nhận: rau đi kèm không thống nhất giữa các nguồn (file dùng cải ngọt, khớp đúng 1 nguồn) và 1 nguồn ghi trùng hai lượng cải khác nhau trong cùng bài — chờ pha phân xử.]",
+  "cultural_note": {
+    "text": "Phở xào đã hiện diện trong đời sống Hà Nội từ lâu: năm 1931, Việt Nam Tự Điển đã ghi nhận hai mục \"phở xào\" và \"phở tái\". Đây là kiểu ăn có họ hàng với các món mì xào của người Hoa và một số nước Đông Nam Á, nhưng qua tay người Việt, phở xào được nêm bằng nước mắm thay vì xì dầu, tạo nên dấu ấn riêng không lẫn với bản gốc.",
+    "sources": [
+      {
+        "ref": "Thanh Niên — Những biến tấu thú vị của phở Bắc",
+        "url": "https://thanhnien.vn/nhung-bien-tau-thu-vi-cua-pho-bac-185597793.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

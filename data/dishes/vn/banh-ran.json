@@ -131,6 +131,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt) [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 8 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).] [LV2-009 đợt 9: GIỮ Mức 1 — tra cứu bị chặn 429, chưa mở được nguồn. Đợt sau cần kiểm tra hai điểm: file không có dòng khoai và không có bot-gao trong khi nhiều công thức có. Không có dòng dầu cho chiên ngập trong file hiện tại là đúng Phương án A.] [LV2-010 đợt 10: NÂNG MỨC 2 — đã mở trực tiếp 3 họ độc lập (Savoury Days/Linh Trang, 20 cái mini; Điện Máy XANH/Biên tập Ngọc Xuân, mẻ 30 cái; Dân Việt/Nguyên Thảo). Đã kiểm tra hai điểm đợt 9 dặn: file thiếu CẢ khoai và bột gạo trong khi 3/3 họ đều có — thêm bot-gao 7 g (ĐMX và Savoury Days cùng cho tỉ lệ 15% bột nếp) và khoai-tay 12 g (3/3 họ trộn khoai nghiền vào vỏ). Không sửa dòng cũ: đậu xanh các họ quy đổi 22,5–31,5 g bất đồng >30% (file 20 g lệch họ thấp nhất ~11%), đường và dừa file khớp Dân Việt. Không có dòng dầu chiên là đúng Phương án A. Bất thường lớn chờ phân xử: serving 1 cái/70 g mâu thuẫn tổng dòng khô 88 g (sau thêm: ~107 g) — tỉ lệ khớp nguồn nhưng quy mô tuyệt đối tương ứng cái ~130–150 g. Đã loại phunutoday.vn (sao chép nguyên văn ĐMX).]",
+  "cultural_note": {
+    "text": "Bánh rán là thức quà vặt bình dân gắn với tuổi thơ của nhiều thế hệ người Việt, mỗi vùng lại có cách làm và hương vị riêng. Ở Hà Nội, phố Hàng Chiếu trong khu phố cổ tập trung nhiều hàng bánh rán lâu năm đến nỗi được gọi là 'Phố bánh rán', với các loại bánh tẩm đường, tẩm mật và bánh vừng nhân đậu xanh. Bánh rán Việt Nam từng được CNN đưa vào danh sách 30 món chiên rán ngon nhất thế giới.",
+    "sources": [
+      {
+        "ref": "VOV Giao thông — Hà Nội sống và yêu: Bánh rán Việt Nam",
+        "url": "https://vovgiaothong.vn/news/ha-noi-song-va-yeu-banh-ran-viet-nam-d41862.amp"
+      }
+    ]
+  },
   "status": "draft",
   "source": "llm_suggested",
   "confidence": "unknown",

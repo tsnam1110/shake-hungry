@@ -154,6 +154,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [LV2-007 đợt 7: nâng Mức 2 — 4 nguồn đã mở (cụm sao chép tính 1). GIỮ toàn bộ định lượng chính: bột năng 80g thấp hơn cụm A (105g) là −24%, chưa tới ngưỡng sửa 25–30% và 2 nguồn còn lại không có khẩu phần để tạo đồng thuận; tôm 40g và ba chỉ 30g đều −20% so với nguồn — tỉ lệ tôm:thịt giữa các nguồn không thống nhất (1:1 và 1:2) nên không ép đổi cơ cấu. GIỮ hành lá 3g kèm ghi nhận: cụm A cho tới 25g (mỡ hành rưới đẫm) nhưng chỉ 1 nguồn định lượng — cân nhắc nâng ~8g khi duyệt tay. Mỡ lợn nước 5g + dầu ăn 2g giữ cả hai (tổng chất béo mỡ hành 7g hợp lý; nguồn dùng dầu ăn — giữ mỡ là lựa chọn hương vị). Bột sắn dây xuất hiện ở 2 nguồn nhưng kho chưa có slug → ghi hàng đợi nguyên liệu.] [LV2-008 Phần A: PHÂN XỬ hành lá — GIỮ 3g, KHÉP bất thường đợt 7: mức 25g của cụm A chỉ có 1 nguồn định lượng (phong cách rưới mỡ hành đẫm là biến thể trình bày, không phải đồng thuận công thức) — dưới ngưỡng ≥2 nguồn để sửa; 3g giữ vai trò mỡ hành phủ mặt của bản Huế chuẩn. Bột sắn dây: giữ ghi nhận hàng đợi nguyên liệu (2 nguồn dùng dạng biến thể bột trộn; chưa tạo slug vì chưa có số FCT đạt chuẩn cho bột sắn dây/kudzu starch).]",
+  "cultural_note": {
+    "text": "Bánh bột lọc xuất xứ từ Huế, kinh đô triều Nguyễn, và gắn liền với truyền thống ẩm thực cung đình tinh tế của đất cố đô. Vỏ bánh bằng bột năng trong suốt bao lấy nhân tôm và thịt ba rọi; bánh có hai dạng quen thuộc là gói lá chuối đem hấp và “trần” đem luộc, ăn cùng nước mắm pha và hành phi. Ngày nay bánh bột lọc là biểu tượng ẩm thực miền Trung, còn xuất hiện trong các dịp lễ và cúng tổ tiên.",
+    "sources": [
+      {
+        "ref": "Wikipedia tiếng Việt — Bánh bột lọc",
+        "url": "https://vi.wikipedia.org/wiki/B%C3%A1nh_b%E1%BB%99t_l%E1%BB%8Dc"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

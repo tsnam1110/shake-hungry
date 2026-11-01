@@ -175,6 +175,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-009 đợt 9: Nâng Mức 2 — mở kiểm chứng 4 họ nguồn (Cookpad Nguyễn Lê Hồng Hạnh, Cooking With Lane — vòng 1; Cookpad Shan Wu, RunAwayRice — vòng 2). Phân xử dạng thịt: 2/3 họ định lượng dùng BA RỌI (Lane 113 g, Shan Wu 112 g/khẩu phần) — ĐỔI thit-lon-nac-vai 50 g thành thit-lon-ba-chi 90 g (quy theo thang tô của file); bản nạc của Hạnh là thiểu số 1/3. Sửa bi-lon 50→60 g (Hạnh 60, Shan Wu 75). BỎ nuoc-cot-dua (0/4 họ dùng cốt dừa — cả 3 họ nấu thịt đều dùng NƯỚC DỪA TƯƠI luộc/khìa) và thêm nuoc-dua-tuoi 40 g. lac-rang chuyển từ tuỳ chọn thành dòng chính (4/4 họ đều rắc). Giữ bun-tuoi 180 g theo quy ước sợi, thinh-gao 8 g (dải nguồn 4–10 g). Serving 400→450 g. Không thêm ca-rot chua (2/4 họ — dưới ngưỡng) và mo-hanh (1/4 họ). Chuẩn hoá tên 'Bún bì'.]",
+  "cultural_note": {
+    "text": "Bún bì là món ăn nổi tiếng của người miền Tây Nam Bộ, và là món điểm tâm được nhiều người Sài Gòn ưa thích — tiêu biểu là khu chợ Bàn Cờ ở quận 3. Phần bì gồm da heo xắt sợi nhuyễn trộn cùng thịt heo xắt sợi và thính gạo rang xay, điểm thêm tỏi phi thơm. Tô bún được chan nước mắm pha chua ngọt, trộn đều cùng rau sống, mỡ hành và lạc rang trước khi ăn.",
+    "sources": [
+      {
+        "ref": "Sức khỏe & Đời sống (theo VnExpress) — 3 loại bún lạ miệng người Sài Gòn ưa thích",
+        "url": "https://giadinh.suckhoedoisong.vn/3-loai-bun-la-mieng-nguoi-sai-gon-ua-thich-1722012110104088214.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

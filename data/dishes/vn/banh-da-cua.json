@@ -181,6 +181,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu). Nâng Mức 2 đợt 2 (2026-10-31): Đã đối chiếu 3 nguồn công thức thật đã mở kiểm chứng (Điện máy XANH, VnExpress, Cookpad). Sửa định lượng 1 dòng: banh-da-do 50 g → 90 g — Điện máy XANH ghi rõ 400 g bánh đa KHÔ cho 4 người (100 g/người), Cookpad dùng 500 g cho mẻ gia đình (quy đổi khoảng 83-100 g/người); số cũ thấp hơn cả hai nguồn hơn 30%. Các dòng còn lại giữ nguyên vì nguồn bất đồng lớn: cua đồng 80 g (Điện máy XANH 100 g/người; VnExpress 133-200 g/người; Cookpad khoảng 83-125 g/người — khoảng quá rộng), thịt xay 30 g (Điện máy XANH 37,5 g/người gần file; VnExpress và Cookpad 60-100 g/người), chả cá 30 g (khoảng nguồn 25-75 g/người), cà chua 40 g (VnExpress chỉ dùng 1 quả cho cả mẻ để chưng gạch, Điện máy XANH dùng tới 6 quả cho 4 người). Bất thường: cả 3 nguồn đều ninh sườn lấy nước dùng trộn vào nước cua và có tóp mỡ/mỡ phần, 2/3 nguồn có thêm tôm và me chua — file không có các dòng này (file dùng nước cua thuần); ghi nhận chờ phân xử, không thêm dòng. Phân loại (vn-hai-phong, nau) đúng, giữ nguyên. Phân xử bất thường LV2-002 (Phần A, 2026-10-31): Thêm suon-lon 30 g (cả 3 nguồn đều ninh sườn lấy nước dùng trộn nước cua; lượng là phần thịt sườn ăn kèm quy về khẩu phần) + mo-lon-nuoc 5 g (3/3 nguồn có tóp mỡ/mỡ phần) + tom-the 25 g và me-chin 5 g tạo chua (2/3 nguồn).",
+  "cultural_note": {
+    "text": "Bánh đa cua có nguồn gốc từ Hải Phòng, làm từ những nguyên liệu đồng quê như cua đồng, lá lốt và rau muống. Linh hồn của món ăn là sợi bánh đa đỏ nâu sậm do làng Dư Hàng Kênh tráng theo bí quyết riêng, cung cấp cho khắp thành phố và nhiều nơi khác. Một bát bánh đa cua ngon được ví như hội tụ đủ năm sắc màu, và món ăn còn đi vào ca khúc của nhạc sĩ Trần Tiến với hình ảnh “người Hải Phòng thật thà như bánh đa cua”.",
+    "sources": [
+      {
+        "ref": "Hà Nội Mới — Bánh đa cua",
+        "url": "https://hanoimoi.vn/print/145941.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

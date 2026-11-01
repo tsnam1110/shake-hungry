@@ -128,6 +128,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-008 đợt 8: Nâng Mức 2 với 3 nguồn đã mở đọc (Eva, Phụ Nữ Today, PasGo). Sửa theo quy đổi về suất 300g nghêu: sả 15→30g (nguồn 30–45g), ớt 3→5g, rau răm 5→10g (vẫn tuỳ chọn). Thêm: lá chanh 2g tuỳ chọn (2/3 nguồn). Giữ: nghêu 300g (giữ nguyên cơ sở cân hiện tại — xem anomalies), gừng 5g (chỉ Eva định lượng rõ ~12g/300g, 2 nguồn còn lại không dùng gừng trong nồi nên không đủ đồng thuận tăng). Phương pháp hấp và vùng 'vn' giữ nguyên.]",
+  "cultural_note": {
+    "text": "Ở Cần Giờ — vùng biển cách trung tâm TP.HCM chừng 50 km — nghề cào nghêu đã ăn sâu vào đời sống mưu sinh của người dân làng biển. Người Cần Giờ thường thủ sẵn trong nhà vài cân nghêu để đãi khách: nghêu hấp cùng sả trong nước dừa, canh chừng vừa hé miệng là nhắc xuống để thịt không bị dai. Đĩa nghêu hấp bốc khói vì thế trở thành món đãi khách chân tình, nhớ mãi của làng biển.",
+    "sources": [
+      {
+        "ref": "Dân Việt — Nghêu hấp sả, món đặc sản vùng biển Cần Giờ",
+        "url": "https://danviet.vn/ngheu-hap-sa-mon-dac-san-vung-bien-can-gio-7777653612-d415457.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -90,6 +90,15 @@
     "queried_at": "2026-08-31"
   },
   "import_note": "Nhập tự động từ Wikidata Q10742207 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/B%C3%A1nh%20gi%E1%BA%A7y%20gi%C3%B2.JPG Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] Đạt Mức 2: 3 họ độc lập đã mở đọc (Cookpad Lavender, Dạy Làm Bánh Á Âu, MM Bon Appetit), định lượng quy từ lượng bột khô tương đương về serving 2 chiếc 120g. Sửa: gao-nep 80->60 (60g gạo cho ~120g xôi giã, khớp serving); thêm dau-an 3g chống dính (3/3 họ đều dùng). Giữ phương pháp truyền thống đồ xôi - giã của file. Dòng sửa/thêm giữ source=llm_suggested, confidence=low.",
+  "cultural_note": {
+    "text": "Bánh giầy cùng bánh chưng làm thành một cặp trong truyền thuyết Lang Liêu đời Hùng Vương thứ sáu: bánh giầy hình tròn tượng trưng cho trời, còn bánh chưng hình vuông tượng trưng cho đất. Bánh được làm từ gạo nếp đồ chín rồi giã nhuyễn thành khối dẻo mịn, trắng ngần. Cùng với bánh chưng, bánh giầy hiện diện trong mâm cỗ Tết Nguyên đán và nhiều lễ hội truyền thống ở miền Bắc.",
+    "sources": [
+      {
+        "ref": "Thể thao & Văn hoá — Vì sao bánh chưng xuất hiện trong ngày Tết của người Việt Nam?",
+        "url": "https://thethaovanhoa.vn/vi-sao-banh-chung-xuat-hien-trong-ngay-tet-cua-nguoi-viet-nam-20200122215524427.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

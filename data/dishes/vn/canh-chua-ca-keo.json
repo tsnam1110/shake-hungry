@@ -166,6 +166,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Món thay thế cho canh-chua-ca-bong vì kho chưa có nguyên liệu cá bống và không thuộc danh sách nguyên liệu mới được phép của lô này. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 3 trang thuộc 3 lineage (một lineage có hai trang đăng cùng văn bản). Phân xử định lượng: GIỮ NGUYÊN — cá kèo 100 g nằm giữa dải nguồn 75–125 g/khẩu phần, cà chua 60 g và giá 25 g khớp nguồn; lá giang 15 g thấp hơn nguồn duy nhất định lượng được (25 g/khẩu phần) nhưng chỉ 1 nguồn có số, chưa đạt ngưỡng phân xử — ghi nhận để pha phân xử cân nhắc 20–25 g. Bất thường ghi nhận: dứa/thơm có ở 2 lineage (1 trái nhỏ/mẻ hoặc 1 lát), file không có dòng dua-thom; dòng dau-bap của file chỉ được một lineage liệt kê dạng rau ăn kèm tuỳ chọn, hỗ trợ yếu nhưng giữ.",
+  "cultural_note": {
+    "text": "Canh chua cá kèo lá giang thuộc họ canh chua của đồng bằng sông Cửu Long, trong đó chất chua không đến từ me mà từ lá giang — một trong những loại lá chua quen thuộc của bếp Việt. Biến thể cá kèo nấu lá giang này được ghi nhận trong danh mục các món canh chua cá thông dụng, bên cạnh những biến thể nấu bằng các loài cá sông khác. Như các món canh chua khác, nó thường được dọn nóng cùng cơm trắng trong bữa cơm gia đình.",
+    "sources": [
+      {
+        "ref": "Wikipedia tiếng Việt — Canh chua",
+        "url": "https://vi.wikipedia.org/wiki/Canh_chua"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

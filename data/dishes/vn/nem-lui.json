@@ -146,6 +146,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món THAY cho tre-tron trong kế hoạch §3.4: rieng — gia vị chính của tré — chưa có số dinh dưỡng (hồ sơ null), tré phụ thuộc vào riềng theo khối lượng đáng kể nên HOÃN theo kỷ luật đợt 1; thay bằng nem lụi Huế cùng miền, nguyên liệu sẵn có. [LV2-008 đợt 8: Nâng Mức 2 với 3 họ nguồn đã mở đọc (Bluestone; Sức Khỏe & Đời Sống/aFamily; tài liệu Đại học Duy Tân). Giữ dạng nhân thuần thịt xay theo Bluestone (xem anomalies về giò sống). Sửa: thịt xay 130→180g và mỡ 15→20g vì file chỉ đạt 29g nhân/xiên so với đồng thuận ~40g/xiên (Bluestone 37–49g/que). Thêm: tỏi 3g (2 họ nguồn có trong nhân). Giữ: sả 10g, hành tím 5g, nước mắm 5g, đường 3g, tiêu 0,5g — đều nằm trong khoảng quy đổi của nguồn; bánh tráng 20g tuỳ chọn giữ vì 2/3 nguồn dọn kèm bánh tráng cuốn. Vùng vn-central + đặc sản Huế giữ nguyên (3/3 nguồn xác nhận gốc Huế).]",
+  "cultural_note": {
+    "text": "Nem lụi là đặc sản của cố đô Huế: thịt heo xay trộn bì và mỡ, lụi quanh que tre rồi nướng trên than hồng cho thơm nức. Điểm làm nên bản sắc của món ăn là chén 'nước lèo' sánh đặc từ đậu phộng xay và gan heo, khác hẳn nước mắm chua ngọt ở nhiều vùng khác. Nem lụi thường được cuốn bánh tráng cùng rau sống, là món ăn chơi quen thuộc của người Huế vào buổi xế chiều, nhất là quanh khu chợ Đông Ba.",
+    "sources": [
+      {
+        "ref": "VOV World (VOV5) – Thưởng thức món nem lụi chuẩn Huế",
+        "url": "https://vovworld.vn/vi-VN/huong-vi-que-nha/thuong-thuc-mon-nem-lui-chuan-hue-1006894.vov"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

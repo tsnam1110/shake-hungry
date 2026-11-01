@@ -177,6 +177,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-006 đợt 6: nâng Mức 2 — gạo tẻ 60 → 40g: hai nguồn cùng chiều 20–25g nhưng một nguồn không rõ cơ sở cỡ nồi, lấy 40g là mức dung hoà có ghi hồ sơ. Dồi và lưỡi lợn xuất hiện ở nguồn nhưng kho chưa có slug nguyên liệu — ghi nhận chờ biên soạn, không bổ sung.]",
+  "cultural_note": {
+    "text": "Cháo lòng là món cháo phổ biến khắp Việt Nam, thường được ăn vào bữa sáng hoặc bữa khuya tại các hàng quán bình dân. Nồi cháo gạo nấu trong nước dùng xương heo được dọn cùng đủ loại lòng luộc thái lát và thường có thêm dồi tiết. Mỗi miền lại có một cá tính riêng: miền Bắc ăn cháo đặc kèm quẩy, miền Trung nêm nếm đậm đà, còn miền Nam chuộng cháo loãng, nhẹ và thêm nhiều rau thơm.",
+    "sources": [
+      {
+        "ref": "Wikipedia (tiếng Anh) — Cháo lòng",
+        "url": "https://en.wikipedia.org/wiki/Ch%C3%A1o_l%C3%B2ng"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

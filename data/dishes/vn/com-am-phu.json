@@ -188,6 +188,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] Nâng Mức 2: đối chiếu 3 họ nguồn độc lập đã mở đọc thật (họ công thức Thanh Niên/Bếp Xưa/Bếp Trưởng; Wikipedia — 2 công thức; giáo trình PDF tailieu.duytan.edu.vn). Sửa: trung-ga 40→20g, tom-su 40→70g (theo trọng lượng tôm nguyên con). Thêm: nem-chua 20g (thành phần đặc trưng file đang thiếu, 2/3 họ có), sa 5g (cả 3 họ ướp thịt bằng sả băm). Bỏ: hanh-phi (0/3 họ ủng hộ).",
+  "cultural_note": {
+    "text": "Tên gọi kỳ lạ của món cơm này gắn với những câu chuyện lưu truyền ở Huế: một tích kể về vị vua cải trang giữa đêm khuya được bà lão nghèo cho ăn đĩa cơm trắng với các món bày xung quanh; tích khác kể về quán cơm đêm đầu thế kỷ 19 chỉ leo lét một ngọn đèn dầu, phục vụ người lao động và khán giả hát bội tan tuồng. Đĩa cơm trắng đặt ở giữa, thịt nướng, trứng tráng, giò lụa, tôm đều thái chỉ và xếp đối xứng xung quanh. Từ món ăn của người lao động về đêm, cơm âm phủ nay thành nét lạ hút khách của ẩm thực cố đô.",
+    "sources": [
+      {
+        "ref": "VietnamNet — 'Cơm âm phủ', món ăn kỳ lạ nhưng hút hồn du khách ở Huế",
+        "url": "https://vietnamnet.vn/com-am-phu-mon-an-ky-la-nhung-hut-hon-du-khach-o-hue-415971.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

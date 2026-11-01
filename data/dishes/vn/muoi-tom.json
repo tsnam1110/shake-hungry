@@ -123,6 +123,15 @@
     "queried_at": "2026-08-31"
   },
   "import_note": "Nhập tự động từ Wikidata Q18459801 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Gợi ý nguyên liệu từ Wikidata (tiếng Anh, CHƯA ánh xạ sang data/ingredients/): carrot, Allium sativum, chili pepper, monosodium L-glutamate, dried shrimp, table salt, Cymbopogon. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/Mu%E1%BB%91i%20t%C3%B4m%20T%C3%A2y%20Ninh.png Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] NÂNG MỨC 2: 3 họ độc lập có định lượng đã mở đọc (Điện Máy XANH, Mikiri, Chef Thư Thư) đồng thuận tỉ lệ muối ~41%, tôm khô ~20%, ớt ~15%, đường ~15% — đã quy về khẩu phần 11g: sửa muối 7→4,5g, ớt 0,6→1,6g, đường 0,6→1,6g; thêm tỏi 0,8g (4/4 họ đều có, file thiếu); giữ tôm khô 2,5g và mì chính 0,2g. Mọi nguyên liệu đều có số dinh dưỡng. Dòng mới/sửa mang llm_suggested/low.",
+  "cultural_note": {
+    "text": "Muối tôm là đặc sản của Tây Ninh — một tỉnh không giáp biển và cũng không có tôm tại chỗ, nhưng lại làm nên thứ muối chấm nổi tiếng cả nước từ muối hột, tôm khô, ớt, sả và tỏi mang về từ nơi khác, phơi dưới nắng gắt đặc trưng của vùng. Theo cách kể phổ biến, muối tôm hình thành trong những năm kháng chiến, khi muối ớt, muối tôm được người hậu phương làm để gửi vào rừng tiếp tế cho bộ đội mang theo ăn dần. Năm 2023, nghề thủ công làm muối ớt Tây Ninh được Bộ Văn hoá, Thể thao và Du lịch công nhận là Di sản văn hoá phi vật thể quốc gia; muối tôm nay là gia vị quen thuộc để chấm trái cây và làm nên các món bánh tráng muối tôm, bánh tráng trộn.",
+    "sources": [
+      {
+        "ref": "Wikipedia tiếng Việt — Muối tôm",
+        "url": "https://vi.wikipedia.org/wiki/Mu%E1%BB%91i_t%C3%B4m"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

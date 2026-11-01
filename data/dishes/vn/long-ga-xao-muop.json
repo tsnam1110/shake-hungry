@@ -141,6 +141,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Dùng nguyên liệu long-ga mới biên soạn đợt này (USDA SR Legacy 171057, giblets).  [LV2-004 đợt 4: nâng Mức 2 — thêm dầu hào 5 (2/3 nguồn) và rau mùi 2 (2/3), dầu 6→8; giữ nước mắm 8 vì có nguồn lượng hoá rõ.]",
+  "cultural_note": {
+    "text": "Lòng gà xào mướp là món xào dân dã của làng quê Việt, sinh ra từ chính cảnh vườn nhà: giàn mướp xanh leo kín lấy bóng mát, đàn gà bới đất kiếm ăn ngay bên dưới. Mướp hái tươi cùng lòng gà làm sạch, xào nhanh với dầu phộng, hành tím và chút ớt, cho ra đĩa xào đậm đà hương vị làng quê. Nước xào chan vào chén cơm gạo mới là đủ một bữa cơm nhà đạm bạc mà thơm ngon.",
+    "sources": [
+      {
+        "ref": "Thanh Niên – Lòng gà xào mướp hương",
+        "url": "https://thanhnien.vn/long-ga-xao-muop-huong-1851436894.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

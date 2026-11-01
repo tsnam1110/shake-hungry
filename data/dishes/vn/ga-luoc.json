@@ -126,6 +126,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): đã đối chiếu 3 nguồn công thức thật (Điện Máy Xanh, 2 công thức Cookpad có tác giả). Định lượng: gà trong file 200 g/khẩu phần (thịt gà có da, bỏ xương) — nguồn cho 1 con 1,2–2 kg cho 4–6 người, quy về phần thịt ăn được sau bỏ xương tương đương khoảng 165–220 g/khẩu phần, khớp trong ngưỡng 30% nên giữ nguyên; gừng, muối, nước mắm chấm cũng khớp các nguồn, không đổi dòng nào. Bước nấu viết lại 7 bước theo kỹ thuật luộc–ngâm của các nguồn.",
+  "cultural_note": {
+    "text": "Trong mâm cỗ Tết hay đám giỗ của người Việt, gà luộc nguyên con luôn là lễ vật trang trọng đặt ở vị trí trung tâm. Con gà trống được luộc khéo để giữ dáng đẹp, hai cánh xòe như cánh tiên, đầu ngẩng hướng về bát hương như đang 'chầu' tổ tiên, tượng trưng cho sự trọn vẹn, viên mãn và khởi đầu hanh thông. Sau phần cúng lễ, đĩa gà luộc chặt miếng chấm muối tiêu chanh trở thành món mở màn quen thuộc của bữa cỗ đoàn viên.",
+    "sources": [
+      {
+        "ref": "Dân Việt (Trang Trại Việt) – Vì sao mâm cỗ Tết không thể thiếu gà luộc nguyên con",
+        "url": "https://trangtraiviet.danviet.vn/vi-sao-mam-co-tet-khong-the-thieu-ga-luoc-nguyen-con-d1398073.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -116,6 +116,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-008 đợt 8: nâng Mức 2 với 3 nguồn đã mở độc lập (CET/Hướng Nghiệp Á Âu, Cookpad Hoàng Oanh 3 người, Cookpad Cô chủ Lee). SỬA trứng vịt muối 30g -> 50g vì 3/3 nguồn dùng khoảng 1 quả/người, file lệch -40%. BỎ gừng 2g vì 0/3 nguồn ủng hộ. GIỮ gạo tẻ 55g (Hoàng Oanh xấp xỉ 53g/người từ 1/2 lon/3 người; hai nguồn còn lại không quy được khẩu phần rõ), gạo nếp 10g (tỉ lệ nếp giữa các nguồn phân tán mạnh), dưa cải muối 20g dạng optional (dưa món/cải muối ăn kèm có ở 2/3 nguồn), muối 0,5g (cháo nấu nhạt có chủ đích). Giữ region vn-south: món cháo trắng hột vịt muối là món Nam Bộ, nguồn Hoàng Oanh từ TP.HCM. Viết lại 6 bước nấu.] Đồng bộ serving_desc: trứng vịt muối đã sửa 30→50g (≈1 quả) nên mô tả khẩu phần đổi \"nửa quả\" → \"1 quả\" cho nhất quán nội bộ.",
+  "cultural_note": {
+    "text": "Ở Sài Gòn, cháo trắng là món ăn đêm quen thuộc, tiêu biểu là quán cháo 211 trên đường Châu Văn Liêm (quận 5) mở từ năm 1998, bán từ chiều đến 2 giờ sáng. Nồi cháo trắng thơm mùi lá dứa được dọn cùng một tủ kính với khoảng 50 món ăn kèm chia đĩa nhỏ - từ hột vịt muối, dưa mắm đến lạp xưởng, chà bông - hợp khẩu vị cả người Hoa lẫn người Việt. Quán đông khách nhất vào khoảng 22 giờ, khi người đi chơi, đi làm về muộn ghé ăn tô cháo khuya.",
+    "sources": [
+      {
+        "ref": "VnExpress — Quán cháo đêm Sài Gòn: Bán 50 món mở cửa đến 2h sáng mỗi ngày",
+        "url": "https://vnexpress.net/quan-chao-dem-hut-khach-voi-50-mon-an-kem-4267488.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

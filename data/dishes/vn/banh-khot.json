@@ -170,6 +170,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 8 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).] [LV2-006 đợt 6: GIỮ Mức 1 — bị chặn 429 ở nguồn thứ ba. File là biến thể Vũng Tàu; đợt sau cần nguồn đúng biến thể Vũng Tàu, không mở lại ngay trang đã 429.] [LV2-007 đợt 7: nâng Mức 2 — thử lại sau 429 đợt 6: gom 3 nguồn định lượng đúng biến thể Vũng Tàu + 1 nguồn hiện diện. GIỮ toàn bộ dòng chính: bột gạo 60g (1 nguồn khớp chính xác), cốt dừa 40g (3 nguồn cho 20/50/100 theo trường phái pha — 40 nằm trong dải, không đồng thuận sửa), tôm 35g, bột nghệ 0,5g (1 nguồn khớp chính xác). BỔ SUNG đu đủ xanh 15g dạng tuỳ chọn (đồ chua ăn kèm ở 2 nguồn). CẢNH BÁO BIẾN THỂ cho chủ dự án: bánh khọt Vũng Tàu có 2 trường phái — (i) truyền thống Gốc Vú Sữa: bột trắng không nghệ, không cốt dừa trong bột, rắc bột tôm chấy + mỡ hành; (ii) hiện đại phổ biến: bột vàng nghệ + cốt dừa, tôm tươi — file thuộc trường phái (ii) và giữ định danh này; cân nhắc tách biến thể con (trường phái i) ở đợt sau. KHÔNG thêm dòng dầu cho mỡ hành: file đã cố ý bỏ dòng dầu theo phân xử QA-002/Phương án A (dầu chiên chính do engine CALC-004 mô hình hoá). Ghi nhận: 100% nguồn dùng thêm một tinh bột phụ hoặc cơm xay để giòn — file dùng 100% bột gạo, không nguồn nào đồng thuận cùng một slug phụ nên không thêm.]",
+  "cultural_note": {
+    "text": "Bánh khọt được xem là biến thể phương Nam của bánh căn duyên hải Nam Trung Bộ: khi theo chân người dân di cư vào Nam, bánh căn nướng bằng khuôn đất không dầu đã chuyển thành bánh đổ khuôn gang, chiên trong dầu cho giòn, nhân tôm tươi điểm mỡ hành, tận dụng nguồn hải sản vùng biển phía Nam. Bánh khọt gắn liền với thành phố Vũng Tàu; tên gọi được giải thích theo tiếng muỗng khẩy bánh chạm vào thành khuôn kêu 'khọt khọt', hoặc theo chữ 'khộp' xưa chỉ cảnh nghèo — thuở đầu bánh chỉ có bột gạo, không nhân. Năm 2012, bánh khọt Vũng Tàu được Tổ chức Kỷ lục Châu Á xác lập là một trong 12 món ăn Việt Nam đạt giá trị ẩm thực châu Á.",
+    "sources": [
+      {
+        "ref": "VTC News — Vì sao gọi là bánh gật gù, bánh khọt?",
+        "url": "https://vtcnews.vn/vi-sao-goi-la-banh-gat-gu-banh-khot-ar1044901.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

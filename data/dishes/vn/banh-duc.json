@@ -170,6 +170,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). THIẾU NGUYÊN LIỆU: nước vôi trong (phụ — ngâm bột theo cách truyền thống) — cần bổ sung vào kho. [LV2-007 đợt 7: nâng Mức 2 — món thực chất là bánh đúc NÓNG kiểu Bắc. SỬA CƠ CẤU BỘT: gạo 70→60g, năng 8→15g — giữ tổng bột ~75–78g (trong dải nguồn 50–82,5) nhưng tỉ lệ năng/gạo của file (0,11) thấp hơn mọi nguồn đúng biến thể (≥0,25); lấy mức bảo thủ 4:1 của HNAAu. SỬA dầu ăn 5→10g (2 nguồn có khẩu phần đồng thuận ~11–15 ml; dầu ở món này trộn vào bột + xào nhân, được ăn vào). BỔ SUNG nấm hương khô 2g — 4/4 nguồn đều có trong topping, file thiếu hẳn. SỬA region vn→vn-north (cả 3 nguồn đúng biến thể đều định danh Hà Nội/Bắc) và VIẾT LẠI toàn bộ bước nấu: bước cũ của file mô tả biến thể NGUỘI ('để nguội, cắt miếng quân cờ') — sai biến thể. Nước vôi trong: 2 nguồn nhắc nhưng kho chưa có slug → chỉ ghi ở bước nấu/hồ sơ, chờ biên soạn nguyên liệu. GIỮ thịt xay 40g kèm ghi nhận xu hướng thấp (1 nguồn 62,5g — chưa đủ 2 nguồn có khẩu phần để sửa). BẤT THƯỜNG CẤP KHO chờ chủ dự án: file con banh-duc-nong (parent = banh-duc) mô tả cùng một món với định lượng mâu thuẫn — cần phân xử gộp về một bản chuẩn hoặc định danh rõ biến thể, tránh nâng cả hai.]",
+  "cultural_note": {
+    "text": "Trong cách ăn phổ biến ở Hà Nội ngày nay, bánh đúc là bát bánh bột gạo quấy nóng hổi, chan nước dùng, phủ nhân thịt băm xào mộc nhĩ và rắc rau mùi. Đi ăn bánh đúc nóng đã thành thói quen của người Hà Nội mỗi khi gió mùa về; món bánh được xem là một trong những món cổ truyền dân dã và giản dị nhất của đất kinh kỳ. Bát bánh nhỏ vừa phải, giá bình dân khiến bánh đúc nóng trở thành thức quà chiều đông quen thuộc.",
+    "sources": [
+      {
+        "ref": "Hanoionline (Đài PT-TH Hà Nội) — Bánh đúc nóng ngày đông",
+        "url": "https://hanoionline.vn/banh-duc-nong-ngay-dong-246374503.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

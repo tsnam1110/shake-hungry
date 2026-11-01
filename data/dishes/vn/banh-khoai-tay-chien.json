@@ -90,6 +90,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-004 đợt 2 (lô bánh dân gian) mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 10 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).] [LV2-012 đợt vét] Nâng Mức 2: đối chiếu 3 họ độc lập đã mở (Điện Máy XANH 500g/3 người ≈ 167g/người, Món Ngon Đơn Giản mẻ 500g, Cookpad Jimmy Nguyen về nhiệt độ chiên hai lần 140°C/170°C). Định lượng file (khoai tây 150g, muối 0,5g, tương ớt tuỳ chọn 10g) nằm trong đồng thuận nên giữ nguyên; viết lại recipe_steps 7 bước. Tiếp tục KHÔNG kê dầu của bước chiên chính theo Phương án A/QA-002 — dầu hấp thụ do engine mô hình hoá (khoai tây có oil_absorption_pct 9%).",
+  "cultural_note": {
+    "text": "Khoai tây chiên có một lịch sử nguồn gốc còn tranh cãi giữa Bỉ và Pháp. Theo cách kể phổ biến, vào cuối thế kỷ 17, người dân vùng thung lũng Meuse của Bỉ vốn quen ăn cá chiên đã cắt khoai tây thành thanh rồi chiên thay cá vào mùa đông, khi sông đóng băng không câu được cá. Đến cuối thế kỷ 18, món 'frites' được bán trên các xe đẩy khắp đường phố Paris, và cái tên tiếng Anh 'French fries' gắn với món ăn từ đó. Ngày nay khoai tây chiên là món ăn vặt và món kèm phổ biến khắp thế giới, trong đó có Việt Nam.",
+    "sources": [
+      {
+        "ref": "GenK — Lịch sử thú vị của món khoai tây chiên",
+        "url": "https://genk.vn/lich-su-thu-vi-cua-mon-khoai-tay-chien-20140306103159177.chn"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

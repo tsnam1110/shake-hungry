@@ -151,6 +151,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt DISH-004 đợt 2 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-005 đợt 5: nâng Mức 2 — đối chiếu 3 nguồn công thức bánh canh cua đồng đã mở đọc (Cookpad VN, Sóc Trăng Tourism, Hải Sản Mr.D — chỉ dùng biến thể cua đồng); định lượng giữ nguyên toàn bộ vì không đạt đồng thuận ≥2 nguồn lệch >25–30%: cua đồng 100g/khẩu phần dao động rất rộng giữa các nguồn (Mr.D ~67g/người; Sóc Trăng tỉ lệ cua:sợi 2,0 so với file 1,11). Bất thường ghi nhận: 2/3 nguồn có nền nước dùng thịt heo/xương/sườn, tôm và cà chua mà file không có; trứng cút 20g chỉ xuất hiện dạng tuỳ chọn ở 1/3 nguồn (định lượng rõ chỉ có ở biến thể cua biển) — cần biên tập xác nhận biến thể; 1/3 nguồn nêm mắm ruốc Huế vào nước cua — chờ pha phân xử.] [Phân xử LV2-006 Phần A (2026-10-31): BỔ SUNG sườn lợn 65g — 2/3 nguồn có nền nước dùng thịt heo/sườn (Hải Sản Mr.D định lượng 200g sườn cho 3 người ≈ 67g/người, lấy thận trọng 65g); CHUYỂN trứng cút thành nguyên liệu tuỳ chọn (is_optional=true) — chỉ 1/3 nguồn nhắc dạng tuỳ chọn cho biến thể cua đồng của file. GIỮ + hồ sơ: tôm và cà chua — 2/3 nguồn có mặt nhưng không nguồn nào cho căn cứ gram nhất quán theo khẩu phần của file, không bịa số; chờ nguồn có định lượng rõ ở đợt sau. Mắm ruốc Huế nêm nước cua (1/3 nguồn) là biến thể vùng, không áp.]",
+  "cultural_note": {
+    "text": "Bánh canh cua đồng là đặc sản miền Tây, tiêu biểu ở Tiền Giang, dù nhiều người lầm tưởng là món miền Trung vì sợi bánh canh bột gạo pha bột năng trông hao hao bột lọc. Nước dùng nấu từ gạch và thịt cua đồng nên có màu vàng tươi tự nhiên; một tô thường gồm chả cá, trứng cút, giò, tôm và thịt cua, ăn kèm rau đắng. Tại Sài Gòn, món ăn theo chân người miền Tây lên phố và thành món ăn sáng được ưa chuộng.",
+    "sources": [
+      {
+        "ref": "Thanh Niên — Ăn bánh canh cua đồng, người Sài Gòn “bất ngờ” vì đặc sản miền Tây",
+        "url": "https://thanhnien.vn/an-banh-canh-cua-dong-nguoi-sai-gon-bat-ngo-vi-dac-san-mien-tay-185811561.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

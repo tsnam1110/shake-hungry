@@ -122,6 +122,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-004 đợt 2 (lô bánh dân gian) mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 8 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).] [LV2-012 đợt vét] Nâng Mức 2: đối chiếu 3 họ độc lập (Điện Máy XANH biên tập Phạm Hồng Hân; Dạy Làm Bánh Á Âu — bộ số trùng Cookpad Thu Mèo nên tính 1 họ; Dân Việt). Tỉ lệ đậu xanh/bột nếp của file (20/45) khớp cả 3 họ (50-60/100 bột) nên giữ nguyên; bổ sung 3 dòng cả 3 họ đều có mà file thiếu: khoai-tay 22g, bot-gao (bột tẻ) 4g, cui-dua-nao 9g, đều llm_suggested/low. Không sửa đường: các họ phân tán mạnh về đường tổng (28-130g/100g bột) do khác nhau ở lớp áo, file nằm trong dải nên giữ 14g chờ hiệu chuẩn riêng. Viết lại recipe_steps 7 bước.",
+  "cultural_note": {
+    "text": "Bánh rán đường là một trong ba loại bánh rán truyền thống của các hàng bánh lâu năm trên phố Hàng Chiếu (Hà Nội) — con phố được mệnh danh là 'Phố bánh rán' — bên cạnh bánh rán mật và bánh rán vừng. Chiếc bánh nhân đậu xanh chiên vàng được áo một lớp đường bên ngoài, là thức quà sáng và quà vặt quen thuộc của người phố cổ suốt nhiều thập kỷ.",
+    "sources": [
+      {
+        "ref": "VOV Giao thông — Hà Nội sống và yêu: Bánh rán Việt Nam",
+        "url": "https://vovgiaothong.vn/news/ha-noi-song-va-yeu-banh-ran-viet-nam-d41862.amp"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

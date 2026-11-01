@@ -134,6 +134,19 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-012 đợt vét] Nâng Mức 2: đối chiếu 3 họ độc lập đã mở (BlueStone; Món Ngon Mỗi Ngày; Cookpad Thái Sơn). Các dòng sẵn có của file đều nằm trong dải các họ (đường 15g khớp BlueStone; vừng 3g khớp Cookpad 3,3g/100g khoai; muối khớp) nên không sửa lượng. Bổ sung 2 dòng cả 3 họ đều có trong thân bánh mà file thiếu: bot-nang 5g và nuoc-cot-dua 14g (llm_suggested/low), neo theo tỉ lệ trên 100g khoai mì. Viết lại recipe_steps 7 bước theo phương pháp hấp dàn lớp rồi cắt sợi.",
+  "cultural_note": {
+    "text": "Bánh tằm là món dân dã của miền Tây Nam Bộ; cái tên được cho là xuất phát từ hình sợi bột se bằng tay trông giống con tằm. Nghề bánh tằm se tay từng gắn với những địa danh như Vĩnh Trạch (Thoại Sơn, An Giang), nay hầu như không còn nhiều người làm. Bên cạnh bản làm từ bột gạo, người miền Tây còn làm bánh tằm bằng khoai mì mài nhuyễn, ăn với nước cốt dừa.",
+    "sources": [
+      {
+        "ref": "Báo Sức khỏe & Đời sống — 8 món từ khoai mì ngon ngất ngây",
+        "url": "https://giadinh.suckhoedoisong.vn/8-mon-tu-khoai-mi-ngon-ngat-ngay-172111202090829956.htm"
+      },
+      {
+        "ref": "Chiếc Thìa Vàng — Đa dạng bánh tằm Tây Nam bộ",
+        "url": "http://www.chiecthiavang.com/tin-tuc/da-dang-banh-tam-tay-nam-bo-c943a2018100209111352.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "llm_suggested",
   "confidence": "unknown",

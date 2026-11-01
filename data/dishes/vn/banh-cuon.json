@@ -165,6 +165,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [LV2-006 đợt 6: nâng Mức 2 — bột gạo 60 → 45g, bột năng 10 → 15g: tổng bột của file vốn đúng nhưng tỉ lệ gạo/năng là ngoại lệ so với mọi nguồn đã mở; sửa tỉ lệ theo đồng thuận.]",
+  "cultural_note": {
+    "text": "Bánh cuốn gắn với làng Thanh Trì của Thăng Long xưa, một trong những nơi khởi sinh món bánh này; tương truyền hoàng tử An Quốc, con Hùng Vương thứ mười tám, đã dạy dân làng cách làm bánh. Bánh được tráng mỏng tang trên khuôn vải, phết hành mỡ; về sau xuất hiện thêm biến thể nhân thịt băm cùng mộc nhĩ, nấm hương. Hình ảnh những gánh bánh cuốn rong của người Thanh Trì cùng tiếng rao đã in sâu vào ký ức nhiều thế hệ người Hà Nội, và món bánh từng được các nhà văn Vũ Bằng, Thạch Lam ca ngợi.",
+    "sources": [
+      {
+        "ref": "Tuổi Trẻ — Dân dã bánh cuốn Thanh Trì",
+        "url": "https://tuoitre.vn/dan-da-banh-cuon-thanh-tri-543383.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

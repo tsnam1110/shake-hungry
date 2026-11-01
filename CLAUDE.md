@@ -449,6 +449,42 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > `level_basis`. Chi tiết + bảng 87 món kèm note đầy đủ:
 > [TCM-PROMOTE-001](docs/05-tasks/tasks/TCM-PROMOTE-001.md).
 
+> ## ⚠️ Đính chính lần 28, 2026-11-01 — TCM-003: khối "Tính vị:" đổi sang bản gọn (giá trị chính + popup)
+>
+> Theo chỉ đạo trực tiếp của chủ dự án sau khi xem bản thật (khối cũ đổ toàn bộ
+> kết luận + độ phủ + nguồn dài + ghi chú ra trang, gây loạn thông tin và vỡ bố
+> cục di động): trang món/nguyên liệu/quả nay chỉ hiện **một dòng giá trị chính
+> + nút "Nguồn & chi tiết"**; toàn bộ thông tin thêm (độ phủ, độ tin cậy, mọi
+> dòng nhãn và nguồn, mâu thuẫn, giải thích phương pháp) nằm trong **popup**
+> dùng chung ở layout (cùng pattern hộp thoại UI-018; đóng bằng X / bấm ra
+> ngoài / Esc). Nhãn chính của nguyên liệu do `TcmDisplay` chọn (field `primary`
+> cộng thêm vào API): confidence cao nhất → nhãn thật trước suy diễn → thứ tự
+> file; nhãn chính là suy diễn thì có chip "suy diễn". Ngưỡng trung thực không
+> đổi: món phủ <30% vẫn không hiện khối; không đổi dữ liệu. Chi tiết:
+> [TCM-003](docs/05-tasks/tasks/TCM-003.md) mục "Cập nhật 2026-11-01 (chiều)".
+
+> ## ⚠️ Đính chính lần 29, 2026-11-01 — VN-001 đợt 2: ghi chú văn hoá cho nhóm 472 món Mức 2 thường
+>
+> **Đã viết 250/465 món** trong phạm vi viết thực tế của đợt (472 món đích;
+> 7 file đang dở của phiên song song bị bỏ qua và ghi rõ trong VN-001:
+> `banh-canh-ca-loc`, `bun-thang`, `canh-bap-cai-cuon-thit`, `com-bo-kho`,
+> `com-ga-tam-ky`, `dau-bap-xao-toi`, `rau-muong-luoc`), **215 món chờ có lý
+> do** (A 201 không có nguồn biên tập đạt chuẩn viết riêng cho món · B 9 lệch
+> định danh/chờ quyết định danh · C 5 chất liệu chủ yếu theo khung sức khoẻ bị
+> cấm). Toàn kho sau đợt: **337/654 món có `cultural_note`** (87 đợt 1 + 250
+> đợt 2). Census cổng đợt mở lại **100% URL nguồn** của ghi chú mới: **0 URL
+> chết, 0 vi phạm khung y tế bị cấm trong text ghi chú**; khắc phục sau census:
+> 29 slug cắt/sửa chi tiết không có trong nguồn, 23 slug thay nguồn biên tập +
+> viết lại toàn bộ (nguồn cũ là trang công thức/SEO/thương mại/blog), 4 slug gỡ
+> ghi chú chuyển về chờ (`ca-bong-kho-tieu-quang` → B; `canh-ca-nuc-la-giang`,
+> `thit-xao-mam-ruoc`, `com-rang-dua` → A). Phát hiện định danh mới chỉ ghi vào
+> hàng đợi rà soát trong VN-001, không tự sửa dữ liệu. **Đợt này KHÔNG đổi
+> mức** — thống kê đủ cổng Mức 3 chỉ để thống kê: **187/472 món Mức 2 thường**
+> đủ cả phủ tính vị ≥60% + `cultural_note`; toàn kho **274 món** đủ cổng
+> (187 + 87 Mức 2 (có note)). Kiểm chứng: seed DB kiểm chứng riêng, validate
+> **0 🔴** (3.344 bản ghi), Pest **157/157** gồm ExportStabilityTest. Chi
+> tiết: [VN-001](docs/05-tasks/tasks/VN-001.md).
+
 **Trạng thái thực tế, kiểm ngày 2026-10-31 (đã chạy lại toàn bộ lệnh kiểm chứng):**
 
 | Hạng mục | Thực tế | Kiểm bằng |

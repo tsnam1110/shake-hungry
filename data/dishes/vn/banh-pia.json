@@ -126,6 +126,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu). [LV2-012 đợt vét] Nâng Mức 2: đối chiếu 3 họ độc lập (Bepcuatui, Dạy Làm Bánh Á Âu, Cookpad Điệp Vũ). Phân xử: đề xuất trung-vit 10→3 g (phần trứng phết mặt/vỏ theo 2 họ chỉ 1-4 g/bánh). Giữ nguyên: bot-mi 35 g (nguồn 26-33 g/bánh), dau-xanh-hat 30 g (DayLam 25 g khô; Bepcuatui 60 g nhân ướt ≈ 25-30 g khô), duong-trang 15 g (DayLam 15,8 g), mo-lon-nuoc 10 g (tổng chất béo nguồn 7,5-10,3 g), trung-vit-muoi 15 g tuỳ chọn (DayLam đúng 1 lòng đỏ/bánh).",
+  "cultural_note": {
+    "text": "Bánh pía xuất hiện ở Sóc Trăng từ thế kỷ 17, do người Hoa di cư mang theo, rồi được biến tấu theo khẩu vị người Việt và trở thành biểu tượng ẩm thực của tỉnh. Làng nghề bánh pía tập trung ở vùng Vũng Thơm (xã Phú Tâm, huyện Châu Thành), hình thành từ những gia đình gốc Hoa làm bánh bán qua tiệm tạp hoá, quán nước và chợ. Năm 2020, nghề làm bánh pía của người Hoa ở Phú Tâm, Thuận Hoà và An Hiệp được công nhận là Di sản văn hoá phi vật thể quốc gia — một minh chứng cho sự giao thoa văn hoá Kinh – Hoa – Khmer ở Sóc Trăng.",
+    "sources": [
+      {
+        "ref": "Báo Công Thương — Thương mại hóa, nâng tầm cho bánh Pía",
+        "url": "https://congthuong.vn/thuong-mai-hoa-nang-tam-cho-banh-pia-247355.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "llm_suggested",
   "confidence": "unknown",

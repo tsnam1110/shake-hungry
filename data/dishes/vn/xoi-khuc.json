@@ -138,6 +138,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-007 đợt 7: nâng Mức 2 về nguồn — 4 nguồn đã mở. SỬA bột nếp 30→60g/khẩu phần (15→30g/viên): nguồn khớp cỡ viên nhất dùng 31g/viên, nguồn còn lại 50g/cái; file cũ chỉ bằng ~½ mức thấp nhất, không đủ bọc viên nhân ~45–50g — sửa duy nhất của món đạt điều kiện ≥2 nguồn lệch >30%. GIỮ gạo nếp 120g (nguồn khớp viên cho 62,5g/viên), đậu xanh 40g (lệch trung vị nguồn ~−20%, chưa qua ngưỡng), ba chỉ 25g (khớp tuyệt đối nguồn), lá khúc 10g. HỆ QUẢ la-khuc NULL (đã kiểm hồ sơ nguyên liệu: không có bảng proximate/100g ở nguồn nào, chỉ có nghiên cứu phenolic/dược liệu): món KHÔNG tính được dinh dưỡng kể cả sau nâng Mức 2 — chờ chủ dự án: chấp nhận món không số, hoặc giao biên soạn số cho lá khúc khi có nguồn đạt chuẩn. Bất thường thang lá: nguồn dùng lá thật xay cả lá 200–300g/mẻ 500g nếp — khối lượng lá tươi không tương đương phần ăn vào (một nguồn xay rồi lọc bỏ bã) nên không lấy làm cơ sở sửa. File giữ lá khúc thật là đúng định danh, không đổi theo nguồn thay thế lá dứa.]",
+  "cultural_note": {
+    "text": "Xôi khúc, còn gọi là bánh khúc, là món ăn truyền thống có nguồn gốc từ đồng bằng Bắc Bộ, làm từ rau khúc — loài rau mọc tự nhiên ở bờ ruộng, bãi đất trống. Món ăn gắn với mùa rau khúc vào khoảng tháng 2, tháng 3 âm lịch, khi trời còn mưa phùn cuối xuân. Ở Hà Nội, tiếng rao đêm “Xôi nóng bánh khúc đê…” của người bán đội thúng bánh trên đầu từ lâu đã trở thành một nét đặc trưng khó quên của phố phường.",
+    "sources": [
+      {
+        "ref": "Wikipedia tiếng Việt — Bánh khúc",
+        "url": "https://vi.wikipedia.org/wiki/B%C3%A1nh_kh%C3%BAc"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

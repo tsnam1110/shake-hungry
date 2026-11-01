@@ -130,6 +130,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu). [LV2-009 đợt 9: Nâng Mức 2 — mở kiểm chứng 4 họ độc lập (Bách Hoá XANH — vòng 1; Long Châu, Dạy Pha Chế Á Âu, Cookpad Nguyễn Lê Hồng Hạnh — vòng 2). Sửa duong-phen 22→45 g (BHX 41,7–50 g và Cookpad 50–68 g/khẩu phần đồng thuận cao hơn hẳn, file lệch >50% — lấy cận dưới dải đồng thuận). BỎ la-dua (0/4 họ; Cookpad còn ghi rõ không cần). Giữ nhan-kho 10 g dù hai họ định lượng cao hơn (20–40 g) vì Long Châu chỉ dùng 50 g cho cả mẻ — dải nguồn không đồng thuận; giữ cu-sen 25 g (file nằm giữa hai họ 17–30 g), tao-tau-kho 10 g và rong-bien 5 g trong vai phổ tai (khớp cận trên nguồn). Không thêm cu-nang: chỉ 1/4 họ có trong công thức chính và kho chưa có slug; ky-tu và bo-qua mỗi thứ 2/4 họ — dưới ngưỡng 2/3 (cả hai slug đều có số, là ứng viên nếu chủ dự án muốn mở rộng thành phần). Chuẩn hoá tên 'Sâm bổ lượng'.]",
+  "cultural_note": {
+    "text": "Sâm bổ lượng, còn gọi là chè sâm bổ lượng, là món chè ngọt có nguồn gốc Quảng Đông, cũng phổ biến tại Hồng Kông, Ma Cao, Hải Nam và trở nên quen thuộc ở miền Nam Việt Nam. Tên gọi của món là phiên âm tiếng Quảng Đông của cụm chữ Hán 清補涼, âm Hán-Việt đọc là 'thanh bổ lượng'. Một ly sâm bổ lượng thường gom nhiều nguyên liệu khô quen thuộc của bếp người Hoa như nhãn nhục, hạt bo bo (ý dĩ), hạt sen, phổ tai và táo tàu đỏ, nấu trong nước đường phèn và ăn lạnh với đá.",
+    "sources": [
+      {
+        "ref": "Wikipedia tiếng Việt — Sâm bổ lượng",
+        "url": "https://vi.wikipedia.org/wiki/S%C3%A2m_b%E1%BB%95_l%C6%B0%E1%BB%A3ng"
+      }
+    ]
+  },
   "status": "draft",
   "source": "llm_suggested",
   "confidence": "unknown",

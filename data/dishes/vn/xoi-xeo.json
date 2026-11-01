@@ -113,6 +113,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-006 đợt 6: nâng Mức 2 — định lượng giữ nguyên toàn bộ (tỉ lệ đậu/nếp 0,46 khớp nguồn truyền thống 0,50; các nguồn còn lại phân tán). Bất thường ghi nhận: ruốc/chà bông có ở 2/3 nguồn dạng ăn kèm nhưng không nguồn nào định lượng và nguồn truyền thống thuần khẳng định không thêm topping — file giữ bản thuần, không bổ sung; mỡ lợn của file không xuất hiện ở nguồn nào đã mở (cả 3 dùng dầu ăn/dầu phi hành) — lượng không bị phản bác nhưng loại chất béo khác số đông nguồn, chờ biên tập phân xử.] [LV2-007 Phần A: PHÂN XỬ chất béo — GIỮ mo-lon-nuoc 10g, KHÔNG đổi sang dau-an; bất thường đợt 6 được RÚT LẠI vì mẫu nguồn đợt trước lệch về biến thể hiện đại (nồi cơm điện, bài tổng hợp, tác giả chay). Trường phái truyền thống Hà Nội dùng mỡ động vật: mỡ gà là chuẩn cao nhất (Eva; Dân Việt/Lưu Huyền; Hướng Nghiệp Á Âu — đều đã mở ở pha phân xử), mỡ lợn là dạng truyền thống hợp lệ: Hướng Nghiệp Á Âu ghi 'mỡ gà (hoặc mỡ lợn)' ngay trong định nghĩa phần xôi xéo truyền thống và công thức 100g/500g nếp, Dân Việt xếp mỡ lợn là thay thế đầu tiên cho mỡ gà, trước dầu ăn; nguồn Cookpad Bảo Bình dù tự nấu bằng dầu vẫn ghi bản truyền thống đúng kiểu là 'rưới chút mỡ'. Lượng 10g/phần khớp dải tiêu thụ thực tế suy từ thao tác trộn/rưới/chan của các nguồn (≈5–15g/phần; mỡ thô 100–200g/mẻ chủ yếu là môi trường thắng/phi hành, không ăn hết). Kho chưa có slug mỡ gà — nếu biên soạn mo-ga-nuoc sau này thì cân nhắc đổi. BẤT THƯỜNG MỚI (chờ quy ước cấp kho, chưa sửa): thang định lượng khô của file (nếp 130 + đậu 60 cho serving 220g) cao khoảng gấp đôi quy đổi theo thành phẩm của mọi nguồn đã mở (nếp ≈62–83g, đậu ≈17–38g mỗi phần 220g; tỉ lệ đậu/nếp 0,46 của file vẫn trong dải nguồn) — nghi serving đang tính theo trọng lượng khô; cùng lớp câu hỏi quy ước serving với nhóm sợi, chờ chủ dự án quyết trước khi sửa.]",
+  "cultural_note": {
+    "text": "Xôi xéo là món quà sáng đặc trưng của Hà Nội với quy trình khá cầu kỳ: gạo nếp ngâm nước nghệ cho hạt xôi vàng óng, đậu xanh đồ chín, giã mịn rồi nắm chặt thành nắm tròn. Khi bán, người bán đơm xôi lên lá sen, nhanh tay thái nắm đậu thành từng lớp mỏng phủ lên mặt xôi, thêm hành phi và rưới mỡ nước xung quanh. Một số làng ven đô như Phú Thượng, Tân Mai, Tương Mai có nghề nấu xôi xéo truyền thống, sáng sáng gánh bán khắp các con phố; món đặc biệt được ưa chuộng vào những ngày trời se lạnh.",
+    "sources": [
+      {
+        "ref": "VnExpress — Ba món xôi sáng thơm ngon ở Hà Nội",
+        "url": "https://vnexpress.net/ba-mon-xoi-sang-thom-ngon-o-ha-noi-3400119.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

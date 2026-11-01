@@ -130,6 +130,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt) THIẾU NGUYÊN LIỆU: đu đủ xanh bào ngâm chua (phụ) — cần bổ sung vào kho [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 12 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).] [LV2-012 đợt vét] Nâng Mức 2: 3 họ độc lập đã mở kiểm chứng (Điện Máy XANH biến thể bột gạo+bột năng, Cookpad Rose Truong, Cookpad Khanh Linh). Sửa bot-nang 15→10g và duong-trang 3→8g theo đồng thuận ≥2 họ; thêm du-du-xanh 40g (ăn kèm có ở cả 3 họ, vốn đã ghi thiếu trong import_note). Giữ bot-gao 90g và trung-ga 50g vì nằm trong dải đồng thuận. Dòng dau-an tiếp tục không kê cho bước chiên chính theo Phương án A/QA-002.",
+  "cultural_note": {
+    "text": "Bột chiên là món ăn của người Hoa Triều Châu, theo chân các lưu dân đến Chợ Lớn từ hàng trăm năm trước. Vốn là món của dân lao động ít tiền và trẻ em, bột chiên gần như chỉ tìm thấy ở Thành phố Hồ Chí Minh: bột gạo pha bột năng hấp thành khối, cắt miếng chữ nhật, chiên chậm trên chảo gang với tàu xì và tóp mỡ, đập thêm trứng, ăn cùng đu đủ ngâm chua. Những chiếc xe bột chiên đẩy trên vỉa hè từ lâu đã trở thành một phần hồn cốt của Chợ Lớn và Sài Gòn.",
+    "sources": [
+      {
+        "ref": "Báo Lao Động — Đĩa bột chiên bên vỉa hè",
+        "url": "https://laodong.vn/van-hoa/dia-bot-chien-ben-via-he-1693457.ldo"
+      }
+    ]
+  },
   "status": "draft",
   "source": "llm_suggested",
   "confidence": "unknown",

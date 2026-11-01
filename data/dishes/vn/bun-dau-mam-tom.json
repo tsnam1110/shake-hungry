@@ -165,6 +165,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. THIẾU NGUYÊN LIỆU: chả cốm (vai trò phụ) — cần bổ sung vào kho. [LV2-008 đợt 8: Nâng Mức 2 với 3 nguồn đã mở đọc (Điện Máy XANH cho 6 người — bản mẹt đầy đủ có thêm lòng/lưỡi/ram, Báo Lao Động cho 4 người, VietNamNet). SỬA 2 dòng: thit-lon-ba-chi 60→80g (Lao Động thịt chân giò 400g/4 = 100g/người; Điện Máy XANH thịt heo 500g/6 ≈ 83g/người; VietNamNet dùng 300g ba chỉ + 300g chân giò cho một mẻ gia đình — cả 3 đều cao hơn file trên 30%, lấy mức bảo thủ 80g theo Điện Máy XANH, giữ slug ba chỉ vì VietNamNet có ba chỉ, chân giò là cắt thay thế); dua-leo 30→50g (Lao Động 1 quả/4 người ≈ 50g/người; Điện Máy XANH 3 quả/6 người ≈ 75g/người — đồng thuận ≥2 nguồn cao hơn file trên 30%). THÊM duong-trang 3g để pha mắm tôm (3/3 nguồn). GIỮ: bun-tuoi 120g (VietNamNet 500g bún lá cho mẻ gia đình ≈ 125g/người, khớp; Lao Động 250g/người là mẹt gia đình ngoại lệ cao); dau-phu-chien 80g (Lao Động 4 bìa đậu/4 người = 1 bìa/người, chiên xong ≈ 80g; Điện Máy XANH 1kg đậu/6 người là bản mẹt đầy đủ ngoại lệ cao); mam-tom 20g (Lao Động 4 thìa/4 người = 1 thìa/người ≈ 15–18g; VietNamNet 50g cho cả mẻ ≈ 12,5g/người nếu 4 người — file cao hơn nhẹ nhưng chưa vượt ngưỡng kèm bằng chứng mạnh cho gia vị); tia-to 5g, kinh-gioi 5g, rau-mui 3g, ot-tuoi 2g, chanh 5g giữ nguyên (rau thơm và chanh/quất pha mắm có ở 3/3 nguồn, lượng nhỏ). Method 'chien' giữ nguyên: thành phần định hình của mẹt là đậu (và chả) chiên, và file dùng slug dau-phu-chien đã chiên sẵn với oil_absorption_pct = 0 nên không phát sinh dòng dau-an cho chiên chính — đúng quy ước Phương án A. Region vn-north giữ nguyên.] [LV2-009 Phần A: Bổ sung dòng cha-com 75 g — slug nguyên liệu đã biên soạn đợt này dạng null + hồ sơ (không nhãn/FCT nào đạt chuẩn, xem data/ingredients/cha-com.json); lượng theo Báo Lao Động 300 g/4 người = 75 g/khẩu phần, VietNamNet cũng 300 g/mẻ. Engine ghi cha-com vào missing_ingredients và hạ confidence cho tới khi có số — đúng hành vi QT-1, thay cho việc món thiếu hẳn một thành phần có ở 3/3 nguồn.]",
+  "cultural_note": {
+    "text": "Bún đậu mắm tôm là hình ảnh quen thuộc của ẩm thực vỉa hè Hà Nội, nổi tiếng với những hàng quán trong ngõ Phát Lộc ở khu phố cổ. Một mẹt bún đậu đúng điệu quy tụ sản vật của nhiều làng nghề quanh Hà Nội: bún của làng Phú Đô, chả cốm làm từ cốm làng Vòng, còn mắm tôm phải là mắm tôm Thanh Hóa. Đây vốn là món ăn trưa — nhiều quán chỉ mở từ khoảng 11 giờ đến 14 giờ — nơi thực khách đủ mọi tầng lớp ngồi san sát trên ghế nhựa bên vỉa hè.",
+    "sources": [
+      {
+        "ref": "Dân Trí (dtinews) — Bun dau mam tom: A local classic",
+        "url": "https://dtinews.dantri.com.vn/print/20100722104602000.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

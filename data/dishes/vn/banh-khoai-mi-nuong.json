@@ -154,6 +154,19 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-012 đợt vét] Nâng Mức 2: đối chiếu 3 họ độc lập đã mở cho đúng biến thể nướng (Điện Máy XANH 2 công thức, Cookpad Nguyen Thanh Mai, Cookpad Hoàng Thị Tố Hà) + họ hấp Hướng Nghiệp Á Âu đối chiếu tỉ lệ bột. Sửa nước cốt dừa 40→50g và sữa đặc 10→15g theo đồng thuận tỉ lệ ≥2 họ; thêm bột năng 10g (có ở 4/4 họ, file thiếu). Viết lại recipe_steps 7 bước. Định lượng quy theo tỉ lệ tổng khối lượng mẻ vì các nguồn không thống nhất cách ghi khẩu phần.",
+  "cultural_note": {
+    "text": "Khoai mì (củ sắn) là cây lương thực quen thuộc trong vườn nhà miền Tây Nam Bộ, và bánh khoai mì nướng là một trong những món dân dã nhất làm từ nguyên liệu này. Khoai mì bào nhuyễn được trộn với nước cốt dừa và đường rồi nướng thành ổ vàng mặt, khi ăn cắt thành miếng nhỏ. Món bánh có họ hàng gần với cassava cake của Philippines, cho thấy sợi dây giao lưu ẩm thực trong khu vực Đông Nam Á.",
+    "sources": [
+      {
+        "ref": "Báo Sức khỏe & Đời sống — 8 món từ khoai mì ngon ngất ngây",
+        "url": "https://giadinh.suckhoedoisong.vn/8-mon-tu-khoai-mi-ngon-ngat-ngay-172111202090829956.htm"
+      },
+      {
+        "ref": "Wikipedia tiếng Anh — Bánh khoai mì",
+        "url": "https://en.wikipedia.org/wiki/B%C3%A1nh_khoai_m%C3%AC"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

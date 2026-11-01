@@ -158,6 +158,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 2 (2026-10-31): Đã đối chiếu 3 nguồn thật mở kiểm chứng (Công Thức Gia Đình; VnExpress qua congthucnauan.vn; Cookpad Hoàng Phương Thảo). Phân xử định lượng: giữ nguyên mọi dòng — lươn 120 g khớp hai nguồn ghi 500 g/mẻ (quy đổi ≈125 g/khẩu phần); thịt ba chỉ 40 g nằm giữa VnExpress 200 g/mẻ (≈50 g/khẩu phần) và Cookpad 150 g/mẻ; chuối xanh giữ 80 g vì nguồn bất đồng nhau (Gia Đình 2 quả/mẻ so với VnExpress 6 quả/mẻ, trong đó 2 quả dùng xay làm sốt); đậu phụ giữ 60 g vì quy đổi từ các nguồn dao động khoảng 50–100 g/khẩu phần. Bất thường ghi nhận: Cookpad có cà chua — file không có; Gia Đình không dùng thịt ba chỉ và có nước tương — file có ba chỉ, không có nước tương; nguồn tạo chua chủ yếu bằng mẻ và mắm tôm, file dùng giấm bỗng — cùng vai trò tạo chua và được nguồn nêu như lựa chọn thay thế.",
+  "cultural_note": {
+    "text": "Trong bữa ăn mùa đông của người miền Bắc, nhóm món om chuối đậu — ốc om, lươn om hay ếch om cùng chuối xanh và đậu phụ — là những món canh nước sóng sánh, ăn nóng bên mâm cơm ngày lạnh. Nồi lươn om chuối đậu dậy mùi thơm của lá lốt và tía tô, nước om có vị chua dịu, thường được ăn cùng bún hoặc cơm trắng. Đây là nhóm món dân dã gợi nhớ gian bếp quê mỗi khi trời chuyển rét.",
+    "sources": [
+      {
+        "ref": "VnExpress Cooking — 8 món ngon dân dã mùa đông miền Bắc",
+        "url": "https://vnexpress.net/doi-song-cooking-8-mon-ngon-dan-da-mua-dong-mien-bac-4833348.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

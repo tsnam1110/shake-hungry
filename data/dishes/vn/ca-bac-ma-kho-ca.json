@@ -140,6 +140,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Dùng nguyên liệu ca-bac-ma mới biên soạn đợt này (TKPI/DKBM, tầng 6 — món mang cờ chưa kiểm định).  [LV2-004 đợt 4: nâng Mức 2 — thêm hành lá 3 (3/3) và tỏi 3 (2/3); giữ nguyên định lượng chính vì bản kho khớp nguồn tốt nhất đợt; viết lại bước có rán sơ và xào cà thành sốt, bỏ mốc thời gian không nguồn của bản cũ.]",
+  "cultural_note": {
+    "text": "Ghi chú ở cấp loài: cá bạc má, còn gọi là cá thu Ấn Độ, là loài cá biển đi thành đàn và rộ lên vào khoảng tháng ba đến tháng sáu và tháng chín đến tháng mười một, khi những chuyến thúng bãi ngang trúng luồng cá trở thành hình ảnh quen thuộc của làng chài. Trong mâm cơm của miền quê xứ biển, cá bạc má tươi vừa lên bờ thường được đem kho giản dị, không cầu kỳ, chỉ lấy độ tươi của cá làm trọng. Bản kho cà chua trong kho đi theo lối kho nhà làm ấy, dọn ăn cùng cơm nóng.",
+    "sources": [
+      {
+        "ref": "Thanh Niên — Bạc má nhưng không bạc lòng",
+        "url": "https://thanhnien.vn/bac-ma-nhung-khong-bac-long-185801132.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

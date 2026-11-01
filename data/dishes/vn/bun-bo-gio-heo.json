@@ -198,6 +198,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt DISH-004 đợt 2 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 4 nguồn. Phân xử định lượng: GIỮ NGUYÊN TOÀN BỘ — giò 90 g so với nguồn tin cậy nhất 100 g lệch +11%, bò bày tô 50 g khớp chính xác nguồn, bún 200 g so với 167 g lệch dưới ngưỡng (số thịt/bún theo cả nồi hầm của các nguồn còn lại là ngoại lệ không dùng phân xử). Bất thường lớn ghi nhận chờ pha phân xử: mắm ruốc — nguyên liệu định danh bún bò Huế — có ở 4/4 nguồn (~4 g/khẩu phần, pha nước lắng lọc lấy nước trong) mà file THIẾU HẲN (kho đã có ingredient mam-ruoc); huyết luộc (2 nguồn, tuỳ chọn ~30 g), chả lụa/chả bì (3 nguồn, tuỳ chọn ~25 g) và gừng cho nước dùng (3 nguồn) cũng thiếu. Phân xử bất thường LV2-003 (Phần A — LV2-004, 2026-10-31): Thêm mam-ruoc 4 g (nguyên liệu định danh bún bò Huế, 4/4 nguồn đã mở ở đợt 3, ~4 g/khẩu phần pha nước lắng lấy nước trong — kho đã có ingredient mam-ruoc có số); thêm gung 3 g cho nước dùng (3 nguồn); thêm gio-lua 25 g và tiet-lon (huyết luộc) 30 g dạng TUỲ CHỌN (chả 3 nguồn, huyết 2 nguồn — phần ăn kèm phổ biến nhưng không bắt buộc của tô bún). Bước 3 đã viết lại cho khớp dòng mắm ruốc.",
+  "cultural_note": {
+    "text": "\"Bún bò giò heo\" là tên gọi đầy đủ của món bún bò xứ Huế, và theo một cách nhìn về lịch sử món ăn, tiền thân của nó là bún giò heo — thịt bò được thêm vào sau, bởi bò không có mặt trong yến tiệc cung đình nhà Nguyễn hay mâm cỗ cổ truyền. Thuở trước, đây là món quà sáng của những gánh hàng rong, bán từ sớm tinh mơ và thường ngưng bán trước 8 giờ. Dấu nhận biết của tô bún là mùi mắm ruốc và sả quyện trong nước dùng.",
+    "sources": [
+      {
+        "ref": "Tuổi Trẻ — Bún bò giò heo: Món ngon này có tự bao giờ?",
+        "url": "https://tuoitre.vn/bun-bo-gio-heo-mon-ngon-nay-co-tu-bao-gio-591826.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

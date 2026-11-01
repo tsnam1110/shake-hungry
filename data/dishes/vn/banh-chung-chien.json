@@ -117,6 +117,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) [Ghi chú 2026-10-31 — Phương án A/QA-002: GIỮ NGUYÊN dòng dau-an 10 g, KHÔNG phải tính trùng. Chủ thể chiên của món là tinh bột đã nấu chín (gạo nếp) — nguyên liệu có oil_absorption_pct = 0 theo thiết kế CALC-004 ('tinh bột đã nấu chín rán lại với dầu đã kê trong công thức'), nên dòng dầu này là cơ chế tính dầu duy nhất của món; bỏ đi là engine tính 0 g dầu cho một món chiên. Đưa món này về quy ước A thuần tuý đòi hỏi gán hệ số hấp thụ cho gao-nep đã nấu — thay đổi phía engine/dữ liệu nguyên liệu, ngoài phạm vi Phương án A, chờ quyết định riêng.] [LV2-010 đợt 10: GIỮ-429 — lần mở nguồn đầu tiên cho món bị chặn 429, dừng ngay theo quy tắc đợt, chưa đủ 3 họ đã mở nên giữ Mức 1; dòng dau-an 10 g giữ nguyên theo tiền lệ Phương án A cho tinh bột đã nấu (hệ số hấp thụ 0), không thay đổi gì.] [LV2-011 đợt 11: NÂNG Mức 2 — đối chiếu 3 họ độc lập (ĐMX bản chiên dầu, VinID rán truyền thống, Bếp Trưởng Á Âu về thành phần bánh); mọi định lượng lệch <30% hoặc không đồng thuận ≥2 họ nên giữ nguyên, đặc biệt GIỮ dòng dau-an 10 g theo Phương án A (tinh bột đã nấu chín hệ số hấp thụ 0; VinID ~10 g/180 g ủng hộ). Bất thường ghi nhận: ĐMX còn có biến thể chiên nước không dầu và sốt chua ngọt — khác biến thể file (chiên dầu truyền thống), không áp.]",
+  "cultural_note": {
+    "text": "Bánh chưng chiên là cách thưởng thức lại chiếc bánh chưng quen thuộc và là thức quà mùa đông được yêu thích ở Hà Nội. Bánh được cắt miếng hoặc nặn nhỏ cỡ lòng bàn tay, rán cho lớp ngoài vàng giòn trong khi phần nếp bên trong vẫn dẻo, quyện đậu xanh và thịt mỡ. Với nhiều người Hà Nội thuộc thế hệ 8X, 9X, đây là món quà gợi nhớ không khí Tết và tuổi thơ.",
+    "sources": [
+      {
+        "ref": "VnExpress — 10 món ăn vặt bình dân vào mùa đông ở Hà Nội",
+        "url": "https://vnexpress.net/10-mon-an-vat-binh-dan-vao-mua-dong-o-ha-noi-4688044.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

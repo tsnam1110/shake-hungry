@@ -101,6 +101,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 15 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).] [LV2-008 đợt 8: Đối chiếu 3 nguồn đã mở đọc (Gia đình & Xã hội/Sức khoẻ & Đời sống, AquatechVN, Bếp Lửa; Điện Máy XANH cũng có mục cá linh chiên giòn chấm mắm me trong bài tổng hợp cá linh). Bỏ dòng la-lot (optional, 5 g): 0/3 nguồn nhắc lá lốt — rau kèm theo nguồn là rau thơm, xà lách, dưa leo. Giữ ca-linh 150 g (hai nguồn định lượng đều nấu mẻ 500 g cho khoảng 3-4 người ≈ 125-167 g/người, file nằm trong dải). Giữ bot-mi 12 g: AquatechVN dùng 50 g bột/500 g cá = 15 g quy theo 150 g cá, file lệch -20% chưa tới ngưỡng sửa; SKĐS áo bột ướt không định lượng. Giữ muoi 1 g và hat-tieu-den 0.5 g (nguồn chỉ ghi ướp muối tiêu, không cho số). Phương án A: file đã bỏ dòng dau-an từ đợt QA-002; nguyên liệu ca-linh có oil_absorption_pct = 9% — đạt quy ước, không cần dòng dầu. serving_grams 180→165 theo tổng mới 163.5 g sau khi bỏ lá lốt. Giữ method chien-ngap-dau, region vn-south và nhãn dac-san:an-giang.]",
+  "cultural_note": {
+    "text": "Ghi chú ở cấp loài: cá linh là sản vật chỉ gặp theo mùa nước nổi ở miền Tây, được xem là “quà tặng của dòng sông” dành cho người dân vùng đầu nguồn An Giang. Đầu mùa, cá linh non chỉ to bằng đầu đũa, theo nước phù sa từ thượng nguồn Mê Kông tràn vào đồng khoảng tháng tám đến tháng mười một âm lịch, cùng mùa với bông điên điển nở vàng ven bãi bồi. Ngoài những món ăn tươi trong mùa, người dân còn tranh thủ làm khô và ủ mắm cá linh để dành; bản chiên giòn trong kho thuộc nhóm món ăn nhà làm nhanh gọn từ con cá theo mùa này.",
+    "sources": [
+      {
+        "ref": "Dân Việt — Đến An Giang mùa nước nổi, “linh hồn” là giống cá này đây",
+        "url": "https://danviet.vn/den-an-giang-mua-nuoc-noi-du-khach-say-sua-giang-luoi-bat-ca-dong-xuc-u-luon-linh-hon-la-giong-ca-nay-day-d1457656.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

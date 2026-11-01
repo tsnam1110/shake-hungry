@@ -174,6 +174,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Nâng Mức 2 đợt 1 (2026-10-31): Đối chiếu 3 nguồn công thức đã mở kiểm chứng (xem recipe_sources). Định lượng: giữ nguyên toàn bộ. Cả 3 nguồn đều tính theo nguyên con khoảng 1–1,2kg cho cả nhà và không ghi số khẩu phần, nên không quy đổi được gram/khẩu phần đáng tin cậy để đối chiếu; giữ cá lóc 220g/khẩu phần. Ghi nhận bất thường: cả 3 nguồn đều rưới mỡ hành và rắc đậu phộng rang lên cá sau khi nướng, nhưng file chưa có hai nguyên liệu này (chỉ có hành qua rau ăn kèm) — không tự thêm dòng, chờ chủ dự án quyết. Bước nấu viết lại 8 bước.",
+  "cultural_note": {
+    "text": "Cá lóc nướng trui là cách nướng khẩn hoang gắn với quá trình khai hoang mở cõi của người Nam Bộ, phổ biến đến mức đã đi vào ca dao: “Bắt con cá lóc nướng trui / Làm mâm rượu trắng đãi người bạn xa”. Cá để nguyên con, xiên một thanh tre tươi từ miệng đến đuôi, cắm xuống đất rồi phủ rơm khô đốt sao cho rơm vừa tàn thì cá vừa chín. Khi ăn, người ta vạch bỏ lớp da cháy, cuốn thịt cá cùng rau sống, khế chua, chuối chát và chấm mắm nêm — lối ăn dân dã ngay giữa ruộng đồng miền Tây.",
+    "sources": [
+      {
+        "ref": "VietnamNet — Cá lóc nướng, món ăn dân dã của miền Tây",
+        "url": "https://vietnamnet.vn/ca-loc-nuong-mon-an-dan-da-cua-mien-tay-165567.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

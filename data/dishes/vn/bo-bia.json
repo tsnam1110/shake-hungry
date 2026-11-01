@@ -158,6 +158,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [LV2-011 đợt 11: NÂNG Mức 2. 3 họ độc lập (ĐMX mẻ 50 cuốn; Cookpad Mai Nguyen; A Tuấn Khang mẻ 30 cuốn). Sửa theo đồng thuận ≥2 họ lệch >30%: trung-ga 15→10 (ĐMX và ATK đều 0,1 quả/cuốn), hung-que 2→6 (ĐMX 3g/cuốn, ATK 3,3g/cuốn). Bớt tuong-ban (0/3 họ ủng hộ — cả 3 họ dùng tương đen/tương hột cho bò bía) và thêm tuong-den 8g theo quy đổi ĐMX 200g/50 cuốn × 2 cuốn. Bất thường ghi nhận không sửa: lap-xuong file 15g cao hơn quy đổi gram của ATK (~7g/2 cuốn) nhưng ĐMX chỉ ghi theo cây/lát, chưa đủ 2 họ gram tường minh; ca-rot có ở Cookpad Mai Nguyen và Eva nhưng ĐMX/ATK/Châu Phương không có nên không thêm.]",
+  "cultural_note": {
+    "text": "Bò bía theo chân người Hoa Phúc Kiến và Triều Châu đến Sài Gòn xưa, là bà con của món popiah ở Singapore và Malaysia, nhưng khi ở lại Việt Nam đã được bản địa hoá bằng vỏ bánh tráng thay cho lớp vỏ bột mỏng của bản gốc. Cuốn bò bía Sài Gòn gồm củ đậu xào luôn được giữ nóng trên xe đẩy, lạp xưởng, trứng tráng, tôm khô và rau thơm, chấm cùng tương đậu phộng rắc hành phi và lạc rang. Bán trên những xe đẩy vỉa hè với giá rất rẻ, bò bía trở thành món ăn chơi gắn với ký ức của nhiều thế hệ người Sài Gòn.",
+    "sources": [
+      {
+        "ref": "Saigoneer — Bò Bía: A Piece of Saigon's Hokkien Heritage in a Simple Street Food Roll",
+        "url": "https://saigoneer.com/saigon-food-culture/11179-bò-bía-a-piece-of-saigon-s-hokkien-heritage-in-a-simple-street-food-roll"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

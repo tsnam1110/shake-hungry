@@ -193,6 +193,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt).  [LV2-004 đợt 4: nâng Mức 2 — tôm 30→75, mực 25→75, dầu hào 6→15 theo đĩa hải sản của nguồn (bằng chứng định lượng của món này mỏng hơn mặt bằng đợt — 1 nguồn lượng hoá rõ — đã đối chiếu chéo tỉ lệ sốt). Bất thường giữ nguyên: súp lơ 0/3 nguồn (giữ vì phổ biến trong thực tế quán ăn) và gan heo tuỳ chọn 0/3 nguồn lượng hoá.] [AUDIT-FIX 2026-11-01 — PX-07 (AUDIT-002): nguồn Xây Dựng Số đã chết 404 (gỡ); nguồn Điện Máy XANH mở lại vẫn lỗi fetch không mã HTTP — chưa kết luận, không tính vào nguồn sống. Bổ sung Toronto Pho (Medium) + Nấu Ăn Không Khó; cộng Bếp Xưa còn sống = 3 nguồn sống xác nhận, cổng khôi phục. Đối chiếu lại định lượng: GIỮ NGUYÊN — tôm/mực 75g theo phân xử Bếp Xưa (lượng theo đĩa lớn); Toronto Pho cho khẩu phần hải sản nhẹ hơn (33–50g) và thiếu thịt/gan, Nấu Ăn Không Khó không có số khẩu phần — cả hai không đủ sức lật phân xử của nguồn sống còn lại. Giữ Mức 2.] [Rà độc lập AUDIT-FIX 2026-11-01: trang Medium (Toronto Pho) mở lại được, đúng món. nauankhongkho ở vòng rà lỗi mạng không fetch lại được (đã đọc ở vòng nghiên cứu) — hạ trạng thái xuống CHƯA KẾT LUẬN cùng lớp với nguồn ĐMX của món; cổng của món dựa trên Bếp Xưa + Medium đã xác nhận và 2 nguồn chưa kết luận có truy vết, giữ Mức 2 như chuẩn xử lý PX-34.] [Thử lại 2026-11-01 — đợt sau AUDIT-FIX (kèm QA-002 lần 5): URL nauankhongkho KẾT LUẬN SỐNG (browser.open đọc được toàn văn, đúng món mì xào giòn hải sản có tim + gan heo; bộ số khớp tuyệt đối ghi chú nguồn: tôm 200 g, mực 200 g, tim heo 200 g, gan heo 100 g) — khôi phục trạng thái đã đọc ở vòng nghiên cứu nhóm A. Món nay 3 nguồn xác nhận sống (Bếp Xưa + Medium/Toronto Pho + Nấu Ăn Không Khó). URL ĐMX thử lại cùng đợt vẫn lỗi fetch không mã HTTP — giữ chưa kết luận.]",
+  "cultural_note": {
+    "text": "Mì xào giòn được cho là có nguồn gốc từ Quảng Đông ở miền nam Trung Quốc và theo cộng đồng người Hoa bén rễ tại Sài Gòn - Chợ Lớn. Sợi mì bột mì được chiên ngập dầu đến vàng nâu, chụm lại như chiếc tổ chim làm nền cho hải sản, rau cải và lớp sốt sánh phủ lên trên. Ở các tiệm ăn gia đình người Hoa, công thức mì xào giòn thường được truyền qua nhiều thế hệ.",
+    "sources": [
+      {
+        "ref": "Saigoneer — Mì xào giòn ngon đến gục ngã của tiệm ăn Dũng Ký",
+        "url": "https://saigoneer.com/vn/food/17600-h%E1%BA%BBm-gems-m%C3%AC-x%C3%A0o-gi%C3%B2n-ngon-%C4%91%E1%BA%BFn-g%E1%BB%A5c-ng%C3%A3-c%E1%BB%A7a-ti%E1%BB%87m-%C4%83n-d%C5%A9ng-k%C3%BD"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

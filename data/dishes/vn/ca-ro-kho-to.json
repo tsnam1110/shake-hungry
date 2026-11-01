@@ -133,6 +133,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nâng Mức 2 đợt 2 (2026-10-31): Đối chiếu 3 nguồn công thức đã mở kiểm chứng (xem recipe_sources; nguồn ĐMX là cá rô kho tiêu — biến thể kho cùng họ, đã ghi rõ). Định lượng: giữ nguyên toàn bộ — cá rô nguồn bất đồng nhau >30% (ĐMX 100–125g/khẩu phần so với Sức khoẻ & Đời sống mẻ 400g và Bluestone mẻ 500–700g quy đổi ~143–200g/khẩu phần) nên 160g của file nằm trong khoảng nguồn; đường, nước mắm cũng dao động theo mẻ (ĐMX ~3,5g đường/khẩu phần so với Bluestone ~6g quy đổi) nên giữ nguyên. Bất thường lớn ghi nhận, chờ pha phân xử riêng: cả 3 nguồn đều kho kèm thịt ba chỉ (100–400g/mẻ; ĐMX bản hai dùng mỡ heo 200g làm tóp mỡ) — file không có dòng thit-lon-ba-chi hay mo-heo; nguồn còn dùng nước màu/nước hàng và nước dừa tươi để kho, file tạo vị bằng đường thốt nốt và không có dòng nước dừa. Bước nấu viết lại 6 bước. Phân xử bất thường LV2-002 (Phần A, 2026-10-31): Thêm thit-lon-ba-chi 40 g — cả 3 nguồn đều kho cá rô kèm thịt ba chỉ/mỡ heo; đã mở kiểm chứng lại SKĐS ở pha này: 100 g ba chỉ cho mẻ cá 400 g, quy theo 160 g cá/khẩu phần của file = 40 g (khớp tỉ lệ thịt:cá 0,25 và tiền lệ ca-tram-kho-rieng Phần A đợt 1). Nước màu: nguồn dùng nhưng kho chưa có slug — không thêm, chờ biên soạn nguyên liệu. Nước dừa tươi: SKĐS không dùng (kho bằng nước nóng), chưa quy đổi chắc từ các nguồn còn lại — không thêm, giữ ghi nhận. [LV2-010 Phần C — gói quyết định chủ dự án 2026-10-31: A4.2 ÁP quy ước cá kho: duong-thot-not 8 g → duong-trang 8 g. Căn cứ: nguồn của món kho bằng nước màu/nước dừa, không dùng thốt nốt (đã ghi nhận ở LV2-002); đổi sang đường trắng giữ vai trò tạo ngọt trong dòng gia vị, phần nước màu giữ nguyên ghi nhận bất thường cũ.]",
+  "cultural_note": {
+    "text": "Cá rô đồng là loài cá quen thuộc trên những cánh đồng miền Tây Nam Bộ, sống nhiều trong kênh rạch, ao tù và ngoài đồng ruộng. Đến mùa nước nổi, cá rô theo nước lên ruộng ăn bông lúa rụng và cỏ dại nên con nào cũng tròn vo, mập ú — đó cũng là mùa dân quê ra đồng giăng lưới bắt cá. Trong các cách chế biến của người dân nơi đây, kho tộ được nhắc đến như một cách làm cầu kỳ hơn và rất đưa cơm, bên cạnh kiểu nướng chấm nước mắm gừng hay nấu canh chua.",
+    "sources": [
+      {
+        "ref": "Dân Việt — Lạ miệng với đặc sản Tây Nam Bộ: Món cá rô mề kho thủy liễu",
+        "url": "https://danviet.vn/la-mieng-voi-dac-san-tay-nam-bo-mon-ca-ro-me-kho-thuy-lieu-77771002311-d739521.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

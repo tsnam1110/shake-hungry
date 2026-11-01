@@ -101,6 +101,19 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-007 đợt 7: nâng Mức 2 — 3 nguồn đã mở. SỬA đường phèn 20→30g — ca sửa duy nhất của món: 2 nguồn có định lượng theo khẩu phần/lượng nước rõ ràng đồng thuận cao hơn file 55–80% (36 và 31g); nguồn thứ ba (tỉ lệ 0,4 theo sen → 20g) không ghi lượng nước/số người. Giá trị 30 là mức thận trọng dưới cả hai nguồn đồng thuận (nguồn 31g còn có đường cát phụ). GIỮ hạt sen 50g (nguồn báo chí sát nhất: 55g). BỔ SUNG muối 0,5g (1 nguồn dùng muối hạt tôn vị — bổ sung nhẹ). GIỮ lá dứa 1g dạng tuỳ chọn kèm ghi nhận: cả 2 bản thuần đều không dùng lá dứa (lá dứa chỉ có ở biến thể nhãn nhục) — tuỳ chọn là đúng mức bằng chứng. Ghi nhận tương đương sen khô = 0,6 × sen tươi theo 1 nguồn, dành cho biến thể sen khô sau này. Sửa viết hoa tên chính theo DATA-009.]",
+  "cultural_note": {
+    "text": "Trong thế giới chè Huế, chè hạt sen thuộc nhóm chè thanh cao và cầu kỳ, gắn với hạt sen hồ Tịnh Tâm — loại sen xưa từng được dùng tiến vua. Sen được hấp chín rồi mới nấu cùng nước đường phèn trong vắt, và người nấu phải túc trực canh lửa thật khéo: nấu non thì hương sen chưa tỏa, nấu già thì hạt sen mất hương thơm tự nhiên. Hình ảnh chén chè hạt sen cũng đã đi vào ca dao xứ Huế: 'Thương chồng nấu cháo le le / Nấu canh bông bí, nấu chè hạt sen'.",
+    "sources": [
+      {
+        "ref": "Sức khỏe & Đời sống (Gia đình) — Những món chè Huế ngon tuyệt đỉnh",
+        "url": "https://giadinh.suckhoedoisong.vn/nhung-mon-che-hue-ngon-tuyet-dinh-1722012050910384819.htm"
+      },
+      {
+        "ref": "Thanh Niên — Chè hẻm, nét duyên của ẩm thực Huế",
+        "url": "https://thanhnien.vn/che-hem-net-duyen-cua-am-thuc-hue-185633344.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "llm_suggested",
   "confidence": "unknown",

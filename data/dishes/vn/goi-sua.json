@@ -180,6 +180,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu). [LV2-010 đợt 10: GIU-429 — mở nguồn biến thể bắp chuối bị chặn 429, dừng ngay không retry; chưa mở được ≥3 họ nên giữ Mức 1. Đã xác minh sua-bien có số (USDA 168129, 36 kcal) nên không bị trần nguyên liệu. Làm lại khi hết chặn, ưu tiên biến thể bắp chuối.] [LV2-011 đợt 11: NÂNG Mức 2 — 3 họ độc lập đã mở đọc thật (SKĐS/Gia đình, Cookpad Rose Truong, Bluestone), định lượng quy đổi ~4 khẩu phần/mẻ, đối chiếu ≥2 họ cho sứa/bắp chuối/lạc/nước mắm/đường. Sửa toi 2→4g (Cookpad ~1 củ/mẻ và Bluestone 20g/mẻ đều quy đổi ~5g/khẩu phần, lệch >30% so với file; lấy 4g trong dải nguồn). sua-bien đã xác minh có số nên không bị trần nguyên liệu; kinh-gioi null là nguyên liệu phụ. Bất thường ghi nhận không sửa: cà rốt và xoài xanh có ở 2/3 họ (chưa đủ điều kiện 3/3 để thêm dòng); vừng rang và hành phi 0/3 họ lõi nhưng là garnish của biến thể khác (Tạp chí Đẹp có mè rang trong gỏi sứa) nên giữ nguyên và ghi nhận.]",
+  "cultural_note": {
+    "text": "Nộm sứa là đặc sản của vùng quê biển Hải Hậu (Nam Định) — tỉnh có 72 km bờ biển qua các huyện Giao Thủy, Hải Hậu, Nghĩa Hưng và sản lượng sứa khai thác hằng năm lên tới hàng chục nghìn tấn. Đĩa nộm cầu kỳ ở khâu rau gia vị: sứa giòn được trộn cùng hoa chuối thái sợi và rất nhiều rau thơm như húng, rau răm, rau ngổ, tía tô, kinh giới, rắc lạc và vừng rang. Người Hải Hậu xem thứ tự trộn từng loại vị, từng nhóm rau là bí quyết riêng để đĩa nộm ngấm đều mà không nát.",
+    "sources": [
+      {
+        "ref": "Dân Việt — Thơm giòn nộm sứa quê Hải Hậu (Chu Hồng Châu)",
+        "url": "https://danviet.vn/thom-gion-nom-sua-que-hai-hau-7777472649-d329750.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

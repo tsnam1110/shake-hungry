@@ -156,6 +156,19 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [LV2-006 đợt 6: nâng Mức 2 — bột gạo 70 → 55g, bột năng 10 → 25g: sửa tỉ lệ bột theo đồng thuận nguồn, cùng mẫu hình bánh cuốn.]",
+  "cultural_note": {
+    "text": "Bánh ướt Diên Khánh (Khánh Hoà) nổi tiếng với “phố bánh ướt” dọc Quốc lộ 1A qua thị trấn — con phố chỉ bán bánh ướt đã có hơn nửa thế kỷ, các quán mở từ sáng sớm tới đêm khuya. Bánh được tráng mỏng trên nồi gang căng vải và phải ăn nóng mới ngon — có quán khách vào ngồi rồi người tráng mới bắt đầu tráng — phủ mỡ hành, đậu xanh, ruốc, ăn kèm chả, nem, giá trụng và xoài băm. Làng Phú Lộc ở Diên Khánh là một trong những làng có nhiều người làm bánh ướt.",
+    "sources": [
+      {
+        "ref": "Báo Dân Việt — Bánh ướt Diên Khánh, món ngon dân dã làm say lòng du khách (Huyền Trần)",
+        "url": "https://danviet.vn/banh-uot-dien-khanh-mon-ngon-dan-da-lam-say-long-du-khach-7777697914-d455300.html"
+      },
+      {
+        "ref": "Vietnam Investment Review (theo VNS) — A Nha Trang delicacy worth the search",
+        "url": "https://vir.com.vn/a-nha-trang-delicacy-worth-the-search-52611.html&fs=1&tf=1"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

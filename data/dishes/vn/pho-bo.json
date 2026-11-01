@@ -227,6 +227,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): Đã đối chiếu 3 nguồn công thức thật (Điện máy XANH phở Hà Nội, Cookpad/Huỳnh Phát, Điện máy XANH phở Nam Định). Định lượng: tổng thịt bò mỗi tô giữa các nguồn bất đồng rất lớn (khoảng 135g ở Cookpad so với 265-280g ở hai công thức Điện máy XANH) nên theo quy tắc giữ nguyên các dòng thịt của file; bánh phở chỉ một nguồn (Cookpad) ghi theo tô là 120-150g, hai nguồn còn lại không ghi lượng bánh phở, chưa đủ cơ sở đổi 180g của file — giữ nguyên và ghi nhận độ lệch này. Phân loại (loai:bun-pho-mi, nau, vn-ha-noi, sáng/trưa/tối) rà soát, không sai rõ ràng, giữ nguyên.",
+  "cultural_note": {
+    "text": "Phở bò gắn với mảnh đất Thành Nam (Nam Định), nơi cuối thế kỷ XIX những gánh phở theo chân người làng làm công nhân nhà máy Dệt và phục vụ bữa ăn đêm. Các làng Giao Cù, Vân Cù được xem là làng phở cổ với nhiều dòng họ làm nghề qua 4-5 đời, trong đó cụ Cồ Hữu Vàng là người tiên phong đưa phở gánh ra Hà Nội vào những năm 1930-1931. Từ những gánh phở rong ấy, phở bò lan khắp phố phường Nam Định, Hà Nội và trở thành món ăn sáng quen thuộc suốt hơn trăm năm qua.",
+    "sources": [
+      {
+        "ref": "Báo Nam Định — Phở bò Nam Định - Tinh hoa ẩm thực Việt",
+        "url": "https://baonamdinh.vn/multimedia/202212/pho-bo-nam-dinh-tinh-hoa-am-thuc-viet-9265808/"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

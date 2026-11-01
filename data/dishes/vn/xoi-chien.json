@@ -128,6 +128,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [Ghi chú 2026-10-31 — Phương án A/QA-002: GIỮ NGUYÊN dòng dau-an 15 g, KHÔNG phải tính trùng. Chủ thể chiên của món là tinh bột đã nấu chín (gạo nếp) — nguyên liệu có oil_absorption_pct = 0 theo thiết kế CALC-004 ('tinh bột đã nấu chín rán lại với dầu đã kê trong công thức'), nên dòng dầu này là cơ chế tính dầu duy nhất của món; bỏ đi là engine tính 0 g dầu cho một món chiên. Đưa món này về quy ước A thuần tuý đòi hỏi gán hệ số hấp thụ cho gao-nep đã nấu — thay đổi phía engine/dữ liệu nguyên liệu, ngoài phạm vi Phương án A, chờ quyết định riêng.] [LV2-012 đợt vét] Nâng Mức 2 theo biến thể xôi chiên phồng (file tự ghi 'bánh phồng' ở bước chiên): đối chiếu 3 họ độc lập CET/Chef Lập, SKĐS-aFamily, Bếp Xưa. Thêm dau-xanh-hat 50 g và nuoc-cot-dua 25 g (3/3 họ đều có), duong-trang 3 g optional -> 20 g thành phần chính, bỏ vung-rang (0/3 họ). GIỮ NGUYÊN dau-an 15 g theo ngoại lệ Phương án A đã ghi: gạo nếp đã nấu có hệ số hấp thụ 0, dòng dầu kê trong công thức là cơ chế tính dầu duy nhất của món. Viết lại recipe_steps 7 bước.",
+  "cultural_note": {
+    "text": "Món xôi chiên này chính là xôi chiên phồng, được cho là xuất xứ từ Đồng Nai: theo lời kể của người dân địa phương, bà Đinh Thị Ha ở Biên Hòa trong một lần làm xôi chiên dẹp để mang đi lễ chùa đã tình cờ phát hiện xôi cho vào chảo nóng có thể phồng lên lạ mắt, rồi mày mò cải tiến thành món nức tiếng gần xa. Nếp đồ chín được giã và nhồi nhuyễn cùng đường và đậu xanh trước khi chiên phồng, thường ăn kèm gà nướng. Năm 2022, món ăn được Hiệp hội Văn hóa Ẩm thực Việt Nam chứng nhận là Ẩm thực tiêu biểu Việt Nam.",
+    "sources": [
+      {
+        "ref": "Dân Việt — Vị ngọt thơm, dai giòn của hai món đặc sản Đồng Nai lọt Top Ẩm thực tiêu biểu Việt Nam",
+        "url": "https://danviet.vn/am-thuc-dong-nai-huong-vi-ngot-thom-dai-gion-cua-hai-mon-dac-san-duoc-vinh-danh-20231126065438812-d1131260.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

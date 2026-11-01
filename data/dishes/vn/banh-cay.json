@@ -127,6 +127,15 @@
     "queried_at": "2026-08-31"
   },
   "import_note": "Nhập tự động từ Wikidata Q5004800 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/B%C3%A1nh%20c%C3%A1y.JPG Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] Nâng Mức 2: đối chiếu 3 họ độc lập (BlueStone, Quaem, VietnamPlus/TTXVN). Bản cũ sai định danh món: có đậu xanh (0/3 họ ủng hộ — đã đề xuất bỏ), thiếu lạc rang là thành phần cốt lõi, đường và mỡ thấp hơn cả hai họ có số >40%. Đề xuất sửa duong-trang 10→28, mo-lon-nuoc 8→15, thêm lac-rang 11, gung 2, qua-gac 5. cooking_method trong file đang là 'hap' — cần đổi sang chiên/sên khi áp dụng vì con cáy được chiên phồng và bánh kết dính bằng mật sên, không hấp.",
+  "cultural_note": {
+    "text": "Bánh cáy là đặc sản của làng Nguyễn thuộc vùng quê lúa Thái Bình, gắn với tổ nghề Nguyễn Thị Tần ở thế kỷ XVIII. Tương truyền, chiếc bánh ban đầu mang tên “bánh ngũ vị” làm từ nông sản địa phương, khi dâng lên triều đình nhà Lê đã được vua Hiển Tông khen và đặt tên là bánh cáy vì sắc bánh gợi liên tưởng đến trứng cáy. Bánh gồm nếp đồ giã cùng gấc, lạc, vừng, gừng và mỡ lợn, là món quà biếu quen thuộc trong các dịp lễ, Tết ở đồng bằng Bắc Bộ.",
+    "sources": [
+      {
+        "ref": "Wikipedia tiếng Việt — Bánh cáy",
+        "url": "https://vi.wikipedia.org/wiki/B%C3%A1nh_c%C3%A1y"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

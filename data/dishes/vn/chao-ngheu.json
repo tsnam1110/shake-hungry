@@ -150,6 +150,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món THAY cho oc-hut-xao-dua trong kế hoạch §3.4: oc-hut chưa tra được số đạt chuẩn — hồ sơ null đã lập đợt này (tên gọi chung nhiều loài ốc biển nhỏ, không có bảng thành phần tương ứng), món phụ thuộc HOÃN theo QT-1. Thay bằng cháo nghêu miền Trung cùng nhóm hải sản, nguyên liệu sẵn có. [LV2-007 đợt 7: nâng Mức 2 — 4 nguồn đã mở. SỬA nghêu 100→40g: slug ngheu trong kho là THỊT đã tách vỏ, trong khi các nguồn cân nguyên vỏ; hai nguồn có số người quy đổi thịt chỉ 19–37g/khẩu phần — file cũ 100g thịt (≈670g nguyên vỏ/khẩu phần) lệch >170%, là ca lệch định lượng nặng nhất đợt. BỔ SUNG hành phi 3g dạng tuỳ chọn (2 nguồn rắc mặt). GIỮ gạo 50g (khớp nguồn sát nhất 47g). Đậu xanh và xương heo hầm trong cháo là dấu ấn biến thể Hội An — chưa đủ đồng thuận thành dòng bắt buộc; file giữ nền nước luộc nghêu.]",
+  "cultural_note": {
+    "text": "Cháo nghêu gắn với biển An Bàng ở Hội An: sau một buổi sáng tắm biển, ghé quán gọi một bát cháo nghêu là lịch trình quen thuộc của du khách. Cháo nấu cùng đậu xanh xay nhuyễn, sánh và đậm vị, dọn với nghêu miếng to, nhiều thịt, dai giòn, thêm hành phi, rau răm và tiêu xay.",
+    "sources": [
+      {
+        "ref": "Báo Ảnh Việt Nam (TTXVN) — Khám phá bản đồ ẩm thực đường phố Hội An",
+        "url": "https://vietnam.vnanet.vn/vietnamese/tin-tuc/kham-pha-ban-do-am-thuc-duong-pho-hoi-an-439900.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

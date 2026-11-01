@@ -125,6 +125,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): đã đối chiếu 3 nguồn công thức thật (Điện Máy Xanh, Hướng Nghiệp Á Âu, YeuTre). Định lượng: tỉ lệ gà:lá giang trong file là 180:40 (≈4,5:1), khớp Hướng Nghiệp Á Âu (700:150) và YeuTre (600:145) khi quy về khẩu phần (gà ≈175 g, lá giang ≈37 g); Điện Máy Xanh dùng lá giang nhiều bất thường (300 g cho 2 người) — là ngoại lệ, không theo. Giữ nguyên mọi định lượng. Bước nấu viết lại 6 bước.",
+  "cultural_note": {
+    "text": "Canh gà lá giang nấu từ lá giang — thứ dây leo mọc hoang nhiều trong vườn và rừng — kết hợp với thịt gà, thường chọn gà thả vườn cho thịt săn chắc. Vào những ngày trưa hè nóng nực, bữa cơm có tô canh gà nấu lá giang chan cùng cơm gạo tẻ đã thành món quen thuộc, rất được ưa chuộng, và món canh cũng có thể ăn kèm bún hay mì. Những năm gần đây, nhiều hộ dân đã trồng và nhân giống lá giang để cung cấp cho nhà hàng, quán ăn.",
+    "sources": [
+      {
+        "ref": "TTXVN (VietnamPlus) — Canh chua gà nấu lá giang (Sơn Nghĩa)",
+        "url": "https://vietnam.vnanet.vn/vietnamese/tin-tuc/canh-chua-ga-nau-la-giang-58996.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -125,6 +125,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-012 đợt vét] Nâng Mức 2: đối chiếu 3 họ nguồn độc lập đã mở đọc thật (Natha Food; Cookpad Anne Tran; giáo trình PDF tailieu.duytan.edu.vn). Định lượng/khẩu phần của 3 họ: nếp sống 30-50g, cốt dừa ~33-44ml, đường ~8-10g, đậu phộng 0-10g — số file (50/35/10/8g) nằm trong dải đồng thuận nên giữ nguyên. Thêm dòng bot-bang 5g (2/3 họ có trong nước cốt, giáo trình cho số rõ 5g/trái).",
+  "cultural_note": {
+    "text": "Món chuối nướng này là chuối nếp nướng của miền Nam: trái chuối xiêm chín được bọc trong lớp gạo nếp, gói lá chuối rồi nướng trên than hồng, khi ăn chan nước cốt dừa và rắc đậu phộng giã. Món được cho là có nguồn gốc từ Vĩnh Long, sau thành đặc sản của tỉnh rồi lan khắp miền Nam và cả nước qua các gánh hàng đường phố. Từ món quà quê dân dã, chuối nếp nướng từng đứng đầu bảng yêu thích tại Đại hội Ẩm thực đường phố thế giới (World Street Food Congress) ở Singapore năm 2013 và được CNN xếp vào nhóm 9 món tráng miệng ngon nhất thế giới.",
+    "sources": [
+      {
+        "ref": "Wikipedia tiếng Việt — Chuối nếp nướng",
+        "url": "https://vi.wikipedia.org/wiki/Chu%E1%BB%91i_n%E1%BA%BFp_n%C6%B0%E1%BB%9Bng"
+      }
+    ]
+  },
   "status": "draft",
   "source": "llm_suggested",
   "confidence": "unknown",

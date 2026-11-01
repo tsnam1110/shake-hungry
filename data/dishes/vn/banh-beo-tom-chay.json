@@ -126,6 +126,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Khác banh-beo-bi đã có (nhân bì) ở nhân tôm chấy — độc lập theo ghi chú kế hoạch. Nước mắm chan kê trong thành phần theo tiền lệ kho. [LV2-010 đợt 10: GIỮ Mức 1 do 429 — mới mở được 2 họ (Cookpad QUÂN NGUYỄN, Bếp Xưa); họ thứ 3 (bộ số 125 g bột gạo/20 g bột năng/300 g tôm lưu hành ở dacsanvietnam.co và saigonesebaguette.vn — tính là 1 họ sao chép) chưa mở trực tiếp được. Tín hiệu chờ xác nhận: file thiếu bot-nang; dòng nước mắm + đường trong file xung đột quy định nước chấm riêng (Q10).] [LV2-010 đợt 10 — VÒNG 2: ĐẠT Mức 2. Mở thêm họ thứ 3 (bộ số 125 g bột gạo/20 g bột năng/300 g tôm của cụm saigonesebaguette.vn + dacsanvietnam.co, tính 1 họ sao chép) trực tiếp tại saigonesebaguette.vn. Ba họ đồng thuận: bột năng có ở 3/3 họ (tỉ lệ 4–16% của bột gạo) mà file thiếu — thêm bot-nang 5 g; bột gạo 60 g khớp Bếp Xưa 62,5 g/người; tôm 50 g khớp phần thịt của Bếp Xưa (75 g nguyên con). Dòng nước mắm + đường trong file được GIỮ theo tiền lệ bun-thit-xao/bun-chao-tom của chính đợt này (nước chan tính trong món; câu hỏi Q10 về nhóm chấm vẫn mở ở cấp kho). Topping giòn là thành phần luân phiên (da heo/bánh mì), không thêm dòng.]",
+  "cultural_note": {
+    "text": "Bánh bèo tôm chấy là biến thể đặc trưng của xứ Huế trong họ bánh bèo miền Trung. Tôm nõn tươi được hấp, giã dập và xé sợi rồi chấy sơ trên chảo thành lớp nhân khô tơi, đặt lên chén bánh bột gạo hấp mỏng, thêm hành phi hoặc da heo chiên phồng và chan nước mắm đường nấu loãng. Kiểu ăn chén nhỏ, bột mỏng của Huế đối lập thú vị với chén bánh bèo lớn, nhân sệt của xứ Quảng.",
+    "sources": [
+      {
+        "ref": "Thanh Niên — Thương nhớ bánh bèo miền Trung",
+        "url": "https://thanhnien.vn/thuong-nho-banh-beo-mien-trung-1851396282.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -126,6 +126,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-012 đợt vét] Nâng Mức 2: đối chiếu 3 họ nguồn độc lập (Much Ado About Fooding, White On Rice Couple, Nguyen Food Stall). Phân xử: nhân patê sô đúng định danh là thịt xay + patê phụ — file gốc chỉ có patê 25 g là sai định danh, đã đề xuất giảm patê-gan 25→4 g, thêm thit-lon-xay 20 g và hanh-tay 5 g (llm_suggested, low). Vỏ giữ nguyên: cả 3 họ dùng puff pastry sẵn, file tách bột mì + bơ là quy đổi tương đương, không có cơ sở ≥2 họ để đổi tỉ lệ.",
+  "cultural_note": {
+    "text": "Bánh patê sô có tên gốc tiếng Pháp là 'pâté chaud' — nghĩa là bánh nóng — một cách gọi còn lưu lại từ thời Pháp thuộc, dù trong tiếng Pháp hiện đại cách dùng này đã lỗi thời. Bánh gồm lớp vỏ bột ngàn lớp nướng giòn, ôm nhân thịt lợn xay truyền thống; ngày nay nhân còn được biến tấu bằng thịt gà, thịt bò hay nhân chay. Patê sô phổ biến nhất ở các tiệm bánh miền Nam, đặc biệt tại đô thị, và theo cộng đồng người Việt ra nhiều nước trên thế giới.",
+    "sources": [
+      {
+        "ref": "Wikipedia tiếng Việt — Pa tê sô",
+        "url": "https://vi.wikipedia.org/wiki/Pa_t%C3%AA_s%C3%B4"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

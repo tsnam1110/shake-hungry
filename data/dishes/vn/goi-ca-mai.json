@@ -182,6 +182,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. THIẾU NGUYÊN LIỆU: cá mai (slug ca-mai — nguyên liệu chính của món) — cần bổ sung vào kho. [LV2-012 đợt vét] Đạt Mức 2: 3 họ nguồn độc lập đã mở đọc (Hướng Nghiệp Á Âu — Phan Thiết; YummyDay — Phan Thiết, bộ số khác; Nấu Ăn Không Khó/Túc Túc — Quy Nhơn). Sửa me-chin 10→18g (2 họ đồng thuận ~18–20g/khẩu phần quy đổi theo 120g cá), thêm dòng sả 10g (2/3 họ có). Đã viết lại 7 bước công thức.",
+  "cultural_note": {
+    "text": "Gỏi cá mai là một trong những đặc sản nổi tiếng nhất của Phan Thiết (Bình Thuận), làm từ cá mai thịt trắng, vị ngọt thanh và không tanh — loại cá người dân xứ biển Phan Thiết vẫn thường dùng cho các món gỏi và lẩu thả. Cá tươi được trộn chua cay, điểm thêm đậu phộng rang bùi bùi, ăn kèm rau sống và bánh tráng với nước chấm làm từ đậu phộng rang giã nhuyễn rất riêng của vùng này. Ở Phan Thiết, gỏi cá mai có mặt ở hầu hết nhà hàng, quán hải sản từ bình dân đến cao cấp, nhất là dọc bờ kè sông Cà Ty và khu Hàm Tiến — Mũi Né.",
+    "sources": [
+      {
+        "ref": "Báo Thái Bình điện tử (theo Afamily) — Điểm danh món ngon ở Phan Thiết bạn không nên bỏ lỡ",
+        "url": "https://thaibinh.baohungyen.vn/tin-tuc/37/202855/diem-danh-mon-ngon-o-phan-thiet-ban-khong-nen-bo-lo"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

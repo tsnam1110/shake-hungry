@@ -105,6 +105,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-008 đợt 8: Nâng Mức 2 với 4 nguồn đã mở đọc (Điện Máy XANH — công thức truyền thống 2 người + 3 công thức sương sáo 4 người trong bài thứ hai; Cookpad Thu Mèo; Nấu Ăn Không Khó). SỬA 1 dòng: duong-trang 22→30g (cả 4 công thức ĐMX có số người đều cho 37,5–50g đường/khẩu phần và tỉ lệ đường:đậu của Cookpad là 1,33 — file cũ thấp rõ; chỉ lấy 30g vì chén file 250g nhỏ hơn khẩu phần nguồn). GIỮ: dau-do-hat 45g (ĐMX cho 50g/khẩu phần ở hai bản 4 người; bản truyền thống 150g/người và bản sương sáo 2 chỉ 25g/người là hai cực ngoại lệ — trung vị quanh 50g, file lệch −10%); nuoc-cot-dua 25g (bản sương sáo 1 cho đúng 100ml/4 người = 25ml/người; các bản khác 40–50ml chan kèm thạch); la-dua 1g optional (2/3 công thức trong bài sương sáo nấu đậu cùng lá dứa, Nấu Ăn Không Khó và bản truyền thống không bắt buộc). serving_grams 250g giữ nguyên (chất rắn ~100g + nước chè ~150g); method 'nau', region 'vn' giữ nguyên.]",
+  "cultural_note": {
+    "text": "Chè đậu đỏ gần đây gắn với một trào lưu văn hoá mới: ăn chè đậu đỏ vào lễ Thất Tịch (mùng 7 tháng 7 âm lịch) để cầu may mắn trong tình duyên. Lễ Thất Tịch vốn gắn với truyện Ngưu Lang – Chức Nữ mỗi năm chỉ gặp nhau một lần, còn hạt đậu đỏ trong văn hoá dân gian Đông Á — 'hồng đậu' — lại tượng trưng cho nỗi nhớ và tình cảm không phai, thêm lối chơi chữ ăn 'đỏ' cho chuyện tình cảm cũng 'đỏ' theo. Cần nói rõ đây là trào lưu được giới trẻ hưởng ứng trong những năm gần đây, không phải phong tục cổ truyền có quy tắc bắt buộc.",
+    "sources": [
+      {
+        "ref": "Hoa Học Trò (Tiền Phong) — Vì sao ăn chè đậu đỏ vào Thất Tịch?",
+        "url": "https://hoahoctro.tienphong.vn/vi-sao-an-che-dau-do-vao-that-tich-neu-an-che-dau-den-dau-xanh-thi-sao-post1869096.tpo"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

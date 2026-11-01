@@ -141,6 +141,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-005 đợt 5: nâng Mức 2 — đối chiếu 3 nguồn công thức đã mở kiểm chứng. Phân xử định lượng: thịt bò xay 60→40g vì nguồn duy nhất ghi khẩu phần (Digifood) cho 37,5g/người, thấp hơn file 37,5%, và tỉ lệ rau:bò ở cả 3 nguồn đều ≥2,0 so với tỉ lệ file 1,33; giữ rau má 80g vì khớp nguồn trong ngưỡng. Bất thường ghi nhận: 2/3 nguồn dùng bò thái lát mỏng thay vì bò xay, và cả 3/3 nguồn đều có hành tím trong khi file không có — chờ pha phân xử.] [LV2-007 Phần A: PHÂN XỬ dạng bò + hành tím — hành tím có ở 3/3 nguồn đã mở → BỔ SUNG hanh-tim 5g. Dạng bò: lát mỏng đạt 2/3 nguồn (Đầu bếp gia đình; Digifood ghi đích danh 'thịt thăn bò' thái lát mỏng 150g/4 người = 37,5g/người — cũng là neo cho lượng 40g đã phân xử ở LV2-005); nguồn bò xay duy nhất (AVAKids) là biến thể 'canh rau má thịt bò viên' trộn thêm heo xay cho bà bầu mà file không theo (không heo, không vo viên) — dạng xay hiện tại không khớp trọn vẹn nguồn nào → ĐỔI thit-bo-xay 40g thành thit-bo-than 40g (giữ nguyên lượng; calo dòng bò giảm ~13 kcal do thăn nạc hơn xay). Nếu muốn giữ biến thể bò viên trộn heo thì tách thành món biến thể riêng. Đồng thời sửa tên chính tiếng Việt viết hoa chữ đầu theo quy ước DATA-009.]",
+  "cultural_note": {
+    "text": "Nguyên liệu làm nên món canh này là rau má — loài rau mọc nhiều ở bờ ruộng, bãi sông và được xem là biểu tượng của xứ Thanh, đến mức người Thanh Hoá bị gọi vui là “dân rau má”. Ở xứ Thanh, rau má là món không thể thiếu trong bữa cơm mỗi độ giáp hạt, từng gánh phần cứu đói cho dân làng những năm mất mùa. Vào dịp giỗ, Tết hay những ngày hè, người ta nấu canh rau má ninh với thịt bò hoặc thịt lợn nạc — vị ngọt của thịt hoà với vị hơi đăng đắng của rau má thành bát canh quê quen thuộc.",
+    "sources": [
+      {
+        "ref": "Thanh Niên — Thương nhớ rau má xứ Thanh",
+        "url": "https://thanhnien.vn/thuong-nho-rau-ma-xu-thanh-1851017399.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

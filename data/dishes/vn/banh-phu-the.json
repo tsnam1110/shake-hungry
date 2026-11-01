@@ -110,6 +110,15 @@
     "queried_at": "2026-08-31"
   },
   "import_note": "Nhập tự động từ Wikidata Q564560 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/Breakfast%20at%20Trung%20K%C3%ADnh%20H%E1%BA%A1%20Village%2003-03-2026.%20Phu%20Th%C3%AA%20Cakes.jpg Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] Nâng Mức 2: đối chiếu 3 họ độc lập (Beemart — yield rõ 20 bánh x 50 g; Digifood 2 công thức; Dạy Làm Bánh Á Âu). Phân xử: tổng khô của file (100 g) gần bằng serving 110 g là không thực tế vì vỏ bột năng ngậm nhiều nước; đề xuất bot-nang 45→22 g, dau-xanh-hat 25→10 g, cui-dua-nao 10→5 g, duong-trang 18→14 g (llm_suggested, low). vung-rang 2 g giữ nguyên (trong khoảng các nguồn). Bột ngô chỉ xuất hiện ở 1 họ sao chép lẫn nhau (Bibi/Hướng Nghiệp Á Âu) nên không thêm.",
+  "cultural_note": {
+    "text": "Bánh phu thê là đặc sản của làng Đình Bảng (Từ Sơn, Bắc Ninh), gắn với sự tích vua Lý Anh Tông đi đánh trận, người vợ ở nhà làm bánh gửi ra trận, vua ăn ngon bèn đặt tên là 'phu thê'; một tích khác kể vua Lý Thánh Tông dự hội Đền Đô, được đôi vợ chồng trẻ dâng bánh. Bánh được buộc thành từng cặp bằng lạt đỏ, tượng trưng cho lòng thuỷ chung son sắt, nên trở thành lễ vật không thể thiếu trong đám hỏi, đám cưới và trên mâm cỗ Tết. Năm màu của bánh — trắng của bột và dừa, vàng của dành dành và đậu xanh, đen của vừng, xanh của lá, đỏ của lạt — còn được ví với triết lý ngũ hành.",
+    "sources": [
+      {
+        "ref": "VOV — Vì sao bánh xu xê là lễ vật không thể thiếu trong đám cưới, đám hỏi?",
+        "url": "https://vov.vn/doi-song/vi-sao-banh-xu-xe-la-le-vat-khong-the-thieu-trong-dam-cuoi-dam-hoi-post1078003.vov"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

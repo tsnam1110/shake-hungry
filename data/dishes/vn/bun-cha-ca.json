@@ -159,6 +159,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 3 nguồn (bún chả cá Đà Nẵng). Phân xử định lượng: cha-ca-vien 60 → 115 g (hai nguồn đồng thuận ~100–150 g/khẩu phần; số 250 g của ĐMX gồm cả hấp + chiên, cùng chiều nhưng cao bất thường), bi-do 40 → 95 g (hai nguồn ~100–125 g/khẩu phần) và ca-chua 40 → 60 g (nguồn 3–4 quả/mẻ). Bất thường lớn ghi nhận chờ pha phân xử: bắp cải nấu trong nước dùng có ở 3/3 nguồn (kho đã có ingredient bap-cai, ~50 g/khẩu phần) mà file thiếu hẳn — đây là thiếu cấu trúc nước dùng, không phải sai số gram; mắm ruốc có ở 2/3 nguồn (đặc trưng Đà Nẵng), file thiếu; nguồn dùng chả miếng hấp + chiên, file dùng cha-ca-vien dạng viên — khác dạng chế biến. Phân xử bất thường LV2-003 (Phần A — LV2-004, 2026-10-31): Thêm bap-cai 50 g nấu trong nước dùng (3/3 nguồn đã mở ở đợt 3, ~50 g/khẩu phần — thiếu cấu trúc nước dùng, không phải sai số gram) và mam-ruoc 3 g (2/3 nguồn, nét đặc trưng bún chả cá Đà Nẵng). Dạng chả miếng hấp + chiên của nguồn vs cha-ca-vien của file là khác biệt dạng chế biến — giữ nguyên, ghi nhận.",
+  "cultural_note": {
+    "text": "Bún chả cá là đặc sản của Đà Nẵng, món ăn có mặt từ bữa sáng đến bữa tối, từ quán sang trọng đến hàng vỉa hè. Chả được làm từ cá biển tươi như cá mối, cá nhồng, cá thu, quết tay cho dai, một phần đem chiên, một phần để hấp; nước dùng hầm từ xương cá cùng bí đỏ, bắp cải, thơm và cà chua. Trên bàn ăn của các quán Đà Nẵng luôn có sẵn chén tỏi ớt giã và hũ mắm ruốc để thực khách tự thêm vào tô bún của mình.",
+    "sources": [
+      {
+        "ref": "Dân Việt (theo Thanh Niên) — Bún chả cá Đà Nẵng: Ăn hoài không chán",
+        "url": "https://danviet.vn/bun-cha-ca-da-nang-an-hoai-khong-chan-7777154821.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",
