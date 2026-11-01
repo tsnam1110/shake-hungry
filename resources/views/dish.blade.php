@@ -59,7 +59,7 @@ fetch('/api/dishes/' + encodeURIComponent(slug), { headers: { 'Accept': 'applica
                     <div class="ld-macro"><div class="gt ld-tnum">${n.carb_g ?? '?'} g</div><div class="nhan">Bột đường</div></div>
                     <div class="ld-macro"><div class="gt ld-tnum">${n.fiber_g ?? '?'} g</div><div class="nhan">Chất xơ</div></div>
                 </div>
-                ${unv.length ? `<div class="ld-warn" style="margin-top:14px"><span><b>Số liệu tham khảo — chưa kiểm định:</b> món có nguyên liệu dùng nguồn thứ cấp (${esc(unv.join(', '))}). Thông tin đã có nhưng chưa được kiểm chứng bằng nguồn chính thống.</span></div>` : ''}`
+                ${unv.length ? `<div class="ld-warn" style="margin-top:14px"><span><b>Số liệu tham khảo — chưa kiểm định:</b> món có nguyên liệu dùng nguồn thứ cấp, được gắn nhãn "Chưa kiểm định" trong danh sách nguyên liệu bên dưới. Thông tin đã có nhưng chưa được kiểm chứng bằng nguồn chính thống.</span></div>` : ''}`
             : '<p style="color:var(--color-faint);margin:10px 0 0">Chưa đủ dữ liệu dinh dưỡng cho món này — hệ thống không hiện số thay vì đoán.</p>'}
         </div>
 
@@ -102,21 +102,22 @@ fetch('/api/dishes/' + encodeURIComponent(slug), { headers: { 'Accept': 'applica
             <div class="ld-row"><span class="grow" style="color:var(--color-sub)">Bảng thành phần đã dùng</span><span class="value" style="color:var(--color-ink)">${esc(provenance.fct_source)}</span></div>
             <div class="ld-row"><span class="grow" style="color:var(--color-sub)">Engine tính</span><span class="value" style="color:var(--color-ink)">Phiên bản ${esc(provenance.engine_version)}</span></div>
             <div class="ld-row"><span class="grow" style="color:var(--color-sub)">Ngày tính</span><span class="value" style="color:var(--color-ink)">${new Date(provenance.computed_at).toLocaleDateString('vi-VN')}</span></div>
-            <div class="ld-row" style="flex-direction:column;align-items:flex-start;gap:2px"><span style="color:var(--color-sub)">Nguyên liệu tham gia tính</span><span style="color:var(--color-ink)">${esc((provenance.contributing_ingredients ?? []).join(', ') || '—')}</span></div>
-            ${(provenance.missing_ingredients ?? []).length ? `<div class="ld-row" style="flex-direction:column;align-items:flex-start;gap:2px"><span style="color:var(--color-sub)">Chưa tra được (không tính vào số trên)</span><span style="color:var(--color-ink)">${esc((provenance.missing_ingredient_names ?? provenance.missing_ingredients).join(', '))}</span></div>` : ''}
-            ${unv.length ? `<div class="ld-row" style="flex-direction:column;align-items:flex-start;gap:2px"><span style="color:var(--color-sub)">Nguyên liệu nguồn thứ cấp</span><span style="color:var(--color-ink)">${esc(unv.join(', '))}</span></div>` : ''}
         </div>
         <p class="ld-note" style="margin-top:10px">Khối này luôn mở sẵn — minh bạch nguồn là điểm khác biệt của Lắc Đói, bạn kiểm chứng được mọi con số ngay tại trang này.</p>` : ''}
 
         <h2 class="ld-section-title">Nguyên liệu · một khẩu phần</h2>
         <div class="ld-group">
-            ${(d.dish_ingredients ?? []).map(di => `<a class="ld-row ld-row-compact" href="/nguyen-lieu/${di.ingredient?.slug ?? ''}">
+            ${(d.dish_ingredients ?? []).map(di => {
+                const isMissing = (provenance?.missing_ingredients ?? []).includes(di.ingredient?.slug);
+                const isUnverified = (provenance?.unverified_slugs ?? []).includes(di.ingredient?.slug);
+                return `<a class="ld-row ld-row-compact" href="/nguyen-lieu/${di.ingredient?.slug ?? ''}">
                 <img class="ld-thumb" src="${di.ingredient?.image?.url ?? '/images/placeholder-ingredient.svg'}" alt="" loading="lazy" decoding="async">
                 <span class="grow">
                     <span style="font-weight:600">${esc(di.ingredient?.name_vi ?? '')}</span>
+                    ${isMissing ? '<span class="ld-badge" style="background:var(--color-danger-tint);color:var(--color-danger);margin-left:6px">Chưa có số — chưa tính</span>' : ''}${isUnverified ? '<span class="ld-badge unv" style="margin-left:6px">Chưa kiểm định</span>' : ''}
                     <span class="sub ld-tnum">${esc(di.quantity ?? '')} ${esc(di.unit_name ?? '')}${di.note ? ' · ' + esc(di.note) : ''}${di.is_optional ? ' · Tuỳ chọn' : ''}${di.is_discarded ? ' · Phần bỏ đi' : ''}</span>
                 </span>${chev}
-            </a>`).join('')
+            </a>`; }).join('')
               || '<p style="color:var(--color-faint);padding:16px;margin:0">Chưa có định lượng.</p>'}
         </div>
 

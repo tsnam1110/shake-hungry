@@ -154,6 +154,9 @@ class CatalogController extends Controller
                 'missing_ingredient_names' => \App\Models\Ingredient::query()
                     ->whereIn('slug', $dish->nutrition->missing_ingredients ?? [])
                     ->pluck('name_vi')->values(),
+                // UI-022: slug nguyên liệu chưa kiểm định — trang món gắn nhãn
+                // ngay trên từng dòng của danh sách nguyên liệu bên dưới.
+                'unverified_slugs' => $dish->nutrition->unverified_ingredients ?? [],
                 // Cờ "chưa kiểm định": nguyên liệu dùng nguồn thứ cấp (hiển thị cảnh báo ở UI)
                 'unverified_ingredients' => $dish->dishIngredients
                     ->filter(fn ($di) => in_array($di->ingredient->slug, $dish->nutrition->unverified_ingredients ?? [], true))
