@@ -544,6 +544,21 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > ExportStabilityTest đạt. Chi tiết:
 > [TCM-PROMOTE-002](docs/05-tasks/tasks/TCM-PROMOTE-002.md).
 
+> ## ⚠️ Đính chính lần 32, 2026-11-01 — AUDIT-ALLERGEN: nhãn dị ứng sạch, nhưng LỌC CỨNG rò rỉ ở tầng preset giao diện
+>
+> Census dị ứng toàn kho (654 món / 434 nguyên liệu / 82 quả / 11 nhóm, 2 phương pháp độc lập khớp
+> tuyệt đối, validate 0 🔴): **tầng nhãn không có lỗi cơ học nào** — file khớp `TaggingRules` 100%,
+> nhãn món khớp `DishTagDeriver` 100%. Cờ cá mà chủ dự án thắc mắc đã phân rã trọn: 388 món có cờ =
+> 109 món có cá thật + **274 món chỉ vì nước mắm/mắm cá (đúng chính sách đã ghi ở TAXONOMY §4 — chờ
+> chủ dự án quyết ALG-Q1)** + 5 món vì giò/chả quy ước + 0 món không giải thích được. **Lỗi thật nằm
+> ở tầng lọc:** `Recommender` lọc theo slug, còn danh sách slug người dùng chọn được là **preset viết
+> tay đóng băng từ REC-001** ở `shake.blade.php`/`profile.blade.php` — **thiếu hẳn chip Cá (388 món),
+> Động vật có vỏ (56), Mè (53)** và thiếu slug hàng loạt (đo `pool()` thật: chọn "Đậu nành" vẫn lọt 36
+> món mang cờ, "Tôm" lọt 22 — gồm cả món tôm càng; dùng toàn bộ slug có nhãn thì rò 0). Gắn thiếu duy
+> nhất ở tầng dữ liệu: `cha-bong` (hồ sơ ghi có nước mắm nhưng bảng luật chưa gắn cờ cá; hiện 0 món
+> dùng). Chưa sửa gì trong đợt rà — đề xuất FIX-A1…A4 + quyết định ALG-Q1…Q4 tại
+> [AUDIT-ALLERGEN](docs/05-tasks/tasks/AUDIT-ALLERGEN.md).
+
 **Trạng thái thực tế, kiểm ngày 2026-10-31 (đã chạy lại toàn bộ lệnh kiểm chứng):**
 
 | Hạng mục | Thực tế | Kiểm bằng |
