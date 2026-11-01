@@ -76,6 +76,25 @@ fetch('/api/fruits/' + encodeURIComponent(slug), { headers: { 'Accept': 'applica
             : '<p style="color:var(--color-faint);margin:10px 0 0">Chưa có số dinh dưỡng đạt chuẩn cho quả này — hệ thống không đoán số.</p>'}
         </div>
 
+        ${ing.tcm?.traits?.length ? `
+        <h2 class="ld-section-title">Tính vị:</h2>
+        <div class="ld-group">
+            ${ing.tcm.traits.map(t => `<div class="ld-row" style="align-items:flex-start"><span class="grow">
+                <b>${[t.nature_label, t.flavor_label, t.element_label].filter(Boolean).map(esc).join(' · ')}</b>
+                <span class="sub">Nguồn: ${esc(t.source_ref)} · Độ tin cậy: ${esc(t.confidence)}</span>
+                ${t.usage_restricted ? `<span class="sub" style="color:var(--color-danger)">Không được dùng — ${esc(t.usage_note ?? '')}</span>` : ''}
+            </span></div>`).join('')}
+        </div>
+        ${ing.tcm.has_conflicts ? '<p class="ld-note" style="margin-top:10px">Các nguồn chưa thống nhất về tính của loại quả này — mọi nhãn đều được giữ và hiển thị ở trên.</p>' : ''}
+        <p class="ld-note" style="margin-top:10px">Phân loại theo quan niệm ẩm thực truyền thống — thông tin văn hoá, không phải tư vấn sức khoẻ. <a href="/mien-tru-y-te">Đọc Miễn trừ y tế</a>.</p>` : ''}
+
+        ${f.cultural_note ? `
+        <h2 class="ld-section-title">Ghi chú văn hoá</h2>
+        <div class="ld-card">
+            <p style="margin:0;font-size:15.5px">${esc(f.cultural_note.text ?? '')}</p>
+            ${(f.cultural_note.sources ?? []).length ? `<p class="ld-note" style="margin-top:10px">Nguồn: ${f.cultural_note.sources.map(s => s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener" style="color:var(--color-link)">${esc(s.ref)}</a>` : esc(s.ref)).join(' · ')}</p>` : ''}
+        </div>` : ''}
+
         <h2 class="ld-section-title">Mùa vụ trong năm</h2>
         <div class="ld-card" style="padding:16px 18px">
             ${seasonRow('Có hàng', f.availability_months, '#bfe8cb', 'var(--color-mint-dark)')}

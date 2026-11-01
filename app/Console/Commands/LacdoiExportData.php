@@ -36,7 +36,7 @@ class LacdoiExportData extends Command
     {
         $index = [];
 
-        foreach (Ingredient::with(['units', 'tags', 'aliases', 'media'])->orderBy('slug')->get() as $ing) {
+        foreach (Ingredient::with(['units', 'tags', 'aliases', 'media', 'tcmTraits', 'components'])->orderBy('slug')->get() as $ing) {
             $payload = $this->ingredientPayload($ing);
             $this->writeJson(base_path("data/ingredients/{$ing->slug}.json"), $payload);
             $index[] = ['slug' => $ing->slug, 'name_vi' => $ing->name_vi, 'category' => $ing->category];
@@ -121,6 +121,9 @@ class LacdoiExportData extends Command
                 'note' => $fruit->best_value_note,
             ],
             'pairing_cautions' => $fruit->pairing_cautions ?? [],
+            // Ghi chú văn hoá (TCM-000): vắng khoá khi chưa có — JSON compact
+            // tự sắp khoá theo bảng chữ cái nên vị trí ở đây không quan trọng.
+            ...($fruit->cultural_note !== null ? ['cultural_note' => self::culturalNotePayload($fruit->cultural_note)] : []),
             'selection_note' => $fruit->selection_note,
             'storage_note' => $fruit->storage_note,
             'prices' => $prices,
@@ -236,7 +239,66 @@ class LacdoiExportData extends Command
             );
         }
 
+        // Lớp tính vị (TCM-000): chỉ ghi khi có nhãn/liên kết — nguyên liệu
+        // chưa có giữ nguyên từng byte. Thứ tự dòng tất định theo
+        // (source_ref, nature, flavor) để vòng seed → export là điểm cố định.
+        $traits = $ing->tcmTraits
+            ->map(function ($t) {
+                $row = [
+                    'nature' => $t->nature,
+                    'flavor' => $t->flavor,
+                    'element' => $t->element,
+                    'source_ref' => $t->source_ref,
+                    'confidence' => $t->confidence,
+                ];
+                if ($t->usage_restricted) {
+                    $row['usage_restricted'] = true;
+                    $row['usage_note'] = $t->usage_note;
+                }
+
+                return $row;
+            })
+            ->all();
+        usort($traits, fn ($a, $b) => strcmp(
+            ($a['source_ref'] ?? '').'|'.($a['nature'] ?? '').'|'.($a['flavor'] ?? ''),
+            ($b['source_ref'] ?? '').'|'.($b['nature'] ?? '').'|'.($b['flavor'] ?? ''),
+        ));
+        if ($traits !== []) {
+            $payload = $this->insertAfterKey($payload, 'media', ['tcm_traits' => $traits], fallbackKey: 'units');
+        }
+
+        $components = $ing->components->pluck('slug')->sort(SORT_STRING)->values()->all();
+        if ($components !== []) {
+            $payload = $this->insertAfterKey($payload, 'tcm_traits', ['components' => $components], fallbackKey: 'media');
+        }
+
         return $payload;
+    }
+
+    /**
+     * Chèn khối $block ngay sau khoá $afterKey (hoặc $fallbackKey nếu khoá
+     * chính vắng mặt; cuối mảng nếu cả hai đều vắng).
+     *
+     * @param  array<string, mixed>  $payload
+     * @param  array<string, mixed>  $block
+     * @return array<string, mixed>
+     */
+    private function insertAfterKey(array $payload, string $afterKey, array $block, ?string $fallbackKey = null): array
+    {
+        $keys = array_keys($payload);
+        $pos = array_search($afterKey, $keys, true);
+        if ($pos === false && $fallbackKey !== null) {
+            $pos = array_search($fallbackKey, $keys, true);
+        }
+        if ($pos === false) {
+            return [...$payload, ...$block];
+        }
+
+        return array_merge(
+            array_slice($payload, 0, $pos + 1),
+            $block,
+            array_slice($payload, $pos + 1),
+        );
     }
 
     /**
@@ -332,7 +394,7 @@ class LacdoiExportData extends Command
             ])
             ->all();
 
-        return [
+        $payload = [
             'slug' => $dish->slug,
             'parent_dish_slug' => $dish->parent?->slug,
             'country_code' => $dish->country_code,
@@ -364,6 +426,48 @@ class LacdoiExportData extends Command
                 // nhãn suy từ thành phần không ghi vào file.
                 ->filter(fn ($t) => str_starts_with((string) $t, 'loai:') || str_starts_with((string) $t, 'dac-san:'))
                 ->sort()->values()->all(),
+        ];
+
+        // Đường nâng bù "Mức 2 (có note)" (TCM-000): chỉ ghi khi có căn cứ —
+        // món thường giữ nguyên từng byte. Đặt ngay sau completeness_level.
+        if ($dish->level_basis !== null) {
+            $payload = $this->insertAfterKey($payload, 'completeness_level', [
+                'level_basis' => $dish->level_basis,
+                'level_note' => $dish->level_note,
+            ]);
+        }
+
+        // Ghi chú văn hoá (TCM-000): chỉ ghi khi có, đặt sau import_note.
+        if ($dish->cultural_note !== null) {
+            $payload = $this->insertAfterKey($payload, 'import_note', [
+                'cultural_note' => self::culturalNotePayload($dish->cultural_note),
+            ], fallbackKey: 'external_ref');
+        }
+
+        return $payload;
+    }
+
+    /**
+     * Chuẩn hoá khối ghi chú văn hoá về khuôn cố định {text, sources[{ref, url}]}
+     * để vòng seed → export là điểm cố định từng byte.
+     *
+     * @param  array<string, mixed>  $note
+     * @return array<string, mixed>
+     */
+    private static function culturalNotePayload(array $note): array
+    {
+        $sources = collect($note['sources'] ?? [])
+            ->map(fn ($s) => [
+                'ref' => $s['ref'] ?? '',
+                'url' => $s['url'] ?? null,
+            ])
+            ->sortBy(fn ($s) => $s['ref'].'|'.($s['url'] ?? ''), SORT_STRING)
+            ->values()
+            ->all();
+
+        return [
+            'text' => $note['text'] ?? '',
+            'sources' => $sources,
         ];
     }
 

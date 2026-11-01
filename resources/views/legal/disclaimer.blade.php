@@ -23,6 +23,7 @@
 
         <h2>3. Về nội dung văn hoá (âm dương, ngũ hành)</h2>
         <p>Thông tin về tính hàn/nhiệt, âm dương, ngũ hành (kèm các kiêng kỵ kết hợp thực phẩm của hoa quả) là lớp thông tin <strong>văn hoá — ẩm thực truyền thống</strong>, được trình bày ở cấp độ nguyên liệu để tham khảo. Đây không phải khẳng định y học và không nên dùng làm căn cứ điều trị.</p>
+        <p>Nhãn tính vị được gán cho từng nguyên liệu kèm nguồn; tính vị của một món là kết quả <strong>tổng hợp tự động</strong> từ các nguyên liệu của món theo trọng số khối lượng, kèm hệ số điều chỉnh theo cách chế biến vốn là <strong>quy ước của dự án</strong> (y văn không định lượng con số này) — và chỉ hiển thị khi phần nguyên liệu đã có nhãn đủ lớn. Phân loại này không được chuẩn hoá giữa các trường phái: khi các nguồn ghi khác nhau, hệ thống hiển thị cả mâu thuẫn thay vì tự chọn một.</p>
 
         <h2>4. Khi nào cần gặp chuyên gia</h2>
         <p>Nếu bạn đang mang thai, cho con bú, có bệnh nền (đái tháo đường, thận, tim mạch…), đang dùng thuốc, hoặc có mục tiêu thay đổi cân nặng vì lý do sức khoẻ, hãy làm việc trực tiếp với bác sĩ hoặc chuyên gia dinh dưỡng thay vì dựa vào gợi ý của hệ thống.</p>

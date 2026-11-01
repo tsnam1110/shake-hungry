@@ -101,9 +101,18 @@ class TaxonomyController extends Controller
     /** Chi tiết một nguyên liệu (UI-017): dinh dưỡng/100g, nhãn, món có dùng. */
     public function ingredient(Ingredient $ingredient): JsonResponse
     {
-        $ingredient->load(['tags:id,slug,name', 'aliases:id,ingredient_id,name,note', 'media']);
+        $ingredient->load(['tags:id,slug,name', 'aliases:id,ingredient_id,name,note', 'media', 'tcmTraits', 'components:id,slug,name_vi']);
         $ingredient->setAttribute('image', $ingredient->primaryImage());
         $ingredient->setAttribute('unverified', \App\Nutrition\SourceTier::isSecondary($ingredient->nutrition_snapshot['fct_source'] ?? null));
+        // TCM-000: khối "Tính vị:" (mọi dòng nhãn kèm nguồn, kể cả mâu thuẫn)
+        // và liên kết thành phần cho nguyên liệu hỗn hợp — trình bày qua
+        // TcmDisplay rồi gỡ relation thô để JSON chỉ có một khuôn duy nhất.
+        $ingredient->setAttribute('tcm', \App\Cultural\TcmDisplay::forIngredient($ingredient));
+        $ingredient->setAttribute('component_links', $ingredient->components
+            ->map(fn ($c) => ['slug' => $c->slug, 'name_vi' => $c->name_vi])
+            ->values()->all());
+        $ingredient->unsetRelation('tcmTraits');
+        $ingredient->unsetRelation('components');
         $fruit = \App\Models\Fruit::where('ingredient_id', $ingredient->id)->first(['slug']);
         $dishes = \App\Models\Dish::query()
             ->whereHas('dishIngredients', fn ($w) => $w->where('ingredient_id', $ingredient->id))

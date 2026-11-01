@@ -68,6 +68,23 @@ fetch('/api/ingredients/' + slug).then(r => { if (!r.ok) throw new Error('404');
                 <p class="ld-note" style="margin-top:10px">Nguyên liệu này mang nhãn chất gây dị ứng theo dữ liệu dự án biên soạn. Khi lắc món, dị ứng trong hồ sơ của bạn là điều kiện lọc cứng — món chứa nguyên liệu này sẽ bị loại. <a href="/mien-tru-y-te">Đọc Miễn trừ y tế</a>.</p>`
             : `<p class="ld-note" style="margin:0">Dữ liệu hiện tại chưa ghi nhận chất gây dị ứng phổ biến ở nguyên liệu này. Điều này không phải cam kết an toàn tuyệt đối — nếu bạn bị dị ứng, hãy kiểm tra kỹ trước khi dùng. <a href="/mien-tru-y-te">Đọc Miễn trừ y tế</a>.</p>`}
         </div>
+        ${i.tcm?.traits?.length ? `<h2 class="ld-section-title">Tính vị:</h2>
+        <div class="ld-group">
+            ${i.tcm.traits.map(t => `<div class="ld-row" style="align-items:flex-start"><span class="grow">
+                <b>${[t.nature_label, t.flavor_label, t.element_label].filter(Boolean).map(esc).join(' · ')}</b>
+                <span class="sub">Nguồn: ${esc(t.source_ref)} · Độ tin cậy: ${esc(t.confidence)}</span>
+                ${t.usage_restricted ? `<span class="sub" style="color:var(--color-danger)">Không được dùng — ${esc(t.usage_note ?? '')}</span>` : ''}
+            </span></div>`).join('')}
+        </div>
+        ${i.tcm.has_conflicts ? '<p class="ld-note" style="margin-top:10px">Các nguồn chưa thống nhất về tính của nguyên liệu này — mọi nhãn đều được giữ và hiển thị ở trên, dự án không tự chọn một nhãn rồi giấu các nhãn còn lại.</p>' : ''}
+        <p class="ld-note" style="margin-top:10px">Phân loại theo quan niệm ẩm thực truyền thống, gán ở cấp độ nguyên liệu — đây là thông tin văn hoá, không phải tư vấn sức khoẻ. <a href="/mien-tru-y-te">Đọc Miễn trừ y tế</a>.</p>` : ''}
+
+        ${(i.component_links ?? []).length ? `<h2 class="ld-section-title">Thành phần cấu thành</h2>
+        <div class="ld-group">
+            ${i.component_links.map(c => `<a class="ld-row" href="/nguyen-lieu/${c.slug}" style="text-decoration:none"><span class="grow">${esc(c.name_vi)}</span><span style="color:var(--color-faint);font-size:19px">›</span></a>`).join('')}
+        </div>
+        <p class="ld-note" style="margin-top:10px">Đây là nguyên liệu hỗn hợp — bấm vào từng thành phần để xem chi tiết dinh dưỡng và tính vị của thành phần đó.</p>` : ''}
+
         ${Object.keys(facets).length ? `<h2 class="ld-section-title">Phân loại</h2>
         <div style="display:flex;flex-direction:column;gap:10px">${Object.entries(facets).map(([f, ts]) => `
             <div><p class="ld-group-label" style="margin:0 0 6px">${facetLabel[f] ?? esc(f)}</p>

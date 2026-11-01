@@ -244,9 +244,27 @@ Tính vị theo y học cổ truyền. **Gán ở tầng nguyên liệu, không 
 | `element` | varchar(8) | `moc`, `hoa`, `tho`, `kim`, `thuy` |
 | `source_ref` | text | **bắt buộc** — tên tài liệu/URL. Không nguồn thì không được nhập |
 | `confidence` | varchar(8) | |
+| `usage_restricted` | boolean | TCM-000: nguồn uy tín nhưng điều khoản hạn chế sử dụng/tái phân phối — dữ liệu vẫn lưu theo chính sách lưu trữ nội bộ, kèm ghi chú |
+| `usage_note` | text null | **Bắt buộc khi `usage_restricted = true`** (CHECK `tcm_usage_note_check`) — phải chứa ghi chú "không được dùng" và lý do |
 
 **Cho phép nhiều dòng cho một nguyên liệu** khi các nguồn mâu thuẫn nhau — đó là chuyện bình thường
 với phân loại này, và mâu thuẫn phải được hiển thị chứ không giấu đi.
+
+Trong file dữ liệu, nhãn nằm ở khoá `tcm_traits` của file nguyên liệu (xem
+[DATA-REPOSITORY §3](../04-data-sources/DATA-REPOSITORY.md)). `element` để null trong file
+thì được suy từ `flavor` theo ánh xạ cổ điển khi tổng hợp/hiển thị; ghi tường minh mà lệch
+ánh xạ đó thì validator V20 báo 🔴.
+
+### `ingredient_components` (TCM-000)
+
+Liên kết thành phần của **nguyên liệu hỗn hợp** (bột rang muối, nước mắm pha…): người dùng
+từ trang nguyên liệu bấm sang được từng thành phần để xem chi tiết. Nguồn sự thật là khoá
+`components: [slug…]` trong file nguyên liệu; bảng này là bản dựng để truy vấn.
+
+| Cột | Kiểu | Ghi chú |
+|---|---|---|
+| `ingredient_id` | bigint | nguyên liệu hỗn hợp |
+| `component_ingredient_id` | bigint | nguyên liệu thành phần — FK restrict khi xoá, unique theo cặp, CHECK chống tự trỏ |
 
 ---
 
@@ -265,6 +283,9 @@ với phân loại này, và mâu thuẫn phải được hiển thị chứ kh�
 | `is_home_cook` | boolean | có thể tự nấu — một món có thể cả hai |
 | `cooking_method` | varchar(24) null | `luoc`, `hap`, `xao`, `chien`, `nuong`, `kho`, `nau`, `song` — **quyết định hệ số calo** |
 | `completeness_level` | smallint | 1 / 2 / 3 — xem [PRD §7](../01-prd/PRD.md) |
+| `level_basis` | varchar(24) null | TCM-000: căn cứ của mức khi không theo cổng thường — hiện chỉ có `tcm_compensation` (đường nâng bù: Mức 1 không đạt cổng Mức 2 nhưng đủ thông tin Mức 3 ⇒ "Mức 2 (có note)"). CHECK: chỉ đi với `completeness_level = 2` |
+| `level_note` | text null | **Bắt buộc khi `level_basis` khác null** (CHECK) — ghi rõ cổng chưa đạt và căn cứ được nâng; hiển thị công khai cạnh nhãn mức |
+| `cultural_note` | json null | TCM-000: ghi chú văn hoá của món — `{text, sources: [{ref, url}]}`; bắt buộc (kèm coverage ≥60%) cho cổng Mức 3 và đường nâng bù, do V20 kiểm |
 | `recipe_steps` | json null | mảng bước nấu; null nếu chỉ Mức 1 |
 | `serving_desc` | text null | "1 tô cỡ vừa" |
 | `serving_grams` | numeric(8,2) null | khối lượng khẩu phần |
@@ -396,6 +417,12 @@ Kết quả tổng hợp tính vị từ nguyên liệu lên món. Do máy tính
 | `dominant_element` | varchar(8) null | |
 | `coverage_pct` | numeric(5,2) | % khối lượng nguyên liệu có nhãn tính vị |
 | `confidence` | varchar(8) | `coverage_pct` < 60 ⇒ tối đa `low` |
+| `has_conflicts` | boolean | TCM-000: có nguyên liệu trong món mang ≥2 nhãn `nature` mâu thuẫn — phải hiển thị, và `confidence` bị hạ xuống `low` |
+| `computed_at` | timestamp | |
+
+Do `App\Cultural\TcmAggregator` tính (lệnh `lacdoi:recompute-tcm`); quy ước tổng hợp đầy
+đủ tại [NGU-HANH-AM-DUONG §8](../08-cultural/NGU-HANH-AM-DUONG.md). Món không có nguyên
+liệu có nhãn nào thì **không có dòng** ở bảng này.
 
 ---
 
@@ -489,7 +516,8 @@ không chỉ kiểm tra ở tầng ứng dụng:
 | R5 | `ingredient_tcm_traits.source_ref` NOT NULL | QT-6 |
 | R6 | `dishes.completeness_level >= 2` ⇒ tồn tại ≥1 `dish_ingredients` | PRD §7 |
 | R7 | `ingredients.mapping_confidence <> 'high'` ⇒ `mapping_note` NOT NULL | truy nguyên |
-| R8 | `dishes.completeness_level >= 2` ⇒ có ≥3 dòng `dish_recipe_sources` | truy nguyên công thức |
+| R8 | `dishes.completeness_level >= 2` ⇒ có ≥3 dòng `dish_recipe_sources` — **ngoại lệ TCM-000:** món `level_basis = 'tcm_compensation'` được miễn (đạt Mức 2 bằng cổng thông tin Mức 3 do R11 kiểm thay); trigger đã tạo lại trong migration TCM-000 | truy nguyên công thức |
+| R11 | `dishes.level_basis = 'tcm_compensation'` ⇒ `level_note` không rỗng (CHECK) **và** có `cultural_note` **và** `dish_tcm_summary.coverage_pct >= 60` (hai điều kiện sau do V20 kiểm ở tầng DB vì coverage là dữ liệu dẫn xuất) | đường nâng bù Mức 3 — chống nâng hình thức |
 | R9 | `dish_ingredients.ingredient_id` phải trỏ tới nguyên liệu có thật | chống slug lỗi thời |
 | R10 | `needs_review = false` ⇒ `reviewed_by` và `reviewed_at` NOT NULL (bảng `ingredients` và `dishes`) | QT-1 — duyệt phải có bằng chứng |
 

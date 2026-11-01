@@ -14,12 +14,16 @@ class Dish extends Model
 {
     protected $guarded = [];
 
+    /** Căn cứ nâng bù Mức 2 bằng cổng thông tin Mức 3 (TCM-000, kế hoạch Mức 3 §1). */
+    public const LEVEL_BASIS_TCM_COMPENSATION = 'tcm_compensation';
+
     protected function casts(): array
     {
         return [
             'recipe_steps' => 'array',
             'estimated_kcal' => 'array',
             'external_ref' => 'array',
+            'cultural_note' => 'array',
             'is_eat_out' => 'boolean',
             'is_home_cook' => 'boolean',
             'needs_review' => 'boolean',
@@ -125,6 +129,26 @@ class Dish extends Model
     public function recipeSources(): HasMany
     {
         return $this->hasMany(DishRecipeSource::class);
+    }
+
+    /** Tổng hợp tính vị do máy tính (TCM-002) — null khi chưa có nhãn nào đủ để tổng hợp. */
+    public function tcmSummary(): HasOne
+    {
+        return $this->hasOne(DishTcmSummary::class);
+    }
+
+    /**
+     * Nhãn mức hoàn thiện để hiển thị: món nâng bù theo đường Mức 3 phải
+     * phân biệt rõ với Mức 2 đầy đủ — "Mức 2 (có note)" (TCM-000).
+     */
+    public function levelLabel(): string
+    {
+        $label = 'Mức '.$this->completeness_level;
+        if ($this->level_basis === self::LEVEL_BASIS_TCM_COMPENSATION) {
+            $label .= ' (có note)';
+        }
+
+        return $label;
     }
 
     public function tags(): BelongsToMany

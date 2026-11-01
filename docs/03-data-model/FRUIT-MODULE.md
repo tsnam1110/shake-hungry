@@ -40,6 +40,7 @@ Mọi dữ liệu vẫn là file trong `data/` (QT-3): `data/fruits/<slug>.json`
 | `best_value_window` | `{months, note}` — mùa giá hời nhất (thường trùng/đầu vụ chính khi nguồn cung dồi dào), suy từ dữ liệu giá §3 |
 | `pairing_cautions` | mảng `{with, level, note}`: thực phẩm không nên ăn cùng. `level` ∈ `co-so` (có cơ sở: vd tannin trong hồng + đạm/hải sản gây khó tiêu — có tài liệu) / `dan-gian` (kinh nghiệm dân gian, chưa kiểm chứng — hiển thị đúng nhãn, không khẳng định y khoa) |
 | `storage_note`, `selection_note` | cách chọn quả ngon + bảo quản (biên tập, ngắn) |
+| `cultural_note` | TCM-000: ghi chú văn hoá của quả — `{text, sources: [{ref, url}]}` (mùa vụ, lễ Tết, tập quán vùng); cùng định dạng với `cultural_note` của món, V20 kiểm cấu trúc + nguồn. Cột `fruits.cultural_note` (json) ở DB |
 | `prices` | xem §3 |
 | `needs_review`, `reviewed_*` | cùng quy ước kho món |
 

@@ -60,6 +60,9 @@ class DishSeeder extends Seeder
                     'is_home_cook' => $j['is_home_cook'] ?? false,
                     'cooking_method' => $j['cooking_method'] ?? null,
                     'completeness_level' => $j['completeness_level'] ?? 1,
+                    'level_basis' => $j['level_basis'] ?? null,
+                    'level_note' => $j['level_note'] ?? null,
+                    'cultural_note' => $j['cultural_note'] ?? null,
                     'recipe_steps' => $j['recipe_steps'] ?? null,
                     'serving_desc' => $j['serving_desc'] ?? null,
                     'serving_grams' => $j['serving_grams'] ?? null,
@@ -160,6 +163,12 @@ class DishSeeder extends Seeder
         $service = app(DishNutritionService::class);
         foreach (Dish::where('completeness_level', '>=', 2)->get() as $dish) {
             $service->computeAndStore($dish, $service->pickFctSource($dish));
+        }
+
+        // Tổng hợp tính vị cũng là dữ liệu dẫn xuất (TCM-002) — chỉ chạy khi
+        // đã có nhãn; chưa có nhãn nào thì toàn bộ summary giữ rỗng hợp lệ.
+        if (\App\Models\IngredientTcmTrait::exists()) {
+            app(\App\Cultural\TcmAggregator::class)->recomputeAll();
         }
 
         $this->command?->info('Đã seed '.count($files).' món từ data/dishes/.');

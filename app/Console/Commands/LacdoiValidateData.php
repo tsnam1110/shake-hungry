@@ -20,7 +20,7 @@ class LacdoiValidateData extends Command
 {
     protected $signature = 'lacdoi:validate-data';
 
-    protected $description = 'Kiểm tra toàn vẹn dữ liệu trong data/ và database (V1–V19, DATA-PIPELINE §5)';
+    protected $description = 'Kiểm tra toàn vẹn dữ liệu trong data/ và database (V1–V20, DATA-PIPELINE §5)';
 
     /** @var list<string> */
     private array $errors = [];
@@ -43,6 +43,7 @@ class LacdoiValidateData extends Command
         $this->validateMediaManifest();
         $this->validateMediaEntries($ingredients, $dishes);
         $this->validateDatabase();
+        $this->validateTcmDatabase();
 
         $this->newLine();
         $this->line(sprintf(
@@ -157,6 +158,12 @@ class LacdoiValidateData extends Command
                 $this->errors[] = "V14 [{$slug}]: có kcal_per_100g nhưng thiếu source_url";
             }
 
+            // V20 — lớp tính vị + liên kết thành phần (🔴, TCM-000): nhãn
+            // không nguồn bị cấm tuyệt đối (R5/QT-6); components phải trỏ
+            // tới nguyên liệu có thật, không tự trỏ, không trùng.
+            $this->validateTcmTraits("[{$slug}]", $j);
+            $this->validateComponents("[{$slug}]", $j, $ingredients);
+
             // V15 (R10) — hạ needs_review mà không ghi ai duyệt / duyệt khi nào (🔴).
             // Cờ duyệt không có bằng chứng thì không phải là duyệt (QT-1).
             $this->validateReviewTrail("[{$slug}]", $j);
@@ -236,8 +243,34 @@ class LacdoiValidateData extends Command
             }
 
             // V12 — Mức ≥2 mà <3 nguồn công thức (🔴, ràng buộc R8).
-            if ($level >= 2 && count($j['recipe_sources'] ?? []) < 3) {
+            // Ngoại lệ duy nhất (TCM-000): món nâng bù level_basis=
+            // 'tcm_compensation' đạt Mức 2 bằng cổng thông tin Mức 3 —
+            // cổng đó do V20 kiểm (note + ghi chú văn hoá ở tầng file,
+            // coverage ≥60 ở tầng DB), không áp R8 cho nhóm này.
+            $isCompensation = ($j['level_basis'] ?? null) === 'tcm_compensation';
+            if ($level >= 2 && ! $isCompensation && count($j['recipe_sources'] ?? []) < 3) {
                 $this->errors[] = "V12 [{$slug}]: completeness_level={$level} nhưng chỉ có ".count($j['recipe_sources'] ?? []).' recipe_sources (cần ≥3)';
+            }
+
+            // V20 (tầng file) — đường nâng bù + ghi chú văn hoá (🔴, TCM-000).
+            $this->validateCulturalNote("[{$slug}]", $j['cultural_note'] ?? null);
+            $basis = $j['level_basis'] ?? null;
+            if ($basis !== null && $basis !== 'tcm_compensation') {
+                $this->errors[] = "V20 [{$slug}]: level_basis '{$basis}' không hợp lệ (chỉ có 'tcm_compensation')";
+            }
+            if ($isCompensation) {
+                if ($level !== 2) {
+                    $this->errors[] = "V20 [{$slug}]: level_basis='tcm_compensation' chỉ đi với completeness_level=2 (đang là {$level})";
+                }
+                if (blank($j['level_note'] ?? null)) {
+                    $this->errors[] = "V20 [{$slug}]: Mức 2 (có note) nhưng thiếu level_note — note phải ghi rõ cổng chưa đạt và căn cứ nâng";
+                }
+                if (($j['cultural_note'] ?? null) === null) {
+                    $this->errors[] = "V20 [{$slug}]: Mức 2 (có note) nhưng thiếu cultural_note — đường nâng bù yêu cầu đủ thông tin Mức 3 (ghi chú văn hoá + phủ tính vị ≥60%, phần phủ kiểm ở tầng DB)";
+                }
+            }
+            if ($level >= 3 && ($j['cultural_note'] ?? null) === null) {
+                $this->errors[] = "V20 [{$slug}]: completeness_level=3 nhưng thiếu cultural_note — cổng Mức 3 yêu cầu ghi chú văn hoá";
             }
 
             // V15 (R10) — dấu vết duyệt, cùng luật với nguyên liệu.
@@ -258,6 +291,165 @@ class LacdoiValidateData extends Command
                 if (($est['min'] ?? null) !== null && ($est['max'] ?? null) !== null && $est['min'] > $est['max']) {
                     $this->errors[] = "V5 [{$slug}]: estimated_kcal.min > max";
                 }
+            }
+        }
+    }
+
+    /**
+     * V20 (tầng file) — nhãn tính vị của một nguyên liệu (TCM-000, QT-6/R5):
+     * mỗi dòng nhãn phải có source_ref, từ vựng phải thuộc hệ phân loại,
+     * element (khi ghi) phải khớp ánh xạ cổ điển từ vị, và cờ hạn chế sử
+     * dụng phải đi kèm ghi chú (chính sách lưu trữ nguồn hạn chế — kế hoạch
+     * Mức 3 §2). Ghi chú thiếu cụm "không được dùng" chỉ là 🟡: câu chữ
+     * chính xác do người biên soạn chịu trách nhiệm, máy chỉ nhắc.
+     *
+     * @param  array<string, mixed>  $j
+     */
+    private function validateTcmTraits(string $label, array $j): void
+    {
+        $natures = array_keys(\App\Cultural\TcmVocabulary::NATURE_POINTS);
+        $flavors = array_keys(\App\Cultural\TcmVocabulary::FLAVOR_LABELS);
+        $elements = array_keys(\App\Cultural\TcmVocabulary::ELEMENT_LABELS);
+        $confidences = ['high', 'medium', 'low'];
+
+        foreach ($j['tcm_traits'] ?? [] as $i => $t) {
+            $row = "V20 {$label} tcm_traits[".($i + 1).']';
+            if (! is_array($t)) {
+                $this->errors[] = "{$row}: dòng nhãn phải là một object";
+
+                continue;
+            }
+            if (blank($t['source_ref'] ?? null)) {
+                $this->errors[] = "{$row}: thiếu source_ref — nhãn tính vị không nguồn bị cấm tuyệt đối (R5)";
+            }
+            $nature = $t['nature'] ?? null;
+            $flavor = $t['flavor'] ?? null;
+            $element = $t['element'] ?? null;
+            if ($nature !== null && ! in_array($nature, $natures, true)) {
+                $this->errors[] = "{$row}: nature '{$nature}' ngoài từ vựng (han/luong/binh/on/nhiet)";
+            }
+            if ($flavor !== null && ! in_array($flavor, $flavors, true)) {
+                $this->errors[] = "{$row}: flavor '{$flavor}' ngoài từ vựng (toan/kho/cam/tan/ham/dam)";
+            }
+            if ($element !== null && ! in_array($element, $elements, true)) {
+                $this->errors[] = "{$row}: element '{$element}' ngoài từ vựng (moc/hoa/tho/kim/thuy)";
+            }
+            $derived = \App\Cultural\TcmVocabulary::elementForFlavor($flavor);
+            if ($element !== null && $derived !== null && $element !== $derived) {
+                $this->errors[] = "{$row}: element '{$element}' lệch ánh xạ cổ điển từ flavor '{$flavor}' (phải là '{$derived}') — nếu nguồn ghi khác, ghi thành dòng nhãn riêng kèm nguồn đó";
+            }
+            if (! in_array($t['confidence'] ?? null, $confidences, true)) {
+                $this->errors[] = "{$row}: confidence phải là high/medium/low";
+            }
+            if (! empty($t['usage_restricted'])) {
+                if (blank($t['usage_note'] ?? null)) {
+                    $this->errors[] = "{$row}: usage_restricted=true nhưng thiếu usage_note — cờ hạn chế phải kèm ghi chú 'không được dùng'";
+                } elseif (mb_stripos((string) $t['usage_note'], 'không được dùng') === false) {
+                    $this->warnings[] = "{$row}: usage_note chưa chứa cụm 'không được dùng' — kiểm lại câu chữ theo chính sách nguồn hạn chế";
+                }
+            }
+        }
+    }
+
+    /**
+     * V20 (tầng file) — liên kết thành phần của nguyên liệu hỗn hợp:
+     * slug phải tồn tại, không tự trỏ chính mình, không trùng (🔴).
+     *
+     * @param  array<string, mixed>  $j
+     * @param  array<string, array<string, mixed>>  $ingredients
+     */
+    private function validateComponents(string $label, array $j, array $ingredients): void
+    {
+        $ownSlug = $j['slug'] ?? null;
+        $seen = [];
+        foreach ($j['components'] ?? [] as $componentSlug) {
+            if (! is_string($componentSlug) || ! isset($ingredients[$componentSlug])) {
+                $this->errors[] = "V20 {$label}: components trỏ tới nguyên liệu không tồn tại '".(string) $componentSlug."'";
+                continue;
+            }
+            if ($componentSlug === $ownSlug) {
+                $this->errors[] = "V20 {$label}: components tự trỏ chính mình";
+            }
+            if (isset($seen[$componentSlug])) {
+                $this->errors[] = "V20 {$label}: components trùng '{$componentSlug}'";
+            }
+            $seen[$componentSlug] = true;
+        }
+    }
+
+    /**
+     * V20 — cấu trúc ghi chú văn hoá (món + quả): có ghi chú thì text không
+     * được rỗng và phải có ít nhất một nguồn có ref (🔴). Vắng khoá = chưa
+     * có ghi chú — hợp lệ, việc "bắt buộc có" do cổng mức kiểm riêng.
+     */
+    private function validateCulturalNote(string $label, mixed $note): void
+    {
+        if ($note === null) {
+            return;
+        }
+        if (! is_array($note) || blank($note['text'] ?? null)) {
+            $this->errors[] = "V20 {$label}: cultural_note phải có text không rỗng";
+
+            return;
+        }
+        $sources = $note['sources'] ?? [];
+        if (! is_array($sources) || $sources === []) {
+            $this->errors[] = "V20 {$label}: cultural_note thiếu sources — ghi chú văn hoá không nguồn không được nhập";
+
+            return;
+        }
+        foreach ($sources as $s) {
+            if (! is_array($s) || blank($s['ref'] ?? null)) {
+                $this->errors[] = "V20 {$label}: cultural_note.sources có mục thiếu ref";
+            }
+        }
+    }
+
+    /**
+     * V20 (tầng DB) — chốt chặn thứ hai sau tầng file, chạy trên dữ liệu
+     * dẫn xuất: coverage chỉ tồn tại trong DB nên cổng phủ ≥60% của Mức 3
+     * và đường nâng bù chỉ kiểm được ở đây. Bỏ qua lặng lẽ là điều cấm —
+     * không kết nối được thì ghi 🟡 rõ ràng như validateDatabase.
+     */
+    private function validateTcmDatabase(): void
+    {
+        try {
+            DB::connection()->getPdo();
+        } catch (Throwable) {
+            $this->warnings[] = 'Database không kết nối được — BỎ QUA V20 (tầng DB).';
+
+            return;
+        }
+        if (! DB::getSchemaBuilder()->hasTable('ingredient_tcm_traits')
+            || ! DB::getSchemaBuilder()->hasTable('dish_tcm_summary')
+            || ! DB::getSchemaBuilder()->hasColumn('dishes', 'level_basis')) {
+            $this->warnings[] = 'Chưa có hạ tầng TCM-000 trong DB (chưa migrate) — BỎ QUA V20 (tầng DB).';
+
+            return;
+        }
+
+        // Nhãn trắng nguồn lọt vào DB (R5 là NOT NULL nhưng chuỗi rỗng vẫn lọt).
+        $n = DB::table('ingredient_tcm_traits')->whereRaw("TRIM(source_ref) = ''")->count();
+        if ($n > 0) {
+            $this->errors[] = "V20: {$n} nhãn tính vị trong DB có source_ref rỗng — vi phạm R5";
+        }
+
+        // Cổng Mức 3 + đường nâng bù: cần ghi chú văn hoá VÀ phủ ≥60%.
+        $candidates = DB::table('dishes')
+            ->where(fn ($q) => $q->where('completeness_level', '>=', 3)
+                ->orWhere('level_basis', 'tcm_compensation'))
+            ->get(['id', 'slug', 'completeness_level', 'level_basis', 'level_note', 'cultural_note']);
+        foreach ($candidates as $dish) {
+            $label = "V20 [{$dish->slug}]";
+            if ($dish->level_basis === 'tcm_compensation' && blank($dish->level_note)) {
+                $this->errors[] = "{$label}: Mức 2 (có note) trong DB nhưng level_note rỗng";
+            }
+            if (blank($dish->cultural_note)) {
+                $this->errors[] = "{$label}: thiếu cultural_note — chưa đủ cổng thông tin Mức 3";
+            }
+            $coverage = DB::table('dish_tcm_summary')->where('dish_id', $dish->id)->value('coverage_pct');
+            if ($coverage === null || (float) $coverage < \App\Cultural\TcmVocabulary::LEVEL3_MIN_COVERAGE) {
+                $this->errors[] = "{$label}: coverage tính vị = ".($coverage === null ? 'chưa tổng hợp' : $coverage.'%').' — cổng yêu cầu ≥60%';
             }
         }
     }
@@ -353,6 +545,9 @@ class LacdoiValidateData extends Command
                     $this->errors[] = "V17 {$label}: pairing_cautions.level phải là co-so hoặc dan-gian";
                 }
             }
+
+            // V20 — ghi chú văn hoá của hồ sơ quả (🔴 khi có mà hỏng cấu trúc).
+            $this->validateCulturalNote($label, $j['cultural_note'] ?? null);
 
             foreach ($j['prices'] ?? [] as $p) {
                 if (! in_array($p['region_code'] ?? '', ['bac', 'trung', 'nam'], true)) {

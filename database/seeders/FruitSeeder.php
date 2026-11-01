@@ -57,6 +57,7 @@ class FruitSeeder extends Seeder
                     'best_value_months' => $j['best_value_window']['months'] ?? null,
                     'best_value_note' => $j['best_value_window']['note'] ?? null,
                     'pairing_cautions' => $j['pairing_cautions'] ?? null,
+                    'cultural_note' => $j['cultural_note'] ?? null,
                     'selection_note' => $j['selection_note'] ?? null,
                     'storage_note' => $j['storage_note'] ?? null,
                     'needs_review' => $j['needs_review'] ?? true,

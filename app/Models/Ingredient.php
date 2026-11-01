@@ -71,4 +71,35 @@ class Ingredient extends Model
     {
         return $this->belongsToMany(Tag::class, 'ingredient_tags');
     }
+
+    /** Nhãn tính vị theo từng nguồn (QT-6) — nhiều dòng khi nguồn mâu thuẫn. */
+    public function tcmTraits(): HasMany
+    {
+        return $this->hasMany(IngredientTcmTrait::class);
+    }
+
+    /**
+     * Thành phần cấu thành khi đây là nguyên liệu hỗn hợp (TCM-000) —
+     * liên kết để người dùng tự vào xem từng thành phần.
+     */
+    public function components(): BelongsToMany
+    {
+        return $this->belongsToMany(
+            self::class,
+            'ingredient_components',
+            'ingredient_id',
+            'component_ingredient_id',
+        );
+    }
+
+    /** Các nguyên liệu hỗn hợp có dùng nguyên liệu này làm thành phần. */
+    public function componentOf(): BelongsToMany
+    {
+        return $this->belongsToMany(
+            self::class,
+            'ingredient_components',
+            'component_ingredient_id',
+            'ingredient_id',
+        );
+    }
 }

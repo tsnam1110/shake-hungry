@@ -57,6 +57,7 @@ class FruitController extends Controller
             'ingredient.aliases:id,ingredient_id,name,note',
             'ingredient.tags:id,slug,name',
             'ingredient.media',
+            'ingredient.tcmTraits',
             'prices' => fn ($q) => $q->orderBy('region_code')->orderBy('month'),
         ]);
         $ingredient = $fruit->ingredient;
@@ -72,6 +73,7 @@ class FruitController extends Controller
                 'best_nutrition' => ['months' => $fruit->best_nutrition_months ?? [], 'note' => $fruit->best_nutrition_note],
                 'best_value' => ['months' => $fruit->best_value_months ?? [], 'note' => $fruit->best_value_note],
                 'pairing_cautions' => $fruit->pairing_cautions ?? [],
+                'cultural_note' => $fruit->cultural_note,
                 'selection_note' => $fruit->selection_note,
                 'storage_note' => $fruit->storage_note,
                 'needs_review' => $fruit->needs_review,
@@ -80,6 +82,8 @@ class FruitController extends Controller
                 'slug' => $ingredient->slug,
                 'name_vi' => $ingredient->name_vi,
                 'name_en' => $ingredient->name_en,
+                // TCM-000: nhãn tính vị của nguyên liệu quả (kèm nguồn).
+                'tcm' => \App\Cultural\TcmDisplay::forIngredient($ingredient),
                 'aliases' => $ingredient->aliases->map(fn ($a) => ['name' => $a->name, 'note' => $a->note])->all(),
                 'tags' => $ingredient->tags->map(fn ($t) => ['slug' => $t->slug, 'name' => $t->name])->all(),
                 'nutrition' => [

@@ -179,6 +179,8 @@ tra trùng lặp nhanh. Không sửa tay file này.
 | `is_ready_to_eat` | ✅ | `true` = đã chín/ăn liền (giò lụa, lạp xưởng, cơm) → engine **không** áp hệ số hao hụt |
 | `units[]` | | Quy đổi đơn vị đời thường; mỗi dòng **bắt buộc có `source`** |
 | `source` / `confidence` / `needs_review` | ✅ | Ba cột chuẩn của mọi bảng biên soạn |
+| `tcm_traits[]` | | Nhãn tính vị theo từng nguồn (TCM-000, QT-6): `{nature, flavor, element, source_ref, confidence, usage_restricted?, usage_note?}`. `source_ref` **bắt buộc từng dòng** (R5); `element` để `null` = suy từ `flavor`; `usage_restricted: true` + `usage_note` chứa "không được dùng" khi nguồn uy tín nhưng điều khoản hạn chế (chính sách lưu trữ — xem NGU-HANH-AM-DUONG, đính chính 2026-11-01). Chỉ xuất hiện trong file khi có nhãn |
+| `components[]` | | Slug các nguyên liệu thành phần khi đây là **nguyên liệu hỗn hợp** (TCM-000) — hiển thị thành liên kết ở trang nguyên liệu. Chỉ xuất hiện khi có |
 | `reviewed_by` | ✅ khi `needs_review = false` | Định danh **người** đã duyệt (email/handle). Không phải tên agent — dữ liệu máy sinh không tự duyệt chính nó (QT-1). Bổ sung 2026-09-01, ING-004 |
 | `reviewed_at` | ✅ khi `needs_review = false` | Ngày duyệt, dạng `YYYY-MM-DD` |
 | `review_note` | | Đã đối chiếu lại những gì. Để trống được, nhưng nên ghi |
@@ -277,6 +279,14 @@ bịa ra, và (c) khi ba nguồn mâu thuẫn thì chính mâu thuẫn đó là 
 > 🚫 **Không chép văn bản công thức.** `recipe_steps` phải **viết bằng lời của mình**. Danh sách
 > nguyên liệu là dữ kiện; cách diễn đạt có bản quyền. Chi tiết:
 > [RESEARCH-PROTOCOL §11.1](../09-standards/RESEARCH-PROTOCOL.md).
+
+> **Bổ sung 2026-11-01 (TCM-000) — ba khoá tuỳ chọn của file món:**
+> `cultural_note: {text, sources: [{ref, url}]}` — ghi chú văn hoá có nguồn (chuẩn nội dung
+> tại kế hoạch Mức 3 §3; V20 kiểm text + nguồn không rỗng). `level_basis: "tcm_compensation"`
+> + `level_note: "..."` — đường nâng bù "Mức 2 (có note)": chỉ đi cùng nhau và với
+> `completeness_level: 2`; `level_note` ghi rõ cổng Mức 2 chưa đạt và căn cứ nâng (đủ
+> thông tin Mức 3). Cả ba khoá chỉ xuất hiện trong file khi có giá trị. Hồ sơ quả
+> (`data/fruits/<slug>.json`) cũng nhận khoá `cultural_note` cùng định dạng.
 
 **Lưu ý quan trọng:** file món **không chứa giá trị dinh dưỡng đã tính**. Calo là **kết quả dẫn
 xuất**, do engine tính lúc seed. Lưu nó vào file sẽ tạo ra hai nguồn sự thật mâu thuẫn nhau khi bảng

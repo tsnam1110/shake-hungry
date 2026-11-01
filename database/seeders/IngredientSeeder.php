@@ -30,6 +30,8 @@ class IngredientSeeder extends Seeder
             throw new RuntimeException("Không có file nguyên liệu nào trong {$dir} — kiểm tra lại checkout.");
         }
 
+        $componentLinks = [];
+
         foreach ($files as $file) {
             $j = json_decode((string) file_get_contents($file), true, 512, JSON_THROW_ON_ERROR);
             $ref = $j['reference_food'] ?? [];
@@ -105,6 +107,38 @@ class IngredientSeeder extends Seeder
                     'is_primary' => $media['is_primary'] ?? false,
                 ]);
             }
+
+            // Nhãn tính vị (TCM-000, QT-6): file là nguồn sự thật. Mỗi dòng là
+            // nhãn theo MỘT nguồn — source_ref bắt buộc (R5 chặn ở DB nếu rỗng);
+            // nhiều dòng mâu thuẫn được giữ nguyên, không ép chọn.
+            \App\Models\IngredientTcmTrait::where('ingredient_id', $ingredient->id)->delete();
+            foreach ($j['tcm_traits'] ?? [] as $trait) {
+                \App\Models\IngredientTcmTrait::create([
+                    'ingredient_id' => $ingredient->id,
+                    'nature' => $trait['nature'] ?? null,
+                    'flavor' => $trait['flavor'] ?? null,
+                    'element' => $trait['element'] ?? null,
+                    'source_ref' => $trait['source_ref'] ?? null,
+                    'confidence' => $trait['confidence'],
+                    'usage_restricted' => $trait['usage_restricted'] ?? false,
+                    'usage_note' => $trait['usage_note'] ?? null,
+                ]);
+            }
+
+            // Liên kết thành phần của nguyên liệu hỗn hợp: thu slug trước,
+            // nối ở lượt 2 (nguyên liệu thành phần có thể nằm sau trong glob).
+            $componentLinks[$j['slug']] = $j['components'] ?? [];
+        }
+
+        // Lượt 2 — nối liên kết thành phần (cùng khuôn parent_dish của món).
+        foreach ($componentLinks as $slug => $componentSlugs) {
+            $ingredient = Ingredient::where('slug', $slug)->firstOrFail();
+            $ids = [];
+            foreach ($componentSlugs as $componentSlug) {
+                $ids[] = Ingredient::where('slug', $componentSlug)->value('id')
+                    ?? throw new RuntimeException("{$slug}: components trỏ tới nguyên liệu không tồn tại '{$componentSlug}' (kiểm tra V20).");
+            }
+            $ingredient->components()->sync($ids);
         }
 
         $this->command?->info('Đã seed '.count($files).' nguyên liệu từ data/ingredients/.');

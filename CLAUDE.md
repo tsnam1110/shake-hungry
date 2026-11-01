@@ -212,6 +212,31 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > lại không đổi: **PX-25 (quy ước họ nguồn) và PX-26 (cặp canh hến) vẫn chờ chủ
 > dự án chốt.**
 
+> ## ⚠️ Đính chính lần 16, 2026-11-01 — chương trình Mức 3 mở, nền kỹ thuật đã dựng (TCM-000)
+>
+> Chủ dự án đã **duyệt kế hoạch Mức 3** (tính vị + ghi chú văn hoá cho toàn bộ món,
+> nguyên liệu, quả) và **uỷ quyền tự chủ triển khai đến khi hoàn thiện** — không cần
+> dừng hỏi ở từng đề xuất trong phạm vi kế hoạch. Các chốt: (1) nguồn tính vị chính =
+> **Dược điển Trung Quốc + CMRO Hồng Kông**, bổ sung nguồn các nước khác; (2) cổng
+> Mức 3 = **coverage ≥60% + ghi chú văn hoá có nguồn**; (3) hiển thị lớp tính vị
+> **MẶC ĐỊNH BẬT** với nhãn khối đúng chữ **"Tính vị:"** (đảo ngược thiết kế opt-in
+> của tài liệu gốc — ngưỡng trung thực theo coverage giữ nguyên); (4) **đường nâng
+> bù**: Mức 1 không đạt cổng Mức 2 nhưng đủ thông tin Mức 3 ⇒ **"Mức 2 (có note)"**;
+> (5) nguyên liệu hỗn hợp khai báo `components` + hiển thị liên kết thành phần;
+> (6) nguồn tính vị uy tín dù điều khoản hạn chế vẫn **lưu vào thư viện** kèm cờ
+> "không được dùng" (lưu trữ/lưu hành nội bộ; chính sách hiển thị công khai chốt
+> trước go-live).
+>
+> **TCM-000 đã dựng xong nền** (chi tiết: [TCM-000](docs/05-tasks/tasks/TCM-000.md)):
+> định dạng `tcm_traits`/`components` trong file nguyên liệu + `cultural_note` (món,
+> quả) + `level_basis`/`level_note` ở file món, qua seed/export hai chiều (file hiện
+> tại không đổi một byte); migration 100010 (cột mới + bảng `ingredient_components`
+> + R8 miễn trừ đúng nhóm nâng bù); engine `TcmAggregator` + lệnh
+> `lacdoi:recompute-tcm`; cổng **V20** trong validator (file + DB); khối "Tính vị:"
+> ở trang món/nguyên liệu/quả qua `TcmDisplay`; admin gắn thẻ "Mức 2 (có note)".
+> **Chưa gieo nhãn dữ liệu thật nào** — TCM-001a bắt đầu gieo từ thang nguồn đã chốt.
+> Kiểm chứng: validate 0 🔴 trên DB kiểm chứng riêng, Pest 149/149 (15 test mới).
+
 **Trạng thái thực tế, kiểm ngày 2026-10-31 (đã chạy lại toàn bộ lệnh kiểm chứng):**
 
 | Hạng mục | Thực tế | Kiểm bằng |

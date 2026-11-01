@@ -154,6 +154,24 @@ nếu sau này cần loại bỏ hoàn toàn bề mặt ODbL.
 
 ---
 
+## 5b. Chính sách lưu trữ nguồn hạn chế cho lớp tính vị (chốt 2026-11-01, TCM-000)
+
+Chủ dự án chốt: dữ liệu của dự án tuy nằm trong kho mã nguồn mở nhưng **chủ dự án chỉ dùng
+cho lưu trữ thông tin và lưu hành nội bộ**. Với lớp tính vị (Mức 3), khi một nguồn **uy tín**
+(Dược điển Trung Quốc, CMRO Hồng Kông, bộ dữ liệu học thuật…) mà điều khoản ghi hạn chế sử
+dụng hoặc tái phân phối, vẫn được **lưu vào thư viện** — vì việc lưu trữ nội bộ để tra cứu
+không phải là hành vi phân phối — với kỷ luật chặt:
+
+1. Dòng nhãn lấy từ nguồn đó **bắt buộc** mang `usage_restricted: true` + `usage_note` ghi rõ
+   **"không được dùng"** và lý do điều khoản (validator V20 + CHECK ở DB cưỡng chế).
+2. Ghi chú phải đi kèm dữ liệu **ở mọi bề mặt** dữ liệu xuất hiện (file, API, trang hiển thị);
+   không có ngoại lệ "chỉ hiển thị nội bộ nên bỏ qua".
+3. **Chính sách hiển thị công khai** cho dữ liệu mang cờ này chốt riêng **trước go-live** —
+   lựa chọn mặc định an toàn khi đó là ẩn mọi dòng mang cờ khỏi bản công khai và chỉ giữ
+   trong thư viện nội bộ, trừ khi thẩm định lại điều khoản cho phép khác.
+4. Chính sách này **không** áp dụng cho dữ liệu dinh dưỡng hay công thức: các bảng cấm ở
+   §2 vẫn cấm tuyệt đối việc nhập dữ liệu của chúng vào kho.
+
 ## 6. Quy trình duyệt nguồn mới
 
 Bất kỳ ai (người hay AI agent) muốn thêm một nguồn dữ liệu:
@@ -206,3 +224,4 @@ Bất kỳ ai (người hay AI agent) muốn thêm một nguồn dữ liệu:
 | 2026-08-31 | Mealie / KitchenOwl / Nextcloud Cookbook (fork) | ❌ Từ chối | — | AGPL-3.0 |
 | 2026-08-31 | RecipeSage (fork) | ❌ Từ chối | — | Phi thương mại + CLA |
 | 2026-10-31 | Bảng TPTP Việt Nam (Viện Dinh dưỡng), MEXT (Nhật), IFCT (Ấn Độ), Thai FCT, FNRI (Philippines), văn liệu khoa học | 🔶 **Duyệt có điều kiện — tầng thứ cấp** theo quyết định chủ dự án | Chủ dự án + đợt thu thập 2026-10-31 | Chỉ tra TỪNG nguyên liệu khi nguồn chính thống không có; ghi trích dẫn từng số; đánh dấu "chưa kiểm định" và hiển thị cảnh báo trên giao diện. Vẫn CẤM nhập/chép hàng loạt toàn bộ bảng (mục §2 giữ nguyên cho hành vi sao chép có hệ thống). Số liệu dinh dưỡng là dữ kiện thực tế; việc biên soạn độc lập từng mục có xuất xứ riêng là cơ sở pháp lý của việc dùng này (xem §7.1 DATA-PIPELINE) |
+| 2026-11-01 | **Chính sách lưu trữ nguồn hạn chế — lớp tính vị (Mức 3)** | 🔶 **Duyệt theo chính sách §5b** — lưu trữ nội bộ, không phân phối | Chủ dự án, qua TCM-000 | Nguồn tính vị uy tín (Dược điển TQ, CMRO, ETCM/TCMSP…) có thể mang điều khoản hạn chế; theo chính sách §5b: vẫn lưu vào thư viện kèm cờ `usage_restricted` + ghi chú "không được dùng" gắn tại từng dòng nhãn; chính sách hiển thị công khai chốt trước go-live. Thẩm định điều khoản từng nguồn tính vị cụ thể ghi ở các dòng nhật ký tiếp theo khi TCM-001a tra cứu |

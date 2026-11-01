@@ -3,6 +3,48 @@
 **Cập nhật lần cuối:** 2026-08-31 — bản đầu tiên
 **Trạng thái:** ⚠️ **CHƯA HIỆN THỰC.** Thuộc GĐ6, là **lớp tuỳ chọn**, không phải chức năng lõi.
 
+> ## ⚠️ Đính chính + cập nhật 2026-11-01 — chương trình Mức 3 đã duyệt, nền kỹ thuật TCM-000 đã dựng
+>
+> Chủ dự án đã duyệt kế hoạch nâng dữ liệu lên Mức 3 (toàn bộ món + nguyên liệu + quả) và
+> **TCM-000 đã hiện thực phần nền** — các câu dưới đây trong bản 2026-08-31 nay phải đọc kèm
+> đính chính này:
+>
+> 1. **"Mặc định tắt / chỉ bật khi người dùng chủ động bật" (§1) — ĐÃ ĐẢO NGƯỢC.** Theo quyết
+>    định của chủ dự án 2026-11-01, lớp tính vị **mặc định HIỂN THỊ** ở mọi nơi nó đủ căn cứ
+>    để hiển thị (phần nào cần ẩn, chủ dự án cân nhắc sau). Điều KHÔNG đổi: ngưỡng trung thực
+>    theo độ phủ (§4) — coverage <30% vẫn không hiển thị kết luận nào, 30–<60% vẫn bị chặn
+>    độ tin cậy ở mức thấp. "Mặc định hiển thị" không có nghĩa là hiển thị thay cho dữ liệu
+>    chưa có. Lớp này vẫn **không** ảnh hưởng engine calo và **không** lọc bỏ món ở tầng
+>    lọc cứng.
+> 2. **Thẩm quyền nguồn (§6):** chủ dự án chốt **Dược điển Trung Quốc + CMRO Hồng Kông là
+>    nguồn chính** (TQ có truyền thống nghiên cứu đông y lâu đời nhất), bổ sung nguồn chính
+>    thống/học thuật của các nước khác và y văn Việt Nam. Thứ tự rẻ → đắt ở §6 giữ nguyên
+>    làm thứ tự gieo mầm (TCM-001a trở đi).
+> 3. **Chính sách lưu trữ nguồn hạn chế:** dự án tuy mã nguồn mở nhưng chủ dự án chỉ dùng
+>    cho **lưu trữ thông tin và lưu hành nội bộ**. Nguồn **uy tín** mà điều khoản ghi hạn
+>    chế sử dụng/tái phân phối vẫn được **lưu vào thư viện**, kèm cờ `usage_restricted` +
+>    ghi chú **"không được dùng"** gắn ngay tại dòng nhãn (và ghi vào LICENSE-COMPLIANCE).
+>    Chính sách hiển thị công khai cho dữ liệu mang cờ này chốt riêng trước go-live; trong
+>    giai đoạn nội bộ, ghi chú phải đi kèm dữ liệu ở mọi nơi nó xuất hiện.
+> 4. **Cổng Mức 3** (PRD §7 + quyết định 2026-11-01): món đạt Mức 3 khi **coverage ≥60%**
+>    **và có ghi chú văn hoá có nguồn**. Ghi chú văn hoá cũng áp cho hồ sơ quả.
+> 5. **Đường nâng bù:** sản phẩm đang Mức 1, không đạt cổng Mức 2 nhưng **đủ thông tin
+>    Mức 3** (coverage ≥60% + ghi chú văn hoá) thì nâng lên **"Mức 2 (có note)"** —
+>    `completeness_level` giữ nguyên là số 2, căn cứ nằm ở `dishes.level_basis =
+>    'tcm_compensation'` + `level_note` bắt buộc ghi rõ cổng chưa đạt. Trigger R8 và
+>    cổng V12 miễn trừ đúng nhóm này; cổng phủ do V20 kiểm ở tầng DB.
+> 6. **Nguyên liệu hỗn hợp** khai báo `components` (slug các nguyên liệu thành phần);
+>    trang nguyên liệu hiển thị **liên kết thành phần** để người dùng tự vào xem từng
+>    thành phần — đây là lối xử lý chính cho nhóm không có nhãn tính vị trực tiếp.
+> 7. **Nhãn hiển thị** của khối là đúng chữ **"Tính vị:"** (chốt của chủ dự án) — khung
+>    văn hoá/pháp lý do trang `/mien-tru-y-te` và đoạn nguồn/độ phủ đi kèm đảm nhiệm.
+> 8. **Quy ước tổng hợp bổ sung ở TCM-000** (chi tiết ở §8 dưới đây): ánh xạ mọi mã
+>    `cooking_method` của dự án vào nhóm hệ số; xử lý mâu thuẫn khi tổng hợp; cách tính
+>    `dominant_element` và `confidence` của món.
+>
+> Chi tiết triển khai: [TCM-000](../05-tasks/tasks/TCM-000.md). Dữ liệu nhãn thật bắt đầu
+> gieo từ TCM-001a — TCM-000 chỉ dựng nền, **không gieo nhãn nào**.
+
 ---
 
 ## 1. Vị trí trong hệ thống
@@ -206,3 +248,38 @@ Theo thứ tự rẻ → đắt:
 | Danh mục dược thực đồng nguyên | Tổng quan tại *BMC Complement Med Ther* (2025), DOI 10.1186/s12906-025-04822-0 |
 | 284 thực phẩm gán hàn/nhiệt | Liu et al., *Nutrition & Dietetics* 2012;69(1):64–68 |
 | Quy định thiết bị y tế / tuyên bố sức khoẻ | FDA General Wellness Policy; FTC Health Products Compliance Guidance |
+
+---
+
+## 8. Quy ước tổng hợp của TCM-000 (hiện thực hoá §4)
+
+Công thức gốc ở §4 chỉ định nghĩa hệ số cho 7 nhóm cách chế biến và điểm tính. Engine
+`App\Cultural\TcmAggregator` (lệnh `lacdoi:recompute-tcm`) áp thêm các quy ước sau —
+**tất cả đều là quy ước của dự án**, phải đọc cùng cảnh báo ở §4 (hệ số chế biến không
+có nguồn định lượng):
+
+| Mã `cooking_method` | Hệ số | Thuộc nhóm gốc |
+|---|---|---|
+| `chien`, `chien-ngap-dau`, `ran` | +0,5 | chiên |
+| `nuong`, `kho` | +0,5 | nướng/kho |
+| `xao` | +0,25 | xào |
+| `luoc`, `hap`, `nau` | −0,25 | luộc/hấp (`nau` = nấu trong nước: canh, súp) |
+| `song`, `tron` | −0,5 | sống (`tron` chủ yếu là thành phần sống trộn, không qua nhiệt) |
+| null / mã lạ | 0 | — |
+
+- **Điểm bị kẹp trong [−2, +2]** sau khi cộng hệ số (thang điểm gốc chỉ chạy −2…+2).
+- **"Có nhãn"** nghĩa là có ≥1 dòng trait với `nature` khác null. Điểm của một nguyên
+  liệu có nhiều dòng nature = **trung bình các dòng** (mỗi nguồn một phiếu); nguyên liệu
+  có ≥2 nature phân biệt ⇒ món mang cờ `has_conflicts` và `confidence` bị hạ xuống `low`.
+- **`confidence` của món** = mắt xích yếu nhất trong các dòng trait tham gia, rồi áp
+  trần: coverage <60% ⇒ tối đa `low`; có mâu thuẫn ⇒ tối đa `low`.
+- **`dominant_element`**: mỗi nguyên liệu có nhãn bỏ phiếu bằng khối lượng của nó cho
+  hành hiệu lực của từng dòng trait (element ghi tường minh, hoặc suy từ vị theo bảng
+  §3; vị `dam` không suy ra hành). Nhiều hành phân biệt trong cùng nguyên liệu ⇒ chia
+  đều khối lượng. Hoà phiếu ⇒ `null`.
+- **Khối lượng** lấy từ chính hàm quy đổi gram của engine dinh dưỡng
+  (`DishNutritionService::resolveGrams`) — một định nghĩa khối lượng duy nhất. Dòng
+  `is_discarded` không tham gia; dòng không quy đổi được gram bị loại khỏi cả tử số
+  lẫn mẫu số của coverage.
+- Món **không có nguyên liệu có nhãn nào thì không có dòng `dish_tcm_summary`** —
+  không ghi một tổng hợp 0 trung tính để giả vờ đã tính.

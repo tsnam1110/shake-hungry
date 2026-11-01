@@ -289,7 +289,7 @@ export default function Dishes() {
                 columns={[
                     { title: 'Tên món', key: 'name', sorter: true, sortOrder: sortOrderFor('name'), render: (_, r) => r.names?.[0]?.name ?? r.slug },
                     { title: 'Vùng miền', render: (_, r) => r.region?.name ?? '—' },
-                    { title: 'Mức hoàn thiện', dataIndex: 'completeness_level', sorter: true, sortOrder: sortOrderFor('completeness_level'), render: (v) => <Tag>Mức {v}</Tag> },
+                    { title: 'Mức hoàn thiện', dataIndex: 'completeness_level', sorter: true, sortOrder: sortOrderFor('completeness_level'), render: (v, r) => r.level_basis === 'tcm_compensation' ? <Tag color="gold">Mức {v} (có note)</Tag> : <Tag>Mức {v}</Tag> },
                     { title: 'Trạng thái', dataIndex: 'status', sorter: true, sortOrder: sortOrderFor('status') },
                     {
                         title: 'Duyệt', dataIndex: 'needs_review', sorter: true, sortOrder: sortOrderFor('needs_review'),

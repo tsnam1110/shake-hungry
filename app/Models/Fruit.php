@@ -26,6 +26,7 @@ class Fruit extends Model
             'best_nutrition_months' => 'array',
             'best_value_months' => 'array',
             'pairing_cautions' => 'array',
+            'cultural_note' => 'array',
             'needs_review' => 'boolean',
             'reviewed_at' => 'date',
         ];
