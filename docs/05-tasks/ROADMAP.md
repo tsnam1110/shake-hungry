@@ -248,6 +248,31 @@ A+ mới của FIX-TCM4-1 — và `rau-diep-ca`). Danh sách khắc phục
 AUDIT-003-FIX + 🟡 AX3-05…10 tại [tasks/AUDIT-003.md](./tasks/AUDIT-003.md)
 + báo cáo AUDIT-003 2026-11-01.
 
+**AUDIT-003-FIX — KHẮC PHỤC TOÀN BỘ DANH SÁCH AUDIT-003 ĐÃ XONG
+(2026-11-01):** chỉ sửa `source_ref`/diễn đạt ghi chú, 0 đổi giá trị/định
+lượng/mức. 🔴: `ca-chim` sửa ký tự 鯧 (mở kiểm chứng 「味甘；性平」);
+`ca-doi` ×2 sang bản giản thể A+ 鱼 còn sống (khớp *Mugil cephalus*,
+平/甘咸）; tách dấu chấm cuối ở 3 token + quét toàn corpus **0 token
+còn dính**. 🟡: AX3-05 bổ sung URL đã kiểm chứng cho 8/8 dòng; AX3-06
+`hat-tieu-den` kết luận khớp (nhiệt/tân), không sửa. **Census bổ sung
+106 URL ghi chú: 99 sống-khớp · 5 lệch-phụ · 1 chết · 1 chưa kết luận**
+→ phán quyết nội dung toàn cục **464/465 URL (99,8%)**; 5 ca lệch đều
+khép ở tầng hợp tập nguồn (mở kiểm chứng nguồn còn lại); URL chết duy
+nhất = wiki Bún kèn (curl 404 — phân xử dứt điểm mâu thuẫn hai kênh)
+→ gỡ khỏi ghi chú `bun-ken` + gọn chi tiết Hà Tiên–Phú Quốc. AX3-08:
+gọn 11 ghi chú bỏ chi tiết không căn cứ, bổ nguồn VietnamNet cho
+`mien-luon`, 7 ca xác nhận có căn cứ không sửa, 2 ca bị gắn cờ không
+tồn tại trong ghi chú đã lưu (`mam-ca-loc`, `bun-mam-chay`). AX3-09:
+chè Thái tách bạch cấp món (đối chiếu "chè tứ xứ": sữa tươi, sầu
+riêng, Nguyễn Tri Phương) — chi tiết cấp quán Ý Phương không đưa vào
+ghi chú. **Quét bù TCM-001d: 23/23 dòng khớp nguyên văn (8/8 URL)**;
+quét cổng lại trên corpus 436 dòng: mức **187/285/114/68 không đổi**,
+114/114 nâng bù ≥60%, 0 sót. Tồn cuối duy nhất: PDF huetc (`bun-hen`)
+— lỗi vận chuyển 3 kênh, không có HTTP status, ghi chú không đứng
+trên nguồn này một mình. Kiểm chứng: validate **0 🔴**, recompute
+không đổi (500/98/50), Pest **167/167** (ExportStabilityTest đạt).
+Chi tiết: [tasks/AUDIT-003.md](./tasks/AUDIT-003.md) §5–§6.
+
 > Mỗi task có file chi tiết riêng tại [`tasks/`](./tasks/). Click mã task để xem đầy đủ.
 > Tạo task mới: copy [`TASK-TEMPLATE.md`](./TASK-TEMPLATE.md) vào `tasks/`, đặt tên theo mã task.
 > Trước khi đánh dấu DONE: đối chiếu [`DEFINITION-OF-DONE.md`](./DEFINITION-OF-DONE.md).

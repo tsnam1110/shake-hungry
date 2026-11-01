@@ -638,6 +638,35 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > quyết. Khắc phục gom tại danh sách AUDIT-003-FIX (báo cáo §9), chưa thực thi. Chi tiết:
 > [AUDIT-003](docs/05-tasks/tasks/AUDIT-003.md) + báo cáo rà soát lớp Mức 3 2026-11-01.
 
+> ## ⚠️ Đính chính lần 37, 2026-11-01 — AUDIT-003-FIX: khắc phục toàn bộ danh sách AUDIT-003
+>
+> Toàn bộ khắc phục chỉ trong `source_ref`/diễn đạt ghi chú — **0 thay đổi giá trị
+> tính/vị/hành, định lượng, mức**. 🔴: `ca-chim` sửa ký tự URL sang 鯧魚 (mở lại:
+> 「味甘；性平」khớp); `ca-doi` ×2 thay URL sang bản giản thể A+ 鱼 (cùng mục, còn
+> sống, *Mugil cephalus* 平/甘咸 khớp); tách dấu chấm cuối ở 3 token và quét lại
+> toàn corpus theo token URL — **0 còn sót**. 🟡: bổ sung URL đã mở kiểm chứng cho
+> 8/8 dòng không-URL (AX3-05); `hat-tieu-den` mở lại được và **khớp** nhiệt/tân
+> (AX3-06, không sửa). **Census bổ sung 106 URL ghi chú (AX3-07): 99 sống-khớp ·
+> 5 lệch-phụ · 1 chết · 1 chưa kết luận → 464/465 URL ghi chú có phán quyết nội
+> dung (99,8%)**; cả 5 ca lệch-phụ đều khép ở tầng hợp tập nguồn khi mở kiểm chứng
+> nguồn còn lại của chính ghi chú (en.wiki Bò kho, wiki Festival Dừa, Dân Việt
+> "Xôi Sài Gòn", wiki Nộm, Thương hiệu & Công luận cho mam-tom-chua); URL chết duy
+> nhất là wiki **Bún kèn** (curl HTTP 404, phân xử dứt điểm mâu thuẫn hai kênh ở
+> AUDIT-003) — đã gỡ khỏi ghi chú, ghi chú đứng trên Dân Việt. AX3-08: gọn diễn
+> đạt 11 ghi chú (bỏ chi tiết không nguồn nào đỡ), bổ sung nguồn VietnamNet cho
+> `mien-luon`, 7 ca kiểm lại có căn cứ nên giữ nguyên; 2 ca bị gắn cờ hoá ra
+> **không tồn tại trong ghi chú đã lưu** (`mam-ca-loc`, `bun-mam-chay` — chi tiết
+> chao chỉ ở `import_note` nội bộ). AX3-09: ghi chú chè Thái là cấp món, khớp bài
+> "chè tứ xứ" (sữa tươi, sầu riêng, Nguyễn Tri Phương); chi tiết cấp quán Ý
+> Phương không đưa vào. **Quét bù TCM-001d: 23/23 dòng khớp nguyên văn trên 8/8
+> URL**; quét cổng + tổng hợp lại trên corpus 436 dòng: bức tranh mức
+> **187 Mức 3 · 285 Mức 2 · 114 Mức 2 (có note) · 68 Mức 1 không đổi**, phủ
+> 500/98/50, 114/114 nâng bù ≥60%, 0 sót thăng hạng. Tồn cuối duy nhất: PDF
+> huetc của `bun-hen` (lỗi vận chuyển ở 3 kênh, chưa từng có HTTP status — không
+> kết luận chết; ghi chú còn nguồn Cục Du lịch đã kết luận). Kiểm chứng: validate
+> **0 🔴**, Pest **167/167** (ExportStabilityTest đạt). Chi tiết:
+> [AUDIT-003](docs/05-tasks/tasks/AUDIT-003.md) §5–§6.
+
 **Trạng thái thực tế, kiểm ngày 2026-10-31 (đã chạy lại toàn bộ lệnh kiểm chứng):**
 
 | Hạng mục | Thực tế | Kiểm bằng |
