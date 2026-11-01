@@ -46,6 +46,22 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "on",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 牛肚 (dạ dày bò; trang ghi biệt danh 牛百葉 và chú rõ lá sách là dạ tổ ong — đúng bộ phận của kho): hộp thông tin 藥性溫、藥味甘； 《本草綱目》 ghi 「甘，溫，無毒」. http://cht.a-hospital.com/w/%E7%89%9B%E8%82%9A",
+      "confidence": "medium"
+    },
+    {
+      "nature": "binh",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 牛肚 dẫn 《日用本草》 ghi 「味甘，平」; mục 食療 cũng ghi 「味甘，性平」 — hiển thị song song với dòng ôn. http://cht.a-hospital.com/w/%E7%89%9B%E8%82%9A",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "low",
   "needs_review": true,

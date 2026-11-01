@@ -52,6 +52,10 @@
       "is_primary": true
     }
   ],
+  "components": [
+    "nuoc-mam-truyen-thong",
+    "thit-lon-xay"
+  ],
   "source": "curated",
   "confidence": "unknown",
   "needs_review": true,

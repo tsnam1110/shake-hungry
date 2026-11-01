@@ -46,6 +46,15 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "on",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 鱔魚 (trang in tên Latin Monopterus albus — đúng loài lươn của kho): hộp thông tin 藥性溫、藥味甘； mục 性味 ghi 「味甘；性溫」; mục 食療作用 ghi 「黃鱔性溫、味甘」. http://cht.a-hospital.com/w/%E9%B3%9D",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "low",
   "needs_review": true,

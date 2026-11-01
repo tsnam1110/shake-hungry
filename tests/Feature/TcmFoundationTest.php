@@ -633,7 +633,10 @@ it('TCM-000: seed -> export giu nguyen khoi tcm_traits va components (diem co di
     $this->seed(RegionSeeder::class);
     $this->seed(IngredientSeeder::class);
 
-    $host = Ingredient::orderBy('slug')->firstOrFail();
+    // Host phải bắt đầu KHÔNG có nhãn thật nào: khi kho lớn dần, nguyên liệu
+    // đầu tiên theo slug có thể đã mang nhãn (vd bach-tuoc từ TCM-001c đợt 2)
+    // và làm sai tiền đề "export ra đúng 1 dòng fixture" của test này.
+    $host = Ingredient::doesntHave('tcmTraits')->orderBy('slug')->firstOrFail();
     $component = Ingredient::where('id', '<>', $host->id)->orderBy('slug')->firstOrFail();
     $path = base_path("data/ingredients/{$host->slug}.json");
     $originalBytes = (string) file_get_contents($path);

@@ -52,6 +52,15 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "binh",
+      "flavor": "ham",
+      "element": "thuy",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 豬血 (tiết lợn): hộp thông tin 藥性平、藥味咸； mục 性味 ghi 「咸，平」; 《本草綱目》 ghi 「咸，平，無毒」. (Đoạn dẫn đầu trang có câu 甘、苦、溫 không ghi nguồn — không dùng.) http://cht.a-hospital.com/w/%E8%B1%AC%E8%A1%80",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "low",
   "needs_review": true,

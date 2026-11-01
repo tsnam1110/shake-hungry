@@ -46,6 +46,43 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "on",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 牡蠣肉 (thịt hàu) dẫn 《本草綱目》 ghi 「甘，溫，無毒」 — truyền thống ấm, hiển thị song song. https://cht.a-hospital.com/w/%E7%89%A1%E8%A0%A3%E8%82%89",
+      "confidence": "medium"
+    },
+    {
+      "nature": "luong",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 牡蠣肉 (thịt hàu) dẫn 《醫林纂要》 ghi 「甘咸，微寒」 (微寒 chuẩn hoá = lương; dòng này lấy vị cam) — hiển thị song song. https://cht.a-hospital.com/w/%E7%89%A1%E8%A0%A3%E8%82%89",
+      "confidence": "medium"
+    },
+    {
+      "nature": "luong",
+      "flavor": "ham",
+      "element": "thuy",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 牡蠣肉 (thịt hàu) dẫn 《醫林纂要》 ghi 「甘咸，微寒」 (微寒 chuẩn hoá = lương; dòng này lấy vị hàm). https://cht.a-hospital.com/w/%E7%89%A1%E8%A0%A3%E8%82%89",
+      "confidence": "medium"
+    },
+    {
+      "nature": "binh",
+      "flavor": "ham",
+      "element": "thuy",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 牡蠣肉 (thịt hàu): hộp thông tin 藥性平、藥味甘、咸； mục 性味 tổng hợp 「甘咸，平」 (dòng này lấy vị hàm). https://cht.a-hospital.com/w/%E7%89%A1%E8%A0%A3%E8%82%89",
+      "confidence": "medium"
+    },
+    {
+      "nature": "binh",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 牡蠣肉 — chuyên khảo cho THỊT hàu (nguồn ghi 牡蠣科動物近江牡蠣等的肉; không phải vỏ 牡蠣）: hộp thông tin 藥性平、藥味甘、咸； mục 性味 tổng hợp 「甘咸，平」; 《隨息居飲食譜》 ghi 「甘，平」. https://cht.a-hospital.com/w/%E7%89%A1%E8%A0%A3%E8%82%89",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

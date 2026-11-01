@@ -39,6 +39,22 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "han",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 河蚌 trích 《全國中草藥彙編》 — chuyên khảo cho THỊT trai nước ngọt họ Unionidae (loài gốc: 背角無齒蚌 Anodonta woodiana, 三角帆蚌 Hyriopsis cumingii, 射線裂脊蚌， 褶紋冠蚌； dùng thịt và nước trai): mục 性味 ghi 「蚌肉：甘、咸，寒」. http://cht.a-hospital.com/w/%E6%B2%B3%E8%9A%8C",
+      "confidence": "medium"
+    },
+    {
+      "nature": "han",
+      "flavor": "ham",
+      "element": "thuy",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 河蚌 trích 《全國中草藥彙編》, mục 性味 ghi cho thịt trai 「蚌肉：甘、咸，寒」 (dòng này lấy vị hàm). http://cht.a-hospital.com/w/%E6%B2%B3%E8%9A%8C",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "low",
   "needs_review": true,

@@ -52,6 +52,15 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "binh",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 鯉魚 (trang in tên Latin Cyprinus carpio — đúng loài cá chép của kho): hộp thông tin 藥性平、藥味甘； mục 食療作用 ghi 「鯉魚味甘、性平」. http://cht.a-hospital.com/w/%E9%AF%89%E9%AD%9A",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

@@ -7,7 +7,7 @@
     "fct_source": "usda_sr_legacy",
     "external_id": "168580",
     "source_url": "https://api.nal.usda.gov/fdc/v1/food/168580?api_key=DEMO_KEY",
-    "scientific_name": "Pleurotus ostreatus",
+    "scientific_name": "Pleurotus eryngii",
     "kcal_per_100g": 33,
     "kcal_min": null,
     "kcal_max": null,
@@ -18,7 +18,7 @@
     "water_g": null,
     "sodium_mg": null,
     "mapping_confidence": "medium",
-    "mapping_note": "TRA 2026-10-31 (DISH-005 đợt 3): SR Legacy không có mục riêng cho Pleurotus eryngii (nấm đùi gà) — dùng 168580 'Mushrooms, oyster, raw' (Pleurotus ostreatus, cùng chi Pleurotus, dạng tươi) làm ánh xạ. Tra chéo độc lập: bảng MEXT Nhật cho P. eryngii tươi = 31 kcal / đạm 2,8 / béo 0,4 / carb 6,0 / xơ 3,4 — khớp ánh xạ trong ~6% ở kcal và gần như trùng ở béo/carb, nên độ lệch loài ở đây nhỏ; MEXT chỉ dùng để tra chéo trong ghi chú này, KHÔNG trộn số vào phép tính (QT-4). Bản trích SR Legacy trong repo chỉ có kcal/macro/xơ nên water_g và sodium_mg để null. Khi FCT có mục eryngii chính danh ở tầng cao hơn, thay ánh xạ và nâng confidence. scientific_name của reference_food ghi đúng loài của bản ghi tham chiếu (ostreatus); nguyên liệu là eryngii — ánh xạ cùng chi đã nêu ở trên (phân xử rà soát độc lập G6).",
+    "mapping_note": "TRA 2026-10-31 (DISH-005 đợt 3): SR Legacy không có mục riêng cho Pleurotus eryngii (nấm đùi gà) — dùng 168580 'Mushrooms, oyster, raw' (Pleurotus ostreatus, cùng chi Pleurotus, dạng tươi) làm ánh xạ. Tra chéo độc lập: bảng MEXT Nhật cho P. eryngii tươi = 31 kcal / đạm 2,8 / béo 0,4 / carb 6,0 / xơ 3,4 — khớp ánh xạ trong ~6% ở kcal và gần như trùng ở béo/carb, nên độ lệch loài ở đây nhỏ; MEXT chỉ dùng để tra chéo trong ghi chú này, KHÔNG trộn số vào phép tính (QT-4). Bản trích SR Legacy trong repo chỉ có kcal/macro/xơ nên water_g và sodium_mg để null. Khi FCT có mục eryngii chính danh ở tầng cao hơn, thay ánh xạ và nâng confidence. scientific_name của reference_food ghi đúng loài của bản ghi tham chiếu (ostreatus); nguyên liệu là eryngii — ánh xạ cùng chi đã nêu ở trên (phân xử rà soát độc lập G6). ĐÍNH CHÍNH ĐỊNH DANH (TCM-001c đợt 2, 2026-11-01): rà soát lại theo nghi vấn trùng tên khoa học với nam-bao-ngu — kết luận: nguyên liệu này là nấm đùi gà Pleurotus eryngii (khớp tên Việt/Anh và tra chéo MEXT ở trên); trường scientific_name nay ghi theo ĐỊNH DANH THẬT CỦA NGUYÊN LIỆU (eryngii) thay vì loài của bản ghi mượn. Bản ghi số SR Legacy 168580 vẫn là dòng P. ostreatus dùng làm ánh xạ cùng chi như phân xử G6 đã nêu — CON SỐ KHÔNG ĐỔI. Đề xuất để phiên chính xử lý riêng: khi FCT có dòng P. eryngii chính danh ở tầng cao hơn, thay ánh xạ dinh dưỡng và nâng mapping_confidence.",
     "alternatives": [
       {
         "name": "MEXT (Nhật) — Pleurotus eryngii, raw",

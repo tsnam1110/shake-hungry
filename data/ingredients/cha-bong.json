@@ -39,6 +39,11 @@
       "is_primary": true
     }
   ],
+  "components": [
+    "duong-trang",
+    "nuoc-mam-truyen-thong",
+    "thit-lon-than-noi"
+  ],
   "source": "curated",
   "confidence": "unknown",
   "needs_review": true,

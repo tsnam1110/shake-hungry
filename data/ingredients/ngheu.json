@@ -63,6 +63,22 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "luong",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 文蛤 (trang in tên Latin Meretrix meretrix): mục 食療價值 ghi cho THỊT nghêu 「簾蛤科動物文蛤的肉…味甘、咸，性微寒」 (微寒 chuẩn hoá = lương). Mục 中藥 của trang là chuyên khảo cho VỎ — không dùng cho thịt. https://cht.a-hospital.com/w/%E6%96%87%E8%9B%A4",
+      "confidence": "medium"
+    },
+    {
+      "nature": "luong",
+      "flavor": "ham",
+      "element": "thuy",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 文蛤, mục 食療價值 ghi cho thịt 「味甘、咸，性微寒」 (微寒 chuẩn hoá = lương; dòng này lấy vị hàm). https://cht.a-hospital.com/w/%E6%96%87%E8%9B%A4",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "medium",
   "needs_review": true,

@@ -52,6 +52,22 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "binh",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 鯔魚 (trang in tên Latin Mugil cephalus — đúng loài cá đối mục của kho): hộp thông tin 藥性平、藥味甘. http://cht.a-hospital.com/w/%E9%AF%84%E9%AD%9A",
+      "confidence": "medium"
+    },
+    {
+      "nature": "binh",
+      "flavor": "ham",
+      "element": "thuy",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 鯔魚, mục 食療作用 ghi 「鯔魚肉性平，味甘咸」 (dòng này lấy vị hàm). http://cht.a-hospital.com/w/%E9%AF%84%E9%AD%9A",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

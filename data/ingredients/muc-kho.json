@@ -39,6 +39,24 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "binh",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "P-DERIVE (TCM-001c đợt 2): suy diễn từ muc-ong — mực khô là mực ống phơi/sấy khô, chế biến cơ học đơn thành phần (trang 槍烏賊 của A+醫學百科 cũng ghi 魷魚乾 là hàng khô淡干品 của mực ống). Nhãn gốc: A+醫學百科 mục 槍烏賊（魷魚）, hộp thông tin 藥性平、藥味甘、咸. https://cht.a-hospital.com/w/%E9%AD%B7%E9%AD%9A",
+      "confidence": "low",
+      "derived_from": "muc-ong"
+    },
+    {
+      "nature": "binh",
+      "flavor": "ham",
+      "element": "thuy",
+      "source_ref": "P-DERIVE (TCM-001c đợt 2): suy diễn từ muc-ong — mực khô là mực ống phơi/sấy khô, chế biến cơ học đơn thành phần. Nhãn gốc: A+醫學百科 mục 槍烏賊（魷魚）, hộp thông tin 藥性平、藥味甘、咸 (dòng này lấy vị hàm). https://cht.a-hospital.com/w/%E9%AD%B7%E9%AD%9A",
+      "confidence": "low",
+      "derived_from": "muc-ong"
+    }
+  ],
   "source": "curated",
   "confidence": "low",
   "needs_review": true,

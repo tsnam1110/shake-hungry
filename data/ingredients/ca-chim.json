@@ -46,6 +46,15 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "binh",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 鯧魚 (trang ghi phạm vi 銀鯧 Pampus argenteus — đúng loài cá chim của kho): mục 性味 ghi 「味甘；性平」; mục 食療 [性能] cùng giá trị. http://cht.a-hospital.com/w/%E9%AF%87%E9%AD%9A",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "low",
   "needs_review": true,

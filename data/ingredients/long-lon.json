@@ -39,6 +39,22 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "han",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 豬腸 (trang nói rõ phạm vi chủ yếu là ruột già lợn — áp cho lòng lợn): hộp thông tin 藥性寒、藥味甘. http://cht.a-hospital.com/w/%E8%B1%AC%E8%85%B8",
+      "confidence": "medium"
+    },
+    {
+      "nature": "binh",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 豬腸, mục 食療價值 ghi 「性味甘平」 — truyền thống bình, hiển thị song song với dòng hàn. http://cht.a-hospital.com/w/%E8%B1%AC%E8%85%B8",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "medium",
   "needs_review": true,

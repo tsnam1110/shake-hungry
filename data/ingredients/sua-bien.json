@@ -39,6 +39,22 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "binh",
+      "flavor": "ham",
+      "element": "thuy",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 海蜇 (sứa biển; dạng muối/phèn chế biến ăn liền của kho chính là dạng dược liệu cổ truyền mô tả): 《全國中草藥彙編》 ghi loài gốc Rhopilema esculenta Kish., 性味「咸，平」; 《中華本草》 ghi 「味咸；性平」. https://cht.a-hospital.com/w/%E6%B5%B7%E8%9C%87",
+      "confidence": "medium"
+    },
+    {
+      "nature": "on",
+      "flavor": "ham",
+      "element": "thuy",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 海蜇, phần 《中藥大辭典》 dẫn 《本草綱目》 ghi 「咸，溫」 — truyền thống ấm, hiển thị song song với dòng bình. https://cht.a-hospital.com/w/%E6%B5%B7%E8%9C%87",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "medium",
   "needs_review": true,

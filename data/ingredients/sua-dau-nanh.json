@@ -46,6 +46,24 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "binh",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "P-DERIVE (TCM-001c đợt 2): nhãn suy diễn từ Đậu nành hạt (dau-nanh-hat) — đậu nành ngâm, xay với nước, lọc bỏ bã rồi đun: chế biến cơ học đơn thành phần (nước là môi trường chế biến, không phải thành phần thứ hai — cùng tiền lệ bún tươi suy diễn từ gạo tẻ); sản phẩm không dùng chất đông kết như đậu phụ nên không cần mục nguồn riêng. Phân xử nhận suy diễn ghi tại TCM-001 đợt 2. Nhãn gốc: A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 大豆（trang 黃豆） (Glycine max hạt vàng khô; mục 食療作用） ghi 「「大豆味甘、性平，入脾、大腸經」」. http://cht.a-hospital.com/w/%E9%BB%83%E8%B1%86",
+      "confidence": "low",
+      "derived_from": "dau-nanh-hat"
+    },
+    {
+      "nature": "binh",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "P-DERIVE (TCM-001c đợt 2): nhãn suy diễn từ Đậu nành hạt (dau-nanh-hat) — đậu nành ngâm, xay với nước, lọc bỏ bã rồi đun: chế biến cơ học đơn thành phần (nước là môi trường chế biến, không phải thành phần thứ hai — cùng tiền lệ bún tươi suy diễn từ gạo tẻ); sản phẩm không dùng chất đông kết như đậu phụ nên không cần mục nguồn riêng. Phân xử nhận suy diễn ghi tại TCM-001 đợt 2. Nhãn gốc: Sổ tay người chăm sóc bệnh nhân ung thư Hồng Kông 《癌症病人照顧者全面手冊》, chương 中醫食療——食物種類分析 (nội dung: TS. Lâm Đạo Nghi 林道儀， thầy thuốc Trung y đăng ký hành nghề; bản chốt 2022-04): mục 黃豆 ghi 「黃豆：味甘，性平。入脾、大腸經。」. https://www.cancercarers.org.hk/%E4%B8%AD%E9%86%AB%E9%A3%9F%E7%99%82/%E9%A3%9F%E7%89%A9%E7%A8%AE%E9%A1%9E%E5%88%86%E6%9E%90",
+      "confidence": "low",
+      "derived_from": "dau-nanh-hat"
+    }
+  ],
   "source": "curated",
   "confidence": "medium",
   "needs_review": true,

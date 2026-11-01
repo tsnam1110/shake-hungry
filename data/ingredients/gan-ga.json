@@ -46,6 +46,29 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "on",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 雞肝 (gan gà): hộp thông tin 藥性溫、藥味甘； mục 食療 ghi 「味甘，性微溫」 (微溫 chuẩn hoá = ôn). http://cht.a-hospital.com/w/%E9%9B%9E%E8%82%9D",
+      "confidence": "medium"
+    },
+    {
+      "nature": "on",
+      "flavor": "kho",
+      "element": "hoa",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 雞肝 dẫn 《本草綱目》 ghi 「甘苦，溫，無毒」 (dòng này lấy vị khổ). http://cht.a-hospital.com/w/%E9%9B%9E%E8%82%9D",
+      "confidence": "medium"
+    },
+    {
+      "nature": "on",
+      "flavor": "ham",
+      "element": "thuy",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 雞肝 dẫn 《醫林纂要》 ghi 「苦甘咸，溫」 (dòng này lấy vị hàm). http://cht.a-hospital.com/w/%E9%9B%9E%E8%82%9D",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

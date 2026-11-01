@@ -58,6 +58,10 @@
       "is_primary": true
     }
   ],
+  "components": [
+    "gan-lon",
+    "thit-lon-ba-chi"
+  ],
   "source": "curated",
   "confidence": "medium",
   "needs_review": true,

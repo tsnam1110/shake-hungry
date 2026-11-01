@@ -46,6 +46,36 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "binh",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 章魚 (bạch tuộc; mục 食療 ghi nguồn là thịt 真蛸 Octopus vulgaris): hộp thông tin 藥性平、藥味甘、咸； 《東醫寶鑒》 ghi 「性平，味甘」. https://cht.a-hospital.com/w/%E7%AB%A0%E9%AD%9A",
+      "confidence": "medium"
+    },
+    {
+      "nature": "han",
+      "flavor": "ham",
+      "element": "thuy",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 章魚, mục 食療 [性味] dẫn 《本草綱目》 ghi 「甘咸，寒，無毒」 (dòng này lấy vị hàm). https://cht.a-hospital.com/w/%E7%AB%A0%E9%AD%9A",
+      "confidence": "medium"
+    },
+    {
+      "nature": "han",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 章魚, mục 食療 [性味] dẫn 《本草綱目》 ghi 「甘咸，寒，無毒」 — truyền thống lạnh, hiển thị song song (dòng này lấy vị cam). https://cht.a-hospital.com/w/%E7%AB%A0%E9%AD%9A",
+      "confidence": "medium"
+    },
+    {
+      "nature": "binh",
+      "flavor": "ham",
+      "element": "thuy",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 章魚: hộp thông tin 藥性平、藥味甘、咸； đoạn kết mục 食療 ghi 「性味甘、咸，平」 (dòng này lấy vị hàm). https://cht.a-hospital.com/w/%E7%AB%A0%E9%AD%9A",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

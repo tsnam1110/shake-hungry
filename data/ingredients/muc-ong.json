@@ -45,6 +45,22 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "binh",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 槍烏賊（魷魚） — mực ống họ Loliginidae (trang liệt kê 中國槍烏賊 Loligo chinensis cùng họ): hộp thông tin 藥性平、藥味甘、咸. Trang chỉ có hộp thông tin phân loại, không có chuyên khảo cổ văn — độ tin cậy low. https://cht.a-hospital.com/w/%E9%AD%B7%E9%AD%9A",
+      "confidence": "low"
+    },
+    {
+      "nature": "binh",
+      "flavor": "ham",
+      "element": "thuy",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 槍烏賊（魷魚）, hộp thông tin 藥性平、藥味甘、咸 (dòng này lấy vị hàm). Trang chỉ có hộp thông tin — độ tin cậy low. https://cht.a-hospital.com/w/%E9%AD%B7%E9%AD%9A",
+      "confidence": "low"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

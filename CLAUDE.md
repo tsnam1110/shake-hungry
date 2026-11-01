@@ -320,6 +320,27 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > validate **0 🔴**, Pest **157/157**, ExportStabilityTest đạt. Coverage (DB kiểm chứng):
 > **401 món ≥60%** (trước: 227, +174); món Mức 1 đạt tiêu chí phủ cho đường nâng bù:
 > **106/182** (trước: 57) — chỉ thống kê, đợt nâng bù riêng làm sau.
+>
+> ## ⚠️ Đính chính lần 21, 2026-11-01 — TCM-001c đợt 2: gieo nhóm đạm & thuỷ sản + components + kết luận nam-dui-ga
+>
+> **Phần A — gieo +43 nguyên liệu / +75 dòng** (sổ tay HK 23 NL/33 dòng; A+ đọc toàn trang
+> 18 NL/38 dòng; P-DERIVE 2 NL/4 dòng) → tổng kho **192 nguyên liệu / 342 dòng** (326 thật +
+> 16 suy diễn). P-DERIVE mới: `sua-dau-nanh` ← `dau-nanh-hat` (NHẬN — nước là môi trường
+> chế biến, không chất đông tụ) và `muc-kho` ← `muc-ong`; LOẠI suy diễn cho
+> `dau-phu-chien`/`bong-bi` (chiên ngập dầu = thêm chất thứ hai). **Components thay nhãn
+> cho 14 nguyên liệu chế biến** (25 liên kết; quy ước: chỉ thành phần định danh/chính).
+> Kỷ luật census đợt này bác/sửa 8+ đề xuất của agent nghiên cứu con khi mở lại trang —
+> nặng nhất: `thit-de` ← 山羊肉 bị bác vì trang ghi loài gốc *Naemorhedus goral* ≠ dê nhà
+> (thay bằng mục 羊肉 chung của sổ tay HK); trang 404/lỗi mạng → chuyển chờ, không gieo.
+> **Phần B — kết luận `nam-dui-ga`:** định danh thật là ***Pleurotus eryngii*** (king
+> oyster); trường tên khoa học ghi *P. ostreatus* là loài của bản ghi mượn SR 168580
+> (proxy cùng chi). Đã sửa metadata + đính chính trong `mapping_note`; **con số không
+> đổi** (vẫn proxy theo G6 — thay ánh xạ khi có FCT đúng loài ở tầng cao hơn). Nhãn của
+> `nam-bao-ngu` đúng loài của nó, giữ nguyên. Kiểm chứng: validate **0 🔴**, Pest
+> **157/157** (gồm 1 sửa tiền đề test TCM-000: host phải là nguyên liệu chưa có nhãn —
+> assertion không đổi), ExportStabilityTest đạt. Coverage (DB kiểm chứng): **470 món
+> ≥60%** (trước: 401, +69); món Mức 1 đạt tiêu chí phủ: **118/182** (trước: 106) — chỉ
+> thống kê, đợt nâng bù riêng làm sau. Chi tiết: [TCM-001](docs/05-tasks/tasks/TCM-001.md).
 
 **Trạng thái thực tế, kiểm ngày 2026-10-31 (đã chạy lại toàn bộ lệnh kiểm chứng):**
 

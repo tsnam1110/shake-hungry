@@ -39,6 +39,15 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "luong",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 青蛙 (ếch): hộp thông tin 藥性涼、藥味甘； mục 食療 [性能] ghi 「味甘，性涼」. Phạm vi trang: nhóm ếch ao (黑斑蛙/金線蛙); file kho là thịt ếch nói chung — áp theo đúng phạm vi trang ghi. http://cht.a-hospital.com/w/%E9%9D%92%E8%9B%99",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

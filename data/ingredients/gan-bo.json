@@ -39,6 +39,29 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "binh",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 牛肝 (gan bò; trang ghi phạm vi bò vàng/bò nước 黃牛或水牛， khớp Bos taurus của kho): hộp thông tin 藥性平、藥味甘； mục 性味 ghi 「甘，平」. http://cht.a-hospital.com/w/%E7%89%9B%E8%82%9D",
+      "confidence": "medium"
+    },
+    {
+      "nature": "luong",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 牛肝 dẫn 《日用本草》 ghi 「味甘，涼」 — hiển thị song song với dòng bình. http://cht.a-hospital.com/w/%E7%89%9B%E8%82%9D",
+      "confidence": "medium"
+    },
+    {
+      "nature": "binh",
+      "flavor": "kho",
+      "element": "hoa",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 牛肝 dẫn 《本草經疏》 ghi 「味苦甘，氣和平」 (dòng này lấy vị khổ). http://cht.a-hospital.com/w/%E7%89%9B%E8%82%9D",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,
