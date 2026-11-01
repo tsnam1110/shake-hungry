@@ -559,6 +559,23 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > dùng). Chưa sửa gì trong đợt rà — đề xuất FIX-A1…A4 + quyết định ALG-Q1…Q4 tại
 > [AUDIT-ALLERGEN](docs/05-tasks/tasks/AUDIT-ALLERGEN.md).
 
+> ## ⚠️ Đính chính lần 33, 2026-11-01 — AUDIT-004: giá trị tính/vị/ngũ hành xác minh độc lập, 0 dòng sai
+>
+> Kiểm tra độc lập bằng **tái suy dẫn mù** (9 agent chỉ nhận định danh 227 nguyên liệu, cấm đọc dữ
+> liệu/TCM-001; lô thịt tra 2 lượt bằng 2 họ kênh) + lượt 2 mở đúng `source_ref` cho 185 dòng chưa
+> khớp cùng nguồn (85 URL) + script tính lại không dùng code engine trên DB riêng
+> `shake_hungry_audit4`: **sai giá trị 0/413 dòng** — xác minh 413/413 (208 khớp mù cùng nguồn ·
+> 183 lượt 2 · 20 P-DERIVE qua gốc đã xác minh · 2 giá trị đúng nhưng trích dẫn khuyết điểm).
+> 13 dòng bị cờ "mâu thuẫn" ở lượt đối chiếu đầu đều đúng theo cổ thư chúng trích — trang nguồn
+> chép nhiều truyền thống lệch nhau, không phải lỗi sao chép. Tổng hợp độc lập **0/648 món lệch**
+> (phủ 500/98/50 khớp công bố), element 413/413, hiển thị API **0 lỗi/881 endpoint**. 🟠 Duy nhất:
+> `dau-do-hat` dẫn trang tcmfans làm "bản tái bản kiểm chứng" của Dược điển nhưng trang đó ghi
+> biến thể ngược (vi lương) — giá trị bình vẫn đúng theo Dược điển (FIX-TCM4-1). Còn: đề xuất đợt
+> gieo bổ sung TCM-001d ~14 truyền thống có thật chưa gieo (FIX-TCM4-2), quy ước bản EN dịch máy
+> của zhongyifangji không dùng làm căn cứ tính vị (FIX-TCM4-3), 1 ca link 404 chuyển AUDIT-003
+> (FIX-TCM4-4). Chưa sửa dữ liệu/code trong đợt. Chi tiết:
+> [AUDIT-004](docs/05-tasks/tasks/AUDIT-004.md).
+
 **Trạng thái thực tế, kiểm ngày 2026-10-31 (đã chạy lại toàn bộ lệnh kiểm chứng):**
 
 | Hạng mục | Thực tế | Kiểm bằng |
