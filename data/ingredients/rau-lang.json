@@ -39,6 +39,22 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "luong",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 甘薯 (phần đầu trang ghi學名 Ipomoea batatas Lam. — đúng loài khoai lang của kho): mục 食療作用 ghi riêng cho THÂN LÁ 「莖葉味甘、淡、性微涼，入肺、大腸、膀胱經；」 (微涼 chuẩn hoá = lương; dòng này lấy vị cam). Cảnh báo chất lượng: trang còn lẫn một mục 甘薯-中藥知識 của loài khác (Dioscorea esculenta) ở cuối — KHÔNG dùng mục đó; dòng thân lá nằm ở phần Ipomoea của trang và là dòng duy nhất cho lá nên confidence low. Trang riêng 甘薯葉 không có 性味. https://cht.a-hospital.com/w/%E7%94%98%E8%96%AF",
+      "confidence": "low"
+    },
+    {
+      "nature": "luong",
+      "flavor": "dam",
+      "element": null,
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 甘薯 (phần đầu trang ghi學名 Ipomoea batatas Lam. — đúng loài khoai lang của kho): mục 食療作用 ghi riêng cho THÂN LÁ 「莖葉味甘、淡、性微涼，入肺、大腸、膀胱經；」 (微涼 chuẩn hoá = lương; dòng này lấy vị đạm). Cảnh báo chất lượng: trang còn lẫn một mục 甘薯-中藥知識 của loài khác (Dioscorea esculenta) ở cuối — KHÔNG dùng mục đó; dòng thân lá nằm ở phần Ipomoea của trang và là dòng duy nhất cho lá nên confidence low. Trang riêng 甘薯葉 không có 性味. https://cht.a-hospital.com/w/%E7%94%98%E8%96%AF",
+      "confidence": "low"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

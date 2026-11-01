@@ -39,6 +39,15 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "on",
+      "flavor": "tan",
+      "element": "kim",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 羅勒 (Ocimum basilicum): hộp thông tin 藥性溫、藥味辛; 【性味歸經】「辛，溫。」. Nguồn phân loại ở CẤP LOÀI (nguồn ghi thứ var. pilosum); file là giống é trắng của cùng loài O. basilicum — áp nhãn cấp loài cho giống, nguồn không phân biệt giống nên confidence low và ghi rõ tại đây. https://cht.a-hospital.com/w/%E7%BE%85%E5%8B%92",
+      "confidence": "low"
+    }
+  ],
   "source": "curated",
   "confidence": "medium",
   "needs_review": true,

@@ -46,6 +46,9 @@
       "is_primary": true
     }
   ],
+  "components": [
+    "cai-cay"
+  ],
   "source": "curated",
   "confidence": "medium",
   "needs_review": true,

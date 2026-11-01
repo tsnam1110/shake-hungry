@@ -59,6 +59,9 @@
       "is_primary": true
     }
   ],
+  "components": [
+    "sua-tuoi"
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

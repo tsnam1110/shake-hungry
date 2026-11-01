@@ -39,6 +39,15 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "on",
+      "flavor": "tan",
+      "element": "kim",
+      "source_ref": "Y văn Việt Nam — Tuệ Tĩnh 《Nam dược thần hiệu》 (bản Tuệ Tĩnh toàn tập, số hoá tại nhathuocngocanh.com chuyên mục dược liệu): nhóm LOẠI CỎ HOANG mục 46 「Thủy liễu: Rau răm, vị cay tính ấm, không độc, chữa đau bụng lạnh, vết thương rắn cắn…」— nguồn cổ điển VN gọi thẳng tên rau răm (tiền lệ cùng kênh: tép/Hà ngư đợt 2). Chuyên khảo Trung văn 香蓼 bị loại vì loài Persicaria viscosa khác rau răm VN (Persicaria odorata) — không dùng. https://nhathuocngocanh.com/duoc-lieu/",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "unknown",
   "needs_review": true,

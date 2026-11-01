@@ -46,6 +46,15 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "han",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 甜瓜 — trang ghi rõ 拉丁學名 Cucumis melo, hộp thông tin 藥性寒、藥味甘; mục 食療作用「甜瓜味甘，性寒，無毒」và phần 藥用價值「果肉 味甘，性寒無毒」. File dưa lê ghi scientific_name Cucumis melo (Oriental melon) — CÙNG LOÀI với dưa gang (dua-gang, đã gieo cùng nguồn ở đợt trước); trang 甜瓜 liệt kê cả biến種香瓜 var. makuwa và越瓜 var. cocomon trong cùng loài. https://cht.a-hospital.com/w/%E7%94%9C%E7%93%9C",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "medium",
   "needs_review": true,

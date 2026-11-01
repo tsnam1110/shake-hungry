@@ -53,6 +53,9 @@
       "is_primary": true
     }
   ],
+  "components": [
+    "dau-phu"
+  ],
   "source": "curated",
   "confidence": "medium",
   "needs_review": true,

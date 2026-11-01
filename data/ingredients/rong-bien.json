@@ -46,6 +46,36 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "han",
+      "flavor": "ham",
+      "element": "thuy",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 紫菜 (Porphyra spp. — mục 中藥－紫菜 liệt kê P. haitanensis, P. yezoensis, P. tenera…; file là rong biển tươi Porphyra để nấu canh theo USDA 'Seaweed (laver), raw'): hộp thông tin 藥性寒、藥味甘、咸 (dòng này lấy vị hàm; ghi chú dạng tươi như dòng cam). https://cht.a-hospital.com/w/%E7%B4%AB%E8%8F%9C",
+      "confidence": "medium"
+    },
+    {
+      "nature": "han",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 紫菜 (Porphyra spp. — mục 中藥－紫菜 liệt kê P. haitanensis, P. yezoensis, P. tenera…; file là rong biển tươi Porphyra để nấu canh theo USDA 'Seaweed (laver), raw'): hộp thông tin 藥性寒、藥味甘、咸 và mục 中藥－紫菜「紫菜性味甘咸寒」. Chuyên khảo viết cho dạng KHÔ thương phẩm; file là dạng TƯƠI cùng chi/cùng bộ phận — áp theo tiền lệ dạng tươi dùng chuyên khảo dạng khô (hat-sen-tuoi, TCM-001a) (dòng này lấy vị cam). https://cht.a-hospital.com/w/%E7%B4%AB%E8%8F%9C",
+      "confidence": "medium"
+    },
+    {
+      "nature": "luong",
+      "flavor": "ham",
+      "element": "thuy",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 紫菜 (Porphyra spp. — mục 中藥－紫菜 liệt kê P. haitanensis, P. yezoensis, P. tenera…; file là rong biển tươi Porphyra để nấu canh theo USDA 'Seaweed (laver), raw'): mục 食療價值 [性能]「味甘、咸，性涼。」(dòng này lấy vị hàm; ghi chú dạng tươi như trên). https://cht.a-hospital.com/w/%E7%B4%AB%E8%8F%9C",
+      "confidence": "medium"
+    },
+    {
+      "nature": "luong",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 紫菜 (Porphyra spp. — mục 中藥－紫菜 liệt kê P. haitanensis, P. yezoensis, P. tenera…; file là rong biển tươi Porphyra để nấu canh theo USDA 'Seaweed (laver), raw'): mục 食療價值 [性能]「味甘、咸，性涼。」— tính LƯƠNG của tuyến thực liệu lệch một bậc với tính hàn của tuyến dược liệu: giữ cả hai (dòng này lấy vị cam; ghi chú dạng tươi như trên). https://cht.a-hospital.com/w/%E7%B4%AB%E8%8F%9C",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "medium",
   "needs_review": true,

@@ -39,6 +39,15 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "binh",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 毛薯 (trang ghi 拉丁名 Dioscorea alata L., biệt danh 參薯/大薯 — đúng loài khoai mỡ của kho, bộ phận塊莖/củ): 版本一 trích 《南寧市藥物志》【性味】「甘，平，無毒。」; 版本二《中華本草》【性味】「甘；微澀；平」 (vị澀/chát không có trong từ vựng vị của dự án — không tạo dòng, ghi nhận tại đây). KHÔNG dùng 山藥 (Dioscorea polystachya — khác loài). https://cht.a-hospital.com/w/%E6%AF%9B%E8%96%AF",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

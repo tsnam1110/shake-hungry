@@ -39,6 +39,15 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "luong",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: trang con 《食物療法》/莧菜 (rau dền ăn lá — trang liệt kê hồng/tử/lục莧, gồm nhóm dền đỏ Amaranthus tricolor của kho): 「莧菜性味甘涼，無毒」 và 「莧菜性涼」; trang con 《中醫飲食營養學》/莧菜: 【基原】「為莧科植物莧的莖葉」【性味歸經】「甘，涼。」 Hai trang實 liệu nhất quán cho LÁ/thân lá. Giá trị hàn ở trang chính 莧菜 là cho HẠT + RỄ của A. mangostanus (mục【來源】ghi rõ) — lệch bộ phận, không dùng cho lá. https://cht.a-hospital.com/w/%E9%A3%9F%E7%89%A9%E7%96%97%E6%B3%95/%E8%8B%8B%E8%8F%9C + https://cht.a-hospital.com/w/%E4%B8%AD%E5%8C%BB%E9%A5%AE%E9%A3%9F/%E8%8B%8B%E8%8F%9C",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

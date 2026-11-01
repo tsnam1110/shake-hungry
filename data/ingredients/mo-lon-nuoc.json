@@ -58,6 +58,22 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "luong",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 豬脂膏 (mỡ lợn đã thắng — 【來源】「為豬科動物豬的脂肪油。」; 【別名】豬膏、豬脂): mục【性味】「甘，涼。」; ①《別錄》「微寒」 cùng bậc lương sau chuẩn hoá (dòng chính). https://cht.a-hospital.com/w/%E8%B1%AC%E8%84%82%E8%86%8F",
+      "confidence": "medium"
+    },
+    {
+      "nature": "binh",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 豬脂膏: mục【性味】②《千金.食治》「平，無毒。」— tính bình của 千金食治 lệch một bậc với dòng 涼 của 《中藥大辭典》: giữ cả hai (vị cam theo dòng chính「甘」). https://cht.a-hospital.com/w/%E8%B1%AC%E8%84%82%E8%86%8F",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

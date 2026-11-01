@@ -46,6 +46,29 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "binh",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 水芹 (Oenanthe javanica — mục 藥用價值【來源】ghi rõ loài, dùng rễ và toàn thảo): trích 《全國中草藥彙編》【性味歸經】「甘，平。」; hộp thông tin của trang cũng ghi 藥性平、藥味甘. https://cht.a-hospital.com/w/%E6%B0%B4%E8%8A%B9",
+      "confidence": "medium"
+    },
+    {
+      "nature": "luong",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: trang con 《中醫飲食營養學》/水芹: 【基原】「為傘形科植物水芹的莖」【性味歸經】「甘、辛，涼。入肺、胃經。」 — lệch một bậc với dòng bình của 《全國中草藥彙編》, giữ cả hai theo quy tắc không ép chọn (dòng này lấy vị cam). https://cht.a-hospital.com/w/%E4%B8%AD%E5%8C%BB%E9%A5%AE%E9%A3%9F/%E6%B0%B4%E8%8A%B9",
+      "confidence": "medium"
+    },
+    {
+      "nature": "luong",
+      "flavor": "tan",
+      "element": "kim",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: trang con 《中醫飲食營養學》/水芹: 【基原】「為傘形科植物水芹的莖」【性味歸經】「甘、辛，涼。入肺、胃經。」 — lệch một bậc với dòng bình của 《全國中草藥彙編》, giữ cả hai theo quy tắc không ép chọn (dòng này lấy vị tan). https://cht.a-hospital.com/w/%E4%B8%AD%E5%8C%BB%E9%A5%AE%E9%A3%9F/%E6%B0%B4%E8%8A%B9",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "low",
   "needs_review": true,

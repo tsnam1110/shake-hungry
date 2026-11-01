@@ -52,6 +52,16 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "binh",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "P-DERIVE (TCM-001c đợt 3): nhãn suy diễn từ Dừa (dua) — cùi dừa già nạo sợi: dạng chế biến cơ học đơn thành phần (nạo) của đúng bộ phận cùi mà nhãn gốc áp cho, mang nhãn của gốc theo chính sách P-DERIVE. Nhãn gốc: A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 椰子 (Cocos nucifera L., CÙI dừa （瓤/椰肉） — đúng bộ phận kho ăn; mục thịt dừa + trích 《本草綱目》 (dòng infobox cho toàn quả ghi ôn đã không dùng vì lệch bộ phận)) ghi 「「性味甘平」；《本草綱目》「椰子瓤，甘，平，無毒」」. http://cht.a-hospital.com/w/%E6%A4%B0%E5%AD%90",
+      "confidence": "low",
+      "derived_from": "dua"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

@@ -39,6 +39,22 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "on",
+      "flavor": "kho",
+      "element": "hoa",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 假蒟: phần 《中華本草》【來源】「為胡椒科植物假蒟的莖、葉或全草。拉丁植物動物礦物名：Piper sarmentosum Roxb.」【性味】「苦；性溫」 — đúng loài và đúng bộ phận lá/thân của kho (phần 《中藥大辭典》 trên cùng trang chuyên cho RỄ và không có 性味 — không dùng). https://cht.a-hospital.com/w/%E5%81%87%E8%92%9F",
+      "confidence": "medium"
+    },
+    {
+      "nature": "on",
+      "flavor": "tan",
+      "element": "kim",
+      "source_ref": "Y văn Việt Nam — Tuệ Tĩnh 《Nam dược thần hiệu》 (bản Tuệ Tĩnh toàn tập, số hoá tại nhathuocngocanh.com chuyên mục dược liệu): nhóm LOẠI CỎ HOANG mục 9 「Tất bát: Lá lốt, vị rất cay thấu tận xương, tính rất ấm, chữa đau lưng, trừ chướng khí, thổ tả hàn lỵ…」— vị CAY (tân) của Tuệ Tĩnh lệch một phần với vị khổ của 《中華本草》: giữ cả hai; tính ôn/ấm nhất trí. https://nhathuocngocanh.com/duoc-lieu/",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "low",
   "needs_review": true,

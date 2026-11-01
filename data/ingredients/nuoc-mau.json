@@ -39,6 +39,9 @@
       "is_primary": true
     }
   ],
+  "components": [
+    "duong-trang"
+  ],
   "source": "curated",
   "confidence": "unknown",
   "needs_review": true,

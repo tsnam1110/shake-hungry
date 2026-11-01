@@ -39,6 +39,15 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "on",
+      "flavor": "tan",
+      "element": "kim",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 留蘭香 (Mentha spicata — hộp thông tin ghi英文名 Herba Menthae Spicatae, biệt danh 綠薄荷/青薄荷): hộp thông tin 藥性溫、藥味辛. Toàn trang không có mục 性味 nào khác — nhãn chỉ dựa hộp thông tin nên confidence low (tiền lệ muc-ong TCM-001c đợt 2). KHÔNG dùng trang 薄荷 (Mentha canadensis/haplocalyx — khác loài, tính lương). https://cht.a-hospital.com/w/%E7%95%99%E8%98%AD%E9%A6%99",
+      "confidence": "low"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

@@ -53,6 +53,20 @@
       "element": "thuy",
       "source_ref": "Sổ tay người chăm sóc bệnh nhân ung thư Hồng Kông 《癌症病人照顧者全面手冊》, chương 中醫食療——食物種類分析 (nội dung: TS. Lâm Đạo Nghi 林道儀， thầy thuốc Trung y đăng ký hành nghề; bản chốt 2022-04): mục 蟹 (cua nói chung) ghi 「味鹹，性寒」. Áp ở mức mục cua chung, không phân biệt loài (cua đồng là cua nước ngọt). https://www.cancercarers.org.hk/%E4%B8%AD%E9%86%AB%E9%A3%9F%E7%99%82/%E9%A3%9F%E7%89%A9%E7%A8%AE%E9%A1%9E%E5%88%86%E6%9E%90",
       "confidence": "medium"
+    },
+    {
+      "nature": "han",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "Y văn Việt Nam — Hải Thượng Lãn Ông 《Lĩnh nam bản thảo》, qua trích dẫn nguyên văn trên báo Sức khỏe & Đời sống (Bộ Y tế), bài「Tuyệt vời vị thuốc từ cua đồng」: 「Về dược tính theo Lĩnh nam bản thảo, Hải Thượng Lãn Ông ghi: Điền giải là tên gọi cua đồng. Ngọt lạnh, ít độc hay sinh phong. Nối gân, tiếp xương, chữa phong nhiệt.」— vị NGỌT (cam) khác vị mặn của Tuệ Tĩnh: hai nguồn cổ điển VN lệch vị, giữ cả hai theo quy tắc không ép chọn; tính hàn nhất trí với Tuệ Tĩnh và mục 蟹 của sổ tay HK. https://giadinh.suckhoedoisong.vn/tuyet-voi-vi-thuoc-tu-cua-dong-172120611013947177.htm",
+      "confidence": "medium"
+    },
+    {
+      "nature": "han",
+      "flavor": "ham",
+      "element": "thuy",
+      "source_ref": "Y văn Việt Nam — Tuệ Tĩnh 《Nam dược thần hiệu》 (bản Tuệ Tĩnh toàn tập, số hoá tại nhathuocngocanh.com chuyên mục dược liệu, nhóm LOÀI CÓ MAI mục 5): 「Điền giải: Cua đồng, vị mặn, tính hàn hơi độc, sinh phong liền gân nối xương, trị nhiệt tả, bạt độc…」. Báo Sức khỏe & Đời sống (Bộ Y tế) bài「Tuyệt vời vị thuốc từ cua đồng」trích cùng văn bản: 「Sách Nam dược thần hiệu của Tuệ Tĩnh cũng nói: Điền giải có vị mặn, mùi tanh, tính hàn, hơi độc」và ghi loài cua đồng dùng làm thuốc ở Việt Nam là Somanniathelphusa sinensis (họ Parathelphusidae) — khớp cua đồng ruộng của kho. https://nhathuocngocanh.com/duoc-lieu/ + https://giadinh.suckhoedoisong.vn/tuyet-voi-vi-thuoc-tu-cua-dong-172120611013947177.htm",
+      "confidence": "medium"
     }
   ],
   "source": "curated",

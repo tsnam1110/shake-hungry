@@ -64,6 +64,22 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "han",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: trang con 《本草綱目》/食鹽 (muối ăn): mục「氣味」ghi 「甘、咸、寒、無毒。」(dòng này lấy vị cam). Giá trị ôn do một số bảng phụ chép không kiểm chứng được nguyên văn trong đợt này — không dùng. https://cht.a-hospital.com/w/%E6%9C%AC%E8%8D%89%E7%BA%B2%E7%9B%AE/%E9%A3%9F%E9%B9%BD",
+      "confidence": "medium"
+    },
+    {
+      "nature": "han",
+      "flavor": "ham",
+      "element": "thuy",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: trang con 《本草綱目》/食鹽 (muối ăn): mục「氣味」ghi 「甘、咸、寒、無毒。」(dòng này lấy vị hàm). Giá trị ôn do một số bảng phụ chép không kiểm chứng được nguyên văn trong đợt này — không dùng. https://cht.a-hospital.com/w/%E6%9C%AC%E8%8D%89%E7%BA%B2%E7%9B%AE/%E9%A3%9F%E9%B9%BD",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

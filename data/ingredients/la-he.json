@@ -39,6 +39,29 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "on",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 韭菜 (Allium tuberosum — trang ghi rõ tên Việt 「hẹ」, đúng loài và bộ phận lá của kho): mục 簡述【性味】ghi 「味甘、辛，性溫，無毒。」; mục 食療作用 ghi 「韭菜葉味甘、辛、咸，性溫」 (dòng này lấy vị cam). https://cht.a-hospital.com/w/%E9%9F%AD%E8%8F%9C",
+      "confidence": "medium"
+    },
+    {
+      "nature": "on",
+      "flavor": "tan",
+      "element": "kim",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 韭菜 (Allium tuberosum — trang ghi rõ tên Việt 「hẹ」, đúng loài và bộ phận lá của kho): mục 簡述【性味】ghi 「味甘、辛，性溫，無毒。」; mục 食療作用 ghi 「韭菜葉味甘、辛、咸，性溫」 (dòng này lấy vị tan). https://cht.a-hospital.com/w/%E9%9F%AD%E8%8F%9C",
+      "confidence": "medium"
+    },
+    {
+      "nature": "on",
+      "flavor": "ham",
+      "element": "thuy",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 韭菜 (Allium tuberosum, bộ phận lá): mục 食療作用 ghi 「韭菜葉味甘、辛、咸，性溫，入肝、胃、腎經。」 (dòng này lấy vị hàm — vị hàm chỉ xuất hiện ở vị trí thực liệu này, không có ở mục 簡述). https://cht.a-hospital.com/w/%E9%9F%AD%E8%8F%9C",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "low",
   "needs_review": true,

@@ -51,6 +51,10 @@
       "is_primary": true
     }
   ],
+  "components": [
+    "bot-mi",
+    "trung-ga"
+  ],
   "source": "curated",
   "confidence": "medium",
   "needs_review": true,

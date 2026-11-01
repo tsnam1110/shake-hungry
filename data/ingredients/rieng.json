@@ -46,6 +46,15 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "on",
+      "flavor": "tan",
+      "element": "kim",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 大高良姜 (trang ghi 拉丁名 Alpinia galanga (L.) Willd., 拉丁文名 Rhizoma Alpiniae Galangae — đúng loài riềng của kho, thân rễ): mục【性味】「味辛；性溫」, xuất xứ《中華本草》. Chuyên khảo viết cho thân rễ phơi khô; file là củ riềng tươi — cùng loài, cùng bộ phận, áp theo tiền lệ dạng tươi dùng chuyên khảo dạng khô (hat-sen-tuoi, TCM-001a). KHÔNG dùng mục 高良姜 (Alpinia officinarum — khác loài). https://cht.a-hospital.com/w/%E5%A4%A7%E9%AB%98%E8%89%AF%E5%A7%9C",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "unknown",
   "needs_review": true,

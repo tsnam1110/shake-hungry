@@ -368,6 +368,32 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > 195 nguyên liệu / 349 dòng** (333 thật + 16 suy diễn); validate **0 🔴**, Pest
 > **157/157**; coverage (DB kiểm chứng): **477 món ≥60%**, món Mức 1 đạt tiêu chí phủ:
 > **122/182**. Chi tiết: [TCM-001](docs/05-tasks/tasks/TCM-001.md) §Bổ sung đợt 2 lần 2.
+>
+> ## ⚠️ Đính chính lần 24, 2026-11-01 — TCM-001c đợt 3 (đợt vét cuối): ĐÓNG CHƯƠNG TRÌNH GIEO NHÃN TCM-001
+>
+> Đợt vét cuối đi qua **toàn bộ** nguyên liệu chưa nhãn, gieo phần còn gieo được theo
+> đúng kỷ luật census (phiên gieo tự mở kiểm chứng 100% source_ref mới; đề xuất của agent
+> con không tự kiểm chứng được thì loại/xếp chờ — đợt này loại hẳn trích dẫn không có
+> thật trên trang cho `dau-me`/`bot-mi`, và claim tính ôn cho `muoi`). Kết quả:
+> **+24 nguyên liệu nhãn thật / +52 dòng** (thảo mộc: `la-he`, `rau-mui`, `hung-que`,
+> `la-e`, `hung-lui`, `sa`, `la-lot`, `rieng`, `ot-tuoi`, `rau-can-ta`, `rau-den`,
+> `khoai-mo`, `rau-lang`, `rau-ram`; chế biến: `muoi`, `duong-phen`, `dam-gao`,
+> `giam-bong`, `ruou-trang`, `tra-xanh`, `mo-lon-nuoc`, `rau-cau-kho`, `rong-bien`,
+> `dua-le`), **thử lại `cua-dong` THÀNH CÔNG** (+2 dòng Tuệ Tĩnh hàn/hàm + Lãn Ông
+> hàn/cam — hai kênh đều mở được lần này, ghi chú "lỗi fetch" của đợt 2 hết hiệu lực),
+> **+4 P-DERIVE** (`nuoc-mia`, `cui-dua-nao`, `ot-bot`, `bot-ngo`), **+13 nguyên liệu
+> components / +14 liên kết** (gồm `trung-vit-muoi` [trung-vit] — chỉ components, nhãn
+> vẫn giữ phân xử chờ của đợt 2). `khoai-mi` (củ) vẫn chưa có nguồn → cụm bột sắn
+> (`bot-nang`, `tran-chau`, `bot-khoai`, `bot-bang`) không mở khoá. **Tổng cuối: 223/434
+> nguyên liệu có nhãn — 405 dòng (385 thật + 20 suy diễn); components 27 NL / 39 liên
+> kết; 184 nguyên liệu chưa nhãn đều có bản đồ lý do từng mục tại TCM-001 §Đợt 3: (i) 58
+> không tồn tại phân loại truyền thống · (ii) 87 hàng đợi nguồn · (iii) 10 lệch định danh
+> chưa phân xử · (iv) 29 trần chính sách đã phân xử.** Rà nhất quán toàn lớp: 0 vấn đề.
+> Kiểm chứng: validate **0 🔴 / 11 🟡** (lớp đã biết), Pest **157/157**,
+> ExportStabilityTest đạt; coverage (DB kiểm chứng riêng): **498 món ≥60%** · 99 món
+> 30–<60% · 51 món <30% (648 món có tổng hợp); món Mức 1 đạt tiêu chí phủ **133/182**
+> (chỉ thống kê — đường nâng bù là vòng riêng). **TCM-001 ĐÓNG.** Chi tiết:
+> [TCM-001](docs/05-tasks/tasks/TCM-001.md) §TCM-001c đợt 3.
 
 **Trạng thái thực tế, kiểm ngày 2026-10-31 (đã chạy lại toàn bộ lệnh kiểm chứng):**
 

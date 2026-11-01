@@ -46,6 +46,36 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "nhiet",
+      "flavor": "kho",
+      "element": "hoa",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 酒, phần trích 《本草新編》: 「酒，味苦、甘、辛，氣大熱，有毒。」— tính ĐẠI NHIỆT (chuẩn hoá nhiệt) của 本草新編 lệch với tính ôn của dòng chính: giữ cả hai theo quy tắc không ép chọn (dòng này lấy vị khổ; vị cam/tân của 新編 trùng các dòng ôn). https://cht.a-hospital.com/w/%E9%85%92",
+      "confidence": "medium"
+    },
+    {
+      "nature": "on",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 酒: hộp thông tin 藥性溫、藥味辛、甘、苦; mục 食療價值 [性能] viết về rượu nói chung và nói rõ 「從製法分，酒有蒸餾酒和非蒸餾酒兩大類，前者可見於一般的白酒…此處所論，以普通白酒為主。[性能]味辛、甘，性溫。」— rượu trắng chưng cất từ gạo của kho thuộc đúng nhóm 白酒 này (dòng này lấy vị cam). https://cht.a-hospital.com/w/%E9%85%92",
+      "confidence": "medium"
+    },
+    {
+      "nature": "on",
+      "flavor": "kho",
+      "element": "hoa",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 酒: hộp thông tin 藥性溫、藥味辛、甘、苦; mục 食療價值 [性能] viết về rượu nói chung và nói rõ 「從製法分，酒有蒸餾酒和非蒸餾酒兩大類，前者可見於一般的白酒…此處所論，以普通白酒為主。[性能]味辛、甘，性溫。」— rượu trắng chưng cất từ gạo của kho thuộc đúng nhóm 白酒 này (dòng này lấy vị khổ — vị khổ chỉ có ở hộp thông tin). https://cht.a-hospital.com/w/%E9%85%92",
+      "confidence": "medium"
+    },
+    {
+      "nature": "on",
+      "flavor": "tan",
+      "element": "kim",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 酒: hộp thông tin 藥性溫、藥味辛、甘、苦; mục 食療價值 [性能] viết về rượu nói chung và nói rõ 「從製法分，酒有蒸餾酒和非蒸餾酒兩大類，前者可見於一般的白酒…此處所論，以普通白酒為主。[性能]味辛、甘，性溫。」— rượu trắng chưng cất từ gạo của kho thuộc đúng nhóm 白酒 này (dòng này lấy vị tân). https://cht.a-hospital.com/w/%E9%85%92",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "low",
   "needs_review": true,

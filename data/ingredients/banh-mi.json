@@ -45,6 +45,9 @@
       "is_primary": true
     }
   ],
+  "components": [
+    "bot-mi"
+  ],
   "source": "curated",
   "confidence": "medium",
   "needs_review": true,

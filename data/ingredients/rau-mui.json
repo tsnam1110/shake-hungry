@@ -65,6 +65,15 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "on",
+      "flavor": "tan",
+      "element": "kim",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: trang con 《本草綱目》/胡荽 (rau mùi, Coriandrum sativum — trang chính 香菜 ghi rõ 芫荽 = Coriandrum sativum, biệt danh 胡荽): mục「氣味」ghi 「（根、葉）辛、溫、微毒。」 — giá trị cho rễ + lá, đúng bộ phận lá/thân của kho (hạt được ghi riêng 「（子）辛、酸、平」 — lệch bộ phận, không dùng). https://cht.a-hospital.com/w/%E6%9C%AC%E8%8D%89%E7%BA%B2%E7%9B%AE/%E8%83%A1%E8%8D%BD",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

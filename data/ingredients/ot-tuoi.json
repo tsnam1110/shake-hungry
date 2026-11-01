@@ -52,6 +52,15 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "nhiet",
+      "flavor": "tan",
+      "element": "kim",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 辣椒 (Capsicum annuum Linn — mục 詳細資料【來源】ghi rõ loài, dùng quả; trang cũng ghi chú quả tròn không cay như燈籠椒 thì không nhập dược — file là ớt đỏ cay, khớp): 《全國中草藥彙編》【性味歸經】「果：辛、熱。」; mục 食療價值 [性能] 「味辛，性熱。」 https://cht.a-hospital.com/w/%E8%BE%A3%E6%A4%92",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "medium",
   "needs_review": true,

@@ -65,6 +65,43 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "binh",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 醋 (giấm — 【異名】có 米醋 (theo《食療本草》); 【來源】「為以米、麥、高粱或酒、酒槽等釀成的含有乙酸的液體。」— giấm gạo của kho nằm trong định nghĩa này): mục 食療價值 [性能] 「味酸、甘，性平。」(dòng này lấy vị cam). https://cht.a-hospital.com/w/%E9%A3%9F%E9%86%8B",
+      "confidence": "medium"
+    },
+    {
+      "nature": "binh",
+      "flavor": "toan",
+      "element": "moc",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 醋 (giấm — 【異名】có 米醋 (theo《食療本草》); 【來源】「為以米、麥、高粱或酒、酒槽等釀成的含有乙酸的液體。」— giấm gạo của kho nằm trong định nghĩa này): mục 食療價值 [性能] 「味酸、甘，性平。能消食開胃，散瘀血…」— tính BÌNH của tuyến thực liệu lệch với tính ôn của tuyến dược liệu: giữ cả hai theo quy tắc không ép chọn (dòng này lấy vị toan). https://cht.a-hospital.com/w/%E9%A3%9F%E9%86%8B",
+      "confidence": "medium"
+    },
+    {
+      "nature": "on",
+      "flavor": "toan",
+      "element": "moc",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 醋 (giấm — 【異名】có 米醋 (theo《食療本草》); 【來源】「為以米、麥、高粱或酒、酒槽等釀成的含有乙酸的液體。」— giấm gạo của kho nằm trong định nghĩa này): mục【性味】chính 「酸苦，溫。」và ①《別錄》「味酸，溫，無毒。」(dòng này lấy vị toan theo 別錄/dòng chính). https://cht.a-hospital.com/w/%E9%A3%9F%E9%86%8B",
+      "confidence": "medium"
+    },
+    {
+      "nature": "on",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 醋 (giấm — 【異名】có 米醋 (theo《食療本草》); 【來源】「為以米、麥、高粱或酒、酒槽等釀成的含有乙酸的液體。」— giấm gạo của kho nằm trong định nghĩa này): mục【性味】②《本草蒙筌》「酸甘，溫。」(dòng này lấy vị cam — vị cam chỉ có ở 蒙筌). https://cht.a-hospital.com/w/%E9%A3%9F%E9%86%8B",
+      "confidence": "medium"
+    },
+    {
+      "nature": "on",
+      "flavor": "kho",
+      "element": "hoa",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 醋 (giấm — 【異名】có 米醋 (theo《食療本草》); 【來源】「為以米、麥、高粱或酒、酒槽等釀成的含有乙酸的液體。」— giấm gạo của kho nằm trong định nghĩa này): mục【性味】③《綱目》「酸苦，溫，無毒。」(dòng này lấy vị khổ). https://cht.a-hospital.com/w/%E9%A3%9F%E9%86%8B",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "low",
   "needs_review": true,
