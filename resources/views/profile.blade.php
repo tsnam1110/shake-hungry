@@ -318,7 +318,7 @@ async function loadFavorites() {
         const { dishes, fruits } = await (await fetch('/api/favorites')).json();
         document.getElementById('fav-dishes').innerHTML = (dishes ?? []).map(d => `
             <a href="/mon/${d.slug}" class="ld-dcard">
-                <img class="ld-dcard-img" src="/images/placeholder-dish.svg" alt="" loading="lazy">
+                <img class="ld-dcard-img" src="/images/placeholder-dish.svg" alt="" loading="lazy" decoding="async">
                 <span class="ld-heart" data-fav-dish="${d.id}" role="button" aria-label="Bỏ yêu thích">${heartSvg}</span>
                 <span class="ld-dcard-body">
                     <span class="ld-dcard-title">${esc(d.name ?? d.slug)}</span>
@@ -331,7 +331,7 @@ async function loadFavorites() {
             </a>`).join('') || '<p class="ld-note" style="margin:0">Chưa có món yêu thích — bấm biểu tượng tim trên thẻ món để lưu.</p>';
         document.getElementById('fav-fruits').innerHTML = (fruits ?? []).map(f => `
             <a href="/hoa-qua/${f.slug}" class="ld-dcard">
-                <img class="ld-dcard-img" src="/images/placeholder-fruit.svg" alt="" loading="lazy">
+                <img class="ld-dcard-img" src="/images/placeholder-fruit.svg" alt="" loading="lazy" decoding="async">
                 <span class="ld-heart" data-fav-fruit="${f.id}" role="button" aria-label="Bỏ yêu thích">${heartSvg}</span>
                 <span class="ld-dcard-body">
                     <span class="ld-dcard-title">${esc(f.name_vi ?? f.slug)}</span>

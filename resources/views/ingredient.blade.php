@@ -32,7 +32,7 @@ fetch('/api/ingredients/' + slug).then(r => { if (!r.ok) throw new Error('404');
     const img = i.image;
     document.getElementById('content').innerHTML = `
         <div class="ld-card" style="margin-top:14px;padding:0;overflow:hidden">
-            <img src="${img?.url ?? '/images/placeholder-ingredient.svg'}" alt="${esc(i.name_vi)}" style="width:100%;aspect-ratio:16/8;object-fit:cover;display:block">
+            <img src="${img?.url ?? '/images/placeholder-ingredient.svg'}" alt="${esc(i.name_vi)}" style="width:100%;aspect-ratio:16/8;object-fit:cover;display:block" fetchpriority="high" decoding="async">
             ${img ? `<p style="margin:0;padding:9px 16px;font-size:12.5px;color:var(--color-faint)">${img.is_ai ? 'Ảnh minh họa' : esc(img.attribution ?? '')}</p>` : ''}
         </div>
         <h1 class="ld-title" style="margin-top:16px">${esc(i.name_vi)}</h1>
@@ -67,7 +67,7 @@ fetch('/api/ingredients/' + slug).then(r => { if (!r.ok) throw new Error('404');
         ${dishes.length ? `<h2 class="ld-section-title">Món ăn có ${esc(i.name_vi)}</h2>
         <div class="ld-grid">${dishes.map(d => `
             <a href="/mon/${d.slug}" class="ld-dcard">
-                <img class="ld-dcard-img" src="${d.image?.url ?? '/images/placeholder-dish.svg'}" alt="" loading="lazy">
+                <img class="ld-dcard-img" src="${d.image?.url ?? '/images/placeholder-dish.svg'}" alt="" loading="lazy" decoding="async">
                 <span class="ld-dcard-body">
                     <span class="ld-dcard-title">${esc(d.name ?? d.slug)}</span>
                     <span class="ld-dcard-meta"></span>

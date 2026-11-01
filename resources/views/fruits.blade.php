@@ -79,7 +79,7 @@ async function load() {
     const m = month ? parseInt(month, 10) : null;
     document.getElementById('list').innerHTML = (data.data ?? []).map(f => `
         <a href="/hoa-qua/${f.slug}" class="ld-dcard">
-            <img class="ld-dcard-img" src="${f.image?.url ?? '/images/placeholder-fruit.svg'}" alt="${esc(f.name_vi)}" loading="lazy">
+            <img class="ld-dcard-img" src="${f.image?.url ?? '/images/placeholder-fruit.svg'}" alt="${esc(f.name_vi)}" loading="lazy" decoding="async">
             <span class="ld-heart" data-fav-fruit="${f.id}" role="button" aria-label="Yêu thích quả này">${heartSvg}</span>
             <span class="ld-dcard-body">
                 <span class="ld-dcard-title">${esc(f.name_vi)}</span>

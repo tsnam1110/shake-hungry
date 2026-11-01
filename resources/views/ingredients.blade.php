@@ -79,7 +79,7 @@ function cardHtml(i) {
     const snap = i.nutrition_snapshot ?? {};
     const allergens = (i.tags ?? []).filter(t => t.slug.startsWith('allergen:'));
     return `<a href="/nguyen-lieu/${i.slug}" class="ld-dcard">
-        <img class="ld-dcard-img" src="${i.image?.url ?? '/images/placeholder-ingredient.svg'}" alt="${esc(i.name_vi)}" loading="lazy">
+        <img class="ld-dcard-img" src="${i.image?.url ?? '/images/placeholder-ingredient.svg'}" alt="${esc(i.name_vi)}" loading="lazy" decoding="async">
         <span class="ld-dcard-body">
             <span class="ld-dcard-title">${esc(i.name_vi)}</span>
             <span class="ld-dcard-meta">${catLabel[i.category] ?? esc(i.category ?? '')}${i.scientific_name ? ' · ' + esc(i.scientific_name) : ''}</span>
