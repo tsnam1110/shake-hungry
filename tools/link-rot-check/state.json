@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-11-01T10:14:30+07:00",
+ "updated_at": "2026-11-01T10:58:43+07:00",
  "totals": {
   "urls": 1994,
   "song": 1572,
@@ -375,8 +375,8 @@
   "http://nguoixunghekiev.vn/serviceView_353_355_86946.html": {
    "status": "song",
    "codes": [
-    0,
-    200
+    200,
+    null
    ],
    "first_dead": null,
    "last_checked": "2026-11-01",
@@ -11776,7 +11776,7 @@
   "https://diendanmevabe.com/dau-phu-nhoi-thit-sot-ca-chua-mon-an-hap-dan-trong-bua-com-gia-dinh-viet/": {
    "status": "chua-ket-luan",
    "codes": [
-    0,
+    503,
     503
    ],
    "first_dead": null,
@@ -16483,8 +16483,8 @@
   "https://runawayrice.com/noodles-rice/shredded-pork-and-rice-vermicelli/": {
    "status": "song",
    "codes": [
-    0,
-    200
+    200,
+    null
    ],
    "first_dead": null,
    "last_checked": "2026-11-01",
@@ -19921,7 +19921,7 @@
   "https://vnexpress.net/doi-song-cooking-che-sen-ha-noi-4606006.html": {
    "status": "song",
    "codes": [
-    301,
+    200,
     null
    ],
    "first_dead": null,
@@ -24527,8 +24527,8 @@
   "https://www.dieutri.vn/songkhoe/chao-luon": {
    "status": "song",
    "codes": [
-    200,
-    null
+    0,
+    200
    ],
    "first_dead": null,
    "last_checked": "2026-11-01",
