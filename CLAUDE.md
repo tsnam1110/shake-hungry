@@ -166,6 +166,15 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > liên hệ riêng. Đóng góp món (contributions) và phản hồi (feedback) là hai hàng đợi
 > khác nhau: đóng góp là dữ liệu đề xuất, phản hồi là ticket hỗ trợ/góp ý.
 
+> ## ⚠️ Đính chính lần 15, 2026-11-01 — lọc dưỡng chất và vị trí nhãn dị ứng (UI-019)
+>
+> (1) `dish_nutrition` **không có cột natri** — engine không tính natri theo món;
+> natri chỉ tồn tại trong `nutrition_snapshot` của nguyên liệu. Bộ lọc dưỡng chất
+> phía món chỉ được dùng các cột có thật (protein/fat/carb/fiber/kcal); muốn lọc
+> natri theo món phải mở rộng engine trước, không được bịa cột. (2) Nhãn dị ứng ở
+> trang chi tiết hiển thị trong **mục "Thông tin dị ứng" riêng** (không trộn vào
+> hàng nhãn đầu trang hay nhóm Phân loại) và luôn kèm lưu ý không-phải-cam-kết-an-toàn.
+
 > ## ⚠️ Đính chính lần 14, 2026-10-31 — rà soát toàn bộ (census) sau chương trình Mức 2 (AUDIT-002)
 >
 > Đợt rà soát toàn bộ đã xếp hàng từ khi chương trình Mức 2 còn chạy nay đã làm xong:
