@@ -615,6 +615,29 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > Kiểm chứng: validate **0 🔴**, Pest **167/167**, ExportStabilityTest đạt. Chi tiết:
 > [TCM-001](docs/05-tasks/tasks/TCM-001.md) mục TCM-001d, [AUDIT-004](docs/05-tasks/tasks/AUDIT-004.md) §5.
 
+> ## ⚠️ Đính chính lần 36, 2026-11-01 — AUDIT-003: census toàn lớp Mức 3 — lớp đạt chuẩn cao, khuyết điểm chỉ ở chuỗi trích dẫn
+>
+> Rà soát census 100% hai lượt toàn lớp Mức 3 (baseline 413 dòng nhãn; corpus đã lên 436
+> sau FIX-TCM4 giữa đợt — phán quyết gắn với baseline, 23 dòng TCM-001d chưa qua census
+> nguồn của đợt này). Kết quả: **tổng hợp độc lập 0/648 lệch**; **cổng mức sạch hai chiều**
+> (187/187 Mức 3 đạt cổng, 114/114 nâng bù không trôi so với lúc nâng, 0 ca sót đủ điều
+> kiện); **ghi chú 463/463: 0 vi phạm khung y tế bị cấm**, sự kiện chính khớp ở mọi URL
+> mở được (359/465 URL kiểm chứng nội dung — 0 chết, 0 sai bài; 106 URL chưa kết luận vì
+> dịch vụ mở trang chặn 429, không phải lỗi dữ liệu); **components 39/39** tồn tại + hợp
+> lý; **hiển thị đúng chuẩn TCM-003, 55/55 ca DOM**; validate **0 🔴**, Pest 162/162 tại
+> thời điểm chạy (gồm ExportStabilityTest đạt). **Giá trị tính vị: 0 dòng sai** — hội tụ
+> với AUDIT-004. 🔴 duy nhất nằm ở **chuỗi URL trích dẫn** (giá trị gieo đều đúng):
+> `ca-chim` URL sai loài （鯇 cá trắm cỏ thay 鯧 cá chim); `ca-doi` ×2 URL trượt ký tự
+> （鱸魚 thay 鯔魚) + bản phồn thể đã rot — chính là ca **FIX-TCM4-4** AUDIT-004 chuyển
+> sang, đích thay thế là bản giản thể còn nguyên văn; lớp **URL dính dấu chấm câu cuối**
+> 3 token (`dau-do-hat` ×2 — kể cả URL A+ 赤小豆 mới của FIX-TCM4-1 — và `rau-diep-ca`
+> id/394): token trích ra được trả 404, đích không-dấu-chấm tồn tại đúng nội dung. 🟡:
+> 8 dòng trích tên mục không kèm URL (nội dung kiểm chứng 8/8 tại trang mục A+); một số
+> chi tiết phụ trong ghi chú chưa có căn cứ ở nguồn đã mở (AX3-08); nguồn của chính ghi
+> chú mam-ca-ro ghi mắm làm từ **cá kình con** — corroboration cho mục định danh đang chờ
+> quyết. Khắc phục gom tại danh sách AUDIT-003-FIX (báo cáo §9), chưa thực thi. Chi tiết:
+> [AUDIT-003](docs/05-tasks/tasks/AUDIT-003.md) + báo cáo rà soát lớp Mức 3 2026-11-01.
+
 **Trạng thái thực tế, kiểm ngày 2026-10-31 (đã chạy lại toàn bộ lệnh kiểm chứng):**
 
 | Hạng mục | Thực tế | Kiểm bằng |

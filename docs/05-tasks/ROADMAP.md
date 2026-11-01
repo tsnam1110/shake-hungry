@@ -231,6 +231,23 @@ Kiểm chứng: validate 0 🔴, Pest 167/167, ExportStabilityTest đạt. Chi
 tiết: [tasks/TCM-001.md](./tasks/TCM-001.md) mục TCM-001d +
 [tasks/AUDIT-004.md](./tasks/AUDIT-004.md) §5.
 
+**AUDIT-003 — RÀ SOÁT CENSUS TOÀN LỚP MỨC 3 ĐÃ XONG (2026-11-01,
+chỉ đọc — không sửa dữ liệu/code):** census 100% hai lượt trên baseline
+413 dòng nhãn (corpus lên 436 sau FIX-TCM4 giữa đợt — xem báo cáo §0b):
+tổng hợp độc lập **0/648 lệch**; cổng mức sạch hai chiều (187/187 Mức 3
+đạt, 114/114 nâng bù không trôi, 0 sót); ghi chú 463/463 **0 vi phạm
+khung y tế**; components 39/39 hợp lý; hiển thị TCM-003 đạt **55/55 ca
+DOM**; validate 0 🔴, Pest 162/162 tại thời điểm chạy. Census nguồn:
+nhãn 126/131 URL sống + khớp (0 sai giá trị — hội tụ AUDIT-004); ghi
+chú 359/465 URL kiểm chứng nội dung (0 chết, 0 sai bài; 106 URL chưa
+kết luận do dịch vụ mở trang chặn 429). 🔴 trích dẫn (giá trị đều
+đúng): `ca-chim` URL sai loài （鯇 thay 鯧）, `ca-doi` ×2 trượt ký tự +
+rot phồn thể (= FIX-TCM4-4 chuyển từ AUDIT-004; bản giản thể còn
+sống), lớp URL dính dấu chấm cuối 3 dòng (`dau-do-hat` ×2 — kể cả URL
+A+ mới của FIX-TCM4-1 — và `rau-diep-ca`). Danh sách khắc phục
+AUDIT-003-FIX + 🟡 AX3-05…10 tại [tasks/AUDIT-003.md](./tasks/AUDIT-003.md)
++ báo cáo AUDIT-003 2026-11-01.
+
 > Mỗi task có file chi tiết riêng tại [`tasks/`](./tasks/). Click mã task để xem đầy đủ.
 > Tạo task mới: copy [`TASK-TEMPLATE.md`](./TASK-TEMPLATE.md) vào `tasks/`, đặt tên theo mã task.
 > Trước khi đánh dấu DONE: đối chiếu [`DEFINITION-OF-DONE.md`](./DEFINITION-OF-DONE.md).
