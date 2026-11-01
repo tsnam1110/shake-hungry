@@ -46,6 +46,22 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "luong",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 豬膚 (biệt danh chính là 豬皮 — da lợn; mục nguồn ghi 「為豬科動物豬的皮膚」): hộp thông tin 藥性涼、藥味甘； mục 性味 ghi 「甘，涼。」; 《隨息居飲食譜》 ghi 「豬膚甘涼」; 《本草蒙筌》 ghi 「味甘，氣微寒，無毒」 (微寒 chuẩn hoá = lương — cùng dòng này). http://cht.a-hospital.com/w/%E8%B1%AC%E8%86%9A",
+      "confidence": "medium"
+    },
+    {
+      "nature": "han",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 豬膚 dẫn 《註解傷寒論》 ghi 「味甘，寒。」 — truyền thống lạnh, hiển thị song song với dòng lương. http://cht.a-hospital.com/w/%E8%B1%AC%E8%86%9A",
+      "confidence": "low"
+    }
+  ],
   "source": "curated",
   "confidence": "low",
   "needs_review": true,

@@ -44,6 +44,20 @@
       "nature": "on",
       "flavor": "cam",
       "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 羊肉 (trang phân biệt 山羊肉/綿羊肉/野羊肉； mục 食療價值 ghi nguồn là thịt 「牛科動物山羊或綿羊等」 — dê nhà Capra hircus nằm trong phạm vi; khác hẳn trang 山羊肉 bị loại vì ghi loài gốc là sơn dương hoang Naemorhedus goral): hộp thông tin 藥性溫、藥味甘； ghi 「甘、溫、無毒。」; [性能] ghi 「味甘，性溫」. http://cht.a-hospital.com/w/%E7%BE%8A%E8%82%89",
+      "confidence": "medium"
+    },
+    {
+      "nature": "nhiet",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 羊肉, phần 中醫功效 dẫn Lý Cảo (李杲） ghi 「羊肉，甘熱，能補血之虛」; một đoạn khác trong trang cũng ghi 「其性味甘熱」 — truyền thống nhiệt, hiển thị song song với dòng ôn. http://cht.a-hospital.com/w/%E7%BE%8A%E8%82%89",
+      "confidence": "low"
+    },
+    {
+      "nature": "on",
+      "flavor": "cam",
+      "element": "tho",
       "source_ref": "Sổ tay người chăm sóc bệnh nhân ung thư Hồng Kông 《癌症病人照顧者全面手冊》, chương 中醫食療——食物種類分析 (nội dung: TS. Lâm Đạo Nghi 林道儀， thầy thuốc Trung y đăng ký hành nghề; bản chốt 2022-04): mục 羊肉 (thịt dê/cừu nuôi nói chung) ghi 「味甘，性溫」 — áp theo đúng phạm vi mục chung này. KHÔNG dùng mục 山羊肉 của A+醫學百科: trang đó tự ghi loài gốc là 青羊 Naemorhedus goral (sơn dương hoang), khác dê nhà Capra hircus của kho. https://www.cancercarers.org.hk/%E4%B8%AD%E9%86%AB%E9%A3%9F%E7%99%82/%E9%A3%9F%E7%89%A6%E7%A8%AE%E9%A1%9E%E5%88%86%E6%9E%90",
       "confidence": "medium"
     }

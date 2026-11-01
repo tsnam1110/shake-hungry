@@ -341,6 +341,18 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > assertion không đổi), ExportStabilityTest đạt. Coverage (DB kiểm chứng): **470 món
 > ≥60%** (trước: 401, +69); món Mức 1 đạt tiêu chí phủ: **118/182** (trước: 106) — chỉ
 > thống kê, đợt nâng bù riêng làm sau. Chi tiết: [TCM-001](docs/05-tasks/tasks/TCM-001.md).
+>
+> ## ⚠️ Đính chính lần 22, 2026-11-01 — bổ sung TCM-001c đợt 2 (báo cáo agent con đến muộn, đã tự kiểm chứng lại)
+>
+> Báo cáo của agent nghiên cứu con (nhóm thịt/nội tạng/trứng) đến sau commit đợt 2, kèm
+> URL nguyên văn của 3 trang mà phiên gieo đoán tựa không trúng nên đã ghi chờ. Tự mở lại
+> cả ba: báo cáo chính xác — **bổ sung `bi-lon` 2 dòng** (A+ 豬膚： lương/cam + dòng lệch
+> hàn), **`trung-vit` 2 dòng** (A+ 鴨卵： lương/cam hai từ điển đồng thuận + dòng lệch
+> hàm), **`thit-de` +2 dòng** (A+ 羊肉 chung — khác trang 山羊肉 đã bác). Tổng sau bổ
+> sung: **194 nguyên liệu / 348 dòng** (332 thật + 16 suy diễn); `trung-vit-muoi` và
+> `bong-bi` giữ nguyên phân xử chờ/loại-suy-diễn (lý do tại TCM-001 §Bổ sung đợt 2).
+> Kiểm chứng lại: validate **0 🔴**, Pest **157/157**. Coverage (DB kiểm chứng):
+> **473 món ≥60%**; món Mức 1 đạt tiêu chí phủ: **120/182**.
 
 **Trạng thái thực tế, kiểm ngày 2026-10-31 (đã chạy lại toàn bộ lệnh kiểm chứng):**
 

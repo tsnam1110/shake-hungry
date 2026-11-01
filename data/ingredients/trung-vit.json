@@ -45,6 +45,22 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "luong",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 鴨卵 (trứng vịt nguyên quả; nguồn ghi 「為鴨科動物家鴨的蛋」, 《中華本草》 ghi tên Latin Anas domestica): hộp thông tin 藥性涼、藥味甘； 《中藥大辭典》 mục 性味 ghi 「甘，涼。」; 《中華本草》 ghi 「味甘；性涼」 — hai từ điển đồng thuận. http://cht.a-hospital.com/w/%E9%B4%A8%E5%8D%B5",
+      "confidence": "medium"
+    },
+    {
+      "nature": "luong",
+      "flavor": "ham",
+      "element": "thuy",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 鴨卵 dẫn 《本草綱目》 ghi 「甘咸，微寒，無毒」 (微寒 chuẩn hoá = lương; dòng này lấy vị hàm); 孟詵 cũng ghi 「微寒」. http://cht.a-hospital.com/w/%E9%B4%A8%E5%8D%B5",
+      "confidence": "low"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,
