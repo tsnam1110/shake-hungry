@@ -258,6 +258,81 @@
     document.getElementById('tcm-overlay').addEventListener('click', (e) => { if (e.target.id === 'tcm-overlay') tcmClose(); });
     document.addEventListener('keydown', (e) => { if (e.key === 'Escape') tcmClose(); });
 </script>
+<script>
+    /* TCM-003 (2026-11-01): bảng màu + icon cho từng giá trị tính/vị/hành —
+       nguồn sự thật duy nhất của tầng trình bày tính vị. Màu: tính theo dải
+       lạnh→nóng; vị theo hành tương ứng; hành theo 5 màu ngũ hành (Kim dùng
+       bạc + viền, Thuỷ dùng xanh dương đậm cho dễ đọc). Icon SVG tự vẽ theo
+       hệ thiết kế; icon của hành luôn động, tính/vị động nhẹ khi hợp lý
+       (CSS .ld-tcm-ic.anim-* ở app.css, tắt khi prefers-reduced-motion).
+       Mọi hàm nhận NHÃN ĐÃ esc() từ phía gọi và trả HTML. */
+    window.ldTcm = (() => {
+        const svg = (inner) => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${inner}</svg>`;
+        const icons = {
+            snow: svg('<path d="M12 3v18M4.2 7.5l15.6 9M19.8 7.5l-15.6 9"/>'),
+            wind: svg('<path d="M3 8h9.5a2.75 2.75 0 1 0-2.75-2.75M2 12h13.5A2.75 2.75 0 1 1 12.75 14.75M3 16h6"/>'),
+            balance: svg('<circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17"/><circle cx="12" cy="12" r="1.3" fill="currentColor" stroke="none"/>'),
+            sun: svg('<circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.3M12 19.2v2.3M2.5 12h2.3M19.2 12h2.3M5 5l1.6 1.6M17.4 17.4 19 19M19 5l-1.6 1.6M6.6 17.4 5 19"/>'),
+            flame: svg('<path d="M12 2.8c.5 4.3-1.6 6-3 7.7C7.7 12 7 13.4 7 15.2A5 5 0 0 0 12 20.2a5 5 0 0 0 5-5c0-1.5-.5-2.8-1.2-4-.4.8-1 1.5-1.8 2 .3-3.4-.5-7.3-2-10.4Z"/>'),
+            leaf: svg('<path d="M11 20A7 7 0 0 1 4 13c0-5 4-9 16-9 0 12-5 16-9 16Z"/><path d="M4 21c4-6 8-9 12-11"/>'),
+            lemon: svg('<circle cx="12" cy="12" r="8.5"/><path d="M12 12V3.5M12 12l7.4 4.3M12 12l-7.4 4.3"/>'),
+            herb: svg('<path d="M12 21v-9"/><path d="M12 9.5C12 6.3 10 4.2 6.3 4.2c0 3.6 2.1 5.5 5.7 5.3Z"/><path d="M12 13.5c0-3.2 2-5.3 5.7-5.3 0 3.6-2.1 5.5-5.7 5.3Z"/>'),
+            honey: svg('<path d="M9.2 3.5h5.6M10 3.5v2c-1.5.7-2.4 1.8-2.4 3.4V17a3.6 3.6 0 0 0 3.6 3.6h1.6A3.6 3.6 0 0 0 16.4 17V8.9c0-1.6-.9-2.7-2.4-3.4v-2"/><path d="M7.6 12.8h8.8"/>'),
+            chili: svg('<path d="M5.8 15.2C5.4 9.9 9.6 5.6 15.2 5.2c.5 0 1 .1 1.5.2-1.4 1.3-2 3-1.9 4.8.3 4.6-2.9 8.7-7.7 9.7-1 .2-1.2-2.5-1.3-4.7Z"/><path d="M15.4 5.2c.4-1.3 1.4-2.2 2.8-2.5-.2 1.1-.8 2-1.7 2.7"/>'),
+            seadrop: svg('<path d="M12 3.5c2.2 2.9 3.8 5.2 3.8 7.3a3.8 3.8 0 0 1-7.6 0c0-2.1 1.6-4.4 3.8-7.3Z"/><path d="M4 20.2c1.7-1.3 3.3-1.3 5 0s3.3 1.3 5 0 3.3-1.3 5 0"/>'),
+            droplet: svg('<path d="M12 3.5c2.4 3.1 4 5.5 4 7.8a4 4 0 0 1-8 0c0-2.3 1.6-4.7 4-7.8Z"/>'),
+            mountain: svg('<path d="M3 19.5 9.5 8l3.8 5.6 2.2-3.4L21 19.5Z"/><path d="M9.5 8 8.3 9.9h2.4Z"/>'),
+            sparkle: svg('<path d="M12 3l1.9 6.1L20 11l-6.1 1.9L12 19l-1.9-6.1L4 11l6.1-1.9Z"/>'),
+            wave: svg('<path d="M2.5 9c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/><path d="M2.5 15c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/>'),
+        };
+        const MAPS = {
+            nature: {
+                han:   { c: '#0058b3', b: '#e1edfb', i: 'snow', a: 'spin' },
+                luong: { c: '#3f8fd2', b: '#e6f2fc', i: 'wind', a: 'bob' },
+                binh:  { c: '#5f7a61', b: '#e9efe9', i: 'balance', a: '' },
+                on:    { c: '#c77400', b: '#fdf0dd', i: 'sun', a: 'pulse' },
+                nhiet: { c: '#d70015', b: '#ffe9e7', i: 'flame', a: 'flicker' },
+            },
+            flavor: {
+                toan: { c: '#248a3d', b: '#e4f8ea', i: 'lemon', a: 'sway' },
+                kho:  { c: '#d70015', b: '#ffe9e7', i: 'herb', a: 'sway' },
+                cam:  { c: '#7a5200', b: '#fff3d0', i: 'honey', a: 'bob' },
+                tan:  { c: '#636368', b: '#eeeef1', bd: '#d5d5db', i: 'chili', a: 'sway' },
+                ham:  { c: '#0058b3', b: '#e1edfb', i: 'seadrop', a: 'wave' },
+                dam:  { c: '#a3863f', b: '#f7efdb', i: 'droplet', a: 'bob' },
+            },
+            element: {
+                moc:  { c: '#248a3d', b: '#e4f8ea', i: 'leaf', a: 'sway' },
+                hoa:  { c: '#d70015', b: '#ffe9e7', i: 'flame', a: 'flicker' },
+                tho:  { c: '#96690a', b: '#f5ecd2', i: 'mountain', a: 'bob' },
+                kim:  { c: '#6e6e73', b: '#f1f1f4', bd: '#d8d8de', i: 'sparkle', a: 'sparkle' },
+                thuy: { c: '#0058b3', b: '#e1edfb', i: 'wave', a: 'wave' },
+            },
+        };
+        const meta = (kind, key) => (key ? MAPS[kind]?.[key] ?? null : null);
+        function chip(kind, key) {
+            const m = meta(kind, key);
+            if (!m) return '';
+            return `<span class="ld-tcm-ic${m.a ? ' anim-' + m.a : ''}" style="color:${m.c};background:${m.b}${m.bd ? ';border:1px solid ' + m.bd : ''}">${icons[m.i]}</span>`;
+        }
+        function line(kind, key, title, label) {
+            const m = meta(kind, key);
+            if (!m || !label) return '';
+            return `<div class="ld-tcm-line">${chip(kind, key)}<span class="ld-tcm-name">${title}</span><b style="color:${m.c}">${label}</b></div>`;
+        }
+        function seg(kind, key, label) {
+            const m = meta(kind, key);
+            if (!m || !label) return '';
+            return `<span class="ld-tcm-seg" style="color:${m.c}">${icons[m.i]}${label}</span>`;
+        }
+        function segments(t) {
+            return [seg('nature', t.nature, t.nature_label), seg('flavor', t.flavor, t.flavor_label), seg('element', t.element, t.element_label)]
+                .filter(Boolean).join(' · ');
+        }
+        function color(kind, key) { return meta(kind, key)?.c ?? ''; }
+        return { line, seg, segments, color, chip };
+    })();
+</script>
 
 <div class="ld-toast" id="ld-toast" role="status"></div>
 <script>

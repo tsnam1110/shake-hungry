@@ -287,3 +287,31 @@ a.ld-dcard:hover { box-shadow: 0 2px 4px rgba(0,0,0,.05), 0 14px 34px rgba(0,0,0
 
 /* ---------- Đồng hồ khối Lắc (UI-011) ---------- */
 .ld-clock { font-size: 31px; font-weight: 800; letter-spacing: -.02em; line-height: 1; }
+
+/* ---------- Tính vị: dòng giá trị có màu + icon động (TCM-003, 2026-11-01) ----------
+ * Mỗi giá trị tính/vị/hành có màu + icon riêng (bảng tra ở window.ldTcm trong
+ * layout). Icon là SVG nét theo hệ thiết kế, chuyển động chỉ bằng transform/
+ * opacity, biên độ nhỏ; người dùng giảm chuyển động thì tắt hẳn. */
+.ld-tcm-lines { display: flex; flex-direction: column; gap: 7px; }
+.ld-tcm-line { display: flex; align-items: center; gap: 9px; font-size: 15.5px; }
+.ld-tcm-name { color: var(--color-sub); font-weight: 600; min-width: 86px; }
+.ld-tcm-ic { width: 27px; height: 27px; border-radius: 9px; display: inline-flex; align-items: center;
+    justify-content: center; flex: none; }
+.ld-tcm-ic svg { width: 17px; height: 17px; display: block; }
+.ld-tcm-seg { display: inline-flex; align-items: center; gap: 4px; font-weight: 700; }
+.ld-tcm-seg svg { width: 14px; height: 14px; flex: none; }
+@keyframes ld-tcm-sway { from { transform: rotate(-5deg); } to { transform: rotate(5deg); } }
+@keyframes ld-tcm-flicker { from { transform: scale(1, 1); opacity: .85; } to { transform: scale(1.07, 1.13); opacity: 1; } }
+@keyframes ld-tcm-bob { from { transform: translateY(0); } to { transform: translateY(-2px); } }
+@keyframes ld-tcm-wave { from { transform: translateX(-1.2px); } to { transform: translateX(1.2px); } }
+@keyframes ld-tcm-sparkle { from { transform: scale(.82); opacity: .45; } to { transform: scale(1.06); opacity: 1; } }
+@keyframes ld-tcm-spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+@keyframes ld-tcm-pulse { from { transform: scale(1); opacity: .88; } to { transform: scale(1.08); opacity: 1; } }
+.ld-tcm-ic.anim-sway svg { animation: ld-tcm-sway 3.4s ease-in-out infinite alternate; transform-origin: 50% 85%; }
+.ld-tcm-ic.anim-flicker svg { animation: ld-tcm-flicker .9s ease-in-out infinite alternate; transform-origin: 50% 90%; }
+.ld-tcm-ic.anim-bob svg { animation: ld-tcm-bob 2.6s ease-in-out infinite alternate; }
+.ld-tcm-ic.anim-wave svg { animation: ld-tcm-wave 2.4s ease-in-out infinite alternate; }
+.ld-tcm-ic.anim-sparkle svg { animation: ld-tcm-sparkle 1.7s ease-in-out infinite alternate; }
+.ld-tcm-ic.anim-spin svg { animation: ld-tcm-spin 26s linear infinite; }
+.ld-tcm-ic.anim-pulse svg { animation: ld-tcm-pulse 3s ease-in-out infinite alternate; }
+@media (prefers-reduced-motion: reduce) { .ld-tcm-ic svg { animation: none !important; } }

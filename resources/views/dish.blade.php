@@ -77,13 +77,16 @@ fetch('/api/dishes/' + encodeURIComponent(slug), { headers: { 'Accept': 'applica
 
         ${tcm ? `
         <div class="ld-card" style="margin-top:30px">
-            <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
-                <p style="margin:0;font-size:15.5px"><b>Tính vị:</b> tính ${esc(tcm.nature_label)}${tcm.dominant_element_label ? ` · hành ${esc(tcm.dominant_element_label)}` : ''}</p>
+            <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap">
+                <div class="ld-tcm-lines">
+                    ${ldTcm.line('nature', tcm.nature, 'Tính:', esc(tcm.nature_label))}
+                    ${ldTcm.line('element', tcm.dominant_element, 'Ngũ hành:', esc(tcm.dominant_element_label))}
+                </div>
                 <button type="button" class="ld-btn ld-btn-gray" data-tcm-open data-tcm-title="Tính vị: ${esc(name)}" style="padding:9px 16px;font-size:14px;flex:none">Nguồn &amp; chi tiết</button>
             </div>
         </div>
         <template id="tcm-detail">
-            <p style="margin:0;font-size:15.5px">Theo quan niệm ẩm thực truyền thống, món này được xem là <b>tính ${esc(tcm.nature_label)}</b>${tcm.dominant_element_label ? ` · hành chủ đạo: <b>${esc(tcm.dominant_element_label)}</b>` : ''}</p>
+            <p style="margin:0;font-size:15.5px">Theo quan niệm ẩm thực truyền thống, món này được xem là <b style="color:${ldTcm.color('nature', tcm.nature)}">tính ${esc(tcm.nature_label)}</b>${tcm.dominant_element_label ? ` · hành chủ đạo: <b style="color:${ldTcm.color('element', tcm.dominant_element)}">${esc(tcm.dominant_element_label)}</b>` : ''}</p>
             <div style="margin-top:10px">
                 <div class="ld-row" style="padding-left:0;padding-right:0"><span class="grow" style="color:var(--color-sub)">Độ phủ nguyên liệu có nhãn tính vị</span><span class="value ld-tnum" style="color:var(--color-ink)">${Math.round(tcm.coverage_pct)}% khối lượng</span></div>
                 <div class="ld-row" style="padding-left:0;padding-right:0"><span class="grow" style="color:var(--color-sub)">Độ tin cậy</span><span class="value" style="color:var(--color-ink)">${confLabel[tcm.confidence] ?? esc(tcm.confidence)}</span></div>

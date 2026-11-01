@@ -484,6 +484,28 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > (187 + 87 Mức 2 (có note)). Kiểm chứng: seed DB kiểm chứng riêng, validate
 > **0 🔴** (3.344 bản ghi), Pest **157/157** gồm ExportStabilityTest. Chi
 > tiết: [VN-001](docs/05-tasks/tasks/VN-001.md).
+>
+> ## ⚠️ Đính chính lần 30, 2026-11-01 — TCM-003: giá trị chính tính vị tách 3 dòng có màu + icon động
+>
+> Theo chỉ đạo bổ sung của chủ dự án (~15:29, thay phần giá trị chính 1 dòng
+> của lần 28): phần chính của khối tính vị nay tách thành các dòng riêng có
+> tiêu đề — **"Tính:"**, **"Vị:"**, **"Ngũ hành:"** — mỗi giá trị có **màu
+> riêng + icon SVG động** (bảng tra duy nhất `window.ldTcm` trong layout;
+> CSS `.ld-tcm-*` trong `resources/css/app.css`, đã `npm run build` và kiểm
+> chứng bundle mới). Màu tính theo dải lạnh→nóng (Hàn xanh đậm #0058B3,
+> Lương xanh lơ #3F8FD2, Bình sage #5F7A61, Ôn hổ phách #C77400, Nhiệt đỏ
+> #D70015); vị theo hành tương ứng (Toan Mộc xanh lá, Khô Hoả đỏ, Cam Thổ
+> vàng nâu #7A5200, Tân Kim xám #636368, Hàm Thuỷ xanh đậm, Đạm Thổ nhạt);
+> hành đúng 5 màu ngũ hành (Kim bạc #6E6E73 + viền chống chìm, Thuỷ xanh
+> dương đậm). Icon hành **bắt buộc động** (lá đung đưa, lửa nhấp nháy, núi
+> nhấp nhô, tia sáng loé, sóng gợn — chỉ transform/opacity, tắt khi
+> `prefers-reduced-motion`). **Trang món chỉ 2 dòng Tính + Ngũ hành** (món
+> không có vị — không bịa); nguyên liệu/quả đủ 3 dòng từ nhãn chính; popup
+> giữ nguyên cấu trúc lần 28, các dòng nhãn trong popup dùng cùng ngôn ngữ
+> màu/icon (segments). Quy tắc trung thực và dữ liệu không đổi. Kiểm chứng
+> render DOM thật 7 ca đều đạt; Pest 156/157 (đỏ duy nhất ExportStabilityTest
+> do file dữ liệu đang dở của phiên VN-001 đợt 3, không liên quan đợt này).
+> Chi tiết: [TCM-003](docs/05-tasks/tasks/TCM-003.md).
 
 **Trạng thái thực tế, kiểm ngày 2026-10-31 (đã chạy lại toàn bộ lệnh kiểm chứng):**
 
