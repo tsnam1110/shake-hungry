@@ -53,6 +53,13 @@
       "element": "tho",
       "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 豬腸, mục 食療價值 ghi 「性味甘平」 — truyền thống bình, hiển thị song song với dòng hàn. http://cht.a-hospital.com/w/%E8%B1%AC%E8%85%B8",
       "confidence": "medium"
+    },
+    {
+      "nature": "luong",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "《本草綱目》 (Lý Thời Trân) — 獸之一, chương 豕 (lợn), mục 腸: 【氣味】ghi「甘，微寒，無毒。」(微寒 chuẩn hoá = lương; 【主治】của mục dẫn Mạnh Thận 《食療本草》). Mục 腸 của cổ thư bao gồm cả ruột già và ruột non — khớp phạm vi lòng lợn nói chung của file. Bản toàn văn số hoá Wikisource: https://zh.wikisource.org/wiki/%E6%9C%AC%E8%8D%89%E7%B6%B1%E7%9B%AE/%E7%8D%B8%E4%B9%8B%E4%B8%80",
+      "confidence": "medium"
     }
   ],
   "source": "curated",

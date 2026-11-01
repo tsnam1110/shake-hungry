@@ -55,10 +55,31 @@
   ],
   "tcm_traits": [
     {
+      "nature": "luong",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "CMRO Hồng Kông (衞生署中醫藥規管辦公室 — Cơ quan Quản lý YHCT thuộc Sở Y tế) — ấn phẩm giáo dục sức khoẻ cộng đồng 《中醫飲食養生——五穀與蔬果》: mục 【冬瓜】ghi「性味甘淡微寒。能清熱解毒，止渴除煩，利小便，為夏令消暑的理想瓜菜。」(微寒 chuẩn hoá = lương; dòng này lấy vị cam). Phạm vi thịt quả như dòng sổ tay HK đã có; A+醫學百科 mục 冬瓜 cũng nhất quán 微寒 ở hộp thông tin, mục 【性味】 và chuyên khảo 《中華本草》. https://www.cmro.gov.hk/html/b5/useful_information/public_health/publication/Health_Preservation_by_Food_in_CM.html",
+      "confidence": "medium"
+    },
+    {
+      "nature": "luong",
+      "flavor": "dam",
+      "element": null,
+      "source_ref": "CMRO Hồng Kông (衞生署中醫藥規管辦公室 — Cơ quan Quản lý YHCT thuộc Sở Y tế) — ấn phẩm giáo dục sức khoẻ cộng đồng 《中醫飲食養生——五穀與蔬果》: mục 【冬瓜】ghi「性味甘淡微寒。能清熱解毒，止渴除煩，利小便，為夏令消暑的理想瓜菜。」(微寒 chuẩn hoá = lương; dòng này lấy vị đạm). Phạm vi thịt quả như dòng sổ tay HK đã có; A+醫學百科 mục 冬瓜 cũng nhất quán 微寒 ở hộp thông tin, mục 【性味】 và chuyên khảo 《中華本草》. https://www.cmro.gov.hk/html/b5/useful_information/public_health/publication/Health_Preservation_by_Food_in_CM.html",
+      "confidence": "medium"
+    },
+    {
       "nature": "han",
       "flavor": "cam",
       "element": "tho",
       "source_ref": "Sổ tay người chăm sóc bệnh nhân ung thư Hồng Kông 《癌症病人照顧者全面手冊》, chương 中醫食療——食物種類分析 (nội dung: TS. Lâm Đạo Nghi 林道儀， thầy thuốc Trung y đăng ký hành nghề; bản chốt 2022-04): mục 冬瓜 ghi 「冬瓜：味甘，性寒。」. Chỉ thịt quả — sổ tay có mục riêng 冬瓜皮 (vỏ) không áp cho file này. https://www.cancercarers.org.hk/%E4%B8%AD%E9%86%AB%E9%A3%9F%E7%99%82/%E9%A3%9F%E7%89%A9%E7%A8%AE%E9%A1%9E%E5%88%86%E6%9E%90",
+      "confidence": "medium"
+    },
+    {
+      "nature": "binh",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "《飲膳正要》 (Hốt Tư Huệ, triều Nguyên) — quyển 3 菜品, bản toàn văn số hoá Wikisource: mục 冬瓜 ghi「味甘、平、微寒，無毒。主益氣，悅澤駐顏，令人不饑。」 Cổ thư ghi kép cả Bình và Vi hàn trong cùng một câu — dòng này lấy vế BÌNH; vế vi hàn (= lương) đã có dòng CMRO riêng gieo cùng đợt. https://zh.wikisource.org/wiki/%E9%A5%AE%E8%86%B3%E6%AD%A3%E8%A6%81/%E8%8F%9C%E5%93%81",
       "confidence": "medium"
     }
   ],

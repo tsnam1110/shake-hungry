@@ -64,14 +64,14 @@
       "nature": "binh",
       "flavor": "cam",
       "element": "tho",
-      "source_ref": "Dược điển Trung Quốc (中国药典）, chuyên khảo Xích tiểu đậu 赤小豆 — hạt chín khô của Vigna angularis (một trong hai loài nguồn của chuyên khảo); thuộc Danh mục chất vừa là thực phẩm vừa là dược liệu (药食同源, Ủy ban Y tế Quốc gia TQ, 106 chất). Kiểm chứng bản tái bản chuyên khảo: https://tcmfans.club/herbalism/diuretics/semenphaseoli.html. LƯU Ý biến thể: một số bản thảo dược ghi tính “vi lương” thay cho “bình”; dòng này lấy theo Dược điển （甘、酸，平） nên hạ độ tin cậy.",
+      "source_ref": "Dược điển Trung Quốc (中国药典), chuyên khảo Xích tiểu đậu 赤小豆 — hạt chín khô của Vigna angularis (một trong hai loài nguồn của chuyên khảo; bản tái bản ghi cơ nguyên gồm Phaseolus angularis); thuộc Danh mục chất vừa là thực phẩm vừa là dược liệu (药食同源, Ủy ban Y tế Quốc gia TQ, 106 chất). Kiểm chứng bản tái bản chuyên khảo: A+醫學百科 mục 赤小豆 — 【性味】「性平，味甘、酸。」(chuyên khảo chép「甘酸，平。」; 《別錄》:「甘酸，平，無毒。」) https://cht.a-hospital.com/w/%E8%B5%A4%E5%B0%8F%E8%B1%86. LƯU Ý biến thể: 《食性本草》ghi「微寒」(dẫn trên cùng trang tái bản); bản tái bản tcmfans từng được dẫn làm liên kết kiểm chứng ở bản trước tự mang biến thể này trong bản tiếng Anh (\"Slightly cool\") nên không còn dùng làm liên kết kiểm chứng — sửa theo FIX-TCM4-1 của AUDIT-004. Dòng này lấy theo Dược điển (甘、酸，平) nên hạ độ tin cậy.",
       "confidence": "medium"
     },
     {
       "nature": "binh",
       "flavor": "toan",
       "element": "moc",
-      "source_ref": "Dược điển Trung Quốc (中国药典）, chuyên khảo Xích tiểu đậu 赤小豆 — hạt chín khô của Vigna angularis (một trong hai loài nguồn của chuyên khảo); thuộc Danh mục chất vừa là thực phẩm vừa là dược liệu (药食同源, Ủy ban Y tế Quốc gia TQ, 106 chất). Kiểm chứng bản tái bản chuyên khảo: https://tcmfans.club/herbalism/diuretics/semenphaseoli.html. LƯU Ý biến thể: một số bản thảo dược ghi tính “vi lương” thay cho “bình”; dòng này lấy theo Dược điển （甘、酸，平） nên hạ độ tin cậy.",
+      "source_ref": "Dược điển Trung Quốc (中国药典), chuyên khảo Xích tiểu đậu 赤小豆 — hạt chín khô của Vigna angularis (một trong hai loài nguồn của chuyên khảo; bản tái bản ghi cơ nguyên gồm Phaseolus angularis); thuộc Danh mục chất vừa là thực phẩm vừa là dược liệu (药食同源, Ủy ban Y tế Quốc gia TQ, 106 chất). Kiểm chứng bản tái bản chuyên khảo: A+醫學百科 mục 赤小豆 — 【性味】「性平，味甘、酸。」(chuyên khảo chép「甘酸，平。」; 《別錄》:「甘酸，平，無毒。」) https://cht.a-hospital.com/w/%E8%B5%A4%E5%B0%8F%E8%B1%86. LƯU Ý biến thể: 《食性本草》ghi「微寒」(dẫn trên cùng trang tái bản); bản tái bản tcmfans từng được dẫn làm liên kết kiểm chứng ở bản trước tự mang biến thể này trong bản tiếng Anh (\"Slightly cool\") nên không còn dùng làm liên kết kiểm chứng — sửa theo FIX-TCM4-1 của AUDIT-004. Dòng này lấy theo Dược điển (甘、酸，平) nên hạ độ tin cậy.",
       "confidence": "medium"
     }
   ],

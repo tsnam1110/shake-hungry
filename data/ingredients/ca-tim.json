@@ -72,6 +72,13 @@
       "element": "tho",
       "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 茄子 (Solanum melongena, quả; infobox + thân bài nhất quán) ghi 「藥性：涼／藥味：甘；「茄子味甘、性涼，入脾、胃、大腸經；」」. http://cht.a-hospital.com/w/%E8%8C%84%E5%AD%90",
       "confidence": "medium"
+    },
+    {
+      "nature": "han",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "《飲膳正要》 (Hốt Tư Huệ, triều Nguyên) — quyển 3 菜品, bản toàn văn số hoá Wikisource: mục 茄子 (Solanum melongena — khớp loài của file) ghi「味甘、寒，有小毒。動風，發瘡及痼疾。不可多食。」 https://zh.wikisource.org/wiki/%E9%A5%AE%E8%86%B3%E6%AD%A3%E8%A6%81/%E8%8F%9C%E5%93%81",
+      "confidence": "medium"
     }
   ],
   "source": "curated",

@@ -59,6 +59,13 @@
       "element": null,
       "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 秋葵 (Abelmoschus esculentus — trang ghi rõ «可食用部分是果莢»; infobox (thân bài chỉ khẳng định tính hàn lương, không ghi vị)) ghi 「藥性：寒／藥味：淡」. http://cht.a-hospital.com/w/%E7%A7%8B%E8%91%B5",
       "confidence": "medium"
+    },
+    {
+      "nature": "luong",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "Báo Sức khỏe & Đời sống (Bộ Y tế) — bài「Đậu bắp: Món ngon, thuốc quý」(lương y Minh Phúc):「Theo y học dân gian, đậu bắp có vị ngọt, tính mát, không độc。」(tính mát chuẩn hoá = lương). Bản Gia đình của cùng báo dẫn lương y Bùi Đắc Sáng ghi vị chua/tính mát trong ngữ cảnh rễ–lá khô làm thuốc — lệch bộ phận và dạng dùng so với quả ăn của file, không gieo. https://suckhoedoisong.vn/dau-bap-mon-ngon-thuoc-quy-n128346.html",
+      "confidence": "low"
     }
   ],
   "source": "curated",

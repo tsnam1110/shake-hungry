@@ -73,6 +73,13 @@
       "element": "thuy",
       "source_ref": "Sổ tay người chăm sóc bệnh nhân ung thư Hồng Kông 《癌症病人照顧者全面手冊》, chương 中醫食療——食物種類分析 (nội dung: TS. Lâm Đạo Nghi 林道儀， thầy thuốc Trung y đăng ký hành nghề; bản chốt 2022-04): mục 鴨肉 (thịt vịt) ghi 「味甘、鹹，性平」. https://www.cancercarers.org.hk/%E4%B8%AD%E9%86%AB%E9%A3%9F%E7%99%82/%E9%A3%9F%E7%89%A9%E7%A8%AE%E9%A1%9E%E5%88%86%E6%9E%90",
       "confidence": "medium"
+    },
+    {
+      "nature": "luong",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "Y văn Việt Nam — Tuệ Tĩnh 《Nam dược thần hiệu》, bản Tuệ Tĩnh toàn tập số hoá tại nhathuocngocanh.com (chuyên mục dược liệu): mục 'Gia ác' ghi「Gia ác: Con vịt, vị ngọt, tính mát hơi độc, hay động phong huyết, bổ hư, ích tạng…」(tính mát chuẩn hoá = lương; sách tự ghi chú 'hơi độc'). Mục viết cho con vịt nói chung, không phân biệt có da/không da — áp cho file thịt vịt có da này. https://nhathuocngocanh.com/duoc-lieu/",
+      "confidence": "medium"
     }
   ],
   "source": "curated",

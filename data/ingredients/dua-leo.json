@@ -60,6 +60,20 @@
       "element": "tho",
       "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 黃瓜 (dưa leo, Cucumis sativus — khớp loài) ghi「性涼，味甘」. http://cht.a-hospital.com/w/%E9%BB%84%E7%93%9C",
       "confidence": "medium"
+    },
+    {
+      "nature": "binh",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "《飲膳正要》 (Hốt Tư Huệ, triều Nguyên) — quyển 3 菜品, bản toàn văn số hoá Wikisource: mục 黃瓜 (Cucumis sativus — khớp loài của file) ghi「味甘、平、寒、有毒。動氣發病，令人虛熱。不可多食。」 Cổ thư ghi kép cả Bình và Hàn trong cùng một câu — dòng này lấy vế BÌNH; vế còn lại gieo thành dòng riêng cùng đợt (cùng trích dẫn). https://zh.wikisource.org/wiki/%E9%A5%AE%E8%86%B3%E6%AD%A3%E8%A6%81/%E8%8F%9C%E5%93%81",
+      "confidence": "medium"
+    },
+    {
+      "nature": "han",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "《飲膳正要》 (Hốt Tư Huệ, triều Nguyên) — quyển 3 菜品, bản toàn văn số hoá Wikisource: mục 黃瓜 (Cucumis sativus — khớp loài của file) ghi「味甘、平、寒、有毒。動氣發病，令人虛熱。不可多食。」 Cổ thư ghi kép cả Bình và Hàn trong cùng một câu — dòng này lấy vế HÀN; vế còn lại gieo thành dòng riêng cùng đợt (cùng trích dẫn). https://zh.wikisource.org/wiki/%E9%A5%AE%E8%86%B3%E6%AD%A3%E8%A6%81/%E8%8F%9C%E5%93%81",
+      "confidence": "medium"
     }
   ],
   "source": "curated",

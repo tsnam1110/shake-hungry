@@ -77,6 +77,20 @@
       "element": "thuy",
       "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 文蛤, mục 食療價值 ghi cho thịt 「味甘、咸，性微寒」 (微寒 chuẩn hoá = lương; dòng này lấy vị hàm). https://cht.a-hospital.com/w/%E6%96%87%E8%9B%A4",
       "confidence": "medium"
+    },
+    {
+      "nature": "han",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — mục 蛤蜊, mục 中醫相關【性味】trích ③《飲膳正要》:「味甘，大寒，無毒。」(大寒 chuẩn hoá = hàn; dòng này lấy vị cam — lệch vị với tuyến vị hàm của chuyên khảo trên cùng trang, giữ song song theo quy tắc không ép chọn). https://cht.a-hospital.com/w/%E8%9B%A4%E8%9C%8A",
+      "confidence": "medium"
+    },
+    {
+      "nature": "han",
+      "flavor": "ham",
+      "element": "thuy",
+      "source_ref": "A+醫學百科 (a-hospital.com; bách khoa biên theo 《中藥大辭典》/《中華本草》) — mục 蛤蜊: 【來源】「為蛤蜊科動物四角蛤蜊或其他各種蛤蜊的肉」(thịt nghêu nói chung — khớp phạm vi generic của file); hộp thông tin 藥性寒、藥味咸; 【性味】歸經「咸，寒。入胃經。」; mục 中醫相關【性味】chép「咸，寒。」kèm ①《嘉佑本草》「冷，無毒。」②《日用本草》「味咸，寒，無毒。」 https://cht.a-hospital.com/w/%E8%9B%A4%E8%9C%8A",
+      "confidence": "medium"
     }
   ],
   "source": "curated",

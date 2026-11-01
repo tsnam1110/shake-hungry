@@ -53,6 +53,13 @@
       "element": "tho",
       "source_ref": "Sổ tay người chăm sóc bệnh nhân ung thư Hồng Kông 《癌症病人照顧者全面手冊》, chương 中醫食療——食物種類分析 (nội dung: TS. Lâm Đạo Nghi 林道儀， thầy thuốc Trung y đăng ký hành nghề; bản chốt 2022-04): mục 蓮藕 ghi 「蓮藕：新鮮生藕，味甘，性寒。」. Nguồn phân biệt rõ dạng sống/chín: vế «煮熟蓮藕，味甘，性溫» cho dạng chín KHÔNG gieo vào file củ sen sống này — chuyển hoá do nấu thuộc quy ước tổng hợp của dự án. https://www.cancercarers.org.hk/%E4%B8%AD%E9%86%AB%E9%A3%9F%E7%99%82/%E9%A3%9F%E7%89%A9%E7%A8%AE%E9%A1%9E%E5%88%86%E6%9E%90",
       "confidence": "medium"
+    },
+    {
+      "nature": "binh",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "《飲膳正要》 (Hốt Tư Huệ, triều Nguyên) — quyển 3 菜品, bản toàn văn số hoá Wikisource: mục 藕 ghi「味甘、平、無毒。主補中，養神，益氣，除百疾，消熱渴，散血。」 GHI CHÚ SỐNG/CHÍN (bắt buộc theo hồ sơ AUDIT-004): câu cổ thư này KHÔNG phân biệt dạng sống/chín, trong khi sổ tay HK (dòng đã có của file) phân biệt rõ sinh ngẫu tính hàn / thục ngẫu tính ôn — dòng Bình này là truyền thống cổ thư không phân dạng, gieo song song kèm ghi chú này; file là củ sen SỐNG và phần chuyển hoá do nấu chín vẫn thuộc quy ước tổng hợp của dự án, không thuộc nhãn nguyên liệu. https://zh.wikisource.org/wiki/%E9%A5%AE%E8%86%B3%E6%AD%A3%E8%A6%81/%E8%8F%9C%E5%93%81",
+      "confidence": "medium"
     }
   ],
   "source": "curated",

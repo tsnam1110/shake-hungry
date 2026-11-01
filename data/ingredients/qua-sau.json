@@ -44,6 +44,48 @@
       "nature": "luong",
       "flavor": "cam",
       "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com; bách khoa biên theo 《中藥大辭典》/《中華本草》) — mục 人面子 (trang ghi 拉丁名 Dracontomelon duperreanum Pierre, 藥材基源「為漆樹科植物人面子的果實」— khớp loài và bộ phận quả của file): mục 【性味歸經】ghi「味甘、酸，性涼。」(dòng này lấy vị cam); hộp thông tin của trang cũng ghi 藥性涼、藥味酸. https://cht.a-hospital.com/w/%E4%BA%BA%E9%9D%A2%E5%AD%90",
+      "confidence": "medium"
+    },
+    {
+      "nature": "luong",
+      "flavor": "toan",
+      "element": "moc",
+      "source_ref": "A+醫學百科 (a-hospital.com; bách khoa biên theo 《中藥大辭典》/《中華本草》) — mục 人面子 (trang ghi 拉丁名 Dracontomelon duperreanum Pierre, 藥材基源「為漆樹科植物人面子的果實」— khớp loài và bộ phận quả của file): mục 【性味歸經】ghi「味甘、酸，性涼。」(dòng này lấy vị toan; trong cùng mục, ⑸《全國中草藥彙編》cũng ghi「酸，涼。」). https://cht.a-hospital.com/w/%E4%BA%BA%E9%9D%A2%E5%AD%90",
+      "confidence": "medium"
+    },
+    {
+      "nature": "binh",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com; bách khoa biên theo 《中藥大辭典》/《中華本草》) — mục 人面子 (trang ghi 拉丁名 Dracontomelon duperreanum Pierre, 藥材基源「為漆樹科植物人面子的果實」— khớp loài và bộ phận quả của file): mục 【性味歸經】trích ⑴《廣志》:「味甘，性平，無毒。」（引自《綱目拾遺》). https://cht.a-hospital.com/w/%E4%BA%BA%E9%9D%A2%E5%AD%90",
+      "confidence": "medium"
+    },
+    {
+      "nature": "han",
+      "flavor": "toan",
+      "element": "moc",
+      "source_ref": "A+醫學百科 (a-hospital.com; bách khoa biên theo 《中藥大辭典》/《中華本草》) — mục 人面子 (trang ghi 拉丁名 Dracontomelon duperreanum Pierre, 藥材基源「為漆樹科植物人面子的果實」— khớp loài và bộ phận quả của file): mục 【性味歸經】trích ⑶《本草求原》:「酸，寒，無毒。」 https://cht.a-hospital.com/w/%E4%BA%BA%E9%9D%A2%E5%AD%90",
+      "confidence": "medium"
+    },
+    {
+      "nature": "binh",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com; bách khoa biên theo 《中藥大辭典》/《中華本草》) — mục 人面子 (trang ghi 拉丁名 Dracontomelon duperreanum Pierre, 藥材基源「為漆樹科植物人面子的果實」— khớp loài và bộ phận quả của file): mục 【性味歸經】trích ⑷《嶺南採藥錄》:「性平，味甘、酸。」(dòng này lấy vị cam; phần văn xuôi của trang cũng dẫn「人面子性平，味甘酸」theo cùng sách). https://cht.a-hospital.com/w/%E4%BA%BA%E9%9D%A2%E5%AD%90",
+      "confidence": "medium"
+    },
+    {
+      "nature": "binh",
+      "flavor": "toan",
+      "element": "moc",
+      "source_ref": "A+醫學百科 (a-hospital.com; bách khoa biên theo 《中藥大辭典》/《中華本草》) — mục 人面子 (trang ghi 拉丁名 Dracontomelon duperreanum Pierre, 藥材基源「為漆樹科植物人面子的果實」— khớp loài và bộ phận quả của file): mục 【性味歸經】trích ⑷《嶺南採藥錄》:「性平，味甘、酸。」(dòng này lấy vị toan). https://cht.a-hospital.com/w/%E4%BA%BA%E9%9D%A2%E5%AD%90",
+      "confidence": "medium"
+    },
+    {
+      "nature": "luong",
+      "flavor": "cam",
+      "element": "tho",
       "source_ref": "Thư viện số (thuvienso.com.vn) — tài liệu 「Vị thuốc lạ từ sấu」 (PDF): mục Tính vị công năng ghi 「Quả sấu có vị chua, ngọt, hơi chát, mùi thơm, đặc trưng, tính mát.」— chuẩn hoá tính mát thành luong, vị chát （澀） bỏ theo quy ước; bản PDF trực tuyến không ghi rõ tên sách gốc ở phần trích nên confidence low. https://thuvienso.com.vn/upload/library/532611/preview/vi-thuoc-la-tu-sau-532611.pdf",
       "confidence": "low"
     },
