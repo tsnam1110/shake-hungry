@@ -14,9 +14,9 @@ use Symfony\Component\HttpFoundation\BinaryFileResponse;
  *
  * Chính sách cache (chủ dự án chốt 2026-11-01): CHỈ ảnh được cache — trang
  * và tài nguyên khác không cache dài hạn để người dùng luôn nhận cập nhật
- * ngay mà không cần biết xoá cache. Ảnh cache tối đa 1 ngày kèm ETag +
- * must-revalidate: quá hạn trình duyệt hỏi lại máy chủ, ảnh chưa đổi trả
- * 304 (không tải lại thân ảnh), ảnh đã thay file thì nhận bản mới ngay.
+ * ngay mà không cần biết xoá cache. Ảnh ít thay đổi nên cache 7 ngày, kèm
+ * ETag + must-revalidate: quá hạn trình duyệt hỏi lại máy chủ, ảnh chưa đổi
+ * trả 304 (không tải lại thân ảnh), ảnh đã thay file thì nhận bản mới.
  */
 class MediaController
 {
@@ -28,7 +28,7 @@ class MediaController
 
         $response = response()->file($file, [
             'Content-Type' => 'image/webp',
-            'Cache-Control' => 'public, max-age=86400, must-revalidate',
+            'Cache-Control' => 'public, max-age=604800, must-revalidate',
         ]);
         $response->setETag(md5($file.'|'.filemtime($file).'|'.filesize($file)));
         $modified = \DateTimeImmutable::createFromFormat('U', (string) filemtime($file));

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-/* Cache ảnh (2026-11-01): /media có ETag + max-age 1 ngày + must-revalidate,
+/* Cache ảnh (2026-11-01): /media có ETag + max-age 7 ngày + must-revalidate,
    hỏi lại khi chưa đổi phải trả 304 rỗng thay vì tải lại thân ảnh. */
 
 it('ảnh media: header cache đúng và If-None-Match trả 304', function () {
@@ -12,7 +12,7 @@ it('ảnh media: header cache đúng và If-None-Match trả 304', function () {
 
     $resp = $this->get($url);
     $resp->assertOk();
-    expect($resp->headers->get('Cache-Control'))->toContain('max-age=86400')
+    expect($resp->headers->get('Cache-Control'))->toContain('max-age=604800')
         ->and($resp->headers->get('Cache-Control'))->toContain('must-revalidate')
         ->and($resp->headers->get('ETag'))->not->toBeNull();
 
