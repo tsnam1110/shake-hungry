@@ -42,7 +42,7 @@ fetch('/api/dishes/' + encodeURIComponent(slug), { headers: { 'Accept': 'applica
         </div>
         ${d.image ? `<figure style="margin:18px 0 0">
             <img src="${esc(d.image.url)}" alt="${esc(name)}" style="width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:18px;display:block">
-            <figcaption style="color:var(--color-faint);font-size:12.5px;margin-top:6px">${d.image.is_ai ? 'Ảnh minh hoạ do AI tạo — chỉ để hình dung món ăn, không phải ảnh chụp món thật.' : 'Ảnh: ' + esc(d.image.attribution ?? '')}</figcaption>
+            <figcaption style="color:var(--color-faint);font-size:12.5px;margin-top:6px">${d.image.is_ai ? 'Ảnh minh họa' : 'Ảnh: ' + esc(d.image.attribution ?? '')}</figcaption>
         </figure>` : ''}
         ${d.parent ? `<div class="ld-group" style="margin-top:16px"><a class="ld-row" href="/mon/${d.parent.slug}"><span class="grow">Biến thể của <b>${esc(d.parent.names?.[0]?.name ?? '')}</b></span>${chev}</a></div>` : ''}
         ${variants.length ? `<div class="ld-group" style="margin-top:12px">${variants.map(v => `<a class="ld-row" href="/mon/${v.slug}"><span class="grow">Biến thể: <b>${esc(v.name)}</b></span>${chev}</a>`).join('')}</div>` : ''}

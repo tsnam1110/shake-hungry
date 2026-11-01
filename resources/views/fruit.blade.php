@@ -43,7 +43,7 @@ fetch('/api/fruits/' + encodeURIComponent(slug), { headers: { 'Accept': 'applica
         ${allergenTags.length ? `<div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:10px">${allergenTags.map(t => `<span class="ld-badge" style="background:var(--color-danger-tint);color:var(--color-danger)">Dị ứng: ${esc(t.name)}</span>`).join('')}</div>` : ''}
         ${f.image ? `<figure style="margin:18px 0 0">
             <img src="${esc(f.image.url)}" alt="${esc(f.name_vi)}" style="width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:18px;display:block">
-            <figcaption style="color:var(--color-faint);font-size:12.5px;margin-top:6px">${f.image.is_ai ? 'Ảnh minh hoạ do AI tạo — chỉ để hình dung, không phải ảnh chụp thật.' : 'Ảnh: ' + esc(f.image.attribution ?? '')}</figcaption>
+            <figcaption style="color:var(--color-faint);font-size:12.5px;margin-top:6px">${f.image.is_ai ? 'Ảnh minh họa' : 'Ảnh: ' + esc(f.image.attribution ?? '')}</figcaption>
         </figure>` : ''}
 
         <div style="display:flex;gap:10px;margin-top:16px;flex-wrap:wrap">

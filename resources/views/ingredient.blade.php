@@ -33,7 +33,7 @@ fetch('/api/ingredients/' + slug).then(r => { if (!r.ok) throw new Error('404');
     document.getElementById('content').innerHTML = `
         <div class="ld-card" style="margin-top:14px;padding:0;overflow:hidden">
             <img src="${img?.url ?? '/images/placeholder-ingredient.svg'}" alt="${esc(i.name_vi)}" style="width:100%;aspect-ratio:16/8;object-fit:cover;display:block">
-            ${img ? `<p style="margin:0;padding:9px 16px;font-size:12.5px;color:var(--color-faint)">${img.is_ai ? 'Ảnh minh hoạ do AI tạo — Lắc Đói' : esc(img.attribution ?? '')}</p>` : ''}
+            ${img ? `<p style="margin:0;padding:9px 16px;font-size:12.5px;color:var(--color-faint)">${img.is_ai ? 'Ảnh minh họa' : esc(img.attribution ?? '')}</p>` : ''}
         </div>
         <h1 class="ld-title" style="margin-top:16px">${esc(i.name_vi)}</h1>
         <p class="ld-subtitle">${catLabel[i.category] ?? esc(i.category ?? '')}${i.name_en ? ' · ' + esc(i.name_en) : ''}${i.scientific_name ? ' · ' : ''}${i.scientific_name ? '<i>' + esc(i.scientific_name) + '</i>' : ''}</p>
@@ -71,7 +71,7 @@ fetch('/api/ingredients/' + slug).then(r => { if (!r.ok) throw new Error('404');
                 <span class="ld-dcard-body">
                     <span class="ld-dcard-title">${esc(d.name ?? d.slug)}</span>
                     <span class="ld-dcard-meta"></span>
-                    <span class="ld-dcard-badges">${d.image?.is_ai ? '<span class="ld-badge">Ảnh minh hoạ</span>' : ''}</span>
+                    <span class="ld-dcard-badges">${d.image?.is_ai ? '<span class="ld-badge">Ảnh minh họa</span>' : ''}</span>
                     <span class="ld-dcard-foot">${d.nutrition
                         ? `<span class="ld-dcard-kcal ld-tnum">${Math.round(d.nutrition.kcal_min)}–${Math.round(d.nutrition.kcal_max)} kcal</span>`
                         : `<span class="ld-dcard-kcal none">Chưa đủ dữ liệu</span>`}</span>
