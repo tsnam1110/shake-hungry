@@ -18,7 +18,9 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nuong",
-  "completeness_level": 1,
+  "completeness_level": 2,
+  "level_basis": "tcm_compensation",
+  "level_note": "Chưa đạt cổng Mức 2 thường vì các họ đã mở đều tính theo kilôgam nguyên vỏ không cỡ con và lệch nhau rất lớn ở nguyên liệu phụ, không đối chiếu được về đĩa 6 con — cần quyết định chuẩn hoá cỡ sò và cách cân trước khi nâng (LV2-012). Được nâng theo đường nâng bù Mức 3 (quyết định chủ dự án 2026-11-01): độ phủ tính vị 97.7% ≥ 60% và đã có ghi chú văn hoá.",
   "meal_slots": [
     {
       "slot": "trua",

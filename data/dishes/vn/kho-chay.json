@@ -18,7 +18,9 @@
   "is_eat_out": false,
   "is_home_cook": true,
   "cooking_method": "kho",
-  "completeness_level": 1,
+  "completeness_level": 2,
+  "level_basis": "tcm_compensation",
+  "level_note": "Chưa đạt cổng Mức 2 thường vì 'kho chay thập cẩm' là tên gọi chung không có định danh công thức cố định — các nguồn có định lượng dùng tổ hợp nguyên liệu khác hẳn nhau và khác file; cần chủ dự án chốt một biến thể chuẩn mới biên soạn Mức 2 được (LV2-012). Được nâng theo đường nâng bù Mức 3 (quyết định chủ dự án 2026-11-01): độ phủ tính vị 90.8% ≥ 60% và đã có ghi chú văn hoá.",
   "meal_slots": [
     {
       "slot": "trua",

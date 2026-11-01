@@ -18,7 +18,9 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
+  "level_basis": "tcm_compensation",
+  "level_note": "Chưa đạt cổng Mức 2 thường vì mọi nguồn đạt chuẩn mở được đều là biến thể cháo cá trắm đậu xanh, trong khi file là bản cháo trắng thuần (không đậu xanh) chỉ thấy ở trang tổng hợp không ghi khẩu phần — không đủ họ cho đúng biến thể (LV2-011). Được nâng theo đường nâng bù Mức 3 (quyết định chủ dự án 2026-11-01): độ phủ tính vị 96.5% ≥ 60% và đã có ghi chú văn hoá.",
   "meal_slots": [
     {
       "slot": "sang",

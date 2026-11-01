@@ -18,7 +18,9 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
+  "level_basis": "tcm_compensation",
+  "level_note": "Chưa đạt cổng Mức 2 thường vì biến thể cá trôi khúc chiên của file chưa được chứng thực — tra cứu chỉ gặp bún chả cá trôi (lần mở trang bị lỗi 429 phía dịch vụ) và bún cá Hà Nội dùng cá trắm/rô phi/chép; định danh cần chủ dự án xác nhận rồi mới nâng (LV2-012). Được nâng theo đường nâng bù Mức 3 (quyết định chủ dự án 2026-11-01): độ phủ tính vị 61.2% ≥ 60% và đã có ghi chú văn hoá.",
   "meal_slots": [
     {
       "slot": "trua",

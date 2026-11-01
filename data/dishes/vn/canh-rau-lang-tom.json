@@ -18,7 +18,9 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
+  "level_basis": "tcm_compensation",
+  "level_note": "Chưa đạt cổng Mức 2 thường vì món từng đạt Mức 2 nhưng bị hạ xuống sau rà soát AUDIT-002: một nguồn đúng món đã chết link 404, hai nguồn còn lại qua 4 lượt thử vẫn chưa kết luận được (lỗi fetch phía công cụ, không mã HTTP) — nguồn sống đã xác nhận mới đạt 2, dưới cổng 3 nguồn (AUDIT-FIX, PX-16). Được nâng theo đường nâng bù Mức 3 (quyết định chủ dự án 2026-11-01): độ phủ tính vị 89.9% ≥ 60% và đã có ghi chú văn hoá.",
   "meal_slots": [
     {
       "slot": "trua",

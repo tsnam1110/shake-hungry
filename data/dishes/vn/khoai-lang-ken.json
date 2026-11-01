@@ -18,7 +18,9 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "chien-ngap-dau",
-  "completeness_level": 1,
+  "completeness_level": 2,
+  "level_basis": "tcm_compensation",
+  "level_note": "Chưa đạt cổng Mức 2 thường vì mới mở được 1 họ (Điện Máy XANH) thì lần mở họ thứ hai bị lỗi 429, phải dừng theo kỷ luật đợt — chưa đủ họ để đối chiếu (LV2-012). Được nâng theo đường nâng bù Mức 3 (quyết định chủ dự án 2026-11-01): độ phủ tính vị 84.2% ≥ 60% và đã có ghi chú văn hoá.",
   "meal_slots": [
     {
       "slot": "an-vat",

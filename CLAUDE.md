@@ -525,6 +525,25 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > do file dữ liệu đang dở của phiên VN-001 đợt 3, không liên quan đợt này).
 > Chi tiết: [TCM-003](docs/05-tasks/tasks/TCM-003.md).
 
+> ## ⚠️ Đính chính lần 31, 2026-11-01 — TCM-PROMOTE-002: gán Mức 3 lần đầu + nâng bù đợt 2 — bức tranh mức toàn kho đổi
+>
+> **187 món Mức 2 thường đủ cổng Mức 3 (phủ tính vị ≥60% + ghi chú văn hoá)
+> đã gán `completeness_level=3`** — đối chiếu thống kê VN-001 khớp tuyệt
+> đối; món "Mức 2 (có note)" không gán Mức 3 (Mức 3 đầy đủ đòi nền Mức 2
+> thường). Grep toàn bộ nơi dùng mức: **0 dòng code phải sửa**
+> (`Dish::levelLabel()` sinh nhãn động → "Mức 3"; bộ lọc mức ở admin đã có
+> sẵn tuỳ chọn Mức 3; validator V20 đã kiểm cổng Mức 3 từ TCM-000) — đã
+> kiểm hiển thị thật qua API/trang món trên DB kiểm chứng. **Nâng bù đợt
+> 2: 27 món Mức 1 mới đủ 2 tiêu chí sau VN-001 đợt 3** lên "Mức 2 (có
+> note)" với `level_note` riêng từng món soạn từ hồ sơ giữ Mức 1.
+> **Bức tranh mức toàn kho hiện tại: 187 Mức 3 + 285 Mức 2 thường + 114
+> Mức 2 (có note) + 68 Mức 1 = 654 món** (khớp 3 cách file · DB ·
+> recompute). Kiểm chứng: validate 0 🔴 (24 🟡 — +2 V9 mới ở hai món rau
+> luộc vừa nâng bù do seed nay tính kcal/khẩu phần, cùng lớp đã biết),
+> Pest 162/162 (cả SwapTrayTest của phiên song song đã xanh),
+> ExportStabilityTest đạt. Chi tiết:
+> [TCM-PROMOTE-002](docs/05-tasks/tasks/TCM-PROMOTE-002.md).
+
 **Trạng thái thực tế, kiểm ngày 2026-10-31 (đã chạy lại toàn bộ lệnh kiểm chứng):**
 
 | Hạng mục | Thực tế | Kiểm bằng |

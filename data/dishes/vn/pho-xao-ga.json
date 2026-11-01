@@ -18,7 +18,9 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "xao",
-  "completeness_level": 1,
+  "completeness_level": 2,
+  "level_basis": "tcm_compensation",
+  "level_note": "Chưa đạt cổng Mức 2 thường vì chưa gom được họ biên tập nào có định lượng — nguồn đúng món duy nhất (Điện Máy XANH) không có định lượng trong bản đọc được, các nguồn có số đều là trang thương mại/SEO không đạt chuẩn (LV2-009 đến LV2-011). Được nâng theo đường nâng bù Mức 3 (quyết định chủ dự án 2026-11-01): độ phủ tính vị 93.6% ≥ 60% và đã có ghi chú văn hoá.",
   "meal_slots": [
     {
       "slot": "trua",

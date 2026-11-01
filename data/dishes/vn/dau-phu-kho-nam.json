@@ -25,7 +25,9 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "kho",
-  "completeness_level": 1,
+  "completeness_level": 2,
+  "level_basis": "tcm_compensation",
+  "level_note": "Chưa đạt cổng Mức 2 thường vì biến thể nấm rơm tươi (đã chuẩn hoá theo quyết định A3) chỉ có 1 họ quy đổi được về khẩu phần — các họ còn lại hoặc không ghi khẩu phần, hoặc trùng bộ số cùng một họ (LV2-011). Được nâng theo đường nâng bù Mức 3 (quyết định chủ dự án 2026-11-01): độ phủ tính vị 90.5% ≥ 60% và đã có ghi chú văn hoá.",
   "meal_slots": [
     {
       "slot": "trua",

@@ -18,7 +18,9 @@
   "is_eat_out": false,
   "is_home_cook": true,
   "cooking_method": "kho",
-  "completeness_level": 1,
+  "completeness_level": 2,
+  "level_basis": "tcm_compensation",
+  "level_note": "Chưa đạt cổng Mức 2 thường vì biến thể chay kho gừng miếng của file là sáng tạo biên tập của DISH-005 đã được chủ dự án chốt giữ định danh (quyết định A3) — nguồn đúng tên duy nhất đã mở là biến thể mặn, không có nguồn độc lập đúng biến thể chay (LV2-007, LV2-010 Phần C). Được nâng theo đường nâng bù Mức 3 (quyết định chủ dự án 2026-11-01): độ phủ tính vị 90.7% ≥ 60% và đã có ghi chú văn hoá.",
   "meal_slots": [
     {
       "slot": "trua",

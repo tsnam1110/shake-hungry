@@ -25,7 +25,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "tron",
-  "completeness_level": 2,
+  "completeness_level": 3,
   "meal_slots": [
     {
       "slot": "trua",
