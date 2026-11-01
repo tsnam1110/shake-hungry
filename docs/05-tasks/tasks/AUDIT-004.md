@@ -21,7 +21,7 @@
 - **P-DERIVE 20/20 đạt** (gương đúng, trần low, đủ marker, 9/9 gốc đã xác minh độc lập, điều kiện đơn thành phần còn đúng).
 - **Element 413/413** nhất quán theo basis. **Tổng hợp độc lập 0/648 lệch** (5 trường; phân bố phủ 500/98/50 khớp công bố). **Hiển thị API 0 lỗi/881 endpoint.**
 
-## 3. Phát hiện & khắc phục đề xuất (chưa thực thi — chờ duyệt)
+## 3. Phát hiện & khắc phục đề xuất (đã thực thi — xem §5)
 
 - **FIX-TCM4-1 🟠 (trích dẫn):** `dau-do-hat` — giá trị bình/cam/toan đúng theo 《中國藥典》 (đã kiểm chứng qua A+ 「性平，味甘、酸」), nhưng trang tcmfans được ref dẫn làm "bản tái bản kiểm chứng" lại ghi "Slightly cool" (vi lương). Thay link kiểm chứng hoặc sửa câu ghi chú trong ref.
 - **FIX-TCM4-2 (gieo bổ sung TCM-001d):** ~14 ứng viên truyền thống có thật chưa gieo: bí đao lương (CMRO), cần tây hàn (CMRO), đậu bắp lương (SK&ĐS), ếch hàn, nghêu hàn, thịt vịt lương ×2 + tim lợn hàn (Tuệ Tĩnh), lòng lợn lương （綱目 — lượt mù thịt 2 bắt được), cà tím hàn, dưa leo hàn, củ sen bình (ghi chú sống/chín), rau mùi lương (rễ/lá), quả sấu bình/hàn (rà lại họ nguồn). Danh sách đầy đủ: báo cáo §7.
@@ -33,3 +33,12 @@
 - Đối chiếu phân loại cuối: 413/413 dòng có phán quyết, 0 dòng không kết luận được.
 - DB kiểm chứng `shake_hungry_audit4` giữ nguyên để tái kiểm (seed từ `data/` + `lacdoi:recompute-tcm` = 648 món).
 - Không chạy Pest trong đợt (không đổi code/dữ liệu; chỉ thêm tài liệu). Sự cố giữa phiên: VM thay mới — DB kiểm chứng seed lại sạch trên instance mới, kết quả không ảnh hưởng.
+
+## 5. Khắc phục FIX-TCM4 — ĐÃ XONG (2026-11-01)
+
+- **FIX-TCM4-1 ✅ (trích dẫn `dau-do-hat`):** giá trị KHÔNG đổi (bình · cam/toan theo Dược điển). Đã thay liên kết kiểm chứng tcmfans bằng trang tái bản **A+醫學百科 mục 赤小豆** — mở kiểm chứng tận nơi:【性味】「性平，味甘、酸。」khớp văn bản Dược điển (chuyên khảo chép「甘酸，平。」, cơ nguyên gồm *Phaseolus angularis* = *Vigna angularis*). Ref nay ghi rõ: biến thể「微寒」có ở 《食性本草》 (dẫn trên cùng trang A+), và chính bản tcmfans cũ tự mang biến thể này trong bản EN ("Slightly cool") nên không còn dùng làm liên kết kiểm chứng.
+- **FIX-TCM4-2 ✅ = TCM-001d (gieo bổ sung):** **+23 dòng cho 13 nguyên liệu** → tổng 436 dòng (chi tiết từng dòng + nguồn tại [TCM-001.md](./TCM-001.md) mục TCM-001d). Mọi nguồn đều mở lại kiểm chứng first-hand tại lúc gieo. **`rau-mui` là ứng viên duy nhất CHỜ**: vế lương từ 孟詵「平、微寒」chỉ cho tính không kèm vị — lập dòng sẽ phải mượn vị của nguồn khác (trộn nguồn) hoặc mở tiền lệ dòng thiếu vị chưa có thiết kế; ghi hồ sơ chờ tại TCM-001d. Phân xử kèm theo: cổ thư ghi kép hai tính → gieo cả hai vế; `bi-dao` không có dòng 食療本草 vì trang nguồn không mang câu tính vị của sách đó (hồ sơ §7 ghi nhận lại tại TCM-001d).
+- **FIX-TCM4-3 ✅ (quy ước nguồn):** đã ghi tại [NGU-HANH-AM-DUONG.md](../../08-cultural/NGU-HANH-AM-DUONG.md) §10 — bản EN của zhongyifangji/tcmfans chỉ làm biển chỉ đường; giá trị lấy theo văn bản gốc Hán/Việt hoặc CMRO/Dược điển; giá trị chỉ có ở bản EN = chưa có nguồn.
+- **FIX-TCM4-4:** thuộc AUDIT-003 (không nằm trong đợt này).
+- **Ảnh hưởng tổng hợp** (DB kiểm chứng riêng `shake_hungry_tcm4`, diff trước/sau trên 648 món): độ phủ **không đổi** (500/98/50; 0 món qua ngưỡng khoá <30%); `has_conflicts` 220 → **259** (+39); 24 món confidence medium → low; nhãn tính hiển thị đổi ở 11 món; hành chủ đạo đổi ở 2 món. Chi tiết: TCM-001d.
+- **Kiểm chứng đợt:** validate **0 🔴**; Pest **167/167** (693 assertions), ExportStabilityTest đạt.

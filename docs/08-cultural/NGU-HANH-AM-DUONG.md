@@ -330,3 +330,28 @@ chú đó.
 **Tổng hợp món:** dòng suy diễn tham gia như nhãn thường (nó vẫn là một
 phiếu có căn cứ truy vết về nguồn thật của gốc); trần `medium`/`low` của
 confidence món theo §8 tự động giữ kết luận ở mức thận trọng.
+
+## 10. Quy ước đọc bản tái bản và bản dịch của nguồn tính vị (FIX-TCM4-3)
+
+> Rút ra từ AUDIT-004 (2026-11-01): các trang tái bản **tiếng Anh** của
+> zhongyifangji.net và tcmfans.club (và các site tương tự) dịch 性味 bằng
+> máy, và bản dịch **có thể sai tính vị**. Hai tiền lệ đã gặp trong kho:
+>
+> - `rau-diep-ca`: bản EN của zhongyifangji dịch 辛 (tân) thành "bitter"
+>   (đắng) — lấy theo bản EN sẽ gieo sai sang vị khổ.
+> - `dau-do-hat` (FIX-TCM4-1): trang tcmfans từng được dẫn làm "bản tái
+>   bản kiểm chứng" của Dược điển lại ghi 赤小豆 là "Slightly cool" (vi
+>   lương), trong khi văn bản Dược điển là 平 — biến thể 微寒 có thật ở
+>   《食性本草》 nhưng không phải giá trị của Dược điển.
+
+Quy ước bắt buộc khi gieo hoặc đối chiếu nhãn tính vị:
+
+1. Bản tiếng Anh của zhongyifangji/tcmfans **chỉ dùng làm biển chỉ đường**
+   (tìm chuyên khảo, tra mã số, định vị trang gốc) — không bao giờ làm
+   căn cứ chốt giá trị `nature`/`flavor`.
+2. Giá trị chỉ lấy từ: văn bản gốc chữ Hán của cổ thư/Dược điển (bản toàn
+   văn số hoá như Wikisource, hoặc bản tái bản chữ Hán như A+醫學百科）,
+   ấn phẩm nguyên bản của CMRO, hoặc y văn tiếng Việt — luôn mở kiểm
+   chứng tận nơi tại lúc gieo.
+3. Nếu một giá trị chỉ có ở bản EN, coi như **chưa có nguồn**: đưa vào
+   danh sách chờ, không gieo.

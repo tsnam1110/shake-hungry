@@ -594,6 +594,27 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > DB kiểm chứng seed mới, ExportStabilityTest đạt, **Pest 167/167**. Chi tiết:
 > [AUDIT-ALLERGEN](docs/05-tasks/tasks/AUDIT-ALLERGEN.md) §6.
 
+> ## ⚠️ Đính chính lần 35, 2026-11-01 — FIX-TCM4: sửa trích dẫn dau-do-hat + gieo bổ sung TCM-001d (+23 dòng)
+>
+> Khắc phục đầu ra của AUDIT-004. **FIX-TCM4-1:** `dau-do-hat` giữ nguyên giá trị bình/cam/toan
+> theo Dược điển; liên kết "bản tái bản kiểm chứng" tcmfans (tự mang biến thể "Slightly cool")
+> đã thay bằng bản tái bản **A+醫學百科 赤小豆** mở kiểm chứng tận nơi khớp Dược điển
+> 「性平，味甘、酸」, ref ghi rõ biến thể 微寒 thuộc 《食性本草》. **FIX-TCM4-2 = TCM-001d:**
+> gieo bổ sung **+23 dòng cho 13 nguyên liệu** từ danh sách ứng viên AUDIT-004 §7 (bí đao,
+> cần tây, đậu bắp, ếch, nghêu, thịt vịt ×2, tim lợn, lòng lợn, cà tím, dưa leo, củ sen,
+> quả sấu) — mọi nguồn **mở lại kiểm chứng first-hand tại lúc gieo**, gieo song song không
+> ghi đè; tổng nhãn **436 dòng / 227 NL**. Quy tắc phân xử mới ghi tại TCM-001d: cổ thư ghi
+> kép hai tính trong một câu → gieo cả hai vế; câu dẫn chỉ có tính không có vị → không lập
+> dòng. **`rau-mui` chờ có hồ sơ:** vế lương （孟詵「平、微寒」) không kèm vị — gieo sẽ phải
+> trộn nguồn hoặc mở tiền lệ dòng `flavor = null` chưa có thiết kế. **FIX-TCM4-3:** quy ước
+> bản EN của zhongyifangji/tcmfans chỉ làm biển chỉ đường đã ghi tại
+> [NGU-HANH-AM-DUONG](docs/08-cultural/NGU-HANH-AM-DUONG.md) §10. Ảnh hưởng tổng hợp (đo
+> diff trên DB kiểm chứng riêng `shake_hungry_tcm4`): **độ phủ không đổi** (500/98/50,
+> 0 món qua ngưỡng khoá <30%); `has_conflicts` 220 → **259** (+39, đúng thiết kế);
+> 24 món confidence medium → low; 11 món đổi nhãn tính hiển thị; 2 món đổi hành chủ đạo.
+> Kiểm chứng: validate **0 🔴**, Pest **167/167**, ExportStabilityTest đạt. Chi tiết:
+> [TCM-001](docs/05-tasks/tasks/TCM-001.md) mục TCM-001d, [AUDIT-004](docs/05-tasks/tasks/AUDIT-004.md) §5.
+
 **Trạng thái thực tế, kiểm ngày 2026-10-31 (đã chạy lại toàn bộ lệnh kiểm chứng):**
 
 | Hạng mục | Thực tế | Kiểm bằng |
