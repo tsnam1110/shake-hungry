@@ -90,7 +90,7 @@
     },
     {
       "ingredient_slug": "hat-tieu-den",
-      "quantity": 1.0,
+      "quantity": 1,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",

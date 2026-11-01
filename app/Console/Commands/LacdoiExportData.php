@@ -326,8 +326,13 @@ class LacdoiExportData extends Command
     /** @return array<string, mixed> */
     private function dishPayload(Dish $dish): array
     {
+        // Thứ tự dòng = thứ tự chèn (id tăng dần) = đúng thứ tự biên tập trong
+        // file khi seed (tên vi trước en, nguyên liệu theo trình tự công thức,
+        // bữa theo trình tự ngày, nguồn theo thứ tự biên soạn). Exporter KHÔNG
+        // tự sắp lại theo nội dung — sắp lại làm vòng seed → export lệch khỏi
+        // điểm cố định trên toàn bộ kho món (EXPORT-STABILITY).
         $names = $dish->names
-            ->sortBy([['locale', 'asc'], ['is_primary', 'desc'], ['name', 'asc']])
+            ->sortBy('id')
             ->values()
             ->map(function ($n) {
                 $row = ['locale' => $n->locale, 'name' => $n->name, 'is_primary' => $n->is_primary];
@@ -343,35 +348,36 @@ class LacdoiExportData extends Command
             ->all();
 
         $slots = $dish->mealSlots
-            ->sortBy('slot', SORT_STRING)
+            ->sortBy('id')
             ->values()
             ->map(fn ($s) => ['slot' => $s->slot, 'weight' => $s->weight])
             ->all();
 
         $ingredients = $dish->dishIngredients
-            ->sortBy(fn ($di) => $di->ingredient->slug, SORT_STRING)
+            ->sortBy('id')
             ->values()
             ->map(function ($di) {
+                // Khuôn dòng theo đúng chuẩn file đã chốt: is_optional ghi
+                // TƯỜNG MINH cả khi false (5.583/5.583 dòng trong kho), note
+                // đứng CUỐI dòng sau confidence.
                 $row = [
                     'ingredient_slug' => $di->ingredient->slug,
-                    'quantity' => $di->quantity,
+                    'quantity' => self::numValue($di->quantity),
                     'unit_name' => $di->unit_name,
+                    'is_optional' => $di->is_optional,
                 ];
-                if ($di->is_optional) {
-                    $row['is_optional'] = true;
-                }
                 if ($di->is_discarded) {
                     $row['is_discarded'] = true;
                 }
                 if ($di->is_edible_weight) {
                     $row['is_edible_weight'] = true;
                 }
-                if ($di->note !== null) {
-                    $row['note'] = $di->note;
-                }
                 $row['source'] = $di->source;
                 if ($di->confidence !== null) {
                     $row['confidence'] = $di->confidence;
+                }
+                if ($di->note !== null) {
+                    $row['note'] = $di->note;
                 }
 
                 return $row;
@@ -379,7 +385,7 @@ class LacdoiExportData extends Command
             ->all();
 
         $sources = $dish->recipeSources
-            ->sortBy('url', SORT_STRING)
+            ->sortBy('id')
             ->values()
             ->map(fn ($s) => [
                 'url' => $s->url,
@@ -389,7 +395,7 @@ class LacdoiExportData extends Command
             ->all();
 
         $media = $dish->media
-            ->sortBy('path', SORT_STRING)
+            ->sortBy('id')
             ->values()
             ->map(fn ($m) => [
                 'path' => $m->path,
@@ -411,7 +417,7 @@ class LacdoiExportData extends Command
             'completeness_level' => $dish->completeness_level,
             'meal_slots' => $slots,
             'serving_desc' => $dish->serving_desc,
-            'serving_grams' => $dish->serving_grams,
+            'serving_grams' => self::numValue($dish->serving_grams),
             'ingredients' => $ingredients,
             'recipe_steps' => $dish->recipe_steps,
             'recipe_sources' => $sources,
@@ -450,6 +456,20 @@ class LacdoiExportData extends Command
         }
 
         return $payload;
+    }
+
+    /**
+     * Cột DECIMAL qua cast float cho ra 480.0 trong khi chuẩn file ghi số
+     * nguyên là 480 (chỉ số thật sự lẻ mới có phần thập phân). Chuẩn hoá:
+     * float nguyên trị → int; còn lại giữ nguyên (EXPORT-STABILITY).
+     */
+    private static function numValue(mixed $value): mixed
+    {
+        if (is_float($value) && is_finite($value) && floor($value) === $value && abs($value) <= 9007199254740991) {
+            return (int) $value;
+        }
+
+        return $value;
     }
 
     /**

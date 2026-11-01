@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+use Database\Seeders\DishSeeder;
+use Database\Seeders\FruitSeeder;
 use Database\Seeders\IngredientSeeder;
 use Database\Seeders\RegionSeeder;
 
@@ -46,4 +48,41 @@ it('vong khep kin: seed tu file roi export lai khong doi noi dung file', functio
     unset($before['_index.json'], $after['_index.json']);
 
     expect($after)->toBe($before);
+});
+
+/**
+ * Hash toàn bộ cây data (mọi file .json) theo đường dẫn tương đối — dùng cho cổng
+ * điểm cố định TOÀN CỤC (EXPORT-STABILITY): seed từ data/ rồi export phải
+ * cho ra đúng từng byte trên mọi file (món + nguyên liệu + quả + index).
+ *
+ * @return array<string, string>
+ */
+function hashAllDataJson(): array
+{
+    $hashes = [];
+    $base = base_path('data');
+    $it = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($base, FilesystemIterator::SKIP_DOTS));
+    foreach ($it as $file) {
+        if ($file->isFile() && str_ends_with($file->getFilename(), '.json')) {
+            $rel = str_replace('\\', '/', substr($file->getPathname(), strlen($base) + 1));
+            $hashes[$rel] = hash_file('sha256', $file->getPathname());
+        }
+    }
+    ksort($hashes);
+
+    return $hashes;
+}
+
+it('vong khep kin toan cuc: seed tu data roi export khong doi mot byte nao tren toan cay data', function () {
+    $before = hashAllDataJson();
+
+    $this->seed(RegionSeeder::class);
+    $this->seed(IngredientSeeder::class);
+    $this->seed(DishSeeder::class);
+    $this->seed(FruitSeeder::class);
+    $this->artisan('lacdoi:export-data')->assertExitCode(0);
+
+    // Khôngunset _index.json nào: cả hai index đều là file máy sinh đã nằm
+    // trong repo và phải tự khớp sau export (điểm cố định gồm cả index).
+    expect(hashAllDataJson())->toBe($before);
 });

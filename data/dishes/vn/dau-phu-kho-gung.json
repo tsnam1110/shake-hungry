@@ -1,24 +1,8 @@
 {
   "slug": "dau-phu-kho-gung",
-  "region_code": "vn",
-  "country_code": "VN",
-  "source": "llm_suggested",
-  "confidence": "medium",
-  "completeness_level": 1,
-  "needs_review": true,
-  "reviewed_by": null,
-  "reviewed_at": null,
-  "review_note": null,
   "parent_dish_slug": null,
-  "is_variant": false,
-  "is_eat_out": false,
-  "is_home_cook": true,
-  "cooking_method": "kho",
-  "serving_grams": 150,
-  "serving_desc": "1 đĩa nhỏ đậu phụ kho gừng, ăn kèm cơm",
-  "tags": [
-    "loai:mon-chinh"
-  ],
+  "country_code": "VN",
+  "region_code": "vn",
   "names": [
     {
       "locale": "vi",
@@ -31,6 +15,10 @@
       "is_primary": true
     }
   ],
+  "is_eat_out": false,
+  "is_home_cook": true,
+  "cooking_method": "kho",
+  "completeness_level": 1,
   "meal_slots": [
     {
       "slot": "trua",
@@ -41,6 +29,8 @@
       "weight": 8
     }
   ],
+  "serving_desc": "1 đĩa nhỏ đậu phụ kho gừng, ăn kèm cơm",
+  "serving_grams": 150,
   "ingredients": [
     {
       "ingredient_slug": "dau-phu",
@@ -101,7 +91,6 @@
     "Cho đậu phụ vào, thêm nước tương, đường và khoảng 60 ml nước, kho lửa nhỏ 10 phút cho thấm, rắc hành lá."
   ],
   "recipe_sources": [],
-  "import_note": "Đợt 3 DISH-005: món chính chay (kho, dùng đậu phụ có sẵn). Định lượng llm_suggested, cần duyệt (QT-4). THAY THẾ cho bản soạn đầu 'Đậu phụ sốt nấm' — rà soát độc lập G6 kết luận món đó trùng cụm với cả dau-phu-kho-nam (đậu phụ + nấm hương khô) và dau-phu-rim-nam (đậu phụ + nấm rơm) đã có trong kho: hợp của hai món, không đủ khác biệt theo EDITORIAL-GUIDE §3. Bản thay đổi hẳn trục vị: gừng là gia vị dẫn, không dùng nấm. Gia vị chay hoàn toàn (nước tương, đường, muối ngầm trong nước tương) — nhãn diet suy từ thành phần là chay, đã kiểm chứng trong DB. Dầu phi gừng 5 g kê trong công thức theo thiết kế CALC-004 (dau-phu có hệ số hấp thụ 15 chỉ áp khi là chủ thể chiên; món này kho với 60 ml nước, dầu chỉ đóng vai phi gia vị). [LV2-005 đợt 5: thử nâng Mức 2 — GIỮ Mức 1: lần mở nguồn đúng món đầu tiên (RecipeLink/Authentic Vietnamese Cooking) bị chặn 429 — dừng ngay theo kỷ luật, chưa mở được nguồn nào. Thử lại khi hết chặn.] [LV2-006 đợt 6: GIỮ Mức 1 — bị chặn 429 ở nguồn thứ ba; hai nguồn mở được đều là biến thể khác (không phải bản chay kho miếng của file — file là biến thể chay có chủ đích). ĐÍNH CHÍNH hồ sơ cũ: ghi nhận về hệ số hấp thụ dầu của đậu phụ trong các đợt trước dùng hệ số 15 — hệ số đã hiệu chuẩn thành 10 tại commit 9fef8a6, ghi nhận cũ hết hiệu lực.] [LV2-007 đợt 7: thử nâng Mức 2 — GIỮ MỨC 1. Nguồn đúng tên duy nhất mở được (Corinne Trang, Authentic Vietnamese Cooking, qua recipelink.com/recipes/braised-tofu-with-ginger-dau-hu-kho-gung-vietnamese-0312803) là biến thể MẶN (thịt lợn xay + nước mắm); không có ≥2 nguồn đúng biến thể chay kho gừng miếng của file (nguồn chay mở được hoặc là biến thể cuộn tam sắc, hoặc kho gừng chủ thể nấm, hoặc kho chay không gừng). GIỮ nguyên mọi dòng — đối chiếu phụ cho thấy đậu phụ 110g nằm trong dải nguồn mặn (~91–113g), nước tương 8g khớp nguồn chay kho gừng (~7,5g). Chờ chủ dự án quyết: (a) giữ biến thể chay biên soạn có chủ đích (món lấp ô món chính chay DISH-005; pha nghiên cứu khuyến nghị), hoặc (b) đổi canonical sang bản mặn Corinne Trang (+thịt lợn xay ~34g/khẩu phần, +nước mắm ~3g, bỏ nhãn chay). Xem LV2-007 §3.] [LV2-010 Phần C — gói quyết định chủ dự án 2026-10-31: A3 ĐÃ CHỐT theo quyết định chủ dự án: GIỮ biến thể chay của file. Ghi rõ theo quyết định: biến thể chay kho gừng miếng này là SÁNG TẠO BIÊN TẬP của DISH-005 (món lấp ô món chính chay), KHÔNG có nguồn độc lập đúng biến thể — nguồn đúng tên duy nhất đã mở (Corinne Trang) là biến thể mặn. Quyết định này chỉ chốt định danh, không nới cổng V12: món giữ Mức 1.]",
   "media": [
     {
       "path": "media/dishes/dau-phu-kho-gung.webp",
@@ -109,5 +98,18 @@
       "attribution": "Dan Zen from Dundas, Canada / Wikimedia Commons (CC BY 2.0)",
       "is_primary": true
     }
+  ],
+  "estimated_kcal": null,
+  "external_ref": null,
+  "import_note": "Đợt 3 DISH-005: món chính chay (kho, dùng đậu phụ có sẵn). Định lượng llm_suggested, cần duyệt (QT-4). THAY THẾ cho bản soạn đầu 'Đậu phụ sốt nấm' — rà soát độc lập G6 kết luận món đó trùng cụm với cả dau-phu-kho-nam (đậu phụ + nấm hương khô) và dau-phu-rim-nam (đậu phụ + nấm rơm) đã có trong kho: hợp của hai món, không đủ khác biệt theo EDITORIAL-GUIDE §3. Bản thay đổi hẳn trục vị: gừng là gia vị dẫn, không dùng nấm. Gia vị chay hoàn toàn (nước tương, đường, muối ngầm trong nước tương) — nhãn diet suy từ thành phần là chay, đã kiểm chứng trong DB. Dầu phi gừng 5 g kê trong công thức theo thiết kế CALC-004 (dau-phu có hệ số hấp thụ 15 chỉ áp khi là chủ thể chiên; món này kho với 60 ml nước, dầu chỉ đóng vai phi gia vị). [LV2-005 đợt 5: thử nâng Mức 2 — GIỮ Mức 1: lần mở nguồn đúng món đầu tiên (RecipeLink/Authentic Vietnamese Cooking) bị chặn 429 — dừng ngay theo kỷ luật, chưa mở được nguồn nào. Thử lại khi hết chặn.] [LV2-006 đợt 6: GIỮ Mức 1 — bị chặn 429 ở nguồn thứ ba; hai nguồn mở được đều là biến thể khác (không phải bản chay kho miếng của file — file là biến thể chay có chủ đích). ĐÍNH CHÍNH hồ sơ cũ: ghi nhận về hệ số hấp thụ dầu của đậu phụ trong các đợt trước dùng hệ số 15 — hệ số đã hiệu chuẩn thành 10 tại commit 9fef8a6, ghi nhận cũ hết hiệu lực.] [LV2-007 đợt 7: thử nâng Mức 2 — GIỮ MỨC 1. Nguồn đúng tên duy nhất mở được (Corinne Trang, Authentic Vietnamese Cooking, qua recipelink.com/recipes/braised-tofu-with-ginger-dau-hu-kho-gung-vietnamese-0312803) là biến thể MẶN (thịt lợn xay + nước mắm); không có ≥2 nguồn đúng biến thể chay kho gừng miếng của file (nguồn chay mở được hoặc là biến thể cuộn tam sắc, hoặc kho gừng chủ thể nấm, hoặc kho chay không gừng). GIỮ nguyên mọi dòng — đối chiếu phụ cho thấy đậu phụ 110g nằm trong dải nguồn mặn (~91–113g), nước tương 8g khớp nguồn chay kho gừng (~7,5g). Chờ chủ dự án quyết: (a) giữ biến thể chay biên soạn có chủ đích (món lấp ô món chính chay DISH-005; pha nghiên cứu khuyến nghị), hoặc (b) đổi canonical sang bản mặn Corinne Trang (+thịt lợn xay ~34g/khẩu phần, +nước mắm ~3g, bỏ nhãn chay). Xem LV2-007 §3.] [LV2-010 Phần C — gói quyết định chủ dự án 2026-10-31: A3 ĐÃ CHỐT theo quyết định chủ dự án: GIỮ biến thể chay của file. Ghi rõ theo quyết định: biến thể chay kho gừng miếng này là SÁNG TẠO BIÊN TẬP của DISH-005 (món lấp ô món chính chay), KHÔNG có nguồn độc lập đúng biến thể — nguồn đúng tên duy nhất đã mở (Corinne Trang) là biến thể mặn. Quyết định này chỉ chốt định danh, không nới cổng V12: món giữ Mức 1.]",
+  "status": "draft",
+  "source": "llm_suggested",
+  "confidence": "medium",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "loai:mon-chinh"
   ]
 }

@@ -255,6 +255,28 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > seed + recompute trên DB kiểm chứng riêng: **7/654 món đạt coverage ≥30%, 4 món
 > ≥60%** (nhóm chè hạt sen/long nhãn), Pest **153/153**.
 
+> ## ⚠️ Đính chính lần 18, 2026-11-01 — vòng seed→export phía món KHÔNG phải điểm cố định (đã sửa, EXPORT-STABILITY)
+>
+> TCM-001a phát hiện: export trên DB vừa seed từ `data/` viết lại ~648 file món — phía
+> nguyên liệu/quả là điểm cố định từng byte, phía món thì chưa từng ai kiểm (test ổn định
+> cũ chỉ phủ nguyên liệu). Chẩn đoán census toàn bộ 1.176 file JSON:
+> [EXPORT-STABILITY](docs/05-tasks/tasks/EXPORT-STABILITY.md). Ba nguyên nhân ở exporter
+> (`LacdoiExportData::dishPayload`): (1) tự sắp lại thứ tự dòng theo nội dung (tên en lên
+> trước vi, nguyên liệu theo slug, bữa theo tên slot, nguồn theo URL) trong khi chuẩn file
+> là **thứ tự biên tập** mà seeder đã giữ trong khoá `id`; (2) cột DECIMAL + cast float in
+> số nguyên thành `480.0` trong khi file ghi `480`; (3) rớt `is_optional: false` tường minh
+> (5.306 dòng) + đặt `note` sai vị trí. Cộng hai lỗi phía file: `dau-phu-kho-gung` viết tay
+> lệch khuôn (thừa `is_variant` không có schema, thiếu 3 khoá chuẩn) và `dishes/_index.json`
+> bản commit **lỗi thời từ thời kho 61 món**. Đã sửa exporter (sortBy `id`, `is_optional`
+> luôn ghi, `numValue()` chuẩn hoá số) + chuẩn hoá cơ học 23 file qua chính vòng export
+> (nội dung ngữ nghĩa không đổi) → **seed từ `data/` → export = 0/1.176 file lệch**;
+> `ExportStabilityTest` có thêm test điểm cố định **toàn cục** làm cổng bắt buộc.
+> **Quy tắc vận hành mới: không chạy export toàn cục khi chưa qua cổng điểm cố định này;
+> script sửa dữ liệu hàng loạt phải ghi file đúng khuôn exporter** (thứ tự khoá dòng nguồn
+> `url, accessed, note`, `is_optional` tường minh, số nguyên không `.0`) — lệch khuôn sẽ
+> thành diff bất ngờ ở lần export sau. Kiểm chứng: validate 0 🔴 trên DB kiểm chứng riêng,
+> Pest 154/154.
+
 **Trạng thái thực tế, kiểm ngày 2026-10-31 (đã chạy lại toàn bộ lệnh kiểm chứng):**
 
 | Hạng mục | Thực tế | Kiểm bằng |
