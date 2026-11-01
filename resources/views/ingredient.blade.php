@@ -38,6 +38,9 @@ fetch('/api/ingredients/' + slug).then(r => { if (!r.ok) throw new Error('404');
         <h1 class="ld-title" style="margin-top:16px">${esc(i.name_vi)}</h1>
         <p class="ld-subtitle">${catLabel[i.category] ?? esc(i.category ?? '')}${i.name_en ? ' · ' + esc(i.name_en) : ''}${i.scientific_name ? ' · ' : ''}${i.scientific_name ? '<i>' + esc(i.scientific_name) + '</i>' : ''}</p>
         ${(i.aliases ?? []).length ? `<p class="ld-note" style="margin-top:8px">Tên gọi khác: ${i.aliases.map(a => esc(a.name)).join(' · ')}</p>` : ''}
+        <div style="display:flex;gap:10px;margin-top:14px;flex-wrap:wrap">
+            <button type="button" class="ld-btn ld-btn-gray" data-feedback data-ingredient="${i.id}" data-context="${esc(i.name_vi)}" style="padding:11px 20px;font-size:15px">Gửi phản hồi về nguyên liệu này</button>
+        </div>
         ${fruit_slug ? `<a href="/hoa-qua/${fruit_slug}" class="ld-row" style="margin-top:14px;text-decoration:none"><span class="grow"><span style="font-weight:600">Hồ sơ hoa quả đầy đủ</span><span class="sub">Mùa vụ, giá theo vùng, cách chọn và bảo quản</span></span><span style="color:var(--color-faint);font-size:19px">›</span></a>` : ''}
 
         ${i.unverified ? '<div class="ld-warn" style="margin-top:16px"><span>Số liệu của nguyên liệu này lấy từ nguồn thứ cấp, <strong>chưa qua kiểm định</strong> — hãy cân nhắc khi dùng để tính toán chính xác.</span></div>' : ''}

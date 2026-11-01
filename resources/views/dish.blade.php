@@ -65,6 +65,7 @@ fetch('/api/dishes/' + encodeURIComponent(slug), { headers: { 'Accept': 'applica
 
         <div style="display:flex;gap:10px;margin-top:14px;flex-wrap:wrap">
             <button type="button" class="ld-btn ld-btn-gray ld-fav-btn" data-fav-dish="${d.id}" style="padding:11px 20px;font-size:15px"><span class="heart-ic">${heartSvg}</span>Yêu thích món này</button>
+            <button type="button" class="ld-btn ld-btn-gray" data-feedback data-dish="${d.id}" data-context="${esc(name)}" style="padding:11px 20px;font-size:15px">Gửi phản hồi</button>
         </div>
 
         ${provenance ? `

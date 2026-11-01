@@ -175,6 +175,13 @@
             </form>
         </div>
     </section>
+
+    {{-- Phản hồi của tôi (UI-018) --}}
+    <section>
+        <h2 class="ld-section-title">Phản hồi của tôi</h2>
+        <div class="ld-group" id="my-feedback"></div>
+        <p class="ld-note" style="margin-top:10px">Gửi phản hồi mới bằng nút "Gửi phản hồi" ở trang chi tiết của từng món, quả hoặc nguyên liệu. Mọi ticket đều bắt đầu ở trạng thái "Đã ghi nhận · Chờ duyệt".</p>
+    </section>
 @endauth
 @endsection
 
@@ -345,7 +352,24 @@ async function loadFavorites() {
     } catch { /* khối phụ */ }
 }
 document.addEventListener('fav-changed', () => loadFavorites());
-init().then(() => { loadStats(); loadFavorites(); });
+
+/* ===== Phản hồi của tôi (UI-018) ===== */
+const fbStatusStyle = { 'da-ghi-nhan': '', 'da-duyet': 'vu', 'dang-xu-ly': 'hoi', 'da-xu-ly': 'chay', 'da-dong': '' };
+async function loadFeedback() {
+    try {
+        const tickets = await (await fetch('/api/feedback')).json();
+        document.getElementById('my-feedback').innerHTML = (tickets ?? []).map(t => `
+            <div class="ld-row">
+                <span class="grow">
+                    <span style="font-weight:600">${esc(t.title || t.content.slice(0, 60))}</span>
+                    <span class="sub">${esc(t.type_label)}${t.context_name ? ' · Về: ' + esc(t.context_name) : ''} · ${new Date(t.created_at).toLocaleDateString('vi-VN')}</span>
+                </span>
+                <span class="ld-badge ${fbStatusStyle[t.status] ?? ''}">${esc(t.status_label)}</span>
+            </div>`).join('') || '<p style="color:var(--color-faint);padding:16px;margin:0">Bạn chưa gửi phản hồi nào.</p>';
+    } catch { /* khối phụ */ }
+}
+document.addEventListener('feedback-sent', () => loadFeedback());
+init().then(() => { loadStats(); loadFavorites(); loadFeedback(); });
 </script>
 @endauth
 @endpush

@@ -50,6 +50,11 @@ class User extends Authenticatable
         return $this->hasMany(FruitLog::class);
     }
 
+    public function feedbackTickets(): \Illuminate\Database\Eloquent\Relations\HasMany
+    {
+        return $this->hasMany(FeedbackTicket::class);
+    }
+
     /** Vai trò khu vực quản trị (ADM-001): admin toàn quyền, editor biên soạn. */
     public function isAdmin(): bool
     {

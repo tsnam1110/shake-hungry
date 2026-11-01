@@ -49,6 +49,7 @@ fetch('/api/fruits/' + encodeURIComponent(slug), { headers: { 'Accept': 'applica
         <div style="display:flex;gap:10px;margin-top:16px;flex-wrap:wrap">
             <button type="button" class="ld-btn ld-btn-gray ld-fav-btn" data-fav-fruit="${f.id}" style="padding:11px 20px;font-size:15px"><span class="heart-ic">${heartSvg}</span>Yêu thích</button>
             <button type="button" class="ld-btn ld-btn-primary" id="fruit-eat-btn" style="padding:11px 20px;font-size:15px">Đã ăn quả này</button>
+            <button type="button" class="ld-btn ld-btn-gray" data-feedback data-fruit="${f.id}" data-context="${esc(f.name_vi)}" style="padding:11px 20px;font-size:15px">Gửi phản hồi</button>
         </div>
 
         <div class="ld-card" style="margin-top:18px">

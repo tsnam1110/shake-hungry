@@ -54,6 +54,8 @@ Route::prefix('api')->group(function () {
         Route::get('/fruit-logs', [\App\Http\Controllers\PublicWeb\EngagementController::class, 'fruitLogs']);
         Route::delete('/fruit-logs/{fruitLog}', [\App\Http\Controllers\PublicWeb\EngagementController::class, 'destroyFruitLog']);
         Route::get('/stats', [\App\Http\Controllers\PublicWeb\EngagementController::class, 'stats']);
+        Route::post('/feedback', [\App\Http\Controllers\PublicWeb\FeedbackController::class, 'store']);
+        Route::get('/feedback', [\App\Http\Controllers\PublicWeb\FeedbackController::class, 'mine']);
     });
     Route::get('/regions', [\App\Http\Controllers\PublicWeb\CatalogController::class, 'regions']);
     Route::get('/tags', [\App\Http\Controllers\PublicWeb\TaxonomyController::class, 'tags']);
@@ -94,6 +96,8 @@ Route::middleware(['auth', 'admin'])->prefix('admin/api')->group(function () {
     Route::get('/contributions', [\App\Http\Controllers\Admin\ContributionController::class, 'index']);
     Route::post('/contributions/bulk', [\App\Http\Controllers\Admin\ContributionController::class, 'bulk']);
     Route::post('/contributions/{contribution}/review', [\App\Http\Controllers\Admin\ContributionController::class, 'review']);
+    Route::get('/feedback', [\App\Http\Controllers\Admin\FeedbackController::class, 'index']);
+    Route::post('/feedback/{ticket}/status', [\App\Http\Controllers\Admin\FeedbackController::class, 'updateStatus']);
     Route::post('/dishes/{dish}/compute', [DishController::class, 'compute']);
 });
 

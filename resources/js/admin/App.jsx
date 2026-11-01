@@ -7,6 +7,7 @@ import Ingredients from './pages/Ingredients';
 import Dishes from './pages/Dishes';
 import Fruits from './pages/Fruits';
 import Contributions from './pages/Contributions';
+import Feedback from './pages/Feedback';
 
 const { Header, Sider, Content } = Layout;
 
@@ -40,6 +41,7 @@ export default function App() {
                         { key: 'dishes', label: 'Món ăn' },
                         { key: 'fruits', label: 'Hoa quả' },
                         { key: 'contributions', label: 'Đóng góp cộng đồng' },
+                        { key: 'feedback', label: 'Góp ý · Phản hồi' },
                     ]} />
             </Sider>
             <Layout>
@@ -56,6 +58,7 @@ export default function App() {
                     {page === 'dishes' && <Dishes />}
                     {page === 'fruits' && <Fruits />}
                     {page === 'contributions' && <Contributions /> }
+                    {page === 'feedback' && <Feedback />}
                 </Content>
             </Layout>
         </Layout>

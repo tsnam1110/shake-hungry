@@ -136,6 +136,98 @@
 </main>
 @endif
 
+{{-- Hộp thoại gửi phản hồi (UI-018) — nút mở mang thuộc tính data-feedback --}}
+<div class="ld-sheet-overlay" id="fb-overlay">
+    <div class="ld-sheet" role="dialog" aria-modal="true" aria-label="Gửi phản hồi">
+        <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px">
+            <div>
+                <h2 style="margin:0;font-size:20px;font-weight:800;letter-spacing:-.01em">Gửi phản hồi</h2>
+                <p id="fb-context" style="margin:4px 0 0;color:var(--color-sub);font-size:14px"></p>
+            </div>
+            <button type="button" id="fb-close" aria-label="Đóng" style="border:0;background:var(--color-fill);width:32px;height:32px;border-radius:50%;font-size:15px;cursor:pointer;color:var(--color-sub)">✕</button>
+        </div>
+        <div id="fb-guest" style="display:none;margin-top:16px">
+            <p style="color:var(--color-sub);font-size:15px;line-height:1.55;margin:0">Chỉ người dùng đã đăng nhập mới gửi được phản hồi, để hệ thống ghi nhận đúng ticket và bạn theo dõi được trạng thái xử lý trong hồ sơ.</p>
+            <a href="/tai-khoan" class="ld-btn ld-btn-primary" style="text-decoration:none;margin-top:14px">Đăng nhập để gửi phản hồi</a>
+        </div>
+        <form id="fb-form" style="margin-top:16px">
+            <span class="ld-field-label">Loại phản hồi</span>
+            <div class="ld-chips" id="fb-types" style="margin-bottom:14px">
+                <button type="button" class="ld-chip active" data-type="gop-y">Góp ý</button>
+                <button type="button" class="ld-chip" data-type="ho-tro">Hỗ trợ</button>
+                <button type="button" class="ld-chip" data-type="phat-trien">Phát triển</button>
+                <button type="button" class="ld-chip" data-type="loi">Báo lỗi</button>
+            </div>
+            <label class="ld-field-label" for="fb-title">Tiêu đề (tuỳ chọn)</label>
+            <input id="fb-title" class="ld-input" maxlength="160" placeholder="Tóm tắt ngắn gọn" style="margin-bottom:12px">
+            <label class="ld-field-label" for="fb-content">Nội dung</label>
+            <textarea id="fb-content" class="ld-input" rows="5" maxlength="5000" placeholder="Mô tả chi tiết góp ý, khó khăn bạn gặp, hoặc lỗi bạn thấy…"></textarea>
+            <div style="display:flex;align-items:center;gap:12px;margin-top:16px;flex-wrap:wrap">
+                <button class="ld-btn ld-btn-primary" id="fb-submit" style="padding:12px 24px">Gửi phản hồi</button>
+                <span id="fb-msg" style="font-size:14.5px"></span>
+            </div>
+            <p class="ld-note" style="margin-top:12px">Phản hồi vào hệ thống ở trạng thái "Đã ghi nhận · Chờ duyệt". Bạn xem lại được mọi ticket của mình trong trang Hồ sơ.</p>
+        </form>
+        <div id="fb-done" style="display:none;margin-top:16px;text-align:center;padding:12px 0 4px">
+            <p style="font-size:16.5px;font-weight:700;margin:0">Đã ghi nhận phản hồi của bạn</p>
+            <p style="color:var(--color-sub);font-size:14.5px;margin:6px 0 0">Ticket đang ở trạng thái chờ duyệt. Theo dõi tiến độ trong mục "Phản hồi của tôi" ở trang Hồ sơ.</p>
+            <button type="button" class="ld-btn ld-btn-gray" id="fb-done-close" style="margin-top:16px">Đóng</button>
+        </div>
+    </div>
+</div>
+<script>
+    window.__fb = { user: undefined, type: 'gop-y', ctx: {} };
+    fetch('/api/me').then(r => r.json()).then(({ user }) => { window.__fb.user = !!user; }).catch(() => { window.__fb.user = false; });
+    function fbOpen() {
+        const u = window.__fb.user;
+        document.getElementById('fb-guest').style.display = u ? 'none' : '';
+        document.getElementById('fb-form').style.display = u ? '' : 'none';
+        document.getElementById('fb-done').style.display = 'none';
+        document.getElementById('fb-msg').textContent = '';
+        document.getElementById('fb-overlay').classList.add('open');
+    }
+    function fbClose() { document.getElementById('fb-overlay').classList.remove('open'); }
+    document.addEventListener('click', (e) => {
+        const btn = e.target.closest('[data-feedback]');
+        if (!btn) return;
+        e.preventDefault();
+        window.__fb.ctx = {};
+        if (btn.dataset.dish) window.__fb.ctx.dish_id = +btn.dataset.dish;
+        if (btn.dataset.fruit) window.__fb.ctx.fruit_id = +btn.dataset.fruit;
+        if (btn.dataset.ingredient) window.__fb.ctx.ingredient_id = +btn.dataset.ingredient;
+        document.getElementById('fb-context').textContent = btn.dataset.context ? 'Về: ' + btn.dataset.context : 'Phản hồi chung cho Lắc Đói';
+        fbOpen();
+    });
+    document.getElementById('fb-close').addEventListener('click', fbClose);
+    document.getElementById('fb-done-close').addEventListener('click', fbClose);
+    document.getElementById('fb-overlay').addEventListener('click', (e) => { if (e.target.id === 'fb-overlay') fbClose(); });
+    document.querySelectorAll('#fb-types .ld-chip').forEach(b => b.addEventListener('click', () => {
+        document.querySelectorAll('#fb-types .ld-chip').forEach(x => x.classList.remove('active'));
+        b.classList.add('active');
+        window.__fb.type = b.dataset.type;
+    }));
+    document.getElementById('fb-form').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const content = document.getElementById('fb-content').value.trim();
+        const msg = document.getElementById('fb-msg');
+        if (content.length < 5) { msg.style.color = 'var(--color-danger)'; msg.textContent = 'Nội dung cần ít nhất 5 ký tự.'; return; }
+        const btn = document.getElementById('fb-submit'); btn.disabled = true;
+        const resp = await fetch('/api/feedback', { method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json', 'X-CSRF-TOKEN': document.querySelector('meta[name=csrf-token]').content },
+            body: JSON.stringify({ type: window.__fb.type, title: document.getElementById('fb-title').value.trim() || null,
+                content, ...window.__fb.ctx, page: location.pathname }) });
+        btn.disabled = false;
+        if (resp.status === 401) { document.getElementById('fb-guest').style.display = ''; document.getElementById('fb-form').style.display = 'none'; return; }
+        if (!resp.ok) { msg.style.color = 'var(--color-danger)'; msg.textContent = 'Chưa gửi được — kiểm tra lại nội dung và thử lại.'; return; }
+        document.getElementById('fb-form').style.display = 'none';
+        document.getElementById('fb-done').style.display = '';
+        document.getElementById('fb-content').value = '';
+        document.getElementById('fb-title').value = '';
+        document.dispatchEvent(new CustomEvent('feedback-sent'));
+        if (window.ldToast) ldToast('Đã ghi nhận phản hồi — chờ duyệt');
+    });
+</script>
+
 <div class="ld-toast" id="ld-toast" role="status"></div>
 <script>
     window.ldToast = function (msg) {

@@ -243,6 +243,17 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .ld-seg a { flex: 1; text-align: center; padding: 8px 4px; border-radius: 999px; font-size: 14px;
     font-weight: 600; color: var(--color-sub); text-decoration: none; }
 .ld-seg a.on { background: var(--color-ink); color: #fff; }
+
+/* Hộp thoại gửi phản hồi (UI-018) */
+.ld-sheet-overlay { position: fixed; inset: 0; background: rgba(0,0,0,.42); z-index: 90; display: none;
+    align-items: flex-end; justify-content: center; }
+.ld-sheet-overlay.open { display: flex; }
+.ld-sheet { background: var(--color-surface); width: 100%; max-width: 520px; max-height: 88vh; overflow: auto;
+    border-radius: 22px 22px 0 0; padding: 22px 20px 26px; }
+@media (min-width: 640px) {
+    .ld-sheet-overlay { align-items: center; padding: 18px; }
+    .ld-sheet { border-radius: 22px; }
+}
 a.ld-dcard:hover { box-shadow: 0 2px 4px rgba(0,0,0,.05), 0 14px 34px rgba(0,0,0,.09); }
 .ld-dcard-img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; flex: none; background: var(--color-fill); }
 .ld-dcard-body { display: flex; flex-direction: column; flex: 1; padding: 12px 14px 14px; min-width: 0; }
