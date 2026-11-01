@@ -5,7 +5,7 @@
 @section('content')
     <a href="/#kham-pha" style="display:inline-flex;align-items:center;gap:3px;color:var(--color-link);font-size:16.5px;font-weight:500;text-decoration:none;padding-top:10px">
         <svg width="11" height="18" viewBox="0 0 8 14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" style="transform:rotate(180deg)"><path d="M1 1l6 6-6 6"/></svg>
-        Khám phá
+        Thư viện
     </a>
     <div id="content" style="color:var(--color-faint);margin-top:14px">Đang tải…</div>
 @endsection

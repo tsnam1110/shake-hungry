@@ -1,16 +1,16 @@
 @extends('layouts.app')
 
-@section('title', 'Khám phá món — Lắc Đói')
+@section('title', 'Thư viện — Lắc Đói')
 @section('page_class', 'ld-page-wide')
 
 @section('content')
     <div class="ld-seg" role="navigation" aria-label="Chuyển mục khám phá" style="max-width:340px;margin-top:14px">
-        <a href="/kham-pha" class="on" aria-current="page">Món ăn</a>
+        <a href="/thu-vien" class="on" aria-current="page">Món ăn</a>
         <a href="/nguyen-lieu">Nguyên liệu</a>
     </div>
 
-    <h1 class="ld-title" style="margin-top:16px">Khám phá món</h1>
-    <p class="ld-subtitle">Toàn bộ kho món của Lắc Đói — tìm kiếm, lọc theo loại món, chế độ ăn, vùng miền và sắp xếp. Trang chủ chỉ hiện một phần để dùng nhanh; đây là trang khám phá đầy đủ.</p>
+    <h1 class="ld-title" style="margin-top:16px">Thư viện</h1>
+    <p class="ld-subtitle">Thư viện là nơi tra cứu toàn bộ kho của Lắc Đói — chuyển giữa hai mục Món ăn và Nguyên liệu ở thanh trên. Tại đây bạn tìm kiếm, lọc theo loại món, chế độ ăn, vùng miền và sắp xếp đầy đủ; trang chủ chỉ hiện một phần để dùng nhanh.</p>
 
     <div class="ld-card" style="margin-top:18px">
         <div class="ld-search" role="search">

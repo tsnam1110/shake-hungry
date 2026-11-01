@@ -23,7 +23,8 @@ Route::view('/nguon-du-lieu', 'legal.data');
 Route::get('/mon/{slug}', fn () => view('dish'));
 // IMG-001: ảnh trong data/media/ (đã qua kiểm license R4) — chỉ .webp ở hai nhóm dishes/ingredients.
 Route::get('/media/{path}', [\App\Http\Controllers\PublicWeb\MediaController::class, 'show'])->where('path', '.*');
-Route::get('/kham-pha', fn () => view('explore'));
+Route::get('/thu-vien', fn () => view('explore')); // tên cũ /kham-pha — đổi thành Thư viện 2026-11-01
+Route::redirect('/kham-pha', '/thu-vien');
 Route::get('/nguyen-lieu', fn () => view('ingredients'));
 Route::get('/nguyen-lieu/{slug}', fn () => view('ingredient'));
 Route::get('/nhat-ky', fn () => view('diary'))->middleware('auth');
