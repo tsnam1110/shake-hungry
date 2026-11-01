@@ -39,6 +39,22 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "nhiet",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "Dược điển Trung Quốc (中国药典）, chuyên khảo Nhục quế 肉桂 — vỏ thân khô của Cinnamomum cassia; thuộc Danh mục chất vừa là thực phẩm vừa là dược liệu (药食同源, Ủy ban Y tế Quốc gia TQ, 106 chất). Kiểm chứng bản tái bản chuyên khảo: https://www.zhongyifangji.com/en/materials/detail/id/279 (Properties: acrid, sweet, very hot)",
+      "confidence": "high"
+    },
+    {
+      "nature": "nhiet",
+      "flavor": "tan",
+      "element": "kim",
+      "source_ref": "Dược điển Trung Quốc (中国药典）, chuyên khảo Nhục quế 肉桂 — vỏ thân khô của Cinnamomum cassia; thuộc Danh mục chất vừa là thực phẩm vừa là dược liệu (药食同源, Ủy ban Y tế Quốc gia TQ, 106 chất). Kiểm chứng bản tái bản chuyên khảo: https://www.zhongyifangji.com/en/materials/detail/id/279 (Properties: acrid, sweet, very hot)",
+      "confidence": "high"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

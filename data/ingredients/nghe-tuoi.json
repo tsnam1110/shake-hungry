@@ -46,6 +46,22 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "on",
+      "flavor": "kho",
+      "element": "hoa",
+      "source_ref": "Dược điển Trung Quốc (中国药典）, chuyên khảo Khương hoàng 姜黄 — thân rễ khô đã luộc/hấp của Curcuma longa; thuộc Danh mục chất vừa là thực phẩm vừa là dược liệu (药食同源, Ủy ban Y tế Quốc gia TQ, 106 chất). Kiểm chứng bản tái bản chuyên khảo: https://www.tcmfans.club/herbalism/rbcabrs/rhizomacurcumaelongae.html (Properties and Flavor: warm, pungent, bitter). Nguyên liệu kho là thân rễ TƯƠI: cùng loài, cùng bộ phận với chuyên khảo (dạng khô) — áp dụng kèm hạ độ tin cậy.",
+      "confidence": "medium"
+    },
+    {
+      "nature": "on",
+      "flavor": "tan",
+      "element": "kim",
+      "source_ref": "Dược điển Trung Quốc (中国药典）, chuyên khảo Khương hoàng 姜黄 — thân rễ khô đã luộc/hấp của Curcuma longa; thuộc Danh mục chất vừa là thực phẩm vừa là dược liệu (药食同源, Ủy ban Y tế Quốc gia TQ, 106 chất). Kiểm chứng bản tái bản chuyên khảo: https://www.tcmfans.club/herbalism/rbcabrs/rhizomacurcumaelongae.html (Properties and Flavor: warm, pungent, bitter). Nguyên liệu kho là thân rễ TƯƠI: cùng loài, cùng bộ phận với chuyên khảo (dạng khô) — áp dụng kèm hạ độ tin cậy.",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "low",
   "needs_review": true,

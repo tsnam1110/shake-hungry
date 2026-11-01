@@ -251,6 +251,11 @@ class LacdoiExportData extends Command
                     'source_ref' => $t->source_ref,
                     'confidence' => $t->confidence,
                 ];
+                // element_basis mặc định 'flavor' thì không ghi — chỉ ghi
+                // khi khác mặc định, giữ file gọn như quy ước usage_restricted.
+                if (($t->element_basis ?? 'flavor') !== 'flavor') {
+                    $row['element_basis'] = $t->element_basis;
+                }
                 if ($t->usage_restricted) {
                     $row['usage_restricted'] = true;
                     $row['usage_note'] = $t->usage_note;
@@ -260,8 +265,8 @@ class LacdoiExportData extends Command
             })
             ->all();
         usort($traits, fn ($a, $b) => strcmp(
-            ($a['source_ref'] ?? '').'|'.($a['nature'] ?? '').'|'.($a['flavor'] ?? ''),
-            ($b['source_ref'] ?? '').'|'.($b['nature'] ?? '').'|'.($b['flavor'] ?? ''),
+            ($a['source_ref'] ?? '').'|'.($a['nature'] ?? '').'|'.($a['flavor'] ?? '').'|'.($a['element_basis'] ?? 'flavor'),
+            ($b['source_ref'] ?? '').'|'.($b['nature'] ?? '').'|'.($b['flavor'] ?? '').'|'.($b['element_basis'] ?? 'flavor'),
         ));
         if ($traits !== []) {
             $payload = $this->insertAfterKey($payload, 'media', ['tcm_traits' => $traits], fallbackKey: 'units');

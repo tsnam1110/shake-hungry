@@ -11,6 +11,10 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * Nhãn tính vị của một nguyên liệu theo MỘT nguồn (QT-6, GĐ6).
  * Một nguyên liệu có nhiều dòng khi các nguồn mâu thuẫn — mâu thuẫn được
  * giữ và hiển thị, không ép chọn. `source_ref` bắt buộc (R5).
+ * `element_basis` (TCM-001a): căn cứ của `element` — 'flavor' (suy từ vị,
+ * mặc định), 'nature' (nguồn trình bày hành theo tính) hoặc 'direct'
+ * (nguồn ghi hành trực tiếp). Chỉ dòng basis='flavor' bỏ phiếu hành chủ
+ * đạo khi tổng hợp món.
  * `usage_restricted`/`usage_note`: cờ theo chính sách lưu trữ nguồn hạn chế
  * (kế hoạch Mức 3 §2) — dữ liệu vẫn lưu trong thư viện, ghi chú "không được
  * dùng" đi kèm ở mọi nơi dữ liệu xuất hiện.

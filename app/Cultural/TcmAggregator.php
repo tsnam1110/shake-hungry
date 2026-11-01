@@ -31,9 +31,17 @@ use App\Nutrition\DishNutritionService;
  *    không trọng số được) — engine dinh dưỡng cũng coi chúng là "thiếu".
  *  - dominant_element: mỗi nguyên liệu có nhãn bỏ phiếu bằng khối lượng
  *    của nó; nhiều hành khác nhau trong cùng nguyên liệu thì chia đều
- *    khối lượng cho các hành phân biệt; hoà phiếu ⇒ null.
+ *    khối lượng cho các hành phân biệt; hoà phiếu ⇒ null. CHỈ dòng nhãn
+ *    basis='flavor' mới bỏ phiếu (TCM-001a): dòng basis='nature'/'direct'
+ *    mang element của một hệ ánh xạ khác — trộn vào cùng cuộc bỏ phiếu
+ *    sẽ cho kết quả không truy vết được; chúng vẫn hiển thị ở tầng
+ *    nguyên liệu và vẫn tham gia điểm tính/độ tin cậy như thường.
  *  - confidence: mắt xích yếu nhất trong các dòng trait tham gia, rồi áp
- *    trần — coverage <60 ⇒ tối đa low; có mâu thuẫn ⇒ tối đa low.
+ *    trần — coverage <60 ⇒ tối đa low; có mâu thuẫn ⇒ tối đa low; và
+ *    trần tuyệt đối ở cấp MÓN là 'medium' (TCM-001a): hệ số chế biến
+ *    cộng vào nature_score là quy ước của dự án, không có nguồn định
+ *    lượng, nên kết luận cấp món không bao giờ được 'high' — thang
+ *    'high' chỉ dành cho nhãn nguyên liệu có nguồn chính thức.
  *  - Món không có nguyên liệu có nhãn nào ⇒ KHÔNG có dòng summary
  *    (xoá dòng cũ nếu có) — không bịa một con số 0 trung tính.
  */
@@ -84,7 +92,10 @@ final class TcmAggregator
                 }
             }
 
+            // Phiếu hành: chỉ dòng basis='flavor' (mặc định) — element ghi
+            // tường minh trên dòng đó đã được V20 kiểm khớp ánh xạ theo vị.
             $elements = $traits
+                ->filter(fn (IngredientTcmTrait $t) => ($t->element_basis ?? 'flavor') === 'flavor')
                 ->map(fn (IngredientTcmTrait $t) => $t->element ?? TcmVocabulary::elementForFlavor($t->flavor))
                 ->filter()
                 ->unique()
@@ -117,6 +128,10 @@ final class TcmAggregator
         $confidence = $weakestConfidence ?? 'low';
         if ($coverage < TcmVocabulary::LEVEL3_MIN_COVERAGE || $hasConflicts) {
             $confidence = 'low';
+        }
+        // Trần tuyệt đối cấp món = medium (TCM-001a, xem docblock).
+        if ($confidence === 'high') {
+            $confidence = 'medium';
         }
 
         return DishTcmSummary::updateOrCreate(

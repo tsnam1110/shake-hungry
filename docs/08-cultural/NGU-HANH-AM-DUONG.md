@@ -283,3 +283,12 @@ có nguồn định lượng):
   lẫn mẫu số của coverage.
 - Món **không có nguyên liệu có nhãn nào thì không có dòng `dish_tcm_summary`** —
   không ghi một tổng hợp 0 trung tính để giả vờ đã tính.
+- **Trần cứng `medium` cho confidence của món (TCM-001a):** sau mọi trần trên,
+  `high` bị hạ xuống `medium` — hệ số chế biến là quy ước dự án không có nguồn định
+  lượng, nên kết luận cấp món không bao giờ mang `high`. Nhãn nguyên liệu giữ nguyên
+  thang confidence riêng của chúng.
+- **`element_basis` (TCM-001a):** mỗi dòng nhãn khai căn cứ của `element` —
+  `flavor` (mặc định, suy từ vị) | `nature` (suy từ tính theo bảng trình bày Việt ở
+  §3) | `direct` (nguồn ghi trực tiếp). Chỉ dòng basis=`flavor` bỏ phiếu
+  `dominant_element` khi tổng hợp món; dòng basis khác vẫn hiển thị ở tầng nguyên
+  liệu và vẫn tham gia tổng hợp nature/flavor như thường.

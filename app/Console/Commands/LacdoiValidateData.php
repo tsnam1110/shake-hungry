@@ -334,10 +334,34 @@ class LacdoiValidateData extends Command
             if ($element !== null && ! in_array($element, $elements, true)) {
                 $this->errors[] = "{$row}: element '{$element}' ngoài từ vựng (moc/hoa/tho/kim/thuy)";
             }
-            $derived = \App\Cultural\TcmVocabulary::elementForFlavor($flavor);
-            if ($element !== null && $derived !== null && $element !== $derived) {
-                $this->errors[] = "{$row}: element '{$element}' lệch ánh xạ cổ điển từ flavor '{$flavor}' (phải là '{$derived}') — nếu nguồn ghi khác, ghi thành dòng nhãn riêng kèm nguồn đó";
+            // element_basis (TCM-001a): element của dòng đứng trên căn cứ
+            // nào — 'flavor' (mặc định khi vắng mặt), 'nature' hay 'direct'.
+            // Mỗi basis có luật nhất quán riêng; trộn hệ mà không khai báo
+            // là lỗi, khai báo rồi vẫn phải khớp hệ đã khai.
+            $basis = $t['element_basis'] ?? 'flavor';
+            if (! in_array($basis, \App\Cultural\TcmVocabulary::ELEMENT_BASES, true)) {
+                $this->errors[] = "{$row}: element_basis '{$basis}' ngoài từ vựng (flavor/nature/direct)";
+                $basis = 'flavor';
             }
+            if ($basis === 'flavor') {
+                $derived = \App\Cultural\TcmVocabulary::elementForFlavor($flavor);
+                if ($element !== null && $derived !== null && $element !== $derived) {
+                    $this->errors[] = "{$row}: element '{$element}' lệch ánh xạ cổ điển từ flavor '{$flavor}' (phải là '{$derived}') — nếu nguồn ghi theo tính hoặc ghi trực tiếp, khai element_basis tương ứng kèm nguồn đó";
+                }
+            } elseif ($basis === 'nature') {
+                if ($nature === null) {
+                    $this->errors[] = "{$row}: element_basis='nature' nhưng thiếu nature — dòng theo tính phải có tính để đối chiếu hành";
+                } elseif ($element === null) {
+                    $this->errors[] = "{$row}: element_basis='nature' nhưng element trống — dòng theo tính phải ghi element như nguồn ghi";
+                } else {
+                    $derivedByNature = \App\Cultural\TcmVocabulary::elementForNature($nature);
+                    if ($derivedByNature !== null && $element !== $derivedByNature) {
+                        $this->errors[] = "{$row}: element '{$element}' lệch ánh xạ theo tính '{$nature}' (phải là '{$derivedByNature}' theo trình bày §3) — nếu nguồn ghi hành trực tiếp khác cả hai hệ, dùng element_basis='direct'";
+                    }
+                }
+            }
+            // basis='direct': nguồn ghi hành trực tiếp — chỉ kiểm từ vựng
+            // element ở trên, không ép khớp hệ vị hay hệ tính nào.
             if (! in_array($t['confidence'] ?? null, $confidences, true)) {
                 $this->errors[] = "{$row}: confidence phải là high/medium/low";
             }

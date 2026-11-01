@@ -64,6 +64,15 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "nhiet",
+      "flavor": "tan",
+      "element": "kim",
+      "source_ref": "Dược điển Trung Quốc (中国药典）, chuyên khảo Hồ tiêu 胡椒 — quả gần chín/chín khô của Piper nigrum; thuộc Danh mục chất vừa là thực phẩm vừa là dược liệu (药食同源, Ủy ban Y tế Quốc gia TQ, 106 chất). Kiểm chứng bản tái bản chuyên khảo: https://tcmfans.club/popherbs/b/blackpepper.html (Property and flavor: heat in nature, tastes pungent)",
+      "confidence": "high"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

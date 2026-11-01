@@ -52,6 +52,15 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "luong",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "Dược điển Trung Quốc (中国药典）, chuyên khảo La hán quả 罗汉果 — quả khô của Siraitia grosvenorii; thuộc Danh mục chất vừa là thực phẩm vừa là dược liệu (药食同源, Ủy ban Y tế Quốc gia TQ, 106 chất). Kiểm chứng bản tái bản chuyên khảo: https://www.greenspringnatural.com/study-on-medicine-plant-luo-han-guo.html (cool in nature, sweet in taste)",
+      "confidence": "high"
+    }
+  ],
   "source": "curated",
   "confidence": "low",
   "needs_review": true,

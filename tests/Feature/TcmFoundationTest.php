@@ -97,8 +97,9 @@ it('TCM-002: tinh nature_score theo trong so khoi luong cong he so che bien (tin
         ->and($summary->nature_score)->toBe(-1.75)
         // Coverage: 400/500 = 80%.
         ->and($summary->coverage_pct)->toBe(80.0)
-        // Mọi nhãn đều high + phủ ≥60 + không mâu thuẫn ⇒ high.
-        ->and($summary->confidence)->toBe('high')
+        // Mọi nhãn đều high + phủ ≥60 + không mâu thuẫn — nhưng trần cấp
+        // món là medium (TCM-001a: hệ số chế biến là quy ước dự án).
+        ->and($summary->confidence)->toBe('medium')
         ->and($summary->has_conflicts)->toBeFalse()
         // Phiếu hành: Kim 100g < Thuỷ 300g ⇒ dominant Thuỷ.
         ->and($summary->dominant_element)->toBe('thuy');
@@ -168,6 +169,42 @@ it('TCM-002: coverage 30–60 — hien thi mot phan, confidence chan low', funct
         ->and($block['confidence'])->toBe('low')
         ->and($block['nature'])->toBe('on')
         ->and($block['dominant_element'])->toBe('tho'); // cam → Thổ
+});
+
+it('TCM-001a: dominant_element chi nhan phieu tu dong basis flavor; dong nature/direct van tinh diem tinh', function () {
+    $a = tcmIngredient('tcm-basis-a');
+    $b = tcmIngredient('tcm-basis-b');
+    $c = tcmIngredient('tcm-basis-c');
+    tcmTrait($a, 'on', ['flavor' => 'cam']); // basis flavor (mặc định) → Thổ, 100g
+    // basis direct ghi hành Hoả trực tiếp — 300g NHƯNG không được bỏ phiếu.
+    tcmTrait($b, 'binh', ['flavor' => 'cam', 'element' => 'hoa', 'element_basis' => 'direct']);
+    // basis nature: hàn → Thuỷ theo tính — 200g NHƯNG không được bỏ phiếu.
+    tcmTrait($c, 'han', ['element' => 'thuy', 'element_basis' => 'nature']);
+
+    $dish = tcmDish(['cooking_method' => null]);
+    tcmLine($dish, $a, 100);
+    tcmLine($dish, $b, 300);
+    tcmLine($dish, $c, 200);
+
+    $summary = app(TcmAggregator::class)->summarize($dish);
+
+    // Điểm tính vẫn gồm cả 3 dòng: (100×1 + 300×0 + 200×−2)/600 = −0,5.
+    expect($summary->nature_score)->toBe(-0.5)
+        ->and($summary->coverage_pct)->toBe(100.0)
+        // Chỉ phiếu flavor (Thổ 100g) được tính — Hoả/Thuỷ của hai dòng
+        // basis khác bị loại khỏi cuộc bỏ phiếu dù khối lượng lớn hơn.
+        ->and($summary->dominant_element)->toBe('tho')
+        // Nhãn nguyên liệu vẫn được giữ 'high'; trần medium chỉ ở cấp món.
+        ->and($summary->confidence)->toBe('medium')
+        ->and(IngredientTcmTrait::where('ingredient_id', $a->id)->first()->confidence)->toBe('high');
+
+    // Hiển thị tầng nguyên liệu: element hiệu lực theo đúng basis của dòng.
+    $rowB = TcmDisplay::traitRow(IngredientTcmTrait::where('ingredient_id', $b->id)->first());
+    $rowC = TcmDisplay::traitRow(IngredientTcmTrait::where('ingredient_id', $c->id)->first());
+    expect($rowB['element'])->toBe('hoa')
+        ->and($rowB['element_basis'])->toBe('direct')
+        ->and($rowC['element'])->toBe('thuy')
+        ->and($rowC['element_basis'])->toBe('nature');
 });
 
 it('TCM-002: mon khong co nhan nao thi khong co tong hop; recompute idempotent', function () {
@@ -291,6 +328,123 @@ it('V20: bao do khi file nguyen lieu co nhan thieu source_ref (tang file)', func
         $this->artisan('lacdoi:validate-data')->assertExitCode(1);
     } finally {
         @unlink($path);
+    }
+});
+
+it('TCM-001a: V20 chap nhan dong basis nature/direct nhat quan voi he da khai', function () {
+    $path = base_path('data/ingredients/z-tcm000-fixture.json');
+    $tags = \App\Taxonomy\TaggingRules::tagsFor('z-tcm000-fixture', 'khac');
+    file_put_contents($path, json_encode([
+        'slug' => 'z-tcm000-fixture',
+        'name_vi' => 'Fixture TCM-001a (xoá sau test)',
+        'name_en' => null,
+        'category' => 'khac',
+        'reference_food' => ['mapping_confidence' => 'high', 'alternatives' => []],
+        'secondary_sources' => [],
+        'is_ready_to_eat' => false,
+        'units' => [],
+        'tcm_traits' => [
+            // Theo tính: ôn → Mộc (trình bày §3) — khớp.
+            ['nature' => 'on', 'flavor' => null, 'element' => 'moc', 'element_basis' => 'nature', 'source_ref' => 'Fixture basis nature', 'confidence' => 'medium'],
+            // Ghi trực tiếp: vị cam thường suy Thổ, nhưng nguồn ghi Hoả —
+            // basis direct thì không ép khớp hệ vị.
+            ['nature' => 'binh', 'flavor' => 'cam', 'element' => 'hoa', 'element_basis' => 'direct', 'source_ref' => 'Fixture basis direct', 'confidence' => 'low'],
+        ],
+        'source' => 'curated',
+        'confidence' => 'low',
+        'needs_review' => true,
+        'tags' => $tags,
+    ], JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
+
+    try {
+        $this->artisan('lacdoi:validate-data')->assertExitCode(0);
+    } finally {
+        @unlink($path);
+    }
+});
+
+it('TCM-001a: V20 bao do khi element lech he basis da khai hoac basis sai tu vung', function () {
+    $path = base_path('data/ingredients/z-tcm000-fixture.json');
+    $tags = \App\Taxonomy\TaggingRules::tagsFor('z-tcm000-fixture', 'khac');
+    $write = function (array $traits) use ($path, $tags) {
+        file_put_contents($path, json_encode([
+            'slug' => 'z-tcm000-fixture',
+            'name_vi' => 'Fixture TCM-001a (xoá sau test)',
+            'name_en' => null,
+            'category' => 'khac',
+            'reference_food' => ['mapping_confidence' => 'high', 'alternatives' => []],
+            'secondary_sources' => [],
+            'is_ready_to_eat' => false,
+            'units' => [],
+            'tcm_traits' => $traits,
+            'source' => 'curated',
+            'confidence' => 'low',
+            'needs_review' => true,
+            'tags' => $tags,
+        ], JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
+    };
+
+    try {
+        // basis nature nhưng element không theo ánh xạ tính (ôn → Mộc, ghi Hoả).
+        $write([
+            ['nature' => 'on', 'flavor' => null, 'element' => 'hoa', 'element_basis' => 'nature', 'source_ref' => 'Fixture lệch tính', 'confidence' => 'low'],
+        ]);
+        $this->artisan('lacdoi:validate-data')->assertExitCode(1);
+
+        // element_basis ngoài từ vựng.
+        $write([
+            ['nature' => 'on', 'flavor' => 'tan', 'element' => 'kim', 'element_basis' => 'sai-basis', 'source_ref' => 'Fixture sai basis', 'confidence' => 'low'],
+        ]);
+        $this->artisan('lacdoi:validate-data')->assertExitCode(1);
+    } finally {
+        @unlink($path);
+    }
+});
+
+it('TCM-001a: seed -> export giu element_basis khac mac dinh, dong mac dinh khong ghi thua', function () {
+    $this->seed(RegionSeeder::class);
+    $this->seed(IngredientSeeder::class);
+
+    $host = Ingredient::orderBy('slug')->firstOrFail();
+    $path = base_path("data/ingredients/{$host->slug}.json");
+    $originalBytes = (string) file_get_contents($path);
+
+    IngredientTcmTrait::create([
+        'ingredient_id' => $host->id,
+        'nature' => 'on',
+        'flavor' => null,
+        'element' => 'moc',
+        'element_basis' => 'nature',
+        'source_ref' => 'Fixture basis roundtrip TCM-001a',
+        'confidence' => 'medium',
+    ]);
+    IngredientTcmTrait::create([
+        'ingredient_id' => $host->id,
+        'nature' => 'binh',
+        'flavor' => 'cam',
+        'element' => 'tho',
+        'element_basis' => 'flavor',
+        'source_ref' => 'Fixture basis mac dinh TCM-001a',
+        'confidence' => 'low',
+    ]);
+
+    try {
+        $this->artisan('lacdoi:export-data')->assertExitCode(0);
+        $exported = json_decode((string) file_get_contents($path), true);
+        $byRef = collect($exported['tcm_traits'])->keyBy('source_ref');
+
+        expect($byRef['Fixture basis roundtrip TCM-001a']['element_basis'])->toBe('nature')
+            ->and($byRef)->toHaveKey('Fixture basis mac dinh TCM-001a')
+            ->and($byRef['Fixture basis mac dinh TCM-001a'])->not->toHaveKey('element_basis');
+
+        // Nhập lại: basis phải dựng lại đúng ở DB.
+        IngredientTcmTrait::where('ingredient_id', $host->id)->delete();
+        $this->seed(IngredientSeeder::class);
+        $fresh = Ingredient::where('slug', $host->slug)->firstOrFail();
+        expect($fresh->tcmTraits->firstWhere('source_ref', 'Fixture basis roundtrip TCM-001a')->element_basis)->toBe('nature')
+            ->and($fresh->tcmTraits->firstWhere('source_ref', 'Fixture basis mac dinh TCM-001a')->element_basis)->toBe('flavor');
+    } finally {
+        file_put_contents($path, $originalBytes);
     }
 });
 

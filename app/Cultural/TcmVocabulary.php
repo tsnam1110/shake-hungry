@@ -65,6 +65,30 @@ final class TcmVocabulary
     ];
 
     /**
+     * Ánh xạ hành theo TÍNH — cách trình bày trong văn hoá Việt
+     * (NGU-HANH-AM-DUONG §3, theo Trần Ngọc Thêm): năm mức âm dương ánh xạ
+     * thẳng vào ngũ hành. Đây là một hệ ánh xạ KHÁC với ánh xạ theo vị;
+     * dòng nhãn phải khai `element_basis` để biết element của nó thuộc hệ
+     * nào (TCM-001a).
+     */
+    public const ELEMENT_BY_NATURE = [
+        'han' => 'thuy',
+        'luong' => 'kim',
+        'binh' => 'tho',
+        'on' => 'moc',
+        'nhiet' => 'hoa',
+    ];
+
+    /**
+     * Căn cứ của `element` trong một dòng nhãn (TCM-001a):
+     *  - 'flavor': suy từ vị (mặc định) — hệ duy nhất tham gia bỏ phiếu
+     *    dominant_element khi tổng hợp món.
+     *  - 'nature': nguồn trình bày hành theo tính.
+     *  - 'direct': nguồn ghi hành trực tiếp, không qua vị/tính.
+     */
+    public const ELEMENT_BASES = ['flavor', 'nature', 'direct'];
+
+    /**
      * Hệ số điều chỉnh theo cách chế biến — QUY ƯỚC CỦA DỰ ÁN.
      * Nhóm gốc theo tài liệu thiết kế: chiên/nướng/kho +0,5 · xào +0,25 ·
      * luộc/hấp −0,25 · sống −0,5. Ánh xạ các mã còn lại của dự án:
@@ -101,6 +125,15 @@ final class TcmVocabulary
         }
 
         return self::ELEMENT_BY_FLAVOR[$flavor] ?? null;
+    }
+
+    public static function elementForNature(?string $nature): ?string
+    {
+        if ($nature === null) {
+            return null;
+        }
+
+        return self::ELEMENT_BY_NATURE[$nature] ?? null;
     }
 
     public static function cookingAdjustment(?string $method): float

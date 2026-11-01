@@ -52,6 +52,15 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "binh",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "Dược điển Trung Quốc (中国药典）, chuyên khảo Liên tử 莲子 — hạt chín khô của Nelumbo nucifera; thuộc Danh mục chất vừa là thực phẩm vừa là dược liệu (药食同源, Ủy ban Y tế Quốc gia TQ, 106 chất). Kiểm chứng bản tái bản chuyên khảo: https://sys01.lib.hkbu.edu.hk/cmed/mmid/detail.php?sort=name_cht&fac_prod_eng=Zhejiang&fac_latin=N&lang=eng&page=1&fac_tas_eng=Neutral&pid=B00245 (Properties: sweet, astringent, neutral; CSDL ảnh dược liệu, Đại học Baptist Hồng Kông). Nguồn ghi vị cam + sáp (chát, 涩); vị sáp nằm ngoài từ vựng ngũ vị của dự án nên chỉ ghi dòng vị cam.",
+      "confidence": "high"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

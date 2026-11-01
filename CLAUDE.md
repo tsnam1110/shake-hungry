@@ -237,6 +237,24 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > **Chưa gieo nhãn dữ liệu thật nào** — TCM-001a bắt đầu gieo từ thang nguồn đã chốt.
 > Kiểm chứng: validate 0 🔴 trên DB kiểm chứng riêng, Pest 149/149 (15 test mới).
 
+> ## ⚠️ Đính chính lần 17, 2026-11-01 — TCM-001a: đã gieo nhãn tầng 1–2 + hai điều chỉnh nền
+>
+> **Hai điều chỉnh nền** (xử lý hai điểm mở của TCM-000 theo uỷ quyền): (1) dòng nhãn
+> có thêm **`element_basis`** (`flavor` mặc định | `nature` | `direct`, migration
+> 100011) — `dominant_element` của món chỉ bỏ phiếu từ dòng basis=flavor; (2) **trần
+> cứng `confidence` tổng hợp món = `medium`** trong `TcmAggregator` (hệ số chế biến
+> là quy ước dự án không nguồn). **Đã gieo 25 nguyên liệu / 35 dòng nhãn**: 31 dòng
+> tầng 1 (Dược điển TQ + danh mục 药食同源 106 chất) và 4 dòng tầng 2 CMRO 《中藥趣談》
+> (đều mang cờ `usage_restricted` theo chính sách §5b của LICENSE-COMPLIANCE, vì ấn
+> phẩm ghi © CMRO cấm sao chép khi chưa có văn bản đồng ý). Kỷ luật đợt: đối chiếu
+> định danh từng mục (loài/bộ phận/dạng tươi–khô), KHÔNG gieo khi lệch loài hoặc lệch
+> bộ phận — danh sách chờ tầng 3+ (đậu xanh, riềng, khoai mỡ, các mục chỉ có chuyên
+> khảo cho hạt/vỏ…) nằm ở [TCM-001](docs/05-tasks/tasks/TCM-001.md). Kiểm chứng:
+> **rà census mở lại 100% source_ref** (17 URL; 1 lệch dịch máy + 1 biến thể thảo
+> dược đã ghi minh bạch trong source_ref, 1 URL chết đã thay), validate **0 🔴**,
+> seed + recompute trên DB kiểm chứng riêng: **7/654 món đạt coverage ≥30%, 4 món
+> ≥60%** (nhóm chè hạt sen/long nhãn), Pest **153/153**.
+
 **Trạng thái thực tế, kiểm ngày 2026-10-31 (đã chạy lại toàn bộ lệnh kiểm chứng):**
 
 | Hạng mục | Thực tế | Kiểm bằng |

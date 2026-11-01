@@ -91,7 +91,15 @@ final class TcmDisplay
     /** @return array<string, mixed> */
     public static function traitRow(IngredientTcmTrait $trait): array
     {
-        $element = $trait->element ?? TcmVocabulary::elementForFlavor($trait->flavor);
+        // Element hiệu lực theo căn cứ của dòng (TCM-001a): ghi tường minh
+        // thì dùng nguyên văn; trống thì suy theo đúng hệ basis đã khai —
+        // basis='direct' mà trống thì để trống, không suy thay nguồn.
+        $basis = $trait->element_basis ?? 'flavor';
+        $element = $trait->element ?? match ($basis) {
+            'flavor' => TcmVocabulary::elementForFlavor($trait->flavor),
+            'nature' => TcmVocabulary::elementForNature($trait->nature),
+            default => null,
+        };
 
         return [
             'nature' => $trait->nature,
@@ -100,6 +108,7 @@ final class TcmDisplay
             'flavor_label' => $trait->flavor !== null ? (TcmVocabulary::FLAVOR_LABELS[$trait->flavor] ?? $trait->flavor) : null,
             'element' => $element,
             'element_label' => $element !== null ? (TcmVocabulary::ELEMENT_LABELS[$element] ?? $element) : null,
+            'element_basis' => $basis,
             'source_ref' => $trait->source_ref,
             'confidence' => $trait->confidence,
             'usage_restricted' => $trait->usage_restricted,

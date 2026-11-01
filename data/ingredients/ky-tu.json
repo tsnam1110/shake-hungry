@@ -39,6 +39,15 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "binh",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "Dược điển Trung Quốc (中国药典）, chuyên khảo Câu kỷ tử 枸杞子 — quả chín khô của Lycium barbarum; thuộc Danh mục chất vừa là thực phẩm vừa là dược liệu (药食同源, Ủy ban Y tế Quốc gia TQ, 106 chất). Kiểm chứng bản tái bản chuyên khảo: https://acupuncturetoday.com/herbs-and-botanicals/lycium-fruit-gou-qi-zi (sweet and neutral properties)",
+      "confidence": "high"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

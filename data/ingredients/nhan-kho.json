@@ -39,6 +39,15 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "on",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "Dược điển Trung Quốc (中国药典）, chuyên khảo Long nhãn nhục 龙眼肉 — cùi (áo hạt) khô của Dimocarpus longan; thuộc Danh mục chất vừa là thực phẩm vừa là dược liệu (药食同源, Ủy ban Y tế Quốc gia TQ, 106 chất). Kiểm chứng bản tái bản chuyên khảo: https://www.chinawiki.net/thread/23/2741.html (tính vị theo Bản thảo hội ngôn: sweet, warm)",
+      "confidence": "high"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

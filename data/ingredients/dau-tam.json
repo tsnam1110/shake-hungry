@@ -52,6 +52,22 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "han",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "Dược điển Trung Quốc (中国药典）, chuyên khảo Tang thầm 桑椹 — chùm quả chín của Morus alba; thuộc Danh mục chất vừa là thực phẩm vừa là dược liệu (药食同源, Ủy ban Y tế Quốc gia TQ, 106 chất). Kiểm chứng bản tái bản chuyên khảo: https://sys01.lib.hkbu.edu.hk/cmed/mpid/detail.php?herb_id=D00547&fac_family_latin=Moraceae&fac_parent_chi=%E6%A1%91%E5%B1%AC&lang=eng (fruit cluster: sour, sweet, cold; CSDL cây thuốc, Đại học Baptist Hồng Kông). Chuyên khảo dùng quả phơi/sấy khô; nguyên liệu kho là quả tươi — cùng bộ phận, hạ độ tin cậy.",
+      "confidence": "medium"
+    },
+    {
+      "nature": "han",
+      "flavor": "toan",
+      "element": "moc",
+      "source_ref": "Dược điển Trung Quốc (中国药典）, chuyên khảo Tang thầm 桑椹 — chùm quả chín của Morus alba; thuộc Danh mục chất vừa là thực phẩm vừa là dược liệu (药食同源, Ủy ban Y tế Quốc gia TQ, 106 chất). Kiểm chứng bản tái bản chuyên khảo: https://sys01.lib.hkbu.edu.hk/cmed/mpid/detail.php?herb_id=D00547&fac_family_latin=Moraceae&fac_parent_chi=%E6%A1%91%E5%B1%AC&lang=eng (fruit cluster: sour, sweet, cold; CSDL cây thuốc, Đại học Baptist Hồng Kông). Chuyên khảo dùng quả phơi/sấy khô; nguyên liệu kho là quả tươi — cùng bộ phận, hạ độ tin cậy.",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "medium",
   "needs_review": true,

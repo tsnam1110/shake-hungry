@@ -39,6 +39,24 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "on",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "CMRO — Phòng Quản lý Trung y dược (Chinese Medicine Regulatory Office), Sở Y tế Hồng Kông, ấn phẩm giáo dục 《中藥趣談》 tập 2: “大枣…药性甘、温 (đại táo: vị cam, tính ôn)”. Kiểm chứng: https://www.cmro.gov.hk/html/gb/useful_information/public_health/publication/Interesting_Chinese_Herbs_2.html",
+      "confidence": "medium",
+      "usage_restricted": true,
+      "usage_note": "không được dùng — © CMRO (Sở Y tế Hồng Kông), ấn phẩm ghi cấm sao chép khi chưa có đồng ý bằng văn bản; chỉ lưu trữ nội bộ theo chính sách nguồn hạn chế (kế hoạch Mức 3 §2), không hiển thị công khai cho tới khi chốt chính sách trước go-live."
+    },
+    {
+      "nature": "on",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "Dược điển Trung Quốc (中国药典）, chuyên khảo Đại táo 大枣 — quả chín khô của Ziziphus jujuba; thuộc Danh mục chất vừa là thực phẩm vừa là dược liệu (药食同源, Ủy ban Y tế Quốc gia TQ, 106 chất). Kiểm chứng bản tái bản chuyên khảo: https://www.zhongyifangji.com/en/materials/detail/id/81 (Properties: sweet; warm). Nguyên liệu kho là quả TƯƠI: cùng loài, cùng bộ phận với chuyên khảo (quả khô) — áp dụng kèm hạ độ tin cậy.",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

@@ -39,6 +39,15 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "han",
+      "flavor": "kho",
+      "element": "hoa",
+      "source_ref": "Dược điển Trung Quốc (中国药典）, chuyên khảo Chi tử 栀子 — quả chín khô của Gardenia jasminoides; thuộc Danh mục chất vừa là thực phẩm vừa là dược liệu (药食同源, Ủy ban Y tế Quốc gia TQ, 106 chất). Kiểm chứng bản tái bản chuyên khảo: https://www.laitimes.com/en/article/ceda_ch8v.html (Thần nông bản thảo: bitter taste, cold)",
+      "confidence": "high"
+    }
+  ],
   "source": "curated",
   "confidence": "unknown",
   "needs_review": true,

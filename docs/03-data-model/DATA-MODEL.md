@@ -242,6 +242,7 @@ Tính vị theo y học cổ truyền. **Gán ở tầng nguyên liệu, không 
 | `nature` | varchar(8) | `han`, `luong`, `binh`, `on`, `nhiet` |
 | `flavor` | varchar(8) | `toan`, `kho`, `cam`, `tan`, `ham`, `dam` |
 | `element` | varchar(8) | `moc`, `hoa`, `tho`, `kim`, `thuy` |
+| `element_basis` | varchar(8) | TCM-001a: căn cứ của `element` — `flavor` (mặc định, suy từ vị) \| `nature` (suy từ tính) \| `direct` (nguồn ghi trực tiếp). Chỉ dòng `flavor` bỏ phiếu `dominant_element` của món |
 | `source_ref` | text | **bắt buộc** — tên tài liệu/URL. Không nguồn thì không được nhập |
 | `confidence` | varchar(8) | |
 | `usage_restricted` | boolean | TCM-000: nguồn uy tín nhưng điều khoản hạn chế sử dụng/tái phân phối — dữ liệu vẫn lưu theo chính sách lưu trữ nội bộ, kèm ghi chú |
@@ -253,7 +254,10 @@ với phân loại này, và mâu thuẫn phải được hiển thị chứ kh�
 Trong file dữ liệu, nhãn nằm ở khoá `tcm_traits` của file nguyên liệu (xem
 [DATA-REPOSITORY §3](../04-data-sources/DATA-REPOSITORY.md)). `element` để null trong file
 thì được suy từ `flavor` theo ánh xạ cổ điển khi tổng hợp/hiển thị; ghi tường minh mà lệch
-ánh xạ đó thì validator V20 báo 🔴.
+ánh xạ đó thì validator V20 báo 🔴. Ngoại lệ có khai báo (TCM-001a): dòng mang
+`element_basis = nature` thì `element` phải khớp ánh xạ theo **tính**; dòng
+`element_basis = direct` thì `element` lấy đúng như nguồn ghi, V20 chỉ kiểm từ vựng.
+Trong file, khoá `element_basis` chỉ xuất hiện khi khác mặc định `flavor`.
 
 ### `ingredient_components` (TCM-000)
 

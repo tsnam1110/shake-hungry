@@ -59,6 +59,22 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "binh",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "Dược điển Trung Quốc (中国药典）, chuyên khảo Xích tiểu đậu 赤小豆 — hạt chín khô của Vigna angularis (một trong hai loài nguồn của chuyên khảo); thuộc Danh mục chất vừa là thực phẩm vừa là dược liệu (药食同源, Ủy ban Y tế Quốc gia TQ, 106 chất). Kiểm chứng bản tái bản chuyên khảo: https://tcmfans.club/herbalism/diuretics/semenphaseoli.html. LƯU Ý biến thể: một số bản thảo dược ghi tính “vi lương” thay cho “bình”; dòng này lấy theo Dược điển （甘、酸，平） nên hạ độ tin cậy.",
+      "confidence": "medium"
+    },
+    {
+      "nature": "binh",
+      "flavor": "toan",
+      "element": "moc",
+      "source_ref": "Dược điển Trung Quốc (中国药典）, chuyên khảo Xích tiểu đậu 赤小豆 — hạt chín khô của Vigna angularis (một trong hai loài nguồn của chuyên khảo); thuộc Danh mục chất vừa là thực phẩm vừa là dược liệu (药食同源, Ủy ban Y tế Quốc gia TQ, 106 chất). Kiểm chứng bản tái bản chuyên khảo: https://tcmfans.club/herbalism/diuretics/semenphaseoli.html. LƯU Ý biến thể: một số bản thảo dược ghi tính “vi lương” thay cho “bình”; dòng này lấy theo Dược điển （甘、酸，平） nên hạ độ tin cậy.",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

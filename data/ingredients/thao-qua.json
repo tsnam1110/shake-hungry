@@ -46,6 +46,15 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "on",
+      "flavor": "tan",
+      "element": "kim",
+      "source_ref": "Dược điển Trung Quốc (中国药典）, chuyên khảo Thảo quả 草果 — quả chín khô của Amomum tsao-ko; thuộc Danh mục chất vừa là thực phẩm vừa là dược liệu (药食同源, Ủy ban Y tế Quốc gia TQ, 106 chất). Kiểm chứng bản tái bản chuyên khảo: https://zhongyifangji.com/en/materials/detail/id/40 (Properties: acrid; warm)",
+      "confidence": "high"
+    }
+  ],
   "source": "curated",
   "confidence": "unknown",
   "needs_review": true,

@@ -65,6 +65,15 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "binh",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "Dược điển Trung Quốc (中国药典）, chuyên khảo Hắc chi ma 黑芝麻 — hạt chín của Sesamum indicum; thuộc Danh mục chất vừa là thực phẩm vừa là dược liệu (药食同源, Ủy ban Y tế Quốc gia TQ, 106 chất). Kiểm chứng bản tái bản chuyên khảo: https://tcmfoodtherapy.net/nuts/black-sesame/ (Thermal Nature: neutral; Flavor: sweet). File kho KHÔNG ghi màu hạt trong khi chuyên khảo chỉ áp dụng cho hạt ĐEN — mơ hồ định danh dạng, hạ độ tin cậy xuống low.",
+      "confidence": "low"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

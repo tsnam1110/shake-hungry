@@ -39,6 +39,24 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "luong",
+      "flavor": "tan",
+      "element": "kim",
+      "source_ref": "CMRO — Phòng Quản lý Trung y dược (Chinese Medicine Regulatory Office), Sở Y tế Hồng Kông, ấn phẩm giáo dục 《中藥趣談》 tập 1: “鱼腥草味辛，性微寒 (diếp cá: vị cay, tính hơi hàn)”. Kiểm chứng: https://www.cmro.gov.hk/html/gb/useful_information/public_health/publication/Interesting_Chinese_Herbs.html",
+      "confidence": "medium",
+      "usage_restricted": true,
+      "usage_note": "không được dùng — © CMRO (Sở Y tế Hồng Kông), ấn phẩm ghi cấm sao chép khi chưa có đồng ý bằng văn bản; chỉ lưu trữ nội bộ theo chính sách nguồn hạn chế (kế hoạch Mức 3 §2), không hiển thị công khai cho tới khi chốt chính sách trước go-live."
+    },
+    {
+      "nature": "luong",
+      "flavor": "tan",
+      "element": "kim",
+      "source_ref": "Dược điển Trung Quốc (中国药典）, chuyên khảo Ngư tinh thảo 鱼腥草 — phần trên mặt đất tươi hoặc khô của Houttuynia cordata; thuộc Danh mục chất vừa là thực phẩm vừa là dược liệu (药食同源, Ủy ban Y tế Quốc gia TQ, 106 chất). Kiểm chứng bản tái bản chuyên khảo: https://www.zhongyifangji.com/en/materials/detail/id/394. LƯU Ý: bản tiếng Anh của trang tái bản ghi “bitter, slightly cold” — lệch với văn bản gốc Dược điển （辛、微寒） và với CMRO tập 1 （味辛，性微寒）; nhận định là lỗi dịch máy của trang tái bản nên lấy theo văn bản gốc + CMRO, hạ độ tin cậy.",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "low",
   "needs_review": true,

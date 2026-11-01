@@ -39,6 +39,15 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "on",
+      "flavor": "tan",
+      "element": "kim",
+      "source_ref": "Dược điển Trung Quốc (中国药典）, chuyên khảo Hương nhu 香薷 — phần trên mặt đất khô của Elsholtzia ciliata; thuộc Danh mục chất vừa là thực phẩm vừa là dược liệu (药食同源, Ủy ban Y tế Quốc gia TQ, 106 chất). Kiểm chứng bản tái bản chuyên khảo: https://www.laitimes.com/en/article/cijl_clhq.html (the smell of herbs is spicy, slightly warm). Nguyên liệu kho dùng TƯƠI làm rau thơm; chuyên khảo dùng dạng khô — cùng loài, cùng bộ phận trên mặt đất, hạ độ tin cậy.",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "unknown",
   "needs_review": true,

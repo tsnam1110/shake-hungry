@@ -39,6 +39,22 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "luong",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "Dược điển Trung Quốc (中国药典）, chuyên khảo Ý dĩ nhân 薏苡仁 — hạt chín khô của Coix lacryma-jobi var. ma-yuen; thuộc Danh mục chất vừa là thực phẩm vừa là dược liệu (药食同源, Ủy ban Y tế Quốc gia TQ, 106 chất). Kiểm chứng bản tái bản chuyên khảo: https://www.zhongyifangji.com/en/materials/detail/id/386 (Properties: sweet, tasteless, slightly cold). File kho ghi ở cấp loài Coix lacryma-jobi; thứ ma-yuen là dạng ý dĩ ăn được phổ biến, khớp chuyên khảo.",
+      "confidence": "high"
+    },
+    {
+      "nature": "luong",
+      "flavor": "dam",
+      "element": null,
+      "source_ref": "Dược điển Trung Quốc (中国药典）, chuyên khảo Ý dĩ nhân 薏苡仁 — hạt chín khô của Coix lacryma-jobi var. ma-yuen; thuộc Danh mục chất vừa là thực phẩm vừa là dược liệu (药食同源, Ủy ban Y tế Quốc gia TQ, 106 chất). Kiểm chứng bản tái bản chuyên khảo: https://www.zhongyifangji.com/en/materials/detail/id/386 (Properties: sweet, tasteless, slightly cold). File kho ghi ở cấp loài Coix lacryma-jobi; thứ ma-yuen là dạng ý dĩ ăn được phổ biến, khớp chuyên khảo.",
+      "confidence": "high"
+    }
+  ],
   "source": "curated",
   "confidence": "low",
   "needs_review": true,
