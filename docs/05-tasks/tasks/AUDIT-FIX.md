@@ -69,3 +69,34 @@ Phương pháp: census vòng mới bằng curl tuần tự **toàn bộ 69 URL n
 - Trong lúc thực thi, VM bị thay mới: MySQL mất toàn bộ database (kể cả DB dev) và auth root bị reset — đã áp cách khôi phục chuẩn của dự án (root native password không mật khẩu) chỉ để chạy kiểm chứng. Theo đúng nhiệm vụ, **chỉ tạo/seed các DB kiểm chứng riêng** (`shake_hungry_verify`, `shake_hungry_verify_old`, `shake_hungry_test` cho Pest); DB dev **không** được seed ở đợt này — phiên chính cần dựng lại dev như thường lệ khi tiếp tục.
 - Không chạm 7 file món của phiên song song còn dở trong working tree (media); commit chỉ pathspec của đợt.
 - Các PX còn lại (PX-18…PX-27, PX-29…PX-33, PX-35): giữ nguyên trạng — PX-25/PX-26 vẫn chờ quyết của chủ dự án; không thay đổi nào ở các nhóm trên tác động tới chúng.
+
+## 7. Đợt thử lại sau AUDIT-FIX (2026-11-01, kèm nhiệm vụ QA-002 lần 5 Phần B)
+
+Theo đề xuất đã duyệt: thử lại toàn bộ URL còn "chưa kết luận" sau pha này bằng browser.open, nhịp
+chậm tuần tự. Phạm vi: **30 cặp URL–món (29 URL duy nhất)** trên 25 món — gồm canh-bong-tha (3),
+canh-rau-lang-tom (2), banh-xu-xe (2) và các URL rải rác còn lại từ PX-34/nhóm A/vòng rà độc lập.
+
+- **7 cặp KẾT LUẬN SỐNG** (đọc được toàn văn, đúng món, bộ số khớp ghi chú nguồn đã lưu):
+  Digifood → `banh-xu-xe` (món lên 2 xác nhận sống + 1 chưa kết luận); nauankhongkho → `mi-xao-gion`
+  (khôi phục — món đủ 3 xác nhận sống); ĐMX bún riêu tôm → `bun-rieu-tom` (3/3); ĐMX sườn nấu đậu
+  trắng (URL dùng chung) → `canh-suon-nau-dau` (3/3) + `canh-ba-roi-nau-dau` (3/3); ĐMX cao lầu →
+  `cao-lau` (3/3); PDF Duy Tân "Bầu xào tôm chấy" → `bau-xao-tep` (xác nhận ở cả vòng rà lại).
+- **0 URL xác nhận chết** → không món nào phải thay nguồn/hạ mức ở đợt này.
+- **23 cặp vẫn CHƯA KẾT LUẬN** (lỗi fetch phía công cụ, không mã HTTP — cùng lớp các vòng trước):
+  toàn bộ nauchuananngon (domain không phân giải được qua dịch vụ fetch), bibihealthybread,
+  dayhocnghe, congthucmonngon (timeout), PDF goi-vit, bachhoaxanh ×2, và 9 URL ĐMX khác. ĐMX cho
+  kết quả không ổn định theo phiên (4 URL kết luận sống trong cùng đợt, các URL còn lại lỗi mạng) —
+  không suy ra chết từ lỗi fetch.
+- **`canh-rau-lang-tom`: KHÔNG nâng lại được.** Cả 2 URL cũ thử lần 4 vẫn lỗi fetch; nguồn xác nhận
+  sống giữ = 2 < 3 → giữ Mức 1, đường nâng trong hồ sơ món vẫn chờ một kết luận sống hoặc một nguồn
+  đầy đủ mới.
+- **`canh-bong-tha` vẫn 0/3 đọc được** (bachhoaxanh HTTP 200 thân rỗng; 2 URL còn lại lỗi mạng) —
+  hồ sơ yếu nhất kho, giữ trạng thái như PX-34 đã xử lý (không URL nào xác nhận chết).
+- Kết quả từng món đã ghi vào `import_note` của 25 file món (chỉ nối thêm đoạn truy vết, không đổi
+  định lượng/nguồn/mức nào khác).
+- **`dau-bap-xao-toi` (việc A4.1 còn treo): HOÃN tiếp** — tại thời điểm đợt này chạy, file vẫn mang
+  thay đổi chưa commit của phiên song song (cùng 7 file media đang dở từ các pha trước) → theo kỷ
+  luật không chạm file phiên khác đang dở, ghi nhận và bỏ qua; áp A4.1 khi cây làm việc sạch.
+
+Kiểm chứng đợt: validate trên DB kiểm chứng riêng 0 🔴, recompute đủ, Pest xanh (chi tiết ở commit
+của đợt).
