@@ -117,12 +117,16 @@ class CatalogController extends Controller
     {
         // Nhãn cách làm có dấu để giao diện không hiển thị mã slug thô (nau, luoc…).
         $dish->setAttribute('cooking_method_label', $dish->cookingMethodLabel());
+        // TCM-000: nhãn mức phân biệt "Mức 2 (có note)" cho món nâng bù.
+        $dish->setAttribute('level_label', $dish->levelLabel());
         $dish->load([
             'names', 'region', 'mealSlots', 'nutrition', 'tags:id,slug,name',
             'dishIngredients.ingredient:id,name_vi,slug',
             'parent.names' => fn ($q) => $q->where('is_primary', true),
             // IMG-001: ảnh món + ảnh của từng nguyên liệu trong món.
             'media', 'dishIngredients.ingredient.media',
+            // TCM-000: tổng hợp tính vị (null khi dưới ngưỡng hiển thị).
+            'tcmSummary',
         ]);
         $dish->setAttribute('image', $dish->primaryImage());
         foreach ($dish->dishIngredients as $line) {
@@ -136,12 +140,20 @@ class CatalogController extends Controller
         return response()->json([
             'dish' => $dish,
             'variants' => $variants,
+            // TCM-000/TCM-003: khối "Tính vị:" — mặc định hiển thị, nhưng
+            // TcmDisplay trả null khi coverage <30% (không kết luận thay vì đoán).
+            'tcm' => \App\Cultural\TcmDisplay::forDish($dish),
             // UI-003: khối minh bạch "Con số này từ đâu ra"
             'provenance' => $dish->nutrition === null ? null : [
                 'fct_source' => $dish->nutrition->fct_source,
                 'engine_version' => $dish->nutrition->engine_version,
                 'computed_at' => $dish->nutrition->computed_at,
                 'missing_ingredients' => $dish->nutrition->missing_ingredients,
+                // UI-021: tên hiển thị của nguyên liệu chưa tra được (dữ liệu lưu
+                // bằng slug — trước đây trang hiển thị thẳng slug cho người dùng).
+                'missing_ingredient_names' => \App\Models\Ingredient::query()
+                    ->whereIn('slug', $dish->nutrition->missing_ingredients ?? [])
+                    ->pluck('name_vi')->values(),
                 // Cờ "chưa kiểm định": nguyên liệu dùng nguồn thứ cấp (hiển thị cảnh báo ở UI)
                 'unverified_ingredients' => $dish->dishIngredients
                     ->filter(fn ($di) => in_array($di->ingredient->slug, $dish->nutrition->unverified_ingredients ?? [], true))
