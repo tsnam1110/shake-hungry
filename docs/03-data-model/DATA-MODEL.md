@@ -432,6 +432,10 @@ Kết quả tổng hợp tính vị từ nguyên liệu lên món. Do máy tính
 
 Bản ghi mỗi lần người dùng ăn một quả — đối tác của `meal_logs` ở phía món ăn, dùng cho thống kê số lượng quả đã ăn: `user_id`, `fruit_id`, `eaten_at`, `source`.
 
+### `feedback_tickets` (UI-018)
+
+Ticket góp ý/phản hồi của người dùng đã đăng nhập: `user_id`, `type` (`gop-y` | `ho-tro` | `phat-trien` | `loi`), `title` (null), `content`, ngữ cảnh tuỳ chọn `dish_id` / `fruit_id` / `ingredient_id` + `page`, `status` (mặc định `da-ghi-nhan` — đã ghi nhận, chờ duyệt; sau đó `da-duyet` / `dang-xu-ly` / `da-xu-ly` / `da-dong` do quản trị đặt), `admin_note`.
+
 ### `meal_logs`
 
 | Cột | Kiểu | Ghi chú |

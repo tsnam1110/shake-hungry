@@ -157,6 +157,15 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > thứ tự mặc định, và kiểm "có số" trên JSON phải dùng `JSON_TYPE` (null trong JSON
 > không phải SQL NULL).
 
+> ## ⚠️ Đính chính lần 14, 2026-11-01 — kênh phản hồi chính thức là ticket (UI-018)
+>
+> Từ UI-018, góp ý/báo lỗi/hỗ trợ của người dùng đi qua **ticket** (`feedback_tickets`,
+> trạng thái khởi tạo `da-ghi-nhan` = đã ghi nhận, chờ duyệt; quản trị xử lý tại trang
+> admin "Góp ý · Phản hồi"). Tính năng mới liên quan đến người dùng nên cân nhắc gắn
+> nút "Gửi phản hồi" (thuộc tính `data-feedback` + ngữ cảnh sản phẩm) thay vì tạo kênh
+> liên hệ riêng. Đóng góp món (contributions) và phản hồi (feedback) là hai hàng đợi
+> khác nhau: đóng góp là dữ liệu đề xuất, phản hồi là ticket hỗ trợ/góp ý.
+
 > ## ⚠️ Đính chính lần 14, 2026-10-31 — rà soát toàn bộ (census) sau chương trình Mức 2 (AUDIT-002)
 >
 > Đợt rà soát toàn bộ đã xếp hàng từ khi chương trình Mức 2 còn chạy nay đã làm xong:
