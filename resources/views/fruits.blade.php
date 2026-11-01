@@ -129,7 +129,8 @@ async function load() {
     const month = monthSel.value;
     if (q) params.set('q', q);
     if (month && isOn('only-season')) params.set('month', month);
-    if (month && isOn('only-value')) params.set('value_month', month);
+    // Nút "hời nhất tháng này": chưa chọn tháng thì mặc định tháng hiện tại.
+    if (isOn('only-value')) params.set('value_month', month || String(now.getMonth() + 1));
     const group = document.getElementById('group').value;
     if (group) params.set('group', group);
     const origin = document.getElementById('origin').value;
@@ -143,7 +144,9 @@ async function load() {
     }
     const res = await fetch('/api/fruits?' + params, { headers: { 'Accept': 'application/json' } });
     const data = await res.json();
-    const m = month ? parseInt(month, 10) : null;
+    // Huy hiệu theo tháng cũng bám tháng hiệu lực: hời nhất bật mà chưa chọn
+    // tháng thì hiểu là tháng hiện tại.
+    const m = month ? parseInt(month, 10) : (isOn('only-value') ? now.getMonth() + 1 : null);
     document.getElementById('list').innerHTML = (data.data ?? []).map(f => `
         <a href="/hoa-qua/${f.slug}" class="ld-dcard">
             <img class="ld-dcard-img" src="${f.image?.url ?? '/images/placeholder-fruit.svg'}" alt="${esc(f.name_vi)}" loading="lazy" decoding="async">
