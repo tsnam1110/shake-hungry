@@ -394,6 +394,26 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > 30–<60% · 51 món <30% (648 món có tổng hợp); món Mức 1 đạt tiêu chí phủ **133/182**
 > (chỉ thống kê — đường nâng bù là vòng riêng). **TCM-001 ĐÓNG.** Chi tiết:
 > [TCM-001](docs/05-tasks/tasks/TCM-001.md) §TCM-001c đợt 3.
+>
+> ## ⚠️ Đính chính lần 25, 2026-11-01 — TCM-001c đợt 3 BỔ SUNG (sau báo cáo nghiên cứu phụ)
+>
+> Ba báo cáo nghiên cứu phụ về sau thời điểm chốt đợt 3; phiên gieo tự mở lại kiểm chứng
+> nguyên văn từng phát hiện mới (tiền lệ bổ sung đợt 2) và gieo thêm **+4 nguyên liệu /
+> +8 dòng thật**: `cha-la` (ôn/cam — A+ mục 無漏子）, `dau-trang` (bình/cam + bình/đạm —
+> A+ trích 《中藥大辭典》 mục 白飯豆， giải quyết khỏi nhóm lệch định danh), `so-diep`
+> (4 dòng **low** — giá trị của DẠNG KHÔ 乾貝： bình theo thân bài/HK 瑤柱 + ôn theo
+> infobox, áp sang dạng tươi), `ca-phe-den` (bình/kho **low** — infobox-only ở A+ mục
+> 咖啡）. Sửa `source_ref` của `duong-phen` (ghi nhận câu lẻ 性溫 bị bác) và
+> `rau-cau-kho` (làm rõ phạm vi định danh). Hai khẳng định âm tính của nhóm nghiên cứu
+> (A+ không có mục muối / không có trang 豬脂膏） bị bác bởi kiểm chứng trực tiếp — giữ
+> nguyên gieo đợt 3 chính. Bản đồ chờ cập nhật: (i) 57 · (ii) 84 · (iii) 10 (ra
+> `dau-trang`, vào `mam-xoi` — trang 覆盆子 tự trộn *R. idaeus*/*R. chingii*) · (iv) 29 →
+> **180 mục**; đính chính cách đếm: 207 NL không có dòng nhãn = 180 ở bản đồ + 27 xử lý
+> bằng components. **Tổng cuối THAY số của lần 24: 227/434 nguyên liệu có nhãn — 413
+> dòng (393 thật + 20 suy diễn); coverage 500 món ≥60% · 98 món 30–<60% · 50 món <30%;
+> món Mức 1 đạt tiêu chí phủ 135/182.** Toàn bộ cổng đã chạy lại sau bổ sung: validate
+> **0 🔴 / 11 🟡**, Pest **157/157**, ExportStabilityTest đạt, rà nhất quán 0 vấn đề.
+> Chi tiết: [TCM-001](docs/05-tasks/tasks/TCM-001.md) §Đợt 3 — Bổ sung.
 
 **Trạng thái thực tế, kiểm ngày 2026-10-31 (đã chạy lại toàn bộ lệnh kiểm chứng):**
 

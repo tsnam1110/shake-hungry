@@ -46,6 +46,36 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "binh",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (trích 《中華本草》) mục 乾貝 — cơ khép vỏ (cồi) sò điệp phơi khô, 【藥材基源】扇貝科 Chlamys spp. 的閉殼肌: mục 食療作用「乾貝性平，味甘、咸」; corroborate sổ tay HK (TS. Lâm Đạo Nghi) mục 瑤柱「味甘、鹹，性平」. Giá trị gốc cho DẠNG KHÔ; áp cho dạng tươi (cồi sống) của file theo tiền lệ hạt sen tươi — confidence low.",
+      "confidence": "low"
+    },
+    {
+      "nature": "binh",
+      "flavor": "ham",
+      "element": "thuy",
+      "source_ref": "A+醫學百科 (trích 《中華本草》) mục 乾貝 — cơ khép vỏ (cồi) sò điệp phơi khô, 【藥材基源】扇貝科 Chlamys spp. 的閉殼肌: mục 食療作用「乾貝性平，味甘、咸」; corroborate sổ tay HK (TS. Lâm Đạo Nghi) mục 瑤柱「味甘、鹹，性平」. Giá trị gốc cho DẠNG KHÔ; áp cho dạng tươi (cồi sống) của file theo tiền lệ hạt sen tươi — confidence low.",
+      "confidence": "low"
+    },
+    {
+      "nature": "on",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 mục 乾貝: infobox 藥性溫、藥味甘、咸 — lập trường infobox KHÁC mục 食療作用 (平) trong cùng trang; giữ cả hai theo kỷ luật mâu thuẫn giữa các vị trí nguồn. Áp từ dạng khô sang dạng tươi của file — confidence low.",
+      "confidence": "low"
+    },
+    {
+      "nature": "on",
+      "flavor": "ham",
+      "element": "thuy",
+      "source_ref": "A+醫學百科 mục 乾貝: infobox 藥性溫、藥味甘、咸 — lập trường infobox KHÁC mục 食療作用 (平) trong cùng trang; giữ cả hai theo kỷ luật mâu thuẫn giữa các vị trí nguồn. Áp từ dạng khô sang dạng tươi của file — confidence low.",
+      "confidence": "low"
+    }
+  ],
   "source": "curated",
   "confidence": "medium",
   "needs_review": true,
