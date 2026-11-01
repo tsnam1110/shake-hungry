@@ -180,6 +180,7 @@ phần thực tế và cách nấu của từng quán/từng nhà làm thay đ�
 | 2026-10-31 | **1.1.0** (không đổi) | **160 món Việt, cùng thiết kế mẫu (QA-002 lần 2 — sau Phương án A: bỏ/giảm dòng dầu chiên trong công thức)** | **77,5%** | 13,8% | **+12,6%** | ❌ **CHƯA ĐẠT** — 4/5 nhóm vẫn 100%; nhóm chiên/rán 10,0% (bias +49,0%): chênh lệch tuyệt đối nhóm chiên gần như không đổi (+143,7 → +137,0 kcal) vì phía tham chiếu nguyên văn không chứa dầu hấp thụ mà engine mô hình hoá — cặp (quy ước A + tham chiếu nguyên văn) không tương thích về định nghĩa; chờ chủ dự án chốt bước tiếp (báo cáo §7) | [2026-10-31-vn-dishes-lan-2.md](accuracy-runs/2026-10-31-vn-dishes-lan-2.md) |
 | 2026-10-31 | **1.1.0** (không đổi) | **160 món Việt, cùng mẫu (QA-002 lần 3 — tham chiếu chiên ĐỘC LẬP: cộng dầu hấp thụ bằng hệ số suy từ cặp sống→chiên USDA SR Legacy, không dùng hệ số engine, không dùng 2 nguồn neo của CALC-004)** | **98,1%** | 4,6% | **+3,4%** | ✅ **ĐẠT** — 4/5 nhóm vẫn 100%; nhóm chiên 92,5% (bias +12,2%, trong đó +9,6 điểm % là cấu trúc điểm giữa khoảng; tham chiếu nằm trong khoảng engine 40/40 món chiên). Biến thể đối chứng (quy dầu về hệ thống): 93,8% tổng, chiên 75,0% — vẫn đạt | [2026-10-31-vn-dishes-lan-3.md](accuracy-runs/2026-10-31-vn-dishes-lan-3.md) |
 | 2026-10-31 | **1.1.0** (không đổi; chỉ sửa hệ số dữ liệu CALC-004) | **160 món Việt, cùng mẫu + cùng tham chiếu độc lập (QA-002 lần 4 — sau hiệu chuẩn: thịt/đạm 8→4, củ/quả 12→9)** | **98,8%** | 3,8% | **+2,6%** | ✅ **ĐẠT** (kiểm tra hiệu chuẩn — không phải kiểm chứng độc lập mới) — nhóm chiên 95,0% (38/40), bias +8,8% ≈ sàn cấu trúc điểm giữa; 2 món còn lệch đều là cá chiên trần sốt, đã ghi hồ sơ mở (hải sản chiên trần) | [2026-10-31-vn-dishes-lan-3.md](accuracy-runs/2026-10-31-vn-dishes-lan-3.md) |
+| 2026-11-01 | **1.1.0** (không đổi) | **160 món Việt MỚI, seed 20261101 (QA-002 lần 5 — kho cuối 654 món sau LV2 + A1–A4 + AUDIT-FIX; tham chiếu độc lập giữ nguyên phương pháp lần 3/4)** | **98,1%** | 4,37% | **+2,61%** | ✅ **ĐẠT trên kho cuối** — 4 nhóm không chiên 100% (120/120); nhóm chiên 92,5% (37/40), bias +9,33% mà cấu trúc điểm giữa chiếm +9,54 điểm % (dư −0,21 điểm %: không lệch hệ thống, **không hiệu chuẩn**); tham chiếu lọt khoảng công bố 160/160; 3 món lệch đều có nguyên nhân cấu trúc (§6 lần đo 7) | [2026-11-01-vn-dishes-lan-5.md](accuracy-runs/2026-11-01-vn-dishes-lan-5.md) |
 
 **Đọc bảng này cho đúng.** Lần đo đầu tiên nói được ba điều, không hơn:
 
@@ -256,6 +257,34 @@ Ba điều lần đo này nói được mà các lần trước không nói đư
 > **98,1% trong ±20%** (mẫu 160 món phân tầng) so với tham chiếu tính từ bảng thành phần của
 > dự án cộng mô hình dầu neo USDA — **vẫn không** được rút gọn thành "chính xác 98%" và
 > vẫn chưa phải đối chiếu phân tích hoá học (xem các giới hạn ở báo cáo lần 3 §1).
+
+### Lần đo 7 (2026-11-01, QA-002 lần 5 — kiểm chứng kho cuối trên mẫu mới)
+
+Sau khi chương trình hoàn thiện dữ liệu đóng lại (12 đợt LV2 nâng Mức 2, gói A1–A4, AUDIT-002/FIX —
+hàng trăm định lượng đổi so với lần đo 4), chủ dự án yêu cầu đo lại để con số độ chính xác phản ánh
+**kho hiện tại** chứ không phải kho cũ. Lần này đổi đúng một thứ: **mẫu** — 160 món mới rút phân
+tầng từ hồ 559 món tính được của kho 654 (seed 20261101, phân bổ theo nhóm cách nấu và tỉ lệ Mức 1/
+Mức 2 trong hồ; 127 món Mức 2). Phương pháp tham chiếu, định nghĩa DEC-001 và Variant A/B giữ nguyên
+từng chữ so với lần 3/4; phía engine lấy từ DB kiểm chứng riêng dựng mới từ `data/`.
+
+Kết quả **98,1% (157/160)** — tương đương lần 3 trên mẫu độc lập mới và xác nhận chương trình hoàn
+thiện không làm suy giảm độ chính xác. Ba điểm đáng ghi:
+
+1. **Bốn nhóm không chiên vẫn 100%** (MAPE 1,9–3,4%, bias ≈ 0): hàng trăm định lượng Mức 2 mới
+   không tạo lệch hệ thống nào — đây là kiểm chứng mạnh nhất cho chất lượng phân xử LV2.
+2. **Nhóm chiên 92,5% nhưng bias phân rã sạch:** cấu trúc điểm giữa khoảng chiếm +9,54 điểm % trong
+   bias +9,33% → phần dư **−0,21 điểm %**. Theo ngưỡng đăng ký trước, không có bằng chứng lệch hệ
+   thống nên **không mở hiệu chuẩn CALC-004** — khác lần 4, nơi chênh dầu ròng +3,9 điểm % tập trung
+   theo nhóm hệ số là bằng chứng đủ mạnh.
+3. **Ba món lệch đều là ca cấu trúc đã hiểu rõ:** `ca-tram-sot-chua-ngot` +26,0% (hồ sơ hải sản
+   chiên trần, ổn định qua 3 lần đo); `cua-rang-muoi` +24,5% (ca mới cùng họ — cua nguyên con:
+   Variant B +7,0%, giới hạn của neo philê 7% chứ không phải lỗi hệ số); `com-chien-ca-man` +20,1%
+   (tâm engine trước nới khoảng lệch tham chiếu chỉ +0,6% — toàn bộ phần vượt ngưỡng là khoảng công
+   bố rộng 3,03× ở món độ tin cậy thấp). Tham chiếu nằm trong khoảng công bố ở cả 160 món.
+
+> Tuyên bố ra ngoài giữ nguyên như sau lần đo 5 (98,1% trong ±20%, mẫu phân tầng, so với tham chiếu
+> tính từ bảng thành phần của dự án cộng mô hình dầu neo USDA SR Legacy) — lần đo 7 xác nhận con số
+> đó **áp dụng cho kho cuối 654 món**, không phải chỉ kho 500 món thời điểm lần đo 5.
 
 ### Ba giới hạn của bộ mẫu — phải đọc trước khi trích con số 89,7%
 
