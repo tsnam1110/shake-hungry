@@ -119,6 +119,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món chay thuần: toàn bộ nguyên liệu có origin thực vật/nấm, gia vị chỉ dùng nước tương/muối/chao đậu — không nước mắm, không hạt nêm/bột canh (nhóm COMPOSITE_ANIMAL tính là mặn), không trứng/sữa; nhãn diet suy từ thành phần phải ra chay và đã kiểm chứng trực tiếp trong DB sau seed (cổng G3/G6 của đợt).  [LV2-004 đợt 4: nâng Mức 2 CÓ ĐIỀU KIỆN về nguồn — chỉ 2/3 nguồn là đúng món đậu phụ kho chao, nguồn thứ ba là nấm kho chao dùng đối chiếu tỉ lệ chao; thêm hành tím 4 và ớt 2, đường 4→5.] [AUDIT-FIX 2026-11-01 — PX-14 (AUDIT-002): HẠ MỨC 2 → 1. Nguồn Memart đã chết 404 (gỡ khỏi recipe_sources, giữ truy vết tại đây). Tìm nguồn thay thế đúng món đậu hũ KHO chao (có gram + số khẩu phần, độc lập): KHÔNG tìm được — trang Memart blog3 cùng tên món chỉ cho định lượng theo miếng/viên (không gram, không khẩu phần) nên không đạt chuẩn căn cứ; trang Điện Máy XANH 'đậu hũ hấp chao' sai phương pháp (hấp ≠ kho). Hai nguồn còn lại gồm một nguồn chỉ là họ kỹ thuật kho chao (Cách Nấu Ngon — nấm rơm kho chao) → không đủ 3 nguồn đúng món. Định lượng giữ nguyên; nâng lại khi có nguồn đúng món đạt chuẩn.]",
+  "cultural_note": {
+    "text": "Chao, còn gọi là đậu phụ nhự, là loại đậu phụ lên men của ẩm thực Quảng Đông, đã quen thuộc ở Việt Nam và phổ biến hơn ở miền Trung và miền Nam. Chao được ví như \"phô mai châu Á\" vì lớp mốc bên ngoài béo ngậy, và thường xuất hiện trong các món chay cũng như được dùng để ướp, kho thay cho nước tương, nước mắm. Đậu phụ kho chao dùng chính thứ đậu lên men ấy làm nước kho cho đậu phụ tươi, nên nồi kho có vị mặn béo rất riêng so với lối kho nước tương thông thường.",
+    "sources": [
+      {
+        "ref": "Wikipedia tiếng Việt — Chao",
+        "url": "https://vi.wikipedia.org/wiki/Chao"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -138,6 +138,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu). [LV2-008 đợt 8: GIỮ Mức 1 (hold) — không đủ nguồn đúng biến thể. Đã mở đọc 2 nguồn đạt chuẩn về 'bánh tằm cà ri/cay' và cả hai đều là bản cà ri GÀ của Cà Mau (Cookpad Truc Le: gà + huyết, sánh bột năng; Saigonesebaguette: gà 500g, bột cà ri 2–3 muỗng canh, cốt dừa 200ml + phần chan riêng). File hiện tại lại là thịt heo nạc vai 50g + thịt xay 30g (xíu mại) với bột cà ri chỉ 3g và cốt dừa 60g/khẩu phần — tỉ lệ cà ri/cốt dừa thấp hơn hẳn cả hai nguồn gà, và không nguồn đạt chuẩn nào xác nhận cấu trúc heo + xíu mại nấu trong cà ri. Các trang về bánh tằm xíu mại heo tìm được đều thuộc dạng bánh tằm bì xíu mại (chan nước cốt dừa thắng + nước mắm, không có cà ri) hoặc là trang tổng hợp SEO vô danh không tính nguồn. Cần chủ dự án phân xử định danh: (a) đổi món thành bản cà ri gà Cà Mau theo 2 nguồn trên, hoặc (b) giữ bản heo + xíu mại và chờ tìm nguồn đúng biến thể.]",
+  "cultural_note": {
+    "text": "Bánh tằm cà ri, thường được gọi là bánh tầm cay, là đặc sản của đất Mũi Cà Mau, quen thuộc trong bữa sáng và bữa xế của người dân nơi đây. Theo lời kể được người địa phương truyền nhau, món ăn là kết quả của sự giao thoa văn hoá: sợi bánh tằm se tay từ bột gạo vốn thuộc về món bánh tằm ngọt ăn chơi truyền thống của miền Tây, kết hợp với nước sốt cà ri Chà Và gắn liền với người Khmer. Sợi bánh to, mập và trắng trẻo như con tằm được chan nước sốt cà ri gà hoặc xíu mại cay nồng, ăn kèm giá đỗ và rau sống.",
+    "sources": [
+      {
+        "ref": "Thanh Niên — Bánh tầm cay đặc sản Cà Mau ở TP.HCM: Quán bình dân trong hẻm bán 24/7",
+        "url": "https://thanhnien.vn/banh-tam-cay-dac-san-ca-mau-o-tphcm-quan-binh-dan-trong-hem-ban-24-7-185260619224951246.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

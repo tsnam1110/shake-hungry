@@ -86,6 +86,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu). [LV2-012 đợt vét] GIỮ Mức 1 — 429: lượt mở đọc nguồn bị chặn 429, dừng ngay theo quy tắc. Ghi nhận sơ bộ: các nguồn mực khô nướng (ĐMX, tài liệu Duy Tân, các trang nồi chiên) đều định lượng theo con và tập trung vào mẹo nướng/đập mềm/xé sợi + chấm tương ớt, không có bộ số gram để đối chiếu; khả năng cao kết luận cuối là THIEU-NGUON khi mở lại ở đợt sau. Nguyên liệu định danh muc-kho có số (291 kcal/100g, Bảng TPTP VN mã 8039), không bị trần.",
+  "cultural_note": {
+    "text": "Mực khô chất lượng được làm từ mực ống tươi, mổ phơi ngay trên tàu, phơi 3–4 nắng rồi ủ nơi khô ráo, thoáng mát khoảng một tuần cho lên phấn trắng. Theo cách truyền thống, mực khô và cá khô nướng bằng than hoa là ngon nhất, bởi hương khói quyện vào làm dậy mùi biển cả rất riêng của mực nướng; mực vừa chín tới được gói vào giấy sạch và đập nhanh tay lúc còn nóng để dễ xé bông tơi. Đây là món khoái khẩu quen thuộc mỗi khi tụ tập bạn bè, và ở thành phố, khi không có than củi, người ta thường thay bằng cồn hoặc lò nướng cho giản tiện.",
+    "sources": [
+      {
+        "ref": "VnExpress — Nướng mực bằng than hoa hay cồn ngon hơn?",
+        "url": "https://vnexpress.net/doi-song-cooking-nuong-muc-bang-than-hoa-hay-con-ngon-hon-4747423.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

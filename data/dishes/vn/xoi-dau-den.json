@@ -106,6 +106,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-011 đợt 11: GIU-THIEU-NGUON — đã mở CET/Chef Lập (nếp 250 g : đậu đen 150 g, tỉ lệ đậu/nếp 0,60; bộ số 250:150 này cũng xuất hiện nguyên vẹn ở Em Vào Bếp và PasGo nên tính là một họ) và Cookpad Quân Nguyễn (khi mở trang, khối nguyên liệu không hiển thị trong bản đọc được nên không tính là họ đã đọc đủ định lượng). Không họ nào ghi số khẩu phần/đĩa nên không quy đổi tuyệt đối về 1 đĩa được; tỉ lệ đậu/nếp của file 0,33 nằm trong dải tỉ lệ nguồn 0,30–0,60. Bất thường: tổng nguyên liệu khô 270 g so với serving_grams 300 g — khối lượng xôi chín thực tế nhiều khả năng cao hơn hẳn, ghi nhận chờ phân xử.] [LV2-012 thu lai] Tim thay ho moi co khau phan (BlueStone, Sunhouse, Cookpad Bon Bon/Lavender) nhung mo kiem chung bi 429 - dung theo quy tac, giu Muc 1; uu tien thu lai cac ho nay o vong sau. [LV2-012 vòng 2] GIỮ Mức 1 — THIEU-NGUON (tiến triển): vòng 2 mở thêm 2 họ có khẩu phần (BlueStone: 300 g nếp + 100 g đậu cho 3–4 người; Sunhouse: 600 g nếp + 200 g đậu cho 3–4 người, thành phẩm 6–8 bát). Tỉ lệ đậu/nếp của file 0,33 khớp đúng BlueStone và Sunhouse (0,33) và nằm trong dải mọi họ (0,25–0,60). Nhưng định lượng tuyệt đối mỗi khẩu phần giữa các họ lệch nhau ~2 lần (nếp/người: BlueStone ~86 g, Sunhouse ~171 g, Cookpad Bòn Bon đã xác định nhưng chưa mở 200 g) nên không có đồng thuận ≥2 họ cho cơ sở đĩa 300 g của file; kèm bất thường serving so với tổng khô từ LV2-011 chờ đợt rà soát khẩu phần riêng. Giữ nguyên định lượng.",
+  "cultural_note": {
+    "text": "Ở Hà Nội, xôi đỗ đen là một trong những món quà sáng quen thuộc được bán từ những thúng xôi ở góc phố, thường từ khoảng 6 giờ đến 9 giờ sáng là hết hàng. Hạt đỗ đen được nấu chín kỹ cho bùi thơm, đồ cùng nếp dẻo, và gói xôi bọc trong lá sen giúp giữ hương và giữ nóng. Gói xôi nhỏ gọn được ăn ngay trên vỉa hè hoặc mang theo, gắn với nhịp bữa sáng nhanh của người đi làm, đi học.",
+    "sources": [
+      {
+        "ref": "VnExpress — Xôi, bữa sáng ngon miệng của người Hà Nội",
+        "url": "https://vnexpress.net/xoi-bua-sang-ngon-mieng-cua-nguoi-ha-noi-2927364.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

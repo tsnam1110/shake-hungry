@@ -74,6 +74,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-012 đợt vét] Giữ Mức 1: biến thể Quánh Gánh làm từ xôi nếp giã không có công thức định lượng công khai đạt chuẩn; chỉ có 2 họ đã mở (DLBAAu, Candy Can Cook) đều là cách pha bột nếp hiện đại, không đủ ≥3 họ cho đúng biến thể.",
+  "cultural_note": {
+    "text": "Bánh giầy Quán Gánh của làng Quán Gánh, Thường Tín, cách trung tâm Hà Nội khoảng 15 km, từ xa xưa đã nổi tiếng dẻo thơm và gắn với câu ca dao “Dù cho chồng rẫy, vợ chê / Bánh giầy Quán Gánh lại về với nhau”. Ban đầu bánh chỉ được gánh bán dạo trên Quốc lộ 1, nay vẫn theo chân những gánh hàng rong len lỏi khắp nẻo đường Hà Nội; hiện thôn Thượng Đình, xã Nhị Khê là nơi còn giữ nghề. Vì bánh chỉ để được trong ngày, thợ phải thức từ 2 giờ sáng đồ xôi nếp Hải Hậu, giã nhuyễn khi còn nóng rồi nặn bánh; bánh có ba loại chay, ngọt và mặn, riêng bánh chay thường ăn kèm giò hoặc chả, và nhiều gia đình nội thành vẫn đặt bánh cho dịp cưới xin, lễ lạt.",
+    "sources": [
+      {
+        "ref": "Báo Phụ Nữ Thủ Đô — Bánh giầy Quán Gánh: Món ăn tinh tế của người Tràng An",
+        "url": "https://baophunuthudo.vn/van-hoa-van-nghe/banh-giay-quan-ganh-mon-an-tinh-te-cua-nguoi-trang-an-18370.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

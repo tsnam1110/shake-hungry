@@ -68,6 +68,15 @@
     "queried_at": "2026-08-31"
   },
   "import_note": "Nhập tự động từ Wikidata Q16480438 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] GIỮ Mức 1 - reason 429 khi mở nguồn + KHONG-CO-CT: đã tra 3 nguồn báo chí/du lịch độc lập (MIA, Báo Pháp Luật, Báo An Giang), tất cả chỉ kể quy trình ủ còng lột (giã tỏi ớt + rượu phơi nắng, hoặc ngâm nước mắm đường nấu) không một định lượng gram; không tồn tại công thức biên tập theo khẩu phần cho định danh này. Cần nghiên cứu lại khi hết chặn 429.",
+  "cultural_note": {
+    "text": "Mắm còng là đặc sản của xứ Gò Công ven biển Tiền Giang, từng là món tiến cung thời nhà Nguyễn và được Hoàng Thái hậu Từ Dụ, người con của quê hương Gò Công, phổ biến khắp xứ Huế. Món mắm này chỉ làm được vào mùa còng lột quanh Tết Đoan Ngọ mùng 5 tháng 5 âm lịch, khi cả làng rủ nhau soi đèn ra ruộng nhặt còng lột mềm, về nhà phải làm mắm ngay trước khi còng kịp cứng lại. Còng được ngâm rượu đế, xếp vào hũ gài lá vông, chan nước mắm nấu đường và phơi nắng tháng năm chừng mươi ngày; đến bữa, mắm còng được bày trên xề lót lá chuối, ăn cùng bún, rau thơm, khế và chuối chát trong bữa ăn đầu mùa của cả nhà.",
+    "sources": [
+      {
+        "ref": "Báo An Giang — Đặc sản mắm còng Gò Công: Món ngon tiến cung",
+        "url": "https://tintucmientay.baoangiang.com.vn/dac-san-mam-cong-go-cong-mon-ngon-tien-cung-a332052.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

@@ -134,6 +134,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] GIỮ Mức 1 — TRAN-NL: mam-ca-linh (định danh) tiếp tục null như hồ sơ LV2-006/LV2-007 (không nhãn số, không trích được Bảng VN nhóm 13). Nguồn công thức lẩu mắm cá linh định lượng có tồn tại (họ BHX qua Tripi: mắm 300g/3-4 người) nhưng trần nguyên liệu chặn nâng cấp; đưa vào hàng đợi nghiên cứu nguyên liệu riêng.",
+  "cultural_note": {
+    "text": "Lẩu mắm có xuất xứ từ người Khmer, cùng gốc với bún mắm, rồi được người dân sông nước Nam Bộ biến tấu thành món lẩu nấu từ cá đồng, cá sông và rau đồng. Trong các loại mắm dùng nấu lẩu, mắm cá linh của miệt Cà Mau, Châu Đốc được xem là ngon nhất, và vào mùa nước nổi nồi lẩu còn có thêm đĩa cá linh non. Đặc sắc của món ăn nằm ở mâm rau vườn, rau đồng phong phú chỉ có ở miền Tây như bông điên điển, bông súng, kèo nèo hay rau đắng, ăn kèm với bún.",
+    "sources": [
+      {
+        "ref": "Dân Việt — Về miền Tây ăn lẩu mắm",
+        "url": "https://danviet.vn/ve-mien-tay-an-lau-mam-777723290-d182909.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

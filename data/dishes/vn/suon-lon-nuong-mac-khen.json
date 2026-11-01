@@ -137,6 +137,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] GIỮ Mức 1 — TRAN-NL: đã mở đọc 3 họ độc lập (Điện Máy XANH bản sườn, Tây Bắc TV, BlueStone) và định lượng file nằm trong vùng các họ (sườn 180 g nằm giữa 125–250 g/người của các họ; mật ong/nước mắm/dầu/sả/hành/tỏi khớp họ Tây Bắc TV–BlueStone), nhưng nguyên liệu định danh mac-khen chưa có số dinh dưỡng ở bất kỳ bảng tham chiếu nào (mac-khen.json để null có hồ sơ) nên món chưa tính được calo đầy đủ; chờ hàng đợi nghiên cứu nguyên liệu cho mắc khén.",
+  "cultural_note": {
+    "text": "Sườn nướng mắc khén mang dấu ấn ẩm thực Tây Bắc, nơi hạt mắc khén được ví như hồ tiêu của vùng núi và được xem là gia vị không thể thiếu trong bữa ăn hằng ngày của đồng bào Thái và H'Mông. Cây mắc khén phân bố ở các tỉnh miền núi phía Bắc như Sơn La, Lai Châu, Điện Biên; quả chín vào khoảng tháng 10–11, được người dân hái về treo lên gác bếp cho khô để dùng dần cả năm. Trước khi dùng, hạt được rang thơm rồi giã mịn để tẩm ướp các món nướng như thịt nướng, cá nướng, gà nướng — trong đó có sườn lợn nướng.",
+    "sources": [
+      {
+        "ref": "Dân Việt — Thứ hạt bé tí tẹo có khả năng mê hoặc những siêu thực khách khó tính nhất trên đất Tây Bắc",
+        "url": "https://danviet.vn/thu-hat-be-ti-teo-co-kha-nang-me-hoac-nhung-sieu-thuc-khach-kho-tinh-nhat-tren-dat-tay-bac-20200604222308886-d892720.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

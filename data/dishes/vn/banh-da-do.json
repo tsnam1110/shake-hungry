@@ -60,6 +60,15 @@
     "queried_at": "2026-08-31"
   },
   "import_note": "Nhập tự động từ Wikidata Q10742235 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] Giữ Mức 1 — CHUA-BIEN-SOAN: file là bản nhập Wikidata chưa qua biên soạn, chỉ có 1 dòng bột gạo 80g và thiếu thành phần tạo màu định danh (gấc/đường mía cô đặc). Đã mở đọc VnExpress (làng nghề Nông Xá) và Hướng Nghiệp Á Âu (bánh đa cua): bánh đa đỏ là sợi nguyên liệu sản xuất theo mẻ làng nghề, chỉ ăn trong bánh đa cua/trộn; không có ≥3 họ công thức biên tập định lượng theo khẩu phần cho riêng món này. Cần quyết định biên tập riêng: giữ dạng 'nguyên liệu dạng món' hay gộp vào bánh đa cua — không tự nâng Mức 2.",
+  "cultural_note": {
+    "text": "Bánh đa đỏ là sản phẩm của các làng nghề quanh Hải Phòng, trong đó làng Nông Xá cách trung tâm thành phố khoảng 15 km hiện có khoảng 70 hộ làm bánh, nhiều gia đình giữ nghề qua 3–4 thế hệ. Nghề khởi đầu là việc làm lúc nông nhàn để tăng thu nhập, dần thành sinh kế chính và tạo nên thương hiệu bánh đa đỏ, bánh đa trắng của đất Cảng. Bột gạo tráng mỏng, phơi trên phên tre đón nắng gió; riêng bánh đỏ được pha thêm nước màu chế bằng đường vàng, và chính sợi bánh này làm nên món bánh đa cua nổi tiếng của Hải Phòng.",
+    "sources": [
+      {
+        "ref": "VnExpress — Nơi làm nên linh hồn của bánh đa cua Hải Phòng",
+        "url": "https://vnexpress.net/noi-lam-nen-linh-hon-cua-banh-da-cua-hai-phong-5118093.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

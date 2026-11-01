@@ -146,6 +146,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] Giữ Mức 1 — THIEU-NGUON: chỉ có 2 họ độc lập (họ job3s sao chép trên NhaXinhPlaza/DayHocNghe; EmVàoBếp đã mở đọc), cả hai định lượng theo con cá nguyên nên không đối chiếu được gram/khẩu phần. Cá trắm có số (91 kcal/100g), không phải trần nguyên liệu.",
+  "cultural_note": {
+    "text": "Gỏi cá trắm là món ăn chế biến theo kiểu truyền thống của người Mường ở vùng núi rừng Tây Bắc. Cá trắm cỏ được người dân ven lòng hồ sông Đà đánh bắt từ sáng sớm, thái thành lát mỏng rồi ngâm vào nước măng chua làm từ măng bương, lấy vị chua đậm của núi rừng để làm cá tái gần như chín. Món gỏi rắc thêm mắc khén, lá sung rừng, hoa chuối và nhiều loại rau lá lấy từ rừng hoặc tự trồng, và là món người dân nơi đây thường làm để tiếp đãi khách quý.",
+    "sources": [
+      {
+        "ref": "Dân Việt — Gỏi cá sống ngon 'nhức nhối' đậm chất núi rừng Tây Bắc",
+        "url": "https://danviet.vn/goi-ca-song-ngon-nhuc-nhoi-dam-chat-nui-rung-tay-bac-7777830723-d576867.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

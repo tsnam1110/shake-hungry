@@ -93,6 +93,15 @@
     "queried_at": "2026-08-31"
   },
   "import_note": "Nhập tự động từ Wikidata Q10796543 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Gợi ý nguyên liệu từ Wikidata (tiếng Anh, CHƯA ánh xạ sang data/ingredients/): Episesarma mederi. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/Mam%20ba%20khia%20%28Vietnamese%29.jpg Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] GIỮ Mức 1 — 429: hai lần mở nguồn ứng viên (Cookpad 924101 và cachnaungon cách trộn ba khía) đều bị 429, dừng theo quy tắc. Bằng chứng qua kết quả tìm kiếm (chưa mở, chưa tính họ): Cookpad ghi 300g mắm ba khía nguyên con trộn tỏi/ớt/đường/chanh/khế/gừng/sả; họ ĐMX ghi ba khía 250g/4 người, tỏi 5 tép, ớt 5 quả, chanh 1 quả, đường 4 muỗng canh — cần mở đọc lại ở đợt sau để đếm họ chính thức.",
+  "cultural_note": {
+    "text": "Ba khía là loài cua rừng sống ở rừng ngập mặn Cà Mau, được đặt tên theo ba vệt trên chiếc mai sẫm màu, và Rạch Gốc ở Ngọc Hiển được xem là 'thủ phủ' ba khía với sản lượng nhiều nhất Nam Bộ. Theo câu ca dao “Tháng bảy nước chảy Cà Mau / Tháng mười ba khía hội”, mùa ba khía gắn với con nước lên từ tháng 7 âm lịch và rộ nhất vào tháng 10 âm lịch, khi ba khía bò lên chang đước; người dân soi đèn đi bắt và muối ngay phần ăn không hết để giữ được lâu. Nghề muối ba khía cha truyền con nối ở Ngọc Hiển đã được đưa vào danh mục Di sản văn hóa phi vật thể quốc gia vào cuối năm 2019.",
+    "sources": [
+      {
+        "ref": "VOV Giao thông — Nhớ mùa Ba Khía hội",
+        "url": "https://vovgiaothong.vn/news/nho-mua-ba-khia-hoi-d40903.amp"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

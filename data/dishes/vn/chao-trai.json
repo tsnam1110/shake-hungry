@@ -126,6 +126,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Dùng nguyên liệu mới đề xuất: trai (chờ bổ sung file nguyên liệu vào data/ingredients/). [LV2-011 đợt 11: GIỮ Mức 1 — GIU-THIEU-NGUON: chỉ 2 họ quy đổi được về khẩu phần và lệch nhau quá lớn (Cookbeo, 4 người: bột gạo tẻ 150 g + bột nếp 50 g + trai nguyên vỏ 3 kg + xương ống 500 g; Cookpad NguyenThap, 5 phần: gạo tẻ 80 g + nếp 20 g + đỗ xanh 50 g + trai nguyên vỏ 1 kg) — tổng gạo mỗi khẩu phần 50 g so với 20 g, trai nguyên vỏ 750 g so với 200 g; họ thứ ba PasGo Team (trai 1 kg, tẻ 50 g, nếp 50 g, đậu xanh 50 g) không ghi số khẩu phần nên không quy đổi được. Bất thường ghi nhận, không tự sửa: 2/3 họ có đậu xanh và 2/3 họ hầm xương lấy nước dùng, file không có cả hai (file chỉ dùng nước luộc trai — Cookbeo ghi đây là cách đơn giản thay thế); gừng có ở Cookbeo và PasGo, file không có.] [LV2-012 thu lai] Them ho moi Cho Lai Thieu quy doi duoc (gao tong 62-83 g/nguoi, trai vo 375-500 g/nguoi) - tong 3 ho quy doi duoc nhung lech nhau 3-4 lan o gao va trai, khong dong thuan >=2 ho; VinID trung bo so Cookbeo. GIU Muc 1 (THIEU-NGUON/dong thuan).",
+  "cultural_note": {
+    "text": "Cháo trai là một trong những thức quà chiều quen thuộc của Hà Nội, thường được các gánh hàng và quán nhỏ ven phố dọn bán vào tầm 4–5 giờ chiều. Khác với cháo nấu từ gạo nguyên hạt, cháo trai làm từ bột gạo quấy thành thứ cháo sền sệt, trắng ngà, múc vào bát đã rải sẵn hành hoa và rau răm thái nhỏ, rắc thêm hạt tiêu hay ớt bột và ăn kèm quẩy. Những hàng cháo trai ở Trần Xuân Soạn, cuối Quán Thánh gần đường Thanh Niên, Ngõ Huyện hay Lý Quốc Sư từ lâu đã là điểm hẹn quà chiều của người dân khu phố cổ.",
+    "sources": [
+      {
+        "ref": "Báo Phụ Nữ TP.HCM — Giờ quà chiều đã điểm",
+        "url": "https://www.phunuonline.com.vn/gio-qua-chieu-da-diem-a1505245.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

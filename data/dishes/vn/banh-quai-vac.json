@@ -131,6 +131,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [Đính chính 2026-10-31 — Phương án A/QA-002: dau-an 10 g → 3 g. Chỉ giữ phần dầu cho bước phụ có thật trong công thức (xào nhân tôm + thịt xay trước khi gói) — mức 3 g/khẩu phần là định lượng chế biến cho bước phi/xào nhanh, phần dầu này ăn vào cùng nhân/sốt. Dầu chiên chính không kê nữa: đã được engine mô hình hoá theo CALC-004.] [LV2-012 đợt vét] Giữ Mức 1 (BIEN-THE): đã mở đọc MIA.vn (bản Phan Thiết gốc: luộc, vỏ bột năng, nhân tôm thịt rim) và Dạy Làm Bánh Á Âu (bản chiên: vỏ bột mì, nhân thịt + nấm mèo, không tôm). File hiện tại (chiên + bột gạo/năng + tôm thịt) không khớp trọn vẹn họ biên tập nào; các trang khớp cả ba thuộc tính chỉ là aggregator SEO vô danh, không đạt chuẩn nguồn. Cần chủ dự án chốt: (a) chuẩn hoá về bản Phan Thiết luộc — đổi cooking_method, bỏ dau-an, vỏ chỉ bột năng; hoặc (b) giữ bản chiên — đổi vỏ sang bột mì và xem lại nhân tôm.",
+  "cultural_note": {
+    "text": "Bánh quai vạc là cách gọi ở Phan Thiết của bánh bột lọc, món bánh có nguồn gốc từ Huế rồi du nhập vào nhiều tỉnh thành miền Trung. Tên bánh lấy theo hình dáng khi gói xong giống chiếc quai của cái vạc, với lớp vỏ bột lọc trong, dai ôm nhân tôm thịt rim đậm đà. Ở Phan Thiết, bánh quai vạc là đặc sản lâu đời được bán rong trên xe đẩy, gánh hàng rong và trong các chợ dân sinh, ăn kèm nước mắm nấu kẹo sền sệt, hành phi và tóp mỡ.",
+    "sources": [
+      {
+        "ref": "Cổng thông tin Du lịch Bình Thuận — Bánh quai vạc Phan Thiết – đặc sản trứ danh ăn là ghiền",
+        "url": "https://dulichbinhthuan.com.vn/banh-quai-vac-phan-thiet/"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

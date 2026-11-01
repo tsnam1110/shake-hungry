@@ -123,6 +123,19 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Lưu ý biên tập: món làm từ huyết lợn sống — cân nhắc bổ sung cảnh báo an toàn thực phẩm trước khi xuất bản. [LV2-012 đợt vét] Giữ Mức 1 - THIEU-NGUON: đã mở đọc NgonAZ (chỉ có tỉ lệ hãm 1 mắm : 1,5-2 nước; đánh tiết:nước luộc 1:1, không gram) và memart.vn (SEO, bị loại). Không có họ biên tập nào công bố định lượng gram cho tiết canh lợn; giữ nguyên định lượng llm_suggested và cảnh báo an toàn thực phẩm hiện có.",
+  "cultural_note": {
+    "text": "Tiết canh là món ăn lâu đời trong ẩm thực Việt, chủ yếu làm từ tiết lợn và tiết vịt, hiện diện ở nhiều quán ăn ven đường và trong đời sống ăn uống thường ngày của nhiều người Việt. Món ăn gồm phần tiết trộn cùng thịt băm, sụn và nội tạng đã làm chín, rắc lạc rang và rau thơm khi ăn. Hình ảnh bát tiết canh lòng lợn từng được nhà văn Thạch Lam ghi lại trong tùy bút 'Quà Hà Nội' khi miêu tả các bà hàng tiết canh và thực khách Hà Nội xưa. Món ăn này thường khiến du khách phương Tây e dè, trong khi với nhiều người Việt đó là một món quen thuộc gắn với quán xá vỉa hè.",
+    "sources": [
+      {
+        "ref": "Tuổi Trẻ — Những món ngon táo bạo trên thế giới và Việt Nam sở hữu cái tên độc nhất",
+        "url": "https://tuoitre.vn/dulichtphcm/nhung-mon-ngon-tao-bao-tren-the-gioi-va-viet-nam-so-huu-cai-ten-doc-nhat-10727870.htm"
+      },
+      {
+        "ref": "VnExpress — Những đặc sản Việt Nam làm du khách sợ",
+        "url": "https://vnexpress.net/nhung-dac-san-viet-nam-lam-du-khach-so-3320628.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

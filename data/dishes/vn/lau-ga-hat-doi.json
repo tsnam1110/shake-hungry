@@ -134,6 +134,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] GIỮ Mức 1 — TRAN-NL: hat-doi (định danh) null không số ở mọi nguồn đã tra (xem mapping_note trong data/ingredients/hat-doi.json); thêm nữa không tìm thấy công thức lẩu gà hạt dổi định lượng — món thật gần nhất là gà nấu măng chua hạt dổi của người Mường (Hòa Bình), dạng nấu không phải lẩu và không định lượng.",
+  "cultural_note": {
+    "text": "Hạt dổi là gia vị núi rừng gắn với bếp người Mường ở Hoà Bình: hạt được nướng cho thơm rồi giã nhỏ, dùng chấm thịt luộc cùng muối rang, rắc vào canh loóng hay món gà nấu măng chua. Trong món măng chua nấu thịt gà của người Mường, gà nuôi thả được chặt miếng, ướp với măng chua rồi vần quanh bếp củi than cho chín nhừ, sau cùng rắc thêm hạt dổi nướng giã nhỏ để các vị quyện vào nhau. Lẩu gà hạt dổi giữ đúng kỹ thuật ấy ở khâu ướp gà với hạt dổi nướng giã nhỏ, rồi chuyển hương vị gà xứ Mường thành nồi lẩu nhúng ăn kèm rau và bún.",
+    "sources": [
+      {
+        "ref": "Báo Người Lao Động — Món ngon người Mường ở Hòa Bình",
+        "url": "https://nld.com.vn/print/dia-phuong/mon-ngon-nguoi-muong-o-hoa-binh-2011011109573404.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

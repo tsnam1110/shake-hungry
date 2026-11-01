@@ -123,6 +123,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [LV2-010 đợt 10: GIỮ Mức 1 do 429 toàn đợt trước khi tới món này — chưa tra cứu, làm lại ở vòng sau. Lưu ý sẵn: file KHÔNG phải bánh hỏi thuần — đã gồm gio-lua 50 g (bắt buộc) + thit-lon-ba-chi 50 g (tuỳ chọn) + nước mắm pha 12 g, serving 280 g; vòng sau phải đối chiếu đúng biến thể 'bánh hỏi kèm chả/thịt' như file, đồng thời ghi nhận câu hỏi định danh: chả lụa là ăn kèm hay thành phần.] [LV2-011 đợt 11: GIỮ Mức 1 — GIU-THIEU-NGUON/BIEN-THE: chỉ 1 họ định lượng được phần bánh thuần (ĐMX: bột gạo 750 g + bột khoai tây 80 g cho 5 người); VinID chỉ ghi 300 g gạo, không ghi số khẩu phần; các họ Cookpad dùng bánh hỏi mua sẵn ăn kèm heo quay, không định lượng theo khẩu phần. KHÔNG họ nào khớp biến thể của file (gio-lua 50 g bắt buộc + thit-lon-ba-chi 50 g tuỳ chọn) — nguồn đều ăn kèm heo quay chứ không phải chả lụa. Câu hỏi định danh 'chả lụa là thành phần hay món ăn kèm' nêu từ đợt 10 vẫn mở, chờ chủ dự án phân xử.]",
+  "cultural_note": {
+    "text": "Bánh hỏi là món bánh sợi bột gạo nhỏ li ti đan quyện thành từng miếng mỏng, được xem là có “quê hương” ở miền Trung, đặc biệt là Bình Định và Phú Yên, và thường được dùng vào dịp cưới hỏi, lễ cúng đình chùa hay lễ giỗ. Dân gian lưu truyền hai cách giải thích tên bánh: một là bánh đi đến đâu cũng khiến thực khách tò mò hỏi han vì cấu tạo lạ mắt; hai là bánh vốn là lễ vật trong đám hỏi, gọi là bánh của đám hỏi rồi gọi tắt thành bánh hỏi. Những sợi bột đan chặt khó tách rời cũng được người dân gửi gắm hình ảnh sự bền chặt, gắn kết của đôi lứa.",
+    "sources": [
+      {
+        "ref": "VietnamPlus (TTXVN) — Khám phá đặc sản bánh hỏi miền Trung và Tây Nam Bộ",
+        "url": "https://www.vietnamplus.vn/banh-hoi-mien-tay-tu-mon-an-dan-da-den-thuc-don-khach-san-5-sao-post1143899.vnp"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

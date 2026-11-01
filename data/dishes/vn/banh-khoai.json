@@ -106,6 +106,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Khác banh-xeo đã có: bánh khoái nhỏ hơn (chảo gang ~15 cm), bột pha trứng, ăn với nước lèo — món riêng của Huế, giữ độc lập theo ghi chú kế hoạch. Nhân thịt dùng thit-lon-ba-chi thay thit-lon-nac-vai của bản kế hoạch vì nac-vai chưa có oil_absorption_pct (món chiên không được thiếu hệ số cho nguyên liệu chính — CALC-002). Món chiên theo quy ước Phương án A (EDITORIAL-GUIDE §12): công thức KHÔNG kê dầu của bước chiên chính — dầu hấp thụ do engine mô hình hoá theo hệ số CALC-004 của nguyên liệu. [LV2-012 đợt vét] GIỮ Mức 1 — lỗi 429 ngay lần mở nguồn đầu tiên (monngondongian.com, trang bánh khoái), đã dừng món theo quy ước, không thử lại. Ở tầng kết quả tìm kiếm đã thấy các họ tiềm năng cho lần chạy lại: Cookpad của Hoàng Thị Tố Hà, tài liệu dạy nấu Duy Tân và bài monngondongian; trích đoạn tìm kiếm không được tính là nguồn đã kiểm chứng.",
+  "cultural_note": {
+    "text": "Bánh khoái là món bánh đổ trong chảo nhỏ trên bếp củi, bếp than quen thuộc của người Huế, họ hàng gần với bánh xèo. Theo cách kể của người dân địa phương, bánh vốn được gọi là bánh khói vì ám mùi khói bếp trong lúc đổ, rồi giọng Huế đọc chệch thành bánh khoái. Biến thể nức tiếng của món bánh này là bánh khoái cá kình ở làng Chuồn bên đầm Chuồn thuộc hệ thống phá Tam Giang, nơi thực khách tự mua cá kình tươi ngay tại chợ làng rồi mang đến nhờ các o, các mệ đổ bánh giúp.",
+    "sources": [
+      {
+        "ref": "VietnamNet — Món bánh khoái cá kình, đặc sản vừa lạ mắt vừa lạ miệng ở Huế",
+        "url": "https://vietnamnet.vn/mon-banh-khoai-ca-kinh-dac-san-vua-la-mat-vua-la-mieng-o-hue-2042928.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

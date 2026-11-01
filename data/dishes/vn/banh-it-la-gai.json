@@ -94,6 +94,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Đặc sản Bình Định (region vn-central — cây vùng chưa có mã Bình Định). Lá gai là lá tạo màu/vỏ bánh, slug la-gai chưa có số dinh dưỡng (hồ sơ null) — để dòng tùy chọn lượng nhỏ theo tiền lệ gia vị chưa có số; phần chính của bánh tính được đầy đủ. [LV2-012 đợt vét] Giữ Mức 1 (TRAN-NL): la-gai — nguyên liệu định danh tạo màu vỏ đen — chưa có kcal/carb trong kho (kcal_per_100g=null) nên món chưa tính trọn được; đồng thời 2 họ đã mở (Tiệm Chả Chị Cả, Sachi) cho tỉ lệ dừa 0,50 và đường 0,60–0,88 theo bột nếp, cao hơn hẳn file (0,21 cho cả hai), chờ có số cái thành phẩm hoặc quyết định cấp kho mới chốt sửa.",
+  "cultural_note": {
+    "text": "Bánh ít lá gai là thức quà truyền thống của Bình Định, Phú Yên và Quảng Ngãi, gói bằng lá chuối tươi với vỏ bột nếp trộn lá gai hấp chín thành màu đen đặc trưng. Riêng ở Bình Định, bánh được gói thành hình chóp mô phỏng dáng các tháp Chăm của vùng đất từng là kinh đô vương quốc Chămpa, nơi còn cụm Tháp Bánh Ít nhìn từ xa như những chiếc bánh ít màu vàng gạch. Người miền Trung thường chỉ gói bánh ít khi nhà có đám giỗ, đám chạp cuối năm hay lễ Tết để dâng cúng tổ tiên, đãi khách và biếu hàng xóm; ở Bình Định bánh còn gọi là “bánh hồi dâu”, do cô dâu tự tay gói mang theo trong lễ lại mặt vào ngày thứ ba sau lễ cưới.",
+    "sources": [
+      {
+        "ref": "Tạp chí Heritage (Vietnam Airlines) — Bánh ít lá gai: Đặc sản Bình Định, Phú Yên & Quảng Ngãi",
+        "url": "https://heritagevietnamairlines.com/banh-it-la-gai-thuc-qua-ngot-lanh-cua-dat-mien-trung/"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

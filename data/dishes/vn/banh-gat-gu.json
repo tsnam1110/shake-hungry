@@ -83,6 +83,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-012 đợt vét] GIỮ Mức 1 - mã 429: hai lần mở nguồn (tripi.vn, vietnamnet.vn) đều lỗi 429, không tính kiểm chứng; trích đoạn tìm kiếm không được tính. Ghi nhận sơ bộ cho đợt sau: bánh làm từ gạo tẻ ngâm qua đêm xay bột nước với cơm nguội, tráng dày hơn bánh cuốn, cuộn khúc 15-20cm, chấm nước mắm chưng mỡ (nguồn mô tả VietnamNet/VTC); chưa có >=3 họ định lượng độc lập được mở đọc.",
+  "cultural_note": {
+    "text": "Bánh gật gù là đặc sản dân dã của Tiên Yên, Quảng Ninh, lạ ngay từ tên gọi: bánh không nhân, cuộn tròn dài và dẻo dai nên khi cầm trên tay cứ gật lên gật xuống như lắc lư. Người Tiên Yên có bí quyết cho thêm cơm nguội vào khi nghiền bột để bánh tráng xong phồng, xốp và dẻo mịn hơn bánh cuốn, bánh phở dù bề ngoài khá giống nhau. Bánh ngon nhất khi ăn nóng trong ngày, chấm nước mắm chưng với mỡ gà thêm hành phi và thịt băm, và chuyện người dân mua bánh theo cân về ăn ở quê được xem là bình thường.",
+    "sources": [
+      {
+        "ref": "VietnamNet — Đặc sản Quảng Ninh có tên gọi lạ, khách ăn cả cân cho bõ thèm",
+        "url": "https://vietnamnet.vn/dac-san-quang-ninh-co-ten-goi-la-khach-an-ca-can-cho-bo-them-2313191.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "llm_suggested",
   "confidence": "unknown",

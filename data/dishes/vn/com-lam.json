@@ -94,6 +94,15 @@
     "queried_at": "2026-08-31"
   },
   "import_note": "Nhập tự động từ Wikidata Q5202958 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/C%C6%A1m%20lam%20T%C3%A2y%20Nguy%C3%AAn.jpg Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-010 đợt 10: GIỮ Mức 1 — GIU-THIEU-NGUON: đã mở 2 trang công thức (CongThucGiaDinh: 500 g nếp/5 ống, ngâm nước dừa 4–6 h, nướng ~60 phút — không tác giả/khẩu phần; AnNgon3Mien: 1 kg nếp/7 ống, nước dừa tươi 200 ml, lạc 200 g + mè 100 g cho muối vừng — bộ số trùng nguyên văn ở ít nhất 2 trang khác nên cả cụm chỉ tính 1 họ). Báo du lịch/bách khoa tra được chỉ mô tả quy trình, không định lượng. Nếp/ống giữa 2 họ lệch 43% (100 vs ~143 g) → giữ nguyên file. Ghi nhận: bản Tây Bắc truyền thống nấu bằng nước lã, nước cốt dừa là tuỳ chọn — file để cốt dừa 15 g ở mức phụ, chưa đổi.] [LV2-011 đợt 11: GIU-THIEU-NGUON — mở thêm SKĐS/Gia đình & Sức khoẻ (Cách 2: 1 kg nếp/7 ống, nước dừa tươi 200 ml, ngâm 4–6 h) và Netspace (1 kg nếp/7 ống, cho 4–5 người): cả hai cùng bộ số và gần như cùng văn bản với cụm AnNgon3Mien đã tính ở đợt 10 nên cả cụm chỉ là MỘT họ, không phải họ mới độc lập. Tổng vẫn 2 họ độc lập (100 g nếp/ống của CongThucGiaDinh vs ~143 g nếp/ống của cụm 1 kg/7 ống, lệch 43%) — chưa phân xử được, giữ nguyên file.]",
+  "cultural_note": {
+    "text": "Cơm lam là món ăn mang bản sắc của đồng bào Mường ở vùng Hòa Bình (nay thuộc tỉnh Phú Thọ) và núi rừng Tây Bắc nói chung. Món cơm gói trọn những sản vật của núi rừng: gạo nếp nương cho vào ống nứa non, thêm nước suối, bịt miệng ống bằng lá dong hoặc lá chuối rừng rồi nướng trên than hồng và liên tục xoay tay trong khoảng một giờ cho cơm chín đều. Cơm lam thường được ăn kèm muối vừng, và trong những bữa tiệc đãi khách hay lễ hội còn dọn cùng thịt nướng.",
+    "sources": [
+      {
+        "ref": "Dân Việt — Cơm ở Phú Thọ có gì đặc biệt mà du khách nườm nượp kéo về thưởng thức?",
+        "url": "https://danviet.vn/com-o-phu-tho-co-gi-dac-biet-ma-du-khach-nuom-nuop-keo-ve-mua-d1469594.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

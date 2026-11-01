@@ -134,6 +134,19 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. [LV2-010 đợt 10: GIỮ Mức 1 — GIU-BIEN-THE + trần nguyên liệu định danh: đã mở 3 họ (Tripi Phú Quốc 4 người — cá sòng, cốt dừa 600 ml, giá 300 g, ăn kèm đu đủ xanh/bắp chuối, bột cà ri; Hai Thụy — bản Nam Bộ cá lóc 800 g/1,5 kg bún, dừa nạo 300 g vắt 1 chén cốt + 3 tô dão, tôm khô, khóm; NYT/Diep Tran qua Dining&Cooking — Kiên Giang, cá nguyên con 1 lb, coconut cream 1/2 cup, topping đu đủ xanh/giá/dưa leo/rau răm). Không họ nào dùng cá thu như file; cá Phú Quốc (sòng/ngân/nhàu) chưa có slug + chưa có số dinh dưỡng nên định danh trần; bản cá lóc là biến thể Hà Tiên/Châu Đốc đất liền, cần chủ dự án chốt biến thể. Cốt dừa các họ lệch >30% (30–150 g/người) nên giữ 50 g. File cũng thiếu đu đủ xanh + bắp chuối (≥2 họ có, slug đã có số) và bột cà ri — chỉ áp khi chốt biến thể. Vùng vn-south giữ nguyên; không đề xuất nhãn dac-san vì TAXONOMY chưa có phu-quoc.]",
+  "cultural_note": {
+    "text": "Bún kèn là món ăn của vùng sông nước miền Tây, được biết đến nhiều ở Châu Đốc (An Giang) và vùng Hà Tiên – Phú Quốc (Kiên Giang). Tên gọi “kèn” được cho là bắt nguồn từ tiếng Khmer, dùng để chỉ những món ăn nấu cùng nước cốt dừa. Cá được xay nhuyễn, xào với sả, ớt, tỏi rồi nấu sệt cùng nước cốt dừa và bột cà ri hoặc ngũ vị hương, chan lên bún và ăn kèm rau thơm, giá, dưa leo — một dấu ấn giao thoa văn hoá Khmer – Việt trên vùng đất Tây Nam.",
+    "sources": [
+      {
+        "ref": "Báo Dân Việt — Bún ba khía, bún kèn - món ăn lạ mà quen ở vùng sông nước miền Tây",
+        "url": "https://danviet.vn/bun-ba-khia-bun-ken-mon-an-la-ma-quen-o-vung-song-nuoc-mien-tay-7777770830-d521433.html"
+      },
+      {
+        "ref": "Wikipedia tiếng Việt — Bún kèn",
+        "url": "https://vi.wikipedia.org/wiki/B%C3%BAn_k%C3%A8n"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

@@ -99,6 +99,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-011 đợt 11: GIỮ MỨC 1 — GIU-TRAN-NGUYEN-LIEU. Đã mở 3 họ: Thanh Niên (bài 'Nhớ món bánh đập của nội', 2022: món 'được làm nên từ 2 thứ nguyên liệu bất bại là bánh tráng bột gạo và mắm nêm', 'một nửa cái ngon là chén mắm nêm' pha thơm băm, ớt tỏi, dầu phộng và hành phi — mắm nêm là thành phần ĐỊNH DANH của món); Cookpad Hoàng Ngọc (Hội An: 20 bánh tráng nhúng làm 10 cái — 10 nướng giòn + 10 nhúng mềm thay bánh ướt tráng từ bột, mắm nêm 2 muỗng canh cho cả mẻ, không ghi khẩu phần người ăn); Hanami Hotel (đội ngũ biên tập: gạo 1 kg nhưng bước pha bột chỉ dùng 120 g bột gạo lọc + bột năng 90 g + bột đậu xanh 60 g, bánh đa nướng 5 cái, mắm nêm không định lượng, không khẩu phần). Trần nguyên liệu: slug mam-nem có fct_source = null (hồ sơ trong file nguyên liệu: không nguồn số nào đạt chuẩn) mà mắm nêm là định danh theo họ Thanh Niên — giữ Mức 1. Đồng thời không họ nào cho định lượng quy đổi được về 1 phần của file (bot-gao 60 g). BẤT THƯỜNG ghi nhận, không tự sửa: (1) cooking_method của file là 'tron' trong khi cả 3 họ đều là nướng bánh tráng + tráng/đặt lớp bánh ướt + đập/gập — không có mã phương pháp thay thế hiển nhiên nên chỉ ghi nhận chờ phân xử; (2) thơm (dứa) pha trong mắm có ở 2/3 họ (Thanh Niên, Hanami) nhưng Cookpad pha mắm không thơm — chưa đủ 3/3 để thêm dòng dua-thom; (3) lac-rang 8 g rắc lên bánh của file: 0/3 họ rắc lạc lên bánh (Thanh Niên chỉ có dầu phộng và hành phi trong chén mắm) — giữ dòng và ghi nhận chờ phân xử; (4) bột ướt của Hanami có thêm bột năng và bột đậu xanh — chỉ 1/3 họ, không thêm.]",
+  "cultural_note": {
+    "text": "Bánh đập, tên đầy đủ là bánh tráng đập dập, là món bình dân trứ danh của xứ Quảng, được cho là ra đời dọc những làng tráng bánh ven biển miền Trung. Cấu tạo của bánh chỉ gồm bánh tráng bột gạo nướng giòn trên than, trải lên một lá bánh ướt (mì lá) mỏng mềm phết dầu phộng phi hành; khi ăn phải dùng tay đập dập cho hai lớp giòn – mềm dính vào nhau rồi chấm mắm nêm làm từ cá cơm ủ muối. Ở Đà Nẵng, những gánh bánh đập buổi chiều từ lâu đã là bữa xế quen thuộc của người lao động, nối tiếp nghề tráng bánh gia truyền của các làng như Điện Phương ở Điện Bàn, Quảng Nam.",
+    "sources": [
+      {
+        "ref": "Thanh Niên — Hương vị quê hương: Nhớ món bánh đập của nội",
+        "url": "https://thanhnien.vn/huong-vi-que-huong-nho-mon-banh-dap-cua-noi-1851511158.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "llm_suggested",
   "confidence": "unknown",

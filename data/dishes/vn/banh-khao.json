@@ -78,6 +78,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-004 đợt 2 (lô bánh dân gian) mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] GIỮ Mức 1 — BIEN-THE: chỉ có 2 họ độc lập đã mở (nhân đậu xanh/mứt bí của Dạy Làm Bánh Á Âu và nhân đậu phộng/mỡ đường của Điện Máy XANH), các trang còn lại sao chép bộ số của một trong hai họ. File chưa chọn biến thể nhân và thiếu hẳn dòng nhân; cần chủ dự án chốt biến thể (đậu xanh hay đậu phộng/mỡ đường) rồi mới đối chiếu định lượng và nâng cấp được.",
+  "cultural_note": {
+    "text": "Bánh khảo là đặc sản ngày Tết của người Tày, Nùng ở Cao Bằng: cứ vào khoảng 20 tháng Chạp, người dân lại rục rịch làm bánh khảo đón Tết Nguyên đán, đến mức có câu nói sẽ chẳng còn Tết nếu không có bánh khảo. Phong bánh làm từ bột gạo nếp rang xay mịn nén khuôn với nhân lạc, vừng, thịt mỡ ướp đường, gói giấy bản trắng hoặc giấy màu xanh đỏ tím vàng, được dâng lên bàn thờ cúng gia tiên, dùng thay kẹo bánh mời khách và làm quà biếu. Vì bánh để được cả tháng không mốc, không ỉu, người Cao Bằng quan niệm chừng nào trong nhà còn bánh khảo, chừng đó vẫn còn Tết.",
+    "sources": [
+      {
+        "ref": "VOV — Bánh khảo hương vị dân dã của Cao Bằng",
+        "url": "https://vov.vn/du-lich/banh-khao-huong-vi-dan-da-cua-cao-bang-833950.vov"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

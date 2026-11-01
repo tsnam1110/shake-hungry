@@ -131,6 +131,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-012 đợt vét] GIU Mức 1, mã 429 (kèm thiếu nguồn định lượng): lần mở trang nguồn đầu tiên đã gặp 429, dừng theo quy tắc, chưa mở được họ nào. Bằng chứng tầng tìm kiếm: bánh bèo bì chợ Búng (Bình Dương) trên Tuy Hòa Foods / SKĐS / Thanh Niên đều chỉ liệt kê nguyên liệu không gram (gạo, đậu xanh đãi vỏ, thịt đùi + bì ram nước dừa thái sợi trộn thính, nước cốt dừa trong bột, mỡ hành, nước mắm) — công thức quán gia truyền không công bố tỉ lệ. Làm lại khi hết chặn, ưu tiên tìm sách dạy nấu/Cookpad có gram cho đúng biến thể chợ Búng.",
+  "cultural_note": {
+    "text": "Bánh bèo bì gắn với chợ Búng ở Bình Dương, xưa được đổ từ gạo đỏ đặc sản của địa phương. Khác với bánh bèo nhiều nơi, bản chợ Búng dùng gạo nguyên vo đãi thật kỹ, quấy thành bột đặc quánh rồi trộn nước cốt dừa trước khi đổ khuôn hấp, mặt bánh phết đậu xanh nấu nhừ. Phần bì làm nên tên món là thịt heo tẩm nước dừa thái sợi nhỏ cỡ cọng bún, rải thính cho thơm, ăn kèm dưa chua, rau thơm, giá và nước mắm chua ngọt tỏi ớt chanh.",
+    "sources": [
+      {
+        "ref": "Báo Pháp Luật Việt Nam (Doanh nhân & Pháp luật) — Khám phá sản vật Miền Nam Việt Nam (Kỳ 1): sầu riêng Lái Thiêu, măng cụt Lái Thiêu, bún tôm Châu Trúc, bánh bèo bì chợ Búng",
+        "url": "https://doanhnhan.baophapluat.vn/kham-pha-san-vat-mien-nam-viet-nam-ky-1-sau-rieng-lai-thieu-mang-cut-lai-thieu-bun-tom-chau-truc-banh-beo-bi-cho-bung-39810.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

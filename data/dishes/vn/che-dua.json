@@ -98,6 +98,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-012 đợt vét] Giữ Mức 1 — BIEN-THE: đã mở đọc Điện Máy XANH và VietNamNet, cả hai (cùng 1 họ số sao chép) đều là chè dừa non thạch lá dứa với bột báng ~10g, cốt dừa ~38–50g, thạch rau câu và đường ~50g/khẩu phần; tra cứu mở rộng không ra bất kỳ công thức biên tập nào nấu cùi dừa trong nước dừa tươi với bột năng như file. Biến thể trong file có thể là sáng tạo biên tập DISH-004 — cần chủ dự án xác nhận tồn tại/định danh (đổi sang chè dừa non chuẩn hoặc giữ và ghi rõ sáng tạo biên tập) trước khi nâng.",
+  "cultural_note": {
+    "text": "Chè dừa là món ngọt của xứ dừa Nam Bộ, nơi cây dừa đi vào đời sống ẩm thực từ gốc tới ngọn và Bến Tre được xem là xứ dừa của Việt Nam. Trong các món ngọt của vùng này, nước dừa và nước cốt dừa giữ vai trò chủ chốt, góp mặt trong hầu hết các món chè, bánh địa phương. Từ những nguyên liệu cây nhà lá vườn sẵn có, người dân xứ dừa đã sáng tạo ra hàng trăm loại chè khác nhau, và chè dừa với cơm dừa nạo cùng nước dừa là một trong những món tiêu biểu của truyền thống ấy.",
+    "sources": [
+      {
+        "ref": "aFamily — Khám phá đặc sản Bến Tre",
+        "url": "https://afamily.vn/kham-pha-dac-san-ben-tre-20130810020028297.chn"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

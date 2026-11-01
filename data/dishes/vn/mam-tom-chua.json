@@ -117,6 +117,19 @@
     "queried_at": "2026-08-31"
   },
   "import_note": "Nhập tự động từ Wikidata Q10796553 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Gợi ý nguyên liệu từ Wikidata (tiếng Anh, CHƯA ánh xạ sang data/ingredients/): Metapenaeus ensis. Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] GIỮ Mức 1 — BIEN-THE mô hình khẩu phần: đã tra 4 họ (SKĐS, Dạy Nấu Ăn/Vân Đinh, Công Thức Gia Đình, Pasgo) nhưng mọi công thức định lượng theo mẻ ủ với nước ngâm mắm-đường và hồ bột nếp chiếm tỉ trọng lớn, không quy đổi đáng tin về 30g thành phẩm; tỉ lệ riềng (10-20%), bột nếp (20-40%), đường (12-40%) theo tôm lệch >2 lần giữa các họ. Giữ nguyên bộ số file chờ phương án mô hình hoá thành phẩm được chốt.",
+  "cultural_note": {
+    "text": "Theo câu chuyện được kể lại ở Huế, mắm tôm chua vốn có nguồn gốc từ Gò Công, Tiền Giang, được Thái hậu Từ Dụ mang theo khi về Huế vào khoảng nửa đầu thế kỷ 19, rồi được vua Thiệu Trị và Tự Đức ưa thích nên thường xuất hiện trong các bữa ngự thiện và yến tiệc cung đình. Người Huế chỉ chọn tôm đất, tôm sông nhỏ, trộn với riềng, tỏi, ớt, măng và xôi nếp rồi ủ trong vại sành, xưa còn có cách chôn vại xuống đất chờ tôm lên men. Món mắm này thường được cuốn bánh tráng cùng thịt luộc, dưa giá và rau sống, và ở Huế, tôm chua nổi tiếng nhất là trên đường Đặng Trần Côn.",
+    "sources": [
+      {
+        "ref": "Báo Người Lao Động — Thỏa thích với những món ngon đất Huế",
+        "url": "https://nld.com.vn/mon-ngon-diem-dep/thoa-thich-voi-nhung-mon-ngon-dat-hue-20130729105018979.htm"
+      },
+      {
+        "ref": "Tạp chí Thương hiệu và Công luận — Tôm chua Huế: Hương vị đặc trưng của ẩm thực cố đô",
+        "url": "https://Thuonghieucongluan.com.vn/tom-chua-hue-huong-vi-dac-trung-cua-am-thuc-co-do-a304104.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

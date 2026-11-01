@@ -78,6 +78,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-004 đợt 2 (lô bánh dân gian) mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] GIỮ Mức 1 — BIEN-THE: file trộn hai truyền thống cùng tên: nhãn Nghệ An (nơi 'bánh mật' là bánh ngào luộc ngào trong nước mật mía, không gói lá/hấp — thấy ở tầng kết quả tìm kiếm: My Kitchies, Thực Thần, Tripi với bộ số 150–250g bột nếp nấu cùng ~200ml mật mía và gừng) với phương pháp hấp gói lá của bản Bắc Bộ/Quảng Bình. Chưa mở được họ biên tập có định lượng nào cho bản hấp (bộ số Bách Hóa XANH 200g bột nếp + 50g bột gạo tẻ + 300ml mật mía + 50g đậu xanh chỉ thấy qua trang tổng hợp sao lại, không tính họ). Cần chủ dự án chốt: giữ bản hấp thì sửa vùng/nhãn về Bắc Bộ hoặc Quảng Bình, giữ nhãn Nghệ An thì viết lại thành bánh ngào.",
+  "cultural_note": {
+    "text": "Ở xứ Nghệ, bánh mật là tên gọi khác của bánh ngào – món bánh nếp nấu trong mật mía thường được làm vào đêm giao thừa. Sau cúng tất niên, nhiều gia đình xứ Nghệ sắp mấy bát bánh ngào trên mâm cùng xôi, chè để dâng lên ông bà tổ tiên, và cả nhà quây quần bên bếp: người làm nhân, người cạo gừng thái sợi, người nặn bánh. Bánh làm từ nếp mùa của địa phương và phải “tắm” trong mật mía – ngon nhất được nhắc tới là mật mía Nghĩa Đàn – đun nhỏ lửa cho đến khi bánh săn lại, quyện đậm mật.",
+    "sources": [
+      {
+        "ref": "Tuổi Trẻ — Giao thừa nấu bánh ngào, diễn từ ẩm thực xứ Nghệ, nhớ tuổi thơ dữ dội",
+        "url": "https://tuoitre.vn/giao-thua-nau-banh-ngao-dien-tu-am-thuc-xu-nghe-nho-tuoi-tho-du-doi-20250127193201605.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

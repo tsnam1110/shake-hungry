@@ -62,6 +62,15 @@
     "queried_at": "2026-08-31"
   },
   "import_note": "Nhập tự động từ Wikidata Q10740107 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Gợi ý nguyên liệu từ Wikidata (tiếng Anh, CHƯA ánh xạ sang data/ingredients/): spice, flour, nut. Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [Ghi chú 2026-10-31 — QA-002/Phương án A: trường hợp đặc biệt — bim bim là thành phẩm chiên sẵn, không phải món chiên tại bếp. Dòng dau-an đã bỏ từ CALC-004; dầu của món do hệ số hấp thụ 12 của khoai-tay đảm nhiệm (40 g × 12% = 4,8 g). Lệch +156% trong QA-002 lần 1 là do phía tham chiếu tính từ khoai tây sống cho một snack đã chiên — giới hạn phương pháp đã ghi trong báo cáo, không sửa dữ liệu thêm.] [LV2-012 đợt vét] Giữ Mức 1 — KHONG-CO-CT: không có công thức biên tập định lượng cho định danh bim bim generic (sản phẩm snack thương mại); chỉ có công thức bim bim khoai tây tự làm thuộc định danh khác và không có khẩu phần. Giữ nguyên xử lý đặc biệt QA-002/CALC-004 đã ghi trong import_note.",
+  "cultural_note": {
+    "text": "“Bim bim” vốn là tên riêng của một sản phẩm: Snack Tôm Bimbim của liên doanh Hải Hà – Kotobuki, ra đời ở miền Bắc vào đầu thập niên 1990 và được xem là một trong những loại bánh snack đóng gói đầu tiên nơi đây. Theo lời kể của vị giám đốc thời đó, cái tên được chọn vì trẻ con thích ô tô và tiếng còi “bim bim”, và vì nhãn hàng từng dẫn đầu thị trường nên “bim bim” dần thành danh từ chung chỉ mọi loại snack đóng bịch ở miền Bắc. Trong khi đó, người miền Nam lại gọi chung là “snack” theo gói Snack Cua của Vinabico ra mắt năm 1993, còn nhiều vùng quê miền Trung và miền Tây quen gọi là “oishi” theo thương hiệu đến Việt Nam năm 1997.",
+    "sources": [
+      {
+        "ref": "Saigoneer — Từ bim bim, snack đến oishi: Vì sao mỗi miền gọi món ăn vặt tuổi thơ này một kiểu?",
+        "url": "https://saigoneer.com/vn/snack-attack/17961-t%E1%BB%AB-bim-bim,-snack-%C4%91%E1%BA%BFn-oishi-v%C3%AC-sao-m%E1%BB%97i-mi%E1%BB%81n-g%E1%BB%8Di-m%C3%B3n-%C4%83n-v%E1%BA%B7t-tu%E1%BB%95i-th%C6%A1-n%C3%A0y-m%E1%BB%99t-ki%E1%BB%83u"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

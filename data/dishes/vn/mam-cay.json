@@ -68,6 +68,15 @@
     "queried_at": "2026-08-31"
   },
   "import_note": "Nhập tự động từ Wikidata Q10796545 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Gợi ý nguyên liệu từ Wikidata (tiếng Anh, CHƯA ánh xạ sang data/ingredients/): cáy. Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] GIỮ Mức 1 - reason 429 khi mở nguồn + KHONG-CO-CT: đã tra, mắm cáy chỉ có công thức sản xuất theo mẻ (1 kg cáy : 200-220 g muối ở congthucnauan; 700 g : 200 g ở tripi; 3 bơ : 1 bơ ở Wikipedia), các trang SEO sao chép tỉ lệ 3:1 lẫn nhau; không có công thức biên tập định lượng theo khẩu phần 25 g. Cần nghiên cứu lại khi hết chặn 429.",
+  "cultural_note": {
+    "text": "Mắm cáy gắn với vùng nước lợ ven sông Hồng ở xã Hồng Tiến, huyện Kiến Xương, Thái Bình, nơi nghề bắt cáy và làm mắm cáy đã có từ lâu đời. Mùa cáy nhiều nhất là từ tháng 3 đến tháng 6, người dân đặt bẫy tre với mồi cá tạp và cám rang để dụ cáy, chỉ giữ những con to mẩy và thả lại cáy nhỏ hay cáy đang mang trứng. Cáy giã nhuyễn trộn muối, ủ rồi đem phơi nắng, phơi sương, riêng mắm cáy trong phải ủ trong chum sành một thời gian dài mới chắt lấy nước, tạo nên thứ nước chấm nâu đỏ dùng chấm rau luộc, thịt luộc trong bữa cơm hằng ngày.",
+    "sources": [
+      {
+        "ref": "Tổ chức Kỷ lục Việt Nam (VietKings) — TOP Tinh hoa gia vị Việt 2023 (P.168): Mắm cáy Hồng Tiến (Thái Bình)",
+        "url": "https://kyluc.vn/tin-tuc/top-best/vietkings-bestplus-de-cu-top-tinh-hoa-gia-vi-viet-2023-p-168-mam-cay-hong-tien-thai-binh"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

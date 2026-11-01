@@ -114,6 +114,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Phân xử biến thể: com-hen đã có là cơm hến TRỘN nguội (method tron); bản XÀO nóng là món khác trong thực đơn Huế (cơm hến xào bán phổ biến buổi sáng) — khác method và khác cách ăn, giữ độc lập theo phép thử §3, ghi rõ ở đây để khỏi nhầm trùng. [LV2-009 đợt 9: GIỮ Mức 1 — sai biến thể: cả 3 nguồn đã mở (VinID, Sổ Tay Nấu Ăn, Công Thức Gia Đình) đều là cơm hến TRỘN hoặc bản xào topping để riêng (chính là món com-hen đã có trong kho); không nguồn nào khớp bản xào chung của file và không nguồn nào ghi khẩu phần. Không nhập các thành phần ăn kèm của bản trộn (lạc, mắm ruốc, da heo) vào file xào.] [LV2-010 đợt 10: GIỮ Mức 1 — GIỮ-BIẾN-THỂ (xác nhận lại): thử thêm họ trang đặc sản/toplist Huế (Tripi, Lữ Hành Việt Nam) — mọi mô tả đều là cơm hến TRỘN cơm nguội + hến xào để riêng. Mở lại toàn văn Sổ Tay Nấu Ăn: dù có bước chiên cơm, cơm và hến vẫn nấu RIÊNG hai chảo rồi bày chung, không xào chung như file. Không nguồn biên tập nào khớp biến thể xào chung; đề xuất chuyển sang danh sách chờ chủ dự án xác nhận định danh món.]",
+  "cultural_note": {
+    "text": "Món cơm với hến gắn liền với Cồn Hến, cù lao nhỏ giữa sông Hương ở Huế, nơi tài liệu chép rằng cơm hến đã xuất hiện từ khoảng đầu thế kỷ 19 dưới thời nhà Nguyễn. Chuyện kể lại rằng món ăn ra đời từ bữa cơm của một gia đình chài lưới nghèo: không bắt được cá tôm, họ gom cơm nguội còn lại trộn ăn cùng hến bắt dưới sông, và nước luộc hến được dùng làm canh ăn kèm. Theo thời gian, người dân Cồn Hến gia giảm thêm rau thơm, rau răm, ruốc và gia vị, biến bữa ăn dân dã ấy thành đặc sản quen thuộc của xứ Huế.",
+    "sources": [
+      {
+        "ref": "Thanh Niên — Cơm hến, bánh ép: Từ món ăn thời khó thành đặc sản ẩm thực Huế",
+        "url": "https://thanhnien.vn/com-hen-banh-ep-tu-mon-an-thoi-kho-thanh-dac-san-am-thuc-hue-185260922132318399.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

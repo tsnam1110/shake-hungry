@@ -90,6 +90,15 @@
     "queried_at": "2026-08-31"
   },
   "import_note": "Nhập tự động từ Wikidata Q110834827 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Gợi ý nguyên liệu từ Wikidata (tiếng Anh, CHƯA ánh xạ sang data/ingredients/): mung bean, glutinous rice. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/Banhchay.JPG Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] GIỮ Mức 1 — lý do THIEU-NGUON: đã mở đọc thật 2 họ có định lượng (Điện Máy XANH, Lorca) nhưng hai họ lệch >2 lần ở đậu xanh và đường theo khẩu phần, không đủ đồng thuận ≥2 họ để sửa dòng hay viết bước Mức 2. Bằng chứng đã tra: DMX 200 nếp/200 đậu/200 đường/100 bột năng cho 4 người; Lorca 500 nếp/200 đậu/200 đường/30 bột năng mỗi mẻ. File hiện tại (nếp 60, đậu 30, đường 12, bột năng 5, vừng 2) nằm giữa hai họ ở đậu, thấp ở đường, gần Lorca ở bột năng. Kiểm cứng thuần chay: đạt — cả file và các nguồn truyền thống đều không có nước mắm/trứng/sữa/thịt. Cần thêm một họ biên tập độc lập thứ ba (ví dụ sách dạy nấu hoặc VnExpress/SKĐS có bộ số riêng) mới phân xử được.",
+  "cultural_note": {
+    "text": "Bánh chay là món bánh không thể thiếu trong Tết Hàn thực mùng 3 tháng 3 âm lịch, khi các gia đình làm bánh trôi, bánh chay để lễ Phật và cúng gia tiên. Dân gian kể tục làm hai thứ bánh này nhắc nhớ sự tích “bọc trăm trứng” của Âu Cơ từ thời Hùng Vương. Bánh chay viên to hơn bánh trôi, nhân đậu xanh nấu chín trộn đường và dừa nạo sợi, đựng trong bát và chan thêm chè đường quấy bột sắn dây ướp hoa bưởi.",
+    "sources": [
+      {
+        "ref": "Báo Ảnh Việt Nam (TTXVN) — Bánh trôi bánh chay cúng Tết Hàn thực trong tâm thức người Việt",
+        "url": "https://vietnam.vnanet.vn/vietnamese/print/banh-troi-banh-chay-cung-tet-han-thuc-trong-tam-thuc-nguoi-viet-145250.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

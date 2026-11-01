@@ -105,6 +105,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] Giữ Mức 1 - THIEU-NGUON: tra cứu mở rộng chỉ được 1 họ có gram (Tây Bắc TV, nhà bán hàng, số tự mâu thuẫn giữa các bài của họ); Cookpad (Thu Mèo) và Nhà hàng Quá Ngon xác nhận cấu trúc/gia vị nhưng không định lượng. Sản phẩm chế biến truyền thống, công thức gram chuẩn hoá gần như không tồn tại ngoài kênh bán hàng.",
+  "cultural_note": {
+    "text": "Thịt lợn gác bếp là món thịt khô quen thuộc trong bữa ăn của người Thái và nhiều tộc người ở Tây Bắc, đặc biệt không thể thiếu trong mâm cỗ Tết của vùng cao. Mỗi dịp Tết đến, các gia đình rủ nhau mổ lợn từ sớm, giữ riêng phần thịt nạc để ướp với các gia vị như tỏi, gừng, muối và nhất là mắc khén, rồi xiên vào thanh tre và gác lên bếp củi hun khói nhiều ngày. Những ngày cận Tết, hình ảnh thịt gác bếp treo lủng liểng trên chái bếp là cảnh quen thuộc trong các gia đình Tây Bắc, và khi ăn, thịt thường được chấm cùng chẳm chéo.",
+    "sources": [
+      {
+        "ref": "VietnamNet — Thịt khô trên mâm cỗ Tết người Tây Bắc",
+        "url": "https://vietnamnet.vn/thit-kho-tren-mam-co-tet-nguoi-tay-bac-218233.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

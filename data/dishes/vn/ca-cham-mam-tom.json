@@ -93,6 +93,15 @@
     "queried_at": "2026-08-31"
   },
   "import_note": "Nhập tự động từ Wikidata Q10751546 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Gợi ý nguyên liệu từ Wikidata (tiếng Anh, CHƯA ánh xạ sang data/ingredients/): Solanum macrocarpon, shrimp paste. Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] Giữ Mức 1 — sai nguyên liệu định danh: 3 họ độc lập (Wikipedia, Dân Việt, Cookpad) đều là cà pháo muối; kho chưa có slug ca-phao nên file đang dùng ca-tim làm tạm (bản thân file đã tự ghi chú chờ bổ sung). Đề xuất hàng đợi nguyên liệu: tạo ca-phao (và dạng muối) có hồ sơ nguồn như các nguyên liệu khác; khi có slug, định lượng đã đối chiếu sẵn: cà ~80g/khẩu phần giữ nguyên, mắm tôm chấm rà lại quanh ~5-12g (chén chấm chung). Trang Cookbeo 'Cà pháo mắm tôm' (200g cà pháo + 40ml mắm tôm) đã thử mở nhưng gặp lỗi 429 phía dịch vụ, không tính là họ đã mở.",
+  "cultural_note": {
+    "text": "Cà chấm mắm tôm là món ăn dân gian quen thuộc trong văn hóa ẩm thực Việt Nam, gồm cà pháo đã muối chấm với mắm tôm. Cà pháo được nén ngập trong nước muối pha từ nước đun sôi để nguội, thường vào mùa hè sau 2 đến 3 ngày là ăn được, nên món ăn gắn với nhịp bữa cơm ngày nóng của nhiều gia đình. Cà muối cũng để lại dấu ấn rõ nét trong văn hóa dân gian, qua thành ngữ “Tương cà là gia bản” và câu ca dao “Nhớ canh rau muống, nhớ cà dầm tương”.",
+    "sources": [
+      {
+        "ref": "Wikipedia tiếng Việt — Cà chấm mắm tôm",
+        "url": "https://vi.wikipedia.org/wiki/C%C3%A0_ch%E1%BA%A5m_m%E1%BA%AFm_t%C3%B4m"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

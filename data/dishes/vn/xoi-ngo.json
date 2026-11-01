@@ -93,6 +93,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) GỘP BIẾN THỂ 2026-10-31 (tầm soát + quyết định của chủ dự án): chuyển thành BIẾN THỂ miền Bắc của xoi-bap — bắp (Nam) và ngô (Bắc) là hai tên của cùng một món; hai file vốn đã alias qua lại. Khác biệt của biến thể Bắc: tối giản — không đậu xanh, không đường, nước cốt dừa 15 g (bản Nam của món chuẩn: đậu xanh 40 g, đường 8 g, cốt dừa 30 g), serving 230 g. Định lượng giữ nguyên bản gốc của biến thể. [LV2-012 đợt vét] GIỮ Mức 1 — BIEN-THE: đã mở đọc 3 họ (2 họ xôi ngô/xéo miền Bắc: VietFoodShop, Bách Hóa XANH; 1 họ xôi ngô ngọt: bau.vn). Import_note hiện tại khẳng định biến thể Bắc 'không đậu xanh, cốt dừa 15g' bị 2/2 họ Bắc bác bỏ (đậu xanh là thành phần định danh của xôi xéo ngô, tỉ lệ 43-150g/khẩu phần tuỳ họ; không họ Bắc nào dùng nước cốt dừa). Nếu sửa theo họ Bắc (thêm dau-xanh-hat, bỏ cốt dừa, đổi ngô nếp) món sẽ gần trùng xoi-bap chuẩn đã Mức 2; nếu giữ cấu trúc hiện tại thì phải đổi định danh thành xôi ngô ngọt và bỏ nhãn biến thể Bắc. Chờ chủ dự án phân xử, không tự sửa. Hai lượt mở Cookpad (xôi lúa Bắc) gặp 429 của dịch vụ duyệt web, không dùng làm bằng chứng.",
+  "cultural_note": {
+    "text": "Xôi ngô, còn gọi là xôi lúa hay xôi bắp, là loại xôi đặc trưng của Bắc Bộ gắn với vùng đất ven sông ở ba xã Duyên Hà, Vạn Phúc và Yên Mỹ thuộc Thanh Trì, Hà Nội, nơi người dân gọi bắp ngô là 'bắp lúa'. Xưa kia món này không dùng gạo nếp mà lấy hạt ngô ngâm nước vôi, đãi vỏ rồi bung với hành mỡ; ngày nay người ta thường đồ xen ngô nếp với gạo nếp. Dù là món xôi dân dã ít khi dùng làm đồ thờ cúng, một số địa phương ngoại thành Hà Nội vẫn dùng xôi lúa để cúng tổ tiên trong ngày hội cơm mới, và xôi làng Tương Mai là nơi nổi tiếng nhất với món này.",
+    "sources": [
+      {
+        "ref": "Wikipedia tiếng Việt — Xôi",
+        "url": "https://vi.wikipedia.org/wiki/X%C3%B4i"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

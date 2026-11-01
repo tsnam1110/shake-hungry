@@ -107,6 +107,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). THIẾU NGUYÊN LIỆU: lá gai (chính — tạo màu đen và hương đặc trưng của bánh ít Bình Định) — cần bổ sung vào kho. [LV2-012 đợt vét] Giữ Mức 1: file lẫn biến thể — bước làm nhắc lá gai/vỏ đen (thuộc banh-it-la-gai) nhưng nguyên liệu là nhân đậu xanh–dừa vỏ thường; nguồn định lượng mở được chia giữa ít trần lá dứa và ít nhân dừa–đậu phộng miền Tây, không đủ 3 họ độc lập cho đúng cấu hình file. Cần chủ dự án chốt định danh món này (ít gói lá nhân đậu xanh–dừa, bỏ chi tiết lá gai) trước khi nâng.",
+  "cultural_note": {
+    "text": "Bánh ít là thức bánh gắn với đời sống trọng tình nghĩa của người miền Trung, nổi tiếng nhất là bánh ít lá gai của Bình Định, làm từ bột nếp quết với lá gai, nhân đậu xanh hoặc dừa, gói trong lá chuối. Chiếc bánh gói thành hình tháp gợi liên tưởng tới những ngọn tháp Chăm của xứ Đồ Bàn xưa, mà cụm tháp ở Tuy Phước còn được dân gian gọi là tháp Bánh Ít. Người Bình Định thường làm bánh ít để cúng giỗ ông bà, cho con gái hồi dâu và làm quà biếu người thân, như câu ca dao “Muốn ăn bánh ít lá gai, lấy chồng Bình Định cho dài đường đi”.",
+    "sources": [
+      {
+        "ref": "Tạp chí điện tử Thế giới Di sản — Bánh ít lá gai Bình Định",
+        "url": "http://thegioidisan.vn/vi/banh-it-la-gai-binh-dinh.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

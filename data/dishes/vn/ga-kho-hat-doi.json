@@ -122,6 +122,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] GIỮ Mức 1 — mã TRAN-NL: hat-doi là nguyên liệu định danh nhưng chưa có số dinh dưỡng đạt chuẩn ở bất kỳ bảng thành phần nào (hồ sơ null đã ghi trong data/ingredients/hat-doi.json); đưa vào hàng đợi nghiên cứu nguyên liệu riêng như mắm cá sặc/linh ở LV2-006. Thêm bất thường: tra cứu mức tìm kiếm đợt này chỉ thấy gà NƯỚNG hạt dổi/mắc khén (Dân Việt, Bếp MiNa...), không tìm thấy công thức gà KHO hạt dổi độc lập nào — biến thể 'kho' có nguy cơ là sáng tạo biên tập DISH-004, cần chủ dự án xác nhận tồn tại trước khi đầu tư tra cứu sâu.",
+  "cultural_note": {
+    "text": "Hạt dổi, cùng với mắc khén, là một trong hai loại gia vị đặc trưng của ẩm thực Tây Bắc. Từ xưa, đồng bào Thái ở vùng này đã dùng hạt dổi làm gia vị chấm và gia vị ướp các món ăn cổ truyền; hạt dổi phải được nướng nhanh trên than hồng cho nở căng, dậy mùi thơm ngào ngạt rồi mới giã nhỏ để dùng. Gà kho hạt dổi đưa tập quán dùng gia vị rừng ấy vào món kho, tạo mùi thơm riêng gắn với bếp của đồng bào vùng cao.",
+    "sources": [
+      {
+        "ref": "VietnamNet — Những gia vị trứ danh vùng Tây Bắc",
+        "url": "https://vietnamnet.vn/nhung-gia-vi-tru-danh-vung-tay-bac-259188.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

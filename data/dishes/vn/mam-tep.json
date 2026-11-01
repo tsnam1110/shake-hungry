@@ -68,6 +68,15 @@
     "queried_at": "2026-08-31"
   },
   "import_note": "Nhập tự động từ Wikidata Q10796551 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Gợi ý nguyên liệu từ Wikidata (tiếng Anh, CHƯA ánh xạ sang data/ingredients/): Caridina flavilineata. Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] GIỮ Mức 1 — THIEU-NGUON: chỉ xác định được 2 họ có định lượng (ViFoodShop; cụm Memart/TriHung sao chép cùng bộ số) và đều là nguồn thương mại/SEO yếu, lại lệch nhau muối 100 vs 200g/kg tép, thính 500 vs 200g/kg — không đạt chuẩn ≥3 họ biên tập độc lập để nâng Mức 2.",
+  "cultural_note": {
+    "text": "Ở làng Đình Trung, xã Yên Dương, huyện Hà Trung, Thanh Hóa, mắm tép được làm từ con tép riu nhỏ, xanh trong, chỉ có nhiều trên đoạn sông Hoạt chảy qua địa phương. Theo lời các cụ cao tuổi trong làng, xưa kia những vại mắm ngon nhất được chọn để cung tiến nhà vua, nên món này còn được gọi là 'mắm tép tiến vua'; tép đánh về vào khoảng tháng 11–12 âm lịch, ăn không hết mới được đem muối thành mắm để giữ lâu. Tép được trộn muối và thính gạo rang, ủ trong chum sành đã ngâm qua bã rượu; khi chưng lên, mắm có màu đỏ au và thường có mặt trong mâm cơm của người dân xứ Thanh.",
+    "sources": [
+      {
+        "ref": "Dân Việt — Thanh Hoá: Thứ mắm nhà quê nổi như cồn, từng tiến vua được dân làm từ loài tép gì?",
+        "url": "https://danviet.vn/thanh-hoa-thu-mam-nha-que-noi-nhu-con-tung-tien-vua-duoc-dan-lam-tu-loai-tep-gi-20200809215734595-d50191.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

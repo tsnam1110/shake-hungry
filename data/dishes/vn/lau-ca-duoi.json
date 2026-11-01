@@ -146,6 +146,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. THIẾU NGUYÊN LIỆU: cá đuối (slug ca-duoi — nguyên liệu chính của món) — cần bổ sung vào kho. [LV2-010 đợt 10: GIU-BIEN-THE — đã mở DMX, Bluestone, Hướng Nghiệp Á Âu. File lai me/măng chua nhưng dòng măng là mang-tuoi, thiếu la-giang; định lượng cá giữa các họ măng chua 117–250 g/người, bất đồng >30% nên giữ nguyên định lượng. Chờ phân xử biến thể + slug măng chua (kcal null) rồi làm lại.]",
+  "cultural_note": {
+    "text": "Lẩu cá đuối là một trong những món đặc sản của thành phố biển Vũng Tàu, đến mức nhiều du khách cho rằng đi Vũng Tàu mà không ăn lẩu cá đuối thì coi như chưa đến nơi đây. Cá đuối được đánh bắt ngay tại vùng biển địa phương nên luôn tươi; phần nước lẩu có vị chua chua ngọt ngọt, thường được ăn kèm với bún hoặc mì tuỳ sở thích.",
+    "sources": [
+      {
+        "ref": "VietnamNet — Đặc sản Vũng Tàu thơm ngon, độc lạ du khách say mê thưởng thức",
+        "url": "https://vietnamnet.vn/dac-san-vung-tau-thom-ngon-doc-la-du-khach-say-me-thuong-thuc-2103061.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

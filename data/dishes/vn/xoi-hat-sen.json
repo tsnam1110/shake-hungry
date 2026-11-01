@@ -82,6 +82,19 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-011 đợt 11: GIỮ Mức 1 — GIU-THIEU-NGUON: phần lớn trang web là MỘT họ sao chép lẫn nhau (bộ số 500 g nếp + 200 g hạt sen tươi + 100 g dừa nạo + 1 muỗng canh nước cốt dừa xuất hiện gần như nguyên văn ở nhiều site, tính là 1 họ; quy đổi ~125 g nếp + 50 g hạt sen mỗi khẩu phần cho 4 người — file lệch <30% nên dù sao cũng không sửa); các họ độc lập còn lại (PasGo bản lá dứa: nếp 500 g + sen 200 g + nước cốt dừa 50 ml; SKĐS/Thu Hà: nếp 1 lon + sen tươi 100 g) đều không ghi số khẩu phần, chỉ khớp tỉ lệ sen/nếp 33–40% so với file ~27% — chưa đủ 3 họ quy đổi được về khẩu phần.]",
+  "cultural_note": {
+    "text": "Xôi hạt sen mang tính mùa vụ rõ rệt: ở Hà Nội, xôi hạt sen cùng xôi cốm thường phải chờ đến mùa thu và chỉ xuất hiện trong khoảng vài tuần. Ở Đồng Tháp, nơi được gọi là thủ phủ sen, hạt sen được dùng làm đủ món như cơm, xôi, chè, và xôi sen gói trong lá sen từng được giới thiệu tại phố ẩm thực của Lễ hội Sen Đồng Tháp như một món quà quê gợi nhớ bánh dân gian thuở nhỏ. Hạt sen bùi trộn trong nếp dẻo vì thế gắn liền với mùa sen và mùa thu hơn là một món ăn quanh năm.",
+    "sources": [
+      {
+        "ref": "VnExpress — Phố ẩm thực sen hút khách ở Đồng Tháp",
+        "url": "https://vnexpress.net/pho-am-thuc-sen-hut-khach-o-dong-thap-4747071.html"
+      },
+      {
+        "ref": "VnExpress — Xôi, bữa sáng ngon miệng của người Hà Nội",
+        "url": "https://vnexpress.net/xoi-bua-sang-ngon-mieng-cua-nguoi-ha-noi-2927364.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

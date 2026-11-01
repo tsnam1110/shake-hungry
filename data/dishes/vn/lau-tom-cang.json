@@ -142,6 +142,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-010 đợt 10: GIU-BIEN-THE — đã mở DMX (125 g tôm/người, nền cà ri–cốt dừa), Bách hoá XANH qua bản sao (250 g/người, nền nước dừa–me), Cookpad Bòn Bon (2 con/người, nước lẩu Thái sẵn; bún 167 g/người, rau muống 50 g/người, cà chua ~40 g/người khớp file). File là nền Tom Yum tự pha sả–riềng–lá chanh–chanh, không họ nào trùng; định danh bất đồng 100% nên giữ nguyên.]",
+  "cultural_note": {
+    "text": "Ở miền sông nước Nam Bộ, tôm càng xanh là đặc sản nổi tiếng, và dọc sông Đồng Nai, từ khoảng tháng 9, tháng 10 — sau mùa mưa — là mùa săn tôm càng, khi người dân đặt lọp tre từ chiều hôm trước để sáng hôm sau thu hoạch. Tại Biên Hòa, quán lẩu tôm 5 Ri gây dựng từ nguồn tôm càng dồi dào của địa phương đã hơn 30 năm tuổi, trở thành địa chỉ mà nhiều gia đình không ngại vượt hàng chục kilômét tìm đến. Nồi lẩu chua thanh ăn cùng bún tươi vì thế gắn liền với câu chuyện mưu sinh ven sông và thói quen sum họp gia đình.",
+    "sources": [
+      {
+        "ref": "Báo Tổ Quốc (đăng lại trên CafeBiz) — Quán lẩu tôm càng hơn 30 năm tuổi nằm khuất trong hẻm sâu nhưng lúc nào cũng đông khách, nhiều gia đình không ngại vượt hàng chục km tới ăn",
+        "url": "https://cafebiz.vn/quan-lau-tom-cang-hon-30-nam-tuoi-nam-khuat-trong-hem-sau-nhung-luc-nao-cung-dong-khach-nhieu-gia-dinh-khong-ngai-vuot-hang-chuc-km-toi-an-176240827112053179.chn"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

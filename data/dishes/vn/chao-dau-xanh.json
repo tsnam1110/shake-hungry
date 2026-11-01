@@ -118,6 +118,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 đợt 2 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-008 đợt 8: HOLD do 429 khi mở nguồn thứ ba (vaobepwiki) — dừng theo brief, không retry, không dùng trích đoạn tìm kiếm thay trang đã mở. Mới có 1 nguồn đạt chuẩn đã mở (NauAnKhongKho). Cần làm lại ở đợt sau khi hết chặn để gom đủ >=3 nguồn đạt chuẩn rồi mới phân xử định lượng.] [LV2-009 đợt 9: GIỮ Mức 1 — CHỜ QUYẾT ĐỊNH DANH của chủ dự án (mục mới): tên món là bản thường nhưng thành phần (thịt xay 50 g, hành phi, nước mắm) là bản thịt bằm. Đã mở 2 họ: Tripi — bản THƯỜNG (gạo 200 g → 67–100 g/khẩu phần, đậu xanh nguyên hạt 30 g → 10–15 g, tía tô, muối; không thịt, không mắm, không hành phi) và Nấu Ăn Không Khó — bản THỊT BẰM (đậu 100 g, thịt 200 g, gạo ~200 g, hạt nêm; không nước mắm). Hai phương án chờ quyết: (a) đổi tên thành 'Cháo đậu xanh thịt bằm' và chuẩn hoá theo họ thịt bằm; (b) giữ tên bản thường và bỏ thịt/hành phi/nước mắm khỏi file. Dòng nuoc-mam-truyen-thong là 0/2 họ ở CẢ hai biến thể; lượng thịt trong họ thịt bằm cũng bất đồng >30%.] [LV2-010 Phần C — gói quyết định chủ dự án 2026-10-31: A1 XÉT LẠI theo gói duyệt: GIỮ NGUYÊN + báo lại. Hồ sơ LV2-009 §B.3 chỉ có 2 phương án loại trừ lẫn nhau — (a) đổi tên 'Cháo đậu xanh thịt bằm' + chuẩn hoá theo họ thịt bằm, (b) bỏ thịt/hành phi/mắm về bản thuần — mà gói duyệt không chỉ định phương án nào, và KHÔNG phương án nào có bộ sửa định lượng soạn sẵn như canh-ba-roi-nau-dau: mới mở được 2 họ (Tripi bản thuần, Nấu Ăn Không Khó bản thịt bằm), lượng thịt giữa các họ thịt bằm bất đồng >30%, cổng Mức 2 (≥3 họ) chưa đạt ở cả hai hướng. Không tự chế phương án — chờ chủ dự án chỉ định (a) hoặc (b).]",
+  "cultural_note": {
+    "text": "Cháo đậu xanh thuộc nhóm cháo đậu truyền thống của người Việt, được nhắc đến như món ăn đã có từ hàng trăm năm nay và đặc biệt quen thuộc ở Hà Nội. Đậu xanh được ngâm mềm rồi nấu cùng gạo, ninh nhỏ lửa trong nồi gang trên bếp than cho hạt gạo và đậu quyện thành cháo sánh. Trong ký ức của nhiều người Hà Nội, nồi cháo đậu do bà nấu mỗi sáng mùa hè, ăn kèm đậu phụ rán và cà pháo muối, là hình ảnh thân thuộc của bữa ăn gia đình xưa.",
+    "sources": [
+      {
+        "ref": "VietnamNet — Summer the perfect time to chow down on cháo",
+        "url": "https://vietnamnet.vn/en/summer-the-perfect-time-to-chow-down-on-chao-563199.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

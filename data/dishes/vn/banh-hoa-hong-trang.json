@@ -114,6 +114,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-004 đợt 2 (lô bánh dân gian) mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] Giữ Mức 1 (429): mở nguồn định lượng (Tripi) gặp 429 nên dừng theo quy tắc; nguồn đã mở được (Wikipedia) chỉ mô tả, không định lượng. Cần tra lại ở đợt sau khi hết chặn.",
+  "cultural_note": {
+    "text": "“Hoa hồng trắng” là tên gọi ưu ái dành cho cặp bánh bao – bánh vạc, một trong những đặc sản nổi tiếng nhất của phố cổ Hội An. Cặp bánh có gốc từ há cảo Trung Hoa, do người gốc Hoa đến Hội An sinh sống sáng tạo, và được gọi là hoa hồng trắng nhờ tạo hình nhỏ nhắn cùng màu trắng tinh khôi của lớp vỏ bột gạo. Trong cặp bánh, bánh bao nhân chả tôm xào hành tiêu, còn bánh vạc cũng dùng chả tôm nhưng thêm thịt heo, nấm mèo, măng tre và hành lá.",
+    "sources": [
+      {
+        "ref": "Wikipedia tiếng Việt — Bánh hoa hồng trắng",
+        "url": "https://vi.wikipedia.org/wiki/B%C3%A1nh_hoa_h%E1%BB%93ng_tr%E1%BA%AFng"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

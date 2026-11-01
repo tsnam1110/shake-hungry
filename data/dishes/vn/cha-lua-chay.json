@@ -130,6 +130,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [LV2-012 đợt vét] GIỮ Mức 1 — TRAN-NL: nguyên liệu thành phẩm cha-lua-chay vẫn null (kiểm lại 2026-10-31, hồ sơ DISH-005). Đã mở 3 họ công thức: biến thể file (đậu phụ + tàu hũ ky + bột năng) chỉ có BlueStone ủng hộ (tỉ lệ đậu:tàu ~95:36/150g, ngược với file 60:60); Gia Vị Hạnh Phúc và Bách Hóa XANH đều làm đơn nền tàu hũ ky. Cần quyết định biến thể chuẩn + bổ sung số cho nguyên liệu cha-lua-chay mới nâng được.",
+  "cultural_note": {
+    "text": "Chả lụa chay — còn gọi là giò lụa chay — là phiên bản chay của món giò lụa quen thuộc, làm từ đậu xanh giã nhuyễn trộn nấm hương và lá mơ, gói trong lá chuối rồi hấp thành đòn như bản mặn. Món ăn là một phần quen thuộc của mâm cúng chay trong ngày lễ Vu Lan, rằm tháng 7, bên cạnh mâm cúng gia tiên. Giữ nguyên hình thức đòn chả gói lá, món chay này giúp mâm cỗ ngày rằm vẫn tươm tất theo nếp cũ của gia đình Việt.",
+    "sources": [
+      {
+        "ref": "Báo Người Lao Động (đăng trên Tuổi Trẻ Online) — Các món ăn ngày lễ Vu Lan ý nghĩa, ngon khó cưỡng",
+        "url": "https://tuoitre.vn/nld/chuyen-trang-phu-nu/cac-mon-an-ngay-le-vu-lan-y-nghia-ngon-kho-cuong-20200827153211364.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

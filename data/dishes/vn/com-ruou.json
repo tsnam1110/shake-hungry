@@ -74,6 +74,19 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. THIẾU NGUYÊN LIỆU: men rượu (phụ — chất lên men) — cần bổ sung vào kho. [LV2-012 đợt vét] Giữ Mức 1 — TRAN-NL: men rượu/men ngọt là nguyên liệu quyết định định danh món nhưng kho chưa có slug (men-no là men bánh mì, không thay thế được). Đã mở đọc 3 họ độc lập (Thanh Niên, Cookpad Aloha Do, Tripi 3 biến thể vùng): tỉ lệ men thống nhất ~1-1,5% lượng nếp sống, ủ 2-5 ngày. Khi kho bổ sung được slug men-ruou (kèm hồ sơ số/không số) thì đợt sau có thể nâng ngay; đồng thời cần rà lại dòng gao-nep 120g và bỏ đường trắng/lá dứa (0/3 họ ủng hộ ở khâu ủ).",
+  "cultural_note": {
+    "text": "Cơm rượu gắn chặt với Tết Đoan Ngọ mùng 5 tháng 5 âm lịch — dịp lễ quan trọng thứ hai trong năm sau Tết Nguyên Đán, còn được gọi là Tết Nửa năm và theo cách gọi dân gian là tết \"diệt sâu bọ\", hình thành từ nền văn minh nông nghiệp lúa nước. Theo quan niệm dân gian, ăn cơm rượu vào ngày này là một tập quán gắn với thời điểm chuyển mùa trong năm. Ở miền Nam, cơm rượu có nét riêng: nếp được vo thành từng viên tròn trước khi ủ, bày trên mâm cúng cùng bánh ú tro và thường được ăn kèm với xôi vò.",
+    "sources": [
+      {
+        "ref": "Lao Động — Tết Đoan Ngọ ở 3 miền Bắc – Trung – Nam khác nhau thế nào?",
+        "url": "https://laodong.vn/van-hoa/tet-doan-ngo-o-3-mien-bac-trung-nam-khac-nhau-the-nao-814964.ldo"
+      },
+      {
+        "ref": "Thanh Niên — Vì sao người miền Nam ăn bánh tro và cơm rượu Tết Đoan Ngọ?",
+        "url": "https://thanhnien.vn/vi-sao-nguoi-mien-nam-an-banh-tro-va-com-ruou-tet-doan-ngo-185968319.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

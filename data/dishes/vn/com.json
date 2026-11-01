@@ -56,6 +56,15 @@
     "queried_at": "2026-08-31"
   },
   "import_note": "Nhập tự động từ Wikidata Q5202996 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/Com.JPG Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] Giữ Mức 1 — CHUA-BIEN-SOAN: file nhập Wikidata chưa qua biên soạn, dòng duy nhất gao-nep 60g do chính file ghi là 'tạm tính'. Đã mở đọc VietnamNet/Dân trí và Nông nghiệp Hữu cơ VN: cốm làng Vòng là sản phẩm làng nghề ăn liền, quy trình theo mẻ (rang ~30 phút, giã ~7 lần), không có công thức biên tập định lượng theo khẩu phần để đối chiếu ≥3 họ. Kho đã có nguyên liệu com-xanh có số — đề xuất biên tập viên xét thay dòng tạm gao-nep bằng com-xanh 60g ở đợt biên soạn riêng, không qua cổng nâng Mức 2 này.",
+  "cultural_note": {
+    "text": "Cốm làng Vòng là thức quà đặc trưng của mùa thu Hà Nội, làm từ lúa nếp cái hoa vàng gặt khi hạt đang thì chín sữa. Nghề làm cốm ở làng Vòng (nay thuộc phường Dịch Vọng, quận Cầu Giấy) đã có từ lâu đời, và xưa kia cốm từng là món được dùng để tiến vua, mỗi năm chỉ có vào dịp thu về. Làm cốm rất kỳ công: hạt nếp tuốt xong phải rang và giã tới bảy lần, làm ngay trong ngày gặt, và hạt cốm thành phẩm thường được gói trong lá sen để giữ hương thơm.",
+    "sources": [
+      {
+        "ref": "Thanh Niên — Cốm Vòng – đặc sản Hà Nội",
+        "url": "https://thanhnien.vn/com-vong-dac-san-ha-noi-185119655.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

@@ -126,6 +126,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 đợt 2 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-009 đợt 9: GIỮ Mức 1 — thiếu nguồn đúng biến thể (kịch bản đã dự báo từ vòng 1). Đã mở 3 họ ở vòng 2 nhưng không họ nào đạt chuẩn biên tập + đúng biến thể chay của file + có khẩu phần: Cookpad Lavender 'Cháo nấm chay' (4 phần — nền cơm nguội/gạo nếp, nấm chính là nấm rơm nhưng kèm nấm đùi gà và bí đỏ; hạt sen chỉ là phụ), Elmich (blog thương hiệu — đúng cặp nấm rơm + cà rốt nhưng không khẩu phần, không lượng gạo), SaigoneSebaguette (site SEO — nấm chính là nấm đùi gà, thêm tàu hũ ky, không khẩu phần). Định danh món không bịa (hạt sen + nấm + cà rốt bản chay được 3/3 họ xác nhận), nhưng nấm chính chia hai phe và chỉ 1/3 họ có khẩu phần — không đủ đồng thuận để sửa bất kỳ dòng nào. Các trang biên tập lớn chỉ có biến thể mặn — không mượn nguồn mặn theo kỷ luật đợt. Mở lại khi có ≥2 nguồn biên tập/UGC chất lượng có khẩu phần cho đúng biến thể nấm rơm–cà rốt–nước tương, hoặc chủ dự án quyết định lại định danh.] [LV2-010 đợt 10: GIỮ Mức 1 — GIU-THIEU-NGUON. Mở thêm: Elmich (đúng nấm rơm + cà rốt nhưng không khẩu phần, không lượng gạo, thêm khoai tây), Phụ Nữ Today (nấm hương + bông cải + gạo nếp trộn, không khẩu phần; bản KimHung là sao chép cùng họ), ChoLaiThieu có khẩu phần 3–4 người nhưng là SEO vô danh nên loại (gạo/người khớp file, hạt sen/người chỉ 25–33 g so với file 60 g, nấm chính là đùi gà). Vẫn thiếu ≥2 họ đạt chuẩn có khẩu phần cho đúng biến thể — không sửa dòng nào.] [LV2-011 đợt 11: GIỮ Mức 1 — GIU-THIEU-NGUON. Tìm họ MỚI ngoài các họ đợt 9–10: mở Cookpad Vân Phạm 'Cháo nấm hầm sen' (đúng cặp nấm rơm + cà rốt, nền cơm nguội, thêm nấm bào ngư + khoai tây) — không gram, không khẩu phần ('ít hạt sen/nấm'), không quy đổi được. Các kết quả mới khác đều trùng họ cũ hoặc không đạt chuẩn (MerakiCenter là bản sao chép của họ KimHung/Phụ Nữ Today; memart là SEO vô danh, nấm chính là nấm hương + bông cải). Vẫn thiếu ≥2 họ đạt chuẩn có khẩu phần cho đúng biến thể nấm rơm–cà rốt — không sửa dòng nào.]",
+  "cultural_note": {
+    "text": "Ở Huế, hạt sen gắn liền với hồ Tịnh Tâm trong khu thành nội — hồ vốn là ngự uyển của triều Nguyễn, được cải tạo từ năm Minh Mạng thứ 3 (1822) và từng được vua Thiệu Trị xếp vào hàng thắng cảnh đất kinh đô. Giống sen trắng trồng ở hồ được gọi là \"sen ngự\" vì hoa và hạt từng được khai thác để dâng vua. Hạt sen Tịnh Tâm đi vào nhiều món ăn của ẩm thực Huế như chè sen, cơm sen và các món súp, hầm, và là nguyên liệu được trân trọng trong ẩm thực của đất cố đô.",
+    "sources": [
+      {
+        "ref": "Báo Ảnh Việt Nam (TTXVN) — Tịnh Tâm mùa sen trắng",
+        "url": "https://vietnam.vnanet.vn/vietnamese/long-form/tinh-tam-mua-sen-trang-334235.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

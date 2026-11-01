@@ -94,6 +94,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-004 đợt 2 (lô bánh dân gian) mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] Giữ Mức 1 — THIEU-NGUON: đã mở đọc Dạy Làm Bánh Ngon (họ A, bị Beemart/Nấu Chuẩn sao chép), Bếp MiNa (họ B) và tra VietnamNet (chỉ mô tả, không số); trang Toyenxin là aggregator nên loại. Mới có 2 họ định lượng độc lập, chưa đủ ≥3 họ theo cổng Mức 2.",
+  "cultural_note": {
+    "text": "Bánh ống lá dứa, còn được gọi là bánh cốm ống, là món bánh của đồng bào Khmer Nam Bộ, quen thuộc nhất ở vùng Trà Vinh cũ quanh danh thắng ao Bà Om. Bột gạo pha thêm chút bột nếp, đường và nước cốt dừa được nén vào ống — xưa là ống tre gai, nay là ống inox — hấp cách thuỷ chỉ vài phút, cho ra chiếc bánh xanh màu lá dứa gói trong lá chuối. Đây là món không thể thiếu trong các dịp lễ hội lớn của người Khmer như Chôl Chnăm Thmây, Ooc Om Boc và Sen Đôn Ta, đồng thời là món quà vặt gắn với tuổi thơ của nhiều thế hệ ở miền Tây.",
+    "sources": [
+      {
+        "ref": "Thanh Niên — Bánh cốm ống của người Khmer: Món ăn tỏa khói nghi ngút bên ao Bà Om",
+        "url": "https://thanhnien.vn/banh-com-ong-cua-nguoi-khmer-mon-an-toa-khoi-nghi-ngut-ben-ao-ba-om-185260413151608632.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

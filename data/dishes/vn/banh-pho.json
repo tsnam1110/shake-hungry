@@ -64,6 +64,15 @@
     "queried_at": "2026-08-31"
   },
   "import_note": "Nhập tự động từ Wikidata Q61127179 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/Pho%20rice%20noodle%20PC210323.jpg Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] Giữ Mức 1 (KHONG-CO-CT): đã mở đọc BlueStone và YeuTre — hai trang dùng chung một bộ số/nguồn video nên chỉ tính 1 họ, và cả hai đều là quy trình làm sợi phở từ bột, không phải công thức cho định danh file (bánh phở tươi thành phẩm, 1 nguyên liệu, method 'song'). Muốn nâng phải đổi file thành món tự làm sợi (bột gạo + bột năng + nước) — thay đổi định danh cần chủ dự án chốt trước.",
+  "cultural_note": {
+    "text": "Bánh phở là phần sợi bánh làm nên món phở, và một trong những cái nôi của nghề là thôn Vân Cù ở Nam Định, quê hương của dòng họ Cồ với thương hiệu phở Cồ. Theo lời kể của các cụ cao niên trong làng, xưa người Vân Cù làm bánh đa gạo phơi khô mang lên phố bán; gặp những tháng mưa phùn không có nắng phơi, bánh tươi bán ra lại được người thành thị ưa chuộng, rồi được thái nhỏ thành sợi, chan nước dùng và thành món phở theo chân người làng gánh đi bán khắp nơi. Bánh phở Vân Cù xưa làm hoàn toàn thủ công — xay bột nước bằng cối đá, tráng bánh bằng que tre, thái sợi bằng tay — và nghề làm bánh, nấu phở đến nay vẫn được nhiều gia đình trong làng giữ làm kế sinh nhai truyền đời.",
+    "sources": [
+      {
+        "ref": "Báo Nam Định — Độc đáo “bánh phở tươi” Vân Cù",
+        "url": "https://baonamdinh.vn/phong-su-ky-su/202303/doc-dao-banh-pho-tuoi-van-cu-cf77256/"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

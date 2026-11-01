@@ -94,6 +94,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-004 đợt 2 (lô bánh dân gian) mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] Giữ Mức 1 — BIEN-THE: đã mở đọc 3 họ (họ Cook Béo qua Review Ẩm Thực, My Kitchies, Thucthan). Định danh chuẩn là bánh nếp ngào MẬT MÍA + gừng, nhân tùy chọn; file dùng đường trắng + nhân lạc + dừa nạo làm cốt lõi nên lệch biến thể. Kho chưa có slug nguyên liệu mật mía nên chưa sửa đúng định danh được — cần biên soạn nguyên liệu mật mía trước, đợt sau mới nâng được.",
+  "cultural_note": {
+    "text": "Bánh ngào là món bánh Tết đặc trưng của xứ Nghệ, gắn với những làng quê như Bắc Xuân ở Diễn Châu, Nghệ An, nơi ngày thường nhiều nhà làm bánh mướt thì ngày Tết chuyển sang xay gạo nếp nấu bánh ngào. Điểm làm nên bản sắc của bánh là không nấu bằng nước đường mà phải ngào trong mật mía cho đến khi bánh “sắc mật” – săn lại và quyện đậm mật – rồi mới cho gừng thái sợi vào. Bánh có cả nhân mặn và nhân ngọt, được múc ra bát sắp lên mâm cúng giao thừa cùng xôi và chè dâng tổ tiên.",
+    "sources": [
+      {
+        "ref": "Tuổi Trẻ — Giao thừa nấu bánh ngào, diễn từ ẩm thực xứ Nghệ, nhớ tuổi thơ dữ dội",
+        "url": "https://tuoitre.vn/giao-thua-nau-banh-ngao-dien-tu-am-thuc-xu-nghe-nho-tuoi-tho-du-doi-20250127193201605.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

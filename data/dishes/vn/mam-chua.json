@@ -92,6 +92,15 @@
     "queried_at": "2026-08-31"
   },
   "import_note": "Nhập tự động từ Wikidata Q10796544 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Gợi ý nguyên liệu từ Wikidata (tiếng Anh, CHƯA ánh xạ sang data/ingredients/): toasted rice powder, Acetes. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/M%E1%BA%AFm%20chua%20Thanh%20H%C3%B3a%20-%20Acetes%20paste%20from%20Vietnam%20-1.JPG Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] GIỮ Mức 1 - reason 429 khi mở nguồn + KHONG-CO-CT: đã tra 3 trang mô tả mắm chua Vĩnh Hưng, cả 3 là 1 họ sao chép, chỉ kể quy trình ủ (cá rô/cá sặc + muối/đường/thính/tỏi/ớt/riềng) không một con số gram; không tồn tại công thức biên tập định lượng theo khẩu phần cho định danh này. Cần nghiên cứu lại khi hết chặn 429.",
+  "cultural_note": {
+    "text": "Mắm chua Tây Ninh có gốc gác từ ẩm thực của người Khmer sống ven sông suối, bưng biền ở vùng biên giới Tây Ninh, vốn dùng mắm để nêm nếm và chấm cùng khoai sắn, cơm hay nếp. Người Kinh tiếp nhận món mắm này rồi phát triển theo khẩu vị riêng, làm nên mắm chua Tây Ninh trứ danh. Nguyên liệu xưa là các loài cá nhỏ mềm xương bắt ở sông Vàm Cỏ Đông, sông Sài Gòn và kênh rạch như cá linh, cá chốt, cá rô, cá lòng tong; ngày nay cá cơm nước ngọt trong lòng hồ Dầu Tiếng được dùng nhiều vì sẵn có quanh năm, cá trộn muối ủ trong khạp rồi trộn thính, khoảng nửa tháng là ăn được.",
+    "sources": [
+      {
+        "ref": "Báo Nhân Dân — Về Tây Ninh, thèm vị chua của mắm!",
+        "url": "https://nhandan.vn/ve-tay-ninh-them-vi-chua-cua-mam-post948824.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

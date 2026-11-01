@@ -138,6 +138,19 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-007 đợt 7: thử nâng Mức 2 — GIỮ MỨC 1 dù đã đủ 3 nguồn đã mở (Điện Máy XANH 2 bài công thức độc lập tính 1 nhà xuất bản + Cookpad VTL). Lý do: chà bông xuất hiện ở 3/3 nguồn (~10–14g/khẩu phần) là topping định danh của xôi mặn nhưng kho chưa có số dinh dưỡng đạt chuẩn cho slug cha-bong (đã tạo hồ sơ null đợt này — tra SR Legacy/FNDDS trong repo không có mục pork floss); bổ sung dòng không số sẽ làm món mất khả năng tính dinh dưỡng (tiền lệ bun-mam LV2-006). Các dòng còn lại đều GIỮ theo phân xử: nếp 180g (dải nguồn 88–215), lạp xưởng 30g (1 nguồn khớp ~28g), giò lụa 30g và tôm khô 10g giữ kèm ghi nhận (mỗi dòng chỉ 1 nguồn định lượng, chưa đủ ngưỡng sửa; tôm khô ở nguồn là dạng ruốc tôm xay — khác vai trò rắc của file), trứng cút 20g (nguồn 25–29g, lệch ở ngưỡng dưới), hành phi 8g (1 nguồn 14g). BẤT THƯỜNG: thịt lợn xay rim 30g không xuất hiện ở bất kỳ nguồn nào đã mở (nguồn dùng thịt nạc ram/xé sợi hoặc không thịt rời) — giữ nguyên vì công thức đã được chủ dự án duyệt toàn bộ 2026-10-31, chỉ ghi nhận. Khi cha-bong có số: bổ sung ~12g và nâng Mức 2 ngay, không cần tra lại.]",
+  "cultural_note": {
+    "text": "Khác với Hà Nội gọi tên từng loại xôi riêng, xôi Sài Gòn được chia thành hai nhóm rõ ràng là xôi mặn và xôi ngọt, trong đó xôi mặn xuất hiện muộn hơn để hợp khẩu vị dòng người tứ xứ đổ về thành phố. Một phần xôi mặn thập cẩm thường gồm nếp kèm lạp xưởng, xá xíu, trứng cút, chà bông, thêm đậu xanh xào mỡ, mỡ hành hoặc hành phi. Không chỉ là món điểm tâm đầu hẻm với tiếng rao buổi sớm, xôi mặn còn được nhiều người dùng thay bữa chính khi lỡ bữa.",
+    "sources": [
+      {
+        "ref": "Dân Việt — Xôi Sài Gòn",
+        "url": "https://danviet.vn/xoi-sai-gon-77778439.htm"
+      },
+      {
+        "ref": "Wikipedia tiếng Việt — Xôi",
+        "url": "https://vi.wikipedia.org/wiki/X%C3%B4i"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -122,6 +122,19 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] GIỮ Mức 1 — mã TRAN-NL: mac-khen là nguyên liệu định danh nhưng chưa có số dinh dưỡng đạt chuẩn ở nguồn công khai nào (hồ sơ null 2 vòng tra cứu đã ghi trong data/ingredients/mac-khen.json); đưa vào hàng đợi nghiên cứu nguyên liệu riêng. Công thức bản thân có nguồn tốt: đã mở BlueStone (gà 1 con 1,2–1,5 kg, mắc khén 10 g/con) — khi mac-khen có số, món này thuộc nhóm nâng được ngay, chỉ cần gom thêm 2 họ và đối chiếu lại lượng mắc khén/muối (file đang cao hơn tỉ lệ BlueStone).",
+  "cultural_note": {
+    "text": "Gà nướng mắc khén là món ăn quen của người Thái ở Tây Bắc, nơi mắc khén được gọi là “đệ nhất gia vị Tây Bắc”, ví như một loại tiêu rừng của đồng bào miền núi và hợp nhất với các món nướng. Ở bản người Thái bên suối Mường Tấc, xã Phù Yên, tỉnh Sơn La, mắc khén được rang nhẹ rồi giã nhỏ, hạt dổi nướng thơm, xoa đều lên con gà đã xẻ dàn đều trước khi đặt lên vỉ than. Bữa gà nướng cũng là dịp sum vầy, khi mỗi người trong nhà góp một tay từ nhóm than, giã gia vị đến dọn mâm, và món gà chín được dùng nóng cùng cơm hoặc xôi.",
+    "sources": [
+      {
+        "ref": "Báo Lao Động — Gà nướng mắc khén, hạt dổi thơm bữa cơm nhà",
+        "url": "https://laodong.vn/gia-dinh-hon-nhan/ga-nuong-mac-khen-hat-doi-thom-bua-com-nha-1790090.ldo"
+      },
+      {
+        "ref": "VietnamNet — Những gia vị trứ danh vùng Tây Bắc",
+        "url": "https://vietnamnet.vn/nhung-gia-vi-tru-danh-vung-tay-bac-259188.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

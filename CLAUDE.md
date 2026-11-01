@@ -415,6 +415,20 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > **0 🔴 / 11 🟡**, Pest **157/157**, ExportStabilityTest đạt, rà nhất quán 0 vấn đề.
 > Chi tiết: [TCM-001](docs/05-tasks/tasks/TCM-001.md) §Đợt 3 — Bổ sung.
 
+> ## ⚠️ Đính chính lần 26, 2026-11-01 — VN-001 đợt 1: ghi chú văn hoá cho nhóm ứng viên nâng bù
+>
+> **VN-001 đợt 1 ĐÃ XONG:** viết `cultural_note` cho **87/135** món Mức 1 đạt tiêu chí
+> phủ tính vị ≥60% (nhóm ứng viên đường nâng bù); **48 món chờ có lý do** (31 không có
+> nguồn biên tập đạt chuẩn viết riêng · 12 lệch định danh/chờ quyết định danh · 5 chất
+> liệu chủ yếu theo khung sức khoẻ bị cấm). Census mở lại 100% URL nguồn: 7 URL
+> chết/thay nội dung → 6 món viết lại từ nguồn thay thế đã kiểm chứng. Rà soát diễn
+> đạt theo ranh giới `/mien-tru-y-te`: 0 câu thuộc khung y tế bị cấm. **Đợt này
+> KHÔNG đổi `completeness_level`** — 87 món đủ 2 tiêu chí nâng bù chỉ là thống kê;
+> nâng bù là đợt riêng. Quy ước rút ra: nguồn phải mở lại được lúc chốt đợt; ghi chú
+> bám định danh trong file; ghi chú cấp nguyên liệu phải minh bạch cấp nguyên liệu.
+> Kiểm chứng: validate **0 🔴**, Pest **157/157** (gồm ExportStabilityTest). Chi
+> tiết: [VN-001](docs/05-tasks/tasks/VN-001.md).
+
 **Trạng thái thực tế, kiểm ngày 2026-10-31 (đã chạy lại toàn bộ lệnh kiểm chứng):**
 
 | Hạng mục | Thực tế | Kiểm bằng |
