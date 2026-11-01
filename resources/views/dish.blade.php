@@ -87,17 +87,15 @@ fetch('/api/dishes/' + encodeURIComponent(slug), { headers: { 'Accept': 'applica
         <p class="ld-note" style="margin-top:10px">Khối này luôn mở sẵn — minh bạch nguồn là điểm khác biệt của Lắc Đói, bạn kiểm chứng được mọi con số ngay tại trang này.</p>` : ''}
 
         <h2 class="ld-section-title">Nguyên liệu · một khẩu phần</h2>
-        <div class="ld-grid-ing">
-            ${(d.dish_ingredients ?? []).map(di => `<a href="/nguyen-lieu/${di.ingredient?.slug ?? ''}" class="ld-dcard">
-                <img class="ld-dcard-img" src="${di.ingredient?.image?.url ?? '/images/placeholder-ingredient.svg'}" alt="${esc(di.ingredient?.name_vi ?? '')}" loading="lazy" decoding="async">
-                <span class="ld-dcard-body">
-                    <span class="ld-dcard-title">${esc(di.ingredient?.name_vi ?? '')}</span>
-                    <span class="ld-dcard-meta ld-tnum">${esc(di.quantity ?? '')} ${esc(di.unit_name ?? '')}</span>
-                    <span class="ld-dcard-badges">${di.is_optional ? '<span class="ld-badge">Tuỳ chọn</span>' : ''}</span>
-                    <span class="ld-dcard-foot"><span class="ld-dcard-conf">${di.ingredient?.nutrition?.kcal_per_100g != null ? Math.round(di.ingredient.nutrition.kcal_per_100g) + ' kcal/100g' : ''}</span></span>
-                </span>
+        <div class="ld-group">
+            ${(d.dish_ingredients ?? []).map(di => `<a class="ld-row" href="/nguyen-lieu/${di.ingredient?.slug ?? ''}" style="gap:12px">
+                <img class="ld-thumb" src="${di.ingredient?.image?.url ?? '/images/placeholder-ingredient.svg'}" alt="" loading="lazy" decoding="async">
+                <span class="grow">
+                    <span style="font-weight:600">${esc(di.ingredient?.name_vi ?? '')}</span>
+                    <span class="sub ld-tnum">${esc(di.quantity ?? '')} ${esc(di.unit_name ?? '')}${di.note ? ' · ' + esc(di.note) : ''}${di.is_optional ? ' · Tuỳ chọn' : ''}${di.is_discarded ? ' · Phần bỏ đi' : ''}</span>
+                </span>${chev}
             </a>`).join('')
-              || '<p style="color:var(--color-faint);margin:0">Chưa có định lượng.</p>'}
+              || '<p style="color:var(--color-faint);padding:16px;margin:0">Chưa có định lượng.</p>'}
         </div>
 
         ${d.recipe_steps?.length ? `
