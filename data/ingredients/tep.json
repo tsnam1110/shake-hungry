@@ -59,6 +59,15 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "on",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "Tuệ Tĩnh toàn tập (y văn Việt Nam có tên sách; bản số hoá danh mục dược liệu tại nhathuocngocanh.com, trang ghi rõ tham khảo sách Tuệ Tĩnh toàn tập): mục 33 'Hà ngư' ghi nguyên văn «Hà là tôm, Mễ là tép. Tôm tép đều có vị ngọt, tính ấm hơi độc…» — mục tự định nghĩa Mễ = tép nên phạm vi bao phủ tép là rõ, nhưng nhãn là cho tôm+tép CHUNG một mục (không tách riêng tép) và sách ghi chú 'hơi độc'. https://nhathuocngocanh.com/duoc-lieu/",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "low",
   "needs_review": true,

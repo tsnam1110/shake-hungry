@@ -353,6 +353,21 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > `bong-bi` giữ nguyên phân xử chờ/loại-suy-diễn (lý do tại TCM-001 §Bổ sung đợt 2).
 > Kiểm chứng lại: validate **0 🔴**, Pest **157/157**. Coverage (DB kiểm chứng):
 > **473 món ≥60%**; món Mức 1 đạt tiêu chí phủ: **120/182**.
+>
+> ## ⚠️ Đính chính lần 23, 2026-11-01 — bổ sung đợt 2 lần 2: gieo `tep` từ Tuệ Tĩnh + đối chiếu hai báo cáo con còn lại
+>
+> Agent con nhóm giáp xác/thân mềm tìm được nguồn cho `tep` mà cả đợt không ai có:
+> Tuệ Tĩnh toàn tập, mục "Hà ngư" tự định nghĩa "Mễ là tép" — phiên gieo tự mở bản số
+> hoá, kiểm chứng nguyên văn («Tôm tép đều có vị ngọt, tính ấm hơi độc») → **gieo `tep`
+> (on/cam, medium, ghi rõ phạm vi tôm+tép chung + ghi chú hơi độc)**. Các dòng VN cho
+> `cua-dong` vẫn chờ vì không mở kiểm chứng first-hand được bài trích (lỗi fetch, không
+> phải bằng chứng nguồn sai). Đề xuất ngoài thang (Baidu cho `ngheu`/`mi-can`) bị loại;
+> bốn mục agent con "không tìm thấy" nhưng phiên gieo đã tự mở ở census (`ca-doi`,
+> `hau`, `bach-tuoc`, `muc-ong`) giữ nguyên. Agent con cũng kiểm chứng độc lập: nhãn
+> `nam-bao-ngu` đúng, định danh `nam-dui-ga` = *P. eryngii* đúng. **Tổng cuối đợt 2:
+> 195 nguyên liệu / 349 dòng** (333 thật + 16 suy diễn); validate **0 🔴**, Pest
+> **157/157**; coverage (DB kiểm chứng): **477 món ≥60%**, món Mức 1 đạt tiêu chí phủ:
+> **122/182**. Chi tiết: [TCM-001](docs/05-tasks/tasks/TCM-001.md) §Bổ sung đợt 2 lần 2.
 
 **Trạng thái thực tế, kiểm ngày 2026-10-31 (đã chạy lại toàn bộ lệnh kiểm chứng):**
 
