@@ -39,6 +39,15 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "binh",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 豌豆 (Pisum sativum; trang ghi rõ 荷蘭豆 là đậu ăn quả của loài này, hạt + vỏ non đều ăn được — bao phủ dạng ăn cả vỏ của kho) ghi 「藥性：平／藥味：甘；「豌豆味甘、性平，歸脾、胃經；」；[性能]味甘，性平。」. http://cht.a-hospital.com/w/%E8%B1%8C%E8%B1%86",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

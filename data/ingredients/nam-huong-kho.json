@@ -59,6 +59,15 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "binh",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "Sổ tay người chăm sóc bệnh nhân ung thư Hồng Kông 《癌症病人照顧者全面手冊》, chương 中醫食療——食物種類分析 (nội dung: TS. Lâm Đạo Nghi 林道儀， thầy thuốc Trung y đăng ký hành nghề; bản chốt 2022-04): mục 冬菇 ghi 「冬菇：味甘，性平。」. 冬菇 (nấm hương Lentinula edodes) — dạng khô là dạng dùng ghi trong tên mục, khớp file nấm hương khô. https://www.cancercarers.org.hk/%E4%B8%AD%E9%86%AB%E9%A3%9F%E7%99%82/%E9%A3%9F%E7%89%A9%E7%A8%AE%E9%A1%9E%E5%88%86%E6%9E%90",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

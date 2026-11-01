@@ -46,6 +46,29 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "binh",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 茼蒿 (Glebionis/Chrysanthemum coronarium, thân lá; infobox + [性能] (câu [性能] còn ghi chú sinh dùng thiên lương — là ghi chú dạng dùng, không lập dòng riêng)) ghi 「藥性：平／藥味：辛、甘；[性能]味辛、甘，性平（生用偏涼）。」. http://cht.a-hospital.com/w/%E8%8C%BC%E8%92%BF",
+      "confidence": "medium"
+    },
+    {
+      "nature": "binh",
+      "flavor": "tan",
+      "element": "kim",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 茼蒿 (Glebionis/Chrysanthemum coronarium, thân lá; infobox + [性能] (câu [性能] còn ghi chú sinh dùng thiên lương — là ghi chú dạng dùng, không lập dòng riêng)) ghi 「藥性：平／藥味：辛、甘；[性能]味辛、甘，性平（生用偏涼）。」. http://cht.a-hospital.com/w/%E8%8C%BC%E8%92%BF",
+      "confidence": "medium"
+    },
+    {
+      "nature": "on",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 茼蒿 (mục 性味歸經 — lệch với infobox/[性能] của chính trang, giữ cả hai; vị 澀 trong câu gốc bỏ theo quy ước) ghi 「「性溫，味甘澀；入肝、腎經。」」. http://cht.a-hospital.com/w/%E8%8C%BC%E8%92%BF",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

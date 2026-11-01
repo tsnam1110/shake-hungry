@@ -52,6 +52,22 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "luong",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 苤藍 (Brassica oleracea nhóm Gongylodes, bộ phận球狀莖 (củ su hào) ghi rõ trong nguồn; + infobox) ghi 「甘辛，涼。；藥性涼／藥味辛、甘」. http://cht.a-hospital.com/w/%E8%8B%A4%E8%97%8D",
+      "confidence": "medium"
+    },
+    {
+      "nature": "luong",
+      "flavor": "tan",
+      "element": "kim",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 苤藍 (Brassica oleracea nhóm Gongylodes, bộ phận球狀莖 (củ su hào) ghi rõ trong nguồn; + infobox) ghi 「甘辛，涼。；藥性涼／藥味辛、甘」. http://cht.a-hospital.com/w/%E8%8B%A4%E8%97%8D",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

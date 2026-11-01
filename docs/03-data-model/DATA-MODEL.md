@@ -247,6 +247,7 @@ Tính vị theo y học cổ truyền. **Gán ở tầng nguyên liệu, không 
 | `confidence` | varchar(8) | |
 | `usage_restricted` | boolean | TCM-000: nguồn uy tín nhưng điều khoản hạn chế sử dụng/tái phân phối — dữ liệu vẫn lưu theo chính sách lưu trữ nội bộ, kèm ghi chú |
 | `usage_note` | text null | **Bắt buộc khi `usage_restricted = true`** (CHECK `tcm_usage_note_check`) — phải chứa ghi chú "không được dùng" và lý do |
+| `derived_from` | varchar(128) null | TCM-001c (chính sách **P-DERIVE**): slug của nguyên liệu gốc khi dòng này là nhãn **suy diễn** cho dạng chế biến cơ học đơn thành phần; null = nhãn nguồn trực tiếp. CHECK `tcm_derived_confidence_check`: có `derived_from` thì `confidence` phải là `low` |
 
 **Cho phép nhiều dòng cho một nguyên liệu** khi các nguồn mâu thuẫn nhau — đó là chuyện bình thường
 với phân loại này, và mâu thuẫn phải được hiển thị chứ không giấu đi.
@@ -258,6 +259,14 @@ thì được suy từ `flavor` theo ánh xạ cổ điển khi tổng hợp/hi�
 `element_basis = nature` thì `element` phải khớp ánh xạ theo **tính**; dòng
 `element_basis = direct` thì `element` lấy đúng như nguồn ghi, V20 chỉ kiểm từ vựng.
 Trong file, khoá `element_basis` chỉ xuất hiện khi khác mặc định `flavor`.
+
+**Nhãn suy diễn P-DERIVE (TCM-001c):** dòng có `derived_from` gương đúng một dòng
+nguồn thật của nguyên liệu gốc (nature/flavor/element/`element_basis` khớp nguyên
+vẹn), `confidence` khoá ở `low`, `source_ref` bắt buộc chứa cụm `P-DERIVE` kèm
+nguồn của nhãn gốc. V20 cấm: suy diễn chuỗi (gốc chỉ có nhãn suy diễn), suy diễn
+cho nguyên liệu có `components` (đa thành phần/hỗn hợp), và lệch gương. Chính sách
+đầy đủ: [NGU-HANH-AM-DUONG §9](../08-cultural/NGU-HANH-AM-DUONG.md). Trong file,
+khoá `derived_from` chỉ xuất hiện ở dòng suy diễn.
 
 ### `ingredient_components` (TCM-000)
 

@@ -52,6 +52,15 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "han",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 甜瓜 (Cucumis melo ở cấp loài; phần phân loại giống của trang liệt kê 香瓜 (var. makuwa) tương ứng dưa gang — gieo cấp loài kèm ghi chú giống; infobox + mục thực liệu) ghi 「藥性「寒」、藥味「甘」；「甜瓜味甘，性寒，無毒」」. http://cht.a-hospital.com/w/%E7%94%9C%E7%93%9C",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "low",
   "needs_review": true,

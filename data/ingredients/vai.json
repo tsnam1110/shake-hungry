@@ -58,6 +58,36 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "on",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 荔枝 (Litchi chinensis, CHỈ thịt quả (mục 荔枝核 — hạt — đã loại); thân bài + infobox + phần 中藥材 nhất quán một hệ giá trị nên gộp trích) ghi 「「荔枝味甘、酸、性溫」；藥性 溫／藥味 酸、甘；甘酸，溫。」. http://cht.a-hospital.com/w/%E8%8C%98%E6%9E%9D",
+      "confidence": "medium"
+    },
+    {
+      "nature": "on",
+      "flavor": "toan",
+      "element": "moc",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 荔枝 (Litchi chinensis, CHỈ thịt quả (mục 荔枝核 — hạt — đã loại); thân bài + infobox + phần 中藥材 nhất quán một hệ giá trị nên gộp trích) ghi 「「荔枝味甘、酸、性溫」；藥性 溫／藥味 酸、甘；甘酸，溫。」. http://cht.a-hospital.com/w/%E8%8C%98%E6%9E%9D",
+      "confidence": "medium"
+    },
+    {
+      "nature": "binh",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 荔枝 (phần [性能] ở mục 食療價值 — lệch với dòng ôn của thân bài cùng trang, giữ cả hai) ghi 「味甘、微酸，性平，無毒。」. http://cht.a-hospital.com/w/%E8%8C%98%E6%9E%9D",
+      "confidence": "medium"
+    },
+    {
+      "nature": "binh",
+      "flavor": "toan",
+      "element": "moc",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 荔枝 (phần [性能] ở mục 食療價值 — lệch với dòng ôn của thân bài cùng trang, giữ cả hai) ghi 「味甘、微酸，性平，無毒。」. http://cht.a-hospital.com/w/%E8%8C%98%E6%9E%9D",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

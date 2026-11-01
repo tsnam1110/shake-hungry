@@ -299,6 +299,27 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > ≥60%** — đủ tiêu chí độ phủ của cổng Mức 3 cho đường nâng bù "Mức 2 (có note)"
 > (**chỉ thống kê đợt này, chưa nâng thật**). Nhận xét nhịp TCM-001c: xem TCM-001 §nhận
 > xét thí điểm (nhóm bột/sợi cần quyết định chính sách riêng).
+>
+> ## ⚠️ Đính chính lần 20, 2026-11-01 — TCM-001c đợt 1: chính sách P-DERIVE + gieo nhóm rau/củ/quả/nấm còn lại
+>
+> **Phần A — P-DERIVE ĐÃ HIỆN THỰC** (quyết định chính sách của TCM-001b §nhận xét, nay có
+> cổng kỹ thuật): dòng nhãn suy diễn mang `derived_from` (migration 100012) — chỉ cho dạng
+> chế biến CƠ HỌC ĐƠN THÀNH PHẦN của nguyên liệu gốc đã có nhãn thật; dòng suy diễn gương
+> đúng một dòng thật của gốc, confidence trần **low** (CHECK ở DB + V20), cấm chuỗi suy
+> diễn, cấm cho nguyên liệu có components, kế thừa `usage_restricted`; trang nguyên liệu
+> hiển thị dòng phụ "Nhãn suy diễn từ …". Đã áp **12 dòng / 10 nguyên liệu** (nhóm bột/sợi
+> từ gạo + `mang-kho`). `bot-nang` vẫn chờ: gốc `khoai-mi` chưa có nhãn thật (mục 木薯 của
+> A+ chỉ cho lá). Chi tiết + danh sách phân xử không-suy-diễn: [TCM-001](docs/05-tasks/tasks/TCM-001.md).
+> **Phần B — gieo 74 nguyên liệu / 164 dòng nguồn thật** (sổ tay HK + A+ đọc toàn trang +
+> 1 mục thuvienso): tổng kho **149 nguyên liệu / 267 dòng** (255 thật + 12 suy diễn). Ca
+> kiểm đậu nành: `dau-nanh-hat` = **bình ở cả hai nguồn** — khớp kỳ vọng cổ điển, ghi
+> nguyên văn nguồn. Mâu thuẫn trong cùng trang (`du-du-chin` 4 giá trị) giữ đủ, không ép
+> chọn. ~79 mục giữ CHỜ có hồ sơ lý do (lệch loài/bộ phận/dạng, không nguồn đạt chuẩn).
+> ⚠️ Phát hiện ngoài phạm vi: file `nam-dui-ga` trùng tên khoa học *Pleurotus ostreatus*
+> với `nam-bao-ngu` — chờ rà ánh xạ. Kiểm chứng: census **214/214 trích khớp nguyên văn**,
+> validate **0 🔴**, Pest **157/157**, ExportStabilityTest đạt. Coverage (DB kiểm chứng):
+> **401 món ≥60%** (trước: 227, +174); món Mức 1 đạt tiêu chí phủ cho đường nâng bù:
+> **106/182** (trước: 57) — chỉ thống kê, đợt nâng bù riêng làm sau.
 
 **Trạng thái thực tế, kiểm ngày 2026-10-31 (đã chạy lại toàn bộ lệnh kiểm chứng):**
 

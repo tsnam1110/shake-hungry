@@ -40,8 +40,16 @@ final class TcmDisplay
             return null;
         }
 
+        // Tên hiển thị của nguyên liệu gốc cho dòng suy diễn (P-DERIVE):
+        // giao diện phải nói rõ nhãn này suy từ đâu, không để người dùng
+        // tưởng là nhãn nguồn trực tiếp.
+        $originSlugs = $traits->pluck('derived_from')->filter()->unique()->values();
+        $originNames = $originSlugs->isEmpty()
+            ? collect()
+            : Ingredient::whereIn('slug', $originSlugs)->pluck('name_vi', 'slug');
+
         return [
-            'traits' => $traits->map(fn (IngredientTcmTrait $t) => self::traitRow($t))->values()->all(),
+            'traits' => $traits->map(fn (IngredientTcmTrait $t) => self::traitRow($t, $originNames[$t->derived_from] ?? null))->values()->all(),
             'has_conflicts' => $traits->pluck('nature')->filter()->unique()->count() > 1,
         ];
     }
@@ -89,7 +97,7 @@ final class TcmDisplay
     }
 
     /** @return array<string, mixed> */
-    public static function traitRow(IngredientTcmTrait $trait): array
+    public static function traitRow(IngredientTcmTrait $trait, ?string $derivedFromName = null): array
     {
         // Element hiệu lực theo căn cứ của dòng (TCM-001a): ghi tường minh
         // thì dùng nguyên văn; trống thì suy theo đúng hệ basis đã khai —
@@ -109,6 +117,10 @@ final class TcmDisplay
             'element' => $element,
             'element_label' => $element !== null ? (TcmVocabulary::ELEMENT_LABELS[$element] ?? $element) : null,
             'element_basis' => $basis,
+            // P-DERIVE (TCM-001c): dòng suy diễn phải phân biệt rõ ở mọi
+            // bề mặt hiển thị — kèm slug + tên nguyên liệu gốc.
+            'derived_from' => $trait->derived_from,
+            'derived_from_name' => $trait->derived_from !== null ? $derivedFromName : null,
             'source_ref' => $trait->source_ref,
             'confidence' => $trait->confidence,
             'usage_restricted' => $trait->usage_restricted,

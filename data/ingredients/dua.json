@@ -52,6 +52,15 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "binh",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 椰子 (Cocos nucifera L., CÙI dừa （瓤/椰肉） — đúng bộ phận kho ăn; mục thịt dừa + trích 《本草綱目》 (dòng infobox cho toàn quả ghi ôn đã không dùng vì lệch bộ phận)) ghi 「「性味甘平」；《本草綱目》「椰子瓤，甘，平，無毒」」. http://cht.a-hospital.com/w/%E6%A4%B0%E5%AD%90",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

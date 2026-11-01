@@ -46,6 +46,29 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "on",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 杏 (Prunus armeniaca, quả TƯƠI (mục 杏 — không lấy dòng nào của 乌梅/苦杏仁）; mục phần quả; 微溫 chuẩn hoá thành on) ghi 「：甘酸、微溫、冷利、有小毒。」. http://cht.a-hospital.com/w/%E6%9D%8F",
+      "confidence": "medium"
+    },
+    {
+      "nature": "on",
+      "flavor": "toan",
+      "element": "moc",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 杏 (Prunus armeniaca, quả TƯƠI (mục 杏 — không lấy dòng nào của 乌梅/苦杏仁）; mục phần quả; 微溫 chuẩn hoá thành on) ghi 「：甘酸、微溫、冷利、有小毒。」. http://cht.a-hospital.com/w/%E6%9D%8F",
+      "confidence": "medium"
+    },
+    {
+      "nature": "nhiet",
+      "flavor": "toan",
+      "element": "moc",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 杏 (thịt quả; dòng thứ hai trên cùng trang — lệch với dòng vi ôn ở trên, giữ cả hai) ghi 「「杏肉味酸、性熱，有小毒。」」. http://cht.a-hospital.com/w/%E6%9D%8F",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

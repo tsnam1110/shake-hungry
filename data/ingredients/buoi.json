@@ -53,6 +53,22 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "han",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 柚子 (Citrus grandis, thịt quả; infobox của trang) ghi 「藥性「寒」、藥味「甘」」. http://cht.a-hospital.com/w/%E6%9F%9A%E5%AD%90",
+      "confidence": "medium"
+    },
+    {
+      "nature": "han",
+      "flavor": "toan",
+      "element": "moc",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 柚子 (Citrus grandis, thịt quả; infobox của trang) ghi 「藥性「寒」、藥味「酸」」. http://cht.a-hospital.com/w/%E6%9F%9A%E5%AD%90",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

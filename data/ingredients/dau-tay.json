@@ -58,6 +58,22 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "luong",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 草莓 (Fragaria × ananassa, quả tươi; thân bài + mục thực liệu nhất quán) ghi 「性涼，味酸甘；「草莓味甘、酸，性涼」」. http://cht.a-hospital.com/w/%E8%8D%89%E8%8E%93",
+      "confidence": "medium"
+    },
+    {
+      "nature": "luong",
+      "flavor": "toan",
+      "element": "moc",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 草莓 (Fragaria × ananassa, quả tươi; thân bài + mục thực liệu nhất quán) ghi 「性涼，味酸甘；「草莓味甘、酸，性涼」」. http://cht.a-hospital.com/w/%E8%8D%89%E8%8E%93",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

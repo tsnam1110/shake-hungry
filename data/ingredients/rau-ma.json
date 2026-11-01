@@ -39,6 +39,22 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "han",
+      "flavor": "kho",
+      "element": "hoa",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 積雪草 (Centella asiatica toàn thảo — khớp file (VN ăn tươi toàn cây); infobox + mục 性味 (đoạn 活血丹 lẫn ở cuối trang không thuộc mục này — đã loại)) ghi 「藥性：寒／藥味：辛、苦；「性寒，味苦辛。」」. http://cht.a-hospital.com/w/%E7%A9%8D%E9%9B%AA%E8%8D%89",
+      "confidence": "medium"
+    },
+    {
+      "nature": "han",
+      "flavor": "tan",
+      "element": "kim",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 積雪草 (Centella asiatica toàn thảo — khớp file (VN ăn tươi toàn cây); infobox + mục 性味 (đoạn 活血丹 lẫn ở cuối trang không thuộc mục này — đã loại)) ghi 「藥性：寒／藥味：辛、苦；「性寒，味苦辛。」」. http://cht.a-hospital.com/w/%E7%A9%8D%E9%9B%AA%E8%8D%89",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "low",
   "needs_review": true,

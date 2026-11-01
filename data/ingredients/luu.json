@@ -58,6 +58,22 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "on",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 石榴 (Punica granatum, thịt hạt; vị 澀 bỏ theo quy ước) ghi 「「性味甘、酸澀、溫」；「石榴性溫、味甘酸澀」」. http://cht.a-hospital.com/w/%E7%9F%B3%E6%A6%B4",
+      "confidence": "medium"
+    },
+    {
+      "nature": "on",
+      "flavor": "toan",
+      "element": "moc",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 石榴 (Punica granatum, thịt hạt; vị 澀 bỏ theo quy ước) ghi 「「性味甘、酸澀、溫」；「石榴性溫、味甘酸澀」」. http://cht.a-hospital.com/w/%E7%9F%B3%E6%A6%B4",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

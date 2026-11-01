@@ -52,6 +52,22 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "luong",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 酸角 (Tamarindus indica, cơm quả chín; mục 性能 + [性能] nhất quán) ghi 「「味酸、甘，性涼。歸胃、大腸經。」；[性能]味甘、酸，性涼。」. http://cht.a-hospital.com/w/%E9%85%B8%E8%A7%92",
+      "confidence": "medium"
+    },
+    {
+      "nature": "luong",
+      "flavor": "toan",
+      "element": "moc",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 酸角 (Tamarindus indica, cơm quả chín; mục 性能 + [性能] nhất quán) ghi 「「味酸、甘，性涼。歸胃、大腸經。」；[性能]味甘、酸，性涼。」. http://cht.a-hospital.com/w/%E9%85%B8%E8%A7%92",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "medium",
   "needs_review": true,

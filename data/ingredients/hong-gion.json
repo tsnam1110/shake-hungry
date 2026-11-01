@@ -53,6 +53,15 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "han",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 柿子 (Diospyros kaki, quả; nguồn nói về hồng nói chung, slug là hồng giòn (dạng giòn) — áp ở cấp loài; vị 澀 bỏ theo quy ước) ghi 「藥性「寒」、藥味「甘」（澀 bỏ）；「柿子味甘、澀，性寒」」. http://cht.a-hospital.com/w/%E6%9F%BF%E5%AD%90",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

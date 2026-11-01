@@ -161,7 +161,7 @@ class LacdoiValidateData extends Command
             // V20 — lớp tính vị + liên kết thành phần (🔴, TCM-000): nhãn
             // không nguồn bị cấm tuyệt đối (R5/QT-6); components phải trỏ
             // tới nguyên liệu có thật, không tự trỏ, không trùng.
-            $this->validateTcmTraits("[{$slug}]", $j);
+            $this->validateTcmTraits("[{$slug}]", $j, $ingredients);
             $this->validateComponents("[{$slug}]", $j, $ingredients);
 
             // V15 (R10) — hạ needs_review mà không ghi ai duyệt / duyệt khi nào (🔴).
@@ -304,8 +304,9 @@ class LacdoiValidateData extends Command
      * chính xác do người biên soạn chịu trách nhiệm, máy chỉ nhắc.
      *
      * @param  array<string, mixed>  $j
+     * @param  array<string, array<string, mixed>>  $ingredients
      */
-    private function validateTcmTraits(string $label, array $j): void
+    private function validateTcmTraits(string $label, array $j, array $ingredients = []): void
     {
         $natures = array_keys(\App\Cultural\TcmVocabulary::NATURE_POINTS);
         $flavors = array_keys(\App\Cultural\TcmVocabulary::FLAVOR_LABELS);
@@ -372,6 +373,95 @@ class LacdoiValidateData extends Command
                     $this->warnings[] = "{$row}: usage_note chưa chứa cụm 'không được dùng' — kiểm lại câu chữ theo chính sách nguồn hạn chế";
                 }
             }
+            // P-DERIVE (TCM-001c): dòng có derived_from là nhãn SUY DIỄN
+            // cho dạng chế biến cơ học đơn thành phần — phải gương đúng
+            // một dòng nguồn thật của nguyên liệu gốc, trần confidence
+            // 'low', source_ref mang dấu 'P-DERIVE', và bị cấm cho
+            // nguyên liệu hỗn hợp (có components).
+            if (($t['derived_from'] ?? null) !== null) {
+                $this->validateDerivedTrait($row, $t, $j, $ingredients);
+            }
+        }
+    }
+
+    /**
+     * V20 (tầng file) — kỷ luật P-DERIVE cho MỘT dòng nhãn suy diễn
+     * (TCM-001c). Mọi điều kiện đều là 🔴: suy diễn là đường tắt duy nhất
+     * được phép trong lớp tính vị, nên cổng của nó phải chặt hơn cổng của
+     * nhãn nguồn thật.
+     *
+     * @param  array<string, mixed>  $t
+     * @param  array<string, mixed>  $j
+     * @param  array<string, array<string, mixed>>  $ingredients
+     */
+    private function validateDerivedTrait(string $row, array $t, array $j, array $ingredients): void
+    {
+        $originSlug = $t['derived_from'];
+        $ownSlug = $j['slug'] ?? null;
+        if (! is_string($originSlug) || $originSlug === '') {
+            $this->errors[] = "{$row}: derived_from phải là slug của nguyên liệu gốc";
+
+            return;
+        }
+        if ($originSlug === $ownSlug) {
+            $this->errors[] = "{$row}: derived_from tự trỏ chính mình — suy diễn phải từ nguyên liệu gốc khác";
+        }
+        if (! empty($j['components'])) {
+            $this->errors[] = "{$row}: nguyên liệu có components (đa thành phần/hỗn hợp) bị cấm mang nhãn suy diễn P-DERIVE";
+        }
+        if (($t['confidence'] ?? null) !== 'low') {
+            $this->errors[] = "{$row}: nhãn suy diễn P-DERIVE bị khoá confidence='low' (đang là '".($t['confidence'] ?? '')."')";
+        }
+        if (! str_contains((string) ($t['source_ref'] ?? ''), \App\Cultural\TcmVocabulary::DERIVED_MARKER)) {
+            $this->errors[] = "{$row}: source_ref của nhãn suy diễn phải ghi rõ chính sách ".\App\Cultural\TcmVocabulary::DERIVED_MARKER.' (kèm nguồn của nhãn gốc)';
+        }
+        $origin = $ingredients[$originSlug] ?? null;
+        if ($origin === null) {
+            $this->errors[] = "{$row}: derived_from trỏ tới nguyên liệu không tồn tại '{$originSlug}'";
+
+            return;
+        }
+        $originTraits = array_values(array_filter(
+            is_array($origin['tcm_traits'] ?? null) ? $origin['tcm_traits'] : [],
+            fn ($o) => is_array($o),
+        ));
+        $realTraits = array_values(array_filter(
+            $originTraits,
+            fn ($o) => ($o['derived_from'] ?? null) === null,
+        ));
+        if ($realTraits === []) {
+            $this->errors[] = $originTraits === []
+                ? "{$row}: nguyên liệu gốc '{$originSlug}' chưa có nhãn nào — không có gì để suy diễn"
+                : "{$row}: nguyên liệu gốc '{$originSlug}' chỉ có nhãn suy diễn — cấm suy diễn chuỗi (P-DERIVE)";
+
+            return;
+        }
+        $effectiveElement = function (array $r): ?string {
+            if (($r['element'] ?? null) !== null) {
+                return $r['element'];
+            }
+            $b = $r['element_basis'] ?? 'flavor';
+
+            return match ($b) {
+                'flavor' => \App\Cultural\TcmVocabulary::elementForFlavor($r['flavor'] ?? null),
+                'nature' => \App\Cultural\TcmVocabulary::elementForNature($r['nature'] ?? null),
+                default => null,
+            };
+        };
+        $mirror = null;
+        foreach ($realTraits as $o) {
+            if (($o['nature'] ?? null) === ($t['nature'] ?? null)
+                && ($o['flavor'] ?? null) === ($t['flavor'] ?? null)
+                && (($o['element_basis'] ?? 'flavor') === ($t['element_basis'] ?? 'flavor'))
+                && $effectiveElement($o) === $effectiveElement($t)) {
+                $mirror = $o;
+                break;
+            }
+        }
+        if ($mirror === null) {
+            $this->errors[] = "{$row}: nhãn suy diễn không gương đúng dòng nguồn thật nào của '{$originSlug}' (nature/flavor/element/element_basis phải khớp nguyên vẹn một dòng gốc)";
+        } elseif (! empty($mirror['usage_restricted']) && empty($t['usage_restricted'])) {
+            $this->errors[] = "{$row}: nhãn gốc bị hạn chế sử dụng (usage_restricted) — dòng suy diễn phải mang theo cờ + ghi chú hạn chế của gốc";
         }
     }
 
@@ -456,6 +546,18 @@ class LacdoiValidateData extends Command
         $n = DB::table('ingredient_tcm_traits')->whereRaw("TRIM(source_ref) = ''")->count();
         if ($n > 0) {
             $this->errors[] = "V20: {$n} nhãn tính vị trong DB có source_ref rỗng — vi phạm R5";
+        }
+
+        // P-DERIVE (TCM-001c): dòng suy diễn trong DB phải ở trần 'low'
+        // (CHECK ở migration 100012 cũng khoá — đây là chốt tường minh).
+        if (DB::getSchemaBuilder()->hasColumn('ingredient_tcm_traits', 'derived_from')) {
+            $n = DB::table('ingredient_tcm_traits')
+                ->whereNotNull('derived_from')
+                ->where('confidence', '<>', 'low')
+                ->count();
+            if ($n > 0) {
+                $this->errors[] = "V20: {$n} nhãn suy diễn P-DERIVE trong DB có confidence khác 'low'";
+            }
         }
 
         // Cổng Mức 3 + đường nâng bù: cần ghi chú văn hoá VÀ phủ ≥60%.

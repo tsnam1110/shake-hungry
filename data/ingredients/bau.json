@@ -39,6 +39,29 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "han",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 葫蘆 (Lagenaria siceraria, QUẢ non (hai mục dược liệu trong trang là cho hạt/vỏ — đã loại); mục 食療作用) ghi 「「葫蘆瓜性寒、味甘，入肺、胃、腎經；」」. http://cht.a-hospital.com/w/%E8%91%AB%E8%98%86",
+      "confidence": "medium"
+    },
+    {
+      "nature": "luong",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 葫蘆 (phần [性能] ở mục 食療價值， đối tượng là quả 瓢瓜； 微寒 chuẩn hoá thành luong — lệch một bậc với dòng hàn ở trên, giữ cả hai) ghi 「[性能]味甘、淡，性微寒。」. http://cht.a-hospital.com/w/%E8%91%AB%E8%98%86",
+      "confidence": "medium"
+    },
+    {
+      "nature": "luong",
+      "flavor": "dam",
+      "element": null,
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 葫蘆 (phần [性能] ở mục 食療價值， đối tượng là quả 瓢瓜； 微寒 chuẩn hoá thành luong — lệch một bậc với dòng hàn ở trên, giữ cả hai) ghi 「[性能]味甘、淡，性微寒。」. http://cht.a-hospital.com/w/%E8%91%AB%E8%98%86",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

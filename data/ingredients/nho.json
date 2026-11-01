@@ -52,6 +52,22 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "binh",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 葡萄 (Vitis vinifera, quả tươi; [性能] + infobox + 性味 nhất quán) ghi 「[性能]味甘、微酸，性平；藥性 平／藥味 酸、甘；甘酸，平。」. http://cht.a-hospital.com/w/%E8%91%A1%E8%90%84",
+      "confidence": "medium"
+    },
+    {
+      "nature": "binh",
+      "flavor": "toan",
+      "element": "moc",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 葡萄 (Vitis vinifera, quả tươi; [性能] + infobox + 性味 nhất quán) ghi 「[性能]味甘、微酸，性平；藥性 平／藥味 酸、甘；甘酸，平。」. http://cht.a-hospital.com/w/%E8%91%A1%E8%90%84",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

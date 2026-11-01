@@ -65,6 +65,50 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "luong",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 杧果 (Mangifera indica, quả chín; phần 《中藥大辭典》) ghi 「 甘酸，涼。」. http://cht.a-hospital.com/w/%E8%8A%92%E6%9E%9C",
+      "confidence": "medium"
+    },
+    {
+      "nature": "luong",
+      "flavor": "toan",
+      "element": "moc",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 杧果 (Mangifera indica, quả chín; phần 《中藥大辭典》) ghi 「 甘酸，涼。」. http://cht.a-hospital.com/w/%E8%8A%92%E6%9E%9C",
+      "confidence": "medium"
+    },
+    {
+      "nature": "luong",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 杧果 (phần 《中華本草》; 微寒 chuẩn hoá thành luong — cùng giá trị với dòng 《中藥大辭典》 nhưng là thư tịch khác, giữ riêng) ghi 「 甘；酸；微寒」. http://cht.a-hospital.com/w/%E8%8A%92%E6%9E%9C",
+      "confidence": "medium"
+    },
+    {
+      "nature": "luong",
+      "flavor": "toan",
+      "element": "moc",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 杧果 (phần 《中華本草》; 微寒 chuẩn hoá thành luong — cùng giá trị với dòng 《中藥大辭典》 nhưng là thư tịch khác, giữ riêng) ghi 「 甘；酸；微寒」. http://cht.a-hospital.com/w/%E8%8A%92%E6%9E%9C",
+      "confidence": "medium"
+    },
+    {
+      "nature": "binh",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 杧果 (phần 《全國中草藥彙編》 — lệch với hai dòng luong trên cùng trang, giữ cả hai) ghi 「 酸、甘，平。」. http://cht.a-hospital.com/w/%E8%8A%92%E6%9E%9C",
+      "confidence": "medium"
+    },
+    {
+      "nature": "binh",
+      "flavor": "toan",
+      "element": "moc",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 杧果 (phần 《全國中草藥彙編》 — lệch với hai dòng luong trên cùng trang, giữ cả hai) ghi 「 酸、甘，平。」. http://cht.a-hospital.com/w/%E8%8A%92%E6%9E%9C",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "medium",
   "needs_review": true,

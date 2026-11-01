@@ -46,6 +46,32 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "luong",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "P-DERIVE (TCM-001c): nhãn suy diễn từ Măng tươi (mang-tuoi) — măng tươi thái lát, luộc sơ và phơi/sấy khô: dạng chế biến cơ học đơn thành phần của nguyên liệu gốc, mang nhãn của gốc theo chính sách P-DERIVE. Nhãn gốc: A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 竹筍 (Phyllostachys spp. — khớp chi với file; mục 食療作用； 微寒 chuẩn hoá thành luong) ghi 「「竹筍味甘、性微寒，歸胃、肺經；」」. http://cht.a-hospital.com/w/%E7%AB%B9%E7%AC%8B",
+      "confidence": "low",
+      "derived_from": "mang-tuoi"
+    },
+    {
+      "nature": "han",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "P-DERIVE (TCM-001c): nhãn suy diễn từ Măng tươi (mang-tuoi) — măng tươi thái lát, luộc sơ và phơi/sấy khô: dạng chế biến cơ học đơn thành phần của nguyên liệu gốc, mang nhãn của gốc theo chính sách P-DERIVE. Nhãn gốc: A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 竹筍 (phần [性能] ở mục 食療價值 — lệch với dòng vi hàn ở trên, giữ cả hai) ghi 「[性能]味甘、微苦，性寒。」. http://cht.a-hospital.com/w/%E7%AB%B9%E7%AC%8B",
+      "confidence": "low",
+      "derived_from": "mang-tuoi"
+    },
+    {
+      "nature": "han",
+      "flavor": "kho",
+      "element": "hoa",
+      "source_ref": "P-DERIVE (TCM-001c): nhãn suy diễn từ Măng tươi (mang-tuoi) — măng tươi thái lát, luộc sơ và phơi/sấy khô: dạng chế biến cơ học đơn thành phần của nguyên liệu gốc, mang nhãn của gốc theo chính sách P-DERIVE. Nhãn gốc: A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 竹筍 (phần [性能] ở mục 食療價值 — lệch với dòng vi hàn ở trên, giữ cả hai) ghi 「[性能]味甘、微苦，性寒。」. http://cht.a-hospital.com/w/%E7%AB%B9%E7%AC%8B",
+      "confidence": "low",
+      "derived_from": "mang-tuoi"
+    }
+  ],
   "source": "curated",
   "confidence": "low",
   "needs_review": true,

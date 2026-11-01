@@ -448,6 +448,159 @@ it('TCM-001a: seed -> export giu element_basis khac mac dinh, dong mac dinh khon
     }
 });
 
+it('TCM-001c: V20 chap nhan dong suy dien P-DERIVE guong dung nhan goc (gao-te)', function () {
+    $path = base_path('data/ingredients/z-tcm001c-fixture.json');
+    $tags = \App\Taxonomy\TaggingRules::tagsFor('z-tcm001c-fixture', 'khac');
+    file_put_contents($path, json_encode([
+        'slug' => 'z-tcm001c-fixture',
+        'name_vi' => 'Fixture TCM-001c (xoá sau test)',
+        'name_en' => null,
+        'category' => 'khac',
+        'reference_food' => ['mapping_confidence' => 'high', 'alternatives' => []],
+        'secondary_sources' => [],
+        'is_ready_to_eat' => false,
+        'units' => [],
+        'tcm_traits' => [
+            // Gương dòng nguồn thật của gao-te (ôn/cam/Thổ, basis flavor).
+            ['nature' => 'on', 'flavor' => 'cam', 'element' => 'tho', 'derived_from' => 'gao-te', 'source_ref' => 'Suy diễn từ dạng gốc Gạo tẻ (gao-te) theo chính sách P-DERIVE (TCM-001c). Nhãn gốc: fixture.', 'confidence' => 'low'],
+        ],
+        'source' => 'curated',
+        'confidence' => 'low',
+        'needs_review' => true,
+        'tags' => $tags,
+    ], JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
+
+    try {
+        $this->artisan('lacdoi:validate-data')->assertExitCode(0);
+    } finally {
+        @unlink($path);
+    }
+});
+
+it('TCM-001c: V20 bao do cho suy dien sai ky luat (tran low, guong, chuoi, hon hop, dau P-DERIVE)', function () {
+    $path = base_path('data/ingredients/z-tcm001c-fixture.json');
+    $pathOrigin = base_path('data/ingredients/z-tcm001c-origin.json');
+    $tags = \App\Taxonomy\TaggingRules::tagsFor('z-tcm001c-fixture', 'khac');
+    $write = function (array $traits, array $extra = []) use ($path, $tags) {
+        file_put_contents($path, json_encode(array_merge([
+            'slug' => 'z-tcm001c-fixture',
+            'name_vi' => 'Fixture TCM-001c (xoá sau test)',
+            'name_en' => null,
+            'category' => 'khac',
+            'reference_food' => ['mapping_confidence' => 'high', 'alternatives' => []],
+            'secondary_sources' => [],
+            'is_ready_to_eat' => false,
+            'units' => [],
+            'tcm_traits' => $traits,
+            'source' => 'curated',
+            'confidence' => 'low',
+            'needs_review' => true,
+            'tags' => $tags,
+        ], $extra), JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
+    };
+    $okRef = 'Suy diễn từ dạng gốc Gạo tẻ (gao-te) theo chính sách P-DERIVE (TCM-001c).';
+
+    try {
+        // (a) confidence trên trần low.
+        $write([
+            ['nature' => 'on', 'flavor' => 'cam', 'element' => 'tho', 'derived_from' => 'gao-te', 'source_ref' => $okRef, 'confidence' => 'medium'],
+        ]);
+        $this->artisan('lacdoi:validate-data')->assertExitCode(1);
+
+        // (b) không gương dòng gốc (gao-te là ôn, ghi hàn).
+        $write([
+            ['nature' => 'han', 'flavor' => 'cam', 'element' => 'tho', 'derived_from' => 'gao-te', 'source_ref' => $okRef, 'confidence' => 'low'],
+        ]);
+        $this->artisan('lacdoi:validate-data')->assertExitCode(1);
+
+        // (c) thiếu dấu P-DERIVE trong source_ref.
+        $write([
+            ['nature' => 'on', 'flavor' => 'cam', 'element' => 'tho', 'derived_from' => 'gao-te', 'source_ref' => 'Suy diễn từ gạo tẻ.', 'confidence' => 'low'],
+        ]);
+        $this->artisan('lacdoi:validate-data')->assertExitCode(1);
+
+        // (d) nguyên liệu hỗn hợp (có components) mang nhãn suy diễn.
+        $write([
+            ['nature' => 'on', 'flavor' => 'cam', 'element' => 'tho', 'derived_from' => 'gao-te', 'source_ref' => $okRef, 'confidence' => 'low'],
+        ], ['components' => ['gao-te']]);
+        $this->artisan('lacdoi:validate-data')->assertExitCode(1);
+
+        // (e) suy diễn chuỗi: gốc z-tcm001c-origin tự nó chỉ có nhãn suy diễn.
+        $tagsOrigin = \App\Taxonomy\TaggingRules::tagsFor('z-tcm001c-origin', 'khac');
+        file_put_contents($pathOrigin, json_encode([
+            'slug' => 'z-tcm001c-origin',
+            'name_vi' => 'Fixture goc TCM-001c (xoá sau test)',
+            'name_en' => null,
+            'category' => 'khac',
+            'reference_food' => ['mapping_confidence' => 'high', 'alternatives' => []],
+            'secondary_sources' => [],
+            'is_ready_to_eat' => false,
+            'units' => [],
+            'tcm_traits' => [
+                ['nature' => 'on', 'flavor' => 'cam', 'element' => 'tho', 'derived_from' => 'gao-te', 'source_ref' => $okRef, 'confidence' => 'low'],
+            ],
+            'source' => 'curated',
+            'confidence' => 'low',
+            'needs_review' => true,
+            'tags' => $tagsOrigin,
+        ], JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
+        $write([
+            ['nature' => 'on', 'flavor' => 'cam', 'element' => 'tho', 'derived_from' => 'z-tcm001c-origin', 'source_ref' => 'Suy diễn từ dạng gốc fixture origin theo chính sách P-DERIVE (TCM-001c).', 'confidence' => 'low'],
+        ]);
+        $this->artisan('lacdoi:validate-data')->assertExitCode(1);
+    } finally {
+        @unlink($path);
+        @unlink($pathOrigin);
+    }
+});
+
+it('TCM-001c: seed -> export giu derived_from va DB khoa confidence cua dong suy dien o low', function () {
+    $this->seed(RegionSeeder::class);
+    $this->seed(IngredientSeeder::class);
+
+    $host = Ingredient::orderBy('slug')->firstOrFail();
+    $path = base_path("data/ingredients/{$host->slug}.json");
+    $originalBytes = (string) file_get_contents($path);
+
+    IngredientTcmTrait::create([
+        'ingredient_id' => $host->id,
+        'nature' => 'on',
+        'flavor' => 'cam',
+        'element' => 'tho',
+        'derived_from' => 'gao-te',
+        'source_ref' => 'Fixture suy dien P-DERIVE TCM-001c',
+        'confidence' => 'low',
+    ]);
+
+    try {
+        $this->artisan('lacdoi:export-data')->assertExitCode(0);
+        $exported = json_decode((string) file_get_contents($path), true);
+        $byRef = collect($exported['tcm_traits'])->keyBy('source_ref');
+        expect($byRef['Fixture suy dien P-DERIVE TCM-001c']['derived_from'])->toBe('gao-te');
+
+        IngredientTcmTrait::where('ingredient_id', $host->id)->delete();
+        $this->seed(IngredientSeeder::class);
+        $fresh = Ingredient::where('slug', $host->slug)->firstOrFail();
+        expect($fresh->tcmTraits->firstWhere('source_ref', 'Fixture suy dien P-DERIVE TCM-001c')->derived_from)->toBe('gao-te');
+
+        // CHECK ở DB: suy diễn mà confidence khác low thì không ghi được.
+        expect(fn () => IngredientTcmTrait::create([
+            'ingredient_id' => $host->id,
+            'nature' => 'on',
+            'flavor' => 'cam',
+            'element' => 'tho',
+            'derived_from' => 'gao-te',
+            'source_ref' => 'Fixture suy dien sai tran TCM-001c',
+            'confidence' => 'high',
+        ]))->toThrow(\Illuminate\Database\QueryException::class);
+    } finally {
+        IngredientTcmTrait::where('ingredient_id', $host->id)
+            ->whereIn('source_ref', ['Fixture suy dien P-DERIVE TCM-001c', 'Fixture suy dien sai tran TCM-001c'])
+            ->delete();
+        file_put_contents($path, $originalBytes);
+    }
+});
+
 it('V20: bao do khi components tro toi slug khong ton tai (tang file)', function () {
     $path = base_path('data/ingredients/z-tcm000-fixture.json');
     $tags = \App\Taxonomy\TaggingRules::tagsFor('z-tcm000-fixture', 'khac');

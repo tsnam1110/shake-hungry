@@ -39,6 +39,22 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "binh",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 豇豆 (Vigna unguiculata (đậu đũa là subsp. sesquipedalis); infobox + + [性能] nhất quán; mục 食療價值 ghi đối tượng gồm quả non ăn tươi) ghi 「藥性：平／藥味：甘；：甘，平。；[性能]味甘，性平。」. http://cht.a-hospital.com/w/%E8%B1%87%E8%B1%86",
+      "confidence": "medium"
+    },
+    {
+      "nature": "binh",
+      "flavor": "ham",
+      "element": "thuy",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 豇豆 (mục 食療作用 + trích 《本草綱目》 trên trang — cùng tính bình, thêm vị hàm) ghi 「「豇豆性平、味甘咸，歸脾、胃經；」；《綱目》「甘咸，平，無毒。」」. http://cht.a-hospital.com/w/%E8%B1%87%E8%B1%86",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

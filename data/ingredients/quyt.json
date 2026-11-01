@@ -46,6 +46,36 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "luong",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 橘 (Citrus reticulata; infobox của trang) ghi 「藥性 涼／藥味 酸、甘」. http://cht.a-hospital.com/w/%E6%A1%94%E5%AD%90",
+      "confidence": "medium"
+    },
+    {
+      "nature": "luong",
+      "flavor": "toan",
+      "element": "moc",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 橘 (Citrus reticulata; infobox của trang) ghi 「藥性 涼／藥味 酸、甘」. http://cht.a-hospital.com/w/%E6%A1%94%E5%AD%90",
+      "confidence": "medium"
+    },
+    {
+      "nature": "binh",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 橘 (phần 《中華本草》 — lệch với infobox, giữ cả hai) ghi 「甘；酸；平（為芸香科植物橘及其栽培變種的成熟果實）」. http://cht.a-hospital.com/w/%E6%A1%94%E5%AD%90",
+      "confidence": "medium"
+    },
+    {
+      "nature": "binh",
+      "flavor": "toan",
+      "element": "moc",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 橘 (phần 《中華本草》 — lệch với infobox, giữ cả hai) ghi 「甘；酸；平（為芸香科植物橘及其栽培變種的成熟果實）」. http://cht.a-hospital.com/w/%E6%A1%94%E5%AD%90",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

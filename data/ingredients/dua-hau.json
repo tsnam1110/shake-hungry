@@ -65,6 +65,22 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "han",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 西瓜 (Citrullus lanatus, thịt quả; infobox của trang — lệch với sổ tay HK, giữ cả hai) ghi 「藥性「寒」、藥味「甘」」. http://cht.a-hospital.com/w/%E8%A5%BF%E7%93%9C",
+      "confidence": "medium"
+    },
+    {
+      "nature": "luong",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "Sổ tay người chăm sóc bệnh nhân ung thư Hồng Kông 《癌症病人照顧者全面手冊》, chương 中醫食療——食物種類分析 (nội dung: TS. Lâm Đạo Nghi 林道儀， thầy thuốc Trung y đăng ký hành nghề; bản chốt 2022-04): mục 西瓜 ghi 「西瓜（附西瓜皮）：味甘，性涼。」. Văn xuôi cùng mục của sổ tay lại nói 「其性偏寒」 — mâu thuẫn nội bộ nguồn, ghi lại ở đây; dòng hàn của A+ giữ riêng bên dưới. https://www.cancercarers.org.hk/%E4%B8%AD%E9%86%AB%E9%A3%9F%E7%99%82/%E9%A3%9F%E7%89%A9%E7%A8%AE%E9%A1%9E%E5%88%86%E6%9E%90",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

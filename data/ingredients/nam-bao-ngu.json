@@ -39,6 +39,15 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "on",
+      "flavor": "ham",
+      "element": "thuy",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 平菇（trang 側耳） (trang ghi đích danh Pleurotus ostreatus — khớp file; trích 《全國中草藥彙編》 + infobox) ghi 「微咸，溫。；藥性溫／藥味咸」. http://cht.a-hospital.com/w/%E5%B9%B3%E8%8F%87",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

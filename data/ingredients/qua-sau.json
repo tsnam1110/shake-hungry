@@ -39,6 +39,22 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "luong",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "Thư viện số (thuvienso.com.vn) — tài liệu 「Vị thuốc lạ từ sấu」 (PDF): mục Tính vị công năng ghi 「Quả sấu có vị chua, ngọt, hơi chát, mùi thơm, đặc trưng, tính mát.」— chuẩn hoá tính mát thành luong, vị chát （澀） bỏ theo quy ước; bản PDF trực tuyến không ghi rõ tên sách gốc ở phần trích nên confidence low. https://thuvienso.com.vn/upload/library/532611/preview/vi-thuoc-la-tu-sau-532611.pdf",
+      "confidence": "low"
+    },
+    {
+      "nature": "luong",
+      "flavor": "toan",
+      "element": "moc",
+      "source_ref": "Thư viện số (thuvienso.com.vn) — tài liệu 「Vị thuốc lạ từ sấu」 (PDF): mục Tính vị công năng ghi 「Quả sấu có vị chua, ngọt, hơi chát, mùi thơm, đặc trưng, tính mát.」— chuẩn hoá tính mát thành luong, vị chát （澀） bỏ theo quy ước; bản PDF trực tuyến không ghi rõ tên sách gốc ở phần trích nên confidence low. https://thuvienso.com.vn/upload/library/532611/preview/vi-thuoc-la-tu-sau-532611.pdf",
+      "confidence": "low"
+    }
+  ],
   "source": "curated",
   "confidence": "low",
   "needs_review": true,

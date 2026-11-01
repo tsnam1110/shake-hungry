@@ -39,6 +39,50 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "han",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 楊桃 (Averrhoa carambola, bản chua; mục 性味歸經 + infobox) ghi 「歸經】性寒，味甘酸；藥性 寒／藥味 酸、甘」. http://cht.a-hospital.com/w/%E6%A5%8A%E6%A1%83",
+      "confidence": "medium"
+    },
+    {
+      "nature": "han",
+      "flavor": "toan",
+      "element": "moc",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 楊桃 (Averrhoa carambola, bản chua; mục 性味歸經 + infobox) ghi 「歸經】性寒，味甘酸；藥性 寒／藥味 酸、甘」. http://cht.a-hospital.com/w/%E6%A5%8A%E6%A1%83",
+      "confidence": "medium"
+    },
+    {
+      "nature": "luong",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 楊桃 (phần [性能] + trích 《廣西中藥志》 — lệch bậc với dòng hàn, giữ cả hai) ghi 「[性能]味甘、酸，性涼；《廣西中藥志》「味甘酸，性涼，無毒。」」. http://cht.a-hospital.com/w/%E6%A5%8A%E6%A1%83",
+      "confidence": "medium"
+    },
+    {
+      "nature": "luong",
+      "flavor": "toan",
+      "element": "moc",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 楊桃 (phần [性能] + trích 《廣西中藥志》 — lệch bậc với dòng hàn, giữ cả hai) ghi 「[性能]味甘、酸，性涼；《廣西中藥志》「味甘酸，性涼，無毒。」」. http://cht.a-hospital.com/w/%E6%A5%8A%E6%A1%83",
+      "confidence": "medium"
+    },
+    {
+      "nature": "binh",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 楊桃 (trích 《本草綱目》 trên trang; vị 澀 bỏ theo quy ước — lệch với hai dòng trên, giữ cả ba) ghi 「《綱目》「酸甘澀，平，無毒。」」. http://cht.a-hospital.com/w/%E6%A5%8A%E6%A1%83",
+      "confidence": "medium"
+    },
+    {
+      "nature": "binh",
+      "flavor": "toan",
+      "element": "moc",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 楊桃 (trích 《本草綱目》 trên trang; vị 澀 bỏ theo quy ước — lệch với hai dòng trên, giữ cả ba) ghi 「《綱目》「酸甘澀，平，無毒。」」. http://cht.a-hospital.com/w/%E6%A5%8A%E6%A1%83",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "medium",
   "needs_review": true,

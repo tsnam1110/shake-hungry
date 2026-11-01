@@ -53,6 +53,50 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "on",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 桃子 (Prunus persica, thịt quả; infobox + thân bài) ghi 「藥性「溫」、藥味「酸、甘」；「桃子味甘酸，性溫」」. http://cht.a-hospital.com/w/%E6%A1%83%E5%AD%90",
+      "confidence": "medium"
+    },
+    {
+      "nature": "on",
+      "flavor": "toan",
+      "element": "moc",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 桃子 (Prunus persica, thịt quả; infobox + thân bài) ghi 「藥性「溫」、藥味「酸、甘」；「桃子味甘酸，性溫」」. http://cht.a-hospital.com/w/%E6%A1%83%E5%AD%90",
+      "confidence": "medium"
+    },
+    {
+      "nature": "binh",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 桃子 (Prunus persica; phần [性能] — lệch với infobox của chính trang, giữ cả hai) ghi 「[性能]味甘、酸，性平」. http://cht.a-hospital.com/w/%E6%A1%83%E5%AD%90",
+      "confidence": "medium"
+    },
+    {
+      "nature": "binh",
+      "flavor": "toan",
+      "element": "moc",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 桃子 (Prunus persica; phần [性能] — lệch với infobox của chính trang, giữ cả hai) ghi 「[性能]味甘、酸，性平」. http://cht.a-hospital.com/w/%E6%A1%83%E5%AD%90",
+      "confidence": "medium"
+    },
+    {
+      "nature": "on",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "Sổ tay người chăm sóc bệnh nhân ung thư Hồng Kông 《癌症病人照顧者全面手冊》, chương 中醫食療——食物種類分析 (nội dung: TS. Lâm Đạo Nghi 林道儀， thầy thuốc Trung y đăng ký hành nghề; bản chốt 2022-04): mục 桃肉 ghi 「桃肉：味甘、酸，性溫。」. https://www.cancercarers.org.hk/%E4%B8%AD%E9%86%AB%E9%A3%9F%E7%99%82/%E9%A3%9F%E7%89%A9%E7%A8%AE%E9%A1%9E%E5%88%86%E6%9E%90",
+      "confidence": "medium"
+    },
+    {
+      "nature": "on",
+      "flavor": "toan",
+      "element": "moc",
+      "source_ref": "Sổ tay người chăm sóc bệnh nhân ung thư Hồng Kông 《癌症病人照顧者全面手冊》, chương 中醫食療——食物種類分析 (nội dung: TS. Lâm Đạo Nghi 林道儀， thầy thuốc Trung y đăng ký hành nghề; bản chốt 2022-04): mục 桃肉 ghi 「桃肉：味甘、酸，性溫。」. https://www.cancercarers.org.hk/%E4%B8%AD%E9%86%AB%E9%A3%9F%E7%99%82/%E9%A3%9F%E7%89%A9%E7%A8%AE%E9%A1%9E%E5%88%86%E6%9E%90",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

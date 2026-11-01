@@ -39,6 +39,22 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "luong",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 芹菜 (Apium graveolens — khớp file; mục 性味歸經 + [性能] nhất quán) ghi 「性味歸經：性涼，味甘辛，無毒；[性能]味辛、甘，性涼。」. http://cht.a-hospital.com/w/%E8%8A%B9%E8%8F%9C",
+      "confidence": "medium"
+    },
+    {
+      "nature": "luong",
+      "flavor": "tan",
+      "element": "kim",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 芹菜 (Apium graveolens — khớp file; mục 性味歸經 + [性能] nhất quán) ghi 「性味歸經：性涼，味甘辛，無毒；[性能]味辛、甘，性涼。」. http://cht.a-hospital.com/w/%E8%8A%B9%E8%8F%9C",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

@@ -39,6 +39,15 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "luong",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 南瓜花 (hoa của Cucurbita moschata — khớp file; infobox (vị chỉ có ở infobox) + trích 《分類草藥性》) ghi 「藥性：涼／藥味：甘；《分類草藥性》:性涼。」. http://cht.a-hospital.com/w/%E5%8D%97%E7%93%9C%E8%8A%B1",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

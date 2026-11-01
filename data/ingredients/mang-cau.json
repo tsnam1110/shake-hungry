@@ -39,6 +39,15 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "han",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 番荔枝 (Annona squamosa; phần 《中華本草》 + infobox) ghi 「味甘；性寒；藥性 寒／藥味 甘」. http://cht.a-hospital.com/w/%E7%95%AA%E8%8D%94%E6%9E%9D",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

@@ -53,6 +53,15 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "binh",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 番石榴 (Psidium guajava, quả; trích 《全國中草藥彙編》 + infobox; vị 澀 bỏ theo quy ước) ghi 「 甘、澀，平。；藥性 平／藥味 甘、澀」. http://cht.a-hospital.com/w/%E7%95%AA%E7%9F%B3%E6%A6%B4",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "medium",
   "needs_review": true,

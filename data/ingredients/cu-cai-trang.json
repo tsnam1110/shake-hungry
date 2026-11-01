@@ -46,6 +46,36 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "binh",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 蘿卜（mục 萊菔） (Raphanus sativus, chỉ CỦ (trang ghi «十字花科草本植物萊菔的根»; mục 萊菔子 — hạt — đã loại); mục 食療作用) ghi 「「蘿卜性平，味辛、甘，入脾、胃經；」」. http://cht.a-hospital.com/w/%E8%8E%B1%E8%8F%94",
+      "confidence": "medium"
+    },
+    {
+      "nature": "binh",
+      "flavor": "tan",
+      "element": "kim",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 蘿卜（mục 萊菔） (Raphanus sativus, chỉ CỦ (trang ghi «十字花科草本植物萊菔的根»; mục 萊菔子 — hạt — đã loại); mục 食療作用) ghi 「「蘿卜性平，味辛、甘，入脾、胃經；」」. http://cht.a-hospital.com/w/%E8%8E%B1%E8%8F%94",
+      "confidence": "medium"
+    },
+    {
+      "nature": "luong",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 蘿卜（mục 萊菔） (phần [性能] cho củ SỐNG (file là củ cải sống); vế «熟者甘平» cho dạng chín không gieo — chuyển hoá do nấu thuộc quy ước tổng hợp của dự án) ghi 「[性能]味辛、甘，性涼；熟者甘平。」. http://cht.a-hospital.com/w/%E8%8E%B1%E8%8F%94",
+      "confidence": "medium"
+    },
+    {
+      "nature": "luong",
+      "flavor": "tan",
+      "element": "kim",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 蘿卜（mục 萊菔） (phần [性能] cho củ SỐNG (file là củ cải sống); vế «熟者甘平» cho dạng chín không gieo — chuyển hoá do nấu thuộc quy ước tổng hợp của dự án) ghi 「[性能]味辛、甘，性涼；熟者甘平。」. http://cht.a-hospital.com/w/%E8%8E%B1%E8%8F%94",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

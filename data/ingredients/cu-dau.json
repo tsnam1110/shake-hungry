@@ -49,6 +49,15 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "luong",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 豆薯 (Pachyrhizus erosus, bộ phận CỦ （塊根） ghi rõ trong trích; trích 《全國中草藥彙編》 + infobox （微涼/涼 cùng bậc luong)) ghi 「塊根：甘，微涼。；藥性涼／藥味甘」. http://cht.a-hospital.com/w/%E8%B1%86%E8%96%AF",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

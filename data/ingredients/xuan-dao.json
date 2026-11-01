@@ -52,6 +52,36 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "binh",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 桃子 (phần [性能] — lệch với infobox của chính trang, giữ cả hai) ghi 「[性能]味甘、酸，性平」. http://cht.a-hospital.com/w/%E6%A1%83%E5%AD%90",
+      "confidence": "medium"
+    },
+    {
+      "nature": "binh",
+      "flavor": "toan",
+      "element": "moc",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 桃子 (phần [性能] — lệch với infobox của chính trang, giữ cả hai) ghi 「[性能]味甘、酸，性平」. http://cht.a-hospital.com/w/%E6%A1%83%E5%AD%90",
+      "confidence": "medium"
+    },
+    {
+      "nature": "on",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 桃子 (xuân đào là nhóm giống 油桃 của Prunus persica — trang liệt kê 油桃品種群 trong phân loại giống của loài; gieo ở cấp loài kèm ghi chú giống; infobox + thân bài (dòng sổ tay HK 桃肉 cùng giá trị, ghi ở file dao)) ghi 「藥性 溫／藥味 酸、甘；「桃子味甘酸，性溫」」. http://cht.a-hospital.com/w/%E6%A1%83%E5%AD%90",
+      "confidence": "medium"
+    },
+    {
+      "nature": "on",
+      "flavor": "toan",
+      "element": "moc",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 桃子 (xuân đào là nhóm giống 油桃 của Prunus persica — trang liệt kê 油桃品種群 trong phân loại giống của loài; gieo ở cấp loài kèm ghi chú giống; infobox + thân bài (dòng sổ tay HK 桃肉 cùng giá trị, ghi ở file dao)) ghi 「藥性 溫／藥味 酸、甘；「桃子味甘酸，性溫」」. http://cht.a-hospital.com/w/%E6%A1%83%E5%AD%90",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

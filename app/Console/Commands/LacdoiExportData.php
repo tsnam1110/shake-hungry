@@ -256,6 +256,11 @@ class LacdoiExportData extends Command
                 if (($t->element_basis ?? 'flavor') !== 'flavor') {
                     $row['element_basis'] = $t->element_basis;
                 }
+                // derived_from (TCM-001c, P-DERIVE): chỉ ghi khi dòng là
+                // nhãn suy diễn — dòng nguồn thật giữ nguyên từng byte.
+                if (($t->derived_from ?? null) !== null) {
+                    $row['derived_from'] = $t->derived_from;
+                }
                 if ($t->usage_restricted) {
                     $row['usage_restricted'] = true;
                     $row['usage_note'] = $t->usage_note;
@@ -265,8 +270,8 @@ class LacdoiExportData extends Command
             })
             ->all();
         usort($traits, fn ($a, $b) => strcmp(
-            ($a['source_ref'] ?? '').'|'.($a['nature'] ?? '').'|'.($a['flavor'] ?? '').'|'.($a['element_basis'] ?? 'flavor'),
-            ($b['source_ref'] ?? '').'|'.($b['nature'] ?? '').'|'.($b['flavor'] ?? '').'|'.($b['element_basis'] ?? 'flavor'),
+            ($a['source_ref'] ?? '').'|'.($a['nature'] ?? '').'|'.($a['flavor'] ?? '').'|'.($a['element_basis'] ?? 'flavor').'|'.($a['derived_from'] ?? ''),
+            ($b['source_ref'] ?? '').'|'.($b['nature'] ?? '').'|'.($b['flavor'] ?? '').'|'.($b['element_basis'] ?? 'flavor').'|'.($b['derived_from'] ?? ''),
         ));
         if ($traits !== []) {
             $payload = $this->insertAfterKey($payload, 'media', ['tcm_traits' => $traits], fallbackKey: 'units');

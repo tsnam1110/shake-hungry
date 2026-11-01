@@ -39,6 +39,16 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "on",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "P-DERIVE (TCM-001c): nhãn suy diễn từ Gạo tẻ (gao-te) — bột gạo tẻ nhào nước, cán cắt thành sợi bánh canh tươi: dạng chế biến cơ học đơn thành phần của nguyên liệu gốc, mang nhãn của gốc theo chính sách P-DERIVE. Nhãn gốc: Sổ tay người chăm sóc bệnh nhân ung thư Hồng Kông 《癌症病人照顧者全面手冊》, chương 中醫食療——食物種類分析 (nội dung: TS. Lâm Đạo Nghi 林道儀， thầy thuốc Trung y đăng ký hành nghề; bản chốt 2022-04): mục 白米 (gạo tẻ trắng) ghi 「味甘，性溫」. https://www.cancercarers.org.hk/%E4%B8%AD%E9%86%AB%E9%A3%9F%E7%99%82/%E9%A3%9F%E7%89%A9%E7%A8%AE%E9%A1%9E%E5%88%86%E6%9E%90",
+      "confidence": "low",
+      "derived_from": "gao-te"
+    }
+  ],
   "source": "curated",
   "confidence": "low",
   "needs_review": true,

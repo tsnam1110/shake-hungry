@@ -65,6 +65,22 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "han",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 蓮霧 (Syzygium samarangense — đúng loài roi trong kho; phần 《中華本草》 (infobox của trang ghi藥味苦 mâu thuẫn với cả hai dòng quả ăn ở thân bài — không gieo dòng khổ, ghi lại ở đây)) ghi 「味甘；性寒（Syzygium samarangense）」. http://cht.a-hospital.com/w/%E8%93%AE%E9%9C%A7",
+      "confidence": "medium"
+    },
+    {
+      "nature": "binh",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 蓮霧 (thân bài — lệch với dòng hàn của 《中華本草》 cùng trang, giữ cả hai) ghi 「「蓮霧味甘，性平」；「性味甘平」」. http://cht.a-hospital.com/w/%E8%93%AE%E9%9C%A7",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "low",
   "needs_review": true,

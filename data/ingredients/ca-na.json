@@ -39,6 +39,36 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "binh",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 橄欖 (Canarium album — cà na, không phải ô liu Địa Trung Hải; infobox + trích 《中華本草》+ phần [性能]; vị 澀 (chát) không có trong từ vựng dự án nên bỏ) ghi 「性平；味甘、酸（澀）— [性能]味甘、酸，性平」. http://cht.a-hospital.com/w/%E6%A9%84%E6%AC%96",
+      "confidence": "medium"
+    },
+    {
+      "nature": "binh",
+      "flavor": "toan",
+      "element": "moc",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 橄欖 (Canarium album — cà na, không phải ô liu Địa Trung Hải; infobox + trích 《中華本草》+ phần [性能]; vị 澀 (chát) không có trong từ vựng dự án nên bỏ) ghi 「性平；味甘、酸（澀）— [性能]味甘、酸，性平」. http://cht.a-hospital.com/w/%E6%A9%84%E6%AC%96",
+      "confidence": "medium"
+    },
+    {
+      "nature": "binh",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "Sổ tay người chăm sóc bệnh nhân ung thư Hồng Kông 《癌症病人照顧者全面手冊》, chương 中醫食療——食物種類分析 (nội dung: TS. Lâm Đạo Nghi 林道儀， thầy thuốc Trung y đăng ký hành nghề; bản chốt 2022-04): mục 橄欖 ghi 「橄欖：味甘、酸、澀，性平。」. Vị 澀 bỏ theo quy ước từ vựng. https://www.cancercarers.org.hk/%E4%B8%AD%E9%86%AB%E9%A3%9F%E7%99%82/%E9%A3%9F%E7%89%A9%E7%A8%AE%E9%A1%9E%E5%88%86%E6%9E%90",
+      "confidence": "medium"
+    },
+    {
+      "nature": "binh",
+      "flavor": "toan",
+      "element": "moc",
+      "source_ref": "Sổ tay người chăm sóc bệnh nhân ung thư Hồng Kông 《癌症病人照顧者全面手冊》, chương 中醫食療——食物種類分析 (nội dung: TS. Lâm Đạo Nghi 林道儀， thầy thuốc Trung y đăng ký hành nghề; bản chốt 2022-04): mục 橄欖 ghi 「橄欖：味甘、酸、澀，性平。」. Vị 澀 bỏ theo quy ước từ vựng. https://www.cancercarers.org.hk/%E4%B8%AD%E9%86%AB%E9%A3%9F%E7%99%82/%E9%A3%9F%E7%89%A9%E7%A8%AE%E9%A1%9E%E5%88%86%E6%9E%90",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "unknown",
   "needs_review": true,

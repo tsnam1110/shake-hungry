@@ -73,6 +73,7 @@ fetch('/api/ingredients/' + slug).then(r => { if (!r.ok) throw new Error('404');
             ${i.tcm.traits.map(t => `<div class="ld-row" style="align-items:flex-start"><span class="grow">
                 <b>${[t.nature_label, t.flavor_label, t.element_label].filter(Boolean).map(esc).join(' · ')}</b>
                 <span class="sub">Nguồn: ${esc(t.source_ref)} · Độ tin cậy: ${esc(t.confidence)}</span>
+                ${t.derived_from ? `<span class="sub">Nhãn suy diễn từ ${esc(t.derived_from_name ?? t.derived_from)} — đây là dạng chế biến đơn thành phần của nguyên liệu gốc, dự án suy nhãn theo chính sách riêng và luôn để độ tin cậy thấp.</span>` : ''}
                 ${t.usage_restricted ? `<span class="sub" style="color:var(--color-danger)">Không được dùng — ${esc(t.usage_note ?? '')}</span>` : ''}
             </span></div>`).join('')}
         </div>

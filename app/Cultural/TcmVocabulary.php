@@ -110,6 +110,16 @@ final class TcmVocabulary
         'tron' => -0.5,
     ];
 
+    /**
+     * Chính sách P-DERIVE (TCM-001c): nhãn suy diễn cho dạng chế biến cơ
+     * học đơn thành phần của một nguyên liệu gốc đã có nhãn nguồn thật.
+     * Dòng suy diễn mang `derived_from` = slug của gốc, confidence bị
+     * khoá ở 'low' (CHECK ở DB + V20), và `source_ref` bắt buộc chứa
+     * cụm đánh dấu này để phân biệt với nhãn nguồn trực tiếp ở mọi nơi
+     * truy vết.
+     */
+    public const DERIVED_MARKER = 'P-DERIVE';
+
     /** Ngưỡng trung thực khi hiển thị (kế hoạch Mức 3 §1) — không đổi theo quyết định mặc định bật. */
     public const DISPLAY_MIN_COVERAGE = 30.0;
 

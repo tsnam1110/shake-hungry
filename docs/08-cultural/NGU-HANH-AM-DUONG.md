@@ -292,3 +292,41 @@ có nguồn định lượng):
   §3) | `direct` (nguồn ghi trực tiếp). Chỉ dòng basis=`flavor` bỏ phiếu
   `dominant_element` khi tổng hợp món; dòng basis khác vẫn hiển thị ở tầng nguyên
   liệu và vẫn tham gia tổng hợp nature/flavor như thường.
+
+## 9. Chính sách P-DERIVE — nhãn suy diễn cho dạng chế biến đơn thành phần (TCM-001c)
+
+> Quyết định của phiên chính theo uỷ quyền tự chủ của chủ dự án (2026-11-01),
+> xử lý điểm nghẽn ghi ở TCM-001b: các nguồn chỉ phân loại nguyên liệu gốc
+> (hạt gạo, củ khoai), không phân loại dạng đã chế biến (bột, sợi) — mà suy
+> nhãn lặng lẽ từ gốc sang dạng chế biến là điều kỷ luật các đợt trước cấm.
+> P-DERIVE hợp thức hoá việc suy diễn đó thành một loại dòng nhãn RIÊNG,
+> bị khoá chặt và luôn tự khai báo là suy diễn.
+
+**Phạm vi áp dụng — chỉ khi ĐỒNG THỜI đủ ba điều kiện:**
+
+1. Nguyên liệu là dạng chế biến **cơ học** (xay thành bột, ngâm nở thành
+   sợi/bánh, sấy khô, ép) của **đúng một** nguyên liệu gốc;
+2. nguyên liệu gốc **đã có nhãn nguồn thật** trong kho;
+3. chế biến không đưa thêm thành phần nào khác và không đổi bản chất
+   nguyên liệu (lên men, muối chua, rang kèm gia vị, pha trộn — đều NGOÀI
+   phạm vi; lên men đa yếu tố như nước mắm tuyệt đối không).
+
+**Hình thức:** dòng nhãn mang `derived_from` = slug của gốc; nature/flavor/
+element/`element_basis` **gương nguyên vẹn một dòng nguồn thật của gốc**;
+`source_ref` trích lại nguồn của nhãn gốc và bắt đầu bằng dấu `P-DERIVE`;
+nếu dòng gốc mang cờ hạn chế sử dụng thì dòng suy diễn mang theo cờ + ghi
+chú đó.
+
+**Các khoá cứng (V20 tầng file + CHECK ở DB, migration 100012):**
+
+- `confidence` của dòng suy diễn **khoá ở `low`** — không ngoại lệ;
+- **cấm suy diễn chuỗi:** gốc phải có dòng nguồn thật, dòng suy diễn của
+  gốc không làm căn cứ được;
+- **cấm cho nguyên liệu đa thành phần/hỗn hợp** (có `components`) và
+  nguyên liệu không định danh (dầu ăn generic…);
+- hiển thị phân biệt rõ ở trang nguyên liệu/quả ("Nhãn suy diễn từ …"),
+  không bao giờ trình bày như nhãn nguồn trực tiếp.
+
+**Tổng hợp món:** dòng suy diễn tham gia như nhãn thường (nó vẫn là một
+phiếu có căn cứ truy vết về nguồn thật của gốc); trần `medium`/`low` của
+confidence món theo §8 tự động giữ kết luận ở mức thận trọng.

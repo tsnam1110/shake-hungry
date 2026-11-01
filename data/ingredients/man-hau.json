@@ -46,6 +46,36 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "binh",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 李子 (Prunus salicina; thân bài + infobox) ghi 「「李子性平、味甘、酸」；藥性 平／藥味 酸、甘」. http://cht.a-hospital.com/w/%E6%9D%8E%E5%AD%90",
+      "confidence": "medium"
+    },
+    {
+      "nature": "binh",
+      "flavor": "toan",
+      "element": "moc",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 李子 (Prunus salicina; thân bài + infobox) ghi 「「李子性平、味甘、酸」；藥性 平／藥味 酸、甘」. http://cht.a-hospital.com/w/%E6%9D%8E%E5%AD%90",
+      "confidence": "medium"
+    },
+    {
+      "nature": "luong",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 李子 (phần [性能] ở mục 食療價值 — lệch với dòng bình của thân bài, giữ cả hai) ghi 「[性能]味甘、酸，性涼。」. http://cht.a-hospital.com/w/%E6%9D%8E%E5%AD%90",
+      "confidence": "medium"
+    },
+    {
+      "nature": "luong",
+      "flavor": "toan",
+      "element": "moc",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 李子 (phần [性能] ở mục 食療價值 — lệch với dòng bình của thân bài, giữ cả hai) ghi 「[性能]味甘、酸，性涼。」. http://cht.a-hospital.com/w/%E6%9D%8E%E5%AD%90",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "medium",
   "needs_review": true,

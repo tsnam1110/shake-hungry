@@ -119,6 +119,7 @@ class IngredientSeeder extends Seeder
                     'flavor' => $trait['flavor'] ?? null,
                     'element' => $trait['element'] ?? null,
                     'element_basis' => $trait['element_basis'] ?? 'flavor',
+                    'derived_from' => $trait['derived_from'] ?? null,
                     'source_ref' => $trait['source_ref'] ?? null,
                     'confidence' => $trait['confidence'],
                     'usage_restricted' => $trait['usage_restricted'] ?? false,

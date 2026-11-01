@@ -52,6 +52,15 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "han",
+      "flavor": "dam",
+      "element": null,
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 秋葵 (Abelmoschus esculentus — trang ghi rõ «可食用部分是果莢»; infobox (thân bài chỉ khẳng định tính hàn lương, không ghi vị)) ghi 「藥性：寒／藥味：淡」. http://cht.a-hospital.com/w/%E7%A7%8B%E8%91%B5",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

@@ -53,6 +53,29 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "luong",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 竹筍 (Phyllostachys spp. — khớp chi với file; mục 食療作用； 微寒 chuẩn hoá thành luong) ghi 「「竹筍味甘、性微寒，歸胃、肺經；」」. http://cht.a-hospital.com/w/%E7%AB%B9%E7%AC%8B",
+      "confidence": "medium"
+    },
+    {
+      "nature": "han",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 竹筍 (phần [性能] ở mục 食療價值 — lệch với dòng vi hàn ở trên, giữ cả hai) ghi 「[性能]味甘、微苦，性寒。」. http://cht.a-hospital.com/w/%E7%AB%B9%E7%AC%8B",
+      "confidence": "medium"
+    },
+    {
+      "nature": "han",
+      "flavor": "kho",
+      "element": "hoa",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 竹筍 (phần [性能] ở mục 食療價值 — lệch với dòng vi hàn ở trên, giữ cả hai) ghi 「[性能]味甘、微苦，性寒。」. http://cht.a-hospital.com/w/%E7%AB%B9%E7%AC%8B",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "medium",
   "needs_review": true,
