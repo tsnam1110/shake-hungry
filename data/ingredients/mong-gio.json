@@ -46,6 +46,22 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "binh",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 豬蹄 (móng giò lợn, bắt đầu chép từ 《千金·食治》) ghi 藥性「平」、藥味「甘、咸」. https://cht.a-hospital.com/w/%E7%8C%AA%E8%B9%84",
+      "confidence": "medium"
+    },
+    {
+      "nature": "binh",
+      "flavor": "ham",
+      "element": "thuy",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 豬蹄 (móng giò lợn, bắt đầu chép từ 《千金·食治》) ghi 藥性「平」、藥味「甘、咸」. https://cht.a-hospital.com/w/%E7%8C%AA%E8%B9%84",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

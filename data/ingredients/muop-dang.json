@@ -46,6 +46,22 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "luong",
+      "flavor": "kho",
+      "element": "hoa",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 苦瓜 (Momordica charantia), trích 《全國中草藥彙編》 ghi「苦，涼」— lệch với dòng tính hàn của chính trang, giữ cả hai. http://cht.a-hospital.com/w/%E8%8B%A6%E7%93%9C",
+      "confidence": "medium"
+    },
+    {
+      "nature": "han",
+      "flavor": "kho",
+      "element": "hoa",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 苦瓜 (mướp đắng/khổ qua, Momordica charantia — khớp loài), phần tính vị ghi「苦，寒」(theo 《滇南本草》《本草綱目》). http://cht.a-hospital.com/w/%E8%8B%A6%E7%93%9C",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

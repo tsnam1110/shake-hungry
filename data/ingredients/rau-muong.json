@@ -51,6 +51,29 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "han",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 蕹菜 (rau muống, Ipomoea aquatica — khớp loài), phần dược liệu ghi 性味「甘，寒」. http://cht.a-hospital.com/w/%E8%95%B9%E8%8F%9C",
+      "confidence": "medium"
+    },
+    {
+      "nature": "luong",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 蕹菜 (rau muống, Ipomoea aquatica), trích 《全國中草藥彙編》 ghi「甘、淡，涼」— lệch với dòng tính hàn của chính trang, giữ cả hai theo quy tắc không ép chọn. http://cht.a-hospital.com/w/%E8%95%B9%E8%8F%9C",
+      "confidence": "medium"
+    },
+    {
+      "nature": "luong",
+      "flavor": "dam",
+      "element": null,
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 蕹菜 (rau muống, Ipomoea aquatica), trích 《全國中草藥彙編》 ghi「甘、淡，涼」— lệch với dòng tính hàn của chính trang, giữ cả hai theo quy tắc không ép chọn. http://cht.a-hospital.com/w/%E8%95%B9%E8%8F%9C",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

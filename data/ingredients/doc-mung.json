@@ -39,6 +39,15 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "luong",
+      "flavor": "dam",
+      "element": null,
+      "source_ref": "Y văn đông y Việt Nam (Sức khỏe & Đời sống, giadinh.suckhoedoisong.vn; lương y Vũ Quốc Trung — Hội Đông y Việt Nam — qua Dân Việt) ghi dọc mùng (bẹ Colocasia gigantea)「vị nhạt, tính mát」; chuẩn hoá tính mát thành lương. https://giadinh.suckhoedoisong.vn/loai-rau-ngua-moc-day-vuon-nha-ho-tro-ngan-ngua-thoai-hoa-diem-vang-cuc-tot-cho-mat-lai-de-che-bien-thanh-nhieu-mon-ngon-17225080615565478.htm",
+      "confidence": "low"
+    }
+  ],
   "source": "curated",
   "confidence": "low",
   "needs_review": true,

@@ -52,6 +52,22 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "on",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 椰子 (Cocos nucifera), trích 《本草綱目》:「椰子漿，甘，溫」— lệch với dòng tính bình của phần thực liệu cùng trang, giữ cả hai. http://cht.a-hospital.com/w/%E6%A4%B0%E5%AD%90%E6%B1%81",
+      "confidence": "medium"
+    },
+    {
+      "nature": "binh",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 椰子 (dừa, Cocos nucifera), phần thực liệu về 椰子漿 (nước trong quả dừa) ghi [性能]「味甘，性平」. http://cht.a-hospital.com/w/%E6%A4%B0%E5%AD%90%E6%B1%81",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

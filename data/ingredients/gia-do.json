@@ -51,6 +51,22 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "luong",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "Y văn Việt Nam số hoá (thuvienso.com.vn) — mục Giá đỗ xanh (mầm Vigna radiata) ghi「vị ngọt, nhạt, hăng, tính mát」; chuẩn hoá tính mát thành lương; thống nhất với bài của Đại học Quốc gia Hà Nội (vnu.edu.vn). https://thuvienso.com.vn/upload/library/1063319/preview/tac-dung-chua-benh-tu-gia-do-xanh-1063319.pdf",
+      "confidence": "low"
+    },
+    {
+      "nature": "luong",
+      "flavor": "dam",
+      "element": null,
+      "source_ref": "Y văn Việt Nam số hoá (thuvienso.com.vn) — mục Giá đỗ xanh (mầm Vigna radiata) ghi「vị ngọt, nhạt, hăng, tính mát」; chuẩn hoá tính mát thành lương; thống nhất với bài của Đại học Quốc gia Hà Nội (vnu.edu.vn). https://thuvienso.com.vn/upload/library/1063319/preview/tac-dung-chua-benh-tu-gia-do-xanh-1063319.pdf",
+      "confidence": "low"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

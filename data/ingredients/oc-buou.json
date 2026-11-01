@@ -53,6 +53,22 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "han",
+      "flavor": "ham",
+      "element": "thuy",
+      "source_ref": "Truyền thống đông y Việt Nam qua báo Sức khỏe & Đời sống (bản số hoá thuvienso.com.vn) — mục Ốc nhồi ghi「vị ngọt, mặn, tính hàn」; vị mặn bổ sung so với dòng trích sách ở trên, tính hàn thống nhất. https://thuvienso.com.vn/upload/library/529126/preview/mon-an-bai-thuoc-tu-oc-nhoi-529126.pdf",
+      "confidence": "low"
+    },
+    {
+      "nature": "han",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "Đỗ Huy Bích và cộng sự, Cây thuốc và động vật làm thuốc ở Việt Nam (NXB Khoa học và Kỹ thuật) — mục Ốc nhồi (= ốc bươu theo định danh của file này): thịt ốc「vị ngọt, tính hàn, không độc」(trích dẫn lại tại eva.vn). https://eva.vn/bep-eva/oc-nhoi-dem-lam-cach-nay-vua-ngon-vua-la-mieng-thom-nuc-c162a682392.html",
+      "confidence": "low"
+    }
+  ],
   "source": "curated",
   "confidence": "low",
   "needs_review": true,

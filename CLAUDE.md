@@ -277,6 +277,29 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > thành diff bất ngờ ở lần export sau. Kiểm chứng: validate 0 🔴 trên DB kiểm chứng riêng,
 > Pest 154/154.
 
+> ## ⚠️ Đính chính lần 19, 2026-11-01 — TCM-001b: thí điểm nhãn tầng 3–4 cho 55 nguyên liệu khối lượng lớn nhất
+>
+> Danh sách đích tự tính bằng `resolveGrams` (55 NL chưa có nhãn ≈ 65,0% tổng khối lượng
+> toàn kho; công bố trong [TCM-001](docs/05-tasks/tasks/TCM-001.md) trước khi gieo).
+> **Đã gieo 40/55 NL — 56 dòng mới (tổng kho 65 NL / 91 dòng); 15 NL giữ chờ có lý do**
+> (nhóm bột/sợi đã chế biến không suy nhãn từ hạt gốc; dầu ăn/nước mắm không định danh
+> hoặc không có mục cổ điển; lệch loài hanh-tim/ca-troi; không mục đạt chuẩn muc-ong/
+> ca-nuc/bap-chuoi/mang-tuoi/dau-phu-chien). Nguồn: sổ tay người chăm sóc bệnh nhân
+> ung thư Hồng Kông (TS. Lâm Đạo Nghi — 32 dòng/27 NL, nguồn tầng 3 tốt nhất đợt này),
+> A+醫學百科 biên theo 《中藥大辭典》/《全國中草藥彙編》 (14 dòng/8 NL — **bắt buộc đọc
+> toàn trang: 4/8 mục có hai giá trị lệch một bậc trong cùng trang**, gieo cả hai),
+> 《本草綱目》 toàn văn (trung-ga), y văn Việt Nam có tên sách (Đỗ Tất Lợi; Đỗ Huy Bích
+> và cộng sự — 9 dòng/6 NL, confidence low–medium). **Liu et al. 2012 không dùng được:
+> bảng 284 thực phẩm nằm sau paywall Wiley.** Ca kinh điển đậu xanh: HK ghi 寒 (han),
+> Đỗ Tất Lợi ghi mát (luong) — **giữ cả hai dòng, hiển thị mâu thuẫn, không nắn**.
+> Kiểm chứng: census mở lại 100% source_ref mới (17 URL, 56/56 khớp nguyên văn — dòng
+> luong của nam-rom bổ sung ngay trong census), validate **0 🔴**, ExportStabilityTest
+> đạt, Pest **154/154**. Coverage sau gieo (DB kiểm chứng riêng): **227/630 món ≥60%**
+> (trước: 4), 443 món ≥30%, 130 món có cờ mâu thuẫn; **57/182 món Mức 1 đạt coverage
+> ≥60%** — đủ tiêu chí độ phủ của cổng Mức 3 cho đường nâng bù "Mức 2 (có note)"
+> (**chỉ thống kê đợt này, chưa nâng thật**). Nhận xét nhịp TCM-001c: xem TCM-001 §nhận
+> xét thí điểm (nhóm bột/sợi cần quyết định chính sách riêng).
+
 **Trạng thái thực tế, kiểm ngày 2026-10-31 (đã chạy lại toàn bộ lệnh kiểm chứng):**
 
 | Hạng mục | Thực tế | Kiểm bằng |

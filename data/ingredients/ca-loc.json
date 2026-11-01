@@ -39,6 +39,22 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "han",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "Cùng bài tại lib.vn ghi chú「(có sách tính hàn)」— thiểu số sách đông y ghi cá lóc tính hàn; giữ làm dòng mâu thuẫn, độ tin cậy thấp vì không nêu tên sách. https://lib.vn/upload/library/862172/preview/ca-loc-thuc-an-duong-sinh-trong-mua-nong-862172.pdf",
+      "confidence": "low"
+    },
+    {
+      "nature": "binh",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "Y văn Việt Nam (bài「Cá lóc — thức ăn dưỡng sinh trong mùa nóng」, bản số hoá tại lib.vn) ghi cá lóc (Channa striata)「vị ngọt, tính bình」; nhiều tài liệu đông y Việt Nam thống nhất câu này. https://lib.vn/upload/library/862172/preview/ca-loc-thuc-an-duong-sinh-trong-mua-nong-862172.pdf",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "medium",
   "needs_review": true,

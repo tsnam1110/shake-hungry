@@ -52,6 +52,22 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "han",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — bách khoa y học biên soạn theo truyền thống 《中藥大辭典》/《全國中草藥彙編》: mục 草菇 (nấm rơm, Volvariella volvacea — khớp loài; bắt đầu chép từ 《新華本草綱要》) ghi 藥性「寒」、藥味「甘」. http://cht.a-hospital.com/w/%E8%8D%89%E8%8F%87",
+      "confidence": "medium"
+    },
+    {
+      "nature": "luong",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com): mục 草菇 (Volvariella volvacea), phần thực liệu [性能] ghi「味甘，性涼」— lệch với dòng tính hàn (theo 《中華本草》) của chính trang, giữ cả hai theo quy tắc không ép chọn. http://cht.a-hospital.com/w/%E8%8D%89%E8%8F%87",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "low",
   "needs_review": true,

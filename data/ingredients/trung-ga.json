@@ -76,6 +76,15 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "binh",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "《本草綱目》(Lý Thời Trân, đời Minh), bộ 禽 — mục 雞 ghi「雞蛋：甘、平」(trứng gà nguyên quả; cùng mục tách riêng lòng trắng 甘、微寒 và lòng đỏ 甘、溫）. Bản toàn văn số hoá: https://www.arteducation.com.tw/guwen/bookv_2194.html",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "high",
   "needs_review": true,

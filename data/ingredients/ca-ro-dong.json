@@ -39,6 +39,15 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "binh",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "Y văn đông y Việt Nam (Nhà thuốc Long Châu; canuocngot247.com) ghi cá rô đồng (Anabas testudineus — khớp loài của file)「tính bình, vị ngọt, không độc」. Lưu ý: tên cổ 決 ngư trong một số tài liệu chỉ Siniperca chuatsi (loài khác) — không dùng các tài liệu đó. https://nhathuoclongchau.com.vn/bai-viet/ca-ro-la-gi-mot-so-mon-an-che-bien-tu-ca-ro-73109.html",
+      "confidence": "low"
+    }
+  ],
   "source": "curated",
   "confidence": "low",
   "needs_review": true,
