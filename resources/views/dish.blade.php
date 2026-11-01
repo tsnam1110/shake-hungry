@@ -76,18 +76,23 @@ fetch('/api/dishes/' + encodeURIComponent(slug), { headers: { 'Accept': 'applica
         </div>
 
         ${tcm ? `
-        <h2 class="ld-section-title">Tính vị:</h2>
-        <div class="ld-card">
-            <p style="margin:0;font-size:15.5px">Theo quan niệm ẩm thực truyền thống, món này được xem là <b>tính ${esc(tcm.nature_label)}</b>${tcm.dominant_element_label ? ` · hành chủ đạo: <b>${esc(tcm.dominant_element_label)}</b>` : ''}</p>
-            <div style="margin-top:12px">
-                <div class="ld-row"><span class="grow" style="color:var(--color-sub)">Độ phủ nguyên liệu có nhãn tính vị</span><span class="value ld-tnum" style="color:var(--color-ink)">${Math.round(tcm.coverage_pct)}% khối lượng</span></div>
-                <div class="ld-row"><span class="grow" style="color:var(--color-sub)">Độ tin cậy</span><span class="value" style="color:var(--color-ink)">${confLabel[tcm.confidence] ?? esc(tcm.confidence)}</span></div>
-                ${(tcm.sources ?? []).length ? `<div class="ld-row"><span class="grow" style="color:var(--color-sub)">Nguồn nhãn</span><span class="value" style="color:var(--color-ink);white-space:normal;text-align:right">${tcm.sources.map(esc).join(' · ')}</span></div>` : ''}
+        <div class="ld-card" style="margin-top:30px">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+                <p style="margin:0;font-size:15.5px"><b>Tính vị:</b> tính ${esc(tcm.nature_label)}${tcm.dominant_element_label ? ` · hành ${esc(tcm.dominant_element_label)}` : ''}</p>
+                <button type="button" class="ld-btn ld-btn-gray" data-tcm-open data-tcm-title="Tính vị: ${esc(name)}" style="padding:9px 16px;font-size:14px;flex:none">Nguồn &amp; chi tiết</button>
             </div>
+        </div>
+        <template id="tcm-detail">
+            <p style="margin:0;font-size:15.5px">Theo quan niệm ẩm thực truyền thống, món này được xem là <b>tính ${esc(tcm.nature_label)}</b>${tcm.dominant_element_label ? ` · hành chủ đạo: <b>${esc(tcm.dominant_element_label)}</b>` : ''}</p>
+            <div style="margin-top:10px">
+                <div class="ld-row" style="padding-left:0;padding-right:0"><span class="grow" style="color:var(--color-sub)">Độ phủ nguyên liệu có nhãn tính vị</span><span class="value ld-tnum" style="color:var(--color-ink)">${Math.round(tcm.coverage_pct)}% khối lượng</span></div>
+                <div class="ld-row" style="padding-left:0;padding-right:0"><span class="grow" style="color:var(--color-sub)">Độ tin cậy</span><span class="value" style="color:var(--color-ink)">${confLabel[tcm.confidence] ?? esc(tcm.confidence)}</span></div>
+            </div>
+            ${(tcm.sources ?? []).length ? `<p class="ld-group-label" style="margin:16px 0 2px">Nguồn nhãn</p>${tcm.sources.map(s => `<p class="ld-note" style="margin:8px 0 0;overflow-wrap:anywhere">${esc(s)}</p>`).join('')}` : ''}
             ${tcm.is_partial ? '<p class="ld-note" style="margin-top:10px">Mới phủ được một phần khối lượng nguyên liệu — kết luận trên chỉ ở mức tham khảo.</p>' : ''}
             ${tcm.has_conflicts ? '<p class="ld-note" style="margin-top:10px">Các nguồn chưa thống nhất về tính của một số nguyên liệu trong món — mức tin cậy đã hạ theo đúng mâu thuẫn đó; xem chi tiết ở trang của từng nguyên liệu.</p>' : ''}
             <p class="ld-note" style="margin-top:10px">Tính vị được tổng hợp từ nhãn của từng nguyên liệu theo trọng số khối lượng; hệ số điều chỉnh theo cách chế biến là quy ước của dự án — y văn không định lượng con số này. Đây là thông tin văn hoá ẩm thực truyền thống, không phải tư vấn sức khoẻ. <a href="/mien-tru-y-te">Đọc Miễn trừ y tế</a>.</p>
-        </div>` : ''}
+        </template>` : ''}
 
         ${d.cultural_note ? `
         <h2 class="ld-section-title">Ghi chú văn hoá</h2>

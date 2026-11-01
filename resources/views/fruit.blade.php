@@ -77,17 +77,22 @@ fetch('/api/fruits/' + encodeURIComponent(slug), { headers: { 'Accept': 'applica
         </div>
 
         ${ing.tcm?.traits?.length ? `
-        <h2 class="ld-section-title">Tính vị:</h2>
-        <div class="ld-group">
-            ${ing.tcm.traits.map(t => `<div class="ld-row" style="align-items:flex-start"><span class="grow">
+        <div class="ld-card" style="margin-top:30px">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+                <p style="margin:0;font-size:15.5px"><b>Tính vị:</b> ${[ing.tcm.primary.nature_label, ing.tcm.primary.flavor_label, ing.tcm.primary.element_label].filter(Boolean).map(esc).join(' · ')}${ing.tcm.primary.derived_from ? '<span class="ld-badge" style="margin-left:7px">suy diễn</span>' : ''}</p>
+                <button type="button" class="ld-btn ld-btn-gray" data-tcm-open data-tcm-title="Tính vị: ${esc(f.name_vi)}" style="padding:9px 16px;font-size:14px;flex:none">Nguồn &amp; chi tiết</button>
+            </div>
+        </div>
+        <template id="tcm-detail">
+            ${ing.tcm.traits.map(t => `<div class="ld-row" style="align-items:flex-start;padding-left:0;padding-right:0"><span class="grow">
                 <b>${[t.nature_label, t.flavor_label, t.element_label].filter(Boolean).map(esc).join(' · ')}</b>
-                <span class="sub">Nguồn: ${esc(t.source_ref)} · Độ tin cậy: ${esc(t.confidence)}</span>
+                <span class="sub" style="overflow-wrap:anywhere">Nguồn: ${esc(t.source_ref)} · Độ tin cậy: ${esc(t.confidence)}</span>
                 ${t.derived_from ? `<span class="sub">Nhãn suy diễn từ ${esc(t.derived_from_name ?? t.derived_from)} — đây là dạng chế biến đơn thành phần của nguyên liệu gốc, dự án suy nhãn theo chính sách riêng và luôn để độ tin cậy thấp.</span>` : ''}
                 ${t.usage_restricted ? `<span class="sub" style="color:var(--color-danger)">Không được dùng — ${esc(t.usage_note ?? '')}</span>` : ''}
             </span></div>`).join('')}
-        </div>
-        ${ing.tcm.has_conflicts ? '<p class="ld-note" style="margin-top:10px">Các nguồn chưa thống nhất về tính của loại quả này — mọi nhãn đều được giữ và hiển thị ở trên.</p>' : ''}
-        <p class="ld-note" style="margin-top:10px">Phân loại theo quan niệm ẩm thực truyền thống — thông tin văn hoá, không phải tư vấn sức khoẻ. <a href="/mien-tru-y-te">Đọc Miễn trừ y tế</a>.</p>` : ''}
+            ${ing.tcm.has_conflicts ? '<p class="ld-note" style="margin-top:10px">Các nguồn chưa thống nhất về tính của loại quả này — giá trị chính ngoài trang là nhãn có độ tin cậy cao nhất; mọi nhãn đều được giữ và hiển thị đầy đủ trong mục này.</p>' : ''}
+            <p class="ld-note" style="margin-top:10px">Phân loại theo quan niệm ẩm thực truyền thống — thông tin văn hoá, không phải tư vấn sức khoẻ. <a href="/mien-tru-y-te">Đọc Miễn trừ y tế</a>.</p>
+        </template>` : ''}
 
         ${f.cultural_note ? `
         <h2 class="ld-section-title">Ghi chú văn hoá</h2>

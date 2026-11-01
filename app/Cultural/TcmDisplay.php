@@ -16,7 +16,11 @@ use App\Models\IngredientTcmTrait;
  *  - Món: coverage <30% ⇒ không kết luận nào (trả null); 30–<60% ⇒ hiển
  *    thị kèm confidence bị chặn ở low; ≥60% ⇒ hiển thị đầy đủ.
  *  - Nguyên liệu: hiển thị MỌI dòng nhãn kèm nguồn — kể cả khi các nguồn
- *    mâu thuẫn (mâu thuẫn là thông tin, không phải lỗi cần giấu).
+ *    mâu thuẫn (mâu thuẫn là thông tin, không phải lỗi cần giấu). Từ bản
+ *    trình bày gọn (TCM-003, 2026-11-01): trang chỉ hiện GIÁ TRỊ CHÍNH
+ *    (dòng nhãn chính, xem primaryTrait()) + nút mở popup; toàn bộ dòng
+ *    nhãn/nguồn/mâu thuẫn nằm trong popup — thông tin không bớt, chỉ
+ *    chuyển chỗ.
  * Diễn đạt giữ khung văn hoá thuần tuý (NGU-HANH-AM-DUONG §5); nhãn của
  * khối là đúng chữ "Tính vị:" theo chốt của chủ dự án.
  */
@@ -27,9 +31,10 @@ final class TcmDisplay
 
     /**
      * Khối tính vị của một nguyên liệu: mọi dòng nhãn, đã chuẩn hoá nhãn
-     * tiếng Việt + element hiệu lực (ghi tường minh, hoặc suy từ vị).
+     * tiếng Việt + element hiệu lực (ghi tường minh, hoặc suy từ vị),
+     * kèm dòng nhãn CHÍNH cho dòng hiển thị gọn trên trang.
      *
-     * @return array{traits: list<array<string, mixed>>, has_conflicts: bool}|null
+     * @return array{traits: list<array<string, mixed>>, primary: array<string, mixed>|null, has_conflicts: bool}|null
      */
     public static function forIngredient(Ingredient $ingredient): ?array
     {
@@ -48,10 +53,45 @@ final class TcmDisplay
             ? collect()
             : Ingredient::whereIn('slug', $originSlugs)->pluck('name_vi', 'slug');
 
+        $rows = $traits->map(fn (IngredientTcmTrait $t) => self::traitRow($t, $originNames[$t->derived_from] ?? null))->values()->all();
+
         return [
-            'traits' => $traits->map(fn (IngredientTcmTrait $t) => self::traitRow($t, $originNames[$t->derived_from] ?? null))->values()->all(),
+            'traits' => $rows,
+            'primary' => self::primaryTrait($rows),
             'has_conflicts' => $traits->pluck('nature')->filter()->unique()->count() > 1,
         ];
+    }
+
+    /**
+     * Dòng nhãn CHÍNH cho dòng hiển thị gọn "Tính vị: <giá trị>" (TCM-003
+     * bản gọn, chỉ đạo chủ dự án 2026-11-01): confidence cao nhất thắng;
+     * hoà thì nhãn nguồn thật thắng nhãn suy diễn (suy diễn luôn bị khoá
+     * low nhưng vẫn có thể hoà với dòng thật low); hoà nữa thì giữ thứ
+     * tự file — các đợt gieo ghi nguồn tầng cao trước nên thứ tự file
+     * cũng là thứ tự ưu tiên nguồn. Mọi dòng còn lại vẫn xem được đầy đủ
+     * trong popup chi tiết, không dòng nào bị giấu.
+     *
+     * @param  list<array<string, mixed>>  $rows
+     * @return array<string, mixed>|null
+     */
+    private static function primaryTrait(array $rows): ?array
+    {
+        $rank = ['high' => 3, 'medium' => 2, 'low' => 1];
+        $best = null;
+        $bestKey = null;
+        foreach ($rows as $i => $row) {
+            $key = [
+                $rank[$row['confidence'] ?? ''] ?? 0,
+                ($row['derived_from'] ?? null) === null ? 1 : 0,
+                -$i,
+            ];
+            if ($bestKey === null || $key > $bestKey) {
+                $bestKey = $key;
+                $best = $row;
+            }
+        }
+
+        return $best;
     }
 
     /**

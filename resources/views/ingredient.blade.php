@@ -68,17 +68,22 @@ fetch('/api/ingredients/' + slug).then(r => { if (!r.ok) throw new Error('404');
                 <p class="ld-note" style="margin-top:10px">Nguyên liệu này mang nhãn chất gây dị ứng theo dữ liệu dự án biên soạn. Khi lắc món, dị ứng trong hồ sơ của bạn là điều kiện lọc cứng — món chứa nguyên liệu này sẽ bị loại. <a href="/mien-tru-y-te">Đọc Miễn trừ y tế</a>.</p>`
             : `<p class="ld-note" style="margin:0">Dữ liệu hiện tại chưa ghi nhận chất gây dị ứng phổ biến ở nguyên liệu này. Điều này không phải cam kết an toàn tuyệt đối — nếu bạn bị dị ứng, hãy kiểm tra kỹ trước khi dùng. <a href="/mien-tru-y-te">Đọc Miễn trừ y tế</a>.</p>`}
         </div>
-        ${i.tcm?.traits?.length ? `<h2 class="ld-section-title">Tính vị:</h2>
-        <div class="ld-group">
-            ${i.tcm.traits.map(t => `<div class="ld-row" style="align-items:flex-start"><span class="grow">
+        ${i.tcm?.traits?.length ? `<div class="ld-card" style="margin-top:30px">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+                <p style="margin:0;font-size:15.5px"><b>Tính vị:</b> ${[i.tcm.primary.nature_label, i.tcm.primary.flavor_label, i.tcm.primary.element_label].filter(Boolean).map(esc).join(' · ')}${i.tcm.primary.derived_from ? '<span class="ld-badge" style="margin-left:7px">suy diễn</span>' : ''}</p>
+                <button type="button" class="ld-btn ld-btn-gray" data-tcm-open data-tcm-title="Tính vị: ${esc(i.name_vi)}" style="padding:9px 16px;font-size:14px;flex:none">Nguồn &amp; chi tiết</button>
+            </div>
+        </div>
+        <template id="tcm-detail">
+            ${i.tcm.traits.map(t => `<div class="ld-row" style="align-items:flex-start;padding-left:0;padding-right:0"><span class="grow">
                 <b>${[t.nature_label, t.flavor_label, t.element_label].filter(Boolean).map(esc).join(' · ')}</b>
-                <span class="sub">Nguồn: ${esc(t.source_ref)} · Độ tin cậy: ${esc(t.confidence)}</span>
+                <span class="sub" style="overflow-wrap:anywhere">Nguồn: ${esc(t.source_ref)} · Độ tin cậy: ${esc(t.confidence)}</span>
                 ${t.derived_from ? `<span class="sub">Nhãn suy diễn từ ${esc(t.derived_from_name ?? t.derived_from)} — đây là dạng chế biến đơn thành phần của nguyên liệu gốc, dự án suy nhãn theo chính sách riêng và luôn để độ tin cậy thấp.</span>` : ''}
                 ${t.usage_restricted ? `<span class="sub" style="color:var(--color-danger)">Không được dùng — ${esc(t.usage_note ?? '')}</span>` : ''}
             </span></div>`).join('')}
-        </div>
-        ${i.tcm.has_conflicts ? '<p class="ld-note" style="margin-top:10px">Các nguồn chưa thống nhất về tính của nguyên liệu này — mọi nhãn đều được giữ và hiển thị ở trên, dự án không tự chọn một nhãn rồi giấu các nhãn còn lại.</p>' : ''}
-        <p class="ld-note" style="margin-top:10px">Phân loại theo quan niệm ẩm thực truyền thống, gán ở cấp độ nguyên liệu — đây là thông tin văn hoá, không phải tư vấn sức khoẻ. <a href="/mien-tru-y-te">Đọc Miễn trừ y tế</a>.</p>` : ''}
+            ${i.tcm.has_conflicts ? '<p class="ld-note" style="margin-top:10px">Các nguồn chưa thống nhất về tính của nguyên liệu này — giá trị chính ngoài trang là nhãn có độ tin cậy cao nhất; mọi nhãn đều được giữ và hiển thị đầy đủ trong mục này, dự án không giấu nhãn nào.</p>' : ''}
+            <p class="ld-note" style="margin-top:10px">Phân loại theo quan niệm ẩm thực truyền thống, gán ở cấp độ nguyên liệu — đây là thông tin văn hoá, không phải tư vấn sức khoẻ. <a href="/mien-tru-y-te">Đọc Miễn trừ y tế</a>.</p>
+        </template>` : ''}
 
         ${(i.component_links ?? []).length ? `<h2 class="ld-section-title">Thành phần cấu thành</h2>
         <div class="ld-group">

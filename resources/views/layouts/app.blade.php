@@ -228,6 +228,37 @@
     });
 </script>
 
+{{-- Hộp thoại chi tiết tính vị (TCM-003 bản gọn, 2026-11-01) — trang chi tiết chỉ hiện
+     giá trị chính + nút "Nguồn & chi tiết" mang data-tcm-open + data-tcm-title; toàn bộ
+     thông tin thêm nằm trong <template id="tcm-detail"> của trang và được chép vào đây. --}}
+<div class="ld-sheet-overlay" id="tcm-overlay">
+    <div class="ld-sheet" role="dialog" aria-modal="true" aria-label="Chi tiết tính vị">
+        <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px">
+            <h2 id="tcm-title" style="margin:0;font-size:20px;font-weight:800;letter-spacing:-.01em">Tính vị:</h2>
+            <button type="button" id="tcm-close" aria-label="Đóng" style="border:0;background:var(--color-fill);width:32px;height:32px;border-radius:50%;font-size:15px;cursor:pointer;color:var(--color-sub);flex:none">✕</button>
+        </div>
+        <div id="tcm-body" style="margin-top:14px"></div>
+    </div>
+</div>
+<script>
+    function tcmClose() { document.getElementById('tcm-overlay').classList.remove('open'); }
+    document.addEventListener('click', (e) => {
+        const btn = e.target.closest('[data-tcm-open]');
+        if (!btn) return;
+        e.preventDefault();
+        const tpl = document.getElementById('tcm-detail');
+        if (!tpl) return;
+        document.getElementById('tcm-title').textContent = btn.dataset.tcmTitle || 'Tính vị:';
+        const body = document.getElementById('tcm-body');
+        body.innerHTML = '';
+        body.appendChild(tpl.content.cloneNode(true));
+        document.getElementById('tcm-overlay').classList.add('open');
+    });
+    document.getElementById('tcm-close').addEventListener('click', tcmClose);
+    document.getElementById('tcm-overlay').addEventListener('click', (e) => { if (e.target.id === 'tcm-overlay') tcmClose(); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') tcmClose(); });
+</script>
+
 <div class="ld-toast" id="ld-toast" role="status"></div>
 <script>
     window.ldToast = function (msg) {
