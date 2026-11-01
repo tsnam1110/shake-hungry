@@ -223,6 +223,108 @@ class Recommender
         return $result;
     }
 
+    /**
+     * REC-005: kho ứng viên cho MỘT vị trí trong mâm (phục vụ nút "Đổi món") —
+     * dùng đúng đường lọc của shakeTray: dị ứng là lọc cứng không bao giờ nới,
+     * "bình dân" không nới, vùng/chế độ ăn nới dần theo level khi thiếu món.
+     * Loại trừ các món đang có trong mâm và họ biến thể của chúng.
+     *
+     * @param  array<string, mixed>  $input
+     * @param  int[]  $excludeDishIds
+     */
+    public function trayRolePool(array $input, string $role, array $excludeDishIds): Collection
+    {
+        $input['home_cook'] = true;
+        $allergens = $input['allergens'] ?? [];
+        $binhDan = (bool) ($input['binh_dan'] ?? false);
+        // Tham số GET đến dưới dạng chuỗi — chuẩn hoá về int để so khớp chặt.
+        $excludeDishIds = array_map('intval', $excludeDishIds);
+        $excludeParents = Dish::whereIn('id', $excludeDishIds)->pluck('parent_dish_id')->filter()->all();
+        for ($level = 0; $level <= 3; $level++) {
+            $pool = $this->pool($input, $level, $allergens, tray: true)
+                ->filter(fn (Dish $d) => $this->trayEligible($d));
+            if ($binhDan) {
+                $pool = $pool->filter(fn (Dish $d) => $this->binhDanEligible($d));
+            }
+            $candidates = $pool->reject(fn (Dish $d) => in_array($d->id, $excludeDishIds, true)
+                || in_array($d->id, $excludeParents, true)
+                || ($d->parent_dish_id !== null && in_array($d->parent_dish_id, [...$excludeDishIds, ...$excludeParents], true)));
+            $rolePool = $candidates->filter(fn (Dish $d) => $this->roleMatches($this->dishRole($d), $role));
+            if ($rolePool->isNotEmpty()) {
+                return $rolePool;
+            }
+        }
+
+        // Khác shakeTray (gom cả mâm thì lấp chỗ bằng món bất kỳ): đổi món là
+        // thay đúng một vị trí — hết món cùng vai trò thì trả rỗng để giao
+        // diện báo thật, không lặng lẽ đưa món sai vai trò vào mâm.
+        return collect();
+    }
+
+    /**
+     * REC-005: ứng viên đổi món đã chấm điểm (điểm cao trước) cho danh sách
+     * "Chọn món" trong popup đổi món.
+     *
+     * @param  array<string, mixed>  $input
+     * @param  int[]  $excludeDishIds
+     * @return Collection<int, Dish>
+     */
+    public function trayCandidates(array $input, string $role, array $excludeDishIds, int $limit = 40): Collection
+    {
+        $pickInput = $this->trayPickInput($input, $role);
+
+        return $this->trayRolePool($input, $role, $excludeDishIds)
+            ->map(fn (Dish $d) => ['dish' => $d, 'score' => $this->score($d, $pickInput, null)])
+            ->sortByDesc('score')
+            ->take($limit)
+            ->map(fn ($row) => $row['dish'])
+            ->values();
+    }
+
+    /**
+     * REC-005: chọn NGẪU NHIÊN một món thay thế cho vị trí trong mâm (ngẫu
+     * nhiên có trọng số như lắc chính; đổi shake_index để lấy kết quả khác).
+     *
+     * @param  array<string, mixed>  $input
+     * @param  int[]  $excludeDishIds
+     */
+    public function traySwapRandom(array $input, string $role, array $excludeDishIds): ?Dish
+    {
+        $pool = $this->trayRolePool($input, $role, $excludeDishIds);
+        if ($pool->isEmpty()) {
+            return null;
+        }
+        $seed = hash('sha256', implode('|', [
+            $input['user_id'] ?? 'guest',
+            now()->toDateString(),
+            $input['slot'],
+            'tray-swap',
+            $role,
+            (string) ($input['shake_index'] ?? 0),
+        ]));
+        $dish = $this->pick($pool, $this->trayPickInput($input, $role), $excludeDishIds, $seed);
+        RecommendationLog::create([
+            'user_id' => $input['user_id'] ?? null,
+            'slot' => $input['slot'],
+            'seed' => $seed,
+            'dish_id' => $dish->id,
+            'relaxed_level' => 0,
+            'context' => ['mode' => 'home', 'swap' => true, 'role' => $role, 'pool_size' => $pool->count()],
+        ]);
+
+        return $dish;
+    }
+
+    /** Input chấm điểm cho một vị trí mâm: calo mục tiêu chia theo tỷ trọng vai trò. */
+    private function trayPickInput(array $input, string $role): array
+    {
+        if (! empty($input['target_kcal'])) {
+            $input['target_kcal'] = $input['target_kcal'] * (self::TRAY_KCAL_SHARE[$role] ?? 0.25);
+        }
+
+        return $input;
+    }
+
     /** Loại (loai:) của món, bỏ tiền tố — dùng cho phân vai mâm cơm. */
     private function dishLoai(Dish $dish): array
     {

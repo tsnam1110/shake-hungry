@@ -67,6 +67,8 @@ Route::prefix('api')->group(function () {
     Route::get('/fruits', [\App\Http\Controllers\PublicWeb\FruitController::class, 'index']);
     Route::get('/fruits/{fruit:slug}', [\App\Http\Controllers\PublicWeb\FruitController::class, 'show']);
     Route::post('/shake', [\App\Http\Controllers\PublicWeb\CatalogController::class, 'shake']);
+    Route::post('/shake/tray-swap', [\App\Http\Controllers\PublicWeb\CatalogController::class, 'traySwapRandom']);
+    Route::get('/shake/tray-candidates', [\App\Http\Controllers\PublicWeb\CatalogController::class, 'traySwapCandidates']);
 });
 
 // --- Khu vực quản trị (ADM-001): SPA React + antd tại /admin, API nội bộ dùng phiên web ---

@@ -191,50 +191,7 @@ class CatalogController extends Controller
             'shake_index' => ['nullable', 'integer', 'min:0'],
         ]);
 
-        // USR-004: người đã đăng nhập được cá nhân hoá từ hồ sơ + nhật ký thật.
-        $allergens = $data['allergens'] ?? [];
-        $vegetarian = $data['vegetarian'] ?? false;
-        $recentIds = $data['recent_dish_ids'] ?? [];
-        $targetKcal = $data['target_kcal'] ?? null;
-        $user = $request->user();
-        if ($user !== null) {
-            $profile = $user->profile;
-            if ($profile !== null) {
-                $allergens = array_values(array_unique(array_merge(
-                    $allergens,
-                    $profile->excluded_ingredients ?? [],
-                )));
-                if (in_array($profile->diet_type, ['chay', 'chay-truong'], true)) {
-                    $vegetarian = true;
-                }
-            }
-            // Tầng 2 lấy từ meal_logs thật (mới nhất đứng cuối, đúng thứ tự engine kỳ vọng)
-            $logIds = $user->mealLogs()->latest('eaten_at')->limit(10)->pluck('dish_id')->reverse()->values()->all();
-            $recentIds = array_values(array_unique([...$logIds, ...$recentIds]));
-            // Tầng 3 calo: mục tiêu = phần calo còn lại của ngày chia theo tỷ lệ bữa
-            if ($targetKcal === null && $profile !== null) {
-                $calc = app(\App\Profile\TdeeCalculator::class);
-                $tdee = $calc->for($profile);
-                if ($tdee !== null) {
-                    $eatenMid = $user->mealLogs()->whereDate('eaten_at', now()->toDateString())
-                        ->with('dish.nutrition')->get()
-                        ->sum(fn ($log) => $log->dish?->nutrition !== null
-                            ? ($log->dish->nutrition->kcal_min + $log->dish->nutrition->kcal_max) / 2
-                            : 0);
-                    $tdeeMid = ($tdee['tdee_min'] + $tdee['tdee_max']) / 2;
-                    $remaining = max($tdeeMid - $eatenMid, 150);
-                    $ratios = \App\Profile\TdeeCalculator::SLOT_RATIOS;
-                    $order = ['sang', 'trua', 'chieu', 'toi'];
-                    $idx = array_search($data['slot'], $order, true);
-                    if ($idx !== false) {
-                        $denom = array_sum(array_map(fn ($s) => $ratios[$s], array_slice($order, $idx)));
-                        $targetKcal = $remaining * $ratios[$data['slot']] / max($denom, 0.01);
-                    } elseif ($data['slot'] === 'an-vat') {
-                        $targetKcal = $remaining * $ratios['an-vat'];
-                    }
-                }
-            }
-        }
+        [$engineInput, $profile] = $this->shakeEngineInput($request, $data);
 
         // REC-003: quyết định chế độ lắc — tham số tường minh > hồ sơ > cờ cũ > mặc định ăn ngoài.
         $mode = $data['mode'] ?? null;
@@ -253,16 +210,6 @@ class CatalogController extends Controller
         // bộ lọc của người dùng — phải báo đúng sự thật thay vì kêu nới bộ lọc.
         $catalogEmpty = \App\Models\Dish::whereHas('nutrition')->count() === 0;
         $updatingSuggestion = 'Hệ thống đang cập nhật lại dữ liệu món ăn — vui lòng thử lại sau ít phút.';
-
-        $engineInput = [
-            ...$data,
-            'user_id' => $user?->id,
-            'vegetarian' => $vegetarian,
-            'allergens' => $allergens,
-            'recent_dish_ids' => $recentIds,
-            'target_kcal' => $targetKcal,
-            'shake_index' => $data['shake_index'] ?? 0,
-        ];
 
         if ($mode === 'home') {
             $result = $recommender->shakeTray([...$engineInput, 'dish_count' => $dishCount, 'binh_dan' => $binhDan]);
@@ -308,6 +255,123 @@ class CatalogController extends Controller
             'pool_size' => $result['pool_size'],
             'suggestion' => $presented === null && $catalogEmpty ? $updatingSuggestion : ($result['suggestion'] ?? null),
         ]);
+    }
+
+    /**
+     * Ngữ cảnh cá nhân hoá dùng chung cho lắc và đổi món (USR-004 + REC-005):
+     * gộp dị ứng từ hồ sơ, suy chế độ chay từ hồ sơ, lấy món gần đây từ nhật
+     * ký thật và mục tiêu calo từ TDEE còn lại của ngày.
+     *
+     * @return array{0: array<string, mixed>, 1: ?\App\Models\UserProfile}
+     */
+    private function shakeEngineInput(Request $request, array $data): array
+    {
+        $allergens = $data['allergens'] ?? [];
+        $vegetarian = $data['vegetarian'] ?? false;
+        $recentIds = $data['recent_dish_ids'] ?? [];
+        $targetKcal = $data['target_kcal'] ?? null;
+        $user = $request->user();
+        $profile = null;
+        if ($user !== null) {
+            $profile = $user->profile;
+            if ($profile !== null) {
+                $allergens = array_values(array_unique(array_merge(
+                    $allergens,
+                    $profile->excluded_ingredients ?? [],
+                )));
+                if (in_array($profile->diet_type, ['chay', 'chay-truong'], true)) {
+                    $vegetarian = true;
+                }
+            }
+            // Tầng 2 lấy từ meal_logs thật (mới nhất đứng cuối, đúng thứ tự engine kỳ vọng)
+            $logIds = $user->mealLogs()->latest('eaten_at')->limit(10)->pluck('dish_id')->reverse()->values()->all();
+            $recentIds = array_values(array_unique([...$logIds, ...$recentIds]));
+            // Tầng 3 calo: mục tiêu = phần calo còn lại của ngày chia theo tỷ lệ bữa
+            if ($targetKcal === null && $profile !== null) {
+                $calc = app(\App\Profile\TdeeCalculator::class);
+                $tdee = $calc->for($profile);
+                if ($tdee !== null) {
+                    $eatenMid = $user->mealLogs()->whereDate('eaten_at', now()->toDateString())
+                        ->with('dish.nutrition')->get()
+                        ->sum(fn ($log) => $log->dish?->nutrition !== null
+                            ? ($log->dish->nutrition->kcal_min + $log->dish->nutrition->kcal_max) / 2
+                            : 0);
+                    $tdeeMid = ($tdee['tdee_min'] + $tdee['tdee_max']) / 2;
+                    $remaining = max($tdeeMid - $eatenMid, 150);
+                    $ratios = \App\Profile\TdeeCalculator::SLOT_RATIOS;
+                    $order = ['sang', 'trua', 'chieu', 'toi'];
+                    $idx = array_search($data['slot'], $order, true);
+                    if ($idx !== false) {
+                        $denom = array_sum(array_map(fn ($s) => $ratios[$s], array_slice($order, $idx)));
+                        $targetKcal = $remaining * $ratios[$data['slot']] / max($denom, 0.01);
+                    } elseif ($data['slot'] === 'an-vat') {
+                        $targetKcal = $remaining * $ratios['an-vat'];
+                    }
+                }
+            }
+        }
+
+        return [[
+            ...$data,
+            'user_id' => $user?->id,
+            'vegetarian' => $vegetarian,
+            'allergens' => $allergens,
+            'recent_dish_ids' => $recentIds,
+            'target_kcal' => $targetKcal,
+            'shake_index' => $data['shake_index'] ?? 0,
+        ], $profile];
+    }
+
+    /** REC-005: đổi NGẪU NHIÊN một món trong mâm cơm (nút Đổi → Ngẫu nhiên). */
+    public function traySwapRandom(Request $request, Recommender $recommender): JsonResponse
+    {
+        $data = $request->validate($this->swapRules());
+        [$engineInput] = $this->shakeEngineInput($request, $data);
+        $dish = $recommender->traySwapRandom($engineInput, $data['role'], $data['exclude_dish_ids'] ?? []);
+        if ($dish === null) {
+            return response()->json([
+                'dish' => null,
+                'suggestion' => 'Không còn món khác phù hợp cho vị trí này với bộ lọc hiện tại.',
+            ]);
+        }
+        $dish->loadMissing('dishIngredients.ingredient:id,name_vi,slug');
+
+        return response()->json(['dish' => $this->presentShakeDish($dish, $data['role'])]);
+    }
+
+    /** REC-005: danh sách ứng viên cho "Chọn món" trong popup đổi món của mâm. */
+    public function traySwapCandidates(Request $request, Recommender $recommender): JsonResponse
+    {
+        $data = $request->validate($this->swapRules());
+        [$engineInput] = $this->shakeEngineInput($request, $data);
+        $dishes = $recommender->trayCandidates($engineInput, $data['role'], $data['exclude_dish_ids'] ?? [])
+            ->map(function (\App\Models\Dish $dish) use ($data) {
+                $dish->loadMissing('dishIngredients.ingredient:id,name_vi,slug');
+
+                return $this->presentShakeDish($dish, $data['role']);
+            });
+
+        return response()->json(['dishes' => $dishes]);
+    }
+
+    /** @return array<string, mixed> */
+    private function swapRules(): array
+    {
+        return [
+            'slot' => ['required', 'string', 'in:sang,trua,chieu,toi,an-vat'],
+            'target_kcal' => ['nullable', 'numeric', 'min:50', 'max:3000'],
+            'region_id' => ['nullable', 'integer', 'exists:regions,id'],
+            'vegetarian' => ['nullable', 'boolean'],
+            'binh_dan' => ['nullable', 'boolean'],
+            'allergens' => ['nullable', 'array'],
+            'allergens.*' => ['string', 'max:64'],
+            'recent_dish_ids' => ['nullable', 'array'],
+            'recent_dish_ids.*' => ['integer'],
+            'shake_index' => ['nullable', 'integer', 'min:0'],
+            'role' => ['required', 'string', 'in:chinh,canh,rau,phu'],
+            'exclude_dish_ids' => ['nullable', 'array', 'max:10'],
+            'exclude_dish_ids.*' => ['integer'],
+        ];
     }
 
     /** Presenter dùng chung cho món lắc đơn và từng món trong mâm cơm (REC-003). */

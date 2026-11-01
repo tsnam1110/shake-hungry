@@ -78,6 +78,35 @@
         </div>
     </section>
 
+    {{-- Popup đổi món trong mâm (REC-005): mặc định Ngẫu nhiên --}}
+    <div class="ld-sheet-overlay" id="swap-overlay">
+        <div class="ld-sheet" role="dialog" aria-modal="true" aria-label="Đổi món trong mâm">
+            <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px">
+                <div>
+                    <h2 style="margin:0;font-size:20px;font-weight:800;letter-spacing:-.01em">Đổi món</h2>
+                    <p id="swap-context" style="margin:4px 0 0;color:var(--color-sub);font-size:14px"></p>
+                </div>
+                <button type="button" id="swap-close" aria-label="Đóng" style="border:0;background:var(--color-fill);width:32px;height:32px;border-radius:50%;font-size:15px;cursor:pointer;color:var(--color-sub)">✕</button>
+            </div>
+            <div class="ld-seg" id="swap-mode" role="group" aria-label="Cách đổi món" style="margin-top:16px">
+                <button type="button" class="on" data-mode="random" aria-pressed="true">Ngẫu nhiên</button>
+                <button type="button" data-mode="pick" aria-pressed="false">Chọn món</button>
+            </div>
+            <div id="swap-random-pane" style="margin-top:16px">
+                <p class="ld-note" style="margin:0">Hệ thống chọn ngẫu nhiên một món khác cùng vị trí trong mâm, vẫn giữ nguyên bộ lọc của bạn (dị ứng là lọc cứng).</p>
+                <div id="swap-preview" style="margin-top:12px"></div>
+                <button type="button" class="ld-btn ld-btn-primary" id="swap-roll" style="width:100%;margin-top:14px;padding:12px">Đổi ngẫu nhiên</button>
+            </div>
+            <div id="swap-pick-pane" hidden style="margin-top:16px">
+                <div class="ld-search" role="search">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#86868b" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20.5 20.5 16.6 16.6"/></svg>
+                    <input id="swap-q" type="search" placeholder="Tìm món thay thế…" aria-label="Tìm món thay thế">
+                </div>
+                <div class="ld-group" id="swap-list" style="margin-top:12px;max-height:46vh;overflow:auto"></div>
+            </div>
+        </div>
+    </div>
+
     {{-- ===== Hôm nay đã ăn (chỉ khi đăng nhập và có ghi bữa) ===== --}}
     <section id="today-section" hidden>
         <div class="ld-section-head"><h2 class="ld-section-title">Hôm nay bạn đã ăn</h2><a href="/nhat-ky">Nhật ký</a></div>
@@ -371,22 +400,22 @@ document.getElementById('shake-btn').addEventListener('click', async () => {
     const icon = document.getElementById('shake-icon');
     icon.classList.remove('ld-shaking'); void icon.offsetWidth; icon.classList.add('ld-shaking');
     const btn = document.getElementById('shake-btn'); btn.disabled = true; btn.textContent = 'Đang suy nghĩ…';
+    lastShakePayload = {
+        slot,
+        recent_dish_ids: recent.slice(-10),
+        vegetarian: swOn('vegetarian'),
+        mode: shakeMode,
+        dish_count: shakeMode === 'home' ? trayCount : 1,
+        binh_dan: shakeMode === 'home' ? swOn('binh-dan') : false,
+        region_id: document.getElementById('region').value || null,
+        target_kcal: document.getElementById('target_kcal').value || null,
+        allergens: [...allergenSlugs],
+    };
     try {
         const resp = await fetch('/api/shake', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json', 'Accept': 'application/json', 'X-CSRF-TOKEN': csrf },
-            body: JSON.stringify({
-                slot,
-                shake_index: shakeIndex++,
-                recent_dish_ids: recent.slice(-10),
-                vegetarian: swOn('vegetarian'),
-                mode: shakeMode,
-                dish_count: shakeMode === 'home' ? trayCount : 1,
-                binh_dan: shakeMode === 'home' ? swOn('binh-dan') : false,
-                region_id: document.getElementById('region').value || null,
-                target_kcal: document.getElementById('target_kcal').value || null,
-                allergens: [...allergenSlugs],
-            }),
+            body: JSON.stringify({ ...lastShakePayload, shake_index: shakeIndex++ }),
         });
         const data = await resp.json();
         const box = document.getElementById('result');
@@ -400,9 +429,14 @@ document.getElementById('shake-btn').addEventListener('click', async () => {
         const n = d.nutrition;
         const unv = (n?.unverified_ingredients ?? []);
         box.innerHTML = `<div style="padding-top:8px;border-top:1px solid var(--color-line);margin-top:18px">
-            <h2 style="font-size:29px;font-weight:800;letter-spacing:-.02em;line-height:1.2;margin:12px 0 2px">
-                <a href="/mon/${d.slug}" style="color:inherit;text-decoration:none">${esc(d.name)}</a></h2>
-            <p style="color:var(--color-sub);font-size:15px;margin:0">${esc(d.region ?? '')}${d.serving_desc ? ' · ' + esc(d.serving_desc) : ''}</p>
+            <div style="display:flex;gap:14px;align-items:center;margin-top:12px">
+                ${d.image ? `<img class="ld-thumb" src="${esc(d.image.url)}" alt="" fetchpriority="high" decoding="async" style="width:48px;height:48px">` : ''}
+                <div style="min-width:0">
+                    <h2 style="font-size:29px;font-weight:800;letter-spacing:-.02em;line-height:1.2;margin:0">
+                        <a href="/mon/${d.slug}" style="color:inherit;text-decoration:none">${esc(d.name)}</a></h2>
+                    <p style="color:var(--color-sub);font-size:15px;margin:2px 0 0">${esc(d.region ?? '')}${d.serving_desc ? ' · ' + esc(d.serving_desc) : ''}</p>
+                </div>
+            </div>
             ${n ? `<div style="display:flex;align-items:baseline;gap:9px;margin-top:14px;flex-wrap:wrap">
                     <span class="ld-kcal-so ld-tnum">${Math.round(n.kcal_min)}–${Math.round(n.kcal_max)}</span>
                     <span style="color:var(--color-sub);font-size:14.5px">kcal mỗi khẩu phần</span>
@@ -433,51 +467,186 @@ document.getElementById('shake-btn').addEventListener('click', async () => {
     }
 });
 
-/* ===== Hiển thị kết quả mâm cơm (REC-003) ===== */
-function renderTrayResult(data, box) {
+/* ===== Hiển thị kết quả mâm cơm (REC-003) + đổi từng món (REC-005) ===== */
+let lastShakePayload = null;
+let currentTray = null; // { dishes: [...], binh_dan: bool }
+
+function trayKcalOf(dishes) {
+    const withN = dishes.filter(d => d.nutrition);
+    if (!withN.length) return null;
+    return {
+        kcal_min: withN.reduce((s, d) => s + d.nutrition.kcal_min, 0),
+        kcal_max: withN.reduce((s, d) => s + d.nutrition.kcal_max, 0),
+        dishes_counted: withN.length,
+    };
+}
+
+function renderTrayResult(data, box, fromSwap = false) {
     const dishes = data.dishes ?? [];
     if (!dishes.length) {
         box.innerHTML = `<div class="ld-warn" style="margin-top:16px"><span>Chưa gom được mâm cơm phù hợp. ${esc(data.suggestion ?? 'Hãy nới lỏng bớt bộ lọc (trừ dị ứng) rồi lắc lại.')}</span></div>`;
+        currentTray = null;
         return;
     }
-    dishes.forEach(d => recent.push(d.id));
-    localStorage.setItem('lacdoi_recent', JSON.stringify(recent.slice(-15)));
-    const tk = data.tray_kcal;
-    const unvNames = [...new Set(dishes.flatMap(d => d.nutrition?.unverified_ingredients ?? []))];
+    if (!fromSwap) {
+        dishes.forEach(d => recent.push(d.id));
+        localStorage.setItem('lacdoi_recent', JSON.stringify(recent.slice(-15)));
+    }
+    currentTray = { dishes: [...dishes], binh_dan: !!data.binh_dan };
+    const tk = fromSwap ? trayKcalOf(currentTray.dishes) : data.tray_kcal;
+    const unvNames = [...new Set(currentTray.dishes.flatMap(d => d.nutrition?.unverified_ingredients ?? []))];
     box.innerHTML = `<div style="padding-top:8px;border-top:1px solid var(--color-line);margin-top:18px">
-        <h2 style="font-size:26px;font-weight:800;letter-spacing:-.02em;line-height:1.2;margin:12px 0 2px">${data.binh_dan ? 'Mâm cơm bình dân' : 'Mâm cơm gợi ý'} · ${dishes.length} món</h2>
+        <h2 style="font-size:26px;font-weight:800;letter-spacing:-.02em;line-height:1.2;margin:12px 0 2px">${data.binh_dan ? 'Mâm cơm bình dân' : 'Mâm cơm gợi ý'} · ${currentTray.dishes.length} món</h2>
         <p style="color:var(--color-sub);font-size:15px;margin:0">${data.binh_dan ? 'Món dễ nấu, nguyên liệu phổ biến dễ kiếm. ' : ''}Chưa tính cơm — cơm nhà mình tự đong theo khẩu phần quen thuộc.</p>
         ${tk ? `<div style="display:flex;align-items:baseline;gap:9px;margin-top:12px;flex-wrap:wrap">
                 <span class="ld-kcal-so ld-tnum">${Math.round(tk.kcal_min)}–${Math.round(tk.kcal_max)}</span>
                 <span style="color:var(--color-sub);font-size:14.5px">kcal cả mâm (từ ${tk.dishes_counted} món có dữ liệu, chưa gồm cơm)</span></div>` : ''}
         <div class="ld-group" style="margin-top:14px">
-            ${dishes.map(d => { const n = d.nutrition; return `<a class="ld-row" href="/mon/${d.slug}" style="text-decoration:none;color:inherit">
-                <span class="grow"><span style="font-weight:600">${esc(d.name)}</span><span class="sub">${esc(d.role_label ?? '')}${d.cooking_method_label ? ' · ' + esc(d.cooking_method_label) : ''}${d.region ? ' · ' + esc(d.region) : ''}</span></span>
-                ${n ? `<span class="ld-price"><span class="so ld-tnum">${Math.round(n.kcal_min)}–${Math.round(n.kcal_max)}</span><small>kcal</small></span>`
-                     : `<span class="ld-price"><span class="so" style="color:var(--color-faint);font-weight:600">Chưa đủ dữ liệu</span></span>`}
-            </a>`; }).join('')}
+            ${currentTray.dishes.map((d, i) => { const n = d.nutrition; return `<div class="ld-row ld-row-compact">
+                <img class="ld-thumb" src="${d.image?.url ?? '/images/placeholder-dish.svg'}" alt="" loading="lazy" decoding="async">
+                <a class="grow" href="/mon/${d.slug}" style="text-decoration:none;color:inherit;min-width:0">
+                    <span style="font-weight:600">${esc(d.name)}</span>
+                    <span class="sub">${esc(d.role_label ?? '')}${d.cooking_method_label ? ' · ' + esc(d.cooking_method_label) : ''}${d.region ? ' · ' + esc(d.region) : ''}${n ? ' · ' + Math.round(n.kcal_min) + '–' + Math.round(n.kcal_max) + ' kcal' : ' · Chưa đủ dữ liệu'}</span>
+                </a>
+                <button type="button" class="ld-btn ld-btn-gray" data-swap="${i}" style="padding:8px 16px;font-size:14px;flex:none">Đổi</button>
+            </div>`; }).join('')}
         </div>
         ${unvNames.length ? `<div class="ld-warn" style="margin-top:14px"><span>Số liệu tham khảo — chưa kiểm định (nguồn thứ cấp): ${esc(unvNames.join(', '))}.</span></div>` : ''}
-        ${data.suggestion ? `<p class="ld-note" style="margin-top:12px">${esc(data.suggestion)}</p>` : ''}
-        ${data.relaxed_level > 0 ? '<p class="ld-note" style="margin-top:12px">Đã nới lỏng bộ lọc để gom đủ mâm — lọc dị ứng vẫn giữ nguyên.</p>' : ''}
+        ${!fromSwap && data.suggestion ? `<p class="ld-note" style="margin-top:12px">${esc(data.suggestion)}</p>` : ''}
+        ${!fromSwap && data.relaxed_level > 0 ? '<p class="ld-note" style="margin-top:12px">Đã nới lỏng bộ lọc để gom đủ mâm — lọc dị ứng vẫn giữ nguyên.</p>' : ''}
         <div style="margin-top:16px">${currentUser
             ? `<button id="eat-tray-btn" class="ld-btn ld-btn-primary" style="padding:11px 22px;font-size:15.5px;width:100%">Ăn mâm này</button>`
             : `<a href="/tai-khoan" style="color:var(--color-link);font-size:15px">Đăng nhập để ghi lại mâm cơm này</a>`}</div>
     </div>`;
+    box.querySelectorAll('[data-swap]').forEach(b => b.addEventListener('click', () => openSwap(+b.dataset.swap)));
     const eatBtn = document.getElementById('eat-tray-btn');
     if (eatBtn) eatBtn.onclick = async () => {
         eatBtn.disabled = true; eatBtn.textContent = 'Đang ghi…';
         let okCount = 0;
-        for (const d of dishes) {
+        for (const d of currentTray.dishes) {
             const r = await fetch('/api/meal-logs', { method: 'POST',
                 headers: { 'Content-Type': 'application/json', 'Accept': 'application/json', 'X-CSRF-TOKEN': csrf },
                 body: JSON.stringify({ dish_id: d.id, slot, source: 'shake_accepted' }) });
             if (r.ok) okCount++;
         }
-        if (okCount === dishes.length) { eatBtn.textContent = 'Đã ghi cả mâm vào nhật ký'; ldToast('Đã ghi mâm cơm vào nhật ký'); loadToday(); }
-        else { eatBtn.textContent = `Đã ghi ${okCount}/${dishes.length} món — bấm để ghi tiếp`; eatBtn.disabled = false; }
+        if (okCount === currentTray.dishes.length) { eatBtn.textContent = 'Đã ghi cả mâm vào nhật ký'; ldToast('Đã ghi mâm cơm vào nhật ký'); loadToday(); }
+        else { eatBtn.textContent = `Đã ghi ${okCount}/${currentTray.dishes.length} món — bấm để ghi tiếp`; eatBtn.disabled = false; }
     };
 }
+
+/* ===== Đổi món trong mâm (REC-005) ===== */
+let swapIdx = null;
+let swapRollIndex = 1000;
+let swapCandidates = [];
+
+function swapContextBody(extra = {}) {
+    return {
+        slot: lastShakePayload.slot,
+        region_id: lastShakePayload.region_id,
+        vegetarian: lastShakePayload.vegetarian,
+        binh_dan: lastShakePayload.binh_dan,
+        target_kcal: lastShakePayload.target_kcal,
+        allergens: lastShakePayload.allergens,
+        recent_dish_ids: recent.slice(-10),
+        ...extra,
+    };
+}
+
+function openSwap(idx) {
+    if (!currentTray || !lastShakePayload) return;
+    swapIdx = idx;
+    const d = currentTray.dishes[idx];
+    document.getElementById('swap-context').textContent = `${d.role_label ?? 'Món'} hiện tại: ${d.name}`;
+    setSwapMode('random'); // mặc định Ngẫu nhiên
+    document.getElementById('swap-preview').innerHTML = '';
+    document.getElementById('swap-roll').textContent = 'Đổi ngẫu nhiên';
+    document.getElementById('swap-overlay').classList.add('open');
+}
+function closeSwap() { document.getElementById('swap-overlay').classList.remove('open'); }
+document.getElementById('swap-close').addEventListener('click', closeSwap);
+document.getElementById('swap-overlay').addEventListener('click', (e) => { if (e.target.id === 'swap-overlay') closeSwap(); });
+
+function setSwapMode(mode) {
+    document.querySelectorAll('#swap-mode button').forEach(b => {
+        const on = b.dataset.mode === mode;
+        b.setAttribute('aria-pressed', on ? 'true' : 'false');
+        b.classList.toggle('active', on);
+    });
+    document.getElementById('swap-random-pane').hidden = mode !== 'random';
+    document.getElementById('swap-pick-pane').hidden = mode !== 'pick';
+    if (mode === 'pick') loadSwapCandidates();
+}
+document.querySelectorAll('#swap-mode button').forEach(b => b.addEventListener('click', () => setSwapMode(b.dataset.mode)));
+
+function applySwap(newDish) {
+    if (swapIdx === null || !currentTray) return;
+    currentTray.dishes[swapIdx] = newDish;
+    recent.push(newDish.id);
+    localStorage.setItem('lacdoi_recent', JSON.stringify(recent.slice(-15)));
+    closeSwap();
+    renderTrayResult({ dishes: currentTray.dishes, binh_dan: currentTray.binh_dan }, document.getElementById('result'), true);
+    if (window.ldToast) ldToast('Đã đổi thành ' + newDish.name);
+}
+
+document.getElementById('swap-roll').addEventListener('click', async () => {
+    const btn = document.getElementById('swap-roll');
+    btn.disabled = true; btn.textContent = 'Đang suy nghĩ…';
+    try {
+        const resp = await fetch('/api/shake/tray-swap', { method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json', 'X-CSRF-TOKEN': csrf },
+            body: JSON.stringify(swapContextBody({
+                role: currentTray.dishes[swapIdx].role,
+                exclude_dish_ids: currentTray.dishes.map(d => d.id),
+                shake_index: swapRollIndex++,
+            })) });
+        const data = await resp.json();
+        const pv = document.getElementById('swap-preview');
+        if (!data.dish) {
+            pv.innerHTML = `<div class="ld-warn"><span>${esc(data.suggestion ?? 'Không còn món khác phù hợp cho vị trí này.')}</span></div>`;
+            btn.textContent = 'Đổi ngẫu nhiên';
+            return;
+        }
+        const d = data.dish; const n = d.nutrition;
+        pv.innerHTML = `<div class="ld-group"><div class="ld-row ld-row-compact">
+                <img class="ld-thumb" src="${d.image?.url ?? '/images/placeholder-dish.svg'}" alt="" loading="lazy" decoding="async">
+                <span class="grow"><span style="font-weight:600">${esc(d.name)}</span>
+                <span class="sub">${esc(d.role_label ?? '')}${n ? ' · ' + Math.round(n.kcal_min) + '–' + Math.round(n.kcal_max) + ' kcal' : ''}</span></span>
+            </div></div>
+            <button type="button" class="ld-btn ld-btn-primary" id="swap-apply" style="width:100%;margin-top:12px;padding:12px">Dùng món này</button>`;
+        document.getElementById('swap-apply').addEventListener('click', () => applySwap(d));
+        btn.textContent = 'Ngẫu nhiên lại';
+    } finally { btn.disabled = false; }
+});
+
+async function loadSwapCandidates() {
+    const list = document.getElementById('swap-list');
+    list.innerHTML = '<p style="color:var(--color-faint);padding:14px;margin:0">Đang tải món thay thế…</p>';
+    const params = new URLSearchParams();
+    const body = swapContextBody({ role: currentTray.dishes[swapIdx].role, exclude_dish_ids: currentTray.dishes.map(d => d.id) });
+    Object.entries(body).forEach(([k, v]) => {
+        if (Array.isArray(v)) v.forEach(x => params.append(k + '[]', x));
+        else if (v !== null && v !== undefined && v !== '') params.set(k, v);
+    });
+    const resp = await fetch('/api/shake/tray-candidates?' + params, { headers: { 'Accept': 'application/json' } });
+    const data = await resp.json();
+    swapCandidates = data.dishes ?? [];
+    renderSwapCandidates('');
+}
+function renderSwapCandidates(q) {
+    const list = document.getElementById('swap-list');
+    const rows = swapCandidates.filter(d => d.name.toLowerCase().includes(q.toLowerCase()));
+    list.innerHTML = rows.map(d => { const n = d.nutrition; return `<button type="button" class="ld-row ld-row-compact" data-cand="${d.id}" style="width:100%">
+            <img class="ld-thumb" src="${d.image?.url ?? '/images/placeholder-dish.svg'}" alt="" loading="lazy" decoding="async">
+            <span class="grow" style="text-align:left"><span style="font-weight:600">${esc(d.name)}</span>
+            <span class="sub">${d.cooking_method_label ? esc(d.cooking_method_label) + ' · ' : ''}${n ? Math.round(n.kcal_min) + '–' + Math.round(n.kcal_max) + ' kcal' : 'Chưa đủ dữ liệu'}</span></span>
+        </button>`; }).join('')
+        || '<p style="color:var(--color-faint);padding:14px;margin:0">Không có món thay thế phù hợp.</p>';
+    list.querySelectorAll('[data-cand]').forEach(b => b.addEventListener('click', () => {
+        const d = swapCandidates.find(x => x.id === +b.dataset.cand);
+        if (d) applySwap(d);
+    }));
+}
+document.getElementById('swap-q').addEventListener('input', (e) => renderSwapCandidates(e.target.value.trim()));
 
 /* ===== Khối hoa quả tháng này — thẻ quả đồng nhất (UI-012) ===== */
 (async () => {
