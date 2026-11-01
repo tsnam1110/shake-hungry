@@ -126,6 +126,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt DISH-004 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-011 đợt 11: GIU-BIEN-THE — nguồn đạt chuẩn mở được đều là biến thể khác định danh file: FPT Shop (cháo cá trắm đậu xanh: gạo 300 g, cá 500 g, đậu xanh 150 g; và bản rau dền) và bản ĐMX cho 3 người có cùng bộ số đậu xanh; file là bản cháo trắng (cá luộc gỡ thịt, gạo rang sơ, thì là + rau mùi, không đậu xanh) — bản thuần này chỉ thấy ở trang tổng hợp không ghi khẩu phần. Không ép định lượng của biến thể đậu xanh vào file; giữ Mức 1 chờ nguồn đúng biến thể.]",
+  "cultural_note": {
+    "text": "Ghi chú này ở cấp nguyên liệu cá trắm, không phải lịch sử riêng của món cháo. Cá trắm là loài cá nước ngọt quen thuộc trong ẩm thực miền Bắc: ở Hà Nội, cá trắm đã được dùng cho món bún cá từ năm 2001 tại một quán trên phố Hàng Đậu, thay cho cá rô đồng phổ biến trước đó, và quán này nay tiêu thụ hơn 100 kg cá trắm mỗi ngày. Trong hồ sơ này, cá trắm được luộc gỡ thịt nấu cháo cùng thì là và rau mùi theo lối cháo cá gia đình.",
+    "sources": [
+      {
+        "ref": "VnExpress — Quán bún đầu cá hút khách ở Hà Nội",
+        "url": "https://vnexpress.net/quan-bun-dau-ca-hut-khach-o-ha-noi-4652077.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -134,6 +134,19 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] GIỮ Mức 1 — THIEU-NGUON: tra cứu mở rộng chỉ có 1 họ định lượng (congthucgiadinh, lẩu cá mè chua cay không măng, không số khẩu phần) và 1 trang SEO vô danh đúng tên măng chua nhưng không định lượng (memart). Chưa đủ ≥3 họ cho biến thể cá mè + măng chua.",
+  "cultural_note": {
+    "text": "Ghi chú này ở cấp nguyên liệu. Cá mè trong kho được định danh là cá mè trắng Hypophthalmichthys molitrix, thuộc chi cá mè trắng — nhóm còn được gọi là cá mè phương bắc — gồm những loài cá nước ngọt họ Cá chép có thân dẹp, đầu to, vảy nhỏ màu trắng, có nguồn gốc ở bắc và đông bắc châu Á và đã được nhập nội tới ít nhất 88 quốc gia. Cá mè quen thuộc trong đời sống người Việt đến mức đi vào thành ngữ 'cá mè một lứa', và được chế biến rất đa dạng, từ kho, hấp, nướng, chiên đến gỏi và nấu cháo. Trong kho, cá mè được nấu lẩu với măng tươi và cà chua, ăn kèm rau muống và bún tươi.",
+    "sources": [
+      {
+        "ref": "Wikipedia tiếng Việt — Cá mè trắng Hoa Nam",
+        "url": "https://vi.wikipedia.org/wiki/C%C3%A1_m%C3%A8_tr%E1%BA%AFng_Hoa_Nam"
+      },
+      {
+        "ref": "Wikipedia tiếng Việt — Cá mè",
+        "url": "https://vi.wikipedia.org/wiki/Cá_mè"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -68,6 +68,15 @@
     "queried_at": "2026-08-31"
   },
   "import_note": "Nhập tự động từ Wikidata Q50835686 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] GIỮ Mức 1 — 429: lượt mở đọc nguồn bị chặn 429, dừng ngay theo quy tắc, chưa kiểm chứng được trang nào. Bằng chứng tra cứu trước khi bị chặn: mì thanh long là sản phẩm thương mại Caty (Wikipedia/Dân Việt/The Leader — không có công thức biên tập cho gói khô); các trang 'cách làm tại nhà' dùng chung một bộ số (800g bột/1 trái thanh long/1 trứng) = 1 họ sao chép và là biến thể mì tươi. Nhiều khả năng kết luận cuối là KHONG-CO-CT — cần mở đọc lại ở đợt sau khi hết chặn để chốt. Nguyên liệu định danh mi-trung-kho (384 kcal/100g) và thanh-long (68 kcal/100g) đều có số.",
+  "cultural_note": {
+    "text": "Mì thanh long ra đời đầu năm 2020 trong làn sóng 'giải cứu nông sản' giữa dịch COVID-19, nối tiếp hiện tượng bánh mì thanh long: một quán mì ở quận Ninh Kiều (Cần Thơ) làm mì từ thanh long đỏ đã thu hút đông khách tìm đến. Thanh long dùng làm mì chủ yếu lấy từ Bình Thuận, vùng trồng thanh long lớn của cả nước, nhằm tạo thêm đầu ra cho nông dân khi xuất khẩu đình trệ. Đến tháng 11/2023, mì thanh long bất ngờ thành hiện tượng mạng nhờ đoạn quảng cáo của thương hiệu Caty với câu hát 'lần đầu tiên, trái thanh long có trong mì tôm', khiến sản phẩm cháy hàng trên các sàn thương mại điện tử.",
+    "sources": [
+      {
+        "ref": "Wikipedia tiếng Việt — Mì thanh long",
+        "url": "https://vi.wikipedia.org/wiki/M%C3%AC_thanh_long"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

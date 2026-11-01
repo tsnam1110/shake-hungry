@@ -66,6 +66,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-012 đợt vét] GIỮ Mức 1 (429): lỗi 429 khi mở nguồn Cookpad cho rau dền luộc, dừng tra cứu theo quy tắc đợt; chưa có họ nào được mở đọc thật, cần tra lại ở đợt sau (ứng viên: Cookpad Dory/Pham Huyen/Nguyễn Hoàng Yến — đều chỉ mới thấy qua trích đoạn tìm kiếm, chưa tính).",
+  "cultural_note": {
+    "text": "Rau dền là loại rau mùa hè mọc rất khỏe, được trồng làm rau ăn trong các vườn quê với hai giống quen thuộc là dền trắng (còn gọi là dền xanh hay dền lá liễu) và dền đỏ (còn gọi là dền tía). Cây có thể trồng quanh năm nhưng thời vụ gieo trồng tốt nhất là từ tháng 2 đến tháng 7, chỉ sau khoảng một tháng đã cho thu hoạch. Trong bữa cơm của gia đình nông thôn, rau dền là món rau ăn thông thường được chế biến giản dị như luộc hoặc nấu canh, nên đĩa rau dền luộc mang đúng vị của thứ rau mùa vụ hái ngay trong vườn nhà.",
+    "sources": [
+      {
+        "ref": "Dân Việt — Rau dền mọc khỏe, trồng cũng khỏe",
+        "url": "https://danviet.vn/rau-den-moc-khoe-trong-cung-khoe-777797749-d242195.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

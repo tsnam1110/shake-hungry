@@ -56,6 +56,15 @@
     "queried_at": "2026-08-31"
   },
   "import_note": "Nhập tự động từ Wikidata Q3094709 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Gợi ý nguyên liệu từ Wikidata (tiếng Anh, CHƯA ánh xạ sang data/ingredients/): rice flour. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/Nems%20wafer%20DSC04723.JPG Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] GIỮ Mức 1 (KHONG-CO-CT): file là khẩu phần nguyên liệu khô (5 lá = 30g, dòng duy nhất tự tham chiếu slug banh-trang vốn đã có số dinh dưỡng 330 kcal/100g ở tầng nguyên liệu), không phải món có công thức chế biến; cooking_method 'song' cũng không đúng bản chất (bánh tráng được tráng hấp chín rồi phơi khô). Các nguồn đã tra (memart.vn đã mở; VietnamPlus làng nghề Thuận Hưng) đều chỉ mô tả quy trình, không có định lượng theo khẩu phần. Đề xuất xử lý ở tầng phân loại dữ liệu (giữ như staple/khẩu phần nguyên liệu) thay vì ép vào chương trình Mức 2.",
+  "cultural_note": {
+    "text": "Bánh tráng là lá bột gạo được tráng thật mỏng rồi phơi khô, là “lá cuốn” nền cho rất nhiều món cuốn của ẩm thực Việt. Nghề tráng bánh thủ công là nghề truyền đời ở nhiều làng quê; như ở Phú Hòa Đông, Củ Chi — làng bánh tráng truyền thống của TP.HCM — người thợ phải dậy từ 2–3 giờ sáng, chọn gạo, pha bột, tráng bánh và canh nắng để phơi. Nghề làm bánh tráng ở Phú Hòa Đông đã được TP.HCM công nhận là nghề truyền thống.",
+    "sources": [
+      {
+        "ref": "Tuổi Trẻ — Nỗ lực gìn giữ làng nghề bánh tráng truyền thống duy nhất ở TP.HCM",
+        "url": "https://tuoitre.vn/dulichtphcm/no-luc-gin-giu-lang-nghe-banh-trang-truyen-thong-duy-nhat-o-tp-hcm-10784137.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

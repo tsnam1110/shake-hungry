@@ -155,6 +155,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [LV2-012 đợt vét] Giữ Mức 1 — 429: nguồn Điện Máy XANH khớp định danh (tàu hũ ky) bị chặn 429 khi mở, dừng tra cứu theo quy ước, cần làm lại khi hết chặn. Kiểm tra sơ bộ ở mức kết quả tìm kiếm: file thuần chay đạt (không nước mắm/trứng/sữa/thịt; tương bần + lạc rang). [LV2-012 vòng 2] GIỮ Mức 1 — THIEU-NGUON (tiến triển): vòng 2 mở được 2 họ đã kiểm chứng: Điện Máy XANH (bản tàu hũ ky + đậu hũ, 4 người/10 cuốn: tàu hũ ky 50 g, thính gạo rang 30 g — nhưng sắn/khoai môn/cà rốt tính theo củ, không quy đổi chắc chắn) và Cookpad Hien Thanh (gram đầy đủ: sắn 250, khoai lang 180, bún tàu 100, cà rốt 150, thính 20 — nhưng không ghi khẩu phần/số cuốn). Mọi họ đều có thính gạo + củ sắn mà file thiếu; chưa có họ thứ ba vừa có gram vừa có khẩu phần để quy về serving 2 cuốn/150 g của file. Giữ nguyên định lượng.",
+  "cultural_note": {
+    "text": "Bì cuốn chay là món cuốn thường góp mặt trong mâm cơm chay cúng Rằm tháng Giêng của nhiều gia đình. Phần bì chay làm từ đậu phụ, khoai tây, khoai lang thái chỉ rán vàng, trộn cùng miến và thính gạo rang giã nhuyễn, rồi cuốn cùng xà lách, rau thơm. Món cuốn được dùng kèm nước chấm chay chua ngọt pha cà rốt, su hào.",
+    "sources": [
+      {
+        "ref": "VietnamNet — Gợi ý mâm cơm chay đơn giản cúng Rằm",
+        "url": "https://vietnamnet.vn/goi-y-mam-com-chay-don-gian-cung-ram-223964.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

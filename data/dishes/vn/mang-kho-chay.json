@@ -98,6 +98,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món chay thuần: toàn bộ nguyên liệu có origin thực vật/nấm, gia vị chỉ dùng nước tương/muối/chao đậu — không nước mắm, không hạt nêm/bột canh (nhóm COMPOSITE_ANIMAL tính là mặn), không trứng/sữa; nhãn diet suy từ thành phần phải ra chay và đã kiểm chứng trực tiếp trong DB sau seed (cổng G3/G6 của đợt). [LV2-012 đợt vét] GIỮ Mức 1 — THIEU-NGUON: đã mở đọc thật ĐMX (họ định lượng duy nhất: măng 125g, đậu hũ 50g, nấm rơm 50g, nước tương ~26g/khẩu phần) và Cookpad Phuong Nguyen 92 (đúng biến thể chay nhưng không có định lượng hiển thị); Phú Vinh/VienAI là bản sao nguyên bộ số ĐMX nên tính chung 1 họ. Biến thể ĐMX có nấm rơm + hạt nêm chay, file là bản thuần chay tối giản không nấm — cần thêm ≥2 họ định lượng độc lập cho đúng biến thể này ở đợt sau. Kiểm cứng thuần chay: mọi dòng file đều thực vật, gia vị chỉ nước tương — đạt. Nguyên liệu định danh măng-tuoi (27 kcal/100g) và dau-phu (83 kcal/100g) đều có số, không bị trần nguyên liệu.",
+  "cultural_note": {
+    "text": "Ghi chú này chủ yếu ở cấp nguyên liệu. Măng tươi là thức quà theo mùa mưa: Báo Đắk Lắk ghi nhận ở Tây Nguyên, mùa măng rừng kéo dài khoảng từ tháng 7 đến tháng 11 hằng năm, lấy măng là sinh kế thời vụ của nhiều người dân ven rừng và măng là thực phẩm dân dã, thân thuộc, không thể thiếu trong văn hóa ẩm thực của đồng bào nơi đây. Măng tươi thu về thường được thương lái luộc sơ rồi chở đi các tỉnh, còn trong bữa cơm nhà măng được chế biến ngay khi còn tươi. Bản trong kho kho măng tươi cùng đậu phụ và nước tương, thuộc nhóm món chay thanh đạm quen thuộc của mâm cơm gia đình.",
+    "sources": [
+      {
+        "ref": "Báo Đắk Lắk — Mùa măng rừng Tây Nguyên",
+        "url": "https://baodaklak.vn/du-lich/202510/mua-mang-rungtay-nguyen-d8f10e6/"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

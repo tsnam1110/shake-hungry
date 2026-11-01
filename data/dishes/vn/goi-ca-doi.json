@@ -146,6 +146,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 đợt 2 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] Giữ Mức 1 — KHONG-CO-CT: tra cứu mở rộng không có công thức gỏi cá đối định lượng nào trên các trang biên tập; chỉ có đoạn giới thiệu SEO không số liệu. Cần nguồn sách dạy nấu/báo chí ẩm thực có công thức thật mới nâng được.",
+  "cultural_note": {
+    "text": "Ghi chú này ở cấp nguyên liệu. Cá đối là loài cá cửa biển gắn với nghề đăng lưới ở Cà Mau: tại cửa biển Sào Lưới, xã Nguyễn Việt Khái, huyện Phú Tân, gần chục hộ dân bám trụ với nghề đăng cá đối, mùa đăng kéo dài từ sau Tết Nguyên đán đến hết tháng 10 dương lịch. Cá đối bắt lên được chủ vựa thu mua trong ngày và chia theo cỡ, loại nhỏ nhất còn được dùng làm mắm. Trong kho, cá đối tươi được làm gỏi cùng chuối xanh, khế chua, rau răm và lạc rang — cách ăn cá tươi chua chát đặc trưng của vùng cửa sông, cửa biển.",
+    "sources": [
+      {
+        "ref": "Dân Việt (theo Báo Cà Mau) — Cà Mau: Chênh vênh cửa biển với nghề đăng bắt loài cá đối ngon",
+        "url": "https://danviet.vn/ca-mau-chenh-venh-cua-bien-voi-nghe-dang-bat-loai-ca-doi-ngon-77771059004-d792929.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

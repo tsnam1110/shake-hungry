@@ -82,6 +82,19 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-012 đợt vét] Giữ Mức 1 — mã 429: cả 3 trang nguồn ứng viên mở đều lỗi 429 (dịch vụ đọc trang bị giới hạn), dừng theo quy tắc. Ứng viên cho đợt sau (đã thấy qua kết quả tìm kiếm, chưa mở): Hướng Nghiệp Á Âu 'Sương sáo nước cốt dừa' (60g bột sương sáo + 100g đường/1 lít; mỗi ly 30ml nước đường phèn + nước cốt dừa — khớp mô hình phục vụ của file), Bluestone (bột 50-100g, đường phèn 80-100g, lá dứa 2-3 lá), Eva.vn (50g bột + 100g đường/1 lít, ăn với nước đường). Nguyên liệu định danh thach-suong-sao đã có số (14 kcal/100g, nguồn thứ cấp chưa kiểm định) nên không bị trần nguyên liệu.",
+  "cultural_note": {
+    "text": "Thạch đen được làm từ cây thạch đen — loại cây thân thảo mà người miền Nam quen gọi là sương sáo — trong đó vùng Tràng Định, Lạng Sơn được xem là nơi cho chất lượng thạch tốt nhất và đã có chỉ dẫn địa lý “Thạch đen Tràng Định”. Cây thu hoạch về được phơi khô, khi dùng đem nấu nhừ, vò lọc lấy nước rồi nấu đông thành khối thạch đen bóng, theo cách làm truyền thống của người dân vùng cao. Thạch thường được cắt miếng ăn cùng nước đường, nước cốt dừa hoặc góp mặt trong các món chè, tào phớ.",
+    "sources": [
+      {
+        "ref": "Báo Phụ Nữ Việt Nam — Đưa sản phẩm vùng cao chinh phục người tiêu dùng, tạo sức bật cho phụ nữ dân tộc thiểu số và miền núi khởi nghiệp",
+        "url": "https://phunuvietnam.vn/dua-san-pham-vung-cao-chinh-phuc-nguoi-tieu-dung-tao-suc-bat-cho-phu-nu-dan-toc-thieu-so-va-mien-nui-khoi-nghiep-20251121100322624.htm"
+      },
+      {
+        "ref": "Ngôi Sao — Thạch đen được làm từ lá cây gì? Hóa ra từ loại cây này, có người còn nhầm là cây dại",
+        "url": "https://ngoisao.vn/theo-dong-su-kien/kien-thuc/thach-den-duoc-lam-tu-la-cay-gi-hoa-ra-tu-loai-cay-nay-co-nguoi-con-nham-la-cay-dai-426482.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

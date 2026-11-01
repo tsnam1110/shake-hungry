@@ -90,6 +90,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt) [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 10 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).] [LV2-012 đợt vét] Giữ Mức 1 - 429: mới mở được 1 họ (Điện Máy XANH) thì lần mở họ thứ hai (Eva) trả lỗi 429; dừng theo quy tắc đợt. Họ đã mở cho thấy file thiếu lớp bột chiên giòn áo ngoài và tỉ lệ bột năng lệch lớn, nhưng chưa đủ >=2 họ để sửa - để lại cho đợt làm lại.",
+  "cultural_note": {
+    "text": "Khoai lang kén là món ăn vặt mới, không phải món truyền thống lâu đời: khoai lang nghiền trộn bột năng, nước cốt dừa và đường, nặn thành viên dài như kén tằm rồi chiên vàng. Nguyên liệu chính của món gắn với những vùng chuyên canh khoai lang lớn như huyện Bình Tân, tỉnh Vĩnh Long — nơi được mệnh danh là 'Vương quốc khoai lang' với diện tích xuống giống hơn 10.000 ha mỗi năm, sản lượng trên 300.000 tấn. Năm 2023, Bình Tân xác lập kỷ lục Việt Nam với sự kiện chế biến và công diễn 100 món ăn, thức uống từ khoai lang, cho thấy sức sáng tạo rất đa dạng quanh củ khoai bình dị này.",
+    "sources": [
+      {
+        "ref": "Báo Tin tức và Dân tộc (TTXVN) — Xác lập kỷ lục Việt Nam với 100 món ăn chế biến từ khoai lang Bình Tân",
+        "url": "https://baotintuc.vn/xac-lap-ky-luc-viet-nam-voi-100-mon-an-che-bien-tu-khoai-lang-binh-tan-n20231224180542464.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

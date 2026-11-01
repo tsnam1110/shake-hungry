@@ -106,6 +106,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món chay thuần: toàn bộ nguyên liệu có origin thực vật/nấm, gia vị chỉ dùng nước tương/muối/chao đậu — không nước mắm, không hạt nêm/bột canh (nhóm COMPOSITE_ANIMAL tính là mặn), không trứng/sữa; nhãn diet suy từ thành phần phải ra chay và đã kiểm chứng trực tiếp trong DB sau seed (cổng G3/G6 của đợt). MÓN THAY cho nam-rom-kho-tieu của kế hoạch §3.5: vòng validate V7 phát hiện món nam-kho-tieu của đợt 2 chính là 'Nấm rơm kho tiêu' với thành phần gần như trùng — huỷ bản trùng theo phép thử EDITORIAL-GUIDE §3, thay bằng nấm bào ngư kho sả ớt (nguyên liệu nam-bao-ngu đã có số trong kho). [LV2-012 đợt vét] GIỮ Mức 1 — THIEU-NGUON: đúng biến thể 'kho sả ớt' chỉ có 1 họ (Cookpad Bảo Bình) nhưng không định lượng; 2 họ có định lượng đã mở đều lệch biến thể (SKĐS = xào + nấm rơm/thơm; Cookpad Bòn Bon = kho nước tương không sả). Nguyên liệu định danh nam-bao-ngu có số (USDA 168580, 33 kcal/100g) nên không phải trần nguyên liệu. Chờ nguồn kho sả ớt có định lượng biên tập rõ ràng rồi nâng sau.",
+  "cultural_note": {
+    "text": "Ghi chú này ở cấp nguyên liệu. Nấm bào ngư đến với bữa ăn ngày nay phần lớn từ các trại trồng nấm theo bịch phôi: Báo Hànộimới kể chuyện trại nấm bào ngư đầu tiên trên đất Cà Mau của chị Nguyễn Mai Hương, gây dựng từ 5.000 phôi nấm ban đầu, sau hai năm học nghề đã thành trại hơn 13.000 phôi và nhân rộng thành nhiều trại vệ tinh khắp thành phố. Nấm được trồng trên giá thể bã dừa, phun nước giữ ẩm, chưa đầy một tháng đã cho thu hoạch và thu kéo dài không dưới 5 tháng, nên nấm tươi có mặt quanh năm ở chợ, nhà hàng và siêu thị. Trong kho, nấm bào ngư được kho sả ớt với nước tương thành một món chay đậm vị cho bữa cơm nhà.",
+    "sources": [
+      {
+        "ref": "Báo Hànộimới — Người tạo nên những trang trại nấm ở Cà Mau",
+        "url": "https://hanoimoi.vn/print/113971.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

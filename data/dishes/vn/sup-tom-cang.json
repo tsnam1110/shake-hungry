@@ -142,6 +142,19 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt DISH-004 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] GIỮ Mức 1 — THIEU-NGUON: đã mở đọc 3 họ súp tôm/bắp độc lập (Hướng Nghiệp Á Âu, PasGo, Nấu Ăn Không Khó), cả 3 xác nhận khung tôm + bắp + nấm + trứng gà + trứng cút + bột sánh + hành ngò tiêu, nhưng không họ nào nấu bằng tôm càng xanh như tên file và không họ nào ghi số khẩu phần của mẻ nên không đối chiếu được định lượng cho chén 300 g; chờ nguồn đúng món súp tôm càng, không thay bằng súp tôm thường.",
+  "cultural_note": {
+    "text": "Ghi chú này ở cấp nguyên liệu. Tôm càng xanh gắn với mô hình nuôi xen canh của Đồng bằng sông Cửu Long — trong mương vườn dừa và ruộng lúa ở Vĩnh Long có hợp tác xã 151 thành viên với khoảng 50 ha nuôi xen — và được người dân vùng nước lợ xem là vật nuôi có giá trị kinh tế cao; sản phẩm tôm càng lột của Vĩnh Long đã đạt chuẩn OCOP 3 sao với nhãn hiệu 'Tôm càng lột xứ dừa'. Con tôm này cũng là một biểu tượng lễ hội ở Đất Mũi, khi Festival Tôm Cà Mau đưa tôm càng xanh vào hội thi câu tôm bằng cần câu truyền thống. Trong kho, tôm càng xanh được nấu súp với ngô ngọt, cà rốt, nấm rơm và trứng gà, sánh nhẹ bằng bột năng.",
+    "sources": [
+      {
+        "ref": "BNEWS (TTXVN) — Hướng chuyển đổi nâng giá trị cho tôm càng xanh",
+        "url": "https://bnews.vn/huong-chuyen-doi-nang-gia-tri-cho-tom-cang-xanh/423064.html"
+      },
+      {
+        "ref": "Báo Tuổi Trẻ — Cà Mau tổ chức hội thi bắt tôm nhanh và câu tôm tại Festival tôm",
+        "url": "https://tuoitre.vn/ca-mau-to-chuc-hoi-thi-bat-tom-nhanh-va-cau-tom-tai-festival-tom-100261029123214675.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

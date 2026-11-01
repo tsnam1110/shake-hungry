@@ -105,6 +105,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt DISH-004 đợt 2 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] Giữ Mức 1 — trần nguyên liệu định danh rau-nhut (kcal=null, hồ sơ tra cứu 2 vòng đã ghi trong data/ingredients/rau-nhut.json). Biến thể không chua của file được 1 họ đã mở xác nhận đúng kỹ thuật (xào tôm săn, rau cho cuối nấu 2-3 phút); trang Cookpad 'Canh chua tôm rau nhút' đã thử mở nhưng gặp lỗi 429 phía dịch vụ nên không tính họ. Khi rau-nhut có số đạt chuẩn (hoặc chủ dự án duyệt dùng bộ số tầng 6 kèm cờ chưa kiểm định), món này đủ điều kiện rà lại ngay vì định lượng đã khớp.",
+  "cultural_note": {
+    "text": "Rau nhút, còn gọi là rau rút, là cây thân thảo nổi trên mặt nước, gắn liền với đời sống sông rạch miền Tây và thường xuất hiện trong các món ăn dân dã như lẩu, canh chua và các món nước nói chung. Ở xã Vĩnh Thuận Đông, thành phố Cần Thơ, người dân trồng rau nhút thành từng bè dài trên sông Nước Đục, từ sáng sớm đã cắt rau bó thành mớ cho thương lái thu mua, thu hoạch nhiều đợt quanh năm. Nấu canh với tôm là một trong những cách ăn quen thuộc của loại rau đồng này trong bữa cơm miền Tây.",
+    "sources": [
+      {
+        "ref": "Dân Việt — Ở xã mới này của Cần Thơ, dân trồng rau nhút kiểu gì bên sông Nước Đục, loại rau ngon, cứ bẻ là bán ngon ơ, hút hàng?",
+        "url": "https://danviet.vn/o-xa-moi-nay-cua-can-tho-dan-neo-loai-rau-ngon-nay-ben-song-nuoc-duc-cu-be-la-ban-ngon-o-hut-hang-d1424817.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

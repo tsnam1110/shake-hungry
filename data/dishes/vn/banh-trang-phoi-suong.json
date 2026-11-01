@@ -122,6 +122,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-012 đợt vét] GIỮ Mức 1 — BIEN-THE: file là biến thể trộn rút gọn (bánh tráng 60, trứng cút 20, lạc 10, hành phi 5, sa tế 5, mỡ hành từ hành lá 5 + mỡ lợn 5, rau răm 5, quất 5) nhưng tên món là sản phẩm lá bánh tráng phơi sương; 2 họ đã mở (ĐTB Á Âu qua Bibi, Cookpad Cẩm Tú) và trích đoạn ĐMX đều là bánh tráng trộn đầy đủ có xoài xanh + muối tôm + khô/tép mà file thiếu hẳn; họ muối nhuyễn/mỡ hành khớp file nhất (YummyDay, Lofita) thì mở bị 429. Cần chủ dự án chốt: (a) định danh lại thành bánh tráng trộn và bổ sung xoài/muối tôm/khô (muoi-tom hiện null), hoặc (b) giữ biến thể mỡ hành–muối nhuyễn và tra bổ sung ≥3 họ cho biến thể đó ở đợt sau.",
+  "cultural_note": {
+    "text": "Bánh tráng phơi sương là đặc sản của Trảng Bàng, Tây Ninh, nơi nghề tráng bánh được cho là đã xuất hiện từ thế kỷ 18, do cư dân miền Trung vào khai hoang mang theo. Giai thoại địa phương kể rằng món bánh ra đời khi một mẻ bánh nướng bị để quên ngoài vườn qua đêm, sớm ra bánh mềm dẻo lạ miệng nhờ sương đêm. Bánh được tráng hai lớp, phơi nắng, nướng sơ rồi đem phơi sương; năm 2016, nghề làm bánh tráng phơi sương Trảng Bàng được công nhận là di sản văn hóa phi vật thể quốc gia.",
+    "sources": [
+      {
+        "ref": "Thanh Niên — Truyền nhân bánh tráng phơi sương",
+        "url": "https://thanhnien.vn/truyen-nhan-banh-trang-phoi-suong-185823689.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

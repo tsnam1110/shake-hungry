@@ -130,6 +130,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt DISH-004 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] Giữ Mức 1 — biến thể không được chứng thực: tra cứu mở rộng chỉ gặp bún chả cá trôi (trang chacadong.com — lần mở trang gặp lỗi 429 phía dịch vụ nên không tính là nguồn đã mở, chỉ thấy qua trích đoạn tìm kiếm: 500g chả cá trôi + 500g bún) và bún cá Hà Nội dùng cá trắm/rô phi/chép. Cần chủ dự án xác nhận món 'bún cá trôi' dạng cá khúc chiên có thật, hoặc cho đổi định danh sang chả cá trôi / loài cá khác rồi mới nâng.",
+  "cultural_note": {
+    "text": "Ghi chú này ở cấp nguyên liệu cá trôi, không phải lịch sử riêng của món bún. Cá trôi là một trong những loài cá ao truyền thống của miền Bắc, thường được thả ghép trong cùng một ao với cá mè, trắm cỏ và cá chép — trong tỉ lệ thả ghép ao cá được báo Dân Việt dẫn lại, cá trôi chiếm khoảng 25% đàn cá. Tô bún cá trôi trong hồ sơ thuộc nhóm bún cá miền Bắc, nấu cá với cà chua, thì là và một chút bột nghệ.",
+    "sources": [
+      {
+        "ref": "Báo Dân Việt — Loài cá được ví như công nhân vệ sinh môi trường, chuyên ăn tảo",
+        "url": "https://danviet.vn/loai-ca-duoc-vi-nhu-cong-nhan-ve-sinh-moi-truong-chuyen-an-tao-ai-ngo-lai-la-kho-chua-duong-chat-tot-ngang-ca-hoi-d1470245.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

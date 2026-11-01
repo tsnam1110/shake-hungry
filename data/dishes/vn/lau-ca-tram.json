@@ -150,6 +150,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-011 đợt 11: GIỮ Mức 1 — GIU-BIEN-THE. Các họ đã đọc: họ A là một công thức sao chép lẫn nhau (CET Chef Lập / YummyDay / Cá kho làng Vũ Đại: cá nguyên con 2 kg, xương ống 300 g, thịt bò 500 g, ngao 1 kg, cà chua 500 g, me — không ghi khẩu phần); họ B là lẩu nhúng mẻ miền Bắc (ĐMX qua PasGo / Bếp Trưởng Á Âu / AEON: cá nguyên con 3–4 kg, nghệ + tương hột + cơm mẻ tạo chua, rau nhút/bông súng; AEON ghi 3–4 người nhưng cá 3 kg nguyên con không quy đổi được gram thịt/khẩu phần). File là biến thể nhẹ tự biên: chua bằng CHANH, có sả + dọc mùng, KHÔNG mẻ/nghệ/tương hột, KHÔNG xương ống và đồ nhúng kèm (bò/ngao/đậu phụ) mà cả hai họ đều có — không họ nào xác nhận biến thể của file, và định lượng cá nguyên con cả nồi ở mọi họ đều không quy đổi được về khẩu phần. Ghi nhận bất thường thiếu xương ống/đồ nhúng/mẻ so với đồng thuận nguồn nhưng không tự thêm (không quy đổi được gram/khẩu phần và sẽ làm đổi định danh món). Bún 80 g giữ nguyên theo quy ước §14. Không sửa dòng nào.]",
+  "cultural_note": {
+    "text": "Ghi chú này ở cấp nguyên liệu. Cá trắm cỏ (Ctenopharyngodon idella) là loài cá nước ngọt họ Cá chép, sống ở sông, ao hồ và các ao nuôi, con lớn có thể dài tới 1,5 m, nặng 45 kg; trong tự nhiên, đến mùa sinh sản cá di cư lên đầu nguồn các con sông để đẻ. Đây là loài cá nuôi ao quen thuộc, đủ lớn để nấu cho bữa ăn nhiều người. Trong kho, cá trắm được nấu lẩu cùng dọc mùng, rau muống, thì là và hành lá — bộ rau đi kèm đặc trưng của nồi lẩu cá miền Bắc, ăn kèm bún tươi.",
+    "sources": [
+      {
+        "ref": "Wikipedia tiếng Việt — Cá trắm cỏ",
+        "url": "https://vi.wikipedia.org/wiki/Cá_trắm_cỏ"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

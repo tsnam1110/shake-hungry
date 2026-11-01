@@ -116,6 +116,19 @@
     "queried_at": "2026-08-31"
   },
   "import_note": "Nhập tự động từ Wikidata Q18456374 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/Sauce%20de%20poisson.jpg Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. HỢP NHẤT CỤM NƯỚC MẮM 2026-10-31 (tầm soát M-1 + quyết định của chủ dự án): bốn món địa danh nuoc-mam-phu-quoc (Wikidata Q7188272), nuoc-mam-phan-thiet (Q10802093), nuoc-mam-cat-hai (Q10802091), nuoc-mam-cua-khe (Q30919660) có công thức GIỐNG HỆT món này tuyệt đối (1 dòng nuoc-mam-truyen-thong 15 g, cùng serving/slot) — khác biệt duy nhất là xuất xứ sản phẩm, không đủ điều kiện là món độc lập theo EDITORIAL-GUIDE §3. Đã xoá 4 file; tên địa danh (vi + en) giữ làm alias của món này; mã Wikidata ghi lại tại đây để truy vết. Trọng số bữa của nhóm nuoc-cham (weight 8 — tầm soát M-4): GIỮ NGUYÊN chờ quyết định riêng, không tự đặt số; engine Lắc đã chặn món khẩu phần <80 g khỏi gợi ý bữa chính (Recommender::pool) nên rủi ro gợi ý nước chấm như bữa ăn hiện đã được chặn ở tầng engine — xem biên bản docs/04-data-sources/DATA-AUDIT-FIXES-2026-10-31.md. [LV2-012 đợt vét] GIỮ Mức 1 — KHONG-CO-CT: nước mắm là sản phẩm lên men sản xuất (cá cơm : muối = 3:1, ủ chượp 8-24 tháng theo tài liệu nhà sản xuất đã mở), không có công thức chế biến tại gia theo khẩu phần; file hiện là mục gia vị tự quy chiếu (nguyên liệu duy nhất là chính nước mắm truyền thống). Đề xuất chủ dự án cân nhắc vai trò của mục này trong danh mục món (nguyên liệu vs món) ở đợt biên tập riêng.",
+  "cultural_note": {
+    "text": "Nước mắm là sản phẩm của nghề ủ chượp cá với muối đã gắn bó lâu đời với cư dân các vùng ven biển Việt Nam, hình thành nhiều làng nghề danh tiếng ở các miền. Ở Phú Quốc, nghề làm nước mắm đã có hàng trăm năm, truyền qua năm, sáu thế hệ với những “nhà thùng” ủ cá cơm trong thùng gỗ; nghề này được đưa vào Danh mục Di sản văn hóa phi vật thể quốc gia năm 2021 và nước mắm Phú Quốc là sản phẩm đầu tiên của Việt Nam được Liên minh châu Âu bảo hộ chỉ dẫn địa lý. Ở miền Trung, nghề làm nước mắm Nam Ô (Đà Nẵng) cũng được công nhận Di sản văn hóa phi vật thể quốc gia năm 2019 và được bảo hộ chỉ dẫn địa lý năm 2024.",
+    "sources": [
+      {
+        "ref": "Báo An Giang (theo VietnamPlus/TTXVN) — Nghề làm nước mắm Phú Quốc: 'Chắt lọc thiên nhiên' tạo nên tinh hoa văn hóa - ẩm thực Việt",
+        "url": "https://baoangiang.com.vn/nghe-lam-nuoc-mam-phu-quoc-chat-loc-thien-nhien-tao-nen-tinh-hoa-van-hoa-am-thuc-viet-a496605.html"
+      },
+      {
+        "ref": "Vietnam.vn (TTXVN/Vietnam+) — Đà Nẵng: Giữ gìn và phát huy di sản văn hóa nghề làm nước mắm Nam Ô",
+        "url": "https://www.vietnam.vn/da-nang-giu-gin-va-phat-huy-di-san-van-hoa-nghe-lam-nuoc-mam-nam-o"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

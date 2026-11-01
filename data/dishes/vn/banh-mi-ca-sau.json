@@ -60,6 +60,15 @@
     "queried_at": "2026-08-31"
   },
   "import_note": "Nhập tự động từ Wikidata Q109436407 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/B%C3%A1nh%20m%C3%AC%20c%C3%A1%20s%E1%BA%A5u%20%28Crocodile%20bread%29.jpg Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] Giữ Mức 1 — KHONG-CO-CT: đã tra và mở đọc Wikipedia (dẫn báo chí), Afamily, Vaobepwiki. Món là sản phẩm thương mại tạo hình khổ lớn (60 cm, 1,5–2 kg/ổ, ~2 kg bột, mè + bơ sầu riêng) của lò bánh Long Xuyên, An Giang; không tồn tại công thức biên tập định lượng cho đúng định danh/khẩu phần. Công thức 'cá sấu mini' lưu hành chỉ có 1 họ sao chép. File hiện chỉ là placeholder 1 dòng banh-mi 90 g.",
+  "cultural_note": {
+    "text": "Bánh mì cá sấu là sáng tạo năm 2020 của một lò bánh mì gia truyền ở Long Xuyên, An Giang: ổ bánh được người thợ đắp bột tạo hình cá sấu, dài tới 60–70 cm và nặng gần 2 kg. Ban đầu chiếc bánh chỉ làm để trưng bày trong ngày khai trương, nhưng khách hỏi mua liên tục nên lò chuyển sang sản xuất hằng ngày, có lúc bán 100–150 chiếc, rồi mở rộng sang các hình cua, gà, cá la hán. Món bánh nhanh chóng gây sốt trên mạng xã hội và trở thành một biến tấu lạ mắt của bánh mì miền Tây.",
+    "sources": [
+      {
+        "ref": "VietnamNet — Bánh mì cá sấu khổng lồ đắt khách",
+        "url": "https://vietnamnet.vn/banh-mi-ca-sau-khong-lo-gay-bao-ngay-ban-tram-chiec-651877.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

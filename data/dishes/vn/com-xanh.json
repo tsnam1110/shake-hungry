@@ -74,6 +74,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu). [LV2-012 đợt vét] GIỮ Mức 1 — mã 429: hai lượt mở nguồn (Heritage Vietnam Airlines, VnExpress) đều bị 429 nên dừng theo quy tắc đợt, chưa kiểm chứng được họ nào bằng mở đọc thật. Quan sát mức tìm kiếm (chưa tính là bằng chứng): các bài biên tập về cốm Hà Nội đều mô tả cốm tươi ăn kèm chuối tiêu chín, không thấy công thức định lượng theo gram cho món ăn sống này; dòng dừa nạo tuỳ chọn trong file cũng chưa đối chiếu được. Cần tra lại ở đợt sau khi hết chặn.",
+  "cultural_note": {
+    "text": "Ở Hà Nội, cốm tươi làm từ lúa nếp non của các làng nghề lâu đời như làng Vòng và Mễ Trì thường được thưởng thức theo cách rất riêng: chấm chuối tiêu chín vào cốm, hoặc ăn cốm trộn dừa nạo. Người Hà Nội còn nâng niu cốm ngay từ cách gói — ngoài là lớp lá sen thơm dịu, trong lót lá ráy để giữ cốm mềm ẩm — và ăn từng chút một, thong thả. Đây là thức quà chỉ có vào mùa thu, gắn với nhịp sống chậm rãi của phố phường Hà Nội mỗi độ thu về.",
+    "sources": [
+      {
+        "ref": "Heritage Vietnam Airlines — Cách thưởng thức cốm Hà Nội",
+        "url": "https://heritagevietnamairlines.com/vi-thu-trong-tung-hat-com/"
+      }
+    ]
+  },
   "status": "draft",
   "source": "llm_suggested",
   "confidence": "unknown",

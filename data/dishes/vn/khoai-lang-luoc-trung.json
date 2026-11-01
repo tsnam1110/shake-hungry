@@ -66,6 +66,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-012 đợt vét] Giữ Mức 1 - 429: lần mở nguồn đầu tiên đã bị lỗi 429 nên dừng theo quy tắc đợt, chưa đối chiếu được nguồn nào. Cần tra lại ở đợt sau.",
+  "cultural_note": {
+    "text": "Món ghép giản dị này xoay quanh khoai lang luộc — thứ lương thực từng nuôi nhiều gia đình quê qua những ngày giáp hạt, khi thóc gạo cấy cày trong năm chỉ đủ ăn khoảng hơn nửa năm. Khoai trồng vào vụ đông, đào dịp áp Tết rồi cất dưới gầm giường, gầm tủ; đến khoảng hai tháng sau Tết, khoai héo luộc lên ngọt như chuối, được mẹ dậy sớm luộc cả nồi to cho cả nhà ăn sáng, có hôm còn mang theo thay bữa trưa khi đi làm đồng. Thói quen ăn sáng bằng khoai lang luộc vì thế theo nhiều người lên thành phố như một ký ức quê nhà khó bỏ.",
+    "sources": [
+      {
+        "ref": "Báo Tin tức (TTXVN) — Nồi khoai luộc ngày đói",
+        "url": "https://baotintuc.vn/tin-tuc/noi-khoai-luoc-ngay-doi-20130425105757763.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -76,6 +76,19 @@
     "queried_at": "2026-08-31"
   },
   "import_note": "Nhập tự động từ Wikidata Q109436498 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/Nem%20chua%20Lai%20Vung.jpg Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] GIỮ Mức 1 — KHONG-CO-CT: nem chua Lai Vung là sản phẩm làng nghề lên men ăn trực tiếp; nguồn tra được (Tuổi Trẻ News đã mở đọc; thêm Wikipedia/tour du lịch ở kết quả tìm kiếm) đều là mô tả sản xuất, không có công thức có định lượng cho khẩu phần 2 chiếc/65g của file. Nguyên liệu định danh nem-chua có số (nhãn OFF, 165 kcal/100g) nên món vẫn tính được calo. Muốn nâng cần quyết định coi đây là 'khẩu phần sản phẩm đặc sản' (ngoài khuôn công thức) ở cấp dự án.",
+  "cultural_note": {
+    "text": "Nem chua Lai Vung gắn với làng nghề ở Lai Vung, tỉnh Đồng Tháp, khởi đầu từ những năm 1960 khi bà Nguyễn Thị Mặn (Tư Mặn) làm nem từ thịt và bì heo để cúng giỗ, lễ Tết và biếu người thân. Chiếc nem Lai Vung khác biệt ở lớp lá vông lót trong giúp lên men nhanh, ngoài gói lá chuối thành hình vuông, hòa quyện bốn vị chua, cay, mặn, ngọt theo tỉ lệ 8 phần thịt, 2 phần bì. Nghề làm nem được truyền dạy trong cộng đồng, lan từ chợ nhỏ ra bến xe rồi khắp cả nước, và năm 2023 nghề làm nem Lai Vung được công nhận là Di sản văn hóa phi vật thể quốc gia.",
+    "sources": [
+      {
+        "ref": "Báo Thanh Niên — Nem Lai Vung, từ món ăn dân dã trở thành di sản",
+        "url": "https://thanhnien.vn/nem-lai-vung-tu-mon-an-dan-da-tro-thanh-di-san-185231119220636868.htm"
+      },
+      {
+        "ref": "Wikipedia tiếng Việt — Nem chua Lai Vung",
+        "url": "https://vi.wikipedia.org/wiki/Nem_chua_Lai_Vung"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

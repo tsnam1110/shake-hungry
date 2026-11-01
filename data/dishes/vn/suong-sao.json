@@ -82,6 +82,19 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu). [LV2-012 đợt vét] GIỮ Mức 1 — BIEN-THE: đã mở đọc 3 họ độc lập (Điện Máy XANH, Bepxua, Dạy Pha Chế Á Âu); cả 3 đồng thuận tỉ lệ nấu thạch ~50–60 g bột sương sáo/1 lít nước nhưng chia 3 kiểu ăn kèm khác nhau và đều cho số theo mẻ, không họ nào khớp đúng cấu trúc file (thạch + nước đường lá dứa + sữa tươi tuỳ chọn) kèm định lượng 1 ly để đối chiếu ≥2 họ — chờ nguồn cho đúng biến thể nước đường, không ép nâng bằng biến thể cốt dừa/hạt chia.",
+  "cultural_note": {
+    "text": "Sương sáo là tên gọi miền Nam, còn miền Bắc gọi là thạch đen — món thạch làm từ thân và lá cây sương sáo phơi khô, xay nát rồi nấu trong nước, lọc bỏ cặn và thêm bột cho đông lại thành khối thạch màu đen tuyền. Thạch thường được xắt miếng, ăn với nước đường và tinh dầu chuối, và dễ bị nhầm với sương sâm — loại thạch xanh làm từ lá dây leo vò tươi. Cùng với sương sa, bộ ba sương sa, sương sâm, sương sáo là những món thạch quen thuộc, mỗi vùng miền lại có tên gọi khác nhau.",
+    "sources": [
+      {
+        "ref": "Gia đình & Xã hội (Sức khỏe & Đời sống) — Sương sâm, sương sa, sương sáo khác nhau thế nào",
+        "url": "https://giadinh.suckhoedoisong.vn/suong-sam-suong-sa-suong-sao-khac-nhau-the-nao-172180605090220061.htm"
+      },
+      {
+        "ref": "Wikipedia tiếng Việt — Sương sáo",
+        "url": "https://vi.wikipedia.org/wiki/S%C6%B0%C6%A1ng_s%C3%A1o"
+      }
+    ]
+  },
   "status": "draft",
   "source": "llm_suggested",
   "confidence": "unknown",

@@ -449,6 +449,24 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > `level_basis`. Chi tiết + bảng 87 món kèm note đầy đủ:
 > [TCM-PROMOTE-001](docs/05-tasks/tasks/TCM-PROMOTE-001.md).
 
+> ## ⚠️ Đính chính lần 28, 2026-11-01 — VN-001 đợt 3: ĐÓNG TUYẾN GHI CHÚ VĂN HOÁ
+>
+> Đợt cuối của tuyến ghi chú: **51/95 món Mức 1** còn lại (24 món cứu từ
+> nhóm chờ đợt 1 — gồm cả 4 món nhóm C; chờ còn 44: A 23 · B 19 · C 2) và
+> **75/82 hồ sơ quả** (chờ 7: A 3 · B 2 · C 1 · B/C 1) đã có `cultural_note`
+> đạt chuẩn; 7 file Mức 2 bị phiên song song giữ (`banh-canh-ca-loc`,
+> `bun-thang`, `canh-bap-cai-cuon-thit`, `com-bo-kho`, `com-ga-tam-ky`,
+> `dau-bap-xao-toi`, `rau-muong-luoc`) vẫn chỉ diff `media` → bỏ qua lần 2.
+> Census mở lại 100% URL nguồn mới (128 URL): **0 chết/0 thay nội dung**;
+> khắc phục 18 file bằng cắt câu ngoài nguồn; rà diễn đạt **0 vi phạm**.
+> **Toàn kho: 388/654 món + 75/82 quả có `cultural_note`.** Thống kê đủ
+> cổng Mức 3 (chưa gán): 187 Mức 2 thường · 274 tính cả nâng bù · 301 phủ
+> ≥60% + có ghi chú ở mọi mức. Validate **0 🔴**; ExportStabilityTest đạt;
+> Pest 160/162 (2 đỏ ở `SwapTrayTest` — tính năng của phiên song song,
+> không liên quan dữ liệu). Hàng đợi định danh thêm 9 mục (nổi bật:
+> `mam-ruoi` cần chủ dự án quyết đổi tên hay viết lại công thức). Chi tiết:
+> [VN-001](docs/05-tasks/tasks/VN-001.md) mục đợt 3 + tổng kết tuyến.
+
 > ## ⚠️ Đính chính lần 28, 2026-11-01 — TCM-003: khối "Tính vị:" đổi sang bản gọn (giá trị chính + popup)
 >
 > Theo chỉ đạo trực tiếp của chủ dự án sau khi xem bản thật (khối cũ đổ toàn bộ

@@ -138,6 +138,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt DISH-004 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] Giữ Mức 1 — THIEU-NGUON: đã tra cứu nhiều vòng (bún cá mè, cá mè nấu dọc mùng, riêu cá mè) — không có họ biên tập định lượng nào cho đúng cá mè; các nguồn định lượng đều là bún cá rô phi/rô đồng/thu/lóc. Chờ nguồn cho đúng loài hoặc quyết định của chủ dự án về việc đối chiếu theo mẫu bún cá dọc mùng generic.",
+  "cultural_note": {
+    "text": "Ghi chú này ở cấp nguyên liệu cá mè, không phải lịch sử riêng của món bún. Cá mè trong hồ sơ là cá mè trắng (Hypophthalmichthys molitrix), loài cá nước ngọt được du nhập vào Việt Nam từ những năm 1950 và từng được nuôi rất phổ biến ở nhiều địa phương miền Bắc. Cá mè thường được thả ghép trong ao cùng trắm cỏ, cá trôi và cá chép, là hình ảnh quen thuộc của ao cá quê miền Bắc; tô bún trong hồ sơ nấu cá mè với cà chua, dọc mùng và thì là theo lối bún cá đó.",
+    "sources": [
+      {
+        "ref": "Báo Dân Việt — Loài cá được ví như công nhân vệ sinh môi trường, chuyên ăn tảo",
+        "url": "https://danviet.vn/loai-ca-duoc-vi-nhu-cong-nhan-ve-sinh-moi-truong-chuyen-an-tao-ai-ngo-lai-la-kho-chua-duong-chat-tot-ngang-ca-hoi-d1470245.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

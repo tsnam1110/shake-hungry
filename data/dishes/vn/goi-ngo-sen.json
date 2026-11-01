@@ -149,6 +149,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. THIẾU NGUYÊN LIỆU: ngó sen (slug ngo-sen — nguyên liệu chính của món; khác củ sen) — cần bổ sung vào kho. [LV2-012 đợt vét] Giữ Mức 1 - TRAN-NL: nguyên liệu định danh ngo-sen chưa có số dinh dưỡng đạt chuẩn (kcal null trong data/ingredients/ngo-sen.json, đã có hồ sơ cảnh báo không dùng số củ sen cho ngó sen) nên món chưa tính được calo; không đối chiếu định lượng ở đợt này. Khi nào ngo-sen có số từ nguồn đạt chuẩn mới xét nâng Mức 2.",
+  "cultural_note": {
+    "text": "Gỏi ngó sen gắn với xứ sen Đồng Tháp Mười: vùng Tháp Mười (Đồng Tháp) có những cánh đồng sen bạt ngàn, đẹp nhất vào mùa nước nổi từ tháng 8 đến tháng 11. Ngó sen hái tại chỗ giòn tươi, trộn chua ngọt cùng tôm, thịt heo và rau răm, là món quen thuộc trong bữa ăn và tại các điểm du lịch đồng sen của tỉnh. Đồng Tháp hiện có khoảng 50 sản phẩm OCOP từ sen, và gỏi ngó sen là một trong những món từ sen tiêu biểu được giới thiệu tới du khách.",
+    "sources": [
+      {
+        "ref": "Cổng thông tin du lịch Đồng Tháp — Về Đồng Tháp, ngắm đồng sen bát ngát, thưởng thức đặc sản OCOP từ sen",
+        "url": "https://dulich.dongthap.gov.vn/vi/detailnews/?t=update&id=news_1214"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -92,6 +92,15 @@
     "queried_at": "2026-08-31"
   },
   "import_note": "Nhập tự động từ Wikidata Q1324118 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/N%C6%B0%E1%BB%9Bc%20m%E1%BA%AFm%20%E1%BB%9Bt%2020201127.jpg Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] GIỮ Mức 1 — 429: việc mở đọc nguồn đối chiếu bị giới hạn tốc độ (429) sau khi mới hoàn tất 1 họ (An Châu, tỉ lệ 1:1:1:4). Cần tra lại ở đợt sau: nếu chốt biến thể 'nước mắm pha chua ngọt phổ thông' sẽ phải xử lý thành phần nước (hiện file không có) và tỉ trọng nước mắm/đường/chanh theo tỉ lệ đã kiểm chứng.",
+  "cultural_note": {
+    "text": "Nước chấm là tên gọi chung cho các loại xốt chấm dùng hằng ngày trong bữa ăn Việt, trong đó phổ biến nhất là nước mắm pha từ nước mắm với đường, nước cốt chanh, tỏi và ớt, cân bằng bốn vị mặn, ngọt, chua, cay. Cách pha thay đổi theo vùng miền: miền Bắc có khi thêm nước dùng thịt, miền Trung pha ít loãng và dùng ớt tươi, miền Nam chuộng vị ngọt tự nhiên từ đường thốt nốt hay nước dừa. Chén nước chấm đi kèm rất nhiều món quen thuộc như cơm tấm, chả giò, bánh cuốn, bánh xèo và các món bún.",
+    "sources": [
+      {
+        "ref": "Wikipedia tiếng Việt — Nước chấm",
+        "url": "https://vi.wikipedia.org/wiki/N%C6%B0%E1%BB%9Bc_ch%E1%BA%A5m"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

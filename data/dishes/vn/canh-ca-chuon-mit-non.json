@@ -90,6 +90,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Nguyên liệu cá chuồn mới biên soạn đợt này từ nhãn sản phẩm (usda_branded). [LV2-008 đợt 8: HOLD vì thiếu nguồn định lượng. Ba bài báo xứ Quảng (Báo Đắk Lắk, Báo Đà Nẵng, lucbat.com) thống nhất định tính: cá chuồn nhỏ + mít non luộc trước, nêm mắm cái, ớt xanh, lá lốt, tiêu xanh — nhưng không bài nào cho gram/số người ăn, và không có trang công thức đạt chuẩn (Điện Máy XANH/Cookpad/báo ẩm thực) nào đăng công thức canh này. Giữ Mức 1 + hồ sơ này thay vì hạ chuẩn hay bịa định lượng; tương tự tiền lệ canh-nghe-ca-ro ở LV2-001.]",
+  "cultural_note": {
+    "text": "Canh cá chuồn nấu mít non là món ăn dân dã gắn với mùa hè xứ Quảng, được nhắc trong câu ca dao “Mít non gởi xuống, cá chuồn gởi lên” — gợi cuộc trao đổi sản vật giữa miền núi và miền biển Quảng Nam. Vào đầu hè, khi vườn quê vào mùa mít non thì ngoài biển cũng rộ mùa cá chuồn; người Quảng thường chọn cá chuồn nhỏ nấu canh cùng mít non đã luộc trước, nêm bằng mắm cái và ớt xanh. Món canh chỉ có theo mùa nên trở thành nỗi nhớ bữa cơm quê của nhiều người Quảng xa nhà.",
+    "sources": [
+      {
+        "ref": "Báo Đắk Lắk — Nhớ canh cá chuồn nấu với mít non",
+        "url": "https://baodaklak.vn/channel/3541/201304/nho-canh-ca-chuon-nau-voi-mit-non-2231747/"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

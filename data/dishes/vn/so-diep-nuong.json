@@ -94,6 +94,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-012 đợt vét] GIỮ Mức 1 (BIEN-THE): đã mở 3 họ (SKĐS/Gia đình, Đảo Hải Sản, Nấu Chuẩn Ăn Ngon) nhưng nguồn tính theo kg nguyên vỏ không cỡ con, hành lá/phộng lệch >3-7 lần giữa các họ, không đối chiếu được về đĩa 6 con; cần quyết định chuẩn hoá cỡ sò và cân cồi hay cân nguyên vỏ trước khi nâng.",
+  "cultural_note": {
+    "text": "Sò điệp nướng mỡ hành là món hải sản quen thuộc ở các quán bờ kè Phan Thiết, Bình Thuận: dọc bờ kè gần cầu Trần Hưng Đạo hướng ra biển Đồi Dương và dọc bãi biển Mũi Né trên đường Thủ Khoa Huân, các quán hải sản bình dân bày tôm, ghẹ, mực và các loại ốc còn tươi sống, khách chọn con nào chủ quán cân ký và chế biến ngay con đó. Trong dãy món ngon Phan Thiết, Traveloka ghi lại hình ảnh sò điệp nướng mỡ hành 'thơm nức mũi' như một món nướng tiêu biểu của khu bờ kè này. Bản trong kho giữ đúng cách làm gọn của quán biển: sò điệp nướng với mỡ hành, dầu và lạc rang.",
+    "sources": [
+      {
+        "ref": "Traveloka — 10 món ngon Phan Thiết chuẩn vị không thể chối từ",
+        "url": "https://traveloka.com/vi-vn/explore/activities/can-tui-voi-10-mon-ngon-phan-thiet-chuan-vi-khong-the-choi-tu/58770"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -66,6 +66,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-012 đợt vét] GIỮ Mức 1 (429): lỗi 429 khi mở nguồn rau lang luộc, dừng tra cứu theo quy tắc đợt; chưa có họ nào được mở đọc thật, cần tra lại ở đợt sau (ứng viên: Inauanngon 200g, Nông Sản Dũng Hà 300-500g, Cookpad Rose Truong — mới qua trích đoạn tìm kiếm, chưa tính).",
+  "cultural_note": {
+    "text": "Ngọn rau lang là món quà đồng quê của những làng quê miền Trung trồng nhiều khoai lang: những chiều chăn trâu ngoài bãi, trẻ con tranh thủ hái ngọn mang về để mẹ mang ra chợ bán hoặc chế biến ngay trong bữa nhà. Cách ăn được nhớ nhất là ngọn lang luộc chấm nước mắm ớt tỏi, vị ngọt bùi quyện nơi đầu lưỡi thành hương vị đồng quê khó lòng quên được. Đĩa rau lang luộc vì thế gắn với bữa cơm thường ngày của những gia đình quê, nơi cây khoai lang nhà nào cũng trồng được quanh nhà.",
+    "sources": [
+      {
+        "ref": "Báo Đà Nẵng — Ngọn rau lang quê nhà",
+        "url": "https://baodanang.vn/ngon-rau-lang-que-nha-3000028.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

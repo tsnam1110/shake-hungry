@@ -130,6 +130,19 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt DISH-004 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] Giữ Mức 1 — thiếu nguồn cho biến thể: đã tra nhiều vòng ('bún tôm càng', 'bún tôm càng xanh'), kết quả chỉ trả về bún tôm Hải Phòng (tôm nhỏ), bún tôm Huế và 1 ghi chép món nhà dùng tôm càng xanh không định lượng (Ngôi Sao). Chưa đủ 3 họ độc lập cho đúng hồ sơ của file (tôm càng nguyên con + thịt ba chỉ luộc + giá, nước dùng trong). Cần nguồn công thức biên tập riêng cho bún tôm càng, hoặc chủ dự án quyết định đây là biến thể biên tập DISH-004 và chấp nhận định danh lại theo bún tôm (tôm nhỏ).",
+  "cultural_note": {
+    "text": "Ghi chú này ở cấp nguyên liệu tôm càng xanh, nguyên liệu đạm chính của tô bún trong hồ sơ. Tôm càng xanh là sản vật quen thuộc của mô hình lúa – tôm ở miền Tây: tại xã U Minh, tỉnh Cà Mau, tôm được nuôi xen canh với lúa, thả giống và thu hoạch sau khoảng sáu tháng, và toàn tỉnh Cà Mau hiện có khoảng 30.000 ha nuôi tôm càng xanh. Vào mùa thu hoạch rộ, tôm càng chủ yếu được tiêu thụ tươi sống tại thị trường trong nước, nên những món nước dùng tôm càng nguyên con như tô bún này gắn với nhịp mùa vụ của vùng sông nước.",
+    "sources": [
+      {
+        "ref": "Báo Thanh Niên — Xuất khẩu tôm càng xanh mở ra hướng đi mới cho mô hình lúa - tôm",
+        "url": "https://thanhnien.vn/xuat-khau-tom-cang-xanh-mo-ra-huong-di-moi-cho-mo-hinh-lua-tom-185260723160433966.htm"
+      },
+      {
+        "ref": "Báo Tuổi Trẻ — Khô tôm càng, sản phẩm độc đáo, sáng tạo",
+        "url": "https://tuoitre.vn/kho-tom-cang-san-pham-doc-dao-sang-tao-20260101073608705.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

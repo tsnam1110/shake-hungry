@@ -78,6 +78,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt) [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 10 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).] [LV2-012 đợt vét] GIỮ Mức 1 — BIEN-THE: 3 họ độc lập đã mở (Cookpad Quỳnh Hương; DogiFood; Bếp Trí Năng/Tripi = 1 họ) đều là nem chua rán Hà Nội tự làm từ thịt sống + bì + thính, không lên men, bắt buộc lăn trứng + bột chiên xù. File dùng nem-chua lên men sẵn 140g, không có dòng bột chiên xù/trứng gà (cả hai slug đều có trong kho). Chờ chủ dự án chốt định danh: giữ mô hình nem sẵn hay biên soạn lại theo cấu trúc thịt/bì/thính + áo bột của nguồn.",
+  "cultural_note": {
+    "text": "Nem chua rán là đặc sản ẩm thực đường phố của Hà Nội, món quà vặt ra đời muộn nhưng lan nhanh và được giới trẻ đặc biệt ưa chuộng, với những hàng nổi tiếng ở ngõ Tạm Thương trên phố Hàng Bông, phố Tạ Hiện hay phố Trần Xuân Soạn. Dù mang tên “nem chua”, món này thực chất không chua: nem được trộn gia vị gần giống nem chua nhưng không ủ lên men — chính xác hơn phải gọi là nem ngọt rán — rồi lăn bột và rán vàng khi sắp ăn. Nem rán ăn nóng, chấm tương ớt và ăn kèm dưa leo, củ đậu hay xoài xanh.",
+    "sources": [
+      {
+        "ref": "Wikipedia tiếng Việt — Nem chua rán",
+        "url": "https://vi.wikipedia.org/wiki/Nem_chua_r%C3%A1n"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

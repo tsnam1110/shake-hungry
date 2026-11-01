@@ -121,6 +121,19 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nghiên cứu Mức 2 đợt 3 (LV2-003, 2026-10-31): GIỮ Mức 1 — đã mở 3 nguồn nhưng không nguồn nào đúng biến thể của file (tiền lệ com-tho đợt 1): hai nguồn kho đúng nghĩa đều dùng nấm rơm TƯƠI, nguồn dùng nấm hương/đông cô lại là món sốt rưới (đậu luộc/chần, không chiên, không kho chung). Cần quyết định biên tập: giữ nấm hương khô như file (tên Anh ghi shiitake) hay chuyển biến thể nấm rơm — không tự quyết trong đợt nâng. Ghi nhận thêm: hành lá/boa rô/hành tím phi thơm có ở 3/3 nguồn, file không có dòng thơm nào ngoài gừng; định lượng đậu 120 g và nước tương 12 g của file nằm trong dải nguồn. [LV2-004 đợt 4: không xử lý theo chỉ đạo — món là biến thể của đậu phụ kho, chờ chủ dự án quyết.] [LV2-010 Phần C — gói quyết định chủ dự án 2026-10-31: A3 ÁP quyết định chuẩn hoá: nam-huong-kho 10 g → NAM-ROM TƯƠI 60 g (nguồn kho của món dùng nấm rơm tươi — 2 họ kho ở LV2-003 và cụm nguồn đối chiếu lại ở Phần C: Bếp Xưa 200 g/4 người, ivivu ~50 g/người, phunumoi ~75–100 g/người → lấy 60 g); tên Anh sửa 'shiitake' → 'straw mushrooms'. GIỮ MỨC 1: hồ sơ thơm của biến thể nấm rơm (hành tím/hành lá, không gừng) lệch khỏi file ở nhiều dòng ngoài phạm vi quyết định này — cần một đợt rà đầy đủ riêng, không ép nâng.] [LV2-011 đợt 11: GIU-THIEU-NGUON — vòng riêng biến thể nấm rơm tươi: đã mở HNAA (300 g nấm, 3 miếng đậu ~160 g, hành tím/hành lá, nước tương — không ghi khẩu phần), Phụ Nữ Mới (bộ số/văn bản trùng HNAA nên tính chung 1 họ), Bếp Xưa (4 người: nấm 200 g→50 g/người, hành tím 10 g, sốt nước mắm chay + sả — họ quy đổi được duy nhất), VietNamNet (500 g nấm, 4 miếng đậu, không khẩu phần, ảnh ghi nguồn dienmayxanh), YeuTre (200 g nấm, 2–3 bìa đậu, không khẩu phần), Cookpad Apple's Kitchen (100 g nấm, 2 miếng đậu, không gram đậu/khẩu phần). Chỉ 1 họ quy đổi được về khẩu phần nên chưa đủ ≥3 họ. Bất thường ghi nhận, chưa sửa vì món chưa đạt cổng: gừng 3 g ở file được 0 họ nấm rơm ủng hộ; hành tím + hành lá có ở mọi họ đã mở nhưng file chưa có dòng nào.]",
+  "cultural_note": {
+    "text": "Ghi chú này ở cấp tập quán mâm chay. Rằm tháng Giêng được dân gian coi là 'rằm lớn nhất trong năm' — 'Lễ Phật quanh năm không bằng ngày rằm tháng Giêng' — và nhiều gia đình chuẩn bị mâm cỗ chay dâng Phật, dâng tổ tiên bên cạnh mâm mặn. Trong gợi ý mâm cỗ chay rằm tháng Giêng của Sức khỏe & Đời sống, đậu hũ và nấm là cặp nguyên liệu xuyên suốt, từ đậu hũ non sốt nấm đông cô đến nhân đậu hũ – nấm rơm của món củ sen nhồi. Đậu phụ kho nấm rơm trong kho thuộc đúng nhóm món kho chay thanh đạm ấy, hợp bữa cơm ngày rằm và những ngày ăn chay trong tháng.",
+    "sources": [
+      {
+        "ref": "Báo Thanh Niên — Rằm tháng Giêng: Chuẩn bị mâm cúng 'rằm lớn nhất trong năm' cầu phước lành",
+        "url": "https://thanhnien.vn/ram-thang-gieng-chuan-bi-mam-cung-ram-lon-nhat-trong-nam-cau-phuoc-lanh-185827246.htm"
+      },
+      {
+        "ref": "Sức khỏe & Đời sống (Gia đình) — Gợi ý mâm cỗ chay cúng Rằm tháng Giêng đầy đủ ai cũng có thể làm theo",
+        "url": "https://giadinh.suckhoedoisong.vn/goi-y-mam-co-chay-cung-ram-thang-gieng-day-du-ai-cung-co-the-lam-theo-172190217220812687.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
