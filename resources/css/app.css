@@ -214,8 +214,13 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 @media (min-width: 1024px) { .ld-grid-ing { grid-template-columns: repeat(4, 1fr); } }
 
 /* Ảnh thu nhỏ trong danh sách (UI-020: nguyên liệu ở trang món dạng list) */
-.ld-thumb { width: 52px; height: 52px; border-radius: 14px; object-fit: cover; flex: none;
+.ld-thumb { width: 48px; height: 48px; border-radius: 10px; object-fit: cover; flex: none;
     background: var(--color-fill); }
+
+/* Dòng danh sách gọn (UI-020): padding và cỡ chữ nhỏ hơn ld-row thường */
+.ld-row-compact { padding: 9px 12px; gap: 10px; font-size: 14.5px; }
+.ld-row-compact:not(:last-child)::after { left: 12px; }
+.ld-row-compact .sub { font-size: 13px; }
 .ld-dcard { display: flex; flex-direction: column; height: 100%; background: var(--color-surface);
     border-radius: 20px; overflow: hidden; text-decoration: none; color: var(--color-ink); position: relative;
     box-shadow: 0 1px 2px rgba(0,0,0,.03), 0 10px 30px rgba(0,0,0,.045); }

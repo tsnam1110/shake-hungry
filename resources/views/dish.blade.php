@@ -23,7 +23,7 @@ const chev = '<svg class="ld-chev" width="8" height="14" viewBox="0 0 8 14" fill
 
 fetch('/api/dishes/' + encodeURIComponent(slug), { headers: { 'Accept': 'application/json' } })
     .then(r => r.json())
-    .then(({ dish: d, variants, provenance }) => {
+    .then(({ dish: d, variants, provenance, tcm }) => {
         const n = d.nutrition;
         const name = d.names?.find(x => x.is_primary && x.locale === 'vi')?.name ?? d.names?.find(x => x.is_primary)?.name ?? d.slug;
         const aliases = (d.names ?? []).filter(x => !x.is_primary).map(x => x.name);
@@ -39,6 +39,7 @@ fetch('/api/dishes/' + encodeURIComponent(slug), { headers: { 'Accept': 'applica
             ${(d.meal_slots ?? []).map(s => `<span class="ld-badge vu">${slotName[s.slot] ?? esc(s.slot)}</span>`).join('')}
             ${otherTags.map(t => `<span class="ld-badge">${esc(t.name)}</span>`).join('')}
         </div>
+        ${d.level_basis === 'tcm_compensation' ? `<div class="ld-warn" style="margin-top:12px"><span><b>${esc(d.level_label ?? 'Mức 2 (có note)')}:</b> ${esc(d.level_note ?? '')}</span></div>` : ''}
         ${d.image ? `<figure style="margin:18px 0 0">
             <img src="${esc(d.image.url)}" alt="${esc(name)}" style="width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:18px;display:block" fetchpriority="high" decoding="async">
             <figcaption style="color:var(--color-faint);font-size:12.5px;margin-top:6px">${d.image.is_ai ? 'Ảnh minh họa' : 'Ảnh: ' + esc(d.image.attribution ?? '')}</figcaption>
@@ -74,6 +75,27 @@ fetch('/api/dishes/' + encodeURIComponent(slug), { headers: { 'Accept': 'applica
             : `<p class="ld-note" style="margin:0">Dữ liệu hiện tại chưa ghi nhận chất gây dị ứng phổ biến trong món này. Điều này không phải cam kết an toàn tuyệt đối — nếu bạn bị dị ứng, hãy kiểm tra kỹ thành phần. <a href="/mien-tru-y-te">Đọc Miễn trừ y tế</a>.</p>`}
         </div>
 
+        ${tcm ? `
+        <h2 class="ld-section-title">Tính vị:</h2>
+        <div class="ld-card">
+            <p style="margin:0;font-size:15.5px">Theo quan niệm ẩm thực truyền thống, món này được xem là <b>tính ${esc(tcm.nature_label)}</b>${tcm.dominant_element_label ? ` · hành chủ đạo: <b>${esc(tcm.dominant_element_label)}</b>` : ''}</p>
+            <div style="margin-top:12px">
+                <div class="ld-row"><span class="grow" style="color:var(--color-sub)">Độ phủ nguyên liệu có nhãn tính vị</span><span class="value ld-tnum" style="color:var(--color-ink)">${Math.round(tcm.coverage_pct)}% khối lượng</span></div>
+                <div class="ld-row"><span class="grow" style="color:var(--color-sub)">Độ tin cậy</span><span class="value" style="color:var(--color-ink)">${confLabel[tcm.confidence] ?? esc(tcm.confidence)}</span></div>
+                ${(tcm.sources ?? []).length ? `<div class="ld-row"><span class="grow" style="color:var(--color-sub)">Nguồn nhãn</span><span class="value" style="color:var(--color-ink);white-space:normal;text-align:right">${tcm.sources.map(esc).join(' · ')}</span></div>` : ''}
+            </div>
+            ${tcm.is_partial ? '<p class="ld-note" style="margin-top:10px">Mới phủ được một phần khối lượng nguyên liệu — kết luận trên chỉ ở mức tham khảo.</p>' : ''}
+            ${tcm.has_conflicts ? '<p class="ld-note" style="margin-top:10px">Các nguồn chưa thống nhất về tính của một số nguyên liệu trong món — mức tin cậy đã hạ theo đúng mâu thuẫn đó; xem chi tiết ở trang của từng nguyên liệu.</p>' : ''}
+            <p class="ld-note" style="margin-top:10px">Tính vị được tổng hợp từ nhãn của từng nguyên liệu theo trọng số khối lượng; hệ số điều chỉnh theo cách chế biến là quy ước của dự án — y văn không định lượng con số này. Đây là thông tin văn hoá ẩm thực truyền thống, không phải tư vấn sức khoẻ. <a href="/mien-tru-y-te">Đọc Miễn trừ y tế</a>.</p>
+        </div>` : ''}
+
+        ${d.cultural_note ? `
+        <h2 class="ld-section-title">Ghi chú văn hoá</h2>
+        <div class="ld-card">
+            <p style="margin:0;font-size:15.5px">${esc(d.cultural_note.text ?? '')}</p>
+            ${(d.cultural_note.sources ?? []).length ? `<p class="ld-note" style="margin-top:10px">Nguồn: ${d.cultural_note.sources.map(s => s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener" style="color:var(--color-link)">${esc(s.ref)}</a>` : esc(s.ref)).join(' · ')}</p>` : ''}
+        </div>` : ''}
+
         ${provenance ? `
         <h2 class="ld-section-title">Nguồn gốc con số</h2>
         <div class="ld-group">
@@ -88,7 +110,7 @@ fetch('/api/dishes/' + encodeURIComponent(slug), { headers: { 'Accept': 'applica
 
         <h2 class="ld-section-title">Nguyên liệu · một khẩu phần</h2>
         <div class="ld-group">
-            ${(d.dish_ingredients ?? []).map(di => `<a class="ld-row" href="/nguyen-lieu/${di.ingredient?.slug ?? ''}" style="gap:12px">
+            ${(d.dish_ingredients ?? []).map(di => `<a class="ld-row ld-row-compact" href="/nguyen-lieu/${di.ingredient?.slug ?? ''}">
                 <img class="ld-thumb" src="${di.ingredient?.image?.url ?? '/images/placeholder-ingredient.svg'}" alt="" loading="lazy" decoding="async">
                 <span class="grow">
                     <span style="font-weight:600">${esc(di.ingredient?.name_vi ?? '')}</span>
