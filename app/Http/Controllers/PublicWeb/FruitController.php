@@ -43,8 +43,47 @@ class FruitController extends Controller
         if ($valueMonth = (int) $request->query('value_month', 0)) {
             $query->whereJsonContains('best_value_months', $valueMonth);
         }
+        // Bộ lọc nâng cao của tab Hoa quả trong Thư viện (UI-024): dưỡng chất
+        // trên 100g từ nutrition_snapshot của nguyên liệu liên kết. Lọc dạng
+        // "thấp" loại cả giá trị chưa biết (null) — chưa biết không phải thấp.
+        $nutrientRules = [
+            'kcal-low' => ['kcal_per_100g', '<=', 60, true],
+            'fiber-high' => ['fiber_g', '>=', 3, false],
+            'carb-low' => ['carb_g', '<=', 10, true],
+            'water-high' => ['water_g', '>=', 85, false],
+        ];
+        $nutrients = collect(explode(',', (string) $request->query('nutrient', '')))
+            ->map(fn ($v) => trim($v))->filter()->all();
+        foreach ($nutrients as $code) {
+            if (! isset($nutrientRules[$code])) {
+                continue;
+            }
+            [$field, $op, $val, $excludeNull] = $nutrientRules[$code];
+            $query->whereHas('ingredient', function ($w) use ($field, $op, $val, $excludeNull) {
+                $extract = "JSON_EXTRACT(nutrition_snapshot, '$.{$field}')";
+                if ($excludeNull) {
+                    $w->whereRaw("JSON_TYPE({$extract}) NOT IN ('NULL')");
+                }
+                $w->whereRaw("CAST({$extract} AS DECIMAL(10,2)) {$op} ?", [$val]);
+            });
+        }
+        // Sắp xếp cho Thư viện (UI-024); không truyền thì giữ thứ tự slug cũ.
+        match ($request->query('sort')) {
+            'name' => $query->join('ingredients', 'ingredients.id', '=', 'fruits.ingredient_id')
+                ->reorder()->orderBy('ingredients.name_vi')->select('fruits.*'),
+            'kcal_asc', 'kcal_desc' => $query->join('ingredients', 'ingredients.id', '=', 'fruits.ingredient_id')
+                ->reorder()->orderByRaw("JSON_EXTRACT(ingredients.nutrition_snapshot, '$.kcal_per_100g') IS NULL")
+                ->orderByRaw("CAST(JSON_EXTRACT(ingredients.nutrition_snapshot, '$.kcal_per_100g') AS DECIMAL(10,2)) " . ($request->query('sort') === 'kcal_asc' ? 'ASC' : 'DESC'))
+                ->select('fruits.*'),
+            'fiber_desc' => $query->join('ingredients', 'ingredients.id', '=', 'fruits.ingredient_id')
+                ->reorder()->orderByRaw("JSON_EXTRACT(ingredients.nutrition_snapshot, '$.fiber_g') IS NULL")
+                ->orderByRaw("CAST(JSON_EXTRACT(ingredients.nutrition_snapshot, '$.fiber_g') AS DECIMAL(10,2)) DESC")
+                ->select('fruits.*'),
+            default => null,
+        };
 
-        $fruits = $query->paginate(60);
+        $perPage = min(100, max(1, (int) $request->query('per_page', 60)));
+        $fruits = $query->paginate($perPage);
 
         $fruits->getCollection()->transform(fn (Fruit $fruit) => $this->summary($fruit));
 
