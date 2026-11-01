@@ -18,7 +18,9 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "tron",
-  "completeness_level": 1,
+  "completeness_level": 2,
+  "level_basis": "tcm_compensation",
+  "level_note": "Chưa đạt cổng Mức 2 thường vì mắm nêm — nguyên liệu định danh của món — chưa có số dinh dưỡng đạt chuẩn trong kho (hồ sơ null), đồng thời không họ nguồn nào cho định lượng quy đổi được về 1 phần (LV2-011). Được nâng theo đường nâng bù Mức 3 (quyết định chủ dự án 2026-11-01): độ phủ tính vị 64.6% ≥ 60% và đã có ghi chú văn hoá.",
   "meal_slots": [
     {
       "slot": "sang",

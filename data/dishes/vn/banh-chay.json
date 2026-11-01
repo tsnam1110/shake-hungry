@@ -18,7 +18,9 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
+  "level_basis": "tcm_compensation",
+  "level_note": "Chưa đạt cổng Mức 2 thường vì mới có 2 họ có định lượng và hai họ lệch nhau hơn 2 lần ở đậu xanh và đường theo khẩu phần, không đủ đồng thuận để chốt định lượng (LV2-012). Được nâng theo đường nâng bù Mức 3 (quyết định chủ dự án 2026-11-01): độ phủ tính vị 95.4% ≥ 60% và đã có ghi chú văn hoá.",
   "meal_slots": [
     {
       "slot": "an-vat",

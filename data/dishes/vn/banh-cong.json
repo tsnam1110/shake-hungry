@@ -18,7 +18,9 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "chien-ngap-dau",
-  "completeness_level": 1,
+  "completeness_level": 2,
+  "level_basis": "tcm_compensation",
+  "level_note": "Chưa đạt cổng Mức 2 thường vì cả 3 họ đã mở đều có nhân thịt heo là thành phần định danh mà file thiếu — cần quyết định tái cấu trúc biến thể trước khi nâng (LV2-011). Được nâng theo đường nâng bù Mức 3 (quyết định chủ dự án 2026-11-01): độ phủ tính vị 94.6% ≥ 60% và đã có ghi chú văn hoá.",
   "meal_slots": [
     {
       "slot": "chieu",

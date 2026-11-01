@@ -18,7 +18,9 @@
   "is_eat_out": true,
   "is_home_cook": false,
   "cooking_method": "song",
-  "completeness_level": 1,
+  "completeness_level": 2,
+  "level_basis": "tcm_compensation",
+  "level_note": "Chưa đạt cổng Mức 2 thường vì file chưa chọn biến thể nhân (đậu xanh/mứt bí hay đậu phộng/mỡ đường) — mới có 2 họ độc lập, mỗi họ một biến thể, chờ chốt biến thể (LV2-012). Được nâng theo đường nâng bù Mức 3 (quyết định chủ dự án 2026-11-01): độ phủ tính vị 100.0% ≥ 60% và đã có ghi chú văn hoá.",
   "meal_slots": [
     {
       "slot": "an-vat",

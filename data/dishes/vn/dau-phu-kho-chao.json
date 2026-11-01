@@ -18,7 +18,9 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "kho",
-  "completeness_level": 1,
+  "completeness_level": 2,
+  "level_basis": "tcm_compensation",
+  "level_note": "Chưa đạt cổng Mức 2 thường vì một nguồn công thức đúng món đã chết link 404 và không tìm được nguồn thay thế đúng món đạt chuẩn — hai nguồn còn lại có một nguồn chỉ là họ kỹ thuật kho chao, chưa đủ 3 nguồn đúng món (AUDIT-FIX, PX-14). Được nâng theo đường nâng bù Mức 3 (quyết định chủ dự án 2026-11-01): độ phủ tính vị 78.2% ≥ 60% và đã có ghi chú văn hoá.",
   "meal_slots": [
     {
       "slot": "trua",

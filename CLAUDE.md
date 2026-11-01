@@ -429,6 +429,26 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > Kiểm chứng: validate **0 🔴**, Pest **157/157** (gồm ExportStabilityTest). Chi
 > tiết: [VN-001](docs/05-tasks/tasks/VN-001.md).
 
+> ## ⚠️ Đính chính lần 27, 2026-11-01 — TCM-PROMOTE-001: đã áp đường nâng bù "Mức 2 (có note)" cho 87 món
+>
+> **87 món** đủ cả 2 tiêu chí nâng bù của VN-001 đợt 1 (Mức 1 + phủ tính vị ≥60% +
+> có `cultural_note`) đã được nâng lên **"Mức 2 (có note)"**:
+> `completeness_level` 1 → 2 kèm `level_basis='tcm_compensation'` và `level_note`
+> riêng cho từng món — soạn từ hồ sơ giữ Mức 1 trong `import_note` của chính món
+> (các mục LV2/AUDIT-FIX), nêu đúng cổng chưa đạt: phân bố lý do — 23 thiếu
+> nguồn/không đồng thuận/không quy đổi được · 21 biến thể/chờ quyết định danh ·
+> 20 trần nguyên liệu định danh null · 14 bị chặn 429 chưa kết luận · 8 không có
+> công thức đúng định danh/chưa biên soạn · 1 nguồn đúng món chết link
+> (`dau-phu-kho-chao`, AUDIT-FIX PX-14). Danh sách đối chiếu khớp tuyệt đối 3
+> chiều (file `data/` · VN-001 135−48 · DB kiểm chứng riêng sau seed +
+> recompute-tcm) — không món nào ngoài nhóm 87 đổi mức. **Toàn kho sau nâng:
+> 472 Mức 2 thường + 87 Mức 2 (có note) + 95 Mức 1 = 654.** Kiểm chứng: validate
+> **0 🔴** (cổng V20 đạt cả 87; 22 🟡 đều là lớp đã biết, không 🟡 mới), Pest
+> **157/157** gồm ExportStabilityTest (vòng seed→export vẫn điểm cố định), API
+> trả `level_label` "Mức 2 (có note)" đúng nhóm, admin gắn thẻ vàng theo
+> `level_basis`. Chi tiết + bảng 87 món kèm note đầy đủ:
+> [TCM-PROMOTE-001](docs/05-tasks/tasks/TCM-PROMOTE-001.md).
+
 **Trạng thái thực tế, kiểm ngày 2026-10-31 (đã chạy lại toàn bộ lệnh kiểm chứng):**
 
 | Hạng mục | Thực tế | Kiểm bằng |

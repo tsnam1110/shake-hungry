@@ -18,7 +18,9 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
+  "level_basis": "tcm_compensation",
+  "level_note": "Chưa đạt cổng Mức 2 thường vì lượt thử lại bị chặn 429 khi mở họ nguồn mới; các họ đã mở trước đó đều không có định lượng quy đổi tin cậy được về khẩu phần (LV2-011, LV2-012). Được nâng theo đường nâng bù Mức 3 (quyết định chủ dự án 2026-11-01): độ phủ tính vị 71.9% ≥ 60% và đã có ghi chú văn hoá.",
   "meal_slots": [
     {
       "slot": "sang",

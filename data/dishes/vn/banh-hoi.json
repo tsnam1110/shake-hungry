@@ -18,7 +18,9 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "hap",
-  "completeness_level": 1,
+  "completeness_level": 2,
+  "level_basis": "tcm_compensation",
+  "level_note": "Chưa đạt cổng Mức 2 thường vì không họ nguồn nào khớp biến thể của file (chả lụa là thành phần bắt buộc) và câu hỏi định danh chả lụa là thành phần hay món ăn kèm còn chờ phân xử (LV2-011). Được nâng theo đường nâng bù Mức 3 (quyết định chủ dự án 2026-11-01): độ phủ tính vị 72.2% ≥ 60% và đã có ghi chú văn hoá.",
   "meal_slots": [
     {
       "slot": "sang",

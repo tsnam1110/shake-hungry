@@ -18,7 +18,9 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "hap",
-  "completeness_level": 1,
+  "completeness_level": 2,
+  "level_basis": "tcm_compensation",
+  "level_note": "Chưa đạt cổng Mức 2 thường vì định danh của file còn lẫn biến thể (bước làm nhắc lá gai nhưng nguyên liệu là nhân đậu xanh–dừa vỏ thường), cần chốt định danh trước khi nâng (LV2-012). Được nâng theo đường nâng bù Mức 3 (quyết định chủ dự án 2026-11-01): độ phủ tính vị 98.5% ≥ 60% và đã có ghi chú văn hoá.",
   "meal_slots": [
     {
       "slot": "chieu",

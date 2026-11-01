@@ -18,7 +18,9 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "xao",
-  "completeness_level": 1,
+  "completeness_level": 2,
+  "level_basis": "tcm_compensation",
+  "level_note": "Chưa đạt cổng Mức 2 thường vì không nguồn biên tập nào khớp biến thể xào chung của file — mọi nguồn đã mở đều là cơm hến trộn hoặc xào topping để riêng; định danh chờ xác nhận (LV2-009, LV2-010). Được nâng theo đường nâng bù Mức 3 (quyết định chủ dự án 2026-11-01): độ phủ tính vị 91.2% ≥ 60% và đã có ghi chú văn hoá.",
   "meal_slots": [
     {
       "slot": "sang",

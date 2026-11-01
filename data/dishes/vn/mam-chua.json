@@ -18,7 +18,9 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "song",
-  "completeness_level": 1,
+  "completeness_level": 2,
+  "level_basis": "tcm_compensation",
+  "level_note": "Chưa đạt cổng Mức 2 thường vì cả 3 trang đã tra về mắm chua Vĩnh Hưng đều thuộc một họ sao chép và chỉ kể quy trình ủ, không một con số gram (LV2-012). Được nâng theo đường nâng bù Mức 3 (quyết định chủ dự án 2026-11-01): độ phủ tính vị 100.0% ≥ 60% và đã có ghi chú văn hoá.",
   "meal_slots": [
     {
       "slot": "trua",

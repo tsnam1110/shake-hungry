@@ -18,7 +18,9 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "song",
-  "completeness_level": 1,
+  "completeness_level": 2,
+  "level_basis": "tcm_compensation",
+  "level_note": "Chưa đạt cổng Mức 2 thường vì lá sương sâm — nguyên liệu định danh — chưa có số dinh dưỡng ở nguồn đạt chuẩn nào và file còn thiếu hẳn dòng lá này (LV2-012). Được nâng theo đường nâng bù Mức 3 (quyết định chủ dự án 2026-11-01): độ phủ tính vị 94.7% ≥ 60% và đã có ghi chú văn hoá.",
   "meal_slots": [
     {
       "slot": "chieu",

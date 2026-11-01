@@ -18,7 +18,9 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nuong",
-  "completeness_level": 1,
+  "completeness_level": 2,
+  "level_basis": "tcm_compensation",
+  "level_note": "Chưa đạt cổng Mức 2 thường vì mắc khén — nguyên liệu định danh — chưa có số dinh dưỡng đạt chuẩn ở nguồn công khai nào, dù công thức đã có nguồn tốt (LV2-012). Được nâng theo đường nâng bù Mức 3 (quyết định chủ dự án 2026-11-01): độ phủ tính vị 91.4% ≥ 60% và đã có ghi chú văn hoá.",
   "meal_slots": [
     {
       "slot": "trua",

@@ -18,7 +18,9 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
+  "level_basis": "tcm_compensation",
+  "level_note": "Chưa đạt cổng Mức 2 thường vì định danh còn chờ quyết của chủ dự án — (a) đổi tên thành Cháo đậu xanh thịt bằm hay (b) bỏ thịt về bản thuần; hai họ đã mở thuộc hai biến thể loại trừ nhau (LV2-009, LV2-010 Phần C). Được nâng theo đường nâng bù Mức 3 (quyết định chủ dự án 2026-11-01): độ phủ tính vị 94.1% ≥ 60% và đã có ghi chú văn hoá.",
   "meal_slots": [
     {
       "slot": "sang",
