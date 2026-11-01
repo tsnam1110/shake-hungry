@@ -49,6 +49,28 @@ class TaxonomyController extends Controller
             $query->whereHas('tags', fn ($w) => $w->whereIn('tags.slug', $slugs));
         }
 
+        // Bộ lọc dưỡng chất (UI-019): ngưỡng trên 100g trong nutrition_snapshot.
+        // Lọc "thấp" phải loại cả giá trị null (chưa biết không đồng nghĩa thấp).
+        $nutrientRules = [
+            'protein-high' => ['protein_g', '>=', 10, false],
+            'kcal-low' => ['kcal_per_100g', '<=', 100, true],
+            'fiber-high' => ['fiber_g', '>=', 3, false],
+            'sodium-low' => ['sodium_mg', '<=', 120, true],
+            'fat-low' => ['fat_g', '<=', 3, true],
+        ];
+        $nutrients = collect(explode(',', (string) $request->query('nutrient', '')))
+            ->map(fn ($v) => trim($v))->filter()->all();
+        foreach ($nutrients as $code) {
+            if (! isset($nutrientRules[$code])) {
+                continue;
+            }
+            [$field, $op, $val, $excludeNull] = $nutrientRules[$code];
+            $extract = "JSON_EXTRACT(nutrition_snapshot, '$.{$field}')";
+            if ($excludeNull) {
+                $query->whereRaw("JSON_TYPE({$extract}) NOT IN ('NULL')");
+            }
+            $query->whereRaw("CAST({$extract} AS DECIMAL(10,2)) {$op} ?", [$val]);
+        }
         // Trang Nguyên liệu (UI-017): chỉ nguyên liệu đã có số + sắp xếp theo kcal.
         if ($request->boolean('with_nutrition')) {
             // kcal để null trong JSON vẫn là một giá trị JSON null chứ không

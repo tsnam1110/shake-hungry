@@ -40,7 +40,6 @@ fetch('/api/fruits/' + encodeURIComponent(slug), { headers: { 'Accept': 'applica
         <h1 class="ld-title" style="margin-top:6px">${esc(f.name_vi)}</h1>
         ${ing.aliases?.length ? `<p style="color:var(--color-faint);margin:0">Tên gọi khác: ${ing.aliases.map(a => a.note ? `${esc(a.name)} (${esc(a.note)})` : esc(a.name)).join(', ')}</p>` : ''}
         <p class="ld-subtitle" style="margin-top:4px">${groupName[f.classification_group] ?? ''}${f.family ? ' · ' + esc(f.family) : ''} · ${originName[f.origin] ?? ''}</p>
-        ${allergenTags.length ? `<div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:10px">${allergenTags.map(t => `<span class="ld-badge" style="background:var(--color-danger-tint);color:var(--color-danger)">Dị ứng: ${esc(t.name)}</span>`).join('')}</div>` : ''}
         ${f.image ? `<figure style="margin:18px 0 0">
             <img src="${esc(f.image.url)}" alt="${esc(f.name_vi)}" style="width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:18px;display:block" fetchpriority="high" decoding="async">
             <figcaption style="color:var(--color-faint);font-size:12.5px;margin-top:6px">${f.image.is_ai ? 'Ảnh minh họa' : 'Ảnh: ' + esc(f.image.attribution ?? '')}</figcaption>
@@ -50,6 +49,13 @@ fetch('/api/fruits/' + encodeURIComponent(slug), { headers: { 'Accept': 'applica
             <button type="button" class="ld-btn ld-btn-gray ld-fav-btn" data-fav-fruit="${f.id}" style="padding:11px 20px;font-size:15px"><span class="heart-ic">${heartSvg}</span>Yêu thích</button>
             <button type="button" class="ld-btn ld-btn-primary" id="fruit-eat-btn" style="padding:11px 20px;font-size:15px">Đã ăn quả này</button>
             <button type="button" class="ld-btn ld-btn-gray" data-feedback data-fruit="${f.id}" data-context="${esc(f.name_vi)}" style="padding:11px 20px;font-size:15px">Gửi phản hồi</button>
+        </div>
+
+        <h2 class="ld-section-title">Thông tin dị ứng</h2>
+        <div class="ld-card">
+            ${allergenTags.length ? `<div style="display:flex;flex-wrap:wrap;gap:6px">${allergenTags.map(t => `<span class="ld-badge" style="background:var(--color-danger-tint);color:var(--color-danger)">Dị ứng: ${esc(t.name)}</span>`).join('')}</div>
+                <p class="ld-note" style="margin-top:10px">Nhãn dị ứng theo dữ liệu dự án biên soạn — vẫn có thể có phản ứng chéo hoặc dị ứng cá nhân ngoài danh sách này. Nếu bạn dị ứng nặng, hãy thận trọng và hỏi ý kiến bác sĩ. <a href="/mien-tru-y-te">Đọc Miễn trừ y tế</a>.</p>`
+            : `<p class="ld-note" style="margin:0">Dữ liệu hiện tại chưa ghi nhận chất gây dị ứng phổ biến ở loại quả này. Điều này không phải cam kết an toàn tuyệt đối — dị ứng cá nhân vẫn có thể xảy ra. <a href="/mien-tru-y-te">Đọc Miễn trừ y tế</a>.</p>`}
         </div>
 
         <div class="ld-card" style="margin-top:18px">

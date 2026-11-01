@@ -27,8 +27,9 @@ fetch('/api/ingredients/' + slug).then(r => { if (!r.ok) throw new Error('404');
         ['fiber_g', 'g', 'Chất xơ'], ['sodium_mg', 'mg', 'Natri'], ['water_g', 'g', 'Nước'],
     ].filter(([k]) => snap[k] != null)
      .map(([k, u, label]) => macroTile(snap[k], u, label)).join('');
+    const allergenTags = (i.tags ?? []).filter(t => t.slug.startsWith('allergen:'));
     const facets = {};
-    (i.tags ?? []).forEach(t => { const f = t.slug.split(':')[0]; (facets[f] ??= []).push(t); });
+    (i.tags ?? []).filter(t => !t.slug.startsWith('allergen:')).forEach(t => { const f = t.slug.split(':')[0]; (facets[f] ??= []).push(t); });
     const img = i.image;
     document.getElementById('content').innerHTML = `
         <div class="ld-card" style="margin-top:14px;padding:0;overflow:hidden">
@@ -61,10 +62,16 @@ fetch('/api/ingredients/' + slug).then(r => { if (!r.ok) throw new Error('404');
             : '<p style="color:var(--color-faint);margin:10px 0 0">Chưa đủ dữ liệu dinh dưỡng cho nguyên liệu này — hệ thống không hiện số thay vì đoán.</p>'}
         </div>
 
+        <h2 class="ld-section-title">Thông tin dị ứng</h2>
+        <div class="ld-card">
+            ${allergenTags.length ? `<div style="display:flex;flex-wrap:wrap;gap:6px">${allergenTags.map(t => `<span class="ld-badge" style="background:var(--color-danger-tint);color:var(--color-danger)">Dị ứng: ${esc(t.name)}</span>`).join('')}</div>
+                <p class="ld-note" style="margin-top:10px">Nguyên liệu này mang nhãn chất gây dị ứng theo dữ liệu dự án biên soạn. Khi lắc món, dị ứng trong hồ sơ của bạn là điều kiện lọc cứng — món chứa nguyên liệu này sẽ bị loại. <a href="/mien-tru-y-te">Đọc Miễn trừ y tế</a>.</p>`
+            : `<p class="ld-note" style="margin:0">Dữ liệu hiện tại chưa ghi nhận chất gây dị ứng phổ biến ở nguyên liệu này. Điều này không phải cam kết an toàn tuyệt đối — nếu bạn bị dị ứng, hãy kiểm tra kỹ trước khi dùng. <a href="/mien-tru-y-te">Đọc Miễn trừ y tế</a>.</p>`}
+        </div>
         ${Object.keys(facets).length ? `<h2 class="ld-section-title">Phân loại</h2>
         <div style="display:flex;flex-direction:column;gap:10px">${Object.entries(facets).map(([f, ts]) => `
             <div><p class="ld-group-label" style="margin:0 0 6px">${facetLabel[f] ?? esc(f)}</p>
-            <div style="display:flex;flex-wrap:wrap;gap:6px">${ts.map(t => `<span class="ld-badge ${f === 'allergen' ? '' : 'vu'}" ${f === 'allergen' ? 'style="background:var(--color-danger-tint);color:var(--color-danger)"' : ''}>${esc(t.name)}</span>`).join('')}</div></div>`).join('')}
+            <div style="display:flex;flex-wrap:wrap;gap:6px">${ts.map(t => `<span class="ld-badge vu">${esc(t.name)}</span>`).join('')}</div></div>`).join('')}
         </div>` : ''}
 
         ${dishes.length ? `<h2 class="ld-section-title">Món ăn có ${esc(i.name_vi)}</h2>

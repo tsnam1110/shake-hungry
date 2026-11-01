@@ -56,6 +56,25 @@ class CatalogController extends Controller
         if ($regionId = $request->query('region_id')) {
             $query->where('dishes.region_id', (int) $regionId);
         }
+        // Bộ lọc mở rộng theo dưỡng chất (UI-019): ngưỡng trên một khẩu phần,
+        // nhiều lựa chọn áp cùng lúc theo AND. Món chưa có số không đạt lọc.
+        // Chỉ dùng các cột dish_nutrition thật sự có (engine không tính natri
+        // theo món — natri chỉ có ở snapshot nguyên liệu).
+        $nutrientRules = [
+            'protein-high' => ['protein_g', '>=', 20],
+            'kcal-low' => ['kcal_max', '<=', 400],
+            'fiber-high' => ['fiber_g', '>=', 5],
+            'carb-low' => ['carb_g', '<=', 30],
+            'fat-low' => ['fat_g', '<=', 10],
+        ];
+        $nutrients = collect(explode(',', (string) $request->query('nutrient', '')))
+            ->map(fn ($v) => trim($v))->filter()->all();
+        foreach ($nutrients as $code) {
+            if (isset($nutrientRules[$code])) {
+                [$col, $op, $val] = $nutrientRules[$code];
+                $query->whereHas('nutrition', fn ($w) => $w->where($col, $op, $val));
+            }
+        }
         match ($request->query('sort')) {
             'name' => $query->leftJoin('dish_names', function ($j) {
                 // is_primary là theo từng locale (vi/en) — phải khoá locale vi
@@ -67,6 +86,17 @@ class CatalogController extends Controller
             'kcal_asc', 'kcal_desc' => $query->leftJoin('dish_nutrition', 'dish_nutrition.dish_id', '=', 'dishes.id')
                 ->orderByRaw('dish_nutrition.kcal_min IS NULL')
                 ->orderBy('dish_nutrition.kcal_min', $request->query('sort') === 'kcal_asc' ? 'asc' : 'desc')
+                ->select('dishes.*'),
+            // UI-019: sắp xếp theo độ uy tín của con số (confidence cao trước,
+            // món chưa có số xuống cuối) và theo lượng đạm.
+            'confidence' => $query->leftJoin('dish_nutrition', 'dish_nutrition.dish_id', '=', 'dishes.id')
+                ->orderByRaw('dish_nutrition.confidence IS NULL')
+                ->orderByRaw("FIELD(dish_nutrition.confidence, 'high', 'medium', 'low')")
+                ->orderByDesc('dishes.id')
+                ->select('dishes.*'),
+            'protein_desc' => $query->leftJoin('dish_nutrition', 'dish_nutrition.dish_id', '=', 'dishes.id')
+                ->orderByRaw('dish_nutrition.protein_g IS NULL')
+                ->orderByDesc('dish_nutrition.protein_g')
                 ->select('dishes.*'),
             default => $query->orderByDesc('dishes.id'),
         };

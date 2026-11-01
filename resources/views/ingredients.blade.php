@@ -18,6 +18,14 @@
             <input id="q" type="search" placeholder="Tìm nguyên liệu (cả tên gọi khác)" aria-label="Tìm nguyên liệu">
         </div>
         <div class="ld-chips-scroll" id="allergen-filters" style="margin-top:12px" role="group" aria-label="Lọc theo chất gây dị ứng"></div>
+        <p class="ld-field-label" style="margin-top:12px">Dưỡng chất (trên 100g, chọn nhiều được)</p>
+        <div class="ld-chips" id="nutrient-filters">
+            <button type="button" class="ld-chip" data-nutrient="protein-high">Giàu đạm (≥ 10g)</button>
+            <button type="button" class="ld-chip" data-nutrient="kcal-low">Ít calo (≤ 100 kcal)</button>
+            <button type="button" class="ld-chip" data-nutrient="fiber-high">Nhiều chất xơ (≥ 3g)</button>
+            <button type="button" class="ld-chip" data-nutrient="sodium-low">Ít natri (≤ 120mg)</button>
+            <button type="button" class="ld-chip" data-nutrient="fat-low">Ít béo (≤ 3g)</button>
+        </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3" style="margin-top:4px">
             <div><label class="ld-field-label" for="category">Nhóm nguyên liệu</label>
                 <select id="category" class="ld-select">
@@ -58,6 +66,12 @@ function esc(s) { return (s ?? '').toString().replace(/[&<>"]/g, c => ({'&':'&am
 const catLabel = { 'thit': 'Thịt', 'thuy-san': 'Thuỷ sản', 'rau-cu': 'Rau củ', 'rau-gia-vi': 'Rau gia vị', 'trai-cay': 'Trái cây', 'tinh-bot': 'Tinh bột', 'gia-vi': 'Gia vị', 'dau-mo': 'Dầu mỡ', 'khac': 'Khác' };
 let page = 1, lastPage = 1, total = 0;
 const allergenTags = new Set();
+const nutrients = new Set();
+document.querySelectorAll('#nutrient-filters .ld-chip').forEach(b => b.addEventListener('click', () => {
+    b.classList.toggle('active');
+    b.classList.contains('active') ? nutrients.add(b.dataset.nutrient) : nutrients.delete(b.dataset.nutrient);
+    reload();
+}));
 
 fetch('/api/tags').then(r => r.json()).then(ts => {
     const usable = ts.filter(t => t.facet === 'allergen' && t.ingredients > 0);
@@ -96,6 +110,7 @@ async function loadPage(append) {
     const q = document.getElementById('q').value.trim();
     if (q) params.set('q', q);
     allergenTags.forEach(t => params.append('tag', t));
+    if (nutrients.size) params.set('nutrient', [...nutrients].join(','));
     const cat = document.getElementById('category').value;
     if (cat) params.set('category', cat);
     const sort = document.getElementById('sort').value;

@@ -38,7 +38,6 @@ fetch('/api/dishes/' + encodeURIComponent(slug), { headers: { 'Accept': 'applica
         <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:12px">
             ${(d.meal_slots ?? []).map(s => `<span class="ld-badge vu">${slotName[s.slot] ?? esc(s.slot)}</span>`).join('')}
             ${otherTags.map(t => `<span class="ld-badge">${esc(t.name)}</span>`).join('')}
-            ${allergenTags.map(t => `<span class="ld-badge" style="background:var(--color-danger-tint);color:var(--color-danger)">Dị ứng: ${esc(t.name)}</span>`).join('')}
         </div>
         ${d.image ? `<figure style="margin:18px 0 0">
             <img src="${esc(d.image.url)}" alt="${esc(name)}" style="width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:18px;display:block" fetchpriority="high" decoding="async">
@@ -66,6 +65,13 @@ fetch('/api/dishes/' + encodeURIComponent(slug), { headers: { 'Accept': 'applica
         <div style="display:flex;gap:10px;margin-top:14px;flex-wrap:wrap">
             <button type="button" class="ld-btn ld-btn-gray ld-fav-btn" data-fav-dish="${d.id}" style="padding:11px 20px;font-size:15px"><span class="heart-ic">${heartSvg}</span>Yêu thích món này</button>
             <button type="button" class="ld-btn ld-btn-gray" data-feedback data-dish="${d.id}" data-context="${esc(name)}" style="padding:11px 20px;font-size:15px">Gửi phản hồi</button>
+        </div>
+
+        <h2 class="ld-section-title">Thông tin dị ứng</h2>
+        <div class="ld-card">
+            ${allergenTags.length ? `<div style="display:flex;flex-wrap:wrap;gap:6px">${allergenTags.map(t => `<span class="ld-badge" style="background:var(--color-danger-tint);color:var(--color-danger)">Dị ứng: ${esc(t.name)}</span>`).join('')}</div>
+                <p class="ld-note" style="margin-top:10px">Nhãn dị ứng suy từ thành phần theo dữ liệu dự án biên soạn — có thể chưa đầy đủ (gia vị, nước chấm, cách chế biến tại quán). Nếu bạn dị ứng nặng, hãy tự kiểm tra thành phần trước khi ăn. <a href="/mien-tru-y-te">Đọc Miễn trừ y tế</a>.</p>`
+            : `<p class="ld-note" style="margin:0">Dữ liệu hiện tại chưa ghi nhận chất gây dị ứng phổ biến trong món này. Điều này không phải cam kết an toàn tuyệt đối — nếu bạn bị dị ứng, hãy kiểm tra kỹ thành phần. <a href="/mien-tru-y-te">Đọc Miễn trừ y tế</a>.</p>`}
         </div>
 
         ${provenance ? `
