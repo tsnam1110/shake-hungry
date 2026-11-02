@@ -56,18 +56,20 @@ it('món chứa cả hai phía: cặp tầng 2 vào notes, cặp dân gian đã 
 });
 
 it('cặp kết hợp KHÔNG lọc món khỏi catalog và không gắn tuyến thuốc vào món', function () {
-    $slugs = collect($this->getJson('/api/dishes?per_page=60')->assertOk()->json('data') ?? [])
-        ->pluck('slug');
-    // Bún riêu cua (cua + cà chua) vẫn hiện diện bình thường trong catalog.
+    // Catalog giới hạn per_page tối đa 48 (CatalogController) — duyệt hết
+    // các trang theo meta.last_page của chính response, không đoán cỡ trang.
     $all = collect();
-    foreach ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11] as $page) {
-        $resp = $this->getJson("/api/dishes?per_page=60&page={$page}")->assertOk();
+    $page = 1;
+    do {
+        $resp = $this->getJson("/api/dishes?per_page=48&page={$page}")->assertOk();
         $all = $all->merge(collect($resp->json('data') ?? [])->pluck('slug'));
-        if (count($resp->json('data') ?? []) < 60) {
-            break;
-        }
-    }
-    expect($all)->toContain('bun-rieu-cua');
+        $last = (int) ($resp->json('last_page') ?? $resp->json('meta.last_page') ?? $page);
+        $page++;
+    } while ($page <= $last);
+    // Bún riêu cua (cua + cà chua) vẫn hiện diện bình thường trong catalog,
+    // và catalog trả đủ mọi món (lớp kết hợp không lọc bỏ món nào).
+    expect($all)->toContain('bun-rieu-cua')
+        ->and($all->unique()->count())->toBe(\App\Models\Dish::count());
 
     // Không món nào nhận cặp có phía thuốc (tuyến thuốc chỉ ở trang nguyên liệu/quả).
     foreach (['bun-rieu-cua', 'hu-tieu'] as $slug) {
