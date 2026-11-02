@@ -39,6 +39,22 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "luong",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — mục 南瓜藤 (dây bí): dẫn 《本草再新》:「味甘苦，性微寒，無毒。」(微寒 chuẩn hoá = lương; dòng này lấy vị cam). Loài Nam qua = Cucurbita moschata khớp đúng loài của file, nhưng chuyên khảo gắn với THÂN/DÂY; file ăn ngọn non gồm thân non + lá + tua — áp cho phần thân non, phạm vi bộ phận ghi rõ: confidence low. Hộp thông tin của trang ghi 藥性寒 (không rõ xuất xứ) — khác câu cổ thư trích nguyên văn, không lập dòng riêng. https://www.a-hospital.com/w/%E5%8D%97%E7%93%9C%E8%97%A4",
+      "confidence": "low"
+    },
+    {
+      "nature": "luong",
+      "flavor": "kho",
+      "element": "hoa",
+      "source_ref": "A+醫學百科 (a-hospital.com) — mục 南瓜藤: 《本草再新》「味甘苦，性微寒，無毒。」(dòng này lấy vị kho). Áp từ thân/dây Cucurbita moschata sang ngọn non (thân non + lá) của file — confidence low, phạm vi bộ phận ghi ở dòng vị cam cùng nguồn. https://www.a-hospital.com/w/%E5%8D%97%E7%93%9C%E8%97%A4",
+      "confidence": "low"
+    }
+  ],
   "source": "curated",
   "confidence": "medium",
   "needs_review": true,

@@ -25,7 +25,9 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "tron",
-  "completeness_level": 1,
+  "completeness_level": 2,
+  "level_basis": "tcm_compensation",
+  "level_note": "Chưa đạt cổng Mức 2 thường: recipe_sources chưa đủ 3 họ nguồn công thức đã kiểm chứng và định lượng còn là llm_suggested chưa đối chiếu (hồ sơ LV2-012 còn ghi thêm trần nguyên liệu ngo-sen chưa có số — trần đó đã gỡ ở T-05 2026-11-02 bằng số Bảng TPTP VN 2007, nhưng cổng nguồn công thức vẫn chưa đạt). Được nâng theo đường nâng bù Mức 3 (quyết định chủ dự án 2026-11-01): độ phủ tính vị 61,41% ≥ 60% sau đợt T-07 (gieo nhãn chanh — dòng chanh 10g trong nước trộn gỏi) và đã có ghi chú văn hoá.",
   "meal_slots": [
     {
       "slot": "trua",

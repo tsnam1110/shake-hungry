@@ -39,6 +39,22 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "luong",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — mục 芭蕉花 (hoa chuối): 《中華本草》「味甘；微辛；性凉」(dòng này lấy vị cam). Chuyên khảo gắn với loài Musa basjoo (芭蕉); file kho là bắp chuối Musa spp. nói chung (hoa của các giống chuối ăn quả) — đây là ÁNH XẠ CẤP CHI Musa, ghi rõ theo quy ước ánh xạ họ/chi: confidence trần low. https://www.a-hospital.com/w/%E8%8A%AD%E8%95%89%E8%8A%B1",
+      "confidence": "low"
+    },
+    {
+      "nature": "luong",
+      "flavor": "tan",
+      "element": "kim",
+      "source_ref": "A+醫學百科 (a-hospital.com) — mục 芭蕉花: 《中華本草》「味甘；微辛；性凉」(微辛 chuẩn hoá = vị tan; dòng này lấy vị tan). Ánh xạ cấp chi Musa (chuyên khảo: Musa basjoo; file: Musa spp.) — confidence low. https://www.a-hospital.com/w/%E8%8A%AD%E8%95%89%E8%8A%B1",
+      "confidence": "low"
+    }
+  ],
   "source": "curated",
   "confidence": "medium",
   "needs_review": true,

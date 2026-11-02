@@ -39,6 +39,15 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "on",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — mục 禾蟲 (rươi): 《中華本草》「為沙蠶科動物疣吻沙蠶的全體」, tên Latin in trên trang Tylorrhychus heterochaetus — khớp đúng loài của file (Tylorrhynchus heterochaetus); 「味甘；性温」. 《中藥大辭典》 trên cùng trang dẫn 《本草求原》「甘，温，無毒」— nhất quán. https://www.a-hospital.com/w/%E7%A6%BE%E8%99%AB",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "low",
   "needs_review": true,

@@ -46,6 +46,29 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "han",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — mục 落葵 (mồng tơi): 「為落葵科植物落葵的葉或全草」, tên Latin ghi Basella alba L.［B.rubra L.］— khớp đúng loài của file (Basella alba); trích 《中華本草》:「甘；酸；性寒」(dòng này lấy vị cam). Phần dùng của chuyên khảo là lá/toàn cây — khớp phần ăn của file. https://www.a-hospital.com/w/%E8%90%BD%E8%91%B5",
+      "confidence": "medium"
+    },
+    {
+      "nature": "luong",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "A+醫學百科 (a-hospital.com) — mục 落葵, phần 食療價值 dẫn 《本草綱目》:「落葵，甘，微寒，冷滑，利大小腸」(微寒 chuẩn hoá = lương; dòng này lấy vị cam). Truyền thống này lệch một bậc so với 《中華本草》 (hàn) — giữ song song theo quy tắc không ép chọn. https://www.a-hospital.com/w/%E8%90%BD%E8%91%B5",
+      "confidence": "medium"
+    },
+    {
+      "nature": "han",
+      "flavor": "toan",
+      "element": "moc",
+      "source_ref": "A+醫學百科 (a-hospital.com) — mục 落葵: trích 《中華本草》:「甘；酸；性寒」(dòng này lấy vị toan). Loài Basella alba L. khớp file. https://www.a-hospital.com/w/%E8%90%BD%E8%91%B5",
+      "confidence": "medium"
+    }
+  ],
   "source": "curated",
   "confidence": "medium",
   "needs_review": true,

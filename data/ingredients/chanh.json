@@ -59,6 +59,29 @@
       "is_primary": true
     }
   ],
+  "tcm_traits": [
+    {
+      "nature": "luong",
+      "flavor": "toan",
+      "element": "moc",
+      "source_ref": "Y văn Việt Nam (tầng 3) — mục Chanh (Citrus aurantifolia (Christm. et Panzer) Swingle — đúng loài chanh ta của file) trên dieutri.vn (chuyên mục cây thuốc Đông y, có biên tập viên): phần Tính vị, tác dụng ghi cho QUẢ:「Quả có vị chua, tính mát」(mát chuẩn hoá = lương; dòng này lấy vị chua = toan). Cùng câu chữ được chép đồng nhất tại thaythuoccuaban.com (mục vị thuốc Chanh). https://www.dieutri.vn/caythuocdongy/chanh-lam-thuoc-giai-nhiet-giup-an-ngon-mieng",
+      "confidence": "medium"
+    },
+    {
+      "nature": "binh",
+      "flavor": "toan",
+      "element": "moc",
+      "source_ref": "Y văn Việt Nam (tầng 3) — thaythuoccuaban.com, mục vị thuốc Chanh (Citrus aurantifolia): dòng tổng kết Tính vị ghi「Chanh vị chua ngọt, tính bình」— đây là dòng tổng kết cấp cây, khác dòng riêng cho quả (mát) trên cùng truyền thống; giữ song song theo quy tắc không ép chọn (dòng này lấy vị toan). https://www.thaythuoccuaban.com/vithuoc/chanh.html",
+      "confidence": "low"
+    },
+    {
+      "nature": "binh",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "Y văn Việt Nam (tầng 3) — thaythuoccuaban.com, mục vị thuốc Chanh (Citrus aurantifolia):「Chanh vị chua ngọt, tính bình」(dòng này lấy vị cam/ngọt). Dòng tổng kết cấp cây, confidence low — xem dòng vị toan cùng nguồn. https://www.thaythuoccuaban.com/vithuoc/chanh.html",
+      "confidence": "low"
+    }
+  ],
   "source": "curated",
   "confidence": "medium",
   "needs_review": true,
