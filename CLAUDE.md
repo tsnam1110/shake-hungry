@@ -783,6 +783,29 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > đổi cờ dị ứng**; validate **0 🔴**; Pest **177/177** (719 assertions,
 > cửa sổ sạch) gồm ExportStabilityTest đạt + 10 test mới/cập nhật.
 > Chi tiết + bằng chứng baseline/hậu kiểm: [AUDIT-ALLERGEN §7](docs/05-tasks/tasks/AUDIT-ALLERGEN.md).
+>
+> ## 📗 Bổ sung lần 43, 2026-11-02 — T-08…T-12: xử lý các việc tồn đọng còn lại
+>
+> **T-08:** rà `needs_review` 3 tầng file↔DB↔admin — cơ chế nhất quán
+> (admin approve ghi vết + R10), lệch duy nhất là ngữ nghĩa hàng đợi:
+> món 358/654 là hàng đợi sống (296 đã duyệt), nguyên liệu 434/434 và
+> quả 82/82 chưa bắt đầu duyệt theo bản ghi (kiểm chứng chương trình
+> ≠ duyệt). Quy ước chuẩn hoá đã vào [DATA-MODEL](docs/03-data-model/DATA-MODEL.md)
+> (một ngữ nghĩa 3 loại; báo số theo từng loại, cấm gộp; quả thiếu
+> CHECK R10 + `reviewed_at` kiểu `date` là bất đối xứng đã biết).
+> Đã chuẩn bị **17 gói duyệt ~25 món theo tầng rủi ro R1→R2→R3**
+> (thư mục bàn giao `goi-duyet/`); **0 cờ bị hạ hộ**. **T-09 (Q7):**
+> có hồ sơ nguồn hao hụt thuỷ sản độc lập USDA — FSANZ phi lê
+> hấp/luộc **0,84**, Bảng 15 重量変化率 của MEXT Nhật, đo thực
+> nghiệm Thái Lan; khuyến nghị thử 0,84 ở vòng hiệu chuẩn riêng —
+> **chưa đổi hệ số engine**. **T-10:** hồ sơ `canh-bi-ro-suon` cận
+> −30% xác nhận đủ ở cả `import_note` lẫn AUDIT-FIX §8, không sửa.
+> **T-11:** thử lại 5 URL chưa kết luận — vẫn lỗi vận chuyển không
+> HTTP status, đã ghi vào `import_note` 3 món; cron LINK-ROT theo
+> dõi tiếp. **T-12:** viết ghi chú văn hoá cho **`coc`** (Wikipedia
+> VN + tài liệu ĐH Duy Tân) và **`nho-than-go`** (Dân Việt 2017)
+> → **77/82 quả có ghi chú**; 5 quả giữ chờ có hồ sơ cập nhật.
+> Chi tiết: [T-08-T12-BACKLOG](docs/05-tasks/tasks/T-08-T12-BACKLOG.md).
 **Trạng thái thực tế, kiểm ngày 2026-10-31 (đã chạy lại toàn bộ lệnh kiểm chứng):**
 
 | Hạng mục | Thực tế | Kiểm bằng |

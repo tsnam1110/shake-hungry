@@ -323,6 +323,27 @@ món ≥ Mức 2 tính đủ**, đối chiếu calo cách ly đúng phạm vi; P
 đầu ghi 188/1 failed là đọc nhầm đầu ra của phiên song song). Chi tiết:
 [tasks/T-04-429-RETRY.md](./tasks/T-04-429-RETRY.md).
 
+**T-08…T-12 — CÁC VIỆC TỒN ĐỌNG CÒN LẠI ĐÃ XONG (2026-11-02):**
+**T-08** chuẩn hoá `needs_review`: rà 3 tầng file↔DB↔admin — cơ chế
+nhất quán (admin approve + R10), lệch ở ngữ nghĩa hàng đợi; quy ước
+chuẩn hoá đã ghi vào DATA-MODEL (một ngữ nghĩa cho 3 loại; kiểm chứng
+chương trình ≠ duyệt; báo số theo từng loại — món 358 sống, nguyên
+liệu 434 + quả 82 chưa bắt đầu duyệt theo bản ghi); đã chuẩn bị **17
+gói duyệt × ~25 món theo tầng rủi ro R1→R2→R3** trong thư mục bàn
+giao `goi-duyet/` (0 cờ bị hạ hộ). **T-09/Q7:** tìm được nguồn hao
+hụt thuỷ sản độc lập USDA — FSANZ (phi lê hấp/luộc −16% → 0,84),
+Bảng 15 重量変化率 của MEXT Nhật, đo thực nghiệm Thái Lan (luộc
+0,8–0,9 nước ngọt) — hồ sơ + khuyến nghị hệ số ứng viên 0,84 cho
+vòng hiệu chuẩn riêng, **chưa đổi engine**. **T-10:** hồ sơ
+`canh-bi-ro-suon` ở cận −30% xác nhận đã đủ hai nơi, không sửa.
+**T-11:** thử lại 5 URL chưa kết luận (canh-bong-tha ×3, banh-xu-xe,
+PDF bun-hen) — vẫn lỗi vận chuyển không HTTP status, ghi vào
+`import_note`, cron tuần theo dõi tiếp. **T-12:** viết ghi chú cho
+**`coc` + `nho-than-go`** (Wikipedia + ĐH Duy Tân; Dân Việt 2017) →
+**77/82 quả có ghi chú**; 5 quả giữ chờ có hồ sơ cập nhật (gồm bằng
+chứng mới VietnamNet cho `mam-xoi` vẫn lệch loài/khung dinh dưỡng).
+Chi tiết: [tasks/T-08-T12-BACKLOG.md](./tasks/T-08-T12-BACKLOG.md).
+
 **T-02/T-03/T-13 — GIẢI TOẢ 7 FILE MÓN BỊ GIỮ + GHI CHÚ + A4.1 + REGION
 ĐÃ XONG (2026-11-02):** commit media cho 7 file VN-001 bỏ qua hai lần
 (`9ea4ad3`, Wikimedia CC + attribution); viết `cultural_note` đạt chuẩn
@@ -614,7 +635,7 @@ Ghi mọi câu hỏi chưa có lời giải ở đây. **Không đoán rồi là
 | Q4 | Ảnh món lấy từ đâu? Tự chụp / mua / CC BY? | DISH-001 trở đi; ảnh hưởng kích thước repo | Chủ dự án | ⬜ Chờ |
 | Q5 | Có cần Git LFS cho ảnh không? | Phụ thuộc Q4 | Chủ dự án | ⬜ Chờ |
 | Q10 | Trọng số bữa (meal weight) của nhóm `loai:nuoc-cham`: 21/23 món chấm mang weight 8 ở trưa/tối trong khi EDITORIAL-GUIDE §5 không có quy ước trần theo loại món. Engine Lắc đã chặn món khẩu phần <80 g khỏi gợi ý bữa chính (`Recommender::pool`) nên rủi ro thực tế đã được chặn ở tầng engine — quyết: (a) giữ nguyên, (b) hạ weight nhóm nước chấm xuống mức tượng trưng cho dữ liệu tự nhất quán, hay (c) loại nhóm này khỏi slot bữa chính ở tầng dữ liệu? | Dữ liệu nhóm nước chấm (tầm soát M-4) | Chủ dự án | ⬜ Chờ ([DATA-AUDIT-FIXES §5](../04-data-sources/DATA-AUDIT-FIXES-2026-10-31.md)) |
-| **Q7** | **Nguồn nào cho hệ số hao hụt khi nấu của THUỶ SẢN?** Bảng USDA Cooking Yields R2 đã nhập chỉ có thịt và gia cầm — **0 dòng thuỷ sản**. Không thể suy từ SR Legacy (raw ÷ cooked) vì chính USDA là vế tham chiếu của TEST-002 ⇒ phép kiểm thành vòng tròn. Ứng viên: USDA Agriculture Handbook 102 (bản quét 1975, chưa có lớp text) | Nhóm `hap` của TEST-002; mọi món cá hấp/luộc VN | Chủ dự án + tra cứu | ⬜ Chờ ([DATA-004](./tasks/DATA-004.md)) |
+| **Q7** | **Nguồn nào cho hệ số hao hụt khi nấu của THUỶ SẢN?** Bảng USDA Cooking Yields R2 đã nhập chỉ có thịt và gia cầm — **0 dòng thuỷ sản**. Không thể suy từ SR Legacy (raw ÷ cooked) vì chính USDA là vế tham chiếu của TEST-002 ⇒ phép kiểm thành vòng tròn. Ứng viên: USDA Agriculture Handbook 102 (bản quét 1975, chưa có lớp text) | Nhóm `hap` của TEST-002; mọi món cá hấp/luộc VN | Chủ dự án + tra cứu | 🔵 **Đã có hồ sơ nguồn 2026-11-02 (T-09)**: FSANZ (phi lê hấp/luộc 0,84), Bảng 15 MEXT Nhật, đo thực nghiệm Thái Lan — khuyến nghị thử 0,84 ở vòng hiệu chuẩn riêng; chờ chủ dự án mở vòng hiệu chuẩn mới đổi engine ([T-08-T12-BACKLOG](./tasks/T-08-T12-BACKLOG.md)) |
 | ~~Q8~~ | ~~Repo có đẩy lên remote không, và ở đâu?~~ | — | — | ✅ **Đã đóng 2026-09-01** — `origin` = `git@gitlab.com:Tran-Son-Nam/shake-hungry.git`, branch `dev` đã đẩy (8 commit, 513 file). Rủi ro mất trắng đã gỡ |
 | ~~Q9~~ | ~~CI chạy trên nền nào?~~ | — | — | ✅ **Đã đóng 2026-10-31** — tiền đề đã đảo ngược: repo nay ở **GitHub** (không còn remote GitLab) nên `.github/workflows/tests.yml` đã đúng nền. CI vẫn chưa chạy lần nào vì code **chưa push** — sẽ tự chạy ở lần push đầu (đang chờ credential) |
 | ~~Q6~~ | ~~Có chấp nhận bảng MEXT (Nhật) làm nguồn thứ hai không?~~ | — | — | ✅ **Đã đóng 2026-10-31** — quyết định **tầng 6** của chủ dự án bao quát cả MEXT/FNRI/IFCT/Bảng VN/văn liệu: chỉ tra từng mục khi nguồn chính thống không có, kèm trích dẫn + cờ "chưa kiểm định" (xem [DATA-PIPELINE §7.2](../04-data-sources/DATA-PIPELINE.md)). Xung đột QT-4 được xử lý bằng cơ chế `mixed` có kiểm soát + hạ confidence |

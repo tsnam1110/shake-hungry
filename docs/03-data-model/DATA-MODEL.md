@@ -60,6 +60,31 @@ cùng commit** (QT-7) và ghi lý do.
 - `ingredients` và `dishes` có thêm **dấu vết duyệt**: `reviewed_by`, `reviewed_at`, `review_note`
   (bổ sung 2026-09-01, [ING-004](../05-tasks/tasks/ING-004.md)). Mặc định của `needs_review` ở hai
   bảng này là **`true`** — chưa duyệt là trạng thái mặc định, ra khỏi nó phải khai báo tường minh.
+- Bảng `fruits` cũng có bộ ba `needs_review` / `reviewed_by` / `reviewed_at` (từ migration tạo bảng
+  2026-10-31), nhưng `reviewed_at` của quả là kiểu `date` (chính xác tới ngày) trong khi món/nguyên
+  liệu là `timestamp` — bất đối xứng đã biết, không đổi.
+
+### Quy ước ngữ nghĩa `needs_review` (chuẩn hoá T-08, 2026-11-02)
+
+Rà 3 tầng file ↔ DB ↔ admin ngày 2026-11-02 (chi tiết: [T-08-T12-BACKLOG](../05-tasks/tasks/T-08-T12-BACKLOG.md)):
+
+1. **Một ngữ nghĩa duy nhất cho cả 3 loại** (món / nguyên liệu / quả): `needs_review = true` nghĩa là
+   *bản ghi chưa qua duyệt biên tập của người theo từng bản ghi*. Cờ chỉ được hạ qua thao tác duyệt
+   của trang quản trị (ghi `reviewed_by` + `reviewed_at`, ràng buộc R10 ở món/nguyên liệu; quả áp
+   cùng kỷ luật qua controller dù migration tạo bảng không có CHECK R10). Không hạ cờ bằng sửa file
+   tay, không hạ hàng loạt bằng script.
+2. **Kiểm chứng chương trình ≠ duyệt.** Các đợt census/audit (AUDIT-002, AUDIT-003, AUDIT-ALLERGEN…)
+   là kiểm chứng ở cấp chương trình và được truy vết bằng file task — chúng **không** hạ cờ
+   `needs_review` của từng bản ghi và không được trình bày như "đã duyệt".
+3. **Số đếm hàng đợi phải báo theo từng loại, không gộp.** Tại 2026-11-02: món **358/654** (hàng đợi
+   sống thật — 296 món đã duyệt qua admin), nguyên liệu **434/434** và quả **82/82** (hai hàng đợi
+   *chưa bắt đầu* duyệt theo bản ghi; mọi nguyên liệu/quả đều đã qua kiểm chứng chương trình nhưng
+   chưa bản ghi nào được người duyệt riêng). Dashboard admin vốn đã trả số theo từng loại
+   (`pending_review` riêng cho ingredients/dishes/fruits) — giữ nguyên cách báo đó, cấm cộng gộp
+   thành một con số "chờ duyệt" duy nhất trong báo cáo.
+4. **Duyệt món theo gói rủi ro:** hàng đợi món được chia gói ~25 món theo tầng R1 (Mức 1 + Mức 2
+   (có note) nâng bù) → R2 (Mức 3) → R3 (Mức 2 thường), lưu tại thư mục bàn giao của chủ dự án
+   (`goi-duyet/`). Việc duyệt cuối từng món vẫn là của người duyệt trong admin.
 
 ### Bảng `source` — dùng chung toàn hệ thống
 
