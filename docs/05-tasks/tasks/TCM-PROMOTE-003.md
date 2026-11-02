@@ -47,7 +47,7 @@ Toàn vẹn cổng sau đợt (truy vấn DB kiểm chứng tại HEAD cuối): 
 ## Kiểm chứng
 
 - `lacdoi:validate-data` trên DB kiểm chứng: **0 🔴** (25 🟡 thuộc các lớp cảnh báo đã biết — V9 khẩu phần rất nhỏ, V10, V8, V7; mốc TCM-PROMOTE-002 là 24 🟡).
-- Pest tại checkout chính (DB test mặc định, cửa sổ sạch): lượt chốt **187/187 xanh**, gồm ExportStabilityTest đạt — vòng seed→export vẫn là điểm cố định sau khi sửa 13 file món của gói T-02. Lượt chạy ngay trước đó có 1 test đỏ **không tái lập** tại `SwapTrayTest` (đổi món random trong mâm — test phụ thuộc ngẫu nhiên của tính năng REC-005 do phiên song song phát triển, từng đỏ không ổn định từ VN-001 đợt 3; không đổi dữ liệu/code giữa hai lượt, không liên quan dữ liệu gói này).
+- Pest tại checkout chính (DB test mặc định, cửa sổ sạch): **cả hai lượt chạy toàn bộ đều xanh tuyệt đối — 177/177 và 187/187** (số test tăng giữa hai lượt do phiên song song bổ sung test mới), gồm ExportStabilityTest đạt — vòng seed→export vẫn là điểm cố định sau khi sửa 13 file món của gói T-02. *Đính chính cùng ngày (2026-11-02):* bản đầu của mục này ghi lượt đầu có “1 test `SwapTrayTest` đỏ không tái lập” — đó là đọc nhầm đầu ra trung gian giữa lúc chạy; đầu ra cuối (terminal, exit 0) của cả hai lượt đều không có test đỏ nào.
 - Phạm vi file đợt này: đúng 7 file món (6 Phần A + `xoi-man` Phần B), mỗi file chỉ đổi 1 dòng `completeness_level`.
 
 ## Còn lại sau đợt

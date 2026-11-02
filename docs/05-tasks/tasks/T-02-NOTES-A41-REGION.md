@@ -63,7 +63,7 @@ Xem [TCM-PROMOTE-003](TCM-PROMOTE-003.md): 6 món ghi chú mới + `xoi-man` (đ
 ## Kiểm chứng gói
 
 - `lacdoi:validate-data` (DB kiểm chứng `shake_hungry_t02`, worktree sạch): **0 🔴**.
-- Pest tại checkout chính (DB test mặc định, cửa sổ sạch — đã kiểm tra không có tiến trình test của phiên song song): lượt chốt **187/187 xanh**, gồm ExportStabilityTest đạt. Lượt chạy ngay trước đó: 186/187 — 1 đỏ không tái lập tại `SwapTrayTest` (đổi món random; tiền sử đỏ không ổn định từ VN-001 đợt 3, thuộc tính năng REC-005 của phiên song song; giữa hai lượt không đổi dữ liệu/code). (Lượt Pest thử trong worktree bị lỗi hạ tầng do vendor symlink làm lệch namespace test — đã loại bỏ, không dùng làm bằng chứng.)
+- Pest tại checkout chính (DB test mặc định, cửa sổ sạch — đã kiểm tra không có tiến trình test của phiên song song): **cả hai lượt chạy toàn bộ đều xanh tuyệt đối — 177/177 và 187/187** (số test tăng giữa hai lượt do phiên song song bổ sung test mới), gồm ExportStabilityTest đạt. *Đính chính cùng ngày (2026-11-02):* bản đầu của mục này ghi lượt đầu 186/187 với “1 đỏ SwapTrayTest không tái lập” — đó là đọc nhầm đầu ra trung gian giữa lúc chạy; đầu ra cuối (terminal, exit 0) của cả hai lượt đều không có test đỏ nào. (Lượt Pest thử trong worktree bị lỗi hạ tầng do vendor symlink làm lệch namespace test — đã loại bỏ, không dùng làm bằng chứng.)
 - Kỷ luật phối hợp: mọi commit đều pathspec riêng; không chạm file đang dở của T-04/T-05 (chỉ đọc trạng thái); seed/validate chạy trên worktree + DB riêng `shake_hungry_t02`/`shake_hungry_t02b`, không đụng DB dev/test.
 
 ## Các commit của gói

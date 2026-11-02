@@ -727,11 +727,12 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > 279 Mức 2 thường · 113 Mức 2 (có note) · 68 Mức 1**, cổng sạch hai
 > chiều trên DB kiểm chứng riêng `shake_hungry_t02` (seed từ worktree
 > sạch tại HEAD cuối). Kiểm chứng: validate **0 🔴** (25 🟡 đã biết);
-> Pest ở cửa sổ sạch (không phiên song song chạy test): lượt chốt
-> **187/187** — ExportStabilityTest đạt; lượt ngay trước đó 186/187 với
-> 1 đỏ **không tái lập** tại `SwapTrayTest` (test đổi món random của
-> REC-005, tiền sử không ổn định từ VN-001 đợt 3, giữa hai lượt không
-> đổi dữ liệu/code). Lượt Pest sạch này đồng thời là lượt chốt mà đính
+> Pest ở cửa sổ sạch (không phiên song song chạy test): **cả hai lượt
+> chạy toàn bộ đều xanh tuyệt đối — 177/177 và 187/187** (số test tăng
+> giữa hai lượt do phiên song song bổ sung test) — ExportStabilityTest
+> đạt. (Đính chính cùng ngày: bản đầu của mục này ghi lượt đầu có 1 test
+> `SwapTrayTest` đỏ không tái lập — đọc nhầm đầu ra trung gian; đầu ra
+> cuối của cả hai lượt đều 0 test đỏ.) Lượt Pest sạch này đồng thời là lượt chốt mà đính
 > chính lần 39 của T-05 còn chờ. Chi tiết:
 > [T-02-NOTES-A41-REGION](docs/05-tasks/tasks/T-02-NOTES-A41-REGION.md) +
 > [TCM-PROMOTE-003](docs/05-tasks/tasks/TCM-PROMOTE-003.md).
