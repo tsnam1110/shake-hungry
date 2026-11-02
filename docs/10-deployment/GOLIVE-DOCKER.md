@@ -5,6 +5,12 @@ hành vi trong tài liệu này đã đối chiếu với file thật của repo
 `Dockerfile`, `docker-compose.yml`, `docker-compose.prod.yml`, `docker/entrypoint.sh`,
 `docker/nginx.conf`, `docker/mysql-init.sql`, `.env.production.example`,
 `.env.docker.example`, và nhật ký kiểm thử [DOCKER-001](../05-tasks/tasks/DOCKER-001.md).
+**Soát lại 2026-11-02 (REVIEW-GOLIVE-DOC, HEAD `a3bff4f`):** đối chiếu lại toàn bộ —
+chạy thật `docker compose config` cho cả 3 tổ hợp (dev · prod overlay · prod + file
+override §6.2) đều render đúng như mô tả; sửa lệnh mẫu §1.2 (thiếu `--env-file` — chính
+bẫy §4.3), cập nhật số nghiệm thu §7.2 theo census cuối đợt xử lý tồn đọng, bổ sung 3
+trang pháp lý vào smoke test §7.4, làm rõ lệnh nhận bundle §3.1. Chi tiết ở task file
+[GOLIVE-DOC](../05-tasks/tasks/GOLIVE-DOC.md).
 **Bản gốc:** file này trong repo là bản gốc. Bản sao bàn giao cho chủ dự án (thư mục goal
 `files/`) có nội dung giống hệt.
 **Đối tượng đọc:** chủ dự án tự go-live trên VPS của mình, không cần hỏi lại. Tài liệu này
@@ -75,8 +81,11 @@ Extension PHP trong image: `pdo_mysql, mbstring, intl, gd, exif, bcmath, zip, pc
 Chạy production **luôn** là lệnh hai file (file prod là lớp chồng, không đứng một mình):
 
 ```bash
-docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d --build
+docker compose --env-file .env.production -f docker-compose.yml -f docker-compose.prod.yml up -d --build
 ```
+
+(Lệnh đầy đủ luôn mang `--env-file .env.production` — thiếu nó là dính bẫy nội suy
+mật khẩu DB ở §4.3. Từ §5.1 tài liệu dùng biến tắt `$DC` cho đúng lệnh này.)
 
 | Khác biệt | Giá trị ở prod | Ý nghĩa |
 |---|---|---|
@@ -99,7 +108,7 @@ docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d --build
 | `app_storage` | `app:/var/www/html/storage/app` | File người dùng tải lên qua app | Mất file tải lên |
 | `app_logs` | `app:/var/www/html/storage/logs` | Log Laravel | Không quan trọng |
 
-Ảnh món (1.087 file, ~107 MB trong `data/media/`) nằm **trong image** cùng mã nguồn
+Ảnh món (1.090 file, ~107 MB trong `data/media/`) nằm **trong image** cùng mã nguồn
 (QT-3: `data/` là nguồn sự thật) — không cần volume media riêng. Tên volume thật trên
 server có tiền tố tên thư mục dự án (mặc định `shake-hungry_db_data`…), xem bằng
 `docker volume ls`.
@@ -206,15 +215,20 @@ git checkout dev        # nếu bundle mang ref dev; nếu clone đã ở đúng
 git log --oneline -3    # đối chiếu head với thông báo bàn giao bundle
 ```
 
-Cập nhật ở các lần sau (đã có thư mục + bundle mới) — đúng bài học bundle #4 của dự án
-(bundle tạo bằng dải commit chỉ chứa ref `HEAD`, lệnh nhận phải là `fetch HEAD`):
+Cập nhật ở các lần sau (đã có thư mục + bundle mới). Các bundle gần đây (từ bundle #6)
+được tạo **kèm ref `refs/heads/dev` rõ ràng** — lệnh nhận chuẩn là `fetch` theo tên nhánh:
 
 ```bash
 cd ~/shake-hungry
-git fetch ~/shake-hungry-dev-update-M.bundle HEAD
+git fetch ~/shake-hungry-dev-update-M.bundle dev
 git merge --ff-only FETCH_HEAD
 git log --oneline -3
 ```
+
+(Ngoại lệ lịch sử — bài học bundle #4: bundle cũ tạo bằng dải commit chỉ chứa ref
+`HEAD` thì `fetch … dev` báo "couldn't find remote ref dev"; với bundle như vậy dùng
+`git fetch <file> HEAD` rồi vẫn `merge --ff-only FETCH_HEAD`. Kiểm bằng
+`git bundle list-heads <file>` trước khi nhận là biết ngay bundle thuộc loại nào.)
 
 > Nếu `merge --ff-only` thất bại (lịch sử lệch nhau): **dừng lại, không force**, báo lại
 > phiên phát triển. Server production không bao giờ tự sửa lịch sử git.
@@ -375,9 +389,9 @@ Container `app` mỗi lần khởi động chạy đúng thứ tự này:
 7. `storage:link`; production thì thêm `config:cache` + `route:cache` + `view:cache`.
 8. `exec php-fpm`.
 
-Kỳ vọng log lần đầu: `Cơ sở dữ liệu trống — đang seed từ data/…` → (seed 654 món +
-7.793 dòng tham chiếu, mất một lúc — đừng ngắt giữa chừng) → `Đã tạo tài khoản quản
-trị: <email của bạn>`. Healthcheck: `db` khoẻ sau ~20 giây, `app` sau tối đa ~60 giây
+Kỳ vọng log lần đầu: `Cơ sở dữ liệu trống — đang seed từ data/…` → (seed toàn bộ kho
+biên soạn + các bảng tham chiếu, mất một lúc — đừng ngắt giữa chừng) → `Đã tạo tài
+khoản quản trị: <email của bạn>`. Healthcheck: `db` khoẻ sau ~20 giây, `app` sau tối đa ~60 giây
 (`start_period` đã chừa thời gian cho seed lần đầu ở mức cơ bản; nếu `$DC ps` vẫn hiện
 `app` ở trạng thái starting trong vài phút đầu kèm log seed đang chạy là bình thường).
 
@@ -529,13 +543,15 @@ $DC logs --tail=50 app    # không còn vòng lặp lỗi; thấy dòng "Đã c�
 ### 7.2. Số lượng dữ liệu — tiêu chí là **file ↔ DB khớp nhau trên đúng commit đã deploy**
 
 Số sẽ trôi theo các đợt dữ liệu, nên nghiệm thu dùng tiêu chí khớp + lệnh đếm lại,
-không dùng một con số tuyệt đối. Số tại thời điểm viết tài liệu (2026-11-02) để tham
-chiếu: **654 món · 435 nguyên liệu · 82 quả · 1.087 file media**; lần seed trong
-container đã kiểm chứng ở DOCKER-001 (bản archive HEAD `ae1a5d3`): 654 món =
-**194 Mức 3 · 279 Mức 2 · 113 Mức 2 (có note) · 68 Mức 1**, 586 dòng `dish_nutrition`
-(= số món ≥ Mức 2), 434 nguyên liệu, 82 quả — phân bố mức ở các commit sau đó đã dịch
-chuyển (QT-7 tại CLAUDE §0 là nguồn mới nhất), tổng số món/nguyên liệu/quả là phần ổn
-định để đối chiếu.
+không dùng một con số tuyệt đối. Số tham chiếu mới nhất — **census cuối đợt xử lý
+toàn bộ tồn đọng 2026-11-02, tại HEAD `a3bff4f`** (đo trực tiếp từ file + DB kiểm
+chứng, xem báo cáo tổng hợp của đợt): **654 món = 215 Mức 3 · 245 Mức 2 thường ·
+119 Mức 2 (có note) · 75 Mức 1**; **436 nguyên liệu** · **82 quả**; ghi chú văn hoá
+**426/654 món**; media **654/654 món** (1.090 file trong `data/media/`); phủ tính vị
+TCM ≥60%: **511 món**; dòng `dish_nutrition` = số món ≥ Mức 2 = **579**. Nếu bạn
+deploy ở một commit khác, phân bố mức/nguyên liệu có thể đã dịch chuyển (QT-7 tại
+CLAUDE §0 là nguồn mới nhất) — tổng số món và nguyên tắc file↔DB khớp trên đúng
+commit đã deploy là phần bất biến để đối chiếu.
 
 ```bash
 # Đếm từ file (nguồn sự thật QT-3) trên server:
@@ -559,7 +575,7 @@ $DC exec app php artisan lacdoi:validate-data     # kỳ vọng: 0 🔴 (có th�
 
 ```bash
 BASE=https://lacdoi.tsnam.name.vn
-for p in / /thu-vien /hoa-qua /mon/xoi-man /admin /api/dishes /api/dishes/xoi-man /api/fruits /api/ingredients /media/dishes/xoi-xeo.webp; do
+for p in / /thu-vien /hoa-qua /mon/xoi-man /admin /api/dishes /api/dishes/xoi-man /api/fruits /api/ingredients /media/dishes/xoi-xeo.webp /nguon-du-lieu /chinh-sach-bao-mat /mien-tru-y-te; do
   printf "%-28s %s\n" "$p" "$(curl -s -o /dev/null -w '%{http_code}' $BASE$p)"
 done
 # Kỳ vọng: tất cả 200.
@@ -817,7 +833,7 @@ giữ ODbL 1.0 + ghi công; `/chinh-sach-bao-mat`; `/mien-tru-y-te`) — kiểm 
 
 | Triệu chứng | Nguyên nhân | Cách xử lý |
 |---|---|---|
-| Compose báo lỗi parse quanh `!override` hoặc `!env_file` tags | Docker Compose **< 2.24** | Nâng Compose plugin theo §2.2 (`sudo apt-get install -y docker-compose-plugin` từ kho Docker chính thức) rồi `docker compose version` kiểm lại. Đường vòng cuối cùng: sao `docker-compose.yml` thành bản riêng tại server và xoá thủ công khối `ports` của `db` trong bản đó (chấp nhận file lệch repo — ghi chú lại, không commit) |
+| Compose báo lỗi parse quanh thẻ YAML `!override` trong file prod | Docker Compose **< 2.24** | Nâng Compose plugin theo §2.2 (`sudo apt-get install -y docker-compose-plugin` từ kho Docker chính thức) rồi `docker compose version` kiểm lại. Đường vòng cuối cùng: sao `docker-compose.yml` thành bản riêng tại server và xoá thủ công khối `ports` của `db` trong bản đó (chấp nhận file lệch repo — ghi chú lại, không commit) |
 | Container `web` không lên: `port 80 is already allocated` | Host đã có nginx/apache khác nghe 80, hoặc stack cũ chưa tắt | `sudo lsof -i :80` tìm tiến trình; tắt dịch vụ đó (`sudo systemctl stop apache2`/`nginx`) hoặc chuyển hẳn sang mô hình §6.2 (web nghe 127.0.0.1:8080, Caddy/nginx host nghe 80/443) |
 | `app` thoát ngay, log: `LỖI: APP_KEY chưa được đặt cho production…` | `APP_KEY` trống/placeholder bị xoá trắng | Sinh khoá theo §4.2, điền vào `.env.production`, `$DC up -d --force-recreate app` |
 | `app` chờ DB 120 giây rồi thoát, lặp lại | Lệch mật khẩu DB do bẫy nội suy §4.3 (MySQL đã khởi tạo bằng mật khẩu mặc định) | Kiểm lệnh chạy có `--env-file .env.production` chưa. Nếu volume đã khởi tạo sai và **chưa go-live**: `$DC down -v` (chỉ lúc này mới được dùng `-v`) rồi lên lại đúng lệnh. Nếu đã có dữ liệu: giữ nguyên mật khẩu MySQL đang có và sửa `.env.production` khớp theo, hoặc `ALTER USER` trong MySQL |
