@@ -292,6 +292,23 @@ hoặc tự đo. Kiểm chứng trên DB riêng `shake_hungry_t05`: validate
 **0 🔴**, recompute khớp kỳ vọng, Pest **173/173**. Chi tiết:
 [tasks/T-05-INGREDIENT-UNLOCK.md](./tasks/T-05-INGREDIENT-UNLOCK.md).
 
+**T-02/T-03/T-13 — GIẢI TOẢ 7 FILE MÓN BỊ GIỮ + GHI CHÚ + A4.1 + REGION
+ĐÃ XONG (2026-11-02):** commit media cho 7 file VN-001 bỏ qua hai lần
+(`9ea4ad3`, Wikimedia CC + attribution); viết `cultural_note` đạt chuẩn
+VN-001 cho **6/7 món** (`62e48f5` — nguồn biên tập mở kiểm chứng tận nơi:
+SK&ĐS, VnExpress, Thanh Niên, Wikipedia ×2, Thương hiệu & Công luận);
+`dau-bap-xao-toi` để chờ **nhóm A** (chỉ có nguồn thương mại/SEO). **T-03:**
+áp A4.1 cho `dau-bap-xao-toi` (`555f04c`) — đóng tồn đọng cuối của gói A4
+(LV2-012 §5); kcal/khẩu phần 101,00–149,20 → 98,50–147,20. **T-13:**
+`mam-ruot-an-giang` có `region_code='vn-south'` (`1f5d9a1`) — hết file
+món `region_code` null toàn kho. **TCM-PROMOTE-003** (quét lại cổng toàn
+kho): 6 món ghi chú mới + `xoi-man` (đủ cổng nhờ T-05) lên **Mức 3**
+(`7ad160d`, `61819bc`); nâng bù 0 món mới; toàn kho **194 Mức 3 · 279
+Mức 2 thường · 113 Mức 2 (có note) · 68 Mức 1**; cổng sạch hai chiều trên
+DB kiểm chứng riêng. Chi tiết:
+[tasks/T-02-NOTES-A41-REGION.md](./tasks/T-02-NOTES-A41-REGION.md) +
+[tasks/TCM-PROMOTE-003.md](./tasks/TCM-PROMOTE-003.md).
+
 > Mỗi task có file chi tiết riêng tại [`tasks/`](./tasks/). Click mã task để xem đầy đủ.
 > Tạo task mới: copy [`TASK-TEMPLATE.md`](./TASK-TEMPLATE.md) vào `tasks/`, đặt tên theo mã task.
 > Trước khi đánh dấu DONE: đối chiếu [`DEFINITION-OF-DONE.md`](./DEFINITION-OF-DONE.md).
@@ -549,6 +566,8 @@ kiểm chứng TEST-002**; `migrate:fresh --seed` dựng lại đúng toàn bộ
 | [VN-001](./tasks/VN-001.md) | Ghi chú văn hoá (`cultural_note`) theo đợt — chương trình Mức 3 | Dữ liệu | ✅ ĐỢT 1 (2026-11-01) — 135 món Mức 1 đạt phủ ≥60%: **đã viết 87** (census mở lại 100% URL nguồn; 7 URL chết/thay nội dung → 6 món viết lại từ nguồn thay thế đã kiểm chứng; rà diễn đạt 0 câu khung y tế bị cấm), **48 chờ có lý do** (31 không có nguồn biên tập đạt chuẩn viết riêng · 12 lệch định danh/chờ quyết · 5 chất liệu chủ yếu khung sức khoẻ); **KHÔNG đổi `completeness_level`** — 87 món đủ 2 tiêu chí nâng bù chỉ thống kê; validate 0 🔴, Pest 157/157. ✅ ĐỢT 2 (2026-11-01) — 472 món Mức 2 thường: **đã viết 250/465** món trong phạm vi thực tế (7 file đang dở của phiên song song bị bỏ qua, ghi rõ), **215 chờ có lý do** (A 201 không có nguồn biên tập đạt chuẩn · B 9 lệch định danh/chờ quyết · C 5 chỉ có khung sức khoẻ); census mở lại 100% URL nguồn: 0 chết, 0 vi phạm khung trong text ghi chú; khắc phục census: 29 slug cắt/sửa chi tiết, 23 slug thay nguồn + viết lại, 4 slug gỡ ghi chú chuyển chờ; **thống kê đủ cổng Mức 3 (chỉ thống kê, chưa gán): 187/472 Mức 2 thường — toàn kho 274 món**; toàn kho 337/654 món có `cultural_note`; validate 0 🔴, Pest 157/157. ✅ ĐỢT 3 — ĐÓNG TUYẾN (2026-11-01): 51/95 món Mức 1 còn lại đã viết (chờ 44: A 23 · B 19 · C 2), 75/82 hồ sơ quả đã viết (chờ 7), 7 file Mức 2 bị giữ bỏ qua lần 2; census 128 URL 0 chết, 18 file cắt câu ngoài nguồn, rà diễn đạt 0 vi phạm; **toàn tuyến: 388/654 món + 75/82 quả có `cultural_note`**; đủ cổng Mức 3 (chỉ thống kê): 187/274/301; validate 0 🔴, ExportStabilityTest đạt, Pest 160/162 (2 đỏ SwapTrayTest — phiên song song) | TCM-000, TCM-001 | 2026-11-01 |
 | [TCM-PROMOTE-001](./tasks/TCM-PROMOTE-001.md) | Nâng bù "Mức 2 (có note)" cho 87 món đủ thông tin Mức 3 (đường nâng bù) | Dữ liệu | ✅ (2026-11-01) — 87 món Mức 1 đủ 2 tiêu chí (phủ ≥60% + `cultural_note`) nâng lên Mức 2 với `level_basis='tcm_compensation'` + `level_note` riêng từng món soạn từ hồ sơ LV2 (phân bố lý do: 23 thiếu nguồn/không đồng thuận · 21 biến thể/chờ quyết · 20 trần nguyên liệu định danh · 14 bị chặn 429 · 8 không có công thức đúng định danh · 1 link rot); đối chiếu danh sách khớp 3 chiều (file · VN-001 · DB kiểm chứng); **toàn kho sau nâng: 472 Mức 2 thường + 87 Mức 2 (có note) + 95 Mức 1**; validate 0 🔴, Pest 157/157, ExportStabilityTest đạt | TCM-000, TCM-001, VN-001 | 2026-11-01 |
 | [TCM-PROMOTE-002](./tasks/TCM-PROMOTE-002.md) | Gán **Mức 3** cho món Mức 2 thường đủ cổng + nâng bù đợt 2 cho 27 món Mức 1 mới đủ điều kiện | Dữ liệu | ✅ (2026-11-01) — Phần A: **187 món** Mức 2 thường (phủ ≥60% + `cultural_note`, đối chiếu VN-001 khớp tuyệt đối) → `completeness_level=3`; món "Mức 2 (có note)" không gán Mức 3 theo nguyên tắc nền Mức 2 thường; grep toàn bộ nơi dùng mức: **0 dòng code phải sửa** (`levelLabel` động, bộ lọc admin đã có Mức 3), kiểm hiển thị thật API/trang món trên DB kiểm chứng. Phần B: **27 món** Mức 1 mới đủ 2 tiêu chí → nâng bù `tcm_compensation` + `level_note` riêng từng món (11 thiếu nguồn · 7 biến thể/chờ quyết · 5 chặn 429 · 2 link rot AUDIT-FIX · 1 trần nguyên liệu · 1 không có công thức web); **toàn kho sau đợt: 187 Mức 3 + 285 Mức 2 thường + 114 Mức 2 (có note) + 68 Mức 1**, khớp 3 cách; validate 0 🔴 (24 🟡, +2 V9 giải thích được), Pest 162/162, ExportStabilityTest đạt | TCM-000, TCM-001, VN-001, TCM-PROMOTE-001 | 2026-11-01 |
+| [T-02-NOTES-A41-REGION](./tasks/T-02-NOTES-A41-REGION.md) | Giải toả 7 file món bị giữ (media) + ghi chú văn hoá 6/7 + A4.1 `dau-bap-xao-toi` (T-03) + `region_code` `mam-ruot-an-giang` (T-13) | Dữ liệu | ✅ (2026-11-02) — media `9ea4ad3`; ghi chú `62e48f5` (6 viết, `dau-bap-xao-toi` chờ nhóm A); A4.1 `555f04c` (kcal 101,00–149,20 → 98,50–147,20); region `1f5d9a1`; validate 0 🔴 trên DB kiểm chứng riêng | VN-001, LV2-012 | 2026-11-02 |
+| [TCM-PROMOTE-003](./tasks/TCM-PROMOTE-003.md) | Quét lại cổng Mức 3 + nâng bù toàn kho sau T-02 | Dữ liệu | ✅ (2026-11-02) — 6 món ghi chú mới (phủ 81,74–100%) + `xoi-man` (66,01%, đủ cổng nhờ T-05 `fe876aa`) → Mức 3; nâng bù 0 món mới; **toàn kho 194 Mức 3 · 279 Mức 2 thường · 113 Mức 2 (có note) · 68 Mức 1**, cổng sạch hai chiều, validate 0 🔴 | TCM-PROMOTE-002, VN-001, T-02 | 2026-11-02 |
 
 ---
 

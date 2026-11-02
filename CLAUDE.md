@@ -707,6 +707,35 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > ở cửa sổ sạch để chốt. Chi tiết: khối Đính chính §7 của
 > [T-05-INGREDIENT-UNLOCK](docs/05-tasks/tasks/T-05-INGREDIENT-UNLOCK.md).
 
+> ## 📗 Bổ sung lần 40, 2026-11-02 — T-02/T-03/T-13 ĐÃ XONG + TCM-PROMOTE-003 (6 + 1 món lên Mức 3)
+>
+> Theo chỉ đạo xử lý toàn bộ tồn đọng của chủ dự án (2026-11-02): **giải
+> toả 7 file món** VN-001 bỏ qua hai lần — commit media Wikimedia CC có
+> attribution (`9ea4ad3`); **ghi chú văn hoá 6/7 món** đạt chuẩn VN-001
+> nguyên vẹn (`62e48f5`; nguồn biên tập mở kiểm chứng tận nơi: SK&ĐS,
+> VnExpress, Thanh Niên, Wikipedia ×2, Thương hiệu & Công luận);
+> `dau-bap-xao-toi` chờ **nhóm A** (chỉ có nguồn thương mại/SEO — không
+> hạ chuẩn). **T-03 — đóng tồn đọng cuối cùng của gói A4:** áp A4.1 cho
+> `dau-bap-xao-toi` (`555f04c`); recompute trên DB kiểm chứng riêng:
+> kcal/khẩu phần 101,00–149,20 → **98,50–147,20** (`hat-nem` chưa có số
+> trong kho → engine ghi `missing_ingredients`, tính 0 — không bịa số).
+> **T-13:** `mam-ruot-an-giang` gán `region_code='vn-south'` (`1f5d9a1`)
+> — hết món `region_code` null toàn kho. **TCM-PROMOTE-003 — quét lại
+> cổng toàn kho:** 6 món ghi chú mới (phủ 81,74–100%) + `xoi-man`
+> (66,01% — đủ cổng nhờ T-05 `fe876aa` đưa về Mức 2 thường) lên **Mức 3**
+> (`7ad160d`, `61819bc`); nâng bù **0 món mới**; **toàn kho 194 Mức 3 ·
+> 279 Mức 2 thường · 113 Mức 2 (có note) · 68 Mức 1**, cổng sạch hai
+> chiều trên DB kiểm chứng riêng `shake_hungry_t02` (seed từ worktree
+> sạch tại HEAD cuối). Kiểm chứng: validate **0 🔴** (25 🟡 đã biết);
+> Pest ở cửa sổ sạch (không phiên song song chạy test): lượt chốt
+> **187/187** — ExportStabilityTest đạt; lượt ngay trước đó 186/187 với
+> 1 đỏ **không tái lập** tại `SwapTrayTest` (test đổi món random của
+> REC-005, tiền sử không ổn định từ VN-001 đợt 3, giữa hai lượt không
+> đổi dữ liệu/code). Lượt Pest sạch này đồng thời là lượt chốt mà đính
+> chính lần 39 của T-05 còn chờ. Chi tiết:
+> [T-02-NOTES-A41-REGION](docs/05-tasks/tasks/T-02-NOTES-A41-REGION.md) +
+> [TCM-PROMOTE-003](docs/05-tasks/tasks/TCM-PROMOTE-003.md).
+
 **Trạng thái thực tế, kiểm ngày 2026-10-31 (đã chạy lại toàn bộ lệnh kiểm chứng):**
 
 | Hạng mục | Thực tế | Kiểm bằng |
