@@ -240,6 +240,24 @@ có nhãn tính vị đạt chuẩn → phủ tính vị của món 14,5% → r�
 Chi tiết: §0 CLAUDE bổ sung lần 47 + mục QD-11 của
 [tasks/QD-ADJUDICATE-1.md](./tasks/QD-ADJUDICATE-1.md).
 
+**QD-15 — HÀNG ĐỢI 42 MỤC LV2-012 §4 + 4 CẶP VN-001 ĐÃ XỬ LÝ (2026-11-02,
+`1eca5a6` + `4d53cec`):** 41 đơn vị thuộc phạm vi (37 mục §4 + 4 cặp VN-001;
+5 mục §4 còn lại thuộc QD-ADJUDICATE-1/QD-12/QD-13): **áp dụng tại chỗ 14
+đơn vị** (10 mục định danh — nổi bật: `che-tao-soan` viết lại thành chè hoa
+cau + biên soạn slug mới `bot-san-day` từ Bảng TPTP VN mục 02021;
+`banh-re` viết lại đúng định danh Phan Thiết; `bim-bim` đổi tên "Bim bim
+khoai tây" trong mục 30 — và **4 cặp trùng thật gộp biến thể**:
+che-thung→che-ba-ba, com-dua-bo→com-rang-dua, bun-bung→bun-doc-mung,
+bun-ga→bun-mang-ga); **đóng theo điều kiện 3 mục** (bun-suong giữ "Mức 2
+(có note)" sau T-05; chao-tom-cang trần nguồn — giữ Mức 1; dau-bap-xao-toi
+đã áp A4.1 ở T-03); **24 đơn vị lập hồ sơ + khuyến nghị chờ chủ dự án**
+(trong đó 2 kết luận ÂM TÍNH về tồn tại: `com-hen-xao`, `chao-ca-bong`;
+khuyến nghị xoá file `banh`; khuyến nghị KHÔNG mở tiền lệ sản phẩm khô cho
+kho-qua-luoc/kho-ca-loc). QD-15 **không tự đổi Mức món nào**. Kiểm chứng cô
+lập: validate 0 🔴/0 🟠, export byte-khớp trong phạm vi; kiểm chứng toàn
+cục chốt ở cửa sổ sạch CONSOLIDATE-FINAL. Chi tiết:
+[tasks/QD-15-LEGACY-QUEUE.md](./tasks/QD-15-LEGACY-QUEUE.md).
+
 **T-06 — GHI CHÚ VĂN HOÁ CHO MÓN CÒN THIẾU + TCM-PROMOTE-004 ĐÃ XONG
 (2026-11-02):** VN-001 đợt bổ sung: đo lại 260 món chưa có ghi chú
 (216 Mức 2 thường + 44 Mức 1), nghiên cứu 236 món ngoài phạm vi QD

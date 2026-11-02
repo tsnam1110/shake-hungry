@@ -947,6 +947,28 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > `level_note` của món. Chi tiết: `mapping_note` trong
 > `data/ingredients/ca-kinh.json` + mục QD-11 của
 > [QD-ADJUDICATE-1](docs/05-tasks/tasks/QD-ADJUDICATE-1.md).
+
+> ## 📗 Bổ sung lần 48, 2026-11-02 — CONSOLIDATE-FINAL: QT-7 CÒN HOÃN CỦA QD-15 ĐÃ BỔ SUNG
+>
+> **QD-15 ĐÃ XỬ LÝ (2026-11-02, `1eca5a6` + `4d53cec`)** — hàng đợi 42 mục
+> LV2-012 §4 + 4 cặp nghi trùng VN-001: 41 đơn vị thuộc phạm vi (5 mục §4
+> còn lại thuộc QD-ADJUDICATE-1/QD-12/QD-13). **Áp dụng tại chỗ 14 đơn vị:**
+> 10 mục định danh (nổi bật: `che-tao-soan` viết lại thành chè hoa cau +
+> biên soạn slug `bot-san-day` từ Bảng TPTP VN 02021 — 340 kcal;
+> `banh-re` viết lại đúng định danh Phan Thiết; `bim-bim` đổi tên trong
+> mục 30) và **4 cặp trùng thật gộp biến thể** (che-thung→che-ba-ba,
+> com-dua-bo→com-rang-dua, bun-bung→bun-doc-mung, bun-ga→bun-mang-ga).
+> **Đóng theo điều kiện 3 mục** (bun-suong giữ "Mức 2 (có note)" sau T-05;
+> chao-tom-cang trần nguồn; dau-bap-xao-toi đã áp A4.1 ở T-03). **24 đơn vị
+> lập hồ sơ + khuyến nghị chờ chủ dự án** — gồm 2 kết luận ÂM TÍNH tồn tại
+> (`com-hen-xao`, `chao-ca-bong`), khuyến nghị xoá file `banh`, khuyến nghị
+> KHÔNG mở tiền lệ sản phẩm khô (kho-qua-luoc), phương án sup-ca và 16 hồ
+> sơ định danh. QD-15 không tự đổi Mức món nào; kiểm chứng cô lập validate
+> 0 🔴/0 🟠, kiểm chứng toàn cục chốt ở cửa sổ sạch CONSOLIDATE-FINAL.
+> Mục QT-7 này chính là phần QD-15-LEGACY-QUEUE §4 đã ghi hoãn (hai file
+> đang bị phiên QD-ADJUDICATE-1 giữ thay đổi chưa commit tại thời điểm đó);
+> mục Docker/GOLIVE đã kiểm tra — đã có ở bổ sung lần 46, không bổ sung
+> trùng. Chi tiết: [QD-15-LEGACY-QUEUE](docs/05-tasks/tasks/QD-15-LEGACY-QUEUE.md).
 **Trạng thái thực tế, kiểm ngày 2026-10-31 (đã chạy lại toàn bộ lệnh kiểm chứng):**
 
 | Hạng mục | Thực tế | Kiểm bằng |

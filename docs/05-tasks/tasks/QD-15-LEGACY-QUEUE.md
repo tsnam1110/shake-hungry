@@ -146,3 +146,6 @@ Khuyến nghị đã ghi ở LV2-012 là **HOÃN** tiền lệ "hấp thụ dầ
 - **ROADMAP + CLAUDE §0 (QT-7):** HOÃN có ghi nhận — tại thời điểm đóng QD-15, cả hai file
   đang chứa thay đổi chưa commit của phiên QD-ADJUDICATE-1; commit pathspec lúc này sẽ nuốt
   thay đổi của họ. Mục QD-15 cần bổ sung vào ROADMAP/CLAUDE §0 ngay ở cửa sổ sạch kế tiếp.
+  → **ĐÃ BỔ SUNG (CONSOLIDATE-FINAL, 2026-11-02):** mục QD-15 trong ROADMAP + CLAUDE §0
+  "Bổ sung lần 48" đã thêm ở cửa sổ sạch — mục hoãn QT-7 của QD-15 ĐÓNG. (Mục Docker/GOLIVE
+  đã kiểm tra: đã có ở CLAUDE §0 bổ sung lần 46 + ROADMAP, không bổ sung trùng.)
