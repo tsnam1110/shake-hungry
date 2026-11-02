@@ -21,11 +21,11 @@ beforeEach(function () {
     $this->seed(CombinationSeeder::class);
 });
 
-it('kho có 23 bản ghi đợt 1 và tầng suy ra đúng từ evidence_class', function () {
-    expect(Combination::count())->toBe(23)
-        ->and(Combination::where('evidence_class', 'E1')->count())->toBe(9)
-        ->and(Combination::where('evidence_class', 'E2')->count())->toBe(6)
-        ->and(Combination::where('evidence_class', 'E3')->count())->toBe(8);
+it('kho có 38 bản ghi (đợt 1 + đợt 2) và tầng suy ra đúng từ evidence_class', function () {
+    expect(Combination::count())->toBe(38)
+        ->and(Combination::where('evidence_class', 'E1')->count())->toBe(10)
+        ->and(Combination::where('evidence_class', 'E2')->count())->toBe(9)
+        ->and(Combination::where('evidence_class', 'E3')->count())->toBe(19);
 
     $simva = Combination::where('slug', 'buoi--simvastatin')->firstOrFail();
     expect($simva->tier())->toBe(1)
@@ -53,6 +53,38 @@ it('món chứa cả hai phía: cặp tầng 2 vào notes, cặp dân gian đã 
 
     $noteDish = $this->getJson('/api/dishes/hu-tieu')->assertOk()->json('combinations');
     expect(collect($noteDish['notes'])->pluck('slug'))->toContain('gan-lon--gia-do');
+});
+
+it('đợt 2: MAOI × tyramin ở tầng 1 trên trang bia; cặp bổ sung tỏi chỉ áp dạng viên', function () {
+    $bia = $this->getJson('/api/ingredients/bia')->assertOk()->json('ingredient.combinations');
+    $maoi = collect($bia)->firstWhere('slug', 'tyramin--maoi');
+    expect($maoi)->not->toBeNull()
+        ->and($maoi['tier'])->toBe(1)
+        ->and($maoi['other']['type'])->toBe('drug_group')
+        ->and($maoi['condition_vi'])->toContain('CHỐNG CHỈ ĐỊNH');
+
+    $toi = $this->getJson('/api/ingredients/toi')->assertOk()->json('ingredient.combinations');
+    $supp = collect($toi)->firstWhere('slug', 'toi-bo-sung--warfarin-aspirin');
+    expect($supp)->not->toBeNull()
+        ->and($supp['tier'])->toBe(2)
+        ->and($supp['condition_vi'])->toContain('VIÊN BỔ SUNG')
+        ->and($supp['condition_vi'])->toContain('KHÔNG nằm trong cảnh báo');
+});
+
+it('đợt 2: cam thảo tồn tại ở mức dữ liệu nhưng không gắn vào trang nguyên liệu nào', function () {
+    $licorice = Combination::where('slug', 'cam-thao--thuoc-ha-ap')->firstOrFail();
+    expect($licorice->tier())->toBe(2)
+        ->and($licorice->side('a')['members'])->toBe([]);
+    foreach (['sua-tuoi', 'toi', 'bia', 'gung'] as $slug) {
+        $rows = $this->getJson("/api/ingredients/{$slug}")->assertOk()->json('ingredient.combinations');
+        expect(collect($rows)->pluck('slug'))->not->toContain('cam-thao--thuoc-ha-ap');
+    }
+});
+
+it('đợt 2: món có dưa leo + cà chua nhận cặp dân gian vào folk, không vào notes', function () {
+    $c = $this->getJson('/api/dishes/com-ga-tam-ky')->assertOk()->json('combinations');
+    expect(collect($c['folk'])->pluck('slug'))->toContain('dua-leo--ca-chua')
+        ->and(collect($c['notes'])->pluck('slug'))->not->toContain('dua-leo--ca-chua');
 });
 
 it('cặp kết hợp KHÔNG lọc món khỏi catalog và không gắn tuyến thuốc vào món', function () {
