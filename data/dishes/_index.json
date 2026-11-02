@@ -579,7 +579,7 @@
     },
     {
       "slug": "bim-bim",
-      "name": "Bim bim",
+      "name": "Bim bim khoai tây",
       "country_code": "VN"
     },
     {
@@ -1458,6 +1458,11 @@
       "country_code": "VN"
     },
     {
+      "slug": "chao-bot-ca-loc-quang-tri",
+      "name": "Cháo bột cá lóc Quảng Trị",
+      "country_code": "VN"
+    },
+    {
       "slug": "chao-ca-bong",
       "name": "cháo cá bống",
       "country_code": "VN"
@@ -1465,11 +1470,6 @@
     {
       "slug": "chao-ca-loc",
       "name": "Cháo cá lóc rau đắng",
-      "country_code": "VN"
-    },
-    {
-      "slug": "chao-ca-loc-trung",
-      "name": "Cháo cá lóc nghệ (miền Trung)",
       "country_code": "VN"
     },
     {
@@ -1489,7 +1489,7 @@
     },
     {
       "slug": "chao-dau-xanh",
-      "name": "cháo đậu xanh",
+      "name": "Cháo đậu xanh thịt bằm",
       "country_code": "VN"
     },
     {
@@ -1509,7 +1509,7 @@
     },
     {
       "slug": "chao-khoai",
-      "name": "cháo khoái",
+      "name": "Cháo khoai lang",
       "country_code": "VN"
     },
     {
@@ -1694,7 +1694,7 @@
     },
     {
       "slug": "che-tao-soan",
-      "name": "Chè táo soạn",
+      "name": "Chè hoa cau (chè táo xọn)",
       "country_code": "VN"
     },
     {
@@ -2428,11 +2428,6 @@
       "country_code": "VN"
     },
     {
-      "slug": "mam-ruoi",
-      "name": "mắm rươi",
-      "country_code": "VN"
-    },
-    {
       "slug": "mam-ruot-an-giang",
       "name": "mắm ruột An Giang",
       "country_code": "VN"
@@ -2719,7 +2714,7 @@
     },
     {
       "slug": "nuoc-cham-ca-com",
-      "name": "Nước chấm cá cơm",
+      "name": "Nước chấm pha từ nước mắm cá cơm",
       "country_code": "VN"
     },
     {
@@ -2865,6 +2860,11 @@
     {
       "slug": "rau-muong-xao-toi",
       "name": "rau muống xào tỏi",
+      "country_code": "VN"
+    },
+    {
+      "slug": "ruoi-kho-thit",
+      "name": "Rươi kho thịt",
       "country_code": "VN"
     },
     {

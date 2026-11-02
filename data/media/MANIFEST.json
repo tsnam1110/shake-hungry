@@ -798,12 +798,6 @@
     "source_url": "https://commons.wikimedia.org/wiki/File:M%C3%B3n_%C4%83n_nh%C3%A0_m%C3%ACnh_T%E1%BA%BFt_2022_(ch%C3%A9n_n%C6%B0%E1%BB%9Bc_m%E1%BA%AFm_g%E1%BB%ABng).jpg",
     "attribution": "Phương Huy / Wikimedia Commons (CC BY-SA 4.0)"
   },
-  "dishes/mam-ruoi.webp": {
-    "license": "public-domain",
-    "author": "Việt Hà (thảo luận)",
-    "source_url": "https://commons.wikimedia.org/wiki/File:M%E1%BA%AFm_r%C6%B0%C6%A1i.jpg",
-    "attribution": "Việt Hà (thảo luận) / Wikimedia Commons (Public domain)"
-  },
   "dishes/mam-kho.webp": {
     "license": "cc-by-sa-4.0",
     "author": "Viethavvh",
@@ -3037,12 +3031,6 @@
     "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói"
   },
   "dishes/cha-lua-chay.webp": {
-    "license": "ai-minh-hoa",
-    "author": "Lắc Đói (AI minh hoạ)",
-    "source_url": null,
-    "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói"
-  },
-  "dishes/chao-ca-loc-trung.webp": {
     "license": "ai-minh-hoa",
     "author": "Lắc Đói (AI minh hoạ)",
     "source_url": null,

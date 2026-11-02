@@ -1,17 +1,17 @@
 {
-  "slug": "mam-ruoi",
+  "slug": "ruoi-kho-thit",
   "parent_dish_slug": null,
   "country_code": "VN",
   "region_code": "vn-north",
   "names": [
     {
       "locale": "vi",
-      "name": "mắm rươi",
+      "name": "Rươi kho thịt",
       "is_primary": true
     },
     {
       "locale": "en",
-      "name": "Fermented sandworm sauce",
+      "name": "Braised sandworms with pork belly",
       "is_primary": true
     }
   ],
@@ -120,21 +120,10 @@
     "Cho rươi vào kho/chưng nhỏ lửa đến khi sệt lại, nêm vừa ăn; ăn nóng với cơm trắng."
   ],
   "recipe_sources": [],
-  "media": [
-    {
-      "path": "media/dishes/mam-ruoi.webp",
-      "license": "public-domain",
-      "attribution": "Việt Hà (thảo luận) / Wikimedia Commons (Public domain)",
-      "is_primary": true
-    }
-  ],
+  "media": [],
   "estimated_kcal": null,
-  "external_ref": {
-    "id": "Q10796550",
-    "source": "wikidata",
-    "queried_at": "2026-08-31"
-  },
-  "import_note": "Nhập tự động từ Wikidata Q10796550 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Gợi ý nguyên liệu từ Wikidata (tiếng Anh, CHƯA ánh xạ sang data/ingredients/): Nereididae. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/M%E1%BA%AFm%20r%C6%B0%C6%A1i.jpg Chưa soạn định lượng: mắm rươi cần nguyên liệu 'rươi' chưa có trong bộ 255. Cần bổ sung nguyên liệu trước. Soạn thảo ngày 2026-10-31 sau khi nguyên liệu cốt lõi (rươi/don) có dữ liệu nguồn thứ cấp — chờ người duyệt. [LV2-012 đợt vét] GIỮ Mức 1 — BIEN-THE/sai định danh: tên 'mắm rươi' là sản phẩm lên men (Bếp Cô Tấm/Tứ Kỳ: rươi+muối+gừng+vỏ quýt+thính, ủ ~3 tháng, không thịt không kho), còn nội dung file là rươi tươi kho thịt. Đã đối chiếu họ rươi kho (BHX, SKĐS, Cooky): định lượng file nằm trong dải nguồn nên không sửa; chờ chủ dự án chốt đổi tên thành rươi kho thịt hoặc soạn lại theo mắm lên men.",
+  "external_ref": null,
+  "import_note": "Nhập tự động từ Wikidata Q10796550 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Gợi ý nguyên liệu từ Wikidata (tiếng Anh, CHƯA ánh xạ sang data/ingredients/): Nereididae. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/M%E1%BA%AFm%20r%C6%B0%C6%A1i.jpg Chưa soạn định lượng: mắm rươi cần nguyên liệu 'rươi' chưa có trong bộ 255. Cần bổ sung nguyên liệu trước. Soạn thảo ngày 2026-10-31 sau khi nguyên liệu cốt lõi (rươi/don) có dữ liệu nguồn thứ cấp — chờ người duyệt. [LV2-012 đợt vét] GIỮ Mức 1 — BIEN-THE/sai định danh: tên 'mắm rươi' là sản phẩm lên men (Bếp Cô Tấm/Tứ Kỳ: rươi+muối+gừng+vỏ quýt+thính, ủ ~3 tháng, không thịt không kho), còn nội dung file là rươi tươi kho thịt. Đã đối chiếu họ rươi kho (BHX, SKĐS, Cooky): định lượng file nằm trong dải nguồn nên không sửa; chờ chủ dự án chốt đổi tên thành rươi kho thịt hoặc soạn lại theo mắm lên men. [QD-10 — chủ dự án chốt 2026-11-02, phương án A của LV2-012 §4 mục 22] ĐỔI TÊN theo nội dung thật của file: 'mắm rươi' → 'Rươi kho thịt' (tên Anh tương ứng) — công thức trong file là rươi tươi kho/chưng với thịt ba chỉ ăn nóng (đã đối chiếu họ rươi kho BHX/SKĐS/Cooky ở LV2-012, định lượng nằm trong dải nguồn nên giữ nguyên toàn bộ, không sửa dòng nào). Slug đổi mam-ruoi → ruoi-kho-thit (dự án chưa có cơ chế redirect slug; món đang draft, giữ truy vết tại đây). Hai hệ quả định danh đã xử lý cùng đợt: (1) external_ref Wikidata Q10796550 GỠ — mã đó là của sản phẩm mắm rươi lên men, không còn là định danh của món này; (2) ảnh Wikimedia (chai 'Mắm rươi Ngọc Khánh — đặc sản Tứ Kỳ', public domain) GỠ khỏi món và khỏi kho media/MANIFEST — ảnh chụp đúng sản phẩm lên men, sai với món kho; nguồn ảnh gốc vẫn truy được tại commons.wikimedia.org/wiki/File:Mắm_rươi.jpg. Thẻ phân loại rà lại: loai:mon-chinh vẫn đúng cho món kho; món không mang nhãn/từ khoá 'mắm' nào khác ngoài dòng nguyên liệu nuoc-mam-truyen-thong (gia vị nêm — giữ nguyên). Mắm rươi lên men đúng nghĩa là món/sản phẩm khác, chưa có trong kho — biên soạn mới khi có đợt riêng.",
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",
