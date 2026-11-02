@@ -19,8 +19,6 @@
   "is_home_cook": true,
   "cooking_method": "luoc",
   "completeness_level": 2,
-  "level_basis": "tcm_compensation",
-  "level_note": "Chưa đạt cổng Mức 2 thường vì lần mở nguồn đầu tiên đã bị lỗi 429, dừng tra cứu theo kỷ luật đợt — chưa đối chiếu được nguồn nào (LV2-012). Được nâng theo đường nâng bù Mức 3 (quyết định chủ dự án 2026-11-01): độ phủ tính vị 100.0% ≥ 60% và đã có ghi chú văn hoá.",
   "meal_slots": [
     {
       "slot": "sang",
@@ -32,11 +30,11 @@
     }
   ],
   "serving_desc": "1 củ khoai vừa và 1 quả trứng",
-  "serving_grams": 230,
+  "serving_grams": 180,
   "ingredients": [
     {
       "ingredient_slug": "khoai-lang",
-      "quantity": 180,
+      "quantity": 130,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -52,11 +50,30 @@
     }
   ],
   "recipe_steps": [
-    "Khoai lang rửa sạch, luộc cả củ 20–25 phút cho chín mềm (xiên đũa qua dễ dàng). Có thể luộc từ tối hôm trước.",
-    "Trứng luộc 8–10 phút, bóc vỏ.",
-    "Ăn kèm khoai và trứng, chấm muối vừng nếu thích. Tổng thời gian chủ động ~10 phút."
+    "Khoai lang rửa sạch đất cát, để nguyên vỏ, chọn củ vừa khoảng 130g.",
+    "Cho khoai vào nồi, đổ nước ngập, luộc khoảng 20–25 phút đến khi xiên đũa qua dễ dàng.",
+    "Trong lúc luộc khoai, cho trứng gà vào nồi nước riêng (hoặc luộc cùng ở 10 phút cuối), luộc 8–10 phút.",
+    "Vớt trứng ra ngâm nước lạnh vài phút cho dễ bóc, bóc sạch vỏ.",
+    "Vớt khoai ra để ráo, bóc vỏ khi ăn hoặc để nguyên vỏ tuỳ thích.",
+    "Bày khoai và trứng ra đĩa, ăn vào bữa sáng; có thể chấm muối vừng nếu thích (phần chấm không tính vào nguyên liệu món)."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://huongdantapluyen.tdtt.gov.vn/dinh-duong/ID/15124/Thuc-don-giam-can-voi-khoai-lang-trong-7-ngay-hieu-qua-va-khoa-hoc",
+      "accessed": "2026-11-02",
+      "note": "Hello Bacsi (qua Cục TDTT) — Thực đơn giảm cân 7 ngày với khoai lang, Ngày 1 bữa sáng: 1 củ khoai lang luộc 130g + 1 quả trứng luộc cỡ vừa; khẩu phần 1 người."
+    },
+    {
+      "url": "https://pgrvietnam.org.vn/nen-an-khoai-lang-vao-luc-nao-de-giam-can-hieu-qua-12956.html/gia-tri-dinh-duong-cua-khoai-lang",
+      "accessed": "2026-11-02",
+      "note": "PGR Việt Nam — Nên ăn khoai lang vào lúc nào: gợi ý khẩu phần buổi sáng 1 củ khoai lang luộc 100–150g + 1 quả trứng luộc."
+    },
+    {
+      "url": "https://myauris.vn/200g-khoai-lang-bao-nhieu-calo-an-co-beo-khong",
+      "accessed": "2026-11-02",
+      "note": "My Auris — Khoai lang bao nhiêu calo: 1 củ khoai lang luộc cỡ vừa 130g; khẩu phần buổi sáng khoảng 130g khoai luộc kết hợp trứng luộc."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/khoai-lang-luoc-trung.webp",
@@ -67,7 +84,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-012 đợt vét] Giữ Mức 1 - 429: lần mở nguồn đầu tiên đã bị lỗi 429 nên dừng theo quy tắc đợt, chưa đối chiếu được nguồn nào. Cần tra lại ở đợt sau.",
+  "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-012 đợt vét] Giữ Mức 1 - 429: lần mở nguồn đầu tiên đã bị lỗi 429 nên dừng theo quy tắc đợt, chưa đối chiếu được nguồn nào. Cần tra lại ở đợt sau. [T-04 thử lại 429 2026-11-02] ĐẠT CỔNG CÔNG THỨC: 3 họ độc lập có định lượng theo khẩu phần (Hello Bacsi qua Cục TDTT; PGR Việt Nam; My Auris). Khoai 180g lệch +38% so với đồng thuận 130g cho 1 củ vừa (lệch >30%) nên sửa khoai-lang 180→130 và serving_grams 230→180 (khớp serving_desc '1 củ khoai vừa và 1 quả trứng'); trứng 50g giữ nguyên. Chuyển Mức 2 thường, bỏ level_basis/level_note.",
   "cultural_note": {
     "text": "Món ghép giản dị này xoay quanh khoai lang luộc — thứ lương thực từng nuôi nhiều gia đình quê qua những ngày giáp hạt, khi thóc gạo cấy cày trong năm chỉ đủ ăn khoảng hơn nửa năm. Khoai trồng vào vụ đông, đào dịp áp Tết rồi cất dưới gầm giường, gầm tủ; đến khoảng hai tháng sau Tết, khoai héo luộc lên ngọt như chuối, được mẹ dậy sớm luộc cả nồi to cho cả nhà ăn sáng, có hôm còn mang theo thay bữa trưa khi đi làm đồng. Thói quen ăn sáng bằng khoai lang luộc vì thế theo nhiều người lên thành phố như một ký ức quê nhà khó bỏ.",
     "sources": [

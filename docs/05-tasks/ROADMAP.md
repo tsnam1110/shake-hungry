@@ -292,6 +292,23 @@ hoặc tự đo. Kiểm chứng trên DB riêng `shake_hungry_t05`: validate
 **0 🔴**, recompute khớp kỳ vọng, Pest **173/173**. Chi tiết:
 [tasks/T-05-INGREDIENT-UNLOCK.md](./tasks/T-05-INGREDIENT-UNLOCK.md).
 
+**T-04 — THỬ LẠI NHÓM 429 (LV2-012) ĐÃ XONG (2026-11-02):** thử lại
+toàn bộ 33 món bị chặn HTTP 429 ở đợt vét LV2-012 theo kỷ luật LV2.
+**7 món đạt cổng công thức thật:** `mam-ba-khia`, `banh-duc-nong`,
+`banh-khoai`, `rau-den-luoc`, `rau-lang-luoc`, `khoai-lang-luoc-trung`
+chuyển từ "Mức 2 (có note)" sang **Mức 2 thường** (gỡ basis/note, có
+phân xử định lượng) và `che-thach-den` **Mức 1 → Mức 2** (không sửa
+định lượng). **26 món giữ nguyên mức + hồ sơ** trong `import_note`
+(thiếu họ độc lập, lệch biến thể chờ quyết, định danh treo QD-11/
+QD-15.24/QD-15.27, chờ mở khoá `la-gai`/`bot-chien-gion`, hoặc cần
+phân xử chủ dự án). Bức tranh mức đếm từ file: **194 Mức 3 · 286
+Mức 2 thường · 107 Mức 2 (có note) · 67 Mức 1**. Kiểm chứng DB riêng
+`shake_hungry_t04`: validate **0 🔴 / 23 🟡**, recompute **587/587
+món ≥ Mức 2 tính đủ**, đối chiếu calo cách ly đúng phạm vi; Pest
+**188 passed / 1 failed** (test đỏ duy nhất thuộc phiên song song
+đang áp gói quyết dị ứng QD-03/QD-04). Chi tiết:
+[tasks/T-04-429-RETRY.md](./tasks/T-04-429-RETRY.md).
+
 **T-02/T-03/T-13 — GIẢI TOẢ 7 FILE MÓN BỊ GIỮ + GHI CHÚ + A4.1 + REGION
 ĐÃ XONG (2026-11-02):** commit media cho 7 file VN-001 bỏ qua hai lần
 (`9ea4ad3`, Wikimedia CC + attribution); viết `cultural_note` đạt chuẩn

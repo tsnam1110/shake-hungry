@@ -19,8 +19,6 @@
   "is_home_cook": true,
   "cooking_method": "song",
   "completeness_level": 2,
-  "level_basis": "tcm_compensation",
-  "level_note": "Chưa đạt cổng Mức 2 thường vì hai lần mở nguồn ứng viên đều bị chặn 429, chưa đếm được họ nào chính thức (LV2-012). Được nâng theo đường nâng bù Mức 3 (quyết định chủ dự án 2026-11-01): độ phủ tính vị 95.7% ≥ 60% và đã có ghi chú văn hoá.",
   "meal_slots": [
     {
       "slot": "trua",
@@ -36,7 +34,7 @@
   "ingredients": [
     {
       "ingredient_slug": "cua-bien",
-      "quantity": 60,
+      "quantity": 52,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -52,7 +50,7 @@
     },
     {
       "ingredient_slug": "duong-trang",
-      "quantity": 3,
+      "quantity": 10,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -60,7 +58,7 @@
     },
     {
       "ingredient_slug": "chanh",
-      "quantity": 3,
+      "quantity": 4,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -76,10 +74,31 @@
     }
   ],
   "recipe_steps": [
-    "Ba khía muối xé nhỏ (tạm tính bằng cua biển — chờ bổ sung nguyên liệu ba khía).",
-    "Trộn tỏi, ớt, chanh, đường."
+    "Ba khía muối rửa qua nước ấm khoảng 70–80°C cho bớt mặn và sạch, để ráo.",
+    "Tách bỏ mai và yếm, bẻ ba khía thành miếng vừa ăn.",
+    "Tỏi bóc vỏ, ớt bỏ cuống, giã nhuyễn cùng nhau.",
+    "Chanh vắt lấy nước cốt, bỏ hạt.",
+    "Hoà nước cốt chanh với đường cho tan, trộn cùng tỏi ớt giã.",
+    "Cho ba khía vào tô, rưới hỗn hợp chanh đường tỏi ớt, trộn đều tay.",
+    "Để ba khía thấm khoảng 30–45 phút rồi bày ra đĩa, ăn kèm cơm; phần chưa dùng hết bảo quản ngăn mát tủ lạnh."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/2-cach-tron-ba-khia-goi-ba-khia-mien-tay-gay-nghien-01880",
+      "accessed": "2026-11-02",
+      "note": "Cách trộn ba khía miền Tây: ba khía rửa nước ấm, tách mai và yếm, trộn tỏi ớt giã với nước cốt chanh và đường — đường khoảng 16–20% khối lượng ba khía; mốc đối chiếu đường, chanh, tỏi của file."
+    },
+    {
+      "url": "https://bepxua.vn/meo-tron-ba-khia-chua-cay-chuan-mien-tay-ca-nha-ngat-ngay/",
+      "accessed": "2026-11-02",
+      "note": "Mẹo trộn ba khía chua cay chuẩn miền Tây: tỉ lệ đường cao so với ba khía, trộn đều và để thấm 30–45 phút trước khi ăn."
+    },
+    {
+      "url": "http://www.ckktv.net/2020/07/cach-lam-ba-khia-tron-toi-ot-cay-chua.html",
+      "accessed": "2026-11-02",
+      "note": "Ba khía trộn tỏi ớt cay chua: giã tỏi ớt, pha chanh đường, trộn ba khía đã sơ chế, để thấm rồi dùng."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/mam-ba-khia.webp",
@@ -94,7 +113,7 @@
     "source": "wikidata",
     "queried_at": "2026-08-31"
   },
-  "import_note": "Nhập tự động từ Wikidata Q10796543 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Gợi ý nguyên liệu từ Wikidata (tiếng Anh, CHƯA ánh xạ sang data/ingredients/): Episesarma mederi. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/Mam%20ba%20khia%20%28Vietnamese%29.jpg Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] GIỮ Mức 1 — 429: hai lần mở nguồn ứng viên (Cookpad 924101 và cachnaungon cách trộn ba khía) đều bị 429, dừng theo quy tắc. Bằng chứng qua kết quả tìm kiếm (chưa mở, chưa tính họ): Cookpad ghi 300g mắm ba khía nguyên con trộn tỏi/ớt/đường/chanh/khế/gừng/sả; họ ĐMX ghi ba khía 250g/4 người, tỏi 5 tép, ớt 5 quả, chanh 1 quả, đường 4 muỗng canh — cần mở đọc lại ở đợt sau để đếm họ chính thức.",
+  "import_note": "Nhập tự động từ Wikidata Q10796543 ngày 2026-08-31 (CC0). CHƯA QUA BIÊN SOẠN: chưa có vùng miền, bữa phù hợp, cách chế biến, định lượng nguyên liệu. Người biên soạn phải bổ sung rồi mới chuyển status=published. Gợi ý nguyên liệu từ Wikidata (tiếng Anh, CHƯA ánh xạ sang data/ingredients/): Episesarma mederi. Ảnh nguồn (CHƯA tải về, phải kiểm license từng ảnh — R4/Q4): http://commons.wikimedia.org/wiki/Special:FilePath/Mam%20ba%20khia%20%28Vietnamese%29.jpg Bổ sung định lượng 2026-10-30: bản soạn thảo hỗ trợ bởi AI, CHƯA QUA NGƯỜI DUYỆT — mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] GIỮ Mức 1 — 429: hai lần mở nguồn ứng viên (Cookpad 924101 và cachnaungon cách trộn ba khía) đều bị 429, dừng theo quy tắc. Bằng chứng qua kết quả tìm kiếm (chưa mở, chưa tính họ): Cookpad ghi 300g mắm ba khía nguyên con trộn tỏi/ớt/đường/chanh/khế/gừng/sả; họ ĐMX ghi ba khía 250g/4 người, tỏi 5 tép, ớt 5 quả, chanh 1 quả, đường 4 muỗng canh — cần mở đọc lại ở đợt sau để đếm họ chính thức. [T-04 thử lại 429 2026-11-02] ĐẠT CỔNG CÔNG THỨC: mở được 3 họ độc lập (Điện Máy XANH — hai bài cùng họ tính một; Bếp Xưa; CKKTV; Cookpad chỉ phụ trợ). Đường đồng thuận 16–20% khối lượng ba khía so với 5% trong file (lệch >30%) nên phân xử giữ tổng phần 70g: cua-bien 60→52, duong-trang 3→10, chanh 3→4; tỏi 3g và ớt 1g giữ nguyên. Chuyển Mức 2 thường, bỏ level_basis/level_note.",
   "cultural_note": {
     "text": "Ba khía là loài cua rừng sống ở rừng ngập mặn Cà Mau, được đặt tên theo ba vệt trên chiếc mai sẫm màu, và Rạch Gốc ở Ngọc Hiển được xem là 'thủ phủ' ba khía với sản lượng nhiều nhất Nam Bộ. Theo câu ca dao “Tháng bảy nước chảy Cà Mau / Tháng mười ba khía hội”, mùa ba khía gắn với con nước lên từ tháng 7 âm lịch và rộ nhất vào tháng 10 âm lịch, khi ba khía bò lên chang đước; người dân soi đèn đi bắt và muối ngay phần ăn không hết để giữ được lâu. Nghề muối ba khía cha truyền con nối ở Ngọc Hiển đã được đưa vào danh mục Di sản văn hóa phi vật thể quốc gia vào cuối năm 2019.",
     "sources": [

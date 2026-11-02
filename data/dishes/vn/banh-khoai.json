@@ -19,8 +19,6 @@
   "is_home_cook": true,
   "cooking_method": "chien",
   "completeness_level": 2,
-  "level_basis": "tcm_compensation",
-  "level_note": "Chưa đạt cổng Mức 2 thường vì bị chặn 429 ngay lần mở nguồn đầu tiên, chưa kiểm chứng được họ nào (LV2-012). Được nâng theo đường nâng bù Mức 3 (quyết định chủ dự án 2026-11-01): độ phủ tính vị 100.0% ≥ 60% và đã có ghi chú văn hoá.",
   "meal_slots": [
     {
       "slot": "an-vat",
@@ -52,7 +50,7 @@
     },
     {
       "ingredient_slug": "thit-lon-ba-chi",
-      "quantity": 30,
+      "quantity": 50,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -60,7 +58,7 @@
     },
     {
       "ingredient_slug": "gia-do",
-      "quantity": 30,
+      "quantity": 60,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -68,7 +66,7 @@
     },
     {
       "ingredient_slug": "trung-ga",
-      "quantity": 25,
+      "quantity": 35,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -89,14 +87,43 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nam-rom",
+      "quantity": 20,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Bột gạo khuấy với nước, bột nghệ và trứng thành bột lỏng; tôm, thịt sơ chế.",
-    "Đun chảo gang thật nóng, láng bột mỏng, xếp tôm thịt, giá lên mặt, chiên giòn rìa (khoảng 4 phút mỗi cái).",
-    "Gập đôi bánh, ăn kèm rau sống và nước lèo/nước mắm pha."
+    "Hoà bột gạo với nước, bột nghệ, một phần trứng và chút muối thành hỗn hợp bột lỏng mịn, để bột nghỉ.",
+    "Tôm rửa sạch, cắt bỏ đầu nhọn và râu; thịt ba chỉ thái miếng mỏng vừa ăn.",
+    "Nấm rơm làm sạch, thái lát; giá đỗ rửa sạch để ráo; hành lá cắt khúc.",
+    "Đánh tan phần trứng còn lại để tráng quanh rìa bánh khi đổ.",
+    "Đun chảo gang thật nóng, láng dầu, múc bột tráng đều mặt chảo.",
+    "Rưới trứng quanh rìa, xếp tôm, thịt, nấm và giá lên mặt, đậy nắp chiên lửa nhỏ cho nhân chín.",
+    "Mở nắp, rưới thêm ít dầu quanh rìa, chiên tiếp đến khi vỏ vàng giòn rồi gập đôi bánh.",
+    "Bày bánh ra đĩa, ăn nóng kèm rau sống và nước lèo hoặc nước mắm pha."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/923822",
+      "accessed": "2026-11-02",
+      "note": "Hoàng Thị Tố Hà, 2 phần: bánh khoái Huế với tôm, thịt, trứng, giá đỗ và nấm rơm — mốc quy đổi theo phần cho thịt, trứng, giá và nấm."
+    },
+    {
+      "url": "https://tailieu.duytan.edu.vn/tailieu/2009/20091125/womanhood911_11/banh_khoai_hue_2192.pdf?rand=797684",
+      "accessed": "2026-11-02",
+      "note": "Tài liệu giảng dạy Đại học Duy Tân — Bánh khoái Huế: bột gạo hoà nước tỉ lệ 1:6, nhân tôm thịt và giá, đậy nắp khoảng 3 phút rồi gập đôi, rán vàng giòn."
+    },
+    {
+      "url": "https://monngondongian.com/cach-lam-banh-khoai-dac-san-chuan-vi-mien-trung/",
+      "accessed": "2026-11-02",
+      "note": "Bánh khoái miền Trung: bột gạo tẻ 250g, nhân tôm thịt, ăn kèm nước lèo tương bần, gan heo, đậu phộng và mè."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/banh-khoai.webp",
@@ -107,7 +134,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Khác banh-xeo đã có: bánh khoái nhỏ hơn (chảo gang ~15 cm), bột pha trứng, ăn với nước lèo — món riêng của Huế, giữ độc lập theo ghi chú kế hoạch. Nhân thịt dùng thit-lon-ba-chi thay thit-lon-nac-vai của bản kế hoạch vì nac-vai chưa có oil_absorption_pct (món chiên không được thiếu hệ số cho nguyên liệu chính — CALC-002). Món chiên theo quy ước Phương án A (EDITORIAL-GUIDE §12): công thức KHÔNG kê dầu của bước chiên chính — dầu hấp thụ do engine mô hình hoá theo hệ số CALC-004 của nguyên liệu. [LV2-012 đợt vét] GIỮ Mức 1 — lỗi 429 ngay lần mở nguồn đầu tiên (monngondongian.com, trang bánh khoái), đã dừng món theo quy ước, không thử lại. Ở tầng kết quả tìm kiếm đã thấy các họ tiềm năng cho lần chạy lại: Cookpad của Hoàng Thị Tố Hà, tài liệu dạy nấu Duy Tân và bài monngondongian; trích đoạn tìm kiếm không được tính là nguồn đã kiểm chứng.",
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Khác banh-xeo đã có: bánh khoái nhỏ hơn (chảo gang ~15 cm), bột pha trứng, ăn với nước lèo — món riêng của Huế, giữ độc lập theo ghi chú kế hoạch. Nhân thịt dùng thit-lon-ba-chi thay thit-lon-nac-vai của bản kế hoạch vì nac-vai chưa có oil_absorption_pct (món chiên không được thiếu hệ số cho nguyên liệu chính — CALC-002). Món chiên theo quy ước Phương án A (EDITORIAL-GUIDE §12): công thức KHÔNG kê dầu của bước chiên chính — dầu hấp thụ do engine mô hình hoá theo hệ số CALC-004 của nguyên liệu. [LV2-012 đợt vét] GIỮ Mức 1 — lỗi 429 ngay lần mở nguồn đầu tiên (monngondongian.com, trang bánh khoái), đã dừng món theo quy ước, không thử lại. Ở tầng kết quả tìm kiếm đã thấy các họ tiềm năng cho lần chạy lại: Cookpad của Hoàng Thị Tố Hà, tài liệu dạy nấu Duy Tân và bài monngondongian; trích đoạn tìm kiếm không được tính là nguồn đã kiểm chứng. [T-04 thử lại 429 2026-11-02] ĐẠT CỔNG CÔNG THỨC: 3 họ độc lập đã mở (Cookpad Hoàng Thị Tố Hà 2 phần; tài liệu giảng dạy ĐH Duy Tân; MonNgonDonGian). Phân xử theo đồng thuận theo phần: thit-lon-ba-chi 30→50, trung-ga 25→35, gia-do 30→60 (đồng thuận nguồn 72–75g/phần, lấy 60 là cận dưới thận trọng sau quy đổi khẩu phần đĩa 2 cái 180g), thêm nam-rom 20 (llm_suggested, low — nhân có ở Cookpad). Bột gạo 60g, tôm 40g, bột nghệ, hành lá giữ nguyên. Chuyển Mức 2 thường, bỏ level_basis/level_note.",
   "cultural_note": {
     "text": "Bánh khoái là món bánh đổ trong chảo nhỏ trên bếp củi, bếp than quen thuộc của người Huế, họ hàng gần với bánh xèo. Theo cách kể của người dân địa phương, bánh vốn được gọi là bánh khói vì ám mùi khói bếp trong lúc đổ, rồi giọng Huế đọc chệch thành bánh khoái. Biến thể nức tiếng của món bánh này là bánh khoái cá kình ở làng Chuồn bên đầm Chuồn thuộc hệ thống phá Tam Giang, nơi thực khách tự mua cá kình tươi ngay tại chợ làng rồi mang đến nhờ các o, các mệ đổ bánh giúp.",
     "sources": [

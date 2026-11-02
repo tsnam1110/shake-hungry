@@ -19,8 +19,6 @@
   "is_home_cook": true,
   "cooking_method": "luoc",
   "completeness_level": 2,
-  "level_basis": "tcm_compensation",
-  "level_note": "Chưa đạt cổng Mức 2 thường vì lần mở nguồn bị lỗi 429, dừng tra cứu theo kỷ luật đợt — chưa có họ nào được mở đọc thật để đối chiếu (LV2-012). Được nâng theo đường nâng bù Mức 3 (quyết định chủ dự án 2026-11-01): độ phủ tính vị 100.0% ≥ 60% và đã có ghi chú văn hoá.",
   "meal_slots": [
     {
       "slot": "trua",
@@ -52,11 +50,30 @@
     }
   ],
   "recipe_steps": [
-    "Rau lang nhặt ngọn và lá non, rửa sạch.",
-    "Đun nước sôi với chút muối, cho rau vào luộc 2 phút.",
-    "Vớt ra để ráo, ăn kèm nước mắm tỏi ớt hoặc kho quẹt."
+    "Rau lang nhặt bỏ lá già, thân cứng, chỉ giữ đọt và lá non, rửa sạch.",
+    "Ngâm rau trong nước muối loãng khoảng 5 phút cho bớt nhựa, rửa lại và để ráo.",
+    "Đun nồi nước lớn cho sôi già, cho muối vào nước luộc.",
+    "Thả rau vào, luộc lửa lớn không đậy nắp khoảng 2–3 phút, trở nhẹ cho rau chín đều.",
+    "Vớt rau ra ngâm nhanh vào thau nước lạnh cho giữ màu xanh, rồi vớt ra để thật ráo.",
+    "Xếp rau ra đĩa, ăn kèm nước mắm tỏi ớt hoặc kho quẹt tuỳ khẩu vị (phần chấm không tính vào nguyên liệu món)."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://inauanngon.com/rau-lang-luoc/",
+      "accessed": "2026-11-02",
+      "note": "I Nấu Ăn Ngon — Rau lang luộc: 200g rau lang cho một lần luộc, nước luộc 1 muỗng cà phê muối, luộc 2–3 phút không đậy nắp, vớt ngâm nước lạnh cho xanh giòn."
+    },
+    {
+      "url": "https://fptshop.com.vn/tin-tuc/dien-may/cach-luoc-rau-lang-173842",
+      "accessed": "2026-11-02",
+      "note": "FPT Shop — Cách luộc rau lang: 200g rau lang, ngâm nước muối loãng 5 phút cho bớt nhựa, luộc 2–3 phút rồi vớt vào nước lạnh."
+    },
+    {
+      "url": "https://nongsandungha.com/rau-lang-bao-nhieu-calo/",
+      "accessed": "2026-11-02",
+      "note": "Nông Sản Dũng Hà — Rau lang luộc: 300–500g rau lang non cho đĩa gia đình (quy đổi 75–250g/khẩu phần), luộc 3–5 phút tới chín tới."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/rau-lang-luoc.webp",
@@ -67,7 +84,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-012 đợt vét] GIỮ Mức 1 (429): lỗi 429 khi mở nguồn rau lang luộc, dừng tra cứu theo quy tắc đợt; chưa có họ nào được mở đọc thật, cần tra lại ở đợt sau (ứng viên: Inauanngon 200g, Nông Sản Dũng Hà 300-500g, Cookpad Rose Truong — mới qua trích đoạn tìm kiếm, chưa tính).",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-012 đợt vét] GIỮ Mức 1 (429): lỗi 429 khi mở nguồn rau lang luộc, dừng tra cứu theo quy tắc đợt; chưa có họ nào được mở đọc thật, cần tra lại ở đợt sau (ứng viên: Inauanngon 200g, Nông Sản Dũng Hà 300-500g, Cookpad Rose Truong — mới qua trích đoạn tìm kiếm, chưa tính). [T-04 thử lại 429 2026-11-02] ĐẠT CỔNG CÔNG THỨC: 3 họ độc lập đã mở (I Nấu Ăn Ngon; FPT Shop; Nông Sản Dũng Hà) — rau 140g nằm trong dải đối chiếu theo tiền lệ rau luộc trong kho, muối 1g khớp; KHÔNG sửa định lượng. Chuyển Mức 2 thường, bỏ level_basis/level_note.",
   "cultural_note": {
     "text": "Ngọn rau lang là món quà đồng quê của những làng quê miền Trung trồng nhiều khoai lang: những chiều chăn trâu ngoài bãi, trẻ con tranh thủ hái ngọn mang về để mẹ mang ra chợ bán hoặc chế biến ngay trong bữa nhà. Cách ăn được nhớ nhất là ngọn lang luộc chấm nước mắm ớt tỏi, vị ngọt bùi quyện nơi đầu lưỡi thành hương vị đồng quê khó lòng quên được. Đĩa rau lang luộc vì thế gắn với bữa cơm thường ngày của những gia đình quê, nơi cây khoai lang nhà nào cũng trồng được quanh nhà.",
     "sources": [

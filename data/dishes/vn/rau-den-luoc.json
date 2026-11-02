@@ -19,8 +19,6 @@
   "is_home_cook": true,
   "cooking_method": "luoc",
   "completeness_level": 2,
-  "level_basis": "tcm_compensation",
-  "level_note": "Chưa đạt cổng Mức 2 thường vì lần mở nguồn bị lỗi 429, dừng tra cứu theo kỷ luật đợt — chưa có họ nào được mở đọc thật để đối chiếu (LV2-012). Được nâng theo đường nâng bù Mức 3 (quyết định chủ dự án 2026-11-01): độ phủ tính vị 100.0% ≥ 60% và đã có ghi chú văn hoá.",
   "meal_slots": [
     {
       "slot": "trua",
@@ -52,11 +50,30 @@
     }
   ],
   "recipe_steps": [
-    "Rau dền nhặt lá và ngọn non, rửa sạch.",
-    "Đun nước sôi với chút muối, luộc rau 2–3 phút.",
-    "Vớt ra để ráo, ăn kèm nước mắm hoặc mắm tôm pha."
+    "Rau dền nhặt bỏ gốc già, lá úa và lá sâu, giữ lá và ngọn non, rửa sạch nhiều lần.",
+    "Ngâm rau trong nước muối loãng khoảng 10 phút nếu rau nhiều đất cát, rửa lại rồi để ráo.",
+    "Đun một nồi nước lớn cho sôi già, cho muối vào nước luộc.",
+    "Thả rau vào, luộc lửa lớn không đậy nắp khoảng 2–3 phút đến khi rau vừa mềm, còn màu tươi.",
+    "Vớt rau ra ngay, để ráo nước (có thể ngâm nhanh qua nước lạnh rồi vớt ra để giữ màu).",
+    "Xếp rau ra đĩa, ăn nóng kèm nước mắm tỏi ớt hoặc chao tuỳ khẩu vị (phần chấm không tính vào nguyên liệu món)."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://memart.vn/tin-tuc/blog3/cach-luoc-rau-den-do-vi-cb.html",
+      "accessed": "2026-11-02",
+      "note": "Memart — Cách luộc rau dền đỏ: 300–400g rau dền cho một đĩa gia đình (quy đổi 100–200g/khẩu phần), nước luộc cho ít muối, luộc 3–5 phút."
+    },
+    {
+      "url": "https://saigonesebaguette.vn/cach-nau-rau-den-do-ngon-mieng-don-gian-tai-nha/",
+      "accessed": "2026-11-02",
+      "note": "Saigonese Baguette — Rau dền đỏ luộc: 1 bó khoảng 300g, luộc nước sôi có chút muối 2–3 phút, vớt ngâm nước đá cho giữ màu."
+    },
+    {
+      "url": "https://nongsandungha.com/rau-den-bao-nhieu-calo/",
+      "accessed": "2026-11-02",
+      "note": "Nông Sản Dũng Hà — Rau dền luộc (mục thực đơn): 200–300g rau dền tươi, luộc 2–3 phút tới chín tới, vớt ra đĩa."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/rau-den-luoc.webp",
@@ -67,7 +84,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-012 đợt vét] GIỮ Mức 1 (429): lỗi 429 khi mở nguồn Cookpad cho rau dền luộc, dừng tra cứu theo quy tắc đợt; chưa có họ nào được mở đọc thật, cần tra lại ở đợt sau (ứng viên: Cookpad Dory/Pham Huyen/Nguyễn Hoàng Yến — đều chỉ mới thấy qua trích đoạn tìm kiếm, chưa tính).",
+  "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-012 đợt vét] GIỮ Mức 1 (429): lỗi 429 khi mở nguồn Cookpad cho rau dền luộc, dừng tra cứu theo quy tắc đợt; chưa có họ nào được mở đọc thật, cần tra lại ở đợt sau (ứng viên: Cookpad Dory/Pham Huyen/Nguyễn Hoàng Yến — đều chỉ mới thấy qua trích đoạn tìm kiếm, chưa tính). [T-04 thử lại 429 2026-11-02] ĐẠT CỔNG CÔNG THỨC: 3 họ độc lập đã mở (Memart; Saigonese Baguette; Nông Sản Dũng Hà) — rau 140g nằm trong mọi dải quy đổi theo đĩa gia đình (theo tiền lệ dau-bap-luoc, cai-ngot-luoc trong kho: lô 300g cho 2–4 người), muối 1g khớp; KHÔNG sửa định lượng. Ghi chú biến thể: các nguồn định lượng viết về rau dền đỏ, cùng chi Amaranthus và cùng cách luộc với rau dền trong file. Chuyển Mức 2 thường, bỏ level_basis/level_note.",
   "cultural_note": {
     "text": "Rau dền là loại rau mùa hè mọc rất khỏe, được trồng làm rau ăn trong các vườn quê với hai giống quen thuộc là dền trắng (còn gọi là dền xanh hay dền lá liễu) và dền đỏ (còn gọi là dền tía). Cây có thể trồng quanh năm nhưng thời vụ gieo trồng tốt nhất là từ tháng 2 đến tháng 7, chỉ sau khoảng một tháng đã cho thu hoạch. Trong bữa cơm của gia đình nông thôn, rau dền là món rau ăn thông thường được chế biến giản dị như luộc hoặc nấu canh, nên đĩa rau dền luộc mang đúng vị của thứ rau mùa vụ hái ngay trong vườn nhà.",
     "sources": [

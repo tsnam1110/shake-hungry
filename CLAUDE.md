@@ -699,6 +699,7 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > in bao bì (`nhan_san_pham`) hoặc tự đo (`tu_do`). Kiểm chứng DB riêng
 > `shake_hungry_t05`: validate **0 🔴**, Pest **173/173**. Chi tiết:
 > [T-05-INGREDIENT-UNLOCK](docs/05-tasks/tasks/T-05-INGREDIENT-UNLOCK.md).
+
 > **Đính chính:** con số "Pest 173/173" ở mục này CHƯA được kiểm chứng
 > chắc chắn — các lượt chạy toàn bộ trong cùng cửa sổ bị các phiên song
 > song dùng chung DB test/cây làm việc gây nhiễu và cho kết quả mâu
@@ -737,6 +738,30 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > [T-02-NOTES-A41-REGION](docs/05-tasks/tasks/T-02-NOTES-A41-REGION.md) +
 > [TCM-PROMOTE-003](docs/05-tasks/tasks/TCM-PROMOTE-003.md).
 
+> ## 📗 Bổ sung lần 41, 2026-11-02 — T-04: thử lại nhóm 429 của LV2-012 ĐÃ XONG
+>
+> Thử lại toàn bộ **33 món** bị chặn HTTP 429 ở đợt vét LV2-012 theo đúng kỷ luật
+> LV2 (≥3 họ nguồn công thức đã mở kiểm chứng/món, sửa định lượng chỉ khi lệch
+> >25–30%, steps 6–8 bước). **7 món ĐẠT cổng công thức thật:** `mam-ba-khia`,
+> `banh-duc-nong`, `banh-khoai`, `rau-den-luoc`, `rau-lang-luoc`,
+> `khoai-lang-luoc-trung` (6 món "Mức 2 (có note)" → **Mức 2 thường**, gỡ
+> `level_basis`/`level_note`; phân xử định lượng ghi trong `import_note` từng
+> file, 2 món thêm dòng nguyên liệu mới `bot-nang`/`nam-rom` ở
+> `llm_suggested/low`) và `che-thach-den` (**Mức 1 → Mức 2**, không sửa định
+> lượng). **26 món giữ nguyên mức + hồ sơ** (thiếu họ độc lập/cụm sao chép,
+> lệch biến thể chờ quyết, định danh treo QD-11/QD-15.24/QD-15.27 chỉ lập hồ
+> sơ, chờ mở khoá nguyên liệu `la-gai`/`bot-chien-gion`, hoặc cần phân xử chủ
+> dự án — chi tiết từng món: [T-04-429-RETRY](docs/05-tasks/tasks/T-04-429-RETRY.md)).
+> Bức tranh mức đếm từ file: **194 Mức 3 · 286 Mức 2 thường · 107 Mức 2 (có
+> note) · 67 Mức 1**. Kiểm chứng trên DB riêng `shake_hungry_t04`: validate
+> **0 🔴 / 23 🟡**, recompute **587/587 món ≥ Mức 2 tính đủ**; đối chiếu calo
+> cách ly: đúng 5 món trong phạm vi đổi (4 sửa định lượng + `che-thach-den`
+> có dòng dinh dưỡng mới khi lên Mức 2), 2 món đạt không sửa **không đổi một
+> số**; Pest **188 passed / 1 failed** — test đỏ duy nhất thuộc phiên song
+> song đang áp gói quyết dị ứng (QD-03/QD-04, sửa dở `TaggingRules`/test
+> trong cây làm việc), không liên quan T-04; ExportStabilityTest đạt. Sự cố
+> phối hợp: bản áp lần đầu bị phiên song song ghi đè mất trước khi commit —
+> đã áp lại trên HEAD `7ad160d` và kiểm chứng lại toàn bộ.
 **Trạng thái thực tế, kiểm ngày 2026-10-31 (đã chạy lại toàn bộ lệnh kiểm chứng):**
 
 | Hạng mục | Thực tế | Kiểm bằng |

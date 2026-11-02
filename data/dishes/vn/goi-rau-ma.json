@@ -136,7 +136,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] Giữ Mức 1 - 429: chỉ mở được 1 họ nguồn (Cooky/Putino Food) trước khi dịch vụ đọc trang trả lỗi 429 ở hai họ tiếp theo (Điện Máy XANH, Bếp Xưa); dừng theo quy tắc đợt, chưa đủ >=3 họ để đối chiếu định lượng. Làm lại ở đợt sau.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] Giữ Mức 1 - 429: chỉ mở được 1 họ nguồn (Cooky/Putino Food) trước khi dịch vụ đọc trang trả lỗi 429 ở hai họ tiếp theo (Điện Máy XANH, Bếp Xưa); dừng theo quy tắc đợt, chưa đủ >=3 họ để đối chiếu định lượng. Làm lại ở đợt sau. [T-04 thử lại 429 2026-11-02] GIỮ MỨC 1: tổ hợp bò + tôm đúng biến thể chỉ có 1 họ (WikiAnNgon, không ghi khẩu phần; các bản sao cùng khuôn không tính; trang Muaday mở lỗi nên không tính làm bằng chứng); Điện Máy XANH có hai biến thể tách riêng (bò lát không tôm; tôm + ba chỉ). Thịt bò file 80g không họ nào ủng hộ (37,5g và ~30g quy đổi) và file dùng bò xay trong khi mọi nguồn dùng bò thái lát.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

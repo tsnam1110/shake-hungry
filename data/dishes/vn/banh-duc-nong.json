@@ -19,8 +19,6 @@
   "is_home_cook": true,
   "cooking_method": "nau",
   "completeness_level": 2,
-  "level_basis": "tcm_compensation",
-  "level_note": "Chưa đạt cổng Mức 2 thường vì cả 3 trang nguồn mở đọc đều bị chặn 429, chưa kiểm chứng được họ nào (LV2-012). Được nâng theo đường nâng bù Mức 3 (quyết định chủ dự án 2026-11-01): độ phủ tính vị 89.4% ≥ 60% và đã có ghi chú văn hoá.",
   "meal_slots": [
     {
       "slot": "sang",
@@ -36,7 +34,7 @@
   "ingredients": [
     {
       "ingredient_slug": "bot-gao",
-      "quantity": 70,
+      "quantity": 20,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -44,7 +42,7 @@
     },
     {
       "ingredient_slug": "thit-lon-xay",
-      "quantity": 25,
+      "quantity": 35,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -52,7 +50,7 @@
     },
     {
       "ingredient_slug": "moc-nhi-kho",
-      "quantity": 3,
+      "quantity": 2,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -60,7 +58,7 @@
     },
     {
       "ingredient_slug": "dau-an",
-      "quantity": 4,
+      "quantity": 8,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -68,7 +66,7 @@
     },
     {
       "ingredient_slug": "nuoc-mam-truyen-thong",
-      "quantity": 5,
+      "quantity": 9,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -105,14 +103,42 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "bot-nang",
+      "quantity": 18,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
-    "Khuấy bột gạo với nước và chút muối, nấu lửa nhỏ đến khi bột trong, dẻo quánh.",
-    "Xào thịt xay với mộc nhĩ, nêm nước mắm và tiêu.",
-    "Múc bánh đúc ra bát, chan thịt xào lên trên, rắc hành phi và rau mùi, ăn nóng."
+    "Hoà bột gạo và bột năng với nước và muối, khuấy tan, để bột lắng khoảng 1 giờ rồi gạn bỏ phần nước trong, bù nước mới bằng đúng lượng đã gạn.",
+    "Mộc nhĩ ngâm nở, rửa sạch, thái nhỏ; trộn cùng thịt xay, nêm chút nước mắm và tiêu.",
+    "Phi thơm hành, xào thịt trộn mộc nhĩ cho chín tơi, nêm lại vừa ăn.",
+    "Pha nước mắm chan chua ngọt, giữ ấm, thêm tỏi ớt băm.",
+    "Bắc nồi bột lên bếp lửa nhỏ, khuấy liên tục đến khi bột đặc dần và chuyển trong, không còn vị bột sống.",
+    "Cho dầu ăn vào bột, khuấy thêm cho mặt bột bóng mượt rồi tắt bếp, giữ nóng.",
+    "Múc bánh đúc ra bát, xúc nhân thịt lên trên, chan nước mắm, rắc hành phi và rau mùi, ăn nóng."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/15510110",
+      "accessed": "2026-11-02",
+      "note": "Hoàng Ngọc, 8 chén: bột gạo 100g, bột năng 80g, thịt heo xay 200g, mộc nhĩ 10g, nước 800ml — mốc chính quy đổi theo bát 220g."
+    },
+    {
+      "url": "https://buulong.com.vn/cach-lam-banh-duc-nong-ha-noi.html",
+      "accessed": "2026-11-02",
+      "note": "Bánh đúc nóng Hà Nội: bột gạo và bột năng tỉ lệ ngang nhau, nhân thịt xay xào mộc nhĩ, chan nước mắm chua ngọt, rắc hành phi và rau mùi (cụm bài sao chép cùng khuôn — Ngôi Sao, moitruonghse — tính một họ)."
+    },
+    {
+      "url": "https://bepxua.vn/banh-duc-nong-mon-an-truyen-thong-binh-di-dac-biet-cua-ha-noi/",
+      "accessed": "2026-11-02",
+      "note": "4 người: bột gạo tẻ 200g, bột năng 130g, thịt lợn 250g, dầu ăn 40ml — họ độc lập ủng hộ cấu trúc bột kép và nhân thịt xào mộc nhĩ."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/banh-duc-nong.webp",
@@ -123,7 +149,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-004 đợt 2 (lô bánh dân gian) mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] Giữ Mức 1 — 429: mở đọc 3 trang nguồn đều bị upstream trả 429 nên dừng theo quy trình. Chỉ mục tìm kiếm cho thấy có ≥3 họ tiềm năng với tỉ lệ bột khác nhau đáng kể (bột năng 50-150g/200g bột gạo; một họ khác dùng bột nếp + nước vôi trong) — cần mở đọc lại và chốt biến thể trước khi đề xuất bất kỳ thay đổi định lượng nào.",
+  "import_note": "Soạn nháp DISH-004 đợt 2 (lô bánh dân gian) mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] Giữ Mức 1 — 429: mở đọc 3 trang nguồn đều bị upstream trả 429 nên dừng theo quy trình. Chỉ mục tìm kiếm cho thấy có ≥3 họ tiềm năng với tỉ lệ bột khác nhau đáng kể (bột năng 50-150g/200g bột gạo; một họ khác dùng bột nếp + nước vôi trong) — cần mở đọc lại và chốt biến thể trước khi đề xuất bất kỳ thay đổi định lượng nào. [T-04 thử lại 429 2026-11-02] ĐẠT CỔNG CÔNG THỨC: các họ độc lập đã mở gồm Cookpad Hoàng Ngọc, cụm Bửu Long (bản sao cùng khuôn tính một họ) và aFamily biến thể lò vi sóng (thịt là ngoại lệ, không dùng cho dòng thịt); điều phối bổ sung họ Bếp Xưa khi áp dụng. File cũ thiếu hẳn bột năng và bột gạo 70g cao gấp khoảng 3 lần đồng thuận theo bát 220g (lệch >30%) nên phân xử: bot-gao 70→20, thêm bot-nang 18 (llm_suggested, low), thit-lon-xay 25→35, moc-nhi-kho 3→2, dau-an 4→8, nuoc-mam-truyen-thong 5→9. Chuyển Mức 2 thường, bỏ level_basis/level_note.",
   "cultural_note": {
     "text": "Bánh đúc được coi là một trong những món bánh cổ truyền dân dã và giản dị nhất ở Hà Nội, và bản bánh đúc nóng đã thành thức quà chiều quen thuộc mỗi khi gió mùa về. Bát bánh nóng hổi múc vừa phải, thêm nhân thịt mộc nhĩ, chan nước dùng nóng và rắc chút rau mùi, giá cả bình dân nên không làm người ăn quá no bụng. Những ngày đầu đông, các hàng bánh đúc nóng như trên phố Trương Định thường xuyên có khách xếp hàng, từ người lớn tuổi hoài niệm đến các bạn trẻ tìm lại hương vị tuổi thơ.",
     "sources": [

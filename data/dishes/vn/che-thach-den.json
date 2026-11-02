@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 1,
+  "completeness_level": 2,
   "meal_slots": [
     {
       "slot": "an-vat",
@@ -66,11 +66,31 @@
     }
   ],
   "recipe_steps": [
-    "Thạch đen cắt khối vuông vừa ăn.",
-    "Nấu nước với đường phèn và lá dứa cho tan, để nguội thành nước đường thơm.",
-    "Cho thạch vào ly, chan nước đường, thêm đá; có thể chan thêm nước cốt dừa."
+    "Hoà bột sương sáo với nước và một phần đường, khuấy tan đều.",
+    "Bắc lên bếp đun lửa vừa, khuấy liên tục đến khi hỗn hợp sôi và sánh lại.",
+    "Đổ thạch ra khuôn, để nguội cho đông chắc rồi cắt khối vuông vừa ăn.",
+    "Nấu nước đường phèn với lá dứa cho thơm, để nguội.",
+    "Thắng nước cốt dừa với chút đường và muối cho sánh nhẹ, để nguội.",
+    "Cho thạch đen vào ly, chan nước đường phèn lá dứa.",
+    "Thêm đá và chan nước cốt dừa lên trên nếu thích, dùng lạnh."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://huongnghiepaau.com/suong-sao-nuoc-cot-dua",
+      "accessed": "2026-11-02",
+      "note": "Sương sáo nước cốt dừa: mỗi ly thạch khoảng 120g, nước cốt dừa khoảng 50g, tổng đường khoảng 30g và 30ml nước đường phèn cho một ly — khớp mô hình phục vụ của file."
+    },
+    {
+      "url": "https://eva.vn/bep-eva/5-cach-lam-suong-sao-gion-ngon-va-nuoc-an-suong-sao-thom-mat-c162a480764.html",
+      "accessed": "2026-11-02",
+      "note": "Tỉ lệ thạch độc lập: 50g bột sương sáo với 100g đường và 700ml nước (phần cốt dừa của bài sao chép Hướng Nghiệp Á Âu nên chỉ tính phần thạch là độc lập)."
+    },
+    {
+      "url": "https://kinhdofood.com/cach-lam-suong-sao-nuoc-cot-dua/",
+      "accessed": "2026-11-02",
+      "note": "Cách 1: nước cốt dừa khoảng 36–40g cho một ly sương sáo — ủng hộ dòng cốt dừa tuỳ chọn 40g của file."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/che-thach-den.webp",
@@ -81,7 +101,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-012 đợt vét] Giữ Mức 1 — mã 429: cả 3 trang nguồn ứng viên mở đều lỗi 429 (dịch vụ đọc trang bị giới hạn), dừng theo quy tắc. Ứng viên cho đợt sau (đã thấy qua kết quả tìm kiếm, chưa mở): Hướng Nghiệp Á Âu 'Sương sáo nước cốt dừa' (60g bột sương sáo + 100g đường/1 lít; mỗi ly 30ml nước đường phèn + nước cốt dừa — khớp mô hình phục vụ của file), Bluestone (bột 50-100g, đường phèn 80-100g, lá dứa 2-3 lá), Eva.vn (50g bột + 100g đường/1 lít, ăn với nước đường). Nguyên liệu định danh thach-suong-sao đã có số (14 kcal/100g, nguồn thứ cấp chưa kiểm định) nên không bị trần nguyên liệu.",
+  "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-012 đợt vét] Giữ Mức 1 — mã 429: cả 3 trang nguồn ứng viên mở đều lỗi 429 (dịch vụ đọc trang bị giới hạn), dừng theo quy tắc. Ứng viên cho đợt sau (đã thấy qua kết quả tìm kiếm, chưa mở): Hướng Nghiệp Á Âu 'Sương sáo nước cốt dừa' (60g bột sương sáo + 100g đường/1 lít; mỗi ly 30ml nước đường phèn + nước cốt dừa — khớp mô hình phục vụ của file), Bluestone (bột 50-100g, đường phèn 80-100g, lá dứa 2-3 lá), Eva.vn (50g bột + 100g đường/1 lít, ăn với nước đường). Nguyên liệu định danh thach-suong-sao đã có số (14 kcal/100g, nguồn thứ cấp chưa kiểm định) nên không bị trần nguyên liệu. [T-04 thử lại 429 2026-11-02] ĐẠT CỔNG CÔNG THỨC — NÂNG MỨC 2: 3 họ đã mở (Hướng Nghiệp Á Âu; Eva — phần thạch độc lập, phần cốt dừa sao chép HNAA đã ghi rõ; KinhDo Food cách 1). Mọi định lượng file nằm trong đồng thuận (thạch 100g, đường phèn 30g, cốt dừa tuỳ chọn 40g, lá dứa 1g) nên KHÔNG sửa định lượng; chỉ bổ sung recipe_sources và viết lại steps.",
   "cultural_note": {
     "text": "Thạch đen được làm từ cây thạch đen — loại cây thân thảo mà người miền Nam quen gọi là sương sáo — trong đó vùng Tràng Định, Lạng Sơn được xem là nơi cho chất lượng thạch tốt nhất và đã có chỉ dẫn địa lý “Thạch đen Tràng Định”. Cây thu hoạch về được phơi khô, khi dùng đem nấu nhừ, vò lọc lấy nước rồi nấu đông thành khối thạch đen bóng, theo cách làm truyền thống của người dân vùng cao. Thạch thường được cắt miếng ăn cùng nước đường, nước cốt dừa hoặc góp mặt trong các món chè, tào phớ.",
     "sources": [
