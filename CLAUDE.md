@@ -667,6 +667,22 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > **0 🔴**, Pest **167/167** (ExportStabilityTest đạt). Chi tiết:
 > [AUDIT-003](docs/05-tasks/tasks/AUDIT-003.md) §5–§6.
 
+> ## 📘 Bổ sung lần 38, 2026-11-02 — tài liệu setup dev trên máy khác (DEV-SETUP-DOC)
+>
+> Theo chỉ đạo của **chủ dự án** (chuẩn bị tự go-live): đã lập
+> [SETUP-DEV.md](docs/10-deployment/SETUP-DEV.md) — hướng dẫn cài môi trường dev từ số 0
+> trên máy khác (Windows/macOS/Linux), đối chiếu file thật tại baseline `a310c22`
+> (`composer.json`, `package.json`, `.env.example`, `phpunit.xml`, seeders,
+> `config/admin.php`). **Đính chính phạm vi của DEPLOYMENT.md:** §1–§5 của
+> [DEPLOYMENT.md](docs/10-deployment/DEPLOYMENT.md) (2026-08-31) nay được SETUP-DEV
+> thay thế ở phần cài dev — bản cũ thiếu extension PHP, cơ chế tạo tài khoản admin
+> (seeder không tạo user; tạo bằng tinker, `role='admin'`), cảnh báo
+> `ADMIN_QUICK_LOGIN`, quy tắc bắt buộc `npm run build` sau khi sửa `resources/css|js`
+> (bài học UI-020) và kỷ luật chạy Pest trên DB test riêng; DEPLOYMENT.md giữ §5
+> (checklist bàn giao) + §6 (production). Docker tại thời điểm này **chưa có trong
+> repo** — gói Docker go-live là task riêng đang bổ sung. Chi tiết:
+> [DEV-SETUP-DOC](docs/05-tasks/tasks/DEV-SETUP-DOC.md).
+
 **Trạng thái thực tế, kiểm ngày 2026-10-31 (đã chạy lại toàn bộ lệnh kiểm chứng):**
 
 | Hạng mục | Thực tế | Kiểm bằng |

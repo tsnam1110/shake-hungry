@@ -334,6 +334,7 @@ thứ khác phụ thuộc vào.
 | [LEGAL-002](./tasks/LEGAL-002.md) | Chốt giấy phép mã nguồn & dữ liệu của dự án | Quyết định | ✅ | — | 2026-10-31 |
 | [SETUP-001](./tasks/SETUP-001.md) | Khởi tạo Laravel + MySQL | Backend | ✅ | — | 2026-08-31 |
 | [SETUP-002](./tasks/SETUP-002.md) | Dựng cấu trúc `data/` + `.gitignore` + MANIFEST | Backend | ✅ | SETUP-001 | 2026-08-31 |
+| [DEV-SETUP-DOC](./tasks/DEV-SETUP-DOC.md) | Tài liệu setup môi trường dev trên máy khác ([10-deployment/SETUP-DEV.md](../10-deployment/SETUP-DEV.md)) | Tài liệu | ✅ | SETUP-004 | 2026-11-02 |
 
 **DoD GĐ0:** `php artisan --version` chạy được; kết nối được MySQL 8 với collation `utf8mb4_vi_0900_ai_ci`;
 thư mục `data/` đúng cấu trúc; câu hỏi Q1/Q2 ở [PRD §9](../01-prd/PRD.md) đã có câu trả lời.

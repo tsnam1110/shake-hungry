@@ -1,6 +1,6 @@
 # Tài liệu dự án Lắc Đói
 
-**Cập nhật lần cuối:** 2026-10-31
+**Cập nhật lần cuối:** 2026-11-02 — thêm [SETUP-DEV.md](10-deployment/SETUP-DEV.md) (hướng dẫn cài môi trường dev trên máy khác)
 
 Thư mục này là **nguồn sự thật về thiết kế** của dự án. Code phải khớp tài liệu; khi lệch nhau thì
 một trong hai là sai và phải sửa ngay, không để tồn tại song song.
@@ -68,7 +68,8 @@ Khi dự án đổi bản chất (ví dụ mở API công khai ở v2), hãy th�
 | [09-standards/CODING-STANDARDS.md](09-standards/CODING-STANDARDS.md) | Quy ước code, đặt tên bảng/cột |
 | [09-standards/RESEARCH-PROTOCOL.md](09-standards/RESEARCH-PROTOCOL.md) | **Quy tắc tra cứu dữ liệu**: chính sách nền, thứ tự nguồn, endpoint, bẫy kỹ thuật, cách tra món và công thức |
 | [09-standards/EDITORIAL-GUIDE.md](09-standards/EDITORIAL-GUIDE.md) | Chuẩn biên soạn dữ liệu: đặt tên món, phân biệt biến thể, phân vùng miền, các bẫy đã gặp |
-| [10-deployment/DEPLOYMENT.md](10-deployment/DEPLOYMENT.md) | Dựng lại toàn bộ dự án trên máy mới |
+| [10-deployment/DEPLOYMENT.md](10-deployment/DEPLOYMENT.md) | Dựng lại toàn bộ dự án trên máy mới (bản 2026-08-31; giữ checklist bàn giao + production) |
+| [10-deployment/SETUP-DEV.md](10-deployment/SETUP-DEV.md) | **Cài môi trường dev trên máy khác — bản hiện hành**: điều kiện, MySQL 8, seed, tài khoản admin, chạy, kiểm thử, troubleshooting |
 
 ---
 
