@@ -18,7 +18,7 @@
     "water_g": null,
     "sodium_mg": null,
     "mapping_confidence": "low",
-    "mapping_note": "CHƯA CÓ SỐ — đã tra đến 2026-10-31: không tồn tại sản phẩm bột lá sương sâm có nhãn, không bảng FCT/văn liệu nào có proximate cho lá Tiliacora triandra (chỉ có tài liệu thực vật/dược tính). Thạch sương sáo (Mesona) đã có hồ sơ riêng — không thay thế cho nhau.",
+    "mapping_note": "CHƯA CÓ SỐ — đã tra đến 2026-10-31: không tồn tại sản phẩm bột lá sương sâm có nhãn, không bảng FCT/văn liệu nào có proximate cho lá Tiliacora triandra (chỉ có tài liệu thực vật/dược tính). Thạch sương sáo (Mesona) đã có hồ sơ riêng — không thay thế cho nhau. BỔ SUNG T-05 (2026-11-02): kiểm mục lục nhóm 4 bản toàn văn Bảng TPTP VN 2007 — không có lá sương sâm; giữ null không đổi.",
     "alternatives": []
   },
   "secondary_sources": [],

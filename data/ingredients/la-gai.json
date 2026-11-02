@@ -18,7 +18,7 @@
     "water_g": 7.94,
     "sodium_mg": null,
     "mapping_confidence": "low",
-    "mapping_note": "Nguồn THỨ CẤP theo quyết định chủ dự án 2026-10-31 (chỉ dùng khi nguồn chính thống không có) — hệ thống đánh dấu CHƯA KIỂM ĐỊNH khi hiển thị. TRA 2026-10-31 (nguồn MỘT PHẦN — kcal để trống): Lee et al. 2009, Food Science & Biotechnology 18(5), Table 1 — lá Boehmeria nivea đã sấy (ẩm 7,94%): đạm 24,29g, béo 4,89g/100g lá khô. Bài không đo carb/kcal và không suy dẫn 2 lớp nên kcal để null — nguyên liệu CHƯA mở khoá tính dinh dưỡng cho bánh gai/bánh ít, chỉ lưu hồ sơ một phần chờ nguồn đầy đủ.",
+    "mapping_note": "Nguồn THỨ CẤP theo quyết định chủ dự án 2026-10-31 (chỉ dùng khi nguồn chính thống không có) — hệ thống đánh dấu CHƯA KIỂM ĐỊNH khi hiển thị. TRA 2026-10-31 (nguồn MỘT PHẦN — kcal để trống): Lee et al. 2009, Food Science & Biotechnology 18(5), Table 1 — lá Boehmeria nivea đã sấy (ẩm 7,94%): đạm 24,29g, béo 4,89g/100g lá khô. Bài không đo carb/kcal và không suy dẫn 2 lớp nên kcal để null — nguyên liệu CHƯA mở khoá tính dinh dưỡng cho bánh gai/bánh ít, chỉ lưu hồ sơ một phần chờ nguồn đầy đủ. BỔ SUNG T-05 (2026-11-02): kiểm mục lục nhóm 4 của bản toàn văn Bảng TPTP VN 2007 (126 mục) — không có lá gai; kết luận giữ null không đổi.",
     "alternatives": []
   },
   "secondary_sources": [],

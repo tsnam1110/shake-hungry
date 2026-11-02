@@ -18,7 +18,7 @@
     "water_g": null,
     "sodium_mg": null,
     "mapping_confidence": "low",
-    "mapping_note": "CHƯA CÓ SỐ — đã tra đến 2026-10-31: chỉ có nghiên cứu chống oxy hoá/phenolic của Pseudognaphalium affine và tài liệu dược liệu tiếng Trung, không bảng proximate/100g ở bất kỳ nguồn nào; Bảng VN không có mục rau khúc. Món bánh khúc tạm chưa tính được dinh dưỡng.",
+    "mapping_note": "CHƯA CÓ SỐ — đã tra đến 2026-10-31: chỉ có nghiên cứu chống oxy hoá/phenolic của Pseudognaphalium affine và tài liệu dược liệu tiếng Trung, không bảng proximate/100g ở bất kỳ nguồn nào; Bảng VN không có mục rau khúc. Món bánh khúc tạm chưa tính được dinh dưỡng. BỔ SUNG T-05 (2026-11-02): khẳng định lại bằng bản toàn văn Bảng TPTP VN 2007 (đã mở đủ): kiểm mục lục nhóm 4 rau (126 mục 4001–4126) — không có rau khúc/lá khúc; toàn sách không có mục Pseudognaphalium nào. KẾT LUẬN KHÔNG ĐỔI: giữ null; chỉ còn văn liệu proximate (hiện chưa tồn tại) hoặc tự đo.",
     "alternatives": []
   },
   "secondary_sources": [],

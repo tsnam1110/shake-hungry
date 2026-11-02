@@ -18,7 +18,7 @@
     "water_g": null,
     "sodium_mg": null,
     "mapping_confidence": "low",
-    "mapping_note": "KHÔNG TRA ĐƯỢC số đạt chuẩn trong đợt tra 2026-10-31 (DISH-005 đợt 3) — để null theo QT-1. Đã tra: nhãn dinh dưỡng nhà sản xuất chả chay VN (Âu Lạc, An Nhiên — trang chính thức không công bố bảng dinh dưỡng kiểm chứng được); các trang nội dung công bố ~130 kcal/100 g nhưng không dẫn nhãn gốc, không dùng. Chả lụa chay là thành phẩm phối trộn (đậu xanh/bột/nấm theo từng hãng), công thức mỗi hãng mỗi khác nên không mượn số của giò lụa thịt hay của đạm đậu nành khô. Hệ quả: món cha-chay-kho-dua trong kế hoạch DISH-005 §3.5 HOÃN, thay bằng dau-phu-chien-kho-dua (đậu phụ chiên kho nước dừa) cùng quota chay trong đợt 3.",
+    "mapping_note": "KHÔNG TRA ĐƯỢC số đạt chuẩn trong đợt tra 2026-10-31 (DISH-005 đợt 3) — để null theo QT-1. Đã tra: nhãn dinh dưỡng nhà sản xuất chả chay VN (Âu Lạc, An Nhiên — trang chính thức không công bố bảng dinh dưỡng kiểm chứng được); các trang nội dung công bố ~130 kcal/100 g nhưng không dẫn nhãn gốc, không dùng. Chả lụa chay là thành phẩm phối trộn (đậu xanh/bột/nấm theo từng hãng), công thức mỗi hãng mỗi khác nên không mượn số của giò lụa thịt hay của đạm đậu nành khô. Hệ quả: món cha-chay-kho-dua trong kế hoạch DISH-005 §3.5 HOÃN, thay bằng dau-phu-chien-kho-dua (đậu phụ chiên kho nước dừa) cùng quota chay trong đợt 3. BỔ SUNG T-05 (2026-11-02): bản toàn văn Bảng TPTP VN 2007 không có mục chả lụa chay (nhóm 7 chỉ có chả lợn 7064, chả quế lợn 7065); nhãn các hãng vẫn không công bố bảng số kiểm chứng được. Giữ null không đổi — sản phẩm phối trộn theo hãng, chỉ nhãn in của một hãng cụ thể (tầng nhan_san_pham) hoặc tự đo mới mở được.",
     "alternatives": []
   },
   "secondary_sources": [],

@@ -19,8 +19,6 @@
   "is_home_cook": true,
   "cooking_method": "hap",
   "completeness_level": 2,
-  "level_basis": "tcm_compensation",
-  "level_note": "Chưa đạt cổng Mức 2 thường vì chà bông — topping định danh có ở 3/3 nguồn đã mở — chưa có số dinh dưỡng đạt chuẩn trong kho (LV2-007). Được nâng theo đường nâng bù Mức 3 (quyết định chủ dự án 2026-11-01): độ phủ tính vị 68.3% ≥ 60% và đã có ghi chú văn hoá.",
   "meal_slots": [
     {
       "slot": "sang",
@@ -91,6 +89,14 @@
       "confidence": "low"
     },
     {
+      "ingredient_slug": "cha-bong",
+      "quantity": 12,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
       "ingredient_slug": "mo-lon-nuoc",
       "quantity": 8,
       "unit_name": "g",
@@ -128,7 +134,23 @@
     "Lạp xưởng, chả lụa thái lát; tôm khô rim; thịt xay rim mặn; trứng cút luộc bóc vỏ.",
     "Xới xôi ra đĩa, xếp các món mặn lên trên, rưới mỡ hành, rắc hành phi."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-nau-xoi-man-thap-cam-don-gian-cho-bua-sang-tai-nha-cuc-13425",
+      "accessed": "2026-11-02",
+      "note": "Điện Máy XANH — xôi mặn thập cẩm cho 3–4 người: nếp 500g, tôm khô 100g, chả lụa 200g, lạp xưởng 2 cây, trứng cút 10 quả, hành phi 50g, CHÀ BÔNG 50g (≈12,5–16,7g/khẩu phần). Nguồn định lượng duy nhất cho dòng chà bông; mức 12g của file nằm ở cận dưới dải nguồn, khớp phân xử LV2-007 (3/3 nguồn ~10–14g)."
+    },
+    {
+      "url": "https://cookpad.com/vn/cong-thuc/3518055",
+      "accessed": "2026-11-02",
+      "note": "Cookpad — NgaLe (2017): xôi mặn thập cẩm kiểu xe xôi Sài Gòn; thành phần gồm nếp, pate, lạp xưởng, CHÀ BÔNG (ruốc thịt), đậu phộng, mỡ hành, hành phi — khẳng định chà bông + pate là topping định danh; không ghi định lượng."
+    },
+    {
+      "url": "https://vnexpress.net/doi-song-cooking-xoi-man-thap-cam-4573609.html",
+      "accessed": "2026-11-02",
+      "note": "VnExpress — Bùi Thủy (2023), 6–8 người: nếp 1kg, tôm khô 50g, lạp xưởng 50g, xúc xích 100g, nước cốt dừa; bước làm ghi rõ phết pate và thêm CHÀ BÔNG (ruốc bông) khi trình bày — nguồn độc lập thứ ba khẳng định định danh; chà bông không ghi lượng."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/xoi-man.webp",
@@ -139,7 +161,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-007 đợt 7: thử nâng Mức 2 — GIỮ MỨC 1 dù đã đủ 3 nguồn đã mở (Điện Máy XANH 2 bài công thức độc lập tính 1 nhà xuất bản + Cookpad VTL). Lý do: chà bông xuất hiện ở 3/3 nguồn (~10–14g/khẩu phần) là topping định danh của xôi mặn nhưng kho chưa có số dinh dưỡng đạt chuẩn cho slug cha-bong (đã tạo hồ sơ null đợt này — tra SR Legacy/FNDDS trong repo không có mục pork floss); bổ sung dòng không số sẽ làm món mất khả năng tính dinh dưỡng (tiền lệ bun-mam LV2-006). Các dòng còn lại đều GIỮ theo phân xử: nếp 180g (dải nguồn 88–215), lạp xưởng 30g (1 nguồn khớp ~28g), giò lụa 30g và tôm khô 10g giữ kèm ghi nhận (mỗi dòng chỉ 1 nguồn định lượng, chưa đủ ngưỡng sửa; tôm khô ở nguồn là dạng ruốc tôm xay — khác vai trò rắc của file), trứng cút 20g (nguồn 25–29g, lệch ở ngưỡng dưới), hành phi 8g (1 nguồn 14g). BẤT THƯỜNG: thịt lợn xay rim 30g không xuất hiện ở bất kỳ nguồn nào đã mở (nguồn dùng thịt nạc ram/xé sợi hoặc không thịt rời) — giữ nguyên vì công thức đã được chủ dự án duyệt toàn bộ 2026-10-31, chỉ ghi nhận. Khi cha-bong có số: bổ sung ~12g và nâng Mức 2 ngay, không cần tra lại.]",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-007 đợt 7: thử nâng Mức 2 — GIỮ MỨC 1 dù đã đủ 3 nguồn đã mở (Điện Máy XANH 2 bài công thức độc lập tính 1 nhà xuất bản + Cookpad VTL). Lý do: chà bông xuất hiện ở 3/3 nguồn (~10–14g/khẩu phần) là topping định danh của xôi mặn nhưng kho chưa có số dinh dưỡng đạt chuẩn cho slug cha-bong (đã tạo hồ sơ null đợt này — tra SR Legacy/FNDDS trong repo không có mục pork floss); bổ sung dòng không số sẽ làm món mất khả năng tính dinh dưỡng (tiền lệ bun-mam LV2-006). Các dòng còn lại đều GIỮ theo phân xử: nếp 180g (dải nguồn 88–215), lạp xưởng 30g (1 nguồn khớp ~28g), giò lụa 30g và tôm khô 10g giữ kèm ghi nhận (mỗi dòng chỉ 1 nguồn định lượng, chưa đủ ngưỡng sửa; tôm khô ở nguồn là dạng ruốc tôm xay — khác vai trò rắc của file), trứng cút 20g (nguồn 25–29g, lệch ở ngưỡng dưới), hành phi 8g (1 nguồn 14g). BẤT THƯỜNG: thịt lợn xay rim 30g không xuất hiện ở bất kỳ nguồn nào đã mở (nguồn dùng thịt nạc ram/xé sợi hoặc không thịt rời) — giữ nguyên vì công thức đã được chủ dự án duyệt toàn bộ 2026-10-31, chỉ ghi nhận. Khi cha-bong có số: bổ sung ~12g và nâng Mức 2 ngay, không cần tra lại.] [T-05, 2026-11-02: ĐÃ ÁP ĐIỀU KIỆN NÀY — cha-bong đã có số vn_nin 07074 'Ruốc thịt lợn' (Bảng TPTP VN 2007, bản toàn văn mở tận nơi: 369 kcal, đạm 46,6, béo 20,3, carb 0). Đã bổ sung dòng cha-bong 12g và ghi 3 recipe_sources kiểm chứng lại tận nơi ngày 2026-11-02 (Điện Máy XANH — chà bông 50g/3–4 người; Cookpad NgaLe; VnExpress). Món nay tính được đầy đủ và đạt cổng Mức 2 THƯỜNG (V12: ≥3 nguồn + tính đủ) → gỡ level_basis='tcm_compensation' và level_note, completeness_level giữ 2. Các dòng định lượng khác giữ nguyên theo phân xử LV2-007.]",
   "cultural_note": {
     "text": "Khác với Hà Nội gọi tên từng loại xôi riêng, xôi Sài Gòn được chia thành hai nhóm rõ ràng là xôi mặn và xôi ngọt, trong đó xôi mặn xuất hiện muộn hơn để hợp khẩu vị dòng người tứ xứ đổ về thành phố. Một phần xôi mặn thập cẩm thường gồm nếp kèm lạp xưởng, xá xíu, trứng cút, chà bông, thêm đậu xanh xào mỡ, mỡ hành hoặc hành phi. Không chỉ là món điểm tâm đầu hẻm với tiếng rao buổi sớm, xôi mặn còn được nhiều người dùng thay bữa chính khi lỡ bữa.",
     "sources": [
