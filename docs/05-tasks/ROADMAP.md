@@ -236,7 +236,7 @@ liệu **`ca-kinh`** (cá kình — *Siganus canaliculatus*; số từ **TKPI** 
 "Ikan baronang, segar", cấp chi *Siganus* spp., tầng 6) và đổi dòng nguyên
 liệu của `mam-ca-ro` sang `ca-kinh`, tính lại xong. Hệ quả: `ca-kinh` chưa
 có nhãn tính vị đạt chuẩn → phủ tính vị của món 14,5% → rút đường nâng bù,
-`mam-ca-ro` về **Mức 1** (đường khôi phục ghi trong `level_note` của món).
+`mam-ca-ro` về **Mức 1** (đường khôi phục ghi trong `import_note` của món).
 Chi tiết: §0 CLAUDE bổ sung lần 47 + mục QD-11 của
 [tasks/QD-ADJUDICATE-1.md](./tasks/QD-ADJUDICATE-1.md).
 

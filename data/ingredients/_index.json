@@ -1,6 +1,6 @@
 {
   "_generated_by": "php artisan lacdoi:export-data — không sửa tay (DATA-REPOSITORY §2)",
-  "count": 434,
+  "count": 436,
   "ingredients": [
     {
       "slug": "bach-tuoc",
@@ -218,6 +218,11 @@
       "category": "gia-vi"
     },
     {
+      "slug": "bot-san-day",
+      "name_vi": "Bột sắn dây",
+      "category": "tinh-bot"
+    },
+    {
       "slug": "bun-kho",
       "name_vi": "Bún khô (và bánh phở khô)",
       "category": "tinh-bot"
@@ -315,6 +320,11 @@
     {
       "slug": "ca-kho",
       "name_vi": "Khô cá mặn (nói chung)",
+      "category": "thuy-san"
+    },
+    {
+      "slug": "ca-kinh",
+      "name_vi": "Cá kình (sống)",
       "category": "thuy-san"
     },
     {

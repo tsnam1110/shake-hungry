@@ -122,7 +122,8 @@ ràng):** nhãn tính vị cũ là của `ca-ro-dong` (loài khác hẳn) nên k
 sang được; `ca-kinh` chưa có nhãn tính vị đạt chuẩn (đã tra Dược điển
 TQ/CMRO/A+) → độ phủ đo lại **14,5%** < 60% → đường nâng bù
 `tcm_compensation` rút lại, món về **Mức 1** (cổng nguồn công thức Mức 2
-thường vốn cũng chưa đạt). Đường khôi phục ghi trong `level_note` của món.
+thường vốn cũng chưa đạt). Đường khôi phục ghi trong `import_note` của món
+(kho chỉ giữ `level_note` cho món còn `level_basis` — exporter chuẩn hoá).
 QD-11 đóng hoàn toàn.
 
 ## QD-12 · TAXONOMY = A — thêm `dac-san:phu-quoc` + `dac-san:quang-binh`

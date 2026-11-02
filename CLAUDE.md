@@ -944,7 +944,7 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > TQ/CMRO/A+) nên độ phủ tính vị của món đo lại còn **14,5%** < 60% → rút
 > đường nâng bù `tcm_compensation`, `mam-ca-ro` về **Mức 1** (cổng nguồn công
 > thức Mức 2 thường vốn cũng chưa đạt); đường khôi phục ghi trong
-> `level_note` của món. Chi tiết: `mapping_note` trong
+> `import_note` của món. Chi tiết: `mapping_note` trong
 > `data/ingredients/ca-kinh.json` + mục QD-11 của
 > [QD-ADJUDICATE-1](docs/05-tasks/tasks/QD-ADJUDICATE-1.md).
 
