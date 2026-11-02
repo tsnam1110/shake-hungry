@@ -120,6 +120,12 @@ Người bàn giao chạy hết danh sách này trước khi bàn giao:
 > Chủ dự án đã tự khởi xướng chuẩn bị go-live bằng Docker; **tài liệu go-live production
 > đầy đủ là đợt riêng tiếp theo**, viết trên nền gói này. Đoạn cũ giữ nguyên bên dưới
 > để tra cứu lịch sử quyết định.
+>
+> **Đính chính 2026-11-02 (GOLIVE-DOC):** tài liệu go-live production bằng Docker nay
+> ĐÃ có tại [GOLIVE-DOCKER.md](GOLIVE-DOCKER.md) — bản hiện hành để chủ dự án tự
+> go-live (kiến trúc prod, chuẩn bị VPS, `.env.production`, HTTPS cho
+> `lacdoi.tsnam.name.vn`, nghiệm thu, vận hành, backup/rollback, bảo mật). Từ nay
+> go-live theo tài liệu đó; mục này chỉ còn giá trị lịch sử.
 
 ⚠️ **Chưa thiết kế.** GĐ4 đã qua nhưng production vẫn chưa chốt — đang chờ chủ dự án chọn phương án go-live (VPS + subdomain / Laravel Cloud / PC cá nhân + Tailscale Funnel). Những thứ cần quyết khi đó: hosting, cách chạy migration
 và seed trên môi trường thật, sao lưu, và cách đồng bộ `data/` với database production (một chiều —

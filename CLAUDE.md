@@ -869,6 +869,38 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > worktree + contention 3 phiên song song, chạy lại xanh tuyệt đối).
 > Chi tiết: [TCM-PROMOTE-004](docs/05-tasks/tasks/TCM-PROMOTE-004.md),
 > mục T-06 trong [VN-001](docs/05-tasks/tasks/VN-001.md).
+
+> ## 📗 Bổ sung lần 46, 2026-11-02 — DOCKER-001 ĐÃ ĐÓNG + GOLIVE-DOC: tài liệu go-live production bằng Docker đã viết xong
+>
+> **DOCKER-001 ĐÃ ĐÓNG (2026-11-02):** dự án có gói Docker hoàn chỉnh ở gốc repo —
+> `Dockerfile` đa tầng (Node build → PHP 8.3 FPM → nginx; chọn FPM+nginx thay Apache),
+> `docker-compose.yml` (dev) + `docker-compose.prod.yml` (prod: MySQL không lộ cổng,
+> restart, giới hạn log; cần Compose ≥ 2.24 cho `!override`), entrypoint tự chờ DB →
+> migrate → **seed chỉ khi DB trống** → tạo admin theo `ADMIN_*` → cache production.
+> `ADMIN_QUICK_LOGIN=false` trong cả hai file env mẫu kèm cảnh báo; production thiếu
+> APP_KEY bị chặn khởi động. Tự kiểm thử trên bản archive HEAD `ae1a5d3`: build đạt,
+> seed khớp baseline **654 món (194/279/113/68) · 434 NL · 82 quả**, smoke HTTP 200
+> toàn bộ + POST `/api/shake` 200, validate **0 🔴**, restart không seed đè,
+> **Pest trong container 167/167**, diễn tập production đạt (`quick_login:false`).
+> ⚠️ Điều kiện kiểm thử: VM là sandbox lồng nhau không chạy được Docker Engine nên
+> kiểm bằng Podman (cùng ngữ nghĩa Dockerfile/compose, mạng host + cổng dịch chuyển —
+> thích ứng chỉ ở harness, không nằm trong file bàn giao); lần chạy `docker compose`
+> thật đầu tiên là khi chủ dự án thử theo tài liệu go-live. Chi tiết:
+> [DOCKER-001](docs/05-tasks/tasks/DOCKER-001.md).
+>
+> **GOLIVE-DOC ĐÃ ĐÓNG (2026-11-02):** tài liệu go-live production hoàn chỉnh tại
+> [docs/10-deployment/GOLIVE-DOCKER.md](docs/10-deployment/GOLIVE-DOCKER.md) — chủ
+> dự án tự golive: kiến trúc prod, chuẩn bị VPS, bundle/clone, `.env.production`,
+> HTTPS `lacdoi.tsnam.name.vn` (Caddy khuyến nghị), nghiệm thu bằng lệnh thật,
+> vận hành/backup/rollback, checklist bảo mật. Hai điểm đối chiếu file thật đã ghi
+> đậm trong tài liệu: (1) lệnh prod là overlay **hai file** compose; (2) **bẫy nội
+> suy Compose** — service `db` lấy mật khẩu qua `${DB_*}` nội suy từ `.env` mặc
+> định/shell, không đọc `.env.production`, nên mọi lệnh phải mang
+> `--env-file .env.production`. **Chưa deploy** — go-live vẫn là quyết định của chủ
+> dự án (A7); tài liệu đặt **chính sách hiển thị công khai nguồn hạn chế**
+> (`usage_restricted`, đính chính lần 16 mục (6)) thành mục phải chốt trước khi mở
+> công khai, không tự quyết thay. Scheduler/queue chưa có service riêng trong gói.
+> Chi tiết: [GOLIVE-DOC](docs/05-tasks/tasks/GOLIVE-DOC.md).
 **Trạng thái thực tế, kiểm ngày 2026-10-31 (đã chạy lại toàn bộ lệnh kiểm chứng):**
 
 | Hạng mục | Thực tế | Kiểm bằng |
