@@ -245,6 +245,25 @@ ghi chú mới + 6 món T-04 đủ cổng từ trước) + **nâng bù 1 món**
 [tasks/VN-001.md](./tasks/VN-001.md) mục T-06 +
 [tasks/TCM-PROMOTE-004.md](./tasks/TCM-PROMOTE-004.md).
 
+**T-07 — TÍNH VỊ THEO ĐIỂM MỞ KHOÁ ĐÃ XONG (2026-11-02):** chấm điểm
+mở khoá toàn bộ 84 nguyên liệu hàng đợi nguồn (ii) của TCM-001 (số món
+phủ <60% tham gia + khối lượng đóng góp + số món vượt cổng mô phỏng),
+nghiên cứu theo thứ tự điểm dưới thang thẩm quyền: **gieo 5 nguyên
+liệu / 11 dòng** — `mong-toi` (《中華本草》+《本草綱目》, medium×3),
+`chanh` (*Citrus aurantifolia*, VN medium/low), `ruoi` (《中華本草》
+đúng loài, medium), `bap-chuoi` (cấp chi, low), `ngon-bi` (đúng loài,
+phạm vi bộ phận thân→ngọn, low). **Coverage ≥60%: 500 → 512 món**
+(30–60%: 98→92; <30%: 50→44); **6 món lên Mức 3** + **`goi-ngo-sen`
+nâng bù "Mức 2 (có note)"**. Giữ chờ có hồ sơ 10 mục nổi bật
+(`trung-cut`, `dua-thom`, `sau-rieng`, `sup-lo-*`, `ca-thu`,
+`nam-kim-cham`, `nam-dui-ga`, `thi-la`, `tai-lon`, `long-non-lon`) —
+không nguồn đạt chuẩn mở kiểm chứng được; cụm bột/cassava giữ kết
+luận TCM-001. Hàng đợi (ii) còn 79. **Toàn kho sau khi mọi đợt
+2026-11-02 land (đếm từ file): 215 Mức 3 · 245 Mức 2 thường · 120
+Mức 2 (có note) · 74 Mức 1 = 654**; validate 0 🔴; Pest 177/177
+(719 assertions, DB kiểm chứng riêng). Chi tiết:
+[tasks/T-07-TCM-UNLOCK.md](./tasks/T-07-TCM-UNLOCK.md).
+
 **AUDIT-004 — KIỂM TRA ĐỘC LẬP ĐỘ CHÍNH XÁC GIÁ TRỊ TÍNH/VỊ/NGŨ HÀNH
 ĐÃ XONG (2026-11-01, chỉ đọc — không sửa dữ liệu/code):** tái suy dẫn
 **mù** 227 nguyên liệu (9 agent độc lập chỉ nhận định danh; lô thịt tra
@@ -657,6 +676,7 @@ kiểm chứng TEST-002**; `migrate:fresh --seed` dựng lại đúng toàn bộ
 | [TCM-PROMOTE-003](./tasks/TCM-PROMOTE-003.md) | Quét lại cổng Mức 3 + nâng bù toàn kho sau T-02 | Dữ liệu | ✅ (2026-11-02) — 6 món ghi chú mới (phủ 81,74–100%) + `xoi-man` (66,01%, đủ cổng nhờ T-05 `fe876aa`) → Mức 3; nâng bù 0 món mới; **toàn kho 194 Mức 3 · 279 Mức 2 thường · 113 Mức 2 (có note) · 68 Mức 1**, cổng sạch hai chiều, validate 0 🔴 | TCM-PROMOTE-002, VN-001, T-02 | 2026-11-02 |
 | T-06 (trong [VN-001](./tasks/VN-001.md)) | Tìm ghi chú văn hoá cho toàn bộ món còn thiếu (chuẩn VN-001 nguyên vẹn) | Dữ liệu | ✅ (2026-11-02) — đo lại 260 món chưa ghi chú, nghiên cứu 236 món ngoài phạm vi QD → **viết 32 ghi chú** (census 100% URL nguồn mới, 0 vi phạm khung y tế; 10 bản thảo bị loại, 4 món rút vì nguồn không mở lại được); toàn kho **426/654** có ghi chú, còn chờ 228 (182 Mức 2 thường + 46 Mức 1) | VN-001, TCM-PROMOTE-003 | 2026-11-02 |
 | [TCM-PROMOTE-004](./tasks/TCM-PROMOTE-004.md) | Quét lại cổng Mức 3 + nâng bù toàn kho sau T-06 | Dữ liệu | ✅ (2026-11-02) — **26 món lên Mức 3** (20 nhờ ghi chú T-06, phủ 68,32–100%; 6 món T-04 đủ cổng từ khi về Mức 2 thường) + **nâng bù 1 món** (`banh-kep-la-dua`, 60,61%); cổng sạch hai chiều; **toàn kho sau land: 209 Mức 3 · 251 Mức 2 thường · 119 Mức 2 (có note) · 75 Mức 1**; validate 0 🔴, Pest 177/177 | TCM-PROMOTE-003, VN-001, T-04, T-06 | 2026-11-02 |
+| [T-07](./tasks/T-07-TCM-UNLOCK.md) | Tính vị theo điểm mở khoá: chấm điểm 84 NL chờ nguồn, tra nguồn theo thứ tự điểm, gieo nhãn đạt chuẩn + thăng hạng | Dữ liệu | ✅ (2026-11-02) — **gieo 5 NL / 11 dòng** (mong-toi, chanh, ruoi, bap-chuoi, ngon-bi); coverage ≥60% **500 → 512**; **6 món lên Mức 3** + **1 nâng bù** (`goi-ngo-sen`); giữ chờ có hồ sơ 10 mục nổi bật + cụm bột/cassava; hàng đợi (ii) còn 79; **toàn kho sau land: 215 Mức 3 · 245 Mức 2 thường · 120 Mức 2 (có note) · 74 Mức 1**; validate 0 🔴, Pest 177/177 | TCM-001, TCM-PROMOTE-004 | 2026-11-02 |
 
 ---
 

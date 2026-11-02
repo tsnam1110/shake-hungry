@@ -842,6 +842,32 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > trạng xanh tuyệt đối — xem task file). Chi tiết:
 > [QD-ADJUDICATE-1](docs/05-tasks/tasks/QD-ADJUDICATE-1.md).
 >
+> ## 📗 Bổ sung lần 45, 2026-11-02 — T-07: tính vị theo điểm mở khoá ĐÃ XONG
+>
+> Chấm điểm mở khoá 84 nguyên liệu hàng đợi nguồn (ii) của TCM-001
+> (món phủ <60% tham gia + gram đóng góp + mô phỏng vượt cổng), tra
+> nguồn theo thứ tự điểm dưới thang thẩm quyền: **gieo 5 NL / 11 dòng**
+> (`mong-toi` 《中華本草》+《本草綱目》 qua A+醫學百科, medium · `chanh`
+> nguồn VN đúng loài *Citrus aurantifolia*, medium/low · `ruoi`
+> 《中華本草》 đúng loài, medium · `bap-chuoi` cấp chi, low · `ngon-bi`
+> 《本草再新》 đúng loài phạm vi thân→ngọn, low) → **447 dòng nhãn /
+> 232/434 NL**. **Coverage ≥60%: 500 → 512** (30–60%: 98→92; <30%:
+> 50→44); **6 món lên Mức 3** (`bun-dau-mam-tom`, `canh-cua-mong-toi`,
+> `cha-ruoi`, `goi-bap-chuoi-tom`, `ngon-bi-xao-toi`, `nom-hoa-chuoi`)
+> + **nâng bù `goi-ngo-sen`** ("Mức 2 (có note)"). Giữ chờ có hồ sơ:
+> `trung-cut` (chỉ truyền thông hiện đại), `dua-thom`/`sau-rieng`
+> (bảng web mâu thuẫn / dẫn sai 《本草綱目》), `sup-lo-*` (dân gian cấp
+> tính), `ca-thu` (atlas thương mại Đài Loan), `nam-kim-cham` (điểm 0
+> + loài đã tách *F. filiformis*), `nam-dui-ga`, `thi-la`, `tai-lon`,
+> `long-non-lon`; cụm bột/cassava giữ kết luận TCM-001; `rau-mui` giữ
+> nguyên theo QD-14. Hàng đợi (ii) còn **79**. Toàn kho sau khi mọi
+> đợt 2026-11-02 land (đếm từ file): **215 Mức 3 · 245 Mức 2 thường ·
+> 120 Mức 2 (có note) · 74 Mức 1 = 654**. Kiểm chứng: validate **0 🔴**
+> (DB riêng), Pest **177/177** (719 assertions, DB kiểm chứng riêng;
+> lượt đầu va chạm HEAD của các phiên song song giữa chừng — chạy lại
+> nguyên trạng xanh tuyệt đối). Chi tiết:
+> [T-07-TCM-UNLOCK](docs/05-tasks/tasks/T-07-TCM-UNLOCK.md).
+>
 > ## 📗 Bổ sung lần 45, 2026-11-02 — T-06: ghi chú văn hoá cho món còn thiếu + TCM-PROMOTE-004
 >
 > **VN-001 đợt bổ sung T-06:** phạm vi đo lại tại HEAD đầu đợt: 260 món
