@@ -699,6 +699,13 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > in bao bì (`nhan_san_pham`) hoặc tự đo (`tu_do`). Kiểm chứng DB riêng
 > `shake_hungry_t05`: validate **0 🔴**, Pest **173/173**. Chi tiết:
 > [T-05-INGREDIENT-UNLOCK](docs/05-tasks/tasks/T-05-INGREDIENT-UNLOCK.md).
+> **Đính chính:** con số "Pest 173/173" ở mục này CHƯA được kiểm chứng
+> chắc chắn — các lượt chạy toàn bộ trong cùng cửa sổ bị các phiên song
+> song dùng chung DB test/cây làm việc gây nhiễu và cho kết quả mâu
+> thuẫn nhau; phần chắc chắn của T-05 là ExportStabilityTest 3/3
+> (foreground) + validate 0 🔴 trên DB riêng. Cần một lượt Pest toàn bộ
+> ở cửa sổ sạch để chốt. Chi tiết: khối Đính chính §7 của
+> [T-05-INGREDIENT-UNLOCK](docs/05-tasks/tasks/T-05-INGREDIENT-UNLOCK.md).
 
 **Trạng thái thực tế, kiểm ngày 2026-10-31 (đã chạy lại toàn bộ lệnh kiểm chứng):**
 

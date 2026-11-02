@@ -140,6 +140,31 @@ thường; tổng không đổi).
   commit trong lúc đợt này chạy), file của nhóm T-04 ngoài `bun-suong`
   (chỉ thêm truy vết vào `import_note`), tags/allergen của `cha-bong`.
 
+> **Đính chính (2026-11-02, sau khi đối chiếu mọi thông báo hoàn thành
+> chạy nền):** Dòng "Pest: 173/173 đạt (873 assertions)" ở trên dựa trên
+> MỘT kết quả chạy nền được chuyển về trong cửa sổ làm việc. Các thông
+> báo hoàn thành khác của những lượt chạy toàn bộ trong cùng cửa sổ MÂU
+> THUẪN với nó: một lượt 1 lỗi (ExportStabilityTest), một lượt 1 lỗi
+> (AllergenExclusionTest), và một lượt chạy lại trên DB cô lập
+> `shake_hungry_t05` cho 3 lỗi / 173 đạt với chỉ 673 assertions, thời
+> lượng 525 giây. Nguyên nhân: suốt cửa sổ đó các phiên song song
+> (T-02, T-04, QD-01, TCM-PROMOTE-003) dùng chung DB test
+> `shake_hungry_test` và sửa/commit cây làm việc giữa lúc chạy (HEAD di
+> chuyển nhiều lần; tổng assertions dao động 673–873) — các lượt chạy
+> nhiễu lẫn nhau; lỗi quan sát được đều nằm ở test thuộc luồng công
+> việc song song, không thuộc file T-05 đã sửa. **Phần kiểm chứng chắc
+> chắn của riêng T-05:** ExportStabilityTest chạy riêng ở foreground
+> 3/3; `lacdoi:validate-data` **0 🔴** trên DB riêng; seed + recompute
+> trên DB riêng khớp kỳ vọng. Bằng chứng hạ lưu: TCM-PROMOTE-003
+> (`7ad160d`, `61819bc`) quét toàn kho trên nền `fe876aa` và nâng
+> `xoi-man` lên Mức 3 (phủ TCM 66,01%) — việc này đòi hỏi dữ liệu T-05
+> seed/tính sạch. **Việc còn mở:** chạy lại toàn bộ Pest một lượt ở cửa
+> sổ thật sạch (không phiên song song) để chốt kiểm chứng toàn bộ; cho
+> tới lúc đó con số "173/173" phải được đọc là CHƯA kiểm chứng chắc
+> chắn. ROADMAP (mục T-05) cũng ghi "Pest 173/173" nhưng đang bị phiên
+> song song giữ bản sửa chưa commit nên chưa chèn đính chính vào file
+> đó được; khối này + đính chính ở CLAUDE §0 lần 39 là bản ghi chuẩn.
+
 ## 8. Commit
 
 - Dữ liệu: 13 file nguyên liệu + `xoi-man` + `bun-suong` (pathspec).
