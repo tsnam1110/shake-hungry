@@ -306,6 +306,19 @@ lọc món, không gắn tuyến thuốc vào món". Lớp thông tin thuần �
 không vào gợi ý/lọc/chấm điểm. Chi tiết:
 [tasks/FOOD-COMBINE-001.md](./tasks/FOOD-COMBINE-001.md).
 
+**FOOD-COMBINE-002 — PHỦ TOÀN BỘ BẢN GHI CÒN LẠI (2026-11-02):**
+chủ dự án duyệt triển khai toàn bộ → **+15 bản ghi, tổng 38** (tầng 1:
+10 · tầng 2: 9 · tầng 3: 19), phủ 40/49 mục của hồ sơ nghiên cứu. Hai
+mục hoãn đợt 1 đều xử lý được: MAOI × tyramin xây ở tầng 1 (nhóm thực
+phẩm giàu tyramin chỉ gồm slug thật — loại phô mai chế biến và xúc xích
+tiệt trùng sau khi mở file kiểm chứng); cam thảo × thuốc huyết áp xây
+ở mức dữ liệu với `members` rỗng (kho chưa có slug cam thảo — không
+gắn trang nào tới khi có). Giữ hoãn: gừng bổ sung × chống đông (nguồn
+NCCIH không đủ chuẩn) + 6 cặp thiếu slug một phía; loại trừ vĩnh viễn
+5 mục E0 + 2 mục an toàn thực phẩm theo thiết kế. Validate 0 🔴/3.380
+bản ghi, Pest 186/186. Chi tiết:
+[tasks/FOOD-COMBINE-002.md](./tasks/FOOD-COMBINE-002.md).
+
 **ĐỢT 2 HOÀN THIỆN — 16 HỒ SƠ ĐỊNH DANH ĐÃ PHÂN XỬ TOÀN BỘ
 (2026-11-02, theo uỷ quyền hoàn thiện):** sửa dữ liệu 3 mục
 (`tom-cang-nuong` về nướng mọi thuần; `goi-oc` chốt hoa chuối + đổi

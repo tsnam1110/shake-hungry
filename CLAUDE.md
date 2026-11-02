@@ -1039,6 +1039,12 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 >   **0 🔴 trên 3.365 bản ghi** (gồm 23 cặp kết hợp). CI vẫn chưa chạy
 >   lần nào — chờ chủ dự án push (bundle #6 + bundle bổ sung từ
 >   `a3bff4f`).
+> - **FOOD-COMBINE-002 (2026-11-02, sau đính chính trên):** phủ toàn bộ
+>   bản ghi còn lại theo duyệt của chủ dự án — **38 cặp kết hợp** (tầng
+>   1: 10 · tầng 2: 9 · tầng 3: 19), validate **0 🔴 trên 3.380 bản
+>   ghi**, Pest **186 test** (183 + 3 test đợt 2 của CombinationTest);
+>   chi tiết tasks/FOOD-COMBINE-002.md. (Số "183 test / 3.365 bản ghi"
+>   ở đính chính trên là ảnh chụp trước đợt 2.)
 
 **Trạng thái thực tế, kiểm ngày 2026-10-31 (đã chạy lại toàn bộ lệnh kiểm chứng):**
 

@@ -2,8 +2,9 @@
 
 **Mã task:** FOOD-COMBINE-001 · **Loại:** Tính năng + dữ liệu
 **Status:** ✅ ĐỢT 1 XONG (2026-11-02, theo uỷ quyền hoàn thiện) — 23 bản ghi, hiển thị
-trang nguyên liệu/quả/món, validator V21, test riêng. Đợt mở rộng (phủ nốt các cặp đủ
-chuẩn còn lại) chờ chủ dự án duyệt khung hiển thị trên dữ liệu thật.
+trang nguyên liệu/quả/món, validator V21, test riêng. **Đợt 2 (FOOD-COMBINE-002)
+ĐÃ XONG cùng ngày** theo duyệt "triển khai toàn bộ bản ghi" của chủ dự án:
+38 bản ghi tổng — xem [FOOD-COMBINE-002.md](./FOOD-COMBINE-002.md).
 **Ngày tạo:** 2026-11-02 · **Hồ sơ nghiên cứu:** `nghien-cuu-cam-ket-hop-2026-11-02.md`
 (báo cáo nghiên cứu 49 cặp, thang bằng chứng E0–E3, thiết kế §7 — lưu ở hồ sơ dự án)
 
