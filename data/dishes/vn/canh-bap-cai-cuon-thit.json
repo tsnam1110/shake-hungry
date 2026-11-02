@@ -148,6 +148,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 CÓ ĐIỀU KIỆN về nguồn — nhà ToyenXin chiếm đa số trong các nguồn đã mở, biến thể AnNgon sốt cà chua không tính là cùng món; bắp cải 100→120, tách nhân thịt 70 thành thịt 50 + giò sống 25 (2/3 khối công thức họ nguồn chính trộn giò sống — tiền lệ banh-canh-nam-pho), mộc nhĩ 5→4. Giò sống chưa có số (hồ sơ Phần A) nên phần calo chờ.]",
+  "cultural_note": {
+    "text": "Canh bắp cải cuốn thịt là món canh nhà quen thuộc của bữa cơm Việt: lá bắp cải lạng bỏ sống lá, chần mềm rồi gói nhân thịt heo băm trộn nấm, khéo léo cột lại bằng cọng hành lá đã trụng. Các cuốn được xếp vào nồi, nấu chín trong nước dùng trong, cho bát canh thanh nhẹ mà vẫn đậm đà. Món canh cũng gắn với ký ức tuổi thơ và những bữa cơm gia đình của nhiều người Việt.",
+    "sources": [
+      {
+        "ref": "Thanh Niên — Món dụ trẻ không thích ăn rau: Thơm ngọt bắp cải cuốn",
+        "url": "https://thanhnien.vn/mon-du-tre-khong-thich-an-rau-thom-ngot-bap-cai-cuon-185547555.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

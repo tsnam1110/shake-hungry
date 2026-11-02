@@ -84,6 +84,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — giữ nguyên định lượng (rau 150, muối 1 tuỳ chọn trong nước luộc); viết lại bước theo kỹ thuật mở vung + sốc nước đá (3/3 nguồn kỹ thuật). Ghi nhận: neo định lượng của món luộc đơn giản này mỏng — chỉ 1 nguồn có khẩu phần rõ — nhưng định lượng file nằm trong dải thông thường của kho.]",
+  "cultural_note": {
+    "text": "Trong mâm cơm ngày hè truyền thống của vùng đồng bằng Bắc Bộ, rau muống luộc là món gần như không thể thiếu, dọn cùng nước rau đánh sấu và cà nén dầm tương. Nước luộc rau không bỏ đi mà được dầm sấu (một số nơi dầm cà chua) thành bát canh chua thanh, còn rau thì chấm tương hoặc nước mắm ngâm sấu. Cặp rau muống — cà cũng đi vào ca dao quen thuộc: “Anh đi anh nhớ quê nhà / Nhớ canh rau muống, nhớ cà dầm tương”.",
+    "sources": [
+      {
+        "ref": "VnExpress Cooking — Mâm cơm ngày hè xưa Bắc Bộ",
+        "url": "https://vnexpress.net/doi-song-cooking-mam-com-ngay-he-xua-bac-bo-4621556.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

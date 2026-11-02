@@ -172,6 +172,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. THIẾU NGUYÊN LIỆU: củ cải khô muối (xá bấu) (vai trò phụ) — cần bổ sung vào kho.  [LV2-004 đợt 4: nâng Mức 2 — thêm tôm khô 12, xá bấu 10, rau răm 3 (đều 4/4 nguồn mở được) và bỏ rau mùi (0/4); gà 50→75. Giữ bún 120 theo quy ước sợi hiện tại của kho — quy ước lượng sợi toàn kho vẫn là câu hỏi mở chờ chủ dự án.]",
+  "cultural_note": {
+    "text": "Bún thang là món bún nước cầu kỳ của Hà Nội, thường được nấu vào dịp Tết. Món ăn vốn khởi đầu là cách tận dụng thực phẩm còn lại sau những ngày Tết — thịt gà, giò lụa thừa được xé, thái sợi thật nhỏ, bày cùng trứng tráng mỏng thái chỉ, củ cải dầm và rau răm trên nền bún sợi nhỏ. Nước dùng phải là nước gà ninh với hành, gừng nướng, thêm sá sùng hoặc tôm he cho ngọt, lọc trong và chan thật nóng; khi ăn điểm thêm mắm tôm và một giọt tinh dầu cà cuống.",
+    "sources": [
+      {
+        "ref": "Sức khỏe & Đời sống (Gia đình) — Bún thang Hà Nội - món ăn bình dân trong lớp vỏ quý tộc",
+        "url": "https://giadinh.suckhoedoisong.vn/bun-thang-ha-noi-mon-an-binh-dan-trong-lop-vo-quy-toc-172170420103923481.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

@@ -204,6 +204,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 đợt 2 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — bò 120→160, thêm hoa hồi 0,5 và bột quế 0,5 (3/3 nguồn dùng hồi/quế nguyên cây — kho ghi bằng bột quế tương đương), tỏi 5, hành tím 5 (3/3), nước dừa 60 (2/3), húng quế 3 ăn kèm. Dầu điều tạo màu: giữ dầu ăn, ghi nhận như bánh canh Nam Phổ.]",
+  "cultural_note": {
+    "text": "Cơm bò kho là cách ăn phổ biến của bò kho — món hầm thịt bò có xuất xứ miền Nam Việt Nam. Dù mang tên “kho”, cách nấu chủ đạo của món lại là hầm: thịt bò được ướp và làm săn với ngũ vị hương, sả, gừng trước khi hầm mềm trong nước sốt sánh thơm. Bò kho thường được dọn trong bữa sáng, ăn kèm rau thơm và chan lên cơm nóng hoặc chấm bánh mì đều hợp.",
+    "sources": [
+      {
+        "ref": "Wikipedia tiếng Việt — Bò kho",
+        "url": "https://vi.wikipedia.org/wiki/B%C3%B2_kho"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

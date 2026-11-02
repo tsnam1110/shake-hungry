@@ -204,6 +204,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt DISH-004 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — bỏ lá chanh (0/3 nguồn), thêm hành tây 30, gừng 5, chanh 5, đường 3, dưa leo 30 (đều 3/3), cà chua 30 và rau mùi 2 (2/3); sả 10→3, hành tím 10→6, dầu 8→5 theo tỉ lệ nguồn.]",
+  "cultural_note": {
+    "text": "Cơm gà Tam Kỳ là đặc sản của thành phố Tam Kỳ, tỉnh Quảng Nam, xuất hiện từ khoảng những năm 1950. Linh hồn của món là gà ta thả vườn địa phương — thịt săn chắc, da mỏng — cùng hạt cơm nấu bằng nước luộc gà với nghệ tươi nên vàng óng. Thịt gà được xé tay, trộn gia vị rồi dọn cùng rau răm, hành tây ngâm giấm và đu đủ bào, làm nên đĩa cơm mộc mạc mà tròn vị của xứ Quảng.",
+    "sources": [
+      {
+        "ref": "Thương hiệu & Công luận — Cơm gà Tam Kỳ - Hương vị đậm đà từ xứ Quảng",
+        "url": "https://thuonghieucongluan.com.vn/2pdf/com-ga-tam-ky-huong-vi-dam-da-tu-xu-quang/287895"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
