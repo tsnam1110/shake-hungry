@@ -212,6 +212,25 @@ QD-05: `sua-bien` giữ không gắn nhóm, hồ sơ ở TAXONOMY §4. Cổng h�
 0 🔴, **Pest 177/177**, ExportStabilityTest đạt. Chi tiết:
 [tasks/AUDIT-ALLERGEN.md](./tasks/AUDIT-ALLERGEN.md) §7.
 
+**QD-ADJUDICATE-1 — TRIỂN KHAI QD-06…QD-14 ĐÃ XONG (2026-11-02, chủ dự án
+duyệt toàn bộ khuyến nghị):** QD-06/PX-25: quy ước họ nguồn chốt (theo bài;
+mỗi họ/domain tối đa 1 trong 3 nguồn cổng — ghi vào DATA-PIPELINE §5); đếm
+lại 23 món ≥2 bài Điện Máy XANH: **3 giữ mức · 11 món Mức 3 → "Mức 2 (có
+note)" · 9 món Mức 2 → Mức 1** (không đủ điều kiện nâng bù), không xoá dữ
+kiện nguồn nào. QD-07/PX-26: `canh-hen-nau-chua` gộp thành biến thể của
+`canh-hen`. QD-08: `chao-dau-xanh` → "Cháo đậu xanh thịt bằm" (giữ định
+lượng, giữ Mức 2 có note). QD-09: `chao-ca-loc-trung` định danh lại **cháo
+bột cá lóc Quảng Trị** (slug `chao-bot-ca-loc-quang-tri`). QD-10: `mam-ruoi`
+→ **"Rươi kho thịt"** (slug `ruoi-kho-thit`; gỡ Q10796550 + ảnh chai mắm lên
+men sai định danh). QD-11: `mam-ca-ro` sửa định danh **cá kình con** (nút
+thắt nguyên liệu ghi rõ trong hồ sơ). QD-12: thêm `dac-san:phu-quoc` +
+`dac-san:quang-binh` (TAXONOMY + config), gắn 4 món có định danh xác lập.
+QD-13: Q10 đóng hồ sơ — giữ nguyên rào <80 g. QD-14: hoãn tiền lệ
+`flavor=null` cho rau-mui — đóng hồ sơ. **Bức tranh mức: 183 Mức 3 · 277
+Mức 2 thường · 118 Mức 2 (có note) · 76 Mức 1 = 654**; validate 0 🔴;
+đối chiếu calo cách ly 0 món ngoài phạm vi đổi số. Chi tiết:
+[tasks/QD-ADJUDICATE-1.md](./tasks/QD-ADJUDICATE-1.md).
+
 **AUDIT-004 — KIỂM TRA ĐỘC LẬP ĐỘ CHÍNH XÁC GIÁ TRỊ TÍNH/VỊ/NGŨ HÀNH
 ĐÃ XONG (2026-11-01, chỉ đọc — không sửa dữ liệu/code):** tái suy dẫn
 **mù** 227 nguyên liệu (9 agent độc lập chỉ nhận định danh; lô thịt tra
@@ -634,7 +653,7 @@ Ghi mọi câu hỏi chưa có lời giải ở đây. **Không đoán rồi là
 | ~~Q3~~ | ~~Viện Dinh dưỡng có cấp phép không?~~ | — | — | ❌ **Đã đóng 2026-08-31** — chọn hướng tự tra cứu, không xin phép. Xem [LEGAL-001](./tasks/LEGAL-001.md) |
 | Q4 | Ảnh món lấy từ đâu? Tự chụp / mua / CC BY? | DISH-001 trở đi; ảnh hưởng kích thước repo | Chủ dự án | ⬜ Chờ |
 | Q5 | Có cần Git LFS cho ảnh không? | Phụ thuộc Q4 | Chủ dự án | ⬜ Chờ |
-| Q10 | Trọng số bữa (meal weight) của nhóm `loai:nuoc-cham`: 21/23 món chấm mang weight 8 ở trưa/tối trong khi EDITORIAL-GUIDE §5 không có quy ước trần theo loại món. Engine Lắc đã chặn món khẩu phần <80 g khỏi gợi ý bữa chính (`Recommender::pool`) nên rủi ro thực tế đã được chặn ở tầng engine — quyết: (a) giữ nguyên, (b) hạ weight nhóm nước chấm xuống mức tượng trưng cho dữ liệu tự nhất quán, hay (c) loại nhóm này khỏi slot bữa chính ở tầng dữ liệu? | Dữ liệu nhóm nước chấm (tầm soát M-4) | Chủ dự án | ⬜ Chờ ([DATA-AUDIT-FIXES §5](../04-data-sources/DATA-AUDIT-FIXES-2026-10-31.md)) |
+| Q10 | Trọng số bữa (meal weight) của nhóm `loai:nuoc-cham`: 21/23 món chấm mang weight 8 ở trưa/tối trong khi EDITORIAL-GUIDE §5 không có quy ước trần theo loại món. Engine Lắc đã chặn món khẩu phần <80 g khỏi gợi ý bữa chính (`Recommender::pool`) nên rủi ro thực tế đã được chặn ở tầng engine — quyết: (a) giữ nguyên, (b) hạ weight nhóm nước chấm xuống mức tượng trưng cho dữ liệu tự nhất quán, hay (c) loại nhóm này khỏi slot bữa chính ở tầng dữ liệu? | Dữ liệu nhóm nước chấm (tầm soát M-4) | Chủ dự án | ✅ ĐÃ CHỐT 2026-11-02 (QD-13): **(a) giữ nguyên** — giữ hàng rào khẩu phần <80 g cho vai chính, không đổi code/dữ liệu ([DATA-AUDIT-FIXES §5](../04-data-sources/DATA-AUDIT-FIXES-2026-10-31.md), QD-ADJUDICATE-1) |
 | **Q7** | **Nguồn nào cho hệ số hao hụt khi nấu của THUỶ SẢN?** Bảng USDA Cooking Yields R2 đã nhập chỉ có thịt và gia cầm — **0 dòng thuỷ sản**. Không thể suy từ SR Legacy (raw ÷ cooked) vì chính USDA là vế tham chiếu của TEST-002 ⇒ phép kiểm thành vòng tròn. Ứng viên: USDA Agriculture Handbook 102 (bản quét 1975, chưa có lớp text) | Nhóm `hap` của TEST-002; mọi món cá hấp/luộc VN | Chủ dự án + tra cứu | 🔵 **Đã có hồ sơ nguồn 2026-11-02 (T-09)**: FSANZ (phi lê hấp/luộc 0,84), Bảng 15 MEXT Nhật, đo thực nghiệm Thái Lan — khuyến nghị thử 0,84 ở vòng hiệu chuẩn riêng; chờ chủ dự án mở vòng hiệu chuẩn mới đổi engine ([T-08-T12-BACKLOG](./tasks/T-08-T12-BACKLOG.md)) |
 | ~~Q8~~ | ~~Repo có đẩy lên remote không, và ở đâu?~~ | — | — | ✅ **Đã đóng 2026-09-01** — `origin` = `git@gitlab.com:Tran-Son-Nam/shake-hungry.git`, branch `dev` đã đẩy (8 commit, 513 file). Rủi ro mất trắng đã gỡ |
 | ~~Q9~~ | ~~CI chạy trên nền nào?~~ | — | — | ✅ **Đã đóng 2026-10-31** — tiền đề đã đảo ngược: repo nay ở **GitHub** (không còn remote GitLab) nên `.github/workflows/tests.yml` đã đúng nền. CI vẫn chưa chạy lần nào vì code **chưa push** — sẽ tự chạy ở lần push đầu (đang chờ credential) |

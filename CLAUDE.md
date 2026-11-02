@@ -806,6 +806,41 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > VN + tài liệu ĐH Duy Tân) và **`nho-than-go`** (Dân Việt 2017)
 > → **77/82 quả có ghi chú**; 5 quả giữ chờ có hồ sơ cập nhật.
 > Chi tiết: [T-08-T12-BACKLOG](docs/05-tasks/tasks/T-08-T12-BACKLOG.md).
+
+> ## 📗 Bổ sung lần 44, 2026-11-02 — QD-ADJUDICATE-1: triển khai QD-06…QD-14 (chủ dự án duyệt toàn bộ khuyến nghị)
+>
+> **QD-06/PX-25 — quy ước họ nguồn ĐÃ CHỐT:** nguồn độc lập tính theo **bài**;
+> mỗi **họ/domain tối đa 1 trong 3** nguồn tính cổng Mức 2 (văn bản tại
+> [DATA-PIPELINE §5](docs/04-data-sources/DATA-PIPELINE.md)). Đếm lại 23 món
+> ≥2 bài Điện Máy XANH: **3 giữ mức · 11 món Mức 3 → "Mức 2 (có note)"**
+> (đủ nâng bù) · **9 món Mức 2 → Mức 1** (phủ ≥60% nhưng chưa có ghi chú:
+> banh-chuoi, canh-moc, chao-thit-bam, suon-nuong, sup-hai-san; phủ <60%:
+> banh-cuon, banh-uot, mi-quang, cha-ca-thac-lac) — **không xoá dữ kiện
+> nguồn nào**, mọi phân xử trong `import_note`. **QD-07/PX-26:**
+> `canh-hen-nau-chua` gộp thành biến thể của `canh-hen`. **QD-08:**
+> `chao-dau-xanh` → "Cháo đậu xanh thịt bằm" (định lượng giữ nguyên — họ
+> thịt bằm không ghi khẩu phần nên không có số đã kiểm chứng để áp; giữ
+> "Mức 2 (có note)"). **QD-09:** `chao-ca-loc-trung` định danh lại **cháo
+> bột cá lóc Quảng Trị**, slug `chao-bot-ca-loc-quang-tri`, gỡ parent +
+> bột nghệ, thêm củ nén (mọi dòng vẫn llm_suggested, giữ Mức 1).
+> **QD-10:** `mam-ruoi` → **"Rươi kho thịt"**, slug `ruoi-kho-thit`; gỡ
+> external_ref Q10796550 và ảnh chai mắm lên men (đều thuộc sản phẩm lên
+> men, sai với món kho). **QD-11:** `mam-ca-ro` sửa định danh **cá kình
+> con** (tên Anh + bước nấu); dòng nguyên liệu vẫn `ca-ro-dong` — nút
+> thắt ghi rõ trong hồ sơ (chưa có slug cá kình, QT-1 cấm tự tạo số).
+> **QD-12:** TAXONOMY + `config/taxonomy.php` thêm `dac-san:phu-quoc`,
+> `dac-san:quang-binh` (16 giá trị); gắn `goi-ca-trich`, `ghe-hap`,
+> `chao-canh`, `chao-hau` theo định danh đã xác lập trong hồ sơ.
+> **QD-13:** Q10 đóng hồ sơ (giữ rào <80 g, không đổi code/dữ liệu).
+> **QD-14:** hoãn tiền lệ `flavor=null` rau-mui, đóng hồ sơ tại TCM-001d.
+> **Bức tranh mức toàn kho: 183 Mức 3 · 277 Mức 2 thường · 118 Mức 2
+> (có note) · 76 Mức 1 = 654.** Kiểm chứng (worktree sạch tại baseline +
+> patch, DB riêng `shake_hungry_qd1`): validate **0 🔴**, recompute
+> 578/578 món ≥ Mức 2, đối chiếu calo cách ly **0 món ngoài phạm vi đổi
+> số**, seed→export chỉ viết lại `_index.json`, **Pest cô lập 177/177**
+> (719 assertions; lượt đầu dưới tải song song cho 24 đỏ, chạy lại nguyên
+> trạng xanh tuyệt đối — xem task file). Chi tiết:
+> [QD-ADJUDICATE-1](docs/05-tasks/tasks/QD-ADJUDICATE-1.md).
 **Trạng thái thực tế, kiểm ngày 2026-10-31 (đã chạy lại toàn bộ lệnh kiểm chứng):**
 
 | Hạng mục | Thực tế | Kiểm bằng |
