@@ -17,7 +17,10 @@ COPY public ./public
 RUN npm run build
 
 # ---------- Tầng 2: ứng dụng PHP ----------
-FROM php:8.3-fpm-bookworm AS app
+# Ghim đúng bản vá bảo mật: 8.3.36 là bản vá PHP2Shell (CVE-2026-109618/
+# CVE-2026-109619, RCE không cần đăng nhập, 21/10/2026). KHÔNG hạ xuống
+# tag trôi php:8.3 — image kéo trước 21/10/2026 là bản có lỗ hổng.
+FROM php:8.3.36-fpm-bookworm AS app
 WORKDIR /var/www/html
 
 # Thư viện hệ thống cho các extension (ảnh gd, intl, zip).
@@ -63,6 +66,8 @@ RUN composer install --optimize-autoloader --no-interaction --no-scripts
 RUN touch .env
 
 # ---------- Tầng 4: web (nginx) ----------
-FROM nginx:1.27-alpine AS web
+# 1.31.7: bản mainline đã vá loạt CVE nginx công bố 14/10/2026 và
+# CVE-2026-42533 (tràn bộ đệm ở map regex) — 1.27 đã cũ, xem DOCKER-001 §4.2.
+FROM nginx:1.31.7-alpine AS web
 COPY docker/nginx.conf /etc/nginx/conf.d/default.conf
 COPY --from=app /var/www/html/public /var/www/html/public

@@ -13,6 +13,9 @@ trang pháp lý vào smoke test §7.4, làm rõ lệnh nhận bundle §3.1. Chi 
 [GOLIVE-DOC](../05-tasks/tasks/GOLIVE-DOC.md).
 **Bản gốc:** file này trong repo là bản gốc. Bản sao bàn giao cho chủ dự án (thư mục goal
 `files/`) có nội dung giống hệt.
+**Bản thực hành:** [GOLIVE-RUNBOOK.md](GOLIVE-RUNBOOK.md) cùng thư mục — bản rút gọn
+chỉ gồm lệnh chạy theo thứ tự để thực hiện luôn; file này là bản gốc để tra cứu
+giải thích và xử lý lỗi.
 **Đối tượng đọc:** chủ dự án tự go-live trên VPS của mình, không cần hỏi lại. Tài liệu này
 **không** tự deploy — mọi lệnh do người vận hành chạy trên máy chủ của mình.
 
@@ -68,7 +71,7 @@ Internet ──HTTPS──> Caddy (host, :443/:80) ──HTTP──> [web] nginx
 
 | Service | Image / build | Vai trò | Cổng |
 |---|---|---|---|
-| `web` | Build từ `Dockerfile` target `web` (nginx 1.27-alpine + `public/` đã build) | Phục vụ file tĩnh (asset Vite, ảnh trong `public/`), chuyển request PHP sang `app:9000` (`docker/nginx.conf`) | Host **80** (bản prod). Khi dùng Caddy/nginx trên host: đổi thành `127.0.0.1:8080` theo §6.2 |
+| `web` | Build từ `Dockerfile` target `web` (nginx 1.31.7-alpine + `public/` đã build) | Phục vụ file tĩnh (asset Vite, ảnh trong `public/`), chuyển request PHP sang `app:9000` (`docker/nginx.conf`) | Host **80** (bản prod). Khi dùng Caddy/nginx trên host: đổi thành `127.0.0.1:8080` theo §6.2 |
 | `app` | Build từ `Dockerfile` target `app` (PHP 8.3-FPM + vendor `--no-dev` + mã nguồn + `data/`) | Chạy Laravel; entrypoint lo migrate/seed/cache (§5.2). FPM để `clear_env = no` nên đọc được biến từ `env_file` | Chỉ nội bộ Docker: 9000 (không publish) |
 | `db` | `mysql:8.0` | CSDL `shake_hungry` (+ `shake_hungry_test` tạo sẵn bởi `docker/mysql-init.sql`) | **Không publish ở production** (xem §1.2) |
 
@@ -304,7 +307,7 @@ khoá không cần chạy app:
 ```bash
 php -r 'echo "base64:" . base64_encode(random_bytes(32)) . PHP_EOL;'
 # Nếu server chưa có PHP ngoài Docker:
-docker run --rm php:8.3-cli php -r 'echo "base64:" . base64_encode(random_bytes(32)) . PHP_EOL;'
+docker run --rm php:8.3.36-cli php -r 'echo "base64:" . base64_encode(random_bytes(32)) . PHP_EOL;'
 ```
 
 Dán kết quả vào dòng `APP_KEY=` trong `.env.production`. **Lưu một bản sao APP_KEY vào

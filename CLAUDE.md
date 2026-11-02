@@ -1062,6 +1062,28 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > chỉ chốt được trên VPS. Chi tiết: tasks/DOCKER-001.md §4.1,
 > GOLIVE-DOCKER §5.2/§7.2/§13.2.
 
+> ## 📗 Bổ sung lần 52, 2026-11-02 — DOCKER-001: GHIM BẢN VÁ BẢO MẬT PHP 8.3.36 + NGINX 1.31.7, THÊM GOLIVE-RUNBOOK
+>
+> Rà soát đợt CVE tháng 10/2026 theo yêu cầu chủ dự án: PHP2Shell
+> (CVE-2026-109618/109619, CVSS 9.2, RCE không cần đăng nhập, đã vào
+> CISA KEV) vá ở PHP 8.3.36; Laravel an toàn (lock 13.29.0 = đúng bản
+> vá CVE-2026-114509, app chỉ dùng session guard); Node chỉ ở tầng
+> build; nginx 1.27 cấu hình không chạm các CVE 2026 nhưng đã cũ;
+> MySQL 8.0 đã EOL (8.0.46 là bản cuối) — chuyển 8.4 LTS là việc phải
+> làm trước khi mở công khai, chủ dự án CHƯA duyệt đợt này. Chủ dự án
+> duyệt gói ghim: Dockerfile `php:8.3.36-fpm-bookworm` (cấm hạ về tag
+> trôi — ghi tại Dockerfile), web `nginx:1.31.7-alpine`,
+> `docker/php.ini` tắt `session.upload_progress` (khuyến cáo PHP
+> trước CVE-2026-115560). Kiểm chứng lại bằng chu trình sạch: build
+> image mới, `php -v` = 8.3.36, `nginx -v` = 1.31.7, ini Off có hiệu
+> lực; boot từ DB rỗng khớp census 652 món · 436 NL · 82 quả · 38 kết
+> hợp · dish_nutrition 649; smoke HTTP 200 toàn bộ; đăng nhập admin
+> đạt; restart bỏ qua seed. Chi tiết: tasks/DOCKER-001.md §4.2. Cùng
+> đợt: thêm docs/10-deployment/GOLIVE-RUNBOOK.md — bản thực hành
+> go-live chỉ gồm lệnh chạy (theo yêu cầu chủ dự án: hướng dẫn để
+> thực hiện, không giải thích dài); GOLIVE-DOCKER.md giữ vai trò tài
+> liệu gốc tra cứu.
+
 **Trạng thái thực tế, kiểm ngày 2026-10-31 (đã chạy lại toàn bộ lệnh kiểm chứng):**
 
 | Hạng mục | Thực tế | Kiểm bằng |

@@ -100,6 +100,33 @@ recompute sau seed. Kèm `.gitignore` bổ sung `.env.docker`.
 - Scheduler Laravel (`schedule:run`) và queue worker chưa đóng gói thành service riêng — ghi vào tài liệu go-live.
 - Ảnh `app` 744 MB (gồm `data/` 116 MB + vendor + PHP) — chấp nhận được; tối ưu kích thước không thuộc phạm vi đợt này.
 
+### 4.2 Vòng ghim bảo mật 2026-11-02 (đợt CVE tháng 10/2026)
+
+Chủ dự án duyệt sau bản rà soát bảo mật (PHP2Shell và các CVE tháng 10/2026):
+
+- `Dockerfile`: ghim `php:8.3.36-fpm-bookworm` (bản vá CVE-2026-109618/109619);
+  comment tại chỗ cấm hạ xuống tag trôi `php:8.3`. Tầng `web`:
+  `nginx:1.27-alpine` → `nginx:1.31.7-alpine` (loạt CVE nginx 14/10/2026 +
+  CVE-2026-42533). Lệnh mẫu sinh APP_KEY trong GOLIVE-DOCKER cũng ghim `php:8.3.36-cli`.
+- `docker/php.ini`: `session.upload_progress.enabled = Off` (khuyến cáo tạm thời
+  của PHP trước CVE-2026-115560; app không dùng tính năng này).
+- Không đổi: Laravel (lock 13.29.0 đã là bản vá CVE-2026-114509, app chỉ dùng
+  session guard), MySQL (chuyển 8.4 LTS chưa được duyệt đợt này — 8.0 đã EOL,
+  phải làm trước khi mở công khai).
+
+Kiểm chứng (harness Podman như §4.1; VM thay máy giữa vòng, cài lại Podman 4.9.3):
+build lại cả hai image đạt; `php -v` trong image = **8.3.36**; `nginx -v` =
+**1.31.7**; `ini_get("session.upload_progress.enabled")` rỗng (Off). Chu trình
+sạch từ DB rỗng: **652 món · 436 nguyên liệu · 82 quả · 38 kết hợp ·
+dish_nutrition 649**; smoke HTTP 200 (`/`, `/up`, `/thu-vien`, `/mon/pho-bo`,
+`/admin`, ảnh media), `/api/dishes` total 652, asset `/build/` có
+`Cache-Control: public, immutable`, `login-options` trả `{"quick_login":false}`,
+trang nguyên liệu có khối "Kết hợp cần lưu ý", đăng nhập admin trả role `admin`;
+khởi động lại in "Đã có 652 món — bỏ qua seed." và trang chủ vẫn 200.
+
+Cùng commit: thêm `docs/10-deployment/GOLIVE-RUNBOOK.md` (bản thực hành go-live
+chỉ gồm lệnh, theo yêu cầu chủ dự án) + GOLIVE-DOCKER trỏ sang runbook.
+
 ## 5. File bàn giao
 
 `Dockerfile`, `docker-compose.yml`, `docker-compose.prod.yml`, `.dockerignore`,
