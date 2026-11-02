@@ -757,9 +757,9 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > **0 🔴 / 23 🟡**, recompute **587/587 món ≥ Mức 2 tính đủ**; đối chiếu calo
 > cách ly: đúng 5 món trong phạm vi đổi (4 sửa định lượng + `che-thach-den`
 > có dòng dinh dưỡng mới khi lên Mức 2), 2 món đạt không sửa **không đổi một
-> số**; Pest **188 passed / 1 failed** — test đỏ duy nhất thuộc phiên song
-> song đang áp gói quyết dị ứng (QD-03/QD-04, sửa dở `TaggingRules`/test
-> trong cây làm việc), không liên quan T-04; ExportStabilityTest đạt. Sự cố
+> số**; Pest **177 passed / 0 failed** (719 assertions, exit 0 —
+> ExportStabilityTest đạt; đính chính cùng ngày: bản đầu ghi "188/1 failed"
+> là đọc nhầm đầu ra lượt chạy của phiên song song, đúng lỗi ở `63c01d3`). Sự cố
 > phối hợp: bản áp lần đầu bị phiên song song ghi đè mất trước khi commit —
 > đã áp lại trên HEAD `7ad160d` và kiểm chứng lại toàn bộ.
 **Trạng thái thực tế, kiểm ngày 2026-10-31 (đã chạy lại toàn bộ lệnh kiểm chứng):**

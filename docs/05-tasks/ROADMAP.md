@@ -305,8 +305,8 @@ phân xử chủ dự án). Bức tranh mức đếm từ file: **194 Mức 3 ·
 Mức 2 thường · 107 Mức 2 (có note) · 67 Mức 1**. Kiểm chứng DB riêng
 `shake_hungry_t04`: validate **0 🔴 / 23 🟡**, recompute **587/587
 món ≥ Mức 2 tính đủ**, đối chiếu calo cách ly đúng phạm vi; Pest
-**188 passed / 1 failed** (test đỏ duy nhất thuộc phiên song song
-đang áp gói quyết dị ứng QD-03/QD-04). Chi tiết:
+**177 passed / 0 failed** (719 assertions, exit 0; đính chính: bản
+đầu ghi 188/1 failed là đọc nhầm đầu ra của phiên song song). Chi tiết:
 [tasks/T-04-429-RETRY.md](./tasks/T-04-429-RETRY.md).
 
 **T-02/T-03/T-13 — GIẢI TOẢ 7 FILE MÓN BỊ GIỮ + GHI CHÚ + A4.1 + REGION
