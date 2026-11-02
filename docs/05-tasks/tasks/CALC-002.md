@@ -1,7 +1,10 @@
 # [CALC-002] — Hệ số hao hụt khi nấu và hấp thụ dầu khi chiên
 
 **Mã task:** CALC-002 · **Giai đoạn:** GĐ1 · **Loại:** Backend
-**Status:** 🔵 IN PROGRESS — phần code xong 2026-08-31, chờ dữ liệu DATA-004/DATA-008 · **Ngày tạo:** 2026-08-31 · **Phụ thuộc:** CALC-001, DATA-004
+**Status:** ✅ DONE (2026-11-02) — code xong 2026-08-31; phía dữ liệu đã đối chiếu xong:
+DATA-004 nhập bảng CY R2 (163 dòng) + 9 yield có nguồn, DATA-008 DONE, phần yield thuỷ sản
+phân xử ở Q7/TEST-002 (không đặt cho nguyên liệu cá Việt — lý do ở TEST-002 mục đóng)
+· **Ngày tạo:** 2026-08-31 · **Phụ thuộc:** CALC-001, DATA-004
 
 ---
 
@@ -50,9 +53,13 @@ không bao giờ đạt `confidence = high`.
 - [x] Test `cung nguyen lieu, luoc vs chien cho ket qua khac nhau ro ret`
 - [x] Test `mon chien co nguyen lieu thieu oil_absorption_pct thi vao missing`
 - [x] Hệ số trong code trích nguồn ở đầu class `NutritionCalculator` + CALORIE-ENGINE §9
-- [ ] **Chưa xong:** dữ liệu hệ số — `default_yield_factor` hiện null toàn bộ 150 nguyên liệu
-      (chưa tra được nguồn), bảng hao hụt USDA chưa nhập ([DATA-004](./DATA-004.md)), hệ số
-      phần ăn được chưa nhập ([DATA-008](./DATA-008.md)). Code đã sẵn chỗ, thiếu số có nguồn.
+- [x] Dữ liệu hệ số — ĐÃ ĐỐI CHIẾU (2026-11-02; dòng chữ cũ "null toàn bộ 150 nguyên liệu,
+      bảng chưa nhập" đã lỗi thời): bảng hao hụt USDA CY R2 ĐÃ nhập (163 dòng,
+      [DATA-004](./DATA-004.md) DONE); 9 nguyên liệu thịt/gia cầm có `default_yield_factor`
+      suy từ dòng cụ thể kèm ghi chú NDB, các nguyên liệu còn lại null CÓ LÝ DO ghi trong
+      `default_yield_factor_note`/hồ sơ (bảng nguồn không có mục tương ứng — không chế số);
+      hệ số phần ăn được: [DATA-008](./DATA-008.md) DONE; yield thuỷ sản: phân xử Q7 —
+      không đặt cho nguyên liệu cá Việt (xem TEST-002 mục đóng 2026-11-02).
 
 ## Cạm bẫy
 

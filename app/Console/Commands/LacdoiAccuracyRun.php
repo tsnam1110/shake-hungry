@@ -24,7 +24,8 @@ class LacdoiAccuracyRun extends Command
     protected $signature = 'lacdoi:accuracy-run
         {--dataset=fndds : fndds | nutrition5k}
         {--write-report : ghi báo cáo vào docs/06-nutrition/accuracy-runs/}
-        {--date= : ngày ghi trên báo cáo (YYYY-MM-DD), mặc định lấy từ --date của người chạy}';
+        {--date= : ngày ghi trên báo cáo (YYYY-MM-DD), mặc định lấy từ --date của người chạy}
+        {--seafood-yield= : THỬ NGHIỆM Q7/T-09 — hệ số hao hụt độc lập (FSANZ cá vây hấp/luộc = 0.84) áp cho đầu vào cá vây (name_en bắt đầu "Fish,") ở món hap/luoc; đầu vào còn lại của các món đó nhận 1.0 để engine suy được khối lượng thành phẩm. Không đặt = hành vi gốc}';
 
     protected $description = 'Đo độ chính xác engine calo trên bộ kiểm chứng FNDDS (TEST-002)';
 
@@ -70,6 +71,21 @@ class LacdoiAccuracyRun extends Command
 
                     break;
                 }
+                // THỬ NGHIỆM Q7 (T-09, đăng ký trước theo tiền lệ CALC-004): khi
+                // --seafood-yield được đặt, đầu vào cá vây của món hap/luoc nhận hệ số
+                // hao hụt từ nguồn ĐỘC LẬP với USDA (FSANZ) thay cho giả định bảo toàn
+                // khối lượng; các đầu vào còn lại của cùng món nhận 1.0 (muối/gia vị
+                // không mất khối lượng đáng kể) để engine suy được cookedGramsEstimate.
+                // Hệ số KHÔNG được suy từ chính vế tham chiếu USDA (cấm phép thử vòng
+                // tròn — xem TEST-002).
+                $yieldFactor = null;
+                $seafoodYield = $this->option('seafood-yield');
+                if ($seafoodYield !== null && in_array($food->cooking_method ?? '', ['hap', 'luoc'], true)) {
+                    $yieldFactor = str_starts_with((string) $ref->name_en, 'Fish,')
+                        ? (float) $seafoodYield
+                        : 1.0;
+                }
+
                 $ingredients[] = new IngredientInput(
                     slug: 'sr-'.$row->sr_code,
                     grams: (float) $row->gram_weight,
@@ -80,6 +96,7 @@ class LacdoiAccuracyRun extends Command
                     fatG: $ref->fat_g !== null ? (float) $ref->fat_g : null,
                     carbG: $ref->carb_g !== null ? (float) $ref->carb_g : null,
                     fiberG: $ref->fiber_g !== null ? (float) $ref->fiber_g : null,
+                    yieldFactor: $yieldFactor,
                 );
             }
 
@@ -412,6 +429,12 @@ class LacdoiAccuracyRun extends Command
         $md .= '**Bộ mẫu:** '.count($results)." Food Code FNDDS tính được ({$skipped} bỏ qua)\n";
         $md .= "**Bảng thành phần:** `usda_sr_legacy` (một nguồn duy nhất — QT-4)\n";
         $md .= "**Lệnh tái lập:** `php artisan lacdoi:accuracy-run --dataset=fndds`\n\n";
+        if ($this->option('seafood-yield') !== null) {
+            $md .= sprintf(
+                "> **LẦN ĐO THỬ NGHIỆM Q7 (T-09):** chạy với `--seafood-yield=%s` — hệ số hao hụt cá vây hấp/luộc từ **FSANZ** (nguồn độc lập với USDA, −16%% ⇒ 0,84), đăng ký trước theo tiền lệ CALC-004. Hệ số KHÔNG suy từ vế tham chiếu USDA. Nhóm đối chứng là lần đo gốc cùng ngày/kỳ trước (giả định bảo toàn khối lượng).\n\n",
+                $this->option('seafood-yield'),
+            );
+        }
         $md .= "> Cả nguyên liệu (SR Links) lẫn giá trị đối chiếu đều từ USDA ⇒ lệch nhiều nghĩa là\n> **engine sai**, không phải dữ liệu sai (ACCURACY-SPEC §4 bước 3).\n\n";
         $md .= "## Bốn chỉ số\n\n| Chỉ số | Giá trị | Mục tiêu |\n|---|---|---|\n";
         $md .= sprintf("| %% món trong ±20%% | **%.1f%%** | ≥80%% |\n", $overall['pct_within_20']);

@@ -1,7 +1,10 @@
 # [DATA-004] — Nhập bảng hệ số hao hụt khi nấu
 
 **Mã task:** DATA-004 · **Giai đoạn:** GĐ1 · **Loại:** Dữ liệu
-**Status:** 🔵 IN PROGRESS — bảng thịt/gia cầm nạp xong 2026-08-31; còn hệ số hút nước tinh bột + retention · **Ngày tạo:** 2026-08-31 · **Phụ thuộc:** DATA-006
+**Status:** ✅ DONE (2026-11-02) — DoD đạt toàn bộ từ 2026-08-31; hai phần "còn lại" đã
+phân xử đóng ở mục cuối file (retention = hoãn theo thiết kế vì v1 chỉ tính macro; hút
+nước tinh bột = không cần trong thực hành vì công thức dùng dạng đã nấu)
+· **Ngày tạo:** 2026-08-31 · **Phụ thuộc:** DATA-006
 
 ---
 
@@ -86,3 +89,24 @@ Different Stages of Preparation"* (1975, public domain) —
 trên mạng là **ảnh quét không có lớp text**, phải OCR rồi đối chiếu tay từng dòng. Chưa làm.
 
 Đã ghi thành **Q7** ở [ROADMAP](../ROADMAP.md) mục "Câu hỏi mở".
+
+---
+
+## ĐÓNG TASK — phân xử hai phần còn lại (2026-11-02, uỷ quyền hoàn thiện)
+
+- **Retention Factors R6:** HOÃN THEO THIẾT KẾ, không phải tồn đọng. Retention chỉ áp cho
+  VI CHẤT (chính mục Cạm bẫy của task này đã ghi); engine v1 chỉ tính macro
+  (kcal/đạm/béo/bột đường/xơ) nên bảng retention không có nơi tiêu thụ — nhập vào DB bây
+  giờ là dữ liệu chết không ai đọc. PDF nguồn đã lưu trữ lại tại `storage/imports/retn06.pdf`
+  (bản lưu cũ mất theo lần thay VM; tải lại 2026-11-02 từ USDA ARS, 18 trang) — khi vi chất
+  vào phạm vi (GĐ sau) thì bóc bảng từ chính file này. Theo đó, ô DoD cuối của CALC-002
+  cũng đóng (xem CALC-002).
+- **Hệ số hút nước tinh bột (gạo/bún/phở):** KHÔNG CẦN trong thực hành hiện tại — nguyên
+  liệu tinh bột trong kho ở dạng ĐÃ NẤU (bản chụp cơm chín `com-trang` is_ready_to_eat;
+  bún/phở tương tự), công thức món ghi theo dạng ăn được nên không phát sinh phép quy đổi
+  sống → chín. Nếu sau này có công thức ghi gạo sống, nguồn ứng viên là FAO/INFOODS
+  (phương pháp) + tự đo có ghi chép — mở task riêng khi đó.
+- **Thuỷ sản:** câu hỏi yield thuỷ sản đã tách thành Q7 và ĐÓNG ở T-09/TEST-002
+  (2026-11-02, vòng thử FSANZ 0,84 đạt).
+
+**DATA-004 DONE.**

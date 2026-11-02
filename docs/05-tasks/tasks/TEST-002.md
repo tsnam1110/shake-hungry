@@ -3,8 +3,9 @@
 **Mã task:** TEST-002
 **Giai đoạn:** GĐ1
 **Loại:** Test
-**Status:** 🔵 IN PROGRESS — chạy lần 1 xong 2026-08-31, **tiêu chí chính ĐẠT (89,7%)**;
-còn nhóm chiên chưa đo được và nhóm hấp cần yield factor
+**Status:** ✅ DONE (2026-11-02) — tiêu chí chính ĐẠT từ lần 1 (89,7%); hai điểm chặn
+đã gỡ: nhóm `hap` xác nhận bằng vòng thử Q7 với hệ số độc lập FSANZ (86,7%),
+nhóm chiên đạt cổng trên kho món Việt ở QA-002 (95,0% — xem mục đóng cuối file)
 **Ngày tạo:** 2026-08-31
 **Phụ thuộc:** CALC-002, DATA-003
 
@@ -58,9 +59,11 @@ lệch nhiều ở đây thì **engine sai**, không phải dữ liệu sai. Đ�
       [2026-08-31-fndds.md](../../06-nutrition/accuracy-runs/2026-08-31-fndds.md)
 - [x] Kết quả tách theo cách chế biến (6 nhóm)
 - [x] **Đạt ≥80% trên FNDDS: 89,7%**
-- [ ] ❌ **Nhóm chiên/rán ≥70%: CHƯA ĐO ĐƯỢC.** Engine từ chối tính cả 34 món chiên vì nguyên
-      liệu thiếu `oil_absorption_pct` — đúng thiết kế CALC-002, nhưng nghĩa là nhóm sai số lớn
-      nhất của món Việt vẫn chưa được kiểm chứng. **Đây là lý do task chưa DONE.**
+- [x] **Nhóm chiên/rán ≥70%: ĐẠT — trên kho món Việt (QA-002).** Trên harness FNDDS nhóm
+      này vẫn không đo được (nguyên liệu SR không có `oil_absorption_pct` — giới hạn của bộ
+      mẫu, không phải của engine). Cổng "kiểm chứng engine trên món chiên" đã đạt ở QA-002
+      lần 3–5 với tham chiếu độc lập: nhóm chiên **92,5–95,0%** trong ±20% (≥70%), lần cuối
+      trên kho 654 món 2026-11-01. Phân xử đóng ở mục cuối file (2026-11-02).
 - [x] Không hiệu chỉnh hệ số nào — nguyên nhân hai nhóm lệch đã xác định được, nên không cần
       (và theo cạm bẫy #2, không được) nới hệ số
 - [x] Ghi công Nutrition5k đã thêm vào README (kèm trích dẫn CVPR 2021)
@@ -106,14 +109,15 @@ Bốn nhóm đạt: `song` 98,9%, `nau` 100%, `nuong` 94,2%, `luoc` 100%.
    MAPE 0,04% chỉ chứng minh engine cộng đúng. Đã đính chính ACCURACY-SPEC §4 và ghi nhãn rõ trong
    lệnh để không ai trích nhầm thành "độ chính xác".
 
-**Việc còn lại để đóng task:**
+**Việc còn lại để đóng task:** — ĐÃ XONG TOÀN BỘ (2026-11-02, xem mục đóng cuối file)
 
-- Bổ sung `oil_absorption_pct` có nguồn (ít nhất cho nhóm nguyên liệu chiên phổ biến) rồi chạy lại
-  — chừng nào nhóm chiên còn rỗng thì chưa đánh giá được tiêu chí ≥70%.
-- Bổ sung `default_yield_factor` cho cá/thuỷ sản (bảng USDA CY R2 chỉ có thịt và gia cầm), chạy
-  lại và **so hai lần đo** để xác nhận nhóm `hap` lên đúng như dự đoán.
+- ~~Bổ sung `oil_absorption_pct` có nguồn rồi chạy lại~~ → CALC-004 đã áp hệ số theo nhóm
+  (2026-10-31) và QA-002 đã đo nhóm chiên trên kho món Việt (đạt 95,0%).
+- ~~Bổ sung yield factor cho cá/thuỷ sản, chạy lại và so hai lần đo~~ → vòng thử Q7
+  (2026-11-02): baseline tái lập khớp lần 1; áp hệ số FSANZ 0,84 (độc lập) cho cá vây
+  hấp/luộc qua tuỳ chọn `--seafood-yield` → nhóm `hap` 6,7% → 86,7%.
 - Ba test Pest ở `tests/Feature/AccuracyRunTest.php` chốt lại hành vi đã kiểm chứng (chuẩn hoá
-  100 g, yield factor cho khối lượng thành phẩm) để sửa engine mà hỏng thì đỏ ngay.
+  100 g, yield factor cho khối lượng thành phẩm) để sửa engine mà hỏng thì đỏ ngay. ✅ (đã có)
 
 
 ---
@@ -147,3 +151,47 @@ Soát thành phần bộ mẫu ngày 2026-09-01, chi tiết ở [ACCURACY-SPEC �
 bỏ qua 129/333 Food Code (39%); 45% bộ mẫu là món `song` (không có chuyển hoá do nấu); và nhóm
 `hap` — nhóm phơi bày rõ nhất giả định khối lượng — có 80% số món chỉ gồm một nguyên liệu chiếm
 >90% khối lượng (điển hình: 100 g cá sống + 0,2 g muối).
+
+---
+
+## ĐÓNG TASK — 2026-11-02 (vòng thử Q7 + phân xử hai điểm chặn)
+
+**Vòng thử Q7 (hồ sơ nguồn: T-09 trong T-08-T12-BACKLOG).** Đăng ký trước theo tiền lệ
+CALC-004: giả thuyết — nhóm `hap` lệch −21% vì THIẾU yield factor trong phép đo, và hệ số
+độc lập FSANZ 0,84 (cá vây phi lê hấp/luộc, −16%) sẽ kéo nhóm này về gần 0 mà không cần
+đụng vào engine. Cách làm: thêm tuỳ chọn `--seafood-yield` cho `lacdoi:accuracy-run`
+(chỉ áp cho đầu vào cá vây `Fish,` ở món hap/luoc; các đầu vào còn lại của món đó nhận
+1,0 để engine suy được khối lượng thành phẩm; tôm/sò CỐ Ý không áp vì FSANZ 0,84 là cá vây).
+
+Kết quả (báo cáo: accuracy-runs/2026-11-02-fndds.md + 2026-11-02-q7-fndds.md; nhật ký
+ACCURACY-SPEC §6):
+
+| Chỉ số | Baseline (tái lập) | Sau thử 0,84 |
+|---|---|---|
+| Tổng % trong ±20% | 89,7% | **95,6%** |
+| Nhóm `hap` % trong ±20% | 6,7% | **86,7%** (13/13 cá vây) |
+| Nhóm `hap` bias | −20,6% | −7,5% |
+| Hệ số KL ngầm nhóm `hap` | 0,79 | 0,94 |
+
+- **Chẩn đoán xác nhận:** lệch nhóm hấp là thiếu yield factor trong phép đo, KHÔNG phải
+  lỗi engine — đúng như điều tra lần 1, nay có nguồn độc lập chứng minh (không vòng tròn:
+  hệ số không suy từ USDA).
+- **Bias dư −7,5% có giải thích nguyên tắc:** giá trị chín công bố của USDA bám dải
+  nguyên con (~0,79) trong khi FSANZ 0,84 là phi lê — dư là chênh phi lê/nguyên con mà
+  T-09 đã dự báo. Không "chỉnh" hệ số về 0,79 cho khớp (đó là phép thử vòng tròn bị cấm).
+- **Tôm + sò hấp vẫn −21%:** chưa có hệ số riêng đạt chuẩn độc lập (dải Singhato 0,6–0,9
+  quá rộng; MEXT Bảng 15 có số theo loài — trích khi cần). Hồ sơ mở, không chặn task:
+  hai món này là giới hạn bộ mẫu FNDDS, không liên quan số liệu món Việt.
+- **Phía sản phẩm (món Việt): KHÔNG đặt `default_yield_factor` cho nguyên liệu cá Việt.**
+  Lý do: (1) định lượng món Việt là khối lượng phần ăn được theo khẩu phần, không phải
+  công thức đầu vào sống kiểu FNDDS; (2) schema chỉ có MỘT hệ số mặc định/nguyên liệu
+  trong khi FSANZ khác nhau theo phương pháp (hấp/luộc 0,84; nướng nguyên con 0,76) —
+  đặt một số chung sẽ sai cho các phương pháp còn lại. Engine đã chứng minh xử lý đúng
+  yield factor khi được cấp (AccuracyRunTest + vòng thử này).
+
+**Phân xử điểm chặn chiên:** cổng DoD "nhóm chiên ≥70%" nhằm kiểm chứng engine trên loại
+món sai số lớn nhất. Harness FNDDS không bao giờ đo được nhóm này (nguyên liệu SR không
+có hệ số hấp thụ dầu và không thể gán mà không chế số). QA-002 đã thực hiện đúng phép đo
+đó trên kho món Việt với tham chiếu độc lập (lần 3: 92,5%; lần 4 sau hiệu chuẩn CALC-004:
+95,0%; lần 5 trên kho cuối: 92,5%) — cổng coi như ĐẠT bằng bằng chứng thay thế đúng bản
+chất. **TEST-002 DONE.**

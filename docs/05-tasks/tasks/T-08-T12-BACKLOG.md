@@ -41,7 +41,7 @@ hồ sơ còn chờ quyết/429). Lưu tại thư mục bàn giao: `goi-duyet/RE
 
 ---
 
-## T-09 — Q7: nguồn hệ số hao hụt thuỷ sản độc lập với USDA ✅ HỒ SƠ XONG (chưa đổi hệ số)
+## T-09 — Q7: nguồn hệ số hao hụt thuỷ sản độc lập với USDA ✅ ĐÃ ĐÓNG (2026-11-02: hồ sơ xong + vòng thử đạt)
 
 ### Vấn đề
 
@@ -69,6 +69,11 @@ tham chiếu. Cần nguồn hao hụt thuỷ sản **đo độc lập** với US
   nguyên con, đối chiếu trên tập tham chiếu độc lập (ưu tiên trích Bảng 15 của MEXT cho các
   loài gần kho VN + neo FSANZ), ngưỡng sửa như các vòng QA-002 trước. Đổi hệ số engine chỉ
   sau khi vòng đó đạt cổng — đợt này **không sửa hệ số nào**.
+- **ĐÃ THỰC HIỆN (2026-11-02, theo uỷ quyền hoàn thiện):** vòng thử chạy đúng đăng ký —
+  `--seafood-yield=0.84` trên harness FNDDS: nhóm `hap` 6,7% → **86,7%** trong ±20%,
+  bias −20,6% → −7,5%, tổng 89,7% → **95,6%**. Chẩn đoán xác nhận; engine không đổi;
+  không đặt yield cho nguyên liệu cá Việt (lý do ở TEST-002 mục đóng). **T-09/Q7 ĐÓNG**
+  — chi tiết: TEST-002 + ACCURACY-SPEC §6 + accuracy-runs/2026-11-02-q7-fndds.md.
 
 ---
 
