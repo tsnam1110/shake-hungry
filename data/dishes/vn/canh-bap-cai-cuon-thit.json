@@ -137,7 +137,14 @@
       "note": "Ăn Ngon 3 Miền: bắp cải cuộn thịt bản SỐT CÀ CHUA (biến thể) — thịt 400 g không giò sống; chỉ đối chiếu định lượng bắp cải và mộc nhĩ, không theo biến thể sốt."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/canh-bap-cai-cuon-thit.webp",
+      "license": "cc-by-3.0",
+      "attribution": "Nguyen Thi Quynh Tram / Wikimedia Commons (CC BY 3.0)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 CÓ ĐIỀU KIỆN về nguồn — nhà ToyenXin chiếm đa số trong các nguồn đã mở, biến thể AnNgon sốt cà chua không tính là cùng món; bắp cải 100→120, tách nhân thịt 70 thành thịt 50 + giò sống 25 (2/3 khối công thức họ nguồn chính trộn giò sống — tiền lệ banh-canh-nam-pho), mộc nhĩ 5→4. Giò sống chưa có số (hồ sơ Phần A) nên phần calo chờ.]",

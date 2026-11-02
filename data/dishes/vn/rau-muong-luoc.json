@@ -73,7 +73,14 @@
       "note": "Memart: luộc rau muống lửa lớn 3–5 phút, ngâm nước đá ngay sau khi vớt."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/rau-muong-luoc.webp",
+      "license": "cc-by-sa-3.0",
+      "attribution": "Buileducanh (thảo luận) / Wikimedia Commons (CC BY-SA 3.0)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — giữ nguyên định lượng (rau 150, muối 1 tuỳ chọn trong nước luộc); viết lại bước theo kỹ thuật mở vung + sốc nước đá (3/3 nguồn kỹ thuật). Ghi nhận: neo định lượng của món luộc đơn giản này mỏng — chỉ 1 nguồn có khẩu phần rõ — nhưng định lượng file nằm trong dải thông thường của kho.]",

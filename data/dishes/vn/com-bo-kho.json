@@ -193,7 +193,14 @@
       "note": "Cookpad: bò kho gia đình — tỏi, hành tím trong phần ướp 3/3 nguồn."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/com-bo-kho.webp",
+      "license": "cc-by-sa-4.0",
+      "attribution": "Gody Mago / Wikimedia Commons (CC BY-SA 4.0)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 đợt 2 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết.  [LV2-004 đợt 4: nâng Mức 2 — bò 120→160, thêm hoa hồi 0,5 và bột quế 0,5 (3/3 nguồn dùng hồi/quế nguyên cây — kho ghi bằng bột quế tương đương), tỏi 5, hành tím 5 (3/3), nước dừa 60 (2/3), húng quế 3 ăn kèm. Dầu điều tạo màu: giữ dầu ăn, ghi nhận như bánh canh Nam Phổ.]",

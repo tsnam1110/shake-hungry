@@ -89,7 +89,14 @@
       "note": "ToyenXin: đậu bắp xào tỏi — có nước mắm 1 muỗng, chần trước; tỏi phi vớt ra cho lại cuối cho giòn thơm."
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "path": "media/dishes/dau-bap-xao-toi.webp",
+      "license": "cc-by-sa-3.0",
+      "attribution": "Kham Tran - www.khamtran.com / Wikimedia Commons (CC BY-SA 3.0)",
+      "is_primary": true
+    }
+  ],
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món THAY cho giá xào hẹ trong kế hoạch: hẹ (la-he) chưa kiểm chứng được số tại nguồn đạt chuẩn nên món gốc hoãn (xem file nguyên liệu la-he).  [LV2-004 đợt 4: nâng Mức 2 — giữ nguyên toàn bộ định lượng (nằm trong dải nguồn); ghi bất thường nhẹ: nước mắm 4 chỉ 1/3 họ nguồn có — ngược với mẫu hình bỏ mắm ở nhóm rau xào đợt này, giữ theo ToyenXin. Bước viết lại có chần trước (2/3 nguồn).]",
