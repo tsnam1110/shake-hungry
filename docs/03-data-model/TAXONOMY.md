@@ -54,7 +54,8 @@ trong `STATE_BY_SLUG` của `TaggingRules` — đừng để rơi về mặc đ�
 
 ## 4. Từ vựng dị ứng (khớp nhóm dị ứng trên giao diện Lắc)
 
-`dau-phong` (lạc), `tom` (tôm/tép), `cua`, `dong-vat-co-vo` (nghêu/sò/ốc/hến/mực...
+`dau-phong` (lạc), `hat-cay` (hạt cây — tree nuts: hạt điều, hạnh nhân...;
+bổ sung 2026-11-02 theo QD-03), `tom` (tôm/tép), `cua`, `dong-vat-co-vo` (nghêu/sò/ốc/hến/mực...
 — nhóm vỏ cứng và thân mềm), `ca` (mọi cá + nước mắm + mắm cá), `trung`, `sua`
 (sữa và chế phẩm), `dau-nanh` (đậu nành, đậu phụ, tàu hũ, tương đậu nành, nước
 tương), `lua-mi` (bột mì, mì, bánh mì, mì căn — gluten), `me` (vừng/mè, dầu mè),
@@ -72,11 +73,39 @@ chả cá viên thương mại → thêm `lua-mi`, pâté gan → `sua` + `lua-m
 ngâm sữa kiểu Pháp–Việt), tương đen (hoisin) → thêm `lua-mi`. Ngược lại, thành
 phần chỉ xuất hiện ở MỘT SỐ biến thể thì không gắn: lạp xưởng (nước tương tuỳ
 công thức), bột canh (bột tôm chỉ ở biến thể bột canh tôm).
-`lua-mi` hiểu theo nghĩa gluten: bia (gluten lúa mạch) cũng mang nhãn này.
 Rươi gây dị ứng theo kinh nghiệm dân gian nhưng là giun nhiều tơ (annelid) —
-không thuộc 9 nhóm trên, nên KHÔNG gắn nhãn; ghi nhận tại đây để khỏi tranh luận lại.
-Tương tự, hạnh nhân và các hạt cây (tree nuts) nằm ngoài từ vựng 9 nhóm hiện tại
-(chỉ đậu phộng có nhóm riêng) — chưa gắn nhãn, cân nhắc bổ sung facet khi có nhu cầu lọc thật.
+không thuộc các nhóm trên, nên KHÔNG gắn nhãn; ghi nhận tại đây để khỏi tranh luận lại.
+`lua-mi` hiểu theo nghĩa gluten: bia (gluten lúa mạch) cũng mang nhãn này.
+
+**Các quyết định QD-ALLERGEN (chủ dự án duyệt 2026-11-02; chi tiết +
+bằng chứng: [AUDIT-ALLERGEN](../05-tasks/tasks/AUDIT-ALLERGEN.md) §7):**
+
+- **QD-01 — hiển thị nhóm cá tách "Cá" / "Nước mắm":** cờ `ca` và lọc cứng
+  GIỮ NGUYÊN (nước mắm chứa đạm cá; EU/FDA vẫn xếp nhóm cá). Chỉ tầng
+  HIỂN THỊ tách nhãn: món mà mọi đóng góp vào nhóm cá đều từ dẫn xuất mắm
+  cá lên men (`nuoc-mam-cong-nghiep`, `nuoc-mam-truyen-thong`, `mam-ca-linh`,
+  `mam-ca-sac`, `mam-nem`) hiển thị badge "Nước mắm"; còn lại (cá thật, lươn,
+  giò/chả cá...) hiển thị "Cá". Cơ chế: `App\Taxonomy\AllergenDisplay` suy từ
+  dòng nguyên liệu + thành phần lồng nhau; tập nhóm hiển thị luôn bằng tập
+  cờ của món (test census khoá).
+- **QD-02 — cờ từ dòng tuỳ chọn hiển thị "có thể có":** nhóm dị ứng mà mọi
+  dòng đóng góp đều là nguyên liệu `is_optional` hiển thị dạng phụ "Có thể
+  có: ..." ở trang chi tiết món. Lọc cứng KHÔNG đổi: món vẫn bị loại.
+- **QD-03 — nhóm `hat-cay`:** census toàn catalog 2026-11-02: chỉ 2 nguyên
+  liệu là hạt cây thật theo chuẩn FDA/EU — `hat-dieu-rang` (hạt điều) và
+  `hanh-nhan` (hạnh nhân). KHÔNG gắn: `hat-dieu-mau` (annatto — gia vị tạo
+  màu, không phải hạt điều), `hat-sen` (hạt sen — không thuộc danh mục hạt
+  cây), `hat-doi` (gia vị), dừa (không nằm trong danh mục hạt cây của FDA
+  từ 2025). Chip "Hạt cây" tự xuất hiện ở Lắc + Hồ sơ qua `AllergenPreset`.
+- **QD-04 — `sa-te` CÓ tôm khô:** chốt định danh sa tế chuẩn của dự án là
+  sa tế thương mại VN phổ biến có tôm khô → `sa-te` mang `allergen:tom`
+  (khớp `origin:dong-vat` đã gán từ trước vì đúng lý do này; hồ sơ nguyên
+  liệu đã bổ sung thành phần tôm khô).
+- **QD-05 — `sua-bien` KHÔNG gắn nhóm:** sứa biển là động vật ruột khoang
+  (Cnidaria) — không phải động vật có vỏ/thân mềm (Mollusca) cũng không
+  phải giáp xác (Crustacea), và không thuộc nhóm dị ứng chuẩn nào; theo
+  cùng tiền lệ rươi ở trên, giữ KHÔNG gắn nhãn cho `sua-bien` và ghi nhận
+  tại đây để khỏi rà lại.
 
 ## 5. Định nghĩa loại món (biên tập)
 

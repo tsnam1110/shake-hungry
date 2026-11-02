@@ -152,6 +152,7 @@ final class TaggingRules
         'mam-tom' => ['tom', 'mam-tom'], 'mam-ruoc' => ['tom', 'mam-tom'],
         'mam-tom-chua' => ['tom', 'mam-tom'], // tôm nguyên con ủ chua — đợt DISH-005 đợt 2
         'muoi-tom' => ['tom'], // muối tôm Tây Ninh có bột tôm — LV2-007
+        'sa-te' => ['tom'], // QD-04 (2026-11-02): chủ dự án CHỐT sa tế có tôm khô — khớp ngoại lệ origin dong-vat đã gán vì đúng lý do này
         'oc-hut' => ['dong-vat-co-vo'], // ốc biển nhỏ — đợt DISH-005 đợt 2
         'banh-phong-tom-chien' => ['tom'], 'banh-phong-tom-song' => ['tom'],
         'cua-bien' => ['cua'], 'cua-dong' => ['cua'], 'ghe' => ['cua'],
@@ -183,6 +184,10 @@ final class TaggingRules
         'mi-can' => ['lua-mi'],
         'suon-chay' => ['dau-nanh', 'lua-mi'], 'cha-lua-chay' => ['dau-nanh', 'lua-mi'], // đạm đậu nành + gluten/bột lúa mì — đợt DISH-005 đợt 3
         'vung' => ['me'], 'vung-rang' => ['me'], 'dau-me' => ['me'],
+        // QD-03 (2026-11-02): nhóm Hạt cây (tree nuts) — census toàn catalog:
+        // chỉ hai slug này là hạt cây thật (hạt điều màu là annatto, hạt sen/
+        // hạt dổi không thuộc nhóm hạt cây theo chuẩn FDA/EU).
+        'hat-dieu-rang' => ['hat-cay'], 'hanh-nhan' => ['hat-cay'],
     ];
 
     /**

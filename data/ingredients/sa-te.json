@@ -18,7 +18,7 @@
     "water_g": null,
     "sodium_mg": 1040,
     "mapping_confidence": "medium",
-    "mapping_note": "KHÔNG TRA ĐƯỢC trong SR Legacy (bản 2018-04, tra cục bộ): không có chili oil/sate paste. Thành phần chủ yếu là DẦU + ớt + sả nên kcal rất cao và phụ thuộc tỷ lệ dầu từng hãng — bắt buộc đọc nhãn (cấp 4: Cholimex, Nam Dương). Món lẩu/bún bò thêm sa tế hiện thiếu phần này (lượng nhỏ — cân nhắc is_optional).\n\nBỔ SUNG 2026-10-31 — ĐÃ CÓ NGUỒN (tầng nhãn): nhãn EU của Sa tế Cholimex (mã vạch 8934637514284, bán tại Đức, Open Food Facts — đã mở kiểm chứng 2026-10-31): 444 kcal, béo 46g (bão hoà 7,3g), carb 7g (đường 5,5g), đạm 1g, muối 2,6g, natri 1,04g/100g. Trang OFF chưa có danh mục thành phần.",
+    "mapping_note": "KHÔNG TRA ĐƯỢC trong SR Legacy (bản 2018-04, tra cục bộ): không có chili oil/sate paste. Thành phần chủ yếu là DẦU + ớt + sả nên kcal rất cao và phụ thuộc tỷ lệ dầu từng hãng — bắt buộc đọc nhãn (cấp 4: Cholimex, Nam Dương). Món lẩu/bún bò thêm sa tế hiện thiếu phần này (lượng nhỏ — cân nhắc is_optional).\n\nBỔ SUNG 2026-10-31 — ĐÃ CÓ NGUỒN (tầng nhãn): nhãn EU của Sa tế Cholimex (mã vạch 8934637514284, bán tại Đức, Open Food Facts — đã mở kiểm chứng 2026-10-31): 444 kcal, béo 46g (bão hoà 7,3g), carb 7g (đường 5,5g), đạm 1g, muối 2,6g, natri 1,04g/100g. Trang OFF chưa có danh mục thành phần. BỔ SUNG 2026-11-02 — ĐỊNH DANH ĐÃ CHỐT (QD-04, chủ dự án duyệt): sa tế chuẩn của dự án là sa tế thương mại kiểu Việt Nam PHỔ BIẾN CÓ TÔM KHÔ trong thành phần (cùng căn cứ với origin:dong-vat đã gán từ trước) — hồ sơ thành phần nay ghi rõ: dầu + ớt + sả + tôm khô; gắn allergen:tom trong TaggingRules + tags. Món dùng sa-te vì thế mang cờ tôm ở tầng suy diễn món (trước đây 3/6 món thiếu cờ này).",
     "alternatives": []
   },
   "secondary_sources": [],
@@ -47,6 +47,7 @@
   "review_note": null,
   "tags": [
     "origin:dong-vat",
-    "state:che-bien"
+    "state:che-bien",
+    "allergen:tom"
   ]
 }

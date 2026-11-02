@@ -23,13 +23,19 @@ const chev = '<svg class="ld-chev" width="8" height="14" viewBox="0 0 8 14" fill
 
 fetch('/api/dishes/' + encodeURIComponent(slug), { headers: { 'Accept': 'application/json' } })
     .then(r => r.json())
-    .then(({ dish: d, variants, provenance, tcm }) => {
+    .then(({ dish: d, variants, provenance, tcm, allergen_display }) => {
         const n = d.nutrition;
         const name = d.names?.find(x => x.is_primary && x.locale === 'vi')?.name ?? d.names?.find(x => x.is_primary)?.name ?? d.slug;
         const aliases = (d.names ?? []).filter(x => !x.is_primary).map(x => x.name);
         document.title = name + ' — Lắc Đói';
         const unv = provenance?.unverified_ingredients ?? [];
         const allergenTags = (d.tags ?? []).filter(t => t.slug.startsWith('allergen:'));
+        // QD-ALLERGEN (2026-11-02): tầng hiển thị dị ứng từ API — QD-01 tách
+        // nhãn "Cá"/"Nước mắm", QD-02 đánh dấu "Có thể có" cho cờ chỉ sinh từ
+        // nguyên liệu tuỳ chọn. Thiếu payload (bản cũ) thì quay về nhãn thẻ.
+        const algDisplay = (allergen_display && allergen_display.length)
+            ? allergen_display
+            : allergenTags.map(t => ({ group: t.slug.slice('allergen:'.length), label: t.name, certainty: 'definite' }));
         const otherTags = (d.tags ?? []).filter(t => !t.slug.startsWith('allergen:'));
         document.getElementById('content').innerHTML = `
         <h1 class="ld-title" style="margin-top:6px">${esc(name)}</h1>
@@ -70,7 +76,11 @@ fetch('/api/dishes/' + encodeURIComponent(slug), { headers: { 'Accept': 'applica
 
         <h2 class="ld-section-title">Thông tin dị ứng</h2>
         <div class="ld-card">
-            ${allergenTags.length ? `<div style="display:flex;flex-wrap:wrap;gap:6px">${allergenTags.map(t => `<span class="ld-badge" style="background:var(--color-danger-tint);color:var(--color-danger)">Dị ứng: ${esc(t.name)}</span>`).join('')}</div>
+            ${algDisplay.length ? `<div style="display:flex;flex-wrap:wrap;gap:6px">${algDisplay.map(e => e.certainty === 'possible'
+                    ? `<span class="ld-badge" style="background:transparent;border:1px solid var(--color-danger);color:var(--color-danger)">Có thể có: ${esc(e.label)}</span>`
+                    : `<span class="ld-badge" style="background:var(--color-danger-tint);color:var(--color-danger)">Dị ứng: ${esc(e.label)}</span>`).join('')}</div>
+                ${algDisplay.some(e => e.label === 'Nước mắm') ? `<p class="ld-note" style="margin-top:10px"><b>“Nước mắm”</b> nghĩa là món không có cá thật, nhưng có nước mắm/mắm cá lên men từ cá — người dị ứng cá vẫn phải tránh; khi lọc món theo dị ứng cá, món này vẫn bị loại như món có cá.</p>` : ''}
+                ${algDisplay.some(e => e.certainty === 'possible') ? `<p class="ld-note" style="margin-top:10px"><b>“Có thể có”</b> nghĩa là chất gây dị ứng chỉ nằm ở nguyên liệu tuỳ chọn của công thức — nấu theo bản mặc định có thể không có, nhưng bộ lọc an toàn vẫn loại món này khi bạn khai báo dị ứng đó.</p>` : ''}
                 <p class="ld-note" style="margin-top:10px">Nhãn dị ứng suy từ thành phần theo dữ liệu dự án biên soạn — có thể chưa đầy đủ (gia vị, nước chấm, cách chế biến tại quán). Nếu bạn dị ứng nặng, hãy tự kiểm tra thành phần trước khi ăn. <a href="/mien-tru-y-te">Đọc Miễn trừ y tế</a>.</p>`
             : `<p class="ld-note" style="margin:0">Dữ liệu hiện tại chưa ghi nhận chất gây dị ứng phổ biến trong món này. Điều này không phải cam kết an toàn tuyệt đối — nếu bạn bị dị ứng, hãy kiểm tra kỹ thành phần. <a href="/mien-tru-y-te">Đọc Miễn trừ y tế</a>.</p>`}
         </div>

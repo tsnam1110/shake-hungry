@@ -143,6 +143,10 @@ class CatalogController extends Controller
             // TCM-000/TCM-003: khối "Tính vị:" — mặc định hiển thị, nhưng
             // TcmDisplay trả null khi coverage <30% (không kết luận thay vì đoán).
             'tcm' => \App\Cultural\TcmDisplay::forDish($dish),
+            // QD-ALLERGEN (2026-11-02): nhãn dị ứng ở tầng HIỂN THỊ — QD-01
+            // tách "Cá"/"Nước mắm", QD-02 đánh dấu "có thể có" cho cờ chỉ từ
+            // dòng tuỳ chọn. Chỉ trình bày; lọc cứng dùng dish tags như cũ.
+            'allergen_display' => \App\Taxonomy\AllergenDisplay::forDish($dish),
             // UI-003: khối minh bạch "Con số này từ đâu ra"
             'provenance' => $dish->nutrition === null ? null : [
                 'fct_source' => $dish->nutrition->fct_source,

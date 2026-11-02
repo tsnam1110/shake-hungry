@@ -18,16 +18,22 @@ use Database\Seeders\RegionSeeder;
  *  1. Danh sách loại trừ ở giao diện SINH TỪ TaggingRules — trùng khớp tập
  *     slug có nhãn của từng nhóm (preset viết tay cũ đóng băng từ REC-001
  *     làm rò đậu nành 36 món, tôm 22, lúa mì 11... đo bằng pool() thật).
- *  2. Hai trang Lắc + Hồ sơ nhúng đúng danh sách sinh ra, đủ 11 nhóm.
+ *  2. Hai trang Lắc + Hồ sơ nhúng đúng danh sách sinh ra, đủ 12 nhóm
+ *     (11 nhóm gốc + Hạt cây QD-03).
  *  3. Đo lại bằng Recommender::pool() trên toàn kho: chọn nhóm nào thì pool
  *     loại 100% món mang cờ nhóm đó (rò = 0).
  *  4. FIX-A2: cha-bong mang cờ ca (thành phần có nước mắm).
  *  5. FIX-A3: luật tiền tố ca- — cá thật (thuỷ sản) đều có cờ; ca- ngoài
  *     thuỷ sản (cà chua, cà rốt, cà phê...) không bao giờ thành cá.
+ *  6. QD-03 (2026-11-02): nhóm Hạt cây mới — preset sinh đúng 2 slug hạt cây
+ *     thật của catalog (hanh-nhan, hat-dieu-rang); pool() rò 0 cho nhóm mới
+ *     (vòng lặp đo rò bên dưới tự phủ mọi nhóm trong preset).
+ *  7. QD-04 (2026-11-02): sa-te mang cờ tom — 3 món trước đây thiếu cờ tôm
+ *     nhờ sa-te nay có cờ và bị loại khi chọn nhóm Tôm.
  */
 
 const ALLERGEN_GROUP_ORDER = [
-    'dau-phong', 'tom', 'cua', 'dong-vat-co-vo', 'ca', 'trung', 'sua',
+    'dau-phong', 'hat-cay', 'tom', 'cua', 'dong-vat-co-vo', 'ca', 'trung', 'sua',
     'dau-nanh', 'lua-mi', 'me', 'mam-tom',
 ];
 
@@ -62,6 +68,10 @@ it('FIX-A1: preset loai tru trung khop tap slug co nhan cua tung nhom theo Taggi
     // Các slug từng bị preset cũ bỏ sót (nguyên nhân rò rỉ đã đo ở AUDIT-ALLERGEN §5)
     expect($byGroup['dau-nanh'])->toContain('nuoc-tuong')
         ->and($byGroup['tom'])->toContain('tom-cang-xanh', 'muoi-tom')
+        // QD-04: sa-te có tôm khô (định danh đã chốt 2026-11-02)
+        ->and($byGroup['tom'])->toContain('sa-te')
+        // QD-03: nhóm Hạt cây — census catalog chỉ có đúng 2 slug hạt cây thật
+        ->and($byGroup['hat-cay'])->toBe(['hanh-nhan', 'hat-dieu-rang'])
         ->and($byGroup['cua'])->toContain('ghe')
         ->and($byGroup['mam-tom'])->toContain('mam-ruoc', 'mam-tom-chua')
         ->and($byGroup['me'])->toContain('vung', 'vung-rang', 'dau-me')
@@ -72,10 +82,10 @@ it('FIX-A1: preset loai tru trung khop tap slug co nhan cua tung nhom theo Taggi
         ->and($byGroup['sua'])->toContain('kem-whipping', 'pho-mai');
 });
 
-it('FIX-A1: trang Lac va trang Ho so nhung dung danh sach sinh ra, du 11 nhom', function () {
+it('FIX-A1: trang Lac va trang Ho so nhung dung danh sach sinh ra, du 12 nhom', function () {
     $this->seed(IngredientSeeder::class);
     $chips = AllergenPreset::chips();
-    expect($chips)->toHaveCount(11);
+    expect($chips)->toHaveCount(12);
 
     $extract = function (string $html, string $var): ?array {
         if (! preg_match('/const '.$var.' = (\[[^\n]*\]);/', $html, $m)) {
@@ -125,6 +135,40 @@ it('FIX-A1: pool() voi danh sach sinh ra loai 100% mon mang co cua nhom — ro r
     // Ca hồi quy cụ thể của AUDIT: bánh canh tôm càng từng lọt qua preset "Tôm" cũ
     $tomSlugs = array_column(AllergenPreset::groups(), 'slugs', 'group')['tom'];
     expect($callPool($tomSlugs)->pluck('slug'))->not->toContain('banh-canh-tom-cang');
+
+    // QD-03 hồi quy: chè khúc bạch (có hạnh nhân) bị loại khi chọn nhóm Hạt cây
+    $hatCaySlugs = array_column(AllergenPreset::groups(), 'slugs', 'group')['hat-cay'];
+    expect($callPool($hatCaySlugs)->pluck('slug'))->not->toContain('che-khuc-bach');
+});
+
+it('QD-03/QD-04: sa-te co co tom o luat va file; 3 mon dung sa-te truoc day thieu co tom nay da co co', function () {
+    expect(TaggingRules::allergensFor('sa-te', 'gia-vi'))->toContain('tom');
+    $saTeFile = json_decode((string) file_get_contents(base_path('data/ingredients/sa-te.json')), true);
+    expect($saTeFile['tags'])->toBe(TaggingRules::tagsFor('sa-te', (string) $saTeFile['category']));
+
+    expect(TaggingRules::allergensFor('hat-dieu-rang', 'khac'))->toContain('hat-cay')
+        ->and(TaggingRules::allergensFor('hanh-nhan', 'khac'))->toContain('hat-cay')
+        // Hạt điều MÀU là annatto — không phải hạt điều, không gắn hạt cây
+        ->and(TaggingRules::allergensFor('hat-dieu-mau', 'gia-vi'))->not->toContain('hat-cay');
+
+    $this->seed(RegionSeeder::class);
+    $this->seed(IngredientSeeder::class);
+    $this->seed(DishSeeder::class);
+
+    $groupsOf = fn (string $slug) => Dish::where('slug', $slug)->firstOrFail()->tags
+        ->pluck('slug')
+        ->filter(fn (string $t) => str_starts_with($t, 'allergen:'))
+        ->map(fn (string $t) => substr($t, strlen('allergen:')))
+        ->all();
+
+    // Trước QD-04 ba món này không có nguồn cờ tôm nào ngoài sa-te (đo baseline
+    // 2026-11-02: banh-trang-phoi-suong [dau-phong, trung], lau-bo [ca,
+    // dau-nanh, trung], vit-nuong-chao [dau-nanh]).
+    foreach (['banh-trang-phoi-suong', 'lau-bo', 'vit-nuong-chao'] as $slug) {
+        expect($groupsOf($slug))->toContain('tom');
+    }
+    // Chè khúc bạch là món duy nhất trong kho dùng hạnh nhân → có cờ hạt cây
+    expect($groupsOf('che-khuc-bach'))->toContain('hat-cay');
 });
 
 it('FIX-A2: cha-bong mang co ca o ca bang luat va tags trong file', function () {

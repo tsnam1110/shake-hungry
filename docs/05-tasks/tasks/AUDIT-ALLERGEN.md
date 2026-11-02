@@ -32,6 +32,9 @@
 
 ## 4. Chờ chủ dự án quyết (ALG-Q)
 
+> **ĐÃ QUYẾT 2026-11-02** — chủ dự án duyệt toàn bộ khuyến nghị; ALG-Q1…Q4
+> triển khai thành QD-01…QD-05, xem §7. Mục này giữ nguyên văn để tra cứu.
+
 - **ALG-Q1:** cờ cá cho 274 món chỉ có nước mắm/mắm cá — (1) giữ nguyên; (2) giữ cờ, đổi hiển thị tách nghĩa "Cá / nước mắm" *(đợt rà khuyến nghị — nước mắm chứa đạm cá, chuẩn ghi nhãn EU/FDA vẫn xếp nhóm cá; bỏ cờ không an toàn)*; (3) tách facet hiển thị riêng, lọc vẫn gộp.
 - **ALG-Q2:** cờ chỉ từ dòng tuỳ chọn có hiển thị phân biệt "có thể có" không (lọc giữ chiều an toàn).
 - **ALG-Q3:** thêm nhóm "Hạt cây" vào từ vựng dị ứng?
@@ -83,3 +86,86 @@ Chỉ các mục đã kết luận; ALG-Q1…Q4 giữ nguyên chờ chủ dự �
 cha-bong mới); **Pest 167/167 xanh** (162 cũ + 5 test mới) trong cửa sổ không
 tiến trình PHP tranh chấp. Không cần `npm run build` (chỉ đổi JS inline trong
 Blade, không chạm `resources/css|js`).
+
+## 7. QD-ALLERGEN — TRIỂN KHAI QD-01…QD-05 (2026-11-02)
+
+Chủ dự án duyệt TOÀN BỘ khuyến nghị QD-01…QD-05 ngày 2026-11-02 (phiếu tại
+`vie-ton-dong-va-phieu-quyet-dinh-2026-11-01.md`). ALG-Q1…Q4 của §4 được phân
+xử tương ứng: Q1 → QD-01, Q2 → QD-02, Q3 → QD-03, Q4 tách hai nửa → QD-04
+(sa-te) và QD-05 (sua-bien).
+
+**Cổng hồi quy lọc cứng (đo trước khi sửa, trên DB kiểm chứng riêng
+`shake_hungry_qd` seed mới từ file):** chụp tập món bị loại theo từng nhóm
+bằng `Recommender::pool()` + census cờ món. Baseline: pool gốc 565 món;
+loại theo nhóm — đậu phộng 220, tôm 258, cua 201, động vật có vỏ 225, cá
+423, trứng 248, sữa 202, đậu nành 256, lúa mì 222, mè 224, mắm tôm 203;
+387 món mang cờ cá; 49 cặp (món, nhóm) chỉ từ dòng tuỳ chọn. (Số census cờ
+cá 387 và tách nguồn dưới đây đo lại trên kho hiện tại — lệch nhẹ so với
+388/274/114 của census 2026-11-01 vì dữ liệu công thức đã thay đổi ở các
+đợt LINK-ROT-FIX/T-02/T-05 sau đó; cách phân loại cũng tính giò/chả/lươn
+là "cá thật".)
+
+- **QD-01 = B ✅ (chỉ hiển thị):** thêm `App\Taxonomy\AllergenDisplay` —
+  suy nhãn trình bày từ dòng nguyên liệu + thành phần lồng nhau (cùng quy
+  ước mở rộng components với `DishTagDeriver`), API chi tiết món trả thêm
+  khoá `allergen_display`, trang món render theo đó. Nhóm cá: mọi đóng góp
+  đều từ 5 slug mắm cá lên men (`nuoc-mam-cong-nghiep`,
+  `nuoc-mam-truyen-thong`, `mam-ca-linh`, `mam-ca-sac`, `mam-nem`) → nhãn
+  **"Nước mắm"**; còn lại → **"Cá"**. Kết quả trên toàn kho: **257 món hiển
+  thị "Nước mắm" · 130 món hiển thị "Cá"** (tổng 387 = đúng số món mang cờ
+  cá; test census khoá tập nhóm hiển thị ≡ tập cờ món cho 100% món). Cờ,
+  preset và lọc cứng KHÔNG đổi — tập loại của nhóm cá sau sửa y hệt
+  baseline (423 món). Trang nguyên liệu/quả hiển thị nhãn của chính nguyên
+  liệu nên không có badge "Cá" cần tách; thẻ món ở Lắc/Thư viện không
+  render badge dị ứng (đã kiểm) nên phạm vi hiển thị = trang chi tiết món
+  + trang nguyên liệu liên quan.
+- **QD-02 = B ✅ (chỉ hiển thị):** cùng lớp `AllergenDisplay`: nhóm mà mọi
+  dòng đóng góp đều `is_optional` → `certainty: "possible"`, trang món
+  render badge viền "Có thể có: ..." + dòng giải thích. Sau sửa: **51 cặp
+  "có thể có"** (baseline 49; delta giải thích trọn: +3 cặp mới sinh từ
+  QD-03/QD-04 — (che-khuc-bach, hạt cây) vì hạnh nhân là dòng tuỳ chọn,
+  (lau-bo, tôm) và (vit-nuong-chao, tôm) vì cờ tôm mới chỉ từ dòng sa-te
+  tuỳ chọn; −1 cặp (banh-trang-nuong, tôm) vì sa-te ở món này là dòng BẮT
+  BUỘC nên cờ tôm thành chắc chắn). Lọc cứng giữ nguyên — xem cổng hồi
+  quy bên dưới.
+- **QD-03 = A ✅:** thêm `allergen:hat-cay` "Hạt cây" vào
+  `config/taxonomy.php` (sau đậu phộng), gắn qua `TaggingRules` cho đúng
+  **2 slug hạt cây thật** mà census toàn catalog tìm thấy: `hat-dieu-rang`,
+  `hanh-nhan` (đã loại trừ có ghi lý do ở TAXONOMY §4: hạt điều màu là
+  annatto, hạt sen/hạt dổi không thuộc nhóm, dừa ngoài danh mục FDA 2025).
+  Chip "Hạt cây" tự xuất hiện ở Lắc + Hồ sơ (preset sinh từ luật — tổng
+  12 chip). Hệ quả món: `che-khuc-bach` (món duy nhất dùng hạnh nhân) có
+  thêm cờ `hat-cay`; `hat-dieu-rang` chưa món nào dùng. Đo pool(): nhóm
+  mới loại 190 món (= nền loại-an-toàn vì thiếu nguyên liệu như mọi nhóm
+  + che-khuc-bach), test rò 0 cho nhóm mới trong `AllergenExclusionTest`.
+- **QD-04 = A ✅:** `'sa-te' => ['tom']` trong `TaggingRules` + tags file
+  `sa-te.json`; hồ sơ sa-te bổ sung thành phần tôm khô vào `mapping_note`
+  (định danh đã chốt — khớp `origin:dong-vat` vốn gán vì tôm khô). Trước →
+  sau cho 6 món dùng sa-te: 3 món đã có cờ tôm từ nguồn khác
+  (banh-trang-nuong, banh-trang-tron, com-hen — không đổi cờ); **3 món
+  thiếu cờ nay có cờ tôm**: `banh-trang-phoi-suong` (trước [đậu phộng,
+  trứng] → +tôm), `lau-bo` (trước [cá, đậu nành, trứng] → +tôm),
+  `vit-nuong-chao` (trước [đậu nành] → +tôm). Ở tầng pool(): nhóm tôm
+  +1 món bị loại trực tiếp (vit-nuong-chao); lau-bo vốn đã bị loại theo
+  quy tắc an toàn thiếu-nguyên-liệu; banh-trang-phoi-suong chưa có bản ghi
+  dinh dưỡng nên nằm ngoài pool gợi ý (nhưng đã bị lọc đúng ở Thư viện
+  theo cờ món). Preset tôm: 12 → 13 slug (+sa-te).
+- **QD-05 = A ✅ (chỉ tài liệu):** `sua-bien` giữ KHÔNG gắn nhóm nào — sứa
+  biển là ruột khoang (Cnidaria), không phải vỏ/thân mềm hay giáp xác,
+  ngoài các nhóm dị ứng chuẩn; hồ sơ quyết định ghi ở TAXONOMY §4 (cùng
+  tiền lệ rươi) để khỏi rà lại. Không đổi dữ liệu/code.
+
+**Cổng hồi quy SAU sửa (cùng DB kiểm chứng, seed lại):** tập món bị loại
+của **10/11 nhóm cũ Y HỆT baseline**; nhóm tôm chỉ +1 chủ đích
+(vit-nuong-chao — QD-04); nhóm hạt cây là nhóm mới (QD-03). Toàn kho chỉ
+**4 món đổi cờ dị ứng** (3 món +tôm của QD-04, 1 món +hạt cây của QD-03),
+0 món đổi cờ khác. Validate **0 🔴** (3.344 bản ghi); Pest toàn bộ
+**177/177 (719 assertions, exit 0)** ở cửa sổ sạch — gồm ExportStabilityTest
+đạt (3 file nguyên liệu sửa vẫn là điểm cố định byte) và 10 test mới/cập
+nhật của đợt này (AllergenDisplayTest 9 + QD-03/QD-04 trong
+AllergenExclusionTest). Kiểm chứng
+hiển thị trực tiếp qua API: banh-beo/goi-ga → "Nước mắm",
+canh-chua-ca-loc → "Cá", vit-nuong-chao → "Có thể có: Tôm · tép",
+che-khuc-bach → "Có thể có: Hạt cây". Script đo lưu tại
+`~/workspace/goals/l-c-i-shake-hungry-development/hidden_files/qd-allergen/`
+(baseline_pool.json, after_pool.json, after_display.json).

@@ -28,6 +28,8 @@ return [
 
         // — Chất gây dị ứng (nguyên liệu: nguồn gán; món: suy từ thành phần) —
         'allergen:dau-phong' => ['name' => 'Đậu phộng', 'facet' => 'allergen'],
+        // QD-03 (2026-11-02): nhóm Hạt cây — chủ dự án duyệt thêm vào từ vựng dị ứng.
+        'allergen:hat-cay' => ['name' => 'Hạt cây', 'facet' => 'allergen'],
         'allergen:tom' => ['name' => 'Tôm · tép', 'facet' => 'allergen'],
         'allergen:cua' => ['name' => 'Cua', 'facet' => 'allergen'],
         'allergen:dong-vat-co-vo' => ['name' => 'Động vật có vỏ · thân mềm', 'facet' => 'allergen'],

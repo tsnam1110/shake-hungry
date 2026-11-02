@@ -762,6 +762,27 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > là đọc nhầm đầu ra lượt chạy của phiên song song, đúng lỗi ở `63c01d3`). Sự cố
 > phối hợp: bản áp lần đầu bị phiên song song ghi đè mất trước khi commit —
 > đã áp lại trên HEAD `7ad160d` và kiểm chứng lại toàn bộ.
+
+> ## 📗 Bổ sung lần 42, 2026-11-02 — QD-ALLERGEN: triển khai QD-01…QD-05 (chủ dự án duyệt toàn bộ khuyến nghị)
+>
+> **QD-01 (hiển thị):** nhóm cá tách nhãn **"Cá" (130 món) / "Nước mắm"
+> (257 món)** qua lớp trình bày mới `App\Taxonomy\AllergenDisplay` (API
+> chi tiết món thêm khoá `allergen_display`) — **cờ cá + preset + lọc cứng
+> KHÔNG đổi**: đo `Recommender::pool()` trước/sau trên DB kiểm chứng
+> riêng, tập loại của nhóm cá y hệt baseline (423 món), 10/11 nhóm cũ y
+> hệt. **QD-02 (hiển thị):** cờ chỉ sinh từ dòng nguyên liệu tuỳ chọn →
+> badge "Có thể có: ..." (**51 cặp** toàn kho) — lọc vẫn loại món.
+> **QD-03:** từ vựng dị ứng nay **12 nhóm** — thêm `allergen:hat-cay`
+> "Hạt cây"; census toàn catalog chỉ 2 slug thật (`hat-dieu-rang`,
+> `hanh-nhan`); chip tự sinh ở Lắc + Hồ sơ qua `AllergenPreset`; 1 món
+> thêm cờ (`che-khuc-bach`). **QD-04:** `sa-te` CHỐT có tôm khô → gắn
+> `allergen:tom` ở `TaggingRules` + file + hồ sơ thành phần; **3 món thêm
+> cờ tôm** (`banh-trang-phoi-suong`, `lau-bo`, `vit-nuong-chao`). **QD-05:**
+> `sua-bien` giữ KHÔNG gắn nhóm (ruột khoang Cnidaria — ngoài các nhóm
+> chuẩn; hồ sơ tại TAXONOMY §4, cùng tiền lệ rươi). Toàn kho chỉ **4 món
+> đổi cờ dị ứng**; validate **0 🔴**; Pest **177/177** (719 assertions,
+> cửa sổ sạch) gồm ExportStabilityTest đạt + 10 test mới/cập nhật.
+> Chi tiết + bằng chứng baseline/hậu kiểm: [AUDIT-ALLERGEN §7](docs/05-tasks/tasks/AUDIT-ALLERGEN.md).
 **Trạng thái thực tế, kiểm ngày 2026-10-31 (đã chạy lại toàn bộ lệnh kiểm chứng):**
 
 | Hạng mục | Thực tế | Kiểm bằng |
