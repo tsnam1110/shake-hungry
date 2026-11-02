@@ -2,16 +2,16 @@
   "slug": "nuoc-cham-ca-com",
   "parent_dish_slug": null,
   "country_code": "VN",
-  "region_code": "vn-central",
+  "region_code": "vn-south",
   "names": [
     {
       "locale": "vi",
-      "name": "Nước chấm cá cơm",
+      "name": "Nước chấm pha từ nước mắm cá cơm",
       "is_primary": true
     },
     {
       "locale": "en",
-      "name": "Anchovy fish sauce dip",
+      "name": "Anchovy fish sauce dip (mixed)",
       "is_primary": true
     }
   ],
@@ -30,7 +30,7 @@
     }
   ],
   "serving_desc": "1 chén nhỏ",
-  "serving_grams": 35,
+  "serving_grams": 30,
   "ingredients": [
     {
       "ingredient_slug": "nuoc-mam-truyen-thong",
@@ -71,14 +71,6 @@
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
-    },
-    {
-      "ingredient_slug": "ca-com",
-      "quantity": 8,
-      "unit_name": "g",
-      "is_optional": true,
-      "source": "llm_suggested",
-      "confidence": "low"
     }
   ],
   "recipe_steps": [
@@ -96,7 +88,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-012 đợt vét] GIỮ Mức 1 — KHONG-CO-CT: đã mở đọc thật nguồn của hãng nước mắm cá cơm và đối chiếu VnExpress về bánh căn Phan Rang; khái niệm món trong file (nước chấm có cá cơm rim) không có công thức tương ứng ngoài đời, 'cá cơm' trong tên gọi chỉ loại nước mắm nền. Cần chủ dự án quyết định: đổi tên/định nghĩa thành nước chấm chua ngọt pha từ nước mắm cá cơm (bỏ dòng ca-com) hoặc xoá món khỏi kho.",
+  "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-012 đợt vét] GIỮ Mức 1 — KHONG-CO-CT: đã mở đọc thật nguồn của hãng nước mắm cá cơm và đối chiếu VnExpress về bánh căn Phan Rang; khái niệm món trong file (nước chấm có cá cơm rim) không có công thức tương ứng ngoài đời, 'cá cơm' trong tên gọi chỉ loại nước mắm nền. Cần chủ dự án quyết định: đổi tên/định nghĩa thành nước chấm chua ngọt pha từ nước mắm cá cơm (bỏ dòng ca-com) hoặc xoá món khỏi kho. [QD-15 phân xử 2026-11-02] MỤC 32 — ĐỊNH NGHĨA LẠI (quyết chủ dự án duyệt 2026-11-02): LV2-012 đã mở nguồn hãng nước mắm cá cơm + VnExpress và kết luận khái niệm cũ (nước chấm có cá cơm rim) không tồn tại ngoài đời — 'cá cơm' trong tên gọi là LOẠI NƯỚC MẮM nền. Đã: bỏ dòng ca-com 8g; đổi tên thành 'Nước chấm pha từ nước mắm cá cơm' (bản pha chua ngọt từ nước mắm cá cơm kiểu Phú Quốc); region vn-central → vn-south (Phú Quốc, Kiên Giang); serving 35 → 30g khớp tổng dòng còn lại (30g). Giữ Mức 1.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

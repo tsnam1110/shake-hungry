@@ -1,6 +1,6 @@
 {
   "slug": "bun-ga",
-  "parent_dish_slug": null,
+  "parent_dish_slug": "bun-mang-ga",
   "country_code": "VN",
   "region_code": "vn-north",
   "names": [
@@ -150,7 +150,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt DISH-004 đợt 2 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-005 đợt 5: nâng Mức 2 — đối chiếu 3 họ nguồn công thức (VinID và Nông Sản Phú Vinh là cùng một họ công thức). Định lượng: tăng măng tươi 30→50g theo nguồn dùng đúng măng tươi (50g/khẩu phần), được họ nguồn còn lại và tỉ lệ măng/gà của nguồn thứ ba ủng hộ; không sửa thịt gà và gừng vì số nguồn là gà nguyên con và gừng nấu nước dùng bỏ đi, không quy đổi thẳng sang phần ăn được, và không sửa nấm hương khô vì các nguồn mâu thuẫn nhau. Bất thường ghi nhận: lượng bún 1,5kg cho 2 người ở một nguồn bị nghi là lỗi biên tập; 2 họ nguồn có nấm đùi gà và rau răm nhưng file chưa có hai dòng nguyên liệu này — chờ pha phân xử.]",
+  "import_note": "Soạn nháp đợt DISH-004 đợt 2 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-005 đợt 5: nâng Mức 2 — đối chiếu 3 họ nguồn công thức (VinID và Nông Sản Phú Vinh là cùng một họ công thức). Định lượng: tăng măng tươi 30→50g theo nguồn dùng đúng măng tươi (50g/khẩu phần), được họ nguồn còn lại và tỉ lệ măng/gà của nguồn thứ ba ủng hộ; không sửa thịt gà và gừng vì số nguồn là gà nguyên con và gừng nấu nước dùng bỏ đi, không quy đổi thẳng sang phần ăn được, và không sửa nấm hương khô vì các nguồn mâu thuẫn nhau. Bất thường ghi nhận: lượng bún 1,5kg cho 2 người ở một nguồn bị nghi là lỗi biên tập; 2 họ nguồn có nấm đùi gà và rau răm nhưng file chưa có hai dòng nguyên liệu này — chờ pha phân xử.] [QD-15 phân xử 2026-11-02] VN-001 C5 — GỘP BIẾN THỂ: nội dung file thực chất là bún gà nấu măng — chính các họ nguồn dùng để nâng Mức 2 ở LV2-005 là công thức bún măng gà (định lượng măng/gà đối chiếu theo họ đó). Cùng món với bun-mang-ga — chuyển thành biến thể: parent_dish_slug → bun-mang-ga, giữ định lượng riêng để truy vết.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -89,7 +89,7 @@ final class TaggingRules
         'dau-ngu' => 'kho', 'dau-trang' => 'kho', 'hat-sen-tuoi' => 'tuoi',
         'gao-nep' => 'kho', 'gao-te' => 'kho', 'y-di' => 'kho',
         'bot-bang' => 'kho', 'bot-gao' => 'kho', 'bot-mi' => 'kho', 'bot-nang' => 'kho',
-        'bot-nep' => 'kho', 'bot-ngo' => 'kho',
+        'bot-nep' => 'kho', 'bot-ngo' => 'kho', 'bot-san-day' => 'kho', // tinh bột sắn dây khô — QD-15 (2026-11-02, biên soạn slug mới từ vn_nin 02021)
         'bot-chien-gion' => 'kho', // bột trộn khô đóng gói — LV2-004
         'bot-canh' => 'kho', 'bot-cari' => 'kho', 'bot-nghe' => 'kho', 'bot-que' => 'kho',
         'ngu-vi-huong' => 'kho', 'ot-bot' => 'kho', 'hat-tieu-den' => 'kho', 'hat-dieu-mau' => 'kho',

@@ -2,17 +2,24 @@
   "slug": "che-tao-soan",
   "parent_dish_slug": null,
   "country_code": "VN",
-  "region_code": "vn-south",
+  "region_code": "vn",
   "names": [
     {
       "locale": "vi",
-      "name": "Chè táo soạn",
+      "name": "Chè hoa cau (chè táo xọn)",
       "is_primary": true
     },
     {
       "locale": "en",
-      "name": "Jujube sweet soup",
+      "name": "Mung bean sweet soup with kudzu starch (che hoa cau)",
       "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "Chè táo soạn",
+      "is_primary": false,
+      "is_alias": true,
+      "note": "tên cũ trong kho trước phân xử QD-15.5 — sai định danh (bản cũ là chè táo tàu + hạt sen + long nhãn, trùng che-hat-sen-long-nhan)"
     }
   ],
   "is_eat_out": true,
@@ -33,23 +40,23 @@
   "serving_grams": 250,
   "ingredients": [
     {
-      "ingredient_slug": "tao-tau-kho",
-      "quantity": 30,
+      "ingredient_slug": "dau-xanh-hat",
+      "quantity": 40,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
     },
     {
-      "ingredient_slug": "duong-phen",
-      "quantity": 25,
+      "ingredient_slug": "cu-nang",
+      "quantity": 20,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
     },
     {
-      "ingredient_slug": "hat-sen-kho",
+      "ingredient_slug": "bot-san-day",
       "quantity": 15,
       "unit_name": "g",
       "is_optional": false,
@@ -57,15 +64,31 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "nhan-kho",
-      "quantity": 10,
+      "ingredient_slug": "bot-nang",
+      "quantity": 17,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
     },
     {
-      "ingredient_slug": "gung",
+      "ingredient_slug": "duong-phen",
+      "quantity": 60,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nuoc-cot-dua",
+      "quantity": 80,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "la-dua",
       "quantity": 1,
       "unit_name": "g",
       "is_optional": false,
@@ -82,11 +105,26 @@
     }
   ],
   "recipe_steps": [
-    "Táo tàu khô rửa sạch, ngâm nước cho nở; hạt sen khô ngâm mềm, nấu chín tới.",
-    "Nấu nước đường phèn với gừng thái lát, cho táo tàu, hạt sen và long nhãn vào.",
-    "Nấu thêm ít phút cho các nguyên liệu thấm ngọt, ăn nóng hoặc lạnh."
+    "Ngâm đậu xanh tách vỏ 2–3 giờ cho nở mềm, đãi sạch vỏ.",
+    "Nấu đậu vừa chín tới thì chắt nước, đậy vung nấu nhỏ lửa thêm cho đậu mềm mà vẫn nguyên hạt.",
+    "Củ năng gọt vỏ, luộc chín trong nước, vớt ra cắt sợi mỏng; giữ lại nước luộc.",
+    "Cho đường phèn vào nước luộc củ năng, thêm lá dứa, nấu tan rồi cho củ năng vào nấu vài phút, vớt lá dứa ra.",
+    "Pha bột sắn dây và bột năng với nước cho tan, rót từ từ vào nồi chè, khuấy đều tay đến khi chè sánh và trong.",
+    "Cho đậu xanh vào, đảo nhẹ, nêm muối cho đậm vị ngọt rồi tắt bếp.",
+    "Nấu riêng nước cốt dừa cho hơi sánh; múc chè ra ly, chan nước cốt dừa lên trên, ăn nóng hoặc lạnh."
   ],
-  "recipe_sources": [],
+  "recipe_sources": [
+    {
+      "url": "https://www.dienmayxanh.com/vao-bep/cach-nau-che-hoa-cau-voi-bot-san-day-che-tao-xon-ngon-sanh-07218",
+      "accessed": "2026-11-02",
+      "note": "Điện Máy XANH — công thức 1 cho 5 người, đã mở kiểm chứng tận nơi: đậu xanh tách vỏ 200g, củ năng 100g, bột sắn dây 75g, bột năng 85g, đường phèn 300g, nước cốt dừa 400ml, lá dứa 4 nhánh — bộ số của file là quy về 1 khẩu phần theo đúng bộ số LV2-010 đã soạn. Công thức 2 (người dùng chia sẻ) trên cùng trang không dùng."
+    },
+    {
+      "url": "https://www.lorca.vn/cach-nau-che-hoa-cau-voi-bot-san-day-don-gian-bo-duong/",
+      "accessed": "2026-11-02",
+      "note": "Lorca — họ độc lập thứ hai khẳng định cùng định danh (đậu xanh + bột sắn dây + nước cốt dừa chan); thang mẻ và tỉ lệ khác (đậu 150g, sắn dây 40g, cốt dừa 200ml, đường cát 100g, không củ năng/không khẩu phần) nên chỉ dùng khẳng định định danh, không đối chiếu định lượng."
+    }
+  ],
   "media": [
     {
       "path": "media/dishes/che-tao-soan.webp",
@@ -97,7 +135,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-010 đợt 10: GIỮ Mức 1 — GIU-BIEN-THE. Đã mở ĐMX ('chè hoa cau bột sắn dây (chè táo xọn)') và sách dạy nấu ăn 'Chè Táo Xọn Củ Năng': táo xọn thật = củ năng + đậu xanh cà vỏ + bột sắn dây/bột năng sánh + đường phèn + nước cốt dừa. File hiện tại là chè táo tàu + hạt sen + long nhãn (món khác, đã có che-hat-sen-long-nhan trong kho) — cần chủ dự án quyết sửa định danh. Cập nhật đợt này: củ năng đã biên soạn ở Phần A (slug cu-nang có số USDA SR 170066) nên trần nguyên liệu đã gỡ; bột sắn dây vẫn chưa có slug. Bộ số tham chiếu sẵn khi chủ dự án quyết sửa định danh (quy ly 250 g theo ĐMX/5 người, đối chiếu họ sách): củ năng 20, đậu xanh tách vỏ 40, bột sắn dây 15, bột năng 17, đường phèn 60, nước cốt dừa 80, lá dứa ~1, muối 0,5.]",
+  "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-010 đợt 10: GIỮ Mức 1 — GIU-BIEN-THE. Đã mở ĐMX ('chè hoa cau bột sắn dây (chè táo xọn)') và sách dạy nấu ăn 'Chè Táo Xọn Củ Năng': táo xọn thật = củ năng + đậu xanh cà vỏ + bột sắn dây/bột năng sánh + đường phèn + nước cốt dừa. File hiện tại là chè táo tàu + hạt sen + long nhãn (món khác, đã có che-hat-sen-long-nhan trong kho) — cần chủ dự án quyết sửa định danh. Cập nhật đợt này: củ năng đã biên soạn ở Phần A (slug cu-nang có số USDA SR 170066) nên trần nguyên liệu đã gỡ; bột sắn dây vẫn chưa có slug. Bộ số tham chiếu sẵn khi chủ dự án quyết sửa định danh (quy ly 250 g theo ĐMX/5 người, đối chiếu họ sách): củ năng 20, đậu xanh tách vỏ 40, bột sắn dây 15, bột năng 17, đường phèn 60, nước cốt dừa 80, lá dứa ~1, muối 0,5.] [QD-15 phân xử 2026-11-02] MỤC 5 — SỬA ĐỊNH DANH TOÀN BỘ theo quyết chủ dự án duyệt khuyến nghị QD-15 (2026-11-02): 'táo xọn' thật là chè hoa cau — củ năng + đậu xanh tách vỏ + bột sắn dây (ĐMX đã mở lại tận nơi 2026-11-02 khớp tuyệt đối bộ số tham chiếu LV2-010; họ sách dạy nấu 'Chè Táo Xọn Củ Năng' + Lorca cùng định danh). File cũ (táo tàu + hạt sen + long nhãn) là món khác, đã có che-hat-sen-long-nhan. Đã: biên soạn slug bot-san-day (vn_nin 02021, xem hồ sơ nguyên liệu); thay toàn bộ thành phần + steps theo bộ số ĐMX quy khẩu phần; đổi tên chính sang 'Chè hoa cau (chè táo xọn)', giữ tên cũ làm alias truy vết; region vn-south → vn (bằng chứng vùng miền chưa đủ chuẩn để gán Bắc, ghi hồ sơ QD-15). Hai dòng nhỏ của ĐMX không ghi: bột gạo ~1g (chỉ để sánh phần cốt dừa chan) và đường cát ~2g — dưới ngưỡng ghi dòng. GIỮ Mức 1: mới 2 họ khẳng định định danh, chỉ ĐMX định lượng theo khẩu phần — chưa đủ cổng ≥3 họ của Mức 2; nâng khi có họ định lượng độc lập thứ ba.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

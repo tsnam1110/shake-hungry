@@ -1,6 +1,6 @@
 {
   "slug": "banh-hoa-hong-trang",
-  "parent_dish_slug": "banh-beo",
+  "parent_dish_slug": "banh-bao-banh-vac",
   "country_code": "VN",
   "region_code": "vn-central",
   "names": [
@@ -31,12 +31,12 @@
       "weight": 5
     }
   ],
-  "serving_desc": "1 đĩa (5 chén nhỏ)",
-  "serving_grams": 200,
+  "serving_desc": "1 phần 4 chiếc",
+  "serving_grams": 160,
   "ingredients": [
     {
       "ingredient_slug": "bot-gao",
-      "quantity": 45,
+      "quantity": 60,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -44,7 +44,15 @@
     },
     {
       "ingredient_slug": "bot-nang",
-      "quantity": 8,
+      "quantity": 15,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "thit-lon-xay",
+      "quantity": 30,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -59,15 +67,15 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "thit-lon-xay",
-      "quantity": 15,
+      "ingredient_slug": "moc-nhi-kho",
+      "quantity": 3,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
       "confidence": "low"
     },
     {
-      "ingredient_slug": "dau-an",
+      "ingredient_slug": "hanh-tim",
       "quantity": 5,
       "unit_name": "g",
       "is_optional": false,
@@ -76,14 +84,6 @@
     },
     {
       "ingredient_slug": "nuoc-mam-truyen-thong",
-      "quantity": 5,
-      "unit_name": "g",
-      "is_optional": false,
-      "source": "llm_suggested",
-      "confidence": "low"
-    },
-    {
-      "ingredient_slug": "hanh-phi",
       "quantity": 3,
       "unit_name": "g",
       "is_optional": false,
@@ -91,8 +91,16 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "rau-mui",
-      "quantity": 1,
+      "ingredient_slug": "duong-trang",
+      "quantity": 2,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hat-tieu-den",
+      "quantity": 0.3,
       "unit_name": "g",
       "is_optional": false,
       "source": "llm_suggested",
@@ -100,9 +108,9 @@
     }
   ],
   "recipe_steps": [
-    "Khuấy bột gạo và bột năng với nước, tráng mỏng vào chén nhỏ, hấp vừa chín.",
-    "Xào tôm và thịt xay làm topping, chan lên từng chén bánh.",
-    "Rưới mỡ hành/nước mắm, rắc hành phi, ăn nóng."
+    "Trộn bột gạo + bột năng, ủ vỏ.",
+    "Xào nhân thịt, tôm, mộc nhĩ.",
+    "Gói bánh, hấp 12 phút."
   ],
   "recipe_sources": [],
   "media": [
@@ -115,7 +123,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-004 đợt 2 (lô bánh dân gian) mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] Giữ Mức 1 (429): mở nguồn định lượng (Tripi) gặp 429 nên dừng theo quy tắc; nguồn đã mở được (Wikipedia) chỉ mô tả, không định lượng. Cần tra lại ở đợt sau khi hết chặn. [T-04 thử lại 429 2026-11-02] GIỮ NGUYÊN theo QD-15.24 (chỉ lập hồ sơ, không nâng, không sửa): các nguồn mở được (Zaidap; FPT Shop) khớp món bao–vạc Hội An thật, không khớp mô tả bánh bèo chén trong file — chờ quyết định danh.",
+  "import_note": "Soạn nháp DISH-004 đợt 2 (lô bánh dân gian) mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] Giữ Mức 1 (429): mở nguồn định lượng (Tripi) gặp 429 nên dừng theo quy tắc; nguồn đã mở được (Wikipedia) chỉ mô tả, không định lượng. Cần tra lại ở đợt sau khi hết chặn. [T-04 thử lại 429 2026-11-02] GIỮ NGUYÊN theo QD-15.24 (chỉ lập hồ sơ, không nâng, không sửa): các nguồn mở được (Zaidap; FPT Shop) khớp món bao–vạc Hội An thật, không khớp mô tả bánh bèo chén trong file — chờ quyết định danh. [QD-15 phân xử 2026-11-02] MỤC 24 — SỬA ĐỊNH DANH (quyết chủ dự án duyệt 2026-11-02): 'hoa hồng trắng' là tên gọi khác của cặp bánh bao–bánh vạc Hội An (chính ghi chú văn hoá của file + của banh-bao-banh-vac đều xác nhận; T-04 đã mở Zaidap/FPT Shop khớp món bao–vạc thật). File cũ mô tả bánh bèo chén (parent banh-beo, dac-san:hue, nhân tôm thịt mỡ hành) — sai toàn diện. Đã: parent → banh-bao-banh-vac (file chuẩn của chính món này trong kho); thẻ dac-san:hue → dac-san:quang-nam (Hội An thuộc Quảng Nam, TAXONOMY có mã); thành phần + serving + steps lấy theo file chuẩn banh-bao-banh-vac của kho (không bịa số mới); region vn-central giữ nguyên (đúng cho Hội An). Mức/basis giữ nguyên.",
   "cultural_note": {
     "text": "“Hoa hồng trắng” là tên gọi ưu ái dành cho cặp bánh bao – bánh vạc, một trong những đặc sản nổi tiếng nhất của phố cổ Hội An. Cặp bánh có gốc từ há cảo Trung Hoa, do người gốc Hoa đến Hội An sinh sống sáng tạo, và được gọi là hoa hồng trắng nhờ tạo hình nhỏ nhắn cùng màu trắng tinh khôi của lớp vỏ bột gạo. Trong cặp bánh, bánh bao nhân chả tôm xào hành tiêu, còn bánh vạc cũng dùng chả tôm nhưng thêm thịt heo, nấm mèo, măng tre và hành lá.",
     "sources": [
@@ -133,7 +141,7 @@
   "reviewed_at": null,
   "review_note": null,
   "tags": [
-    "dac-san:hue",
+    "dac-san:quang-nam",
     "loai:banh"
   ]
 }

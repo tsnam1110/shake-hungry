@@ -2,16 +2,16 @@
   "slug": "chao-khoai",
   "parent_dish_slug": null,
   "country_code": "VN",
-  "region_code": "vn-north",
+  "region_code": "vn",
   "names": [
     {
       "locale": "vi",
-      "name": "cháo khoái",
+      "name": "Cháo khoai lang",
       "is_primary": true
     },
     {
       "locale": "en",
-      "name": "Hai Phong sweet potato porridge",
+      "name": "Sweet potato and taro porridge",
       "is_primary": true
     }
   ],
@@ -113,7 +113,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] GIỮ Mức 1 — BIEN-THE/sai định danh: file mang tên 'cháo khoái' (dac-san:hai-phong) nhưng thành phần là cháo khoai lang + khoai môn + nước cốt dừa, trong khi cháo khoái thật (Dân Việt + Cookpad đã mở; VietnamNet/SKĐS/Wikipedia cùng mô tả ở kết quả tìm kiếm) là bột gạo tẻ + nước xương + rau ngót + đậu xanh + hành phi. Đề xuất chủ dự án quyết: hoặc viết lại toàn bộ file theo cháo khoái thật, hoặc đổi tên/slug file thành món cháo khoai thực tế và tra cứu lại từ đầu.",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] GIỮ Mức 1 — BIEN-THE/sai định danh: file mang tên 'cháo khoái' (dac-san:hai-phong) nhưng thành phần là cháo khoai lang + khoai môn + nước cốt dừa, trong khi cháo khoái thật (Dân Việt + Cookpad đã mở; VietnamNet/SKĐS/Wikipedia cùng mô tả ở kết quả tìm kiếm) là bột gạo tẻ + nước xương + rau ngót + đậu xanh + hành phi. Đề xuất chủ dự án quyết: hoặc viết lại toàn bộ file theo cháo khoái thật, hoặc đổi tên/slug file thành món cháo khoai thực tế và tra cứu lại từ đầu. [QD-15 phân xử 2026-11-02] MỤC 35 — ĐỔI TÊN THEO NỘI DUNG THẬT (quyết chủ dự án duyệt 2026-11-02): file mang tên 'cháo khoái' + thẻ đặc sản Hải Phòng nhưng thành phần là cháo NGỌT khoai lang/khoai môn/nếp/đậu xanh/cốt dừa; cháo khoái Hải Phòng thật là món MẶN bột gạo tẻ khuấy nước hầm xương + rau ngót/lá dứa + đậu xanh + hành phi (Dân Việt + Cookpad đã mở ở LV2-012; VietnamNet/Wikipedia cùng mô tả). Đổi tên món thành 'Cháo khoai lang' theo nội dung thật của file, bỏ thẻ dac-san:hai-phong, region vn-north → vn; slug chao-khoai giữ (khớp định danh mới). Cháo khoái thật chưa có trong kho — biên soạn mới là việc riêng khi có đợt, không viết lại đè lên file này.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
@@ -122,7 +122,6 @@
   "reviewed_at": "2026-10-31",
   "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này).",
   "tags": [
-    "dac-san:hai-phong",
     "loai:che-trang-mieng"
   ]
 }

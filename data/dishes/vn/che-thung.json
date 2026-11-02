@@ -1,6 +1,6 @@
 {
   "slug": "che-thung",
-  "parent_dish_slug": null,
+  "parent_dish_slug": "che-ba-ba",
   "country_code": "VN",
   "region_code": "vn-south",
   "names": [
@@ -170,7 +170,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-010 đợt 10: Đạt Mức 2 — đối chiếu 4 họ đã mở (Bếp Xưa 4 người; họ YeuTre/Blackmoon sao chép tính 1 họ; KitchenAZ/ĐMX ct2 4 người; Cookpad Nguyễn Ngân 4 phần). Thêm khoai lang 30 g + bột khoai 12 g (4/4 họ có, file thiếu); thay lạc rang rắc mặt bằng lạc sống 20 g luộc trong chè; đổi đường trắng → đường phèn giữ 28 g (3/4 họ). Các dòng còn lại giữ do thang khẩu phần nguồn khác ly 250 g và họ bất đồng >30%. Ghi nhận: dòng rong-bien 3 g đang đóng vai phổ tai (rong tươi) trong khi phổ tai của nguồn là khô — lượng nhỏ không chặn Mức 2, cân nhắc slug phổ tai khô riêng ở đợt nguyên liệu sau.]",
+  "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-010 đợt 10: Đạt Mức 2 — đối chiếu 4 họ đã mở (Bếp Xưa 4 người; họ YeuTre/Blackmoon sao chép tính 1 họ; KitchenAZ/ĐMX ct2 4 người; Cookpad Nguyễn Ngân 4 phần). Thêm khoai lang 30 g + bột khoai 12 g (4/4 họ có, file thiếu); thay lạc rang rắc mặt bằng lạc sống 20 g luộc trong chè; đổi đường trắng → đường phèn giữ 28 g (3/4 họ). Các dòng còn lại giữ do thang khẩu phần nguồn khác ly 250 g và họ bất đồng >30%. Ghi nhận: dòng rong-bien 3 g đang đóng vai phổ tai (rong tươi) trong khi phổ tai của nguồn là khô — lượng nhỏ không chặn Mức 2, cân nhắc slug phổ tai khô riêng ở đợt nguyên liệu sau.] [QD-15 phân xử 2026-11-02] VN-001 C5 — GỘP BIẾN THỂ: Wikipedia tiếng Việt (đã mở kiểm chứng 2026-11-02) định nghĩa 'Chè bà ba còn gọi là chè thưng, chè bột khoai'; VietnamNet + nhiều họ biên tập dùng hai tên thay nhau cho cùng món chè thập cẩm Nam Bộ; file che-ba-ba đã có sẵn alias 'Chè thưng'. Hai file là một món — chuyển che-thung thành biến thể: parent_dish_slug → che-ba-ba, giữ công thức riêng (nhấn đậu xanh/khoai môn, đường phèn) làm biến thể để truy vết.",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
