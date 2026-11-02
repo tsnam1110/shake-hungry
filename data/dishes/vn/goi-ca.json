@@ -1,6 +1,6 @@
 {
   "slug": "goi-ca",
-  "parent_dish_slug": null,
+  "parent_dish_slug": "goi-ca-trich",
   "country_code": "VN",
   "region_code": "vn",
   "names": [
@@ -178,7 +178,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu). [LV2-012 đợt vét] Giữ Mức 1 — BIEN-THE: file trộn cá trích (định danh) với khuôn thính/riềng của gỏi cá nước ngọt miền Bắc; nguồn cá trích định lượng duy nhất là 1 họ Phú Quốc sao chép lẫn nhau (500g cá/100g dừa/500g bún) và không khớp hồ sơ file. Cá trích có số dinh dưỡng (158 kcal/100g) nên không phải trần nguyên liệu.",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Đã bổ sung nguyên liệu còn thiếu ngày 2026-10-31 (đợt thu thập dữ liệu). [LV2-012 đợt vét] Giữ Mức 1 — BIEN-THE: file trộn cá trích (định danh) với khuôn thính/riềng của gỏi cá nước ngọt miền Bắc; nguồn cá trích định lượng duy nhất là 1 họ Phú Quốc sao chép lẫn nhau (500g cá/100g dừa/500g bún) và không khớp hồ sơ file. Cá trích có số dinh dưỡng (158 kcal/100g) nên không phải trần nguyên liệu. [QD-15 mục 38 — chốt theo uỷ quyền toàn quyền hoàn thiện 2026-11-02] PHÂN XỬ PHẠM VI: file gỏi cá tổng quát trùng phạm vi với goi-ca-trich (Mức 2) đã có trong kho — theo khuyến nghị hồ sơ, thoái lui phạm vi tổng quát và GỘP thành biến thể của goi-ca-trich (parent_dish_slug='goi-ca-trich'). File giữ nguyên định lượng/hồ sơ riêng để truy vết; trọng tâm biên soạn và hiển thị chính thuộc về goi-ca-trich. Cơ chế parent_dish_slug như tiền lệ QD-07/QD-15 (slug biến thể vẫn mở được trang biến thể dưới món chính; dự án không có redirect slug riêng).",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

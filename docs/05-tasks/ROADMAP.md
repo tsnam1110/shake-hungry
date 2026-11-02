@@ -281,6 +281,17 @@ Kiểm chứng: `npm run build` (bundle mới chứa class mới, trang tham
 chiếu đúng hash), trang chủ/trang món/thư viện đều 200, Pest 177/177.
 Chi tiết + phân tích vòng lặp thói quen: [tasks/RET-001.md](./tasks/RET-001.md).
 
+**ĐỢT 2 HOÀN THIỆN — 16 HỒ SƠ ĐỊNH DANH ĐÃ PHÂN XỬ TOÀN BỘ
+(2026-11-02, theo uỷ quyền hoàn thiện):** sửa dữ liệu 3 mục
+(`tom-cang-nuong` về nướng mọi thuần; `goi-oc` chốt hoa chuối + đổi
+tên "Gỏi ốc bươu hoa chuối"; `goi-ca` gộp biến thể vào
+`goi-ca-trich`); giữ nguyên có lý do 10 mục (bằng chứng chưa đủ hoặc
+sửa sẽ chế số — QT-1); mục 27 đóng theo tiền lệ mục 41; 3 mục định
+danh đã kết luận nhưng biên soạn lại cần nguồn định lượng mới
+(`nom-chuoi-xanh`, `nem-chua-ran`, `banh-bong-lan-trung-muoi`) xếp
+đợt nội dung riêng **QD-15-BS** — không chặn hoàn thiện phần mềm.
+Chi tiết từng mục: [tasks/QD-15-LEGACY-QUEUE.md](./tasks/QD-15-LEGACY-QUEUE.md).
+
 **T-06 — GHI CHÚ VĂN HOÁ CHO MÓN CÒN THIẾU + TCM-PROMOTE-004 ĐÃ XONG
 (2026-11-02):** VN-001 đợt bổ sung: đo lại 260 món chưa có ghi chú
 (216 Mức 2 thường + 44 Mức 1), nghiên cứu 236 món ngoài phạm vi QD

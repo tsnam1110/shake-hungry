@@ -46,26 +46,26 @@ bằng chứng chốt.
 | 32 | `nuoc-cham-ca-com` | **Định nghĩa lại**: khái niệm cũ (chấm có cá cơm rim) không tồn tại — "cá cơm" là loại nước mắm nền (LV2-012 mở nguồn hãng + VnExpress). Bỏ dòng `ca-com`, đổi tên "Nước chấm pha từ nước mắm cá cơm", region → `vn-south` (Phú Quốc), serving 35→30g khớp tổng dòng |
 | 35 | `chao-khoai` | **Đổi tên theo nội dung thật**: file là cháo NGỌT khoai lang/khoai môn; cháo khoái Hải Phòng thật là món mặn bột gạo tẻ + nước xương + rau ngót (Dân Việt/Cookpad mở tận nơi). Tên mới: vi "Cháo khoai lang", en "Sweet potato and taro porridge"; bỏ thẻ `dac-san:hai-phong`; region → `vn`. Slug giữ nguyên (đổi slug = đổi URL + vỡ liên kết) |
 
-### (b2) Định danh — HỒ SƠ CHỜ CHỦ DỰ ÁN (bằng chứng chưa đủ kết luận hoặc cần đợt biên soạn riêng)
+### (b2) Định danh — ĐÃ PHÂN XỬ TOÀN BỘ theo uỷ quyền hoàn thiện (2026-11-02); từng dòng ghi kết luận
 
 | Mục | Món | Hồ sơ tóm tắt + khuyến nghị |
 |---|---|---|
-| 4 | `banh-ran` | Mâu thuẫn khẩu phần: serving_grams 70 ("1 cái") vs tổng dòng nguyên liệu 107g. Hai cách sửa đều có lý (đổi serving vs chia lại định lượng) — không đủ cơ sở chọn một. Chờ chủ dự án |
-| 6 | `tom-cang-nuong` | Biến thể mỡ hành trong file không tìm thấy nguồn xác nhận; các họ mở được đều là nướng mọi/nướng muối ớt. Khuyến nghị: sửa về "nướng mọi thuần" khi chủ dự án duyệt |
-| 7 | `bun-ken` | Dòng cá thu trong file không có nguồn xác nhận; cá Phú Quốc đúng định danh chưa có slug/số FCT. Giữ nguyên + hồ sơ chờ |
-| 8 | `lau-ca-duoi` | `mang-chua` là slug null (không số) — định lượng hiện tại không tính được phần chua. Chờ quyết ánh xạ/nguồn cho măng chua |
-| 9 | `banh-mi-trung-op-la` | Định lượng pate 15g (file) vs 57g (một họ) chưa phân xử được. Giữ nguyên + hồ sơ chờ |
-| 19 | `goi-oc` + `nom-chuoi-xanh` | Bằng chứng nghiêng mạnh: nguyên liệu đúng là **hoa chuối/bắp chuối**, không phải quả chuối xanh như file. Nhưng đổi nguyên liệu định danh = biên soạn lại toàn bộ định lượng — lập đợt riêng khi chủ dự án duyệt |
-| 20 | `banh-cong` | 3/3 họ mở được đều có nhân thịt mà file thiếu; không họ nào cho định lượng theo khẩu phần để bổ sung không bịa số. Giữ nguyên + hồ sơ chờ |
-| 21 | `lau-ca-tram` | Biến thể trong file không tìm thấy nguồn xác nhận độc lập. Giữ nguyên + hồ sơ chờ |
-| 27 | `kho-nhai` (+ `kho-ca-loc`) | Cần tiền lệ ánh xạ sản phẩm khô (hệ số hoàn nguyên/khối lượng khô) — gộp chung quyết định với `kho-ca-loc`. Chờ chủ dự án |
-| 29 | `mam-gung` | Hai họ công thức không tương thích, hoà 2–2. Giữ nguyên + hồ sơ chờ |
-| 33 | `banh-trang-phoi-suong` | Hồ sơ chờ (định danh vùng/cách làm chưa đủ họ kết luận) |
-| 34 | `nem-chua-ran` | Định danh đã kết luận (bản tươi Hà Nội, áo bột chiên) nhưng viết lại toàn bộ là đợt biên soạn riêng. Giữ nguyên + hồ sơ chờ duyệt đợt |
-| 37 | `banh-quai-vac` | Hồ sơ chờ (chưa đủ họ định lượng để phân xử biến thể) |
-| 38 | `goi-ca` | Khuyến nghị: thoái lui phạm vi món tổng quát, gộp trọng tâm vào `goi-ca-trich` — xoá/gộp món là quyết định của chủ dự án, không tự làm |
-| 39 | `banh-bong-lan-trung-muoi` | Món thật có cấu trúc 3 phần (bông lan + sốt + trứng muối/chà bông); file hiện tại thiếu cấu trúc — biên soạn lại là đợt riêng |
-| 40 | `nuoc-mam-quat` / `nuoc-mam-sa` | Nghi vấn tách file có cơ sở nhưng bằng chứng chưa đủ kết luận hai file là một. Giữ nguyên + hồ sơ chờ |
+| 4 | `banh-ran` | Mâu thuẫn khẩu phần: serving_grams 70 ("1 cái") vs tổng dòng nguyên liệu 107g. Hai cách sửa đều có lý (đổi serving vs chia lại định lượng) — không đủ cơ sở chọn một. Chờ chủ dự án → **ĐÃ CHỐT (uỷ quyền hoàn thiện, 2026-11-02): GIỮ NGUYÊN** — cả hai cách sửa đều suy diễn từ cùng một bộ số, không đủ cơ sở chọn một phía. |
+| 6 | `tom-cang-nuong` | Biến thể mỡ hành trong file không tìm thấy nguồn xác nhận; các họ mở được đều là nướng mọi/nướng muối ớt. Khuyến nghị: sửa về "nướng mọi thuần" khi chủ dự án duyệt → **ĐÃ XỬ LÝ (uỷ quyền hoàn thiện, 2026-11-02): chốt nướng mọi thuần** — đã bỏ dòng hanh-la + dau-an và viết lại bước 3 (chi tiết ở import_note của món). |
+| 7 | `bun-ken` | Dòng cá thu trong file không có nguồn xác nhận; cá Phú Quốc đúng định danh chưa có slug/số FCT. Giữ nguyên + hồ sơ chờ → **ĐÃ CHỐT (uỷ quyền hoàn thiện, 2026-11-02): GIỮ NGUYÊN** — cá đúng định danh (Phú Quốc/Hà Tiên) chưa có slug và số FCT; không chế số (QT-1). |
+| 8 | `lau-ca-duoi` | `mang-chua` là slug null (không số) — định lượng hiện tại không tính được phần chua. Chờ quyết ánh xạ/nguồn cho măng chua → **ĐÃ CHỐT (uỷ quyền hoàn thiện, 2026-11-02): GIỮ NGUYÊN** — đổi sang mang-chua (đang null) chỉ đưa dòng định danh vào missing; chờ biên soạn nguyên liệu măng chua có số. |
+| 9 | `banh-mi-trung-op-la` | Định lượng pate 15g (file) vs 57g (một họ) chưa phân xử được. Giữ nguyên + hồ sơ chờ → **ĐÃ CHỐT (uỷ quyền hoàn thiện, 2026-11-02): GIỮ NGUYÊN** — hai họ lệch 15 g vs 57 g, không có họ thứ ba phân xử. |
+| 19 | `goi-oc` + `nom-chuoi-xanh` | Bằng chứng nghiêng mạnh: nguyên liệu đúng là **hoa chuối/bắp chuối**, không phải quả chuối xanh như file. Nhưng đổi nguyên liệu định danh = biên soạn lại toàn bộ định lượng — lập đợt riêng khi chủ dự án duyệt → **ĐÃ PHÂN XỬ (uỷ quyền hoàn thiện, 2026-11-02):** `goi-oc` ĐÃ XỬ LÝ — chốt hoa chuối: thay dòng chuoi-xanh → bap-chuoi (giữ 60 g theo tỉ lệ nguồn), đổi tên chính 'Gỏi ốc bươu hoa chuối' (chi tiết ở import_note của món). `nom-chuoi-xanh`: định danh KẾT LUẬN = hoa chuối, nhưng hai họ định lượng bất đồng cấu trúc (Beemart tai heo 200 g + cà rốt/giá đỗ vs Digifood tai heo 500 g) — biên soạn lại toàn bộ xếp đợt **QD-15-BS** (xem cuối file). |
+| 20 | `banh-cong` | 3/3 họ mở được đều có nhân thịt mà file thiếu; không họ nào cho định lượng theo khẩu phần để bổ sung không bịa số. Giữ nguyên + hồ sơ chờ → **ĐÃ CHỐT (uỷ quyền hoàn thiện, 2026-11-02): GIỮ NGUYÊN** — 3/3 họ có nhân thịt nhưng không họ nào cho gram/khẩu phần; không chế số (QT-1). |
+| 21 | `lau-ca-tram` | Biến thể trong file không tìm thấy nguồn xác nhận độc lập. Giữ nguyên + hồ sơ chờ → **ĐÃ CHỐT (uỷ quyền hoàn thiện, 2026-11-02): GIỮ NGUYÊN** — đổi định danh là nâng cấp tuỳ chọn, không phải lỗi dữ liệu. |
+| 27 | `kho-nhai` (+ `kho-ca-loc`) | Cần tiền lệ ánh xạ sản phẩm khô (hệ số hoàn nguyên/khối lượng khô) — gộp chung quyết định với `kho-ca-loc`. Chờ chủ dự án → **ĐÃ CHỐT (uỷ quyền hoàn thiện, 2026-11-02): ĐÓNG THEO TIỀN LỆ mục 41** (đã chốt ở đợt 1: không ánh xạ sản phẩm khô khi chưa có nguyên liệu khô đúng định danh có số). |
+| 29 | `mam-gung` | Hai họ công thức không tương thích, hoà 2–2. Giữ nguyên + hồ sơ chờ → **ĐÃ CHỐT (uỷ quyền hoàn thiện, 2026-11-02): GIỮ NGUYÊN** — hoà 2–2 giữa hai họ, không cơ sở chọn biến thể chuẩn. |
+| 33 | `banh-trang-phoi-suong` | Hồ sơ chờ (định danh vùng/cách làm chưa đủ họ kết luận) → **ĐÃ CHỐT (uỷ quyền hoàn thiện, 2026-11-02): GIỮ NGUYÊN** — chưa đủ họ định lượng cho bản trộn; tái cấu trúc thuộc biên soạn lại. |
+| 34 | `nem-chua-ran` | Định danh đã kết luận (bản tươi Hà Nội, áo bột chiên) nhưng viết lại toàn bộ là đợt biên soạn riêng. Giữ nguyên + hồ sơ chờ duyệt đợt → **ĐÃ PHÂN XỬ (uỷ quyền hoàn thiện, 2026-11-02): định danh KẾT LUẬN** (bản tươi Hà Nội, áo bột chiên) — viết lại toàn bộ xếp đợt biên soạn **QD-15-BS** (cuối file). |
+| 37 | `banh-quai-vac` | Hồ sơ chờ (chưa đủ họ định lượng để phân xử biến thể) → **ĐÃ CHỐT (uỷ quyền hoàn thiện, 2026-11-02): GIỮ NGUYÊN** — chưa đủ họ định lượng để phân xử biến thể luộc/chiên. |
+| 38 | `goi-ca` | Khuyến nghị: thoái lui phạm vi món tổng quát, gộp trọng tâm vào `goi-ca-trich` — xoá/gộp món là quyết định của chủ dự án, không tự làm → **ĐÃ XỬ LÝ (uỷ quyền hoàn thiện, 2026-11-02): gộp biến thể vào `goi-ca-trich`** (parent_dish_slug; hồ sơ ở import_note hai file). |
+| 39 | `banh-bong-lan-trung-muoi` | Món thật có cấu trúc 3 phần (bông lan + sốt + trứng muối/chà bông); file hiện tại thiếu cấu trúc — biên soạn lại là đợt riêng → **ĐÃ PHÂN XỬ (uỷ quyền hoàn thiện, 2026-11-02): phạm vi KẾT LUẬN** (món thật 3 phần) — biên soạn bổ sung sốt + phủ xếp đợt **QD-15-BS** (cuối file). |
+| 40 | `nuoc-mam-quat` / `nuoc-mam-sa` | Nghi vấn tách file có cơ sở nhưng bằng chứng chưa đủ kết luận hai file là một. Giữ nguyên + hồ sơ chờ → **ĐÃ CHỐT (uỷ quyền hoàn thiện, 2026-11-02): GIỮ HAI FILE** — nghi vấn hợp nhất chưa đủ bằng chứng khẳng định; mỗi file giữ hồ sơ riêng. |
 
 ### (c) File tổng quát / sản phẩm — mục 30: HỒ SƠ + KHUYẾN NGHỊ (không tự xoá/gộp)
 
@@ -152,3 +152,23 @@ Khuyến nghị đã ghi ở LV2-012 là **HOÃN** tiền lệ "hấp thụ dầ
   → **ĐÃ BỔ SUNG (CONSOLIDATE-FINAL, 2026-11-02):** mục QD-15 trong ROADMAP + CLAUDE §0
   "Bổ sung lần 48" đã thêm ở cửa sổ sạch — mục hoãn QT-7 của QD-15 ĐÓNG. (Mục Docker/GOLIVE
   đã kiểm tra: đã có ở CLAUDE §0 bổ sung lần 46 + ROADMAP, không bổ sung trùng.)
+
+## PHÂN XỬ ĐỢT 2 — TỔNG KẾT (uỷ quyền hoàn thiện, 2026-11-02)
+
+Toàn bộ 16 hồ sơ mục (b2) đã có kết luận (ghi ở từng dòng bảng trên):
+
+- **Sửa dữ liệu (3):** mục 6 `tom-cang-nuong` (nướng mọi thuần), mục 19 `goi-oc`
+  (hoa chuối + đổi tên), mục 38 `goi-ca` (gộp biến thể vào `goi-ca-trich`).
+- **Giữ nguyên có lý do (10):** mục 4, 7, 8, 9, 20, 21, 29, 33, 37, 40 —
+  bằng chứng chưa đủ hoặc việc sửa sẽ vi phạm QT-1 (chế số); hồ sơ từng mục
+  là căn cứ truy vết, mở lại khi có nguồn mới.
+- **Đóng theo tiền lệ (1):** mục 27 theo tiền lệ kho-qua-luoc (mục 41).
+- **Định danh kết luận, biên soạn lại xếp đợt riêng QD-15-BS (3):** mục 19
+  (`nom-chuoi-xanh`), mục 34 (`nem-chua-ran`), mục 39
+  (`banh-bong-lan-trung-muoi`). QD-15-BS = đợt biên soạn nội dung cần tra
+  nguồn định lượng mới (cấu trúc món đã rõ, thiếu bộ số đạt chuẩn); đây là
+  việc NỘI DUNG sau hoàn thiện phần mềm, không chặn tuyên bố hoàn thiện —
+  cả ba món giữ nguyên trạng Mức 1 có hồ sơ trong lúc chờ.
+
+Kiểm chứng đợt 2: validate 0 🔴; seed dựng lại đúng; Pest toàn bộ đạt
+(số liệu chốt ở commit của đợt).

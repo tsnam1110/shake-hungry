@@ -43,22 +43,6 @@
       "confidence": "low"
     },
     {
-      "ingredient_slug": "hanh-la",
-      "quantity": 10,
-      "unit_name": "g",
-      "is_optional": false,
-      "source": "llm_suggested",
-      "confidence": "low"
-    },
-    {
-      "ingredient_slug": "dau-an",
-      "quantity": 8,
-      "unit_name": "g",
-      "is_optional": false,
-      "source": "llm_suggested",
-      "confidence": "low"
-    },
-    {
       "ingredient_slug": "muoi",
       "quantity": 2,
       "unit_name": "g",
@@ -78,7 +62,7 @@
   "recipe_steps": [
     "Tôm càng rửa sạch, chẻ dọc lưng, bỏ chỉ đen.",
     "Nướng tôm trên than đến khi vỏ đỏ, thịt chín tới.",
-    "Phi hành lá với dầu nóng làm mỡ hành, phết lên tôm; ăn kèm muối tiêu chanh."
+    "Dọn ra đĩa, ăn kèm muối tiêu chanh."
   ],
   "recipe_sources": [],
   "media": [
@@ -91,7 +75,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-009 đợt 9: GIỮ Mức 1 — thiếu nguồn đúng biến thể: đã mở 3 họ (Bách Hoá XANH bản sa tế qua bản gương, Điện Máy XANH bản tôm thường bơ tỏi/muối ớt, DaoHaiSan không khẩu phần) — không họ nào là biến thể nướng mọi + mỡ hành của file; lượng tôm cũng bất đồng 133–250 g/khẩu phần. Câu hỏi cho chủ dự án: món là 'nướng mọi + mỡ hành' hay bản ướp gia vị? Ghi nhận thêm: serving 200 g so với tổng dòng 173 g; tên chính tiếng Việt đang viết thường.] [LV2-010 đợt 10: GIỮ Mức 1 — GIU-BIEN-THE. Mở thêm 4 họ mới: Đảo Hải Sản có mục 'nướng mọi' thật (1 kg, nướng trơn không ướp, không hành/dầu), Dân Việt/Báo Kiên Giang định nghĩa mọi = không cần ướp gia vị chấm muối ớt chanh, Bà Hai nướng nguyên con trơn + chén chấm riêng; cả 3 đều KHÔNG có mỡ hành. Biến thể có định lượng khẩu phần vẫn là sa tế (BHX 500 g/2–3 người) và phô mai (Cookpad Annie Vo 500 g/4 người) — khác file. Mỡ hành phi phết tôm không họ đạt chuẩn nào ủng hộ (gần nhất: Đảo phết hành lá + 1 muỗng cà phê dầu cho cả mẻ 1 kg sau khi chín ở bản muối ớt). Chờ chủ dự án chốt lại định danh: mọi thuần / sa tế / muối ớt / phô mai.]",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-009 đợt 9: GIỮ Mức 1 — thiếu nguồn đúng biến thể: đã mở 3 họ (Bách Hoá XANH bản sa tế qua bản gương, Điện Máy XANH bản tôm thường bơ tỏi/muối ớt, DaoHaiSan không khẩu phần) — không họ nào là biến thể nướng mọi + mỡ hành của file; lượng tôm cũng bất đồng 133–250 g/khẩu phần. Câu hỏi cho chủ dự án: món là 'nướng mọi + mỡ hành' hay bản ướp gia vị? Ghi nhận thêm: serving 200 g so với tổng dòng 173 g; tên chính tiếng Việt đang viết thường.] [LV2-010 đợt 10: GIỮ Mức 1 — GIU-BIEN-THE. Mở thêm 4 họ mới: Đảo Hải Sản có mục 'nướng mọi' thật (1 kg, nướng trơn không ướp, không hành/dầu), Dân Việt/Báo Kiên Giang định nghĩa mọi = không cần ướp gia vị chấm muối ớt chanh, Bà Hai nướng nguyên con trơn + chén chấm riêng; cả 3 đều KHÔNG có mỡ hành. Biến thể có định lượng khẩu phần vẫn là sa tế (BHX 500 g/2–3 người) và phô mai (Cookpad Annie Vo 500 g/4 người) — khác file. Mỡ hành phi phết tôm không họ đạt chuẩn nào ủng hộ (gần nhất: Đảo phết hành lá + 1 muỗng cà phê dầu cho cả mẻ 1 kg sau khi chín ở bản muối ớt). Chờ chủ dự án chốt lại định danh: mọi thuần / sa tế / muối ớt / phô mai.] [QD-15 mục 6 — chốt theo uỷ quyền toàn quyền hoàn thiện 2026-11-02] CHỐT ĐỊNH DANH: nướng MỌI THUẦN theo LV2-010 mục 4 và khuyến nghị hồ sơ QD-15 — biến thể mỡ hành của file không có họ nguồn nào ủng hộ (lượng mỡ hành cao ~16 lần garnish duy nhất tìm được trong nguồn). Đã BỎ hai dòng chỉ phục vụ mỡ hành (hanh-la 10 g, dau-an 8 g) và viết lại bước 3 bỏ công đoạn mỡ hành; giữ nguyên tom-cang-xanh 150 g, muoi 2 g, toi 3 g. Các phương án sa tế/muối ớt/phô mai không chọn vì cũng không có họ định lượng ủng hộ cho file này.",
   "cultural_note": {
     "text": "Tôm càng nướng gắn với vùng sông nước đồng bằng sông Cửu Long, nơi tôm càng xanh là sản vật quen thuộc của hệ thống sông Mê Kông và được người miền Tây xếp vào hàng 'mồi bén' — những món ngon đặc sản của vùng. Loài tôm này tuy sống ở vùng nước ngọt nhưng vẫn cần môi trường biển trong vòng đời sinh trưởng, nên gắn chặt với mối quan hệ sông — biển của đồng bằng. Cách nướng mộc mạc trên than — lối “nướng mọi” — là cách ăn dân dã phổ biến để giữ nguyên vị tôm sông trong bữa ăn miền Tây.",
     "sources": [
