@@ -51,6 +51,12 @@ Theo hệ điều hành:
 > khi có, tài liệu production bằng Docker sẽ nằm cùng thư mục `docs/10-deployment/` và
 > DEPLOYMENT.md §6 sẽ trỏ tới. **Đừng tự chế Dockerfile cho dev** — quy trình §3–§6 dưới đây
 > là đường chính thức.
+>
+> **Đính chính 2026-11-02 (DOCKER-001):** gói Docker nay ĐÃ có ở gốc repo (`Dockerfile`,
+> `docker-compose.yml`, `docker-compose.prod.yml`) và đã tự kiểm thử đạt — xem
+> [DOCKER-001](../05-tasks/tasks/DOCKER-001.md). Đường dev chính thức vẫn là §3–§6 dưới đây;
+> Docker là đường đóng gói/go-live (dev bằng Docker khi cần: `cp .env.docker.example .env.docker`
+> rồi `docker compose up -d --build`, mở http://localhost:8000).
 
 ---
 

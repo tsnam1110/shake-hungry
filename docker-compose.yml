@@ -1,0 +1,65 @@
+# Lắc Đói — docker compose bản dev/test nhanh (DOCKER-001)
+# Chạy:  cp .env.docker.example .env.docker && docker compose up -d --build
+# Mở:    http://localhost:8000  (admin: /admin — tài khoản tạo theo ADMIN_* trong .env.docker)
+# Bản production: xem docker-compose.prod.yml + .env.production.example.
+
+services:
+  db:
+    image: mysql:8.0
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_vi_0900_ai_ci
+      - --log-bin-trust-function-creators=1
+      - --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD:-lacdoi-root}
+      MYSQL_DATABASE: shake_hungry
+      MYSQL_USER: ${DB_USERNAME:-lakdoi}
+      MYSQL_PASSWORD: ${DB_PASSWORD:-lacdoi-secret}
+    ports:
+      - "3306:3306"   # chỉ bản dev: tiện dùng công cụ ngoài; production sẽ tắt (xem prod)
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./docker/mysql-init.sql:/docker-entrypoint-initdb.d/10-init.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h 127.0.0.1 -uroot -p\"$$MYSQL_ROOT_PASSWORD\" --silent"]
+      interval: 5s
+      timeout: 3s
+      retries: 24
+      start_period: 20s
+
+  app:
+    build:
+      context: .
+      target: app
+    env_file:
+      - .env.docker
+    environment:
+      DB_HOST: db
+      DB_PORT: "3306"
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - app_storage:/var/www/html/storage/app
+      - app_logs:/var/www/html/storage/logs
+    healthcheck:
+      test: ["CMD-SHELL", "php -r 'exit(@fsockopen(\"127.0.0.1\", 9000) ? 0 : 1);'"]
+      interval: 10s
+      timeout: 3s
+      retries: 12
+      start_period: 60s
+
+  web:
+    build:
+      context: .
+      target: web
+    ports:
+      - "8000:80"
+    depends_on:
+      - app
+
+volumes:
+  db_data:
+  app_storage:
+  app_logs:
