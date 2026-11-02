@@ -2,7 +2,7 @@
   "slug": "mam-ruot-an-giang",
   "parent_dish_slug": null,
   "country_code": "VN",
-  "region_code": null,
+  "region_code": "vn-south",
   "names": [
     {
       "locale": "vi",
