@@ -18,7 +18,9 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 3,
+  "completeness_level": 2,
+  "level_basis": "tcm_compensation",
+  "level_note": "Chưa đạt cổng Mức 2 thường theo quy ước họ nguồn QD-06/PX-25 (chủ dự án chốt 2026-11-02): các nguồn công thức chỉ thuộc 2 họ độc lập — Điện Máy XANH có 2 bài trong khi mỗi họ tối đa tính 1 trong 3 nguồn cổng; họ độc lập còn lại là vnexpress.net. Được giữ ở Mức 2 theo đường nâng bù Mức 3 (quyết định chủ dự án 2026-11-01): độ phủ tính vị 89.72% ≥ 60% và đã có ghi chú văn hoá.",
   "meal_slots": [
     {
       "slot": "chieu",
@@ -172,7 +174,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-006 đợt 6: nâng Mức 2 — bổ sung ngô ngọt 35g (3/3 nguồn; khoảng trống lớn nhất của file) và cà rốt 15g dạng tuỳ chọn (2/3 nguồn). Nấm tuyết và trứng cút xuất hiện ở nguồn nhưng định lượng phân tán — ghi nhận, không bổ sung.]",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-006 đợt 6: nâng Mức 2 — bổ sung ngô ngọt 35g (3/3 nguồn; khoảng trống lớn nhất của file) và cà rốt 15g dạng tuỳ chọn (2/3 nguồn). Nấm tuyết và trứng cút xuất hiện ở nguồn nhưng định lượng phân tán — ghi nhận, không bổ sung.] [QD-06/PX-25 — chủ dự án chốt quy ước họ nguồn 2026-11-02] HẠ MỨC 3 → 'Mức 2 (có note)'. Đếm lại theo quy ước mới: 3 nguồn công thức chỉ thuộc 2 họ độc lập (Điện Máy XANH ×2 bài — tính tối đa 1 nguồn cổng; vnexpress.net) → cổng Mức 2 thường không còn đạt, kéo theo mất Mức 3. Toàn bộ dữ kiện nguồn giữ nguyên trong recipe_sources (không xoá bài nào); món đủ điều kiện đường nâng bù (phủ tính vị 89.72% ≥ 60% + có ghi chú văn hoá) nên giữ Mức 2 dạng có note thay vì hạ Mức 1. Nâng lại Mức 2 thường/Mức 3 khi bổ sung ≥1 nguồn công thức thuộc họ độc lập mới đã mở kiểm chứng.",
   "cultural_note": {
     "text": "Súp cua thuộc họ súp khai vị mở đầu tiệc cưới Nam Bộ, nơi thực đơn tiệc theo một trình tự gần như cố định và món đầu tiên dọn lên bàn luôn là một chén súp — tiệc sang trọng dùng súp vi cá hay súp măng tây cua, tiệc thường thì thay bằng lòng trứng gà, măng tre xắt nhuyễn, đôi khi có trứng cút. Khác súp phương Tây loãng, súp trong tiệc cưới được pha bột năng, bột bắp cho sền sệt, sợi trứng quyện vào trông như áng mây hay rồng phượng giao nhau. Người chế biến gọi món súp khai vị này là “Phong vân hội tụ” hay “Loan phượng hòa mình”, với ý chúc mừng cho cô dâu, chú rể.",
     "sources": [

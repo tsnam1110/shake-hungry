@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 2,
+  "completeness_level": 1,
   "meal_slots": [
     {
       "slot": "sang",
@@ -132,7 +132,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. MÓN THAY cho chao-trang-trung-muoi của kế hoạch §3.6: món chao-trang đã có trong kho có serving_desc 'kèm nửa quả trứng vịt muối' — tức chính là cháo trắng trứng muối, tạo thêm sẽ trùng theo phép thử EDITORIAL-GUIDE §3. Cháo thịt băm là bữa sáng tự nấu phổ biến còn thiếu, nguyên liệu sẵn có. [LV2-006 đợt 6: nâng Mức 2 — bổ sung hành tím 5g (3/3 nguồn) và dầu ăn 3g cho bước xào thịt; bước nấu thống nhất theo cách xào thịt băm trước khi cho vào cháo. Định lượng còn lại giữ nguyên.]",
+  "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. MÓN THAY cho chao-trang-trung-muoi của kế hoạch §3.6: món chao-trang đã có trong kho có serving_desc 'kèm nửa quả trứng vịt muối' — tức chính là cháo trắng trứng muối, tạo thêm sẽ trùng theo phép thử EDITORIAL-GUIDE §3. Cháo thịt băm là bữa sáng tự nấu phổ biến còn thiếu, nguyên liệu sẵn có. [LV2-006 đợt 6: nâng Mức 2 — bổ sung hành tím 5g (3/3 nguồn) và dầu ăn 3g cho bước xào thịt; bước nấu thống nhất theo cách xào thịt băm trước khi cho vào cháo. Định lượng còn lại giữ nguyên.] [QD-06/PX-25 — chủ dự án chốt quy ước họ nguồn 2026-11-02] HẠ MỨC 2 → 1. Đếm lại theo quy ước mới: 3 nguồn công thức chỉ thuộc 2 họ độc lập (Điện Máy XANH ×2 bài — tính tối đa 1 nguồn cổng; cookpad.com) → cổng Mức 2 thường không đạt. Đường nâng bù 'Mức 2 (có note)' không áp được vì độ phủ tính vị 91.65% ≥ 60% nhưng món CHƯA có ghi chú văn hoá — thiếu một trong hai điều kiện của đường nâng bù. Dữ kiện nguồn và định lượng giữ nguyên toàn bộ; nâng lại khi bổ sung ≥1 nguồn công thức thuộc họ độc lập mới đã mở kiểm chứng (và có ghi chú văn hoá đạt chuẩn nếu muốn xét đường nâng bù).",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

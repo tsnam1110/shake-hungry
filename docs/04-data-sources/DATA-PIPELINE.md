@@ -199,6 +199,27 @@ lan ra hàng trăm món trước khi ai đó nhận ra.
 
 ---
 
+### Quy ước họ nguồn tính cổng Mức 2 (PX-25 → QD-06, chủ dự án chốt 2026-11-02)
+
+Cổng Mức 2 (V12/R8: ≥3 `recipe_sources`) được đếm theo quy ước sau — áp cho mọi đợt
+nâng mức và rà soát từ 2026-11-02:
+
+1. **Nguồn độc lập tính theo BÀI viết** — mỗi bài là một nguồn; không gộp bài khác nhau
+   thành một chỉ vì cùng trang.
+2. **Mỗi họ nguồn tối đa 1 trong 3 nguồn tính cổng.** "Họ" gồm: (a) cùng domain/nhà
+   xuất bản (ví dụ hai bài Điện Máy XANH khác nhau vẫn là một họ `dienmayxanh.com`);
+   (b) cùng họ kỹ thuật — nguồn khác món/khác loài chỉ ủng hộ kỹ thuật chế biến (nhóm
+   PX-18…PX-24 của AUDIT-002). Hệ quả: một món đạt cổng phải có nguồn thuộc **ít nhất
+   3 họ độc lập**; bài thứ hai cùng họ vẫn giữ trong `recipe_sources` làm dữ kiện đối
+   chiếu nhưng **không tính** vào 3 nguồn cổng.
+3. **Công khai trong hồ sơ món:** mọi phân xử cổng (đạt / rớt theo quy ước này) ghi vào
+   `import_note` của file món kèm danh sách họ đã đếm.
+
+Đợt áp dụng đầu tiên (QD-ADJUDICATE-1, 2026-11-02): đếm lại 23 món có ≥2 bài Điện Máy
+XANH trong `recipe_sources` — 3 món vẫn đủ 3 họ (giữ mức), 11 món Mức 3 hạ xuống
+"Mức 2 (có note)" qua đường nâng bù, 9 món Mức 2 hạ Mức 1 (không đủ điều kiện nâng
+bù). Chi tiết từng món: [QD-ADJUDICATE-1](../05-tasks/tasks/QD-ADJUDICATE-1.md).
+
 ## 6. Đóng góp từ người dùng (GĐ6 — kênh phụ)
 
 Ở dự án này đóng góp cộng đồng là **phụ**, không phải nguồn dữ liệu chính. Vì vậy giữ đơn giản, không

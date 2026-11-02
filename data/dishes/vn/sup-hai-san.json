@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 2,
+  "completeness_level": 1,
   "meal_slots": [
     {
       "slot": "chieu",
@@ -172,7 +172,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-007 đợt 7: nâng Mức 2 — 3 nguồn đã mở. BỔ SUNG trứng gà 15g — 4/4 công thức đã mở đều có trứng gà tạo vân, file thiếu hẳn (bất thường lớn nhất của món). GIỮ cua biển 30g kèm cơ sở cân: slug cua-bien là THỊT đã gỡ; 30g thịt ≈ 100–120g cua nguyên con/khẩu phần, khớp 2 nguồn (~20–26g). GIỮ tôm sú 40g kèm ghi nhận: 2 biến thể của 1 bài ĐMX cho 25g — chỉ 1 nhà xuất bản, chưa đủ ≥2 nguồn độc lập để sửa; chờ nguồn tôm thứ ba.]",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-007 đợt 7: nâng Mức 2 — 3 nguồn đã mở. BỔ SUNG trứng gà 15g — 4/4 công thức đã mở đều có trứng gà tạo vân, file thiếu hẳn (bất thường lớn nhất của món). GIỮ cua biển 30g kèm cơ sở cân: slug cua-bien là THỊT đã gỡ; 30g thịt ≈ 100–120g cua nguyên con/khẩu phần, khớp 2 nguồn (~20–26g). GIỮ tôm sú 40g kèm ghi nhận: 2 biến thể của 1 bài ĐMX cho 25g — chỉ 1 nhà xuất bản, chưa đủ ≥2 nguồn độc lập để sửa; chờ nguồn tôm thứ ba.] [QD-06/PX-25 — chủ dự án chốt quy ước họ nguồn 2026-11-02] HẠ MỨC 2 → 1. Đếm lại theo quy ước mới: 3 nguồn công thức chỉ thuộc 2 họ độc lập (Điện Máy XANH ×2 bài — tính tối đa 1 nguồn cổng; cookbeo.com) → cổng Mức 2 thường không đạt. Đường nâng bù 'Mức 2 (có note)' không áp được vì độ phủ tính vị 79.15% ≥ 60% nhưng món CHƯA có ghi chú văn hoá — thiếu một trong hai điều kiện của đường nâng bù. Dữ kiện nguồn và định lượng giữ nguyên toàn bộ; nâng lại khi bổ sung ≥1 nguồn công thức thuộc họ độc lập mới đã mở kiểm chứng (và có ghi chú văn hoá đạt chuẩn nếu muốn xét đường nâng bù).",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

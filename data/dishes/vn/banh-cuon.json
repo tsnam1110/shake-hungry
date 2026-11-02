@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "hap",
-  "completeness_level": 2,
+  "completeness_level": 1,
   "meal_slots": [
     {
       "slot": "sang",
@@ -164,7 +164,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [LV2-006 đợt 6: nâng Mức 2 — bột gạo 60 → 45g, bột năng 10 → 15g: tổng bột của file vốn đúng nhưng tỉ lệ gạo/năng là ngoại lệ so với mọi nguồn đã mở; sửa tỉ lệ theo đồng thuận.]",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [LV2-006 đợt 6: nâng Mức 2 — bột gạo 60 → 45g, bột năng 10 → 15g: tổng bột của file vốn đúng nhưng tỉ lệ gạo/năng là ngoại lệ so với mọi nguồn đã mở; sửa tỉ lệ theo đồng thuận.] [QD-06/PX-25 — chủ dự án chốt quy ước họ nguồn 2026-11-02] HẠ MỨC 2 → 1. Đếm lại theo quy ước mới: 3 nguồn công thức chỉ thuộc 2 họ độc lập (Điện Máy XANH ×2 bài — tính tối đa 1 nguồn cổng; cookpad.com) → cổng Mức 2 thường không đạt. Đường nâng bù 'Mức 2 (có note)' không áp được vì độ phủ tính vị 58.54% < 60% (đã có ghi chú văn hoá) — thiếu một trong hai điều kiện của đường nâng bù. Dữ kiện nguồn và định lượng giữ nguyên toàn bộ; nâng lại khi bổ sung ≥1 nguồn công thức thuộc họ độc lập mới đã mở kiểm chứng (và có ghi chú văn hoá đạt chuẩn nếu muốn xét đường nâng bù).",
   "cultural_note": {
     "text": "Bánh cuốn gắn với làng Thanh Trì của Thăng Long xưa, một trong những nơi khởi sinh món bánh này; tương truyền hoàng tử An Quốc, con Hùng Vương thứ mười tám, đã dạy dân làng cách làm bánh. Bánh được tráng mỏng tang trên khuôn vải, phết hành mỡ; về sau xuất hiện thêm biến thể nhân thịt băm cùng mộc nhĩ, nấm hương. Hình ảnh những gánh bánh cuốn rong của người Thanh Trì cùng tiếng rao đã in sâu vào ký ức nhiều thế hệ người Hà Nội, và món bánh từng được các nhà văn Vũ Bằng, Thạch Lam ca ngợi.",
     "sources": [

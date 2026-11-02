@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "hap",
-  "completeness_level": 2,
+  "completeness_level": 1,
   "meal_slots": [
     {
       "slot": "chieu",
@@ -124,7 +124,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-007 đợt 7: nâng Mức 2 — 3 nguồn đã mở. SỬA chuối 100→55g (3/3 nguồn cho thịt chuối 45,6–57g/khẩu phần theo cơ sở thịt sau lột vỏ; file cũ lệch +75–119%). GIỮ bột năng 25g (nguồn tản 14,5–28,7, không đồng thuận), bột gạo 10g (biến thể có/không: 0–15,2), cốt dừa 40g (3 nguồn hội tụ 36,2–38,0 khi tính cả nước dão — lệch chỉ +5–10%), đường 15g (trong dải 7,2–19,8). Ghi nhận ánh xạ: mọi nguồn dùng chuối sứ/xiêm, slug chuoi trong kho là chuối tiêu Cavendish — kho chưa có slug chuối sứ riêng, giữ ánh xạ gần đúng. Tổng file sau sửa ~138g + nước trộn bột hấp thụ ≈ serving 150g.]",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-007 đợt 7: nâng Mức 2 — 3 nguồn đã mở. SỬA chuối 100→55g (3/3 nguồn cho thịt chuối 45,6–57g/khẩu phần theo cơ sở thịt sau lột vỏ; file cũ lệch +75–119%). GIỮ bột năng 25g (nguồn tản 14,5–28,7, không đồng thuận), bột gạo 10g (biến thể có/không: 0–15,2), cốt dừa 40g (3 nguồn hội tụ 36,2–38,0 khi tính cả nước dão — lệch chỉ +5–10%), đường 15g (trong dải 7,2–19,8). Ghi nhận ánh xạ: mọi nguồn dùng chuối sứ/xiêm, slug chuoi trong kho là chuối tiêu Cavendish — kho chưa có slug chuối sứ riêng, giữ ánh xạ gần đúng. Tổng file sau sửa ~138g + nước trộn bột hấp thụ ≈ serving 150g.] [QD-06/PX-25 — chủ dự án chốt quy ước họ nguồn 2026-11-02] HẠ MỨC 2 → 1. Đếm lại theo quy ước mới: 3 nguồn công thức chỉ thuộc 2 họ độc lập (Điện Máy XANH ×2 bài — tính tối đa 1 nguồn cổng; cookpad.com) → cổng Mức 2 thường không đạt. Đường nâng bù 'Mức 2 (có note)' không áp được vì độ phủ tính vị 82.43% ≥ 60% nhưng món CHƯA có ghi chú văn hoá — thiếu một trong hai điều kiện của đường nâng bù. Dữ kiện nguồn và định lượng giữ nguyên toàn bộ; nâng lại khi bổ sung ≥1 nguồn công thức thuộc họ độc lập mới đã mở kiểm chứng (và có ghi chú văn hoá đạt chuẩn nếu muốn xét đường nâng bù).",
   "status": "draft",
   "source": "llm_suggested",
   "confidence": "unknown",

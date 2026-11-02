@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 2,
+  "completeness_level": 1,
   "meal_slots": [
     {
       "slot": "trua",
@@ -141,7 +141,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): Đối chiếu 3 nguồn công thức đã mở kiểm chứng (xem recipe_sources). Định lượng: giữ nguyên toàn bộ. Các nguồn bất đồng lớn về lượng mọc/giò mỗi khẩu phần (25–125g, do khác nhau giữa cách làm mâm cỗ và bữa thường) nên không đủ đồng thuận để sửa; nấm hương khô dao động 5–17,5g/khẩu phần giữa các nguồn, giữ 10g; mộc nhĩ 8g khớp nguồn cỗ Tết (7,5g/khẩu phần). Ghi nhận bất thường: cả 3 nguồn đều có rau củ (su hào, cà rốt, súp lơ, đậu Hà Lan, trứng cút) mà file chưa có dòng nguyên liệu nào — không tự thêm, chờ chủ dự án quyết. Bước nấu viết lại 7 bước.",
+  "import_note": "Soạn nháp đợt mở rộng 300 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): Đối chiếu 3 nguồn công thức đã mở kiểm chứng (xem recipe_sources). Định lượng: giữ nguyên toàn bộ. Các nguồn bất đồng lớn về lượng mọc/giò mỗi khẩu phần (25–125g, do khác nhau giữa cách làm mâm cỗ và bữa thường) nên không đủ đồng thuận để sửa; nấm hương khô dao động 5–17,5g/khẩu phần giữa các nguồn, giữ 10g; mộc nhĩ 8g khớp nguồn cỗ Tết (7,5g/khẩu phần). Ghi nhận bất thường: cả 3 nguồn đều có rau củ (su hào, cà rốt, súp lơ, đậu Hà Lan, trứng cút) mà file chưa có dòng nguyên liệu nào — không tự thêm, chờ chủ dự án quyết. Bước nấu viết lại 7 bước. [QD-06/PX-25 — chủ dự án chốt quy ước họ nguồn 2026-11-02] HẠ MỨC 2 → 1. Đếm lại theo quy ước mới: 3 nguồn công thức chỉ thuộc 2 họ độc lập (Điện Máy XANH ×2 bài — tính tối đa 1 nguồn cổng; cet.edu.vn) → cổng Mức 2 thường không đạt. Đường nâng bù 'Mức 2 (có note)' không áp được vì độ phủ tính vị 96.73% ≥ 60% nhưng món CHƯA có ghi chú văn hoá — thiếu một trong hai điều kiện của đường nâng bù. Dữ kiện nguồn và định lượng giữ nguyên toàn bộ; nâng lại khi bổ sung ≥1 nguồn công thức thuộc họ độc lập mới đã mở kiểm chứng (và có ghi chú văn hoá đạt chuẩn nếu muốn xét đường nâng bù).",
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -18,7 +18,9 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 3,
+  "completeness_level": 2,
+  "level_basis": "tcm_compensation",
+  "level_note": "Chưa đạt cổng Mức 2 thường theo quy ước họ nguồn QD-06/PX-25 (chủ dự án chốt 2026-11-02): các nguồn công thức chỉ thuộc 2 họ độc lập — Điện Máy XANH có 2 bài trong khi mỗi họ tối đa tính 1 trong 3 nguồn cổng; họ độc lập còn lại là danviet.vn. Được giữ ở Mức 2 theo đường nâng bù Mức 3 (quyết định chủ dự án 2026-11-01): độ phủ tính vị 97.53% ≥ 60% và đã có ghi chú văn hoá.",
   "meal_slots": [
     {
       "slot": "sang",
@@ -136,7 +138,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-006 đợt 6: nâng Mức 2 — định lượng giữ nguyên toàn bộ sau đối chiếu ≥2 nguồn. Biến thể trộn gạo nếp ở một số nguồn được ghi nhận là biến thể; file giữ bản gạo tẻ.]",
+  "import_note": "Soạn nháp đợt mở rộng 300 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-006 đợt 6: nâng Mức 2 — định lượng giữ nguyên toàn bộ sau đối chiếu ≥2 nguồn. Biến thể trộn gạo nếp ở một số nguồn được ghi nhận là biến thể; file giữ bản gạo tẻ.] [QD-06/PX-25 — chủ dự án chốt quy ước họ nguồn 2026-11-02] HẠ MỨC 3 → 'Mức 2 (có note)'. Đếm lại theo quy ước mới: 3 nguồn công thức chỉ thuộc 2 họ độc lập (Điện Máy XANH ×2 bài — tính tối đa 1 nguồn cổng; danviet.vn) → cổng Mức 2 thường không còn đạt, kéo theo mất Mức 3. Toàn bộ dữ kiện nguồn giữ nguyên trong recipe_sources (không xoá bài nào); món đủ điều kiện đường nâng bù (phủ tính vị 97.53% ≥ 60% + có ghi chú văn hoá) nên giữ Mức 2 dạng có note thay vì hạ Mức 1. Nâng lại Mức 2 thường/Mức 3 khi bổ sung ≥1 nguồn công thức thuộc họ độc lập mới đã mở kiểm chứng.",
   "cultural_note": {
     "text": "Cháo từng là món ăn thay cơm của nhà nông nghèo xưa — dễ nấu, lại không tốn nhiều gạo. Với cháo gà, ký ức Tết của nhiều gia đình quê gắn với con gà luộc trong bữa cơm tất niên: nước luộc gà được giữ lại để mẹ nấu nồi cháo gà trong đêm giao thừa cho cả nhà.",
     "sources": [

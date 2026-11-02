@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "hap",
-  "completeness_level": 2,
+  "completeness_level": 1,
   "meal_slots": [
     {
       "slot": "sang",
@@ -155,7 +155,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [LV2-006 đợt 6: nâng Mức 2 — bột gạo 70 → 55g, bột năng 10 → 25g: sửa tỉ lệ bột theo đồng thuận nguồn, cùng mẫu hình bánh cuốn.]",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [LV2-006 đợt 6: nâng Mức 2 — bột gạo 70 → 55g, bột năng 10 → 25g: sửa tỉ lệ bột theo đồng thuận nguồn, cùng mẫu hình bánh cuốn.] [QD-06/PX-25 — chủ dự án chốt quy ước họ nguồn 2026-11-02] HẠ MỨC 2 → 1. Đếm lại theo quy ước mới: 3 nguồn công thức chỉ thuộc 2 họ độc lập (Điện Máy XANH ×2 bài — tính tối đa 1 nguồn cổng; cookpad.com) → cổng Mức 2 thường không đạt. Đường nâng bù 'Mức 2 (có note)' không áp được vì độ phủ tính vị 47.77% < 60% (đã có ghi chú văn hoá) — thiếu một trong hai điều kiện của đường nâng bù. Dữ kiện nguồn và định lượng giữ nguyên toàn bộ; nâng lại khi bổ sung ≥1 nguồn công thức thuộc họ độc lập mới đã mở kiểm chứng (và có ghi chú văn hoá đạt chuẩn nếu muốn xét đường nâng bù).",
   "cultural_note": {
     "text": "Bánh ướt Diên Khánh (Khánh Hoà) nổi tiếng với “phố bánh ướt” dọc Quốc lộ 1A qua thị trấn — con phố chỉ bán bánh ướt đã có hơn nửa thế kỷ, các quán mở từ sáng sớm tới đêm khuya. Bánh được tráng mỏng trên nồi gang căng vải và phải ăn nóng mới ngon — có quán khách vào ngồi rồi người tráng mới bắt đầu tráng — phủ mỡ hành, đậu xanh, ruốc, ăn kèm chả, nem, giá trụng và xoài băm. Làng Phú Lộc ở Diên Khánh là một trong những làng có nhiều người làm bánh ướt.",
     "sources": [

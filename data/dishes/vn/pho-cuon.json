@@ -18,7 +18,9 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "song",
-  "completeness_level": 3,
+  "completeness_level": 2,
+  "level_basis": "tcm_compensation",
+  "level_note": "Chưa đạt cổng Mức 2 thường theo quy ước họ nguồn QD-06/PX-25 (chủ dự án chốt 2026-11-02): các nguồn công thức chỉ thuộc 2 họ độc lập — Điện Máy XANH có 2 bài trong khi mỗi họ tối đa tính 1 trong 3 nguồn cổng; họ độc lập còn lại là bepxua.vn. Được giữ ở Mức 2 theo đường nâng bù Mức 3 (quyết định chủ dự án 2026-11-01): độ phủ tính vị 93.56% ≥ 60% và đã có ghi chú văn hoá.",
   "meal_slots": [
     {
       "slot": "trua",
@@ -156,7 +158,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. [LV2-006 đợt 6: nâng Mức 2 — định lượng giữ nguyên toàn bộ. Bất thường ghi nhận chờ phân xử: nhân bò thực tế được xào chín ở 3/3 nguồn trong khi cooking_method của file chưa phản ánh điều đó — không tự sửa phân loại trong đợt này. Trứng tráng sợi có ở 2/3 nguồn nhưng định lượng lệch nhau 3 lần — ghi nhận, không bổ sung.]",
+  "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. [LV2-006 đợt 6: nâng Mức 2 — định lượng giữ nguyên toàn bộ. Bất thường ghi nhận chờ phân xử: nhân bò thực tế được xào chín ở 3/3 nguồn trong khi cooking_method của file chưa phản ánh điều đó — không tự sửa phân loại trong đợt này. Trứng tráng sợi có ở 2/3 nguồn nhưng định lượng lệch nhau 3 lần — ghi nhận, không bổ sung.] [QD-06/PX-25 — chủ dự án chốt quy ước họ nguồn 2026-11-02] HẠ MỨC 3 → 'Mức 2 (có note)'. Đếm lại theo quy ước mới: 3 nguồn công thức chỉ thuộc 2 họ độc lập (Điện Máy XANH ×2 bài — tính tối đa 1 nguồn cổng; bepxua.vn) → cổng Mức 2 thường không còn đạt, kéo theo mất Mức 3. Toàn bộ dữ kiện nguồn giữ nguyên trong recipe_sources (không xoá bài nào); món đủ điều kiện đường nâng bù (phủ tính vị 93.56% ≥ 60% + có ghi chú văn hoá) nên giữ Mức 2 dạng có note thay vì hạ Mức 1. Nâng lại Mức 2 thường/Mức 3 khi bổ sung ≥1 nguồn công thức thuộc họ độc lập mới đã mở kiểm chứng.",
   "cultural_note": {
     "text": "Phở cuốn là món ăn trẻ tuổi của Hà Nội, ra đời khoảng năm 2000 tại làng Ngũ Xã bên hồ Trúc Bạch, vùng đất xưa nổi danh với nghề đúc đồng. Chuyện kể rằng trong một ngày hè nóng bức, bà Vũ Thị Chinh lấy bánh phở còn thừa cuộn thịt bò và rau mùi cho khách đỡ ngán phở nước, kèm bát nước chấm chua ngọt như chấm nem; món ăn được khách khen ngợi và được bà đặt tên là \"phở cuốn\". Hơn hai mươi năm sau, phở cuốn đã trở thành món quen của phố phường Hà Nội.",
     "sources": [
