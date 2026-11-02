@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 2,
+  "completeness_level": 3,
   "meal_slots": [
     {
       "slot": "trua",
@@ -132,6 +132,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt DISH-004 đợt 2 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-005 đợt 5: thử nâng Mức 2 — GIỮ Mức 1: lần mở nguồn đầu tiên bị chặn 429 — dừng ngay theo kỷ luật, chưa mở được nguồn nào. Thử lại khi hết chặn.] [LV2-006 đợt 6: nâng Mức 2 — thử lại sau khi đợt 5 bị chặn 429. Định lượng: ghẹ 120 → 220g và sợi bánh canh 90 → 200g theo 2 nguồn có định lượng đã mở (tổng nguyên liệu sau sửa khớp khẩu phần 520g của file). Ghi nhận chưa xử lý: dầu điều, sả, hành tím xuất hiện ở nguồn nhưng không có căn cứ gram chắc trong nguồn — không bổ sung, chờ nguồn định lượng rõ.]",
+  "cultural_note": {
+    "text": "Bánh canh ghẹ là món ăn đặc trưng của thành phố biển Vũng Tàu, với nước dùng giữ lại từ nước luộc ghẹ nên có vị ngọt thanh của biển. Về nguồn gốc món ăn có nhiều thuyết: có thuyết cho rằng người miền Trung di cư mang bánh canh vào Vũng Tàu từ thế kỷ 19 rồi kết hợp với ghẹ địa phương; thuyết khác cho rằng đây là sáng tạo của người Vũng Tàu từ những con ghẹ rớt lại trên tàu cá. Trong các quán nổi tiếng của thành phố, quán Bà Ba ở đường Phan Bội Châu thường được nhắc tới đầu tiên.",
+    "sources": [
+      {
+        "ref": "Đi Vũng Tàu — Bánh canh ghẹ Vũng Tàu, món ngon đặc trưng của thành phố biển",
+        "url": "https://divungtau.com/banh-canh-ghe-vung-tau/"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

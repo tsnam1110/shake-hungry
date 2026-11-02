@@ -101,6 +101,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 15 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).] [LV2-008 đợt 8: Đối chiếu 3 nguồn đã mở đọc (Điện Máy XANH — 4 biến thể/3 người, YummyDay — mẻ 500 g, Tripi — 3 người). Sửa ca-bong 180→140 g: ĐMX thường 133 g/người, ĐMX tỏi ớt 133 g/người, Tripi 133 g/người đồng thuận; ĐMX lá lốt 167 g/người là điểm cao nhất — file cũ 180 g vượt cả dải. Giữ bot-mi 15 g: đây là phần bột bám thực tế sau khi xốc và rũ thừa (lượng bột chuẩn bị theo nguồn 25-33 g/người nhưng phần lớn rơi lại trong hộp); ĐMX lá lốt dùng tổng ~38 g bột (mì + chiên giòn) cho 500 g cá ≈ 11 g/140 g cá — 15 g nằm trong dải hợp lý. Giữ muoi 1 g (Tripi ~0.8 g/người) và hat-tieu-den 0.5 g (Tripi ~0.7 g/người; YummyDay 1/3 muỗng cà phê cho cả mẻ 500 g). Phương án A: file đã bỏ dòng dau-an từ đợt QA-002 (dầu chiên chính do engine mô hình hoá); nguyên liệu ca-bong có oil_absorption_pct = 9% — đạt quy ước, không cần thêm dòng dầu. serving_grams 200→160 theo tổng mới 156.5 g. Giữ method chien-ngap-dau và region vn-south, không nguồn nào tranh chấp.]",
+  "cultural_note": {
+    "text": "Cá bống dừa là loài cá sông nước quen thuộc ở Bến Tre, nơi trẻ con câu cá bằng mồi trùn buộc trên ngọn lá dừa nước. Người Bến Tre dùng cá bống dừa để nấu canh, kho nước cốt dừa hay chiên — cách nào cũng 'hết sẩy' theo lời kể của người dân địa phương. Loài cá này thuộc hàng 'nhỏ con', con to cũng chỉ hơn ngón chân cái người lớn một chút.",
+    "sources": [
+      {
+        "ref": "Thanh Niên — Nhớ thương đọt mì chấm cá bống dừa kho",
+        "url": "https://thanhnien.vn/nho-thuong-dot-mi-cham-ca-bong-dua-kho-185222358.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

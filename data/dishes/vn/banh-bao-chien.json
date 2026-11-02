@@ -134,6 +134,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt) [Đính chính 2026-10-31 — Phương án A/QA-002: bỏ dòng dau-an 8 g. Dầu này chỉ dùng cho bước chiên chính; phần dầu hấp thụ đã được engine mô hình hoá theo CALC-004 nên kê cả hai là tính dầu hai lần (QA-002 lần 1: nhóm chiên bias +39,8%).] [LV2-012 đợt vét] Đạt Mức 2: 3 họ độc lập đã mở đọc (BlueStone/Cô Ba Bình Dương, VietNamNet–ĐMX, PasGo) cho đúng bánh bao chiên nhân thịt–trứng cút. Quy về chiếc 110g của file (hai lô mini 58–66g/chiếc được nhân hệ số theo tổng khối lượng lô): bột mì 55→30, thịt xay 30→20, sữa 8→18 (2 họ đồng thuận, lệch >30%); thêm men-no 0,5g (3/3 họ có men, file thiếu hẳn). Đường 4g, trứng cút 12g (1 quả/chiếc), mộc nhĩ 4g, hành tím 5g nằm trong dải các họ nên giữ. Không kê dau-an cho bước chiên chính theo quy ước QA-002/CALC-004 (dầu hấp thụ do engine mô hình hoá); dầu phi/xào nhân phụ không tách dòng riêng trong đợt này.",
+  "cultural_note": {
+    "text": "Bánh bao là loại bánh bột mì có nhân của ẩm thực Trung Hoa, được hấp chín, chiên hoặc nướng trước khi ăn, và thường được dùng làm bữa sáng. Tương truyền món bánh gắn với giai thoại Gia Cát Lượng thời Tam Quốc làm bánh hình đầu người thay cho vật hiến tế khi qua sông. Bánh bao chiên là biến thể có lớp vỏ vàng giòn, nhân thịt xay, mộc nhĩ và trứng cút như cách làm phổ biến ở Việt Nam.",
+    "sources": [
+      {
+        "ref": "Wikipedia — Bánh bao",
+        "url": "https://vi.wikipedia.org/wiki/B%C3%A1nh_bao"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "kho",
-  "completeness_level": 2,
+  "completeness_level": 3,
   "meal_slots": [
     {
       "slot": "trua",
@@ -133,6 +133,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): đã đối chiếu 3 nguồn công thức đã mở kiểm chứng (Knorr Việt Nam, Cookpad Huỳnh Uyên Vũ, sách dạy nấu ăn). Hai trong ba nguồn không ghi số khẩu phần nên không quy đổi định lượng mỗi khẩu phần một cách tin cậy; định lượng theo mẻ (300–500g gà) không mâu thuẫn với file nên giữ nguyên mọi quantity. Gừng 15g nằm trong khoảng suy từ các nguồn (1 muỗng canh gừng sợi đến 1 nhánh gừng mỗi mẻ). recipe_steps viết lại hoàn toàn thành 6 bước. Không sửa phân loại.",
+  "cultural_note": {
+    "text": "Gà kho gừng thuộc họ món kho — kỹ thuật nấu ăn Việt hình thành từ những ngày khốn khó, khi người nông dân kho mặn để ăn dè được nhiều cơm. Trong món kho, gừng vừa tạo mùi thơm ấm vừa át mùi tanh của thịt gà. Ngày nay, kho là cách nấu có mặt trong hầu như mọi gia đình Việt, và gà kho gừng là một trong những biến thể quen thuộc nhất của bữa cơm nhà.",
+    "sources": [
+      {
+        "ref": "Wikipedia (EN) — Gà kho",
+        "url": "https://en.wikipedia.org/wiki/Ga_kho"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

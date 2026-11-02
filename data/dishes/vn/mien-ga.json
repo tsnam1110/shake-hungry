@@ -145,6 +145,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 3 nguồn. Phân xử định lượng: mien-dong 60 → 75 g — hai nguồn đồng thuận tăng (75 g và 75–100 g/khẩu phần); gà 90 g thịt có da giữ nguyên (lượng nguyên con của nguồn gồm xương + phần ninh nước dùng, phần thịt bày tô của file nằm trong khoảng hợp lý); nấm hương 8 g giữ (hai nguồn lệch ngược chiều quanh file). Bất thường ghi nhận: hành tây + hành khô/hành tím nướng cho nước dùng có ở 3/3 nguồn, file chỉ có gừng; mộc nhĩ chỉ 1 nguồn; măng khô của một nguồn là biến thể miến măng gà riêng, không gộp vào món này.",
+  "cultural_note": {
+    "text": "Trong mâm cỗ Tết truyền thống miền Bắc — gồm bốn bát, bốn đĩa, được cho là biểu tượng của 'tứ thời' hay 'tứ phương' — bát miến dong là một trong bốn bát không thể thiếu, bên cạnh bát chân giò hầm măng, bát bóng thả và bát mọc nấm thả. Miến gà vì thế gắn với không khí cỗ bàn ngày Tết, cùng đĩa thịt gà luộc trong cùng một mâm cỗ.",
+    "sources": [
+      {
+        "ref": "Bảo tàng Lịch sử Quốc gia — Mâm cỗ Tết ba miền",
+        "url": "https://baotanglichsu.vn/vi/Articles/3096/68458/mam-co-tet-ba-mien.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

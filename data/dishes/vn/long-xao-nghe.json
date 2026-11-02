@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "xao",
-  "completeness_level": 2,
+  "completeness_level": 3,
   "meal_slots": [
     {
       "slot": "trua",
@@ -149,6 +149,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. [LV2-005 đợt 5: thử nâng Mức 2 — GIỮ Mức 1: đã mở được 1 nguồn (Điện Máy XANH) thì lần mở thứ hai bị chặn 429 — chưa đủ 3 nguồn đã mở. Thử lại khi hết chặn.] [LV2-006 đợt 6: GIỮ Mức 1 — bị chặn 429 ngay ở nguồn thứ nhất. Quan sát CHƯA kiểm chứng (không dùng làm căn cứ sửa): trường phái Quảng dùng nghệ tươi và lá hẹ — chờ mở được nguồn ở đợt sau.] [LV2-007 đợt 7: nâng Mức 2 — 3 nguồn độc lập đã mở; kiểm chứng dứt điểm hai quan sát chưa kiểm chứng của các đợt trước: THAY bột nghệ 3g → nghệ tươi 10g (3/3 nguồn dùng nghệ tươi) và BỔ SUNG lá hẹ 25g — rau định danh xứ Quảng mà file thiếu hẳn. SỬA lòng 150→120g, hành tây 50→30g, hành tím 5→10g; BỔ SUNG tỏi 5g, ớt tươi 3g, đường 3g; BỎ hành lá 5g (0/3 nguồn — vai trò rau xanh thuộc về hẹ). Củ nén chỉ 1 nguồn có — chưa đủ ngưỡng bổ sung. Tổng sau vá vẫn 220g.]",
+  "cultural_note": {
+    "text": "Lòng xào nghệ thuộc họ bún nghệ miền Trung: lòng heo làm sạch, xào cùng nghệ tươi giã nhuyễn cho màu vàng ươm, ăn với bún tươi và lá hẹ. Sách dạy nấu ăn số hoá mô tả đây là món 'dân dã mà ngon, lạ miệng, lại đậm đà chất cố đô', với vị cay nồng của ớt được xem là nét cực kỳ đặc trưng trong ẩm thực Huế.",
+    "sources": [
+      {
+        "ref": "Thư viện số — Lòng heo xào nghệ, bún tươi (sách dạy nấu ăn số hoá)",
+        "url": "https://thuvienso.com.vn/upload/library/511696/preview/long-heo-xao-nghe-bun-tuoi-511696.pdf"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

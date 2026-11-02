@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "hap",
-  "completeness_level": 2,
+  "completeness_level": 3,
   "meal_slots": [
     {
       "slot": "an-vat",
@@ -145,6 +145,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-006 đợt 6: nâng Mức 2 — đậu xanh 25 → 35g, thịt 20 → 35g, tôm sú 15 → 35g (cả ba cùng tỉ lệ 0,5 so với bột nếp ở các nguồn); bổ sung mộc nhĩ khô 10g (2/3 nguồn — nấm mèo chính là slug moc-nhi-kho). Thịt giữ slug của file dù nguồn nghiêng thịt nạc — ghi nhận.]",
+  "cultural_note": {
+    "text": "Bánh ít trần thuộc họ bánh ít của xứ Huế; họ hàng gần của nó là ram ít — chiếc bánh ít trần đặt trên đế bánh ram chiên giòn — với nhân tôm chấy, mỡ hành, ăn kèm nước mắm pha tỏi ớt đường. Ram ít gắn với vùng đầm phá Tam Giang – Cầu Hai, tương truyền từng xuất hiện trong các bữa tiệc thời Nguyễn và ngày nay được bán ở các chợ Đông Ba, Tây Lộc, An Cựu.",
+    "sources": [
+      {
+        "ref": "Vietnam.vn — Đất thừa xứ Huế bây giờ vẫn còn ram ít bên bờ Hương Giang",
+        "url": "https://www.vietnam.vn/da-thua-xu-hue-bay-gio-van-con-ram-it-ben-bo-huong-giang"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

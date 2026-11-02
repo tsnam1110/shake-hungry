@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 2,
+  "completeness_level": 3,
   "meal_slots": [
     {
       "slot": "an-vat",
@@ -135,6 +135,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-004 đợt 2 (lô bánh dân gian) mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] Đạt Mức 2: 4 họ độc lập đã mở đọc (Dạy Làm Bánh Ngon, Cookpad Le Minh Trang, Học Làm Món Ngon, I Nấu Ăn Ngon), quy về đĩa 180g. Sửa: bot-gao 55->28, bot-nang 10->22, nuoc-cot-dua 30->45, duong-thot-not 12->17; thêm duong-trang 20g (3/4 họ có trong phần bánh). Dòng sửa/thêm giữ source=llm_suggested, confidence=low.",
+  "cultural_note": {
+    "text": "Bánh đúc vốn là món quà quê miền Bắc; khi vào Nam, người làm bánh biến tấu thành bánh đúc lá dứa ngọt — còn gọi là bánh đúc gân — với màu xanh lá dứa đẹp mắt. Bánh được ăn cùng nước cốt dừa hoặc nước đường thắng, là món ăn vặt quen thuộc ở miền Tây.",
+    "sources": [
+      {
+        "ref": "Báo Thái Bình — Say lòng với 7 món bánh miền Tây xanh màu lá dứa",
+        "url": "https://thaibinh.baohungyen.vn/tin-tuc/118181/say-long-voi-7-mon-banh-mien-tay-xanh-mau-la-dua-sieu-hap-dan"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

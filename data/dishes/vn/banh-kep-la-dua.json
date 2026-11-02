@@ -18,7 +18,9 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nuong",
-  "completeness_level": 1,
+  "completeness_level": 2,
+  "level_basis": "tcm_compensation",
+  "level_note": "Chưa đạt cổng Mức 2 thường vì công thức còn ở dạng nháp llm_suggested (DISH-004 đợt 2), chưa đối chiếu được nguồn công thức đạt chuẩn cho đúng món. Được nâng theo đường nâng bù Mức 3 (quyết định chủ dự án 2026-11-01): độ phủ tính vị 60.6% ≥ 60% và đã có ghi chú văn hoá (VN-001 đợt bổ sung T-06, 2026-11-02).",
   "meal_slots": [
     {
       "slot": "an-vat",
@@ -94,6 +96,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-004 đợt 2 (lô bánh dân gian) mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] Giữ Mức 1: nguồn định lượng chia 2 biến thể — waffle dày bột năng chủ đạo (3 họ độc lập đã mở: SugarYums, BunBoBae, Hungry Huy) và kẹp mỏng giòn kiểu Việt (chỉ 1 họ sao chép, trang mở kiểm chứng gặp 429). File chỉ dùng bột mì, thiếu bột năng/bột gạo của cả hai biến thể, cần chủ dự án chốt biến thể (kẹp mỏng đường phố VN hay waffle dày) trước khi biên soạn lại.",
+  "cultural_note": {
+    "text": "Bánh kẹp lá dứa là món bánh waffle kiểu Việt: bột pha nước cốt dừa và lá dứa tạo màu xanh cùng mùi thơm đặc trưng, nướng trong khuôn kẹp gang. Ở Sài Gòn, nhiều người còn nhớ hình ảnh các bà dùng khuôn kẹp đặt trên bếp than, lật trở từng chiếc bánh thơm lừng. Món bánh cũng gắn với không khí chợ đêm Tết ở các chùa, nơi hàng bánh kẹp luôn đông khách.",
+    "sources": [
+      {
+        "ref": "Seattle Magazine — A Pandan Treat",
+        "url": "https://seattlemag.com/food-and-culture/a-pandan-treat/"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

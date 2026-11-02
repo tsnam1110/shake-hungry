@@ -134,6 +134,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] GIỮ Mức 1 — mã BIEN-THE: đã mở 2 họ (Điện Máy XANH, Cookpad Minh Ngoc). Nhân dồi tồn tại ít nhất 3 biến thể rõ rệt: (a) nhân nội tạng kiểu Bắc (lòng già, cuống họng, phổi, mỡ, tiết pha nước 1:2 — ĐMX bản luộc); (b) nhân thịt xay + lạc + nấm mèo, không tiết, hấp (ĐMX bản hấp); (c) nhân thịt ba chỉ + lạc + tiết, lòng non, luộc (Cookpad — khớp file nhất nhưng không định lượng). File là bản lai (a)+(b) nên không họ nào đối chiếu được toàn bộ; cần chủ dự án chốt biến thể chuẩn của kho cho món 'dồi' trước khi nâng.",
+  "cultural_note": {
+    "text": "Dồi là món lòng lợn nhồi tiết cùng thịt, lạc rang và rau thơm như rau răm, hấp hoặc luộc chín rồi có thể chiên vàng. Cách làm chia hai trường phái rõ rệt: miền Bắc dùng lòng già với nhân có sụn, mỡ và đỗ xanh rang, thường chỉ luộc; miền Nam dùng ruột non với thịt vai và huyết chín xắt hạt lựu, luộc xong đem chiên. Dồi thường xuất hiện trong đĩa lòng lợn, ăn kèm mắm tôm và rau thơm.",
+    "sources": [
+      {
+        "ref": "Wikipedia — Dồi",
+        "url": "https://vi.wikipedia.org/wiki/Dồi"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

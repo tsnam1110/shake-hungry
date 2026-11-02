@@ -25,7 +25,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "luoc",
-  "completeness_level": 2,
+  "completeness_level": 3,
   "meal_slots": [
     {
       "slot": "trua",
@@ -109,6 +109,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nâng Mức 2 đợt 1 (2026-10-31): Đối chiếu 3 nguồn báo/biên tập đã mở kiểm chứng (xem recipe_sources): 1 nguồn có định lượng mẻ đầy đủ (500g lòng non), 2 nguồn còn lại là bài kỹ thuật luộc lòng của Điện Máy XANH và VietnamNet — cả ba thống nhất quy trình sơ chế và thời gian luộc. Định lượng: giữ nguyên — mẻ 500g của nguồn thường dùng cho 2–3 người ăn, tương thích với 200g/khẩu phần trong file. Ghi nhận bất thường: nước chấm ăn kèm (mắm tôm hoặc nước mắm gừng) được nhắc trong bước nấu và cả 3 nguồn nhưng file chưa có dòng nguyên liệu riêng cho nước chấm — không tự thêm, chờ chủ dự án quyết. Bước nấu viết lại 7 bước.",
+  "cultural_note": {
+    "text": "Lòng lợn luộc là món bình dân phổ biến khắp Việt Nam, gồm lòng non, lòng già và các phủ tạng như tim, gan, dạ dày luộc chín, thái bày lên đĩa. Trong ẩm thực Việt, lòng lợn thường đi thành bộ ba chuyên biệt: tiết canh, lòng lợn và cháo lòng nấu từ chính nước luộc lòng. Đĩa lòng thường chấm mắm tôm đánh sủi bọt, ăn kèm rau húng và các loại rau thơm.",
+    "sources": [
+      {
+        "ref": "Wikipedia — Lòng lợn",
+        "url": "https://vi.wikipedia.org/wiki/L%C3%B2ng_l%E1%BB%A3n"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

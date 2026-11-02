@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 2,
+  "completeness_level": 3,
   "meal_slots": [
     {
       "slot": "trua",
@@ -122,6 +122,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 1 (lấp ô trống canh + rau) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món THAY cho canh cá dìa nấu thơm trong kế hoạch: cá dìa chưa tra được số đạt chuẩn nên món gốc hoãn (xem file nguyên liệu ca-dia). [LV2-006 đợt 6: GIỮ Mức 1 — bị chặn 429 ở nguồn thứ hai; nguồn Bách Hoá Xanh mở được nhưng trang không hiển thị định lượng gram. Vùng vn-central của file chưa được nguồn nào khẳng định — ghi nhận mở.] [LV2-007 đợt 7: nâng Mức 2 — thử lại sau 429 đợt 6: gom 3 họ nguồn đầy đủ + 2 nguồn không định lượng. Lưu ý hồ sơ: định lượng gram chỉ có ở 2 họ nguồn. BỎ gừng 2g — 0/4 nguồn đã mở dùng gừng cho món này (dòng llm_suggested không có cơ sở nguồn). BỔ SUNG thì là 2g (3/4 nguồn — rau thơm định danh của món) và hành tím 5g (3/4 nguồn phi hành xào hến). GIỮ bầu 120g (1 nguồn khớp ~125g) và hến 60g (quy đổi thịt từ nguồn nguyên vỏ ủng hộ 62–75g). GIỮ vùng vn-central với lý do mới: món phân bố cả miền Bắc và Bắc Trung Bộ, nguồn vùng rõ nhất gắn với Nghệ An (thuộc vn-central trong hệ phân vùng của kho); thì là là dấu hiệu Bắc/Bắc Trung Bộ.]",
+  "cultural_note": {
+    "text": "Mỗi khi mùa hè về, canh hến là món khoái khẩu của nhiều người, và trong các món canh hến thì canh bầu nấu hến được ưa thích hơn cả. Người nấu chọn bầu sao — loại bầu thon dài, vỏ xanh lốm đốm trắng — theo câu dân gian 'Bầu sao nấu nước ao cũng ngọt'. Ruột hến sau khi đãi có thể xào riêng để ăn chan với canh hoặc đổ vào nấu chung; thêm vài quả cà pháo giòn tan ăn kèm là trọn bữa cơm hè dân dã.",
+    "sources": [
+      {
+        "ref": "Sức khỏe & Đời sống — Hương vị quê nhà: Canh bầu nấu hến",
+        "url": "https://giadinh.suckhoedoisong.vn/huong-vi-que-nha-canh-bau-nau-hen-172100412032855222.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -841,6 +841,34 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > (719 assertions; lượt đầu dưới tải song song cho 24 đỏ, chạy lại nguyên
 > trạng xanh tuyệt đối — xem task file). Chi tiết:
 > [QD-ADJUDICATE-1](docs/05-tasks/tasks/QD-ADJUDICATE-1.md).
+>
+> ## 📗 Bổ sung lần 45, 2026-11-02 — T-06: ghi chú văn hoá cho món còn thiếu + TCM-PROMOTE-004
+>
+> **VN-001 đợt bổ sung T-06:** phạm vi đo lại tại HEAD đầu đợt: 260 món
+> chưa có `cultural_note` (216 Mức 2 thường + 44 Mức 1); trừ 24 slug
+> thuộc phạm vi QD đang phân xử, nghiên cứu 236 món theo cụm — **viết
+> được 32 ghi chú** (chuẩn VN-001 nguyên vẹn: nguồn biên tập mở kiểm
+> chứng tận nơi, census 100% URL nguồn mới, 0 vi phạm khung y tế); 10
+> bản thảo bị loại ở phân xử (lệch định danh/biến thể), 4 món rút vì
+> nguồn không mở lại được ở census; toàn kho **426/654 món có ghi chú**,
+> còn chờ 228 (182 Mức 2 thường + 46 Mức 1, phân loại A/B/C giữ nguyên
+> + phán quyết mới ghi trong VN-001). **TCM-PROMOTE-004 (quét cổng
+> toàn kho):** 20 món lên **Mức 3** nhờ ghi chú mới (phủ 68,32–100%) +
+> 6 món của T-04 đủ cổng từ khi về Mức 2 thường (`banh-khoai`,
+> `khoai-lang-luoc-trung`, `rau-den-luoc`, `rau-lang-luoc`,
+> `mam-ba-khia` phủ 100/94,29%, `banh-duc-nong` 61,11%) → tổng **26
+> món lên Mức 3**; nâng bù 1 món (`banh-kep-la-dua`, phủ 60,61%);
+> cổng sạch hai chiều (0 ứng viên sót cả hai đường). **Bức tranh mức
+> sau khi land lên HEAD `5044696` (QD-ADJUDICATE-1/QD-15/DOCKER-001
+> land trong lúc đợt chạy; trạng thái gốc 38 file đã đối chiếu lại
+> với HEAD, diff chỉ chứa thay đổi của đợt): 209 Mức 3 · 251 Mức 2
+> thường · 119 Mức 2 (có note) · 75 Mức 1 = 654.** Kiểm chứng (worktree
+> sạch + DB riêng `shake_hungry_t06`): validate **0 🔴** (23 🟡 đã
+> biết, 3.344 bản ghi), **Pest 177/177** (719 assertions;
+> ExportStabilityTest 3/3 — lượt đầu có đỏ do thiếu `public/build` ở
+> worktree + contention 3 phiên song song, chạy lại xanh tuyệt đối).
+> Chi tiết: [TCM-PROMOTE-004](docs/05-tasks/tasks/TCM-PROMOTE-004.md),
+> mục T-06 trong [VN-001](docs/05-tasks/tasks/VN-001.md).
 **Trạng thái thực tế, kiểm ngày 2026-10-31 (đã chạy lại toàn bộ lệnh kiểm chứng):**
 
 | Hạng mục | Thực tế | Kiểm bằng |

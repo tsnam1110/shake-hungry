@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nuong",
-  "completeness_level": 2,
+  "completeness_level": 3,
   "meal_slots": [
     {
       "slot": "sang",
@@ -211,6 +211,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [LV2-009 đợt 9: GIỮ Mức 1 — tra cứu bị chặn 429. Đã kiểm chứng file sạch chay (dùng nuoc-tuong, không trứng/sữa/thịt). LƯU Ý cho đợt sau: không ánh xạ 'nước mắm chay' của nguồn sang nuoc-mam-truyen-thong/nuoc-mam-cong-nghiep (kho không có slug nước mắm chay) — giữ nuoc-tuong. Ứng viên nguồn: Hướng Nghiệp Á Âu (cơm tấm sườn bì chả chay), Bluestone.] [LV2-010 đợt 10: ĐẠT Mức 2 — 3 họ nguồn đã mở (Hướng Nghiệp Á Âu, Bluestone, Cookpad Shan Wu; đối chiếu thêm họ Natha qua bản đăng lại). Thuần chay xác nhận: chả 'trứng' chay = đậu hũ + bột nghệ, không trứng thật ở mọi họ; không thêm mật ong của 2 họ để giữ thuần chay. Thêm suon-chay 15 g + thinh-gao 5 g (4/4 họ có, file thiếu); giữ nguyên mọi định lượng cũ vì các họ bất đồng >30%.]",
+  "cultural_note": {
+    "text": "Cơm tấm xuất thân là món ăn của những người lao động nghèo ở Sài Gòn: phu gạo ở chành Bình Đông quét những hạt tấm rơi vãi quanh máy xay xát để nấu ăn. Từ đĩa cơm chan nước mắm, mỡ hành, cơm tấm dần có thêm sườn nướng, bì, chả trứng và trở thành một phần của văn hoá Sài Gòn. Ở các quán cơm chay, nước mắm được thay bằng xì dầu — đó là nền tảng của đĩa cơm tấm chay.",
+    "sources": [
+      {
+        "ref": "Wikipedia — Cơm tấm",
+        "url": "https://vi.wikipedia.org/wiki/Cơm_tấm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

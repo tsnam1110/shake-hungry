@@ -231,6 +231,20 @@ Mức 2 thường · 118 Mức 2 (có note) · 76 Mức 1 = 654**; validate 0 �
 đối chiếu calo cách ly 0 món ngoài phạm vi đổi số. Chi tiết:
 [tasks/QD-ADJUDICATE-1.md](./tasks/QD-ADJUDICATE-1.md).
 
+**T-06 — GHI CHÚ VĂN HOÁ CHO MÓN CÒN THIẾU + TCM-PROMOTE-004 ĐÃ XONG
+(2026-11-02):** VN-001 đợt bổ sung: đo lại 260 món chưa có ghi chú
+(216 Mức 2 thường + 44 Mức 1), nghiên cứu 236 món ngoài phạm vi QD
+theo cụm → **viết 32 ghi chú** đạt chuẩn (census 100% URL nguồn mới,
+0 vi phạm khung y tế); 10 bản thảo bị loại, 4 món rút vì nguồn không
+mở lại được; toàn kho **426/654** món có ghi chú, còn chờ 228.
+Quét cổng toàn kho (TCM-PROMOTE-004): **26 món lên Mức 3** (20 nhờ
+ghi chú mới + 6 món T-04 đủ cổng từ trước) + **nâng bù 1 món**
+(`banh-kep-la-dua`); cổng sạch hai chiều. **Bức tranh mức: 209 Mức 3 ·
+251 Mức 2 thường · 119 Mức 2 (có note) · 75 Mức 1 = 654**; validate
+0 🔴; Pest 177/177 (worktree sạch, DB kiểm chứng riêng). Chi tiết:
+[tasks/VN-001.md](./tasks/VN-001.md) mục T-06 +
+[tasks/TCM-PROMOTE-004.md](./tasks/TCM-PROMOTE-004.md).
+
 **AUDIT-004 — KIỂM TRA ĐỘC LẬP ĐỘ CHÍNH XÁC GIÁ TRỊ TÍNH/VỊ/NGŨ HÀNH
 ĐÃ XONG (2026-11-01, chỉ đọc — không sửa dữ liệu/code):** tái suy dẫn
 **mù** 227 nguyên liệu (9 agent độc lập chỉ nhận định danh; lô thịt tra
@@ -639,6 +653,8 @@ kiểm chứng TEST-002**; `migrate:fresh --seed` dựng lại đúng toàn bộ
 | [TCM-PROMOTE-002](./tasks/TCM-PROMOTE-002.md) | Gán **Mức 3** cho món Mức 2 thường đủ cổng + nâng bù đợt 2 cho 27 món Mức 1 mới đủ điều kiện | Dữ liệu | ✅ (2026-11-01) — Phần A: **187 món** Mức 2 thường (phủ ≥60% + `cultural_note`, đối chiếu VN-001 khớp tuyệt đối) → `completeness_level=3`; món "Mức 2 (có note)" không gán Mức 3 theo nguyên tắc nền Mức 2 thường; grep toàn bộ nơi dùng mức: **0 dòng code phải sửa** (`levelLabel` động, bộ lọc admin đã có Mức 3), kiểm hiển thị thật API/trang món trên DB kiểm chứng. Phần B: **27 món** Mức 1 mới đủ 2 tiêu chí → nâng bù `tcm_compensation` + `level_note` riêng từng món (11 thiếu nguồn · 7 biến thể/chờ quyết · 5 chặn 429 · 2 link rot AUDIT-FIX · 1 trần nguyên liệu · 1 không có công thức web); **toàn kho sau đợt: 187 Mức 3 + 285 Mức 2 thường + 114 Mức 2 (có note) + 68 Mức 1**, khớp 3 cách; validate 0 🔴 (24 🟡, +2 V9 giải thích được), Pest 162/162, ExportStabilityTest đạt | TCM-000, TCM-001, VN-001, TCM-PROMOTE-001 | 2026-11-01 |
 | [T-02-NOTES-A41-REGION](./tasks/T-02-NOTES-A41-REGION.md) | Giải toả 7 file món bị giữ (media) + ghi chú văn hoá 6/7 + A4.1 `dau-bap-xao-toi` (T-03) + `region_code` `mam-ruot-an-giang` (T-13) | Dữ liệu | ✅ (2026-11-02) — media `9ea4ad3`; ghi chú `62e48f5` (6 viết, `dau-bap-xao-toi` chờ nhóm A); A4.1 `555f04c` (kcal 101,00–149,20 → 98,50–147,20); region `1f5d9a1`; validate 0 🔴 trên DB kiểm chứng riêng | VN-001, LV2-012 | 2026-11-02 |
 | [TCM-PROMOTE-003](./tasks/TCM-PROMOTE-003.md) | Quét lại cổng Mức 3 + nâng bù toàn kho sau T-02 | Dữ liệu | ✅ (2026-11-02) — 6 món ghi chú mới (phủ 81,74–100%) + `xoi-man` (66,01%, đủ cổng nhờ T-05 `fe876aa`) → Mức 3; nâng bù 0 món mới; **toàn kho 194 Mức 3 · 279 Mức 2 thường · 113 Mức 2 (có note) · 68 Mức 1**, cổng sạch hai chiều, validate 0 🔴 | TCM-PROMOTE-002, VN-001, T-02 | 2026-11-02 |
+| T-06 (trong [VN-001](./tasks/VN-001.md)) | Tìm ghi chú văn hoá cho toàn bộ món còn thiếu (chuẩn VN-001 nguyên vẹn) | Dữ liệu | ✅ (2026-11-02) — đo lại 260 món chưa ghi chú, nghiên cứu 236 món ngoài phạm vi QD → **viết 32 ghi chú** (census 100% URL nguồn mới, 0 vi phạm khung y tế; 10 bản thảo bị loại, 4 món rút vì nguồn không mở lại được); toàn kho **426/654** có ghi chú, còn chờ 228 (182 Mức 2 thường + 46 Mức 1) | VN-001, TCM-PROMOTE-003 | 2026-11-02 |
+| [TCM-PROMOTE-004](./tasks/TCM-PROMOTE-004.md) | Quét lại cổng Mức 3 + nâng bù toàn kho sau T-06 | Dữ liệu | ✅ (2026-11-02) — **26 món lên Mức 3** (20 nhờ ghi chú T-06, phủ 68,32–100%; 6 món T-04 đủ cổng từ khi về Mức 2 thường) + **nâng bù 1 món** (`banh-kep-la-dua`, 60,61%); cổng sạch hai chiều; **toàn kho sau land: 209 Mức 3 · 251 Mức 2 thường · 119 Mức 2 (có note) · 75 Mức 1**; validate 0 🔴, Pest 177/177 | TCM-PROMOTE-003, VN-001, T-04, T-06 | 2026-11-02 |
 
 ---
 

@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 2,
+  "completeness_level": 3,
   "meal_slots": [
     {
       "slot": "toi",
@@ -202,6 +202,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-009 đợt 9: Nâng Mức 2 — mở kiểm chứng 3 họ nguồn, đều là bản thập cẩm (Điện Máy XANH, Tripi, Bếp Xưa). Thêm khoai-mon 40 g (có ở 3/3 họ — điểm đồng thuận cao nhất của món; lượng bất đồng 38–125 g/khẩu phần nên lấy đầu thấp của ĐMX). GIỮ định lượng thịt (bap-bo 80 g, thit-bo-nam 60 g): nguồn bất đồng >30% theo từng phần thịt và tổng lượng dao động 120–400 g/khẩu phần tuỳ bản nhẹ/thập cẩm — chờ chủ dự án quyết định vị lại món, không tự nâng ồ ạt. Trần ghi nhận: gân bò (~86–100 g/khẩu phần ở 3/3 họ), sách bò, bò viên, ba chỉ bò đều chưa có slug trong kho (LƯU Ý gan-bo là GAN, tuyệt đối không ánh xạ cho gân) — đưa vào hàng đợi biên soạn nguyên liệu. Nước chấm chao có ở 2/3 họ nhưng là nước chấm riêng — không thêm dòng (liên quan câu hỏi mở Q10 nhóm chấm). Chuẩn hoá tên 'Lẩu bò'.] [LV2-010 Phần A: bổ sung 4 dòng nội tạng/bò viên chờ từ LV2-009 — gân bò 100g (3/3 họ đợt 9; slug gan-bo-tendon null + hồ sơ nên vào missing, món giữ Mức 2 theo tiền lệ nguyên liệu phụ null đợt 9 — gân là thành phần, không phải định danh duy nhất của lẩu bò), bò viên 50g (2/3 họ, 200g/mẻ ÷ 4), sách bò 86g (1/3 họ Tripi — đã ghi rõ 1 họ), ba chỉ bò 100g (1/3 họ Điện Máy XANH — đã ghi rõ 1 họ).]",
+  "cultural_note": {
+    "text": "Ở Sài Gòn, lẩu bò nồi đất nấu trên bếp than là hình ảnh ẩm thực được nhiều người nhớ tới. Quán lẩu bò của bà Sáu trên đường Cách Mạng Tháng Tám (quận 3) bán từ năm 1980, mỗi ngày hơn 100 nồi; bà chủ chia sẻ bà chọn nồi đất vì thích ngắm cảnh mọi người quây quần bên bếp than ấm. Nồi đất tỏa nhiệt từ từ cũng giúp thịt bò mềm mà không dai.",
+    "sources": [
+      {
+        "ref": "Thanh Niên — Quán lẩu bò nồi đất 40 năm, bán hơn 100 nồi/ngày",
+        "url": "https://thanhnien.vn/quan-lau-bo-noi-dat-40-nam-ban-hon-100-noingay-nuoi-con-chau-thanh-tai-1851008296.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

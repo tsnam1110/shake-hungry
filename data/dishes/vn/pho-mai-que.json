@@ -98,6 +98,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-012 đợt vét] GIỮ Mức 1 (BIEN-THE): đã mở 3 họ (họ bộ số 300/100/100 sao chép rộng, Beemart bột ướt, Eva áo 3 lớp) nhưng định lượng áo bột phân kỳ ~2 lần giữa các biến thể, không đạt đồng thuận ≥2 họ để quy về 1 phần 5 que/120g; cần chủ dự án chốt biến thể chuẩn (áo khô mozzarella) trước khi nâng.",
+  "cultural_note": {
+    "text": "Phô mai que là món ăn vặt gồm những thanh mozzarella tẩm bột chiên giòn, xuất thân từ Mỹ vào thập niên 1970 — theo nhà sử học ẩm thực Joel Jensen, nhờ mozzarella sản xuất hàng loạt trở nên phổ biến từ thập niên 1960 cùng kỹ thuật chiên nhanh trong các quán bar thể thao và sân bowling. Món mozzarella milanese của Ý — phô mai lăn bột mì, trứng, vụn bánh mì rồi áp chảo, ăn ngay khi vừa ra khỏi chảo — được xem là nguyên mẫu của phô mai que.",
+    "sources": [
+      {
+        "ref": "Wikipedia (EN) — Mozzarella sticks",
+        "url": "https://en.wikipedia.org/wiki/Mozzarella_sticks"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

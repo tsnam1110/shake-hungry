@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 2,
+  "completeness_level": 3,
   "meal_slots": [
     {
       "slot": "chieu",
@@ -125,6 +125,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-009 đợt 9: Nâng Mức 2 — mở kiểm chứng 3 họ nguồn (Tripi, Cookpad Le Minh Trang — biến thể nếp, KinhDo Food — vòng 2; dòng văn bản dayhocnghe/ĐMX tính cùng họ KinhDo). File là biến thể BỘT BÁNG: thêm bot-khoai 25 g (2/2 họ đúng biến thể đều có: 33 g/khẩu phần và ~19 g quy đổi), sửa khoai-mon 80→120 g (hai họ bột báng đồng thuận ~125–133 g) và duong-trang 25→35 g (33–44 g). nuoc-cot-dua 50 g giữ nguyên — khớp tuyệt đối cả hai họ bột báng; bot-bang 15 g trong dải 13–17 g. Không thêm bột sắn tạo sánh (1 họ) và không dùng biến thể nếp để đối chiếu.]",
+  "cultural_note": {
+    "text": "Chè khoai môn là món ăn vặt quen thuộc ở miền Tây, nấu từ khoai môn dẻo bùi cùng bột báng và nước cốt dừa. Chè thường được bán trong những túi nhỏ ở khắp các khu chợ miền Tây, thuộc nhóm hơn trăm món chè, bánh làm từ khoai của vùng đất này — những món ngọt thường dùng vào dịp lễ Tết hay giỗ chạp.",
+    "sources": [
+      {
+        "ref": "Chudu24 — Đến miền Tây, nhớ thưởng thức 6 món chè khoai đặc sản",
+        "url": "https://www.chudu24.com/thongtindulich/2017/07/11/den-mien-tay-nho-thuong-thuc-6-mon-che-khoai-dac-san/"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

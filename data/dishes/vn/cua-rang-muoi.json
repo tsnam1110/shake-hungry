@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "chien-ngap-dau",
-  "completeness_level": 2,
+  "completeness_level": 3,
   "meal_slots": [
     {
       "slot": "trua",
@@ -117,6 +117,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [Đính chính 2026-10-31 — Phương án A/QA-002: dau-an 10 g → 3 g. Chỉ giữ phần dầu cho bước phụ có thật trong công thức (phi tỏi ớt rồi rang lại cua sau khi chiên) — mức 3 g/khẩu phần là định lượng chế biến cho bước phi/xào nhanh, phần dầu này ăn vào cùng nhân/sốt. Dầu chiên chính không kê nữa: đã được engine mô hình hoá theo CALC-004.] [LV2-012 đợt vét] GIỮ Mức 1 — mã 429: lượt mở Hội Đầu Bếp Á Âu bị 429, dừng theo quy tắc đợt. Việc cần làm còn treo: file chưa áp quyết định A4.5 cho nhóm rang muối (hiện còn dau-an 3 g, muoi 3 g, chưa có dòng bot-rang-muoi, cooking_method đang là chien thay vì chien-ngap-dau) — áp tiền lệ LV2-010 Phần C ở đợt sau khi tra đủ ≥3 họ. Quan sát mức tìm kiếm (chưa tính bằng chứng): phần lớn kết quả là một họ duy nhất sao chép nhau — cua rang muối ớt kiểu Hồng Kông (cua 800 g, tôm khô, chà bông, hạt điều, bột chiên xù) — các trang sao cùng bộ số chỉ tính 1 họ. [LV2-012 vòng 2] NÂNG Mức 2 + áp A4.5 cho nhóm rang muối: mở 3 họ độc lập (Thực Thần — họ muối Hồng Kông xay tôm khô/hạt điều/bột chiên xù/chà bông, các bản Disney Cooking/Vua Hải Sản là sao chép cùng bộ số; Chef Ryan Phạm/Gia Vị Hạnh Phúc — 3 muỗng canh muối Hồng Kông/2 con, chiên ngập dầu ~3 phút/con 400 g; Blog Ăn Ngon — 3 biến thể đều chiên rồi rang/xóc gia vị khô). Đồng thuận: cua chiên ngập dầu rồi xóc bột muối khô bám vỏ, tỏi + ớt ở mọi họ. Thêm bot-rang-muoi 8 g, muoi 3->1, bỏ dau-an và la-chanh (0/3 họ), đổi method sang chien-ngap-dau; giữ cua-bien 250, toi 10 (Ryan Phạm tỏi phi 30 g/800 g cua ≈ 9 g/phần), duong-trang 2. Dòng thêm mang source=llm_suggested, confidence=low; giữ needs_review.",
+  "cultural_note": {
+    "text": "Cua rang muối là đặc sản lâu năm của Vũng Tàu, có mặt từ nhà hàng sang trọng đến quán nhậu bình dân. Người làm bếp kén cua vùng nước lợ, ngon nhất là cua bắt ở xã Long Sơn vào cuối tuần trăng, khi cua chắc thịt và nhiều gạch. Điểm riêng của món ăn là nước 'kíp chấp' ngũ vị gồm hoa hồi, thảo quả, quế chi mà mỗi bếp giữ bí quyết riêng; cua rang muối phải ăn nóng và ăn bốc mới ngon.",
+    "sources": [
+      {
+        "ref": "Nghiệp vụ khách sạn — Cua rang muối, món ngon khó cưỡng ở Vũng Tàu",
+        "url": "https://nghiepvukhachsan.com/mon-ngon/cua-rang-muoi-mon-ngon-kho-cuong-o-vung-tau-5195.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

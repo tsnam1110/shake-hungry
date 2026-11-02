@@ -194,6 +194,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [LV2-006 đợt 6: GIỮ Mức 1 — bị chặn 429 ở nguồn thứ ba. Đã kiểm: file thuần chay. Su hào và mì căn đều 0/2 nguồn đã mở dù slug có số; củ sắn chưa có trong kho. Hai nguồn Điện Máy XANH gợi ý tăng hủ tiếu khô 60 → 100g khi đủ nguồn đối chiếu — ghi nhận chờ đợt sau.] [LV2-007 đợt 7: nâng Mức 2 — thử lại sau 429 đợt 6: gom 4 nguồn độc lập, cả 4 đều khẳng định thuần chay. SỬA sợi hủ tiếu khô 60→100g (3 nguồn có sợi khô đều cho 100g/tô, lệch +67%) và serving 460→540g hệ quả. BỔ SUNG củ đậu 25g — chính là 'củ sắn' miền Nam ở 4/4 nguồn (phân xử định danh LV2-007 Phần A: củ sắn = slug cu-dau). BỎ su hào 15g: chỉ 1/4 nguồn có và ở nguồn đó su hào là củ hầm lấy nước rồi lọc vớt bỏ, không phải thành phần ăn trong tô. BỎ mì căn 25g: 0/4 nguồn dùng (các nguồn dùng tàu hủ ky hoặc sườn chay) — thay bằng tàu hủ ky 10g dạng tuỳ chọn (2/4 nguồn). Đính chính ghi nhận đợt 6: su hào có xuất hiện ở 1 nguồn nhưng với vai trò củ hầm bỏ đi — kết luận bỏ dòng vẫn đứng vững, vì lý do khác.]",
+  "cultural_note": {
+    "text": "Hủ tiếu chay là biến thể thanh đạm của món hủ tiếu miền Nam, thường được nấu vào những ngày rằm và đầu tháng. Khác với hủ tiếu mặn, nước dùng chay lấy vị ngọt thanh từ rau củ như củ cải trắng, cà rốt, củ sắn và bắp, ăn kèm đậu hũ chiên, tàu hũ ky và các loại nấm.",
+    "sources": [
+      {
+        "ref": "Hướng Nghiệp Á Âu — Cách nấu hủ tiếu chay thanh đạm",
+        "url": "https://www.huongnghiepaau.com/hu-tieu-chay"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

@@ -133,6 +133,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 500 món (DISH-004) 2026-10-31 (llm_suggested, chờ người duyệt) [LV2-012 đợt vét] Nâng Mức 2: đối chiếu 3 họ độc lập đã mở đọc cho biến thể cắt khúc (Ăn Ngon 3 Miền 500g khoai/200ml cốt/100g đường; Beemart bản hấp cắt miếng 600g khoai/100g đường; Lao Động chè sắn 4 người 500g sắn/100g đường/30g bột năng). Quy về khẩu phần 280g, mọi dòng hiện tại nằm trong ±20% của ít nhất 2 họ nên giữ nguyên định lượng; viết lại recipe_steps 7 bước. Biến thể mài vo viên phổ biến trên mạng là món khác về thao tác, không áp cho file này.",
+  "cultural_note": {
+    "text": "Miền Tây Nam Bộ có hơn trăm loại chè, bánh làm từ khoai, thường dùng vào các dịp lễ Tết hay giỗ chạp. Chè khoai mì làm từ củ khoai mì ngâm nước cho bớt mủ, mài nhuyễn, vắt ráo rồi vo thành những viên nhỏ như trứng cút; khi luộc chín, viên khoai mì dai và trong vắt, chan nước cốt dừa béo hoặc nước đường gừng thanh.",
+    "sources": [
+      {
+        "ref": "Chudu24 — Đến miền Tây, nhớ thưởng thức 6 món chè khoai đặc sản",
+        "url": "https://www.chudu24.com/thongtindulich/2017/07/11/den-mien-tay-nho-thuong-thuc-6-mon-che-khoai-dac-san/"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

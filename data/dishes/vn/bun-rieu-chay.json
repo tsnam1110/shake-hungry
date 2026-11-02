@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 2,
+  "completeness_level": 3,
   "meal_slots": [
     {
       "slot": "sang",
@@ -189,6 +189,19 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [LV2-008 đợt 8: Nâng Mức 2 với 3 công thức đã mở đọc thuộc 2 họ độc lập — Điện Máy XANH (công thức chính cho 4 người + công thức người dùng cho 6 người trong cùng bài) và Cookpad Huỳnh Phát (2–3 người); bài Sức Khỏe & Đời Sống đồng văn với công thức chính ĐMX nên chỉ tính corroboration. SỬA 4 dòng: bun-tuoi 150→200g (ĐMX 250, Cookpad ~200), sua-dau-nanh 50→200g (cả 3 công thức đều dùng 1 lít sữa cho 4–6 người, tức ≥167ml/người — file cũ thấp bất thường), dau-phu-chien 35→50g (ĐMX 50, Cookpad ~60), duong-trang 3→6g (hai nguồn cùng ~6g/người). BỎ bot-nghe 0,5g (0/3 nguồn; màu lấy từ cà chua và dầu điều). GIỮ: dau-phu 45g (ĐMX đậu hũ non 1 miếng/4 người ≈ 30–40g cộng phần riêu từ sữa kết tủa); ca-chua 60g (ĐMX 3 trái/4 ≈ 75g — lệch −20% chưa tới ngưỡng; Cookpad 350g/2,5 = 140g là cực cao, nguồn tản mát nên giữ); nam-rom 30g (ĐMX 150/4 = 37,5 và 200/6 ≈ 33); dam-gao 5g (chất chua thay thế lẫn nhau giữa các nguồn: ĐMX dùng nước me/nước cốt chanh, Cookpad dùng giấm gạo — giữ mức chua dịu); rau-muong 30g (ĐMX rau sống ăn kèm 100g/4 = 25g/người); kinh-gioi và tia-to 3g (có trong rau ăn kèm của Cookpad); nuoc-tuong 6g (Cookpad nêm nước mắm chay, ĐMX nêm hạt nêm chay — gia vị mặn tương đương); dau-an 6g (nguồn dùng dầu điều 2–4 muỗng canh/nồi ≈ 7–15ml/người cho khâu xào/phi, file dùng dầu ăn thường ở mức tương đương); muoi 1,5g và hanh-la 3g giữ nguyên. serving_grams 480g, method 'nau', region 'vn' giữ nguyên.]",
+  "cultural_note": {
+    "text": "Bún riêu vốn là món ăn truyền thống có nguồn gốc từ vùng đồng bằng sông Hồng, với nước riêu chua nấu từ gạch và thịt cua giã, cà chua, giấm bỗng, ăn kèm rau sống. Bản chay thay cua bằng đậu nành và đậu phụ: sách dạy nấu ăn chay xưa ghi công thức dùng hột đậu nành, cà chua thật chín, chao trắng và nước me để tạo vị và màu cho nồi riêu.",
+    "sources": [
+      {
+        "ref": "Thư viện số — Bún riêu chay (sách dạy nấu ăn số hoá)",
+        "url": "https://thuvienso.com.vn/upload/library/514798/preview/bun-rieu-chay-514798.pdf"
+      },
+      {
+        "ref": "Wikipedia — Bún riêu cua",
+        "url": "https://vi.wikipedia.org/wiki/B%C3%BAn_ri%C3%AAu_cua"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

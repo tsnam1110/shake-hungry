@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 2,
+  "completeness_level": 3,
   "meal_slots": [
     {
       "slot": "trua",
@@ -157,6 +157,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chưa qua biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — không tự tạo liên kết. Nâng Mức 2 đợt 3 (LV2-003, 2026-10-31): Đã mở kiểm chứng 3 nguồn. Phân xử định lượng: mang-tuoi 60 → 90 g — cả 3 nguồn đồng thuận tăng (75–133 g/khẩu phần), lấy mức giữa thận trọng; vịt 100 g thịt có da giữ nguyên (nguồn 200–250 g sống có xương/khẩu phần, phần ăn được tương đương); bún 150 g giữ (dải nguồn 125–167 g). Bất thường ghi nhận chờ pha phân xử: hành tây (2 nguồn) và hành tím (2 nguồn) cho nước dùng, file thiếu cả hai; dòng rau-ram không nguồn đã mở nào dùng (nguồn dùng húng quế/mùi tàu/ngò) — giữ rau răm dạng biến thể phổ biến và ghi nhận; kỹ thuật xào sơ măng trước khi vào nồi có ở 2/3 nguồn, bước hiện tại cho măng thẳng vào nước dùng cho nhất quán với danh sách nguyên liệu (file không có dòng dầu). Phân xử bất thường LV2-003 (Phần A — LV2-004, 2026-10-31): Thêm hanh-tay 15 g và hanh-tim 5 g cho nước dùng (đều có ở 2/3 nguồn đã mở ở đợt 3). Dòng rau-ram GIỮ NGUYÊN có lý do như đã phân tích ở đợt 3: 0/3 nguồn đã mở dùng rau răm (nguồn dùng húng quế/mùi tàu) nhưng rau răm là biến thể phổ biến ngoài nguồn đã mở — bằng chứng hiện có là \"không thấy trong 3 nguồn\", chưa đủ mạnh để bỏ một dòng biến thể có thật; ghi nhận tiếp tục theo dõi.",
+  "cultural_note": {
+    "text": "Bún măng vịt là món bún được nhiều người ưa thích với nước dùng trong và ngọt, thịt vịt chấm chén nước mắm gừng đậm đà, măng tươi giòn ngọt ăn kèm sợi bún mềm. VnExpress Cooking xếp bún măng vịt vào nhóm những món ngon tiêu biểu làm từ vịt trong bữa cơm Việt, bên cạnh vịt om sấu và vịt nướng.",
+    "sources": [
+      {
+        "ref": "VnExpress Cooking — Gợi ý 5 món ngon từ vịt đơn giản",
+        "url": "https://vnexpress.net/goi-y-5-mon-ngon-tu-vit-don-gian-4362219.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",

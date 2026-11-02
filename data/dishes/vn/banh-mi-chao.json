@@ -130,6 +130,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp DISH-005 đợt 3 (món chính chay + bữa sáng tự nấu) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Món chiên theo quy ước Phương án A (EDITORIAL-GUIDE §12): công thức KHÔNG kê dầu của bước chiên chính — dầu hấp thụ do engine mô hình hoá theo hệ số CALC-004 của nguyên liệu. Xúc xích là thành phẩm đã chín (chỉ áp chảo hâm nóng) nên nhận hệ số hấp thụ 0 theo tiền lệ CALC-004 cho thành phẩm chế biến sẵn (áp dụng nhân đợt này); bánh mì cũng không phải chủ thể chiên. [LV2-010 đợt 10: ĐẠT Mức 2 — 3 họ đã mở (CET/Chef Lập, Phụ Nữ Today, Điện Máy XANH); thêm pate-gan 50 g (đồng thuận tuyệt đối CET + Phụ Nữ Today, là thành phần định danh bị thiếu hẳn), ca-chua 60 g làm sốt nền (3/3 họ có, lượng bất đồng nên lấy mức thận trọng) và hanh-tay 20 g; trung-ga/xuc-xich/banh-mi giữ nguyên vì khớp 1 quả/1 cây/1 ổ ở cả 3 họ; serving_grams 180 → 310 vì file gốc đặt serving đúng bằng tổng các dòng (80+50+40+5+5 = 180) và tổng mới là 310 g — giữ nhất quán quy ước của chính file; steps viết lại 7 bước.]",
+  "cultural_note": {
+    "text": "Bánh mì chảo là kiểu ăn bánh mì ngồi tại chỗ: pate, chả, trứng ốp-la, jambon, xúc xích được chiên nóng trong chiếc chảo nhỏ, ăn kèm ổ bánh mì giòn và đĩa củ cải muối chua. Tiệm Hòa Mã ở Sài Gòn — do đôi vợ chồng người Bắc di cư mở năm 1958 trên đường Phan Đình Phùng (nay là Nguyễn Đình Chiểu), với bà chủ từng học nghề thịt nguội khi phục vụ nhà hàng Pháp ở Hà Nội — là một trong những nơi làm nên danh tiếng của món ăn này.",
+    "sources": [
+      {
+        "ref": "Afamily — Tiệm bánh mì chảo Hòa Mã nức tiếng hơn 60 năm",
+        "url": "https://afamily.vn/cuoi-tuan-ghe-tiem-banh-mi-chao-hoa-ma-nuc-tieng-hon-60-nam-nham-nhap-bua-sang-nhan-tan-dam-chat-sai-gon-2018051821154783.chn"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

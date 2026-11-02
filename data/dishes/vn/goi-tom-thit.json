@@ -25,7 +25,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "tron",
-  "completeness_level": 2,
+  "completeness_level": 3,
   "meal_slots": [
     {
       "slot": "trua",
@@ -188,6 +188,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 đợt 2 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-007 đợt 7: nâng Mức 2 — 3 nguồn đã mở. SỬA CẤU TRÚC BẮT BUỘC: bỏ củ sen 40g → ngó sen 90g (3/3 nguồn dùng ngó sen, 0/3 dùng củ sen). HỆ QUẢ: slug ngo-sen chưa có số dinh dưỡng (null có hồ sơ) nên món tạm mất khả năng tính calo cho tới khi ngó sen được biên soạn số — không dùng số của củ sen thay cho ngó sen (QT-1); đây là ca 'gỏi ngó sen không tính được' đã biết từ DISH-004. BỔ SUNG hành tây 30g (3 nguồn: 25–40g); SỬA đường 6→10g, lạc rang 15→20g (2 nguồn đồng thuận); serving 280→320g theo tổng nguyên liệu sau sửa. GIỮ dưa leo 60g (1 nguồn ủng hộ — thuộc biến thể nấm tuyết); ghi nhận mọi nguồn dùng giấm là acid chính, chanh chỉ phụ — file giữ chanh 12g, câu hỏi mở cho vòng sau.]",
+  "cultural_note": {
+    "text": "Gỏi là cách gọi miền Nam của món trộn rau củ với thịt, hải sản chín và nước mắm chua ngọt; ở miền Bắc món này gọi là nộm. Gỏi thường mở đầu các bữa tiệc, đặc biệt là tiệc cưới, nhờ vị chua ngọt thanh mát giúp đánh thức vị giác. Trong các món gỏi tiệc cưới, gỏi củ hủ dừa tôm thịt là biến thể rất được ưa chuộng, và phần nước trộn được xem là bí quyết quyết định hương vị của đĩa gỏi.",
+    "sources": [
+      {
+        "ref": "Metropole — Đánh thức vị giác với món gỏi chua ngọt cho phần khai vị tiệc cưới",
+        "url": "https://metropole.com.vn/tin-tuc/danh-thuc-vi-giac-voi-mon-goi-chua-ngot-cho-phan-khai-vi-tiec-cuoi-mua-he-an-tuong"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

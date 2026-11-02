@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 2,
+  "completeness_level": 3,
   "meal_slots": [
     {
       "slot": "sang",
@@ -150,6 +150,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt DISH-004 đợt 2 mở rộng 300→500 món 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-012 đợt vét] Nâng Mức 2: đối chiếu 3 họ độc lập (Cookpad Pham Huyen, Dân Việt, DMX qua KinhDoFood). Đề xuất thêm cai-xanh 40 (3/3 họ đều có rau cải, file thiếu hẳn) và hanh-tim 5 (3/3 họ đều phi hành khô). Giữ nguyên banh-da-do 70 (họ có số cho ~75g/tô), ca-ro-dong 90 (thịt gỡ từ 125-250g cá nguyên con/người ở các họ cho khoảng 65-110g thịt), ca-chua 40. Không thêm chả cá vì chỉ 1 họ ghi 'nếu có'; không thêm dầu ăn vì cá chiên là bước chiên chính theo quy ước biên tập.",
+  "cultural_note": {
+    "text": "Cá rô đồng là đặc sản quen thuộc của vùng đồng bằng Bắc Bộ, và bánh đa cá rô đồng là một trong những món ăn dân dã tiêu biểu làm từ loài cá này. Nước cốt của món ăn được cô đặc từ xương cá hầm 24 giờ, ăn cùng sợi bánh đa nâu mềm dai, hành, thì là và hạt tiêu. Tại Hải Phòng, bánh đa cá rô đồng ăn liền đã được phát triển thành sản phẩm đạt chứng nhận OCOP 4 sao, đưa món ăn đồng quê đi xa.",
+    "sources": [
+      {
+        "ref": "Báo Hải Phòng — Người đưa món cá rô đồng Hải Phòng vươn xa",
+        "url": "https://baohaiphong.vn/print/528854.html"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

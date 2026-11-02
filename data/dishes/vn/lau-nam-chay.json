@@ -18,7 +18,7 @@
   "is_eat_out": true,
   "is_home_cook": true,
   "cooking_method": "nau",
-  "completeness_level": 2,
+  "completeness_level": 3,
   "meal_slots": [
     {
       "slot": "toi",
@@ -217,6 +217,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). [LV2-010 Phần C — gói quyết định chủ dự án 2026-10-31: A4.3 ÁP quy ước lượng sợi (EDITORIAL-GUIDE §14): bun-tuoi ăn kèm lẩu 40→80 g — toàn kho lẩu dùng thống nhất 80 g cho dòng bún ăn kèm; 40 g là ngoại lệ duy nhất không có căn cứ nguồn riêng.] [LV2-012 đợt vét] Nâng Mức 2: đối chiếu 5 họ nguồn độc lập đúng biến thể chay thuần (họ Điện Máy XANH qua bản sao KitchenAZ, Hướng Nghiệp Á Âu, Cookpad QUÂN NGUYỄN, Cookpad Lavender, Cookpad Bếp của Quỳnh, Ẩm Thực Đồ Chay) — mọi nguồn dùng nước dùng rau củ, không nước mắm/trứng/sữa/thịt. Sửa nam-rom 40→25 g (3 họ ở mức 12,5-25 g/khẩu phần), thêm nam-dui-ga 20 g (mọi họ đều có, file thiếu), bỏ sa (chỉ biến thể Thái/chua cay mới dùng) và bap-cai (0 họ ủng hộ; rau lá đồng thuận là cải thảo). Giữ bun-tuoi 80 g theo quy ước §14 A4.3. Viết lại 7 bước nấu.",
+  "cultural_note": {
+    "text": "Trong đời sống ăn chay phong phú của người Sài Gòn, lẩu nấm là món được nhiều nhà hàng chay đưa vào nhóm món 'phải thử', như ở nhà hàng chay Quang Thảo. Nhà hàng Thiện Duyên trong khuôn viên Pháp viện Minh Đăng Quang — nơi thường tổ chức tiệc cưới chay (lễ Hằng Thuận) cho trên 500 khách — có món lẩu nấm nấu cùng mủ gòn rất lạ miệng.",
+    "sources": [
+      {
+        "ref": "Thanh Niên — Ăn chay sành điệu như người Sài Gòn",
+        "url": "https://thanhnien.vn/an-chay-sanh-dieu-nhu-nguoi-sai-gon-185680356.htm"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

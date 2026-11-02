@@ -165,6 +165,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. Nghiên cứu Mức 2 đợt 3 (LV2-003, 2026-10-31): GIỮ Mức 1 — không mở kiểm chứng được nguồn nào do provider chặn 429 (4 nguồn mới ở mức trích đoạn: Điện Máy XANH; Eva; VnExpress; Cookpad). Bất thường ghi nhận từ trích đoạn, chờ mở xác nhận: cà chua có ở 4/4 nguồn (~25–30 g/khẩu phần), file thiếu hẳn; hai nguồn ghi rõ khẩu phần đều cho lòng 100 g/người, file 150 g cao hơn +50%; kỹ thuật đồng thuận là xào lòng riêng và xào dưa riêng rồi trộn cuối, file xào chung một lượt. Thử lại LV2-004 (Phần A, 2026-10-31): vẫn bị nhà cung cấp chặn 429 ngay ở lần mở trang đầu tiên — dừng tra cứu theo kỷ luật chống chặn, GIỮ Mức 1. Trích đoạn tìm kiếm (KHÔNG tính là nguồn đã mở) từ Cookbeo, VnExpress, Eva đều ủng hộ 3 bất thường đợt 3 (thiếu cà chua; lòng ~100 g/người; xào riêng rồi trộn) — chờ mở kiểm chứng ở đợt thử lại sau. [LV2-004 đợt 4: thử lại lần 2 các món 429 của đợt 3 — vẫn bị chặn 429 ngay lần mở đầu; giữ Mức 1, không truy vấn thêm.] [Phân xử LV2-005 Phần A (2026-10-31): thử lại sau 429 đã mở được 3 nguồn (Cookbeo; Điện Máy XANH; VnExpress) — cả 3 bất thường ghi ở LV2-003 đều được xác nhận: THÊM ca-chua 30 g (3/3 nguồn, 20–66 g/khẩu phần, lấy đầu dưới đồng thuận); long-lon 150 → 100 g (3/3 nguồn đồng thuận 80–100 g/người; số cũ cao hơn +50%); kỹ thuật xào lòng riêng/dưa riêng áp dụng ở bước viết lại Phần B. Gừng chỉ thuộc khâu sơ chế/chần (2/3 nguồn) nên ghi trong bước, không thêm dòng nguyên liệu. Rau răm giữ nguyên như biến thể (1/3 nguồn).] [LV2-005 đợt 5: nâng Mức 2 — 3 nguồn đã mở đồng thuận kỹ thuật xào lòng RIÊNG cho săn rồi trút ra, xào dưa cùng cà chua RIÊNG, cuối mới trộn chung; bước đã viết lại theo kỹ thuật này. Gừng chỉ dùng ở khâu sơ chế/chần lòng theo 2/3 nguồn, không thêm dòng nguyên liệu gừng. Định lượng do Phần A xử lý riêng (patch này quantity_changes để rỗng): lòng lợn 150→100 g/khẩu phần và THÊM dòng mới ca-chua 30 g/khẩu phần (cà chua có ở 3/3 nguồn, file cũ thiếu hẳn); recipe_steps đã viết theo danh sách nguyên liệu sau Phần A. Rau răm giữ nguyên như biến thể của file (chỉ 1/3 nguồn đã mở có rau răm).]",
+  "cultural_note": {
+    "text": "Sau khi luộc, lòng non và lòng già của lợn có thể đem xào với dưa cải muối — cách chế biến được ghi nhận là rất ngon trong các tài liệu về món lòng lợn. Vị chua của dưa cải làm dịu độ béo của lòng, khiến món xào trở thành món ăn cơm quen thuộc trong bữa cơm gia đình.",
+    "sources": [
+      {
+        "ref": "Wikipedia — Lòng lợn",
+        "url": "https://vi.wikipedia.org/wiki/L%C3%B2ng_l%E1%BB%A3n"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",

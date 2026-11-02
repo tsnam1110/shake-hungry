@@ -170,6 +170,15 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-011 đợt 11: NÂNG Mức 2. 3 họ độc lập (Bếp Xưa 4 người; Cookpad Ngoc Vu 3 phần; BlueStone). Thêm thit-bo-nam 50g — thành phần mọi họ đều có (Bếp Xưa 50g/người, Ngoc Vu ~67g/phần, BlueStone 150g/mẻ dạng tuỳ chọn), file cũ thiếu hẳn. Bất thường ghi nhận không sửa: (1) SỐT — file dùng nước mắm + me, trong khi 2/3 họ (Ngoc Vu, BlueStone) dùng sốt nền xì dầu (BlueStone thêm dầu hào, me chỉ là lựa chọn thay giấm) và Bếp Xưa dùng mắm + giấm — chưa đủ điều kiện đổi theo kỷ luật, chờ chủ dự án phân xử định danh sốt. (2) cha-ca có ở Bếp Xưa + BlueStone nhưng Ngoc Vu không có nên không thêm; cua-dong chỉ thuộc biến thể bánh đa cua (Bếp Xưa) nên không thêm. (3) rau-muong file 30g thấp hơn quy đổi của Bếp Xưa (50g/người) nhưng chỉ 1 họ gram tường minh nên giữ nguyên.]",
+  "cultural_note": {
+    "text": "Bánh đa trộn là món trộn từ Hải Phòng du nhập vào Hà Nội và được người Hà thành ưa chuộng. Về đến Hà Nội, món ăn được giản đơn đi nhiều: bánh đa chần qua nước canh riêu, trộn cùng đậu rán, gạch cua, rau muống hoặc rau rút, hành phi, chút lạc rang và xì dầu. Vào những ngày nóng, một bát bánh đa trộn thanh đạm là lựa chọn nhanh gọn của nhiều thực khách.",
+    "sources": [
+      {
+        "ref": "Kenh14 — Lần về tung tích các món trộn ở Hà Nội",
+        "url": "https://kenh14.vn/made-by-me/lan-ve-tung-tich-cac-mon-tron-o-ha-noi-20120816051959569.chn"
+      }
+    ]
+  },
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
