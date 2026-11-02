@@ -259,6 +259,13 @@
     document.addEventListener('keydown', (e) => { if (e.key === 'Escape') tcmClose(); });
 </script>
 <script>
+    /* TCM-003: tuỳ chọn hiển thị tính vị của người dùng (cột show_tcm, mặc
+       định bật theo quyết định chủ dự án 2026-11-01; khách chưa đăng nhập
+       luôn dùng mặc định). Các khối tính vị ở trang món/nguyên liệu/quả
+       chỉ dựng khi cờ này bật — thuần hiển thị, không đụng engine gợi ý. */
+    window.ldShowTcm = @json(auth()->user()?->profile?->show_tcm ?? true);
+</script>
+<script>
     /* TCM-003 (2026-11-01): bảng màu + icon cho từng giá trị tính/vị/hành —
        nguồn sự thật duy nhất của tầng trình bày tính vị. Màu: tính theo dải
        lạnh→nóng; vị theo hành tương ứng; hành theo 5 màu ngũ hành (Kim dùng

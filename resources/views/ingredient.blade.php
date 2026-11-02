@@ -68,7 +68,7 @@ fetch('/api/ingredients/' + slug).then(r => { if (!r.ok) throw new Error('404');
                 <p class="ld-note" style="margin-top:10px">Nguyên liệu này mang nhãn chất gây dị ứng theo dữ liệu dự án biên soạn. Khi lắc món, dị ứng trong hồ sơ của bạn là điều kiện lọc cứng — món chứa nguyên liệu này sẽ bị loại. <a href="/mien-tru-y-te">Đọc Miễn trừ y tế</a>.</p>`
             : `<p class="ld-note" style="margin:0">Dữ liệu hiện tại chưa ghi nhận chất gây dị ứng phổ biến ở nguyên liệu này. Điều này không phải cam kết an toàn tuyệt đối — nếu bạn bị dị ứng, hãy kiểm tra kỹ trước khi dùng. <a href="/mien-tru-y-te">Đọc Miễn trừ y tế</a>.</p>`}
         </div>
-        ${i.tcm?.traits?.length ? `<div class="ld-card" style="margin-top:30px">
+        ${window.ldShowTcm && i.tcm?.traits?.length ? `<div class="ld-card" style="margin-top:30px">
             <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap">
                 <div class="ld-tcm-lines">
                     ${ldTcm.line('nature', i.tcm.primary.nature, 'Tính:', esc(i.tcm.primary.nature_label))}

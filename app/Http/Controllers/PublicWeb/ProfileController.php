@@ -43,6 +43,9 @@ class ProfileController extends Controller
             'tray_dish_count' => ['nullable', 'integer', 'min:1', 'max:4'],
             // REC-004: tuỳ chọn "Bữa cơm bình dân" lưu trong hồ sơ.
             'tray_binh_dan' => ['sometimes', 'boolean'],
+            // TCM-003: tuỳ chọn hiển thị lớp tính vị (mặc định bật theo quyết
+            // định chủ dự án 2026-11-01; chỉ là hiển thị, không đụng engine).
+            'show_tcm' => ['sometimes', 'boolean'],
         ]);
         $profile = UserProfile::updateOrCreate(['user_id' => $request->user()->id], $data);
 

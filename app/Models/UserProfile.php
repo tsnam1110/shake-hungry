@@ -18,6 +18,7 @@ class UserProfile extends Model
             'weight_kg' => 'float',
             'tray_dish_count' => 'integer',
             'tray_binh_dan' => 'boolean',
+            'show_tcm' => 'boolean',
         ];
     }
 }

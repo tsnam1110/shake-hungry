@@ -76,7 +76,7 @@ fetch('/api/fruits/' + encodeURIComponent(slug), { headers: { 'Accept': 'applica
             : '<p style="color:var(--color-faint);margin:10px 0 0">Chưa có số dinh dưỡng đạt chuẩn cho quả này — hệ thống không đoán số.</p>'}
         </div>
 
-        ${ing.tcm?.traits?.length ? `
+        ${window.ldShowTcm && ing.tcm?.traits?.length ? `
         <div class="ld-card" style="margin-top:30px">
             <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap">
                 <div class="ld-tcm-lines">

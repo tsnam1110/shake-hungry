@@ -481,6 +481,8 @@ liệu có nhãn nào thì **không có dòng** ở bảng này.
 | `target_kcal_per_meal` | smallint unsigned null | kcal mục tiêu mỗi bữa — điền sẵn khi lắc, là đầu vào mềm của engine (UI-011) |
 | `shake_mode` | varchar(16) null | chế độ lắc mặc định: `eat_out` (1 món) / `home` (mâm cơm) — điền sẵn khi lắc (REC-003, migration 2026_10_31_100007) |
 | `tray_dish_count` | tinyint unsigned null | số món trong mâm cơm 1–4, không tính cơm; null = mặc định 3 (REC-003) |
+| `tray_binh_dan` | boolean | mâm cơm chỉ gồm món bình dân dễ nấu/nguyên liệu phổ biến (REC-004, migration 2026_10_31_100008) |
+| `show_tcm` | boolean, mặc định true | hiển thị lớp tính vị ở trang món/nguyên liệu/quả; mặc định bật theo quyết định chủ dự án 2026-11-01, người dùng tự tắt trong hồ sơ (TCM-003, migration 2026_11_02_100001) — thuần hiển thị, không vào engine gợi ý |
 
 > **Về `sex`:** công thức Mifflin–St Jeor có hệ số khác nhau theo giới tính sinh học. Khi người dùng
 > chọn `unspecified`, dùng công thức Katch–McArdle nếu có % mỡ, nếu không thì lấy trung bình hai hệ
