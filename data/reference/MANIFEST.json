@@ -52,5 +52,14 @@
     "filtered_rows": 1810,
     "license": "Public domain / CC0 1.0",
     "filter_note": "SR Links: món → nguyên liệu → gram/100 g món. CHỈ dùng để KIỂM CHỨNG engine (TEST-002), không phải món hiển thị. Lọc: có kcal công bố, ≥2 nguyên liệu SR Links, ≥80% nguyên liệu ánh xạ được sang SR Legacy, và suy được cách chế biến từ mô tả."
+  },
+  "usda-foundation.csv": {
+    "source_url": "https://fdc.nal.usda.gov/download-datasets/",
+    "source_release": "Foundation Foods",
+    "downloaded_at": "2026-11-02",
+    "original_sha256": "56a169d02b6db1fdad7887f10bc01001cbb06393f0fae722c4afec20d3741a2d",
+    "filtered_rows": 353,
+    "license": "Public domain / CC0 1.0",
+    "filter_note": "Chỉ giữ external_id, tên và 5 giá trị dinh dưỡng dùng đến (kcal 1008/2047-2048, protein 1003, fat 1004, carb 1005, fiber 1079). Bỏ bản ghi không có năng lượng."
   }
 }

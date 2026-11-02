@@ -1,7 +1,9 @@
 # [DATA-002] — Nhập USDA SR Legacy + Foundation Foods
 
 **Mã task:** DATA-002 · **Giai đoạn:** GĐ1 · **Loại:** Dữ liệu
-**Status:** 🔵 IN PROGRESS — SR Legacy xong 2026-08-31, Foundation chưa · **Ngày tạo:** 2026-08-31 · **Phụ thuộc:** DATA-006
+**Status:** ✅ DONE (2026-11-02) — SR Legacy xong 2026-08-31; Foundation Foods nhập
+2026-11-02 (bản phát hành CSV 2025-04-24: 353 dòng có năng lượng, MANIFEST có SHA-256
+file gốc; seeder dựng lại đủ 353 dòng sau migrate:fresh --seed) · **Ngày tạo:** 2026-08-31 · **Phụ thuộc:** DATA-006
 
 ---
 
@@ -29,7 +31,9 @@ Cả hai đều CC0 — không ràng buộc gì, dùng thương mại và phân 
 
 ## Definition of Done
 
-- [x] `reference_foods` có `usda_sr_legacy` (7.793 dòng) — [ ] `usda_foundation` **chưa nhập**
+- [x] `reference_foods` có `usda_sr_legacy` (7.793 dòng) và `usda_foundation` (353 dòng,
+      nhập 2026-11-02 từ bản CSV Foundation Foods 2025-04-24; giữ hai bộ ở hai
+      `fct_source` riêng theo QT-4)
 - [x] File đã lọc trong `data/reference/`, tổng < 20 MB (usda-sr_legacy.csv: 0,64 MB)
 - [x] MANIFEST đầy đủ, có checksum SHA-256 **file zip gốc**
 - [x] Nhật ký thẩm định [LICENSE-COMPLIANCE §7](../../04-data-sources/LICENSE-COMPLIANCE.md) đã cập nhật
