@@ -257,6 +257,12 @@ kho-qua-luoc/kho-ca-loc). QD-15 **không tự đổi Mức món nào**. Kiểm c
 lập: validate 0 🔴/0 🟠, export byte-khớp trong phạm vi; kiểm chứng toàn
 cục chốt ở cửa sổ sạch CONSOLIDATE-FINAL. Chi tiết:
 [tasks/QD-15-LEGACY-QUEUE.md](./tasks/QD-15-LEGACY-QUEUE.md).
+**Bổ sung QD-15 (2026-11-02):** chủ dự án chốt **GỘP** `com-hen-xao` —
+đã gộp thành biến thể của `com-hen` theo cơ chế `parent_dish_slug`
+(giữ nguyên định lượng/hồ sơ; hồ sơ quyết định ghi trong `import_note`
+cả hai file). Còn 4 quyết định QD-15 chờ chủ dự án: xoá file `banh`;
+`chao-ca-bong` xoá/giữ; tiền lệ ánh xạ sản phẩm khô
+kho-qua-luoc/kho-ca-loc; `sup-ca` (A) giữ tổng quát / (B) tách biến thể.
 
 **T-06 — GHI CHÚ VĂN HOÁ CHO MÓN CÒN THIẾU + TCM-PROMOTE-004 ĐÃ XONG
 (2026-11-02):** VN-001 đợt bổ sung: đo lại 260 món chưa có ghi chú
