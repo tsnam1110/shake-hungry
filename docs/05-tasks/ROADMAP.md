@@ -273,6 +273,25 @@ trên nguồn này một mình. Kiểm chứng: validate **0 🔴**, recompute
 không đổi (500/98/50), Pest **167/167** (ExportStabilityTest đạt).
 Chi tiết: [tasks/AUDIT-003.md](./tasks/AUDIT-003.md) §5–§6.
 
+**T-05 — NGHIÊN CỨU NGUYÊN LIỆU KHOÁ MÓN (LV2-012 §6) ĐÃ XONG
+(2026-11-02):** mở được bản toàn văn Bảng TPTP VN 2007 (526 thực
+phẩm) — nguồn các vòng trước không trích được — và kiểm từng mục
+nhóm 13/4/7/8. **4 nguyên liệu có số `vn_nin`:** `cha-bong` (07074
+Ruốc thịt lợn: 369 kcal, đạm 46,6, béo 20,3, carb 0 — cụm số web bị
+loại ở LV2-008 hoá ra là sao chép méo mó chính mục này), `ngo-sen`
+(04059: 61 kcal — khác hẳn bộ số củ sen bị cảnh báo), `rau-nhut`
+(04089 "Rau rút": 28 kcal), `tuong-ban` (13020 "Tương nếp": 86 kcal).
+**`xoi-man` nâng Mức 2 THƯỜNG** (bổ sung chà bông 12g + 3
+recipe_sources mở lại tận nơi; gỡ basis nâng bù) → bức tranh mức:
+**187 Mức 3 · 286 Mức 2 thường · 113 Mức 2 (có note) · 68 Mức 1**.
+**Giữ null và đã khép hướng FCT:** `tuong-hat` (nhóm 13 không có —
+`bun-suong` giữ "Mức 2 (có note)"), `mam-ca-sac`/`mam-ca-linh` (bảng
+không có mắm cá ở nhóm nào), `la-khuc`, `la-gai`, `mac-khen`,
+`hat-doi`, `la-suong-sam`, `cha-lua-chay` — chỉ còn nhãn in bao bì
+hoặc tự đo. Kiểm chứng trên DB riêng `shake_hungry_t05`: validate
+**0 🔴**, recompute khớp kỳ vọng, Pest **173/173**. Chi tiết:
+[tasks/T-05-INGREDIENT-UNLOCK.md](./tasks/T-05-INGREDIENT-UNLOCK.md).
+
 > Mỗi task có file chi tiết riêng tại [`tasks/`](./tasks/). Click mã task để xem đầy đủ.
 > Tạo task mới: copy [`TASK-TEMPLATE.md`](./TASK-TEMPLATE.md) vào `tasks/`, đặt tên theo mã task.
 > Trước khi đánh dấu DONE: đối chiếu [`DEFINITION-OF-DONE.md`](./DEFINITION-OF-DONE.md).

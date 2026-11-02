@@ -683,6 +683,23 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > repo** — gói Docker go-live là task riêng đang bổ sung. Chi tiết:
 > [DEV-SETUP-DOC](docs/05-tasks/tasks/DEV-SETUP-DOC.md).
 
+> ## 📗 Bổ sung lần 39, 2026-11-02 — T-05: nghiên cứu nguyên liệu khoá món (LV2-012 §6) ĐÃ XONG
+>
+> Mở được **bản toàn văn Bảng TPTP VN 2007** (526 thực phẩm; các vòng trước chỉ có
+> bản 2017 cắt ~100/300 trang) và kiểm từng mục nhóm 13/4/7/8. **4 nguyên liệu có
+> số `vn_nin`:** `cha-bong` 07074 (369 kcal/đạm 46,6/béo 20,3/carb 0 — cụm số web
+> bị loại ở LV2-008 là sao chép méo mó chính mục này), `ngo-sen` 04059 (61 kcal —
+> khác bộ số củ sen), `rau-nhut` 04089 "Rau rút" (28 kcal), `tuong-ban` 13020
+> "Tương nếp" (86 kcal). **`xoi-man` → Mức 2 THƯỜNG** (chà bông 12g + 3 nguồn mở
+> lại tận nơi; gỡ `level_basis='tcm_compensation'`) → mức toàn kho: **187 Mức 3 ·
+> 286 Mức 2 thường · 113 Mức 2 (có note) · 68 Mức 1**. **Giữ null, đã khép hướng
+> FCT:** `tuong-hat` (nhóm 13 không có mục → `bun-suong` giữ "Mức 2 (có note)"),
+> `mam-ca-sac`/`mam-ca-linh` (bảng không có mắm cá ở bất kỳ nhóm nào), `la-khuc`,
+> `la-gai`, `mac-khen`, `hat-doi`, `la-suong-sam`, `cha-lua-chay` — chỉ còn nhãn
+> in bao bì (`nhan_san_pham`) hoặc tự đo (`tu_do`). Kiểm chứng DB riêng
+> `shake_hungry_t05`: validate **0 🔴**, Pest **173/173**. Chi tiết:
+> [T-05-INGREDIENT-UNLOCK](docs/05-tasks/tasks/T-05-INGREDIENT-UNLOCK.md).
+
 **Trạng thái thực tế, kiểm ngày 2026-10-31 (đã chạy lại toàn bộ lệnh kiểm chứng):**
 
 | Hạng mục | Thực tế | Kiểm bằng |
