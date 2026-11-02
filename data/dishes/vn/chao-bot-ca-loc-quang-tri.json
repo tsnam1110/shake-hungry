@@ -1,0 +1,133 @@
+{
+  "slug": "chao-bot-ca-loc-quang-tri",
+  "parent_dish_slug": null,
+  "country_code": "VN",
+  "region_code": "vn-central",
+  "names": [
+    {
+      "locale": "vi",
+      "name": "Cháo bột cá lóc Quảng Trị",
+      "is_primary": true
+    },
+    {
+      "locale": "vi",
+      "name": "Cháo vạt giường",
+      "is_primary": false,
+      "is_alias": true,
+      "note": "tên gọi địa phương Quảng Trị"
+    },
+    {
+      "locale": "en",
+      "name": "Quang Tri rice-flour strand congee with snakehead fish",
+      "is_primary": true
+    }
+  ],
+  "is_eat_out": true,
+  "is_home_cook": true,
+  "cooking_method": "nau",
+  "completeness_level": 1,
+  "meal_slots": [
+    {
+      "slot": "sang",
+      "weight": 6
+    },
+    {
+      "slot": "trua",
+      "weight": 7
+    },
+    {
+      "slot": "toi",
+      "weight": 7
+    }
+  ],
+  "serving_desc": "1 tô",
+  "serving_grams": 320,
+  "ingredients": [
+    {
+      "ingredient_slug": "bot-gao",
+      "quantity": 50,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "ca-loc",
+      "quantity": 100,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-tim",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "cu-nen",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "dau-an",
+      "quantity": 4,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nuoc-mam-truyen-thong",
+      "quantity": 8,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hanh-la",
+      "quantity": 5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    },
+    {
+      "ingredient_slug": "hat-tieu-den",
+      "quantity": 0.5,
+      "unit_name": "g",
+      "is_optional": false,
+      "source": "llm_suggested",
+      "confidence": "low"
+    }
+  ],
+  "recipe_steps": [
+    "Cá lóc làm sạch, luộc chín tới; gỡ lấy thịt, ướp chút nước mắm và tiêu xay, giữ lại nước luộc cá làm nước dùng.",
+    "Bột gạo nhồi với nước ấm thành khối dẻo, cán mỏng trên mặt phẳng rồi cắt thành sợi — cách làm truyền thống ở Quảng Trị là vạt sợi trên mặt giường tre, nguồn gốc tên gọi 'cháo vạt giường'.",
+    "Củ nén và hành tím băm nhỏ, phi thơm với dầu ăn; cho thịt cá vào xào nhẹ cho thấm rồi trút ra để riêng.",
+    "Đun sôi nước luộc cá, thả sợi bột vào nấu đến khi sợi trong, nổi lên và nước hơi sánh; nêm nước mắm vừa ăn.",
+    "Cho thịt cá đã xào trở lại nồi, đảo nhẹ, rắc hành lá và tiêu, dùng nóng."
+  ],
+  "recipe_sources": [],
+  "media": [],
+  "estimated_kcal": null,
+  "external_ref": null,
+  "import_note": "Soạn nháp DISH-005 đợt 2 (mặn nhanh + lõi miền Trung) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung ở đợt nâng Mức 2, không tự tạo liên kết. Biến thể vùng của chao-ca-loc theo cơ chế parent_dish_slug: bản miền Trung (Nghệ An–Quảng Trị) nấu với nghệ và hành tím phi — khác bản gốc ở gia vị chủ đạo và vùng, đúng dự phòng của kế hoạch §3.4. [LV2-009 đợt 9: GIỮ Mức 1 — CHỜ QUYẾT ĐỊNH DANH của chủ dự án (mục mới): định danh 'cháo gạo + bột nghệ, miền Trung' của file là sáng tạo biên tập DISH-005, không có nguồn biên tập nào xác nhận (chỉ một blog bán hàng tự mâu thuẫn — ghi 'cá chép' cho công thức cá lóc). Hai món thật theo vùng: cháo bột cá lóc Quảng Trị ('cháo vạt giường' — sợi bột gạo + củ nén) và cháo ám cá quả Hà Nội (Bắc). Phương án chờ quyết: (a) gộp vào chao-ca-loc như biến thể họ và bỏ nhãn Trung/nghệ; (b) định danh lại thành cháo bột cá lóc Quảng Trị (gao-te → sợi bột gạo + cu-nen); (c) giữ chờ. Không đối chiếu định lượng để tránh hợp thức hoá một định danh chưa xác nhận (cùng nhóm canh-nghe-ca-ro, ca-bong-om-chuoi).] [LV2-010 Phần C — gói quyết định chủ dự án 2026-10-31: A1 XÉT LẠI theo gói duyệt: GIỮ NGUYÊN + báo lại. Ba phương án ở LV2-009 §B.3 — (a) gộp vào chao-ca-loc, (b) định danh lại thành cháo bột cá lóc Quảng Trị, (c) giữ chờ — không phương án nào là 'bộ sửa soạn sẵn': (a) là thao tác gộp/xoá cần chỉ định cơ chế alias, (b) đòi hỏi bộ định lượng hoàn toàn mới (sợi bột gạo + củ nén) từ họ nguồn chưa từng mở cho món Quảng Trị. Gói duyệt không chỉ định phương án — không tự chế. Chờ chủ dự án chỉ định.] [QD-09 — chủ dự án chốt 2026-11-02, phương án B của LV2-012 §4 mục 2] ĐỊNH DANH LẠI toàn bộ: món không còn là biến thể 'cháo cá lóc nghệ (miền Trung)' của chao-ca-loc (định danh do DISH-005 tự sáng tạo, không nguồn biên tập nào xác nhận — LV2-009 §B.3) mà là CHÁO BỘT CÁ LÓC QUẢNG TRỊ ('cháo vạt giường' — sợi bột gạo + củ nén, không trứng, không nghệ). Slug đổi chao-ca-loc-trung → chao-bot-ca-loc-quang-tri, gỡ parent_dish_slug; dự án chưa có cơ chế redirect slug — món đang draft/chưa công khai nên đổi hẳn slug và giữ truy vết tại đây. Thay dòng nguyên liệu theo đúng phương án đã chốt: gao-te → bot-gao (kho chưa có slug sợi bột gạo riêng; lượng 50 g giữ theo vị trí nguyên liệu nền của bản nháp), bỏ bot-nghe, thêm cu-nen 5 g — mọi dòng vẫn llm_suggested/low, needs_review giữ nguyên: CHƯA có họ nguồn Quảng Trị nào đã mở kiểm chứng cho định lượng món này nên không khẳng định bộ số nào là đã kiểm chứng (QT-1); món giữ Mức 1 chờ tra cứu nguồn thật. Ảnh AI cũ (tô cháo gạo vàng nghệ — thuộc định danh cũ) đã gỡ khỏi món và khỏi kho media/MANIFEST; chờ ảnh đúng định danh ở đợt ảnh sau.",
+  "status": "draft",
+  "source": "curated",
+  "confidence": "unknown",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "loai:chao-sup"
+  ]
+}
