@@ -62,6 +62,7 @@ return [
         'dac-san:nam-dinh' => ['name' => 'Đặc sản Nam Định', 'facet' => 'dac-san'],
         'dac-san:thanh-hoa' => ['name' => 'Đặc sản Thanh Hoá', 'facet' => 'dac-san'],
         'dac-san:nghe-an' => ['name' => 'Đặc sản Nghệ An', 'facet' => 'dac-san'],
+        'dac-san:quang-binh' => ['name' => 'Đặc sản Quảng Bình', 'facet' => 'dac-san'],
         'dac-san:hue' => ['name' => 'Đặc sản Huế', 'facet' => 'dac-san'],
         'dac-san:da-nang' => ['name' => 'Đặc sản Đà Nẵng', 'facet' => 'dac-san'],
         'dac-san:quang-nam' => ['name' => 'Đặc sản Quảng Nam', 'facet' => 'dac-san'],
@@ -70,6 +71,7 @@ return [
         'dac-san:an-giang' => ['name' => 'Đặc sản An Giang', 'facet' => 'dac-san'],
         'dac-san:can-tho' => ['name' => 'Đặc sản Cần Thơ', 'facet' => 'dac-san'],
         'dac-san:soc-trang' => ['name' => 'Đặc sản Sóc Trăng', 'facet' => 'dac-san'],
+        'dac-san:phu-quoc' => ['name' => 'Đặc sản Phú Quốc', 'facet' => 'dac-san'],
         'dac-san:vung-tau' => ['name' => 'Đặc sản Bà Rịa – Vũng Tàu', 'facet' => 'dac-san'],
 
         // — Chế độ ăn của món (suy từ thành phần, đúng 1/món) —

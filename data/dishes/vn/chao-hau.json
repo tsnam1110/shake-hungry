@@ -192,7 +192,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 đợt 2 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-007 đợt 7: nâng Mức 2 — 3 nguồn độc lập đã mở (blogamthuc365 sao chép CookBeo nên loại). BỔ SUNG nhóm hạt phụ mà 3/3 nguồn đều có, file thiếu hẳn: đậu xanh hạt 15g, gạo nếp 15g; BỔ SUNG rau răm 5g (2 nguồn đều đúng 5g), dầu ăn 4g, hành tím 5g; nấm rơm 25g dạng tuỳ chọn (chỉ CookBeo). GIỮ hàu 100g — đúng trung vị nguồn (75/100/125). Ghi nhận: biến thể Hạ Long (vn-north) tồn tại song song; giữ vn-central, chủ dự án có thể cân nhắc region vn ở đợt phân loại sau.]",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 đợt 2 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-007 đợt 7: nâng Mức 2 — 3 nguồn độc lập đã mở (blogamthuc365 sao chép CookBeo nên loại). BỔ SUNG nhóm hạt phụ mà 3/3 nguồn đều có, file thiếu hẳn: đậu xanh hạt 15g, gạo nếp 15g; BỔ SUNG rau răm 5g (2 nguồn đều đúng 5g), dầu ăn 4g, hành tím 5g; nấm rơm 25g dạng tuỳ chọn (chỉ CookBeo). GIỮ hàu 100g — đúng trung vị nguồn (75/100/125). Ghi nhận: biến thể Hạ Long (vn-north) tồn tại song song; giữ vn-central, chủ dự án có thể cân nhắc region vn ở đợt phân loại sau.] [QD-12 — chủ dự án chốt 2026-11-02] Gắn nhãn dac-san:quang-binh: TAXONOMY + config/taxonomy.php đã bổ sung hai mã dac-san:phu-quoc và dac-san:quang-binh đợt này; căn cứ gắn — ghi chú văn hoá xác lập món là đặc sản thị trấn Quán Hàu, Quảng Bình (hàu sông Nhật Lệ).",
   "cultural_note": {
     "text": "Cháo hàu là đặc sản của thị trấn Quán Hàu (Quảng Bình), gắn với con hàu sông Nhật Lệ nổi tiếng khắp vùng. Dân gian còn truyền giai thoại rằng xưa kia nông dân các nơi mang hàu đến ngâm ở đoạn sông gần Quán Hàu để thịt hàu ngon hơn. Hàu vào mùa xuân là mập và ngon nhất, đặc biệt là dịp Tết, và trong các món chế biến từ hàu, cháo hàu là món được người dân địa phương lẫn du khách ưa chuộng hơn cả, ăn được vào mọi bữa trong ngày.",
     "sources": [
@@ -210,6 +210,7 @@
   "reviewed_at": null,
   "review_note": null,
   "tags": [
+    "dac-san:quang-binh",
     "loai:chao-sup"
   ]
 }
