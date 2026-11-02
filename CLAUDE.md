@@ -969,6 +969,26 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > đang bị phiên QD-ADJUDICATE-1 giữ thay đổi chưa commit tại thời điểm đó);
 > mục Docker/GOLIVE đã kiểm tra — đã có ở bổ sung lần 46, không bổ sung
 > trùng. Chi tiết: [QD-15-LEGACY-QUEUE](docs/05-tasks/tasks/QD-15-LEGACY-QUEUE.md).
+
+> ## 📗 Bổ sung lần 49, 2026-11-02 — CONSOLIDATE-FINAL: KIỂM CHỨNG CHỐT Ở CỬA SỔ SẠCH + BUNDLE #6
+>
+> Sau khi mọi phiên song song đã kết thúc và cây sạch: seed vào DB kiểm
+> chứng riêng → validate **0 🔴** (3.348 bản ghi; 23 🟡 thuộc các lớp cảnh
+> báo cũ); **Pest toàn bộ một lượt trọn: 177 passed (719 assertions)** —
+> đọc kết quả từ file log riêng của lượt chạy (bài học nhiễu đầu ra trung
+> gian ngày 2026-11-02); **ExportStabilityTest toàn cục đạt cả 3 test**
+> (vòng khép kín toàn cục 0 lệch byte), đối chiếu thủ công seed→export cũng
+> cho cây sạch tuyệt đối. **Census chốt: 215 Mức 3 · 245 Mức 2 thường · 119
+> Mức 2 (có note) · 75 Mức 1 = 654 món** (đầu đợt tại `a310c22`:
+> 187·285·114·68 — biến động gồm đếm lại QD-06/PX-25, các đợt nâng
+> T-04/T-06/T-07 và `mam-ca-ro` về Mức 1 khi đóng QD-11); ghi chú văn hoá
+> **426/654 món**; phủ tính vị ≥60%: **511 món** (92 món ở dải 30–60%, 45
+> món <30%, 6 món sản phẩm Mức 1 không có dòng tổng hợp); **232/436 nguyên
+> liệu có nhãn tính vị (447 dòng)**; media **654/654 món**. **Bundle #6:**
+> `~/workspace/shake-hungry-dev-update-6.bundle` (dải `dd67bd0..HEAD`, kèm
+> ref `dev` rõ ràng) — chờ chủ dự án fetch + merge --ff-only như các đợt
+> trước. Báo cáo tổng hợp toàn đợt T-01…T-13 + QD-01…QD-15 tại
+> `~/workspace/goals/l-c-i-shake-hungry-development/files/bao-cao-tong-hop-xu-ly-ton-dong-2026-11-02.md`.
 **Trạng thái thực tế, kiểm ngày 2026-10-31 (đã chạy lại toàn bộ lệnh kiểm chứng):**
 
 | Hạng mục | Thực tế | Kiểm bằng |
