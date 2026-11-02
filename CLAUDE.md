@@ -989,6 +989,57 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > ref `dev` rõ ràng) — chờ chủ dự án fetch + merge --ff-only như các đợt
 > trước. Báo cáo tổng hợp toàn đợt T-01…T-13 + QD-01…QD-15 tại
 > `~/workspace/goals/l-c-i-shake-hungry-development/files/bao-cao-tong-hop-xu-ly-ton-dong-2026-11-02.md`.
+> ## 📗 Bổ sung lần 50, 2026-11-02 — CHƯƠNG TRÌNH HOÀN THIỆN THEO UỶ QUYỀN CỦA CHỦ DỰ ÁN: QD-15 ĐÓNG TOÀN BỘ + RET-001 + ĐỢT 2/3
+>
+> Chủ dự án trao **uỷ quyền toàn quyền hoàn thiện** (2026-11-02 12:38):
+> agent tự quyết các quyết định còn treo trong phạm vi hoàn thiện phần
+> mềm theo bằng chứng + khuyến nghị đã ghi hồ sơ; ranh giới tự giữ —
+> duyệt nội dung (QT-1) và go-live vẫn của chủ dự án, A5/A6/A7 không
+> đụng. Đã land trong chương trình này:
+>
+> - **QD-15 ĐÓNG TOÀN BỘ:** `com-hen-xao` gộp biến thể vào `com-hen`
+>   (chủ dự án chốt "Gộp"); XOÁ `banh` + `chao-ca-bong` (file + ảnh +
+>   MANIFEST + index) → **kho còn 652 món**; tiền lệ kho-qua-luoc
+>   **KHÔNG mở**; `sup-ca` giữ tổng quát (phương án A). Soát lại tài
+>   liệu golive (`22c4ecd` + `6065fc5`): sửa 6 lỗi đối chiếu file thật
+>   — tài liệu sẵn sàng để deploy theo.
+> - **RET-001 (hiệu ứng giữ chân):** quay số khi lắc + nảy/tia lửa khi
+>   chốt + mâm hiện so le + công tắc lắc máy (devicemotion) + thẻ Món
+>   của ngày tất định theo ngày. Chi tiết: ROADMAP + tasks/RET-001.md.
+> - **Đợt 2 — 16 hồ sơ định danh PHÂN XỬ TOÀN BỘ:** sửa dữ liệu
+>   `tom-cang-nuong` (nướng mọi thuần), `goi-oc` (chốt hoa chuối, đổi
+>   tên "Gỏi ốc bươu hoa chuối"), `goi-ca` (gộp biến thể vào
+>   `goi-ca-trich`); 10 mục giữ nguyên có lý do; mục 27 theo tiền lệ
+>   mục 41; 3 mục xếp đợt nội dung **QD-15-BS** (`nom-chuoi-xanh`,
+>   `nem-chua-ran`, `banh-bong-lan-trung-muoi` — định danh đã kết
+>   luận, biên soạn lại cần nguồn định lượng mới).
+> - **Đợt 3 — đóng backlog phần mềm:** **TEST-002 DONE** (vòng thử Q7:
+>   `--seafood-yield=0.84` FSANZ độc lập kéo nhóm `hap` FNDDS 6,7% →
+>   86,7% trong ±20%, tổng 89,7% → 95,6% — chẩn đoán xác nhận, engine
+>   không đổi; không đặt yield cho nguyên liệu cá Việt, lý do ở
+>   TEST-002); **DATA-002 DONE** (Foundation Foods bản 2025-04-24:
+>   **353 dòng** `usda_foundation`, MANIFEST có SHA-256 gốc, seed dựng
+>   lại đủ); **DATA-004 + CALC-002 DONE** (retention hoãn theo thiết
+>   kế — chỉ áp vi chất; PDF R6 lưu trữ lại `storage/imports/retn06.pdf`);
+>   **ADM-007 HUỶ có phân xử** (cổng ≤5 phút/món đo trên nhập tay —
+>   sản xuất đã chuyển file + seed); **ING-001/002/003 đối chiếu DONE**
+>   (436 file, mapping_note 0 vi phạm; Q6 đã đóng từ 2026-10-31);
+>   `.env.example` bổ sung khối `ADMIN_*`; **TCM-003 DONE** (tuỳ chọn
+>   `show_tcm` của người dùng, mặc định bật; thành phần chấm điểm gợi
+>   ý theo tính vị PHÂN XỬ KHÔNG LÀM — lằn ranh 3 của chính task +
+>   QT-6); **FOOD-COMBINE-001 đợt 1** (23 bản ghi `data/combinations/`,
+>   3 tầng suy ra từ bằng chứng, validator **V21**, test riêng — lớp
+>   thông tin thuần, không lọc/chấm điểm; chi tiết tasks/FOOD-COMBINE-001.md).
+> - **Đính chính các số trong bảng trạng thái 2026-10-31 phía dưới**
+>   (bảng đó là ảnh chụp lịch sử, giữ nguyên để truy vết): "115 test
+>   Pest" → **183 test** (177 + 2 TCM-003 + 4 FOOD-COMBINE); "Chưa có:
+>   Foundation Foods" → **đã nhập** (xem DATA-002 ở trên); census món
+>   hiện tại **652 = 215 Mức 3 · 245 Mức 2 thường · 119 Mức 2 (có
+>   note) · 73 Mức 1**; nguyên liệu **436**, quả **82**; validate
+>   **0 🔴 trên 3.365 bản ghi** (gồm 23 cặp kết hợp). CI vẫn chưa chạy
+>   lần nào — chờ chủ dự án push (bundle #6 + bundle bổ sung từ
+>   `a3bff4f`).
+
 **Trạng thái thực tế, kiểm ngày 2026-10-31 (đã chạy lại toàn bộ lệnh kiểm chứng):**
 
 | Hạng mục | Thực tế | Kiểm bằng |
