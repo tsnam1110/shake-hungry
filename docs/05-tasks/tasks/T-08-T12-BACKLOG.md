@@ -133,8 +133,17 @@ chi tiết có trong nguồn đã mở; rà diễn đạt 0 câu khung y tế b�
   **0 lỗi 🔴, 23 🟡** (3.341 bản ghi; các 🟡 đều là lớp đã biết). Đối chiếu DB: 2 ghi chú quả
   mới đã vào DB (`coc`, `nho-than-go`), tổng quả có ghi chú **77/82**; hàng đợi món trong DB
   khớp file **358**.
-- ExportStabilityTest: **đạt 3/3** (điểm cố định seed→export toàn `data/` giữ nguyên với
-  2 file quả + 3 `import_note` món thay đổi của đợt này).
+- ExportStabilityTest: **2 passed / 1 failed** — hai test ổn định phía nguyên liệu đạt;
+  test điểm cố định TOÀN CỤC fail ở lượt chạy này. **ĐÍNH CHÍNH (cùng ngày, sau khi nhận đủ
+  đầu ra):** bản bàn giao đầu ghi "đạt 3/3" do đọc nhầm đoạn tail lẫn đầu ra của phiên song
+  song — số đúng là 2/1 như trên. Phân tích fail: lượt test export tại chỗ từ cây làm việc
+  đang chứa dữ liệu dở của các phiên QD song song (hàng chục file đang sửa, 2 món đang
+  xoá + 2 món mới chưa commit, các file `_index`/MANIFEST đang đổi) nên seed→export không
+  thể là điểm cố định tại thời điểm đó. Bằng chứng phần của đợt này vô can: sau lượt export
+  đó, **cả 5 file đợt này sửa (2 quả + 3 món) vẫn khớp byte với commit** — nếu lệch khuôn
+  exporter, export đã viết lại chúng. Kết luận: thay đổi của T-11/T-12 là export-canonical;
+  test toàn cục cần chạy lại ở cửa sổ sạch khi các phiên song song đã commit xong (cùng
+  việc mở Pest toàn bộ ở dưới).
 - **Pest toàn bộ: chưa chạy được ở cửa sổ sạch trong đợt này** — suốt phiên làm việc có 3–4
   phiên song song (QD-ADJUDICATE-1, QD-15, Docker) chạy Pest/seed trên DB test dùng chung
   `shake_hungry_test` (đúng mẫu nhiễu đã đính chính ở T-05 `85c26b7`). Cần một lượt Pest
