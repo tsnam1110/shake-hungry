@@ -927,6 +927,26 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > (`usage_restricted`, đính chính lần 16 mục (6)) thành mục phải chốt trước khi mở
 > công khai, không tự quyết thay. Scheduler/queue chưa có service riêng trong gói.
 > Chi tiết: [GOLIVE-DOC](docs/05-tasks/tasks/GOLIVE-DOC.md).
+
+> ## 📗 Bổ sung lần 47, 2026-11-02 — CONSOLIDATE-FINAL: ĐÓNG NÚT THẮT QD-11 — nguyên liệu cá kình
+>
+> **Nguyên liệu mới `ca-kinh`** (cá kình — *Siganus canaliculatus* (Park, 1797),
+> phá Tam Giang; "cá rò" là tên lúc còn nhỏ): số dinh dưỡng từ **TKPI** (Tabel
+> Komposisi Pangan Indonesia, Bộ Y tế Indonesia) mục **GR011 "Ikan baronang,
+> segar"** — 112 kcal, đạm 20,0, béo 1,3, nước 73,7 mỗi 100 g — ánh xạ **cấp
+> chi** *Siganus* spp., nguồn **tầng 6**, confidence low. Các kênh đã tra mà
+> không có số đạt chuẩn: Bảng TPTP VN 2007 toàn văn (nhóm thuỷ sản 8001–8059
+> không có cá kình/cá rò), MEXT Nhật (không có mục Siganus), văn liệu
+> proximate *S. canaliculatus* (chỉ có số theo chất khô hoặc EPA/DHA). Dòng
+> nguyên liệu của `mam-ca-ro` đã đổi `ca-ro-dong` → `ca-kinh` 100 g và tính
+> lại (món mang cờ **chưa kiểm định** qua `ca-kinh`). **Hệ quả mức:**
+> `ca-kinh` chưa có nhãn tính vị từ nguồn đạt chuẩn (đã tra Dược điển
+> TQ/CMRO/A+) nên độ phủ tính vị của món đo lại còn **14,5%** < 60% → rút
+> đường nâng bù `tcm_compensation`, `mam-ca-ro` về **Mức 1** (cổng nguồn công
+> thức Mức 2 thường vốn cũng chưa đạt); đường khôi phục ghi trong
+> `level_note` của món. Chi tiết: `mapping_note` trong
+> `data/ingredients/ca-kinh.json` + mục QD-11 của
+> [QD-ADJUDICATE-1](docs/05-tasks/tasks/QD-ADJUDICATE-1.md).
 **Trạng thái thực tế, kiểm ngày 2026-10-31 (đã chạy lại toàn bộ lệnh kiểm chứng):**
 
 | Hạng mục | Thực tế | Kiểm bằng |

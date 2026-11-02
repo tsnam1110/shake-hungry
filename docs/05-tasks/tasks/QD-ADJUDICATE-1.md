@@ -107,6 +107,24 @@ ngày" không nguồn; mắm giữ nguyên con). **Nút thắt nguyên liệu (g
 `ca-ro-dong`, chờ biên soạn nguyên liệu cá kình có nguồn đạt chuẩn. Ghi chú văn
 hoá vốn đã đúng cá kình con — không sửa. Mức không đổi.
 
+**ĐÓNG NÚT THẮT (CONSOLIDATE-FINAL, 2026-11-02):** đã biên soạn nguyên liệu
+`ca-kinh` (cá kình — *Siganus canaliculatus* (Park, 1797); định danh theo bài
+báo Tạp chí Khoa học ĐH Sư phạm Huế 3(63)/2022 về cá kình phá Tam Giang) với
+số dinh dưỡng từ **TKPI** (Tabel Komposisi Pangan Indonesia, Bộ Y tế
+Indonesia) mục **GR011 "Ikan baronang, segar"** — 112 kcal, đạm 20,0, béo 1,3,
+nước 73,7 — ánh xạ ở **cấp chi** *Siganus* spp., nguồn tầng 6, confidence low;
+hồ sơ đầy đủ (kể cả các kênh đã tra không có số: Bảng TPTP VN 2007 toàn văn,
+MEXT, văn liệu proximate) nằm trong `mapping_note` của
+`data/ingredients/ca-kinh.json`. Dòng nguyên liệu của món đã đổi
+`ca-ro-dong` → `ca-kinh` 100 g và tính lại (món mang cờ chưa kiểm định qua
+`ca-kinh`). **Hệ quả mức (khác dòng "Mức không đổi" ở trên — ghi đính chính rõ
+ràng):** nhãn tính vị cũ là của `ca-ro-dong` (loài khác hẳn) nên không mang
+sang được; `ca-kinh` chưa có nhãn tính vị đạt chuẩn (đã tra Dược điển
+TQ/CMRO/A+) → độ phủ đo lại **14,5%** < 60% → đường nâng bù
+`tcm_compensation` rút lại, món về **Mức 1** (cổng nguồn công thức Mức 2
+thường vốn cũng chưa đạt). Đường khôi phục ghi trong `level_note` của món.
+QD-11 đóng hoàn toàn.
+
 ## QD-12 · TAXONOMY = A — thêm `dac-san:phu-quoc` + `dac-san:quang-binh`
 
 Đã thêm vào `docs/03-data-model/TAXONOMY.md` §2 (từ vựng 14 → 16 giá trị) và

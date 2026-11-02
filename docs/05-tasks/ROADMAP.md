@@ -231,6 +231,15 @@ Mức 2 thường · 118 Mức 2 (có note) · 76 Mức 1 = 654**; validate 0 �
 đối chiếu calo cách ly 0 món ngoài phạm vi đổi số. Chi tiết:
 [tasks/QD-ADJUDICATE-1.md](./tasks/QD-ADJUDICATE-1.md).
 
+**CONSOLIDATE-FINAL — ĐÓNG NÚT THẮT QD-11 (2026-11-02):** biên soạn nguyên
+liệu **`ca-kinh`** (cá kình — *Siganus canaliculatus*; số từ **TKPI** GR011
+"Ikan baronang, segar", cấp chi *Siganus* spp., tầng 6) và đổi dòng nguyên
+liệu của `mam-ca-ro` sang `ca-kinh`, tính lại xong. Hệ quả: `ca-kinh` chưa
+có nhãn tính vị đạt chuẩn → phủ tính vị của món 14,5% → rút đường nâng bù,
+`mam-ca-ro` về **Mức 1** (đường khôi phục ghi trong `level_note` của món).
+Chi tiết: §0 CLAUDE bổ sung lần 47 + mục QD-11 của
+[tasks/QD-ADJUDICATE-1.md](./tasks/QD-ADJUDICATE-1.md).
+
 **T-06 — GHI CHÚ VĂN HOÁ CHO MÓN CÒN THIẾU + TCM-PROMOTE-004 ĐÃ XONG
 (2026-11-02):** VN-001 đợt bổ sung: đo lại 260 món chưa có ghi chú
 (216 Mức 2 thường + 44 Mức 1), nghiên cứu 236 món ngoài phạm vi QD

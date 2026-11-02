@@ -1,0 +1,53 @@
+{
+  "slug": "ca-kinh",
+  "name_vi": "Cá kình (sống)",
+  "name_en": "White-spotted spinefoot, raw",
+  "category": "thuy-san",
+  "reference_food": {
+    "fct_source": "tkpi_id",
+    "external_id": "GR011",
+    "source_url": "https://fliphtml5.com/pklx/ejfk/TABLE-TKPI/28/",
+    "scientific_name": "Siganus spp.",
+    "kcal_per_100g": 112,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 20.0,
+    "fat_g": 1.3,
+    "carb_g": 3.7,
+    "fiber_g": 0.0,
+    "water_g": 73.7,
+    "sodium_mg": 148,
+    "mapping_confidence": "low",
+    "mapping_note": "Biên soạn CONSOLIDATE-FINAL 2026-11-02 — đóng nút thắt nguyên liệu QD-11 của món mam-ca-ro. ĐỊNH DANH LOÀI: cá kình vùng phá Tam Giang (Thừa Thiên Huế) là Siganus canaliculatus (Park, 1797) — cá dìa chấm trắng, họ Siganidae — theo bài báo khoa học 'Đặc điểm hình thái của cá Kình Siganus canaliculatus (Park, 1797) ở phá Tam Giang', Tạp chí Khoa học ĐH Sư phạm Huế 3(63)/2022 (đã mở toàn văn); Wikipedia tiếng Việt mục 'Chi Cá dìa' cũng liệt 'cá kình' cho S. canaliculatus (lưu ý phân loại: một số hệ thống gộp loài này vào phức hợp S. fuscescens). 'Cá rò' là tên cá kình lúc còn nhỏ — căn cứ VietKings đã ghi trong cultural_note của món mam-ca-ro. ĐÃ TRA VÀ KHÔNG CÓ SỐ ĐẠT CHUẨN: (1) Bảng TPTP VN 2007 toàn văn — nhóm 8 thuỷ sản (mã 8001–8059) không có cá kình/cá rò/cá dìa; (2) MEXT Nhật Bản (Bảng thành phần thực phẩm chuẩn — tra toàn văn danh mục cá) không có mục Siganus; (3) văn liệu phân tích proximate S. canaliculatus đã mở đều không dùng được: IJRIAS 2025 chỉ cho số theo chất khô (không có hàm lượng nước), nghiên cứu 88 loài cá Hong Kong chỉ có EPA/DHA + thuỷ ngân, nghiên cứu SDGs Review 2025 là sản phẩm cá khô tẩm ướp. NGUỒN SỐ DÙNG: TKPI — Tabel Komposisi Pangan Indonesia (Kementerian Kesehatan RI, Bộ Y tế Indonesia), mục GR011 'Ikan baronang, segar' (nguồn số gốc KZGPI-1990): nước 73,7 g; năng lượng 112 kcal; đạm 20,0 g; béo 1,3 g; carbohydrat 3,7 g; xơ 0,0 g; tro 1,3 g; Ca 98 mg; P 120 mg; Fe 3,0 mg; Na 148 mg; K 259 mg mỗi 100 g. Đã mở đọc trực tiếp tại bản số hoá bảng cá TKPI (source_url, trang 28) và đối chiếu một bản crawl độc lập của cùng bảng — khớp từng trị số. ÁNH XẠ Ở CẤP CHI (ghi rõ): 'baronang' trong TKPI là tên chung cho cá chi Siganus (S. canaliculatus ở Indonesia có tên riêng 'baronang lingkis') nên đây là số cấp chi Siganus spp. — KHÔNG phải số đo riêng S. canaliculatus; mapping_confidence để low. Vẫn đúng chi, đúng nhóm cá biển gầy và đúng định danh món hơn hẳn xấp xỉ giữ chỗ cũ ca-ro-dong (Anabas testudineus — khác họ hoàn toàn; xem QD-11). Kiểm Atwater: 20,0×4 + 1,3×9 + 3,7×4 = 106,5 so với 112 kcal in trong bảng (lệch ~5%; carbohydrat của TKPI tính theo hiệu số theo quy ước bảng Indonesia) — giữ nguyên trị in của bảng gốc theo kỷ luật nguồn, ghi nhận chênh tại đây. Nguồn tầng 6 theo DATA-PIPELINE §7.2 → các món dùng cá kình mang cờ CHƯA KIỂM ĐỊNH. TÍNH VỊ: KHÔNG gieo nhãn tcm_traits — đã tra các kênh Dược điển Trung Quốc/CMRO Hồng Kông/A+ Y học cho lam-tu-ngu/xú-đỗ-ngư/nê-mãnh, không tìm được dòng tính vị ở nguồn đạt chuẩn trong đợt tra này; hệ quả mức của mam-ca-ro và đường khôi phục ghi ở import_note + level_note của món.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": 9.0,
+  "edible_portion_pct": null,
+  "edible_portion_note": "TKPI có cột BDD (tỉ lệ phần ăn được) nhưng trị số của mục GR011 không đọc chắc được từ bản số hoá đã mở — để null theo kỷ luật DATA-008, chi tiết ở mapping_note của reference_food.",
+  "is_ready_to_eat": false,
+  "units": [],
+  "media": [
+    {
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true,
+      "license": "ai-minh-hoa",
+      "path": "media/ingredients/ca-kinh.webp"
+    }
+  ],
+  "source": "curated",
+  "confidence": "low",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": null,
+  "tags": [
+    "origin:dong-vat",
+    "state:tuoi",
+    "allergen:ca"
+  ]
+}
