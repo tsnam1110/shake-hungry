@@ -315,3 +315,20 @@ a.ld-dcard:hover { box-shadow: 0 2px 4px rgba(0,0,0,.05), 0 14px 34px rgba(0,0,0
 .ld-tcm-ic.anim-spin svg { animation: ld-tcm-spin 26s linear infinite; }
 .ld-tcm-ic.anim-pulse svg { animation: ld-tcm-pulse 3s ease-in-out infinite alternate; }
 @media (prefers-reduced-motion: reduce) { .ld-tcm-ic svg { animation: none !important; } }
+
+/* ===== RET-001: hiệu ứng lắc (quay số + nảy chốt + tia lửa) & Món của ngày ===== */
+#result { position: relative; }
+@keyframes ld-pop { 0% { transform: scale(.965); } 55% { transform: scale(1.012); } 100% { transform: scale(1); } }
+.ld-pop { animation: ld-pop .38s cubic-bezier(.2,.9,.25,1.2); transform-origin: 50% 0; }
+.ld-reel { display: flex; align-items: center; gap: 14px; padding-top: 8px; border-top: 1px solid var(--color-line); margin-top: 18px; }
+.ld-reel img { width: 48px; height: 48px; border-radius: 12px; object-fit: cover; flex: none; background: var(--color-fill); }
+.ld-reel .ld-reel-name { font-size: 24px; font-weight: 800; letter-spacing: -.02em; line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ld-reel .ld-reel-sub { color: var(--color-faint); font-size: 14px; margin-top: 2px; }
+.ld-reel.rolling img { filter: blur(1.2px) saturate(1.15); }
+.ld-burst-p { position: absolute; width: 8px; height: 8px; border-radius: 50%; pointer-events: none; z-index: 5; }
+.ld-rise { opacity: 0; transform: translateY(10px) scale(.985); }
+.ld-rise.in { opacity: 1; transform: none; transition: opacity .34s ease, transform .34s cubic-bezier(.2,.8,.3,1.15); }
+.ld-dotd { display: flex; align-items: center; gap: 13px; text-decoration: none; color: inherit; }
+.ld-dotd img { width: 54px; height: 54px; border-radius: 13px; object-fit: cover; flex: none; background: var(--color-fill); }
+.ld-dotd .ld-dotd-tag { font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--color-mint-dark); }
+@media (prefers-reduced-motion: reduce) { .ld-pop, .ld-rise { animation: none !important; transition: none !important; } .ld-rise { opacity: 1; transform: none; } }

@@ -8,6 +8,21 @@
     <p class="ld-subtitle">Lắc một món hợp bữa, đúng vùng miền bạn thích và tránh những gì bạn không ăn được.
         <span id="auth-area"></span></p>
 
+    {{-- RET-001: Món của ngày --}}
+    @if (!empty($dishOfDay))
+        <section class="ld-card" style="margin-top:16px;padding:13px 16px" aria-label="Món của ngày">
+            <a class="ld-dotd" href="/mon/{{ $dishOfDay['slug'] }}">
+                <img src="{{ $dishOfDay['image'] }}" alt="" loading="lazy" decoding="async">
+                <span style="min-width:0">
+                    <span class="ld-dotd-tag">Món của ngày</span>
+                    <span style="display:block;font-size:18.5px;font-weight:750;letter-spacing:-.01em;line-height:1.25;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ $dishOfDay['name'] }}</span>
+                    <span style="display:block;color:var(--color-sub);font-size:14px;margin-top:1px">{{ $dishOfDay['region'] ?? '' }}{{ $dishOfDay['kcal_label'] ?? '' }}</span>
+                </span>
+                <span style="margin-left:auto;color:var(--color-faint);font-size:20px;flex:none">›</span>
+            </a>
+        </section>
+    @endif
+
     {{-- ===== Khối Lắc (UI-011): giờ hiện tại + gợi ý bữa, lựa chọn ở trên nút Lắc ===== --}}
     <section class="ld-card" style="margin-top:20px" aria-label="Lắc món">
         <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px">
@@ -72,6 +87,11 @@
         <button id="shake-btn" class="ld-btn ld-btn-primary" style="width:100%;margin-top:18px;padding:16px 24px;font-size:18px">
             Lắc một món
         </button>
+
+        <div class="ld-row" style="padding:12px 2px 0">
+            <span class="grow">Lắc máy để lắc món <span style="display:block;font-weight:400;color:var(--color-faint);font-size:13px;margin-top:1px">Bật lên rồi lắc nhẹ điện thoại — trang tự lắc một món cho bạn, khỏi bấm nút</span></span>
+            <button class="ld-switch" type="button" role="switch" aria-checked="false" id="shake-gesture" aria-label="Lắc máy để lắc món"></button>
+        </div>
 
         <div id="result" aria-live="polite">
             <p style="text-align:center;color:var(--color-faint);margin:18px 0 2px">Chọn bữa và khẩu vị ở trên, rồi bấm <b>Lắc một món</b>.</p>
@@ -387,6 +407,95 @@ async function loadToday() {
     } catch { /* khối phụ — lỗi thì ẩn */ }
 }
 
+/* ===== RET-001: quay số + ăn mừng + lắc máy để lắc món ===== */
+const REDUCED_MOTION = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+let gestureTriggered = false;
+let reelPool = [];
+fetch('/api/dishes?per_page=60').then(r => r.json()).then(data => {
+    reelPool = (data.data ?? []).map(d => ({ name: d.names?.[0]?.name ?? d.slug, img: d.image?.url ?? '' })).filter(p => p.name);
+}).catch(() => {});
+
+function startReel(box) {
+    if (REDUCED_MOTION || reelPool.length < 3) return Promise.resolve();
+    box.innerHTML = `<div class="ld-reel rolling"><img alt=""><div style="min-width:0"><div class="ld-reel-name"></div><div class="ld-reel-sub">Đang lắc…</div></div></div>`;
+    const img = box.querySelector('.ld-reel img');
+    const nm = box.querySelector('.ld-reel-name');
+    return new Promise(resolve => {
+        let delay = 55;
+        const t0 = performance.now();
+        (function step() {
+            const p = reelPool[Math.floor(Math.random() * reelPool.length)];
+            nm.textContent = p.name;
+            if (p.img) img.src = p.img;
+            if (performance.now() - t0 < 880) { delay = Math.min(delay * 1.24, 210); setTimeout(step, delay); }
+            else resolve();
+        })();
+    });
+}
+
+function celebrate(box) {
+    if (gestureTriggered) { gestureTriggered = false; if (navigator.vibrate) navigator.vibrate(8); }
+    const el = box.firstElementChild;
+    if (!el || REDUCED_MOTION) return;
+    el.classList.add('ld-pop');
+    const colors = ['#0071e3', '#34c759', '#ff9f0a', '#ffd60a', '#bf5af2'];
+    const cx = box.clientWidth / 2, cy = 30;
+    for (let i = 0; i < 12; i++) {
+        const s = document.createElement('span');
+        s.className = 'ld-burst-p';
+        s.style.background = colors[i % colors.length];
+        s.style.left = cx + 'px'; s.style.top = cy + 'px';
+        box.appendChild(s);
+        const ang = (Math.PI * 2 * i) / 12 + Math.random() * 0.5;
+        const dist = 46 + Math.random() * 52;
+        s.animate([
+            { transform: 'translate(-50%,-50%) scale(1)', opacity: 1 },
+            { transform: `translate(${Math.cos(ang) * dist - 4}px, ${Math.sin(ang) * dist * 0.7 + 16}px) scale(.3)`, opacity: 0 },
+        ], { duration: 620 + Math.random() * 220, easing: 'cubic-bezier(.17,.67,.35,1)' }).onfinish = () => s.remove();
+    }
+}
+
+function staggerTray(box) {
+    if (REDUCED_MOTION) return;
+    const rows = box.querySelectorAll('.ld-group .ld-row');
+    rows.forEach((r, i) => { r.classList.add('ld-rise'); r.style.transitionDelay = (i * 90) + 'ms'; });
+    requestAnimationFrame(() => requestAnimationFrame(() => rows.forEach(r => r.classList.add('in'))));
+}
+
+let gestureOn = localStorage.getItem('lacdoi_shake_gesture') === '1';
+if (gestureOn) setSw('shake-gesture', true);
+document.getElementById('shake-gesture').addEventListener('click', async () => {
+    if (swOn('shake-gesture')) {
+        setSw('shake-gesture', false); gestureOn = false;
+        localStorage.setItem('lacdoi_shake_gesture', '0');
+        return;
+    }
+    let ok = true;
+    if (typeof DeviceMotionEvent !== 'undefined' && typeof DeviceMotionEvent.requestPermission === 'function') {
+        try { ok = (await DeviceMotionEvent.requestPermission()) === 'granted'; } catch { ok = false; }
+    }
+    if (!ok) { ldToast('Trình duyệt chưa cấp quyền cảm biến chuyển động'); return; }
+    setSw('shake-gesture', true); gestureOn = true;
+    localStorage.setItem('lacdoi_shake_gesture', '1');
+    ldToast('Đã bật: lắc nhẹ máy để lắc món');
+});
+let lastAccMag = null, lastGestureAt = 0;
+window.addEventListener('devicemotion', (e) => {
+    if (!gestureOn || document.hidden) return;
+    const a = e.accelerationIncludingGravity;
+    if (!a) return;
+    const mag = Math.abs(a.x ?? 0) + Math.abs(a.y ?? 0) + Math.abs(a.z ?? 0);
+    if (lastAccMag !== null && Math.abs(mag - lastAccMag) > 27 && Date.now() - lastGestureAt > 1500) {
+        const btn = document.getElementById('shake-btn');
+        if (btn && !btn.disabled && !document.getElementById('swap-overlay').classList.contains('open')) {
+            lastGestureAt = Date.now();
+            gestureTriggered = true;
+            btn.click();
+        }
+    }
+    lastAccMag = mag;
+});
+
 /* ===== Lắc món ===== */
 document.getElementById('shake-btn').addEventListener('click', async () => {
     const icon = document.getElementById('shake-icon');
@@ -404,14 +513,16 @@ document.getElementById('shake-btn').addEventListener('click', async () => {
         allergens: [...allergenSlugs],
     };
     try {
+        const box = document.getElementById('result');
+        const reelPromise = startReel(box);
         const resp = await fetch('/api/shake', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json', 'Accept': 'application/json', 'X-CSRF-TOKEN': csrf },
             body: JSON.stringify({ ...lastShakePayload, shake_index: shakeIndex++ }),
         });
         const data = await resp.json();
-        const box = document.getElementById('result');
-        if (data.mode === 'home') { renderTrayResult(data, box); return; }
+        await reelPromise;
+        if (data.mode === 'home') { renderTrayResult(data, box); staggerTray(box); celebrate(box); return; }
         if (!data.dish) {
             box.innerHTML = `<div class="ld-warn" style="margin-top:16px"><span>Chưa tìm được món phù hợp. ${esc(data.suggestion ?? 'Hãy nới lỏng bớt bộ lọc (trừ dị ứng) rồi lắc lại.')}</span></div>`;
             return;
@@ -453,6 +564,7 @@ document.getElementById('shake-btn').addEventListener('click', async () => {
             if (resp.ok) { eatBtn.textContent = 'Đã ghi vào nhật ký'; eatBtn.disabled = true; ldToast('Đã ghi ' + d.name + ' vào nhật ký'); loadToday(); }
             else { eatBtn.textContent = 'Ghi thất bại — thử lại'; }
         };
+        celebrate(box);
     } finally {
         btn.disabled = false; btn.textContent = shakeMode === 'home' ? 'Lắc mâm khác' : 'Lắc món khác';
         setTimeout(() => icon.classList.remove('ld-shaking'), 600);

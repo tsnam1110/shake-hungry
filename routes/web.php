@@ -10,7 +10,41 @@ use App\Http\Controllers\Admin\RegionController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('shake');
+    // RET-001: Món của ngày — chọn tất định theo ngày trong năm từ các món Mức ≥2
+    // đã tính được dinh dưỡng và có ảnh chính; cache tới cuối ngày để mọi khách
+    // trong ngày thấy cùng một món (đúng tính chất "của ngày").
+    $dishOfDay = \Illuminate\Support\Facades\Cache::remember(
+        'dish_of_day_' . now()->format('Y-m-d'),
+        now()->endOfDay(),
+        function () {
+            $ids = \App\Models\Dish::query()
+                ->where('completeness_level', '>=', 2)
+                ->whereHas('nutrition')
+                ->whereHas('media', fn ($q) => $q->where('is_primary', true))
+                ->orderBy('id')
+                ->pluck('id');
+            if ($ids->isEmpty()) {
+                return null;
+            }
+            $dish = \App\Models\Dish::with(['nutrition', 'region'])->find($ids[now()->dayOfYear % $ids->count()]);
+            $image = $dish?->primaryImage();
+            if (! $dish || ! $image) {
+                return null;
+            }
+
+            return [
+                'slug' => $dish->slug,
+                'name' => $dish->displayName(),
+                'image' => $image['url'],
+                'region' => $dish->region?->name,
+                'kcal_label' => $dish->nutrition
+                    ? ' · ' . round($dish->nutrition->kcal_min) . '–' . round($dish->nutrition->kcal_max) . ' kcal/khẩu phần'
+                    : '',
+            ];
+        }
+    );
+
+    return view('shake', ['dishOfDay' => $dishOfDay]);
 });
 
 // --- API công khai cho trang người dùng (GĐ4) ---

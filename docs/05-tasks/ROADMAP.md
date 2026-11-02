@@ -271,6 +271,16 @@ không định danh được) và **XOÁ `chao-ca-bong`** (ÂM TÍNH, tiền l�
 654 → **652 món**; **KHÔNG mở tiền lệ** kho-qua-luoc; **`sup-ca` giữ
 món tổng quát** (phương án A). QD-15 đóng toàn bộ.
 
+**RET-001 — HIỆU ỨNG GIỮ CHÂN ĐÃ TRIỂN KHAI (2026-11-02):** quay số
+khi lắc (reel tên/ảnh món ~0,9 giây, nhịp nhanh → chậm dần trước khi
+chốt món thật), nảy nhẹ + tia lửa hạt màu khi chốt, từng món trong
+mâm hiện so le 90 ms, công tắc "Lắc máy để lắc món" (devicemotion,
+mặc định tắt, nhớ lựa chọn), thẻ **Món của ngày** tất định theo ngày
+(cache tới cuối ngày). Mọi hiệu ứng tôn trọng `prefers-reduced-motion`.
+Kiểm chứng: `npm run build` (bundle mới chứa class mới, trang tham
+chiếu đúng hash), trang chủ/trang món/thư viện đều 200, Pest 177/177.
+Chi tiết + phân tích vòng lặp thói quen: [tasks/RET-001.md](./tasks/RET-001.md).
+
 **T-06 — GHI CHÚ VĂN HOÁ CHO MÓN CÒN THIẾU + TCM-PROMOTE-004 ĐÃ XONG
 (2026-11-02):** VN-001 đợt bổ sung: đo lại 260 món chưa có ghi chú
 (216 Mức 2 thường + 44 Mức 1), nghiên cứu 236 món ngoài phạm vi QD
