@@ -263,6 +263,13 @@ cục chốt ở cửa sổ sạch CONSOLIDATE-FINAL. Chi tiết:
 cả hai file). Còn 4 quyết định QD-15 chờ chủ dự án: xoá file `banh`;
 `chao-ca-bong` xoá/giữ; tiền lệ ánh xạ sản phẩm khô
 kho-qua-luoc/kho-ca-loc; `sup-ca` (A) giữ tổng quát / (B) tách biến thể.
+**Chốt QD-15 (2026-11-02):** chủ dự án trao **toàn quyền quyết định tự
+hoàn thiện phần mềm** (áp dụng đến khi agent xác định hoàn thiện) — 4
+quyết định còn lại đã chốt theo hồ sơ: **XOÁ `banh`** (file tổng quát
+không định danh được) và **XOÁ `chao-ca-bong`** (ÂM TÍNH, tiền lệ A2
+`canh-ca-bong`) — xoá file món + ảnh + MANIFEST + `_index`, kho
+654 → **652 món**; **KHÔNG mở tiền lệ** kho-qua-luoc; **`sup-ca` giữ
+món tổng quát** (phương án A). QD-15 đóng toàn bộ.
 
 **T-06 — GHI CHÚ VĂN HOÁ CHO MÓN CÒN THIẾU + TCM-PROMOTE-004 ĐÃ XONG
 (2026-11-02):** VN-001 đợt bổ sung: đo lại 260 món chưa có ghi chú

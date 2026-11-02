@@ -29,7 +29,7 @@ bằng chứng chốt.
 | 11 | `com-hen-xao` | **ÂM TÍNH** cho biến thể xào chung của file. Mọi nguồn biên tập đã mở (LV2-009/010: VinID, Sổ Tay Nấu Ăn, Công Thức Gia Đình, Tripi, Lữ Hành VN; rà lại đợt này: MIA.vn) đều mô tả cơm hến TRỘN — cơm nguội + hến xào riêng bày trên, chan nước hến | Ghi hồ sơ âm tính vào `import_note`; giữ nguyên trạng (Mức 2 có note) | ✅ **Chủ dự án chốt GỘP (2026-11-02)** — đã gộp biến thể vào `com-hen` (`parent_dish_slug='com-hen'`), giữ nguyên định lượng/hồ sơ riêng để truy vết |
 | 18 | `lau-ngan` | **DƯƠNG TÍNH cấp tên món**: "lẩu ngán" xuất hiện độc lập trong văn viết du lịch Hạ Long đã mở tận nơi (WikiDuLich: "Lẩu ngán cũng là lựa chọn lý tưởng, với nước dùng ngọt thanh và vị ngán đặc trưng"; một cẩm nang du lịch khác cũng liệt "lẩu ngán thơm nồng"). **ÂM TÍNH cấp công thức**: không tồn tại công thức định lượng; báo chí về ngán chỉ ghi hấp/nướng/cháo/gỏi/xào bún. Ánh xạ slug `ngheu` cho ngán vẫn là tạm (khác loài) | Ghi hồ sơ vào `import_note`; giữ nguyên trạng | ✅ Đóng nghi vấn "sáng tạo biên tập DISH-004"; chờ nguồn công thức |
 | 28 | `goi-ca-doi` | **DƯƠNG TÍNH cấp nhắc tên**: cẩm nang ẩm thực Đà Nẵng đã mở ghi gỏi cá "thường dùng cá tai tuế (cá đối)… trộn rau sống, khế, chuối, đậu phộng rang, ăn kèm bánh tráng" — gần khớp khung file; mô tả gỏi cá đối miền Tây ở trang SEO (phụ). **ÂM TÍNH cấp công thức**: không công thức biên tập định lượng đúng loài | Ghi hồ sơ vào `import_note`; giữ nguyên trạng | ✅ Đóng nghi vấn "suy hoàn toàn từ nguyên liệu"; chờ nguồn công thức |
-| 36 | `chao-ca-bong` | **ÂM TÍNH** (rà lại đợt này khớp LV2-012): công thức mở được chỉ thuộc 3 nhóm khác file — cháo ăn dặm gỡ thịt (SaigoneSebaguette, CungConLonKhon), cháo cá bống MÚ khác loài (DayHocNghe), cháo trắng ăn kèm cá bống kho tiêu (Cookpad) | Ghi hồ sơ âm tính vào `import_note`; giữ nguyên trạng Mức 1 | ⏳ Chờ chủ dự án: xoá (tiền lệ `canh-ca-bong` gói A2) hay giữ |
+| 36 | `chao-ca-bong` | **ÂM TÍNH** (rà lại đợt này khớp LV2-012): công thức mở được chỉ thuộc 3 nhóm khác file — cháo ăn dặm gỡ thịt (SaigoneSebaguette, CungConLonKhon), cháo cá bống MÚ khác loài (DayHocNghe), cháo trắng ăn kèm cá bống kho tiêu (Cookpad) | Ghi hồ sơ âm tính vào `import_note`; giữ nguyên trạng Mức 1 | ✅ **ĐÃ XOÁ (2026-11-02)** — theo uỷ quyền toàn quyền hoàn thiện của chủ dự án, áp tiền lệ A2 `canh-ca-bong`: hồ sơ ÂM TÍNH, không tồn tại món đúng định danh để giữ. Đã xoá file món + ảnh + mục MANIFEST + mục `_index`; truy vết giữ ở mục này và lịch sử git |
 
 ### (b) Định danh / biến thể — ĐÃ ÁP DỤNG
 
@@ -71,7 +71,7 @@ bằng chứng chốt.
 
 | File | Đánh giá + khuyến nghị |
 |---|---|
-| `banh` | File "bánh" tổng quát không định danh được món cụ thể nào. **Khuyến nghị: xoá file** (chờ chủ dự án chốt — không tự xoá) |
+| `banh` | File "bánh" tổng quát không định danh được món cụ thể nào. **Khuyến nghị: xoá file** → ✅ **ĐÃ XOÁ (2026-11-02)** theo uỷ quyền toàn quyền hoàn thiện của chủ dự án: đã xoá file món + ảnh + mục MANIFEST + mục `_index`; truy vết giữ ở mục này và lịch sử git |
 | `com` | Đề xuất LV2-012 (đổi dòng `gao-nep` 60g → `com-xanh` 60g) **ĐÃ THỬ VÀ HOÀN LẠI**: `com-xanh` chưa có nhãn `tcm_traits` nên món mất cơ sở nâng bù tính vị (🔴 V20). Giữ `gao-nep`; chỉ đổi được sau khi `com-xanh` có nhãn TCM hoặc chủ dự án chấp nhận bỏ cơ sở nâng bù. Khuyến nghị: giữ làm món tổng quát có chủ đích |
 | `banh-da-do` | Sản phẩm/đặc sản dạng nguyên liệu-thành phẩm. Khuyến nghị: giữ làm mục sản phẩm ngoài chương trình Mức 2 công thức |
 | `banh-trang` | Như trên — giữ làm mục sản phẩm/thực phẩm cơ bản |
@@ -102,20 +102,23 @@ bằng chứng chốt.
 
 **Về QD-06:** quy ước họ nguồn (mỗi họ tối đa 1 nguồn cổng) do QD-ADJUDICATE-1 áp cho 23 món PX-25 — ngoài phạm vi QD-15, không thuộc hàng đợi này.
 
-### `kho-qua-luoc` (mục 41) — TIỀN LỆ "nâng bằng nguồn yếu", chờ chủ dự án
+### `kho-qua-luoc` (mục 41) — TIỀN LỆ "nâng bằng nguồn yếu" — ĐÃ CHỐT: KHÔNG mở tiền lệ (2026-11-02)
 
 | Khía cạnh | Hồ sơ |
 |---|---|
 | Hiện trạng | Mức 2, `needs_review=true`; định lượng 1 khẩu phần (khổ qua + muối chấm) |
 | Vấn đề tiền lệ | Nếu cho phép nâng/giữ Mức 2 bằng nguồn yếu (SEO/thương mại) thì tiền lệ áp cho toàn kho: hàng chục món Mức 1 có nguồn tương tự sẽ đòi cùng xử lý |
 | Khuyến nghị | **KHÔNG mở tiền lệ**: giữ cổng họ nguồn như QD-06; món giữ nguyên trạng đến khi có nguồn biên tập đạt chuẩn |
+| Quyết định | ✅ **Chốt KHÔNG mở tiền lệ (2026-11-02)** theo uỷ quyền toàn quyền hoàn thiện của chủ dự án — đúng khuyến nghị hồ sơ. Không thay đổi dữ liệu |
 
-### `sup-ca` (mục 42) — TIỀN LỆ "món tổng quát đa biến thể", chờ chủ dự án
+### `sup-ca` (mục 42) — TIỀN LỆ "món tổng quát đa biến thể" — ĐÃ CHỐT: phương án A (2026-11-02)
 
 | Phương án | Nội dung |
 |---|---|
 | A — Giữ món tổng quát có chủ đích | Công nhận nhóm "súp cá" là món tổng quát hợp lệ (như cách xử lý `goi-ca` ở §2.3), ghi rõ vào hồ sơ |
 | B — Tách biến thể | Biên soạn các biến thể (súp cá lóc, súp cá chẽm…) thành món riêng, file tổng quát thành parent — cần đợt biên soạn riêng có họ định lượng |
+
+**Quyết định (2026-11-02, theo uỷ quyền toàn quyền hoàn thiện của chủ dự án):** chọn **A — giữ món tổng quát có chủ đích**, nhất quán với cách xử lý `goi-ca`. Phương án B chỉ mở lại khi có đợt biên soạn biến thể với họ định lượng đạt chuẩn. Không thay đổi dữ liệu.
 
 ### `bun-nem` (mục 17) — GHI QUYẾT ĐỊNH HOÃN
 

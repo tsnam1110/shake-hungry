@@ -1,15 +1,10 @@
 {
   "_generated_by": "php artisan lacdoi:export-data — không sửa tay (DATA-REPOSITORY §2)",
-  "count": 654,
+  "count": 652,
   "dishes": [
     {
       "slug": "ba-chi-rang-tom-kho",
       "name": "Ba chỉ rang tôm khô",
-      "country_code": "VN"
-    },
-    {
-      "slug": "banh",
-      "name": "bánh",
       "country_code": "VN"
     },
     {
@@ -1460,11 +1455,6 @@
     {
       "slug": "chao-bot-ca-loc-quang-tri",
       "name": "Cháo bột cá lóc Quảng Trị",
-      "country_code": "VN"
-    },
-    {
-      "slug": "chao-ca-bong",
-      "name": "cháo cá bống",
       "country_code": "VN"
     },
     {

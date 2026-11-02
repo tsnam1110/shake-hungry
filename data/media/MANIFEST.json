@@ -402,12 +402,6 @@
     "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%A1nh_x%C3%A8o_1.jpg",
     "attribution": "Kent Wang from Austin, TX / Wikimedia Commons (CC BY-SA 2.0)"
   },
-  "dishes/banh.webp": {
-    "license": "cc-by-sa-2.0",
-    "author": "Thang Nguyen from Nottingham, United Kingdom",
-    "source_url": "https://commons.wikimedia.org/wiki/File:B%C3%A1nh_b%C3%A8o,_b%E1%BB%99t_l%E1%BB%8Dc,_nem_chua.jpg",
-    "attribution": "Thang Nguyen from Nottingham, United Kingdom / Wikimedia Commons (CC BY-SA 2.0)"
-  },
   "dishes/bi-cuon-chay.webp": {
     "license": "cc-by-3.0",
     "author": "Nguyen Thi Quynh Tram",
@@ -2977,12 +2971,6 @@
     "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói"
   },
   "dishes/cha-trung.webp": {
-    "license": "ai-minh-hoa",
-    "author": "Lắc Đói (AI minh hoạ)",
-    "source_url": null,
-    "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói"
-  },
-  "dishes/chao-ca-bong.webp": {
     "license": "ai-minh-hoa",
     "author": "Lắc Đói (AI minh hoạ)",
     "source_url": null,
