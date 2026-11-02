@@ -384,14 +384,18 @@ Container `app` mỗi lần khởi động chạy đúng thứ tự này:
 5. **Seed từ `data/` CHỈ KHI bảng `dishes` đang trống.** DB đã có món → in
    `Đã có N món — bỏ qua seed.` và không đụng dữ liệu. Khởi động lại **không bao giờ**
    seed đè (đã xác nhận 2 lần trong kiểm thử DOCKER-001).
-6. `ADMIN_EMAIL`/`ADMIN_PASSWORD` có khai → tạo tài khoản admin **nếu email đó chưa
+6. **Tính dinh dưỡng ngay sau seed lần đầu:** `lacdoi:recompute-calories
+   --with-ingredients`. Seed chỉ tính sẵn cho món ≥ Mức 2; bước này nốt phần còn lại
+   để độ phủ dinh dưỡng đầy đủ ngay từ lần boot đầu (thêm ở vòng kiểm chứng lại
+   2026-11-02 — §13.2). Khởi động lại không chạy lại bước này.
+7. `ADMIN_EMAIL`/`ADMIN_PASSWORD` có khai → tạo tài khoản admin **nếu email đó chưa
    tồn tại**; đã tồn tại thì giữ nguyên, không đổi mật khẩu.
-7. `storage:link`; production thì thêm `config:cache` + `route:cache` + `view:cache`.
-8. `exec php-fpm`.
+8. `storage:link`; production thì thêm `config:cache` + `route:cache` + `view:cache`.
+9. `exec php-fpm`.
 
 Kỳ vọng log lần đầu: `Cơ sở dữ liệu trống — đang seed từ data/…` → (seed toàn bộ kho
-biên soạn + các bảng tham chiếu, mất một lúc — đừng ngắt giữa chừng) → `Đã tạo tài
-khoản quản trị: <email của bạn>`. Healthcheck: `db` khoẻ sau ~20 giây, `app` sau tối đa ~60 giây
+biên soạn + các bảng tham chiếu, mất một lúc — đừng ngắt giữa chừng) → `Đã tính N
+món…` (recompute) → `Đã tạo tài khoản quản trị: <email của bạn>`. Healthcheck: `db` khoẻ sau ~20 giây, `app` sau tối đa ~60 giây
 (`start_period` đã chừa thời gian cho seed lần đầu ở mức cơ bản; nếu `$DC ps` vẫn hiện
 `app` ở trạng thái starting trong vài phút đầu kèm log seed đang chạy là bình thường).
 
@@ -543,12 +547,12 @@ $DC logs --tail=50 app    # không còn vòng lặp lỗi; thấy dòng "Đã c�
 ### 7.2. Số lượng dữ liệu — tiêu chí là **file ↔ DB khớp nhau trên đúng commit đã deploy**
 
 Số sẽ trôi theo các đợt dữ liệu, nên nghiệm thu dùng tiêu chí khớp + lệnh đếm lại,
-không dùng một con số tuyệt đối. Số tham chiếu mới nhất — **census cuối đợt xử lý
-toàn bộ tồn đọng 2026-11-02, tại HEAD `a3bff4f`** (đo trực tiếp từ file + DB kiểm
-chứng, xem báo cáo tổng hợp của đợt): **654 món = 215 Mức 3 · 245 Mức 2 thường ·
-119 Mức 2 (có note) · 75 Mức 1**; **436 nguyên liệu** · **82 quả**; ghi chú văn hoá
-**426/654 món**; media **654/654 món** (1.090 file trong `data/media/`); phủ tính vị
-TCM ≥60%: **511 món**; dòng `dish_nutrition` = số món ≥ Mức 2 = **579**. Nếu bạn
+không dùng một con số tuyệt đối. Số tham chiếu mới nhất — **đo lại ở vòng kiểm
+chứng Docker 2026-11-02 trên đúng stack production** (file + DB trong container):
+**652 món = 215 Mức 3 · 245 Mức 2 thường · 119 Mức 2 (có note) · 73 Mức 1**;
+**436 nguyên liệu** · **82 quả** · **38 bản ghi kết hợp**; dòng `dish_nutrition`
+sau lần boot đầu = **649** (seed tính sẵn 579 món ≥ Mức 2, entrypoint recompute
+nốt 70 món còn lại — §5.2 mục 6). Nếu bạn
 deploy ở một commit khác, phân bố mức/nguyên liệu có thể đã dịch chuyển (QT-7 tại
 CLAUDE §0 là nguồn mới nhất) — tổng số món và nguyên tắc file↔DB khớp trên đúng
 commit đã deploy là phần bất biến để đối chiếu.
@@ -851,6 +855,10 @@ giữ ODbL 1.0 + ghi công; `/chinh-sach-bao-mat`; `/mien-tru-y-te`) — kiểm 
 | Mọi trang 500 `MissingAppKeyException` dù entrypoint vừa `key:generate` (vòng 2) | Biến `APP_KEY=` **rỗng** từ env_file được Laravel ưu tiên hơn giá trị trong file `.env`, nên FPM không thấy khoá vừa sinh | Entrypoint export khoá vừa sinh vào môi trường tiến trình trước khi chạy FPM (§5.2 mục 2). Gặp lại triệu chứng này ở production thì gần như chắc chắn do `APP_KEY` trong `.env.production` bị để trống — xử lý như lỗi APP_KEY ở §13.1 |
 | 152/167 test kèm warning `file_get_contents(/var/www/html/.env)` khi chạy Pest trong container (vòng Pest 1) | Image không chứa `.env` (đúng thiết kế — env đến từ env_file), phpdotenv cảnh báo thiếu file | Tầng `test` của Dockerfile tự tạo `.env` rỗng. Chỉ liên quan khi chạy test trong container, không ảnh hưởng production |
 | Boot production thiếu APP_KEY **không** bị chặn ở các bản nháp đầu | Kiểm tra khoá đặt sau bước migrate | Bản cuối: kiểm tra khoá là bước đầu của entrypoint và **thoát ngay** — đây là hành vi đúng hiện tại, gặp thông báo này là hệ thống đang bảo vệ bạn (§13.1) |
+| Mọi lệnh artisan crash `Class "Laravel\Pail\PailServiceProvider" not found` (vòng kiểm chứng lại 2026-11-02) | Build từ cây nguồn đang chạy dev: hai file cache sinh sẵn `bootstrap/cache/packages.php` + `services.php` bị COPY vào image, trỏ tới package dev mà vendor `--no-dev` không có. Bản sạch từ git vốn không chứa hai file này | `.dockerignore` loại hẳn hai file này khỏi context build |
+| Mọi trang trả `File not found.` (FPM 404) dù file có trong image (vòng kiểm chứng lại 2026-11-02) | Cây nguồn trên máy build mang quyền 0660 (umask hạn chế); COPY giữ nguyên quyền nên worker `www-data` và nginx không đọc được mã nguồn | Dockerfile chuẩn hoá `chmod -R a+rX /var/www/html` ngay sau khi COPY |
+| Sau boot đầu, `dish_nutrition` chỉ có 579 dòng thay vì 649 (vòng kiểm chứng lại 2026-11-02) | Entrypoint chỉ seed; seed tính sẵn dinh dưỡng cho món ≥ Mức 2, phần còn lại xưa nay do lệnh recompute chạy tay ở bản dev đảm nhiệm | Entrypoint chạy `lacdoi:recompute-calories --with-ingredients` ngay sau seed lần đầu (§5.2 mục 6) |
+| MySQL chết ngay ở init: `10-init.sql: Permission denied`, chạy lại vẫn lỗi (vòng kiểm chứng lại 2026-11-02) | File `docker/mysql-init.sql` ở nơi checkout không cho user khác đọc (0660) — tiến trình init trong container chạy bằng user `mysql` không đọc được file mount. Init dở để lại volume "độc": khởi động lại không chạy lại init | Bản sạch từ git là 0644 nên không gặp. Nếu gặp: `chmod 644 docker/mysql-init.sql`, rồi `$DC down -v` và chạy lại từ đầu |
 
 ### 13.3. Lỗi vận hành thường gặp khác
 

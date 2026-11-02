@@ -1046,6 +1046,22 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 >   chi tiết tasks/FOOD-COMBINE-002.md. (Số "183 test / 3.365 bản ghi"
 >   ở đính chính trên là ảnh chụp trước đợt 2.)
 
+> ## 📗 Bổ sung lần 51, 2026-11-02 — DOCKER-001: KIỂM CHỨNG LẠI TOÀN BỘ BẰNG DOCKER ENGINE THẬT + 3 SỬA CỨNG
+>
+> Chủ dự án yêu cầu bỏ kết luận cũ, kiểm lại gói Docker từ đầu để "chạy
+> chính xác trên VPS". Đã build bằng **Docker Engine 29** và chạy chu
+> trình sạch từ DB rỗng tới HTTP trên stack production: **652 món ·
+> 436 NL · 82 quả · 38 kết hợp · `dish_nutrition` 649 ngay sau boot
+> đầu**, smoke + đăng nhập admin đạt, khởi động lại không seed đè. Ba
+> lỗi thật đã sửa trong đợt: cache `bootstrap/cache/*.php` của cây dev
+> lẫn vào image làm crash boot (Pail) → chặn ở `.dockerignore`; cây
+> nguồn quyền 0660 làm FPM/nginx không đọc được code → Dockerfile
+> `chmod -R a+rX`; boot đầu thiếu 70 dòng dinh dưỡng → entrypoint
+> recompute ngay sau seed. Phần chưa kiểm chứng được ở VM kiểm thử
+> (sandbox chặn bridge/NAT): mạng nội bộ của compose và TLS/Caddy —
+> chỉ chốt được trên VPS. Chi tiết: tasks/DOCKER-001.md §4.1,
+> GOLIVE-DOCKER §5.2/§7.2/§13.2.
+
 **Trạng thái thực tế, kiểm ngày 2026-10-31 (đã chạy lại toàn bộ lệnh kiểm chứng):**
 
 | Hạng mục | Thực tế | Kiểm bằng |

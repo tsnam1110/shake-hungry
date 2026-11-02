@@ -41,6 +41,11 @@ RUN composer install --no-dev --optimize-autoloader --no-interaction --no-script
 COPY . .
 COPY --from=assets /app/public/build ./public/build
 
+# Chuẩn hoá quyền đọc cho www-data (php-fpm) và nginx bất kể umask của máy
+# build: COPY mang theo quyền của cây nguồn (vd 0660 trên máy dev) khiến
+# worker không đọc được mã nguồn → FPM trả "File not found." (DOCKER-001).
+RUN chmod -R a+rX /var/www/html
+
 COPY docker/php.ini /usr/local/etc/php/conf.d/zz-lacdoi.ini
 COPY docker/php-fpm.conf /usr/local/etc/php-fpm.d/zz-lacdoi.conf
 COPY docker/entrypoint.sh /usr/local/bin/entrypoint.sh

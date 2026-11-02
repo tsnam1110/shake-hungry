@@ -21,6 +21,7 @@ Chờ DB (tối đa 120 giây) → nếu thiếu `.env` thì dựng từ `.env.d
 ngoài production thì tự sinh và **export lại vào môi trường tiến trình** (biến env rỗng từ env_file được
 Laravel ưu tiên hơn file `.env` — không export là FPM không thấy khoá, lỗi đã gặp và đã sửa, xem §4 vòng 2) →
 `migrate --force` → **seed từ `data/` CHỈ KHI bảng `dishes` trống** (khởi động lại không bao giờ seed đè) →
+**recompute dinh dưỡng ngay sau seed lần đầu** (bổ sung ở vòng kiểm chứng lại 2026-11-02, §4.1) →
 tạo tài khoản admin lần đầu nếu `ADMIN_EMAIL`/`ADMIN_PASSWORD` được khai (chỉ tạo khi chưa có, không đổi mật khẩu cũ) →
 `storage:link` → production: `config:cache` + `route:cache` + `view:cache` → `php-fpm`.
 
@@ -72,11 +73,30 @@ Bản kiểm thử dựng từ `git archive` của HEAD **`ae1a5d3`** (cây chí
   (phpdotenv không thấy file `.env` trong image; trên máy dev không có warning này vì có `.env`).
   Sửa: tầng `test` tạo `.env` rỗng (biến thật truyền qua môi trường). Chạy lại: **167/167, 0 warning**.
 
+### 4.1 Vòng kiểm chứng lại 2026-11-02 (chủ dự án yêu cầu bỏ kết luận cũ, kiểm lại từ đầu)
+
+Chạy lại toàn bộ bằng **Docker Engine 29.1.3 thật** cho phần build (image app/web build
+sạch từ Dockerfile của gói) và chạy stack production đầy đủ (MySQL → entrypoint → FPM →
+nginx → HTTP). VM kiểm thử bị sandbox chặn bridge/NAT và overlay-mount nên phần chạy
+dùng harness tương đương (Podman + crun, mạng host, storage vfs; shim CA chỉ để qua
+proxy chặn TLS của VM — không thuộc gói). Phần duy nhất chưa kiểm chứng được tại đây:
+mạng bridge/DNS nội bộ của compose và TLS/Caddy trên VPS thật.
+
+Chu trình sạch từ DB rỗng đạt: **652 món · 436 nguyên liệu · 82 quả · 38 kết hợp**;
+`dish_nutrition` **649 dòng ngay sau boot đầu**; smoke 200: `/`, `/up`, `/thu-vien`,
+`/mon/pho-bo`, `/nguyen-lieu/buoi` (có khối "Kết hợp cần lưu ý"), `/admin` + đăng nhập
+admin qua API đạt, `/api/dishes` total 652, asset `/build/*` có `Cache-Control: public,
+immutable`, `/media/dishes/pho-bo.webp` 200; khởi động lại: bỏ qua seed, không recompute
+lại. Ba lỗi thật phát hiện và đã sửa trong cùng đợt (chi tiết ở GOLIVE §13.2):
+(1) cache `bootstrap/cache/*.php` của cây dev lẫn vào image làm crash boot production →
+chặn ở `.dockerignore`; (2) quyền 0660 của cây nguồn làm FPM/nginx không đọc được code →
+Dockerfile `chmod -R a+rX`; (3) boot đầu thiếu 70 dòng `dish_nutrition` → entrypoint
+recompute sau seed. Kèm `.gitignore` bổ sung `.env.docker`.
+
 **Giới hạn còn lại:**
-- Chưa chạy bằng Docker Engine thật trên máy sạch (VM này không chạy được Docker — xem đầu §4);
-  lần kiểm chứng đầu tiên bằng `docker compose` thật sẽ là khi chủ dự án chạy thử theo tài liệu go-live.
-  Rủi ro còn lại thấp vì Dockerfile/compose theo chuẩn phổ thông và đã qua Podman với cùng ngữ nghĩa;
-  cú pháp cả hai file compose đã được `docker compose config` xác thực (bản prod: db không còn cổng, web :80).
+- *(Đính chính 2026-11-02: mục "chưa chạy Docker Engine thật" ở bản đầu đã được vòng
+  §4.1 thay thế — engine thật đã build + chạy stack như trên; phần chưa kiểm chứng thu
+  hẹp còn mạng bridge của compose và TLS/Caddy, chỉ kiểm chứng được trên VPS.)*
 - Scheduler Laravel (`schedule:run`) và queue worker chưa đóng gói thành service riêng — ghi vào tài liệu go-live.
 - Ảnh `app` 744 MB (gồm `data/` 116 MB + vendor + PHP) — chấp nhận được; tối ưu kích thước không thuộc phạm vi đợt này.
 

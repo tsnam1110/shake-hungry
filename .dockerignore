@@ -14,6 +14,11 @@ storage/framework/cache/data/*
 storage/framework/sessions/*
 storage/framework/views/*
 storage/imports
+# Cache Laravel sinh khi chạy dev — bản sạch từ git không có hai file này;
+# nếu lẫn vào image, app production (vendor --no-dev) crash ngay khi boot
+# vì cache trỏ tới package chỉ có ở dev (laravel/pail). (DOCKER-001)
+bootstrap/cache/packages.php
+bootstrap/cache/services.php
 .phpunit.cache
 .phpunit.result.cache
 workspace

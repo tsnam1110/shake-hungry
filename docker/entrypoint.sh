@@ -1,7 +1,8 @@
 #!/bin/sh
 # Entrypoint container app Lắc Đói (DOCKER-001):
 #   chờ DB → .env tối thiểu → APP_KEY → migrate → seed NẾU DB trống →
-#   tạo admin NẾU được cấu hình → storage:link → cache (production) → php-fpm.
+#   tính dinh dưỡng (recompute) ngay sau seed lần đầu → tạo admin NẾU được
+#   cấu hình → storage:link → cache (production) → php-fpm.
 # Seed chỉ chạy khi bảng dishes trống: khởi động lại KHÔNG bao giờ ghi đè dữ liệu.
 set -e
 cd /var/www/html
@@ -49,7 +50,12 @@ php artisan migrate --force
 DISH_COUNT=$(php artisan tinker --execute='echo \App\Models\Dish::count();' 2>/dev/null | tail -n 1)
 case "$DISH_COUNT" in
     ''|*[!0-9]*) echo "Không đọc được số món (bỏ qua seed): '$DISH_COUNT'";;
-    0) echo "Cơ sở dữ liệu trống — đang seed từ data/…"; php artisan db:seed --force;;
+    0) echo "Cơ sở dữ liệu trống — đang seed từ data/…"
+       php artisan db:seed --force
+       # Seed chỉ tính sẵn dinh dưỡng cho một phần món; recompute để lần
+       # khởi động đầu tiên đạt độ phủ đầy đủ như bản dev (DOCKER-001).
+       echo "Đang tính dinh dưỡng cho toàn bộ món…"
+       php artisan lacdoi:recompute-calories --with-ingredients;;
     *) echo "Đã có $DISH_COUNT món — bỏ qua seed.";;
 esac
 
