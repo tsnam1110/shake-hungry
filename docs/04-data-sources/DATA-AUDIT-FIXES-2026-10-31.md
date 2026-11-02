@@ -87,6 +87,11 @@ chấm ăn vặt là hợp lệ) và ở trang danh mục.
 theo khẩu phần, (b) hạ weight nhóm nước chấm xuống mức tượng trưng để dữ liệu tự nhất quán,
 hay (c) loại hẳn nhóm này khỏi slot bữa chính ở tầng dữ liệu.
 
+> **Đính chính 2026-11-02 — Q10 ĐÃ CHỐT (QD-13):** chủ dự án duyệt phương án **(a) giữ
+> nguyên** — giữ hàng rào khẩu phần `serving_grams < 80 g` của `Recommender::pool` cho vai
+> món chính như hiện tại; không hạ weight, không thiết kế vai phụ riêng cho nước chấm ở
+> đợt này, không đổi code/dữ liệu. Đóng hồ sơ Q10 (QD-ADJUDICATE-1).
+
 ## 6. Ngoài phạm vi đợt này (giữ nguyên, đã có chủ sở hữu ở báo cáo tầm soát §5)
 
 M-5 (`tuong-ot-nha-lam` tỉ lệ định lượng/serving), M-6 (`mam-ruot-an-giang` vỏ rỗng — biên soạn
