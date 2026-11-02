@@ -20,7 +20,7 @@ class LacdoiValidateData extends Command
 {
     protected $signature = 'lacdoi:validate-data';
 
-    protected $description = 'Kiểm tra toàn vẹn dữ liệu trong data/ và database (V1–V20, DATA-PIPELINE §5)';
+    protected $description = 'Kiểm tra toàn vẹn dữ liệu trong data/ và database (V1–V21, DATA-PIPELINE §5)';
 
     /** @var list<string> */
     private array $errors = [];
@@ -39,6 +39,8 @@ class LacdoiValidateData extends Command
         $this->validateDishFiles($dishes, array_keys($ingredients));
         $fruits = is_dir(base_path('data/fruits')) ? $this->loadJsonDir(base_path('data/fruits')) : [];
         $this->validateFruitFiles($fruits, $ingredients);
+        $combinations = is_dir(base_path('data/combinations')) ? $this->loadJsonDir(base_path('data/combinations')) : [];
+        $this->validateCombinationFiles($combinations, array_keys($ingredients), array_keys($fruits));
         $this->validateTaxonomy($ingredients, $dishes);
         $this->validateMediaManifest();
         $this->validateMediaEntries($ingredients, $dishes);
@@ -80,6 +82,93 @@ class LacdoiValidateData extends Command
         }
 
         return $out;
+    }
+
+    /**
+     * V21 — cặp kết hợp cần lưu ý (FOOD-COMBINE-001, 🔴): file trong
+     * data/combinations/ phải đúng schema hồ sơ §7.4 — phía thực phẩm trỏ
+     * slug có thật, phía nhóm/thuốc có nhãn; tầng suy ra từ evidence_class
+     * nên class và science_status phải khớp nhau; E2 bắt buộc có điều kiện,
+     * E3 bắt buộc có nguồn truyền thống; cặp đã bác bắt buộc có nguồn bác.
+     *
+     * @param array<string, array<string, mixed>> $combinations
+     * @param list<string> $ingredientSlugs
+     * @param list<string> $fruitSlugs
+     */
+    private function validateCombinationFiles(array $combinations, array $ingredientSlugs, array $fruitSlugs): void
+    {
+        $statusByClass = ['E1' => ['supported'], 'E2' => ['conditional'], 'E3' => ['unproven', 'refuted']];
+        $seenPairs = [];
+        foreach ($combinations as $fileSlug => $j) {
+            $this->checked++;
+            $slug = (string) ($j['slug'] ?? '');
+            if ($slug !== $fileSlug) {
+                $this->errors[] = "V21 [{$fileSlug}]: slug trong file ('{$slug}') khác tên file";
+            }
+            $sideKeys = [];
+            foreach (['side_a', 'side_b'] as $which) {
+                $s = $j[$which] ?? null;
+                if (! is_array($s) || ! isset($s['type'], $s['ref'])) {
+                    $this->errors[] = "V21 [{$slug}]: {$which} thiếu type/ref";
+                    continue;
+                }
+                $sideKeys[] = $s['type'].':'.$s['ref'];
+                if ($s['type'] === 'ingredient' && ! in_array($s['ref'], $ingredientSlugs, true)) {
+                    $this->errors[] = "V21 [{$slug}]: {$which} trỏ nguyên liệu không tồn tại: {$s['ref']}";
+                }
+                if ($s['type'] === 'fruit' && ! in_array($s['ref'], $fruitSlugs, true)) {
+                    $this->errors[] = "V21 [{$slug}]: {$which} trỏ quả không tồn tại: {$s['ref']}";
+                }
+                if (in_array($s['type'], ['food_group', 'drug_group'], true) && empty($s['label_vi'])) {
+                    $this->errors[] = "V21 [{$slug}]: {$which} dạng nhóm/thuốc bắt buộc có label_vi";
+                }
+                foreach ($s['members'] ?? [] as $m) {
+                    if (! in_array($m, $ingredientSlugs, true) && ! in_array($m, $fruitSlugs, true)) {
+                        $this->errors[] = "V21 [{$slug}]: {$which} member không tồn tại: {$m}";
+                    }
+                }
+            }
+            sort($sideKeys);
+            $pairKey = implode('|', $sideKeys);
+            if (isset($seenPairs[$pairKey])) {
+                $this->errors[] = "V21 [{$slug}]: cặp bị ghi trùng hai bản ghi (đã có ở {$seenPairs[$pairKey]})";
+            }
+            $seenPairs[$pairKey] = $slug;
+
+            $class = (string) ($j['evidence_class'] ?? '');
+            $status = (string) ($j['science_status'] ?? '');
+            if (! isset($statusByClass[$class])) {
+                $this->errors[] = "V21 [{$slug}]: evidence_class '{$class}' không hợp lệ (E1|E2|E3)";
+            } elseif (! in_array($status, $statusByClass[$class], true)) {
+                $this->errors[] = "V21 [{$slug}]: science_status '{$status}' không khớp evidence_class {$class}";
+            }
+            $drugSides = collect(['side_a', 'side_b'])->filter(fn ($w) => ($j[$w]['type'] ?? null) === 'drug_group')->count();
+            $category = (string) ($j['category'] ?? '');
+            if ($category === 'drug_food' && $drugSides !== 1) {
+                $this->errors[] = "V21 [{$slug}]: category drug_food phải có đúng 1 phía drug_group";
+            }
+            if ($category === 'food_food' && $drugSides !== 0) {
+                $this->errors[] = "V21 [{$slug}]: category food_food không được có phía drug_group";
+            }
+            if ($class === 'E2' && trim((string) ($j['condition_vi'] ?? '')) === '') {
+                $this->errors[] = "V21 [{$slug}]: E2 bắt buộc có condition_vi (không có câu điều kiện thì không được vào tầng 2)";
+            }
+            if ($class === 'E3' && empty($j['traditional_source']['text'])) {
+                $this->errors[] = "V21 [{$slug}]: E3 bắt buộc có traditional_source.text (nguồn truyền thống có tên cụ thể)";
+            }
+            $sources = $j['sources'] ?? [];
+            if ($sources === []) {
+                $this->errors[] = "V21 [{$slug}]: thiếu sources (mỗi bản ghi bắt buộc có nguồn đã mở kiểm chứng)";
+            }
+            if ($status === 'refuted' && $sources === []) {
+                $this->errors[] = "V21 [{$slug}]: science_status=refuted bắt buộc ghi nguồn đã bác bỏ";
+            }
+            foreach ($sources as $src) {
+                if (empty($src['url']) || empty($src['accessed'])) {
+                    $this->errors[] = "V21 [{$slug}]: source thiếu url/accessed";
+                }
+            }
+        }
     }
 
     /** @param array<string, array<string, mixed>> $ingredients */

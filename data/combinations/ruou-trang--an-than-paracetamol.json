@@ -1,0 +1,32 @@
+{
+  "slug": "ruou-trang--an-than-paracetamol",
+  "side_a": {
+    "type": "ingredient",
+    "ref": "ruou-trang"
+  },
+  "side_b": {
+    "type": "drug_group",
+    "ref": "benzodiazepine-paracetamol",
+    "label_vi": "Thuốc an thần benzodiazepine và paracetamol"
+  },
+  "category": "drug_food",
+  "evidence_class": "E1",
+  "science_status": "supported",
+  "condition_vi": "Với benzodiazepine (alprazolam…): TRÁNH rượu tuyệt đối khi đang dùng — FDA đặt cảnh báo hộp (ức chế hô hấp, hôn mê, tử vong). Với paracetamol: nhãn OTC của FDA cảnh báo tổn thương gan nặng ở người uống ≥3 ly rượu/ngày khi đang dùng thuốc.",
+  "mechanism_vi": "Benzodiazepine + rượu cộng hưởng ức chế thần kinh trung ương. Rượu mạn tính cảm ứng CYP2E1 (tăng chất độc NAPQI của paracetamol) và làm cạn glutathione → hạ ngưỡng độc gan.",
+  "traditional_source": null,
+  "sources": [
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/medguide.cfm?setid=c89a5396-1d91-c7fa-e053-2995a90a9063",
+      "note": "DailyMed Medication Guide của alprazolam",
+      "accessed": "2026-11-02"
+    },
+    {
+      "url": "https://fda.report/DailyMed/b43974c3-4db9-4201-beee-b22596a2b241",
+      "note": "Nhãn OTC FDA của paracetamol",
+      "accessed": "2026-11-02"
+    }
+  ],
+  "source": "curated",
+  "needs_review": true
+}

@@ -1,0 +1,32 @@
+{
+  "slug": "canxi--levothyroxin",
+  "side_a": {
+    "type": "food_group",
+    "ref": "sua-va-canxi",
+    "label_vi": "Sữa và thực phẩm giàu canxi",
+    "members": [
+      "sua-tuoi",
+      "sua-chua"
+    ]
+  },
+  "side_b": {
+    "type": "drug_group",
+    "ref": "levothyroxin",
+    "label_vi": "Levothyroxin (thuốc hormone tuyến giáp)"
+  },
+  "category": "drug_food",
+  "evidence_class": "E1",
+  "science_status": "supported",
+  "condition_vi": "Uống levothyroxin cách thực phẩm/viên giàu canxi ÍT NHẤT 4 GIỜ (quy tắc ghi trên nhãn thuốc).",
+  "mechanism_vi": "Calcium carbonate tạo chelate không tan với levothyroxin trong ruột → giảm hấp thu; thuốc có cửa sổ điều trị hẹp nên sai lệch hấp thu ảnh hưởng trực tiếp tới TSH.",
+  "traditional_source": null,
+  "sources": [
+    {
+      "url": "https://www.dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5723c7a7-2a1d-4ab6-bf39-b2165ae781a6",
+      "note": "Nhãn DailyMed của levothyroxin (mục tương tác)",
+      "accessed": "2026-11-02"
+    }
+  ],
+  "source": "curated",
+  "needs_review": true
+}

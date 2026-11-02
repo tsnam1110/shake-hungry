@@ -1,0 +1,32 @@
+{
+  "slug": "rau-la-xanh--warfarin",
+  "side_a": {
+    "type": "food_group",
+    "ref": "rau-la-xanh-vitamin-k",
+    "label_vi": "Rau lá xanh giàu vitamin K",
+    "members": [
+      "rau-bina",
+      "mong-toi"
+    ]
+  },
+  "side_b": {
+    "type": "drug_group",
+    "ref": "warfarin",
+    "label_vi": "Warfarin (thuốc chống đông)"
+  },
+  "category": "drug_food",
+  "evidence_class": "E1",
+  "science_status": "supported",
+  "condition_vi": "Thông điệp đúng là GIỮ ỔN ĐỊNH, không phải kiêng: người dùng warfarin nên ăn lượng rau lá xanh ĐỀU ĐẶN mỗi tuần; thay đổi đột ngột (ăn tăng vọt hoặc bỏ hẳn) mới làm chỉ số INR dao động. Ghi 'cấm rau xanh' cho bệnh nhân warfarin là sai hướng dẫn.",
+  "mechanism_vi": "Vitamin K đối kháng dược lý với warfarin; liều thuốc được hiệu chỉnh theo lượng vitamin K ăn vào ổn định (NHS).",
+  "traditional_source": null,
+  "sources": [
+    {
+      "url": "https://www.cuh.nhs.uk/patient-information/dietary-advice-for-patients-taking-warfarin/",
+      "note": "NHS — Dietary advice for patients taking warfarin",
+      "accessed": "2026-11-02"
+    }
+  ],
+  "source": "curated",
+  "needs_review": true
+}

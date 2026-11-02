@@ -1,0 +1,39 @@
+{
+  "slug": "cua--ca-chua",
+  "side_a": {
+    "type": "food_group",
+    "ref": "cua",
+    "label_vi": "Cua (cua biển, cua đồng)",
+    "members": [
+      "cua-bien",
+      "cua-dong"
+    ]
+  },
+  "side_b": {
+    "type": "ingredient",
+    "ref": "ca-chua"
+  },
+  "category": "food_food",
+  "evidence_class": "E3",
+  "science_status": "refuted",
+  "condition_vi": "Không cần kiêng. Đây là tin đồn hiện đại (không có trong cổ thư); các món cua nấu cà chua như bún riêu cua, bánh đa cua vốn là món ăn phổ biến lâu đời.",
+  "mechanism_vi": "Tin đồn cho rằng vitamin C trong cà chua biến asen trong cua thành thạch tín độc. Thực tế asen trong hải sản chủ yếu là arsenobetaine không độc; thí nghiệm dịch dạ dày mô phỏng của CCTV (chương trình 3.15, 2018) cho lượng thạch tín tạo thành ≈ 0.",
+  "traditional_source": {
+    "text": "Danh sách 'thực phẩm kỵ nhau' lưu hành trên web hiện đại — không truy được vào cổ thư nào",
+    "quote": null
+  },
+  "sources": [
+    {
+      "url": "https://news.cgtn.com/news/33677a4e796b7a6333566d54/index.html",
+      "note": "CGTN/CCTV — thí nghiệm bác tin đồn cua + cà chua",
+      "accessed": "2026-11-02"
+    },
+    {
+      "url": "https://Atsdr.Cdc.Gov/environmental-medicine/media/pdfs/2025/06/Clinician-Overview-Arsenic-508.pdf",
+      "note": "ATSDR/CDC — tổng quan lâm sàng về asen (arsenobetaine)",
+      "accessed": "2026-11-02"
+    }
+  ],
+  "source": "curated",
+  "needs_review": true
+}

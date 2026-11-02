@@ -90,6 +90,21 @@ fetch('/api/ingredients/' + slug).then(r => { if (!r.ok) throw new Error('404');
             <p class="ld-note" style="margin-top:10px">Phân loại theo quan niệm ẩm thực truyền thống, gán ở cấp độ nguyên liệu — đây là thông tin văn hoá, không phải tư vấn sức khoẻ. <a href="/mien-tru-y-te">Đọc Miễn trừ y tế</a>.</p>
         </template>` : ''}
 
+        ${(i.combinations ?? []).length ? `<h2 class="ld-section-title">Kết hợp cần lưu ý</h2>
+        <div class="ld-card">
+            ${i.combinations.map(c => `<div style="padding:10px 0;border-bottom:1px solid var(--color-line)">
+                <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+                    <span class="ld-badge" style="background:#eef4fb;color:#0058b3">${esc(c.tier_label)}</span>
+                    <b>${c.other?.type === 'drug_group' ? 'Nếu bạn đang dùng ' : 'Ăn cùng '}${esc(c.other?.label ?? '')}</b>
+                </div>
+                <p class="ld-note" style="margin:6px 0 0"><b>${esc(c.science_label)}.</b>${c.condition_vi ? ' ' + esc(c.condition_vi) : ''}</p>
+                ${c.mechanism_vi ? `<p class="ld-note" style="margin:4px 0 0">${esc(c.mechanism_vi)}</p>` : ''}
+                ${c.traditional_source ? `<p class="ld-note" style="margin:4px 0 0">Nguồn truyền thống: ${esc(c.traditional_source.text)}${c.traditional_source.quote ? ` — “${esc(c.traditional_source.quote)}”` : ''}</p>` : ''}
+                ${(c.sources ?? []).length ? `<p class="ld-note" style="margin:4px 0 0">Nguồn: ${c.sources.map(s => `<a href="${esc(s.url)}" target="_blank" rel="noopener" style="color:var(--color-link)">${esc(s.note)}</a>`).join(' · ')}</p>` : ''}
+            </div>`).join('')}
+            <p class="ld-note" style="margin-top:10px">Thông tin tham khảo về an toàn thực phẩm và văn hoá ẩm thực; không thay thế tư vấn y tế. Nếu đang dùng thuốc, hãy hỏi bác sĩ hoặc dược sĩ của bạn.</p>
+        </div>` : ''}
+
         ${(i.component_links ?? []).length ? `<h2 class="ld-section-title">Thành phần cấu thành</h2>
         <div class="ld-group">
             ${i.component_links.map(c => `<a class="ld-row" href="/nguyen-lieu/${c.slug}" style="text-decoration:none"><span class="grow">${esc(c.name_vi)}</span><span style="color:var(--color-faint);font-size:19px">›</span></a>`).join('')}

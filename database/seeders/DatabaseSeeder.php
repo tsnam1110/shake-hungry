@@ -22,6 +22,7 @@ class DatabaseSeeder extends Seeder
             IngredientSeeder::class,
             DishSeeder::class,
             FruitSeeder::class,
+            CombinationSeeder::class,
         ]);
     }
 }

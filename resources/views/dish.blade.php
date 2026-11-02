@@ -23,7 +23,7 @@ const chev = '<svg class="ld-chev" width="8" height="14" viewBox="0 0 8 14" fill
 
 fetch('/api/dishes/' + encodeURIComponent(slug), { headers: { 'Accept': 'application/json' } })
     .then(r => r.json())
-    .then(({ dish: d, variants, provenance, tcm, allergen_display }) => {
+    .then(({ dish: d, variants, provenance, tcm, allergen_display, combinations, combinations_disclaimer }) => {
         const n = d.nutrition;
         const name = d.names?.find(x => x.is_primary && x.locale === 'vi')?.name ?? d.names?.find(x => x.is_primary)?.name ?? d.slug;
         const aliases = (d.names ?? []).filter(x => !x.is_primary).map(x => x.name);
@@ -84,6 +84,23 @@ fetch('/api/dishes/' + encodeURIComponent(slug), { headers: { 'Accept': 'applica
                 <p class="ld-note" style="margin-top:10px">Nhãn dị ứng suy từ thành phần theo dữ liệu dự án biên soạn — có thể chưa đầy đủ (gia vị, nước chấm, cách chế biến tại quán). Nếu bạn dị ứng nặng, hãy tự kiểm tra thành phần trước khi ăn. <a href="/mien-tru-y-te">Đọc Miễn trừ y tế</a>.</p>`
             : `<p class="ld-note" style="margin:0">Dữ liệu hiện tại chưa ghi nhận chất gây dị ứng phổ biến trong món này. Điều này không phải cam kết an toàn tuyệt đối — nếu bạn bị dị ứng, hãy kiểm tra kỹ thành phần. <a href="/mien-tru-y-te">Đọc Miễn trừ y tế</a>.</p>`}
         </div>
+
+        ${(combinations?.notes ?? []).length ? `
+        <div class="ld-card" style="margin-top:30px">
+            <p class="ld-group-label" style="margin:0 0 6px">Kết hợp cần lưu ý trong món này</p>
+            ${combinations.notes.map(c => `<p class="ld-note" style="margin:8px 0 0"><b>${esc(c.side_a_label)} + ${esc(c.side_b_label)}</b> — ${esc(c.tier_label)}: ${esc(c.condition_vi ?? c.science_label)}</p>`).join('')}
+            <p class="ld-note" style="margin-top:10px">${esc(combinations_disclaimer ?? '')}</p>
+        </div>` : ''}
+
+        ${(combinations?.folk ?? []).length ? `
+        <details class="ld-card" style="margin-top:30px">
+            <summary style="cursor:pointer;font-weight:600;font-size:15.5px">Kiêng kỵ dân gian về món này (${combinations.folk.length})</summary>
+            ${combinations.folk.map(c => `<div style="padding:10px 0 2px">
+                <p class="ld-note" style="margin:0"><b>${esc(c.side_a_label)} + ${esc(c.side_b_label)}</b> — <b>${esc(c.science_label)}.</b>${c.condition_vi ? ' ' + esc(c.condition_vi) : ''}</p>
+                ${c.traditional_source ? `<p class="ld-note" style="margin:4px 0 0">Nguồn truyền thống: ${esc(c.traditional_source.text)}${c.traditional_source.quote ? ` — “${esc(c.traditional_source.quote)}”` : ''}</p>` : ''}
+            </div>`).join('')}
+            <p class="ld-note" style="margin-top:10px">${esc(combinations_disclaimer ?? '')}</p>
+        </details>` : ''}
 
         ${tcm && window.ldShowTcm ? `
         <div class="ld-card" style="margin-top:30px">

@@ -1,0 +1,29 @@
+{
+  "slug": "rau-bina--dau-phu",
+  "side_a": {
+    "type": "ingredient",
+    "ref": "rau-bina"
+  },
+  "side_b": {
+    "type": "ingredient",
+    "ref": "dau-phu"
+  },
+  "category": "food_food",
+  "evidence_class": "E3",
+  "science_status": "refuted",
+  "condition_vi": "Không cần kiêng — cơ chế thật còn NGƯỢC lại lời đồn: canxi ăn cùng bữa giàu oxalat giúp giảm hấp thu oxalat. Người có sỏi thận cần kiểm soát TỔNG lượng oxalat và uống đủ nước, không phải kiêng cặp này. Mẹo có ích thật: chần rau bina bỏ nước để giảm oxalat.",
+  "mechanism_vi": "Oxalat + canxi kết hợp ngay trong ruột thành canxi oxalat không tan rồi thải theo phân — đó là cơ chế bảo vệ; kiêng canxi mới làm tăng hấp thu oxalat và tăng nguy cơ sỏi.",
+  "traditional_source": {
+    "text": "Quan niệm dân gian hiện đại về 'oxalat + canxi sinh sỏi' — suy luận cơ chế, không có trong cổ thư",
+    "quote": null
+  },
+  "sources": [
+    {
+      "url": "https://e.vnexpress.net/news/life/wellness/what-to-eat-and-avoid-if-you-have-kidney-stones-4926238.html",
+      "note": "VnExpress (dẫn BS Trung tâm Dinh dưỡng Nutrihome) về sỏi thận và canxi–oxalat",
+      "accessed": "2026-11-02"
+    }
+  ],
+  "source": "curated",
+  "needs_review": true
+}

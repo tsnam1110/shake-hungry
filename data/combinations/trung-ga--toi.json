@@ -1,0 +1,29 @@
+{
+  "slug": "trung-ga--toi",
+  "side_a": {
+    "type": "ingredient",
+    "ref": "trung-ga"
+  },
+  "side_b": {
+    "type": "ingredient",
+    "ref": "toi"
+  },
+  "category": "food_food",
+  "evidence_class": "E3",
+  "science_status": "unproven",
+  "condition_vi": "Cổ thư gốc chỉ nói trứng với hành/tỏi SỐNG và hậu quả ghi mơ hồ là 'tổn khí' — phần 'tỏi chiên cháy sinh độc' trên web hiện đại là lập luận tách rời, không thuộc cặp này. Chưa có nghiên cứu khoa học kiểm chứng.",
+  "mechanism_vi": "Chưa có cơ chế nào được xác lập trong y văn hiện đại.",
+  "traditional_source": {
+    "text": "Âm thiện chính yếu (1330), mục Thực phẩm tương phản",
+    "quote": "雞子不可與生蔥、蒜同食、損氣"
+  },
+  "sources": [
+    {
+      "url": "https://zh.wikisource.org/zh-hant/%E9%A5%AE%E8%86%B3%E6%AD%A3%E8%A6%81/%E9%A3%9F%E7%89%A9%E7%9B%B8%E5%8F%8D",
+      "note": "Wikisource — Âm thiện chính yếu, mục Thực phẩm tương phản",
+      "accessed": "2026-11-02"
+    }
+  ],
+  "source": "curated",
+  "needs_review": true
+}

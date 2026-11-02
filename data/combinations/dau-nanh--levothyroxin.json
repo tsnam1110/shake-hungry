@@ -1,0 +1,32 @@
+{
+  "slug": "dau-nanh--levothyroxin",
+  "side_a": {
+    "type": "food_group",
+    "ref": "dau-nanh",
+    "label_vi": "Đậu nành và sản phẩm từ đậu nành",
+    "members": [
+      "dau-nanh-hat",
+      "sua-dau-nanh"
+    ]
+  },
+  "side_b": {
+    "type": "drug_group",
+    "ref": "levothyroxin",
+    "label_vi": "Levothyroxin (thuốc hormone tuyến giáp)"
+  },
+  "category": "drug_food",
+  "evidence_class": "E1",
+  "science_status": "supported",
+  "condition_vi": "Nhãn thuốc liệt kê bột đậu nành/sữa đậu nành trong mục tương tác thuốc–thực phẩm (có thể giảm hấp thu levothyroxin) — nhưng KHÔNG đặt quy tắc 4 giờ cho đậu nành như với canxi; việc cần làm là báo bác sĩ để theo dõi TSH và chỉnh liều nếu ăn nhiều đậu nành thường xuyên.",
+  "mechanism_vi": "Đậu nành có thể gắn và làm giảm hấp thu levothyroxin (nhãn DailyMed mục 7.9 Drug–Food Interactions).",
+  "traditional_source": null,
+  "sources": [
+    {
+      "url": "https://www.dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5723c7a7-2a1d-4ab6-bf39-b2165ae781a6",
+      "note": "Nhãn DailyMed của levothyroxin (mục 7.9)",
+      "accessed": "2026-11-02"
+    }
+  ],
+  "source": "curated",
+  "needs_review": true
+}

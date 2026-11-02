@@ -1,0 +1,26 @@
+{
+  "slug": "trung-ga--tra-xanh",
+  "side_a": {
+    "type": "ingredient",
+    "ref": "trung-ga"
+  },
+  "side_b": {
+    "type": "ingredient",
+    "ref": "tra-xanh"
+  },
+  "category": "food_food",
+  "evidence_class": "E2",
+  "science_status": "conditional",
+  "condition_vi": "Chỉ người đang thiếu sắt mới cần tách trà khỏi bữa có trứng. Không có bằng chứng tanin trà kết tủa protein trứng thành chất nguy hiểm — trứng trà (trứng nấu trực tiếp trong trà) là món ăn có thật và lâu đời.",
+  "mechanism_vi": "Phần có thật rút về cơ chế sắt: sắt trong trứng là sắt non-heme, polyphenol trà uống cùng bữa làm giảm hấp thu phần sắt đó (NIH ODS).",
+  "traditional_source": null,
+  "sources": [
+    {
+      "url": "https://ods.od.nih.gov/factsheets/Iron%20-HealthProfessional/",
+      "note": "NIH Office of Dietary Supplements — Iron fact sheet",
+      "accessed": "2026-11-02"
+    }
+  ],
+  "source": "curated",
+  "needs_review": true
+}

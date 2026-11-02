@@ -1,0 +1,32 @@
+{
+  "slug": "ruou-trang--metronidazol",
+  "side_a": {
+    "type": "ingredient",
+    "ref": "ruou-trang"
+  },
+  "side_b": {
+    "type": "drug_group",
+    "ref": "metronidazol",
+    "label_vi": "Metronidazol (thuốc kháng khuẩn/kháng đơn bào)"
+  },
+  "category": "drug_food",
+  "evidence_class": "E2",
+  "science_status": "conditional",
+  "condition_vi": "Nhãn FDA xếp rượu vào mục chống chỉ định khi dùng metronidazol (trong điều trị và ít nhất 3 ngày sau) — thực hành an toàn là tuân theo nhãn. Cần biết thêm: một tổng quan hệ thống năm 2026 trên PubMed kết luận bằng chứng hiện có KHÔNG ủng hộ mạnh rằng tương tác này có ý nghĩa lâm sàng — đây là điểm đang tranh luận, hồ sơ ghi cả hai phía.",
+  "mechanism_vi": "Giả thuyết cổ điển: metronidazol ức chế aldehyde dehydrogenase → tích tụ acetaldehyde → phản ứng giống disulfiram (quặn bụng, buồn nôn, nôn, đau đầu, đỏ bừng).",
+  "traditional_source": null,
+  "sources": [
+    {
+      "url": "https://fda.report/DailyMed/e4ea0c09-cdd1-4708-962c-6ba28b989df3",
+      "note": "Nhãn FDA/DailyMed của metronidazol",
+      "accessed": "2026-11-02"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41366815/",
+      "note": "Tổng quan hệ thống 2026 (PubMed) về tương tác metronidazol–rượu",
+      "accessed": "2026-11-02"
+    }
+  ],
+  "source": "curated",
+  "needs_review": true
+}

@@ -28,7 +28,7 @@ function seasonRow(label, months, bg, fg) {
 
 fetch('/api/fruits/' + encodeURIComponent(slug), { headers: { 'Accept': 'application/json' } })
     .then(r => r.json())
-    .then(({ fruit: f, ingredient: ing, prices }) => {
+    .then(({ fruit: f, ingredient: ing, prices, combinations, combinations_disclaimer }) => {
         const n = ing.nutrition;
         document.title = f.name_vi + ' — Lắc Đói';
         const byRegion = {};
@@ -98,6 +98,21 @@ fetch('/api/fruits/' + encodeURIComponent(slug), { headers: { 'Accept': 'applica
             ${ing.tcm.has_conflicts ? '<p class="ld-note" style="margin-top:10px">Các nguồn chưa thống nhất về tính của loại quả này — giá trị chính ngoài trang là nhãn có độ tin cậy cao nhất; mọi nhãn đều được giữ và hiển thị đầy đủ trong mục này.</p>' : ''}
             <p class="ld-note" style="margin-top:10px">Phân loại theo quan niệm ẩm thực truyền thống — thông tin văn hoá, không phải tư vấn sức khoẻ. <a href="/mien-tru-y-te">Đọc Miễn trừ y tế</a>.</p>
         </template>` : ''}
+
+        ${(combinations ?? []).length ? `<h2 class="ld-section-title">Kết hợp cần lưu ý</h2>
+        <div class="ld-card">
+            ${combinations.map(c => `<div style="padding:10px 0;border-bottom:1px solid var(--color-line)">
+                <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+                    <span class="ld-badge" style="background:#eef4fb;color:#0058b3">${esc(c.tier_label)}</span>
+                    <b>${c.other?.type === 'drug_group' ? 'Nếu bạn đang dùng ' : 'Ăn cùng '}${esc(c.other?.label ?? '')}</b>
+                </div>
+                <p class="ld-note" style="margin:6px 0 0"><b>${esc(c.science_label)}.</b>${c.condition_vi ? ' ' + esc(c.condition_vi) : ''}</p>
+                ${c.mechanism_vi ? `<p class="ld-note" style="margin:4px 0 0">${esc(c.mechanism_vi)}</p>` : ''}
+                ${c.traditional_source ? `<p class="ld-note" style="margin:4px 0 0">Nguồn truyền thống: ${esc(c.traditional_source.text)}${c.traditional_source.quote ? ` — “${esc(c.traditional_source.quote)}”` : ''}</p>` : ''}
+                ${(c.sources ?? []).length ? `<p class="ld-note" style="margin:4px 0 0">Nguồn: ${c.sources.map(s => `<a href="${esc(s.url)}" target="_blank" rel="noopener" style="color:var(--color-link)">${esc(s.note)}</a>`).join(' · ')}</p>` : ''}
+            </div>`).join('')}
+            <p class="ld-note" style="margin-top:10px">${esc(combinations_disclaimer ?? '')}</p>
+        </div>` : ''}
 
         ${f.cultural_note ? `
         <h2 class="ld-section-title">Ghi chú văn hoá</h2>

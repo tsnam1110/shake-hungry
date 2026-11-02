@@ -1,0 +1,31 @@
+{
+  "slug": "sua-tuoi--ca",
+  "side_a": {
+    "type": "ingredient",
+    "ref": "sua-tuoi"
+  },
+  "side_b": {
+    "type": "food_group",
+    "ref": "ca",
+    "label_vi": "Cá (nói chung)",
+    "members": []
+  },
+  "category": "food_food",
+  "evidence_class": "E3",
+  "science_status": "unproven",
+  "condition_vi": "Hai truyền thống độc lập cùng kiêng (đông y TQ và Ayurveda), nhưng lưu ý bản gốc TQ chỉ nói cá SỐNG. Chưa có bằng chứng khoa học về hại ở người khoẻ; nhiều món cá nấu cùng sữa/phô mai tồn tại bình thường trên thế giới. Ngoại lệ thật là dị ứng cá hoặc bất dung nạp lactose của từng người — không phải tương tác của cặp này.",
+  "mechanism_vi": "Không có cơ chế tương tác nào được xác lập trong y văn hiện đại; Dairy Australia: 'there is no scientific evidence to suggest these two foods cannot be eaten together'.",
+  "traditional_source": {
+    "text": "Bản thảo cương mục (mục Sữa bò) + Ayurveda (viruddha āhāra)",
+    "quote": "牛乳忌〈生魚、酸物〉"
+  },
+  "sources": [
+    {
+      "url": "https://www.carakasamhitaonline.com/index.php?title=Viruddha_Ahara",
+      "note": "Charaka Samhita Online — Viruddha Āhāra (nguồn truyền thống Ayurveda)",
+      "accessed": "2026-11-02"
+    }
+  ],
+  "source": "curated",
+  "needs_review": true
+}

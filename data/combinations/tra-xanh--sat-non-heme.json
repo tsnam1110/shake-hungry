@@ -1,0 +1,28 @@
+{
+  "slug": "tra-xanh--sat-non-heme",
+  "side_a": {
+    "type": "ingredient",
+    "ref": "tra-xanh"
+  },
+  "side_b": {
+    "type": "food_group",
+    "ref": "sat-non-heme",
+    "label_vi": "thực phẩm giàu sắt non-heme (rau lá xanh, các loại đậu, trứng…)",
+    "members": []
+  },
+  "category": "food_food",
+  "evidence_class": "E2",
+  "science_status": "conditional",
+  "condition_vi": "Chỉ người đang THIẾU SẮT, phụ nữ mang thai hoặc ăn chay trường mới cần để ý: uống trà (và cà phê) cách bữa giàu sắt khoảng 1–2 giờ. Người bình thường ăn uống đa dạng không cần kiêng.",
+  "mechanism_vi": "Polyphenol trong trà/cà phê ức chế hấp thu sắt non-heme khi uống cùng bữa; NIH lưu ý hiệu ứng bị chế độ ăn hỗn hợp làm suy giảm và ít ảnh hưởng với đa số người.",
+  "traditional_source": null,
+  "sources": [
+    {
+      "url": "https://ods.od.nih.gov/factsheets/Iron%20-HealthProfessional/",
+      "note": "NIH Office of Dietary Supplements — Iron fact sheet",
+      "accessed": "2026-11-02"
+    }
+  ],
+  "source": "curated",
+  "needs_review": true
+}

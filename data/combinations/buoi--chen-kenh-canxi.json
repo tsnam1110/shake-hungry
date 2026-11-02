@@ -1,0 +1,32 @@
+{
+  "slug": "buoi--chen-kenh-canxi",
+  "side_a": {
+    "type": "fruit",
+    "ref": "buoi"
+  },
+  "side_b": {
+    "type": "drug_group",
+    "ref": "chen-kenh-canxi",
+    "label_vi": "Thuốc chẹn kênh canxi (felodipine, nifedipine)"
+  },
+  "category": "drug_food",
+  "evidence_class": "E1",
+  "science_status": "supported",
+  "condition_vi": "Nhãn felodipine/nifedipine đều cảnh báo nước bưởi làm tăng nồng độ thuốc; nhãn nifedipine còn yêu cầu ngừng nước bưởi ít nhất 3 ngày TRƯỚC khi bắt đầu dùng thuốc.",
+  "mechanism_vi": "Bưởi ức chế chuyển hoá lần đầu qua CYP3A4 → sinh khả dụng felodipine tăng ~2 lần, AUC/Cmax nifedipine tăng tới 2 lần → hạ huyết áp quá mức, nhịp nhanh phản xạ.",
+  "traditional_source": null,
+  "sources": [
+    {
+      "url": "https://fda.report/DailyMed/7990a581-3e0f-5d8c-e053-2991aa0aa6a7",
+      "note": "Nhãn FDA/DailyMed của felodipine",
+      "accessed": "2026-11-02"
+    },
+    {
+      "url": "https://fda.report/DailyMed/ca5b0178-4e5f-4077-ada5-7058b0a03858",
+      "note": "Nhãn FDA/DailyMed của nifedipine",
+      "accessed": "2026-11-02"
+    }
+  ],
+  "source": "curated",
+  "needs_review": true
+}

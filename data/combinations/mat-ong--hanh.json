@@ -1,0 +1,39 @@
+{
+  "slug": "mat-ong--hanh",
+  "side_a": {
+    "type": "ingredient",
+    "ref": "mat-ong"
+  },
+  "side_b": {
+    "type": "food_group",
+    "ref": "hanh",
+    "label_vi": "Hành (hành lá, hành tây)",
+    "members": [
+      "hanh-la",
+      "hanh-tay"
+    ]
+  },
+  "category": "food_food",
+  "evidence_class": "E3",
+  "science_status": "refuted",
+  "condition_vi": "Không cần kiêng: cặp này đã được thử nghiệm trực tiếp từ năm 1935 (thí nghiệm Trịnh Tập, ĐH Nam Kinh) trên người và động vật — mọi chỉ số đều bình thường; các đợt lặp lại năm 2008 cũng không thấy hại. Hành + mật ong còn là bài thuốc ho dân gian ở nhiều nước.",
+  "mechanism_vi": "Không có cơ chế độc tính khả thi nào được ghi nhận; kết quả thực nghiệm là âm tính.",
+  "traditional_source": {
+    "text": "Niềm tin dân gian lưu hành; hành trong thang thuốc có mật ong chỉ bị kiêng vì làm mất mùi vị thuốc (Báo Nhân Dân ghi nhận) — không phải độc tính",
+    "quote": null
+  },
+  "sources": [
+    {
+      "url": "https://matters.town/a/xtmosm556a80?locale=en",
+      "note": "Tổng hợp về thí nghiệm Trịnh Tập 1935 và các đợt kiểm chứng sau",
+      "accessed": "2026-11-02"
+    },
+    {
+      "url": "https://nhandan.vn/an-kieng-khi-dung-thuoc-dong-y-post412329.html",
+      "note": "Báo Nhân Dân — ăn kiêng khi dùng thuốc đông y",
+      "accessed": "2026-11-02"
+    }
+  ],
+  "source": "curated",
+  "needs_review": true
+}

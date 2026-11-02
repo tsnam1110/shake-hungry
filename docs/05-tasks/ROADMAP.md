@@ -281,6 +281,31 @@ Kiểm chứng: `npm run build` (bundle mới chứa class mới, trang tham
 chiếu đúng hash), trang chủ/trang món/thư viện đều 200, Pest 177/177.
 Chi tiết + phân tích vòng lặp thói quen: [tasks/RET-001.md](./tasks/RET-001.md).
 
+**ĐỢT 3 HOÀN THIỆN — ĐÓNG BACKLOG PHẦN MỀM (2026-11-02, theo uỷ
+quyền hoàn thiện):** TEST-002 **DONE** (vòng thử Q7: hệ số FSANZ 0,84
+độc lập kéo nhóm `hap` 6,7% → 86,7% trong ±20% — chẩn đoán xác nhận,
+engine không đổi); DATA-002 **DONE** (nhập Foundation Foods 353 dòng);
+DATA-004 + CALC-002 **DONE** (retention hoãn theo thiết kế — chỉ áp
+vi chất); ADM-007 **huỷ có phân xử** (cổng nhập tay đã lỗi thời);
+ING-001/002/003 đối chiếu nghiệm thu **DONE** trong phạm vi agent
+(Q6 đã đóng từ 2026-10-31); `.env.example` bổ sung khối `ADMIN_*`;
+TCM-003 **DONE** (thêm tuỳ chọn hiển thị tính vị của người dùng
+`show_tcm`; thành phần chấm điểm theo tính vị phân xử KHÔNG làm —
+lằn ranh của chính task + QT-6); **FOOD-COMBINE-001 đợt 1** (bên
+dưới). Chi tiết từng mục: file task tương ứng.
+
+**FOOD-COMBINE-001 — LỚP "KẾT HỢP CẦN LƯU Ý" ĐỢT 1 ĐÃ XÂY
+(2026-11-02):** theo thiết kế §7 của hồ sơ nghiên cứu 49 cặp —
+**23 bản ghi** trong `data/combinations/` (5 tầng 2 thực phẩm, 10
+thuốc × thực phẩm, 8 dân gian/đông y — gồm 4 cặp đã bị thực nghiệm
+bác bỏ, ghi rõ "không cần kiêng"); tầng hiển thị suy ra từ
+`evidence_class` bằng hàm thuần (không dùng chữ "Cấm"); hiển thị ở
+trang nguyên liệu/quả hai chiều + trang món (tầng 1–2 hiện thẳng,
+tầng 3 thu gọn); validator **V21**; test riêng gồm bất biến "không
+lọc món, không gắn tuyến thuốc vào món". Lớp thông tin thuần —
+không vào gợi ý/lọc/chấm điểm. Chi tiết:
+[tasks/FOOD-COMBINE-001.md](./tasks/FOOD-COMBINE-001.md).
+
 **ĐỢT 2 HOÀN THIỆN — 16 HỒ SƠ ĐỊNH DANH ĐÃ PHÂN XỬ TOÀN BỘ
 (2026-11-02, theo uỷ quyền hoàn thiện):** sửa dữ liệu 3 mục
 (`tom-cang-nuong` về nướng mọi thuần; `goi-oc` chốt hoa chuối + đổi
@@ -750,8 +775,8 @@ Ghi mọi câu hỏi chưa có lời giải ở đây. **Không đoán rồi là
 | Q1 | Tên chính thức: "Lắc Đói" hay "Lắc Đối"? | — (chỉ ảnh hưởng hiển thị) | Chủ dự án | ✅ **Đã chốt 2026-10-31: "Lắc Đói"** — lắc món ăn khi đói; phương án "Lắc Đối" bị loại |
 | Q2 | Giấy phép mã nguồn & dữ liệu của dự án? | Việc nhập Open Food Facts và Wikibooks | Chủ dự án | ✅ Đã chốt 2026-10-31 ([LEGAL-002](./tasks/LEGAL-002.md)): mã nguồn MIT; dữ liệu collective database — tự biên soạn CC BY 4.0, dòng có nguồn OFF giữ ODbL 1.0 |
 | ~~Q3~~ | ~~Viện Dinh dưỡng có cấp phép không?~~ | — | — | ❌ **Đã đóng 2026-08-31** — chọn hướng tự tra cứu, không xin phép. Xem [LEGAL-001](./tasks/LEGAL-001.md) |
-| Q4 | Ảnh món lấy từ đâu? Tự chụp / mua / CC BY? | DISH-001 trở đi; ảnh hưởng kích thước repo | Chủ dự án | ⬜ Chờ |
-| Q5 | Có cần Git LFS cho ảnh không? | Phụ thuộc Q4 | Chủ dự án | ⬜ Chờ |
+| Q4 | Ảnh món lấy từ đâu? Tự chụp / mua / CC BY? | DISH-001 trở đi; ảnh hưởng kích thước repo | Chủ dự án | ✅ ĐÃ ĐÓNG — thực tế đã chốt qua IMG-001: Wikimedia đã kiểm chứng đúng đối tượng + ảnh AI tạo (gắn nhãn `ai-minh-hoa`), phủ 100% món/nguyên liệu/quả |
+| Q5 | Có cần Git LFS cho ảnh không? | Phụ thuộc Q4 | Chủ dự án | ✅ ĐÃ ĐÓNG — KHÔNG dùng LFS: ảnh WebP lưu thẳng trong repo và đi theo bundle push như hiện tại (IMG-001) |
 | Q10 | Trọng số bữa (meal weight) của nhóm `loai:nuoc-cham`: 21/23 món chấm mang weight 8 ở trưa/tối trong khi EDITORIAL-GUIDE §5 không có quy ước trần theo loại món. Engine Lắc đã chặn món khẩu phần <80 g khỏi gợi ý bữa chính (`Recommender::pool`) nên rủi ro thực tế đã được chặn ở tầng engine — quyết: (a) giữ nguyên, (b) hạ weight nhóm nước chấm xuống mức tượng trưng cho dữ liệu tự nhất quán, hay (c) loại nhóm này khỏi slot bữa chính ở tầng dữ liệu? | Dữ liệu nhóm nước chấm (tầm soát M-4) | Chủ dự án | ✅ ĐÃ CHỐT 2026-11-02 (QD-13): **(a) giữ nguyên** — giữ hàng rào khẩu phần <80 g cho vai chính, không đổi code/dữ liệu ([DATA-AUDIT-FIXES §5](../04-data-sources/DATA-AUDIT-FIXES-2026-10-31.md), QD-ADJUDICATE-1) |
 | **Q7** | **Nguồn nào cho hệ số hao hụt khi nấu của THUỶ SẢN?** Bảng USDA Cooking Yields R2 đã nhập chỉ có thịt và gia cầm — **0 dòng thuỷ sản**. Không thể suy từ SR Legacy (raw ÷ cooked) vì chính USDA là vế tham chiếu của TEST-002 ⇒ phép kiểm thành vòng tròn. Ứng viên: USDA Agriculture Handbook 102 (bản quét 1975, chưa có lớp text) | Nhóm `hap` của TEST-002; mọi món cá hấp/luộc VN | Chủ dự án + tra cứu | 🔵 **Đã có hồ sơ nguồn 2026-11-02 (T-09)**: FSANZ (phi lê hấp/luộc 0,84), Bảng 15 MEXT Nhật, đo thực nghiệm Thái Lan — khuyến nghị thử 0,84 ở vòng hiệu chuẩn riêng; chờ chủ dự án mở vòng hiệu chuẩn mới đổi engine ([T-08-T12-BACKLOG](./tasks/T-08-T12-BACKLOG.md)) |
 | ~~Q8~~ | ~~Repo có đẩy lên remote không, và ở đâu?~~ | — | — | ✅ **Đã đóng 2026-09-01** — `origin` = `git@gitlab.com:Tran-Son-Nam/shake-hungry.git`, branch `dev` đã đẩy (8 commit, 513 file). Rủi ro mất trắng đã gỡ |

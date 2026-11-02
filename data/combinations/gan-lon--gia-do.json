@@ -1,0 +1,26 @@
+{
+  "slug": "gan-lon--gia-do",
+  "side_a": {
+    "type": "ingredient",
+    "ref": "gan-lon"
+  },
+  "side_b": {
+    "type": "ingredient",
+    "ref": "gia-do"
+  },
+  "category": "food_food",
+  "evidence_class": "E2",
+  "science_status": "conditional",
+  "condition_vi": "Chỉ là HAO DINH DƯỠNG khi NẤU CHUNG LÂU (xào lâu, hầm): vitamin C của giá đỗ/rau giàu vitamin C bị phá huỷ bởi nhiệt + sắt/đồng từ gan. Ăn cùng bữa bình thường không hại — ngược lại vitamin C trong bữa còn giúp hấp thu sắt từ gan tốt hơn.",
+  "mechanism_vi": "FAO/WHO: vitamin C bị phá huỷ bởi 'nhiệt + tiếp xúc đồng hoặc sắt' và tan vào nước nấu. Đây là tổn thất dưỡng chất có điều kiện chế biến, không sinh độc.",
+  "traditional_source": null,
+  "sources": [
+    {
+      "url": "https://www.fao.org/4/Y2809E/y2809e0c.htm",
+      "note": "FAO/WHO — Human Vitamin and Mineral Requirements",
+      "accessed": "2026-11-02"
+    }
+  ],
+  "source": "curated",
+  "needs_review": true
+}

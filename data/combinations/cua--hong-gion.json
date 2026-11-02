@@ -1,0 +1,34 @@
+{
+  "slug": "cua--hong-gion",
+  "side_a": {
+    "type": "ingredient",
+    "ref": "cua-bien"
+  },
+  "side_b": {
+    "type": "ingredient",
+    "ref": "hong-gion"
+  },
+  "category": "food_food",
+  "evidence_class": "E2",
+  "science_status": "conditional",
+  "condition_vi": "Chỉ đáng lưu ý khi ăn NHIỀU hồng chát/chưa chín, lúc đói, hoặc dạ dày yếu/đã phẫu thuật dạ dày — rủi ro nằm ở quả hồng chát, không phải ở cua. Hồng chín ngọt lượng vừa ăn cùng cua không sao.",
+  "mechanism_vi": "Tanin (shibuol) của hồng chát polymer hoá trong acid dạ dày, kết dính cellulose và protein thành khối khó tiêu (bezoar).",
+  "traditional_source": {
+    "text": "Âm thiện chính yếu (1330), mục Thực phẩm tương phản",
+    "quote": "柿、梨不可與蟹同食"
+  },
+  "sources": [
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6479654/",
+      "note": "Tổng quan bezoar — cơ chế tanin hồng",
+      "accessed": "2026-11-02"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40655072/",
+      "note": "Ca lâm sàng diospyrobezoar (PubMed)",
+      "accessed": "2026-11-02"
+    }
+  ],
+  "source": "curated",
+  "needs_review": true
+}

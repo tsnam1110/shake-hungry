@@ -488,6 +488,24 @@ liệu có nhãn nào thì **không có dòng** ở bảng này.
 > chọn `unspecified`, dùng công thức Katch–McArdle nếu có % mỡ, nếu không thì lấy trung bình hai hệ
 > số và **hạ `confidence` xuống `low`**, đồng thời nói rõ trên giao diện.
 
+### `combinations` (FOOD-COMBINE-001)
+
+| Cột | Kiểu | Ghi chú |
+|---|---|---|
+| `slug` | varchar(96) unique | định danh cặp, khớp tên file `data/combinations/<slug>.json` |
+| `side_a_*` / `side_b_*` | type varchar(16), ref varchar(96), label varchar(160) null, members json null | mỗi phía: `ingredient` / `fruit` (ref = slug kho) · `food_group` (label + members = các slug thành viên để gắn trang) · `drug_group` (chỉ label, không có trang riêng) |
+| `category` | varchar(16) | `food_food` / `drug_food` |
+| `evidence_class` | varchar(2) | `E1` / `E2` / `E3` — **tầng hiển thị suy ra từ đây bằng hàm thuần trên model, không lưu tay** |
+| `science_status` | varchar(16) | `supported` (E1) / `conditional` (E2) / `unproven` / `refuted` (E3) — validator V21 ép khớp với class |
+| `condition_vi` / `mechanism_vi` | text null | E2 bắt buộc có `condition_vi` (V21) |
+| `traditional_source` | json null | E3 bắt buộc có (V21): `{text, quote}` — nguồn truyền thống có tên cụ thể |
+| `sources` | json | nguồn đã mở kiểm chứng `{url, note, accessed}` — bắt buộc không rỗng |
+| `needs_review` | boolean | duyệt nội dung của chủ dự án như mọi dữ kiện biên soạn (QT-1) |
+
+> Bảng này là lớp THÔNG TIN thuần ("Kết hợp cần lưu ý") — không tham gia gợi ý, lọc
+> hay chấm điểm ở bất kỳ đâu; tuyến thuốc × thực phẩm không gắn vào món/Lắc.
+> Nguồn sự thật là file trong `data/combinations/` (QT-3), dựng lại qua `CombinationSeeder`.
+
 ### `favorites` (UI-014)
 
 | Cột | Kiểu | Ghi chú |

@@ -1,0 +1,27 @@
+{
+  "slug": "buoi--atorvastatin",
+  "side_a": {
+    "type": "fruit",
+    "ref": "buoi"
+  },
+  "side_b": {
+    "type": "drug_group",
+    "ref": "atorvastatin",
+    "label_vi": "Atorvastatin (thuốc hạ mỡ máu nhóm statin)"
+  },
+  "category": "drug_food",
+  "evidence_class": "E1",
+  "science_status": "supported",
+  "condition_vi": "Khác simvastatin: nhãn atorvastatin KHÔNG cấm tuyệt đối — chỉ không khuyến cáo lượng nước bưởi LỚN (>1,2 lít/ngày). Mức độ phải ghi theo từng thuốc, không gộp chung cả nhóm statin.",
+  "mechanism_vi": "Cùng cơ chế CYP3A4 nhưng mức tăng phơi nhiễm thấp hơn (tới ~2,5 lần ở mức ≥750 mL–1,2 L/ngày).",
+  "traditional_source": null,
+  "sources": [
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=56826bb5-ae70-af65-e063-6294a90abf74&version=1",
+      "note": "Nhãn DailyMed của atorvastatin",
+      "accessed": "2026-11-02"
+    }
+  ],
+  "source": "curated",
+  "needs_review": true
+}

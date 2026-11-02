@@ -1,0 +1,27 @@
+{
+  "slug": "buoi--simvastatin",
+  "side_a": {
+    "type": "fruit",
+    "ref": "buoi"
+  },
+  "side_b": {
+    "type": "drug_group",
+    "ref": "simvastatin",
+    "label_vi": "Simvastatin (thuốc hạ mỡ máu nhóm statin)"
+  },
+  "category": "drug_food",
+  "evidence_class": "E1",
+  "science_status": "supported",
+  "condition_vi": "Nhãn thuốc ghi TRÁNH bưởi/nước bưởi khi đang dùng simvastatin. Ức chế enzym là không hồi phục nên uống cách giờ không giải quyết được. Lưu ý: bưởi Việt Nam là pomelo — FDA liệt kê pomelo trong cùng cảnh báo với grapefruit; các con số định lượng trên nhãn được đo trên nước ép grapefruit.",
+  "mechanism_vi": "Furanocoumarin trong bưởi ức chế không hồi phục CYP3A4 ở ruột → nồng độ simvastatin tăng (liều cao tới 7–16 lần) → nguy cơ bệnh cơ/tiêu cơ vân.",
+  "traditional_source": null,
+  "sources": [
+    {
+      "url": "https://fda.report/DailyMed/f32d512f-86fa-b70f-e053-2a95a90afd01",
+      "note": "Nhãn FDA/DailyMed của simvastatin: 'Avoid grapefruit juice when taking simvastatin.'",
+      "accessed": "2026-11-02"
+    }
+  ],
+  "source": "curated",
+  "needs_review": true
+}

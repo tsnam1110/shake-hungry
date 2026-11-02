@@ -1,0 +1,29 @@
+{
+  "slug": "trung-ga--sua-dau-nanh",
+  "side_a": {
+    "type": "ingredient",
+    "ref": "trung-ga"
+  },
+  "side_b": {
+    "type": "ingredient",
+    "ref": "sua-dau-nanh"
+  },
+  "category": "food_food",
+  "evidence_class": "E3",
+  "science_status": "refuted",
+  "condition_vi": "Không cần kiêng ở dạng ĐÃ NẤU: sữa đậu nành đun sôi đúng cách đã bất hoạt chất ức chế trypsin. Điều kiện duy nhất là an toàn chế biến của riêng sữa đậu (không uống sữa đậu sống) — không liên quan tới trứng.",
+  "mechanism_vi": "Đậu nành sống có trypsin inhibitor, nhưng chất này bất hoạt bởi nhiệt — 'after the soy milk is cooked, the trypsin inhibitor is inactivated and cannot play any role.'",
+  "traditional_source": {
+    "text": "Danh sách kỵ nhau lưu hành trên web — không truy được nguồn cổ thư cho cặp này",
+    "quote": null
+  },
+  "sources": [
+    {
+      "url": "https://matters.town/a/xtmosm556a80?locale=en",
+      "note": "Bài tổng hợp chuyên gia (CDC Trung Quốc) về các cặp 'tương khắc' đã kiểm chứng",
+      "accessed": "2026-11-02"
+    }
+  ],
+  "source": "curated",
+  "needs_review": true
+}

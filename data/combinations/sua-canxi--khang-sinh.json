@@ -1,0 +1,37 @@
+{
+  "slug": "sua-canxi--khang-sinh",
+  "side_a": {
+    "type": "food_group",
+    "ref": "sua-va-canxi",
+    "label_vi": "Sữa và thực phẩm giàu canxi",
+    "members": [
+      "sua-tuoi",
+      "sua-chua"
+    ]
+  },
+  "side_b": {
+    "type": "drug_group",
+    "ref": "khang-sinh-tetracyclin-fluoroquinolon",
+    "label_vi": "Kháng sinh tetracyclin và ciprofloxacin (fluoroquinolon)"
+  },
+  "category": "drug_food",
+  "evidence_class": "E1",
+  "science_status": "supported",
+  "condition_vi": "Phải CÁCH GIỜ, và mỗi thuốc một quy tắc: tetracyclin — uống cách bữa/sữa 1 giờ trước hoặc 2 giờ sau; ciprofloxacin — cách sữa/sữa chua 2 giờ trước hoặc 6 giờ sau, và không uống cipro cùng sữa ĐƠN ĐỘC (nhưng được uống trong bữa ăn có chứa sữa).",
+  "mechanism_vi": "Canxi (và Mg/Al/Fe) tạo phức chelate không tan với tetracyclin/fluoroquinolon trong ruột → thuốc không được hấp thu.",
+  "traditional_source": null,
+  "sources": [
+    {
+      "url": "https://fda.report/DailyMed/3ce3e8dc-7fbd-4f8d-a65f-092e1ef21725",
+      "note": "Nhãn FDA/DailyMed của tetracyclin",
+      "accessed": "2026-11-02"
+    },
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e797d0eb-eabb-432a-8053-64eff753f1b0",
+      "note": "DailyMed Medication Guide của ciprofloxacin",
+      "accessed": "2026-11-02"
+    }
+  ],
+  "source": "curated",
+  "needs_review": true
+}

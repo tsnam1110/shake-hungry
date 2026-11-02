@@ -108,6 +108,9 @@ class TaxonomyController extends Controller
         // và liên kết thành phần cho nguyên liệu hỗn hợp — trình bày qua
         // TcmDisplay rồi gỡ relation thô để JSON chỉ có một khuôn duy nhất.
         $ingredient->setAttribute('tcm', \App\Cultural\TcmDisplay::forIngredient($ingredient));
+        // FOOD-COMBINE-001: lớp thông tin "Kết hợp cần lưu ý" (chỉ hiển thị,
+        // không lọc/chấm điểm — xem App\Combinations\CombinationDisplay).
+        $ingredient->setAttribute('combinations', \App\Combinations\CombinationDisplay::forItem($ingredient->slug));
         $ingredient->setAttribute('component_links', $ingredient->components
             ->map(fn ($c) => ['slug' => $c->slug, 'name_vi' => $c->name_vi])
             ->values()->all());

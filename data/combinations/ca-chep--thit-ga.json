@@ -1,0 +1,29 @@
+{
+  "slug": "ca-chep--thit-ga",
+  "side_a": {
+    "type": "ingredient",
+    "ref": "ca-chep"
+  },
+  "side_b": {
+    "type": "ingredient",
+    "ref": "thit-ga-co-da"
+  },
+  "category": "food_food",
+  "evidence_class": "E3",
+  "science_status": "unproven",
+  "condition_vi": "Theo truyền thống đông y, cặp này bị kiêng vì tính vị đối nghịch (gà 'cam ôn', cá chép 'cam hàn' → 'sinh mụn nhọt'). Khoa học hiện đại chưa có nghiên cứu hay ca bệnh nào kiểm chứng; cả hai đều là protein động vật thông thường, không có cặp chất phản ứng đặc thù.",
+  "mechanism_vi": "Chưa có cơ chế sinh hoá nào được xác lập; lý do duy nhất trong mọi nguồn là khung tính vị đông y.",
+  "traditional_source": {
+    "text": "Kim quỹ yếu lược (đời Hán) + Bản thảo cương mục (Lý Thời Trân)",
+    "quote": "魚不可合雞肉食之 · 同鯉魚食成痈疖"
+  },
+  "sources": [
+    {
+      "url": "https://phapluatxahoi.kinhtedothi.vn/apicenter@/print_article&i=167954",
+      "note": "Pháp luật & Xã hội — tổng hợp quan niệm kiêng kỵ, dẫn lương y Bùi Hồng Minh",
+      "accessed": "2026-11-02"
+    }
+  ],
+  "source": "curated",
+  "needs_review": true
+}

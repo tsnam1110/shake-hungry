@@ -140,6 +140,13 @@ class FruitController extends Controller
                     'unverified' => SourceTier::isSecondary($snapshot['fct_source'] ?? null),
                 ],
             ],
+            // FOOD-COMBINE-001: cặp kết hợp cần lưu ý chạm tới quả này (tra
+            // cả slug quả lẫn slug nguyên liệu tương ứng — chỉ hiển thị).
+            'combinations' => collect([
+                ...\App\Combinations\CombinationDisplay::forItem($fruit->slug),
+                ...\App\Combinations\CombinationDisplay::forItem($ingredient->slug),
+            ])->unique('slug')->values()->all(),
+            'combinations_disclaimer' => \App\Combinations\CombinationDisplay::DISCLAIMER,
             // Giá tham khảo mùa vụ (FRUIT-MODULE §3) — không phải giá theo ngày.
             'prices' => $fruit->prices->map(fn ($p) => [
                 'region_code' => $p->region_code,

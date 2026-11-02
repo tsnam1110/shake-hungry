@@ -1,0 +1,29 @@
+{
+  "slug": "thit-ga--kinh-gioi",
+  "side_a": {
+    "type": "ingredient",
+    "ref": "thit-ga-co-da"
+  },
+  "side_b": {
+    "type": "ingredient",
+    "ref": "kinh-gioi"
+  },
+  "category": "food_food",
+  "evidence_class": "E3",
+  "science_status": "unproven",
+  "condition_vi": "Đây là kiêng kỵ DÂN GIAN VIỆT NAM thuần tuý (không có trong cổ thư Trung Quốc — ở đó kinh giới đi với cua và cá diếc). Kinh giới trong món ăn chỉ dùng lượng gia vị rất nhỏ; lương y được trích dẫn cũng nói chưa thấy trường hợp nào nguy kịch. Chưa có nghiên cứu khoa học kiểm chứng.",
+  "mechanism_vi": "Chưa có cơ chế nào được xác lập. Lưu ý: kinh giới Việt Nam (Elsholtzia ciliata) không hoàn toàn đồng nhất với kinh giới (Schizonepeta) trong cổ thư TQ.",
+  "traditional_source": {
+    "text": "Thơ lục bát dân gian Việt Nam về thức ăn tương phản",
+    "quote": "Thịt gà, kinh giới kỵ nhau – Ăn cùng một lúc, ngứa đầu phát điên"
+  },
+  "sources": [
+    {
+      "url": "https://www.quangninhcdc.vn/93-cap-thuc-pham-ky-nhau-va-cach-giai-doc/",
+      "note": "CDC Quảng Ninh đăng lại danh sách dân gian — kèm lời phủ nhận tính khoa học ngay đầu bài",
+      "accessed": "2026-11-02"
+    }
+  ],
+  "source": "curated",
+  "needs_review": true
+}

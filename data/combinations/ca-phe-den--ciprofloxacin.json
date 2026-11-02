@@ -1,0 +1,27 @@
+{
+  "slug": "ca-phe-den--ciprofloxacin",
+  "side_a": {
+    "type": "ingredient",
+    "ref": "ca-phe-den"
+  },
+  "side_b": {
+    "type": "drug_group",
+    "ref": "ciprofloxacin",
+    "label_vi": "Ciprofloxacin (kháng sinh fluoroquinolon)"
+  },
+  "category": "drug_food",
+  "evidence_class": "E1",
+  "science_status": "supported",
+  "condition_vi": "Tương tác ngược chiều: thuốc làm CÀ PHÊ mạnh lên. Khi đang dùng ciprofloxacin nên giảm cà phê/trà và để ý các dấu hiệu thừa caffeine (bồn chồn, mất ngủ, hồi hộp) — nhãn thuốc có ghi rõ.",
+  "mechanism_vi": "Ciprofloxacin ức chế CYP1A2 ở gan → giảm thanh thải caffeine → caffeine tích luỹ.",
+  "traditional_source": null,
+  "sources": [
+    {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=888dc7f9-ad9c-4c00-8d50-8ddfd9bd27c0&type=display",
+      "note": "Nhãn DailyMed của ciprofloxacin: 'CIPRO may increase the effects of caffeine.'",
+      "accessed": "2026-11-02"
+    }
+  ],
+  "source": "curated",
+  "needs_review": true
+}
