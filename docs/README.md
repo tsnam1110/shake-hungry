@@ -68,6 +68,7 @@ Khi dự án đổi bản chất (ví dụ mở API công khai ở v2), hãy th�
 | [09-standards/CODING-STANDARDS.md](09-standards/CODING-STANDARDS.md) | Quy ước code, đặt tên bảng/cột |
 | [09-standards/RESEARCH-PROTOCOL.md](09-standards/RESEARCH-PROTOCOL.md) | **Quy tắc tra cứu dữ liệu**: chính sách nền, thứ tự nguồn, endpoint, bẫy kỹ thuật, cách tra món và công thức |
 | [09-standards/EDITORIAL-GUIDE.md](09-standards/EDITORIAL-GUIDE.md) | Chuẩn biên soạn dữ liệu: đặt tên món, phân biệt biến thể, phân vùng miền, các bẫy đã gặp |
+| [09-standards/DESIGN-SYSTEM.md](09-standards/DESIGN-SYSTEM.md) | **Hệ thiết kế v2 (UI-004)**: token màu, ngữ nghĩa huy hiệu, component `ld-*`, bố cục trang chi tiết và thẻ danh sách chuẩn (món ăn, nguyên liệu, hoa quả làm chuẩn), danh sách lệch chuẩn cần sửa |
 | [10-deployment/DEPLOYMENT.md](10-deployment/DEPLOYMENT.md) | Dựng lại toàn bộ dự án trên máy mới (bản 2026-08-31; giữ checklist bàn giao + production) |
 | [10-deployment/SETUP-DEV.md](10-deployment/SETUP-DEV.md) | **Cài môi trường dev trên máy khác — bản hiện hành**: điều kiện, MySQL 8, seed, tài khoản admin, chạy, kiểm thử, troubleshooting |
 | [10-deployment/GOLIVE-DOCKER.md](10-deployment/GOLIVE-DOCKER.md) | **Go-live production bằng Docker — bản hiện hành**: kiến trúc prod, chuẩn bị VPS, cấu hình `.env.production`, HTTPS/domain, nghiệm thu, vận hành, backup/rollback, checklist bảo mật |
