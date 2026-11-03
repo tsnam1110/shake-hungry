@@ -75,6 +75,11 @@ fetch('/api/drinks/' + slug).then(r => r.json()).then(({drink: d, allergen, comb
     // rồi mới tới các khối khác). Tính được thì hiện khoảng như trang món; chưa tính
     // được thì hiện đúng nhãn đó + lý do thiếu, không số giả.
     const nut = d.nutrition;
+    // Khối "Nguồn gốc con số" có hiện không: có kcal engine, hoặc có chỉ số,
+    // hoặc có ghi chú caffeine mg. Tính trước để các đoạn chữ dưới lưới macro
+    // chỉ hiện ở một nơi: nếu khối hiện thì đoạn chữ chuyển hết xuống khối,
+    // nếu khối không hiện thì đoạn chữ ở nguyên dưới lưới (không mất thông tin).
+    const showProv = (d.key_indicators && d.key_indicators.length) || d.caffeine_mg_note || (nut && nut.status === 'computed');
     // Ghi chú kcal của engine có dạng "Chưa tính được kcal: thiếu: …; missing:…"
     // — phần tiền tố trùng với câu chuẩn của trang, phần "missing:…" là mảnh
     // thô nội bộ. Hiển thị chỉ giữ lại lý do thiếu, viết hoa đầu câu, để thẻ
@@ -94,11 +99,11 @@ fetch('/api/drinks/' + slug).then(r => r.json()).then(({drink: d, allergen, comb
                     <span class="ld-kcal-so ld-tnum">${Math.round(nut.kcal_min)}–${Math.round(nut.kcal_max)}</span>
                     <span style="color:var(--color-sub);font-size:14.5px">kcal</span>
                     ${nut.confidence ? `<span class="ld-capsule ${confClass[nut.confidence] ?? ''}">${confLabel[nut.confidence] ?? ''}</span>` : ''}</div>
-                <p class="ld-note" style="margin-top:10px">${esc(d.kcal_note || '')}</p>
+                ${!showProv ? `<p class="ld-note" style="margin-top:10px">${esc(d.kcal_note || '')}</p>
                 ${nut.missing?.filter(m => !String(m).startsWith('missing:')).length ? `<p class="ld-note" style="margin-top:10px">Chưa tính được một phần (đã nới cận trên theo tỷ lệ thiếu): ${nut.missing.filter(m => !String(m).startsWith('missing:')).map(esc).join('; ')}</p>` : ''}
-                ${nut.negligible?.filter(m => !String(m).startsWith('missing:')).length ? `<p class="ld-note" style="margin-top:10px">Không tính (garnish không đáng kể, mỗi dòng ≈ 1 kcal): ${nut.negligible.filter(m => !String(m).startsWith('missing:')).map(esc).join('; ')}</p>` : ''}`
+                ${nut.negligible?.filter(m => !String(m).startsWith('missing:')).length ? `<p class="ld-note" style="margin-top:10px">Không tính (garnish không đáng kể, mỗi dòng ≈ 1 kcal): ${nut.negligible.filter(m => !String(m).startsWith('missing:')).map(esc).join('; ')}</p>` : ''}` : ''}`
             : `<p style="color:var(--color-faint);margin:10px 0 0">Chưa tính được kcal cho đồ uống này — hệ thống không hiện số thay vì đoán.</p>
-                ${cleanKcalNoteShown ? `<p class="ld-note" style="margin-top:10px">${esc(cleanKcalNoteShown)}</p>` : ''}`}`;
+                ${cleanKcalNoteShown && !showProv ? `<p class="ld-note" style="margin-top:10px">${esc(cleanKcalNoteShown)}</p>` : ''}`}`;
     // Lưới chỉ số theo đúng mẫu lưới macro của trang món (ld-macro): 4 ô
     // dung tích / đường / caffeine / cồn hoặc chỉ số động khi không có cồn,
     // chỉ dùng số đã có trong dữ liệu,
@@ -140,10 +145,10 @@ fetch('/api/drinks/' + slug).then(r => r.json()).then(({drink: d, allergen, comb
         <div class="ld-macro"><div class="gt ld-tnum">${esc(caffeineVal)}</div><div class="nhan">Caffeine</div></div>
         <div class="ld-macro"><div class="gt ld-tnum">${esc(fourthVal)}</div><div class="nhan">${esc(fourthLabel)}</div></div>
     </div>`;
-    if (d.sugar_note) html += `<p class="ld-note" style="margin-top:10px">${esc(d.sugar_note)}</p>`;
-    // Ghi chú caffeine dạng mg KHÔNG để dưới lưới macro nữa — nó thuộc khối
-    // "Nguồn gốc con số" ở dưới (cùng mẫu trang món), xem phần chèn sau ghi
-    // chú văn hoá. Dưới lưới chỉ giữ câu định tính khi chưa có mg.
+    // Các đoạn chữ dưới lưới macro: nếu khối "Nguồn gốc con số" hiện thì
+    // chúng chuyển hết xuống khối (ghi đủ, không rút gọn); nếu khối không
+    // hiện thì vẫn ở đây để không mất thông tin.
+    if (d.sugar_note && !showProv) html += `<p class="ld-note" style="margin-top:10px">${esc(d.sugar_note)}</p>`;
     if (!d.caffeine_mg_note && d.caffeine_level) html += `<p class="ld-note" style="margin-top:10px">Caffeine chỉ mức định tính, không ghi mg.</p>`;
     if (d.alcohol_pct_estimate) html += `<p class="ld-note" style="margin-top:10px">Độ cồn ước tính trước pha loãng.</p>`;
     if (d.alcohol_note) html += `<p class="ld-note" style="margin-top:10px">${esc(d.alcohol_note)}</p>`;
@@ -210,22 +215,25 @@ fetch('/api/drinks/' + slug).then(r => r.json()).then(({drink: d, allergen, comb
     // dùng labelRow như khối nguồn gốc của trang món; ghi chú nguồn (cơ sở của
     // từng chỉ số, ghi chú caffeine mg) nằm dưới nhóm hàng. Chỉ hiện khi có
     // dữ kiện để ghi nguồn — đồ uống chưa có chỉ số nào thì không vẽ khối rỗng.
-    {
-        const hasProv = (d.key_indicators && d.key_indicators.length) || d.caffeine_mg_note || (nut && nut.status === 'computed');
-        if (hasProv) {
-            let provRows = '';
-            if (nut && nut.status === 'computed') provRows += labelRow('Năng lượng mỗi khẩu phần', `${Math.round(nut.kcal_min)}–${Math.round(nut.kcal_max)} kcal`);
-            (d.key_indicators || []).forEach(ki => {
-                const fmt = v => (Math.round(v * 100) / 100);
-                const v = (ki.value_min !== null && ki.value_min !== undefined && ki.value_max !== null && ki.value_max !== undefined) ? `${fmt(ki.value_min)}–${fmt(ki.value_max)}` : (ki.value !== null && ki.value !== undefined ? `${fmt(ki.value)}` : '?');
-                provRows += labelRow(ki.label, `${v} ${ki.unit || ''}`.trim());
-            });
-            if (d.liquid_ml) provRows += labelRow('Dung tích chất lỏng', d.liquid_ml + ' ml');
-            html += `<h2 class="ld-section-title">Nguồn gốc con số</h2><div class="ld-group">${provRows}</div>`;
-            (d.key_indicators || []).forEach(ki => { if (ki.basis) html += `<p class="ld-note" style="margin-top:10px"><b>${esc(ki.label)}:</b> ${esc(ki.basis)}${ki.confidence ? ` (Tin cậy: ${esc(ki.confidence)})` : ''}</p>`; });
-            if (d.caffeine_mg_note) html += `<p class="ld-note" style="margin-top:10px"><b>Caffeine:</b> ${esc(d.caffeine_mg_note)}</p>`;
-            html += `<p class="ld-note" style="margin-top:10px">Khối này ghi rõ mỗi con số lấy từ đâu và ở tầng nào — đã kiểm chứng, hay mới tầm soát — để bạn kiểm chứng được ngay tại trang này, như khối “Nguồn gốc con số” của trang món.</p>`;
-        }
+    // showProv đã tính ở đầu khối dinh dưỡng: khối này chính là nơi các đoạn
+    // chữ dưới lưới macro chuyển xuống, ghi đủ nguyên văn, không rút gọn.
+    if (showProv) {
+        let provRows = '';
+        if (nut && nut.status === 'computed') provRows += labelRow('Năng lượng mỗi khẩu phần', `${Math.round(nut.kcal_min)}–${Math.round(nut.kcal_max)} kcal`);
+        (d.key_indicators || []).forEach(ki => {
+            const v = (ki.value_min !== null && ki.value_min !== undefined && ki.value_max !== null && ki.value_max !== undefined) ? `${fmtNum(ki.value_min)}–${fmtNum(ki.value_max)}` : (ki.value !== null && ki.value !== undefined ? fmtNum(ki.value) : '?');
+            provRows += labelRow(ki.label, `${v} ${ki.unit || ''}`.trim());
+        });
+        if (d.liquid_ml) provRows += labelRow('Dung tích chất lỏng', d.liquid_ml + ' ml');
+        html += `<h2 class="ld-section-title">Nguồn gốc con số</h2><div class="ld-group">${provRows}</div>`;
+        if (nut && nut.status === 'computed' && d.kcal_note) html += `<p class="ld-note" style="margin-top:10px">${esc(d.kcal_note)}</p>`;
+        if (nut && nut.status !== 'computed' && cleanKcalNoteShown) html += `<p class="ld-note" style="margin-top:10px">${esc(cleanKcalNoteShown)}</p>`;
+        if (nut && nut.missing?.filter(m => !String(m).startsWith('missing:')).length) html += `<p class="ld-note" style="margin-top:10px">Chưa tính được một phần (đã nới cận trên theo tỷ lệ thiếu): ${nut.missing.filter(m => !String(m).startsWith('missing:')).map(esc).join('; ')}</p>`;
+        if (nut && nut.negligible?.filter(m => !String(m).startsWith('missing:')).length) html += `<p class="ld-note" style="margin-top:10px">Không tính (garnish không đáng kể, mỗi dòng ≈ 1 kcal): ${nut.negligible.filter(m => !String(m).startsWith('missing:')).map(esc).join('; ')}</p>`;
+        if (d.sugar_note) html += `<p class="ld-note" style="margin-top:10px">${esc(d.sugar_note)}</p>`;
+        (d.key_indicators || []).forEach(ki => { if (ki.basis) html += `<p class="ld-note" style="margin-top:10px"><b>${esc(ki.label)}:</b> ${esc(ki.basis)}${ki.confidence ? ` (Tin cậy: ${esc(ki.confidence)})` : ''}</p>`; });
+        if (d.caffeine_mg_note) html += `<p class="ld-note" style="margin-top:10px"><b>Caffeine:</b> ${esc(d.caffeine_mg_note)}</p>`;
+        html += `<p class="ld-note" style="margin-top:10px">Khối này ghi rõ mỗi con số lấy từ đâu và ở tầng nào — đã kiểm chứng, hay mới tầm soát — để bạn kiểm chứng được ngay tại trang này, như khối “Nguồn gốc con số” của trang món.</p>`;
     }
 
     if (d.kind === 'dong-goi') {
