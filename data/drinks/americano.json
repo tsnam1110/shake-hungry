@@ -19,7 +19,8 @@
     {
       "name": "nước nóng",
       "quantity": 100,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "nuoc-loc"
     }
   ],
   "recipe_steps": [
@@ -48,10 +49,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-03: gắn nước nóng qua hồ sơ nuoc-loc mới (0 kcal), thêm liquid_ml, kcal/100 ml lỏng, caffeine mg tính từ hồ sơ espresso — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -60,5 +61,46 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 130,
+  "caffeine_mg_min": 64,
+  "caffeine_mg_max": 64,
+  "caffeine_mg_note": "TÍNH TỪ HỒ SƠ, CHƯA ĐO CHO LY NÀY: hồ sơ ca-phe-espresso (USDA SR Legacy NDB 14210) ghi caffeine 212 mg/100 g, 30 ml espresso ≈ 64 mg. Số 64 mg là số tính từ hồ sơ, không phải đo ly này; shot thực tế dao động theo liều bột và máy, nhưng không ghi khoảng rộng hơn vì chưa có nguồn thứ cấp đủ tin cậy cho khoảng đó — nếu muốn khoảng, phải tra thêm, không tự mở khoảng.",
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml chất lỏng",
+      "value_min": 2,
+      "value_max": 2,
+      "value": null,
+      "per_serving": "≈2,7 kcal/ly (130 ml chất lỏng, không đường)",
+      "basis": "Cộng tay từ hồ sơ đã có: espresso 30 ml × 9 kcal/100 g = 2,7 kcal; nước nóng 100 ml × 0 kcal = 0. Tổng 2,7 kcal / 130 ml = 2,1 kcal/100 ml chất lỏng, làm tròn 2. Đây chưa phải đầu ra engine.",
+      "confidence": "high",
+      "source_ref": "data/ingredients/ca-phe-espresso.json, nuoc-loc.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 0,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "0 g/ly",
+      "basis": "sugar_added_g trong file catalogue = 0; ghi chú file: đường thường 0 g.",
+      "confidence": "high",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    },
+    {
+      "label": "Caffeine",
+      "unit": "mg/ly",
+      "value_min": 64,
+      "value_max": 64,
+      "value": null,
+      "per_serving": "64 mg/ly (tính từ hồ sơ)",
+      "basis": "USDA espresso 212 mg/100 g × 30 ml = 64 mg, xem caffeine_mg_note; không phải số đo cho ly này.",
+      "confidence": "medium",
+      "source_ref": "data/ingredients/ca-phe-espresso.json"
+    }
+  ],
+  "allergen_note": "Đã gắn đủ 2/2 dòng trong ly (espresso, nước nóng): không dòng nào có tag dị ứng trong hồ sơ — 'không tag' không phải cam kết an toàn tuyệt đối.",
+  "tcm_note": "Không kết luận tính vị: cả hai dòng trong ly (espresso, nước nóng) đều không có nhãn tính vị trong hồ sơ, phủ nhãn 0%."
 }
