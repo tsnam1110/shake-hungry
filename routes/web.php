@@ -155,3 +155,12 @@ Route::middleware(['auth', 'admin'])->prefix('admin/api')->group(function () {
 
 Route::get('/admin/{any?}', fn () => view('admin'))
     ->where('any', '^(?!api($|/)).*$');
+
+// --- Quản trị tối thiểu cho 3 module chưa có trong admin React (hoàn thiện 5b) ---
+// Sửa trực tiếp file data/ (QT-3); xem lý do chọn Blade trong QuanTriController.
+Route::middleware(['auth', 'admin'])->prefix('quan-tri')->name('quantri.')->group(function () {
+    Route::get('/', [\App\Http\Controllers\QuanTriController::class, 'index'])->name('index');
+    Route::get('/{module}', [\App\Http\Controllers\QuanTriController::class, 'list'])->name('list')->where('module', 'ket-hop|rau-mua|do-uong');
+    Route::get('/{module}/{slug}/sua', [\App\Http\Controllers\QuanTriController::class, 'edit'])->name('edit')->where('module', 'ket-hop|rau-mua|do-uong');
+    Route::post('/{module}/{slug}/sua', [\App\Http\Controllers\QuanTriController::class, 'update'])->name('update')->where('module', 'ket-hop|rau-mua|do-uong');
+});
