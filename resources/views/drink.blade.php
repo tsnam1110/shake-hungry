@@ -75,6 +75,18 @@ fetch('/api/drinks/' + slug).then(r => r.json()).then(({drink: d, allergen, comb
     // rồi mới tới các khối khác). Tính được thì hiện khoảng như trang món; chưa tính
     // được thì hiện đúng nhãn đó + lý do thiếu, không số giả.
     const nut = d.nutrition;
+    // Ghi chú kcal của engine có dạng "Chưa tính được kcal: thiếu: …; missing:…"
+    // — phần tiền tố trùng với câu chuẩn của trang, phần "missing:…" là mảnh
+    // thô nội bộ. Hiển thị chỉ giữ lại lý do thiếu, viết hoa đầu câu, để thẻ
+    // dinh dưỡng đọc sạch như trang món ("Chưa đủ dữ liệu … — hệ thống không
+    // hiện số thay vì đoán.") thay vì một đoạn dài trùng lặp như trước.
+    const cleanKcalNote = (d.kcal_note || '')
+        .replace(/^Chưa tính được kcal:\s*/i, '')
+        .replace(/;\s*missing:[^;]*$/i, '')
+        .trim();
+    const cleanKcalNoteShown = cleanKcalNote
+        ? cleanKcalNote.charAt(0).toUpperCase() + cleanKcalNote.slice(1)
+        : '';
     html += `<div class="ld-card" style="margin-top:18px">
         <p style="margin:0;color:var(--color-sub);font-size:14.5px;font-weight:600">Năng lượng mỗi khẩu phần</p>
         ${nut && nut.status === 'computed'
@@ -83,9 +95,10 @@ fetch('/api/drinks/' + slug).then(r => r.json()).then(({drink: d, allergen, comb
                     <span style="color:var(--color-sub);font-size:14.5px">kcal</span>
                     ${nut.confidence ? `<span class="ld-capsule ${confClass[nut.confidence] ?? ''}">${confLabel[nut.confidence] ?? ''}</span>` : ''}</div>
                 <p class="ld-note" style="margin-top:10px">${esc(d.kcal_note || '')}</p>
-                ${nut.missing?.length ? `<p class="ld-note" style="margin-top:10px">Chưa tính được một phần (đã nới cận trên theo tỷ lệ thiếu): ${nut.missing.map(esc).join('; ')}</p>` : ''}
-                ${nut.negligible?.length ? `<p class="ld-note" style="margin-top:10px">Không tính (garnish không đáng kể, mỗi dòng ≈ 1 kcal): ${nut.negligible.map(esc).join('; ')}</p>` : ''}`
-            : `<p style="color:var(--color-faint);margin:10px 0 0">Chưa tính được kcal cho đồ uống này — hệ thống không hiện số thay vì đoán.${d.kcal_note ? ' ' + esc(d.kcal_note) : ''}</p>`}`;
+                ${nut.missing?.filter(m => !String(m).startsWith('missing:')).length ? `<p class="ld-note" style="margin-top:10px">Chưa tính được một phần (đã nới cận trên theo tỷ lệ thiếu): ${nut.missing.filter(m => !String(m).startsWith('missing:')).map(esc).join('; ')}</p>` : ''}
+                ${nut.negligible?.filter(m => !String(m).startsWith('missing:')).length ? `<p class="ld-note" style="margin-top:10px">Không tính (garnish không đáng kể, mỗi dòng ≈ 1 kcal): ${nut.negligible.filter(m => !String(m).startsWith('missing:')).map(esc).join('; ')}</p>` : ''}`
+            : `<p style="color:var(--color-faint);margin:10px 0 0">Chưa tính được kcal cho đồ uống này — hệ thống không hiện số thay vì đoán.</p>
+                ${cleanKcalNoteShown ? `<p class="ld-note" style="margin-top:10px">${esc(cleanKcalNoteShown)}</p>` : ''}`}`;
     // Lưới chỉ số theo đúng mẫu lưới macro của trang món (ld-macro): 4 ô
     // dung tích / đường / caffeine / cồn, chỉ dùng số đã có trong dữ liệu,
     // thiếu thì hiện "?" như trang món hiện macro thiếu — không bịa số.
@@ -118,18 +131,25 @@ fetch('/api/drinks/' + slug).then(r => r.json()).then(({drink: d, allergen, comb
         <button type="button" class="ld-btn ld-btn-gray" data-feedback data-drink="${d.id}" data-context="${esc(d.name_vi)}" style="padding:11px 20px;font-size:15px">Gửi phản hồi</button>
     </div>`;
 
-    // Dị ứng — cùng vị trí/kiểu với trang món (sau hàng thao tác, trước kết hợp):
-    // chỉ đọc "không có dị ứng" khi độ phủ đủ; độ phủ một phần hoặc không
-    // có dòng nào để suy thì hiện rõ "chưa đủ dữ kiện", không kết luận an toàn.
+    // Dị ứng — đúng mẫu trang món: tiêu đề khối ld-section-title + thẻ
+    // ld-card (trước đây dùng nhãn nhỏ ld-group-label trong thẻ nên khối này
+    // trông lép hơn hẳn khối "Thông tin dị ứng" của trang món). Huy hiệu
+    // "có thể có" dùng viền đỏ nền trong như trang món, không dùng nền đỏ
+    // đặc như nhãn chắc chắn. Chỉ đọc "không có dị ứng" khi độ phủ đủ;
+    // độ phủ một phần hoặc không có dòng nào để suy thì hiện rõ "chưa đủ
+    // dữ kiện", không kết luận an toàn.
     {
         const alg = allergen ?? { display: [], linked: 0, total: 0, coverage: 'none' };
         const covNote = alg.coverage === 'partial'
             ? `<p class="ld-note" style="margin-top:10px">Chỉ tính từ ${alg.linked}/${alg.total} dòng nguyên liệu đã gắn hồ sơ — các dòng chưa gắn chưa được tính, nên danh sách này có thể thiếu.</p>`
             : '';
-        html += `<div class="ld-card" style="margin-top:30px">
-            <p class="ld-group-label" style="margin:0 0 6px">Dị ứng</p>
+        const algBadge = (e) => e.certainty === 'possible'
+            ? `<span class="ld-badge" style="background:transparent;border:1px solid var(--color-danger);color:var(--color-danger)">Có thể có: ${esc(e.label)}</span>`
+            : `<span class="ld-badge" style="background:var(--color-danger-tint);color:var(--color-danger)">Dị ứng: ${esc(e.label)}</span>`;
+        html += `<h2 class="ld-section-title">Thông tin dị ứng</h2>
+        <div class="ld-card">
             ${alg.display.length
-                ? `<div style="display:flex;flex-wrap:wrap;gap:6px">${alg.display.map(e => `<span class="ld-badge" style="background:var(--color-danger-tint);color:var(--color-danger)">Dị ứng: ${esc(e.label)}${e.certainty === 'possible' ? ' (có thể có)' : ''}</span>`).join('')}</div>
+                ? `<div style="display:flex;flex-wrap:wrap;gap:6px">${alg.display.map(algBadge).join('')}</div>
                 ${covNote}
                 <p class="ld-note" style="margin-top:10px">Nhãn dị ứng suy từ thành phần theo dữ liệu dự án biên soạn — có thể chưa đầy đủ. Nếu bạn dị ứng nặng, hãy tự kiểm tra thành phần trước khi uống. <a href="/mien-tru-y-te">Đọc Miễn trừ y tế</a>.</p>`
                 : (alg.coverage === 'full'
@@ -144,9 +164,9 @@ fetch('/api/drinks/' + slug).then(r => r.json()).then(({drink: d, allergen, comb
     if (combinations && combinations.length) {
         html += `<div class="ld-card" style="margin-top:30px">
             <p class="ld-group-label" style="margin:0 0 6px">Kết hợp cần lưu ý với đồ uống này</p>
-            ${combinations.map(c => `<div style="padding:10px 0;border-bottom:1px solid var(--color-border)">
+            ${combinations.map(c => `<div style="padding:10px 0;border-bottom:1px solid var(--color-line)">
                 <div style="display:flex;gap:8px;align-items:flex-start;flex-wrap:wrap">
-                    <span class="ld-badge" style="background:var(--color-danger-tint);color:var(--color-danger)">${esc(c.tier_label)}</span>
+                    <span class="ld-badge" style="background:var(--color-blue-tint);color:var(--color-blue-dark)">${esc(c.tier_label)}</span>
                     <span style="font-weight:700;font-size:15.5px">${esc(c.side_a_label)} + ${esc(c.side_b_label)}</span>
                 </div>
                 <p class="ld-note" style="margin:8px 0 0"><b>${esc(c.science_label || '')}.</b> ${esc(c.condition_vi || '')}</p>
@@ -179,7 +199,7 @@ fetch('/api/drinks/' + slug).then(r => r.json()).then(({drink: d, allergen, comb
     } else {
         // Nguyên liệu thành hàng ld-group như trang món, có link khi có ingredient_slug.
         // Ly/kỹ thuật/đá/trang trí/dung tích giữ nguyên nội dung, đổi sang hàng nhãn/giá trị.
-        html += `<h2 class="ld-section-title">Nguyên liệu</h2><div class="ld-group">${(d.ingredients || []).map(ingRow).join('') || '<p style="color:var(--color-faint);padding:16px;margin:0">Chưa ghi nguyên liệu.</p>'}</div>`;
+        html += `<h2 class="ld-section-title">Nguyên liệu · một khẩu phần</h2><div class="ld-group">${(d.ingredients || []).map(ingRow).join('') || '<p style="color:var(--color-faint);padding:16px;margin:0">Chưa ghi nguyên liệu.</p>'}</div>`;
         let serveHtml = `<div class="ld-group" style="margin-top:12px">`;
         if (d.glass) serveHtml += labelRow('Ly', d.glass);
         if (d.technique) serveHtml += labelRow('Kỹ thuật', d.technique);

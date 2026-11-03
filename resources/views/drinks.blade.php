@@ -102,7 +102,10 @@ function card(d) {
     const badges = [];
     if (d.kind === 'dong-goi') badges.push('<span class="ld-badge">Sản phẩm đóng gói</span>');
     if (d.alcohol) badges.push('<span class="ld-badge" style="background:var(--color-danger-tint);color:var(--color-danger)">18+</span>');
-    if (d.uncertain) badges.push('<span class="ld-badge">Chưa chắc chắn</span>');
+    // "Chưa chắc chắn" dùng ld-badge unv (vàng cảnh báo) như huy hiệu
+    // "Chưa kiểm định" của trang món/quả/nguyên liệu — trước đây dùng
+    // huy hiệu xám mặc định nên không nhận ra là cảnh báo dữ liệu.
+    if (d.uncertain) badges.push('<span class="ld-badge unv">Chưa chắc chắn</span>');
     // Chân thẻ nối các phần đã có bằng " · ", không để dấu nối thừa ở đầu
     // khi phần đầu trống (VD: pha chế không có dung tích vẫn có đường thêm).
     // Khoảng rỗng thì bỏ trống, không in dạng "–g" hay "–%" (QT-9, theo mẫu
