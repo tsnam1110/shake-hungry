@@ -1,7 +1,7 @@
 {
   "slug": "cai-cau-vong",
   "name_vi": "Cải cầu vồng",
-  "ingredient_slug": null,
+  "ingredient_slug": "cai-cau-vong",
   "group": "rau-la",
   "supply": "ca-hai",
   "state": "tuoi",
@@ -65,10 +65,10 @@
   "safety_note": "Vitamin K + oxalate nhẹ — warfarin ổn định lượng, sỏi oxalate hạn chế lượng lớn (co-so).",
   "uncertain": true,
   "uncertain_note": "Tháng tốt nhất UNCERTAIN. Nguồn cung: Đà Lạt + nhập Úc/châu Âu theo đợt.",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau). Đính chính 2026-11-03: gắn hồ sơ nguyên liệu mới cùng slug để trang rau hiển thị ảnh (lô 2/18); hồ sơ nguyên liệu mới chưa qua duyệt của chủ dự án.",
   "source": "catalogue-v2",
   "source_note": "Catalogue rau theo mùa v2 (2026-11-03), phần E — rau nhập khẩu / giống nhập trồng tại Việt Nam. Toàn bộ 18 mục chưa có hồ sơ repo nên kcal null — giữ thiếu, không copy số của loài/giống gốc."
 }

@@ -1,0 +1,52 @@
+{
+  "slug": "cai-xoan",
+  "name_vi": "Cải xoăn / kale (sống)",
+  "name_en": "Kale, raw",
+  "category": "rau-cu",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "168421",
+    "source_url": "https://api.nal.usda.gov/fdc/v1/food/168421?api_key=<redacted>",
+    "scientific_name": "Brassica oleracea (Acephala Group)",
+    "kcal_per_100g": 35,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 2.92,
+    "fat_g": 1.49,
+    "carb_g": 4.42,
+    "fiber_g": 4.1,
+    "water_g": 89.6,
+    "mapping_confidence": "medium",
+    "mapping_note": "Bản ghi USDA SR Legacy 168421 'Kale, raw', xác minh qua nhiều nguồn thứ cấp trích USDA (35 kcal / 2,92 g protein / 1,49 g béo / 4,42 g carb / 4,1 g xơ / 89,6 g nước trên 100 g); bản Foundation 323505 cho cùng các số. Lưu ý: bản cũ hơn cho 49 kcal đã bị thay bằng bản phân tích lại này, không dùng.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "media": [
+    {
+      "path": "media/ingredients/cai-xoan.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
+  "tcm_traits": [],
+  "source": "curated",
+  "confidence": "low",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Hồ sơ mới tạo 2026-11-03 để gắn ảnh cho rau theo mùa chưa có nguyên liệu (lô 2/18), chưa qua duyệt của chủ dự án.",
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}

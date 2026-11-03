@@ -1,0 +1,52 @@
+{
+  "slug": "ca-rot-baby",
+  "name_vi": "Cà rốt baby (sống)",
+  "name_en": "Carrots, baby, raw",
+  "category": "rau-cu",
+  "reference_food": {
+    "fct_source": "usda_foundation",
+    "external_id": "2258587",
+    "source_url": "https://api.nal.usda.gov/fdc/v1/food/2258587?api_key=<redacted>",
+    "scientific_name": "Daucus carota subsp. sativus",
+    "kcal_per_100g": 38,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 0.81,
+    "fat_g": 0.14,
+    "carb_g": 9.1,
+    "fiber_g": 2.7,
+    "water_g": null,
+    "mapping_confidence": "medium",
+    "mapping_note": "Bản ghi USDA Foundation 2258587 'Carrots, baby, raw, peeled', xác minh qua nguồn thứ cấp trích USDA (38 kcal / 0,81 g protein / 0,14 g béo / 9,1 g carb / 2,7 g xơ trên 100 g). Lưu ý: bản SR cũ hơn cho cà rốt baby 35 kcal — khác biệt do bộ dữ liệu và dạng gọt vỏ; đã chọn bản Foundation hiện tại vì có đủ xơ và khớp dạng bán lẻ (gọt vỏ). Nước chưa xác minh nên để null.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "media": [
+    {
+      "path": "media/ingredients/ca-rot-baby.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
+  "tcm_traits": [],
+  "source": "curated",
+  "confidence": "low",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Hồ sơ mới tạo 2026-11-03 để gắn ảnh cho rau theo mùa chưa có nguyên liệu (lô 2/18), chưa qua duyệt của chủ dự án.",
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}
