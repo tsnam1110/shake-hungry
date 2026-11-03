@@ -100,17 +100,6 @@
       "basis": "sugar_added_g trong file catalogue; kiểm chéo: siro 30 ml × 1,24 = 37,2 g siro 1:1, đường 18,6 g + đường ngấm trân châu ~10 g = 28,6 g, gần 30 g trong sai số quán.",
       "confidence": "medium",
       "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
-    },
-    {
-      "label": "Caffeine",
-      "unit": "mức",
-      "value": null,
-      "value_min": null,
-      "value_max": null,
-      "per_serving": "mức trung-binh (chưa ghi mg)",
-      "basis": "Chưa ghi mg cho trà sữa: trà đen hãm đậm 200 ml, nồng độ caffeine theo quán và thời gian hãm thay đổi, không áp số trà đen pha loãng làm số đo. Mức trung-binh là thang tương đối của catalogue.",
-      "confidence": "low",
-      "source_ref": ""
     }
   ],
   "allergen_note": "Đã gắn đủ 4/4 dòng nguyên liệu: chỉ sữa tươi có tag allergen:sua — dị ứng Sữa đã xác nhận. Trà đen, siro đường, trân châu đã nấu không có tag dị ứng trong hồ sơ; 'không tag' không phải cam kết an toàn tuyệt đối cho mọi dị ứng.",
