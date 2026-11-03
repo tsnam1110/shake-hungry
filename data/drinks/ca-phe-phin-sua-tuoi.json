@@ -19,12 +19,8 @@
     {
       "name": "sữa tươi (không đường)",
       "quantity": 80,
-      "unit": "ml"
-    },
-    {
-      "name": "đường/sữa đặc",
-      "quantity": 0,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "sua-tuoi"
     }
   ],
   "recipe_steps": [
@@ -55,10 +51,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-03: gắn sữa tươi (hồ sơ đã có, file gốc chưa gắn), bỏ dòng 0 ml khỏi dòng trong ly, thêm liquid_ml, kcal/100 ml lỏng, caffeine mg tầm soát 100–200 mg/ly — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -67,5 +63,47 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "process_note": "Chuẩn không đường, không sữa đặc: dòng 'đường/sữa đặc 0 ml' trong file gốc là dòng tùy chọn với lượng 0, đã bỏ khỏi dòng trong ly để engine không tính dòng 0; nếu thêm đường/sữa đặc thì kcal và đường thay đổi theo lượng thêm.",
+  "liquid_ml": 130,
+  "caffeine_mg_min": 100,
+  "caffeine_mg_max": 200,
+  "caffeine_mg_note": "KHOẢNG TẦM SOÁT, CHƯA ĐO CHO LY NÀY: ly này dùng nguyên một phin Robusta (cà phê 50 ml), khoảng 100–200 mg/ly theo nguồn thứ cấp về phin VN (CoffeeTalkies phin 100–200 mg; DoanhNhanPlus 120–150 mg; Message Coffee 150–200 mg). Chưa đo cho ly này; mg là theo ly, không theo ml.",
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml chất lỏng",
+      "value_min": 38,
+      "value_max": 39,
+      "value": null,
+      "per_serving": "≈50–51 kcal/ly (130 ml chất lỏng, chưa tính đá tan)",
+      "basis": "Cộng tay từ hồ sơ đã có: cà phê phin 50 ml × 1 kcal/100 g = 0,5 kcal; sữa tươi 80 ml × 1,031 × 60–61 kcal/100 g = 49,5–50,3 kcal. Tổng 50,0–50,8 kcal / 130 ml = 38–39 kcal/100 ml chất lỏng. Đây chưa phải đầu ra engine.",
+      "confidence": "medium",
+      "source_ref": "data/ingredients/ca-phe-den.json, sua-tuoi.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 0,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "0 g/ly (bản không đường)",
+      "basis": "sugar_added_g trong file catalogue = 0; sugar_note ghi khoảng 0–10 g cho các biến thể có đường, chuẩn là không đường.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    },
+    {
+      "label": "Caffeine",
+      "unit": "mg/ly",
+      "value_min": 100,
+      "value_max": 200,
+      "value": null,
+      "per_serving": "100–200 mg/ly",
+      "basis": "Khoảng tầm soát cho nguyên một phin Robusta, xem caffeine_mg_note; không phải số đo.",
+      "confidence": "low",
+      "source_ref": "Nguồn thứ cấp về phin Robusta (xem caffeine_mg_note)"
+    }
+  ],
+  "allergen_note": "Đã gắn đủ 2/2 dòng trong ly: chỉ sữa tươi có tag allergen:sua — dị ứng Sữa đã xác nhận. Cà phê phin không có tag dị ứng trong hồ sơ.",
+  "tcm_note": "Không kết luận tính vị chung cho cả ly: cà phê phin bình/khổ/Hỏa (thấp) và sữa tươi bình/cam/Thổ (trung bình) là hai nhãn khác nhau, không gộp thành một ngũ hành duy nhất; ghi cả hai nhãn theo dòng, như mẫu bạc xỉu."
 }
