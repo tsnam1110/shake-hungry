@@ -29,8 +29,8 @@
     ]
   },
   "secondary_sources": [],
-  "density_g_per_ml": null,
-  "density_note": null,
+  "density_g_per_ml": 1.0,
+  "density_note": "SUY RA, theo đúng tiền lệ tra-den và ca-phe-den: 1 cốc Mỹ 237g / 236,588ml ≈ 1,00. Nước trà pha ≈ nước (hồ sơ ghi water_g 99,93). Trước đó để null nên công thức nước uống dùng ml không quy đổi được.",
   "default_yield_factor": null,
   "default_yield_factor_note": null,
   "oil_absorption_pct": null,
@@ -64,10 +64,10 @@
   ],
   "source": "curated",
   "confidence": "high",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Thí điểm đồ uống 2026-11-03: chỉ thêm density_g_per_ml = 1,0 + density_note theo tiền lệ tra-den/ca-phe-den, để engine quy đổi ml trà xanh; các số khác giữ nguyên. Chờ duyệt lại.",
   "tags": [
     "origin:thuc-vat",
     "state:che-bien"
