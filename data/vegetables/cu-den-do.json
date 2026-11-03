@@ -1,7 +1,7 @@
 {
   "slug": "cu-den-do",
   "name_vi": "Củ dền đỏ",
-  "ingredient_slug": null,
+  "ingredient_slug": "cu-den-do",
   "group": "rau-cu",
   "supply": "da-lat",
   "state": "tuoi",
@@ -63,7 +63,7 @@
     3,
     4
   ],
-  "kcal_per_100g": null,
+  "kcal_per_100g": 43,
   "kcal_confidence": null,
   "aliases": [],
   "selection_note": "Củ chắc, nặng tay, vỏ trơn, không nứt, lá (nếu còn) tươi; củ mềm, xốp là già.",
@@ -72,10 +72,10 @@
   "safety_note": "Nước tiểu/phân đỏ sau khi ăn (beeturia) là vô hại nhưng dễ gây lo lắng (co-so). Chứa oxalate — người có tiền sử sỏi thận oxalate nên hạn chế lượng lớn (co-so). Khác củ cải đỏ (radish) và củ cải đường làm đường.",
   "uncertain": true,
   "uncertain_note": "Tháng tốt nhất 11–4 theo nguồn Đà Lạt (mùa khô, củ chắc ngọt, ít sâu). Bắc vụ xuân UNCERTAIN về tháng thu hoạch chính xác.",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau). Đính chính 2026-11-03: gắn hồ sơ nguyên liệu mới cùng slug để trang rau hiển thị ảnh (làm từng sản phẩm một); hồ sơ nguyên liệu mới chưa qua duyệt của chủ dự án.",
   "source": "catalogue-v2",
   "source_note": "Catalogue rau theo mùa v2 (2026-11-03), phần E — rau nhập khẩu / giống nhập trồng tại Việt Nam. Toàn bộ 18 mục chưa có hồ sơ repo nên kcal null — giữ thiếu, không copy số của loài/giống gốc."
 }

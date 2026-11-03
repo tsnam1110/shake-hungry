@@ -1,0 +1,52 @@
+{
+  "slug": "cu-den-do",
+  "name_vi": "Củ dền đỏ (sống)",
+  "name_en": "Beets, raw",
+  "category": "rau-cu",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "169145",
+    "source_url": "https://api.nal.usda.gov/fdc/v1/food/169145?api_key=<redacted>",
+    "scientific_name": "Beta vulgaris",
+    "kcal_per_100g": 43,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 1.61,
+    "fat_g": 0.17,
+    "carb_g": 9.56,
+    "fiber_g": 2.8,
+    "water_g": null,
+    "mapping_confidence": "medium",
+    "mapping_note": "Bản ghi USDA SR Legacy 169145 'Beets, raw', xác minh qua nhiều nguồn thứ cấp trích USDA (43 kcal / 1,61 g protein / 0,17 g béo / 9,56 g carb / 2,8 g xơ trên 100 g). Lưu ý: một nguồn thứ cấp cho 45 kcal (bộ dữ liệu khác) — không dùng, đã chọn bản SR Legacy có mã FDC xác minh được. Nước chưa xác minh nên để null. Khác củ cải đỏ (radish) và củ cải đường làm đường.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "media": [
+    {
+      "path": "media/ingredients/cu-den-do.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
+  "tcm_traits": [],
+  "source": "curated",
+  "confidence": "low",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Hồ sơ mới tạo 2026-11-03 để gắn ảnh cho rau theo mùa chưa có nguyên liệu (từng sản phẩm một, không làm hàng loạt), chưa qua duyệt của chủ dự án.",
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}
