@@ -141,8 +141,10 @@ fetch('/api/drinks/' + slug).then(r => r.json()).then(({drink: d, allergen, comb
         <div class="ld-macro"><div class="gt ld-tnum">${esc(fourthVal)}</div><div class="nhan">${esc(fourthLabel)}</div></div>
     </div>`;
     if (d.sugar_note) html += `<p class="ld-note" style="margin-top:10px">${esc(d.sugar_note)}</p>`;
-    if (d.caffeine_mg_note) html += `<p class="ld-note" style="margin-top:10px">${esc(d.caffeine_mg_note)}</p>`;
-    else if (d.caffeine_level) html += `<p class="ld-note" style="margin-top:10px">Caffeine chỉ mức định tính, không ghi mg.</p>`;
+    // Ghi chú caffeine dạng mg KHÔNG để dưới lưới macro nữa — nó thuộc khối
+    // "Nguồn gốc con số" ở dưới (cùng mẫu trang món), xem phần chèn sau ghi
+    // chú văn hoá. Dưới lưới chỉ giữ câu định tính khi chưa có mg.
+    if (!d.caffeine_mg_note && d.caffeine_level) html += `<p class="ld-note" style="margin-top:10px">Caffeine chỉ mức định tính, không ghi mg.</p>`;
     if (d.alcohol_pct_estimate) html += `<p class="ld-note" style="margin-top:10px">Độ cồn ước tính trước pha loãng.</p>`;
     if (d.alcohol_note) html += `<p class="ld-note" style="margin-top:10px">${esc(d.alcohol_note)}</p>`;
     html += `</div>`;
@@ -202,6 +204,29 @@ fetch('/api/drinks/' + slug).then(r => r.json()).then(({drink: d, allergen, comb
 
     // Ghi chú văn hoá — cùng vị trí/kiểu với trang món (sau khối lưu ý, trước nguyên liệu).
     if (d.cultural_note) html += `<h2 class="ld-section-title">Ghi chú văn hoá</h2><div class="ld-card"><p style="margin:0;font-size:15.5px">${esc(d.cultural_note)}</p></div>`;
+
+    // Nguồn gốc con số — cùng mẫu trang món: khối riêng sau ghi chú văn hoá,
+    // trước nguyên liệu, không phải ghi chú dưới lưới macro. Hàng nhãn/giá trị
+    // dùng labelRow như khối nguồn gốc của trang món; ghi chú nguồn (cơ sở của
+    // từng chỉ số, ghi chú caffeine mg) nằm dưới nhóm hàng. Chỉ hiện khi có
+    // dữ kiện để ghi nguồn — đồ uống chưa có chỉ số nào thì không vẽ khối rỗng.
+    {
+        const hasProv = (d.key_indicators && d.key_indicators.length) || d.caffeine_mg_note || (nut && nut.status === 'computed');
+        if (hasProv) {
+            let provRows = '';
+            if (nut && nut.status === 'computed') provRows += labelRow('Năng lượng mỗi khẩu phần', `${Math.round(nut.kcal_min)}–${Math.round(nut.kcal_max)} kcal`);
+            (d.key_indicators || []).forEach(ki => {
+                const fmt = v => (Math.round(v * 100) / 100);
+                const v = (ki.value_min !== null && ki.value_min !== undefined && ki.value_max !== null && ki.value_max !== undefined) ? `${fmt(ki.value_min)}–${fmt(ki.value_max)}` : (ki.value !== null && ki.value !== undefined ? `${fmt(ki.value)}` : '?');
+                provRows += labelRow(ki.label, `${v} ${ki.unit || ''}`.trim());
+            });
+            if (d.liquid_ml) provRows += labelRow('Dung tích chất lỏng', d.liquid_ml + ' ml');
+            html += `<h2 class="ld-section-title">Nguồn gốc con số</h2><div class="ld-group">${provRows}</div>`;
+            (d.key_indicators || []).forEach(ki => { if (ki.basis) html += `<p class="ld-note" style="margin-top:10px"><b>${esc(ki.label)}:</b> ${esc(ki.basis)}${ki.confidence ? ` (Tin cậy: ${esc(ki.confidence)})` : ''}</p>`; });
+            if (d.caffeine_mg_note) html += `<p class="ld-note" style="margin-top:10px"><b>Caffeine:</b> ${esc(d.caffeine_mg_note)}</p>`;
+            html += `<p class="ld-note" style="margin-top:10px">Khối này ghi rõ mỗi con số lấy từ đâu và ở tầng nào — đã kiểm chứng, hay mới tầm soát — để bạn kiểm chứng được ngay tại trang này, như khối “Nguồn gốc con số” của trang món.</p>`;
+        }
+    }
 
     if (d.kind === 'dong-goi') {
         // Đặc thù nước uống được giữ nguyên: đóng gói CHỈ khối "Thông tin nhãn", không bịa công thức.
