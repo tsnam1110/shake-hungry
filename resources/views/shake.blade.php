@@ -369,7 +369,7 @@ async function loadCatalog() {
             <span class="ld-dcard-body">
                 <span class="ld-dcard-title">${esc(name)}</span>
                 <span class="ld-dcard-meta">${esc(d.region?.name ?? '')}${tags.filter(t => t.slug.startsWith('loai:')).map(t => ' · ' + esc(t.name)).join('')}</span>
-                <span class="ld-dcard-badges">${chay ? '<span class="ld-badge chay">Chay</span>' : ''}${unv ? '<span class="ld-badge unv">Chưa kiểm định</span>' : ''}${d.image?.is_ai ? '<span class="ld-badge">Ảnh minh họa</span>' : ''}</span>
+                <span class="ld-dcard-badges">${chay ? '<span class="ld-badge chay">Chay</span>' : ''}${unv ? '<span class="ld-badge unv">Chưa kiểm định</span>' : ''}</span>
                 <span class="ld-dcard-foot">${n
                     ? `<span class="ld-dcard-kcal ld-tnum">${Math.round(n.kcal_min)}–${Math.round(n.kcal_max)} kcal</span><span class="ld-dcard-conf">${confShort[n.confidence] ?? ''}</span>`
                     : `<span class="ld-dcard-kcal none">Chưa đủ dữ liệu</span><span class="ld-dcard-conf">không hiện số</span>`}</span>
@@ -809,7 +809,7 @@ document.getElementById('swap-q').addEventListener('input', (e) => renderSwapCan
                 <span class="ld-dcard-body">
                     <span class="ld-dcard-title">${esc(f.name_vi)}</span>
                     <span class="ld-dcard-meta">${f.kcal_per_100g != null ? Math.round(f.kcal_per_100g) + ' kcal/100g' : 'Chưa có số calo'}</span>
-                    <span class="ld-dcard-badges">${(f.main_season_months ?? []).includes(m) ? '<span class="ld-badge vu">Đang vụ chính</span>' : ''}${(f.best_value_months ?? []).includes(m) ? '<span class="ld-badge hoi">Giá hời</span>' : ''}${f.image?.is_ai ? '<span class="ld-badge">Ảnh minh họa</span>' : ''}</span>
+                    <span class="ld-dcard-badges">${(f.main_season_months ?? []).includes(m) ? '<span class="ld-badge vu">Đang vụ chính</span>' : ''}${(f.best_value_months ?? []).includes(m) ? '<span class="ld-badge hoi">Giá hời</span>' : ''}</span>
                     <span class="ld-dcard-foot"><span class="ld-seasonbar" aria-hidden="true">${Array.from({length: 12}, (_, i) =>
                         `<i class="${(f.main_season_months ?? []).includes(i + 1) ? 'main' : (f.availability_months ?? []).includes(i + 1) ? 'on' : ''}"></i>`).join('')}</span></span>
                 </span>

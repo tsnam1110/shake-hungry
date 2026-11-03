@@ -124,7 +124,7 @@ fetch('/api/ingredients/' + slug).then(r => { if (!r.ok) throw new Error('404');
                 <span class="ld-dcard-body">
                     <span class="ld-dcard-title">${esc(d.name ?? d.slug)}</span>
                     <span class="ld-dcard-meta"></span>
-                    <span class="ld-dcard-badges">${d.image?.is_ai ? '<span class="ld-badge">Ảnh minh họa</span>' : ''}</span>
+                    <span class="ld-dcard-badges"></span>
                     <span class="ld-dcard-foot">${d.nutrition
                         ? `<span class="ld-dcard-kcal ld-tnum">${Math.round(d.nutrition.kcal_min)}–${Math.round(d.nutrition.kcal_max)} kcal</span>`
                         : `<span class="ld-dcard-kcal none">Chưa đủ dữ liệu</span>`}</span>

@@ -130,7 +130,7 @@ function cardHtml(d) {
         <span class="ld-dcard-body">
             <span class="ld-dcard-title">${esc(name)}</span>
             <span class="ld-dcard-meta">${esc(d.region?.name ?? '')}${tagList.filter(t => t.slug.startsWith('loai:')).map(t => ' · ' + esc(t.name)).join('')}</span>
-            <span class="ld-dcard-badges">${chay ? '<span class="ld-badge chay">Chay</span>' : ''}${unv ? '<span class="ld-badge unv">Chưa kiểm định</span>' : ''}${d.image?.is_ai ? '<span class="ld-badge">Ảnh minh họa</span>' : ''}</span>
+            <span class="ld-dcard-badges">${chay ? '<span class="ld-badge chay">Chay</span>' : ''}${unv ? '<span class="ld-badge unv">Chưa kiểm định</span>' : ''}</span>
             <span class="ld-dcard-foot">${n
                 ? `<span class="ld-dcard-kcal ld-tnum">${Math.round(n.kcal_min)}–${Math.round(n.kcal_max)} kcal</span><span class="ld-dcard-conf">${confShort[n.confidence] ?? ''}</span>`
                 : `<span class="ld-dcard-kcal none">Chưa đủ dữ liệu</span><span class="ld-dcard-conf">không hiện số</span>`}</span>

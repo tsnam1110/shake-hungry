@@ -129,7 +129,7 @@ function badges(v, month) {
     if (v.supply === 'da-lat' && season !== 'Hàng Đà Lạt') out.push('<span class="ld-badge">Hàng Đà Lạt</span>');
     if (v.uncertain) out.push('<span class="ld-badge">Tháng chưa chắc chắn</span>');
     if (v.unverified) out.push('<span class="ld-badge unv">Số chưa kiểm định</span>');
-    if (v.image?.is_ai) out.push('<span class="ld-badge">Ảnh minh họa</span>');
+
     return out.join('');
 }
 // Thẻ rau theo đúng khung ld-dcard của trang quả: ảnh, tiêu đề, dòng meta

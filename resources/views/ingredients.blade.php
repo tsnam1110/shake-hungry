@@ -98,7 +98,7 @@ function cardHtml(i) {
         <span class="ld-dcard-body">
             <span class="ld-dcard-title">${esc(i.name_vi)}</span>
             <span class="ld-dcard-meta">${catLabel[i.category] ?? esc(i.category ?? '')}${i.scientific_name ? ' · ' + esc(i.scientific_name) : ''}</span>
-            <span class="ld-dcard-badges">${allergens.map(t => `<span class="ld-badge" style="background:var(--color-danger-tint);color:var(--color-danger)">Dị ứng: ${esc(t.name)}</span>`).join('')}${i.unverified ? '<span class="ld-badge unv">Chưa kiểm định</span>' : ''}${i.image?.is_ai ? '<span class="ld-badge">Ảnh minh họa</span>' : ''}</span>
+            <span class="ld-dcard-badges">${allergens.map(t => `<span class="ld-badge" style="background:var(--color-danger-tint);color:var(--color-danger)">Dị ứng: ${esc(t.name)}</span>`).join('')}${i.unverified ? '<span class="ld-badge unv">Chưa kiểm định</span>' : ''}</span>
             <span class="ld-dcard-foot">${snap.kcal_per_100g != null
                 ? `<span class="ld-dcard-kcal ld-tnum">${Math.round(snap.kcal_per_100g)} kcal<span style="font-weight:500;color:var(--color-faint)">/100g</span></span>`
                 : `<span class="ld-dcard-kcal none">Chưa đủ dữ liệu</span><span class="ld-dcard-conf">không hiện số</span>`}</span>
