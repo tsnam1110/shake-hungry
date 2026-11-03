@@ -56,6 +56,8 @@ Route::view('/mien-tru-y-te', 'legal.disclaimer');
 Route::view('/nguon-du-lieu', 'legal.data');
 Route::get('/mon/{slug}', fn () => view('dish'));
 // IMG-001: ảnh trong data/media/ (đã qua kiểm license R4) — chỉ .webp ở hai nhóm dishes/ingredients.
+// Thumbnail phải khai báo TRƯỚC route /media chung, kẻo bị route chung nuốt mất.
+Route::get('/media/thumb/{width}/{path}', [\App\Http\Controllers\PublicWeb\MediaController::class, 'thumb'])->where('width', '[0-9]+')->where('path', '.*');
 Route::get('/media/{path}', [\App\Http\Controllers\PublicWeb\MediaController::class, 'show'])->where('path', '.*');
 Route::get('/thu-vien', fn () => view('explore')); // tên cũ /kham-pha — đổi thành Thư viện 2026-11-01
 Route::get('/thu-vien/hoa-qua', fn () => view('fruits', ['library' => true])); // tab Hoa quả trong Thư viện (UI-023)

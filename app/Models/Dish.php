@@ -120,6 +120,10 @@ class Dish extends Model
 
         return [
             'url' => '/'.$media->path,
+            // Thumbnail cho thẻ danh sách (quy tắc 2026-11-03): url gốc
+            // giữ nguyên cho trang chi tiết; thẻ danh sách dùng srcset.
+            'thumb_url' => \App\Support\Thumbnail::url($media->path, 800),
+            'srcset' => \App\Support\Thumbnail::srcset($media->path),
             'license' => $media->license,
             'attribution' => $media->attribution,
             'is_ai' => $media->license === 'ai-minh-hoa',

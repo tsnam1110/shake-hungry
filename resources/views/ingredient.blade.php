@@ -120,7 +120,7 @@ fetch('/api/ingredients/' + slug).then(r => { if (!r.ok) throw new Error('404');
         ${dishes.length ? `<h2 class="ld-section-title">Món ăn có ${esc(i.name_vi)}</h2>
         <div class="ld-grid">${dishes.map(d => `
             <a href="/mon/${d.slug}" class="ld-dcard">
-                <img class="ld-dcard-img" src="${d.image?.url ?? '/images/placeholder-dish.svg'}" alt="" loading="lazy" decoding="async">
+                <img class="ld-dcard-img" src="${d.image?.thumb_url ?? d.image?.url ?? '/images/placeholder-dish.svg'}" srcset="${d.image?.srcset ?? ''}" sizes="(max-width: 640px) 50vw, 320px" alt="" loading="lazy" decoding="async">
                 <span class="ld-dcard-body">
                     <span class="ld-dcard-title">${esc(d.name ?? d.slug)}</span>
                     <span class="ld-dcard-meta"></span>

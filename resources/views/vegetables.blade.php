@@ -140,7 +140,7 @@ function card(v, month, region) {
     const avail = availMonths(v, region);
     const main = v.main_season_months ?? [];
     return `<a href="/rau-mua/${esc(v.slug)}" class="ld-dcard">
-        <img class="ld-dcard-img" src="${v.image?.url ?? '/images/placeholder-ingredient.svg'}" alt="${esc(v.name_vi)}" loading="lazy" decoding="async">
+        <img class="ld-dcard-img" src="${v.image?.thumb_url ?? v.image?.url ?? '/images/placeholder-ingredient.svg'}" srcset="${v.image?.srcset ?? ''}" sizes="(max-width: 640px) 50vw, 320px" alt="${esc(v.name_vi)}" loading="lazy" decoding="async">
         <span class="ld-dcard-body">
             <span class="ld-dcard-title">${esc(v.name_vi)}</span>
             <span class="ld-dcard-meta">${esc(groupName[v.group] || v.group)} · ${v.kcal_per_100g != null ? Math.round(v.kcal_per_100g) + ' kcal/100g' : 'chưa có số calo'}${(v.aliases ?? []).length ? ' · ' + v.aliases.map(a => esc(a)).join(', ') : ''}</span>

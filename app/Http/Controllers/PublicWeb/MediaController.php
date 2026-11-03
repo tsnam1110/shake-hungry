@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Http\Controllers\PublicWeb;
 
+use App\Support\Thumbnail;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
 
@@ -26,11 +27,36 @@ class MediaController
         $file = base_path('data/media/'.$path);
         abort_unless(is_file($file), 404);
 
+        return $this->fileResponse($request, $file, $file);
+    }
+
+    /**
+     * Thumbnail cho thẻ danh sách (quy tắc 2026-11-03, xem Thumbnail):
+     * chỉ nhận chiều rộng trong Thumbnail::WIDTHS và đúng khuôn ảnh gốc.
+     * Cache trình duyệt giống ảnh gốc (7 ngày + ETag + 304), nhưng ETag
+     * gắn thêm chiều rộng và dấu thời gian ảnh gốc để ảnh gốc đổi thì
+     * thumbnail không kẹt bản cũ. Sinh thumbnail lỗi thì phục vụ thẳng
+     * ảnh gốc, không trả ảnh vỡ.
+     */
+    public function thumb(Request $request, int $width, string $path): BinaryFileResponse
+    {
+        abort_unless(in_array($width, Thumbnail::WIDTHS, true), 404);
+        abort_unless(preg_match('#^(dishes|ingredients)/[a-z0-9][a-z0-9\-]*\.webp$#', $path) === 1, 404);
+        $original = base_path('data/media/'.$path);
+        abort_unless(is_file($original), 404);
+
+        $file = Thumbnail::cachedFile($path, $width) ?? $original;
+
+        return $this->fileResponse($request, $file, $original.'|thumb-'.$width);
+    }
+
+    private function fileResponse(Request $request, string $file, string $etagSource): BinaryFileResponse
+    {
         $response = response()->file($file, [
             'Content-Type' => 'image/webp',
             'Cache-Control' => 'public, max-age=604800, must-revalidate',
         ]);
-        $response->setETag(md5($file.'|'.filemtime($file).'|'.filesize($file)));
+        $response->setETag(md5($etagSource.'|'.filemtime($file).'|'.filesize($file)));
         $modified = \DateTimeImmutable::createFromFormat('U', (string) filemtime($file));
         if ($modified !== false) {
             $response->setLastModified($modified);

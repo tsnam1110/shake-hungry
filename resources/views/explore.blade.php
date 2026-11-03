@@ -125,7 +125,7 @@ function cardHtml(d) {
     const unv = (n?.unverified_ingredients ?? []).length > 0;
     const chay = (d.tags ?? []).some(t => t.slug === 'diet:chay');
     return `<a href="/mon/${d.slug}" class="ld-dcard">
-        <img class="ld-dcard-img" src="${d.image?.url ?? '/images/placeholder-dish.svg'}" alt="${esc(name)}" loading="lazy" decoding="async">
+        <img class="ld-dcard-img" src="${d.image?.thumb_url ?? d.image?.url ?? '/images/placeholder-dish.svg'}" srcset="${d.image?.srcset ?? ''}" sizes="(max-width: 640px) 50vw, 320px" alt="${esc(name)}" loading="lazy" decoding="async">
         <span class="ld-heart" data-fav-dish="${d.id}" role="button" aria-label="Yêu thích món này">${heartSvg}</span>
         <span class="ld-dcard-body">
             <span class="ld-dcard-title">${esc(name)}</span>
