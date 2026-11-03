@@ -1,0 +1,71 @@
+{
+  "slug": "vietnamese-coffee-martini",
+  "name_vi": "Vietnamese Coffee Martini",
+  "drink_group": "cocktail-co-con",
+  "glass": "martini ướp lạnh",
+  "serving_ml": null,
+  "technique": "lac-shake",
+  "ice": "không đá",
+  "garnish": [
+    "3 hạt cà phê"
+  ],
+  "ingredients": [
+    {
+      "name": "vodka",
+      "quantity": 60,
+      "unit": "ml"
+    },
+    {
+      "name": "espresso/cold brew đã nguội",
+      "quantity": 30,
+      "unit": "ml"
+    },
+    {
+      "name": "sữa đặc có đường",
+      "quantity": 30,
+      "unit": "ml"
+    },
+    {
+      "name": "Kahlúa",
+      "quantity": 15,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Lắc tất cả với đá 10–15 giây tới khi bình lạnh đọng sương; lược vào ly, thả 3 hạt cà phê."
+  ],
+  "sugar_added_g": 25,
+  "sugar_note": "Đường: sữa đặc khoảng 20 g + Kahlúa khoảng 5 g = ~25 g. Ít ngọt: sữa đặc 15 ml.",
+  "caffeine_level": "cao",
+  "alcohol": true,
+  "alcohol_pct_estimate": 28,
+  "alcohol_note": "Ước tính trước pha loãng ~28%.",
+  "safety_flags": [
+    "18+",
+    "khong-lai-xe",
+    "caffeine-cao"
+  ],
+  "difficulty": "Dễ",
+  "prep_minutes": null,
+  "best_occasion": null,
+  "food_pairing": [],
+  "cultural_note": "Biến thể Espresso Martini dùng sữa đặc để mô phỏng cà phê sữa đá — ghi rõ đây là biến thể hiện đại, không phải món truyền thống Việt Nam.",
+  "recipe_sources": [
+    "Taste of Home Test Kitchen, công bố 2026-10-23"
+  ],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5."
+}

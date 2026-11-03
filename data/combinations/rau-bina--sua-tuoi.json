@@ -1,1 +1,29 @@
-{"category":"food_food","condition_vi":"Không cần kiêng — cơ chế thật đi NGƯỢC lời đồn: canxi ăn cùng bữa giàu oxalat sẽ gắn với oxalat ngay trong ruột và thải theo phân, làm GIẢM lượng oxalat được hấp thu. Kiêng canxi mới làm tăng hấp thu oxalat. Người có sỏi thận nên kiểm soát tổng lượng oxalat cả ngày và uống đủ nước, không phải kiêng cặp này. Chần rau bina bỏ nước cũng làm giảm oxalat.","evidence_class":"E3","mechanism_vi":"Rau bina giàu oxalat; canxi + oxalat tạo canxi oxalat không tan ngay trong đường tiêu hoá nên giảm hấp thu oxalat — đây là cơ chế bảo vệ, không phải cơ chế sinh sỏi (bác sĩ Trung tâm Dinh dưỡng Nutrihome, qua VnExpress).","needs_review":true,"science_status":"refuted","side_a":{"ref":"rau-bina","type":"ingredient"},"side_b":{"ref":"sua-tuoi","type":"ingredient"},"slug":"rau-bina--sua-tuoi","source":"curated","sources":[{"accessed":"2026-11-02","note":"VnExpress (dẫn BS Trung tâm Dinh dưỡng Nutrihome) — canxi ăn cùng bữa làm giảm hấp thu oxalat","url":"https://e.vnexpress.net/news/life/wellness/what-to-eat-and-avoid-if-you-have-kidney-stones-4926238.html"}],"traditional_source":{"quote":null,"text":"Danh sách 'thực phẩm kỵ nhau' lưu hành trên web hiện đại (suy luận oxalat của rau bina + canxi của sữa)"}}
+{
+  "category": "food_food",
+  "condition_vi": "Không cần kiêng — cơ chế thật đi NGƯỢC lời đồn: canxi ăn cùng bữa giàu oxalat sẽ gắn với oxalat ngay trong ruột và thải theo phân, làm GIẢM lượng oxalat được hấp thu. Kiêng canxi mới làm tăng hấp thu oxalat. Người có sỏi thận nên kiểm soát tổng lượng oxalat cả ngày và uống đủ nước, không phải kiêng cặp này. Chần rau bina bỏ nước cũng làm giảm oxalat.",
+  "evidence_class": "E3",
+  "mechanism_vi": "Rau bina giàu oxalat; canxi + oxalat tạo canxi oxalat không tan ngay trong đường tiêu hoá nên giảm hấp thu oxalat — đây là cơ chế bảo vệ, không phải cơ chế sinh sỏi (bác sĩ Trung tâm Dinh dưỡng Nutrihome, qua VnExpress).",
+  "needs_review": false,
+  "science_status": "refuted",
+  "side_a": {
+    "ref": "rau-bina",
+    "type": "ingredient"
+  },
+  "side_b": {
+    "ref": "sua-tuoi",
+    "type": "ingredient"
+  },
+  "slug": "rau-bina--sua-tuoi",
+  "source": "curated",
+  "sources": [
+    {
+      "accessed": "2026-11-02",
+      "note": "VnExpress (dẫn BS Trung tâm Dinh dưỡng Nutrihome) — canxi ăn cùng bữa làm giảm hấp thu oxalat",
+      "url": "https://e.vnexpress.net/news/life/wellness/what-to-eat-and-avoid-if-you-have-kidney-stones-4926238.html"
+    }
+  ],
+  "traditional_source": {
+    "quote": null,
+    "text": "Danh sách 'thực phẩm kỵ nhau' lưu hành trên web hiện đại (suy luận oxalat của rau bina + canxi của sữa)"
+  }
+}

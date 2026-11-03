@@ -1,0 +1,57 @@
+{
+  "slug": "ca-phe-sua-da-sai-gon",
+  "name_vi": "Cà phê sữa đá Sài Gòn (biến thể)",
+  "drink_group": "ca-phe",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "glass": "cốc/ly",
+  "serving_ml": 300,
+  "technique": "pha espresso/phin",
+  "ice": "đá nếu lạnh",
+  "garnish": [],
+  "ingredients": [
+    {
+      "name": "cà phê phin",
+      "quantity": 50,
+      "unit": "ml"
+    },
+    {
+      "name": "sữa đặc",
+      "quantity": 20,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Pha phin.",
+    "Khuấy sữa đặc vào cà phê nóng.",
+    "Đổ đầy đá vào ly cao, rót cà phê lên, khuấy."
+  ],
+  "sugar_added_g": 12,
+  "sugar_note": "Đường khoảng 12–18 g; ít ngọt: sữa đặc 15 ml.",
+  "caffeine_level": "cao",
+  "alcohol": false,
+  "alcohol_pct_estimate": null,
+  "alcohol_note": "",
+  "safety_flags": [
+    "caffeine cao"
+  ],
+  "difficulty": "dễ",
+  "prep_minutes": 10,
+  "best_occasion": null,
+  "food_pairing": [],
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "cultural_note": "BIẾN THỂ phục vụ của ca-phe-sua-da, không phải công thức gốc riêng. Những điểm khác biệt mà hầu hết quán nêu là cách trình bày (ly cao, nhiều đá, cân bằng nhẹ/ngọt hơn) và, ở một số quán, pha bằng vợt (lọc vải) thay vì phin; không có sữa tươi trong bản cổ điển.",
+  "recipe_sources": [],
+  "mocktail_counterpart_slug": null,
+  "uncertain": true,
+  "uncertain_note": "Không có chuẩn đã công bố phân biệt 'Sài Gòn' với ca-phe-sua-da chung chỉ bằng tỉ lệ nguyên liệu. Catalogue entry này là biến thể phục vụ của ca-phe-sua-da, không phải công thức gốc riêng, trừ khi chủ dự án quyết định giữ nó như bí danh vùng miền. Không bịa nguyên liệu riêng cho nó.",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3."
+}

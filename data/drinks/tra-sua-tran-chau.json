@@ -1,0 +1,68 @@
+{
+  "slug": "tra-sua-tran-chau",
+  "name_vi": "Trà sữa trân châu",
+  "drink_group": "tra",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "glass": "ly 500 ml, ống hút to",
+  "serving_ml": 500,
+  "technique": "hãm trà",
+  "ice": "đá",
+  "garnish": [],
+  "ingredients": [
+    {
+      "name": "trà đen hãm đậm",
+      "quantity": 200,
+      "unit": "ml"
+    },
+    {
+      "name": "sữa tươi không đường",
+      "quantity": 100,
+      "unit": "ml"
+    },
+    {
+      "name": "siro đường",
+      "quantity": 30,
+      "unit": "ml"
+    },
+    {
+      "name": "trân châu đen đã nấu",
+      "quantity": 60,
+      "unit": "g"
+    }
+  ],
+  "recipe_steps": [
+    "Hãm trà đen 5–7 phút, lọc.",
+    "Khuấy siro + sữa vào trà.",
+    "Trân châu xuống đáy ly, rót trà sữa lên, thêm đá."
+  ],
+  "sugar_added_g": 30,
+  "sugar_note": "Đường ~30 g (siro ~20 g + đường ngấm trân châu ~10 g); ít ngọt: siro 15 ml, trân châu không ướp đường.",
+  "caffeine_level": "trung-binh",
+  "alcohol": false,
+  "alcohol_pct_estimate": null,
+  "alcohol_note": "",
+  "safety_flags": [
+    "đường cao",
+    "sữa"
+  ],
+  "difficulty": "dễ",
+  "prep_minutes": 10,
+  "best_occasion": null,
+  "food_pairing": [],
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "cultural_note": "Du nhập từ Đài Loan; biến thể đường đen là topping khác, không tách thành món riêng.",
+  "recipe_sources": [],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3."
+}

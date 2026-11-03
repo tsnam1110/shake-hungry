@@ -1,0 +1,52 @@
+{
+  "slug": "bia-thu-cong-dong-goi",
+  "name_vi": "Bia thủ công (craft)",
+  "drink_group": "bia",
+  "kind": "dong-goi",
+  "temperature": "lanh",
+  "glass": null,
+  "serving_ml": 330,
+  "technique": null,
+  "ice": null,
+  "garnish": [],
+  "ingredients": [],
+  "recipe_steps": [],
+  "sugar_added_g": null,
+  "sugar_note": "Đường thấp, ~0–3 g/330 ml, trừ style ngọt/pastry stout — dao động lớn.",
+  "caffeine_level": "khong",
+  "alcohol": true,
+  "alcohol_pct_estimate": null,
+  "alcohol_note": "Có cồn. ABV phụ thuộc style — đọc nhãn.",
+  "safety_flags": [
+    "18+"
+  ],
+  "difficulty": null,
+  "prep_minutes": null,
+  "best_occasion": null,
+  "food_pairing": [],
+  "packaging": "Lon 330 ml, chai 330 ml.",
+  "sugar_range_g": {
+    "min": 0,
+    "max": 3
+  },
+  "alcohol_pct_range": {
+    "min": 4.5,
+    "max": 7.5
+  },
+  "label_note": "Đọc nhãn sản phẩm cụ thể khi seed — khoảng trong catalogue là khoảng theo loại, dao động theo thương hiệu, không phải bảng dinh dưỡng của một sản phẩm cụ thể.",
+  "brand_examples": [
+    "Pasteur Street",
+    "Heart of Darkness",
+    "East West Brewing"
+  ],
+  "cultural_note": "Thành phần điển hình: nước, malt (nhiều loại), hoa bia (nhiều giống), men; có thể thêm trái cây/gia vị tùy style. Ghi style (IPA, lager, stout…) vì ABV phụ thuộc style: lager craft ~4,5–5,5%, IPA ~5,5–7,5%, stout/double IPA cao hơn. Không caffeine, trừ stout cà phê — kiểm tra nhãn.",
+  "recipe_sources": [],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §6."
+}

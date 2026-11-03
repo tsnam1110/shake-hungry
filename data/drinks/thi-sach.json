@@ -1,0 +1,74 @@
+{
+  "slug": "thi-sach",
+  "name_vi": "Thi Sách Cocktail",
+  "drink_group": "cocktail-co-con",
+  "glass": "coupe martini ướp lạnh",
+  "serving_ml": null,
+  "technique": "lac-shake",
+  "ice": "không đá",
+  "garnish": [],
+  "ingredients": [
+    {
+      "name": "whiskey",
+      "quantity": 50,
+      "unit": "ml"
+    },
+    {
+      "name": "cherry liqueur",
+      "quantity": 25,
+      "unit": "ml"
+    },
+    {
+      "name": "dark crème de cacao",
+      "quantity": 25,
+      "unit": "ml"
+    },
+    {
+      "name": "cà phê Việt (espresso)",
+      "quantity": 30,
+      "unit": "ml"
+    },
+    {
+      "name": "siro đường vani tự làm",
+      "quantity": 15,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Lắc tất cả với đá tươi trong bình Boston, lược vào ly coupe lạnh."
+  ],
+  "sugar_added_g": 20,
+  "sugar_note": "Đường từ rượu mùi + siro khoảng 20 g. Ít ngọt: siro 7 ml.",
+  "caffeine_level": "trung-binh",
+  "alcohol": true,
+  "alcohol_pct_estimate": 30,
+  "alcohol_note": "Ước tính trước pha loãng ~30%.",
+  "safety_flags": [
+    "18+",
+    "khong-lai-xe",
+    "caffeine"
+  ],
+  "difficulty": "Trung bình",
+  "prep_minutes": null,
+  "best_occasion": null,
+  "food_pairing": [],
+  "cultural_note": "Đặt theo đường Thi Sách, Quận 1, lấy cảm hứng từ hộp đêm Apocalypse ('Apo') — ghi rõ nguồn bar, không ghi là món dân gian.",
+  "recipe_sources": [
+    "The Studio Saigon, Richie Fawcett, công bố 2021-08-01"
+  ],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5."
+}

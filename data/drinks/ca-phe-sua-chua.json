@@ -1,0 +1,62 @@
+{
+  "slug": "ca-phe-sua-chua",
+  "name_vi": "Cà phê sữa chua",
+  "drink_group": "ca-phe",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "glass": "ly lớn",
+  "serving_ml": null,
+  "technique": "lắc/đánh bọt",
+  "ice": "đá gần đầy",
+  "garnish": [],
+  "ingredients": [
+    {
+      "name": "cà phê đen",
+      "quantity": 20,
+      "unit": "ml"
+    },
+    {
+      "name": "sữa đặc",
+      "quantity": 35,
+      "unit": "ml"
+    },
+    {
+      "name": "sữa chua không đường",
+      "quantity": 90,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Sữa đặc xuống đáy, xếp đá gần đầy.",
+    "Rót sữa chua lên đá.",
+    "Đánh bọt cà phê (lắc nhanh trong chai) rồi rót lên cùng."
+  ],
+  "sugar_added_g": 23,
+  "sugar_note": "Đường ~23 g; ít ngọt: sữa đặc 20 ml.",
+  "caffeine_level": "trung-binh",
+  "alcohol": false,
+  "alcohol_pct_estimate": null,
+  "alcohol_note": "",
+  "safety_flags": [
+    "caffeine trung bình"
+  ],
+  "difficulty": "dễ",
+  "prep_minutes": 10,
+  "best_occasion": null,
+  "food_pairing": [],
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "cultural_note": "",
+  "recipe_sources": [],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3."
+}

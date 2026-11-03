@@ -1,0 +1,79 @@
+{
+  "slug": "tra-sua-kem-cheese",
+  "name_vi": "Trà sữa kem cheese / macchiato",
+  "drink_group": "tra",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "glass": "ly 500 ml",
+  "serving_ml": 350,
+  "technique": "hãm trà, lắc với đá",
+  "ice": "đá",
+  "garnish": [],
+  "ingredients": [
+    {
+      "name": "trà/trà sữa nền",
+      "quantity": 150,
+      "unit": "ml"
+    },
+    {
+      "name": "phô mai kem",
+      "quantity": 20,
+      "unit": "g"
+    },
+    {
+      "name": "kem whipping",
+      "quantity": 40,
+      "unit": "ml"
+    },
+    {
+      "name": "sữa tươi",
+      "quantity": 20,
+      "unit": "ml"
+    },
+    {
+      "name": "đường",
+      "quantity": 5,
+      "unit": "g"
+    },
+    {
+      "name": "muối",
+      "quantity": 0.5,
+      "unit": "g"
+    }
+  ],
+  "recipe_steps": [
+    "Pha trà/trà sữa, thêm đá.",
+    "Đánh kem cheese tới mịn, dày nhưng rót được, mặn–ngọt.",
+    "Rót/múc lớp kem lên trên; không khuấy trước những ngụm đầu nếu phục vụ dạng lớp."
+  ],
+  "sugar_added_g": 20,
+  "sugar_note": "Đường khoảng 20–30 g; ít ngọt: giảm đường trong kem, giữ nhúm muối.",
+  "caffeine_level": "trung-binh",
+  "alcohol": false,
+  "alcohol_pct_estimate": null,
+  "alcohol_note": "",
+  "safety_flags": [
+    "sữa",
+    "đường",
+    "sữa/phô mai"
+  ],
+  "difficulty": "trung bình",
+  "prep_minutes": 15,
+  "best_occasion": null,
+  "food_pairing": [],
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "cultural_note": "'Macchiato' ở Việt Nam thường có nghĩa là lớp kem cheese mặn này, không phải espresso macchiato của Ý — không được nhầm hai món trong catalogue.",
+  "recipe_sources": [],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3."
+}

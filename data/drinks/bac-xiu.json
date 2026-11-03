@@ -1,0 +1,62 @@
+{
+  "slug": "bac-xiu",
+  "name_vi": "Bạc xỉu",
+  "drink_group": "ca-phe",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "glass": "ly cao",
+  "serving_ml": 350,
+  "technique": "pha phin, rót lớp",
+  "ice": "đá",
+  "garnish": [],
+  "ingredients": [
+    {
+      "name": "cà phê",
+      "quantity": 25,
+      "unit": "ml"
+    },
+    {
+      "name": "sữa đặc",
+      "quantity": 35,
+      "unit": "ml"
+    },
+    {
+      "name": "sữa tươi",
+      "quantity": 75,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Pha cà phê đậm.",
+    "Sữa đặc + sữa tươi vào ly đá.",
+    "Rót cà phê lên trên tạo lớp, khuấy trước khi uống."
+  ],
+  "sugar_added_g": 23,
+  "sugar_note": "Đường ~23 g; ít ngọt: sữa đặc 20 ml. Khoảng nguồn: cà phê 20–30 ml, sữa đặc 30–40 ml, sữa tươi 50–100 ml; số liệu trên là chuẩn seed.",
+  "caffeine_level": "trung-binh",
+  "alcohol": false,
+  "alcohol_pct_estimate": null,
+  "alcohol_note": "",
+  "safety_flags": [
+    "caffeine trung bình"
+  ],
+  "difficulty": "dễ",
+  "prep_minutes": 10,
+  "best_occasion": null,
+  "food_pairing": [],
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "cultural_note": "Miền Nam, bản chất là 'sữa có vị cà phê'.",
+  "recipe_sources": [],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3."
+}

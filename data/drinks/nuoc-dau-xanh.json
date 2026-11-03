@@ -1,0 +1,65 @@
+{
+  "slug": "nuoc-dau-xanh",
+  "name_vi": "Nước đậu xanh (uống)",
+  "drink_group": "giai-khat",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "glass": "chai/ly",
+  "serving_ml": 350,
+  "technique": "nấu/xay",
+  "ice": "đá",
+  "garnish": [],
+  "ingredients": [
+    {
+      "name": "đậu xanh bóc vỏ",
+      "quantity": 80,
+      "unit": "g"
+    },
+    {
+      "name": "nước",
+      "quantity": 300,
+      "unit": "ml"
+    },
+    {
+      "name": "đường",
+      "quantity": 20,
+      "unit": "g"
+    },
+    {
+      "name": "sữa dừa",
+      "quantity": 30,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Ngâm, nấu đậu tới rất mềm.",
+    "Xay với nước + đường tới mỏng và mịn (mỏng hơn chè — thêm nước tới uống được).",
+    "Lọc nếu muốn, làm lạnh, phục vụ trên đá."
+  ],
+  "sugar_added_g": 20,
+  "sugar_note": "Đường khoảng 20–30 g hoặc đường phèn; ít ngọt: 10 g đường.",
+  "caffeine_level": "khong",
+  "alcohol": false,
+  "alcohol_pct_estimate": null,
+  "alcohol_note": "",
+  "safety_flags": [],
+  "difficulty": "dễ",
+  "prep_minutes": 40,
+  "best_occasion": null,
+  "food_pairing": [],
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "cultural_note": "Phân biệt với chè đậu xanh (tráng miệng thìa): entry này là bản mỏng, uống bằng ống hút, bán như đồ giải khát; nếu cần thìa và có nhiều topping tráng miệng, nó thuộc về chè, không phải ở đây.",
+  "recipe_sources": [],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3."
+}

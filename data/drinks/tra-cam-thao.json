@@ -1,0 +1,60 @@
+{
+  "slug": "tra-cam-thao",
+  "name_vi": "Trà cam thảo",
+  "drink_group": "tra",
+  "kind": "pha-che",
+  "temperature": "nong",
+  "glass": "ly/tách",
+  "serving_ml": 250,
+  "technique": "hãm",
+  "ice": null,
+  "garnish": [],
+  "ingredients": [
+    {
+      "name": "rễ cam thảo khô",
+      "quantity": 3,
+      "unit": "g"
+    },
+    {
+      "name": "nước",
+      "quantity": 250,
+      "unit": "ml"
+    },
+    {
+      "name": "mật ong",
+      "quantity": 5,
+      "unit": "g"
+    }
+  ],
+  "recipe_steps": [
+    "Tráng, hãm đậy nắp 7–10 phút, lọc; không hãm quá lâu — vị ngọt trở nên gắt."
+  ],
+  "sugar_added_g": 0,
+  "sugar_note": "Đường khoảng 0–10 g (bản thân rễ đã ngọt); mật ong 5–10 g tùy chọn.",
+  "caffeine_level": "khong",
+  "alcohol": false,
+  "alcohol_pct_estimate": null,
+  "alcohol_note": "",
+  "safety_flags": [
+    "cam thảo lượng lớn/thường xuyên là lưu ý chung cho tăng huyết áp/mang thai trong hướng dẫn sức khỏe chung — catalogue nên ghi 'chỉ uống thỉnh thoảng, lượng nhỏ; hỏi bác sĩ nếu tăng huyết áp/mang thai' mà không đưa tuyên bố y khoa; không tiếp thị như thuốc"
+  ],
+  "difficulty": "dễ",
+  "prep_minutes": 10,
+  "best_occasion": null,
+  "food_pairing": [],
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "cultural_note": "Thường pha trộn với thảo mộc khác hoặc ít trà ở quán.",
+  "recipe_sources": [],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3."
+}

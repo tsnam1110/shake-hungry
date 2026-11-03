@@ -1,0 +1,77 @@
+{
+  "slug": "khoai-mi",
+  "name_vi": "Khoai mì / sắn",
+  "ingredient_slug": "khoai-mi",
+  "group": "rau-cu",
+  "supply": "trong-nuoc",
+  "state": "tuoi",
+  "availability_months_by_region": {
+    "bac": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "trung": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "nam": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "region_notes": {
+    "bac": "",
+    "trung": "",
+    "nam": "Bán lẻ ngon nhất 10–2 theo nguồn bán lẻ (UNCERTAIN)."
+  },
+  "main_season_months": null,
+  "best_months": null,
+  "kcal_per_100g": 160,
+  "kcal_confidence": "high",
+  "aliases": [
+    "sắn",
+    "củ sắn"
+  ],
+  "selection_note": "Củ chắc, nặng, vỏ không dập, cắt thấy trắng, không thâm, không mùi chua.",
+  "storage_note": "Củ tươi hỏng rất nhanh sau thu — dùng sớm, vài ngày mát, khô.",
+  "cooking_note": "Luộc, hấp, nướng, nấu chè, làm bánh. Không dùng như rau ăn sống.",
+  "safety_note": "BẮT BUỘC (co-so): sắn sống chứa cyanogenic glycoside — lột vỏ, ngâm/rửa, nấu chín kỹ, đổ bỏ nước luộc; không ăn sống; giống đắng cần xử lý kỹ hơn giống ngọt. Trạng thái riêng: lương thực/tinh bột, không xếp chung bộ lọc rau lá.",
+  "uncertain": true,
+  "uncertain_note": "UNCERTAIN: khung vụ trồng (trồng 4–5 thu 1–3; trồng 10–11 thu 9–10) không trùng hoàn toàn với khung bán lẻ ngon nhất (10–2) vì khác giống/vùng.",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source": "catalogue-v2",
+  "source_note": "Catalogue rau theo mùa v2 (2026-11-03), phần B — rau vùng hẹp / theo vụ đặc thù. Tháng là tháng có bán trên thị trường; miền ghi null là chưa có lịch chợ riêng, không gán tháng."
+}

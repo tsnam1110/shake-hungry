@@ -1,0 +1,63 @@
+{
+  "slug": "nuoc-mat",
+  "name_vi": "Nước mát (nước sâm tổng hợp)",
+  "drink_group": "giai-khat",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "glass": "chai/ly",
+  "serving_ml": 350,
+  "technique": "nấu/xay",
+  "ice": "đá",
+  "garnish": [],
+  "ingredients": [
+    {
+      "name": "thảo mộc hỗn hợp (mía lau, râu bắp, rễ tranh, lá dứa, long nhãn, thục địa…)",
+      "quantity": null,
+      "unit": null
+    },
+    {
+      "name": "đường phèn",
+      "quantity": 20,
+      "unit": "g"
+    },
+    {
+      "name": "nước",
+      "quantity": 300,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Rửa thảo mộc.",
+    "Nấu thảo mộc trong nước 20–30 phút.",
+    "Thêm đường phèn, hòa tan, lọc.",
+    "Làm nguội hoàn toàn, làm lạnh, phục vụ trên đá."
+  ],
+  "sugar_added_g": 20,
+  "sugar_note": "Đường khoảng 20–30 g tương đương mỗi khẩu phần; ít ngọt: giảm một nửa đường phèn.",
+  "caffeine_level": "khong",
+  "alcohol": false,
+  "alcohol_pct_estimate": null,
+  "alcohol_note": "",
+  "safety_flags": [
+    "không trình bày như thuốc; hỗn hợp thảo mộc thay đổi — tính minh bạch thành phần/dị ứng quan trọng"
+  ],
+  "difficulty": "trung bình",
+  "prep_minutes": 40,
+  "best_occasion": null,
+  "food_pairing": [],
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "cultural_note": "'Nước sâm' đường phố chung Sài Gòn/Chợ Lớn — mỗi quán có hỗn hợp thảo mộc riêng; không có công thức chuẩn duy nhất, vì vậy catalogue ghi phương pháp, không ghi danh sách thảo mộc cố định.",
+  "recipe_sources": [],
+  "mocktail_counterpart_slug": null,
+  "uncertain": true,
+  "uncertain_note": "Không có công thức chuẩn duy nhất; hỗn hợp thảo mộc thay đổi theo quán/gia đình.",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3."
+}

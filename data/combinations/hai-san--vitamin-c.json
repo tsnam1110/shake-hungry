@@ -1,1 +1,45 @@
-{"category":"food_food","condition_vi":"Không cần kiêng — kể cả khi dùng viên vitamin C liều cao. Rủi ro có thật của vitamin C từ 1 g/ngày trở lên là sỏi oxalat và rối loạn tiêu hoá (FAO), không liên quan tới asen trong hải sản.","evidence_class":"E3","mechanism_vi":"Tin đồn cho rằng vitamin C biến asen trong hải sản thành thạch tín. Thực tế asen trong hải sản chủ yếu là arsenobetaine hữu cơ gần như không độc (ATSDR/CDC); thí nghiệm dịch dạ dày mô phỏng (CCTV 3.15/2018) cho lượng thạch tín tạo thành gần như bằng không. Giai thoại về 'liều bổ sung' bắt nguồn từ một nghiên cứu năm 1984 trên gà con ăn phụ gia thức ăn chứa asen — không phải hải sản, không phải người.","needs_review":true,"science_status":"refuted","side_a":{"label_vi":"Hải sản (cua, tôm, mực, nghêu…)","members":["cua-bien","cua-dong","tom-the","tom-su","muc-ong","ngheu"],"ref":"hai-san","type":"food_group"},"side_b":{"label_vi":"Vitamin C (thực phẩm giàu vitamin C và viên bổ sung liều cao)","members":[],"ref":"vitamin-c","type":"food_group"},"slug":"hai-san--vitamin-c","source":"curated","sources":[{"accessed":"2026-11-02","note":"FAO/WHO — vitamin C: nguy cơ sỏi oxalat chỉ ở liều cao trên 1 g/ngày","url":"https://www.fao.org/4/Y2809E/y2809e0c.htm"},{"accessed":"2026-11-02","note":"CGTN/CCTV — thí nghiệm bác tin đồn hải sản + vitamin C sinh thạch tín","url":"https://news.cgtn.com/news/33677a4e796b7a6333566d54/index.html"}],"traditional_source":{"quote":null,"text":"Tin đồn 'thực phẩm kỵ nhau' lưu hành trên web hiện đại (thuyết vitamin C + asen trong hải sản)"}}
+{
+  "category": "food_food",
+  "condition_vi": "Không cần kiêng — kể cả khi dùng viên vitamin C liều cao. Rủi ro có thật của vitamin C từ 1 g/ngày trở lên là sỏi oxalat và rối loạn tiêu hoá (FAO), không liên quan tới asen trong hải sản.",
+  "evidence_class": "E3",
+  "mechanism_vi": "Tin đồn cho rằng vitamin C biến asen trong hải sản thành thạch tín. Thực tế asen trong hải sản chủ yếu là arsenobetaine hữu cơ gần như không độc (ATSDR/CDC); thí nghiệm dịch dạ dày mô phỏng (CCTV 3.15/2018) cho lượng thạch tín tạo thành gần như bằng không. Giai thoại về 'liều bổ sung' bắt nguồn từ một nghiên cứu năm 1984 trên gà con ăn phụ gia thức ăn chứa asen — không phải hải sản, không phải người.",
+  "needs_review": false,
+  "science_status": "refuted",
+  "side_a": {
+    "label_vi": "Hải sản (cua, tôm, mực, nghêu…)",
+    "members": [
+      "cua-bien",
+      "cua-dong",
+      "tom-the",
+      "tom-su",
+      "muc-ong",
+      "ngheu"
+    ],
+    "ref": "hai-san",
+    "type": "food_group"
+  },
+  "side_b": {
+    "label_vi": "Vitamin C (thực phẩm giàu vitamin C và viên bổ sung liều cao)",
+    "members": [],
+    "ref": "vitamin-c",
+    "type": "food_group"
+  },
+  "slug": "hai-san--vitamin-c",
+  "source": "curated",
+  "sources": [
+    {
+      "accessed": "2026-11-02",
+      "note": "FAO/WHO — vitamin C: nguy cơ sỏi oxalat chỉ ở liều cao trên 1 g/ngày",
+      "url": "https://www.fao.org/4/Y2809E/y2809e0c.htm"
+    },
+    {
+      "accessed": "2026-11-02",
+      "note": "CGTN/CCTV — thí nghiệm bác tin đồn hải sản + vitamin C sinh thạch tín",
+      "url": "https://news.cgtn.com/news/33677a4e796b7a6333566d54/index.html"
+    }
+  ],
+  "traditional_source": {
+    "quote": null,
+    "text": "Tin đồn 'thực phẩm kỵ nhau' lưu hành trên web hiện đại (thuyết vitamin C + asen trong hải sản)"
+  }
+}

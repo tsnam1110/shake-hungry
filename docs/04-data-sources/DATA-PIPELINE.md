@@ -265,6 +265,7 @@ riêng, là hoạt động hợp lệ và cho ra một cơ sở dữ liệu mà 
 | 4 | **Nhãn dinh dưỡng sản phẩm thương mại** bán tại VN — bắt buộc ghi **tên thương hiệu + URL** | `nhan_san_pham` | `medium` |
 | 5 | **Tự đo / tự cân** — ghi rõ phương pháp, ngày, dụng cụ | `tu_do` | `medium` |
 | 6 | **Nguồn THỨ CẤP — không ưu tiên** (xem ghi chú ngay dưới): Bảng TPTP Việt Nam (Viện Dinh dưỡng), bảng FCT nước ngoài khác (MEXT Nhật, IFCT Ấn Độ, Thai FCT, FNRI), bài báo/tài liệu khoa học có phân tích thành phần | `vn_nin`, `mext_jp`, `ifct_in`, `thai_fct`, `fnri_ph`, `literature`, `tbca_br`, `tkpi_id` | `low` — và bị đánh dấu **chưa kiểm định** |
+| 6b | **Proxy mức thấp đã duyệt** (chủ dự án, 2026-11-03): số mượn mà mã nguồn thật không thuộc tầng thứ cấp (nhãn thương mại qua Open Food Facts, trang dẫn lại USDA, mục USDA chung cho cả nhóm loài) — `mapping_note` phải ghi rõ proxy từ đâu và còn thiếu gì | `proxy` | `low` — và bị đánh dấu **chưa kiểm định** (`App\Nutrition\SourceTier`) |
 | 7 | Không tra được | `null` | — |
 
 > ⚠️ **Nguồn 4 và 5 là ngoại lệ có kiểm soát của QT-4.** Chúng phá nguyên tắc "một bảng thành phần
@@ -282,6 +283,32 @@ riêng, là hoạt động hợp lệ và cho ra một cơ sở dữ liệu mà 
 > tầng này bị hệ thống đánh dấu **"chưa kiểm định"** (`App\Nutrition\SourceTier` là nơi định
 > nghĩa duy nhất): `dish_nutrition.unverified_ingredients` ghi lại và giao diện công khai hiển
 > thị cảnh báo trên món dùng chúng, cho đến khi được thay bằng nguồn chính thống.
+
+### 7.2a Hai quy ước đã chốt (chủ dự án, 2026-11-03) — không hỏi lại
+
+1. **Một dòng bảng tham chiếu dùng chung cho nhiều nguyên liệu là ĐƯỢC PHÉP.**
+   Một mục USDA/FCT là một *thực phẩm tham chiếu*, không phải một *nguyên liệu kho*:
+   cùng một dòng có thể là ánh xạ tốt nhất hiện có cho nhiều nguyên liệu Việt
+   khác nhau khi chúng chưa có dòng riêng đạt chuẩn, miễn mỗi nguyên liệu ghi
+   rõ trong `mapping_note` vì sao dòng đó được chọn và còn thiếu gì. Ví dụ thật
+   trong kho: USDA 169742 (bún gạo khô) → 4 nguyên liệu bún khô; USDA 168914
+   → 6 nguyên liệu bún tươi (trong đó `bun-tuoi` dùng trong 63 món, chênh
+   ~20% độ ẩm so với Ciqual — ghi rõ, không giấu); USDA 175179 (tôm chung)
+   → `tep`, `tom-su`, `tom-the`, `tom-cang-xanh`; USDA 174204 (cua xanh)
+   → `cua-bien`, `ghe`. Dùng chung không có nghĩa là đồng nhất: khi một trong
+   các nguyên liệu đó có dòng riêng tốt hơn, chỉ thay riêng nó, không đổi cả
+   cụm. Đây không phải vi phạm QT-4: mỗi phép tính vẫn dùng đúng một bảng
+   tham chiếu cho mỗi nguyên liệu.
+2. **Nguyên liệu không món nào dùng vẫn phải giữ — đó là thư viện nguyên liệu.**
+   Validator V8 báo 102 nguyên liệu chưa được món nào dùng (trong đó 68 là
+   nguyên liệu của module hoa quả, 34 còn lại thực sự chưa dùng ở đâu) — đây
+   là **trạng thái kỳ vọng, không phải lỗi cần dọn**. Kho nguyên liệu là thư
+   viện để tra cứu và để biên soạn món sau này (ví dụ `bach-tuoc`, `ca-hoi`,
+   `heo-quay`, `cha-lua-chay`, `ca-dia`, `trung-vit-lon`, `nuoc-mia`,
+   `tra-xanh`, `sua-chua` đều không có món nào dùng tại thời điểm chốt nhưng
+   vẫn là nguyên liệu thật, có hồ sơ). Không xoá nguyên liệu chỉ vì V8 báo
+   chưa dùng; chỉ xoá khi bản thân hồ sơ là vỏ rỗng sai định danh (tiền lệ
+   duy nhất đã duyệt: `mam-ruot-an-giang`, xem ROADMAP 2026-11-03).
 
 ### 7.3 Quy tắc bắt buộc khi tra cứu
 

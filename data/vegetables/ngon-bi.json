@@ -1,0 +1,52 @@
+{
+  "slug": "ngon-bi",
+  "name_vi": "Ngọn bí",
+  "ingredient_slug": "ngon-bi",
+  "group": "rau-la",
+  "supply": "trong-nuoc",
+  "state": "tuoi",
+  "availability_months_by_region": {
+    "bac": [
+      2,
+      3,
+      9,
+      10
+    ],
+    "trung": null,
+    "nam": null
+  },
+  "region_notes": {
+    "bac": "",
+    "trung": "Chưa có lịch chợ ngọn riêng — tháng để trống.",
+    "nam": "Chưa có lịch chợ ngọn riêng — tháng để trống."
+  },
+  "main_season_months": [
+    2,
+    3,
+    9,
+    10
+  ],
+  "best_months": [
+    2,
+    3,
+    9,
+    10
+  ],
+  "kcal_per_100g": 19,
+  "kcal_confidence": "medium",
+  "aliases": [
+    "rau bí"
+  ],
+  "selection_note": "Ngọn non, lá xanh non, thân giòn, tua cuốn mềm, không già xơ.",
+  "storage_note": "1–2 ngày ngăn mát, rất nhanh héo.",
+  "cooking_note": "Ngọn bí xào tỏi, luộc chấm mắm, nấu canh.",
+  "safety_note": "",
+  "uncertain": true,
+  "uncertain_note": "UNCERTAIN về tháng cắt ngọn riêng ở Trung/Nam (chưa có lịch chợ ngọn riêng).",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source": "catalogue-v2",
+  "source_note": "Catalogue rau theo mùa v2 (2026-11-03), phần B — rau vùng hẹp / theo vụ đặc thù. Tháng là tháng có bán trên thị trường; miền ghi null là chưa có lịch chợ riêng, không gán tháng."
+}

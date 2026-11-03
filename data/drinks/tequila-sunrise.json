@@ -1,0 +1,63 @@
+{
+  "slug": "tequila-sunrise",
+  "name_vi": "Tequila Sunrise",
+  "drink_group": "cocktail-co-con",
+  "glass": "highball",
+  "serving_ml": 150,
+  "technique": "pha-truc-tiep-build",
+  "ice": "đá viên",
+  "garnish": [],
+  "ingredients": [
+    {
+      "name": "tequila",
+      "quantity": 45,
+      "unit": "ml"
+    },
+    {
+      "name": "nước cam tươi",
+      "quantity": 90,
+      "unit": "ml"
+    },
+    {
+      "name": "grenadine",
+      "quantity": 15,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Đổ đầy đá vào highball; rót tequila + nước cam; rót grenadine chậm dọc thành ly để chìm — KHÔNG khuấy, để giữ lớp bình minh."
+  ],
+  "sugar_added_g": 5,
+  "sugar_note": "Đường thêm vào: chỉ grenadine, không tính như siro; nếu dùng grenadine dạng siro, khoảng 5–9 g (ghi giá trị thấp nhất). Ít ngọt: giảm một nửa grenadine.",
+  "caffeine_level": "khong",
+  "alcohol": true,
+  "alcohol_pct_estimate": 12,
+  "alcohol_note": "Ước tính trước pha loãng khoảng 12–14% (ghi giá trị thấp nhất).",
+  "safety_flags": [
+    "18+",
+    "khong-lai-xe"
+  ],
+  "difficulty": "Dễ",
+  "prep_minutes": null,
+  "best_occasion": null,
+  "food_pairing": [],
+  "cultural_note": "IBA Contemporary Classics; dạng hiện đại phổ biến ở California 1970s, không phải bản gốc 1930s.",
+  "recipe_sources": [
+    "IBA"
+  ],
+  "mocktail_counterpart_slug": "virgin-sunrise",
+  "uncertain": false,
+  "uncertain_note": "",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5."
+}

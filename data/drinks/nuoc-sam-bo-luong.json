@@ -1,0 +1,76 @@
+{
+  "slug": "nuoc-sam-bo-luong",
+  "name_vi": "Nước sâm bổ lượng (thanh bổ lượng)",
+  "drink_group": "giai-khat",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "glass": "chai/ly",
+  "serving_ml": 350,
+  "technique": "nấu/xay",
+  "ice": "đá",
+  "garnish": [],
+  "ingredients": [
+    {
+      "name": "hạt sen",
+      "quantity": null,
+      "unit": null
+    },
+    {
+      "name": "bo bo (lúa mạch)",
+      "quantity": null,
+      "unit": null
+    },
+    {
+      "name": "long nhãn khô",
+      "quantity": null,
+      "unit": null
+    },
+    {
+      "name": "táo đỏ",
+      "quantity": null,
+      "unit": null
+    },
+    {
+      "name": "đường phèn",
+      "quantity": 20,
+      "unit": "g"
+    },
+    {
+      "name": "nước",
+      "quantity": 300,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Ngâm/rửa nguyên liệu khô.",
+    "Nấu hạt sen + bo bo tới mềm, thêm long nhãn/táo đỏ, đun nhỏ lửa 20–30 phút.",
+    "Thêm đường phèn, hòa tan, để nguội.",
+    "Phục vụ nước + nguyên liệu mềm trên đá; uống (thìa cho phần đặc nếu muốn) — phần nước là thức uống, phần đặc là tùy chọn."
+  ],
+  "sugar_added_g": 20,
+  "sugar_note": "Đường khoảng 20–30 g; ít ngọt: giảm một nửa đường phèn.",
+  "caffeine_level": "khong",
+  "alcohol": false,
+  "alcohol_pct_estimate": null,
+  "alcohol_note": "",
+  "safety_flags": [],
+  "difficulty": "trung bình",
+  "prep_minutes": 50,
+  "best_occasion": null,
+  "food_pairing": [],
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "cultural_note": "Thức uống 'thanh nhiệt' gốc Hoa được tiếp nhận ở Sài Gòn/Chợ Lớn; trường hợp biên chè/thức uống — đưa vào đây vì quán bán theo ly chủ yếu để uống, và phần nước là thức uống.",
+  "recipe_sources": [],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3."
+}

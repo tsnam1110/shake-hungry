@@ -1,0 +1,78 @@
+{
+  "slug": "aperol-sour",
+  "name_vi": "Aperol Sour",
+  "drink_group": "cocktail-co-con",
+  "glass": "coupe / rocks",
+  "serving_ml": 110,
+  "technique": "lac-shake",
+  "ice": "không đá (coupe) hoặc đá viên (rocks)",
+  "garnish": [
+    "vỏ bưởi/chanh"
+  ],
+  "ingredients": [
+    {
+      "name": "Aperol",
+      "quantity": 30,
+      "unit": "ml"
+    },
+    {
+      "name": "gin",
+      "quantity": 30,
+      "unit": "ml"
+    },
+    {
+      "name": "nước chanh",
+      "quantity": 22.5,
+      "unit": "ml"
+    },
+    {
+      "name": "siro đường",
+      "quantity": 15,
+      "unit": "ml"
+    },
+    {
+      "name": "lòng trắng trứng",
+      "quantity": 15,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Lắc khô tất cả không đá.",
+    "Thêm đá, lắc lại.",
+    "Lược đôi vào coupe lạnh (hoặc lên đá trong rocks), vỏ bưởi/chanh."
+  ],
+  "sugar_added_g": 9,
+  "sugar_note": "Đường thêm vào khoảng 9–13 g (ghi giá trị thấp nhất; siro khoảng 15–22,5 ml). Ít ngọt: 7,5 ml siro.",
+  "caffeine_level": "khong",
+  "alcohol": true,
+  "alcohol_pct_estimate": 13,
+  "alcohol_note": "Ước tính trước pha loãng khoảng 13–16% (ghi giá trị thấp nhất).",
+  "safety_flags": [
+    "18+",
+    "khong-lai-xe",
+    "long-trang-trung-song"
+  ],
+  "difficulty": "Trung bình",
+  "prep_minutes": null,
+  "best_occasion": null,
+  "food_pairing": [],
+  "cultural_note": "Không phải IBA; sour aperitivo hiện đại, phổ biến cùng văn hoá Aperol Spritz. File chọn họ B (gin-Aperol), không trộn lượng họ A — họ A (chỉ Aperol): Aperol 60 ml, chanh 22,5 ml, siro 22,5 ml, lòng trắng trứng. Chuẩn catalogue là họ B 30/30/22,5/15 ml + lòng trắng trứng, vì Aperol riêng ở 11% làm sour rất nhẹ và hầu hết bar thủ công Việt dùng bản gin. Ghi rõ bar dùng họ nào — không trộn lượng của A và B.",
+  "recipe_sources": [
+    "Họ B: LCBO / bar phổ biến"
+  ],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5."
+}

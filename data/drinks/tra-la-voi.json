@@ -1,0 +1,53 @@
+{
+  "slug": "tra-la-voi",
+  "name_vi": "Trà lá vối / Nước lá vối",
+  "drink_group": "tra",
+  "kind": "pha-che",
+  "temperature": "ca-hai",
+  "glass": "ly/tách",
+  "serving_ml": 250,
+  "technique": "hãm",
+  "ice": null,
+  "garnish": [],
+  "ingredients": [
+    {
+      "name": "lá vối khô",
+      "quantity": 5,
+      "unit": "g"
+    },
+    {
+      "name": "nước",
+      "quantity": 250,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Tráng lá, rót nước sôi, đậy nắp, hãm 10–15 phút, lọc; làm lạnh cho bản lạnh."
+  ],
+  "sugar_added_g": 0,
+  "sugar_note": "Đường khoảng 0–10 g tùy chọn (truyền thống không đường); đường thường 0 g.",
+  "caffeine_level": "khong",
+  "alcohol": false,
+  "alcohol_pct_estimate": null,
+  "alcohol_note": "",
+  "safety_flags": [],
+  "difficulty": "dễ",
+  "prep_minutes": 15,
+  "best_occasion": null,
+  "food_pairing": [],
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "cultural_note": "Trà gia đình hằng ngày miền Bắc/Trung, uống như nước trong bữa ăn, không phải đặc sản quán — vì vậy nó cũng xuất hiện như đồ uống vùng miền; cũng bán theo chai/bình như nuoc la voi (tham chiếu chéo, không đếm hai lần).",
+  "recipe_sources": [],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3."
+}

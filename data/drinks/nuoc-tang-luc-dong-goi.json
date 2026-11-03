@@ -1,0 +1,50 @@
+{
+  "slug": "nuoc-tang-luc-dong-goi",
+  "name_vi": "Nước tăng lực",
+  "drink_group": "tang-luc-dien-giai",
+  "kind": "dong-goi",
+  "temperature": "lanh",
+  "glass": null,
+  "serving_ml": 250,
+  "technique": null,
+  "ice": null,
+  "garnish": [],
+  "ingredients": [],
+  "recipe_steps": [],
+  "sugar_added_g": null,
+  "sugar_note": "Bản có đường ~25–35 g/250–330 ml; bản không đường 0 g là ngoại lệ — dao động theo thương hiệu.",
+  "caffeine_level": "cao",
+  "alcohol": false,
+  "alcohol_pct_estimate": null,
+  "alcohol_note": "Không cồn.",
+  "safety_flags": [
+    "duong-cao",
+    "caffeine"
+  ],
+  "difficulty": null,
+  "prep_minutes": null,
+  "best_occasion": null,
+  "food_pairing": [],
+  "packaging": "Lon 250 ml / 330 ml.",
+  "sugar_range_g": {
+    "min": 25,
+    "max": 35
+  },
+  "alcohol_pct_range": null,
+  "label_note": "Đọc nhãn sản phẩm cụ thể khi seed — khoảng trong catalogue là khoảng theo loại, dao động theo thương hiệu, không phải bảng dinh dưỡng của một sản phẩm cụ thể.",
+  "brand_examples": [
+    "Red Bull",
+    "Sting",
+    "Number 1"
+  ],
+  "cultural_note": "Thành phần điển hình: nước, đường hoặc chất tạo ngọt, caffeine, taurine, vitamin nhóm B. Ghi chú ngắn trong catalogue (§6.6), không phải entry đầy đủ. UI: xem nhãn sản phẩm cụ thể; không dùng cho trẻ em/phụ nữ mang thai theo khuyến cáo trên nhãn.",
+  "recipe_sources": [],
+  "mocktail_counterpart_slug": null,
+  "uncertain": true,
+  "uncertain_note": "Ghi chú ngắn trong catalogue (§6.6), không phải entry đầy đủ; đường/caffeine dao động theo thương hiệu, bắt buộc đọc nhãn.",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §6."
+}

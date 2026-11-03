@@ -1,0 +1,72 @@
+{
+  "slug": "thi-la",
+  "name_vi": "Thì là",
+  "ingredient_slug": "thi-la",
+  "group": "rau-thom-an-kem",
+  "supply": "trong-nuoc",
+  "state": "tuoi",
+  "availability_months_by_region": {
+    "bac": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ],
+    "trung": null,
+    "nam": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "region_notes": {
+    "bac": "",
+    "trung": "Vùng thấp UNCERTAIN; nguồn Đà Lạt/vùng cao quanh năm.",
+    "nam": "Có bán quanh năm nhờ nguồn Đà Lạt."
+  },
+  "main_season_months": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+  ],
+  "best_months": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+  ],
+  "kcal_per_100g": 43,
+  "kcal_confidence": "medium",
+  "aliases": [],
+  "selection_note": "Lá tươi, xanh, không vàng úa/dập/nhớt; rửa kỹ, nhất là ăn sống.",
+  "storage_note": "Lá rời ngăn mát khô ráo 1–2 ngày (hành lá, rau mùi, húng: 2–3 ngày nếu giữ khô, chưa rửa).",
+  "cooking_note": "Rau thơm của cá — chả cá, canh cá, bún cá, cá hấp; canh riêu và một số món trứng.",
+  "safety_note": "Repo tự cảnh báo: 43 kcal là cao bất thường trong nhóm, mẫu đạm/béo/nước rất mỏng (dataPoints=2) — gắn cờ kiểm tra lại, không trình bày như số chắc chắn. Ngoại lệ có mùa vụ duy nhất trong nhóm.",
+  "uncertain": true,
+  "uncertain_note": "Trung: vùng thấp UNCERTAIN về tháng chính xác (nguồn Đà Lạt/vùng cao quanh năm). Nam: chất lượng tốt nhất tháng khô ~11–3 theo nguồn bán lẻ, ghi UNCERTAIN nếu cần khoảng cứng. Bắc ngoài 10–4 có bán mỏng hơn, không ghi 1–12.",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source": "catalogue-v2",
+  "source_note": "Catalogue rau theo mùa v2 (2026-11-03), phần C/D. Rau thơm mặc định có bán 1–12 cả nước, không chính vụ; dạng chế biến không có mùa vụ."
+}

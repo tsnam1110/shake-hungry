@@ -195,6 +195,24 @@ Lệnh in ra một link dạng `https://*.free.pinggy.net` — **link miễn ph�
 và chỉ sống khi cửa sổ SSH còn mở. Cần link dài hạn thì phải có tài khoản Pinggy (token)
 hoặc triển khai thật — xem DEPLOYMENT.md §6.
 
+> ### PROXY-001 — vì sao trang qua tunnel từng vỡ thành HTML trần (2026-11-03)
+> Pinggy chấm dứt TLS ở ngoài rồi chuyển tiếp bằng HTTP tới `localhost:8000`, kèm
+> `X-Forwarded-Proto: https` và `X-Forwarded-Host` là domain Pinggy. Trước bản sửa này,
+> `bootstrap/app.php` không cấu hình tin proxy, nên Laravel tưởng request là `http://`
+> và sinh URL asset Vite dạng `http://<domain-pinggy>/build/…`. Trình duyệt mở trang
+> bằng `https` chặn hết CSS/JS đó vì **mixed content** — giao diện vỡ đúng như ảnh chụp
+> 2026-11-03: không còn CSS, logo SVG phình to, nav chỉ còn link trần, dù bản thân file
+> CSS tải trực tiếp bằng `https` vẫn trả 200 và đủ 57.500 byte.
+>
+> Cách sửa (đã nằm trong code, không cần đổi `.env` khi đổi tunnel): `bootstrap/app.php`
+> gọi `$middleware->trustProxies(at: '*', …)` cho 4 header `X-Forwarded-*`, để scheme/host
+> của URL sinh ra khớp với những gì người xem thực sự thấy. Kiểm chứng sau mỗi lần mở
+> tunnel mới: mở nguồn trang public, asset CSS/JS phải bắt đầu bằng `https://`, còn mở
+> `http://localhost:8000` trực tiếp thì vẫn là `http://` như cũ. **Không cần đổi `APP_URL`
+> thành domain tunnel** chỉ để sửa asset — `APP_URL` chỉ dùng cho URL tuyệt đối trong
+> email/redirect, còn asset theo host đã forward. Lưu ý: tunnel qua HTTP egress proxy của
+> VM Muse phải dùng `ProxyCommand` như §6 của runbook vận hành, SSH trực tiếp bị reset.
+
 Tailscale Funnel: chỉ dùng được khi máy dev là **máy cá nhân có Tailscale đầy đủ**
 (`tailscale funnel 8000`). VM Muse của dự án là client chỉ-chiều-ra (không nhận kết nối
 vào) nên **không** host Funnel từ VM đó được — đừng mất thời gian thử.
@@ -228,6 +246,7 @@ php artisan lacdoi:validate-data
 | Migration lỗi `1419 — You do not have the SUPER privilege and binary logging is enabled` | Server chưa bật `log_bin_trust_function_creators` | Làm §3 (cả `SET GLOBAL` lẫn ghi vào `my.cnf`/`my.ini`), chạy lại `migrate:fresh --seed` |
 | Tìm kiếm/sắp xếp tiếng Việt sai ở tầng DB | DB tạo sai collation | Tạo lại DB với `utf8mb4_vi_0900_ai_ci` (§3) rồi seed lại — dữ liệu nằm ở `data/` nên không mất gì |
 | Trang không ăn CSS mới; ảnh hiển thị kích thước gốc tràn trang | Sửa `resources/css\|js` nhưng chưa `npm run build` (sự cố UI-020) | Build lại + kiểm hash bundle theo quy tắc §6 |
+| Trang qua tunnel/proxy HTTPS vỡ thành HTML trần, logo phình to, nav chỉ còn link trần (PROXY-001, 2026-11-03) | Laravel không tin header `X-Forwarded-*` nên sinh asset dạng `http://` bị trình duyệt chặn vì mixed content | Đã sửa trong `bootstrap/app.php` (`trustProxies`); kiểm chứng: nguồn trang public phải có asset `https://`, local vẫn `http://` — xem §6 |
 | DB trống / mất toàn bộ dữ liệu sau khi đổi máy hoặc VM bị thay mới | DB chỉ là bản dựng lại (QT-3) | Tạo 2 DB (§3) → `migrate:fresh --seed` → tạo lại admin (§5) → `npm run build` |
 | `Connection refused` khi migrate/serve | MySQL chưa chạy, hoặc sai `DB_PORT` | Khởi động MySQL; kiểm `DB_HOST/DB_PORT` trong `.env` (mặc định 127.0.0.1:3306) |
 | Lỗi 500 ngay trang đầu, log nhắc `APP_KEY` | Chưa chạy `key:generate` | `php artisan key:generate` |

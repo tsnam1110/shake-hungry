@@ -1,0 +1,53 @@
+{
+  "slug": "bong-sung",
+  "name_vi": "Bông súng (cọng)",
+  "ingredient_slug": "bong-sung",
+  "group": "rau-la",
+  "supply": "trong-nuoc",
+  "state": "tuoi",
+  "availability_months_by_region": {
+    "bac": null,
+    "trung": null,
+    "nam": [
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "region_notes": {
+    "bac": "Hàng miền Nam vận chuyển theo mùa lũ — tháng để trống.",
+    "trung": "Hàng miền Nam vận chuyển theo mùa lũ — tháng để trống.",
+    "nam": ""
+  },
+  "main_season_months": [
+    8,
+    9,
+    10,
+    11
+  ],
+  "best_months": [
+    8,
+    9,
+    10,
+    11
+  ],
+  "kcal_per_100g": null,
+  "kcal_confidence": null,
+  "aliases": [
+    "cọng bông súng",
+    "súng ma"
+  ],
+  "selection_note": "Cọng dài, trắng/ngà, giòn, không dập, không nhớt lạ.",
+  "storage_note": "Dùng trong ngày là tốt nhất; giữ mát, ẩm, tối đa 1 ngày.",
+  "cooking_note": "Bông súng mắm kho, xào tép, bóp gỏi, ăn sống kèm lẩu mắm/canh chua.",
+  "safety_note": "Ăn sống kèm mắm/lẩu — rửa kỹ (co-so, cọng mọc dưới nước). Kcal repo null — giữ thiếu, không dùng số ngó sen/củ sen.",
+  "uncertain": true,
+  "uncertain_note": "Bắc/Trung: chưa có lịch chợ riêng; nếu có thì là hàng miền Nam vận chuyển theo mùa lũ.",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source": "catalogue-v2",
+  "source_note": "Catalogue rau theo mùa v2 (2026-11-03), phần B — rau vùng hẹp / theo vụ đặc thù. Tháng là tháng có bán trên thị trường; miền ghi null là chưa có lịch chợ riêng, không gán tháng."
+}

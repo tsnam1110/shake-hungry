@@ -1,0 +1,53 @@
+{
+  "slug": "nuoc-dua",
+  "name_vi": "Nước dừa",
+  "drink_group": "giai-khat",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "glass": "ly cao hoặc uống trực tiếp từ quả",
+  "serving_ml": 300,
+  "technique": "chặt dừa",
+  "ice": "đá nếu thích",
+  "garnish": [],
+  "ingredients": [
+    {
+      "name": "nước dừa tươi",
+      "quantity": 300,
+      "unit": "ml"
+    },
+    {
+      "name": "cơm dừa non",
+      "quantity": 30,
+      "unit": "g"
+    }
+  ],
+  "recipe_steps": [
+    "Chặt dừa, rót nước ra ly, thêm cơm dừa + đá nếu thích."
+  ],
+  "sugar_added_g": 0,
+  "sugar_note": "Không thêm đường; đường tự nhiên dừa ~15–20 g/300 ml (ước tính, không ghi số kcal ở UI cho tới khi engine tính).",
+  "caffeine_level": "khong",
+  "alcohol": false,
+  "alcohol_pct_estimate": null,
+  "alcohol_note": "",
+  "safety_flags": [],
+  "difficulty": "dễ",
+  "prep_minutes": 5,
+  "best_occasion": null,
+  "food_pairing": [],
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "cultural_note": "Dừa xiêm Bến Tre là chuẩn ngon nhất trong dân gian — ghi là ghi chú vùng, không phải chuẩn đo.",
+  "recipe_sources": [],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3."
+}

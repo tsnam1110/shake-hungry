@@ -1,0 +1,70 @@
+{
+  "slug": "strawberry-daiquiri-frozen",
+  "name_vi": "Strawberry Daiquiri (đông đá)",
+  "drink_group": "cocktail-co-con",
+  "glass": "hurricane/goblet",
+  "serving_ml": 200,
+  "technique": "xay",
+  "ice": "đá xay",
+  "garnish": [
+    "dâu tây"
+  ],
+  "ingredients": [
+    {
+      "name": "rum trắng",
+      "quantity": 45,
+      "unit": "ml"
+    },
+    {
+      "name": "nước cốt chanh tươi",
+      "quantity": 15,
+      "unit": "ml"
+    },
+    {
+      "name": "siro đường 1:1",
+      "quantity": 10,
+      "unit": "ml"
+    },
+    {
+      "name": "dâu tây đông đá",
+      "quantity": 80,
+      "unit": "g"
+    }
+  ],
+  "recipe_steps": [
+    "Cho rum, chanh, siro, dâu vào máy xay; thêm đá; xay tới dạng slush; rót không lọc vào ly lạnh, trang trí dâu."
+  ],
+  "sugar_added_g": 6,
+  "sugar_note": "Đường thêm vào khoảng 6–9 g từ siro (ghi giá trị thấp nhất); siro khoảng 10–15 ml, rum khoảng 45–60 ml, chanh khoảng 15–20 ml, dâu khoảng 80–100 g. Ít ngọt: 5 ml siro + dâu chín hơn.",
+  "caffeine_level": "khong",
+  "alcohol": true,
+  "alcohol_pct_estimate": 9,
+  "alcohol_note": "Ước tính trước pha loãng khoảng 9–14% (ghi giá trị thấp nhất; 45–60 ml rum × 40% / ~200 ml kể cả trái cây/đá tan trong máy xay).",
+  "safety_flags": [
+    "18+",
+    "khong-lai-xe"
+  ],
+  "difficulty": "Dễ–trung bình",
+  "prep_minutes": null,
+  "best_occasion": null,
+  "food_pairing": [],
+  "cultural_note": "Mẫu IBA Frozen Daiquiri cũ: 45 ml rum, 20 ml chanh/vỏ chanh, 5 ml gomme + trái cây; bar hiện đại dùng bản rum 60 ml — chuẩn seed dùng rum 45 ml, khoảng còn lại ghi ở đây. IBA liệt kê Fruit Margarita / Frozen Daiquiri như pha trộn công thức gốc + trái cây đã chọn; dâu là bản phổ biến ở bar bãi biển/khu nghỉ dưỡng Việt.",
+  "recipe_sources": [
+    "IBA cũ (Frozen Daiquiri)"
+  ],
+  "mocktail_counterpart_slug": "virgin-strawberry-daiquiri",
+  "uncertain": false,
+  "uncertain_note": "",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5."
+}

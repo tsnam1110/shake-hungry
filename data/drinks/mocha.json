@@ -1,0 +1,68 @@
+{
+  "slug": "mocha",
+  "name_vi": "Mocha (cà phê mocha)",
+  "drink_group": "ca-phe",
+  "kind": "pha-che",
+  "temperature": "ca-hai",
+  "glass": "cốc/ly",
+  "serving_ml": 240,
+  "technique": "pha espresso/phin",
+  "ice": "đá nếu lạnh",
+  "garnish": [],
+  "ingredients": [
+    {
+      "name": "espresso",
+      "quantity": 30,
+      "unit": "ml"
+    },
+    {
+      "name": "sốt socola/cacao",
+      "quantity": 10,
+      "unit": "ml"
+    },
+    {
+      "name": "sữa hấp",
+      "quantity": 150,
+      "unit": "ml"
+    },
+    {
+      "name": "đường",
+      "quantity": 10,
+      "unit": "g"
+    }
+  ],
+  "recipe_steps": [
+    "Trộn socola vào espresso nóng tới tan.",
+    "Thêm sữa hấp, lớp bọt.",
+    "Rắc cacao nếu muốn."
+  ],
+  "sugar_added_g": 15,
+  "sugar_note": "Đường khoảng 15–25 g; ít ngọt: cacao không đường, không thêm đường.",
+  "caffeine_level": "cao",
+  "alcohol": false,
+  "alcohol_pct_estimate": null,
+  "alcohol_note": "",
+  "safety_flags": [
+    "sữa",
+    "socola"
+  ],
+  "difficulty": "dễ",
+  "prep_minutes": 10,
+  "best_occasion": null,
+  "food_pairing": [],
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "cultural_note": "",
+  "recipe_sources": [],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3."
+}

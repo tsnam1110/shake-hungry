@@ -1,1 +1,35 @@
-{"category":"drug_food","condition_vi":"Nhãn FDA của phenelzine đặt thực phẩm giàu tyramin vào mục CHỐNG CHỈ ĐỊNH (Contraindications): khi đang dùng MAOI phải tránh các thực phẩm này trong suốt thời gian điều trị và một thời gian sau khi ngừng thuốc theo hướng dẫn của bác sĩ. Nhãn liệt kê đích danh: phô mai ủ, cá trích muối, bia, rượu vang, gan, chiết xuất men, xúc xích khô, đậu tằm (fava), sữa chua… Ghi chú này gắn vào các thực phẩm thuộc các nhóm đó đang có trong kho; các dạng giàu tyramin nhất (phô mai ủ chín lâu, thịt/cá khô lên men) hiện chưa có nguyên liệu riêng trong kho — 'phô mai' và 'xúc xích' trong kho là loại chế biến/tiệt trùng, không phải dạng ủ/khô của nhãn.","evidence_class":"E1","mechanism_vi":"MAO-A ở ruột và gan bị ức chế → tyramin trong thức ăn không bị phân huỷ → giải phóng noradrenalin ồ ạt → cơn tăng huyết áp, có thể xuất huyết não, đe doạ tính mạng.","needs_review":true,"science_status":"supported","side_a":{"label_vi":"Thực phẩm giàu tyramin (bia, rượu vang, gan, sữa chua lên men…)","members":["bia","ruou-vang-do","sua-chua","gan-lon","gan-ga"],"ref":"thuc-pham-giau-tyramin","type":"food_group"},"side_b":{"label_vi":"Thuốc ức chế MAO — MAOI (phenelzine)","ref":"maoi","type":"drug_group"},"slug":"tyramin--maoi","source":"curated","sources":[{"accessed":"2026-11-02","note":"Nhãn FDA/DailyMed của phenelzine (Nardil) — mục Contraindications về thực phẩm chứa tyramin","url":"https://fda.report/DailyMed/fa041652-fdde-4794-a8d2-279dd309e075"}],"traditional_source":null}
+{
+  "category": "drug_food",
+  "condition_vi": "Nhãn FDA của phenelzine đặt thực phẩm giàu tyramin vào mục CHỐNG CHỈ ĐỊNH (Contraindications): khi đang dùng MAOI phải tránh các thực phẩm này trong suốt thời gian điều trị và một thời gian sau khi ngừng thuốc theo hướng dẫn của bác sĩ. Nhãn liệt kê đích danh: phô mai ủ, cá trích muối, bia, rượu vang, gan, chiết xuất men, xúc xích khô, đậu tằm (fava), sữa chua… Ghi chú này gắn vào các thực phẩm thuộc các nhóm đó đang có trong kho; các dạng giàu tyramin nhất (phô mai ủ chín lâu, thịt/cá khô lên men) hiện chưa có nguyên liệu riêng trong kho — 'phô mai' và 'xúc xích' trong kho là loại chế biến/tiệt trùng, không phải dạng ủ/khô của nhãn.",
+  "evidence_class": "E1",
+  "mechanism_vi": "MAO-A ở ruột và gan bị ức chế → tyramin trong thức ăn không bị phân huỷ → giải phóng noradrenalin ồ ạt → cơn tăng huyết áp, có thể xuất huyết não, đe doạ tính mạng.",
+  "needs_review": false,
+  "science_status": "supported",
+  "side_a": {
+    "label_vi": "Thực phẩm giàu tyramin (bia, rượu vang, gan, sữa chua lên men…)",
+    "members": [
+      "bia",
+      "ruou-vang-do",
+      "sua-chua",
+      "gan-lon",
+      "gan-ga"
+    ],
+    "ref": "thuc-pham-giau-tyramin",
+    "type": "food_group"
+  },
+  "side_b": {
+    "label_vi": "Thuốc ức chế MAO — MAOI (phenelzine)",
+    "ref": "maoi",
+    "type": "drug_group"
+  },
+  "slug": "tyramin--maoi",
+  "source": "curated",
+  "sources": [
+    {
+      "accessed": "2026-11-02",
+      "note": "Nhãn FDA/DailyMed của phenelzine (Nardil) — mục Contraindications về thực phẩm chứa tyramin",
+      "url": "https://fda.report/DailyMed/fa041652-fdde-4794-a8d2-279dd309e075"
+    }
+  ],
+  "traditional_source": null
+}

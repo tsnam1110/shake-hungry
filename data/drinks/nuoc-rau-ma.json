@@ -1,0 +1,60 @@
+{
+  "slug": "nuoc-rau-ma",
+  "name_vi": "Nước rau má",
+  "drink_group": "giai-khat",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "glass": "ly cao",
+  "serving_ml": 350,
+  "technique": "xay, lọc",
+  "ice": "đá",
+  "garnish": [],
+  "ingredients": [
+    {
+      "name": "rau má tươi",
+      "quantity": 100,
+      "unit": "g"
+    },
+    {
+      "name": "nước lọc",
+      "quantity": 100,
+      "unit": "ml"
+    },
+    {
+      "name": "đường",
+      "quantity": 15,
+      "unit": "g"
+    }
+  ],
+  "recipe_steps": [
+    "Rửa sạch rau má.",
+    "Xay nhuyễn với nước.",
+    "Lọc qua rây, khuấy đường, rót lên đá."
+  ],
+  "sugar_added_g": 15,
+  "sugar_note": "Đường khoảng 10–20 g (ghi 15 g); bản sữa dừa +~10 g từ sữa đặc; ít ngọt: không đường.",
+  "caffeine_level": "khong",
+  "alcohol": false,
+  "alcohol_pct_estimate": null,
+  "alcohol_note": "",
+  "safety_flags": [],
+  "difficulty": "dễ",
+  "prep_minutes": 10,
+  "best_occasion": null,
+  "food_pairing": [],
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "cultural_note": "Rau má tính mát trong dân gian, giải nhiệt mùa hè. Biến thể rau má sữa dừa: + 50 ml hỗn hợp sữa dừa/sữa đặc nấu loãng, rót sữa dừa trước rồi rót rau má lên trên tạo lớp.",
+  "recipe_sources": [],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3."
+}

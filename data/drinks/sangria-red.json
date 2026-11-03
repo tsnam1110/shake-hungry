@@ -1,0 +1,88 @@
+{
+  "slug": "sangria-red",
+  "name_vi": "Sangria đỏ / Red Sangria",
+  "drink_group": "cocktail-co-con",
+  "glass": "wine glass / tumbler lớn",
+  "serving_ml": 180,
+  "technique": "pha-truc-tiep-build",
+  "ice": "đá viên",
+  "garnish": [
+    "trái cây cắt lát"
+  ],
+  "ingredients": [
+    {
+      "name": "vang đỏ khô",
+      "quantity": 125,
+      "unit": "ml"
+    },
+    {
+      "name": "brandy",
+      "quantity": 20,
+      "unit": "ml"
+    },
+    {
+      "name": "nước cam",
+      "quantity": 20,
+      "unit": "ml"
+    },
+    {
+      "name": "rượu mùi cam",
+      "quantity": 0,
+      "unit": "ml"
+    },
+    {
+      "name": "siro đường",
+      "quantity": 10,
+      "unit": "ml"
+    },
+    {
+      "name": "cam, chanh, táo cắt lát",
+      "quantity": null,
+      "unit": null
+    },
+    {
+      "name": "soda / soda chanh",
+      "quantity": 30,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Trong bình, hòa đường trong brandy + nước ép.",
+    "Thêm vang + trái cây cắt lát.",
+    "Làm lạnh 2+ giờ.",
+    "Khi phục vụ, rót lên đá, top soda, trang trí trái cây."
+  ],
+  "sugar_added_g": 6,
+  "sugar_note": "Đường thêm vào khoảng 6–9 g mỗi khẩu phần từ siro (ghi giá trị thấp nhất), cộng nước ép. Rượu mùi cam tùy chọn 0–20 ml, siro khoảng 10–15 ml, soda top khoảng 30–60 ml. Ít ngọt: bỏ siro, dựa vào trái cây + nước ép.",
+  "caffeine_level": "khong",
+  "alcohol": true,
+  "alcohol_pct_estimate": 9,
+  "alcohol_note": "Ước tính trước pha loãng khoảng 9–12% trước soda top (ghi giá trị thấp nhất).",
+  "safety_flags": [
+    "18+",
+    "khong-lai-xe"
+  ],
+  "difficulty": "Dễ",
+  "prep_minutes": null,
+  "best_occasion": "chia sẻ theo bình",
+  "food_pairing": [],
+  "cultural_note": "Punch Tây Ban Nha, không phải công thức codified duy nhất; nhà hàng/tapas và wine bar Việt phục vụ sangria bình như thức uống chia sẻ. Lượng mỗi khẩu phần quy đổi từ bình công bố chung, 6 khẩu phần.",
+  "recipe_sources": [
+    "Bình công bố chung, quy đổi 6 khẩu phần"
+  ],
+  "mocktail_counterpart_slug": null,
+  "uncertain": true,
+  "uncertain_note": "Không có spec IBA; lượng là quy đổi từ bình, khoảng là điểm chính.",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5."
+}

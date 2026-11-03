@@ -1,0 +1,62 @@
+{
+  "slug": "whiskey-highball",
+  "name_vi": "Whiskey Highball",
+  "drink_group": "cocktail-co-con",
+  "glass": "highball",
+  "serving_ml": 180,
+  "technique": "pha-truc-tiep-build",
+  "ice": "đá viên",
+  "garnish": [
+    "lát chanh"
+  ],
+  "ingredients": [
+    {
+      "name": "whiskey (bourbon, rye, Scotch hoặc Nhật)",
+      "quantity": 60,
+      "unit": "ml"
+    },
+    {
+      "name": "soda",
+      "quantity": 120,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Đổ đầy đá vào highball.",
+    "Rót whiskey.",
+    "Top soda, khuấy nhẹ một lần, vắt chanh."
+  ],
+  "sugar_added_g": 0,
+  "sugar_note": "Đường thêm vào 0 g (bản soda). Soda khoảng 120–180 ml. Ginger ale/ginger beer là biến thể, không phải spec soda cổ điển.",
+  "caffeine_level": "khong",
+  "alcohol": true,
+  "alcohol_pct_estimate": 13,
+  "alcohol_note": "Ước tính trước pha loãng khoảng 13–14% ở 60/120 (ghi giá trị thấp nhất), ~10–11% ở 60/180.",
+  "safety_flags": [
+    "18+",
+    "khong-lai-xe"
+  ],
+  "difficulty": "Dễ",
+  "prep_minutes": null,
+  "best_occasion": null,
+  "food_pairing": [],
+  "cultural_note": "Nguồn gốc 'Scotch and soda', đầu 1900s; văn hoá highball Nhật đã làm món này thành chủ lực ở whisky-bar Việt.",
+  "recipe_sources": [
+    "Spec soda cổ điển"
+  ],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5."
+}

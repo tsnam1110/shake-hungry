@@ -1,0 +1,65 @@
+{
+  "slug": "da-me",
+  "name_vi": "Đá me",
+  "drink_group": "giai-khat",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "glass": "ly cao",
+  "serving_ml": 350,
+  "technique": "sên siro, rót",
+  "ice": "đá bào/đá viên",
+  "garnish": [
+    "đậu phộng rang"
+  ],
+  "ingredients": [
+    {
+      "name": "siro me",
+      "quantity": 40,
+      "unit": "ml"
+    },
+    {
+      "name": "nước lọc",
+      "quantity": 200,
+      "unit": "ml"
+    },
+    {
+      "name": "đậu phộng rang",
+      "quantity": 10,
+      "unit": "g"
+    }
+  ],
+  "recipe_steps": [
+    "Ngâm me nước nóng, tách hạt (me chua 50 g thịt, đường cát 40 g nấu thành siro).",
+    "Sên me + đường ~30 phút tới sệt, vàng trong.",
+    "Cho đá vào ly, rót siro me, rắc đậu phộng, khuấy."
+  ],
+  "sugar_added_g": 25,
+  "sugar_note": "Đường ~25 g/ly; ít ngọt: siro 25 ml.",
+  "caffeine_level": "khong",
+  "alcohol": false,
+  "alcohol_pct_estimate": null,
+  "alcohol_note": "",
+  "safety_flags": [
+    "đường cao",
+    "dị ứng đậu phộng"
+  ],
+  "difficulty": "trung bình",
+  "prep_minutes": 30,
+  "best_occasion": null,
+  "food_pairing": [],
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "cultural_note": "Đá me là món giải khát Sài Gòn, chua ngọt mặn nhẹ từ đậu phộng.",
+  "recipe_sources": [],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3."
+}

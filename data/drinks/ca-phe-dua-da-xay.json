@@ -1,0 +1,72 @@
+{
+  "slug": "ca-phe-dua-da-xay",
+  "name_vi": "Cà phê dừa đá xay",
+  "drink_group": "ca-phe",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "glass": "cốc/ly",
+  "serving_ml": 400,
+  "technique": "pha espresso/phin",
+  "ice": "đá nếu lạnh",
+  "garnish": [],
+  "ingredients": [
+    {
+      "name": "cà phê phin hoặc espresso",
+      "quantity": 50,
+      "unit": "ml"
+    },
+    {
+      "name": "sữa dừa/kem dừa",
+      "quantity": 60,
+      "unit": "ml"
+    },
+    {
+      "name": "sữa đặc",
+      "quantity": 20,
+      "unit": "ml"
+    },
+    {
+      "name": "sữa tươi",
+      "quantity": 30,
+      "unit": "ml"
+    },
+    {
+      "name": "đá",
+      "quantity": 150,
+      "unit": "g"
+    }
+  ],
+  "recipe_steps": [
+    "Pha cà phê, để nguội bớt.",
+    "Xay cà phê + sữa dừa + sữa đặc + sữa tươi + đá tới mịn, đặc, không còn cục đá lớn.",
+    "Rót, trang trí nếu muốn; phục vụ ngay trước khi tan."
+  ],
+  "sugar_added_g": 20,
+  "sugar_note": "Đường khoảng 20–30 g; ít ngọt: sữa đặc 15 ml.",
+  "caffeine_level": "cao",
+  "alcohol": false,
+  "alcohol_pct_estimate": null,
+  "alcohol_note": "",
+  "safety_flags": [
+    "sữa/dừa"
+  ],
+  "difficulty": "dễ",
+  "prep_minutes": 10,
+  "best_occasion": null,
+  "food_pairing": [],
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "cultural_note": "Khác ca-phe-cot-dua (đã có, khuấy, không xay) — đây là bản xay/frappé phổ biến với người uống trẻ; bản cà phê + sữa dừa khuấy không xay cũng tồn tại và không nên gộp.",
+  "recipe_sources": [],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3."
+}

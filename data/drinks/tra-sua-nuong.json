@@ -1,0 +1,68 @@
+{
+  "slug": "tra-sua-nuong",
+  "name_vi": "Trà sữa nướng",
+  "drink_group": "tra",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "glass": "ly 500 ml",
+  "serving_ml": 350,
+  "technique": "hãm trà, lắc với đá",
+  "ice": "đá",
+  "garnish": [],
+  "ingredients": [
+    {
+      "name": "trà ô long/đen",
+      "quantity": 150,
+      "unit": "ml"
+    },
+    {
+      "name": "bột sữa",
+      "quantity": 25,
+      "unit": "g"
+    },
+    {
+      "name": "siro đường lỏng",
+      "quantity": 20,
+      "unit": "ml"
+    },
+    {
+      "name": "siro caramel",
+      "quantity": 15,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Hãm trà 10 phút, lọc.",
+    "Nấu đường nâu với ít nước tới caramel sẫm, hương nướng/gỗ — không nấu cháy tới đắng.",
+    "Trộn trà + bột sữa + siro + một phần caramel; lắc với đá, rưới caramel còn lại, thêm trân châu."
+  ],
+  "sugar_added_g": 25,
+  "sugar_note": "Đường khoảng 25–35 g; ít ngọt: giảm một nửa siro caramel.",
+  "caffeine_level": "trung-binh",
+  "alcohol": false,
+  "alcohol_pct_estimate": null,
+  "alcohol_note": "",
+  "safety_flags": [
+    "sữa",
+    "đường"
+  ],
+  "difficulty": "trung bình",
+  "prep_minutes": 20,
+  "best_occasion": null,
+  "food_pairing": [],
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "cultural_note": "Tiếp thị ở Việt Nam như trà sữa caramel khói; tên gọi chỉ hương vị, không phải nướng trà trong hầu hết công thức.",
+  "recipe_sources": [],
+  "mocktail_counterpart_slug": null,
+  "uncertain": true,
+  "uncertain_note": "'Nướng' không có chuẩn duy nhất: một số quán có nghĩa là sốt đường caramel, số khác có nghĩa là nền trà rang hoặc lớp kem nướng (kem trứng nướng). Phiên bản sốt caramel trên là công thức nhà làm được công bố nhiều nhất; biến thể kem nướng phải là ghi chú topping riêng, không gộp vào nền này.",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3."
+}

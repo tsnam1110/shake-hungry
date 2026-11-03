@@ -1,0 +1,73 @@
+{
+  "slug": "sup-lo-trang",
+  "name_vi": "Súp lơ trắng / bông cải trắng",
+  "ingredient_slug": "sup-lo-trang",
+  "group": "rau-cu",
+  "supply": "trong-nuoc",
+  "state": "tuoi",
+  "availability_months_by_region": {
+    "bac": [
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ],
+    "trung": [
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ],
+    "nam": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "region_notes": {
+    "bac": "",
+    "trung": "",
+    "nam": "Hàng Đà Lạt quanh năm, bán rộ 11–2."
+  },
+  "main_season_months": [
+    12,
+    1,
+    2
+  ],
+  "best_months": [
+    12,
+    1,
+    2
+  ],
+  "kcal_per_100g": 25,
+  "kcal_confidence": "high",
+  "aliases": [
+    "bông cải trắng",
+    "su lơ trắng"
+  ],
+  "selection_note": "Bông trắng đều, chặt, nặng, không đốm nâu, lá bao tươi.",
+  "storage_note": "Nguyên bông 1 tuần ngăn mát; cắt nhỏ 2–3 ngày.",
+  "cooking_note": "Luộc, xào, nấu canh, nướng, nấu súp.",
+  "safety_note": "Họ cải giàu vitamin K — warfarin, giữ lượng ổn định, hỏi bác sĩ (co-so).",
+  "uncertain": true,
+  "uncertain_note": "UNCERTAIN về phân tách trắng/xanh và đầu–cuối tháng ở Nam (dùng lịch gieo/trồng làm chuẩn).",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source": "catalogue-v2",
+  "source_note": "Catalogue rau theo mùa v2 (2026-11-03), phần B — rau vùng hẹp / theo vụ đặc thù. Tháng là tháng có bán trên thị trường; miền ghi null là chưa có lịch chợ riêng, không gán tháng."
+}

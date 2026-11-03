@@ -1,0 +1,73 @@
+{
+  "slug": "virgin-mojito-passion-fruit",
+  "name_vi": "Virgin Mojito, Chanh leo",
+  "drink_group": "mocktail",
+  "glass": "highball",
+  "serving_ml": 220,
+  "technique": "pha-truc-tiep-build",
+  "ice": "đá viên",
+  "garnish": [
+    "bạc hà",
+    "chanh leo"
+  ],
+  "ingredients": [
+    {
+      "name": "purée chanh leo",
+      "quantity": 30,
+      "unit": "ml"
+    },
+    {
+      "name": "nước chanh",
+      "quantity": 20,
+      "unit": "ml"
+    },
+    {
+      "name": "đường",
+      "quantity": 2,
+      "unit": "thìa cà phê"
+    },
+    {
+      "name": "bạc hà",
+      "quantity": 10,
+      "unit": "lá"
+    },
+    {
+      "name": "soda",
+      "quantity": 150,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Dầm bạc hà + chanh + đường nhẹ; thêm purée chanh leo, khuấy; đổ đầy đá, top soda, khuấy nhẹ."
+  ],
+  "sugar_added_g": 8,
+  "sugar_note": "Đường thêm vào khoảng 8–9 g (ghi giá trị thấp nhất); đường 2 thìa cà phê (~8 g) hoặc siro 15 ml. Nước chanh khoảng 20–30 ml, purée khoảng 30 ml (hoặc 1/2 quả tươi), soda top lên khoảng 150 ml. Ít ngọt: giảm một nửa đường, thêm chanh.",
+  "caffeine_level": "khong",
+  "alcohol": false,
+  "alcohol_pct_estimate": 0,
+  "alcohol_note": "ABV 0% theo công thức đã viết.",
+  "safety_flags": [],
+  "difficulty": "Dễ",
+  "prep_minutes": null,
+  "best_occasion": null,
+  "food_pairing": [],
+  "cultural_note": "Biến thể nojito chuẩn trong sách (họ Taste of Home): 'khuấy 2 oz chanh leo' cho bản virgin — ở đây quy đổi về một ly highball Việt.",
+  "recipe_sources": [
+    "Họ Taste of Home"
+  ],
+  "mocktail_counterpart_slug": "passion-fruit-mojito",
+  "uncertain": false,
+  "uncertain_note": "",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5."
+}

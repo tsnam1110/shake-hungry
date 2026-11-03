@@ -92,6 +92,7 @@
             <span class="grow">Lắc máy để lắc món <span style="display:block;font-weight:400;color:var(--color-faint);font-size:13px;margin-top:1px">Bật lên rồi lắc nhẹ điện thoại — trang tự lắc một món cho bạn, khỏi bấm nút</span></span>
             <button class="ld-switch" type="button" role="switch" aria-checked="false" id="shake-gesture" aria-label="Lắc máy để lắc món"></button>
         </div>
+        <p id="gesture-perm-note" hidden style="text-align:center;margin:10px 0 0"><button type="button" id="gesture-perm-btn" class="ld-btn ld-btn-gray" style="padding:9px 16px;font-size:14px">Cho phép cảm biến chuyển động (iPhone)</button></p>
 
         <div id="result" aria-live="polite">
             <p style="text-align:center;color:var(--color-faint);margin:18px 0 2px">Chọn bữa và khẩu vị ở trên, rồi bấm <b>Lắc một món</b>.</p>
@@ -462,7 +463,11 @@ function staggerTray(box) {
     requestAnimationFrame(() => requestAnimationFrame(() => rows.forEach(r => r.classList.add('in'))));
 }
 
-let gestureOn = localStorage.getItem('lacdoi_shake_gesture') === '1';
+// SHAKE-DEVICE-001: mặc định luôn bật — chỉ tắt khi người dùng chủ động tắt
+// (localStorage = '0'). Công tắc này dùng chung khoá với trang Hồ sơ, không cần
+// đăng nhập; trang Hồ sơ chỉ đổi lựa chọn, còn việc xin quyền cảm biến (iPhone)
+// diễn ra ở trang này vì quyền phải xin từ một thao tác của người dùng.
+let gestureOn = localStorage.getItem('lacdoi_shake_gesture') !== '0';
 if (gestureOn) setSw('shake-gesture', true);
 document.getElementById('shake-gesture').addEventListener('click', async () => {
     if (swOn('shake-gesture')) {
@@ -479,6 +484,25 @@ document.getElementById('shake-gesture').addEventListener('click', async () => {
     localStorage.setItem('lacdoi_shake_gesture', '1');
     ldToast('Đã bật: lắc nhẹ máy để lắc món');
 });
+// iPhone yêu cầu xin quyền cảm biến bằng một thao tác chạm, nên "mặc định bật"
+// một mình chưa đủ trên iOS: hiện nút xin quyền khi trình duyệt có API đó và
+// tính năng đang bật. Android/Chrome không có API này nên không hiện nút.
+if (gestureOn && typeof DeviceMotionEvent !== 'undefined' && typeof DeviceMotionEvent.requestPermission === 'function') {
+    const permNote = document.getElementById('gesture-perm-note');
+    if (permNote) {
+        permNote.hidden = false;
+        document.getElementById('gesture-perm-btn').addEventListener('click', async () => {
+            try {
+                if ((await DeviceMotionEvent.requestPermission()) === 'granted') {
+                    permNote.hidden = true;
+                    ldToast('Đã cho phép: lắc nhẹ máy để lắc món');
+                } else {
+                    ldToast('Trình duyệt chưa cấp quyền cảm biến chuyển động');
+                }
+            } catch { ldToast('Trình duyệt chưa cấp quyền cảm biến chuyển động'); }
+        });
+    }
+}
 let lastAccMag = null, lastGestureAt = 0;
 window.addEventListener('devicemotion', (e) => {
     if (!gestureOn || document.hidden) return;

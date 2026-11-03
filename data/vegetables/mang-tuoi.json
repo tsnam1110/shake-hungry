@@ -1,0 +1,74 @@
+{
+  "slug": "mang-tuoi",
+  "name_vi": "Măng tươi",
+  "ingredient_slug": "mang-tuoi",
+  "group": "rau-cu",
+  "supply": "trong-nuoc",
+  "state": "tuoi",
+  "availability_months_by_region": {
+    "bac": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "trung": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "nam": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
+  },
+  "region_notes": {
+    "bac": "",
+    "trung": "",
+    "nam": ""
+  },
+  "main_season_months": [
+    7,
+    8,
+    9
+  ],
+  "best_months": [
+    7,
+    8,
+    9
+  ],
+  "kcal_per_100g": 27,
+  "kcal_confidence": "medium",
+  "aliases": [
+    "măng tre",
+    "măng nứa",
+    "măng vầu",
+    "măng luồng",
+    "măng le",
+    "măng mai",
+    "măng giang",
+    "măng sặt"
+  ],
+  "selection_note": "Búp non, vỏ tươi, cắt thấy trắng/ngà, không thâm, không mùi chua lạ.",
+  "storage_note": "Tươi rất nhanh hỏng — dùng trong 1–2 ngày, mát; đã luộc thì để ngăn mát vài ngày.",
+  "cooking_note": "Măng xào, măng luộc chấm chẳm chéo/mắm, măng nấu canh xương/vịt.",
+  "safety_note": "BẮT BUỘC (co-so): măng tươi phải luộc và đổ bỏ nước luộc (khử cyanogenic glycoside); không ăn sống. Măng le là loại của măng tươi, không làm slug riêng; măng sặt miền núi phía Bắc là ngoại lệ 2–4, không gộp vào khoảng chung.",
+  "uncertain": true,
+  "uncertain_note": "UNCERTAIN về một khoảng tháng quốc gia duy nhất (mỗi loại măng có cửa sổ riêng).",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source": "catalogue-v2",
+  "source_note": "Catalogue rau theo mùa v2 (2026-11-03), phần B — rau vùng hẹp / theo vụ đặc thù. Tháng là tháng có bán trên thị trường; miền ghi null là chưa có lịch chợ riêng, không gán tháng."
+}

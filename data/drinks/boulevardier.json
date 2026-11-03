@@ -1,0 +1,66 @@
+{
+  "slug": "boulevardier",
+  "name_vi": "Boulevardier",
+  "drink_group": "cocktail-co-con",
+  "glass": "rocks / coupe",
+  "serving_ml": 105,
+  "technique": "khuay-stir",
+  "ice": "đá lớn (rocks) hoặc không đá (coupe)",
+  "garnish": [
+    "vỏ cam"
+  ],
+  "ingredients": [
+    {
+      "name": "bourbon hoặc rye",
+      "quantity": 45,
+      "unit": "ml"
+    },
+    {
+      "name": "Campari",
+      "quantity": 30,
+      "unit": "ml"
+    },
+    {
+      "name": "vermouth ngọt",
+      "quantity": 30,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Khuấy tất cả với đá trong ly trộn.",
+    "Lọc lên đá lớn trong rocks (hoặc up trong coupe), vỏ cam."
+  ],
+  "sugar_added_g": 0,
+  "sugar_note": "Đường thêm vào 0 g. Bản phần bằng nhau 30/30/30 tồn tại trong sách cũ — IBA 45/30/30 là chuẩn, không trộn.",
+  "caffeine_level": "khong",
+  "alcohol": true,
+  "alcohol_pct_estimate": 26,
+  "alcohol_note": "Ước tính trước pha loãng khoảng 26–29% (ghi giá trị thấp nhất).",
+  "safety_flags": [
+    "18+",
+    "khong-lai-xe"
+  ],
+  "difficulty": "Dễ",
+  "prep_minutes": null,
+  "best_occasion": null,
+  "food_pairing": [],
+  "cultural_note": "IBA Unforgettables; Negroni với whiskey thay gin, Paris, 1920s, vòng tròn tạp chí Boulevardier của Erskine Gwynne.",
+  "recipe_sources": [
+    "IBA"
+  ],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5."
+}

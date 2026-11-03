@@ -1,0 +1,62 @@
+{
+  "slug": "ca-phe-trung-muoi",
+  "name_vi": "Cà phê trứng muối (bọt trứng muối)",
+  "drink_group": "ca-phe",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "glass": "cốc/ly",
+  "serving_ml": 350,
+  "technique": "pha espresso/phin",
+  "ice": "đá nếu lạnh",
+  "garnish": [],
+  "ingredients": [
+    {
+      "name": "cà phê phin",
+      "quantity": 70,
+      "unit": "ml"
+    },
+    {
+      "name": "bọt trứng muối",
+      "quantity": 40,
+      "unit": "g"
+    },
+    {
+      "name": "siro đường lỏng",
+      "quantity": 20,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Pha phin (cà phê phin 20 g → ~70 ml chiết xuất).",
+    "Hòa bột trứng muối vào sữa, đánh với kem + muối tới bọt (mẻ lớn: bột lòng đỏ trứng muối 50 g + kem whipping/creamer 200 g + sữa tươi 75 ml + muối 2 g).",
+    "Cà phê + đường + đá vào cốc, phủ bọt trứng muối lên trên."
+  ],
+  "sugar_added_g": 15,
+  "sugar_note": "Đường khoảng 15–20 g.",
+  "caffeine_level": "cao",
+  "alcohol": false,
+  "alcohol_pct_estimate": null,
+  "alcohol_note": "",
+  "safety_flags": [
+    "trứng/sữa"
+  ],
+  "difficulty": "trung bình",
+  "prep_minutes": 15,
+  "best_occasion": null,
+  "food_pairing": [],
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "cultural_note": "Entry này chỉ là biến thể bọt thương mại hiện đại (kiểu bột ICEHOT/Rich's), là sản phẩm khác với cà phê trứng muối truyền thống.",
+  "recipe_sources": [],
+  "mocktail_counterpart_slug": null,
+  "uncertain": true,
+  "uncertain_note": "Cà phê trứng truyền thống Hà Nội làm bằng lòng đỏ trứng vịt muối thật (khác với bột/bọt trứng muối thương mại) không tìm được công thức chuẩn đã xác minh trong đợt này. KHÔNG đưa công thức 'cà phê trứng muối truyền thống' vào catalogue cho tới khi tìm được nguồn đã công bố.",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3."
+}

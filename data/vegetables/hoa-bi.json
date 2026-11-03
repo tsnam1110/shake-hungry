@@ -1,0 +1,78 @@
+{
+  "slug": "hoa-bi",
+  "name_vi": "Hoa bí / bông bí",
+  "ingredient_slug": "hoa-bi",
+  "group": "rau-qua",
+  "supply": "trong-nuoc",
+  "state": "tuoi",
+  "availability_months_by_region": {
+    "bac": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "trung": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "nam": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "region_notes": {
+    "bac": "",
+    "trung": "",
+    "nam": ""
+  },
+  "main_season_months": [
+    5,
+    6,
+    7,
+    8
+  ],
+  "best_months": [
+    5,
+    6,
+    7,
+    8
+  ],
+  "kcal_per_100g": 15,
+  "kcal_confidence": "high",
+  "aliases": [
+    "bông bí"
+  ],
+  "selection_note": "Hoa vàng tươi, cánh nguyên, đài tươi, không dập, không úa.",
+  "storage_note": "Dùng trong ngày; tối đa ngăn mát 1 ngày, không rửa trước khi cất.",
+  "cooking_note": "Bông bí xào tỏi, luộc, nhồi thịt chiên giòn, nấu canh.",
+  "safety_note": "",
+  "uncertain": true,
+  "uncertain_note": "UNCERTAIN ở mức hoa riêng: tháng suy từ chu kỳ dây bí, chưa có lịch chợ riêng cho hoa bí.",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source": "catalogue-v2",
+  "source_note": "Catalogue rau theo mùa v2 (2026-11-03), phần B — rau vùng hẹp / theo vụ đặc thù. Tháng là tháng có bán trên thị trường; miền ghi null là chưa có lịch chợ riêng, không gán tháng."
+}

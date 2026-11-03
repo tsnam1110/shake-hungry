@@ -1,0 +1,66 @@
+{
+  "slug": "white-negroni",
+  "name_vi": "White Negroni",
+  "drink_group": "cocktail-co-con",
+  "glass": "rocks",
+  "serving_ml": 90,
+  "technique": "khuay-stir",
+  "ice": "đá lớn",
+  "garnish": [
+    "vỏ chanh"
+  ],
+  "ingredients": [
+    {
+      "name": "gin",
+      "quantity": 45,
+      "unit": "ml"
+    },
+    {
+      "name": "Lillet Blanc",
+      "quantity": 30,
+      "unit": "ml"
+    },
+    {
+      "name": "Suze",
+      "quantity": 15,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Khuấy tất cả với đá 20–30 giây.",
+    "Lọc lên đá lớn, vỏ chanh (vỏ bưởi ở một số bản)."
+  ],
+  "sugar_added_g": 0,
+  "sugar_note": "Đường thêm vào 0 g. Suze khoảng 15–22,5 ml trong sách (ghi giá trị thấp nhất). Bản phần bằng nhau 30/30/30 là cách tiếp cận gốc của Collins; chuẩn bar PDT / hiện đại là 60/30/22,5 ml. Chuẩn catalogue: 45/30/15 ml (hướng gentian, Suze chiếm ưu thế nếu cao hơn).",
+  "caffeine_level": "khong",
+  "alcohol": true,
+  "alcohol_pct_estimate": 26,
+  "alcohol_note": "Ước tính trước pha loãng khoảng 26–29% (ghi giá trị thấp nhất).",
+  "safety_flags": [
+    "18+",
+    "khong-lai-xe"
+  ],
+  "difficulty": "Dễ",
+  "prep_minutes": null,
+  "best_occasion": null,
+  "food_pairing": [],
+  "cultural_note": "Wayne Collins, Vinexpo, Bordeaux, 2001, thay Suze Pháp + Lillet Blanc cho Campari + vermouth ngọt khi những thứ đó không có sẵn. Không có spec IBA.",
+  "recipe_sources": [
+    "Không IBA; Wayne Collins 2001"
+  ],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5."
+}

@@ -1,0 +1,60 @@
+{
+  "slug": "shirley-temple",
+  "name_vi": "Shirley Temple",
+  "drink_group": "mocktail",
+  "glass": "highball",
+  "serving_ml": null,
+  "technique": "pha-truc-tiep-build",
+  "ice": "đá viên",
+  "garnish": [
+    "cherry maraschino",
+    "lát cam tùy chọn"
+  ],
+  "ingredients": [
+    {
+      "name": "ginger ale",
+      "quantity": 150,
+      "unit": "ml"
+    },
+    {
+      "name": "grenadine",
+      "quantity": 20,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Đá vào ly, rót grenadine, top ginger ale, khuấy nhẹ, thả cherry."
+  ],
+  "sugar_added_g": 20,
+  "sugar_note": "Đường ~20 g (grenadine 20 ml theo chuẩn seed; khoảng trong file 15–30 ml). Ít ngọt: grenadine 10 ml + ginger ale không đường.",
+  "caffeine_level": "khong",
+  "alcohol": false,
+  "alcohol_pct_estimate": 0,
+  "alcohol_note": "ABV 0% theo công thức đã viết.",
+  "safety_flags": [
+    "duong-cao"
+  ],
+  "difficulty": "Dễ",
+  "prep_minutes": null,
+  "best_occasion": null,
+  "food_pairing": [],
+  "cultural_note": "Mocktail kinh điển đặt theo tên diễn viên nhí Shirley Temple, từng nằm trong danh sách IBA lịch sử.",
+  "recipe_sources": [
+    "IBA lịch sử"
+  ],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5."
+}

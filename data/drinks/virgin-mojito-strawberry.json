@@ -1,0 +1,70 @@
+{
+  "slug": "virgin-mojito-strawberry",
+  "name_vi": "Virgin Mojito, Dâu",
+  "drink_group": "mocktail",
+  "glass": "highball",
+  "serving_ml": 220,
+  "technique": "pha-truc-tiep-build",
+  "ice": "đá viên",
+  "garnish": [],
+  "ingredients": [
+    {
+      "name": "dâu",
+      "quantity": 3,
+      "unit": "quả"
+    },
+    {
+      "name": "nước chanh",
+      "quantity": 20,
+      "unit": "ml"
+    },
+    {
+      "name": "đường",
+      "quantity": 2,
+      "unit": "thìa cà phê"
+    },
+    {
+      "name": "bạc hà",
+      "quantity": 10,
+      "unit": "lá"
+    },
+    {
+      "name": "soda",
+      "quantity": null,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Như trên, dầm dâu với bạc hà/chanh trước."
+  ],
+  "sugar_added_g": 8,
+  "sugar_note": "Đường thêm vào khoảng 8–9 g (ghi giá trị thấp nhất); dâu 3–4 quả dầm (hoặc 25 ml purée), nước chanh khoảng 20–30 ml, đường 2 thìa cà phê (~8 g) hoặc siro 15 ml. Ít ngọt: giảm một nửa đường.",
+  "caffeine_level": "khong",
+  "alcohol": false,
+  "alcohol_pct_estimate": 0,
+  "alcohol_note": "ABV 0% theo công thức đã viết.",
+  "safety_flags": [],
+  "difficulty": "Dễ",
+  "prep_minutes": null,
+  "best_occasion": null,
+  "food_pairing": [],
+  "cultural_note": "Biến thể nojito chuẩn trong sách (họ Skinnytaste / Taste of Home).",
+  "recipe_sources": [
+    "Họ Skinnytaste / Taste of Home"
+  ],
+  "mocktail_counterpart_slug": "strawberry-mojito",
+  "uncertain": false,
+  "uncertain_note": "",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5."
+}

@@ -1,0 +1,84 @@
+{
+  "slug": "passion-fruit-mojito",
+  "name_vi": "Passion Fruit Mojito",
+  "drink_group": "cocktail-co-con",
+  "glass": "highball",
+  "serving_ml": 180,
+  "technique": "pha-truc-tiep-build",
+  "ice": "đá viên",
+  "garnish": [
+    "bạc hà",
+    "chanh leo"
+  ],
+  "ingredients": [
+    {
+      "name": "rum trắng",
+      "quantity": 50,
+      "unit": "ml"
+    },
+    {
+      "name": "nước chanh",
+      "quantity": 12.5,
+      "unit": "ml"
+    },
+    {
+      "name": "purée chanh leo",
+      "quantity": 12.5,
+      "unit": "ml"
+    },
+    {
+      "name": "đường cát",
+      "quantity": 2,
+      "unit": "thìa bar"
+    },
+    {
+      "name": "bạc hà",
+      "quantity": 10,
+      "unit": "lá"
+    },
+    {
+      "name": "soda",
+      "quantity": null,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Thêm đường, chanh, purée chanh leo, rum vào ly.",
+    "Vỗ bạc hà, thêm vào, khuấy để hòa tan.",
+    "Đổ đầy đá.",
+    "Top soda, khuấy nhẹ, trang trí bạc hà + chanh leo."
+  ],
+  "sugar_added_g": 8,
+  "sugar_note": "Đường thêm vào khoảng 8–9 g (ghi giá trị thấp nhất); đường 2 thìa bar (~8 g) hoặc siro 15 ml. Nước chanh khoảng 12,5–30 ml, purée chanh leo khoảng 12,5–30 ml (hoặc 1/2 quả chanh leo tươi). Ít ngọt: 1 thìa bar / 7,5 ml siro.",
+  "caffeine_level": "khong",
+  "alcohol": true,
+  "alcohol_pct_estimate": 11,
+  "alcohol_note": "Ước tính trước pha loãng khoảng 11–14% (ghi giá trị thấp nhất; kể cả soda khi rót).",
+  "safety_flags": [
+    "18+",
+    "khong-lai-xe"
+  ],
+  "difficulty": "Dễ–trung bình",
+  "prep_minutes": null,
+  "best_occasion": null,
+  "food_pairing": [],
+  "cultural_note": "Không có spec IBA — biến thể mojito, chuẩn ở bar nhiệt đới / bãi biển Việt; chanh leo tươi ở Việt Nam rẻ và quanh năm, vì vậy biến thể này phổ biến ở Việt Nam hơn nhiều menu phương Tây.",
+  "recipe_sources": [
+    "Mẫu bar đã công bố, ví dụ Revolution Bars"
+  ],
+  "mocktail_counterpart_slug": "virgin-mojito-passion-fruit",
+  "uncertain": false,
+  "uncertain_note": "",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5."
+}

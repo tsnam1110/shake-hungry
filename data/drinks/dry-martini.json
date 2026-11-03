@@ -1,0 +1,63 @@
+{
+  "slug": "dry-martini",
+  "name_vi": "Dry Martini",
+  "drink_group": "cocktail-co-con",
+  "glass": "martini / coupe",
+  "serving_ml": 70,
+  "technique": "khuay-stir",
+  "ice": "không đá",
+  "garnish": [
+    "vỏ chanh hoặc olive"
+  ],
+  "ingredients": [
+    {
+      "name": "gin",
+      "quantity": 60,
+      "unit": "ml"
+    },
+    {
+      "name": "vermouth khô",
+      "quantity": 10,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Khuấy trong ly trộn với đá.",
+    "Lọc vào ly martini lạnh.",
+    "Tinh dầu vỏ chanh hoặc olive nếu yêu cầu."
+  ],
+  "sugar_added_g": 0,
+  "sugar_note": "Đường thêm vào 0 g. Lịch sử tỉ lệ: 2:1 năm 1922, 3:1 năm 1930s, 6:1 IBA — catalogue dùng IBA 6:1, ghi sở thích khô hơn/ướt hơn như biến thể.",
+  "caffeine_level": "khong",
+  "alcohol": true,
+  "alcohol_pct_estimate": 36,
+  "alcohol_note": "Ước tính trước pha loãng khoảng 36–38% (ghi giá trị thấp nhất) — cao nhất trong đợt này, pha loãng là thiết yếu.",
+  "safety_flags": [
+    "18+",
+    "khong-lai-xe",
+    "do-uong-manh"
+  ],
+  "difficulty": "Dễ",
+  "prep_minutes": null,
+  "best_occasion": null,
+  "food_pairing": [],
+  "cultural_note": "IBA Unforgettables; spec martini được yêu cầu nhiều nhất, bar khách sạn / cổ điển Việt.",
+  "recipe_sources": [
+    "IBA"
+  ],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5."
+}

@@ -1,0 +1,61 @@
+{
+  "slug": "gin-tonic",
+  "name_vi": "Gin & Tonic",
+  "drink_group": "cocktail-co-con",
+  "glass": "highball/copa",
+  "serving_ml": null,
+  "technique": "pha-truc-tiep-build",
+  "ice": "đá viên lớn",
+  "garnish": [
+    "lát chanh/chanh vàng",
+    "thảo mộc tùy chọn"
+  ],
+  "ingredients": [
+    {
+      "name": "gin",
+      "quantity": 50,
+      "unit": "ml"
+    },
+    {
+      "name": "tonic",
+      "quantity": 150,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Đá lớn vào ly, rót gin, rót tonic dọc thành ly để giữ ga, khuấy nhẹ một vòng."
+  ],
+  "sugar_added_g": 12,
+  "sugar_note": "Đường từ tonic thường khoảng 12–15 g/150 ml (ghi giá trị thấp nhất). Ít ngọt: tonic light/zero.",
+  "caffeine_level": "khong",
+  "alcohol": true,
+  "alcohol_pct_estimate": null,
+  "alcohol_note": "Ước tính trước pha loãng, chưa có số trong catalogue: file chỉ cho ~10% sau tonic, không phải ABV trước pha loãng nên không ghi số sau pha loãng làm seed.",
+  "safety_flags": [
+    "18+",
+    "khong-lai-xe"
+  ],
+  "difficulty": "Dễ",
+  "prep_minutes": null,
+  "best_occasion": null,
+  "food_pairing": [],
+  "cultural_note": "Tỉ lệ quán phổ biến 1:3, không phải spec IBA cố định. Từ thuốc chống sốt rét của lính Anh — ghi là lịch sử, không ghi công dụng y khoa cho bản hiện đại.",
+  "recipe_sources": [
+    "Tỉ lệ quán phổ biến (không phải IBA)"
+  ],
+  "mocktail_counterpart_slug": null,
+  "uncertain": true,
+  "uncertain_note": "Không có spec IBA cố định; file chỉ cho ABV sau tonic (~10%), không có số trước pha loãng.",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5."
+}

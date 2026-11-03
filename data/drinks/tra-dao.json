@@ -1,0 +1,79 @@
+{
+  "slug": "tra-dao",
+  "name_vi": "Trà đào",
+  "drink_group": "tra",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "glass": "ly cao",
+  "serving_ml": 350,
+  "technique": "hãm trà",
+  "ice": "đá",
+  "garnish": [
+    "miếng đào"
+  ],
+  "ingredients": [
+    {
+      "name": "trà đào túi lọc",
+      "quantity": 1,
+      "unit": "túi"
+    },
+    {
+      "name": "nước nóng",
+      "quantity": 150,
+      "unit": "ml"
+    },
+    {
+      "name": "đào ngâm",
+      "quantity": 4,
+      "unit": "miếng"
+    },
+    {
+      "name": "nước đào ngâm",
+      "quantity": 60,
+      "unit": "ml"
+    },
+    {
+      "name": "mật ong",
+      "quantity": 15,
+      "unit": "ml"
+    },
+    {
+      "name": "nước cốt chanh/tắc",
+      "quantity": 15,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Ngâm túi trà tới sẫm màu, vớt bỏ.",
+    "Khuấy nước đào + mật ong + chanh vào trà.",
+    "Cho miếng đào vào, thêm đá."
+  ],
+  "sugar_added_g": 25,
+  "sugar_note": "Đường khoảng 25–30 g; ít ngọt: bỏ mật ong, giữ 30 ml nước đào.",
+  "caffeine_level": "thap",
+  "alcohol": false,
+  "alcohol_pct_estimate": null,
+  "alcohol_note": "",
+  "safety_flags": [
+    "đường cao nếu giữ nguyên"
+  ],
+  "difficulty": "dễ",
+  "prep_minutes": 10,
+  "best_occasion": null,
+  "food_pairing": [],
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "cultural_note": "Trà đào đóng hộp du nhập rồi Việt hoá thành món quán phổ biến.",
+  "recipe_sources": [],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3."
+}

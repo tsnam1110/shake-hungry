@@ -1,0 +1,70 @@
+{
+  "slug": "sinh-to-cam",
+  "name_vi": "Sinh tố cam",
+  "drink_group": "sinh-to",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "glass": "ly cao",
+  "serving_ml": 350,
+  "technique": "xay",
+  "ice": null,
+  "garnish": [],
+  "ingredients": [
+    {
+      "name": "múi cam",
+      "quantity": 150,
+      "unit": "g"
+    },
+    {
+      "name": "sữa",
+      "quantity": 50,
+      "unit": "ml"
+    },
+    {
+      "name": "sữa đặc",
+      "quantity": 15,
+      "unit": "ml"
+    },
+    {
+      "name": "đường",
+      "quantity": 5,
+      "unit": "g"
+    },
+    {
+      "name": "đá",
+      "quantity": 100,
+      "unit": "g"
+    }
+  ],
+  "recipe_steps": [
+    "Bóc/tách múi, xay với sữa/sữa chua + chất ngọt + đá; phục vụ ngay (vị đắng tăng nếu xay cả màng trắng)."
+  ],
+  "sugar_added_g": 10,
+  "sugar_note": "Đường khoảng 10–20 g; ít ngọt: không thêm đường nếu cam ngọt. Lưu ý: đây là xay, không phải ép lọc — khác nuoc-ep-cam.",
+  "caffeine_level": "khong",
+  "alcohol": false,
+  "alcohol_pct_estimate": null,
+  "alcohol_note": "",
+  "safety_flags": [
+    "sữa"
+  ],
+  "difficulty": "dễ",
+  "prep_minutes": 10,
+  "best_occasion": null,
+  "food_pairing": [],
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "cultural_note": "",
+  "recipe_sources": [],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3."
+}

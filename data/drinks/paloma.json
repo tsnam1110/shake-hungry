@@ -1,0 +1,72 @@
+{
+  "slug": "paloma",
+  "name_vi": "Paloma",
+  "drink_group": "cocktail-co-con",
+  "glass": "highball",
+  "serving_ml": 160,
+  "technique": "pha-truc-tiep-build",
+  "ice": "đá viên",
+  "garnish": [
+    "bưởi / chanh"
+  ],
+  "ingredients": [
+    {
+      "name": "tequila 100% agave",
+      "quantity": 50,
+      "unit": "ml"
+    },
+    {
+      "name": "nước cốt chanh tươi",
+      "quantity": 5,
+      "unit": "ml"
+    },
+    {
+      "name": "muối",
+      "quantity": null,
+      "unit": null
+    },
+    {
+      "name": "soda bưởi hồng",
+      "quantity": 100,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Đổ đầy đá vào highball.",
+    "Thêm tequila, chanh, muối.",
+    "Top soda bưởi, khuấy nhẹ, trang trí bưởi / chanh. Viền muối tùy chọn."
+  ],
+  "sugar_added_g": 0,
+  "sugar_note": "Đường thêm vào 0 g (bản soda IBA); bản lắc bar ~6 g (tequila 60 ml, nước bưởi 60 ml, chanh 10 ml, siro 10 ml, soda top lên — khoảng, không phải IBA).",
+  "caffeine_level": "khong",
+  "alcohol": true,
+  "alcohol_pct_estimate": 12,
+  "alcohol_note": "Ước tính trước pha loãng khoảng 12–14% (ghi giá trị thấp nhất).",
+  "safety_flags": [
+    "18+",
+    "khong-lai-xe"
+  ],
+  "difficulty": "Dễ",
+  "prep_minutes": null,
+  "best_occasion": null,
+  "food_pairing": [],
+  "cultural_note": "IBA New Era; thức uống dài tequila phổ biến nhất Mexico, nay là chuẩn ở bar Mexico / tequila Việt.",
+  "recipe_sources": [
+    "IBA 2020"
+  ],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5."
+}

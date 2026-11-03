@@ -1,0 +1,67 @@
+{
+  "slug": "tra-cam-que",
+  "name_vi": "Trà cam quế",
+  "drink_group": "tra",
+  "kind": "pha-che",
+  "temperature": "ca-hai",
+  "glass": "ly 500 ml",
+  "serving_ml": 350,
+  "technique": "hãm trà, lắc",
+  "ice": "đá",
+  "garnish": [],
+  "ingredients": [
+    {
+      "name": "trà đen",
+      "quantity": 150,
+      "unit": "ml"
+    },
+    {
+      "name": "nước cam",
+      "quantity": 50,
+      "unit": "ml"
+    },
+    {
+      "name": "thanh quế",
+      "quantity": 3,
+      "unit": "g"
+    },
+    {
+      "name": "mật ong/đường",
+      "quantity": 10,
+      "unit": "g"
+    }
+  ],
+  "recipe_steps": [
+    "Hãm trà với thanh quế 10 phút, bỏ thanh nếu quá mạnh.",
+    "Thêm cam + chất ngọt, khuấy.",
+    "Phục vụ nóng, hoặc làm nguội + đá."
+  ],
+  "sugar_added_g": 10,
+  "sugar_note": "Đường khoảng 10–20 g; ít ngọt: 10 g mật ong hoặc không đường.",
+  "caffeine_level": "thap",
+  "alcohol": false,
+  "alcohol_pct_estimate": null,
+  "alcohol_note": "",
+  "safety_flags": [
+    "rửa trái cây; bản siro ngọt hơn bản trái cây tươi"
+  ],
+  "difficulty": "dễ",
+  "prep_minutes": 10,
+  "best_occasion": null,
+  "food_pairing": [],
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "cultural_note": "Phong cách mùa đông/Giáng sinh nhập khẩu thích ứng ở quán Việt; khác trà quế thuần (tra-que) ở phần cam.",
+  "recipe_sources": [],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3."
+}

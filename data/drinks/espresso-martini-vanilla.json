@@ -1,0 +1,73 @@
+{
+  "slug": "espresso-martini-vanilla",
+  "name_vi": "Espresso Martini, bản Vanilla",
+  "drink_group": "cocktail-co-con",
+  "glass": "coupe / martini",
+  "serving_ml": 110,
+  "technique": "lac-shake",
+  "ice": "không đá",
+  "garnish": [
+    "3 hạt cà phê"
+  ],
+  "ingredients": [
+    {
+      "name": "vodka",
+      "quantity": 50,
+      "unit": "ml"
+    },
+    {
+      "name": "rượu mùi cà phê",
+      "quantity": 10,
+      "unit": "ml"
+    },
+    {
+      "name": "siro vani",
+      "quantity": 10,
+      "unit": "ml"
+    },
+    {
+      "name": "espresso tươi",
+      "quantity": 30,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Pha espresso, để nguội bớt.",
+    "Lắc vodka, rượu mùi, siro vani, espresso với đá mạnh.",
+    "Lược đôi vào coupe lạnh."
+  ],
+  "sugar_added_g": 6,
+  "sugar_note": "Đường thêm vào khoảng 6–9 g từ siro vani (ghi giá trị thấp nhất; siro vani khoảng 10–15 ml). Ít ngọt: 5 ml siro vani + espresso mạnh hơn.",
+  "caffeine_level": "trung-binh",
+  "alcohol": true,
+  "alcohol_pct_estimate": 20,
+  "alcohol_note": "Ước tính trước pha loãng khoảng 20–23% (ghi giá trị thấp nhất).",
+  "safety_flags": [
+    "18+",
+    "khong-lai-xe",
+    "caffeine"
+  ],
+  "difficulty": "Trung bình",
+  "prep_minutes": null,
+  "best_occasion": null,
+  "food_pairing": [],
+  "cultural_note": "Espresso Martini vanilla là chuẩn seed; chỉ là mẫu biến thể: hoán đổi siro thuần thành siro vani là biến thể bar đã công bố. Các hoán đổi siro khác (caramel, dừa, socola) dùng cùng mẫu và KHÔNG phải entry catalogue riêng — xem Loại trừ (§7).",
+  "recipe_sources": [
+    "Biến thể của IBA Espresso Martini"
+  ],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5."
+}

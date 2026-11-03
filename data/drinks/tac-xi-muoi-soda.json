@@ -1,0 +1,67 @@
+{
+  "slug": "tac-xi-muoi-soda",
+  "name_vi": "Soda Tắc Xí Muội",
+  "drink_group": "mocktail",
+  "glass": "highball",
+  "serving_ml": 250,
+  "technique": "pha-truc-tiep-build",
+  "ice": "đá viên",
+  "garnish": [
+    "lát tắc"
+  ],
+  "ingredients": [
+    {
+      "name": "nước tắc",
+      "quantity": 20,
+      "unit": "ml"
+    },
+    {
+      "name": "mận muối (xí muội / ô mai)",
+      "quantity": 1,
+      "unit": "miếng"
+    },
+    {
+      "name": "siro đường",
+      "quantity": 20,
+      "unit": "ml"
+    },
+    {
+      "name": "soda",
+      "quantity": 180,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Dầm tắc + xí muội + siro trong ly; đổ đầy đá; top soda, khuấy, trang trí lát tắc."
+  ],
+  "sugar_added_g": 12,
+  "sugar_note": "Đường thêm vào khoảng 12–18 g (ghi giá trị thấp nhất), cộng đường trong mận bảo quản. Tắc khoảng 20–30 ml (2–3 quả, dầm/bổ đôi), xí muội 1–2 miếng, siro khoảng 20–30 ml, soda khoảng 180–200 ml. Ít ngọt: 10 ml siro, thêm tắc.",
+  "caffeine_level": "khong",
+  "alcohol": false,
+  "alcohol_pct_estimate": 0,
+  "alcohol_note": "ABV 0% theo công thức đã viết.",
+  "safety_flags": [],
+  "difficulty": "Dễ",
+  "prep_minutes": null,
+  "best_occasion": null,
+  "food_pairing": [],
+  "cultural_note": "Hương vị thức uống đường phố Việt (tắc xí muội bán dạng đóng chai / đường phố); vị mặn–chua–ngọt đặc trưng Việt. Khoảng nhà, không codified; thương hiệu mận bảo quản khác nhau về mặn/ngọt, vì vậy cần điều chỉnh theo khẩu vị.",
+  "recipe_sources": [
+    "Build nhà của quán cà phê Việt (khoảng)"
+  ],
+  "mocktail_counterpart_slug": null,
+  "uncertain": true,
+  "uncertain_note": "Khoảng nhà, không codified; mặn/ngọt thay đổi theo thương hiệu mận bảo quản.",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5."
+}

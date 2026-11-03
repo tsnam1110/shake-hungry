@@ -1,0 +1,91 @@
+{
+  "slug": "long-island-iced-tea",
+  "name_vi": "Long Island Iced Tea",
+  "drink_group": "cocktail-co-con",
+  "glass": "highball",
+  "serving_ml": 180,
+  "technique": "pha-truc-tiep-build",
+  "ice": "đá viên",
+  "garnish": [
+    "lát chanh"
+  ],
+  "ingredients": [
+    {
+      "name": "vodka",
+      "quantity": 15,
+      "unit": "ml"
+    },
+    {
+      "name": "tequila",
+      "quantity": 15,
+      "unit": "ml"
+    },
+    {
+      "name": "rum trắng",
+      "quantity": 15,
+      "unit": "ml"
+    },
+    {
+      "name": "gin",
+      "quantity": 15,
+      "unit": "ml"
+    },
+    {
+      "name": "Cointreau",
+      "quantity": 15,
+      "unit": "ml"
+    },
+    {
+      "name": "nước chanh",
+      "quantity": 25,
+      "unit": "ml"
+    },
+    {
+      "name": "siro đường",
+      "quantity": 20,
+      "unit": "ml"
+    },
+    {
+      "name": "cola",
+      "quantity": 30,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Đổ đầy đá vào highball; thêm tất cả trừ cola; khuấy nhẹ; top cola, lát chanh."
+  ],
+  "sugar_added_g": 12,
+  "sugar_note": "Đường thêm vào khoảng 12–18 g từ siro (ghi giá trị thấp nhất; một số danh sách IBA ghi 20 ml, chuẩn IBA 2020 là 30 ml), cộng đường cola không tính. Ít ngọt: 15 ml siro + cola ăn kiêng là biến thể bar, không phải spec IBA — ghi là biến thể.",
+  "caffeine_level": "thap",
+  "alcohol": true,
+  "alcohol_pct_estimate": 20,
+  "alcohol_note": "Ước tính trước pha loãng khoảng 20–24% trước cola (ghi giá trị thấp nhất), ~17–20% với cola top. Caffeine thấp từ cola, không ghi mg.",
+  "safety_flags": [
+    "18+",
+    "khong-lai-xe",
+    "do-uong-manh"
+  ],
+  "difficulty": "Dễ",
+  "prep_minutes": null,
+  "best_occasion": null,
+  "food_pairing": [],
+  "cultural_note": "IBA Contemporary Classics; câu chuyện nguồn gốc Long Island 1970s (Robert 'Rosebud' Butt) được nhắc lại rộng rãi, chưa settled. Không có trà. Không có đối tác mocktail — trà đá + chanh không phải cùng thức uống.",
+  "recipe_sources": [
+    "IBA 2020"
+  ],
+  "mocktail_counterpart_slug": null,
+  "uncertain": true,
+  "uncertain_note": "Siro đường có hai số IBA (20 ml và 30 ml); câu chuyện nguồn gốc chưa settled.",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5."
+}

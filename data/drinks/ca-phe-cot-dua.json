@@ -1,0 +1,62 @@
+{
+  "slug": "ca-phe-cot-dua",
+  "name_vi": "Cà phê cốt dừa",
+  "drink_group": "ca-phe",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "glass": "ly cao",
+  "serving_ml": 350,
+  "technique": "pha cà phê, đánh bọt",
+  "ice": "đá",
+  "garnish": [],
+  "ingredients": [
+    {
+      "name": "cà phê đen",
+      "quantity": 40,
+      "unit": "ml"
+    },
+    {
+      "name": "sữa dừa/nước cốt dừa",
+      "quantity": 20,
+      "unit": "ml"
+    },
+    {
+      "name": "sữa đặc",
+      "quantity": 20,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Pha cà phê.",
+    "Đánh bọt sữa dừa + sữa đặc.",
+    "Đá vào ly, rót hỗn hợp sữa dừa rồi rót cà phê lên trên."
+  ],
+  "sugar_added_g": 13,
+  "sugar_note": "Đường ~13 g; ít ngọt: sữa đặc 10 ml, tăng cốt dừa.",
+  "caffeine_level": "cao",
+  "alcohol": false,
+  "alcohol_pct_estimate": null,
+  "alcohol_note": "",
+  "safety_flags": [
+    "caffeine cao"
+  ],
+  "difficulty": "dễ",
+  "prep_minutes": 10,
+  "best_occasion": null,
+  "food_pairing": [],
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "cultural_note": "",
+  "recipe_sources": [],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3."
+}

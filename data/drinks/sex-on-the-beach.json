@@ -1,0 +1,70 @@
+{
+  "slug": "sex-on-the-beach",
+  "name_vi": "Sex on the Beach",
+  "drink_group": "cocktail-co-con",
+  "glass": "highball",
+  "serving_ml": 140,
+  "technique": "pha-truc-tiep-build",
+  "ice": "đá viên",
+  "garnish": [
+    "lát cam"
+  ],
+  "ingredients": [
+    {
+      "name": "vodka",
+      "quantity": 40,
+      "unit": "ml"
+    },
+    {
+      "name": "peach schnapps",
+      "quantity": 20,
+      "unit": "ml"
+    },
+    {
+      "name": "nước cam",
+      "quantity": 40,
+      "unit": "ml"
+    },
+    {
+      "name": "nước cranberry",
+      "quantity": 40,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Build tất cả trong highball đầy đá, trang trí lát cam. Biến thể lắc: lắc với đá, lọc lên đá tươi."
+  ],
+  "sugar_added_g": 0,
+  "sugar_note": "Đường thêm vào 0 g siro; schnapps + nước ép đóng góp đường. Ít ngọt: dùng cranberry không đường + ít schnapps hơn — vị thay đổi đáng kể, ghi là biến thể. Biến thể bar dùng 45/15/45/45 ml.",
+  "caffeine_level": "khong",
+  "alcohol": true,
+  "alcohol_pct_estimate": 10,
+  "alcohol_note": "Ước tính trước pha loãng khoảng 10–13% (ghi giá trị thấp nhất).",
+  "safety_flags": [
+    "18+",
+    "khong-lai-xe"
+  ],
+  "difficulty": "Dễ",
+  "prep_minutes": null,
+  "best_occasion": null,
+  "food_pairing": [],
+  "cultural_note": "IBA Contemporary Classics; Ted Pizio, Confetti's, Fort Lauderdale, 1987, câu chuyện quảng bá peach-schnapps.",
+  "recipe_sources": [
+    "IBA"
+  ],
+  "mocktail_counterpart_slug": "safe-sex-on-the-beach",
+  "uncertain": false,
+  "uncertain_note": "",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5."
+}

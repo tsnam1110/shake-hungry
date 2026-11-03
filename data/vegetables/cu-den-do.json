@@ -1,0 +1,81 @@
+{
+  "slug": "cu-den-do",
+  "name_vi": "Củ dền đỏ",
+  "ingredient_slug": null,
+  "group": "rau-cu",
+  "supply": "da-lat",
+  "state": "tuoi",
+  "availability_months_by_region": {
+    "bac": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "trung": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "nam": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "region_notes": {
+    "bac": "Hàng Đà Lạt/nhập khẩu quanh năm — không có mùa vụ vùng thu hoạch riêng.",
+    "trung": "",
+    "nam": "Hàng Đà Lạt quanh năm"
+  },
+  "main_season_months": null,
+  "best_months": [
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+  ],
+  "kcal_per_100g": null,
+  "kcal_confidence": null,
+  "aliases": [],
+  "selection_note": "Củ chắc, nặng tay, vỏ trơn, không nứt, lá (nếu còn) tươi; củ mềm, xốp là già.",
+  "storage_note": "Cắt lá, để nguyên vỏ, ngăn mát được lâu hơn rau lá; đã gọt/luộc thì dùng sớm. Nước luộc giữ lại được (màu).",
+  "cooking_note": "Nấu canh xương/canh rau củ, hầm, luộc làm salad, ép nước, nấu cháo màu đỏ; chú ý màu lem sang các nguyên liệu khác.",
+  "safety_note": "Nước tiểu/phân đỏ sau khi ăn (beeturia) là vô hại nhưng dễ gây lo lắng (co-so). Chứa oxalate — người có tiền sử sỏi thận oxalate nên hạn chế lượng lớn (co-so). Khác củ cải đỏ (radish) và củ cải đường làm đường.",
+  "uncertain": true,
+  "uncertain_note": "Tháng tốt nhất 11–4 theo nguồn Đà Lạt (mùa khô, củ chắc ngọt, ít sâu). Bắc vụ xuân UNCERTAIN về tháng thu hoạch chính xác.",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source": "catalogue-v2",
+  "source_note": "Catalogue rau theo mùa v2 (2026-11-03), phần E — rau nhập khẩu / giống nhập trồng tại Việt Nam. Toàn bộ 18 mục chưa có hồ sơ repo nên kcal null — giữ thiếu, không copy số của loài/giống gốc."
+}

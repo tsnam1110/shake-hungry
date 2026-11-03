@@ -1,0 +1,80 @@
+{
+  "slug": "bloody-mary",
+  "name_vi": "Bloody Mary",
+  "drink_group": "cocktail-co-con",
+  "glass": "highball",
+  "serving_ml": null,
+  "technique": "lan-rolling",
+  "ice": "đá viên",
+  "garnish": [
+    "cọng cần tây"
+  ],
+  "ingredients": [
+    {
+      "name": "vodka",
+      "quantity": 45,
+      "unit": "ml"
+    },
+    {
+      "name": "nước ép cà chua",
+      "quantity": 90,
+      "unit": "ml"
+    },
+    {
+      "name": "nước cốt chanh",
+      "quantity": 15,
+      "unit": "ml"
+    },
+    {
+      "name": "Worcestershire",
+      "quantity": null,
+      "unit": "dash"
+    },
+    {
+      "name": "Tabasco",
+      "quantity": null,
+      "unit": "dash"
+    },
+    {
+      "name": "muối cần tây + tiêu",
+      "quantity": null,
+      "unit": null
+    }
+  ],
+  "recipe_steps": [
+    "Lăn (rolling) giữa hai ly hoặc khuấy nhẹ, không lắc mạnh (tránh làm nước cà chua tách lớp/bọt); rót lên đá, nêm lại muối/tiêu/cay theo khẩu vị."
+  ],
+  "sugar_added_g": 0,
+  "sugar_note": "Đường thêm vào 0 g siro; đường tự nhiên khoảng 5 g. Ít ngọt: giữ nguyên (đã ít đường).",
+  "caffeine_level": "khong",
+  "alcohol": true,
+  "alcohol_pct_estimate": 17,
+  "alcohol_note": "Ước tính trước pha loãng ~17%.",
+  "safety_flags": [
+    "18+",
+    "khong-lai-xe"
+  ],
+  "difficulty": "Dễ",
+  "prep_minutes": null,
+  "best_occasion": "brunch",
+  "food_pairing": [],
+  "cultural_note": "Brunch, vị mặn-cay — không ghi công dụng 'giải rượu' (chưa có cơ sở trình bày như y khoa).",
+  "recipe_sources": [
+    "IBA cũ"
+  ],
+  "mocktail_counterpart_slug": "virgin-mary",
+  "uncertain": false,
+  "uncertain_note": "",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5."
+}

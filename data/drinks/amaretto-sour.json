@@ -1,0 +1,79 @@
+{
+  "slug": "amaretto-sour",
+  "name_vi": "Amaretto Sour",
+  "drink_group": "cocktail-co-con",
+  "glass": "rocks",
+  "serving_ml": 110,
+  "technique": "lac-shake",
+  "ice": "đá viên",
+  "garnish": [
+    "cherry",
+    "chanh"
+  ],
+  "ingredients": [
+    {
+      "name": "amaretto",
+      "quantity": 45,
+      "unit": "ml"
+    },
+    {
+      "name": "bourbon",
+      "quantity": 22.5,
+      "unit": "ml"
+    },
+    {
+      "name": "nước chanh tươi",
+      "quantity": 30,
+      "unit": "ml"
+    },
+    {
+      "name": "siro đường",
+      "quantity": 5,
+      "unit": "ml"
+    },
+    {
+      "name": "lòng trắng trứng",
+      "quantity": 15,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Lắc khô tất cả không đá 15 giây (nếu có lòng trắng trứng).",
+    "Thêm đá, lắc lại.",
+    "Lọc lên đá tươi, giọt bitters + trang trí cherry/chanh."
+  ],
+  "sugar_added_g": 3,
+  "sugar_note": "Đường thêm vào khoảng 3–9 g tùy siro (ghi giá trị thấp nhất), cộng đường amaretto. Chuẩn catalogue: amaretto 45 ml, bourbon 22,5 ml, chanh 30 ml, siro 5 ml, lòng trắng trứng 15 ml; khoảng trong sách: amaretto 45–60 ml, bourbon 0–22,5 ml tùy chọn, siro 5–15 ml. Ít ngọt: bỏ siro, giữ bourbon để cân bằng.",
+  "caffeine_level": "khong",
+  "alcohol": true,
+  "alcohol_pct_estimate": 11,
+  "alcohol_note": "Ước tính trước pha loãng khoảng 11–15% (ghi giá trị thấp nhất; amaretto ~21–28% ABV tùy thương hiệu).",
+  "safety_flags": [
+    "18+",
+    "khong-lai-xe",
+    "long-trang-trung-song"
+  ],
+  "difficulty": "Trung bình",
+  "prep_minutes": null,
+  "best_occasion": null,
+  "food_pairing": [],
+  "cultural_note": "Không phải IBA; bản bourbon của Jeffrey Morgenthaler là chuẩn bar hiện đại đã cứu món này khỏi bản sour-mix 1970s.",
+  "recipe_sources": [
+    "Chuẩn hiện đại Morgenthaler"
+  ],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5."
+}

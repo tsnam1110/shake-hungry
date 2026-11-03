@@ -1,0 +1,65 @@
+{
+  "slug": "manhattan",
+  "name_vi": "Manhattan",
+  "drink_group": "cocktail-co-con",
+  "glass": "coupe ướp lạnh",
+  "serving_ml": null,
+  "technique": "khuay-stir",
+  "ice": "không đá (hoặc rocks nếu khách yêu cầu)",
+  "garnish": [
+    "cherry maraschino"
+  ],
+  "ingredients": [
+    {
+      "name": "rye whiskey",
+      "quantity": 50,
+      "unit": "ml"
+    },
+    {
+      "name": "sweet red vermouth",
+      "quantity": 20,
+      "unit": "ml"
+    },
+    {
+      "name": "Angostura bitters",
+      "quantity": 1,
+      "unit": "dash"
+    }
+  ],
+  "recipe_steps": [
+    "Khuấy (stir), không lắc — khuấy tất cả với đá 20–30 giây, lược vào ly lạnh, thả cherry."
+  ],
+  "sugar_added_g": 8,
+  "sugar_note": "Đường từ vermouth khoảng 8–10 g (ghi giá trị thấp nhất). Không có bản ít ngọt giữ đúng vị.",
+  "caffeine_level": "khong",
+  "alcohol": true,
+  "alcohol_pct_estimate": 30,
+  "alcohol_note": "Ước tính trước pha loãng ~30%.",
+  "safety_flags": [
+    "18+",
+    "khong-lai-xe"
+  ],
+  "difficulty": "Trung bình",
+  "prep_minutes": null,
+  "best_occasion": null,
+  "food_pairing": [],
+  "cultural_note": "New York thế kỷ 19, một trong 'The Unforgettables' của IBA.",
+  "recipe_sources": [
+    "IBA"
+  ],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5."
+}

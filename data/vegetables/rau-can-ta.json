@@ -1,0 +1,53 @@
+{
+  "slug": "rau-can-ta",
+  "name_vi": "Rau cần ta",
+  "ingredient_slug": "rau-can-ta",
+  "group": "rau-la",
+  "supply": "trong-nuoc",
+  "state": "tuoi",
+  "availability_months_by_region": {
+    "bac": [
+      11,
+      12,
+      1,
+      2,
+      3
+    ],
+    "trung": null,
+    "nam": null
+  },
+  "region_notes": {
+    "bac": "",
+    "trung": "Suy từ khí hậu, chưa có lịch chợ riêng — tháng để trống.",
+    "nam": "Chưa xác minh nguồn (Đà Lạt/vùng mát hay vận chuyển Bắc) — tháng để trống."
+  },
+  "main_season_months": [
+    12,
+    1,
+    2
+  ],
+  "best_months": [
+    12,
+    1,
+    2
+  ],
+  "kcal_per_100g": 13,
+  "kcal_confidence": "low",
+  "aliases": [
+    "cần cơm",
+    "cần ống",
+    "cần nước"
+  ],
+  "selection_note": "Cọng non, giòn, xanh, thơm đặc trưng, không úa, không dập.",
+  "storage_note": "2–3 ngày ngăn mát, giữ ẩm nhẹ; rất nhanh héo.",
+  "cooking_note": "Cần ta xào thịt bò, nấu canh, ăn kèm lẩu, luộc.",
+  "safety_note": "Khác cần tây (Apium graveolens). Repo chốt Oenanthe javanica.",
+  "uncertain": true,
+  "uncertain_note": "UNCERTAIN về tháng ở Trung (suy từ khí hậu) và Nam (cần ta ưa mát 15–20°C, chưa xác minh nguồn chợ Nam).",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source": "catalogue-v2",
+  "source_note": "Catalogue rau theo mùa v2 (2026-11-03), phần B — rau vùng hẹp / theo vụ đặc thù. Tháng là tháng có bán trên thị trường; miền ghi null là chưa có lịch chợ riêng, không gán tháng."
+}

@@ -1,0 +1,51 @@
+{
+  "slug": "mit-non",
+  "name_vi": "Mít non",
+  "ingredient_slug": "mit-non",
+  "group": "rau-qua",
+  "supply": "trong-nuoc",
+  "state": "tuoi",
+  "availability_months_by_region": {
+    "bac": null,
+    "trung": [
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "nam": null
+  },
+  "region_notes": {
+    "bac": "Chưa có lịch chợ mít non riêng — tháng để trống.",
+    "trung": "",
+    "nam": "Chưa xác minh tháng rộ cho Nam — tháng để trống."
+  },
+  "main_season_months": [
+    4,
+    5,
+    6
+  ],
+  "best_months": [
+    4,
+    5,
+    6
+  ],
+  "kcal_per_100g": 58,
+  "kcal_confidence": "low",
+  "aliases": [
+    "mít xanh"
+  ],
+  "selection_note": "Quả non, vỏ gai chưa cứng, cắt thấy múi chưa tạo xơ, nhựa trắng.",
+  "storage_note": "Nguyên quả vài ngày mát; đã luộc, cắt miếng thì 1–2 ngày ngăn mát.",
+  "cooking_note": "Mít non luộc trộn gỏi, mít non kho cá chuồn/cá, nấu canh, xào.",
+  "safety_note": "Nhựa mít dính — đeo găng/thoa dầu tay khi gọt, luộc chín trước khi trộn/kho.",
+  "uncertain": true,
+  "uncertain_note": "UNCERTAIN về tháng chợ mít non riêng cho Bắc và tháng rộ cho Nam.",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source": "catalogue-v2",
+  "source_note": "Catalogue rau theo mùa v2 (2026-11-03), phần B — rau vùng hẹp / theo vụ đặc thù. Tháng là tháng có bán trên thị trường; miền ghi null là chưa có lịch chợ riêng, không gán tháng."
+}

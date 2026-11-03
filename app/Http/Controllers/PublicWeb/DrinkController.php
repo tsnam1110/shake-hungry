@@ -1,0 +1,149 @@
+<?php
+
+declare(strict_types=1);
+
+namespace App\Http\Controllers\PublicWeb;
+
+use App\Http\Controllers\Controller;
+use App\Models\Drink;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Http\Request;
+
+/**
+ * API công khai cho thư viện nước uống (DRINK-MODULE, catalogue v2):
+ * danh sách lọc theo nhóm, kind (pha chế/đóng gói), nóng/lạnh, có cồn,
+ * mức caffeine, độ ngọt (từ sugar_added_g hoặc khoảng đường đóng gói) và
+ * tìm kiếm theo tên. Chi tiết phân biệt hai kind; dinh dưỡng KHÔNG tính
+ * từ engine ở module này (xem ghi chú ở Drink model) — mọi món có cồn
+ * đều trả về kcal_status = 'chua-tinh-duoc'.
+ */
+class DrinkController extends Controller
+{
+    public function index(Request $request): JsonResponse
+    {
+        $query = Drink::query()->orderBy('slug');
+
+        if ($q = trim((string) $request->query('q', ''))) {
+            $query->where('name_vi', 'like', "%{$q}%");
+        }
+        if ($group = $request->query('group')) {
+            $query->where('drink_group', $group);
+        }
+        if ($kind = $request->query('kind')) {
+            $query->where('kind', $kind);
+        }
+        if ($temperature = $request->query('temperature')) {
+            $query->where('temperature', $temperature);
+        }
+        if ($request->query('alcohol') === '1') {
+            $query->where('alcohol', true);
+        }
+        if ($request->query('alcohol') === '0') {
+            $query->where('alcohol', false);
+        }
+        if ($caffeine = $request->query('caffeine_level')) {
+            $query->where('caffeine_level', $caffeine);
+        }
+        // Độ ngọt: pha chế dùng sugar_added_g; đóng gói dùng min của khoảng.
+        if ($sweet = $request->query('sweetness')) {
+            $query->where(function ($w) use ($sweet) {
+                $w->where(function ($p) use ($sweet) {
+                    $p->where('kind', 'pha-che');
+                    match ($sweet) {
+                        'khong' => $p->where('sugar_added_g', '<=', 5),
+                        'vua' => $p->whereBetween('sugar_added_g', [6, 25]),
+                        'cao' => $p->where('sugar_added_g', '>', 25),
+                        default => null,
+                    };
+                })->orWhere(function ($p) use ($sweet) {
+                    $p->where('kind', 'dong-goi');
+                    $min = "CAST(JSON_EXTRACT(sugar_range_g, '$.min') AS DECIMAL(10,2))";
+                    match ($sweet) {
+                        'khong' => $p->whereRaw("{$min} <= 5"),
+                        'vua' => $p->whereRaw("{$min} BETWEEN 6 AND 25"),
+                        'cao' => $p->whereRaw("{$min} > 25"),
+                        default => null,
+                    };
+                });
+            });
+        }
+
+        $perPage = min(120, max(1, (int) $request->query('per_page', 100)));
+        $drinks = $query->paginate($perPage);
+        $drinks->getCollection()->transform(fn (Drink $d) => $this->summary($d));
+
+        return response()->json($drinks);
+    }
+
+    public function show(Drink $drink): JsonResponse
+    {
+        $counterpart = null;
+        if ($drink->mocktail_counterpart_slug) {
+            $counterpart = Drink::where('slug', $drink->mocktail_counterpart_slug)->first();
+        }
+
+        return response()->json([
+            'drink' => [
+                ...$this->summary($drink),
+                'glass' => $drink->glass,
+                'technique' => $drink->technique,
+                'ice' => $drink->ice,
+                'garnish' => $drink->garnish ?? [],
+                'ingredients' => $drink->ingredients ?? [],
+                'recipe_steps' => $drink->recipe_steps ?? [],
+                'sugar_note' => $drink->sugar_note,
+                'alcohol_note' => $drink->alcohol_note,
+                'safety_flags' => $drink->safety_flags ?? [],
+                'difficulty' => $drink->difficulty,
+                'prep_minutes' => $drink->prep_minutes,
+                'best_occasion' => $drink->best_occasion,
+                'food_pairing' => $drink->food_pairing ?? [],
+                'packaging' => $drink->packaging,
+                'sugar_range_g' => $drink->sugar_range_g,
+                'alcohol_pct_range' => $drink->alcohol_pct_range,
+                'label_note' => $drink->label_note,
+                'brand_examples' => $drink->brand_examples ?? [],
+                'cultural_note' => $drink->cultural_note,
+                'recipe_sources' => $drink->recipe_sources ?? [],
+                'uncertain' => $drink->uncertain,
+                'uncertain_note' => $drink->uncertain_note,
+                'source_note' => $drink->source_note,
+                'needs_review' => $drink->needs_review,
+                // Chưa tính được kcal: engine chưa có logic ethanol và phần
+                // lớn nguyên liệu bar chưa có trong kho — không hiện số thiếu.
+                'kcal_status' => 'chua-tinh-duoc',
+                'kcal_note' => $drink->alcohol
+                    ? 'Chưa tính được kcal: engine hiện chưa tính ethanol (~7 kcal/g, không nằm trong protein/fat/carb).'
+                    : 'Chưa tính được kcal: một số nguyên liệu chưa có trong kho nguyên liệu, chưa đủ để engine tính.',
+                'mocktail_counterpart' => $counterpart ? $this->summary($counterpart) : null,
+            ],
+            // Kết hợp cần lưu ý: chỉ khi có cặp đã thẩm định chạm tới đồ
+            // uống này qua slug đồ uống (không tự kế thừa slug nguyên liệu).
+            'combinations' => \App\Combinations\CombinationDisplay::forItem($drink->slug),
+            'combinations_disclaimer' => \App\Combinations\CombinationDisplay::DISCLAIMER,
+        ]);
+    }
+
+    /** @return array<string, mixed> */
+    private function summary(Drink $drink): array
+    {
+        return [
+            'id' => $drink->id,
+            'slug' => $drink->slug,
+            'name_vi' => $drink->name_vi,
+            'drink_group' => $drink->drink_group,
+            'kind' => $drink->kind,
+            'temperature' => $drink->temperature,
+            'serving_ml' => $drink->serving_ml,
+            'sugar_added_g' => $drink->sugar_added_g,
+            'sugar_range_g' => $drink->sugar_range_g,
+            'caffeine_level' => $drink->caffeine_level,
+            'alcohol' => $drink->alcohol,
+            'alcohol_pct_estimate' => $drink->alcohol_pct_estimate,
+            'alcohol_pct_range' => $drink->alcohol_pct_range,
+            'packaging' => $drink->packaging,
+            'uncertain' => $drink->uncertain,
+            'needs_review' => $drink->needs_review,
+        ];
+    }
+}

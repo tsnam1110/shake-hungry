@@ -1,0 +1,73 @@
+{
+  "slug": "espresso-martini",
+  "name_vi": "Espresso Martini",
+  "drink_group": "cocktail-co-con",
+  "glass": "coupe ướp lạnh",
+  "serving_ml": null,
+  "technique": "lac-shake",
+  "ice": "không đá",
+  "garnish": [
+    "3 hạt cà phê"
+  ],
+  "ingredients": [
+    {
+      "name": "vodka",
+      "quantity": 50,
+      "unit": "ml"
+    },
+    {
+      "name": "Kahlúa",
+      "quantity": 10,
+      "unit": "ml"
+    },
+    {
+      "name": "espresso mới pha",
+      "quantity": 30,
+      "unit": "ml"
+    },
+    {
+      "name": "siro đường",
+      "quantity": 5,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Pha espresso, để nguội bớt nhưng còn ấm nhẹ để tạo bọt tốt.",
+    "Lắc mạnh tất cả với đá 10–15 giây.",
+    "Lược đôi vào ly lạnh, thả 3 hạt cà phê."
+  ],
+  "sugar_added_g": 8,
+  "sugar_note": "Đường ~8 g. Ít ngọt: bỏ siro.",
+  "caffeine_level": "trung-binh",
+  "alcohol": true,
+  "alcohol_pct_estimate": 28,
+  "alcohol_note": "Ước tính trước pha loãng ~28%.",
+  "safety_flags": [
+    "18+",
+    "khong-lai-xe",
+    "caffeine"
+  ],
+  "difficulty": "Trung bình",
+  "prep_minutes": null,
+  "best_occasion": null,
+  "food_pairing": [],
+  "cultural_note": "Hiện đại (1980s), không phải martini gin. Cảnh báo kép cồn + caffeine là bắt buộc ở UI vì caffeine che cảm giác say.",
+  "recipe_sources": [
+    "IBA"
+  ],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5."
+}

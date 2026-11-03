@@ -1,0 +1,57 @@
+{
+  "slug": "nuoc-mia",
+  "name_vi": "Nước mía",
+  "drink_group": "giai-khat",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "glass": "ly cao",
+  "serving_ml": 350,
+  "technique": "ép",
+  "ice": "đá",
+  "garnish": [],
+  "ingredients": [
+    {
+      "name": "nước mía ép tươi",
+      "quantity": 300,
+      "unit": "ml"
+    },
+    {
+      "name": "nước cốt tắc",
+      "quantity": 15,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Ép mía tươi.",
+    "Vắt tắc nếu dùng.",
+    "Rót lên đá."
+  ],
+  "sugar_added_g": 0,
+  "sugar_note": "Không thêm đường; đường tự nhiên trong mía — không ghi là 'không đường'; ít ngọt: ly 200 ml, tăng đá.",
+  "caffeine_level": "khong",
+  "alcohol": false,
+  "alcohol_pct_estimate": null,
+  "alcohol_note": "",
+  "safety_flags": [
+    "đường cao (đường tự nhiên cao)"
+  ],
+  "difficulty": "dễ",
+  "prep_minutes": 10,
+  "best_occasion": null,
+  "food_pairing": [],
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "cultural_note": "",
+  "recipe_sources": [],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3."
+}

@@ -1,0 +1,66 @@
+{
+  "slug": "blue-lagoon",
+  "name_vi": "Blue Lagoon",
+  "drink_group": "cocktail-co-con",
+  "glass": "highball / hurricane",
+  "serving_ml": 180,
+  "technique": "pha-truc-tiep-build",
+  "ice": "đá viên",
+  "garnish": [
+    "bánh xe chanh",
+    "cherry"
+  ],
+  "ingredients": [
+    {
+      "name": "vodka",
+      "quantity": 30,
+      "unit": "ml"
+    },
+    {
+      "name": "blue curaçao",
+      "quantity": 30,
+      "unit": "ml"
+    },
+    {
+      "name": "lemonade (không ga)",
+      "quantity": 120,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Đổ đầy đá vào ly; thêm vodka + curaçao; top lemonade, khuấy nhẹ, bánh xe chanh + cherry."
+  ],
+  "sugar_added_g": 0,
+  "sugar_note": "Đường thêm vào 0 g siro; đường lemonade/curaçao không tính. Ít ngọt: dùng chanh không đường + soda + ít curaçao hơn — màu/vị thay đổi, ghi là biến thể.",
+  "caffeine_level": "khong",
+  "alcohol": true,
+  "alcohol_pct_estimate": 8,
+  "alcohol_note": "Ước tính trước pha loãng (bản dài) khoảng 8–11% (ghi giá trị thấp nhất).",
+  "safety_flags": [
+    "18+",
+    "khong-lai-xe"
+  ],
+  "difficulty": "Dễ",
+  "prep_minutes": null,
+  "best_occasion": null,
+  "food_pairing": [],
+  "cultural_note": "KHÔNG phải cocktail IBA hiện tại (bị loại khỏi danh sách IBA trước 1993); ghi công Andy MacElhone, Harry's New York Bar, Paris, 1960s–70s. Đưa vào như món cổ điển trên menu bar Việt, không phải IBA. Bản sour ngắn cũng có trong sách: vodka 40 ml, blue curaçao 15 ml, nước chanh 15 ml, lắc, phục vụ up — chuẩn seed là bản dài truyền thống, không trộn lượng hai bản.",
+  "recipe_sources": [
+    "Truyền thống Liquor.com / Harry's New York Bar (không phải IBA)"
+  ],
+  "mocktail_counterpart_slug": null,
+  "uncertain": true,
+  "uncertain_note": "Không phải IBA hiện tại; tồn tại hai bản dài và sour ngắn, catalogue chọn bản dài làm seed.",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5."
+}

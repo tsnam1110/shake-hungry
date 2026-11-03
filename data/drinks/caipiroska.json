@@ -1,0 +1,66 @@
+{
+  "slug": "caipiroska",
+  "name_vi": "Caipiroska",
+  "drink_group": "cocktail-co-con",
+  "glass": "double old fashioned",
+  "serving_ml": 100,
+  "technique": "pha-truc-tiep-build",
+  "ice": "đá đập",
+  "garnish": [],
+  "ingredients": [
+    {
+      "name": "vodka",
+      "quantity": 60,
+      "unit": "ml"
+    },
+    {
+      "name": "chanh",
+      "quantity": 1,
+      "unit": "quả"
+    },
+    {
+      "name": "đường mía trắng",
+      "quantity": 4,
+      "unit": "thìa cà phê"
+    }
+  ],
+  "recipe_steps": [
+    "Cho chanh + đường vào ly, dầm nhẹ.",
+    "Đổ đầy đá đập.",
+    "Thêm vodka.",
+    "Khuấy nhẹ."
+  ],
+  "sugar_added_g": 16,
+  "sugar_note": "Đường thêm vào ~16 g ở 4 thìa IBA; ít ngọt: 2 thìa = ~8 g. Bar thường dùng 2 thìa.",
+  "caffeine_level": "khong",
+  "alcohol": true,
+  "alcohol_pct_estimate": 28,
+  "alcohol_note": "Ước tính trước pha loãng khoảng 28–32% trước khi đá tan (ghi giá trị thấp nhất).",
+  "safety_flags": [
+    "18+",
+    "khong-lai-xe"
+  ],
+  "difficulty": "Dễ",
+  "prep_minutes": null,
+  "best_occasion": null,
+  "food_pairing": [],
+  "cultural_note": "IBA chỉ định nghĩa Caipiroska là thay vodka cho Caipirinha; bản thân Caipirinha đã có.",
+  "recipe_sources": [
+    "IBA (ghi chú dưới Caipirinha)"
+  ],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5."
+}

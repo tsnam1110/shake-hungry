@@ -1,0 +1,65 @@
+{
+  "slug": "aperol-spritz",
+  "name_vi": "Aperol Spritz",
+  "drink_group": "cocktail-co-con",
+  "glass": "wine glass",
+  "serving_ml": null,
+  "technique": "pha-truc-tiep-build",
+  "ice": "đá viên",
+  "garnish": [
+    "lát cam"
+  ],
+  "ingredients": [
+    {
+      "name": "Prosecco",
+      "quantity": 90,
+      "unit": "ml"
+    },
+    {
+      "name": "Aperol",
+      "quantity": 60,
+      "unit": "ml"
+    },
+    {
+      "name": "soda",
+      "quantity": 30,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Đá vào ly, rót Prosecco → Aperol → soda theo thứ tự, khuấy nhẹ một vòng, trang trí cam."
+  ],
+  "sugar_added_g": 12,
+  "sugar_note": "Đường từ Aperol + Prosecco khoảng 12–15 g (ghi giá trị thấp nhất). Không có bản ít ngọt giữ đúng vị.",
+  "caffeine_level": "khong",
+  "alcohol": true,
+  "alcohol_pct_estimate": 11,
+  "alcohol_note": "Ước tính trước pha loãng ~11%.",
+  "safety_flags": [
+    "18+",
+    "khong-lai-xe"
+  ],
+  "difficulty": "Dễ",
+  "prep_minutes": null,
+  "best_occasion": "aperitivo",
+  "food_pairing": [],
+  "cultural_note": "Aperitivo Ý, Venice 1920s; tỉ lệ IBA 3-2-1.",
+  "recipe_sources": [
+    "IBA"
+  ],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5."
+}

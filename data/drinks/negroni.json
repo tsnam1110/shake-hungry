@@ -1,0 +1,65 @@
+{
+  "slug": "negroni",
+  "name_vi": "Negroni",
+  "drink_group": "cocktail-co-con",
+  "glass": "rocks",
+  "serving_ml": null,
+  "technique": "pha-truc-tiep-build",
+  "ice": "đá viên",
+  "garnish": [
+    "lát cam một nửa"
+  ],
+  "ingredients": [
+    {
+      "name": "gin",
+      "quantity": 30,
+      "unit": "ml"
+    },
+    {
+      "name": "Campari",
+      "quantity": 30,
+      "unit": "ml"
+    },
+    {
+      "name": "sweet red vermouth",
+      "quantity": 30,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Rót tất cả vào ly đá (build trực tiếp), khuấy nhẹ, trang trí cam."
+  ],
+  "sugar_added_g": 10,
+  "sugar_note": "Đường từ vermouth + Campari khoảng 10–15 g (ghi giá trị thấp nhất). Không có bản ít ngọt giữ đúng vị (giảm vermouth sẽ đổi cân bằng — ghi rõ).",
+  "caffeine_level": "khong",
+  "alcohol": true,
+  "alcohol_pct_estimate": 24,
+  "alcohol_note": "Ước tính trước pha loãng ~24%.",
+  "safety_flags": [
+    "18+",
+    "khong-lai-xe"
+  ],
+  "difficulty": "Dễ",
+  "prep_minutes": null,
+  "best_occasion": "khai vị",
+  "food_pairing": [],
+  "cultural_note": "Ý, khai vị, vị đắng thảo mộc; ba phần bằng nhau.",
+  "recipe_sources": [
+    "IBA"
+  ],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5."
+}

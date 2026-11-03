@@ -1,0 +1,55 @@
+{
+  "slug": "nuoc-ep-cam",
+  "name_vi": "Nước ép cam",
+  "drink_group": "nuoc-ep",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "glass": "ly cao",
+  "serving_ml": 300,
+  "technique": "vắt",
+  "ice": null,
+  "garnish": [],
+  "ingredients": [
+    {
+      "name": "cam",
+      "quantity": 2,
+      "unit": "quả"
+    },
+    {
+      "name": "nước ép cam",
+      "quantity": 200,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Vắt cam, lọc hạt, rót ra ly, uống ngay."
+  ],
+  "sugar_added_g": 0,
+  "sugar_note": "Không thêm đường (chuẩn); đường tự nhiên cam — không ghi 'không đường'.",
+  "caffeine_level": "khong",
+  "alcohol": false,
+  "alcohol_pct_estimate": null,
+  "alcohol_note": "",
+  "safety_flags": [
+    "đường cao (đường tự nhiên, mất xơ so với ăn quả)"
+  ],
+  "difficulty": "dễ",
+  "prep_minutes": 10,
+  "best_occasion": null,
+  "food_pairing": [],
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "cultural_note": "Nước cam vắt là món 'bồi bổ' quen thuộc, khác nước cam đóng hộp.",
+  "recipe_sources": [],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3."
+}

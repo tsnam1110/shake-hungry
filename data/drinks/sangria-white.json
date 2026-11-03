@@ -1,0 +1,80 @@
+{
+  "slug": "sangria-white",
+  "name_vi": "Sangria trắng / White Sangria (Sangria Blanca)",
+  "drink_group": "cocktail-co-con",
+  "glass": "wine glass",
+  "serving_ml": 180,
+  "technique": "pha-truc-tiep-build",
+  "ice": "đá viên",
+  "garnish": [
+    "trái cây trắng cắt lát"
+  ],
+  "ingredients": [
+    {
+      "name": "vang trắng khô",
+      "quantity": 125,
+      "unit": "ml"
+    },
+    {
+      "name": "brandy",
+      "quantity": 15,
+      "unit": "ml"
+    },
+    {
+      "name": "rượu mùi cam",
+      "quantity": 0,
+      "unit": "ml"
+    },
+    {
+      "name": "trái cây trắng cắt lát (đào, táo xanh, nho, cam, chanh)",
+      "quantity": null,
+      "unit": null
+    },
+    {
+      "name": "siro đường",
+      "quantity": 10,
+      "unit": "ml"
+    },
+    {
+      "name": "soda",
+      "quantity": 30,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Như sangria đỏ, với trái cây trắng; làm lạnh, rót lên đá, top soda."
+  ],
+  "sugar_added_g": 6,
+  "sugar_note": "Đường thêm vào khoảng 6–9 g (ghi giá trị thấp nhất); brandy khoảng 15–20 ml, rượu mùi cam tùy chọn 0–20 ml, siro khoảng 10–15 ml, soda khoảng 30–60 ml. Ít ngọt: bỏ siro.",
+  "caffeine_level": "khong",
+  "alcohol": true,
+  "alcohol_pct_estimate": 9,
+  "alcohol_note": "Ước tính trước pha loãng khoảng 9–12% (ghi giá trị thấp nhất; vang trắng 11–13%).",
+  "safety_flags": [
+    "18+",
+    "khong-lai-xe"
+  ],
+  "difficulty": "Dễ",
+  "prep_minutes": null,
+  "best_occasion": "chia sẻ theo bình",
+  "food_pairing": [],
+  "cultural_note": "Sangria trắng là biến thể nhà hàng sau này, không phải bản đỏ truyền thống; cùng phương pháp bình, trái cây nhẹ hơn.",
+  "recipe_sources": [
+    "Bình 6 khẩu phần"
+  ],
+  "mocktail_counterpart_slug": null,
+  "uncertain": true,
+  "uncertain_note": "Không có spec IBA; lượng là quy đổi từ bình, khoảng là điểm chính.",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5."
+}

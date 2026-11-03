@@ -1,0 +1,57 @@
+{
+  "slug": "nuoc-sam",
+  "name_vi": "Nước sâm (bí đao–mía lau–lá dứa)",
+  "drink_group": "giai-khat",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "glass": "ly cao",
+  "serving_ml": 300,
+  "technique": "nấu",
+  "ice": "đá",
+  "garnish": [
+    "hạt chia ngâm"
+  ],
+  "ingredients": [
+    {
+      "name": "nước sâm",
+      "quantity": 300,
+      "unit": "ml"
+    },
+    {
+      "name": "hạt chia ngâm",
+      "quantity": 5,
+      "unit": "g"
+    }
+  ],
+  "recipe_steps": [
+    "Bí đao để vỏ, cắt khoanh bỏ hạt.",
+    "Nấu mía lau + lá dứa + rễ tranh + bí đao 30 phút lửa nhỏ (mẻ lớn 2 lít: bí đao 500 g, mía lau 100 g, đường phèn 60–80 g).",
+    "Lọc, thêm đường phèn khi còn nóng, để nguội, ướp lạnh, thêm hạt chia khi phục vụ."
+  ],
+  "sugar_added_g": 10,
+  "sugar_note": "Đường khoảng 10–15 g/ly; ít ngọt: giảm đường phèn một nửa.",
+  "caffeine_level": "khong",
+  "alcohol": false,
+  "alcohol_pct_estimate": null,
+  "alcohol_note": "",
+  "safety_flags": [],
+  "difficulty": "trung bình",
+  "prep_minutes": 30,
+  "best_occasion": null,
+  "food_pairing": [],
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "cultural_note": "UI phải ghi chú: 'sâm' ở đây là nước mát thảo mộc, không phải nhân sâm.",
+  "recipe_sources": [],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3."
+}

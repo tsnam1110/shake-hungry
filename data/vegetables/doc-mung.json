@@ -1,0 +1,72 @@
+{
+  "slug": "doc-mung",
+  "name_vi": "Dọc mùng",
+  "ingredient_slug": "doc-mung",
+  "group": "rau-la",
+  "supply": "trong-nuoc",
+  "state": "tuoi",
+  "availability_months_by_region": {
+    "bac": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "trung": null,
+    "nam": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "region_notes": {
+    "bac": "",
+    "trung": "Chưa có lịch chợ riêng — tháng để trống.",
+    "nam": ""
+  },
+  "main_season_months": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "best_months": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "kcal_per_100g": 13,
+  "kcal_confidence": "low",
+  "aliases": [
+    "bạc hà (Nam Bộ)",
+    "bẹ môn"
+  ],
+  "selection_note": "Bẹ mập, xốp, giòn, không dập, không thâm.",
+  "storage_note": "Ngăn mát 1–2 ngày, khô ráo; bẹ đã sơ chế dùng trong ngày.",
+  "cooking_note": "Canh chua, bún dọc mùng/bún bung, nấu với cá/thịt.",
+  "safety_note": "Bẹ chứa tinh thể oxalat gây ngứa — tước vỏ, thái vát, bóp muối, rửa nhiều lần, nấu chín; đeo găng khi sơ chế (co-so).",
+  "uncertain": true,
+  "uncertain_note": "UNCERTAIN về tháng chợ chính xác ở Bắc và Trung (chưa có lịch chợ riêng).",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source": "catalogue-v2",
+  "source_note": "Catalogue rau theo mùa v2 (2026-11-03), phần B — rau vùng hẹp / theo vụ đặc thù. Tháng là tháng có bán trên thị trường; miền ghi null là chưa có lịch chợ riêng, không gán tháng."
+}

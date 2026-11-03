@@ -1,0 +1,68 @@
+{
+  "slug": "ca-phe-sua-da",
+  "name_vi": "Cà phê sữa đá",
+  "drink_group": "ca-phe",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "glass": "ly cao",
+  "serving_ml": 350,
+  "technique": "pha phin",
+  "ice": "đá đầy",
+  "garnish": [],
+  "ingredients": [
+    {
+      "name": "bột cà phê phin",
+      "quantity": 25,
+      "unit": "g"
+    },
+    {
+      "name": "nước sôi",
+      "quantity": 80,
+      "unit": "ml"
+    },
+    {
+      "name": "cà phê phin chiết xuất",
+      "quantity": 40,
+      "unit": "ml"
+    },
+    {
+      "name": "sữa đặc",
+      "quantity": 30,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Tráng phin.",
+    "Ủ 20 ml nước sôi 30 giây–1 phút.",
+    "Rót tiếp 60 ml, chờ nhỏ giọt.",
+    "Khuấy sữa đặc vào cà phê nóng, rót lên đá."
+  ],
+  "sugar_added_g": 20,
+  "sugar_note": "Đường ~20 g từ sữa đặc; ít ngọt: sữa đặc 15 ml.",
+  "caffeine_level": "cao",
+  "alcohol": false,
+  "alcohol_pct_estimate": null,
+  "alcohol_note": "",
+  "safety_flags": [
+    "caffeine cao"
+  ],
+  "difficulty": "dễ",
+  "prep_minutes": 10,
+  "best_occasion": null,
+  "food_pairing": [],
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "cultural_note": "Biểu tượng vỉa hè Sài Gòn, robusta + sữa đặc thay sữa tươi vì xưa khó bảo quản sữa tươi.",
+  "recipe_sources": [],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3."
+}

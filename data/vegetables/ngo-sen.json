@@ -1,0 +1,54 @@
+{
+  "slug": "ngo-sen",
+  "name_vi": "Ngó sen",
+  "ingredient_slug": "ngo-sen",
+  "group": "rau-cu",
+  "supply": "trong-nuoc",
+  "state": "tuoi",
+  "availability_months_by_region": {
+    "bac": null,
+    "trung": null,
+    "nam": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "region_notes": {
+    "bac": "Chưa có lịch chợ riêng — tháng để trống.",
+    "trung": "Chưa có lịch chợ riêng — tháng để trống.",
+    "nam": ""
+  },
+  "main_season_months": [
+    7,
+    8,
+    9,
+    10
+  ],
+  "best_months": [
+    7,
+    8,
+    9,
+    10
+  ],
+  "kcal_per_100g": 61,
+  "kcal_confidence": "low",
+  "aliases": [
+    "củ sen non"
+  ],
+  "selection_note": "Ngó trắng/ngà, giòn, mập, không thâm, không mềm nhũn, cắt thấy lỗ đều.",
+  "storage_note": "Ngâm nước lạnh có vắt chanh loãng nếu đã cắt, ngăn mát 1–2 ngày; tốt nhất dùng trong ngày.",
+  "cooking_note": "Gỏi ngó sen tôm thịt, xào thịt bò, hầm sườn, nấu canh.",
+  "safety_note": "Ngó mọc trong bùn nước — rửa kỹ (co-so). Khác củ sen già và khác bông súng.",
+  "uncertain": true,
+  "uncertain_note": "UNCERTAIN về đầu–cuối tháng ở Bắc/Trung (chưa có lịch chợ ngó sen riêng; khoảng 6–10 chỉ ghi với cờ chưa chắc chắn).",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source": "catalogue-v2",
+  "source_note": "Catalogue rau theo mùa v2 (2026-11-03), phần B — rau vùng hẹp / theo vụ đặc thù. Tháng là tháng có bán trên thị trường; miền ghi null là chưa có lịch chợ riêng, không gán tháng."
+}

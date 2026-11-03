@@ -1,0 +1,53 @@
+{
+  "slug": "khoai-mo",
+  "name_vi": "Khoai mỡ",
+  "ingredient_slug": "khoai-mo",
+  "group": "rau-cu",
+  "supply": "trong-nuoc",
+  "state": "tuoi",
+  "availability_months_by_region": {
+    "bac": null,
+    "trung": null,
+    "nam": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "region_notes": {
+    "bac": "Hàng Nam vận chuyển — tháng để trống.",
+    "trung": "Hàng Nam vận chuyển — tháng để trống.",
+    "nam": "Chợ quanh năm nhờ trữ củ; tháng thu hoạch chính chưa chốt."
+  },
+  "main_season_months": null,
+  "best_months": null,
+  "kcal_per_100g": 118,
+  "kcal_confidence": "high",
+  "aliases": [
+    "khoai tía",
+    "khoai vạc",
+    "củ mỡ",
+    "củ tía"
+  ],
+  "selection_note": "Củ dài, chắc, nặng, vỏ đen, không hà, không mềm, cắt thấy ruột tím/trắng đều.",
+  "storage_note": "Khô mát 2–4 tuần; đã gọt thì ngăn mát 2–3 ngày.",
+  "cooking_note": "Canh khoai mỡ nấu tôm/thịt, nấu chè, hấp, nấu súp.",
+  "safety_note": "Gọt vỏ, nấu chín kỹ; người nhạy cảm đeo găng khi gọt (nhớt gây ngứa nhẹ).",
+  "uncertain": true,
+  "uncertain_note": "UNCERTAIN về tháng thu hoạch chính: hai nguồn mâu thuẫn (cuối 7–đầu 8 âm ≈ 9–10 dương vs trồng 7–8 âm thu 12–1 năm sau); Bắc/Trung chủ yếu là hàng Nam vận chuyển.",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source": "catalogue-v2",
+  "source_note": "Catalogue rau theo mùa v2 (2026-11-03), phần B — rau vùng hẹp / theo vụ đặc thù. Tháng là tháng có bán trên thị trường; miền ghi null là chưa có lịch chợ riêng, không gán tháng."
+}

@@ -1,0 +1,70 @@
+{
+  "slug": "virgin-margarita",
+  "name_vi": "Virgin Margarita",
+  "drink_group": "mocktail",
+  "glass": "margarita",
+  "serving_ml": null,
+  "technique": "lac-shake",
+  "ice": "đá viên",
+  "garnish": [],
+  "ingredients": [
+    {
+      "name": "nước cốt chanh",
+      "quantity": 30,
+      "unit": "ml"
+    },
+    {
+      "name": "nước cam tươi",
+      "quantity": 30,
+      "unit": "ml"
+    },
+    {
+      "name": "siro agave",
+      "quantity": 15,
+      "unit": "ml"
+    },
+    {
+      "name": "soda/nước có ga",
+      "quantity": 60,
+      "unit": "ml"
+    },
+    {
+      "name": "muối viền",
+      "quantity": null,
+      "unit": null
+    }
+  ],
+  "recipe_steps": [
+    "Lắc chanh + cam + agave với đá, lược vào ly viền muối một nửa, top soda."
+  ],
+  "sugar_added_g": 15,
+  "sugar_note": "Đường ~15 g từ siro agave. Ít ngọt: agave 7 ml.",
+  "caffeine_level": "khong",
+  "alcohol": false,
+  "alcohol_pct_estimate": 0,
+  "alcohol_note": "ABV 0% theo công thức đã viết.",
+  "safety_flags": [],
+  "difficulty": "Dễ",
+  "prep_minutes": null,
+  "best_occasion": null,
+  "food_pairing": [],
+  "cultural_note": "Đối tác của Margarita, là bản phỏng theo, không phải IBA. Ghi rõ 'phỏng theo Margarita, không chứa tequila'.",
+  "recipe_sources": [
+    "Phỏng theo Margarita (không IBA)"
+  ],
+  "mocktail_counterpart_slug": "margarita",
+  "uncertain": false,
+  "uncertain_note": "",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5."
+}

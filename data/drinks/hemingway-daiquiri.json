@@ -1,0 +1,68 @@
+{
+  "slug": "hemingway-daiquiri",
+  "name_vi": "Hemingway Daiquiri / Hemingway Special",
+  "drink_group": "cocktail-co-con",
+  "glass": "double coupe",
+  "serving_ml": 130,
+  "technique": "lac-shake",
+  "ice": "không đá",
+  "garnish": [],
+  "ingredients": [
+    {
+      "name": "rum trắng",
+      "quantity": 60,
+      "unit": "ml"
+    },
+    {
+      "name": "nước bưởi",
+      "quantity": 40,
+      "unit": "ml"
+    },
+    {
+      "name": "rượu mùi maraschino",
+      "quantity": 15,
+      "unit": "ml"
+    },
+    {
+      "name": "nước cốt chanh tươi",
+      "quantity": 15,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Cho tất cả vào shaker với đá; lắc; lược đôi vào coupe lạnh."
+  ],
+  "sugar_added_g": 0,
+  "sugar_note": "Đường thêm vào 0 g; maraschino đóng góp đường, không tính. Ít ngọt: đã là spec không đường. Biến thể trong sách dùng 25–40 ml bưởi và 15–30 ml chanh (ghi giá trị thấp nhất cho chanh, giá trị cao nhất cho bưởi theo spec IBA).",
+  "caffeine_level": "khong",
+  "alcohol": true,
+  "alcohol_pct_estimate": 20,
+  "alcohol_note": "Ước tính trước pha loãng khoảng 20–24% (ghi giá trị thấp nhất).",
+  "safety_flags": [
+    "18+",
+    "khong-lai-xe"
+  ],
+  "difficulty": "Dễ",
+  "prep_minutes": null,
+  "best_occasion": null,
+  "food_pairing": [],
+  "cultural_note": "El Floridita, Havana, cho Ernest Hemingway; IBA Hemingway Special. Không dùng biến thể bar 'Papa Doble' 90–105 ml làm chuẩn catalogue. Không có đối tác mocktail — không bịa soda bưởi thành đối tác.",
+  "recipe_sources": [
+    "IBA Contemporary Classics"
+  ],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5."
+}

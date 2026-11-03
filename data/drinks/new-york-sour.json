@@ -1,0 +1,76 @@
+{
+  "slug": "new-york-sour",
+  "name_vi": "New York Sour",
+  "drink_group": "cocktail-co-con",
+  "glass": "rocks",
+  "serving_ml": 135,
+  "technique": "lac-shake",
+  "ice": "đá viên",
+  "garnish": [],
+  "ingredients": [
+    {
+      "name": "rye hoặc bourbon",
+      "quantity": 60,
+      "unit": "ml"
+    },
+    {
+      "name": "siro đường",
+      "quantity": 22.5,
+      "unit": "ml"
+    },
+    {
+      "name": "nước chanh tươi",
+      "quantity": 30,
+      "unit": "ml"
+    },
+    {
+      "name": "lòng trắng trứng",
+      "quantity": 15,
+      "unit": "ml"
+    },
+    {
+      "name": "vang đỏ (Shiraz/Malbec)",
+      "quantity": 15,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Lắc whiskey, siro, chanh, lòng trắng trứng (khô rồi ướt nếu dùng trứng).",
+    "Lọc lên đá tươi.",
+    "Nổi vang đỏ chậm lên thìa bar."
+  ],
+  "sugar_added_g": 13,
+  "sugar_note": "Đường thêm vào khoảng 13–14 g (ghi giá trị thấp nhất). Lòng trắng trứng khoảng 15–30 ml trong một số danh sách (ghi giá trị thấp nhất). Ít ngọt: 15 ml siro.",
+  "caffeine_level": "khong",
+  "alcohol": true,
+  "alcohol_pct_estimate": 19,
+  "alcohol_note": "Ước tính trước pha loãng khoảng 19–22% (ghi giá trị thấp nhất).",
+  "safety_flags": [
+    "18+",
+    "khong-lai-xe",
+    "long-trang-trung-song"
+  ],
+  "difficulty": "Trung bình–khó",
+  "prep_minutes": null,
+  "best_occasion": null,
+  "food_pairing": [],
+  "cultural_note": "IBA New Era; whiskey sour với lớp vang nổi, nguồn gốc Mỹ thế kỷ 19, món trên menu whisky-bar Việt.",
+  "recipe_sources": [
+    "IBA New Era"
+  ],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5."
+}

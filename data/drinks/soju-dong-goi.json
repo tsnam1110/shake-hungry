@@ -1,0 +1,52 @@
+{
+  "slug": "soju-dong-goi",
+  "name_vi": "Soju",
+  "drink_group": "ruou",
+  "kind": "dong-goi",
+  "temperature": "lanh",
+  "glass": null,
+  "serving_ml": 30,
+  "technique": null,
+  "ice": null,
+  "garnish": [],
+  "ingredients": [],
+  "recipe_steps": [],
+  "sugar_added_g": null,
+  "sugar_note": "Nguyên chất: ~0–2 g/chén; bản vị trái cây ngọt: ~5–12 g/chén.",
+  "caffeine_level": "khong",
+  "alcohol": true,
+  "alcohol_pct_estimate": null,
+  "alcohol_note": "Có cồn. Phổ biến thương mại hiện nay 16–20%; soju truyền thống/thủ công có thể tới 25% hoặc cao hơn — đọc nhãn.",
+  "safety_flags": [
+    "18+"
+  ],
+  "difficulty": null,
+  "prep_minutes": null,
+  "best_occasion": null,
+  "food_pairing": [],
+  "packaging": "Chai 360 ml phổ biến; chén nhỏ/ly 30–50 ml.",
+  "sugar_range_g": {
+    "min": 0,
+    "max": 12
+  },
+  "alcohol_pct_range": {
+    "min": 16.0,
+    "max": 25.0
+  },
+  "label_note": "Đọc nhãn sản phẩm cụ thể khi seed — khoảng trong catalogue là khoảng theo loại, dao động theo thương hiệu, không phải bảng dinh dưỡng của một sản phẩm cụ thể.",
+  "brand_examples": [
+    "Jinro",
+    "Chum Churum",
+    "Good Day"
+  ],
+  "cultural_note": "Thành phần điển hình: gạo/lúa mạch/khoai lang/sắn lên men và chưng cất, pha loãng; bản vị trái cây thêm hương/đường. Tách soju nguyên chất và soju vị trái cây khi seed.",
+  "recipe_sources": [],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §6."
+}

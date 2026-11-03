@@ -1,0 +1,62 @@
+{
+  "slug": "nuoc-e",
+  "name_vi": "Nước é (hạt é)",
+  "drink_group": "giai-khat",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "glass": "chai/ly",
+  "serving_ml": 350,
+  "technique": "nấu/xay",
+  "ice": "đá",
+  "garnish": [],
+  "ingredients": [
+    {
+      "name": "hạt é khô",
+      "quantity": 10,
+      "unit": "g"
+    },
+    {
+      "name": "nước",
+      "quantity": 300,
+      "unit": "ml"
+    },
+    {
+      "name": "siro đường",
+      "quantity": 20,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Ngâm hạt é trong nước 10 phút tới nở hoàn toàn/thành gel.",
+    "Hòa đường vào nước, để nguội.",
+    "Trộn hạt + nước ngọt + đá; thêm thạch/chanh nếu dùng."
+  ],
+  "sugar_added_g": 20,
+  "sugar_note": "Đường khoảng 20–30 g (siro) hoặc đường phèn 20 g; ít ngọt: 10 ml siro.",
+  "caffeine_level": "khong",
+  "alcohol": false,
+  "alcohol_pct_estimate": null,
+  "alcohol_note": "",
+  "safety_flags": [
+    "hạt phải ngâm/nở hoàn toàn trước khi uống; không uống hạt khô"
+  ],
+  "difficulty": "dễ",
+  "prep_minutes": 15,
+  "best_occasion": null,
+  "food_pairing": [],
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "cultural_note": "Thức uống đường phố miền Trung/Nam, thường bán kèm sương sáo và sữa dừa thành cốc hỗn hợp.",
+  "recipe_sources": [],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3."
+}

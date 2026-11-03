@@ -1,0 +1,70 @@
+{
+  "slug": "cosmopolitan",
+  "name_vi": "Cosmopolitan",
+  "drink_group": "cocktail-co-con",
+  "glass": "coupe ướp lạnh",
+  "serving_ml": null,
+  "technique": "lac-shake",
+  "ice": "không đá",
+  "garnish": [
+    "vỏ cam"
+  ],
+  "ingredients": [
+    {
+      "name": "vodka cam (citron)",
+      "quantity": 40,
+      "unit": "ml"
+    },
+    {
+      "name": "Cointreau",
+      "quantity": 15,
+      "unit": "ml"
+    },
+    {
+      "name": "nước cốt chanh tươi",
+      "quantity": 15,
+      "unit": "ml"
+    },
+    {
+      "name": "nước cranberry",
+      "quantity": 30,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Lắc tất cả với đá 10–15 giây, lược vào ly lạnh, vắt vỏ cam lên mặt."
+  ],
+  "sugar_added_g": 12,
+  "sugar_note": "Đường từ Cointreau + cranberry khoảng 12–15 g (ghi giá trị thấp nhất). Ít ngọt: cranberry không đường 30 ml, Cointreau giữ nguyên.",
+  "caffeine_level": "khong",
+  "alcohol": true,
+  "alcohol_pct_estimate": 27,
+  "alcohol_note": "Ước tính trước pha loãng ~27%.",
+  "safety_flags": [
+    "18+",
+    "khong-lai-xe"
+  ],
+  "difficulty": "Dễ",
+  "prep_minutes": null,
+  "best_occasion": null,
+  "food_pairing": [],
+  "cultural_note": "",
+  "recipe_sources": [
+    "IBA"
+  ],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5."
+}

@@ -1,0 +1,64 @@
+{
+  "slug": "sua-me-den",
+  "name_vi": "Sữa mè đen",
+  "drink_group": "giai-khat",
+  "kind": "pha-che",
+  "temperature": "ca-hai",
+  "glass": "chai/ly",
+  "serving_ml": 250,
+  "technique": "nấu/xay",
+  "ice": "đá",
+  "garnish": [],
+  "ingredients": [
+    {
+      "name": "hạt mè đen",
+      "quantity": 50,
+      "unit": "g"
+    },
+    {
+      "name": "nước hoặc sữa tươi",
+      "quantity": 250,
+      "unit": "ml"
+    },
+    {
+      "name": "đường",
+      "quantity": 15,
+      "unit": "g"
+    }
+  ],
+  "recipe_steps": [
+    "Rang mè tới thơm (không cháy).",
+    "Xay mè rang + nước/sữa nóng tới mịn.",
+    "Đun nhỏ lửa 5 phút, lọc qua vải để sữa mịn (hoặc để nguyên không lọc cho bản mộc).",
+    "Làm ngọt, phục vụ nóng hoặc lạnh."
+  ],
+  "sugar_added_g": 15,
+  "sugar_note": "Đường khoảng 15–25 g hoặc sữa đặc 20 ml; ít ngọt: 10 g đường.",
+  "caffeine_level": "khong",
+  "alcohol": false,
+  "alcohol_pct_estimate": null,
+  "alcohol_note": "",
+  "safety_flags": [
+    "dị ứng mè (dị ứng chính)",
+    "sữa/đậu nành tùy nền"
+  ],
+  "difficulty": "trung bình",
+  "prep_minutes": 20,
+  "best_occasion": null,
+  "food_pairing": [],
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "cultural_note": "Thức uống tráng miệng người Hoa–Việt / Sài Gòn, cũng bán như thức uống ấm buổi sáng.",
+  "recipe_sources": [],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3."
+}

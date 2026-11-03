@@ -1,0 +1,58 @@
+{
+  "slug": "cold-brew",
+  "name_vi": "Cold brew (cà phê ủ lạnh)",
+  "drink_group": "ca-phe",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "glass": "cốc/ly",
+  "serving_ml": 350,
+  "technique": "pha espresso/phin",
+  "ice": "đá nếu lạnh",
+  "garnish": [],
+  "ingredients": [
+    {
+      "name": "cà phê xay thô",
+      "quantity": 80,
+      "unit": "g"
+    },
+    {
+      "name": "nước lạnh",
+      "quantity": 250,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Trộn cà phê xay thô + nước lạnh/lọc trong hũ kín (tỉ lệ ~1:10 tới 1:12 cho thức uống sẵn uống; 80–100 g cho 1 lít nước lạnh).",
+    "Ủ 12–24 giờ ở nhiệt độ phòng hoặc tủ lạnh (phổ biến nhất 16–20 giờ).",
+    "Lọc qua giấy/vải hai lần tới trong.",
+    "Phục vụ trên đá, pha loãng theo khẩu vị nếu là cô đặc."
+  ],
+  "sugar_added_g": 0,
+  "sugar_note": "Đường thường 0 g; ít ngọt = không đường; đường/sữa tùy chọn, thường không.",
+  "caffeine_level": "cao",
+  "alcohol": false,
+  "alcohol_pct_estimate": null,
+  "alcohol_note": "",
+  "safety_flags": [
+    "caffeine — khẩu phần cold brew lớn có thể mạnh dù vị mịn"
+  ],
+  "difficulty": "dễ",
+  "prep_minutes": 15,
+  "best_occasion": null,
+  "food_pairing": [],
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "cultural_note": "Phương pháp cà phê đặc sản nhập khẩu, nay là chuẩn ở quán cà phê đặc sản Việt cùng với phin.",
+  "recipe_sources": [],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3."
+}

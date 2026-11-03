@@ -1,0 +1,62 @@
+{
+  "slug": "tra-tac",
+  "name_vi": "Trà tắc",
+  "drink_group": "tra",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "glass": "ly cao",
+  "serving_ml": 350,
+  "technique": "hãm trà",
+  "ice": "đá",
+  "garnish": [
+    "nửa quả tắc"
+  ],
+  "ingredients": [
+    {
+      "name": "trà đen hãm",
+      "quantity": 150,
+      "unit": "ml"
+    },
+    {
+      "name": "tắc",
+      "quantity": 2,
+      "unit": "quả"
+    },
+    {
+      "name": "đường/siro đường",
+      "quantity": 25,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Hãm trà đen, để nguội.",
+    "Vắt tắc, khuấy siro vào trà.",
+    "Rót lên đá, trang trí nửa quả tắc."
+  ],
+  "sugar_added_g": 25,
+  "sugar_note": "Đường khoảng 20–30 ml siro (ghi 25); ít ngọt: 12 ml siro.",
+  "caffeine_level": "thap",
+  "alcohol": false,
+  "alcohol_pct_estimate": null,
+  "alcohol_note": "",
+  "safety_flags": [],
+  "difficulty": "dễ",
+  "prep_minutes": 10,
+  "best_occasion": null,
+  "food_pairing": [],
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "cultural_note": "Tắc là quả chua thơm đặc trưng miền Nam.",
+  "recipe_sources": [],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3."
+}

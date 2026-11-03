@@ -1,0 +1,70 @@
+{
+  "slug": "tra-sua-khoai-mon",
+  "name_vi": "Trà sữa khoai môn",
+  "drink_group": "tra",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "glass": "ly 500 ml",
+  "serving_ml": 350,
+  "technique": "hãm trà, lắc với đá",
+  "ice": "đá",
+  "garnish": [],
+  "ingredients": [
+    {
+      "name": "trà đen",
+      "quantity": 150,
+      "unit": "ml"
+    },
+    {
+      "name": "khoai môn",
+      "quantity": 100,
+      "unit": "g"
+    },
+    {
+      "name": "sữa tươi",
+      "quantity": 100,
+      "unit": "ml"
+    },
+    {
+      "name": "đường",
+      "quantity": 15,
+      "unit": "g"
+    }
+  ],
+  "recipe_steps": [
+    "Gọt, rửa, luộc/hấp khoai môn tới mềm, nghiền (hoặc dùng bột khoai môn 20–30 g).",
+    "Hãm trà.",
+    "Trộn/lắc khoai môn nghiền (hoặc bột) với trà nóng, sữa, đường tới mịn; đá, rót, thêm topping."
+  ],
+  "sugar_added_g": 15,
+  "sugar_note": "Đường khoảng 15–25 g; ít ngọt: giảm một nửa đường, giữ sữa.",
+  "caffeine_level": "trung-binh",
+  "alcohol": false,
+  "alcohol_pct_estimate": null,
+  "alcohol_note": "",
+  "safety_flags": [
+    "sữa",
+    "đường",
+    "khoai môn phải nấu chín hoàn toàn",
+    "sữa"
+  ],
+  "difficulty": "trung bình",
+  "prep_minutes": 20,
+  "best_occasion": null,
+  "food_pairing": [],
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "cultural_note": "Màu tím nhạt là dấu nhận biết; tươi vs bột là biến thể chính của quán.",
+  "recipe_sources": [],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3."
+}

@@ -1,0 +1,73 @@
+{
+  "slug": "tra-sua-duong-den",
+  "name_vi": "Trà sữa đường đen",
+  "drink_group": "tra",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "glass": "ly 500 ml",
+  "serving_ml": 350,
+  "technique": "hãm trà, lắc với đá",
+  "ice": "đá",
+  "garnish": [],
+  "ingredients": [
+    {
+      "name": "trà đen",
+      "quantity": 150,
+      "unit": "ml"
+    },
+    {
+      "name": "bột sữa",
+      "quantity": 40,
+      "unit": "g"
+    },
+    {
+      "name": "đường trắng",
+      "quantity": 10,
+      "unit": "g"
+    },
+    {
+      "name": "trân châu đã nấu",
+      "quantity": 50,
+      "unit": "g"
+    },
+    {
+      "name": "siro đường đen",
+      "quantity": 20,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Hãm trà, lọc; hòa bột sữa/đường vào trà nóng, làm nguội.",
+    "Luộc trân châu 20–25 phút, ủ 15–20 phút, xả lạnh, trộn siro đường đen 5–7 phút.",
+    "Quét siro quanh thành ly, cho trân châu, đá, rót trà sữa."
+  ],
+  "sugar_added_g": 25,
+  "sugar_note": "Đường khoảng 25–40 g kể cả siro; ít ngọt: giảm một nửa siro, dùng trà sữa không đường.",
+  "caffeine_level": "trung-binh",
+  "alcohol": false,
+  "alcohol_pct_estimate": null,
+  "alcohol_note": "",
+  "safety_flags": [
+    "sữa",
+    "đường"
+  ],
+  "difficulty": "trung bình",
+  "prep_minutes": 40,
+  "best_occasion": null,
+  "food_pairing": [],
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "cultural_note": "Phong cách 'vằn hổ' đường đen từ Đài Loan, rất phổ biến với giới trẻ Việt; vệt siro là một phần của cách phục vụ.",
+  "recipe_sources": [],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3."
+}

@@ -1,0 +1,69 @@
+{
+  "slug": "nuoc-nha-dam",
+  "name_vi": "Nước nha đam (đường phèn)",
+  "drink_group": "giai-khat",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "glass": "chai/ly",
+  "serving_ml": 350,
+  "technique": "nấu/xay",
+  "ice": "đá",
+  "garnish": [],
+  "ingredients": [
+    {
+      "name": "gel nha đam trong",
+      "quantity": 100,
+      "unit": "g"
+    },
+    {
+      "name": "đường phèn",
+      "quantity": 20,
+      "unit": "g"
+    },
+    {
+      "name": "lá dứa",
+      "quantity": 2,
+      "unit": "lá"
+    },
+    {
+      "name": "nước",
+      "quantity": 300,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Gọt nha đam, lấy gel trong, cắt hạt lựu.",
+    "Ngâm trong nước muối 10 phút, rửa nhiều lần; ngâm nhanh trong nước chanh 10 phút để hết nhớt/đắng; rửa lại.",
+    "Chần 30 giây, sốc trong nước đá 5 phút để giòn.",
+    "Nấu nước + đường phèn + lá dứa, thêm nha đam, đun nhỏ lửa 3 phút, để nguội.",
+    "Phục vụ lạnh trên đá."
+  ],
+  "sugar_added_g": 20,
+  "sugar_note": "Đường khoảng 20–30 g; ít ngọt: 10 g đường phèn.",
+  "caffeine_level": "khong",
+  "alcohol": false,
+  "alcohol_pct_estimate": null,
+  "alcohol_note": "",
+  "safety_flags": [
+    "lớp nhựa vàng (latex nha đam, lớp vàng dưới vỏ) phải được loại bỏ/rửa sạch hoàn toàn — không dùng nha đam chưa gọt; không trình bày như thuốc"
+  ],
+  "difficulty": "trung bình",
+  "prep_minutes": 30,
+  "best_occasion": null,
+  "food_pairing": [],
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "cultural_note": "Đồ giải khát Sài Gòn tương đối gần đây (không phải truyền thống cổ), nay bán đóng chai khắp nơi.",
+  "recipe_sources": [],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3."
+}

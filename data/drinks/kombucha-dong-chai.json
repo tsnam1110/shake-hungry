@@ -1,0 +1,47 @@
+{
+  "slug": "kombucha-dong-chai",
+  "name_vi": "Kombucha đóng chai",
+  "drink_group": "nuoc-dong-goi-khac",
+  "kind": "dong-goi",
+  "temperature": "lanh",
+  "glass": null,
+  "serving_ml": 330,
+  "technique": null,
+  "ice": null,
+  "garnish": [],
+  "ingredients": [],
+  "recipe_steps": [],
+  "sugar_added_g": null,
+  "sugar_note": "Bản ít ngọt ~4–12 g/330 ml; bản ngọt/có vị trái cây lên tới ~16 g — dao động lớn theo thương hiệu. Cờ đường cao chỉ với bản ngọt.",
+  "caffeine_level": "thap",
+  "alcohol": false,
+  "alcohol_pct_estimate": null,
+  "alcohol_note": "Không cồn theo dạng thường gặp (<0,5%), nhưng một số bản lên men mạnh có thể cao hơn — bắt buộc đọc nhãn; nếu nhãn ghi >0,5% thì gắn cờ 18+ theo quy định địa phương tại thời điểm seed. Không gắn cờ say mặc định cho dạng 0,0%.",
+  "safety_flags": [
+    "caffeine"
+  ],
+  "difficulty": null,
+  "prep_minutes": null,
+  "best_occasion": null,
+  "food_pairing": [],
+  "packaging": "Chai 250 ml / 330 ml / 500 ml.",
+  "sugar_range_g": {
+    "min": 4,
+    "max": 16
+  },
+  "alcohol_pct_range": null,
+  "label_note": "Đọc nhãn sản phẩm cụ thể khi seed — khoảng trong catalogue là khoảng theo loại, dao động theo thương hiệu, không phải bảng dinh dưỡng của một sản phẩm cụ thể.",
+  "brand_examples": [
+    "Star Kombucha"
+  ],
+  "cultural_note": "Thành phần điển hình: trà lên men (trà đen/xanh), đường (phần lớn đã lên men), men/vi khuẩn lên men, hương trái cây/thảo mộc. UI: xem nhãn sản phẩm cụ thể — đặc biệt kiểm tra cồn và đường vì kombucha biến động lớn theo cách lên men.",
+  "recipe_sources": [],
+  "mocktail_counterpart_slug": null,
+  "uncertain": true,
+  "uncertain_note": "ABV và đường dao động lớn theo cách lên men và thương hiệu; bắt buộc đọc nhãn.",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §6."
+}

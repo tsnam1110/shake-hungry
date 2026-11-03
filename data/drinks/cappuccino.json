@@ -1,0 +1,57 @@
+{
+  "slug": "cappuccino",
+  "name_vi": "Cappuccino",
+  "drink_group": "ca-phe",
+  "kind": "pha-che",
+  "temperature": "nong",
+  "glass": "cốc/ly",
+  "serving_ml": 150,
+  "technique": "pha espresso/phin",
+  "ice": "đá nếu lạnh",
+  "garnish": [],
+  "ingredients": [
+    {
+      "name": "espresso",
+      "quantity": 30,
+      "unit": "ml"
+    },
+    {
+      "name": "sữa hấp + bọt dày",
+      "quantity": null,
+      "unit": null
+    }
+  ],
+  "recipe_steps": [
+    "Pha espresso.",
+    "Hấp sữa tới bọt dày, xốp (nhiều bọt hơn latte).",
+    "Rót sữa, múc lớp bọt 2–3 cm, rắc cacao."
+  ],
+  "sugar_added_g": 0,
+  "sugar_note": "Đường thường 0 g; ít ngọt = không đường.",
+  "caffeine_level": "cao",
+  "alcohol": false,
+  "alcohol_pct_estimate": null,
+  "alcohol_note": "",
+  "safety_flags": [
+    "sữa"
+  ],
+  "difficulty": "trung bình",
+  "prep_minutes": 5,
+  "best_occasion": null,
+  "food_pairing": [],
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "cultural_note": "",
+  "recipe_sources": [],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3."
+}

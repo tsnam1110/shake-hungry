@@ -1,0 +1,58 @@
+{
+  "slug": "nuoc-chanh-day",
+  "name_vi": "Nước chanh dây",
+  "drink_group": "giai-khat",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "glass": "ly cao",
+  "serving_ml": 350,
+  "technique": "khuấy",
+  "ice": "đá",
+  "garnish": [],
+  "ingredients": [
+    {
+      "name": "chanh dây",
+      "quantity": 2,
+      "unit": "quả"
+    },
+    {
+      "name": "đường",
+      "quantity": 20,
+      "unit": "g"
+    },
+    {
+      "name": "nước lọc",
+      "quantity": 150,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Bổ đôi, nạo ruột, rây lọc hạt (giữ một ít hạt nếu thích), khuấy đường + nước, rót lên đá."
+  ],
+  "sugar_added_g": 20,
+  "sugar_note": "Đường ~20 g; ít ngọt: 10 g.",
+  "caffeine_level": "khong",
+  "alcohol": false,
+  "alcohol_pct_estimate": null,
+  "alcohol_note": "",
+  "safety_flags": [],
+  "difficulty": "dễ",
+  "prep_minutes": 10,
+  "best_occasion": null,
+  "food_pairing": [],
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "cultural_note": "",
+  "recipe_sources": [],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3."
+}

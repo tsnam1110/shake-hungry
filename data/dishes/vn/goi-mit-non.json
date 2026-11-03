@@ -156,7 +156,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. GỘP BIẾN THỂ 2026-10-31 (tầm soát dữ liệu + quyết định của chủ dự án): món này là món chuẩn của cặp gỏi/nộm mít non; nom-mit-non chuyển thành biến thể (parent_dish_slug trỏ về món này). Hai bản cùng lõi mít non 150 g và cùng cấu trúc trộn chua ngọt — theo phép thử EDITORIAL-GUIDE §3 là một món, không phải hai. Tên en cũ 'southern style' là SAI miền (đây là món miền Trung, đặc sản Quảng Nam) — đã sửa; region thống nhất về vn-quang-nam. [LV2-012 đợt vét] Đạt Mức 2: đã đối chiếu 3 họ nguồn độc lập đã mở đọc thật (Điện Máy XANH, Bếp Xưa, BlueStone). Cả 3 họ đồng thuận cấu trúc mít non luộc xé sợi trộn đạm luộc (tai heo và/hoặc tôm - thịt) với nước mắm chua ngọt, rau răm, lạc rang, hành phi. Định lượng file quy về 1 khẩu phần (mít 150g, tai heo 60g, tôm 40g) nằm trong khoảng đồng thuận nên giữ nguyên toàn bộ dòng, không sửa/thêm/bớt.",
+  "import_note": "Soạn nháp đợt mở rộng DISH-004 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. GỘP BIẾN THỂ 2026-10-31 (tầm soát dữ liệu + quyết định của chủ dự án): món này là món chuẩn của cặp gỏi/nộm mít non; nom-mit-non chuyển thành biến thể (parent_dish_slug trỏ về món này). Hai bản cùng lõi mít non 150 g và cùng cấu trúc trộn chua ngọt — theo phép thử EDITORIAL-GUIDE §3 là một món, không phải hai. Tên en cũ 'southern style' là SAI miền (đây là món miền Trung, đặc sản Quảng Nam) — đã sửa; region thống nhất về vn-quang-nam. [LV2-012 đợt vét] Đạt Mức 2: đã đối chiếu 3 họ nguồn độc lập đã mở đọc thật (Điện Máy XANH, Bếp Xưa, BlueStone). Cả 3 họ đồng thuận cấu trúc mít non luộc xé sợi trộn đạm luộc (tai heo và/hoặc tôm - thịt) với nước mắm chua ngọt, rau răm, lạc rang, hành phi. Định lượng file quy về 1 khẩu phần (mít 150g, tai heo 60g, tôm 40g) nằm trong khoảng đồng thuận nên giữ nguyên toàn bộ dòng, không sửa/thêm/bớt. ĐÍNH CHÍNH 2026-11-03 (chủ dự án duyệt gộp): file nom-mit-non đã xoá, gộp vào món này. Biến thể đã gộp (khẩu phần 260 g): đạm là thịt lợn nạc vai 60 g thay tai heo 60 g, tôm thẻ 50 g, ăn kèm bánh tráng 20 g, thêm vừng rang 5 g và húng quế 5 g; lõi mít non 150 g và cấu trúc trộn chua ngọt giữ nguyên. Tên \"nộm mít non\" vẫn là alias của món này (ghi chú \"miền Bắc\" chỉ là tên gọi vùng, không phải công thức riêng).",
   "cultural_note": {
     "text": "Gỏi mít non là món ăn quen thuộc của người dân miền Trung, gắn liền với cuộc sống nghèo khó thời xưa ở quê xứ Quảng: bản truyền thống chỉ có mít non, lạc và các loại rau thơm hái quanh vườn. Ngày nay món gỏi được biến tấu thêm tôm, thịt, mực hay đậu khuôn thành đặc sản, nhưng cách ăn vẫn giữ nếp cũ — dùng bánh tráng nướng xúc ăn, chấm nước mắm ớt thật cay. Với những người con miền Trung xa xứ, đĩa gỏi mít non là một trong những món dân dã nhất định phải được người thân làm cho khi có dịp về thăm quê nhà.",
     "sources": [
@@ -169,10 +169,10 @@
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
-  "needs_review": true,
-  "reviewed_by": null,
-  "reviewed_at": null,
-  "review_note": null,
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
   "tags": [
     "dac-san:quang-nam",
     "loai:goi-nom"

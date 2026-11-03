@@ -1,1 +1,34 @@
-{"category":"food_food","condition_vi":"Không cần kiêng: cua + lựu nằm trong 14 cặp 'tương khắc' lưu truyền rộng nhất được thí nghiệm Trịnh Tập (Đại học Nam Kinh, 1935) cho người và động vật ăn thử trực tiếp — mọi chỉ số đều bình thường sau khi ăn.","evidence_class":"E3","mechanism_vi":"Không có cơ chế độc tính nào được ghi nhận; kết quả thực nghiệm năm 1935 trên chính cặp này là âm tính.","needs_review":true,"science_status":"refuted","side_a":{"label_vi":"Cua (cua biển, cua đồng)","members":["cua-bien","cua-dong"],"ref":"cua","type":"food_group"},"side_b":{"ref":"luu","type":"fruit"},"slug":"cua--luu","source":"curated","sources":[{"accessed":"2026-11-02","note":"Tổng hợp về thí nghiệm Trịnh Tập 1935 và các đợt kiểm chứng sau","url":"https://matters.town/a/xtmosm556a80?locale=en"}],"traditional_source":{"quote":null,"text":"Danh sách thực phẩm tương khắc truyền miệng — một trong 14 cặp phổ biến nhất được chọn thử nghiệm năm 1935"}}
+{
+  "category": "food_food",
+  "condition_vi": "Không cần kiêng: cua + lựu nằm trong 14 cặp 'tương khắc' lưu truyền rộng nhất được thí nghiệm Trịnh Tập (Đại học Nam Kinh, 1935) cho người và động vật ăn thử trực tiếp — mọi chỉ số đều bình thường sau khi ăn.",
+  "evidence_class": "E3",
+  "mechanism_vi": "Không có cơ chế độc tính nào được ghi nhận; kết quả thực nghiệm năm 1935 trên chính cặp này là âm tính.",
+  "needs_review": false,
+  "science_status": "refuted",
+  "side_a": {
+    "label_vi": "Cua (cua biển, cua đồng)",
+    "members": [
+      "cua-bien",
+      "cua-dong"
+    ],
+    "ref": "cua",
+    "type": "food_group"
+  },
+  "side_b": {
+    "ref": "luu",
+    "type": "fruit"
+  },
+  "slug": "cua--luu",
+  "source": "curated",
+  "sources": [
+    {
+      "accessed": "2026-11-02",
+      "note": "Tổng hợp về thí nghiệm Trịnh Tập 1935 và các đợt kiểm chứng sau",
+      "url": "https://matters.town/a/xtmosm556a80?locale=en"
+    }
+  ],
+  "traditional_source": {
+    "quote": null,
+    "text": "Danh sách thực phẩm tương khắc truyền miệng — một trong 14 cặp phổ biến nhất được chọn thử nghiệm năm 1935"
+  }
+}

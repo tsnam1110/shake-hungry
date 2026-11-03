@@ -1,0 +1,62 @@
+{
+  "slug": "mimosa",
+  "name_vi": "Mimosa / Buck's Fizz",
+  "drink_group": "cocktail-co-con",
+  "glass": "Champagne flute",
+  "serving_ml": 150,
+  "technique": "pha-truc-tiep-build",
+  "ice": "không đá",
+  "garnish": [
+    "vỏ cam tùy chọn"
+  ],
+  "ingredients": [
+    {
+      "name": "nước cam tươi",
+      "quantity": 75,
+      "unit": "ml"
+    },
+    {
+      "name": "Prosecco",
+      "quantity": 75,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Rót nước cam vào flute.",
+    "Rót nhẹ vang sủi.",
+    "Khuấy nhẹ một lần, vỏ cam tùy chọn."
+  ],
+  "sugar_added_g": 0,
+  "sugar_note": "Đường thêm vào 0 g. Danh sách IBA / Buck's Fizz cũ cũng ghi 75/75 hoặc 100/50 nước ép/vang — khoảng đã ghi, 75/75 là chuẩn catalogue.",
+  "caffeine_level": "khong",
+  "alcohol": true,
+  "alcohol_pct_estimate": 5,
+  "alcohol_note": "Ước tính trước pha loãng khoảng 5–6% (ghi giá trị thấp nhất).",
+  "safety_flags": [
+    "18+",
+    "khong-lai-xe"
+  ],
+  "difficulty": "Dễ",
+  "prep_minutes": null,
+  "best_occasion": "brunch",
+  "food_pairing": [],
+  "cultural_note": "IBA Contemporary Classics; còn gọi là Buck's Fizz trong ghi chú IBA. Bản phục vụ brunch / quầy bar bữa sáng khách sạn phổ biến ở Việt.",
+  "recipe_sources": [
+    "IBA 2020"
+  ],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5."
+}

@@ -1,0 +1,62 @@
+{
+  "slug": "tra-dau",
+  "name_vi": "Trà dâu",
+  "drink_group": "tra",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "glass": "ly 500 ml",
+  "serving_ml": 350,
+  "technique": "hãm trà, lắc",
+  "ice": "đá",
+  "garnish": [],
+  "ingredients": [
+    {
+      "name": "trà đen/xanh",
+      "quantity": 150,
+      "unit": "ml"
+    },
+    {
+      "name": "siro dâu",
+      "quantity": 20,
+      "unit": "ml"
+    },
+    {
+      "name": "siro đường",
+      "quantity": 10,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Hãm trà.",
+    "Lắc trà + siro (hoặc dâu dầm) + đá.",
+    "Trang trí dâu + bạc hà."
+  ],
+  "sugar_added_g": 20,
+  "sugar_note": "Đường khoảng 20–30 g (siro), khoảng 10–15 g (tươi); ít ngọt: dâu tươi, giảm một nửa siro.",
+  "caffeine_level": "thap",
+  "alcohol": false,
+  "alcohol_pct_estimate": null,
+  "alcohol_note": "",
+  "safety_flags": [
+    "rửa trái cây; bản siro ngọt hơn bản trái cây tươi"
+  ],
+  "difficulty": "dễ",
+  "prep_minutes": 10,
+  "best_occasion": null,
+  "food_pairing": [],
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "cultural_note": "",
+  "recipe_sources": [],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3."
+}

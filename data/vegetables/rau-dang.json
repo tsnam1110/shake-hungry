@@ -1,0 +1,54 @@
+{
+  "slug": "rau-dang",
+  "name_vi": "Rau đắng đất",
+  "ingredient_slug": "rau-dang",
+  "group": "rau-la",
+  "supply": "trong-nuoc",
+  "state": "tuoi",
+  "availability_months_by_region": {
+    "bac": null,
+    "trung": null,
+    "nam": [
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "region_notes": {
+    "bac": "Hàng miền Tây vận chuyển mùa khô — tháng để trống.",
+    "trung": "Hàng miền Tây vận chuyển mùa khô — tháng để trống.",
+    "nam": ""
+  },
+  "main_season_months": [
+    12,
+    1,
+    2,
+    3
+  ],
+  "best_months": [
+    12,
+    1,
+    2,
+    3
+  ],
+  "kcal_per_100g": 52,
+  "kcal_confidence": "low",
+  "aliases": [
+    "rau đắng lá vòng"
+  ],
+  "selection_note": "Cây non, lá thuôn, xanh, không già, không úa.",
+  "storage_note": "Đặc biệt ngắn — héo chỉ sau vài giờ dù ngâm nước; dùng ngay trong ngày, không trữ.",
+  "cooking_note": "Cháo cá lóc rau đắng đất, ăn kèm lẩu mắm/bún mắm, nấu canh cá đồng.",
+  "safety_note": "Chỉ lưu ý vị đắng, mát theo dân gian — không ghi công dụng chữa bệnh. Khác rau đắng biển (Bacopa) và biển súc.",
+  "uncertain": true,
+  "uncertain_note": "UNCERTAIN về đầu–cuối tháng vì các nguồn dùng lẫn âm/dương lịch và mùa khô thay đổi theo năm; Bắc/Trung là hàng miền Tây vận chuyển mùa khô.",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source": "catalogue-v2",
+  "source_note": "Catalogue rau theo mùa v2 (2026-11-03), phần B — rau vùng hẹp / theo vụ đặc thù. Tháng là tháng có bán trên thị trường; miền ghi null là chưa có lịch chợ riêng, không gán tháng."
+}

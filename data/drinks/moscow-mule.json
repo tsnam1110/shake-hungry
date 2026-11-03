@@ -1,0 +1,65 @@
+{
+  "slug": "moscow-mule",
+  "name_vi": "Moscow Mule",
+  "drink_group": "cocktail-co-con",
+  "glass": "copper mug (hoặc highball nếu không có)",
+  "serving_ml": null,
+  "technique": "pha-truc-tiep-build",
+  "ice": "đá viên",
+  "garnish": [
+    "lát chanh"
+  ],
+  "ingredients": [
+    {
+      "name": "vodka",
+      "quantity": 45,
+      "unit": "ml"
+    },
+    {
+      "name": "ginger beer",
+      "quantity": 120,
+      "unit": "ml"
+    },
+    {
+      "name": "nước cốt chanh tươi",
+      "quantity": 5,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Đá vào mug, rót vodka + chanh, top ginger beer, khuấy nhẹ."
+  ],
+  "sugar_added_g": 12,
+  "sugar_note": "Đường từ ginger beer khoảng 12–15 g (ghi giá trị thấp nhất). Ít ngọt: ginger beer light.",
+  "caffeine_level": "khong",
+  "alcohol": true,
+  "alcohol_pct_estimate": 13,
+  "alcohol_note": "Ước tính trước pha loãng ~13% trước ginger beer.",
+  "safety_flags": [
+    "18+",
+    "khong-lai-xe"
+  ],
+  "difficulty": "Dễ",
+  "prep_minutes": null,
+  "best_occasion": null,
+  "food_pairing": [],
+  "cultural_note": "Ginger beer là nước có ga vị gừng, không phải bia — UI phải ghi chú này.",
+  "recipe_sources": [
+    "IBA"
+  ],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5."
+}

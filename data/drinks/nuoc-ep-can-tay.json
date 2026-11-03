@@ -1,0 +1,50 @@
+{
+  "slug": "nuoc-ep-can-tay",
+  "name_vi": "Nước ép cần tây",
+  "drink_group": "nuoc-ep",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "glass": "ly 300–350 ml",
+  "serving_ml": 300,
+  "technique": "ép",
+  "ice": "đá tùy chọn",
+  "garnish": [],
+  "ingredients": [
+    {
+      "name": "cần tây",
+      "quantity": 200,
+      "unit": "g"
+    }
+  ],
+  "recipe_steps": [
+    "Rửa cọng thật kỹ (cát ở gốc), cắt ngắn (tránh tắc máy ép), ép xen kẽ với táo; phục vụ ngay."
+  ],
+  "sugar_added_g": 0,
+  "sugar_note": "Đường 0 g ở bản nguyên chất, khoảng 0–10 g ở bản pha; táo 1 quả và/hoặc chanh 1/2 quả là phần thêm phổ biến nhất để 'uống được'.",
+  "caffeine_level": "khong",
+  "alcohol": false,
+  "alcohol_pct_estimate": null,
+  "alcohol_note": "",
+  "safety_flags": [
+    "dị ứng cần tây; vị mạnh — cần tây nguyên chất là vị quen dần, bản pha táo là bản phục vụ phổ biến ở quán"
+  ],
+  "difficulty": "dễ",
+  "prep_minutes": 10,
+  "best_occasion": null,
+  "food_pairing": [],
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "cultural_note": "",
+  "recipe_sources": [],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3."
+}

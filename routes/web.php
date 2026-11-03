@@ -65,6 +65,17 @@ Route::get('/nguyen-lieu/{slug}', fn () => view('ingredient'));
 Route::get('/nhat-ky', fn () => view('diary'))->middleware('auth');
 Route::get('/hoa-qua', fn () => view('fruits'));
 Route::get('/hoa-qua/{slug}', fn () => view('fruit'));
+Route::get('/rau-mua', fn () => view('vegetables'));
+Route::get('/rau-mua/{slug}', fn () => view('vegetable'));
+Route::get('/do-uong', fn () => view('drinks'));
+Route::get('/do-uong/{slug}', fn () => view('drink'));
+// Bảng nguyên liệu lưu ý — trang riêng, liệt kê toàn bộ cặp kết hợp (kể cả
+// cặp thuốc × thực phẩm và cặp có phía là đồ uống), dùng CombinationDisplay
+// + DISCLAIMER bắt buộc. Lớp THÔNG TIN thuần, không chặn hay lọc Lắc.
+Route::get('/ket-hop-can-luu-y', fn () => view('combinations', [
+    'combinations' => \App\Combinations\CombinationDisplay::all(),
+    'disclaimer' => \App\Combinations\CombinationDisplay::DISCLAIMER,
+]));
 
 Route::prefix('api')->group(function () {
     Route::post('/register', [\App\Http\Controllers\PublicWeb\UserAuthController::class, 'register']);
@@ -100,6 +111,10 @@ Route::prefix('api')->group(function () {
     Route::get('/dishes/{dish:slug}', [\App\Http\Controllers\PublicWeb\CatalogController::class, 'show']);
     Route::get('/fruits', [\App\Http\Controllers\PublicWeb\FruitController::class, 'index']);
     Route::get('/fruits/{fruit:slug}', [\App\Http\Controllers\PublicWeb\FruitController::class, 'show']);
+    Route::get('/vegetables', [\App\Http\Controllers\PublicWeb\VegetableController::class, 'index']);
+    Route::get('/vegetables/{vegetable:slug}', [\App\Http\Controllers\PublicWeb\VegetableController::class, 'show']);
+    Route::get('/drinks', [\App\Http\Controllers\PublicWeb\DrinkController::class, 'index']);
+    Route::get('/drinks/{drink:slug}', [\App\Http\Controllers\PublicWeb\DrinkController::class, 'show']);
     Route::post('/shake', [\App\Http\Controllers\PublicWeb\CatalogController::class, 'shake']);
     Route::post('/shake/tray-swap', [\App\Http\Controllers\PublicWeb\CatalogController::class, 'traySwapRandom']);
     Route::get('/shake/tray-candidates', [\App\Http\Controllers\PublicWeb\CatalogController::class, 'traySwapCandidates']);

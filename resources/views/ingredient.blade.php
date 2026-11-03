@@ -15,7 +15,7 @@ const slug = location.pathname.split('/').filter(Boolean).pop();
 function esc(s) { return (s ?? '').toString().replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
 const catLabel = { 'thit': 'Thịt', 'thuy-san': 'Thuỷ sản', 'rau-cu': 'Rau củ', 'rau-gia-vi': 'Rau gia vị', 'trai-cay': 'Trái cây', 'tinh-bot': 'Tinh bột', 'gia-vi': 'Gia vị', 'dau-mo': 'Dầu mỡ', 'khac': 'Khác' };
 const facetLabel = { origin: 'Nguồn gốc', state: 'Trạng thái', allergen: 'Dị ứng', diet: 'Chế độ ăn', protein: 'Nhóm đạm' };
-const fctLabel = { vn_fct_2007: 'Bảng TPTP Việt Nam', usda_sr_legacy: 'USDA SR Legacy', usda_foundation: 'USDA Foundation', usda_fndds: 'USDA FNDDS', mext_japan: 'Bảng TPTP Nhật Bản (MEXT)', cofid_uk: 'Bảng TPTP Anh (CoFID)', off: 'Open Food Facts', label_vn: 'Nhãn sản phẩm Việt Nam' };
+const fctLabel = { vn_fct_2007: 'Bảng TPTP Việt Nam', usda_sr_legacy: 'USDA SR Legacy', usda_foundation: 'USDA Foundation', usda_fndds: 'USDA FNDDS', mext_japan: 'Bảng TPTP Nhật Bản (MEXT)', cofid_uk: 'Bảng TPTP Anh (CoFID)', off: 'Open Food Facts', proxy: 'Proxy — chưa kiểm định', label_vn: 'Nhãn sản phẩm Việt Nam' };
 const macroTile = (v, u, label) => v == null ? '' : `<div class="ld-macro"><div class="v ld-tnum">${(+v).toLocaleString('vi-VN', { maximumFractionDigits: 1 })}${u}</div><div class="k">${label}</div></div>`;
 
 fetch('/api/ingredients/' + slug).then(r => { if (!r.ok) throw new Error('404'); return r.json(); }).then(({ ingredient: i, fruit_slug, dishes }) => {

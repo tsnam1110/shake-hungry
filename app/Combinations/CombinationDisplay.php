@@ -22,6 +22,19 @@ final class CombinationDisplay
     /** Dòng miễn trừ cố định — bắt buộc ở mọi nơi hiển thị (§7.5 mục 2). */
     public const DISCLAIMER = 'Thông tin tham khảo về an toàn thực phẩm và văn hoá ẩm thực; không thay thế tư vấn y tế. Nếu đang dùng thuốc, hãy hỏi bác sĩ hoặc dược sĩ của bạn.';
 
+    /**
+     * Toàn bộ cặp trong kho, để trang riêng "Kết hợp cần lưu ý" liệt kê.
+     * Vẫn là lớp THÔNG TIN thuần: không lọc, không chặn, không chấm điểm.
+     * Cặp thuốc × thực phẩm cũng nằm trong danh sách này (nhãn rõ là thuốc),
+     * vì trang riêng là bảng tra cứu, không phải gợi ý món.
+     */
+    public static function all(): array
+    {
+        return Combination::query()->orderBy('slug')->get()
+            ->map(fn (Combination $c) => self::format($c, null))
+            ->values()->all();
+    }
+
     /** Các cặp chạm tới một slug nguyên liệu/quả (hiển thị hai chiều). */
     public static function forItem(string $slug): array
     {

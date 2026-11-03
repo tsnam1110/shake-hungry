@@ -1,0 +1,69 @@
+{
+  "slug": "tra-sua-thai-xanh",
+  "name_vi": "Trà sữa Thái xanh",
+  "drink_group": "tra",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "glass": "ly 500 ml",
+  "serving_ml": 350,
+  "technique": "hãm trà, lắc với đá",
+  "ice": "đá",
+  "garnish": [],
+  "ingredients": [
+    {
+      "name": "trà Thái xanh hãm",
+      "quantity": 80,
+      "unit": "ml"
+    },
+    {
+      "name": "sữa đặc",
+      "quantity": 20,
+      "unit": "ml"
+    },
+    {
+      "name": "kem/creamer",
+      "quantity": 20,
+      "unit": "ml"
+    },
+    {
+      "name": "đường",
+      "quantity": 10,
+      "unit": "g"
+    }
+  ],
+  "recipe_steps": [
+    "Hãm trà Thái, lọc.",
+    "Khuấy sữa đặc + kem + đường khi còn nóng.",
+    "Để nguội bớt, đá, thêm thạch/trân châu."
+  ],
+  "sugar_added_g": 20,
+  "sugar_note": "Đường khoảng 20–30 g; ít ngọt: sữa đặc 10 ml, không thêm đường.",
+  "caffeine_level": "trung-binh",
+  "alcohol": false,
+  "alcohol_pct_estimate": null,
+  "alcohol_note": "",
+  "safety_flags": [
+    "sữa",
+    "đường",
+    "sữa; trà Thái pha sẵn có thể chứa phẩm màu — kiểm tra bao bì"
+  ],
+  "difficulty": "dễ",
+  "prep_minutes": 10,
+  "best_occasion": null,
+  "food_pairing": [],
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "cultural_note": "Trà Thái nhập khẩu, bán rộng rãi ở Việt Nam; bản xanh thảo mộc/hoa hơn bản đỏ.",
+  "recipe_sources": [],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3."
+}

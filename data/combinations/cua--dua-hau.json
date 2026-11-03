@@ -1,1 +1,34 @@
-{"category":"food_food","condition_vi":"Chưa có nghiên cứu nào kiểm chứng cặp này; không có chất phản ứng chung nào được nêu trong nguồn đáng tin. Đây là kiêng kỵ suy ra từ tính hàn của từng món riêng lẻ, không phải tương tác đã được quan sát.","evidence_class":"E3","mechanism_vi":"Không có cơ chế sinh hoá nào được xác lập — lập luận duy nhất là 'cả hai đều tính hàn' trong khung tính vị truyền thống.","needs_review":true,"science_status":"unproven","side_a":{"label_vi":"Cua (cua biển, cua đồng)","members":["cua-bien","cua-dong"],"ref":"cua","type":"food_group"},"side_b":{"ref":"dua-hau","type":"fruit"},"slug":"cua--dua-hau","source":"curated","sources":[{"accessed":"2026-11-02","note":"Tổng hợp kiểm chứng các cặp tương khắc dân gian và thí nghiệm 1935","url":"https://matters.town/a/xtmosm556a80?locale=en"}],"traditional_source":{"quote":null,"text":"Kiêng kỵ dân gian suy từ tính vị (cua và dưa hấu đều được gán tính hàn)"}}
+{
+  "category": "food_food",
+  "condition_vi": "Chưa có nghiên cứu nào kiểm chứng cặp này; không có chất phản ứng chung nào được nêu trong nguồn đáng tin. Đây là kiêng kỵ suy ra từ tính hàn của từng món riêng lẻ, không phải tương tác đã được quan sát.",
+  "evidence_class": "E3",
+  "mechanism_vi": "Không có cơ chế sinh hoá nào được xác lập — lập luận duy nhất là 'cả hai đều tính hàn' trong khung tính vị truyền thống.",
+  "needs_review": false,
+  "science_status": "unproven",
+  "side_a": {
+    "label_vi": "Cua (cua biển, cua đồng)",
+    "members": [
+      "cua-bien",
+      "cua-dong"
+    ],
+    "ref": "cua",
+    "type": "food_group"
+  },
+  "side_b": {
+    "ref": "dua-hau",
+    "type": "fruit"
+  },
+  "slug": "cua--dua-hau",
+  "source": "curated",
+  "sources": [
+    {
+      "accessed": "2026-11-02",
+      "note": "Tổng hợp kiểm chứng các cặp tương khắc dân gian và thí nghiệm 1935",
+      "url": "https://matters.town/a/xtmosm556a80?locale=en"
+    }
+  ],
+  "traditional_source": {
+    "quote": null,
+    "text": "Kiêng kỵ dân gian suy từ tính vị (cua và dưa hấu đều được gán tính hàn)"
+  }
+}

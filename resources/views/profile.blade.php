@@ -34,6 +34,20 @@
     <p class="ld-note" style="margin-top:16px">Thông tin hồ sơ (năm sinh, giới tính, chiều cao, cân nặng) chỉ dùng để tính nhu cầu năng lượng và cá nhân hoá gợi ý cho chính bạn — cách chúng tôi xử lý dữ liệu được nêu rõ trong <a href="/chinh-sach-bao-mat" style="color:var(--color-link)">Chính sách bảo mật</a>. Bạn luôn có thể dùng Lắc Đói mà không cần tài khoản.</p>
 @endguest
 
+{{-- Cài đặt lắc món — dùng chung cho khách và tài khoản (SHAKE-DEVICE-001).
+     Không cần đăng nhập: lựa chọn lưu trên thiết bị (localStorage, cùng khoá
+     'lacdoi_shake_gesture' với trang Lắc món), mặc định luôn bật. --}}
+<section>
+    <h2 class="ld-section-title">Cài đặt lắc món</h2>
+    <div class="ld-card">
+        <div class="ld-row" style="padding:0">
+            <span class="grow">Lắc máy để lắc món <span style="display:block;font-weight:400;color:var(--color-faint);font-size:13px;margin-top:1px">Bật lên rồi lắc nhẹ điện thoại — trang tự lắc một món cho bạn, khỏi bấm nút</span></span>
+            <button class="ld-switch" type="button" role="switch" aria-checked="true" id="profile-shake-gesture" aria-label="Lắc máy để lắc món"></button>
+        </div>
+        <p class="ld-note" style="margin-top:10px">Cài đặt này lưu trên thiết bị của bạn, không cần đăng nhập, và áp dụng ngay ở trang Lắc món. Mặc định luôn bật — tắt đi nếu bạn chỉ muốn bấm nút. Trên iPhone, lần đầu dùng cần cho phép cảm biến chuyển động ở trang Lắc món.</p>
+    </div>
+</section>
+
 @auth
     <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:14px">
         <div>
@@ -377,4 +391,25 @@ document.addEventListener('feedback-sent', () => loadFeedback());
 init().then(() => { loadStats(); loadFavorites(); loadFeedback(); });
 </script>
 @endauth
+@endpush
+
+{{-- Công tắc lắc máy ở Hồ sơ — chạy cho cả khách lẫn tài khoản (SHAKE-DEVICE-001).
+     Chỉ lưu lựa chọn vào localStorage, không gọi API, không cần đăng nhập. --}}
+@push('scripts')
+<script>
+(function () {
+    const btn = document.getElementById('profile-shake-gesture');
+    if (!btn) return;
+    const KEY = 'lacdoi_shake_gesture';
+    // Mặc định luôn bật: chỉ khi đã lưu '0' mới là tắt.
+    const on = localStorage.getItem(KEY) !== '0';
+    btn.setAttribute('aria-checked', on ? 'true' : 'false');
+    btn.addEventListener('click', () => {
+        const next = btn.getAttribute('aria-checked') !== 'true';
+        btn.setAttribute('aria-checked', next ? 'true' : 'false');
+        localStorage.setItem(KEY, next ? '1' : '0');
+        if (window.ldToast) ldToast(next ? 'Đã bật: lắc nhẹ máy để lắc món' : 'Đã tắt lắc máy — bấm nút để lắc món');
+    });
+})();
+</script>
 @endpush

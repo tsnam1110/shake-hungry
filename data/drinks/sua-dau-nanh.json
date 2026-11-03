@@ -1,0 +1,60 @@
+{
+  "slug": "sua-dau-nanh",
+  "name_vi": "Sữa đậu nành",
+  "drink_group": "giai-khat",
+  "kind": "pha-che",
+  "temperature": "ca-hai",
+  "glass": "ly/cốc",
+  "serving_ml": 250,
+  "technique": "xay, lọc, nấu",
+  "ice": "đá nếu lạnh",
+  "garnish": [],
+  "ingredients": [
+    {
+      "name": "sữa đậu nành",
+      "quantity": 250,
+      "unit": "ml"
+    },
+    {
+      "name": "đường",
+      "quantity": 15,
+      "unit": "g"
+    }
+  ],
+  "recipe_steps": [
+    "Ngâm đậu 6–8 giờ (mẻ lớn: đậu nành khô 100 g → ~800 ml sữa), xay với nước, lọc bã.",
+    "Nấu sữa lửa nhỏ với lá dứa, khuấy chống trào/khê.",
+    "Thêm đường khi còn nóng, uống nóng hoặc ướp lạnh."
+  ],
+  "sugar_added_g": 15,
+  "sugar_note": "Đường khoảng 10–20 g (ghi 15 g); ít ngọt: không đường.",
+  "caffeine_level": "khong",
+  "alcohol": false,
+  "alcohol_pct_estimate": null,
+  "alcohol_note": "",
+  "safety_flags": [
+    "dị ứng đậu nành"
+  ],
+  "difficulty": "trung bình",
+  "prep_minutes": 15,
+  "best_occasion": null,
+  "food_pairing": [
+    "bánh tiêu",
+    "giò cháo quẩy"
+  ],
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "cultural_note": "Sữa đậu nành nóng buổi sáng, xe sữa đậu nành vỉa hè, ăn kèm bánh tiêu/giò cháo quẩy.",
+  "recipe_sources": [],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3."
+}

@@ -1,0 +1,73 @@
+{
+  "slug": "frozen-margarita",
+  "name_vi": "Frozen Margarita",
+  "drink_group": "cocktail-co-con",
+  "glass": "margarita",
+  "serving_ml": 180,
+  "technique": "xay",
+  "ice": "đá xay",
+  "garnish": [],
+  "ingredients": [
+    {
+      "name": "tequila blanco",
+      "quantity": 50,
+      "unit": "ml"
+    },
+    {
+      "name": "triple sec",
+      "quantity": 20,
+      "unit": "ml"
+    },
+    {
+      "name": "nước cốt chanh tươi",
+      "quantity": 15,
+      "unit": "ml"
+    },
+    {
+      "name": "siro đường/agave",
+      "quantity": 0,
+      "unit": "ml"
+    },
+    {
+      "name": "đá để xay",
+      "quantity": 150,
+      "unit": "g"
+    }
+  ],
+  "recipe_steps": [
+    "Viền muối nếu muốn; xay tequila, triple sec, chanh, siro, đá tới slush; rót không lọc."
+  ],
+  "sugar_added_g": 0,
+  "sugar_note": "Đường thêm vào khoảng 0–6 g, chỉ nếu thêm siro (siro tùy chọn 0–10 ml, ghi giá trị thấp nhất). Ít ngọt: bỏ siro.",
+  "caffeine_level": "khong",
+  "alcohol": true,
+  "alcohol_pct_estimate": 14,
+  "alcohol_note": "Ước tính trước pha loãng khoảng 14–18% (ghi giá trị thấp nhất; trước khi đá tan hoàn toàn).",
+  "safety_flags": [
+    "18+",
+    "khong-lai-xe"
+  ],
+  "difficulty": "Dễ",
+  "prep_minutes": null,
+  "best_occasion": null,
+  "food_pairing": [],
+  "cultural_note": "Phương pháp IBA Margarita là lắc; đông đá là bản xay của cùng spec, chuẩn ở menu khu nghỉ dưỡng / nhà hàng Mexico Việt.",
+  "recipe_sources": [
+    "Nền IBA Margarita"
+  ],
+  "mocktail_counterpart_slug": "virgin-margarita",
+  "uncertain": false,
+  "uncertain_note": "",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5."
+}

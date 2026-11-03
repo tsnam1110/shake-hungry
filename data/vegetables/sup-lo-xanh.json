@@ -1,0 +1,74 @@
+{
+  "slug": "sup-lo-xanh",
+  "name_vi": "Súp lơ xanh / bông cải xanh",
+  "ingredient_slug": "sup-lo-xanh",
+  "group": "rau-cu",
+  "supply": "trong-nuoc",
+  "state": "tuoi",
+  "availability_months_by_region": {
+    "bac": [
+      11,
+      12,
+      1,
+      2,
+      3
+    ],
+    "trung": [
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ],
+    "nam": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "region_notes": {
+    "bac": "",
+    "trung": "",
+    "nam": "Hàng Đà Lạt quanh năm, rộ 11–2."
+  },
+  "main_season_months": [
+    11,
+    12,
+    1,
+    2
+  ],
+  "best_months": [
+    11,
+    12,
+    1,
+    2
+  ],
+  "kcal_per_100g": 34,
+  "kcal_confidence": "high",
+  "aliases": [
+    "bông cải xanh",
+    "broccoli"
+  ],
+  "selection_note": "Bông xanh đậm đều, chặt, cuống chắc, không vàng, không đốm.",
+  "storage_note": "3–5 ngày ngăn mát, khô ráo; để lâu bông vàng, rời.",
+  "cooking_note": "Luộc, xào tỏi, nướng, nấu súp, hấp.",
+  "safety_note": "Họ cải + warfarin như súp lơ trắng (co-so). Khác cải làn.",
+  "uncertain": true,
+  "uncertain_note": "UNCERTAIN về đầu–cuối tháng ở Nam ngoài Đà Lạt (phụ thuộc hàng vận chuyển).",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source": "catalogue-v2",
+  "source_note": "Catalogue rau theo mùa v2 (2026-11-03), phần B — rau vùng hẹp / theo vụ đặc thù. Tháng là tháng có bán trên thị trường; miền ghi null là chưa có lịch chợ riêng, không gán tháng."
+}

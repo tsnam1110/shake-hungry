@@ -1,0 +1,74 @@
+{
+  "slug": "strawberry-margarita",
+  "name_vi": "Strawberry Margarita",
+  "drink_group": "cocktail-co-con",
+  "glass": "margarita / rocks",
+  "serving_ml": 180,
+  "technique": "lac-shake",
+  "ice": "đá viên (bản lắc) hoặc đá xay (bản đông đá)",
+  "garnish": [],
+  "ingredients": [
+    {
+      "name": "tequila blanco",
+      "quantity": 50,
+      "unit": "ml"
+    },
+    {
+      "name": "triple sec",
+      "quantity": 15,
+      "unit": "ml"
+    },
+    {
+      "name": "nước cốt chanh tươi",
+      "quantity": 15,
+      "unit": "ml"
+    },
+    {
+      "name": "dâu",
+      "quantity": 60,
+      "unit": "g"
+    },
+    {
+      "name": "siro đường",
+      "quantity": 0,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Bản lắc: dầm dâu với chanh; thêm tequila, triple sec, siro, đá; lắc, lọc lên đá tươi.",
+    "Bản đông đá: xay tất cả với đá."
+  ],
+  "sugar_added_g": 0,
+  "sugar_note": "Đường thêm vào khoảng 0–6 g (siro 0–10 ml tùy khẩu vị, ghi giá trị thấp nhất). Triple sec khoảng 15–20 ml, chanh khoảng 15–20 ml, dâu khoảng 60–80 g.",
+  "caffeine_level": "khong",
+  "alcohol": true,
+  "alcohol_pct_estimate": 14,
+  "alcohol_note": "Ước tính trước pha loãng khoảng 14–18% (ghi giá trị thấp nhất; như frozen, trái cây chiếm một phần thể tích lỏng).",
+  "safety_flags": [
+    "18+",
+    "khong-lai-xe"
+  ],
+  "difficulty": "Dễ–trung bình",
+  "prep_minutes": null,
+  "best_occasion": null,
+  "food_pairing": [],
+  "cultural_note": "IBA ghi dưới Margarita: 'Fruit Margarita — xay trái cây đã chọn với công thức trên'. Đối tác mocktail dùng nền Virgin Margarita + purée dâu, không slug riêng trừ khi catalogue cần.",
+  "recipe_sources": [
+    "IBA (ghi chú dưới Margarita)"
+  ],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5."
+}

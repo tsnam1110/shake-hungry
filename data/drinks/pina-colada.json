@@ -1,0 +1,66 @@
+{
+  "slug": "pina-colada",
+  "name_vi": "Piña Colada",
+  "drink_group": "cocktail-co-con",
+  "glass": "highball/hurricane",
+  "serving_ml": null,
+  "technique": "lac-shake",
+  "ice": "đá bào hoặc đá viên",
+  "garnish": [
+    "miếng dứa",
+    "cherry"
+  ],
+  "ingredients": [
+    {
+      "name": "rum trắng",
+      "quantity": 30,
+      "unit": "ml"
+    },
+    {
+      "name": "nước ép dứa",
+      "quantity": 90,
+      "unit": "ml"
+    },
+    {
+      "name": "sữa dừa/nước cốt dừa",
+      "quantity": 30,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Lắc với đá hoặc xay với đá bào tới sánh mịn; rót ra ly, trang trí miếng dứa + cherry."
+  ],
+  "sugar_added_g": 0,
+  "sugar_note": "Đường thêm vào 0 g siro; đường từ dứa + dừa khoảng 20 g (chưa tính siro nếu dùng kem dừa ngọt). Ít ngọt: dùng nước cốt dừa không đường, không thêm siro.",
+  "caffeine_level": "khong",
+  "alcohol": true,
+  "alcohol_pct_estimate": 13,
+  "alcohol_note": "Ước tính trước pha loãng ~13% (bản 30 ml). Bar hiện đại thường dùng 60 ml rum — khoảng này ghi ở UI.",
+  "safety_flags": [
+    "18+",
+    "khong-lai-xe"
+  ],
+  "difficulty": "Dễ",
+  "prep_minutes": null,
+  "best_occasion": null,
+  "food_pairing": [],
+  "cultural_note": "Chuẩn seed IBA cũ 30 ml rum; khoảng bar hiện đại 60 ml ghi ở UI.",
+  "recipe_sources": [
+    "IBA cũ"
+  ],
+  "mocktail_counterpart_slug": "virgin-pina-colada",
+  "uncertain": false,
+  "uncertain_note": "",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5."
+}

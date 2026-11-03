@@ -1,0 +1,69 @@
+{
+  "slug": "naked-and-famous",
+  "name_vi": "Naked and Famous",
+  "drink_group": "cocktail-co-con",
+  "glass": "coupe",
+  "serving_ml": 90,
+  "technique": "lac-shake",
+  "ice": "không đá",
+  "garnish": [],
+  "ingredients": [
+    {
+      "name": "mezcal",
+      "quantity": 22.5,
+      "unit": "ml"
+    },
+    {
+      "name": "Chartreuse vàng",
+      "quantity": 22.5,
+      "unit": "ml"
+    },
+    {
+      "name": "Aperol",
+      "quantity": 22.5,
+      "unit": "ml"
+    },
+    {
+      "name": "nước chanh tươi",
+      "quantity": 22.5,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Lắc tất cả với đá.",
+    "Lọc vào coupe lạnh."
+  ],
+  "sugar_added_g": 0,
+  "sugar_note": "Đường thêm vào 0 g siro; đường rượu mùi không tính.",
+  "caffeine_level": "khong",
+  "alcohol": true,
+  "alcohol_pct_estimate": 22,
+  "alcohol_note": "Ước tính trước pha loãng khoảng 22–25% (ghi giá trị thấp nhất).",
+  "safety_flags": [
+    "18+",
+    "khong-lai-xe"
+  ],
+  "difficulty": "Dễ",
+  "prep_minutes": null,
+  "best_occasion": null,
+  "food_pairing": [],
+  "cultural_note": "IBA New Era; Joaquín Simó, Death & Co, NYC, 2011, hậu duệ của Paper Plane — chỉ đưa vào cho bar thủ công có mezcal + Chartreuse, cả hai ít phổ biến ở Việt Nam hơn ở bar Mỹ.",
+  "recipe_sources": [
+    "IBA New Era"
+  ],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5."
+}

@@ -1,0 +1,48 @@
+{
+  "slug": "ruou-gao-dong-goi",
+  "name_vi": "Rượu gạo (chưng cất)",
+  "drink_group": "ruou",
+  "kind": "dong-goi",
+  "temperature": "lanh",
+  "glass": null,
+  "serving_ml": 30,
+  "technique": null,
+  "ice": null,
+  "garnish": [],
+  "ingredients": [],
+  "recipe_steps": [],
+  "sugar_added_g": null,
+  "sugar_note": "Đường ~0 g (nguyên chất; bản ngâm thảo mộc/trái cây khác — tách entry).",
+  "caffeine_level": "khong",
+  "alcohol": true,
+  "alcohol_pct_estimate": null,
+  "alcohol_note": "Có cồn. Phổ biến 30–40% cho rượu gạo chưng cất thương mại; rượu nấu thủ công dao động lớn — đọc nhãn.",
+  "safety_flags": [
+    "18+"
+  ],
+  "difficulty": null,
+  "prep_minutes": null,
+  "best_occasion": null,
+  "food_pairing": [],
+  "packaging": "Chai 500 ml / 750 ml; chén nhỏ 30 ml.",
+  "sugar_range_g": {
+    "min": 0,
+    "max": 0
+  },
+  "alcohol_pct_range": {
+    "min": 25.0,
+    "max": 40.0
+  },
+  "label_note": "Đọc nhãn sản phẩm cụ thể khi seed — khoảng trong catalogue là khoảng theo loại, dao động theo thương hiệu, không phải bảng dinh dưỡng của một sản phẩm cụ thể.",
+  "brand_examples": [],
+  "cultural_note": "Thành phần điển hình: gạo lên men và chưng cất. Rượu gạo thương hiệu nội địa có nhãn kiểm tra tại thời điểm seed; rượu thủ công không nhãn chuẩn thì ghi UNCERTAIN, không khẳng định ABV.",
+  "recipe_sources": [],
+  "mocktail_counterpart_slug": null,
+  "uncertain": true,
+  "uncertain_note": "Rượu nấu thủ công dao động lớn về ABV; chỉ khẳng định khoảng cho sản phẩm thương mại có nhãn.",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §6."
+}

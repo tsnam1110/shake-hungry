@@ -1,0 +1,72 @@
+{
+  "slug": "margarita",
+  "name_vi": "Margarita",
+  "drink_group": "cocktail-co-con",
+  "glass": "coupe/margarita ướp lạnh",
+  "serving_ml": null,
+  "technique": "lac-shake",
+  "ice": "không đá (bản lắc)",
+  "garnish": [
+    "lát chanh"
+  ],
+  "ingredients": [
+    {
+      "name": "tequila 100% agave",
+      "quantity": 50,
+      "unit": "ml"
+    },
+    {
+      "name": "triple sec",
+      "quantity": 20,
+      "unit": "ml"
+    },
+    {
+      "name": "nước cốt chanh tươi",
+      "quantity": 15,
+      "unit": "ml"
+    },
+    {
+      "name": "muối viền",
+      "quantity": null,
+      "unit": null
+    }
+  ],
+  "recipe_steps": [
+    "Làm ướt miệng ly, viền muối một nửa.",
+    "Lắc tất cả với đá 10–15 giây.",
+    "Lược vào ly lạnh, trang trí lát chanh. Bản frozen (đá bào) là biến thể."
+  ],
+  "sugar_added_g": 8,
+  "sugar_note": "Đường từ triple sec khoảng 8–10 g (ghi giá trị thấp nhất); không có siro/đường hạt thêm vào. Ít ngọt: giảm triple sec xuống 15 ml, tăng chanh 20 ml (đổi vị, ghi rõ).",
+  "caffeine_level": "khong",
+  "alcohol": true,
+  "alcohol_pct_estimate": 33,
+  "alcohol_note": "Ước tính trước pha loãng ~33%.",
+  "safety_flags": [
+    "18+",
+    "khong-lai-xe"
+  ],
+  "difficulty": "Dễ",
+  "prep_minutes": null,
+  "best_occasion": null,
+  "food_pairing": [],
+  "cultural_note": "Cocktail kinh điển; bản frozen là biến thể, không phải bản gốc.",
+  "recipe_sources": [
+    "IBA 2024"
+  ],
+  "mocktail_counterpart_slug": "virgin-margarita",
+  "uncertain": false,
+  "uncertain_note": "",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5."
+}

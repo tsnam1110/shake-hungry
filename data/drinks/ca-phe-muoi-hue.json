@@ -1,0 +1,69 @@
+{
+  "slug": "ca-phe-muoi-hue",
+  "name_vi": "Cà phê muối Huế",
+  "drink_group": "ca-phe",
+  "kind": "pha-che",
+  "temperature": "ca-hai",
+  "glass": "ly/cốc ngắn",
+  "serving_ml": 200,
+  "technique": "pha phin, đánh kem",
+  "ice": "đá cho bản lạnh",
+  "garnish": [],
+  "ingredients": [
+    {
+      "name": "cà phê phin",
+      "quantity": 50,
+      "unit": "ml"
+    },
+    {
+      "name": "sữa đặc",
+      "quantity": 20,
+      "unit": "ml"
+    },
+    {
+      "name": "kem whipping/creamer",
+      "quantity": 80,
+      "unit": "ml"
+    },
+    {
+      "name": "muối mịn",
+      "quantity": 2,
+      "unit": "g"
+    }
+  ],
+  "recipe_steps": [
+    "Tráng phin/cốc bằng nước sôi; phin: nén nhẹ, ủ ~30 ml nước sôi 30 s, rót tiếp, chờ nhỏ giọt.",
+    "Đánh kem + muối 2–3 phút tới mềm, mịn, rót được (không đánh cứng).",
+    "Khuấy sữa đặc vào cà phê nóng.",
+    "Rót kem muối chậm lên trên tạo lớp, không khuấy nếu phục vụ dạng lớp; thêm đá cho bản lạnh."
+  ],
+  "sugar_added_g": 12,
+  "sugar_note": "Đường khoảng 12–20 g; ít ngọt: sữa đặc 10 ml. Sữa đặc khoảng 10–25 ml; cà phê 50–70 ml.",
+  "caffeine_level": "cao",
+  "alcohol": false,
+  "alcohol_pct_estimate": null,
+  "alcohol_note": "",
+  "safety_flags": [
+    "caffeine cao",
+    "sữa"
+  ],
+  "difficulty": "trung bình",
+  "prep_minutes": 10,
+  "best_occasion": null,
+  "food_pairing": [],
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "cultural_note": "Huế, thường ghi công cho quán 'Cà phê Muối' 10 Nguyễn Lương Bằng, Huế, thành lập 2010. Hai dạng lịch sử: (i) muối trực tiếp vào cà phê, không lớp kem; (ii) lớp kem muối hiện đại, nay chiếm ưu thế.",
+  "recipe_sources": [],
+  "mocktail_counterpart_slug": null,
+  "uncertain": true,
+  "uncertain_note": "Xung đột lượng kem: 80 ml/ly lặp lại nhiều nhất vs 200 ml mẻ lớn vs 15–20 ml kem phủ; vị trí muối cũng khác nhau (trong cà phê vs trong kem). Công thức trên theo dạng lớp kem hiện đại chiếm ưu thế; không trình bày 200 ml kem như 1 khẩu phần.",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3."
+}

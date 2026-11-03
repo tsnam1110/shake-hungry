@@ -1,0 +1,73 @@
+{
+  "slug": "bramble",
+  "name_vi": "Bramble",
+  "drink_group": "cocktail-co-con",
+  "glass": "old fashioned",
+  "serving_ml": 100,
+  "technique": "lac-shake",
+  "ice": "đá đập",
+  "garnish": [
+    "lát chanh",
+    "quả mâm xôi đen"
+  ],
+  "ingredients": [
+    {
+      "name": "gin",
+      "quantity": 50,
+      "unit": "ml"
+    },
+    {
+      "name": "nước chanh tươi",
+      "quantity": 25,
+      "unit": "ml"
+    },
+    {
+      "name": "siro đường",
+      "quantity": 12.5,
+      "unit": "ml"
+    },
+    {
+      "name": "crème de mûre",
+      "quantity": 15,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Lắc gin, chanh, siro với đá (trừ mûre).",
+    "Lọc vào old fashioned đầy đá đập.",
+    "Rót mûre lên trên theo vòng tròn, lát chanh + quả mâm xôi đen."
+  ],
+  "sugar_added_g": 7,
+  "sugar_note": "Đường thêm vào khoảng 7–8 g (ghi giá trị thấp nhất), cộng đường mûre. Ít ngọt: 7,5 ml siro.",
+  "caffeine_level": "khong",
+  "alcohol": true,
+  "alcohol_pct_estimate": 22,
+  "alcohol_note": "Ước tính trước pha loãng khoảng 22–25% (ghi giá trị thấp nhất).",
+  "safety_flags": [
+    "18+",
+    "khong-lai-xe"
+  ],
+  "difficulty": "Trung bình",
+  "prep_minutes": null,
+  "best_occasion": null,
+  "food_pairing": [],
+  "cultural_note": "IBA New Era; Dick Bradsell, Fred's Club, London, 1980s. Mûre rót lên trên, không lắc chung.",
+  "recipe_sources": [
+    "IBA"
+  ],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5."
+}

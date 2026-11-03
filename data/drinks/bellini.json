@@ -1,0 +1,59 @@
+{
+  "slug": "bellini",
+  "name_vi": "Bellini",
+  "drink_group": "cocktail-co-con",
+  "glass": "Champagne flute",
+  "serving_ml": 150,
+  "technique": "pha-truc-tiep-build",
+  "ice": "không đá",
+  "garnish": [],
+  "ingredients": [
+    {
+      "name": "Prosecco",
+      "quantity": 100,
+      "unit": "ml"
+    },
+    {
+      "name": "purée đào trắng",
+      "quantity": 50,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Rót purée đào vào ly trộn với đá, thêm Prosecco, khuấy nhẹ — hoặc rót purée vào flute lạnh và top nhẹ.",
+    "Rót vào flute lạnh, khuấy nhẹ một lần."
+  ],
+  "sugar_added_g": 0,
+  "sugar_note": "Đường thêm vào 0 g, trừ khi dùng purée đã làm ngọt.",
+  "caffeine_level": "khong",
+  "alcohol": true,
+  "alcohol_pct_estimate": 7,
+  "alcohol_note": "Ước tính trước pha loãng khoảng 7–8% (ghi giá trị thấp nhất).",
+  "safety_flags": [
+    "18+",
+    "khong-lai-xe"
+  ],
+  "difficulty": "Dễ",
+  "prep_minutes": null,
+  "best_occasion": null,
+  "food_pairing": [],
+  "cultural_note": "IBA Contemporary Classics; Giuseppe Cipriani, Harry's Bar, Venice, 1930s–40s. Biến thể: Puccini = nước quýt, Rossini = purée dâu, Tintoretto = nước lựu, theo ghi chú IBA.",
+  "recipe_sources": [
+    "IBA"
+  ],
+  "mocktail_counterpart_slug": "virgin-bellini",
+  "uncertain": false,
+  "uncertain_note": "",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5."
+}

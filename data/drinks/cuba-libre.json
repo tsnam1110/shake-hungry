@@ -1,0 +1,67 @@
+{
+  "slug": "cuba-libre",
+  "name_vi": "Cuba Libre",
+  "drink_group": "cocktail-co-con",
+  "glass": "highball",
+  "serving_ml": 170,
+  "technique": "pha-truc-tiep-build",
+  "ice": "đá viên",
+  "garnish": [
+    "lát chanh"
+  ],
+  "ingredients": [
+    {
+      "name": "rum trắng",
+      "quantity": 50,
+      "unit": "ml"
+    },
+    {
+      "name": "cola",
+      "quantity": 120,
+      "unit": "ml"
+    },
+    {
+      "name": "nước cốt chanh tươi",
+      "quantity": 10,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Đổ đầy đá vào highball.",
+    "Thêm rum + chanh.",
+    "Top cola, khuấy nhẹ, lát chanh."
+  ],
+  "sugar_added_g": 0,
+  "sugar_note": "Đường thêm vào 0 g siro; đường cola không tính. Khoảng bar: rum 45–60 ml, cola 100–150 ml (ghi giá trị seed IBA).",
+  "caffeine_level": "thap",
+  "alcohol": true,
+  "alcohol_pct_estimate": 11,
+  "alcohol_note": "Ước tính trước pha loãng khoảng 11–13% (ghi giá trị thấp nhất). Caffeine thấp từ cola, không ghi mg.",
+  "safety_flags": [
+    "18+",
+    "khong-lai-xe"
+  ],
+  "difficulty": "Dễ",
+  "prep_minutes": null,
+  "best_occasion": null,
+  "food_pairing": [],
+  "cultural_note": "IBA Contemporary Classics; nguồn gốc Cuba, đầu 1900s, rum + cola + chanh.",
+  "recipe_sources": [
+    "IBA Contemporary Classics"
+  ],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5."
+}

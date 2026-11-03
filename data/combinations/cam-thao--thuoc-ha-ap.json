@@ -1,1 +1,34 @@
-{"category":"drug_food","condition_vi":"Chỉ đáng lưu ý khi dùng cam thảo THẬT (chứa glycyrrhizin) thường xuyên hoặc lượng lớn — FDA dẫn trường hợp người từ 40 tuổi ăn khoảng 57 g cam thảo đen mỗi ngày trong 2 tuần trở lên có thể phải nhập viện vì loạn nhịp tim. Nhiều sản phẩm 'vị cam thảo' dùng dầu hồi thay thế, không chứa glycyrrhizin. Kho hiện chưa có nguyên liệu cam thảo — bản ghi này tồn tại ở mức dữ liệu, chưa gắn vào trang nguyên liệu nào.","evidence_class":"E2","mechanism_vi":"Glycyrrhizin ức chế enzym 11β-HSD2 ở thận → giả cường aldosterone: giữ natri/nước, thải kali → tăng huyết áp (đối kháng thuốc hạ áp), hạ kali cộng hưởng với lợi tiểu thải kali và làm tăng độc tính digoxin (loạn nhịp).","needs_review":true,"science_status":"conditional","side_a":{"label_vi":"Cam thảo — glycyrrhizin (trong kẹo, trà thảo mộc, thực phẩm bổ sung)","members":[],"ref":"cam-thao","type":"food_group"},"side_b":{"label_vi":"Thuốc hạ huyết áp, lợi tiểu thải kali và digoxin","ref":"thuoc-ha-ap-loi-tieu-digoxin","type":"drug_group"},"slug":"cam-thao--thuoc-ha-ap","source":"curated","sources":[{"accessed":"2026-11-02","note":"FDA Consumer Update về cam thảo đen (bản đăng lại nguyên văn trên Drugs.com; URL gốc fda.gov trả 404 lúc kiểm chứng — ghi rõ để truy vết)","url":"https://www.drugs.com/fda-consumer/black-licorice-trick-or-treat-198.html"},{"accessed":"2026-11-02","note":"NCCIH (NIH) — Licorice Root: tác dụng giữ nước/thải kali của glycyrrhizin","url":"https://www.nccih.nih.gov/health/licorice-root"}],"traditional_source":null}
+{
+  "category": "drug_food",
+  "condition_vi": "Chỉ đáng lưu ý khi dùng cam thảo THẬT (chứa glycyrrhizin) thường xuyên hoặc lượng lớn — FDA dẫn trường hợp người từ 40 tuổi ăn khoảng 57 g cam thảo đen mỗi ngày trong 2 tuần trở lên có thể phải nhập viện vì loạn nhịp tim. Nhiều sản phẩm 'vị cam thảo' dùng dầu hồi thay thế, không chứa glycyrrhizin. Kho hiện chưa có nguyên liệu cam thảo — bản ghi này tồn tại ở mức dữ liệu, chưa gắn vào trang nguyên liệu nào.",
+  "evidence_class": "E2",
+  "mechanism_vi": "Glycyrrhizin ức chế enzym 11β-HSD2 ở thận → giả cường aldosterone: giữ natri/nước, thải kali → tăng huyết áp (đối kháng thuốc hạ áp), hạ kali cộng hưởng với lợi tiểu thải kali và làm tăng độc tính digoxin (loạn nhịp).",
+  "needs_review": false,
+  "science_status": "conditional",
+  "side_a": {
+    "label_vi": "Cam thảo — glycyrrhizin (trong kẹo, trà thảo mộc, thực phẩm bổ sung)",
+    "members": [],
+    "ref": "cam-thao",
+    "type": "food_group"
+  },
+  "side_b": {
+    "label_vi": "Thuốc hạ huyết áp, lợi tiểu thải kali và digoxin",
+    "ref": "thuoc-ha-ap-loi-tieu-digoxin",
+    "type": "drug_group"
+  },
+  "slug": "cam-thao--thuoc-ha-ap",
+  "source": "curated",
+  "sources": [
+    {
+      "accessed": "2026-11-02",
+      "note": "FDA Consumer Update về cam thảo đen (bản đăng lại nguyên văn trên Drugs.com; URL gốc fda.gov trả 404 lúc kiểm chứng — ghi rõ để truy vết)",
+      "url": "https://www.drugs.com/fda-consumer/black-licorice-trick-or-treat-198.html"
+    },
+    {
+      "accessed": "2026-11-02",
+      "note": "NCCIH (NIH) — Licorice Root: tác dụng giữ nước/thải kali của glycyrrhizin",
+      "url": "https://www.nccih.nih.gov/health/licorice-root"
+    }
+  ],
+  "traditional_source": null
+}

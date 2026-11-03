@@ -1,0 +1,72 @@
+{
+  "slug": "dua-hau-bac-ha-soda",
+  "name_vi": "Soda Dưa Hấu Bạc Hà",
+  "drink_group": "mocktail",
+  "glass": "highball",
+  "serving_ml": 250,
+  "technique": "pha-truc-tiep-build",
+  "ice": "đá viên",
+  "garnish": [
+    "bạc hà"
+  ],
+  "ingredients": [
+    {
+      "name": "nước dưa hấu / dưa hấu dầm",
+      "quantity": 80,
+      "unit": "ml"
+    },
+    {
+      "name": "bạc hà",
+      "quantity": 8,
+      "unit": "lá"
+    },
+    {
+      "name": "nước chanh",
+      "quantity": 15,
+      "unit": "ml"
+    },
+    {
+      "name": "siro đường",
+      "quantity": 15,
+      "unit": "ml"
+    },
+    {
+      "name": "soda",
+      "quantity": 120,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Dầm dưa hấu + bạc hà + siro + chanh nhẹ; đổ đầy đá; top soda, khuấy, trang trí bạc hà."
+  ],
+  "sugar_added_g": 9,
+  "sugar_note": "Đường thêm vào khoảng 9–12 g (ghi giá trị thấp nhất); dưa hấu khoảng 80–120 ml, bạc hà 8–10 lá, siro khoảng 15–20 ml, soda khoảng 120–150 ml. Ít ngọt: 7,5 ml siro.",
+  "caffeine_level": "khong",
+  "alcohol": false,
+  "alcohol_pct_estimate": 0,
+  "alcohol_note": "ABV 0% theo công thức đã viết.",
+  "safety_flags": [],
+  "difficulty": "Dễ",
+  "prep_minutes": null,
+  "best_occasion": "mùa hè",
+  "food_pairing": [],
+  "cultural_note": "Soda quán cà phê / bar mùa hè Việt; dưa hấu là trái cây đường phố chủ lực Việt. Khoảng nhà, không codified.",
+  "recipe_sources": [
+    "Build nhà của quán cà phê Việt (khoảng)"
+  ],
+  "mocktail_counterpart_slug": null,
+  "uncertain": true,
+  "uncertain_note": "Khoảng nhà, không codified.",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5."
+}

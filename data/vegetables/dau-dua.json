@@ -1,0 +1,76 @@
+{
+  "slug": "dau-dua",
+  "name_vi": "Đậu đũa",
+  "ingredient_slug": "dau-dua",
+  "group": "dau-do",
+  "supply": "trong-nuoc",
+  "state": "tuoi",
+  "availability_months_by_region": {
+    "bac": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "trung": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "nam": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "region_notes": {
+    "bac": "",
+    "trung": "",
+    "nam": ""
+  },
+  "main_season_months": [
+    5,
+    6,
+    7,
+    8
+  ],
+  "best_months": [
+    5,
+    6,
+    7,
+    8
+  ],
+  "kcal_per_100g": 47,
+  "kcal_confidence": null,
+  "aliases": [],
+  "selection_note": "",
+  "storage_note": "",
+  "cooking_note": "",
+  "safety_note": "Đậu phải nấu chín (lectin, co-so).",
+  "uncertain": false,
+  "uncertain_note": "",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source": "catalogue-v2",
+  "source_note": "Catalogue rau theo mùa v2 (2026-11-03), phần A — giữ nguyên 44 mục v1. Tháng là tháng có bán trên thị trường, không đồng nghĩa thu hoạch tại chỗ ở miền đó."
+}

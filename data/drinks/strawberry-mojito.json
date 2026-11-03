@@ -1,0 +1,81 @@
+{
+  "slug": "strawberry-mojito",
+  "name_vi": "Strawberry Mojito",
+  "drink_group": "cocktail-co-con",
+  "glass": "highball",
+  "serving_ml": 180,
+  "technique": "pha-truc-tiep-build",
+  "ice": "đá viên",
+  "garnish": [],
+  "ingredients": [
+    {
+      "name": "rum trắng",
+      "quantity": 50,
+      "unit": "ml"
+    },
+    {
+      "name": "nước chanh",
+      "quantity": 20,
+      "unit": "ml"
+    },
+    {
+      "name": "dâu",
+      "quantity": 3,
+      "unit": "quả"
+    },
+    {
+      "name": "đường",
+      "quantity": 2,
+      "unit": "thìa cà phê"
+    },
+    {
+      "name": "bạc hà",
+      "quantity": 8,
+      "unit": "lá"
+    },
+    {
+      "name": "soda",
+      "quantity": null,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Dầm dâu + bạc hà + đường + chanh nhẹ.",
+    "Thêm rum, khuấy.",
+    "Đổ đầy đá.",
+    "Top soda, khuấy nhẹ."
+  ],
+  "sugar_added_g": 8,
+  "sugar_note": "Đường thêm vào khoảng 8–9 g (ghi giá trị thấp nhất); rum khoảng 50–60 ml, chanh khoảng 20–30 ml, dâu 3–4 quả dầm (hoặc 25 ml purée dâu), đường 2 thìa cà phê (~8 g) hoặc siro 15 ml, bạc hà 8–10 lá. Ít ngọt: giảm một nửa đường.",
+  "caffeine_level": "khong",
+  "alcohol": true,
+  "alcohol_pct_estimate": 11,
+  "alcohol_note": "Ước tính trước pha loãng khoảng 11–14% (ghi giá trị thấp nhất).",
+  "safety_flags": [
+    "18+",
+    "khong-lai-xe"
+  ],
+  "difficulty": "Dễ–trung bình",
+  "prep_minutes": null,
+  "best_occasion": null,
+  "food_pairing": [],
+  "cultural_note": "Không có spec IBA — biến thể mojito; cùng mẫu với chanh leo, chỉ đổi trái cây.",
+  "recipe_sources": [
+    "Mẫu bar đã công bố"
+  ],
+  "mocktail_counterpart_slug": "virgin-mojito-strawberry",
+  "uncertain": false,
+  "uncertain_note": "",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5."
+}

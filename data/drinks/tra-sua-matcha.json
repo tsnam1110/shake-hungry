@@ -1,0 +1,68 @@
+{
+  "slug": "tra-sua-matcha",
+  "name_vi": "Trà sữa matcha",
+  "drink_group": "tra",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "glass": "ly 500 ml",
+  "serving_ml": 350,
+  "technique": "hãm trà, lắc với đá",
+  "ice": "đá",
+  "garnish": [],
+  "ingredients": [
+    {
+      "name": "bột matcha",
+      "quantity": 3,
+      "unit": "g"
+    },
+    {
+      "name": "nước nóng",
+      "quantity": 50,
+      "unit": "ml"
+    },
+    {
+      "name": "sữa tươi",
+      "quantity": 100,
+      "unit": "ml"
+    },
+    {
+      "name": "sữa đặc",
+      "quantity": 20,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Đánh matcha với nước nóng tới không vón (chổi chasen hoặc máy đánh bọt).",
+    "Khuấy sữa đặc/đường vào sữa.",
+    "Đá vào ly, rót sữa, rót matcha lên trên tạo lớp; khuấy trước khi uống."
+  ],
+  "sugar_added_g": 12,
+  "sugar_note": "Đường khoảng 12–20 g; ít ngọt: sữa đặc 10 ml hoặc sữa không đường.",
+  "caffeine_level": "trung-binh",
+  "alcohol": false,
+  "alcohol_pct_estimate": null,
+  "alcohol_note": "",
+  "safety_flags": [
+    "sữa",
+    "đường"
+  ],
+  "difficulty": "dễ",
+  "prep_minutes": 10,
+  "best_occasion": null,
+  "food_pairing": [],
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "cultural_note": "Matcha Nhật thích ứng vào quán trà sữa Việt; matcha Thái vs Nhật cho vị đắng khác nhau — Nhật thường đậm/đắng hơn.",
+  "recipe_sources": [],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3."
+}

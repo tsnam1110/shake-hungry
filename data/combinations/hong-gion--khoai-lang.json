@@ -1,1 +1,29 @@
-{"category":"food_food","condition_vi":"Không có nghiên cứu riêng cho cặp này. Rủi ro khối khó tiêu (bezoar) đã được y văn ghi nhận là của riêng quả hồng CHÁT khi ăn nhiều lúc đói (xem cặp cua × hồng giòn) — chuyên gia được trích trong bài bác tin đồn nói thẳng khẳng định 'hồng không ăn được với khoai lang' là sai đối với hồng chín ngọt, lượng vừa.","evidence_class":"E3","mechanism_vi":"Khoai lang nhiều tinh bột/xơ chỉ là yếu tố cộng hưởng theo suy đoán; cơ chế tạo khối khó tiêu thuộc về tanin của hồng chát, không thuộc về cặp kết hợp này.","needs_review":true,"science_status":"unproven","side_a":{"ref":"hong-gion","type":"ingredient"},"side_b":{"ref":"khoai-lang","type":"ingredient"},"slug":"hong-gion--khoai-lang","source":"curated","sources":[{"accessed":"2026-11-02","note":"Tổng quan bezoar (PMC) — cơ chế tanin của quả hồng","url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC6479654/"}],"traditional_source":{"quote":null,"text":"Danh sách 'thực phẩm kỵ nhau' lưu hành trên web hiện đại"}}
+{
+  "category": "food_food",
+  "condition_vi": "Không có nghiên cứu riêng cho cặp này. Rủi ro khối khó tiêu (bezoar) đã được y văn ghi nhận là của riêng quả hồng CHÁT khi ăn nhiều lúc đói (xem cặp cua × hồng giòn) — chuyên gia được trích trong bài bác tin đồn nói thẳng khẳng định 'hồng không ăn được với khoai lang' là sai đối với hồng chín ngọt, lượng vừa.",
+  "evidence_class": "E3",
+  "mechanism_vi": "Khoai lang nhiều tinh bột/xơ chỉ là yếu tố cộng hưởng theo suy đoán; cơ chế tạo khối khó tiêu thuộc về tanin của hồng chát, không thuộc về cặp kết hợp này.",
+  "needs_review": false,
+  "science_status": "unproven",
+  "side_a": {
+    "ref": "hong-gion",
+    "type": "ingredient"
+  },
+  "side_b": {
+    "ref": "khoai-lang",
+    "type": "ingredient"
+  },
+  "slug": "hong-gion--khoai-lang",
+  "source": "curated",
+  "sources": [
+    {
+      "accessed": "2026-11-02",
+      "note": "Tổng quan bezoar (PMC) — cơ chế tanin của quả hồng",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6479654/"
+    }
+  ],
+  "traditional_source": {
+    "quote": null,
+    "text": "Danh sách 'thực phẩm kỵ nhau' lưu hành trên web hiện đại"
+  }
+}

@@ -506,6 +506,56 @@ liệu có nhãn nào thì **không có dòng** ở bảng này.
 > hay chấm điểm ở bất kỳ đâu; tuyến thuốc × thực phẩm không gắn vào món/Lắc.
 > Nguồn sự thật là file trong `data/combinations/` (QT-3), dựng lại qua `CombinationSeeder`.
 
+### `vegetables` (RAU-MUA, 2026-11-03 — theo mẫu `fruits`)
+
+Nguồn sự thật là file `data/vegetables/<slug>.json` (QT-3), dựng lại qua `VegetableSeeder`. Tháng là tháng có bán trên thị trường; vùng null = chưa có lịch chợ riêng; dạng chế biến luôn bán quanh năm nên luôn khớp lọc tháng.
+
+| Cột | Kiểu | Ghi chú |
+|---|---|---|
+| `slug` | varchar unique | khớp tên file |
+| `name_vi` | varchar | |
+| `ingredient_id` | bigint null, FK nullOnDelete | null với rau nhập khẩu chưa có hồ sơ nguyên liệu |
+| `group` | varchar | `rau-la` / `rau-cu` / `rau-qua` / `dau-do` / `rau-thom-an-kem` / `dang-che-bien` |
+| `supply` | varchar | `trong-nuoc` / `da-lat` / `nhap-khau` / `ca-hai` (giống nhập trồng tại Đà Lạt + nhập thuần túy) |
+| `state` | varchar | `tuoi` / `muoi` / `kho` / `chua` |
+| `months_bac` / `months_trung` / `months_nam` | json | mảng tháng 1–12 hoặc null |
+| `region_notes` | json | ghi chú vùng, gồm "hàng Đà Lạt" ở miền Nam |
+| `main_season_months` / `best_months` | json | mảng tháng hoặc null — mục UNCERTAIN để trống, không bịa |
+| `kcal_per_100g` / `kcal_confidence` | decimal null / varchar null | null thì UI hiện "Chưa đủ dữ liệu" |
+| `aliases` | json | tên gọi khác, tìm kiếm cả alias |
+| `selection_note` / `storage_note` / `cooking_note` / `safety_note` | text null | `safety_note` chỉ là ghi chú sơ chế/nấu chín, KHÔNG phải cặp cấm |
+| `fresh_counterpart_slug` | varchar null | chỉ dạng chế biến (đối tác tươi) |
+| `uncertain` / `uncertain_note` | boolean / text null | cờ "tháng chưa chắc chắn" |
+| `source` / `source_note` | varchar / text null | catalogue rau theo mùa v2 (2026-11-03), phần nguồn |
+| `needs_review` / `reviewed_by` / `reviewed_at` / `review_note` | boolean / varchar null / date null / text null | bộ ba duyệt như `fruits` |
+
+### `drinks` (DRINK-MODULE, 2026-11-03 — mở rộng từ schema món, KHÔNG dùng `meal_slots`/`cooking_method` nguyên dạng)
+
+Nguồn sự thật là file `data/drinks/<slug>.json` (QT-3), dựng lại qua `DrinkSeeder`. Hai kind hiển thị khác nhau, cấm lẫn: `pha-che` có công thức; `dong-goi` CHỈ khối "Thông tin nhãn" (seeder fail nếu có `recipe_steps`).
+
+| Cột | Kiểu | Ghi chú |
+|---|---|---|
+| `slug` | varchar unique | khớp tên file |
+| `name_vi` | varchar | |
+| `drink_group` | varchar | pha chế: `tra` / `ca-phe` / `sinh-to` / `nuoc-ep` / `giai-khat` / `cocktail-co-con` / `mocktail`; đóng gói: `nuoc-ngot-co-ga` / `tra-dong-chai` / `ca-phe-dong-goi` / `nuoc-ep-dong-hop` / `sua-dong-hop` / `tang-luc-dien-giai` / `nuoc-dong-goi-khac` / `bia` / `vang` / `ruou` / `nuoc-giai-khat-dong-goi` |
+| `kind` | varchar | `pha-che` / `dong-goi` |
+| `temperature` | varchar null | `nong` / `lanh` / `ca-hai` |
+| `glass` / `technique` / `ice` | varchar null | chỉ pha chế (technique: pha-phin / ham-tra / xay / ep / lac-shake / khuay-stir / pha-truc-tiep-build / nau-sam…) |
+| `garnish` / `ingredients` / `recipe_steps` | json null | ingredients: `[{name, quantity, unit}]` (ml/g) — chỉ pha chế; đóng gói luôn rỗng |
+| `serving_ml` | integer null | dung tích 1 ly (pha chế) hoặc dung tích tham chiếu (đóng gói) |
+| `sugar_added_g` / `sugar_note` | decimal null / text null | đường thêm — chỉ pha chế; khoảng thì ghi số thấp nhất + ghi rõ khoảng vào note |
+| `caffeine_level` | varchar null | `khong` / `thap` / `trung-binh` / `cao` — định tính, KHÔNG mg |
+| `alcohol` / `alcohol_pct_estimate` / `alcohol_note` | boolean / decimal null / text null | ước tính TRƯỚC pha loãng; mọi entry có cồn >0,5% gắn cờ 18+ |
+| `safety_flags` | json null | `18+`, `khong-lai-xe`, `caffeine-cao`, `duong-cao`, `trung-song`, `di-ung`… |
+| `difficulty` / `prep_minutes` / `best_occasion` / `food_pairing` | varchar null / integer null / varchar null / json null | `best_occasion` thay `meal_slots` cho đồ uống |
+| `packaging` / `sugar_range_g` / `alcohol_pct_range` / `label_note` / `brand_examples` | varchar null / json null / json null / text null / json null | chỉ đóng gói; khoảng là khoảng theo loại, dao động theo thương hiệu; `label_note` bắt buộc "đọc nhãn sản phẩm cụ thể" |
+| `mocktail_counterpart_slug` | varchar null | bản không cồn tương đương của cocktail |
+| `uncertain` / `uncertain_note` | boolean / text null | cờ chưa chắc chắn (cà phê muối Huế, trà sữa nướng, rượu thủ công…) |
+| `source_note` | text null | catalogue nước uống Việt Nam v2 (2026-11-03) |
+| `needs_review` / `reviewed_by` / `reviewed_at` / `review_note` | boolean / varchar null / date null / text null | bộ ba duyệt như `fruits` |
+
+> **Kcal đồ uống — chặn kỹ thuật đã chốt:** module này KHÔNG hiển thị kcal tính từ engine. Ethanol ~7 kcal/g không nằm trong protein/fat/carb của USDA, và phần lớn nguyên liệu bar chưa có trong kho — mọi entry đều trả `kcal_status = 'chua-tinh-duoc'` với ghi chú lý do. Không bao giờ hiện số thiếu như số đầy đủ. Cocktail không được gợi ý tự động trong Lắc món (chưa có lọc tuổi). Pháp lý quảng cáo rượu bia VN: chưa kết luận, cần kiểm tra trước khi public khối cocktail.
+
 ### `favorites` (UI-014)
 
 | Cột | Kiểu | Ghi chú |

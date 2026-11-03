@@ -1,6 +1,6 @@
 {
   "_generated_by": "php artisan lacdoi:export-data — không sửa tay (DATA-REPOSITORY §2)",
-  "count": 652,
+  "count": 649,
   "dishes": [
     {
       "slug": "ba-chi-rang-tom-kho",
@@ -2418,11 +2418,6 @@
       "country_code": "VN"
     },
     {
-      "slug": "mam-ruot-an-giang",
-      "name": "mắm ruột An Giang",
-      "country_code": "VN"
-    },
-    {
       "slug": "mam-tep",
       "name": "mắm tép",
       "country_code": "VN"
@@ -2675,11 +2670,6 @@
     {
       "slug": "nom-khe",
       "name": "nộm khế tai heo",
-      "country_code": "VN"
-    },
-    {
-      "slug": "nom-mit-non",
-      "name": "nộm mít non",
       "country_code": "VN"
     },
     {
@@ -3230,11 +3220,6 @@
     {
       "slug": "xoi-mit",
       "name": "xôi mít",
-      "country_code": "VN"
-    },
-    {
-      "slug": "xoi-ngo",
-      "name": "Xôi ngô",
       "country_code": "VN"
     },
     {

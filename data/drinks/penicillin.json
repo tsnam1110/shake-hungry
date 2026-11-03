@@ -1,0 +1,78 @@
+{
+  "slug": "penicillin",
+  "name_vi": "Penicillin",
+  "drink_group": "cocktail-co-con",
+  "glass": "rocks",
+  "serving_ml": 110,
+  "technique": "lac-shake",
+  "ice": "đá viên",
+  "garnish": [
+    "gừng kẹo"
+  ],
+  "ingredients": [
+    {
+      "name": "whisky Scotch pha trộn",
+      "quantity": 60,
+      "unit": "ml"
+    },
+    {
+      "name": "whisky Islay",
+      "quantity": 7.5,
+      "unit": "ml"
+    },
+    {
+      "name": "nước chanh tươi",
+      "quantity": 22.5,
+      "unit": "ml"
+    },
+    {
+      "name": "siro mật ong",
+      "quantity": 22.5,
+      "unit": "ml"
+    },
+    {
+      "name": "gừng tươi",
+      "quantity": 2,
+      "unit": "lát"
+    }
+  ],
+  "recipe_steps": [
+    "Dầm gừng trong shaker.",
+    "Thêm Scotch pha trộn, chanh, siro mật ong–gừng, đá.",
+    "Lắc, lược đôi lên đá.",
+    "Nổi whisky Islay lên trên, trang trí gừng kẹo."
+  ],
+  "sugar_added_g": 12,
+  "sugar_note": "Đường thêm vào khoảng 12–15 g xấp xỉ từ siro mật ong (ghi giá trị thấp nhất; mật ong ~80% đường; độ pha loãng siro thay đổi). Ít ngọt: 15 ml siro, vị sẽ gắt hơn.",
+  "caffeine_level": "khong",
+  "alcohol": true,
+  "alcohol_pct_estimate": 22,
+  "alcohol_note": "Ước tính trước pha loãng khoảng 22–25% (ghi giá trị thấp nhất).",
+  "safety_flags": [
+    "18+",
+    "khong-lai-xe"
+  ],
+  "difficulty": "Trung bình–khó",
+  "prep_minutes": null,
+  "best_occasion": null,
+  "food_pairing": [],
+  "cultural_note": "IBA New Era; Sam Ross, 2005, món cổ điển hiện đại, nay có trên menu whisky-bar Việt. Bản gốc Sam Ross (Milk & Honey, NYC, 2005): siro mật ong–gừng, không phải mật ong + gừng riêng — cùng lượng. IBA ghi Lagavulin 16y cho phần Islay nổi.",
+  "recipe_sources": [
+    "IBA 2020; Sam Ross 2005"
+  ],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5."
+}

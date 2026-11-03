@@ -1,0 +1,76 @@
+{
+  "slug": "bap-chuoi",
+  "name_vi": "Bắp chuối / hoa chuối",
+  "ingredient_slug": "bap-chuoi",
+  "group": "rau-qua",
+  "supply": "trong-nuoc",
+  "state": "tuoi",
+  "availability_months_by_region": {
+    "bac": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "trung": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "nam": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "region_notes": {
+    "bac": "",
+    "trung": "",
+    "nam": ""
+  },
+  "main_season_months": null,
+  "best_months": null,
+  "kcal_per_100g": 16,
+  "kcal_confidence": "medium",
+  "aliases": [
+    "hoa chuối"
+  ],
+  "selection_note": "Bắp nặng, bẹ ngoài tím tươi, không dập, cắt thấy lõi trắng.",
+  "storage_note": "Dùng trong ngày; ngâm nước chanh/giấm loãng chống thâm, ngăn mát tối đa 1 ngày.",
+  "cooking_note": "Nộm hoa chuối, ăn kèm bún riêu/bún bò, xào, làm gỏi.",
+  "safety_note": "Bắp thâm nhanh, rửa/ngâm chống thâm, không ăn bắp đã úa.",
+  "uncertain": true,
+  "uncertain_note": "UNCERTAIN về tháng rộ theo vùng (không có lịch chợ riêng cho bắp chuối ăn).",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source": "catalogue-v2",
+  "source_note": "Catalogue rau theo mùa v2 (2026-11-03), phần B — rau vùng hẹp / theo vụ đặc thù. Tháng là tháng có bán trên thị trường; miền ghi null là chưa có lịch chợ riêng, không gán tháng."
+}

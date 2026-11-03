@@ -1,0 +1,91 @@
+{
+  "slug": "singapore-sling",
+  "name_vi": "Singapore Sling",
+  "drink_group": "cocktail-co-con",
+  "glass": "hurricane / highball",
+  "serving_ml": 210,
+  "technique": "lac-shake",
+  "ice": "đá viên",
+  "garnish": [
+    "miếng dứa",
+    "anh đào"
+  ],
+  "ingredients": [
+    {
+      "name": "gin",
+      "quantity": 30,
+      "unit": "ml"
+    },
+    {
+      "name": "rượu mùi anh đào",
+      "quantity": 15,
+      "unit": "ml"
+    },
+    {
+      "name": "Cointreau",
+      "quantity": 7.5,
+      "unit": "ml"
+    },
+    {
+      "name": "DOM Bénédictine",
+      "quantity": 7.5,
+      "unit": "ml"
+    },
+    {
+      "name": "nước dứa tươi",
+      "quantity": 80,
+      "unit": "ml"
+    },
+    {
+      "name": "nước cốt chanh tươi",
+      "quantity": 15,
+      "unit": "ml"
+    },
+    {
+      "name": "grenadine",
+      "quantity": 10,
+      "unit": "ml"
+    },
+    {
+      "name": "Angostura bitters",
+      "quantity": 1,
+      "unit": "dash"
+    }
+  ],
+  "recipe_steps": [
+    "Cho tất cả vào shaker với đá; lắc; lọc vào ly hurricane, trang trí dứa + anh đào."
+  ],
+  "sugar_added_g": 5,
+  "sugar_note": "Đường thêm vào grenadine khoảng 5–6 g (ghi giá trị thấp nhất), cộng đường rượu mùi/nước ép. Ít ngọt: giảm một nửa grenadine, dùng 80 ml dứa.",
+  "caffeine_level": "khong",
+  "alcohol": true,
+  "alcohol_pct_estimate": 9,
+  "alcohol_note": "Ước tính trước pha loãng khoảng 9–12% (ghi giá trị thấp nhất).",
+  "safety_flags": [
+    "18+",
+    "khong-lai-xe"
+  ],
+  "difficulty": "Trung bình",
+  "prep_minutes": null,
+  "best_occasion": null,
+  "food_pairing": [],
+  "cultural_note": "IBA Contemporary Classics; Ngiam Tong Boon, Raffles Hotel Long Bar, Singapore, khoảng 1915 — công thức gốc chưa bao giờ được viết ra, vì vậy bản tái dựng IBA/Raffles là chuẩn, không phải bản gốc nguyên văn. IBA 2020 dùng dứa 120 ml; IBA cũ dùng 80 ml — chuẩn seed ghi 80 ml (giá trị thấp nhất của khoảng 80–120 ml), khoảng còn lại ghi ở đây.",
+  "recipe_sources": [
+    "IBA 2020; IBA cũ"
+  ],
+  "mocktail_counterpart_slug": null,
+  "uncertain": true,
+  "uncertain_note": "Công thức gốc chưa bao giờ được viết ra; dứa có khoảng 80–120 ml giữa IBA cũ và IBA 2020.",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5."
+}

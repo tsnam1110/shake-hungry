@@ -1,0 +1,65 @@
+{
+  "slug": "virgin-strawberry-daiquiri",
+  "name_vi": "Virgin Strawberry Daiquiri (đông đá)",
+  "drink_group": "mocktail",
+  "glass": "hurricane",
+  "serving_ml": 200,
+  "technique": "xay",
+  "ice": "đá xay",
+  "garnish": [],
+  "ingredients": [
+    {
+      "name": "dâu đông đá",
+      "quantity": 80,
+      "unit": "g"
+    },
+    {
+      "name": "nước chanh",
+      "quantity": 15,
+      "unit": "ml"
+    },
+    {
+      "name": "siro đường",
+      "quantity": 10,
+      "unit": "ml"
+    },
+    {
+      "name": "soda hoặc nước",
+      "quantity": 30,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Xay tất cả tới slush, rót không lọc. Soda hoặc nước 30 ml để điều chỉnh kết cấu nếu cần."
+  ],
+  "sugar_added_g": 6,
+  "sugar_note": "Đường thêm vào khoảng 6–9 g (ghi giá trị thấp nhất); dâu khoảng 80–100 g, chanh khoảng 15–20 ml, siro khoảng 10–15 ml. Ít ngọt: 5 ml siro.",
+  "caffeine_level": "khong",
+  "alcohol": false,
+  "alcohol_pct_estimate": 0,
+  "alcohol_note": "ABV 0% theo công thức đã viết.",
+  "safety_flags": [],
+  "difficulty": "Dễ",
+  "prep_minutes": null,
+  "best_occasion": null,
+  "food_pairing": [],
+  "cultural_note": "Mẫu mocktail đông đá chuẩn (giống daiquiri đông đá bỏ rum); đưa vào vì bar Việt thường xuyên cung cấp bản virgin đông đá cho người không uống cồn cùng với bản có cồn.",
+  "recipe_sources": [
+    "Mẫu mocktail đông đá chuẩn"
+  ],
+  "mocktail_counterpart_slug": "strawberry-daiquiri-frozen",
+  "uncertain": false,
+  "uncertain_note": "",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5."
+}

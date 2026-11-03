@@ -1,0 +1,71 @@
+{
+  "slug": "whiskey-sour",
+  "name_vi": "Whiskey Sour",
+  "drink_group": "cocktail-co-con",
+  "glass": "rocks",
+  "serving_ml": null,
+  "technique": "lac-shake",
+  "ice": "đá viên",
+  "garnish": [],
+  "ingredients": [
+    {
+      "name": "whiskey",
+      "quantity": 45,
+      "unit": "ml"
+    },
+    {
+      "name": "nước cốt chanh",
+      "quantity": 30,
+      "unit": "ml"
+    },
+    {
+      "name": "siro đường",
+      "quantity": 20,
+      "unit": "ml"
+    },
+    {
+      "name": "lòng trắng trứng",
+      "quantity": 30,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Lắc khô (không đá) nếu có lòng trắng trứng để tạo bọt.",
+    "Thêm đá, lắc lại 10–15 giây.",
+    "Lược lên đá mới, nhỏ vài giọt bitters lên bọt nếu thích."
+  ],
+  "sugar_added_g": 13,
+  "sugar_note": "Đường ~13 g từ siro. Ít ngọt: siro 15 ml. Lòng trắng trứng tùy chọn.",
+  "caffeine_level": "khong",
+  "alcohol": true,
+  "alcohol_pct_estimate": 25,
+  "alcohol_note": "Ước tính trước pha loãng ~25% (bản 45 ml). Bar hiện đại thường dùng 60 ml whiskey / 30 ml chanh / 20 ml siro — khoảng này phải ghi ở UI, không giấu.",
+  "safety_flags": [
+    "18+",
+    "khong-lai-xe",
+    "long-trang-trung-song"
+  ],
+  "difficulty": "Trung bình",
+  "prep_minutes": null,
+  "best_occasion": null,
+  "food_pairing": [],
+  "cultural_note": "Chuẩn seed IBA cổ điển 45 ml whiskey; khoảng bar hiện đại 60 ml ghi ở UI, không trộn làm một.",
+  "recipe_sources": [
+    "IBA cổ điển"
+  ],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5."
+}

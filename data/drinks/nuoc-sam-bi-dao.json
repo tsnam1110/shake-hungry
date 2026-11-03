@@ -1,0 +1,76 @@
+{
+  "slug": "nuoc-sam-bi-dao",
+  "name_vi": "Nước sâm bí đao",
+  "drink_group": "giai-khat",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "glass": "chai/ly",
+  "serving_ml": 350,
+  "technique": "nấu/xay",
+  "ice": "đá",
+  "garnish": [],
+  "ingredients": [
+    {
+      "name": "bí đao",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "name": "thục địa",
+      "quantity": 10,
+      "unit": "g"
+    },
+    {
+      "name": "la hán quả",
+      "quantity": 0.5,
+      "unit": "quả"
+    },
+    {
+      "name": "lá dứa",
+      "quantity": 2,
+      "unit": "lá"
+    },
+    {
+      "name": "đường phèn",
+      "quantity": 20,
+      "unit": "g"
+    },
+    {
+      "name": "nước",
+      "quantity": 300,
+      "unit": "ml"
+    }
+  ],
+  "recipe_steps": [
+    "Rửa thảo mộc/quả.",
+    "Nấu bí đao + thục địa + la hán quả + lá dứa 30–45 phút tới bí mềm và nước dùng sẫm/ngọt.",
+    "Thêm đường phèn, hòa tan, lọc.",
+    "Làm nguội, làm lạnh, phục vụ trên đá."
+  ],
+  "sugar_added_g": 20,
+  "sugar_note": "Đường khoảng 20–30 g tương đương mỗi khẩu phần; ít ngọt: giảm một nửa đường phèn (la hán quả đã tạo ngọt).",
+  "caffeine_level": "khong",
+  "alcohol": false,
+  "alcohol_pct_estimate": null,
+  "alcohol_note": "",
+  "safety_flags": [],
+  "difficulty": "trung bình",
+  "prep_minutes": 50,
+  "best_occasion": null,
+  "food_pairing": [],
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "cultural_note": "Món 'sâm' mùa hè chủ lực Sài Gòn, sẫm hơn và thảo mộc hơn nước bí đao thuần.",
+  "recipe_sources": [],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3."
+}

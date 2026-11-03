@@ -15,6 +15,14 @@ namespace App\Nutrition;
  *
  * Đây là nơi DUY NHẤT định nghĩa tập nguồn thứ cấp — mọi nơi cần phân tầng
  * (engine, API, kiểm tra dữ liệu) đều hỏi qua đây để không lệch nhau.
+ *
+ * Bổ sung 2026-11-03 (chủ dự án duyệt nhập 6 proxy mức thấp): mã `proxy` dùng
+ * cho proxy mà mã nguồn thật (nhãn thương mại qua Open Food Facts, trang dẫn
+ * lại USDA, mục USDA chung cho cả nhóm loài) không thuộc tầng thứ cấp, nhưng
+ * bản thân nó vẫn là số mượn, chưa kiểm định — gán mã thật sẽ làm mất cờ
+ * cảnh báo, gán mã thứ cấp khác sẽ nói dối về nguồn. `proxy` không phải một
+ * bảng thành phần: `mapping_note` của từng nguyên liệu phải ghi rõ proxy từ
+ * đâu, khoảng nào, và còn thiếu gì để thay bằng nguồn chính thống.
  */
 final class SourceTier
 {
@@ -28,6 +36,7 @@ final class SourceTier
         'fnri_ph',     // FNRI Philippines — dự phòng, qua nguồn đăng lại
         'tbca_br',     // TBCA Brazil (USP/FoRC) — bảng quốc gia của nước bản địa của loài, FRUIT-002 2026-10-31
         'tkpi_id',     // TKPI Indonesia (Kemenkes) — bảng quốc gia của nước bản địa của loài, FRUIT-002 2026-10-31
+        'proxy',       // Proxy mức thấp đã duyệt 2026-11-03 (không phải một bảng): xem ghi chú trên
     ];
 
     public static function isSecondary(?string $fctSource): bool

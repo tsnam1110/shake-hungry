@@ -1,0 +1,98 @@
+{
+  "slug": "zombie",
+  "name_vi": "Zombie",
+  "drink_group": "cocktail-co-con",
+  "glass": "tumbler cao / hurricane",
+  "serving_ml": 170,
+  "technique": "xay",
+  "ice": "đá đập",
+  "garnish": [
+    "bạc hà"
+  ],
+  "ingredients": [
+    {
+      "name": "rum đen Jamaica",
+      "quantity": 45,
+      "unit": "ml"
+    },
+    {
+      "name": "rum vàng Puerto Rico",
+      "quantity": 45,
+      "unit": "ml"
+    },
+    {
+      "name": "rum Demerara",
+      "quantity": 30,
+      "unit": "ml"
+    },
+    {
+      "name": "nước cốt chanh tươi",
+      "quantity": 20,
+      "unit": "ml"
+    },
+    {
+      "name": "falernum",
+      "quantity": 15,
+      "unit": "ml"
+    },
+    {
+      "name": "Donn's Mix (2 phần nước bưởi vàng tươi : 1 phần siro quế)",
+      "quantity": 15,
+      "unit": "ml"
+    },
+    {
+      "name": "grenadine",
+      "quantity": 5,
+      "unit": "ml"
+    },
+    {
+      "name": "Angostura bitters",
+      "quantity": 1,
+      "unit": "dash"
+    },
+    {
+      "name": "Pernod",
+      "quantity": 6,
+      "unit": "giọt"
+    }
+  ],
+  "recipe_steps": [
+    "Làm Donn's Mix trước.",
+    "Cho tất cả vào máy xay điện với 170 g đá đập, nhấn vài giây.",
+    "Phục vụ trong tumbler cao, trang trí bạc hà. KHÔNG thêm lớp 151 cháy trong công thức catalogue."
+  ],
+  "sugar_added_g": 3,
+  "sugar_note": "Đường thêm vào khoảng 3–5 g từ siro quế trong Donn's Mix + grenadine (ghi giá trị thấp nhất), cộng đường falernum. Ít ngọt: không hợp lý — vị ngọt là cấu trúc cân bằng tiki.",
+  "caffeine_level": "khong",
+  "alcohol": true,
+  "alcohol_pct_estimate": 28,
+  "alcohol_note": "Ước tính trước pha loãng khoảng 28–34% trước đá trong máy xay (ghi giá trị thấp nhất). Rất mạnh.",
+  "safety_flags": [
+    "18+",
+    "khong-lai-xe",
+    "do-uong-manh"
+  ],
+  "difficulty": "Khó",
+  "prep_minutes": null,
+  "best_occasion": null,
+  "food_pairing": [],
+  "cultural_note": "IBA Contemporary Classics; Donn Beach, Don the Beachcomber, Hollywood, 1934. Ghi chú bar giới hạn một ly mỗi người.",
+  "recipe_sources": [
+    "IBA"
+  ],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5."
+}

@@ -1,0 +1,62 @@
+{
+  "slug": "virgin-pina-colada",
+  "name_vi": "Virgin Piña Colada",
+  "drink_group": "mocktail",
+  "glass": "hurricane",
+  "serving_ml": null,
+  "technique": "xay",
+  "ice": "đá bào",
+  "garnish": [
+    "miếng dứa"
+  ],
+  "ingredients": [
+    {
+      "name": "nước ép dứa",
+      "quantity": 90,
+      "unit": "ml"
+    },
+    {
+      "name": "nước cốt dừa không đường",
+      "quantity": 30,
+      "unit": "ml"
+    },
+    {
+      "name": "đá bào",
+      "quantity": 100,
+      "unit": "g"
+    }
+  ],
+  "recipe_steps": [
+    "Xay tất cả tới sánh mịn, rót ra ly."
+  ],
+  "sugar_added_g": 0,
+  "sugar_note": "Đường thêm vào 0 g siro; đường tự nhiên dứa khoảng 12 g. Ít ngọt: giảm dứa xuống 60 ml + 30 ml nước dừa tươi.",
+  "caffeine_level": "khong",
+  "alcohol": false,
+  "alcohol_pct_estimate": 0,
+  "alcohol_note": "ABV 0% theo công thức đã viết.",
+  "safety_flags": [],
+  "difficulty": "Dễ",
+  "prep_minutes": null,
+  "best_occasion": null,
+  "food_pairing": [],
+  "cultural_note": "Đối tác của Piña Colada, không rum.",
+  "recipe_sources": [
+    "Đối tác Piña Colada"
+  ],
+  "mocktail_counterpart_slug": "pina-colada",
+  "uncertain": false,
+  "uncertain_note": "",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5."
+}

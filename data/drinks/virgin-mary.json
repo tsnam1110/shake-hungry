@@ -1,0 +1,78 @@
+{
+  "slug": "virgin-mary",
+  "name_vi": "Virgin Mary",
+  "drink_group": "mocktail",
+  "glass": "highball",
+  "serving_ml": 180,
+  "technique": "lan-rolling",
+  "ice": "đá viên",
+  "garnish": [
+    "cần tây",
+    "chanh"
+  ],
+  "ingredients": [
+    {
+      "name": "nước ép cà chua",
+      "quantity": 90,
+      "unit": "ml"
+    },
+    {
+      "name": "nước chanh tươi",
+      "quantity": 15,
+      "unit": "ml"
+    },
+    {
+      "name": "Worcestershire",
+      "quantity": 2,
+      "unit": "dash"
+    },
+    {
+      "name": "sốt cay",
+      "quantity": 2,
+      "unit": "dash"
+    },
+    {
+      "name": "muối cần tây + tiêu đen",
+      "quantity": null,
+      "unit": null
+    },
+    {
+      "name": "cải ngựa",
+      "quantity": 0.25,
+      "unit": "thìa cà phê"
+    }
+  ],
+  "recipe_steps": [
+    "Lăn / lắc nhanh không đá để trộn, hoặc build trên đá và khuấy; rót lên đá tươi, trang trí cần tây + chanh."
+  ],
+  "sugar_added_g": 0,
+  "sugar_note": "Đường thêm vào 0 g. Cà chua khoảng 90–120 ml (ghi giá trị thấp nhất). Cải ngựa tùy chọn.",
+  "caffeine_level": "khong",
+  "alcohol": false,
+  "alcohol_pct_estimate": 0,
+  "alcohol_note": "ABV 0% theo công thức đã viết.",
+  "safety_flags": [],
+  "difficulty": "Dễ",
+  "prep_minutes": null,
+  "best_occasion": "brunch",
+  "food_pairing": [],
+  "cultural_note": "Mocktail lâu đời, danh sách không cồn thời IBA có bản kiểu Virgin Mary; menu brunch Việt liệt kê nó cùng Bloody Mary. Lưu ý: Worcestershire chứa cồn trace ở một số thương hiệu; nếu yêu cầu 0% nghiêm ngặt, dùng Worcestershire không cồn đã xác minh hoặc bỏ — ghi trên menu.",
+  "recipe_sources": [
+    "Quy đổi từ IBA Bloody Mary, bỏ vodka"
+  ],
+  "mocktail_counterpart_slug": "bloody-mary",
+  "uncertain": true,
+  "uncertain_note": "Worcestershire có thể chứa cồn trace tùy thương hiệu; bản 0% nghiêm ngặt cần loại không cồn đã xác minh hoặc bỏ.",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5."
+}

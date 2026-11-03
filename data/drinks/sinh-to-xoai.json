@@ -1,0 +1,70 @@
+{
+  "slug": "sinh-to-xoai",
+  "name_vi": "Sinh tố xoài",
+  "drink_group": "sinh-to",
+  "kind": "pha-che",
+  "temperature": "lanh",
+  "glass": "ly cao",
+  "serving_ml": 350,
+  "technique": "xay",
+  "ice": null,
+  "garnish": [],
+  "ingredients": [
+    {
+      "name": "xoài chín",
+      "quantity": 150,
+      "unit": "g"
+    },
+    {
+      "name": "sữa tươi",
+      "quantity": 50,
+      "unit": "ml"
+    },
+    {
+      "name": "sữa đặc",
+      "quantity": 20,
+      "unit": "ml"
+    },
+    {
+      "name": "đá",
+      "quantity": 100,
+      "unit": "g"
+    },
+    {
+      "name": "sữa chua",
+      "quantity": 50,
+      "unit": "g"
+    }
+  ],
+  "recipe_steps": [
+    "Gọt xoài, cắt miếng, cho tất cả vào máy xay tới mịn, rót ra ly."
+  ],
+  "sugar_added_g": 13,
+  "sugar_note": "Đường ~13 g + đường tự nhiên xoài; ít ngọt: bỏ sữa đặc, dùng sữa chua không đường.",
+  "caffeine_level": "khong",
+  "alcohol": false,
+  "alcohol_pct_estimate": null,
+  "alcohol_note": "",
+  "safety_flags": [
+    "sữa"
+  ],
+  "difficulty": "dễ",
+  "prep_minutes": 10,
+  "best_occasion": null,
+  "food_pairing": [],
+  "packaging": null,
+  "sugar_range_g": null,
+  "alcohol_pct_range": null,
+  "label_note": "",
+  "brand_examples": [],
+  "cultural_note": "Xoài cát Hòa Lộc/xoài keo là lựa chọn phổ biến theo mùa — ghi theo mùa vụ, không cố định giống.",
+  "recipe_sources": [],
+  "mocktail_counterpart_slug": null,
+  "uncertain": false,
+  "uncertain_note": "",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-03",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3."
+}
