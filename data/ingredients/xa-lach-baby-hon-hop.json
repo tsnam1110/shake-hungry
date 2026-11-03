@@ -1,0 +1,52 @@
+{
+  "slug": "xa-lach-baby-hon-hop",
+  "name_vi": "Xà lách baby hỗn hợp (sống)",
+  "name_en": "Mixed baby salad leaves, raw",
+  "category": "rau-cu",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": null,
+    "source_url": null,
+    "scientific_name": null,
+    "kcal_per_100g": null,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": null,
+    "fat_g": null,
+    "carb_g": null,
+    "fiber_g": null,
+    "water_g": null,
+    "mapping_confidence": "low",
+    "mapping_note": "KCAL ĐỂ NULL (QT-9): đây là hỗn hợp lá non nhiều loài (thường gồm xà lách baby, rau chân vịt non, rocket, cải cầu vồng non, mizuna...), tỉ lệ thay đổi theo từng hộp/nhà cung cấp (mục này ghi nhập Úc), nên không có một bản ghi USDA đơn loài nào đại diện đúng cho hỗn hợp. KHÔNG copy số của xà lách romaine hay bất kỳ lá đơn nào sang đây. Muốn có kcal thì cần thành phần và tỉ lệ cụ thể của một hộp chuẩn, hoặc phân tích mẫu.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "media": [
+    {
+      "path": "media/ingredients/xa-lach-baby-hon-hop.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
+  "tcm_traits": [],
+  "source": "curated",
+  "confidence": "low",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Hồ sơ mới tạo 2026-11-03 để gắn ảnh cho rau theo mùa, làm từng sản phẩm một theo kế hoạch giai đoạn đã duyệt, chưa qua duyệt của chủ dự án.",
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}
