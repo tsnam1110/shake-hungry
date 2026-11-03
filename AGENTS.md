@@ -41,11 +41,8 @@ Rau theo mùa và Thư viện nước uống. Trạng thái chi tiết: [CLAUDE.
    và biên soạn từ nhiều nguồn để chắc chắn tối đa. Thời gian thực thi là thứ yếu: không làm
    nhanh, làm ẩu — làm thật cẩn thận và chi tiết. (Chủ dự án, 2026-11-03.)
 
-Ngoài 9 quy tắc trên, **mười nguyên tắc thực thi** ở CLAUDE.md §6 cũng bắt buộc (chủ dự án,
-2026-11-03): hiểu trước khi thực hiện; kế hoạch trước khi lập trình; không chỉnh sửa mù;
-không chỉnh sửa hàng loạt thiếu kiểm soát; bảo toàn logic hiện tại; chất lượng trên tốc độ;
-tuân thủ tiêu chuẩn dự án; kiểm tra mọi thay đổi; checkpoint từng phase (phân tích →
-planning → implementation → verification → final review → handover); báo cáo minh bạch.
+> Ngoài 9 quy tắc trên, mười nguyên tắc thực thi của chủ dự án (2026-11-03) nằm ở file riêng:
+> [docs/09-standards/EXECUTION-PRINCIPLES.md](docs/09-standards/EXECUTION-PRINCIPLES.md) — bắt buộc đọc cùng CLAUDE.md.
 
 ## Bốn việc dễ làm sai nhất
 
@@ -60,3 +57,4 @@ planning → implementation → verification → final review → handover); bá
 - [ ] Đã đối chiếu [DEFINITION-OF-DONE](docs/05-tasks/DEFINITION-OF-DONE.md)
 - [ ] Nếu đổi schema: đã sửa [DATA-MODEL](docs/03-data-model/DATA-MODEL.md)
 - [ ] Nếu thêm dữ liệu: file đã nằm trong `data/`, và `migrate:fresh --seed` dựng lại được
+

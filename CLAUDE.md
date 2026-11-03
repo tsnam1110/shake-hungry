@@ -1392,6 +1392,7 @@ shake-hungry/
 | 15 | [docs/09-standards/EDITORIAL-GUIDE.md](docs/09-standards/EDITORIAL-GUIDE.md) | Chuẩn biên soạn dữ liệu: đặt tên món, phân biệt biến thể, định lượng |
 | 16 | [docs/09-standards/CODING-STANDARDS.md](docs/09-standards/CODING-STANDARDS.md) | Quy ước đặt tên, cấu trúc code |
 | 17 | [docs/10-deployment/DEPLOYMENT.md](docs/10-deployment/DEPLOYMENT.md) | Dựng lại dự án trên máy mới |
+| 18 | [docs/09-standards/EXECUTION-PRINCIPLES.md](docs/09-standards/EXECUTION-PRINCIPLES.md) | Mười nguyên tắc thực thi bắt buộc của chủ dự án (2026-11-03) |
 
 ---
 
@@ -1423,59 +1424,10 @@ shake-hungry/
 Không đoán. Ghi câu hỏi vào mục "Ghi chú" của task và vào [ROADMAP](docs/05-tasks/ROADMAP.md) mục
 "Câu hỏi mở", rồi làm phần không phụ thuộc câu trả lời đó trước.
 
+> Mười nguyên tắc thực thi của chủ dự án (2026-11-03) nằm ở file riêng và bắt buộc đọc cùng
+> file này: [docs/09-standards/EXECUTION-PRINCIPLES.md](docs/09-standards/EXECUTION-PRINCIPLES.md).
+
 ---
-
-### Mười nguyên tắc thực thi (chủ dự án, 2026-11-03 — bắt buộc cho mọi AI làm việc trên repo này)
-
-Các nguyên tắc dưới đây bổ sung cho QT-8/QT-9 và §6 trên; khi có xung đột, áp dụng quy tắc
-chặt hơn. Vi phạm một nguyên tắc là lý do đủ để chủ dự án yêu cầu làm lại, dù kết quả nhìn
-bề ngoài có vẻ chạy được.
-
-1. **Understand Before Execution — Hiểu trước khi thực hiện.** Không bắt đầu viết code ngay
-   khi nhận yêu cầu. Bắt buộc: đọc và hiểu yêu cầu; kiểm tra cấu trúc dự án hiện tại; đọc tài
-   liệu liên quan; xác định chức năng và module bị ảnh hưởng; kiểm tra logic hiện có trước khi
-   đề xuất thay đổi; xác định thông tin chưa rõ. Không tự suy diễn nghiệp vụ khi chưa đủ căn
-   cứ — điểm chưa rõ hoặc có nhiều cách hiểu thì hỏi lại chủ dự án.
-2. **Plan Before Coding — Lập kế hoạch trước khi lập trình.** Trình bày kế hoạch trước khi
-   bắt đầu thay đổi code. Kế hoạch phải có: mục tiêu; file dự kiến tạo/chỉnh sửa; logic xử lý
-   dự kiến; module/API/database liên quan; công việc theo thứ tự; rủi ro và trường hợp ngoại
-   lệ; phương án kiểm thử. Không triển khai thay đổi lớn khi chưa có kế hoạch rõ ràng.
-3. **No Blind Modification — Không chỉnh sửa mù.** Không tự ý sửa file khi chưa đọc nội dung;
-   không xóa code chỉ vì cho rằng không cần thiết; không thay toàn bộ file khi chỉ cần sửa một
-   phần nhỏ; không tự ý thay đổi cấu trúc database, kiến trúc hệ thống, hay chức năng ngoài
-   phạm vi yêu cầu. Chỉ thay đổi những gì thực sự cần thiết để giải quyết yêu cầu.
-4. **No Batch Modification — Không chỉnh sửa hàng loạt thiếu kiểm soát.** Không thay hàng
-   loạt tên biến, xóa/ghi đè nhiều file, chạy script tự động cập nhật database, refactor hàng
-   loạt module, hay thay đổi cấu trúc thư mục trên diện rộng khi chưa đánh giá tác động. Nếu
-   cần thay đổi hàng loạt: xác định phạm vi file bị ảnh hưởng, giải thích lý do, đánh giá rủi
-   ro, thực hiện theo từng nhóm nhỏ, kiểm tra kết quả sau mỗi nhóm. Ưu tiên thay đổi nhỏ, có
-   kiểm soát, có thể kiểm chứng.
-5. **Preserve Existing Logic — Bảo toàn logic hiện tại.** Không phá vỡ chức năng đang hoạt
-   động; không tự ý thay đổi business logic; không tạo logic trùng lặp; tái sử dụng component,
-   function và service hiện có khi phù hợp; kiểm tra tương thích với module liên quan. Tính
-   năng mới không được làm hỏng tính năng cũ.
-6. **Quality Over Speed — Chất lượng quan trọng hơn tốc độ.** Không tối ưu thời gian bằng
-   cách bỏ qua đọc tài liệu, kiểm tra logic, xử lý lỗi, hay kiểm thử; không dùng giải pháp tạm
-   thời thay giải pháp hoàn chỉnh mà không thông báo. Ưu tiên giải pháp đúng, ổn định, dễ bảo
-   trì thay vì giải pháp nhanh nhưng thiếu hoàn thiện. (Cùng tinh thần QT-9.)
-7. **Follow Existing Standards — Tuân thủ tiêu chuẩn dự án.** Tuân thủ coding convention,
-   naming convention, folder structure, design pattern, kiến trúc, quy tắc bảo mật, quy chuẩn
-   UI/UX, quy chuẩn API và database hiện tại. Không tự tạo cách triển khai mới nếu dự án đã có
-   quy chuẩn hoặc phương pháp tương ứng.
-8. **Verify Every Change — Kiểm tra mọi thay đổi.** Sau khi chỉnh sửa: kiểm tra lỗi cú pháp,
-   type/lint, chạy unit test, integration test nếu có, kiểm tra chức năng liên quan, trường
-   hợp ngoại lệ và regression. Không tuyên bố hoàn thành nếu chưa có bằng chứng kiểm chứng
-   tương ứng. Nếu không thể chạy kiểm thử, nói rõ lý do và những gì chưa được xác minh.
-9. **Checkpoint & Progress Control — Kiểm soát tiến độ theo từng giai đoạn.** Không thực
-   hiện chuỗi thay đổi lớn mà không có điểm kiểm tra. Các phase: 1 Phân tích (hiểu rõ yêu cầu),
-   2 Planning (kế hoạch được xác định), 3 Implementation (hoàn thành từng nhóm thay đổi),
-   4 Verification (kiểm tra đạt yêu cầu), 5 Final Review (đánh giá toàn bộ), 6 Handover (báo
-   cáo và bàn giao). Sau mỗi phase: báo cáo những gì đã thực hiện, xác nhận kết quả, liệt kê
-   vấn đề còn tồn tại, và chỉ tiếp tục khi đáp ứng điều kiện chuyển giai đoạn.
-10. **Transparent Reporting — Báo cáo minh bạch.** Khi hoàn thành, báo cáo: những gì đã thực
-    hiện; file đã tạo/chỉnh sửa; logic đã thay đổi; kiểm thử đã thực hiện và kết quả; vấn đề
-    chưa giải quyết; rủi ro hoặc tác động cần lưu ý. Không che giấu lỗi, không báo cáo thành
-    công khi chưa thực sự hoàn thành.
 
 ## 7. NHỮNG SAI LẦM ĐÃ ĐƯỢC CẢNH BÁO TRƯỚC
 
