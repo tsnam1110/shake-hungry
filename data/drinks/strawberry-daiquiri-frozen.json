@@ -67,5 +67,13 @@
   "reviewed_by": "tsnam1110@gmail.com",
   "reviewed_at": "2026-11-03",
   "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
-  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5."
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5.",
+  "media": [
+    {
+      "path": "media/drinks/strawberry-daiquiri-frozen.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ]
 }
