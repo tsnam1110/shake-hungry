@@ -11,16 +11,6 @@
   "garnish": [],
   "ingredients": [
     {
-      "name": "bột cà phê phin",
-      "quantity": 25,
-      "unit": "g"
-    },
-    {
-      "name": "nước sôi",
-      "quantity": 80,
-      "unit": "ml"
-    },
-    {
       "name": "cà phê phin chiết xuất",
       "quantity": 40,
       "unit": "ml",
@@ -61,10 +51,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-03: sửa cấu trúc dòng (bỏ bột + nước sôi khỏi dòng trong ly), kcal/100 ml lỏng, caffeine mg tầm soát 100–200 mg/ly — chưa qua duyệt lại sau khi sửa; mâu thuẫn đường 0 g vs chuẩn 5 g trong file được ghi rõ, chưa tự sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -73,5 +63,47 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "process_note": "Pha phin: 25 g bột cà phê + 80 ml nước sôi, chiết xuất lấy 40 ml cà phê trong công thức này; bột và nước sôi là nguyên liệu quá trình, không phải dòng trong ly (tiền lệ cà phê sữa đá).",
+  "liquid_ml": 40,
+  "caffeine_mg_min": 100,
+  "caffeine_mg_max": 200,
+  "caffeine_mg_note": "KHOẢNG TẦM SOÁT, CHƯA ĐO CHO LY NÀY: ly này dùng nguyên một phin Robusta, khoảng 100–200 mg/ly theo nguồn thứ cấp về phin VN (CoffeeTalkies phin 100–200 mg; DoanhNhanPlus cà phê sữa đá đậm 120–150 mg; Message Coffee 150–200 mg). Chưa đo cho ly này; mg là theo ly, không theo ml.",
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml chất lỏng",
+      "value_min": 1,
+      "value_max": 1,
+      "value": null,
+      "per_serving": "≈0,4 kcal/ly (40 ml chất lỏng, không đường, chưa tính đá tan)",
+      "basis": "Cộng tay từ hồ sơ đã có: cà phê phin 40 ml × 1 kcal/100 g = 0,4 kcal; đường 0 g = 0. Đây là bản không đường. Mâu thuẫn trong file cần lưu ý: sugar_added_g = 0 nhưng sugar_note ghi 'chuẩn 5 g' — nếu thêm 5 g đường thì cộng thêm ≈19 kcal/ly, thành ≈20 kcal/ly. Đây chưa phải đầu ra engine.",
+      "confidence": "medium",
+      "source_ref": "data/ingredients/ca-phe-den.json, duong-trang.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 0,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "0 g/ly (bản không đường; ghi chú file nói chuẩn 5 g)",
+      "basis": "sugar_added_g trong file catalogue = 0; sugar_note ghi khoảng 0–10 g, chuẩn 5 g — hai con số trong cùng file không khớp, ghi cả hai, không tự chọn một.",
+      "confidence": "low",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    },
+    {
+      "label": "Caffeine",
+      "unit": "mg/ly",
+      "value_min": 100,
+      "value_max": 200,
+      "value": null,
+      "per_serving": "100–200 mg/ly",
+      "basis": "Khoảng tầm soát cho nguyên một phin Robusta, xem caffeine_mg_note; không phải số đo.",
+      "confidence": "low",
+      "source_ref": "Nguồn thứ cấp về phin Robusta (xem caffeine_mg_note)"
+    }
+  ],
+  "allergen_note": "Đã gắn đủ 2/2 dòng trong ly (cà phê phin, đường 0 g): không dòng nào có tag dị ứng trong hồ sơ — 'không tag' không phải cam kết an toàn tuyệt đối.",
+  "tcm_note": "Nhãn duy nhất có trong ly là cà phê phin: bình/khổ/Hỏa, tin cậy thấp (infobox-only); đường không có nhãn tính vị. Phủ theo khối lượng 100% (đường 0 g), nhưng tin cậy thấp nên chỉ hiện ở mức thấp, không kết luận chắc chắn cho cả ly."
 }
