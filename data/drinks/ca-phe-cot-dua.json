@@ -19,7 +19,8 @@
     {
       "name": "sữa dừa/nước cốt dừa",
       "quantity": 20,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "nuoc-cot-dua"
     },
     {
       "name": "sữa đặc",
@@ -56,10 +57,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-03: gắn nước cốt dừa (hồ sơ đã có, thêm density 0,97 ở commit riêng), thêm liquid_ml, kcal/100 ml lỏng theo khoảng 197–330 của cốt dừa, caffeine mg tầm soát 100–200 mg/ly — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -68,5 +69,46 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 80,
+  "caffeine_mg_min": 100,
+  "caffeine_mg_max": 200,
+  "caffeine_mg_note": "KHOẢNG TẦM SOÁT, CHƯA ĐO CHO LY NÀY: cà phê trong ly là một phần phin (40 ml, như cà phê sữa đá), khoảng 100–200 mg/ly theo nguồn thứ cấp về phin VN (CoffeeTalkies phin 100–200 mg; DoanhNhanPlus 120–150 mg; Message Coffee 150–200 mg). Chưa đo cho ly này; mg là theo ly, không theo ml.",
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml chất lỏng",
+      "value_min": 156,
+      "value_max": 191,
+      "value": null,
+      "per_serving": "≈125–152 kcal/ly (80 ml chất lỏng, chưa tính đá tan)",
+      "basis": "Cộng tay với khoảng của nước cốt dừa theo đúng cảnh báo QT-5 trong hồ sơ nuoc-cot-dua (khoảng 197–330 kcal/100 g, không dùng điểm 230 làm số duy nhất): cà phê đen 40 ml × 1 = 0,4 kcal; nước cốt dừa 20 ml × 0,97 × 197–330 / 100 = 38,2–64,0 kcal; sữa đặc 20 ml × 1,29 × 334–341 = 86,2–88,0 kcal. Tổng 124,8–152,4 kcal / 80 ml = 156–191 kcal/100 ml chất lỏng. Engine sẽ tính điểm 230 cho cốt dừa (khoảng 132 kcal/ly) nằm trong khoảng này. Đây chưa phải đầu ra engine.",
+      "confidence": "low",
+      "source_ref": "data/ingredients/ca-phe-den.json, nuoc-cot-dua.json, sua-dac.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 13,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "13 g/ly",
+      "basis": "sugar_added_g trong file catalogue = 13 g; kiểm chéo: sữa đặc 25,8 g, đường khoảng 14 g, gần 13 g trong sai số quán; nước cốt dừa không thêm đường.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    },
+    {
+      "label": "Caffeine",
+      "unit": "mg/ly",
+      "value_min": 100,
+      "value_max": 200,
+      "value": null,
+      "per_serving": "100–200 mg/ly",
+      "basis": "Khoảng tầm soát cho phin, xem caffeine_mg_note; không phải số đo.",
+      "confidence": "low",
+      "source_ref": "Nguồn thứ cấp về phin Robusta (xem caffeine_mg_note)"
+    }
+  ],
+  "allergen_note": "Đã gắn đủ 3/3 dòng trong ly: chỉ sữa đặc có tag allergen:sua — dị ứng Sữa đã xác nhận. Cà phê đen và nước cốt dừa không có tag dị ứng trong hồ sơ; lưu ý riêng: người dị ứng dừa cần tự kiểm tra vì dừa không nằm trong tag dị ứng của hồ sơ này.",
+  "tcm_note": "Không kết luận tính vị chung cho cả ly: cà phê đen bình/khổ/Hỏa (thấp, 40 g) và nước cốt dừa bình/cam/Thổ (trung bình, ~19 g) là hai nhãn khác nhau; sữa đặc không có nhãn. Ghi cả hai nhãn theo dòng, không gộp thành một ngũ hành duy nhất."
 }
