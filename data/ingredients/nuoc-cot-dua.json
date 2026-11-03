@@ -41,8 +41,8 @@
     ]
   },
   "secondary_sources": [],
-  "density_g_per_ml": null,
-  "density_note": null,
+  "density_g_per_ml": 0.97,
+  "density_note": "SUY RA, SAI SỐ NHỎ CHO DÒNG NHỎ: nước cốt dừa đóng hộp có mật độ khoảng 0,97–1,00 g/ml; lấy 0,97 làm điểm thấp để không thổi kcal. Với dòng 20 ml trong cà phê cốt dừa, sai số mật độ ±0,03 chỉ lệch khoảng 1–2 kcal, không đáng kể so với khoảng kcal 197–330 của chính hồ sơ này. Nếu dùng nước cốt nhất đặc hơn thì mật độ và kcal đều cao hơn — xem mapping_note.",
   "default_yield_factor": null,
   "default_yield_factor_note": null,
   "oil_absorption_pct": 0.0,
