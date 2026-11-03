@@ -78,7 +78,11 @@
         </div>
     </div>
 
-    <div id="list" class="ld-grid" style="margin-top:16px"></div>
+    <p class="ld-note" id="count-line" style="margin:18px 2px 10px"></p>
+    <div id="list" class="ld-grid"></div>
+    <div style="text-align:center;margin-top:20px">
+        <button id="more-btn" class="ld-btn ld-btn-gray" style="display:none">Xem thêm đồ uống</button>
+    </div>
     <p id="empty" class="ld-note" style="margin-top:20px" hidden>Không có đồ uống nào khớp bộ lọc.</p>
 @endsection
 
@@ -90,11 +94,10 @@ const groupName = { tra: 'Trà', 'ca-phe': 'Cà phê', 'sinh-to': 'Sinh tố', '
 const cafName = { khong: 'Không caffeine', thap: 'Caffeine thấp', 'trung-binh': 'Caffeine trung bình', cao: 'Caffeine cao' };
 const tempName = { nong: 'Nóng', lanh: 'Lạnh', 'ca-hai': 'Nóng hoặc lạnh' };
 const heartSvg = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"><path d="M12 20.5C7 16.5 3.8 13.3 3.8 9.6 3.8 7 5.7 5 8.1 5c1.6 0 3.1.9 3.9 2.3C12.8 5.9 14.3 5 15.9 5c2.4 0 4.3 2 4.3 4.6 0 3.7-3.2 6.9-8.2 10.9Z"/></svg>';
-// Thẻ nước uống theo đúng khung ld-dcard của trang món: tiêu đề, dòng meta
-// (nhóm · loại · nóng/lạnh), huy hiệu ld-badge, chân thẻ là thông tin khẩu
-// phần đã có (dung tích · đường · caffeine · cồn). Không có ảnh và không có
-// nút tim: nước uống chưa có khe media, hệ yêu thích hiện chỉ hỗ trợ món và
-// quả — không gắn ảnh placeholder của món hay tim giả lên thẻ nước uống.
+// Thẻ nước uống theo đúng khung ld-dcard của trang món: ảnh, tim, tiêu đề,
+// dòng meta (nhóm · loại · nóng/lạnh), huy hiệu ld-badge, chân thẻ là thông
+// tin khẩu phần đã có (dung tích · đường · caffeine · cồn). Khi chưa có ảnh
+// thật, thẻ dùng placeholder-drink.svg (không phải ảnh thật của mục đó).
 function card(d) {
     const badges = [];
     if (d.kind === 'dong-goi') badges.push('<span class="ld-badge">Sản phẩm đóng gói</span>');
@@ -139,26 +142,40 @@ function card(d) {
         </span>
     </a>`;
 }
-async function load() {
+// Phân trang theo mẫu trang món: 24 mục/trang + nút xem thêm + dòng đếm,
+// để cả 230 mục đều tới được (trước đây API mặc định trả 100 mục, 130 mục
+// còn lại không tới được từ trang danh sách).
+let page = 1, total = 0, lastPage = 1;
+async function loadPage(append) {
     const params = new URLSearchParams();
     ['q', 'group', 'kind', 'temperature', 'alcohol', 'caffeine_level', 'sweetness'].forEach(id => {
         const v = document.getElementById(id).value.trim();
         if (v) params.set(id, v);
     });
     if (isOn('no-alcohol-first') && !document.getElementById('alcohol').value) params.set('alcohol', '0');
+    params.set('per_page', '24');
+    params.set('page', String(page));
     const res = await fetch('/api/drinks?' + params.toString());
     const data = await res.json();
-    const items = data.data || [];
-    document.getElementById('list').innerHTML = items.map(card).join('');
-    document.getElementById('empty').hidden = items.length > 0;
+    total = data.total ?? 0; lastPage = data.last_page ?? 1;
+    const html = (data.data || []).map(card).join('');
+    const box = document.getElementById('list');
+    box.innerHTML = append ? box.innerHTML + html : html;
+    const shown = box.querySelectorAll('.ld-dcard').length;
+    document.getElementById('count-line').textContent = total ? `Đang hiện ${shown} trong ${total} đồ uống` : '';
+    document.getElementById('more-btn').style.display = page < lastPage ? '' : 'none';
+    document.getElementById('empty').hidden = shown > 0;
+    if (window.ldRefreshHearts) window.ldRefreshHearts();
 }
+function reload() { page = 1; loadPage(false); }
+document.getElementById('more-btn').addEventListener('click', () => { page++; loadPage(true); });
 ['q', 'group', 'kind', 'temperature', 'alcohol', 'caffeine_level', 'sweetness'].forEach(id =>
-    document.getElementById(id).addEventListener(id === 'q' ? 'input' : 'change', load));
+    document.getElementById(id).addEventListener(id === 'q' ? 'input' : 'change', reload));
 document.getElementById('no-alcohol-first').addEventListener('click', () => {
     const b = document.getElementById('no-alcohol-first');
     b.setAttribute('aria-checked', isOn('no-alcohol-first') ? 'false' : 'true');
-    load();
+    reload();
 });
-load();
+reload();
 </script>
 @endpush
