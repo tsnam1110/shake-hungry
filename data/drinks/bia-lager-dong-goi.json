@@ -91,5 +91,13 @@
   "reviewed_by": null,
   "reviewed_at": null,
   "review_note": "Thí điểm bổ sung thông tin đồ uống 2026-11-03: thêm key_indicators, serving_note, allergen_note, origin_note; thống nhất ghi chú ABV (loại 4,0–5,0%, VN phổ biến 4,3–5,0%). Chờ Benjamin duyệt lại mục này — key_indicators chưa được seeder/controller/view đọc, cần giai đoạn schema riêng để hiển thị.",
-  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §6; USDA SR Legacy FDC 168746 cho kcal/carb theo loại."
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §6; USDA SR Legacy FDC 168746 cho kcal/carb theo loại.",
+  "media": [
+    {
+      "path": "media/drinks/bia-lager-dong-goi.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ]
 }
