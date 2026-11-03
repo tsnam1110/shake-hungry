@@ -67,6 +67,7 @@ const now = new Date();
 const monthSel = document.getElementById('month');
 monthSel.innerHTML = '<option value="">Tất cả các tháng</option>' + Array.from({length: 12}, (_, i) =>
     `<option value="${i + 1}" ${i + 1 === now.getMonth() + 1 ? 'selected' : ''}>Tháng ${i + 1}</option>`).join('');
+const groupName = { 'rau-la': 'Rau lá', 'rau-cu': 'Rau củ', 'rau-qua': 'Rau quả', 'dau-do': 'Đậu–đỗ rau, ngô, giá', 'rau-thom-an-kem': 'Rau thơm ăn kèm', 'dang-che-bien': 'Dạng chế biến' };
 function esc(s) { return (s ?? '').toString().replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
 function isOn(id) { return document.getElementById(id).getAttribute('aria-checked') === 'true'; }
 function ranges(months) {
@@ -89,37 +90,64 @@ function ranges(months) {
     }
     return parts.join(', ');
 }
-function badge(v, month) {
-    if (v.state !== 'tuoi') return 'Bán quanh năm';
-    if (v.supply === 'nhap-khau') return 'Nhập khẩu quanh năm';
-    if (v.main_season_months && month && v.main_season_months.includes(month)) return `Chính vụ tháng ${month}`;
-    if (v.main_season_months && v.main_season_months.length) return `Chính vụ ${ranges(v.main_season_months)}`;
-    if (v.supply === 'da-lat') return 'Hàng Đà Lạt';
-    return 'Có bán';
+// Tháng có bán để vẽ thanh mùa vụ: dạng chế biến bán quanh năm; nếu đã
+// chọn vùng thì dùng lịch của vùng đó, chưa chọn vùng thì hợp nhất 3 vùng.
+function availMonths(v, region) {
+    if (v.state !== 'tuoi') return [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+    if (region) return v['months_' + region] ?? [];
+    return [...new Set([...(v.months_bac ?? []), ...(v.months_trung ?? []), ...(v.months_nam ?? [])])].sort((a, b) => a - b);
 }
-function regionLine(v, region) {
+// Lịch theo vùng dạng chữ, giữ làm chú thích (title) của thanh mùa vụ —
+// thẻ theo mẫu quả không còn dòng lịch vùng, nhưng thông tin vùng của rau
+// không được mất khi chưa mở trang chi tiết.
+function regionTitle(v) {
     const names = { bac: 'Bắc', trung: 'Trung', nam: 'Nam' };
-    const show = region ? [region] : ['bac', 'trung', 'nam'];
-    return show.map(r => {
+    return ['bac', 'trung', 'nam'].map(r => {
         const months = v['months_' + r];
         const note = (v.region_notes && v.region_notes[r]) || '';
         if (months === null || months === undefined) return `${names[r]}: chưa có lịch riêng`;
-        if (note) return `${names[r]}: ${esc(note)}`;
+        if (note) return `${names[r]}: ${note}`;
         return `${names[r]}: ${ranges(months)}`;
     }).join(' · ');
 }
+// Huy hiệu thẻ rau, theo cùng hệ ld-badge của trang quả: vụ chính (vu),
+// tốt nhất lúc này (bo), số chưa kiểm định (unv), ảnh minh họa; thêm các
+// nhãn riêng của rau (bán quanh năm, nhập khẩu quanh năm, hàng Đà Lạt,
+// tháng chưa chắc chắn) mà trang quả không có.
+function badges(v, month) {
+    const out = [];
+    let season = '';
+    if (v.state !== 'tuoi') season = 'Bán quanh năm';
+    else if (v.supply === 'nhap-khau') season = 'Nhập khẩu quanh năm';
+    else if (month && (v.main_season_months ?? []).includes(month)) season = 'Đang vụ chính';
+    else if ((v.main_season_months ?? []).length) season = `Chính vụ ${ranges(v.main_season_months)}`;
+    else if (v.supply === 'da-lat') season = 'Hàng Đà Lạt';
+    else season = 'Có bán';
+    const seasonCls = (month && (v.main_season_months ?? []).includes(month)) || (v.main_season_months ?? []).length ? 'vu' : '';
+    out.push(`<span class="ld-badge ${seasonCls}">${esc(season)}</span>`);
+    if (month && (v.best_months ?? []).includes(month)) out.push('<span class="ld-badge bo">Tốt nhất lúc này</span>');
+    if (v.supply === 'da-lat' && season !== 'Hàng Đà Lạt') out.push('<span class="ld-badge">Hàng Đà Lạt</span>');
+    if (v.uncertain) out.push('<span class="ld-badge">Tháng chưa chắc chắn</span>');
+    if (v.unverified) out.push('<span class="ld-badge unv">Số chưa kiểm định</span>');
+    if (v.image?.is_ai) out.push('<span class="ld-badge">Ảnh minh họa</span>');
+    return out.join('');
+}
+// Thẻ rau theo đúng khung ld-dcard của trang quả: ảnh, tiêu đề, dòng meta
+// (nhóm · kcal · tên khác), huy hiệu, thanh mùa vụ 12 tháng ở chân thẻ.
+// Không có nút yêu thích: hệ yêu thích hiện chỉ hỗ trợ món và quả, chưa có
+// rau — không gắn tim giả lên thẻ rau.
 function card(v, month, region) {
-    const img = v.image ? `<img src="${esc(v.image.url)}" alt="" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px">` : '';
-    const kcal = v.kcal_per_100g !== null && v.kcal_per_100g !== undefined
-        ? `${Math.round(v.kcal_per_100g)} kcal/100g${v.kcal_confidence ? ` <span style="color:var(--color-faint)">(${esc(v.kcal_confidence)})</span>` : ''}`
-        : 'Chưa đủ dữ liệu';
-    const unc = v.uncertain ? ' <span style="color:var(--color-faint)">· tháng chưa chắc chắn</span>' : '';
-    return `<a class="ld-card" href="/rau-mua/${esc(v.slug)}" style="text-decoration:none;color:inherit;display:block">
-        ${img}
-        <div style="margin-top:10px"><span class="ld-chip active" style="cursor:default">${esc(badge(v, month))}</span></div>
-        <h2 style="margin:8px 0 0;font-size:17px;font-weight:700">${esc(v.name_vi)}</h2>
-        <p style="margin:4px 0 0;font-size:14px;color:var(--color-sub)">${kcal}${unc}</p>
-        <p style="margin:4px 0 0;font-size:13.5px;color:var(--color-faint)">${regionLine(v, region)}</p>
+    const avail = availMonths(v, region);
+    const main = v.main_season_months ?? [];
+    return `<a href="/rau-mua/${esc(v.slug)}" class="ld-dcard">
+        <img class="ld-dcard-img" src="${v.image?.url ?? '/images/placeholder-ingredient.svg'}" alt="${esc(v.name_vi)}" loading="lazy" decoding="async">
+        <span class="ld-dcard-body">
+            <span class="ld-dcard-title">${esc(v.name_vi)}</span>
+            <span class="ld-dcard-meta">${esc(groupName[v.group] || v.group)} · ${v.kcal_per_100g != null ? Math.round(v.kcal_per_100g) + ' kcal/100g' : 'chưa có số calo'}${(v.aliases ?? []).length ? ' · ' + v.aliases.map(a => esc(a)).join(', ') : ''}</span>
+            <span class="ld-dcard-badges">${badges(v, month)}</span>
+            <span class="ld-dcard-foot"><span class="ld-seasonbar" title="${esc(regionTitle(v))}" aria-hidden="true">${Array.from({length: 12}, (_, i) =>
+                `<i class="${main.includes(i + 1) ? 'main' : avail.includes(i + 1) ? 'on' : ''}"></i>`).join('')}</span></span>
+        </span>
     </a>`;
 }
 async function load() {
@@ -130,7 +158,7 @@ async function load() {
     if (document.getElementById('group').value) params.set('group', document.getElementById('group').value);
     if (document.getElementById('supply').value) params.set('supply', document.getElementById('supply').value);
     if (document.getElementById('state').value) params.set('state', document.getElementById('state').value);
-    // Công tắc bật (mặc định): lọc theo tháng đã chọn. Tắt đi: xem toàn danh sách, tháng chỉ dùng để tính badge chính vụ trên thẻ.
+    // Công tắc bật (mặc định): lọc theo tháng đã chọn. Tắt đi: xem toàn danh sách, tháng chỉ dùng để tính huy hiệu trên thẻ.
     if (isOn('only-season') && month) { params.set('month', month); if (region) params.set('region', region); }
     const res = await fetch('/api/vegetables?' + params.toString());
     const data = await res.json();

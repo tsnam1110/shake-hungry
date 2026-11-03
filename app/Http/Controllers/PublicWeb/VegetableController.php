@@ -21,7 +21,11 @@ class VegetableController extends Controller
 {
     public function index(Request $request): JsonResponse
     {
-        $query = Vegetable::query()->with('ingredient:id,slug,name_vi,name_en')->orderBy('slug');
+        // Theo mẫu Fruit: kèm media để lấy ảnh chính, kèm nutrition_snapshot
+        // để tính cờ "chưa kiểm định" cho thẻ danh sách (không đổi dữ liệu).
+        $query = Vegetable::query()
+            ->with(['ingredient:id,slug,name_vi,name_en,nutrition_snapshot', 'ingredient.media'])
+            ->orderBy('slug');
 
         if ($q = trim((string) $request->query('q', ''))) {
             // Aliases nằm trong cột JSON mảng chuỗi nên tìm bằng PHP trên một
@@ -83,7 +87,9 @@ class VegetableController extends Controller
 
     public function show(Vegetable $vegetable): JsonResponse
     {
-        $vegetable->load('ingredient.media', 'ingredient.tcmTraits');
+        // Theo mẫu Fruit: kèm aliases + tags để trang chi tiết vẽ được khối
+        // dị ứng và dòng tên gọi khác của nguyên liệu liên kết.
+        $vegetable->load('ingredient.aliases:id,ingredient_id,name,note', 'ingredient.tags:id,slug,name', 'ingredient.media', 'ingredient.tcmTraits');
         $ingredient = $vegetable->ingredient;
         $snapshot = $ingredient?->nutrition_snapshot ?? [];
 
@@ -111,16 +117,22 @@ class VegetableController extends Controller
                 'needs_review' => $vegetable->needs_review,
             ],
             'ingredient' => $ingredient ? [
+                'id' => $ingredient->id,
                 'slug' => $ingredient->slug,
                 'name_vi' => $ingredient->name_vi,
                 'name_en' => $ingredient->name_en,
                 'tcm' => \App\Cultural\TcmDisplay::forIngredient($ingredient),
+                'aliases' => $ingredient->aliases->map(fn ($a) => ['name' => $a->name, 'note' => $a->note])->all(),
+                'tags' => $ingredient->tags->map(fn ($t) => ['slug' => $t->slug, 'name' => $t->name])->all(),
                 'nutrition' => [
                     'kcal_per_100g' => $snapshot['kcal_per_100g'] ?? null,
                     'protein_g' => $snapshot['protein_g'] ?? null,
                     'fat_g' => $snapshot['fat_g'] ?? null,
                     'carb_g' => $snapshot['carb_g'] ?? null,
+                    'fiber_g' => $snapshot['fiber_g'] ?? null,
+                    'sodium_mg' => $snapshot['sodium_mg'] ?? null,
                     'fct_source' => $snapshot['fct_source'] ?? null,
+                    'scientific_name' => $snapshot['scientific_name'] ?? null,
                     'unverified' => SourceTier::isSecondary($snapshot['fct_source'] ?? null),
                 ],
             ] : null,
@@ -133,6 +145,7 @@ class VegetableController extends Controller
     private function summary(Vegetable $vegetable): array
     {
         $ingredient = $vegetable->ingredient;
+        $snapshot = $ingredient?->nutrition_snapshot ?? [];
 
         return [
             'id' => $vegetable->id,
@@ -154,6 +167,9 @@ class VegetableController extends Controller
             'uncertain' => $vegetable->uncertain,
             'uncertain_note' => $vegetable->uncertain_note,
             'image' => $ingredient?->primaryImage(),
+            // Cờ "chưa kiểm định" theo mẫu Fruit (nguồn thứ cấp) — chỉ có
+            // ý nghĩa khi có nguyên liệu liên kết, rau chưa có hồ sơ thì false.
+            'unverified' => $ingredient ? SourceTier::isSecondary($snapshot['fct_source'] ?? null) : false,
             'needs_review' => $vegetable->needs_review,
         ];
     }
