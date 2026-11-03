@@ -17,8 +17,26 @@
 const slug = location.pathname.split('/').pop();
 function esc(s) { return (s ?? '').toString().replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
 function li(x) { return `<li>${esc(x)}</li>`; }
-function ing(x) { return `<li>${esc(x.name)}${x.quantity !== null && x.quantity !== undefined ? ` — ${x.quantity}${x.unit ? ' ' + x.unit : ''}` : ''}</li>`; }
 const chev = '<svg class="ld-chev" width="8" height="14" viewBox="0 0 8 14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M1 1l6 6-6 6"/></svg>';
+// Nhãn độ tin cậy và class capsule — cùng bảng với trang món.
+const confLabel = { high: 'Tin cậy cao', medium: 'Tin cậy trung bình', low: 'Tin cậy thấp · số tham khảo' };
+const confClass = { high: '', medium: 'medium', low: 'low' };
+// Hàng nguyên liệu theo mẫu trang món (ld-row): có ingredient_slug thì là
+// link tới trang nguyên liệu kèm chevron, không có thì là hàng thường —
+// không tự gán nguyên liệu cho dòng chưa gắn slug.
+function ingRow(x) {
+    const inner = `<span class="grow">
+        <span style="font-weight:600">${esc(x.name)}</span>
+        <span class="sub ld-tnum">${x.quantity !== null && x.quantity !== undefined ? esc(x.quantity) + (x.unit ? ' ' + esc(x.unit) : '') : ''}</span>
+    </span>`;
+    return x.ingredient_slug
+        ? `<a class="ld-row ld-row-compact" href="/nguyen-lieu/${esc(x.ingredient_slug)}">${inner}${chev}</a>`
+        : `<div class="ld-row ld-row-compact">${inner}</div>`;
+}
+// Hàng nhãn/giá trị theo mẫu khối nguồn gốc của trang món.
+function labelRow(label, value) {
+    return `<div class="ld-row"><span class="grow" style="color:var(--color-sub)">${label}</span><span class="value" style="color:var(--color-ink)">${esc(value)}</span></div>`;
+}
 fetch('/api/drinks/' + slug).then(r => r.json()).then(({drink: d, combinations, combinations_disclaimer}) => {
     const groupName = { tra: 'Trà', 'ca-phe': 'Cà phê', 'sinh-to': 'Sinh tố', 'nuoc-ep': 'Nước ép', 'giai-khat': 'Giải khát', 'cocktail-co-con': 'Cocktail có cồn', mocktail: 'Mocktail', 'nuoc-ngot-co-ga': 'Nước ngọt có ga', 'tra-dong-chai': 'Trà đóng chai', 'ca-phe-dong-goi': 'Cà phê đóng gói', 'nuoc-ep-dong-hop': 'Nước ép đóng hộp', 'sua-dong-hop': 'Sữa đóng hộp', 'tang-luc-dien-giai': 'Tăng lực / điện giải', 'nuoc-dong-goi-khac': 'Nước đóng gói khác', bia: 'Bia', vang: 'Vang', ruou: 'Rượu', 'nuoc-giai-khat-dong-goi': 'Nước giải khát đóng gói' };
     const cafName = { khong: 'Không caffeine', thap: 'Caffeine thấp', 'trung-binh': 'Caffeine trung bình', cao: 'Caffeine cao' };
@@ -52,7 +70,8 @@ fetch('/api/drinks/' + slug).then(r => r.json()).then(({drink: d, combinations, 
         ${nut && nut.status === 'computed'
             ? `<div style="display:flex;align-items:baseline;gap:9px;margin-top:4px;flex-wrap:wrap">
                     <span class="ld-kcal-so ld-tnum">${Math.round(nut.kcal_min)}–${Math.round(nut.kcal_max)}</span>
-                    <span style="color:var(--color-sub);font-size:14.5px">kcal</span></div>
+                    <span style="color:var(--color-sub);font-size:14.5px">kcal</span>
+                    ${nut.confidence ? `<span class="ld-capsule ${confClass[nut.confidence] ?? ''}">${confLabel[nut.confidence] ?? ''}</span>` : ''}</div>
                 <p class="ld-note" style="margin-top:10px">${esc(d.kcal_note || '')}</p>
                 ${nut.missing?.length ? `<p class="ld-note" style="margin-top:10px">Chưa tính được một phần (đã nới cận trên theo tỷ lệ thiếu): ${nut.missing.map(esc).join('; ')}</p>` : ''}
                 ${nut.negligible?.length ? `<p class="ld-note" style="margin-top:10px">Không tính (garnish không đáng kể, mỗi dòng ≈ 1 kcal): ${nut.negligible.map(esc).join('; ')}</p>` : ''}`
@@ -64,11 +83,22 @@ fetch('/api/drinks/' + slug).then(r => r.json()).then(({drink: d, combinations, 
     if (d.alcohol_note) html += `<p class="ld-note" style="margin-top:10px">${esc(d.alcohol_note)}</p>`;
     html += `</div>`;
 
-    // Kết hợp cần lưu ý — chỉ hiện khi có cặp, đúng mẫu trang món (không hiện thẻ rỗng).
+    // Kết hợp cần lưu ý — chỉ hiện khi có cặp, đúng mẫu trang món (không hiện thẻ rỗng):
+    // mỗi cặp ghi cả hai phía + mức + điều kiện/khoa học, kèm cơ chế, nguồn truyền
+    // thống và nguồn tham khảo khi có — không rút gọn còn mức + điều kiện như trước.
     if (combinations && combinations.length) {
         html += `<div class="ld-card" style="margin-top:30px">
             <p class="ld-group-label" style="margin:0 0 6px">Kết hợp cần lưu ý với đồ uống này</p>
-            ${combinations.map(c => `<p class="ld-note" style="margin:8px 0 0"><b>${esc(c.tier_label)}:</b> ${esc(c.condition_vi || '')}</p>`).join('')}
+            ${combinations.map(c => `<div style="padding:10px 0;border-bottom:1px solid var(--color-border)">
+                <div style="display:flex;gap:8px;align-items:flex-start;flex-wrap:wrap">
+                    <span class="ld-badge" style="background:var(--color-danger-tint);color:var(--color-danger)">${esc(c.tier_label)}</span>
+                    <span style="font-weight:700;font-size:15.5px">${esc(c.side_a_label)} + ${esc(c.side_b_label)}</span>
+                </div>
+                <p class="ld-note" style="margin:8px 0 0"><b>${esc(c.science_label || '')}.</b> ${esc(c.condition_vi || '')}</p>
+                ${c.mechanism_vi ? `<p class="ld-note" style="margin:6px 0 0">Cơ chế: ${esc(c.mechanism_vi)}</p>` : ''}
+                ${c.traditional_source ? `<p class="ld-note" style="margin:6px 0 0">Nguồn truyền thống: ${esc(c.traditional_source)}</p>` : ''}
+                ${c.sources?.length ? `<p class="ld-note" style="margin:6px 0 0">${c.sources.map(s => s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.note || s.url)}</a>` : esc(s.note || '')).join(' · ')}</p>` : ''}
+            </div>`).join('')}
             <p class="ld-note" style="margin-top:10px">${esc(combinations_disclaimer)}</p>
         </div>`;
     }
@@ -78,24 +108,31 @@ fetch('/api/drinks/' + slug).then(r => r.json()).then(({drink: d, combinations, 
 
     if (d.kind === 'dong-goi') {
         // Đặc thù nước uống được giữ nguyên: đóng gói CHỈ khối "Thông tin nhãn", không bịa công thức.
-        html += `<h2 class="ld-section-title">Thông tin nhãn</h2><div class="ld-card"><ul>`;
-        if (d.packaging) html += li('Bao bì bán phổ biến: ' + d.packaging);
-        if (d.serving_ml) html += li('Dung tích tham chiếu: ' + d.serving_ml + ' ml');
+        // Chỉ đổi hình thức từ danh sách ul sang hàng ld-group như khối nguồn gốc của trang món.
+        let labelHtml = `<h2 class="ld-section-title">Thông tin nhãn</h2><div class="ld-group">`;
+        if (d.packaging) labelHtml += labelRow('Bao bì bán phổ biến', d.packaging);
+        if (d.serving_ml) labelHtml += labelRow('Dung tích tham chiếu', d.serving_ml + ' ml');
         const sr = rangeText(d.sugar_range_g, 'g');
-        if (sr) html += li('Đường theo loại: ' + sr);
+        if (sr) labelHtml += labelRow('Đường theo loại', sr);
         const ar = rangeText(d.alcohol_pct_range, '%');
-        if (ar) html += li('Cồn theo loại: ' + ar);
-        if (d.caffeine_level) html += li(cafName[d.caffeine_level] || d.caffeine_level);
-        if (d.brand_examples?.length) html += li('Ví dụ thương hiệu (chỉ ví dụ, không phải chứng thực): ' + d.brand_examples.join(', '));
-        html += `</ul>${d.label_note ? `<p class="ld-note">${esc(d.label_note)}</p>` : ''}</div>`;
+        if (ar) labelHtml += labelRow('Cồn theo loại', ar);
+        if (d.caffeine_level) labelHtml += labelRow('Caffeine', cafName[d.caffeine_level] || d.caffeine_level);
+        if (d.brand_examples?.length) labelHtml += labelRow('Ví dụ thương hiệu (chỉ ví dụ, không phải chứng thực)', d.brand_examples.join(', '));
+        labelHtml += `</div>`;
+        if (d.label_note) labelHtml += `<p class="ld-note" style="margin-top:10px">${esc(d.label_note)}</p>`;
+        html += labelHtml;
     } else {
-        html += `<h2 class="ld-section-title">Nguyên liệu</h2><div class="ld-card"><ul>${(d.ingredients || []).map(ing).join('') || '<li>Chưa ghi nguyên liệu.</li>'}</ul>`;
-        if (d.glass) html += `<p>Ly: ${esc(d.glass)}</p>`;
-        if (d.technique) html += `<p>Kỹ thuật: ${esc(d.technique)}</p>`;
-        if (d.ice) html += `<p>Đá: ${esc(d.ice)}</p>`;
-        if (d.garnish?.length) html += `<p>Trang trí: ${esc(d.garnish.join(', '))}</p>`;
-        if (d.serving_ml) html += `<p>Dung tích: ${d.serving_ml} ml</p>`;
-        html += `</div>`;
+        // Nguyên liệu thành hàng ld-group như trang món, có link khi có ingredient_slug.
+        // Ly/kỹ thuật/đá/trang trí/dung tích giữ nguyên nội dung, đổi sang hàng nhãn/giá trị.
+        html += `<h2 class="ld-section-title">Nguyên liệu</h2><div class="ld-group">${(d.ingredients || []).map(ingRow).join('') || '<p style="color:var(--color-faint);padding:16px;margin:0">Chưa ghi nguyên liệu.</p>'}</div>`;
+        let serveHtml = `<div class="ld-group" style="margin-top:12px">`;
+        if (d.glass) serveHtml += labelRow('Ly', d.glass);
+        if (d.technique) serveHtml += labelRow('Kỹ thuật', d.technique);
+        if (d.ice) serveHtml += labelRow('Đá', d.ice);
+        if (d.garnish?.length) serveHtml += labelRow('Trang trí', d.garnish.join(', '));
+        if (d.serving_ml) serveHtml += labelRow('Dung tích', d.serving_ml + ' ml');
+        serveHtml += `</div>`;
+        if (d.glass || d.technique || d.ice || d.garnish?.length || d.serving_ml) html += serveHtml;
         // Cách pha — đánh số tròn như khối "Cách làm" của trang món.
         html += `<h2 class="ld-section-title">Cách pha</h2><div class="ld-group">`;
         html += (d.recipe_steps || []).map((s, i) => `<div class="ld-row" style="align-items:flex-start">
@@ -106,6 +143,8 @@ fetch('/api/drinks/' + slug).then(r => r.json()).then(({drink: d, combinations, 
     }
     if (d.recipe_sources?.length) html += `<h2 class="ld-section-title">Nguồn công thức</h2><div class="ld-card"><ul>${d.recipe_sources.map(li).join('')}</ul></div>`;
     if (d.source_note) html += `<p class="ld-note" style="margin-top:10px">${esc(d.source_note)}</p>`;
+    // Cảnh báo chưa duyệt — cùng mẫu trang món (đặt cuối trang, chỉ hiện khi có cờ).
+    if (d.needs_review) html += `<div class="ld-warn" style="margin-top:30px"><span><b>Đang biên soạn:</b> Đồ uống này đang trong giai đoạn biên soạn dữ liệu — thông tin có thể được cập nhật sau khi duyệt.</span></div>`;
     document.getElementById('body').innerHTML = html;
 });
 </script>
