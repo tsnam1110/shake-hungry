@@ -1,0 +1,52 @@
+{
+  "slug": "dua-leo-nhat",
+  "name_vi": "Dưa leo Nhật (sống)",
+  "name_en": "Cucumber, with peel, raw",
+  "category": "rau-cu",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "168409",
+    "source_url": "https://api.nal.usda.gov/fdc/v1/food/168409?api_key=<redacted>",
+    "scientific_name": "Cucumis sativus",
+    "kcal_per_100g": 15,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 0.65,
+    "fat_g": 0.11,
+    "carb_g": 3.63,
+    "fiber_g": 0.5,
+    "water_g": 95.23,
+    "mapping_confidence": "medium",
+    "mapping_note": "Dùng chung bản ghi USDA SR Legacy 168409 'Cucumber, with peel, raw' với nguyên liệu dua-leo trong repo (15 kcal / 0,65 g protein / 0,11 g béo / 3,63 g carb / 0,5 g xơ / 95,23 g nước trên 100 g) — USDA không có bản ghi riêng cho giống dưa leo Nhật, nên đây là đại diện cùng loài Cucumis sativus, dạng có vỏ, ăn sống; việc dùng chung hàng USDA đã được phép theo DATA-PIPELINE §7.2a. Lưu ý: bản Foundation 2346406 cho cùng thực phẩm 16 kcal — khác bộ phân tích, không trộn.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "media": [
+    {
+      "path": "media/ingredients/dua-leo-nhat.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
+  "tcm_traits": [],
+  "source": "curated",
+  "confidence": "low",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Hồ sơ mới tạo 2026-11-03 để gắn ảnh cho rau theo mùa, làm từng sản phẩm một theo kế hoạch giai đoạn đã duyệt, chưa qua duyệt của chủ dự án.",
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}
