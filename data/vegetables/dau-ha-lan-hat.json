@@ -1,7 +1,7 @@
 {
   "slug": "dau-ha-lan-hat",
   "name_vi": "Đậu Hà Lan hạt",
-  "ingredient_slug": null,
+  "ingredient_slug": "dau-ha-lan-hat",
   "group": "dau-do",
   "supply": "ca-hai",
   "state": "tuoi",
@@ -56,7 +56,7 @@
   },
   "main_season_months": null,
   "best_months": null,
-  "kcal_per_100g": null,
+  "kcal_per_100g": 81,
   "kcal_confidence": null,
   "aliases": [],
   "selection_note": "Tươi: quả căng, hạt tròn đều, vỏ xanh tươi, bẻ hạt ngọt; quả lép, vỏ vàng là già. Đông lạnh: hạt rời, không đóng tảng đá, không tái đông.",
@@ -65,10 +65,10 @@
   "safety_note": "Đầy hơi do oligosaccharide trong họ đậu (co-so, mức nhẹ); purine — người gout ăn lượng vừa phải là lời khuyên chung, không phải chống chỉ định tuyệt đối. Không copy số đậu Hà Lan ăn cả vỏ 42 kcal. Cả hai nguồn: tươi Đà Lạt/Lạng Sơn và đông lạnh nhập khẩu (chiếm phần lớn quầy siêu thị).",
   "uncertain": true,
   "uncertain_note": "Đông lạnh: nhập khẩu quanh năm, không có mùa vụ Việt Nam. Tươi theo vụ mát, UNCERTAIN về tháng chính xác (một nguồn ghi gieo vụ Đông–Xuân miền Bắc tháng 10, Đà Lạt quanh năm).",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau). Đính chính 2026-11-03: gắn hồ sơ nguyên liệu mới cùng slug để trang rau hiển thị ảnh (làm từng sản phẩm một); hồ sơ nguyên liệu mới chưa qua duyệt của chủ dự án.",
   "source": "catalogue-v2",
   "source_note": "Catalogue rau theo mùa v2 (2026-11-03), phần E — rau nhập khẩu / giống nhập trồng tại Việt Nam. Toàn bộ 18 mục chưa có hồ sơ repo nên kcal null — giữ thiếu, không copy số của loài/giống gốc."
 }
