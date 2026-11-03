@@ -81,6 +81,26 @@ class DrinkController extends Controller
     public function show(Drink $drink): JsonResponse
     {
         $nutrition = app(\App\Nutrition\DrinkNutritionService::class)->compute($drink);
+        // Ảnh thumbnail cho hàng nguyên liệu (như trang món): chỉ các dòng
+        // đã gắn ingredient_slug mới có ảnh từ hồ sơ nguyên liệu đó; dòng
+        // chưa gắn thì image = null và giao diện dùng placeholder.
+        $rawIngredients = $drink->ingredients ?? [];
+        $slugs = collect($rawIngredients)
+            ->map(fn ($line) => $line['ingredient_slug'] ?? null)
+            ->filter()
+            ->unique()
+            ->values();
+        $ingredientsBySlug = \App\Models\Ingredient::whereIn('slug', $slugs)
+            ->with('media')
+            ->get()
+            ->keyBy('slug');
+        $ingredients = collect($rawIngredients)
+            ->map(fn ($line) => $line + [
+                'image' => isset($line['ingredient_slug']) && $ingredientsBySlug->has($line['ingredient_slug'])
+                    ? $ingredientsBySlug[$line['ingredient_slug']]->primaryImage()
+                    : null,
+            ])
+            ->all();
         $counterpart = null;
         if ($drink->mocktail_counterpart_slug) {
             $counterpart = Drink::where('slug', $drink->mocktail_counterpart_slug)->first();
@@ -93,7 +113,7 @@ class DrinkController extends Controller
                 'technique' => $drink->technique,
                 'ice' => $drink->ice,
                 'garnish' => $drink->garnish ?? [],
-                'ingredients' => $drink->ingredients ?? [],
+                'ingredients' => $ingredients,
                 'recipe_steps' => $drink->recipe_steps ?? [],
                 'sugar_note' => $drink->sugar_note,
                 'alcohol_note' => $drink->alcohol_note,

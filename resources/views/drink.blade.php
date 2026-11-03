@@ -26,7 +26,10 @@ const confClass = { high: '', medium: 'medium', low: 'low' };
 // link tới trang nguyên liệu kèm chevron, không có thì là hàng thường —
 // không tự gán nguyên liệu cho dòng chưa gắn slug.
 function ingRow(x) {
-    const inner = `<span class="grow">
+    // Thumbnail như hàng nguyên liệu của trang món: ảnh thật của hồ sơ
+    // nguyên liệu đã liên kết, chưa liên kết thì placeholder — không bịa ảnh.
+    const inner = `<img class="ld-thumb" src="${x.image?.url ?? '/images/placeholder-ingredient.svg'}" alt="" loading="lazy" decoding="async">
+    <span class="grow">
         <span style="font-weight:600">${esc(x.name)}</span>
         <span class="sub ld-tnum">${x.quantity !== null && x.quantity !== undefined ? esc(x.quantity) + (x.unit ? ' ' + esc(x.unit) : '') : ''}</span>
     </span>`;
@@ -83,10 +86,29 @@ fetch('/api/drinks/' + slug).then(r => r.json()).then(({drink: d, allergen, comb
                 ${nut.missing?.length ? `<p class="ld-note" style="margin-top:10px">Chưa tính được một phần (đã nới cận trên theo tỷ lệ thiếu): ${nut.missing.map(esc).join('; ')}</p>` : ''}
                 ${nut.negligible?.length ? `<p class="ld-note" style="margin-top:10px">Không tính (garnish không đáng kể, mỗi dòng ≈ 1 kcal): ${nut.negligible.map(esc).join('; ')}</p>` : ''}`
             : `<p style="color:var(--color-faint);margin:10px 0 0">Chưa tính được kcal cho đồ uống này — hệ thống không hiện số thay vì đoán.${d.kcal_note ? ' ' + esc(d.kcal_note) : ''}</p>`}`;
-    if (d.sugar_added_g !== null && d.sugar_added_g !== undefined) html += `<p class="ld-note" style="margin-top:10px">Đường thêm: ${d.sugar_added_g}g</p>`;
+    // Lưới chỉ số theo đúng mẫu lưới macro của trang món (ld-macro): 4 ô
+    // dung tích / đường / caffeine / cồn, chỉ dùng số đã có trong dữ liệu,
+    // thiếu thì hiện "?" như trang món hiện macro thiếu — không bịa số.
+    // Đây là phần làm trang nước uống trông giống trang món nhất: trước đây
+    // các chỉ số này chỉ là dòng chữ xám, nên thẻ dinh dưỡng trông trống.
+    // Số thập phân từ DB về dạng chuỗi ("8.00") thì gọn thành "8" cho đẹp
+    // như trang món, không đổi giá trị.
+    const fmtNum = (v) => { const n = parseFloat(v); return Number.isNaN(n) ? v : String(n); };
+    const sugarVal = d.kind === 'pha-che'
+        ? (d.sugar_added_g !== null && d.sugar_added_g !== undefined ? `${fmtNum(d.sugar_added_g)} g` : '?')
+        : (rangeText(d.sugar_range_g, 'g') || '?');
+    const alcoholVal = d.alcohol
+        ? (d.alcohol_pct_estimate ? `~${fmtNum(d.alcohol_pct_estimate)}%` : (rangeText(d.alcohol_pct_range, '%') || 'Có cồn'))
+        : 'Không cồn';
+    html += `<div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5" style="margin-top:14px">
+        <div class="ld-macro"><div class="gt ld-tnum">${d.serving_ml ? d.serving_ml + ' ml' : '?'}</div><div class="nhan">Dung tích</div></div>
+        <div class="ld-macro"><div class="gt ld-tnum">${esc(sugarVal)}</div><div class="nhan">Đường${d.kind === 'pha-che' ? ' thêm' : ' theo loại'}</div></div>
+        <div class="ld-macro"><div class="gt ld-tnum">${d.caffeine_level ? esc(cafName[d.caffeine_level] || d.caffeine_level) : '?'}</div><div class="nhan">Caffeine</div></div>
+        <div class="ld-macro"><div class="gt ld-tnum">${esc(alcoholVal)}</div><div class="nhan">Cồn</div></div>
+    </div>`;
     if (d.sugar_note) html += `<p class="ld-note" style="margin-top:10px">${esc(d.sugar_note)}</p>`;
-    if (d.caffeine_level) html += `<p class="ld-note" style="margin-top:10px">${esc(cafName[d.caffeine_level] || d.caffeine_level)} — chỉ mức định tính, không ghi mg.</p>`;
-    if (d.alcohol_pct_estimate) html += `<p class="ld-note" style="margin-top:10px">Độ cồn ước tính trước pha loãng: ~${d.alcohol_pct_estimate}%</p>`;
+    if (d.caffeine_level) html += `<p class="ld-note" style="margin-top:10px">Caffeine chỉ mức định tính, không ghi mg.</p>`;
+    if (d.alcohol_pct_estimate) html += `<p class="ld-note" style="margin-top:10px">Độ cồn ước tính trước pha loãng.</p>`;
     if (d.alcohol_note) html += `<p class="ld-note" style="margin-top:10px">${esc(d.alcohol_note)}</p>`;
     html += `</div>`;
 
