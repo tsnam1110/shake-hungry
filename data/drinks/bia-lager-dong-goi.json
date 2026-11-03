@@ -12,11 +12,11 @@
   "ingredients": [],
   "recipe_steps": [],
   "sugar_added_g": null,
-  "sugar_note": "Đường thấp, ~0–3 g/330 ml (carb tổng ~10–15 g — đọc nhãn). Không đồng nhất carb với đường.",
+  "sugar_note": "Đường thấp, ~0–3 g/330 ml. Carb tổng theo USDA bia thường 3,55 g/100 g → ~11,7 g/330 ml, nằm trong khoảng 10–15 g của catalogue — đọc nhãn sản phẩm cụ thể. Không đồng nhất carb với đường.",
   "caffeine_level": "khong",
   "alcohol": true,
   "alcohol_pct_estimate": null,
-  "alcohol_note": "Có cồn. ABV là khoảng theo loại, không phải của một thương hiệu cụ thể.",
+  "alcohol_note": "Có cồn. ABV khoảng theo loại 4,0–5,0%; phổ biến ở Việt Nam 4,3–5,0%. Khoảng này không phải của một thương hiệu cụ thể — đọc nhãn lon/chai cụ thể.",
   "safety_flags": [
     "18+"
   ],
@@ -33,7 +33,50 @@
     "min": 4.0,
     "max": 5.0
   },
-  "label_note": "Đọc nhãn sản phẩm cụ thể khi seed — khoảng trong catalogue là khoảng theo loại, dao động theo thương hiệu, không phải bảng dinh dưỡng của một sản phẩm cụ thể.",
+  "label_note": "Đọc nhãn sản phẩm cụ thể — khoảng trong catalogue là khoảng theo loại, dao động theo thương hiệu, không phải bảng dinh dưỡng của một sản phẩm cụ thể. Khối chỉ số dưới đây là khoảng theo loại, chưa phải nhãn của một lon/chai cụ thể.",
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "value": 43,
+      "value_min": null,
+      "value_max": null,
+      "unit": "kcal/100 ml",
+      "per_serving": "≈142 kcal/lon 330 ml",
+      "basis": "USDA SR Legacy FDC 168746 'Alcoholic beverage, beer, regular, all': 43 kcal/100 g, carb 3,55 g/100 g — dùng làm khoảng theo loại, không phải nhãn thương hiệu cụ thể",
+      "confidence": "medium",
+      "source_ref": "data/reference/usda-sr_legacy.csv, FDC 168746"
+    },
+    {
+      "label": "Độ cồn",
+      "value_min": 4.0,
+      "value_max": 5.0,
+      "unit": "% ABV",
+      "basis": "Khoảng theo loại trong catalogue; phổ biến ở Việt Nam 4,3–5,0%",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §6"
+    },
+    {
+      "label": "Carb tổng",
+      "value": 3.55,
+      "unit": "g/100 ml",
+      "per_serving": "~11,7 g/330 ml",
+      "basis": "USDA SR Legacy FDC 168746",
+      "confidence": "medium",
+      "source_ref": "data/reference/usda-sr_legacy.csv, FDC 168746"
+    },
+    {
+      "label": "Đường",
+      "value_min": 0,
+      "value_max": 3,
+      "unit": "g/330 ml",
+      "basis": "Khoảng theo loại trong catalogue, không đồng nhất với carb tổng",
+      "confidence": "low",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §6"
+    }
+  ],
+  "serving_note": "Dung tích phục vụ là dung tích sản phẩm (lon/chai 330 ml, hoặc chai 450 ml), không phải ly kể cả đá — mục này không dùng đá, không rót ra ly theo chuẩn seed.",
+  "allergen_note": "Có thể chứa gluten từ malt lúa mạch (thành phần điển hình) — đọc nhãn sản phẩm cụ thể; chưa đủ dữ kiện để kết luận danh sách dị ứng đầy đủ.",
+  "origin_note": "Chưa biên soạn ghi chú nguồn gốc / văn hóa uống bia ở Việt Nam cho mục này — cultural_note hiện tại chỉ là thành phần điển hình, không dùng làm ghi chú văn hóa đầy đủ.",
   "brand_examples": [
     "Tiger",
     "Heineken",
@@ -44,9 +87,9 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
-  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §6."
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Thí điểm bổ sung thông tin đồ uống 2026-11-03: thêm key_indicators, serving_note, allergen_note, origin_note; thống nhất ghi chú ABV (loại 4,0–5,0%, VN phổ biến 4,3–5,0%). Chờ Benjamin duyệt lại mục này — key_indicators chưa được seeder/controller/view đọc, cần giai đoạn schema riêng để hiển thị.",
+  "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §6; USDA SR Legacy FDC 168746 cho kcal/carb theo loại."
 }
