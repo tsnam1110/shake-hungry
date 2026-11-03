@@ -11,14 +11,10 @@
   "garnish": [],
   "ingredients": [
     {
-      "name": "cam",
-      "quantity": 2,
-      "unit": "quả"
-    },
-    {
       "name": "nước ép cam",
       "quantity": 200,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "nuoc-ep-cam"
     }
   ],
   "recipe_steps": [
@@ -41,16 +37,50 @@
   "sugar_range_g": null,
   "alcohol_pct_range": null,
   "label_note": "",
+  "liquid_ml": 200,
+  "serving_note": "Ly cao 300 ml là dung tích ly, không đá theo file. Kcal/100 ml tính trên 100 ml nước ép thật (200 ml), KHÔNG chia cho 300 ml ly. Kcal cả ly là kcal của 200 ml nước ép. Dòng cam 2 quả cũ đã bỏ: cam quả là nguyên liệu đầu vào, nước ép là đầu ra — cộng cả hai là đếm trùng; 'khoảng 2 quả' chỉ là ghi chú lượng quả vắt ra 200 ml, không phải một dòng cộng thêm.",
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "value": 47,
+      "unit": "kcal/100 ml nước ép",
+      "per_serving": "≈95 kcal/ly (200 ml nước ép)",
+      "basis": "Hồ sơ nuoc-ep-cam: USDA FDC 169098, 45 kcal/100 g, density 1,05 → 47,25 kcal/100 ml, làm tròn 47; 200 ml × 1,05 = 210 g × 45/100 = 94,5 kcal, làm tròn 95. Chưa phải đầu ra engine — engine sẽ nới khoảng theo mapping medium khi chạy thật.",
+      "confidence": "medium",
+      "source_ref": "data/ingredients/nuoc-ep-cam.json (FDC 169098)"
+    },
+    {
+      "label": "Đường tự nhiên",
+      "value": 8.8,
+      "unit": "g/100 ml nước ép",
+      "per_serving": "≈17,6 g/ly (200 ml)",
+      "basis": "8,4 g/100 g × density 1,05 = 8,82 g/100 ml; không phải đường thêm — sugar_added_g vẫn 0, xem sugar_note.",
+      "confidence": "medium",
+      "source_ref": "data/ingredients/nuoc-ep-cam.json (FDC 169098)"
+    },
+    {
+      "label": "Vitamin C (tầm soát, chưa kiểm chứng trực tiếp)",
+      "value": 52.5,
+      "unit": "mg/100 ml nước ép",
+      "per_serving": "≈105 mg/ly (200 ml)",
+      "basis": "Tầm soát: nhiều nguồn thứ cấp trích FDC 169098 đều ghi 50 mg/100 g → 52,5 mg/100 ml. Chưa kéo trực tiếp nutrient vitamin C từ FDC, nên chỉ ở tầng tầm soát, không hiển thị như số đã kiểm chứng.",
+      "confidence": "low",
+      "source_ref": "Tầm soát từ nguồn thứ cấp trích FDC 169098, chưa kéo trực tiếp"
+    }
+  ],
+  "allergen_note": "Hồ sơ nước ép không có tag dị ứng. Cam quýt không nằm trong 14 chất gây dị ứng của EU 1169/2011 nên 'không có tag' không có nghĩa là an toàn cho người dị ứng cam quýt — người dị ứng cam quýt vẫn phải tránh.",
+  "tcm_note": "Chưa kết luận ở tầng đồ uống: hồ sơ nước ép để trống tcm_traits, không lấy nhãn của quả cam nguyên (lương/toan-cam/Mộc-Thổ) áp cho nước ép đã lọc xơ.",
+  "origin_note": "Tầm soát: nước cam vắt gắn với bữa sáng và hình ảnh 'bồi bổ' (vitamin C), khác nước cam đóng hộp ở chỗ vắt tươi và không đường thêm theo chuẩn này. Ghi chú văn hóa đầy đủ cần nguồn gốc sâu hơn.",
   "brand_examples": [],
   "cultural_note": "Nước cam vắt là món 'bồi bổ' quen thuộc, khác nước cam đóng hộp.",
   "recipe_sources": [],
   "mocktail_counterpart_slug": null,
-  "uncertain": false,
-  "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "uncertain": true,
+  "uncertain_note": "Giống cam quán dùng chưa xác định: hồ sơ mới chỉ dùng cho cam ngọt Citrus sinensis, quán dùng cam sành thì không dùng hồ sơ này. Dung tích ly 300 ml trong file chưa giải thích, đã tách riêng thành liquid_ml 200 ml.",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Thí điểm đồ uống 2026-11-03: sửa lỗi đếm trùng (bỏ dòng cam 2 quả, chỉ giữ một dòng nước ép 200 ml gắn nuoc-ep-cam), thêm liquid_ml, serving_note theo quy tắc 100 ml chất lỏng thật (không chia cho ly 300 ml), key_indicators (47 kcal/100 ml, đường tự nhiên 8,8 g/100 ml, vitamin C tầm soát), allergen_note, tcm_note, origin_note. Chờ duyệt lại — key_indicators chưa được seeder/controller/view đọc.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
