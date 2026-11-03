@@ -22,9 +22,12 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
  * trong kho — vì vậy module này KHÔNG hiển thị kcal tính từ engine cho tới
  * khi (a) logic ethanol được bổ sung và (b) nguyên liệu được seed đủ. Mọi
  * món có cồn và mọi món thiếu nguyên liệu đều hiện "chưa tính được kcal".
- * Không bao giờ hiện số thiếu như số đầy đủ. Caffeine chỉ mức định tính,
- * không ghi mg. Cocktail không được gợi ý tự động trong Lắc món (chưa có
- * lọc tuổi) — module này chỉ là thư viện tra cứu.
+ * Không bao giờ hiện số thiếu như số đầy đủ. Caffeine: mức định tính, và
+ * mg/ly khi có căn cứ (khoảng tầm soát vẫn ghi rõ tầng, không ghi điểm đo
+ * giả); ô thứ tư trong lưới macro không lấp bằng "Không cồn" — có cồn thì
+ * hiện độ cồn, không cồn thì hiện chỉ số động (thường là kcal/100 ml chất
+ * lỏng), không có thì hiện "?". Cocktail không được gợi ý tự động trong
+ * Lắc món (chưa có lọc tuổi) — module này chỉ là thư viện tra cứu.
  */
 class Drink extends Model
 {
@@ -40,6 +43,7 @@ class Drink extends Model
             'food_pairing' => 'array',
             'sugar_range_g' => 'array',
             'alcohol_pct_range' => 'array',
+            'key_indicators' => 'array',
             'brand_examples' => 'array',
             'recipe_sources' => 'array',
             'alcohol' => 'boolean',

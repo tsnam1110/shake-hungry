@@ -548,7 +548,10 @@ Từ 2026-11-03 (hoàn thiện lõi nước uống): mỗi dòng nguyên liệu 
 | `garnish` / `ingredients` / `recipe_steps` | json null | ingredients: `[{name, quantity, unit}]` (ml/g) — chỉ pha chế; đóng gói luôn rỗng |
 | `serving_ml` | integer null | dung tích 1 ly (pha chế) hoặc dung tích tham chiếu (đóng gói) |
 | `sugar_added_g` / `sugar_note` | decimal null / text null | đường thêm — chỉ pha chế; khoảng thì ghi số thấp nhất + ghi rõ khoảng vào note |
-| `caffeine_level` | varchar null | `khong` / `thap` / `trung-binh` / `cao` — định tính, KHÔNG mg |
+| `caffeine_level` | varchar null | `khong` / `thap` / `trung-binh` / `cao` — định tính; mg chỉ khi có `caffeine_mg_*` |
+| `caffeine_mg_min` / `caffeine_mg_max` / `caffeine_mg_note` | decimal null / decimal null / text null | mg/ly, khoảng tầm soát vẫn ghi rõ tầng trong note, không ghi điểm đo giả; ví dụ bạc xỉu 25–70 mg/ly cho 25 ml phin (2026-11-03) |
+| `liquid_ml` | integer null | tổng ml chất lỏng thật, không tính đá, không tính dung tích ly; mẫu số cho kcal/100 ml |
+| `key_indicators` | json null | `[{label, value, value_min, value_max, unit, per_serving, basis, confidence, source_ref}]` — nguồn sự thật là file JSON, seeder chỉ sao chép; ô thứ tư lưới macro lấy từ đây khi không có cồn, không lấp bằng "Không cồn" |
 | `alcohol` / `alcohol_pct_estimate` / `alcohol_note` | boolean / decimal null / text null | ước tính TRƯỚC pha loãng; mọi entry có cồn >0,5% gắn cờ 18+ |
 | `safety_flags` | json null | `18+`, `khong-lai-xe`, `caffeine-cao`, `duong-cao`, `trung-song`, `di-ung`… |
 | `difficulty` / `prep_minutes` / `best_occasion` / `food_pairing` | varchar null / integer null / varchar null / json null | `best_occasion` thay `meal_slots` cho đồ uống |

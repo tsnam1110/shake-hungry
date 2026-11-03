@@ -100,7 +100,8 @@ fetch('/api/drinks/' + slug).then(r => r.json()).then(({drink: d, allergen, comb
             : `<p style="color:var(--color-faint);margin:10px 0 0">Chưa tính được kcal cho đồ uống này — hệ thống không hiện số thay vì đoán.</p>
                 ${cleanKcalNoteShown ? `<p class="ld-note" style="margin-top:10px">${esc(cleanKcalNoteShown)}</p>` : ''}`}`;
     // Lưới chỉ số theo đúng mẫu lưới macro của trang món (ld-macro): 4 ô
-    // dung tích / đường / caffeine / cồn, chỉ dùng số đã có trong dữ liệu,
+    // dung tích / đường / caffeine / cồn hoặc chỉ số động khi không có cồn,
+    // chỉ dùng số đã có trong dữ liệu,
     // thiếu thì hiện "?" như trang món hiện macro thiếu — không bịa số.
     // Đây là phần làm trang nước uống trông giống trang món nhất: trước đây
     // các chỉ số này chỉ là dòng chữ xám, nên thẻ dinh dưỡng trông trống.
@@ -110,17 +111,38 @@ fetch('/api/drinks/' + slug).then(r => r.json()).then(({drink: d, allergen, comb
     const sugarVal = d.kind === 'pha-che'
         ? (d.sugar_added_g !== null && d.sugar_added_g !== undefined ? `${fmtNum(d.sugar_added_g)} g` : '?')
         : (rangeText(d.sugar_range_g, 'g') || '?');
-    const alcoholVal = d.alcohol
-        ? (d.alcohol_pct_estimate ? `~${fmtNum(d.alcohol_pct_estimate)}%` : (rangeText(d.alcohol_pct_range, '%') || 'Có cồn'))
-        : 'Không cồn';
+    // Caffeine: có mg thì hiện mg (khoảng nếu có min/max), chưa có mg thì giữ
+    // mức định tính như trước — không bịa mg từ mức chữ.
+    const cafMg = (d.caffeine_mg_min !== null && d.caffeine_mg_min !== undefined && d.caffeine_mg_max !== null && d.caffeine_mg_max !== undefined)
+        ? (String(d.caffeine_mg_min) === String(d.caffeine_mg_max) ? `${fmtNum(d.caffeine_mg_min)} mg` : `${fmtNum(d.caffeine_mg_min)}–${fmtNum(d.caffeine_mg_max)} mg`)
+        : null;
+    const caffeineVal = cafMg || (d.caffeine_level ? (cafName[d.caffeine_level] || d.caffeine_level) : '?');
+    // Ô thứ tư: có cồn thì hiện độ cồn; KHÔNG cồn thì KHÔNG lấp bằng
+    // "Không cồn" — hiện chỉ số động đầu tiên chưa dùng (thường là
+    // kcal/100 ml chất lỏng từ key_indicators); không có gì thì hiện "?"
+    // như trang món hiện macro thiếu.
+    let fourthVal = '?', fourthLabel = 'Chỉ số khác';
+    if (d.alcohol) {
+        fourthVal = d.alcohol_pct_estimate ? `~${fmtNum(d.alcohol_pct_estimate)}%` : (rangeText(d.alcohol_pct_range, '%') || 'Có cồn');
+        fourthLabel = 'Cồn';
+    } else {
+        const ki = (d.key_indicators || []).find(k => /năng lượng/i.test(k.label || ''));
+        if (ki) {
+            fourthVal = (ki.value_min !== null && ki.value_min !== undefined && ki.value_max !== null && ki.value_max !== undefined)
+                ? `${fmtNum(ki.value_min)}–${fmtNum(ki.value_max)}`
+                : (ki.value !== null && ki.value !== undefined ? fmtNum(ki.value) : '?');
+            fourthLabel = 'Kcal/100 ml lỏng';
+        }
+    }
     html += `<div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5" style="margin-top:14px">
         <div class="ld-macro"><div class="gt ld-tnum">${d.serving_ml ? d.serving_ml + ' ml' : '?'}</div><div class="nhan">Dung tích</div></div>
         <div class="ld-macro"><div class="gt ld-tnum">${esc(sugarVal)}</div><div class="nhan">Đường${d.kind === 'pha-che' ? ' thêm' : ' theo loại'}</div></div>
-        <div class="ld-macro"><div class="gt ld-tnum">${d.caffeine_level ? esc(cafName[d.caffeine_level] || d.caffeine_level) : '?'}</div><div class="nhan">Caffeine</div></div>
-        <div class="ld-macro"><div class="gt ld-tnum">${esc(alcoholVal)}</div><div class="nhan">Cồn</div></div>
+        <div class="ld-macro"><div class="gt ld-tnum">${esc(caffeineVal)}</div><div class="nhan">Caffeine</div></div>
+        <div class="ld-macro"><div class="gt ld-tnum">${esc(fourthVal)}</div><div class="nhan">${esc(fourthLabel)}</div></div>
     </div>`;
     if (d.sugar_note) html += `<p class="ld-note" style="margin-top:10px">${esc(d.sugar_note)}</p>`;
-    if (d.caffeine_level) html += `<p class="ld-note" style="margin-top:10px">Caffeine chỉ mức định tính, không ghi mg.</p>`;
+    if (d.caffeine_mg_note) html += `<p class="ld-note" style="margin-top:10px">${esc(d.caffeine_mg_note)}</p>`;
+    else if (d.caffeine_level) html += `<p class="ld-note" style="margin-top:10px">Caffeine chỉ mức định tính, không ghi mg.</p>`;
     if (d.alcohol_pct_estimate) html += `<p class="ld-note" style="margin-top:10px">Độ cồn ước tính trước pha loãng.</p>`;
     if (d.alcohol_note) html += `<p class="ld-note" style="margin-top:10px">${esc(d.alcohol_note)}</p>`;
     html += `</div>`;
