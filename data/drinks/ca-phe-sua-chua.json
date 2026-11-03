@@ -96,5 +96,5 @@
     }
   ],
   "allergen_note": "Đã gắn đủ 3/3 dòng trong ly: sữa đặc và sữa chua đều có tag allergen:sua — dị ứng Sữa đã xác nhận. Cà phê đen không có tag dị ứng trong hồ sơ.",
-  "tcm_note": "Không kết luận tính vị: cả ba dòng trong ly (cà phê đen, sữa đặc, sữa chua) đều không có nhãn tính vị trong hồ sơ, trừ cà phê đen có nhãn bình/khổ/Hỏa thấp với khối lượng chỉ 20 g trên tổng ~158 g (13%, dưới ngưỡng 30% của TCM-000) — ghi nhãn của dòng cà phê, không kết luận cho cả ly."
+  "tcm_note": "Không kết luận tính vị cho cả ly: chỉ cà phê đen có nhãn bình/khổ/Hỏa, tin cậy thấp, với khối lượng 20 g trên tổng ~158 g (13%, dưới ngưỡng 30% của TCM-000); sữa đặc và sữa chua không có nhãn tính vị trong hồ sơ."
 }
