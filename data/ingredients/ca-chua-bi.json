@@ -1,0 +1,65 @@
+{
+  "slug": "ca-chua-bi",
+  "name_vi": "Cà chua bi (sống)",
+  "name_en": "Tomatoes, red, ripe, raw, year round average",
+  "category": "rau-cu",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "170457",
+    "source_url": "https://api.nal.usda.gov/fdc/v1/food/170457?api_key=<redacted>",
+    "scientific_name": "Solanum lycopersicum",
+    "kcal_per_100g": 18,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 0.88,
+    "fat_g": 0.2,
+    "carb_g": 3.89,
+    "fiber_g": 1.2,
+    "water_g": 94.5,
+    "mapping_confidence": "medium",
+    "mapping_note": "CẢNH BÁO ÁNH XẠ: USDA không có bản ghi riêng cho cà chua bi; dùng chung bản ghi 170457 'Tomatoes, red, ripe, raw, year round average' cho cà chua đỏ chín sống mọi cỡ (18 kcal / 0,88 g protein / 0,2 g béo / 3,89 g carb / 1,2 g xơ / 94,5 g nước trên 100 g), xác minh qua nhiều nguồn thứ cấp trích USDA. Bản ghi này cũng mang đơn vị đo 1 cup cà chua bi = 149 g và 1 quả = 17 g.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [
+    {
+      "unit_name": "cup cà chua bi",
+      "grams": 149.0,
+      "note": null,
+      "source": "FDC 170457 foodMeasures"
+    },
+    {
+      "unit_name": "quả cà chua bi",
+      "grams": 17.0,
+      "note": null,
+      "source": "FDC 170457 foodMeasures"
+    }
+  ],
+  "media": [
+    {
+      "path": "media/ingredients/ca-chua-bi.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
+  "tcm_traits": [],
+  "source": "curated",
+  "confidence": "low",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Hồ sơ mới tạo 2026-11-03 để gắn ảnh cho rau theo mùa chưa có nguyên liệu (lô 1/18), chưa qua duyệt của chủ dự án.",
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}

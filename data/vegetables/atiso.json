@@ -1,7 +1,7 @@
 {
   "slug": "atiso",
   "name_vi": "Atisô (hoa atisô)",
-  "ingredient_slug": null,
+  "ingredient_slug": "atiso",
   "group": "rau-qua",
   "supply": "da-lat",
   "state": "tuoi",
@@ -65,10 +65,10 @@
   "safety_note": "Kích thích tiết mật — thận trọng khi tắc ống mật/sỏi mật có triệu chứng (co-so). 'Mát gan, giải độc gan' như công dụng chữa bệnh là dân gian nếu trình bày quá mức. Phân biệt bắt buộc: atisô đỏ = bụp giấm (Hibiscus, đồ uống/mứt) và Jerusalem artichoke (củ) là 3 thứ khác nhau.",
   "uncertain": true,
   "uncertain_note": "Các nguồn mâu thuẫn về tháng (1–3 vs 2–5 vs 2–6 vs 12–2 vs 4–6) — KHÔNG chốt khoảng tháng duy nhất; cần một lần kiểm tra lịch thu hoạch Đà Lạt trước khi chốt.",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau). Đính chính 2026-11-03: gắn hồ sơ nguyên liệu mới cùng slug để trang rau hiển thị ảnh (lô 1/18); hồ sơ nguyên liệu mới chưa qua duyệt của chủ dự án.",
   "source": "catalogue-v2",
   "source_note": "Catalogue rau theo mùa v2 (2026-11-03), phần E — rau nhập khẩu / giống nhập trồng tại Việt Nam. Toàn bộ 18 mục chưa có hồ sơ repo nên kcal null — giữ thiếu, không copy số của loài/giống gốc."
 }

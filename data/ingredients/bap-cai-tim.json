@@ -1,0 +1,52 @@
+{
+  "slug": "bap-cai-tim",
+  "name_vi": "Bắp cải tím (sống)",
+  "name_en": "Cabbage, red, raw",
+  "category": "rau-cu",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "169977",
+    "source_url": "https://api.nal.usda.gov/fdc/v1/food/169977?api_key=<redacted>",
+    "scientific_name": "Brassica oleracea (Capitata Group)",
+    "kcal_per_100g": 31,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 1.43,
+    "fat_g": 0.16,
+    "carb_g": 7.37,
+    "fiber_g": 2.1,
+    "water_g": null,
+    "mapping_confidence": "medium",
+    "mapping_note": "Bản ghi USDA SR Legacy 169977 'Cabbage, red, raw', xác minh qua nhiều nguồn thứ cấp trích USDA (31 kcal / 1,43 g protein / 0,16 g béo / 7,37 g carb / 2,1 g xơ trên 100 g). Lưu ý: bản Foundation khác cho bắp cải đỏ cho số khác (30–34 kcal) nên không dùng; nước chưa xác minh nên để null.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "media": [
+    {
+      "path": "media/ingredients/bap-cai-tim.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
+  "tcm_traits": [],
+  "source": "curated",
+  "confidence": "low",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Hồ sơ mới tạo 2026-11-03 để gắn ảnh cho rau theo mùa chưa có nguyên liệu (lô 1/18), chưa qua duyệt của chủ dự án.",
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}

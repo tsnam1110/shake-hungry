@@ -1,0 +1,52 @@
+{
+  "slug": "atiso",
+  "name_vi": "Atisô (sống)",
+  "name_en": "Artichokes, (globe or french), raw",
+  "category": "rau-cu",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": null,
+    "source_url": null,
+    "scientific_name": "Cynara scolymus",
+    "kcal_per_100g": null,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": null,
+    "fat_g": null,
+    "carb_g": null,
+    "fiber_g": null,
+    "water_g": null,
+    "mapping_confidence": "low",
+    "mapping_note": "KCAL ĐỂ NULL (QT-9): nhiều nguồn thứ cấp trích USDA SR Legacy đều ghi atisô sống 47 kcal / protein 3,27 g / béo 0,15 g / carb 10,51 g / xơ 5,4 g / nước 84,94 g trên 100 g, nhưng đợt này chưa xác minh được trực tiếp mã FDC SR Legacy của bản ghi này nên không gán số vào hồ sơ. Cần một lần tra trực tiếp FoodData Central trước khi điền kcal.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "media": [
+    {
+      "path": "media/ingredients/atiso.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
+  "tcm_traits": [],
+  "source": "curated",
+  "confidence": "low",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Hồ sơ mới tạo 2026-11-03 để gắn ảnh cho rau theo mùa chưa có nguyên liệu (lô 1/18), chưa qua duyệt của chủ dự án.",
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}

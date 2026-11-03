@@ -13,8 +13,8 @@ Hướng dẫn cho mọi AI agent (Claude Code, Codex, Cursor, Copilot Agent...)
 Nút "Lắc" gợi ý món chỉ là vài chục dòng code; giá trị nằm ở dữ liệu.
 
 **Trạng thái 2026-11-03 (kiểm từ file + seed + validate, thay số cũ 2026-10-31): ứng dụng đã hoàn thiện end-to-end** (Laravel 13 + MySQL 8, admin antd 6
-tại `/admin`, 648 món / 460 nguyên liệu / 82 quả / 38 cặp kết hợp / 99 rau theo mùa / 230 nước uống,
-toàn bộ đã duyệt theo lệnh chủ dự án 2026-11-03; validate 3.392 bản ghi — 0 lỗi, 22 cảnh báo),
+tại `/admin`, 648 món / 464 nguyên liệu / 82 quả / 38 cặp kết hợp / 99 rau theo mùa / 230 nước uống,
+toàn bộ đã duyệt theo lệnh chủ dự án 2026-11-03, trừ 4 hồ sơ nguyên liệu mới chưa duyệt (lô 1/18 rau thiếu ảnh); validate 3.404 bản ghi — 0 lỗi, 22 cảnh báo),
 engine gợi ý + tài khoản người dùng + đóng góp cộng đồng đều chạy thật, cộng thêm trang riêng Bảng kết hợp cần lưu ý,
 Rau theo mùa và Thư viện nước uống. Trạng thái chi tiết: [CLAUDE.md](CLAUDE.md) §0 và
 [docs/05-tasks/ROADMAP.md](docs/05-tasks/ROADMAP.md).
