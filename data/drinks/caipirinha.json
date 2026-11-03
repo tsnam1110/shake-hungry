@@ -21,7 +21,8 @@
     {
       "name": "đường",
       "quantity": 2,
-      "unit": "thìa cà phê"
+      "unit": "thìa cà phê",
+      "ingredient_slug": "duong-trang"
     }
   ],
   "recipe_steps": [

@@ -15,12 +15,14 @@
     {
       "name": "trà đen hãm",
       "quantity": 150,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "tra-den"
     },
     {
       "name": "tắc",
       "quantity": 2,
-      "unit": "quả"
+      "unit": "quả",
+      "ingredient_slug": "tac"
     },
     {
       "name": "đường/siro đường",

@@ -13,7 +13,8 @@
     {
       "name": "tequila 100% agave",
       "quantity": 50,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "tequila"
     },
     {
       "name": "nước cốt chanh tươi",

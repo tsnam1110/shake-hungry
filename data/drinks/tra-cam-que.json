@@ -13,7 +13,8 @@
     {
       "name": "trà đen",
       "quantity": 150,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "tra-den"
     },
     {
       "name": "nước cam",

@@ -14,7 +14,8 @@
     {
       "name": "gin",
       "quantity": 30,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "gin"
     },
     {
       "name": "rượu mùi anh đào",
@@ -24,7 +25,8 @@
     {
       "name": "Cointreau",
       "quantity": 7.5,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "triple-sec"
     },
     {
       "name": "DOM Bénédictine",

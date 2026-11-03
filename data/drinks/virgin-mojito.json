@@ -19,7 +19,8 @@
     {
       "name": "đường",
       "quantity": 2,
-      "unit": "thìa cà phê"
+      "unit": "thìa cà phê",
+      "ingredient_slug": "duong-trang"
     },
     {
       "name": "lá bạc hà",
@@ -29,7 +30,8 @@
     {
       "name": "soda",
       "quantity": 120,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "soda"
     }
   ],
   "recipe_steps": [

@@ -33,7 +33,8 @@
     {
       "name": "soda",
       "quantity": 120,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "soda"
     }
   ],
   "recipe_steps": [

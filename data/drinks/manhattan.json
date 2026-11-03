@@ -18,7 +18,8 @@
     {
       "name": "sweet red vermouth",
       "quantity": 20,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "vermouth-ngot"
     },
     {
       "name": "Angostura bitters",

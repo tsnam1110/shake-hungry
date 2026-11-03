@@ -13,7 +13,8 @@
     {
       "name": "cà phê đen",
       "quantity": 40,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "ca-phe-den"
     },
     {
       "name": "sữa dừa/nước cốt dừa",
@@ -23,7 +24,8 @@
     {
       "name": "sữa đặc",
       "quantity": 20,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "sua-dac"
     }
   ],
   "recipe_steps": [

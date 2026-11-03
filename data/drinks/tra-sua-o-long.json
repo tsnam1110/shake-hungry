@@ -23,7 +23,8 @@
     {
       "name": "đường",
       "quantity": 15,
-      "unit": "g"
+      "unit": "g",
+      "ingredient_slug": "duong-trang"
     }
   ],
   "recipe_steps": [

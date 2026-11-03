@@ -44,10 +44,19 @@ fetch('/api/drinks/' + slug).then(r => r.json()).then(({drink: d, combinations, 
     if (d.uncertain) html += `<div class="ld-warn" style="margin-top:12px"><span><b>Chưa chắc chắn:</b> ${esc(d.uncertain_note || 'Thông tin về đồ uống này chưa được xác nhận chắc chắn — xem ghi chú nguồn bên dưới.')}</span></div>`;
 
     // Khối dinh dưỡng — đặt ngay sau đầu trang như trang món ("Năng lượng mỗi khẩu phần"
-    // rồi mới tới các khối khác). Nước uống chưa tính được kcal: hiện đúng nhãn đó, không số giả.
+    // rồi mới tới các khối khác). Tính được thì hiện khoảng như trang món; chưa tính
+    // được thì hiện đúng nhãn đó + lý do thiếu, không số giả.
+    const nut = d.nutrition;
     html += `<div class="ld-card" style="margin-top:18px">
         <p style="margin:0;color:var(--color-sub);font-size:14.5px;font-weight:600">Năng lượng mỗi khẩu phần</p>
-        <p style="color:var(--color-faint);margin:10px 0 0">Chưa tính được kcal cho đồ uống này — hệ thống không hiện số thay vì đoán.${d.kcal_note ? ' ' + esc(d.kcal_note) : ''}</p>`;
+        ${nut && nut.status === 'computed'
+            ? `<div style="display:flex;align-items:baseline;gap:9px;margin-top:4px;flex-wrap:wrap">
+                    <span class="ld-kcal-so ld-tnum">${Math.round(nut.kcal_min)}–${Math.round(nut.kcal_max)}</span>
+                    <span style="color:var(--color-sub);font-size:14.5px">kcal</span></div>
+                <p class="ld-note" style="margin-top:10px">${esc(d.kcal_note || '')}</p>
+                ${nut.missing?.length ? `<p class="ld-note" style="margin-top:10px">Chưa tính được một phần (đã nới cận trên theo tỷ lệ thiếu): ${nut.missing.map(esc).join('; ')}</p>` : ''}
+                ${nut.negligible?.length ? `<p class="ld-note" style="margin-top:10px">Không tính (garnish không đáng kể, mỗi dòng ≈ 1 kcal): ${nut.negligible.map(esc).join('; ')}</p>` : ''}`
+            : `<p style="color:var(--color-faint);margin:10px 0 0">Chưa tính được kcal cho đồ uống này — hệ thống không hiện số thay vì đoán.${d.kcal_note ? ' ' + esc(d.kcal_note) : ''}</p>`}`;
     if (d.sugar_added_g !== null && d.sugar_added_g !== undefined) html += `<p class="ld-note" style="margin-top:10px">Đường thêm: ${d.sugar_added_g}g</p>`;
     if (d.sugar_note) html += `<p class="ld-note" style="margin-top:10px">${esc(d.sugar_note)}</p>`;
     if (d.caffeine_level) html += `<p class="ld-note" style="margin-top:10px">${esc(cafName[d.caffeine_level] || d.caffeine_level)} — chỉ mức định tính, không ghi mg.</p>`;

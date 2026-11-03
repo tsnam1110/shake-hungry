@@ -23,12 +23,14 @@
     {
       "name": "sữa đặc",
       "quantity": 10,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "sua-dac"
     },
     {
       "name": "đường",
       "quantity": 10,
-      "unit": "g"
+      "unit": "g",
+      "ingredient_slug": "duong-trang"
     },
     {
       "name": "đá",

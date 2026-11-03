@@ -18,7 +18,8 @@
     {
       "name": "Campari",
       "quantity": 30,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "campari"
     },
     {
       "name": "vermouth ngọt",

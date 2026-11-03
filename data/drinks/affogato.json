@@ -18,7 +18,8 @@
     {
       "name": "espresso nóng",
       "quantity": 30,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "ca-phe-espresso"
     }
   ],
   "recipe_steps": [

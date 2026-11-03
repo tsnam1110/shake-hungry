@@ -13,7 +13,8 @@
     {
       "name": "rum trắng",
       "quantity": 50,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "rum"
     },
     {
       "name": "cola",

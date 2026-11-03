@@ -23,12 +23,14 @@
     {
       "name": "cà phê phin chiết xuất",
       "quantity": 40,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "ca-phe-den"
     },
     {
       "name": "sữa đặc",
       "quantity": 30,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "sua-dac"
     }
   ],
   "recipe_steps": [

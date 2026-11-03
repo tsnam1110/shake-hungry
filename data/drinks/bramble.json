@@ -14,7 +14,8 @@
     {
       "name": "gin",
       "quantity": 50,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "gin"
     },
     {
       "name": "nước chanh tươi",

@@ -13,7 +13,8 @@
     {
       "name": "rum trắng",
       "quantity": 45,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "rum"
     },
     {
       "name": "nước cốt chanh tươi",

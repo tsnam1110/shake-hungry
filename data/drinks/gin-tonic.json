@@ -14,12 +14,14 @@
     {
       "name": "gin",
       "quantity": 50,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "gin"
     },
     {
       "name": "tonic",
       "quantity": 150,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "tonic"
     }
   ],
   "recipe_steps": [

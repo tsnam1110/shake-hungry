@@ -18,12 +18,14 @@
     {
       "name": "sữa tươi",
       "quantity": 50,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "sua-tuoi"
     },
     {
       "name": "sữa đặc",
       "quantity": 10,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "sua-dac"
     },
     {
       "name": "đá",

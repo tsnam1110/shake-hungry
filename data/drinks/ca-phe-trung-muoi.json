@@ -13,7 +13,8 @@
     {
       "name": "cà phê phin",
       "quantity": 70,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "ca-phe-den"
     },
     {
       "name": "bọt trứng muối",

@@ -23,12 +23,14 @@
     {
       "name": "cà phê phin chiết xuất",
       "quantity": 40,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "ca-phe-den"
     },
     {
       "name": "đường",
       "quantity": 0,
-      "unit": "g"
+      "unit": "g",
+      "ingredient_slug": "duong-trang"
     }
   ],
   "recipe_steps": [

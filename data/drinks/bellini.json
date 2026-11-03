@@ -11,7 +11,8 @@
     {
       "name": "Prosecco",
       "quantity": 100,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "prosecco"
     },
     {
       "name": "purée đào trắng",

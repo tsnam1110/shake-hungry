@@ -18,7 +18,8 @@
     {
       "name": "sữa đặc",
       "quantity": 20,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "sua-dac"
     },
     {
       "name": "kem",
@@ -28,7 +29,8 @@
     {
       "name": "đường",
       "quantity": 10,
-      "unit": "g"
+      "unit": "g",
+      "ingredient_slug": "duong-trang"
     }
   ],
   "recipe_steps": [

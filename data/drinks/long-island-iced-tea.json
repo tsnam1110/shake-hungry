@@ -13,27 +13,32 @@
     {
       "name": "vodka",
       "quantity": 15,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "vodka"
     },
     {
       "name": "tequila",
       "quantity": 15,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "tequila"
     },
     {
       "name": "rum trắng",
       "quantity": 15,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "rum"
     },
     {
       "name": "gin",
       "quantity": 15,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "gin"
     },
     {
       "name": "Cointreau",
       "quantity": 15,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "triple-sec"
     },
     {
       "name": "nước chanh",

@@ -11,12 +11,14 @@
     {
       "name": "tequila blanco",
       "quantity": 50,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "tequila"
     },
     {
       "name": "triple sec",
       "quantity": 15,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "triple-sec"
     },
     {
       "name": "nước cốt chanh tươi",

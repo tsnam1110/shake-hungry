@@ -11,7 +11,8 @@
     {
       "name": "whiskey",
       "quantity": 45,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "whiskey"
     },
     {
       "name": "nước cốt chanh",

@@ -13,17 +13,20 @@
     {
       "name": "gin",
       "quantity": 30,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "gin"
     },
     {
       "name": "Campari",
       "quantity": 30,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "campari"
     },
     {
       "name": "sweet red vermouth",
       "quantity": 30,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "vermouth-ngot"
     }
   ],
   "recipe_steps": [

@@ -11,7 +11,8 @@
     {
       "name": "vodka",
       "quantity": 60,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "vodka"
     },
     {
       "name": "chanh",
@@ -21,7 +22,8 @@
     {
       "name": "đường mía trắng",
       "quantity": 4,
-      "unit": "thìa cà phê"
+      "unit": "thìa cà phê",
+      "ingredient_slug": "duong-trang"
     }
   ],
   "recipe_steps": [

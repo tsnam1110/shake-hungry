@@ -14,7 +14,8 @@
     {
       "name": "rum trắng",
       "quantity": 50,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "rum"
     },
     {
       "name": "nước chanh",
@@ -39,7 +40,8 @@
     {
       "name": "soda",
       "quantity": null,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "soda"
     }
   ],
   "recipe_steps": [

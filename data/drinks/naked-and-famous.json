@@ -21,7 +21,8 @@
     {
       "name": "Aperol",
       "quantity": 22.5,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "aperol"
     },
     {
       "name": "nước chanh tươi",

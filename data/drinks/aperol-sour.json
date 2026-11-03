@@ -13,12 +13,14 @@
     {
       "name": "Aperol",
       "quantity": 30,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "aperol"
     },
     {
       "name": "gin",
       "quantity": 30,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "gin"
     },
     {
       "name": "nước chanh",

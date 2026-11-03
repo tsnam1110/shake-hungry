@@ -14,7 +14,8 @@
     {
       "name": "gin",
       "quantity": 45,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "gin"
     },
     {
       "name": "nước chanh tươi",
@@ -29,7 +30,8 @@
     {
       "name": "soda",
       "quantity": 60,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "soda"
     }
   ],
   "recipe_steps": [

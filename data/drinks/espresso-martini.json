@@ -13,17 +13,20 @@
     {
       "name": "vodka",
       "quantity": 50,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "vodka"
     },
     {
       "name": "Kahlúa",
       "quantity": 10,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "kahlua"
     },
     {
       "name": "espresso mới pha",
       "quantity": 30,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "ca-phe-espresso"
     },
     {
       "name": "siro đường",

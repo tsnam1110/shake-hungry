@@ -13,17 +13,20 @@
     {
       "name": "Prosecco",
       "quantity": 90,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "prosecco"
     },
     {
       "name": "Aperol",
       "quantity": 60,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "aperol"
     },
     {
       "name": "soda",
       "quantity": 30,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "soda"
     }
   ],
   "recipe_steps": [

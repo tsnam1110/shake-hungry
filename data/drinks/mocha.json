@@ -13,7 +13,8 @@
     {
       "name": "espresso",
       "quantity": 30,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "ca-phe-espresso"
     },
     {
       "name": "sốt socola/cacao",
@@ -28,7 +29,8 @@
     {
       "name": "đường",
       "quantity": 10,
-      "unit": "g"
+      "unit": "g",
+      "ingredient_slug": "duong-trang"
     }
   ],
   "recipe_steps": [

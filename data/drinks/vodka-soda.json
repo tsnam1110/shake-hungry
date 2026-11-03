@@ -13,12 +13,14 @@
     {
       "name": "vodka",
       "quantity": 45,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "vodka"
     },
     {
       "name": "soda",
       "quantity": 120,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "soda"
     }
   ],
   "recipe_steps": [

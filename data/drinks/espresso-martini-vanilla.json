@@ -13,7 +13,8 @@
     {
       "name": "vodka",
       "quantity": 50,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "vodka"
     },
     {
       "name": "rượu mùi cà phê",
@@ -28,7 +29,8 @@
     {
       "name": "espresso tươi",
       "quantity": 30,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "ca-phe-espresso"
     }
   ],
   "recipe_steps": [

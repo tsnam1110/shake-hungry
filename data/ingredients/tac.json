@@ -1,0 +1,52 @@
+{
+  "slug": "tac",
+  "name_vi": "Quả tắc (quất) tươi, ăn cả vỏ",
+  "name_en": "Kumquats, raw",
+  "category": "trai-cay",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "NDB 09149",
+    "source_url": "https://www.traditionaloven.com/foods/details/fruits-juice/kumquats-raw.html",
+    "scientific_name": "Citrus japonica",
+    "kcal_per_100g": 71,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 1.88,
+    "fat_g": 0.86,
+    "carb_g": 15.9,
+    "fiber_g": 6.5,
+    "water_g": null,
+    "mapping_confidence": "high",
+    "mapping_note": "USDA SR Legacy NDB 09149 'Kumquats, raw': 71 kcal/100g phần ăn được, protein 1,88, fat 0,86, carb 15,9 (đường 9,36, xơ 6,5). Mã FDC dạng mới chưa đối chiếu trực tiếp nên external_id giữ mã NDB, không đoán mã FDC mới. Ăn cả vỏ (vỏ ngọt, ruột chua) — nước cốt tắc riêng hoặc tắc ngâm đường là dạng khác, không dùng số này. Đợt hoàn thiện lõi nước uống 2026-11-03 (QT-9: tra đa nguồn, xem mapping_note).",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": 93.0,
+  "edible_portion_note": "Phần bỏ là hạt ≈ 7% khối lượng.",
+  "is_ready_to_eat": true,
+  "units": [
+    {
+      "unit_name": "quả",
+      "grams": 19.0,
+      "note": "1 quả tắc ≈ 19g (≈13 kcal/quả), theo khẩu phần USDA",
+      "source": "USDA SR Legacy portion"
+    }
+  ],
+  "media": [],
+  "tcm_traits": [],
+  "source": "curated",
+  "confidence": "high",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Hồ sơ mới tạo đợt hoàn thiện lõi nước uống 2026-11-03, chưa qua duyệt của chủ dự án.",
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}

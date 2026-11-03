@@ -13,7 +13,8 @@
     {
       "name": "gin",
       "quantity": 60,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "gin"
     },
     {
       "name": "vermouth khô",

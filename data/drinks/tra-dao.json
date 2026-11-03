@@ -35,7 +35,8 @@
     {
       "name": "mật ong",
       "quantity": 15,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "mat-ong"
     },
     {
       "name": "nước cốt chanh/tắc",

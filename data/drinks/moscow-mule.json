@@ -13,12 +13,14 @@
     {
       "name": "vodka",
       "quantity": 45,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "vodka"
     },
     {
       "name": "ginger beer",
       "quantity": 120,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "ginger-beer"
     },
     {
       "name": "nước cốt chanh tươi",

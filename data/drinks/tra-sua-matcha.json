@@ -13,7 +13,8 @@
     {
       "name": "bột matcha",
       "quantity": 3,
-      "unit": "g"
+      "unit": "g",
+      "ingredient_slug": "matcha"
     },
     {
       "name": "nước nóng",
@@ -23,12 +24,14 @@
     {
       "name": "sữa tươi",
       "quantity": 100,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "sua-tuoi"
     },
     {
       "name": "sữa đặc",
       "quantity": 20,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "sua-dac"
     }
   ],
   "recipe_steps": [

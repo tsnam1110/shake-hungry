@@ -13,12 +13,14 @@
     {
       "name": "cà phê đen",
       "quantity": 20,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "ca-phe-den"
     },
     {
       "name": "sữa đặc",
       "quantity": 35,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "sua-dac"
     },
     {
       "name": "sữa chua không đường",

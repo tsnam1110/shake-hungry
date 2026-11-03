@@ -18,7 +18,8 @@
     {
       "name": "đường viên",
       "quantity": 1,
-      "unit": "viên"
+      "unit": "viên",
+      "ingredient_slug": "duong-trang"
     },
     {
       "name": "Angostura bitters",

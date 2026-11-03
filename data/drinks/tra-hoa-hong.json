@@ -23,7 +23,8 @@
     {
       "name": "mật ong",
       "quantity": 5,
-      "unit": "g"
+      "unit": "g",
+      "ingredient_slug": "mat-ong"
     }
   ],
   "recipe_steps": [

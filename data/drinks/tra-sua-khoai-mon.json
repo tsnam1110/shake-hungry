@@ -13,7 +13,8 @@
     {
       "name": "trà đen",
       "quantity": 150,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "tra-den"
     },
     {
       "name": "khoai môn",
@@ -23,12 +24,14 @@
     {
       "name": "sữa tươi",
       "quantity": 100,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "sua-tuoi"
     },
     {
       "name": "đường",
       "quantity": 15,
-      "unit": "g"
+      "unit": "g",
+      "ingredient_slug": "duong-trang"
     }
   ],
   "recipe_steps": [

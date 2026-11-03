@@ -13,9 +13,12 @@ use Illuminate\Http\Request;
  * API công khai cho thư viện nước uống (DRINK-MODULE, catalogue v2):
  * danh sách lọc theo nhóm, kind (pha chế/đóng gói), nóng/lạnh, có cồn,
  * mức caffeine, độ ngọt (từ sugar_added_g hoặc khoảng đường đóng gói) và
- * tìm kiếm theo tên. Chi tiết phân biệt hai kind; dinh dưỡng KHÔNG tính
- * từ engine ở module này (xem ghi chú ở Drink model) — mọi món có cồn
- * đều trả về kcal_status = 'chua-tinh-duoc'.
+ * tìm kiếm theo tên. Chi tiết phân biệt hai kind; dinh dưỡng pha chế tính
+ * bằng DrinkNutritionService (dùng lại NutritionCalculator) từ các dòng đã
+ * gắn `ingredient_slug` — kcal rượu đã bao gồm ethanol vì cộng từ kcal tham
+ * chiếu, không cần logic ethanol riêng. Đồ uống còn dòng missing (đặc biệt
+ * rượu mùi/siro chưa đo density) giữ kcal_status = 'chua-tinh-duoc' kèm danh
+ * sách thiếu, không hiện số thiếu.
  */
 class DrinkController extends Controller
 {
@@ -77,6 +80,7 @@ class DrinkController extends Controller
 
     public function show(Drink $drink): JsonResponse
     {
+        $nutrition = app(\App\Nutrition\DrinkNutritionService::class)->compute($drink);
         $counterpart = null;
         if ($drink->mocktail_counterpart_slug) {
             $counterpart = Drink::where('slug', $drink->mocktail_counterpart_slug)->first();
@@ -109,12 +113,13 @@ class DrinkController extends Controller
                 'uncertain_note' => $drink->uncertain_note,
                 'source_note' => $drink->source_note,
                 'needs_review' => $drink->needs_review,
-                // Chưa tính được kcal: engine chưa có logic ethanol và phần
-                // lớn nguyên liệu bar chưa có trong kho — không hiện số thiếu.
-                'kcal_status' => 'chua-tinh-duoc',
-                'kcal_note' => $drink->alcohol
-                    ? 'Chưa tính được kcal: engine hiện chưa tính ethanol (~7 kcal/g, không nằm trong protein/fat/carb).'
-                    : 'Chưa tính được kcal: một số nguyên liệu chưa có trong kho nguyên liệu, chưa đủ để engine tính.',
+                'nutrition' => $nutrition,
+                'kcal_status' => $nutrition['status'] === 'computed' ? 'tinh-duoc' : 'chua-tinh-duoc',
+                'kcal_note' => $nutrition['status'] === 'computed'
+                    ? 'Tính từ công thức đã gắn hồ sơ nguyên liệu bằng lại engine món ăn; kcal của rượu (nếu có) đã bao gồm năng lượng ethanol vì cộng từ kcal tham chiếu.'
+                    : ('Chưa tính được kcal: '.($nutrition['missing'] !== []
+                        ? 'thiếu: '.implode('; ', array_slice($nutrition['missing'], 0, 5)).(count($nutrition['missing']) > 5 ? '…' : '')
+                        : 'chưa đủ dữ liệu để tính.')),
                 'mocktail_counterpart' => $counterpart ? $this->summary($counterpart) : null,
             ],
             // Kết hợp cần lưu ý: chỉ khi có cặp đã thẩm định chạm tới đồ

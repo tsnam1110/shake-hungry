@@ -13,7 +13,8 @@
     {
       "name": "espresso",
       "quantity": 30,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "ca-phe-espresso"
     },
     {
       "name": "sữa hấp + bọt dày",

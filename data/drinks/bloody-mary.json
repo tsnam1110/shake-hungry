@@ -13,12 +13,14 @@
     {
       "name": "vodka",
       "quantity": 45,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "vodka"
     },
     {
       "name": "nước ép cà chua",
       "quantity": 90,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "nuoc-ep-ca-chua"
     },
     {
       "name": "nước cốt chanh",

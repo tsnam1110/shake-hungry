@@ -13,12 +13,14 @@
     {
       "name": "tequila 100% agave",
       "quantity": 50,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "tequila"
     },
     {
       "name": "triple sec",
       "quantity": 20,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "triple-sec"
     },
     {
       "name": "nước cốt chanh tươi",

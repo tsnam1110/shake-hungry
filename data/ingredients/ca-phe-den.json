@@ -29,8 +29,8 @@
     ]
   },
   "secondary_sources": [],
-  "density_g_per_ml": null,
-  "density_note": null,
+  "density_g_per_ml": 1.0,
+  "density_note": "SUY RA 2026-11-03 (hoàn thiện lõi nước uống): cà phê đen pha ≈ nước (99%+ nước), 1 cốc 237g/236,588ml ≈ 1,00 — cùng cách suy như tra-den. Trước đó để null nên công thức nước uống dùng ml không quy đổi được.",
   "default_yield_factor": null,
   "default_yield_factor_note": null,
   "oil_absorption_pct": null,

@@ -8,10 +8,10 @@ thành phần thực phẩm; món ăn ngoài có calo ước lượng kèm độ
 
 **Trạng thái (2026-11-03, kiểm từ file + seed + validate):** ✅ Ứng dụng hoàn chỉnh hai phía — trang người dùng (Lắc món 3 tầng,
 lọc theo nhãn phân loại và dị ứng, tài khoản + TDEE + nhật ký bữa ăn, đóng góp cộng đồng) và trang
-quản trị `/admin` (Ant Design 6 + React 19). Kho dữ liệu: **648 món, 436 nguyên liệu** (390 có số dinh dưỡng có nguồn),
+quản trị `/admin` (Ant Design 6 + React 19). Kho dữ liệu: **648 món, 460 nguyên liệu** (390 có số dinh dưỡng có nguồn),
 **82 hồ sơ quả, 38 cặp kết hợp cần lưu ý, 99 hồ sơ rau theo mùa, 230 entry nước uống** (169 pha chế + 61 đóng gói);
 toàn bộ đã duyệt theo lệnh chủ dự án ngày 2026-11-03 (mục nào lỗi chủ dự án tự lật lại thành chưa duyệt).
-Validate: **3.368 bản ghi — 0 lỗi, 22 cảnh báo** (`php artisan lacdoi:validate-data` sau `migrate:fresh --seed`).
+Validate: **3.392 bản ghi — 0 lỗi, 22 cảnh báo** (`php artisan lacdoi:validate-data` sau `migrate:fresh --seed`).
 Số cũ 496/386 (2026-10-31) đã lỗi thời — xem [ROADMAP](docs/05-tasks/ROADMAP.md)
 và [nhật ký đo](docs/06-nutrition/ACCURACY-SPEC.md).
 

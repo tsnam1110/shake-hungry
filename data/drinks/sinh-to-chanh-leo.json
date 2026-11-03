@@ -23,17 +23,20 @@
     {
       "name": "sữa",
       "quantity": 80,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "sua-tuoi"
     },
     {
       "name": "sữa đặc",
       "quantity": 20,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "sua-dac"
     },
     {
       "name": "đường",
       "quantity": 15,
-      "unit": "g"
+      "unit": "g",
+      "ingredient_slug": "duong-trang"
     },
     {
       "name": "đá",

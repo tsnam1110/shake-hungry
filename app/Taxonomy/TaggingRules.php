@@ -132,6 +132,18 @@ final class TaggingRules
         // tương cà/tương ớt công nghiệp không lên men; chân gà đã luộc; trà/cà phê trong kho là NƯỚC PHA (theo tên + kcal ≈ 1)
         'tuong-ca' => 'che-bien', 'tuong-ot' => 'che-bien', 'chan-ga' => 'che-bien',
         'ca-phe-den' => 'che-bien', 'tra-xanh' => 'che-bien',
+        // Nhóm bar / nước uống (hoàn thiện lõi nước uống 2026-11-03): trà đen
+        // và espresso là nước pha như tra-xanh/ca-phe-den; soda/tonic/nước ép
+        // cà chua/ginger beer/grenadine/orgeat là đồ chế biến sẵn; rượu mạnh,
+        // rượu mùi, vermouth, prosecco xếp len-men cùng bia/rượu trong kho.
+        'tra-den' => 'che-bien', 'ca-phe-espresso' => 'che-bien',
+        'soda' => 'che-bien', 'tonic' => 'che-bien', 'nuoc-ep-ca-chua' => 'che-bien',
+        'ginger-beer' => 'che-bien', 'grenadine' => 'che-bien', 'orgeat' => 'che-bien',
+        'vodka' => 'len-men', 'gin' => 'len-men', 'rum' => 'len-men',
+        'tequila' => 'len-men', 'whiskey' => 'len-men', 'triple-sec' => 'len-men',
+        'kahlua' => 'len-men', 'campari' => 'len-men', 'aperol' => 'len-men',
+        'vermouth-ngot' => 'len-men', 'vermouth-kho' => 'len-men', 'prosecco' => 'len-men',
+        'hat-chia' => 'kho', 'matcha' => 'kho',
         'hanh-phi' => 'che-bien', 'thach-suong-sao' => 'che-bien', 'pho-mai' => 'che-bien',
         'bo-dong-vat' => 'che-bien', 'bo-thuc-vat' => 'che-bien', 'mo-lon-nuoc' => 'che-bien',
         'trung-vit-muoi' => 'che-bien', 'banh-phong-tom-chien' => 'che-bien',
