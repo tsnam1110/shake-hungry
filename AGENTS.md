@@ -19,7 +19,7 @@ engine gợi ý + tài khoản người dùng + đóng góp cộng đồng đề
 Rau theo mùa và Thư viện nước uống. Trạng thái chi tiết: [CLAUDE.md](CLAUDE.md) §0 và
 [docs/05-tasks/ROADMAP.md](docs/05-tasks/ROADMAP.md).
 
-## Tám quy tắc tuyệt đối (bản rút gọn — bản đầy đủ ở CLAUDE.md §3)
+## Chín quy tắc tuyệt đối (bản rút gọn — bản đầy đủ ở CLAUDE.md §3)
 
 1. **QT-1** — LLM không bao giờ được sinh con số dinh dưỡng. Chỉ được đề xuất ánh xạ nguyên liệu,
    định lượng gram, và chuẩn hoá tên. Calo do hàm thuần tuý tính từ bảng tham chiếu.
@@ -36,6 +36,10 @@ Rau theo mùa và Thư viện nước uống. Trạng thái chi tiết: [CLAUDE.
 8. **QT-8** — Trước khi thực thi phải phân tích kỹ yêu cầu và kiểm tra điều kiện ngoại vi + mức
    phù hợp với dự án (QT-1…QT-7, kiến trúc, dữ liệu, phụ thuộc, rủi ro). Việc lớn / khó đảo ngược /
    đổi hướng phải trình phân tích và chờ chủ dự án chốt, không tự ý làm.
+9. **QT-9** — Độ chính xác của thông tin là quan trọng nhất. Thông tin không rõ ràng thì kèm nhãn
+   lưu ý; không có thông tin thì bỏ trống, tuyệt đối không được bịa. Mọi thông tin phải tìm hiểu
+   và biên soạn từ nhiều nguồn để chắc chắn tối đa. Thời gian thực thi là thứ yếu: không làm
+   nhanh, làm ẩu — làm thật cẩn thận và chi tiết. (Chủ dự án, 2026-11-03.)
 
 ## Bốn việc dễ làm sai nhất
 

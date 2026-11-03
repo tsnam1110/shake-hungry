@@ -55,6 +55,7 @@ số liệu sẽ mâu thuẫn nhau. Đây là sai lầm được ghi ở [CLAUDE
 | Sinh ra giá trị kcal, protein, lipid, glucid | Không truy nguyên được, không kiểm chứng được, và **phá thẳng mục tiêu chính của dự án** |
 | Sinh ra hệ số hao hụt / hấp thụ dầu | Phải tra bảng USDA có nguồn |
 | Điền vào chỗ dữ liệu thiếu | Thiếu thì để thiếu và hiển thị "chưa đủ dữ liệu" |
+| Chọn một con số khi các nguồn mâu thuẫn mà không ghi rõ | Xem **QT-9** (CLAUDE.md §3): thông tin không rõ ràng thì kèm nhãn lưu ý, không có thông tin thì bỏ trống, tuyệt đối không bịa; biên soạn từ nhiều nguồn; thời gian là thứ yếu so với độ chính xác |
 | Tự động duyệt bản ghi của chính nó | Vòng lặp không có kiểm soát |
 
 ### Chốt chặn kỹ thuật

@@ -1205,7 +1205,7 @@ Chi tiết: [PRD](docs/01-prd/PRD.md).
 
 ---
 
-## 3. TÁM QUY TẮC TUYỆT ĐỐI
+## 3. CHÍN QUY TẮC TUYỆT ĐỐI
 
 Vi phạm bất kỳ quy tắc nào dưới đây là lỗi nghiêm trọng, không phải "khác biệt về phong cách".
 
@@ -1298,6 +1298,36 @@ Không bắt tay vào làm ngay khi nhận yêu cầu. Trước khi thực thi, 
 Mức độ phân tích **tỉ lệ với rủi ro**: việc nhỏ, hiển nhiên và dễ đảo ngược thì kiểm tra nhanh
 bốn điểm trên là đủ; không dùng QT-8 làm lý do trì hoãn việc hiển nhiên. Chỉ bắt đầu thực thi
 khi các điều kiện đã rõ, hoặc phần chưa rõ / rủi ro đã được chủ dự án chấp thuận.
+
+### QT-9 — Độ chính xác của thông tin là quan trọng nhất
+
+(Quyết định của chủ dự án, 2026-11-03; ghi vào quy tắc dự án theo chỉ thị cùng ngày.)
+
+**Độ chính xác của thông tin là quan trọng nhất. Thông tin không rõ ràng thì kèm nhãn lưu ý;
+không có thông tin thì bỏ trống, tuyệt đối không được bịa. Mọi thông tin phải tìm hiểu và biên
+soạn từ nhiều nguồn để chắc chắn tối đa kết quả. Thời gian thực thi là thứ yếu: không làm nhanh,
+làm ẩu — làm thật cẩn thận và chi tiết.**
+
+Áp dụng cụ thể:
+
+1. **Không rõ ràng → nhãn lưu ý, không khẳng định.** Tháng mùa vụ mâu thuẫn giữa các nguồn,
+   biến thể công thức chưa chốt, khoảng giá theo loại — ghi rõ mức độ chắc chắn và nguồn mâu
+   thuẫn ngay tại chỗ hiển thị (cờ `uncertain`, ghi chú "chưa chắc chắn"), không chọn một con số
+   cho gọn rồi trình bày như sự thật.
+2. **Không có thông tin → bỏ trống.** Kcal chưa tra được, giá chưa thu thập được, ABV/caffeine
+   chưa có số đo — để null và giao diện hiển thị "chưa tính được" / "chưa có giá" thay vì lấp
+   bằng proxy không ghi rõ, số phỏng đoán, hay giá của ngày khác gán sang ngày mới.
+3. **Nhiều nguồn, không một nguồn.** Trước khi chốt một con số, một định danh hay một định lượng,
+   đối chiếu ít nhất hai nguồn độc lập khi có thể; nguồn duy nhất thì ghi rõ là nguồn duy nhất và
+   giữ cờ tin cậy thấp cho tới khi có nguồn thứ hai. Trường hợp các nguồn mâu thuẫn mà không phân
+   xử được thì đưa vào danh sách câu hỏi cho chủ dự án thay vì tự chọn.
+4. **Tốc độ không phải lý do cắt gọn.** QT-9 đứng trên áp lực thời gian: một hạng mục cần thêm
+   thời gian nghiên cứu đa nguồn thì làm kỹ rồi báo cáo, không rút gọn quy trình để xong sớm.
+   Ngược lại, QT-9 không phải lý do trì hoãn việc hiển nhiên đã đủ nguồn — mức độ nghiên cứu
+   tỉ lệ với rủi ro sai (theo tinh thần QT-8).
+5. **QT-9 bao trùm mọi tầng dữ liệu:** số dinh dưỡng (cùng QT-1/QT-5), định danh món/nguyên liệu,
+   tháng mùa vụ, giá cả, công thức nước uống, và cả nội dung hiển thị — trường trống hiển thị
+   trống + nhãn lưu ý, không hiển thị số giả.
 
 ---
 
