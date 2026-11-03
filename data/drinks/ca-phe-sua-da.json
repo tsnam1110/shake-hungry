@@ -11,16 +11,6 @@
   "garnish": [],
   "ingredients": [
     {
-      "name": "bột cà phê phin",
-      "quantity": 25,
-      "unit": "g"
-    },
-    {
-      "name": "nước sôi",
-      "quantity": 80,
-      "unit": "ml"
-    },
-    {
       "name": "cà phê phin chiết xuất",
       "quantity": 40,
       "unit": "ml",
@@ -62,10 +52,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-03: sửa cấu trúc dòng (bỏ bột + nước sôi khỏi dòng trong ly, giữ trong process_note), gắn đủ 2/2 dòng, kcal/100 ml lỏng, caffeine mg tầm soát 100–200 mg/ly — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -74,5 +64,48 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "process_note": "Pha phin: 25 g bột cà phê + 80 ml nước sôi (ủ 20 ml, rót tiếp 60 ml), chiết xuất lấy 40 ml cà phê trong công thức này; bột và nước sôi là nguyên liệu quá trình, không phải dòng trong ly, nên không tính vào khối lượng ly (tiền lệ sửa nước ép cam: bỏ dòng đầu vào, chỉ giữ dòng đầu ra).",
+  "liquid_ml": 70,
+  "caffeine_mg_min": 100,
+  "caffeine_mg_max": 200,
+  "caffeine_mg_note": "KHOẢNG TẦM SOÁT, CHƯA ĐO CHO LY NÀY: ly này dùng nguyên một phin, không phải phần 25 ml như bạc xỉu, nên không lấy khoảng 25–70 mg của bạc xỉu. Nguồn thứ cấp về phin Robusta VN: một phin 100–200 mg/ly (CoffeeTalkies, phin 120 ml); cà phê sữa đá đậm 120–150 mg/ly (DoanhNhanPlus); 150–200 mg/ly (Message Coffee, Đặc sản vùng miền). Lấy khoảng chung 100–200 mg/ly, tin cậy thấp, vì liều bột trong file (25 g) và thể tích cà phê chiết xuất trong file (40 ml, đậm đặc hơn phin 100–120 ml thông thường) không khớp nhau — mg là theo ly, không theo ml, và chưa đo cho ly này.",
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml chất lỏng",
+      "value_min": 185,
+      "value_max": 189,
+      "value": null,
+      "per_serving": "≈130–132 kcal/ly (70 ml chất lỏng, chưa tính đá tan)",
+      "basis": "Cộng tay từ hồ sơ đã có: cà phê phin 40 ml × 1 kcal/100 g = 0,4 kcal; sữa đặc 30 ml × 1,29 × 334–341 kcal/100 g = 129,3–132,0 kcal. Tổng 129,7–132,4 kcal / 70 ml = 185–189 kcal/100 ml chất lỏng. Kiểm chéo nguồn thứ cấp: cà phê sữa đá 120–180 kcal/ly (CoffeeTalkies), 95–135 kcal/ly (Đặc sản vùng miền) — khoảng tay nằm trong đó. Đây chưa phải đầu ra engine.",
+      "confidence": "medium",
+      "source_ref": "data/ingredients/ca-phe-den.json, sua-dac.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 20,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "20 g/ly",
+      "basis": "sugar_added_g trong file catalogue; kiểm chéo: sữa đặc 38,7 g, đường khoảng 20 g, khớp ghi chú file.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    },
+    {
+      "label": "Caffeine",
+      "unit": "mg/ly",
+      "value_min": 100,
+      "value_max": 200,
+      "value": null,
+      "per_serving": "100–200 mg/ly",
+      "basis": "Khoảng tầm soát cho nguyên một phin Robusta, xem caffeine_mg_note; không phải số đo, không tính theo 100 ml chất lỏng vì caffeine chỉ nằm trong phần cà phê.",
+      "confidence": "low",
+      "source_ref": "Nguồn thứ cấp về phin Robusta (xem caffeine_mg_note)"
+    }
+  ],
+  "allergen_note": "Đã gắn đủ 2/2 dòng trong ly: chỉ sữa đặc có tag allergen:sua — dị ứng Sữa đã xác nhận. Cà phê phin không có tag dị ứng trong hồ sơ; 'không tag' không phải cam kết an toàn tuyệt đối.",
+  "tcm_note": "Chỉ ở mức thấp, không kết luận đầy đủ: phủ theo khối lượng 51% (chỉ cà phê phin 40 g có nhãn bình/khổ/Hỏa, tin cậy thấp; sữa đặc không có nhãn tính vị), trong ngưỡng 30–<60% của TCM-000 nên chỉ hiện mức thấp, không ghi tính vị chung cho cả ly.",
+  "origin_note": "Tầm soát: biểu tượng vỉa hè Sài Gòn như ghi chú văn hoá gốc; Robusta + sữa đặc thay sữa tươi vì xưa khó bảo quản sữa tươi — ghi chú văn hoá gốc giữ nguyên, không ghi đè."
 }
