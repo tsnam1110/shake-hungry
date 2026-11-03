@@ -2,7 +2,7 @@
   "slug": "dau-ha-lan-hat",
   "name_vi": "Đậu Hà Lan hạt (sống)",
   "name_en": "Peas, green, raw",
-  "category": "dau-do",
+  "category": "rau-cu",
   "reference_food": {
     "fct_source": "usda_sr_legacy",
     "external_id": "170419",
@@ -44,7 +44,7 @@
   "needs_review": true,
   "reviewed_by": null,
   "reviewed_at": null,
-  "review_note": "Hồ sơ mới tạo 2026-11-03 để gắn ảnh cho rau theo mùa, làm từng sản phẩm một theo kế hoạch giai đoạn đã duyệt, chưa qua duyệt của chủ dự án.",
+  "review_note": "Hồ sơ mới tạo 2026-11-03 để gắn ảnh cho rau theo mùa, làm từng sản phẩm một theo kế hoạch giai đoạn đã duyệt, chưa qua duyệt của chủ dự án. Sửa 2026-11-03: category ban đầu ghi dau-do vi phạm check constraint của bảng ingredients (chỉ chấp nhận rau-cu cho nhóm này, theo tiền lệ dau-ha-lan), đã sửa thành rau-cu trước khi seed lại.",
   "tags": [
     "origin:thuc-vat",
     "state:tuoi"
