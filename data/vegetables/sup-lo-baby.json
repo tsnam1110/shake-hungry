@@ -1,7 +1,7 @@
 {
   "slug": "sup-lo-baby",
   "name_vi": "Súp lơ baby / broccolini",
-  "ingredient_slug": null,
+  "ingredient_slug": "sup-lo-baby",
   "group": "rau-cu",
   "supply": "da-lat",
   "state": "tuoi",
@@ -65,10 +65,10 @@
   "safety_note": "Như họ cải, nhẹ (co-so). Hay bị nhầm là 'súp lơ non', thực ra là giống riêng (lai súp lơ xanh × cải làn).",
   "uncertain": true,
   "uncertain_note": "Tháng tốt nhất UNCERTAIN.",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau). Đính chính 2026-11-03: gắn hồ sơ nguyên liệu mới cùng slug để trang rau hiển thị ảnh (làm từng sản phẩm một); hồ sơ nguyên liệu mới chưa qua duyệt của chủ dự án.",
   "source": "catalogue-v2",
   "source_note": "Catalogue rau theo mùa v2 (2026-11-03), phần E — rau nhập khẩu / giống nhập trồng tại Việt Nam. Toàn bộ 18 mục chưa có hồ sơ repo nên kcal null — giữ thiếu, không copy số của loài/giống gốc."
 }
