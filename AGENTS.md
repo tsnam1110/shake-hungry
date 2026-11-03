@@ -12,9 +12,11 @@ Hướng dẫn cho mọi AI agent (Claude Code, Codex, Cursor, Copilot Agent...)
 **Đây là dự án biên soạn cơ sở dữ liệu món ăn, có kèm web app ở đầu ra.** Không phải dự án web app.
 Nút "Lắc" gợi ý món chỉ là vài chục dòng code; giá trị nằm ở dữ liệu.
 
-**Trạng thái 2026-10-31: ứng dụng đã hoàn thiện end-to-end** (Laravel 13 + MySQL 8, admin antd 6
-tại `/admin`, 654 món / 434 nguyên liệu, 649/654 món tính được dinh dưỡng, 406 món đạt Mức 2
-(LV2-001…LV2-005, 5 đợt — chương trình Mức 2 đợt 1 hoàn tất 2026-10-31, vượt mốc 200; LV2-006 là đợt đầu của chương trình mở rộng nâng toàn bộ món lên Mức 2 theo chỉ đạo chủ dự án — tổng 406/654 sau LV2-010 Phần C), engine gợi ý + tài khoản người dùng + đóng góp cộng đồng đều chạy thật). Trạng thái chi tiết: [CLAUDE.md](CLAUDE.md) §0 và
+**Trạng thái 2026-11-03 (kiểm từ file + seed + validate, thay số cũ 2026-10-31): ứng dụng đã hoàn thiện end-to-end** (Laravel 13 + MySQL 8, admin antd 6
+tại `/admin`, 649 món / 436 nguyên liệu / 82 quả / 38 cặp kết hợp / 99 rau theo mùa / 230 nước uống,
+toàn bộ đã duyệt theo lệnh chủ dự án 2026-11-03; validate 3.371 bản ghi — 0 lỗi, 23 cảnh báo),
+engine gợi ý + tài khoản người dùng + đóng góp cộng đồng đều chạy thật, cộng thêm trang riêng Bảng kết hợp cần lưu ý,
+Rau theo mùa và Thư viện nước uống. Trạng thái chi tiết: [CLAUDE.md](CLAUDE.md) §0 và
 [docs/05-tasks/ROADMAP.md](docs/05-tasks/ROADMAP.md).
 
 ## Tám quy tắc tuyệt đối (bản rút gọn — bản đầy đủ ở CLAUDE.md §3)

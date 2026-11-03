@@ -6,11 +6,13 @@
 tự nấu), món đã ăn bữa trước, và thể trạng người dùng. Món tự nấu có công thức và calo tính từ bảng
 thành phần thực phẩm; món ăn ngoài có calo ước lượng kèm độ tin cậy.
 
-**Trạng thái (2026-10-31):** ✅ Ứng dụng hoàn chỉnh hai phía — trang người dùng (Lắc món 3 tầng,
+**Trạng thái (2026-11-03, kiểm từ file + seed + validate):** ✅ Ứng dụng hoàn chỉnh hai phía — trang người dùng (Lắc món 3 tầng,
 lọc theo nhãn phân loại và dị ứng, tài khoản + TDEE + nhật ký bữa ăn, đóng góp cộng đồng) và trang
-quản trị `/admin` (Ant Design 6 + React 19). Kho dữ liệu: **496 món đầy đủ công thức (300 đã duyệt, 200 của DISH-004 chờ duyệt; đã gộp tầm soát 2026-10-31 từ mốc 500),
-386 nguyên liệu** (353 có số dinh dưỡng có nguồn), **491/496 món tính được calo** bằng engine
-(CALC-004 đã bổ sung hệ số hấp thụ dầu theo nhóm cho món chiên). Xem [ROADMAP](docs/05-tasks/ROADMAP.md)
+quản trị `/admin` (Ant Design 6 + React 19). Kho dữ liệu: **649 món, 436 nguyên liệu** (390 có số dinh dưỡng có nguồn),
+**82 hồ sơ quả, 38 cặp kết hợp cần lưu ý, 99 hồ sơ rau theo mùa, 230 entry nước uống** (169 pha chế + 61 đóng gói);
+toàn bộ đã duyệt theo lệnh chủ dự án ngày 2026-11-03 (mục nào lỗi chủ dự án tự lật lại thành chưa duyệt).
+Validate: **3.371 bản ghi — 0 lỗi, 23 cảnh báo** (`php artisan lacdoi:validate-data` sau `migrate:fresh --seed`).
+Số cũ 496/386 (2026-10-31) đã lỗi thời — xem [ROADMAP](docs/05-tasks/ROADMAP.md)
 và [nhật ký đo](docs/06-nutrition/ACCURACY-SPEC.md).
 
 ---

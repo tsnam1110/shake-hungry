@@ -15,6 +15,17 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 
 ## 0. TRẠNG THÁI HIỆN TẠI — ĐỌC TRƯỚC TIÊN
 
+> ## ⚠️ Đính chính 2026-11-03 — số kho hiện tại (không sửa các snapshot lịch sử bên dưới)
+>
+> Các snapshot 2026-10-31 bên dưới (654 món / 434 nguyên liệu, 406–475 Mức 2 theo từng đợt)
+> là lịch sử, giữ nguyên. Số hiện tại, kiểm ngày 2026-11-03 từ file + seed + validate:
+> **649 món** (sau gộp `nom-mit-non`→`goi-mit-non`, `xoi-ngo`→`xoi-bap` và xoá vỏ rỗng
+> `mam-ruot-an-giang`), **436 nguyên liệu** (390 có số dinh dưỡng có nguồn), **82 quả**,
+> **38 cặp kết hợp**, **99 rau theo mùa**, **230 nước uống** (169 pha chế + 61 đóng gói).
+> Toàn bộ đã duyệt theo lệnh chủ dự án 2026-11-03; validate **3.371 bản ghi — 0 lỗi,
+> 23 cảnh báo**. Số headline cũ 496/386 (README 2026-10-31) và 654/434 (AGENTS/CLAUDE §0
+> cũ) đã lỗi thời và đã được sửa ở README + AGENTS trong cùng đợt này.
+
 > ## ⚠️ Đính chính 2026-08-31 — đoạn mô tả trạng thái cũ đã SAI
 >
 > Bản đầu của file này ghi *"repo này CHỈ CÓ TÀI LIỆU. Chưa có code, chưa có database, chưa có dữ
