@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 /**
  * Thư viện nước uống — theo catalogue nước uống Việt Nam v2 (2026-11-03).
@@ -45,6 +46,31 @@ class Drink extends Model
             'uncertain' => 'boolean',
             'needs_review' => 'boolean',
             'reviewed_at' => 'date',
+        ];
+    }
+
+    public function media(): HasMany
+    {
+        return $this->hasMany(DrinkMedia::class);
+    }
+
+    /** IMG-001: ảnh chính để hiển thị — cùng khuôn với Dish::primaryImage(). */
+    public function primaryImage(): ?array
+    {
+        $media = $this->media->firstWhere('is_primary', true) ?? $this->media->first();
+        if ($media === null) {
+            return null;
+        }
+
+        return [
+            'url' => '/'.$media->path,
+            // Thumbnail cho thẻ danh sách (quy tắc 2026-11-03): url gốc
+            // giữ nguyên cho trang chi tiết; thẻ danh sách dùng srcset.
+            'thumb_url' => \App\Support\Thumbnail::url($media->path, 800),
+            'srcset' => \App\Support\Thumbnail::srcset($media->path),
+            'license' => $media->license,
+            'attribution' => $media->attribution,
+            'is_ai' => $media->license === 'ai-minh-hoa',
         ];
     }
 

@@ -60,6 +60,12 @@ fetch('/api/drinks/' + slug).then(r => r.json()).then(({drink: d, combinations, 
     // Hộp cảnh báo — cùng kiểu ld-warn như khối mức/cảnh báo an toàn trên trang món.
     if (d.alcohol) html += `<div class="ld-warn" style="margin-top:12px"><span><b>18+</b> — Đồ uống có cồn. Không dùng khi lái xe và không dùng cho người dưới 18 tuổi.</span></div>`;
     if (d.uncertain) html += `<div class="ld-warn" style="margin-top:12px"><span><b>Chưa chắc chắn:</b> ${esc(d.uncertain_note || 'Thông tin về đồ uống này chưa được xác nhận chắc chắn — xem ghi chú nguồn bên dưới.')}</span></div>`;
+    // Ảnh chính — cùng mẫu trang món (16/10, chú thích nguồn); chưa có ảnh
+    // thì không hiện figure, không dùng placeholder làm ảnh thật.
+    if (d.image) html += `<figure style="margin:18px 0 0">
+        <img src="${esc(d.image.url)}" alt="${esc(d.name_vi)}" style="width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:18px;display:block" fetchpriority="high" decoding="async">
+        <figcaption style="color:var(--color-faint);font-size:12.5px;margin-top:6px">${d.image.is_ai ? 'Ảnh minh họa' : 'Ảnh: ' + esc(d.image.attribution ?? '')}</figcaption>
+    </figure>`;
 
     // Khối dinh dưỡng — đặt ngay sau đầu trang như trang món ("Năng lượng mỗi khẩu phần"
     // rồi mới tới các khối khác). Tính được thì hiện khoảng như trang món; chưa tính

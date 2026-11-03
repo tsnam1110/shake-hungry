@@ -128,6 +128,7 @@ function card(d) {
         line = parts.join(' · ');
     }
     return `<a href="/do-uong/${esc(d.slug)}" class="ld-dcard">
+        <img class="ld-dcard-img" src="${d.image?.thumb_url ?? d.image?.url ?? '/images/placeholder-drink.svg'}" srcset="${d.image?.srcset ?? ''}" sizes="(max-width: 640px) 50vw, 320px" alt="${esc(d.name_vi)}" loading="lazy" decoding="async">
         <span class="ld-dcard-body">
             <span class="ld-dcard-title">${esc(d.name_vi)}</span>
             <span class="ld-dcard-meta">${esc(groupName[d.drink_group] || d.drink_group)} · ${d.kind === 'pha-che' ? 'Pha chế' : 'Đóng gói'}${d.temperature ? ' · ' + esc(tempName[d.temperature] || d.temperature) : ''}</span>

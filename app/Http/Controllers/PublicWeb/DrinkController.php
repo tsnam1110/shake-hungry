@@ -72,7 +72,7 @@ class DrinkController extends Controller
         }
 
         $perPage = min(120, max(1, (int) $request->query('per_page', 100)));
-        $drinks = $query->paginate($perPage);
+        $drinks = $query->with('media')->paginate($perPage);
         $drinks->getCollection()->transform(fn (Drink $d) => $this->summary($d));
 
         return response()->json($drinks);
@@ -149,6 +149,7 @@ class DrinkController extends Controller
             'packaging' => $drink->packaging,
             'uncertain' => $drink->uncertain,
             'needs_review' => $drink->needs_review,
+            'image' => $drink->primaryImage(),
         ];
     }
 }

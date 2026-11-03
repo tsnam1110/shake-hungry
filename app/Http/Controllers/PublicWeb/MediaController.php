@@ -10,8 +10,8 @@ use Symfony\Component\HttpFoundation\BinaryFileResponse;
 
 /**
  * IMG-001: phục vụ file ảnh trong data/media/ (nguồn sự thật là file trong
- * repo theo QT-3, không chép sang public/). Chỉ nhận đúng hai nhóm
- * dishes/ingredients và file .webp đã qua kiểm license (R4).
+ * repo theo QT-3, không chép sang public/). Chỉ nhận đúng ba nhóm
+ * dishes/ingredients/drinks và file .webp đã qua kiểm license (R4).
  *
  * Chính sách cache (chủ dự án chốt 2026-11-01): CHỈ ảnh được cache — trang
  * và tài nguyên khác không cache dài hạn để người dùng luôn nhận cập nhật
@@ -23,7 +23,7 @@ class MediaController
 {
     public function show(Request $request, string $path): BinaryFileResponse
     {
-        abort_unless(preg_match('#^(dishes|ingredients)/[a-z0-9][a-z0-9\-]*\.webp$#', $path) === 1, 404);
+        abort_unless(preg_match('#^(dishes|ingredients|drinks)/[a-z0-9][a-z0-9\-]*\.webp$#', $path) === 1, 404);
         $file = base_path('data/media/'.$path);
         abort_unless(is_file($file), 404);
 
@@ -41,7 +41,7 @@ class MediaController
     public function thumb(Request $request, int $width, string $path): BinaryFileResponse
     {
         abort_unless(in_array($width, Thumbnail::WIDTHS, true), 404);
-        abort_unless(preg_match('#^(dishes|ingredients)/[a-z0-9][a-z0-9\-]*\.webp$#', $path) === 1, 404);
+        abort_unless(preg_match('#^(dishes|ingredients|drinks)/[a-z0-9][a-z0-9\-]*\.webp$#', $path) === 1, 404);
         $original = base_path('data/media/'.$path);
         abort_unless(is_file($original), 404);
 

@@ -35,7 +35,7 @@ class DrinkSeeder extends Seeder
                 throw new RuntimeException("Entry đóng gói {$j['slug']} có recipe_steps — cấm bịa công thức cho sản phẩm đóng gói.");
             }
 
-            Drink::updateOrCreate(
+            $drink = Drink::updateOrCreate(
                 ['slug' => $j['slug']],
                 [
                     'name_vi' => $j['name_vi'],
@@ -77,6 +77,18 @@ class DrinkSeeder extends Seeder
                     'review_note' => $j['review_note'] ?? null,
                 ],
             );
+
+            // Ảnh đồ uống (Phần 3A, IMG-001): file là nguồn sự thật, cùng khuôn DishSeeder.
+            \App\Models\DrinkMedia::where('drink_id', $drink->id)->delete();
+            foreach ($j['media'] ?? [] as $media) {
+                \App\Models\DrinkMedia::create([
+                    'drink_id' => $drink->id,
+                    'path' => $media['path'],
+                    'license' => $media['license'], // R4: thiếu license thì fail ngay tại đây
+                    'attribution' => $media['attribution'] ?? null,
+                    'is_primary' => $media['is_primary'] ?? false,
+                ]);
+            }
         }
 
         $this->command?->info('Đã seed '.count($files).' entry nước uống từ data/drinks/.');
