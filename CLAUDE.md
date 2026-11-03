@@ -25,6 +25,10 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > Toàn bộ đã duyệt theo lệnh chủ dự án 2026-11-03; validate **3.371 bản ghi — 0 lỗi,
 > 23 cảnh báo**. Số headline cũ 496/386 (README 2026-10-31) và 654/434 (AGENTS/CLAUDE §0
 > cũ) đã lỗi thời và đã được sửa ở README + AGENTS trong cùng đợt này.
+>
+> Đính chính bổ sung cùng ngày (hoàn thiện mục 2): sau khi gộp `canh-hen-nau-chua`→`canh-hen`
+> (trùng tên chính, xem ROADMAP), kho còn **648 món**; validate **3.368 bản ghi — 0 lỗi,
+> 22 cảnh báo** (giảm đúng 1 cảnh báo V7 của cặp đã gộp).
 
 > ## ⚠️ Đính chính 2026-08-31 — đoạn mô tả trạng thái cũ đã SAI
 >

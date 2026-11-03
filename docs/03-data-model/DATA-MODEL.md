@@ -325,6 +325,8 @@ từ trang nguyên liệu bấm sang được từng thành phần để xem chi
 | `level_note` | text null | **Bắt buộc khi `level_basis` khác null** (CHECK) — ghi rõ cổng chưa đạt và căn cứ được nâng; hiển thị công khai cạnh nhãn mức |
 | `cultural_note` | json null | TCM-000: ghi chú văn hoá của món — `{text, sources: [{ref, url}]}`; bắt buộc (kèm coverage ≥60%) cho cổng Mức 3 và đường nâng bù, do V20 kiểm |
 | `recipe_steps` | json null | mảng bước nấu; null nếu chỉ Mức 1 |
+| `import_note` | text null | ghi chú biên tập nội bộ (không hiển thị công khai) |
+| `safety_note` | text null | cảnh báo an toàn thực phẩm ở tầng món — lớp THÔNG TIN, hiển thị trên `/mon/{slug}` (hiện chỉ `tiet-canh`: huyết tươi chưa nấu chín). Không phải cấm, không chặn/lọc. Thêm 2026-11-03 khi phát hiện ghi chú cũ nói "cảnh báo hiện có" nhưng thực tế chưa hiển thị gì |
 | `serving_desc` | text null | "1 tô cỡ vừa" |
 | `serving_grams` | numeric(8,2) null | khối lượng khẩu phần |
 | `status` | varchar(16) | `draft`, `published`, `archived` |

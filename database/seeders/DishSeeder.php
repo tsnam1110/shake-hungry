@@ -69,6 +69,7 @@ class DishSeeder extends Seeder
                     'estimated_kcal' => $j['estimated_kcal'] ?? null,
                     'external_ref' => $j['external_ref'] ?? null,
                     'import_note' => $j['import_note'] ?? null,
+                    'safety_note' => $j['safety_note'] ?? null,
                     'status' => $j['status'] ?? 'draft',
                     'source' => $j['source'],
                     'confidence' => $j['confidence'],

@@ -1,6 +1,6 @@
 {
   "_generated_by": "php artisan lacdoi:export-data — không sửa tay (DATA-REPOSITORY §2)",
-  "count": 649,
+  "count": 648,
   "dishes": [
     {
       "slug": "ba-chi-rang-tom-kho",
@@ -1240,11 +1240,6 @@
     {
       "slug": "canh-hen",
       "name": "canh hến nấu chua",
-      "country_code": "VN"
-    },
-    {
-      "slug": "canh-hen-nau-chua",
-      "name": "Canh hến nấu chua",
       "country_code": "VN"
     },
     {

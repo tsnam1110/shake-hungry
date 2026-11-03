@@ -51,6 +51,7 @@ fetch('/api/dishes/' + encodeURIComponent(slug), { headers: { 'Accept': 'applica
             <figcaption style="color:var(--color-faint);font-size:12.5px;margin-top:6px">${d.image.is_ai ? 'Ảnh minh họa' : 'Ảnh: ' + esc(d.image.attribution ?? '')}</figcaption>
         </figure>` : ''}
         ${d.parent ? `<div class="ld-group" style="margin-top:16px"><a class="ld-row" href="/mon/${d.parent.slug}"><span class="grow">Biến thể của <b>${esc(d.parent.names?.[0]?.name ?? '')}</b></span>${chev}</a></div>` : ''}
+        ${d.safety_note ? `<div class="ld-warn" style="margin-top:12px"><span><b>Lưu ý an toàn thực phẩm:</b> ${esc(d.safety_note)} Thông tin tham khảo, không thay thế tư vấn y tế.</span></div>` : ''}
         ${variants.length ? `<div class="ld-group" style="margin-top:12px">${variants.map(v => `<a class="ld-row" href="/mon/${v.slug}"><span class="grow">Biến thể: <b>${esc(v.name)}</b></span>${chev}</a>`).join('')}</div>` : ''}
 
         <div class="ld-card" style="margin-top:18px">
