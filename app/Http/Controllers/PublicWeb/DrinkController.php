@@ -122,6 +122,10 @@ class DrinkController extends Controller
                         : 'chưa đủ dữ liệu để tính.')),
                 'mocktail_counterpart' => $counterpart ? $this->summary($counterpart) : null,
             ],
+            // Dị ứng: suy từ các dòng nguyên liệu đã gắn hồ sơ kèm độ phủ —
+            // xem AllergenDisplay::forDrink (không đọc "không suy được" thành
+            // "không có dị ứng" khi độ phủ chưa đủ).
+            'allergen' => \App\Taxonomy\AllergenDisplay::forDrink($drink),
             // Kết hợp cần lưu ý: chỉ khi có cặp đã thẩm định chạm tới đồ
             // uống này qua slug đồ uống (không tự kế thừa slug nguyên liệu).
             'combinations' => \App\Combinations\CombinationDisplay::forItem($drink->slug),

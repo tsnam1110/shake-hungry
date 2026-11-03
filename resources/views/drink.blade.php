@@ -38,7 +38,7 @@ function ingRow(x) {
 function labelRow(label, value) {
     return `<div class="ld-row"><span class="grow" style="color:var(--color-sub)">${label}</span><span class="value" style="color:var(--color-ink)">${esc(value)}</span></div>`;
 }
-fetch('/api/drinks/' + slug).then(r => r.json()).then(({drink: d, combinations, combinations_disclaimer}) => {
+fetch('/api/drinks/' + slug).then(r => r.json()).then(({drink: d, allergen, combinations, combinations_disclaimer}) => {
     const groupName = { tra: 'Trà', 'ca-phe': 'Cà phê', 'sinh-to': 'Sinh tố', 'nuoc-ep': 'Nước ép', 'giai-khat': 'Giải khát', 'cocktail-co-con': 'Cocktail có cồn', mocktail: 'Mocktail', 'nuoc-ngot-co-ga': 'Nước ngọt có ga', 'tra-dong-chai': 'Trà đóng chai', 'ca-phe-dong-goi': 'Cà phê đóng gói', 'nuoc-ep-dong-hop': 'Nước ép đóng hộp', 'sua-dong-hop': 'Sữa đóng hộp', 'tang-luc-dien-giai': 'Tăng lực / điện giải', 'nuoc-dong-goi-khac': 'Nước đóng gói khác', bia: 'Bia', vang: 'Vang', ruou: 'Rượu', 'nuoc-giai-khat-dong-goi': 'Nước giải khát đóng gói' };
     const cafName = { khong: 'Không caffeine', thap: 'Caffeine thấp', 'trung-binh': 'Caffeine trung bình', cao: 'Caffeine cao' };
     const tempName = { nong: 'Nóng', lanh: 'Lạnh', 'ca-hai': 'Nóng hoặc lạnh' };
@@ -95,6 +95,26 @@ fetch('/api/drinks/' + slug).then(r => r.json()).then(({drink: d, combinations, 
         <button type="button" class="ld-btn ld-btn-gray ld-fav-btn" data-fav-drink="${d.id}" style="padding:11px 20px;font-size:15px"><span class="heart-ic">${heartSvg}</span>Yêu thích</button>
         <button type="button" class="ld-btn ld-btn-gray" data-feedback data-drink="${d.id}" data-context="${esc(d.name_vi)}" style="padding:11px 20px;font-size:15px">Gửi phản hồi</button>
     </div>`;
+
+    // Dị ứng — cùng vị trí/kiểu với trang món (sau hàng thao tác, trước kết hợp):
+    // chỉ đọc "không có dị ứng" khi độ phủ đủ; độ phủ một phần hoặc không
+    // có dòng nào để suy thì hiện rõ "chưa đủ dữ kiện", không kết luận an toàn.
+    {
+        const alg = allergen ?? { display: [], linked: 0, total: 0, coverage: 'none' };
+        const covNote = alg.coverage === 'partial'
+            ? `<p class="ld-note" style="margin-top:10px">Chỉ tính từ ${alg.linked}/${alg.total} dòng nguyên liệu đã gắn hồ sơ — các dòng chưa gắn chưa được tính, nên danh sách này có thể thiếu.</p>`
+            : '';
+        html += `<div class="ld-card" style="margin-top:30px">
+            <p class="ld-group-label" style="margin:0 0 6px">Dị ứng</p>
+            ${alg.display.length
+                ? `<div style="display:flex;flex-wrap:wrap;gap:6px">${alg.display.map(e => `<span class="ld-badge" style="background:var(--color-danger-tint);color:var(--color-danger)">Dị ứng: ${esc(e.label)}${e.certainty === 'possible' ? ' (có thể có)' : ''}</span>`).join('')}</div>
+                ${covNote}
+                <p class="ld-note" style="margin-top:10px">Nhãn dị ứng suy từ thành phần theo dữ liệu dự án biên soạn — có thể chưa đầy đủ. Nếu bạn dị ứng nặng, hãy tự kiểm tra thành phần trước khi uống. <a href="/mien-tru-y-te">Đọc Miễn trừ y tế</a>.</p>`
+                : (alg.coverage === 'full'
+                    ? `<p class="ld-note" style="margin:0">Dữ liệu hiện tại chưa ghi nhận chất gây dị ứng phổ biến trong đồ uống này. Điều này không phải cam kết an toàn tuyệt đối — nếu bạn bị dị ứng, hãy kiểm tra kỹ thành phần. <a href="/mien-tru-y-te">Đọc Miễn trừ y tế</a>.</p>`
+                    : `<p class="ld-note" style="margin:0">Chưa đủ dữ kiện để kết luận dị ứng: ${alg.total === 0 ? 'đồ uống này không có dòng nguyên liệu nào để suy' : `chỉ ${alg.linked}/${alg.total} dòng nguyên liệu đã gắn hồ sơ`}. Đừng đọc đây là "không có dị ứng" — nếu bạn bị dị ứng, hãy kiểm tra kỹ thành phần. <a href="/mien-tru-y-te">Đọc Miễn trừ y tế</a>.</p>`)}
+        </div>`;
+    }
 
     // Kết hợp cần lưu ý — chỉ hiện khi có cặp, đúng mẫu trang món (không hiện thẻ rỗng):
     // mỗi cặp ghi cả hai phía + mức + điều kiện/khoa học, kèm cơ chế, nguồn truyền

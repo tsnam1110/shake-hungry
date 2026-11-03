@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Taxonomy;
 
 use App\Models\Dish;
+use App\Models\Drink;
 use App\Models\Ingredient;
 
 /**
@@ -120,6 +121,49 @@ final class AllergenDisplay
         }
 
         return self::fromRows($rows);
+    }
+
+    /**
+     * Nhãn dị ứng cho một đồ uống, suy từ các dòng nguyên liệu ĐÃ GẮN hồ sơ.
+     *
+     * Khác với món ăn (mọi dòng đều gắn nguyên liệu, census đầy đủ), đồ uống
+     * chỉ gắn một phần: hiện tại 6/230 mục gắn đủ, 122 gắn một phần, 102
+     * không gắn dòng nào (kể cả đóng gói không có dòng nguyên liệu). Vì vậy
+     * kết quả LUÔN kèm độ phủ (linked/total/coverage) và giao diện không
+     * được đọc "không suy được dị ứng nào" thành "không có dị ứng" khi độ
+     * phủ chưa đủ: dòng chưa gắn có thể chứa chất gây dị ứng mà hệ thống
+     * chưa thấy. Ví dụ sữa đậu nành: dòng chính "sữa đậu nành 250 ml" chưa
+     * gắn slug, chỉ đường gắn — suy ra không có dị ứng nào nhưng độ phủ
+     * chỉ 1/2, nên phải hiện "chưa đủ dữ kiện", không phải "không ghi nhận".
+     *
+     * @return array{display: list<array{group: string, label: string, certainty: string}>, linked: int, total: int, coverage: string}
+     *         coverage: 'full' | 'partial' | 'none'
+     */
+    public static function forDrink(Drink $drink): array
+    {
+        $lines = $drink->ingredients ?? [];
+        $rows = [];
+        foreach ($lines as $line) {
+            $slug = (string) ($line['ingredient_slug'] ?? '');
+            if ($slug === '') {
+                continue;
+            }
+            $ingredient = Ingredient::where('slug', $slug)->with(['tags', 'components.tags'])->first();
+            if ($ingredient === null) {
+                continue;
+            }
+            $rows[] = self::toRow($ingredient, false);
+        }
+
+        $total = count($lines);
+        $linked = count($rows);
+
+        return [
+            'display' => self::fromRows($rows),
+            'linked' => $linked,
+            'total' => $total,
+            'coverage' => $total === 0 || $linked === 0 ? 'none' : ($linked === $total ? 'full' : 'partial'),
+        ];
     }
 
     /**
