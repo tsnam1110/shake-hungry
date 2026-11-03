@@ -24,11 +24,11 @@
     "kcal_min": null,
     "kcal_per_100g": 0,
     "mapping_confidence": "high",
-    "mapping_note": "Nước lọc không năng lượng, không macro — giá trị 0 là định nghĩa bảng thành phần, không phải ước lượng. Dùng cho dòng nước pha loãng (americano, trà pha) để engine không tính nước là 'thiếu' trong khi nước không đóng góp kcal; không dùng cho nước dừa, nước mía hay nước có đường.",
+    "mapping_note": "Nước lọc không năng lượng, không macro — giá trị 0 là định nghĩa bảng thành phần, không phải ước lượng. Dùng cho dòng nước pha loãng (americano, trà pha) để engine không tính nước là 'thiếu' trong khi nước không đóng góp kcal; không dùng cho nước dừa, nước mía hay nước có đường. Cột source_url chỉ trỏ cổng FoodData Central (không khẳng định mã FDC cụ thể cho nước lọc) để thỏa V14; giá trị 0 kcal là định nghĩa bảng thành phần, không cần mã thực phẩm riêng.",
     "protein_g": 0,
     "scientific_name": null,
     "sodium_mg": 0,
-    "source_url": null,
+    "source_url": "https://fdc.nal.usda.gov/",
     "water_g": 100
   },
   "review_note": "Hồ sơ mới tạo triển khai nhóm cà phê 2026-11-03, chỉ để gắn dòng nước pha loãng, chưa qua duyệt của chủ dự án.",
