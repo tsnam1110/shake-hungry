@@ -1,0 +1,52 @@
+{
+  "slug": "xa-lach-romaine",
+  "name_vi": "Xà lách romaine (sống)",
+  "name_en": "Lettuce, cos or romaine, raw",
+  "category": "rau-cu",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "169247",
+    "source_url": "https://api.nal.usda.gov/fdc/v1/food/169247?api_key=<redacted>",
+    "scientific_name": "Lactuca sativa (Longifolia Group)",
+    "kcal_per_100g": 17,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 1.23,
+    "fat_g": 0.3,
+    "carb_g": 3.29,
+    "fiber_g": 2.1,
+    "water_g": 94.6,
+    "mapping_confidence": "medium",
+    "mapping_note": "Bản ghi USDA SR Legacy 169247 'Lettuce, cos or romaine, raw', xác minh qua nhiều nguồn thứ cấp trích USDA (17 kcal / 1,23 g protein / 0,3 g béo / 3,29 g carb / 2,1 g xơ / 94,6 g nước trên 100 g). Lưu ý: bản Foundation 746769 cho cùng thực phẩm 17 kcal nhưng xơ 1,8 g và carb 3,24 g — khác bộ phân tích, đã chọn bản SR Legacy theo quy ước chung của repo và không trộn hai bộ.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "media": [
+    {
+      "path": "media/ingredients/xa-lach-romaine.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
+  "tcm_traits": [],
+  "source": "curated",
+  "confidence": "low",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Hồ sơ mới tạo 2026-11-03 để gắn ảnh cho rau theo mùa, làm từng sản phẩm một theo kế hoạch giai đoạn đã duyệt, chưa qua duyệt của chủ dự án.",
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}
