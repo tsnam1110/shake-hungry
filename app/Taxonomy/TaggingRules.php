@@ -138,6 +138,7 @@ final class TaggingRules
         // rượu mùi, vermouth, prosecco xếp len-men cùng bia/rượu trong kho.
         'tra-den' => 'che-bien', 'ca-phe-espresso' => 'che-bien',
         'soda' => 'che-bien', 'tonic' => 'che-bien', 'nuoc-ep-ca-chua' => 'che-bien',
+        'nuoc-ep-cam' => 'che-bien', // nước ép cam vắt tươi — chế biến sẵn như nước ép cà chua, không phải nguyên liệu tươi nguyên quả
         'ginger-beer' => 'che-bien', 'grenadine' => 'che-bien', 'orgeat' => 'che-bien',
         'vodka' => 'len-men', 'gin' => 'len-men', 'rum' => 'len-men',
         'tequila' => 'len-men', 'whiskey' => 'len-men', 'triple-sec' => 'len-men',
