@@ -533,7 +533,7 @@ Nguồn sự thật là file `data/vegetables/<slug>.json` (QT-3), dựng lại 
 
 ### `drinks` (DRINK-MODULE, 2026-11-03 — mở rộng từ schema món, KHÔNG dùng `meal_slots`/`cooking_method` nguyên dạng)
 
-Nguồn sự thật là file `data/drinks/<slug>.json` (QT-3), dựng lại qua `DrinkSeeder`. Hai kind hiển thị khác nhau, cấm lẫn: `pha-che` có công thức; `dong-goi` CHỈ khối "Thông tin nhãn" (seeder fail nếu có `recipe_steps`).
+Nguồn sự thật là file `data/drinks/<slug>.json` (QT-3), dựng lại qua `DrinkSeeder`. Hai kind hiển thị khác nhau, cấm lẫn: `pha-che` có công thức; `dong-goi` CHỈ khối "Thông tin nhãn" (seeder fail nếu có `recipe_steps`). Giao diện chi tiết `drink.blade.php` đồng nhất theo mẫu trang món từ 2026-11-03 (chỉ thị mới): link quay lại kiểu chevron, tiêu đề/phụ đề/hàng badge `ld-badge`, hộp cảnh báo `ld-warn` (18+, "Chưa chắc chắn"), khối dinh dưỡng "Năng lượng mỗi khẩu phần" đặt ngay sau đầu trang, tiêu đề mục `ld-section-title`, bước pha đánh số tròn như "Cách làm", kết hợp chỉ hiện khi có cặp; giữ nguyên đặc thù: badge 18+, khối "Thông tin nhãn" cho đóng gói, không hiện `recipe_steps` cho đóng gói. Trang nước uống không có ảnh (file drinks không có `media`) nên không có khối ảnh như trang món — đó là thiếu dữ liệu thật, không lấp bằng ảnh giả (QT-9).
 
 | Cột | Kiểu | Ghi chú |
 |---|---|---|
