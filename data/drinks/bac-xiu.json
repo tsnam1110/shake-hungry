@@ -37,6 +37,9 @@
   "sugar_added_g": 23,
   "sugar_note": "Đường ~23 g; ít ngọt: sữa đặc 20 ml. Khoảng nguồn: cà phê 20–30 ml, sữa đặc 30–40 ml, sữa tươi 50–100 ml; số liệu trên là chuẩn seed.",
   "caffeine_level": "trung-binh",
+  "caffeine_mg_min": 25,
+  "caffeine_mg_max": 70,
+  "caffeine_mg_note": "KHOẢNG TẦM SOÁT, CHƯA ĐO CHO LY NÀY: chỉ tính cho 25 ml cà phê trong công thức, KHÔNG lấy số của một phin nguyên ly (100–200 mg). Nồng độ phin Robusta theo nhiều nguồn thứ cấp: khoảng 100–200 mg/100 ml (phin 100–120 ml), 100–130 mg cho một phin 14–16 g dùng hết cho cà phê sữa đá, 66 mg/60 ml — tương đương khoảng 25–50 mg cho 25 ml; một bản tái cấu trúc với liều 18 g cho 280–330 mg/120 ml thì tương đương 58–69 mg cho 25 ml, nên khoảng trên mở rộng tới 70 mg để không loại nguồn đó. Giá trị thường gặp trong khoảng này là khoảng 30–50 mg, ví dụ ~40 mg — đó là điểm giữa của khoảng tầm soát, không phải số đo. Quán dùng liều bột, giống hạt, thời gian hãm khác sẽ ra số khác; mức 'trung-binh' giữ nguyên theo thang tương đối của catalogue, không phải kết luận từ mg này.",
   "alcohol": false,
   "alcohol_pct_estimate": null,
   "alcohol_note": "",
@@ -72,6 +75,15 @@
       "basis": "sugar_added_g trong file catalogue chia cho 135 ml chất lỏng, không chia cho 350 ml ly",
       "confidence": "medium",
       "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    },
+    {
+      "label": "Caffeine",
+      "value_min": 25,
+      "value_max": 70,
+      "unit": "mg/ly",
+      "basis": "Khoảng tầm soát cho 25 ml cà phê phin Robusta trong công thức, xem caffeine_mg_note; không phải số đo, không tính theo 100 ml chất lỏng vì caffeine chỉ nằm trong phần cà phê, không nằm trong sữa.",
+      "confidence": "low",
+      "source_ref": "Nguồn thứ cấp về nồng độ phin Robusta (xem caffeine_mg_note)"
     }
   ],
   "allergen_note": "Sữa — đã kiểm chứng qua tag allergen:sua của sua-dac và sua-tuoi. Không kết luận danh sách dị ứng đầy đủ từ các dòng còn lại.",
@@ -86,7 +98,7 @@
   "needs_review": true,
   "reviewed_by": null,
   "reviewed_at": null,
-  "review_note": "Thí điểm bổ sung thông tin 2026-11-03, sửa theo đính chính của Benjamin: kcal/100 ml tính trên 100 ml chất lỏng thật (135 ml), KHÔNG theo dung tích ly kể cả đá (350 ml). Gắn dòng cà phê vào ca-phe-den (hồ sơ ghi rõ phin đậm hơn brewed Mỹ nhưng năng lượng không đáng kể); thêm liquid_ml, serving_note, key_indicators, allergen_note, tcm_note, origin_note. Caffeine vẫn chỉ mức định tính, không ghi mg phin. Chờ duyệt lại — key_indicators chưa được seeder/controller/view đọc.",
+  "review_note": "Thí điểm bổ sung thông tin 2026-11-03, sửa theo đính chính của Benjamin: kcal/100 ml tính trên 100 ml chất lỏng thật (135 ml), KHÔNG theo dung tích ly kể cả đá (350 ml). Gắn dòng cà phê vào ca-phe-den (hồ sơ ghi rõ phin đậm hơn brewed Mỹ nhưng năng lượng không đáng kể); thêm liquid_ml, serving_note, key_indicators, allergen_note, tcm_note, origin_note. Bổ sung 2026-11-03 theo yêu cầu ghi rõ caffeine: caffeine_mg 25–70 mg/ly là khoảng tầm soát cho 25 ml phin, không phải số đo, xem caffeine_mg_note; mức trung-binh giữ nguyên. Chờ duyệt lại — caffeine_mg/key_indicators chưa được seeder/controller/view đọc cho tới giai đoạn schema.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
