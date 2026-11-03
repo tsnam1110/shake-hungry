@@ -399,6 +399,12 @@ class CatalogController extends Controller
             'role_label' => $role === null ? null : (\App\Recommendation\Recommender::TRAY_ROLE_LABELS[$role] ?? $role),
             // IMG-001: ảnh chính của món lắc (nếu có).
             'image' => $dish->primaryImage(),
+            // Hoàn thiện mục 5a: cảnh báo kết hợp trong kết quả Lắc — CHỈ hiển
+            // thị. CombinationDisplay::forDish chỉ gắn cặp thực phẩm–thực phẩm;
+            // cặp thuốc×thực phẩm không tự gắn vào món (nguyên tắc cũ giữ nguyên).
+            // Không chặn, không lọc, không chấm điểm — Recommender không đổi.
+            'combinations' => \App\Combinations\CombinationDisplay::forDish($dish),
+            'combinations_disclaimer' => \App\Combinations\CombinationDisplay::DISCLAIMER,
             'nutrition' => $dish->nutrition === null ? null : [
                 'kcal_min' => $dish->nutrition->kcal_min,
                 'kcal_max' => $dish->nutrition->kcal_max,

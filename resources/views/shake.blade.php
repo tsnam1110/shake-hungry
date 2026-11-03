@@ -575,6 +575,12 @@ document.getElementById('shake-btn').addEventListener('click', async () => {
                 </div>
                 ${unv.length ? `<div class="ld-warn" style="margin-top:14px"><span>Số liệu tham khảo — chưa kiểm định (nguồn thứ cấp): ${esc(unv.join(', '))}.</span></div>` : ''}`
             : '<p style="color:var(--color-faint);margin-top:14px">Món này chưa đủ dữ liệu dinh dưỡng nên không hiện số.</p>'}
+            ${(() => { const c = d.combinations; if (!c || !(c.notes?.length || c.folk?.length)) return ''; return `<div class="ld-card" style="margin-top:14px">
+                <p class="ld-group-label" style="margin:0 0 6px">Kết hợp cần lưu ý trong món này</p>
+                ${(c.notes ?? []).map(x => `<p class="ld-note" style="margin:8px 0 0"><b>${esc(x.side_a_label)} + ${esc(x.side_b_label)}</b> — ${esc(x.tier_label)}: ${esc(x.condition_vi ?? x.science_label)}</p>`).join('')}
+                ${(c.folk ?? []).length ? `<p class="ld-note" style="margin:8px 0 0">Kiêng kỵ dân gian (${c.folk.length}): ${(c.folk ?? []).map(x => esc(x.side_a_label) + ' + ' + esc(x.side_b_label)).join(' · ')}</p>` : ''}
+                <p class="ld-note" style="margin-top:10px">${esc(d.combinations_disclaimer ?? '')} <a href="/ket-hop-can-luu-y">Xem bảng kết hợp cần lưu ý</a>.</p>
+            </div>`; })()}
             ${data.relaxed_level > 0 ? '<p class="ld-note" style="margin-top:12px">Đã nới lỏng bộ lọc để tìm thêm lựa chọn — lọc dị ứng vẫn giữ nguyên.</p>' : ''}
             <div style="margin-top:16px">${currentUser
                 ? `<button id="eat-btn" class="ld-btn ld-btn-primary" style="padding:11px 22px;font-size:15.5px;width:100%">Ăn món này</button>`
@@ -640,6 +646,11 @@ function renderTrayResult(data, box, fromSwap = false) {
             </div>`; }).join('')}
         </div>
         ${unvNames.length ? `<div class="ld-warn" style="margin-top:14px"><span>Số liệu tham khảo — chưa kiểm định (nguồn thứ cấp): ${esc(unvNames.join(', '))}.</span></div>` : ''}
+        ${(() => { const hits = currentTray.dishes.flatMap(x => [...(x.combinations?.notes ?? []).map(c => ({ dish: x.name, ...c })), ...(x.combinations?.folk ?? []).map(c => ({ dish: x.name, folk: true, ...c }))]); if (!hits.length) return ''; return `<div class="ld-card" style="margin-top:14px">
+            <p class="ld-group-label" style="margin:0 0 6px">Kết hợp cần lưu ý trong mâm này (chỉ thông tin, không chặn món)</p>
+            ${hits.map(h => `<p class="ld-note" style="margin:8px 0 0"><b>${esc(h.dish)}:</b> ${esc(h.side_a_label)} + ${esc(h.side_b_label)} — ${h.folk ? 'Kiêng kỵ dân gian' : esc(h.tier_label)}${h.condition_vi ? ': ' + esc(h.condition_vi) : ''}</p>`).join('')}
+            <p class="ld-note" style="margin-top:10px"><a href="/ket-hop-can-luu-y">Xem bảng kết hợp cần lưu ý</a>.</p>
+        </div>`; })()}
         ${!fromSwap && data.suggestion ? `<p class="ld-note" style="margin-top:12px">${esc(data.suggestion)}</p>` : ''}
         ${!fromSwap && data.relaxed_level > 0 ? '<p class="ld-note" style="margin-top:12px">Đã nới lỏng bộ lọc để gom đủ mâm — lọc dị ứng vẫn giữ nguyên.</p>' : ''}
         <div style="margin-top:16px">${currentUser
