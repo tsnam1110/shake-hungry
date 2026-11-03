@@ -25,12 +25,14 @@
     {
       "name": "siro đường",
       "quantity": 30,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "siro-duong"
     },
     {
       "name": "trân châu đen đã nấu",
       "quantity": 60,
-      "unit": "g"
+      "unit": "g",
+      "ingredient_slug": "tran-chau-da-nau"
     }
   ],
   "recipe_steps": [
@@ -62,10 +64,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Thí điểm đồ uống 2026-11-03: gắn siro + trân châu đã nấu theo thông tin phổ biến tại hàng quán Việt Nam, kcal theo khoảng 150–200 kcal/100 g trân châu, mẫu số 390 ml đồ uống gồm trân châu — chưa qua duyệt lại sau khi sửa (duyệt toàn bộ cũ ngày 2026-11-03 chỉ cho dữ liệu cũ).",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -74,5 +76,44 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 330,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml đồ uống",
+      "value_min": 58,
+      "value_max": 66,
+      "value": null,
+      "per_serving": "≈226–257 kcal/ly (390 ml đồ uống gồm trân châu, không tính đá)",
+      "basis": "Cộng tay từ hồ sơ đã có, theo thông tin phổ biến tại hàng quán Việt Nam: trà đen 200 ml × 1 kcal/100 g = 2 kcal; sữa tươi 100 ml × 1,031 × 60–61 kcal/100 g = 61,9–62,9 kcal; siro đường 1:1 30 ml × 1,24 × 194 kcal/100 g = 72,2 kcal; trân châu đen đã nấu ướp đường 60 g × 150–200 kcal/100 g = 90–120 kcal. Tổng 226,1–257,1 kcal/ly. Mẫu số là 390 ml đồ uống gồm trân châu (330 ml lỏng + 60 g trân châu, không tính đá) vì quán Việt Nam phục vụ ly 500 ml có đá, khách uống cả nước lẫn trân châu — chia cho 330 ml lỏng sẽ thổi nồng độ lên 68–78 kcal/100 ml lỏng, sai với cách uống thật. Đây chưa phải đầu ra engine — engine sẽ nới khoảng theo mapping confidence khi chạy thật.",
+      "confidence": "low",
+      "source_ref": "data/ingredients/tra-den.json, sua-tuoi.json, siro-duong.json, tran-chau-da-nau.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 30,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "30 g/ly",
+      "basis": "sugar_added_g trong file catalogue; kiểm chéo: siro 30 ml × 1,24 = 37,2 g siro 1:1, đường 18,6 g + đường ngấm trân châu ~10 g = 28,6 g, gần 30 g trong sai số quán.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    },
+    {
+      "label": "Caffeine",
+      "unit": "mức",
+      "value": null,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "mức trung-binh (chưa ghi mg)",
+      "basis": "Chưa ghi mg cho trà sữa: trà đen hãm đậm 200 ml, nồng độ caffeine theo quán và thời gian hãm thay đổi, không áp số trà đen pha loãng làm số đo. Mức trung-binh là thang tương đối của catalogue.",
+      "confidence": "low",
+      "source_ref": ""
+    }
+  ],
+  "allergen_note": "Đã gắn đủ 4/4 dòng nguyên liệu: chỉ sữa tươi có tag allergen:sua — dị ứng Sữa đã xác nhận. Trà đen, siro đường, trân châu đã nấu không có tag dị ứng trong hồ sơ; 'không tag' không phải cam kết an toàn tuyệt đối cho mọi dị ứng.",
+  "tcm_note": "Không kết luận ở tầng đồ uống: phủ theo khối lượng chỉ ~26% (sữa tươi 103 g bình/cam/Thổ trên tổng ~400 g; trà đen, siro, trân châu không có nhãn tính vị), dưới ngưỡng 30% của TCM-000.",
+  "origin_note": "Tầm soát: trà sữa trân châu từ Đài Loan, thập niên 1980; hai quán Chun Shui Tang (Đài Trung) và Hanlin Tea Room (Đài Nam) cùng nhận là nơi khởi nguồn, tranh chấp chưa có kết luận — không chọn một quán làm người phát minh duy nhất. Ghi chú văn hoá gốc trong file chỉ ghi 'Du nhập từ Đài Loan' nên giữ nguyên, không ghi đè bằng thông tin tầm soát này."
 }

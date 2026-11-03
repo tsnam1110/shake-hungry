@@ -136,7 +136,9 @@ fetch('/api/drinks/' + slug).then(r => r.json()).then(({drink: d, allergen, comb
             fourthVal = (ki.value_min !== null && ki.value_min !== undefined && ki.value_max !== null && ki.value_max !== undefined)
                 ? `${fmtNum(ki.value_min)}–${fmtNum(ki.value_max)}`
                 : (ki.value !== null && ki.value !== undefined ? fmtNum(ki.value) : '?');
-            fourthLabel = 'Kcal/100 ml lỏng';
+            // Mẫu số theo chỉ số, không cố định "lỏng": đồ uống có topping rắn
+            // (trà sữa trân châu) tính trên 100 ml đồ uống gồm topping, không tính đá.
+            fourthLabel = (ki.unit || '').includes('đồ uống') ? 'Kcal/100 ml đồ uống' : 'Kcal/100 ml lỏng';
         }
     }
     html += `<div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5" style="margin-top:14px">
