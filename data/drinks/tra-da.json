@@ -13,7 +13,8 @@
     {
       "name": "trà xanh hãm",
       "quantity": 150,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "tra-xanh"
     },
     {
       "name": "đường",
@@ -27,7 +28,7 @@
     "Rót lên đá đầy."
   ],
   "sugar_added_g": 0,
-  "sugar_note": "Đường khoảng 0–10 g; chuẩn: không đường, thêm chanh lát tùy chọn.",
+  "sugar_note": "Chuẩn: không đường. Quán có thể thêm 0–10 g đường/ly — nếu thêm 10 g thì kcal tăng thêm ≈38,7 kcal/ly (đường 387 kcal/100 g), tức ≈25,8 kcal/100 ml chất lỏng; con số chuẩn dưới đây là bản không đường, không phải số chung cho mọi quán.",
   "caffeine_level": "thap",
   "alcohol": false,
   "alcohol_pct_estimate": null,
@@ -41,16 +42,48 @@
   "sugar_range_g": null,
   "alcohol_pct_range": null,
   "label_note": "",
+  "liquid_ml": 150,
+  "serving_note": "Ly thủy tinh 300 ml, đá viên đầy. Kcal/100 ml tính trên 100 ml trà thật (150 ml chất lỏng), KHÔNG chia cho 300 ml ly kể cả đá và KHÔNG nhân kcal/100 ml với 300 để ra kcal cả ly. Kcal cả ly chuẩn là kcal của 150 ml trà, đá không tính kcal.",
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "value": 1,
+      "unit": "kcal/100 ml chất lỏng",
+      "per_serving": "≈1,5 kcal/ly (150 ml chất lỏng, chuẩn không đường)",
+      "basis": "Hồ sơ tra-xanh: USDA SR Legacy FDC 171917, 1 kcal/100 g, density 1,0 sau khi sửa ở commit density. Đây chưa phải đầu ra engine — engine sẽ nới khoảng khi chạy thật, nhưng với trà gần 0 kcal thì khoảng đó vẫn quanh 1–2 kcal/ly.",
+      "confidence": "high",
+      "source_ref": "data/ingredients/tra-xanh.json (FDC 171917)"
+    },
+    {
+      "label": "Đường thêm",
+      "value": 0,
+      "unit": "g/ly chuẩn",
+      "per_100ml_liquid": "0 g/100 ml chất lỏng (chuẩn); quán có thể thêm tới 10 g/ly, xem sugar_note",
+      "basis": "sugar_added_g trong file; biến thiên theo quán, không phải số cố định của món",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    },
+    {
+      "label": "Caffeine",
+      "value": "thấp (định tính, chưa ghi mg)",
+      "basis": "Giữ mức định tính hiện tại. Chưa ghi mg vì lượng lá và thời gian hãm ở quán không chuẩn; số tầm soát USDA 12 mg/100 g chỉ dùng để kiểm mức thấp là hợp lý, không phải số hiển thị.",
+      "confidence": "low",
+      "source_ref": "Tầm soát, chưa kéo trực tiếp nutrient caffeine từ FDC cho hồ sơ tra-xanh"
+    }
+  ],
+  "allergen_note": "Hai dòng chuẩn đã gắn đủ (trà xanh, đường 0 g) đều không có tag dị ứng trong hồ sơ nguyên liệu. Chanh lát tùy chọn không nằm trong công thức chuẩn, quán pha khác (thêm sữa, hương liệu) không nằm trong kết luận này.",
+  "tcm_note": "Theo hồ sơ tra-xanh (đã gắn, phủ 100% chất lỏng): tính lương, vị cam và khổ, hành Thổ và Hỏa — hai dòng cùng nguồn 《中药大辞典》 qua A+ Y học bách khoa, giữ cả hai, không ép chọn một hành. Nhãn này là của nước trà xanh, quán dùng lá/cách hãm khác có thể khác.",
+  "origin_note": "Tầm soát: trà đá là thức uống vỉa hè rẻ, thường đi kèm bữa ăn hoặc phục vụ miễn phí/giá tượng trưng ở quán ăn, là điểm hẹn xã giao chứ không chỉ giải khát. Ghi chú hiện tại nói 'rẻ nhất Việt Nam' là nhận định chưa có nguồn so sánh giá — không giữ câu đó làm kết luận.",
   "brand_examples": [],
-  "cultural_note": "Thức uống vỉa hè rẻ nhất Việt Nam. Không có chuẩn định lượng duy nhất, công thức trên là quy ước phục vụ, phải ghi rõ ở UI.",
+  "cultural_note": "Thức uống vỉa hè rẻ, phổ biến ở Việt Nam. Không có chuẩn định lượng duy nhất, công thức trên là quy ước phục vụ, phải ghi rõ ở UI.",
   "recipe_sources": [],
   "mocktail_counterpart_slug": null,
   "uncertain": true,
   "uncertain_note": "Không có chuẩn định lượng duy nhất; công thức là quy ước phục vụ.",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Thí điểm đồ uống 2026-11-03: gắn dòng trà vào tra-xanh (density đã sửa riêng), thêm liquid_ml 150, serving_note theo quy tắc kcal/100 ml chất lỏng thật (không chia cho ly 300 ml có đá), key_indicators chuẩn không đường (1 kcal/100 ml, ≈1,5 kcal/ly), allergen_note, tcm_note, origin_note; bỏ chữ 'rẻ nhất' trong cultural_note vì chưa có nguồn so sánh. Caffeine vẫn định tính, chưa ghi mg. Chờ duyệt lại — key_indicators chưa được seeder/controller/view đọc.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
