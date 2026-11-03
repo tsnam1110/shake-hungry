@@ -13,7 +13,8 @@
     {
       "name": "cà phê",
       "quantity": 25,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "ca-phe-den"
     },
     {
       "name": "sữa đặc",
@@ -50,16 +51,42 @@
   "sugar_range_g": null,
   "alcohol_pct_range": null,
   "label_note": "",
+  "liquid_ml": 135,
+  "serving_note": "Ly cao 350 ml, có đá. Kcal/100 ml tính trên 100 ml chất lỏng thật (sữa đặc 35 ml + sữa tươi 75 ml + cà phê 25 ml = 135 ml), KHÔNG chia cho 350 ml ly kể cả đá và KHÔNG nhân kcal/100 ml với 350 để ra kcal cả ly. Kcal cả ly là kcal của 135 ml chất lỏng, đá không tính kcal.",
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "value_min": 146,
+      "value_max": 149,
+      "unit": "kcal/100 ml chất lỏng",
+      "per_serving": "≈197–201 kcal/ly (135 ml chất lỏng, chưa tính đá tan)",
+      "basis": "Cộng tay từ hồ sơ đã có: sữa đặc 35 ml × 1,29 × 334–341 kcal/100 g = 150,8–154,0 kcal; sữa tươi 75 ml × 1,031 × 60–61 kcal/100 g = 46,4–47,2 kcal; cà phê 25 ml gắn ca-phe-den (1 kcal/100 g) ≈ 0,3 kcal. Tổng 197,2–201,5 kcal / 135 ml = 146–149 kcal/100 ml chất lỏng. Đây chưa phải đầu ra engine — engine sẽ nới khoảng theo mapping confidence khi chạy thật.",
+      "confidence": "medium",
+      "source_ref": "data/ingredients/sua-dac.json, sua-tuoi.json, ca-phe-den.json"
+    },
+    {
+      "label": "Đường thêm",
+      "value": 23,
+      "unit": "g/ly",
+      "per_100ml_liquid": "≈17,0 g/100 ml chất lỏng",
+      "basis": "sugar_added_g trong file catalogue chia cho 135 ml chất lỏng, không chia cho 350 ml ly",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Sữa — đã kiểm chứng qua tag allergen:sua của sua-dac và sua-tuoi. Không kết luận danh sách dị ứng đầy đủ từ các dòng còn lại.",
+  "tcm_note": "Chưa kết luận ở tầng đồ uống: sữa tươi mang nhãn bình/cam/Thổ, cà phê đen mang nhãn bình/khổ/Hỏa (low), sữa đặc không có nhãn — cần quy tắc tổng hợp riêng cho đồ uống trước khi hiển thị, không chọn một hành duy nhất.",
+  "origin_note": "Tầm soát: biến thể sữa nhiều, cà phê ít của Sài Gòn, cộng đồng Hoa ở Chợ Lớn, thập niên 1950, tên từ tiếng Quảng Đông chỉ sữa trắng với ít cà phê. Ghi chú văn hóa đầy đủ cần nguồn gốc sâu hơn, không dùng một câu ngắn hiện tại làm đủ.",
   "brand_examples": [],
   "cultural_note": "Miền Nam, bản chất là 'sữa có vị cà phê'.",
   "recipe_sources": [],
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Thí điểm bổ sung thông tin 2026-11-03, sửa theo đính chính của Benjamin: kcal/100 ml tính trên 100 ml chất lỏng thật (135 ml), KHÔNG theo dung tích ly kể cả đá (350 ml). Gắn dòng cà phê vào ca-phe-den (hồ sơ ghi rõ phin đậm hơn brewed Mỹ nhưng năng lượng không đáng kể); thêm liquid_ml, serving_note, key_indicators, allergen_note, tcm_note, origin_note. Caffeine vẫn chỉ mức định tính, không ghi mg phin. Chờ duyệt lại — key_indicators chưa được seeder/controller/view đọc.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
