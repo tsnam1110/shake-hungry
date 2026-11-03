@@ -48,6 +48,11 @@ class FeedbackTicket extends Model
         return $this->belongsTo(Ingredient::class);
     }
 
+    public function drink(): BelongsTo
+    {
+        return $this->belongsTo(Drink::class);
+    }
+
     /** Tên sản phẩm gắn với ticket (để hiển thị ngữ cảnh), null nếu phản hồi chung. */
     public function contextName(): ?string
     {
@@ -58,6 +63,7 @@ class FeedbackTicket extends Model
 
         return $dishName
             ?? $this->fruit?->ingredient?->name_vi
-            ?? $this->ingredient?->name_vi;
+            ?? $this->ingredient?->name_vi
+            ?? $this->drink?->name_vi;
     }
 }

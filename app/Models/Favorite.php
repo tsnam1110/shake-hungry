@@ -25,4 +25,9 @@ class Favorite extends Model
     {
         return $this->belongsTo(Fruit::class);
     }
+
+    public function drink(): BelongsTo
+    {
+        return $this->belongsTo(Drink::class);
+    }
 }

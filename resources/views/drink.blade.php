@@ -18,6 +18,7 @@ const slug = location.pathname.split('/').pop();
 function esc(s) { return (s ?? '').toString().replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
 function li(x) { return `<li>${esc(x)}</li>`; }
 const chev = '<svg class="ld-chev" width="8" height="14" viewBox="0 0 8 14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M1 1l6 6-6 6"/></svg>';
+const heartSvg = '<svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"><path d="M12 20.5C7 16.5 3.8 13.3 3.8 9.6 3.8 7 5.7 5 8.1 5c1.6 0 3.1.9 3.9 2.3C12.8 5.9 14.3 5 15.9 5c2.4 0 4.3 2 4.3 4.6 0 3.7-3.2 6.9-8.2 10.9Z"/></svg>';
 // Nhãn độ tin cậy và class capsule — cùng bảng với trang món.
 const confLabel = { high: 'Tin cậy cao', medium: 'Tin cậy trung bình', low: 'Tin cậy thấp · số tham khảo' };
 const confClass = { high: '', medium: 'medium', low: 'low' };
@@ -88,6 +89,12 @@ fetch('/api/drinks/' + slug).then(r => r.json()).then(({drink: d, combinations, 
     if (d.alcohol_pct_estimate) html += `<p class="ld-note" style="margin-top:10px">Độ cồn ước tính trước pha loãng: ~${d.alcohol_pct_estimate}%</p>`;
     if (d.alcohol_note) html += `<p class="ld-note" style="margin-top:10px">${esc(d.alcohol_note)}</p>`;
     html += `</div>`;
+
+    // Hàng thao tác — cùng mẫu trang món (sau khối dinh dưỡng): yêu thích + phản hồi.
+    html += `<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px">
+        <button type="button" class="ld-btn ld-btn-gray ld-fav-btn" data-fav-drink="${d.id}" style="padding:11px 20px;font-size:15px"><span class="heart-ic">${heartSvg}</span>Yêu thích</button>
+        <button type="button" class="ld-btn ld-btn-gray" data-feedback data-drink="${d.id}" data-context="${esc(d.name_vi)}" style="padding:11px 20px;font-size:15px">Gửi phản hồi</button>
+    </div>`;
 
     // Kết hợp cần lưu ý — chỉ hiện khi có cặp, đúng mẫu trang món (không hiện thẻ rỗng):
     // mỗi cặp ghi cả hai phía + mức + điều kiện/khoa học, kèm cơ chế, nguồn truyền

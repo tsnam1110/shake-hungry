@@ -16,11 +16,12 @@ class EngagementController extends Controller
 {
     public function ids(Request $request): JsonResponse
     {
-        $favs = $request->user()->favorites()->get(['dish_id', 'fruit_id']);
+        $favs = $request->user()->favorites()->get(['dish_id', 'fruit_id', 'drink_id']);
 
         return response()->json([
             'dish_ids' => $favs->pluck('dish_id')->filter()->values(),
             'fruit_ids' => $favs->pluck('fruit_id')->filter()->values(),
+            'drink_ids' => $favs->pluck('drink_id')->filter()->values(),
         ]);
     }
 
@@ -33,6 +34,7 @@ class EngagementController extends Controller
                     'nutrition', 'region',
                 ]),
                 'fruit' => fn ($q) => $q->with('ingredient:id,slug,name_vi'),
+                'drink',
             ])
             ->latest()
             ->get();
@@ -57,16 +59,26 @@ class EngagementController extends Controller
                 'availability_months' => $f->fruit->availability_months ?? [],
                 'main_season_months' => $f->fruit->main_season_months ?? [],
             ])->values(),
+            'drinks' => $favs->filter(fn ($f) => $f->drink !== null)->map(fn ($f) => [
+                'id' => $f->drink->id,
+                'slug' => $f->drink->slug,
+                'name_vi' => $f->drink->name_vi,
+                'drink_group' => $f->drink->drink_group,
+                'kind' => $f->drink->kind,
+                'temperature' => $f->drink->temperature,
+                'alcohol' => $f->drink->alcohol,
+            ])->values(),
         ]);
     }
 
     public function toggle(Request $request): JsonResponse
     {
         $data = $request->validate([
-            'dish_id' => ['nullable', 'integer', 'exists:dishes,id', 'required_without:fruit_id', 'prohibits:fruit_id'],
-            'fruit_id' => ['nullable', 'integer', 'exists:fruits,id'],
+            'dish_id' => ['nullable', 'integer', 'exists:dishes,id', 'required_without_all:fruit_id,drink_id', 'prohibits:fruit_id,drink_id'],
+            'fruit_id' => ['nullable', 'integer', 'exists:fruits,id', 'prohibits:drink_id'],
+            'drink_id' => ['nullable', 'integer', 'exists:drinks,id'],
         ]);
-        $key = isset($data['dish_id']) ? 'dish_id' : 'fruit_id';
+        $key = isset($data['dish_id']) ? 'dish_id' : (isset($data['fruit_id']) ? 'fruit_id' : 'drink_id');
         $existing = $request->user()->favorites()->where($key, $data[$key])->first();
         if ($existing !== null) {
             $existing->delete();

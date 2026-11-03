@@ -198,6 +198,7 @@
         if (btn.dataset.dish) window.__fb.ctx.dish_id = +btn.dataset.dish;
         if (btn.dataset.fruit) window.__fb.ctx.fruit_id = +btn.dataset.fruit;
         if (btn.dataset.ingredient) window.__fb.ctx.ingredient_id = +btn.dataset.ingredient;
+        if (btn.dataset.drink) window.__fb.ctx.drink_id = +btn.dataset.drink;
         document.getElementById('fb-context').textContent = btn.dataset.context ? 'Về: ' + btn.dataset.context : 'Phản hồi chung cho Lắc Đói';
         fbOpen();
     });
@@ -352,33 +353,35 @@
         clearTimeout(t._h); t._h = setTimeout(() => t.classList.remove('show'), 2600);
     };
 
-    /* Yêu thích (UI-014): dùng chung mọi trang — nút tim mang data-fav-dish
-       hoặc data-fav-fruit; trạng thái lấy từ /api/favorites/ids. */
-    window.__fav = { user: false, dishes: new Set(), fruits: new Set() };
+    /* Yêu thích (UI-014): dùng chung mọi trang — nút tim mang data-fav-dish,
+       data-fav-fruit hoặc data-fav-drink; trạng thái lấy từ /api/favorites/ids. */
+    window.__fav = { user: false, dishes: new Set(), fruits: new Set(), drinks: new Set() };
     window.ldRefreshHearts = function () {
         document.querySelectorAll('[data-fav-dish]').forEach(el =>
             el.classList.toggle('on', window.__fav.dishes.has(+el.dataset.favDish)));
         document.querySelectorAll('[data-fav-fruit]').forEach(el =>
             el.classList.toggle('on', window.__fav.fruits.has(+el.dataset.favFruit)));
+        document.querySelectorAll('[data-fav-drink]').forEach(el =>
+            el.classList.toggle('on', window.__fav.drinks.has(+el.dataset.favDrink)));
     };
     document.addEventListener('click', async (e) => {
-        const el = e.target.closest('[data-fav-dish], [data-fav-fruit]');
+        const el = e.target.closest('[data-fav-dish], [data-fav-fruit], [data-fav-drink]');
         if (!el) return;
         e.preventDefault(); e.stopPropagation();
         if (!window.__fav.user) { ldToast('Đăng nhập để lưu mục yêu thích'); return; }
-        const isDish = el.hasAttribute('data-fav-dish');
-        const id = +(isDish ? el.dataset.favDish : el.dataset.favFruit);
+        const kind = el.hasAttribute('data-fav-dish') ? 'dish' : (el.hasAttribute('data-fav-fruit') ? 'fruit' : 'drink');
+        const id = +(kind === 'dish' ? el.dataset.favDish : (kind === 'fruit' ? el.dataset.favFruit : el.dataset.favDrink));
         const resp = await fetch('/api/favorites/toggle', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json', 'Accept': 'application/json', 'X-CSRF-TOKEN': document.querySelector('meta[name=csrf-token]').content },
-            body: JSON.stringify(isDish ? { dish_id: id } : { fruit_id: id }),
+            body: JSON.stringify(kind === 'dish' ? { dish_id: id } : (kind === 'fruit' ? { fruit_id: id } : { drink_id: id })),
         });
         if (!resp.ok) { ldToast('Chưa lưu được — thử lại sau'); return; }
         const { favored } = await resp.json();
-        (isDish ? window.__fav.dishes : window.__fav.fruits)[favored ? 'add' : 'delete'](id);
+        (kind === 'dish' ? window.__fav.dishes : (kind === 'fruit' ? window.__fav.fruits : window.__fav.drinks))[favored ? 'add' : 'delete'](id);
         window.ldRefreshHearts();
         ldToast(favored ? 'Đã thêm vào Yêu thích' : 'Đã bỏ khỏi Yêu thích');
-        document.dispatchEvent(new CustomEvent('fav-changed', { detail: { isDish, id, favored } }));
+        document.dispatchEvent(new CustomEvent('fav-changed', { detail: { isDish: kind === 'dish', isDrink: kind === 'drink', id, favored } }));
     });
     fetch('/api/me').then(r => r.json()).then(async ({ user }) => {
         if (!user) return;
@@ -386,6 +389,7 @@
         const ids = await (await fetch('/api/favorites/ids')).json();
         window.__fav.dishes = new Set(ids.dish_ids ?? []);
         window.__fav.fruits = new Set(ids.fruit_ids ?? []);
+        window.__fav.drinks = new Set(ids.drink_ids ?? []);
         window.ldRefreshHearts();
     }).catch(() => {});
 </script>

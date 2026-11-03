@@ -22,6 +22,7 @@ class FeedbackController extends Controller
             'dish_id' => ['nullable', 'integer', 'exists:dishes,id'],
             'fruit_id' => ['nullable', 'integer', 'exists:fruits,id'],
             'ingredient_id' => ['nullable', 'integer', 'exists:ingredients,id'],
+            'drink_id' => ['nullable', 'integer', 'exists:drinks,id'],
             'page' => ['nullable', 'string', 'max:255'],
         ]);
         $ticket = $request->user()->feedbackTickets()->create([
@@ -35,7 +36,7 @@ class FeedbackController extends Controller
     public function mine(Request $request): JsonResponse
     {
         $tickets = $request->user()->feedbackTickets()
-            ->with(['dish.names', 'fruit.ingredient:id,name_vi', 'ingredient:id,name_vi'])
+            ->with(['dish.names', 'fruit.ingredient:id,name_vi', 'ingredient:id,name_vi', 'drink:id,name_vi'])
             ->latest()
             ->limit(50)
             ->get()

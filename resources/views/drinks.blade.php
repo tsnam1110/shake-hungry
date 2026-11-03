@@ -89,6 +89,7 @@ function isOn(id) { return document.getElementById(id).getAttribute('aria-checke
 const groupName = { tra: 'Trà', 'ca-phe': 'Cà phê', 'sinh-to': 'Sinh tố', 'nuoc-ep': 'Nước ép', 'giai-khat': 'Giải khát', 'cocktail-co-con': 'Cocktail', mocktail: 'Mocktail', 'nuoc-ngot-co-ga': 'Nước ngọt có ga', 'tra-dong-chai': 'Trà đóng chai', 'ca-phe-dong-goi': 'Cà phê đóng gói', 'nuoc-ep-dong-hop': 'Nước ép đóng hộp', 'sua-dong-hop': 'Sữa đóng hộp', 'tang-luc-dien-giai': 'Tăng lực / điện giải', 'nuoc-dong-goi-khac': 'Nước đóng gói khác', bia: 'Bia', vang: 'Vang', ruou: 'Rượu', 'nuoc-giai-khat-dong-goi': 'Nước giải khát đóng gói' };
 const cafName = { khong: 'Không caffeine', thap: 'Caffeine thấp', 'trung-binh': 'Caffeine trung bình', cao: 'Caffeine cao' };
 const tempName = { nong: 'Nóng', lanh: 'Lạnh', 'ca-hai': 'Nóng hoặc lạnh' };
+const heartSvg = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"><path d="M12 20.5C7 16.5 3.8 13.3 3.8 9.6 3.8 7 5.7 5 8.1 5c1.6 0 3.1.9 3.9 2.3C12.8 5.9 14.3 5 15.9 5c2.4 0 4.3 2 4.3 4.6 0 3.7-3.2 6.9-8.2 10.9Z"/></svg>';
 // Thẻ nước uống theo đúng khung ld-dcard của trang món: tiêu đề, dòng meta
 // (nhóm · loại · nóng/lạnh), huy hiệu ld-badge, chân thẻ là thông tin khẩu
 // phần đã có (dung tích · đường · caffeine · cồn). Không có ảnh và không có
@@ -129,6 +130,7 @@ function card(d) {
     }
     return `<a href="/do-uong/${esc(d.slug)}" class="ld-dcard">
         <img class="ld-dcard-img" src="${d.image?.thumb_url ?? d.image?.url ?? '/images/placeholder-drink.svg'}" srcset="${d.image?.srcset ?? ''}" sizes="(max-width: 640px) 50vw, 320px" alt="${esc(d.name_vi)}" loading="lazy" decoding="async">
+        <span class="ld-heart" data-fav-drink="${d.id}" role="button" aria-label="Yêu thích đồ uống này">${heartSvg}</span>
         <span class="ld-dcard-body">
             <span class="ld-dcard-title">${esc(d.name_vi)}</span>
             <span class="ld-dcard-meta">${esc(groupName[d.drink_group] || d.drink_group)} · ${d.kind === 'pha-che' ? 'Pha chế' : 'Đóng gói'}${d.temperature ? ' · ' + esc(tempName[d.temperature] || d.temperature) : ''}</span>

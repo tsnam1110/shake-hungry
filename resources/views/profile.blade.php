@@ -107,6 +107,8 @@
         <div class="ld-grid" id="fav-dishes"></div>
         <p class="ld-group-label">Hoa quả</p>
         <div class="ld-grid" id="fav-fruits"></div>
+        <p class="ld-group-label">Nước uống</p>
+        <div class="ld-grid" id="fav-drinks"></div>
     </section>
 
     {{-- Thể trạng & ăn uống --}}
@@ -341,7 +343,7 @@ async function loadStats() {
 }
 async function loadFavorites() {
     try {
-        const { dishes, fruits } = await (await fetch('/api/favorites')).json();
+        const { dishes, fruits, drinks } = await (await fetch('/api/favorites')).json();
         document.getElementById('fav-dishes').innerHTML = (dishes ?? []).map(d => `
             <a href="/mon/${d.slug}" class="ld-dcard">
                 <img class="ld-dcard-img" src="/images/placeholder-dish.svg" alt="" loading="lazy" decoding="async">
@@ -355,6 +357,17 @@ async function loadFavorites() {
                         : `<span class="ld-dcard-kcal none">Chưa đủ dữ liệu</span><span class="ld-dcard-conf">không hiện số</span>`}</span>
                 </span>
             </a>`).join('') || '<p class="ld-note" style="margin:0">Chưa có món yêu thích — bấm biểu tượng tim trên thẻ món để lưu.</p>';
+        document.getElementById('fav-drinks').innerHTML = (drinks ?? []).map(dr => `
+            <a href="/do-uong/${dr.slug}" class="ld-dcard">
+                <img class="ld-dcard-img" src="/images/placeholder-drink.svg" alt="" loading="lazy" decoding="async">
+                <span class="ld-heart" data-fav-drink="${dr.id}" role="button" aria-label="Bỏ yêu thích">${heartSvg}</span>
+                <span class="ld-dcard-body">
+                    <span class="ld-dcard-title">${esc(dr.name_vi ?? dr.slug)}</span>
+                    <span class="ld-dcard-meta">${esc(dr.drink_group ?? '')}${dr.kind ? ' · ' + (dr.kind === 'pha-che' ? 'Pha chế' : 'Đóng gói') : ''}</span>
+                    <span class="ld-dcard-badges">${dr.alcohol ? '<span class="ld-badge" style="background:var(--color-danger-tint);color:var(--color-danger)">18+</span>' : ''}</span>
+                    <span class="ld-dcard-foot"><span style="font-size:13px;color:var(--color-sub)">${dr.temperature ? esc(dr.temperature) : ''}</span></span>
+                </span>
+            </a>`).join('') || '<p class="ld-note" style="margin:0">Chưa có đồ uống yêu thích — bấm biểu tượng tim trên thẻ nước uống để lưu.</p>';
         document.getElementById('fav-fruits').innerHTML = (fruits ?? []).map(f => `
             <a href="/hoa-qua/${f.slug}" class="ld-dcard">
                 <img class="ld-dcard-img" src="/images/placeholder-fruit.svg" alt="" loading="lazy" decoding="async">
