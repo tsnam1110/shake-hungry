@@ -1,0 +1,52 @@
+{
+  "slug": "sup-lo-tim",
+  "name_vi": "Súp lơ tím (sống)",
+  "name_en": "Cauliflower, raw",
+  "category": "rau-cu",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": "169986",
+    "source_url": "https://api.nal.usda.gov/fdc/v1/food/169986?api_key=<redacted>",
+    "scientific_name": "Brassica oleracea var. botrytis",
+    "kcal_per_100g": 25,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 1.92,
+    "fat_g": 0.28,
+    "carb_g": 4.97,
+    "fiber_g": 2.0,
+    "water_g": 92.07,
+    "mapping_confidence": "medium",
+    "mapping_note": "Dùng chung bản ghi USDA SR Legacy 169986 'Cauliflower, raw' với nguyên liệu sup-lo-trang trong repo (25 kcal / 1,92 g protein / 0,28 g béo / 4,97 g carb / 2,0 g xơ / 92,07 g nước trên 100 g) — súp lơ tím là giống màu của cùng loài/giống súp lơ trắng (Brassica oleracea var. botrytis), khác chủ yếu ở anthocyanin tạo màu tím; việc dùng chung hàng USDA đã được phép theo DATA-PIPELINE §7.2a. Lưu ý: một nguồn thứ cấp cho súp lơ tím 2,5 g xơ (so với 2,0 g của bản trắng) nhưng chỉ có một nguồn, chưa đủ để thay số của bản ghi USDA nên không nhập.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "media": [
+    {
+      "path": "media/ingredients/sup-lo-tim.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
+  "tcm_traits": [],
+  "source": "curated",
+  "confidence": "low",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Hồ sơ mới tạo 2026-11-03 để gắn ảnh cho rau theo mùa, làm từng sản phẩm một theo kế hoạch giai đoạn đã duyệt, chưa qua duyệt của chủ dự án.",
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}
