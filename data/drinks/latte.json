@@ -19,7 +19,8 @@
     {
       "name": "sữa hấp",
       "quantity": 150,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "sua-tuoi"
     },
     {
       "name": "đường",
@@ -56,10 +57,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-03: gắn sữa hấp qua hồ sơ sua-tuoi (hấp nóng không đổi macro), thêm liquid_ml, kcal/100 ml lỏng, caffeine mg tính từ hồ sơ espresso — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -68,5 +69,47 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "process_note": "Sữa hấp là sữa tươi hấp nóng, không thêm đường hay chất khác trong chuẩn này — gắn hồ sơ sua-tuoi vì hấp nóng không làm thay đổi macro đáng kể; nếu quán dùng sữa có đường hoặc bột béo thì số này không áp dụng.",
+  "liquid_ml": 180,
+  "caffeine_mg_min": 64,
+  "caffeine_mg_max": 64,
+  "caffeine_mg_note": "TÍNH TỪ HỒ SƠ, CHƯA ĐO CHO LY NÀY: hồ sơ ca-phe-espresso (USDA SR Legacy NDB 14210) ghi caffeine 212 mg/100 g, 30 ml espresso ≈ 64 mg. Số 64 mg là số tính từ hồ sơ, không phải đo ly này; shot thực tế dao động theo liều bột và máy.",
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml chất lỏng",
+      "value_min": 53,
+      "value_max": 54,
+      "value": null,
+      "per_serving": "≈96–97 kcal/ly (180 ml chất lỏng, không đường)",
+      "basis": "Cộng tay từ hồ sơ đã có: espresso 30 ml × 9 kcal/100 g = 2,7 kcal; sữa tươi hấp 150 ml × 1,031 × 60–61 kcal/100 g = 92,8–94,3 kcal; đường 0 g = 0. Tổng 95,5–97,0 kcal / 180 ml = 53–54 kcal/100 ml chất lỏng. Đây chưa phải đầu ra engine.",
+      "confidence": "medium",
+      "source_ref": "data/ingredients/ca-phe-espresso.json, sua-tuoi.json, duong-trang.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 0,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "0 g/ly (bản không đường)",
+      "basis": "sugar_added_g trong file catalogue = 0; sugar_note ghi khoảng 0–10 g cho biến thể có đường, chuẩn là không đường.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    },
+    {
+      "label": "Caffeine",
+      "unit": "mg/ly",
+      "value_min": 64,
+      "value_max": 64,
+      "value": null,
+      "per_serving": "64 mg/ly (tính từ hồ sơ)",
+      "basis": "USDA espresso 212 mg/100 g × 30 ml = 64 mg, xem caffeine_mg_note; không phải số đo cho ly này.",
+      "confidence": "medium",
+      "source_ref": "data/ingredients/ca-phe-espresso.json"
+    }
+  ],
+  "allergen_note": "Đã gắn đủ 3/3 dòng trong ly: chỉ sữa tươi có tag allergen:sua — dị ứng Sữa đã xác nhận. Espresso và đường không có tag dị ứng trong hồ sơ.",
+  "tcm_note": "Nhãn duy nhất có trong ly là sữa tươi: bình/cam/Thổ, tin cậy trung bình; espresso và đường không có nhãn tính vị. Phủ theo khối lượng 84% (sữa 155 g trên tổng ~185 g), trong ngưỡng ≥60% của TCM-000, nhưng chỉ là nhãn của dòng sữa, không phải kết luận tính vị chung cho cả ly."
 }
