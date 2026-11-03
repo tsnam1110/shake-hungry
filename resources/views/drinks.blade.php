@@ -88,23 +88,52 @@ function esc(s) { return (s ?? '').toString().replace(/[&<>"]/g, c => ({'&':'&am
 function isOn(id) { return document.getElementById(id).getAttribute('aria-checked') === 'true'; }
 const groupName = { tra: 'Trà', 'ca-phe': 'Cà phê', 'sinh-to': 'Sinh tố', 'nuoc-ep': 'Nước ép', 'giai-khat': 'Giải khát', 'cocktail-co-con': 'Cocktail', mocktail: 'Mocktail', 'nuoc-ngot-co-ga': 'Nước ngọt có ga', 'tra-dong-chai': 'Trà đóng chai', 'ca-phe-dong-goi': 'Cà phê đóng gói', 'nuoc-ep-dong-hop': 'Nước ép đóng hộp', 'sua-dong-hop': 'Sữa đóng hộp', 'tang-luc-dien-giai': 'Tăng lực / điện giải', 'nuoc-dong-goi-khac': 'Nước đóng gói khác', bia: 'Bia', vang: 'Vang', ruou: 'Rượu', 'nuoc-giai-khat-dong-goi': 'Nước giải khát đóng gói' };
 const cafName = { khong: 'Không caffeine', thap: 'Caffeine thấp', 'trung-binh': 'Caffeine trung bình', cao: 'Caffeine cao' };
+const tempName = { nong: 'Nóng', lanh: 'Lạnh', 'ca-hai': 'Nóng hoặc lạnh' };
+// Thẻ nước uống theo đúng khung ld-dcard của trang món: tiêu đề, dòng meta
+// (nhóm · loại · nóng/lạnh), huy hiệu ld-badge, chân thẻ là thông tin khẩu
+// phần đã có (dung tích · đường · caffeine · cồn). Không có ảnh và không có
+// nút tim: nước uống chưa có khe media, hệ yêu thích hiện chỉ hỗ trợ món và
+// quả — không gắn ảnh placeholder của món hay tim giả lên thẻ nước uống.
 function card(d) {
     const badges = [];
-    badges.push(`<span class="ld-chip active" style="cursor:default">${esc(groupName[d.drink_group] || d.drink_group)}</span>`);
-    if (d.alcohol) badges.push('<span class="ld-chip" style="cursor:default;background:#fee2e2;color:#991b1b">18+</span>');
-    if (d.kind === 'dong-goi') badges.push('<span class="ld-chip" style="cursor:default">Sản phẩm đóng gói</span>');
+    if (d.kind === 'dong-goi') badges.push('<span class="ld-badge">Sản phẩm đóng gói</span>');
+    if (d.alcohol) badges.push('<span class="ld-badge" style="background:var(--color-danger-tint);color:var(--color-danger)">18+</span>');
+    if (d.uncertain) badges.push('<span class="ld-badge">Chưa chắc chắn</span>');
+    // Chân thẻ nối các phần đã có bằng " · ", không để dấu nối thừa ở đầu
+    // khi phần đầu trống (VD: pha chế không có dung tích vẫn có đường thêm).
+    // Khoảng rỗng thì bỏ trống, không in dạng "–g" hay "–%" (QT-9, theo mẫu
+    // rangeText của trang chi tiết).
     let line = '';
     if (d.kind === 'pha-che') {
-        line = `${d.serving_ml ? d.serving_ml + ' ml' : ''}${d.sugar_added_g !== null && d.sugar_added_g !== undefined ? ` · đường thêm ${d.sugar_added_g}g` : ''}${d.caffeine_level ? ` · ${esc(cafName[d.caffeine_level] || d.caffeine_level)}` : ''}`;
+        const parts = [];
+        if (d.serving_ml) parts.push(d.serving_ml + ' ml');
+        if (d.sugar_added_g !== null && d.sugar_added_g !== undefined) parts.push(`đường thêm ${d.sugar_added_g}g`);
+        if (d.caffeine_level) parts.push(esc(cafName[d.caffeine_level] || d.caffeine_level));
+        line = parts.join(' · ');
     } else {
-        const sr = d.sugar_range_g ? `${d.sugar_range_g.min ?? ''}–${d.sugar_range_g.max ?? ''}g đường` : '';
-        const ar = d.alcohol_pct_range ? ` · cồn ${d.alcohol_pct_range.min ?? ''}–${d.alcohol_pct_range.max ?? ''}%` : (d.alcohol_pct_estimate ? ` · cồn ~${d.alcohol_pct_estimate}%` : '');
-        line = `${d.packaging ? esc(d.packaging) : ''}${sr ? ` · ${sr}` : ''}${ar}${d.caffeine_level ? ` · ${esc(cafName[d.caffeine_level] || d.caffeine_level)}` : ''}`;
+        const parts = [];
+        if (d.packaging) parts.push(esc(d.packaging));
+        if (d.sugar_range_g && (d.sugar_range_g.min !== null && d.sugar_range_g.min !== undefined || d.sugar_range_g.max !== null && d.sugar_range_g.max !== undefined)) {
+            const sr = d.sugar_range_g.min !== null && d.sugar_range_g.min !== undefined && d.sugar_range_g.max !== null && d.sugar_range_g.max !== undefined
+                ? `${d.sugar_range_g.min}–${d.sugar_range_g.max}g đường`
+                : (d.sugar_range_g.min !== null && d.sugar_range_g.min !== undefined ? `từ ${d.sugar_range_g.min}g đường` : `đến ${d.sugar_range_g.max}g đường`);
+            parts.push(sr);
+        }
+        if (d.alcohol_pct_range && (d.alcohol_pct_range.min !== null && d.alcohol_pct_range.min !== undefined || d.alcohol_pct_range.max !== null && d.alcohol_pct_range.max !== undefined)) {
+            parts.push(d.alcohol_pct_range.min !== null && d.alcohol_pct_range.min !== undefined && d.alcohol_pct_range.max !== null && d.alcohol_pct_range.max !== undefined
+                ? `cồn ${d.alcohol_pct_range.min}–${d.alcohol_pct_range.max}%`
+                : (d.alcohol_pct_range.min !== null && d.alcohol_pct_range.min !== undefined ? `cồn từ ${d.alcohol_pct_range.min}%` : `cồn đến ${d.alcohol_pct_range.max}%`));
+        } else if (d.alcohol_pct_estimate) parts.push(`cồn ~${d.alcohol_pct_estimate}%`);
+        if (d.caffeine_level) parts.push(esc(cafName[d.caffeine_level] || d.caffeine_level));
+        line = parts.join(' · ');
     }
-    return `<a class="ld-card" href="/do-uong/${esc(d.slug)}" style="text-decoration:none;color:inherit;display:block">
-        <div style="display:flex;flex-wrap:wrap;gap:8px">${badges.join('')}</div>
-        <h2 style="margin:8px 0 0;font-size:17px;font-weight:700">${esc(d.name_vi)}${d.uncertain ? ' <span style="font-size:13px;color:var(--color-faint)">(chưa chắc chắn)</span>' : ''}</h2>
-        <p style="margin:4px 0 0;font-size:14px;color:var(--color-sub)">${line}</p>
+    return `<a href="/do-uong/${esc(d.slug)}" class="ld-dcard">
+        <span class="ld-dcard-body">
+            <span class="ld-dcard-title">${esc(d.name_vi)}</span>
+            <span class="ld-dcard-meta">${esc(groupName[d.drink_group] || d.drink_group)} · ${d.kind === 'pha-che' ? 'Pha chế' : 'Đóng gói'}${d.temperature ? ' · ' + esc(tempName[d.temperature] || d.temperature) : ''}</span>
+            <span class="ld-dcard-badges">${badges.join('')}</span>
+            <span class="ld-dcard-foot"><span style="font-size:13px;color:var(--color-sub);line-height:1.5">${line}</span></span>
+        </span>
     </a>`;
 }
 async function load() {
