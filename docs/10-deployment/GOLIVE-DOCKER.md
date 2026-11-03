@@ -836,6 +836,23 @@ giữ ODbL 1.0 + ghi công; `/chinh-sach-bao-mat`; `/mien-tru-y-te`) — kiểm 
 
 ## 13. Troubleshooting
 
+### 13.0. Trạng thái kiểm chứng Docker trên VM này (2026-11-03, hoàn thiện mục 5c)
+
+- **Đã kiểm chứng:** `docker/nginx.conf` (bản sửa PROXY-001) qua `nginx -t` bằng nginx thật
+  1.24.0 cài từ apt: **syntax OK, test successful** — nhưng phải include file trong khối
+  `http` (đúng cách Dockerfile copy nó vào `/etc/nginx/conf.d/default.conf`); chạy `nginx -t`
+  với file này làm config chính sẽ báo lỗi `map directive is not allowed here` — đó là lỗi
+  cách chạy kiểm chứng, không phải lỗi config. Docker Engine 29.1.3 đã chạy được trên VM
+  (chế độ `--iptables=false --bridge=none` vì VM cấm iptables).
+- **Chưa kiểm chứng được (giới hạn môi trường, không phải lỗi code):** build image Docker thật và
+  `docker compose config`/`up`. Daemon kéo base image từ Docker Hub luôn lỗi
+  `TLS handshake timeout` dù registry vẫn tới được bằng curl qua cùng egress proxy
+  (manifest HEAD trả 401 sau ~1,2 s, auth endpoint 200) — đường kéo image phía daemon bị chặn/
+  timeout trong VM này. Gói `docker.io` của Ubuntu cũng không kèm Compose plugin
+  (`docker compose` báo unknown command). Vì vậy **đừng tuyên bố "Docker đã build xong"**:
+  lần build thật đầu tiên phải chạy trên máy/server có mạng Docker Hub bình thường, theo
+  §2–§5 của tài liệu này, và kiểm chứng lại `docker compose config` cho cả 3 tổ hợp.
+
 ### 13.1. Lỗi có khả năng gặp ở lần `docker compose` thật đầu tiên
 
 | Triệu chứng | Nguyên nhân | Cách xử lý |
