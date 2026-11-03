@@ -25,7 +25,8 @@
     {
       "name": "sữa chua không đường",
       "quantity": 90,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "sua-chua"
     }
   ],
   "recipe_steps": [
@@ -56,10 +57,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-03: gắn sữa chua (hồ sơ đã có, file gốc chưa gắn), thêm liquid_ml, kcal/100 ml lỏng; caffeine giữ mức trung-binh, không ghi mg vì file không ghi liều phin cho 20 ml cà phê này — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -68,5 +69,32 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 145,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml chất lỏng",
+      "value_min": 143,
+      "value_max": 146,
+      "value": null,
+      "per_serving": "≈208–211 kcal/ly (145 ml chất lỏng, chưa tính đá tan)",
+      "basis": "Cộng tay từ hồ sơ đã có: cà phê đen 20 ml × 1 kcal/100 g = 0,2 kcal; sữa đặc 35 ml × 1,29 × 334–341 kcal/100 g = 150,8–154,0 kcal; sữa chua không đường 90 ml × 1,036 × 61 kcal/100 g = 56,9 kcal (bản SR Legacy đã chọn trong hồ sơ sua-chua; bản Foundation 78 kcal sẽ cho tổng cao hơn, ghi rõ trong hồ sơ). Tổng 207,9–211,1 kcal / 145 ml = 143–146 kcal/100 ml chất lỏng. Đây chưa phải đầu ra engine.",
+      "confidence": "medium",
+      "source_ref": "data/ingredients/ca-phe-den.json, sua-dac.json, sua-chua.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 23,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "23 g/ly",
+      "basis": "sugar_added_g trong file catalogue = 23 g; kiểm chéo: sữa đặc 45,2 g, đường khoảng 23–25 g, khớp ghi chú file.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Đã gắn đủ 3/3 dòng trong ly: sữa đặc và sữa chua đều có tag allergen:sua — dị ứng Sữa đã xác nhận. Cà phê đen không có tag dị ứng trong hồ sơ.",
+  "tcm_note": "Không kết luận tính vị: cả ba dòng trong ly (cà phê đen, sữa đặc, sữa chua) đều không có nhãn tính vị trong hồ sơ, trừ cà phê đen có nhãn bình/khổ/Hỏa thấp với khối lượng chỉ 20 g trên tổng ~158 g (13%, dưới ngưỡng 30% của TCM-000) — ghi nhãn của dòng cà phê, không kết luận cho cả ly."
 }
