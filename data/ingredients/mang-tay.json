@@ -1,0 +1,52 @@
+{
+  "slug": "mang-tay",
+  "name_vi": "Măng tây xanh (sống)",
+  "name_en": "Asparagus, raw",
+  "category": "rau-cu",
+  "reference_food": {
+    "fct_source": "usda_sr_legacy",
+    "external_id": null,
+    "source_url": null,
+    "scientific_name": "Asparagus officinalis",
+    "kcal_per_100g": null,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": null,
+    "fat_g": null,
+    "carb_g": null,
+    "fiber_g": null,
+    "water_g": null,
+    "mapping_confidence": "low",
+    "mapping_note": "KCAL ĐỂ NULL (QT-9): các nguồn thứ cấp trích USDA SR Legacy cho măng tây sống đều ghi 20 kcal / 2,2 g protein / 0,12 g béo / 3,88 g carb / 2,1 g xơ / 93,22 g nước trên 100 g, nhưng đợt này chưa xác minh được trực tiếp mã FDC SR Legacy của bản ghi 'Asparagus, raw' nên không gán số vào hồ sơ. Cần một lần tra trực tiếp FoodData Central trước khi điền kcal. Lưu ý: bản Foundation cho măng tây xanh 23,5 kcal — khác bộ phân tích, không trộn.",
+    "alternatives": []
+  },
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": false,
+  "units": [],
+  "media": [
+    {
+      "path": "media/ingredients/mang-tay.webp",
+      "license": "ai-minh-hoa",
+      "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
+      "is_primary": true
+    }
+  ],
+  "tcm_traits": [],
+  "source": "curated",
+  "confidence": "low",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Hồ sơ mới tạo 2026-11-03 để gắn ảnh cho rau theo mùa, làm từng sản phẩm một theo kế hoạch giai đoạn đã duyệt, chưa qua duyệt của chủ dự án.",
+  "tags": [
+    "origin:thuc-vat",
+    "state:tuoi"
+  ]
+}
