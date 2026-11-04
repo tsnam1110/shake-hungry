@@ -152,10 +152,10 @@
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
-  "needs_review": false,
+  "needs_review": true,
   "reviewed_by": "tsnam1110@gmail.com",
   "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau). [Soát lại E-batch lô 6, 2026-11-05: không có họ biên tập định lượng nào cho ĐÚNG cá mè — mọi nguồn bún cá dọc mùng có định lượng đều dùng cá khác (ĐMX: rô phi 700 g/4 người; Việt Giải Trí: rô phi 500 g; Toyenxin: rô phi/lóc; Saigonesebaguette: rô phi/diêu hồng); mẫu dọc mùng chung thì có nhưng file định danh theo loài cá mè nên không thể mượn số của loài khác; tổng các dòng 385,8 g so với khẩu phần 1 tô 520 g thiếu phần nước dùng chưa định lượng — giữ cờ chưa duyệt, chờ nguồn đúng loài hoặc quyết định đối chiếu theo mẫu chung.]",
   "tags": [
     "loai:bun-pho-mi"
   ]
