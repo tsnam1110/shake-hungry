@@ -54,15 +54,15 @@
   "packaging": null,
   "sugar_range_g": null,
   "alcohol_pct_range": [
-    24.4,
-    24.4
+    23.2,
+    29.3
   ],
   "label_note": "",
   "brand_examples": [],
   "needs_review": true,
   "reviewed_by": null,
   "reviewed_at": null,
-  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: kcal từ ethanol + đường theo công thức, ABV suy ra từ công thức, chưa qua duyệt lại sau khi sửa.",
+  "review_note": "SOÁT LẠI 2026-11-04 theo lệnh của Benjamin (không dùng bảng tự suy cũ): tính lại từ rượu mùi/mixer đã kiểm chứng đa nguồn, xem drink-verification-liqueur.md — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5.",
   "media": [
     {
@@ -77,21 +77,21 @@
     {
       "label": "Năng lượng",
       "unit": "kcal/100 ml chất lỏng",
-      "value_min": 174,
-      "value_max": 174,
+      "value_min": 168,
+      "value_max": 201,
       "value": null,
-      "per_serving": "≈172 kcal/ly (98.4 ml chất lỏng)",
-      "basis": "Cộng tay từ công thức (ethanol 7 kcal/g, mật độ 0,789 g/ml + đường 4 kcal/g; rượu mùi tính cả ethanol và đường theo nhãn loại, chưa đo trực tiếp): cachaça 60 ml × 2.21 = 132.6 kcal; chanh 1 quả (nước cốt khoảng 30 ml) 30 ml × 0.22 = 6.6 kcal; đường 2 thìa cà phê 8.4 ml × 3.87 = 32.5 kcal. Tổng 171.7 kcal / 98.4 ml = 174 kcal/100 ml. ABV suy ra từ công thức: 24.4% (ethanol 24.0 ml / 98.4 ml chất lỏng). Đây chưa phải đầu ra engine (engine chưa có logic ethanol).",
+      "per_serving": "≈165–198 kcal/ly (98 ml chất lỏng)",
+      "basis": "SOÁT LẠI 2026-11-04 (đa nguồn): cachaça 60 ml khoảng 126,0–159,0 kcal — MỞ RỘNG thành khoảng: luật Brazil quy định cachaça 38–48% ABV (bản xuất khẩu thường 40%), đường thêm tối đa 6 g/L (không đáng kể), tức ethanol 209,9–265,1 kcal/100 ml; số cũ dùng 40% (132,6 kcal) nằm trong khoảng nhưng không phải điểm duy nhất; nước chanh 30 ml × 0,22 = 6,6 kcal; đường 8,4 g × 3,87 = 32,5 kcal. Tổng mới 165,1–198,1 kcal / 98,4 ml = 168–201 kcal/100 ml (cũ 172 nằm trong khoảng). ABV 23,2–29,3% (ethanol cachaça 22,8–28,8 ml / 98,4 ml). Đây vẫn chưa phải đầu ra engine.",
       "confidence": "low",
       "source_ref": "Bảng kcal/ml cocktail trong hồ sơ triển khai (ethanol + đường, xem basis)"
     },
     {
       "label": "Độ cồn",
       "unit": "% ABV",
-      "value": 24.4,
-      "value_min": null,
-      "value_max": null,
-      "per_serving": "≈24.4% ABV",
+      "value": null,
+      "value_min": 23.2,
+      "value_max": 29.3,
+      "per_serving": "≈23.2–29.3% ABV",
       "basis": "ABV suy ra từ công thức: ethanol 24.0 ml trên tổng 98.4 ml chất lỏng = 24.4%. Đây là ABV của ly pha theo công thức, chưa đo trực tiếp, và thay đổi nếu quán dùng rượu có ABV khác.",
       "confidence": "medium",
       "source_ref": "Công thức trong file catalogue"
@@ -103,7 +103,7 @@
       "value_min": null,
       "value_max": null,
       "per_serving": "8 g/ly (theo file, tổng đường thực khoảng 9 g)",
-      "basis": "sugar_added_g trong file = 8 g (đường thêm từ siro/đường, theo cách ghi của file); tổng đường thực ước tính từ rượu mùi, nước ép và siro khoảng 9 g, cao hơn số file vì file không tính đường trong rượu mùi và nước ép.",
+      "basis": "sugar_added_g trong file = 8 g; tổng đường thực sau soát lại khoảng 8,8 g (xem basis năng lượng).",
       "confidence": "low",
       "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
     }
