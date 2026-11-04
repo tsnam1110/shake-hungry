@@ -44,10 +44,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04, làm cẩn thận theo QT-9: kcal suy ra từ ABV trong file + đường còn lại, không lấy số một hãng — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §6.",
   "media": [
     {
@@ -56,5 +56,31 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml",
+      "value_min": 207,
+      "value_max": 221,
+      "value": null,
+      "per_serving": "≈62–66 kcal/shot 30 ml",
+      "basis": "Kcal suy ra từ ethanol (7 kcal/g, mật độ 0,789 g/ml: kcal ethanol/100 ml = ABV% × 5,523) cộng đường/carb còn lại (4 kcal/g). Vodka 37,5–40,0% ABV: ethanol 207–221 kcal/100 ml, đường còn lại 0 (vodka nguyên chất không đường). Đối chiếu USDA: vodka 40% = 231 kcal/100 g (tính theo khối lượng, mật độ vodka khoảng 0,95 nên 231 kcal/100 g ≈ 219 kcal/100 ml, nằm trong khoảng 207–221). Đây là khoảng theo ABV trong file, không phải số đo một hãng cụ thể — các hãng có ABV và đường còn lại khác nhau, ghi rõ. Không dùng engine (đồ đóng gói không qua engine).",
+      "confidence": "low",
+      "source_ref": "Công thức ethanol 7 kcal/g; file catalogue, alcohol_pct_range"
+    },
+    {
+      "label": "Độ cồn",
+      "unit": "% ABV",
+      "value_min": 37.5,
+      "value_max": 40.0,
+      "value": null,
+      "per_serving": "37.5–40.0% ABV",
+      "basis": "alcohol_pct_range trong file catalogue = 37.5–40.0%, là khoảng loại, không phải ABV của một hãng cụ thể.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Rượu chưng cất: sau chưng cất, rượu mạnh thường được coi là không chứa gluten (protein lúa mạch/ngô đã bị loại bỏ khi chưng cất), nhưng người dị ứng gluten nặng vẫn nên đọc nhãn hãng cụ thể — ghi rõ là cảnh báo theo loại, chưa gắn tag trong hồ sơ, trang chi tiết phải hiện 'chưa đủ dữ kiện' cho các dị ứng khác.",
+  "tcm_note": "Không kết luận tính vị: mục đóng gói này chưa gắn hồ sơ nguyên liệu nên không kết luận ở tầng món."
 }
