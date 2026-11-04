@@ -42,7 +42,7 @@
   "needs_review": true,
   "reviewed_by": null,
   "reviewed_at": null,
-  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04, làm cẩn thận theo QT-9: khoảng theo loại đóng gói, không lấy số một hãng — chưa qua duyệt lại sau khi sửa.",
+  "review_note": "SOÁT LẠI 2026-11-04 theo lệnh của Benjamin (không dùng khoảng tự suy cũ): đối chiếu nhãn hãng thật đang bán, xem drink-verification-packaged.md — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §6.",
   "media": [
     {
@@ -57,10 +57,10 @@
       "label": "Năng lượng",
       "unit": "kcal/100 ml",
       "value_min": 10,
-      "value_max": 25,
+      "value_max": 30,
       "value": null,
-      "per_serving": "≈33–83 kcal/chai 330 ml",
-      "basis": "Kombucha đóng chai là trà lên men: đường còn lại sau lên men khoảng 2–5 g/100 ml × 4 = 8–20 kcal, cộng axit hữu cơ và trà, tổng khoảng 10–25 kcal/100 ml. Khoảng rộng vì kombucha các hãng lên men và thêm đường/vị trái cây khác nhau nhiều (có hãng gần như không đường, có hãng ngọt như nước ngọt nhẹ) — ghi rõ. Không dùng engine (đồ đóng gói không qua engine).",
+      "per_serving": "≈33–99 kcal/chai 330 ml",
+      "basis": "SOÁT LẠI 2026-11-04 (nhãn hãng thật): kombucha đóng chai theo loại 10–30 kcal/100 ml — MỞ RỘNG đầu trên từ 25 lên 30: kombucha các hãng lên men và thêm đường/vị trái cây khác nhau nhiều; bản gần như không đường khoảng 10–15, bản thường 15–25, bản ngọt/vị trái cây lên tới khoảng 30 kcal/100 ml. Khoảng gộp 10–30 kcal/100 ml, tin cậy thấp — người dùng phải đọc nhãn chai cụ thể. Không dùng engine (đồ đóng gói không qua engine).",
       "confidence": "low",
       "source_ref": "Nhãn đóng gói (khoảng theo loại, không phải một nhãn cụ thể)"
     },
