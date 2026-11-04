@@ -137,10 +137,10 @@
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",
-  "needs_review": false,
+  "needs_review": true,
   "reviewed_by": "tsnam1110@gmail.com",
   "reviewed_at": "2026-10-31",
-  "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này).",
+  "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này). E-batch1 lô 3 2026-11-04: gắn cờ lại chưa duyệt — câu hỏi định danh chưa phân xử: các nguồn đều trình bày chả lụa/heo quay/thịt nướng là món ăn kèm của bánh hỏi, không phải thành phần của bánh, nhưng file đưa giò lụa 50 g và thịt ba chỉ 50 g vào danh sách nguyên liệu của món; cần chốt phạm vi là 'bánh hỏi' thuần hay 'đĩa bánh hỏi + chả + thịt' rồi mới xác minh định lượng theo đĩa (bột gạo 90 g, mỡ 10 g, nước mắm 12 g) vốn chưa có nguồn nào khớp biến thể file; chưa sửa số, chưa gọi là đã xác minh.",
   "tags": [
     "loai:banh"
   ]
