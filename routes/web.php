@@ -51,6 +51,7 @@ Route::get('/', function () {
 Route::get('/tai-khoan', fn () => view('account'))->name('login');
 Route::get('/ho-so', fn () => view('profile')); // khách chưa đăng nhập thấy giao diện giới thiệu (UI-016)
 Route::get('/tuan-an', fn () => view('tuan-an')); // WEEK-001, Phần 2.4: trang Tuần ăn riêng
+Route::get('/chia-se/{code}', fn (string $code) => view('week-share', ['code' => $code])); // WEEK-001, Giai đoạn 4, Task 2: xem tuần qua mã
 Route::view('/dieu-khoan', 'legal.terms');
 Route::view('/chinh-sach-bao-mat', 'legal.privacy');
 Route::view('/mien-tru-y-te', 'legal.disclaimer');
@@ -83,6 +84,8 @@ Route::get('/ket-hop-can-luu-y', fn () => view('combinations', [
 Route::prefix('api')->group(function () {
     // WEEK-001, Phần 2.4: tuần ví dụ công khai, đặt trước route /week-plans/{id} để không bị nuốt.
     Route::get('/week-plans/example', [\App\Http\Controllers\PublicWeb\WeekPlanController::class, 'example']);
+    // WEEK-001, Giai đoạn 4, Task 2: xem tuần qua mã, không cần đăng nhập.
+    Route::get('/shares/{code}', [\App\Http\Controllers\PublicWeb\WeekPlanShareController::class, 'showPublic']);
     Route::post('/register', [\App\Http\Controllers\PublicWeb\UserAuthController::class, 'register']);
     Route::post('/login', [\App\Http\Controllers\PublicWeb\UserAuthController::class, 'login']);
     Route::post('/logout', [\App\Http\Controllers\PublicWeb\UserAuthController::class, 'logout']);
@@ -115,6 +118,9 @@ Route::prefix('api')->group(function () {
         Route::get('/week-plans/{weekPlan}/shopping-list', [\App\Http\Controllers\PublicWeb\WeekPlanController::class, 'shoppingList']);
         // WEEK-001, Giai đoạn 4, Task 1: ngân sách mềm.
         Route::post('/week-plans/{weekPlan}/budget', [\App\Http\Controllers\PublicWeb\WeekPlanController::class, 'setBudget']);
+        // WEEK-001, Giai đoạn 4, Task 2: tạo/thu hồi mã chia sẻ.
+        Route::post('/week-plans/{weekPlan}/shares', [\App\Http\Controllers\PublicWeb\WeekPlanShareController::class, 'create']);
+        Route::post('/week-plans/{weekPlan}/shares/{share}/revoke', [\App\Http\Controllers\PublicWeb\WeekPlanShareController::class, 'revoke']);
         Route::post('/contributions', [\App\Http\Controllers\PublicWeb\ContributionController::class, 'store']);
         Route::get('/contributions', [\App\Http\Controllers\PublicWeb\ContributionController::class, 'mine']);
         Route::get('/favorites', [\App\Http\Controllers\PublicWeb\EngagementController::class, 'index']);

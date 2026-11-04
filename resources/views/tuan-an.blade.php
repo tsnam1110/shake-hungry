@@ -53,6 +53,12 @@
             <button id="week-set-budget" class="ld-btn ld-btn-gray" style="padding:11px 22px;font-size:15.5px">Lưu ngân sách</button>
         </div>
         <p class="ld-note" style="margin-top:-6px;margin-bottom:14px">Ngân sách chỉ là mục tiêu bạn đặt. Chưa tính được tổng tiền thật vì chưa có bảng giá/gói đủ nguồn, nên hệ thống không kết luận tuần này dưới hay vượt ngân sách.</p>
+        <div class="ld-card" style="margin-bottom:14px">
+            <p style="font-weight:600;margin:0 0 8px">Chia sẻ tuần này bằng mã chỉ-đọc</p>
+            <button id="week-share-create" class="ld-btn ld-btn-gray" style="padding:11px 22px;font-size:15.5px">Tạo mã chia sẻ</button>
+            <div id="week-share-result" style="margin-top:10px"></div>
+            <p class="ld-note" style="margin-top:8px">Người nhận mã chỉ xem được món và đi chợ, không thấy mục tiêu, ngân sách, hồ sơ hay thông tin của bạn. Mã hết hạn sau 14 ngày, có thể thu hồi bất cứ lúc nào.</p>
+        </div>
         <div style="margin-bottom:14px"><button id="week-shopping" class="ld-btn ld-btn-gray" style="padding:11px 22px;font-size:15.5px">Danh sách đi chợ</button></div>
         <div id="week-shopping-list" style="display:none"></div>
         <div class="ld-card" style="margin-bottom:14px">
@@ -198,6 +204,23 @@ document.getElementById('week-exclude-q').addEventListener('input', (e) => {
         });
     }, 350);
 });
+let currentShareId = null;
+document.getElementById('week-share-create').onclick = async () => {
+    if (!currentPlanId) return;
+    const resp = await fetch(`/api/week-plans/${currentPlanId}/shares`, { method: 'POST', headers });
+    const res = await resp.json();
+    if (!resp.ok) { alert(res.message || 'Tạo mã chia sẻ thất bại'); return; }
+    currentShareId = res.share_id;
+    document.getElementById('week-share-result').innerHTML = `<p style="margin:0">Mã: <b>${esc(res.code)}</b> · Hết hạn: ${esc(res.expires_at)}</p>
+        <p style="margin:6px 0 0"><a href="${esc(res.share_url)}">${esc(res.share_url)}</a></p>
+        <button id="week-share-revoke" class="ld-btn ld-btn-gray" style="padding:8px 18px;font-size:14px;margin-top:10px">Thu hồi mã này</button>`;
+    document.getElementById('week-share-revoke').onclick = async () => {
+        const r = await fetch(`/api/week-plans/${currentPlanId}/shares/${currentShareId}/revoke`, { method: 'POST', headers });
+        if (!r.ok) { alert('Thu hồi thất bại'); return; }
+        if (window.ldToast) ldToast('Đã thu hồi mã chia sẻ');
+        document.getElementById('week-share-result').innerHTML = '<p style="margin:0">Mã đã thu hồi.</p>';
+    };
+};
 document.getElementById('week-set-budget').onclick = async () => {
     if (!currentPlanId) return;
     const val = document.getElementById('week-budget').value;

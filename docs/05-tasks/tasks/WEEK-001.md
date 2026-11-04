@@ -262,6 +262,33 @@ này trước Task suy kcal từ TDEE + mục tiêu (thuộc Phần 2.1, sau for
 - Test `tests/Feature/WeekBudgetTest.php`: lưu ngân sách 1.500.000 đ,
   ghi rõ chưa có tổng tiền thật, số âm bị 422.
 
+### Task 2 — Chia sẻ tuần bằng mã chỉ-đọc — ĐÃ XONG (2026-11-04)
+- Bảng `week_plan_shares`: chỉ lưu hash SHA-256 của mã (mã hiện một lần
+  lúc tạo, mất thì tạo mã mới), hết hạn sau 14 ngày, thu hồi được.
+- API: POST /api/week-plans/{plan}/shares (tạo mã), POST revoke,
+  GET /api/shares/{code} công khai, trang /chia-se/{code}.
+- Người xem mã chỉ thấy món và đi chợ, KHÔNG thấy mục tiêu, ngân sách,
+  hồ sơ hay thông tin người dùng — lọc ở controller, không chỉ ở giao
+  diện. Mã hết hạn/thu hồi/sai thì 404.
+- Test `tests/Feature/WeekShareTest.php` 3 test: tạo + xem lọc riêng tư,
+  hết hạn/thu hồi 404, người khác không tạo được mã.
+
+## Còn chặn bởi dữ liệu (không phải bởi phê duyệt — không tự bịa để lấp)
+- Tổng tiền thật của tuần và quy đổi gói chính xác cho từng mặt hàng:
+  chỉ có 1 kênh BHX đạt chuẩn đọc trực tiếp; snapshot BHX rải rác
+  02/11 và 24/10 không được cộng thành tổng tuần; chưa có kênh siêu thị
+  thứ hai cùng ngày đọc trực tiếp, chưa có kênh chợ trực tiếp, chưa cân
+  mớ rau thơm tại điểm bán, chưa có nhóm sữa/đậu phụ/đường/muối BHX
+  ngày 04/11. Vì vậy ngân sách ở Task 1 chỉ là mục tiêu mềm, và đi chợ
+  vẫn ở mức gram + gian hàng chung, chưa có tổng tiền hay số gói.
+- Tỉ lệ điều chỉnh kcal theo goal (giảm/tăng bao nhiêu %) vẫn chưa
+  chốt: tuần lấy kcal/protein từ Hồ sơ đã nhập, không tự suy từ goal.
+  Công thức protein theo từng mục tiêu của Mealbird vẫn chỉ là tham
+  khảo, Task 1 giữ một công thức chung đã chốt.
+- Mô hình hộ gia đình đã chọn hướng mã chỉ-đọc (Task 2 trên); hướng tài
+  khoản dùng chung kiểu Plan to Eat không làm song song vì hai hướng
+  không tương thích.
+
 ## Các phần tiếp theo (theo lệnh duyệt toàn bộ lộ trình 2026-11-04, làm tiếp không hỏi duyệt giữa chừng)
 - Phần 2.5, Task 2–5: đổi ngày bắt đầu, bắt đầu lại phần còn lại, ăn ngoài, loại thực phẩm.
 - Phần 2.6: danh sách đi chợ theo gram, không gói, không giá.
