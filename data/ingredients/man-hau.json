@@ -8,7 +8,7 @@
     "external_id": "2710837",
     "source_url": "https://api.nal.usda.gov/fdc/v1/food/2710837?api_key=DEMO_KEY",
     "scientific_name": "Prunus salicina",
-    "kcal_per_100g": 59,
+    "kcal_per_100g": 53,
     "kcal_min": null,
     "kcal_max": null,
     "protein_g": 0.58,
@@ -18,7 +18,7 @@
     "water_g": 84.94,
     "sodium_mg": 0,
     "mapping_confidence": "medium",
-    "mapping_note": "FRUIT-002 2026-10-31: USDA Foundation 2710837 \"Plum, black, with skin, raw\" — mận đen bán lẻ tại Mỹ thuộc nhóm mận Nhật Prunus salicina, ĐÚNG LOÀI với mận hậu VN (tránh bẫy dùng \"Plums, raw\" của SR Legacy vốn thiên về P. domestica). LƯU Ý NGUỒN: bản Foundation này chưa công bố nutrient Energy (1008); kcal 59 lấy từ \"Energy (Atwater General Factors)\" = 58,68 làm tròn theo quy ước kho (Atwater Specific cho 52,7 — ghi lại để vòng duyệt cân nhắc). Bản ghi không kèm tên khoa học nên confidence để medium. Mận hậu VN hay ăn khi còn chắc, hơi chua — đường thực tế có thể thấp hơn mận đen chín mềm của Mỹ.",
+    "mapping_note": "FRUIT-002 2026-10-31: USDA Foundation 2710837 \"Plum, black, with skin, raw\" — mận đen bán lẻ tại Mỹ thuộc nhóm mận Nhật Prunus salicina, ĐÚNG LOÀI với mận hậu VN (tránh bẫy dùng \"Plums, raw\" của SR Legacy vốn thiên về P. domestica). LƯU Ý NGUỒN: bản Foundation này chưa công bố nutrient Energy (1008); kcal 59 lấy từ \"Energy (Atwater General Factors)\" = 58,68 làm tròn theo quy ước kho (Atwater Specific cho 52,7 — ghi lại để vòng duyệt cân nhắc). Bản ghi không kèm tên khoa học nên confidence để medium. Mận hậu VN hay ăn khi còn chắc, hơi chua — đường thực tế có thể thấp hơn mận đen chín mềm của Mỹ. Đính chính D 2026-11-04: vòng duyệt chốt theo chuẩn repo — dùng Energy công bố của USDA cho chính bản ghi Foundation 2710837 (52,747 → 53), như 5 hồ sơ Foundation còn lại đều khớp cột Energy của bảng; số Atwater General Factors 59 cũ giữ lại trong câu trước để truy vết, không dùng nữa.",
     "alternatives": [
       {
         "name": "Plums, raw — SR Legacy (FDC 169949)",
