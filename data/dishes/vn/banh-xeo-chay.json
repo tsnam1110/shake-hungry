@@ -181,10 +181,10 @@
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
-  "needs_review": false,
+  "needs_review": true,
   "reviewed_by": "tsnam1110@gmail.com",
   "reviewed_at": "2026-10-31",
-  "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này).",
+  "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này). [Soát lại E-batch lô 5, 2026-11-05: chỉ 1 họ quy đổi được về 1 cái (Full of Plants: bột gạo 32 g, cốt dừa 39 ml, đậu phụ 85 g, giá 50 g/cái 25 cm) mà số này lệch xa file (bột gạo 55 g, cốt dừa 20 g, đậu phụ 25 g, giá 35 g) — đặc biệt đậu phụ 25 g so với 85 g; các họ Việt còn lại đều dùng bột pha sẵn tính theo gói (500 g) và không ghi số cái nên không quy đổi được; nhiều họ Việt cho đậu xanh 100 g vào nhân, file không có; tổng các dòng 214,5 g so với khẩu phần 260 g (1 cái lớn + rau sống) — giữ cờ chưa duyệt, định lượng hiện tại chưa có nguồn thứ hai xác nhận.]",
   "tags": [
     "loai:banh"
   ]
