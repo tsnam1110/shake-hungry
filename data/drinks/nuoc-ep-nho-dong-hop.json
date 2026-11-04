@@ -43,7 +43,7 @@
   "needs_review": true,
   "reviewed_by": null,
   "reviewed_at": null,
-  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04, làm cẩn thận theo QT-9: khoảng theo loại nước ép đóng hộp, không lấy số một hãng — chưa qua duyệt lại sau khi sửa.",
+  "review_note": "SOÁT LẠI 2026-11-04 theo lệnh của Benjamin (không dùng khoảng tự suy cũ): đối chiếu nhãn hãng thật đang bán, xem drink-verification-packaged.md — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §6.",
   "media": [
     {
@@ -57,11 +57,11 @@
     {
       "label": "Năng lượng",
       "unit": "kcal/100 ml",
-      "value_min": 60,
+      "value_min": 58,
       "value_max": 70,
       "value": null,
-      "per_serving": "≈150–175 kcal/hộp 250 ml",
-      "basis": "Nước ép nho đóng hộp khoảng 60–70 kcal/100 ml: nho tươi khoảng 69 kcal/100 g, nước ép nho (bỏ vỏ/hạt, thêm nước) khoảng 60–65 kcal/100 ml, một số hộp có đường thêm lên 70. Đây là khoảng theo loại, không phải số một hãng. Không dùng engine (đồ đóng gói không qua engine).",
+      "per_serving": "≈145–175 kcal/hộp 250 ml",
+      "basis": "SOÁT LẠI 2026-11-04 (nhãn hãng thật): nước ép nho đóng hộp theo loại 58–70 kcal/100 ml — MỞ RỘNG đầu dưới từ 60 xuống 58: Welch's 100% Concord qua OpenFoodFacts nhiều bản 58–66 kcal, đường 14,2–15 g/100 ml; bản nho trắng pha loãng 22 kcal là sản phẩm khác (nước nho trắng loãng, không áp dụng cho nước ép nho nguyên chất). Hộp có đường thêm lên 70. Khoảng gộp 58–70 kcal/100 ml. Không dùng engine (đồ đóng gói không qua engine).",
       "confidence": "low",
       "source_ref": "Nhãn nước ép đóng hộp (khoảng theo loại, không phải một nhãn cụ thể)"
     },
