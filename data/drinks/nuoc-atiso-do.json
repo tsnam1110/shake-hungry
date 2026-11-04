@@ -53,10 +53,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn đường, nước atiso đỏ + chanh chưa có hồ sơ, liquid 260 ml — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -65,5 +65,32 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 260,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml chất lỏng",
+      "value_min": 31,
+      "value_max": 32,
+      "value": null,
+      "per_serving": "≈80–82 kcal/ly (260 ml chất lỏng, chưa tính đá)",
+      "basis": "Cộng tay: nước atiso đỏ (hibiscus) 250 ml — khoảng 1–3 kcal (trà hoa hãm không đường, gần như trà, kcal không đáng kể, chưa có hồ sơ riêng); đường 20 g × 387 / 100 = 77,4 kcal; nước cốt chanh 10 ml ≈ 2,2 kcal. Tổng 80,6–82,6 kcal / 260 ml = 31–32 kcal/100 ml. Đây chưa phải đầu ra engine.",
+      "confidence": "low",
+      "source_ref": "data/ingredients/duong-trang.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 20,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "20 g/ly",
+      "basis": "sugar_added_g trong file = 20 g, khớp đường trong công thức.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Đã gắn 1/3 dòng trong ly: đường không có tag dị ứng trong hồ sơ; nước atiso đỏ và nước cốt chanh chưa gắn hồ sơ nên không kết luận đầy đủ.",
+  "tcm_note": "Không kết luận tính vị: các dòng đều không có nhãn tính vị trong hồ sơ."
 }
