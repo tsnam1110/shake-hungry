@@ -37,10 +37,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04, làm cẩn thận theo QT-9: khoảng theo loại nước ép đóng hộp, không lấy số một hãng — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §6.",
   "media": [
     {
@@ -49,5 +49,42 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml",
+      "value_min": 17,
+      "value_max": 19,
+      "value": null,
+      "per_serving": "≈56–63 kcal/hộp 330 ml",
+      "basis": "Nước ép cà chua đóng hộp khoảng 17–19 kcal/100 ml (nước ép cà chua nguyên chất, không thêm đường — cùng khoảng đã dùng cho Virgin Mary trong nhóm mocktail). Đây là khoảng theo loại, không phải số một hãng — một số hộp có thêm muối nên kcal không đổi nhưng natri cao, ghi rõ ở chỉ số natri. Không dùng engine (đồ đóng gói không qua engine).",
+      "confidence": "low",
+      "source_ref": "Nhãn nước ép đóng hộp (khoảng theo loại, không phải một nhãn cụ thể)"
+    },
+    {
+      "label": "Đường",
+      "unit": "g/hộp",
+      "value_min": 11,
+      "value_max": 13,
+      "value": null,
+      "per_serving": "≈11–13 g/hộp 330 ml (đường tự nhiên, không phải đường thêm)",
+      "basis": "Đường tự nhiên trong nước ép cà chua khoảng 3,5 g/100 ml, nhân hộp 330 ml = 11,6 g, làm tròn 11–13 g/hộp.",
+      "confidence": "low",
+      "source_ref": "Nhãn nước ép đóng hộp (khoảng theo loại)"
+    },
+    {
+      "label": "Natri",
+      "unit": "mg/100 ml",
+      "value_min": 200,
+      "value_max": 300,
+      "value": null,
+      "per_serving": "≈660–990 mg/hộp 330 ml",
+      "basis": "Natri là chỉ số quan trọng của nước ép cà chua đóng hộp: các hãng thường thêm muối, natri khoảng 200–300 mg/100 ml (tương đương 0,5–0,75 g muối/100 ml), nhân hộp 330 ml = 660–990 mg natri — người cần hạn chế muối phải đọc nhãn hộp cụ thể, ghi rõ.",
+      "confidence": "low",
+      "source_ref": "Nhãn nước ép cà chua đóng hộp (khoảng theo loại)"
+    }
+  ],
+  "allergen_note": "Không kết luận đầy đủ: nước ép đóng hộp không có dòng nguyên liệu trong file để gắn tag; nước ép trái cây nguyên chất không thuộc 14 chất gây dị ứng EU, nhưng một số hộp có thể thêm hương liệu/chất bảo quản — trang chi tiết phải hiện 'chưa đủ dữ kiện'.",
+  "tcm_note": "Không kết luận tính vị: mục đóng gói này chưa gắn hồ sơ nguyên liệu nên không kết luận ở tầng món."
 }
