@@ -36,7 +36,8 @@
     {
       "name": "đá",
       "quantity": 100,
-      "unit": "g"
+      "unit": "g",
+      "ingredient_slug": "nuoc-loc"
     }
   ],
   "recipe_steps": [
@@ -65,10 +66,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn sữa tươi + sữa đặc + đường + đá, sữa ghi chung lấy là sữa tươi, mẫu số 315 ml đồ uống đá xay — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -77,5 +78,32 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 315,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml đồ uống",
+      "value_min": 59,
+      "value_max": 59,
+      "value": null,
+      "per_serving": "≈186–187 kcal/ly (315 ml đồ uống đá xay)",
+      "basis": "Cộng tay: múi cam 150 g × 47 / 100 = 70,5 kcal (cam ngọt, hồ sơ nuoc-ep-cam cho nước ép 47 kcal/100 ml, múi cam nguyên khoảng 47 kcal/100 g, dùng làm proxy, ghi rõ); sữa 50 ml gắn sua-tuoi 50 ml × 1,031 × 60–61 / 100 = 31,0–31,5 kcal (file ghi chung 'sữa', ở đây lấy là sữa tươi, ghi rõ — nếu là sữa khác thì số khác); sữa đặc 15 ml × 1,29 × 334–341 / 100 = 64,6–66,0 kcal; đường 5 g × 387 / 100 = 19,4 kcal; đá xay 100 g tính vào mẫu số. Tổng 185,5–187,4 kcal / 315 ml đồ uống (150 + 50 + 15 + 100) = 59 kcal/100 ml. Đây chưa phải đầu ra engine.",
+      "confidence": "low",
+      "source_ref": "data/ingredients/nuoc-ep-cam.json, sua-tuoi.json, sua-dac.json, duong-trang.json, nuoc-loc.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 10,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "10 g/ly (theo file, chưa tính đường trong sữa đặc)",
+      "basis": "sugar_added_g trong file = 10 g; kiểm chéo: đường 5 g + đường trong sữa đặc khoảng 10,5 g = 15,5 g, cao hơn 10 g trong file — file có thể chỉ tính đường thêm ngoài sữa đặc theo cách khác, ghi chú để chủ dự án chốt.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Đã gắn 4/5 dòng trong ly: sữa tươi và sữa đặc có tag allergen:sua — dị ứng Sữa đã xác nhận; múi cam không có hồ sơ riêng (dùng proxy nước ép cam) nên không kết luận đầy đủ.",
+  "tcm_note": "Không kết luận tính vị: các dòng đều không có nhãn tính vị trong hồ sơ (sữa tươi bình/cam/Thổ 51,6 g trên tổng ~315 g, 16%, dưới ngưỡng 30%)."
 }
