@@ -160,10 +160,10 @@
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
-  "needs_review": false,
+  "needs_review": true,
   "reviewed_by": "tsnam1110@gmail.com",
   "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau). [Soát lại E-batch lô 6, 2026-11-05: sắc thái mới so với ghi chú LV2-012 — mẫu bún cá Hà Nội chung (TodayIBake) CÓ liệt kê cá trắm trong nhóm cá thay thế được ('cá rô phi/cá chép giòn/cá trắm đen/...'), nhưng đó vẫn chỉ là 1 họ (bản Bếp 360 trên Việt Giải Trí sao chép cùng bộ số: 1 kg cá + 500 g xương + 2,5 lít nước) và họ này KHÔNG ghi số tô nên không quy đổi được 1 kg cá ra 110 g/tô của file (chia 4 tô = 250 g, chia 5 tô = 200 g, đều xa 110 g); nguồn Hải Phòng trộn cá thu thì khác định danh; tổng các dòng 354,8 g so với khẩu phần 1 tô 520 g thiếu nước dùng — giữ cờ chưa duyệt, cần thêm 1 họ độc lập có khẩu phần cho cá trắm thuần.]",
   "tags": [
     "dac-san:ha-noi",
     "loai:bun-pho-mi"
