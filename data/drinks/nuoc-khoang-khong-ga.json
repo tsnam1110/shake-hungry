@@ -35,10 +35,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": true,
   "uncertain_note": "Ghi chú ngắn trong catalogue (§6.6), không phải entry đầy đủ.",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04, làm cẩn thận theo QT-9: 0 kcal là sự thật vật lý, khoáng không công bố số chung vì tùy nhãn — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §6.",
   "media": [
     {
@@ -47,5 +47,20 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml",
+      "value": 0,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "0 kcal/chai 500 ml",
+      "basis": "Nước khoáng và nước tinh khiết không chứa kcal (không đường, không chất tạo năng lượng) — đây là sự thật vật lý, không phải ước tính. Khoáng chất (canxi, magie, natri) thay đổi rất nhiều theo nguồn nước và hãng, nên KHÔNG công bố một số khoáng cụ thể cho cả loại — người dùng phải đọc nhãn chai cụ thể.",
+      "confidence": "high",
+      "source_ref": "Nước không kcal (sự thật vật lý)"
+    }
+  ],
+  "allergen_note": "Không có chất gây dị ứng: nước khoáng/tinh khiết nguyên chất không chứa chất gây dị ứng — ghi rõ chỉ áp dụng cho nước nguyên chất, không áp dụng cho nước có vị (nước có vị là mục khác).",
+  "tcm_note": "Không kết luận tính vị: mục đóng gói này chưa gắn hồ sơ nguyên liệu nên không kết luận ở tầng món."
 }
