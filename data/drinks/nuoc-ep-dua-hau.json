@@ -13,7 +13,8 @@
     {
       "name": "thịt dưa hấu bỏ hạt",
       "quantity": 400,
-      "unit": "g"
+      "unit": "g",
+      "ingredient_slug": "dua-hau"
     }
   ],
   "recipe_steps": [
@@ -40,10 +41,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn dưa hấu, nước ép ~360 ml, liquid 360 ml — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -52,5 +53,32 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 360,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml nước ép",
+      "value_min": 30,
+      "value_max": 33,
+      "value": null,
+      "per_serving": "≈108–120 kcal/ly (khoảng 360 ml nước ép, chưa tính đá)",
+      "basis": "Cộng tay: thịt dưa hấu 400 g × 30 / 100 = 120,0 kcal là ĐẦU TRÊN; dưa hấu 92% nước nên hiệu suất ép khoảng 90%, khoảng 360 ml nước ép, nước ép dưa hấu khoảng 30 kcal/100 ml, 360 ml × 30 / 100 = 108 kcal. Khoảng 108–120 kcal / 360 ml = 30–33 kcal/100 ml. Đây chưa phải đầu ra engine.",
+      "confidence": "medium",
+      "source_ref": "data/ingredients/dua-hau.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 0,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "0 g/ly (đường thêm), đường tự nhiên khoảng 22 g",
+      "basis": "sugar_added_g trong file = 0, đúng vì không thêm đường; đường tự nhiên trong dưa hấu khoảng 6 g/100 g × 360 ml ≈ 21,6 g.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Đã gắn đủ 1/1 dòng trong ly: dưa hấu không có tag dị ứng trong hồ sơ.",
+  "tcm_note": "Không kết luận tính vị: dưa hấu không có nhãn tính vị trong hồ sơ."
 }
