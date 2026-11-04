@@ -71,15 +71,15 @@
   "packaging": null,
   "sugar_range_g": null,
   "alcohol_pct_range": [
-    11.7,
-    11.7
+    11.0,
+    12.4
   ],
   "label_note": "",
   "brand_examples": [],
   "needs_review": true,
   "reviewed_by": null,
   "reviewed_at": null,
-  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: kcal từ ethanol + đường theo công thức, ABV suy ra từ công thức, chưa qua duyệt lại sau khi sửa.",
+  "review_note": "SOÁT LẠI 2026-11-04 theo lệnh của Benjamin (không dùng bảng tự suy cũ): tính lại từ thành phần đã kiểm chứng đa nguồn, xem drink-verification-liqueur.md — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5.",
   "media": [
     {
@@ -94,21 +94,21 @@
     {
       "label": "Năng lượng",
       "unit": "kcal/100 ml chất lỏng",
-      "value_min": 83,
+      "value_min": 74,
       "value_max": 83,
       "value": null,
-      "per_serving": "≈150 kcal/ly (180 ml chất lỏng)",
-      "basis": "Cộng tay từ công thức (ethanol 7 kcal/g, mật độ 0,789 g/ml + đường 4 kcal/g; rượu mùi tính cả ethanol và đường theo nhãn loại, chưa đo trực tiếp): vang trắng khô 125 ml × 0.74 = 92.5 kcal; brandy 15 ml × 2.21 = 33.1 kcal; siro đường 10 ml × 2.41 = 24.1 kcal; soda 30 ml × 0.0 = 0.0 kcal. Tổng 149.8 kcal / 180 ml = 83 kcal/100 ml. ABV suy ra từ công thức: 11.7% (ethanol 21.0 ml / 180 ml chất lỏng). Đây chưa phải đầu ra engine (engine chưa có logic ethanol).",
+      "per_serving": "≈134–150 kcal/ly (180 ml chất lỏng)",
+      "basis": "SOÁT LẠI 2026-11-04 (đa nguồn): vang trắng khô 125 ml khoảng 76,3–92,5 kcal — MỞ RỘNG khoảng so với cũ (vang trắng cũ tự suy 0,74/ml = 92,5 kcal, nằm ở đầu trên): vang trắng khô 11–13% ABV, đường 1–5 g/L, tức ethanol 60,8–71,8 + đường 0,4–2,0 = 61–74 kcal/100 ml; brandy 15 ml × 2,21 = 33,1 kcal; siro đường 10 ml × 2,41 = 24,1 kcal; soda 0 kcal. Tổng mới 133,5–149,7 kcal / 180 ml = 74–83 kcal/100 ml (cũ 150, nằm ở đầu trên). ABV 11,0–12,4% (ethanol vang 13,8–16,3 + brandy 6,0, chia 180 ml). Đây vẫn chưa phải đầu ra engine.",
       "confidence": "low",
       "source_ref": "Bảng kcal/ml cocktail trong hồ sơ triển khai (ethanol + đường, xem basis)"
     },
     {
       "label": "Độ cồn",
       "unit": "% ABV",
-      "value": 11.7,
-      "value_min": null,
-      "value_max": null,
-      "per_serving": "≈11.7% ABV",
+      "value": null,
+      "value_min": 11.0,
+      "value_max": 12.4,
+      "per_serving": "≈11.0–12.4% ABV",
       "basis": "ABV suy ra từ công thức: ethanol 21.0 ml trên tổng 180 ml chất lỏng = 11.7%. Đây là ABV của ly pha theo công thức, chưa đo trực tiếp, và thay đổi nếu quán dùng rượu có ABV khác.",
       "confidence": "medium",
       "source_ref": "Công thức trong file catalogue"
@@ -120,7 +120,7 @@
       "value_min": null,
       "value_max": null,
       "per_serving": "6 g/ly (theo file, tổng đường thực khoảng 9 g)",
-      "basis": "sugar_added_g trong file = 6 g (đường thêm từ siro/đường, theo cách ghi của file); tổng đường thực ước tính từ rượu mùi, nước ép và siro khoảng 9 g, cao hơn số file vì file không tính đường trong rượu mùi và nước ép.",
+      "basis": "sugar_added_g trong file = 6 g; tổng đường thực sau soát lại khoảng 9,8 g (xem basis năng lượng).",
       "confidence": "low",
       "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
     }
