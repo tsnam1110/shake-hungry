@@ -18,10 +18,9 @@
     $initials = $user ? collect(explode(' ', trim($user->name)))->map(fn ($w) => mb_strtoupper(mb_substr($w, 0, 1)))->take(2)->implode('') : '';
     $navItems = [
         ['gợi ý', '/', 'Lắc món', 'dice', $path === '/'],
-        ['gợi ý', '/thu-vien', 'Thư viện', 'search', str_starts_with($path, 'thu-vien') || str_starts_with($path, 'nguyen-lieu')],
+        ['gợi ý', '/thu-vien', 'Thư viện', 'search', str_starts_with($path, 'thu-vien') || str_starts_with($path, 'nguyen-lieu') || str_starts_with($path, 'do-uong')],
         ['gợi ý', '/hoa-qua', 'Hoa quả theo mùa', 'fruit', str_starts_with($path, 'hoa-qua')],
         ['gợi ý', '/rau-mua', 'Rau theo mùa', 'leaf', str_starts_with($path, 'rau-mua')],
-        ['gợi ý', '/do-uong', 'Thư viện nước uống', 'bowl', str_starts_with($path, 'do-uong')],
         ['gợi ý', '/ket-hop-can-luu-y', 'Kết hợp cần lưu ý', 'leaf', str_starts_with($path, 'ket-hop-can-luu-y')],
         ['của bạn', '/nhat-ky', 'Nhật ký bữa ăn', 'book', $path === 'nhat-ky'],
         ['của bạn', '/tuan-an', 'Tuần ăn', 'book', $path === 'tuan-an'],
@@ -114,7 +113,7 @@
 <nav class="ld-tabbar" aria-label="Điều hướng chính">
     <a href="/" class="{{ $path === '/' ? 'active' : '' }}">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">{!! $icons['dice'] !!}</svg>Lắc món</a>
-    <a href="/thu-vien" class="{{ str_starts_with($path, 'thu-vien') || str_starts_with($path, 'nguyen-lieu') ? 'active' : '' }}">
+    <a href="/thu-vien" class="{{ str_starts_with($path, 'thu-vien') || str_starts_with($path, 'nguyen-lieu') || str_starts_with($path, 'do-uong') ? 'active' : '' }}">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">{!! $icons['search'] !!}</svg>Thư viện</a>
     <a href="/hoa-qua" class="{{ str_starts_with($path, 'hoa-qua') ? 'active' : '' }}">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">{!! $icons['fruit'] !!}</svg>Hoa quả</a>

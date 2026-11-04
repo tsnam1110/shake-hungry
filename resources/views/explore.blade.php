@@ -8,6 +8,7 @@
         <a href="/thu-vien" class="on" aria-current="page">Món ăn</a>
         <a href="/nguyen-lieu">Nguyên liệu</a>
         <a href="/thu-vien/hoa-qua">Hoa quả</a>
+        <a href="/thu-vien/do-uong">Đồ uống</a>
     </div>
 
     <h1 class="ld-title" style="margin-top:16px">Thư viện</h1>

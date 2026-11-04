@@ -5,9 +5,9 @@
 @section('content')
     {{-- Đầu trang theo đúng mẫu trang món (/mon/{slug}): link quay lại kiểu chevron,
          tiêu đề ld-title, phụ đề, hàng badge ld-badge, hộp cảnh báo ld-warn. --}}
-    <a href="/do-uong" style="display:inline-flex;align-items:center;gap:3px;color:var(--color-link);font-size:16.5px;font-weight:500;text-decoration:none;padding-top:10px">
+    <a href="/thu-vien/do-uong" style="display:inline-flex;align-items:center;gap:3px;color:var(--color-link);font-size:16.5px;font-weight:500;text-decoration:none;padding-top:10px">
         <svg width="11" height="18" viewBox="0 0 8 14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" style="transform:rotate(180deg)"><path d="M1 1l6 6-6 6"/></svg>
-        Thư viện nước uống
+        Thư viện · Đồ uống
     </a>
     <div id="body" style="margin-top:14px"></div>
 @endsection

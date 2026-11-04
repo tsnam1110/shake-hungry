@@ -63,6 +63,7 @@ Route::get('/media/thumb/{width}/{path}', [\App\Http\Controllers\PublicWeb\Media
 Route::get('/media/{path}', [\App\Http\Controllers\PublicWeb\MediaController::class, 'show'])->where('path', '.*');
 Route::get('/thu-vien', fn () => view('explore')); // tên cũ /kham-pha — đổi thành Thư viện 2026-11-01
 Route::get('/thu-vien/hoa-qua', fn () => view('fruits', ['library' => true])); // tab Hoa quả trong Thư viện (UI-023)
+Route::get('/thu-vien/do-uong', fn () => view('drinks', ['library' => true])); // tab Đồ uống trong Thư viện — theo mẫu tab Hoa quả (UI-023)
 Route::redirect('/kham-pha', '/thu-vien');
 Route::get('/nguyen-lieu', fn () => view('ingredients'));
 Route::get('/nguyen-lieu/{slug}', fn () => view('ingredient'));
@@ -71,7 +72,7 @@ Route::get('/hoa-qua', fn () => view('fruits'));
 Route::get('/hoa-qua/{slug}', fn () => view('fruit'));
 Route::get('/rau-mua', fn () => view('vegetables'));
 Route::get('/rau-mua/{slug}', fn () => view('vegetable'));
-Route::get('/do-uong', fn () => view('drinks'));
+Route::redirect('/do-uong', '/thu-vien/do-uong'); // danh sách đã chuyển vào Thư viện — giữ URL cũ để không gãy link/bookmark
 Route::get('/do-uong/{slug}', fn () => view('drink'));
 // Bảng nguyên liệu lưu ý — trang riêng, liệt kê toàn bộ cặp kết hợp (kể cả
 // cặp thuốc × thực phẩm và cặp có phía là đồ uống), dùng CombinationDisplay

@@ -9,7 +9,8 @@ use App\Models\Drink;
 // Cồn) + huy hiệu 18+ từ cờ alcohol của API, và không đưa cocktail lên
 // trang chủ / gợi ý nổi bật (trang chủ và Lắc chỉ trả Dish).
 // Test này khoá phần API + giao diện danh sách mà test có thể kiểm:
-// lọc alcohol của API và sự hiện diện của công tắc trong trang /do-uong.
+// lọc alcohol của API và sự hiện diện của công tắc trong tab Đồ uống
+// của Thư viện (/thu-vien/do-uong; /do-uong cũ chỉ chuyển hướng sang đó).
 
 beforeEach(function () {
     Drink::create([
@@ -32,7 +33,10 @@ it('lọc cồn của API tách đúng đồ có cồn và không cồn', functi
 });
 
 it('trang danh sách đồ uống giữ công tắc Không cồn trước mặc định bật', function () {
-    $this->get('/do-uong')->assertOk()
+    $this->get('/thu-vien/do-uong')->assertOk()
         ->assertSee('Không cồn trước', false)
-        ->assertSee('id="no-alcohol-first"', false);
+        ->assertSee('id="no-alcohol-first"', false)
+        ->assertSee('Đồ uống', false)
+        ->assertSee('href="/thu-vien/do-uong" class="on"', false);
+    $this->get('/do-uong')->assertRedirect('/thu-vien/do-uong');
 });

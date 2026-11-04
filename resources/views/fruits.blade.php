@@ -10,6 +10,7 @@
         <a href="/thu-vien">Món ăn</a>
         <a href="/nguyen-lieu">Nguyên liệu</a>
         <a href="/thu-vien/hoa-qua" class="on" aria-current="page">Hoa quả</a>
+        <a href="/thu-vien/do-uong">Đồ uống</a>
     </div>
     <h1 class="ld-title" style="margin-top:16px">Thư viện</h1>
     <h2 class="ld-section-title" style="margin-top:10px">Hoa quả theo mùa</h2>

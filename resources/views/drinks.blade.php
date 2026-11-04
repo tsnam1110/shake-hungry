@@ -1,10 +1,23 @@
 @extends('layouts.app')
 
-@section('title', 'Thư viện nước uống — Lắc Đói')
+@section('title', !empty($library) ? 'Thư viện · Đồ uống — Lắc Đói' : 'Thư viện nước uống — Lắc Đói')
 @section('page_class', 'ld-page-wide')
 
 @section('content')
+    @if(!empty($library))
+    {{-- Tab Đồ uống trong Thư viện: dùng chung trang đồ uống, thêm thanh chuyển mục
+         theo mẫu tab Hoa quả (UI-023) — danh sách, bộ lọc và thẻ giữ nguyên. --}}
+    <div class="ld-seg" role="navigation" aria-label="Chuyển mục khám phá" style="max-width:440px;margin-top:14px">
+        <a href="/thu-vien">Món ăn</a>
+        <a href="/nguyen-lieu">Nguyên liệu</a>
+        <a href="/thu-vien/hoa-qua">Hoa quả</a>
+        <a href="/thu-vien/do-uong" class="on" aria-current="page">Đồ uống</a>
+    </div>
+    <h1 class="ld-title" style="margin-top:16px">Thư viện</h1>
+    <h2 class="ld-section-title" style="margin-top:10px">Đồ uống</h2>
+    @else
     <h1 class="ld-title" style="margin-top:14px">Thư viện nước uống</h1>
+    @endif
     <p class="ld-subtitle">Nội dung chi tiết như món ăn: có công thức thì ghi công thức, có cách chế biến thì ghi cả cách chế biến. Có hai loại: <b>pha chế</b> (có công thức) và <b>đóng gói</b> (chỉ khối “Thông tin nhãn”, không bịa công thức). Cocktail có badge 18+ ngay trên thẻ và <b>không</b> được gợi ý tự động trong Lắc món. Caffeine chỉ ghi mức định tính, không ghi mg.</p>
 
     <div class="ld-card" style="margin-top:18px">
