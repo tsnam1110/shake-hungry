@@ -194,8 +194,19 @@
                     </label>
                 </div>
                 <div class="sm:col-span-2"><span class="ld-field-label">Không ăn được / dị ứng — lọc cứng khi lắc</span>
-                    <div class="ld-chips" id="excluded-chips"></div>
-                    <p class="ld-note" style="margin-top:8px">Chạm để bật hoặc tắt từng mục. Cấu hình này dùng chung cho khối Lắc ở trang chủ và không bao giờ bị hệ thống tự nới lỏng.</p></div>
+                    {{-- Lọc dị ứng kiểu select2 (dùng chung CSS .ld-multi với trang
+                         Nguyên liệu và Lắc, JS thuần): chọn trong danh sách thả
+                         xuống, mục đã chọn thành tag có nút ×. Chỉ đổi giao diện;
+                         khi bấm Lưu hồ sơ vẫn gửi đúng excluded_ingredients cũ. --}}
+                    <div class="ld-multi" id="profile-allergen-multi">
+                        <div class="ld-multi-box" id="profile-allergen-box" role="combobox" aria-expanded="false" aria-haspopup="listbox" aria-controls="profile-allergen-drop">
+                            <span class="ld-multi-tags" id="profile-allergen-tags"></span>
+                            <input id="profile-allergen-search" type="text" placeholder="Chọn dị ứng…" aria-label="Tìm và chọn dị ứng" autocomplete="off">
+                            <span class="ld-multi-caret" aria-hidden="true">▾</span>
+                        </div>
+                        <div class="ld-multi-drop" id="profile-allergen-drop" role="listbox" aria-multiselectable="true" hidden></div>
+                    </div>
+                    <p class="ld-note" style="margin-top:8px">Chọn trong danh sách thả xuống; mục đã chọn hiện thành tag, bấm × để bỏ. Cấu hình này dùng chung cho khối Lắc ở trang chủ và không bao giờ bị hệ thống tự nới lỏng.</p></div>
                 {{-- WEEK-001, Task 3: gợi ý protein do API trả về; nút "Dùng gợi
                      ý này" chỉ điền vào ô protein, không tự lưu, không ghi đè
                      số đã lưu cho tới khi người dùng bấm "Lưu hồ sơ". --}}
@@ -247,14 +258,57 @@ const headers = { 'Content-Type': 'application/json', 'Accept': 'application/jso
 function esc(s) { return (s ?? '').toString().replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
 {{-- FIX-A1 (AUDIT-ALLERGEN): dùng chung danh sách sinh từ TaggingRules với trang Lắc (AllergenPreset). --}}
 const ALLERGEN_PRESETS = @json(\App\Taxonomy\AllergenPreset::chips());
-const excludedChips = document.getElementById('excluded-chips');
 const selectedPresets = new Set();
-excludedChips.innerHTML = ALLERGEN_PRESETS.map(([l], i) => `<button type="button" class="ld-chip allergen" data-i="${i}">${l}</button>`).join('');
-excludedChips.querySelectorAll('button').forEach(b => b.onclick = () => {
-    const i = +b.dataset.i;
-    const on = b.classList.toggle('active');
-    on ? selectedPresets.add(i) : selectedPresets.delete(i);
+const profileAllergenBox = document.getElementById('profile-allergen-box');
+const profileAllergenDrop = document.getElementById('profile-allergen-drop');
+const profileAllergenInput = document.getElementById('profile-allergen-search');
+const profileAllergenTagsEl = document.getElementById('profile-allergen-tags');
+const normProfile = s => (s ?? '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+function renderProfileAllergenTags() {
+    profileAllergenTagsEl.innerHTML = [...selectedPresets].map(i =>
+        `<span class="ld-multi-tag">${esc(ALLERGEN_PRESETS[i][0])}<button type="button" data-remove="${i}" aria-label="Bỏ dị ứng ${esc(ALLERGEN_PRESETS[i][0])}">×</button></span>`).join('');
+    profileAllergenTagsEl.querySelectorAll('[data-remove]').forEach(b => b.addEventListener('click', (e) => {
+        e.stopPropagation();
+        selectedPresets.delete(+b.dataset.remove);
+        renderProfileAllergenTags(); renderProfileAllergenOptions();
+    }));
+    profileAllergenInput.placeholder = selectedPresets.size ? 'Tìm thêm dị ứng…' : 'Chọn dị ứng…';
+}
+function renderProfileAllergenOptions() {
+    const q = normProfile(profileAllergenInput.value.trim());
+    const list = ALLERGEN_PRESETS.map(([label, slugs], i) => ({ label, slugs, i }))
+        .filter(o => !q || normProfile(o.label).includes(q));
+    profileAllergenDrop.innerHTML = list.length ? list.map(o => {
+        const on = selectedPresets.has(o.i);
+        return `<button type="button" class="ld-multi-opt${on ? ' selected' : ''}" role="option" aria-selected="${on}" data-i="${o.i}"><span class="ld-multi-check">${on ? '✓' : ''}</span>${esc(o.label)}<span class="ld-multi-count">(${o.slugs.length})</span></button>`;
+    }).join('') : '<p class="ld-multi-empty">Không có dị ứng nào khớp.</p>';
+    profileAllergenDrop.querySelectorAll('[data-i]').forEach(b => b.addEventListener('click', () => {
+        const i = +b.dataset.i;
+        selectedPresets.has(i) ? selectedPresets.delete(i) : selectedPresets.add(i);
+        renderProfileAllergenTags(); renderProfileAllergenOptions(); profileAllergenInput.focus();
+    }));
+}
+function setProfileAllergenDrop(open) {
+    profileAllergenDrop.hidden = !open;
+    profileAllergenBox.setAttribute('aria-expanded', open ? 'true' : 'false');
+}
+profileAllergenInput.addEventListener('focus', () => { renderProfileAllergenOptions(); setProfileAllergenDrop(true); });
+profileAllergenInput.addEventListener('input', () => { renderProfileAllergenOptions(); setProfileAllergenDrop(true); });
+profileAllergenInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') { setProfileAllergenDrop(false); profileAllergenInput.blur(); }
+    /* Ô tìm kiếm nằm trong form Hồ sơ: Enter chọn mục đầu tiên thay vì
+       gửi form (gửi form chỉ khi bấm nút Lưu hồ sơ). */
+    if (e.key === 'Enter') { e.preventDefault(); const first = profileAllergenDrop.querySelector('[data-i]'); if (first) first.click(); }
 });
+profileAllergenBox.addEventListener('click', (e) => {
+    if (e.target === profileAllergenInput || e.target.closest('[data-remove]')) return;
+    setProfileAllergenDrop(profileAllergenDrop.hidden);
+    if (!profileAllergenDrop.hidden) profileAllergenInput.focus();
+});
+document.addEventListener('click', (e) => {
+    if (!document.getElementById('profile-allergen-multi').contains(e.target)) setProfileAllergenDrop(false);
+});
+renderProfileAllergenTags(); renderProfileAllergenOptions();
 
 async function init() {
     const me = await (await fetch('/api/me')).json();
@@ -272,10 +326,10 @@ async function init() {
         if (f.elements['show_tcm']) f.elements['show_tcm'].checked = profile.show_tcm !== false && profile.show_tcm !== 0;
         if (f.elements['allow_alcohol']) f.elements['allow_alcohol'].checked = !!profile.allow_alcohol;
         const ex = new Set(profile.excluded_ingredients || []);
-        excludedChips.querySelectorAll('button').forEach(b => {
-            const i = +b.dataset.i;
-            if (ALLERGEN_PRESETS[i][1].some(s => ex.has(s))) { b.classList.add('active'); selectedPresets.add(i); }
+        ALLERGEN_PRESETS.forEach(([, slugs], i) => {
+            if (slugs.some(s => ex.has(s))) selectedPresets.add(i);
         });
+        renderProfileAllergenTags(); renderProfileAllergenOptions();
     }
     renderTdee(tdee);
     renderWeekSuggestion(week_target_suggestion);

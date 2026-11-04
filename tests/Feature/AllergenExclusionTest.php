@@ -96,11 +96,15 @@ it('FIX-A1: trang Lac va trang Ho so nhung dung danh sach sinh ra, du 12 nhom', 
     };
 
     $shakeHtml = $this->get('/')->assertOk()->getContent();
-    expect($extract($shakeHtml, 'ALLERGENS'))->toBe($chips);
+    expect($extract($shakeHtml, 'ALLERGENS'))->toBe($chips)
+        // Lọc dị ứng kiểu select2 (Task 2): ô chọn nhiều thay hàng chip.
+        ->and($shakeHtml)->toContain('id="shake-allergen-multi"');
 
     $user = User::factory()->create();
     $profileHtml = $this->actingAs($user)->get('/ho-so')->assertOk()->getContent();
-    expect($extract($profileHtml, 'ALLERGEN_PRESETS'))->toBe($chips);
+    expect($extract($profileHtml, 'ALLERGEN_PRESETS'))->toBe($chips)
+        // Lọc dị ứng kiểu select2 (Task 3): ô chọn nhiều thay hàng chip.
+        ->and($profileHtml)->toContain('id="profile-allergen-multi"');
 });
 
 it('FIX-A1: pool() voi danh sach sinh ra loai 100% mon mang co cua nhom — ro ri ve 0', function () {
