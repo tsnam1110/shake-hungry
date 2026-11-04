@@ -57,7 +57,7 @@
   "packaging": null,
   "sugar_range_g": null,
   "alcohol_pct_range": [
-    29.0,
+    28.2,
     29.0
   ],
   "label_note": "",
@@ -65,7 +65,7 @@
   "needs_review": true,
   "reviewed_by": null,
   "reviewed_at": null,
-  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: kcal từ ethanol + đường theo công thức, ABV suy ra từ công thức, chưa qua duyệt lại sau khi sửa.",
+  "review_note": "SOÁT LẠI 2026-11-04 theo lệnh của Benjamin (không dùng bảng tự suy cũ): tính lại từ thành phần đã kiểm chứng đa nguồn, xem drink-verification-liqueur.md — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5.",
   "media": [
     {
@@ -80,21 +80,21 @@
     {
       "label": "Năng lượng",
       "unit": "kcal/100 ml chất lỏng",
-      "value_min": 184,
-      "value_max": 184,
+      "value_min": 173,
+      "value_max": 182,
       "value": null,
-      "per_serving": "≈165 kcal/ly (90 ml chất lỏng)",
-      "basis": "Cộng tay từ công thức (ethanol 7 kcal/g, mật độ 0,789 g/ml + đường 4 kcal/g; rượu mùi tính cả ethanol và đường theo nhãn loại, chưa đo trực tiếp): gin 45 ml × 2.21 = 99.5 kcal; Lillet Blanc 30 ml × 1.34 = 40.2 kcal; Suze 15 ml × 1.7 = 25.5 kcal. Tổng 165.2 kcal / 90 ml = 184 kcal/100 ml. ABV suy ra từ công thức: 29.0% (ethanol 26.1 ml / 90 ml chất lỏng). Đây chưa phải đầu ra engine (engine chưa có logic ethanol).",
+      "per_serving": "≈156–164 kcal/ly (90 ml chất lỏng)",
+      "basis": "SOÁT LẠI 2026-11-04 (đa nguồn): gin 45 ml × 2,21 = 99,5 kcal; Lillet Blanc 30 ml × 1,30 = 39,0 kcal — NHÃN CHÍNH HÃNG lillet.com: 130 kcal, 8,8 g carb/100 ml, 17% ABV (cũ tự suy 40,2, gần đúng); Suze 15 ml khoảng 17,3–25,1 kcal — SỬA so với cũ (Suze cũ tự suy 1,70/ml = 25,5 kcal, nằm ở đầu trên): Suze theo thị trường 15% (EU) tới 20% (Mỹ/Anh), đường khoảng 8 g/100 ml, tức ethanol 82,8–110,5 + đường 32 = 115–143 kcal/100 ml (Vinepair ghi 50 kcal/oz, tức 167 kcal/100 ml, là đầu trên khác — giữ khoảng rộng 115–167). Tổng mới 155,8–163,6 kcal / 90 ml = 173–182 kcal/100 ml (cũ 165, cao hơn 2–9 kcal). ABV 28,2–29,0% (ethanol gin 18 + Lillet 5,1 + Suze 2,25–3,0, chia 90 ml). Đây vẫn chưa phải đầu ra engine.",
       "confidence": "low",
       "source_ref": "Bảng kcal/ml cocktail trong hồ sơ triển khai (ethanol + đường, xem basis)"
     },
     {
       "label": "Độ cồn",
       "unit": "% ABV",
-      "value": 29.0,
-      "value_min": null,
-      "value_max": null,
-      "per_serving": "≈29.0% ABV",
+      "value": null,
+      "value_min": 28.2,
+      "value_max": 29.0,
+      "per_serving": "≈28.2–29.0% ABV",
       "basis": "ABV suy ra từ công thức: ethanol 26.1 ml trên tổng 90 ml chất lỏng = 29.0%. Đây là ABV của ly pha theo công thức, chưa đo trực tiếp, và thay đổi nếu quán dùng rượu có ABV khác.",
       "confidence": "medium",
       "source_ref": "Công thức trong file catalogue"
@@ -106,7 +106,7 @@
       "value_min": null,
       "value_max": null,
       "per_serving": "0 g/ly (theo file, tổng đường thực khoảng 5 g)",
-      "basis": "sugar_added_g trong file = 0 g (đường thêm từ siro/đường, theo cách ghi của file); tổng đường thực ước tính từ rượu mùi, nước ép và siro khoảng 5 g, cao hơn số file vì file không tính đường trong rượu mùi và nước ép.",
+      "basis": "sugar_added_g trong file = 0 g; tổng đường thực sau soát lại khoảng 4,5 g (xem basis năng lượng).",
       "confidence": "low",
       "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
     }
