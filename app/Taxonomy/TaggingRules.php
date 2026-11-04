@@ -48,6 +48,7 @@ final class TaggingRules
         'pho-mai' => 'dong-vat', 'sua-chua' => 'dong-vat', 'sua-dac' => 'dong-vat',
         'gelatin' => 'dong-vat', 'kem-whipping' => 'dong-vat', // collagen động vật + kem sữa — LV2-007 Phần B
         'sua-tuoi' => 'dong-vat', 'trung-vit-lon' => 'dong-vat', 'trung-vit-muoi' => 'dong-vat',
+        'long-do-trung-ga' => 'dong-vat', 'gelato-vani' => 'dong-vat', 'bot-trung-muoi' => 'dong-vat',
         // Sản phẩm công nghiệp phối trộn nhiều nguồn gốc
         'bot-canh' => 'tong-hop', 'hat-nem' => 'tong-hop', 'xot-mayonnaise' => 'tong-hop',
         'mi-trung-kho' => 'tong-hop', // mì trứng = bột mì + trứng
@@ -189,6 +190,7 @@ final class TaggingRules
         'mi-trung-kho' => ['trung', 'lua-mi'], 'xot-mayonnaise' => ['trung'],
         'sua-tuoi' => ['sua'], 'sua-dac' => ['sua'], 'sua-chua' => ['sua'],
         'kem-whipping' => ['sua'], // kem sữa tươi đánh bông — LV2-007 Phần B
+        'long-do-trung-ga' => ['trung'], 'gelato-vani' => ['sua'], 'bot-trung-muoi' => ['sua', 'trung'],
         'pho-mai' => ['sua'], 'bo-dong-vat' => ['sua'],
         'dau-nanh-hat' => ['dau-nanh'], 'sua-dau-nanh' => ['dau-nanh'], 'dau-phu' => ['dau-nanh'],
         'dau-phu-chien' => ['dau-nanh'], 'tau-hu-ky' => ['dau-nanh'], 'chao' => ['dau-nanh'],
