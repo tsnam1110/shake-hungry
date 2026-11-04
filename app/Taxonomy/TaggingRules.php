@@ -138,7 +138,7 @@ final class TaggingRules
         // rượu mùi, vermouth, prosecco xếp len-men cùng bia/rượu trong kho.
         'tra-den' => 'che-bien', 'ca-phe-espresso' => 'che-bien',
         'soda' => 'che-bien', 'tonic' => 'che-bien', 'nuoc-ep-ca-chua' => 'che-bien',
-        'nuoc-ep-cam' => 'che-bien', 'gelato-vani' => 'dong-lanh', 'sot-socola' => 'che-bien', // nước ép cam vắt tươi — chế biến sẵn như nước ép cà chua, không phải nguyên liệu tươi nguyên quả
+        'nuoc-ep-cam' => 'che-bien', 'gelato-vani' => 'dong-lanh', 'sot-socola' => 'che-bien', 'bot-trung-muoi' => 'che-bien', 'long-do-trung-ga' => 'tuoi', // nước ép cam vắt tươi — chế biến sẵn như nước ép cà chua, không phải nguyên liệu tươi nguyên quả
         'siro-duong' => 'che-bien', // siro đường tự pha — chế biến sẵn, không phải nguyên liệu tươi
         'tran-chau-da-nau' => 'che-bien', // trân châu đã nấu ướp đường — chế biến sẵn, không phải nguyên liệu tươi
         'ginger-beer' => 'che-bien', 'grenadine' => 'che-bien', 'orgeat' => 'che-bien',
