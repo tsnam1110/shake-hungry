@@ -13,7 +13,8 @@
     {
       "name": "cần tây",
       "quantity": 200,
-      "unit": "g"
+      "unit": "g",
+      "ingredient_slug": "can-tay"
     }
   ],
   "recipe_steps": [
@@ -42,10 +43,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn cần tây, nước ép ~140 ml, liquid 140 ml — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -54,5 +55,32 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 140,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml nước ép",
+      "value_min": 18,
+      "value_max": 21,
+      "value": null,
+      "per_serving": "≈25–30 kcal/ly (khoảng 140 ml nước ép, chưa tính đá)",
+      "basis": "Cộng tay: cần tây 200 g cho khoảng 140 ml nước ép (hiệu suất ép khoảng 70%, ước tính); nước ép cần tây khoảng 20 kcal/100 ml (gần với cần tây nguyên 14 kcal/100 g, nước ép đậm đặc hơn vì bỏ xơ), 140 ml × 20 / 100 = 28 kcal, để khoảng 25–30. Cả cây 200 g × 14 / 100 = 28,0 kcal trùng với điểm giữa, nhưng đó là trùng hợp, không phải vì nước ép = cả cây. Đây chưa phải đầu ra engine.",
+      "confidence": "low",
+      "source_ref": "data/ingredients/can-tay.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 0,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "0 g/ly (đường thêm), đường tự nhiên khoảng 3 g",
+      "basis": "sugar_added_g trong file = 0, đúng vì không thêm đường; đường tự nhiên trong nước ép cần tây khoảng 2 g/100 ml × 140 ml = 2,8 g.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Đã gắn đủ 1/1 dòng trong ly: cần tây không có tag dị ứng trong hồ sơ.",
+  "tcm_note": "Không kết luận tính vị: cần tây không có nhãn tính vị trong hồ sơ."
 }
