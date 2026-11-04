@@ -1,0 +1,52 @@
+# WEEK-001 — Tuần ăn, Giai đoạn 2: lõi tuần ăn
+
+**Quyết định đã chốt (chủ dự án, sáng 2026-11-04, trong main chat):**
+1. "Làm cả 2" cho quy tắc protein: app tính gợi ý theo công thức Mealbird
+   (1 g/lb tại BMI 25, giới hạn 35% kcal) và cho người dùng tự nhập/ghi đè.
+2. Phạm vi Giai đoạn 2 chỉ lõi tuần ăn, không ngân sách, không gói, không hộ
+   gia đình.
+3. Chỉ món đủ protein + kcal mới được vào tuần.
+4. Bỏ paywall, Scan the Plate, chat người thật, bảng góp ý công khai, SDK
+   quảng cáo và DoorDash.
+5. Tách Tuần ăn thành 1 trang riêng, route đề xuất `/tuan-an`, vào từ Hồ sơ
+   và Thư viện, khách xem tuần ví dụ không lưu.
+
+"Clone" chỉ là clone chức năng, không sao chép tên, linh vật, văn bản, ảnh,
+công thức hay code của Mealbird. Kế hoạch đầy đủ: tài liệu Giai đoạn 1
+`~/workspace/your_files/mealbird-lacdoi-ke-hoach-tich-hop.md` §4.
+
+**Quy tắc làm việc:** giai đoạn → phần → task, một task một lần, một commit
+riêng, báo cáo sau mỗi task và chờ duyệt rồi mới sang task tiếp theo.
+
+## Phần 2.1 — Mục tiêu tuần
+
+### Task 1 — ĐÃ XONG (2026-11-04, chờ duyệt)
+- Migration `2026_11_04_100001_add_week_targets_to_user_profiles.php`:
+  `goal` (varchar 16, null), `target_protein_g_per_day` và
+  `target_kcal_per_day` (unsigned smallint, null).
+- `App\Models\UserProfile`: casts integer cho hai trường mục tiêu.
+- `App\Profile\WeekTargetSuggester`: hàm thuần tuý tính gợi ý protein từng
+  bước (BMI 25 → lb → 1 g/lb → giới hạn 35% kcal / 4); trả null khi thiếu
+  chiều cao hoặc thiếu kcal mục tiêu. Không ghi đè mục tiêu đã lưu, không
+  sinh số dinh dưỡng cho món (QT-1).
+- Test `tests/Unit/WeekTargetSuggesterTest.php` (3 test, không cần DB).
+- Tài liệu cùng commit: `docs/03-data-model/DATA-MODEL.md` (3 dòng mới ở
+  bảng `user_profiles`) + file này.
+- Chưa làm trong Task 1 (cố ý): API Hồ sơ, form Hồ sơ, và tỉ lệ điều chỉnh
+  kcal theo mục tiêu.
+
+### Chưa chốt — cần chủ dự án quyết trước khi suy kcal từ mục tiêu
+Tỉ lệ điều chỉnh kcal theo `goal` (giảm bao nhiêu %, tăng bao nhiêu %)
+chưa nằm trong 5 quyết định. Task 1 không tự áp -20% hay bất kỳ mức nào:
+`goal` chỉ được lưu, chưa dùng để suy `target_kcal_per_day`. Cần chốt tỉ lệ
+này trước Task suy kcal từ TDEE + mục tiêu (thuộc Phần 2.1, sau form Hồ sơ).
+
+## Các phần tiếp theo (chưa bắt đầu, mỗi task chờ duyệt riêng)
+- Phần 2.1, Task 2: API Hồ sơ cho mục tiêu tuần.
+- Phần 2.1, Task 3: form Hồ sơ cho mục tiêu tuần.
+- Phần 2.2: mô hình tuần (`week_plans` / `week_plan_days` / `week_plan_meals`,
+  snapshot mục tiêu).
+- Phần 2.3: week builder + validator (chỉ món đủ protein + kcal).
+- Phần 2.4: trang `/tuan-an`.
+- Phần 2.5: thao tác tuần (mỗi thao tác một task).
+- Phần 2.6: danh sách đi chợ theo gram, không gói, không giá.

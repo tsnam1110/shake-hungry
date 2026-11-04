@@ -19,6 +19,8 @@ class UserProfile extends Model
             'tray_dish_count' => 'integer',
             'tray_binh_dan' => 'boolean',
             'show_tcm' => 'boolean',
+            'target_protein_g_per_day' => 'integer',
+            'target_kcal_per_day' => 'integer',
         ];
     }
 }

@@ -481,6 +481,9 @@ liệu có nhãn nào thì **không có dòng** ở bảng này.
 | `excluded_ingredients` | json | dị ứng / không ăn được — **lọc cứng** ở engine gợi ý |
 | `preferred_region_id` | bigint null | vùng miền yêu thích — điền sẵn bộ lọc vùng khi lắc (UI-011, migration 2026_10_31_100005) |
 | `target_kcal_per_meal` | smallint unsigned null | kcal mục tiêu mỗi bữa — điền sẵn khi lắc, là đầu vào mềm của engine (UI-011) |
+| `goal` | varchar(16) null | mục tiêu tuần ăn: `giam` / `duy-tri` / `tang` — chỉ lưu ở Task 1, chưa dùng để suy kcal vì tỉ lệ điều chỉnh kcal theo mục tiêu chưa được chốt (Giai đoạn 2, Phần 2.1, migration 2026_11_04_100001) |
+| `target_protein_g_per_day` | smallint unsigned null | protein mục tiêu mỗi ngày do người dùng nhập/ghi đè; gợi ý tính bằng `App\Profile\WeekTargetSuggester` (1 g/lb tại BMI 25, giới hạn 35% kcal), không ghi đè tự động |
+| `target_kcal_per_day` | smallint unsigned null | kcal mục tiêu mỗi ngày do người dùng nhập/ghi đè; null = chưa đặt |
 | `shake_mode` | varchar(16) null | chế độ lắc mặc định: `eat_out` (1 món) / `home` (mâm cơm) — điền sẵn khi lắc (REC-003, migration 2026_10_31_100007) |
 | `tray_dish_count` | tinyint unsigned null | số món trong mâm cơm 1–4, không tính cơm; null = mặc định 3 (REC-003) |
 | `tray_binh_dan` | boolean | mâm cơm chỉ gồm món bình dân dễ nấu/nguyên liệu phổ biến (REC-004, migration 2026_10_31_100008) |
