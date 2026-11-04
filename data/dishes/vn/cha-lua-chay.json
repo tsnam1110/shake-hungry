@@ -144,10 +144,10 @@
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
-  "needs_review": false,
+  "needs_review": true,
   "reviewed_by": "tsnam1110@gmail.com",
   "reviewed_at": "2026-10-31",
-  "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này).",
+  "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này). [Soát lại E-batch lô 8, 2026-11-05: biến thể vẫn chưa chốt và có mâu thuẫn nội bộ — các họ ngoài chia làm đơn nền tàu hũ ky (BHFood: 200 g khô hoặc 1 kg tươi), đơn nền đậu phụ + mộc nhĩ (inoxquanghuy: 5 miếng đậu), và hỗn hợp đậu phụ + tàu hũ ky (memart liệt kê nhưng không cho tỉ lệ); biến thể của file (đậu phụ + tàu hũ ky + bột năng, tỉ lệ 60:60) chỉ có BlueStone ủng hộ với tỉ lệ NGƯỢC (đậu:tàu ~95:36/150 g); nghiêm trọng hơn, ghi chú văn hoá của chính file mô tả biến thể THỨ TƯ (đậu xanh giã nhuyễn + nấm hương + lá mơ) mà danh sách không có đậu xanh lẫn lá mơ — giữ cờ chưa duyệt, chờ chốt biến thể chuẩn và viết lại ghi chú văn hoá cho khớp.]",
   "tags": [
     "loai:mon-chinh"
   ]
