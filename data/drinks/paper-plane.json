@@ -83,11 +83,11 @@
     {
       "label": "Năng lượng",
       "unit": "kcal/100 ml chất lỏng",
-      "value_min": 168,
+      "value_min": 155,
       "value_max": 181,
       "value": null,
-      "per_serving": "≈202–217 kcal/ly (120 ml chất lỏng)",
-      "basis": "SOÁT LẠI 2026-11-04 (đa nguồn): bourbon 30 ml × 2,21 = 66,3 kcal; Amaro Nonino 30 ml × 3,13 = 93,9 kcal (CHƯA kiểm chứng, giữ số cũ, ghi rõ); Aperol 30 ml khoảng 35,1–50,1 kcal (nguồn mâu thuẫn 117–167 kcal/100 ml, xem aperol-spritz); nước chanh 30 ml × 0,22 = 6,6 kcal. Tổng mới 201,9–216,9 kcal / 120 ml = 168–181 kcal/100 ml (cũ 209 nằm trong khoảng nhưng không được ghi là đã xác nhận). ABV 21,5% không đổi. Đây vẫn chưa phải đầu ra engine.",
+      "per_serving": "≈186–217 kcal/ly (120 ml chất lỏng)",
+      "basis": "SOÁT LẠI LẦN 2 2026-11-04 (đa nguồn): bourbon 30 ml × 2,21 = 66,3 kcal; Amaro Nonino 30 ml khoảng 78,0–93,9 kcal — MỞ RỘNG khoảng so với lần soát 1: ABV 35% đã xác nhận theo hãng Nonino, nhưng đường của Nonino chưa có nhãn riêng; amaro generic (SnapCalorie) là 267 kcal, 16,7 g đường/100 ml, tức 80,1 kcal cho 30 ml, trong khi số cũ tự suy 313 kcal/100 ml cho 93,9 kcal — Nonino được mô tả là ít ngọt, nên giữ khoảng 267–313 kcal/100 ml thay vì một điểm; Aperol 30 ml khoảng 35,1–50,1 kcal (nguồn mâu thuẫn 117–167 kcal/100 ml); nước chanh 30 ml × 0,22 = 6,6 kcal. Tổng mới 186,0–216,9 kcal / 120 ml = 155–181 kcal/100 ml (lần 1 là 202–217, đầu dưới hạ xuống vì Amaro chưa chắc). ABV 21,5% không đổi. Đây vẫn chưa phải đầu ra engine.",
       "confidence": "low",
       "source_ref": "Bảng kcal/ml cocktail trong hồ sơ triển khai (ethanol + đường, xem basis)"
     },
@@ -109,7 +109,7 @@
       "value_min": null,
       "value_max": null,
       "per_serving": "0 g/ly (theo file, tổng đường thực khoảng 16 g)",
-      "basis": "sugar_added_g trong file = 0 g; tổng đường thực sau soát lại khoảng 14,3–17,4 g (tính từ rượu mùi đã kiểm chứng + nước ép, xem basis năng lượng).",
+      "basis": "sugar_added_g trong file = 0 g; tổng đường thực sau soát lại khoảng 14,3–17,4 g (xem basis năng lượng).",
       "confidence": "low",
       "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
     }
