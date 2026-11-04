@@ -140,10 +140,10 @@
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
-  "needs_review": false,
+  "needs_review": true,
   "reviewed_by": "tsnam1110@gmail.com",
   "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau). [Soát lại E-batch lô 8, 2026-11-05: sắc thái mới so với ghi chú LV2-011 — bản cháo trắng thuần CÓ được mô tả dưới tên 'cháo cá trắm truyền thống' (memart: gạo tẻ rang + thịt cá trắm luộc + hành + thì là, khớp hồ sơ file), nhưng nguồn này chỉ cho số theo MẺ (1 con cá ~1 kg + 1 chén gạo tẻ) mà không ghi số tô nên không quy đổi được ra 120 g cá + 55 g gạo/tô của file; các nguồn có định lượng đầy đủ (FPT, ĐMX) đều là biến thể đậu xanh (gạo 300 g, cá 500 g, đậu xanh 150 g) không ép được vào file; tổng các dòng 199,5 g so với tô 450 g thiếu nước cháo — giữ cờ chưa duyệt, cần thêm 1 họ độc lập có định lượng theo tô cho bản truyền thống.]",
   "tags": [
     "loai:chao-sup"
   ]
