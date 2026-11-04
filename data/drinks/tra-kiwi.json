@@ -13,12 +13,14 @@
     {
       "name": "trà xanh/đen",
       "quantity": 150,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "tra-den"
     },
     {
       "name": "kiwi",
       "quantity": 75,
-      "unit": "g"
+      "unit": "g",
+      "ingredient_slug": "kiwi"
     },
     {
       "name": "siro kiwi",
@@ -28,7 +30,8 @@
     {
       "name": "siro đường",
       "quantity": 15,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "siro-duong"
     }
   ],
   "recipe_steps": [
@@ -59,10 +62,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn trà đen + kiwi + siro đường, siro kiwi chưa có hồ sơ, mẫu số 250 ml đồ uống — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -71,5 +74,32 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 250,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml đồ uống",
+      "value_min": 42,
+      "value_max": 46,
+      "value": null,
+      "per_serving": "≈106–116 kcal/ly (250 ml đồ uống gồm kiwi, chưa tính đá tan)",
+      "basis": "Cộng tay: trà 150 ml × 1 = 1,5 kcal; kiwi dầm 75 g × 58 / 100 = 43,5 kcal (kiwi dầm uống cả thịt); siro kiwi 10 ml × ~1,25 × 200–280 / 100 = 25,0–35,0 kcal (chưa có hồ sơ siro kiwi riêng); siro đường 15 ml × 1,24 × 194 / 100 = 36,1 kcal. Tổng 106,1–116,1 kcal / 250 ml đồ uống (150 + 75 + 10 + 15) = 42–46 kcal/100 ml. Đây chưa phải đầu ra engine.",
+      "confidence": "low",
+      "source_ref": "data/ingredients/tra-den.json, kiwi.json, siro-duong.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 15,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "15 g/ly (theo file, chưa tính đường trong kiwi và siro kiwi)",
+      "basis": "sugar_added_g trong file = 15 g; kiểm chéo: siro đường 9,3 g + siro kiwi đường khoảng 7,5 g = 16,8 g, gần 15 g; đường tự nhiên trong kiwi khoảng 6,8 g không tính vào 'đường thêm'.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Đã gắn 3/4 dòng trong ly: trà đen, kiwi và siro đường đều không có tag dị ứng trong hồ sơ; siro kiwi chưa gắn hồ sơ nên không kết luận đầy đủ.",
+  "tcm_note": "Không kết luận tính vị: trà đen và kiwi đều không có nhãn tính vị trong hồ sơ."
 }
