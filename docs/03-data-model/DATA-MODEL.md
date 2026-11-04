@@ -493,6 +493,14 @@ liệu có nhãn nào thì **không có dòng** ở bảng này.
 > chọn `unspecified`, dùng công thức Katch–McArdle nếu có % mỡ, nếu không thì lấy trung bình hai hệ
 > số và **hạ `confidence` xuống `low`**, đồng thời nói rõ trên giao diện.
 
+### `week_plans` / `week_plan_days` / `week_plan_meals` (Tuần ăn, Giai đoạn 2, Phần 2.2, migration 2026_11_04_210000)
+
+| Bảng | Cột chính | Ghi chú |
+|---|---|---|
+| `week_plans` | `user_id`, `start_date`, `end_date` (= start + 6 ngày), `goal` / `target_protein_g_per_day` / `target_kcal_per_day` (snapshot từ hồ sơ lúc tạo tuần, null = chưa đặt), `status` (`active` / `archived`) | unique (`user_id`, `start_date`); đổi hồ sơ sau đó không sửa ngược tuần cũ |
+| `week_plan_days` | `week_plan_id`, `date`, `protein_g`, `kcal_min`, `kcal_max`, `status` (`dat` / `thieu` / `chua-du-du-lieu`) | unique (`week_plan_id`, `date`); tổng là ảnh chụp, validator Phần 2.3 tính lại từ món để kiểm chứng |
+| `week_plan_meals` | `week_plan_day_id`, `dish_id`, `slot` (`sang` / `trua` / `chieu` / `toi` / `an-vat`), `servings` (mặc định 1), `is_eat_out`, `replaced_from_dish_id` (null nếu do builder chọn) | unique (`week_plan_day_id`, `slot`) — đúng một món mỗi bữa; `dish_id` RESTRICT để không xoá món đang nằm trong tuần |
+
 ### `combinations` (FOOD-COMBINE-001)
 
 | Cột | Kiểu | Ghi chú |

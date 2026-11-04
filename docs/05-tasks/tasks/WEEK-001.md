@@ -106,9 +106,21 @@ này trước Task suy kcal từ TDEE + mục tiêu (thuộc Phần 2.1, sau for
   chứng, không còn profile mồ côi. Chưa làm trong Task 3 (cố ý):
   trang `/tuan-an`, mô hình tuần, builder/validator.
 
-## Các phần tiếp theo (chưa bắt đầu, mỗi task chờ duyệt riêng)
-- Phần 2.2: mô hình tuần (`week_plans` / `week_plan_days` / `week_plan_meals`,
-  snapshot mục tiêu).
+## Phần 2.2 — Mô hình tuần
+
+### Task 1 — ĐÃ XONG (2026-11-04, theo lệnh duyệt toàn bộ lộ trình, không hỏi duyệt giữa chừng)
+- Migration `2026_11_04_210000_create_week_plans_tables.php`: `week_plans`
+  (user, start/end 7 ngày, snapshot goal/protein/kcal, status active/archived,
+  unique user+start), `week_plan_days` (ngày, protein, khoảng kcal, trạng thái
+  dat/thieu/chua-du-du-lieu, unique plan+ngày), `week_plan_meals` (ngày, món,
+  bữa, khẩu phần mặc định 1, ăn ngoài, món gốc khi đổi bữa, unique ngày+bữa).
+- Model `WeekPlan` / `WeekPlanDay` / `WeekPlanMeal` + quan hệ.
+- Tài liệu cùng commit: DATA-MODEL §5 (3 bảng mới) + file này.
+- Test `tests/Feature/WeekPlanModelTest.php`: snapshot không bị đổi hồ sơ
+  sau đó sửa ngược, quan hệ ngày/bữa đúng.
+- Chưa làm trong Phần 2.2 (cố ý): builder, validator, API, trang tuần ăn.
+
+## Các phần tiếp theo (theo lệnh duyệt toàn bộ lộ trình 2026-11-04, làm tiếp không hỏi duyệt giữa chừng)
 - Phần 2.3: week builder + validator (chỉ món đủ protein + kcal).
 - Phần 2.4: trang `/tuan-an`.
 - Phần 2.5: thao tác tuần (mỗi thao tác một task).
