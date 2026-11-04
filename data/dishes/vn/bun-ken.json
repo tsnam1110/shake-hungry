@@ -148,10 +148,10 @@
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",
-  "needs_review": false,
+  "needs_review": true,
   "reviewed_by": "tsnam1110@gmail.com",
   "reviewed_at": "2026-10-31",
-  "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này).",
+  "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này). [Soát lại E-batch lô 7, 2026-11-05: file dùng cá thu 80 g nhưng KHÔNG họ nào dùng cá thu — bản Phú Quốc dùng cá sòng (BHX/Tripi: 5 con cá sòng, cốt dừa 600 ml, giá 300 g cho 4 người) hoặc các cá biển khác (nhồng, ngân, nhàu), bản đất liền dùng cá lóc; file thiếu đu đủ xanh + bắp chuối mà nhiều họ đều có, thiếu bột cà ri; cốt dừa các họ lệch lớn (Phú Quốc 150 ml/người, đất liền 1 chén cốt + 3 tô dão) nên 50 g của file chưa có căn cứ — giữ cờ chưa duyệt, chờ chốt biến thể (Phú Quốc hay đất liền) và tạo hồ sơ cá định danh.]",
   "tags": [
     "loai:bun-pho-mi"
   ]
