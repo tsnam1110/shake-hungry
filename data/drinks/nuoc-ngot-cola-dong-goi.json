@@ -41,10 +41,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04, làm cẩn thận theo QT-9: khoảng theo loại đóng gói, không lấy số một hãng — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §6.",
   "media": [
     {
@@ -53,5 +53,42 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml",
+      "value_min": 42,
+      "value_max": 42,
+      "value": null,
+      "per_serving": "≈139 kcal/lon 330 ml",
+      "basis": "Nước ngọt vị cola khoảng 42 kcal/100 ml (chuẩn cola có đường: đường 10,6 g/100 ml × 4 = 42,4 kcal, làm tròn 42). Đây là số theo loại cola có đường, không phải số một hãng — cola không đường (diet/zero) thì 0–2 kcal/100 ml, ghi rõ: số 42 này CHỈ áp dụng cho cola có đường.",
+      "confidence": "medium",
+      "source_ref": "Nhãn đóng gói (khoảng theo loại, không phải một nhãn cụ thể)"
+    },
+    {
+      "label": "Đường",
+      "unit": "g/lon",
+      "value_min": 35,
+      "value_max": 35,
+      "value": null,
+      "per_serving": "≈35 g/lon 330 ml",
+      "basis": "Đường trong cola có đường khoảng 10,6 g/100 ml, nhân lon 330 ml = 35 g/lon.",
+      "confidence": "low",
+      "source_ref": "Nhãn đóng gói (khoảng theo loại)"
+    },
+    {
+      "label": "Caffeine",
+      "unit": "mg/lon",
+      "value_min": 30,
+      "value_max": 35,
+      "value": null,
+      "per_serving": "≈30–35 mg/lon 330 ml",
+      "basis": "Caffeine trong cola khoảng 10 mg/100 ml, nhân lon 330 ml = 33 mg, khoảng 30–35 mg/lon theo hãng. Đây là khoảng theo loại, tin cậy trung bình.",
+      "confidence": "medium",
+      "source_ref": "Nhãn cola (khoảng theo loại)"
+    }
+  ],
+  "allergen_note": "Không kết luận đầy đủ: mục đóng gói này không có dòng nguyên liệu trong file để gắn tag; trang chi tiết phải hiện 'chưa đủ dữ kiện' cho dị ứng, không hiện 'không có dị ứng'.",
+  "tcm_note": "Không kết luận tính vị: mục đóng gói này chưa gắn hồ sơ nguyên liệu nên không kết luận ở tầng món."
 }
