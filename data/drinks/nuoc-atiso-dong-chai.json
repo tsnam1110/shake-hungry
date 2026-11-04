@@ -37,10 +37,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04, làm cẩn thận theo QT-9: khoảng theo loại đóng gói, không lấy số một hãng — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §6.",
   "media": [
     {
@@ -49,5 +49,31 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml",
+      "value_min": 25,
+      "value_max": 40,
+      "value": null,
+      "per_serving": "≈83–132 kcal/chai 330 ml",
+      "basis": "Nước atiso đóng chai là trà atiso + đường: đường khoảng 6–9 g/100 ml × 4 = 24–36 kcal, cộng atiso 1–3 kcal/100 ml, tổng khoảng 25–40 kcal/100 ml. Đây là khoảng theo loại, không phải số một hãng — atiso đóng chai các hãng VN có độ ngọt khác nhau. Không dùng engine (đồ đóng gói không qua engine).",
+      "confidence": "low",
+      "source_ref": "Nhãn đóng gói (khoảng theo loại, không phải một nhãn cụ thể)"
+    },
+    {
+      "label": "Đường",
+      "unit": "g/lon",
+      "value_min": 20,
+      "value_max": 30,
+      "value": null,
+      "per_serving": "≈20–30 g/chai 330 ml",
+      "basis": "Đường trong nước atiso đóng chai khoảng 6–9 g/100 ml, nhân chai 330 ml = 19,8–29,7 g, làm tròn 20–30 g/chai.",
+      "confidence": "low",
+      "source_ref": "Nhãn đóng gói (khoảng theo loại)"
+    }
+  ],
+  "allergen_note": "Không kết luận đầy đủ: mục đóng gói này không có dòng nguyên liệu trong file để gắn tag; trang chi tiết phải hiện 'chưa đủ dữ kiện' cho dị ứng, không hiện 'không có dị ứng'.",
+  "tcm_note": "Không kết luận tính vị: mục đóng gói này chưa gắn hồ sơ nguyên liệu nên không kết luận ở tầng món."
 }
