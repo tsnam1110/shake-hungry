@@ -13,12 +13,14 @@
     {
       "name": "cà phê phin hoặc espresso",
       "quantity": 50,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "ca-phe-den"
     },
     {
       "name": "sữa dừa/kem dừa",
       "quantity": 60,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "nuoc-cot-dua"
     },
     {
       "name": "sữa đặc",
@@ -35,7 +37,8 @@
     {
       "name": "đá",
       "quantity": 150,
-      "unit": "g"
+      "unit": "g",
+      "ingredient_slug": "nuoc-loc"
     }
   ],
   "recipe_steps": [
@@ -66,10 +69,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn đủ 5/5 (đá gắn nuoc-loc vì xay vào ly), mẫu số 310 ml đồ uống xay, caffeine mg tầm soát 100–200 mg/ly — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -78,5 +81,46 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 310,
+  "caffeine_mg_min": 100,
+  "caffeine_mg_max": 200,
+  "caffeine_mg_note": "KHOẢNG TẦM SOÁT, CHƯA ĐO CHO LY NÀY: cà phê 50 ml là một phần phin hoặc một shot espresso kép — phin VN 100–200 mg/ly và espresso 50 ml suy ra khoảng 106 mg/ly đều nằm trong khoảng 100–200 mg/ly, nên khoảng này dùng được cho cả hai cách pha trong file, không phải số đo.",
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml đồ uống",
+      "value_min": 71,
+      "value_max": 97,
+      "value": null,
+      "per_serving": "≈220–300 kcal/ly (310 ml đồ uống xay gồm đá, không tính đá viên rời)",
+      "basis": "Cộng tay với khoảng QT-5 của nước cốt dừa (197–330 kcal/100 g): cà phê 50 ml × 1 = 0,5 kcal; nước cốt dừa 60 ml × 0,97 × 197–330 / 100 = 114,6–192,1 kcal; sữa đặc 20 ml × 1,29 × 334–341 = 86,2–88,0 kcal; sữa tươi 30 ml × 1,031 × 60–61 = 18,6–18,9 kcal; đá 0 kcal. Tổng 219,9–299,5 kcal / 310 ml đồ uống xay = 71–97 kcal/100 ml. Đá ở đây được xay vào ly nên tính vào mẫu số, khác đá viên rời trong ly thường. Đây chưa phải đầu ra engine; engine dùng điểm 230 cho cốt dừa nên sẽ cho khoảng hẹp hơn.",
+      "confidence": "low",
+      "source_ref": "data/ingredients/ca-phe-den.json, nuoc-cot-dua.json, sua-dac.json, sua-tuoi.json, nuoc-loc.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 20,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "20 g/ly",
+      "basis": "sugar_added_g trong file catalogue = 20 g; kiểm chéo: sữa đặc 25,8 g, đường khoảng 14 g, cộng đường trong nước cốt dừa và sữa tươi, tổng khoảng 20 g trong sai số quán.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    },
+    {
+      "label": "Caffeine",
+      "unit": "mg/ly",
+      "value_min": 100,
+      "value_max": 200,
+      "value": null,
+      "per_serving": "100–200 mg/ly",
+      "basis": "Khoảng tầm soát cho cả phin lẫn espresso, xem caffeine_mg_note; không phải số đo.",
+      "confidence": "low",
+      "source_ref": "Nguồn thứ cấp về phin Robusta và hồ sơ espresso (xem caffeine_mg_note)"
+    }
+  ],
+  "allergen_note": "Đã gắn đủ 5/5 dòng trong ly: sữa đặc và sữa tươi có tag allergen:sua — dị ứng Sữa đã xác nhận. Cà phê, nước cốt dừa và đá không có tag dị ứng trong hồ sơ; người dị ứng dừa cần tự kiểm tra vì dừa không nằm trong tag dị ứng của hồ sơ này.",
+  "tcm_note": "Không kết luận tính vị chung cho cả ly: cà phê đen bình/khổ/Hỏa (thấp, 50 g), nước cốt dừa bình/cam/Thổ (trung bình, 58,2 g), sữa tươi bình/cam/Thổ (trung bình, 30,9 g) — mỗi nhãn dưới 30% tổng khối lượng ~310 g, kể cả gộp hai nhãn Thổ cũng chỉ 29%, dưới ngưỡng 30% của TCM-000."
 }
