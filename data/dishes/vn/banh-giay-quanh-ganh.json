@@ -88,10 +88,10 @@
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
-  "needs_review": false,
+  "needs_review": true,
   "reviewed_by": "tsnam1110@gmail.com",
   "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau). E-batch1 lô 2 2026-11-04: gắn cờ lại chưa duyệt — định danh khớp (xôi nếp giã mịn nặn cặp 2 cái, kẹp giò lụa, Quán Gánh), nhưng khẩu phần mâu thuẫn với nguyên liệu: 100 g gạo nếp khô đồ thành xôi đã nặng khoảng 170–190 g, cộng giò 40 g thì một cặp phải nặng trên 200 g, không phải 120 g như serving_desc ghi (ngay cả khi tính bánh nhỏ 60 g/cái theo mô tả đường kính 5–7 cm thì cặp + giò vẫn khoảng 160 g); biến thể Quán Gánh cũng chưa có công thức định lượng công khai theo level_note, các nguồn mở được là cách pha bột nếp hiện đại, không phải cách giã xôi truyền thống; chưa sửa số, chưa gọi là đã xác minh.",
   "tags": [
     "dac-san:ha-noi",
     "loai:banh"
