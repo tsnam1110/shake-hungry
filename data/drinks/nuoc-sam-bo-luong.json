@@ -39,7 +39,8 @@
     {
       "name": "nước",
       "quantity": 300,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "nuoc-loc"
     }
   ],
   "recipe_steps": [
@@ -69,10 +70,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn đường phèn + nước, 4 nguyên liệu lượng None để khoảng rộng 77–327, liquid 300 ml — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -81,5 +82,32 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 300,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml chất lỏng",
+      "value_min": 26,
+      "value_max": 109,
+      "value": null,
+      "per_serving": "≈77–327 kcal/ly (300 ml chất lỏng, khoảng rộng do không ghi lượng nguyên liệu)",
+      "basis": "Cộng tay với khoảng rộng cố ý: đường phèn 20 g × 387 / 100 = 77,4 kcal là ĐẦU DƯỚI chắc chắn (chỉ đường + nước); các nguyên liệu hạt sen, bo bo, long nhãn khô, táo đỏ đều lượng None — nếu chỉ uống nước và ăn ít phần đặc, thêm khoảng 0–50 kcal chiết xuất; nếu ăn hết phần đặc trong ly (giả định khoảng 50 g hạt sen nấu + 30 g bo bo nấu + 20 g long nhãn khô + 20 g táo đỏ, mỗi loại khoảng 100–280 kcal/100 g, tổng khoảng 150–250 kcal), tổng lên tới 227–327 kcal. Khoảng công bố 77–327 kcal / 300 ml = 26–109 kcal/100 ml là khoảng rộng do không ghi lượng, KHÔNG PHẢI khoảng của một công thức cố định — cần chủ dự án chốt lượng khẩu phần mới thu hẹp được. Đây chưa phải đầu ra engine.",
+      "confidence": "low",
+      "source_ref": "data/ingredients/duong-phen.json, nuoc-loc.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 20,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "20 g/ly (theo file, chưa tính đường trong long nhãn/táo đỏ)",
+      "basis": "sugar_added_g trong file = 20 g, khớp đường phèn trong công thức; đường trong long nhãn khô và táo đỏ (khoảng 40–60 g đường/100 g khô) không tính vào 'đường thêm' theo cách ghi của file, nhưng tổng đường thực sẽ cao hơn nhiều nếu ăn phần đặc.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Đã gắn 2/6 dòng trong ly: đường phèn và nước không có tag dị ứng trong hồ sơ; hạt sen, bo bo, long nhãn và táo đỏ đều chưa gắn hồ sơ nên không kết luận đầy đủ — lưu ý: bo bo là lúa mạch, có thể chứa gluten, trang chi tiết phải hiện 'chưa đủ dữ kiện', không được hiện 'không có dị ứng'.",
+  "tcm_note": "Không kết luận tính vị: các dòng đều không có nhãn tính vị trong hồ sơ."
 }
