@@ -19,12 +19,14 @@
     {
       "name": "bọt trứng muối",
       "quantity": 40,
-      "unit": "g"
+      "unit": "g",
+      "ingredient_slug": "bot-trung-muoi"
     },
     {
       "name": "siro đường lỏng",
       "quantity": 20,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "siro-duong"
     }
   ],
   "recipe_steps": [
@@ -55,10 +57,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": true,
   "uncertain_note": "Cà phê trứng truyền thống Hà Nội làm bằng lòng đỏ trứng vịt muối thật (khác với bột/bọt trứng muối thương mại) không tìm được công thức chuẩn đã xác minh trong đợt này. KHÔNG đưa công thức 'cà phê trứng muối truyền thống' vào catalogue cho tới khi tìm được nguồn đã công bố.",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: hồ sơ bọt trứng muối mới suy ra từ mẻ lớn, gắn đủ 3/3, liquid 130 ml, caffeine mg tầm soát 100–200 mg/ly — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -67,5 +69,46 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 130,
+  "caffeine_mg_min": 100,
+  "caffeine_mg_max": 200,
+  "caffeine_mg_note": "KHOẢNG TẦM SOÁT, CHƯA ĐO CHO LY NÀY: bước làm ghi phin 20 g → ~70 ml chiết xuất, tức một liều phin đầy, khoảng 100–200 mg/ly theo nguồn thứ cấp về phin VN (CoffeeTalkies phin 100–200 mg; DoanhNhanPlus 120–150 mg; Message Coffee 150–200 mg).",
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml đồ uống",
+      "value_min": 132,
+      "value_max": 138,
+      "value": null,
+      "per_serving": "≈171–179 kcal/ly (130 ml đồ uống gồm bọt, chưa tính đá tan)",
+      "basis": "Cộng tay: cà phê 70 ml × 1 = 0,7 kcal; bọt trứng muối 40 g × 306–325 / 100 = 122,4–130,0 kcal (hồ sơ bot-trung-muoi suy ra từ mẻ lớn); siro đường 20 ml × 1,24 × 194 / 100 = 48,1 kcal. Tổng 171,2–179,2 kcal / 130 ml đồ uống = 132–138 kcal/100 ml. Đây chưa phải đầu ra engine.",
+      "confidence": "low",
+      "source_ref": "data/ingredients/ca-phe-den.json, bot-trung-muoi.json, siro-duong.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 15,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "15 g/ly",
+      "basis": "sugar_added_g trong file catalogue = 15 g; kiểm chéo: siro 24,8 g, đường 12,4 g, cộng đường trong bọt, tổng khoảng 15 g trong sai số quán.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    },
+    {
+      "label": "Caffeine",
+      "unit": "mg/ly",
+      "value_min": 100,
+      "value_max": 200,
+      "value": null,
+      "per_serving": "100–200 mg/ly",
+      "basis": "Khoảng tầm soát cho liều phin đầy, xem caffeine_mg_note; không phải số đo.",
+      "confidence": "low",
+      "source_ref": "Nguồn thứ cấp về phin Robusta (xem caffeine_mg_note)"
+    }
+  ],
+  "allergen_note": "Đã gắn đủ 3/3 dòng trong ly: bọt trứng muối có tag allergen:sua và allergen:trung — dị ứng Sữa và Trứng đã xác nhận. Cà phê và siro không có tag dị ứng trong hồ sơ.",
+  "tcm_note": "Không kết luận tính vị chung cho cả ly: chỉ cà phê đen có nhãn bình/khổ/Hỏa (thấp, 70 g) trên tổng ~135 g (52%, trong khoảng 30–60% của TCM-000 nên chỉ hiển thị ở mức thấp); bọt trứng muối và siro không có nhãn tính vị trong hồ sơ."
 }
