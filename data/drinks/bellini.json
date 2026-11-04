@@ -58,7 +58,7 @@
   "needs_review": true,
   "reviewed_by": null,
   "reviewed_at": null,
-  "review_note": "SOÁT LẠI 2026-11-04 theo lệnh của Benjamin (không dùng bảng tự suy cũ): tính lại từ thành phần đã kiểm chứng đa nguồn, xem drink-verification-liqueur.md — chưa qua duyệt lại sau khi sửa.",
+  "review_note": "KIỂM THỬ LẠI ĐỢT 2 (2026-11-04) theo lệnh của Benjamin: tái kiểm từng thành phần bằng nhãn hãng/nguồn độc lập — vẫn giữ cờ chưa duyệt, chờ Benjamin duyệt riêng.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5.",
   "media": [
     {
@@ -73,11 +73,11 @@
     {
       "label": "Năng lượng",
       "unit": "kcal/100 ml chất lỏng",
-      "value_min": 59,
-      "value_max": 61,
+      "value_min": 60,
+      "value_max": 62,
       "value": null,
-      "per_serving": "≈89–92 kcal/ly (150 ml chất lỏng)",
-      "basis": "SOÁT LẠI 2026-11-04 (đa nguồn): Prosecco 100 ml khoảng 66,0–69,0 kcal — XÁC NHẬN gần như không đổi (cũ 65,0): nhãn Verrocchio Prosecco DOC Brut 69 kcal, 1,35 g đường/100 ml, 11%; Tesco Plaza Centro 66 kcal, 1,1 g đường/100 ml, 10,5%; purée đào trắng 50 ml × 0,45 = 22,5 kcal (CHƯA kiểm chứng, giữ số cũ). Tổng mới 88,5–91,5 kcal / 150 ml = 59–61 kcal/100 ml (cũ 88, thấp hơn 1–4 kcal). ABV 7,3% không đổi. Đây vẫn chưa phải đầu ra engine.",
+      "per_serving": "≈90–93 kcal/ly (150 ml chất lỏng)",
+      "basis": "KIỂM THỬ LẠI ĐỢT 2 (2026-11-04, đa nguồn): Prosecco 100 ml khoảng 66,0–69,0 kcal (nhãn Verrocchio 69, Tesco Plaza Centro 66); purée đào trắng 50 ml × 0,47 = 23,5 kcal — SỬA nhẹ so với cũ (0,45/ml): Boiron purée đào trắng 100% qua nhiều bảng kỹ thuật 47 kcal, đường 9,8 g/100 g (bản đào vàng 44 kcal là sản phẩm khác, không áp dụng). Tổng mới 89,5–92,5 kcal / 150 ml = 60–62 kcal/100 ml (cũ 89–92, thấp hơn 1 kcal). ABV 7,3% không đổi. Đây vẫn chưa phải đầu ra engine.",
       "confidence": "low",
       "source_ref": "Bảng kcal/ml cocktail trong hồ sơ triển khai (ethanol + đường, xem basis)"
     },
