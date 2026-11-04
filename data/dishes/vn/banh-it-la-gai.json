@@ -108,10 +108,10 @@
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
-  "needs_review": false,
+  "needs_review": true,
   "reviewed_by": "tsnam1110@gmail.com",
   "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau). E-batch1 lô 3 2026-11-04: gắn cờ lại chưa duyệt — thành phần khớp bản chuẩn (vỏ bột nếp + lá gai, nhân đậu xanh + dừa + đường, vừng), nhưng lá gai 10 g/phần 3 cái lệch xa mẻ tham chiếu (lá gai tươi 200–300 g cho mẻ bột nếp 250–500 g, đậu 200 g, dừa 100–150 g — quy đổi ra mỗi phần 3 cái phải hàng chục gram lá, chưa rõ 10 g của file là lá tươi, lá khô hay bột lá đã xử lý); hồ sơ lá gai trong kho đang null kcal nên engine chưa tính trọn được món; định lượng còn lại chưa có nguồn xác nhận đúng số; chưa sửa số, chưa gọi là đã xác minh.",
   "tags": [
     "loai:banh"
   ]
