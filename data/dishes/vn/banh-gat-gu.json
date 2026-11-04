@@ -97,10 +97,10 @@
   "status": "draft",
   "source": "llm_suggested",
   "confidence": "unknown",
-  "needs_review": false,
+  "needs_review": true,
   "reviewed_by": "tsnam1110@gmail.com",
   "reviewed_at": "2026-10-31",
-  "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này).",
+  "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này). E-batch1 lô 2 2026-11-04: gắn cờ lại chưa duyệt — định danh khớp (bánh bột gạo tráng mỏng cuộn dài không nhân, Tiên Yên), nhưng nước chấm trong file là mỡ lợn + hành lá, khác nước chấm chuẩn Tiên Yên mà các nguồn đều nêu (nước mắm chưng mỡ gà + hành phi, có nơi thêm thịt băm); định lượng theo đĩa (bột gạo 80 g, nước mắm 12 g, mỡ 5 g) chưa có nguồn định lượng nào xác nhận đúng số; chưa sửa số, chưa gọi là đã xác minh.",
   "tags": [
     "loai:banh"
   ]
