@@ -39,10 +39,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04, làm cẩn thận theo QT-9: khoảng không đường, ghi rõ bản có đường khác, caffeine tầm soát theo nồng độ — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §6.",
   "media": [
     {
@@ -51,5 +51,31 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml",
+      "value_min": 2,
+      "value_max": 5,
+      "value": null,
+      "per_serving": "≈7–17 kcal/chai 330 ml (bản không đường)",
+      "basis": "Cold brew đóng chai không đường là cà phê ngâm lạnh pha loãng, kcal tương tự cà phê đen: khoảng 2–5 kcal/100 ml (cà phê đen 1 kcal/100 g cộng chất tan). File không ghi có đường hay không — nếu là bản có đường thì kcal khoảng 20–35 kcal/100 ml như cà phê đen có đường, ghi rõ: khoảng 2–5 này CHỈ áp dụng cho bản không đường, bản có đường phải đọc nhãn. Không dùng engine (đồ đóng gói không qua engine).",
+      "confidence": "low",
+      "source_ref": "Hồ sơ ca-phe-den (FDC 171890, 1 kcal/100 g); cold brew pha tay nhóm cà phê (2,3–2,7 kcal/ly 250 ml)"
+    },
+    {
+      "label": "Caffeine",
+      "unit": "mg/chai",
+      "value_min": 165,
+      "value_max": 230,
+      "value": null,
+      "per_serving": "≈165–230 mg/chai 330 ml (tầm soát)",
+      "basis": "Caffeine tầm soát: cold brew ngâm lạnh chiết caffeine cao hơn cà phê nóng pha loãng, nồng độ RTD khoảng 50–70 mg/100 ml, nhân chai 330 ml = 165–231 mg, làm tròn 165–230 mg/chai. Đây là khoảng tầm soát, tin cậy thấp — chai 250 ml thì khoảng 125–175 mg, chai 500 ml thì 250–350 mg, ghi rõ. Không dùng số cold brew pha tay nhóm cà phê (tầm soát 100–150 mg/ly 250 ml) làm điểm cho chai đóng sẵn vì nồng độ đóng chai khác.",
+      "confidence": "low",
+      "source_ref": "Nồng độ caffeine cold brew RTD (tầm soát)"
+    }
+  ],
+  "allergen_note": "Không kết luận đầy đủ: cold brew đóng chai không đường không chứa sữa, trứng hay gluten theo loại, nhưng một số chai có thể thêm sữa/hương liệu — file chưa có dòng nguyên liệu để gắn tag, trang chi tiết phải hiện 'chưa đủ dữ kiện'.",
+  "tcm_note": "Không kết luận tính vị: mục đóng gói này chưa gắn hồ sơ nguyên liệu nên không kết luận ở tầng món."
 }
