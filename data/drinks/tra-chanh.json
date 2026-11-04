@@ -15,7 +15,8 @@
     {
       "name": "trà xanh/nhài hãm",
       "quantity": 150,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "tra-xanh"
     },
     {
       "name": "nước cốt chanh",
@@ -55,10 +56,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn trà xanh + đường, chanh chưa có hồ sơ (khoảng 3–4 kcal), liquid 165 ml — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -67,5 +68,32 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 165,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml chất lỏng",
+      "value_min": 50,
+      "value_max": 51,
+      "value": null,
+      "per_serving": "≈83–84 kcal/ly (165 ml chất lỏng, chưa tính đá tan)",
+      "basis": "Cộng tay: trà xanh 150 ml × 1 = 1,5 kcal; nước cốt chanh 15 ml ≈ 3–4 kcal (nước chanh khoảng 22–30 kcal/100 ml, chưa có hồ sơ nước cốt chanh riêng nên để khoảng, không dùng điểm); đường 20 g × 387 / 100 = 77,4 kcal. Tổng 81,9–82,9 kcal, làm tròn 83–84 trong file; chia cho 165 ml = 50–51 kcal/100 ml. Đây chưa phải đầu ra engine; engine chưa gắn chanh nên sẽ mở rộng khoảng trên.",
+      "confidence": "medium",
+      "source_ref": "data/ingredients/tra-xanh.json, duong-trang.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 20,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "20 g/ly",
+      "basis": "sugar_added_g trong file catalogue = 20 g, khớp đường trong công thức.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Đã gắn 2/3 dòng trong ly: trà xanh và đường không có tag dị ứng trong hồ sơ; dòng nước cốt chanh chưa gắn hồ sơ nên không kết luận đầy đủ.",
+  "tcm_note": "Không kết luận tính vị chung cho cả ly: trà xanh có hai nhãn lương/cam/Thổ và lương/khổ/Hỏa (cùng nguồn 《中药大辞典》, trung bình) với khối lượng 150 g trên tổng ~185 g (81%, trên ngưỡng 60%), nhưng hai nhãn vị khác nhau nên ghi cả hai, không chọn một ngũ hành duy nhất; đường không gộp vào kết luận."
 }
