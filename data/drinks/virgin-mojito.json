@@ -18,8 +18,8 @@
     },
     {
       "name": "đường",
-      "quantity": 2,
-      "unit": "thìa cà phê",
+      "quantity": 8.4,
+      "unit": "g",
       "ingredient_slug": "duong-trang"
     },
     {
@@ -62,10 +62,10 @@
   "alcohol_pct_range": null,
   "label_note": "",
   "brand_examples": [],
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn đường + soda, đường 2 thìa đổi thành 8,4 g, liquid 140 ml — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5.",
   "media": [
     {
@@ -74,5 +74,32 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 140,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml chất lỏng",
+      "value_min": 26,
+      "value_max": 26,
+      "value": null,
+      "per_serving": "≈37 kcal/ly (140 ml chất lỏng, chưa tính đá)",
+      "basis": "Cộng tay: nước cốt chanh 20 ml × 22 / 100 = 4,4 kcal; đường 2 thìa cà phê đổi thành 8,4 g × 387 / 100 = 32,5 kcal; lá bạc hà 6 nhánh dầm, kcal không đáng kể; soda 0 kcal. Tổng 36,9 kcal / 140 ml = 26 kcal/100 ml. Đây chưa phải đầu ra engine.",
+      "confidence": "medium",
+      "source_ref": "data/ingredients/duong-trang.json, soda.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 8,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "8 g/ly",
+      "basis": "sugar_added_g trong file = 8 g; kiểm chéo: đường 2 thìa cà phê = 8,4 g, gần 8 g trong file.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Đã gắn 2/4 dòng trong ly: đường và soda không có tag dị ứng trong hồ sơ; nước cốt chanh và lá bạc hà chưa gắn hồ sơ nên không kết luận đầy đủ.",
+  "tcm_note": "Không kết luận tính vị: các dòng đều không có nhãn tính vị trong hồ sơ."
 }
