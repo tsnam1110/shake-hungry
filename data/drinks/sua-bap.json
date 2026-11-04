@@ -62,10 +62,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn sữa tươi + sữa đặc + đường, sữa bắp chưa có hồ sơ (60–80), liquid 320 ml — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -74,5 +74,32 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 320,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml chất lỏng",
+      "value_min": 67,
+      "value_max": 74,
+      "value": null,
+      "per_serving": "≈216–237 kcal/ly (320 ml chất lỏng)",
+      "basis": "Cộng tay: sữa bắp 250 ml — khoảng 60–80 kcal (mẻ 750 ml từ 200 g hạt bắp ngọt, 250 ml sữa bắp tương đương khoảng 67 g hạt × 86 / 100 = 57,6 kcal, cộng nước và lá dứa, để khoảng 60–80 do độ đặc quán khác nhau, chưa có hồ sơ riêng); sữa tươi 50 ml × 1,031 × 60–61 / 100 = 31,0–31,5 kcal; sữa đặc 20 ml × 1,29 × 334–341 / 100 = 86,2–88,0 kcal; đường 10 g × 387 / 100 = 38,7 kcal. Tổng 215,9–237,2 kcal / 320 ml = 67–74 kcal/100 ml. Đây chưa phải đầu ra engine.",
+      "confidence": "low",
+      "source_ref": "data/ingredients/sua-tuoi.json, sua-dac.json, duong-trang.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 20,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "20 g/ly (theo file, chưa tính đường trong sữa đặc)",
+      "basis": "sugar_added_g trong file = 20 g; kiểm chéo: đường 10 g + đường trong sữa đặc khoảng 14 g = 24 g, gần 20 g trong sai số quán.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Đã gắn đủ 3/4 dòng trong ly (sữa tươi và sữa đặc có tag allergen:sua) — dị ứng Sữa đã xác nhận; sữa bắp chưa gắn hồ sơ nên không kết luận đầy đủ về các dị ứng khác.",
+  "tcm_note": "Không kết luận tính vị: sữa tươi bình/cam/Thổ (trung bình, 51,6 g) trên tổng ~320 g (16%, dưới ngưỡng 30% của TCM-000); các dòng còn lại không có nhãn tính vị trong hồ sơ."
 }
