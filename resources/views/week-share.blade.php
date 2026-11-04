@@ -27,7 +27,9 @@ const slotName = { sang: 'Sáng', trua: 'Trưa', toi: 'Tối', 'an-vat': 'Ăn v�
             <div class="ld-group">${d.meals.map(m => `<div class="ld-row"><span class="grow"><span style="font-weight:600">${esc(slotName[m.slot] ?? m.slot)}</span><span class="sub">${m.dish ? esc(m.dish.name ?? m.dish.slug) : 'Chưa có món'}${m.is_eat_out ? ' · Ăn ngoài' : ''}</span></span></div>`).join('')}</div>
         </div>`).join('') +
         `<h2 class="ld-section-title">Danh sách đi chợ</h2>` +
-        (data.shopping_list.aisle_groups ?? []).map(g => `<p class="ld-group-label">${esc(g.aisle)}</p><div class="ld-group">${g.items.map(it => `<div class="ld-row"><span class="grow"><span style="font-weight:600">${esc(it.name)}</span></span><span class="ld-price"><span class="so ld-tnum">${it.total_grams != null ? it.total_grams + ' g' : it.unit_entries.map(u => u.quantity + ' ' + esc(u.unit_name)).join(' + ')}</span></span></div>`).join('')}</div>`).join('');
+        (data.shopping_list.aisle_groups ?? []).map(g => `<p class="ld-group-label">${esc(g.aisle)}</p><div class="ld-group">${g.items.map(it => `<div class="ld-row"><span class="grow"><span style="font-weight:600">${esc(it.name)}</span>
+                ${(it.pack_options ?? []).length ? `<span class="sub" style="display:block;margin-top:4px">Gói (snapshot 04/11): ${(it.pack_options ?? []).map(p => `${esc(p.product)} — ${esc(p.pack_label)}${p.packs_needed != null ? ` × ${p.packs_needed} gói` : ' (chưa tính được số gói)'} · ${Number(p.price_vnd).toLocaleString('vi-VN')} đ · ${esc(p.channel)}`).join('<br>')}</span>` : ''}
+                ${it.unverified_pack_count ? `<span class="sub" style="display:block">Còn ${it.unverified_pack_count} gói ứng viên chưa xác nhận ánh xạ, chưa hiển thị.</span>` : ''}</span><span class="ld-price"><span class="so ld-tnum">${it.total_grams != null ? it.total_grams + ' g' : it.unit_entries.map(u => u.quantity + ' ' + esc(u.unit_name)).join(' + ')}</span></span></div>`).join('')}</div>`).join('');
 })();
 </script>
 @endpush

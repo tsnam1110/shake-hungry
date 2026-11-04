@@ -9,9 +9,11 @@ use App\Models\WeekPlan;
 /**
  * Danh sách đi chợ theo gram (Giai đoạn 2, Phần 2.6).
  *
- * Cộng gộp DishIngredient của mọi bữa trong tuần, KHÔNG quy đổi ra gói
- * và KHÔNG ghi giá — chưa có bảng giá/gói đủ nguồn để làm thật, và
- * không được bịa gói/giá. Nhãn rõ ràng ở API và giao diện.
+ * Cộng gộp DishIngredient của mọi bữa trong tuần; F1 kèm lựa chọn gói
+ * từ PackMapper (snapshot 04/11) — nhiều gói thì hiện nhiều gói, không
+ * chốt ngầm một gói; chưa có tổng tiền tuần. Không bịa gói/giá: mặt
+ * hàng không có gói trong snapshot thì chỉ hiển thị gram. Nhãn rõ ràng
+ * ở API và giao diện.
  * - Bữa ăn ngoài bị loại khỏi danh sách vì người dùng không nấu bữa đó.
  * - Dòng có grams_resolved thì cộng theo gram × khẩu phần; dòng không có
  *   grams_resolved thì giữ nguyên quantity + unit_name, không cộng chung
@@ -60,6 +62,8 @@ class ShoppingListBuilder
                             'unit_entries' => [],
                             'optional' => true,
                             'meals_count' => 0,
+                            // Chỉ để PackMapper đổi ml (gram / density); gỡ trước khi trả API.
+                            'density_g_per_ml' => $ingredient->density_g_per_ml,
                         ];
                     }
                     $items[$key]['meals_count']++;
@@ -93,6 +97,16 @@ class ShoppingListBuilder
         $list = array_values(array_map(function (array $item) {
             $item['total_grams'] = $item['has_grams'] ? round($item['total_grams'], 1) : null;
             unset($item['has_grams']);
+            // F1: lựa chọn gói từ snapshot 04/11 — nhiều gói thì hiện nhiều
+            // gói, không chốt ngầm một gói. Ánh xạ 'ứng viên' chưa hiển thị.
+            $item['pack_options'] = PackMapper::optionsFor(
+                $item['slug'],
+                $item['total_grams'],
+                $item['density_g_per_ml'] ?? null,
+                $item['unit_entries'],
+            );
+            $item['unverified_pack_count'] = PackMapper::unverifiedCount($item['slug']);
+            unset($item['density_g_per_ml']);
 
             return $item;
         }, $items));
@@ -102,7 +116,7 @@ class ShoppingListBuilder
             'plan_id' => $plan->id,
             'start_date' => $plan->start_date->toDateString(),
             'end_date' => $plan->end_date->toDateString(),
-            'note' => 'Danh sách theo gram, chưa quy đổi ra gói và chưa có giá — chưa có bảng giá/gói đủ nguồn. Bữa ăn ngoài không tính vào danh sách.',
+            'note' => 'Danh sách theo gram, kèm lựa chọn gói từ snapshot giá 04/11 (BHX + WinMart, tách kênh, không cộng chéo; khuyến mãi có điều kiện không trừ vào giá suy ra). Mặt hàng chưa có gói trong snapshot, hoặc ánh xạ gói chưa xác nhận, thì chỉ hiển thị gram. Bữa ăn ngoài không tính vào danh sách. Chưa có tổng tiền tuần — budget_vnd vẫn chỉ là mục tiêu mềm do bạn nhập.',
             'groups' => $this->groupByCategory($list),
             // Giai đoạn 3, Task 2: nhóm theo gian hàng chung (xem AisleMapper
             // — không phải sơ đồ của một cửa hàng cụ thể).

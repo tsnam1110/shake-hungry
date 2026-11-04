@@ -249,7 +249,9 @@ document.getElementById('week-shopping').onclick = async () => {
             <p class="ld-group-label">${esc(g.aisle ?? g.label)}</p>
             <div class="ld-group">${g.items.map(it => `
                 <div class="ld-row"><span class="grow"><span style="font-weight:600">${esc(it.name)}</span>
-                <span class="sub">${it.optional ? 'Tuỳ chọn · ' : ''}Dùng trong ${it.meals_count} bữa</span></span>
+                <span class="sub">${it.optional ? 'Tuỳ chọn · ' : ''}Dùng trong ${it.meals_count} bữa</span>
+                ${(it.pack_options ?? []).length ? `<span class="sub" style="display:block;margin-top:4px">Gói (snapshot 04/11): ${(it.pack_options ?? []).map(p => `${esc(p.product)} — ${esc(p.pack_label)}${p.packs_needed != null ? ` × ${p.packs_needed} gói` : ' (chưa tính được số gói)'} · ${Number(p.price_vnd).toLocaleString('vi-VN')} đ · ${esc(p.channel)}`).join('<br>')}</span>` : ''}
+                ${it.unverified_pack_count ? `<span class="sub" style="display:block">Còn ${it.unverified_pack_count} gói ứng viên chưa xác nhận ánh xạ, chưa hiển thị.</span>` : ''}</span>
                 <span class="ld-price"><span class="so ld-tnum">${it.total_grams != null ? it.total_grams + ' g' : it.unit_entries.map(u => u.quantity + ' ' + esc(u.unit_name)).join(' + ')}</span></span></div>`).join('')}
             </div>`).join('')}`;
     box.scrollIntoView({ behavior: 'smooth' });
