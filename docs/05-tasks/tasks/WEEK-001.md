@@ -199,6 +199,17 @@ này trước Task suy kcal từ TDEE + mục tiêu (thuộc Phần 2.1, sau for
 - Trang /tuan-an: nút Ăn ngoài / Bỏ ăn ngoài ở mỗi bữa.
 - Test thêm: đánh dấu → chưa đủ dữ kiện với 1 bữa chưa biết, bỏ dấu → đạt.
 
+### Task 5 — Loại thực phẩm khỏi tuần — ĐÃ XONG (2026-11-04)
+- API POST /api/week-plans/{plan}/exclude-ingredient: thêm slug vào
+  excluded_ingredients của Hồ sơ, thay các bữa trong tuần chứa nó bằng
+  ứng viên khác, bữa không còn ứng viên thì xoá (ngày thành chưa đủ dữ
+  kiện); bữa đang ăn ngoài giữ nguyên vì không ăn món đó.
+- Trang /tuan-an: tìm nguyên liệu theo tên, bấm loại sau khi xác nhận.
+- Test thêm: tuần có bữa chứa lạc → loại lạc → không còn bữa chứa lạc,
+  hồ sơ có lạc trong danh sách loại trừ.
+
+## Phần 2.5 đã xong cả 5 thao tác.
+
 ## Các phần tiếp theo (theo lệnh duyệt toàn bộ lộ trình 2026-11-04, làm tiếp không hỏi duyệt giữa chừng)
 - Phần 2.5, Task 2–5: đổi ngày bắt đầu, bắt đầu lại phần còn lại, ăn ngoài, loại thực phẩm.
 - Phần 2.6: danh sách đi chợ theo gram, không gói, không giá.

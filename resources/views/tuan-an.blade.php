@@ -47,6 +47,12 @@
             <button id="week-restart" class="ld-btn ld-btn-gray" style="padding:11px 22px;font-size:15.5px">Bắt đầu lại phần còn lại</button>
         </div>
         <p class="ld-note" style="margin-top:-6px;margin-bottom:14px">Bắt đầu lại chỉ xây lại các ngày từ ngày đã chọn trở đi; các ngày trước đó giữ nguyên, kể cả món bạn đã đổi tay.</p>
+        <div class="ld-card" style="margin-bottom:14px">
+            <label class="ld-field-label" for="week-exclude-q">Loại một thực phẩm khỏi tuần này</label>
+            <div class="ld-search"><input id="week-exclude-q" type="search" placeholder="Gõ tên nguyên liệu, ví dụ: lạc…" aria-label="Tìm nguyên liệu để loại khỏi tuần"></div>
+            <div id="week-exclude-results" class="ld-group" style="margin-top:10px"></div>
+            <p class="ld-note" style="margin-top:8px">Loại khỏi tuần cũng thêm nguyên liệu đó vào danh sách không ăn được trong Hồ sơ, để tuần sau cũng không chọn món chứa nó. Bữa không còn ứng viên thay thế sẽ bị xoá khỏi ngày đó.</p>
+        </div>
         <div id="week-days"></div>
         <p class="ld-note" style="margin-top:10px">Cảnh báo kết hợp chỉ là lớp thông tin ở trang món, không chặn, không lọc và không chấm điểm tuần ăn. Thao tác đổi bữa, ăn ngoài và đi chợ sẽ có ở các phần tiếp theo của lộ trình.</p>
     </section>
@@ -161,6 +167,28 @@ document.getElementById('week-create').onsubmit = async (e) => {
     showPlan(data.plan.id);
 };
 document.getElementById('week-start').value = new Date().toISOString().slice(0, 10);
+let excludeTimer;
+document.getElementById('week-exclude-q').addEventListener('input', (e) => {
+    clearTimeout(excludeTimer);
+    excludeTimer = setTimeout(async () => {
+        const q = e.target.value.trim();
+        if (!q) { document.getElementById('week-exclude-results').innerHTML = ''; return; }
+        const data = await (await fetch('/api/ingredients?q=' + encodeURIComponent(q) + '&per_page=6')).json();
+        document.getElementById('week-exclude-results').innerHTML = (data.data ?? []).map(ing => `
+            <button data-exclude="${esc(ing.slug)}" class="ld-row" style="cursor:pointer;width:100%;text-align:left;background:none;border:0;font-family:inherit">
+                <span class="grow">Loại <b>${esc(ing.name_vi ?? ing.slug)}</b> khỏi tuần này</span>
+            </button>`).join('');
+        document.querySelectorAll('[data-exclude]').forEach(b => b.onclick = async () => {
+            if (!currentPlanId) return;
+            if (!confirm(`Loại nguyên liệu này khỏi tuần và khỏi hồ sơ? Các bữa chứa nó sẽ được thay bằng món khác.`)) return;
+            const resp = await fetch(`/api/week-plans/${currentPlanId}/exclude-ingredient`, { method: 'POST', headers, body: JSON.stringify({ ingredient_slug: b.dataset.exclude }) });
+            const res = await resp.json();
+            if (!resp.ok) { alert(res.message || 'Loại thực phẩm thất bại'); return; }
+            if (window.ldToast) ldToast(`Đã thay ${res.replaced} bữa, xoá ${res.deleted} bữa không còn ứng viên`);
+            showPlan(currentPlanId);
+        });
+    }, 350);
+});
 document.getElementById('week-restart').onclick = async () => {
     const from = document.getElementById('week-restart-from').value;
     if (!from || !currentPlanId) return;

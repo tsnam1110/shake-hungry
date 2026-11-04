@@ -115,6 +115,24 @@ it('đánh dấu ăn ngoài: bữa không tính vào tổng, ngày thành chưa 
     expect($resp->json('validation.status'))->toBe('dat');
 });
 
+it('loại thực phẩm khỏi tuần: thêm vào hồ sơ, thay bữa chứa nó, bữa khác giữ nguyên', function () {
+    [$user, $plan] = week25Plan();
+    // Thêm món trua chứa lạc, protein cao hơn để builder chọn nó trước.
+    week25Dish('op-trua-lac', 'trua', 60, 450, 500, ['ingredients' => ['lac-rang']]);
+    // Xây lại tuần mới cho cùng người dùng với ngày khác để builder dùng món lạc.
+    $plan2 = app(WeekBuilder::class)->build($user, '2026-11-16');
+    $this->actingAs($user);
+    $lacMeals = $plan2->meals()->whereHas('dish.dishIngredients.ingredient', fn ($q) => $q->where('slug', 'lac-rang'))->count();
+    expect($lacMeals)->toBeGreaterThan(0);
+
+    $resp = $this->postJson("/api/week-plans/{$plan2->id}/exclude-ingredient", ['ingredient_slug' => 'lac-rang'])->assertOk();
+    expect($resp->json('replaced'))->toBeGreaterThan(0);
+
+    $afterLac = $plan2->fresh()->meals()->whereHas('dish.dishIngredients.ingredient', fn ($q) => $q->where('slug', 'lac-rang'))->count();
+    expect($afterLac)->toBe(0);
+    expect(\App\Models\UserProfile::where('user_id', $user->id)->first()->excluded_ingredients)->toContain('lac-rang');
+});
+
 it('đổi bữa sang món thiếu dữ kiện bị từ chối 422', function () {
     [$user, $plan] = week25Plan();
     $bad = week25Dish('op-trua-thieu', 'trua', 50, 450, 500, ['missing' => ['nghe-tuoi']]);

@@ -195,6 +195,68 @@ class WeekPlanController extends Controller
         return response()->json(['meal' => $this->presentMeal($meal->fresh()), 'validation' => $validation]);
     }
 
+    /**
+     * Phần 2.5, Task 5 — loại một thực phẩm khỏi tuần: thêm slug vào
+     * excluded_ingredients của hồ sơ (để tuần sau cũng không chọn món
+     * chứa nó, cùng ý nghĩa lọc cứng đã có ở Hồ sơ), rồi thay các bữa
+     * trong tuần này chứa nó bằng ứng viên khác; bữa nào không còn ứng
+     * viên thì xoá bữa (ngày thành chưa đủ dữ kiện). Bữa đang đánh dấu
+     * ăn ngoài được giữ nguyên vì người dùng không ăn món đó trong tuần.
+     */
+    public function excludeIngredient(Request $request, WeekPlan $weekPlan, WeekBuilder $builder, WeekValidator $validator): JsonResponse
+    {
+        $this->authorizePlan($request, $weekPlan);
+        $data = $request->validate(['ingredient_slug' => ['required', 'string', 'exists:ingredients,slug']]);
+        $slug = $data['ingredient_slug'];
+        $profile = \App\Models\UserProfile::updateOrCreate(
+            ['user_id' => $request->user()->id],
+            [],
+        );
+        $excluded = $profile->excluded_ingredients ?? [];
+        if (! in_array($slug, $excluded, true)) {
+            $excluded[] = $slug;
+            $profile->update(['excluded_ingredients' => $excluded]);
+        }
+        $profile->refresh();
+        $replaced = 0;
+        $deleted = 0;
+        $affectedDayIds = [];
+        $weekPlan->load('days.meals.dish.dishIngredients.ingredient');
+        foreach ($weekPlan->days as $day) {
+            foreach ($day->meals as $meal) {
+                if ($meal->is_eat_out) {
+                    continue;
+                }
+                $slugs = $meal->dish?->dishIngredients->map(fn ($di) => $di->ingredient?->slug)->filter()->all() ?? [];
+                if (! in_array($slug, $slugs, true)) {
+                    continue;
+                }
+                $candidate = $builder->candidates($meal->slot, $profile, [$meal->dish_id])->first();
+                if ($candidate === null) {
+                    $meal->delete();
+                    $deleted++;
+                } else {
+                    $meal->update(['dish_id' => $candidate->id, 'replaced_from_dish_id' => $meal->dish_id, 'is_eat_out' => false]);
+                    $replaced++;
+                }
+                $affectedDayIds[] = $day->id;
+            }
+        }
+        $validations = [];
+        foreach (array_unique($affectedDayIds) as $dayId) {
+            $day = \App\Models\WeekPlanDay::find($dayId);
+            if ($day !== null) {
+                $validations[] = $validator->refreshDay($day, $weekPlan);
+            }
+        }
+
+        return response()->json([
+            'ingredient_slug' => $slug, 'replaced' => $replaced, 'deleted' => $deleted,
+            'validations' => $validations,
+            'plan' => $this->presentPlan($weekPlan->fresh()->load('days')),
+        ]);
+    }
+
     private function findMeal(WeekPlan $weekPlan, $mealId)
     {
         $meal = \App\Models\WeekPlanMeal::with('day')->find($mealId);
