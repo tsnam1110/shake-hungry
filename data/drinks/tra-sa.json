@@ -13,12 +13,14 @@
     {
       "name": "sả tươi",
       "quantity": 30,
-      "unit": "g"
+      "unit": "g",
+      "ingredient_slug": "sa"
     },
     {
       "name": "nước",
       "quantity": 250,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "nuoc-loc"
     },
     {
       "name": "mật ong/đường",
@@ -50,10 +52,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn sả + nước, sả hãm để khoảng rộng, MÂU THUẪN sugar file 0 — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -62,5 +64,32 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 250,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml chất lỏng",
+      "value_min": 6,
+      "value_max": 20,
+      "value": null,
+      "per_serving": "≈15–49 kcal/ly (250 ml chất lỏng, khoảng rộng do sả hãm)",
+      "basis": "Sả 30 g × 99 / 100 = 29,7 kcal là ĐẦU TRÊN (cả cây sả, nếu ăn hết) — sả nấu/hãm rồi lọc, phần xơ không uống nên kcal tan vào nước thấp hơn nhiều, không đo được nên để khoảng từ chỉ mật ong/đường (15,2–19,4 kcal) tới cộng cả sả (44,9–49,1 kcal), làm tròn 15–49 kcal / 250 ml = 6–20 kcal/100 ml. Đây là khoảng rộng cố ý, không phải điểm; engine gắn sả cả cây nên sẽ cho đầu trên của khoảng.",
+      "confidence": "low",
+      "source_ref": "data/ingredients/sa.json, nuoc-loc.json, mat-ong.json, duong-trang.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 5,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "≈5 g/ly (từ mật ong/đường)",
+      "basis": "MÂU THUẪN FILE, GHI RÕ: sugar_added_g trong file = 0 nhưng công thức có mật ong/đường 5 g — chỉ số này lấy 5 g theo công thức, không lấy 0 g, để chủ dự án chốt lại.",
+      "confidence": "low",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Đã gắn 2/3 dòng trong ly: sả và nước không có tag dị ứng trong hồ sơ; mật ong/đường chưa gắn hồ sơ (dòng ghi hai chất) nên không kết luận đầy đủ.",
+  "tcm_note": "Không kết luận tính vị: sả không có nhãn tính vị trong hồ sơ, nước không có nhãn."
 }
