@@ -13,7 +13,8 @@
     {
       "name": "trà Thái xanh hãm",
       "quantity": 80,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "tra-den"
     },
     {
       "name": "sữa đặc",
@@ -24,7 +25,8 @@
     {
       "name": "kem/creamer",
       "quantity": 20,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "kem-whipping"
     },
     {
       "name": "đường",
@@ -63,10 +65,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn đủ 4/4, trà Thái xanh gắn tra-den, kem gắn kem-whipping (phạm vi kem sữa) — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -75,5 +77,33 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 120,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml chất lỏng",
+      "value_min": 161,
+      "value_max": 163,
+      "value": null,
+      "per_serving": "≈194–196 kcal/ly (120 ml chất lỏng, chưa tính đá tan)",
+      "basis": "Cộng tay như Thái đỏ (cùng công thức, chỉ khác trà xanh): trà 80 ml × 1 = 0,8 kcal; sữa đặc 86,2–88,0 kcal; kem 68,0 kcal; đường 38,7 kcal. Tổng 193,7–195,5 kcal / 120 ml = 161–163 kcal/100 ml. Đây chưa phải đầu ra engine.",
+      "confidence": "low",
+      "source_ref": "data/ingredients/tra-den.json, sua-dac.json, kem-whipping.json, duong-trang.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 20,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "20 g/ly",
+      "basis": "sugar_added_g trong file catalogue = 20 g; kiểm chéo như Thái đỏ, khoảng 24 g, gần 20 g trong sai số quán.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "process_note": "PHẠM VI: kem/creamer trong file ghi hai chất — ở đây gắn kem-whipping (kem sữa) như Thái đỏ. Nếu quán dùng creamer không sữa, kcal sẽ thấp hơn và số này không áp dụng.",
+  "allergen_note": "Đã gắn đủ 4/4 dòng trong ly: sữa đặc và kem whipping có tag allergen:sua — dị ứng Sữa đã xác nhận (áp dụng cho bản kem sữa; bản creamer không sữa sẽ khác).",
+  "tcm_note": "Không kết luận tính vị: các dòng đều không có nhãn tính vị trong hồ sơ."
 }
