@@ -76,7 +76,7 @@
     }
   ],
   "recipe_steps": [
-    "Giã lá gai (đang thiếu trong kho), trộn với bột nếp và đường thành vỏ bánh đen dẻo.",
+    "Giã lá gai, trộn với bột nếp và đường thành vỏ bánh đen dẻo.",
     "Đồ đậu xanh, giã nhuyễn, trộn dừa nạo và đường làm nhân.",
     "Gói nhân vào vỏ bột, rắc vừng, gói lá chuối.",
     "Hấp chín khoảng 30 phút."
@@ -105,10 +105,10 @@
   "status": "draft",
   "source": "llm_suggested",
   "confidence": "unknown",
-  "needs_review": false,
+  "needs_review": true,
   "reviewed_by": "tsnam1110@gmail.com",
   "reviewed_at": "2026-10-31",
-  "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này).",
+  "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này). E-batch0 2026-11-04: gắn cờ lại chưa duyệt — danh sách thiếu lá gai (nguyên liệu định danh của vỏ bánh); hồ sơ la-gai đã có trong kho nhưng kcal null (chỉ có đạm/béo từ Lee et al. 2009, không có carb/kcal), tỉ lệ 500 g lá/500 g bột/10 cái trong ghi chú là lá tươi trong khi hồ sơ kho là lá gai khô nên chưa quy đổi được định lượng theo cái, chưa sửa số, chưa gọi là đã xác minh.",
   "tags": [
     "loai:banh"
   ]
