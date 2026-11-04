@@ -41,10 +41,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04, làm cẩn thận theo QT-9: khoảng theo loại sữa đóng hộp, không lấy số một hãng — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §6.",
   "media": [
     {
@@ -53,5 +53,31 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml",
+      "value_min": 60,
+      "value_max": 80,
+      "value": null,
+      "per_serving": "≈150–200 kcal/chai 250 ml",
+      "basis": "Sữa chua uống đóng chai/hộp là sữa chua + đường + (có thể) nước ép trái cây: sữa chua 61 kcal/100 g (hồ sơ sua-chua), đường thêm khoảng 8–12 g/100 ml × 4 = 32–48 kcal, cộng sữa chua loãng, tổng theo loại khoảng 60–80 kcal/100 ml. Đây là khoảng theo loại, không phải số một hãng — sữa chua uống các hãng VN có độ ngọt khác nhau. Không dùng engine (đồ đóng gói không qua engine).",
+      "confidence": "low",
+      "source_ref": "Hồ sơ sua-chua (61 kcal/100 g); nhãn sữa chua uống (khoảng, không phải một nhãn cụ thể)"
+    },
+    {
+      "label": "Đường",
+      "unit": "g/chai",
+      "value_min": 25,
+      "value_max": 35,
+      "value": null,
+      "per_serving": "≈25–35 g/chai 250 ml",
+      "basis": "Đường trong sữa chua uống khoảng 10–14 g/100 ml (lactose + đường thêm), nhân chai 250 ml = 25–35 g/chai. Đây là khoảng theo loại, không phải số một hãng.",
+      "confidence": "low",
+      "source_ref": "Nhãn sữa chua uống (khoảng, không phải một nhãn cụ thể)"
+    }
+  ],
+  "allergen_note": "Dị ứng Sữa: xác nhận theo loại sản phẩm — sữa chua uống theo định nghĩa làm từ sữa, nên người dị ứng sữa phải tránh, ghi rõ là xác nhận theo loại sản phẩm, không phải từ tag trong hồ sơ. Các dị ứng khác chưa đủ dữ kiện.",
+  "tcm_note": "Không kết luận tính vị: mục đóng gói này chưa gắn hồ sơ nguyên liệu nên không kết luận ở tầng món."
 }
