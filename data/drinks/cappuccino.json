@@ -68,7 +68,7 @@
   "caffeine_mg_min": 64,
   "caffeine_mg_max": 64,
   "caffeine_mg_note": "SUY RA TỪ HỒ SƠ, CHƯA ĐO CHO LY NÀY: espresso 30 ml × 212 mg/100 g trong hồ sơ ca-phe-espresso = 64 mg/ly.",
-  "process_note": "GIẢ ĐỊNH LƯỢNG SỮA, GHI RÕ ĐỂ CHỦ DỰ ÁN CHỐT: file gốc ghi sữa hấp + bọt dày với lượng None. Ở đây lấy theo tỉ lệ chuẩn cappuccino 1:1:1 theo thể tích: espresso 30 ml : sữa hấp 60 ml : bọt 60 ml thể tích, bọt đánh bông có mật độ khoảng 0,5 nên 60 ml bọt ≈ 30 g sữa — tổng sữa 90 ml (60 + 30). Tổng thể tích 150 ml khớp serving_ml 150 trong file. Nếu quán dùng tỉ lệ khác, số kcal phải tính lại.",
+  "process_note": "GIẢ ĐỊNH LƯỢNG SỮA, ĐÃ CHỐT 2026-11-04 THEO DUYỆT CỦA BENJAMIN: file gốc ghi sữa hấp + bọt dày với lượng None. Ở đây lấy theo tỉ lệ chuẩn cappuccino 1:1:1 theo thể tích: espresso 30 ml : sữa hấp 60 ml : bọt 60 ml thể tích, bọt đánh bông có mật độ khoảng 0,5 nên 60 ml bọt ≈ 30 g sữa — tổng sữa 90 ml (60 + 30). Tổng thể tích 150 ml khớp serving_ml 150 trong file. Nếu quán dùng tỉ lệ khác, số kcal phải tính lại.",
   "key_indicators": [
     {
       "label": "Năng lượng",
