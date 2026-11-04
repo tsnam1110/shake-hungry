@@ -91,7 +91,7 @@
   "needs_review": true,
   "reviewed_by": null,
   "reviewed_at": null,
-  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: kcal từ ethanol + đường theo công thức, ABV suy ra từ công thức, chưa qua duyệt lại sau khi sửa.",
+  "review_note": "SOÁT LẠI 2026-11-04 theo lệnh của Benjamin (không dùng bảng tự suy cũ): tính lại từ rượu mùi đã kiểm chứng đa nguồn, xem drink-verification-liqueur.md — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5.",
   "media": [
     {
@@ -106,20 +106,20 @@
     {
       "label": "Năng lượng",
       "unit": "kcal/100 ml chất lỏng",
-      "value_min": 142,
-      "value_max": 142,
+      "value_min": 137,
+      "value_max": 137,
       "value": null,
-      "per_serving": "≈235 kcal/ly (165.5 ml chất lỏng)",
-      "basis": "Cộng tay từ công thức (ethanol 7 kcal/g, mật độ 0,789 g/ml + đường 4 kcal/g; rượu mùi tính cả ethanol và đường theo nhãn loại, chưa đo trực tiếp): gin 30 ml × 2.21 = 66.3 kcal; rượu mùi anh đào 15 ml × 2.53 = 37.9 kcal; Cointreau 7.5 ml × 3.21 = 24.1 kcal; DOM Bénédictine 7.5 ml × 3.41 = 25.6 kcal; nước dứa 80 ml × 0.53 = 42.4 kcal; nước cốt chanh 15 ml × 0.22 = 3.3 kcal; grenadine 10 ml × 3.38 = 33.8 kcal; Angostura bitters 1 dash 0.5 ml × 2.21 = 1.1 kcal. Tổng 234.5 kcal / 165.5 ml = 142 kcal/100 ml. ABV suy ra từ công thức: 13.2% (ethanol 21.8 ml / 165.5 ml chất lỏng). Đây chưa phải đầu ra engine (engine chưa có logic ethanol).",
+      "per_serving": "≈227 kcal/ly (166 ml chất lỏng)",
+      "basis": "SOÁT LẠI 2026-11-04 (đa nguồn): gin 30 ml × 2,21 = 66,3 kcal; rượu mùi anh đào 15 ml × 2,53 = 38,0 kcal (CHƯA kiểm chứng, giữ số cũ, ghi rõ); Cointreau 7,5 ml × 3,11 = 23,3 kcal (nhãn hãng 311 kcal/100 ml, cũ 24,1); Bénédictine 7,5 ml × 3,41 = 25,6 kcal (CHƯA kiểm chứng, giữ số cũ); nước dứa 80 ml × 0,53 = 42,4 kcal; nước cốt chanh 15 ml × 0,22 = 3,3 kcal; grenadine 10 ml × 2,67 = 26,7 kcal (nhãn Rose's 267 kcal/100 ml, cũ 33,8); bitters ~1,1 kcal. Tổng mới 226,7 kcal / 165,5 ml = 137 kcal/100 ml (cũ 235, cao hơn 8 kcal vì grenadine cũ). ABV 13,2% không đổi. Đây vẫn chưa phải đầu ra engine.",
       "confidence": "low",
       "source_ref": "Bảng kcal/ml cocktail trong hồ sơ triển khai (ethanol + đường, xem basis)"
     },
     {
       "label": "Độ cồn",
       "unit": "% ABV",
-      "value": 13.2,
-      "value_min": null,
-      "value_max": null,
+      "value": null,
+      "value_min": 13.2,
+      "value_max": 13.2,
       "per_serving": "≈13.2% ABV",
       "basis": "ABV suy ra từ công thức: ethanol 21.8 ml trên tổng 165.5 ml chất lỏng = 13.2%. Đây là ABV của ly pha theo công thức, chưa đo trực tiếp, và thay đổi nếu quán dùng rượu có ABV khác.",
       "confidence": "medium",
@@ -132,7 +132,7 @@
       "value_min": null,
       "value_max": null,
       "per_serving": "5 g/ly (theo file, tổng đường thực khoảng 25 g)",
-      "basis": "sugar_added_g trong file = 5 g (đường thêm từ siro/đường, theo cách ghi của file); tổng đường thực ước tính từ rượu mùi, nước ép và siro khoảng 25 g, cao hơn số file vì file không tính đường trong rượu mùi và nước ép.",
+      "basis": "sugar_added_g trong file = 5 g; tổng đường thực sau soát lại khoảng 23,4 g (tính từ rượu mùi đã kiểm chứng + nước ép, xem basis năng lượng).",
       "confidence": "low",
       "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
     }
