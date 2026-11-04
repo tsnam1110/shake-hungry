@@ -148,10 +148,10 @@
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
-  "needs_review": false,
+  "needs_review": true,
   "reviewed_by": "tsnam1110@gmail.com",
   "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau). [Soát lại E-batch lô 7, 2026-11-05: hồ sơ của file (tôm càng nguyên con + thịt ba chỉ luộc + nước dùng trong, không cà chua/rau cần/mộc nhĩ/nấm hương) vẫn không có nguồn biên tập nào — mọi kết quả đều là bún tôm Hải Phòng dùng tôm nhỏ (tôm sú/tôm rảo, 300 g) với cà chua + rau cần + mộc nhĩ + nấm hương, hoặc bún tôm Huế; bản Chợ Lái Thiêu có nhắc 'tôm càng xanh' nhưng là tôm bóc nõn trong nước dùng cà chua, khác hồ sơ tôm nguyên con nước trong của file; tổng các dòng 359,3 g so với khẩu phần 520 g thiếu nước dùng — giữ cờ chưa duyệt, chờ nguồn riêng cho bún tôm càng hoặc quyết định định danh lại theo bún tôm.]",
   "tags": [
     "loai:bun-pho-mi"
   ]
