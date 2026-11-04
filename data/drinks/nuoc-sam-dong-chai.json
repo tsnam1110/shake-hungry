@@ -30,7 +30,7 @@
     "max": 25
   },
   "alcohol_pct_range": null,
-  "label_note": "Đọc nhãn sản phẩm cụ thể khi seed — khoảng trong catalogue là khoảng theo loại, dao động theo thương hiệu, không phải bảng dinh dưỡng của một sản phẩm cụ thể.",
+  "label_note": "Chưa có nhãn cụ thể: các con số trên là khoảng theo loại, dao động theo thương hiệu, không phải bảng dinh dưỡng của một sản phẩm cụ thể và không suy từ nhãn của hãng khác. Chỉ cập nhật theo đúng nhãn khi có ảnh nhãn chụp tại điểm bán cho đúng thương hiệu và cỡ gói này.",
   "brand_examples": [],
   "cultural_note": "Thành phần điển hình: nước, thảo mộc (râu ngô, mã đề, mía lau, atiso, nhân sâm hoặc hương sâm tùy công thức), đường. Không khẳng định tác dụng dược liệu — chỉ ghi thành phần theo nhãn. Dạng đóng chai của nước sâm pha chế (§3.1) — hai entry khác kind, không gộp.",
   "recipe_sources": [],
