@@ -43,7 +43,7 @@
   "needs_review": true,
   "reviewed_by": null,
   "reviewed_at": null,
-  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04, làm cẩn thận theo QT-9: kcal suy ra từ ABV trong file + đường còn lại, không lấy số một hãng — chưa qua duyệt lại sau khi sửa.",
+  "review_note": "SOÁT LẠI 2026-11-04 theo lệnh của Benjamin: đối chiếu công thức vang đã kiểm chứng ở nhóm cocktail, xem drink-verification-packaged.md — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §6.",
   "media": [
     {
@@ -57,11 +57,11 @@
     {
       "label": "Năng lượng",
       "unit": "kcal/100 ml",
-      "value_min": 69,
+      "value_min": 61,
       "value_max": 91,
       "value": null,
-      "per_serving": "≈104–137 kcal/ly 150 ml",
-      "basis": "Kcal suy ra từ ethanol (7 kcal/g, mật độ 0,789 g/ml: kcal ethanol/100 ml = ABV% × 5,523) cộng đường/carb còn lại (4 kcal/g). Vang hồng 11,0–13,5% ABV: ethanol 61–75 kcal/100 ml cộng đường còn lại khoảng 2–4 g/100 ml × 4 = 8–16 kcal, tổng 69–91 kcal/100 ml. Đây là khoảng theo ABV trong file, không phải số đo một hãng cụ thể — các hãng có ABV và đường còn lại khác nhau, ghi rõ. Không dùng engine (đồ đóng gói không qua engine).",
+      "per_serving": "≈92–137 kcal/ly 150 ml",
+      "basis": "SOÁT LẠI 2026-11-04 (nhãn hãng + công thức): vang hồng đóng gói theo loại 61–91 kcal/100 ml — MỞ RỘNG đầu dưới từ 69 xuống 61 (cùng lý do như vang đỏ): vang hồng khô 11–13% ABV, đường còn lại 0,5–3 g/100 ml, tức ethanol 61–72 + đường 2–12 = 61–84 kcal/100 ml cho bản khô, bản ngọt nhẹ lên tới 91. Đối chiếu: vang trắng/vang hồng khô khoảng 70–80 kcal/100 ml, nằm trong khoảng. Đây là khoảng theo loại, không phải số một hãng. Không dùng engine (đồ đóng gói không qua engine).",
       "confidence": "low",
       "source_ref": "Công thức ethanol 7 kcal/g; file catalogue, alcohol_pct_range"
     },
