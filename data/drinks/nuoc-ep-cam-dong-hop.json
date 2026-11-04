@@ -41,10 +41,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04, làm cẩn thận theo QT-9: khoảng theo loại nước ép đóng hộp, không lấy số một hãng — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §6.",
   "media": [
     {
@@ -53,5 +53,42 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml",
+      "value_min": 45,
+      "value_max": 50,
+      "value": null,
+      "per_serving": "≈113–125 kcal/hộp 250 ml",
+      "basis": "Nước ép cam đóng hộp (nguyên chất hoặc từ cô đặc pha lại) khoảng 45–50 kcal/100 ml: hồ sơ nuoc-ep-cam cho cam tươi 45 kcal/100 g × mật độ 1,05 = 47 kcal/100 ml, nước ép đóng hộp từ cô đặc tương tự 45–50. Đây là khoảng theo loại, không phải số một hãng. Không dùng engine (đồ đóng gói không qua engine).",
+      "confidence": "medium",
+      "source_ref": "Hồ sơ nuoc-ep-cam (FDC 169098, 45 kcal/100 g, mật độ 1,05)"
+    },
+    {
+      "label": "Đường",
+      "unit": "g/hộp",
+      "value_min": 22,
+      "value_max": 28,
+      "value": null,
+      "per_serving": "≈22–28 g/hộp 250 ml (đường tự nhiên, không phải đường thêm)",
+      "basis": "Đường tự nhiên trong nước ép cam khoảng 9–11 g/100 ml, nhân hộp 250 ml = 22,5–27,5 g, làm tròn 22–28 g/hộp. Nước ép cam nguyên chất không thêm đường — nếu hộp ghi 'nectar' hoặc 'có đường' thì đường cao hơn, ghi rõ.",
+      "confidence": "low",
+      "source_ref": "Nhãn nước ép đóng hộp (khoảng theo loại)"
+    },
+    {
+      "label": "Vitamin C",
+      "unit": "mg/100 ml",
+      "value_min": 30,
+      "value_max": 50,
+      "value": null,
+      "per_serving": "≈75–125 mg/hộp 250 ml",
+      "basis": "Vitamin C trong nước ép cam đóng hộp khoảng 30–50 mg/100 ml (cam tươi 53 mg/100 g, đóng hộp và bảo quản làm giảm một phần, các hãng có thể bổ sung vitamin C — khoảng này là khoảng theo loại, ghi rõ).",
+      "confidence": "low",
+      "source_ref": "Hồ sơ nuoc-ep-cam (vitamin C tầm soát 52,5 mg/100 ml)"
+    }
+  ],
+  "allergen_note": "Không kết luận đầy đủ: nước ép đóng hộp không có dòng nguyên liệu trong file để gắn tag; nước ép trái cây nguyên chất không thuộc 14 chất gây dị ứng EU, nhưng một số hộp có thể thêm hương liệu/chất bảo quản — trang chi tiết phải hiện 'chưa đủ dữ kiện'.",
+  "tcm_note": "Không kết luận tính vị: mục đóng gói này chưa gắn hồ sơ nguyên liệu nên không kết luận ở tầng món."
 }
