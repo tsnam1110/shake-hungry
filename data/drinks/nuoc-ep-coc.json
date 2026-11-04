@@ -13,7 +13,8 @@
     {
       "name": "cóc chín",
       "quantity": 300,
-      "unit": "g"
+      "unit": "g",
+      "ingredient_slug": "coc"
     },
     {
       "name": "đường",
@@ -46,10 +47,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn đủ 2/2, nước ép ~200 ml, khoảng rộng do hiệu suất ép — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -58,5 +59,32 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 200,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml nước ép",
+      "value_min": 79,
+      "value_max": 103,
+      "value": null,
+      "per_serving": "≈158–205 kcal/ly (khoảng 200 ml nước ép, chưa tính đá)",
+      "basis": "Cộng tay với khoảng rộng do hiệu suất ép: cóc chín 300 g × 49 / 100 = 147,0 kcal là ĐẦU TRÊN nếu ăn cả quả; nước ép cóc khoảng 200 ml (hiệu suất ép khoảng 65–70%), nước ép cóc chứa phần lớn đường của quả nên khoảng 100–147 kcal cho phần nước ép, cộng đường 15 g × 387 / 100 = 58,1 kcal. Tổng 158,1–205,1 kcal / 200 ml = 79–103 kcal/100 ml. Khoảng rộng là do không đo được hiệu suất ép thật, ghi rõ. Đây chưa phải đầu ra engine.",
+      "confidence": "low",
+      "source_ref": "data/ingredients/coc.json, duong-trang.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 15,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "15 g/ly",
+      "basis": "sugar_added_g trong file = 15 g, khớp đường trong công thức; đường tự nhiên trong cóc khoảng 8–10 g/100 g × 300 g = 24–30 g không tính vào 'đường thêm'.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Đã gắn đủ 2/2 dòng trong ly: cóc và đường đều không có tag dị ứng trong hồ sơ.",
+  "tcm_note": "Không kết luận tính vị: cóc và đường đều không có nhãn tính vị trong hồ sơ."
 }
