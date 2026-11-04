@@ -20,7 +20,8 @@
     {
       "name": "nước nóng",
       "quantity": 150,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "nuoc-loc"
     },
     {
       "name": "đào ngâm",
@@ -72,10 +73,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn nước + mật ong, đào ngâm/nước đào ngâm chưa có hồ sơ (khoảng rộng), liquid 240 ml — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -84,5 +85,32 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 240,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml chất lỏng",
+      "value_min": 58,
+      "value_max": 77,
+      "value": null,
+      "per_serving": "≈140–185 kcal/ly (240 ml chất lỏng, chưa tính đá tan)",
+      "basis": "Cộng tay: trà túi lọc hãm trong 150 ml nước ≈ 1,5 kcal (trà không đường); đào ngâm 4 miếng — khoảng 40–70 kcal (4 lát đào ngâm, mỗi lát khoảng 20 g, đào ngâm siro nhẹ khoảng 50–70 kcal/100 g, cộng nước ngâm bám); nước đào ngâm 60 ml — khoảng 30–45 kcal (siro đào nhẹ, đường khoảng 15 g/100 g); mật ong 15 ml × 1,42 × 304 / 100 = 64,8 kcal; nước cốt chanh/tắc 15 ml ≈ 4 kcal. Tổng 140,3–185,3 kcal / 240 ml = 58–77 kcal/100 ml. Đây chưa phải đầu ra engine; engine chưa gắn đào ngâm, nước đào ngâm và chanh/tắc nên sẽ thiếu phần lớn.",
+      "confidence": "low",
+      "source_ref": "data/ingredients/nuoc-loc.json, mat-ong.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 25,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "25 g/ly (theo file, chưa tính đường trong đào ngâm)",
+      "basis": "sugar_added_g trong file = 25 g; kiểm chéo: mật ong đường khoảng 17,4 g + đường trong nước đào ngâm khoảng 9 g + đào ngâm khoảng 8 g = khoảng 34 g tổng đường — cao hơn 25 g trong file, ghi chú để chủ dự án chốt.",
+      "confidence": "low",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Đã gắn 2/6 dòng trong ly: nước và mật ong không có tag dị ứng trong hồ sơ; trà túi lọc, đào ngâm, nước đào ngâm và chanh/tắc chưa gắn hồ sơ nên không kết luận đầy đủ.",
+  "tcm_note": "Không kết luận tính vị: các dòng đều không có nhãn tính vị trong hồ sơ (mật ong không có nhãn)."
 }
