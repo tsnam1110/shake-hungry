@@ -225,6 +225,18 @@ này trước Task suy kcal từ TDEE + mục tiêu (thuộc Phần 2.1, sau for
 
 ## Lõi Tuần ăn (Phần 2.1–2.6) đã xong. Các phần sau lõi xem tiếp dưới.
 
+## Giai đoạn 3 — Dị ứng món + gian hàng (theo lệnh duyệt toàn bộ lộ trình)
+
+### Task 1 — Dị ứng món trong tuần — ĐÃ XONG (2026-11-04)
+- Nhãn dị ứng món vốn đã có ở trang món (AllergenDisplay, QD-ALLERGEN)
+  nay hiện luôn trong tuần: API chi tiết tuần và ứng viên đổi bữa trả
+  `allergen_display` (definite / possible "Có thể có"), trang /tuan-an
+  hiện nhãn dưới tên món. Chỉ hiển thị — lọc cứng tuần vẫn qua
+  excluded_ingredients (preset nhóm dị ứng ở Hồ sơ) ở builder và swap,
+  không tự thêm lớp lọc mới.
+- Test `tests/Feature/WeekAllergenTest.php`: món chứa lạc → chi tiết tuần
+  trả nhóm dau-phong, nhãn Đậu phộng, definite.
+
 ## Các phần tiếp theo (theo lệnh duyệt toàn bộ lộ trình 2026-11-04, làm tiếp không hỏi duyệt giữa chừng)
 - Phần 2.5, Task 2–5: đổi ngày bắt đầu, bắt đầu lại phần còn lại, ăn ngoài, loại thực phẩm.
 - Phần 2.6: danh sách đi chợ theo gram, không gói, không giá.

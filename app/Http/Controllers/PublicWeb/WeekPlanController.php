@@ -106,6 +106,7 @@ class WeekPlanController extends Controller
                 'kcal_min' => $dish->nutrition->kcal_min, 'kcal_max' => $dish->nutrition->kcal_max,
                 'protein_g' => $dish->nutrition->protein_g,
             ],
+            'allergen_display' => \App\Taxonomy\AllergenDisplay::forDish($dish),
         ])->values()]);
     }
 
@@ -322,6 +323,10 @@ class WeekPlanController extends Controller
                     'kcal_min' => $nutrition->kcal_min, 'kcal_max' => $nutrition->kcal_max,
                     'protein_g' => $nutrition->protein_g, 'confidence' => $nutrition->confidence,
                 ],
+                // Giai đoạn 3, Task 1: nhãn dị ứng món (đã có ở trang món,
+                // nay hiện luôn trong tuần) — chỉ hiển thị, lọc cứng vẫn
+                // chạy qua excluded_ingredients ở builder/swap.
+                'allergen_display' => \App\Taxonomy\AllergenDisplay::forDish($dish),
             ],
         ];
     }

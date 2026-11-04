@@ -122,7 +122,7 @@ async function showPlan(id) {
             <div class="ld-group" style="margin-top:12px">${d.meals.map(m => `
                 <div class="ld-row">
                     <span class="grow"><span style="font-weight:600">${esc(slotName[m.slot] ?? m.slot)}</span>
-                    <span class="sub">${m.dish ? `<a href="/mon/${esc(m.dish.slug)}">${esc(m.dish.name ?? m.dish.slug)}</a>` : 'Chưa có món'}${m.is_eat_out ? ' · Ăn ngoài' : ''}</span></span>
+                    <span class="sub">${m.dish ? `<a href="/mon/${esc(m.dish.slug)}">${esc(m.dish.name ?? m.dish.slug)}</a>` : 'Chưa có món'}${m.is_eat_out ? ' · Ăn ngoài' : ''}${(m.dish?.allergen_display ?? []).length ? ' · ' + m.dish.allergen_display.map(a => (a.certainty === 'possible' ? 'Có thể có: ' : '') + esc(a.label)).join(', ') : ''}</span></span>
                     ${m.dish?.nutrition ? `<span class="ld-price"><span class="so ld-tnum">${Math.round(m.dish.nutrition.kcal_min)}–${Math.round(m.dish.nutrition.kcal_max)}</span><small>kcal · ${Math.round(m.dish.nutrition.protein_g)} g protein</small></span>` : ''}
                     <button data-swap="${m.id}" style="border:0;background:none;color:var(--color-link);font-size:14px;font-weight:600;cursor:pointer;font-family:inherit">Đổi</button>
                     <button data-eatout="${m.id}" data-eatout-state="${m.is_eat_out ? '1' : '0'}" style="border:0;background:none;color:var(--color-link);font-size:14px;font-weight:600;cursor:pointer;font-family:inherit">${m.is_eat_out ? 'Bỏ ăn ngoài' : 'Ăn ngoài'}</button>
