@@ -44,7 +44,7 @@
   "needs_review": true,
   "reviewed_by": null,
   "reviewed_at": null,
-  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04, làm cẩn thận theo QT-9: khoảng theo loại sữa đóng hộp, không lấy số một hãng — chưa qua duyệt lại sau khi sửa.",
+  "review_note": "SOÁT LẠI 2026-11-04 theo lệnh của Benjamin (không dùng khoảng tự suy cũ): đối chiếu nhãn hãng thật đang bán, xem drink-verification-packaged.md — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §6.",
   "media": [
     {
@@ -58,11 +58,11 @@
     {
       "label": "Năng lượng",
       "unit": "kcal/100 ml",
-      "value_min": 60,
+      "value_min": 41,
       "value_max": 80,
       "value": null,
-      "per_serving": "≈150–200 kcal/chai 250 ml",
-      "basis": "Sữa chua uống đóng chai/hộp là sữa chua + đường + (có thể) nước ép trái cây: sữa chua 61 kcal/100 g (hồ sơ sua-chua), đường thêm khoảng 8–12 g/100 ml × 4 = 32–48 kcal, cộng sữa chua loãng, tổng theo loại khoảng 60–80 kcal/100 ml. Đây là khoảng theo loại, không phải số một hãng — sữa chua uống các hãng VN có độ ngọt khác nhau. Không dùng engine (đồ đóng gói không qua engine).",
+      "per_serving": "≈103–200 kcal/chai 250 ml",
+      "basis": "SOÁT LẠI 2026-11-04 (nhãn hãng thật): sữa chua uống đóng chai/hộp theo loại 41–80 kcal/100 ml — MỞ RỘNG đầu dưới từ 60 xuống 41: Yakult Original qua OpenFoodFacts 66 kcal, đường 13,6 g/100 ml (nằm trong khoảng cũ); Yakult Balance (bản nhẹ) 41 kcal, đường 4,4 g/100 ml; Yakult chai 100 ml 73 kcal/100 ml. Các hãng VN khác có độ ngọt khác nhau, bản sữa chua uống trái cây 250 ml khoảng 60–80. Khoảng gộp 41–80 kcal/100 ml, tin cậy thấp — người dùng phải đọc nhãn chai cụ thể. Không dùng engine (đồ đóng gói không qua engine).",
       "confidence": "low",
       "source_ref": "Hồ sơ sua-chua (61 kcal/100 g); nhãn sữa chua uống (khoảng, không phải một nhãn cụ thể)"
     },
