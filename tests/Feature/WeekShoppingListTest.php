@@ -54,3 +54,19 @@ it('đi chợ cộng gộp gram theo nguyên liệu, loại bữa ăn ngoài, gi
         ->and($trungItem['unit_entries'][0]['unit_name'])->toBe('quả')
         ->and($resp->json('note'))->toContain('chưa quy đổi ra gói');
 });
+
+it('đi chợ nhóm theo gian hàng chung, thịt vào quầy thịt · thủy sản', function () {
+    $user = User::factory()->create(['role' => 'user']);
+    UserProfile::create(['user_id' => $user->id]);
+    $ga = Ingredient::create(['name_vi' => 'thịt gà', 'slug' => 'thit-ga-aisle', 'category' => 'thit', 'mapping_confidence' => 'high', 'source' => 'curated', 'confidence' => 'high']);
+    $dish = Dish::create(['slug' => 'mon-ga-aisle', 'country_code' => 'VN', 'source' => 'curated', 'confidence' => 'low', 'completeness_level' => 1]);
+    $dish->dishIngredients()->create(['ingredient_id' => $ga->id, 'quantity' => 100, 'unit_name' => 'g', 'grams_resolved' => 100, 'source' => 'curated']);
+    $plan = WeekPlan::create(['user_id' => $user->id, 'start_date' => '2026-11-09', 'end_date' => '2026-11-15']);
+    $day = WeekPlanDay::create(['week_plan_id' => $plan->id, 'date' => '2026-11-09']);
+    WeekPlanMeal::create(['week_plan_day_id' => $day->id, 'dish_id' => $dish->id, 'slot' => 'trua']);
+
+    $this->actingAs($user);
+    $this->getJson("/api/week-plans/{$plan->id}/shopping-list")->assertOk()
+        ->assertJsonFragment(['aisle' => 'Quầy thịt · thủy sản'])
+        ->assertJsonFragment(['slug' => 'thit-ga-aisle']);
+});

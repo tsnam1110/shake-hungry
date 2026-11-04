@@ -104,6 +104,10 @@ class ShoppingListBuilder
             'end_date' => $plan->end_date->toDateString(),
             'note' => 'Danh sách theo gram, chưa quy đổi ra gói và chưa có giá — chưa có bảng giá/gói đủ nguồn. Bữa ăn ngoài không tính vào danh sách.',
             'groups' => $this->groupByCategory($list),
+            // Giai đoạn 3, Task 2: nhóm theo gian hàng chung (xem AisleMapper
+            // — không phải sơ đồ của một cửa hàng cụ thể).
+            'aisle_groups' => AisleMapper::group($list),
+            'aisle_note' => 'Gian hàng chung theo nhóm nguyên liệu, không phải sơ đồ của một cửa hàng cụ thể; thứ tự chỉ là gợi ý đi chợ.',
             'items' => $list,
         ];
     }

@@ -197,9 +197,9 @@ document.getElementById('week-shopping').onclick = async () => {
     const box = document.getElementById('week-shopping-list');
     box.style.display = 'block';
     box.innerHTML = `<h2 class="ld-section-title">Danh sách đi chợ</h2>
-        <p class="ld-note" style="margin-top:-6px">${esc(data.note)}</p>
-        ${data.groups.map(g => `
-            <p class="ld-group-label">${esc(g.label)}</p>
+        <p class="ld-note" style="margin-top:-6px">${esc(data.note)}<br>${esc(data.aisle_note ?? '')}</p>
+        ${(data.aisle_groups ?? data.groups).map(g => `
+            <p class="ld-group-label">${esc(g.aisle ?? g.label)}</p>
             <div class="ld-group">${g.items.map(it => `
                 <div class="ld-row"><span class="grow"><span style="font-weight:600">${esc(it.name)}</span>
                 <span class="sub">${it.optional ? 'Tuỳ chọn · ' : ''}Dùng trong ${it.meals_count} bữa</span></span>

@@ -237,6 +237,16 @@ này trước Task suy kcal từ TDEE + mục tiêu (thuộc Phần 2.1, sau for
 - Test `tests/Feature/WeekAllergenTest.php`: món chứa lạc → chi tiết tuần
   trả nhóm dau-phong, nhãn Đậu phộng, definite.
 
+### Task 2 — Mapping gian hàng cho đi chợ — ĐÃ XONG (2026-11-04)
+- `App\Week\AisleMapper`: category → gian hàng chung (rau · trái cây,
+  thịt · thủy sản, gạo · mì · bột, gia vị · dầu mỡ, khác), thứ tự gợi
+  ý đi chợ. Ghi rõ trong code, API và giao diện: KHÔNG phải sơ đồ của
+  một cửa hàng cụ thể, vì chưa có nguồn sơ đồ theo cửa hàng; khi có dữ
+  liệu thật theo cửa hàng thì thay mapping này, không sửa logic cộng gộp.
+- API đi chợ thêm `aisle_groups` + `aisle_note`, trang /tuan-an render
+  theo gian hàng thay vì theo category phẳng.
+- Test thêm: thịt gà vào "Quầy thịt · thủy sản".
+
 ## Các phần tiếp theo (theo lệnh duyệt toàn bộ lộ trình 2026-11-04, làm tiếp không hỏi duyệt giữa chừng)
 - Phần 2.5, Task 2–5: đổi ngày bắt đầu, bắt đầu lại phần còn lại, ăn ngoài, loại thực phẩm.
 - Phần 2.6: danh sách đi chợ theo gram, không gói, không giá.
