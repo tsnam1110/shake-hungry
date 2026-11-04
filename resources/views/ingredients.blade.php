@@ -19,7 +19,19 @@
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#86868b" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20.5 20.5 16.6 16.6"/></svg>
             <input id="q" type="search" placeholder="Tìm nguyên liệu (cả tên gọi khác)" aria-label="Tìm nguyên liệu">
         </div>
-        <div class="ld-chips-scroll" id="allergen-filters" style="margin-top:12px" role="group" aria-label="Lọc theo chất gây dị ứng"></div>
+        <label class="ld-field-label" for="allergen-search" style="margin-top:12px">Dị ứng</label>
+        {{-- Lọc dị ứng kiểu select2 (không dùng thư viện Select2 thật — JS thuần +
+             CSS ld-*): ô chọn nhiều có tìm kiếm, mục đã chọn hiện thành tag có nút
+             ×, danh sách thả xuống có số lượng từng nhóm. Logic lọc (tag API)
+             giữ nguyên, chỉ đổi giao diện. --}}
+        <div class="ld-multi" id="allergen-multi">
+            <div class="ld-multi-box" id="allergen-box" role="combobox" aria-expanded="false" aria-haspopup="listbox" aria-controls="allergen-drop">
+                <span class="ld-multi-tags" id="allergen-tags"></span>
+                <input id="allergen-search" type="text" placeholder="Chọn dị ứng…" aria-label="Tìm và chọn dị ứng" autocomplete="off">
+                <span class="ld-multi-caret" aria-hidden="true">▾</span>
+            </div>
+            <div class="ld-multi-drop" id="allergen-drop" role="listbox" aria-multiselectable="true" hidden></div>
+        </div>
         <p class="ld-field-label" style="margin-top:12px">Dưỡng chất (trên 100g, chọn nhiều được)</p>
         <div class="ld-chips" id="nutrient-filters">
             <button type="button" class="ld-chip" data-nutrient="protein-high">Giàu đạm (≥ 10g)</button>
@@ -75,15 +87,58 @@ document.querySelectorAll('#nutrient-filters .ld-chip').forEach(b => b.addEventL
     reload();
 }));
 
-fetch('/api/tags').then(r => r.json()).then(ts => {
-    const usable = ts.filter(t => t.facet === 'allergen' && t.ingredients > 0);
-    document.getElementById('allergen-filters').innerHTML = usable.map(t =>
-        `<button type="button" class="ld-chip" data-slug="${t.slug}">Dị ứng: ${esc(t.name)} (${t.ingredients})</button>`).join('');
-    document.querySelectorAll('#allergen-filters .ld-chip').forEach(b => b.addEventListener('click', () => {
-        b.classList.toggle('active');
-        b.classList.contains('active') ? allergenTags.add(b.dataset.slug) : allergenTags.delete(b.dataset.slug);
-        reload();
+/* Lọc dị ứng kiểu select2: danh sách option lấy từ /api/tags như trước,
+   chỉ khác cách chọn — tìm kiếm không dấu, chọn nhiều, tag đã chọn có ×. */
+const norm = s => (s ?? '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+let allergenOptions = [];
+const allergenBox = document.getElementById('allergen-box');
+const allergenDrop = document.getElementById('allergen-drop');
+const allergenInput = document.getElementById('allergen-search');
+const allergenTagsEl = document.getElementById('allergen-tags');
+function renderAllergenTags() {
+    allergenTagsEl.innerHTML = [...allergenTags].map(slug => {
+        const t = allergenOptions.find(o => o.slug === slug);
+        const name = t?.name ?? slug;
+        return `<span class="ld-multi-tag">${esc(name)}<button type="button" data-remove="${esc(slug)}" aria-label="Bỏ dị ứng ${esc(name)}">×</button></span>`;
+    }).join('');
+    allergenTagsEl.querySelectorAll('[data-remove]').forEach(b => b.addEventListener('click', (e) => {
+        e.stopPropagation();
+        allergenTags.delete(b.dataset.remove);
+        renderAllergenTags(); renderAllergenOptions(); reload();
     }));
+    allergenInput.placeholder = allergenTags.size ? 'Tìm thêm dị ứng…' : 'Chọn dị ứng…';
+}
+function renderAllergenOptions() {
+    const q = norm(allergenInput.value.trim());
+    const list = allergenOptions.filter(o => !q || norm(o.name).includes(q) || norm(o.slug).includes(q));
+    allergenDrop.innerHTML = list.length ? list.map(o => {
+        const on = allergenTags.has(o.slug);
+        return `<button type="button" class="ld-multi-opt${on ? ' selected' : ''}" role="option" aria-selected="${on}" data-slug="${esc(o.slug)}"><span class="ld-multi-check">${on ? '✓' : ''}</span>${esc(o.name)}<span class="ld-multi-count">(${o.ingredients})</span></button>`;
+    }).join('') : '<p class="ld-multi-empty">Không có dị ứng nào khớp.</p>';
+    allergenDrop.querySelectorAll('[data-slug]').forEach(b => b.addEventListener('click', () => {
+        const slug = b.dataset.slug;
+        allergenTags.has(slug) ? allergenTags.delete(slug) : allergenTags.add(slug);
+        renderAllergenTags(); renderAllergenOptions(); allergenInput.focus(); reload();
+    }));
+}
+function setAllergenDrop(open) {
+    allergenDrop.hidden = !open;
+    allergenBox.setAttribute('aria-expanded', open ? 'true' : 'false');
+}
+allergenInput.addEventListener('focus', () => { renderAllergenOptions(); setAllergenDrop(true); });
+allergenInput.addEventListener('input', () => { renderAllergenOptions(); setAllergenDrop(true); });
+allergenInput.addEventListener('keydown', (e) => { if (e.key === 'Escape') { setAllergenDrop(false); allergenInput.blur(); } });
+allergenBox.addEventListener('click', (e) => {
+    if (e.target === allergenInput || e.target.closest('[data-remove]')) return;
+    setAllergenDrop(allergenDrop.hidden);
+    if (!allergenDrop.hidden) allergenInput.focus();
+});
+document.addEventListener('click', (e) => {
+    if (!document.getElementById('allergen-multi').contains(e.target)) setAllergenDrop(false);
+});
+fetch('/api/tags').then(r => r.json()).then(ts => {
+    allergenOptions = ts.filter(t => t.facet === 'allergen' && t.ingredients > 0);
+    renderAllergenTags(); renderAllergenOptions();
 });
 document.getElementById('with-nutrition').addEventListener('click', (e) => {
     const el = e.currentTarget;
