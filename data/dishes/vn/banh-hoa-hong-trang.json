@@ -136,10 +136,10 @@
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
-  "needs_review": false,
+  "needs_review": true,
   "reviewed_by": "tsnam1110@gmail.com",
   "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau). E-batch1 lô 3 2026-11-04: gắn cờ lại chưa duyệt — TRÙNG LẶP: toàn bộ danh sách nguyên liệu, khẩu phần 160 g/4 chiếc và bước làm giống hệt file banh-bao-banh-vac đã gắn cờ ở lô 1 (bột gạo 60 g, bột năng 15 g, thịt xay 30 g, tôm 20 g, mộc nhĩ 3 g, hành tím 5 g, nước mắm 3 g, đường 2 g, tiêu 0,3 g); hoa hồng trắng vốn là tên gọi của chính cặp bánh bao – bánh vạc theo các nguồn đã tra ở lô 1, nên đây là ứng viên gộp kiểu V7 — KHÔNG tự gộp trong lô này, cần quyết định giữ slug nào rồi mới xoá file + ảnh + mục index + mục MANIFEST của file bị gộp; định lượng cũng chưa có nguồn gram xác nhận như lô 1 đã ghi.",
   "tags": [
     "dac-san:quang-nam",
     "loai:banh"
