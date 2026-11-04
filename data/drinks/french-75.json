@@ -62,13 +62,16 @@
   "temperature": "lanh",
   "packaging": null,
   "sugar_range_g": null,
-  "alcohol_pct_range": null,
+  "alcohol_pct_range": [
+    16.0,
+    16.0
+  ],
   "label_note": "",
   "brand_examples": [],
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: kcal từ ethanol + đường theo công thức, ABV suy ra từ công thức, chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5.",
   "media": [
     {
@@ -77,5 +80,43 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 120,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml chất lỏng",
+      "value_min": 121,
+      "value_max": 121,
+      "value": null,
+      "per_serving": "≈145 kcal/ly (120 ml chất lỏng)",
+      "basis": "Cộng tay từ công thức (ethanol 7 kcal/g, mật độ 0,789 g/ml + đường 4 kcal/g; rượu mùi tính cả ethanol và đường theo nhãn loại, chưa đo trực tiếp): gin 30 ml × 2.21 = 66.3 kcal; nước chanh 15 ml × 0.22 = 3.3 kcal; siro đường 15 ml × 2.41 = 36.2 kcal; Champagne 60 ml × 0.65 = 39.0 kcal. Tổng 144.8 kcal / 120 ml = 121 kcal/100 ml. ABV suy ra từ công thức: 16.0% (ethanol 19.2 ml / 120 ml chất lỏng). Đây chưa phải đầu ra engine (engine chưa có logic ethanol).",
+      "confidence": "low",
+      "source_ref": "Bảng kcal/ml cocktail trong hồ sơ triển khai (ethanol + đường, xem basis)"
+    },
+    {
+      "label": "Độ cồn",
+      "unit": "% ABV",
+      "value": 16.0,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "≈16.0% ABV",
+      "basis": "ABV suy ra từ công thức: ethanol 19.2 ml trên tổng 120 ml chất lỏng = 16.0%. Đây là ABV của ly pha theo công thức, chưa đo trực tiếp, và thay đổi nếu quán dùng rượu có ABV khác.",
+      "confidence": "medium",
+      "source_ref": "Công thức trong file catalogue"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 9,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "9 g/ly (theo file, tổng đường thực khoảng 10 g)",
+      "basis": "sugar_added_g trong file = 9 g (đường thêm từ siro/đường, theo cách ghi của file); tổng đường thực ước tính từ rượu mùi, nước ép và siro khoảng 10 g, cao hơn số file vì file không tính đường trong rượu mùi và nước ép.",
+      "confidence": "low",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Không kết luận đầy đủ: các dòng rượu và rượu mùi đều chưa gắn hồ sơ nên không có dữ liệu tag dị ứng trong hệ thống — lưu ý: lòng trắng trứng (nếu có) là chất gây dị ứng, trang chi tiết phải hiện 'chưa đủ dữ kiện' khi có lòng trắng trứng chưa gắn hồ sơ.",
+  "tcm_note": "Không kết luận tính vị: các dòng rượu đều không có nhãn tính vị trong hồ sơ."
 }
