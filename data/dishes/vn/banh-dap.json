@@ -113,10 +113,10 @@
   "status": "draft",
   "source": "llm_suggested",
   "confidence": "unknown",
-  "needs_review": false,
+  "needs_review": true,
   "reviewed_by": "tsnam1110@gmail.com",
   "reviewed_at": "2026-10-31",
-  "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này).",
+  "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này). E-batch1 lô 2 2026-11-04: gắn cờ lại chưa duyệt — định danh khớp (bánh tráng nướng + bánh ướt bột gạo + mắm nêm + mỡ hành + lạc rang, bản ăn không không tôm là bản được nguồn nêu là ngon nhất), nhưng định lượng theo phần (bánh tráng 20 g, bột gạo 60 g, mắm nêm 15 g) chưa có nguồn định lượng nào xác nhận đúng số; hồ sơ mắm nêm trong kho đang null nên engine chưa tính trọn được món; chưa sửa số, chưa gọi là đã xác minh.",
   "tags": [
     "dac-san:quang-nam",
     "loai:banh"
