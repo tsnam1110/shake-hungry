@@ -44,7 +44,7 @@
   "needs_review": true,
   "reviewed_by": null,
   "reviewed_at": null,
-  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04, làm cẩn thận theo QT-9: khoảng theo loại trà đóng chai, caffeine tầm soát — chưa qua duyệt lại sau khi sửa.",
+  "review_note": "SOÁT LẠI 2026-11-04 theo lệnh của Benjamin (không dùng khoảng tự suy cũ): đối chiếu nhãn hãng thật đang bán, xem drink-verification-packaged.md — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §6.",
   "media": [
     {
@@ -59,10 +59,10 @@
       "label": "Năng lượng",
       "unit": "kcal/100 ml",
       "value_min": 35,
-      "value_max": 45,
+      "value_max": 50,
       "value": null,
-      "per_serving": "≈175–225 kcal/chai 500 ml",
-      "basis": "Trà chanh đóng chai là trà + nước chanh + đường: đường khoảng 8–10 g/100 ml × 4 = 32–40 kcal, cộng trà 1 kcal và nước chanh khoảng 2 kcal/100 ml, tổng khoảng 35–45 kcal/100 ml. Đây là khoảng theo loại, không phải số một hãng — trà chanh đóng chai các hãng VN có độ ngọt khác nhau đôi chút. Không dùng engine (đồ đóng gói không qua engine).",
+      "per_serving": "≈175–250 kcal/chai 500 ml",
+      "basis": "SOÁT LẠI 2026-11-04 (nhãn hãng thật): trà chanh đóng chai theo loại 35–50 kcal/100 ml — MỞ RỘNG đầu trên từ 45 lên 50: C2 Lemon qua OpenFoodFacts và fmcg-viet 47–50 kcal, đường 11–12 g/100 ml; các hãng nhẹ đường hơn khoảng 35–45 kcal (đường 8–10 g). Khoảng gộp 35–50 kcal/100 ml, tin cậy thấp — người dùng phải đọc nhãn chai cụ thể. Không dùng engine (đồ đóng gói không qua engine).",
       "confidence": "low",
       "source_ref": "Nhãn trà đóng chai (khoảng theo loại, không phải một nhãn cụ thể)"
     },
