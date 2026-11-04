@@ -14,8 +14,7 @@
     {
       "name": "nước ép cà chua",
       "quantity": 90,
-      "unit": "ml",
-      "ingredient_slug": "nuoc-ep-ca-chua"
+      "unit": "ml"
     },
     {
       "name": "nước chanh tươi",
@@ -71,10 +70,10 @@
   "alcohol_pct_range": null,
   "label_note": "",
   "brand_examples": [],
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: tất cả các dòng chưa có hồ sơ (khoảng), liquid 105 ml, lưu ý Worcestershire có cá cơm — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5.",
   "media": [
     {
@@ -83,5 +82,32 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 105,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml chất lỏng",
+      "value_min": 19,
+      "value_max": 20,
+      "value": null,
+      "per_serving": "≈20–21 kcal/ly (105 ml chất lỏng, chưa tính đá)",
+      "basis": "Cộng tay: nước ép cà chua 90 ml × 18 / 100 = 16,2 kcal (nước ép cà chua khoảng 17–19 kcal/100 ml, chưa có hồ sơ riêng nên để khoảng); nước chanh tươi 15 ml × 22 / 100 = 3,3 kcal; Worcestershire 2 dash (khoảng 1 ml) ≈ 1 kcal; sốt cay 2 dash không đáng kể; muối cần tây + tiêu đen không đáng kể; cải ngựa 0,25 thìa cà phê (khoảng 1,25 g × 48 / 100 = 0,6 kcal). Tổng 20,1–21,1 kcal / 105 ml = 19–20 kcal/100 ml. Đây chưa phải đầu ra engine.",
+      "confidence": "low",
+      "source_ref": ""
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 0,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "0 g/ly (đường thêm), đường tự nhiên khoảng 4 g",
+      "basis": "sugar_added_g trong file = 0, đúng vì không thêm đường; đường tự nhiên trong nước ép cà chua khoảng 3,5 g/100 ml × 90 ml = 3,2 g, cộng chanh khoảng 0,4 g.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Không kết luận đầy đủ: tất cả các dòng đều chưa gắn hồ sơ nên không có dữ liệu tag dị ứng trong hệ thống — lưu ý: Worcestershire thường chứa cá cơm (dị ứng cá) và cải ngựa là họ cải, trang chi tiết phải hiện 'chưa đủ dữ kiện', không được hiện 'không có dị ứng'.",
+  "tcm_note": "Không kết luận tính vị: các dòng đều không có nhãn tính vị trong hồ sơ."
 }
