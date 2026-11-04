@@ -24,7 +24,8 @@
     {
       "name": "nước",
       "quantity": 300,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "nuoc-loc"
     }
   ],
   "recipe_steps": [
@@ -56,10 +57,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": true,
   "uncertain_note": "Không có công thức chuẩn duy nhất; hỗn hợp thảo mộc thay đổi theo quán/gia đình.",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn đường phèn + nước, thảo mộc lượng None để khoảng 0–5, liquid 300 ml — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -68,5 +69,32 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 300,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml chất lỏng",
+      "value_min": 26,
+      "value_max": 27,
+      "value": null,
+      "per_serving": "≈77–82 kcal/ly (300 ml chất lỏng, chưa tính đá)",
+      "basis": "Cộng tay: thảo mộc hỗn hợp nấu rồi lọc — khoảng 0–5 kcal (thảo mộc nấu nước, phần đặc lọc bỏ, đường tan từ mía lau/long nhãn/thục địa không đo được, để khoảng 0–5, không bịa điểm); đường phèn 20 g × 387 / 100 = 77,4 kcal; nước 0 kcal. Tổng 77,4–82,4 kcal / 300 ml = 26–27 kcal/100 ml. Đây chưa phải đầu ra engine.",
+      "confidence": "low",
+      "source_ref": "data/ingredients/duong-phen.json, nuoc-loc.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 20,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "20 g/ly",
+      "basis": "sugar_added_g trong file = 20 g, khớp đường phèn trong công thức.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Đã gắn 2/3 dòng trong ly: đường phèn và nước không có tag dị ứng trong hồ sơ; thảo mộc hỗn hợp chưa gắn hồ sơ nên không kết luận đầy đủ.",
+  "tcm_note": "Không kết luận tính vị: thảo mộc hỗn hợp chưa có hồ sơ, các dòng còn lại không có nhãn."
 }
