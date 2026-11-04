@@ -90,7 +90,7 @@
   "needs_review": true,
   "reviewed_by": null,
   "reviewed_at": null,
-  "review_note": "SOÁT LẠI 2026-11-04 theo lệnh của Benjamin (không dùng khoảng tự suy cũ): đối chiếu nhãn hãng thật đang bán, xem drink-verification-packaged.md — chưa qua duyệt lại sau khi sửa.",
+  "review_note": "KIỂM THỬ LẠI ĐỢT 2 (2026-11-04) theo lệnh của Benjamin: bổ sung tcm_note còn thiếu theo mẫu các mục đóng gói khác (không kết luận, không bịa tính vị) — vẫn giữ cờ chưa duyệt.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §6; USDA SR Legacy FDC 168746 cho kcal/carb theo loại.",
   "media": [
     {
@@ -99,5 +99,6 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "tcm_note": "Không kết luận tính vị: mục đóng gói này chưa gắn hồ sơ nguyên liệu nên không kết luận ở tầng món."
 }
