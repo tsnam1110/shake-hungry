@@ -13,12 +13,14 @@
     {
       "name": "rau má tươi",
       "quantity": 100,
-      "unit": "g"
+      "unit": "g",
+      "ingredient_slug": "rau-ma"
     },
     {
       "name": "nước lọc",
       "quantity": 100,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "nuoc-loc"
     },
     {
       "name": "đường",
@@ -53,10 +55,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn đủ 3/3, rau má xay lọc để khoảng chiết xuất, liquid 180 ml — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -65,5 +67,32 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 180,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml chất lỏng",
+      "value_min": 41,
+      "value_max": 48,
+      "value": null,
+      "per_serving": "≈73–87 kcal/ly (180 ml chất lỏng, chưa tính đá)",
+      "basis": "Cộng tay với khoảng chiết xuất: rau má 100 g × 20–30 / 100 = 20,0–30,0 kcal là ĐẦU TRÊN nếu ăn cả lá (hồ sơ rau-ma 29 kcal/100 g, khoảng 20–30); rau má xay rồi lọc, xơ bỏ lại nên kcal trong nước thấp hơn cả lá — khoảng tay 15–29 kcal cho phần nước rau má (đầu dưới là chiết xuất, đầu trên là cả lá); nước 0 kcal; đường 15 g × 387 / 100 = 58,1 kcal. Tổng 73,1–87,1 kcal / 180 ml (100 ml nước + khoảng 80 ml nước rau má) = 41–48 kcal/100 ml. Đây chưa phải đầu ra engine; engine gắn rau má cả lá nên sẽ cho đầu trên.",
+      "confidence": "low",
+      "source_ref": "data/ingredients/rau-ma.json, nuoc-loc.json, duong-trang.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 15,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "15 g/ly",
+      "basis": "sugar_added_g trong file = 15 g, khớp đường trong công thức.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Đã gắn đủ 3/3 dòng trong ly: rau má, nước và đường đều không có tag dị ứng trong hồ sơ.",
+  "tcm_note": "Không kết luận tính vị: rau má không có nhãn tính vị trong hồ sơ (rau-ma tcm trống), các dòng còn lại cũng không có nhãn."
 }
