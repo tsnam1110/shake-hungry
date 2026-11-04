@@ -55,7 +55,7 @@
   "needs_review": true,
   "reviewed_by": null,
   "reviewed_at": null,
-  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: ginger ale + grenadine chưa có hồ sơ (khoảng), liquid 170 ml, MÂU THUẪN sugar file 20 vs tổng ~29 — chưa qua duyệt lại sau khi sửa.",
+  "review_note": "SOÁT LẠI 2026-11-04 theo lệnh của Benjamin (không dùng bảng tự suy cũ): tính lại từ thành phần đã kiểm chứng đa nguồn, xem drink-verification-liqueur.md — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5.",
   "media": [
     {
@@ -70,11 +70,11 @@
     {
       "label": "Năng lượng",
       "unit": "kcal/100 ml chất lỏng",
-      "value_min": 68,
-      "value_max": 73,
+      "value_min": 61,
+      "value_max": 61,
       "value": null,
-      "per_serving": "≈116–124 kcal/ly (170 ml chất lỏng, chưa tính đá)",
-      "basis": "Cộng tay: ginger ale 150 ml × 34 / 100 = 51,0 kcal (ginger ale có đường khoảng 34 kcal/100 ml, chưa có hồ sơ riêng nên ghi rõ số tham khảo); grenadine 20 ml × ~1,3 × 250–280 / 100 = 65,0–72,8 kcal. Tổng 116,0–123,8 kcal / 170 ml = 68–73 kcal/100 ml. Đây chưa phải đầu ra engine.",
+      "per_serving": "≈104 kcal/ly (170 ml chất lỏng, chưa tính đá)",
+      "basis": "SOÁT LẠI 2026-11-04 (đa nguồn): ginger ale 150 ml × 0,34 = 51,0 kcal (ginger ale có đường khoảng 34 kcal/100 ml, chưa có hồ sơ riêng nên ghi rõ số tham khảo); grenadine 20 ml × 2,67 = 53,4 kcal — SỬA so với cũ (grenadine cũ 65,0–72,8 kcal do nhân mật độ 1,3 vào 250–280 kcal/100 g): nhãn Rose's 267 kcal, 66,7 g đường/100 ml theo thể tích, không nhân thêm mật độ. Tổng mới 104,4 kcal / 170 ml = 61 kcal/100 ml (cũ 116–124, cao hơn 12–19 kcal). Đây chưa phải đầu ra engine.",
       "confidence": "low",
       "source_ref": ""
     },
@@ -85,7 +85,7 @@
       "value_min": null,
       "value_max": null,
       "per_serving": "20 g/ly (theo file, tổng đường thực khoảng 29 g)",
-      "basis": "sugar_added_g trong file = 20 g; kiểm chéo: ginger ale đường khoảng 13,5 g (150 ml, đường ~9 g/100 ml) + grenadine đường khoảng 15,6 g (26 g siro, đường ~60%) = khoảng 29,1 g, cao hơn 20 g trong file, ghi chú để chủ dự án chốt.",
+      "basis": "sugar_added_g trong file = 20 g; tổng đường thực sau soát lại khoảng 23,3 g (xem basis năng lượng).",
       "confidence": "medium",
       "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
     }
