@@ -1,0 +1,62 @@
+{
+  "category": "khac",
+  "confidence": "low",
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "edible_portion_note": null,
+  "edible_portion_pct": null,
+  "is_ready_to_eat": true,
+  "media": [],
+  "needs_review": true,
+  "oil_absorption_pct": null,
+  "review_note": "Hồ sơ mới tạo triển khai nhóm cà phê 2026-11-04, chưa qua duyệt của chủ dự án.",
+  "reviewed_at": null,
+  "reviewed_by": null,
+  "secondary_sources": [],
+  "source": "curated",
+  "name_vi": "Lòng đỏ trứng gà",
+  "name_en": "Egg yolk, raw",
+  "slug": "long-do-trung-ga",
+  "density_g_per_ml": null,
+  "density_note": null,
+  "reference_food": {
+    "alternatives": [],
+    "carb_g": 3.59,
+    "external_id": "172184",
+    "fat_g": 26.54,
+    "fct_source": "usda_sr_legacy",
+    "fiber_g": 0,
+    "kcal_max": null,
+    "kcal_min": null,
+    "kcal_per_100g": 322,
+    "mapping_confidence": "medium",
+    "mapping_note": "USDA SR Legacy 'Egg, yolk, raw, fresh' (FDC 172184, cùng mục đã dùng cho hồ sơ trung-ga-non): 322 kcal/100 g, protein 15,86, fat 26,54, carb 3,59, nước 52,31, natri 48 mg. 1 lòng đỏ lớn ≈ 17 g ≈ 55 kcal. Khác trung-ga nguyên quả (143 kcal/100 g) và khác trung-ga-non (nang trứng chưa rụng, tuy cùng mục SR nhưng tên gọi khác) — hồ sơ này là lòng đỏ trứng đã đẻ, dùng cho cà phê trứng.",
+    "protein_g": 15.86,
+    "scientific_name": "Gallus gallus domesticus",
+    "sodium_mg": 48,
+    "source_url": "https://fdc.nal.usda.gov/",
+    "water_g": 52.31
+  },
+  "tags": [
+    "origin:dong-vat",
+    "state:tuoi",
+    "allergen:trung"
+  ],
+  "tcm_traits": [
+    {
+      "nature": "on",
+      "flavor": "cam",
+      "element": "tho",
+      "source_ref": "《本草綱目》 mục 雞 tách riêng lòng đỏ: 甘、溫 (cam, ôn); ngũ hành Thổ theo quy ước dự án cho trứng, tin cậy thấp vì nguồn gốc chỉ ghi tính vị, không ghi ngũ hành riêng cho lòng đỏ.",
+      "confidence": "low"
+    }
+  ],
+  "units": [
+    {
+      "unit_name": "quả",
+      "grams": 17,
+      "note": "1 lòng đỏ trứng gà lớn, USDA yolk 17 g ≈ 55 kcal",
+      "source": "USDA yolk weight"
+    }
+  ]
+}
