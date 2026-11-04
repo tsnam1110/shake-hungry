@@ -140,10 +140,10 @@
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
-  "needs_review": false,
+  "needs_review": true,
   "reviewed_by": "tsnam1110@gmail.com",
   "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau). E-batch1 lô 1 2026-11-04: gắn cờ lại chưa duyệt — biến thể chỉ tôm càng khớp ghi chú văn hoá (đạm chính là tôm càng xanh), nhưng định lượng theo khẩu phần chưa được 2 nguồn xác nhận đúng số: Cookpad Hoàng Thị Tố Hà 10 phần (tôm 1 kg → 100 g, bắp giò 700 g → 70 g, sợi 2,5 kg → 250 g/phần) là biến thể có bắp giò, khác file (tôm 120 g, sợi 80 g, không bắp giò); các nguồn tôm càng khác (600 g tôm + 500 g sợi, không ghi số phần) cho khoảng 120–150 g tôm và 100–125 g sợi tùy chia 4–5 phần, file nằm ở biên dưới; nấm rơm có trong nhiều nguồn tôm càng nhưng không có trong file và không có trong ghi chú văn hoá — cần chốt biến thể (có/không bắp giò, có/không nấm) rồi mới xác minh định lượng; chưa sửa số.",
   "tags": [
     "loai:bun-pho-mi"
   ]
