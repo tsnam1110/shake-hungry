@@ -67,7 +67,7 @@
   "needs_review": true,
   "reviewed_by": null,
   "reviewed_at": null,
-  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: kcal từ ethanol + đường theo công thức, ABV suy ra từ công thức, chưa qua duyệt lại sau khi sửa.",
+  "review_note": "SOÁT LẠI 2026-11-04 theo lệnh của Benjamin (không dùng bảng tự suy cũ): tính lại từ rượu mùi/mixer đã kiểm chứng đa nguồn, xem drink-verification-liqueur.md — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5.",
   "media": [
     {
@@ -82,20 +82,20 @@
     {
       "label": "Năng lượng",
       "unit": "kcal/100 ml chất lỏng",
-      "value_min": 148,
-      "value_max": 148,
+      "value_min": 145,
+      "value_max": 151,
       "value": null,
-      "per_serving": "≈193 kcal/ly (130 ml chất lỏng)",
-      "basis": "Cộng tay từ công thức (ethanol 7 kcal/g, mật độ 0,789 g/ml + đường 4 kcal/g; rượu mùi tính cả ethanol và đường theo nhãn loại, chưa đo trực tiếp): rum trắng 60 ml × 2.21 = 132.6 kcal; nước bưởi 40 ml × 0.39 = 15.6 kcal; rượu mùi maraschino 15 ml × 2.77 = 41.5 kcal; nước cốt chanh 15 ml × 0.22 = 3.3 kcal. Tổng 193.1 kcal / 130 ml = 148 kcal/100 ml. ABV suy ra từ công thức: 22.2% (ethanol 28.8 ml / 130 ml chất lỏng). Đây chưa phải đầu ra engine (engine chưa có logic ethanol).",
+      "per_serving": "≈188–196 kcal/ly (130 ml chất lỏng)",
+      "basis": "SOÁT LẠI 2026-11-04 (đa nguồn): rum trắng 60 ml × 2,21 = 132,6 kcal; nước bưởi 40 ml × 0,39 = 15,6 kcal (CHƯA kiểm chứng, giữ số cũ); rượu mùi maraschino 15 ml khoảng 36,5–44,6 kcal — MỞ RỘNG thành khoảng: ABV 32% đã xác nhận qua nhiều nguồn (Luxardo), đường khoảng 29,7 g/100 ml (FatSecret 8,9 g/30 ml, gần với số cũ 30 g), nhưng kcal nguồn mâu thuẫn (FatSecret 243 kcal/100 ml, công thức ethanol + đường ≈297 kcal/100 ml, nhãn bán lẻ 321 kcal/100 g nhưng ghi carb 0 g nên không đáng tin) — số cũ 41,5 kcal nằm trong khoảng 243–297; nước cốt chanh 15 ml × 0,22 = 3,3 kcal. Tổng mới 188,0–196,1 kcal / 130 ml = 145–151 kcal/100 ml (cũ 193 nằm trong khoảng). ABV 22,2% không đổi (ethanol rum 24 + maraschino 4,8, chia 130 ml). Đây vẫn chưa phải đầu ra engine.",
       "confidence": "low",
       "source_ref": "Bảng kcal/ml cocktail trong hồ sơ triển khai (ethanol + đường, xem basis)"
     },
     {
       "label": "Độ cồn",
       "unit": "% ABV",
-      "value": 22.2,
-      "value_min": null,
-      "value_max": null,
+      "value": null,
+      "value_min": 22.2,
+      "value_max": 22.2,
       "per_serving": "≈22.2% ABV",
       "basis": "ABV suy ra từ công thức: ethanol 28.8 ml trên tổng 130 ml chất lỏng = 22.2%. Đây là ABV của ly pha theo công thức, chưa đo trực tiếp, và thay đổi nếu quán dùng rượu có ABV khác.",
       "confidence": "medium",
@@ -108,7 +108,7 @@
       "value_min": null,
       "value_max": null,
       "per_serving": "0 g/ly (theo file, tổng đường thực khoảng 7 g)",
-      "basis": "sugar_added_g trong file = 0 g (đường thêm từ siro/đường, theo cách ghi của file); tổng đường thực ước tính từ rượu mùi, nước ép và siro khoảng 7 g, cao hơn số file vì file không tính đường trong rượu mùi và nước ép.",
+      "basis": "sugar_added_g trong file = 0 g; tổng đường thực sau soát lại khoảng 9,6 g (xem basis năng lượng).",
       "confidence": "low",
       "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
     }
