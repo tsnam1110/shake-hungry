@@ -41,10 +41,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04, làm cẩn thận theo QT-9: khoảng theo loại cà phê lon, dị ứng sữa theo loại sản phẩm — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §6.",
   "media": [
     {
@@ -53,5 +53,42 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml",
+      "value_min": 50,
+      "value_max": 80,
+      "value": null,
+      "per_serving": "≈165–264 kcal/lon 330 ml",
+      "basis": "Cà phê lon vị mocha/latte là cà phê + sữa + đường: sữa tươi 60–61 kcal/100 g, đường thêm khoảng 8–12 g/100 ml × 4 = 32–48 kcal, cộng cà phê 2–3 kcal và (bản mocha) socola khoảng 5–10 kcal/100 ml. Tổng theo loại khoảng 50–80 kcal/100 ml — đây là khoảng theo loại, không phải số một hãng (các hãng VN và nhập khẩu có tỷ lệ sữa/đường khác nhau). Không dùng engine (đồ đóng gói không qua engine).",
+      "confidence": "low",
+      "source_ref": "Hồ sơ sua-tuoi (FDC 171265, 60–61 kcal/100 g); nhãn cà phê sữa lon (khoảng, không phải một nhãn cụ thể)"
+    },
+    {
+      "label": "Caffeine",
+      "unit": "mg/lon",
+      "value_min": 130,
+      "value_max": 200,
+      "value": null,
+      "per_serving": "≈130–200 mg/lon 330 ml (tầm soát)",
+      "basis": "Caffeine tầm soát theo loại cà phê lon: nồng độ khoảng 40–60 mg/100 ml, nhân lon 330 ml = 132–198 mg, làm tròn 130–200 mg/lon. Đây là khoảng tầm soát, tin cậy thấp, không phải số đo một hãng.",
+      "confidence": "low",
+      "source_ref": "Nồng độ caffeine cà phê pha loãng (tầm soát)"
+    },
+    {
+      "label": "Đường",
+      "unit": "g/lon",
+      "value_min": 26,
+      "value_max": 40,
+      "value": null,
+      "per_serving": "≈26–40 g/lon 330 ml",
+      "basis": "Đường trong cà phê lon vị khoảng 8–12 g/100 ml (theo nhãn loại cà phê sữa lon), nhân lon 330 ml = 26,4–39,6 g, làm tròn 26–40 g/lon. Đây là khoảng theo loại, không phải số một hãng.",
+      "confidence": "low",
+      "source_ref": "Nhãn cà phê sữa lon (khoảng, không phải một nhãn cụ thể)"
+    }
+  ],
+  "allergen_note": "Dị ứng Sữa: xác nhận theo loại sản phẩm — cà phê lon vị mocha/latte theo định nghĩa chứa sữa (sữa tươi/sữa bột), nên người dị ứng sữa phải tránh, ghi rõ là xác nhận theo loại sản phẩm, không phải từ tag trong hồ sơ (file chưa có dòng nguyên liệu để gắn tag). Các dị ứng khác chưa đủ dữ kiện.",
+  "tcm_note": "Không kết luận tính vị: mục đóng gói này chưa gắn hồ sơ nguyên liệu nên không kết luận ở tầng món."
 }
