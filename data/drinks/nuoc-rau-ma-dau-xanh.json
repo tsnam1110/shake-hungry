@@ -13,7 +13,8 @@
     {
       "name": "rau má",
       "quantity": 200,
-      "unit": "g"
+      "unit": "g",
+      "ingredient_slug": "rau-ma"
     },
     {
       "name": "đậu xanh bóc vỏ, nấu chín",
@@ -40,7 +41,8 @@
     {
       "name": "nước",
       "quantity": 150,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "nuoc-loc"
     }
   ],
   "recipe_steps": [
@@ -73,10 +75,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn rau má + sữa đặc + đường + nước, đậu xanh + sữa dừa chưa có hồ sơ, mẫu số 505 ml đồ uống (đá xay không ghi lượng) — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -85,5 +87,32 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 505,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml đồ uống",
+      "value_min": 96,
+      "value_max": 102,
+      "value": null,
+      "per_serving": "≈483–513 kcal/ly (505 ml đồ uống, chưa tính đá xay vì không ghi lượng đá)",
+      "basis": "Cộng tay: rau má 200 g — nước rau má khoảng 30–58 kcal (cả lá 200 g × 20–30 / 100 = 40–60 kcal, xay lọc nên thấp hơn cả lá, để khoảng 30–58); đậu xanh nấu chín 75 g × 105 / 100 = 78,8 kcal; sữa dừa 100 ml × 230 / 100 = 230,0 kcal; sữa đặc 20 ml × 1,29 × 334–341 / 100 = 86,2–88,0 kcal; đường 15 g × 387 / 100 = 58,1 kcal; nước 0 kcal. Tổng 482,9–512,9 kcal / 505 ml đồ uống (150 + 100 + 20 + khoảng 160 ml nước rau má + 75 g đậu) = 96–102 kcal/100 ml. Đá xay trong công thức không ghi lượng nên không tính vào mẫu số, ghi rõ. Đây chưa phải đầu ra engine.",
+      "confidence": "low",
+      "source_ref": "data/ingredients/rau-ma.json, sua-dac.json, duong-trang.json, nuoc-loc.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 15,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "15 g/ly (theo file, chưa tính đường trong sữa đặc)",
+      "basis": "sugar_added_g trong file = 15 g; kiểm chéo: đường 15 g + đường trong sữa đặc khoảng 14 g = 29 g, cao hơn 15 g trong file — file có thể chỉ tính đường thêm ngoài sữa đặc, ghi chú để chủ dự án chốt.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Đã gắn 4/6 dòng trong ly: sữa đặc có tag allergen:sua — dị ứng Sữa đã xác nhận cho phần sữa đặc; rau má, nước và đường không có tag; đậu xanh và sữa dừa chưa gắn hồ sơ nên không kết luận đầy đủ.",
+  "tcm_note": "Không kết luận tính vị: rau má không có nhãn tính vị trong hồ sơ, các dòng còn lại cũng không có nhãn."
 }
