@@ -44,7 +44,7 @@
   "needs_review": true,
   "reviewed_by": null,
   "reviewed_at": null,
-  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04, làm cẩn thận theo QT-9: khoảng theo loại trà đóng chai, caffeine tầm soát — chưa qua duyệt lại sau khi sửa.",
+  "review_note": "SOÁT LẠI 2026-11-04 theo lệnh của Benjamin (không dùng khoảng tự suy cũ): đối chiếu nhãn hãng thật đang bán, xem drink-verification-packaged.md — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §6.",
   "media": [
     {
@@ -59,10 +59,10 @@
       "label": "Năng lượng",
       "unit": "kcal/100 ml",
       "value_min": 1,
-      "value_max": 45,
+      "value_max": 50,
       "value": null,
-      "per_serving": "≈5–225 kcal/chai 500 ml",
-      "basis": "Trà xanh đóng chai trên thị trường có hai loại, file không ghi loại nào nên KHÔNG được lấy một điểm: loại không đường khoảng 1–3 kcal/100 ml (trà hãm, hồ sơ tra-xanh 1 kcal/100 g); loại có đường khoảng 30–45 kcal/100 ml (đường 7–10 g/100 ml × 4 = 28–40 kcal, cộng trà 1 kcal). Khoảng gộp 1–45 kcal/100 ml là khoảng theo loại, tin cậy thấp — người dùng phải đọc nhãn chai cụ thể. Không dùng engine (đồ đóng gói không qua engine).",
+      "per_serving": "≈5–250 kcal/chai 500 ml",
+      "basis": "SOÁT LẠI 2026-11-04 (nhãn hãng thật): trà xanh đóng chai theo loại 1–50 kcal/100 ml — MỞ RỘNG đầu trên từ 45 lên 50: bản không đường 1–3 kcal/100 ml (trà hãm, hồ sơ tra-xanh 1 kcal/100 g); bản có đường các hãng C2 qua OpenFoodFacts 35 kcal (táo, đường 8,5 g) tới 47–50 kcal/100 ml (chanh, đường 11–12 g). Khoảng gộp 1–50 kcal/100 ml, tin cậy thấp — người dùng phải đọc nhãn chai cụ thể. Không dùng engine (đồ đóng gói không qua engine).",
       "confidence": "low",
       "source_ref": "Nhãn trà đóng chai (khoảng theo loại, không phải một nhãn cụ thể)"
     },
@@ -84,7 +84,7 @@
       "value_max": 50,
       "value": null,
       "per_serving": "≈0–50 g/chai 500 ml",
-      "basis": "Đường trong trà xanh đóng chai: bản không đường 0 g, bản có đường khoảng 7–10 g/100 ml × 500 ml = 35–50 g/chai. Khoảng gộp 0–50 g/chai, ghi rõ hai loại.",
+      "basis": "SOÁT LẠI 2026-11-04: đường trong trà xanh đóng chai: bản không đường 0 g, bản có đường 8,5–12 g/100 ml × 500 ml = 43–60 g/chai (C2 táo 8,5 g, C2 chanh 11–12 g). Khoảng gộp 0–60 g/chai, ghi rõ hai loại.",
       "confidence": "low",
       "source_ref": "Nhãn trà đóng chai (khoảng theo loại)"
     }
