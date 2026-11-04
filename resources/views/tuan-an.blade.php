@@ -109,7 +109,7 @@ async function loadPlans() {
         const chua = p.days.filter(d => d.status === 'chua-du-du-lieu').length;
         return `<button data-plan="${p.id}" class="ld-row" style="cursor:pointer;text-align:left;width:100%;font-family:inherit;background:none;border:0">
             <span class="grow"><span style="font-weight:600">${esc(p.start_date)} – ${esc(p.end_date)}</span>
-            <span class="sub">${p.status === 'active' ? 'Đang hoạt động' : 'Đã lưu trữ'}${p.target_protein_g_per_day ? ` · Mục tiêu ${p.target_protein_g_per_day} g protein, ${p.target_kcal_per_day} kcal/ngày` : ' · Chưa đặt mục tiêu'}</span></span>
+            <span class="sub">${p.status === 'active' ? 'Đang hoạt động' : 'Đã lưu trữ'}${p.target_protein_g_per_day ? ` · Mục tiêu ${p.target_protein_g_per_day} g protein, ${p.target_kcal_per_day} kcal/ngày${p.goal ? ' (mục tiêu ' + ({ giam: 'giảm', 'duy-tri': 'duy trì', tang: 'tăng' }[p.goal] ?? p.goal) + ', kcal tuần đã điều chỉnh từ kcal Hồ sơ)' : ''}` : ' · Chưa đặt mục tiêu'}</span></span>
             <span><span class="ld-badge vu">${dat} đạt</span><span class="ld-badge hoi">${thieu} thiếu</span><span class="ld-badge unv">${chua} chưa đủ dữ kiện</span></span>
         </button>`;
     }).join('') || '<p style="color:var(--color-faint);padding:16px;margin:0">Chưa có tuần nào — tạo tuần mới ở trên.</p>';

@@ -286,8 +286,14 @@ này trước Task suy kcal từ TDEE + mục tiêu (thuộc Phần 2.1, sau for
   mớ rau thơm tại điểm bán, chưa có nhóm sữa/đậu phụ/đường/muối BHX
   ngày 04/11. Vì vậy ngân sách ở Task 1 chỉ là mục tiêu mềm, và đi chợ
   vẫn ở mức gram + gian hàng chung, chưa có tổng tiền hay số gói.
-- Tỉ lệ điều chỉnh kcal theo goal (giảm/tăng bao nhiêu %) vẫn chưa
-  chốt: tuần lấy kcal/protein từ Hồ sơ đã nhập, không tự suy từ goal.
+- Tỉ lệ điều chỉnh kcal theo goal — ĐÃ CHỐT VÀ LÀM XONG 2026-11-04 theo
+  đề xuất đã được Benjamin duyệt (main chat 21:44): giảm −20% / duy trì
+  0% / tăng +10%, làm tròn 50 kcal, áp trên kcal Hồ sơ đã nhập, không
+  suy từ TDEE, không ghi đè kcal Hồ sơ. `WeekTargetSuggester::adjustKcalForGoal`,
+  builder snapshot kcal tuần đã điều chỉnh (ví dụ Hồ sơ 2.000 + giảm →
+  tuần 1.600, Hồ sơ vẫn 2.000), ghi chú Hồ sơ và danh sách tuần đều ghi
+  rõ tỉ lệ. Test `WeekKcalGoalTest` 2 test pass. Đây là quy tắc Lắc Đói
+  chọn theo công thức Mealbird, không phải chuẩn y tế phổ quát.
   Công thức protein theo từng mục tiêu của Mealbird vẫn chỉ là tham
   khảo, Task 1 giữ một công thức chung đã chốt.
 - Mô hình hộ gia đình đã chọn hướng mã chỉ-đọc (Task 2 trên); hướng tài
@@ -303,3 +309,9 @@ này trước Task suy kcal từ TDEE + mục tiêu (thuộc Phần 2.1, sau for
   Test `tests/Feature/WeekCombinationsTest.php` 1 test pass.
 - Phần 2.5 Task 2–5 và Phần 2.6 đã xong trước đó, không còn là "phần tiếp
   theo" (mục cũ đã dọn để khỏi gây hiểu lầm).
+- Tỉ lệ kcal theo goal đã chốt và làm xong 2026-11-04 (xem phần "Còn
+  chặn" đã cập nhật): builder snapshot kcal tuần theo goal, test
+  `WeekKcalGoalTest`, ghi chú Hồ sơ cập nhật. Quy đổi gói cho mặt hàng
+  đóng gói sẵn CHƯA code ở đây — đề xuất nói rõ chỉ code sau khi chốt
+  snapshot 04/11, mà snapshot đang xử lý ở chat riêng, nên không làm
+  trùng và không code trên snapshot chưa chốt.

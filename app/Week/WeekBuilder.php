@@ -34,10 +34,13 @@ use Illuminate\Support\Facades\DB;
  *   không tự đặt ngưỡng.
  * - Vùng miền yêu thích chỉ là ưu tiên khi kho vùng đó đủ lớn (>= 5 món
  *   cho bữa đó); kho vùng nhỏ thì dùng toàn kho, còn hơn tuần trống.
- * - Mục tiêu kcal/protein lấy từ hồ sơ người dùng đã nhập, KHÔNG suy từ
- *   goal vì tỉ lệ điều chỉnh kcal theo mục tiêu chưa được chốt. Tuần
- *   không có mục tiêu vẫn xây được, validator sẽ ghi chưa đủ dữ kiện
- *   để kết luận đạt/thiếu.
+ * - Mục tiêu protein lấy từ hồ sơ người dùng đã nhập. Mục tiêu kcal của
+ *   tuần = kcal Hồ sơ × tỉ lệ theo goal (giảm 0,8 / duy trì 1,0 / tăng
+ *   1,1, làm tròn 50 kcal — quy tắc đã chốt 2026-11-04, xem
+ *   WeekTargetSuggester::adjustKcalForGoal), KHÔNG suy từ TDEE, và
+ *   KHÔNG ghi đè kcal Hồ sơ nên tạo tuần mới không cộng dồn tỉ lệ.
+ *   Tuần không có mục tiêu vẫn xây được, validator sẽ ghi chưa đủ dữ
+ *   kiện để kết luận đạt/thiếu.
  * - Tạo tuần mới thì các tuần active cũ của cùng người dùng chuyển sang
  *   archived, để luôn có một tuần hiện tại rõ ràng.
  */
@@ -65,7 +68,9 @@ class WeekBuilder
                 'end_date' => $start->copy()->addDays(6)->toDateString(),
                 'goal' => $profile?->goal,
                 'target_protein_g_per_day' => $profile?->target_protein_g_per_day,
-                'target_kcal_per_day' => $profile?->target_kcal_per_day,
+                // Kcal tuần đã điều chỉnh theo goal; kcal Hồ sơ giữ nguyên.
+                'target_kcal_per_day' => app(\App\Profile\WeekTargetSuggester::class)
+                    ->adjustKcalForGoal($profile?->target_kcal_per_day, $profile?->goal),
                 'status' => 'active',
             ]);
             $usage = [];

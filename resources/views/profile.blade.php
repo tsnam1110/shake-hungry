@@ -192,7 +192,7 @@
                 <div class="sm:col-span-2">
                     <span class="ld-field-label">Gợi ý protein cho tuần ăn</span>
                     <div id="week-target-suggestion" class="ld-note" style="margin-top:2px">Nhập chiều cao và kcal mục tiêu mỗi ngày rồi lưu hồ sơ để xem gợi ý protein.</div>
-                    <p class="ld-note" style="margin-top:8px">Mục tiêu giảm / duy trì / tăng hiện chỉ được lưu, chưa dùng để tự tính kcal mục tiêu — tỉ lệ điều chỉnh kcal theo mục tiêu chưa được chốt. Gợi ý protein không tự ghi đè số bạn đã nhập. Mục tiêu chỉ là ước tính chung, không phải lời khuyên y tế — xem <a href="/mien-tru-y-te" style="color:var(--color-link)">Miễn trừ y tế</a>.</p>
+                    <p class="ld-note" style="margin-top:8px">Khi tạo tuần, kcal mục tiêu của tuần = kcal Hồ sơ × tỉ lệ theo mục tiêu (giảm 0,8 / duy trì 1 / tăng 1,1, làm tròn 50 kcal) — quy tắc Lắc Đói chọn theo công thức Mealbird đã phân tích, không phải chuẩn y tế phổ quát, và không suy từ TDEE. Số kcal trong Hồ sơ không bị ghi đè, tạo tuần mới vẫn tính lại từ số gốc. Gợi ý protein không tự ghi đè số bạn đã nhập. Mục tiêu chỉ là ước tính chung, không phải lời khuyên y tế — xem <a href="/mien-tru-y-te" style="color:var(--color-link)">Miễn trừ y tế</a>.</p>
                 </div>
             </div>
             <button class="ld-btn ld-btn-primary" style="width:100%;margin-top:18px">Lưu hồ sơ</button>
