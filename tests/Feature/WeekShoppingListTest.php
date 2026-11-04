@@ -72,15 +72,18 @@ it('đi chợ nhóm theo gian hàng chung, thịt vào quầy thịt · thủy s
 });
 
 // F1: quy đổi gói từ snapshot 04/11 — nhiều gói thì hiện nhiều gói,
-// số gói làm tròn lên, ánh xạ ứng viên chưa hiển thị.
+// số gói làm tròn lên; ánh xạ ứng viên đã được duyệt hiển thị ngày
+// 2026-11-04 nên cũng hiện (duyệt hiển thị, không phải xác nhận đúng).
 it('F1 quy đổi gói khối lượng, dung tích qua density, và gói quả từ unit', function () {
     $duong = \App\Week\PackMapper::optionsFor('duong-trang', 1200, 0.845, []);
     $goi500 = collect($duong)->firstWhere('pack_grams', 500.0);
     $goi1kg = collect($duong)->firstWhere('pack_grams', 1000.0);
+    $goiVang = collect($duong)->firstWhere('product', 'Đường vàng Quảng Ngãi 1kg');
     expect($goi500['packs_needed'])->toBe(3)
         ->and($goi1kg['packs_needed'])->toBe(2)
-        ->and(collect($duong)->every(fn ($o) => $o['confidence'] === 'khớp'))->toBeTrue()
-        ->and(\App\Week\PackMapper::unverifiedCount('duong-trang'))->toBe(1);
+        ->and($goiVang['packs_needed'])->toBe(2)
+        ->and($goiVang['approved_display'])->toBeTrue()
+        ->and(\App\Week\PackMapper::unverifiedCount('duong-trang'))->toBe(0);
 
     // 900 g dầu ăn / density 0,92 ≈ 978 ml → chai 1 L cần 1.
     $dau = \App\Week\PackMapper::optionsFor('dau-an', 900, 0.92, []);
@@ -92,9 +95,9 @@ it('F1 quy đổi gói khối lượng, dung tích qua density, và gói quả t
     $hop10 = collect($trung)->firstWhere('pack_count', 10);
     expect($hop10['packs_needed'])->toBe(2);
 
-    // Toàn ứng viên (gạo tẻ) thì chưa hiển thị gói nào, chỉ đếm.
-    expect(\App\Week\PackMapper::optionsFor('gao-te', 1000, 0.782, []))->toBe([])
-        ->and(\App\Week\PackMapper::unverifiedCount('gao-te'))->toBe(23);
+    // Toàn ứng viên nhưng đã duyệt hiển thị (gạo tẻ): hiện đủ 23 gói.
+    expect(\App\Week\PackMapper::optionsFor('gao-te', 1000, 0.782, []))->toHaveCount(23)
+        ->and(\App\Week\PackMapper::unverifiedCount('gao-te'))->toBe(0);
 });
 
 it('F1 đi chợ qua API gắn lựa chọn gói cho nguyên liệu có ánh xạ khớp', function () {

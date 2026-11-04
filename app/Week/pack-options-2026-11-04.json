@@ -43,6 +43,7 @@
    "promo": "gốc 35.700 đ, giảm 3%",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 300.0,
    "unit_price_vnd": 115000.0,
    "unit_price_unit": "kg"
@@ -168,6 +169,7 @@
    "promo": "giá thường, không giảm",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 300.0,
    "unit_price_vnd": 132000.0,
    "unit_price_unit": "kg"
@@ -198,6 +200,7 @@
    "promo": "giá thường, không giảm",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 300.0,
    "unit_price_vnd": 19000.0,
    "unit_price_unit": "kg"
@@ -213,6 +216,7 @@
    "promo": "gốc 30.900 đ, giảm 19%",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 300.0,
    "unit_price_vnd": 83000.0,
    "unit_price_unit": "kg"
@@ -226,6 +230,7 @@
    "promo": "giá thường",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 400.0,
    "unit_price_vnd": 97000.0,
    "unit_price_unit": "kg"
@@ -239,6 +244,7 @@
    "promo": "gốc 50.200 đ, giảm 20%",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 500.0,
    "unit_price_vnd": 80320.0,
    "unit_price_unit": "kg"
@@ -252,6 +258,7 @@
    "promo": "112.900 đ/kg",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 500.0,
    "unit_price_vnd": 112900.0,
    "unit_price_unit": "kg"
@@ -265,6 +272,7 @@
    "promo": "131.900 đ/kg",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 500.0,
    "unit_price_vnd": 131900.0,
    "unit_price_unit": "kg"
@@ -280,6 +288,7 @@
    "promo": "gốc 36.400 đ, giảm 22%",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 400.0,
    "unit_price_vnd": 71025.0,
    "unit_price_unit": "kg"
@@ -293,6 +302,7 @@
    "promo": "gốc 43.200 đ, giảm 22%",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 400.0,
    "unit_price_vnd": 84202.0,
    "unit_price_unit": "kg"
@@ -306,6 +316,7 @@
    "promo": "gốc 28.500 đ, giảm 7%",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 300.0,
    "unit_price_vnd": 88293.0,
    "unit_price_unit": "kg"
@@ -319,6 +330,7 @@
    "promo": "giá thường",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 500.0,
    "unit_price_vnd": 105000.0,
    "unit_price_unit": "kg"
@@ -332,6 +344,7 @@
    "promo": "gốc 113.000 đ, giảm 30%",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_count": 1,
    "pack_count_unit": "con",
    "unit_price_vnd": 79000.0,
@@ -346,6 +359,7 @@
    "promo": "không tính theo kg",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_count": 1,
    "pack_count_unit": "con",
    "unit_price_vnd": 59900.0,
@@ -360,6 +374,7 @@
    "promo": "229.900 đ/kg",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 1000.0,
    "unit_price_vnd": 229900.0,
    "unit_price_unit": "kg"
@@ -373,6 +388,7 @@
    "promo": "129.900 đ/kg",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 1200.0,
    "unit_price_vnd": 129900.0,
    "unit_price_unit": "kg"
@@ -386,6 +402,7 @@
    "promo": "179.900 đ/kg",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 1000.0,
    "unit_price_vnd": 179900.0,
    "unit_price_unit": "kg"
@@ -399,6 +416,7 @@
    "promo": "126.900 đ/kg",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 500.0,
    "unit_price_vnd": 126900.0,
    "unit_price_unit": "kg"
@@ -412,6 +430,7 @@
    "promo": "95.900 đ/kg",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 500.0,
    "unit_price_vnd": 95900.0,
    "unit_price_unit": "kg"
@@ -723,6 +742,7 @@
    "promo": "giá thường",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_ml": 750.0,
    "unit_price_vnd": 124667.0,
    "unit_price_unit": "L"
@@ -736,6 +756,7 @@
    "promo": "mua kèm giảm 50% chai thứ 2",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_ml": 610.0,
    "unit_price_vnd": 132787.0,
    "unit_price_unit": "L"
@@ -749,6 +770,7 @@
    "promo": "mua kèm giảm 50% chai thứ 2",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_ml": 520.0,
    "unit_price_vnd": 165385.0,
    "unit_price_unit": "L"
@@ -762,6 +784,7 @@
    "promo": "giá thường",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_ml": 510.0,
    "unit_price_vnd": 126471.0,
    "unit_price_unit": "L"
@@ -775,6 +798,7 @@
    "promo": "giá thường",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_ml": 1000.0,
    "unit_price_vnd": 58000.0,
    "unit_price_unit": "L"
@@ -788,6 +812,7 @@
    "promo": "mua 2 chai 59.000 đ",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_ml": 500.0,
    "unit_price_vnd": 90000.0,
    "unit_price_unit": "L"
@@ -801,6 +826,7 @@
    "promo": "combo 2 chai 63.000 đ",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_ml": 500.0,
    "unit_price_vnd": 122000.0,
    "unit_price_unit": "L"
@@ -814,6 +840,7 @@
    "promo": "giá thường",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_ml": 490.0,
    "unit_price_vnd": 81633.0,
    "unit_price_unit": "L"
@@ -827,6 +854,7 @@
    "promo": "mua 2 chai 49.000 đ",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_ml": 900.0,
    "unit_price_vnd": 43333.0,
    "unit_price_unit": "L"
@@ -840,6 +868,7 @@
    "promo": "gốc 719.000 đ, giảm 48%",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_ml": 8820.0,
    "unit_price_vnd": 42404.0,
    "unit_price_unit": "L"
@@ -853,6 +882,7 @@
    "promo": "gốc 270.000 đ, giảm 41%",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_ml": 12000.0,
    "unit_price_vnd": 13250.0,
    "unit_price_unit": "L"
@@ -866,6 +896,7 @@
    "promo": "giá thường",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_ml": 610.0,
    "unit_price_vnd": 109016.0,
    "unit_price_unit": "L"
@@ -879,6 +910,7 @@
    "promo": "không hiển thị giá gốc",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_ml": 500.0,
    "unit_price_vnd": 147200.0,
    "unit_price_unit": "L"
@@ -892,6 +924,7 @@
    "promo": "không hiển thị giá gốc",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_ml": 50.0,
    "unit_price_vnd": 402000.0,
    "unit_price_unit": "L"
@@ -905,6 +938,7 @@
    "promo": "không hiển thị giá gốc",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_ml": 500.0,
    "unit_price_vnd": 183800.0,
    "unit_price_unit": "L"
@@ -918,6 +952,7 @@
    "promo": "không hiển thị giá gốc",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_ml": 250.0,
    "unit_price_vnd": 322000.0,
    "unit_price_unit": "L"
@@ -931,6 +966,7 @@
    "promo": "không hiển thị giá gốc",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_ml": 200.0,
    "unit_price_vnd": 420500.0,
    "unit_price_unit": "L"
@@ -944,6 +980,7 @@
    "promo": "không hiển thị giá gốc",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_ml": 520.0,
    "unit_price_vnd": 220769.0,
    "unit_price_unit": "L"
@@ -957,6 +994,7 @@
    "promo": "không hiển thị giá gốc",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_ml": 750.0,
    "unit_price_vnd": 65467.0,
    "unit_price_unit": "L"
@@ -970,6 +1008,7 @@
    "promo": "gốc 49.000 đ, giảm 39%",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_ml": 500.0,
    "unit_price_vnd": 59800.0,
    "unit_price_unit": "L"
@@ -983,6 +1022,7 @@
    "promo": "gốc 38.000 đ, giảm 20%",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_ml": 410.0,
    "unit_price_vnd": 74146.0,
    "unit_price_unit": "L"
@@ -998,6 +1038,7 @@
    "promo": "giá thường",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_ml": 500.0,
    "unit_price_vnd": 150000.0,
    "unit_price_unit": "L"
@@ -1011,6 +1052,7 @@
    "promo": "mua kèm giảm 50% chai thứ 2",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_ml": 720.0,
    "unit_price_vnd": 93750.0,
    "unit_price_unit": "L"
@@ -1024,6 +1066,7 @@
    "promo": "mua 2 chai 99.000 đ",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_ml": 500.0,
    "unit_price_vnd": 110000.0,
    "unit_price_unit": "L"
@@ -1037,6 +1080,7 @@
    "promo": "mua 2 chai 69.000 đ",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_ml": 750.0,
    "unit_price_vnd": 70667.0,
    "unit_price_unit": "L"
@@ -1050,6 +1094,7 @@
    "promo": "giá thường",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_ml": 242.0,
    "unit_price_vnd": 65289.0,
    "unit_price_unit": "L"
@@ -1063,6 +1108,7 @@
    "promo": "giá thường",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_ml": 900.0,
    "unit_price_vnd": 73333.0,
    "unit_price_unit": "L"
@@ -1076,6 +1122,7 @@
    "promo": "gốc 56.000 đ, giảm 12%",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_ml": 650.0,
    "unit_price_vnd": 75385.0,
    "unit_price_unit": "L"
@@ -1089,6 +1136,7 @@
    "promo": "giá thường",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_ml": 900.0,
    "unit_price_vnd": 30556.0,
    "unit_price_unit": "L"
@@ -1102,6 +1150,7 @@
    "promo": "gốc 412.000 đ, giảm 10%",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_ml": 13500.0,
    "unit_price_vnd": 27333.0,
    "unit_price_unit": "L"
@@ -1115,6 +1164,7 @@
    "promo": "không hiển thị giá gốc",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_ml": 500.0,
    "unit_price_vnd": 83600.0,
    "unit_price_unit": "L"
@@ -1128,6 +1178,7 @@
    "promo": "không hiển thị giá gốc",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_ml": 500.0,
    "unit_price_vnd": 229800.0,
    "unit_price_unit": "L"
@@ -1141,6 +1192,7 @@
    "promo": "không hiển thị giá gốc",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_ml": 750.0,
    "unit_price_vnd": 71467.0,
    "unit_price_unit": "L"
@@ -1154,6 +1206,7 @@
    "promo": "không hiển thị giá gốc",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_ml": 900.0,
    "unit_price_vnd": 69444.0,
    "unit_price_unit": "L"
@@ -1167,6 +1220,7 @@
    "promo": "không hiển thị giá gốc",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_ml": 750.0,
    "unit_price_vnd": 61333.0,
    "unit_price_unit": "L"
@@ -1180,6 +1234,7 @@
    "promo": "gốc 67.400 đ, giảm 13%",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_ml": 1200.0,
    "unit_price_vnd": 49083.0,
    "unit_price_unit": "L"
@@ -1223,6 +1278,7 @@
    "promo": "gốc 18.600 đ, giảm 73%",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 400.0,
    "unit_price_vnd": 12500.0,
    "unit_price_unit": "kg"
@@ -1307,6 +1363,7 @@
    "promo": "gốc 18.600 đ, giảm 73%",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 400.0,
    "unit_price_vnd": 12500.0,
    "unit_price_unit": "kg"
@@ -1320,6 +1377,7 @@
    "promo": "gốc 18.600 đ, giảm 73%",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 400.0,
    "unit_price_vnd": 12500.0,
    "unit_price_unit": "kg"
@@ -1333,6 +1391,7 @@
    "promo": "gốc 17.900 đ, giảm 20%",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 500.0,
    "unit_price_vnd": 28640.0,
    "unit_price_unit": "kg"
@@ -1346,6 +1405,7 @@
    "promo": "không hiển thị giá gốc",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 1000.0,
    "unit_price_vnd": 14900.0,
    "unit_price_unit": "kg"
@@ -1404,6 +1464,7 @@
    "promo": "gốc 17.900 đ, giảm 72%",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 400.0,
    "unit_price_vnd": 12500.0,
    "unit_price_unit": "kg"
@@ -1434,6 +1495,7 @@
    "promo": "giá thường",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 500.0,
    "unit_price_vnd": 88800.0,
    "unit_price_unit": "kg"
@@ -1447,6 +1509,7 @@
    "promo": "gốc 20.900 đ, giảm 76%",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 300.0,
    "unit_price_vnd": 16667.0,
    "unit_price_unit": "kg"
@@ -1460,6 +1523,7 @@
    "promo": "giá thường",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 200.0,
    "unit_price_vnd": 99500.0,
    "unit_price_unit": "kg"
@@ -1473,6 +1537,7 @@
    "promo": "giá thường",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 200.0,
    "unit_price_vnd": 148000.0,
    "unit_price_unit": "kg"
@@ -1486,6 +1551,7 @@
    "promo": "giá thường",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 200.0,
    "unit_price_vnd": 93000.0,
    "unit_price_unit": "kg"
@@ -1677,6 +1743,7 @@
    "promo": "giá thường",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 100.0,
    "unit_price_vnd": 64000.0,
    "unit_price_unit": "kg"
@@ -1720,6 +1787,7 @@
    "promo": "gốc 29.900 đ, giảm 36%",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_count": 3,
    "pack_count_unit": "trai",
    "unit_price_vnd": 6333.0,
@@ -1734,6 +1802,7 @@
    "promo": "gốc 9.000 đ, giảm 20%",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_count": 1,
    "pack_count_unit": "trai",
    "unit_price_vnd": 7200.0,
@@ -1776,6 +1845,7 @@
    "promo": "giá thường",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 400.0,
    "unit_price_vnd": 42400.0,
    "unit_price_unit": "kg"
@@ -1830,6 +1900,7 @@
    "promo": "không hiển thị giá gốc",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 400.0,
    "unit_price_vnd": 67250.0,
    "unit_price_unit": "kg"
@@ -1903,6 +1974,7 @@
    "promo": "gốc 25.900 đ, giảm 20%",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 500.0,
    "unit_price_vnd": 41440.0,
    "unit_price_unit": "kg"
@@ -1929,6 +2001,7 @@
    "promo": "gốc 17.900 đ, giảm 20%",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 500.0,
    "unit_price_vnd": 28640.0,
    "unit_price_unit": "kg"
@@ -1942,6 +2015,7 @@
    "promo": "gốc 26.900 đ, giảm 20%",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 500.0,
    "unit_price_vnd": 43040.0,
    "unit_price_unit": "kg"
@@ -1972,6 +2046,7 @@
    "promo": "giá thường",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 500.0,
    "unit_price_vnd": 37800.0,
    "unit_price_unit": "kg"
@@ -2017,6 +2092,7 @@
    "promo": "gốc 13.240 đ, giảm 20%",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 200.0,
    "unit_price_vnd": 52960.0,
    "unit_price_unit": "kg"
@@ -2105,6 +2181,7 @@
    "promo": "gốc 16.600 đ, giảm 20%; mua từ 2 túi 16.000 đ/túi",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 200.0,
    "unit_price_vnd": 66400.0,
    "unit_price_unit": "kg"
@@ -2118,6 +2195,7 @@
    "promo": "gốc 27.300 đ, giảm 20%; mua từ 2 túi 21.000 đ/túi",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 200.0,
    "unit_price_vnd": 109200.0,
    "unit_price_unit": "kg"
@@ -2133,6 +2211,7 @@
    "promo": "giá thường",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 50.0,
    "unit_price_vnd": 106000.0,
    "unit_price_unit": "kg"
@@ -2178,6 +2257,7 @@
    "promo": "gốc 32.400 đ, giảm 20%",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 500.0,
    "unit_price_vnd": 51840.0,
    "unit_price_unit": "kg"
@@ -2616,6 +2696,7 @@
    "promo": "gốc 115.000 đ, giảm 21%",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 3000.0,
    "unit_price_vnd": 30300.0,
    "unit_price_unit": "kg"
@@ -2629,6 +2710,7 @@
    "promo": "không hiển thị giá gốc",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 3000.0,
    "unit_price_vnd": 31667.0,
    "unit_price_unit": "kg"
@@ -2642,6 +2724,7 @@
    "promo": "gốc 66.000 đ, giảm 5%",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 3000.0,
    "unit_price_vnd": 20967.0,
    "unit_price_unit": "kg"
@@ -2655,6 +2738,7 @@
    "promo": "gốc 251.200 đ, giảm 48%",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 5000.0,
    "unit_price_vnd": 25980.0,
    "unit_price_unit": "kg"
@@ -2668,6 +2752,7 @@
    "promo": "không hiển thị giá gốc",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 5000.0,
    "unit_price_vnd": 37800.0,
    "unit_price_unit": "kg"
@@ -2681,6 +2766,7 @@
    "promo": "gốc 79.000 đ, giảm 25%",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 2000.0,
    "unit_price_vnd": 29500.0,
    "unit_price_unit": "kg"
@@ -2694,6 +2780,7 @@
    "promo": "gốc 139.000 đ, giảm 11%",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 5000.0,
    "unit_price_vnd": 24800.0,
    "unit_price_unit": "kg"
@@ -2707,6 +2794,7 @@
    "promo": "gốc 834.000 đ, giảm 11%",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 30000.0,
    "unit_price_vnd": 24667.0,
    "unit_price_unit": "kg"
@@ -2720,6 +2808,7 @@
    "promo": "gốc 179.000 đ, giảm 13%",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 5000.0,
    "unit_price_vnd": 31000.0,
    "unit_price_unit": "kg"
@@ -2733,6 +2822,7 @@
    "promo": "gốc 716.000 đ, giảm 5%",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 20000.0,
    "unit_price_vnd": 34000.0,
    "unit_price_unit": "kg"
@@ -2746,6 +2836,7 @@
    "promo": "gốc 139.000 đ, giảm 22%",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 5000.0,
    "unit_price_vnd": 21800.0,
    "unit_price_unit": "kg"
@@ -2759,6 +2850,7 @@
    "promo": "gốc 49.000 đ, giảm 20%",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 2000.0,
    "unit_price_vnd": 19500.0,
    "unit_price_unit": "kg"
@@ -2772,6 +2864,7 @@
    "promo": "gốc 139.000 đ, giảm 24%",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 5000.0,
    "unit_price_vnd": 21000.0,
    "unit_price_unit": "kg"
@@ -2785,6 +2878,7 @@
    "promo": "gốc 139.000 đ, giảm 11%",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 5000.0,
    "unit_price_vnd": 24800.0,
    "unit_price_unit": "kg"
@@ -2798,6 +2892,7 @@
    "promo": "gốc 695.000 đ, giảm 12%",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 25000.0,
    "unit_price_vnd": 24600.0,
    "unit_price_unit": "kg"
@@ -2811,6 +2906,7 @@
    "promo": "gốc 139.000 đ, giảm 11%",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 5000.0,
    "unit_price_vnd": 24800.0,
    "unit_price_unit": "kg"
@@ -2824,6 +2920,7 @@
    "promo": "gốc 695.000 đ, giảm 12%",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 25000.0,
    "unit_price_vnd": 24600.0,
    "unit_price_unit": "kg"
@@ -2837,6 +2934,7 @@
    "promo": "gốc 129.000 đ, giảm 16%",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 5000.0,
    "unit_price_vnd": 21800.0,
    "unit_price_unit": "kg"
@@ -2850,6 +2948,7 @@
    "promo": "không ghi giá gốc",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 5000.0,
    "unit_price_vnd": 22000.0,
    "unit_price_unit": "kg"
@@ -2863,6 +2962,7 @@
    "promo": "gốc 550.000 đ, giảm 10%",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 25000.0,
    "unit_price_vnd": 19800.0,
    "unit_price_unit": "kg"
@@ -2876,6 +2976,7 @@
    "promo": "gốc 95.000 đ, giảm 11%",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 5000.0,
    "unit_price_vnd": 17000.0,
    "unit_price_unit": "kg"
@@ -2889,6 +2990,7 @@
    "promo": "không ghi giá gốc",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 5000.0,
    "unit_price_vnd": 17000.0,
    "unit_price_unit": "kg"
@@ -2902,6 +3004,7 @@
    "promo": "gốc 425.000 đ, giảm 7%",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 25000.0,
    "unit_price_vnd": 15800.0,
    "unit_price_unit": "kg"
@@ -2917,6 +3020,7 @@
    "promo": "không ghi giá gốc",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_ml": 10560.0,
    "unit_price_vnd": 25568.0,
    "unit_price_unit": "L"
@@ -2930,6 +3034,7 @@
    "promo": "không ghi giá gốc",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_ml": 10560.0,
    "unit_price_vnd": 25568.0,
    "unit_price_unit": "L"
@@ -2969,6 +3074,7 @@
    "promo": "gốc 415.000 đ, giảm 31%",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_ml": 10560.0,
    "unit_price_vnd": 26989.0,
    "unit_price_unit": "L"
@@ -2982,6 +3088,7 @@
    "promo": "không ghi giá gốc",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_ml": 220.0,
    "unit_price_vnd": 41364.0,
    "unit_price_unit": "L"
@@ -2995,6 +3102,7 @@
    "promo": "gốc 175.000 đ, giảm 23%",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_ml": 4320.0,
    "unit_price_vnd": 31250.0,
    "unit_price_unit": "L"
@@ -3339,6 +3447,7 @@
    "promo": "không ghi giá gốc",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 220.0,
    "unit_price_vnd": 71364.0,
    "unit_price_unit": "kg"
@@ -3421,6 +3530,7 @@
    "promo": "không ghi giá gốc",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 1000.0,
    "unit_price_vnd": 37500.0,
    "unit_price_unit": "kg"
@@ -3559,6 +3669,7 @@
    "promo": "không ghi giá gốc",
    "confidence": "ứng viên",
    "snapshot_date": "2026-11-04",
+   "approved_display": true,
    "pack_grams": 120.0,
    "unit_price_vnd": 133333.0,
    "unit_price_unit": "kg"

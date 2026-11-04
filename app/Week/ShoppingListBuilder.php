@@ -116,7 +116,7 @@ class ShoppingListBuilder
             'plan_id' => $plan->id,
             'start_date' => $plan->start_date->toDateString(),
             'end_date' => $plan->end_date->toDateString(),
-            'note' => 'Danh sách theo gram, kèm lựa chọn gói từ snapshot giá 04/11 (BHX + WinMart, tách kênh, không cộng chéo; khuyến mãi có điều kiện không trừ vào giá suy ra). Mặt hàng chưa có gói trong snapshot, hoặc ánh xạ gói chưa xác nhận, thì chỉ hiển thị gram. Bữa ăn ngoài không tính vào danh sách. Chưa có tổng tiền tuần — budget_vnd vẫn chỉ là mục tiêu mềm do bạn nhập.',
+            'note' => 'Danh sách theo gram, kèm lựa chọn gói từ snapshot giá 04/11 (BHX + WinMart, tách kênh, không cộng chéo; khuyến mãi có điều kiện không trừ vào giá suy ra; các ánh xạ gói đã được chủ dự án duyệt hiển thị ngày 2026-11-04). Mặt hàng chưa có gói trong snapshot thì chỉ hiển thị gram. Bữa ăn ngoài không tính vào danh sách. Chưa có tổng tiền tuần — budget_vnd vẫn chỉ là mục tiêu mềm do bạn nhập.',
             'groups' => $this->groupByCategory($list),
             // Giai đoạn 3, Task 2: nhóm theo gian hàng chung (xem AisleMapper
             // — không phải sơ đồ của một cửa hàng cụ thể).

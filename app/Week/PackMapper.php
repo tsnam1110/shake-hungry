@@ -9,9 +9,11 @@ namespace App\Week;
  *
  * Nguồn: app/Week/pack-options-2026-11-04.json, sinh bằng script
  * ~/workspace/tuan-an-anh-xa-goi-f1.py từ snapshot 04/11 (BHX + WinMart,
- * tách kênh, không cộng chéo). Chỉ hiển thị ánh xạ 'khớp'; ánh xạ
- * 'ứng viên' chưa xác nhận thì đếm riêng (unverifiedCount) để ghi chú,
- * không hiển thị thành lựa chọn.
+ * tách kênh, không cộng chéo). Hiển thị ánh xạ 'khớp' và ánh xạ 'ứng viên'
+ * đã được chủ dự án duyệt HIỂN THỊ (approved_display, 2026-11-04) — duyệt
+ * hiển thị, không phải xác nhận ánh xạ đúng. Ánh xạ 'ứng viên' chưa được
+ * duyệt hiển thị (nếu snapshot mới sinh thêm) thì đếm riêng
+ * (unverifiedCount) để ghi chú, không hiển thị thành lựa chọn.
  *
  * Cách tính: gói khối lượng dùng tổng gram; gói dung tích dùng tổng ml
  * (gram / density, hoặc cộng dồn unit ml/l); gói đếm dùng tổng số quả/
@@ -54,12 +56,18 @@ final class PackMapper
         };
     }
 
-    /** Số lựa chọn ứng viên (chưa xác nhận ánh xạ) của một nguyên liệu. */
+    /** Lựa chọn có được hiển thị không: 'khớp', hoặc 'ứng viên' đã duyệt hiển thị. */
+    private static function isShown(array $opt): bool
+    {
+        return ($opt['confidence'] ?? null) === 'khớp' || ($opt['approved_display'] ?? false) === true;
+    }
+
+    /** Số lựa chọn ứng viên chưa được duyệt hiển thị của một nguyên liệu. */
     public static function unverifiedCount(string $slug): int
     {
         $count = 0;
         foreach (self::all()[$slug] ?? [] as $opt) {
-            if (($opt['confidence'] ?? null) !== 'khớp') {
+            if (! self::isShown($opt)) {
                 $count++;
             }
         }
@@ -105,8 +113,8 @@ final class PackMapper
 
         $out = [];
         foreach (self::all()[$slug] ?? [] as $opt) {
-            // Ứng viên: chưa hiển thị thành lựa chọn.
-            if (($opt['confidence'] ?? null) !== 'khớp') {
+            // Ứng viên chưa duyệt hiển thị: không hiển thị thành lựa chọn.
+            if (! self::isShown($opt)) {
                 continue;
             }
             $packs = null;
