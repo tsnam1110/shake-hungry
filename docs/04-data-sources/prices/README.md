@@ -70,15 +70,23 @@ docs/04-data-sources/prices/
 - Mỗi file tuần ghi rõ `collected_date` là ngày thu thập thật trong tuần
   đó, thường là ngày chạy task đầu tuần. Mọi dòng trong file đó phải có
   cùng `collected_date`, và ngày đó phải nằm trong đúng tuần ISO ghi
-  trong tên file. Một file tuần không bao giờ chứa giá của hai ngày khác
-  nhau.
+  trong tên file. Đính chính ngày 2026-11-05 theo yêu cầu của chủ dự án,
+  thay cho câu cũ "không bao giờ chứa giá của hai ngày khác nhau": giá
+  không cần đúng ngày thu thập, chỉ cần lấy giá gần nhất trong vòng 7
+  ngày tính tới ngày thu thập. Ngày nguồn thật của từng dòng ghi vào
+  `source_date` khi khác `collected_date`; `source_date` phải nhỏ hơn
+  hoặc bằng `collected_date` và không cũ hơn 7 ngày, không lấy giá tương
+  lai và không lấy giá cũ hơn 7 ngày.
 - Không bao giờ mang giá của tuần trước sang file của tuần sau. Tuần nào
   không thu được mặt hàng nào thì mặt hàng đó vào danh sách `missing`,
   kèm lý do, không được lấp bằng giá cũ, giá của kênh khác hay giá của
   mặt hàng tương tự.
-- File tuần KHÔNG tính trung bình giá của nhiều ngày thành một giá tuần,
-  vì trong một file tuần chỉ có một ngày thu thập duy nhất. Muốn biết giá
-  thay đổi ra sao thì so sánh các file tuần liên tiếp, không gộp chúng.
+- File tuần KHÔNG tính trung bình giá của nhiều ngày thành một giá tuần.
+  Trong một file tuần, `collected_date` vẫn là một ngày duy nhất, nhưng
+  các dòng có thể có `source_date` khác nhau trong cửa sổ 7 ngày, và khi
+  có nhiều giá trong cửa sổ đó cho cùng một sản phẩm, kênh và biến thể
+  thì chỉ ghi giá gần nhất. Muốn biết giá thay đổi ra sao thì so sánh
+  các file tuần liên tiếp, không gộp chúng.
 
 ## Kênh và miền: ghi đúng cái đã thấy, không suy đoán
 

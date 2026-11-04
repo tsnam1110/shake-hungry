@@ -31,7 +31,9 @@ Các trường trong `meta`:
 - `collector`: `agent` khi do task hàng tuần chạy, `human` khi do người thu
   trực tiếp, kèm tên hoặc mã phiên làm việc nếu có.
 - `source_rule`: luôn ghi câu này nguyên văn: giá chỉ ghi khi đọc trực tiếp
-  từ trang bán hoặc khảo sát trực tiếp tại điểm bán trong đúng ngày thu thập.
+  từ trang bán hoặc khảo sát trực tiếp tại điểm bán, hoặc tìm qua tìm
+  kiếm web, với ngày nguồn nằm trong vòng 7 ngày tính tới ngày thu thập
+  và lấy giá gần nhất (xem quy tắc 7 ngày ở trường `source_date`).
 
 Các trường trong mỗi dòng của `entries`, theo thứ tự ghi:
 
@@ -51,8 +53,22 @@ Các trường trong mỗi dòng của `entries`, theo thứ tự ghi:
   đã được chọn và ghi rõ. Khi đọc online mà chưa chọn vị trí giao, ghi
   `online-chua-chon-vi-tri`. Không suy đoán miền từ tên miền của website.
 - `collected_date`: phải bằng `meta.collected_date`, không có ngoại lệ.
-  Một file tuần chỉ có một ngày thu thập duy nhất, không trộn giá của hai
-  ngày khác nhau trong cùng một tuần.
+  Một file tuần chỉ có một ngày thu thập duy nhất, đó là ngày chạy task.
+- `source_date`: ngày nguồn thật của giá đó, dạng `YYYY-MM-DD`. Quy tắc
+  7 ngày, thay đổi ngày 2026-11-05 theo yêu cầu của chủ dự án, thay cho
+  quy tắc cũ bắt buộc đúng ngày: không cần đúng ngày thu thập, chỉ cần
+  lấy giá gần nhất trong vòng 7 ngày tính tới ngày thu thập. Cụ thể:
+  `source_date` phải nhỏ hơn hoặc bằng `collected_date` và không cũ hơn
+  `collected_date` trừ 7 ngày, tức không được lấy giá tương lai và không
+  được lấy giá cũ hơn 7 ngày. Trang bán trực tiếp đọc trong ngày thì
+  `source_date` bằng `collected_date`. Bảng giá, bài báo hoặc trang có
+  ngày thì `source_date` là ngày ghi trên nguồn đó. Khi không ghi
+  `source_date` thì hiểu là bằng `collected_date`. Khi có nhiều giá
+  trong cửa sổ 7 ngày cho cùng một sản phẩm, kênh và biến thể thì chỉ
+  ghi giá gần nhất, tức có `source_date` muộn nhất, không tính trung
+  bình, không lấy giá cũ hơn khi đã có giá mới hơn. `collected_date`
+  vẫn là một ngày duy nhất cho cả file, còn `source_date` có thể khác
+  nhau giữa các dòng, miễn là đều nằm trong cửa sổ 7 ngày đó.
 - `source_name`: tên trang bán hoặc tên chợ, ví dụ `Bách Hóa Xanh online`.
 - `source_url`: đường dẫn tới trang danh mục hoặc trang sản phẩm đã đọc, khi
   có.
@@ -296,7 +312,8 @@ python3 docs/04-data-sources/prices/validate.py docs/04-data-sources/prices/week
 
 Script kiểm tra các lỗi sau và dừng lại ở lỗi đầu tiên nó gặp, theo thứ tự
 này: tên file không khớp `week_iso`, `collected_date` không nằm trong tuần
-ISO ghi trong tên file; thiếu trường bắt buộc; trùng
+ISO ghi trong tên file; `source_date` nếu có mà sau `collected_date` hoặc
+cũ hơn 7 ngày tính tới `collected_date`; thiếu trường bắt buộc; trùng
 dòng cùng `product_key`, kênh và biến thể; `listed_price_vnd` không phải
 số nguyên dương; giá/kg hoặc giá/lít suy ra không khớp công thức trong mục
 2; giá/kg được ghi trong khi đơn vị bán là cái, quả, con, hộp, mớ mà không
@@ -317,12 +334,15 @@ bán trước khi commit.
 Logic này thêm ngày 2026-11-04 theo yêu cầu của chủ dự án, chỉ áp dụng
 sau khi đã tìm hết kênh chính. Thứ tự bắt buộc:
 
-1. Trang bán chính thức khác tìm qua tìm kiếm web trong đúng ngày thu
-   thập, có giá và cỡ gói. Ngày quan sát là ngày thu thập.
-2. Bảng giá chính thức có ngày thu thập của Sở Công Thương, ban quản lý
-   chợ hoặc chợ đầu mối chính thức.
-3. Bài báo hoặc trang tổng hợp, chỉ khi bài đó ghi rõ ngày thu thập và
-   trích đúng một người bán cụ thể với giá và cỡ gói.
+1. Trang bán chính thức khác tìm qua tìm kiếm web tại thời điểm thu
+   thập, có giá và cỡ gói. Trang trực tiếp đọc trong ngày thì
+   `source_date` bằng `collected_date`.
+2. Bảng giá chính thức có ngày nguồn nằm trong vòng 7 ngày tính tới ngày
+   thu thập, lấy giá gần nhất, của Sở Công Thương, ban quản lý chợ hoặc
+   chợ đầu mối chính thức.
+3. Bài báo hoặc trang tổng hợp, chỉ khi bài đó ghi rõ ngày nguồn nằm
+   trong vòng 7 ngày tính tới ngày thu thập, lấy giá gần nhất, và trích
+   đúng một người bán cụ thể với giá và cỡ gói.
 
 Mọi dòng dự phòng đều ghi `channel` là `web-search`, `source_name` là
 tên người bán hoặc tên bài báo cộng tên người bán được trích,
@@ -334,8 +354,12 @@ giá/kg in sẵn, không tự điền khối lượng cho hàng bán theo cái, 
 hộp, mớ khi trang không ghi khối lượng.
 
 Không được dùng tìm kiếm web trong các trường hợp sau: thay cho việc thử
-kênh chính; bài báo không ghi ngày hoặc khác ngày thu thập; trang chỉ
-ghi giá mà không ghi cỡ gói hoặc người bán; mặt hàng tương tự thay cho
-mặt hàng cần tìm; giá của tuần khác. Khi không đủ điều kiện thì giữ
-nguyên `missing`, ghi rõ trong `detail` là đã thử kênh chính nào và đã
-tìm kiếm web ngày nào mà không tìm được trang bán trực tiếp.
+kênh chính; bài báo không ghi ngày, hoặc ngày nguồn cũ hơn 7 ngày tính
+tới ngày thu thập, hoặc ngày nguồn sau ngày thu thập; trang chỉ ghi giá
+mà không ghi cỡ gói hoặc người bán; mặt hàng tương tự thay cho mặt hàng
+cần tìm; giá của tuần khác ngoài cửa sổ 7 ngày. Khi không đủ điều kiện
+thì giữ nguyên `missing`, ghi rõ trong `detail` là đã thử kênh chính
+nào và đã tìm kiếm web ngày nào mà không tìm được trang bán trực tiếp.
+Mọi dòng dự phòng có `source_date` khác `collected_date` đều phải ghi
+rõ `source_date` đó, không được ghi `collected_date` thay cho ngày
+nguồn thật.

@@ -12,9 +12,10 @@
 Mỗi tuần một lần, vào sáng thứ Hai theo giờ Asia/Saigon, tạo một file giá
 tuần mới trong kho `docs/04-data-sources/prices/weekly/`, kiểm tra bằng
 script, rồi commit riêng file tuần đó. Một tuần chỉ có một file, và file
-đó ghi giá đọc được trong đúng ngày chạy task, tức ngày thứ Hai đầu tuần
-đó, trừ khi lần chạy phải dời sang ngày khác trong cùng tuần và ghi rõ
-ngày thu thập thật vào `collected_date`. Task chỉ tạo tài liệu nghiên
+đó ghi giá gần nhất trong vòng 7 ngày tính tới ngày chạy task, tức ngày
+thứ Hai đầu tuần đó, trừ khi lần chạy phải dời sang ngày khác trong cùng
+tuần và ghi rõ ngày thu thập thật vào `collected_date`. Ngày nguồn thật
+của từng dòng ghi vào `source_date` khi khác `collected_date`. Task chỉ tạo tài liệu nghiên
 cứu, không seed vào app, không hiển thị cho người dùng, không tự động
 push lên git.
 
@@ -60,22 +61,25 @@ push lên git.
   sang tuần sau:
   1. Trang bán chính thức khác tìm qua tìm kiếm: siêu thị khác, gian
      hàng chính hãng trên sàn, trang web của thương hiệu, có ghi giá và
-     cỡ gói. Đây là trang bán trực tiếp, ngày quan sát là ngày thu thập.
-     Ghi `channel` là `web-search`, `source_name` là tên người bán tìm
-     được, `source_url` là trang đó, `source_note` ghi rõ đã tìm kênh
-     chính nào trước và tìm qua tìm kiếm web ngày nào.
-  2. Bảng giá chính thức có ngày: Sở Công Thương, ban quản lý chợ, chợ
-     đầu mối chính thức, có ghi rõ ngày thu thập. Ghi tương tự, `channel`
-     là `web-search`.
+     cỡ gói. Trang trực tiếp đọc trong ngày thì `source_date` bằng
+     `collected_date`. Ghi `channel` là `web-search`, `source_name` là
+     tên người bán tìm được, `source_url` là trang đó, `source_note`
+     ghi rõ đã tìm kênh chính nào trước và tìm qua tìm kiếm web ngày
+     nào.
+  2. Bảng giá chính thức có ngày nguồn nằm trong vòng 7 ngày tính tới
+     ngày thu thập, lấy giá gần nhất: Sở Công Thương, ban quản lý chợ,
+     chợ đầu mối chính thức. Ghi tương tự, `channel` là `web-search`,
+     và ghi rõ `source_date`.
   3. Bài báo hoặc trang tổng hợp chỉ được dùng ở bước cuối, khi bài đó
-     ghi rõ ngày thu thập và trích đúng một người bán cụ thể với giá và
-     cỡ gói, và không có nguồn trực tiếp nào ở bước 1 và 2. Khi đó vẫn
-     ghi `channel` là `web-search`, `source_name` là tên bài báo cộng tên
+     ghi rõ ngày nguồn nằm trong vòng 7 ngày tính tới ngày thu thập,
+     lấy giá gần nhất, và trích đúng một người bán cụ thể với giá và cỡ
+     gói, và không có nguồn trực tiếp nào ở bước 1 và 2. Khi đó vẫn ghi
+     `channel` là `web-search`, `source_name` là tên bài báo cộng tên
      người bán được trích, và `source_note` ghi rõ đây là giá qua bài
-     báo, không phải đọc trực tiếp trang bán, để báo cáo phân tầng được.
-     Bài báo không ghi ngày, bài cũ khác ngày thu thập, bài chỉ ghi giá
-     mà không ghi cỡ gói hoặc người bán, bài ghi giá của mặt hàng tương
-     tự đều không được dùng.
+     báo, không phải đọc trực tiếp trang bán, để báo cáo phân tầng
+     được. Bài báo không ghi ngày, bài có ngày nguồn cũ hơn 7 ngày hoặc
+     sau ngày thu thập, bài chỉ ghi giá mà không ghi cỡ gói hoặc người
+     bán, bài ghi giá của mặt hàng tương tự đều không được dùng.
   Khi cả ba bước đều không đủ điều kiện thì vẫn ghi `missing`, kèm
   `detail` ghi rõ đã thử kênh chính nào và đã tìm kiếm web ngày nào mà
   không tìm được trang bán trực tiếp. Báo cáo cuối lần chạy phải tách
@@ -88,12 +92,18 @@ push lên git.
 - Miền: chỉ ghi `bac`, `trung`, `nam` khi vị trí giao hàng hoặc địa điểm
   chợ đã được chọn. Khi đọc online mà chưa chọn vị trí giao thì ghi
   `online-chua-chon-vi-tri`.
-- Ngày thu thập: mọi giá trong một file tuần phải là giá đọc được trong
-  đúng ngày thu thập ghi trong `collected_date` của file đó, và ngày đó
-  phải nằm trong đúng tuần ISO ghi trong tên file. Không mang giá tuần
-  trước sang, không dùng giá của bài báo không ghi ngày, không dùng giá
-  của trang đã lưu từ tuần khác, không trộn giá của hai ngày khác nhau
-  vào cùng một file tuần.
+- Ngày thu thập và cửa sổ 7 ngày, thay đổi ngày 2026-11-05 theo yêu cầu
+  của chủ dự án, thay cho quy tắc cũ bắt buộc đúng ngày: `collected_date`
+  của file là ngày chạy task, phải nằm trong đúng tuần ISO ghi trong tên
+  file, và là một ngày duy nhất cho cả file. Nhưng giá trong file không
+  cần đúng ngày đó: chỉ cần lấy giá gần nhất trong vòng 7 ngày tính tới
+  ngày thu thập, tức ngày nguồn `source_date` phải nhỏ hơn hoặc bằng
+  `collected_date` và không cũ hơn `collected_date` trừ 7 ngày. Khi có
+  nhiều giá trong cửa sổ đó cho cùng một sản phẩm, kênh và biến thể thì
+  chỉ ghi giá gần nhất, không tính trung bình, không lấy giá cũ hơn khi
+  đã có giá mới hơn. Dòng nào có `source_date` khác `collected_date`
+  thì phải ghi rõ `source_date` đó. Không dùng giá tương lai, không dùng
+  giá cũ hơn 7 ngày, không dùng giá của bài báo không ghi ngày.
 
 ## 3. Các bước trong một lần chạy
 
@@ -141,13 +151,16 @@ kèm kênh đã tìm; nhóm nào chưa tìm thì ghi vào `notes` là chưa tìm
 được để `missing` ghi chung chung như thể đã tìm hết.
 
 Bước 2b: tìm kiếm web dự phòng, chỉ cho các khóa đã tìm hết kênh chính
-mà vẫn thiếu. Với mỗi khóa thiếu, tìm trên mạng trong đúng ngày thu thập
+mà vẫn thiếu. Với mỗi khóa thiếu, tìm trên mạng tại thời điểm thu thập
 bằng tên nguyên liệu và tên gọi khác, kèm từ khóa giá và cỡ gói nếu có.
 Làm đúng thứ tự ba bước trong mục 2: trang bán chính thức khác trước,
-bảng giá chính thức có ngày sau, bài báo ghi rõ ngày và người bán cuối
-cùng. Ghi dòng dự phòng với `channel` là `web-search`, không ghi dưới tên
-kênh chính, và ghi rõ trong `source_note` là dòng dự phòng. Khi tìm kiếm
-web cũng không đủ điều kiện thì giữ nguyên `missing`, không ước tính.
+bảng giá chính thức có ngày nguồn trong 7 ngày sau, bài báo ghi rõ ngày
+nguồn trong 7 ngày và người bán cuối cùng. Với mỗi sản phẩm, kênh và
+biến thể, nếu có nhiều giá trong cửa sổ 7 ngày thì chỉ ghi giá gần nhất.
+Ghi dòng dự phòng với `channel` là `web-search`, không ghi dưới tên kênh
+chính, ghi rõ trong `source_note` là dòng dự phòng, và ghi `source_date`
+khi ngày nguồn khác `collected_date`. Khi tìm kiếm web cũng không đủ
+điều kiện thì giữ nguyên `missing`, không ước tính.
 
 Với mỗi sản phẩm, ghi đúng bốn nhóm thông tin theo thứ tự sau, không đảo
 ngược:
@@ -211,8 +224,11 @@ chung, không bỏ mục nào:
   kênh nào không đọc được và vì sao, kênh nào chưa thử đọc trong tuần
   này, và riêng số dòng `web-search` dự phòng là bao nhiêu, trong đó bao
   nhiêu dòng là trang bán trực tiếp tìm qua tìm kiếm, bao nhiêu dòng là
-  qua bài báo. Không báo một kênh là không có hàng khi thực ra chưa thử
-  kênh đó, và không gộp dòng `web-search` vào số dòng kênh chính.
+  qua bài báo. Thêm phân tầng theo ngày nguồn: bao nhiêu dòng có
+  `source_date` bằng `collected_date`, bao nhiêu dòng có `source_date`
+  cũ hơn, và `source_date` cũ nhất trong file là ngày nào. Không báo một
+  kênh là không có hàng khi thực ra chưa thử kênh đó, và không gộp dòng
+  `web-search` vào số dòng kênh chính.
 - Danh sách các nhóm còn thiếu nhiều nhất, ví dụ sữa, gạo Japonica ở
   Bách Hóa Xanh, kênh chợ, mớ rau thơm, kèm lý do thiếu.
 - Commit của lần chạy, hoặc lý do chưa commit khi script chưa chạy qua

@@ -2,7 +2,8 @@
 """Kiem tra file gia tuan trong kho docs/04-data-sources/prices/weekly/.
 
 Chi kiem tra hinh thuc va toan hoc theo SCHEMA.md: ten file khop tuan ISO,
-ngay thu thap nam trong tuan do, truong bat buoc, trung dong, cong thuc
+ngay thu thap nam trong tuan do, source_date neu co phai nam trong vong
+7 ngay tinh toi ngay thu thap, truong bat buoc, trung dong, cong thuc
 quy doi don vi va goi, va khong duoc ghi gia/kg cho hang ban theo cai,
 qua, con, hop, mo khi chua co khoi luong. Script KHONG kiem tra duoc gia
 co dung voi trang ban hay khong.
@@ -180,6 +181,28 @@ def main(argv):
             fail(f"Dong {entry['product_key']} co collected_date "
                  f"{entry.get('collected_date')}, khac "
                  f"meta.collected_date ({collected.isoformat()}).")
+        # Quy tac 7 ngay (thay doi 2026-11-05): source_date neu co phai
+        # nam trong vong 7 ngay tinh toi collected_date, lay gia gan
+        # nhat, khong lay gia tuong lai va khong lay gia cu hon 7 ngay.
+        # Khong co source_date thi hieu la bang collected_date.
+        source_raw = entry.get("source_date")
+        if source_raw is not None:
+            source_match = COLLECTED_DATE_RE.match(str(source_raw))
+            if not source_match:
+                fail(f"Dong {entry['product_key']} co source_date khong "
+                     f"dung dang YYYY-MM-DD: {source_raw!r}.")
+            try:
+                source = date(int(source_match.group(1)),
+                              int(source_match.group(2)),
+                              int(source_match.group(3)))
+            except ValueError:
+                fail(f"Dong {entry['product_key']} co source_date khong "
+                     f"phai ngay hop le: {source_raw!r}.")
+            if source > collected or (collected - source).days > 7:
+                fail(f"Dong {entry['product_key']} co source_date "
+                     f"{source.isoformat()}, nam ngoai cua so 7 ngay "
+                     f"tinh toi collected_date "
+                     f"({collected.isoformat()}).")
         if not entry.get("source_url") and not entry.get("source_note"):
             fail(f"Dong {entry['product_key']} thieu ca source_url va "
                  f"source_note.")
