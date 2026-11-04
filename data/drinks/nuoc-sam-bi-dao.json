@@ -13,7 +13,8 @@
     {
       "name": "bí đao",
       "quantity": 300,
-      "unit": "g"
+      "unit": "g",
+      "ingredient_slug": "bi-dao"
     },
     {
       "name": "thục địa",
@@ -39,7 +40,8 @@
     {
       "name": "nước",
       "quantity": 300,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "nuoc-loc"
     }
   ],
   "recipe_steps": [
@@ -69,10 +71,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn bí đao + đường phèn + nước, thục địa/la hán/lá dứa chưa có hồ sơ (khoảng chiết xuất rộng), liquid 300 ml — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -81,5 +83,32 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 300,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml chất lỏng",
+      "value_min": 32,
+      "value_max": 50,
+      "value": null,
+      "per_serving": "≈97–151 kcal/ly (300 ml chất lỏng, chưa tính đá)",
+      "basis": "Cộng tay với khoảng chiết xuất rộng (nấu rồi lọc, phần đặc bỏ): bí đao 300 g × 13 / 100 = 39,0 kcal là ĐẦU TRÊN nếu ăn cả bí, nước bí đao chiết xuất khoảng 10–39 kcal; thục địa 10 g — khoảng 10–30 kcal chiết xuất (rễ ngọt, nấu nước, chưa có hồ sơ riêng); la hán quả 0,5 quả — khoảng 0–5 kcal (quả ngọt bằng mogroside không chuyển hóa thành kcal đáng kể); lá dứa 2 lá không đáng kể; đường phèn 20 g × 387 / 100 = 77,4 kcal; nước 0 kcal. Tổng 97,4–151,4 kcal / 300 ml = 32–50 kcal/100 ml. Khoảng rộng là do chiết xuất không đo được, không phải điểm. Đây chưa phải đầu ra engine.",
+      "confidence": "low",
+      "source_ref": "data/ingredients/bi-dao.json, duong-phen.json, nuoc-loc.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 20,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "20 g/ly",
+      "basis": "sugar_added_g trong file = 20 g, khớp đường phèn trong công thức.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Đã gắn 3/6 dòng trong ly: bí đao, đường phèn và nước đều không có tag dị ứng trong hồ sơ; thục địa, la hán quả và lá dứa chưa gắn hồ sơ nên không kết luận đầy đủ.",
+  "tcm_note": "Không kết luận tính vị: bí đao không có nhãn tính vị trong hồ sơ, các dòng còn lại cũng không có nhãn."
 }
