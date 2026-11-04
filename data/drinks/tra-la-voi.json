@@ -18,7 +18,8 @@
     {
       "name": "nước",
       "quantity": 250,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "nuoc-loc"
     }
   ],
   "recipe_steps": [
@@ -45,10 +46,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn nước, lá vối hãm chưa có hồ sơ (khoảng 0–2 kcal), liquid 250 ml — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -57,5 +58,21 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 250,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml chất lỏng",
+      "value_min": 0,
+      "value_max": 1,
+      "value": null,
+      "per_serving": "≈0–2 kcal/ly (250 ml chất lỏng)",
+      "basis": "Nước 0 kcal; lá vối 5 g hãm rồi lọc, lá không ăn nên kcal tan vào nước không đáng kể (dưới 2 kcal, không có hồ sơ lá vối để tính chính xác nên để khoảng 0–2, không bịa điểm). Đây chưa phải đầu ra engine; engine chưa gắn lá vối (5 g, 2% khối lượng) nên sẽ tính nước và mở rộng khoảng trên.",
+      "confidence": "low",
+      "source_ref": "data/ingredients/nuoc-loc.json"
+    }
+  ],
+  "allergen_note": "Đã gắn 1/2 dòng trong ly: nước không có tag dị ứng; lá vối chưa gắn hồ sơ nên không kết luận đầy đủ.",
+  "tcm_note": "Không kết luận tính vị: lá vối chưa có hồ sơ, nước không có nhãn tính vị."
 }
