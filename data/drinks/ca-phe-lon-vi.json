@@ -44,7 +44,7 @@
   "needs_review": true,
   "reviewed_by": null,
   "reviewed_at": null,
-  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04, làm cẩn thận theo QT-9: khoảng theo loại cà phê lon, dị ứng sữa theo loại sản phẩm — chưa qua duyệt lại sau khi sửa.",
+  "review_note": "SOÁT LẠI 2026-11-04 theo lệnh của Benjamin (không dùng khoảng tự suy cũ): đối chiếu nhãn hãng thật đang bán, xem drink-verification-packaged.md — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §6.",
   "media": [
     {
@@ -58,11 +58,11 @@
     {
       "label": "Năng lượng",
       "unit": "kcal/100 ml",
-      "value_min": 50,
-      "value_max": 80,
+      "value_min": 42,
+      "value_max": 87,
       "value": null,
-      "per_serving": "≈165–264 kcal/lon 330 ml",
-      "basis": "Cà phê lon vị mocha/latte là cà phê + sữa + đường: sữa tươi 60–61 kcal/100 g, đường thêm khoảng 8–12 g/100 ml × 4 = 32–48 kcal, cộng cà phê 2–3 kcal và (bản mocha) socola khoảng 5–10 kcal/100 ml. Tổng theo loại khoảng 50–80 kcal/100 ml — đây là khoảng theo loại, không phải số một hãng (các hãng VN và nhập khẩu có tỷ lệ sữa/đường khác nhau). Không dùng engine (đồ đóng gói không qua engine).",
+      "per_serving": "≈139–287 kcal/lon 330 ml",
+      "basis": "SOÁT LẠI 2026-11-04 (nhãn hãng thật): cà phê lon vị mocha/latte theo loại 42–87 kcal/100 ml — MỞ RỘNG cả hai đầu (cũ 50–80): VitaCoco Cafe Latte 42 kcal, đường 5,8 g/100 ml; Kings Premium Mocha (Việt Nam) 68 kcal, đường 9,9 g/100 ml; Beanhut Vietnamese Latte 87 kcal, đường 12,5 g/100 ml. Khoảng gộp 42–87 kcal/100 ml, tin cậy thấp — người dùng phải đọc nhãn lon cụ thể. Không dùng engine (đồ đóng gói không qua engine).",
       "confidence": "low",
       "source_ref": "Hồ sơ sua-tuoi (FDC 171265, 60–61 kcal/100 g); nhãn cà phê sữa lon (khoảng, không phải một nhãn cụ thể)"
     },
