@@ -13,7 +13,8 @@
     {
       "name": "nước mía ép tươi",
       "quantity": 300,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "nuoc-mia"
     },
     {
       "name": "nước cốt tắc",
@@ -49,10 +50,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn nước mía, tắc chưa gắn, mật độ mía ước tính 1,06, liquid 315 ml, đường thêm 0 nhưng đường tự nhiên ~42 g — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -61,5 +62,32 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 315,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml chất lỏng",
+      "value_min": 61,
+      "value_max": 62,
+      "value": null,
+      "per_serving": "≈191–195 kcal/ly (315 ml chất lỏng, chưa tính đá)",
+      "basis": "Cộng tay: nước mía 300 ml — hồ sơ nuoc-mia 58 kcal/100 g, mật độ nước mía khoảng 1,06, 318 g × 58 / 100 = 184,4 kcal (hồ sơ chưa có mật độ nên engine không quy đổi được ml — tay ghi rõ mật độ ước tính 1,06); nước cốt tắc 15 ml — khoảng 7–11 kcal (tắc nguyên quả 71 kcal/100 g, nước vắt thấp hơn cả quả, để khoảng). Tổng 191,4–195,4 kcal / 315 ml = 61–62 kcal/100 ml. Đây chưa phải đầu ra engine.",
+      "confidence": "low",
+      "source_ref": "data/ingredients/nuoc-mia.json, tac.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 0,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "0 g/ly (đường thêm), đường tự nhiên khoảng 42 g",
+      "basis": "sugar_added_g trong file = 0, đúng vì không thêm đường; đường tự nhiên trong nước mía khoảng 13 g/100 g × 318 g = 41,3 g, cộng tắc khoảng 1 g — tổng đường thực khoảng 42 g, không phải 0 g, ghi rõ.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Đã gắn 1/2 dòng trong ly: nước mía không có tag dị ứng trong hồ sơ; nước cốt tắc chưa gắn hồ sơ nên không kết luận đầy đủ.",
+  "tcm_note": "Không kết luận tính vị: nước mía và tắc đều không có nhãn tính vị trong hồ sơ."
 }
