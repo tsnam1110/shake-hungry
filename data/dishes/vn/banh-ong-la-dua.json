@@ -108,10 +108,10 @@
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
-  "needs_review": false,
+  "needs_review": true,
   "reviewed_by": "tsnam1110@gmail.com",
   "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau). [Soát lại E-batch lô 5, 2026-11-05: chưa đủ 3 họ định lượng độc lập (mới 2 họ: Dạy Làm Bánh Ngon và Bếp MiNa); bản Trà Vinh tìm thêm (bột gạo 200 g + bột năng 50 g + cốt dừa 300 ml + đường 100 g) ủng hộ biến thể bột năng của file nhưng là số theo mẻ, không ghi số ống nên không quy đổi được về khẩu phần 2 ống; tỉ lệ cốt dừa của file (25 g/40 g bột) thấp hẳn so với mẻ Trà Vinh (300 ml/200 g bột); file thiếu dừa nạo ăn kèm mà các nguồn đều nêu — giữ cờ chưa duyệt chờ nguồn thứ ba có định lượng theo ống.]",
   "tags": [
     "dac-san:soc-trang",
     "loai:banh"
