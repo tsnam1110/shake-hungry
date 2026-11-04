@@ -37,10 +37,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": true,
   "uncertain_note": "Catalogue ghi UNCERTAIN ở mức chính xác theo từng lô mía; đường dao động lớn, bắt buộc đọc nhãn.",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04, làm cẩn thận theo QT-9: khoảng theo loại đóng gói, không lấy số một hãng — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §6.",
   "media": [
     {
@@ -49,5 +49,31 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml",
+      "value_min": 55,
+      "value_max": 65,
+      "value": null,
+      "per_serving": "≈182–215 kcal/chai 330 ml",
+      "basis": "Nước mía đóng chai khoảng 55–65 kcal/100 ml: hồ sơ nuoc-mia 58 kcal/100 g, mật độ khoảng 1,06 nên 58 × 1,06 ≈ 61 kcal/100 ml, khoảng 55–65 theo độ ngọt của mía và độ pha loãng. Đây là khoảng theo loại, không phải số một hãng. Không dùng engine (đồ đóng gói không qua engine).",
+      "confidence": "medium",
+      "source_ref": "Nhãn đóng gói (khoảng theo loại, không phải một nhãn cụ thể)"
+    },
+    {
+      "label": "Đường",
+      "unit": "g/lon",
+      "value_min": 43,
+      "value_max": 50,
+      "value": null,
+      "per_serving": "≈43–50 g/chai 330 ml (đường tự nhiên, không phải đường thêm)",
+      "basis": "Đường tự nhiên trong nước mía khoảng 13–15 g/100 ml, nhân chai 330 ml = 42,9–49,5 g, làm tròn 43–50 g/chai — đây là loại nước uống có đường tự nhiên cao, ghi rõ.",
+      "confidence": "low",
+      "source_ref": "Nhãn đóng gói (khoảng theo loại)"
+    }
+  ],
+  "allergen_note": "Không kết luận đầy đủ: mục đóng gói này không có dòng nguyên liệu trong file để gắn tag; trang chi tiết phải hiện 'chưa đủ dữ kiện' cho dị ứng, không hiện 'không có dị ứng'.",
+  "tcm_note": "Không kết luận tính vị: mục đóng gói này chưa gắn hồ sơ nguyên liệu nên không kết luận ở tầng món."
 }
