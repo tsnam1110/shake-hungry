@@ -8,6 +8,7 @@ use App\Http\Controllers\Controller;
 use App\Models\MealLog;
 use App\Models\UserProfile;
 use App\Profile\TdeeCalculator;
+use App\Profile\WeekTargetSuggester;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
@@ -15,17 +16,18 @@ use Illuminate\Validation\Rule;
 /** Hồ sơ thể trạng + TDEE (USR-002) và nhật ký bữa ăn (USR-003). */
 class ProfileController extends Controller
 {
-    public function show(Request $request, TdeeCalculator $calc): JsonResponse
+    public function show(Request $request, TdeeCalculator $calc, WeekTargetSuggester $suggester): JsonResponse
     {
         $profile = $request->user()->profile;
 
         return response()->json([
             'profile' => $profile,
             'tdee' => $profile === null ? null : $calc->for($profile),
+            'week_target_suggestion' => $this->weekTargetSuggestion($profile, $suggester),
         ]);
     }
 
-    public function update(Request $request, TdeeCalculator $calc): JsonResponse
+    public function update(Request $request, TdeeCalculator $calc, WeekTargetSuggester $suggester): JsonResponse
     {
         $data = $request->validate([
             'height_cm' => ['nullable', 'numeric', 'min:80', 'max:250'],
@@ -46,10 +48,21 @@ class ProfileController extends Controller
             // TCM-003: tuỳ chọn hiển thị lớp tính vị (mặc định bật theo quyết
             // định chủ dự án 2026-11-01; chỉ là hiển thị, không đụng engine).
             'show_tcm' => ['sometimes', 'boolean'],
+            // WEEK-001, Phần 2.1, Task 2: mục tiêu tuần (đã duyệt Task 1).
+            // goal chỉ lưu, chưa dùng để suy kcal vì tỉ lệ điều chỉnh kcal
+            // theo mục tiêu chưa được chốt; gợi ý protein tính từ
+            // target_kcal_per_day đã nhập, không tự suy kcal từ TDEE.
+            'goal' => ['nullable', Rule::in(['giam', 'duy-tri', 'tang'])],
+            'target_protein_g_per_day' => ['nullable', 'integer', 'min:20', 'max:500'],
+            'target_kcal_per_day' => ['nullable', 'integer', 'min:800', 'max:6000'],
         ]);
         $profile = UserProfile::updateOrCreate(['user_id' => $request->user()->id], $data);
 
-        return response()->json(['profile' => $profile, 'tdee' => $calc->for($profile)]);
+        return response()->json([
+            'profile' => $profile,
+            'tdee' => $calc->for($profile),
+            'week_target_suggestion' => $this->weekTargetSuggestion($profile, $suggester),
+        ]);
     }
 
     public function mealLogs(Request $request): JsonResponse
@@ -119,6 +132,20 @@ class ProfileController extends Controller
         $mealLog->delete();
 
         return response()->json(['ok' => true]);
+    }
+
+    /**
+     * Gợi ý protein cho tuần ăn: chỉ tính khi hồ sơ đã có chiều cao VÀ
+     * người dùng đã nhập target_kcal_per_day. Thiếu một trong hai thì
+     * trả null (QT-9), không tự lấy TDEE hay cân nặng thật làm thay thế.
+     */
+    private function weekTargetSuggestion(?UserProfile $profile, WeekTargetSuggester $suggester): ?array
+    {
+        if ($profile === null) {
+            return null;
+        }
+
+        return $suggester->suggest($profile, $profile->target_kcal_per_day);
     }
 
     /**

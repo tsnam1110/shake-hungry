@@ -58,6 +58,28 @@ chưa nằm trong 5 quyết định. Task 1 không tự áp -20% hay bất kỳ 
 `goal` chỉ được lưu, chưa dùng để suy `target_kcal_per_day`. Cần chốt tỉ lệ
 này trước Task suy kcal từ TDEE + mục tiêu (thuộc Phần 2.1, sau form Hồ sơ).
 
+### Task 2 — ĐÃ XONG (2026-11-04, chờ duyệt)
+- `ProfileController::show` và `update` (API `/api/profile`): validate
+  `goal` (giam/duy-tri/tang), `target_protein_g_per_day` (20–500),
+  `target_kcal_per_day` (800–6.000); cả hai đều trả thêm
+  `week_target_suggestion` từ `WeekTargetSuggester`.
+- Gợi ý chỉ tính khi đã có chiều cao VÀ đã nhập kcal mục tiêu; thiếu thì
+  null, không tự lấy TDEE hay cân nặng thật làm thay thế. Số người dùng
+  nhập không bị gợi ý ghi đè.
+- Test `tests/Feature/WeekTargetApiTest.php` (3 test, MySQL test): lưu
+  mục tiêu + gợi ý 175 g cho cao 180 cm / 2.000 kcal, từ chối giá trị
+  ngoài giới hạn, gợi ý null khi chưa nhập kcal. Chạy lẻ 3 passed.
+
+### Quyết định mới 2026-11-04 09:02 (ghi nhận, chưa code)
+- Phạm vi Giai đoạn 2 là lõi tuần ăn **cộng thêm** ngân sách, gói, hộ gia
+  đình — không phải chỉ 3 mảng đó.
+- Task 1 đã duyệt.
+- Tổng tiền thật, quy đổi gói thật và chia sẻ bằng mã làm ngay sau các
+  task tuần ăn, với điều kiện: tìm từ nhiều nguồn (bao gồm Mealbird),
+  không được bịa; giá/gói được phép bỏ qua riêng tư theo quyết định của
+  chủ dự án. Vì vậy tổng tiền/gói thật chỉ code được sau task nghiên cứu
+  giá/gói có nguồn — không code tổng tiền trước khi có bảng giá/gói.
+
 ## Các phần tiếp theo (chưa bắt đầu, mỗi task chờ duyệt riêng)
 - Phần 2.1, Task 2: API Hồ sơ cho mục tiêu tuần.
 - Phần 2.1, Task 3: form Hồ sơ cho mục tiêu tuần.
