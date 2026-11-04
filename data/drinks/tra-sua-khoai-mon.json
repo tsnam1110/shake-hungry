@@ -19,7 +19,8 @@
     {
       "name": "khoai môn",
       "quantity": 100,
-      "unit": "g"
+      "unit": "g",
+      "ingredient_slug": "khoai-mon"
     },
     {
       "name": "sữa tươi",
@@ -65,10 +66,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn đủ 4/4, mẫu số 350 ml đồ uống gồm khoai môn, khoai môn sống vs luộc/bột chưa chốt — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -77,5 +78,32 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 350,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml đồ uống",
+      "value_min": 67,
+      "value_max": 67,
+      "value": null,
+      "per_serving": "≈234–235 kcal/ly (350 ml đồ uống gồm khoai môn xay, chưa tính đá tan)",
+      "basis": "Cộng tay: trà đen 150 ml × 1 = 1,5 kcal; khoai môn 100 g × 112 / 100 = 112,0 kcal (hồ sơ khoai môn sống; bước làm luộc/hấp rồi nghiền, hoặc bột khoai môn 20–30 g thay thế — bột khoảng 70–105 kcal, cùng cỡ với 112 nên tổng không lệch quá ~20 kcal, ghi rõ ở đây); sữa tươi 100 ml × 1,031 × 60–61 = 61,9–62,9 kcal; đường 15 g × 387 / 100 = 58,1 kcal. Tổng 233,5–234,5 kcal / 350 ml đồ uống = 67 kcal/100 ml. Đây chưa phải đầu ra engine.",
+      "confidence": "low",
+      "source_ref": "data/ingredients/tra-den.json, khoai-mon.json, sua-tuoi.json, duong-trang.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 15,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "15 g/ly",
+      "basis": "sugar_added_g trong file catalogue = 15 g, khớp đường trong công thức.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Đã gắn đủ 4/4 dòng trong ly: chỉ sữa tươi có tag allergen:sua — dị ứng Sữa đã xác nhận.",
+  "tcm_note": "Không kết luận tính vị: trà đen không có nhãn, khoai môn và sữa tươi — sữa tươi có nhãn bình/cam/Thổ (trung bình, 103,1 g) trên tổng ~365 g (28%, dưới ngưỡng 30% của TCM-000) nên chỉ ghi nhãn sữa, không kết luận cho cả ly; khoai môn không có nhãn tính vị trong hồ sơ."
 }
