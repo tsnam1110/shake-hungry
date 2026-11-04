@@ -20,7 +20,8 @@
     {
       "name": "hạt chia ngâm",
       "quantity": 5,
-      "unit": "g"
+      "unit": "g",
+      "ingredient_slug": "hat-chia"
     }
   ],
   "recipe_steps": [
@@ -49,10 +50,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn hạt chia, nước sâm suy ra từ công thức mẻ 2 lít, liquid 300 ml — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -61,5 +62,32 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 300,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml chất lỏng",
+      "value_min": 23,
+      "value_max": 30,
+      "value": null,
+      "per_serving": "≈69–90 kcal/ly (300 ml chất lỏng, chưa tính đá)",
+      "basis": "Cộng tay: nước sâm 300 ml — khoảng 45–66 kcal (nước sâm trong file là bí đao–mía lau–lá dứa nấu, mẻ 2 lít có đường phèn 60–80 g nên 300 ml sâm có khoảng 9–12 g đường = 34,8–46,4 kcal, cộng chiết xuất bí đao/mía lau khoảng 10–20 kcal, tổng 45–66 kcal — đây là suy ra từ công thức mẻ trong bước pha, không phải hồ sơ riêng); hạt chia ngâm 5 g × 486 / 100 = 24,3 kcal (hồ sơ hat-chia, ngâm không làm mất kcal). Tổng 69,3–90,3 kcal / 300 ml = 23–30 kcal/100 ml. Đây chưa phải đầu ra engine.",
+      "confidence": "low",
+      "source_ref": "data/ingredients/hat-chia.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 10,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "10 g/ly",
+      "basis": "sugar_added_g trong file = 10 g; kiểm chéo: đường phèn trong nước sâm khoảng 9–12 g cho 300 ml, gần 10 g trong file.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Đã gắn 1/2 dòng trong ly: hạt chia không có tag dị ứng trong hồ sơ; nước sâm chưa gắn hồ sơ nên không kết luận đầy đủ.",
+  "tcm_note": "Không kết luận tính vị: hạt chia và nước sâm đều không có nhãn tính vị trong hồ sơ."
 }
