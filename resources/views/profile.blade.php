@@ -183,6 +183,16 @@
                         <span class="ld-note" style="display:block;margin-top:2px">Hiện mục Tính / Vị / Ngũ hành (quan niệm ẩm thực truyền thống) ở trang món, nguyên liệu và hoa quả. Chỉ là lớp thông tin văn hoá — không ảnh hưởng gợi ý món.</span></span>
                     </label>
                 </div>
+                {{-- Quy định cocktail, bước 2/4 (2026-11-04): lọc tuổi cho đồ
+                     uống có cồn — tự bật, mặc định tắt, không suy từ năm sinh.
+                     Hiện chỉ lưu cờ; Lắc vẫn chỉ gợi ý món ăn. --}}
+                <div class="sm:col-span-2">
+                    <label style="display:flex;gap:10px;align-items:flex-start;cursor:pointer">
+                        <input type="checkbox" id="f-allow-alcohol" name="allow_alcohol" style="margin-top:3px;width:17px;height:17px;accent-color:#0071e3">
+                        <span><span style="font-weight:600">Tôi đủ 18 tuổi — cho phép hiển thị đồ uống có cồn</span>
+                        <span class="ld-note" style="display:block;margin-top:2px">Mặc định tắt, chỉ bật khi bạn đã đủ 18 tuổi. Hiện tại Lắc chỉ gợi ý món ăn nên công tắc này chưa làm thay đổi kết quả Lắc; nó là cờ lọc tuổi bắt buộc cho mọi tính năng gợi ý đồ uống có cồn trong tương lai. Thư viện đồ uống vẫn giữ công tắc "Không cồn trước" và huy hiệu 18+.</span></span>
+                    </label>
+                </div>
                 <div class="sm:col-span-2"><span class="ld-field-label">Không ăn được / dị ứng — lọc cứng khi lắc</span>
                     <div class="ld-chips" id="excluded-chips"></div>
                     <p class="ld-note" style="margin-top:8px">Chạm để bật hoặc tắt từng mục. Cấu hình này dùng chung cho khối Lắc ở trang chủ và không bao giờ bị hệ thống tự nới lỏng.</p></div>
@@ -260,6 +270,7 @@ async function init() {
         ['height_cm','weight_kg','birth_year','sex','activity_level','diet_type','preferred_region_id','target_kcal_per_meal','shake_mode','tray_dish_count','goal','target_protein_g_per_day','target_kcal_per_day'].forEach(k => { if (profile[k] != null && f.elements[k]) f.elements[k].value = profile[k]; });
         if (f.elements['tray_binh_dan']) f.elements['tray_binh_dan'].checked = !!profile.tray_binh_dan;
         if (f.elements['show_tcm']) f.elements['show_tcm'].checked = profile.show_tcm !== false && profile.show_tcm !== 0;
+        if (f.elements['allow_alcohol']) f.elements['allow_alcohol'].checked = !!profile.allow_alcohol;
         const ex = new Set(profile.excluded_ingredients || []);
         excludedChips.querySelectorAll('button').forEach(b => {
             const i = +b.dataset.i;
@@ -309,6 +320,7 @@ document.getElementById('profile-form').onsubmit = async (e) => {
     ['sex','activity_level','diet_type','shake_mode','goal'].forEach(k => body[k] = raw[k] === '' ? null : raw[k]);
     body.tray_binh_dan = raw.tray_binh_dan === 'on';
     body.show_tcm = raw.show_tcm === 'on';
+    body.allow_alcohol = raw.allow_alcohol === 'on';
     body.excluded_ingredients = [...selectedPresets].flatMap(i => ALLERGEN_PRESETS[i][1]);
     const resp = await fetch('/api/profile', { method: 'PUT', headers, body: JSON.stringify(body) });
     const data = await resp.json();

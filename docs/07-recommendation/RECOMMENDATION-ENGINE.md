@@ -80,7 +80,9 @@ cả tính phù hợp lẫn tính bất ngờ.
 
 > **Bổ sung 2026-11-04 — quy định cồn, bước 1/4 (quyết định chủ dự án):** kho Lắc chỉ gồm `Dish`.
 > `Drink` có `alcohol=true` (gồm 58 cocktail và đồ đóng gói có cồn) không bao giờ nằm trong pool
-> Lắc, mà chỉ là thư viện tra cứu, cho tới khi có lọc tuổi (bước 2). Đây là tách biệt theo model,
+> Lắc, mà chỉ là thư viện tra cứu. Bước 2 (2026-11-04) đã có cờ lọc tuổi `user_profiles.allow_alcohol`
+> (mặc định tắt, tự bật, không suy từ năm sinh), nhưng cờ này chưa mở pool cho Drink — pool vẫn
+> chỉ là Dish, và mọi tính năng gợi ý Drink có cồn trong tương lai bắt buộc phải kiểm tra cờ này. Đây là tách biệt theo model,
 > không phải lọc theo nguyên liệu: món ăn nấu với rượu (ví dụ bò sốt vang) vẫn là `Dish` và không
 > thuộc quy định này. Test hồi quy: `RecommendationTest` — "lắc không bao giờ trả đồ uống có cồn".
 

@@ -48,6 +48,10 @@ class ProfileController extends Controller
             // TCM-003: tuỳ chọn hiển thị lớp tính vị (mặc định bật theo quyết
             // định chủ dự án 2026-11-01; chỉ là hiển thị, không đụng engine).
             'show_tcm' => ['sometimes', 'boolean'],
+            // Quy định cocktail, bước 2/4 (2026-11-04): lọc tuổi cho đồ
+            // uống có cồn — người dùng tự bật, mặc định tắt, không suy
+            // từ birth_year. Hiện chỉ lưu cờ; Lắc vẫn chỉ gợi ý Dish.
+            'allow_alcohol' => ['sometimes', 'boolean'],
             // WEEK-001, Phần 2.1, Task 2: mục tiêu tuần (đã duyệt Task 1).
             // goal chỉ lưu, chưa dùng để suy kcal vì tỉ lệ điều chỉnh kcal
             // theo mục tiêu chưa được chốt; gợi ý protein tính từ
