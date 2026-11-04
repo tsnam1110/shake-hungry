@@ -25,7 +25,8 @@
     {
       "name": "nước lọc hoặc soda",
       "quantity": 200,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "nuoc-loc"
     },
     {
       "name": "đường",
@@ -62,10 +63,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn nước + đường, chanh muối chưa có hồ sơ, liquid 230 ml — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -74,5 +75,32 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 230,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml chất lỏng",
+      "value_min": 27,
+      "value_max": 32,
+      "value": null,
+      "per_serving": "≈63–73 kcal/ly (230 ml chất lỏng, chưa tính đá)",
+      "basis": "Cộng tay: chanh muối 1 quả — khoảng 5–10 kcal (chanh tươi 30 kcal/100 g, 1 quả khoảng 30 g ≈ 9 kcal, muối ngâm không thêm kcal đáng kể); nước ngâm chanh muối 30 ml — khoảng 0–5 kcal (nước muối + nước chanh loãng); nước/soda 0 kcal; đường 15 g × 387 / 100 = 58,1 kcal. Tổng 63,1–73,1 kcal / 230 ml = 27–32 kcal/100 ml. Đây chưa phải đầu ra engine.",
+      "confidence": "low",
+      "source_ref": "data/ingredients/nuoc-loc.json, duong-trang.json, chanh.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 15,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "15 g/ly",
+      "basis": "sugar_added_g trong file = 15 g, khớp đường trong công thức.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Đã gắn 2/4 dòng trong ly: nước và đường không có tag dị ứng trong hồ sơ; chanh muối và nước ngâm chưa gắn hồ sơ nên không kết luận đầy đủ.",
+  "tcm_note": "Không kết luận tính vị: các dòng đều không có nhãn tính vị trong hồ sơ."
 }
