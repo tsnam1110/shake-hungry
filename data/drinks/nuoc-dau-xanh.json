@@ -18,7 +18,8 @@
     {
       "name": "nước",
       "quantity": 300,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "nuoc-loc"
     },
     {
       "name": "đường",
@@ -58,10 +59,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn nước + đường, đậu xanh + sữa dừa chưa có hồ sơ, liquid 330 ml — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -70,5 +71,32 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 330,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml chất lỏng",
+      "value_min": 70,
+      "value_max": 70,
+      "value": null,
+      "per_serving": "≈230 kcal/ly (330 ml chất lỏng, chưa tính đá)",
+      "basis": "Cộng tay: đậu xanh nấu chín 80 g × 105 / 100 = 84,0 kcal (đậu nấu chín, chưa có hồ sơ riêng); nước 0 kcal; đường 20 g × 387 / 100 = 77,4 kcal; sữa dừa 30 ml × ~1,0 × 230 / 100 = 69,0 kcal. Tổng 230,4 kcal / 330 ml = 70 kcal/100 ml. Đây chưa phải đầu ra engine.",
+      "confidence": "low",
+      "source_ref": "data/ingredients/nuoc-loc.json, duong-trang.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 20,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "20 g/ly",
+      "basis": "sugar_added_g trong file = 20 g, khớp đường trong công thức; đường trong sữa dừa khoảng 0,9 g không tính vào 'đường thêm'.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Đã gắn 2/4 dòng trong ly: nước và đường không có tag dị ứng trong hồ sơ; đậu xanh và sữa dừa chưa gắn hồ sơ nên không kết luận đầy đủ.",
+  "tcm_note": "Không kết luận tính vị: các dòng đều không có nhãn tính vị trong hồ sơ."
 }
