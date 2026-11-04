@@ -45,7 +45,7 @@
   "needs_review": true,
   "reviewed_by": null,
   "reviewed_at": null,
-  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04, làm cẩn thận theo QT-9: khoảng theo loại cà phê sữa lon, đối chiếu với cà phê sữa đá pha tay — chưa qua duyệt lại sau khi sửa.",
+  "review_note": "SOÁT LẠI 2026-11-04 theo lệnh của Benjamin (không dùng khoảng tự suy cũ): đối chiếu nhãn hãng thật đang bán, xem drink-verification-packaged.md — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §6.",
   "media": [
     {
@@ -59,11 +59,11 @@
     {
       "label": "Năng lượng",
       "unit": "kcal/100 ml",
-      "value_min": 60,
+      "value_min": 46,
       "value_max": 90,
       "value": null,
-      "per_serving": "≈198–297 kcal/lon 330 ml",
-      "basis": "Cà phê sữa đóng chai/lon VN là cà phê + sữa đặc có đường (sữa đặc 334–341 kcal/100 g, mật độ 1,29) pha loãng với cà phê và sữa tươi: tỷ lệ sữa đặc trong lon thường 15–25% thể tích, đường thêm khoảng 10–14 g/100 ml × 4 = 40–56 kcal, cộng sữa tươi và cà phê, tổng theo loại khoảng 60–90 kcal/100 ml. Đây là khoảng theo loại, không phải số một hãng — cà phê sữa đá pha tay trong nhóm cà phê là 120,5–144,3 kcal/ly (ly khoảng 135 ml chất lỏng, tức khoảng 89–107 kcal/100 ml) nên khoảng lon 60–90 là hợp lý vì lon pha loãng hơn ly pha tay. Không dùng engine (đồ đóng gói không qua engine).",
+      "per_serving": "≈152–297 kcal/lon 330 ml",
+      "basis": "SOÁT LẠI 2026-11-04 (nhãn hãng thật): cà phê sữa đóng chai/lon VN theo loại 46–90 kcal/100 ml — MỞ RỘNG đầu dưới từ 60 xuống 46: Highlands Coffee With Milk (VN) 70 kcal, đường 9,3 g/100 ml (nằm trong khoảng cũ); một bản cà phê sữa đóng chai khác qua OpenFoodFacts 46 kcal, đường 7,6 g/100 ml (ít sữa đặc hơn công thức 15–25% thể tích trong file cũ). Khoảng gộp 46–90 kcal/100 ml, tin cậy thấp — người dùng phải đọc nhãn lon cụ thể. Không dùng engine (đồ đóng gói không qua engine).",
       "confidence": "low",
       "source_ref": "Hồ sơ sua-dac (334–341 kcal/100 g, mật độ 1,29); cà phê sữa đá nhóm cà phê (120,5–144,3 kcal/ly)"
     },
