@@ -50,6 +50,7 @@ Route::get('/', function () {
 // --- API công khai cho trang người dùng (GĐ4) ---
 Route::get('/tai-khoan', fn () => view('account'))->name('login');
 Route::get('/ho-so', fn () => view('profile')); // khách chưa đăng nhập thấy giao diện giới thiệu (UI-016)
+Route::get('/tuan-an', fn () => view('tuan-an')); // WEEK-001, Phần 2.4: trang Tuần ăn riêng
 Route::view('/dieu-khoan', 'legal.terms');
 Route::view('/chinh-sach-bao-mat', 'legal.privacy');
 Route::view('/mien-tru-y-te', 'legal.disclaimer');
@@ -80,6 +81,8 @@ Route::get('/ket-hop-can-luu-y', fn () => view('combinations', [
 ]));
 
 Route::prefix('api')->group(function () {
+    // WEEK-001, Phần 2.4: tuần ví dụ công khai, đặt trước route /week-plans/{id} để không bị nuốt.
+    Route::get('/week-plans/example', [\App\Http\Controllers\PublicWeb\WeekPlanController::class, 'example']);
     Route::post('/register', [\App\Http\Controllers\PublicWeb\UserAuthController::class, 'register']);
     Route::post('/login', [\App\Http\Controllers\PublicWeb\UserAuthController::class, 'login']);
     Route::post('/logout', [\App\Http\Controllers\PublicWeb\UserAuthController::class, 'logout']);

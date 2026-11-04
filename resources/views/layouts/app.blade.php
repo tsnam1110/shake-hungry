@@ -24,6 +24,7 @@
         ['gợi ý', '/do-uong', 'Thư viện nước uống', 'bowl', str_starts_with($path, 'do-uong')],
         ['gợi ý', '/ket-hop-can-luu-y', 'Kết hợp cần lưu ý', 'leaf', str_starts_with($path, 'ket-hop-can-luu-y')],
         ['của bạn', '/nhat-ky', 'Nhật ký bữa ăn', 'book', $path === 'nhat-ky'],
+        ['của bạn', '/tuan-an', 'Tuần ăn', 'book', $path === 'tuan-an'],
         ['của bạn', '/ho-so', 'Hồ sơ của tôi', 'person', $path === 'ho-so'],
         ['của bạn', '/ho-so#dong-gop', 'Đóng góp cộng đồng', 'heart', false],
     ];

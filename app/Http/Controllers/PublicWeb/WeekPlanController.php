@@ -14,6 +14,36 @@ use Illuminate\Http\Request;
 /** Tuần ăn (Giai đoạn 2, Phần 2.3): API cho tuần của chính người dùng. */
 class WeekPlanController extends Controller
 {
+    /**
+     * Tuần ví dụ cho khách (Phần 2.4): 1 ngày mẫu từ ứng viên thật, KHÔNG
+     * lưu, KHÔNG cá nhân hoá, KHÔNG có mục tiêu nên không kết luận đạt/thiếu.
+     * Chỉ để khách thấy cấu trúc một ngày trong tuần ăn trước khi đăng nhập.
+     */
+    public function example(WeekBuilder $builder): JsonResponse
+    {
+        $meals = [];
+        foreach (WeekValidator::SLOTS as $slot) {
+            $dish = $builder->candidates($slot, null)->first();
+            if ($dish === null) {
+                continue;
+            }
+            $dish->loadMissing('names', 'nutrition', 'region');
+            $meals[] = [
+                'slot' => $slot,
+                'dish' => [
+                    'id' => $dish->id, 'slug' => $dish->slug, 'name' => $dish->displayName(),
+                    'region' => $dish->region?->name,
+                    'nutrition' => $dish->nutrition === null ? null : [
+                        'kcal_min' => $dish->nutrition->kcal_min, 'kcal_max' => $dish->nutrition->kcal_max,
+                        'protein_g' => $dish->nutrition->protein_g,
+                    ],
+                ],
+            ];
+        }
+
+        return response()->json(['meals' => $meals, 'note' => 'Ngày ví dụ, không lưu, không cá nhân hoá theo hồ sơ.']);
+    }
+
     public function index(Request $request): JsonResponse
     {
         $plans = WeekPlan::where('user_id', $request->user()->id)

@@ -53,6 +53,7 @@
         <div>
             <h1 class="ld-title" style="margin-top:14px">Hồ sơ</h1>
             <p id="whoami" class="ld-subtitle" style="font-size:15px"></p>
+            <p style="margin-top:6px"><a href="/tuan-an" style="font-size:15px">Tuần ăn của bạn →</a></p>
         </div>
         <button id="logout" style="border:0;background:none;color:var(--color-danger);font-weight:600;font-size:15px;cursor:pointer;padding-top:22px;font-family:inherit">Đăng xuất</button>
     </div>

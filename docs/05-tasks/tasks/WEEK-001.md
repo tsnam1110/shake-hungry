@@ -144,7 +144,22 @@ này trước Task suy kcal từ TDEE + mục tiêu (thuộc Phần 2.1, sau for
   loại trừ nguyên liệu; API chỉ trả tuần của chính mình.
 - Chưa làm trong Phần 2.3 (cố ý): trang /tuan-an, thao tác tuần, đi chợ.
 
+## Phần 2.4 — Trang `/tuan-an`
+
+### Task 1 — ĐÃ XONG (2026-11-04, theo lệnh duyệt toàn bộ lộ trình)
+- Route `/tuan-an` + blade `tuan-an.blade.php` theo ld-*: khách thấy
+  ngày ví dụ, người dùng thấy form tạo tuần (ngày bắt đầu), danh sách
+  tuần với số ngày đạt/thiếu/chưa đủ dữ kiện, chi tiết từng ngày với
+  trạng thái, protein, khoảng kcal, số thiếu/vượt, và từng bữa link tới
+  trang món.
+- Vào từ sidebar (mục Của bạn) và từ Hồ sơ ("Tuần ăn của bạn →").
+- API tuần ví dụ công khai GET /api/week-plans/example: 1 ngày mẫu từ
+  ứng viên thật, không lưu, không cá nhân hoá, không kết luận đạt/thiếu
+  (đặt trước route /week-plans/{id} để không bị nuốt).
+- Test `tests/Feature/WeekPageTest.php` 3 test pass (khách/auth/API ví dụ).
+- Chưa làm trong Phần 2.4 (cố ý): thao tác tuần, đi chợ — trang hiện
+  ghi rõ thao tác sẽ có ở phần tiếp theo, không giả vờ có nút.
+
 ## Các phần tiếp theo (theo lệnh duyệt toàn bộ lộ trình 2026-11-04, làm tiếp không hỏi duyệt giữa chừng)
-- Phần 2.4: trang `/tuan-an`.
 - Phần 2.5: thao tác tuần (mỗi thao tác một task).
 - Phần 2.6: danh sách đi chợ theo gram, không gói, không giá.
