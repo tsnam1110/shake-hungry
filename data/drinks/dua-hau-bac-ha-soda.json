@@ -13,7 +13,8 @@
     {
       "name": "nước dưa hấu / dưa hấu dầm",
       "quantity": 80,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "dua-hau"
     },
     {
       "name": "bạc hà",
@@ -28,7 +29,8 @@
     {
       "name": "siro đường",
       "quantity": 15,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "siro-duong"
     },
     {
       "name": "soda",
@@ -65,10 +67,10 @@
   "alcohol_pct_range": null,
   "label_note": "",
   "brand_examples": [],
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn dưa hấu + siro đường + soda, liquid 230 ml — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5.",
   "media": [
     {
@@ -77,5 +79,32 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 230,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml chất lỏng",
+      "value_min": 28,
+      "value_max": 28,
+      "value": null,
+      "per_serving": "≈63 kcal/ly (230 ml chất lỏng, chưa tính đá)",
+      "basis": "Cộng tay: nước dưa hấu 80 ml × 30 / 100 = 24,0 kcal; bạc hà 8 lá dầm, kcal không đáng kể; nước chanh 15 ml × 22 / 100 = 3,3 kcal; siro đường 15 ml × 1,24 × 194 / 100 = 36,1 kcal; soda 0 kcal. Tổng 63,4 kcal / 230 ml = 28 kcal/100 ml. Đây chưa phải đầu ra engine.",
+      "confidence": "medium",
+      "source_ref": "data/ingredients/dua-hau.json, siro-duong.json, soda.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 9,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "9 g/ly",
+      "basis": "sugar_added_g trong file = 9 g; kiểm chéo: siro đường 9,3 g, gần 9 g trong file; đường tự nhiên trong dưa hấu khoảng 5 g không tính vào 'đường thêm'.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Đã gắn 3/5 dòng trong ly: dưa hấu, siro đường và soda đều không có tag dị ứng trong hồ sơ; bạc hà và nước chanh chưa gắn hồ sơ nên không kết luận đầy đủ.",
+  "tcm_note": "Không kết luận tính vị: các dòng đều không có nhãn tính vị trong hồ sơ."
 }
