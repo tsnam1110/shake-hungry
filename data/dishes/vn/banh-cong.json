@@ -145,10 +145,10 @@
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",
-  "needs_review": false,
+  "needs_review": true,
   "reviewed_by": "tsnam1110@gmail.com",
   "reviewed_at": "2026-10-31",
-  "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này).",
+  "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này). E-batch1 lô 1 2026-11-04: gắn cờ lại chưa duyệt — mâu thuẫn biến thể: ghi chú văn hoá ghi bản Khmer Sóc Trăng (vỏ bột gạo + bột đậu nành + trứng, nhân thịt heo băm trộn đậu xanh hấp, mặt tôm) và các nguồn mô tả Cần Thơ/Sóc Trăng đều có thịt heo băm trộn đậu xanh làm nhân, nhưng danh sách không có thịt heo, bột đậu nành, trứng, lại có khoai môn và nước cốt dừa không có trong ghi chú; cần quyết định tái cấu trúc theo bản Sóc Trăng/Cần Thơ hay đổi phạm vi món và viết lại ghi chú văn hoá; chưa sửa số, chưa gọi là đã xác minh.",
   "tags": [
     "dac-san:can-tho",
     "loai:banh"
