@@ -144,10 +144,10 @@
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
-  "needs_review": false,
+  "needs_review": true,
   "reviewed_by": "tsnam1110@gmail.com",
   "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau). [Soát lại E-batch lô 7, 2026-11-05: ĐÍNH CHÍNH ghi chú LV2-012 — biến thể cá trôi khúc chiên CÓ thật: Quà Miền Bắc viết đồng bằng Bắc Bộ 'hay chọn cá trôi... rán (chiên) lên thì lại giòn và ngon', 'cá trôi được cắt khúc hình bao diêm, rán rất giòn'; bún cá Hải Phòng cũng dùng 'miếng cá xắt khúc... thường là cá trôi, cá trắm'. Vậy điểm chặn không còn là định danh mà là ĐỊNH LƯỢNG: không nguồn nào cho số gram cá trôi/tô (nguồn chỉ cho cá nguyên con ≥700 g hoặc chả cá 500 g + bún 500 g — khác dạng); tổng các dòng 337,8 g so với khẩu phần 1 tô 520 g thiếu nước dùng chưa định lượng — giữ cờ chưa duyệt chờ nguồn có định lượng theo tô.]",
   "tags": [
     "dac-san:ha-noi",
     "loai:bun-pho-mi"
