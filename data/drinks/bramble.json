@@ -64,15 +64,15 @@
   "packaging": null,
   "sugar_range_g": null,
   "alcohol_pct_range": [
-    22.4,
-    22.4
+    21.9,
+    22.2
   ],
   "label_note": "",
   "brand_examples": [],
   "needs_review": true,
   "reviewed_by": null,
   "reviewed_at": null,
-  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: kcal từ ethanol + đường theo công thức, ABV suy ra từ công thức, chưa qua duyệt lại sau khi sửa.",
+  "review_note": "SOÁT LẠI 2026-11-04 theo lệnh của Benjamin (không dùng bảng tự suy cũ): tính lại từ rượu mùi đã kiểm chứng đa nguồn, xem drink-verification-liqueur.md — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5.",
   "media": [
     {
@@ -87,21 +87,21 @@
     {
       "label": "Năng lượng",
       "unit": "kcal/100 ml chất lỏng",
-      "value_min": 179,
-      "value_max": 179,
+      "value_min": 192,
+      "value_max": 192,
       "value": null,
-      "per_serving": "≈184 kcal/ly (102.5 ml chất lỏng)",
-      "basis": "Cộng tay từ công thức (ethanol 7 kcal/g, mật độ 0,789 g/ml + đường 4 kcal/g; rượu mùi tính cả ethanol và đường theo nhãn loại, chưa đo trực tiếp): gin 50 ml × 2.21 = 110.5 kcal; nước chanh 25 ml × 0.22 = 5.5 kcal; siro đường 12.5 ml × 2.41 = 30.1 kcal; crème de mûre 15 ml × 2.5 = 37.5 kcal. Tổng 183.6 kcal / 102.5 ml = 179 kcal/100 ml. ABV suy ra từ công thức: 22.4% (ethanol 23.0 ml / 102.5 ml chất lỏng). Đây chưa phải đầu ra engine (engine chưa có logic ethanol).",
+      "per_serving": "≈197 kcal/ly (103 ml chất lỏng)",
+      "basis": "SOÁT LẠI 2026-11-04 (đa nguồn): gin 50 ml × 2,21 = 110,5 kcal; nước chanh 25 ml × 0,22 = 5,5 kcal; siro đường 12,5 ml × 2,41 = 30,1 kcal; crème de mûre 15 ml × 3,37 = 50,6 kcal — SỬA LỚN so với cũ (mûre cũ tự suy 2,50/ml = 37,5 kcal): nhãn Giffard qua Ocado là 337 kcal/100 ml, ABV 16% (bản Jacoulot 18%); đường của mûre không ghi trên nhãn đó nên không ghi điểm đường cho thành phần này, tổng đường 16,4 g là ước tính từ siro + chanh + mûre theo loại. Tổng mới 196,7 kcal / 102,5 ml = 192 kcal/100 ml (cũ 184, thấp hơn 13 kcal vì mûre cũ). ABV 21,9–22,2% (ethanol gin 20 ml + mûre 2,4–2,7 ml, chia 102,5 ml). Đây vẫn chưa phải đầu ra engine.",
       "confidence": "low",
       "source_ref": "Bảng kcal/ml cocktail trong hồ sơ triển khai (ethanol + đường, xem basis)"
     },
     {
       "label": "Độ cồn",
       "unit": "% ABV",
-      "value": 22.4,
-      "value_min": null,
-      "value_max": null,
-      "per_serving": "≈22.4% ABV",
+      "value": null,
+      "value_min": 21.9,
+      "value_max": 22.2,
+      "per_serving": "≈21.9–22.2% ABV",
       "basis": "ABV suy ra từ công thức: ethanol 23.0 ml trên tổng 102.5 ml chất lỏng = 22.4%. Đây là ABV của ly pha theo công thức, chưa đo trực tiếp, và thay đổi nếu quán dùng rượu có ABV khác.",
       "confidence": "medium",
       "source_ref": "Công thức trong file catalogue"
@@ -113,7 +113,7 @@
       "value_min": null,
       "value_max": null,
       "per_serving": "7 g/ly (theo file, tổng đường thực khoảng 14 g)",
-      "basis": "sugar_added_g trong file = 7 g (đường thêm từ siro/đường, theo cách ghi của file); tổng đường thực ước tính từ rượu mùi, nước ép và siro khoảng 14 g, cao hơn số file vì file không tính đường trong rượu mùi và nước ép.",
+      "basis": "sugar_added_g trong file = 7 g; tổng đường thực sau soát lại khoảng 16,4 g (xem basis năng lượng).",
       "confidence": "low",
       "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
     }
