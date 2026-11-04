@@ -61,7 +61,7 @@
   "sugar_range_g": null,
   "alcohol_pct_range": [
     23.5,
-    23.5
+    24.3
   ],
   "label_note": "",
   "brand_examples": [],
@@ -83,11 +83,11 @@
     {
       "label": "Năng lượng",
       "unit": "kcal/100 ml chất lỏng",
-      "value_min": 174,
-      "value_max": 186,
+      "value_min": 185,
+      "value_max": 201,
       "value": null,
-      "per_serving": "≈156–168 kcal/ly (90 ml chất lỏng)",
-      "basis": "SOÁT LẠI 2026-11-04 (đa nguồn): mezcal 22,5 ml × 2,35 = 52,9 kcal; Chartreuse vàng 22,5 ml × 3,21 = 72,2 kcal (CHƯA kiểm chứng, giữ số cũ, ghi rõ); Aperol 22,5 ml khoảng 26,3–37,6 kcal (nguồn mâu thuẫn 117–167 kcal/100 ml, xem aperol-spritz); nước chanh 22,5 ml × 0,22 = 5,0 kcal. Tổng mới 156,4–167,6 kcal / 90 ml = 174–186 kcal/100 ml (cũ 162 nằm trong khoảng nhưng không được ghi là đã xác nhận). ABV 23,5% không đổi. Đây vẫn chưa phải đầu ra engine.",
+      "per_serving": "≈166–181 kcal/ly (90 ml chất lỏng)",
+      "basis": "SOÁT LẠI LẦN 2 2026-11-04 (đa nguồn): mezcal 22,5 ml × 2,35 = 52,9 kcal; Chartreuse vàng 22,5 ml khoảng 82,1–85,7 kcal — SỬA LỚN so với lần soát 1 (Chartreuse cũ tự suy 3,21/ml = 72,2 kcal): Chartreuse vàng theo hãng là 40–43% ABV (bản Anh hiện tại 40%, tài liệu cũ 43%), đường khoảng 36 g/100 ml (excitedfood: 165 kcal, 16 g carb/44 ml, tức ≈375 kcal, 36 g/100 ml), ethanol 221–237 + đường 144 = 365–381 kcal/100 ml — số cũ 321 thấp hơn hẳn; Aperol 22,5 ml khoảng 26,3–37,6 kcal (nguồn mâu thuẫn 117–167 kcal/100 ml); nước chanh 22,5 ml × 0,22 = 5,0 kcal. Tổng mới 166,3–181,2 kcal / 90 ml = 185–201 kcal/100 ml (lần 1 là 156–168, thấp hơn 10–13 kcal vì Chartreuse cũ). ABV 23,5–24,3% (ethanol mezcal 9,7 + Chartreuse 9,0–9,7 + Aperol 2,5, chia 90 ml). Đây vẫn chưa phải đầu ra engine. Lưu ý: SnapCalorie ghi Chartreuse và Bénédictine cùng một bộ số 343 kcal, 36,7 g — nghi là dữ liệu generic trùng lặp, không tính là nguồn độc lập cho cả hai.",
       "confidence": "low",
       "source_ref": "Bảng kcal/ml cocktail trong hồ sơ triển khai (ethanol + đường, xem basis)"
     },
@@ -96,8 +96,8 @@
       "unit": "% ABV",
       "value": null,
       "value_min": 23.5,
-      "value_max": 23.5,
-      "per_serving": "≈23.5% ABV",
+      "value_max": 24.3,
+      "per_serving": "≈23.5–24.3% ABV",
       "basis": "ABV suy ra từ công thức: ethanol 21.2 ml trên tổng 90 ml chất lỏng = 23.5%. Đây là ABV của ly pha theo công thức, chưa đo trực tiếp, và thay đổi nếu quán dùng rượu có ABV khác.",
       "confidence": "medium",
       "source_ref": "Công thức trong file catalogue"
@@ -109,7 +109,7 @@
       "value_min": null,
       "value_max": null,
       "per_serving": "0 g/ly (theo file, tổng đường thực khoảng 11 g)",
-      "basis": "sugar_added_g trong file = 0 g; tổng đường thực sau soát lại khoảng 9,6–11,9 g (tính từ rượu mùi đã kiểm chứng + nước ép, xem basis năng lượng).",
+      "basis": "sugar_added_g trong file = 0 g; tổng đường thực sau soát lại khoảng 11,4–13,5 g (xem basis năng lượng).",
       "confidence": "low",
       "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
     }
