@@ -11,14 +11,10 @@
   "garnish": [],
   "ingredients": [
     {
-      "name": "cà phê xay thô",
-      "quantity": 80,
-      "unit": "g"
-    },
-    {
-      "name": "nước lạnh",
+      "name": "cold brew sẵn uống",
       "quantity": 250,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "ca-phe-den"
     }
   ],
   "recipe_steps": [
@@ -50,10 +46,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04 với khẩu phần 250 ml suy ra từ tỉ lệ trong bước làm (file gốc chỉ ghi mẻ) — cần chủ dự án chốt khẩu phần, chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -62,5 +58,36 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 250,
+  "caffeine_mg_min": 100,
+  "caffeine_mg_max": 150,
+  "caffeine_mg_note": "KHOẢNG TẦM SOÁT, CHƯA ĐO CHO LY NÀY: cold brew sẵn uống 250 ml theo tỉ lệ 1:10–1:12 trong bước làm — khoảng 100–120 mg/250 ml (We Are Coffee Co, bản sẵn uống) giao với 80–150 mg/250 ml (bản pha loãng, InstaCup) cho ra 100–150 mg/ly. Bản cô đặc 150–200 mg/250 ml không dùng vì file ghi tỉ lệ sẵn uống, không phải cô đặc.",
+  "process_note": "CHUYỂN TỪ MẺ SANG KHẨU PHẦN, GHI RÕ: file gốc ghi mẻ (cà phê xay thô 80 g + nước lạnh 250 ml) nhưng bước làm nói tỉ lệ sẵn uống 1:10–1:12 (80–100 g cho 1 lít nước). Ở đây lấy khẩu phần 250 ml cold brew sẵn uống cho ly 350 ml có đá (ly là dung tích, không phải mẫu số). Gắn ca-phe-den chỉ để lấy kcal cà phê đen (1 kcal/100 g, phương pháp pha không đổi kcal đáng kể), không phải để lấy caffeine hay phương pháp pha.",
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml chất lỏng",
+      "value": 1,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "≈2–3 kcal/ly (250 ml chất lỏng, không đường)",
+      "basis": "Cà phê đen không đường 250 ml × 1 kcal/100 g = 2,5 kcal. Đây là số suy ra từ hồ sơ ca-phe-den, chưa phải đầu ra engine (engine sẽ tính tương tự khi gắn đủ).",
+      "confidence": "medium",
+      "source_ref": "data/ingredients/ca-phe-den.json"
+    },
+    {
+      "label": "Caffeine",
+      "unit": "mg/ly",
+      "value_min": 100,
+      "value_max": 150,
+      "value": null,
+      "per_serving": "100–150 mg/ly",
+      "basis": "Khoảng tầm soát cho bản sẵn uống, xem caffeine_mg_note; không phải số đo.",
+      "confidence": "low",
+      "source_ref": "Nguồn thứ cấp về cold brew sẵn uống (xem caffeine_mg_note)"
+    }
+  ],
+  "allergen_note": "Đã gắn 1/1 dòng trong ly: cà phê đen không có tag dị ứng trong hồ sơ.",
+  "tcm_note": "Chỉ cà phê đen có nhãn bình/khổ/Hỏa (thấp) với khối lượng 250 g, phủ 100% nhưng tin cậy thấp — theo TCM-000 chỉ hiển thị ở mức thấp, không kết luận chắc chắn cho cả ly."
 }
