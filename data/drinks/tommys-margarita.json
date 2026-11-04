@@ -79,11 +79,11 @@
     {
       "label": "Năng lượng",
       "unit": "kcal/100 ml chất lỏng",
-      "value_min": 216,
-      "value_max": 216,
+      "value_min": 166,
+      "value_max": 166,
       "value": null,
-      "per_serving": "≈259 kcal/ly (120 ml chất lỏng)",
-      "basis": "Cộng tay từ công thức (ethanol 7 kcal/g, mật độ 0,789 g/ml + đường 4 kcal/g; rượu mùi tính cả ethanol và đường theo nhãn loại, chưa đo trực tiếp): tequila 60 ml × 2.21 = 132.6 kcal; nước cốt chanh 30 ml × 0.22 = 6.6 kcal; siro agave loãng (1/2 mật + 1/2 nước) 30 ml × 4.0 = 120.0 kcal. Tổng 259.2 kcal / 120 ml = 216 kcal/100 ml. ABV suy ra từ công thức: 20.0% (ethanol 24.0 ml / 120 ml chất lỏng). Đây chưa phải đầu ra engine (engine chưa có logic ethanol).",
+      "per_serving": "≈199 kcal/ly (120 ml chất lỏng)",
+      "basis": "Cộng tay từ công thức (ethanol 7 kcal/g, mật độ 0,789 g/ml + đường 4 kcal/g; rượu mùi tính cả ethanol và đường theo nhãn loại, chưa đo trực tiếp): tequila 60 ml × 2.21 = 132.6 kcal; nước cốt chanh 30 ml × 0.22 = 6.6 kcal; siro agave loãng (1/2 mật + 1/2 nước) 30 ml × 2.0 = 60.0 kcal (siro loãng chỉ chứa 15 ml mật agave, 15 ml × 1,4 × 286 / 100 = 60,1 kcal — KHÔNG dùng 4,0 kcal/ml của mật nguyên chất). Tổng 199.2 kcal / 120 ml = 166 kcal/100 ml. ABV suy ra từ công thức: 20.0% (ethanol 24.0 ml / 120 ml chất lỏng). Đây chưa phải đầu ra engine (engine chưa có logic ethanol).",
       "confidence": "low",
       "source_ref": "Bảng kcal/ml cocktail trong hồ sơ triển khai (ethanol + đường, xem basis)"
     },
