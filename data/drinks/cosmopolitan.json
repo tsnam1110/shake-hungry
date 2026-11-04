@@ -69,7 +69,7 @@
   "needs_review": true,
   "reviewed_by": null,
   "reviewed_at": null,
-  "review_note": "SOÁT LẠI 2026-11-04 theo lệnh của Benjamin (không dùng bảng tự suy cũ): tính lại từ rượu mùi đã kiểm chứng đa nguồn, xem drink-verification-liqueur.md — chưa qua duyệt lại sau khi sửa.",
+  "review_note": "SOÁT LẠI 2026-11-04 theo lệnh của Benjamin (không dùng bảng tự suy cũ): tính lại từ thành phần đã kiểm chứng đa nguồn, xem drink-verification-liqueur.md — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5.",
   "media": [
     {
@@ -84,11 +84,11 @@
     {
       "label": "Năng lượng",
       "unit": "kcal/100 ml chất lỏng",
-      "value_min": 154,
-      "value_max": 154,
+      "value_min": 152,
+      "value_max": 152,
       "value": null,
-      "per_serving": "≈154 kcal/ly (100 ml chất lỏng)",
-      "basis": "SOÁT LẠI 2026-11-04 (đa nguồn): vodka cam 40 ml × 2,21 = 88,4 kcal; Cointreau 15 ml × 3,11 = 46,7 kcal (nhãn hãng 311 kcal/100 ml, cũ 48,1); nước cốt chanh 15 ml × 0,22 = 3,3 kcal; nước cranberry 30 ml × 0,50 = 15,0 kcal (CHƯA kiểm chứng, giữ số cũ). Tổng mới 153,5 kcal / 100 ml = 154 kcal/100 ml (cũ 155, gần như không đổi). ABV 22,0% không đổi. Đây vẫn chưa phải đầu ra engine.",
+      "per_serving": "≈152 kcal/ly (100 ml chất lỏng)",
+      "basis": "SOÁT LẠI LẦN 2 2026-11-04 (đa nguồn): vodka cam 40 ml × 2,21 = 88,4 kcal; Cointreau 15 ml × 3,11 = 46,7 kcal (nhãn hãng 311 kcal/100 ml); nước cốt chanh 15 ml × 0,22 = 3,3 kcal; nước cranberry cocktail 30 ml khoảng 13,2–13,8 kcal — SỬA so với lần 1 (cranberry cũ dùng 0,50/ml = 15,0 kcal): Ocean Spray Cranberry Juice Cocktail qua OpenFoodFacts là 44–46 kcal, 10,5–11,7 g đường/100 ml (bản light/diet 18–19 kcal là sản phẩm khác, không áp dụng). Tổng mới 151,6–152,2 kcal / 100 ml = 152 kcal/100 ml (lần 1 là 154, cao hơn 2 kcal). ABV 22,0% không đổi. Đây vẫn chưa phải đầu ra engine.",
       "confidence": "low",
       "source_ref": "Bảng kcal/ml cocktail trong hồ sơ triển khai (ethanol + đường, xem basis)"
     },
@@ -110,7 +110,7 @@
       "value_min": null,
       "value_max": null,
       "per_serving": "12 g/ly (theo file, tổng đường thực khoảng 8 g)",
-      "basis": "sugar_added_g trong file = 12 g; tổng đường thực sau soát lại khoảng 8,2 g (xem basis năng lượng).",
+      "basis": "sugar_added_g trong file = 12 g; tổng đường thực sau soát lại khoảng 7,4 g (xem basis năng lượng).",
       "confidence": "low",
       "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
     }
