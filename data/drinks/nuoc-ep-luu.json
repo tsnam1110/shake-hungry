@@ -13,7 +13,8 @@
     {
       "name": "hạt lựu",
       "quantity": 300,
-      "unit": "g"
+      "unit": "g",
+      "ingredient_slug": "luu"
     }
   ],
   "recipe_steps": [
@@ -40,10 +41,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn lựu, nước ép theo nước ép lựu 54 kcal/100 ml (không dùng kcal cả hạt 249), liquid 200 ml — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -52,5 +53,32 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 200,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml nước ép",
+      "value_min": 50,
+      "value_max": 60,
+      "value": null,
+      "per_serving": "≈100–120 kcal/ly (khoảng 200 ml nước ép, chưa tính đá)",
+      "basis": "Cộng tay theo nước ép, KHÔNG dùng cả hạt: hạt lựu 300 g × 83 / 100 = 249,0 kcal là kcal cả hạt (gồm hạt cứng, xơ và chất béo trong hạt) — nước ép lựu lọc bỏ hạt nên KHÔNG áp dụng số này. Nước ép lựu khoảng 200 ml (hiệu suất ép từ hạt khoảng 65–70%), nước ép lựu khoảng 54 kcal/100 ml (đường khoảng 13 g/100 ml), 200 ml × 54 / 100 = 108 kcal, để khoảng 100–120 do hiệu suất ép khác nhau. Đây chưa phải đầu ra engine.",
+      "confidence": "low",
+      "source_ref": "data/ingredients/luu.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 0,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "0 g/ly (đường thêm), đường tự nhiên khoảng 26 g",
+      "basis": "sugar_added_g trong file = 0, đúng vì không thêm đường; đường tự nhiên trong nước ép lựu khoảng 13 g/100 ml × 200 ml = 26 g.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Đã gắn đủ 1/1 dòng trong ly: lựu không có tag dị ứng trong hồ sơ.",
+  "tcm_note": "Không kết luận tính vị: lựu không có nhãn tính vị trong hồ sơ."
 }
