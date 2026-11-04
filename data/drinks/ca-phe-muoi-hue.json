@@ -25,7 +25,8 @@
     {
       "name": "kem whipping/creamer",
       "quantity": 80,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "kem-whipping"
     },
     {
       "name": "muối mịn",
@@ -63,10 +64,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": true,
   "uncertain_note": "Xung đột lượng kem: 80 ml/ly lặp lại nhiều nhất vs 200 ml mẻ lớn vs 15–20 ml kem phủ; vị trí muối cũng khác nhau (trong cà phê vs trong kem). Công thức trên theo dạng lớp kem hiện đại chiếm ưu thế; không trình bày 200 ml kem như 1 khẩu phần.",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn kem whipping đã có (thêm density 1,0 ở commit riêng), liquid 150 ml, caffeine mg tầm soát 100–200 mg/ly, phạm vi bản kem sữa (không phải creamer) — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -75,5 +76,47 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 150,
+  "caffeine_mg_min": 100,
+  "caffeine_mg_max": 200,
+  "caffeine_mg_note": "KHOẢNG TẦM SOÁT, CHƯA ĐO CHO LY NÀY: cà phê trong ly là một phần phin (50 ml, như cà phê sữa đá), khoảng 100–200 mg/ly theo nguồn thứ cấp về phin VN (CoffeeTalkies phin 100–200 mg; DoanhNhanPlus 120–150 mg; Message Coffee 150–200 mg).",
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml chất lỏng",
+      "value_min": 239,
+      "value_max": 240,
+      "value": null,
+      "per_serving": "≈359–361 kcal/ly (150 ml chất lỏng, bản kem sữa tươi béo)",
+      "basis": "Cộng tay cho BẢN KEM SỮA TƯƠI BÉO (không phải creamer không sữa — xem ghi chú phạm vi): cà phê 50 ml × 1 = 0,5 kcal; sữa đặc 20 ml × 1,29 × 334–341 = 86,2–88,0 kcal; kem whipping 80 ml × 1,0 × 340 = 272,0 kcal; muối 0 kcal. Tổng 358,7–360,5 kcal / 150 ml = 239–240 kcal/100 ml chất lỏng. Đây chưa phải đầu ra engine; engine chưa gắn muối (2 g, 0 kcal) nên sẽ mở rộng khoảng trên một chút.",
+      "confidence": "medium",
+      "source_ref": "data/ingredients/ca-phe-den.json, sua-dac.json, kem-whipping.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 12,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "12 g/ly",
+      "basis": "sugar_added_g trong file catalogue = 12 g; kiểm chéo: sữa đặc 25,8 g, đường khoảng 14 g, gần 12 g trong sai số quán.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    },
+    {
+      "label": "Caffeine",
+      "unit": "mg/ly",
+      "value_min": 100,
+      "value_max": 200,
+      "value": null,
+      "per_serving": "100–200 mg/ly",
+      "basis": "Khoảng tầm soát cho phin, xem caffeine_mg_note; không phải số đo.",
+      "confidence": "low",
+      "source_ref": "Nguồn thứ cấp về phin Robusta (xem caffeine_mg_note)"
+    }
+  ],
+  "allergen_note": "Đã gắn 3/4 dòng trong ly: sữa đặc và kem whipping đều có tag allergen:sua — dị ứng Sữa đã xác nhận. Muối chưa gắn hồ sơ nhưng muối ăn không phải chất gây dị ứng phổ biến trong hệ tag.",
+  "tcm_note": "Không kết luận tính vị chung cho cả ly: chỉ cà phê đen có nhãn bình/khổ/Hỏa (thấp, 50 g) trên tổng ~152 g (33%, trong khoảng 30–60% của TCM-000 nên chỉ hiển thị ở mức thấp); sữa đặc và kem whipping không có nhãn tính vị trong hồ sơ.",
+  "process_note": "PHẠM VI SỐ KCAL: file ghi 'kem whipping/creamer' — số ở đây là bản kem sữa tươi béo (kem-whipping, 340 kcal/100 g). Nếu quán dùng creamer không sữa, kcal sẽ thấp hơn nhiều và số này không áp dụng; không gộp hai bản thành một khoảng vì khoảng đó quá rộng để có ích."
 }
