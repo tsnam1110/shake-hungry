@@ -46,7 +46,7 @@
   "needs_review": true,
   "reviewed_by": null,
   "reviewed_at": null,
-  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn cần tây, nước ép ~140 ml, liquid 140 ml — chưa qua duyệt lại sau khi sửa.",
+  "review_note": "KIỂM THỬ LẠI ĐỢT 2 (2026-11-04) theo lệnh của Benjamin: tái kiểm bằng nhãn hãng/nguồn độc lập — vẫn giữ cờ chưa duyệt, chờ Benjamin duyệt riêng.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -61,11 +61,11 @@
     {
       "label": "Năng lượng",
       "unit": "kcal/100 ml nước ép",
-      "value_min": 18,
-      "value_max": 21,
+      "value_min": 14,
+      "value_max": 18,
       "value": null,
-      "per_serving": "≈25–30 kcal/ly (khoảng 140 ml nước ép, chưa tính đá)",
-      "basis": "Cộng tay: cần tây 200 g cho khoảng 140 ml nước ép (hiệu suất ép khoảng 70%, ước tính); nước ép cần tây khoảng 20 kcal/100 ml (gần với cần tây nguyên 14 kcal/100 g, nước ép đậm đặc hơn vì bỏ xơ), 140 ml × 20 / 100 = 28 kcal, để khoảng 25–30. Cả cây 200 g × 14 / 100 = 28,0 kcal trùng với điểm giữa, nhưng đó là trùng hợp, không phải vì nước ép = cả cây. Đây chưa phải đầu ra engine.",
+      "per_serving": "≈20–25 kcal/ly (khoảng 140 ml nước ép, chưa tính đá)",
+      "basis": "KIỂM THỬ LẠI ĐỢT 2 (2026-11-04, nhãn hãng thật): nước ép cần tây 14–18 kcal/100 ml — SỬA so với cũ (18–21, ước tính không nhãn): Suja Organic Celery Juice qua OpenFoodFacts 14 kcal/100 ml (đường 1,4 g) và Ralphs 35 kcal/237 ml (14,8/100 ml); FatSecret generic 18 kcal/100 ml. Cần tây 200 g cho khoảng 140 ml nước ép (hiệu suất ép khoảng 70%, ước tính). 140 ml × 14–18/100 = 20–25 kcal (cũ 25–30, cao hơn 5 kcal). Đây chưa phải đầu ra engine.",
       "confidence": "low",
       "source_ref": "data/ingredients/can-tay.json"
     },
