@@ -145,10 +145,10 @@
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
-  "needs_review": false,
+  "needs_review": true,
   "reviewed_by": "tsnam1110@gmail.com",
   "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau). E-batch1 lô 1 2026-11-04: gắn cờ lại chưa duyệt — mâu thuẫn biến thể: ghi chú văn hoá ghi bản chợ Búng (bột trộn nước cốt dừa trước khi đổ khuôn, mặt bánh phết đậu xanh nấu nhừ, bì là thịt heo tẩm nước dừa thái sợi + thính, ăn kèm dưa chua/giá/rau thơm) nhưng danh sách không có nước cốt dừa, đậu xanh, thính, dưa chua, giá, lại có tôm khô; cần quyết định tái cấu trúc theo bản chợ Búng hay đổi phạm vi món và viết lại ghi chú văn hoá; chưa sửa số, chưa gọi là đã xác minh.",
   "tags": [
     "loai:banh"
   ]
