@@ -13,12 +13,14 @@
     {
       "name": "trà đen/xanh",
       "quantity": 150,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "tra-den"
     },
     {
       "name": "thịt bưởi",
       "quantity": 50,
-      "unit": "g"
+      "unit": "g",
+      "ingredient_slug": "buoi"
     },
     {
       "name": "mật ong",
@@ -55,10 +57,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn đủ 3/3, nền trà đen/xanh không đổi kcal, liquid 170 ml — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -67,5 +69,32 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 170,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml chất lỏng",
+      "value_min": 63,
+      "value_max": 63,
+      "value": null,
+      "per_serving": "≈107 kcal/ly (170 ml chất lỏng, chưa tính đá tan)",
+      "basis": "Cộng tay: trà 150 ml × 1 = 1,5 kcal (trà đen và trà xanh đều 1 kcal/100 g nên nền đen/xanh không đổi kcal, ghi rõ); thịt bưởi dầm 50 g × 38 / 100 = 19,0 kcal (bưởi dầm uống cả thịt, không phải chỉ nước ép); mật ong 20 ml × 1,42 × 304 / 100 = 86,4 kcal. Tổng 106,9 kcal / 170 ml = 63 kcal/100 ml. Đây chưa phải đầu ra engine.",
+      "confidence": "medium",
+      "source_ref": "data/ingredients/tra-den.json, buoi.json, mat-ong.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 15,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "15 g/ly",
+      "basis": "sugar_added_g trong file catalogue = 15 g; kiểm chéo: mật ong 28,4 g, đường khoảng 23,3 g, cộng đường trong bưởi khoảng 3,5 g — tổng đường thực khoảng 27 g, cao hơn 15 g trong file, ghi chú để chủ dự án chốt (file có thể chỉ tính đường thêm ngoài mật ong theo cách khác).",
+      "confidence": "low",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Đã gắn đủ 3/3 dòng trong ly: trà đen, bưởi và mật ong đều không có tag dị ứng trong hồ sơ.",
+  "tcm_note": "Không kết luận tính vị chung cho cả ly: bưởi có hai nhãn hàn/cam/Thổ và hàn/toan/Mộc (cùng nguồn, trung bình) với khối lượng 50 g trên tổng ~228 g (22%, dưới ngưỡng 30% của TCM-000); trà đen không có nhãn, mật ong không có nhãn."
 }
