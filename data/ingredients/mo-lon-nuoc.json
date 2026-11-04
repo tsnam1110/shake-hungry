@@ -17,7 +17,7 @@
     "fiber_g": 0,
     "water_g": 0,
     "mapping_confidence": "high",
-    "mapping_note": "Mỡ nước đã thắng là chất béo tinh khiết 100%, nước 0% → 902 kcal/100g là hằng số vật lý, không phụ thuộc giống lợn hay vùng miền. Đây là dòng đáng tin nhất trong cả bảng. PHÂN BIỆT với mỡ CHƯA thắng: dùng 167811 khi công thức ghi 'mỡ khổ / mỡ tươi'. TRÁNH 172327 và 173566 'Shortening, lard and vegetable oil' — đó là mỡ pha dầu thực vật công nghiệp.",
+    "mapping_note": "Mỡ nước đã thắng là chất béo tinh khiết 100%, nước 0% → 902 kcal/100g là hằng số vật lý, không phụ thuộc giống lợn hay vùng miền. Đây là dòng đáng tin nhất trong cả bảng. PHÂN BIỆT với mỡ CHƯA thắng: dùng 167811 khi công thức ghi 'mỡ khổ / mỡ tươi'. TRÁNH 172327 và 173566 'Shortening, lard and vegetable oil' — đó là mỡ pha dầu thực vật công nghiệp. QUYẾT ĐỊNH V10 của Benjamin 2026-11-04: giữ nguyên 902 kcal/100 g và ghi chú này — mỡ nước đã thắng là chất béo tinh khiết 100% nên 902 là giá trị đúng, cảnh báo V10 (>900) được chấp nhận là đúng cho mục này, không phải lỗi dữ liệu.",
     "alternatives": [
       {
         "name": "Pork, fresh, backfat, raw",
