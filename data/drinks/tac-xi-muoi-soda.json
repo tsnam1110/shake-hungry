@@ -23,7 +23,8 @@
     {
       "name": "siro đường",
       "quantity": 20,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "siro-duong"
     },
     {
       "name": "soda",
@@ -60,10 +61,10 @@
   "alcohol_pct_range": null,
   "label_note": "",
   "brand_examples": [],
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn siro đường + soda, nước tắc + xí muội chưa có hồ sơ, liquid 220 ml — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5.",
   "media": [
     {
@@ -72,5 +73,32 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 220,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml chất lỏng",
+      "value_min": 35,
+      "value_max": 40,
+      "value": null,
+      "per_serving": "≈78–88 kcal/ly (220 ml chất lỏng, chưa tính đá)",
+      "basis": "Cộng tay: nước tắc 20 ml × 50 / 100 = 10,0 kcal (nước tắc vắt khoảng 50 kcal/100 ml, thấp hơn tắc nguyên quả 71 kcal/100 g vì bỏ vỏ, ghi rõ); xí muội 1 miếng — khoảng 20–30 kcal (mận muối ướp đường, 1 miếng khoảng 12 g, đường + thịt mận, chưa có hồ sơ riêng nên để khoảng); siro đường 20 ml × 1,24 × 194 / 100 = 48,1 kcal; soda 0 kcal. Tổng 78,1–88,1 kcal / 220 ml = 35–40 kcal/100 ml. Đây chưa phải đầu ra engine.",
+      "confidence": "low",
+      "source_ref": "data/ingredients/siro-duong.json, soda.json, tac.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 12,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "12 g/ly",
+      "basis": "sugar_added_g trong file = 12 g; kiểm chéo: siro đường 12,4 g, gần 12 g trong file; đường trong xí muội khoảng 5 g không tính vào 'đường thêm' theo cách ghi của file.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Đã gắn 2/4 dòng trong ly: siro đường và soda không có tag dị ứng trong hồ sơ; nước tắc và xí muội chưa gắn hồ sơ nên không kết luận đầy đủ.",
+  "tcm_note": "Không kết luận tính vị: các dòng đều không có nhãn tính vị trong hồ sơ."
 }
