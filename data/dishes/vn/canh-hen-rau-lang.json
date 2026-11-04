@@ -106,10 +106,10 @@
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
-  "needs_review": false,
+  "needs_review": true,
   "reviewed_by": "tsnam1110@gmail.com",
   "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau). [Soát lại E-batch lô 8, 2026-11-05: vẫn không có nguồn định lượng nào cho ĐÚNG rau lang — kết quả chỉ là các biến thể khác (mồng tơi: ĐMX 100 g hến + 300 g rau cho 2 người; rau cải, rau ngót, rau răm đều có định lượng riêng); nguồn đúng món duy nhất (bluestone) vẫn không định lượng; lượng rau lang 60 g của file thấp hẳn so với khuôn chung của họ canh hến (~150 g rau/khẩu phần) nhưng đó là suy luận chéo biến thể, không phải nguồn cùng món, nên không dùng để sửa số; tổng các dòng 131 g so với tô 300 g thiếu nước hến — giữ cờ chưa duyệt, chờ nguồn định lượng cho rau lang.]",
   "tags": [
     "loai:canh"
   ]
