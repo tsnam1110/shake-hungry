@@ -44,7 +44,7 @@
   "needs_review": true,
   "reviewed_by": null,
   "reviewed_at": null,
-  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn lựu, nước ép theo nước ép lựu 54 kcal/100 ml (không dùng kcal cả hạt 249), liquid 200 ml — chưa qua duyệt lại sau khi sửa.",
+  "review_note": "SOÁT LẠI 2026-11-04 theo lệnh của Benjamin (không dùng bảng tự suy cũ): tính lại từ nhãn nước ép đã kiểm chứng đa nguồn — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -59,11 +59,11 @@
     {
       "label": "Năng lượng",
       "unit": "kcal/100 ml nước ép",
-      "value_min": 50,
-      "value_max": 60,
+      "value_min": 64,
+      "value_max": 68,
       "value": null,
-      "per_serving": "≈100–120 kcal/ly (khoảng 200 ml nước ép, chưa tính đá)",
-      "basis": "Cộng tay theo nước ép, KHÔNG dùng cả hạt: hạt lựu 300 g × 83 / 100 = 249,0 kcal là kcal cả hạt (gồm hạt cứng, xơ và chất béo trong hạt) — nước ép lựu lọc bỏ hạt nên KHÔNG áp dụng số này. Nước ép lựu khoảng 200 ml (hiệu suất ép từ hạt khoảng 65–70%), nước ép lựu khoảng 54 kcal/100 ml (đường khoảng 13 g/100 ml), 200 ml × 54 / 100 = 108 kcal, để khoảng 100–120 do hiệu suất ép khác nhau. Đây chưa phải đầu ra engine.",
+      "per_serving": "≈128–136 kcal/ly (khoảng 200 ml nước ép, chưa tính đá)",
+      "basis": "SOÁT LẠI 2026-11-04 (nhãn hãng thật): nước ép lựu khoảng 64–68 kcal/100 ml — SỬA so với cũ (54 kcal/100 ml, tự suy từ hạt): POM Wonderful 100% qua OpenFoodFacts nhiều bản 64–68 kcal, đường 13,5–14,4 g/100 ml; đường trong file cũ 13 g đã gần đúng nhưng kcal 54 thì không nhất quán với đường (13 g × 4 = 52 kcal chỉ tính đường, chưa tính axit hữu cơ và chất rắn khác). Hạt lựu 300 g × 83/100 = 249 kcal vẫn là ĐẦU TRÊN nếu ăn cả hạt, không áp dụng cho nước ép đã lọc. 200 ml × 64–68/100 = 128–136 kcal (cũ 100–120, thấp hơn 8–28 kcal). Đây chưa phải đầu ra engine.",
       "confidence": "low",
       "source_ref": "data/ingredients/luu.json"
     },
