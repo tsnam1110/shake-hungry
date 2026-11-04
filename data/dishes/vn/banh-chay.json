@@ -104,10 +104,10 @@
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",
-  "needs_review": false,
+  "needs_review": true,
   "reviewed_by": "tsnam1110@gmail.com",
   "reviewed_at": "2026-10-31",
-  "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này).",
+  "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này). E-batch1 lô 1 2026-11-04: gắn cờ lại chưa duyệt — định lượng theo khẩu phần không quy đổi nhất quán về một mẻ: mẻ tham chiếu phổ biến (bột nếp 200 g, đậu xanh 200 g, đường nhân 80–100 g + đường nước chè 100–120 g, bột năng 20 g cho 4–6 người) chia cho file (bột nếp 60 g, đậu 30 g, đường 12 g, bột năng 5 g cho 1 bát 4 viên) cho số bát khác nhau theo từng nguyên liệu (bột ~3,3 bát, đậu ~6,7 bát), nên không thể cùng đúng một mẻ; 2 họ nguồn đã lệch nhau hơn 2 lần ở đậu và đường theo level_note; ghi chú văn hoá nhắc dừa nạo sợi và bột sắn dây hoa bưởi nhưng danh sách không có dừa nạo và dùng bột năng thay bột sắn dây; chưa sửa số, chưa gọi là đã xác minh.",
   "tags": [
     "loai:che-trang-mieng"
   ]
