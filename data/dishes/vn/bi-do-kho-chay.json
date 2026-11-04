@@ -108,10 +108,10 @@
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
-  "needs_review": false,
+  "needs_review": true,
   "reviewed_by": "tsnam1110@gmail.com",
   "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau). [Soát lại E-batch lô 6, 2026-11-05: biến thể của file (kho + nước cốt dừa trơn, không đậu/chả/nấm) vẫn không xuất hiện ở họ đạt chuẩn nào có khẩu phần — ĐMX 3 biến thể đều không phải kho cốt dừa trơn (đậu Hà Lan/đậu phộng/rong biển + chả lụa chay); bản cốt dừa của Sadhu là CANH, không phải kho, không khẩu phần; các bản 'bí đỏ kho' tìm thêm dùng NƯỚC DỪA TƯƠI + chả lụa chay, khác nước cốt dừa của file; bước 2 thêm 60 ml nước nhưng danh sách không có dòng nước — giữ cờ chưa duyệt, cần nguồn kho cốt dừa trơn có khẩu phần hoặc chốt đổi biến thể.]",
   "tags": [
     "loai:mon-chinh"
   ]
