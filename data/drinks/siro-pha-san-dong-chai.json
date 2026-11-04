@@ -40,10 +40,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": true,
   "uncertain_note": "Catalogue ghi UNCERTAIN theo công thức, đường trong siro nguyên chất dao động lớn; bắt buộc đọc hướng dẫn pha loãng trên nhãn.",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04, làm cẩn thận theo QT-9: khoảng theo loại đóng gói, không lấy số một hãng — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §6.",
   "media": [
     {
@@ -52,5 +52,31 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "key_indicators": [
+    {
+      "label": "Năng lượng (siro nguyên chất)",
+      "unit": "kcal/100 ml",
+      "value_min": 250,
+      "value_max": 280,
+      "value": null,
+      "per_serving": "≈250–280 kcal/100 ml siro nguyên chất — KHÔNG uống trực tiếp",
+      "basis": "CẢNH BÁO: siro pha sẵn đóng chai là dạng cô đặc, KHÔNG uống trực tiếp nguyên chất. Siro nguyên chất khoảng 250–280 kcal/100 ml (đường khoảng 60 g/100 ml × 4 = 240 kcal cộng hương liệu, tương tự grenadine 250–280 đã dùng cho nhóm mocktail). Ly pha loãng thường dùng 30–50 ml siro + nước/soda thành 200–250 ml, tức khoảng 75–140 kcal/ly pha loãng, đường 18–30 g/ly. Công bố cả hai số, ghi rõ siro nguyên chất không phải khẩu phần uống.",
+      "confidence": "low",
+      "source_ref": "Siro đường/grenadine (khoảng theo loại siro)"
+    },
+    {
+      "label": "Năng lượng (ly pha loãng)",
+      "unit": "kcal/ly",
+      "value_min": 75,
+      "value_max": 140,
+      "value": null,
+      "per_serving": "≈75–140 kcal/ly pha loãng 250 ml (30–50 ml siro)",
+      "basis": "Ly pha loãng từ siro pha sẵn: 30–50 ml siro × 250–280 kcal/100 ml = 75–140 kcal/ly (chưa tính đá), đường 18–30 g/ly (30–50 ml × 60 g/100 ml = 18–30 g). Đây là khoảng theo lượng siro pha, ghi rõ.",
+      "confidence": "low",
+      "source_ref": "Siro đường/grenadine (khoảng theo loại siro)"
+    }
+  ],
+  "allergen_note": "Không kết luận đầy đủ: siro pha sẵn có thể chứa nhiều loại hương liệu và màu thực phẩm tùy hãng — file chưa có dòng nguyên liệu để gắn tag, trang chi tiết phải hiện 'chưa đủ dữ kiện' và yêu cầu đọc nhãn chai cụ thể.",
+  "tcm_note": "Không kết luận tính vị: mục đóng gói này chưa gắn hồ sơ nguyên liệu nên không kết luận ở tầng món."
 }
