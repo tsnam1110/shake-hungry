@@ -58,7 +58,7 @@
   "needs_review": true,
   "reviewed_by": null,
   "reviewed_at": null,
-  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn bưởi, cranberry chưa rõ loại có đường hay không để khoảng, liquid 240 ml, MÂU THUẪN sugar file 0 vs cocktail có đường — chưa qua duyệt lại sau khi sửa.",
+  "review_note": "SOÁT LẠI 2026-11-04 theo lệnh của Benjamin (không dùng bảng tự suy cũ): tính lại từ cranberry cocktail đã kiểm chứng đa nguồn — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5.",
   "media": [
     {
@@ -73,11 +73,11 @@
     {
       "label": "Năng lượng",
       "unit": "kcal/100 ml chất lỏng",
-      "value_min": 43,
-      "value_max": 46,
+      "value_min": 42,
+      "value_max": 43,
       "value": null,
-      "per_serving": "≈104–111 kcal/ly (240 ml chất lỏng, chưa tính đá)",
-      "basis": "Cộng tay: nước cranberry 90 ml — khoảng 41–49 kcal (cranberry không đường khoảng 46 kcal/100 ml, cranberry cocktail có đường khoảng 54 kcal/100 ml, file không ghi loại nào nên để khoảng); nước bưởi 90 ml × 39 / 100 = 35,1 kcal (nước bưởi khoảng 39 kcal/100 ml, bưởi nguyên 38 kcal/100 g, ghi rõ); purée/mật đào 60 ml — khoảng 27 kcal (đào 42 kcal/100 g, purée đào khoảng 45 kcal/100 ml, mật đào ngọt hơn thì cao hơn, để điểm 27 với ghi chú). Tổng 103,5–110,7 kcal / 240 ml = 43–46 kcal/100 ml. Đây chưa phải đầu ra engine.",
+      "per_serving": "≈102–104 kcal/ly (240 ml chất lỏng, chưa tính đá)",
+      "basis": "SOÁT LẠI 2026-11-04 (đa nguồn): nước cranberry 90 ml khoảng 39,6–41,4 kcal — SỬA so với cũ (41–49 kcal, lấy cranberry không đường 46 và cocktail 54): Ocean Spray Cranberry Juice Cocktail qua OpenFoodFacts 44–46 kcal, đường 10,5–11,7 g/100 ml, tức 90 ml = 39,6–41,4 kcal; cranberry không đường nguyên chất 46 kcal/100 ml tức 41,4 kcal/90 ml — hai loại nay gần như trùng nhau ở 40–41 kcal nên khoảng thu hẹp; nước bưởi 90 ml × 0,39 = 35,1 kcal (bưởi nguyên 38 kcal/100 g, ghi rõ); purée/mật đào 60 ml khoảng 27 kcal (đào 42 kcal/100 g, purée đào khoảng 45 kcal/100 ml, mật đào ngọt hơn thì cao hơn, để điểm 27 với ghi chú). Tổng mới 101,7–103,5 kcal / 240 ml = 42–43 kcal/100 ml (cũ 104–111, cao hơn 2–7 kcal). Đây chưa phải đầu ra engine.",
       "confidence": "low",
       "source_ref": "data/ingredients/buoi.json, dao.json"
     },
