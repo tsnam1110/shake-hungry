@@ -109,10 +109,10 @@
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",
-  "needs_review": false,
+  "needs_review": true,
   "reviewed_by": "tsnam1110@gmail.com",
   "reviewed_at": "2026-10-31",
-  "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này).",
+  "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này). [Soát lại E-batch lô 4, 2026-11-04: mâu thuẫn nội bộ — bước 1 nói 'luộc lá khúc, nhào với bột nếp làm vỏ xanh' nhưng danh sách nguyên liệu không có dòng lá khúc lẫn bột nếp; tổng các dòng 150,3 g so với khẩu phần 180 g thiếu ~30 g (đúng phần vỏ lá khúc + bột nếp bị thiếu); nguồn ngoài thống nhất vỏ = bột nếp (+ bột gạo tẻ) + lá khúc, nhân đậu xanh + thịt ba chỉ — giữ cờ chưa duyệt, cần bổ sung 2 dòng định danh rồi mới đối chiếu định lượng.]",
   "tags": [
     "loai:xoi"
   ]
