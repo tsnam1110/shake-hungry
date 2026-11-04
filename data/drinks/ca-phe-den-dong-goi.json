@@ -40,10 +40,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04, làm cẩn thận theo QT-9: khoảng gộp hai loại có đường/không đường, caffeine tầm soát theo nồng độ, không lấy số phin — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §6.",
   "media": [
     {
@@ -52,5 +52,31 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml",
+      "value_min": 2,
+      "value_max": 35,
+      "value": null,
+      "per_serving": "≈7–116 kcal/lon 330 ml (tùy có đường hay không)",
+      "basis": "Cà phê đen đóng chai/lon trên thị trường VN có hai loại rất khác nhau, file không ghi loại nào nên KHÔNG được lấy một điểm: loại không đường khoảng 2–5 kcal/100 ml (cà phê đen pha loãng, hồ sơ ca-phe-den 1 kcal/100 g, cộng chất tan cà phê, làm tròn 2–5); loại có đường khoảng 20–35 kcal/100 ml (đường 5–8 g/100 ml × 4 = 20–32 kcal, cộng cà phê 2–3 kcal). Khoảng gộp 2–35 kcal/100 ml là khoảng theo loại, tin cậy thấp — người dùng phải đọc nhãn lon cụ thể. Không dùng engine (đồ đóng gói không qua engine).",
+      "confidence": "low",
+      "source_ref": "Hồ sơ ca-phe-den (FDC 171890, 1 kcal/100 g); nhãn cà phê đen đóng chai/lon (khoảng, không phải một nhãn cụ thể)"
+    },
+    {
+      "label": "Caffeine",
+      "unit": "mg/lon",
+      "value_min": 130,
+      "value_max": 200,
+      "value": null,
+      "per_serving": "≈130–200 mg/lon 330 ml (tầm soát)",
+      "basis": "Caffeine tầm soát, không phải số đo một hãng: cà phê đen đóng chai/lon thường có nồng độ caffeine khoảng 40–60 mg/100 ml (thấp hơn espresso 212 mg/100 g vì pha loãng, cao hơn trà), nhân với lon 330 ml = 132–198 mg, làm tròn 130–200 mg/lon. Đây là khoảng tầm soát theo loại, tin cậy thấp — lon 180 ml thì khoảng 70–110 mg, lon 240 ml thì 95–145 mg, ghi rõ. Không dùng số caffeine của cà phê phin nguyên chất (100–200 mg/ly phin) vì đó là ly phin khác dung tích và nồng độ.",
+      "confidence": "low",
+      "source_ref": "Nồng độ caffeine cà phê pha loãng (tầm soát, không phải một nhãn cụ thể)"
+    }
+  ],
+  "allergen_note": "Không kết luận đầy đủ: cà phê đen đóng chai/lon không có dòng nguyên liệu trong file để gắn tag; cà phê đen nguyên chất không chứa sữa, trứng hay gluten, nhưng một số lon có thể thêm hương liệu — trang chi tiết phải hiện 'chưa đủ dữ kiện' cho dị ứng, không hiện 'không có dị ứng'.",
+  "tcm_note": "Không kết luận tính vị: cà phê đen chưa có hồ sơ nguyên liệu gắn vào mục này (hồ sơ ca-phe-den có nhãn bình/khổ/Hỏa, tin cậy thấp, nhưng mục đóng gói này chưa gắn hồ sơ nên không kết luận ở tầng món)."
 }
