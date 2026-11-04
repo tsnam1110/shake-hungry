@@ -92,10 +92,10 @@
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
-  "needs_review": false,
+  "needs_review": true,
   "reviewed_by": "tsnam1110@gmail.com",
   "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau). [Soát lại E-batch lô 4, 2026-11-04: file trộn hai truyền thống cùng tên — nhãn Nghệ An (bánh ngào luộc rồi ngào trong mật mía, không gói lá/hấp) với phương pháp hấp gói lá Bắc Bộ/Quảng Bình; bước 2 tự ghi 'bản nháp dùng mật ong thay mật mía' nên dòng ngọt hiện là mật ong 15 g, không phải mật mía định danh; tổng các dòng 81 g so với khẩu phần 110 g thiếu phần mật ngào; kho chưa có hồ sơ mật mía; ghi chú văn hoá của file nói ở xứ Nghệ 'bánh mật là tên gọi khác của bánh ngào' nên cặp này có thể trùng với banh-ngao — giữ cờ chưa duyệt, chờ chốt giữ bản nào và có gộp với banh-ngao không.]",
   "tags": [
     "dac-san:nghe-an",
     "loai:banh"
