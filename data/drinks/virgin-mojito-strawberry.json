@@ -10,8 +10,9 @@
   "ingredients": [
     {
       "name": "dâu",
-      "quantity": 3,
-      "unit": "quả"
+      "quantity": 36,
+      "unit": "g",
+      "ingredient_slug": "dau-tay"
     },
     {
       "name": "nước chanh",
@@ -20,8 +21,8 @@
     },
     {
       "name": "đường",
-      "quantity": 2,
-      "unit": "thìa cà phê",
+      "quantity": 8.4,
+      "unit": "g",
       "ingredient_slug": "duong-trang"
     },
     {
@@ -31,7 +32,7 @@
     },
     {
       "name": "soda",
-      "quantity": null,
+      "quantity": 120,
       "unit": "ml",
       "ingredient_slug": "soda"
     }
@@ -64,10 +65,10 @@
   "alcohol_pct_range": null,
   "label_note": "",
   "brand_examples": [],
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn dâu + đường + soda, dâu 3 quả đổi thành 36 g, soda lấy 120 ml theo mojito thường (ghi rõ giả định), mẫu số 176 ml đồ uống — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5.",
   "media": [
     {
@@ -76,5 +77,32 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 176,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml chất lỏng",
+      "value_min": 28,
+      "value_max": 28,
+      "value": null,
+      "per_serving": "≈48 kcal/ly (176 ml đồ uống, chưa tính đá)",
+      "basis": "Cộng tay: dâu 3 quả đổi thành 36 g (đơn vị 'quả' trong hồ sơ dau-tay là 12 g) × 32 / 100 = 11,5 kcal; nước chanh 20 ml × 22 / 100 = 4,4 kcal; đường 2 thìa cà phê đổi thành 8,4 g × 387 / 100 = 32,5 kcal; bạc hà 10 lá dầm, kcal không đáng kể; soda lượng None trong file — lấy 120 ml như Virgin Mojito thường, ghi rõ là giả định (nếu soda khác thì tổng không đổi vì soda 0 kcal, chỉ mẫu số đổi). Tổng 48,4 kcal / 176 ml đồ uống (36 + 20 + 120) = 28 kcal/100 ml. Đây chưa phải đầu ra engine.",
+      "confidence": "medium",
+      "source_ref": "data/ingredients/dau-tay.json, duong-trang.json, soda.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 8,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "8 g/ly",
+      "basis": "sugar_added_g trong file = 8 g; kiểm chéo: đường 2 thìa cà phê = 8,4 g, gần 8 g trong file.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Đã gắn 3/5 dòng trong ly: dâu, đường và soda đều không có tag dị ứng trong hồ sơ; nước chanh và bạc hà chưa gắn hồ sơ nên không kết luận đầy đủ.",
+  "tcm_note": "Không kết luận tính vị: các dòng đều không có nhãn tính vị trong hồ sơ."
 }
