@@ -42,10 +42,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04, làm cẩn thận theo QT-9: khoảng theo loại bia không cồn, ghi rõ 0,5% ABV không phải tuyệt đối 0 — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §6.",
   "media": [
     {
@@ -54,5 +54,42 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml",
+      "value_min": 15,
+      "value_max": 25,
+      "value": null,
+      "per_serving": "≈50–83 kcal/lon 330 ml",
+      "basis": "Bia không cồn (ABV trong file 0,0–0,5%) không có kcal từ ethanol đáng kể; kcal chủ yếu từ carb còn lại (khoảng 4–6 g/100 ml × 4 = 16–24 kcal/100 ml). Các hãng bia không cồn trên thị trường ghi nhãn khoảng 15–25 kcal/100 ml (ví dụ Heineken 0.0 khoảng 21 kcal/100 ml, các hãng khác 15–25). Để khoảng 15–25 kcal/100 ml, không lấy số một hãng làm điểm cho cả loại. Không dùng engine (engine chưa có logic ethanol).",
+      "confidence": "low",
+      "source_ref": "Nhãn bia không cồn các hãng (khoảng, không phải một nhãn cụ thể); file catalogue, alcohol_pct_range 0,0–0,5%"
+    },
+    {
+      "label": "Độ cồn",
+      "unit": "% ABV",
+      "value_min": 0.0,
+      "value_max": 0.5,
+      "value": null,
+      "per_serving": "0,0–0,5% ABV",
+      "basis": "alcohol_pct_range trong file catalogue = 0,0–0,5% — theo quy định, bia 'không cồn' vẫn có thể chứa tới 0,5% ABV, không phải tuyệt đối 0%, ghi rõ.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    },
+    {
+      "label": "Đường",
+      "unit": "g/lon",
+      "value_min": 0,
+      "value_max": 3,
+      "value": null,
+      "per_serving": "0–3 g/lon 330 ml (đường còn lại, không phải đường thêm)",
+      "basis": "Bia không cồn không thêm đường; đường còn lại từ malt khoảng 0–3 g/330 ml (tương tự bia lager trong thí điểm), ghi rõ là khoảng theo loại, không phải số đo một hãng.",
+      "confidence": "low",
+      "source_ref": "Thí điểm bia lager (commit 74adb25): đường 0–3 g/330 ml"
+    }
+  ],
+  "allergen_note": "Đã gắn 0/1 dòng trong file: bia làm từ lúa mạch (malt) nên có thể chứa gluten — cảnh báo theo loại nguyên liệu bia, chưa gắn tag trong hồ sơ, trang chi tiết phải hiện 'chưa đủ dữ kiện'.",
+  "tcm_note": "Không kết luận tính vị: bia chưa có hồ sơ nguyên liệu trong hệ thống."
 }
