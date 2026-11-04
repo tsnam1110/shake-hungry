@@ -61,7 +61,7 @@
   "needs_review": true,
   "reviewed_by": null,
   "reviewed_at": null,
-  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: kcal từ ethanol + đường theo công thức, ABV suy ra từ công thức, chưa qua duyệt lại sau khi sửa.",
+  "review_note": "SOÁT LẠI 2026-11-04 theo lệnh của Benjamin (không dùng bảng tự suy cũ): tính lại từ rượu mùi đã kiểm chứng đa nguồn, xem drink-verification-liqueur.md — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5.",
   "media": [
     {
@@ -76,20 +76,20 @@
     {
       "label": "Năng lượng",
       "unit": "kcal/100 ml chất lỏng",
-      "value_min": 107,
-      "value_max": 107,
+      "value_min": 110,
+      "value_max": 111,
       "value": null,
-      "per_serving": "≈171 kcal/ly (160 ml chất lỏng)",
-      "basis": "Cộng tay từ công thức (ethanol 7 kcal/g, mật độ 0,789 g/ml + đường 4 kcal/g; rượu mùi tính cả ethanol và đường theo nhãn loại, chưa đo trực tiếp): rum đen 60 ml × 2.21 = 132.6 kcal; ginger beer 100 ml × 0.38 = 38.0 kcal. Tổng 170.6 kcal / 160 ml = 107 kcal/100 ml. ABV suy ra từ công thức: 15.0% (ethanol 24.0 ml / 160 ml chất lỏng). Đây chưa phải đầu ra engine (engine chưa có logic ethanol).",
+      "per_serving": "≈176–178 kcal/ly (160 ml chất lỏng)",
+      "basis": "SOÁT LẠI 2026-11-04 (đa nguồn): rum đen 60 ml × 2,21 = 132,6 kcal; ginger beer 100 ml khoảng 43,0–45,0 kcal — SỬA so với cũ (ginger beer cũ tự suy 0,38/ml = 38,0 kcal): Bundaberg qua OpenFoodFacts và bienmanger là 43–45 kcal, 10,6–10,7 g đường/100 ml, <0,5% ABV (thương mại hiện đại). Tổng mới 175,6–177,6 kcal / 160 ml = 110–111 kcal/100 ml (cũ 171, thấp hơn 5–7 kcal). ABV 15,0% không đổi (ethanol rum 24 ml / 160 ml). Đây vẫn chưa phải đầu ra engine.",
       "confidence": "low",
       "source_ref": "Bảng kcal/ml cocktail trong hồ sơ triển khai (ethanol + đường, xem basis)"
     },
     {
       "label": "Độ cồn",
       "unit": "% ABV",
-      "value": 15.0,
-      "value_min": null,
-      "value_max": null,
+      "value": null,
+      "value_min": 15.0,
+      "value_max": 15.0,
       "per_serving": "≈15.0% ABV",
       "basis": "ABV suy ra từ công thức: ethanol 24.0 ml trên tổng 160 ml chất lỏng = 15.0%. Đây là ABV của ly pha theo công thức, chưa đo trực tiếp, và thay đổi nếu quán dùng rượu có ABV khác.",
       "confidence": "medium",
@@ -102,7 +102,7 @@
       "value_min": null,
       "value_max": null,
       "per_serving": "0 g/ly (theo file, tổng đường thực khoảng 9 g)",
-      "basis": "sugar_added_g trong file = 0 g (đường thêm từ siro/đường, theo cách ghi của file); tổng đường thực ước tính từ rượu mùi, nước ép và siro khoảng 9 g, cao hơn số file vì file không tính đường trong rượu mùi và nước ép.",
+      "basis": "sugar_added_g trong file = 0 g; tổng đường thực sau soát lại khoảng 10,6–10,7 g (xem basis năng lượng).",
       "confidence": "low",
       "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
     }
