@@ -19,22 +19,26 @@
     {
       "name": "bột sữa",
       "quantity": 40,
-      "unit": "g"
+      "unit": "g",
+      "ingredient_slug": "bot-sua"
     },
     {
       "name": "đường trắng",
       "quantity": 10,
-      "unit": "g"
+      "unit": "g",
+      "ingredient_slug": "duong-trang"
     },
     {
       "name": "trân châu đã nấu",
       "quantity": 50,
-      "unit": "g"
+      "unit": "g",
+      "ingredient_slug": "tran-chau-da-nau"
     },
     {
       "name": "siro đường đen",
       "quantity": 20,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "siro-duong"
     }
   ],
   "recipe_steps": [
@@ -66,10 +70,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: hồ sơ bột sữa mới (kem béo không sữa), gắn đủ 5/5, siro đường đen gắn siro-duong làm proxy, mẫu số 220 ml đồ uống — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -78,5 +82,32 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 220,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml đồ uống",
+      "value_min": 156,
+      "value_max": 186,
+      "value": null,
+      "per_serving": "≈343–408 kcal/ly (220 ml đồ uống gồm trân châu, chưa tính đá tan)",
+      "basis": "Cộng tay: trà đen 150 ml × 1 = 1,5 kcal; bột sữa 40 g × 450–550 / 100 = 180,0–220,0 kcal (hồ sơ bot-sua: bột kem béo không sữa, khoảng nhãn); đường trắng 10 g × 387 / 100 = 38,7 kcal; trân châu đã nấu 50 g × 150–200 / 100 = 75,0–100,0 kcal (hồ sơ tran-chau-da-nau, trân châu nấu ướp đường); siro đường đen 20 ml gắn siro-duong 20 ml × 1,24 × 194 / 100 = 48,1 kcal (siro đường đen là siro đường + đường đen, kcal chênh với siro đường trắng không quá ~10%, ghi rõ). Tổng 343,3–408,3 kcal / 220 ml đồ uống (150 + 20 + 50, bột sữa và đường tan không tính thêm thể tích) = 156–186 kcal/100 ml. Đây chưa phải đầu ra engine.",
+      "confidence": "low",
+      "source_ref": "data/ingredients/tra-den.json, bot-sua.json, duong-trang.json, tran-chau-da-nau.json, siro-duong.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 25,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "25 g/ly (theo file, chưa tính đường trong bột sữa và trân châu)",
+      "basis": "sugar_added_g trong file = 25 g; kiểm chéo: đường trắng 10 g + siro đường đen 12,4 g + đường trong trân châu khoảng 8,3 g = 30,7 g, cộng đường trong bột sữa (bột kem béo đường khoảng 50 g/100 g × 40 g = 20 g) thì tổng đường thực khoảng 50 g — cao hơn nhiều so với 25 g trong file, ghi chú để chủ dự án chốt cách ghi đường của file (có thể file chỉ tính đường thêm ngoài bột sữa và trân châu).",
+      "confidence": "low",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Đã gắn đủ 5/5 dòng trong ly: bột sữa có tag allergen:sua (do whey/caseinate trong bột kem béo, xem hồ sơ bot-sua) — dị ứng Sữa đã xác nhận theo hồ sơ, dù bột kem béo không phải sữa động vật nguyên chất. Các dòng còn lại không có tag dị ứng trong hồ sơ.",
+  "tcm_note": "Không kết luận tính vị: trà đen, bột sữa, đường, trân châu và siro đều không có nhãn tính vị trong hồ sơ."
 }
