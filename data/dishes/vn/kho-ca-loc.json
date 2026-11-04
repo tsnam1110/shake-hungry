@@ -81,10 +81,10 @@
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",
-  "needs_review": false,
+  "needs_review": true,
   "reviewed_by": "tsnam1110@gmail.com",
   "reviewed_at": "2026-10-31",
-  "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này).",
+  "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này). E-batch0 2026-11-04: gắn cờ lại chưa duyệt — món vẫn dùng cá lóc tươi 50 g làm proxy cho khô cá lóc, kcal sẽ thấp hơn khô thật; tra web 2026-11-04 chỉ thấy các trang SEO mâu thuẫn nhau (270–300, 198–320, 276, 290, 300–350 kcal/100 g), chưa có hồ sơ khô cá lóc từ nguồn đạt chuẩn nên chưa tạo hồ sơ mới và chưa sửa số, chưa gọi là đã xác minh.",
   "tags": [
     "loai:mon-chinh"
   ]
