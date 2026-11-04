@@ -132,10 +132,10 @@
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
-  "needs_review": false,
+  "needs_review": true,
   "reviewed_by": "tsnam1110@gmail.com",
   "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau). [Soát lại E-batch lô 9, 2026-11-05: mọi công thức cháo tôm càng xanh có định lượng tìm được vẫn là cháo ăn dặm cho bé (saigonesebaguette: 2 con ~100 g + 50 g gạo; memart: 50 g thịt + 30 g gạo, tôm xay nhuyễn, không gia vị người lớn); cháo tôm người lớn có công thức nhưng dùng tôm thường bóc vỏ/băm nhỏ (150 g tôm + 100 g gạo, không ghi số tô), khác hồ sơ tôm càng nguyên con bày trên mặt của file — giữ cờ chưa duyệt, bản người lớn vẫn không có công thức biên tập nào.]",
   "tags": [
     "loai:chao-sup"
   ]
