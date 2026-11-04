@@ -13,7 +13,8 @@
     {
       "name": "cà rốt",
       "quantity": 250,
-      "unit": "g"
+      "unit": "g",
+      "ingredient_slug": "ca-rot"
     }
   ],
   "recipe_steps": [
@@ -40,10 +41,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn cà rốt, nước ép theo hiệu suất ép ~160 ml, liquid 160 ml — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -52,5 +53,32 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 160,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml nước ép",
+      "value_min": 38,
+      "value_max": 44,
+      "value": null,
+      "per_serving": "≈60–70 kcal/ly (khoảng 160 ml nước ép, chưa tính đá)",
+      "basis": "Cộng tay theo nước ép, KHÔNG phải cả củ: cà rốt 250 g cho khoảng 160 ml nước ép (hiệu suất ép khoảng 60–70%, ghi rõ là ước tính); nước ép cà rốt khoảng 40 kcal/100 ml (USDA carrot juice, gần với cà rốt nguyên 41 kcal/100 g vì cà rốt ít xơ so với quả khác), 160 ml × 40 / 100 = 64 kcal, để khoảng 60–70 do hiệu suất ép khác nhau. Cả củ 250 g × 41 / 100 = 102,5 kcal là ĐẦU TRÊN nếu ăn cả bã, không áp dụng cho nước ép đã lọc bã. Đây chưa phải đầu ra engine.",
+      "confidence": "low",
+      "source_ref": "data/ingredients/ca-rot.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 0,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "0 g/ly (đường thêm), đường tự nhiên khoảng 14 g",
+      "basis": "sugar_added_g trong file = 0, đúng vì không thêm đường; đường tự nhiên trong nước ép cà rốt khoảng 9 g/100 ml × 160 ml = 14,4 g, ghi rõ để không hiểu nhầm là không đường.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Đã gắn đủ 1/1 dòng trong ly: cà rốt không có tag dị ứng trong hồ sơ.",
+  "tcm_note": "Không kết luận tính vị: cà rốt không có nhãn tính vị trong hồ sơ."
 }
