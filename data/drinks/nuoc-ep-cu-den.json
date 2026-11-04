@@ -13,12 +13,14 @@
     {
       "name": "củ dền",
       "quantity": 150,
-      "unit": "g"
+      "unit": "g",
+      "ingredient_slug": "cu-den-do"
     },
     {
       "name": "cà rốt",
-      "quantity": 1,
-      "unit": "củ"
+      "quantity": 61,
+      "unit": "g",
+      "ingredient_slug": "ca-rot"
     }
   ],
   "recipe_steps": [
@@ -47,10 +49,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn đủ 2/2, cà rốt 1 củ đổi thành 61 g, nước ép ~125 ml, khoảng rộng — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -59,5 +61,32 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 125,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml nước ép",
+      "value_min": 40,
+      "value_max": 72,
+      "value": null,
+      "per_serving": "≈50–90 kcal/ly (khoảng 125 ml nước ép, chưa tính đá)",
+      "basis": "Cộng tay: củ dền 150 g × 43 / 100 = 64,5 kcal; cà rốt 1 củ vừa 61 g × 41 / 100 = 25,0 kcal (file ghi '1 củ', đổi thành 61 g theo đơn vị 'củ vừa' trong hồ sơ ca-rot để engine quy đổi được); cả củ tổng 89,5 kcal là ĐẦU TRÊN nếu ăn cả bã. Nước ép khoảng 125 ml (hiệu suất ép khoảng 60%), nước ép củ dền + cà rốt khoảng 40–45 kcal/100 ml, 125 ml ≈ 50–56 kcal là ĐẦU DƯỚI theo nước ép. Khoảng công bố 50–90 kcal / 125 ml = 40–72 kcal/100 ml gộp cả hai cách tính, rộng do không đo được hiệu suất ép thật. Đây chưa phải đầu ra engine.",
+      "confidence": "low",
+      "source_ref": "data/ingredients/cu-den-do.json, ca-rot.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 0,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "0 g/ly (đường thêm), đường tự nhiên khoảng 12 g",
+      "basis": "sugar_added_g trong file = 0, đúng vì không thêm đường; đường tự nhiên trong nước ép khoảng 10 g/100 ml × 125 ml = 12,5 g.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Đã gắn đủ 2/2 dòng trong ly: củ dền và cà rốt đều không có tag dị ứng trong hồ sơ.",
+  "tcm_note": "Không kết luận tính vị: củ dền và cà rốt đều không có nhãn tính vị trong hồ sơ."
 }
