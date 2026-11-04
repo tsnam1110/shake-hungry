@@ -42,10 +42,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": true,
   "uncertain_note": "Ghi chú ngắn trong catalogue (§6.6), không phải entry đầy đủ; đường/caffeine dao động theo thương hiệu, bắt buộc đọc nhãn.",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04, làm cẩn thận theo QT-9: khoảng theo loại đóng gói, không lấy số một hãng — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §6.",
   "media": [
     {
@@ -54,5 +54,42 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml",
+      "value_min": 45,
+      "value_max": 50,
+      "value": null,
+      "per_serving": "≈113–125 kcal/lon 250 ml",
+      "basis": "Nước tăng lực khoảng 45–50 kcal/100 ml: đường khoảng 11 g/100 ml × 4 = 44 kcal, cộng taurine/caffeine (không đáng kể kcal), tổng khoảng 45–50 kcal/100 ml. Đây là khoảng theo loại nước tăng lực có đường, không phải số một hãng — bản không đường thì 0–5 kcal/100 ml, ghi rõ. Không dùng engine (đồ đóng gói không qua engine).",
+      "confidence": "low",
+      "source_ref": "Nhãn đóng gói (khoảng theo loại, không phải một nhãn cụ thể)"
+    },
+    {
+      "label": "Đường",
+      "unit": "g/lon",
+      "value_min": 27,
+      "value_max": 28,
+      "value": null,
+      "per_serving": "≈27–28 g/lon 250 ml",
+      "basis": "Đường trong nước tăng lực có đường khoảng 11 g/100 ml, nhân lon 250 ml = 27,5 g, làm tròn 27–28 g/lon.",
+      "confidence": "low",
+      "source_ref": "Nhãn đóng gói (khoảng theo loại)"
+    },
+    {
+      "label": "Caffeine",
+      "unit": "mg/lon",
+      "value_min": 75,
+      "value_max": 85,
+      "value": null,
+      "per_serving": "≈75–85 mg/lon 250 ml",
+      "basis": "Caffeine trong nước tăng lực thường khoảng 32 mg/100 ml (chuẩn 80 mg/lon 250 ml), khoảng 75–85 mg/lon theo hãng. Đây là khoảng theo loại, tin cậy trung bình — lon 330 ml thì khoảng 100–110 mg, ghi rõ.",
+      "confidence": "medium",
+      "source_ref": "Nhãn nước tăng lực (khoảng theo loại)"
+    }
+  ],
+  "allergen_note": "Không kết luận đầy đủ: mục đóng gói này không có dòng nguyên liệu trong file để gắn tag; trang chi tiết phải hiện 'chưa đủ dữ kiện' cho dị ứng, không hiện 'không có dị ứng'.",
+  "tcm_note": "Không kết luận tính vị: mục đóng gói này chưa gắn hồ sơ nguyên liệu nên không kết luận ở tầng món."
 }
