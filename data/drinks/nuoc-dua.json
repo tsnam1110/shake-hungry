@@ -45,10 +45,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: nước dừa + cơm dừa non chưa có hồ sơ (khoảng), liquid 300 ml, đường thêm 0 nhưng đường tự nhiên ~22 g — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -57,5 +57,32 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 300,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml chất lỏng",
+      "value_min": 29,
+      "value_max": 34,
+      "value": null,
+      "per_serving": "≈87–102 kcal/ly (300 ml chất lỏng + 30 g cơm dừa, chưa tính đá)",
+      "basis": "Cộng tay với khoảng cho cơm dừa non (chưa có hồ sơ): nước dừa tươi 300 ml × 19 / 100 = 57,0 kcal (nước dừa tươi khoảng 19 kcal/100 g, mật độ ~1,0); cơm dừa non 30 g × 100–150 / 100 = 30,0–45,0 kcal (cơm dừa non mềm, nhiều nước hơn cơm dừa già 354 kcal/100 g, nên không dùng số dừa già — khoảng 100–150 là khoảng cho dừa non, tin cậy thấp). Tổng 87,0–102,0 kcal. Mẫu số ghi là 300 ml chất lỏng cho chỉ số, tổng ly gồm cả cơm dừa 30 g. Đây chưa phải đầu ra engine.",
+      "confidence": "low",
+      "source_ref": "data/ingredients/nuoc-loc.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 0,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "0 g/ly (đường thêm), đường tự nhiên khoảng 22 g",
+      "basis": "sugar_added_g trong file = 0, đúng vì không thêm đường; đường tự nhiên trong nước dừa khoảng 7,5 g/100 ml × 300 ml = 22,5 g, cộng cơm dừa khoảng 1–2 g — tổng đường thực khoảng 24 g, không phải 0 g, ghi rõ để không hiểu nhầm là không đường.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Không kết luận đầy đủ: nước dừa và cơm dừa đều chưa gắn hồ sơ nên không có dữ liệu tag dị ứng trong hệ thống.",
+  "tcm_note": "Không kết luận tính vị: các dòng chưa có hồ sơ."
 }
