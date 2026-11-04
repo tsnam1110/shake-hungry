@@ -18,7 +18,8 @@
     {
       "name": "nước",
       "quantity": 250,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "nuoc-loc"
     },
     {
       "name": "mật ong",
@@ -53,10 +54,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn nước + mật ong, cam thảo hãm chưa có hồ sơ, MÂU THUẪN sugar file 0 vs mật ong — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -65,5 +66,32 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 255,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml chất lỏng",
+      "value": 8,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "≈22 kcal/ly (255 ml chất lỏng)",
+      "basis": "Cộng tay: cam thảo 3 g hãm rồi lọc, rễ không ăn nên kcal tan vào nước không đáng kể (chưa có hồ sơ cam thảo, không bịa điểm); nước 0 kcal; mật ong 5 g × 304 / 100 = 15,2 kcal (file ghi mật ong 5 g, không phải ml — tính theo g, khác trà gừng ghi ml). Tổng khoảng 15–22 kcal, lấy 22 làm đầu trên ghi trong file; chia cho 255 ml ≈ 8–9 kcal/100 ml, ghi 8. Đây chưa phải đầu ra engine.",
+      "confidence": "low",
+      "source_ref": "data/ingredients/nuoc-loc.json, mat-ong.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 6,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "≈6 g/ly (từ mật ong)",
+      "basis": "MÂU THUẪN FILE, GHI RÕ KHÔNG TỰ SỬA GỐC: sugar_added_g trong file = 0 nhưng công thức có mật ong 5 g (đường khoảng 4,1 g từ mật ong, cộng đường tự nhiên trong cam thảo) — chỉ số này lấy 6 g theo mật ong, không lấy 0 g trong file, để chủ dự án chốt lại.",
+      "confidence": "low",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Đã gắn 2/3 dòng trong ly: nước và mật ong không có tag dị ứng trong hồ sơ; rễ cam thảo chưa gắn hồ sơ nên không kết luận đầy đủ.",
+  "tcm_note": "Không kết luận tính vị: cam thảo chưa có hồ sơ, mật ong không có nhãn tính vị trong hồ sơ."
 }
