@@ -8,7 +8,7 @@
     "external_id": "2646169",
     "source_url": "https://api.nal.usda.gov/fdc/v1/food/2646169?api_key=DEMO_KEY",
     "scientific_name": null,
-    "kcal_per_100g": 119,
+    "kcal_per_100g": 125,
     "kcal_min": null,
     "kcal_max": null,
     "protein_g": 21.6,
@@ -17,7 +17,7 @@
     "fiber_g": null,
     "water_g": null,
     "mapping_confidence": "medium",
-    "mapping_note": "TÁCH RIÊNG khỏi thăn ngoại. Tiếng Việt gọi 'thăn' cho cả thăn ngoại (166 kcal) lẫn thăn nội/phi lê (119 kcal) — chênh 47 kcal/100g, đủ để làm sai calo món. Người nhập liệu PHẢI chọn tường minh. Dòng Foundation không đo carb và xơ nên để null. CẢNH BÁO QT-4: dòng Foundation lẫn trong nhóm thịt lợn dùng SR Legacy.",
+    "mapping_note": "TÁCH RIÊNG khỏi thăn ngoại. Tiếng Việt gọi 'thăn' cho cả thăn ngoại (166 kcal) lẫn thăn nội/phi lê (119 kcal) — chênh 47 kcal/100g, đủ để làm sai calo món. Người nhập liệu PHẢI chọn tường minh. Dòng Foundation không đo carb và xơ nên để null. CẢNH BÁO QT-4: dòng Foundation lẫn trong nhóm thịt lợn dùng SR Legacy. Đính chính D 2026-11-04: số cũ 119 không khớp Energy công bố của chính bản ghi Foundation 2646169 (125,021) cũng không khớp Atwater từ đạm/béo của nó (21,6×4 + 3,9×9 = 121,4) và ghi chú cũ không nêu nguồn cho 119; chốt theo chuẩn repo — 125. Hệ quả: chênh với thăn ngoại (166) còn 41 kcal/100 g, không còn 47 như câu trước (47 tính từ số cũ 119).",
     "alternatives": []
   },
   "secondary_sources": [],
