@@ -1,31 +1,32 @@
-# Kho giá theo ngày và theo tuần — Lắc Đói
+# Kho giá theo tuần — Lắc Đói
 
-> Trạng thái: kho và quy trình đã lập ngày 2026-11-04. Chưa có dữ liệu giá ngày nào
-> được thu thập trong kho này. Mọi file ngày trong kho này đều là tài liệu nghiên
-> cứu, CHƯA được seed vào app, CHƯA hiển thị cho người dùng, cho tới khi có quyết
-> định riêng về việc seed và hiển thị.
+> Trạng thái: kho và quy trình đã lập ngày 2026-11-04, đổi từ chu kỳ ngày sang
+> chu kỳ tuần ngày 2026-11-04 theo yêu cầu của chủ dự án. Chưa có dữ liệu giá
+> tuần nào được thu thập trong kho này. Mọi file tuần trong kho này đều là tài
+> liệu nghiên cứu, CHƯA được seed vào app, CHƯA hiển thị cho người dùng, cho tới
+> khi có quyết định riêng về việc seed và hiển thị.
 
 ## Kho này để làm gì
 
-Kho này lưu giá bán lẻ quan sát được theo từng ngày, làm nền cho Tuần ăn và cho
+Kho này lưu giá bán lẻ quan sát được theo từng tuần, làm nền cho Tuần ăn và cho
 dữ liệu giá theo mùa vụ, vùng miền của dự án. Nó không thay thế giá quả theo mùa
 đã có trong `data/fruits/*.json` (bảng `fruit_prices`, snapshot 2026-10-31), mà bổ
-sung thêm chuỗi thời gian theo ngày để sau này tính được tổng tiền đi chợ thật,
+sung thêm chuỗi thời gian theo tuần để sau này tính được tổng tiền đi chợ thật,
 quy đổi gói thật và chi phí ước tính của món ăn theo tháng và miền.
 
 Tài liệu gốc về phương pháp thu thập giá vẫn là
-`../PRICE-COLLECTION-PLAN.md`. Kho này là phần vận hành hàng ngày của kế hoạch
+`../PRICE-COLLECTION-PLAN.md`. Kho này là phần vận hành hàng tuần của kế hoạch
 đó, không phải một kế hoạch khác.
 
 Kho này là kho tài liệu nghiên cứu, chưa phải nguồn sự thật của app. Theo
 quy tắc QT-3 của dự án, dữ liệu dùng trong app phải nằm trong `data/` dưới
-dạng file có version. Vì vậy khi một snapshot ngày được duyệt để dùng trong
+dạng file có version. Vì vậy khi một snapshot tuần được duyệt để dùng trong
 app, việc đưa nó vào `data/` và cập nhật `DATA-MODEL` là một quyết định và
-một commit riêng, không tự động xảy ra từ task hàng ngày này.
+một commit riêng, không tự động xảy ra từ task hàng tuần này.
 
 ## Phạm vi: 489 khóa sản phẩm, không phải 671 hay 1.548
 
-Phạm vi cập nhật hàng ngày là nguyên liệu, hoa quả và rau mùa, nhưng phải khử
+Phạm vi cập nhật hàng tuần là nguyên liệu, hoa quả và rau mùa, nhưng phải khử
 trùng lặp trước khi đếm:
 
 - Nguyên liệu: 489 file trong `data/ingredients/`.
@@ -41,7 +42,7 @@ Khóa chuẩn của một dòng giá là `product_key`, chính là slug nguyên 
 quả chỉ là cách gọi khác của cùng một khóa, không được tạo dòng riêng cho rau,
 cho quả và cho nguyên liệu của cùng một thực phẩm.
 
-Món ăn và đồ uống không thuộc phạm vi cập nhật giá hàng ngày này. Giá của một
+Món ăn và đồ uống không thuộc phạm vi cập nhật giá hàng tuần này. Giá của một
 món nấu sẵn phụ thuộc quán, khẩu phần và địa điểm, không tính ngược ra được từ
 giá nguyên liệu theo cách đáng tin.
 
@@ -51,29 +52,30 @@ giá nguyên liệu theo cách đáng tin.
 docs/04-data-sources/prices/
   README.md            # File này: mục đích, phạm vi, cách đọc kho.
   SCHEMA.md            # Schema và toàn bộ quy tắc quy đổi đơn vị, gói.
-  DAILY-TASK.md        # Định nghĩa task hàng ngày cho Agent hoặc Dev kế nhiệm.
-  validate.py          # Script kiểm tra file ngày, chạy trước khi commit.
-  daily/
-    TEMPLATE.json      # Mẫu file ngày, KHÔNG phải dữ liệu thật.
-    YYYY-MM-DD.json    # Một file cho một ngày thu thập, xem chi tiết ở dưới.
+  WEEKLY-TASK.md       # Định nghĩa task hàng tuần cho Agent hoặc Dev kế nhiệm.
+  validate.py          # Script kiểm tra file tuần, chạy trước khi commit.
   weekly/
-    TEMPLATE.md        # Mẫu tổng kết tuần, chỉ lập chỉ mục, không gộp giá.
-    YYYY-Www.md        # Một file cho một tuần ISO, ví dụ 2026-W45.md.
+    TEMPLATE.json      # Mẫu file tuần, KHÔNG phải dữ liệu thật.
+    YYYY-Www.json      # Một file cho một tuần ISO, ví dụ 2026-W45.json.
 ```
 
-## Một ngày là một file, một tuần là một chỉ mục
+## Một tuần là một file
 
-- Mỗi ngày thu thập có đúng một file `daily/YYYY-MM-DD.json`. Mọi dòng trong
-  file đó phải có cùng `collected_date` bằng đúng ngày trong tên file.
-- Không bao giờ mang giá của ngày trước sang file của ngày sau. Ngày nào không
-  thu được mặt hàng nào thì mặt hàng đó vào danh sách `missing`, kèm lý do,
-  không được lấp bằng giá cũ, giá của kênh khác hay giá của mặt hàng tương tự.
-- File tuần `weekly/YYYY-Www.md` chỉ lập chỉ mục: tuần đó có những file ngày
-  nào, mỗi ngày thu được bao nhiêu trên 489 khóa, còn thiếu những gì, có ghi
-  chú gì. File tuần KHÔNG tính trung bình giá của các ngày trong tuần thành
-  một giá tuần, KHÔNG chọn một ngày đại diện cho cả tuần.
-- Tuần ISO tính bằng lệnh `date +%G-W%V` theo múi giờ Asia/Saigon, ví dụ
-  ngày 2026-11-04 thuộc tuần 2026-W45.
+- Mỗi tuần thu thập có đúng một file `weekly/YYYY-Www.json`, ví dụ
+  `2026-W45.json`. Tuần ISO tính bằng lệnh `date +%G-W%V` theo múi giờ
+  Asia/Saigon, ví dụ ngày 2026-11-04 thuộc tuần 2026-W45.
+- Mỗi file tuần ghi rõ `collected_date` là ngày thu thập thật trong tuần
+  đó, thường là ngày chạy task đầu tuần. Mọi dòng trong file đó phải có
+  cùng `collected_date`, và ngày đó phải nằm trong đúng tuần ISO ghi
+  trong tên file. Một file tuần không bao giờ chứa giá của hai ngày khác
+  nhau.
+- Không bao giờ mang giá của tuần trước sang file của tuần sau. Tuần nào
+  không thu được mặt hàng nào thì mặt hàng đó vào danh sách `missing`,
+  kèm lý do, không được lấp bằng giá cũ, giá của kênh khác hay giá của
+  mặt hàng tương tự.
+- File tuần KHÔNG tính trung bình giá của nhiều ngày thành một giá tuần,
+  vì trong một file tuần chỉ có một ngày thu thập duy nhất. Muốn biết giá
+  thay đổi ra sao thì so sánh các file tuần liên tiếp, không gộp chúng.
 
 ## Kênh và miền: ghi đúng cái đã thấy, không suy đoán
 
@@ -109,18 +111,18 @@ thập. Tóm tắt ba điểm dễ sai nhất:
 
 | Phần | Trạng thái |
 | ---- | ---------- |
-| Kho, schema, task ngày, script kiểm tra | Đã lập, xem commit lập kho. |
-| File giá ngày đầu tiên | Chưa có. Task hàng ngày sẽ tạo file đầu tiên vào lần chạy tới. |
-| Seed giá ngày vào database hoặc `data/` | Chưa làm, cần quyết định riêng. |
-| Hiển thị giá ngày trên trang web | Chưa làm, cần quyết định riêng. |
-| Tổng tiền tuần ăn và quy đổi gói từ kho này | Chưa code, chỉ code sau khi kho có đủ ngày và đã được duyệt. |
+| Kho, schema, task tuần, script kiểm tra | Đã lập, xem commit lập kho. |
+| File giá tuần đầu tiên | Chưa có. Task hàng tuần sẽ tạo file đầu tiên vào lần chạy tới. |
+| Seed giá tuần vào database hoặc `data/` | Chưa làm, cần quyết định riêng. |
+| Hiển thị giá tuần trên trang web | Chưa làm, cần quyết định riêng. |
+| Tổng tiền tuần ăn và quy đổi gói từ kho này | Chưa code, chỉ code sau khi kho có đủ tuần và đã được duyệt. |
 
 ## Cách đọc kho này trong 5 phút
 
 1. Đọc file này để biết phạm vi và cấu trúc.
 2. Đọc `SCHEMA.md` để biết từng trường và từng công thức quy đổi.
-3. Đọc `DAILY-TASK.md` để biết một lần chạy hàng ngày phải làm những bước nào,
+3. Đọc `WEEKLY-TASK.md` để biết một lần chạy hàng tuần phải làm những bước nào,
    dừng ở đâu và báo cáo ra sao.
-4. Mở `daily/TEMPLATE.json` để thấy hình dạng của một file ngày trống.
-5. Chạy `python3 validate.py daily/YYYY-MM-DD.json` trước khi commit bất kỳ
-   file ngày nào.
+4. Mở `weekly/TEMPLATE.json` để thấy hình dạng của một file tuần trống.
+5. Chạy `python3 validate.py weekly/YYYY-Www.json` trước khi commit bất kỳ
+   file tuần nào.

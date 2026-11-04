@@ -1,4 +1,4 @@
-# Schema file giá ngày và quy tắc quy đổi đơn vị, gói
+# Schema file giá tuần và quy tắc quy đổi đơn vị, gói
 
 File này là luật bắt buộc cho mọi lần thu thập giá vào kho
 `docs/04-data-sources/prices/`. Agent hoặc Dev kế nhiệm phải đọc hết file này
@@ -6,28 +6,29 @@ trước lần thu thập đầu tiên và đọc lại phần quy đổi mỗi 
 mới. Khi luật trong file này và thói quen làm nhanh mâu thuẫn nhau, luật trong
 file này thắng.
 
-## 1. Một file ngày có hình dạng gì
+## 1. Một file tuần có hình dạng gì
 
-Tên file: `daily/YYYY-MM-DD.json`. Ngày trong tên file là ngày thu thập, theo
-múi giờ Asia/Saigon, không phải ngày viết file, không phải ngày commit, không
-phải ngày đăng bài nguồn.
+Tên file: `weekly/YYYY-Www.json`, ví dụ `weekly/2026-W45.json`. Tuần trong
+tên file là tuần ISO của ngày thu thập, theo múi giờ Asia/Saigon, không phải
+tuần viết file, không phải tuần commit, không phải tuần đăng bài nguồn.
 
-Một file ngày gồm đúng bốn phần: `meta`, `entries`, `missing` và `notes`.
+Một file tuần gồm đúng bốn phần: `meta`, `entries`, `missing` và `notes`.
 `meta` mô tả lần thu thập. `entries` là các dòng giá đã thu được. `missing`
 là các khóa sản phẩm trong phạm vi 489 khóa mà lần này không thu được, kèm lý
 do. `notes` là ghi chú về kênh, về khuyến mãi chung hoặc về sự cố trong lần
-thu thập. File ngày không có phần nào khác.
+thu thập. File tuần không có phần nào khác.
 
 Các trường trong `meta`:
 
-- `collected_date`: ngày thu thập, dạng `YYYY-MM-DD`, phải trùng tên file.
+- `collected_date`: ngày thu thập thật trong tuần đó, dạng `YYYY-MM-DD`,
+  phải nằm trong đúng tuần ISO ghi trong tên file.
 - `week_iso`: tuần ISO của ngày thu thập, ví dụ `2026-W45`, lấy bằng lệnh
-  `date +%G-W%V` theo Asia/Saigon.
+  `date +%G-W%V` theo Asia/Saigon, và phải trùng tuần trong tên file.
 - `scope_total`: tổng số khóa sản phẩm trong phạm vi, hiện là 489. Con số này
   chỉ thay đổi khi kho nguyên liệu thay đổi và phải ghi rõ lý do thay đổi
-  trong `notes` của file ngày đầu tiên dùng số mới.
+  trong `notes` của file tuần đầu tiên dùng số mới.
 - `channels_attempted`: danh sách kênh đã thử đọc trong lần này.
-- `collector`: `agent` khi do task hàng ngày chạy, `human` khi do người thu
+- `collector`: `agent` khi do task hàng tuần chạy, `human` khi do người thu
   trực tiếp, kèm tên hoặc mã phiên làm việc nếu có.
 - `source_rule`: luôn ghi câu này nguyên văn: giá chỉ ghi khi đọc trực tiếp
   từ trang bán hoặc khảo sát trực tiếp tại điểm bán trong đúng ngày thu thập.
@@ -43,8 +44,9 @@ Các trường trong mỗi dòng của `entries`, theo thứ tự ghi:
 - `region`: `bac`, `trung`, `nam` chỉ khi vị trí giao hàng hoặc địa điểm chợ
   đã được chọn và ghi rõ. Khi đọc online mà chưa chọn vị trí giao, ghi
   `online-chua-chon-vi-tri`. Không suy đoán miền từ tên miền của website.
-- `collected_date`: phải bằng `meta.collected_date` và bằng ngày trong tên
-  file, không có ngoại lệ.
+- `collected_date`: phải bằng `meta.collected_date`, không có ngoại lệ.
+  Một file tuần chỉ có một ngày thu thập duy nhất, không trộn giá của hai
+  ngày khác nhau trong cùng một tuần.
 - `source_name`: tên trang bán hoặc tên chợ, ví dụ `Bách Hóa Xanh online`.
 - `source_url`: đường dẫn tới trang danh mục hoặc trang sản phẩm đã đọc, khi
   có.
@@ -225,7 +227,7 @@ hiệu dụng sau khuyến mãi. Các trường hợp sau đều giữ nguyên
   chú, nhưng không được dùng thay cho `listed_price_vnd`.
 - Combo hai sản phẩm khác nhau: ghi thành một dòng riêng với
   `product_key` là sản phẩm chính và `promo_note` mô tả combo, hoặc ghi
-  vào `notes` của file ngày và không đưa vào `entries` như một mặt hàng
+  vào `notes` của file tuần và không đưa vào `entries` như một mặt hàng
   đơn. Không bao giờ lấy giá combo làm giá của một mặt hàng đơn trong
   combo đó.
 
@@ -261,7 +263,7 @@ làm tham khảo kèm cờ lệch.
 
 Các ví dụ dưới đây lấy từ snapshot 2026-11-04 đã ghi trong kho làm việc của
 dự án, chỉ dùng để minh họa công thức, không phải dữ liệu của kho giá này
-và không được copy vào file ngày mới.
+và không được copy vào file tuần mới.
 
 - Thịt đùi heo C.P: 34.500 đ cho gói 300 g. Giá/kg tự tính là
   34.500 / 300 * 1000 = 115.000 đ/kg.
@@ -283,11 +285,12 @@ và không được copy vào file ngày mới.
 Chạy script kiểm tra trong cùng thư mục kho:
 
 ```bash
-python3 docs/04-data-sources/prices/validate.py docs/04-data-sources/prices/daily/YYYY-MM-DD.json
+python3 docs/04-data-sources/prices/validate.py docs/04-data-sources/prices/weekly/YYYY-Www.json
 ```
 
 Script kiểm tra các lỗi sau và dừng lại ở lỗi đầu tiên nó gặp, theo thứ tự
-này: tên file không khớp `collected_date`; thiếu trường bắt buộc; trùng
+này: tên file không khớp `week_iso`, `collected_date` không nằm trong tuần
+ISO ghi trong tên file; thiếu trường bắt buộc; trùng
 dòng cùng `product_key`, kênh và biến thể; `listed_price_vnd` không phải
 số nguyên dương; giá/kg hoặc giá/lít suy ra không khớp công thức trong mục
 2; giá/kg được ghi trong khi đơn vị bán là cái, quả, con, hộp, mớ mà không

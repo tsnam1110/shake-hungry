@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
-"""Kiem tra file gia ngay trong kho docs/04-data-sources/prices/daily/.
+"""Kiem tra file gia tuan trong kho docs/04-data-sources/prices/weekly/.
 
-Chi kiem tra hinh thuc va toan hoc theo SCHEMA.md: ten file khop ngay thu
-thap, truong bat buoc, trung dong, cong thuc quy doi don vi va goi, va
-khong duoc ghi gia/kg cho hang ban theo cai, qua, con, hop, mo khi chua co
-khoi luong. Script KHONG kiem tra duoc gia co dung voi trang ban hay khong.
+Chi kiem tra hinh thuc va toan hoc theo SCHEMA.md: ten file khop tuan ISO,
+ngay thu thap nam trong tuan do, truong bat buoc, trung dong, cong thuc
+quy doi don vi va goi, va khong duoc ghi gia/kg cho hang ban theo cai,
+qua, con, hop, mo khi chua co khoi luong. Script KHONG kiem tra duoc gia
+co dung voi trang ban hay khong.
 
 Cach dung, chay tu goc repo:
     python3 docs/04-data-sources/prices/validate.py \
-        docs/04-data-sources/prices/daily/YYYY-MM-DD.json
+        docs/04-data-sources/prices/weekly/YYYY-Www.json
 
 Thoat 0 khi dat, thoat 1 kem thong bao loi dau tien gap duoc khi khong dat.
 """
@@ -36,7 +37,9 @@ COUNT_UNITS = {
     "qua", "cai", "con", "hop", "goi", "tui", "vi", "mo", "bo",
     "chai", "lon", "bich", "khay",
 }
-FILENAME_RE = re.compile(r"^(\d{4})-(\d{2})-(\d{2})\.json$")
+WEEK_FILENAME_RE = re.compile(r"^(\d{4})-W(\d{2})\.json$")
+LEGACY_DATE_FILENAME_RE = re.compile(r"^\d{4}-\d{2}-\d{2}\.json$")
+COLLECTED_DATE_RE = re.compile(r"^(\d{4})-(\d{2})-(\d{2})$")
 SUB_SIZE_RE = re.compile(r"^(\d+(?:\.\d+)?)\s*(g|kg|ml|l)$")
 
 
@@ -109,23 +112,23 @@ def main(argv):
         return 2
     path = Path(argv[1])
     if path.name == "TEMPLATE.json":
-        fail("TEMPLATE.json la file mau, khong phai file ngay. "
-             "Hay tao file daily/YYYY-MM-DD.json moi.")
-    match = FILENAME_RE.match(path.name)
+        fail("TEMPLATE.json la file mau, khong phai file tuan. "
+             "Hay tao file weekly/YYYY-Www.json moi.")
+    if LEGACY_DATE_FILENAME_RE.match(path.name):
+        fail("Kho gia da doi sang chu ky tuan. File ngay dang "
+             "YYYY-MM-DD.json khong con hop le, hay dung file tuan "
+             "dang YYYY-Www.json.")
+    match = WEEK_FILENAME_RE.match(path.name)
     if not match:
-        fail(f"Ten file phai la YYYY-MM-DD.json, nhan duoc {path.name}.")
-    try:
-        collected = date(int(match.group(1)), int(match.group(2)),
-                         int(match.group(3)))
-    except ValueError:
-        fail(f"Ngay trong ten file khong hop le: {path.name}.")
+        fail(f"Ten file phai la YYYY-Www.json, nhan duoc {path.name}.")
+    expected_week = f"{match.group(1)}-W{match.group(2)}"
     try:
         data = json.loads(path.read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError) as exc:
         fail(f"Khong doc duoc file JSON: {exc}.")
 
     if not isinstance(data, dict):
-        fail("File ngay phai la mot doi tuong JSON.")
+        fail("File tuan phai la mot doi tuong JSON.")
     meta = data.get("meta")
     entries = data.get("entries")
     missing = data.get("missing")
@@ -136,14 +139,26 @@ def main(argv):
     if not isinstance(missing, list):
         fail("Thieu phan missing, phai la mot danh sach.")
 
-    if meta.get("collected_date") != collected.isoformat():
-        fail(f"meta.collected_date ({meta.get('collected_date')}) khac ngay "
-             f"trong ten file ({collected.isoformat()}).")
+    collected_raw = meta.get("collected_date")
+    collected_match = COLLECTED_DATE_RE.match(str(collected_raw or ""))
+    if not collected_match:
+        fail(f"meta.collected_date khong dung dang YYYY-MM-DD: "
+             f"{collected_raw!r}.")
+    try:
+        collected = date(int(collected_match.group(1)),
+                         int(collected_match.group(2)),
+                         int(collected_match.group(3)))
+    except ValueError:
+        fail(f"meta.collected_date khong phai ngay hop le: "
+             f"{collected_raw!r}.")
     iso = collected.isocalendar()
-    expected_week = f"{iso.year}-W{iso.week:02d}"
+    actual_week = f"{iso.year}-W{iso.week:02d}"
+    if actual_week != expected_week:
+        fail(f"meta.collected_date {collected.isoformat()} thuoc tuan "
+             f"{actual_week}, khac tuan trong ten file ({expected_week}).")
     if meta.get("week_iso") != expected_week:
-        fail(f"meta.week_iso ({meta.get('week_iso')}) khac tuan ISO dung "
-             f"({expected_week}).")
+        fail(f"meta.week_iso ({meta.get('week_iso')}) khac tuan trong ten "
+             f"file ({expected_week}).")
     if not is_int(meta.get("scope_total")) or meta["scope_total"] <= 0:
         fail("meta.scope_total phai la so nguyen duong.")
     if not meta.get("channels_attempted"):
@@ -163,7 +178,8 @@ def main(argv):
                      f"{entry.get('product_key')!r}.")
         if entry.get("collected_date") != collected.isoformat():
             fail(f"Dong {entry['product_key']} co collected_date "
-                 f"{entry.get('collected_date')}, khac ngay trong ten file.")
+                 f"{entry.get('collected_date')}, khac "
+                 f"meta.collected_date ({collected.isoformat()}).")
         if not entry.get("source_url") and not entry.get("source_note"):
             fail(f"Dong {entry['product_key']} thieu ca source_url va "
                  f"source_note.")
@@ -317,7 +333,8 @@ def main(argv):
                  f"khoa nguyen lieu thuc te ({len(slugs)}).")
 
     print(f"DAT: {len(entries)} dong gia, {len(covered_keys)} khoa da thu, "
-          f"{len(missing)} dong missing, ngay {collected.isoformat()}.")
+          f"{len(missing)} dong missing, tuan {expected_week}, ngay thu "
+          f"thap {collected.isoformat()}.")
     return 0
 
 
