@@ -77,7 +77,7 @@
   "needs_review": true,
   "reviewed_by": null,
   "reviewed_at": null,
-  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: kcal từ ethanol + đường theo công thức, ABV suy ra từ công thức, chưa qua duyệt lại sau khi sửa.",
+  "review_note": "SOÁT LẠI 2026-11-04 theo lệnh của Benjamin (không dùng bảng tự suy cũ): tính lại từ rượu mùi đã kiểm chứng đa nguồn, xem drink-verification-liqueur.md — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5.",
   "media": [
     {
@@ -92,20 +92,20 @@
     {
       "label": "Năng lượng",
       "unit": "kcal/100 ml chất lỏng",
-      "value_min": 170,
-      "value_max": 170,
+      "value_min": 173,
+      "value_max": 173,
       "value": null,
-      "per_serving": "≈200 kcal/ly (117.5 ml chất lỏng)",
-      "basis": "Cộng tay từ công thức (ethanol 7 kcal/g, mật độ 0,789 g/ml + đường 4 kcal/g; rượu mùi tính cả ethanol và đường theo nhãn loại, chưa đo trực tiếp): amaretto 45 ml × 2.75 = 123.8 kcal; bourbon 22.5 ml × 2.21 = 49.7 kcal; nước chanh 30 ml × 0.22 = 6.6 kcal; siro đường 5 ml × 2.41 = 12.1 kcal; lòng trắng trứng 15 ml × 0.52 = 7.8 kcal. Tổng 199.9 kcal / 117.5 ml = 170 kcal/100 ml. ABV suy ra từ công thức: 18.4% (ethanol 21.6 ml / 117.5 ml chất lỏng). Đây chưa phải đầu ra engine (engine chưa có logic ethanol).",
+      "per_serving": "≈203 kcal/ly (118 ml chất lỏng)",
+      "basis": "SOÁT LẠI 2026-11-04 (đa nguồn): amaretto 45 ml × 2,82 = 126,9 kcal — nhãn Disaronno (qua Frankfurt Airport shop + MyFoodDiary) 282 kcal, 30 g đường/100 ml, 28% (cũ tự suy 275, thấp hơn 2,5%); bourbon 22,5 ml × 2,21 = 49,7 kcal; nước chanh 30 ml × 0,22 = 6,6 kcal; siro đường 5 ml × 2,41 = 12,1 kcal; lòng trắng trứng 15 ml × 0,52 = 7,8 kcal. Tổng mới 203,1 kcal / 117,5 ml = 173 kcal/100 ml (cũ 200, thấp hơn 3 kcal) — XÁC NHẬN gần như không đổi bằng nhãn hãng. ABV 18,4% không đổi. Đây vẫn chưa phải đầu ra engine.",
       "confidence": "low",
       "source_ref": "Bảng kcal/ml cocktail trong hồ sơ triển khai (ethanol + đường, xem basis)"
     },
     {
       "label": "Độ cồn",
       "unit": "% ABV",
-      "value": 18.4,
-      "value_min": null,
-      "value_max": null,
+      "value": null,
+      "value_min": 18.4,
+      "value_max": 18.4,
       "per_serving": "≈18.4% ABV",
       "basis": "ABV suy ra từ công thức: ethanol 21.6 ml trên tổng 117.5 ml chất lỏng = 18.4%. Đây là ABV của ly pha theo công thức, chưa đo trực tiếp, và thay đổi nếu quán dùng rượu có ABV khác.",
       "confidence": "medium",
@@ -118,7 +118,7 @@
       "value_min": null,
       "value_max": null,
       "per_serving": "3 g/ly (theo file, tổng đường thực khoảng 17 g)",
-      "basis": "sugar_added_g trong file = 3 g (đường thêm từ siro/đường, theo cách ghi của file); tổng đường thực ước tính từ rượu mùi, nước ép và siro khoảng 17 g, cao hơn số file vì file không tính đường trong rượu mùi và nước ép.",
+      "basis": "sugar_added_g trong file = 3 g; tổng đường thực sau soát lại khoảng 17,2 g (tính từ rượu mùi đã kiểm chứng + nước ép, xem basis năng lượng).",
       "confidence": "low",
       "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
     }
