@@ -108,10 +108,10 @@
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
-  "needs_review": false,
+  "needs_review": true,
   "reviewed_by": "tsnam1110@gmail.com",
   "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau). [Soát lại E-batch lô 4, 2026-11-04: file chỉ dùng bột mì 35 g/khẩu phần; các nguồn ngoài đều dùng bột mì + bột năng (bản kẹp mỏng truyền thống còn thêm bột gạo, tỉ lệ 100 g gạo/350 g năng/150 g mì; bản waffle dày/tàn ong dùng 200 g mì + 50 g năng), và hai biến thể kẹp mỏng giòn vs waffle dày chưa được chốt — định lượng hiện tại không khớp biến thể nào, giữ cờ chưa duyệt chờ chốt biến thể rồi mới đối chiếu lại.]",
   "tags": [
     "loai:banh"
   ]
