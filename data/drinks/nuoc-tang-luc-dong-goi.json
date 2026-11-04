@@ -45,7 +45,7 @@
   "needs_review": true,
   "reviewed_by": null,
   "reviewed_at": null,
-  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04, làm cẩn thận theo QT-9: khoảng theo loại đóng gói, không lấy số một hãng — chưa qua duyệt lại sau khi sửa.",
+  "review_note": "SOÁT LẠI 2026-11-04 theo lệnh của Benjamin (không dùng khoảng tự suy cũ): đối chiếu nhãn hãng thật đang bán, xem drink-verification-packaged.md — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §6.",
   "media": [
     {
@@ -59,11 +59,11 @@
     {
       "label": "Năng lượng",
       "unit": "kcal/100 ml",
-      "value_min": 45,
+      "value_min": 44,
       "value_max": 50,
       "value": null,
-      "per_serving": "≈113–125 kcal/lon 250 ml",
-      "basis": "Nước tăng lực khoảng 45–50 kcal/100 ml: đường khoảng 11 g/100 ml × 4 = 44 kcal, cộng taurine/caffeine (không đáng kể kcal), tổng khoảng 45–50 kcal/100 ml. Đây là khoảng theo loại nước tăng lực có đường, không phải số một hãng — bản không đường thì 0–5 kcal/100 ml, ghi rõ. Không dùng engine (đồ đóng gói không qua engine).",
+      "per_serving": "≈110–125 kcal/lon 250 ml",
+      "basis": "SOÁT LẠI 2026-11-04 (nhãn hãng thật): nước tăng lực theo loại 44–50 kcal/100 ml — MỞ RỘNG đầu dưới từ 45 xuống 44: Red Bull qua OpenFoodFacts nhiều bản 44–47 kcal, đường 10,7–11 g/100 ml (bản không đường 0–5 kcal là sản phẩm khác, ghi rõ). Khoảng gộp 44–50 kcal/100 ml cho bản có đường. Không dùng engine (đồ đóng gói không qua engine).",
       "confidence": "low",
       "source_ref": "Nhãn đóng gói (khoảng theo loại, không phải một nhãn cụ thể)"
     },
