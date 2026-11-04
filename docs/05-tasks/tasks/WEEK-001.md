@@ -18,6 +18,23 @@ công thức hay code của Mealbird. Kế hoạch đầy đủ: tài liệu Gia
 **Quy tắc làm việc:** giai đoạn → phần → task, một task một lần, một commit
 riêng, báo cáo sau mỗi task và chờ duyệt rồi mới sang task tiếp theo.
 
+> ## Đính chính 2026-11-04 07:51 — thay quyết định số 2 buổi sáng
+>
+> Chủ dự án nhắn trong chat REA mealbird: Giai đoạn 2 **bổ sung thêm cả
+> thông tin ngân sách, gói, hộ gia đình** — không còn chỉ lõi tuần ăn.
+> 4 quyết định còn lại giữ nguyên. Task 1 vẫn đứng vì chưa đụng 3 mảng
+> mới; Task 2 (API Hồ sơ) chờ duyệt Task 1 **và** làm rõ mức độ của 3 mảng
+> mới trước khi code, vì Lắc Đói hiện chưa có giá nguyên liệu/món, chưa
+> có dữ liệu gói bán, và chưa có thiết kế riêng tư cho chia sẻ hộ gia
+> đình — làm tổng tiền/gói thật/chia sẻ thật ngay sẽ phải bịa dữ liệu hoặc
+> bỏ qua thiết kế riêng tư, cả hai đều trái quy tắc dự án.
+>
+> Cùng lượt này, chủ dự án cho phép lấy dữ liệu từ trang Mealbird và yêu
+> cầu so sánh Mealbird với nguồn khác. Nghiên cứu so sánh đang chạy riêng
+> (ngân sách/gói/hộ gia đình, đối chiếu USDA + app khác + bối cảnh Việt
+> Nam); giới hạn: chỉ trang công khai, không copy văn bản marketing,
+> công thức, ảnh hay dữ liệu món của Mealbird vào Lắc Đói.
+
 ## Phần 2.1 — Mục tiêu tuần
 
 ### Task 1 — ĐÃ XONG (2026-11-04, chờ duyệt)
