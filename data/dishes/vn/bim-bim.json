@@ -76,10 +76,10 @@
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",
-  "needs_review": false,
+  "needs_review": true,
   "reviewed_by": "tsnam1110@gmail.com",
   "reviewed_at": "2026-10-31",
-  "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này).",
+  "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này). [Soát lại E-batch lô 6, 2026-11-05: file nhập tự động từ Wikidata CHƯA QUA BIÊN SOẠN, cần VIẾT LẠI chứ không sửa số mò — định danh rối ba chiều: tên 'bim bim' là từ chung đã generic hoá từ Snack Tôm Bimbim của Hải Hà–Kotobuki (Saigoneer, Wikipedia: snack bột/gia vị/hạt, không riêng khoai tây); ghi chú văn hoá kể Snack Tôm; nhưng nguyên liệu lại là khoai tây 40 g + muối (bim bim khoai tây); không có bước làm nào (recipe_steps null); gợi ý Wikidata spice/flour/nut chưa ánh xạ; phương pháp chiên-ngập-dầu cho một thành phẩm chiên sẵn (ghi chú QA-002 đã giải thích dầu qua hệ số hấp thụ 12% thay cho dòng dầu, nhưng không gỡ được rối định danh); khẩu phần gói 50 g so với nguyên liệu 40,5 g (+4,8 g dầu hấp thụ = 45,3 g) vẫn thiếu — giữ cờ chưa duyệt, chờ viết lại toàn bộ theo một định danh duy nhất.]",
   "tags": [
     "loai:banh"
   ]
