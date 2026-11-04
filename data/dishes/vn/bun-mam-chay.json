@@ -189,10 +189,10 @@
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
-  "needs_review": false,
+  "needs_review": true,
   "reviewed_by": "tsnam1110@gmail.com",
   "reviewed_at": "2026-10-31",
-  "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này).",
+  "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này). [Soát lại E-batch lô 7, 2026-11-05: công thức đã được nhiều họ xác nhận, nhưng file SAI/THIẾU ở đúng nền lèo định danh — các họ đều dùng tương hột 100 g + chao ~30 g cho mẻ 4 người (tức ~25 g tương + ~7,5 g chao/khẩu phần, khớp bộ sửa trong ghi chú LV2-012), trong khi file dùng tương bần 15 g (khác tương hột) và KHÔNG có dòng chao nào; tương bần và tương hột trong kho đều kcal null nên nền lèo không tính được calo; tổng các dòng 389 g so với khẩu phần 470 g thiếu nước dùng — giữ cờ chưa duyệt, chờ bổ sung chao, sửa lượng tương và hồ sơ tương có số đạt chuẩn. Không sửa số trong lần gắn cờ này.]",
   "tags": [
     "loai:bun-pho-mi"
   ]
