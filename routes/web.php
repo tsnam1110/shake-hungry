@@ -181,6 +181,12 @@ Route::middleware(['auth', 'admin'])->prefix('admin/api')->group(function () {
     Route::get('/feedback', [\App\Http\Controllers\Admin\FeedbackController::class, 'index']);
     Route::post('/feedback/{ticket}/status', [\App\Http\Controllers\Admin\FeedbackController::class, 'updateStatus']);
     Route::post('/dishes/{dish}/compute', [DishController::class, 'compute']);
+
+    // API quản trị cho 3 module file (Giai đoạn 1 thay /quan-tri bằng /admin):
+    // đọc/ghi trực tiếp file data/ (QT-3), chỉ trường ghi chú/cờ an toàn.
+    Route::get('/modules/{module}', [\App\Http\Controllers\Admin\ModuleFileController::class, 'index'])->where('module', 'ket-hop|rau-mua|do-uong');
+    Route::get('/modules/{module}/{slug}', [\App\Http\Controllers\Admin\ModuleFileController::class, 'show'])->where(['module' => 'ket-hop|rau-mua|do-uong', 'slug' => '[A-Za-z0-9_-]+']);
+    Route::put('/modules/{module}/{slug}', [\App\Http\Controllers\Admin\ModuleFileController::class, 'update'])->where(['module' => 'ket-hop|rau-mua|do-uong', 'slug' => '[A-Za-z0-9_-]+']);
 });
 
 Route::get('/admin/{any?}', fn () => view('admin'))
