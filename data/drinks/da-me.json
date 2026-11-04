@@ -20,7 +20,8 @@
     {
       "name": "nước lọc",
       "quantity": 200,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "nuoc-loc"
     },
     {
       "name": "đậu phộng rang",
@@ -57,10 +58,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn nước, siro me + đậu phộng chưa có hồ sơ (khoảng rộng), liquid 240 ml — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -69,5 +70,32 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 240,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml chất lỏng",
+      "value_min": 67,
+      "value_max": 89,
+      "value": null,
+      "per_serving": "≈161–213 kcal/ly (240 ml chất lỏng, chưa tính đá)",
+      "basis": "Cộng tay: siro me 40 ml — khoảng 104–156 kcal (siro me là me + đường, 40 ml × ~1,3 = 52 g × 200–300 / 100, chưa có hồ sơ siro me riêng nên để khoảng rộng); nước 0 kcal; đậu phộng rang 10 g × 570 / 100 = 57,0 kcal (đậu phộng rang khoảng 570 kcal/100 g, chưa có hồ sơ đậu phộng riêng nên ghi rõ số tham khảo, tin cậy thấp). Tổng 161,0–213,0 kcal / 240 ml = 67–89 kcal/100 ml. Đây chưa phải đầu ra engine.",
+      "confidence": "low",
+      "source_ref": "data/ingredients/nuoc-loc.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 25,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "25 g/ly",
+      "basis": "sugar_added_g trong file = 25 g; kiểm chéo: siro me đường khoảng 31 g (52 g siro, đường ~60%) + đậu phộng đường khoảng 0,5 g = khoảng 31,5 g, cao hơn 25 g trong file một chút, ghi chú để chủ dự án chốt.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Đã gắn 1/3 dòng trong ly: nước không có tag dị ứng trong hồ sơ; siro me và đậu phộng chưa gắn hồ sơ nên không kết luận đầy đủ — lưu ý: đậu phộng là chất gây dị ứng phổ biến, trang chi tiết phải hiện 'chưa đủ dữ kiện', không được hiện 'không có dị ứng'.",
+  "tcm_note": "Không kết luận tính vị: các dòng đều không có nhãn tính vị trong hồ sơ."
 }
