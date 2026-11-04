@@ -109,12 +109,12 @@
       "value_min": null,
       "value_max": null,
       "per_serving": "20 g/ly (theo file)",
-      "basis": "sugar_added_g trong file = 20 g; kiểm chéo: đường 5 g + đường trong sữa tươi khoảng 1 g + đường trong kem/phô mai khoảng 1–2 g = khoảng 7–8 g, thấp hơn nhiều so với 20 g trong file — file có thể tính cả đường trong nền trà sữa nếu nền là trà sữa, ghi chú để chủ dự án chốt (xem process_note về nền).",
+      "basis": "sugar_added_g trong file = 20 g; kiểm chéo: đường 5 g + đường trong sữa tươi khoảng 1 g + đường trong kem/phô mai khoảng 1–2 g = khoảng 7–8 g, thấp hơn nhiều so với 20 g trong file — file có thể tính cả đường trong nền trà sữa nếu nền là trà sữa, nền đã chốt là trà trơn 150 ml (xem process_note về nền).",
       "confidence": "low",
       "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
     }
   ],
-  "process_note": "PHẠM VI NỀN, GHI RÕ ĐỂ CHỦ DỰ ÁN CHỐT: file ghi 'trà/trà sữa nền' với lượng None. Ở đây lấy nền là TRÀ HÃM 150 ml (trà sữa kem cheese kiểu cheese tea: trà + lớp kem cheese, không phải trà sữa đã có bột sữa + đường). Nếu nền thật là trà sữa (trà + bột sữa + đường), tổng sẽ cao hơn khoảng 150–200 kcal/ly và số này phải tính lại — không gộp hai bản thành một khoảng vì khoảng đó quá rộng.",
+  "process_note": "PHẠM VI NỀN, ĐÃ CHỐT 2026-11-04 THEO DUYỆT CỦA BENJAMIN: file ghi 'trà/trà sữa nền' với lượng None. Ở đây lấy nền là TRÀ HÃM 150 ml (trà sữa kem cheese kiểu cheese tea: trà + lớp kem cheese, không phải trà sữa đã có bột sữa + đường). Nếu nền thật là trà sữa (trà + bột sữa + đường), tổng sẽ cao hơn khoảng 150–200 kcal/ly và số này phải tính lại — không gộp hai bản thành một khoảng vì khoảng đó quá rộng.",
   "allergen_note": "Đã gắn 5/6 dòng trong ly: phô mai kem, kem whipping và sữa tươi đều có tag allergen:sua — dị ứng Sữa đã xác nhận. Muối chưa gắn hồ sơ nhưng muối ăn không phải chất gây dị ứng phổ biến trong hệ tag.",
   "tcm_note": "Không kết luận tính vị: sữa tươi bình/cam/Thổ (trung bình, 20,6 g) trên tổng ~230 g (9%, dưới ngưỡng 30% của TCM-000); các dòng còn lại không có nhãn tính vị trong hồ sơ."
 }
