@@ -73,7 +73,7 @@
   "needs_review": true,
   "reviewed_by": null,
   "reviewed_at": null,
-  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: kcal từ ethanol + đường theo công thức, ABV suy ra từ công thức, chưa qua duyệt lại sau khi sửa.",
+  "review_note": "KIỂM THỬ LẠI ĐỢT 2 (2026-11-04) theo lệnh của Benjamin: tái kiểm từng thành phần bằng nhãn hãng/nguồn độc lập — vẫn giữ cờ chưa duyệt, chờ Benjamin duyệt riêng.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5.",
   "media": [
     {
@@ -88,11 +88,11 @@
     {
       "label": "Năng lượng",
       "unit": "kcal/100 ml chất lỏng",
-      "value_min": 193,
-      "value_max": 193,
+      "value_min": 190,
+      "value_max": 211,
       "value": null,
-      "per_serving": "≈280 kcal/ly (145 ml chất lỏng)",
-      "basis": "Cộng tay từ công thức (ethanol 7 kcal/g, mật độ 0,789 g/ml + đường 4 kcal/g; rượu mùi tính cả ethanol và đường theo nhãn loại, chưa đo trực tiếp): whiskey 50 ml × 2.21 = 110.5 kcal; cherry liqueur 25 ml × 2.53 = 63.2 kcal; dark crème de cacao 25 ml × 2.78 = 69.5 kcal; cà phê Việt (espresso) 30 ml × 0.03 = 0.9 kcal; siro đường vani 15 ml × 2.41 = 36.2 kcal. Tổng 280.3 kcal / 145 ml = 193 kcal/100 ml. ABV suy ra từ công thức: 22.2% (ethanol 32.2 ml / 145 ml chất lỏng). Đây chưa phải đầu ra engine (engine chưa có logic ethanol).",
+      "per_serving": "≈275–306 kcal/ly (145 ml chất lỏng)",
+      "basis": "KIỂM THỬ LẠI ĐỢT 2 (2026-11-04, đa nguồn): whiskey 50 ml × 2,21 = 110,5 kcal; rượu mùi anh đào 25 ml × 2,67–2,97 = 66,8–74,3 kcal — SỬA so với cũ (2,53/ml): Cherry Heering 24% ABV qua MyFitnessPal 80 kcal/oz (267/100 ml) và cocktail-society 89 kcal/oz (297/100 ml); dark crème de cacao 25 ml × 2,43–3,38 = 60,8–84,5 kcal — MỞ THÀNH KHOẢNG (cũ 2,78/ml nằm trong khoảng): drinknation 100 kcal/oz (338/100 ml, đường 15 g/oz), truefoodfact 72 kcal/oz (243/100 ml), nutribit 110 kcal/1,5 oz (248/100 ml), luật crème EU đường tối thiểu 25 g/100 ml; cà phê Việt 30 ml × 0,03 = 0,9 kcal; siro đường vani 15 ml × 2,41 = 36,2 kcal. Tổng mới 275,2–306,4 kcal / 145 ml = 190–211 kcal/100 ml (cũ 280 nằm trong khoảng nhưng là điểm giả chính xác). ABV 22,2% không đổi. Đây chưa phải đầu ra engine.",
       "confidence": "low",
       "source_ref": "Bảng kcal/ml cocktail trong hồ sơ triển khai (ethanol + đường, xem basis)"
     },
