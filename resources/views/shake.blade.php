@@ -79,7 +79,17 @@
                 <p class="ld-field-label" style="margin:0">Không ăn được</p>
                 <a href="/ho-so" style="font-size:13.5px;color:var(--color-link);text-decoration:none;white-space:nowrap">Cấu hình trong hồ sơ</a>
             </div>
-            <div class="ld-chips" id="allergens" style="margin-top:8px"></div>
+            {{-- Lọc dị ứng kiểu select2 (dùng chung CSS .ld-multi với trang
+                 Nguyên liệu, JS thuần): chọn nhiều, tìm kiếm không dấu, tag
+                 đã chọn có nút ×. Chỉ đổi giao diện, không đổi dữ liệu. --}}
+            <div class="ld-multi" id="shake-allergen-multi" style="margin-top:8px">
+                <div class="ld-multi-box" id="shake-allergen-box" role="combobox" aria-expanded="false" aria-haspopup="listbox" aria-controls="shake-allergen-drop">
+                    <span class="ld-multi-tags" id="shake-allergen-tags"></span>
+                    <input id="shake-allergen-search" type="text" placeholder="Chọn dị ứng…" aria-label="Tìm và chọn dị ứng" autocomplete="off">
+                    <span class="ld-multi-caret" aria-hidden="true">▾</span>
+                </div>
+                <div class="ld-multi-drop" id="shake-allergen-drop" role="listbox" aria-multiselectable="true" hidden></div>
+            </div>
             <p class="ld-note" style="margin-top:8px">Món chứa các thành phần này không bao giờ xuất hiện khi lắc — lọc cứng, không bị nới lỏng kể cả khi các lọc khác được nới.</p>
             <p class="ld-note" id="pref-note" hidden style="margin-top:12px">Các lựa chọn Chế độ lắc, Số món trong mâm, Bữa cơm bình dân, Ăn chay, Vùng miền, Kcal mục tiêu và Không ăn được được lấy từ hồ sơ của bạn và tự lưu lại khi bạn thay đổi. <span id="pref-saved" style="color:var(--color-mint-dark);font-weight:600"></span></p>
         </div>
@@ -245,10 +255,8 @@ function applyPrefs() {
         applySuggestion();
     }
     const ex = new Set(myProfile.excluded_ingredients || []);
-    document.querySelectorAll('#allergens .ld-chip').forEach(b => {
-        const slugs = ALLERGENS[+b.dataset.i][1];
-        if (slugs.some(s => ex.has(s))) { b.classList.add('active'); slugs.forEach(s => allergenSlugs.add(s)); }
-    });
+    ALLERGENS.forEach(([, slugs], i) => { if (slugs.some(s => ex.has(s))) selectedShakePresets.add(i); });
+    syncShakeAllergens(); renderShakeAllergenTags(); renderShakeAllergenOptions();
 }
 
 fetch('/api/me').then(r => r.json()).then(async ({ user }) => {
@@ -271,14 +279,64 @@ function renderSlots() {
 }
 renderSlots();
 
-const algEl = document.getElementById('allergens');
-algEl.innerHTML = ALLERGENS.map(([label], i) => `<button type="button" class="ld-chip allergen" data-i="${i}">${label}</button>`).join('');
-algEl.querySelectorAll('button').forEach(b => b.onclick = () => {
-    const slugs = ALLERGENS[+b.dataset.i][1];
-    const on = b.classList.toggle('active');
-    slugs.forEach(s => on ? allergenSlugs.add(s) : allergenSlugs.delete(s));
-    savePref({ excluded_ingredients: [...allergenSlugs] });
+/* Lọc dị ứng kiểu select2 cho Lắc: trạng thái là tập preset đã chọn;
+   allergenSlugs (payload lắc + lưu hồ sơ) luôn là hợp của các preset đó,
+   nên tắt một preset không làm mất slug còn nằm trong preset khác đang bật
+   (chip cũ xoá slug trực tiếp nên có trường hợp này). */
+const selectedShakePresets = new Set();
+function syncShakeAllergens() {
+    allergenSlugs = new Set([...selectedShakePresets].flatMap(i => ALLERGENS[i][1]));
+}
+const normText = s => (s ?? '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+const shakeAllergenBox = document.getElementById('shake-allergen-box');
+const shakeAllergenDrop = document.getElementById('shake-allergen-drop');
+const shakeAllergenInput = document.getElementById('shake-allergen-search');
+const shakeAllergenTagsEl = document.getElementById('shake-allergen-tags');
+function renderShakeAllergenTags() {
+    shakeAllergenTagsEl.innerHTML = [...selectedShakePresets].map(i =>
+        `<span class="ld-multi-tag">${esc(ALLERGENS[i][0])}<button type="button" data-remove="${i}" aria-label="Bỏ dị ứng ${esc(ALLERGENS[i][0])}">×</button></span>`).join('');
+    shakeAllergenTagsEl.querySelectorAll('[data-remove]').forEach(b => b.addEventListener('click', (e) => {
+        e.stopPropagation();
+        selectedShakePresets.delete(+b.dataset.remove);
+        syncShakeAllergens(); renderShakeAllergenTags(); renderShakeAllergenOptions();
+        savePref({ excluded_ingredients: [...allergenSlugs] });
+    }));
+    shakeAllergenInput.placeholder = selectedShakePresets.size ? 'Tìm thêm dị ứng…' : 'Chọn dị ứng…';
+}
+function renderShakeAllergenOptions() {
+    const q = normText(shakeAllergenInput.value.trim());
+    const list = ALLERGENS.map(([label, slugs], i) => ({ label, slugs, i }))
+        .filter(o => !q || normText(o.label).includes(q));
+    shakeAllergenDrop.innerHTML = list.length ? list.map(o => {
+        const on = selectedShakePresets.has(o.i);
+        return `<button type="button" class="ld-multi-opt${on ? ' selected' : ''}" role="option" aria-selected="${on}" data-i="${o.i}"><span class="ld-multi-check">${on ? '✓' : ''}</span>${esc(o.label)}<span class="ld-multi-count">(${o.slugs.length})</span></button>`;
+    }).join('') : '<p class="ld-multi-empty">Không có dị ứng nào khớp.</p>';
+    shakeAllergenDrop.querySelectorAll('[data-i]').forEach(b => b.addEventListener('click', () => {
+        const i = +b.dataset.i;
+        selectedShakePresets.has(i) ? selectedShakePresets.delete(i) : selectedShakePresets.add(i);
+        syncShakeAllergens(); renderShakeAllergenTags(); renderShakeAllergenOptions(); shakeAllergenInput.focus();
+        savePref({ excluded_ingredients: [...allergenSlugs] });
+    }));
+}
+function setShakeAllergenDrop(open) {
+    shakeAllergenDrop.hidden = !open;
+    shakeAllergenBox.setAttribute('aria-expanded', open ? 'true' : 'false');
+}
+shakeAllergenInput.addEventListener('focus', () => { renderShakeAllergenOptions(); setShakeAllergenDrop(true); });
+shakeAllergenInput.addEventListener('input', () => { renderShakeAllergenOptions(); setShakeAllergenDrop(true); });
+shakeAllergenInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') { setShakeAllergenDrop(false); shakeAllergenInput.blur(); }
+    if (e.key === 'Enter') { e.preventDefault(); const first = shakeAllergenDrop.querySelector('[data-i]'); if (first) first.click(); }
 });
+shakeAllergenBox.addEventListener('click', (e) => {
+    if (e.target === shakeAllergenInput || e.target.closest('[data-remove]')) return;
+    setShakeAllergenDrop(shakeAllergenDrop.hidden);
+    if (!shakeAllergenDrop.hidden) shakeAllergenInput.focus();
+});
+document.addEventListener('click', (e) => {
+    if (!document.getElementById('shake-allergen-multi').contains(e.target)) setShakeAllergenDrop(false);
+});
+renderShakeAllergenTags(); renderShakeAllergenOptions();
 
 const vegEl = document.getElementById('vegetarian');
 vegEl.addEventListener('click', () => {
