@@ -16,7 +16,8 @@
     {
       "name": "trà đào túi lọc",
       "quantity": 150,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "tra-den"
     },
     {
       "name": "sả",
@@ -66,10 +67,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn trà đen + đường, đào ngâm lượng None để khoảng rộng, liquid 210 ml — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -78,5 +79,32 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 210,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml chất lỏng",
+      "value_min": 36,
+      "value_max": 57,
+      "value": null,
+      "per_serving": "≈75–120 kcal/ly (210 ml chất lỏng, chưa tính đá tan)",
+      "basis": "Cộng tay với khoảng rộng do đào ngâm không ghi lượng: trà đào 150 ml × 1 = 1,5 kcal (trà đào túi lọc là trà đen hương đào, kcal trà không đổi); sả nấu rồi vớt, không ăn, kcal không đáng kể; cam 0,5 quả — nước cam khoảng 15–20 kcal (40 ml nước cam × 47 / 100); đào ngâm lượng None — lát đào + nước ngâm khoảng 0–40 kcal (2–3 lát đào ngâm khoảng 35 g × 70 / 100 ≈ 25 kcal, cộng nước ngâm, để khoảng 0–40 vì không ghi lượng); đường 15 g × 387 / 100 = 58,1 kcal. Tổng 74,6–119,6 kcal / 210 ml = 36–57 kcal/100 ml. Đây là khoảng rộng cố ý, không phải điểm; engine chưa gắn sả, cam, đào ngâm nên sẽ thiếu phần lớn.",
+      "confidence": "low",
+      "source_ref": "data/ingredients/tra-den.json, nuoc-ep-cam.json, duong-trang.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 15,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "15 g/ly (theo file, chưa tính đường trong đào ngâm)",
+      "basis": "sugar_added_g trong file = 15 g, khớp đường trong công thức; đường trong đào ngâm và cam không tính vào 'đường thêm' theo cách ghi của file.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Đã gắn 2/5 dòng trong ly: trà đen và đường không có tag dị ứng trong hồ sơ; sả, cam và đào ngâm chưa gắn hồ sơ nên không kết luận đầy đủ.",
+  "tcm_note": "Không kết luận tính vị: trà đen không có nhãn, các dòng còn lại chưa có hồ sơ hoặc không có nhãn."
 }
