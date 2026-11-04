@@ -11,7 +11,8 @@
     {
       "name": "nước cam",
       "quantity": 90,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "nuoc-ep-cam"
     },
     {
       "name": "grenadine",
@@ -53,10 +54,10 @@
   "alcohol_pct_range": null,
   "label_note": "",
   "brand_examples": [],
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn nước cam + soda, grenadine để khoảng, liquid 105 ml, MÂU THUẪN sugar file 5 vs tổng ~20 — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5.",
   "media": [
     {
@@ -65,5 +66,32 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 105,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml chất lỏng",
+      "value_min": 87,
+      "value_max": 92,
+      "value": null,
+      "per_serving": "≈91–97 kcal/ly (105 ml chất lỏng, chưa tính đá)",
+      "basis": "Cộng tay: nước cam 90 ml × 47 / 100 = 42,3 kcal; grenadine 15 ml × ~1,3 × 250–280 / 100 = 48,8–54,6 kcal; soda 0 ml nên không tính. Tổng 91,1–96,9 kcal / 105 ml = 87–92 kcal/100 ml. Đây chưa phải đầu ra engine.",
+      "confidence": "low",
+      "source_ref": "data/ingredients/nuoc-ep-cam.json, soda.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 5,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "5 g/ly (theo file, tổng đường thực khoảng 20 g)",
+      "basis": "sugar_added_g trong file = 5 g; kiểm chéo: grenadine đường khoảng 12 g (19,5 g siro, đường ~60%) + đường tự nhiên trong nước cam khoảng 8 g = khoảng 20 g tổng đường, cao hơn nhiều so với 5 g trong file — file có thể chỉ tính một phần, ghi chú để chủ dự án chốt, không sửa lặng lẽ số file.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Đã gắn 2/3 dòng trong ly: nước cam và soda không có tag dị ứng trong hồ sơ; grenadine chưa gắn hồ sơ nên không kết luận đầy đủ.",
+  "tcm_note": "Không kết luận tính vị: các dòng đều không có nhãn tính vị trong hồ sơ (nước cam tcm_traits trống)."
 }
