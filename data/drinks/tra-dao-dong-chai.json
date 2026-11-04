@@ -44,7 +44,7 @@
   "needs_review": true,
   "reviewed_by": null,
   "reviewed_at": null,
-  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04, làm cẩn thận theo QT-9: khoảng theo loại trà đóng chai, caffeine tầm soát — chưa qua duyệt lại sau khi sửa.",
+  "review_note": "SOÁT LẠI 2026-11-04 theo lệnh của Benjamin (không dùng khoảng tự suy cũ): đối chiếu nhãn hãng thật đang bán, xem drink-verification-packaged.md — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §6.",
   "media": [
     {
@@ -58,11 +58,11 @@
     {
       "label": "Năng lượng",
       "unit": "kcal/100 ml",
-      "value_min": 35,
+      "value_min": 19,
       "value_max": 48,
       "value": null,
-      "per_serving": "≈175–240 kcal/chai 500 ml",
-      "basis": "Trà đào đóng chai là trà + nước đào/purée đào + đường: đường khoảng 8–11 g/100 ml × 4 = 32–44 kcal, cộng trà 1 kcal và đào khoảng 2–3 kcal/100 ml, tổng khoảng 35–48 kcal/100 ml. Đây là khoảng theo loại, không phải số một hãng. Không dùng engine (đồ đóng gói không qua engine).",
+      "per_serving": "≈95–240 kcal/chai 500 ml",
+      "basis": "SOÁT LẠI 2026-11-04 (nhãn hãng thật): trà đào đóng chai theo loại 19–48 kcal/100 ml — MỞ RỘNG đầu dưới từ 35 xuống 19: bản pha stevia như Fuze Tea Peach qua OpenFoodFacts 19 kcal, đường 4,3–4,5 g/100 ml; bản đường đầy đủ 28–33 kcal (Fuze Tea bản đường, đường 6,5–8 g); bản ngọt đậm kiểu C2 chanh/đào 35–48 kcal (đường 8–11 g). Khoảng gộp 19–48 kcal/100 ml, tin cậy thấp — người dùng phải đọc nhãn chai cụ thể. Không dùng engine (đồ đóng gói không qua engine).",
       "confidence": "low",
       "source_ref": "Nhãn trà đóng chai (khoảng theo loại, không phải một nhãn cụ thể)"
     },
