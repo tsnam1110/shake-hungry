@@ -84,7 +84,9 @@ async function loadPlans() {
     }).join('') || '<p style="color:var(--color-faint);padding:16px;margin:0">Chưa có tuần nào — tạo tuần mới ở trên.</p>';
     document.querySelectorAll('[data-plan]').forEach(b => b.onclick = () => showPlan(+b.dataset.plan));
 }
+let currentPlanId = null;
 async function showPlan(id) {
+    currentPlanId = id;
     const data = await (await fetch('/api/week-plans/' + id)).json();
     const p = data.plan;
     document.getElementById('week-detail').style.display = 'block';
@@ -105,10 +107,31 @@ async function showPlan(id) {
                     <span class="grow"><span style="font-weight:600">${esc(slotName[m.slot] ?? m.slot)}</span>
                     <span class="sub">${m.dish ? `<a href="/mon/${esc(m.dish.slug)}">${esc(m.dish.name ?? m.dish.slug)}</a>` : 'Chưa có món'}${m.is_eat_out ? ' · Ăn ngoài' : ''}</span></span>
                     ${m.dish?.nutrition ? `<span class="ld-price"><span class="so ld-tnum">${Math.round(m.dish.nutrition.kcal_min)}–${Math.round(m.dish.nutrition.kcal_max)}</span><small>kcal · ${Math.round(m.dish.nutrition.protein_g)} g protein</small></span>` : ''}
-                </div>`).join('')}</div>
+                    <button data-swap="${m.id}" style="border:0;background:none;color:var(--color-link);font-size:14px;font-weight:600;cursor:pointer;font-family:inherit">Đổi</button>
+                </div>
+                <div id="swap-${m.id}"></div>`).join('')}</div>
         </div>`;
     }).join('');
+    document.querySelectorAll('[data-swap]').forEach(b => b.onclick = () => showSwapCandidates(+b.dataset.swap));
     document.getElementById('week-detail').scrollIntoView({ behavior: 'smooth' });
+}
+async function showSwapCandidates(mealId) {
+    const box = document.getElementById('swap-' + mealId);
+    const data = await (await fetch(`/api/week-plans/${currentPlanId}/meals/${mealId}/candidates`)).json();
+    box.innerHTML = `<div class="ld-card" style="margin:10px 0;padding:12px 14px">
+        <p style="margin:0 0 8px;font-weight:600;font-size:14.5px">Chọn món thay thế — xem dinh dưỡng trước khi áp dụng:</p>
+        ${(data.candidates ?? []).slice(0, 20).map(c => `
+            <button data-choose="${c.id}" data-meal="${mealId}" class="ld-row" style="cursor:pointer;width:100%;text-align:left;background:none;border:0;font-family:inherit">
+                <span class="grow"><span style="font-weight:600">${esc(c.name ?? c.slug)}</span><span class="sub">${c.region ? esc(c.region) + ' · ' : ''}${c.nutrition ? Math.round(c.nutrition.kcal_min) + '–' + Math.round(c.nutrition.kcal_max) + ' kcal · ' + Math.round(c.nutrition.protein_g) + ' g protein' : 'Chưa đủ dữ liệu'}</span></span>
+            </button>`).join('') || '<p style="color:var(--color-faint);margin:0">Không còn món khác đủ điều kiện cho bữa này.</p>'}
+    </div>`;
+    box.querySelectorAll('[data-choose]').forEach(b => b.onclick = async () => {
+        const resp = await fetch(`/api/week-plans/${currentPlanId}/meals/${mealId}/swap`, { method: 'POST', headers, body: JSON.stringify({ dish_id: +b.dataset.choose }) });
+        const res = await resp.json();
+        if (!resp.ok) { alert(res.message || 'Đổi bữa thất bại'); return; }
+        if (window.ldToast) ldToast('Đã đổi bữa');
+        showPlan(currentPlanId);
+    });
 }
 document.getElementById('week-create').onsubmit = async (e) => {
     e.preventDefault();

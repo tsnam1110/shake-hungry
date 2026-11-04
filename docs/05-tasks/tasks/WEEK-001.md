@@ -160,6 +160,19 @@ này trước Task suy kcal từ TDEE + mục tiêu (thuộc Phần 2.1, sau for
 - Chưa làm trong Phần 2.4 (cố ý): thao tác tuần, đi chợ — trang hiện
   ghi rõ thao tác sẽ có ở phần tiếp theo, không giả vờ có nút.
 
+## Phần 2.5 — Thao tác tuần (mỗi thao tác một commit)
+
+### Task 1 — Đổi một bữa — ĐÃ XONG (2026-11-04)
+- API: GET /api/week-plans/{plan}/meals/{meal}/candidates (ứng viên kèm
+  dinh dưỡng, xem trước khi áp) và POST swap (dish_id, chỉ món đủ điều
+  kiện cho bữa đó mới được áp; món thiếu/missing/unverified hoặc vi phạm
+  loại trừ/chay bị 422; ghi replaced_from_dish_id, xoá cờ ăn ngoài, tính
+  lại ngày).
+- Trang /tuan-an: nút Đổi ở mỗi bữa, hiện danh sách ứng viên kèm kcal và
+  protein, bấm chọn mới áp dụng.
+- Test `tests/Feature/WeekOperationsTest.php` (2 test đầu): đổi bữa ghi
+  món gốc + tính lại protein, đổi sang món thiếu bị 422.
+
 ## Các phần tiếp theo (theo lệnh duyệt toàn bộ lộ trình 2026-11-04, làm tiếp không hỏi duyệt giữa chừng)
-- Phần 2.5: thao tác tuần (mỗi thao tác một task).
+- Phần 2.5, Task 2–5: đổi ngày bắt đầu, bắt đầu lại phần còn lại, ăn ngoài, loại thực phẩm.
 - Phần 2.6: danh sách đi chợ theo gram, không gói, không giá.

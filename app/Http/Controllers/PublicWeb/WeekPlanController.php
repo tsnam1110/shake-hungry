@@ -92,6 +92,50 @@ class WeekPlanController extends Controller
         ], 201);
     }
 
+    /** Phần 2.5, Task 1 — đổi một bữa: cho thấy ứng viên kèm dinh dưỡng trước khi áp (Mealbird: xem thay đổi trước khi áp). */
+    public function mealCandidates(Request $request, WeekPlan $weekPlan, $mealId, WeekBuilder $builder): JsonResponse
+    {
+        $this->authorizePlan($request, $weekPlan);
+        $meal = $this->findMeal($weekPlan, $mealId);
+        $candidates = $builder->candidates($meal->slot, $request->user()->profile, [$meal->dish_id]);
+
+        return response()->json(['candidates' => $candidates->map(fn ($dish) => [
+            'id' => $dish->id, 'slug' => $dish->slug, 'name' => $dish->displayName(),
+            'region' => $dish->region?->name,
+            'nutrition' => $dish->nutrition === null ? null : [
+                'kcal_min' => $dish->nutrition->kcal_min, 'kcal_max' => $dish->nutrition->kcal_max,
+                'protein_g' => $dish->nutrition->protein_g,
+            ],
+        ])->values()]);
+    }
+
+    public function swapMeal(Request $request, WeekPlan $weekPlan, $mealId, WeekBuilder $builder, WeekValidator $validator): JsonResponse
+    {
+        $this->authorizePlan($request, $weekPlan);
+        $data = $request->validate(['dish_id' => ['required', 'integer', 'exists:dishes,id']]);
+        $meal = $this->findMeal($weekPlan, $mealId);
+        $eligible = $builder->candidates($meal->slot, $request->user()->profile);
+        if (! $eligible->contains('id', $data['dish_id'])) {
+            return response()->json(['message' => 'Món không đủ điều kiện cho bữa này (thiếu dinh dưỡng, có nguyên liệu missing/unverified, hoặc vi phạm loại trừ/chay).'], 422);
+        }
+        $oldDishId = $meal->dish_id;
+        $meal->update([
+            'dish_id' => $data['dish_id'], 'replaced_from_dish_id' => $oldDishId, 'is_eat_out' => false,
+        ]);
+        $day = $meal->day;
+        $validation = $validator->refreshDay($day, $weekPlan);
+
+        return response()->json(['meal' => $this->presentMeal($meal->fresh()), 'validation' => $validation]);
+    }
+
+    private function findMeal(WeekPlan $weekPlan, $mealId)
+    {
+        $meal = \App\Models\WeekPlanMeal::with('day')->find($mealId);
+        abort_unless($meal !== null && $meal->day->week_plan_id === $weekPlan->id, 404);
+
+        return $meal;
+    }
+
     private function authorizePlan(Request $request, WeekPlan $plan): void
     {
         abort_unless($plan->user_id === $request->user()->id, 404);

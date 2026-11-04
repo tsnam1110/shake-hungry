@@ -100,6 +100,9 @@ Route::prefix('api')->group(function () {
         Route::get('/week-plans', [\App\Http\Controllers\PublicWeb\WeekPlanController::class, 'index']);
         Route::post('/week-plans', [\App\Http\Controllers\PublicWeb\WeekPlanController::class, 'store']);
         Route::get('/week-plans/{weekPlan}', [\App\Http\Controllers\PublicWeb\WeekPlanController::class, 'show']);
+        // WEEK-001, Phần 2.5, Task 1: đổi một bữa.
+        Route::get('/week-plans/{weekPlan}/meals/{meal}/candidates', [\App\Http\Controllers\PublicWeb\WeekPlanController::class, 'mealCandidates']);
+        Route::post('/week-plans/{weekPlan}/meals/{meal}/swap', [\App\Http\Controllers\PublicWeb\WeekPlanController::class, 'swapMeal']);
         Route::post('/contributions', [\App\Http\Controllers\PublicWeb\ContributionController::class, 'store']);
         Route::get('/contributions', [\App\Http\Controllers\PublicWeb\ContributionController::class, 'mine']);
         Route::get('/favorites', [\App\Http\Controllers\PublicWeb\EngagementController::class, 'index']);
