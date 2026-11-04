@@ -30,7 +30,8 @@
     {
       "name": "đá",
       "quantity": 100,
-      "unit": "g"
+      "unit": "g",
+      "ingredient_slug": "nuoc-loc"
     }
   ],
   "recipe_steps": [
@@ -62,10 +63,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn sữa tươi + sữa đặc + đá, bơ chưa có hồ sơ (140–160), mẫu số 330 ml đồ uống đá xay — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -74,5 +75,32 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 330,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml đồ uống",
+      "value_min": 112,
+      "value_max": 122,
+      "value": null,
+      "per_serving": "≈370–403 kcal/ly (330 ml đồ uống đá xay, đá tính vào mẫu số)",
+      "basis": "Cộng tay: bơ sáp chín 150 g — khoảng 210–240 kcal (bơ khoảng 140–160 kcal/100 g, bơ sáp VN khoảng 140–160, chưa có hồ sơ bơ riêng nên để khoảng); sữa tươi 50 ml × 1,031 × 60–61 / 100 = 31,0–31,5 kcal; sữa đặc 30 ml × 1,29 × 334–341 / 100 = 129,2–132,0 kcal; đá xay 100 g là một phần đồ uống, tính vào mẫu số theo quy tắc đá xay (khác đá viên trong ly). Tổng 370,2–403,5 kcal / 330 ml đồ uống (150 + 50 + 30 + 100) = 112–122 kcal/100 ml. Đây chưa phải đầu ra engine.",
+      "confidence": "low",
+      "source_ref": "data/ingredients/sua-tuoi.json, sua-dac.json, nuoc-loc.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 20,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "20 g/ly (theo file)",
+      "basis": "sugar_added_g trong file = 20 g; kiểm chéo: đường trong sữa đặc khoảng 21 g (30 ml sữa đặc, đường khoảng 55 g/100 g × 38,7 g ≈ 21,3 g), gần 20 g trong file.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Đã gắn 3/4 dòng trong ly: sữa tươi và sữa đặc có tag allergen:sua — dị ứng Sữa đã xác nhận; bơ chưa gắn hồ sơ nên không kết luận đầy đủ về các dị ứng khác.",
+  "tcm_note": "Không kết luận tính vị: sữa tươi bình/cam/Thổ (trung bình, 51,6 g) trên tổng ~330 g (16%, dưới ngưỡng 30% của TCM-000); các dòng còn lại không có nhãn tính vị trong hồ sơ."
 }
