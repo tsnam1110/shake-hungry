@@ -96,10 +96,10 @@
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
-  "needs_review": false,
+  "needs_review": true,
   "reviewed_by": "tsnam1110@gmail.com",
   "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau). [Soát lại E-batch lô 9, 2026-11-05: sắc thái mới so với ghi chú LV2-011 — biến thể gạo tẻ chủ lực CÓ tồn tại (Chợ Lái Thiêu: đậu đen 200 g + gạo tẻ 100 g + cốt dừa 300 ml, chỉ thêm '1 nắm gạo nếp' tùy chọn), nhưng nguồn này KHÔNG ghi số khẩu phần nên không quy đổi được ra 35 g gạo + 30 g đậu + 15 g cốt dừa/tô của file; tỉ lệ đậu:gạo của file (~0,86:1) cũng ngược với Chợ Lái Thiêu (2:1) và khác bản 100:100 của toyenxin; đa số họ còn lại vẫn là nếp chủ lực — giữ cờ chưa duyệt, cần họ có định lượng theo tô để phân xử.]",
   "tags": [
     "loai:che-trang-mieng"
   ]
