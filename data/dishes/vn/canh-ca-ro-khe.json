@@ -104,10 +104,10 @@
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
-  "needs_review": false,
+  "needs_review": true,
   "reviewed_by": "tsnam1110@gmail.com",
   "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau). [Soát lại E-batch lô 8, 2026-11-05: vẫn chỉ 1 lineage cho bản thuần — tài liệu ĐH Duy Tân và blogamthuc trùng từng chữ (500 g cá rô, 500 g khế, 2 cà chua, me, tỏi, đường, dầu, hành/ngổ/mùi tàu); các bản tổng hợp viết lại cùng khuôn (500 g cá + 2–3 quả khế + 2 cà chua); bản miền Tây rau muống + khế là món khác. Quy đổi lineage: cá 125 g, khế 125 g, cà chua ~50–60 g/khẩu phần đều cao hơn file (90 g, 40 g, 30 g); file thiếu hẳn me, tỏi, dầu ăn, đường và rau ngổ/ngò gai; tổng các dòng 170 g so với tô 350 g thiếu nước dùng — giữ cờ chưa duyệt, cần thêm họ độc lập có định lượng để phân xử.]",
   "tags": [
     "loai:canh"
   ]
