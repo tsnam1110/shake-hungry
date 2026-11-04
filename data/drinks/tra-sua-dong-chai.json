@@ -44,7 +44,7 @@
   "needs_review": true,
   "reviewed_by": null,
   "reviewed_at": null,
-  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04, làm cẩn thận theo QT-9: khoảng theo loại trà đóng chai, caffeine tầm soát — chưa qua duyệt lại sau khi sửa.",
+  "review_note": "SOÁT LẠI 2026-11-04 theo lệnh của Benjamin (không dùng khoảng tự suy cũ): đối chiếu nhãn hãng thật đang bán, xem drink-verification-packaged.md — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §6.",
   "media": [
     {
@@ -58,11 +58,11 @@
     {
       "label": "Năng lượng",
       "unit": "kcal/100 ml",
-      "value_min": 50,
+      "value_min": 35,
       "value_max": 80,
       "value": null,
-      "per_serving": "≈250–400 kcal/chai 500 ml",
-      "basis": "Trà sữa đóng chai là trà + sữa + đường (và có thể trân châu ở một số chai, file không ghi): sữa tươi 60–61 kcal/100 g, đường khoảng 9–13 g/100 ml × 4 = 36–52 kcal, cộng trà 1 kcal, tổng khoảng 50–80 kcal/100 ml. Đây là khoảng theo loại, không phải số một hãng — trà sữa đóng chai các hãng có tỷ lệ sữa/đường khác nhau, chai có trân châu thì kcal cao hơn (trân châu nấu 150–200 kcal/100 g, 1 phần trân châu 30 g thêm khoảng 45–60 kcal/chai), ghi rõ. Không dùng engine (đồ đóng gói không qua engine).",
+      "per_serving": "≈175–400 kcal/chai 500 ml",
+      "basis": "SOÁT LẠI 2026-11-04 (nhãn hãng thật): trà sữa đóng chai theo loại 35–80 kcal/100 ml — MỞ RỘNG đầu dưới từ 50 xuống 35: bản ít đường như Milk Tea Relax 35 kcal, đường 4 g/100 ml; bản thường Rico Bubble 48 kcal, Wan Wan 57 kcal, Latte Milktea 76 kcal (đường 3–8,3 g, sữa/bột kem). Chai có trân châu thì cao hơn (trân châu nấu 150–200 kcal/100 g). Khoảng gộp 35–80 kcal/100 ml, tin cậy thấp — người dùng phải đọc nhãn chai cụ thể. Không dùng engine (đồ đóng gói không qua engine).",
       "confidence": "low",
       "source_ref": "Nhãn trà đóng chai (khoảng theo loại, không phải một nhãn cụ thể)"
     },
