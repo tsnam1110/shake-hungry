@@ -43,7 +43,7 @@
   "needs_review": true,
   "reviewed_by": null,
   "reviewed_at": null,
-  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04, làm cẩn thận theo QT-9: khoảng theo loại đóng gói, không lấy số một hãng — chưa qua duyệt lại sau khi sửa.",
+  "review_note": "SOÁT LẠI 2026-11-04 theo lệnh của Benjamin (không dùng khoảng tự suy cũ): đối chiếu nhãn hãng thật đang bán, xem drink-verification-packaged.md — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §6.",
   "media": [
     {
@@ -58,10 +58,10 @@
       "label": "Năng lượng (siro nguyên chất)",
       "unit": "kcal/100 ml",
       "value_min": 250,
-      "value_max": 280,
+      "value_max": 346,
       "value": null,
-      "per_serving": "≈250–280 kcal/100 ml siro nguyên chất — KHÔNG uống trực tiếp",
-      "basis": "CẢNH BÁO: siro pha sẵn đóng chai là dạng cô đặc, KHÔNG uống trực tiếp nguyên chất. Siro nguyên chất khoảng 250–280 kcal/100 ml (đường khoảng 60 g/100 ml × 4 = 240 kcal cộng hương liệu, tương tự grenadine 250–280 đã dùng cho nhóm mocktail). Ly pha loãng thường dùng 30–50 ml siro + nước/soda thành 200–250 ml, tức khoảng 75–140 kcal/ly pha loãng, đường 18–30 g/ly. Công bố cả hai số, ghi rõ siro nguyên chất không phải khẩu phần uống.",
+      "per_serving": "≈250–346 kcal/100 ml siro nguyên chất — KHÔNG uống trực tiếp",
+      "basis": "SOÁT LẠI 2026-11-04 (nhãn hãng thật): CẢNH BÁO: siro pha sẵn đóng chai là dạng cô đặc, KHÔNG uống trực tiếp nguyên chất. Siro nguyên chất theo loại 250–346 kcal/100 ml — MỞ RỘNG đầu trên từ 280 lên 346: khoảng cũ chỉ đúng siro nhẹ như grenadine Rose's 267 kcal, đường 66,7 g/100 ml; siro Monin loại đường đầy đủ qua OpenFoodFacts/Spinneys 316–346 kcal, đường 77,6–85,5 g/100 ml (hazelnut 316, chocolate 327, vanilla 338–341, strawberry 346). Bản không đường Monin 13 kcal là sản phẩm khác, không áp dụng. Ly pha loãng thường dùng 30–50 ml siro + nước/soda thành 200–250 ml, tức khoảng 75–173 kcal/ly tùy loại siro. Không dùng engine (đồ đóng gói không qua engine).",
       "confidence": "low",
       "source_ref": "Siro đường/grenadine (khoảng theo loại siro)"
     },
