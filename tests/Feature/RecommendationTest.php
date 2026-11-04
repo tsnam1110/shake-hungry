@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 use App\Models\Dish;
+use App\Models\Drink;
 use App\Models\Ingredient;
 use App\Recommendation\Recommender;
 use Illuminate\Support\Facades\DB;
@@ -58,6 +59,22 @@ it('lắc ra món có dữ liệu dinh dưỡng và ghi log kèm seed', function
     expect($r['dish'])->not->toBeNull()
         ->and($r['seed'])->toBeString()
         ->and(DB::table('recommendation_logs')->count())->toBe(1);
+});
+
+it('lắc không bao giờ trả đồ uống có cồn, kể cả khi kho có cocktail', function () {
+    // Khoá hồi quy cho quy định cồn bước 1/4 (2026-11-04): pool của Lắc
+    // chỉ là Dish; Drink alcohol=true chỉ là thư viện tra cứu, chưa có
+    // lọc tuổi nên không được gợi ý tự động. Test này buộc mọi lần gộp
+    // Drink vào pool trong tương lai phải sửa test một cách có chủ ý.
+    Drink::create([
+        'slug' => 'mojito-test', 'name_vi' => 'Mojito test',
+        'drink_group' => 'cocktail', 'kind' => 'pha-che', 'alcohol' => true,
+    ]);
+    recDish('mon-a');
+    $r = shakeIt();
+    expect($r['dish'])->toBeInstanceOf(Dish::class)
+        ->and($r['dish']->slug)->toBe('mon-a')
+        ->and(Drink::where('alcohol', true)->count())->toBe(1);
 });
 
 it('không gợi ý món chứa chất gây dị ứng, kể cả khi nới lỏng hết cỡ', function () {

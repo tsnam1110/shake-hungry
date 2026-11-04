@@ -22,6 +22,13 @@ use Illuminate\Support\Facades\Log;
  * (status='published') đủ nhiều, bật RECOMMEND_STRICT_PUBLISHED để siết về
  * đúng đặc tả gốc. Món còn thiếu nguyên liệu (missing_ingredients) bị loại
  * với người dùng có khai báo dị ứng.
+ *
+ * QUY ĐỊNH CỒN (quyết định chủ dự án 2026-11-04, bước 1/4): kho Lắc chỉ
+ * gồm Dish — Drink (kể cả cocktail và mọi mục alcohol=true) không bao
+ * giờ nằm trong pool, mà chỉ là thư viện tra cứu, cho tới khi có lọc
+ * tuổi (bước 2). Đây là tách biệt theo model, không phải lọc theo
+ * nguyên liệu: món ăn nấu với rượu (ví dụ bò sốt vang) vẫn là Dish và
+ * không thuộc quy định này.
  */
 class Recommender
 {
