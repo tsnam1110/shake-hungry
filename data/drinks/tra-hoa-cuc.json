@@ -18,7 +18,8 @@
     {
       "name": "nước",
       "quantity": 250,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "nuoc-loc"
     },
     {
       "name": "đường phèn/mật ong",
@@ -50,10 +51,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn nước, hoa hãm chưa có hồ sơ, đường phèn/mật ong để khoảng, MÂU THUẪN sugar file 0 — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -62,5 +63,32 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 250,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml chất lỏng",
+      "value_min": 6,
+      "value_max": 8,
+      "value": null,
+      "per_serving": "≈15–19 kcal/ly (250 ml chất lỏng)",
+      "basis": "Hoa cúc 3 g hãm rồi lọc, hoa không ăn nên kcal tan vào nước không đáng kể (chưa có hồ sơ hoa cúc, không bịa điểm); nước 0 kcal; đường phèn/mật ong 5 g — đường phèn 5 g × 387 / 100 = 19,4 kcal, mật ong 5 g × 304 / 100 = 15,2 kcal, nên để khoảng 15,2–19,4 kcal / 250 ml = 6–8 kcal/100 ml. Đây chưa phải đầu ra engine; engine chưa gắn hoa và đường phèn/mật ong (dòng ghi hai chất, không chọn một) nên sẽ unknown.",
+      "confidence": "low",
+      "source_ref": "data/ingredients/nuoc-loc.json, duong-trang.json, mat-ong.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 5,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "≈5 g/ly (từ đường phèn/mật ong)",
+      "basis": "MÂU THUẪN FILE, GHI RÕ: sugar_added_g trong file = 0 nhưng công thức có đường phèn/mật ong 5 g — chỉ số này lấy 5 g theo công thức, không lấy 0 g, để chủ dự án chốt lại.",
+      "confidence": "low",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Đã gắn 1/3 dòng trong ly: nước không có tag dị ứng; hoa cúc và đường phèn/mật ong chưa gắn hồ sơ nên không kết luận đầy đủ.",
+  "tcm_note": "Không kết luận tính vị: hoa cúc chưa có hồ sơ, nước không có nhãn tính vị."
 }
