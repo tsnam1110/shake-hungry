@@ -83,7 +83,7 @@
       "value_max": 32,
       "value": null,
       "per_serving": "≈55–64 kcal/ly (200 ml chất lỏng, chưa tính đá tan)",
-      "basis": "Cộng tay: trà đen 150 ml × 1 = 1,5 kcal; nước cam 50 ml × 47 / 100 = 23,5 kcal (hồ sơ nuoc-ep-cam cho cam ngọt Citrus sinensis, giống cam quán chưa xác định nên là khoảng, không phải điểm — xem uncertain trong hồ sơ); thanh quế 3 g hãm, không ăn, kcal không đáng kể (chưa có hồ sơ, không bịa); mật ong/đường 10 g — mật ong 30,4 kcal, đường 38,7 kcal, khoảng 30,4–38,7 kcal. Tổng 55,4–63,7 kcal / 200 ml = 28–32 kcal/100 ml. Đây chưa phải đầu ra engine.",
+      "basis": "Cộng tay: trà đen 150 ml × 1 = 1,5 kcal; nước cam 50 ml × 47 / 100 = 23,5 kcal (hồ sơ nuoc-ep-cam cho cam ngọt Citrus sinensis, giống cam quán chưa xác định nên là khoảng, không phải điểm — xem uncertain trong hồ sơ); thanh quế 3 g hãm, không ăn, kcal không đáng kể (chưa có hồ sơ, không bịa); mật ong/đường 10 g — mật ong 30,4 kcal, đường 38,7 kcal, khoảng 30,4–38,7 kcal. Tổng 55,4–63,7 kcal / 200 ml = 28–32 kcal/100 ml. LƯU Ý ENGINE: engine cho 22,9–29,0 kcal/ly, THẤP HƠN NHIỀU so với tay, vì dòng mật ong/đường ghi hai chất nên không gắn hồ sơ — engine bỏ qua hoàn toàn 30–39 kcal chất ngọt, chỉ tính trà + cam + nới khoảng. Số công bố ở đây là TAY, không phải engine, và engine không xác nhận được mục này cho tới khi dòng ngọt được chốt một chất duy nhất.",
       "confidence": "low",
       "source_ref": "data/ingredients/tra-den.json, nuoc-ep-cam.json, mat-ong.json, duong-trang.json"
     },
