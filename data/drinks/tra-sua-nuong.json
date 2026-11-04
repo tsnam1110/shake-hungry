@@ -13,17 +13,20 @@
     {
       "name": "trà ô long/đen",
       "quantity": 150,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "tra-den"
     },
     {
       "name": "bột sữa",
       "quantity": 25,
-      "unit": "g"
+      "unit": "g",
+      "ingredient_slug": "bot-sua"
     },
     {
       "name": "siro đường lỏng",
       "quantity": 20,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "siro-duong"
     },
     {
       "name": "siro caramel",
@@ -60,10 +63,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": true,
   "uncertain_note": "'Nướng' không có chuẩn duy nhất: một số quán có nghĩa là sốt đường caramel, số khác có nghĩa là nền trà rang hoặc lớp kem nướng (kem trứng nướng). Phiên bản sốt caramel trên là công thức nhà làm được công bố nhiều nhất; biến thể kem nướng phải là ghi chú topping riêng, không gộp vào nền này.",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn trà đen + bột sữa + siro đường, siro caramel chưa có hồ sơ (khoảng), liquid 185 ml — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -72,5 +75,32 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 185,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml chất lỏng",
+      "value_min": 107,
+      "value_max": 121,
+      "value": null,
+      "per_serving": "≈198–223 kcal/ly (185 ml chất lỏng, chưa tính đá tan)",
+      "basis": "Cộng tay: trà 150 ml × 1 = 1,5 kcal; bột sữa 25 g × 450–550 / 100 = 112,5–137,5 kcal; siro đường 20 ml × 1,24 × 194 / 100 = 48,1 kcal; siro caramel 15 ml — khoảng 30–40 kcal (siro caramel là đường nấu + nước, gần siro đường 194 kcal/100 g, 15 ml × 1,24 = 18,6 g × 194 / 100 = 36,1 kcal, để khoảng 30–40 do độ đậm caramel khác nhau, chưa có hồ sơ riêng). Tổng 192,1–223,1 kcal, làm tròn 198–223 trong file theo cách tính 36,1 cho caramel (xem ghi chú: tổng tay chính xác 192–223, file ghi 198–223 là làm tròn đầu dưới lên theo caramel 36,1 + bột sữa đầu dưới 112,5 + siro 48,1 + trà 1,5 = 198,2). Chia cho 185 ml = 107–121 kcal/100 ml. Đây chưa phải đầu ra engine.",
+      "confidence": "low",
+      "source_ref": "data/ingredients/tra-den.json, bot-sua.json, siro-duong.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 25,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "25 g/ly (theo file, chưa tính đường trong bột sữa)",
+      "basis": "sugar_added_g trong file = 25 g; kiểm chéo: siro đường 12,4 g + siro caramel khoảng 11 g = 23,4 g, gần 25 g; đường trong bột sữa khoảng 12,5 g không tính vào 'đường thêm' theo cách ghi của file.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Đã gắn 3/4 dòng trong ly: bột sữa có tag allergen:sua — dị ứng Sữa đã xác nhận theo hồ sơ bot-sua; siro caramel chưa gắn hồ sơ nên không kết luận đầy đủ.",
+  "tcm_note": "Không kết luận tính vị: các dòng đều không có nhãn tính vị trong hồ sơ."
 }
