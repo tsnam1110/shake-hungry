@@ -52,7 +52,7 @@
     }
   ],
   "recipe_steps": [
-    "Vò lá sương sâm (đang thiếu trong kho) với nước, lọc và để đông thành thạch xanh.",
+    "Vò lá sương sâm với nước, lọc và để đông thành thạch xanh.",
     "Cắt thạch thành miếng.",
     "Ăn với nước đường lá dứa và đá bào."
   ],
@@ -80,10 +80,10 @@
   "status": "draft",
   "source": "llm_suggested",
   "confidence": "unknown",
-  "needs_review": false,
+  "needs_review": true,
   "reviewed_by": "tsnam1110@gmail.com",
   "reviewed_at": "2026-10-31",
-  "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này).",
+  "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này). E-batch0 2026-11-04: gắn cờ lại chưa duyệt — danh sách thiếu lá sương sâm (nguyên liệu định danh); hồ sơ la-suong-sam đã có trong kho nhưng kcal null, tỉ lệ mẻ 100 g lá/1 lít nước đã có từ 2 họ nhưng chưa có định lượng theo ly và chưa có số dinh dưỡng nên chưa sửa số, chưa gọi là đã xác minh.",
   "tags": [
     "loai:che-trang-mieng"
   ]
