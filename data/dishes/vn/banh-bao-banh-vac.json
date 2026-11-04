@@ -140,10 +140,10 @@
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",
-  "needs_review": false,
+  "needs_review": true,
   "reviewed_by": "tsnam1110@gmail.com",
   "reviewed_at": "2026-10-31",
-  "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này).",
+  "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này). E-batch1 lô 1 2026-11-04: gắn cờ lại chưa duyệt — định danh và cách làm khớp nguồn mô tả (đĩa gồm cả bánh bao nhân tôm và bánh vạc nhân tôm + thịt heo + mộc nhĩ, vỏ bột gạo bồng kỹ; Vinpearl, Hội An Creative City), nhưng định lượng theo khẩu phần (bột gạo 60 g, bột năng 15 g, thịt xay 30 g, tôm 20 g cho 1 phần 4 chiếc) chưa có nguồn định lượng nào xác nhận đúng số, các nguồn tra được chỉ mô tả không gram; chưa sửa số, chưa gọi là đã xác minh.",
   "tags": [
     "dac-san:hue",
     "loai:banh"
