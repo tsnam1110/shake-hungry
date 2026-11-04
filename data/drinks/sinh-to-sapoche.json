@@ -30,7 +30,8 @@
     {
       "name": "đá",
       "quantity": 100,
-      "unit": "g"
+      "unit": "g",
+      "ingredient_slug": "nuoc-loc"
     }
   ],
   "recipe_steps": [
@@ -59,10 +60,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn sữa tươi + sữa đặc + đá, sapoche chưa có hồ sơ (75–83), sữa ghi chung lấy là sữa tươi, mẫu số 320 ml đồ uống đá xay — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -71,5 +72,32 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 320,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml đồ uống",
+      "value_min": 72,
+      "value_max": 76,
+      "value": null,
+      "per_serving": "≈230–244 kcal/ly (320 ml đồ uống đá xay)",
+      "basis": "Cộng tay: thịt sapoche chín 150 g — khoảng 112,5–124,5 kcal (hồng xiêm/sapodilla khoảng 75–83 kcal/100 g, chưa có hồ sơ riêng nên để khoảng); sữa 50 ml gắn sua-tuoi 31,0–31,5 kcal (file ghi chung 'sữa', lấy là sữa tươi); sữa đặc 20 ml × 1,29 × 334–341 / 100 = 86,2–88,0 kcal; đá xay 100 g tính vào mẫu số. Tổng 229,7–244,0 kcal / 320 ml đồ uống (150 + 50 + 20 + 100) = 72–76 kcal/100 ml. Đây chưa phải đầu ra engine.",
+      "confidence": "low",
+      "source_ref": "data/ingredients/sua-tuoi.json, sua-dac.json, nuoc-loc.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 10,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "10 g/ly (theo file, chưa tính đường trong sữa đặc)",
+      "basis": "sugar_added_g trong file = 10 g; kiểm chéo: đường trong sữa đặc khoảng 14 g, cao hơn 10 g trong file, ghi chú để chủ dự án chốt.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Đã gắn 3/4 dòng trong ly: sữa tươi và sữa đặc có tag allergen:sua — dị ứng Sữa đã xác nhận; sapoche chưa gắn hồ sơ nên không kết luận đầy đủ.",
+  "tcm_note": "Không kết luận tính vị: các dòng đều không có nhãn tính vị trong hồ sơ."
 }
