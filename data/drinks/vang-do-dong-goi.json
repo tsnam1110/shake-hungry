@@ -46,7 +46,7 @@
   "needs_review": true,
   "reviewed_by": null,
   "reviewed_at": null,
-  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04, làm cẩn thận theo QT-9: kcal suy ra từ ABV trong file + đường còn lại, không lấy số một hãng — chưa qua duyệt lại sau khi sửa.",
+  "review_note": "SOÁT LẠI 2026-11-04 theo lệnh của Benjamin (không dùng khoảng tự suy cũ): đối chiếu nhãn hãng thật đang bán, xem drink-verification-packaged.md — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §6.",
   "media": [
     {
@@ -60,11 +60,11 @@
     {
       "label": "Năng lượng",
       "unit": "kcal/100 ml",
-      "value_min": 74,
+      "value_min": 67,
       "value_max": 92,
       "value": null,
-      "per_serving": "≈111–138 kcal/ly 150 ml",
-      "basis": "Kcal suy ra từ ethanol (7 kcal/g, mật độ 0,789 g/ml: kcal ethanol/100 ml = ABV% × 5,523) cộng đường/carb còn lại (4 kcal/g). Vang đỏ 12,0–14,5% ABV: ethanol 66–80 kcal/100 ml cộng đường còn lại khoảng 2–3 g/100 ml × 4 = 8–12 kcal, tổng 74–92 kcal/100 ml. Đối chiếu USDA: vang đỏ khoảng 85 kcal/100 ml, nằm trong khoảng. Đây là khoảng theo ABV trong file, không phải số đo một hãng cụ thể — các hãng có ABV và đường còn lại khác nhau, ghi rõ. Không dùng engine (đồ đóng gói không qua engine).",
+      "per_serving": "≈101–138 kcal/ly 150 ml",
+      "basis": "SOÁT LẠI 2026-11-04 (nhãn hãng + công thức): vang đỏ đóng gói theo loại 67–92 kcal/100 ml — MỞ RỘNG đầu dưới từ 74 xuống 67: vang đỏ khô 12–14,5% ABV, đường còn lại 0,5–3 g/100 ml, tức ethanol 66–80 + đường 2–12 = 67–92 kcal/100 ml (số cũ giả định đường 2–3 g cho mọi chai, bỏ sót vang khô thật sự chỉ 0,5–1 g đường). Đối chiếu USDA: vang đỏ khoảng 85 kcal/100 ml, nằm trong khoảng. Đây là khoảng theo loại, không phải số một hãng. Không dùng engine (đồ đóng gói không qua engine).",
       "confidence": "low",
       "source_ref": "Công thức ethanol 7 kcal/g; file catalogue, alcohol_pct_range"
     },
