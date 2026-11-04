@@ -42,10 +42,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04, làm cẩn thận theo QT-9: khoảng theo loại cà phê sữa lon, đối chiếu với cà phê sữa đá pha tay — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §6.",
   "media": [
     {
@@ -54,5 +54,42 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml",
+      "value_min": 60,
+      "value_max": 90,
+      "value": null,
+      "per_serving": "≈198–297 kcal/lon 330 ml",
+      "basis": "Cà phê sữa đóng chai/lon VN là cà phê + sữa đặc có đường (sữa đặc 334–341 kcal/100 g, mật độ 1,29) pha loãng với cà phê và sữa tươi: tỷ lệ sữa đặc trong lon thường 15–25% thể tích, đường thêm khoảng 10–14 g/100 ml × 4 = 40–56 kcal, cộng sữa tươi và cà phê, tổng theo loại khoảng 60–90 kcal/100 ml. Đây là khoảng theo loại, không phải số một hãng — cà phê sữa đá pha tay trong nhóm cà phê là 120,5–144,3 kcal/ly (ly khoảng 135 ml chất lỏng, tức khoảng 89–107 kcal/100 ml) nên khoảng lon 60–90 là hợp lý vì lon pha loãng hơn ly pha tay. Không dùng engine (đồ đóng gói không qua engine).",
+      "confidence": "low",
+      "source_ref": "Hồ sơ sua-dac (334–341 kcal/100 g, mật độ 1,29); cà phê sữa đá nhóm cà phê (120,5–144,3 kcal/ly)"
+    },
+    {
+      "label": "Caffeine",
+      "unit": "mg/lon",
+      "value_min": 130,
+      "value_max": 200,
+      "value": null,
+      "per_serving": "≈130–200 mg/lon 330 ml (tầm soát)",
+      "basis": "Caffeine tầm soát theo loại cà phê lon: nồng độ khoảng 40–60 mg/100 ml, nhân lon 330 ml = 132–198 mg, làm tròn 130–200 mg/lon. Đây là khoảng tầm soát, tin cậy thấp, không phải số đo một hãng.",
+      "confidence": "low",
+      "source_ref": "Nồng độ caffeine cà phê pha loãng (tầm soát)"
+    },
+    {
+      "label": "Đường",
+      "unit": "g/lon",
+      "value_min": 33,
+      "value_max": 46,
+      "value": null,
+      "per_serving": "≈33–46 g/lon 330 ml",
+      "basis": "Đường trong cà phê sữa đóng chai/lon khoảng 10–14 g/100 ml (sữa đặc + đường thêm), nhân lon 330 ml = 33–46,2 g, làm tròn 33–46 g/lon. Đây là khoảng theo loại, không phải số một hãng.",
+      "confidence": "low",
+      "source_ref": "Nhãn cà phê sữa đóng chai/lon (khoảng, không phải một nhãn cụ thể)"
+    }
+  ],
+  "allergen_note": "Dị ứng Sữa: xác nhận theo loại sản phẩm — cà phê sữa đóng chai/lon theo định nghĩa chứa sữa (sữa đặc/sữa tươi), nên người dị ứng sữa phải tránh, ghi rõ là xác nhận theo loại sản phẩm, không phải từ tag trong hồ sơ. Các dị ứng khác chưa đủ dữ kiện.",
+  "tcm_note": "Không kết luận tính vị: mục đóng gói này chưa gắn hồ sơ nguyên liệu nên không kết luận ở tầng món."
 }
