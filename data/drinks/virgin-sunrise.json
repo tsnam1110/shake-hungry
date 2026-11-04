@@ -57,7 +57,7 @@
   "needs_review": true,
   "reviewed_by": null,
   "reviewed_at": null,
-  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn nước cam + soda, grenadine để khoảng, liquid 105 ml, MÂU THUẪN sugar file 5 vs tổng ~20 — chưa qua duyệt lại sau khi sửa.",
+  "review_note": "SOÁT LẠI 2026-11-04 theo lệnh của Benjamin (không dùng bảng tự suy cũ): tính lại từ thành phần đã kiểm chứng đa nguồn, xem drink-verification-liqueur.md — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5.",
   "media": [
     {
@@ -72,11 +72,11 @@
     {
       "label": "Năng lượng",
       "unit": "kcal/100 ml chất lỏng",
-      "value_min": 87,
-      "value_max": 92,
+      "value_min": 78,
+      "value_max": 78,
       "value": null,
-      "per_serving": "≈91–97 kcal/ly (105 ml chất lỏng, chưa tính đá)",
-      "basis": "Cộng tay: nước cam 90 ml × 47 / 100 = 42,3 kcal; grenadine 15 ml × ~1,3 × 250–280 / 100 = 48,8–54,6 kcal; soda 0 ml nên không tính. Tổng 91,1–96,9 kcal / 105 ml = 87–92 kcal/100 ml. Đây chưa phải đầu ra engine.",
+      "per_serving": "≈82 kcal/ly (105 ml chất lỏng, chưa tính đá)",
+      "basis": "SOÁT LẠI 2026-11-04 (đa nguồn): nước cam 90 ml × 0,47 = 42,3 kcal; grenadine 15 ml × 2,67 = 40,1 kcal — SỬA so với cũ (grenadine cũ lấy 250–280 kcal/100 g nhân mật độ 1,3 = 48,8–54,6 kcal, tức 325–364 kcal/100 ml): nhãn Rose's qua nhiều nhà bán lẻ là 80 kcal, 20 g đường/30 ml, tức 267 kcal, 66,7 g đường/100 ml (OpenFoodFacts 266/66,7 xác nhận) — nhãn ghi theo thể tích nên KHÔNG nhân thêm mật độ. Tổng mới 82,4 kcal / 105 ml = 78 kcal/100 ml (cũ 91–97, cao hơn 9–15 kcal). Đây chưa phải đầu ra engine.",
       "confidence": "low",
       "source_ref": "data/ingredients/nuoc-ep-cam.json, soda.json"
     },
@@ -87,7 +87,7 @@
       "value_min": null,
       "value_max": null,
       "per_serving": "5 g/ly (theo file, tổng đường thực khoảng 20 g)",
-      "basis": "sugar_added_g trong file = 5 g; kiểm chéo: grenadine đường khoảng 12 g (19,5 g siro, đường ~60%) + đường tự nhiên trong nước cam khoảng 8 g = khoảng 20 g tổng đường, cao hơn nhiều so với 5 g trong file — file có thể chỉ tính một phần, ghi chú để chủ dự án chốt, không sửa lặng lẽ số file.",
+      "basis": "sugar_added_g trong file = 5 g; tổng đường thực sau soát lại khoảng 13,9 g (xem basis năng lượng).",
       "confidence": "medium",
       "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
     }
