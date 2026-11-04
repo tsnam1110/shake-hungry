@@ -108,10 +108,10 @@
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
-  "needs_review": false,
+  "needs_review": true,
   "reviewed_by": "tsnam1110@gmail.com",
   "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau). [Soát lại E-batch lô 4, 2026-11-04: file dùng đường trắng 18 g + nhân lạc + dừa nạo làm cốt lõi, trong khi nhiều nguồn thống nhất định danh chuẩn là bánh nếp ngào MẬT MÍA + gừng, nhân tùy chọn (nhiều bản không nhân, lạc chỉ rắc ăn kèm); bước 2 nấu 'nước đường' mâu thuẫn ghi chú văn hoá của chính file về ngào mật mía; tổng các dòng 87 g so với khẩu phần '1 bát nhỏ' 170 g — phần nước mật trong bát chưa được định lượng, cần chốt khẩu phần tính cả bát nước mật hay chỉ tính viên bánh; kho chưa có hồ sơ mật mía; có thể trùng với banh-mat (cùng tên gọi xứ Nghệ) — giữ cờ chưa duyệt chờ chốt các điểm này.]",
   "tags": [
     "dac-san:nghe-an",
     "loai:banh"
