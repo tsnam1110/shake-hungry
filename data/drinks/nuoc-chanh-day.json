@@ -11,9 +11,9 @@
   "garnish": [],
   "ingredients": [
     {
-      "name": "chanh dây",
-      "quantity": 2,
-      "unit": "quả",
+      "name": "chanh dây (ruột, 2 quả)",
+      "quantity": 36,
+      "unit": "g",
       "ingredient_slug": "chanh-day"
     },
     {
@@ -75,7 +75,7 @@
       "value_max": 61,
       "value": null,
       "per_serving": "≈112 kcal/ly (186 ml chất lỏng)",
-      "basis": "Cộng tay: chanh dây 2 quả × 18 g ruột × 97 / 100 = 34,9 kcal (hồ sơ chanh-day, đơn vị quả ruột 18 g); đường 20 g × 387 / 100 = 77,4 kcal; nước 0 kcal. Tổng 112,3 kcal / 186 ml (150 + 36) = 60 kcal/100 ml. Đây chưa phải đầu ra engine.",
+      "basis": "Cộng tay: chanh dây ruột 36 g (2 quả × 18 g ruột) × 97 / 100 = 34,9 kcal (hồ sơ chanh-day, đơn vị quả ruột 18 g — file ghi 36 g để engine quy đổi được, vì đơn vị 'quả' trong hồ sơ ghi là 'quả (phần ruột ăn được)' nên engine không khớp tên đơn vị 'quả'); đường 20 g × 387 / 100 = 77,4 kcal; nước 0 kcal. Tổng 112,3 kcal / 186 ml (150 + 36) = 60 kcal/100 ml. Đây chưa phải đầu ra engine lúc đầu (engine báo không quy đổi được đơn vị quả, xem sửa ở commit tiếp theo).",
       "confidence": "medium",
       "source_ref": "data/ingredients/chanh-day.json, duong-trang.json, nuoc-loc.json"
     },
