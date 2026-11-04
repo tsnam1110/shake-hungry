@@ -128,6 +128,44 @@ class WeekPlanController extends Controller
         return response()->json(['meal' => $this->presentMeal($meal->fresh()), 'validation' => $validation]);
     }
 
+    /** Phần 2.5, Task 2 — đổi ngày bắt đầu: dịch toàn bộ ngày trong tuần theo cùng độ lệch, giữ nguyên món. */
+    public function changeStart(Request $request, WeekPlan $weekPlan, WeekValidator $validator): JsonResponse
+    {
+        $this->authorizePlan($request, $weekPlan);
+        $data = $request->validate(['start_date' => ['required', 'date']]);
+        $newStart = \Carbon\Carbon::parse($data['start_date'])->startOfDay();
+        $oldStart = $weekPlan->start_date->copy()->startOfDay();
+        $conflict = WeekPlan::where('user_id', $request->user()->id)
+            ->where('start_date', $newStart->toDateString())
+            ->where('id', '!=', $weekPlan->id)->exists();
+        if ($conflict) {
+            return response()->json(['message' => 'Đã có tuần khác bắt đầu ngày này.'], 422);
+        }
+        $delta = $newStart->greaterThan($oldStart)
+            ? $oldStart->diffInDays($newStart)
+            : -$newStart->diffInDays($oldStart);
+        \Illuminate\Support\Facades\DB::transaction(function () use ($weekPlan, $newStart, $delta, $validator) {
+            $weekPlan->update([
+                'start_date' => $newStart->toDateString(),
+                'end_date' => $newStart->copy()->addDays(6)->toDateString(),
+            ]);
+            // Cập nhật theo thứ tự tránh va chạm unique (plan, date) khi
+            // ngày mới chồng lên ngày cũ: dịch lên thì từ cuối về đầu,
+            // dịch xuống thì từ đầu về cuối. Dùng query trực tiếp vì
+            // quan hệ days() đã orderBy('date') sẵn và sẽ thắng orderBy sau.
+            $days = \App\Models\WeekPlanDay::where('week_plan_id', $weekPlan->id)
+                ->orderBy('date', $delta >= 0 ? 'desc' : 'asc')->get();
+            foreach ($days as $day) {
+                $day->update(['date' => $day->date->copy()->addDays($delta)->toDateString()]);
+            }
+            foreach ($weekPlan->fresh()->days as $day) {
+                $validator->refreshDay($day, $weekPlan);
+            }
+        });
+
+        return response()->json(['plan' => $this->presentPlan($weekPlan->fresh()->load('days'))]);
+    }
+
     private function findMeal(WeekPlan $weekPlan, $mealId)
     {
         $meal = \App\Models\WeekPlanMeal::with('day')->find($mealId);

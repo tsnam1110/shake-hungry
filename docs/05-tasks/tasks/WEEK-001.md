@@ -173,6 +173,15 @@ này trước Task suy kcal từ TDEE + mục tiêu (thuộc Phần 2.1, sau for
 - Test `tests/Feature/WeekOperationsTest.php` (2 test đầu): đổi bữa ghi
   món gốc + tính lại protein, đổi sang món thiếu bị 422.
 
+### Task 2 — Đổi ngày bắt đầu — ĐÃ XONG (2026-11-04)
+- API POST /api/week-plans/{plan}/change-start: dịch toàn bộ ngày theo
+  cùng độ lệch, giữ nguyên món, cập nhật end_date; trùng start_date với
+  tuần khác của cùng người dùng thì 422. Cập nhật ngày theo thứ tự tránh
+  va chạm unique (plan, date) — dùng query trực tiếp vì quan hệ days()
+  đã orderBy sẵn.
+- Trang /tuan-an: form đổi ngày bắt đầu trong chi tiết tuần.
+- Test thêm: dịch ngày + giữ món + trùng ngày bị 422.
+
 ## Các phần tiếp theo (theo lệnh duyệt toàn bộ lộ trình 2026-11-04, làm tiếp không hỏi duyệt giữa chừng)
 - Phần 2.5, Task 2–5: đổi ngày bắt đầu, bắt đầu lại phần còn lại, ăn ngoài, loại thực phẩm.
 - Phần 2.6: danh sách đi chợ theo gram, không gói, không giá.

@@ -67,6 +67,23 @@ it('đổi một bữa: ứng viên hiển thị trước, áp dụng ghi món g
         ->and($resp->json('validation.protein_g'))->toBe(110);
 });
 
+it('đổi ngày bắt đầu: dịch toàn bộ ngày, giữ nguyên món, trùng ngày khác thì 422', function () {
+    [$user, $plan] = week25Plan();
+    $this->actingAs($user);
+    $firstMealSlug = $plan->days->first()->meals->first()->dish->slug;
+
+    $resp = $this->postJson("/api/week-plans/{$plan->id}/change-start", ['start_date' => '2026-11-10'])->assertOk();
+    expect($resp->json('plan.start_date'))->toBe('2026-11-10')
+        ->and($resp->json('plan.end_date'))->toBe('2026-11-16');
+
+    $fresh = WeekPlan::with('days.meals.dish')->find($plan->id);
+    expect($fresh->days->first()->date->toDateString())->toBe('2026-11-10')
+        ->and($fresh->days->first()->meals->first()->dish->slug)->toBe($firstMealSlug);
+
+    WeekPlan::create(['user_id' => $user->id, 'start_date' => '2026-11-16', 'end_date' => '2026-11-22']);
+    $this->postJson("/api/week-plans/{$plan->id}/change-start", ['start_date' => '2026-11-16'])->assertUnprocessable();
+});
+
 it('đổi bữa sang món thiếu dữ kiện bị từ chối 422', function () {
     [$user, $plan] = week25Plan();
     $bad = week25Dish('op-trua-thieu', 'trua', 50, 450, 500, ['missing' => ['nghe-tuoi']]);

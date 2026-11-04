@@ -38,6 +38,11 @@
 
     <section id="week-detail" style="display:none">
         <h2 class="ld-section-title" id="week-detail-title">Chi tiết tuần</h2>
+        <div class="ld-card" style="display:flex;gap:10px;flex-wrap:wrap;align-items:end;margin-bottom:14px">
+            <div style="flex:1;min-width:200px"><label class="ld-field-label" for="week-new-start">Đổi ngày bắt đầu tuần này</label>
+                <input id="week-new-start" type="date" class="ld-input"></div>
+            <button id="week-change-start" class="ld-btn ld-btn-gray" style="padding:11px 22px;font-size:15.5px">Đổi ngày bắt đầu</button>
+        </div>
         <div id="week-days"></div>
         <p class="ld-note" style="margin-top:10px">Cảnh báo kết hợp chỉ là lớp thông tin ở trang món, không chặn, không lọc và không chấm điểm tuần ăn. Thao tác đổi bữa, ăn ngoài và đi chợ sẽ có ở các phần tiếp theo của lộ trình.</p>
     </section>
@@ -144,6 +149,16 @@ document.getElementById('week-create').onsubmit = async (e) => {
     showPlan(data.plan.id);
 };
 document.getElementById('week-start').value = new Date().toISOString().slice(0, 10);
+document.getElementById('week-change-start').onclick = async () => {
+    const start = document.getElementById('week-new-start').value;
+    if (!start || !currentPlanId) return;
+    const resp = await fetch(`/api/week-plans/${currentPlanId}/change-start`, { method: 'POST', headers, body: JSON.stringify({ start_date: start }) });
+    const res = await resp.json();
+    if (!resp.ok) { alert(res.message || 'Đổi ngày bắt đầu thất bại'); return; }
+    if (window.ldToast) ldToast('Đã đổi ngày bắt đầu tuần');
+    loadPlans();
+    showPlan(currentPlanId);
+};
 loadPlans();
 </script>
 @endauth
