@@ -41,10 +41,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04, làm cẩn thận theo QT-9: khoảng theo loại sữa đóng hộp, không lấy số một hãng — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §6.",
   "media": [
     {
@@ -53,5 +53,31 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml",
+      "value_min": 30,
+      "value_max": 60,
+      "value": null,
+      "per_serving": "≈75–150 kcal/hộp 250 ml (tùy có đường hay không)",
+      "basis": "Sữa đậu nành đóng hộp có hai loại, file không ghi loại nào nên KHÔNG được lấy một điểm: loại không đường khoảng 30–35 kcal/100 ml (đậu nành nguyên chất, hồ sơ sua-dau-nanh 54 kcal/100 g là loại có đường nhẹ — loại không đường thấp hơn, khoảng 30–35); loại có đường khoảng 50–60 kcal/100 ml (đường 5–7 g/100 ml × 4 = 20–28 kcal cộng đậu nành 30 kcal). Khoảng gộp 30–60 kcal/100 ml là khoảng theo loại, tin cậy thấp — người dùng phải đọc nhãn hộp cụ thể. Không dùng engine (đồ đóng gói không qua engine).",
+      "confidence": "low",
+      "source_ref": "Hồ sơ sua-dau-nanh (54 kcal/100 g); nhãn sữa đậu nành đóng hộp (khoảng, không phải một nhãn cụ thể)"
+    },
+    {
+      "label": "Đường",
+      "unit": "g/hộp",
+      "value_min": 0,
+      "value_max": 18,
+      "value": null,
+      "per_serving": "0–18 g/hộp 250 ml (tùy có đường hay không)",
+      "basis": "Đường trong sữa đậu nành đóng hộp: bản không đường khoảng 1 g/100 ml (đường tự nhiên trong đậu nành) × 250 ml = 2–3 g; bản có đường khoảng 5–7 g/100 ml × 250 ml = 12,5–17,5 g, làm tròn 0–18 g/hộp, ghi rõ hai loại.",
+      "confidence": "low",
+      "source_ref": "Nhãn sữa đậu nành đóng hộp (khoảng, không phải một nhãn cụ thể)"
+    }
+  ],
+  "allergen_note": "Dị ứng Đậu nành: xác nhận theo loại sản phẩm — sữa đậu nành đóng hộp theo định nghĩa làm từ đậu nành, nên người dị ứng đậu nành phải tránh, ghi rõ là xác nhận theo loại sản phẩm, không phải từ tag trong hồ sơ (hồ sơ sua-dau-nanh có tag allergen:dau-nanh nhưng mục đóng gói này chưa gắn hồ sơ). Các dị ứng khác chưa đủ dữ kiện.",
+  "tcm_note": "Không kết luận tính vị: mục đóng gói này chưa gắn hồ sơ nguyên liệu nên không kết luận ở tầng món."
 }
