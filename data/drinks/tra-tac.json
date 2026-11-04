@@ -27,7 +27,8 @@
     {
       "name": "đường/siro đường",
       "quantity": 25,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "siro-duong"
     }
   ],
   "recipe_steps": [
@@ -56,10 +57,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn đủ 3/3, tắc để khoảng nước vắt–cả quả, liquid 195 ml — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -68,5 +69,32 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 195,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml chất lỏng",
+      "value_min": 37,
+      "value_max": 46,
+      "value": null,
+      "per_serving": "≈72–89 kcal/ly (195 ml chất lỏng, chưa tính đá tan)",
+      "basis": "Cộng tay với khoảng cho tắc (xem ghi chú): trà đen 150 ml × 1 = 1,5 kcal; tắc 2 quả × 19 g = 38 g — nước tắc vắt chỉ khoảng 10–12 kcal, cả quả 38 g × 71 / 100 = 27,0 kcal, nên để khoảng 10–27 kcal vì file không ghi rõ dùng nước vắt hay cả quả; siro đường 25 ml × 1,24 × 194 / 100 = 60,2 kcal. Tổng 71,7–88,7 kcal / 195 ml (150 + 25 + ~20 ml nước tắc) = 37–46 kcal/100 ml. Đây chưa phải đầu ra engine; engine gắn tắc cả quả nên sẽ cho đầu trên của khoảng.",
+      "confidence": "low",
+      "source_ref": "data/ingredients/tra-den.json, tac.json, siro-duong.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 25,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "25 g/ly",
+      "basis": "sugar_added_g trong file catalogue = 25 g; kiểm chéo: siro 31 g, đường 15,5 g, cộng đường trong tắc khoảng 3–4 g, tổng khoảng 19–20 g — thấp hơn 25 g trong file, ghi chú để chủ dự án chốt, không tự sửa file gốc.",
+      "confidence": "low",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Đã gắn đủ 3/3 dòng trong ly: trà đen, tắc và siro đường đều không có tag dị ứng trong hồ sơ.",
+  "tcm_note": "Không kết luận tính vị: trà đen và tắc đều không có nhãn tính vị trong hồ sơ; siro đường cũng không có nhãn."
 }
