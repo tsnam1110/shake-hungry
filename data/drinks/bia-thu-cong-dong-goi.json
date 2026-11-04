@@ -44,10 +44,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04, làm cẩn thận theo QT-9: khoảng theo ABV 4,5–7,5%, không lấy số một style cụ thể — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §6.",
   "media": [
     {
@@ -56,5 +56,31 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml",
+      "value_min": 40,
+      "value_max": 65,
+      "value": null,
+      "per_serving": "≈132–215 kcal/lon 330 ml",
+      "basis": "Bia thủ công (craft) trong file có ABV 4,5–7,5%, rộng hơn lager nhiều vì craft gồm nhiều style (IPA, stout, pale ale). Kcal bia suy ra từ ethanol + carb: ethanol kcal/100 ml = ABV% × 5,523 (ABV 4,5% → 24,9 kcal, ABV 7,5% → 41,4 kcal), cộng carb khoảng 3–6 g/100 ml × 4 = 12–24 kcal, tổng khoảng 37–65 kcal/100 ml, làm tròn 40–65. Đây là khoảng theo ABV, không phải số của một style cụ thể — IPA thường 55–65, pale ale 40–50, stout có thể cao hơn do đường còn lại. Không dùng engine (engine chưa có logic ethanol).",
+      "confidence": "low",
+      "source_ref": "Công thức ethanol 7 kcal/g + carb 4 kcal/g; file catalogue, alcohol_pct_range 4,5–7,5%"
+    },
+    {
+      "label": "Độ cồn",
+      "unit": "% ABV",
+      "value_min": 4.5,
+      "value_max": 7.5,
+      "value": null,
+      "per_serving": "4,5–7,5% ABV",
+      "basis": "alcohol_pct_range trong file catalogue = 4,5–7,5%, là khoảng loại bia thủ công nói chung, không phải ABV của một hãng/style cụ thể — người dùng phải đọc nhãn chai cụ thể.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Đã gắn 0/1 dòng trong file: bia làm từ lúa mạch (malt) nên có thể chứa gluten — cảnh báo theo loại, chưa gắn tag trong hồ sơ, trang chi tiết phải hiện 'chưa đủ dữ kiện'.",
+  "tcm_note": "Không kết luận tính vị: bia chưa có hồ sơ nguyên liệu trong hệ thống."
 }
