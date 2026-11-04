@@ -44,7 +44,7 @@
   "needs_review": true,
   "reviewed_by": null,
   "reviewed_at": null,
-  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn cà rốt, nước ép theo hiệu suất ép ~160 ml, liquid 160 ml — chưa qua duyệt lại sau khi sửa.",
+  "review_note": "SOÁT LẠI 2026-11-04 theo lệnh của Benjamin (không dùng bảng tự suy cũ): tính lại từ nhãn nước ép đã kiểm chứng đa nguồn — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -59,11 +59,11 @@
     {
       "label": "Năng lượng",
       "unit": "kcal/100 ml nước ép",
-      "value_min": 38,
+      "value_min": 28,
       "value_max": 44,
       "value": null,
-      "per_serving": "≈60–70 kcal/ly (khoảng 160 ml nước ép, chưa tính đá)",
-      "basis": "Cộng tay theo nước ép, KHÔNG phải cả củ: cà rốt 250 g cho khoảng 160 ml nước ép (hiệu suất ép khoảng 60–70%, ghi rõ là ước tính); nước ép cà rốt khoảng 40 kcal/100 ml (USDA carrot juice, gần với cà rốt nguyên 41 kcal/100 g vì cà rốt ít xơ so với quả khác), 160 ml × 40 / 100 = 64 kcal, để khoảng 60–70 do hiệu suất ép khác nhau. Cả củ 250 g × 41 / 100 = 102,5 kcal là ĐẦU TRÊN nếu ăn cả bã, không áp dụng cho nước ép đã lọc bã. Đây chưa phải đầu ra engine.",
+      "per_serving": "≈45–70 kcal/ly (khoảng 160 ml nước ép, chưa tính đá)",
+      "basis": "SOÁT LẠI 2026-11-04 (nhãn hãng thật + cơ sở dữ liệu, hai nguồn MÂU THUẪN nên để khoảng rộng): nước ép cà rốt 28–44 kcal/100 ml — Bolthouse Farms 100% Carrot Juice qua OpenFoodFacts/USDA 28–29 kcal, đường 5,2–5,4 g/100 ml; cơ sở dữ liệu generic (FatSecret) 40 kcal/100 ml, gần cà rốt nguyên 41 kcal/100 g. Chênh lệch do phương pháp ép/pha loãng khác nhau, không chọn một nguồn rồi bỏ nguồn kia. Cà rốt 250 g cho khoảng 160 ml nước ép (hiệu suất ép khoảng 60–70%, ước tính). 160 ml × 28–44/100 = 45–70 kcal (cũ 60–70, đầu dưới cao hơn 15 kcal vì file cũ chỉ dùng số generic 40). Cả củ 250 g × 41/100 = 102,5 kcal là ĐẦU TRÊN nếu ăn cả bã, không áp dụng cho nước ép đã lọc. Đây chưa phải đầu ra engine.",
       "confidence": "low",
       "source_ref": "data/ingredients/ca-rot.json"
     },
