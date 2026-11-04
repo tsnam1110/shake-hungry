@@ -121,10 +121,10 @@
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",
-  "needs_review": false,
+  "needs_review": true,
   "reviewed_by": "tsnam1110@gmail.com",
   "reviewed_at": "2026-10-31",
-  "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này).",
+  "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này). E-batch1 lô 3 2026-11-04: gắn cờ lại chưa duyệt — mâu thuẫn nội bộ: bước làm ghi 'Giã lá gai, trộn bột nếp thành vỏ đen dẻo' nhưng danh sách nguyên liệu không có lá gai, và ghi chú văn hoá nói nổi tiếng nhất là bánh ít lá gai trong khi file là bản vỏ thường nhân đậu xanh – dừa; cần chốt phạm vi là bản thường hay bản lá gai (và quan hệ với file banh-it-la-gai riêng) rồi mới sửa bước làm hoặc danh sách cho khớp; định lượng theo 2 cái chưa có nguồn xác nhận đúng số; chưa sửa số, chưa gọi là đã xác minh.",
   "tags": [
     "loai:banh"
   ]
