@@ -41,10 +41,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04, làm cẩn thận theo QT-9: khoảng theo loại sữa đóng hộp, không lấy số một hãng — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §6.",
   "media": [
     {
@@ -53,5 +53,31 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml",
+      "value_min": 25,
+      "value_max": 60,
+      "value": null,
+      "per_serving": "≈63–150 kcal/hộp 250 ml (tùy loại hạt)",
+      "basis": "Sữa hạt đóng hộp gồm nhiều loại hạt rất khác nhau, file ghi chung 'hạnh nhân, óc chó, yến mạch' nên KHÔNG được lấy một điểm: sữa hạnh nhân có đường khoảng 25–40 kcal/100 ml (hạnh nhân pha loãng, đường 3–5 g/100 ml); sữa yến mạch khoảng 45–60 kcal/100 ml (yến mạch có carb cao hơn, đường 5–8 g/100 ml); sữa óc chó khoảng 40–55 kcal/100 ml. Khoảng gộp 25–60 kcal/100 ml là khoảng theo loại, tin cậy thấp — người dùng phải đọc nhãn hộp cụ thể theo loại hạt. Không dùng engine (đồ đóng gói không qua engine).",
+      "confidence": "low",
+      "source_ref": "Nhãn sữa hạt đóng hộp (khoảng theo loại hạt, không phải một nhãn cụ thể)"
+    },
+    {
+      "label": "Đường",
+      "unit": "g/hộp",
+      "value_min": 8,
+      "value_max": 20,
+      "value": null,
+      "per_serving": "≈8–20 g/hộp 250 ml",
+      "basis": "Đường trong sữa hạt đóng hộp khoảng 3–8 g/100 ml (tùy loại hạt và có đường hay không), nhân hộp 250 ml = 7,5–20 g, làm tròn 8–20 g/hộp. Bản không đường thì đường khoảng 0–3 g/hộp, ghi rõ.",
+      "confidence": "low",
+      "source_ref": "Nhãn sữa hạt đóng hộp (khoảng, không phải một nhãn cụ thể)"
+    }
+  ],
+  "allergen_note": "Dị ứng: PHỤ THUỘC LOẠI HẠT CỤ THỂ — sữa hạnh nhân chứa hạnh nhân, sữa óc chó chứa óc chó, sữa yến mạch có thể nhiễm gluten chéo từ yến mạch — trang chi tiết phải hiện 'chưa đủ dữ kiện' và yêu cầu đọc nhãn hộp cụ thể, không được kết luận chung cho cả loại 'sữa hạt'.",
+  "tcm_note": "Không kết luận tính vị: mục đóng gói này chưa gắn hồ sơ nguyên liệu nên không kết luận ở tầng món."
 }
