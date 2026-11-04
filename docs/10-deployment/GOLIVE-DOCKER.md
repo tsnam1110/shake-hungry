@@ -789,10 +789,11 @@ văn bản quyết định ghi nguyên văn: *"chính sách hiển thị công k
 Tại thời điểm viết tài liệu này, chính sách hiển thị đó **chưa được chốt**, trong khi
 khối "Tính vị:" trên trang công khai đang **hiển thị mặc định**. Vì vậy:
 
-- [ ] **Chủ dự án quyết chính sách hiển thị** đối với các dòng nhãn mang cờ
+- [x] **Chủ dự án quyết chính sách hiển thị** đối với các dòng nhãn mang cờ
       `usage_restricted` (nằm trong khối `tcm_traits` của file nguyên liệu trong
       `data/ingredients/`): hiển thị cả giá trị, chỉ hiển thị khi đã lọc các dòng hạn
       chế, hay ẩn lớp tính vị cho tới khi có quyết định khác.
+      — **ĐÃ CHỐT 2026-11-04: hiển thị cả giá trị** (CLAUDE §0, đính chính lần 39).
 - [ ] Quyết định được ghi thành hồ sơ trong repo (task file + CLAUDE §0 theo QT-7)
       **và** triển khai/kiểm chứng xong, rồi mới công khai link production.
 - Tài liệu go-live này **không tự quyết** thay mục trên — đây là điểm dừng có chủ đích,

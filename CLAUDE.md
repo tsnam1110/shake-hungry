@@ -698,6 +698,22 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > repo** — gói Docker go-live là task riêng đang bổ sung. Chi tiết:
 > [DEV-SETUP-DOC](docs/05-tasks/tasks/DEV-SETUP-DOC.md).
 
+> ## ⚠️ Đính chính lần 39, 2026-11-04 — Chính sách hiển thị công khai dòng TCM mang cờ `usage_restricted` (GOLIVE §11.3) ĐÃ CHỐT: hiển thị cả giá trị
+>
+> Chủ dự án chốt ngày 2026-11-04: đối với các dòng nhãn tính vị mang cờ
+> `usage_restricted` (4 dòng tầng 2 CMRO 《中藥趣談》: hoa-hoi, rau-diep-ca,
+> tao-tau, tao-tau-kho — LICENSE-COMPLIANCE §5b), trang công khai **hiển thị
+> cả giá trị** tính/vị/hành. Đây là phương án 1 trong 3 phương án của
+> GOLIVE-DOCKER §11.3 (hai phương án không chọn: chỉ hiển thị sau khi lọc bỏ
+> dòng hạn chế; ẩn lớp tính vị cho tới khi có quyết định khác). Căn cứ ghi
+> nhận: giá trị của cả 4 dòng đều được Dược điển TQ corroborate độc lập
+> (LICENSE-COMPLIANCE, nhật ký 2026-11-01), và giao diện hiện tại đã hiển thị
+> giá trị kèm ghi chú hạn chế màu đỏ ("Không được dùng — …") ở trang nguyên
+> liệu/trái cây, nên quyết định này KHÔNG đòi hỏi sửa code hiển thị — chỉ
+> chốt chính sách. Phạm vi: không có mục đồ uống nào dùng 4 nguyên liệu này,
+> nên quyết định không đổi trang đồ uống. Còn lại theo §11.3: triển khai/kiểm
+> chứng xong rồi mới công khai link production.
+
 > ## 📗 Bổ sung lần 39, 2026-11-02 — T-05: nghiên cứu nguyên liệu khoá món (LV2-012 §6) ĐÃ XONG
 >
 > Mở được **bản toàn văn Bảng TPTP VN 2007** (526 thực phẩm; các vòng trước chỉ có
