@@ -41,10 +41,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": true,
   "uncertain_note": "Catalogue ghi UNCERTAIN về danh sách thương hiệu cụ thể theo thời gian — kiểm tra danh mục hãng trà sữa/sữa tại thời điểm seed.",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04, làm cẩn thận theo QT-9: khoảng theo loại trà đóng chai, caffeine tầm soát — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §6.",
   "media": [
     {
@@ -53,5 +53,42 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml",
+      "value_min": 50,
+      "value_max": 80,
+      "value": null,
+      "per_serving": "≈250–400 kcal/chai 500 ml",
+      "basis": "Trà sữa đóng chai là trà + sữa + đường (và có thể trân châu ở một số chai, file không ghi): sữa tươi 60–61 kcal/100 g, đường khoảng 9–13 g/100 ml × 4 = 36–52 kcal, cộng trà 1 kcal, tổng khoảng 50–80 kcal/100 ml. Đây là khoảng theo loại, không phải số một hãng — trà sữa đóng chai các hãng có tỷ lệ sữa/đường khác nhau, chai có trân châu thì kcal cao hơn (trân châu nấu 150–200 kcal/100 g, 1 phần trân châu 30 g thêm khoảng 45–60 kcal/chai), ghi rõ. Không dùng engine (đồ đóng gói không qua engine).",
+      "confidence": "low",
+      "source_ref": "Nhãn trà đóng chai (khoảng theo loại, không phải một nhãn cụ thể)"
+    },
+    {
+      "label": "Caffeine",
+      "unit": "mg/chai",
+      "value_min": 75,
+      "value_max": 125,
+      "value": null,
+      "per_serving": "≈75–125 mg/chai 500 ml (tầm soát)",
+      "basis": "Caffeine tầm soát: trà sữa đóng chai thường có nồng độ caffeine khoảng 15–25 mg/100 ml, nhân chai 500 ml = 75–125 mg/chai. Đây là khoảng tầm soát, tin cậy thấp, không phải số đo một hãng — chai 350 ml thì khoảng 53–88 mg.",
+      "confidence": "low",
+      "source_ref": "Nồng độ caffeine trà đóng chai (tầm soát)"
+    },
+    {
+      "label": "Đường",
+      "unit": "g/chai",
+      "value_min": 45,
+      "value_max": 65,
+      "value": null,
+      "per_serving": "≈45–65 g/chai 500 ml",
+      "basis": "Đường trong trà sữa đóng chai khoảng 9–13 g/100 ml, nhân chai 500 ml = 45–65 g/chai (chưa tính trân châu nếu có).",
+      "confidence": "low",
+      "source_ref": "Nhãn trà đóng chai (khoảng theo loại)"
+    }
+  ],
+  "allergen_note": "Dị ứng Sữa: xác nhận theo loại sản phẩm — trà sữa đóng chai theo định nghĩa chứa sữa (sữa tươi/bột sữa/kem béo thực vật có thể chứa caseinate), nên người dị ứng sữa phải tránh, ghi rõ là xác nhận theo loại sản phẩm, không phải từ tag trong hồ sơ. Các dị ứng khác chưa đủ dữ kiện.",
+  "tcm_note": "Không kết luận tính vị: mục đóng gói này chưa gắn hồ sơ nguyên liệu nên không kết luận ở tầng món."
 }
