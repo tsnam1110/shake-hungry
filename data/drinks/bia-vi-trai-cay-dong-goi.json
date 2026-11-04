@@ -40,10 +40,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04, làm cẩn thận theo QT-9: khoảng theo ABV và đường trái cây, không lấy số một hãng — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §6.",
   "media": [
     {
@@ -52,5 +52,31 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml",
+      "value_min": 40,
+      "value_max": 55,
+      "value": null,
+      "per_serving": "≈132–182 kcal/lon 330 ml",
+      "basis": "Bia vị trái cây trong file có ABV 3,0–5,0%. Kcal suy ra từ ethanol + đường/carb: ethanol kcal/100 ml = ABV% × 5,523 (3,0% → 16,6 kcal, 5,0% → 27,6 kcal), cộng carb/đường từ trái cây và đường thêm khoảng 5–7 g/100 ml × 4 = 20–28 kcal, tổng khoảng 37–56 kcal/100 ml, làm tròn 40–55. Bia vị trái cây các hãng có đường thêm khác nhau nhiều (có hãng ngọt hơn, có hãng dùng vị trái cây không đường), nên khoảng này là khoảng theo loại, không phải số một hãng. Không dùng engine (engine chưa có logic ethanol).",
+      "confidence": "low",
+      "source_ref": "Công thức ethanol 7 kcal/g + carb/đường 4 kcal/g; file catalogue, alcohol_pct_range 3,0–5,0%"
+    },
+    {
+      "label": "Độ cồn",
+      "unit": "% ABV",
+      "value_min": 3.0,
+      "value_max": 5.0,
+      "value": null,
+      "per_serving": "3,0–5,0% ABV",
+      "basis": "alcohol_pct_range trong file catalogue = 3,0–5,0%, là khoảng loại bia vị trái cây, không phải ABV của một hãng cụ thể.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Đã gắn 0/1 dòng trong file: bia làm từ lúa mạch (malt) nên có thể chứa gluten — cảnh báo theo loại, chưa gắn tag trong hồ sơ, trang chi tiết phải hiện 'chưa đủ dữ kiện'.",
+  "tcm_note": "Không kết luận tính vị: bia chưa có hồ sơ nguyên liệu trong hệ thống."
 }
