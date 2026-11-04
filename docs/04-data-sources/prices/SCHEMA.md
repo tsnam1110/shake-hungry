@@ -40,7 +40,11 @@ Các trường trong mỗi dòng của `entries`, theo thứ tự ghi:
 - `product_name_as_listed`: tên sản phẩm đúng như trang bán ghi, kể cả thương
   hiệu và biến thể, ví dụ `Gạo thơm đặc sản Neptune ST25 túi 5kg`.
 - `channel`: kênh đọc giá, ví dụ `bhx-online`, `winmart-online`,
-  `cho-binh-dien`. Không gộp kênh.
+  `coop-online`, `aeon-eshop-online`, `lotte-online`, `go-bigc-online`,
+  `meatdeli-online`, `cho-binh-dien`. Không gộp kênh. Mỗi kênh chỉ được
+  ghi khi giá đọc trực tiếp từ trang bán hoặc khảo sát trực tiếp của
+  kênh đó trong đúng ngày thu thập; giá từ bài báo trích lại không được
+  ghi dưới tên kênh đó.
 - `region`: `bac`, `trung`, `nam` chỉ khi vị trí giao hàng hoặc địa điểm chợ
   đã được chọn và ghi rõ. Khi đọc online mà chưa chọn vị trí giao, ghi
   `online-chua-chon-vi-tri`. Không suy đoán miền từ tên miền của website.

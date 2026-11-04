@@ -23,12 +23,46 @@ push lên git.
 - Sản phẩm: 489 khóa nguyên liệu, trong đó rau mùa và hoa quả đã được khử
   trùng lặp qua `ingredient_slug` (xem `README.md`). Món ăn và đồ uống
   không thuộc phạm vi.
-- Kênh mặc định: đọc trực tiếp từ trang online của Bách Hóa Xanh và
-  WinMart, chỉ đọc, không đăng nhập, không mua hàng, giỏ hàng giữ bằng 0.
+- Kênh mặc định, mở rộng ngày 2026-11-04 theo yêu cầu của chủ dự án (lần
+  chạy W45 chỉ có 2 kênh nên chỉ thu được 76/489 khóa): đọc trực tiếp từ
+  trang online của các siêu thị sau, theo thứ tự này, chỉ đọc, không đăng
+  nhập, không mua hàng, giỏ hàng giữ bằng 0:
+  1. Bách Hóa Xanh online (`bhx-online`).
+  2. WinMart online (`winmart-online`).
+  3. Co.op Online (`coop-online`, trang cooponline.vn) — kênh bổ sung mạnh
+     nhất cho thịt, cá, rau, quả, gạo, trứng vì có danh mục giá trực tiếp.
+  4. AEON ESHOP (`aeon-eshop-online`, trang aeoneshop.com).
+  5. Lotte Mart online (`lotte-online`, trang lotte.vn hoặc ứng dụng
+     Lotte ON).
+  6. GO! / Big C online (`go-bigc-online`, chủ yếu qua ứng dụng).
+  Kênh nào yêu cầu đăng nhập mới xem được giá, bắt chọn vị trí giao mà
+  không cho xem giá chung, hoặc chỉ có trên ứng dụng mà trình duyệt không
+  đọc được, thì dừng kênh đó, ghi vào `missing` và ghi rõ trong `notes`
+  là kênh đó chưa đọc được trong tuần này, không dùng giá từ bài báo
+  trích lại để thay.
+- Kênh chuyên biệt, mỗi kênh là một dòng riêng, không bao giờ tính trung
+  bình với giá siêu thị: MEATDeli online (`meatdeli-online`) cho thịt heo
+  mát và các gian hàng chính hãng khác chỉ khi đó là trang bán chính thức
+  của thương hiệu, có ghi cỡ gói. Giá thương hiệu không thay cho giá
+  siêu thị và ngược lại.
 - Kênh chợ: chỉ ghi khi có khảo sát trực tiếp tại chợ trong đúng ngày thu
   thập của tuần đó. Khi không đi chợ được thì ghi kênh chợ vào `missing`
   với lý do `can-khao-sat-truc-tiep`, không lấy giá siêu thị thay cho
-  giá chợ.
+  giá chợ. Bảng giá chợ đầu mối chỉ được dùng khi mở trực tiếp trang
+  chính thức của chợ đó trong đúng ngày thu thập và trang đó ghi rõ ngày;
+  bài báo, blog hay trang tổng hợp đăng lại giá chợ không phải là nguồn,
+  dù số đó trông hợp lý.
+- Nguồn KHÔNG được dùng làm giá: bài báo trích lại giá siêu thị hoặc giá
+  chợ, bài tổng hợp giá trên trang tin, trang so sánh giá, gian hàng bên
+  thứ ba trên sàn thương mại điện tử không phải gian hàng chính hãng.
+  Những nguồn này chỉ được dùng làm manh mối để tìm ra trang bán chính
+  thức, sau đó vẫn phải đọc trực tiếp trang bán chính thức mới được ghi
+  giá. Khi trang bán chính thức không đọc được thì ghi `missing`, không
+  copy số từ bài báo.
+- `channels_attempted` trong `meta` phải ghi đúng các kênh đã thử đọc
+  trong tuần đó. Kênh chưa thử thì ghi vào `notes` là chưa thử, không ghi
+  vào `missing` như thể đã tìm mà không thấy. Lý do `khong-tim-thay-trang`
+  chỉ dùng khi đã tìm thật trên kênh đó mà không thấy mặt hàng.
 - Miền: chỉ ghi `bac`, `trung`, `nam` khi vị trí giao hàng hoặc địa điểm
   chợ đã được chọn. Khi đọc online mà chưa chọn vị trí giao thì ghi
   `online-chua-chon-vi-tri`.
@@ -71,9 +105,21 @@ một ngày khác vào file tuần đã có.
 
 ### Bước 2: thu thập theo kênh, ghi sự thật trước, tính sau
 
-Thu thập theo thứ tự kênh: Bách Hóa Xanh online trước, WinMart online sau,
-chợ trực tiếp cuối cùng nếu có. Với mỗi sản phẩm, ghi đúng bốn nhóm thông
-tin theo thứ tự sau, không đảo ngược:
+Thu thập theo thứ tự kênh trong mục 2, và theo nhóm mặt hàng, không chỉ
+chuyển đổi nhóm đã có từ snapshot tuần trước. Bài học từ tuần 2026-W45:
+file W45 chỉ thu được 76/489 khóa, trong đó 0 khóa trái cây và 0 khóa
+thủy sản, vì snapshot 2026-11-04 gốc vốn không có nhóm trái cây và thủy
+sản — thiếu không phải vì siêu thị không bán mà vì lần thu đó không tìm
+nhóm đó. Vì vậy mỗi lần chạy phải tìm đủ các nhóm sau trên từng kênh đã
+thử, dùng tên nguyên liệu và tên gọi khác của nó (ví dụ tìm cả tên rau,
+tên quả và tên nguyên liệu): thịt, thủy sản, rau củ, trái cây, rau gia
+vị và lá đặc sản, gia vị khô, tinh bột và bánh, sữa và trứng, dầu mỡ và
+nước chấm, nhóm khác. Nhóm nào tìm rồi mà không thấy thì ghi `missing`
+kèm kênh đã tìm; nhóm nào chưa tìm thì ghi vào `notes` là chưa tìm, không
+được để `missing` ghi chung chung như thể đã tìm hết.
+
+Với mỗi sản phẩm, ghi đúng bốn nhóm thông tin theo thứ tự sau, không đảo
+ngược:
 
 1. Sự thật từ trang bán: tên đúng như trang ghi, giá niêm yết, giá gốc
    nếu có, khuyến mãi đúng như trang ghi, cỡ gói đúng như trang ghi.
@@ -130,8 +176,9 @@ chung, không bỏ mục nào:
 - Tuần ISO, ngày thu thập và đường dẫn file tuần.
 - Mẫu số: tổng số khóa trong phạm vi, số dòng đã thu được, số khóa còn
   thiếu, số dòng có cờ lệch giá in sẵn.
-- Phân tầng theo kênh: mỗi kênh thu được bao nhiêu dòng, kênh nào không
-  đọc được và vì sao.
+- Phân tầng theo kênh: mỗi kênh trong mục 2 thu được bao nhiêu dòng,
+  kênh nào không đọc được và vì sao, kênh nào chưa thử đọc trong tuần
+  này. Không báo một kênh là không có hàng khi thực ra chưa thử kênh đó.
 - Danh sách các nhóm còn thiếu nhiều nhất, ví dụ sữa, gạo Japonica ở
   Bách Hóa Xanh, kênh chợ, mớ rau thơm, kèm lý do thiếu.
 - Commit của lần chạy, hoặc lý do chưa commit khi script chưa chạy qua

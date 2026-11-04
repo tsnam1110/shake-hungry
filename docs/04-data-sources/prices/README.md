@@ -1,10 +1,13 @@
 # Kho giá theo tuần — Lắc Đói
 
 > Trạng thái: kho và quy trình đã lập ngày 2026-11-04, đổi từ chu kỳ ngày sang
-> chu kỳ tuần ngày 2026-11-04 theo yêu cầu của chủ dự án. Chưa có dữ liệu giá
-> tuần nào được thu thập trong kho này. Mọi file tuần trong kho này đều là tài
-> liệu nghiên cứu, CHƯA được seed vào app, CHƯA hiển thị cho người dùng, cho tới
-> khi có quyết định riêng về việc seed và hiển thị.
+> chu kỳ tuần ngày 2026-11-04 theo yêu cầu của chủ dự án. Đính chính ngày
+> 2026-11-04: file tuần đầu tiên 2026-W45 đã có, thu thập 2026-11-04, chỉ
+> 76/489 khóa, chưa hoàn chỉnh; cùng ngày chủ dự án yêu cầu mở rộng kênh
+> khảo sát vì chỉ có 2 kênh nên thiếu quá nhiều (xem mục Kênh và miền).
+> Mọi file tuần trong kho này đều là tài liệu nghiên cứu, CHƯA được seed
+> vào app, CHƯA hiển thị cho người dùng, cho tới khi có quyết định riêng
+> về việc seed và hiển thị.
 
 ## Kho này để làm gì
 
@@ -79,10 +82,15 @@ docs/04-data-sources/prices/
 
 ## Kênh và miền: ghi đúng cái đã thấy, không suy đoán
 
-- Kênh là nơi giá được đọc trực tiếp, ví dụ `bhx-online`, `winmart-online`,
-  hoặc `cho-<tên chợ>` khi khảo sát trực tiếp tại chợ. Mỗi kênh là một dòng
-  riêng, không bao giờ gộp giá chợ và giá siêu thị thành một dòng, không bao
-  giờ tính trung bình hai kênh.
+- Kênh là nơi giá được đọc trực tiếp. Từ ngày 2026-11-04, theo yêu cầu của
+  chủ dự án vì tuần W45 chỉ có 2 kênh nên thiếu quá nhiều, các kênh mặc
+  định là: `bhx-online`, `winmart-online`, `coop-online`,
+  `aeon-eshop-online`, `lotte-online`, `go-bigc-online`, cộng kênh chuyên
+  biệt `meatdeli-online` và `cho-<tên chợ>` khi khảo sát trực tiếp tại
+  chợ. Bài báo trích lại giá, trang tổng hợp và gian hàng bên thứ ba
+  không phải là kênh giá. Mỗi kênh là một dòng riêng, không bao giờ gộp
+  giá chợ và giá siêu thị thành một dòng, không bao giờ tính trung bình
+  hai kênh.
 - Miền chỉ ghi `bac`, `trung` hoặc `nam` khi vị trí giao hàng hoặc địa điểm
   chợ đã được chọn và ghi rõ. Khi đọc online mà chưa chọn vị trí giao, miền
   phải ghi `online-chua-chon-vi-tri`, không được gán miền theo suy đoán.
@@ -112,7 +120,7 @@ thập. Tóm tắt ba điểm dễ sai nhất:
 | Phần | Trạng thái |
 | ---- | ---------- |
 | Kho, schema, task tuần, script kiểm tra | Đã lập, xem commit lập kho. |
-| File giá tuần đầu tiên | Chưa có. Task hàng tuần sẽ tạo file đầu tiên vào lần chạy tới. |
+| File giá tuần đầu tiên | Đã có 2026-W45, thu thập 2026-11-04, 76/489 khóa, chưa hoàn chỉnh (commit `624b950`). |
 | Seed giá tuần vào database hoặc `data/` | Chưa làm, cần quyết định riêng. |
 | Hiển thị giá tuần trên trang web | Chưa làm, cần quyết định riêng. |
 | Tổng tiền tuần ăn và quy đổi gói từ kho này | Chưa code, chỉ code sau khi kho có đủ tuần và đã được duyệt. |
