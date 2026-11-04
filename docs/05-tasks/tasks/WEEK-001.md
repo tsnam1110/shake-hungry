@@ -37,7 +37,7 @@ riêng, báo cáo sau mỗi task và chờ duyệt rồi mới sang task tiếp 
 
 ## Phần 2.1 — Mục tiêu tuần
 
-### Task 1 — ĐÃ XONG (2026-11-04, chờ duyệt)
+### Task 1 — ĐÃ XONG (2026-11-04, đã duyệt 09:02)
 - Migration `2026_11_04_100001_add_week_targets_to_user_profiles.php`:
   `goal` (varchar 16, null), `target_protein_g_per_day` và
   `target_kcal_per_day` (unsigned smallint, null).
@@ -58,7 +58,7 @@ chưa nằm trong 5 quyết định. Task 1 không tự áp -20% hay bất kỳ 
 `goal` chỉ được lưu, chưa dùng để suy `target_kcal_per_day`. Cần chốt tỉ lệ
 này trước Task suy kcal từ TDEE + mục tiêu (thuộc Phần 2.1, sau form Hồ sơ).
 
-### Task 2 — ĐÃ XONG (2026-11-04, chờ duyệt)
+### Task 2 — ĐÃ XONG (2026-11-04, đã duyệt 2026-11-04 20:57 khi chủ dự án lệnh làm Task 3)
 - `ProfileController::show` và `update` (API `/api/profile`): validate
   `goal` (giam/duy-tri/tang), `target_protein_g_per_day` (20–500),
   `target_kcal_per_day` (800–6.000); cả hai đều trả thêm
@@ -80,9 +80,33 @@ này trước Task suy kcal từ TDEE + mục tiêu (thuộc Phần 2.1, sau for
   chủ dự án. Vì vậy tổng tiền/gói thật chỉ code được sau task nghiên cứu
   giá/gói có nguồn — không code tổng tiền trước khi có bảng giá/gói.
 
+### Task 3 — ĐÃ XONG (2026-11-04, chờ duyệt)
+- Chỉ sửa `resources/views/profile.blade.php` (không đổi schema, không
+  đổi API Task 2, không thêm trang tuần ăn): trong form "Thể trạng và
+  ăn uống" thêm mục "Mục tiêu tuần ăn" với `goal` (giam/duy-tri/tang),
+  `target_protein_g_per_day` (20–500) và `target_kcal_per_day`
+  (800–6.000), dùng đúng giới hạn validate của API Task 2.
+- Hiển thị gợi ý protein từ `week_target_suggestion` của API: gợi ý
+  null thì giữ câu hướng dẫn (nhập chiều cao + kcal mỗi ngày rồi lưu),
+  không tự suy từ TDEE hay cân nặng thật. Nút "Dùng gợi ý này" chỉ
+  điền vào ô protein, không tự lưu; chỉ khi người dùng bấm "Lưu hồ
+  sơ" số đó mới được lưu — gợi ý không bao giờ ghi đè số đã lưu.
+- Ghi rõ trong form: `goal` hiện chỉ được lưu, chưa dùng để tự tính
+  kcal (tỉ lệ điều chỉnh theo mục tiêu chưa chốt), và mục tiêu chỉ là
+  ước tính chung, không phải lời khuyên y tế (link `/mien-tru-y-te`).
+  Form chỉ hiện cho người dùng đã đăng nhập; khách không thấy form.
+- Test mới `tests/Feature/WeekTargetFormTest.php` (2 test): đã đăng
+  nhập thấy 3 trường + khối gợi ý; khách không thấy 3 trường.
+- Kiểm chứng chạy thật: `WeekTargetFormTest` + `WeekTargetApiTest`
+  5 test pass (24 assertions); Chromium headless local với tài khoản
+  tạm đăng ký qua giao diện: nhập cao 180 cm, goal giam, kcal 2.000,
+  protein 150 → lưu → gợi ý 175 g kèm từng bước, bấm "Dùng gợi ý
+  này" → ô protein thành 175 → lưu lại → API trả goal giam,
+  protein 175, kcal 2.000, gợi ý 175. Tài khoản tạm đã xoá sau kiểm
+  chứng, không còn profile mồ côi. Chưa làm trong Task 3 (cố ý):
+  trang `/tuan-an`, mô hình tuần, builder/validator.
+
 ## Các phần tiếp theo (chưa bắt đầu, mỗi task chờ duyệt riêng)
-- Phần 2.1, Task 2: API Hồ sơ cho mục tiêu tuần.
-- Phần 2.1, Task 3: form Hồ sơ cho mục tiêu tuần.
 - Phần 2.2: mô hình tuần (`week_plans` / `week_plan_days` / `week_plan_meals`,
   snapshot mục tiêu).
 - Phần 2.3: week builder + validator (chỉ món đủ protein + kcal).

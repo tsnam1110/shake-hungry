@@ -143,6 +143,18 @@
                     </select></div>
                 <div><label class="ld-field-label" for="f-target">Kcal mục tiêu mỗi bữa (điền sẵn khi lắc)</label>
                     <input id="f-target" name="target_kcal_per_meal" type="number" min="100" max="2000" placeholder="Ví dụ: 600" class="ld-input"></div>
+                {{-- WEEK-001, Phần 2.1, Task 3: mục tiêu tuần ăn. Chỉ là form
+                     nhập + hiển thị gợi ý từ API Task 2; chưa có trang tuần ăn. --}}
+                <div class="sm:col-span-2"><p class="ld-group-label" style="margin-top:0">Mục tiêu tuần ăn</p></div>
+                <div><label class="ld-field-label" for="f-goal">Mục tiêu</label>
+                    <select id="f-goal" name="goal" class="ld-select">
+                        <option value="">Chưa chọn</option><option value="giam">Giảm mỡ</option>
+                        <option value="duy-tri">Duy trì</option><option value="tang">Tăng cơ</option>
+                    </select></div>
+                <div><label class="ld-field-label" for="f-target-protein">Protein mục tiêu mỗi ngày (g)</label>
+                    <input id="f-target-protein" name="target_protein_g_per_day" type="number" min="20" max="500" placeholder="Ví dụ: 175" class="ld-input"></div>
+                <div><label class="ld-field-label" for="f-target-kcal-day">Kcal mục tiêu mỗi ngày</label>
+                    <input id="f-target-kcal-day" name="target_kcal_per_day" type="number" min="800" max="6000" placeholder="Ví dụ: 2000" class="ld-input"></div>
                 <div><label class="ld-field-label" for="f-shake-mode">Chế độ lắc mặc định</label>
                     <select id="f-shake-mode" name="shake_mode" class="ld-select">
                         <option value="">Ăn ngoài · 1 món</option>
@@ -173,6 +185,14 @@
                 <div class="sm:col-span-2"><span class="ld-field-label">Không ăn được / dị ứng — lọc cứng khi lắc</span>
                     <div class="ld-chips" id="excluded-chips"></div>
                     <p class="ld-note" style="margin-top:8px">Chạm để bật hoặc tắt từng mục. Cấu hình này dùng chung cho khối Lắc ở trang chủ và không bao giờ bị hệ thống tự nới lỏng.</p></div>
+                {{-- WEEK-001, Task 3: gợi ý protein do API trả về; nút "Dùng gợi
+                     ý này" chỉ điền vào ô protein, không tự lưu, không ghi đè
+                     số đã lưu cho tới khi người dùng bấm "Lưu hồ sơ". --}}
+                <div class="sm:col-span-2">
+                    <span class="ld-field-label">Gợi ý protein cho tuần ăn</span>
+                    <div id="week-target-suggestion" class="ld-note" style="margin-top:2px">Nhập chiều cao và kcal mục tiêu mỗi ngày rồi lưu hồ sơ để xem gợi ý protein.</div>
+                    <p class="ld-note" style="margin-top:8px">Mục tiêu giảm / duy trì / tăng hiện chỉ được lưu, chưa dùng để tự tính kcal mục tiêu — tỉ lệ điều chỉnh kcal theo mục tiêu chưa được chốt. Gợi ý protein không tự ghi đè số bạn đã nhập. Mục tiêu chỉ là ước tính chung, không phải lời khuyên y tế — xem <a href="/mien-tru-y-te" style="color:var(--color-link)">Miễn trừ y tế</a>.</p>
+                </div>
             </div>
             <button class="ld-btn ld-btn-primary" style="width:100%;margin-top:18px">Lưu hồ sơ</button>
         </form>
@@ -233,10 +253,10 @@ async function init() {
     const f0 = document.getElementById('profile-form');
     f0.elements['preferred_region_id'].innerHTML = '<option value="">Mọi vùng miền</option>' +
         regions.map(r => `<option value="${r.id}">${esc(r.name)}</option>`).join('');
-    const { profile, tdee } = await (await fetch('/api/profile')).json();
+    const { profile, tdee, week_target_suggestion } = await (await fetch('/api/profile')).json();
     if (profile) {
         const f = document.getElementById('profile-form');
-        ['height_cm','weight_kg','birth_year','sex','activity_level','diet_type','preferred_region_id','target_kcal_per_meal','shake_mode','tray_dish_count'].forEach(k => { if (profile[k] != null && f.elements[k]) f.elements[k].value = profile[k]; });
+        ['height_cm','weight_kg','birth_year','sex','activity_level','diet_type','preferred_region_id','target_kcal_per_meal','shake_mode','tray_dish_count','goal','target_protein_g_per_day','target_kcal_per_day'].forEach(k => { if (profile[k] != null && f.elements[k]) f.elements[k].value = profile[k]; });
         if (f.elements['tray_binh_dan']) f.elements['tray_binh_dan'].checked = !!profile.tray_binh_dan;
         if (f.elements['show_tcm']) f.elements['show_tcm'].checked = profile.show_tcm !== false && profile.show_tcm !== 0;
         const ex = new Set(profile.excluded_ingredients || []);
@@ -246,6 +266,7 @@ async function init() {
         });
     }
     renderTdee(tdee);
+    renderWeekSuggestion(week_target_suggestion);
     document.getElementById('log-date').value = new Date().toISOString().slice(0, 10);
     loadLogs();
 }
@@ -260,18 +281,37 @@ function renderTdee(tdee) {
            </div>`
         : '<div class="ld-card" style="padding:18px 20px"><p style="color:var(--color-faint);margin:0">Điền cân nặng và năm sinh ở mục Thể trạng để xem nhu cầu năng lượng.</p></div>';
 }
+/* WEEK-001, Task 3: hiển thị gợi ý protein từ API Task 2. Gợi ý là null
+   khi thiếu chiều cao hoặc thiếu kcal mục tiêu mỗi ngày — khi đó giữ
+   nguyên câu hướng dẫn, không tự suy số từ TDEE hay cân nặng thật. */
+function renderWeekSuggestion(s) {
+    const el = document.getElementById('week-target-suggestion');
+    if (!el) return;
+    if (!s) {
+        el.textContent = 'Nhập chiều cao và kcal mục tiêu mỗi ngày rồi lưu hồ sơ để xem gợi ý protein. Gợi ý chỉ tính khi đã có cả hai số này.';
+        return;
+    }
+    el.innerHTML = `Gợi ý: <b>${s.suggested_g} g protein/ngày</b> — ${esc(s.steps)} ` +
+        `<button type="button" id="week-use-suggestion" class="ld-btn ld-btn-gray" style="padding:7px 14px;font-size:14px;margin-top:8px">Dùng gợi ý này</button>`;
+    const btn = document.getElementById('week-use-suggestion');
+    if (btn) btn.onclick = () => {
+        const f = document.getElementById('f-target-protein');
+        if (f) f.value = s.suggested_g;
+        if (window.ldToast) ldToast('Đã điền gợi ý vào ô protein — bấm Lưu hồ sơ để áp dụng');
+    };
+}
 document.getElementById('profile-form').onsubmit = async (e) => {
     e.preventDefault();
     const raw = Object.fromEntries(new FormData(e.target).entries());
     const body = {};
-    ['height_cm','weight_kg','birth_year','preferred_region_id','target_kcal_per_meal','tray_dish_count'].forEach(k => body[k] = raw[k] === '' || raw[k] == null ? null : +raw[k]);
-    ['sex','activity_level','diet_type','shake_mode'].forEach(k => body[k] = raw[k] === '' ? null : raw[k]);
+    ['height_cm','weight_kg','birth_year','preferred_region_id','target_kcal_per_meal','tray_dish_count','target_protein_g_per_day','target_kcal_per_day'].forEach(k => body[k] = raw[k] === '' || raw[k] == null ? null : +raw[k]);
+    ['sex','activity_level','diet_type','shake_mode','goal'].forEach(k => body[k] = raw[k] === '' ? null : raw[k]);
     body.tray_binh_dan = raw.tray_binh_dan === 'on';
     body.show_tcm = raw.show_tcm === 'on';
     body.excluded_ingredients = [...selectedPresets].flatMap(i => ALLERGEN_PRESETS[i][1]);
     const resp = await fetch('/api/profile', { method: 'PUT', headers, body: JSON.stringify(body) });
     const data = await resp.json();
-    if (resp.ok) { renderTdee(data.tdee); ldToast('Đã lưu hồ sơ'); } else alert(data.message || 'Lưu thất bại');
+    if (resp.ok) { renderTdee(data.tdee); renderWeekSuggestion(data.week_target_suggestion); ldToast('Đã lưu hồ sơ'); } else alert(data.message || 'Lưu thất bại');
 };
 const slotName = { sang: 'Sáng', trua: 'Trưa', chieu: 'Chiều', toi: 'Tối', 'an-vat': 'Ăn vặt' };
 async function loadLogs() {
