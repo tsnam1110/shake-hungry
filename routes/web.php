@@ -93,6 +93,10 @@ Route::prefix('api')->group(function () {
         Route::post('/meal-logs', [\App\Http\Controllers\PublicWeb\ProfileController::class, 'storeMealLog']);
         Route::put('/meal-logs/{mealLog}', [\App\Http\Controllers\PublicWeb\ProfileController::class, 'updateMealLog']);
         Route::delete('/meal-logs/{mealLog}', [\App\Http\Controllers\PublicWeb\ProfileController::class, 'destroyMealLog']);
+        // WEEK-001, Phần 2.3: tuần ăn của chính người dùng.
+        Route::get('/week-plans', [\App\Http\Controllers\PublicWeb\WeekPlanController::class, 'index']);
+        Route::post('/week-plans', [\App\Http\Controllers\PublicWeb\WeekPlanController::class, 'store']);
+        Route::get('/week-plans/{weekPlan}', [\App\Http\Controllers\PublicWeb\WeekPlanController::class, 'show']);
         Route::post('/contributions', [\App\Http\Controllers\PublicWeb\ContributionController::class, 'store']);
         Route::get('/contributions', [\App\Http\Controllers\PublicWeb\ContributionController::class, 'mine']);
         Route::get('/favorites', [\App\Http\Controllers\PublicWeb\EngagementController::class, 'index']);

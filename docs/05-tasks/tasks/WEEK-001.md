@@ -120,8 +120,31 @@ này trước Task suy kcal từ TDEE + mục tiêu (thuộc Phần 2.1, sau for
   sau đó sửa ngược, quan hệ ngày/bữa đúng.
 - Chưa làm trong Phần 2.2 (cố ý): builder, validator, API, trang tuần ăn.
 
+## Phần 2.3 — Builder + validator + API tuần ăn
+
+### Task 1 — ĐÃ XONG (2026-11-04, theo lệnh duyệt toàn bộ lộ trình)
+- `App\Week\WeekValidator`: tính lại từ món, trạng thái dat/thieu/
+  chua-du-du-lieu; dat khi protein >= sàn và kcal mục tiêu nằm trong
+  khoảng [kcal_min, kcal_max] của ngày (không tự đặt dải ±%); ăn ngoài,
+  món thiếu/missing/unverified/unknown, thiếu bữa, hoặc chưa có mục tiêu
+  đều thành chưa đủ dữ kiện, không thành đạt hay thiếu giả.
+- `App\Week\WeekBuilder`: chỉ món sạch (protein + khoảng kcal, không
+  missing/unverified, confidence khác unknown); xếp ứng viên theo protein
+  giảm dần rồi kcal_min tăng dần rồi id (tất định); mỗi món tối đa 2 lần/
+  tuần, hết mới lặp thêm; lọc cứng excluded_ingredients và chay/chay-truong
+  (nhãn diet:man + nhóm thịt/thủy sản, như Recommender); low-carb không
+  lọc cứng vì chưa có ngưỡng chốt; vùng yêu thích chỉ ưu tiên khi >= 5
+  món/bữa; mục tiêu lấy từ hồ sơ đã nhập, không suy từ goal; tuần mới
+  archive các tuần active cũ.
+- API `WeekPlanController` (auth): GET /api/week-plans, POST /api/week-plans
+  (start_date, tạo 7 ngày × 4 bữa sáng/trưa/tối/ăn vặt), GET
+  /api/week-plans/{id} (chỉ của chính người dùng, validator tính live).
+- Test `tests/Feature/WeekBuilderTest.php` 5 test pass: builder 7×4,
+  snapshot, đạt; thiếu kèm số thiếu 20 g; missing thành chưa đủ dữ kiện;
+  loại trừ nguyên liệu; API chỉ trả tuần của chính mình.
+- Chưa làm trong Phần 2.3 (cố ý): trang /tuan-an, thao tác tuần, đi chợ.
+
 ## Các phần tiếp theo (theo lệnh duyệt toàn bộ lộ trình 2026-11-04, làm tiếp không hỏi duyệt giữa chừng)
-- Phần 2.3: week builder + validator (chỉ món đủ protein + kcal).
 - Phần 2.4: trang `/tuan-an`.
 - Phần 2.5: thao tác tuần (mỗi thao tác một task).
 - Phần 2.6: danh sách đi chợ theo gram, không gói, không giá.
