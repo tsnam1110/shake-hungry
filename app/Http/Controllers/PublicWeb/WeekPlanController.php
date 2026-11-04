@@ -183,6 +183,18 @@ class WeekPlanController extends Controller
         ]);
     }
 
+    /** Phần 2.5, Task 4 — đánh dấu ăn ngoài: bữa đó không tính vào tổng ngày, ngày thành chưa đủ dữ kiện (không biết đã ăn gì). */
+    public function eatOut(Request $request, WeekPlan $weekPlan, $mealId, WeekValidator $validator): JsonResponse
+    {
+        $this->authorizePlan($request, $weekPlan);
+        $data = $request->validate(['is_eat_out' => ['required', 'boolean']]);
+        $meal = $this->findMeal($weekPlan, $mealId);
+        $meal->update(['is_eat_out' => $data['is_eat_out']]);
+        $validation = $validator->refreshDay($meal->day, $weekPlan);
+
+        return response()->json(['meal' => $this->presentMeal($meal->fresh()), 'validation' => $validation]);
+    }
+
     private function findMeal(WeekPlan $weekPlan, $mealId)
     {
         $meal = \App\Models\WeekPlanMeal::with('day')->find($mealId);

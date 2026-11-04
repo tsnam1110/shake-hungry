@@ -191,6 +191,14 @@ này trước Task suy kcal từ TDEE + mục tiêu (thuộc Phần 2.1, sau for
 - Test thêm: ngày trước giữ nguyên món, 5 ngày từ mốc xây lại đủ 4 bữa,
   mốc ngoài tuần bị 422.
 
+### Task 4 — Đánh dấu ăn ngoài — ĐÃ XONG (2026-11-04)
+- API POST /api/week-plans/{plan}/meals/{meal}/eat-out (is_eat_out):
+  bữa ăn ngoài không tính vào tổng ngày, validator chuyển ngày thành
+  chưa đủ dữ kiện (không biết đã ăn gì ngoài); bỏ dấu thì tính lại và
+  có thể trở lại đạt.
+- Trang /tuan-an: nút Ăn ngoài / Bỏ ăn ngoài ở mỗi bữa.
+- Test thêm: đánh dấu → chưa đủ dữ kiện với 1 bữa chưa biết, bỏ dấu → đạt.
+
 ## Các phần tiếp theo (theo lệnh duyệt toàn bộ lộ trình 2026-11-04, làm tiếp không hỏi duyệt giữa chừng)
 - Phần 2.5, Task 2–5: đổi ngày bắt đầu, bắt đầu lại phần còn lại, ăn ngoài, loại thực phẩm.
 - Phần 2.6: danh sách đi chợ theo gram, không gói, không giá.

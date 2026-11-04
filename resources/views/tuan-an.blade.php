@@ -117,11 +117,19 @@ async function showPlan(id) {
                     <span class="sub">${m.dish ? `<a href="/mon/${esc(m.dish.slug)}">${esc(m.dish.name ?? m.dish.slug)}</a>` : 'Chưa có món'}${m.is_eat_out ? ' · Ăn ngoài' : ''}</span></span>
                     ${m.dish?.nutrition ? `<span class="ld-price"><span class="so ld-tnum">${Math.round(m.dish.nutrition.kcal_min)}–${Math.round(m.dish.nutrition.kcal_max)}</span><small>kcal · ${Math.round(m.dish.nutrition.protein_g)} g protein</small></span>` : ''}
                     <button data-swap="${m.id}" style="border:0;background:none;color:var(--color-link);font-size:14px;font-weight:600;cursor:pointer;font-family:inherit">Đổi</button>
+                    <button data-eatout="${m.id}" data-eatout-state="${m.is_eat_out ? '1' : '0'}" style="border:0;background:none;color:var(--color-link);font-size:14px;font-weight:600;cursor:pointer;font-family:inherit">${m.is_eat_out ? 'Bỏ ăn ngoài' : 'Ăn ngoài'}</button>
                 </div>
                 <div id="swap-${m.id}"></div>`).join('')}</div>
         </div>`;
     }).join('');
     document.querySelectorAll('[data-swap]').forEach(b => b.onclick = () => showSwapCandidates(+b.dataset.swap));
+    document.querySelectorAll('[data-eatout]').forEach(b => b.onclick = async () => {
+        const next = b.dataset.eatoutState !== '1';
+        const resp = await fetch(`/api/week-plans/${currentPlanId}/meals/${b.dataset.eatout}/eat-out`, { method: 'POST', headers, body: JSON.stringify({ is_eat_out: next }) });
+        if (!resp.ok) { alert('Đánh dấu ăn ngoài thất bại'); return; }
+        if (window.ldToast) ldToast(next ? 'Đã đánh dấu ăn ngoài — bữa này không tính vào tổng ngày' : 'Đã bỏ đánh dấu ăn ngoài');
+        showPlan(currentPlanId);
+    });
     document.getElementById('week-detail').scrollIntoView({ behavior: 'smooth' });
 }
 async function showSwapCandidates(mealId) {

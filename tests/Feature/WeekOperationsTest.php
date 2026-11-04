@@ -100,6 +100,21 @@ it('bắt đầu lại phần còn lại: ngày trước giữ nguyên, ngày t�
     $this->postJson("/api/week-plans/{$plan->id}/restart-remaining", ['from_date' => '2026-11-20'])->assertUnprocessable();
 });
 
+it('đánh dấu ăn ngoài: bữa không tính vào tổng, ngày thành chưa đủ dữ kiện; bỏ dấu thì trở lại đạt', function () {
+    [$user, $plan] = week25Plan();
+    $this->actingAs($user);
+    $meal = $plan->days->first()->meals->firstWhere('slot', 'trua');
+    expect($plan->days->first()->status)->toBe('dat');
+
+    $resp = $this->postJson("/api/week-plans/{$plan->id}/meals/{$meal->id}/eat-out", ['is_eat_out' => true])->assertOk();
+    expect($resp->json('meal.is_eat_out'))->toBeTrue()
+        ->and($resp->json('validation.status'))->toBe('chua-du-du-lieu')
+        ->and($resp->json('validation.unknown_meals'))->toBe(1);
+
+    $resp = $this->postJson("/api/week-plans/{$plan->id}/meals/{$meal->id}/eat-out", ['is_eat_out' => false])->assertOk();
+    expect($resp->json('validation.status'))->toBe('dat');
+});
+
 it('đổi bữa sang món thiếu dữ kiện bị từ chối 422', function () {
     [$user, $plan] = week25Plan();
     $bad = week25Dish('op-trua-thieu', 'trua', 50, 450, 500, ['missing' => ['nghe-tuoi']]);
