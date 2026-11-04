@@ -140,10 +140,10 @@
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
-  "needs_review": false,
+  "needs_review": true,
   "reviewed_by": "tsnam1110@gmail.com",
   "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau). [Soát lại E-batch lô 9, 2026-11-05: thành phần của file (gạo + hạt sen + nấm rơm + cà rốt, bản chay) nay đã được xác nhận — memart/Cookpad Apple’s Kitchen: 70 g gạo tẻ + 30 g nếp + 50 g nấm + 100 g hạt sen + 50 g cà rốt; amthucdochay: 200 g gạo tẻ + 50 g nếp + 100 g hạt sen + 50 g nấm rơm + 1 củ cà rốt; elmich: 100 g hạt sen + 100 g nấm rơm + 1 cà rốt — nhưng KHÔNG họ nào ghi số khẩu phần nên không quy đổi được ra 70 g gạo + 60 g sen + 40 g nấm + 25 g cà rốt/tô của file, và nấm chính vẫn thay nhau (hương/bào ngư/rơm) — giữ cờ chưa duyệt, cần họ có định lượng theo tô cho đúng nấm rơm.]",
   "tags": [
     "dac-san:hue",
     "loai:chao-sup"
