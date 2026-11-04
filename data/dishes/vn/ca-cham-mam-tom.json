@@ -107,10 +107,10 @@
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",
-  "needs_review": false,
+  "needs_review": true,
   "reviewed_by": "tsnam1110@gmail.com",
   "reviewed_at": "2026-10-31",
-  "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này).",
+  "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này). [Soát lại E-batch lô 8, 2026-11-05: mọi nguồn đều dùng CÀ PHÁO, không nguồn nào dùng cà tím — memart 300 g cà pháo tươi, cookbeo 200 g cà pháo cho 4 khẩu phần (tức 50 g/khẩu phần, thấp hơn 80 g cà tím của file), pasgo 10 quả cà pháo; file vẫn dùng tạm cà tím vì kho chưa có hồ sơ cà pháo; phương pháp 'song' cũng lệch vì món là cà pháo MUỐI (muối chua/muối xổi), không phải cà sống — giữ cờ chưa duyệt, chờ tạo hồ sơ cà pháo (và dạng muối) rồi rà lại lượng cà/tô.]",
   "tags": [
     "loai:goi-nom"
   ]
