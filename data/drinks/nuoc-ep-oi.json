@@ -13,7 +13,8 @@
     {
       "name": "ổi chín",
       "quantity": 300,
-      "unit": "g"
+      "unit": "g",
+      "ingredient_slug": "oi"
     }
   ],
   "recipe_steps": [
@@ -40,10 +41,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn ổi, nước ép ~250 ml, khoảng rộng do độ lọc — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -52,5 +53,32 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 250,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml nước ép",
+      "value_min": 50,
+      "value_max": 82,
+      "value": null,
+      "per_serving": "≈125–204 kcal/ly (khoảng 250 ml nước ép, chưa tính đá)",
+      "basis": "Cộng tay: ổi chín 300 g × 68 / 100 = 204,0 kcal là ĐẦU TRÊN nếu ăn cả quả; nước ép ổi khoảng 250 ml (ổi nhiều thịt, ép có cả thịt quả, hiệu suất khoảng 80%), nước ép ổi khoảng 50 kcal/100 ml, 250 ml × 50 / 100 = 125 kcal là ĐẦU DƯỚI theo nước ép đã lọc hạt/xơ. Khoảng 125–204 kcal / 250 ml = 50–82 kcal/100 ml, rộng do không đo được độ lọc thật. Đây chưa phải đầu ra engine.",
+      "confidence": "low",
+      "source_ref": "data/ingredients/oi.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 0,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "0 g/ly (đường thêm), đường tự nhiên khoảng 22 g",
+      "basis": "sugar_added_g trong file = 0, đúng vì không thêm đường; đường tự nhiên trong ổi khoảng 9 g/100 g × 250 ml ≈ 22,5 g.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Đã gắn đủ 1/1 dòng trong ly: ổi không có tag dị ứng trong hồ sơ.",
+  "tcm_note": "Không kết luận tính vị: ổi không có nhãn tính vị trong hồ sơ."
 }
