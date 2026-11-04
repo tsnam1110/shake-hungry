@@ -43,10 +43,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": true,
   "uncertain_note": "Catalogue ghi UNCERTAIN theo quán do sản xuất thủ công/địa phương; ABV và đường dao động, không có nhãn chuẩn.",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04, làm cẩn thận theo QT-9: khoảng theo loại bia hơi, không lấy số một hãng cụ thể, dị ứng chỉ cảnh báo theo loại (chưa gắn tag) — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §6.",
   "media": [
     {
@@ -55,5 +55,42 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml",
+      "value_min": 38,
+      "value_max": 43,
+      "value": null,
+      "per_serving": "≈125–142 kcal/ly 330 ml",
+      "basis": "Theo loại bia: bia hơi là bia tươi rót từ keg, ABV trong file 3,5–4,5% (thấp hơn lager đóng lon 4,0–5,0% một chút). Bia thường USDA SR Legacy FDC 168746 (beer, regular) 43 kcal/100 g, carb 3,55 g/100 g — bia hơi tươi, ít đóng chai, ABV thấp hơn nên để khoảng 38–43 kcal/100 ml (đầu dưới theo ABV 3,5%, đầu trên theo USDA 43). Đây là khoảng theo loại, không phải số đo của một hãng bia hơi cụ thể — bia hơi các hãng VN (Habeco, Sabeco, bia hơi Hà Nội) có ABV và carb khác nhau đôi chút, ghi rõ. Không dùng engine (engine chưa có logic ethanol).",
+      "confidence": "low",
+      "source_ref": "USDA SR Legacy FDC 168746 (beer, regular); file catalogue, alcohol_pct_range 3,5–4,5%"
+    },
+    {
+      "label": "Độ cồn",
+      "unit": "% ABV",
+      "value_min": 3.5,
+      "value_max": 4.5,
+      "value": null,
+      "per_serving": "3,5–4,5% ABV",
+      "basis": "alcohol_pct_range trong file catalogue = 3,5–4,5%, là khoảng loại bia hơi, không phải ABV đo của một hãng cụ thể.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    },
+    {
+      "label": "Carb",
+      "unit": "g/100 ml",
+      "value": 3.6,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "≈11,9 g/ly 330 ml",
+      "basis": "Carb bia thường USDA FDC 168746 là 3,55 g/100 g, làm tròn 3,6 g/100 ml; bia hơi tươi có carb tương tự, ghi rõ là số theo loại, không phải số đo của một hãng cụ thể.",
+      "confidence": "low",
+      "source_ref": "USDA SR Legacy FDC 168746"
+    }
+  ],
+  "allergen_note": "Đã gắn 0/1 dòng trong file (bia hơi không có dòng nguyên liệu chi tiết trong file): bia làm từ lúa mạch (malt) nên có thể chứa gluten — đây là cảnh báo theo loại nguyên liệu bia, không phải kết luận từ tag trong hồ sơ, vì file chưa có dòng nguyên liệu để gắn tag. Trang chi tiết phải hiện 'chưa đủ dữ kiện' cho dị ứng, không hiện 'không có dị ứng'.",
+  "tcm_note": "Không kết luận tính vị: bia chưa có hồ sơ nguyên liệu trong hệ thống."
 }
