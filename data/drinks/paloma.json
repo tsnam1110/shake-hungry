@@ -71,7 +71,7 @@
   "needs_review": true,
   "reviewed_by": null,
   "reviewed_at": null,
-  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: kcal từ ethanol + đường theo công thức, ABV suy ra từ công thức, chưa qua duyệt lại sau khi sửa.",
+  "review_note": "KIỂM THỬ LẠI ĐỢT 2 (2026-11-04) theo lệnh của Benjamin: tái kiểm từng thành phần bằng nhãn hãng/nguồn độc lập — vẫn giữ cờ chưa duyệt, chờ Benjamin duyệt riêng.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5.",
   "media": [
     {
@@ -86,11 +86,11 @@
     {
       "label": "Năng lượng",
       "unit": "kcal/100 ml chất lỏng",
-      "value_min": 95,
-      "value_max": 95,
+      "value_min": 97,
+      "value_max": 98,
       "value": null,
-      "per_serving": "≈147 kcal/ly (155 ml chất lỏng)",
-      "basis": "Cộng tay từ công thức (ethanol 7 kcal/g, mật độ 0,789 g/ml + đường 4 kcal/g; rượu mùi tính cả ethanol và đường theo nhãn loại, chưa đo trực tiếp): tequila 50 ml × 2.21 = 110.5 kcal; nước cốt chanh 5 ml × 0.22 = 1.1 kcal; soda bưởi hồng 100 ml × 0.35 = 35.0 kcal. Tổng 146.6 kcal / 155 ml = 95 kcal/100 ml. ABV suy ra từ công thức: 12.9% (ethanol 20.0 ml / 155 ml chất lỏng). Đây chưa phải đầu ra engine (engine chưa có logic ethanol).",
+      "per_serving": "≈151–153 kcal/ly (155 ml chất lỏng)",
+      "basis": "KIỂM THỬ LẠI ĐỢT 2 (2026-11-04, đa nguồn): tequila 50 ml × 2,21 = 110,5 kcal; nước cốt chanh 5 ml × 0,22 = 1,1 kcal; soda bưởi hồng 100 ml × 0,39–0,41 = 39,0–41,0 kcal — SỬA so với cũ (0,35/ml): Squirt qua OpenFoodFacts nhiều bản 39–41 kcal, đường 10,7–10,9 g/100 ml (bản zero-sugar 0 kcal là sản phẩm khác, không áp dụng). Tổng mới 150,6–152,6 kcal / 155 ml = 97–98 kcal/100 ml (cũ 147, thấp hơn 4–6 kcal). ABV 12,9% không đổi. Đây chưa phải đầu ra engine.",
       "confidence": "low",
       "source_ref": "Bảng kcal/ml cocktail trong hồ sơ triển khai (ethanol + đường, xem basis)"
     },
