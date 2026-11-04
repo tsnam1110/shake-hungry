@@ -16,7 +16,8 @@
     {
       "name": "nước cam tươi",
       "quantity": 30,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "nuoc-ep-cam"
     },
     {
       "name": "siro agave",
@@ -26,7 +27,8 @@
     {
       "name": "soda/nước có ga",
       "quantity": 60,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "soda"
     },
     {
       "name": "muối viền",
@@ -62,10 +64,10 @@
   "alcohol_pct_range": null,
   "label_note": "",
   "brand_examples": [],
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn nước cam + soda, siro agave chưa có hồ sơ (60 kcal/15 ml), liquid 135 ml — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5.",
   "media": [
     {
@@ -74,5 +76,32 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 135,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml chất lỏng",
+      "value_min": 60,
+      "value_max": 60,
+      "value": null,
+      "per_serving": "≈81 kcal/ly (135 ml chất lỏng, chưa tính đá)",
+      "basis": "Cộng tay: nước cốt chanh 30 ml × 22 / 100 = 6,6 kcal; nước cam tươi 30 ml × 47 / 100 = 14,1 kcal; siro agave 15 ml × 1,4 × 286 / 100 = 60,1 kcal (agave nectar khoảng 60 kcal/muỗng canh 21 g, mật độ ~1,4, chưa có hồ sơ riêng nên ghi rõ số tham khảo); soda 0 kcal; muối viền 0 kcal. Tổng 80,8 kcal / 135 ml = 60 kcal/100 ml. Đây chưa phải đầu ra engine.",
+      "confidence": "low",
+      "source_ref": "data/ingredients/nuoc-ep-cam.json, soda.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 15,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "15 g/ly",
+      "basis": "sugar_added_g trong file = 15 g; kiểm chéo: agave đường khoảng 16 g (21 g siro, đường ~76%), gần 15 g trong file.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Đã gắn 2/5 dòng trong ly: nước cam và soda không có tag dị ứng trong hồ sơ; nước cốt chanh, siro agave và muối viền chưa gắn hồ sơ nên không kết luận đầy đủ.",
+  "tcm_note": "Không kết luận tính vị: các dòng đều không có nhãn tính vị trong hồ sơ (nước cam tcm_traits trống)."
 }
