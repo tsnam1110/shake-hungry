@@ -152,10 +152,10 @@
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",
-  "needs_review": false,
+  "needs_review": true,
   "reviewed_by": "tsnam1110@gmail.com",
   "reviewed_at": "2026-10-31",
-  "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này).",
+  "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này). [Soát lại E-batch lô 5, 2026-11-05: bản chuẩn Cà Mau là cà ri GÀ (Saigonesebaguette: gà 500 g, bột cà ri 2–3 muỗng canh, cốt dừa 200 ml + phần chan riêng; Cookpad Truc Le: gà + huyết) — file không có gà mà dùng thịt lợn nạc vai 50 g làm thịt nấu cà ri, điều này chưa nguồn đạt chuẩn nào xác nhận; xíu mại thì ĐƯỢC xác nhận là topping ăn kèm (memart: 'ăn kèm xíu mại, gà hoặc trứng non') nên phần xíu mại 30 g giữ được, phần thịt cà ri thì không; tỉ lệ bột cà ri 3 g và cốt dừa 60 g/khẩu phần thấp hẳn nguồn gà; tổng các dòng 254 g so với khẩu phần 1 tô 400 g thiếu phần nước sốt chưa định lượng — giữ cờ chưa duyệt chờ phân xử định danh.]",
   "tags": [
     "loai:bun-pho-mi"
   ]
