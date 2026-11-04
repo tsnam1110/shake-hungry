@@ -71,7 +71,7 @@
   "needs_review": true,
   "reviewed_by": null,
   "reviewed_at": null,
-  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: kcal từ ethanol + đường theo công thức, ABV suy ra từ công thức, chưa qua duyệt lại sau khi sửa.",
+  "review_note": "SOÁT LẠI 2026-11-04 theo lệnh của Benjamin (không dùng bảng tự suy cũ): tính lại từ thành phần đã kiểm chứng đa nguồn, xem drink-verification-liqueur.md — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5.",
   "media": [
     {
@@ -87,19 +87,19 @@
       "label": "Năng lượng",
       "unit": "kcal/100 ml chất lỏng",
       "value_min": 121,
-      "value_max": 121,
+      "value_max": 125,
       "value": null,
-      "per_serving": "≈145 kcal/ly (120 ml chất lỏng)",
-      "basis": "Cộng tay từ công thức (ethanol 7 kcal/g, mật độ 0,789 g/ml + đường 4 kcal/g; rượu mùi tính cả ethanol và đường theo nhãn loại, chưa đo trực tiếp): gin 30 ml × 2.21 = 66.3 kcal; nước chanh 15 ml × 0.22 = 3.3 kcal; siro đường 15 ml × 2.41 = 36.2 kcal; Champagne 60 ml × 0.65 = 39.0 kcal. Tổng 144.8 kcal / 120 ml = 121 kcal/100 ml. ABV suy ra từ công thức: 16.0% (ethanol 19.2 ml / 120 ml chất lỏng). Đây chưa phải đầu ra engine (engine chưa có logic ethanol).",
+      "per_serving": "≈145–150 kcal/ly (120 ml chất lỏng)",
+      "basis": "SOÁT LẠI 2026-11-04 (đa nguồn): gin 30 ml × 2,21 = 66,3 kcal; nước chanh 15 ml × 0,22 = 3,3 kcal; siro đường 15 ml × 2,41 = 36,2 kcal; Champagne 60 ml khoảng 39,6–43,8 kcal — SỬA nhẹ so với cũ (Champagne cũ dùng số Prosecco 0,65/ml = 39,0 kcal): Champagne Brut 12% ABV, đường 0–12 g/L (Brut) tới 17 g/L (Extra Dry), tức ethanol 66,3 + đường 0–6,8 = 66–73 kcal/100 ml. Tổng mới 145,4–149,6 kcal / 120 ml = 121–125 kcal/100 ml (cũ 145, thấp hơn 1–5 kcal). ABV 16,0% không đổi. Đây vẫn chưa phải đầu ra engine.",
       "confidence": "low",
       "source_ref": "Bảng kcal/ml cocktail trong hồ sơ triển khai (ethanol + đường, xem basis)"
     },
     {
       "label": "Độ cồn",
       "unit": "% ABV",
-      "value": 16.0,
-      "value_min": null,
-      "value_max": null,
+      "value": null,
+      "value_min": 16.0,
+      "value_max": 16.0,
       "per_serving": "≈16.0% ABV",
       "basis": "ABV suy ra từ công thức: ethanol 19.2 ml trên tổng 120 ml chất lỏng = 16.0%. Đây là ABV của ly pha theo công thức, chưa đo trực tiếp, và thay đổi nếu quán dùng rượu có ABV khác.",
       "confidence": "medium",
@@ -112,7 +112,7 @@
       "value_min": null,
       "value_max": null,
       "per_serving": "9 g/ly (theo file, tổng đường thực khoảng 10 g)",
-      "basis": "sugar_added_g trong file = 9 g (đường thêm từ siro/đường, theo cách ghi của file); tổng đường thực ước tính từ rượu mùi, nước ép và siro khoảng 10 g, cao hơn số file vì file không tính đường trong rượu mùi và nước ép.",
+      "basis": "sugar_added_g trong file = 9 g; tổng đường thực sau soát lại khoảng 9,4 g (xem basis năng lượng).",
       "confidence": "low",
       "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
     }
