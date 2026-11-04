@@ -30,7 +30,7 @@
     "max": 45
   },
   "alcohol_pct_range": null,
-  "label_note": "Đọc nhãn sản phẩm cụ thể khi seed — khoảng trong catalogue là khoảng theo loại, dao động theo thương hiệu, không phải bảng dinh dưỡng của một sản phẩm cụ thể.",
+  "label_note": "Chưa có nhãn cụ thể: các con số trên là khoảng theo loại, dao động theo thương hiệu, không phải bảng dinh dưỡng của một sản phẩm cụ thể và không suy từ nhãn của hãng khác. Chỉ cập nhật theo đúng nhãn khi có ảnh nhãn chụp tại điểm bán cho đúng thương hiệu và cỡ gói này.",
   "brand_examples": [],
   "cultural_note": "Thành phần điển hình: nước mía ép, có thể thêm tắc/hương, chất bảo quản. Thị trường nước mía đóng chai biến động nhanh, không khẳng định thương hiệu quốc gia cố định.",
   "recipe_sources": [],
