@@ -41,10 +41,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04, làm cẩn thận theo QT-9: khoảng theo loại sữa đóng hộp, không lấy số một hãng — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §6.",
   "media": [
     {
@@ -53,5 +53,42 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml",
+      "value_min": 60,
+      "value_max": 61,
+      "value": null,
+      "per_serving": "≈150–153 kcal/hộp 250 ml",
+      "basis": "Sữa tươi đóng hộp (UHT/tiệt trùng) theo hồ sơ sua-tuoi: USDA FDC 171265, 60–61 kcal/100 g, mật độ 1,031, tức khoảng 62 kcal/100 ml — nhưng nhãn sữa tươi VN thường ghi 60–61 kcal/100 ml (tính theo 100 ml trực tiếp, không nhân mật độ), nên để khoảng 60–61 kcal/100 ml theo nhãn, ghi rõ hai cách tính này. Không dùng engine (đồ đóng gói không qua engine).",
+      "confidence": "medium",
+      "source_ref": "Hồ sơ sua-tuoi (FDC 171265, 60–61 kcal/100 g, mật độ 1,031)"
+    },
+    {
+      "label": "Đường",
+      "unit": "g/hộp",
+      "value_min": 12,
+      "value_max": 12,
+      "value": null,
+      "per_serving": "≈12 g/hộp 250 ml (đường lactose tự nhiên, không phải đường thêm)",
+      "basis": "Sữa tươi không đường có đường lactose tự nhiên khoảng 4,8 g/100 ml, nhân hộp 250 ml = 12 g. Đây là đường tự nhiên, không phải đường thêm — sữa tươi có đường thì đường thêm khoảng 5–8 g/100 ml nữa, ghi rõ: số 12 g này CHỈ áp dụng cho sữa tươi không đường.",
+      "confidence": "medium",
+      "source_ref": "Hồ sơ sua-tuoi (FDC 171265)"
+    },
+    {
+      "label": "Canxi",
+      "unit": "mg/100 ml",
+      "value": 120,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "≈300 mg/hộp 250 ml",
+      "basis": "Sữa tươi có canxi khoảng 120 mg/100 ml (USDA whole milk 113 mg/100 g, nhãn sữa VN thường ghi 120 mg/100 ml), nhân hộp 250 ml = khoảng 300 mg. Đây là chỉ số quan trọng của sữa, ghi rõ là khoảng theo loại.",
+      "confidence": "medium",
+      "source_ref": "Hồ sơ sua-tuoi (FDC 171265)"
+    }
+  ],
+  "allergen_note": "Dị ứng Sữa: xác nhận theo loại sản phẩm — sữa tươi đóng hộp theo định nghĩa là sữa bò, nên người dị ứng sữa phải tránh, ghi rõ là xác nhận theo loại sản phẩm, không phải từ tag trong hồ sơ. Lactose không phải dị ứng nhưng người không dung nạp lactose cũng cần lưu ý.",
+  "tcm_note": "Không kết luận tính vị: mục đóng gói này chưa gắn hồ sơ nguyên liệu nên không kết luận ở tầng món."
 }
