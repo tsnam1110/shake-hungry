@@ -145,10 +145,10 @@
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",
-  "needs_review": false,
+  "needs_review": true,
   "reviewed_by": "tsnam1110@gmail.com",
   "reviewed_at": "2026-10-31",
-  "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này).",
+  "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này). [Soát lại E-batch lô 5, 2026-11-05: file (chiên + vỏ bột gạo/bột năng + nhân tôm thịt) không khớp trọn vẹn họ biên tập nào — bản Phan Thiết gốc là LUỘC, vỏ chỉ bột năng (MIA.vn: bột năng 300 g, luộc đến khi nổi; memart: bột năng 400 g + tôm 450 g, luộc), bản chiên của Dạy Làm Bánh Á Âu lại dùng vỏ bột mì, nhân thịt + nấm mèo, không tôm; tổng các dòng 146,3 g so với khẩu phần 180 g (4 cái) thiếu ~34 g — giữ cờ chưa duyệt, chờ chốt: chuẩn hoá về bản Phan Thiết luộc hay giữ bản chiên rồi mới đối chiếu lại.]",
   "tags": [
     "loai:banh"
   ]
