@@ -257,6 +257,14 @@ class WeekPlanController extends Controller
         ]);
     }
 
+    /** Phần 2.6 — danh sách đi chợ theo gram, không gói, không giá. */
+    public function shoppingList(Request $request, WeekPlan $weekPlan, \App\Week\ShoppingListBuilder $builder): JsonResponse
+    {
+        $this->authorizePlan($request, $weekPlan);
+
+        return response()->json($builder->build($weekPlan));
+    }
+
     private function findMeal(WeekPlan $weekPlan, $mealId)
     {
         $meal = \App\Models\WeekPlanMeal::with('day')->find($mealId);

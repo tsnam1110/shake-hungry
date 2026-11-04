@@ -210,6 +210,21 @@ này trước Task suy kcal từ TDEE + mục tiêu (thuộc Phần 2.1, sau for
 
 ## Phần 2.5 đã xong cả 5 thao tác.
 
+## Phần 2.6 — Danh sách đi chợ theo gram
+
+### Task 1 — ĐÃ XONG (2026-11-04, theo lệnh duyệt toàn bộ lộ trình)
+- `App\Week\ShoppingListBuilder`: cộng gộp DishIngredient theo nguyên
+  liệu, gram × khẩu phần; dòng không có grams_resolved giữ nguyên
+  quantity + unit_name, không tự đổi đơn vị; bữa ăn ngoài không tính;
+  dòng optional gắn cờ, dòng is_discarded vẫn mua; nhóm theo category
+  sẵn có của nguyên liệu, CHƯA phải gian hàng.
+- API GET /api/week-plans/{plan}/shopping-list, trang /tuan-an có nút
+  Danh sách đi chợ, ghi rõ chưa quy đổi gói và chưa có giá.
+- Test `tests/Feature/WeekShoppingListTest.php`: gộp 300 g gà từ 2 món,
+  trứng giữ 2 quả, bữa ăn ngoài không tính, ghi chú chưa quy đổi gói.
+
+## Lõi Tuần ăn (Phần 2.1–2.6) đã xong. Các phần sau lõi xem tiếp dưới.
+
 ## Các phần tiếp theo (theo lệnh duyệt toàn bộ lộ trình 2026-11-04, làm tiếp không hỏi duyệt giữa chừng)
 - Phần 2.5, Task 2–5: đổi ngày bắt đầu, bắt đầu lại phần còn lại, ăn ngoài, loại thực phẩm.
 - Phần 2.6: danh sách đi chợ theo gram, không gói, không giá.

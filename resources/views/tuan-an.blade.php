@@ -47,6 +47,8 @@
             <button id="week-restart" class="ld-btn ld-btn-gray" style="padding:11px 22px;font-size:15.5px">Bắt đầu lại phần còn lại</button>
         </div>
         <p class="ld-note" style="margin-top:-6px;margin-bottom:14px">Bắt đầu lại chỉ xây lại các ngày từ ngày đã chọn trở đi; các ngày trước đó giữ nguyên, kể cả món bạn đã đổi tay.</p>
+        <div style="margin-bottom:14px"><button id="week-shopping" class="ld-btn ld-btn-gray" style="padding:11px 22px;font-size:15.5px">Danh sách đi chợ</button></div>
+        <div id="week-shopping-list" style="display:none"></div>
         <div class="ld-card" style="margin-bottom:14px">
             <label class="ld-field-label" for="week-exclude-q">Loại một thực phẩm khỏi tuần này</label>
             <div class="ld-search"><input id="week-exclude-q" type="search" placeholder="Gõ tên nguyên liệu, ví dụ: lạc…" aria-label="Tìm nguyên liệu để loại khỏi tuần"></div>
@@ -189,6 +191,22 @@ document.getElementById('week-exclude-q').addEventListener('input', (e) => {
         });
     }, 350);
 });
+document.getElementById('week-shopping').onclick = async () => {
+    if (!currentPlanId) return;
+    const data = await (await fetch(`/api/week-plans/${currentPlanId}/shopping-list`)).json();
+    const box = document.getElementById('week-shopping-list');
+    box.style.display = 'block';
+    box.innerHTML = `<h2 class="ld-section-title">Danh sách đi chợ</h2>
+        <p class="ld-note" style="margin-top:-6px">${esc(data.note)}</p>
+        ${data.groups.map(g => `
+            <p class="ld-group-label">${esc(g.label)}</p>
+            <div class="ld-group">${g.items.map(it => `
+                <div class="ld-row"><span class="grow"><span style="font-weight:600">${esc(it.name)}</span>
+                <span class="sub">${it.optional ? 'Tuỳ chọn · ' : ''}Dùng trong ${it.meals_count} bữa</span></span>
+                <span class="ld-price"><span class="so ld-tnum">${it.total_grams != null ? it.total_grams + ' g' : it.unit_entries.map(u => u.quantity + ' ' + esc(u.unit_name)).join(' + ')}</span></span></div>`).join('')}
+            </div>`).join('')}`;
+    box.scrollIntoView({ behavior: 'smooth' });
+};
 document.getElementById('week-restart').onclick = async () => {
     const from = document.getElementById('week-restart-from').value;
     if (!from || !currentPlanId) return;

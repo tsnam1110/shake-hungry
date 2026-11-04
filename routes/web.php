@@ -111,6 +111,8 @@ Route::prefix('api')->group(function () {
         Route::post('/week-plans/{weekPlan}/meals/{meal}/eat-out', [\App\Http\Controllers\PublicWeb\WeekPlanController::class, 'eatOut']);
         // WEEK-001, Phần 2.5, Task 5: loại một thực phẩm khỏi tuần.
         Route::post('/week-plans/{weekPlan}/exclude-ingredient', [\App\Http\Controllers\PublicWeb\WeekPlanController::class, 'excludeIngredient']);
+        // WEEK-001, Phần 2.6: danh sách đi chợ theo gram.
+        Route::get('/week-plans/{weekPlan}/shopping-list', [\App\Http\Controllers\PublicWeb\WeekPlanController::class, 'shoppingList']);
         Route::post('/contributions', [\App\Http\Controllers\PublicWeb\ContributionController::class, 'store']);
         Route::get('/contributions', [\App\Http\Controllers\PublicWeb\ContributionController::class, 'mine']);
         Route::get('/favorites', [\App\Http\Controllers\PublicWeb\EngagementController::class, 'index']);
