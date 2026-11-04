@@ -42,7 +42,11 @@
             <div style="flex:1;min-width:200px"><label class="ld-field-label" for="week-new-start">Đổi ngày bắt đầu tuần này</label>
                 <input id="week-new-start" type="date" class="ld-input"></div>
             <button id="week-change-start" class="ld-btn ld-btn-gray" style="padding:11px 22px;font-size:15.5px">Đổi ngày bắt đầu</button>
+            <div style="flex:1;min-width:200px"><label class="ld-field-label" for="week-restart-from">Bắt đầu lại từ ngày</label>
+                <input id="week-restart-from" type="date" class="ld-input"></div>
+            <button id="week-restart" class="ld-btn ld-btn-gray" style="padding:11px 22px;font-size:15.5px">Bắt đầu lại phần còn lại</button>
         </div>
+        <p class="ld-note" style="margin-top:-6px;margin-bottom:14px">Bắt đầu lại chỉ xây lại các ngày từ ngày đã chọn trở đi; các ngày trước đó giữ nguyên, kể cả món bạn đã đổi tay.</p>
         <div id="week-days"></div>
         <p class="ld-note" style="margin-top:10px">Cảnh báo kết hợp chỉ là lớp thông tin ở trang món, không chặn, không lọc và không chấm điểm tuần ăn. Thao tác đổi bữa, ăn ngoài và đi chợ sẽ có ở các phần tiếp theo của lộ trình.</p>
     </section>
@@ -149,6 +153,16 @@ document.getElementById('week-create').onsubmit = async (e) => {
     showPlan(data.plan.id);
 };
 document.getElementById('week-start').value = new Date().toISOString().slice(0, 10);
+document.getElementById('week-restart').onclick = async () => {
+    const from = document.getElementById('week-restart-from').value;
+    if (!from || !currentPlanId) return;
+    if (!confirm('Bắt đầu lại phần còn lại từ ngày này? Các bữa đã lên cho các ngày đó sẽ được thay bằng món mới.')) return;
+    const resp = await fetch(`/api/week-plans/${currentPlanId}/restart-remaining`, { method: 'POST', headers, body: JSON.stringify({ from_date: from }) });
+    const res = await resp.json();
+    if (!resp.ok) { alert(res.message || 'Bắt đầu lại thất bại'); return; }
+    if (window.ldToast) ldToast('Đã bắt đầu lại phần còn lại của tuần');
+    showPlan(currentPlanId);
+};
 document.getElementById('week-change-start').onclick = async () => {
     const start = document.getElementById('week-new-start').value;
     if (!start || !currentPlanId) return;

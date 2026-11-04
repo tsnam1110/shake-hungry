@@ -105,6 +105,8 @@ Route::prefix('api')->group(function () {
         Route::post('/week-plans/{weekPlan}/meals/{meal}/swap', [\App\Http\Controllers\PublicWeb\WeekPlanController::class, 'swapMeal']);
         // WEEK-001, Phần 2.5, Task 2: đổi ngày bắt đầu tuần.
         Route::post('/week-plans/{weekPlan}/change-start', [\App\Http\Controllers\PublicWeb\WeekPlanController::class, 'changeStart']);
+        // WEEK-001, Phần 2.5, Task 3: bắt đầu lại phần còn lại của tuần.
+        Route::post('/week-plans/{weekPlan}/restart-remaining', [\App\Http\Controllers\PublicWeb\WeekPlanController::class, 'restartRemaining']);
         Route::post('/contributions', [\App\Http\Controllers\PublicWeb\ContributionController::class, 'store']);
         Route::get('/contributions', [\App\Http\Controllers\PublicWeb\ContributionController::class, 'mine']);
         Route::get('/favorites', [\App\Http\Controllers\PublicWeb\EngagementController::class, 'index']);

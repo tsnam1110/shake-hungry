@@ -166,6 +166,23 @@ class WeekPlanController extends Controller
         return response()->json(['plan' => $this->presentPlan($weekPlan->fresh()->load('days'))]);
     }
 
+    /** Phần 2.5, Task 3 — bắt đầu lại phần còn lại của tuần từ một ngày. */
+    public function restartRemaining(Request $request, WeekPlan $weekPlan, WeekBuilder $builder): JsonResponse
+    {
+        $this->authorizePlan($request, $weekPlan);
+        $data = $request->validate(['from_date' => ['required', 'date']]);
+        $from = \Carbon\Carbon::parse($data['from_date'])->startOfDay();
+        if ($from->lt($weekPlan->start_date) || $from->gt($weekPlan->end_date)) {
+            return response()->json(['message' => 'Ngày bắt đầu lại phải nằm trong tuần này.'], 422);
+        }
+        $rebuilt = $builder->rebuildFrom($weekPlan, $from->toDateString());
+
+        return response()->json([
+            'plan' => $this->presentPlan($weekPlan->fresh()->load('days')),
+            'rebuilt_day_ids' => $rebuilt,
+        ]);
+    }
+
     private function findMeal(WeekPlan $weekPlan, $mealId)
     {
         $meal = \App\Models\WeekPlanMeal::with('day')->find($mealId);

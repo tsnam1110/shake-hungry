@@ -153,6 +153,45 @@ class WeekBuilder
         })->values();
     }
 
+    /**
+     * Bắt đầu lại phần còn lại của tuần từ ngày $fromDate (Phần 2.5,
+     * Task 3): các ngày trước đó giữ nguyên món (kể cả món đã đổi tay),
+     * các ngày từ $fromDate trở đi xoá bữa cũ và xây lại bằng cùng logic
+     * ứng viên của build(), với số lần dùng tính từ các ngày giữ lại +
+     * các ngày vừa xây lại. Trả về id các ngày đã xây lại.
+     *
+     * @return array<int, int>
+     */
+    public function rebuildFrom(WeekPlan $plan, string $fromDate): array
+    {
+        $from = Carbon::parse($fromDate)->startOfDay();
+        $profile = $plan->user->profile;
+        $usage = [];
+        foreach ($plan->days()->where('date', '<', $from->toDateString())->with('meals')->get() as $keptDay) {
+            foreach ($keptDay->meals as $meal) {
+                $usage[$meal->dish_id] = ($usage[$meal->dish_id] ?? 0) + 1;
+            }
+        }
+        $validator = app(WeekValidator::class);
+        $rebuilt = [];
+        $days = $plan->days()->where('date', '>=', $from->toDateString())->orderBy('date')->get();
+        foreach ($days as $day) {
+            $day->meals()->delete();
+            foreach (WeekValidator::SLOTS as $slot) {
+                $dish = $this->pick($slot, $profile, $usage);
+                if ($dish === null) {
+                    continue;
+                }
+                $usage[$dish->id] = ($usage[$dish->id] ?? 0) + 1;
+                $day->meals()->create(['dish_id' => $dish->id, 'slot' => $slot, 'servings' => 1]);
+            }
+            $validator->refreshDay($day, $plan);
+            $rebuilt[] = $day->id;
+        }
+
+        return $rebuilt;
+    }
+
     private function pick(string $slot, ?UserProfile $profile, array $usage): ?Dish
     {
         $candidates = $this->candidates($slot, $profile);

@@ -84,6 +84,22 @@ it('đổi ngày bắt đầu: dịch toàn bộ ngày, giữ nguyên món, trù
     $this->postJson("/api/week-plans/{$plan->id}/change-start", ['start_date' => '2026-11-16'])->assertUnprocessable();
 });
 
+it('bắt đầu lại phần còn lại: ngày trước giữ nguyên, ngày từ mốc trở đi xây lại đủ 4 bữa', function () {
+    [$user, $plan] = week25Plan();
+    $this->actingAs($user);
+    $before = WeekPlan::with('days.meals.dish')->find($plan->id);
+    $keptSlugs = $before->days->first()->meals->map(fn ($m) => $m->dish->slug)->sort()->values()->all();
+
+    $resp = $this->postJson("/api/week-plans/{$plan->id}/restart-remaining", ['from_date' => '2026-11-11'])->assertOk();
+    expect($resp->json('rebuilt_day_ids'))->toHaveCount(5);
+
+    $after = WeekPlan::with('days.meals.dish')->find($plan->id);
+    expect($after->days->first()->meals->map(fn ($m) => $m->dish->slug)->sort()->values()->all())->toBe($keptSlugs)
+        ->and($after->days->where('date', '>=', '2026-11-11')->first()->meals)->toHaveCount(4);
+
+    $this->postJson("/api/week-plans/{$plan->id}/restart-remaining", ['from_date' => '2026-11-20'])->assertUnprocessable();
+});
+
 it('đổi bữa sang món thiếu dữ kiện bị từ chối 422', function () {
     [$user, $plan] = week25Plan();
     $bad = week25Dish('op-trua-thieu', 'trua', 50, 450, 500, ['missing' => ['nghe-tuoi']]);

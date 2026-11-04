@@ -182,6 +182,15 @@ này trước Task suy kcal từ TDEE + mục tiêu (thuộc Phần 2.1, sau for
 - Trang /tuan-an: form đổi ngày bắt đầu trong chi tiết tuần.
 - Test thêm: dịch ngày + giữ món + trùng ngày bị 422.
 
+### Task 3 — Bắt đầu lại phần còn lại — ĐÃ XONG (2026-11-04)
+- `WeekBuilder::rebuildFrom`: ngày trước mốc giữ nguyên (kể cả món đổi
+  tay), ngày từ mốc trở đi xoá bữa cũ và xây lại bằng logic ứng viên,
+  số lần dùng tính từ ngày giữ lại + ngày vừa xây; API POST
+  /api/week-plans/{plan}/restart-remaining, mốc ngoài tuần thì 422.
+- Trang /tuan-an: chọn ngày + nút bắt đầu lại, có xác nhận trước khi áp.
+- Test thêm: ngày trước giữ nguyên món, 5 ngày từ mốc xây lại đủ 4 bữa,
+  mốc ngoài tuần bị 422.
+
 ## Các phần tiếp theo (theo lệnh duyệt toàn bộ lộ trình 2026-11-04, làm tiếp không hỏi duyệt giữa chừng)
 - Phần 2.5, Task 2–5: đổi ngày bắt đầu, bắt đầu lại phần còn lại, ăn ngoài, loại thực phẩm.
 - Phần 2.6: danh sách đi chợ theo gram, không gói, không giá.
