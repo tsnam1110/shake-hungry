@@ -29,7 +29,7 @@
     "Rót lên đá."
   ],
   "sugar_added_g": 0,
-  "sugar_note": "Đường khoảng 0–10 g (chuẩn 5 g); ít ngọt: không đường.",
+  "sugar_note": "Đường 0 g (bản không đường); ít ngọt: không đường.",
   "caffeine_level": "cao",
   "alcohol": false,
   "alcohol_pct_estimate": null,
@@ -77,7 +77,7 @@
       "value_max": 1,
       "value": null,
       "per_serving": "≈0,4 kcal/ly (40 ml chất lỏng, không đường, chưa tính đá tan)",
-      "basis": "Cộng tay từ hồ sơ đã có: cà phê phin 40 ml × 1 kcal/100 g = 0,4 kcal; đường 0 g = 0. Đây là bản không đường. Mâu thuẫn trong file cần lưu ý: sugar_added_g = 0 nhưng sugar_note ghi 'chuẩn 5 g' — nếu thêm 5 g đường thì cộng thêm ≈19 kcal/ly, thành ≈20 kcal/ly. Đây chưa phải đầu ra engine.",
+      "basis": "Cộng tay từ hồ sơ đã có: cà phê phin 40 ml × 1 kcal/100 g = 0,4 kcal; đường 0 g = 0. Đây là bản không đường, đã chốt 2026-11-04 theo duyệt của Benjamin. Nếu quán thêm đường, kcal tăng theo lượng đường thêm. Đây chưa phải đầu ra engine.",
       "confidence": "medium",
       "source_ref": "data/ingredients/ca-phe-den.json, duong-trang.json"
     },
@@ -87,8 +87,8 @@
       "value": 0,
       "value_min": null,
       "value_max": null,
-      "per_serving": "0 g/ly (bản không đường; ghi chú file nói chuẩn 5 g)",
-      "basis": "sugar_added_g trong file catalogue = 0; sugar_note ghi khoảng 0–10 g, chuẩn 5 g — hai con số trong cùng file không khớp, ghi cả hai, không tự chọn một.",
+      "per_serving": "0 g/ly (bản không đường)",
+      "basis": "sugar_added_g = 0, bản không đường, đã chốt 2026-11-04 theo duyệt của Benjamin.",
       "confidence": "low",
       "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
     },
