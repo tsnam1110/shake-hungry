@@ -140,10 +140,10 @@
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
-  "needs_review": false,
+  "needs_review": true,
   "reviewed_by": "tsnam1110@gmail.com",
   "reviewed_at": "2026-10-31",
-  "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này).",
+  "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này). [Soát lại E-batch lô 9, 2026-11-05: bất đồng 3–4 lần vẫn đứng — Cookbeo 4 khẩu phần: 150 g bột gạo tẻ + 50 g bột nếp + 3 kg trai nguyên vỏ + 500 g xương ống (tức 50 g gạo + 750 g trai nguyên vỏ + nước xương/khẩu phần); Cookpad 5 phần: 80 g gạo tẻ + 20 g nếp + 50 g đậu xanh + 1 kg trai nguyên vỏ (tức 20 g gạo + 200 g trai/khẩu phần); file: 50 g tẻ + 15 g nếp + 100 g thịt trai (tính theo thịt, không quy đổi được với 2 họ tính theo nguyên vỏ), không có đậu xanh (2/3 họ có) và không có nước xương (2/3 họ có) — giữ cờ chưa duyệt, không có đồng thuận từ 2 họ để phân xử.]",
   "tags": [
     "dac-san:ha-noi",
     "loai:chao-sup"
