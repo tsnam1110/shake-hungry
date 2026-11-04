@@ -70,5 +70,5 @@
   "reviewed_at": null,
   "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau). Đính chính 2026-11-03: gắn hồ sơ nguyên liệu mới cùng slug để trang rau hiển thị ảnh (làm từng sản phẩm một); hồ sơ nguyên liệu mới chưa qua duyệt của chủ dự án.",
   "source": "catalogue-v2",
-  "source_note": "Catalogue rau theo mùa v2 (2026-11-03), phần E — rau nhập khẩu / giống nhập trồng tại Việt Nam. Toàn bộ 18 mục chưa có hồ sơ repo nên kcal null — giữ thiếu, không copy số của loài/giống gốc."
+  "source_note": "Catalogue rau theo mùa v2 (2026-11-03), phần E — rau nhập khẩu / giống nhập trồng tại Việt Nam. Toàn bộ 18 mục chưa có hồ sơ repo nên kcal null — giữ thiếu, không copy số của loài/giống gốc. Đối chiếu lại 2026-11-04 (Task C): bảng usda-sr_legacy.csv của repo không có bản ghi broccolini / súp lơ baby đơn; các bản ghi gần nhất (súp lơ thường 34, cải rổ broccoli raab 22, súp lơ Trung Quốc 26) đều khác loài/giống nên không dùng thay."
 }
