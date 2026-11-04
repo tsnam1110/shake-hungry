@@ -70,10 +70,10 @@
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",
-  "needs_review": false,
+  "needs_review": true,
   "reviewed_by": "tsnam1110@gmail.com",
   "reviewed_at": "2026-10-31",
-  "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này).",
+  "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này). E-batch0 2026-11-04: gắn cờ lại chưa duyệt — món vẫn dùng gạo nếp làm proxy cho cốm; tra web 2026-11-04 thấy một phân tích Viện Vệ sinh dịch tễ học (trích trong Thánh địa Việt Nam học) cho cốm tươi 304 kcal/100 g (protit 6,1, lipit 0,8, gluxit 66,3, nước 25%) nhưng chưa có nguồn độc lập thứ hai cho đúng cốm tươi (các trang khác ghi 350–370 cho cốm khô, khác trạng thái) nên chưa tạo hồ sơ cốm mới và chưa sửa số, chưa gọi là đã xác minh.",
   "tags": [
     "dac-san:ha-noi",
     "loai:che-trang-mieng"
