@@ -94,8 +94,8 @@
       "value_min": 195,
       "value_max": 195,
       "value": null,
-      "per_serving": "≈229 kcal/ly (117.5 ml chất lỏng)",
-      "basis": "Cộng tay từ công thức (ethanol 7 kcal/g, mật độ 0,789 g/ml + đường 4 kcal/g; rượu mùi tính cả ethanol và đường theo nhãn loại, chưa đo trực tiếp): whisky Scotch 60 ml × 2.21 = 132.6 kcal; whisky Islay 7.5 ml × 2.21 = 16.6 kcal; nước chanh 22.5 ml × 0.22 = 5.0 kcal; siro mật ong 22.5 ml × 3.2 = 72.0 kcal; gừng tươi 2 lát 5 ml × 0.52 = 2.6 kcal. Tổng 228.7 kcal / 117.5 ml = 195 kcal/100 ml. ABV suy ra từ công thức: 23.0% (ethanol 27.0 ml / 117.5 ml chất lỏng). Đây chưa phải đầu ra engine (engine chưa có logic ethanol).",
+      "per_serving": "≈230 kcal/ly (118 ml chất lỏng)",
+      "basis": "Cộng tay từ công thức (ethanol 7 kcal/g, mật độ 0,789 g/ml + đường 4 kcal/g; rượu mùi tính cả ethanol và đường theo nhãn loại, chưa đo trực tiếp): whisky Scotch 60 ml × 2.21 = 132.6 kcal; whisky Islay 7.5 ml × 2.21 = 16.6 kcal; nước chanh 22.5 ml × 0.22 = 5.0 kcal; siro mật ong 22.5 ml × 3.2 = 72.0 kcal; gừng tươi 2 lát (khoảng 5 g × 80 / 100 = 4,0 kcal, ghi rõ là ước tính, không tính theo ml). Tổng 228.7 kcal / 117.5 ml = 195 kcal/100 ml. ABV suy ra từ công thức: 23.0% (ethanol 27.0 ml / 117.5 ml chất lỏng). Đây chưa phải đầu ra engine (engine chưa có logic ethanol).",
       "confidence": "low",
       "source_ref": "Bảng kcal/ml cocktail trong hồ sơ triển khai (ethanol + đường, xem basis)"
     },
