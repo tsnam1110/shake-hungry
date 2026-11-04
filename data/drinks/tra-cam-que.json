@@ -19,7 +19,8 @@
     {
       "name": "nước cam",
       "quantity": 50,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "nuoc-ep-cam"
     },
     {
       "name": "thanh quế",
@@ -60,10 +61,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn trà đen + nước cam, quế hãm và ngọt hai chất chưa gắn, liquid 200 ml — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -72,5 +73,32 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 200,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml chất lỏng",
+      "value_min": 28,
+      "value_max": 32,
+      "value": null,
+      "per_serving": "≈55–64 kcal/ly (200 ml chất lỏng, chưa tính đá tan)",
+      "basis": "Cộng tay: trà đen 150 ml × 1 = 1,5 kcal; nước cam 50 ml × 47 / 100 = 23,5 kcal (hồ sơ nuoc-ep-cam cho cam ngọt Citrus sinensis, giống cam quán chưa xác định nên là khoảng, không phải điểm — xem uncertain trong hồ sơ); thanh quế 3 g hãm, không ăn, kcal không đáng kể (chưa có hồ sơ, không bịa); mật ong/đường 10 g — mật ong 30,4 kcal, đường 38,7 kcal, khoảng 30,4–38,7 kcal. Tổng 55,4–63,7 kcal / 200 ml = 28–32 kcal/100 ml. Đây chưa phải đầu ra engine.",
+      "confidence": "low",
+      "source_ref": "data/ingredients/tra-den.json, nuoc-ep-cam.json, mat-ong.json, duong-trang.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 10,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "10 g/ly (chất ngọt thêm, chưa tính đường tự nhiên trong cam)",
+      "basis": "sugar_added_g trong file catalogue = 10 g, khớp mật ong/đường trong công thức; đường tự nhiên trong nước cam khoảng 4,4 g không tính vào 'đường thêm' theo cách ghi của file.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Đã gắn 2/4 dòng trong ly: trà đen và nước cam không có tag dị ứng trong hồ sơ; thanh quế và mật ong/đường chưa gắn hồ sơ (dòng ngọt ghi hai chất) nên không kết luận đầy đủ.",
+  "tcm_note": "Không kết luận tính vị: trà đen không có nhãn, nước cam không có nhãn tính vị trong hồ sơ (nuoc-ep-cam tcm_traits trống), quế chưa có hồ sơ."
 }
