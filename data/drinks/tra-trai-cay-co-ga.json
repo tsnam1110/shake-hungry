@@ -11,7 +11,8 @@
     {
       "name": "trà đen hoặc ô long đã hãm, làm lạnh",
       "quantity": 120,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "tra-den"
     },
     {
       "name": "trái cây hỗn hợp (đào, dâu, chanh leo, cam)",
@@ -65,10 +66,10 @@
   "alcohol_pct_range": null,
   "label_note": "",
   "brand_examples": [],
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn trà đen + soda, trái cây hỗn hợp + siro hai chất để khoảng, liquid 255 ml — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5.",
   "media": [
     {
@@ -77,5 +78,32 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 255,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml chất lỏng",
+      "value_min": 24,
+      "value_max": 35,
+      "value": null,
+      "per_serving": "≈61–88 kcal/ly (255 ml chất lỏng, chưa tính đá)",
+      "basis": "Cộng tay: trà 120 ml × 1 = 1,2 kcal; trái cây hỗn hợp 40 g × 50 / 100 = 20,0 kcal (đào 42, dâu 32, chanh leo 97, cam 47, trung bình khoảng 50, ghi rõ là ước tính); siro trái cây/siro mật ong 15 ml — siro trái cây khoảng 37,5–52,5 kcal (15 ml × ~1,25 × 200–280 / 100), mật ong 15 ml × 1,42 × 304 / 100 = 64,8 kcal, khoảng gộp 37,5–64,8 kcal (file ghi hai chất, không chọn một); soda 0 kcal; chanh 10 ml ≈ 2,2 kcal. Tổng 60,9–88,2 kcal / 255 ml = 24–35 kcal/100 ml. Đây chưa phải đầu ra engine.",
+      "confidence": "low",
+      "source_ref": "data/ingredients/tra-den.json, soda.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 9,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "9 g/ly",
+      "basis": "sugar_added_g trong file = 9 g; kiểm chéo: siro đường trong siro trái cây khoảng 9–12 g, gần 9 g trong file; đường tự nhiên trong trái cây khoảng 4 g không tính vào 'đường thêm'.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Đã gắn 2/5 dòng trong ly: trà đen và soda không có tag dị ứng trong hồ sơ; trái cây hỗn hợp, siro và chanh chưa gắn hồ sơ nên không kết luận đầy đủ.",
+  "tcm_note": "Không kết luận tính vị: trà đen không có nhãn, các dòng còn lại không có nhãn tính vị trong hồ sơ."
 }
