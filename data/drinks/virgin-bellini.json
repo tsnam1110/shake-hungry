@@ -53,10 +53,10 @@
   "alcohol_pct_range": null,
   "label_note": "",
   "brand_examples": [],
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn soda, purée đào chưa có hồ sơ riêng, siro đào 0 ml, liquid 150 ml — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5.",
   "media": [
     {
@@ -65,5 +65,32 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 150,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml chất lỏng",
+      "value_min": 15,
+      "value_max": 15,
+      "value": null,
+      "per_serving": "≈23 kcal/ly (150 ml chất lỏng, chưa tính đá)",
+      "basis": "Cộng tay: purée đào trắng 50 ml × 45 / 100 = 22,5 kcal (đào 42 kcal/100 g, purée đào khoảng 45 kcal/100 ml, ghi rõ); soda 0 kcal; siro đào 0 ml nên không tính. Tổng 22,5 kcal / 150 ml = 15 kcal/100 ml. Đây chưa phải đầu ra engine.",
+      "confidence": "medium",
+      "source_ref": "data/ingredients/dao.json, soda.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 0,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "0 g/ly (đường thêm), đường tự nhiên khoảng 4 g",
+      "basis": "sugar_added_g trong file = 0, đúng vì không thêm đường; đường tự nhiên trong purée đào khoảng 8 g/100 ml × 50 ml = 4 g.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Đã gắn 1/3 dòng trong ly: soda không có tag dị ứng trong hồ sơ; purée đào và siro đào (0 ml) chưa gắn hồ sơ nên không kết luận đầy đủ.",
+  "tcm_note": "Không kết luận tính vị: các dòng đều không có nhãn tính vị trong hồ sơ."
 }
