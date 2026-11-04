@@ -11,7 +11,8 @@
     {
       "name": "dâu đông đá",
       "quantity": 80,
-      "unit": "g"
+      "unit": "g",
+      "ingredient_slug": "dau-tay"
     },
     {
       "name": "nước chanh",
@@ -21,12 +22,14 @@
     {
       "name": "siro đường",
       "quantity": 10,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "siro-duong"
     },
     {
       "name": "soda hoặc nước",
       "quantity": 30,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "soda"
     }
   ],
   "recipe_steps": [
@@ -57,10 +60,10 @@
   "alcohol_pct_range": null,
   "label_note": "",
   "brand_examples": [],
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn dâu + siro đường + soda, mẫu số 135 ml đồ uống đông đá — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5.",
   "media": [
     {
@@ -69,5 +72,32 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 135,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml chất lỏng",
+      "value_min": 39,
+      "value_max": 39,
+      "value": null,
+      "per_serving": "≈53 kcal/ly (135 ml đồ uống đông đá, chưa tính đá riêng vì dâu đã đông đá)",
+      "basis": "Cộng tay: dâu đông đá 80 g × 32 / 100 = 25,6 kcal (dâu đông đá giữ kcal như dâu tươi, ghi rõ); nước chanh 15 ml × 22 / 100 = 3,3 kcal; siro đường 10 ml × 1,24 × 194 / 100 = 24,1 kcal; soda/nước 30 ml 0 kcal. Tổng 53,0 kcal / 135 ml đồ uống (80 + 15 + 10 + 30) = 39 kcal/100 ml. Đây chưa phải đầu ra engine.",
+      "confidence": "medium",
+      "source_ref": "data/ingredients/dau-tay.json, siro-duong.json, soda.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 6,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "6 g/ly",
+      "basis": "sugar_added_g trong file = 6 g; kiểm chéo: siro đường 6,2 g, gần 6 g trong file.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Đã gắn 3/4 dòng trong ly: dâu, siro đường và soda đều không có tag dị ứng trong hồ sơ; nước chanh chưa gắn hồ sơ nên không kết luận đầy đủ.",
+  "tcm_note": "Không kết luận tính vị: các dòng đều không có nhãn tính vị trong hồ sơ."
 }
