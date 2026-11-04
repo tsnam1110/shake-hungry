@@ -3,8 +3,8 @@
 @section('title', 'Nguyên liệu — Lắc Đói')
 
 @section('content')
-    <a href="/nguyen-lieu" style="display:inline-flex;align-items:center;gap:5px;color:var(--color-link);text-decoration:none;font-weight:600;font-size:15px;margin-top:14px">
-        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 5.5 8 12l6.5 6.5"/></svg>
+    <a href="/nguyen-lieu" style="display:inline-flex;align-items:center;gap:3px;color:var(--color-link);font-size:16.5px;font-weight:500;text-decoration:none;padding-top:10px">
+        <svg width="11" height="18" viewBox="0 0 8 14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" style="transform:rotate(180deg)"><path d="M1 1l6 6-6 6"/></svg>
         Nguyên liệu</a>
     <div id="content"><p style="color:var(--color-faint)">Đang tải…</p></div>
 @endsection
@@ -16,7 +16,10 @@ function esc(s) { return (s ?? '').toString().replace(/[&<>"]/g, c => ({'&':'&am
 const catLabel = { 'thit': 'Thịt', 'thuy-san': 'Thuỷ sản', 'rau-cu': 'Rau củ', 'rau-gia-vi': 'Rau gia vị', 'trai-cay': 'Trái cây', 'tinh-bot': 'Tinh bột', 'gia-vi': 'Gia vị', 'dau-mo': 'Dầu mỡ', 'khac': 'Khác' };
 const facetLabel = { origin: 'Nguồn gốc', state: 'Trạng thái', allergen: 'Dị ứng', diet: 'Chế độ ăn', protein: 'Nhóm đạm' };
 const fctLabel = { vn_fct_2007: 'Bảng TPTP Việt Nam', usda_sr_legacy: 'USDA SR Legacy', usda_foundation: 'USDA Foundation', usda_fndds: 'USDA FNDDS', mext_japan: 'Bảng TPTP Nhật Bản (MEXT)', cofid_uk: 'Bảng TPTP Anh (CoFID)', off: 'Open Food Facts', proxy: 'Proxy — chưa kiểm định', label_vn: 'Nhãn sản phẩm Việt Nam' };
-const macroTile = (v, u, label) => v == null ? '' : `<div class="ld-macro"><div class="v ld-tnum">${(+v).toLocaleString('vi-VN', { maximumFractionDigits: 1 })}${u}</div><div class="k">${label}</div></div>`;
+// Ô macro theo đúng mẫu trang món (ld-macro + gt/nhan, lưới 2/4 cột):
+// trước đây dùng class v/k và khung ld-macros mà app.css không định nghĩa,
+// nên các ô xếp dọc full-width, chữ nhỏ, thẻ dinh dưỡng cao gấp đôi.
+const macroTile = (v, u, label) => v == null ? '' : `<div class="ld-macro"><div class="gt ld-tnum">${(+v).toLocaleString('vi-VN', { maximumFractionDigits: 1 })} ${u}</div><div class="nhan">${label}</div></div>`;
 
 fetch('/api/ingredients/' + slug).then(r => { if (!r.ok) throw new Error('404'); return r.json(); }).then(({ ingredient: i, fruit_slug, dishes }) => {
     document.title = i.name_vi + ' — Nguyên liệu Lắc Đói';
@@ -39,9 +42,6 @@ fetch('/api/ingredients/' + slug).then(r => { if (!r.ok) throw new Error('404');
         <h1 class="ld-title" style="margin-top:16px">${esc(i.name_vi)}</h1>
         <p class="ld-subtitle">${catLabel[i.category] ?? esc(i.category ?? '')}${i.name_en ? ' · ' + esc(i.name_en) : ''}${i.scientific_name ? ' · ' : ''}${i.scientific_name ? '<i>' + esc(i.scientific_name) + '</i>' : ''}</p>
         ${(i.aliases ?? []).length ? `<p class="ld-note" style="margin-top:8px">Tên gọi khác: ${i.aliases.map(a => esc(a.name)).join(' · ')}</p>` : ''}
-        <div style="display:flex;gap:10px;margin-top:14px;flex-wrap:wrap">
-            <button type="button" class="ld-btn ld-btn-gray" data-feedback data-ingredient="${i.id}" data-context="${esc(i.name_vi)}" style="padding:11px 20px;font-size:15px">Gửi phản hồi về nguyên liệu này</button>
-        </div>
         ${fruit_slug ? `<a href="/hoa-qua/${fruit_slug}" class="ld-row" style="margin-top:14px;text-decoration:none"><span class="grow"><span style="font-weight:600">Hồ sơ hoa quả đầy đủ</span><span class="sub">Mùa vụ, giá theo vùng, cách chọn và bảo quản</span></span><span style="color:var(--color-faint);font-size:19px">›</span></a>` : ''}
 
         ${i.unverified ? '<div class="ld-warn" style="margin-top:16px"><span>Số liệu của nguyên liệu này lấy từ nguồn thứ cấp, <strong>chưa qua kiểm định</strong> — hãy cân nhắc khi dùng để tính toán chính xác.</span></div>' : ''}
@@ -53,13 +53,17 @@ fetch('/api/ingredients/' + slug).then(r => { if (!r.ok) throw new Error('404');
                 <span class="ld-kcal-so ld-tnum">${Math.round(snap.kcal_min ?? snap.kcal_per_100g)}${snap.kcal_max != null && snap.kcal_max !== snap.kcal_min ? '–' + Math.round(snap.kcal_max) : ''}</span>
                 <span style="color:var(--color-sub);font-size:14.5px">kcal</span>
             </div>
-            ${macros ? `<div class="ld-macros">${macros}</div>` : ''}
-            <div style="margin-top:14px">
+            ${macros ? `<div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5" style="margin-top:14px">${macros}</div>` : ''}
+            <div style="margin-top:14px;border-top:1px solid var(--color-line);padding-top:2px">
                 <div class="ld-row"><span class="grow" style="color:var(--color-sub)">Nguồn con số</span><span class="value">${esc(fctLabel[snap.fct_source] ?? snap.fct_source ?? '—')}</span></div>
                 <div class="ld-row"><span class="grow" style="color:var(--color-sub)">Độ tin cậy ánh xạ</span><span class="value">${esc(i.mapping_confidence ?? '—')}</span></div>
                 ${snap.source_url ? `<div class="ld-row"><span class="grow" style="color:var(--color-sub)">Tra cứu nguồn</span><a class="value" href="${esc(snap.source_url)}" target="_blank" rel="noopener" style="color:var(--color-link);text-decoration:none">Mở trang nguồn ›</a></div>` : ''}
             </div>`
             : '<p style="color:var(--color-faint);margin:10px 0 0">Chưa đủ dữ liệu dinh dưỡng cho nguyên liệu này — hệ thống không hiện số thay vì đoán.</p>'}
+        </div>
+
+        <div style="display:flex;gap:10px;margin-top:14px;flex-wrap:wrap">
+            <button type="button" class="ld-btn ld-btn-gray" data-feedback data-ingredient="${i.id}" data-context="${esc(i.name_vi)}" style="padding:11px 20px;font-size:15px">Gửi phản hồi về nguyên liệu này</button>
         </div>
 
         <h2 class="ld-section-title">Thông tin dị ứng</h2>
