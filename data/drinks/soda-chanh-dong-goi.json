@@ -40,10 +40,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04, làm cẩn thận theo QT-9: khoảng theo loại đóng gói, không lấy số một hãng — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §6.",
   "media": [
     {
@@ -52,5 +52,31 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml",
+      "value_min": 40,
+      "value_max": 44,
+      "value": null,
+      "per_serving": "≈132–145 kcal/lon 330 ml",
+      "basis": "Soda vị chanh (Sprite-type) là nước có ga + đường + hương chanh: đường khoảng 10–11 g/100 ml × 4 = 40–44 kcal, tổng khoảng 40–44 kcal/100 ml. Đây là khoảng theo loại, không phải số một hãng. Không dùng engine (đồ đóng gói không qua engine).",
+      "confidence": "low",
+      "source_ref": "Nhãn đóng gói (khoảng theo loại, không phải một nhãn cụ thể)"
+    },
+    {
+      "label": "Đường",
+      "unit": "g/lon",
+      "value_min": 33,
+      "value_max": 36,
+      "value": null,
+      "per_serving": "≈33–36 g/lon 330 ml",
+      "basis": "Đường trong soda vị chanh khoảng 10–11 g/100 ml, nhân lon 330 ml = 33–36,3 g, làm tròn 33–36 g/lon.",
+      "confidence": "low",
+      "source_ref": "Nhãn đóng gói (khoảng theo loại)"
+    }
+  ],
+  "allergen_note": "Không kết luận đầy đủ: mục đóng gói này không có dòng nguyên liệu trong file để gắn tag; trang chi tiết phải hiện 'chưa đủ dữ kiện' cho dị ứng, không hiện 'không có dị ứng'.",
+  "tcm_note": "Không kết luận tính vị: mục đóng gói này chưa gắn hồ sơ nguyên liệu nên không kết luận ở tầng món."
 }
