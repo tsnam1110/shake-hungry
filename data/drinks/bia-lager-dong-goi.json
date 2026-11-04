@@ -37,13 +37,13 @@
   "key_indicators": [
     {
       "label": "Năng lượng",
-      "value": 43,
-      "value_min": null,
-      "value_max": null,
+      "value": null,
+      "value_min": 39,
+      "value_max": 43,
       "unit": "kcal/100 ml",
-      "per_serving": "≈142 kcal/lon 330 ml",
-      "basis": "USDA SR Legacy FDC 168746 'Alcoholic beverage, beer, regular, all': 43 kcal/100 g, carb 3,55 g/100 g — dùng làm khoảng theo loại, không phải nhãn thương hiệu cụ thể",
-      "confidence": "medium",
+      "per_serving": "≈129–142 kcal/lon 330 ml",
+      "basis": "SOÁT LẠI 2026-11-04 (nhãn hãng thật): bia lager đóng gói theo loại 39–43 kcal/100 ml — Heineken 5% qua heineken.com/OpenFoodFacts 42 kcal/100 ml (carb 3,2 g); Tiger 5% qua Tesco/OpenFoodFacts 41–42 kcal/100 ml; bảng Pháp Ciqual 2025 cho lager 4–5% là 39 kcal/100 g. Số cũ 43 kcal/100 ml (USDA FDC 168746, điểm duy nhất) nằm ở đầu trên khoảng — nay dùng khoảng theo nhãn hãng, không lấy một hãng làm điểm cho cả loại. ABV theo loại 4,0–5,0% không đổi.",
+      "confidence": "low",
       "source_ref": "data/reference/usda-sr_legacy.csv, FDC 168746"
     },
     {
@@ -90,7 +90,7 @@
   "needs_review": true,
   "reviewed_by": null,
   "reviewed_at": null,
-  "review_note": "Thí điểm bổ sung thông tin đồ uống 2026-11-03: thêm key_indicators, serving_note, allergen_note, origin_note; thống nhất ghi chú ABV (loại 4,0–5,0%, VN phổ biến 4,3–5,0%). Chờ Benjamin duyệt lại mục này — key_indicators chưa được seeder/controller/view đọc, cần giai đoạn schema riêng để hiển thị.",
+  "review_note": "SOÁT LẠI 2026-11-04 theo lệnh của Benjamin (không dùng khoảng tự suy cũ): đối chiếu nhãn hãng thật đang bán, xem drink-verification-packaged.md — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §6; USDA SR Legacy FDC 168746 cho kcal/carb theo loại.",
   "media": [
     {
