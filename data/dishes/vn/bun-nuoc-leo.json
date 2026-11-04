@@ -148,10 +148,10 @@
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",
-  "needs_review": false,
+  "needs_review": true,
   "reviewed_by": "tsnam1110@gmail.com",
   "reviewed_at": "2026-10-31",
-  "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này).",
+  "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này). [Soát lại E-batch lô 7, 2026-11-05: file dùng mắm ruốc 8 g 'tạm tính' thay cho nền lèo định danh — mọi nguồn đều nấu nước lèo từ mắm cá linh + mắm cá sặc với lượng LỚN (BHX/Tripi/mykhanh: 200 g + 200 g/mẻ; nghienbep: 75 g + 75 g cho 3 lít nước), hoàn toàn khác mắm ruốc về loài và lượng; bước 2 nói 'thịt quay' nhưng danh sách chỉ có thịt lợn mông 40 g (không phải quay) và không có tôm như các nguồn (300 g tôm/mẻ); ngải bún file 5 g so với 100 g/mẻ của nguồn; tổng các dòng 328 g so với khẩu phần 460 g thiếu nước lèo — giữ cờ chưa duyệt, chờ hồ sơ mắm cá linh/cá sặc có số và sửa lại nền lèo + topping theo nguồn.]",
   "tags": [
     "dac-san:soc-trang",
     "loai:bun-pho-mi"
