@@ -29,7 +29,7 @@
     "Rót espresso nóng lên gelato tại bàn; ăn/uống ngay khi tan."
   ],
   "sugar_added_g": 10,
-  "sugar_note": "Đường khoảng 10–15 g từ gelato; thường không thêm đường.",
+  "sugar_note": "Đường thêm 10 g, tách khỏi đường có sẵn trong gelato (khoảng 15 g/60 g gelato theo nhãn).",
   "caffeine_level": "cao",
   "alcohol": false,
   "alcohol_pct_estimate": null,
@@ -88,7 +88,7 @@
       "value_min": null,
       "value_max": null,
       "per_serving": "10 g/ly",
-      "basis": "sugar_added_g trong file catalogue = 10 g; kiểm chéo: gelato 60 g, đường khoảng 15 g theo nhãn (25 g/100 g), cao hơn 10 g trong file — file có thể chỉ tính đường thêm ngoài gelato, ghi chú này để chủ dự án chốt lại, không tự sửa file gốc.",
+      "basis": "sugar_added_g = 10 g là đường thêm, tách khỏi đường có sẵn trong gelato (60 g gelato, đường khoảng 15 g theo nhãn 25 g/100 g); đã chốt 2026-11-04 theo duyệt của Benjamin, giữ nguyên 10 g.",
       "confidence": "low",
       "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
     },
