@@ -47,6 +47,12 @@
             <button id="week-restart" class="ld-btn ld-btn-gray" style="padding:11px 22px;font-size:15.5px">Bắt đầu lại phần còn lại</button>
         </div>
         <p class="ld-note" style="margin-top:-6px;margin-bottom:14px">Bắt đầu lại chỉ xây lại các ngày từ ngày đã chọn trở đi; các ngày trước đó giữ nguyên, kể cả món bạn đã đổi tay.</p>
+        <div class="ld-card" style="display:flex;gap:10px;flex-wrap:wrap;align-items:end;margin-bottom:14px">
+            <div style="flex:1;min-width:200px"><label class="ld-field-label" for="week-budget">Ngân sách mềm cho tuần này (đồng, để trống = chưa đặt)</label>
+                <input id="week-budget" type="number" min="0" class="ld-input" placeholder="Ví dụ: 1500000"></div>
+            <button id="week-set-budget" class="ld-btn ld-btn-gray" style="padding:11px 22px;font-size:15.5px">Lưu ngân sách</button>
+        </div>
+        <p class="ld-note" style="margin-top:-6px;margin-bottom:14px">Ngân sách chỉ là mục tiêu bạn đặt. Chưa tính được tổng tiền thật vì chưa có bảng giá/gói đủ nguồn, nên hệ thống không kết luận tuần này dưới hay vượt ngân sách.</p>
         <div style="margin-bottom:14px"><button id="week-shopping" class="ld-btn ld-btn-gray" style="padding:11px 22px;font-size:15.5px">Danh sách đi chợ</button></div>
         <div id="week-shopping-list" style="display:none"></div>
         <div class="ld-card" style="margin-bottom:14px">
@@ -108,6 +114,7 @@ async function showPlan(id) {
     const p = data.plan;
     document.getElementById('week-detail').style.display = 'block';
     document.getElementById('week-detail-title').textContent = `Chi tiết tuần ${p.start_date} – ${p.end_date}`;
+    document.getElementById('week-budget').value = p.budget_vnd ?? '';
     document.getElementById('week-days').innerHTML = data.days.map(d => {
         const v = d.validation;
         const extra = v.status === 'thieu'
@@ -191,6 +198,14 @@ document.getElementById('week-exclude-q').addEventListener('input', (e) => {
         });
     }, 350);
 });
+document.getElementById('week-set-budget').onclick = async () => {
+    if (!currentPlanId) return;
+    const val = document.getElementById('week-budget').value;
+    const resp = await fetch(`/api/week-plans/${currentPlanId}/budget`, { method: 'POST', headers, body: JSON.stringify({ budget_vnd: val === '' ? null : +val }) });
+    const res = await resp.json();
+    if (!resp.ok) { alert(res.message || 'Lưu ngân sách thất bại'); return; }
+    if (window.ldToast) ldToast('Đã lưu ngân sách mềm — chưa có tổng tiền thật để so sánh');
+};
 document.getElementById('week-shopping').onclick = async () => {
     if (!currentPlanId) return;
     const data = await (await fetch(`/api/week-plans/${currentPlanId}/shopping-list`)).json();

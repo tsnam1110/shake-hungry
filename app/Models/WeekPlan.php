@@ -20,6 +20,7 @@ class WeekPlan extends Model
             'end_date' => 'date',
             'target_protein_g_per_day' => 'integer',
             'target_kcal_per_day' => 'integer',
+            'budget_vnd' => 'integer',
         ];
     }
 

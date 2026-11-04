@@ -266,6 +266,19 @@ class WeekPlanController extends Controller
         return response()->json($builder->build($weekPlan));
     }
 
+    /** Giai đoạn 4, Task 1 — đặt ngân sách mềm cho tuần (mục tiêu, không phải tổng tiền thật). */
+    public function setBudget(Request $request, WeekPlan $weekPlan): JsonResponse
+    {
+        $this->authorizePlan($request, $weekPlan);
+        $data = $request->validate(['budget_vnd' => ['nullable', 'integer', 'min:0', 'max:100000000']]);
+        $weekPlan->update(['budget_vnd' => $data['budget_vnd'] ?? null]);
+
+        return response()->json([
+            'plan' => $this->presentPlan($weekPlan->fresh()->load('days')),
+            'note' => 'Ngân sách mềm: chỉ là mục tiêu bạn đặt. Chưa tính được tổng tiền thật của tuần vì chưa có bảng giá/gói đủ nguồn, nên hệ thống không kết luận tuần này dưới hay vượt ngân sách.',
+        ]);
+    }
+
     private function findMeal(WeekPlan $weekPlan, $mealId)
     {
         $meal = \App\Models\WeekPlanMeal::with('day')->find($mealId);
@@ -299,6 +312,7 @@ class WeekPlanController extends Controller
             'goal' => $plan->goal,
             'target_protein_g_per_day' => $plan->target_protein_g_per_day,
             'target_kcal_per_day' => $plan->target_kcal_per_day,
+            'budget_vnd' => $plan->budget_vnd,
             'status' => $plan->status,
             'days' => $days->map(fn ($d) => [
                 'id' => $d->id, 'date' => $d->date->toDateString(), 'status' => $d->status,

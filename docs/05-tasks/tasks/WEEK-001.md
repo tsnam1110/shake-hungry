@@ -247,6 +247,21 @@ này trước Task suy kcal từ TDEE + mục tiêu (thuộc Phần 2.1, sau for
   theo gian hàng thay vì theo category phẳng.
 - Test thêm: thịt gà vào "Quầy thịt · thủy sản".
 
+## Giai đoạn 4 — Ngân sách mềm + hộ gia đình (theo lệnh duyệt toàn bộ lộ trình)
+
+### Task 1 — Ngân sách mềm — ĐÃ XONG (2026-11-04)
+- Migration thêm `budget_vnd` vào `week_plans`; API POST
+  /api/week-plans/{plan}/budget; trang /tuan-an có ô lưu ngân sách.
+- Ngân sách CHỈ là mục tiêu mềm do người dùng đặt, không phải tổng
+  tiền thật, và hệ thống không kết luận dưới/vượt — vì chưa có bảng
+  giá/gói đủ nguồn. Tổng tiền thật và quy đổi gói cho từng mặt hàng
+  CHƯA làm được một cách trung thực, xem phần "Còn chặn bởi dữ liệu"
+  ở cuối file: chỉ có 1 kênh BHX đạt chuẩn trực tiếp, các snapshot
+  khác ngày không được cộng thành tổng tuần, chưa có kênh chợ, chưa
+  cân mớ rau thơm, chưa có kênh siêu thị thứ hai cùng ngày.
+- Test `tests/Feature/WeekBudgetTest.php`: lưu ngân sách 1.500.000 đ,
+  ghi rõ chưa có tổng tiền thật, số âm bị 422.
+
 ## Các phần tiếp theo (theo lệnh duyệt toàn bộ lộ trình 2026-11-04, làm tiếp không hỏi duyệt giữa chừng)
 - Phần 2.5, Task 2–5: đổi ngày bắt đầu, bắt đầu lại phần còn lại, ăn ngoài, loại thực phẩm.
 - Phần 2.6: danh sách đi chợ theo gram, không gói, không giá.
