@@ -13,12 +13,14 @@
     {
       "name": "trà",
       "quantity": 150,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "tra-den"
     },
     {
       "name": "bột sữa",
       "quantity": 25,
-      "unit": "g"
+      "unit": "g",
+      "ingredient_slug": "bot-sua"
     },
     {
       "name": "trân châu trắng",
@@ -55,10 +57,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn trà đen + bột sữa, trân châu trắng chưa có hồ sơ (100–150, không dùng hồ sơ trân châu đen), mẫu số 200 ml đồ uống — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -67,5 +69,32 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 200,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml đồ uống",
+      "value_min": 82,
+      "value_max": 107,
+      "value": null,
+      "per_serving": "≈164–214 kcal/ly (200 ml đồ uống gồm trân châu, chưa tính đá tan)",
+      "basis": "Cộng tay: trà 150 ml × 1 = 1,5 kcal; bột sữa 25 g × 450–550 / 100 = 112,5–137,5 kcal; trân châu trắng 50 g — khoảng 50,0–75,0 kcal (trân châu trắng nấu, không ướp đường đen như trân châu đen, nên KHÔNG dùng hồ sơ tran-chau-da-nau 150–200; trân châu nấu không đường khoảng 100–150 kcal/100 g, chưa có hồ sơ riêng nên để khoảng, không dùng điểm). Tổng 164,0–214,0 kcal / 200 ml đồ uống (150 + 50) = 82–107 kcal/100 ml. Đây chưa phải đầu ra engine; engine chưa gắn trân châu trắng nên sẽ thiếu phần này.",
+      "confidence": "low",
+      "source_ref": "data/ingredients/tra-den.json, bot-sua.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 15,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "15 g/ly (theo file, chưa tính đường trong bột sữa)",
+      "basis": "sugar_added_g trong file = 15 g; kiểm chéo: đường trong bột sữa khoảng 12,5 g, gần 15 g — file có thể tính cả đường trong bột sữa, ghi chú để chủ dự án chốt.",
+      "confidence": "low",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Đã gắn 2/3 dòng trong ly: bột sữa có tag allergen:sua — dị ứng Sữa đã xác nhận theo hồ sơ bot-sua; trân châu trắng chưa gắn hồ sơ nên không kết luận đầy đủ.",
+  "tcm_note": "Không kết luận tính vị: trà đen, bột sữa và trân châu trắng đều không có nhãn tính vị trong hồ sơ."
 }
