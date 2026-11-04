@@ -76,10 +76,10 @@
       "label": "Năng lượng",
       "unit": "kcal/100 ml chất lỏng",
       "value_min": 37,
-      "value_max": 46,
+      "value_max": 52,
       "value": null,
-      "per_serving": "≈72–89 kcal/ly (195 ml chất lỏng, chưa tính đá tan)",
-      "basis": "Cộng tay với khoảng cho tắc (xem ghi chú): trà đen 150 ml × 1 = 1,5 kcal; tắc 2 quả × 19 g = 38 g — nước tắc vắt chỉ khoảng 10–12 kcal, cả quả 38 g × 71 / 100 = 27,0 kcal, nên để khoảng 10–27 kcal vì file không ghi rõ dùng nước vắt hay cả quả; siro đường 25 ml × 1,24 × 194 / 100 = 60,2 kcal. Tổng 71,7–88,7 kcal / 195 ml (150 + 25 + ~20 ml nước tắc) = 37–46 kcal/100 ml. Đây chưa phải đầu ra engine; engine gắn tắc cả quả nên sẽ cho đầu trên của khoảng.",
+      "per_serving": "≈72–101 kcal/ly (195 ml chất lỏng, chưa tính đá tan)",
+      "basis": "Cộng tay với khoảng cho tắc (xem ghi chú): trà đen 150 ml × 1 = 1,5 kcal; tắc 2 quả × 19 g = 38 g — nước tắc vắt chỉ khoảng 10–12 kcal, cả quả 38 g × 71 / 100 = 27,0 kcal, nên để khoảng 10–27 kcal vì file không ghi rõ dùng nước vắt hay cả quả; siro đường 25 ml × 1,24 × 194 / 100 = 60,2 kcal. Tổng tay 71,7–88,7 kcal; engine gắn tắc cả quả và nới khoảng thêm (tin cậy thấp) cho 76,1–101,2 kcal/ly — khoảng công bố gộp tay + engine là 72–101 kcal/ly, 37–52 kcal/100 ml. Đây là khoảng gộp, không phải một phép tính duy nhất.",
       "confidence": "low",
       "source_ref": "data/ingredients/tra-den.json, tac.json, siro-duong.json"
     },
