@@ -59,7 +59,7 @@
   "needs_review": true,
   "reviewed_by": null,
   "reviewed_at": null,
-  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn dứa + đá, nước cốt dừa để khoảng 200–230, mẫu số 220 ml đồ uống đá bào — chưa qua duyệt lại sau khi sửa.",
+  "review_note": "SOÁT LẠI 2026-11-04 theo lệnh của Benjamin (không dùng bảng tự suy cũ): tính lại từ thành phần đã kiểm chứng đa nguồn, xem drink-verification-liqueur.md — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5.",
   "media": [
     {
@@ -74,11 +74,11 @@
     {
       "label": "Năng lượng",
       "unit": "kcal/100 ml chất lỏng",
-      "value_min": 49,
+      "value_min": 48,
       "value_max": 53,
       "value": null,
-      "per_serving": "≈108–117 kcal/ly (220 ml đồ uống đá bào, đá tính vào mẫu số)",
-      "basis": "Cộng tay: nước ép dứa 90 ml × 53 / 100 = 47,7 kcal; nước cốt dừa không đường 30 ml — khoảng 60–69 kcal (nước cốt dừa khoảng 200–230 kcal/100 g, chưa có hồ sơ riêng nên để khoảng); đá bào 100 g tính vào mẫu số theo quy tắc đá xay. Tổng 107,7–116,7 kcal / 220 ml đồ uống (90 + 30 + 100) = 49–53 kcal/100 ml. Đây chưa phải đầu ra engine.",
+      "per_serving": "≈105–117 kcal/ly (220 ml đồ uống đá bào, đá tính vào mẫu số)",
+      "basis": "SOÁT LẠI 2026-11-04 (đa nguồn): nước ép dứa 90 ml × 0,53 = 47,7 kcal; nước cốt dừa không đường 30 ml khoảng 57,6–69,0 kcal — MỞ RỘNG đầu dưới (cũ 60–69): nước cốt dừa đóng hộp thường 192–230 kcal/100 ml (USDA/FatSecret 192, các nguồn khác 197–230; bản light 60–120 và bản uống carton 19–21 là sản phẩm khác, không áp dụng); đá bào 100 g tính vào mẫu số theo quy tắc đá xay. Tổng mới 105,3–116,7 kcal / 220 ml đồ uống (90 + 30 + 100) = 48–53 kcal/100 ml (cũ 108–117, đầu dưới cao hơn 3 kcal). Đây chưa phải đầu ra engine.",
       "confidence": "low",
       "source_ref": "data/ingredients/dua-thom.json, nuoc-loc.json"
     },
@@ -89,7 +89,7 @@
       "value_min": null,
       "value_max": null,
       "per_serving": "0 g/ly (đường thêm), đường tự nhiên khoảng 10 g",
-      "basis": "sugar_added_g trong file = 0, đúng vì không thêm đường; đường tự nhiên trong nước ép dứa khoảng 10 g/100 ml × 90 ml = 9 g, cộng nước cốt dừa khoảng 1 g.",
+      "basis": "sugar_added_g trong file = 0 g; tổng đường thực sau soát lại khoảng 11,4 g (xem basis năng lượng).",
       "confidence": "medium",
       "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
     }
