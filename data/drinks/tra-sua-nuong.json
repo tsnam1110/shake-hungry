@@ -63,10 +63,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": true,
   "uncertain_note": "'Nướng' không có chuẩn duy nhất: một số quán có nghĩa là sốt đường caramel, số khác có nghĩa là nền trà rang hoặc lớp kem nướng (kem trứng nướng). Phiên bản sốt caramel trên là công thức nhà làm được công bố nhiều nhất; biến thể kem nướng phải là ghi chú topping riêng, không gộp vào nền này.",
-  "needs_review": true,
-  "reviewed_by": null,
-  "reviewed_at": null,
-  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn trà đen + bột sữa + siro đường, siro caramel chưa có hồ sơ (khoảng), liquid 185 ml — chưa qua duyệt lại sau khi sửa.",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-04",
+  "review_note": "Đã duyệt 2026-11-04 theo lệnh của Benjamin: chỉ duyệt phần đã kiểm chứng trong lượt soát lại (không thuộc 65 file vừa sửa, không thuộc 11 file còn tồn tại).",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {

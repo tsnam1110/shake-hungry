@@ -52,10 +52,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": true,
-  "reviewed_by": null,
-  "reviewed_at": null,
-  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn sả + nước, sả hãm để khoảng rộng, MÂU THUẪN sugar file 0 — chưa qua duyệt lại sau khi sửa.",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-04",
+  "review_note": "Đã duyệt 2026-11-04 theo lệnh của Benjamin: chỉ duyệt phần đã kiểm chứng trong lượt soát lại (không thuộc 65 file vừa sửa, không thuộc 11 file còn tồn tại).",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {

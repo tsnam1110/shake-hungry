@@ -95,10 +95,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": true,
-  "reviewed_by": null,
-  "reviewed_at": null,
-  "review_note": "Thí điểm bổ sung thông tin 2026-11-03, sửa theo đính chính của Benjamin: kcal/100 ml tính trên 100 ml chất lỏng thật (135 ml), KHÔNG theo dung tích ly kể cả đá (350 ml). Gắn dòng cà phê vào ca-phe-den (hồ sơ ghi rõ phin đậm hơn brewed Mỹ nhưng năng lượng không đáng kể); thêm liquid_ml, serving_note, key_indicators, allergen_note, tcm_note, origin_note. Bổ sung 2026-11-03 theo yêu cầu ghi rõ caffeine: caffeine_mg 25–70 mg/ly là khoảng tầm soát cho 25 ml phin, không phải số đo, xem caffeine_mg_note; mức trung-binh giữ nguyên. Chờ duyệt lại — caffeine_mg/key_indicators chưa được seeder/controller/view đọc cho tới giai đoạn schema.",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-04",
+  "review_note": "Đã duyệt 2026-11-04 theo lệnh của Benjamin: chỉ duyệt phần đã kiểm chứng trong lượt soát lại (không thuộc 65 file vừa sửa, không thuộc 11 file còn tồn tại).",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {

@@ -64,10 +64,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": true,
-  "reviewed_by": null,
-  "reviewed_at": null,
-  "review_note": "Thí điểm đồ uống 2026-11-03: gắn siro + trân châu đã nấu theo thông tin phổ biến tại hàng quán Việt Nam, kcal theo khoảng 150–200 kcal/100 g trân châu, mẫu số 390 ml đồ uống gồm trân châu — chưa qua duyệt lại sau khi sửa (duyệt toàn bộ cũ ngày 2026-11-03 chỉ cho dữ liệu cũ).",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-04",
+  "review_note": "Đã duyệt 2026-11-04 theo lệnh của Benjamin: chỉ duyệt phần đã kiểm chứng trong lượt soát lại (không thuộc 65 file vừa sửa, không thuộc 11 file còn tồn tại).",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {

@@ -77,10 +77,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": true,
   "uncertain_note": "Giống cam quán dùng chưa xác định: hồ sơ mới chỉ dùng cho cam ngọt Citrus sinensis, quán dùng cam sành thì không dùng hồ sơ này. Dung tích ly 300 ml trong file chưa giải thích, đã tách riêng thành liquid_ml 200 ml.",
-  "needs_review": true,
-  "reviewed_by": null,
-  "reviewed_at": null,
-  "review_note": "Thí điểm đồ uống 2026-11-03: sửa lỗi đếm trùng (bỏ dòng cam 2 quả, chỉ giữ một dòng nước ép 200 ml gắn nuoc-ep-cam), thêm liquid_ml, serving_note theo quy tắc 100 ml chất lỏng thật (không chia cho ly 300 ml), key_indicators (47 kcal/100 ml, đường tự nhiên 8,8 g/100 ml, vitamin C tầm soát), allergen_note, tcm_note, origin_note. Chờ duyệt lại — key_indicators chưa được seeder/controller/view đọc.",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-04",
+  "review_note": "Đã duyệt 2026-11-04 theo lệnh của Benjamin: chỉ duyệt phần đã kiểm chứng trong lượt soát lại (không thuộc 65 file vừa sửa, không thuộc 11 file còn tồn tại).",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {

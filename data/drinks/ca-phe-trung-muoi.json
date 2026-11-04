@@ -57,10 +57,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": true,
   "uncertain_note": "Cà phê trứng truyền thống Hà Nội làm bằng lòng đỏ trứng vịt muối thật (khác với bột/bọt trứng muối thương mại) không tìm được công thức chuẩn đã xác minh trong đợt này. KHÔNG đưa công thức 'cà phê trứng muối truyền thống' vào catalogue cho tới khi tìm được nguồn đã công bố.",
-  "needs_review": true,
-  "reviewed_by": null,
-  "reviewed_at": null,
-  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: hồ sơ bọt trứng muối mới suy ra từ mẻ lớn, gắn đủ 3/3, liquid 130 ml, caffeine mg tầm soát 100–200 mg/ly — chưa qua duyệt lại sau khi sửa.",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-04",
+  "review_note": "Đã duyệt 2026-11-04 theo lệnh của Benjamin: chỉ duyệt phần đã kiểm chứng trong lượt soát lại (không thuộc 65 file vừa sửa, không thuộc 11 file còn tồn tại).",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {

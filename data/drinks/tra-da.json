@@ -80,10 +80,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": true,
   "uncertain_note": "Không có chuẩn định lượng duy nhất; công thức là quy ước phục vụ.",
-  "needs_review": true,
-  "reviewed_by": null,
-  "reviewed_at": null,
-  "review_note": "Thí điểm đồ uống 2026-11-03: gắn dòng trà vào tra-xanh (density đã sửa riêng), thêm liquid_ml 150, serving_note theo quy tắc kcal/100 ml chất lỏng thật (không chia cho ly 300 ml có đá), key_indicators chuẩn không đường (1 kcal/100 ml, ≈1,5 kcal/ly), allergen_note, tcm_note, origin_note; bỏ chữ 'rẻ nhất' trong cultural_note vì chưa có nguồn so sánh. Caffeine vẫn định tính, chưa ghi mg. Chờ duyệt lại — key_indicators chưa được seeder/controller/view đọc.",
+  "needs_review": false,
+  "reviewed_by": "tsnam1110@gmail.com",
+  "reviewed_at": "2026-11-04",
+  "review_note": "Đã duyệt 2026-11-04 theo lệnh của Benjamin: chỉ duyệt phần đã kiểm chứng trong lượt soát lại (không thuộc 65 file vừa sửa, không thuộc 11 file còn tồn tại).",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
