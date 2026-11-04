@@ -127,6 +127,14 @@
       "is_optional": true,
       "source": "llm_suggested",
       "confidence": "low"
+    },
+    {
+      "ingredient_slug": "nam-huong-kho",
+      "quantity": 10,
+      "unit_name": "g",
+      "is_optional": true,
+      "source": "llm_suggested",
+      "confidence": "low"
     }
   ],
   "recipe_steps": [
@@ -161,7 +169,7 @@
   ],
   "estimated_kcal": null,
   "external_ref": null,
-  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-007 đợt 7: thử nâng Mức 2 — GIỮ MỨC 1 dù đã đủ 3 nguồn đã mở (Điện Máy XANH 2 bài công thức độc lập tính 1 nhà xuất bản + Cookpad VTL). Lý do: chà bông xuất hiện ở 3/3 nguồn (~10–14g/khẩu phần) là topping định danh của xôi mặn nhưng kho chưa có số dinh dưỡng đạt chuẩn cho slug cha-bong (đã tạo hồ sơ null đợt này — tra SR Legacy/FNDDS trong repo không có mục pork floss); bổ sung dòng không số sẽ làm món mất khả năng tính dinh dưỡng (tiền lệ bun-mam LV2-006). Các dòng còn lại đều GIỮ theo phân xử: nếp 180g (dải nguồn 88–215), lạp xưởng 30g (1 nguồn khớp ~28g), giò lụa 30g và tôm khô 10g giữ kèm ghi nhận (mỗi dòng chỉ 1 nguồn định lượng, chưa đủ ngưỡng sửa; tôm khô ở nguồn là dạng ruốc tôm xay — khác vai trò rắc của file), trứng cút 20g (nguồn 25–29g, lệch ở ngưỡng dưới), hành phi 8g (1 nguồn 14g). BẤT THƯỜNG: thịt lợn xay rim 30g không xuất hiện ở bất kỳ nguồn nào đã mở (nguồn dùng thịt nạc ram/xé sợi hoặc không thịt rời) — giữ nguyên vì công thức đã được chủ dự án duyệt toàn bộ 2026-10-31, chỉ ghi nhận. Khi cha-bong có số: bổ sung ~12g và nâng Mức 2 ngay, không cần tra lại.] [T-05, 2026-11-02: ĐÃ ÁP ĐIỀU KIỆN NÀY — cha-bong đã có số vn_nin 07074 'Ruốc thịt lợn' (Bảng TPTP VN 2007, bản toàn văn mở tận nơi: 369 kcal, đạm 46,6, béo 20,3, carb 0). Đã bổ sung dòng cha-bong 12g và ghi 3 recipe_sources kiểm chứng lại tận nơi ngày 2026-11-02 (Điện Máy XANH — chà bông 50g/3–4 người; Cookpad NgaLe; VnExpress). Món nay tính được đầy đủ và đạt cổng Mức 2 THƯỜNG (V12: ≥3 nguồn + tính đủ) → gỡ level_basis='tcm_compensation' và level_note, completeness_level giữ 2. Các dòng định lượng khác giữ nguyên theo phân xử LV2-007.]",
+  "import_note": "Soạn nháp đợt mở rộng 300 món (DISH-003) 2026-10-31 (llm_suggested, chờ người duyệt). Mọi dòng nguyên liệu mang source=llm_suggested, chờ biên tập viên duyệt trong trang quản trị. Mức hoàn thiện giữ ở 1 theo cổng V12: Mức 2 đòi ≥3 nguồn công thức (recipe_sources) đã kiểm chứng — phần nguồn sẽ bổ sung khi biên soạn viên tra cứu, không tự tạo liên kết. [LV2-007 đợt 7: thử nâng Mức 2 — GIỮ MỨC 1 dù đã đủ 3 nguồn đã mở (Điện Máy XANH 2 bài công thức độc lập tính 1 nhà xuất bản + Cookpad VTL). Lý do: chà bông xuất hiện ở 3/3 nguồn (~10–14g/khẩu phần) là topping định danh của xôi mặn nhưng kho chưa có số dinh dưỡng đạt chuẩn cho slug cha-bong (đã tạo hồ sơ null đợt này — tra SR Legacy/FNDDS trong repo không có mục pork floss); bổ sung dòng không số sẽ làm món mất khả năng tính dinh dưỡng (tiền lệ bun-mam LV2-006). Các dòng còn lại đều GIỮ theo phân xử: nếp 180g (dải nguồn 88–215), lạp xưởng 30g (1 nguồn khớp ~28g), giò lụa 30g và tôm khô 10g giữ kèm ghi nhận (mỗi dòng chỉ 1 nguồn định lượng, chưa đủ ngưỡng sửa; tôm khô ở nguồn là dạng ruốc tôm xay — khác vai trò rắc của file), trứng cút 20g (nguồn 25–29g, lệch ở ngưỡng dưới), hành phi 8g (1 nguồn 14g). BẤT THƯỜNG: thịt lợn xay rim 30g không xuất hiện ở bất kỳ nguồn nào đã mở (nguồn dùng thịt nạc ram/xé sợi hoặc không thịt rời) — giữ nguyên vì công thức đã được chủ dự án duyệt toàn bộ 2026-10-31, chỉ ghi nhận. Khi cha-bong có số: bổ sung ~12g và nâng Mức 2 ngay, không cần tra lại.] [T-05, 2026-11-02: ĐÃ ÁP ĐIỀU KIỆN NÀY — cha-bong đã có số vn_nin 07074 'Ruốc thịt lợn' (Bảng TPTP VN 2007, bản toàn văn mở tận nơi: 369 kcal, đạm 46,6, béo 20,3, carb 0). Đã bổ sung dòng cha-bong 12g và ghi 3 recipe_sources kiểm chứng lại tận nơi ngày 2026-11-02 (Điện Máy XANH — chà bông 50g/3–4 người; Cookpad NgaLe; VnExpress). Món nay tính được đầy đủ và đạt cổng Mức 2 THƯỜNG (V12: ≥3 nguồn + tính đủ) → gỡ level_basis='tcm_compensation' và level_note, completeness_level giữ 2. Các dòng định lượng khác giữ nguyên theo phân xử LV2-007.] GỘP V7 2026-11-04 theo lệnh của Benjamin: đã gộp xôi thập cẩm (xoi-thap-cam, khẩu phần 280 g) vào món này (xôi mặn thập cẩm, khẩu phần 350 g) vì cùng một món xôi mặn Sài Gòn; chỉ mang sang dòng nấm hương khô 10 g (tùy chọn) từ file bị gộp, còn lại giữ nguyên công thức, định lượng và các bước của file này — không tự chế công thức gộp từ hai khẩu phần khác nhau. File xoi-thap-cam đã xoá.",
   "cultural_note": {
     "text": "Khác với Hà Nội gọi tên từng loại xôi riêng, xôi Sài Gòn được chia thành hai nhóm rõ ràng là xôi mặn và xôi ngọt, trong đó xôi mặn xuất hiện muộn hơn để hợp khẩu vị dòng người tứ xứ đổ về thành phố. Một phần xôi mặn thập cẩm thường gồm nếp kèm lạp xưởng, xá xíu, trứng cút, chà bông, thêm đậu xanh xào mỡ, mỡ hành hoặc hành phi. Không chỉ là món điểm tâm đầu hẻm với tiếng rao buổi sớm, xôi mặn còn được nhiều người dùng thay bữa chính khi lỡ bữa.",
     "sources": [
@@ -178,10 +186,10 @@
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-10-31",
-  "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Gộp V7 2026-11-04 theo lệnh của Benjamin (xoi-thap-cam gộp vào xoi-man) — chờ Benjamin duyệt lại món sau gộp.",
   "tags": [
     "loai:xoi"
   ]
