@@ -73,7 +73,7 @@
   "needs_review": true,
   "reviewed_by": null,
   "reviewed_at": null,
-  "review_note": "SOÁT LẠI 2026-11-04 theo lệnh của Benjamin (không dùng bảng tự suy cũ): tính lại từ rượu mùi đã kiểm chứng đa nguồn, xem drink-verification-liqueur.md — chưa qua duyệt lại sau khi sửa.",
+  "review_note": "KIỂM THỬ LẠI ĐỢT 2 (2026-11-04) theo lệnh của Benjamin: tái kiểm từng thành phần bằng nhãn hãng/nguồn độc lập — vẫn giữ cờ chưa duyệt, chờ Benjamin duyệt riêng.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5.",
   "media": [
     {
@@ -88,11 +88,11 @@
     {
       "label": "Năng lượng",
       "unit": "kcal/100 ml chất lỏng",
-      "value_min": 162,
-      "value_max": 162,
+      "value_min": 165,
+      "value_max": 165,
       "value": null,
-      "per_serving": "≈162 kcal/ly (100 ml chất lỏng)",
-      "basis": "SOÁT LẠI 2026-11-04 (đa nguồn): vodka 50 ml × 2,21 = 110,5 kcal; rượu mùi cà phê 10 ml × 2,69 = 26,9 kcal (lấy số Kahlúa theo e-label hãng Pernod Ricard 269 kcal/100 ml, cũ tự suy 25,0); siro vani 10 ml × 2,41 = 24,1 kcal (CHƯA kiểm chứng, giữ số cũ); espresso 30 ml × 0,03 = 0,9 kcal. Tổng mới 162,4 kcal / 100 ml = 162 kcal/100 ml (cũ 160, thấp hơn 2 kcal). ABV 22,0% không đổi. Đây vẫn chưa phải đầu ra engine.",
+      "per_serving": "≈165 kcal/ly (100 ml chất lỏng)",
+      "basis": "KIỂM THỬ LẠI ĐỢT 2 (2026-11-04, đa nguồn): vodka 50 ml × 2,21 = 110,5 kcal; rượu mùi cà phê 10 ml × 2,69 = 26,9 kcal (e-label Kahlúa 269); siro vani 10 ml × 2,67 = 26,7 kcal — SỬA so với cũ (2,41/ml, lấy số siro đường đơn): Torani Vanilla qua OpenFoodFacts/ShopRite 80 kcal, 20 g đường/30 ml, tức 267 kcal, 66,7 g đường/100 ml (bản không đường 0 kcal là sản phẩm khác); espresso 30 ml × 0,03 = 0,9 kcal. Tổng mới 165,0 kcal / 100 ml = 165 kcal/100 ml (cũ 162, thấp hơn 3 kcal). ABV 22,0% không đổi. Đây vẫn chưa phải đầu ra engine.",
       "confidence": "low",
       "source_ref": "Bảng kcal/ml cocktail trong hồ sơ triển khai (ethanol + đường, xem basis)"
     },
