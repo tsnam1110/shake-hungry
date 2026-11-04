@@ -71,7 +71,7 @@
   "needs_review": true,
   "reviewed_by": null,
   "reviewed_at": null,
-  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: kcal từ ethanol + đường theo công thức, ABV suy ra từ công thức, chưa qua duyệt lại sau khi sửa.",
+  "review_note": "SOÁT LẠI 2026-11-04 theo lệnh của Benjamin (không dùng bảng tự suy cũ): tính lại từ thành phần đã kiểm chứng đa nguồn, xem drink-verification-liqueur.md — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5.",
   "media": [
     {
@@ -86,20 +86,20 @@
     {
       "label": "Năng lượng",
       "unit": "kcal/100 ml chất lỏng",
-      "value_min": 224,
-      "value_max": 224,
+      "value_min": 226,
+      "value_max": 226,
       "value": null,
-      "per_serving": "≈302 kcal/ly (135 ml chất lỏng)",
-      "basis": "Cộng tay từ công thức (ethanol 7 kcal/g, mật độ 0,789 g/ml + đường 4 kcal/g; rượu mùi tính cả ethanol và đường theo nhãn loại, chưa đo trực tiếp): vodka 60 ml × 2.21 = 132.6 kcal; espresso/cold brew 30 ml × 0.03 = 0.9 kcal; sữa đặc 30 ml × 4.38 = 131.4 kcal; Kahlúa 15 ml × 2.5 = 37.5 kcal. Tổng 302.4 kcal / 135 ml = 224 kcal/100 ml. ABV suy ra từ công thức: 20.0% (ethanol 27.0 ml / 135 ml chất lỏng). Đây chưa phải đầu ra engine (engine chưa có logic ethanol).",
+      "per_serving": "≈305 kcal/ly (135 ml chất lỏng)",
+      "basis": "SOÁT LẠI 2026-11-04 (đa nguồn): vodka 60 ml × 2,21 = 132,6 kcal; espresso/cold brew 30 ml × 0,03 = 0,9 kcal; sữa đặc 30 ml × 4,38 = 131,4 kcal (hồ sơ sữa đặc 334–341 kcal/100 g, mật độ 1,29); Kahlúa 15 ml × 2,69 = 40,4 kcal (e-label hãng Pernod Ricard 269 kcal/100 ml, cũ tự suy 37,5). Tổng mới 305,3 kcal / 135 ml = 226 kcal/100 ml (cũ 302, thấp hơn 3 kcal). ABV 20,0% không đổi. Đây vẫn chưa phải đầu ra engine.",
       "confidence": "low",
       "source_ref": "Bảng kcal/ml cocktail trong hồ sơ triển khai (ethanol + đường, xem basis)"
     },
     {
       "label": "Độ cồn",
       "unit": "% ABV",
-      "value": 20.0,
-      "value_min": null,
-      "value_max": null,
+      "value": null,
+      "value_min": 20.0,
+      "value_max": 20.0,
       "per_serving": "≈20.0% ABV",
       "basis": "ABV suy ra từ công thức: ethanol 27.0 ml trên tổng 135 ml chất lỏng = 20.0%. Đây là ABV của ly pha theo công thức, chưa đo trực tiếp, và thay đổi nếu quán dùng rượu có ABV khác.",
       "confidence": "medium",
@@ -112,7 +112,7 @@
       "value_min": null,
       "value_max": null,
       "per_serving": "25 g/ly (theo file, tổng đường thực khoảng 23 g)",
-      "basis": "sugar_added_g trong file = 25 g (đường thêm từ siro/đường, theo cách ghi của file); tổng đường thực ước tính từ rượu mùi, nước ép và siro khoảng 23 g, cao hơn số file vì file không tính đường trong rượu mùi và nước ép.",
+      "basis": "sugar_added_g trong file = 25 g; tổng đường thực sau soát lại khoảng 31,9 g (xem basis năng lượng).",
       "confidence": "low",
       "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
     }
