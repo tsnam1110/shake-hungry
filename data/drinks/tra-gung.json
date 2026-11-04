@@ -13,12 +13,14 @@
     {
       "name": "gừng tươi",
       "quantity": 15,
-      "unit": "g"
+      "unit": "g",
+      "ingredient_slug": "gung-tuoi"
     },
     {
       "name": "nước",
       "quantity": 250,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "nuoc-loc"
     },
     {
       "name": "mật ong",
@@ -51,10 +53,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: hồ sơ gừng tươi mới, gắn đủ 3/3, liquid 260 ml, gừng hãm là đầu trên — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -63,5 +65,32 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 260,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml chất lỏng",
+      "value": 21,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "≈55 kcal/ly (260 ml chất lỏng)",
+      "basis": "Cộng tay: gừng 15 g × 80 / 100 = 12,0 kcal (gừng hãm rồi lọc, phần xác không ăn nên số này là đầu trên — phần tan vào nước thấp hơn, ghi rõ); nước 0 kcal; mật ong 10 ml × 1,42 × 304 / 100 = 43,2 kcal. Tổng 55,2 kcal / 260 ml = 21 kcal/100 ml. Đây chưa phải đầu ra engine.",
+      "confidence": "low",
+      "source_ref": "data/ingredients/gung-tuoi.json, nuoc-loc.json, mat-ong.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 10,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "10 g/ly",
+      "basis": "sugar_added_g trong file catalogue = 10 g; kiểm chéo: mật ong 14,2 g, đường khoảng 11,6 g, gần 10 g trong sai số quán.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Đã gắn đủ 3/3 dòng trong ly: gừng, nước và mật ong đều không có tag dị ứng trong hồ sơ.",
+  "tcm_note": "Không kết luận tính vị: gừng tươi và mật ong đều không có nhãn tính vị trong hồ sơ."
 }
