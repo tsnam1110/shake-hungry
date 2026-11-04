@@ -56,8 +56,8 @@
   },
   "main_season_months": null,
   "best_months": null,
-  "kcal_per_100g": null,
-  "kcal_confidence": null,
+  "kcal_per_100g": 20,
+  "kcal_confidence": "medium",
   "aliases": [],
   "selection_note": "Thân trắng ngà đều màu, không xanh đầu, chắc, không nhũn, gốc cắt tươi.",
   "storage_note": "Như măng tây xanh, càng cần lạnh và dùng sớm; gọt vỏ xơ phía ngoài trước khi nấu.",
@@ -68,7 +68,7 @@
   "needs_review": true,
   "reviewed_by": null,
   "reviewed_at": null,
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau). Đính chính 2026-11-03: gắn hồ sơ nguyên liệu mới cùng slug để trang rau hiển thị ảnh (làm từng sản phẩm một); hồ sơ nguyên liệu mới chưa qua duyệt của chủ dự án.",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau). Đính chính 2026-11-03: gắn hồ sơ nguyên liệu mới cùng slug để trang rau hiển thị ảnh (làm từng sản phẩm một); hồ sơ nguyên liệu mới chưa qua duyệt của chủ dự án. KIỂM THỬ LẠI ĐỢT 2 (2026-11-04): đã điền kcal_per_100g theo hồ sơ nguyên liệu cùng slug vừa điền từ bảng USDA SR Legacy của repo — vẫn giữ cờ chưa duyệt, chờ Benjamin duyệt riêng.",
   "source": "catalogue-v2",
   "source_note": "Catalogue rau theo mùa v2 (2026-11-03), phần E — rau nhập khẩu / giống nhập trồng tại Việt Nam. Toàn bộ 18 mục chưa có hồ sơ repo nên kcal null — giữ thiếu, không copy số của loài/giống gốc."
 }
