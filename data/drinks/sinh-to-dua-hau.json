@@ -13,7 +13,8 @@
     {
       "name": "thịt dưa hấu bỏ hạt",
       "quantity": 200,
-      "unit": "g"
+      "unit": "g",
+      "ingredient_slug": "dua-hau"
     },
     {
       "name": "sữa tươi",
@@ -30,7 +31,8 @@
     {
       "name": "đá",
       "quantity": 100,
-      "unit": "g"
+      "unit": "g",
+      "ingredient_slug": "nuoc-loc"
     }
   ],
   "recipe_steps": [
@@ -59,10 +61,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn đủ 4/4, mẫu số 360 ml đồ uống đá xay — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -71,5 +73,32 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 360,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml đồ uống",
+      "value_min": 37,
+      "value_max": 38,
+      "value": null,
+      "per_serving": "≈134–136 kcal/ly (360 ml đồ uống đá xay)",
+      "basis": "Cộng tay: thịt dưa hấu 200 g × 30 / 100 = 60,0 kcal; sữa tươi 50 ml × 1,031 × 60–61 / 100 = 31,0–31,5 kcal; sữa đặc 10 ml × 1,29 × 334–341 / 100 = 43,1–44,0 kcal; đá xay 100 g tính vào mẫu số. Tổng 134,1–135,5 kcal / 360 ml đồ uống (200 + 50 + 10 + 100) = 37–38 kcal/100 ml. Đây chưa phải đầu ra engine.",
+      "confidence": "medium",
+      "source_ref": "data/ingredients/dua-hau.json, sua-tuoi.json, sua-dac.json, nuoc-loc.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 5,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "5 g/ly (theo file)",
+      "basis": "sugar_added_g trong file = 5 g; kiểm chéo: đường trong sữa đặc khoảng 7 g, gần 5 g trong sai số quán.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Đã gắn đủ 4/4 dòng trong ly: sữa tươi và sữa đặc có tag allergen:sua — dị ứng Sữa đã xác nhận; dưa hấu và đá không có tag dị ứng trong hồ sơ.",
+  "tcm_note": "Không kết luận tính vị: các dòng đều không có nhãn tính vị trong hồ sơ."
 }
