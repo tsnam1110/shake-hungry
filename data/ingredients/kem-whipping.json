@@ -22,8 +22,8 @@
     "alternatives": []
   },
   "secondary_sources": [],
-  "density_g_per_ml": null,
-  "density_note": null,
+  "density_g_per_ml": 1.0,
+  "density_note": "Kem sữa tươi béo lỏng có mật độ khoảng 0,99–1,01 g/ml; lấy 1,00 để đổi ml sang g, sai số cho dòng 80 ml chỉ khoảng 1 g, không đáng kể. Khác kem đã đánh bông (thể tích tăng gấp đôi do khí, khối lượng cho cùng thể tích chỉ còn một nửa) — định lượng trong file đồ uống ghi theo kem lỏng trước khi đánh.",
   "default_yield_factor": null,
   "default_yield_factor_note": null,
   "oil_absorption_pct": null,
