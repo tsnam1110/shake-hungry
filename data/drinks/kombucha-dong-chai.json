@@ -39,10 +39,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": true,
   "uncertain_note": "ABV và đường dao động lớn theo cách lên men và thương hiệu; bắt buộc đọc nhãn.",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04, làm cẩn thận theo QT-9: khoảng theo loại đóng gói, không lấy số một hãng — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §6.",
   "media": [
     {
@@ -51,5 +51,53 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml",
+      "value_min": 10,
+      "value_max": 25,
+      "value": null,
+      "per_serving": "≈33–83 kcal/chai 330 ml",
+      "basis": "Kombucha đóng chai là trà lên men: đường còn lại sau lên men khoảng 2–5 g/100 ml × 4 = 8–20 kcal, cộng axit hữu cơ và trà, tổng khoảng 10–25 kcal/100 ml. Khoảng rộng vì kombucha các hãng lên men và thêm đường/vị trái cây khác nhau nhiều (có hãng gần như không đường, có hãng ngọt như nước ngọt nhẹ) — ghi rõ. Không dùng engine (đồ đóng gói không qua engine).",
+      "confidence": "low",
+      "source_ref": "Nhãn đóng gói (khoảng theo loại, không phải một nhãn cụ thể)"
+    },
+    {
+      "label": "Đường",
+      "unit": "g/lon",
+      "value_min": 7,
+      "value_max": 17,
+      "value": null,
+      "per_serving": "≈7–17 g/chai 330 ml",
+      "basis": "Đường còn lại trong kombucha khoảng 2–5 g/100 ml, nhân chai 330 ml = 6,6–16,5 g, làm tròn 7–17 g/chai.",
+      "confidence": "low",
+      "source_ref": "Nhãn đóng gói (khoảng theo loại)"
+    },
+    {
+      "label": "Caffeine",
+      "unit": "mg/chai",
+      "value_min": 17,
+      "value_max": 33,
+      "value": null,
+      "per_serving": "≈17–33 mg/chai 330 ml (tầm soát)",
+      "basis": "Caffeine trong kombucha từ trà nền, khoảng 5–10 mg/100 ml (thấp hơn trà đóng chai vì pha loãng và lên men), nhân chai 330 ml = 16,5–33 mg, làm tròn 17–33 mg/chai. Đây là khoảng tầm soát, tin cậy thấp.",
+      "confidence": "low",
+      "source_ref": "Nồng độ caffeine trà lên men (tầm soát)"
+    },
+    {
+      "label": "Độ cồn",
+      "unit": "% ABV",
+      "value_min": 0.0,
+      "value_max": 0.5,
+      "value": null,
+      "per_serving": "<0,5% ABV (dấu vết lên men)",
+      "basis": "Kombucha lên men tự nhiên tạo ra cồn dấu vết, thường dưới 0,5% ABV (ngưỡng bia không cồn) — ghi rõ, không phải tuyệt đối 0%, và kombucha ủ tại nhà có thể cao hơn.",
+      "confidence": "low",
+      "source_ref": "Kombucha lên men (khoảng theo loại)"
+    }
+  ],
+  "allergen_note": "Kombucha lên men từ trà — không thuộc 14 chất gây dị ứng EU theo loại, nhưng một số chai có thể thêm vị trái cây/hương liệu; file chưa có dòng nguyên liệu để gắn tag, trang chi tiết phải hiện 'chưa đủ dữ kiện'.",
+  "tcm_note": "Không kết luận tính vị: mục đóng gói này chưa gắn hồ sơ nguyên liệu nên không kết luận ở tầng món."
 }
