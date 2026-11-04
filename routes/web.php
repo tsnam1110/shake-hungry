@@ -77,10 +77,21 @@ Route::get('/do-uong/{slug}', fn () => view('drink'));
 // Bảng nguyên liệu lưu ý — trang riêng, liệt kê toàn bộ cặp kết hợp (kể cả
 // cặp thuốc × thực phẩm và cặp có phía là đồ uống), dùng CombinationDisplay
 // + DISCLAIMER bắt buộc. Lớp THÔNG TIN thuần, không chặn hay lọc Lắc.
+// Danh sách gộp theo phía đầu thành nhóm (groups()); trang chi tiết theo
+// nhóm ở /ket-hop-can-luu-y/{nhom} giữ nguyên từng cặp riêng trong nhóm.
 Route::get('/ket-hop-can-luu-y', fn () => view('combinations', [
-    'combinations' => \App\Combinations\CombinationDisplay::all(),
+    'groups' => \App\Combinations\CombinationDisplay::groups(),
+    'total_pairs' => count(\App\Combinations\CombinationDisplay::all()),
     'disclaimer' => \App\Combinations\CombinationDisplay::DISCLAIMER,
 ]));
+Route::get('/ket-hop-can-luu-y/{group}', function (string $group) {
+    $g = \App\Combinations\CombinationDisplay::group($group);
+    abort_if($g === null, 404);
+    return view('combination', [
+        'group' => $g,
+        'disclaimer' => \App\Combinations\CombinationDisplay::DISCLAIMER,
+    ]);
+})->where('group', '[A-Za-z0-9_-]+');
 
 Route::prefix('api')->group(function () {
     // WEEK-001, Phần 2.4: tuần ví dụ công khai, đặt trước route /week-plans/{id} để không bị nuốt.

@@ -20,7 +20,7 @@
         <div style="margin-top:12px">
             <span class="ld-field-label">Tầng lưu ý</span>
             <div class="ld-chips" id="tier-filters">
-                <button type="button" class="ld-chip active" data-tier="">Tất cả ({{ count($combinations) }})</button>
+                <button type="button" class="ld-chip active" data-tier="">Tất cả ({{ count($groups) }} nhóm · {{ $total_pairs }} cặp)</button>
                 <button type="button" class="ld-chip" data-tier="1">Tầng 1 — Tránh kết hợp</button>
                 <button type="button" class="ld-chip" data-tier="2">Tầng 2 — Không nên kết hợp</button>
                 <button type="button" class="ld-chip" data-tier="3">Tầng 3 — Dân gian / đông y</button>
@@ -37,44 +37,64 @@
     </div>
 
     <div id="list" style="margin-top:16px">
-        @foreach ($combinations as $c)
-        <article class="ld-card combo-card" data-tier="{{ $c['tier'] }}" data-cat="{{ $c['category'] }}" data-text="{{ mb_strtolower($c['side_a_label'] . ' ' . $c['side_b_label']) }}" style="margin-top:12px">
-            <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center">
-                <span class="ld-chip active" style="cursor:default">{{ $c['tier_label'] }}</span>
-                <span class="ld-chip" style="cursor:default">{{ $c['category'] === 'drug_food' ? 'Thuốc × thực phẩm' : 'Thực phẩm × thực phẩm' }}</span>
-                <span style="font-size:13.5px;color:var(--color-faint)">{{ $c['science_label'] }}</span>
-            </div>
-            <div style="display:flex;gap:8px;align-items:center;margin-top:12px">
-                @foreach ([['label' => $c['side_a_label'], 'image' => $c['side_a_image']], ['label' => $c['side_b_label'], 'image' => $c['side_b_image']]] as $side)
-                    @if (!empty($side['image']))
-                        <img src="{{ $side['image']['thumb_url'] ?? $side['image']['url'] }}" srcset="{{ $side['image']['srcset'] ?? '' }}" sizes="84px" alt="{{ $side['label'] }}" loading="lazy" decoding="async" style="width:84px;height:84px;object-fit:cover;border-radius:12px;display:block;background:var(--color-fill)">
-                    @else
-                        <img src="/images/placeholder-ingredient.svg" alt="" loading="lazy" decoding="async" style="width:84px;height:84px;object-fit:cover;border-radius:12px;display:block;background:var(--color-fill)">
+        @foreach ($groups as $g)
+        {{-- Một thẻ = một phía neo + toàn bộ cặp của nó. Gộp chỉ gộp phần đầu;
+             từng cặp giữ nguyên lưu ý, cơ chế, nguồn riêng trong dòng của nó. --}}
+        <article class="ld-card combo-card" data-text="{{ mb_strtolower($g['label'] . ' ' . collect($g['pairs'])->map(fn ($p) => $p['side_b_label'])->join(' ')) }}" style="margin-top:12px">
+            <div style="display:flex;gap:12px;align-items:flex-start">
+                @if (!empty($g['image']))
+                    <img src="{{ $g['image']['thumb_url'] ?? $g['image']['url'] }}" srcset="{{ $g['image']['srcset'] ?? '' }}" sizes="84px" alt="{{ $g['label'] }}" loading="lazy" decoding="async" style="width:84px;height:84px;object-fit:cover;border-radius:12px;display:block;background:var(--color-fill);flex-shrink:0">
+                @else
+                    <img src="/images/placeholder-ingredient.svg" alt="" loading="lazy" decoding="async" style="width:84px;height:84px;object-fit:cover;border-radius:12px;display:block;background:var(--color-fill);flex-shrink:0">
+                @endif
+                <div style="min-width:0">
+                    <h2 style="margin:0;font-size:19px;font-weight:700">{{ $g['label'] }}</h2>
+                    <p style="margin:6px 0 0;font-size:14.5px;color:var(--color-sub)">{{ $g['count'] }} cặp cần lưu ý
+                        · {{ collect($g['categories'])->map(fn ($c) => $c === 'drug_food' ? 'Thuốc × thực phẩm' : 'Thực phẩm × thực phẩm')->join(' · ') }}</p>
+                    @if (!empty($g['member_labels']))
+                        <p class="ld-note" style="margin-top:4px">Nhóm này gồm: {{ implode(', ', $g['member_labels']) }}</p>
                     @endif
-                    @if (!$loop->last)
-                        <span aria-hidden="true" style="font-size:20px;font-weight:700;color:var(--color-faint)">×</span>
+                    @if (!empty($g['image']['representative']))
+                        <p class="ld-note" style="margin-top:4px">Ảnh đại diện: {{ $g['image']['representative'] }} — ảnh của một thành viên trong nhóm, không phải toàn bộ nhóm.</p>
                     @endif
-                @endforeach
+                </div>
             </div>
-            @if (!empty($c['side_a_image']['representative']) || !empty($c['side_b_image']['representative']))
-                <p class="ld-note" style="margin-top:6px">Ảnh đại diện:
-                    @foreach (array_filter([$c['side_a_image']['representative'] ?? null, $c['side_b_image']['representative'] ?? null]) as $rep)
-                        {{ $rep }}{{ !$loop->last ? ', ' : '' }}
-                    @endforeach
-                    — ảnh của một thành viên trong nhóm, không phải toàn bộ nhóm.</p>
-            @endif
-            <h2 style="margin:10px 0 0;font-size:18px;font-weight:700">{{ $c['side_a_label'] }} × {{ $c['side_b_label'] }}</h2>
-            <p style="margin:8px 0 0;font-size:15px;line-height:1.6">{{ $c['condition_vi'] }}</p>
-            @if (!empty($c['mechanism_vi']))
-            <p class="ld-note" style="margin-top:8px">Cơ chế: {{ $c['mechanism_vi'] }}</p>
-            @endif
-            @if (!empty($c['sources']))
-            <p class="ld-note" style="margin-top:6px">Nguồn:
-                @foreach ($c['sources'] as $s)
-                    @if (!empty($s['url']))<a href="{{ $s['url'] }}" target="_blank" rel="noopener">{{ $s['note'] ?? $s['url'] }}</a>@else{{ $s['note'] ?? '' }}@endif{{ !$loop->last ? '; ' : '' }}
-                @endforeach
-            </p>
-            @endif
+
+            @foreach ($g['pairs'] as $c)
+            <div class="combo-row" data-tier="{{ $c['tier'] }}" data-cat="{{ $c['category'] }}" data-text="{{ mb_strtolower($c['side_b_label'] . ' ' . ($c['condition_vi'] ?? '') . ' ' . ($c['mechanism_vi'] ?? '')) }}" style="margin-top:14px;border-top:1px solid var(--color-line);padding-top:14px">
+                <div style="display:flex;gap:10px;align-items:flex-start">
+                    @if (!empty($c['side_b_image']))
+                        <img src="{{ $c['side_b_image']['thumb_url'] ?? $c['side_b_image']['url'] }}" srcset="{{ $c['side_b_image']['srcset'] ?? '' }}" sizes="56px" alt="{{ $c['side_b_label'] }}" loading="lazy" decoding="async" style="width:56px;height:56px;object-fit:cover;border-radius:10px;display:block;background:var(--color-fill);flex-shrink:0">
+                    @endif
+                    <div style="min-width:0">
+                        <p style="margin:0;font-size:16px;line-height:1.5"><b>{{ $c['side_b_label'] }}</b>
+                            <span class="ld-badge bo">{{ $c['tier_label'] }}</span>
+                            <span style="font-size:13.5px;color:var(--color-faint)">{{ $c['category'] === 'drug_food' ? 'Thuốc × thực phẩm' : 'Thực phẩm × thực phẩm' }} · {{ $c['science_label'] }}</span>
+                        </p>
+                        <p style="margin:8px 0 0;font-size:15px;line-height:1.6">{{ $c['condition_vi'] }}</p>
+                        @if (!empty($c['counterpart_member_labels']))
+                            <p class="ld-note" style="margin-top:6px">Phía này gồm: {{ implode(', ', $c['counterpart_member_labels']) }}</p>
+                        @endif
+                        @if (!empty($c['mechanism_vi']))
+                            <p class="ld-note" style="margin-top:6px">Cơ chế: {{ $c['mechanism_vi'] }}</p>
+                        @endif
+                        @if (!empty($c['side_b_image']['representative']))
+                            <p class="ld-note" style="margin-top:4px">Ảnh đại diện: {{ $c['side_b_image']['representative'] }} — ảnh của một thành viên trong nhóm, không phải toàn bộ nhóm.</p>
+                        @endif
+                        @if (!empty($c['sources']))
+                            <p class="ld-note" style="margin-top:6px">Nguồn:
+                                @foreach ($c['sources'] as $s)
+                                    @if (!empty($s['url']))<a href="{{ $s['url'] }}" target="_blank" rel="noopener">{{ $s['note'] ?? $s['url'] }}</a>@else{{ $s['note'] ?? '' }}@endif{{ !$loop->last ? '; ' : '' }}
+                                @endforeach
+                            </p>
+                        @endif
+                        <p style="margin:8px 0 0"><a href="/ket-hop-can-luu-y/{{ $g['key'] }}#pair-{{ $c['slug'] }}" style="color:var(--color-link);text-decoration:none;font-size:14.5px;font-weight:600">Chi tiết cặp này ›</a></p>
+                    </div>
+                </div>
+            </div>
+            @endforeach
+
+            <p style="margin:16px 0 0;border-top:1px solid var(--color-line);padding-top:12px"><a href="/ket-hop-can-luu-y/{{ $g['key'] }}" style="color:var(--color-link);text-decoration:none;font-size:15px;font-weight:600">Xem chi tiết nhóm {{ $g['label'] }} →</a></p>
         </article>
         @endforeach
     </div>
@@ -86,13 +106,19 @@
 let tier = '', cat = '';
 function applyComboFilter() {
     const q = (document.getElementById('q').value || '').trim().toLowerCase();
-    let shown = 0;
-    document.querySelectorAll('.combo-card').forEach(el => {
-        const ok = (!tier || el.dataset.tier === tier) && (!cat || el.dataset.cat === cat) && (!q || el.dataset.text.includes(q));
-        el.hidden = !ok;
-        if (ok) shown++;
+    let shownGroups = 0;
+    document.querySelectorAll('.combo-card').forEach(card => {
+        let shownRows = 0;
+        card.querySelectorAll('.combo-row').forEach(row => {
+            const ok = (!tier || row.dataset.tier === tier) && (!cat || row.dataset.cat === cat)
+                && (!q || card.dataset.text.includes(q) || row.dataset.text.includes(q));
+            row.hidden = !ok;
+            if (ok) shownRows++;
+        });
+        card.hidden = shownRows === 0;
+        if (shownRows > 0) shownGroups++;
     });
-    document.getElementById('empty').hidden = shown > 0;
+    document.getElementById('empty').hidden = shownGroups > 0;
 }
 document.querySelectorAll('#tier-filters .ld-chip').forEach(b => b.addEventListener('click', () => {
     document.querySelectorAll('#tier-filters .ld-chip').forEach(x => x.classList.remove('active'));

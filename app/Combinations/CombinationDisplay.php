@@ -35,6 +35,93 @@ final class CombinationDisplay
             ->values()->all();
     }
 
+    /**
+     * Gộp 38 cặp thành nhóm theo phía đầu (side_a) để trang danh sách không
+     * tách một sản phẩm thành nhiều bản ghi rời rạc (VD: bưởi × 3 thuốc).
+     *
+     * Quy tắc gộp, ghi rõ để lần sau không "tiện tay" gộp sai:
+     * - Khóa gộp là side_a_ref, KHÔNG phải chuỗi tên: nhóm "Cua (cua biển,
+     *   cua đồng)" (ref cua, food_group) khác cặp "Cua biển × Hồng giòn"
+     *   (ref cua-bien, ingredient) — gộp theo tên sẽ lẫn nhóm với cá thể.
+     * - side_a luôn là phía thực phẩm trong toàn bộ kho (kể cả cặp thuốc ×
+     *   thực phẩm), nên phía neo luôn là thứ người dùng tìm, không bao giờ
+     *   là nhóm thuốc. Cặp chỉ thuộc đúng một nhóm, không nhân đôi.
+     * - Gộp CHỈ gộp phần đầu (ảnh, tên, số cặp); từng cặp giữ nguyên
+     *   condition/mechanism/sources riêng — không được gộp 3 lưu ý của bưởi
+     *   thành một cảnh báo chung, vì mỗi thuốc có mức độ khác nhau
+     *   (simvastatin tránh hẳn, atorvastatin chỉ tránh lượng lớn).
+     * - Trong nhóm, cặp xếp tầng 1 trước rồi tới tầng 3, sau đó theo slug.
+     * - Nhóm xếp theo side_a_ref (cùng thứ tự slug như all()) để ổn định.
+     *
+     * @return array<int, array{key: string, label: string, type: string, ref: string, image: ?array, member_labels: string[], url: ?string, count: int, categories: string[], tiers: int[], pairs: array[]}>
+     */
+    public static function groups(): array
+    {
+        $grouped = [];
+        foreach (self::all() as $pair) {
+            $key = $pair['side_a_ref'];
+            if (! isset($grouped[$key])) {
+                $grouped[$key] = [
+                    'key' => $key,
+                    'label' => $pair['side_a_label'],
+                    'type' => $pair['side_a_type'],
+                    'ref' => $key,
+                    'image' => $pair['side_a_image'],
+                    'member_labels' => self::memberLabels($pair['side_a_members'] ?? []),
+                    'url' => self::anchorUrl($pair['side_a_type'], $key),
+                    'pairs' => [],
+                ];
+            }
+            $pair['counterpart_member_labels'] = self::memberLabels($pair['side_b_members'] ?? []);
+            $grouped[$key]['pairs'][] = $pair;
+        }
+        $groups = [];
+        foreach ($grouped as $group) {
+            usort($group['pairs'], fn ($a, $b) => ($a['tier'] <=> $b['tier']) ?: strcmp($a['slug'], $b['slug']));
+            $group['count'] = count($group['pairs']);
+            $group['categories'] = array_values(array_unique(array_column($group['pairs'], 'category')));
+            $group['tiers'] = array_values(array_unique(array_column($group['pairs'], 'tier')));
+            sort($group['tiers']);
+            $groups[] = $group;
+        }
+        usort($groups, fn ($a, $b) => strcmp($a['key'], $b['key']));
+
+        return $groups;
+    }
+
+    /** Một nhóm theo khóa side_a_ref, hoặc null để route trả 404. */
+    public static function group(string $key): ?array
+    {
+        foreach (self::groups() as $group) {
+            if ($group['key'] === $key) {
+                return $group;
+            }
+        }
+
+        return null;
+    }
+
+    /** Tên hiển thị của các thành viên trong một phía nhóm (slug → name_vi). */
+    private static function memberLabels(?array $members): array
+    {
+        $labels = [];
+        foreach ($members ?? [] as $slug) {
+            $labels[] = Ingredient::where('slug', $slug)->value('name_vi') ?? $slug;
+        }
+
+        return $labels;
+    }
+
+    /** Link tới hồ sơ nguyên liệu/quả của phía neo đơn lẻ; nhóm thì không có. */
+    private static function anchorUrl(string $type, string $ref): ?string
+    {
+        return match ($type) {
+            'ingredient' => Ingredient::where('slug', $ref)->exists() ? '/nguyen-lieu/'.$ref : null,
+            'fruit' => Fruit::where('slug', $ref)->exists() ? '/hoa-qua/'.$ref : null,
+            default => null,
+        };
+    }
+
     /** Các cặp chạm tới một slug nguyên liệu/quả (hiển thị hai chiều). */
     public static function forItem(string $slug): array
     {
@@ -103,6 +190,10 @@ final class CombinationDisplay
             'mechanism_vi' => $c->mechanism_vi,
             'traditional_source' => $c->traditional_source,
             'sources' => $c->sources,
+            'side_a_type' => $a['type'],
+            'side_a_ref' => $a['ref'],
+            'side_a_members' => $a['members'],
+            'side_b_members' => $b['members'],
             'side_a_label' => self::sideLabel($a),
             'side_b_label' => self::sideLabel($b),
             // Ảnh dùng lại từ kho nguyên liệu/quả đã có (IMG-001), không vẽ
