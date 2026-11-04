@@ -44,6 +44,25 @@
                 <span class="ld-chip" style="cursor:default">{{ $c['category'] === 'drug_food' ? 'Thuốc × thực phẩm' : 'Thực phẩm × thực phẩm' }}</span>
                 <span style="font-size:13.5px;color:var(--color-faint)">{{ $c['science_label'] }}</span>
             </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:12px">
+                @foreach ([['label' => $c['side_a_label'], 'image' => $c['side_a_image']], ['label' => $c['side_b_label'], 'image' => $c['side_b_image']]] as $side)
+                    @if (!empty($side['image']))
+                        <img src="{{ $side['image']['thumb_url'] ?? $side['image']['url'] }}" srcset="{{ $side['image']['srcset'] ?? '' }}" sizes="84px" alt="{{ $side['label'] }}" loading="lazy" decoding="async" style="width:84px;height:84px;object-fit:cover;border-radius:12px;display:block;background:var(--color-fill)">
+                    @else
+                        <img src="/images/placeholder-ingredient.svg" alt="" loading="lazy" decoding="async" style="width:84px;height:84px;object-fit:cover;border-radius:12px;display:block;background:var(--color-fill)">
+                    @endif
+                    @if (!$loop->last)
+                        <span aria-hidden="true" style="font-size:20px;font-weight:700;color:var(--color-faint)">×</span>
+                    @endif
+                @endforeach
+            </div>
+            @if (!empty($c['side_a_image']['representative']) || !empty($c['side_b_image']['representative']))
+                <p class="ld-note" style="margin-top:6px">Ảnh đại diện:
+                    @foreach (array_filter([$c['side_a_image']['representative'] ?? null, $c['side_b_image']['representative'] ?? null]) as $rep)
+                        {{ $rep }}{{ !$loop->last ? ', ' : '' }}
+                    @endforeach
+                    — ảnh của một thành viên trong nhóm, không phải toàn bộ nhóm.</p>
+            @endif
             <h2 style="margin:10px 0 0;font-size:18px;font-weight:700">{{ $c['side_a_label'] }} × {{ $c['side_b_label'] }}</h2>
             <p style="margin:8px 0 0;font-size:15px;line-height:1.6">{{ $c['condition_vi'] }}</p>
             @if (!empty($c['mechanism_vi']))

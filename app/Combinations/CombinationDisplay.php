@@ -105,8 +105,80 @@ final class CombinationDisplay
             'sources' => $c->sources,
             'side_a_label' => self::sideLabel($a),
             'side_b_label' => self::sideLabel($b),
+            // Ảnh dùng lại từ kho nguyên liệu/quả đã có (IMG-001), không vẽ
+            // ảnh mới cho trang này. Phía không có ảnh trả null để view vẽ
+            // placeholder, thay vì bịa một ảnh đại diện.
+            'side_a_image' => self::sideImage($a),
+            'side_b_image' => self::sideImage($b),
             'other' => $other,
         ];
+    }
+
+    /**
+     * Ảnh chính dùng lại của một phía, kèm tên thành viên đại diện khi phía
+     * là nhóm (để view ghi rõ, không để người đọc tưởng ảnh đó là cả nhóm).
+     *
+     * Quy tắc an toàn, ghi rõ để lần sau không "tiện tay" phá:
+     * - drug_group: luôn null — kho không có ảnh thuốc, không vẽ vỉ thuốc giả.
+     * - food_group dạng viên bổ sung (nghe/tỏi dạng viên, KHÔNG phải dạng
+     *   nấu ăn theo đúng condition_vi của cặp): luôn null, dù thành viên
+     *   có ảnh nấu ăn — dùng ảnh đó sẽ sai dạng dùng.
+     * - food_group còn lại: ảnh của thành viên đầu tiên có ảnh, ghi rõ tên
+     *   thành viên đó ở 'representative'.
+     * - food_group không có thành viên / không thành viên nào có ảnh: null.
+     *
+     * @return null|array{url: string, thumb_url: string, srcset: string, license: ?string, attribution: ?string, is_ai: bool, representative: ?string}
+     */
+    private static function sideImage(array $side): ?array
+    {
+        return match ($side['type']) {
+            'ingredient' => self::ingredientImage($side['ref']),
+            'fruit' => self::fruitImage($side['ref']),
+            'food_group' => self::foodGroupImage($side),
+            default => null,
+        };
+    }
+
+    private static function ingredientImage(string $slug): ?array
+    {
+        $ingredient = Ingredient::where('slug', $slug)->with('media')->first();
+        if ($ingredient === null) {
+            return null;
+        }
+        $image = $ingredient->primaryImage();
+        if ($image === null) {
+            return null;
+        }
+
+        return [...$image, 'representative' => null];
+    }
+
+    private static function fruitImage(string $slug): ?array
+    {
+        $fruit = Fruit::where('slug', $slug)->with('ingredient.media')->first();
+        $image = $fruit?->ingredient?->primaryImage();
+        if ($image === null) {
+            return null;
+        }
+
+        return [...$image, 'representative' => null];
+    }
+
+    private static function foodGroupImage(array $side): ?array
+    {
+        // Dạng viên bổ sung, không phải dạng nấu ăn — cấm dùng ảnh nấu ăn.
+        if (in_array($side['ref'], ['nghe-dang-bo-sung', 'toi-dang-bo-sung'], true)) {
+            return null;
+        }
+        foreach ($side['members'] ?? [] as $memberSlug) {
+            $ingredient = Ingredient::where('slug', $memberSlug)->with('media')->first();
+            $image = $ingredient?->primaryImage();
+            if ($image !== null) {
+                return [...$image, 'representative' => $ingredient->name_vi];
+            }
+        }
+
+        return null;
     }
 
     /** Nhãn hiển thị của một phía: tra catalog với phía thực phẩm đơn lẻ. */
