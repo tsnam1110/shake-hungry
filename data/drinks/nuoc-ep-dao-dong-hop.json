@@ -39,10 +39,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04, làm cẩn thận theo QT-9: khoảng theo loại nước ép đóng hộp, không lấy số một hãng — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §6.",
   "media": [
     {
@@ -51,5 +51,31 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml",
+      "value_min": 50,
+      "value_max": 60,
+      "value": null,
+      "per_serving": "≈165–198 kcal/hộp 330 ml",
+      "basis": "Nước ép đào đóng hộp thường là nectar đào (purée đào + nước + đường), không phải nước ép nguyên chất: purée đào khoảng 45 kcal/100 ml, đường thêm khoảng 5–8 g/100 ml × 4 = 20–32 kcal, tổng khoảng 50–60 kcal/100 ml (cao hơn đào tươi 42 kcal/100 g vì thêm đường). Đây là khoảng theo loại nectar, không phải số một hãng — đào nguyên chất (ít gặp) thì khoảng 42–48 kcal/100 ml, ghi rõ. Không dùng engine (đồ đóng gói không qua engine).",
+      "confidence": "low",
+      "source_ref": "Nhãn nước ép đóng hộp (khoảng theo loại, không phải một nhãn cụ thể)"
+    },
+    {
+      "label": "Đường",
+      "unit": "g/hộp",
+      "value_min": 40,
+      "value_max": 46,
+      "value": null,
+      "per_serving": "≈40–46 g/hộp 330 ml",
+      "basis": "Đường trong nectar đào khoảng 12–14 g/100 ml (đường tự nhiên trong đào khoảng 8 g + đường thêm 4–6 g), nhân hộp 330 ml = 39,6–46,2 g, làm tròn 40–46 g/hộp.",
+      "confidence": "low",
+      "source_ref": "Nhãn nước ép đóng hộp (khoảng theo loại)"
+    }
+  ],
+  "allergen_note": "Không kết luận đầy đủ: nước ép đóng hộp không có dòng nguyên liệu trong file để gắn tag; nước ép trái cây nguyên chất không thuộc 14 chất gây dị ứng EU, nhưng một số hộp có thể thêm hương liệu/chất bảo quản — trang chi tiết phải hiện 'chưa đủ dữ kiện'.",
+  "tcm_note": "Không kết luận tính vị: mục đóng gói này chưa gắn hồ sơ nguyên liệu nên không kết luận ở tầng món."
 }
