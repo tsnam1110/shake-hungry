@@ -78,10 +78,10 @@
   "status": "draft",
   "source": "imported",
   "confidence": "unknown",
-  "needs_review": false,
+  "needs_review": true,
   "reviewed_by": "tsnam1110@gmail.com",
   "reviewed_at": "2026-10-31",
-  "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này).",
+  "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này). [Soát lại E-batch lô 5, 2026-11-05: định danh sai tầng — file là 'bánh phở tươi thành phẩm' với đúng 1 dòng nguyên liệu (banh-pho-tuoi 150 g), phương pháp 'song', và 'bước làm' duy nhất thực chất chỉ là mô tả sản phẩm ('định lượng cho một tô phở thông thường') trong khi khẩu phần ghi '1 phần bánh tươi'; bánh phở tươi là nguyên liệu bán theo kg/gói ở chợ và siêu thị (30.000–60.000 đ/kg), không phải món nấu; các nguồn mở được đều là quy trình tự làm sợi từ bột, không phải công thức cho định danh này — giữ cờ chưa duyệt, chờ chốt: giữ nguyên dạng mục nguyên liệu, đổi thành món tự làm sợi, hay chuyển khỏi thư viện món.]",
   "tags": [
     "loai:bun-pho-mi"
   ]
