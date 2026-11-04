@@ -19,12 +19,14 @@
     {
       "name": "sốt socola/cacao",
       "quantity": 10,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "sot-socola"
     },
     {
       "name": "sữa hấp",
       "quantity": 150,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "sua-tuoi"
     },
     {
       "name": "đường",
@@ -62,10 +64,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: hồ sơ sốt socola mới, gắn đủ 4/4, liquid 190 ml, caffeine suy ra 64 mg/ly — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -74,5 +76,46 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 190,
+  "caffeine_mg_min": 64,
+  "caffeine_mg_max": 64,
+  "caffeine_mg_note": "SUY RA TỪ HỒ SƠ, CHƯA ĐO CHO LY NÀY: espresso 30 ml × 212 mg/100 g trong hồ sơ ca-phe-espresso = 64 mg/ly.",
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml chất lỏng",
+      "value_min": 79,
+      "value_max": 80,
+      "value": null,
+      "per_serving": "≈151–153 kcal/ly (190 ml chất lỏng)",
+      "basis": "Cộng tay: espresso 30 ml × 9 / 100 = 2,7 kcal; sốt socola 10 ml × 1,27 × 132 / 100 = 16,8 kcal; sữa tươi 150 ml × 1,031 × 60–61 = 92,8–94,3 kcal; đường 10 g × 387 / 100 = 38,7 kcal. Tổng 151,0–152,8 kcal / 190 ml = 79–80 kcal/100 ml chất lỏng. Đây chưa phải đầu ra engine.",
+      "confidence": "medium",
+      "source_ref": "data/ingredients/ca-phe-espresso.json, sot-socola.json, sua-tuoi.json, duong-trang.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 15,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "15 g/ly",
+      "basis": "sugar_added_g trong file catalogue = 15 g; kiểm chéo: đường 10 g + đường trong sốt socola 12,7 g × 65,8% ≈ 8,4 g, tổng khoảng 18 g, gần 15 g trong sai số quán.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    },
+    {
+      "label": "Caffeine",
+      "unit": "mg/ly",
+      "value": 64,
+      "value_min": 64,
+      "value_max": 64,
+      "per_serving": "64 mg/ly",
+      "basis": "Suy ra từ hồ sơ espresso, xem caffeine_mg_note.",
+      "confidence": "medium",
+      "source_ref": "data/ingredients/ca-phe-espresso.json"
+    }
+  ],
+  "allergen_note": "Đã gắn đủ 4/4 dòng trong ly: chỉ sữa tươi có tag allergen:sua — dị ứng Sữa đã xác nhận.",
+  "tcm_note": "Có thể hiển thị nhãn sữa tươi bình/cam/Thổ (trung bình) với khối lượng 154,7 g trên tổng ~207 g (75%, trên ngưỡng 60% của TCM-000); các dòng còn lại không có nhãn tính vị trong hồ sơ, không gộp thành kết luận cho cả ly ngoài nhãn sữa."
 }
