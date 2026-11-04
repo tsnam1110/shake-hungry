@@ -128,6 +128,12 @@ async function showPlan(id) {
         const extra = v.status === 'thieu'
             ? (v.protein_shortfall_g ? ` · Thiếu ${v.protein_shortfall_g} g protein` : '') + (v.kcal_shortfall ? ` · Thiếu ${v.kcal_shortfall} kcal` : '') + (v.kcal_excess ? ` · Vượt ${v.kcal_excess} kcal` : '')
             : (v.status === 'chua-du-du-lieu' ? (v.unknown_meals ? ` · ${v.unknown_meals} bữa chưa đủ dữ kiện` : '') + (v.missing_slots.length ? ` · Thiếu bữa: ${v.missing_slots.map(s => slotName[s] ?? s).join(', ')}` : '') + (!v.target_protein_g_per_day || !v.target_kcal_per_day ? ' · Chưa đặt mục tiêu' : '') : '');
+        // Cặp kết hợp cần lưu ý trong ngày: hợp các cặp của từng món, chỉ hiển thị.
+        const dayCombos = new Map();
+        (d.meals ?? []).forEach(m => {
+            (m.dish?.combinations?.notes ?? []).concat(m.dish?.combinations?.folk ?? []).forEach(c => dayCombos.set(c.slug, c));
+        });
+        const combosHtml = dayCombos.size ? `<div style="margin-top:12px"><p style="margin:0 0 6px;font-weight:600;font-size:14.5px">Kết hợp cần lưu ý trong các món hôm nay (chỉ thông tin, không chặn, không chấm điểm):</p>${[...dayCombos.values()].map(c => `<p class="ld-note" style="margin:6px 0 0"><b>${esc(c.side_a_label)} + ${esc(c.side_b_label)}</b> — ${esc(c.tier_label)}: ${esc(c.condition_vi ?? c.science_label)}</p>`).join('')}<p class="ld-note" style="margin-top:8px">${esc(data.combinations_disclaimer ?? '')}</p></div>` : '';
         return `<div class="ld-card" style="margin-bottom:14px">
             <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
                 <span style="font-weight:700">${new Date(v.date + 'T00:00:00').toLocaleDateString('vi-VN', { weekday: 'long', day: 'numeric', month: 'numeric' })}</span>
@@ -143,6 +149,7 @@ async function showPlan(id) {
                     <button data-eatout="${m.id}" data-eatout-state="${m.is_eat_out ? '1' : '0'}" style="border:0;background:none;color:var(--color-link);font-size:14px;font-weight:600;cursor:pointer;font-family:inherit">${m.is_eat_out ? 'Bỏ ăn ngoài' : 'Ăn ngoài'}</button>
                 </div>
                 <div id="swap-${m.id}"></div>`).join('')}</div>
+            ${combosHtml}
         </div>`;
     }).join('');
     document.querySelectorAll('[data-swap]').forEach(b => b.onclick = () => showSwapCandidates(+b.dataset.swap));

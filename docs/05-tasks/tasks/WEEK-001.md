@@ -294,6 +294,12 @@ này trước Task suy kcal từ TDEE + mục tiêu (thuộc Phần 2.1, sau for
   khoản dùng chung kiểu Plan to Eat không làm song song vì hai hướng
   không tương thích.
 
-## Các phần tiếp theo (theo lệnh duyệt toàn bộ lộ trình 2026-11-04, làm tiếp không hỏi duyệt giữa chừng)
-- Phần 2.5, Task 2–5: đổi ngày bắt đầu, bắt đầu lại phần còn lại, ăn ngoài, loại thực phẩm.
-- Phần 2.6: danh sách đi chợ theo gram, không gói, không giá.
+## Tiếp tục sau Giai đoạn 4 (2026-11-04, theo lệnh "tiếp tục" của Benjamin)
+- Tuần ví dụ cho khách nâng lên đủ 7 ngày (xem Phần 2.4): `WeekBuilder::exampleWeek`,
+  trang khách render 7 ngày, vẫn không lưu, không cá nhân hoá.
+- Chi tiết tuần hiện cặp kết hợp cần lưu ý của món, gộp theo ngày, kèm
+  miễn trừ — chỉ hiển thị, không lọc, không chặn, không chấm điểm tuần
+  (nguyên tắc đỏ §7.5; cặp thuốc × thực phẩm không bao giờ vào món).
+  Test `tests/Feature/WeekCombinationsTest.php` 1 test pass.
+- Phần 2.5 Task 2–5 và Phần 2.6 đã xong trước đó, không còn là "phần tiếp
+  theo" (mục cũ đã dọn để khỏi gây hiểu lầm).

@@ -61,7 +61,7 @@ class WeekPlanController extends Controller
     public function show(Request $request, WeekPlan $weekPlan, WeekValidator $validator): JsonResponse
     {
         $this->authorizePlan($request, $weekPlan);
-        $weekPlan->load('days.meals.dish.names', 'days.meals.dish.nutrition', 'days.meals.dish.region');
+        $weekPlan->load('days.meals.dish.names', 'days.meals.dish.nutrition', 'days.meals.dish.region', 'days.meals.dish.dishIngredients.ingredient');
         $validations = [];
         foreach ($weekPlan->days as $day) {
             $validations[] = $validator->validateDay($day, $weekPlan);
@@ -69,6 +69,7 @@ class WeekPlanController extends Controller
 
         return response()->json([
             'plan' => $this->presentPlan($weekPlan, $validations),
+            'combinations_disclaimer' => \App\Combinations\CombinationDisplay::DISCLAIMER,
             'days' => $weekPlan->days->map(function ($day) use ($weekPlan, $validator) {
                 $validation = $validator->validateDay($day, $weekPlan);
 
@@ -344,6 +345,11 @@ class WeekPlanController extends Controller
                 // nay hiện luôn trong tuần) — chỉ hiển thị, lọc cứng vẫn
                 // chạy qua excluded_ingredients ở builder/swap.
                 'allergen_display' => \App\Taxonomy\AllergenDisplay::forDish($dish),
+                // Tiếp tục 2026-11-04: cặp kết hợp cần lưu ý của món, chỉ
+                // hiển thị (nguyên tắc đỏ §7.5: không lọc, không chặn,
+                // không chấm điểm tuần). Cặp thuốc × thực phẩm không bao
+                // giờ vào món, vì forDish chỉ lấy cặp thực phẩm–thực phẩm.
+                'combinations' => \App\Combinations\CombinationDisplay::forDish($dish),
             ],
         ];
     }
