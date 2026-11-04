@@ -67,7 +67,7 @@
   "needs_review": true,
   "reviewed_by": null,
   "reviewed_at": null,
-  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn nước cam + soda, siro agave chưa có hồ sơ (60 kcal/15 ml), liquid 135 ml — chưa qua duyệt lại sau khi sửa.",
+  "review_note": "SOÁT LẠI 2026-11-04 theo lệnh của Benjamin (không dùng bảng tự suy cũ): tính lại từ thành phần đã kiểm chứng đa nguồn, xem drink-verification-liqueur.md — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5.",
   "media": [
     {
@@ -82,11 +82,11 @@
     {
       "label": "Năng lượng",
       "unit": "kcal/100 ml chất lỏng",
-      "value_min": 60,
-      "value_max": 60,
+      "value_min": 59,
+      "value_max": 64,
       "value": null,
-      "per_serving": "≈81 kcal/ly (135 ml chất lỏng, chưa tính đá)",
-      "basis": "Cộng tay: nước cốt chanh 30 ml × 22 / 100 = 6,6 kcal; nước cam tươi 30 ml × 47 / 100 = 14,1 kcal; siro agave 15 ml × 1,4 × 286 / 100 = 60,1 kcal (agave nectar khoảng 60 kcal/muỗng canh 21 g, mật độ ~1,4, chưa có hồ sơ riêng nên ghi rõ số tham khảo); soda 0 kcal; muối viền 0 kcal. Tổng 80,8 kcal / 135 ml = 60 kcal/100 ml. Đây chưa phải đầu ra engine.",
+      "per_serving": "≈80–86 kcal/ly (135 ml chất lỏng, chưa tính đá)",
+      "basis": "SOÁT LẠI 2026-11-04 (đa nguồn): nước cốt chanh 30 ml × 0,22 = 6,6 kcal; nước cam tươi 30 ml × 0,47 = 14,1 kcal; siro agave nguyên chất 15 ml khoảng 58,8–65,1 kcal — MỞ RỘNG thành khoảng (cũ tính 15 ml × 1,4 × 286/100 = 60,1 kcal, nằm trong khoảng): mật agave 286–310 kcal/100 g, mật độ 1,37–1,40, tức 3,92–4,34 kcal/ml; soda 0 kcal; muối viền 0 kcal. Tổng mới 79,5–85,8 kcal / 135 ml = 59–64 kcal/100 ml (cũ 81 nằm trong khoảng). Đây chưa phải đầu ra engine.",
       "confidence": "low",
       "source_ref": "data/ingredients/nuoc-ep-cam.json, soda.json"
     },
@@ -97,7 +97,7 @@
       "value_min": null,
       "value_max": null,
       "per_serving": "15 g/ly",
-      "basis": "sugar_added_g trong file = 15 g; kiểm chéo: agave đường khoảng 16 g (21 g siro, đường ~76%), gần 15 g trong file.",
+      "basis": "sugar_added_g trong file = 15 g; tổng đường thực sau soát lại khoảng 15,0 g (xem basis năng lượng).",
       "confidence": "medium",
       "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
     }
