@@ -44,7 +44,7 @@
   "needs_review": true,
   "reviewed_by": null,
   "reviewed_at": null,
-  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04, làm cẩn thận theo QT-9: khoảng theo loại sữa đóng hộp, không lấy số một hãng — chưa qua duyệt lại sau khi sửa.",
+  "review_note": "SOÁT LẠI 2026-11-04 theo lệnh của Benjamin (không dùng khoảng tự suy cũ): đối chiếu nhãn hãng thật đang bán, xem drink-verification-packaged.md — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §6.",
   "media": [
     {
@@ -58,12 +58,12 @@
     {
       "label": "Năng lượng",
       "unit": "kcal/100 ml",
-      "value_min": 60,
-      "value_max": 61,
+      "value_min": 37,
+      "value_max": 75,
       "value": null,
-      "per_serving": "≈150–153 kcal/hộp 250 ml",
-      "basis": "Sữa tươi đóng hộp (UHT/tiệt trùng) theo hồ sơ sua-tuoi: USDA FDC 171265, 60–61 kcal/100 g, mật độ 1,031, tức khoảng 62 kcal/100 ml — nhưng nhãn sữa tươi VN thường ghi 60–61 kcal/100 ml (tính theo 100 ml trực tiếp, không nhân mật độ), nên để khoảng 60–61 kcal/100 ml theo nhãn, ghi rõ hai cách tính này. Không dùng engine (đồ đóng gói không qua engine).",
-      "confidence": "medium",
+      "per_serving": "≈93–188 kcal/hộp 250 ml",
+      "basis": "SOÁT LẠI 2026-11-04 (nhãn hãng thật Vinamilk): sữa tươi đóng hộp theo loại 37–75 kcal/100 ml — MỞ RỘNG mạnh so với cũ (60–61 chỉ đúng bản không đường nguyên kem): Vinamilk 100% không đường 60,3 kcal, Green Farm không đường 62,6 kcal; bản ít đường 67,7–71,4 kcal; bản có đường 72,1–74,6 kcal; bản tách béo không đường 37 kcal; vị dừa ít ngọt 74,8 kcal/100 ml (tất cả qua vinamilk.com.vn). Khoảng cũ đã sai vì lấy nhãn bản không đường áp cho cả loại. Khoảng gộp 37–75 kcal/100 ml, tin cậy thấp — người dùng phải đọc nhãn hộp cụ thể (không đường / ít đường / có đường / tách béo). Không dùng engine (đồ đóng gói không qua engine).",
+      "confidence": "low",
       "source_ref": "Hồ sơ sua-tuoi (FDC 171265, 60–61 kcal/100 g, mật độ 1,031)"
     },
     {
