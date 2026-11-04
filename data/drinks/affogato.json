@@ -13,7 +13,8 @@
     {
       "name": "kem gelato vani/fior di latte",
       "quantity": 60,
-      "unit": "g"
+      "unit": "g",
+      "ingredient_slug": "gelato-vani"
     },
     {
       "name": "espresso nóng",
@@ -51,10 +52,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: hồ sơ gelato vani mới (165–210 kcal/100 g), gắn đủ 2/2, caffeine suy ra 64 mg/ly — chưa qua duyệt lại sau khi sửa. Lưu ý: sugar_added_g 10 g trong file thấp hơn đường trong gelato theo nhãn (~15 g), cần chủ dự án chốt.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -63,5 +64,46 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 90,
+  "caffeine_mg_min": 64,
+  "caffeine_mg_max": 64,
+  "caffeine_mg_note": "SUY RA TỪ HỒ SƠ, CHƯA ĐO CHO LY NÀY: espresso 30 ml × 212 mg/100 g trong hồ sơ ca-phe-espresso = 64 mg/ly. Đây là điểm suy ra, không phải số đo, và không có khoảng rộng hơn được bịa thêm.",
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml đồ uống",
+      "value_min": 113,
+      "value_max": 143,
+      "value": null,
+      "per_serving": "≈102–129 kcal/ly (60 g gelato + 30 ml espresso, ăn/uống ngay khi tan)",
+      "basis": "Cộng tay: gelato 60 g × 165–210 / 100 = 99,0–126,0 kcal (khoảng nhãn thương mại trong hồ sơ gelato-vani); espresso 30 ml × 9 / 100 = 2,7 kcal. Tổng 101,7–128,7 kcal. Mẫu số 90 là tổng khối lượng (60 g + 30 ml ≈ 90 g), vì gelato là rắn tan chảy — không phải thể tích ly 150 ml. Đây chưa phải đầu ra engine.",
+      "confidence": "low",
+      "source_ref": "data/ingredients/gelato-vani.json, ca-phe-espresso.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 10,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "10 g/ly",
+      "basis": "sugar_added_g trong file catalogue = 10 g; kiểm chéo: gelato 60 g, đường khoảng 15 g theo nhãn (25 g/100 g), cao hơn 10 g trong file — file có thể chỉ tính đường thêm ngoài gelato, ghi chú này để chủ dự án chốt lại, không tự sửa file gốc.",
+      "confidence": "low",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    },
+    {
+      "label": "Caffeine",
+      "unit": "mg/ly",
+      "value": 64,
+      "value_min": 64,
+      "value_max": 64,
+      "per_serving": "64 mg/ly",
+      "basis": "Suy ra từ hồ sơ espresso, xem caffeine_mg_note.",
+      "confidence": "medium",
+      "source_ref": "data/ingredients/ca-phe-espresso.json"
+    }
+  ],
+  "allergen_note": "Đã gắn đủ 2/2 dòng trong ly: gelato có tag allergen:sua — dị ứng Sữa đã xác nhận. Espresso không có tag dị ứng trong hồ sơ.",
+  "tcm_note": "Không kết luận tính vị: cả gelato và espresso đều không có nhãn tính vị trong hồ sơ."
 }
