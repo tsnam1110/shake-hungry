@@ -37,10 +37,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04, làm cẩn thận theo QT-9: khoảng theo loại đóng gói, không lấy số một hãng — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §6.",
   "media": [
     {
@@ -49,5 +49,31 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml",
+      "value_min": 30,
+      "value_max": 45,
+      "value": null,
+      "per_serving": "≈99–149 kcal/chai 330 ml",
+      "basis": "Nước sâm đóng chai là nước thảo mộc (râu ngô, mã đề, la hán, thục địa...) + đường: đường khoảng 7–10 g/100 ml × 4 = 28–40 kcal, cộng thảo mộc 1–3 kcal/100 ml, tổng khoảng 30–45 kcal/100 ml. Đây là khoảng theo loại, không phải số một hãng — nước sâm các hãng và quán có công thức thảo mộc và độ ngọt khác nhau nhiều, ghi rõ. Không dùng engine (đồ đóng gói không qua engine).",
+      "confidence": "low",
+      "source_ref": "Nhãn đóng gói (khoảng theo loại, không phải một nhãn cụ thể)"
+    },
+    {
+      "label": "Đường",
+      "unit": "g/lon",
+      "value_min": 23,
+      "value_max": 33,
+      "value": null,
+      "per_serving": "≈23–33 g/chai 330 ml",
+      "basis": "Đường trong nước sâm đóng chai khoảng 7–10 g/100 ml, nhân chai 330 ml = 23,1–33 g, làm tròn 23–33 g/chai.",
+      "confidence": "low",
+      "source_ref": "Nhãn đóng gói (khoảng theo loại)"
+    }
+  ],
+  "allergen_note": "Không kết luận đầy đủ: mục đóng gói này không có dòng nguyên liệu trong file để gắn tag; trang chi tiết phải hiện 'chưa đủ dữ kiện' cho dị ứng, không hiện 'không có dị ứng'.",
+  "tcm_note": "Không kết luận tính vị: mục đóng gói này chưa gắn hồ sơ nguyên liệu nên không kết luận ở tầng món."
 }
