@@ -23,7 +23,7 @@
       "ingredient_slug": "sua-dac"
     },
     {
-      "name": "kem whipping/creamer",
+      "name": "kem whipping",
       "quantity": 80,
       "unit": "ml",
       "ingredient_slug": "kem-whipping"
@@ -118,5 +118,5 @@
   ],
   "allergen_note": "Đã gắn 3/4 dòng trong ly: sữa đặc và kem whipping đều có tag allergen:sua — dị ứng Sữa đã xác nhận. Muối chưa gắn hồ sơ nhưng muối ăn không phải chất gây dị ứng phổ biến trong hệ tag.",
   "tcm_note": "Không kết luận tính vị chung cho cả ly: chỉ cà phê đen có nhãn bình/khổ/Hỏa (thấp, 50 g) trên tổng ~152 g (33%, trong khoảng 30–60% của TCM-000 nên chỉ hiển thị ở mức thấp); sữa đặc và kem whipping không có nhãn tính vị trong hồ sơ.",
-  "process_note": "PHẠM VI SỐ KCAL: file ghi 'kem whipping/creamer' — số ở đây là bản kem sữa tươi béo (kem-whipping, 340 kcal/100 g). Nếu quán dùng creamer không sữa, kcal sẽ thấp hơn nhiều và số này không áp dụng; không gộp hai bản thành một khoảng vì khoảng đó quá rộng để có ích."
+  "process_note": "PHẠM VI SỐ KCAL, ĐÃ CHỐT 2026-11-04 THEO DUYỆT CỦA BENJAMIN: số ở đây là bản kem sữa tươi béo (kem-whipping, 340 kcal/100 g), không phải creamer không sữa. Nếu quán dùng creamer không sữa, kcal sẽ thấp hơn nhiều và số này không áp dụng; không gộp hai bản thành một khoảng vì khoảng đó quá rộng để có ích."
 }
