@@ -13,7 +13,8 @@
     {
       "name": "chuối chín",
       "quantity": 120,
-      "unit": "g"
+      "unit": "g",
+      "ingredient_slug": "chuoi"
     },
     {
       "name": "sữa",
@@ -30,7 +31,8 @@
     {
       "name": "đá",
       "quantity": 80,
-      "unit": "g"
+      "unit": "g",
+      "ingredient_slug": "nuoc-loc"
     }
   ],
   "recipe_steps": [
@@ -59,10 +61,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn đủ 4/4, sữa ghi chung lấy là sữa tươi, mẫu số 315 ml đồ uống đá xay — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -71,5 +73,32 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 315,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml đồ uống",
+      "value_min": 74,
+      "value_max": 75,
+      "value": null,
+      "per_serving": "≈233–236 kcal/ly (315 ml đồ uống đá xay)",
+      "basis": "Cộng tay: chuối chín 120 g × 89 / 100 = 106,8 kcal; sữa 100 ml gắn sua-tuoi 100 ml × 1,031 × 60–61 / 100 = 61,9–62,9 kcal (file ghi chung 'sữa', lấy là sữa tươi); sữa đặc 15 ml × 1,29 × 334–341 / 100 = 64,6–66,0 kcal; đá xay 80 g tính vào mẫu số. Tổng 233,3–235,7 kcal / 315 ml đồ uống (120 + 100 + 15 + 80) = 74–75 kcal/100 ml. Đây chưa phải đầu ra engine.",
+      "confidence": "medium",
+      "source_ref": "data/ingredients/chuoi.json, sua-tuoi.json, sua-dac.json, nuoc-loc.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 10,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "10 g/ly (theo file)",
+      "basis": "sugar_added_g trong file = 10 g; kiểm chéo: đường trong sữa đặc khoảng 10,5 g, gần 10 g trong file; đường tự nhiên trong chuối khoảng 14,6 g không tính vào 'đường thêm'.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Đã gắn đủ 4/4 dòng trong ly: sữa tươi và sữa đặc có tag allergen:sua — dị ứng Sữa đã xác nhận; chuối và đá không có tag dị ứng trong hồ sơ.",
+  "tcm_note": "Không kết luận tính vị: chuối và sữa tươi đều không có nhãn tính vị trong hồ sơ (sữa tươi bình/cam/Thổ 103,1 g trên tổng ~315 g, 33%, nhưng chuối không có nhãn nên không tính độ phủ chung cho cả ly theo TCM-000 ở tầng đồ uống — ghi rõ, không kết luận)."
 }
