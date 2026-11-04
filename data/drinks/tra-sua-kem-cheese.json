@@ -13,17 +13,20 @@
     {
       "name": "trà/trà sữa nền",
       "quantity": 150,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "tra-den"
     },
     {
       "name": "phô mai kem",
       "quantity": 20,
-      "unit": "g"
+      "unit": "g",
+      "ingredient_slug": "pho-mai"
     },
     {
       "name": "kem whipping",
       "quantity": 40,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "kem-whipping"
     },
     {
       "name": "sữa tươi",
@@ -73,10 +76,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: nền lấy là trà hãm 150 ml (phạm vi cheese tea, không phải trà sữa nền), gắn đủ trừ muối, liquid 210 ml — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -85,5 +88,33 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 210,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml chất lỏng",
+      "value_min": 114,
+      "value_max": 116,
+      "value": null,
+      "per_serving": "≈239–244 kcal/ly (210 ml chất lỏng, chưa tính đá tan)",
+      "basis": "Cộng tay với PHẠM VI NỀN TRÀ (xem process_note): trà nền 150 ml × 1 = 1,5 kcal; phô mai kem 20 g × 350–371 / 100 = 70,0–74,2 kcal (gắn pho-mai 371, cream cheese thật khoảng 350, để khoảng); kem whipping 40 ml × 1,0 × 340 / 100 = 136,0 kcal; sữa tươi 20 ml × 1,031 × 60–61 / 100 = 12,4–12,6 kcal; đường 5 g × 387 / 100 = 19,4 kcal; muối 0 kcal. Tổng 239,3–243,7 kcal / 210 ml = 114–116 kcal/100 ml. Đây chưa phải đầu ra engine.",
+      "confidence": "low",
+      "source_ref": "data/ingredients/tra-den.json, pho-mai.json, kem-whipping.json, sua-tuoi.json, duong-trang.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 20,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "20 g/ly (theo file)",
+      "basis": "sugar_added_g trong file = 20 g; kiểm chéo: đường 5 g + đường trong sữa tươi khoảng 1 g + đường trong kem/phô mai khoảng 1–2 g = khoảng 7–8 g, thấp hơn nhiều so với 20 g trong file — file có thể tính cả đường trong nền trà sữa nếu nền là trà sữa, ghi chú để chủ dự án chốt (xem process_note về nền).",
+      "confidence": "low",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "process_note": "PHẠM VI NỀN, GHI RÕ ĐỂ CHỦ DỰ ÁN CHỐT: file ghi 'trà/trà sữa nền' với lượng None. Ở đây lấy nền là TRÀ HÃM 150 ml (trà sữa kem cheese kiểu cheese tea: trà + lớp kem cheese, không phải trà sữa đã có bột sữa + đường). Nếu nền thật là trà sữa (trà + bột sữa + đường), tổng sẽ cao hơn khoảng 150–200 kcal/ly và số này phải tính lại — không gộp hai bản thành một khoảng vì khoảng đó quá rộng.",
+  "allergen_note": "Đã gắn 5/6 dòng trong ly: phô mai kem, kem whipping và sữa tươi đều có tag allergen:sua — dị ứng Sữa đã xác nhận. Muối chưa gắn hồ sơ nhưng muối ăn không phải chất gây dị ứng phổ biến trong hệ tag.",
+  "tcm_note": "Không kết luận tính vị: sữa tươi bình/cam/Thổ (trung bình, 20,6 g) trên tổng ~230 g (9%, dưới ngưỡng 30% của TCM-000); các dòng còn lại không có nhãn tính vị trong hồ sơ."
 }
