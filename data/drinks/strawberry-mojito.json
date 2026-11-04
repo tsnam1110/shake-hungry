@@ -101,7 +101,7 @@
       "value_max": 68,
       "value": null,
       "per_serving": "≈159 kcal/ly (234.4 ml chất lỏng)",
-      "basis": "Cộng tay từ công thức (ethanol 7 kcal/g, mật độ 0,789 g/ml + đường 4 kcal/g; rượu mùi tính cả ethanol và đường theo nhãn loại, chưa đo trực tiếp): rum trắng 50 ml × 2.21 = 110.5 kcal; nước chanh 20 ml × 0.22 = 4.4 kcal; dâu 3 quả (36 g) 36 ml × 0.32 = 11.5 kcal; đường 2 thìa cà phê 8.4 ml × 3.87 = 32.5 kcal; soda 120 ml (lấy như mojito thường, file ghi None) 120 ml × 0.0 = 0.0 kcal. Tổng 158.9 kcal / 234.4 ml = 68 kcal/100 ml. ABV suy ra từ công thức: 8.5% (ethanol 20.0 ml / 234.4 ml chất lỏng). Đây chưa phải đầu ra engine (engine chưa có logic ethanol).",
+      "basis": "Cộng tay từ công thức (ethanol 7 kcal/g, mật độ 0,789 g/ml + đường 4 kcal/g; rượu mùi tính cả ethanol và đường theo nhãn loại, chưa đo trực tiếp): rum trắng 50 ml × 2.21 = 110.5 kcal; nước chanh 20 ml × 0.22 = 4.4 kcal; dâu 3 quả (36 g) × 0,32 kcal/g = 11.5 kcal; đường 2 thìa cà phê 8.4 ml × 3.87 = 32.5 kcal; soda 120 ml (lấy như mojito thường, file ghi None) 120 ml × 0.0 = 0.0 kcal. Tổng 158.9 kcal / 234.4 ml = 68 kcal/100 ml. ABV suy ra từ công thức: 8.5% (ethanol 20.0 ml / 234.4 ml chất lỏng). Đây chưa phải đầu ra engine (engine chưa có logic ethanol).",
       "confidence": "low",
       "source_ref": "Bảng kcal/ml cocktail trong hồ sơ triển khai (ethanol + đường, xem basis)"
     },
