@@ -13,12 +13,14 @@
     {
       "name": "trà ô long",
       "quantity": 150,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "tra-den"
     },
     {
       "name": "bột sữa",
       "quantity": 25,
-      "unit": "g"
+      "unit": "g",
+      "ingredient_slug": "bot-sua"
     },
     {
       "name": "đường",
@@ -56,10 +58,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: hồ sơ bột sữa mới, trà ô long gắn tra-den làm proxy, gắn đủ 3/3, liquid 150 ml — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -68,5 +70,32 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 150,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml chất lỏng",
+      "value_min": 115,
+      "value_max": 131,
+      "value": null,
+      "per_serving": "≈172–197 kcal/ly (150 ml chất lỏng, chưa tính đá tan)",
+      "basis": "Cộng tay: trà ô long 150 ml gắn tra-den 1 kcal/100 g = 1,5 kcal (trà ô long hãm không đường gần như trà đen về kcal, chưa có hồ sơ ô long riêng nên gắn proxy, ghi rõ); bột sữa 25 g × 450–550 / 100 = 112,5–137,5 kcal; đường 15 g × 387 / 100 = 58,1 kcal. Tổng 172,1–197,1 kcal / 150 ml = 115–131 kcal/100 ml. Đây chưa phải đầu ra engine.",
+      "confidence": "low",
+      "source_ref": "data/ingredients/tra-den.json, bot-sua.json, duong-trang.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 15,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "15 g/ly (theo file, chưa tính đường trong bột sữa)",
+      "basis": "sugar_added_g trong file = 15 g, khớp đường trong công thức; đường trong bột sữa (khoảng 12,5 g từ siro glucose) không tính vào 'đường thêm' theo cách ghi của file, ghi chú để chủ dự án chốt.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Đã gắn đủ 3/3 dòng trong ly: bột sữa có tag allergen:sua (whey/caseinate) — dị ứng Sữa đã xác nhận theo hồ sơ bot-sua.",
+  "tcm_note": "Không kết luận tính vị: trà đen (proxy cho ô long), bột sữa và đường đều không có nhãn tính vị trong hồ sơ."
 }
