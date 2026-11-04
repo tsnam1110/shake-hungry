@@ -56,10 +56,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn đường, hạt sen tươi/khô và nước/sữa chưa rõ để khoảng rộng 208–563, liquid 250 ml — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -68,5 +68,32 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 250,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml chất lỏng",
+      "value_min": 83,
+      "value_max": 225,
+      "value": null,
+      "per_serving": "≈208–563 kcal/ly (250 ml chất lỏng, khoảng rộng do hai điểm chưa rõ)",
+      "basis": "Cộng tay với khoảng rộng cố ý do HAI ĐIỂM CHƯA RÕ trong file: (1) hạt sen tươi hay khô — hạt sen tươi khoảng 150 kcal/100 g, hạt sen khô khoảng 350 kcal/100 g, 100 g input cho khoảng 150–350 kcal (nấu chín không làm mất kcal, chỉ thêm nước); (2) nước hay sữa — nước 0 kcal, sữa tươi 250 ml × 1,031 × 60–61 / 100 = 154,7–157,3 kcal, khoảng 0–157 kcal. Đường 15 g × 387 / 100 = 58,1 kcal. Tổng 208,1–563,4 kcal / 250 ml = 83–225 kcal/100 ml. Khoảng này quá rộng để dùng làm điểm, ghi rõ để chủ dự án chốt tươi/khô và nước/sữa mới thu hẹp được. Đây chưa phải đầu ra engine.",
+      "confidence": "low",
+      "source_ref": "data/ingredients/duong-trang.json, sua-tuoi.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 15,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "15 g/ly",
+      "basis": "sugar_added_g trong file = 15 g, khớp đường trong công thức.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Đã gắn 1/3 dòng trong ly: đường không có tag dị ứng trong hồ sơ; hạt sen và nước/sữa chưa gắn hồ sơ nên không kết luận đầy đủ.",
+  "tcm_note": "Không kết luận tính vị: các dòng đều không có nhãn tính vị trong hồ sơ."
 }
