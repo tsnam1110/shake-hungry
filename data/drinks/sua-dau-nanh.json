@@ -13,7 +13,8 @@
     {
       "name": "sữa đậu nành",
       "quantity": 250,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "sua-dau-nanh"
     },
     {
       "name": "đường",
@@ -53,10 +54,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn đủ 2/2, mật độ sữa đậu nành ước tính 1,0, liquid 250 ml — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -65,5 +66,32 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 250,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml chất lỏng",
+      "value_min": 77,
+      "value_max": 78,
+      "value": null,
+      "per_serving": "≈193 kcal/ly (250 ml chất lỏng)",
+      "basis": "Cộng tay: sữa đậu nành không đường 250 ml — hồ sơ sua-dau-nanh 54 kcal/100 g, mật độ sữa đậu nành khoảng 1,0, 250 g × 54 / 100 = 135,0 kcal (hồ sơ chưa có mật độ nên engine không quy đổi được ml — tay ghi rõ mật độ ước tính 1,0); đường 15 g × 387 / 100 = 58,1 kcal. Tổng 193,1 kcal / 250 ml = 77 kcal/100 ml. Đây chưa phải đầu ra engine.",
+      "confidence": "low",
+      "source_ref": "data/ingredients/sua-dau-nanh.json, duong-trang.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 15,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "15 g/ly",
+      "basis": "sugar_added_g trong file = 15 g, khớp đường trong công thức; đường tự nhiên trong sữa đậu nành không đường khoảng 2,5 g không tính vào 'đường thêm'.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Đã gắn đủ 2/2 dòng trong ly: sữa đậu nành có tag allergen:đậu nành theo hệ tag của dự án (kiểm tra lại tag trong hồ sơ sua-dau-nanh khi hiển thị, vì thẻ Dị ứng ở trang chi tiết đã từng hiện 'chưa đủ dữ kiện' khi chỉ gắn 1/2 dòng ở một mục khác).",
+  "tcm_note": "Không kết luận tính vị: sữa đậu nành và đường đều không có nhãn tính vị trong hồ sơ."
 }
