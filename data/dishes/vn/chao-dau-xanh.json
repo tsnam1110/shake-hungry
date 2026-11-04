@@ -139,10 +139,10 @@
   "status": "draft",
   "source": "curated",
   "confidence": "unknown",
-  "needs_review": false,
+  "needs_review": true,
   "reviewed_by": "tsnam1110@gmail.com",
   "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau). [Soát lại E-batch lô 9, 2026-11-05: bản thịt bằm người lớn có nhiều họ nhưng KHÔNG họ nào ghi số khẩu phần nên không quy đổi được ra 60 g gạo + 40 g đậu + 50 g thịt/tô của file; lượng thịt theo mẻ bất đồng lớn (kamidi 100 g, nongsandungha/toyenxin 200 g, memart 150 g) và nhiều họ là cháo ăn dặm cho bé (kamidi, mytour, dayhocnghe); họ bản thường Tripi (gạo 200 g, đậu 30 g, không thịt/mắm/hành phi) vẫn đối lập với hồ sơ thịt bằm của file — giữ cờ chưa duyệt, cần họ bản thịt bằm có định lượng theo tô.]",
   "tags": [
     "loai:chao-sup"
   ]
