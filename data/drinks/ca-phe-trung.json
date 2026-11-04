@@ -13,12 +13,14 @@
     {
       "name": "cà phê phin đậm",
       "quantity": 40,
-      "unit": "ml"
+      "unit": "ml",
+      "ingredient_slug": "ca-phe-den"
     },
     {
       "name": "lòng đỏ trứng",
       "quantity": 1,
-      "unit": "quả"
+      "unit": "quả",
+      "ingredient_slug": "long-do-trung-ga"
     },
     {
       "name": "sữa đặc",
@@ -67,10 +69,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: hồ sơ lòng đỏ mới (USDA yolk 322 kcal/100 g, 1 quả 17 g), gắn đủ trừ vani, liquid 77 ml, caffeine mg tầm soát 100–200 mg/ly — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -79,5 +81,46 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 77,
+  "caffeine_mg_min": 100,
+  "caffeine_mg_max": 200,
+  "caffeine_mg_note": "KHOẢNG TẦM SOÁT, CHƯA ĐO CHO LY NÀY: cà phê trong ly là một phần phin (40 ml, như cà phê sữa đá), khoảng 100–200 mg/ly theo nguồn thứ cấp về phin VN (CoffeeTalkies phin 100–200 mg; DoanhNhanPlus 120–150 mg; Message Coffee 150–200 mg). Chưa đo cho ly này; mg là theo ly, không theo ml.",
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml chất lỏng",
+      "value_min": 221,
+      "value_max": 223,
+      "value": null,
+      "per_serving": "≈170–172 kcal/ly (77 ml chất lỏng, chưa tính bát nước nóng giữ ấm)",
+      "basis": "Cộng tay: cà phê 40 ml × 1 = 0,4 kcal; lòng đỏ 1 quả × 17 g × 322 / 100 = 54,7 kcal; sữa đặc 15 ml × 1,29 × 334–341 = 64,6–66,0 kcal; đường 10 g × 387 / 100 = 38,7 kcal; vani 5 ml ≈ 12 kcal (chiết xuất vani, tầm soát, chưa có hồ sơ). Tổng 170,4–171,8 kcal / 77 ml = 221–223 kcal/100 ml chất lỏng. Đây chưa phải đầu ra engine; engine chưa gắn vani nên sẽ tính thiếu dòng này và mở rộng khoảng trên.",
+      "confidence": "low",
+      "source_ref": "data/ingredients/ca-phe-den.json, long-do-trung-ga.json, sua-dac.json, duong-trang.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 20,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "20 g/ly",
+      "basis": "sugar_added_g trong file catalogue = 20 g (đường 10 g + đường trong sữa đặc khoảng 10 g).",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    },
+    {
+      "label": "Caffeine",
+      "unit": "mg/ly",
+      "value_min": 100,
+      "value_max": 200,
+      "value": null,
+      "per_serving": "100–200 mg/ly",
+      "basis": "Khoảng tầm soát cho phin, xem caffeine_mg_note; không phải số đo.",
+      "confidence": "low",
+      "source_ref": "Nguồn thứ cấp về phin Robusta (xem caffeine_mg_note)"
+    }
+  ],
+  "allergen_note": "Đã gắn 4/5 dòng trong ly: sữa đặc có tag allergen:sua, lòng đỏ có tag allergen:trung — dị ứng Sữa và Trứng đã xác nhận. Dòng vani chưa gắn hồ sơ nên không kết luận đầy đủ 'không còn dị ứng nào khác'.",
+  "tcm_note": "Không kết luận tính vị chung cho cả ly: cà phê đen bình/khổ/Hỏa (thấp, 40 g) và lòng đỏ cam/ôn/Thổ (thấp, 17 g) là hai nhãn khác nhau; sữa đặc và đường không gộp thành một ngũ hành duy nhất."
 }
