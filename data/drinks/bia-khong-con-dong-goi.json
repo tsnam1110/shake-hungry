@@ -45,7 +45,7 @@
   "needs_review": true,
   "reviewed_by": null,
   "reviewed_at": null,
-  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04, làm cẩn thận theo QT-9: khoảng theo loại bia không cồn, ghi rõ 0,5% ABV không phải tuyệt đối 0 — chưa qua duyệt lại sau khi sửa.",
+  "review_note": "SOÁT LẠI 2026-11-04 theo lệnh của Benjamin: đối chiếu nhãn Heineken 0.0, số không đổi, chỉ bổ sung trích dẫn nhãn — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §6.",
   "media": [
     {
@@ -63,7 +63,7 @@
       "value_max": 25,
       "value": null,
       "per_serving": "≈50–83 kcal/lon 330 ml",
-      "basis": "Bia không cồn (ABV trong file 0,0–0,5%) không có kcal từ ethanol đáng kể; kcal chủ yếu từ carb còn lại (khoảng 4–6 g/100 ml × 4 = 16–24 kcal/100 ml). Các hãng bia không cồn trên thị trường ghi nhãn khoảng 15–25 kcal/100 ml (ví dụ Heineken 0.0 khoảng 21 kcal/100 ml, các hãng khác 15–25). Để khoảng 15–25 kcal/100 ml, không lấy số một hãng làm điểm cho cả loại. Không dùng engine (engine chưa có logic ethanol).",
+      "basis": "SOÁT LẠI 2026-11-04 (nhãn hãng thật): bia không cồn theo loại 15–25 kcal/100 ml — XÁC NHẬN không đổi: Heineken 0.0 qua Tesco/Ocado/Asda đều 21 kcal, carb 4,8 g, đường 1,3 g/100 ml, ABV <0,05% (69 kcal/lon 330 ml); các hãng khác 15–25 kcal/100 ml. Khoảng cũ đã bao phủ nhãn hãng nên giữ nguyên. Không dùng engine (engine chưa có logic ethanol).",
       "confidence": "low",
       "source_ref": "Nhãn bia không cồn các hãng (khoảng, không phải một nhãn cụ thể); file catalogue, alcohol_pct_range 0,0–0,5%"
     },
