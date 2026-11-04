@@ -113,10 +113,10 @@
   "status": "draft",
   "source": "llm_suggested",
   "confidence": "unknown",
-  "needs_review": false,
+  "needs_review": true,
   "reviewed_by": "tsnam1110@gmail.com",
   "reviewed_at": "2026-10-31",
-  "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này).",
+  "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này). E-batch1 lô 2 2026-11-04: gắn cờ lại chưa duyệt — lõi định danh khớp (bột gạo, giá đỗ, thịt, tôm, chiên trong vá, Chợ Giồng), nhưng file là bản rút gọn so với bản đầy đủ mà nhiều nguồn nêu (thêm nước cốt dừa, trứng gà, gan heo, đậu xanh, đậu phộng); định lượng theo phần 3 cái (bột gạo 50 g, giá 40 g, tôm 30 g, thịt xay 25 g) mới có 1 họ nguồn định lượng đầy đủ theo level_note, chưa đủ 2 nguồn độc lập; chưa sửa số, chưa gọi là đã xác minh.",
   "tags": [
     "dac-san:tien-giang",
     "loai:banh"
