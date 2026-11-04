@@ -13,7 +13,8 @@
     {
       "name": "thịt dứa",
       "quantity": 300,
-      "unit": "g"
+      "unit": "g",
+      "ingredient_slug": "dua-thom"
     }
   ],
   "recipe_steps": [
@@ -40,10 +41,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04: gắn dua-thom (không dùng hồ sơ dua cùi dừa), nước ép ~180 ml — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3.",
   "media": [
     {
@@ -52,5 +53,32 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "liquid_ml": 180,
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml nước ép",
+      "value_min": 53,
+      "value_max": 83,
+      "value": null,
+      "per_serving": "≈95–150 kcal/ly (khoảng 180 ml nước ép, chưa tính đá)",
+      "basis": "Cộng tay: thịt dứa 300 g × 50 / 100 = 150,0 kcal là ĐẦU TRÊN nếu ăn cả thịt (hồ sơ dua-thom, KHÔNG dùng hồ sơ dua là cùi dừa 354 kcal/100 g); nước ép dứa khoảng 180 ml (hiệu suất ép khoảng 60%), nước ép dứa khoảng 53 kcal/100 ml (USDA pineapple juice), 180 ml × 53 / 100 = 95,4 kcal là ĐẦU DƯỚI theo nước ép. Khoảng 95–150 kcal / 180 ml = 53–83 kcal/100 ml. Đây chưa phải đầu ra engine.",
+      "confidence": "low",
+      "source_ref": "data/ingredients/dua-thom.json"
+    },
+    {
+      "label": "Đường thêm",
+      "unit": "g/ly",
+      "value": 0,
+      "value_min": null,
+      "value_max": null,
+      "per_serving": "0 g/ly (đường thêm), đường tự nhiên khoảng 18 g",
+      "basis": "sugar_added_g trong file = 0, đúng vì không thêm đường; đường tự nhiên trong nước ép dứa khoảng 10 g/100 ml × 180 ml = 18 g.",
+      "confidence": "medium",
+      "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
+    }
+  ],
+  "allergen_note": "Đã gắn đủ 1/1 dòng trong ly: dứa không có tag dị ứng trong hồ sơ.",
+  "tcm_note": "Không kết luận tính vị: dứa không có nhãn tính vị trong hồ sơ."
 }
