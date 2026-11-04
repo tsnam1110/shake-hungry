@@ -91,7 +91,7 @@
       "source_ref": "Catalogue nước uống Việt Nam v2 (2026-11-03), §3"
     }
   ],
-  "process_note": "PHẠM VI NỀN, GHI RÕ ĐỂ CHỦ DỰ ÁN CHỐT: file ghi 'trà sữa nền' với lượng None, không ghi thành phần nền. Ở đây lấy nền chuẩn như trà sữa ô long (trà 150 ml + bột sữa 25 g + đường 15 g) để tính tay; trong file ingredients, nền được ghi tạm là trà 150 ml gắn tra-den để engine không đếm trùng bột sữa và đường — số tay ở key_indicators mới là số đầy đủ theo phạm vi này, số engine (nếu chạy) sẽ thấp hơn vì nền ghi tạm. Nếu nền thật khác (sữa tươi thay bột sữa, ít đường hơn), tổng phải tính lại.",
+  "process_note": "PHẠM VI NỀN, ĐÃ CHỐT 2026-11-04 THEO DUYỆT CỦA BENJAMIN: file ghi 'trà sữa nền' với lượng None, không ghi thành phần nền. Ở đây lấy nền chuẩn như trà sữa ô long (trà 150 ml + bột sữa 25 g + đường 15 g) để tính tay; trong file ingredients, nền được ghi tạm là trà 150 ml gắn tra-den để engine không đếm trùng bột sữa và đường — số tay ở key_indicators mới là số đầy đủ theo phạm vi này, số engine (nếu chạy) sẽ thấp hơn vì nền ghi tạm. Nếu nền thật khác (sữa tươi thay bột sữa, ít đường hơn), tổng phải tính lại.",
   "allergen_note": "Đã gắn đủ 2/2 dòng trong file (trà nền + pudding): pudding có tag allergen:sua và allergen:trung — dị ứng Sữa và Trứng đã xác nhận cho phần pudding; nền trà sữa chuẩn theo phạm vi còn có bột sữa (tag sua) nên Sữa vẫn xác nhận.",
   "tcm_note": "Không kết luận tính vị: trà đen và pudding đều không có nhãn tính vị trong hồ sơ."
 }
