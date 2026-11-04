@@ -88,7 +88,7 @@
       "value_max": 102,
       "value": null,
       "per_serving": "≈152 kcal/ly (150 ml đồ uống đông đá)",
-      "basis": "Cộng tay từ công thức (ethanol 7 kcal/g, mật độ 0,789 g/ml + đường 4 kcal/g; rượu mùi tính cả ethanol và đường theo nhãn loại, chưa đo trực tiếp): rum trắng 45 ml × 2.21 = 99.5 kcal; nước cốt chanh 15 ml × 0.22 = 3.3 kcal; siro đường 10 ml × 2.41 = 24.1 kcal; dâu tây đông đá 80 ml × 0.32 = 25.6 kcal. Tổng 152.4 kcal / 150 ml = 102 kcal/100 ml. ABV suy ra từ công thức: 12.0% (ethanol 18.0 ml / 150 ml chất lỏng). Đây chưa phải đầu ra engine (engine chưa có logic ethanol).",
+      "basis": "Cộng tay từ công thức (ethanol 7 kcal/g, mật độ 0,789 g/ml + đường 4 kcal/g; rượu mùi tính cả ethanol và đường theo nhãn loại, chưa đo trực tiếp): rum trắng 45 ml × 2.21 = 99.5 kcal; nước cốt chanh 15 ml × 0.22 = 3.3 kcal; siro đường 10 ml × 2.41 = 24.1 kcal; dâu tây đông đá 80 g × 0,32 kcal/g = 25.6 kcal. Tổng 152.4 kcal / 150 ml = 102 kcal/100 ml. ABV suy ra từ công thức: 12.0% (ethanol 18.0 ml / 150 ml chất lỏng). Đây chưa phải đầu ra engine (engine chưa có logic ethanol).",
       "confidence": "low",
       "source_ref": "Bảng kcal/ml cocktail trong hồ sơ triển khai (ethanol + đường, xem basis)"
     },
