@@ -96,7 +96,7 @@
   "needs_review": true,
   "reviewed_by": null,
   "reviewed_at": null,
-  "review_note": "SOÁT LẠI 2026-11-04 theo lệnh của Benjamin (không dùng bảng tự suy cũ): tính lại từ rượu mùi đã kiểm chứng đa nguồn, xem drink-verification-liqueur.md — chưa qua duyệt lại sau khi sửa.",
+  "review_note": "KIỂM THỬ LẠI ĐỢT 2 (2026-11-04) theo lệnh của Benjamin: tái kiểm từng thành phần bằng nhãn hãng/nguồn độc lập — vẫn giữ cờ chưa duyệt, chờ Benjamin duyệt riêng.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §4–§5.",
   "media": [
     {
@@ -111,11 +111,11 @@
     {
       "label": "Năng lượng",
       "unit": "kcal/100 ml chất lỏng",
-      "value_min": 192,
+      "value_min": 187,
       "value_max": 192,
       "value": null,
-      "per_serving": "≈337 kcal/ly (176 ml chất lỏng)",
-      "basis": "SOÁT LẠI 2026-11-04 (đa nguồn): 3 loại rum tổng 120 ml × 2,21 = 265,2 kcal; nước cốt chanh 20 ml × 0,22 = 4,4 kcal; falernum 15 ml × 2,50 = 37,5 kcal (CHƯA kiểm chứng, giữ số cũ); Donn's Mix 15 ml × 1,00 = 15,0 kcal (CHƯA kiểm chứng, giữ số cũ); grenadine 5 ml × 2,67 = 13,4 kcal (nhãn Rose's 267 kcal/100 ml, cũ 16,9); bitters + Pernod ~1,8 kcal. Tổng mới 337,2 kcal / 175,8 ml = 192 kcal/100 ml (cũ 341, cao hơn 4 kcal vì grenadine cũ). ABV 27,5% không đổi. Đây vẫn chưa phải đầu ra engine.",
+      "per_serving": "≈329–338 kcal/ly (176 ml chất lỏng)",
+      "basis": "KIỂM THỬ LẠI ĐỢT 2 (2026-11-04, đa nguồn + suy luận ghi rõ): 3 loại rum tổng 120 ml × 2,21 = 265,2 kcal; nước cốt chanh 20 ml × 0,22 = 4,4 kcal; falernum 15 ml × 1,61–2,01 = 24,2–30,2 kcal — SỬA so với cũ (2,50/ml, giữ số cũ đợt 1): Velvet Falernum là rượu mùi 11% ABV (ethanol 61 kcal/100 ml) + đường khoảng 25–35 g/100 ml (100–140 kcal) = 161–201 kcal/100 ml, suy từ ABV và độ ngọt, KHÔNG có nhãn trực tiếp — siro falernum Monin không cồn 316 kcal/100 ml là sản phẩm khác, không áp dụng; Donn's Mix 15 ml × 1,30–1,50 = 19,5–22,5 kcal — SỬA so với cũ (1,00/ml): Donn's Mix #1 là 50/50 nước bưởi (0,39/ml) + siro quế (siro đường 1:1 khoảng 2,41/ml) = khoảng 1,40/ml, suy từ công thức; grenadine 5 ml × 2,67 = 13,4 kcal (nhãn Rose's); bitters + Pernod ~1,8 kcal. Tổng mới 328,5–337,5 kcal / 175,8 ml = 187–192 kcal/100 ml (cũ 337 nằm ở đầu trên khoảng mới). ABV 27,5% không đổi. Đây vẫn chưa phải đầu ra engine.",
       "confidence": "low",
       "source_ref": "Bảng kcal/ml cocktail trong hồ sơ triển khai (ethanol + đường, xem basis)"
     },
