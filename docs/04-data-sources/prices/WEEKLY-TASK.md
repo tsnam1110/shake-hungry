@@ -52,13 +52,35 @@ push lên git.
   chính thức của chợ đó trong đúng ngày thu thập và trang đó ghi rõ ngày;
   bài báo, blog hay trang tổng hợp đăng lại giá chợ không phải là nguồn,
   dù số đó trông hợp lý.
-- Nguồn KHÔNG được dùng làm giá: bài báo trích lại giá siêu thị hoặc giá
-  chợ, bài tổng hợp giá trên trang tin, trang so sánh giá, gian hàng bên
-  thứ ba trên sàn thương mại điện tử không phải gian hàng chính hãng.
-  Những nguồn này chỉ được dùng làm manh mối để tìm ra trang bán chính
-  thức, sau đó vẫn phải đọc trực tiếp trang bán chính thức mới được ghi
-  giá. Khi trang bán chính thức không đọc được thì ghi `missing`, không
-  copy số từ bài báo.
+- Logic dự phòng khi không có trên kênh chính, thêm ngày 2026-11-04 theo
+  yêu cầu của chủ dự án: chỉ khi một khóa đã tìm thật trên tất cả kênh
+  chính ở trên mà không thấy, mới được tìm kiếm trên mạng trong đúng
+  ngày thu thập đó, theo đúng thứ tự sau. Tìm kiếm web không bao giờ
+  thay cho việc thử kênh chính, và không mang giá tìm được tuần này
+  sang tuần sau:
+  1. Trang bán chính thức khác tìm qua tìm kiếm: siêu thị khác, gian
+     hàng chính hãng trên sàn, trang web của thương hiệu, có ghi giá và
+     cỡ gói. Đây là trang bán trực tiếp, ngày quan sát là ngày thu thập.
+     Ghi `channel` là `web-search`, `source_name` là tên người bán tìm
+     được, `source_url` là trang đó, `source_note` ghi rõ đã tìm kênh
+     chính nào trước và tìm qua tìm kiếm web ngày nào.
+  2. Bảng giá chính thức có ngày: Sở Công Thương, ban quản lý chợ, chợ
+     đầu mối chính thức, có ghi rõ ngày thu thập. Ghi tương tự, `channel`
+     là `web-search`.
+  3. Bài báo hoặc trang tổng hợp chỉ được dùng ở bước cuối, khi bài đó
+     ghi rõ ngày thu thập và trích đúng một người bán cụ thể với giá và
+     cỡ gói, và không có nguồn trực tiếp nào ở bước 1 và 2. Khi đó vẫn
+     ghi `channel` là `web-search`, `source_name` là tên bài báo cộng tên
+     người bán được trích, và `source_note` ghi rõ đây là giá qua bài
+     báo, không phải đọc trực tiếp trang bán, để báo cáo phân tầng được.
+     Bài báo không ghi ngày, bài cũ khác ngày thu thập, bài chỉ ghi giá
+     mà không ghi cỡ gói hoặc người bán, bài ghi giá của mặt hàng tương
+     tự đều không được dùng.
+  Khi cả ba bước đều không đủ điều kiện thì vẫn ghi `missing`, kèm
+  `detail` ghi rõ đã thử kênh chính nào và đã tìm kiếm web ngày nào mà
+  không tìm được trang bán trực tiếp. Báo cáo cuối lần chạy phải tách
+  riêng số dòng kênh chính và số dòng `web-search`, để chủ dự án thấy rõ
+  phần nào là giá trực tiếp, phần nào là giá qua tìm kiếm.
 - `channels_attempted` trong `meta` phải ghi đúng các kênh đã thử đọc
   trong tuần đó. Kênh chưa thử thì ghi vào `notes` là chưa thử, không ghi
   vào `missing` như thể đã tìm mà không thấy. Lý do `khong-tim-thay-trang`
@@ -117,6 +139,15 @@ vị và lá đặc sản, gia vị khô, tinh bột và bánh, sữa và trứn
 nước chấm, nhóm khác. Nhóm nào tìm rồi mà không thấy thì ghi `missing`
 kèm kênh đã tìm; nhóm nào chưa tìm thì ghi vào `notes` là chưa tìm, không
 được để `missing` ghi chung chung như thể đã tìm hết.
+
+Bước 2b: tìm kiếm web dự phòng, chỉ cho các khóa đã tìm hết kênh chính
+mà vẫn thiếu. Với mỗi khóa thiếu, tìm trên mạng trong đúng ngày thu thập
+bằng tên nguyên liệu và tên gọi khác, kèm từ khóa giá và cỡ gói nếu có.
+Làm đúng thứ tự ba bước trong mục 2: trang bán chính thức khác trước,
+bảng giá chính thức có ngày sau, bài báo ghi rõ ngày và người bán cuối
+cùng. Ghi dòng dự phòng với `channel` là `web-search`, không ghi dưới tên
+kênh chính, và ghi rõ trong `source_note` là dòng dự phòng. Khi tìm kiếm
+web cũng không đủ điều kiện thì giữ nguyên `missing`, không ước tính.
 
 Với mỗi sản phẩm, ghi đúng bốn nhóm thông tin theo thứ tự sau, không đảo
 ngược:
@@ -178,7 +209,10 @@ chung, không bỏ mục nào:
   thiếu, số dòng có cờ lệch giá in sẵn.
 - Phân tầng theo kênh: mỗi kênh trong mục 2 thu được bao nhiêu dòng,
   kênh nào không đọc được và vì sao, kênh nào chưa thử đọc trong tuần
-  này. Không báo một kênh là không có hàng khi thực ra chưa thử kênh đó.
+  này, và riêng số dòng `web-search` dự phòng là bao nhiêu, trong đó bao
+  nhiêu dòng là trang bán trực tiếp tìm qua tìm kiếm, bao nhiêu dòng là
+  qua bài báo. Không báo một kênh là không có hàng khi thực ra chưa thử
+  kênh đó, và không gộp dòng `web-search` vào số dòng kênh chính.
 - Danh sách các nhóm còn thiếu nhiều nhất, ví dụ sữa, gạo Japonica ở
   Bách Hóa Xanh, kênh chợ, mớ rau thơm, kèm lý do thiếu.
 - Commit của lần chạy, hoặc lý do chưa commit khi script chưa chạy qua

@@ -87,10 +87,16 @@ docs/04-data-sources/prices/
   định là: `bhx-online`, `winmart-online`, `coop-online`,
   `aeon-eshop-online`, `lotte-online`, `go-bigc-online`, cộng kênh chuyên
   biệt `meatdeli-online` và `cho-<tên chợ>` khi khảo sát trực tiếp tại
-  chợ. Bài báo trích lại giá, trang tổng hợp và gian hàng bên thứ ba
-  không phải là kênh giá. Mỗi kênh là một dòng riêng, không bao giờ gộp
-  giá chợ và giá siêu thị thành một dòng, không bao giờ tính trung bình
-  hai kênh.
+  chợ. Mỗi kênh là một dòng riêng, không bao giờ gộp giá chợ và giá siêu
+  thị thành một dòng, không bao giờ tính trung bình hai kênh.
+- Logic dự phòng, thêm cùng ngày 2026-11-04: khi một sản phẩm đã tìm hết
+  kênh chính mà không có, lần chạy được tìm kiếm trên mạng trong đúng
+  ngày thu thập đó, theo thứ tự trang bán chính thức khác, bảng giá
+  chính thức có ngày, rồi mới tới bài báo ghi rõ ngày và người bán. Mọi
+  dòng dự phòng ghi `channel` là `web-search`, ghi rõ là dòng dự phòng
+  trong `source_note`, và báo cáo phải tách riêng số dòng này khỏi số
+  dòng kênh chính. Chi tiết đầy đủ ở `WEEKLY-TASK.md` mục 2 và
+  `SCHEMA.md` mục 5.
 - Miền chỉ ghi `bac`, `trung` hoặc `nam` khi vị trí giao hàng hoặc địa điểm
   chợ đã được chọn và ghi rõ. Khi đọc online mà chưa chọn vị trí giao, miền
   phải ghi `online-chua-chon-vi-tri`, không được gán miền theo suy đoán.

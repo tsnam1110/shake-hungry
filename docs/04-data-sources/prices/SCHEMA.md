@@ -41,10 +41,12 @@ Các trường trong mỗi dòng của `entries`, theo thứ tự ghi:
   hiệu và biến thể, ví dụ `Gạo thơm đặc sản Neptune ST25 túi 5kg`.
 - `channel`: kênh đọc giá, ví dụ `bhx-online`, `winmart-online`,
   `coop-online`, `aeon-eshop-online`, `lotte-online`, `go-bigc-online`,
-  `meatdeli-online`, `cho-binh-dien`. Không gộp kênh. Mỗi kênh chỉ được
-  ghi khi giá đọc trực tiếp từ trang bán hoặc khảo sát trực tiếp của
-  kênh đó trong đúng ngày thu thập; giá từ bài báo trích lại không được
-  ghi dưới tên kênh đó.
+  `meatdeli-online`, `cho-binh-dien`, và `web-search` cho dòng dự phòng
+  tìm qua tìm kiếm web khi đã tìm hết kênh chính mà không thấy (xem
+  mục 5). Không gộp kênh. Mỗi kênh chính chỉ được ghi khi giá đọc trực
+  tiếp từ trang bán hoặc khảo sát trực tiếp của kênh đó trong đúng ngày
+  thu thập; giá từ bài báo trích lại không được ghi dưới tên kênh chính
+  đó, mà chỉ được ghi dưới `web-search` khi đủ điều kiện ở mục 5.
 - `region`: `bac`, `trung`, `nam` chỉ khi vị trí giao hàng hoặc địa điểm chợ
   đã được chọn và ghi rõ. Khi đọc online mà chưa chọn vị trí giao, ghi
   `online-chua-chon-vi-tri`. Không suy đoán miền từ tên miền của website.
@@ -309,3 +311,31 @@ Script kiểm tra chỉ kiểm tra hình thức và toán học, không kiểm t
 giá có đúng với trang bán hay không. Vì vậy script chạy qua không có nghĩa
 là giá đã đúng, người thu thập vẫn phải đối chiếu lại từng dòng với trang
 bán trước khi commit.
+
+## 5. Logic dự phòng: tìm kiếm web khi không có trên kênh chính
+
+Logic này thêm ngày 2026-11-04 theo yêu cầu của chủ dự án, chỉ áp dụng
+sau khi đã tìm hết kênh chính. Thứ tự bắt buộc:
+
+1. Trang bán chính thức khác tìm qua tìm kiếm web trong đúng ngày thu
+   thập, có giá và cỡ gói. Ngày quan sát là ngày thu thập.
+2. Bảng giá chính thức có ngày thu thập của Sở Công Thương, ban quản lý
+   chợ hoặc chợ đầu mối chính thức.
+3. Bài báo hoặc trang tổng hợp, chỉ khi bài đó ghi rõ ngày thu thập và
+   trích đúng một người bán cụ thể với giá và cỡ gói.
+
+Mọi dòng dự phòng đều ghi `channel` là `web-search`, `source_name` là
+tên người bán hoặc tên bài báo cộng tên người bán được trích,
+`source_url` là trang đã đọc, và `source_note` ghi rõ đây là dòng dự
+phòng, đã tìm kênh chính nào trước, và là trang bán trực tiếp hay qua
+bài báo. Công thức quy đổi ở mục 2 áp dụng y hệt cho dòng dự phòng:
+giá/kg vẫn tính từ giá niêm yết và cỡ gói trong cùng dòng, không copy
+giá/kg in sẵn, không tự điền khối lượng cho hàng bán theo cái, quả, con,
+hộp, mớ khi trang không ghi khối lượng.
+
+Không được dùng tìm kiếm web trong các trường hợp sau: thay cho việc thử
+kênh chính; bài báo không ghi ngày hoặc khác ngày thu thập; trang chỉ
+ghi giá mà không ghi cỡ gói hoặc người bán; mặt hàng tương tự thay cho
+mặt hàng cần tìm; giá của tuần khác. Khi không đủ điều kiện thì giữ
+nguyên `missing`, ghi rõ trong `detail` là đã thử kênh chính nào và đã
+tìm kiếm web ngày nào mà không tìm được trang bán trực tiếp.
