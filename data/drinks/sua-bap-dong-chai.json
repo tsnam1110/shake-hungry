@@ -37,10 +37,10 @@
   "mocktail_counterpart_slug": null,
   "uncertain": false,
   "uncertain_note": "",
-  "needs_review": false,
-  "reviewed_by": "tsnam1110@gmail.com",
-  "reviewed_at": "2026-11-03",
-  "review_note": "Chủ dự án duyệt toàn bộ ngày 2026-11-03 (quyết định qua phiên làm việc: chấp nhận toàn bộ dữ liệu hiện có làm đã duyệt; mục nào lỗi sẽ được chỉnh lại thành chưa duyệt trên hệ thống sau).",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Triển khai theo mẫu bạc xỉu 2026-11-04, làm cẩn thận theo QT-9: khoảng theo loại đóng gói, không lấy số một hãng — chưa qua duyệt lại sau khi sửa.",
   "source_note": "Catalogue nước uống Việt Nam v2 (2026-11-03), §6.",
   "media": [
     {
@@ -49,5 +49,31 @@
       "attribution": "Ảnh minh hoạ do AI tạo — Lắc Đói",
       "is_primary": true
     }
-  ]
+  ],
+  "key_indicators": [
+    {
+      "label": "Năng lượng",
+      "unit": "kcal/100 ml",
+      "value_min": 60,
+      "value_max": 80,
+      "value": null,
+      "per_serving": "≈198–264 kcal/chai 330 ml",
+      "basis": "Sữa bắp đóng chai là bắp + sữa + đường: bắp khoảng 96 kcal/100 g (ngô ngọt), sữa tươi 60–61, đường thêm khoảng 6–9 g/100 ml × 4 = 24–36 kcal — hỗn hợp pha loãng cho khoảng 60–80 kcal/100 ml. Đây là khoảng theo loại, không phải số một hãng — sữa bắp các hãng có tỷ lệ bắp/sữa/đường khác nhau. Không dùng engine (đồ đóng gói không qua engine).",
+      "confidence": "low",
+      "source_ref": "Nhãn đóng gói (khoảng theo loại, không phải một nhãn cụ thể)"
+    },
+    {
+      "label": "Đường",
+      "unit": "g/lon",
+      "value_min": 30,
+      "value_max": 40,
+      "value": null,
+      "per_serving": "≈30–40 g/chai 330 ml",
+      "basis": "Đường trong sữa bắp đóng chai khoảng 9–12 g/100 ml (đường tự nhiên trong bắp khoảng 3 g + đường thêm 6–9 g), nhân chai 330 ml = 29,7–39,6 g, làm tròn 30–40 g/chai.",
+      "confidence": "low",
+      "source_ref": "Nhãn đóng gói (khoảng theo loại)"
+    }
+  ],
+  "allergen_note": "Dị ứng Sữa: sữa bắp đóng chai theo loại thường chứa sữa (sữa tươi/sữa đặc), nên người dị ứng sữa phải tránh — nhưng một số bản sữa bắp thuần bắp (không sữa) thì không chứa sữa, ghi rõ: xác nhận theo loại phổ biến, không phải từ tag trong hồ sơ, người dị ứng phải đọc nhãn chai cụ thể. Các dị ứng khác chưa đủ dữ kiện.",
+  "tcm_note": "Không kết luận tính vị: mục đóng gói này chưa gắn hồ sơ nguyên liệu nên không kết luận ở tầng món."
 }
