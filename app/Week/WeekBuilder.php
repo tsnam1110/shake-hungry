@@ -192,6 +192,35 @@ class WeekBuilder
         return $rebuilt;
     }
 
+    /**
+     * Tuần ví dụ cho khách (tiếp tục Phần 2.4, quyết định "khách xem tuần
+     * ví dụ không lưu"): 7 ngày, mỗi ngày 4 bữa, từ ứng viên thật với
+     * hồ sơ null — KHÔNG lưu DB, KHÔNG cá nhân hoá, KHÔNG có mục tiêu
+     * nên không kết luận đạt/thiếu. Lặp món tối đa 2 lần/tuần như builder
+     * chính; kho ví dụ nhỏ thì cho phép lặp thêm còn hơn bỏ trống bữa.
+     *
+     * @return array<int, array{day: int, meals: array<int, array{slot: string, dish: Dish}>}>
+     */
+    public function exampleWeek(): array
+    {
+        $usage = [];
+        $days = [];
+        for ($day = 1; $day <= 7; $day++) {
+            $meals = [];
+            foreach (WeekValidator::SLOTS as $slot) {
+                $dish = $this->pick($slot, null, $usage);
+                if ($dish === null) {
+                    continue;
+                }
+                $usage[$dish->id] = ($usage[$dish->id] ?? 0) + 1;
+                $meals[] = ['slot' => $slot, 'dish' => $dish];
+            }
+            $days[] = ['day' => $day, 'meals' => $meals];
+        }
+
+        return $days;
+    }
+
     private function pick(string $slot, ?UserProfile $profile, array $usage): ?Dish
     {
         $candidates = $this->candidates($slot, $profile);

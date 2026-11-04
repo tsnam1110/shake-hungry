@@ -156,6 +156,11 @@ này trước Task suy kcal từ TDEE + mục tiêu (thuộc Phần 2.1, sau for
 - API tuần ví dụ công khai GET /api/week-plans/example: 1 ngày mẫu từ
   ứng viên thật, không lưu, không cá nhân hoá, không kết luận đạt/thiếu
   (đặt trước route /week-plans/{id} để không bị nuốt).
+- Tiếp tục 2026-11-04: tuần ví dụ cho khách nâng lên đủ 7 ngày
+  (`WeekBuilder::exampleWeek`, lặp món tối đa 2 lần/tuần như builder
+  chính, kho ví dụ nhỏ thì cho phép lặp thêm còn hơn bỏ trống bữa),
+  trang khách render 7 ngày thay vì 1 ngày. Vẫn không lưu, không cá
+  nhân hoá, không kết luận đạt/thiếu.
 - Test `tests/Feature/WeekPageTest.php` 3 test pass (khách/auth/API ví dụ).
 - Chưa làm trong Phần 2.4 (cố ý): thao tác tuần, đi chợ — trang hiện
   ghi rõ thao tác sẽ có ở phần tiếp theo, không giả vờ có nút.

@@ -7,9 +7,9 @@
     <h1 class="ld-title" style="margin-top:14px">Tuần ăn</h1>
     <p class="ld-subtitle">Một tuần 7 ngày, mỗi ngày 4 bữa sáng / trưa / tối / ăn vặt, kiểm chứng từng ngày theo mục tiêu protein và kcal của bạn. Tuần thật cần đăng nhập để lưu theo hồ sơ của bạn.</p>
     <section>
-        <h2 class="ld-section-title">Ngày ví dụ — không lưu, không cá nhân hoá</h2>
-        <div class="ld-group" id="example-meals"></div>
-        <p class="ld-note" style="margin-top:10px">Ngày ví dụ lấy món thật từ thư viện, xếp theo protein giảm dần. Nó không có mục tiêu của bạn nên không kết luận đạt hay thiếu.</p>
+        <h2 class="ld-section-title">Tuần ví dụ — không lưu, không cá nhân hoá</h2>
+        <div id="example-meals"></div>
+        <p class="ld-note" style="margin-top:10px">Tuần ví dụ lấy món thật từ thư viện, xếp theo protein giảm dần, mỗi món tối đa 2 lần/tuần. Nó không có mục tiêu của bạn nên không kết luận đạt hay thiếu.</p>
     </section>
     <div style="display:flex;gap:10px;margin-top:22px;flex-wrap:wrap">
         <a href="/tai-khoan" class="ld-btn ld-btn-primary" style="text-decoration:none">Đăng nhập để tạo tuần ăn</a>
@@ -87,12 +87,14 @@ const headers = { 'Content-Type': 'application/json', 'Accept': 'application/jso
 (async () => {
     try {
         const data = await (await fetch('/api/week-plans/example')).json();
-        document.getElementById('example-meals').innerHTML = (data.meals ?? []).map(m => `
+        document.getElementById('example-meals').innerHTML = (data.days ?? []).map(d => `
+            <p class="ld-group-label">Ngày ${d.day}</p>
+            <div class="ld-group">${d.meals.map(m => `
             <div class="ld-row">
                 <span class="grow"><span style="font-weight:600">${esc(slotName[m.slot] ?? m.slot)}</span>
                 <span class="sub"><a href="/mon/${esc(m.dish.slug)}">${esc(m.dish.name ?? m.dish.slug)}</a>${m.dish.region ? ' · ' + esc(m.dish.region) : ''}</span></span>
                 ${m.dish.nutrition ? `<span class="ld-price"><span class="so ld-tnum">${Math.round(m.dish.nutrition.kcal_min)}–${Math.round(m.dish.nutrition.kcal_max)}</span><small>kcal · ${Math.round(m.dish.nutrition.protein_g)} g protein</small></span>` : ''}
-            </div>`).join('') || '<p style="color:var(--color-faint);padding:16px;margin:0">Chưa có món ví dụ.</p>';
+            </div>`).join('')}</div>`).join('') || '<p style="color:var(--color-faint);padding:16px;margin:0">Chưa có món ví dụ.</p>';
     } catch { /* khối ví dụ */ }
 })();
 </script>
