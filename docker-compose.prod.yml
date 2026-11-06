@@ -28,7 +28,7 @@ services:
 
   web:
     ports: !override
-      - "80:80"
+      - "1113:80"
     restart: unless-stopped
     logging:
       driver: json-file
