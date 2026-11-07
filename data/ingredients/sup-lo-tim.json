@@ -14,7 +14,7 @@
     "protein_g": 1.92,
     "fat_g": 0.28,
     "carb_g": 4.97,
-    "fiber_g": 2.0,
+    "fiber_g": 2,
     "water_g": 92.07,
     "mapping_confidence": "medium",
     "mapping_note": "Dùng chung bản ghi USDA SR Legacy 169986 'Cauliflower, raw' với nguyên liệu sup-lo-trang trong repo (25 kcal / 1,92 g protein / 0,28 g béo / 4,97 g carb / 2,0 g xơ / 92,07 g nước trên 100 g) — súp lơ tím là giống màu của cùng loài/giống súp lơ trắng (Brassica oleracea var. botrytis), khác chủ yếu ở anthocyanin tạo màu tím; việc dùng chung hàng USDA đã được phép theo DATA-PIPELINE §7.2a. Lưu ý: một nguồn thứ cấp cho súp lơ tím 2,5 g xơ (so với 2,0 g của bản trắng) nhưng chỉ có một nguồn, chưa đủ để thay số của bản ghi USDA nên không nhập.",
@@ -38,7 +38,6 @@
       "is_primary": true
     }
   ],
-  "tcm_traits": [],
   "source": "curated",
   "confidence": "low",
   "needs_review": true,

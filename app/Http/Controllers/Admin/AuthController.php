@@ -5,9 +5,11 @@ declare(strict_types=1);
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\User;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Validation\ValidationException;
 
 /** Đăng nhập khu vực quản trị bằng email/mật khẩu, phiên web (ADM-001). */
@@ -45,11 +47,11 @@ class AuthController extends Controller
     {
         abort_if(app()->environment('production'), 403, 'Đăng nhập nhanh bị vô hiệu hóa trên môi trường production.');
         abort_unless(config('admin.quick_login') === true, 403, 'Đăng nhập nhanh đang tắt.');
-        $admin = \App\Models\User::where('role', 'admin')->orderBy('id')->first();
+        $admin = User::where('role', 'admin')->orderBy('id')->first();
         abort_if($admin === null, 422, 'Chưa có tài khoản admin nào trong hệ thống.');
         Auth::login($admin);
         $request->session()->regenerate();
-        \Illuminate\Support\Facades\Log::warning('ADMIN QUICK-LOGIN đã được dùng', [
+        Log::warning('ADMIN QUICK-LOGIN đã được dùng', [
             'admin' => $admin->email, 'ip' => $request->ip(), 'user_agent' => $request->userAgent(),
         ]);
 

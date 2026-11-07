@@ -1,6 +1,8 @@
 <?php
 
 declare(strict_types=1);
+use App\Models\Ingredient;
+use App\Models\IngredientMedia;
 
 /*
  * Thumbnail cho thẻ danh sách (quy tắc 2026-11-03): route
@@ -45,12 +47,12 @@ test('route thumbnail từ chối chiều rộng ngoài danh sách và đường
 });
 
 test('API ảnh chính kèm srcset thumbnail, url gốc không đổi', function () {
-    $ing = \App\Models\Ingredient::create([
+    $ing = Ingredient::create([
         'name_vi' => 'Nguyên liệu mẫu thumbnail', 'slug' => 'nguyen-lieu-mau-thumb',
         'category' => 'rau-cu', 'mapping_confidence' => 'high',
         'source' => 'curated', 'confidence' => 'high',
     ]);
-    \App\Models\IngredientMedia::create([
+    IngredientMedia::create([
         'ingredient_id' => $ing->id, 'path' => 'media/ingredients/atiso.webp',
         'license' => 'ai-minh-hoa', 'attribution' => 'Ảnh minh hoạ do AI tạo — Lắc Đói',
         'is_primary' => true,

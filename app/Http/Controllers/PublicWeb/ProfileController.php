@@ -165,6 +165,7 @@ class ProfileController extends Controller
             $n = $log->dish?->nutrition;
             if ($n === null || $n->confidence === 'unknown') {
                 $unknown++;
+
                 continue;
             }
             $min += (float) $n->kcal_min;

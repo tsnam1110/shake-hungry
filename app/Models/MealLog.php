@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class MealLog extends Model
 {
@@ -17,12 +18,12 @@ class MealLog extends Model
         ];
     }
 
-    public function dish(): \Illuminate\Database\Eloquent\Relations\BelongsTo
+    public function dish(): BelongsTo
     {
         return $this->belongsTo(Dish::class);
     }
 
-    public function user(): \Illuminate\Database\Eloquent\Relations\BelongsTo
+    public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);
     }

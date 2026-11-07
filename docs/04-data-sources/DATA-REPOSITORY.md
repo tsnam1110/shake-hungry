@@ -1,5 +1,12 @@
 # Quy tắc lưu trữ tài nguyên trong repo — Lắc Đói
 
+> **Đính chính 2026-11-07 — CLEANUP-001:** chuẩn hoá cơ học 86 JSON:
+> 31 file chỉ đổi format/thứ tự khoá, 53 file bỏ optional media/tcm_traits
+> rỗng theo exporter, 2 index dựng lại từ file (647 món, 489 nguyên liệu).
+> Đối chiếu xác nhận không đổi giá trị dinh dưỡng, công thức, nguồn hoặc ghi
+> chú an toàn. Exporter đã bổ sung safety_note để không làm mất cảnh báo món.
+> Test export nay dùng bản sao data trong thư mục tạm, giữ cổng hash từng byte.
+
 **Cập nhật lần cuối:** 2026-08-31 — bản đầu tiên
 **Hiện thực quy tắc:** QT-3 trong [CLAUDE.md](../../CLAUDE.md)
 

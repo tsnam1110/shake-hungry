@@ -4,9 +4,18 @@ declare(strict_types=1);
 
 namespace App\Http\Controllers\PublicWeb;
 
+use App\Combinations\CombinationDisplay;
+use App\Cultural\TcmDisplay;
 use App\Http\Controllers\Controller;
 use App\Models\Dish;
+use App\Models\Ingredient;
+use App\Models\Region;
+use App\Models\UserProfile;
+use App\Profile\TdeeCalculator;
+use App\Recommendation\DrinkRecommender;
 use App\Recommendation\Recommender;
+use App\Taxonomy\AllergenDisplay;
+use App\Taxonomy\TagFilter;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 
@@ -18,7 +27,7 @@ class CatalogController extends Controller
         // DATA-010: vùng miền của món chỉ còn 3 miền chính (+ cả nước) —
         // tỉnh/thành cụ thể sống ở phân loại "Đặc sản" (facet dac-san).
         return response()->json(
-            \App\Models\Region::query()->select(['id', 'name'])
+            Region::query()->select(['id', 'name'])
                 ->whereIn('level', ['country', 'macro_region'])
                 ->orderBy('name')->get()
         );
@@ -41,7 +50,7 @@ class CatalogController extends Controller
             $query->whereHas('nutrition');
         }
         // Lọc theo nhãn (TAXONOMY.md §7): khác facet = AND, trong facet = OR.
-        foreach (\App\Taxonomy\TagFilter::slugsByFacet($request) as $slugs) {
+        foreach (TagFilter::slugsByFacet($request) as $slugs) {
             $query->whereHas('tags', fn ($w) => $w->whereIn('tags.slug', $slugs));
         }
         // Loại món chứa chất gây dị ứng: allergen_free=ca,dau-phong
@@ -142,16 +151,16 @@ class CatalogController extends Controller
             'variants' => $variants,
             // TCM-000/TCM-003: khối "Tính vị:" — mặc định hiển thị, nhưng
             // TcmDisplay trả null khi coverage <30% (không kết luận thay vì đoán).
-            'tcm' => \App\Cultural\TcmDisplay::forDish($dish),
+            'tcm' => TcmDisplay::forDish($dish),
             // FOOD-COMBINE-001: cặp kết hợp cần lưu ý mà món chứa cả hai phía
             // (notes = tầng 1–2 hiện ở khối nguyên liệu; folk = tầng 3 thu
             // gọn). Chỉ là lớp thông tin — không vào gợi ý/lọc/chấm điểm.
-            'combinations' => \App\Combinations\CombinationDisplay::forDish($dish),
-            'combinations_disclaimer' => \App\Combinations\CombinationDisplay::DISCLAIMER,
+            'combinations' => CombinationDisplay::forDish($dish),
+            'combinations_disclaimer' => CombinationDisplay::DISCLAIMER,
             // QD-ALLERGEN (2026-11-02): nhãn dị ứng ở tầng HIỂN THỊ — QD-01
             // tách "Cá"/"Nước mắm", QD-02 đánh dấu "có thể có" cho cờ chỉ từ
             // dòng tuỳ chọn. Chỉ trình bày; lọc cứng dùng dish tags như cũ.
-            'allergen_display' => \App\Taxonomy\AllergenDisplay::forDish($dish),
+            'allergen_display' => AllergenDisplay::forDish($dish),
             // UI-003: khối minh bạch "Con số này từ đâu ra"
             'provenance' => $dish->nutrition === null ? null : [
                 'fct_source' => $dish->nutrition->fct_source,
@@ -160,7 +169,7 @@ class CatalogController extends Controller
                 'missing_ingredients' => $dish->nutrition->missing_ingredients,
                 // UI-021: tên hiển thị của nguyên liệu chưa tra được (dữ liệu lưu
                 // bằng slug — trước đây trang hiển thị thẳng slug cho người dùng).
-                'missing_ingredient_names' => \App\Models\Ingredient::query()
+                'missing_ingredient_names' => Ingredient::query()
                     ->whereIn('slug', $dish->nutrition->missing_ingredients ?? [])
                     ->pluck('name_vi')->values(),
                 // UI-022: slug nguyên liệu chưa kiểm định — trang món gắn nhãn
@@ -192,6 +201,7 @@ class CatalogController extends Controller
             'dish_count' => ['nullable', 'integer', 'min:1', 'max:4'],
             // REC-004: tuỳ chọn "Bữa cơm bình dân" cho mâm cơm tự nấu.
             'binh_dan' => ['nullable', 'boolean'],
+            'include_drink' => ['nullable', 'boolean'],
             'home_cook' => ['nullable', 'boolean'],
             'allergens' => ['nullable', 'array'],
             'allergens.*' => ['string', 'max:64'],
@@ -217,7 +227,7 @@ class CatalogController extends Controller
 
         // Kho trống toàn cục = dữ liệu đang được dựng lại (seed), không phải do
         // bộ lọc của người dùng — phải báo đúng sự thật thay vì kêu nới bộ lọc.
-        $catalogEmpty = \App\Models\Dish::whereHas('nutrition')->count() === 0;
+        $catalogEmpty = Dish::whereHas('nutrition')->count() === 0;
         $updatingSuggestion = 'Hệ thống đang cập nhật lại dữ liệu món ăn — vui lòng thử lại sau ít phút.';
 
         if ($mode === 'home') {
@@ -244,6 +254,7 @@ class CatalogController extends Controller
                 'relaxed_level' => $result['relaxed_level'],
                 'pool_size' => $result['pool_size'],
                 'suggestion' => $dishes === [] && $catalogEmpty ? $updatingSuggestion : ($result['suggestion'] ?? null),
+                ...$this->drinkResult($data, $engineInput, 'home', $result['seed'], $dishes !== []),
             ]);
         }
 
@@ -263,7 +274,35 @@ class CatalogController extends Controller
             'relaxed_level' => $result['relaxed_level'],
             'pool_size' => $result['pool_size'],
             'suggestion' => $presented === null && $catalogEmpty ? $updatingSuggestion : ($result['suggestion'] ?? null),
+            ...$this->drinkResult($data, $engineInput, 'eat_out', $result['seed'], $presented !== null),
         ]);
+    }
+
+    private function drinkResult(array $data, array $input, string $mode, string $seed, bool $hasDish): array
+    {
+        if (empty($data['include_drink'])) {
+            return [];
+        }
+        $drink = $hasDish ? app(DrinkRecommender::class)->pick($input, $mode, $seed) : null;
+
+        return [
+            'drink' => $drink === null ? null : [
+                'slug' => $drink->slug,
+                'name' => $drink->name_vi,
+                'kind' => $drink->kind,
+                'alcohol' => false,
+                'prep_minutes' => $drink->prep_minutes,
+                'ingredients' => $drink->ingredients ?? [],
+                'recipe_steps' => $drink->recipe_steps ?? [],
+                'safety_flags' => $drink->safety_flags ?? [],
+                'uncertain' => $drink->uncertain,
+                'uncertain_note' => $drink->uncertain_note,
+                'image' => $drink->primaryImage(),
+            ],
+            'drink_suggestion' => $drink !== null ? null : ($hasDish
+                ? 'Chưa có nước uống phù hợp với bộ lọc hiện tại; loại chưa rõ thành phần được bỏ qua khi cần lọc dị ứng hoặc ăn chay.'
+                : 'Chưa gợi ý nước uống vì chưa tìm được món ăn phù hợp.'),
+        ];
     }
 
     /**
@@ -271,7 +310,7 @@ class CatalogController extends Controller
      * gộp dị ứng từ hồ sơ, suy chế độ chay từ hồ sơ, lấy món gần đây từ nhật
      * ký thật và mục tiêu calo từ TDEE còn lại của ngày.
      *
-     * @return array{0: array<string, mixed>, 1: ?\App\Models\UserProfile}
+     * @return array{0: array<string, mixed>, 1: ?UserProfile}
      */
     private function shakeEngineInput(Request $request, array $data): array
     {
@@ -297,7 +336,7 @@ class CatalogController extends Controller
             $recentIds = array_values(array_unique([...$logIds, ...$recentIds]));
             // Tầng 3 calo: mục tiêu = phần calo còn lại của ngày chia theo tỷ lệ bữa
             if ($targetKcal === null && $profile !== null) {
-                $calc = app(\App\Profile\TdeeCalculator::class);
+                $calc = app(TdeeCalculator::class);
                 $tdee = $calc->for($profile);
                 if ($tdee !== null) {
                     $eatenMid = $user->mealLogs()->whereDate('eaten_at', now()->toDateString())
@@ -307,7 +346,7 @@ class CatalogController extends Controller
                             : 0);
                     $tdeeMid = ($tdee['tdee_min'] + $tdee['tdee_max']) / 2;
                     $remaining = max($tdeeMid - $eatenMid, 150);
-                    $ratios = \App\Profile\TdeeCalculator::SLOT_RATIOS;
+                    $ratios = TdeeCalculator::SLOT_RATIOS;
                     $order = ['sang', 'trua', 'chieu', 'toi'];
                     $idx = array_search($data['slot'], $order, true);
                     if ($idx !== false) {
@@ -354,7 +393,7 @@ class CatalogController extends Controller
         $data = $request->validate($this->swapRules());
         [$engineInput] = $this->shakeEngineInput($request, $data);
         $dishes = $recommender->trayCandidates($engineInput, $data['role'], $data['exclude_dish_ids'] ?? [])
-            ->map(function (\App\Models\Dish $dish) use ($data) {
+            ->map(function (Dish $dish) use ($data) {
                 $dish->loadMissing('dishIngredients.ingredient:id,name_vi,slug');
 
                 return $this->presentShakeDish($dish, $data['role']);
@@ -384,7 +423,7 @@ class CatalogController extends Controller
     }
 
     /** Presenter dùng chung cho món lắc đơn và từng món trong mâm cơm (REC-003). */
-    private function presentShakeDish(\App\Models\Dish $dish, ?string $role = null): array
+    private function presentShakeDish(Dish $dish, ?string $role = null): array
     {
         return [
             'id' => $dish->id,
@@ -396,15 +435,15 @@ class CatalogController extends Controller
             'serving_desc' => $dish->serving_desc,
             'slots' => $dish->mealSlots->pluck('slot'),
             'role' => $role,
-            'role_label' => $role === null ? null : (\App\Recommendation\Recommender::TRAY_ROLE_LABELS[$role] ?? $role),
+            'role_label' => $role === null ? null : (Recommender::TRAY_ROLE_LABELS[$role] ?? $role),
             // IMG-001: ảnh chính của món lắc (nếu có).
             'image' => $dish->primaryImage(),
             // Hoàn thiện mục 5a: cảnh báo kết hợp trong kết quả Lắc — CHỈ hiển
             // thị. CombinationDisplay::forDish chỉ gắn cặp thực phẩm–thực phẩm;
             // cặp thuốc×thực phẩm không tự gắn vào món (nguyên tắc cũ giữ nguyên).
             // Không chặn, không lọc, không chấm điểm — Recommender không đổi.
-            'combinations' => \App\Combinations\CombinationDisplay::forDish($dish),
-            'combinations_disclaimer' => \App\Combinations\CombinationDisplay::DISCLAIMER,
+            'combinations' => CombinationDisplay::forDish($dish),
+            'combinations_disclaimer' => CombinationDisplay::DISCLAIMER,
             'nutrition' => $dish->nutrition === null ? null : [
                 'kcal_min' => $dish->nutrition->kcal_min,
                 'kcal_max' => $dish->nutrition->kcal_max,

@@ -14,5 +14,9 @@ trim_trailing_whitespace = false
 [*.{yml,yaml}]
 indent_size = 2
 
-[{compose,docker-compose}.{yml,yaml}]
-indent_size = 4
+[data/**/*.json]
+indent_size = 2
+
+# Hồ sơ quả dùng JSON compact, không newline cuối file (FRUIT-005).
+[data/fruits/*.json]
+insert_final_newline = false

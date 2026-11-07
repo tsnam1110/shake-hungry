@@ -8,6 +8,11 @@
 
 ## Triển khai hoặc cập nhật
 
+> **CLEANUP-001 (2026-11-07):** composer.lock có 6 cập nhật bảo mật tương thích
+> (Laravel 13.30, CommonMark 2.10.7, Symfony 7.4.x đã vá). Khi cập nhật phải
+> build lại app từ lockfile như deploy.sh đang làm, không chỉ chép PHP mới vào
+> container cũ. Không có migration mới hoặc yêu cầu reset/seed lại database.
+
 Yêu cầu: Bash/Linux, Docker Engine đang chạy, Docker Compose hỗ trợ `up --wait` và
 `--wait-timeout`, `openssl`, `curl`, `flock` (gói util-linux trên Ubuntu).
 Script kiểm tra khả năng Compose trước khi thay container. Cần đủ RAM/đĩa để

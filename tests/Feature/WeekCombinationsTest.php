@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+use App\Combinations\CombinationDisplay;
 use App\Models\Combination;
 use App\Models\Dish;
 use App\Models\DishNutrition;
@@ -48,7 +49,7 @@ it('chi tiết tuần trả cặp kết hợp của món, kèm miễn trừ', fu
     $day = WeekPlanDay::create(['week_plan_id' => $plan->id, 'date' => '2026-11-09', 'protein_g' => 30, 'kcal_min' => 400, 'kcal_max' => 500, 'status' => 'chua-du-du-lieu']);
     WeekPlanMeal::create(['week_plan_day_id' => $day->id, 'dish_id' => $dish->id, 'slot' => 'sang']);
 
-    $this->actingAs($user)->getJson('/api/week-plans/' . $plan->id)->assertOk()
-        ->assertJsonPath('combinations_disclaimer', \App\Combinations\CombinationDisplay::DISCLAIMER)
+    $this->actingAs($user)->getJson('/api/week-plans/'.$plan->id)->assertOk()
+        ->assertJsonPath('combinations_disclaimer', CombinationDisplay::DISCLAIMER)
         ->assertJsonPath('days.0.meals.0.dish.combinations.notes.0.slug', 'wc-tom-vit');
 });

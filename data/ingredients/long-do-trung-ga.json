@@ -1,46 +1,42 @@
 {
-  "category": "khac",
-  "confidence": "low",
-  "default_yield_factor": null,
-  "default_yield_factor_note": null,
-  "edible_portion_note": null,
-  "edible_portion_pct": null,
-  "is_ready_to_eat": true,
-  "media": [],
-  "needs_review": true,
-  "oil_absorption_pct": null,
-  "review_note": "Hồ sơ mới tạo triển khai nhóm cà phê 2026-11-04, chưa qua duyệt của chủ dự án.",
-  "reviewed_at": null,
-  "reviewed_by": null,
-  "secondary_sources": [],
-  "source": "curated",
+  "slug": "long-do-trung-ga",
   "name_vi": "Lòng đỏ trứng gà",
   "name_en": "Egg yolk, raw",
-  "slug": "long-do-trung-ga",
-  "density_g_per_ml": null,
-  "density_note": null,
+  "category": "khac",
   "reference_food": {
-    "alternatives": [],
-    "carb_g": 3.59,
-    "external_id": "172184",
-    "fat_g": 26.54,
     "fct_source": "usda_sr_legacy",
-    "fiber_g": 0,
-    "kcal_max": null,
-    "kcal_min": null,
+    "external_id": "172184",
+    "source_url": "https://fdc.nal.usda.gov/",
+    "scientific_name": "Gallus gallus domesticus",
     "kcal_per_100g": 322,
+    "kcal_min": null,
+    "kcal_max": null,
+    "protein_g": 15.86,
+    "fat_g": 26.54,
+    "carb_g": 3.59,
+    "fiber_g": 0,
+    "water_g": 52.31,
+    "sodium_mg": 48,
     "mapping_confidence": "medium",
     "mapping_note": "USDA SR Legacy 'Egg, yolk, raw, fresh' (FDC 172184, cùng mục đã dùng cho hồ sơ trung-ga-non): 322 kcal/100 g, protein 15,86, fat 26,54, carb 3,59, nước 52,31, natri 48 mg. 1 lòng đỏ lớn ≈ 17 g ≈ 55 kcal. Khác trung-ga nguyên quả (143 kcal/100 g) và khác trung-ga-non (nang trứng chưa rụng, tuy cùng mục SR nhưng tên gọi khác) — hồ sơ này là lòng đỏ trứng đã đẻ, dùng cho cà phê trứng.",
-    "protein_g": 15.86,
-    "scientific_name": "Gallus gallus domesticus",
-    "sodium_mg": 48,
-    "source_url": "https://fdc.nal.usda.gov/",
-    "water_g": 52.31
+    "alternatives": []
   },
-  "tags": [
-    "origin:dong-vat",
-    "state:tuoi",
-    "allergen:trung"
+  "secondary_sources": [],
+  "density_g_per_ml": null,
+  "density_note": null,
+  "default_yield_factor": null,
+  "default_yield_factor_note": null,
+  "oil_absorption_pct": null,
+  "edible_portion_pct": null,
+  "edible_portion_note": null,
+  "is_ready_to_eat": true,
+  "units": [
+    {
+      "unit_name": "quả",
+      "grams": 17.0,
+      "note": "1 lòng đỏ trứng gà lớn, USDA yolk 17 g ≈ 55 kcal",
+      "source": "USDA yolk weight"
+    }
   ],
   "tcm_traits": [
     {
@@ -51,12 +47,15 @@
       "confidence": "low"
     }
   ],
-  "units": [
-    {
-      "unit_name": "quả",
-      "grams": 17,
-      "note": "1 lòng đỏ trứng gà lớn, USDA yolk 17 g ≈ 55 kcal",
-      "source": "USDA yolk weight"
-    }
+  "source": "curated",
+  "confidence": "low",
+  "needs_review": true,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_note": "Hồ sơ mới tạo triển khai nhóm cà phê 2026-11-04, chưa qua duyệt của chủ dự án.",
+  "tags": [
+    "origin:dong-vat",
+    "state:tuoi",
+    "allergen:trung"
   ]
 }

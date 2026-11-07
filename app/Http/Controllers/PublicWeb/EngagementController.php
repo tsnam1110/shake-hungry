@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace App\Http\Controllers\PublicWeb;
 
 use App\Http\Controllers\Controller;
-use App\Models\Favorite;
 use App\Models\FruitLog;
 use App\Models\MealLog;
 use Illuminate\Http\JsonResponse;

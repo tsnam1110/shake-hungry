@@ -76,7 +76,7 @@ final class PackMapper
     }
 
     /**
-     * @param array<int, array{unit_name: string, quantity: float}> $unitEntries
+     * @param  array<int, array{unit_name: string, quantity: float}>  $unitEntries
      * @return array<int, array<string, mixed>>
      */
     public static function optionsFor(string $slug, ?float $totalGrams, ?float $density, array $unitEntries): array

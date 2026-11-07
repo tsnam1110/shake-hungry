@@ -50,7 +50,7 @@ final class AllergenDisplay
      *
      * @param  list<array{slug: string, tags: list<string>, components?: list<array<string, mixed>>, is_optional?: bool}>  $rows
      * @return list<array{group: string, label: string, certainty: string}>
-     *         certainty: 'definite' | 'possible'
+     *                                                                      certainty: 'definite' | 'possible'
      */
     public static function fromRows(array $rows): array
     {
@@ -137,7 +137,7 @@ final class AllergenDisplay
      * chỉ 1/2, nên phải hiện "chưa đủ dữ kiện", không phải "không ghi nhận".
      *
      * @return array{display: list<array{group: string, label: string, certainty: string}>, linked: int, total: int, coverage: string}
-     *         coverage: 'full' | 'partial' | 'none'
+     *                                                                                                                                 coverage: 'full' | 'partial' | 'none'
      */
     public static function forDrink(Drink $drink): array
     {

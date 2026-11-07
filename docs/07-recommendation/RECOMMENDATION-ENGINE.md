@@ -86,6 +86,23 @@ cả tính phù hợp lẫn tính bất ngờ.
 > không phải lọc theo nguyên liệu: món ăn nấu với rượu (ví dụ bò sốt vang) vẫn là `Dish` và không
 > thuộc quy định này. Test hồi quy: `RecommendationTest` — "lắc không bao giờ trả đồ uống có cồn".
 
+> **Đính chính 2026-11-07 — REC-DRINK-001:** theo yêu cầu chủ dự án,
+> `POST /api/shake` nhận thêm `include_drink` boolean (mặc định false).
+> Khi bật, nước không cồn được chọn KÈM từ `DrinkRecommender`, không nhập
+> Drink vào pool Dish. Phản hồi có `drink` (hoặc null) và `drink_suggestion`.
+> Khi tắt không thêm hai trường này để giữ tương thích. `dishes`, `dish_count`,
+> `tray_kcal` và meal_logs vẫn chỉ dành món ăn; UI ghi rõ chưa tính nước uống.
+> Cơm nhà: pha-che, nhóm giai-khat/nuoc-ep/sinh-to, dễ, có bước pha và nguyên
+> liệu, thời gian 1–20 phút; loại ép mía/quầy bar/đóng gói. Ngưỡng này là quy tắc
+> tiện dụng của tính năng, không phải định lượng biên soạn. Ăn ngoài có thể
+> chọn đồ pha chế/đóng gói không cồn. Chỉ dùng đã duyệt; uncertain và
+> uncertain_note được giữ và hiển thị nhãn lưu ý, không suy số dinh dưỡng;
+> alcohol=true, số liệu cồn >0, cocktail/mocktail/bia/rượu/vang đều bị loại.
+> Khi có dị ứng hoặc ăn chay, nước phải có ánh xạ nguyên liệu đầy đủ, không
+> garnish chưa ánh xạ, không đóng gói; kiểm thành phần con và cùng nhóm dị ứng
+> từ TaggingRules. Thiếu thông tin hoặc hết ứng viên: không đoán/nới lọc,
+> giữ món ăn, trả drink=null và giải thích. Không sửa dữ liệu/nguồn dinh dưỡng.
+
 ---
 
 ## 4. Tầng 2 — Loại trừ

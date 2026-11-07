@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 use App\Models\Dish;
 use App\Models\Ingredient;
+use App\Models\Region;
 use App\Models\User;
 use Illuminate\Support\Facades\DB;
 
@@ -117,7 +118,7 @@ it('lắc cá nhân hoá: dị ứng trong hồ sơ là lọc cứng và món v�
 it('hồ sơ lưu tuỳ chọn lắc: vùng miền yêu thích + kcal mục tiêu mỗi bữa (UI-011)', function () {
     $user = endUser();
     $this->actingAs($user);
-    $regionId = \App\Models\Region::create(['country_code' => 'VN', 'code' => 'vn-test', 'name' => 'Miền Test', 'level' => 'macro_region'])->id;
+    $regionId = Region::create(['country_code' => 'VN', 'code' => 'vn-test', 'name' => 'Miền Test', 'level' => 'macro_region'])->id;
 
     $this->putJson('/api/profile', [
         'preferred_region_id' => $regionId,

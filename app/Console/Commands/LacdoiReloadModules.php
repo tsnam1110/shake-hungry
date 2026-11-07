@@ -7,6 +7,9 @@ namespace App\Console\Commands;
 use App\Models\Combination;
 use App\Models\Drink;
 use App\Models\Vegetable;
+use Database\Seeders\CombinationSeeder;
+use Database\Seeders\DrinkSeeder;
+use Database\Seeders\VegetableSeeder;
 use Illuminate\Console\Command;
 
 /**
@@ -34,9 +37,9 @@ class LacdoiReloadModules extends Command
 
     /** @var array<string, array{seeder: class-string, model: class-string, label: string}> */
     private const array MODULES = [
-        'ket-hop' => ['seeder' => \Database\Seeders\CombinationSeeder::class, 'model' => Combination::class, 'label' => 'Kết hợp cần lưu ý'],
-        'rau-mua' => ['seeder' => \Database\Seeders\VegetableSeeder::class, 'model' => Vegetable::class, 'label' => 'Rau theo mùa'],
-        'do-uong' => ['seeder' => \Database\Seeders\DrinkSeeder::class, 'model' => Drink::class, 'label' => 'Nước uống'],
+        'ket-hop' => ['seeder' => CombinationSeeder::class, 'model' => Combination::class, 'label' => 'Kết hợp cần lưu ý'],
+        'rau-mua' => ['seeder' => VegetableSeeder::class, 'model' => Vegetable::class, 'label' => 'Rau theo mùa'],
+        'do-uong' => ['seeder' => DrinkSeeder::class, 'model' => Drink::class, 'label' => 'Nước uống'],
     ];
 
     public function handle(): int

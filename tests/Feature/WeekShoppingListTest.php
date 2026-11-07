@@ -10,6 +10,7 @@ use App\Models\UserProfile;
 use App\Models\WeekPlan;
 use App\Models\WeekPlanDay;
 use App\Models\WeekPlanMeal;
+use App\Week\PackMapper;
 
 // WEEK-001, Phần 2.6: danh sách đi chợ theo gram, không gói, không giá.
 // Bữa ăn ngoài không tính; dòng không có grams_resolved giữ nguyên đơn vị.
@@ -75,7 +76,7 @@ it('đi chợ nhóm theo gian hàng chung, thịt vào quầy thịt · thủy s
 // số gói làm tròn lên; ánh xạ ứng viên đã được duyệt hiển thị ngày
 // 2026-11-04 nên cũng hiện (duyệt hiển thị, không phải xác nhận đúng).
 it('F1 quy đổi gói khối lượng, dung tích qua density, và gói quả từ unit', function () {
-    $duong = \App\Week\PackMapper::optionsFor('duong-trang', 1200, 0.845, []);
+    $duong = PackMapper::optionsFor('duong-trang', 1200, 0.845, []);
     $goi500 = collect($duong)->firstWhere('pack_grams', 500.0);
     $goi1kg = collect($duong)->firstWhere('pack_grams', 1000.0);
     $goiVang = collect($duong)->firstWhere('product', 'Đường vàng Quảng Ngãi 1kg');
@@ -83,21 +84,21 @@ it('F1 quy đổi gói khối lượng, dung tích qua density, và gói quả t
         ->and($goi1kg['packs_needed'])->toBe(2)
         ->and($goiVang['packs_needed'])->toBe(2)
         ->and($goiVang['approved_display'])->toBeTrue()
-        ->and(\App\Week\PackMapper::unverifiedCount('duong-trang'))->toBe(0);
+        ->and(PackMapper::unverifiedCount('duong-trang'))->toBe(0);
 
     // 900 g dầu ăn / density 0,92 ≈ 978 ml → chai 1 L cần 1.
-    $dau = \App\Week\PackMapper::optionsFor('dau-an', 900, 0.92, []);
+    $dau = PackMapper::optionsFor('dau-an', 900, 0.92, []);
     $chai1l = collect($dau)->firstWhere('pack_ml', 1000.0);
     expect($chai1l['packs_needed'])->toBe(1);
 
     // 12 quả từ unit_entries → hộp 10 quả cần 2 hộp.
-    $trung = \App\Week\PackMapper::optionsFor('trung-ga', null, null, [['unit_name' => 'quả', 'quantity' => 12]]);
+    $trung = PackMapper::optionsFor('trung-ga', null, null, [['unit_name' => 'quả', 'quantity' => 12]]);
     $hop10 = collect($trung)->firstWhere('pack_count', 10);
     expect($hop10['packs_needed'])->toBe(2);
 
     // Toàn ứng viên nhưng đã duyệt hiển thị (gạo tẻ): hiện đủ 23 gói.
-    expect(\App\Week\PackMapper::optionsFor('gao-te', 1000, 0.782, []))->toHaveCount(23)
-        ->and(\App\Week\PackMapper::unverifiedCount('gao-te'))->toBe(0);
+    expect(PackMapper::optionsFor('gao-te', 1000, 0.782, []))->toHaveCount(23)
+        ->and(PackMapper::unverifiedCount('gao-te'))->toBe(0);
 });
 
 it('F1 đi chợ qua API gắn lựa chọn gói cho nguyên liệu có ánh xạ khớp', function () {

@@ -6,6 +6,34 @@ use Database\Seeders\DishSeeder;
 use Database\Seeders\FruitSeeder;
 use Database\Seeders\IngredientSeeder;
 use Database\Seeders\RegionSeeder;
+use Illuminate\Support\Facades\File;
+
+// Export là thao tác ghi file: mọi test phải chạy trên bản sao data riêng.
+beforeEach(function () {
+    $this->exportSourceRoot = base_path();
+    $this->exportSandbox = sys_get_temp_dir().DIRECTORY_SEPARATOR.'lacdoi-export-'.bin2hex(random_bytes(12));
+    File::ensureDirectoryExists($this->exportSandbox.'/data');
+    foreach (File::allFiles(base_path('data')) as $file) {
+        if (! in_array($file->getExtension(), ['json', 'csv'], true)) {
+            continue;
+        }
+        $target = $this->exportSandbox.'/data/'.$file->getRelativePathname();
+        File::ensureDirectoryExists(dirname($target));
+        File::copy($file->getPathname(), $target);
+    }
+    $this->app->setBasePath($this->exportSandbox);
+    $this->app->useStoragePath($this->exportSourceRoot.'/storage');
+    $this->app->useDatabasePath($this->exportSourceRoot.'/database');
+});
+
+afterEach(function () {
+    $this->app->setBasePath($this->exportSourceRoot);
+    $target = realpath($this->exportSandbox);
+    $allowed = realpath(sys_get_temp_dir()).DIRECTORY_SEPARATOR.'lacdoi-export-';
+    if ($target !== false && str_starts_with($target, $allowed)) {
+        File::deleteDirectory($target);
+    }
+});
 
 /**
  * DATA-007 DoD + CODING-STANDARDS §6: JSON export phải ỔN ĐỊNH — chạy hai lần

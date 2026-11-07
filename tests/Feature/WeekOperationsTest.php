@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 use App\Models\Dish;
 use App\Models\DishNutrition;
+use App\Models\Ingredient;
 use App\Models\User;
 use App\Models\UserProfile;
 use App\Models\WeekPlan;
@@ -19,8 +20,8 @@ function week25Dish(string $slug, string $slot, float $protein, int $kcalMin, in
     $dish->names()->create(['locale' => 'vi', 'name' => $slug, 'is_primary' => true, 'is_alias' => false]);
     $dish->mealSlots()->create(['slot' => $slot, 'weight' => 8]);
     foreach ($opts['ingredients'] ?? [] as $ingSlug) {
-        $ing = \App\Models\Ingredient::where('slug', $ingSlug)->first()
-            ?? \App\Models\Ingredient::create(['name_vi' => $ingSlug, 'slug' => $ingSlug, 'category' => $opts['category'] ?? 'khac', 'mapping_confidence' => 'high', 'source' => 'curated', 'confidence' => 'high']);
+        $ing = Ingredient::where('slug', $ingSlug)->first()
+            ?? Ingredient::create(['name_vi' => $ingSlug, 'slug' => $ingSlug, 'category' => $opts['category'] ?? 'khac', 'mapping_confidence' => 'high', 'source' => 'curated', 'confidence' => 'high']);
         $dish->dishIngredients()->create(['ingredient_id' => $ing->id, 'quantity' => 100, 'unit_name' => 'g', 'source' => 'curated']);
     }
     DishNutrition::create([
@@ -130,7 +131,7 @@ it('loại thực phẩm khỏi tuần: thêm vào hồ sơ, thay bữa chứa n
 
     $afterLac = $plan2->fresh()->meals()->whereHas('dish.dishIngredients.ingredient', fn ($q) => $q->where('slug', 'lac-rang'))->count();
     expect($afterLac)->toBe(0);
-    expect(\App\Models\UserProfile::where('user_id', $user->id)->first()->excluded_ingredients)->toContain('lac-rang');
+    expect(UserProfile::where('user_id', $user->id)->first()->excluded_ingredients)->toContain('lac-rang');
 });
 
 it('đổi bữa sang món thiếu dữ kiện bị từ chối 422', function () {

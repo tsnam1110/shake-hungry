@@ -7,6 +7,8 @@ use Database\Factories\UserFactory;
 use Illuminate\Database\Eloquent\Attributes\Fillable;
 use Illuminate\Database\Eloquent\Attributes\Hidden;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
@@ -30,27 +32,27 @@ class User extends Authenticatable
         ];
     }
 
-    public function profile(): \Illuminate\Database\Eloquent\Relations\HasOne
+    public function profile(): HasOne
     {
         return $this->hasOne(UserProfile::class);
     }
 
-    public function mealLogs(): \Illuminate\Database\Eloquent\Relations\HasMany
+    public function mealLogs(): HasMany
     {
         return $this->hasMany(MealLog::class);
     }
 
-    public function favorites(): \Illuminate\Database\Eloquent\Relations\HasMany
+    public function favorites(): HasMany
     {
         return $this->hasMany(Favorite::class);
     }
 
-    public function fruitLogs(): \Illuminate\Database\Eloquent\Relations\HasMany
+    public function fruitLogs(): HasMany
     {
         return $this->hasMany(FruitLog::class);
     }
 
-    public function feedbackTickets(): \Illuminate\Database\Eloquent\Relations\HasMany
+    public function feedbackTickets(): HasMany
     {
         return $this->hasMany(FeedbackTicket::class);
     }

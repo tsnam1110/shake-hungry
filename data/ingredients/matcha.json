@@ -12,7 +12,7 @@
     "kcal_min": 237,
     "kcal_max": 322,
     "protein_g": 30.6,
-    "fat_g": 5.0,
+    "fat_g": 5,
     "carb_g": null,
     "fiber_g": 31.8,
     "water_g": null,
@@ -38,7 +38,6 @@
       "is_primary": true
     }
   ],
-  "tcm_traits": [],
   "source": "curated",
   "confidence": "low",
   "needs_review": true,

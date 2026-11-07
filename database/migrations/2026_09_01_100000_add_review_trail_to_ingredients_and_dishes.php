@@ -65,7 +65,7 @@ return new class extends Migration
             foreach (["{$table}_r10_review_trail", "{$table}_review_pair_check"] as $check) {
                 try {
                     DB::statement("ALTER TABLE {$table} DROP CHECK {$check}");
-                } catch (\Throwable) {
+                } catch (Throwable) {
                     // Không tồn tại thì thôi — down() phải chạy được lặp lại.
                 }
             }

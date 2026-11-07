@@ -5,7 +5,9 @@ declare(strict_types=1);
 namespace App\Console\Commands;
 
 use App\Models\Dish;
+use App\Models\Fruit;
 use App\Models\Ingredient;
+use App\Taxonomy\TaggingRules;
 use Illuminate\Console\Command;
 
 /**
@@ -69,7 +71,7 @@ class LacdoiExportData extends Command
         // Hồ sơ hoa quả (FRUIT-005): định dạng riêng — JSON compact, khoá sắp
         // xếp theo bảng chữ cái ở mọi cấp, không newline cuối file.
         $fruitCount = 0;
-        foreach (\App\Models\Fruit::with(['ingredient', 'prices'])->orderBy('slug')->get() as $fruit) {
+        foreach (Fruit::with(['ingredient', 'prices'])->orderBy('slug')->get() as $fruit) {
             $this->writeCompactJson(base_path("data/fruits/{$fruit->slug}.json"), $this->fruitPayload($fruit));
             $fruitCount++;
         }
@@ -80,7 +82,7 @@ class LacdoiExportData extends Command
     }
 
     /** @return array<string, mixed> */
-    private function fruitPayload(\App\Models\Fruit $fruit): array
+    private function fruitPayload(Fruit $fruit): array
     {
         $prices = $fruit->prices->sortBy('id')->values()->map(function ($p) {
             $row = [
@@ -142,6 +144,7 @@ class LacdoiExportData extends Command
                 if (! array_is_list($value)) {
                     ksort($value);
                 }
+
                 return array_map($sort, $value);
             }
 
@@ -321,7 +324,7 @@ class LacdoiExportData extends Command
     private function orderedIngredientTags(Ingredient $ing): array
     {
         $owned = $ing->tags->pluck('slug')->all();
-        $ordered = array_values(array_intersect(\App\Taxonomy\TaggingRules::tagsFor($ing->slug, (string) $ing->category), $owned));
+        $ordered = array_values(array_intersect(TaggingRules::tagsFor($ing->slug, (string) $ing->category), $owned));
         $rest = array_values(array_diff($owned, $ordered));
         sort($rest);
 
@@ -457,6 +460,13 @@ class LacdoiExportData extends Command
         if ($dish->cultural_note !== null) {
             $payload = $this->insertAfterKey($payload, 'import_note', [
                 'cultural_note' => self::culturalNotePayload($dish->cultural_note),
+            ], fallbackKey: 'external_ref');
+        }
+
+        // Không làm mất cảnh báo đã biên soạn khi xuất ngược từ DB (QT-3).
+        if ($dish->safety_note !== null) {
+            $payload = $this->insertAfterKey($payload, 'import_note', [
+                'safety_note' => $dish->safety_note,
             ], fallbackKey: 'external_ref');
         }
 

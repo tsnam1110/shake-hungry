@@ -1,23 +1,41 @@
 <?php
 
+use App\Combinations\CombinationDisplay;
 use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\DishController;
 use App\Http\Controllers\Admin\FruitController as AdminFruitController;
 use App\Http\Controllers\Admin\IngredientController;
+use App\Http\Controllers\Admin\ModuleFileController;
 use App\Http\Controllers\Admin\ReferenceFoodController;
 use App\Http\Controllers\Admin\RegionController;
+use App\Http\Controllers\PublicWeb\CatalogController;
+use App\Http\Controllers\PublicWeb\ContributionController;
+use App\Http\Controllers\PublicWeb\DrinkController;
+use App\Http\Controllers\PublicWeb\EngagementController;
+use App\Http\Controllers\PublicWeb\FeedbackController;
+use App\Http\Controllers\PublicWeb\FruitController;
+use App\Http\Controllers\PublicWeb\MediaController;
+use App\Http\Controllers\PublicWeb\ProfileController;
+use App\Http\Controllers\PublicWeb\TaxonomyController;
+use App\Http\Controllers\PublicWeb\UserAuthController;
+use App\Http\Controllers\PublicWeb\VegetableController;
+use App\Http\Controllers\PublicWeb\WeekPlanController;
+use App\Http\Controllers\PublicWeb\WeekPlanShareController;
+use App\Http\Controllers\QuanTriController;
+use App\Models\Dish;
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     // RET-001: Món của ngày — chọn tất định theo ngày trong năm từ các món Mức ≥2
     // đã tính được dinh dưỡng và có ảnh chính; cache tới cuối ngày để mọi khách
     // trong ngày thấy cùng một món (đúng tính chất "của ngày").
-    $dishOfDay = \Illuminate\Support\Facades\Cache::remember(
-        'dish_of_day_' . now()->format('Y-m-d'),
+    $dishOfDay = Cache::remember(
+        'dish_of_day_'.now()->format('Y-m-d'),
         now()->endOfDay(),
         function () {
-            $ids = \App\Models\Dish::query()
+            $ids = Dish::query()
                 ->where('completeness_level', '>=', 2)
                 ->whereHas('nutrition')
                 ->whereHas('media', fn ($q) => $q->where('is_primary', true))
@@ -26,7 +44,7 @@ Route::get('/', function () {
             if ($ids->isEmpty()) {
                 return null;
             }
-            $dish = \App\Models\Dish::with(['nutrition', 'region'])->find($ids[now()->dayOfYear % $ids->count()]);
+            $dish = Dish::with(['nutrition', 'region'])->find($ids[now()->dayOfYear % $ids->count()]);
             $image = $dish?->primaryImage();
             if (! $dish || ! $image) {
                 return null;
@@ -38,7 +56,7 @@ Route::get('/', function () {
                 'image' => $image['url'],
                 'region' => $dish->region?->name,
                 'kcal_label' => $dish->nutrition
-                    ? ' · ' . round($dish->nutrition->kcal_min) . '–' . round($dish->nutrition->kcal_max) . ' kcal/khẩu phần'
+                    ? ' · '.round($dish->nutrition->kcal_min).'–'.round($dish->nutrition->kcal_max).' kcal/khẩu phần'
                     : '',
             ];
         }
@@ -59,8 +77,8 @@ Route::view('/nguon-du-lieu', 'legal.data');
 Route::get('/mon/{slug}', fn () => view('dish'));
 // IMG-001: ảnh trong data/media/ (đã qua kiểm license R4) — chỉ .webp ở hai nhóm dishes/ingredients.
 // Thumbnail phải khai báo TRƯỚC route /media chung, kẻo bị route chung nuốt mất.
-Route::get('/media/thumb/{width}/{path}', [\App\Http\Controllers\PublicWeb\MediaController::class, 'thumb'])->where('width', '[0-9]+')->where('path', '.*');
-Route::get('/media/{path}', [\App\Http\Controllers\PublicWeb\MediaController::class, 'show'])->where('path', '.*');
+Route::get('/media/thumb/{width}/{path}', [MediaController::class, 'thumb'])->where('width', '[0-9]+')->where('path', '.*');
+Route::get('/media/{path}', [MediaController::class, 'show'])->where('path', '.*');
 Route::get('/thu-vien', fn () => view('explore')); // tên cũ /kham-pha — đổi thành Thư viện 2026-11-01
 Route::get('/thu-vien/hoa-qua', fn () => view('fruits', ['library' => true])); // tab Hoa quả trong Thư viện (UI-023)
 Route::get('/thu-vien/do-uong', fn () => view('drinks', ['library' => true])); // tab Đồ uống trong Thư viện — theo mẫu tab Hoa quả (UI-023)
@@ -80,89 +98,90 @@ Route::get('/do-uong/{slug}', fn () => view('drink'));
 // Danh sách gộp theo phía đầu thành nhóm (groups()); trang chi tiết theo
 // nhóm ở /ket-hop-can-luu-y/{nhom} giữ nguyên từng cặp riêng trong nhóm.
 Route::get('/ket-hop-can-luu-y', fn () => view('combinations', [
-    'groups' => \App\Combinations\CombinationDisplay::groups(),
-    'total_pairs' => count(\App\Combinations\CombinationDisplay::all()),
-    'disclaimer' => \App\Combinations\CombinationDisplay::DISCLAIMER,
+    'groups' => CombinationDisplay::groups(),
+    'total_pairs' => count(CombinationDisplay::all()),
+    'disclaimer' => CombinationDisplay::DISCLAIMER,
 ]));
 Route::get('/ket-hop-can-luu-y/{group}', function (string $group) {
-    $g = \App\Combinations\CombinationDisplay::group($group);
+    $g = CombinationDisplay::group($group);
     abort_if($g === null, 404);
+
     return view('combination', [
         'group' => $g,
-        'disclaimer' => \App\Combinations\CombinationDisplay::DISCLAIMER,
+        'disclaimer' => CombinationDisplay::DISCLAIMER,
     ]);
 })->where('group', '[A-Za-z0-9_-]+');
 
 Route::prefix('api')->group(function () {
     // WEEK-001, Phần 2.4: tuần ví dụ công khai, đặt trước route /week-plans/{id} để không bị nuốt.
-    Route::get('/week-plans/example', [\App\Http\Controllers\PublicWeb\WeekPlanController::class, 'example']);
+    Route::get('/week-plans/example', [WeekPlanController::class, 'example']);
     // WEEK-001, Giai đoạn 4, Task 2: xem tuần qua mã, không cần đăng nhập.
-    Route::get('/shares/{code}', [\App\Http\Controllers\PublicWeb\WeekPlanShareController::class, 'showPublic']);
+    Route::get('/shares/{code}', [WeekPlanShareController::class, 'showPublic']);
     Route::middleware('throttle:auth')->group(function () {
-        Route::post('/register', [\App\Http\Controllers\PublicWeb\UserAuthController::class, 'register']);
-        Route::post('/login', [\App\Http\Controllers\PublicWeb\UserAuthController::class, 'login']);
-        Route::post('/forgot-password', [\App\Http\Controllers\PublicWeb\UserAuthController::class, 'forgot']);
-        Route::post('/reset-password', [\App\Http\Controllers\PublicWeb\UserAuthController::class, 'reset']);
+        Route::post('/register', [UserAuthController::class, 'register']);
+        Route::post('/login', [UserAuthController::class, 'login']);
+        Route::post('/forgot-password', [UserAuthController::class, 'forgot']);
+        Route::post('/reset-password', [UserAuthController::class, 'reset']);
     });
-    Route::post('/logout', [\App\Http\Controllers\PublicWeb\UserAuthController::class, 'logout']);
-    Route::get('/me', [\App\Http\Controllers\PublicWeb\UserAuthController::class, 'me']);
+    Route::post('/logout', [UserAuthController::class, 'logout']);
+    Route::get('/me', [UserAuthController::class, 'me']);
     Route::middleware('auth')->group(function () {
-        Route::get('/profile', [\App\Http\Controllers\PublicWeb\ProfileController::class, 'show']);
-        Route::put('/profile', [\App\Http\Controllers\PublicWeb\ProfileController::class, 'update']);
-        Route::get('/meal-logs', [\App\Http\Controllers\PublicWeb\ProfileController::class, 'mealLogs']);
-        Route::post('/meal-logs', [\App\Http\Controllers\PublicWeb\ProfileController::class, 'storeMealLog']);
-        Route::put('/meal-logs/{mealLog}', [\App\Http\Controllers\PublicWeb\ProfileController::class, 'updateMealLog']);
-        Route::delete('/meal-logs/{mealLog}', [\App\Http\Controllers\PublicWeb\ProfileController::class, 'destroyMealLog']);
+        Route::get('/profile', [ProfileController::class, 'show']);
+        Route::put('/profile', [ProfileController::class, 'update']);
+        Route::get('/meal-logs', [ProfileController::class, 'mealLogs']);
+        Route::post('/meal-logs', [ProfileController::class, 'storeMealLog']);
+        Route::put('/meal-logs/{mealLog}', [ProfileController::class, 'updateMealLog']);
+        Route::delete('/meal-logs/{mealLog}', [ProfileController::class, 'destroyMealLog']);
         // WEEK-001, Phần 2.3: tuần ăn của chính người dùng.
-        Route::get('/week-plans', [\App\Http\Controllers\PublicWeb\WeekPlanController::class, 'index']);
-        Route::post('/week-plans', [\App\Http\Controllers\PublicWeb\WeekPlanController::class, 'store']);
-        Route::get('/week-plans/{weekPlan}', [\App\Http\Controllers\PublicWeb\WeekPlanController::class, 'show']);
+        Route::get('/week-plans', [WeekPlanController::class, 'index']);
+        Route::post('/week-plans', [WeekPlanController::class, 'store']);
+        Route::get('/week-plans/{weekPlan}', [WeekPlanController::class, 'show']);
         // WEEK-001, Phần 2.5, Task 1: đổi một bữa.
-        Route::get('/week-plans/{weekPlan}/meals/{meal}/candidates', [\App\Http\Controllers\PublicWeb\WeekPlanController::class, 'mealCandidates']);
-        Route::post('/week-plans/{weekPlan}/meals/{meal}/swap', [\App\Http\Controllers\PublicWeb\WeekPlanController::class, 'swapMeal']);
+        Route::get('/week-plans/{weekPlan}/meals/{meal}/candidates', [WeekPlanController::class, 'mealCandidates']);
+        Route::post('/week-plans/{weekPlan}/meals/{meal}/swap', [WeekPlanController::class, 'swapMeal']);
         // WEEK-001, Phần 2.5, Task 2: đổi ngày bắt đầu tuần.
-        Route::post('/week-plans/{weekPlan}/change-start', [\App\Http\Controllers\PublicWeb\WeekPlanController::class, 'changeStart']);
+        Route::post('/week-plans/{weekPlan}/change-start', [WeekPlanController::class, 'changeStart']);
         // WEEK-001, Phần 2.5, Task 3: bắt đầu lại phần còn lại của tuần.
-        Route::post('/week-plans/{weekPlan}/restart-remaining', [\App\Http\Controllers\PublicWeb\WeekPlanController::class, 'restartRemaining']);
+        Route::post('/week-plans/{weekPlan}/restart-remaining', [WeekPlanController::class, 'restartRemaining']);
         // WEEK-001, Phần 2.5, Task 4: đánh dấu ăn ngoài.
-        Route::post('/week-plans/{weekPlan}/meals/{meal}/eat-out', [\App\Http\Controllers\PublicWeb\WeekPlanController::class, 'eatOut']);
+        Route::post('/week-plans/{weekPlan}/meals/{meal}/eat-out', [WeekPlanController::class, 'eatOut']);
         // WEEK-001, Phần 2.5, Task 5: loại một thực phẩm khỏi tuần.
-        Route::post('/week-plans/{weekPlan}/exclude-ingredient', [\App\Http\Controllers\PublicWeb\WeekPlanController::class, 'excludeIngredient']);
+        Route::post('/week-plans/{weekPlan}/exclude-ingredient', [WeekPlanController::class, 'excludeIngredient']);
         // WEEK-001, Phần 2.6: danh sách đi chợ theo gram.
-        Route::get('/week-plans/{weekPlan}/shopping-list', [\App\Http\Controllers\PublicWeb\WeekPlanController::class, 'shoppingList']);
+        Route::get('/week-plans/{weekPlan}/shopping-list', [WeekPlanController::class, 'shoppingList']);
         // WEEK-001, Giai đoạn 4, Task 1: ngân sách mềm.
-        Route::post('/week-plans/{weekPlan}/budget', [\App\Http\Controllers\PublicWeb\WeekPlanController::class, 'setBudget']);
+        Route::post('/week-plans/{weekPlan}/budget', [WeekPlanController::class, 'setBudget']);
         // WEEK-001, Giai đoạn 4, Task 2: tạo/thu hồi mã chia sẻ.
-        Route::post('/week-plans/{weekPlan}/shares', [\App\Http\Controllers\PublicWeb\WeekPlanShareController::class, 'create']);
-        Route::post('/week-plans/{weekPlan}/shares/{share}/revoke', [\App\Http\Controllers\PublicWeb\WeekPlanShareController::class, 'revoke']);
-        Route::post('/contributions', [\App\Http\Controllers\PublicWeb\ContributionController::class, 'store']);
-        Route::get('/contributions', [\App\Http\Controllers\PublicWeb\ContributionController::class, 'mine']);
-        Route::get('/favorites', [\App\Http\Controllers\PublicWeb\EngagementController::class, 'index']);
-        Route::get('/favorites/ids', [\App\Http\Controllers\PublicWeb\EngagementController::class, 'ids']);
-        Route::post('/favorites/toggle', [\App\Http\Controllers\PublicWeb\EngagementController::class, 'toggle']);
-        Route::post('/fruit-logs', [\App\Http\Controllers\PublicWeb\EngagementController::class, 'storeFruitLog']);
-        Route::get('/fruit-logs', [\App\Http\Controllers\PublicWeb\EngagementController::class, 'fruitLogs']);
-        Route::delete('/fruit-logs/{fruitLog}', [\App\Http\Controllers\PublicWeb\EngagementController::class, 'destroyFruitLog']);
-        Route::get('/stats', [\App\Http\Controllers\PublicWeb\EngagementController::class, 'stats']);
-        Route::post('/feedback', [\App\Http\Controllers\PublicWeb\FeedbackController::class, 'store']);
-        Route::get('/feedback', [\App\Http\Controllers\PublicWeb\FeedbackController::class, 'mine']);
+        Route::post('/week-plans/{weekPlan}/shares', [WeekPlanShareController::class, 'create']);
+        Route::post('/week-plans/{weekPlan}/shares/{share}/revoke', [WeekPlanShareController::class, 'revoke']);
+        Route::post('/contributions', [ContributionController::class, 'store']);
+        Route::get('/contributions', [ContributionController::class, 'mine']);
+        Route::get('/favorites', [EngagementController::class, 'index']);
+        Route::get('/favorites/ids', [EngagementController::class, 'ids']);
+        Route::post('/favorites/toggle', [EngagementController::class, 'toggle']);
+        Route::post('/fruit-logs', [EngagementController::class, 'storeFruitLog']);
+        Route::get('/fruit-logs', [EngagementController::class, 'fruitLogs']);
+        Route::delete('/fruit-logs/{fruitLog}', [EngagementController::class, 'destroyFruitLog']);
+        Route::get('/stats', [EngagementController::class, 'stats']);
+        Route::post('/feedback', [FeedbackController::class, 'store']);
+        Route::get('/feedback', [FeedbackController::class, 'mine']);
     });
-    Route::get('/regions', [\App\Http\Controllers\PublicWeb\CatalogController::class, 'regions']);
-    Route::get('/tags', [\App\Http\Controllers\PublicWeb\TaxonomyController::class, 'tags']);
-    Route::get('/ingredients', [\App\Http\Controllers\PublicWeb\TaxonomyController::class, 'ingredients']);
-    Route::get('/ingredients/{ingredient:slug}', [\App\Http\Controllers\PublicWeb\TaxonomyController::class, 'ingredient']);
-    Route::get('/dishes', [\App\Http\Controllers\PublicWeb\CatalogController::class, 'index']);
-    Route::get('/dishes/{dish:slug}', [\App\Http\Controllers\PublicWeb\CatalogController::class, 'show']);
-    Route::get('/fruits', [\App\Http\Controllers\PublicWeb\FruitController::class, 'index']);
-    Route::get('/fruits/{fruit:slug}', [\App\Http\Controllers\PublicWeb\FruitController::class, 'show']);
-    Route::get('/vegetables', [\App\Http\Controllers\PublicWeb\VegetableController::class, 'index']);
-    Route::get('/vegetables/{vegetable:slug}', [\App\Http\Controllers\PublicWeb\VegetableController::class, 'show']);
-    Route::get('/drinks', [\App\Http\Controllers\PublicWeb\DrinkController::class, 'index']);
-    Route::get('/drinks/{drink:slug}', [\App\Http\Controllers\PublicWeb\DrinkController::class, 'show']);
+    Route::get('/regions', [CatalogController::class, 'regions']);
+    Route::get('/tags', [TaxonomyController::class, 'tags']);
+    Route::get('/ingredients', [TaxonomyController::class, 'ingredients']);
+    Route::get('/ingredients/{ingredient:slug}', [TaxonomyController::class, 'ingredient']);
+    Route::get('/dishes', [CatalogController::class, 'index']);
+    Route::get('/dishes/{dish:slug}', [CatalogController::class, 'show']);
+    Route::get('/fruits', [FruitController::class, 'index']);
+    Route::get('/fruits/{fruit:slug}', [FruitController::class, 'show']);
+    Route::get('/vegetables', [VegetableController::class, 'index']);
+    Route::get('/vegetables/{vegetable:slug}', [VegetableController::class, 'show']);
+    Route::get('/drinks', [DrinkController::class, 'index']);
+    Route::get('/drinks/{drink:slug}', [DrinkController::class, 'show']);
     Route::middleware('throttle:shake')->group(function () {
-        Route::post('/shake', [\App\Http\Controllers\PublicWeb\CatalogController::class, 'shake']);
-        Route::post('/shake/tray-swap', [\App\Http\Controllers\PublicWeb\CatalogController::class, 'traySwapRandom']);
-        Route::get('/shake/tray-candidates', [\App\Http\Controllers\PublicWeb\CatalogController::class, 'traySwapCandidates']);
+        Route::post('/shake', [CatalogController::class, 'shake']);
+        Route::post('/shake/tray-swap', [CatalogController::class, 'traySwapRandom']);
+        Route::get('/shake/tray-candidates', [CatalogController::class, 'traySwapCandidates']);
     });
 });
 
@@ -193,18 +212,18 @@ Route::middleware(['auth', 'admin'])->prefix('admin/api')->group(function () {
     Route::post('/fruits/bulk', [AdminFruitController::class, 'bulk']);
     Route::apiResource('fruits', AdminFruitController::class);
     Route::post('/fruits/{fruit}/review', [AdminFruitController::class, 'review']);
-    Route::get('/contributions', [\App\Http\Controllers\Admin\ContributionController::class, 'index']);
-    Route::post('/contributions/bulk', [\App\Http\Controllers\Admin\ContributionController::class, 'bulk']);
-    Route::post('/contributions/{contribution}/review', [\App\Http\Controllers\Admin\ContributionController::class, 'review']);
-    Route::get('/feedback', [\App\Http\Controllers\Admin\FeedbackController::class, 'index']);
-    Route::post('/feedback/{ticket}/status', [\App\Http\Controllers\Admin\FeedbackController::class, 'updateStatus']);
+    Route::get('/contributions', [App\Http\Controllers\Admin\ContributionController::class, 'index']);
+    Route::post('/contributions/bulk', [App\Http\Controllers\Admin\ContributionController::class, 'bulk']);
+    Route::post('/contributions/{contribution}/review', [App\Http\Controllers\Admin\ContributionController::class, 'review']);
+    Route::get('/feedback', [App\Http\Controllers\Admin\FeedbackController::class, 'index']);
+    Route::post('/feedback/{ticket}/status', [App\Http\Controllers\Admin\FeedbackController::class, 'updateStatus']);
     Route::post('/dishes/{dish}/compute', [DishController::class, 'compute']);
 
     // API quản trị cho 3 module file (Giai đoạn 1 thay /quan-tri bằng /admin):
     // đọc/ghi trực tiếp file data/ (QT-3), chỉ trường ghi chú/cờ an toàn.
-    Route::get('/modules/{module}', [\App\Http\Controllers\Admin\ModuleFileController::class, 'index'])->where('module', 'ket-hop|rau-mua|do-uong');
-    Route::get('/modules/{module}/{slug}', [\App\Http\Controllers\Admin\ModuleFileController::class, 'show'])->where(['module' => 'ket-hop|rau-mua|do-uong', 'slug' => '[A-Za-z0-9_-]+']);
-    Route::put('/modules/{module}/{slug}', [\App\Http\Controllers\Admin\ModuleFileController::class, 'update'])->where(['module' => 'ket-hop|rau-mua|do-uong', 'slug' => '[A-Za-z0-9_-]+']);
+    Route::get('/modules/{module}', [ModuleFileController::class, 'index'])->where('module', 'ket-hop|rau-mua|do-uong');
+    Route::get('/modules/{module}/{slug}', [ModuleFileController::class, 'show'])->where(['module' => 'ket-hop|rau-mua|do-uong', 'slug' => '[A-Za-z0-9_-]+']);
+    Route::put('/modules/{module}/{slug}', [ModuleFileController::class, 'update'])->where(['module' => 'ket-hop|rau-mua|do-uong', 'slug' => '[A-Za-z0-9_-]+']);
 });
 
 Route::get('/admin/{any?}', fn () => view('admin'))
@@ -213,8 +232,8 @@ Route::get('/admin/{any?}', fn () => view('admin'))
 // --- Quản trị tối thiểu cho 3 module chưa có trong admin React (hoàn thiện 5b) ---
 // Sửa trực tiếp file data/ (QT-3); xem lý do chọn Blade trong QuanTriController.
 Route::middleware(['auth', 'admin'])->prefix('quan-tri')->name('quantri.')->group(function () {
-    Route::get('/', [\App\Http\Controllers\QuanTriController::class, 'index'])->name('index');
-    Route::get('/{module}', [\App\Http\Controllers\QuanTriController::class, 'list'])->name('list')->where('module', 'ket-hop|rau-mua|do-uong');
-    Route::get('/{module}/{slug}/sua', [\App\Http\Controllers\QuanTriController::class, 'edit'])->name('edit')->where('module', 'ket-hop|rau-mua|do-uong');
-    Route::post('/{module}/{slug}/sua', [\App\Http\Controllers\QuanTriController::class, 'update'])->name('update')->where('module', 'ket-hop|rau-mua|do-uong');
+    Route::get('/', [QuanTriController::class, 'index'])->name('index');
+    Route::get('/{module}', [QuanTriController::class, 'list'])->name('list')->where('module', 'ket-hop|rau-mua|do-uong');
+    Route::get('/{module}/{slug}/sua', [QuanTriController::class, 'edit'])->name('edit')->where('module', 'ket-hop|rau-mua|do-uong');
+    Route::post('/{module}/{slug}/sua', [QuanTriController::class, 'update'])->name('update')->where('module', 'ket-hop|rau-mua|do-uong');
 });

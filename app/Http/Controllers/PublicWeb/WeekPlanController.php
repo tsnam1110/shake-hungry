@@ -4,12 +4,20 @@ declare(strict_types=1);
 
 namespace App\Http\Controllers\PublicWeb;
 
+use App\Combinations\CombinationDisplay;
 use App\Http\Controllers\Controller;
+use App\Models\UserProfile;
 use App\Models\WeekPlan;
+use App\Models\WeekPlanDay;
+use App\Models\WeekPlanMeal;
+use App\Taxonomy\AllergenDisplay;
+use App\Week\ShoppingListBuilder;
 use App\Week\WeekBuilder;
 use App\Week\WeekValidator;
+use Carbon\Carbon;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 /** Tuần ăn (Giai đoạn 2, Phần 2.3): API cho tuần của chính người dùng. */
 class WeekPlanController extends Controller
@@ -69,7 +77,7 @@ class WeekPlanController extends Controller
 
         return response()->json([
             'plan' => $this->presentPlan($weekPlan, $validations),
-            'combinations_disclaimer' => \App\Combinations\CombinationDisplay::DISCLAIMER,
+            'combinations_disclaimer' => CombinationDisplay::DISCLAIMER,
             'days' => $weekPlan->days->map(function ($day) use ($weekPlan, $validator) {
                 $validation = $validator->validateDay($day, $weekPlan);
 
@@ -110,7 +118,7 @@ class WeekPlanController extends Controller
                 'kcal_min' => $dish->nutrition->kcal_min, 'kcal_max' => $dish->nutrition->kcal_max,
                 'protein_g' => $dish->nutrition->protein_g,
             ],
-            'allergen_display' => \App\Taxonomy\AllergenDisplay::forDish($dish),
+            'allergen_display' => AllergenDisplay::forDish($dish),
         ])->values()]);
     }
 
@@ -138,7 +146,7 @@ class WeekPlanController extends Controller
     {
         $this->authorizePlan($request, $weekPlan);
         $data = $request->validate(['start_date' => ['required', 'date']]);
-        $newStart = \Carbon\Carbon::parse($data['start_date'])->startOfDay();
+        $newStart = Carbon::parse($data['start_date'])->startOfDay();
         $oldStart = $weekPlan->start_date->copy()->startOfDay();
         $conflict = WeekPlan::where('user_id', $request->user()->id)
             ->where('start_date', $newStart->toDateString())
@@ -149,7 +157,7 @@ class WeekPlanController extends Controller
         $delta = $newStart->greaterThan($oldStart)
             ? $oldStart->diffInDays($newStart)
             : -$newStart->diffInDays($oldStart);
-        \Illuminate\Support\Facades\DB::transaction(function () use ($weekPlan, $newStart, $delta, $validator) {
+        DB::transaction(function () use ($weekPlan, $newStart, $delta, $validator) {
             $weekPlan->update([
                 'start_date' => $newStart->toDateString(),
                 'end_date' => $newStart->copy()->addDays(6)->toDateString(),
@@ -158,7 +166,7 @@ class WeekPlanController extends Controller
             // ngày mới chồng lên ngày cũ: dịch lên thì từ cuối về đầu,
             // dịch xuống thì từ đầu về cuối. Dùng query trực tiếp vì
             // quan hệ days() đã orderBy('date') sẵn và sẽ thắng orderBy sau.
-            $days = \App\Models\WeekPlanDay::where('week_plan_id', $weekPlan->id)
+            $days = WeekPlanDay::where('week_plan_id', $weekPlan->id)
                 ->orderBy('date', $delta >= 0 ? 'desc' : 'asc')->get();
             foreach ($days as $day) {
                 $day->update(['date' => $day->date->copy()->addDays($delta)->toDateString()]);
@@ -176,7 +184,7 @@ class WeekPlanController extends Controller
     {
         $this->authorizePlan($request, $weekPlan);
         $data = $request->validate(['from_date' => ['required', 'date']]);
-        $from = \Carbon\Carbon::parse($data['from_date'])->startOfDay();
+        $from = Carbon::parse($data['from_date'])->startOfDay();
         if ($from->lt($weekPlan->start_date) || $from->gt($weekPlan->end_date)) {
             return response()->json(['message' => 'Ngày bắt đầu lại phải nằm trong tuần này.'], 422);
         }
@@ -213,7 +221,7 @@ class WeekPlanController extends Controller
         $this->authorizePlan($request, $weekPlan);
         $data = $request->validate(['ingredient_slug' => ['required', 'string', 'exists:ingredients,slug']]);
         $slug = $data['ingredient_slug'];
-        $profile = \App\Models\UserProfile::updateOrCreate(
+        $profile = UserProfile::updateOrCreate(
             ['user_id' => $request->user()->id],
             [],
         );
@@ -249,7 +257,7 @@ class WeekPlanController extends Controller
         }
         $validations = [];
         foreach (array_unique($affectedDayIds) as $dayId) {
-            $day = \App\Models\WeekPlanDay::find($dayId);
+            $day = WeekPlanDay::find($dayId);
             if ($day !== null) {
                 $validations[] = $validator->refreshDay($day, $weekPlan);
             }
@@ -263,7 +271,7 @@ class WeekPlanController extends Controller
     }
 
     /** Phần 2.6 — danh sách đi chợ theo gram, không gói, không giá. */
-    public function shoppingList(Request $request, WeekPlan $weekPlan, \App\Week\ShoppingListBuilder $builder): JsonResponse
+    public function shoppingList(Request $request, WeekPlan $weekPlan, ShoppingListBuilder $builder): JsonResponse
     {
         $this->authorizePlan($request, $weekPlan);
 
@@ -285,7 +293,7 @@ class WeekPlanController extends Controller
 
     private function findMeal(WeekPlan $weekPlan, $mealId)
     {
-        $meal = \App\Models\WeekPlanMeal::with('day')->find($mealId);
+        $meal = WeekPlanMeal::with('day')->find($mealId);
         abort_unless($meal !== null && $meal->day->week_plan_id === $weekPlan->id, 404);
 
         return $meal;
@@ -344,12 +352,12 @@ class WeekPlanController extends Controller
                 // Giai đoạn 3, Task 1: nhãn dị ứng món (đã có ở trang món,
                 // nay hiện luôn trong tuần) — chỉ hiển thị, lọc cứng vẫn
                 // chạy qua excluded_ingredients ở builder/swap.
-                'allergen_display' => \App\Taxonomy\AllergenDisplay::forDish($dish),
+                'allergen_display' => AllergenDisplay::forDish($dish),
                 // Tiếp tục 2026-11-04: cặp kết hợp cần lưu ý của món, chỉ
                 // hiển thị (nguyên tắc đỏ §7.5: không lọc, không chặn,
                 // không chấm điểm tuần). Cặp thuốc × thực phẩm không bao
                 // giờ vào món, vì forDish chỉ lấy cặp thực phẩm–thực phẩm.
-                'combinations' => \App\Combinations\CombinationDisplay::forDish($dish),
+                'combinations' => CombinationDisplay::forDish($dish),
             ],
         ];
     }

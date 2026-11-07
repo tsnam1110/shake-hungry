@@ -43,6 +43,9 @@ jobs:
       - name: Cài dependencies
         run: composer install --prefer-dist --no-progress --no-interaction
 
+      - name: Kiểm tra định dạng PHP
+        run: php vendor/bin/pint --test
+
       - name: Chuẩn bị môi trường
         run: |
           cp .env.example .env

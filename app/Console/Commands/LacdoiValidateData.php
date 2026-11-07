@@ -4,6 +4,11 @@ declare(strict_types=1);
 
 namespace App\Console\Commands;
 
+use App\Cultural\TcmVocabulary;
+use App\Models\Dish;
+use App\Support\NameSimilarity;
+use App\Taxonomy\DishTagDeriver;
+use App\Taxonomy\TaggingRules;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
 use Throwable;
@@ -91,9 +96,9 @@ class LacdoiValidateData extends Command
      * nên class và science_status phải khớp nhau; E2 bắt buộc có điều kiện,
      * E3 bắt buộc có nguồn truyền thống; cặp đã bác bắt buộc có nguồn bác.
      *
-     * @param array<string, array<string, mixed>> $combinations
-     * @param list<string> $ingredientSlugs
-     * @param list<string> $fruitSlugs
+     * @param  array<string, array<string, mixed>>  $combinations
+     * @param  list<string>  $ingredientSlugs
+     * @param  list<string>  $fruitSlugs
      */
     private function validateCombinationFiles(array $combinations, array $ingredientSlugs, array $fruitSlugs): void
     {
@@ -110,6 +115,7 @@ class LacdoiValidateData extends Command
                 $s = $j[$which] ?? null;
                 if (! is_array($s) || ! isset($s['type'], $s['ref'])) {
                     $this->errors[] = "V21 [{$slug}]: {$which} thiếu type/ref";
+
                     continue;
                 }
                 $sideKeys[] = $s['type'].':'.$s['ref'];
@@ -199,6 +205,7 @@ class LacdoiValidateData extends Command
                 $aliasName = is_array($alias) ? trim((string) ($alias['name'] ?? '')) : '';
                 if ($aliasName === '') {
                     $this->errors[] = "V18 [{$slug}]: aliases có mục thiếu name";
+
                     continue;
                 }
                 $key = self::nameKey($aliasName);
@@ -308,6 +315,7 @@ class LacdoiValidateData extends Command
                 }
                 if ($aliasName === '') {
                     $this->errors[] = "V18 [{$slug}]: alias thiếu name";
+
                     continue;
                 }
                 $key = self::nameKey($aliasName);
@@ -397,9 +405,9 @@ class LacdoiValidateData extends Command
      */
     private function validateTcmTraits(string $label, array $j, array $ingredients = []): void
     {
-        $natures = array_keys(\App\Cultural\TcmVocabulary::NATURE_POINTS);
-        $flavors = array_keys(\App\Cultural\TcmVocabulary::FLAVOR_LABELS);
-        $elements = array_keys(\App\Cultural\TcmVocabulary::ELEMENT_LABELS);
+        $natures = array_keys(TcmVocabulary::NATURE_POINTS);
+        $flavors = array_keys(TcmVocabulary::FLAVOR_LABELS);
+        $elements = array_keys(TcmVocabulary::ELEMENT_LABELS);
         $confidences = ['high', 'medium', 'low'];
 
         foreach ($j['tcm_traits'] ?? [] as $i => $t) {
@@ -429,12 +437,12 @@ class LacdoiValidateData extends Command
             // Mỗi basis có luật nhất quán riêng; trộn hệ mà không khai báo
             // là lỗi, khai báo rồi vẫn phải khớp hệ đã khai.
             $basis = $t['element_basis'] ?? 'flavor';
-            if (! in_array($basis, \App\Cultural\TcmVocabulary::ELEMENT_BASES, true)) {
+            if (! in_array($basis, TcmVocabulary::ELEMENT_BASES, true)) {
                 $this->errors[] = "{$row}: element_basis '{$basis}' ngoài từ vựng (flavor/nature/direct)";
                 $basis = 'flavor';
             }
             if ($basis === 'flavor') {
-                $derived = \App\Cultural\TcmVocabulary::elementForFlavor($flavor);
+                $derived = TcmVocabulary::elementForFlavor($flavor);
                 if ($element !== null && $derived !== null && $element !== $derived) {
                     $this->errors[] = "{$row}: element '{$element}' lệch ánh xạ cổ điển từ flavor '{$flavor}' (phải là '{$derived}') — nếu nguồn ghi theo tính hoặc ghi trực tiếp, khai element_basis tương ứng kèm nguồn đó";
                 }
@@ -444,7 +452,7 @@ class LacdoiValidateData extends Command
                 } elseif ($element === null) {
                     $this->errors[] = "{$row}: element_basis='nature' nhưng element trống — dòng theo tính phải ghi element như nguồn ghi";
                 } else {
-                    $derivedByNature = \App\Cultural\TcmVocabulary::elementForNature($nature);
+                    $derivedByNature = TcmVocabulary::elementForNature($nature);
                     if ($derivedByNature !== null && $element !== $derivedByNature) {
                         $this->errors[] = "{$row}: element '{$element}' lệch ánh xạ theo tính '{$nature}' (phải là '{$derivedByNature}' theo trình bày §3) — nếu nguồn ghi hành trực tiếp khác cả hai hệ, dùng element_basis='direct'";
                     }
@@ -501,8 +509,8 @@ class LacdoiValidateData extends Command
         if (($t['confidence'] ?? null) !== 'low') {
             $this->errors[] = "{$row}: nhãn suy diễn P-DERIVE bị khoá confidence='low' (đang là '".($t['confidence'] ?? '')."')";
         }
-        if (! str_contains((string) ($t['source_ref'] ?? ''), \App\Cultural\TcmVocabulary::DERIVED_MARKER)) {
-            $this->errors[] = "{$row}: source_ref của nhãn suy diễn phải ghi rõ chính sách ".\App\Cultural\TcmVocabulary::DERIVED_MARKER.' (kèm nguồn của nhãn gốc)';
+        if (! str_contains((string) ($t['source_ref'] ?? ''), TcmVocabulary::DERIVED_MARKER)) {
+            $this->errors[] = "{$row}: source_ref của nhãn suy diễn phải ghi rõ chính sách ".TcmVocabulary::DERIVED_MARKER.' (kèm nguồn của nhãn gốc)';
         }
         $origin = $ingredients[$originSlug] ?? null;
         if ($origin === null) {
@@ -532,8 +540,8 @@ class LacdoiValidateData extends Command
             $b = $r['element_basis'] ?? 'flavor';
 
             return match ($b) {
-                'flavor' => \App\Cultural\TcmVocabulary::elementForFlavor($r['flavor'] ?? null),
-                'nature' => \App\Cultural\TcmVocabulary::elementForNature($r['nature'] ?? null),
+                'flavor' => TcmVocabulary::elementForFlavor($r['flavor'] ?? null),
+                'nature' => TcmVocabulary::elementForNature($r['nature'] ?? null),
                 default => null,
             };
         };
@@ -568,6 +576,7 @@ class LacdoiValidateData extends Command
         foreach ($j['components'] ?? [] as $componentSlug) {
             if (! is_string($componentSlug) || ! isset($ingredients[$componentSlug])) {
                 $this->errors[] = "V20 {$label}: components trỏ tới nguyên liệu không tồn tại '".(string) $componentSlug."'";
+
                 continue;
             }
             if ($componentSlug === $ownSlug) {
@@ -663,7 +672,7 @@ class LacdoiValidateData extends Command
                 $this->errors[] = "{$label}: thiếu cultural_note — chưa đủ cổng thông tin Mức 3";
             }
             $coverage = DB::table('dish_tcm_summary')->where('dish_id', $dish->id)->value('coverage_pct');
-            if ($coverage === null || (float) $coverage < \App\Cultural\TcmVocabulary::LEVEL3_MIN_COVERAGE) {
+            if ($coverage === null || (float) $coverage < TcmVocabulary::LEVEL3_MIN_COVERAGE) {
                 $this->errors[] = "{$label}: coverage tính vị = ".($coverage === null ? 'chưa tổng hợp' : $coverage.'%').' — cổng yêu cầu ≥60%';
             }
         }
@@ -867,7 +876,7 @@ class LacdoiValidateData extends Command
         foreach ($ingredients as $slug => $j) {
             $actual = $j['tags'] ?? [];
             sort($actual);
-            $expected = \App\Taxonomy\TaggingRules::tagsFor($slug, (string) ($j['category'] ?? ''));
+            $expected = TaggingRules::tagsFor($slug, (string) ($j['category'] ?? ''));
             sort($expected);
             if ($actual !== $expected) {
                 $this->errors[] = "V16 [{$slug}]: nhãn trong file lệch TaggingRules — file có ["
@@ -902,10 +911,10 @@ class LacdoiValidateData extends Command
             return;
         }
         $drift = [];
-        \App\Models\Dish::with(['tags', 'dishIngredients.ingredient.tags'])
+        Dish::with(['tags', 'dishIngredients.ingredient.tags'])
             ->chunkById(200, function ($chunk) use (&$drift) {
                 foreach ($chunk as $dish) {
-                    $expected = \App\Taxonomy\DishTagDeriver::deriveForDish($dish);
+                    $expected = DishTagDeriver::deriveForDish($dish);
                     sort($expected);
                     $actual = $dish->tags->pluck('slug')
                         ->filter(fn ($t) => preg_match('/^(diet|protein|allergen):/', (string) $t) === 1)
@@ -999,7 +1008,7 @@ class LacdoiValidateData extends Command
                         if ($a->dish_id === $b->dish_id) {
                             continue;
                         }
-                        if (\App\Support\NameSimilarity::similarity($a->name, $b->name) > 0.9) {
+                        if (NameSimilarity::similarity($a->name, $b->name) > 0.9) {
                             $this->warnings[] = "V7: hai món tên giống nhau >90%: \"{$a->name}\" ↔ \"{$b->name}\"";
                         }
                     }
@@ -1016,5 +1025,4 @@ class LacdoiValidateData extends Command
             $this->errors[] = "V4 [{$slug}]: completeness_level >= 2 trong DB nhưng không có dish_ingredients";
         }
     }
-
 }

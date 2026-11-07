@@ -17,7 +17,6 @@ use App\Taxonomy\TaggingRules;
  *     (nước mắm = mặn; trứng/sữa đơn độc = chay-trứng-sữa; đạm hỗn hợp theo tỉ lệ).
  *  3. API lọc: AND giữa các facet, OR trong một facet, allergen_free loại đúng món.
  */
-
 function taxonomyIngredient(string $slug, string $category): Ingredient
 {
     $ingredient = Ingredient::create([

@@ -1,15 +1,19 @@
 <?php
 
 declare(strict_types=1);
+use App\Models\Dish;
+use App\Models\Ingredient;
+use App\Models\Tag;
+use Illuminate\Support\Facades\DB;
 
 /*
  * REC-005: đổi từng món trong mâm — ngẫu nhiên hoặc chọn từ danh sách ứng
  * viên; vẫn giữ đúng vai trò và lọc cứng dị ứng của lắc mâm.
  */
 
-function swapDish(string $slug, array $opts = []): \App\Models\Dish
+function swapDish(string $slug, array $opts = []): Dish
 {
-    $dish = \App\Models\Dish::create([
+    $dish = Dish::create([
         'slug' => $slug, 'country_code' => 'VN', 'status' => 'draft',
         'source' => 'curated', 'confidence' => 'low', 'needs_review' => true,
         'completeness_level' => 1,
@@ -21,18 +25,18 @@ function swapDish(string $slug, array $opts = []): \App\Models\Dish
     $dish->names()->create(['locale' => 'vi', 'name' => $opts['name'] ?? $slug, 'is_primary' => true, 'is_alias' => false]);
     $dish->mealSlots()->create(['slot' => 'trua', 'weight' => 8]);
     foreach ($opts['ingredients'] ?? [] as [$ingSlug, $category, $qty]) {
-        $ing = \App\Models\Ingredient::where('slug', $ingSlug)->first()
-            ?? \App\Models\Ingredient::create([
+        $ing = Ingredient::where('slug', $ingSlug)->first()
+            ?? Ingredient::create([
                 'name_vi' => $ingSlug, 'slug' => $ingSlug, 'category' => $category,
                 'mapping_confidence' => 'high', 'source' => 'curated', 'confidence' => 'high',
             ]);
         $dish->dishIngredients()->create(['ingredient_id' => $ing->id, 'quantity' => $qty, 'unit_name' => 'g', 'source' => 'curated']);
     }
     foreach ($opts['tags'] ?? [] as $tagSlug) {
-        $tag = \App\Models\Tag::firstOrCreate(['slug' => $tagSlug], ['name' => $tagSlug]);
+        $tag = Tag::firstOrCreate(['slug' => $tagSlug], ['name' => $tagSlug]);
         $dish->tags()->attach($tag->id);
     }
-    \Illuminate\Support\Facades\DB::table('dish_nutrition')->insert([
+    DB::table('dish_nutrition')->insert([
         'dish_id' => $dish->id, 'basis' => 'per_serving',
         'kcal_min' => 300, 'kcal_max' => 500, 'protein_g' => 20, 'fat_g' => 10, 'carb_g' => 40,
         'confidence' => 'medium', 'fct_source' => 'usda_sr_legacy',
@@ -55,11 +59,11 @@ function swapFixtures(): void
 
 it('ứng viên đổi món: đúng vai trò, loại trừ món đang có trong mâm', function () {
     swapFixtures();
-    $ids = [\App\Models\Dish::where('slug', 'thit-kho')->first()->id,
-        \App\Models\Dish::where('slug', 'canh-bi')->first()->id,
-        \App\Models\Dish::where('slug', 'rau-xao')->first()->id];
+    $ids = [Dish::where('slug', 'thit-kho')->first()->id,
+        Dish::where('slug', 'canh-bi')->first()->id,
+        Dish::where('slug', 'rau-xao')->first()->id];
 
-    $dishes = $this->getJson('/api/shake/tray-candidates?slot=trua&role=chinh&exclude_dish_ids[]=' . implode('&exclude_dish_ids[]=', $ids))
+    $dishes = $this->getJson('/api/shake/tray-candidates?slot=trua&role=chinh&exclude_dish_ids[]='.implode('&exclude_dish_ids[]=', $ids))
         ->assertOk()->json('dishes');
     $slugs = collect($dishes)->pluck('slug')->all();
     expect($slugs)->toContain('ca-kho')->not->toContain('thit-kho');
@@ -89,10 +93,10 @@ it('đổi ngẫu nhiên trả món khác cùng vai trò, không trùng mâm', f
 it('đổi món vẫn giữ lọc cứng dị ứng', function () {
     swapFixtures();
     swapDish('canh-tom', ['tags' => ['loai:canh'], 'ingredients' => [['tom-tuoi', 'thuy-san', 150]]]);
-    $ids = [\App\Models\Dish::where('slug', 'thit-kho')->first()->id];
+    $ids = [Dish::where('slug', 'thit-kho')->first()->id];
 
     // Dị ứng tôm: ứng viên canh chỉ còn canh-bi, không có canh-tom
-    $dishes = $this->getJson('/api/shake/tray-candidates?slot=trua&role=canh&allergens[]=tom-tuoi&exclude_dish_ids[]=' . $ids[0])
+    $dishes = $this->getJson('/api/shake/tray-candidates?slot=trua&role=canh&allergens[]=tom-tuoi&exclude_dish_ids[]='.$ids[0])
         ->assertOk()->json('dishes');
     $slugs = collect($dishes)->pluck('slug')->all();
     expect($slugs)->toContain('canh-bi')->not->toContain('canh-tom');

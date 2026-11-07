@@ -125,6 +125,7 @@
   "estimated_kcal": null,
   "external_ref": null,
   "import_note": "Soạn nháp đợt mở rộng 200 món 2026-10-31 (llm_suggested, chờ người duyệt). Lưu ý biên tập: món làm từ huyết lợn sống — cân nhắc bổ sung cảnh báo an toàn thực phẩm trước khi xuất bản. [LV2-012 đợt vét] Giữ Mức 1 - THIEU-NGUON: đã mở đọc NgonAZ (chỉ có tỉ lệ hãm 1 mắm : 1,5-2 nước; đánh tiết:nước luộc 1:1, không gram) và memart.vn (SEO, bị loại). Không có họ biên tập nào công bố định lượng gram cho tiết canh lợn; giữ nguyên định lượng llm_suggested và cảnh báo an toàn thực phẩm hiện có. ĐÍNH CHÍNH 2026-11-03 (hoàn thiện Task 5): ghi chú cũ nói \"cảnh báo an toàn thực phẩm hiện có\" là chưa đúng — trước đợt này cảnh báo chỉ nằm trong import_note nội bộ, trang chi tiết món không hiển thị gì. Từ đợt này món có trường safety_note riêng và trang /mon/{slug} hiển thị khối \"Lưu ý an toàn thực phẩm\" (dạng thông tin, không phải cấm). Nội dung cảnh báo: huyết tươi chưa nấu chín, nguy cơ vi khuẩn/ký sinh trùng, khuyến cáo không ăn tiết canh sống.",
+  "safety_note": "Món làm từ huyết tươi chưa qua nấu chín. Ăn huyết sống có nguy cơ nhiễm vi khuẩn và ký sinh trùng (trong đó có liên cầu lợn), có thể gây bệnh nặng. Cơ quan y tế khuyến cáo không ăn tiết canh sống; người có vết thương hở, suy giảm miễn dịch, phụ nữ mang thai và trẻ nhỏ càng nên tránh.",
   "cultural_note": {
     "text": "Tiết canh là món ăn lâu đời trong ẩm thực Việt, chủ yếu làm từ tiết lợn và tiết vịt, hiện diện ở nhiều quán ăn ven đường và trong đời sống ăn uống thường ngày của nhiều người Việt. Món ăn gồm phần tiết trộn cùng thịt băm, sụn và nội tạng đã làm chín, rắc lạc rang và rau thơm khi ăn. Hình ảnh bát tiết canh lòng lợn từng được nhà văn Thạch Lam ghi lại trong tùy bút 'Quà Hà Nội' khi miêu tả các bà hàng tiết canh và thực khách Hà Nội xưa. Món ăn này thường khiến du khách phương Tây e dè, trong khi với nhiều người Việt đó là một món quen thuộc gắn với quán xá vỉa hè.",
     "sources": [
@@ -147,6 +148,5 @@
   "review_note": "Chủ dự án duyệt toàn bộ công thức ngày 2026-10-31 (quyết định qua phiên làm việc: chấp nhận các định lượng llm_suggested làm dữ liệu chính thức; điều kiện soát lại toàn bộ tài liệu trước khi công khai được xử lý riêng, không chặn việc duyệt này).",
   "tags": [
     "loai:mon-chinh"
-  ],
-  "safety_note": "Món làm từ huyết tươi chưa qua nấu chín. Ăn huyết sống có nguy cơ nhiễm vi khuẩn và ký sinh trùng (trong đó có liên cầu lợn), có thể gây bệnh nặng. Cơ quan y tế khuyến cáo không ăn tiết canh sống; người có vết thương hở, suy giảm miễn dịch, phụ nữ mang thai và trẻ nhỏ càng nên tránh."
+  ]
 }

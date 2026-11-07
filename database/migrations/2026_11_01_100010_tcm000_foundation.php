@@ -35,7 +35,7 @@ return new class extends Migration
             $table->text('usage_note')->nullable();
         });
         // Hạn chế sử dụng mà không ghi chú "không được dùng" thì cờ vô nghĩa.
-        DB::statement("ALTER TABLE ingredient_tcm_traits ADD CONSTRAINT tcm_usage_note_check CHECK (usage_restricted = 0 OR (usage_note IS NOT NULL AND CHAR_LENGTH(TRIM(usage_note)) > 0))");
+        DB::statement('ALTER TABLE ingredient_tcm_traits ADD CONSTRAINT tcm_usage_note_check CHECK (usage_restricted = 0 OR (usage_note IS NOT NULL AND CHAR_LENGTH(TRIM(usage_note)) > 0))');
 
         Schema::table('dish_tcm_summary', function (Blueprint $table) {
             $table->boolean('has_conflicts')->default(false);
@@ -47,9 +47,9 @@ return new class extends Migration
             $table->text('level_note')->nullable();
         });
         DB::statement("ALTER TABLE dishes ADD CONSTRAINT dishes_level_basis_check CHECK (level_basis IS NULL OR level_basis = 'tcm_compensation')");
-        DB::statement("ALTER TABLE dishes ADD CONSTRAINT dishes_level_note_check CHECK (level_basis IS NULL OR (level_note IS NOT NULL AND CHAR_LENGTH(TRIM(level_note)) > 0))");
+        DB::statement('ALTER TABLE dishes ADD CONSTRAINT dishes_level_note_check CHECK (level_basis IS NULL OR (level_note IS NOT NULL AND CHAR_LENGTH(TRIM(level_note)) > 0))');
         // Đường nâng bù chỉ sinh đúng một trạng thái: Mức 2 (có note).
-        DB::statement("ALTER TABLE dishes ADD CONSTRAINT dishes_level_basis_level_check CHECK (level_basis IS NULL OR completeness_level = 2)");
+        DB::statement('ALTER TABLE dishes ADD CONSTRAINT dishes_level_basis_level_check CHECK (level_basis IS NULL OR completeness_level = 2)');
 
         Schema::table('fruits', function (Blueprint $table) {
             $table->json('cultural_note')->nullable();

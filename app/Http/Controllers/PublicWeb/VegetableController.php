@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace App\Http\Controllers\PublicWeb;
 
+use App\Combinations\CombinationDisplay;
+use App\Cultural\TcmDisplay;
 use App\Http\Controllers\Controller;
 use App\Models\Vegetable;
 use App\Nutrition\SourceTier;
@@ -94,8 +96,8 @@ class VegetableController extends Controller
         $snapshot = $ingredient?->nutrition_snapshot ?? [];
 
         $combinations = collect([
-            ...\App\Combinations\CombinationDisplay::forItem($vegetable->slug),
-            ...($ingredient ? \App\Combinations\CombinationDisplay::forItem($ingredient->slug) : []),
+            ...CombinationDisplay::forItem($vegetable->slug),
+            ...($ingredient ? CombinationDisplay::forItem($ingredient->slug) : []),
         ])->unique('slug')->values()->all();
 
         return response()->json([
@@ -121,7 +123,7 @@ class VegetableController extends Controller
                 'slug' => $ingredient->slug,
                 'name_vi' => $ingredient->name_vi,
                 'name_en' => $ingredient->name_en,
-                'tcm' => \App\Cultural\TcmDisplay::forIngredient($ingredient),
+                'tcm' => TcmDisplay::forIngredient($ingredient),
                 'aliases' => $ingredient->aliases->map(fn ($a) => ['name' => $a->name, 'note' => $a->note])->all(),
                 'tags' => $ingredient->tags->map(fn ($t) => ['slug' => $t->slug, 'name' => $t->name])->all(),
                 'nutrition' => [
@@ -137,7 +139,7 @@ class VegetableController extends Controller
                 ],
             ] : null,
             'combinations' => $combinations,
-            'combinations_disclaimer' => \App\Combinations\CombinationDisplay::DISCLAIMER,
+            'combinations_disclaimer' => CombinationDisplay::DISCLAIMER,
         ]);
     }
 

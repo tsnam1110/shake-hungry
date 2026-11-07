@@ -228,6 +228,13 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .ld-shake-tray .ld-shake-toggle { margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--color-line); }
 .ld-shake-preferences { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; align-items: end; margin-bottom: 20px; }
 .ld-shake-veg { min-height: 48px; }
+.ld-shake-drink-option { padding: 0 0 18px; margin-bottom: 18px; border-bottom: 1px solid var(--color-line); }
+.ld-shake-drink-result { margin-top: 18px; padding: 16px 0 0; border-top: 1px solid var(--color-line); }
+.ld-shake-drink-link { display: flex; align-items: center; gap: 12px; min-height: 48px; color: var(--color-ink); text-decoration: none; }
+.ld-shake-drink-link > span:first-of-type { flex: 1; min-width: 0; }
+.ld-shake-drink-link strong { display: block; font-size: 17px; }
+.ld-shake-drink-link small { display: block; color: var(--color-sub); font-size: 13px; margin-top: 3px; }
+.ld-shake-drink-detail { color: var(--color-link); font-size: 13px; flex: none; }
 .ld-shake-form .ld-switch { height: 44px; background: transparent; }
 .ld-shake-form .ld-switch::before { content: ''; position: absolute; inset: 6.5px 0; border-radius: 999px; background: var(--color-fill); }
 .ld-shake-form .ld-switch::after { top: 8.5px; }

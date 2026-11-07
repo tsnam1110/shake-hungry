@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace App\Http\Controllers\PublicWeb;
 
+use App\Combinations\CombinationDisplay;
+use App\Cultural\TcmDisplay;
 use App\Http\Controllers\Controller;
 use App\Models\Fruit;
 use App\Nutrition\SourceTier;
@@ -73,7 +75,7 @@ class FruitController extends Controller
                 ->reorder()->orderBy('ingredients.name_vi')->select('fruits.*'),
             'kcal_asc', 'kcal_desc' => $query->join('ingredients', 'ingredients.id', '=', 'fruits.ingredient_id')
                 ->reorder()->orderByRaw("JSON_EXTRACT(ingredients.nutrition_snapshot, '$.kcal_per_100g') IS NULL")
-                ->orderByRaw("CAST(JSON_EXTRACT(ingredients.nutrition_snapshot, '$.kcal_per_100g') AS DECIMAL(10,2)) " . ($request->query('sort') === 'kcal_asc' ? 'ASC' : 'DESC'))
+                ->orderByRaw("CAST(JSON_EXTRACT(ingredients.nutrition_snapshot, '$.kcal_per_100g') AS DECIMAL(10,2)) ".($request->query('sort') === 'kcal_asc' ? 'ASC' : 'DESC'))
                 ->select('fruits.*'),
             'fiber_desc' => $query->join('ingredients', 'ingredients.id', '=', 'fruits.ingredient_id')
                 ->reorder()->orderByRaw("JSON_EXTRACT(ingredients.nutrition_snapshot, '$.fiber_g') IS NULL")
@@ -122,7 +124,7 @@ class FruitController extends Controller
                 'name_vi' => $ingredient->name_vi,
                 'name_en' => $ingredient->name_en,
                 // TCM-000: nhãn tính vị của nguyên liệu quả (kèm nguồn).
-                'tcm' => \App\Cultural\TcmDisplay::forIngredient($ingredient),
+                'tcm' => TcmDisplay::forIngredient($ingredient),
                 'aliases' => $ingredient->aliases->map(fn ($a) => ['name' => $a->name, 'note' => $a->note])->all(),
                 'tags' => $ingredient->tags->map(fn ($t) => ['slug' => $t->slug, 'name' => $t->name])->all(),
                 'nutrition' => [
@@ -143,10 +145,10 @@ class FruitController extends Controller
             // FOOD-COMBINE-001: cặp kết hợp cần lưu ý chạm tới quả này (tra
             // cả slug quả lẫn slug nguyên liệu tương ứng — chỉ hiển thị).
             'combinations' => collect([
-                ...\App\Combinations\CombinationDisplay::forItem($fruit->slug),
-                ...\App\Combinations\CombinationDisplay::forItem($ingredient->slug),
+                ...CombinationDisplay::forItem($fruit->slug),
+                ...CombinationDisplay::forItem($ingredient->slug),
             ])->unique('slug')->values()->all(),
-            'combinations_disclaimer' => \App\Combinations\CombinationDisplay::DISCLAIMER,
+            'combinations_disclaimer' => CombinationDisplay::DISCLAIMER,
             // Giá tham khảo mùa vụ (FRUIT-MODULE §3) — không phải giá theo ngày.
             'prices' => $fruit->prices->map(fn ($p) => [
                 'region_code' => $p->region_code,

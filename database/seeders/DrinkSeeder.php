@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Database\Seeders;
 
 use App\Models\Drink;
+use App\Models\DrinkMedia;
 use Illuminate\Database\Seeder;
 use RuntimeException;
 
@@ -84,9 +85,9 @@ class DrinkSeeder extends Seeder
             );
 
             // Ảnh đồ uống (Phần 3A, IMG-001): file là nguồn sự thật, cùng khuôn DishSeeder.
-            \App\Models\DrinkMedia::where('drink_id', $drink->id)->delete();
+            DrinkMedia::where('drink_id', $drink->id)->delete();
             foreach ($j['media'] ?? [] as $media) {
-                \App\Models\DrinkMedia::create([
+                DrinkMedia::create([
                     'drink_id' => $drink->id,
                     'path' => $media['path'],
                     'license' => $media['license'], // R4: thiếu license thì fail ngay tại đây

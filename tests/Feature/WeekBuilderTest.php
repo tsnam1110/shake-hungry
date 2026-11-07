@@ -12,7 +12,6 @@ use App\Models\WeekPlanDay;
 use App\Models\WeekPlanMeal;
 use App\Week\WeekBuilder;
 use App\Week\WeekValidator;
-use Illuminate\Support\Facades\DB;
 
 // WEEK-001, Phần 2.3: builder + validator. Dữ kiện test tự tạo, không dùng
 // số dinh dưỡng thật của kho — builder chỉ cộng số đã có trong DishNutrition.

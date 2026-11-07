@@ -37,7 +37,7 @@ it('người dùng đã đăng nhập thấy form tạo tuần', function () {
 
 it('API tuần ví dụ công khai, không cần đăng nhập, không lưu gì', function () {
     foreach (['sang', 'trua', 'toi', 'an-vat'] as $slot) {
-        weekPageDish('wp-' . $slot, $slot);
+        weekPageDish('wp-'.$slot, $slot);
     }
 
     $this->getJson('/api/week-plans/example')->assertOk()

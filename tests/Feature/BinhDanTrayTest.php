@@ -6,6 +6,7 @@ use App\Models\Dish;
 use App\Models\Ingredient;
 use App\Models\Tag;
 use App\Models\User;
+use App\Recommendation\Recommender;
 use Illuminate\Support\Facades\DB;
 
 /*
@@ -93,7 +94,7 @@ test('mâm bình dân chỉ gồm món nguyên liệu phổ biến và dễ nấ
 test('tắt bình dân thì hai món kia trở lại kho lựa chọn của mâm', function () {
     bdFixtures();
     // Kiểm ở tầng engine cho tất định: kho mâm không lọc bình dân chứa cả 11 món.
-    $rec = app(\App\Recommendation\Recommender::class);
+    $rec = app(Recommender::class);
     $off = $rec->shakeTray(['slot' => 'trua', 'dish_count' => 3, 'binh_dan' => false]);
     expect($off['binh_dan'])->toBeFalse()
         ->and($off['pool_size'])->toBe(11);

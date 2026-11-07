@@ -74,6 +74,11 @@
             </div>
         </div>
 
+        <div class="ld-shake-toggle ld-shake-drink-option">
+            <span><label for="include-drink">Kèm nước uống</label><small id="drink-mode-hint">Gợi ý thêm một loại nước uống không cồn.</small></span>
+            <button class="ld-switch" type="button" role="switch" aria-checked="false" id="include-drink" aria-label="Kèm nước uống" aria-describedby="drink-mode-hint"></button>
+        </div>
+
         <div class="ld-shake-allergens">
             <div class="ld-shake-label-row">
                 <label class="ld-field-label" for="shake-allergen-search">Dị ứng / không ăn được</label>
@@ -98,7 +103,7 @@
                 <p class="ld-shake-help" id="target-hint">Bỏ trống nếu bạn không cần đặt mục tiêu.</p>
             </div>
         </details>
-        <p class="ld-shake-help" id="pref-note" hidden>Tuỳ chọn được tự lưu vào hồ sơ. <span id="pref-saved" role="status"></span></p>
+        <p class="ld-shake-help" id="pref-note" hidden>Tuỳ chọn món ăn được tự lưu vào hồ sơ; nước uống chỉ áp dụng cho lượt lắc này. <span id="pref-saved" role="status"></span></p>
 
         <button type="button" id="shake-btn" class="ld-btn ld-btn-primary ld-shake-submit">Lắc một món</button>
         <div id="result" class="ld-shake-result" aria-live="polite" aria-atomic="true">
@@ -367,7 +372,14 @@ function renderShakeMode() {
     document.querySelectorAll('#tray-count button').forEach(b =>
         b.setAttribute('aria-pressed', +b.dataset.count === trayCount ? 'true' : 'false'));
     document.getElementById('shake-btn').textContent = shakeMode === 'home' ? 'Lắc mâm cơm' : 'Lắc một món';
+    document.getElementById('drink-mode-hint').textContent = shakeMode === 'home'
+        ? 'Chọn nước dễ tự pha tại nhà: chanh, cam vắt, sinh tố…'
+        : 'Gợi ý thêm một loại nước uống không cồn.';
 }
+
+document.getElementById('include-drink').addEventListener('click', () => {
+    setSw('include-drink', !swOn('include-drink'));
+});
 document.querySelectorAll('#shake-mode button').forEach(b => b.addEventListener('click', () => {
     shakeMode = b.dataset.mode; renderShakeMode(); savePref({ shake_mode: shakeMode });
 }));
@@ -575,6 +587,7 @@ document.getElementById('shake-btn').addEventListener('click', async () => {
         mode: shakeMode,
         dish_count: shakeMode === 'home' ? trayCount : 1,
         binh_dan: shakeMode === 'home' ? swOn('binh-dan') : false,
+        include_drink: swOn('include-drink'),
         region_id: document.getElementById('region').value || null,
         target_kcal: document.getElementById('target_kcal').value || null,
         allergens: [...allergenSlugs],
@@ -625,6 +638,7 @@ document.getElementById('shake-btn').addEventListener('click', async () => {
                 <p class="ld-note" style="margin-top:10px">${esc(d.combinations_disclaimer ?? '')} <a href="/ket-hop-can-luu-y">Xem bảng kết hợp cần lưu ý</a>.</p>
             </div>`; })()}
             ${data.relaxed_level > 0 ? '<p class="ld-note" style="margin-top:12px">Đã nới lỏng bộ lọc để tìm thêm lựa chọn — lọc dị ứng vẫn giữ nguyên.</p>' : ''}
+            ${drinkResultHtml(data)}
             <div style="margin-top:16px">${currentUser
                 ? `<button id="eat-btn" class="ld-btn ld-btn-primary" style="padding:11px 22px;font-size:15.5px;width:100%">Ăn món này</button>`
                 : `<a href="/tai-khoan" style="color:var(--color-link);font-size:15px">Đăng nhập để ghi lại bữa ăn này</a>`}</div>
@@ -648,6 +662,23 @@ document.getElementById('shake-btn').addEventListener('click', async () => {
 let lastShakePayload = null;
 let currentTray = null; // { dishes: [...], binh_dan: bool }
 
+function drinkResultHtml(data) {
+    if (!Object.prototype.hasOwnProperty.call(data, 'drink')) return '';
+    const drink = data.drink;
+    if (!drink) return data.drink_suggestion ? `<p class="ld-shake-help ld-shake-drink-result" role="status">${esc(data.drink_suggestion)}</p>` : '';
+    return `<section class="ld-shake-drink-result" aria-label="Nước uống kèm bữa">
+        <p class="ld-field-label">Nước uống kèm${data.mode === 'home' ? ' · Tự pha tại nhà' : ''}</p>
+        <a class="ld-shake-drink-link" href="/do-uong/${encodeURIComponent(drink.slug)}">
+            ${drink.image ? `<img class="ld-thumb" src="${esc(drink.image.thumb_url ?? drink.image.url)}" alt="" loading="lazy" decoding="async">` : ''}
+            <span><strong>${esc(drink.name)}</strong><small>${drink.kind === 'pha-che' ? (drink.prep_minutes ? `${esc(drink.prep_minutes)} phút chuẩn bị` : 'Có hướng dẫn pha') : 'Đồ uống đóng gói'} · Không cồn</small></span>
+            <span class="ld-shake-drink-detail">Xem chi tiết</span>
+        </a>
+        ${drink.uncertain ? `<p class="ld-shake-help"><span class="ld-badge unv">Có thông tin chưa chắc chắn</span> ${esc(drink.uncertain_note || 'Xem ghi chú trong hồ sơ nước uống trước khi dùng.')}</p>` : ''}
+        ${(drink.safety_flags ?? []).length ? `<ul class="ld-shake-help">${drink.safety_flags.map(note => `<li>${esc(note)}</li>`).join('')}</ul>` : ''}
+        <p class="ld-shake-help">Kcal và nhật ký bữa này chỉ tính món ăn, chưa gồm nước uống. Kiểm tra thành phần trước khi dùng nếu bạn có dị ứng.</p>
+    </section>`;
+}
+
 function trayKcalOf(dishes) {
     const withN = dishes.filter(d => d.nutrition);
     if (!withN.length) return null;
@@ -669,7 +700,7 @@ function renderTrayResult(data, box, fromSwap = false) {
         dishes.forEach(d => recent.push(d.id));
         localStorage.setItem('lacdoi_recent', JSON.stringify(recent.slice(-15)));
     }
-    currentTray = { dishes: [...dishes], binh_dan: !!data.binh_dan };
+    currentTray = { ...data, dishes: [...dishes], binh_dan: !!data.binh_dan };
     const tk = fromSwap ? trayKcalOf(currentTray.dishes) : data.tray_kcal;
     const unvNames = [...new Set(currentTray.dishes.flatMap(d => d.nutrition?.unverified_ingredients ?? []))];
     box.innerHTML = `<div style="padding-top:8px;border-top:1px solid var(--color-line);margin-top:18px">
@@ -696,6 +727,7 @@ function renderTrayResult(data, box, fromSwap = false) {
         </div>`; })()}
         ${!fromSwap && data.suggestion ? `<p class="ld-note" style="margin-top:12px">${esc(data.suggestion)}</p>` : ''}
         ${!fromSwap && data.relaxed_level > 0 ? '<p class="ld-note" style="margin-top:12px">Đã nới lỏng bộ lọc để gom đủ mâm — lọc dị ứng vẫn giữ nguyên.</p>' : ''}
+        ${drinkResultHtml(data)}
         <div style="margin-top:16px">${currentUser
             ? `<button id="eat-tray-btn" class="ld-btn ld-btn-primary" style="padding:11px 22px;font-size:15.5px;width:100%">Ăn mâm này</button>`
             : `<a href="/tai-khoan" style="color:var(--color-link);font-size:15px">Đăng nhập để ghi lại mâm cơm này</a>`}</div>
@@ -766,7 +798,7 @@ function applySwap(newDish) {
     recent.push(newDish.id);
     localStorage.setItem('lacdoi_recent', JSON.stringify(recent.slice(-15)));
     closeSwap();
-    renderTrayResult({ dishes: currentTray.dishes, binh_dan: currentTray.binh_dan }, document.getElementById('result'), true);
+    renderTrayResult(currentTray, document.getElementById('result'), true);
     if (window.ldToast) ldToast('Đã đổi thành ' + newDish.name);
 }
 

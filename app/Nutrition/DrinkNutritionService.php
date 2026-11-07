@@ -65,9 +65,7 @@ final class DrinkNutritionService
         'viên' => 'viên đường',
     ];
 
-    public function __construct(private readonly NutritionCalculator $calculator)
-    {
-    }
+    public function __construct(private readonly NutritionCalculator $calculator) {}
 
     /**
      * @return array{status: string, kcal_min: ?float, kcal_max: ?float, confidence: ?string, missing: list<string>, negligible: list<string>}
@@ -94,6 +92,7 @@ final class DrinkNutritionService
             }
             if (in_array($name, self::PROCESS_INPUT_NAMES, true)) {
                 $negligible[] = $name.' (đầu vào pha, không uống)';
+
                 continue;
             }
 
@@ -101,12 +100,14 @@ final class DrinkNutritionService
                 if (in_array($unit, self::NEGLIGIBLE_UNITS, true)
                     || str_contains($name, 'muối') || str_contains($name, 'tiêu')) {
                     $negligible[] = $name;
+
                     continue;
                 }
                 if ($qty === null) {
                     // Lượng không ghi mà lại là thành phần chính (nền trà sữa,
                     // sữa hấp, trái cây cắt lát…) ⇒ missing, không coi là garnish.
                     $missing[] = $name.' (chưa ghi lượng)';
+
                     continue;
                 }
                 $missing[] = $name.' (chưa gắn hồ sơ nguyên liệu)';
@@ -114,12 +115,14 @@ final class DrinkNutritionService
                 if (in_array($unit, ['ml', 'g'], true) && $qty !== null) {
                     $inputs[] = new IngredientInput(slug: 'missing:'.$name, grams: (float) $qty, fctSource: null, kcalPer100g: null);
                 }
+
                 continue;
             }
 
             $ingredient = Ingredient::where('slug', $slug)->first();
             if ($ingredient === null) {
                 $missing[] = $name.' (slug không có trong kho)';
+
                 continue;
             }
 
@@ -133,6 +136,7 @@ final class DrinkNutritionService
                 if (in_array($unit, ['ml', 'g'], true) && $qty !== null) {
                     $inputs[] = new IngredientInput(slug: 'missing:'.$slug, grams: (float) $qty, fctSource: null, kcalPer100g: null);
                 }
+
                 continue;
             }
             if ($qty === null) {
@@ -140,12 +144,14 @@ final class DrinkNutritionService
                     continue;
                 }
                 $missing[] = $name.' (chưa ghi lượng)';
+
                 continue;
             }
 
             $grams = $this->resolveGrams($ingredient, $qty, $unit);
             if ($grams === null) {
                 $missing[] = $name.' (không quy đổi được đơn vị '.($unit ?? 'trống').')';
+
                 continue;
             }
 
@@ -209,6 +215,7 @@ final class DrinkNutritionService
         if ($row !== null) {
             return $qty * (float) $row->grams;
         }
+
         // Đơn vị "quả" của tắc đã có trong bảng units; các đơn vị đếm khác
         // không có quy đổi đã kiểm chứng ⇒ null (missing), không đoán.
         return null;

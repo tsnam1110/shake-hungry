@@ -4,8 +4,12 @@ declare(strict_types=1);
 
 namespace App\Http\Controllers\PublicWeb;
 
+use App\Combinations\CombinationDisplay;
 use App\Http\Controllers\Controller;
 use App\Models\Drink;
+use App\Models\Ingredient;
+use App\Nutrition\DrinkNutritionService;
+use App\Taxonomy\AllergenDisplay;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 
@@ -80,7 +84,7 @@ class DrinkController extends Controller
 
     public function show(Drink $drink): JsonResponse
     {
-        $nutrition = app(\App\Nutrition\DrinkNutritionService::class)->compute($drink);
+        $nutrition = app(DrinkNutritionService::class)->compute($drink);
         // Ảnh thumbnail cho hàng nguyên liệu (như trang món): chỉ các dòng
         // đã gắn ingredient_slug mới có ảnh từ hồ sơ nguyên liệu đó; dòng
         // chưa gắn thì image = null và giao diện dùng placeholder.
@@ -90,7 +94,7 @@ class DrinkController extends Controller
             ->filter()
             ->unique()
             ->values();
-        $ingredientsBySlug = \App\Models\Ingredient::whereIn('slug', $slugs)
+        $ingredientsBySlug = Ingredient::whereIn('slug', $slugs)
             ->with('media')
             ->get()
             ->keyBy('slug');
@@ -145,11 +149,11 @@ class DrinkController extends Controller
             // Dị ứng: suy từ các dòng nguyên liệu đã gắn hồ sơ kèm độ phủ —
             // xem AllergenDisplay::forDrink (không đọc "không suy được" thành
             // "không có dị ứng" khi độ phủ chưa đủ).
-            'allergen' => \App\Taxonomy\AllergenDisplay::forDrink($drink),
+            'allergen' => AllergenDisplay::forDrink($drink),
             // Kết hợp cần lưu ý: chỉ khi có cặp đã thẩm định chạm tới đồ
             // uống này qua slug đồ uống (không tự kế thừa slug nguyên liệu).
-            'combinations' => \App\Combinations\CombinationDisplay::forItem($drink->slug),
-            'combinations_disclaimer' => \App\Combinations\CombinationDisplay::DISCLAIMER,
+            'combinations' => CombinationDisplay::forItem($drink->slug),
+            'combinations_disclaimer' => CombinationDisplay::DISCLAIMER,
         ]);
     }
 

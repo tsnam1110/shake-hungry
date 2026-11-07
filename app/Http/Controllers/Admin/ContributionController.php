@@ -73,6 +73,7 @@ class ContributionController extends Controller
         foreach (Contribution::whereIn('id', $data['ids'])->get() as $contribution) {
             if ($contribution->status !== 'pending') {
                 $skipped++;
+
                 continue;
             }
             $this->applyDecision($contribution, $decision, $data['reject_reason'] ?? null, $request->user(), bulk: true);

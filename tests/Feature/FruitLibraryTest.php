@@ -10,7 +10,7 @@ use App\Models\Ingredient;
 function mkFruit(string $slug, array $snapshot): Fruit
 {
     $ing = Ingredient::create([
-        'slug' => 'nl-' . $slug, 'name_vi' => 'Quả ' . $slug, 'category' => 'trai-cay',
+        'slug' => 'nl-'.$slug, 'name_vi' => 'Quả '.$slug, 'category' => 'trai-cay',
         'mapping_confidence' => 'high', 'source' => 'curated', 'confidence' => 'low',
         'nutrition_snapshot' => $snapshot,
     ]);

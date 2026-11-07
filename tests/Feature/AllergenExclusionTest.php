@@ -31,7 +31,6 @@ use Database\Seeders\RegionSeeder;
  *  7. QD-04 (2026-11-02): sa-te mang cờ tom — 3 món trước đây thiếu cờ tôm
  *     nhờ sa-te nay có cờ và bị loại khi chọn nhóm Tôm.
  */
-
 const ALLERGEN_GROUP_ORDER = [
     'dau-phong', 'hat-cay', 'tom', 'cua', 'dong-vat-co-vo', 'ca', 'trung', 'sua',
     'dau-nanh', 'lua-mi', 'me', 'mam-tom',

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Database\Seeders;
 
+use App\Cultural\TcmAggregator;
 use App\Models\Dish;
 use App\Models\DishIngredient;
 use App\Models\DishMealSlot;
@@ -11,8 +12,11 @@ use App\Models\DishMedia;
 use App\Models\DishName;
 use App\Models\DishRecipeSource;
 use App\Models\Ingredient;
+use App\Models\IngredientTcmTrait;
 use App\Models\Region;
+use App\Models\Tag;
 use App\Nutrition\DishNutritionService;
+use App\Taxonomy\DishTagDeriver;
 use Illuminate\Database\Seeder;
 use RuntimeException;
 
@@ -129,8 +133,8 @@ class DishSeeder extends Seeder
             // nhãn diet/protein/allergen SUY từ thành phần bằng DishTagDeriver —
             // cùng hàm mà validate-data V16 dùng để đối chiếu, không chép tay.
             $dish->load('dishIngredients.ingredient.tags');
-            $derivedTags = \App\Taxonomy\DishTagDeriver::deriveForDish($dish);
-            $dish->tags()->sync(\App\Models\Tag::idsFor([...($j['tags'] ?? []), ...$derivedTags]));
+            $derivedTags = DishTagDeriver::deriveForDish($dish);
+            $dish->tags()->sync(Tag::idsFor([...($j['tags'] ?? []), ...$derivedTags]));
 
             DishRecipeSource::where('dish_id', $dish->id)->delete();
             foreach ($j['recipe_sources'] ?? [] as $src) {
@@ -168,8 +172,8 @@ class DishSeeder extends Seeder
 
         // Tổng hợp tính vị cũng là dữ liệu dẫn xuất (TCM-002) — chỉ chạy khi
         // đã có nhãn; chưa có nhãn nào thì toàn bộ summary giữ rỗng hợp lệ.
-        if (\App\Models\IngredientTcmTrait::exists()) {
-            app(\App\Cultural\TcmAggregator::class)->recomputeAll();
+        if (IngredientTcmTrait::exists()) {
+            app(TcmAggregator::class)->recomputeAll();
         }
 
         $this->command?->info('Đã seed '.count($files).' món từ data/dishes/.');

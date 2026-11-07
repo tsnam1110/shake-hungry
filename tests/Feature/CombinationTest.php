@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 use App\Models\Combination;
+use App\Models\Dish;
 use Database\Seeders\CombinationSeeder;
 use Database\Seeders\DishSeeder;
 use Database\Seeders\FruitSeeder;
@@ -101,7 +102,7 @@ it('cặp kết hợp KHÔNG lọc món khỏi catalog và không gắn tuyến 
     // Bún riêu cua (cua + cà chua) vẫn hiện diện bình thường trong catalog,
     // và catalog trả đủ mọi món (lớp kết hợp không lọc bỏ món nào).
     expect($all)->toContain('bun-rieu-cua')
-        ->and($all->unique()->count())->toBe(\App\Models\Dish::count());
+        ->and($all->unique()->count())->toBe(Dish::count());
 
     // Không món nào nhận cặp có phía thuốc (tuyến thuốc chỉ ở trang nguyên liệu/quả).
     foreach (['bun-rieu-cua', 'hu-tieu'] as $slug) {

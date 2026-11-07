@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Middleware\EnsureAdminArea;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Configuration\Exceptions;
 use Illuminate\Foundation\Configuration\Middleware;
@@ -13,7 +14,7 @@ return Application::configure(basePath: dirname(__DIR__))
     )
     ->withMiddleware(function (Middleware $middleware): void {
         $middleware->alias([
-            'admin' => \App\Http\Middleware\EnsureAdminArea::class,
+            'admin' => EnsureAdminArea::class,
         ]);
         // PROXY-001 (2026-11-03): app luôn chạy sau một reverse proxy — Pinggy
         // khi public tạm, nginx khi chạy Docker. Proxy ngoài chấm dứt TLS và

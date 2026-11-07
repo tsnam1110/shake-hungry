@@ -29,6 +29,8 @@ use Illuminate\Support\Facades\Log;
  * tuổi (bước 2). Đây là tách biệt theo model, không phải lọc theo
  * nguyên liệu: món ăn nấu với rượu (ví dụ bò sốt vang) vẫn là Dish và
  * không thuộc quy định này.
+ * REC-DRINK-001 (2026-11-07): nước không cồn là lựa chọn KÈM riêng qua
+ * DrinkRecommender, không nhập Drink vào pool Dish; đồ có cồn vẫn bị loại.
  */
 class Recommender
 {
@@ -535,7 +537,9 @@ class Recommender
         }
 
         // Đầy đủ dữ liệu
-        $confFactor = match ($n?->confidence) { 'high' => 1.0, 'medium' => 0.7, 'low' => 0.4, default => 0.2 };
+        $confFactor = match ($n?->confidence) {
+            'high' => 1.0, 'medium' => 0.7, 'low' => 0.4, default => 0.2
+        };
         $dataScore = 0.5 * $confFactor + 0.5 * ($dish->completeness_level >= 2 ? 1.0 : 0.5);
 
         $score = self::WEIGHTS['slot'] * $slotScore

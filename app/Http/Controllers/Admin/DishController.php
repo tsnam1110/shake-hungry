@@ -7,7 +7,9 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\AdminAuditLog;
 use App\Models\Dish;
+use App\Models\DishIngredient;
 use App\Models\DishName;
+use App\Models\Ingredient;
 use App\Nutrition\DishNutritionService;
 use App\Support\NameSimilarity;
 use Illuminate\Http\JsonResponse;
@@ -97,11 +99,13 @@ class DishController extends Controller
             } else { // compute — bỏ qua món chưa có nguyên liệu hoặc engine chưa tính được
                 if ($dish->dishIngredients()->count() === 0) {
                     $skipped++;
+
                     continue;
                 }
                 $row = $service->computeAndStore($dish, $service->pickFctSource($dish));
                 if ($row === null) {
                     $skipped++;
+
                     continue;
                 }
             }
@@ -252,8 +256,8 @@ class DishController extends Controller
         $dish = new Dish(['cooking_method' => $data['cooking_method'] ?? null]);
         $rows = collect();
         foreach ($data['ingredients'] as $row) {
-            $ingredient = \App\Models\Ingredient::with(['units', 'referenceFood'])->find($row['ingredient_id']);
-            $di = new \App\Models\DishIngredient([
+            $ingredient = Ingredient::with(['units', 'referenceFood'])->find($row['ingredient_id']);
+            $di = new DishIngredient([
                 'ingredient_id' => $row['ingredient_id'],
                 'quantity' => $row['quantity'] ?? null,
                 'unit_name' => $row['unit_name'] ?? 'g',

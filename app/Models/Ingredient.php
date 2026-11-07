@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Models;
 
+use App\Support\Thumbnail;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
@@ -63,8 +64,8 @@ class Ingredient extends Model
             'url' => '/'.$media->path,
             // Thumbnail cho thẻ danh sách (quy tắc 2026-11-03): url gốc
             // giữ nguyên cho trang chi tiết; thẻ danh sách dùng srcset.
-            'thumb_url' => \App\Support\Thumbnail::url($media->path, 800),
-            'srcset' => \App\Support\Thumbnail::srcset($media->path),
+            'thumb_url' => Thumbnail::url($media->path, 800),
+            'srcset' => Thumbnail::srcset($media->path),
             'license' => $media->license,
             'attribution' => $media->attribution,
             'is_ai' => $media->license === 'ai-minh-hoa',

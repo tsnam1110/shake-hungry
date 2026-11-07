@@ -241,3 +241,8 @@ layout tra cứu/kết quả. Tương phản đo white/accent 4.70:1, white/link
 5.57:1, sub/white 5.07:1, ink/white 16.83:1. Browser QA 360px/1440px đạt;
 ảnh base-only giữ nguyên cấu trúc, accent làm rõ lựa chọn và CTA. Chi tiết
 kiểm chứng và giới hạn: [UI-SHAKE-UX-001](../05-tasks/tasks/UI-SHAKE-UX-001.md).
+
+**REC-DRINK-001 (2026-11-07):** sau vùng/ăn chay có công tắc Kèm nước uống,
+mặc định tắt; mô tả đổi theo chế độ. Kết quả nước là thẻ riêng có tên, link
+chi tiết, ảnh nếu có và lưu ý nguồn, không chiếm vị trí món ăn trong mâm.
+Giữ nước khi đổi từng món; kcal/nhật ký vẫn chỉ gồm món ăn. Không thêm màu mới.

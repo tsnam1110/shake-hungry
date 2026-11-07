@@ -9,7 +9,6 @@ use App\Models\DishNutrition;
 use App\Models\Ingredient;
 use App\Models\IngredientTcmTrait;
 use Illuminate\Database\QueryException;
-use Illuminate\Support\Facades\DB;
 
 /**
  * TEST-001 — chứng minh 10 ràng buộc R1–R10 (DATA-MODEL §6) THỰC SỰ chặn được

@@ -5,8 +5,12 @@ declare(strict_types=1);
 namespace Database\Seeders;
 
 use App\Models\Ingredient;
+use App\Models\IngredientAlias;
+use App\Models\IngredientMedia;
+use App\Models\IngredientTcmTrait;
 use App\Models\IngredientUnit;
 use App\Models\ReferenceFood;
+use App\Models\Tag;
 use Illuminate\Database\Seeder;
 use RuntimeException;
 
@@ -83,9 +87,9 @@ class IngredientSeeder extends Seeder
             }
 
             // Tên gọi khác / tên vùng miền (ALIAS-001): file là nguồn sự thật.
-            \App\Models\IngredientAlias::where('ingredient_id', $ingredient->id)->delete();
+            IngredientAlias::where('ingredient_id', $ingredient->id)->delete();
             foreach ($j['aliases'] ?? [] as $alias) {
-                \App\Models\IngredientAlias::create([
+                IngredientAlias::create([
                     'ingredient_id' => $ingredient->id,
                     'name' => $alias['name'],
                     'note' => $alias['note'] ?? null,
@@ -94,12 +98,12 @@ class IngredientSeeder extends Seeder
 
             // Nhãn phân loại (TAXONOMY.md): file là nguồn sự thật; slug ngoài
             // đăng ký config/taxonomy.php sẽ ném lỗi tại Tag::idsFor.
-            $ingredient->tags()->sync(\App\Models\Tag::idsFor($j['tags'] ?? []));
+            $ingredient->tags()->sync(Tag::idsFor($j['tags'] ?? []));
 
             // Ảnh nguyên liệu (IMG-001): file là nguồn sự thật, cùng khuôn dish_media.
-            \App\Models\IngredientMedia::where('ingredient_id', $ingredient->id)->delete();
+            IngredientMedia::where('ingredient_id', $ingredient->id)->delete();
             foreach ($j['media'] ?? [] as $media) {
-                \App\Models\IngredientMedia::create([
+                IngredientMedia::create([
                     'ingredient_id' => $ingredient->id,
                     'path' => $media['path'],
                     'license' => $media['license'], // R4: thiếu license thì fail ngay tại đây
@@ -111,9 +115,9 @@ class IngredientSeeder extends Seeder
             // Nhãn tính vị (TCM-000, QT-6): file là nguồn sự thật. Mỗi dòng là
             // nhãn theo MỘT nguồn — source_ref bắt buộc (R5 chặn ở DB nếu rỗng);
             // nhiều dòng mâu thuẫn được giữ nguyên, không ép chọn.
-            \App\Models\IngredientTcmTrait::where('ingredient_id', $ingredient->id)->delete();
+            IngredientTcmTrait::where('ingredient_id', $ingredient->id)->delete();
             foreach ($j['tcm_traits'] ?? [] as $trait) {
-                \App\Models\IngredientTcmTrait::create([
+                IngredientTcmTrait::create([
                     'ingredient_id' => $ingredient->id,
                     'nature' => $trait['nature'] ?? null,
                     'flavor' => $trait['flavor'] ?? null,

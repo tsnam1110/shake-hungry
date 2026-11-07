@@ -14,7 +14,7 @@
     "protein_g": 3.75,
     "fat_g": 0.94,
     "carb_g": 14.89,
-    "fiber_g": 8.0,
+    "fiber_g": 8,
     "water_g": null,
     "mapping_confidence": "low",
     "mapping_note": "PROXY CHƯA CHỐT LOÀI (cần chủ dự án xác nhận): số này là peppermint Mentha × piperita, USDA SR Legacy NDB 02064: 70 kcal/100g. Bạc hà dùng làm rau thơm/pha trà ở Việt Nam thường gần spearmint Mentha spicata (USDA NDB 02065: 44 kcal/100g) hoặc Mentha arvensis hơn là peppermint lai — nếu định nghĩa bac-ha là 'bạc hà VN nói chung' thì 70 chỉ là proxy, không phải số đo trực tiếp của giống VN. Lá khô, tinh dầu, kẹo bạc hà là food khác. Lượng dùng thực tế chỉ vài lá nên ảnh hưởng tuyệt đối nhỏ, nhưng vẫn giữ cờ low + needs_review. Đợt hoàn thiện lõi nước uống 2026-11-03 (QT-9: tra đa nguồn, xem mapping_note).",
@@ -38,7 +38,6 @@
       "is_primary": true
     }
   ],
-  "tcm_traits": [],
   "source": "curated",
   "confidence": "low",
   "needs_review": true,

@@ -9,6 +9,7 @@ use App\Models\User;
 use App\Models\UserProfile;
 use App\Models\WeekPlan;
 use App\Models\WeekPlanDay;
+use App\Profile\WeekTargetSuggester;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Facades\DB;
@@ -69,7 +70,7 @@ class WeekBuilder
                 'goal' => $profile?->goal,
                 'target_protein_g_per_day' => $profile?->target_protein_g_per_day,
                 // Kcal tuần đã điều chỉnh theo goal; kcal Hồ sơ giữ nguyên.
-                'target_kcal_per_day' => app(\App\Profile\WeekTargetSuggester::class)
+                'target_kcal_per_day' => app(WeekTargetSuggester::class)
                     ->adjustKcalForGoal($profile?->target_kcal_per_day, $profile?->goal),
                 'status' => 'active',
             ]);

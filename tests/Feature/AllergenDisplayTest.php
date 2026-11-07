@@ -17,7 +17,6 @@ use Database\Seeders\RegionSeeder;
  *  - Bất biến nền: tập nhóm hiển thị của mọi món BẰNG tập cờ dị ứng của
  *    món (tầng hiển thị không được tự thêm/bớt nhóm so với tầng lọc).
  */
-
 function displayRow(string $slug, array $tags, bool $optional = false, array $components = []): array
 {
     return ['slug' => $slug, 'tags' => $tags, 'components' => $components, 'is_optional' => $optional];

@@ -1,7 +1,22 @@
 {
   "_generated_by": "php artisan lacdoi:export-data — không sửa tay (DATA-REPOSITORY §2)",
-  "count": 436,
+  "count": 489,
   "ingredients": [
+    {
+      "slug": "aperol",
+      "name_vi": "Rượu mùi Aperol 11%",
+      "category": "khac"
+    },
+    {
+      "slug": "atiso",
+      "name_vi": "Atisô (sống)",
+      "category": "rau-cu"
+    },
+    {
+      "slug": "bac-ha",
+      "name_vi": "Lá bạc hà tươi",
+      "category": "rau-gia-vi"
+    },
     {
       "slug": "bach-tuoc",
       "name_vi": "Bạch tuộc (sống)",
@@ -58,6 +73,11 @@
       "category": "rau-cu"
     },
     {
+      "slug": "bap-cai-tim",
+      "name_vi": "Bắp cải tím (sống)",
+      "category": "rau-cu"
+    },
+    {
       "slug": "bap-chuoi",
       "name_vi": "Bắp chuối (hoa chuối)",
       "category": "rau-cu"
@@ -86,6 +106,11 @@
       "slug": "bi-lon",
       "name_vi": "Bì lợn (da heo sống)",
       "category": "thit"
+    },
+    {
+      "slug": "bi-ngoi",
+      "name_vi": "Bí ngòi (sống)",
+      "category": "rau-cu"
     },
     {
       "slug": "bia",
@@ -223,6 +248,16 @@
       "category": "tinh-bot"
     },
     {
+      "slug": "bot-sua",
+      "name_vi": "Bột sữa (bột kem béo không sữa, pha trà sữa)",
+      "category": "khac"
+    },
+    {
+      "slug": "bot-trung-muoi",
+      "name_vi": "Bọt trứng muối (hỗn hợp mẻ lớn, tính theo khẩu phần)",
+      "category": "khac"
+    },
+    {
       "slug": "bun-kho",
       "name_vi": "Bún khô (và bánh phở khô)",
       "category": "tinh-bot"
@@ -270,6 +305,11 @@
     {
       "slug": "ca-chua",
       "name_vi": "Cà chua (chín, sống)",
+      "category": "rau-cu"
+    },
+    {
+      "slug": "ca-chua-bi",
+      "name_vi": "Cà chua bi (sống)",
       "category": "rau-cu"
     },
     {
@@ -368,6 +408,11 @@
       "category": "khac"
     },
     {
+      "slug": "ca-phe-espresso",
+      "name_vi": "Cà phê espresso nguyên chất, không đường",
+      "category": "khac"
+    },
+    {
       "slug": "ca-ro-dong",
       "name_vi": "Cá rô đồng (sống)",
       "category": "thuy-san"
@@ -380,6 +425,11 @@
     {
       "slug": "ca-rot",
       "name_vi": "Cà rốt (sống)",
+      "category": "rau-cu"
+    },
+    {
+      "slug": "ca-rot-baby",
+      "name_vi": "Cà rốt baby (sống)",
       "category": "rau-cu"
     },
     {
@@ -413,6 +463,11 @@
       "category": "thuy-san"
     },
     {
+      "slug": "cai-cau-vong",
+      "name_vi": "Cải cầu vồng (sống)",
+      "category": "rau-cu"
+    },
+    {
       "slug": "cai-cay",
       "name_vi": "Cải cay (cải bẹ xanh, sống)",
       "category": "rau-cu"
@@ -443,9 +498,19 @@
       "category": "rau-cu"
     },
     {
+      "slug": "cai-xoan",
+      "name_vi": "Cải xoăn / kale (sống)",
+      "category": "rau-cu"
+    },
+    {
       "slug": "cam",
       "name_vi": "Cam (cam vàng, cam Vinh)",
       "category": "trai-cay"
+    },
+    {
+      "slug": "campari",
+      "name_vi": "Rượu mùi đắng Campari 25%",
+      "category": "khac"
     },
     {
       "slug": "can-tay",
@@ -548,6 +613,11 @@
       "category": "tinh-bot"
     },
     {
+      "slug": "cu-cai-do",
+      "name_vi": "Củ cải đỏ (sống)",
+      "category": "rau-cu"
+    },
+    {
       "slug": "cu-cai-trang",
       "name_vi": "Củ cải trắng (sống)",
       "category": "rau-cu"
@@ -555,6 +625,11 @@
     {
       "slug": "cu-dau",
       "name_vi": "Củ đậu (củ sắn nước, sống)",
+      "category": "rau-cu"
+    },
+    {
+      "slug": "cu-den-do",
+      "name_vi": "Củ dền đỏ (sống)",
       "category": "rau-cu"
     },
     {
@@ -645,6 +720,11 @@
     {
       "slug": "dau-ha-lan",
       "name_vi": "Đậu Hà Lan (ăn cả vỏ, sống)",
+      "category": "rau-cu"
+    },
+    {
+      "slug": "dau-ha-lan-hat",
+      "name_vi": "Đậu Hà Lan hạt (sống)",
       "category": "rau-cu"
     },
     {
@@ -758,6 +838,11 @@
       "category": "rau-cu"
     },
     {
+      "slug": "dua-leo-nhat",
+      "name_vi": "Dưa leo Nhật (sống)",
+      "category": "rau-cu"
+    },
+    {
       "slug": "dua-luoi",
       "name_vi": "Dưa lưới (tươi)",
       "category": "trai-cay"
@@ -833,6 +918,11 @@
       "category": "khac"
     },
     {
+      "slug": "gelato-vani",
+      "name_vi": "Kem gelato vani",
+      "category": "khac"
+    },
+    {
       "slug": "ghe",
       "name_vi": "Ghẹ xanh (sống)",
       "category": "thuy-san"
@@ -848,6 +938,16 @@
       "category": "gia-vi"
     },
     {
+      "slug": "gin",
+      "name_vi": "Gin khô nguyên chất 40%",
+      "category": "khac"
+    },
+    {
+      "slug": "ginger-beer",
+      "name_vi": "Bia gừng có đường, không cồn",
+      "category": "khac"
+    },
+    {
       "slug": "gio-lua",
       "name_vi": "Giò lụa (chả lụa)",
       "category": "thit"
@@ -858,9 +958,19 @@
       "category": "thit"
     },
     {
+      "slug": "grenadine",
+      "name_vi": "Siro lựu grenadine có đường",
+      "category": "khac"
+    },
+    {
       "slug": "gung",
       "name_vi": "Gừng",
       "category": "gia-vi"
+    },
+    {
+      "slug": "gung-tuoi",
+      "name_vi": "Gừng tươi",
+      "category": "rau-cu"
     },
     {
       "slug": "hanh-la",
@@ -886,6 +996,11 @@
       "slug": "hanh-tim",
       "name_vi": "Hành tím (hành khô, sống)",
       "category": "gia-vi"
+    },
+    {
+      "slug": "hat-chia",
+      "name_vi": "Hạt chia khô",
+      "category": "khac"
     },
     {
       "slug": "hat-dieu-mau",
@@ -973,6 +1088,11 @@
       "category": "rau-gia-vi"
     },
     {
+      "slug": "kahlua",
+      "name_vi": "Rượu mùi cà phê Kahlúa Original 20%",
+      "category": "khac"
+    },
+    {
       "slug": "kem-whipping",
       "name_vi": "Kem whipping (kem sữa tươi béo, lỏng)",
       "category": "khac"
@@ -1005,6 +1125,11 @@
     {
       "slug": "khoai-tay",
       "name_vi": "Khoai tây (sống)",
+      "category": "rau-cu"
+    },
+    {
+      "slug": "khoai-tay-baby",
+      "name_vi": "Khoai tây baby (sống)",
       "category": "rau-cu"
     },
     {
@@ -1106,6 +1231,11 @@
       "slug": "lekima",
       "name_vi": "Lêkima (quả trứng gà)",
       "category": "trai-cay"
+    },
+    {
+      "slug": "long-do-trung-ga",
+      "name_vi": "Lòng đỏ trứng gà",
+      "category": "khac"
     },
     {
       "slug": "long-ga",
@@ -1218,6 +1348,16 @@
       "category": "rau-cu"
     },
     {
+      "slug": "mang-tay",
+      "name_vi": "Măng tây xanh (sống)",
+      "category": "rau-cu"
+    },
+    {
+      "slug": "mang-tay-trang",
+      "name_vi": "Măng tây trắng (sống)",
+      "category": "rau-cu"
+    },
+    {
       "slug": "mang-tuoi",
       "name_vi": "Măng tươi",
       "category": "rau-cu"
@@ -1226,6 +1366,11 @@
       "slug": "mat-ong",
       "name_vi": "Mật ong",
       "category": "gia-vi"
+    },
+    {
+      "slug": "matcha",
+      "name_vi": "Bột matcha nguyên chất, khô",
+      "category": "khac"
     },
     {
       "slug": "may",
@@ -1473,6 +1618,21 @@
       "category": "khac"
     },
     {
+      "slug": "nuoc-ep-ca-chua",
+      "name_vi": "Nước ép cà chua đóng hộp, không thêm muối",
+      "category": "khac"
+    },
+    {
+      "slug": "nuoc-ep-cam",
+      "name_vi": "Nước ép cam (cam ngọt, vắt tươi, không đường)",
+      "category": "khac"
+    },
+    {
+      "slug": "nuoc-loc",
+      "name_vi": "Nước lọc",
+      "category": "khac"
+    },
+    {
       "slug": "nuoc-mam-cong-nghiep",
       "name_vi": "Nước mắm công nghiệp (pha đường, độ đạm thấp)",
       "category": "gia-vi"
@@ -1523,6 +1683,11 @@
       "category": "trai-cay"
     },
     {
+      "slug": "orgeat",
+      "name_vi": "Siro hạnh nhân orgeat có đường",
+      "category": "khac"
+    },
+    {
       "slug": "ot-bot",
       "name_vi": "Ớt bột (nguyên chất)",
       "category": "gia-vi"
@@ -1545,6 +1710,16 @@
     {
       "slug": "pho-mai",
       "name_vi": "Phô mai (loại hộp/lát chế biến)",
+      "category": "khac"
+    },
+    {
+      "slug": "prosecco",
+      "name_vi": "Vang sủi Prosecco Brut 11%",
+      "category": "khac"
+    },
+    {
+      "slug": "pudding-trung",
+      "name_vi": "Pudding trứng (bánh flan, pudding trà sữa)",
       "category": "khac"
     },
     {
@@ -1708,6 +1883,11 @@
       "category": "rau-cu"
     },
     {
+      "slug": "rum",
+      "name_vi": "Rum trắng nguyên chất 40%",
+      "category": "khac"
+    },
+    {
       "slug": "ruoi",
       "name_vi": "Con rươi",
       "category": "thuy-san"
@@ -1743,6 +1923,11 @@
       "category": "trai-cay"
     },
     {
+      "slug": "siro-duong",
+      "name_vi": "Siro đường 1:1 (đường trắng + nước, theo khối lượng)",
+      "category": "khac"
+    },
+    {
       "slug": "so-diep",
       "name_vi": "Sò điệp (cồi, sống)",
       "category": "thuy-san"
@@ -1751,6 +1936,11 @@
       "slug": "so-ri",
       "name_vi": "Sơ ri",
       "category": "trai-cay"
+    },
+    {
+      "slug": "soda",
+      "name_vi": "Soda / club soda không đường",
+      "category": "khac"
     },
     {
       "slug": "soi-banh-canh",
@@ -1771,6 +1961,11 @@
       "slug": "soi-mi-quang",
       "name_vi": "Sợi mì Quảng (tươi)",
       "category": "tinh-bot"
+    },
+    {
+      "slug": "sot-socola",
+      "name_vi": "Sốt socola (siro socola)",
+      "category": "khac"
     },
     {
       "slug": "su-hao",
@@ -1818,6 +2013,16 @@
       "category": "thit"
     },
     {
+      "slug": "sup-lo-baby",
+      "name_vi": "Súp lơ baby / broccolini (sống)",
+      "category": "rau-cu"
+    },
+    {
+      "slug": "sup-lo-tim",
+      "name_vi": "Súp lơ tím (sống)",
+      "category": "rau-cu"
+    },
+    {
       "slug": "sup-lo-trang",
       "name_vi": "Súp lơ trắng (bông cải trắng, sống)",
       "category": "rau-cu"
@@ -1826,6 +2031,11 @@
       "slug": "sup-lo-xanh",
       "name_vi": "Súp lơ xanh (sống)",
       "category": "rau-cu"
+    },
+    {
+      "slug": "tac",
+      "name_vi": "Quả tắc (quất) tươi, ăn cả vỏ",
+      "category": "trai-cay"
     },
     {
       "slug": "tai-lon",
@@ -1871,6 +2081,11 @@
       "slug": "tep",
       "name_vi": "Tép (tôm nhỏ nước ngọt)",
       "category": "thuy-san"
+    },
+    {
+      "slug": "tequila",
+      "name_vi": "Tequila nguyên chất 100% agave 40%",
+      "category": "khac"
     },
     {
       "slug": "thach-suong-sao",
@@ -2038,6 +2253,16 @@
       "category": "thuy-san"
     },
     {
+      "slug": "tonic",
+      "name_vi": "Nước tonic có đường",
+      "category": "khac"
+    },
+    {
+      "slug": "tra-den",
+      "name_vi": "Trà đen pha, không đường",
+      "category": "khac"
+    },
+    {
       "slug": "tra-xanh",
       "name_vi": "Trà xanh (nước pha, không đường)",
       "category": "khac"
@@ -2051,6 +2276,16 @@
       "slug": "tran-chau",
       "name_vi": "Trân châu (hạt tinh bột sắn, khô)",
       "category": "tinh-bot"
+    },
+    {
+      "slug": "tran-chau-da-nau",
+      "name_vi": "Trân châu đen đã nấu, ướp đường (kiểu hàng quán Việt Nam)",
+      "category": "khac"
+    },
+    {
+      "slug": "triple-sec",
+      "name_vi": "Rượu mùi cam triple sec (chuẩn Cointreau 40%)",
+      "category": "khac"
     },
     {
       "slug": "trung-cut",
@@ -2123,6 +2358,16 @@
       "category": "gia-vi"
     },
     {
+      "slug": "vermouth-kho",
+      "name_vi": "Vermouth khô (chuẩn Noilly Prat Dry 18%)",
+      "category": "khac"
+    },
+    {
+      "slug": "vermouth-ngot",
+      "name_vi": "Vermouth ngọt (chuẩn Martini Rosso 15%)",
+      "category": "khac"
+    },
+    {
       "slug": "viet-quat",
       "name_vi": "Việt quất",
       "category": "trai-cay"
@@ -2131,6 +2376,11 @@
       "slug": "vo-hoanh-thanh",
       "name_vi": "Vỏ hoành thánh",
       "category": "tinh-bot"
+    },
+    {
+      "slug": "vodka",
+      "name_vi": "Vodka nguyên chất 40%",
+      "category": "khac"
     },
     {
       "slug": "vu-sua",
@@ -2148,6 +2398,11 @@
       "category": "khac"
     },
     {
+      "slug": "whiskey",
+      "name_vi": "Whiskey nguyên chất 40%",
+      "category": "khac"
+    },
+    {
       "slug": "xa-bau",
       "name_vi": "Xá bấu (củ cải muối phơi khô)",
       "category": "rau-cu"
@@ -2155,6 +2410,16 @@
     {
       "slug": "xa-lach",
       "name_vi": "Xà lách (lá rời)",
+      "category": "rau-cu"
+    },
+    {
+      "slug": "xa-lach-baby-hon-hop",
+      "name_vi": "Xà lách baby hỗn hợp (sống)",
+      "category": "rau-cu"
+    },
+    {
+      "slug": "xa-lach-romaine",
+      "name_vi": "Xà lách romaine (sống)",
       "category": "rau-cu"
     },
     {

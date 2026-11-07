@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 use App\Nutrition\IngredientInput;
 use App\Nutrition\NutritionCalculator;
+use App\Nutrition\NutritionResult;
 
 // Engine là hàm thuần tuý (CALC-001) — test không cần database, chỉ fixture.
 
@@ -13,7 +14,7 @@ function calc(): NutritionCalculator
 }
 
 /** Diem giua khoang — gia tri "mot con so" duy nhat engine cho phep suy ra (QT-5). */
-function mid(\App\Nutrition\NutritionResult $r): float
+function mid(NutritionResult $r): float
 {
     return round(($r->kcalMin + $r->kcalMax) / 2, 1);
 }

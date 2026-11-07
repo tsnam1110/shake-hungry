@@ -46,6 +46,7 @@ class WeekValidator
                 || ! empty($nutrition->missing_ingredients)
                 || ! empty($nutrition->unverified_ingredients)) {
                 $unknown++;
+
                 continue;
             }
             $protein += (float) $nutrition->protein_g * $servings;

@@ -14,7 +14,7 @@
     "protein_g": 1.21,
     "fat_g": null,
     "carb_g": 3.11,
-    "fiber_g": 1.0,
+    "fiber_g": 1,
     "water_g": 94.79,
     "mapping_confidence": "medium",
     "mapping_note": "Bản ghi USDA SR Legacy 169291 'Squash, summer, zucchini, includes skin, raw', xác minh qua nhiều nguồn thứ cấp trích USDA (17 kcal / 3,11 g carb / 1,0 g xơ / 94,79 g nước trên 100 g; protein khoảng 1,2 g). Béo chưa xác minh từ nguồn thứ cấp nên để null, không điền số phỏng đoán.",
@@ -38,7 +38,6 @@
       "is_primary": true
     }
   ],
-  "tcm_traits": [],
   "source": "curated",
   "confidence": "low",
   "needs_review": true,

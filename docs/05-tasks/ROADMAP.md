@@ -1,5 +1,19 @@
 # Roadmap & Task Tracking — Lắc Đói
 
+> **2026-11-07 — [CLEANUP-001](tasks/CLEANUP-001.md): ✅ DONE.**
+> Quét source, chuẩn hoá Pint, cô lập test export, sửa mất safety_note và
+> chuẩn hoá cơ học định dạng/index dữ liệu; giữ nội dung và số dinh dưỡng.
+> Vá 6 dependency: Composer/npm production audit 0; 254/254 test đạt trên bản vá,
+> build/browser QA/deploy checks đạt; seed trắng validate 3.700 bản ghi, 0 lỗi,
+> 21 cảnh báo cũ. MySQL thử đã tắt; artefact backups giữ vì tự động chặn xóa.
+
+> **2026-11-07 — [REC-DRINK-001](tasks/REC-DRINK-001.md): ✅ DONE.**
+> Kèm nước uống opt-in cho Lắc món; cơm nhà chọn công thức dễ pha tại nhà,
+> loại đồ có cồn, giữ lọc dị ứng/chay; nước tách khỏi số món và kcal mâm.
+> Chức năng xong: 27/27 kiểm tra liên quan, API dữ liệu thật, build và browser QA đạt.
+> **Đính chính:** CLEANUP-001 đã xử lý ExportStability nền; full suite 254/254
+> đạt, đóng DoD. Không push/deploy hoặc thay dữ liệu production.
+
 > **2026-11-07 — [UI-SHAKE-UX-001](tasks/UI-SHAKE-UX-001.md): ✅ DONE.**
 > Tối ưu form lắc theo skill Design: phân cấp bữa/chế độ/khẩu vị, dị ứng luôn
 > hiển thị, kcal thu gọn có giá trị tóm tắt; bỏ công tắc lắc máy khỏi home,

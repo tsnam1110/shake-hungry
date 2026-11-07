@@ -2,10 +2,12 @@
 
 declare(strict_types=1);
 
+use App\Models\Contribution;
 use App\Models\Dish;
 use App\Models\DishNutrition;
 use App\Models\Fruit;
 use App\Models\Ingredient;
+use App\Models\Region;
 use App\Models\Tag;
 use App\Models\User;
 
@@ -102,8 +104,8 @@ test('lọc nguyên liệu theo độ tin cậy ánh xạ và số dinh dưỡng
 
 test('lọc món theo vùng, chế độ ăn và dinh dưỡng', function () {
     $this->actingAs(statsAdmin());
-    $north = \App\Models\Region::create(['country_code' => 'VN', 'code' => 'vn-north', 'name' => 'Miền Bắc', 'level' => 'macro_region']);
-    $south = \App\Models\Region::create(['country_code' => 'VN', 'code' => 'vn-south', 'name' => 'Miền Nam', 'level' => 'macro_region']);
+    $north = Region::create(['country_code' => 'VN', 'code' => 'vn-north', 'name' => 'Miền Bắc', 'level' => 'macro_region']);
+    $south = Region::create(['country_code' => 'VN', 'code' => 'vn-south', 'name' => 'Miền Nam', 'level' => 'macro_region']);
     $chay = statsDish(['region_id' => $north->id]);
     $chay->tags()->attach(Tag::create(['slug' => 'diet:chay', 'name' => 'Chay']));
     DishNutrition::create(['dish_id' => $chay->id, 'basis' => 'per_serving', 'confidence' => 'medium', 'fct_source' => 'usda_sr_legacy', 'source' => 'engine', 'engine_version' => '1.1.0', 'computed_at' => now(), 'kcal_min' => 50, 'kcal_max' => 60]);
@@ -148,8 +150,8 @@ test('lọc hồ sơ quả theo nguồn gốc và tình trạng giá', function 
 
 test('lọc đóng góp cộng đồng theo loại', function () {
     $this->actingAs(statsAdmin());
-    \App\Models\Contribution::create(['type' => 'new_dish', 'payload' => ['detail' => 'Món mới A'], 'status' => 'pending']);
-    \App\Models\Contribution::create(['type' => 'fix_dish', 'payload' => ['detail' => 'Sửa món B'], 'status' => 'pending']);
+    Contribution::create(['type' => 'new_dish', 'payload' => ['detail' => 'Món mới A'], 'status' => 'pending']);
+    Contribution::create(['type' => 'fix_dish', 'payload' => ['detail' => 'Sửa món B'], 'status' => 'pending']);
 
     $this->getJson('/admin/api/contributions?type=new_dish')
         ->assertOk()->assertJsonPath('total', 1);

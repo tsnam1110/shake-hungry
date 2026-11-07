@@ -10,6 +10,9 @@ use App\Models\DishRecipeSource;
 use App\Models\DishTcmSummary;
 use App\Models\Ingredient;
 use App\Models\IngredientTcmTrait;
+use App\Models\Tag;
+use App\Taxonomy\DishTagDeriver;
+use App\Taxonomy\TaggingRules;
 use Database\Seeders\IngredientSeeder;
 use Database\Seeders\RegionSeeder;
 use Illuminate\Database\QueryException;
@@ -21,7 +24,6 @@ use Illuminate\Support\Facades\DB;
  * (có note)" và miễn trừ R8 đi kèm. Mọi nhãn trong test này là FIXTURE
  * trong DB test — tuyệt đối không phải dữ liệu biên soạn thật.
  */
-
 function tcmIngredient(string $slug, array $overrides = []): Ingredient
 {
     return Ingredient::create(array_merge([
@@ -60,7 +62,7 @@ function tcmLine(Dish $dish, Ingredient $ing, float $grams): void
 function tcmSyncDerivedTags(Dish $dish): void
 {
     $dish->load('dishIngredients.ingredient.tags');
-    $dish->tags()->sync(\App\Models\Tag::idsFor(\App\Taxonomy\DishTagDeriver::deriveForDish($dish)));
+    $dish->tags()->sync(Tag::idsFor(DishTagDeriver::deriveForDish($dish)));
 }
 
 function tcmTrait(Ingredient $ing, ?string $nature, array $overrides = []): IngredientTcmTrait
@@ -305,7 +307,7 @@ it('V20: mon nang bu du cong (note + ghi chu van hoa + phu 80) thi validate xanh
 
 it('V20: bao do khi file nguyen lieu co nhan thieu source_ref (tang file)', function () {
     $path = base_path('data/ingredients/z-tcm000-fixture.json');
-    $tags = \App\Taxonomy\TaggingRules::tagsFor('z-tcm000-fixture', 'khac');
+    $tags = TaggingRules::tagsFor('z-tcm000-fixture', 'khac');
     file_put_contents($path, json_encode([
         'slug' => 'z-tcm000-fixture',
         'name_vi' => 'Fixture TCM-000 (xoá sau test)',
@@ -333,7 +335,7 @@ it('V20: bao do khi file nguyen lieu co nhan thieu source_ref (tang file)', func
 
 it('TCM-001a: V20 chap nhan dong basis nature/direct nhat quan voi he da khai', function () {
     $path = base_path('data/ingredients/z-tcm000-fixture.json');
-    $tags = \App\Taxonomy\TaggingRules::tagsFor('z-tcm000-fixture', 'khac');
+    $tags = TaggingRules::tagsFor('z-tcm000-fixture', 'khac');
     file_put_contents($path, json_encode([
         'slug' => 'z-tcm000-fixture',
         'name_vi' => 'Fixture TCM-001a (xoá sau test)',
@@ -365,7 +367,7 @@ it('TCM-001a: V20 chap nhan dong basis nature/direct nhat quan voi he da khai', 
 
 it('TCM-001a: V20 bao do khi element lech he basis da khai hoac basis sai tu vung', function () {
     $path = base_path('data/ingredients/z-tcm000-fixture.json');
-    $tags = \App\Taxonomy\TaggingRules::tagsFor('z-tcm000-fixture', 'khac');
+    $tags = TaggingRules::tagsFor('z-tcm000-fixture', 'khac');
     $write = function (array $traits) use ($path, $tags) {
         file_put_contents($path, json_encode([
             'slug' => 'z-tcm000-fixture',
@@ -450,7 +452,7 @@ it('TCM-001a: seed -> export giu element_basis khac mac dinh, dong mac dinh khon
 
 it('TCM-001c: V20 chap nhan dong suy dien P-DERIVE guong dung nhan goc (gao-te)', function () {
     $path = base_path('data/ingredients/z-tcm001c-fixture.json');
-    $tags = \App\Taxonomy\TaggingRules::tagsFor('z-tcm001c-fixture', 'khac');
+    $tags = TaggingRules::tagsFor('z-tcm001c-fixture', 'khac');
     file_put_contents($path, json_encode([
         'slug' => 'z-tcm001c-fixture',
         'name_vi' => 'Fixture TCM-001c (xoá sau test)',
@@ -480,7 +482,7 @@ it('TCM-001c: V20 chap nhan dong suy dien P-DERIVE guong dung nhan goc (gao-te)'
 it('TCM-001c: V20 bao do cho suy dien sai ky luat (tran low, guong, chuoi, hon hop, dau P-DERIVE)', function () {
     $path = base_path('data/ingredients/z-tcm001c-fixture.json');
     $pathOrigin = base_path('data/ingredients/z-tcm001c-origin.json');
-    $tags = \App\Taxonomy\TaggingRules::tagsFor('z-tcm001c-fixture', 'khac');
+    $tags = TaggingRules::tagsFor('z-tcm001c-fixture', 'khac');
     $write = function (array $traits, array $extra = []) use ($path, $tags) {
         file_put_contents($path, json_encode(array_merge([
             'slug' => 'z-tcm001c-fixture',
@@ -526,7 +528,7 @@ it('TCM-001c: V20 bao do cho suy dien sai ky luat (tran low, guong, chuoi, hon h
         $this->artisan('lacdoi:validate-data')->assertExitCode(1);
 
         // (e) suy diễn chuỗi: gốc z-tcm001c-origin tự nó chỉ có nhãn suy diễn.
-        $tagsOrigin = \App\Taxonomy\TaggingRules::tagsFor('z-tcm001c-origin', 'khac');
+        $tagsOrigin = TaggingRules::tagsFor('z-tcm001c-origin', 'khac');
         file_put_contents($pathOrigin, json_encode([
             'slug' => 'z-tcm001c-origin',
             'name_vi' => 'Fixture goc TCM-001c (xoá sau test)',
@@ -592,7 +594,7 @@ it('TCM-001c: seed -> export giu derived_from va DB khoa confidence cua dong suy
             'derived_from' => 'gao-te',
             'source_ref' => 'Fixture suy dien sai tran TCM-001c',
             'confidence' => 'high',
-        ]))->toThrow(\Illuminate\Database\QueryException::class);
+        ]))->toThrow(QueryException::class);
     } finally {
         IngredientTcmTrait::where('ingredient_id', $host->id)
             ->whereIn('source_ref', ['Fixture suy dien P-DERIVE TCM-001c', 'Fixture suy dien sai tran TCM-001c'])
@@ -603,7 +605,7 @@ it('TCM-001c: seed -> export giu derived_from va DB khoa confidence cua dong suy
 
 it('V20: bao do khi components tro toi slug khong ton tai (tang file)', function () {
     $path = base_path('data/ingredients/z-tcm000-fixture.json');
-    $tags = \App\Taxonomy\TaggingRules::tagsFor('z-tcm000-fixture', 'khac');
+    $tags = TaggingRules::tagsFor('z-tcm000-fixture', 'khac');
     file_put_contents($path, json_encode([
         'slug' => 'z-tcm000-fixture',
         'name_vi' => 'Fixture TCM-000 (xoá sau test)',

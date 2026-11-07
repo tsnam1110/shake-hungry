@@ -8,6 +8,12 @@
 
 - PSR-12, `declare(strict_types=1)` ở mọi file.
 - Laravel Pint để format. Chạy trước khi commit.
+
+> **Đính chính 2026-11-07 — CLEANUP-001:** cấu hình `pint.json` dùng preset
+> Laravel, loại `backups`, cache, storage và dependency khỏi phạm vi format.
+> Chạy `composer format` hoặc `composer format:check`; CI kiểm format PHP.
+> Theo [tài liệu Pint](https://laravel.com/framework/docs/13.x/pint), `--test`
+> trả mã lỗi khi phát hiện vi phạm. Cổng đã kiểm bằng file lỗi chủ động.
 - Kiểu trả về tường minh cho mọi method public.
 - Controller → FormRequest → Action/Service → Resource. **Không validate inline.**
 - Logic nghiệp vụ nằm ở lớp Action/Service, không ở Controller, không ở Model.
@@ -52,6 +58,11 @@ Lý do: để test được, và để **tính lại được** khi bảng nguy�
 - **Bắt buộc có test cho:** engine tính calo, 9 ràng buộc toàn vẹn, engine gợi ý, và lệnh
   `lacdoi:export-data` (tính ổn định của JSON).
 - Test tên tiếng Việt không dấu để dễ đọc: `it('chan ban ghi dinh duong do LLM sinh ra')`.
+
+> **Bổ sung 2026-11-07:** test có thao tác export phải dùng bản sao JSON/CSV
+> trong thư mục tạm, giữ kiểm tra hash từng byte và dọn đúng thư mục của test.
+> Không để test viết lại `data/` của checkout; nguồn JSON trước/sau lượt test
+> phải không đổi. Fixture tạm không được đi vào image, commit hoặc kiểm Pint.
 
 > **Quy tắc về cổng chất lượng:** thêm bất kỳ kiểm tra tự động nào cũng phải kiểm chứng rằng nó **đỏ
 > được** — cố ý chèn một lỗi, xem lệnh có báo không, rồi mới tin. Một cổng luôn xanh là bằng chứng

@@ -4,9 +4,15 @@ declare(strict_types=1);
 
 namespace App\Http\Controllers\PublicWeb;
 
+use App\Combinations\CombinationDisplay;
+use App\Cultural\TcmDisplay;
 use App\Http\Controllers\Controller;
+use App\Models\Dish;
+use App\Models\Fruit;
 use App\Models\Ingredient;
 use App\Models\Tag;
+use App\Nutrition\SourceTier;
+use App\Taxonomy\TagFilter;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 
@@ -45,7 +51,7 @@ class TaxonomyController extends Controller
         if ($category = $request->query('category')) {
             $query->where('category', $category);
         }
-        foreach (\App\Taxonomy\TagFilter::slugsByFacet($request) as $slugs) {
+        foreach (TagFilter::slugsByFacet($request) as $slugs) {
             $query->whereHas('tags', fn ($w) => $w->whereIn('tags.slug', $slugs));
         }
 
@@ -90,7 +96,7 @@ class TaxonomyController extends Controller
         // IMG-001: ảnh chính của nguyên liệu (nếu có).
         $page->getCollection()->transform(function (Ingredient $ing) {
             $ing->setAttribute('image', $ing->primaryImage());
-            $ing->setAttribute('unverified', \App\Nutrition\SourceTier::isSecondary($ing->nutrition_snapshot['fct_source'] ?? null));
+            $ing->setAttribute('unverified', SourceTier::isSecondary($ing->nutrition_snapshot['fct_source'] ?? null));
 
             return $ing;
         });
@@ -103,21 +109,21 @@ class TaxonomyController extends Controller
     {
         $ingredient->load(['tags:id,slug,name', 'aliases:id,ingredient_id,name,note', 'media', 'tcmTraits', 'components:id,slug,name_vi']);
         $ingredient->setAttribute('image', $ingredient->primaryImage());
-        $ingredient->setAttribute('unverified', \App\Nutrition\SourceTier::isSecondary($ingredient->nutrition_snapshot['fct_source'] ?? null));
+        $ingredient->setAttribute('unverified', SourceTier::isSecondary($ingredient->nutrition_snapshot['fct_source'] ?? null));
         // TCM-000: khối "Tính vị:" (mọi dòng nhãn kèm nguồn, kể cả mâu thuẫn)
         // và liên kết thành phần cho nguyên liệu hỗn hợp — trình bày qua
         // TcmDisplay rồi gỡ relation thô để JSON chỉ có một khuôn duy nhất.
-        $ingredient->setAttribute('tcm', \App\Cultural\TcmDisplay::forIngredient($ingredient));
+        $ingredient->setAttribute('tcm', TcmDisplay::forIngredient($ingredient));
         // FOOD-COMBINE-001: lớp thông tin "Kết hợp cần lưu ý" (chỉ hiển thị,
         // không lọc/chấm điểm — xem App\Combinations\CombinationDisplay).
-        $ingredient->setAttribute('combinations', \App\Combinations\CombinationDisplay::forItem($ingredient->slug));
+        $ingredient->setAttribute('combinations', CombinationDisplay::forItem($ingredient->slug));
         $ingredient->setAttribute('component_links', $ingredient->components
             ->map(fn ($c) => ['slug' => $c->slug, 'name_vi' => $c->name_vi])
             ->values()->all());
         $ingredient->unsetRelation('tcmTraits');
         $ingredient->unsetRelation('components');
-        $fruit = \App\Models\Fruit::where('ingredient_id', $ingredient->id)->first(['slug']);
-        $dishes = \App\Models\Dish::query()
+        $fruit = Fruit::where('ingredient_id', $ingredient->id)->first(['slug']);
+        $dishes = Dish::query()
             ->whereHas('dishIngredients', fn ($w) => $w->where('ingredient_id', $ingredient->id))
             ->with([
                 'names' => fn ($q) => $q->where('is_primary', true)->orderByRaw("CASE WHEN locale = 'vi' THEN 0 ELSE 1 END"),
@@ -125,7 +131,7 @@ class TaxonomyController extends Controller
             ])
             ->limit(12)
             ->get()
-            ->map(fn (\App\Models\Dish $d) => [
+            ->map(fn (Dish $d) => [
                 'slug' => $d->slug,
                 'name' => $d->names->first()?->name,
                 'image' => $d->primaryImage(),
