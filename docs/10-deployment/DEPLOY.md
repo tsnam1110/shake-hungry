@@ -52,7 +52,7 @@ docker compose --env-file .env.docker up -d --build
 docker compose --env-file .env.docker exec app php artisan tinker --execute='
 \App\Models\User::create([
     "name" => "Admin",
-    "email" => "admin@your-domain.vn",
+    "email" => "admin@system.com",
     "password" => \Illuminate\Support\Facades\Hash::make("MatKhauAdmin@2026"),
     "role" => "admin"
 ]);'

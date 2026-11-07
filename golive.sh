@@ -64,8 +64,8 @@ if [ ! -f .env.docker ]; then
     done
 
     # Admin Email
-    read -p "3. Email đăng nhập Admin (mặc định: admin@lacdoi.vn): " ADMIN_EMAIL_INPUT
-    ADMIN_EMAIL_INPUT=${ADMIN_EMAIL_INPUT:-"admin@lacdoi.vn"}
+    read -p "3. Email đăng nhập Admin (mặc định: admin@system.com): " ADMIN_EMAIL_INPUT
+    ADMIN_EMAIL_INPUT=${ADMIN_EMAIL_INPUT:-"admin@system.com"}
 
     # Admin Password
     read -sp "4. Mật khẩu Admin (để trống sẽ tự sinh mật khẩu mạnh): " ADMIN_PASS_INPUT

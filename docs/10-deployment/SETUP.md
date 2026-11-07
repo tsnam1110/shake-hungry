@@ -50,7 +50,7 @@ docker compose --env-file .env.docker --profile db up -d --build
 
 Container tự động chạy migration, seed toàn bộ dữ liệu từ `data/` nếu DB mới, và tính sẵn dinh dưỡng.
 - Mở web: `http://localhost:8000`
-- Quản trị: `http://localhost:8000/admin` (tài khoản mặc định: `admin@lacdoi.local` / `LacDoi@2026`)
+- Quản trị: `http://localhost:8000/admin` (tài khoản mặc định: `admin@system.com` / `LacDoi@2026`)
 
 ---
 
@@ -70,7 +70,7 @@ php artisan migrate:fresh --seed
 php artisan lacdoi:validate-data
 
 # 4. Tạo tài khoản admin đầu tiên
-php artisan tinker --execute='\App\Models\User::create(["name"=>"Admin","email"=>"admin@lacdoi.local","password"=>bcrypt("LacDoi@2026"),"role"=>"admin"]);'
+php artisan tinker --execute='\App\Models\User::create(["name"=>"Admin","email"=>"admin@system.com","password"=>bcrypt("LacDoi@2026"),"role"=>"admin"]);'
 
 # 5. Build asset & chạy server
 npm run build
