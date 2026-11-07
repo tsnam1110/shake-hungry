@@ -65,3 +65,10 @@ Kết quả kiểm tra bổ sung:
   seed thật, phục hồi backup hoặc kiểm thử chức năng trên stack production mới.
 - Các bản PHP/nginx hiện có giữ nguyên; các khẳng định CVE trong lịch sử chưa
   được tái thẩm định trong đợt này. Nâng MySQL khỏi 8.0 là công việc riêng.
+
+> **Cap nhat 2026-11-07 - hien thi terminal:** thong bao, cau hoi va loi do
+> deploy.sh/golive.sh/update.sh va docker/entrypoint.sh phat ra dung tieng Viet
+> khong dau (ASCII). APP_NAME van giu "Lắc Đói" de khong doi ten tren website.
+> Khong chuyen doi du lieu data/ hoac thong bao cua thu vien/Artisan.
+> Anh VPS chu du an gui cho thay build app/web va health db/app/web da dat;
+> van can nghiem thu HTTPS, dang nhap va chuc nang. Chua danh dau DONE.

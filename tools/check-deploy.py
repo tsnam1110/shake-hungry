@@ -73,8 +73,9 @@ if [[ "${MOCK_FAIL:-}" == redirect ]]; then printf 302; else printf 200; fi
         result = run([BASH, '-c', prefix + 'export DB_PASSWORD=wrong DB_ROOT_PASSWORD=wrong MOCK_FAIL="' + failure + '"; bash deploy.sh'], cwd=work)
         assert result.returncode == (1 if failure else 0), (result.stdout, result.stderr)
         assert envfile.read_bytes() == original
+        assert result.stdout.isascii() and result.stderr.isascii(), "Terminal output must be ASCII"
         if failure:
-            assert 'Ứng dụng đã sẵn sàng' not in result.stdout
+            assert 'Ung dung da san sang' not in result.stdout
     print('PASS success / build failure / container failure / HTTP failure / redirect rejected / shell env isolation')
     envfile.unlink()
     (work / '.env.docker').write_text('APP_KEY=base64:' + 'B' * 43 + '=\nDB_USERNAME=root\nDB_PASSWORD=old-secret\n', encoding='utf-8')
@@ -85,6 +86,8 @@ if [[ "${MOCK_FAIL:-}" == redirect ]]; then printf 302; else printf 200; fi
     assert 'APP_KEY=base64:' + 'B' * 43 + '=' in generated
     assert 'DB_USERNAME=lakdoi' in generated and 'DB_HOST=db' in generated
     assert 'old-secret' not in generated
+    assert 'APP_NAME="Lắc Đói"' in generated
+    assert result.stdout.isascii() and result.stderr.isascii()
     print('PASS first deploy / preserve APP_KEY / independent credentials')
     envfile.unlink()
     (work / '.env.docker').write_text('APP_KEY=\n', encoding='utf-8')

@@ -159,3 +159,10 @@ không thay cho build/boot MySQL/PHP/nginx thật hoặc nghiệm thu HTTPS trê
 Tham chiếu cơ chế: [Compose environment precedence](https://docs.docker.com/compose/how-tos/environment-variables/envvars-precedence/),
 [Compose up](https://docs.docker.com/reference/cli/docker/compose/up/),
 [MySQL official image](https://hub.docker.com/_/mysql).
+
+> **Cap nhat 2026-11-07 - hien thi terminal:** thong bao, cau hoi va loi do
+> deploy.sh/golive.sh/update.sh va docker/entrypoint.sh phat ra dung tieng Viet
+> khong dau (ASCII). APP_NAME van giu "Lắc Đói" de khong doi ten tren website.
+> Khong chuyen doi du lieu data/ hoac thong bao cua thu vien/Artisan.
+> Anh VPS chu du an gui cho thay build app/web va health db/app/web da dat;
+> van can nghiem thu HTTPS, dang nhap va chuc nang. Chua danh dau DONE.

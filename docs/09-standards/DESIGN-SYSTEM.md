@@ -207,3 +207,37 @@ Các mục dưới đây đã được kiểm chứng trong code ngày 2026-11-0
 3. Không tự đặt màu cho huy hiệu: tra §5. Không có ý nghĩa nào trong §5 thì đề xuất thêm ý nghĩa vào §5 trước khi dùng màu.
 4. Kiểm tra trước khi commit (checklist): token đúng chưa; huy hiệu đúng ngữ nghĩa chưa; thứ tự khối đúng §9 chưa; khối rỗng đã bỏ chưa (trừ dinh dưỡng và dị ứng); trạng thái thiếu viết theo §8 chưa; focus bàn phím còn không; `prefers-reduced-motion` có tắt chuyển động trang trí không; trang đã kiểm tra ở cả mobile (tabbar) và desktop (sidebar) chưa.
 5. Mọi thay đổi hệ thiết kế đều cập nhật tài liệu này và một dòng ROADMAP trong cùng commit (quy tắc QT-7 của dự án).
+
+
+## 12. Form lắc trang chủ (UI-SHAKE-UX-001, 2026-11-07)
+
+> Đính chính: ngoại lệ màu trang lắc ở §10.11 là lịch sử. Form nhập lựa chọn
+> nay dùng hệ màu hiện hành, một accent; phần kết quả/hiệu ứng giữ nguyên.
+
+Kế hoạch trước triển khai theo frontend-design-accent:
+- Base: surface #ffffff và ink #1d1d1f; paper #f5f5f7, sub #6e6e73,
+  line #e3e3e6 làm nền/phân cách trung tính. Inter giữ đồng nhất ứng dụng.
+- Cảm xúc cần thêm: rõ ràng. Accent #0071e3 dùng cho nút Lắc, trạng thái chọn,
+  focus. Không tô nền toàn form, tiêu đề, đồng hồ hoặc icon trang trí bằng accent.
+  Không thêm màu thương hiệu mới. Màu dị ứng/success chỉ theo ngữ nghĩa sẵn có.
+- Typography: tiêu đề form 22px/700, nhãn 14px/600, control 15px/500;
+  chữ hướng dẫn 13px dùng sub, không dùng faint cho thông tin quan trọng.
+- Bố cục: một form phẳng; chọn bữa, chế độ, vùng miền + ăn chay, dị ứng,
+  kcal trong details, rồi một CTA rõ ràng. Desktop hai cột cho vùng/ăn chay;
+  mobile một cột ở 360px, control tối thiểu 44px; đồng hồ là thông tin phụ.
+- Dị ứng luôn hiển thị; details kcal hiển thị tóm tắt giá trị đang áp dụng.
+  Không đổi payload, lọc cứng, lưu hồ sơ hoặc cách tính/gợi ý dinh dưỡng.
+- Bỏ switch/cấp quyền cảm biến khỏi trang chủ, giữ ở hồ sơ; home chỉ đọc lựa
+  chọn đã lưu và xử lý cử chỉ. iOS có thể xin quyền từ lần bấm Lắc trực tiếp.
+- Kiểm tra: build, render mobile/desktop, trạng thái ăn ngoài/tự nấu, bàn phím,
+  dropdown dị ứng, payload lưu lựa chọn, permission granted/denied, ảnh base-only
+  và ảnh có accent. Ghi kết quả đo contrast và giới hạn vào task sau kiểm chứng.
+
+Tự phản biện kế hoạch: không thêm thẻ/hero/gradient hoặc font trang trí vì
+người dùng cần chọn bữa nhanh; bố cục bám đúng công việc chuẩn bị một bữa ăn.
+
+Đã áp dụng 2026-11-07: ld-shake-* trong app.css và shake.blade.php, không đổi
+layout tra cứu/kết quả. Tương phản đo white/accent 4.70:1, white/link hover
+5.57:1, sub/white 5.07:1, ink/white 16.83:1. Browser QA 360px/1440px đạt;
+ảnh base-only giữ nguyên cấu trúc, accent làm rõ lựa chọn và CTA. Chi tiết
+kiểm chứng và giới hạn: [UI-SHAKE-UX-001](../05-tasks/tasks/UI-SHAKE-UX-001.md).

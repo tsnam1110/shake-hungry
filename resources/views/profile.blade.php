@@ -44,7 +44,7 @@
             <span class="grow">Lắc máy để lắc món <span style="display:block;font-weight:400;color:var(--color-faint);font-size:13px;margin-top:1px">Bật lên rồi lắc nhẹ điện thoại — trang tự lắc một món cho bạn, khỏi bấm nút</span></span>
             <button class="ld-switch" type="button" role="switch" aria-checked="true" id="profile-shake-gesture" aria-label="Lắc máy để lắc món"></button>
         </div>
-        <p class="ld-note" style="margin-top:10px">Cài đặt này lưu trên thiết bị của bạn, không cần đăng nhập, và áp dụng ngay ở trang Lắc món. Mặc định luôn bật — tắt đi nếu bạn chỉ muốn bấm nút. Trên iPhone, lần đầu dùng cần cho phép cảm biến chuyển động ở trang Lắc món.</p>
+        <p class="ld-note" style="margin-top:10px">Cài đặt này lưu trên thiết bị của bạn, không cần đăng nhập, và áp dụng ở trang Lắc món. Mặc định luôn bật — tắt đi nếu bạn chỉ muốn bấm nút. Trên iPhone, lần đầu bấm Lắc có thể cần cho phép cảm biến chuyển động.</p>
     </div>
 </section>
 

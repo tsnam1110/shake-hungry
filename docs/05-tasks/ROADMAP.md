@@ -1,5 +1,11 @@
 # Roadmap & Task Tracking — Lắc Đói
 
+> **2026-11-07 — [UI-SHAKE-UX-001](tasks/UI-SHAKE-UX-001.md): ✅ DONE.**
+> Tối ưu form lắc theo skill Design: phân cấp bữa/chế độ/khẩu vị, dị ứng luôn
+> hiển thị, kcal thu gọn có giá trị tóm tắt; bỏ công tắc lắc máy khỏi home,
+> chỉ giữ ở hồ sơ. Build và browser QA desktop/mobile + API fixtures đạt;
+> chưa kiểm MySQL end-to-end hoặc iPhone vật lý. Không đổi engine/API/data.
+
 > ⚠️ **Đính chính 2026-11-07 — DEPLOY-002:** 🔵 IN PROGRESS.
 > Sửa quy trình go-live sau 502: `deploy.sh` + `docker-compose.deploy.yml`
 > dùng MySQL riêng không publish 3306, web giữ 1113; golive/update gọi cùng script.
@@ -8,6 +14,8 @@
 > Rà mở rộng: đồng bộ tài liệu local/prod, sửa link hỏng; chặn cache/backup vào image;
 > bảo toàn data/ biên tập admin bằng bind mount; khóa deploy, cô lập mật khẩu shell,
 > chặn seed dở và kiểm HTTP 200 ba trang. Chờ nghiệm thu runtime VPS.
+> Cap nhat hien thi: thong bao shell/entrypoint dung tieng Viet khong dau;
+> anh VPS xac nhan build va health db/app/web dat, con nghiem thu HTTPS/chuc nang.
 
 **Ngày bắt đầu:** 2026-08-31
 **Cập nhật lần cuối:** 2026-10-31 — ứng dụng hoàn thiện end-to-end; kho dữ liệu **657 món /

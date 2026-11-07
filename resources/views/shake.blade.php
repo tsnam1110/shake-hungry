@@ -23,89 +23,86 @@
         </section>
     @endif
 
-    {{-- ===== Khối Lắc (UI-011): giờ hiện tại + gợi ý bữa, lựa chọn ở trên nút Lắc ===== --}}
-    <section class="ld-card" style="margin-top:20px" aria-label="Lắc món">
-        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px">
+    {{-- UI-SHAKE-UX-001: form ưu tiên bữa ăn, dị ứng luôn hiển thị. --}}
+    <section class="ld-card ld-shake-form" aria-labelledby="shake-form-title">
+        <header class="ld-shake-head">
+            <div class="ld-shake-heading">
+                <span id="shake-icon" class="ld-shake-symbol" aria-hidden="true">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 12h16a8 8 0 0 1-16 0Z"/><path d="M9 8c1-1.6 4.5-1.8 6-.5"/><path d="M15.5 5.5c1.2-1 2.7-1.3 4-1"/></svg>
+                </span>
+                <h2 id="shake-form-title">Chọn bữa, để Lắc Đói gợi ý</h2>
+            </div>
+            <span class="ld-shake-time ld-tnum" id="clock" aria-label="Giờ hiện tại">--:--</span>
+        </header>
+
+        <fieldset class="ld-shake-field">
+            <legend>Bạn muốn ăn bữa nào?</legend>
+            <div class="ld-seg" id="slots" role="group" aria-label="Chọn bữa"></div>
+            <p id="slot-hint" class="ld-shake-help">Gợi ý bữa theo giờ hiện tại.</p>
+        </fieldset>
+
+        <fieldset class="ld-shake-field">
+            <legend>Ăn ngoài hay tự nấu?</legend>
+            <div class="ld-shake-modes" id="shake-mode" role="group" aria-label="Chọn chế độ lắc">
+                <button type="button" data-mode="eat_out" aria-pressed="true"><strong>Ăn ngoài</strong><span>Gợi ý một món</span></button>
+                <button type="button" data-mode="home" aria-pressed="false"><strong>Tự nấu</strong><span>Lên một mâm cơm</span></button>
+            </div>
+            <div id="tray-count-row" class="ld-shake-tray" hidden>
+                <p class="ld-field-label" id="tray-count-label">Số món trong mâm <span class="ld-shake-optional">(không tính cơm)</span></p>
+                <div class="ld-seg" id="tray-count" role="group" aria-labelledby="tray-count-label">
+                    <button type="button" data-count="1" aria-pressed="false">1 món</button>
+                    <button type="button" data-count="2" aria-pressed="false">2 món</button>
+                    <button type="button" data-count="3" aria-pressed="true">3 món</button>
+                    <button type="button" data-count="4" aria-pressed="false">4 món</button>
+                </div>
+                <p class="ld-shake-help">Mâm 3 món gồm món chính, canh và rau.</p>
+                <div class="ld-shake-toggle">
+                    <span><label for="binh-dan">Bữa cơm bình dân</label><small>Món dễ nấu, nguyên liệu quen thuộc.</small></span>
+                    <button class="ld-switch" type="button" role="switch" aria-checked="false" id="binh-dan" aria-label="Bữa cơm bình dân"></button>
+                </div>
+            </div>
+        </fieldset>
+
+        <div class="ld-shake-preferences">
             <div>
-                <div class="ld-clock ld-tnum" id="clock">--:--</div>
-                <p id="slot-hint" style="color:var(--color-sub);font-size:14.5px;margin:5px 0 0">Đang xem giờ để gợi ý bữa phù hợp…</p>
+                <label class="ld-field-label" for="region">Vùng miền</label>
+                <select id="region" class="ld-select"><option value="">Mọi vùng miền</option></select>
             </div>
-            <span id="shake-icon" class="ld-tile green" style="width:52px;height:52px;border-radius:14px">
-                <svg width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 12h16a8 8 0 0 1-16 0Z"/><path d="M9 8c1-1.6 4.5-1.8 6-.5"/><path d="M15.5 5.5c1.2-1 2.7-1.3 4-1"/></svg>
-            </span>
-        </div>
-
-        <div class="ld-seg" id="slots" role="group" aria-label="Chọn bữa" style="margin-top:16px"></div>
-
-            <div style="padding:16px 2px 0">
-                <p class="ld-field-label" style="margin:0">Chế độ lắc</p>
-                <div class="ld-seg" id="shake-mode" role="group" aria-label="Chọn chế độ lắc" style="margin-top:8px">
-                    <button type="button" data-mode="eat_out" aria-pressed="true">Ăn ngoài · 1 món</button>
-                    <button type="button" data-mode="home" aria-pressed="false">Tự nấu · Mâm cơm</button>
-                </div>
-                <div id="tray-count-row" hidden style="margin-top:12px">
-                    <p class="ld-field-label" style="margin:0">Số món trong mâm <span style="font-weight:400;color:var(--color-faint)">— không tính cơm; mâm chuẩn là 3 món: món chính, canh và món rau</span></p>
-                    <div class="ld-seg" id="tray-count" role="group" aria-label="Chọn số món trong mâm" style="margin-top:8px">
-                        <button type="button" data-count="1" aria-pressed="false">1 món</button>
-                        <button type="button" data-count="2" aria-pressed="false">2 món</button>
-                        <button type="button" data-count="3" aria-pressed="true">3 món</button>
-                        <button type="button" data-count="4" aria-pressed="false">4 món</button>
-                    </div>
-                    <div class="ld-row" style="padding:12px 2px 0">
-                        <span class="grow">Bữa cơm bình dân <span style="display:block;font-weight:400;color:var(--color-faint);font-size:13px;margin-top:1px">Chỉ món dễ nấu, nguyên liệu phổ biến dễ kiếm — như bữa cơm nhà hằng ngày</span></span>
-                        <button class="ld-switch" type="button" role="switch" aria-checked="false" id="binh-dan" aria-label="Bữa cơm bình dân"></button>
-                    </div>
-                </div>
-            </div>
-
-        <div style="margin-top:16px;border-top:1px solid var(--color-line);padding-top:12px">
-            <p class="ld-field-label" style="margin:0">Tuỳ chọn chung <span style="font-weight:400;color:var(--color-faint)">— áp dụng cho cả Ăn ngoài và Tự nấu</span></p>
-            <div class="ld-row" style="padding-left:2px;padding-right:2px">
-                <span class="grow">Ăn chay</span>
+            <div class="ld-shake-toggle ld-shake-veg">
+                <span><label for="vegetarian">Ăn chay</label><small>Ưu tiên món chay cho bữa này.</small></span>
                 <button class="ld-switch" type="button" role="switch" aria-checked="false" id="vegetarian" aria-label="Ăn chay"></button>
             </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3" style="padding:12px 2px 4px">
-                <div>
-                    <label class="ld-field-label" for="region">Vùng miền</label>
-                    <select id="region" class="ld-select"><option value="">Mọi vùng miền</option></select>
-                </div>
-                <div>
-                    <label class="ld-field-label" for="target_kcal">Kcal mục tiêu mỗi bữa (tuỳ chọn)</label>
-                    <input id="target_kcal" type="number" min="100" max="2000" placeholder="Ví dụ: 600" class="ld-input">
-                    <p class="ld-note" id="target-hint" style="margin-top:6px"></p>
-                </div>
+        </div>
+
+        <div class="ld-shake-allergens">
+            <div class="ld-shake-label-row">
+                <label class="ld-field-label" for="shake-allergen-search">Dị ứng / không ăn được</label>
+                <a href="/ho-so">Hồ sơ của bạn</a>
             </div>
-            <div style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-top:14px">
-                <p class="ld-field-label" style="margin:0">Không ăn được</p>
-                <a href="/ho-so" style="font-size:13.5px;color:var(--color-link);text-decoration:none;white-space:nowrap">Cấu hình trong hồ sơ</a>
-            </div>
-            {{-- Lọc dị ứng kiểu select2 (dùng chung CSS .ld-multi với trang
-                 Nguyên liệu, JS thuần): chọn nhiều, tìm kiếm không dấu, tag
-                 đã chọn có nút ×. Chỉ đổi giao diện, không đổi dữ liệu. --}}
-            <div class="ld-multi" id="shake-allergen-multi" style="margin-top:8px">
-                <div class="ld-multi-box" id="shake-allergen-box" role="combobox" aria-expanded="false" aria-haspopup="listbox" aria-controls="shake-allergen-drop">
+            <div class="ld-multi" id="shake-allergen-multi">
+                <div class="ld-multi-box" id="shake-allergen-box" role="combobox" aria-label="Dị ứng hoặc thành phần không ăn được" aria-expanded="false" aria-haspopup="listbox" aria-controls="shake-allergen-drop">
                     <span class="ld-multi-tags" id="shake-allergen-tags"></span>
-                    <input id="shake-allergen-search" type="text" placeholder="Chọn dị ứng…" aria-label="Tìm và chọn dị ứng" autocomplete="off">
+                    <input id="shake-allergen-search" type="text" placeholder="Tìm và chọn thành phần cần tránh" aria-label="Tìm và chọn dị ứng" aria-describedby="shake-allergen-help" autocomplete="off">
                     <span class="ld-multi-caret" aria-hidden="true">▾</span>
                 </div>
-                <div class="ld-multi-drop" id="shake-allergen-drop" role="listbox" aria-multiselectable="true" hidden></div>
+                <div class="ld-multi-drop" id="shake-allergen-drop" role="listbox" aria-label="Các nhóm dị ứng" aria-multiselectable="true" hidden></div>
             </div>
-            <p class="ld-note" style="margin-top:8px">Món chứa các thành phần này không bao giờ xuất hiện khi lắc — lọc cứng, không bị nới lỏng kể cả khi các lọc khác được nới.</p>
-            <p class="ld-note" id="pref-note" hidden style="margin-top:12px">Các lựa chọn Chế độ lắc, Số món trong mâm, Bữa cơm bình dân, Ăn chay, Vùng miền, Kcal mục tiêu và Không ăn được được lấy từ hồ sơ của bạn và tự lưu lại khi bạn thay đổi. <span id="pref-saved" style="color:var(--color-mint-dark);font-weight:600"></span></p>
+            <p class="ld-shake-help" id="shake-allergen-help">Luôn loại món có thành phần đã chọn theo dữ liệu hiện có. Nếu dị ứng, hãy kiểm tra lại thành phần trước khi ăn.</p>
         </div>
 
-        <button id="shake-btn" class="ld-btn ld-btn-primary" style="width:100%;margin-top:18px;padding:16px 24px;font-size:18px">
-            Lắc một món
-        </button>
+        <details class="ld-shake-extra" id="shake-extra">
+            <summary><span>Kcal mục tiêu <span class="ld-shake-optional">(tuỳ chọn)</span></span><span id="target-summary">Chưa đặt</span></summary>
+            <div class="ld-shake-extra-body">
+                <label class="ld-field-label" for="target_kcal">Kcal mục tiêu mỗi bữa</label>
+                <input id="target_kcal" type="number" min="100" max="2000" inputmode="numeric" placeholder="Ví dụ: 600" class="ld-input" aria-describedby="target-hint">
+                <p class="ld-shake-help" id="target-hint">Bỏ trống nếu bạn không cần đặt mục tiêu.</p>
+            </div>
+        </details>
+        <p class="ld-shake-help" id="pref-note" hidden>Tuỳ chọn được tự lưu vào hồ sơ. <span id="pref-saved" role="status"></span></p>
 
-        <div class="ld-row" style="padding:12px 2px 0">
-            <span class="grow">Lắc máy để lắc món <span style="display:block;font-weight:400;color:var(--color-faint);font-size:13px;margin-top:1px">Bật lên rồi lắc nhẹ điện thoại — trang tự lắc một món cho bạn, khỏi bấm nút</span></span>
-            <button class="ld-switch" type="button" role="switch" aria-checked="false" id="shake-gesture" aria-label="Lắc máy để lắc món"></button>
-        </div>
-        <p id="gesture-perm-note" hidden style="text-align:center;margin:10px 0 0"><button type="button" id="gesture-perm-btn" class="ld-btn ld-btn-gray" style="padding:9px 16px;font-size:14px">Cho phép cảm biến chuyển động (iPhone)</button></p>
-
-        <div id="result" aria-live="polite">
-            <p style="text-align:center;color:var(--color-faint);margin:18px 0 2px">Chọn bữa và khẩu vị ở trên, rồi bấm <b>Lắc một món</b>.</p>
+        <button type="button" id="shake-btn" class="ld-btn ld-btn-primary ld-shake-submit">Lắc một món</button>
+        <div id="result" class="ld-shake-result" aria-live="polite" aria-atomic="true">
+            <p class="ld-shake-empty">Món gợi ý sẽ hiện ở đây. Bạn có thể lắc lại để đổi món.</p>
         </div>
     </section>
 
@@ -207,7 +204,7 @@ function setSw(id, on) { document.getElementById(id).setAttribute('aria-checked'
         document.getElementById('clock').textContent =
             String(t.getHours()).padStart(2, '0') + ':' + String(t.getMinutes()).padStart(2, '0');
         document.getElementById('slot-hint').textContent =
-            `Theo giờ hiện tại, gợi ý bữa ${slotName[suggestedSlot(t.getHours())]} — bạn vẫn đổi sang bữa khác được.`;
+            `Gợi ý bữa ${slotName[suggestedSlot(t.getHours())]} theo giờ hiện tại. Bạn có thể chọn bữa khác.`;
     }
     tick(); setInterval(tick, 15000);
 })();
@@ -228,10 +225,15 @@ async function savePref(partial) {
     } catch { /* lưu tuỳ chọn là phụ — lỗi thì bỏ qua */ }
 }
 const slotRatio = { sang: 0.25, trua: 0.35, chieu: 0.15, toi: 0.25, 'an-vat': 0.10 };
+function syncTargetSummary() {
+    const value = document.getElementById('target_kcal').value;
+    document.getElementById('target-summary').textContent = value ? `${value} kcal` : 'Chưa đặt';
+}
 function applySuggestion() {
     if (!myTdee) return;
     const mid = (myTdee.tdee_min + myTdee.tdee_max) / 2;
     document.getElementById('target_kcal').value = Math.round(mid * (slotRatio[slot] ?? 0.3) / 10) * 10;
+    syncTargetSummary();
     document.getElementById('target-hint').textContent =
         `Gợi ý theo nhu cầu ngày ${myTdee.tdee_min.toLocaleString('vi-VN')}–${myTdee.tdee_max.toLocaleString('vi-VN')} kcal của bạn — chưa lưu vào hồ sơ, bạn sửa thoải mái.`;
 }
@@ -257,6 +259,7 @@ function applyPrefs() {
     const ex = new Set(myProfile.excluded_ingredients || []);
     ALLERGENS.forEach(([, slugs], i) => { if (slugs.some(s => ex.has(s))) selectedShakePresets.add(i); });
     syncShakeAllergens(); renderShakeAllergenTags(); renderShakeAllergenOptions();
+    syncTargetSummary();
 }
 
 fetch('/api/me').then(r => r.json()).then(async ({ user }) => {
@@ -271,6 +274,7 @@ fetch('/api/me').then(r => r.json()).then(async ({ user }) => {
     }
 });
 
+document.getElementById('target_kcal').addEventListener('input', syncTargetSummary);
 const slotsEl = document.getElementById('slots');
 function renderSlots() {
     slotsEl.innerHTML = SLOTS.map(([v, l]) =>
@@ -521,46 +525,27 @@ function staggerTray(box) {
     requestAnimationFrame(() => requestAnimationFrame(() => rows.forEach(r => r.classList.add('in'))));
 }
 
-// SHAKE-DEVICE-001: mặc định luôn bật — chỉ tắt khi người dùng chủ động tắt
-// (localStorage = '0'). Công tắc này dùng chung khoá với trang Hồ sơ, không cần
-// đăng nhập; trang Hồ sơ chỉ đổi lựa chọn, còn việc xin quyền cảm biến (iPhone)
-// diễn ra ở trang này vì quyền phải xin từ một thao tác của người dùng.
+// UI-SHAKE-UX-001: cài đặt chỉ ở Hồ sơ; trang chủ đọc cùng lựa chọn.
 let gestureOn = localStorage.getItem('lacdoi_shake_gesture') !== '0';
-if (gestureOn) setSw('shake-gesture', true);
-document.getElementById('shake-gesture').addEventListener('click', async () => {
-    if (swOn('shake-gesture')) {
-        setSw('shake-gesture', false); gestureOn = false;
-        localStorage.setItem('lacdoi_shake_gesture', '0');
-        return;
+window.addEventListener('storage', (event) => {
+    if (event.key === 'lacdoi_shake_gesture') {
+        gestureOn = event.newValue !== '0';
+        lastAccMag = null;
     }
-    let ok = true;
-    if (typeof DeviceMotionEvent !== 'undefined' && typeof DeviceMotionEvent.requestPermission === 'function') {
-        try { ok = (await DeviceMotionEvent.requestPermission()) === 'granted'; } catch { ok = false; }
-    }
-    if (!ok) { ldToast('Trình duyệt chưa cấp quyền cảm biến chuyển động'); return; }
-    setSw('shake-gesture', true); gestureOn = true;
-    localStorage.setItem('lacdoi_shake_gesture', '1');
-    ldToast('Đã bật: lắc nhẹ máy để lắc món');
 });
-// iPhone yêu cầu xin quyền cảm biến bằng một thao tác chạm, nên "mặc định bật"
-// một mình chưa đủ trên iOS: hiện nút xin quyền khi trình duyệt có API đó và
-// tính năng đang bật. Android/Chrome không có API này nên không hiện nút.
-if (gestureOn && typeof DeviceMotionEvent !== 'undefined' && typeof DeviceMotionEvent.requestPermission === 'function') {
-    const permNote = document.getElementById('gesture-perm-note');
-    if (permNote) {
-        permNote.hidden = false;
-        document.getElementById('gesture-perm-btn').addEventListener('click', async () => {
-            try {
-                if ((await DeviceMotionEvent.requestPermission()) === 'granted') {
-                    permNote.hidden = true;
-                    ldToast('Đã cho phép: lắc nhẹ máy để lắc món');
-                } else {
-                    ldToast('Trình duyệt chưa cấp quyền cảm biến chuyển động');
-                }
-            } catch { ldToast('Trình duyệt chưa cấp quyền cảm biến chuyển động'); }
-        });
+window.addEventListener('pageshow', () => {
+    gestureOn = localStorage.getItem('lacdoi_shake_gesture') !== '0';
+});
+// iOS cần một lần chạm trực tiếp trên chính trang nhận sự kiện cảm biến.
+// Xin quyền từ nút Lắc, không thêm công tắc/cài đặt vào trang chủ.
+let motionPermissionRequested = false;
+document.getElementById('shake-btn').addEventListener('click', (event) => {
+    if (!event.isTrusted || !gestureOn || motionPermissionRequested) return;
+    if (typeof DeviceMotionEvent !== 'undefined' && typeof DeviceMotionEvent.requestPermission === 'function') {
+        motionPermissionRequested = true;
+        try { Promise.resolve(DeviceMotionEvent.requestPermission()).catch(() => {}); } catch { /* vẫn lắc bằng nút */ }
     }
-}
+});
 let lastAccMag = null, lastGestureAt = 0;
 window.addEventListener('devicemotion', (e) => {
     if (!gestureOn || document.hidden) return;
