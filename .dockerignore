@@ -4,6 +4,7 @@
 .env.*
 !.env.docker.example
 !.env.production.example
+!.env.host-db.example
 node_modules
 vendor
 public/build
@@ -23,3 +24,13 @@ bootstrap/cache/services.php
 .phpunit.result.cache
 workspace
 *.bundle
+# Tài liệu và test không cần trong image production (giảm ~5 MB context build).
+docs/
+tests/
+*.md
+!data/**/*.md
+# IDE / editor
+.idea/
+.vscode/
+*.swp
+*.swo

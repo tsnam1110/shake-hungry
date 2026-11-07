@@ -1,10 +1,25 @@
-# Lắc Đói — docker compose bản dev/test nhanh (DOCKER-001)
-# Chạy:  cp .env.docker.example .env.docker && docker compose up -d --build
-# Mở:    http://localhost:8000  (admin: /admin — tài khoản tạo theo ADMIN_* trong .env.docker)
-# Bản production: xem docker-compose.prod.yml + .env.production.example.
+# Lắc Đói — Docker Compose
+# Một file duy nhất cho mọi môi trường: dev, staging, production, VPS.
+# Mọi cấu hình nằm trong .env.docker — xem .env.docker.example.
+#
+# ── MySQL trên host (Laragon / apt / Navicat cổng 3306 bình thường) ──
+#   cp .env.docker.example .env.docker    # sửa giá trị theo môi trường
+#   docker compose --env-file .env.docker up -d --build
+#
+# ── MySQL trong Docker container (máy chưa cài MySQL) ──
+#   docker compose --env-file .env.docker --profile db up -d --build
+#
+# ── Lệnh tắt (đặt 1 lần mỗi phiên shell) ──
+#   DC="docker compose --env-file .env.docker"
+#   $DC up -d --build                      # MySQL host
+#   $DC --profile db up -d --build         # MySQL container
+#   $DC ps / $DC logs -f app / $DC down
 
 services:
+  # ── MySQL container (tuỳ chọn) ──
+  # Chỉ chạy khi thêm --profile db. Không dùng khi host đã có MySQL.
   db:
+    profiles: ["db"]
     image: mysql:8.0
     command:
       - --character-set-server=utf8mb4
@@ -16,8 +31,6 @@ services:
       MYSQL_DATABASE: shake_hungry
       MYSQL_USER: ${DB_USERNAME:-lakdoi}
       MYSQL_PASSWORD: ${DB_PASSWORD:-lacdoi-secret}
-    ports:
-      - "3306:3306"   # chỉ bản dev: tiện dùng công cụ ngoài; production sẽ tắt (xem prod)
     volumes:
       - db_data:/var/lib/mysql
       - ./docker/mysql-init.sql:/docker-entrypoint-initdb.d/10-init.sql:ro
@@ -27,19 +40,26 @@ services:
       timeout: 3s
       retries: 24
       start_period: 20s
+    restart: unless-stopped
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
 
+  # ── App (PHP-FPM + Laravel) ──
   app:
     build:
       context: .
       target: app
     env_file:
       - .env.docker
-    environment:
-      DB_HOST: db
-      DB_PORT: "3306"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     depends_on:
       db:
         condition: service_healthy
+        required: false
     volumes:
       - app_storage:/var/www/html/storage/app
       - app_logs:/var/www/html/storage/logs
@@ -49,15 +69,28 @@ services:
       timeout: 3s
       retries: 12
       start_period: 60s
+    restart: unless-stopped
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
 
+  # ── Web (nginx) ──
   web:
     build:
       context: .
       target: web
     ports:
-      - "8000:80"
+      - "${WEB_PORT:-8000}:80"
     depends_on:
       - app
+    restart: unless-stopped
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
 
 volumes:
   db_data:

@@ -43,6 +43,7 @@ class AuthController extends Controller
      */
     public function quickLogin(Request $request): JsonResponse
     {
+        abort_if(app()->environment('production'), 403, 'Đăng nhập nhanh bị vô hiệu hóa trên môi trường production.');
         abort_unless(config('admin.quick_login') === true, 403, 'Đăng nhập nhanh đang tắt.');
         $admin = \App\Models\User::where('role', 'admin')->orderBy('id')->first();
         abort_if($admin === null, 422, 'Chưa có tài khoản admin nào trong hệ thống.');
@@ -58,6 +59,10 @@ class AuthController extends Controller
     /** Cho trang đăng nhập biết có hiện nút đăng nhập nhanh hay không. */
     public function loginOptions(): JsonResponse
     {
+        if (app()->environment('production')) {
+            return response()->json(['quick_login' => false]);
+        }
+
         return response()->json(['quick_login' => config('admin.quick_login') === true]);
     }
 

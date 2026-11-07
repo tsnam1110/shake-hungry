@@ -98,12 +98,14 @@ Route::prefix('api')->group(function () {
     Route::get('/week-plans/example', [\App\Http\Controllers\PublicWeb\WeekPlanController::class, 'example']);
     // WEEK-001, Giai đoạn 4, Task 2: xem tuần qua mã, không cần đăng nhập.
     Route::get('/shares/{code}', [\App\Http\Controllers\PublicWeb\WeekPlanShareController::class, 'showPublic']);
-    Route::post('/register', [\App\Http\Controllers\PublicWeb\UserAuthController::class, 'register']);
-    Route::post('/login', [\App\Http\Controllers\PublicWeb\UserAuthController::class, 'login']);
+    Route::middleware('throttle:auth')->group(function () {
+        Route::post('/register', [\App\Http\Controllers\PublicWeb\UserAuthController::class, 'register']);
+        Route::post('/login', [\App\Http\Controllers\PublicWeb\UserAuthController::class, 'login']);
+        Route::post('/forgot-password', [\App\Http\Controllers\PublicWeb\UserAuthController::class, 'forgot']);
+        Route::post('/reset-password', [\App\Http\Controllers\PublicWeb\UserAuthController::class, 'reset']);
+    });
     Route::post('/logout', [\App\Http\Controllers\PublicWeb\UserAuthController::class, 'logout']);
     Route::get('/me', [\App\Http\Controllers\PublicWeb\UserAuthController::class, 'me']);
-    Route::post('/forgot-password', [\App\Http\Controllers\PublicWeb\UserAuthController::class, 'forgot']);
-    Route::post('/reset-password', [\App\Http\Controllers\PublicWeb\UserAuthController::class, 'reset']);
     Route::middleware('auth')->group(function () {
         Route::get('/profile', [\App\Http\Controllers\PublicWeb\ProfileController::class, 'show']);
         Route::put('/profile', [\App\Http\Controllers\PublicWeb\ProfileController::class, 'update']);
@@ -157,15 +159,19 @@ Route::prefix('api')->group(function () {
     Route::get('/vegetables/{vegetable:slug}', [\App\Http\Controllers\PublicWeb\VegetableController::class, 'show']);
     Route::get('/drinks', [\App\Http\Controllers\PublicWeb\DrinkController::class, 'index']);
     Route::get('/drinks/{drink:slug}', [\App\Http\Controllers\PublicWeb\DrinkController::class, 'show']);
-    Route::post('/shake', [\App\Http\Controllers\PublicWeb\CatalogController::class, 'shake']);
-    Route::post('/shake/tray-swap', [\App\Http\Controllers\PublicWeb\CatalogController::class, 'traySwapRandom']);
-    Route::get('/shake/tray-candidates', [\App\Http\Controllers\PublicWeb\CatalogController::class, 'traySwapCandidates']);
+    Route::middleware('throttle:shake')->group(function () {
+        Route::post('/shake', [\App\Http\Controllers\PublicWeb\CatalogController::class, 'shake']);
+        Route::post('/shake/tray-swap', [\App\Http\Controllers\PublicWeb\CatalogController::class, 'traySwapRandom']);
+        Route::get('/shake/tray-candidates', [\App\Http\Controllers\PublicWeb\CatalogController::class, 'traySwapCandidates']);
+    });
 });
 
 // --- Khu vực quản trị (ADM-001): SPA React + antd tại /admin, API nội bộ dùng phiên web ---
-Route::post('/admin/api/login', [AuthController::class, 'login']);
+Route::middleware('throttle:auth')->group(function () {
+    Route::post('/admin/api/login', [AuthController::class, 'login']);
+    Route::post('/admin/api/quick-login', [AuthController::class, 'quickLogin']);
+});
 Route::get('/admin/api/login-options', [AuthController::class, 'loginOptions']);
-Route::post('/admin/api/quick-login', [AuthController::class, 'quickLogin']);
 
 Route::middleware(['auth', 'admin'])->prefix('admin/api')->group(function () {
     Route::get('/me', [AuthController::class, 'me']);

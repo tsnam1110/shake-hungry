@@ -24,6 +24,7 @@
 # File nguồn USDA gốc ~1,6 GB — tải lại được theo checksum trong data/reference/MANIFEST.json (SETUP-002)
 /storage/imports/
 /vendor
+*.bundle
 _ide_helper.php
 Homestead.json
 Homestead.yaml
