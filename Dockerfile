@@ -23,12 +23,12 @@ RUN npm run build
 FROM php:8.3.36-fpm-bookworm AS app
 WORKDIR /var/www/html
 
-# Thư viện hệ thống cho các extension (ảnh gd, intl, zip).
+# Thư viện hệ thống cho các extension (ảnh gd hỗ trợ jpeg, freetype, webp; intl; zip).
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
-        libicu-dev libonig-dev libzip-dev libpng-dev libjpeg62-turbo-dev libfreetype6-dev \
+        libicu-dev libonig-dev libzip-dev libpng-dev libjpeg62-turbo-dev libfreetype6-dev libwebp-dev \
         unzip \
-    && docker-php-ext-configure gd --with-jpeg --with-freetype \
+    && docker-php-ext-configure gd --with-jpeg --with-freetype --with-webp \
     && docker-php-ext-install -j"$(nproc)" pdo_mysql mbstring intl gd exif bcmath zip pcntl \
     && docker-php-ext-enable opcache \
     && apt-get clean \

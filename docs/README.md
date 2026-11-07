@@ -1,6 +1,6 @@
 # Tài liệu dự án Lắc Đói
 
-**Cập nhật lần cuối:** 2026-11-02 — thêm [GOLIVE-DOCKER.md](10-deployment/GOLIVE-DOCKER.md) (hướng dẫn go-live production bằng Docker); trước đó cùng ngày thêm [SETUP-DEV.md](10-deployment/SETUP-DEV.md) (hướng dẫn cài môi trường dev trên máy khác)
+**Cập nhật lần cuối:** 2026-11-07 — tinh gọn và chuẩn hoá bộ tài liệu triển khai: [SETUP.md](10-deployment/SETUP.md) (cài đặt & môi trường dev) và [DEPLOY.md](10-deployment/DEPLOY.md) (triển khai production/VPS bằng Docker)
 
 Thư mục này là **nguồn sự thật về thiết kế** của dự án. Code phải khớp tài liệu; khi lệch nhau thì
 một trong hai là sai và phải sửa ngay, không để tồn tại song song.
@@ -69,9 +69,9 @@ Khi dự án đổi bản chất (ví dụ mở API công khai ở v2), hãy th�
 | [09-standards/RESEARCH-PROTOCOL.md](09-standards/RESEARCH-PROTOCOL.md) | **Quy tắc tra cứu dữ liệu**: chính sách nền, thứ tự nguồn, endpoint, bẫy kỹ thuật, cách tra món và công thức |
 | [09-standards/EDITORIAL-GUIDE.md](09-standards/EDITORIAL-GUIDE.md) | Chuẩn biên soạn dữ liệu: đặt tên món, phân biệt biến thể, phân vùng miền, các bẫy đã gặp |
 | [09-standards/DESIGN-SYSTEM.md](09-standards/DESIGN-SYSTEM.md) | **Hệ thiết kế v2 (UI-004)**: token màu, ngữ nghĩa huy hiệu, component `ld-*`, bố cục trang chi tiết và thẻ danh sách chuẩn (món ăn, nguyên liệu, hoa quả làm chuẩn), danh sách lệch chuẩn cần sửa |
-| [10-deployment/DEPLOYMENT.md](10-deployment/DEPLOYMENT.md) | Dựng lại toàn bộ dự án trên máy mới (bản 2026-08-31; giữ checklist bàn giao + production) |
-| [10-deployment/SETUP-DEV.md](10-deployment/SETUP-DEV.md) | **Cài môi trường dev trên máy khác — bản hiện hành**: điều kiện, MySQL 8, seed, tài khoản admin, chạy, kiểm thử, troubleshooting |
-| [10-deployment/GOLIVE-DOCKER.md](10-deployment/GOLIVE-DOCKER.md) | **Go-live production bằng Docker — bản hiện hành**: kiến trúc prod, chuẩn bị VPS, cấu hình `.env.production`, HTTPS/domain, nghiệm thu, vận hành, backup/rollback, checklist bảo mật |
+| [10-deployment/DEPLOYMENT.md](10-deployment/DEPLOYMENT.md) | Tổng quan quản lý môi trường & bản đồ tài liệu triển khai |
+| [10-deployment/SETUP.md](10-deployment/SETUP.md) | **Cài đặt & môi trường dev — bản hiện hành**: thiết lập hệ thống, MySQL 8 chung cổng 3306, chạy Docker hoặc Native, kiểm thử |
+| [10-deployment/DEPLOY.md](10-deployment/DEPLOY.md) | **Triển khai Production / VPS bằng Docker — bản hiện hành**: kiến trúc prod, cấu hình `.env.docker`, HTTPS qua Caddy, nghiệm thu, backup và vận hành |
 
 ---
 

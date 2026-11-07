@@ -21,7 +21,7 @@ fi
 # của tiến trình để php-fpm (tiến trình con) thừa hưởng đúng khoá đã sinh.
 if [ -z "${APP_KEY}" ]; then
     if [ "${APP_ENV}" = "production" ]; then
-        echo "LỖI: APP_KEY chưa được đặt cho production — khai APP_KEY trong .env.production rồi khởi động lại." >&2
+        echo "LỖI: APP_KEY chưa được đặt cho production — khai APP_KEY trong .env.docker rồi khởi động lại." >&2
         exit 1
     fi
     if ! grep -q '^APP_KEY=base64:' .env; then

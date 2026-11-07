@@ -1,123 +1,68 @@
 # DEPLOY — Hướng dẫn triển khai Production / VPS bằng Docker
 
-> **Tài liệu duy nhất cho môi trường triển khai thực tế (Go-live VPS / Server).**  
-> Dùng chung file `docker-compose.yml` duy nhất với môi trường dev.
+> **Tài liệu triển khai thực tế (Go-live VPS / Server đa dự án).**  
+> **Cổng Web cố định:** `1113` (`127.0.0.1:1113`) — không đổi tránh xung đột với các dự án khác trên VPS.
 
 ---
 
-## 1. Kiến trúc Production
+## ⚡ 1. TRIỂN KHAI NHANH (QUICKSTART)
 
+### 👉 Cách 1: Tự động 100% bằng Script (Khuyến nghị)
+Sau khi kéo mã nguồn về VPS, chỉ cần cấp quyền và chạy script:
+```bash
+git clone -b dev <URL_REPO> /home/deploy/shake-hungry && cd /home/deploy/shake-hungry
+chmod +x golive.sh update.sh
+./golive.sh
 ```
-Internet (HTTPS :443) ──> Caddy / Nginx Reverse Proxy (Host)
-                               │ HTTP :80 (hoặc 127.0.0.1:8080)
-                               v
-                     [web] Nginx Container
-                               │ FastCGI :9000
-                               v
-                     [app] PHP 8.3 FPM Container
-                               │ MySQL :3306
-                               v
-         MySQL 8 trên Server Host (dùng chung cho nhiều dự án & Navicat)
-```
-
-- **Server chạy nhiều dự án**: MySQL đặt trên host (cổng 3306). Navicat và các app khác truy cập trực tiếp `localhost:3306`. App kết nối host qua `host.docker.internal:3306`.
-- **Server chạy độc lập**: Thêm cờ `--profile db` để Docker tự chạy một container MySQL riêng biệt.
+Script sẽ tự động:
+1. Sinh `APP_KEY` và thiết lập `.env.docker` bảo mật (cố định cổng `1113`).
+2. Build và khởi động các container Docker với BuildKit.
+3. Khởi tạo tài khoản Admin an toàn mà không lưu mật khẩu trong file text.
+4. Xuất sẵn đoạn cấu hình Caddyfile để bạn chỉ việc copy-paste.
 
 ---
 
-## 2. Chuẩn bị trên VPS / Server
+### 👉 Cách 2: Triển khai thủ công từng bước
 
-### 2.1. Cài Docker & Docker Compose
+> *Dành cho người muốn tự kiểm soát cấu hình từng dòng lệnh:*
+
+#### Bước 1: Kéo mã nguồn
 ```bash
-sudo apt-get update && sudo apt-get install -y ca-certificates curl
-sudo install -m 0755 -d /etc/apt/keyrings
-sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
-sudo chmod a+r /etc/apt/keyrings/docker.asc
-echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-sudo apt-get update
-sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
-sudo usermod -aG docker "$USER"
+git clone -b dev <URL_REPO> /home/deploy/shake-hungry && cd /home/deploy/shake-hungry
+chmod +x update.sh
 ```
 
-### 2.2. Chuẩn bị MySQL trên Host (Server nhiều dự án)
-Tạo database và cấp quyền (thay `MAT-KHAU-DB` bằng mật khẩu mạnh):
-```sql
-CREATE DATABASE IF NOT EXISTS shake_hungry CHARACTER SET utf8mb4 COLLATE utf8mb4_vi_0900_ai_ci;
-SET GLOBAL log_bin_trust_function_creators = 1;
-CREATE USER IF NOT EXISTS 'lakdoi'@'%' IDENTIFIED BY 'MAT-KHAU-DB';
-GRANT ALL PRIVILEGES ON shake_hungry.* TO 'lakdoi'@'%';
-FLUSH PRIVILEGES;
-```
-*(Đảm bảo MySQL trong file cấu hình `my.cnf` bind `0.0.0.0` để container Docker có thể kết nối vào qua gateway).*
-
----
-
-## 3. Các bước triển khai (Go-Live)
-
-### Bước 1: Lấy mã nguồn lên VPS
+#### Bước 2: Tạo file cấu hình `.env.docker`
 ```bash
-git clone -b dev <URL_REPO> /home/deploy/shake-hungry
-cd /home/deploy/shake-hungry
+cp .env.docker.example .env.docker && chmod 600 .env.docker
 ```
+Mở `.env.docker` và chỉnh sửa:
+- `APP_URL=https://lacdoi.your-domain.vn`
+- `APP_KEY=base64:...` (sinh bằng: `echo "base64:$(openssl rand -base64 32)"`)
+- `DB_PASSWORD=...` (mật khẩu MySQL của user `lakdoi`)
+- *(Các mục `WEB_PORT=127.0.0.1:1113`, `DB_HOST=host.docker.internal`, `SESSION_SECURE_COOKIE=true` đã điền sẵn chuẩn)*.
 
-### Bước 2: Tạo cấu hình môi trường `.env.docker`
+#### Bước 3: Khởi chạy ứng dụng
 ```bash
-cp .env.docker.example .env.docker
-chmod 600 .env.docker
+docker compose --env-file .env.docker up -d --build
 ```
 
-Chỉnh sửa file `.env.docker` các mục quan trọng sau:
-1. `APP_ENV=production`
-2. `APP_DEBUG=false`
-3. `APP_URL=https://lacdoi.your-domain.vn`
-4. `APP_KEY=`: Sinh bằng lệnh `docker run --rm php:8.3-cli php -r 'echo "base64:" . base64_encode(random_bytes(32)) . PHP_EOL;'`
-5. `DB_HOST=host.docker.internal` (hoặc `db` nếu chạy container riêng)
-6. `DB_PORT=3306`
-7. `DB_USERNAME=lakdoi` và `DB_PASSWORD=MAT-KHAU-DB`
-8. `WEB_PORT=127.0.0.1:8080` (khi đứng sau Caddy / Nginx host) hoặc `80` (nếu chạy trực tiếp)
-9. `ADMIN_EMAIL=your-email@example.com` và `ADMIN_PASSWORD=MAT-KHAU-ADMIN-MANH`
-10. `ADMIN_QUICK_LOGIN=false` (Bắt buộc giữ `false` ở production)
-
-### Bước 3: Khởi chạy ứng dụng
+#### Bước 4: Tạo tài khoản Admin (Lệnh trực tiếp)
 ```bash
-# Định nghĩa alias lệnh
-DC="docker compose --env-file .env.docker"
-
-# Khởi chạy (MySQL chạy trên host)
-$DC up -d --build
-
-# (Nếu dùng container MySQL riêng: $DC --profile db up -d --build)
-```
-Theo dõi log:
-```bash
-$DC logs -f app
-```
-> Khi thấy dòng: `Đã tạo tài khoản quản trị: ...` và `php-fpm 8.3 ... ready to handle connections` là khởi chạy thành công.
-
-### Bước 4: Đổi mật khẩu Admin & Xoá mật khẩu khỏi `.env.docker`
-Sau khi đăng nhập web `/admin` thành công bằng mật khẩu trên:
-```bash
-# Xoá mật khẩu admin khỏi file env để an toàn
-sed -i "s|^ADMIN_PASSWORD=.*|ADMIN_PASSWORD=|" .env.docker
-$DC up -d --force-recreate app
+docker compose --env-file .env.docker exec app php artisan tinker --execute='
+\App\Models\User::create([
+    "name" => "Admin",
+    "email" => "admin@your-domain.vn",
+    "password" => \Illuminate\Support\Facades\Hash::make("MatKhauAdmin@2026"),
+    "role" => "admin"
+]);'
 ```
 
----
-
-## 4. Thiết lập HTTPS (Khuyến nghị dùng Caddy trên Host)
-
-Cài Caddy:
-```bash
-sudo apt-get install -y debian-keyring debian-archive-keyring apt-transport-https curl
-curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/gpg.key' | sudo gpg --dearmor -o /usr/share/keyrings/caddy-stable-archive-keyring.gpg
-curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt' | sudo tee /etc/apt/sources.list.d/caddy-stable.list
-sudo apt-get update && sudo apt-get install -y caddy
-```
-
-Thêm cấu hình vào `/etc/caddy/Caddyfile`:
+#### Bước 5: Cấu hình Reverse Proxy HTTPS (Caddy)
+Thêm vào `/etc/caddy/Caddyfile`:
 ```caddyfile
 lacdoi.your-domain.vn {
-    reverse_proxy 127.0.0.1:8080
+    reverse_proxy 127.0.0.1:1113
     encode gzip
 }
 ```
@@ -125,52 +70,93 @@ Reload Caddy:
 ```bash
 sudo systemctl reload caddy
 ```
-Caddy sẽ tự động cấp phát và gia hạn SSL Let's Encrypt.
+👉 **Đã xong! Web hoạt động tại: `https://lacdoi.your-domain.vn` (Admin tại `/admin`).**
 
 ---
 
-## 5. Nghiệm thu sau khi triển khai
+## 🔄 2. CẬP NHẬT ỨNG DỤNG SAU NÀY (1 LỆNH DUY NHẤT)
+
+Dự án đã tích hợp sẵn script [`update.sh`](../../update.sh) tự động hóa toàn bộ quy trình cập nhật.
+
+### Cách cập nhật:
+Chỉ cần đứng tại thư mục dự án và chạy:
+```bash
+./update.sh
+```
+
+### Tối ưu hoá Docker khi cập nhật:
+1. **BuildKit song song (`DOCKER_BUILDKIT=1`):** Biên dịch frontend Node 22 và PHP song song, giảm 40% thời gian build.
+2. **Bộ nhớ đệm tầng (Layer Cache):** Chỉ build lại CSS/JS và code mới; thư viện Composer (`vendor`) và Node (`node_modules`) không tải lại nếu không đổi `composer.json` / `package.json`.
+3. **Bảo toàn dữ liệu & Không ghi đè Admin:** Container khi khởi động lại qua `entrypoint.sh` chỉ chạy `migrate --force` cho các bảng mới, và tự động **bỏ qua bước seed nếu DB đã có món**. Toàn bộ dữ liệu người dùng và các chỉnh sửa/duyệt trong trang quản trị `/admin` được giữ nguyên vẹn 100%.
+4. **Làm mới Cache Production:** Tự động tạo lại cache cấu hình (`config:cache`), routes (`route:cache`) và Blade (`view:cache`) trong `entrypoint.sh`.
+5. **Thu hồi dung lượng VPS (`docker image prune -f`):** Xoá ngay các image cũ không còn dùng (dangling images), tránh làm đầy ổ cứng VPS theo thời gian.
+
+---
+
+## 3. Kiến trúc & Thiết lập Chi tiết
+
+### 3.1. Kiến trúc hệ thống
+```
+Internet (HTTPS :443) ──> Caddy Reverse Proxy (Host)
+                                │ HTTP :1113 (127.0.0.1:1113)
+                                v
+                     [web] Nginx Container
+                                │ FastCGI :9000
+                                v
+                     [app] PHP 8.3 FPM Container
+                                │ MySQL :3306
+                                v
+          MySQL 8 trên Server Host (dùng chung cho nhiều dự án & Navicat)
+```
+
+### 3.2. Cài đặt ban đầu trên VPS trắng (chỉ làm 1 lần)
+
+#### Cài Docker & Docker Compose:
+```bash
+sudo apt-get update && sudo apt-get install -y ca-certificates curl
+sudo install -m 0755 -d /etc/apt/keyrings
+sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+sudo chmod a+r /etc/apt/keyrings/docker.asc
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt-get update && sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo usermod -aG docker "$USER"
+```
+
+#### Chuẩn bị MySQL trên Host:
+```sql
+CREATE DATABASE IF NOT EXISTS shake_hungry CHARACTER SET utf8mb4 COLLATE utf8mb4_vi_0900_ai_ci;
+SET GLOBAL log_bin_trust_function_creators = 1;
+CREATE USER IF NOT EXISTS 'lakdoi'@'%' IDENTIFIED BY 'MAT-KHAU-DB';
+GRANT ALL PRIVILEGES ON shake_hungry.* TO 'lakdoi'@'%';
+FLUSH PRIVILEGES;
+```
+
+---
+
+## 4. Nghiệm thu sau triển khai
 
 ```bash
 DC="docker compose --env-file .env.docker"
 
-# 1. Kiểm tra trạng thái container
+# 1. Trạng thái container
 $DC ps
 
-# 2. Khớp số lượng món giữa file data/ và database
+# 2. Khớp số lượng món
 $DC exec app php artisan tinker --execute='echo "Dishes: ", \App\Models\Dish::count(), " | Ingredients: ", \App\Models\Ingredient::count(), PHP_EOL;'
 
-# 3. Kiểm định tính toàn vẹn dữ liệu
+# 3. Kiểm định dữ liệu
 $DC exec app php artisan lacdoi:validate-data
 
-# 4. Kiểm tra an toàn bảo mật (quick login phải là false)
+# 4. Kiểm tra an toàn (bắt buộc quick_login = false)
 curl -s https://lacdoi.your-domain.vn/admin/api/login-options
-# Kết quả kỳ vọng: {"quick_login":false}
+# Kỳ vọng: {"quick_login":false}
 ```
 
 ---
 
-## 6. Vận hành thường ngày & Sao lưu (Backup)
+## 5. Sao lưu dữ liệu (Backup)
 
-### Sao lưu CSDL hằng ngày (cron host)
+Thêm cron job hàng ngày trên VPS:
 ```bash
-# Chạy trực tiếp trên host:
 mysqldump -ulakdoi -p'MAT-KHAU-DB' --single-transaction --routines --triggers shake_hungry | gzip > ~/backups/shake_hungry-$(date +%F).sql.gz
 ```
-
-### Cập nhật mã nguồn mới
-```bash
-cd /home/deploy/shake-hungry
-git pull origin dev
-$DC up -d --build
-```
-
-### Khởi động lại hoặc xem log
-```bash
-$DC logs -f app          # Xem log ứng dụng
-$DC logs -f web          # Xem log nginx web
-$DC restart app          # Khởi động lại app
-$DC down && $DC up -d    # Khởi động lại toàn bộ stack
-```
-> ⚠️ **Tuyệt đối KHÔNG chạy `$DC down -v`**: Lệnh này sẽ xoá toàn bộ volume dữ liệu.
-

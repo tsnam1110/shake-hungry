@@ -82,7 +82,7 @@ services:
       context: .
       target: web
     ports:
-      - "${WEB_PORT:-8000}:80"
+      - "${WEB_PORT:-1113}:80"
     depends_on:
       - app
     restart: unless-stopped

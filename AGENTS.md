@@ -44,6 +44,12 @@ Rau theo mùa và Thư viện nước uống. Trạng thái chi tiết: [CLAUDE.
 > Ngoài 9 quy tắc trên, mười nguyên tắc thực thi của chủ dự án (2026-11-03) nằm ở file riêng:
 > [docs/09-standards/EXECUTION-PRINCIPLES.md](docs/09-standards/EXECUTION-PRINCIPLES.md) — bắt buộc đọc cùng CLAUDE.md.
 
+## Quy ước cố định về hạ tầng (VPS đa dự án)
+
+- **Cổng Web Production cố định: 1113 (127.0.0.1:1113)**: Server VPS chạy chung nhiều dự án, cổng 1113 được phân bổ cố định cho Lắc Đói. Tuyệt đối KHÔNG tự ý đổi thành 80, 8080 hay 8000.
+- **Reverse Proxy Host**: Caddy / Nginx trên host luôn reverse_proxy về 127.0.0.1:1113.
+- **MySQL Host**: Cổng 3306 dùng chung trên host qua host.docker.internal:3306.
+
 ## Bốn việc dễ làm sai nhất
 
 - Làm nút Lắc trước khi có dữ liệu → dự án chết vì DB rỗng.

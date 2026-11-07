@@ -30,6 +30,11 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > (trùng tên chính, xem ROADMAP), kho còn **648 món**; validate **3.368 bản ghi — 0 lỗi,
 > 22 cảnh báo** (giảm đúng 1 cảnh báo V7 của cặp đã gộp).
 
+> ## ⚠️ Đính chính 2026-11-07 — Chuẩn hoá Docker & tinh gọn tài liệu Go-Live (SETUP.md / DEPLOY.md)
+>
+> 1. **Docker Production:** bổ sung thư viện `libwebp-dev` và cờ cấu hình `--with-webp` vào `Dockerfile` (cho phép GD sinh thumbnail WebP on-demand theo IMG-001 thay vì trả ảnh gốc); bổ sung `server_tokens off`, `fastcgi_read_timeout 120s` và bộ security headers (`X-Frame-Options`, `X-Content-Type-Options`, `Referrer-Policy`) vào `docker/nginx.conf`; cấu hình tường minh `DB_COLLATION=utf8mb4_vi_0900_ai_ci` cho kết nối MySQL trong `.env.docker.example`; chặn `/admin` và `/api/` trong `robots.txt`.
+> 2. **Tài liệu triển khai:** đồng bộ 2 tài liệu duy nhất `docs/10-deployment/SETUP.md` (dev & local) và `docs/10-deployment/DEPLOY.md` (triển khai VPS/production bằng Docker, Caddy SSL, backup); dọn sạch toàn bộ liên kết cũ tới các file tài liệu cũ đã xoá (`GOLIVE-DOCKER.md`, `SETUP-DEV.md`).
+
 > ## ⚠️ Đính chính 2026-08-31 — đoạn mô tả trạng thái cũ đã SAI
 >
 > Bản đầu của file này ghi *"repo này CHỈ CÓ TÀI LIỆU. Chưa có code, chưa có database, chưa có dữ
