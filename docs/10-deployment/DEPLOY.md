@@ -38,7 +38,7 @@ cp .env.docker.example .env.docker && chmod 600 .env.docker
 ```
 Mở `.env.docker` và chỉnh sửa:
 - `APP_URL=https://lacdoi.your-domain.vn`
-- `APP_KEY=base64:...` (sinh bằng: `echo "base64:$(openssl rand -base64 32)"`)
+- `APP_KEY=base64:...` (sinh bằng: `php artisan key:generate --show` hoặc `echo "base64:$(openssl rand -base64 32)"`)
 - `DB_PASSWORD=...` (mật khẩu MySQL của user `lakdoi`)
 - *(Các mục `WEB_PORT=127.0.0.1:1113`, `DB_HOST=host.docker.internal`, `SESSION_SECURE_COOKIE=true` đã điền sẵn chuẩn)*.
 

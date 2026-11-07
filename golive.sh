@@ -36,11 +36,16 @@ if [ ! -f .env.docker ]; then
     echo -e "${YELLOW}[!] Chưa tìm thấy .env.docker. Bắt đầu thiết lập cấu hình tự động...${NC}"
     cp .env.docker.example .env.docker
 
-    # Tự động sinh APP_KEY
-    if command -v openssl &> /dev/null; then
-        APP_KEY="base64:$(openssl rand -base64 32)"
-    else
-        APP_KEY="base64:$(head -c 32 /dev/urandom | base64)"
+    # Tự động sinh APP_KEY (ưu tiên dùng lệnh của Laravel nếu host có PHP, fallback sang openssl)
+    if command -v php &> /dev/null && [ -f artisan ]; then
+        APP_KEY=$(php artisan key:generate --show 2>/dev/null || true)
+    fi
+    if [ -z "$APP_KEY" ]; then
+        if command -v openssl &> /dev/null; then
+            APP_KEY="base64:$(openssl rand -base64 32)"
+        else
+            APP_KEY="base64:$(head -c 32 /dev/urandom | base64)"
+        fi
     fi
 
     echo ""
