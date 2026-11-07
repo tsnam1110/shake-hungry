@@ -1,5 +1,7 @@
 # GOLIVE-DOC — Tài liệu go-live production bằng Docker
 
+> ⚠️ **Đính chính 2026-11-07:** nội dung/lệnh bên dưới là lịch sử kiểm chứng, không phải runbook hiện hành. Production: [DEPLOY](../../10-deployment/DEPLOY.md), `bash deploy.sh` + `docker-compose.deploy.yml` + `.env.production`. Local: [SETUP](../../10-deployment/SETUP.md). Các compose prod/host overlay và file env mẫu cũ đã bỏ.
+
 **Trạng thái:** ✅ ĐÓNG 2026-11-02 — tài liệu đã viết xong, đối chiếu file thật, bản sao
 bàn giao nằm ở thư mục goal `files/`.
 **Phạm vi:** chỉ viết tài liệu. **Chưa deploy** — chủ dự án tự go-live theo tài liệu;
@@ -7,7 +9,7 @@ quyết định go-live (A7) thuộc chủ dự án, không thuộc đợt này.
 
 ## 1. Bàn giao
 
-- **Bản gốc:** [docs/10-deployment/GOLIVE-DOCKER.md](../../10-deployment/GOLIVE-DOCKER.md)
+- **Bản gốc:** [docs/10-deployment/GOLIVE-DOCKER.md](../../10-deployment/DEPLOY.md)
   (875 dòng) — kiến trúc prod, chuẩn bị VPS, đưa code bằng bundle/clone, `.env.production`,
   khởi chạy + hành vi entrypoint, HTTPS cho `lacdoi.tsnam.name.vn` (Caddy khuyến nghị /
   nginx + certbot), checklist nghiệm thu bằng lệnh thật, vận hành, cập nhật/rollback,

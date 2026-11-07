@@ -71,7 +71,7 @@ Khi dự án đổi bản chất (ví dụ mở API công khai ở v2), hãy th�
 | [09-standards/DESIGN-SYSTEM.md](09-standards/DESIGN-SYSTEM.md) | **Hệ thiết kế v2 (UI-004)**: token màu, ngữ nghĩa huy hiệu, component `ld-*`, bố cục trang chi tiết và thẻ danh sách chuẩn (món ăn, nguyên liệu, hoa quả làm chuẩn), danh sách lệch chuẩn cần sửa |
 | [10-deployment/DEPLOYMENT.md](10-deployment/DEPLOYMENT.md) | Tổng quan quản lý môi trường & bản đồ tài liệu triển khai |
 | [10-deployment/SETUP.md](10-deployment/SETUP.md) | **Cài đặt & môi trường dev — bản hiện hành**: thiết lập hệ thống, MySQL 8 chung cổng 3306, chạy Docker hoặc Native, kiểm thử |
-| [10-deployment/DEPLOY.md](10-deployment/DEPLOY.md) | **Triển khai Production / VPS bằng Docker — bản hiện hành**: kiến trúc prod, cấu hình `.env.docker`, HTTPS qua Caddy, nghiệm thu, backup và vận hành |
+| [10-deployment/DEPLOY.md](10-deployment/DEPLOY.md) | **Triển khai Production / VPS bằng Docker — bản hiện hành**: MySQL riêng, `deploy.sh` + `.env.production`, HTTPS qua Nginx/Caddy, nghiệm thu, backup và vận hành |
 
 ---
 

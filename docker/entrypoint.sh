@@ -21,7 +21,7 @@ fi
 # của tiến trình để php-fpm (tiến trình con) thừa hưởng đúng khoá đã sinh.
 if [ -z "${APP_KEY}" ]; then
     if [ "${APP_ENV}" = "production" ]; then
-        echo "LỖI: APP_KEY chưa được đặt cho production — khai APP_KEY trong .env.docker rồi khởi động lại." >&2
+        echo "LỖI: APP_KEY chưa được đặt cho production — khai trong .env.production rồi tạo lại container." >&2
         exit 1
     fi
     if ! grep -q '^APP_KEY=base64:' .env; then
@@ -37,25 +37,47 @@ php -r '
 $h=getenv("DB_HOST")?:"db"; $p=(int)(getenv("DB_PORT")?:"3306");
 $u=getenv("DB_USERNAME")?:"root"; $pw=getenv("DB_PASSWORD")?:"";
 $deadline=time()+120;
+$lastCode="unknown";
 while (time()<$deadline) {
-    try { new PDO("mysql:host=$h;port=$p", $u, $pw); exit(0); }
-    catch (Throwable $e) { sleep(2); }
+    try { new PDO("mysql:host=$h;port=$p", $u, $pw, [PDO::ATTR_TIMEOUT=>5]); exit(0); }
+    catch (PDOException $e) {
+        $lastCode=$e->errorInfo[1] ?? $e->getCode();
+        if (in_array((int)$lastCode, [1045, 1044], true)) {
+            fwrite(STDERR, "MySQL từ chối đăng nhập/quyền truy cập (mã $lastCode). Kiểm tra DB_USERNAME/DB_PASSWORD và quyền của tài khoản.\n");
+            exit(1);
+        }
+        sleep(2);
+    }
 }
-fwrite(STDERR, "Không kết nối được cơ sở dữ liệu sau 120 giây.\n"); exit(1);
+fwrite(STDERR, "Không kết nối được cơ sở dữ liệu sau 120 giây (mã $lastCode).\n"); exit(1);
 '
 
+# Cache cấu hình cũ không được che biến môi trường mới khi restart container.
+php artisan config:clear
 php artisan migrate --force
 
 # Seed từ data/ — CHỈ khi chưa có món nào (DB mới). Khởi động lại không seed đè.
-DISH_COUNT=$(php artisan tinker --execute='echo \App\Models\Dish::count();' 2>/dev/null | tail -n 1)
+SEED_PENDING=storage/app/.initial-seed-in-progress
+if [ -f "$SEED_PENDING" ]; then
+    echo "LỖI: lần seed đầu bị ngắt. Kiểm tra log và khôi phục seed theo DEPLOY.md; không tự bỏ qua hoặc reset database." >&2
+    exit 1
+fi
+DISH_COUNT=$(php -r '
+require "vendor/autoload.php";
+$app=require "bootstrap/app.php";
+$app->make(\Illuminate\Contracts\Console\Kernel::class)->bootstrap();
+echo \App\Models\Dish::count();
+')
 case "$DISH_COUNT" in
-    ''|*[!0-9]*) echo "Không đọc được số món (bỏ qua seed): '$DISH_COUNT'";;
+    ''|*[!0-9]*) echo "LỖI: không đọc được số món; dừng khởi động." >&2; exit 1;;
     0) echo "Cơ sở dữ liệu trống — đang seed từ data/…"
+       touch "$SEED_PENDING"
        php artisan db:seed --force
        # Seed chỉ tính sẵn dinh dưỡng cho một phần món; recompute để lần
        # khởi động đầu tiên đạt độ phủ đầy đủ như bản dev (DOCKER-001).
        echo "Đang tính dinh dưỡng cho toàn bộ món…"
-       php artisan lacdoi:recompute-calories --with-ingredients;;
+       php artisan lacdoi:recompute-calories --with-ingredients
+       rm -f "$SEED_PENDING";;
     *) echo "Đã có $DISH_COUNT món — bỏ qua seed.";;
 esac
 
@@ -88,5 +110,10 @@ if [ "${APP_ENV}" = "production" ]; then
 fi
 
 chown -R www-data:www-data storage bootstrap/cache 2>/dev/null || true
+# Các module này biên tập file trực tiếp, không ghi thay vào DB.
+# Production bind data/ về repo để thay container không mất sửa đổi (QT-3).
+for data_dir in data/combinations data/vegetables data/drinks; do
+    chown -R www-data:www-data "$data_dir"
+done
 
 exec "$@"

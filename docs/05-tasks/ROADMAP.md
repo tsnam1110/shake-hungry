@@ -1,5 +1,14 @@
 # Roadmap & Task Tracking — Lắc Đói
 
+> ⚠️ **Đính chính 2026-11-07 — DEPLOY-002:** 🔵 IN PROGRESS.
+> Sửa quy trình go-live sau 502: `deploy.sh` + `docker-compose.deploy.yml`
+> dùng MySQL riêng không publish 3306, web giữ 1113; golive/update gọi cùng script.
+> Kiểm offline hoàn tất; chờ build/boot và nghiệm thu VPS vì Docker Engine local
+> chưa chạy. Chi tiết: [DEPLOY-002](tasks/DEPLOY-002.md).
+> Rà mở rộng: đồng bộ tài liệu local/prod, sửa link hỏng; chặn cache/backup vào image;
+> bảo toàn data/ biên tập admin bằng bind mount; khóa deploy, cô lập mật khẩu shell,
+> chặn seed dở và kiểm HTTP 200 ba trang. Chờ nghiệm thu runtime VPS.
+
 **Ngày bắt đầu:** 2026-08-31
 **Cập nhật lần cuối:** 2026-10-31 — ứng dụng hoàn thiện end-to-end; kho dữ liệu **657 món /
 406 nguyên liệu** (300 công thức đầu đã duyệt; 361 công thức chờ duyệt = 200 DISH-004 + 160 DISH-005
@@ -573,9 +582,9 @@ thứ khác phụ thuộc vào.
 | [LEGAL-002](./tasks/LEGAL-002.md) | Chốt giấy phép mã nguồn & dữ liệu của dự án | Quyết định | ✅ | — | 2026-10-31 |
 | [SETUP-001](./tasks/SETUP-001.md) | Khởi tạo Laravel + MySQL | Backend | ✅ | — | 2026-08-31 |
 | [SETUP-002](./tasks/SETUP-002.md) | Dựng cấu trúc `data/` + `.gitignore` + MANIFEST | Backend | ✅ | SETUP-001 | 2026-08-31 |
-| [DEV-SETUP-DOC](./tasks/DEV-SETUP-DOC.md) | Tài liệu setup môi trường dev trên máy khác ([10-deployment/SETUP-DEV.md](../10-deployment/SETUP-DEV.md)) | Tài liệu | ✅ | SETUP-004 | 2026-11-02 |
+| [DEV-SETUP-DOC](./tasks/DEV-SETUP-DOC.md) | Tài liệu setup môi trường dev trên máy khác ([10-deployment/SETUP-DEV.md](../10-deployment/SETUP.md)) | Tài liệu | ✅ | SETUP-004 | 2026-11-02 |
 | [DOCKER-001](./tasks/DOCKER-001.md) | Đóng gói Docker chuẩn bị go-live (Dockerfile đa tầng FPM+nginx, compose dev/prod, entrypoint migrate + seed có điều kiện) + tự kiểm thử toàn bộ | Backend | ✅ | SETUP-004, DEV-SETUP-DOC | 2026-11-02 |
-| [GOLIVE-DOC](./tasks/GOLIVE-DOC.md) | Tài liệu go-live production bằng Docker hoàn chỉnh để chủ dự án tự golive ([10-deployment/GOLIVE-DOCKER.md](../10-deployment/GOLIVE-DOCKER.md)) | Tài liệu | ✅ | DOCKER-001 | 2026-11-02 |
+| [GOLIVE-DOC](./tasks/GOLIVE-DOC.md) | Tài liệu go-live production bằng Docker hoàn chỉnh để chủ dự án tự golive ([10-deployment/GOLIVE-DOCKER.md](../10-deployment/DEPLOY.md)) | Tài liệu | ✅ | DOCKER-001 | 2026-11-02 |
 
 **DoD GĐ0:** `php artisan --version` chạy được; kết nối được MySQL 8 với collation `utf8mb4_vi_0900_ai_ci`;
 thư mục `data/` đúng cấu trúc; câu hỏi Q1/Q2 ở [PRD §9](../01-prd/PRD.md) đã có câu trả lời.

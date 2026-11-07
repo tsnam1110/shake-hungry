@@ -39,10 +39,16 @@ Vì vậy thứ tự làm việc là: **nguyên liệu → engine calo → công
 Bắt đầu ở [docs/README.md](docs/README.md). Nếu bạn là AI agent hoặc dev mới tiếp nhận dự án, đọc
 [CLAUDE.md](CLAUDE.md) trước tiên — đó là file quy tắc bắt buộc.
 
+## Chạy dự án
+
+Local/dev: [SETUP](docs/10-deployment/SETUP.md). VPS: [DEPLOY](docs/10-deployment/DEPLOY.md), chạy `bash deploy.sh`; MySQL riêng, web `127.0.0.1:1113`.
+
 ## Stack
 
 Laravel 13 · MySQL 8 · Ant Design (antd) 6 + React 19 cho trang quản trị (GĐ2) ·
-Livewire · Pest · Laragon trên Windows.
+Blade + JavaScript thuần · Pest · Laragon trên Windows.
+
+> ⚠️ **Đính chính 2026-11-07:** dòng stack cũ ghi Livewire là sai; dự án dùng Blade + JavaScript thuần (UI-010).
 
 ## Ghi công nguồn dữ liệu
 

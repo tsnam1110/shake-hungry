@@ -1,10 +1,10 @@
+# syntax=docker/dockerfile:1
 # Lắc Đói — Dockerfile đa tầng (DOCKER-001)
 # Tầng assets: Node 22 biên dịch frontend (Vite: trang công cộng + admin antd/React).
 # Tầng app:    PHP 8.3 FPM + mã nguồn + vendor (composer --no-dev) + asset đã biên dịch.
 # Tầng web:    nginx phục vụ public/ và chuyển PHP sang app:9000.
 # Chọn FPM + nginx (thay vì Apache mod_php): tách tiến trình tĩnh/động rõ ràng,
 # nginx nhẹ khi phục vụ ảnh/tài nguyên tĩnh, và khớp cách vận hành production phổ biến.
-# syntax=docker/dockerfile:1
 
 # ---------- Tầng 1: build frontend ----------
 FROM node:22-bookworm-slim AS assets
@@ -42,6 +42,7 @@ RUN composer install --no-dev --optimize-autoloader --no-interaction --no-script
 
 # Mã nguồn (gồm data/ — nguồn sự thật của dữ liệu, QT-3).
 COPY . .
+RUN rm -rf /var/www/html/tests
 COPY --from=assets /app/public/build ./public/build
 
 # Chuẩn hoá quyền đọc cho www-data (php-fpm) và nginx bất kể umask của máy
@@ -52,7 +53,10 @@ RUN chmod -R a+rX /var/www/html
 COPY docker/php.ini /usr/local/etc/php/conf.d/zz-lacdoi.ini
 COPY docker/php-fpm.conf /usr/local/etc/php-fpm.d/zz-lacdoi.conf
 COPY docker/entrypoint.sh /usr/local/bin/entrypoint.sh
-RUN chmod +x /usr/local/bin/entrypoint.sh \
+RUN sed -i 's/\r$//' /usr/local/bin/entrypoint.sh \
+    && chmod +x /usr/local/bin/entrypoint.sh \
+    && mkdir -p storage/app/private storage/app/public \
+       storage/framework/cache/data storage/framework/sessions storage/framework/views storage/logs \
     && chown -R www-data:www-data storage bootstrap/cache
 
 ENTRYPOINT ["entrypoint.sh"]
@@ -60,6 +64,7 @@ CMD ["php-fpm"]
 
 # ---------- Tầng 3: kiểm thử (chỉ dùng khi chạy Pest trong container) ----------
 FROM app AS test
+COPY tests ./tests
 RUN composer install --optimize-autoloader --no-interaction --no-scripts
 # .env rỗng để phpdotenv không cảnh báo thiếu file khi chạy test (biến thật
 # truyền qua môi trường tiến trình); tầng này không dùng để phục vụ web.

@@ -78,8 +78,7 @@ Các nhu cầu đặc thù của dự án và cách MySQL đáp ứng:
 
 **Điều kiện vận hành:** database phải tạo với collation ở trên; server bật
 `log_bin_trust_function_creators` (khi có binary logging) để tạo được trigger.
-Quy trình: [DEPLOYMENT §2](../10-deployment/DEPLOYMENT.md). Tài khoản database dùng
-mặc định `root` (không mật khẩu, kiểu Laragon), không tạo user riêng.
+> ⚠️ **Đính chính 2026-11-07:** `root` không mật khẩu chỉ dành Laragon local. Production dùng MySQL riêng `db:3306`, database `shake_hungry`, user `lakdoi`, mật khẩu sinh riêng, không publish DB. Xem [DEPLOY](../10-deployment/DEPLOY.md); không đổi schema hay engine.
 
 **Giới hạn đã biết:** MySQL không có deferred constraint trigger (kiểm lúc COMMIT)
 nên R6/R8 kiểm tại thời điểm UPDATE trên `dishes` và DELETE/UPDATE trên hai bảng

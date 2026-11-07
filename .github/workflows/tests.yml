@@ -7,6 +7,13 @@ on:
   pull_request:
 
 jobs:
+  deployment-config:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Kiểm tra cấu hình và các nhánh lỗi deploy (không khởi động container)
+        run: python3 tools/check-deploy.py
+
   pest:
     runs-on: ubuntu-latest
 

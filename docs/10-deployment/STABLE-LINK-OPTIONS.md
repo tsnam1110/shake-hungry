@@ -4,6 +4,8 @@
 > để chủ dự án quyết. Link Pinggy miễn phí hiện tại chỉ dùng để kiểm chứng local,
 > **không phải link ổn định** (xem §1).
 
+> ⚠️ **Đính chính 2026-11-07:** đây là phân tích phương án tại ngày 2026-11-03. Chủ dự án hiện đang triển khai VPS; hướng dẫn duy nhất hiện hành là [DEPLOY](DEPLOY.md), chạy `bash deploy.sh`. Các tham chiếu GOLIVE-DOCKER/§ cũ bên dưới mang tính lịch sử, không dùng làm lệnh thao tác.
+
 ## 1. Vì sao Pinggy miễn phí không phải đáp án
 
 - Hết hạn sau 60 phút; khởi động lại là đổi URL ngẫu nhiên mới.

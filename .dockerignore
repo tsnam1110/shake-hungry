@@ -15,18 +15,23 @@ storage/framework/cache/data/*
 storage/framework/sessions/*
 storage/framework/views/*
 storage/imports
+storage/app
+.deploy.lock
 # Cache Laravel sinh khi chạy dev — bản sạch từ git không có hai file này;
 # nếu lẫn vào image, app production (vendor --no-dev) crash ngay khi boot
 # vì cache trỏ tới package chỉ có ở dev (laravel/pail). (DOCKER-001)
-bootstrap/cache/packages.php
-bootstrap/cache/services.php
+bootstrap/cache/*.php
+backups/
+*.sql
+*.sql.gz
+*.dump
 .phpunit.cache
 .phpunit.result.cache
 workspace
 *.bundle
-# Tài liệu và test không cần trong image production (giảm ~5 MB context build).
+# Tài liệu không cần trong image production. tests/ phải ở build context
+# để tầng test COPY lại; tầng app loại tests/ sau COPY mã nguồn.
 docs/
-tests/
 *.md
 !data/**/*.md
 # IDE / editor

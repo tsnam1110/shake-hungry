@@ -5,9 +5,11 @@
 
 ---
 
+> ⚠️ **Đính chính 2026-11-07:** phần Docker dưới đây chỉ dành local/dev. Cổng theo file mẫu là 1113; cổng 8000 chỉ dành native `artisan serve`. Production xem [DEPLOY.md](DEPLOY.md).
+
 ## 1. Yêu cầu hệ thống
 
-- **PHP**: ≥ 8.3 (cần extensions: `pdo_mysql`, `mbstring`, `intl`, `gd`, `zip`, `bcmath`, `pcntl`).
+- **PHP**: ≥ 8.3 (cần extensions: `pdo_mysql`, `mbstring`, `intl`, `gd`, `zip`, `bcmath`, `exif`). `pcntl` dùng trong Docker/Linux, không bắt buộc trên PHP Windows.
 - **MySQL**: 8.0+ chạy cổng `3306` (Laragon, Docker hoặc cài trực tiếp).
 - **Composer**: 2.x
 - **Node.js**: ≥ 20.19 hoặc ≥ 22.12 (để build frontend Vite 8).
@@ -28,7 +30,7 @@ Nếu máy đã có MySQL (ví dụ qua Laragon hoặc MySQL Server cục bộ):
 
 ---
 
-## 3. Cách 1: Chạy bằng Docker (Khuyến nghị — 1 lệnh duy nhất)
+## 3. Cách 1: Chạy bằng Docker (tuỳ chọn local/dev)
 
 Toàn bộ ứng dụng (PHP-FPM + Nginx) được đóng gói trong file `docker-compose.yml`.
 
@@ -49,8 +51,8 @@ docker compose --env-file .env.docker --profile db up -d --build
 ```
 
 Container tự động chạy migration, seed toàn bộ dữ liệu từ `data/` nếu DB mới, và tính sẵn dinh dưỡng.
-- Mở web: `http://localhost:8000`
-- Quản trị: `http://localhost:8000/admin` (tài khoản mặc định: `admin@system.com` / `LacDoi@2026`)
+- Mở web: `http://127.0.0.1:1113`
+- Quản trị: `http://127.0.0.1:1113/admin` (tài khoản mặc định: `admin@system.com` / `LacDoi@2026`)
 
 ---
 
@@ -66,6 +68,7 @@ cp .env.example .env
 php artisan key:generate
 
 # 3. Khởi tạo dữ liệu
+# Chỉ DB local mới có thể xoá: lệnh dưới xoá toàn bộ dữ liệu hiện có.
 php artisan migrate:fresh --seed
 php artisan lacdoi:validate-data
 

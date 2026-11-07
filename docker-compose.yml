@@ -1,5 +1,5 @@
 # Lắc Đói — Docker Compose
-# Một file duy nhất cho mọi môi trường: dev, staging, production, VPS.
+# Local/dev và MySQL host; production dùng docker-compose.deploy.yml + deploy.sh.
 # Mọi cấu hình nằm trong .env.docker — xem .env.docker.example.
 #
 # ── MySQL trên host (Laragon / apt / Navicat cổng 3306 bình thường) ──
@@ -82,7 +82,7 @@ services:
       context: .
       target: web
     ports:
-      - "${WEB_PORT:-1113}:80"
+      - "${WEB_PORT:-127.0.0.1:1113}:80"
     depends_on:
       - app
     restart: unless-stopped

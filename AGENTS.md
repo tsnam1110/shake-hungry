@@ -48,7 +48,7 @@ Rau theo mùa và Thư viện nước uống. Trạng thái chi tiết: [CLAUDE.
 
 - **Cổng Web Production cố định: 1113 (127.0.0.1:1113)**: Server VPS chạy chung nhiều dự án, cổng 1113 được phân bổ cố định cho Lắc Đói. Tuyệt đối KHÔNG tự ý đổi thành 80, 8080 hay 8000.
 - **Reverse Proxy Host**: Caddy / Nginx trên host luôn reverse_proxy về 127.0.0.1:1113.
-- **MySQL Host**: Cổng 3306 dùng chung trên host qua host.docker.internal:3306.
+> ⚠️ **Đính chính 2026-11-07:** quy ước MySQL host trước đây chỉ áp dụng cấu hình local/host DB. Production mới dùng MySQL riêng `db:3306` trong `docker-compose.deploy.yml`, không publish 3306, không dùng tài khoản dự án khác. Chạy `bash deploy.sh`; cấu hình `.env.production`.
 
 ## Bốn việc dễ làm sai nhất
 

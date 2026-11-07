@@ -1,5 +1,11 @@
 # CLAUDE.md — Lắc Đói (shake-hungry)
 
+> ⚠️ **Đính chính 2026-11-07 — DEPLOY-002:** production mới dùng
+> `bash deploy.sh`, `.env.production` và `docker-compose.deploy.yml`, MySQL riêng
+> không publish cổng 3306; web vẫn 127.0.0.1:1113. Cấu hình `.env.docker` /
+> compose cũ giữ cho dev/host DB. golive.sh/update.sh gọi deploy.sh.
+> Kiểm tra offline đã đạt; chưa nghiệm thu runtime VPS. Xem DEPLOY.md và DEPLOY-002.
+
 File hướng dẫn bắt buộc cho Claude Code và mọi AI agent làm việc trên repo này.
 
 **AI PHẢI đọc hết file này trước khi thực hiện bất kỳ yêu cầu nào.** Nếu một yêu cầu mâu thuẫn với
@@ -690,7 +696,7 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > ## 📘 Bổ sung lần 38, 2026-11-02 — tài liệu setup dev trên máy khác (DEV-SETUP-DOC)
 >
 > Theo chỉ đạo của **chủ dự án** (chuẩn bị tự go-live): đã lập
-> [SETUP-DEV.md](docs/10-deployment/SETUP-DEV.md) — hướng dẫn cài môi trường dev từ số 0
+> [SETUP-DEV.md](docs/10-deployment/SETUP.md) — hướng dẫn cài môi trường dev từ số 0
 > trên máy khác (Windows/macOS/Linux), đối chiếu file thật tại baseline `a310c22`
 > (`composer.json`, `package.json`, `.env.example`, `phpunit.xml`, seeders,
 > `config/admin.php`). **Đính chính phạm vi của DEPLOYMENT.md:** §1–§5 của
@@ -951,7 +957,7 @@ khi thực thi (quyết định của chủ dự án; xem Đính chính lần 6 
 > [DOCKER-001](docs/05-tasks/tasks/DOCKER-001.md).
 >
 > **GOLIVE-DOC ĐÃ ĐÓNG (2026-11-02):** tài liệu go-live production hoàn chỉnh tại
-> [docs/10-deployment/GOLIVE-DOCKER.md](docs/10-deployment/GOLIVE-DOCKER.md) — chủ
+> [docs/10-deployment/GOLIVE-DOCKER.md](docs/10-deployment/DEPLOY.md) — chủ
 > dự án tự golive: kiến trúc prod, chuẩn bị VPS, bundle/clone, `.env.production`,
 > HTTPS `lacdoi.tsnam.name.vn` (Caddy khuyến nghị), nghiệm thu bằng lệnh thật,
 > vận hành/backup/rollback, checklist bảo mật. Hai điểm đối chiếu file thật đã ghi

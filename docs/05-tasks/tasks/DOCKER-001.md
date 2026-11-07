@@ -1,5 +1,7 @@
 # DOCKER-001 — Đóng gói Docker chuẩn bị go-live
 
+> ⚠️ **Đính chính 2026-11-07:** nội dung/lệnh bên dưới là lịch sử kiểm chứng, không phải runbook hiện hành. Production: [DEPLOY](../../10-deployment/DEPLOY.md), `bash deploy.sh` + `docker-compose.deploy.yml` + `.env.production`. Local: [SETUP](../../10-deployment/SETUP.md). Các compose prod/host overlay và file env mẫu cũ đã bỏ.
+
 **Trạng thái:** ✅ ĐÓNG 2026-11-02 — gói đã tự kiểm thử đạt toàn bộ mục (nhật ký §4).
 **Phạm vi:** chỉ đóng gói + kiểm thử. **Chưa deploy** — tài liệu go-live production đầy đủ là đợt riêng sau khi gói đạt (chủ dự án tự golive theo tài liệu đó).
 
@@ -140,7 +142,7 @@ QD song song — cùng cách xử lý như QD-15), bản thảo sẵn ở §6 d�
 
 Dòng ROADMAP (bảng GĐ0, sau dòng DEV-SETUP-DOC):
 
-> | [DOCKER-001](./tasks/DOCKER-001.md) | Đóng gói Docker chuẩn bị go-live (Dockerfile đa tầng FPM+nginx, compose dev/prod, entrypoint migrate + seed có điều kiện) + tự kiểm thử toàn bộ | Backend | ✅ | SETUP-004, DEV-SETUP-DOC | 2026-11-02 |
+> | [DOCKER-001](DOCKER-001.md) | Đóng gói Docker chuẩn bị go-live (Dockerfile đa tầng FPM+nginx, compose dev/prod, entrypoint migrate + seed có điều kiện) + tự kiểm thử toàn bộ | Backend | ✅ | SETUP-004, DEV-SETUP-DOC | 2026-11-02 |
 
 Mục CLAUDE §0 (Bổ sung lần tiếp theo):
 
@@ -158,4 +160,6 @@ Mục CLAUDE §0 (Bổ sung lần tiếp theo):
 > kiểm bằng Podman (cùng ngữ nghĩa Dockerfile/compose, mạng host + cổng dịch chuyển —
 > thích ứng chỉ ở harness, không nằm trong file bàn giao); lần chạy `docker compose`
 > thật đầu tiên là khi chủ dự án thử theo tài liệu go-live (đợt riêng). Chi tiết:
-> [DOCKER-001](docs/05-tasks/tasks/DOCKER-001.md).
+> [DOCKER-001](DOCKER-001.md).
+
+> ⚠️ **Đính chính 2026-11-07:** sửa đường dẫn liên kết nội bộ bị sai; nội dung kết luận lịch sử giữ nguyên.

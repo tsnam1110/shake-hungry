@@ -1,5 +1,7 @@
 # DEV-SETUP-DOC — Tài liệu setup môi trường dev trên máy khác
 
+> ⚠️ **Đính chính 2026-11-07:** nội dung/lệnh bên dưới là lịch sử kiểm chứng, không phải runbook hiện hành. Production: [DEPLOY](../../10-deployment/DEPLOY.md), `bash deploy.sh` + `docker-compose.deploy.yml` + `.env.production`. Local: [SETUP](../../10-deployment/SETUP.md). Các compose prod/host overlay và file env mẫu cũ đã bỏ.
+
 **Mã task:** DEV-SETUP-DOC
 **Phase:** Ngoài giai đoạn — tài liệu vận hành (điều kiện cho chủ dự án tự triển khai)
 **Trạng thái:** ✅ HOÀN TẤT 2026-11-02
@@ -9,7 +11,7 @@ máy khác", cùng đợt với gói Docker go-live (task riêng).
 
 ## Kết quả
 
-Tài liệu chính: [docs/10-deployment/SETUP-DEV.md](../../10-deployment/SETUP-DEV.md) — cài
+Tài liệu chính: [docs/10-deployment/SETUP-DEV.md](../../10-deployment/SETUP.md) — cài
 từ số 0 trên Windows/macOS/Linux: điều kiện tiên quyết, MySQL 8 đúng chuẩn dự án
 (collation `utf8mb4_vi_0900_ai_ci` + `log_bin_trust_function_creators`), clone + `.env`
 (cảnh báo `ADMIN_QUICK_LOGIN`), seed + số kỳ vọng, tạo tài khoản admin bằng tinker
